@@ -1,6 +1,6 @@
 ---
 title: Rugalmasidő-csoportok
-description: Ez a témakör azt mutatja be, hogyan használhatók a rugalmasidő-csoportok a munkaidő és jelenlétben.
+description: Ez a témakör azt írja le, hogyan használják a rugalmasidő-csoportokat a Munkaidő és jelenlét segítségével.
 author: johanhoffmann
 ms.date: 03/15/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 44d8876aac8f8a3439a9a1285780bcc076c95807b950e3640c2a7523beae3f3e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b488a5ae3b3cd0d3e159b85e539d5cc95a87f87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717028"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857315"
 ---
 # <a name="flex-groups"></a>Rugalmasidő-csoportok
 

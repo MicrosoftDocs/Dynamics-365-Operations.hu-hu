@@ -1,6 +1,6 @@
 ---
 title: Általános napló feldolgozása
-description: Ez a témakör Microsoft Dynamics a 365 Pénzügyben található lehetőségeket írja le, amelyek megkönnyítik az általános naplófeldolgozást, és gondoskodnak arról is, hogy a helyes adatok rögzítettek, és a belső ellenőrzés ne legyen sérült.
+description: Ez a cikk Microsoft Dynamics a 365 Pénzügyben rendelkezésre áll, amelyek megkönnyítik az általános naplófeldolgozást, és gondoskodnak arról is, hogy a helyes adatok rögzítettek, és a belső ellenőrzés ne legyen sérült.
 author: kweekley
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cfe4af0c666fb2accb6737edb2de6e0b6e7cdf1
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 2055c028f7bfe8edc9faec8f791fff2fbfe08bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896376"
 ---
 # <a name="general-journal-processing"></a>Általános napló feldolgozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azokat a funkciókat mutatja be, amelyek megkönnyítik az általános napló feldolgozását, illetve biztosítják a megfelelő adatok tárolását, illetve a belső ellenőrzés megfelelő működését.  
+Ez a témakör olyan lehetőségeket ismertet, amelyek megkönnyítik az általános naplók feldolgozását, és gondoskodnak arról is, hogy a helyes adatok rögzítettek, és a belső ellenőrzés ne legyen sérült.  
 
 ## <a name="journal-names"></a>Naplónevek
 

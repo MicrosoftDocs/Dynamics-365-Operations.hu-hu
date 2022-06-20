@@ -1,6 +1,6 @@
 ---
 title: Optimalizálási tanácsadó szabályainak létrehozása
-description: Ez a témakör ismerteti az új szabályok hozzáadását az Optimalizálási tanácsadóhoz.
+description: Ez a cikk bemutatja, hogyan lehet új szabályokat adni az optimalizáláshoz.
 author: roxanadiaconu
 ms.date: 02/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a65a71da066d70cafc641aafe21538830a9ebe56b607316570ea2435398cda1c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b1d9b14cb67b1dd0a961f6f8618de37147a2c52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734664"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850905"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Optimalizálási tanácsadó szabályainak létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör elmagyarázza, hogyan hozhatók létre új szabályok az **Optimalizálási tanácsadóhoz**. Például létrehozhat egy új szabályt, amely azonosítja, melyik ajánlatkérési esetek címe üres. Címek az eseteken történő használata könnyen azonosíthatóvá és kereshetővé teszi őket. Bár nagyon egyszerű, az alábbi példa bemutatja, mit lehet elérni optimalizálási szabályokkal. 
+Ez a cikk bemutatja, hogyan lehet új szabályokat létrehozni az **optimalizáláshoz**. Például létrehozhat egy új szabályt, amely azonosítja, melyik ajánlatkérési esetek címe üres. Címek az eseteken történő használata könnyen azonosíthatóvá és kereshetővé teszi őket. Bár nagyon egyszerű, az alábbi példa bemutatja, mit lehet elérni optimalizálási szabályokkal. 
 
 A *szabály* egy ellenőrzés az alkalmazásadatokon. Ha teljesül a feltétel, amelyet a szabály értékel, lehetőség nyílik folyamatok optimalizálására vagy adatok javítására. Ezek a lehetőségek kihasználhatók, és opcionálisan mérhető az intézkedések hatása. 
 

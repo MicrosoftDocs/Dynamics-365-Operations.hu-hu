@@ -1,6 +1,6 @@
 ---
-title: Hajóút-létrehozási entitások
-description: Ez a témakör az hajóút-létrehozási adatentitásokkal kapcsolatban tartalmaz tájékoztatást, amelyek a munkaút létrehozásához szükséges adatentitásokat csoportosítják.
+title: Útlétrehozás entitásai
+description: Ez a cikk az hajóút-létrehozási adatentitásokkal kapcsolatban tartalmaz tájékoztatást, amelyek a munkaút létrehozásához szükséges adatentitásokat csoportosítják.
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 17f63af3ce1f858ed3e2086fc81c5e17c5e76be0
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: cb2e2f53942015caf9462692515f24deb9689aed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8813172"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873898"
 ---
-# <a name="voyage-creation-entities"></a>Hajóút-létrehozási entitások
+# <a name="voyage-creation-entities"></a>Útlétrehozás entitásai
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -233,7 +233,7 @@ Az hajóútsor egyetlen beszerzésirendelés-sort jelent, amely az útba tartozi
 | Mértékegység | ITMLine.ShipMeasurement | Nvarchar(20) | Nem | Nem |
 | Mértékegység | ITMLine.ShipMeasurementUnit | Numerikus (32, 6) | Nem | Nem |
 | Kartondobozok száma | ITMLine.ShipNoOfCartons | Int | Nem | Nem |
-| Pozíció | ITMLine.ShipPosition | Numerikus (32, 6) | Nem | Nem |
+| Sorszám | ITMLine.ShipPosition | Numerikus (32, 6) | Nem | Nem |
 | Mennyiség | ITMLine.ShipQty | Int | Nem | Nem |
 | Beszerzési rendelés száma | ITMLine.TransRefId | Numerikus (32, 6) | **Igen** | Nem |
 | Egység | ITMLine.UnitId | Int | Nem | Nem |
@@ -257,7 +257,7 @@ Az hajóútsor egyetlen átrakodó rendeléssort jelent, amely az útba tartozik
 | Mértékegység | ITMLine.ShipMeasurement | Nvarchar(20) | Nem | Nem |
 | Mértékegység | ITMLine.ShipMeasurementUnit | Numerikus (32, 6) | Nem | Nem |
 | Kartondobozok száma | ITMLine.ShipNoOfCartons | Int | Nem | Nem |
-| Pozíció | ITMLine.ShipPosition | Numerikus (32, 6) | Nem | Nem |
+| Sorszám | ITMLine.ShipPosition | Numerikus (32, 6) | Nem | Nem |
 | Mennyiség | ITMLine.ShipQty | Int | Nem | Nem |
 | Átmozgatási sor száma | ITMLine.TransferLineNumber | Numerikus (32, 6) | **Igen** | Nem |
 | Átmozgatási rendelés száma | ITMLine.TransRefId | Numerikus (32, 6) | **Igen** | Nem |

@@ -1,6 +1,6 @@
 ---
 title: Alapadat-keresés engedélyezése adószámítási konfigurációhoz
-description: Ez a témakör bemutatja, hogy hogyan lehet beállítani és engedélyezni az adószámítási alapadat-keresési funkciót.
+description: Ez a cikk bemutatja, hogy hogyan lehet beállítani és engedélyezni az adószámítási alapadat-keresési funkciót.
 author: kai-cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7640144b1687fc64e55f659d49cdb0817c17294a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d9c234781e55fbf7f29eec14666c939d5d60e2fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686711"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879409"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Alapadat-keresés engedélyezése adószámítási konfigurációhoz 
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet beállítani és engedélyezni az adószámítási alapadat-keresési funkciót. Az adószámítási konfigurációban a jogi személy, **·** **·** **a szállítókód, a cikk-kód és a szállítási időszak mezőiben legördülő lista használható értékek kiválasztására.** **·** Ezek az értékek a 365-ös Microsoft Dynamics pénzügyi környezetből, az adatforrás Microsoft Dataverse használatával jönnek.
+Ez a cikk bemutatja, hogy hogyan lehet beállítani és engedélyezni az adószámítási alapadat-keresési funkciót. Az adószámítási konfigurációban a jogi személy, **·** **·** **a szállítókód, a cikk-kód és a szállítási időszak mezőiben legördülő lista használható értékek kiválasztására.** **·** Ezek az értékek a 365-ös Microsoft Dynamics pénzügyi környezetből, az adatforrás Microsoft Dataverse használatával jönnek.
 
 > [!NOTE] 
 > Az adószámítási alapadat-keresési funkció nem kötelező funkció. Ha letiltja a Tax Service **Dataverse adatforrás-támogatási szolgáltatását** az RCS (Regulatory Configuration Service) szolgáltatásban, a következő lépéseket kihagyhatja. Ebben az esetben azonban az adószámítási konfigurációban nem lesz elérhető a legördülő lista.

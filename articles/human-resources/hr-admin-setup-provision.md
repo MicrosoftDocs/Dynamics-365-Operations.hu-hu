@@ -1,6 +1,6 @@
 ---
-title: Human Resources kiépítése
-description: Ez a téma a Microsoft Dynamics 365 Human Resources új termelési környezetének biztosítását ismerteti.
+title: A Human Resources kiépítése
+description: Ez a cikk bemutatja egy új termelési környezet létesítését a Microsoft számára Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -14,26 +14,26 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
-ms.translationtype: MT
+ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858243"
 ---
-# <a name="provision-human-resources"></a>Human Resources kiépítése
+# <a name="provision-human-resources"></a>A Human Resources kiépítése
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-Ez a téma a Microsoft Dynamics 365 Human Resources új termelési környezetének biztosítását ismerteti. 
+Ez a cikk bemutatja egy új termelési környezet létesítését a Microsoft számára Dynamics 365 Human Resources. 
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 Mielőtt elkezdené egy új termelési környezet biztosítását, a következő előfeltételeknek kell teljesülniük:
 
-- Ön a humánerőforrás-szolgáltatást felhőalapú megoldásszolgáltatói (CSP) vagy vállalati architektúra (EA) megállapodáson keresztül vásárolta meg. Ha már rendelkezik olyan Microsoft Dynamics 365 licenccel, amely már tartalmazza a Humánerőforrás szolgáltatási csomagot, és nem tudja elvégezni az ebben a témakörben leírt lépéseket, forduljon az ügyfélszolgálathoz.
+- Ön a humánerőforrás-szolgáltatást felhőalapú megoldásszolgáltatói (CSP) vagy vállalati architektúra (EA) megállapodáson keresztül vásárolta meg. Ha rendelkezik meglévő Microsoft Dynamics 365-licenccel, amely már tartalmazza a Human Resources szolgáltatási konstrukciót, és nem tudja elvégezni a cikkben szereplő lépéseket, forduljon a támogatási szolgálathoz.
 
 - A globális rendszergazda bejelentkezett a [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) szolgáltatásba, és létrehozott egy új humánerőforrás-projektet. 
 

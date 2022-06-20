@@ -1,6 +1,6 @@
 ---
 title: Kettős írás beállítása a Lifecycle Services szolgáltatásból
-description: Ez a témakör bemutatja, hogyan lehet kettős írású kapcsolatot beállítani a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
+description: Ez a témakör bemutatja, hogyan lehet két írásos kapcsolatot létesíteni a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásaival.
 author: laneswenka
 ms.date: 05/16/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
-ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
+ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8783201"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879804"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services szolgáltatásból
 
@@ -22,7 +22,7 @@ ms.locfileid: "8783201"
 
 
 
-Ez a témakör bemutatja, hogyan lehet engedélyezni a kettős írást a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
+Ez a témakör bemutatja, hogyan lehet két írást engedélyezni a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
 
 ## <a name="prerequisites"></a>Előfeltételek
 

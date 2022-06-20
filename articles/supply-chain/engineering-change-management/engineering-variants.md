@@ -1,6 +1,6 @@
 ---
 title: Változatok létrehozása tervezési termékekhez
-description: Ez a témakör azt ismerteti, hogyan lehet változatokat létrehozni tervezési termékekhez
+description: Ez a témakör azt ismerteti, hogyan lehet változatokat létrehozni mérnöki termékekhez.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -10,22 +10,22 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 08feb66dedfa79f5a21a7723a22f3bef883431e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870753"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Változatok létrehozása tervezési termékekhez
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet változatokat létrehozni tervezési termékekhez.
+Ez a témakör azt ismerteti, hogyan lehet változatokat létrehozni a mérnöki termékekhez.
 
 ## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Változatok generálása mérnöki termékeknél be- és kikapcsolása
 
-Az ebben a *témakörben* *leírt* funkciókhoz a mérnöki termékekhez szükséges, hogy mind a Mérnöki változáskezelés, mind a Változatok generálása be legyen kapcsolva a rendszerben. A szolgáltatások be- és kikapcsolásáról a Géptervezési változáskezelés áttekintése című témakörben [olvashat](product-engineering-overview.md).
+Az ebben a cikkben *leírt* *funkciókhoz* a mérnöki termékekhez szükséges, hogy mind a Mérnöki változáskezelés, mind a Változatok generálása be legyen kapcsolva a rendszerben. A funkciók be- és kikapcsolása a [Műszaki változáskezelés témakörében található](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Tervezési termék egy vagy több új változatának létrehozása
 

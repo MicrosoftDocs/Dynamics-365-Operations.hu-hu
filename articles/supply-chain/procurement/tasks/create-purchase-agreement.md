@@ -1,6 +1,6 @@
 ---
 title: Beszerzési szerződés létrehozása
-description: Ez a témakör végigvezeti a beszerzési szerződés létrehozásán.
+description: Ez a cikk végigvezeti a beszerzési szerződések létrehozásán.
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3456e1c6e2ec65329e0f2e984f99ced0994c240b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 108c3a47132b262ebe2e15f00d26191b75469959
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877566"
 ---
 # <a name="create-a-purchase-agreement"></a>Beszerzési szerződés létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör végigvezeti a beszerzési szerződés létrehozásán. Ez általában egy beszerzési vezető által történik. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja. A kezdés előtt létre kell hozni a beszerzési szerződés osztályozásait. Miután létrehozta a megállapodást, használhatja, amikor létrehoz egy beszerzési rendelést, és ez bemásolja a beszerzési szerződés feltételeit a megállapodás által érintett rendelés fejlécébe és soraiba.
+Ez a cikk végigvezeti a beszerzési szerződések létrehozásán. Ez általában egy beszerzési vezető által történik. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja. A kezdés előtt létre kell hozni a beszerzési szerződés osztályozásait. Miután létrehozta a megállapodást, használhatja, amikor létrehoz egy beszerzési rendelést, és ez bemásolja a beszerzési szerződés feltételeit a megállapodás által érintett rendelés fejlécébe és soraiba.
 
 
 ## <a name="create-a-new-purchase-agreement"></a>Új beszerzési szerződés létrehozása

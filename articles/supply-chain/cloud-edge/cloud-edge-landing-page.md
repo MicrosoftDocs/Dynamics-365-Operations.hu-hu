@@ -1,6 +1,6 @@
 ---
 title: Skálázási egységek elosztott hibridtopológiában
-description: Ez a témakör további információt biztosít a Felhőalapú és peremhálózati skálázási egységgel kapcsolatban a gyártási és raktárkezelési munkaterhelésekhez.
+description: Ez a cikk a gyártási és raktárkezelési terhelések felhő- és peremhálózati egységeiről nyújt tájékoztatást.
 author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 5ec846b294cd9ca62ff15a5306e012813c77e306
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6b53822238220ccfcf538d49285e051c49c57189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676328"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893671"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skálázási egységek elosztott hibridtopológiában
 
@@ -25,7 +25,7 @@ ms.locfileid: "8676328"
 > [!IMPORTANT]
 > A Microsoft Dynamics 365 Supply Chain Management skálázási egysége a szolgáltatás használatát szabályozó feltételekkel érhető el az Ön számára. A további tudnivalókat lásd: [Microsoft Dynamics Jogi információk](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> A felhő- és peremhálózati egységek engedélyezésekor meg kell erősítenie, hogy megértette, hogy a felhő- és peremhálózati egységek konfigurálásához és feldolgozásához kapcsolódó egyes adatokat az Egyesült Államokban található adatközpontban lehet tárolni. Ha további információkat szeretne megtudni a felhő- és szélskálázi egységek adatainak feldolgozásával kapcsolatban, tekintse meg az [Adatfeldolgozás a skálázási egységek kezelése során](#data-processing-management) témakör későbbi részét.
+> A felhő- és peremhálózati egységek engedélyezésekor meg kell erősítenie, hogy megértette, hogy a felhő- és peremhálózati egységek konfigurálásához és feldolgozásához kapcsolódó egyes adatokat az Egyesült Államokban található adatközpontban lehet tárolni. Ha további tudnivalókat szeretne tudni a felhő- és szélskálaegységek adatainak feldolgozásával kapcsolatban, [tekintse meg az adatok feldolgozását a](#data-processing-management) skálaegységek kezelése során a cikk későbbi részében.
 
 ## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Elosztott hibridtopológia alapvető értékajánlata
 
@@ -48,7 +48,7 @@ A skálázási egységek biztosítják a hozzárendelt munkaterhelések ellenál
 
 A *számítási feladat* egy meghatározott üzleti funkciókészlet, amelyet figyelembe lehet venni, és egy skálázási egységre delegálható. Bár a raktárkezelés számítási feladata ki van adva, a gyártásvégrehajtás számítási feladata még előzetes verzióban van.
 
-Konfigurálhatja a központi környezetet és a felhőbeli skálázási egységet a kiválasztott számítási feladathoz a [Scale Unit Manager portál](https://sum.dynamics.com) használatával. Egy skálázási egységhez több számítási feladatot is hozzárendelhet. Az aktuális verzióban a felhőbeli skálázási egységek előfeltételeivel és korlátozásokkal kapcsolatos tudnivalókat lásd a későbbi [Felhőbeli skálázási egységekre vonatkozó előfeltételek és korlátozások](#cloud-scale-unit-prerequisites) című témakörben.
+Konfigurálhatja a központi környezetet és a felhőbeli skálázási egységet a kiválasztott számítási feladathoz a [Scale Unit Manager portál](https://sum.dynamics.com) használatával. Egy skálázási egységhez több számítási feladatot is hozzárendelhet. Az aktuális [verzióban](#cloud-scale-unit-prerequisites) a felhőskálaegységek előfeltételeivel és korlátozásokkal kapcsolatos tudnivalókat lásd a felhőskálaegységekre vonatkozó előfeltételek és korlátozások ebben a szakaszban.
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikált raktárkezelési számítási feladatok képességei egy skálázási egységben
 

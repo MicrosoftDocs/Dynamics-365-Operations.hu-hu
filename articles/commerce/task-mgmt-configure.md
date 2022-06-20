@@ -1,6 +1,6 @@
 ---
 title: Feladatkezelés konfigurálása
-description: Ez a témakör azt mutatja be, hogyan kell konfigurálni a feladatkezelési szolgáltatást a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör leírja, hogyan kell konfigurálni a feladatkezelési funkciókat a következőben:Microsoft Dynamics 365 Commerce
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf8584f4a0d71ef6fa867a7f07b568d94656e650
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730803"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868857"
 ---
 # <a name="configure-task-management"></a>Feladatkezelés konfigurálása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan kell konfigurálni a feladatkezelési szolgáltatást a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör leírja, hogyan kell konfigurálni a feladatkezelési funkciókat a következőben:Microsoft Dynamics 365 Commerce
 
 Mielőtt a Dynamics 365 Commerce alkalmazásban vezetők és az alkalmazottak használhatják a Commerce feladatkezelési funkcióit, konfigurálni kell a feladatkezelést. A konfigurálás lépései között szerepelnek a vezetők és az alkalmazottak engedélyei, az engedélyek elosztása a pénztári (POS) kliensekhez, a pénztári értesítések beállítása, valamint a **Feladatok** csempéjének konfigurálása egy pénztári alkalmazás kezdőlapján.
 

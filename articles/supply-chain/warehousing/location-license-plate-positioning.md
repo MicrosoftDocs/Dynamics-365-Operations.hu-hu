@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: e52b313e0a00c04edf9003aa6292146936f837d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102789"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889428"
 ---
 # <a name="location-license-plate-positioning"></a>Hely és azonosítótábla pozicionálása
 
@@ -28,11 +28,11 @@ Az azonosítótábla elhelyezésével megtekintheti, hogy hol található az azo
 
 A szolgáltatás sorozatszámot ad minden olyan azonosítótáblához, amely tárolási helyre kerül. Ez a sorozatszám az azonosítótáblák rendezésére szolgál a tárolási helyen. Ennélfogva a funkció intelligens módon támogatja azokat a helyzeteket, amelyekben a vevők gravitációs állványrendszert használnak, és a kitárolás céljából ismerniük kell, hogy az azonosítótáblák közül melyik van elöl.
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani és használni a szolgáltatást.
+Ez a cikk egy olyan helyzetet mutat be, amely bemutatja a funkció beállítását és használatát.
 
 ## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>A Hely– tábla pozicioning funkció be- és kikapcsolása
 
-Az ebben a témakörben leírt funkciók használatához a rendszernek *be* kell kapcsolva lennie a Helytábla-pozicion lehetőségnek. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Funkciókezelés munkaterületén keresi meg a Hely helytábla pozicionozási funkcióját.
+Az ebben a cikkben leírt funkciók használatához a rendszernek *be* kell kapcsolva lennie a Helytábla-pozicion lehetőségnek. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Funkciókezelés munkaterületén keresi meg a Hely helytábla pozicionozási funkcióját.
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
@@ -42,7 +42,7 @@ Ha ezt a forgatókönyvet az itt javasolt mintaadatok és értékek alapján kí
 
 ### <a name="set-up-the-feature-for-this-scenario"></a>A funkció beállítása ehhez a helyzethez
 
-Hajtsa végre a következő lépéseket az ebben a témakörben bemutatott *Helyazonosító tábla elhelyezése* funkció beállításához.
+A következő eljárás szerint állítsa be a helytábla *pozicioning* funkcióját az ebben a cikknél megjelenő helyzetben.
 
 #### <a name="location-profiles"></a>Helyprofilok
 

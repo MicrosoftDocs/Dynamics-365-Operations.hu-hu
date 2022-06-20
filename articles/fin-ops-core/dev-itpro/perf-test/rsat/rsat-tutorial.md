@@ -1,6 +1,6 @@
 ---
-title: Regression Suite Automation Tool-oktatóanyag
-description: Ez a témakör bemutatja, hogy hogyan használható a Regression Suite Automation Tool (RSAT). Leírja a különböző funkciókat, és speciális parancsfájlkezelést használó példákat tartalmaz.
+title: Regression suite automation tool-oktatóanyag
+description: Ez a cikk bemutatja a Regression suite automatizálási eszköz (RSAT) használatát. Leírja a különböző funkciókat, és speciális parancsfájlkezelést használó példákat tartalmaz.
 author: FrankDahl
 ms.date: 09/23/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: e2273aefb98880a1ae746ef7ec65b4f2262f3560
-ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
+ms.openlocfilehash: 04c7d7081ece4e077881092534ed061fe2d0e999
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "8492920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854599"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-oktatóanyag
 

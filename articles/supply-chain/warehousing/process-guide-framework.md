@@ -1,6 +1,6 @@
 ---
 title: Folyamatútmutató-keretrendszer
-description: Ez a témakör a raktári mobileszközfolyamatokat kiterjesztő a raktári folyamatokat X++ használatával bővítő folyamat-útmutatói keretrendszerével kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk az X++ raktári mobileszközfolyamatait bővítő folyamat-útmutató keretrendszerével kapcsolatban tartalmaz tájékoztatást.
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: e88f32e0347a808d03615cf85e50b1592d691670
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902046"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860435"
 ---
 # <a name="process-guide-framework"></a>Folyamatútmutató-keretrendszer
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a raktári mobileszközfolyamatokat kiterjesztő a raktári folyamatokat X++ használatával bővítő folyamat-útmutatói keretrendszerével kapcsolatban tartalmaz tájékoztatást. A raktári mobil folyamatok a folyamatok kis lépésekre bonthatósága következtében bővíthetők. Az egyes lépések az üzleti logikáját és a felhasználói felület építését különálló osztályokba bontottuk, ami lehetővé teszi a bővíthetőséget.
+Ez a cikk a folyamat-útmutató keretrendszerével kapcsolatban tartalmaz tájékoztatást, amely az X++ raktári mobileszközfolyamatokat bővítő fejlesztők számára készült. A raktári mobil folyamatok a folyamatok kis lépésekre bonthatósága következtében bővíthetők. Az egyes lépések az üzleti logikáját és a felhasználói felület építését különálló osztályokba bontottuk, ami lehetővé teszi a bővíthetőséget.
 
 ## <a name="overview-of-the-existing-design"></a>Meglévő felépítés áttekintése
 
@@ -321,7 +321,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> Az X++ metódusok forráskódja az Alkalmazásböngészővel található meg ebben a témakörben. Szűrjön az osztály nevére, majd kattintson a jobb gombbal az osztály nevére, és válassza a **Kód megtekintése** lehetőséget.
+> A cikk X++ metódusának ugyanaz a forráskódja az Application Explorer böngészőben található. Szűrjön az osztály nevére, majd kattintson a jobb gombbal az osztály nevére, és válassza a **Kód megtekintése** lehetőséget.
 
 ### <a name="step-3-start-the-production-order"></a>3. lépés: A termelési rendelés indítása
 
@@ -421,7 +421,7 @@ Ennek során megkéri a lépést, hogy hozzon létre egy műveletosztályt az á
 
 ### <a name="summary"></a>Összegzés
 
-Az ebben a témakörben ismertetekkel kapcsolatos információk összegzése érdekében itt találja a folyamathoz szükséges kódok átfogó összefoglalását:
+A cikk minden magyarázatát összefoglalva itt látható a folyamathoz szükséges kód átfogó összefoglalása:
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -570,7 +570,7 @@ Az ebben a témakörben ismertetekkel kapcsolatos információk összegzése ér
         ```
 
         > [!NOTE]
-        > A **generateItemInfoForProdId()** metódus, amely a cikk-információs címkék létrehozásához használatos, ki van hagyva ebből a témakörből. Ezzel a metódussal néhány táblát le lehetkérdezni a cikkazonosító, a leírás és a dimenziók lekéréséhez. Ha jobban meg szeretné érteni a **generateItemInfoForProdId()** elemet, nézze meg a forráskódot.
+        > A **generateItemInfoForProdId()** metódus, amely a cikk-információs címkék létrehozásához használatos, ki van zárva ebből a cikkből. Ezzel a metódussal néhány táblát le lehetkérdezni a cikkazonosító, a leírás és a dimenziók lekéréséhez. Ha jobban meg szeretné érteni a **generateItemInfoForProdId()** elemet, nézze meg a forráskódot.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -605,7 +605,7 @@ Az ebben a témakörben ismertetekkel kapcsolatos információk összegzése ér
 
 ### <a name="extending-a-business-process"></a>Üzleti folyamat kibővítése
 
-Ez a témakör eddig bemutatta, hogyan lehet egy új folyamatot felépíteni a **ProcessGuide** keretrendszer használatával. Ebben az utolsó szakaszban néhány példát talál arra, hogyan lehet kibővíteni ezt az üzleti folyamatot.
+Ez a cikk eddig kiemelte, hogyan lehet egy új folyamatot felépíteni **a Process Egy keretrendszer** használatával. Ebben az utolsó szakaszban néhány példát talál arra, hogyan lehet kibővíteni ezt az üzleti folyamatot.
 
 ### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>Lépés hozzáadása egy folyamathoz (a ProcessGuideNavigationAgentDefault használatával)
 

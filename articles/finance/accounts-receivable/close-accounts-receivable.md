@@ -1,6 +1,6 @@
 ---
 title: Kinnlevőségek modul bezárása
-description: Az alábbi témakör felsorolja azokat az oldalakat, amelyeken elvégezhetők a Fiók kinnlevőségeinek üzleti folyamat bezárása.
+description: Az alábbi cikk felsorolja azokat a lapokat, amelyeken támogatott a kinnlevőségek zárása üzleti folyamat.
 author: ShivamPandey-msft
 ms.date: 10/26/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ab68c9def44664a0f9fcb5226c6e5a8efb2f519
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 27c73c4fef561bc6d6640d4d20dec05b2ca68f1c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712230"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855462"
 ---
 # <a name="close-accounts-receivable"></a>Kinnlevőségek modul bezárása
 

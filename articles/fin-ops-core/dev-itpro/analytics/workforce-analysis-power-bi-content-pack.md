@@ -1,6 +1,6 @@
 ---
 title: Munkaerő-mutatók Power BI tartalom
-description: Ez a témakör a Munkaerő-mutatók Power BI tartalmat ismerteti.
+description: Ez a cikk a munkaerő-mérőszámok tartalmát írja Power BI le.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9393b4dcc6cb5f65d38c6904bf38def9d50af281671e0e09314148824f3e6891
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e45e4fb58bd535b66b7ad0dad8c4efa37e4336b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757273"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884488"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Munkaerő-mutatók Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a **Munkaerő-mutatók** Microsoft Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a cikk a munkaerő-mérőszámok **tartalmát írja** Microsoft Power BI le. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
 A **Munkaerő-mutatók** Power BI tartalom a **Személyzetkezelés** munkaterületen jelenik meg a következő termékek valamelyikének használatakor:
 
-- Microsoft Dynamics 365 Finance
+- Microsoft Dynamics 365 Pénzügy
 - Microsoft Dynamics 365 Human Resources
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mérőszámok, amelyek a Power BI tartalomban szerepelnek
@@ -58,7 +58,7 @@ Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramoka
 Ügyeljen arra, hogy azt a **Munkaerő-mutatók** Power BI tartalmat töltse le, amely a Microsoft Dynamics 365 ön által használt verziójára vonatkozik.
 
 > [!NOTE]
-> A Lifecycle Services szolgáltatásban rendelkezésre álló .pbix-fájlok csak a Finance and Operations-alkalmazásokra érvényesek.
+> A Lifecycle Services szolgáltatásban rendelkezésre álló .pbix-fájlok csak a Finance and Operations alkalmazásokra érvényesek.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 A következő táblázat mutatja az entitásokat, amelyeken a tartalom alapul.

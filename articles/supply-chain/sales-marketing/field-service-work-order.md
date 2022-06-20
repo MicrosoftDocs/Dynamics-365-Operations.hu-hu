@@ -1,6 +1,6 @@
 ---
 title: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel
-description: Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a Supply Chain Management munkarendelések a Field Service vevői rendelésekre történő szinkronizálásához szükségesek.
+description: Ez a cikk be tárgyalja a sablonokat és a mögöttes feladatokat, amelyek a Field Service munkarendelések és az ellátásilánc-kezelés értékesítési rendelésekkel való szinkronizálásához használatosak.
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e64c9a954e8f5c4410f8ba370b40b7c6e76e8ae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061309"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860522"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061309"
 
 
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Field Service munkarendeléseinek a Dynamics 365 Supply Chain Management szolgáltatásban található értékesítési rendelésekkel történő szinkronizálására használatosak.
+Ez a cikk be tárgyalja Dynamics 365 Field Service a sablonokat és a mögöttes feladatokat, amelyek a munkarendelések értékesítési rendelésekkel való szinkronizálásához használatosak Dynamics 365 Supply Chain Management.
 
 [![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -165,7 +165,7 @@ A munkarendelésekből származó értékesítési rendelések nyomon követése
 
 Alapértelmezés szerint a leképezés kiválasztja az értékesítési forrást a **Munkarendelés-integráció** értékesítési forrástípusnál az összes olyan értékesítési rendelés esetén, amelyek munkarendelésekből jöttek létre. Ez a viselkedés akkor lehet hasznos, ha a Supply Chain Management szolgáltatásban műveletek értékesítési rendelésekkel dolgozik. Gondoskodnia kell arról, hogy a munkarendelésekből származó értékesítési rendelések ne szinkronizálódjanak vissza a Field Service szolgáltatásba mint munkarendelések.
 
-A megfelelő értékesítésiforrás-beállítások a Supply Chain Management szolgáltatásban való megadásához lásd a jelen témakör „Előfeltételek és hozzárendelési beállítás” részét.
+A megfelelő értékesítési forrás beállításának az Ellátásilánc-kezelés eszközben való beállításának részletes adatai a cikk "Előfeltételek és megfeleltetési beállítások" szakaszában olvashatók.
 
 ### <a name="status"></a>Állapot
 

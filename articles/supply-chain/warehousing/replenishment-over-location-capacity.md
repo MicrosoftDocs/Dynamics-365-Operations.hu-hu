@@ -1,6 +1,6 @@
 ---
 title: Feltöltés a hely kapacitása alapján
-description: Ez a témakör a hely kapacitásainak feltöltésével kapcsolatban tartalmaz tájékoztatást. Ez a funkció lehetővé tesz minden olyan feltöltési munkát, amely a nap létrehozásához szükséges, illetve a feltöltési munka elérhetőségét kezeli annak érdekében, hogy a kitárolási hely ne fogyjon ki a készletből, és ne haladja meg a kapacitást sem.
+description: Ez a cikk a helykapacitás fölötti feltöltés funkcióval kapcsolatban tartalmaz tájékoztatást. Ez a funkció lehetővé tesz minden olyan feltöltési munkát, amely a nap létrehozásához szükséges, illetve a feltöltési munka elérhetőségét kezeli annak érdekében, hogy a kitárolási hely ne fogyjon ki a készletből, és ne haladja meg a kapacitást sem.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899237"
 ---
 # <a name="replenishment-over-location-capacity"></a>Feltöltés a hely kapacitása alapján
 
@@ -37,7 +37,7 @@ A funkció elérhetővé tétele érdekében kapcsolja be a [funkciókezelés](.
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>A funkció beállítása a példaforgatókönyvhöz
 
-Ez a szakasz iránymutatásokat és egy példát mutat be azzal kapcsolatban, hogy hogyan kell beállítani ezt a funkciót, illetve hogyan kell előkészíteni mintaadatokat a témakörben később bemutatott példaforgatókönyvben.
+Ez a szakasz irányelveket és egy példát mutat be, amelyek be mutatják, hogyan lehet beállítani ezt a funkciót, és mintaadatokat készíteni a témakör későbbi, példaadatokkal kapcsolatos adatainak elkészítéséhez.
 
 ### <a name="enable-sample-data"></a>Mintaadatok engedélyezése
 
@@ -145,7 +145,7 @@ A feltöltési sablonokat olyan szabályok alkotják, amelyek megszabják, mikor
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
-Miután elvégezte az összes korábban leírt mintaadatok elérhetővé tételét és beállítását, a forgatókönyvön keresztül kipróbálhatja a *Feltöltés a hely kapacitása alapján* funkciót. Az ebben a forgatókönyvben látható értékek feltételezik, hogy azokkal a szokásos bemutatóadatokkal dolgozik, amelyeket az **USMF** jogi személyt kiválasztott, és hogy előkészítette a témakör korábbi részében ismertetett mintarekordokat. Ez a forgatókönyv példaként is szolgál, amely megmutatja, hogyan használható a funkció az üzemelési beállításban.
+Miután elvégezte az összes korábban leírt mintaadatok elérhetővé tételét és beállítását, a forgatókönyvön keresztül kipróbálhatja a *Feltöltés a hely kapacitása alapján* funkciót. Az ebben az esetben megjelenő értékek feltételezik, hogy a normál bemutató adatokon dolgozik, **hogy az USMF** jogi személyt választotta ki, és hogy ön készített mintarekordokat, amelyek a jelen cikknél korábban le vannak írva. Ez a forgatókönyv példaként is szolgál, amely megmutatja, hogyan használható a funkció az üzemelési beállításban.
 
 ### <a name="create-replenishment-work"></a>Feltöltési munka létrehozása
 

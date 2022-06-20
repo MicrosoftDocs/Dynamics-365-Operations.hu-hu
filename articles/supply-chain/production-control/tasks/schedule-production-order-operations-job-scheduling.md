@@ -1,6 +1,6 @@
 ---
 title: Művelet- és feladatütemezéssel rendelkező termelési rendelés ütemezése
-description: Ez a témakör a műveletütemezés és feladatütemezés termelési rendeléseinek ütemezését ismerteti.
+description: Ez a cikk egy műveletütemezéssel és feladatütemezéssel kapcsolatos termelési rendelés ütemezésére fókuszál.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc91fe5aa398cd94e38beea017d6d60ecb44f17e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d82d5439e57c02ddc9db4222a946bd15f4ed67e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574377"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903927"
 ---
 # <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Művelet- és feladatütemezéssel rendelkező termelési rendelés ütemezése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a műveletütemezés és feladatütemezés termelési rendeléseinek ütemezését ismerteti. Nem jön létre feladat műveletütemezéssel ugyanakkor feladatütemezéssel létrehozhatók feladatok. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ez az eljárás az elkülönített gyártási környezetben dolgozó termelésvezető, gyártástervező vagy az üzemirányítási felügyelő munkáját segíti.
+Ez a cikk egy műveletütemezéssel és feladatütemezéssel kapcsolatos termelési rendelés ütemezésére fókuszál. Nem jön létre feladat műveletütemezéssel ugyanakkor feladatütemezéssel létrehozhatók feladatok. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ez az eljárás az elkülönített gyártási környezetben dolgozó termelésvezető, gyártástervező vagy az üzemirányítási felügyelő munkáját segíti.
 
 
 ## <a name="create-a-production-order"></a>Termelési rendelés létrehozása

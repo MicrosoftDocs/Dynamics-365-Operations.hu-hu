@@ -1,6 +1,6 @@
 ---
 title: Termelési teljesítmény Power BI tartalom
-description: Ez a témakör azt ismerteti, mit tartalmaz a Termelési teljesítmény Power BI tartalom modul.
+description: Ez a témakör ismerteti, hogy mi szerepel a Termelés teljesítményében Power BI.
 author: AndersGirke
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 940e49b43ec1dba0917c67ad6ef4562351d175bcb1c0be7f98d00e73371e5346
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf0d2bdc37efb66f7aee40f237413a2ef5d9f9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761416"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881461"
 ---
 # <a name="production-performance-power-bi-content"></a>Termelési teljesítmény Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, mit tartalmaz a **Termelési teljesítmény** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör ismerteti, hogy mi szerepel a Termelés **teljesítményében** Microsoft Power BI. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -63,7 +63,7 @@ A **Termelési teljesítmény** Power BI-tartalom jelentési oldalaihoz a követ
 
 A következő táblázat megjeleníti azokat a kulcsfontosságú összesítő mértékeket, amelyek a Power BI-tartalom alapjául szolgálnak.
 
-| Entitás                   | Kulcs összesítő mértékek  | A Finance and Operations alkalmazások adatforrása | Mező              |
+| Entitás                   | Kulcs összesítő mértékek  | Adatforrás a Finance and Operations alkalmazásnál | Mező              |
 |--------------------------|-----------------------------|----------------------------------------|--------------------|
 | CostCalculation          | CostAmount                  | ProdCalcTransExpanded                  | CostAmount         |
 | CostCalculation          | CostMarkup                  | ProdCalcTransExpanded                  | CostMarkup         |

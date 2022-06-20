@@ -1,6 +1,6 @@
 ---
 title: Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
-description: Ez a témakör azt mutatja be, hogyan lehet az Electronic Reporting (ER) keretrendszer kiindulási funkcióját a funkciók vizsgálatának automatizálására használni.
+description: Ez a cikk bemutatja, hogy hogyan automatizálhatja a funkciók tesztelését az Elektronikus jelentés (ER) keretrendszer kiindulási szolgáltatásával.
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da69cc903197dbfae536c8494f126074c51aa77f9522d57f2673c97b1e682d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892769"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet az Electronic Reporting (ER) keretrendszert funkciók vizsgálatának automatizálására használni. Az ebben a témakörben szereplő példa bemutatja, hogyan lehet automatizálni a szállítói kifizetések feldolgozásának tesztjét.
+Ez a cikk bemutatja, hogy hogyan automatizálhatja egyes funkciók tesztelését az Elektronikus jelentés (ER) keretrendszer használatával. Az ebben a példában látható példa bemutatja, hogyan lehet automatizálni a szállítói kifizetések feldolgozásának tesztelését.
 
 Az alkalmazás a pénzeszközök és a megfelelő dokumentumok előállítására használja az ER-keretrendszert a szállítói kifizetések feldolgozásakor. Az ER-keretrendszer egy adatmodellből, modell-hozzárendelésből és olyan összetevőkből áll, amelyek támogatják a különböző típusú kifizetési típusokat, valamint a különböző formátumú dokumentumok létrehozását. Ezek az összetevők letölthetők a Microsoft Dynamics Lifecycle Services (LCS) modulból, és importálhatók a példányba.
 
@@ -54,15 +54,15 @@ A funkcionális kiemelt felhasználók futtathatják a felhasználói elfogadás
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesítenie kell a következő előfeltételeket:
+A cikk feladatainak végrehajtásához be kell fejeződnie a következő előfeltételeknek:
 
 - A tesztautomatizálást támogató topológia alkalmazása. A **rendszeradminisztrátori** szerepkörhöz hozzáféréssel kell rendelkeznie az ehhez a topológiához tartozó példányhoz. Ennek a topológiának tartalmaznia kell az ebben a példában használt demóadatokat. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató környezet telepítése és használata](../perf-test/continuous-build-test-automation.md).
-- A felhasználói elfogadási és az integrációs tesztek automatikus futtatásához telepítenie kell az RSAT-t a használt topológiában, és a megfelelő módon konfigurálnia kell. A RSAT telepítésével konfigurálásával és a Finance and Operations alkalmazásokkal és az Azure DevOps megoldással való együttműködés konfigurálásával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ügyeljen az eszköz használatára vonatkozó előfeltételekre. A következő ábrán egy példa látható az RSAT-beállításokra. A kék téglalap belefoglalja azokat a paramétereket, amelyek a Azure DevOps hozzáférést határozzák meg. A zöld téglalap a példányhoz való hozzáférést meghatározó paramétereket foglalja magában.
+- A felhasználói elfogadási és az integrációs tesztek automatikus futtatásához telepítenie kell az RSAT-t a használt topológiában, és a megfelelő módon konfigurálnia kell. A RSAT telepítésévelés konfigurálásával, illetve a Finance and Operations alkalmazások és az Azure DevOps megoldással való együttműködés konfigurálásával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ügyeljen az eszköz használatára vonatkozó előfeltételekre. A következő ábrán egy példa látható az RSAT-beállításokra. A kék téglalap belefoglalja azokat a paramétereket, amelyek a Azure DevOps hozzáférést határozzák meg. A zöld téglalap a példányhoz való hozzáférést meghatározó paramétereket foglalja magában.
 
     ![RSAT-beállítások.](media/GER-Configure.png "Az RSAT-beállítások párbeszédpaneljének képernyőképe")
 
 - A megfelelő végrehajtási szekvencia biztosításához a tesztesetek készletekbe rendezéséhez, hogy a teszt-végrehajtási naplók begyűjthetők legyenek a további jelentésekhez és vizsgálatokhoz, a telepített topológiából hozzáférést kell biztosítani az Azure DevOps megoldáshoz.
-- A jelen témakörben szereplő példa végrehajtásához ajánlott a következő letöltése: [ER-használat az RSAT-tesztekhez](https://go.microsoft.com/fwlink/?linkid=874684). Ez a zip-fájl a következő feladat-útmutatókat tartalmazza:
+- A példában olvasható példához javasoljuk, [hogy töltse le az ER-használatot AZ RSAT-tesztekhez](https://go.microsoft.com/fwlink/?linkid=874684). Ez a zip-fájl a következő feladat-útmutatókat tartalmazza:
 
     | Tartalom                                           | Fájlnév és hely |
     |---------------------------------------------------|------------------------|

@@ -1,6 +1,6 @@
 ---
 title: Figyelem a főkönyvi kiegyenlítés és az év végi zárás között
-description: Ez a témakör a főkönyvi kiegyenlítéseket és a főkönyv év végi zárát növelő fejlesztésekről nyújt tájékoztatást.
+description: Ez a cikk a főkönyvi kiegyenlítéseket és a főkönyv év végi záródását hanövelő fejlesztésekről nyújt tájékoztatást.
 author: kweekley
 ms.date: 04/06/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
-ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
+ms.openlocfilehash: 30d3cc0bbd97cd006f12d06cda64ee63cb42252e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8553332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902516"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Figyelem a főkönyvi kiegyenlítés és az év végi zárás között
 
@@ -67,12 +67,12 @@ A funkció engedélyezése után, valamint a következő év végi zárás futta
 
 A **Főkönyvi kiegyenlítés beállítása lapon** **be van állítva a Részletek megtartva az év végi záráskor beállítás minden fő számlához**.
 
-1.  Ugrás a **FőkönyvLedger** > **setupGeneral** > **főkönyvi paraméterekhez**.
+1.  Ugrás a Főkönyv **beállítása** > **főkönyvi** > **paraméterekhez**.
 2.  A Főkönyvi **kiegyenlítések** lapon válassza ki a főkönyvi **kiegyenlítési számlákat**.
 
 – vagy –
 
-1.  Ugrás a **főkönyvPeriodic** > **tasksLedger** > **kiegyenlítéseihez**.
+1.  Ugrás a Főkönyv **–** > **Időszakos feladatok főkönyvi** > **kiegyenlítések modulhoz**.
 2.  Válassza ki a **főkönyvi kiegyenlítési számlákat**.
 
 Két oszlop lett hozzáadva a Főkönyvi **kiegyenlítések laphoz**:
@@ -82,7 +82,7 @@ Két oszlop lett hozzáadva a Főkönyvi **kiegyenlítések laphoz**:
 
 ## <a name="year-end-close"></a>Év végi zárás
 
-Amikor az **év** > **végi zárási folyamatot a FőkönyvPeriod** > **lezáró** év végi lezárási műveletével futtatja, a folyamat létrehozza a főkönyvi kiegyenlítésre meghatározott fő számlák nyitó egyenlegét. A nyitó egyenlegek a főkönyvi kiegyenlítés beállításától függően összegezve vagy részletesen is létrejönnek. A folyamat kizárja a kiegyenlített főkönyvi tranzakciókat, függetlenül attól, hogy összegezve vagy részletesen könyveli-e az egyes fő számlák nyitó egyenlegét.
+Amikor az **év** > **·** > **végi** lezárás futtatásához a főkönyvi időszak lezárási év végi zárási folyamatra megy, a folyamat létrehozza a főkönyvi kiegyenlítéshez meghatározott fő számlák nyitó egyenlegét. A nyitó egyenlegek a főkönyvi kiegyenlítés beállításától függően összegezve vagy részletesen is létrejönnek. A folyamat kizárja a kiegyenlített főkönyvi tranzakciókat, függetlenül attól, hogy összegezve vagy részletesen könyveli-e az egyes fő számlák nyitó egyenlegét.
 
 A 2021-es pénzügyi 130100 feladott fő számlára például több tranzakciót ad fel.
 
@@ -159,7 +159,7 @@ Az eredeti tranzakciók adatai a Főkönyvi kiegyenlítés oldalon **található
 ## <a name="settle-transactions"></a><a name="settle-transactions"></a>Tranzakciók kiegyenlítése
 Főkönyvi tranzakciók kiegyenlítéséhez kövesse az alábbi lépéseket.
 
-1. Ugrás a **főkönyvPeriodic** > **tasksLedger** > **kiegyenlítéseihez**.
+1. Ugrás a Főkönyv **–** > **Időszakos feladatok főkönyvi** > **kiegyenlítések modulhoz**.
 2.  Állítsa be a szűrőket a lap tetején.
 
     1. Válasszon ki egy dátumtartományt. Másik lehetőségként válasszon egy dátumtartománykódot, amely automatikusan kitölti a dátumtartományt.

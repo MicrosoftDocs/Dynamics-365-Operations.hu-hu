@@ -1,6 +1,6 @@
 ---
 title: Az ER-konfigurációk frissített verzióinak importálása
-description: Ez a témakör azt mutatja be, hogyan lehet importálni az elektronikus jelentéskészítési (ER) konfigurációk frissített verzióit a konfigurációs szolgáltatás globális tárából.
+description: Ez a cikk bemutatja, hogy hogyan importálhatja az elektronikus jelentéskészítő (ER) konfigurációk frissített verzióit a Konfigurációs szolgáltatás globális tárházaiból.
 author: NickSelin
 ms.date: 06/09/2020
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 712bccbd48775cadc069ef5e8a04f9aae3c9f223137bcd394ff1815a720393b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69eaa3e2ecfbd1e92f23725d97d7fa9f0abe1cea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734888"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847546"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Az ER-konfigurációk frissített verzióinak importálása
 
 [!include [banner](../includes/banner.md)]
 
-Az elektronikus jelentéskészítési (ER) [adattárak](general-electronic-reporting.md#Repository) az [ER-konfigurációk](general-electronic-reporting.md#Configuration) megosztására szolgálnak. Az ER-konfigurációkat különböző adattárakból [importálhatja](download-electronic-reporting-configuration-lcs.md) a Microsoft Dynamics 365 Finance-példányába. Az ER-konfigurációk importálásakor a [konfigurációszolgáltatók](general-electronic-reporting.md#Provider) közzétehetik új [verziók](general-electronic-reporting.md#component-versioning) adattárait, így azok megoszthatók.
+Az elektronikus jelentéskészítési (ER) [adattárak](general-electronic-reporting.md#Repository) az [ER-konfigurációk](general-electronic-reporting.md#Configuration) megosztására szolgálnak. A különböző [tárházból](download-electronic-reporting-configuration-lcs.md) származó ER-konfigurációkat importálhatja a Microsoft Dynamics 365 Pénzügy példányába. Az ER-konfigurációk importálásakor a [konfigurációszolgáltatók](general-electronic-reporting.md#Provider) közzétehetik új [verziók](general-electronic-reporting.md#component-versioning) adattárait, így azok megoszthatók.
 
-Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk frissített verzióit a konfigurációs szolgáltatás globális tárából. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Ez a cikk bemutatja, hogyan importálhatja az ER-konfigurációk frissített verzióit a Konfigurációs szolgáltatás globális tárházból. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>A rendelkezésre álló frissített verziók áttekintése
 

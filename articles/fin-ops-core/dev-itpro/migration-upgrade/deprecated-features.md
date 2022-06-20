@@ -1,6 +1,6 @@
 ---
 title: Eltávolított vagy elavult funkciók a korábbi kiadásokban
-description: Ez a témakör azt mutatja be, hogy mely szolgáltatások lettek eltávolítva vagy melyek eltávolítása tervezett a Dynamics 365 for Finance and Operations alkalmazásból és a termék korábbi kiadásaiból.
+description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve azokat, amelyek el lett távolítva a Dynamics 365 for Finance and Operations korábbi verziókból és verziókból.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063237"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866185"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -28,16 +28,16 @@ ms.locfileid: "8063237"
 
 
 > [!IMPORTANT]
-> Ez a témakör már nem frissül. A Finance and Operations alkalmazásokból eltávolított vagy elavult funkciók aktuális listájának megtekintéséhez keressen rá **"Eltávolított vagy elavult funkciók"** az Ön által használt alkalmazáshoz kapcsolódó tartalom.
+> Ez a cikk már nem frissül. **Ha a Pénzügy és műveletek alkalmazásból eltávolított vagy elavult funkciók aktuális listáját látni, keresse meg a használatban lévő alkalmazáshoz kapcsolódó "Eltávolított vagy elavult funkciók"** tartalmat.
 
-Ez a témakör azt mutatja be, hogy mely szolgáltatások lettek eltávolítva vagy avultatva a Dynamics 365 for Finance and Operations alkalmazásból és a termék korábbi kiadásaiból.
+Ez a témakör olyan funkciókat Dynamics 365 for Finance and Operations ismertet, amelyek már el vannak távolítva vagy elavultak a termékből és a termék korábbi verzióiból.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
 
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
-A Finance and Operations alkalmazások objektumairól részletes információk találhatók a [Műszaki referencia jelentések](/dynamics/s-e/global/axtechrefrep_61). Összehasonlíthatja e jelentések különböző verzióit, hogy megismerje azokat az objektumokat, amelyek megváltoztak vagy eltávolítottak a Finance and Operations alkalmazások egyes verzióiban.
+A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
 
 ## <a name="finance-1007-with-platform-update-31"></a>A Finance 10.0.7, 31-es platform frissítéssel
 
@@ -84,7 +84,7 @@ A Finance and Operations alkalmazások objektumairól részletes információk t
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: 2020. október 1-től a **setUtcString ()** metódus nem támogatott. A fejlesztőknek helyette a **setUtcDateTime()** metódust kell használniuk. |
 
-### <a name="blocklist-report-it--feature-reference-it-00001"></a>Blokklista jelentés (IT) – A szolgáltatás hivatkozása IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Blokklista-jelentés (IT) – funkcióhivatkozási IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -302,7 +302,7 @@ A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio re
 | **Felváltotta másik szolgáltatás?**   | A jövőben ez a fordítói figyelmeztetés hibaüzenetre lesz módosítva. |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: A figyelmeztetés fordítási idejű hiba a Finance and Operations alkalmazások 10.0.11-es verziójának platformfrissítéseivel. |
+| **Állapot**                         | Elavult: A figyelmeztetés fordítási hiba a Pénzügy és műveletek alkalmazások 10.0.11-es verziójának platformfrissítései esetén. |
 
 #### <a name="complete-list"></a>Teljes lista
 Az elavulás alatt álló API-k teljes listája: [Módszerek és metaadatelemek elavulása](deprecation-deletion-apis.md).
@@ -889,7 +889,7 @@ A munkavállalók céljai létrehozásának kezelésére vonatkozó munkafolyama
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF, AxD és AxBC integrációja
 
-Az Alkalmazásintegrációs keretrendszerben (AIF-ben) adatok cserélhetőek ki külső rendszerekkel, szolgáltatásként kitett üzleti logikán keresztül. A Dynamics AX dokumentumokon és .NET Business Connector-on (AxBC) alapuló szolgáltatásokat tartalmaz. Dokumentumok XML használatával hozhatóak létre. Az XML által tartalmazott fejlécadatok hozzáadásával *üzenet* hozható létre, amely a Dynamics AX rendszerbe vagy rendszerből átvihető. Dokumentumok például az értékesítési rendelések és a beszerzési rendelések. Azonban szinte minden entitást (például vevőt) képviselhet dokumentum. A dokumentumokon alapuló szolgáltatások az **Axd \<Document\>** osztályokat használják.
+Az Alkalmazásintegrációs keretrendszerben (AIF-ben) adatok cserélhetőek ki külső rendszerekkel, szolgáltatásként kitett üzleti logikán keresztül. A Dynamics AX dokumentumokon és .NET Business Connector (AxBC) alapuló szolgáltatásokat tartalmaz. Dokumentumok XML használatával hozhatóak létre. Az XML által tartalmazott fejlécadatok hozzáadásával *üzenet* hozható létre, amely a Dynamics AX rendszerbe vagy rendszerből átvihető. Dokumentumok például az értékesítési rendelések és a beszerzési rendelések. Azonban szinte minden entitást (például vevőt) képviselhet dokumentum. A dokumentumokon alapuló szolgáltatások az **Axd \<Document\>** osztályokat használják.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|

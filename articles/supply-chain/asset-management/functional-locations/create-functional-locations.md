@@ -1,6 +1,6 @@
 ---
 title: Munkavégzési helyszínek létrehozása
-description: Ez a témakör azt mutatja be, hogyan lehet munkavégzési helyszínt létrehozni az Eszközkezelés modulban.
+description: Ez a cikk bemutatja, hogyan lehet egy funkcionális helyet létrehozni az eszközkezelésben.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5dd5ea59b27c594752ff82428723f3afe555b5f2426a812c70e10b968c920a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869720"
 ---
 # <a name="create-functional-locations"></a>Munkavégzési helyszínek létrehozása
 
@@ -28,7 +28,7 @@ ms.locfileid: "6767532"
 
  
 
-Ez a témakör azt mutatja be, hogyan lehet munkavégzési helyszínt létrehozni az Eszközkezelés modulban.
+Ez a cikk bemutatja, hogyan lehet egy funkcionális helyet létrehozni az eszközkezelésben.
 
 Ha munkavégzési helyszínt hoz létre, vegye figyelembe, miután létrehozta a munkavégzési helyszín, nem helyezheti át azt az eredeti helyéről. Ez azt jelenti, hogy alaposan át kell gondolnia kell a munkavégzési helyszínek szerkezetét, mielőtt megkezdheti azok létrehozását az Eszközkezelés modulban. Ha egy munkavégzési helyszínnel kapcsolatosan meggondola magát, törölheti azt, feltéve, hogy még nem használta.
 

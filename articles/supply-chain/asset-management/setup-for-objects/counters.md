@@ -1,6 +1,6 @@
 ---
 title: Eszköz mértékei
-description: A témakör bemutatja, hogyan lehet eszközmérték típusokat létrehozni az Eszközkezelés modulban.
+description: A cikk bemutatja, hogyan lehet eszközmemóvelet-típusokat létrehozni az Eszközkezelésben.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bcef89265697c1898b7d61a0b0ae6331ce1c851
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723575"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909672"
 ---
 # <a name="counters"></a>Számlálók
 
 [!include [banner](../../includes/banner.md)]
 
-A témakör bemutatja, hogyan lehet számláló típusokat létrehozni az Eszközkezelés modulban. Az számlálótípusokkal lehet mérni a számlálókat lehet regisztrálni eszközökön, például a termelési órák száma vagy a tárgyi eszközön termelt mennyiség tekintetében. Az eszköztípusok az számlálótípusokhoz kapcsolódnak. Ez azt jelenti, hogy egy eszköz esetében csak akkor használható egy számláló, ha az eszköz típusánál be van állítva a számláló.
+A cikk bemutatja, hogyan lehet számlálótípusokat létrehozni az Eszközkezelésben. Az számlálótípusokkal lehet mérni a számlálókat lehet regisztrálni eszközökön, például a termelési órák száma vagy a tárgyi eszközön termelt mennyiség tekintetében. Az eszköztípusok az számlálótípusokhoz kapcsolódnak. Ez azt jelenti, hogy egy eszköz esetében csak akkor használható egy számláló, ha az eszköz típusánál be van állítva a számláló.
 
 Az eszközökre vonatkozó számlálóregisztrációk előtt létre kell hoznia a **Számlálókban** használni kívánt számlálótípusokat. Ezután az eszközökre vonatkozó számlálóregisztrációkat kell létrehoznia a **Számlálók** helyen. 
 

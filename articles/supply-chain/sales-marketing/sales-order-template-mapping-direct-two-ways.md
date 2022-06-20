@@ -1,6 +1,6 @@
 ---
 title: Értékesítési rendelés szinkronizálása közvetlenül a Sales szolgáltatás és a Supply Chain Management szolgáltatás között
-description: Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az értékesítési rendelések közvetlen szinkronizálásához a Dynamics 365 Sales és a Dynamics 365 Supply Chain Management között.
+description: A cikk be tárgyalja az értékesítési rendelések szinkronizálásának közvetlenül a Dynamics 365 értékesítés és a folyamat közötti közvetlen futtatásához használt sablonokat és a mögöttes feladatokat Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 63a9be9bedabe1f15ad8db583151aa7fa480473b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854152"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Értékesítési rendelés szinkronizálása közvetlenül a Sales szolgáltatás és a Supply Chain Management szolgáltatás között
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061518"
 
 
 
-Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az értékesítési rendelések közvetlen szinkronizálásához a Dynamics 365 Sales és a Dynamics 365 Supply Chain Management között.
+A cikk be tárgyalja az értékesítési rendelések szinkronizálásának közvetlenül a Dynamics 365 értékesítés és a folyamat közötti közvetlen futtatásához használt sablonokat és a mögöttes feladatokat Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása adatfolyama
 
@@ -203,7 +203,7 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 
 [![Sablonleképezés adatintegrációban, Értékesítési rendelések (Sales – Supply Chain Management) – Közvetlen: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Potenciális vevők készpénzre váltása](prospect-to-cash.md)
 

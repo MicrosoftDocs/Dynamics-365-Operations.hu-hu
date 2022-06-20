@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b43c499928988e98cae63b85f528b8a71e042cc7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 784ec32ae886ef7ea9342b085f893eeeec761961
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713642"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855491"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Értékcsökkenési könyv frissítésének áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Tárgyi eszközök aktuális könyv funkcióját ismerteti. Ez a funkció a korábbi verziókban elérhető értékmodellfunkción alapul, de magában foglal minden olyan funkciót, amelyek korábban csak az értékcsökkenési könyvekben szerepeltek. Az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv. A könyv funkcióval egyetlen lap-, lekérdezés- és jelentéskészletet használhat a szervezet összes tárgyieszköz-folyamatában. Ez a témakör néhány olyan dolgot tartalmaz, amelyeket a frissítés előtt érdemes megfontolni. 
+Ez a témakör a Tárgyi eszközök aktuális könyv funkcióját ismerteti. Ez a funkció a korábbi verziókban elérhető értékmodellfunkción alapul, de magában foglal minden olyan funkciót, amelyek korábban csak az értékcsökkenési könyvekben szerepeltek. Az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv. A könyv funkcióval egyetlen lap-, lekérdezés- és jelentéskészletet használhat a szervezet összes tárgyieszköz-folyamatában. Ez a cikk néhány olyan témakört tartalmaz, amelyekről a frissítés előtt érdemes megfontolni. 
 
 A frissítési folyamat áthelyezi a meglévő beállításokat és az összes meglévő tranzakciót az új könyv struktúrájának megfelelően. Az értékmodellek megmaradnak a jelenleg állapotukban, olyan könyvként, amely a főkönyvbe ad fel. Az értékcsökkenési könyvek áthelyezésre kerülnek egy olyan könyvbe, amelynél a Feladás a főkönyvbe opció beállítása Nem. Az értékcsökkenési könyvhöz tartozó naplónevek átkerülnek a főkönyvi napló nevéhez, amelynél a feladási réteg beállítása Nincs. Az értékcsökkenési könyv tranzakciói átkerülnek a tárgyieszköz-tranzakciókhoz.
 

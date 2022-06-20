@@ -1,6 +1,6 @@
 ---
 title: A Finance Insights beállítási problémáinak elhárítása
-description: Ez a témakör a Finance Insights funkciók használata során előforduló problémákat sorolja fel. Ezenkívül bemutatja a problémák megoldását is.
+description: Ez a cikk felsorolja azokat a problémákat, amelyek a pénzügyi információkhoz való képességek használata során fordulhatnak elő. Ezenkívül bemutatja a problémák megoldását is.
 author: panolte
 ms.date: 02/11/2022
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1ee354a1c3d9b45eb12eeb3a6a29f2a6d5e4c34c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725905"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846915"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>A Finance Insights beállítási problémáinak elhárítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Finance Insights funkciók használata során előforduló problémákat sorolja fel. Ezenkívül bemutatja a problémák megoldását is.
+Ez a cikk felsorolja azokat a problémákat, amelyek a pénzügyi információkhoz való képességek használata során fordulhatnak elő. Ezenkívül bemutatja a problémák megoldását is.
 
 ## <a name="symptom-why-cant-i-map-the-customer-payment-insights-data-integration-template-destination-column"></a>Tünet: Miért nem lehet leképezni a Vevői kifizetések információk adatintegrációs sablonjának céloszlopát?
 
@@ -121,4 +121,4 @@ A **költségvetési javaslat** funkcióhoz legalább három év költségvetés
 
 ### <a name="resolution"></a>Megoldás
 
-A környezet elérte az Adat –Szolgáltatási maximum táblakorlátot. A korlátra vonatkozó további **tudnivalókat** lásd a témakör Valós idejű adatváltozások engedélyezése című részében, [az Exportálás az Azure adat áttekintésbe című témakörében](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).
+A környezet elérte az Adat –Szolgáltatási maximum táblakorlátot. A korlátról az **Exportálás az Azure-adatok**[áttekintésében található a közel valós idejű adatváltozások engedélyezése című részében található részletes tájékoztatás](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

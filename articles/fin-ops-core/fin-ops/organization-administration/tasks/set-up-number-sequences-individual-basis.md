@@ -1,6 +1,6 @@
 ---
-title: Egyedi számsorozatok beállítása
-description: Ez a témakör az egyedi számsorozatok beállítását ismerteti.
+title: Számsorozatok beállítása egyedi alapon
+description: Ez a témakör bemutatja a számsorozatok egyéni beállítását.
 author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 7be72d348957c5c6494958276b2baa9c67d63c58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904988"
 ---
-# <a name="set-up-number-sequences-on-an-individual-basis"></a>Egyedi számsorozatok beállítása
+# <a name="set-up-number-sequences-on-an-individual-basis"></a>Számsorozatok beállítása egyedi alapon
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör az egyedi számsorozatok beállítását ismerteti. A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzések olvasható, egyedi azonosítóinak létrehozására használja a rendszer. Az azonosítókat igénylő alapadatokat és tranzakciós bejegyzéseket hivatkozásnak nevezik. Egy hivatkozáshoz tartozó új rekordok létrehozása előtt be kell állítania egy számsorozatot, és a hivatkozáshoz társítani. Beállíthatja egyszerre az összes igényelt számsorozatot a **Számsorozatok beállítása** varázsló használatával, vagy a **Számsorozat** lap használatával létrehozhatja, illetve módosíthatja az egyes számsorozatokat.
+Ez a témakör bemutatja a számsorozatok egyéni beállítását. A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzések olvasható, egyedi azonosítóinak létrehozására használja a rendszer. Az azonosítókat igénylő alapadatokat és tranzakciós bejegyzéseket hivatkozásnak nevezik. Egy hivatkozáshoz tartozó új rekordok létrehozása előtt be kell állítania egy számsorozatot, és a hivatkozáshoz társítani. Beállíthatja egyszerre az összes igényelt számsorozatot a **Számsorozatok beállítása** varázsló használatával, vagy a **Számsorozat** lap használatával létrehozhatja, illetve módosíthatja az egyes számsorozatokat.
 
 1. Ugorjon a **Navigációs ablaktábla > Modulok > Szervezeti adminisztráció > Számsorozatok > Számsorozatok** elemre.
 2. Válassza ki a **Számsorozat** elemet.

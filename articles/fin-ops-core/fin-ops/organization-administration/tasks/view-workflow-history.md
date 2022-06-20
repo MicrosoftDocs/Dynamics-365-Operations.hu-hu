@@ -1,6 +1,6 @@
 ---
 title: Munkafolyamat-előzmények megtekintése
-description: Ez a témakör azokat a lépéseket ismerteti, amelyekkel megtekintheti azoknak a dokumentumoknak az állapotát, amelyeket a munkafolyamat-rendszerbe küldtek feldolgozásra és jóváhagyásra.
+description: Ez a témakör a munkafolyamat-rendszerbe feldolgozásra és jóváhagyásra elküldött dokumentum állapotának megtekintéséhez szükséges lépéseket ismerteti.
 author: jasongre
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ca9a8bff246cc878a0703947a7f8c1c4fc01963
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8a5810eaed5d2ff6cb5c98e1b21c098c70f24485
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868579"
 ---
 # <a name="view-workflow-history"></a>Munkafolyamat-előzmények megtekintése
 
@@ -27,7 +27,7 @@ ms.locfileid: "8069959"
 
 [!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
-Ez a témakör azokat a lépéseket ismerteti, amelyekkel megtekintheti azoknak a dokumentumoknak az állapotát, amelyeket a munkafolyamat-rendszerbe küldtek feldolgozásra és jóváhagyásra. Ez az eljárás az USMF bemutatócéget használja.
+Ez a témakör a munkafolyamat-rendszerbe feldolgozásra és jóváhagyásra elküldött dokumentum állapotának megtekintéséhez szükséges lépéseket ismerteti. Ez az eljárás az USMF bemutatócéget használja.
 
 1. Ugorjon a **Navigációs ablaktábla > Modulok > Gyakori > Lekérdezések > Munkafolyamat > Munkafolyamat-előzmények** lehetőségre.
     - Ezen a képernyő megtekintheti azoknak a dokumentumoknak az állapotát, amelyeket a munkafolyamat-rendszerbe küldtek feldolgozásra és jóváhagyásra.  

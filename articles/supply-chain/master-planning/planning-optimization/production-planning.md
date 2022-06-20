@@ -1,6 +1,6 @@
 ---
 title: Termeléstervezés
-description: Ez a témakör a termelés tervezését írja le, és bemutatja, hogyan lehet módosítani a tervezett termelési rendeléseket a Tervezési optimalizálás segítségével.
+description: Ez a cikk a termelés tervezését írja le, és bemutatja, hogyan lehet módosítani a tervezett termelési rendeléseket a Tervezés optimalizálása segítségével.
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8f23cb62512dfd718fe199867a4b21aaa0eca3fd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873782"
 ---
 # <a name="production-planning"></a>Termeléstervezés
 
@@ -24,11 +24,11 @@ ms.locfileid: "8469058"
 
 A tervezési optimalizálások több termelési helyzetet is támogatnak. Ha egy meglévő, beépített alaptervezési motorról tér át, fontos, hogy tisztában legyen a némiképp megváltozott viselkedéssel.
 
-Az alábbi videofelvétel rövid bevezetőt nyújt a témakörben tárgyalt fogalmak közül: [Dynamics 365 Supply Chain Management: tervezésoptimalizálási fejlesztések.](https://youtu.be/u1pcmZuZBTw)
+Az alábbi videofelvétel rövid bevezetőt nyújt a cikk néhány alapfogalma bevezetőjében: [Dynamics 365 Supply Chain Management A tervezés optimalizálási fejlesztések](https://youtu.be/u1pcmZuZBTw).
 
 ## <a name="turn-on-this-feature-for-your-system"></a>A funkció bekapcsolása a rendszerhez
 
-Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a kapcsolja be a *Tervezett termelési rendelések a Tervezési optimalizáláshoz* funkciót.
+Ha a rendszer még nem tartalmazza az ebben a cikkben ismertetett funkciókat, akkor menjen a [Funkciókezeléshez](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)*,* és kapcsolja be a Tervezett termelési rendelések tervezési optimalizálási funkcióját.
 
 ## <a name="planned-production-orders"></a>Terv. term. rendelések
 
@@ -65,7 +65,7 @@ Ha módosítani szeretné a tervezett rendelés adatait, és látni szeretné a 
 2. Hagyja jóvá a tervezett rendelést.
 3. Futtassa az alaptervezést.
 
-Az alaptervezés futtatásakor nem szabad szűrőket használni, ha szerepel benne tervezett termelési rendelés. További tudnivalókat a [Szűrők](#filters) részben olvashat, a témakör későbbi részében.
+Az alaptervezés futtatásakor nem szabad szűrőket használni, ha szerepel benne tervezett termelési rendelés. A további tudnivalókat lásd [a](#filters) Cikk Szűrők szakaszában.
 
 > [!NOTE]
 > Ha a tervezett rendelés szállítási dátumát későbbi dátumra módosították, akkor előfordulhat, hogy az igény egy új tervezett rendeléshez lesz hozzárendelve. Ez a viselkedés akkor fordul elő, amikor az új ellátási dátum késést okoz a követett igényhez, de az átfutási idő beállításai szerint a késleltetés elkerülhető.

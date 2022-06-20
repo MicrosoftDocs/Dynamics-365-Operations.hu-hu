@@ -1,6 +1,6 @@
 ---
 title: Készlet előrejelzések
-description: Ez a témakör leírja azokat a készlet- és igény-előrejelzési funkciókat, amelyek készlet.előrejelzések készítéséhez használhatók a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
+description: Ez a témakör ismerteti azokat a készlet- és igény-előrejelzési funkciókat, amelyek a Microsoft készlet-előrejelzési szolgáltatásainak létrehozására használhatók Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 10e3b6ad079dbcbc3cce429a4d9d838e584b9c54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548167"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844525"
 ---
 # <a name="inventory-forecasts"></a>Készlet előrejelzések
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet készlet-előrejelzéseket megtekinteni és létrehozni. A cikkekhez, cikkcsoportokhoz, cikkfelosztási kulcsokhoz, vevőszámlákhoz, vevőcsoportokhoz, szállítói számlákhoz és szállítócsoportokhoz készlet- és igény-előrejelzési sorokat lehet létrehozni és megtekinteni.
+Ez a témakör a készlet-előrejelzések megtekintésével és létrehozásával kapcsolatban ismerteti. A cikkekhez, cikkcsoportokhoz, cikkfelosztási kulcsokhoz, vevőszámlákhoz, vevőcsoportokhoz, szállítói számlákhoz és szállítócsoportokhoz készlet- és igény-előrejelzési sorokat lehet létrehozni és megtekinteni.
 
 Mindegyik előrejelzési sorhoz ki lehet választani a használt előrejelzési modellt. Ezt követően megadható a cikk vagy cikkcsoport, valamint a mennyiség vagy a tranzakció összege. Az előrejelzési mennyiség felosztásához lehetőség van ütemezés beállítására is.
 
@@ -60,7 +60,7 @@ Ahogy az 1. lépésben található táblázat mutatja, különböző lehetőség
     A választástól függően megjelenik az **Ellátási előrejelzés** vagy az **Igény-előrejelzés** lap. A lap megnyitása előtt a kiválasztott rekordhoz már meglévő előrejelzési sorokat jeleníti meg.
 
 1. A műveleti ablaktáblán válassza az **Új** elemet előrejelzési sor rácshoz adásához az oldal felső részén.
-1. Az új sor **Modell** mezőjében válassza ki a használni kívánt előrejelzési modellt. Ezután szükség szerint adja meg a további adatokat, például a cikket, a cikkcsoportot, a vevői vagy szállítói számlát vagy csoportot, a cikk mennyiségét vagy a tranzakció teljes összegét. Az **Ellátási előrejelzés** és az **Igény-előrejelzési** lapokon elérhető mezőkkel kapcsolatos részletes információk a témakör későbbi szakaszaiban találhatók.
+1. Az új sor **Modell** mezőjében válassza ki a használni kívánt előrejelzési modellt. Ezután szükség szerint adja meg a további adatokat, például a cikket, a cikkcsoportot, a vevői vagy szállítói számlát vagy csoportot, a cikk mennyiségét vagy a tranzakció teljes összegét. Az Ellátási előrejelzés **és** **az** Igény-előrejelzés lapokon elérhető mezőkkel kapcsolatos részletes információk a cikk későbbi szakaszaiban olvashatók.
 1. Az előrejelzés adott időszakra való elosztásához válassza az eszköztár **Áttekintés** lapján az **Előrejelzés felosztása** lehetőséget.
 1. A **Felosztás** rácson tekintse át időhatárt és az időintervallumokat, amelyek az előre jelzett mennyiségek elosztásához használatosak.
 
@@ -68,7 +68,7 @@ Ahogy az 1. lépésben található táblázat mutatja, különböző lehetőség
 
 Az ellátási előrejelzéssel tervet lehet létrehozni a megvásárolni szükséges cikkekhez. Közli a beszerzési és forrás adminisztrátorokkal, hogy mit kell rendelniük.
 
-Az ellátási előrejelzést cikk, cikkcsoport, cikkfelosztási kulcs, szállító és szállítócsoport szerint is megadhatja. A különböző entitások és rekordok **Ellátási előrejelzés** oldalának megnyitásával kapcsolatos tudnivalókat lásd a témakör korábbi [Előrejelzési sorok megtekintése és manuális megadása](#manual-entry) szakaszában.
+Az ellátási előrejelzést cikk, cikkcsoport, cikkfelosztási kulcs, szállító és szállítócsoport szerint is megadhatja. A különböző **entitások**[és](#manual-entry) rekordok ellátás-előrejelzési oldalának megnyitásával kapcsolatos tudnivalókat lásd a cikk korábbi, "Előrejelzési sorok megtekintése" szakaszában, illetve manuálisan beírható.
 
 Az **Ellátási előrejelzés** lap felső része az ellátási előrejelzési sorok rácsát és egy lapkészletet biztosít, amely a kiválasztott előrejelzési sor további információinak megtekintésére és beállítására használható. A lap alsó részén a **Felosztás** rács található.
 
@@ -94,9 +94,9 @@ A következő táblázat az **Ellátási előrejelzés** oldal **Áttekintés** 
 
 | Parancs | Leírás |
 |---|---|
-| Előrejelzés felosztása | Ha felosztási módszert használ, hozza létre az előrejelzési tranzakció egyéni ütemezési sorait. A program ezután dátum szerint (a kiválasztott időintervallumok szerint), mennyiség és összeg szerint osztja el a sor mennyiségét a teljes időhatáron belül. (Lásd: [Előrejelzés felosztása](#allocate-forecast) szakaszt a témakör későbbi részében.) |
-| Tömeges frissítés | Nyissa meg az **Előrejelzési tranzakciók szerkesztése** lapot. (Lásd: [Az előrejelzési tranzakciók tömeges frissítése](#bulk-update) szakaszt a témakör későbbi részében.) |
-| Készlet előrejelzése | A **Készlet-előrejelzés** lapnak a kiválasztott cikk-/modellkombinációra szűrt nézetének megnyitása. (Lásd: [Készlet-előrejelzések](#inventory-forecast) szakaszt a témakör későbbi részében.) |
+| Előrejelzés felosztása | Ha felosztási módszert használ, hozza létre az előrejelzési tranzakció egyéni ütemezési sorait. A program ezután dátum szerint (a kiválasztott időintervallumok szerint), mennyiség és összeg szerint osztja el a sor mennyiségét a teljes időhatáron belül. (Lásd: [Az előrejelzési](#allocate-forecast) szakasz felosztása a cikk későbbi részében.) |
+| Tömeges frissítés | Nyissa meg az **Előrejelzési tranzakciók szerkesztése** lapot. (Lásd: [Az előrejelzési tranzakciók tömeges frissítése](#bulk-update) a cikk későbbi szakaszában.) |
+| Készlet előrejelzése | A **Készlet-előrejelzés** lapnak a kiválasztott cikk-/modellkombinációra szűrt nézetének megnyitása. (Lásd: [Készlet-előrejelzési](#inventory-forecast) szakasz a cikk későbbi részében.) |
 | Cikkszükséglet létrehozása | Egy párbeszédpanel megnyitása, ahol cikkeket, illetve értékesítési rendeléseket vagy cikknaplósorokat hozhat létre a projekthez kapcsolódó előrejelzési tranzakciókhoz. Bár ez a parancs az ellátási előrejelzési sorokhoz és az igény előrejelzési sorokhoz is elérhető, nem használható az **Ellátási előrejelzés** lapon. |
 
 ### <a name="the-overview-tab-on-the-supply-forecast-page"></a>A Ellátási előrejelzés lap Áttekintés lapja
@@ -173,7 +173,7 @@ Ha cikkfelosztási kulcsot használ, vagy egy vagy több jövőbeli időszakra v
 
 Az igény-előrejelzés segítségével lehet megadni vagy generálni egy vevőre vonatkozó igényt. Segít az értékesítési és marketing adminisztrátorok számára, hogy tájékoztassák az alaptervezési adminisztrátorokat a következő előrejelzési időszakban várható igényről.
 
-Az igényelőrejelzést cikk, cikkcsoport, cikkfelosztási kulcs, vásárló és vásárlócsoport szerint is megadhatja. A különböző entitások és rekordok **Igényelőrejelzés** oldalának megnyitásával kapcsolatos tudnivalókat lásd a témakör korábbi [Előrejelzési sorok megtekintése és manuális megadása](#manual-entry) szakaszában.
+Az igényelőrejelzést cikk, cikkcsoport, cikkfelosztási kulcs, vásárló és vásárlócsoport szerint is megadhatja. A különböző **entitások**[és](#manual-entry) rekordok igény-előrejelzési oldalának megnyitására vonatkozó összes módszerről a cikk korábbi, a Nézet szakaszban található tájékoztatás, valamint az előrejelzési sorok manuális beírása című részében olvashat tájékoztatást.
 
 Az **Igényelőrejelzés** lap felső része az igényelőrejelzési sorok rácsát és egy lapkészletet biztosít, amely a kiválasztott előrejelzési sor további információinak megtekintésére és beállítására használható. A lap alsó részén a **Felosztás** rács található.
 
@@ -201,9 +201,9 @@ A következő táblázat az **Igényelőrejelzés** oldal **Áttekintés** lapj�
 
 | Parancs | Leírás |
 |---|---|
-| Előrejelzés felosztása | Ha felosztási módszert használ, hozza létre az előrejelzési tranzakció egyéni ütemezési sorait. A program ezután dátum szerint (a kiválasztott időintervallumok szerint), mennyiség és összeg szerint osztja el a sor mennyiségét a teljes időhatáron belül. (Lásd: [Előrejelzés felosztása](#allocate-forecast) szakaszt a témakör későbbi részében.)|
-| Tömeges frissítés | Nyissa meg az **Előrejelzési tranzakciók szerkesztése** lapot. (Lásd: [Az előrejelzési tranzakciók tömeges frissítése](#bulk-update) szakaszt a témakör későbbi részében.) |
-| Készlet előrejelzése | A **Készlet-előrejelzés** lapnak a kiválasztott cikk-/modellkombinációra szűrt nézetének megnyitása. (Lásd: [Készlet-előrejelzések](#inventory-forecast) szakaszt a témakör későbbi részében.) |
+| Előrejelzés felosztása | Ha felosztási módszert használ, hozza létre az előrejelzési tranzakció egyéni ütemezési sorait. A program ezután dátum szerint (a kiválasztott időintervallumok szerint), mennyiség és összeg szerint osztja el a sor mennyiségét a teljes időhatáron belül. (Lásd: [Az előrejelzési](#allocate-forecast) szakasz felosztása a cikk későbbi részében.)|
+| Tömeges frissítés | Nyissa meg az **Előrejelzési tranzakciók szerkesztése** lapot. (Lásd: [Az előrejelzési tranzakciók tömeges frissítése](#bulk-update) a cikk későbbi szakaszában.) |
+| Készlet előrejelzése | A **Készlet-előrejelzés** lapnak a kiválasztott cikk-/modellkombinációra szűrt nézetének megnyitása. (Lásd: [Készlet-előrejelzési](#inventory-forecast) szakasz a cikk későbbi részében.) |
 | Cikkszükséglet létrehozása | Egy párbeszédpanel megnyitása, ahol cikkeket, illetve értékesítési rendeléseket vagy cikknaplósorokat hozhat létre a projekthez kapcsolódó előrejelzési tranzakciókhoz. |
 
 ### <a name="the-overview-tab-on-the-demand-forecast-page"></a>A Igényelőrejelzés oldal Áttekintés lapja
@@ -296,7 +296,7 @@ A **Készletdimenziók** lapon látható az **Áttekintés** lapon jelenleg kiv�
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Az Igényelőrejelzés lap Felosztás rácsa
 
-Ha cikkfelosztási kulcsot használ, vagy egy vagy több jövőbeli időszakra vonatkozóan adott meg cikk-előrejelzést, az **Előrejelzés felosztása** lehetőség kiválasztásával az **Áttekintés** lap eszközsorán feloszthatja az előrejelzést. A program ezután úgy osztja el a mennyiséget, ahogy a **Felosztási** rács sorai jelzik. (Lásd: [Előrejelzés felosztása](#allocate-forecast) szakaszt a témakör későbbi részében.)
+Ha cikkfelosztási kulcsot használ, vagy egy vagy több jövőbeli időszakra vonatkozóan adott meg cikk-előrejelzést, az **Előrejelzés felosztása** lehetőség kiválasztásával az **Áttekintés** lap eszközsorán feloszthatja az előrejelzést. A program ezután úgy osztja el a mennyiséget, ahogy a **Felosztási** rács sorai jelzik. (Lásd: [Az előrejelzési](#allocate-forecast) szakasz felosztása a cikk későbbi részében.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Készlet előrejelzése
 

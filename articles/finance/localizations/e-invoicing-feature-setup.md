@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41ffc9c7009291a55392e50c5e490d3288d122bc
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 23466a53bb8ba597503aaa12d41395fc82b9f14e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371882"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904325"
 ---
 # <a name="work-with-feature-setups"></a>Funkcióbeállítások használata
 
@@ -46,7 +46,7 @@ Annyi funkcióbeállítási elemet hozhat létre, amennyit az elektronikus fájl
 6. Ha az utolsó **lépésben** az Egyéni beállítás lehetőséget választotta, adja meg a funkcióbeállítási elem nevét és leírását, **majd a Beállítástípus** mezőcsoportban válasszon a következő lehetőségek közül:
 
     - **Feldolgozási prognózis** – ezzel a beállítással kimenő elektronikus dokumentumokat generálhat és feldolgozhat. Ilyen beállítási típus esetén a rendszer létrehoz egy üres feldolgozási prognózislistát, egy üres szakaszt az alkalmazhatósági szabályok számára, valamint egy alapértelmezett változókészletet. A bejövő elektronikus dokumentumok csatornáin nem fog tudni dolgozni.
-    - **Adatcsatorna** – ezzel a beállítással beállíthatja a bejövő elektronikus dokumentumok fogadásának folyamatát az egyik megadott csatornából, és közvetlenül a Microsoftnak Dynamics 365 Finance való átadása, Dynamics 365 Supply Chain Management illetve további műveletek nélkül. Ehhez a beállítási típushoz a rendszer létrehoz egy előre definiált paraméterlistát az adatcsatornákhoz, egy üres szakaszt az alkalmazhatósági szabályok számára, valamint alapértelmezett változókat. Nem adhat hozzá műveleteket a feldolgozási folyamathoz.
+    - **Adatcsatorna** – ezzel a Microsoft Dynamics beállítással beállíthatja a bejövő elektronikus dokumentumok fogadását az egyik megadott csatornából, és közvetlenül a 365 Pénzügy Dynamics 365 Supply Chain Management felé vagy további műveletek nélkül áthozhatja azokat. Ehhez a beállítási típushoz a rendszer létrehoz egy előre definiált paraméterlistát az adatcsatornákhoz, egy üres szakaszt az alkalmazhatósági szabályok számára, valamint alapértelmezett változókat. Nem adhat hozzá műveleteket a feldolgozási folyamathoz.
     - **Adatcsatorna és feldolgozási prognózis** – ez a beállítástípus hasonlít az adatcsatorna **beállítási** típusához. A bejövő elektronikus dokumentumok pénzügyi vagy ellátásilánc-kezeléshez történő feldolgozása előtt azonban további műveleteket is be lehet állítani a feldolgozási folyamatban.
 
 7. Ha az utolsó **lépésben** **az** Adatcsatornát vagy Az adatcsatornát és a feldolgozási folyamatot választotta, **az** Adatcsatorna kiválasztása mezőben ki kell választania az integrációhoz szükséges csatornát.

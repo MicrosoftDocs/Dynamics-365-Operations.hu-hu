@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 98cb7c2f1f57dacf303e2e9bc7779ce3ede6733e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c82114f6600345ee5e2eb9c1c0629ae6c8f0b9a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877685"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Személyes adatok szerkesztésének korlátozása
 
@@ -29,7 +29,7 @@ ms.locfileid: "8695872"
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet korlátozni az alkalmazottak számára a kapcsolattartók részleteinek szerkesztését a Dynamics 365 Human Resources alkalmazásban. Előfordulhat, hogy meg szeretné akadályozni, hogy az alkalmazottak bizonyos kapcsolattartási adatokat, például az vállalati telephelyet vagy az e-mail-címet szerkeszthessenek.
+Ez a témakör azt ismerteti, hogyan lehet korlátozni az alkalmazottak számára a kapcsolattartók részleteinek szerkesztését Dynamics 365 Human Resources. Előfordulhat, hogy meg szeretné akadályozni, hogy az alkalmazottak bizonyos kapcsolattartási adatokat, például az vállalati telephelyet vagy az e-mail-címet szerkeszthessenek.
 
 > [!NOTE]
 > A funkció használatához először engedélyeznie kell az **(Előzetes verzió) Alkalmazottak korlátozása a cím és kapcsolatfelvételi adatok hozzáadásánál és szerkesztésénél adott célok esetén** beállítást a Funkciókezelésben. Az előzetes funkciók aktiválásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](hr-admin-manage-features.md) oldalt.<br><br>![Előzetes funkció engedélyezése.](./media/hr-employee-self-service-restrict-enable.png)

@@ -1,6 +1,6 @@
 ---
 title: Mérnöki változtatások kezelése funkció áttekintése
-description: Ez a témakör egy átfogó áttekintést tartalmaz, amely bemutatja a mérnöki változtatások kezelésével kapcsolatos munkát.
+description: Ez a témakör teljes véget ért, és bemutatja, hogyan kell dolgozni a műszaki változáskezelésben.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573993"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889635"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Mérnöki változtatások kezelése funkció áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör egy átfogó áttekintést tartalmaz, amely bemutatja a mérnöki változtatások kezelésével kapcsolatos munkát. Végighalad a legfontosabb helyzetek mindegyikén:
+Ez a témakör teljes véget ért, és bemutatja, hogyan kell dolgozni a műszaki változáskezelésben. Végighalad a legfontosabb helyzetek mindegyikén:
 
 - Alapvető funkciók konfigurálása
 - Hogyan hoz létre egy mérnöki vállalat új mérnöki terméket?
@@ -35,13 +35,13 @@ Ez a témakör egy átfogó áttekintést tartalmaz, amely bemutatja a mérnöki
 - Hogyan ütemezhetők és valósíthatók meg kért módosítások egy mérnöki módosítási rendelés létrehozásával?
 - Hogyan adható ki egy módosított termék?
 
-Az ebben a témakörben szereplő összes gyakorlat a Microsoft Dynamics 365 Supply Chain Management számára biztosított szabványos mintaadatokat használja. Emellett mindegyik gyakorlat az előző gyakorlatra épül. Ezért azt ajánljuk, az elejétől a végéig, sorrendben haladjon végig a gyakorlatokon, különösen, ha korábban nem használta a mérnöki változtatások kezelési funkcióját. Ily módon a teljesen megértheti a funkciót.
+A jelen cikk minden cikke a Microsoft szabványos mintaadatát használja Dynamics 365 Supply Chain Management. Emellett mindegyik gyakorlat az előző gyakorlatra épül. Ezért azt ajánljuk, az elejétől a végéig, sorrendben haladjon végig a gyakorlatokon, különösen, ha korábban nem használta a mérnöki változtatások kezelési funkcióját. Ily módon a teljesen megértheti a funkciót.
 
 ## <a name="set-up-for-the-sample-scenario"></a>A mintaeset beállítása
 
-Az ebben a témakörben megadott példa eset követéséhez először elő kell készítenie a funkciót a bemutatóadatok rendelkezésre bocsátásával és néhány egyéni rekord hozzáadásával.
+A cikk mintaeseteit csak akkor lehet követni, ha bemutató adatokat ad hozzá, majd hozzáad néhány egyéni rekordot.
 
-Mielőtt a témakör többi részén megpróbálja végrehajtani a gyakorlatokat, kövesse az alábbi alszakaszok utasításait. Ezek az alszakaszok számos olyan fontos beállítási lapot is bemutatnak, amelyet a saját szervezetnél a mérnöki változtatások kezelésének beállításakor fog használni.
+Mielőtt a cikk többi részében bármilyen műveletet megpróbálkozni, kövesse az alábbi alszakaszok utasításait. Ezek az alszakaszok számos olyan fontos beállítási lapot is bemutatnak, amelyet a saját szervezetnél a mérnöki változtatások kezelésének beállításakor fog használni.
 
 ### <a name="make-standard-demo-data-available"></a>A standard bemutató adatok elérhetővé tétele
 

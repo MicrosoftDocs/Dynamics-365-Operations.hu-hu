@@ -1,6 +1,6 @@
 ---
 title: Eszközlízingelési konvenciók
-description: Ez a témakör a lízingbe adott eszközökre vonatkozó konvenciókat írja le.
+description: Ez a témakör a bérelt eszközökre vonatkozó megállapodásokat ismerteti.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e0aabce46e47079b754b8ac674b205cf00b5e26
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f2f0e21b20a969c0847ce3a6eb167287c1d7ee3e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898269"
 ---
 # <a name="asset-leasing-conventions"></a>Eszközlízingelési konvenciók
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a lízingbe adott eszközökre vonatkozó konvenciókat írja le. A lízingelési konvenciók segítségével lehet meghatározni egy lízingkönyv kezdő dátumát. Ha a lízingmegállapodás értéke **Nincs**, a kezdő dátum megegyezik a lízing kezdő dátumának dátumával (amely a **Lízing kezdő dátuma** mező értéke). Ha a lízingmegállapodás beállítása **Teljes hónap**, a kezdési dátum annak a hónapnak az első napja, amelybe a lízing kezdő dátuma esik.
+Ez a témakör a bérelt eszközökre vonatkozó megállapodásokat ismerteti. A lízingelési konvenciók segítségével lehet meghatározni egy lízingkönyv kezdő dátumát. Ha a lízingmegállapodás értéke **Nincs**, a kezdő dátum megegyezik a lízing kezdő dátumának dátumával (amely a **Lízing kezdő dátuma** mező értéke). Ha a lízingmegállapodás beállítása **Teljes hónap**, a kezdési dátum annak a hónapnak az első napja, amelybe a lízing kezdő dátuma esik.
 
 A kezdő dátum határozza meg a kötelezettség amortizációja és az eszköz értékcsökkenése ütemezésének időszakának kezdő dátumát. A kamatráfordítási és értékcsökkenési kiadások feladása a megfelelő ütemezések időszakának záró dátumával történik. A kezdeti megjelenítés és a naplóbejegyzés kiigazításának feladása a kezdő dátum napján kezdődik.
 

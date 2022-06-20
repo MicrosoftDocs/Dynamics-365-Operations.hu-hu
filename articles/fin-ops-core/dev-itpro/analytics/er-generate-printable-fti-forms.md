@@ -1,6 +1,6 @@
 ---
 title: Nyomtatható FTI-űrlapok generálása
-description: Ez a témakör bemutatja a Microsoft Office dokumentumként nyomtatható szabadszöveges számla (FTI)-űrlapok generálását az Elektronikus jelentéskészítés (ER) keretrendszer segítségével.
+description: Ez a cikk bemutatja, hogy hogyan használható az Elektronikus jelentési (ER) keretrendszer a nyomtatható szabadszöveges számla (FTI) képernyők dokumentumként való előállítására Microsoft Office.
 author: NickSelin
 ms.date: 07/24/2018
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be5e3ef0f6ecb3d8f911b5be5f8bc9102d201fd299425e847a2df233d9b4edf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4efbb46bbba2b139bbcf9b07c480a7e8669fd7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868829"
 ---
 # <a name="generate-printable-fti-forms"></a>Nyomtatható FTI-űrlapok generálása
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Office dokumentumként nyomtatható szabadszöveges számla (FTI)-űrlapok generálása az Elektronikus jelentéskészítés (ER) keretrendszer segítségével. Ez a témakör a saját a konfigurációk felépítésével, valamint a rendelkezésre álló konfigurációs sablonok részleteivel kapcsolatosan nyújt tájékoztatást.
+Microsoft Office dokumentumként nyomtatható szabadszöveges számla (FTI)-űrlapok generálása az Elektronikus jelentéskészítés (ER) keretrendszer segítségével. Ez a cikk a saját konfigurációk felépítéséről és az elérhető konfigurációs sablonok részleteiről nyújt tájékoztatást.
 
 ## <a name="overview"></a>Áttekintés
 
 A nyomtatható FTI űrlapok generálása a Microsoft SQL Server Reporting Services (SSRS) segítségével képességen túl immár használhatja az ER-keretrendszert is A nyomtatható FTI-űrlapokat Microsoft Office Excel és Word programban is kezelheti. Módosíthatja az elrendezést, az adatáramlást és a formázást, hogy megfeleljenek az igényekhez, a kód módosítása nélkül.
 
 > [!NOTE]
-> Ha egy meglévő ER konfiguráció áttekintésével szeretné megkezdeni, a nyomtatható FTI-űrlapok megoldást nyissa meg közvetlenül az **ER konfigurációk letöltése nyomtatható FTI űrlapok generálásához** szakaszt a témakör későbbi részében.
+> Ha a nyomtatható FTI-képernyők megoldásának meglévő ER-konfigurációinak áttekintésével szeretne kezdeni, **közvetlenül is át lehet menni az ER-konfigurációk letöltése szakaszba, és ezzel a cikkből később nyomtatható ftI-képernyőket** generálhat.
 
 ## <a name="create-customized-configurations-for-fti-printable-forms"></a>Egyéni konfigurációk létrehozása a nyomtatható FTI-űrlapokhoz
 A nyomtatható FTI-űrlapokhoz tartozó testreszabott megoldás részeként létre kell hoznia egy ER konfigurációkészletet.

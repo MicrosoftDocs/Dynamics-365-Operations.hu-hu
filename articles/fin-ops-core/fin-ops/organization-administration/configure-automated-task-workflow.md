@@ -1,6 +1,6 @@
 ---
 title: Automatizált feladatok konfigurálása munkafolyamatban
-description: Ez a témakör bemutatja, hogyan kell konfigurálni az automatizált feladat tulajdonságait.
+description: Ez a cikk bemutatja, hogyan kell konfigurálni a tulajdonságokat az automatizált feladatokhoz.
 author: ChrisGarty
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7346649108824eb4e7209a2476456a469affa1c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b482338c436ea9226d31f74c823ee1dc141b24cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891753"
 ---
 # <a name="configure-automated-tasks-in-a-workflow"></a>Automatizált feladatok konfigurálása munkafolyamatban
 
@@ -28,7 +28,7 @@ ms.locfileid: "8066518"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ez a témakör bemutatja, hogyan kell konfigurálni az automatizált feladat tulajdonságait.
+Ez a cikk bemutatja, hogyan kell konfigurálni a tulajdonságokat az automatizált feladatokhoz.
 
 A munkafolyamat-szerkesztő automatizált feladatának konfigurálásához, kattintson a jobb gombbal a feladatra, és kattintson **Tulajdonságok** oldal megnyitásához a **Tulajdonságok** lehetőségre. Ezt követően a következő eljárások segítségével állítsa be az automatizált feladat tulajdonságait.
 

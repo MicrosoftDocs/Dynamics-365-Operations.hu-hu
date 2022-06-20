@@ -1,6 +1,6 @@
 ---
 title: Minőség-ellenőrzés
-description: Ez a témakör a minőségellenőrzés funkcióról nyújt tájékoztatást. Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy minőséggel kapcsolatos villámellenőrzést végezzenek, miközben átveszik a cikkeket a bejövő dokkoló területen.
+description: Ez a cikk a minőség-ellenőrzés funkcióval kapcsolatban tartalmaz tájékoztatást. Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy minőséggel kapcsolatos villámellenőrzést végezzenek, miközben átveszik a cikkeket a bejövő dokkoló területen.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c5a4b380529ca8cb9c3474b363c7f9ba4220ff2b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ceb01205edc269690fda306bc90f465dbccc563b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855057"
 ---
 # <a name="quality-check"></a>Minőség-ellenőrzés
 
@@ -41,11 +41,11 @@ Ezt a folyamatot úgy is be lehet állítani, hogy az összes beolvasott rendsz�
 
 ## <a name="turn-the-quality-check-feature-on-or-off"></a>A Minőség-ellenőrzés szolgáltatás be- és kikapcsolása
 
-Az ebben a témakörben leírt *funkciók* használatához be kell kapcsolva lennie a rendszer minőségellenőrzési funkciónak. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Minőségellenőrzés szolgáltatását keresi.
+Az ebben a cikkben *leírt* funkciók használatához be kell kapcsolva lennie a rendszer minőségellenőrzési funkciónak. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Minőségellenőrzés szolgáltatását keresi.
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>A funkció beállítása a példaforgatókönyvhöz
 
-Ez a szakasz iránymutatásokat és egy példát mutat be azzal kapcsolatban, hogy hogyan kell beállítani a *Minőségellenőrzés* funkciót, illetve hogyan kell előkészíteni mintaadatokat a témakörben később bemutatott példaforgatókönyvben.
+Ez a szakasz irányelveket *és* egy példát mutat be, amelyek be mutatják, hogyan lehet beállítani a Minőség-ellenőrzés szolgáltatást, és mintaadatokat készíteni a témakör későbbi, példaadatokkal kapcsolatos adatainak elkészítéséhez.
 
 ### <a name="make-sample-data-available"></a>A mintaadatok elérhetővé tétele
 
@@ -270,7 +270,7 @@ A menüelemet úgy konfigurálhatja, hogy a mobileszköz végre tudja hajtani a 
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>Példaforgatókönyv
 
-Miután elvégezte az összes korábban leírt mintaadatok elérhetővé tételét és beállítását, a forgatókönyvön keresztül kipróbálhatja a *Minőségellenőrzés* funkciót. Az ebben a forgatókönyvben látható értékek feltételezik, hogy azokkal a szokásos bemutatóadatokkal dolgozik, amelyeket az **USMF** jogi személyt kiválasztott, és hogy előkészítette a témakör korábbi részében ismertetett mintarekordokat. Ez a forgatókönyv példaként is szolgál, amely megmutatja, hogyan használható a funkció az üzemelési beállításban.
+Miután elvégezte az összes korábban leírt mintaadatok elérhetővé tételét és beállítását, a forgatókönyvön keresztül kipróbálhatja a *Minőségellenőrzés* funkciót. Az ebben az esetben megjelenő értékek feltételezik, hogy a normál bemutató adatokon dolgozik, **hogy az USMF** jogi személyt választotta ki, és hogy ön készített mintarekordokat, amelyek a jelen cikknél korábban le vannak írva. Ez a forgatókönyv példaként is szolgál, amely megmutatja, hogyan használható a funkció az üzemelési beállításban.
 
 ### <a name="create-a-purchase-order"></a>Beszerzési rendelés létrehozása
 
@@ -357,7 +357,7 @@ Ennél a forgatókönyvnél a 2. raklapot el fogja utasítani a program.
 
 Ezennel befejezte a minőségellenőrzést, és létrehozta a minőségi rendelést az elutasított raklaphoz. Ha meg szeretné tekinteni a létrehozott minőségi rendelést, menjen a **Készletkezelés \> Időszakos feladatok \> Minőségkezelés \> Minőségi rendelések** elemre.
 
-A minőségi rendelés tesztelése most már feldolgozható. Ebben a témakörben nem szerepel minőségi tesztelés.
+A minőségi rendelés tesztelése most már feldolgozható. A minőségi teszt nem tartozik ebbe a cikkbe.
 
 A minőségkezeléssel kapcsolatos további tudnivalókat lásd: [Minőségkezelés áttekintése](../inventory/enable-quality-management.md)
 

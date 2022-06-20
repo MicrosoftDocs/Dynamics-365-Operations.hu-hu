@@ -1,6 +1,6 @@
 ---
 title: Készletütemezés
-description: Ez a témakör a Készletütemezés lapról és annak képességeiről nyújt tájékoztatást.
+description: Ez a cikk a Készlet ütemezése lapról és annak lehetőségeiről nyújt tájékoztatást.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 89b8ce96a5c34902187751cfa523ed99a94500b3
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 0e3937dd4cffc464f38b5770674364579bdb06d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851739"
 ---
 # <a name="supply-schedule"></a>Készletütemezés
 
@@ -28,7 +28,7 @@ A **Készletütemezés** lapon átfogó áttekintést kaphat egy termék vagy te
 
 A **Készletütemezés** lapot a következőképpen nyithatja meg:
 
-- Ugorjon az **Alaptervezés \> Alaptervezés \> Készletütemezés** pontra. A **Szűrő módosítása** párbeszédpanelen adja meg a tervet és terméket, amelyet keres, ehhez a megadott mezőkbe írja be a szűrőértékeket. (A témakör többi részében a megadott szűrőértékek gyűjteményét "szűrőnek" vagy "aktuális szűrőnek" nevezzük.) Ha végzett, kattintson az **OK** gombra.
+- Ugorjon az **Alaptervezés \> Alaptervezés \> Készletütemezés** pontra. A **Szűrő módosítása** párbeszédpanelen adja meg a tervet és terméket, amelyet keres, ehhez a megadott mezőkbe írja be a szűrőértékeket. (A cikk többi részében a megadott szűrőértékek gyűjteményét "szűrő" vagy "aktuális szűrőnek" is nevezik.) Ha végzett, **kattintson az OK gombra**.
 - Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre. Jelöljön ki vagy nyisson meg egy terméket. Ezután a műveleti ablaktáblán a **Terv** lapján a **Nézet** csoportban válassza a **Készletütemezés** lehetőséget.
 - Lépjen az **Alaptervezés \> Beállítása \> Igény-előrejelzés \> Cikkhozzárendelési-kulcsok** részre. Válassza ki azt a cikkhozzárendelési kulcsot, amely termékcsaládként használatos. Majd Műveleti ablaktáblán válassza ki a **Készletütemezés** lehetőséget.
 - Ugorjon az **Alaptervezés \> Alaptervezés \> Tervezett rendelések** pontra. Válasszon ki vagy nyisson meg egy tervezett rendelést. Ezután a műveleti ablaktáblán a **Nézet** lapon a **Nézet** csoportban válassza a **Készletütemezés** lehetőséget.

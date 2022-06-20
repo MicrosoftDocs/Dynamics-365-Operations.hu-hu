@@ -1,6 +1,6 @@
 ---
 title: Kuponok Általános napló entitással történő importálása
-description: Ez a témakör tippeket és trükköket mutat be az adatok importálásához az Általános naplóba az Általános napló entitás segítségével.
+description: Ez a cikk tippeket és trükköket mutat be az adatok importálásához az Általános naplóba az Általános napló entitás segítségével.
 author: rcarlson
 ms.date: 04/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42bc804393d050e5ff722c46c9ce50ece54c5a0b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 056bb860e3133bb8389410e29d20f32447799399
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065070"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867611"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Kuponok Általános napló entitással történő importálása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065070"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ez a témakör tippeket és trükköket mutat be az adatok importálásához az Általános naplóba az Általános napló entitás segítségével.
+Ez a cikk tippeket és trükköket mutat be az adatok importálásához az Általános naplóba az Általános napló entitás segítségével.
 
 Az Általános napló entitás használatával lehetőség van arra, hogy azokat a bizonylatokat importálja, melyeknél a számla vagy az ellenszámla típusa **Főkönyv**, **Vevő**, **Szállító** vagy **Bank**. A bizonylatot egy sorként lehet bevinni, a **Számla** és az **Ellenszámla** mezők együttes használatával, illetve többsoros bizonylatként, ahol csak a **Számla** mező van használatban (és az **Ellenszámla** mező üresen marad mindegyik sornál). Az Általános naplóentitás nem támogat minden számlatípust. Ehelyett más entitások léteznek olyan esetekre, amikor különböző kombinációjú számlatípusokra van szükség. Például projekttranzakció importálásához használja a projektköltség naplóentitást. Az egyes entitások meghatározott forgatókönyvek támogatáshoz vannak kialakítva. Ez azt jelenti, hogy a fenti forgatókönyvekhez további mezők is elérhetők. Előfordulhat azonban, hogy a további mezők nem érhetők el a különböző esetekhez tartozó entitásokhoz.
 

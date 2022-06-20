@@ -1,6 +1,6 @@
 ---
 title: Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
-description: Az ebben a témakörben leírt lépések azt mutatják be, hogy a Regulatory Configuration Service felhasználói hogyan tervezhetik meg egy új elektronikus jelentési modell hozzárendelését a metaadatok használatával.
+description: A cikk lépései azt ismertetik, hogyan tervezhet egy felhasználó új, a metaadatok használatával elektronikus jelentési modell leképezését a Szabályozó konfiguráció szolgáltatás felhasználója.
 author: NickSelin
 ms.date: 06/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d99ca41a9a24ef8ac0fe31e703cad79d41216fa726fa1d354ac19db90706954
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 330683da986a551a9694833655122768d30499b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776024"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906768"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
 
 [!include [banner](../../includes/banner.md)]
 
-A következő lépések leírják, hogy a Regulatory Configuration Service (RCS) Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tervezhetnek új Elektronikus jelentés (ER) modell hozzárendelést a Finance and Operations alkalmazás metaadatainak használatával. Alkalmazás-metaadatokhoz való hozzáférés online RCS összekapcsolt alkalmazások használatával történik A minta ER-modell-hozzárendelést a külföldi kereskedelmi tranzakciók elérése érdekében konfigurálja a program. Az alábbi lépések végrehajtásához először hajtsa végre a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](er-configuration-provider-mark-it-active-2016-11.md) cikk lépéseit az RCS-ben. Ha még nem végezte el a témakör lépéseit, lépjen az [Alkalmazás-metaadatokhoz való hozzáférés ER-konfigurációhoz](access-application-metadata-er-configuration.md), töltse le az [Elektronikus jelentéskészítésre vonatkozó példákat](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip), és mentse a következő ER-konfigurációkat: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml. Ezután hajtsa végre az eljárás lépéseit.
+A következő lépések leírják, hogy a Regulatory Configuration Service (RCS) Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tervezhetnek új Elektronikus jelentés (ER) modell hozzárendelést a Finance and Operations alkalmazás metaadatainak használatával. Alkalmazás-metaadatokhoz való hozzáférés online RCS összekapcsolt alkalmazások használatával történik A minta ER-modell-hozzárendelést a külföldi kereskedelmi tranzakciók elérése érdekében konfigurálja a program. Ezeket a lépéseket az RCS szolgáltatásban csak akkor lehet végrehajtani, ha előbb a cikk lépéseit, [a konfigurációs szolgáltatókat létrehozza és aktívként megjelöli](er-configuration-provider-mark-it-active-2016-11.md). Ha nem fejeződött be a cikk lépései, [az alkalmazás metaadatainak elérése az ER](access-application-metadata-er-configuration.md) konfiguráció használatával, töltse [le az elektronikus jelentési](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) példákat, és mentse a következő ER-konfigurációkat: Külkereskedelmi metaadatok.xml; Külkereskedelmi modell.xml; Külkereskedelmi mapping.xml, majd az eljárás lépéseit kell végrehajtani.
 
 ## <a name="prerequisites"></a>Előfeltételek
 1. Ugorjon **Az összes munkaterület** > **Elektronikus jelentés** pontra. 

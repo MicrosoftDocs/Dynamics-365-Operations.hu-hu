@@ -1,6 +1,6 @@
 ---
 title: A Dynamics 365 Commerce és a Microsoft Teams integrációjának áttekintése
-description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce és a Microsoft Teams integrációjáról.
+description: Ez a cikk áttekintést nyújt az integrációról Microsoft Dynamics 365 Commerce és az integrációról Microsoft Teams.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7786a527a9aca08f5d9326570e8a2dafc5059dc5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b674f40b6bb433bc5e2c9216d649a7f15169442
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692538"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887088"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-overview"></a>A Dynamics 365 Commerce és a Microsoft Teams integrációjának áttekintése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce és a Microsoft Teams integrációjáról.
+Ez a cikk áttekintést nyújt az integrációról Microsoft Dynamics 365 Commerce és az integrációról Microsoft Teams.
 
 A Dynamics 365 Commerce integrálható a Teams alkalmazással, hogy segítsen az ügyfeleknek és alkalmazottaiknak a termelékenység növelésében azáltal, hogy szinkronizálja a feladatkezelést a két alkalmazás között. A Commerce és a Teams integrációja által biztosított zökkenőmentes feladatkezelése lehetővé teszi, hogy az áruházvezetők és az alkalmazottak feladatlistákat hozzanak létre, feladatokat rendeljenek több üzlethez, és nyomon kövessék a feladatok állapotát az üzletekben, bármelyik alkalmazásból.
 

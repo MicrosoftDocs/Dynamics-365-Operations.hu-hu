@@ -1,6 +1,6 @@
 ---
 title: Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
-description: Ez a cikk a feladatkörök szétválasztásával kapcsolatos ütközések azonosítását és feloldását ismerteti.
+description: Ez a cikk bemutatja, hogy hogyan lehet azonosítani és megoldani a feladatkörök szétválasztásának ütközéseit.
 author: peakerbl
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0638699c0e569bbe67024a87d6c55729642557cb085ee899aa98aa0022b12840
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd36db5df2b6871d410bb1feaae825909ec9b3ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748312"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883477"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a cikk a feladatkörök szétválasztásával kapcsolatos ütközések azonosítását és feloldását ismerteti. Beállíthat szabályokat a más felhasználók által elvégzendő feladatok elválasztásához. Ezt a fogalmat a feladatkörök szétválasztásának nevezzük. Ha a biztonsági szerepkör definíciója vagy a felhasználói szerepkör-hozzárendelés megszegi a szabályokat, a rendszer naplózza az ütközést. Az ütközéseket a rendszergazdának kell feloldania. Kövesse az alábbi lépéseket az ütközések azonosítása és megoldása érdekében.
+Ez a cikk bemutatja, hogy hogyan lehet azonosítani és megoldani a feladatkörök szétválasztásának ütközéseit. Beállíthat szabályokat a más felhasználók által elvégzendő feladatok elválasztásához. Ezt a fogalmat a feladatkörök szétválasztásának nevezzük. Ha a biztonsági szerepkör definíciója vagy a felhasználói szerepkör-hozzárendelés megszegi a szabályokat, a rendszer naplózza az ütközést. Az ütközéseket a rendszergazdának kell feloldania. Kövesse az alábbi lépéseket az ütközések azonosítása és megoldása érdekében.
 
 A szabály hozzáadása után ellenőrizze, hogy az összes meglévő szerepkör megfelelő-e. 
 

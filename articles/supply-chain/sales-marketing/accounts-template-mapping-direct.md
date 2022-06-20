@@ -1,6 +1,6 @@
 ---
 title: A Supply Chain Management-ügyfelek közvetlen szinkronizálása a Sales-ügyfelekre
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales ügyfelek a Supply Chain Management alkalmazásba szinkronizálására használatosak.
+description: Ez a témakör a Dynamics 365 értékesítés és az ellátásilánc-kezelés számláinak szinkronizálásához használt sablonokat és mögöttes feladatokat tárgyalja.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8d415174f62c511626852b91f3591f907b4a85ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063085"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851565"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>A Supply Chain Management-ügyfelek közvetlen szinkronizálása a Sales-ügyfelekre
 
@@ -32,7 +32,7 @@ ms.locfileid: "8063085"
 > [!NOTE]
 > A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Microsoft Dataverse for Apps szolgáltatásban](/powerapps/administrator/data-integrator).
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales ügyfeleinek köztvetlenül a Dynamics 365 Supply Chain Management alkalmazásba történő szinkronizálására használatosak.
+Ez a témakör be tárgyalja a sablonok és a mögöttes feladatokat, amelyek a számláknak a Dynamics 365 értékesítésből közvetlenül a következőbe való közvetlen szinkronizálásához használatosak Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása adatfolyama
 
@@ -101,7 +101,7 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 
 ![Sablonleképezés az adatintegrátorban.](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 
 [Potenciális vevők készpénzre váltása](prospect-to-cash.md)

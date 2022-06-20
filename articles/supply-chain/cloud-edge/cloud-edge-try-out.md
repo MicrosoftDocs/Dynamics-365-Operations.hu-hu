@@ -1,6 +1,6 @@
 ---
 title: Skálázási egységek kipróbálása osztott hibrid topológiában
-description: Ez a témakör arról tartalmaz tájékoztatást, hogyan lehet kipróbálni a felhő- és szélskálaegységeket a gyártási és raktárkezelési terhelések során.
+description: Ez a cikk a gyártás- és raktárkezelési terhelések felhő- és szélskálaegységének az alkalmazásával kapcsolatban tartalmaz tájékoztatást.
 author: perlynne
 ms.date: 05/02/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-03-03
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 658948d94cd012b95812a786433967f5cadc3a15
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 5645955109e7a942e617b3b90a27065c2a8fe4a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711886"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893584"
 ---
 # <a name="try-out-scale-units-in-a-distributed-hybrid-topology"></a>Skálázási egységek kipróbálása osztott hibrid topológiában
 

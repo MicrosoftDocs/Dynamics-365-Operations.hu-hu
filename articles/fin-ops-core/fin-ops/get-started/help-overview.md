@@ -1,6 +1,6 @@
 ---
-title: Súgórendszer (videót tartalmaz)
-description: Ez a témakör áttekintést nyújt a Finance and Operations alkalmazások súgórendszeréről.
+title: Súgórendszer (videofelvételt tartalmaz)
+description: Ez a cikk áttekintést nyújt a Pénzügy és műveletek súgórendszerről.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070501"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898369"
 ---
 # <a name="help-system"></a>Súgórendszer
 
@@ -53,7 +53,7 @@ A docs.microsoft.com tartalmait bármilyen keresőmotor segítségével meg lehe
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Értesítés a változásokról RSS-hírcsatornán keresztül
 
-Ha elő szeretne iratkozni a docs.microsoft.com tartalmának frissítéseit tartalmazó RSS-hírcsatornára a Finance and Operations alkalmazásban, használja a következő hivatkozást:
+Ha a Pénzügy és műveletek alkalmazáson keresztül szeretne előfizetést kapni a tartalom minden frissítésére, használja docs.microsoft.com a következő hivatkozásokat:
 
 [RSS-hírcsatorna](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -70,7 +70,7 @@ Arra is lehetőség van, hogy alkalmazáson keresztül iratkozzon fel az RSS hí
 
 ### <a name="leave-us-feedback"></a>Visszajelzés küldése
 
-Ha visszajelzése vagy kérdése van egy témakörrel kapcsolatban, hagyjon megjegyzést az oldal alján.
+Ha visszajelzése vagy kérdései vannak egy cikkel kapcsolatban, akkor a lap alján hagyjon egy megjegyzést.
 
 1. Válassza a **Visszajelzés** lehetőséget, hogy eljusson a lap alján lévő megjegyzésekhez. Ezt követően válassza ki **Termékvisszajelzés** vagy a **Bejelentkezés dokumentációval kapcsolatos visszajelzéshez** lehetőséget.
 
@@ -83,7 +83,7 @@ Ha visszajelzése vagy kérdése van egy témakörrel kapcsolatban, hagyjon megj
 
 ## <a name="contribute-to-the-documentation"></a>Közreműködés a dokumentációban
 
-A dokumentációban közreműködhet, és módosításokat hajthat végre. Első lépésként kattintson a **Szerkesztés** gombra (ceruza szimbólum) egy témakörön. A következő videó bemutatja, hogyan lehet közreműködni a dokumentációban.
+A dokumentációban közreműködhet, és módosításokat hajthat végre. Első lépésekhez jelölje be egy cikk **Szerkesztés** gombját (szimbólumát). A következő videó bemutatja, hogyan lehet közreműködni a dokumentációban.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -98,7 +98,7 @@ A további tudnivalókat lásd a [Docs közreműködői útmutatóban](/contribu
 
 A feladatrögzítés egy kontorollált, irányított, interaktív tapasztalat, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. A **Súgó** ablakban megnyithatja (lejátszatja) a feladat útmutatót. Amikor először kattint a feladat-útmutatóra a **Súgó** ablakban láthatja lépésenként a feladathoz tartozó utasításokat. A honosított feladat-útmutatók elérhetőek.
 
-A Microsoft feladat-útmutatók könyvtárát adta ki a termék verzióihoz a Dynamics 365 for Finance and Operations 2017. decemberi kiadásával. A témakör [Feladat-útmutatók elérése a Súgó ablakból](#accessing-task-guides-from-the-help-pane) szakasza azt mutatja be, hogyan találhatja meg a termékének megfelelő feladat-útmutatókat.
+A Microsoft feladat-útmutatók könyvtárát adta ki a termék verzióihoz a Dynamics 365 for Finance and Operations 2017. decemberi kiadásával. A [hozzáférési feladat útmutatói a cikk súgóablakában](#accessing-task-guides-from-the-help-pane) bemutatja, hogy hogyan találhatja meg a termékhez a megfelelő feladat-segéd segédeket.
 
 ![Feladat-útmutató olvasási nézete.](./media/task-guide-ops.png)
 
@@ -121,7 +121,7 @@ A súgótartalom eléréséhez válassza a **Súgó** gombot (**?**), majd vála
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Súgótémakörök elérése a Súgó ablakból
 
-A **Súgó** ablakból hozzáférhet a kliensre vonatkozó témakörökhöz. Amikor először nyitja meg a **Súgó** ablakot, a **Súgó** lapon az aktuális oldalhoz kapcsolódó témakörök jelennek meg. Amennyiben nem találhatók témakörök, kulcsszavak beírásával módosíthatja a keresést. Amikor kiválaszt egy témát a **Súgó** ablaktáblán, a böngészőprogram egy új lapján nyílik meg.
+A **Súgó** ablakból hozzáférhet a kliensre vonatkozó témakörökhöz. Amikor először nyitja meg a **Súgó** ablakot, a **Súgó** lapon az aktuális oldalhoz kapcsolódó témakörök jelennek meg. Amennyiben nem találhatók témakörök, kulcsszavak beírásával módosíthatja a keresést. Ha kiválaszt egy cikket **a** súgóban, akkor az a böngésző egy új lapján nyílik meg.
 
 > [!IMPORTANT]
 > Ez a szakasz nem vonatkozik a Dynamics 365 Human Resources alkalmazásra. A Human Resources súgórendszere automatikusan kapcsolódik a termék feladat-útmutatóihoz. Ezenfelül a Human Resources rendszerben nem hozhat létre egyéni feladat-útmutatókat.

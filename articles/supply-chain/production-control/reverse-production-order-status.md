@@ -1,6 +1,6 @@
 ---
 title: A termelési rendelés állapotának sztornírozása
-description: Ez a témakör ismerteti, hogyan lehet sztornírozni a termelési rendelés állapotát.
+description: Ez a témakör azt ismerteti, hogyan lehet sztornírozni a termelési rendelés állapotát.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dd17bc48bfb6c78e1baca4faf78d6bc5b3ce426c5f0530174eccd95536a5859
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d50cbcb4031d5c9f2c814883afd1fb38777d2ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760418"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903956"
 ---
 # <a name="reverse-the-production-order-status"></a>A termelési rendelés állapotának sztornírozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti, hogyan lehet sztornírozni a termelési rendelés állapotát. 
+Ez a témakör azt ismerteti, hogyan lehet sztornírozni a termelési rendelés állapotát. 
 
 Egy termelési rendelés állapotának visszaállításakor a program a rendelést és az útvonalakhoz társított valamennyi műveletet visszaállítja a termelési rendelés életciklusának egy korábbi állapotára. Például egy termelési rendelés állapota **Ütemezett**, és az állapotát visszamódosítja **Létrehozva** állapotra. Ebben az esetben a rendszernek először módosítania kell az állapotot **Becsült** értékre, ez az állapot közvetlenül megelőzi az **Ütemezett** értéket. Az állapotot ekkor a kívánt állapotra módosíthatja, ami **Létrehozva**. **Megjegyzés:** Ha a rendelés elérte a **Készként jelentés** állapotot, még visszaállíthatja egy korábbi állapotra. Azonban újra futtatnia kell a becslést és a műveletek ütemezését, a feladatütemezést vagy mindkét ütemezési típust, hogy frissüljenek a rendelés adatai. Erre a lépésre azért van szükség, mert a hátralévő cikkfelhasználás és az üzemi erőforrások felhasználásának foglalásait is alaphelyzetbe kell állítani. A cikk további része ismerteti, hogy mi történik, ha a következő módosításokkal visszaállítja egy termelési rendelés állapotát:
 

@@ -1,6 +1,6 @@
 ---
 title: Készletszintű információk szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management készletszint-adatainak közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
+description: Ez a cikk a készletszint-információk szinkronizálásához használt sablonokat és mögöttes feladatokat tárgyalja Dynamics 365 Supply Chain Management Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 05/07/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 8dfba2d2dc2fdd4af136e3cb20061d794369011f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: fc14fc63bc1a69a57b10f39b2cb9fb8014e6f70b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060945"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844793"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Készletszintű információk szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8060945"
 
 
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management készletszint-adatainak közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
+Ez a cikk a készletszint-információk szinkronizálásához használt sablonokat és mögöttes feladatokat tárgyalja Dynamics 365 Supply Chain Management Dynamics 365 Field Service.
 
 [![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
@@ -64,7 +64,7 @@ A Field Service megoldásban az integrációs megoldás készletnaplókat hoz l�
 
 A Supply Chain Management a készletszintek alapjaként szolgál. Tehát, ezért fontos az integráció beállítása a munkarendelések, az átvitelek és a kiigazítások esetében a Field Service megoldásból a Supply Chain Management megoldásba, ha a funkció használatban van a Field Service szolgáltatásban, a készletszintek szinkronizálásával együtt a Supply Chain Management megoldásból.
 
-Azok a termékek és raktárak, ahol a készletszinteket a Supply Chain Management segítségével kezelik, a Speciális lekérdezés és szűrés segítségével vezérelhetők (Power Query).
+Azok a termékek és raktárak, amelyekben az Ellátásilánc-kezelés alapszintje a készletszintek, a Speciális lekérdezés és szűrés (Advanced Query and Filtering) segítségével vezérelhetők Power Query.
 
 > [!NOTE]
 > Megjegyzés: Lehetőség van több raktár létrehozására a Field Services megoldásban (ahol a **Külsőleg karbantartott = Nem**), majd a leképezésükre egy raktárba a Supply Chain Management megoldásban, a speciális lekérdezési és szűrési funkcióval. Ez olyan helyzetekben használt, amikor azt szeretnénk, hogy a Field Service kezelje a részletes készletszintet, és csak frissítéseket küldjön a Supply Chain Management megoldásba. Ebben az esetben a Field Service nem kap készletszintű frissítéseket a Supply Chain Management megoldásból. További információért lásd: [Készletátvitelek és szinkronizálása a Field Service alkalmazásból a Supply Chain Management alkalmazásba](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) és [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).

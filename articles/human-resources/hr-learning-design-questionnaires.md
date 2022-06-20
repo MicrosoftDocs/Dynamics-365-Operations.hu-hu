@@ -1,6 +1,6 @@
 ---
 title: Kérdőívek létrehozása
-description: Ez a témakor a kérdőívkészítés folyamatát írja le.
+description: Ez a cikk a kérdőív készítés folyamatát írja le.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7b2e1316768dc6207c82f08cef4c268ae70648ad
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ef14dfe35e6cffc5ae2351045141d99b2fb53c16
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899643"
 ---
 # <a name="create-questionnaires"></a>Kérdőívek létrehozása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694851"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakor a kérdőívkészítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek. 
+Ez a cikk a kérdőív készítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek. 
 
 Egy alaposan megtervezett kérdőív segítségével javítható a begyűjtött adatok minősége. Alapos tervezéssel könnyebben kiválaszthatja a megfelelő beállításokat a megfelelő időben kérdőívhez. A következő szempontok segíthetnek hatékony kérdőívet tervezni:
 

@@ -1,6 +1,6 @@
 ---
 title: Jelentések készítése Office formátumokban, beágyazott képekkel
-description: Ez a témakör azt mutatja be, hogyan tervezhetők elektronikus jelentési (ER) konfigurációk Excel és Word programokban beágyazott képeket tartalmazó elektronikus dokumentumok létrehozására.
+description: Ez a témakör azt mutatja be, hogyan lehet elektronikus jelentéskészítési (ER) konfigurációkat tervezni a beágyazott képeket tartalmazó excel- és Word-dokumentumok előállításához.
 author: NickSelin
 ms.date: 06/13/2017
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ec9f3013c1e365a3ca1a4c6cabe71a22e3e8b730eac38155ef023fe68107524
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e728c6e55eca7bcb541a019d1fc9af00b5ad2081
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855616"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Jelentések készítése Office formátumokban, beágyazott képekkel
 

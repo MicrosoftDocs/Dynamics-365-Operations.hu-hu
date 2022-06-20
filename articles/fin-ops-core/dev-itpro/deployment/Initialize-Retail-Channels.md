@@ -1,8 +1,8 @@
 ---
 title: A Commerce Scale Unit (felhő) inicializálása
-description: Ez a témakör bemutatja, hogyan inicializálható a Commerce Scale Unit (felhő) a következőben:Microsoft Dynamics 365 Commerce.
+description: Ez a témakör bemutatja a Commerce Scale Unit (felhő) inicializálását a következőben:Microsoft Dynamics 365 Commerce
 author: AamirAllaq
-ms.date: 02/04/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,176 +11,178 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 84e70515accde161e7efa36755edec68d26be952
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092222"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942852"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>A Commerce Scale Unit (felhő) inicializálása
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan inicializálható a Commerce Scale Unit (felhő) a következőben:Microsoft Dynamics 365 Commerce.
+Ez a témakör bemutatja a Commerce Scale Unit (felhő) inicializálását a következőben:Microsoft Dynamics 365 Commerce
 
-Ha Tier-2 sandboxot vagy éles környezetet használ, amely az alkalmazás 8.1.2.x vagy újabb verziójával rendelkezik, akkor inicializálnia kell a Commerce Scale Unit (felhő) funkciót, mielőtt a kiskereskedelmi csatorna funkcióit értékesítési pont (POS) műveletekhez használhatná. vagy a Retail Servert a felhőben használó e-kereskedelmi műveletekhez. Az inicializálás egy kereskedelmi léptékű egységet (felhőt) telepít.
+Ha 8.1.2.x vagy újabb alkalmazásverziójú Tier-2 postafiókot vagy éles környezetet használ, inicializálni kell a Commerce Scale Unit (felhő) alkalmazást, mielőtt a kiskereskedelmi csatorna funkcióit használni tudja a pénztári (POS) műveletekhez vagy a Retail Server kiszolgálót a felhőben használó e-commerce műveletekhez. Az inicializálás egy Commerce Scale Unit (felhő) telepítésekor
 
 > [!IMPORTANT]
-> A felhőben lévő kiskereskedelmi csatorna-funkcionalitást használó meglévő ügyfelek esetében a folyamatos és megszakítás nélküli támogatás érdekében megköveteljük, hogy frissítse kiskereskedelmi csatornáit a Commerce Scale Unit használatára. A Commerce Scale Unit nélkül telepített új környezetek a továbbiakban nem kapnak minőségi és szolgáltatási frissítéseket a felhőben tárolt kiskereskedelmi csatorna-összetevőkre vonatkozóan. Nincs szükség teendőkre azoknak az ügyfeleknek, akik kizárólag a Commerce Scale Unitot (saját üzemeltetésű) használják. Ha bővítményre van szüksége, forduljon a Microsoft FastTrack megoldástervezőjéhez.
+> A kiskereskedelmi csatornák funkcióit a felhőben használó meglévő vevők számára a vállalat folyamatos és folyamatos támogatottságának biztosítása érdekében a Commerce Scale Unit használatához frissíteni kell a kiskereskedelmi csatornákat. A Commerce Scale Unit nélkül telepített új környezetek már nem kapják meg a felhőben tárolt kiskereskedelmi csatorna összetevőinek minőségi és szolgáltatási frissítéseit. Nincs szükség semmilyen műveletre az olyan vevők esetében, akik kizárólag a Commerce Scale Unit (ön által tárolt) egységet használják. Ha szüksége van egy bővítményre, forduljon a Microsoft FastTrack megoldástervezőjhez.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-1. 8.1.2.x vagy újabb verziójú Tier-2 sandbox vagy éles környezet üzembe helyezése.
-2. Környezetenként legfeljebb 2 kereskedelmi méretegységet telepíthet önállóan. Ha környezetenként 2-nél több kereskedelmi léptékegységre van szüksége, akkor a Microsoft Dynamics Lifecycle Services (LCS), hozzon létre egy támogatási kérelmet, és lépjen be **Kérjen további kereskedelmi mérlegegységet** és adja meg a környezet azonosítóját, a Commerce Scale Units számát és a kívánt adatközponti régiókat. A kérelmet öt munkanapon belül teljesítik. Ha nincs szüksége 2-nél több kereskedelmi méretegységre környezetenként, akkor nem kell támogatási kérelmet létrehoznia. 
-3. A Commerce Scale Unit inicializálásához Project Owner engedélyekkel kell rendelkeznie az Lifecycle Services szolgáltatásban.
-4. Győződjön meg arról, hogy a kiskereskedelmi licenc konfigurációs kulcsai engedélyezve vannak a környezetben. További információkért lásd [Licenckódok és konfigurációs kulcsok jelentés](../sysadmin/license-codes-configuration-keys-report.md). A Commerce Scale Unit használatához a következő billentyűket kell bekapcsolni.
+1. Telepítsen egy Tier-2 boxot vagy éles környezetet, amely 8.1.2.x vagy újabb verziójú.
+2. Környezetenként legfeljebb 2 Commerce Scale Egység telepíthető önkiszolgáló rendszerként. Ha környezetenként több Mint 2 Commerce Scale Unit szükséges, Microsoft Dynamics hozzon létre egy támogatási kérést, és adja meg a Commerce Scale Unit **kiegészítő kérését, valamint adja meg a környezet azonosítóját, a Commerce Scale Units számát és a** kívánt adatforrás-régiókat. A kérelem öt munkanapon belül befejeződik. Ha nem szükséges környezetenként 2-nél több Commerce Scale Egység, akkor nem kell létrehozni egy támogatási kérelmet. 
+3. A Commerce Scale Unit inicializálása előtt projekttulajdonosi engedélyekkel kell rendelkeznie a Lifecycle Services szolgáltatásban.
+4. Győződjön meg arról, hogy a retail licenckulcsok engedélyezve vannak a környezetben. A további tudnivalókat lásd [a Licenckódok és a konfigurációs kulcsok jelentésében](../sysadmin/license-codes-configuration-keys-report.md). A Commerce Scale Unit használata csak akkor használható, ha a következő kulcsok be vannak kapcsolva.
 
     - RetailBasic
-    - RetaileCommerce – Ha az e-kereskedelmet a következőhöz tervezi használni Dynamics 365 Commerce.
-    - RetailGiftCard – Ha ajándékkártyákat szeretne használni.
-    - RetailInvent – Ha készletet kíván használni.
-    - RetailModernPos – Ha értékesítési pontot (POS) kíván használni.
-    - RetailReplenishment – Ha utánpótlást tervez használni.
+    - RetaileCommerce – ha az E-Commerce használatát tervezi a következőre:Dynamics 365 Commerce
+    - RetailGiftCard – ajándékutalványok használata
+    - RetailInvent – ha készlet használatát tervezi.
+    - RetailModernPos – ha tervezi a pénztár (POS) használatát.
+    - RetailReplenishment – ha feltöltéseket tervez.
     - RetailScheduler
-    - Kiskereskedelmi üzletek – Ha POS-t tervez használni.
+    - RetailStores – ha a POS használatát tervezi.
 
 
-## <a name="region-availability"></a>A régió elérhetősége
-A Commerce Scale Unit a következő régiókban telepíthető.
+## <a name="region-availability"></a>Régió elérhetősége
+A Commerce Scale Unit szolgáltatás a következő régiókban érhető el telepítésre.
 
-| Globális elhelyezkedés | Régió              | Elérhetőség        |
-|-----------------|---------------------|---------------------|
-| Egyesült Államok        | USA keleti régiója             | Általánosan elérhető |
-| Egyesült Államok        | USA keleti régiója 2           | Általánosan elérhető |
-| Egyesült Államok        | USA északi középső régiója    | Általánosan elérhető |
-| Egyesült Államok        | USA déli középső régiója    | Általánosan elérhető |
-| Egyesült Államok        | USA középső régiója          | Általánosan elérhető |
-| Egyesült Államok        | USA nyugati régiója             | Általánosan elérhető |
-| Egyesült Államok        | Nyugat-USA 2           | Általánosan elérhető |
-| Egyesült Államok        | Kanada középső      | Korlátozott kapacitás    |
-| Egyesült Államok        | Kanada Kelet         | Korlátozott kapacitás    |
-| Egyesült Államok        | Nyugat-Közép-USA     | Korlátozott kapacitás    |
-| APAC            | Kelet-Ausztrália      | Általánosan elérhető |
-| APAC            | Délkelet-Ázsia      | Általánosan elérhető |
-| APAC            | Kelet-Japán          | Általánosan elérhető |
-| APAC            | Nyugat-Japán          | Általánosan elérhető |
-| APAC            | Délkelet-Ausztrália | Korlátozott kapacitás    |
-| APAC            | Kelet-Ázsia           | Korlátozott kapacitás    |
-| APAC            | Dél-India         | Korlátozott kapacitás    |
-| APAC            | Közép-India       | Korlátozott kapacitás    |
-| EMEA            | Nyugat-Európa         | Általánosan elérhető |
-| EMEA            | Észak-Európa        | Általánosan elérhető |
-| EMEA            | Egyesült Királyság déli            | Korlátozott kapacitás    |
-| EMEA            | UK West             | Korlátozott kapacitás    |
+| Globális hely | Régió              | Elérhetőség        | Megjegyzések                  |
+|-----------------|---------------------|---------------------|---------------------------|
+| AMERICAS        | USA keleti régiója             | Általánosan elérhető |                           |
+| AMERICAS        | USA keleti régiója 2           | Általánosan elérhető |                           |
+| AMERICAS        | USA északi középső régiója    | Korlátozott kapacitás    |                           |
+| AMERICAS        | USA déli középső régiója    | Korlátozott kapacitás    |                           |
+| AMERICAS        | USA középső régiója          | Általánosan elérhető |                           |
+| AMERICAS        | USA nyugati régiója             | Általánosan elérhető |                           |
+| AMERICAS        | Nyugat-EGYESÜLT-2           | Általánosan elérhető |                           |
+| AMERICAS        | Kanada – Közép-Kanada      | Korlátozott kapacitás    |                           |
+| AMERICAS        | Kanada- és Kelet-         | Korlátozott kapacitás    |                           |
+| AMERICAS        | Nyugat-Közép-Usa     | Korlátozott kapacitás    |                           |
+| APAC            | Kelet-Ausztrália      | Általánosan elérhető |                           |
+| APAC            | Délkelet-Ázsia      | Korlátozott kapacitás | Nem engedélyezett a telepítés.    |
+| APAC            | Kelet-Japán          | Általánosan elérhető |                           |
+| APAC            | Nyugat-Japán          | Általánosan elérhető |                           |
+| APAC            | Délkelet-Ausztrália | Általánosan elérhető |                           |
+| APAC            | Kelet-Ázsia           | Korlátozott kapacitás    |                           |
+| APAC            | India- és Dél-India         | Korlátozott kapacitás | Nem engedélyezett a telepítés.    |
+| APAC            | India – Közép-India       | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges |
+| EMEA            | Nyugat-Európa         | Általánosan elérhető |                           |
+| EMEA            | Észak-Európa        | Általánosan elérhető |                           |
+| EMEA            | Egyesült Királyság - Dél            | Korlátozott kapacitás    |                           |
+| EMEA            | Egyesült Királyság – Nyugat             | Korlátozott kapacitás    |                           |
+| Svájc     | Svájc - Észak   | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges |
+| UAE             | Észak-Egyesült Arab Emírségek           | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges |
 
-A korlátozott kapacitású régiókban a telepítési kapacitás rendkívül korlátozott. A telepítési kérelmeket eseti alapon értékeljük. Ha kényszerítő üzleti igénye van a korlátozott kapacitású régiókban történő telepítésre, benyújthat támogatási kérelmet, hogy felvegye a várólistára.
+A korlátozott kapacitású régiók telepítési kapacitása rendkívül korlátozott. A telepítésre vonatkozó kéréseket eset szerint kell kiértékelni. Ha üzleti tevékenységre van szükség a korlátozott kapacitású régiókban való telepítéshez, támogatási kérést lehet kérni a várakozási listához való hozzáadásra. A korlátozott kapacitású területek jelenleg nem teszik lehetővé a Commerce Scale Unit telepítését. 
 
-![A régió elérhetőségét mutató térkép.](media/Commerce-Scale-Unit-Region-Availability.png "A régió elérhetőségét mutató térkép")
+![A régió elérhetőségét mutató leképezés](media/Commerce-Scale-Unit-Region-Availability.png "A régió elérhetőségét mutató leképezés")
 
-## <a name="initialize-commerce-scale-unit-as-part-of-a-new-environment-deployment"></a>A Commerce Scale Unit inicializálása egy új környezeti telepítés részeként
+## <a name="initialize-commerce-scale-unit-as-part-of-a-new-environment-deployment"></a>Commerce Scale Unit inicializálása új környezettelepítés részeként
 
-Kérjük, győződjön meg arról, hogy a központ elérhető. Ez szükséges ahhoz, hogy az inicializálási folyamat során regisztrálják a mérlegegységet a központban. Nem javasolt a mérlegegység inicializálása, amikor a központ szervizelés alatt áll, mert előfordulhat, hogy a szervizelési folyamat során nem lesz elérhető.
+Győződjön meg róla, hogy a központ elérhető. Ez szükséges a mérlegegységnek a központnál való regisztrálásához az inicializálási folyamat során. Nem ajánlott olyan mérlegegységet inicializálni, amikor a központ karbantartás alatt áll, mert a karbantartás során esetleg nem lesz elérhető.
 
-1. Győződjön meg arról, hogy a központ környezete elérhető, és nincs benne [Karbantartás Mód](../sysadmin/maintenance-mode.md).
-2. Az LCS-ben a környezet részleteinek oldalán válassza a lehetőséget **Környezeti jellemzők \> kereskedelem**.
-3. A Kereskedelmi beállítások üzembe helyezése oldalon válassza a lehetőséget **Inicializálja**.
-4. Válassza ki a Commerce Scale Unit inicializálandó verzióját.
-5. Válassza ki a régiót a Commerce Scale Unit inicializálásához.
+1. Győződjön meg róla, hogy a központi környezet elérhető, és nem Karbantartási [módban](../sysadmin/maintenance-mode.md).
+2. Az LCS rendszer Környezeti részletek lapján válassza **a Commerce szolgáltatásokat \>**.
+3. A Commerce telepítő telepítési lapján válassza az Inicializálás **lehetőséget**.
+4. Válassza ki az inicializálni kívánt Commerce Scale Unit verzióját.
+5. Válassza ki azt a régiót, amelynél inicializálni kell a Commerce Scale Unit inicializálását.
 
-## <a name="configure-channels-to-use-commerce-scale-unit"></a>Konfigurálja a csatornákat a Commerce Scale Unit használatához
+## <a name="configure-channels-to-use-commerce-scale-unit"></a>Csatornák konfigurálása a Commerce Scale Unit használatára
 
-A Commerce Scale Unit telepítése után meg kell győződnie arról, hogy a csatornái az adatbázis használatára vannak beállítva. 
+A Commerce Scale Unit telepítése után gondoskodnia kell arról, hogy a csatornák be vannak állítva az adatbázis használatára. 
 
-Ha csatornáit a Commerce Scale Unit adatbázis használatára szeretné beállítani, kövesse az alábbi lépéseket.
+A következő lépések szerint konfigurálhatja a csatornákat a Commerce Scale Unit adatbázis használatára.
 
-1. A Kereskedelmi központban lépjen a következőre: **Kiskereskedelem és kereskedelem \> A központ felállítása \> Kereskedelmi ütemező \> Csatorna adatbázis**.
-1. A bal oldali ablaktáblában válasszon ki egy csatornaadatbázist.
-1. A **Kiskereskedelmi csatorna** FastTab, válassza ki **Hozzáadás**, majd válassza ki kiskereskedelmi csatornáját a legördülő listából.
-1. Válassza ki **Hozzáadás**, majd válassza ki online csatornáját a legördülő listából. 
+1. A Commerce Headquarters rendszer a **Retail and Commerce \> Headquarters beállítás \> commerce Scheduler \> Channel adatbázisában található**.
+1. A bal oldali ablakban válasszon ki egy csatorna-adatbázist.
+1. A Kiskereskedelmi csatorna **gyorslistában** válassza a Hozzáadás **lehetőséget**, majd válassza ki a kiskereskedelmi csatornát a legördülő listából.
+1. Válassza **a** Hozzáadás lehetőséget, majd válassza ki az online csatornát a legördülő listából. 
 
-Ha végzett, menjen a következőre **Kiskereskedelem és kereskedelem \> Kiskereskedelmi és kereskedelmi IT \> Elosztási ütemterv**, és futtassa a 9999-es feladatot.
+Ha végzett, **menjen a Retail and Commerce Retail és a Commerce \> IT \> Distribution ütemezéshez**, majd futtassa a 9999-es feladatot.
 
 > [!NOTE] 
-> A Job 9999 szinkronizálja az összes új terméket és ügyfelet a Commerce Scale Unit-hoz. Ez a folyamat sokáig tarthat. Ha a csatornának csak az e-kereskedelmi webhely-készítő konfigurálásához kell elérhetőnek lennie, akkor a 9999-es helyett futtathatja az 1070-es feladatot.
+> A 9999-es feladat minden új terméket és vevőt szinkronizál a Commerce Scale Unit egységgel. Ez a folyamat hosszú ideig is hosszú ideig tart. Ha a csatornának csak az e-commerce webhelyszerkesztő konfigurációjában kell elérhetőnek lennie, a 9999-es feladat helyett a 1070-es feladatot is futtathatja.
 
-### <a name="database-refresh-and-commerce-scale-units"></a>Adatbázis frissítése és Kereskedelmi Scale Units
+### <a name="database-refresh-and-commerce-scale-units"></a>Adatbázis-frissítés és Commerce Scale Units
 
-Mielőtt elkezdené, győződjön meg arról, hogy ismeri [A Commerce funkciót használó környezetek adatbázis-frissítését követően végrehajtandó lépések](../database/database-refresh.md).
+Mielőtt nekikezd, győződjön meg róla, [hogy jól ismeri a Commerce rendszer funkcióit igénybeó környezetek adatbázis-frissítés utáni lépéseit](../database/database-refresh.md).
 
-A méretezési egység csatorna adatbázis-rekordjai (a Csatornaadatbázis űrlapon) nem mozgathatók át a környezetek között az adatbázis-frissítés részeként. Ennek az az oka, hogy a rekordok környezetspecifikus konfigurációt képviselnek.
+A mérlegegység csatorna-adatbázisának rekordjai (a Csatorna-adatbázis képernyőn) nem mozgathatók át több környezetben az adatbázis-frissítés részeként. Ennek az az oka, hogy a rekordok a környezetspecifikus konfigurációnak megfelelőek.
 
-Az adatbázis frissítése után újragenerálhatja a méretezési egység csatornaadatbázis-rekordját a méretezési egység LCS-ben történő újratelepítésével. A mérlegegység bármely telepítési vagy szervizelési művelete megkísérli regisztrálni a mérlegegységet a központban, ha a regisztráció hiányzik.
+Az adatbázis frissítése után újragenerálhatja a mérlegegység csatorna-adatbázisának rekordját úgy, hogy újra beveszi a mérlegegységet az LCS-be. A mérlegegységben található bármely telepítési vagy karbantartási művelet megpróbálja regisztrálni a mérlegegységet a központnál, ha a regisztráció hiányzóként észlelhető.
 
-Kiadhatja a méretezési egység újratelepítését az összetevők módosítása nélkül, ha kiválasztja a méretezési egység verziójának telepítését. Ez az LCS-ben a következő lépésekkel tehető meg:
+A mérlegegység újratelepítését az összetevők módosítása nélkül is kiadhatja úgy, hogy kiválasztja ugyanazt a verziót, amelynél a mérlegegység már telepítve van. Ezt a következő lépések szerint lehet az LCS-knél tenni:
 
-1. Az LCS-ben a környezet részleteinek oldalán válassza a lehetőséget **Környezeti jellemzők \> Kiskereskedelem**.
-2. A telepítési telepítési oldalon válassza ki az újratelepíteni kívánt méretezési egységet.
-3. A mérleg egység műveleti menüjében válassza a lehetőséget **Frissítés**.
-4. A csúszkán, a legördülő listán **Válasszon verziót**, válassza ki a lehetőséget **Adjon meg egy verziót**.
-5. Alatti szövegdobozban **Adjon meg egy verziót**, írja be a skálaegységhez tartozó verziót, amely a mellett látható **Jelenlegi verzió** címke.
-6. Kattintson **Frissítés** gomb.
+1. Az LCS környezetvédelmi részletek lapján válassza a Kiskereskedelem környezeti **szolgáltatások lehetőséget \>**.
+2. A telepítő telepítési lapján válassza ki az újratelepítéshez szükséges mérlegegységet.
+3. Válassza a Frissítés lehetőséget a mérlegegység műveleti **menüjében**.
+4. Az oldalon a **Select verzió** legördülő ében válassza ki **a Verzió megadása lehetőséget**.
+5. A Verzió megadása csoport szövegmezőjében **írja be a** mérlegegységhez látható verziót az **Aktuális** verzió címkéje mellett.
+6. Kattintson a Frissítés **gombra**.
 
-Nem kell kiválasztani **Frissítse a bővítményeket**, még akkor is, ha korábban alkalmazott bővítményeket, mivel a skálaegység frissítésekor a rendszer automatikusan kiválasztja a skálaegységre utoljára alkalmazott bővítménycsomagot.
+A Frissítési bővítményeket **akkor** sem kell kiválasztani, ha korábban már alkalmazta a kiterjesztéseket, mivel a mérlegegységre alkalmazott utolsó kiterjesztéscsomagot a rendszer automatikusan kiválasztja a skálaegység frissítésekségekor.
 
-Ha több mérlegegysége van, akkor a fenti műveletet minden mérlegegységnél el kell végeznie. Ha szükséges, ezeket a műveleteket párhuzamosan is elvégezheti.
+Ha több mérlegegysége van, akkor a fenti műveletet kell végrehajtania minden egyes mérlegegységnél. Szükség esetén párhuzamosan is végrehajthatja ezeket a műveleteket.
 
-## <a name="deploy-additional-commerce-scale-units-optional"></a>További kereskedelmi mérlegegységek telepítése (opcionális)
+## <a name="deploy-additional-commerce-scale-units-optional"></a>További commerce scale egységek telepítése (nem kötelező)
 
-A Commerce Scale Unit inicializálása után önállóan telepíthet egy második mérlegegységet, ha a licence feljogosítja erre. Kettőnél több méretezési egység telepítéséhez támogatási kérelmet kell létrehoznia. A támogatási kérelemben adja meg a szükséges kereskedelmi léptékű egységek számát, a környezet nevét és a kívánt régiókat. Az engedélyezéssel kapcsolatos további információkért lásd: [Dynamics 365 licencelési útmutató](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
+A Commerce Scale Unit inicializálása után ön telepíthet egy második mérlegegységet is, ha a licenc feljogosítja erre. Ha több mérlegegységet is telepít, akkor egy támogatási kérést kell létrehoznia. A támogatási kérésben a szükséges Commerce Scale Units számot, a környezet nevét és a kívánt régiókat kell megszabadni. A licencelésről a [Dynamics 365 licencelési útmutatója nyújt további tájékoztatást](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
-Javasoljuk, hogy minden további telepített kereskedelmi léptékű egységhez hozzon létre egy külön csatornaadatbázis-csoportot az alábbi lépések végrehajtásával.
+Az alábbi lépések segítségével minden további telepített Commerce Scale Unit egységhez javasoljuk, hogy hozzon létre egy külön csatorna-adatbáziscsoportot.
 
-1. A Kereskedelmi központban keresse fel a következőt: **Kiskereskedelem és kereskedelem >Retail Headquarters > Kiskereskedelmi ütemező beállítása > Csatorna adatbázis-csoport**.
+1. A Commerce commercei központ a **Retail and Commerce > Retail Headquarters > a Retail Scheduler beállítási > Csatorna-adatbáziscsoportban**.
 2. Új csatornaadatbázis-csoport létrehozása
-3. Menj a **Kiskereskedelem és kereskedelem >Retail Headquarters > Kiskereskedelmi ütemező beállítása > Csatornaadatbázis**, és válassza ki az újonnan létrehozott kereskedelmi skálaegységnek megfelelő csatornaadatbázist.
-4. Válassza ki **Szerkesztés** és válassza ki az új csatorna adatbázis-csoportot.
+3. Menjen a **Retail and Commerce > Retail Headquarters > Retail Scheduler beállításhoz > Csatorna-adatbázishoz**, és válassza ki az újonnan létrehozott Commerce Scale Unitnek megfelelő csatorna-adatbázist.
+4. Válassza a **Szerkesztés** lehetőséget, és válassza ki az új csatorna-adatbáziscsoportot.
 5. Válassza a **Mentés** lehetőséget.
-6. Válassza ki **Futtassa a Teljes adatszinkronizálást** a kiválasztott csatorna adatbázishoz.
+6. Jelölje be **a Teljes adatszinkronizálás futtatása** lehetőséget a kiválasztott csatorna-adatbázisra.
 
-## <a name="additional-considerations-if-you-initialize-cloud-hosted-commerce-channel-components-in-an-existing-environment"></a>További megfontolások, ha meglévő környezetben inicializálja a felhőalapú kereskedelmi csatorna összetevőit
+## <a name="additional-considerations-if-you-initialize-cloud-hosted-commerce-channel-components-in-an-existing-environment"></a>További szempontok a felhőben tárolt Commerce-csatornaösszetevők meglévő környezetben való inicializálása esetén
 
-Ha már használ felhőben tárolt kereskedelmi csatorna-összetevőket egy környezetben, a Commerce Scale Unit inicializálása segít csökkenteni az összetevők frissítése utáni leállást. További tervezésre van szükség a Commerce Scale Unit inicializálása előtt.
+Ha már a felhőben tárolt Commerce-csatornaösszetevőket használja egy környezetben, a Commerce Scale Unit inicializálása az összetevők frissítése esetén csökkenti a leállást. A Commerce Scale Unit inicializálása előtt további tervezés szükséges.
 
-Amikor inicializálja az első Commerce Scale Unit olyan környezetben, amely felhőalapú kereskedelmi csatorna-összetevőket használ, az inicializálási folyamat áttelepíti a felhőben tárolt csatornakomponensekhez társított csatornáit az első méretezési egységhez. A Store Scale egységekhez társított csatornákat ez nem érinti.
+Amikor az első Commerce Scale Unit inicializálása egy olyan környezetben történik, amely a felhőben tárolt Commerce csatorna-összetevőket használja, az inicializálási folyamat a felhőben tárolt csatornaösszetevőkhöz társított csatornákat az első skálaegységre áttelepítése. A store scale mértékegységekkel társított csatornák nem kapcsolódnak hez.
 
-A migrációs folyamat átlátható a csatornák számára. A skálaegység inicializálásának megkezdése után a következő műveletek automatikusan végrehajtásra kerülnek:
+Az áttelepítési folyamat a csatornák számára transzparens. A mérlegegység inicializálásának indítása után a program automatikusan a következő műveleteket végzi:
 
-1. Egy új Kereskedelmi Scale Unit jön létre, és hozzá lesz rendelve a környezethez.
-2. A Commerce Scale Unit elérhető csatornaadatbázisként lesz regisztrálva a központban.
-3. Minden csatorna hozzárendelve a **Alapértelmezett** A központban lévő csatornaadatbázis frissítésre kerül, hogy megfeleljen az új kereskedelmi léptékű egységnek.
-4. A Commerce Data Exchange (CDX) teljes adatszinkronizálásra kerül sor, hogy a csatornaadatokat az új skálaegységhez hozzák.
+1. Létrejön egy új Commerce Scale Unit, amely társítva lesz a környezethez.
+2. A Commerce Scale Unit szolgáltatás elérhető csatorna-adatbázisként lesz regisztrálva a központban.
+3. A központi Alapértelmezett **csatorna**-adatbázishoz hozzárendelt összes csatorna frissülni fog, hogy az új Commerce Scale Unit egységhez legyen leképezve.
+4. A Commerce Data Exchange rendszer (CDX) teljes adatszinkronizálást hajt végre, hogy a csatornaadatokat az új skálaegységre vigye.
 
-**A Commerce Scale Unit inicializálásának tervezése és tesztelése** Általános szabály, hogy a Commerce Scale Unit inicializálása során ötórás leállási időszakot kell beterveznie a bolti műveletekhez, valamint minden olyan e-kereskedelmi csatornaművelethez, amely Retail Servert vagy Cloud Point of Sale-t használ.
+**A Commerce Scale Unit** inicializálásának tervezése és tesztelése Általános szabály, hogy a Commerce Scale Unit inicializálása során meg kell terveznie egy ötórás le leállási ablakot az üzletművelet számára, valamint a Retail Server vagy a Felhő Point of Sale típusú e-commerce csatornaműveleteket is.
 
-1. Végezzen adatbázis-frissítést éles környezetből sandbox UAT környezetbe. 
-2. Inicializálja a Commerce Scale Unitot a sandbox UAT környezetben. 
-3. Jegyezze fel a Commerce Scale Unit inicializálási idejét. Ez összehasonlítható lesz azzal az idővel, ameddig ez a művelet a termelési környezetben vesz igénybe, amely alatt az áruházi műveletek és az e-kereskedelmi műveletek nem lesznek elérhetők.
+1. Adatbázis-frissítés végrehajtása a termelési környezetről egy uAT-környezetre. 
+2. A Commerce Scale Unit inicializálása az UAT környezetben. 
+3. Jegyezze meg a Commerce Scale Unit inicializálási idejét. Ez hasonlít arra az időre, amelyet ez a művelet a termelési környezetben tart, és amelynek során az üzletműveletek és az e-kereskedelmi műveletek nem lesznek elérhetők.
 
-A Commerce Scale Unit inicializálása előtt végre kell hajtania a következő további lépéseket.
+A Commerce Scale Unit inicializálása előtt a következő további lépéseket kell végrehajtania.
 
-- **Zárja be az összes POS műszakot** - Az áttelepítés után a POS-felhasználók nem zárhatják be az áttelepítési folyamat során aktív műszakokat.
-- **Ellenőrizze, hogy az összes P-feladat sikeresen befejeződött-e** - Javasoljuk, hogy a függőben lévő tranzakciók szinkronizálására szolgáló P-jobok befejeződjenek a CSU inicializálása előtt.
-- **Jelentkezzen ki az összes POS-eszközről** - A POS műveletek nem támogatottak az áttelepítés során.
-- **Az összes felfüggesztett tranzakció visszahívása és érvénytelenítése a POS-ban** - A felfüggesztett tranzakciók nem maradnak meg az inicializálás részeként.
+- **Az összes POS-műszak bezárása** – az áttelepítés után a POS-felhasználók nem tudják lezárni az áttelepítési folyamat során aktív műszakokat.
+- **Az összes P-feladat** sikeres befejezésének ellenőrzése – azt ajánljuk, hogy a P-feladatok szinkronizálják a függőben lévő tranzakciókat, mielőtt AZ inicializálás befejeződik.
+- **Az összes POS-eszközből való kijelentkezés** – az áttelepítés során nem támogatottak a POS-műveletek.
+- **A POS-terminálon felfüggesztett tranzakciók** visszahívása és érvénytelenítése – a felfüggesztett tranzakciók nem megmaradnak az inicializálás részeként.
 
 > [!IMPORTANT]
-> A Commerce Scale Unit inicializálásának részeként a korábban felfüggesztett tranzakciók elvesznek, és nem hívhatók vissza. 
+> A Commerce Scale Unit inicializálásának részeként a korábbi felfüggesztett tranzakciók elvesznek, ezért nem lehet visszahívni őket. 
 
-Íme, mi történik az inicializálási időszakban:
+Itt történik az inicializálási időszak alatt:
 
-- A felhőalapú kereskedelmi csatornák nem működnek, hacsak be nem kapcsolja a POS offline funkciót.
-- A bekapcsolt offline funkcióval rendelkező POS-eszközök funkcionalitása csökkent.
-- A Retail Servertől függő e-kereskedelmi kliensek működése megszakad.
-- A Commerce Scale Units (saját hosztolású) csatornákat ez nem érinti.
-- A központi iroda működését ez nem érinti.
+- A felhőben tárolt Commerce-csatornák csak akkor működnek, ha be van kapcsolva a POS offline képesség.
+- Az offline képességgel rendelkező POS-eszközök csökkentett funkciókat fognak tartalmazni.
+- A Retail Server kiszolgálótól függő összes e-Commerce ügyfél megszakad.
+- Ez nem érinti a Commerce Scale Units (ön által tárolt) rendszer által tárolt csatornákat.
+- Ez a funkció nincs hatással a head office funkciókra.
 
-Íme, mi történik az inicializálás befejezése után:
+Az inicializálás befejezése után a következő történik:
 
-- Az összes aktivált POS eszköz eszközaktiválási állapota megmarad, ami azt jelenti, hogy az eszközöket nem kell újra aktiválni.
-- Az önálló hardverállomás-példányok továbbra is működni fognak.
-- A POS-csatorna oldali jelentések alaphelyzetbe állnak, és nem jelenítik meg az inicializálás előtti adatokat.
-- A napló megjelenítése művelet szintén alaphelyzetbe áll, és nem jelennek meg az inicializálás előtti adatok.
+- Az összes aktivált POS-eszköz aktiválási állapota megőrződ, ami azt jelenti, hogy nem kell újraaktiválni az eszközöket.
+- A különálló hardverállomás-példányok továbbra is működni fognak.
+- A POS csatornaoldali jelentései alaphelyzetbe lesznek állítva, és nem fognak adatokat jelenni az inicializálás előtt.
+- A naplóműveletet is alaphelyzetbe állítja, és az inicializálás előtt nem fogja mutatják az adatokat.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

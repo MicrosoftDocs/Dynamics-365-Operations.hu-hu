@@ -1,6 +1,6 @@
 ---
 title: Gyártás területén végzett alvállalkozói munka kezelése
-description: Ez a témakör bemutatja, hogy az alvállalkozói műveletek hogyan kezelhetők a Dynamics 365 Supply Chain Management szolgáltatásban. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.
+description: Ez a témakör ismerteti, hogyan kezeli a rendszer az alvállalkozói műveleteket Dynamics 365 Supply Chain Management. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e80efc751ccf9243163d23ed48fd17923326f89
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a0021d409f9f4a9b36effbd80a99766812572d5b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579379"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863795"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Gyártás területén végzett alvállalkozói munka kezelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy az alvállalkozói műveletek hogyan kezelhetők a Dynamics 365 Supply Chain Management szolgáltatásban. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.
+Ez a témakör ismerteti, hogyan kezeli a rendszer az alvállalkozói műveleteket Dynamics 365 Supply Chain Management. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.
 
 A [termelési folyamatokban](production-process-overview.md) munkát azon erőforrások végezhetnek, amelyek tulajdonosa vagy kezelője egy szállító. Általában az olyan időszakos kiemelkedő kereslet kielégítésére használnak szállító típusú erőforrásokat, amely meghaladja a vállalat saját forrásainak rendelkezésre álló kapacitásait. A szállító emellett konkrét [erőforrásképességeket](resource-capabilities.md), illetve alacsonyabb árú erőforrásokat is kínálhat.  
 
@@ -63,7 +63,7 @@ E konfiguráció használata esetén beszerzési rendelés jön létre a kapcsol
 Egy termelési rendeléshez számos művelet tartozhat, és minden egyes művelet különböző szállítóhoz lehet hozzárendelhető. Ezért egy végpontok közötti termelési rendelés számos beszerzési rendelést is kiválthat.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Termelési folyamat tevékenységeinek alvállalkozásba adása
-A [lean manufacturing](lean-manufacturing-overview.md) megoldási modellekben az alvállalkozói munka egy [termelési folyamat](tasks/create-production-flow-version.md) (Feladat-útmutató témaköre) egy tevékenységhez kapcsolódó szolgáltatásként modelleződik. Ezért az ilyen típusú alvállalkozásba adást [tevékenységi alapú alvállalkozásba adásnak is nevezzük](activity-based-subcontracting.md) Egy speciális költségcsoporttípus, a **Közvetlen kiszervezés** került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele a késztermékek anyagjegyzékébe (AJ). Lean manufacturing használatakor minden olyan tevékenység meghatározása kanbannal történik, amely összefüggésben lehet egy vagy több termelési folyamat tevékenységeivel. Eddig a magyarázat ugyanúgy hangzik, mint a termelési rendelések magyarázata. A termelési rendeléseknek viszont mindig késztermékkel kell végződniük, félkész termékek biztosításához kanban hozható létre. Nem kell bevezetni új terméket és AJ-szintet.  
+A [lean manufacturing (lean gyártás](lean-manufacturing-overview.md)) megoldás az alvállalkozói [munkát](tasks/create-production-flow-version.md) egy termelési folyamat tevékenységéhez kapcsolódó szolgáltatásként modellként modellel (Feladat útmutató cikke). Ezért az ilyen típusú alvállalkozásba adást [tevékenységi alapú alvállalkozásba adásnak is nevezzük](activity-based-subcontracting.md) Egy speciális költségcsoporttípus, a **Közvetlen kiszervezés** került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele a késztermékek anyagjegyzékébe (AJ). Lean manufacturing használatakor minden olyan tevékenység meghatározása kanbannal történik, amely összefüggésben lehet egy vagy több termelési folyamat tevékenységeivel. Eddig a magyarázat ugyanúgy hangzik, mint a termelési rendelések magyarázata. A termelési rendeléseknek viszont mindig késztermékkel kell végződniük, félkész termékek biztosításához kanban hozható létre. Nem kell bevezetni új terméket és AJ-szintet.  
 
 Mivel a kanbanszabályok nagyon dinamikusak lehetnek, a termelési folyamatban ugyanarra a termékre vonatkozóan különböző ellátási változatok modellezhetők. Lean alvállalkozásba adás használatakor az anyagáram és pénzügyi áramlását szigorúan elválnak egymástól. Minden anyagáramot kanbantevékenységek jelölnek. A szolgáltatási termékekre vonatkozó beszerzési rendelések és ezen szolgáltatások beérkezésének könyvelése automatizálható a termelési folyamatban található kanbanfeladatok állapota alapján. Kanbanfeladatok elindíthatók befejezhetők akár a beszerzési rendelések létrehozása előtt is. Az alvállalkozói dokumentumok (a szolgáltatás beszerzési rendelése és beszerzési elismervénye) időszak és szolgáltatás szerint összesíthetők. Ezért a beszerzési bizonylatok és sorok száma nagyon alacsonyan tartható még az olyan, nagy számban ismétlődő műveletek esetén is, amelyeknél a szállítók egységes folyamat formájában biztosítanak alvállalkozói szolgáltatásokat.
 

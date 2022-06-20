@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.22 alkalmazásban (2021. november)
-description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.22 új vagy módosított szolgáltatásait írja le.
+description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.22 rendszer új vagy módosult funkcióit ismerteti.
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 53f1670454ef505e61e96b16990d913473b46bf4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778157"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849503"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.22 alkalmazásban (2021. november)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.22 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.995 a buildszáma, és a következő módon érhető el:
+Ez a cikk felsorolja azokat a funkciókat, amelyek vagy újak, vagy módosulnak a Microsoft Dynamics 365 Supply Chain Management 10.0.22-es verziójában. Ennek a verziónak 10.0.995 a buildszáma, és a következő módon érhető el:
 
 - **Kiadás előzetes verziója:** 2021. szeptember
 - **A kiadás nyilvános megjelenése (önkiszolgáló frissítés):** 2021. október
@@ -29,9 +29,9 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.22 változa
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: A *Funkció* oszlop a [kiadási tervre](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features) mutató hivatkozásokat tartalmaz, amelyeken látható az egyes funkciók hivatalos kiadási dátuma. A *További tudnivalók* oszlopban további részletek és/vagy a kapcsolódó dokumentációra mutató hivatkozások találhatóak. A funkciók bekapcsolásának meghatározásához lásd az *Engedélyező* oszlopban. A funkciókezelés használatávall kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Lehet, hogy frissítjük ezt a témát, hogy tartalmazza azokat a funkciókat, amelyek a téma eredeti közzététele után kerültek be a buildbe.
+Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: A *Funkció* oszlop a [kiadási tervre](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features) mutató hivatkozásokat tartalmaz, amelyeken látható az egyes funkciók hivatalos kiadási dátuma. A *További tudnivalók* oszlopban további részletek és/vagy a kapcsolódó dokumentációra mutató hivatkozások találhatóak. A funkciók bekapcsolásának meghatározásához lásd az *Engedélyező* oszlopban. A funkciókezelés használatávall kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Előfordulhat, hogy a cikk első közzététele után frissítjük ezt a cikket, hogy szerepeljenek a buildben található funkciók.
 
-| Szolgáltatásterület | Funkció | További információ | Engedélyezte:   |
+| Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
 | Tervezés | [A tervezésoptimalizálás támogatása képesség alapú erőforrás-felosztáshoz](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Ütemezés képességen alapuló erőforrás-kijelöléssel](../master-planning/planning-optimization/capability-based-scheduling.md) | Funkciókezelés (*Végtelen kapacitásütemezés a tervezési optimalizáláshoz*) |
 
@@ -47,9 +47,9 @@ Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tarta
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 
-A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelentősen frissítve. Ezek a témakörök nem feltétlenül kapcsolódnak az ehhez a verzióhoz hozzáadott új funkciókhoz, mint azt az előző szakaszban felsoroltak. Előfordulhat azonban, hogy segítenek a meglévő funkciókból további lehetőségeket kihozni.
+Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikkeket. Ezek a cikkek nem feltétlenül kapcsolódnak az ehhez a verzióhoz hozzáadott új funkciókhoz, mint azt az előző szakaszban felsoroltak. Előfordulhat azonban, hogy segítenek a meglévő funkciókból további lehetőségeket kihozni.
 
-| Szolgáltatásterület | Új vagy frissített témakörök |
+| Szolgáltatásterület | Új vagy frissített cikkek |
 |---|---|
 | Tervezési változáskezelés | [A tervezési változáskezelés áttekintése](../engineering-change-management/product-engineering-overview.md) most felsorolja a funkciókezelésben elérhető összes kapcsolódó, választható funkciót. |
 | Alaptervezés | [Igény-előrejelzés beállítása](../master-planning/demand-forecasting-setup.md) |
@@ -58,9 +58,9 @@ A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelent�
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások platformfrissítései
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.22 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.22 verziójához (2021. november)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
+A Microsoft Dynamics 365 Supply Chain Management 10.0.22 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.22-es verziójának Platformfrissítései (2021. november)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
@@ -74,12 +74,12 @@ Tekintse meg a [Dynamics 365 és ipari felhők: 2021-es 2. kiadási hullám csom
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 
-A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltatásai](removed-deprecated-features-scm-updates.md) témakör azokat a funkciókat írja le, amelyek el lettek távolítva a Supply Chain Management szolgáltatásól vagy eltávolításuk ütemezve van.
+A [cikk Eltávolított Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) vagy elavult funkciói olyan funkciókat írnak le, amelyek már el vannak távolítva, illetve amelyek már el vannak távolítva vagy elavultak az Ellátásilánc-kezeléshez.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
 
-Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
+Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) az értékcsökkenési értesítés 12 hónappal az eltávolítás előtt törlődik az Eltávolított vagy elavult funkciókból.
 
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 

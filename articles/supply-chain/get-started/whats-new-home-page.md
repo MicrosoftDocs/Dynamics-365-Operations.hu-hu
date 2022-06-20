@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management rendszerben
-description: Ez a témakör a Dynamics 365 Supply Chain Management egyes kiadásainak új és módosított funkciókat leíró témaköreire mutat.
+description: Ez a témakör olyan cikkekre mutat, amelyek az egyes kiadások új és módosított funkcióit írják le Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 6c1cfcd7ccc39f2742fd237278f97b4d3d0ad4fd
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
-ms.translationtype: MT
+ms.openlocfilehash: b767f8ff8e9c9ef7ea1b4dee777f9e0c96f93aef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8812972"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893439"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management rendszerben
 
@@ -27,7 +27,7 @@ ms.locfileid: "8812972"
 
 ## <a name="releases-of-dynamics-365-supply-chain-management"></a>A Dynamics 365 Supply Chain Management kiadásai
 
-Ha látni szeretné, hogy mi új vagy módosult a Dynamics 365 Supply Chain Management egyes verzióiban, tekintse át az alábbi témaköröket.
+A következő cikkekben látható, hogy milyen újdonságok vagy módosulnak Dynamics 365 Supply Chain Management az egyes kiadásokban.
 
 | Verzió | Szám felépítése | Automatikus frissítés rendelkezésre állása | További információk |
 |---|---|---|---|
@@ -57,9 +57,9 @@ Ha látni szeretné, hogy mi új vagy módosult a Dynamics 365 Supply Chain Mana
 
 ## <a name="releases-before-november-2019"></a>2019. november előtti kiadások
 
-Ha látni szeretné, hogy mi új vagy módosult a 2019 november előtti kiadásokban tekintse át az alábbi témaköröket.
+A 2019 novembere előtti kiadások újdonságai vagy módosulása a következő cikkekben látható.
 
-| Kiadás | Verzió | Szám felépítése | Elérhetőség | További információ |
+| Kiadás | Verzió | Szám felépítése | Elérhetőség | További információk |
 |---|---|---|---|---|
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.5      | 10.0.197         | Október 2019.     | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations 10.0.5 verziójában (2019. október)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md)                 |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.4      | 10.0.136         | 2019. július        | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations 10.0.4-as verziójában (2019. július)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md)                    |

@@ -1,6 +1,6 @@
 ---
 title: Bejövő dokumentumok elemzése Excel-formátumban
-description: Ez a témakör a bejövő Microsoft Excel-fájlok tartalmának elemzéséhez használt elektronikus jelentési (ER) formátumok tervezésével kapcsolatos információkat tartalmaz.
+description: Ez a cikk az elektronikus jelentési (ER) formátumok megtervezését tartalmazza a bejövő fájlok által tartalmazott tartalom elemezhetők Microsoft Excel.
 author: NickSelin
 ms.date: 05/25/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: d4ebad1b800abe77871bfa3e550a95f1fe2bfcc4692301cf79fb8b98a0b3f233
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64371ffb09836d6d60ba2073c706628d2009116e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858680"
 ---
 # <a name="parse-incoming-documents-in-excel-format"></a>Bejövő dokumentumok elemzése Excel-formátumban
 
@@ -39,7 +39,7 @@ A fent említett feladat útmutatók befejezéséhez töltse le a következő f�
 | Bejövő fájl XLSX formátumban - sablon    | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
 | Bejövő fájl XLSX formátumban - mintaadatok | [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
 
-Ha még nem játszotta le a következő feladat útmutatót [ER létrehozása - szükséges konfigurációk a külső fájlból történő adatimportáláshoz](./tasks/er-required-configurations-import-data.md) a jelenlegi Finance and Operations alkalmazásban, töltse le a következő fájlt.
+Ha még nem játszotta le a következő feladat útmutatót [ER létrehozása - szükséges konfigurációk a külső fájlból történő adatimportáláshoz](./tasks/er-required-configurations-import-data.md) a jelenlegi Finance and Operation alkalmazásban, töltse le a következő fájlt.
 
 | Tartalom leírása    | Fájl                                                            |
 |------------------------|-----------------------------------------------------------------|

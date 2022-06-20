@@ -1,6 +1,6 @@
 ---
 title: Szállítási mód módosítása a pénztárban
-description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni és használni a szállítási mód módosítása műveletet a pénztárban.
+description: Ez a témakör leírja, hogyan kell konfigurálni és használni a POS-terminálon a szállítási mód változtatási műveletét.
 author: hhainesms
 ms.date: 03/01/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 583f568164d0de70e22998bf5ded5f4616b00bd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714040"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855821"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Szállítási mód módosítása a pénztárban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani és használni a „szállítási mód módosítása” funkciót a pénztár (POS) környezetében. 
+Ez a témakör leírja, hogyan lehet beállítani és használni a "Szállítási mód módosítása" funkciót a pénztári környezetben. 
 
 A Dynamics 365 Commerce 10.0.10 és a későbbi verziókban **Szállítási mód módosítása** művelet (647) elérhető a hozzáadásra pénztári képernyő-elrendezéseihez.
 

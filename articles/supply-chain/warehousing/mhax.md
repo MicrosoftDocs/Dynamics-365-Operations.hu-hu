@@ -1,6 +1,6 @@
 ---
 title: Anyagkezelési berendezések interfésze (MHAX)
-description: Ez a témakör azt ismerteti, hogyan lehet beállítani az anyagkezelési berendezések interfészét (MHAX), hogy kapcsolódni tudjon a külső fizikai anyagkezelési (MH) rendszerekhez.
+description: Ez a témakör leírja, hogyan lehet beállítani az anyagkezelési berendezések felületét (MHAX), hogy csatlakozni tud a külső fizikai anyagkezelési (MH) rendszerekhez.
 author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4c04b8a9574bb6f34b56b4a7462882f1885f1178
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695591"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907087"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Anyagkezelési berendezések interfésze (MHAX)
 
@@ -88,7 +88,7 @@ Előfizetés létrehozásához használja az **Anyagkezelési berendezések inte
 
 Az egyes előfizetésekhez társítható lekérdezés. Ez a lekérdezés szűri a munkasorokat és a fejléceket, hogy tovább korlátozza azt a munkát, amely az előfizetést használja események generálására. Ha lekérdezést szeretne hozzáadni egy előfizetéshez, jelölje be a megfelelő előfizetéshez kapcsolódó **Lekérdezés futtatása** jelölőnégyzetet az **Előfizetések** lapon, majd válassza a **Lekérdezés szerkesztése** lehetőséget a műveleti ablaktáblán. Megjelenik a Supply Chain Management szokásos lekérdezéstervezője.
 
-Ezenkívül az előfizetés egy *előfizetési hozzárendelést* is tartalmaz, amely szükség esetén a munkafejléc vagy a munkasor mezőit a kimenő esemény 10 szabad adatmezőjéhez rendeli hozzá. Ha információkat szeretne visszaküldeni az MHAX szolgáltatásnak, rendszerint a munkasor rekordazonosítóját vagy a *munkasorpárok azonosítóját*. (A munkasorpár azonosítója egy olyan új tulajdonság, amely lehetővé teszi a rendszer számára, hogy egyetlen visszáruparancsot használjon a ki- és berakodási sorok feldolgozásához.) A többi mező a használati esettől függ. Néhány példa a témakör későbbi részében található.
+Ezenkívül az előfizetés egy *előfizetési hozzárendelést* is tartalmaz, amely szükség esetén a munkafejléc vagy a munkasor mezőit a kimenő esemény 10 szabad adatmezőjéhez rendeli hozzá. Ha információkat szeretne visszaküldeni az MHAX szolgáltatásnak, rendszerint a munkasor rekordazonosítóját vagy a *munkasorpárok azonosítóját*. (A munkasorpár azonosítója egy olyan új tulajdonság, amely lehetővé teszi a rendszer számára, hogy egyetlen visszáruparancsot használjon a ki- és berakodási sorok feldolgozásához.) A többi mező a használati esettől függ. A cikk későbbi példaként szolgál.
 
 Előfizetési hozzárendelés beállításához válassza ki a kívánt előfizetést az **Előfizetések** oldalon, majd válassza ki az **Előfizetés hozzárendelése** lehetőséget a műveleti ablaktáblán. A megjelenő **Előfizetés hozzárendelése** párbeszédpanelen szükség esetén minden egyes elérhető adatmezőhöz társíthat egy táblát és egy mezőt.
 
@@ -161,7 +161,7 @@ Ha meg van jelölve a munkasorpár azonosítója, a munkasorpár-azonosítóval 
 
 Az azonosítótáblával vezérelt helyekről származó kitárolási sorokhoz szükséges, hogy a **data03** megadja azt az azonosítótáblát, amelyből a kitárolás történik, tekintet nélkül arra, hogy a sorokat a munkasor rekordazonosítója vagy a munkasorpár azonosítója megjelöli-e. A **data04** mezőnek meg kell adnia a munkafejléc kitároláshoz szükséges cél azonosítótábláját.
 
-A betárolási sorok nem fogadnak el további információkat. A futtatás alapja csak az aktuális munkasor helye és a munka cél azonosítótáblája. Ha a betárolást másik helyre kell tenni, módosítsa a munkasor helyét a témakör későbbi, [Események felülbírálása](#override-events) szakaszának leírása szerint.
+A betárolási sorok nem fogadnak el további információkat. A futtatás alapja csak az aktuális munkasor helye és a munka cél azonosítótáblája. Ha a behelyhelyet másik helyre kell tenni, [módosítsa](#override-events) a munkasor helyét a cikk későbbi, Események felülbírálása szakaszának leírása szerint.
 
 Az egyéni munkasorok nem igényelnek (vagy támogatnak) további információkat a bejövő eseményben.
 
@@ -220,7 +220,7 @@ A bejövő várakozási sor végül megtelik már feldolgozott cikkekkel. Ezeket
 
 ## <a name="get-a-quick-overview-by-using-the-queue-manager"></a>Gyors áttekintés a sorkezelő használatával
 
-A bejövő és kimenő várakozási sorokhoz kapcsolódó valamennyi tevékenység gyors áttekintéséhez használja az **Anyagkezelési berendezések interfésze \> Munkaterületek \> Várakozásisor-kezelő** lehetőséget. A **Várakozásisor-kezelő** oldal olyan lap- és csempekészleteket tartalmaz, amelyek a várakozási sorok ellenőrzésére és felfedezésére használhatók. Hasznos hivatkozásokat is tartalmaz a témakörben említett legtöbb oldallal kapcsolatban.
+A bejövő és kimenő várakozási sorokhoz kapcsolódó valamennyi tevékenység gyors áttekintéséhez használja az **Anyagkezelési berendezések interfésze \> Munkaterületek \> Várakozásisor-kezelő** lehetőséget. A **Várakozásisor-kezelő** oldal olyan lap- és csempekészleteket tartalmaz, amelyek a várakozási sorok ellenőrzésére és felfedezésére használhatók. Hasznos hivatkozásokat is tartalmaz a témakörben említett legtöbb lapra.
 
 ## <a name="connect-to-the-mhax-service"></a>Csatlakozás a MHAX szolgáltatáshoz
 

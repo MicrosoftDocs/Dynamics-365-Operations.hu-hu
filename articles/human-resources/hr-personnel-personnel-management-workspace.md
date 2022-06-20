@@ -1,6 +1,6 @@
 ---
 title: Személyzetkezelési munkaterület
-description: Ez a témakör a Személyzetkezelési munkaterület fogalmi elemeit ismerteti.
+description: Ez a témakör a Személyzetkezelés munkaterület általános elemeit ismerteti.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8b7493aa2df65b42d0da8a451c40cccafbc1cda8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: fc424905bc9311662859b900636a68de2f7ee3cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689466"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888759"
 ---
 # <a name="personnel-management-workspace"></a>Személyzetkezelési munkaterület
 
@@ -29,7 +29,7 @@ ms.locfileid: "8689466"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A **Személyzetkezelési** munkaterületen nagy mennyiségű tartalom található. Tartalmazza a személyzeti mozgásokat, nyomon követi az alkalmazottak módosításait, a nyitott pozíciókat, a címváltozásokat, a lejáró rekordokat és az analitikát, valamint hivatkozásokat tartalmaz az adott információkra. Ez a témakör részletes információkat tartalmaz a munkaterületével minden egyes részéről.
+A **Személyzetkezelési** munkaterületen nagy mennyiségű tartalom található. Tartalmazza a személyzeti mozgásokat, nyomon követi az alkalmazottak módosításait, a nyitott pozíciókat, a címváltozásokat, a lejáró rekordokat és az analitikát, valamint hivatkozásokat tartalmaz az adott információkra. Ez a cikk részletes információt nyújt a munkaterület egyes részeiről.
 
 ## <a name="activity-tab"></a>Tevékenység lap
 

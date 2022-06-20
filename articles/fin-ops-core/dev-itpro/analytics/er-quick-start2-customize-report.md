@@ -1,6 +1,6 @@
 ---
 title: ER-formátum módosítása egyéni elektronikus dokumentum generálásához
-description: Ez a témakör azt mutatja be, hogyan lehet módosítani a Microsoft által biztosított elektronikus jelentéskészítési (ER) formátumot, hogy az egyedi elektronikus dokumentumot generáljon.
+description: Ez a cikk bemutatja, hogy hogyan lehet módosítani a Microsoft által biztosított elektronikus jelentésformátumokat, hogy az egyedi elektronikus dokumentumokat generáljon.
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14976aab474b6571c2a25907f04fd4d7ae053e74
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323817"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886791"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER-formátum módosítása egyéni elektronikus dokumentum generálásához
 
 [!include[banner](../includes/banner.md)]
 
-Az ebben a témakörben ismertetett eljárások azt mutatják be, hogy a Rendszergazda vagy az Elektronikus jelentéskészítési funkció tanácsadói szerepkörével rendelkező felhasználó hogyan hajthatja végre ezeket a feladatokat:
+Az ebben a cikkben olvasható eljárásokkal le lehet magyarázni, hogyan végezheti el a felhasználó a Rendszergazda vagy az Elektronikus jelentéskészítő funkcionális tanácsadó szerepkör egy felhasználóját:
 
 - Az [Elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-reporting.md) paramétereinek konfigurálása.
 - A Microsoft által biztosított és a [szállítói kifizetések](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) feldolgozása során a fizetési fájlok előállításához használt ER-konfigurációk importálása.
@@ -135,7 +135,7 @@ További információért az ER-konfigurációszolgáltatókkal kapcsolatban tek
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat1"></a>A szabvány ER-konfigurációk importálása
 
-Ha a szabvány ER-konfigurációkat a Microsoft Dynamics 365 Finance jelenlegi példányához szeretné hozzáadni, importálnia kell azokat az adott példányhoz konfigurált ER [adattárból](general-electronic-reporting.md#Repository).
+Ha a szabványos ER-konfigurációkat Microsoft Dynamics hozzá szeretne adni a jelenlegi 365 Pénzügy példányhoz, akkor importálnia kell őket az adott példányhoz beállított ER-tárházból [...](general-electronic-reporting.md#Repository).
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. A **Lokalizációs konfigurációk** oldalon, a **Konfigurációszolgáltatók** szakaszban válassza ki a **Microsoft** csempét, majd válassza ki az **Adattárak** lehetőséget a Microsoft szolgáltatóhoz tartozó adattárak listájának megtekintéséhez.

@@ -1,6 +1,6 @@
 ---
-title: Visszatérítés-kezelési ajánlatok
-description: Ez a témakör bemutatja, hogyan lehet Visszatérítés-kezelési ajánlatot létrehozni. Az ajánlatok a visszatérítések és jogdíjak kiszámítására szolgáló különböző módszerek és alapok ellenőrzésére használhatók. Ezek magukban foglalják a belefoglalások és kizárások szabályait.
+title: Visszatérítés-kezelési ügyletek
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni visszatérítéskezelési ügyleteket. Az ajánlatok a visszatérítések és jogdíjak kiszámítására szolgáló különböző módszerek és alapok ellenőrzésére használhatók. Ezek magukban foglalják a belefoglalások és kizárások szabályait.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 76cdbf21cfbc0db7b363d0fbf60a1ecd0046efc1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 28cfff69ab4e528c146ccbf6a34548a819c99522
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851594"
 ---
 # <a name="rebate-management-deals"></a>Visszatérítés-kezelési ajánlatok
 
 [!include [banner](../includes/banner.md)]
 
-A visszatérítés-kezelési ajánlatok a visszatérítések és jogdíjak kiszámítására szolgáló különböző módszerek és alapok ellenőrzésére használhatók. Ezek magukban foglalják a belefoglalások és kizárások szabályait. A visszatérítés-kezelési ajánlatoknak három típusa van: vevői visszatérítések, vevői jogdíjak és szállítói visszatérítések. Mindhárom típus hasonló beállításokat használ. Ez a témakör rámutat a különbségekre, ahol vannak ilyenek.
+A visszatérítés-kezelési ajánlatok a visszatérítések és jogdíjak kiszámítására szolgáló különböző módszerek és alapok ellenőrzésére használhatók. Ezek magukban foglalják a belefoglalások és kizárások szabályait. A visszatérítés-kezelési ajánlatoknak három típusa van: vevői visszatérítések, vevői jogdíjak és szállítói visszatérítések. Mindhárom típus hasonló beállításokat használ. Ez a cikk a meglévő különbségekre utal.
 
 ## <a name="create-a-deal"></a>Ajánlat létrehozása
 
@@ -118,7 +118,7 @@ A **Visszatérítés-kezelési részletek** gyorslap **Általános** lapján be�
 
 | Mező | Leírás |
 |---|---|
-| Számítási mód | Válassza ki azt a módszert, amely akkor használható, ha a kijelölt ajánlatsort más ajánlatsorokkal (*Lépcsőzetes*, *Összegző*, *Görgetett* vagy *Összeg*) kombinálja. Ennek a mezőnek az értéke drámaian befolyásolhatja a visszatérítési számítások eredményét. Az egyes módszerek és példák teljes leírását, amelyek megmutatják, hogy ez hogyan befolyásolja a visszatérítés kiszámítását, a témakör későbbi szakaszában az [Ajánlatsorok számítási módszerei](#calc-methods) című részben olvashat. |
+| Számítási mód | Válassza ki azt a módszert, amely akkor használható, ha a kijelölt ajánlatsort más ajánlatsorokkal (*Lépcsőzetes*, *Összegző*, *Görgetett* vagy *Összeg*) kombinálja. Ennek a mezőnek az értéke drámaian befolyásolhatja a visszatérítési számítások eredményét. Az egyes módszerek teljes [leírását](#calc-methods), valamint a visszatérítés kiszámításának módját bemutató példákat a cikk későbbi, Az engedménysorok számítási módja című részében olvashatja. |
 | Alap | Adja meg, hogy a visszatérítést mennyiség (azaz a vásárolt vagy eladott egységek teljes száma) vagy érték (azaz a vásárolt vagy eladott áruk teljes ára) alapján alkalmazza-e. |
 | Tranzakció típusa | <p>Válassza ki azt a pontot a folyamatban, ahol a számításnak be kell következnie:</p><ul><li>*Rendelés* – A számítás alapjaként a megrendelt mennyiséget vagy értéket használja.</li><li>*Kiszállított* – A számítás alapjaként a kiszállított mennyiséget vagy értéket használja.</li><li>*Számla* – A számítás alapjaként a számlázott mennyiséget vagy értéket használja.</li></ul> |
 | Egység | Ha az **Alap** mezőben a *Mennyiség* lehetőséget választotta, válassza ki azt az egységet, amelyben a mennyiséget meg kell adni. |

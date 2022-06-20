@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.20 szolgáltatásban (2021. augusztus)
-description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.20 új vagy módosított szolgáltatásait írja le.
+description: Ez a témakör olyan funkciókat ismertet, amelyek vagy Dynamics 365 Supply Chain Management újak, vagy módosulnak a 10.0.20-as dokumentumban.
 author: kamaybac
 ms.date: 05/28/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 3eadc447d8c0c443fa9d3eab220300e3eedf051d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647314"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888643"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.20 szolgáltatásban (2021. augusztus)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.20 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.886 a buildszáma, és a következő módon érhető el:
+Ez a cikk felsorolja azokat a funkciókat, amelyek vagy újak, vagy módosulnak a Microsoft Dynamics 365 Supply Chain Management 10.0.20-as verziójában. Ennek a verziónak 10.0.886 a buildszáma, és a következő módon érhető el:
 
 - **Kiadás előzetes verziója:** 2021. május
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2021. július
@@ -59,21 +59,21 @@ Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tarta
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 
-A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelentősen frissítve. A program nem feltétlenül kapcsolódik ehhez a kiadáshoz hozzáadott új funkcióhoz, amint az az előző részben szerepel, de segítséget jelenthet a meglévő szolgáltatások kiválasztásában.
+Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikkeket. A program nem feltétlenül kapcsolódik ehhez a kiadáshoz hozzáadott új funkcióhoz, amint az az előző részben szerepel, de segítséget jelenthet a meglévő szolgáltatások kiválasztásában.
 
-| Szolgáltatásterület | Új vagy frissített témakörök |
+| Szolgáltatásterület | Új vagy frissített cikkek |
 |---|---|
 | Tervezési változáskezelés | [A termék életciklusának állapotai és tranzakciói](../engineering-change-management/product-lifecycle-state-transactions.md) |
-| Készletgazdálkodás | [Készletláthatósági bővítmény](../inventory/inventory-visibility.md)<br><br>[Minőség- és szabálytalanságkezelés áttekintése](../inventory/quality-management-processes.md) (valamint az összes kapcsolódó minőségkezelési témakör) |
+| Készletgazdálkodás | [Készletláthatósági bővítmény](../inventory/inventory-visibility.md)<br><br>[Minőség- és szabálytalanságkezelés – áttekintés](../inventory/quality-management-processes.md) (valamint az összes kapcsolódó minőségkezelési cikk) |
 | Beszerzés és forrás | [Szállítói minősítés karbantartása](../../finance/public-sector/manage-vendor-certification.md) |
 | Gyártásvezérlés | [A termelési üzem végrehajtási felületének kialakítása](../production-control/production-floor-execution-styles.md) |
 | Raktárkezelés | [Lépésikonok és címek hozzárendelése a Warehouse Management mobilalkalmazáshoz](../warehousing/step-icons-titles.md)<br><br>[Kézi készletmozgás halasztott feldolgozása](../warehousing/deferred-processing-manual-inventory-movement.md) |
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások platformfrissítései
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.20 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.20 verziójához (2021. július)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
+A Microsoft Dynamics 365 Supply Chain Management 10.0.20 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.20-as verziójának Platformfrissítései (2021. július)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
@@ -87,12 +87,12 @@ Lásd: [Dynamics 365: 2021-as 1. frissítési hullám tervét](/dynamics365-rele
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 
-A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltatásai](removed-deprecated-features-scm-updates.md) témakör azokat a funkciókat írja le, amelyek el lettek távolítva a Supply Chain Management szolgáltatásól vagy eltávolításuk ütemezve van.
+A [cikk Eltávolított Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) vagy elavult funkciói olyan funkciókat írnak le, amelyek már el vannak távolítva, illetve amelyek már el vannak távolítva vagy elavultak az Ellátásilánc-kezeléshez.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
 
-Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
+Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) az értékcsökkenési értesítés 12 hónappal az eltávolítás előtt törlődik az Eltávolított vagy elavult funkciókból.
 
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 

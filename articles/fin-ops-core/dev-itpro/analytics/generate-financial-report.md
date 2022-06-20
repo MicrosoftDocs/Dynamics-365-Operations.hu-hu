@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi jelentések létrehozása
-description: Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban.
+description: Ez a cikk a pénzügyi jelentések létrehozásáról nyújt tájékoztatást.
 author: jinniew
 ms.date: 02/08/2022
 ms.topic: article
@@ -15,32 +15,32 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 00a860089265800ca1a0058f222d5e85c360501c
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 59ec6978d83f5c51309bc7d90d47366774cb2880
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119527"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898827"
 ---
 # <a name="generate-financial-reports"></a>Pénzügyi jelentések létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban.
+Ez a cikk a pénzügyi jelentések létrehozásáról nyújt tájékoztatást.
 
 Jelentés létrehozásához nyissa meg a jelentésdefiníciót, és válassza a Jelentés létrehozása lehetőséget az **eszköztáron**. Megnyílik **a Jelentési** sor állapota lap, amely a jelentés várólistán való helyét jelzi.
 
 A jelentés generálása során előfordulhat, **hogy a jelentési várólista következő állapotjelzői láthatók a jelentési várólista állapota** lapon.
 
-| Állapot          | Állami | Leírás|
+| Állapot          | Állapot | Leírás|
 |-----------------|--------|--------------------|
 | Várakozási sor        | Ideiglenes |A jelentésdefiníciót a rendszer ellenőrzi, mielőtt a jelentést a generáló várólistába kerül.                    |
 | Feldolgozási sorban          | Ideiglenes | A jelentés beírja a jelentés-generálási várólistát, és várakozás a feldolgozásra.                      |
 | Feldolgozás alatt      | Ideiglenes | Ez az állapot általában a **Várakozási** sor állapot után következik, és általában végleges állapotra áll át, **amikor** a feldolgozás befejeződött.       |
 | Utófeldolgozás | Ideiglenes | Ez az állapot a **Feldolgozás** állapot után következik, és jelzi, hogy a program össze gyűjti a jelentés adatait, de végrehajtottak műveleteket, például számítást és összesítést.            |
 | Érvénytelenítés      | Ideiglenes | A jelentés a felhasználó kérése szerint érvénytelenül törlődik. Ez az állapot a felhasználó által kért érvénytelenítésből áll, amely várólistára **kerül** vagy feldolgozás **állapotban** van. A rendszer Megszakítva **állapotba** próbálja tenni a jelentést, hacsak a rendszer nem túl távol van, és egy másik állapotban kell véglegesítenie azt. |
-| Megszakadt        | Végleges | A jelentés feldolgozása befejeződött, de egy felhasználó által kért leállítás miatt nem fejeződött be.            |
-| Kész       | Végleges | A jelentés használatra kész.                      |
+| Törölve        | Végleges | A jelentés feldolgozása befejeződött, de egy felhasználó által kért leállítás miatt nem fejeződött be.            |
+| Befejeződött       | Végleges | A jelentés használatra kész.                      |
 | Sikertelen          | Végleges | A jelentés feldolgozása befejeződött, de nem sikerült, és nem lehet használni. |
 
 Alapértelmezés szerint a létrehozott jelentés a Webes megjelenítőben nyílik meg. A jelentések generálása során a következő lehetőségek közül választhat:

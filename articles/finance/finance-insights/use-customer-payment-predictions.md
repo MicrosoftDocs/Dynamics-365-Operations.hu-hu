@@ -1,6 +1,6 @@
 ---
 title: Vevői fizetési előrejelzések használata
-description: Ez a témakör az előfeltételeket és a Pénzügyi betekintések próbaverziójának használatához szükséges átfogó lépéseket mutatja be.
+description: Ez a cikk végigvezeti az előfeltételeken és a pénzügyi információk próbaverziója szükséges széles lépéseken.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 330642624b55a6772ef149b70873021401a6bd83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901402"
 ---
 # <a name="use-customer-payment-predictions"></a>Vevői fizetési előrejelzések használata
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan kell használni a Vevői kifizetési előrejelzéseket. A funkció használata előtt győződjön meg arról, hogy végrehajtotta a beállítási lépéseket. További információkért lásd: [Vevői kifizetés előrejelzések engedélyezése](enable-cust-paymnt-prediction.md).
+Ez a cikk bemutatja a vevői kifizetések előrejelzésének használatát. A funkció használata előtt győződjön meg arról, hogy végrehajtotta a beállítási lépéseket. További információkért lásd: [Vevői kifizetés előrejelzések engedélyezése](enable-cust-paymnt-prediction.md).
 
 A vevői kifizetések előrejelzéseit a Vevői jóváírások és **beszedése** munkaterületen, valamint két új listaoldalon lehet megtekinteni: **·** **a tranzakciók fizetési előrejelzései és a vevői kifizetések előrejelzései**.
 

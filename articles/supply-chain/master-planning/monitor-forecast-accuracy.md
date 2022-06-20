@@ -1,6 +1,6 @@
 ---
-title: Előrejelzés pontosságának követése
-description: Ez a témakör leírja azon előrejelzés pontossági típusokat, melyeket a Dynamics 365 Supply Chain Management kiszámol, majd megmagyarázza, hogyan tekintheti meg a pontosság értékeit.
+title: Előrejelzés pontosságának megfigyelése
+description: Ez a cikk leírja azon előrejelzés pontossági típusokat, melyeket a Dynamics 365 Supply Chain Management kiszámol, majd megmagyarázza, hogyan tekintheti meg a pontosság értékeit.
 author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14d23ae800240ebb10ae085acf3ed981a22f1574
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebde5ab90b9345b3d6f28ea98650b3b29021c304
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470289"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893352"
 ---
-# <a name="monitor-forecast-accuracy"></a>Előrejelzés pontosságának követése
+# <a name="monitor-forecast-accuracy"></a>Előrejelzés pontosságának megfigyelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja azon előrejelzés pontossági típusokat, melyeket a Microsoft Dynamics 365 Supply Chain Management kiszámol, majd megmagyarázza, hogyan tekintheti meg a pontosság értékeit.
+Ez a témakör ismerteti Dynamics 365 Supply Chain Management az előrejelzési pontosság Microsoft által kiszámított típusait, és bemutatja a pontossági értékek megtekintésének a módszerét.
 
 A Supply Chain Management a következő típusú előrejelzési pontosságokat számítja ki:
 

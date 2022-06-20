@@ -1,6 +1,6 @@
 ---
 title: Előzményadatok importálása az igény-előrejelzésekhez
-description: Ahhoz, hogy pontos igény-előrejelzéseket kaphasson, cikkenként vagy cikkfelosztási kulcsonként kell rendelkeznie a korábbi igényadatokkal. Ez a témakör azt ismerteti, hogy miként használhatja az adatentitásokat a korábbi igényadatok bármely rendszerből való importálására annak érdekében, hogy Ön több igény-előrejelzési adattal rendelkezhessen.
+description: Ahhoz, hogy pontos igény-előrejelzéseket kaphasson, cikkenként vagy cikkfelosztási kulcsonként kell rendelkeznie a korábbi igényadatokkal. Ez a cikk bemutatja, hogyan lehet az entitásokat használni a korábbi igényadatok bármely rendszerből történő importálására, így hosszabb ideig tart az igény-előrejelzési adatok előzményei.
 author: t-benebo
 ms.date: 05/10/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c52d27d6e3aa8a20d6cc1dc81e4ade981c6a8091
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: e36ea72322c31f7e0ea3377b474cd148d78bdd3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470401"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877595"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Előzményadatok importálása az igény-előrejelzésekhez
 
@@ -37,7 +37,7 @@ Az **Adatkezelés** munkaterületen megtekintheti az entitás összes mezőjéne
 
 Az adatentitás használatához rendelkeznie kell egy olyan Microsoft Excel fájllal vagy CSV-fájllal, amely tartalmazza a korábbi igényadatokat. Az alábbi példa az adatok CSV-fájlból való importálását mutatja be.
 
-Az adatok importálásával és az adatok importálás utáni tisztításával kapcsolatos további tudnivalókat lásd az [Adatimportálási és -exportálási feladatok áttekintése](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) és a kapcsolódó témakörökben.
+Az adatok importálásával és az [adatok](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) importálás utáni tisztításával kapcsolatos további tudnivalókat lásd az Adatok importálása és exportálása – áttekintés és kapcsolódó cikkek.
 
 Lásd még: [Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md).
 

@@ -1,6 +1,6 @@
 ---
 title: A beépített alaptervezés és a tervezési optimalizálás közötti különbségek
-description: Ez a téma azokat a funkciókat sorolja fel, amelyeket a Tervezésoptimalizálás még nem támogat, és amelyek nem szerepelnek a Tervezésoptimalizálás illeszkedéselemzés oldalán.
+description: Ez a cikk felsorolja azokat a funkciókat, amelyek a tervezési optimalizálás még nem támogatottak, és amelyek nem szerepelnek a Tervezési optimalizálás elemzésének lapján.
 author: t-benebo
 ms.date: 07/30/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
-ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
+ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "8618260"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897574"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>A beépített alaptervezés és a tervezési optimalizálás közötti különbségek
 
 [!include [banner](../../includes/banner.md)]
 
-A Tervezésoptimalizálás eredményei eltérhetnek a beépített főtervező motor eredményeitől. A különbségeket a függőben lévő jellemzők okozhatják. Ez a téma azokat a funkciókat sorolja fel, amelyeket a Tervezésoptimalizálás még nem támogat, és amelyek nem szerepelnek a **[Tervezés Optimalizálás illeszkedéselemzés](planning-optimization-fit-analysis.md)** oldalon].
+A Tervezésoptimalizálás eredményei eltérhetnek a beépített főtervező motor eredményeitől. A különbségeket a függőben lévő jellemzők okozhatják. Ez a cikk azokat **[a funkciókat sorolja fel, amelyek még nem támogatják a tervezési optimalizálást, és amelyek nem szerepelnek a Tervezési optimalizálás elemzésének lapján](planning-optimization-fit-analysis.md)**.
 
 | Funkció | Jelenlegi viselkedés a tervezés optimalizálásában |
 |---|---|

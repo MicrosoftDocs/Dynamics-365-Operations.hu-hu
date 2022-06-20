@@ -1,8 +1,8 @@
 ---
 title: Tervelőzmények és tervezési naplók megtekintése
-description: Ez a témakör azt mutatja be, hogyan lehet megtekinteni a tervezés optimalizálása funkció által kezdeményezett tervezési feladatok előzményeit.
+description: Ez a cikk bemutatja a tervezési optimalizálási funkció által kiváltott tervezési feladatok előzményeinek megtekintését.
 author: t-benebo
-ms.date: 10/30/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9b4cba4dd94eb198e770d152d4f759a706065dee
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469757"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863940"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Tervelőzmények és tervezési naplók megtekintése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet megtekinteni a tervezés optimalizálása funkció által kezdeményezett tervezési feladatok előzményeit a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
+Ez a cikk bemutatja a Microsoft tervezési optimalizálási funkciója által kiváltott tervezési feladatok előzményeinek megtekintését Dynamics 365 Supply Chain Management.
 
 A terv előzményeinek megtekintéséhez nyissa meg a tervet az **Alaptervezés** \> **Beállítás** \> **Tervek** \> **Alaptervek** pontban, majd válassza ki az **Előzmények** elemet. Az előzményben felsorolva láthatók a kiválasztott tervekhez tartozó feladatok. A lista tartalmazza a befejezett és az aktív feladatokat.
 
-A Tervezési optimalizálási alaptervezés feladatelőzményei csak alaptervenként legfeljebb 60 rekordot tartnak fent. Amikor új alaptervezési számítást futtat, annak a tervnek a legkorábbi előzményrekordja törlődik.
+A rendszer legfeljebb 60 előzményrekordot tart meg alaptervenként, és törli a 30 napnál régebbi rekordokat. A rendszer minden alkalommal, amikor új alaptervezési számítást futtat, új előzményrekordot hoz létre, majd szükség szerint tisztítja a legrégebbi rekordokat.
 
 A feladatok kezdési időpontjának és állapotának megtekintésén kívül az adott feladatra vonatkozó naplót is megtekintheti. A napló további információkat és figyelmeztetéseket tartalmaz. Nem minden feladatnak van naplója. A feladathoz tartozó napló megtekintéséhez válassza ki a **Napló** elemet. A naplóbejegyzések csak a munka befejezése után 30 napig tárolódnak, azokat automatikusan törli a rendszer.
 

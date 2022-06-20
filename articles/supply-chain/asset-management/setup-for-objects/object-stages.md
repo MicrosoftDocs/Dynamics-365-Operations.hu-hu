@@ -1,6 +1,6 @@
 ---
 title: Eszköz életciklus-állapotai
-description: Ez a témakör az Eszközkezelés modul eszköz-életciklusállapotait és életciklus-modelljeit írja le.
+description: Ez a témakör bemutatja az eszközök életciklusának állam- és életciklusmodelljeit az Eszközkezelésben.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43b1ff9438437e6c1ff33bab9a7ba0361029cb6d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722463"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901060"
 ---
 # <a name="asset-lifecycle-states"></a>Eszköz életciklus-állapotai
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722463"
 
  
 
-Ez a témakör az Eszközkezelés modul eszköz-életciklusállapotait és életciklus-modelljeit írja le. Az eszköz életciklus-állapota határozza meg, hogy az eszköz aktív vagy inaktív-e. Például beállíthat olyan eszköz-életciklusállapotokat, mint **Létrehozott**, **Aktív** vagy **Megszakított**.
+Ez a témakör bemutatja az eszközök életciklusának állam- és életciklusmodelljeit az Eszközkezelésben. Az eszköz életciklus-állapota határozza meg, hogy az eszköz aktív vagy inaktív-e. Például beállíthat olyan eszköz-életciklusállapotokat, mint **Létrehozott**, **Aktív** vagy **Megszakított**.
 
 > [!NOTE]
 > - A kérések életciklus-állapotai kapcsolódnak az eszköz életciklus-állapotaihoz. Ezért ha egy kérés új kérési életciklus-állapotra módosul, akkor a kéréshez csatolt eszköz életciklus-állapota is egy újra módosul. Például ha egy kérés életciklus-állapota **Bejövő** lesz, akkor a csatolt eszköz életciklus-állapota arra az életciklus-állapotra módosul, amelyet az **Eszköz életciklus-állapotának modelljei** oldal **Eszköz életciklus-állapot** gyorslapjának **Bejövő életciklus-állapot** mezőjében ki van választva. 

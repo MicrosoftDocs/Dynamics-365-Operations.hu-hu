@@ -1,6 +1,6 @@
 ---
 title: A Sales-kapcsolatok közvetlen szinkronizálása a Supply Chain Management-kapcsolatokra vagy -ügyfelekre
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales Névjegy (Névjegyek) és Névjegy (Vevők) entitások közvetlenül a Dynamics 365 Supply Chain Management alkalmazásba történő szinkronizálására használatosak.
+description: Ez a témakör a Dynamics 365 Értékesítés és a Dynamics 365 ellátásilánc-kezelés kapcsolattartói (Kapcsolattartók) és kapcsolattartók (Vevők) entitások szinkronizálásához használt sablonokat és mögöttes feladatokat tárgyalja.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4ddb91c34816791d8eca80e4798eb46c1b496439
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857344"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>A Sales-kapcsolatok közvetlen szinkronizálása a Supply Chain Management-kapcsolatokra vagy -ügyfelekre
 
@@ -32,7 +32,7 @@ ms.locfileid: "8062515"
 > [!NOTE]
 > A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Microsoft Dataverse for Apps szolgáltatásban](/powerapps/administrator/data-integrator).
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales Névjegy (Névjegyek) és Névjegy (Vevők) táblát közvetlenül a Dynamics 365 Supply Chain Management alkalmazásba történő szinkronizálására használatosak.
+Ez a témakör a Kapcsolattartók (Kapcsolattartók) és a Kapcsolattartók (Vevők) tábláknak a Dynamics 365 értékesítésből közvetlenül a következőbe való közvetlen szinkronizálásához használt sablonokat és mögöttes feladatokat tárgyalja Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása adatfolyama
 
@@ -126,7 +126,7 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 ![Kapcsolattartó ügyfélhez sablonleképezés az adatintegrátorban.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Potenciális vevők készpénzre váltása](prospect-to-cash.md)
 

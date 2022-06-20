@@ -1,6 +1,6 @@
 ---
 title: Karbantartás miatti üzemkimaradás munkarendelések esetén
-description: Ez a témakör leírja, hogy a karbantartás miatti üzemkimaradás regisztrációkat a munkarendelésen kiválasztott eszközre vonatkozóan hogyan lehet létrehozni.
+description: Ez a témakör azt ismerteti, hogyan lehet karbantartási leállási regisztrációkat létrehozni a munkarendelésben kiválasztott eszközre.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 38c47a47fdf64c1d3601f6f3f7b84bf128823ec2ceb0c50e586822f6bdb97906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 7a76c0ecefbb8da762ac68cbdd7bb44f68a89894
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753372"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851856"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Karbantartás miatti üzemkimaradás munkarendelések esetén
 

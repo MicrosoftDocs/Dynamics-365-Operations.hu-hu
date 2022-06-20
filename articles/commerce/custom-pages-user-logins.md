@@ -1,6 +1,6 @@
 ---
 title: Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
-description: Ez a témakör azt mutatja be, hogyan lehet egyéni lapokat létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban, amelyek az Azure Active Directory (Azure AD) cég és ügyfél (B2C) közötti bérlők felhasználóinak személyre szabott bejelentkezésit kezelik.
+description: Ez a témakör azt ismerteti, Microsoft Dynamics 365 Commerce Azure Active Directory hogyan lehet olyan egyéni lapokat felépíteni, amelyek a () vállalattól a felhasználóhoz (Azure AD B2C) bérlők testreszabott bejelentkezését kezelik.
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f4a3c7c3410a903ae7bc0bac27e861a0dbfa19fdd65761628549c403c4e5db16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c610866b896ef7648d2596e17b51d1935a78dee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723263"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880340"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet egyéni lapokat létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban, amelyek az Azure Active Directory (Azure AD) cég és ügyfél (B2C) közötti bérlők felhasználóinak személyre szabott bejelentkezésit kezelik.
+Ez a témakör azt ismerteti, Microsoft Dynamics 365 Commerce Azure Active Directory hogyan lehet olyan egyéni lapokat felépíteni, amelyek a () vállalattól a felhasználóhoz (Azure AD B2C) bérlők testreszabott bejelentkezését kezelik.
 
 A Dynamics 365 Commerce alkalmazásban létrehozott egyéni lapok felhasználói bejelentkezési folyamatok kezelésére való beállításához be kell állítania azokat a Azure AD-szabályokat, amelyekre a Commerce-környezetben hivatkozni fognak. A „Regisztráció és bejelentkezés”, „Profilszerkesztés” és „Új jelszó létrehozása” Azure AD B2C irányelveket az Azure AD B2C alkalmazás használatával állíthatja be. Az Azure AD B2C bérlő és az irányelvnevek később hivatkozhatók a létesítési folyamat során, amelyet a Commerce-környezetben, Microsoft Dynamics Lifecycle Services (LCS) használatával végeznek.
 

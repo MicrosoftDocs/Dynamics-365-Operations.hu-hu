@@ -1,6 +1,6 @@
 ---
-title: Szállító integrált alapadatai
-description: Ez a cikk a szállítói adatok Finance and Operations alkalmazások és Dataverse közötti integrációját ismerteti.
+title: Integrált szállítói alapadat
+description: Ez a témakör leírja a szállítók adatintegrációját a Pénzügy és a Műveletek alkalmazások és a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7794f33aed7364b76a7d5ffd08a068342887e468
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 394bb19000076eace6377e07bb3a939c8345da8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063162"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905315"
 ---
 # <a name="integrated-vendor-master"></a>Integrált szállítói alapadat
 
@@ -37,7 +37,7 @@ Ha a szállítói adatokat továbbra is a **Partner/kapcsolattartó** táblában
 ![Bővített szállítói adatok áramlása.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
-> Ha használsz Power Apps portálokon az önkiszolgáló szállítók számára, a szállítói információk közvetlenül a Finance and Operations alkalmazásokba áramolhatnak.
+> Ha önkiszolgáló áruházhoz Power Apps portálokat használ, akkor a szállító adatai közvetlenül a Pénzügy és műveletek alkalmazásba is átesnek.
 
 ## <a name="templates"></a>Sablonok
 

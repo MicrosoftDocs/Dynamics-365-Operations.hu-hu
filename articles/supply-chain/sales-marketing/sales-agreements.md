@@ -1,6 +1,6 @@
 ---
 title: Értékesítési szerződések áttekintése
-description: A témakör az értékesítési szerződésekről nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében.
+description: Ez a cikk az értékesítési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében.
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3e84b8be597870deea3beaf1bdc4a98021b7f135
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694368"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903840"
 ---
 # <a name="sales-agreements-overview"></a>Értékesítési szerződések áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-A témakör az értékesítési szerződésekről nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében.
+Ez a cikk az értékesítési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében.
 
 Az értékesítési szerződés olyan szerződés, amely kötelez egy vevőt, hogy termékeket vásároljon egy adott mennyiségben, vagy adott összegben adott idő alatt, különleges árakért, engedményekért és egyéb különleges feltételekért cserébe, mint például fizetési vagy szállítási feltételek. Az értékesítési szerződésben foglalt árak és engedmények felülírják a többi létező kereskedelmi megállapodásban beállított árak és engedmények értékét.  
 

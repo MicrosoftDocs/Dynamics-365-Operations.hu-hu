@@ -1,6 +1,6 @@
 ---
 title: Integrált vevői alapadat
-description: Ez a témakör az ügyféladatok integrációját ismerteti a Finance and Operations és a Dataverse között.
+description: Ez a témakör a vevők adatainak a Pénzügy és Műveletek, illetve a Pénzügy és Műveletek közötti integrációját írja le Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 41e4b6c192b6125a144e4d5ef952ba0975821d44
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 042042bb19b32d3c96b4e0c8521a8b1d65e7ab22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063289"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890456"
 ---
 # <a name="integrated-customer-master"></a>Integrált vevői alapadat
 
@@ -32,7 +32,7 @@ A *Vevő* egy jól meghatározott fogalom az alkalmazásokban. Ezért az ügyfé
 
 Az ügyfeleknek általánosságban két típusa van: kereskedelmi/vállalati ügyfelek és a fogyasztók/végfelhasználók. E A két vevőtípust eltérően van tárolva és kezelve a Finance and Operations és Dataverse programokban.
 
-A Finance and Operations alkalmazásban mind a kereskedelmi/szervezeti ügyfelek, mind a fogyasztók/végfelhasználók egyetlen táblában vannak elsajátítva, amelynek neve **CustTable** (CustCustomerV3Entity), és az alapján vannak besorolva **típus** tulajdonság. (Ha **Típus** beállítása **Szervezet**, akkor a vevő kereskedelmi/vállalati vevő, ha a **Típus** beállítása **Személy**, akkor a vevő fogyasztó/végfelhasználó.) Az elsődleges kapcsolattartó adatait az SMMContactPersonEntity táblán keresztül kezeli a rendszer.
+A Pénzügy és a Műveletek szolgáltatásokban a kereskedelmi/szervezeti vevők és a **vevők/végfelhasználók alaptáblázata egy CustTable** (CustCustomerV3Entity) **nevű** táblában van, amely a Típus attribútum alapján van osztályozva. (Ha **Típus** beállítása **Szervezet**, akkor a vevő kereskedelmi/vállalati vevő, ha a **Típus** beállítása **Személy**, akkor a vevő fogyasztó/végfelhasználó.) Az elsődleges kapcsolattartó adatait az SMMContactPersonEntity táblán keresztül kezeli a rendszer.
 
 A Dataverse megoldásban a kereskedelmi/válalati ügyfelek az Ügyfél táblában vannak regisztrálva és akkor azonosítják ügyfelként, ha **RelationshipType** attribútum értéke **Ügyfél**. A Névjegy tábla képviseli a fogyasztókat/végfelhasználókat és a kapcsolattartót is. Az ügyfél/végfelhasználó és a kapcsolattartó személy közötti egyértelmű elkülönítés biztosítása érdekében **Kapcsolattartó** táblának egy **Eladható** logikai jelölője van. Ha az **Eladható** értéke **Igaz**, a kapcsolattartó fogyasztó/végfelhasználó, és a kapcsolattartóhoz létrehozhatók árajánlatok és megrendelések. Ha az **Eladható** értéke **Hamis**, a kapcsolattartó csak egy ügyfél elsődleges kapcsolattartó személye.
 

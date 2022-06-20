@@ -1,6 +1,6 @@
 ---
 title: Feladatkártya konfigurálása az eszközökhöz
-description: Ez a témakör a feladatkártya-eszköz konfigurálásához szükséges különböző beállításokat ismerteti.
+description: Ez a témakör a feladatkártya-eszköz konfigurálásával kapcsolatos különféle beállításokat ismerteti.
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103438"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860725"
 ---
 # <a name="configure-job-card-for-devices"></a>Feladatkártya konfigurálása az eszközökhöz
 
 [!include [banner](../includes/banner.md)]
 
-A feladatkártya eszközt az üzemszinten dolgozók használják a napi munkájuk regisztrálására, például, hogy mikor kezdtek el egy feladatot a feladatokkal kapcsolatos visszajelzésekhez, a közvetett tevékenységek regisztrálására és a távollétek jelentésére. Ezek a regisztrációk alapot biztosítanak a termelési rendelések előrehaladásának és a költségeinek a nyomon követésére és a dolgozók fizetése kiszámításának alapjául szolgálnak. Ez a témakör a feladatkártya-eszközök konfigurálásához szükséges különböző beállításokat ismerteti.
+A feladatkártya eszközt az üzemszinten dolgozók használják a napi munkájuk regisztrálására, például, hogy mikor kezdtek el egy feladatot a feladatokkal kapcsolatos visszajelzésekhez, a közvetett tevékenységek regisztrálására és a távollétek jelentésére. Ezek a regisztrációk alapot biztosítanak a termelési rendelések előrehaladásának és a költségeinek a nyomon követésére és a dolgozók fizetése kiszámításának alapjául szolgálnak. Ez a témakör a feladatkártya-eszközök konfigurálásával kapcsolatos különféle beállításokat ismerteti.
 
 ## <a name="enable-new-features-in-feature-management"></a>Új szolgáltatások engedélyezése a szolgáltatások kezelésében
 
-Az ebben a témakörben leírt néhány beállítást engedélyeznie kell a rendszerben, mielőtt azok Ön számára elérhetővé válnának. Használja a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lapot a következő funkciók igény szerinti engedélyezéséhez.
+A jelen leírásban leírt beállítások egy része csak akkor érhető el, ha a rendszerben engedélyeztetve vannak. Használja a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lapot a következő funkciók igény szerinti engedélyezéséhez.
 
 ### <a name="generate-license-plate"></a>Azonosítótábla előállítása
 

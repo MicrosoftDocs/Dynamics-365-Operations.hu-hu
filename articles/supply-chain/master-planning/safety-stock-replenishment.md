@@ -1,6 +1,6 @@
 ---
 title: Biztonsági készlet teljesítése cikkek számára
-description: Ez a témakör bemutatja a biztonsági készlet teljesítését és a biztonsági készletmennyiség beállítását cikkek számára.
+description: Ez a cikk a biztonsági készlet teljesítéséről és a biztonsági készlet cikkmennyiségének beállításáról tartalmaz tárgyalja.
 author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c539b804198ddc5d5dac52c958a851ee55116711
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 70461ad1de94c984cb41e6b1d46af9e310a928d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672066"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887399"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Biztonsági készlet teljesítése cikkek számára
 
@@ -88,7 +88,7 @@ Ha használatban vannak **Minimumkulcsok**, jelölje be a **Minimum időszakok**
 A következő forgatókönyv bemutatja, hogyan működik ez a paraméter, és milyen különbségek vannak az értékei között.
 
 > [!NOTE]
-> Minden ebben a témakörben található illusztráció esetében az x tengely a készletet, az y tengely a napokat, az oszlopok a készlet szintjét, és a nyilak a tranzakciókat, mint például az értékesítési rendeléssorok, beszerzési rendeléssorok, vagy tervezett rendelések, jelölik.
+> A cikk minden ábrázolása esetén az x-tengely a készletet, az y-tengelyt, a napokat, a sávokat a készletszintet, a tranzakciókat, például az értékesítésirendelés-sorokat, a beszerzésirendelés-sorokat vagy a tervezett rendeléseket ábrázolja.
 
 [![Gyakori forgatókönyv biztonsági készlet teljesítése számára.](media/Scenario1.png)](media/Scenario1.png)
 

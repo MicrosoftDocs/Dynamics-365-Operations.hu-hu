@@ -1,6 +1,6 @@
 ---
-title: Leiratkozás a személyre szabott ajánlatokról
-description: Ez a témakör azt mutatja be, hogyan teheti lehetővé az ügyfeleinek a személyre szabott ajánlatok fogadásáról való leiratkozást a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: Személyre szabott ajánlatok kikapcsolása
+description: Ez a témakör bemutatja, hogy hogyan használhatja a vevőket arra, hogy ne kapják meg a személyreszabott ajánlásokat Microsoft Dynamics 365 Commerce.
 author: bebeale
 ms.date: 09/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47de876a6f304ed5cb35bf075eadaafa4bf0fc7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772937"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896927"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Személyre szabott ajánlatok kikapcsolása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan teheti lehetővé az ügyfeleinek a személyre szabott ajánlatok fogadásáról való leiratkozást a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör bemutatja, hogy hogyan használhatja a vevőket arra, hogy ne kapják meg a személyreszabott ajánlásokat Microsoft Dynamics 365 Commerce.
 
 A fiók létrehozása során az új vásárlók számára automatikusan be van állítva a személyre szabott ajánlatok fogadására. A Dynamics 365 Commerce azonban többféle módszert kínál a kereskedőknek, amellyel felhasználóik számára lehetővé tehetik az ezen ajánlások fogadásáról való leiratkozást és a személyes adatok feldolgozásának korlátozását. A személyre szabott ajánlások fogadásáról leiratkozott hitelesített felhasználóknak esetében azonnal leáll a személyre szabott listák megelenítése. Ezenkívül a személyre szabáshoz gyűjtött összes személyes adat el lesz távolítva a személyre szabott ajánlások modelljeiből.
 

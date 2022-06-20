@@ -1,6 +1,6 @@
 ---
-title: E-mail csatorna konfigurálása
-description: Ez a témakör bemutatja, hogyan kell konfigurálni egy e-mail csatornát az elektronikus számlák fogadására.
+title: E-mail-csatorna konfigurálása
+description: Ez a cikk bemutatja, hogyan kell konfigurálni egy e-mail csatornát az elektronikus számlák fogadására.
 author: dkalyuzh
 ms.date: 02/09/2022
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6a5896a033212cf0f29f686eec0ab6fb3bc1d2a6
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 9227b032ffe896ad6a67962e5047fd797a883ae1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371884"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902385"
 ---
-# <a name="configure-an-email-channel"></a>E-mail csatorna konfigurálása
+# <a name="configure-an-email-channel"></a>E-mail-csatorna konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
@@ -55,7 +55,7 @@ Ha az Elektronikus számlázás funkció, amelyet létrehozott, az elektronikus 
     | Dátumszűrő          | Adja meg a feldolgozott üzenetek maximális korát napban megadásával. A mező kitöltése nem kötelező. Az alapértelmezett érték 30 nap. |
     | Feldolgozási mód      | <p>Az alábbi lehetőségek egyikének kiválasztásával adhatja meg, hogy az e-mailben található mellékletek együtt dolgozhatók-e fel, vagy külön-külön kell-e feldolgozni az egyes mellékleteket:</p><ul><li><b>Melléklet szerint</b> – az e-mailben található minden egyes melléklethez új elektronikus dokumentum jön létre. Ha például egy e-mail több olyan fájlt tartalmaz, amelyek e-számlázási adatokat tartalmaznak, akkor a rendszerben minden fájl új e-számlának számít.</li><li><b>E-mailben</b> – a rendszer egy mellékletet fog alapmelléknek tekinteni, és egy elektronikus számlát hoz létre a rendszerben. A többi mellékletet támogató fájlként is fel lehet használni.</li></ul> |
 
-9. Adja hozzá **a fájlszűrés** adatait a Mellékletek szűrőszakaszban. A rendszer csak a megadott szűrőnek megfelelő mellékleteket fogja feldolgozni. **\* Az .xml szűrő** például az .xml fájlnév kiterjesztésű mellékleteket szűri. A melléklet nevét a Dynamics 365 Finance vagy a Dynamics 365 Supply Chain Management beállítás során használja.
+9. Adja hozzá **a fájlszűrés** adatait a Mellékletek szűrőszakaszban. A rendszer csak a megadott szűrőnek megfelelő mellékleteket fogja feldolgozni. **\* Az .xml szűrő** például az .xml fájlnév kiterjesztésű mellékleteket szűri. A melléklet neve a Dynamics 365 Pénzügyben Dynamics 365 Supply Chain Management vagy a telepítés során használatos.
 
     - Ha az előző lépésben **e-mailben** **beállította** a Feldolgozási mód mezőt, itt több szűrőt is hozzáadhat. A név azonosítja az adott dokumentumot.
     - Ha a Feldolgozási mód **mezőt** **melléklet** szerint beállításra adja, akkor csak egy szűrőt adhat hozzá.

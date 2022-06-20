@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 0328342fbe322225a5ecb095d3b0165caa6d18d3
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b4dcae11e83748da3ec0368e1ddf47fedf5de23c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469645"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867898"
 ---
 # <a name="purchase-requisitions"></a>Beszerzési igénylések
 

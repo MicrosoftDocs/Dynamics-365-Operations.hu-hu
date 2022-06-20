@@ -1,6 +1,6 @@
 ---
 title: Elektronikus jelentéskészítés (ER) áttekintése
-description: Ez a témakör az Elektronikus jelentéskészítési eszközről nyújt áttekintést. Alapvető fogalmakat, támogatott eseteket és a megoldás részét képező formátumokat ír le.
+description: Ez a cikk áttekintést nyújt az Elektronikus jelentéskészítő eszközről. Alapvető fogalmakat, támogatott eseteket és a megoldás részét képező formátumokat ír le.
 author: NickSelin
 ms.date: 11/02/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 976a02f51e22c513b988e1ecfcb792d5f93a4b54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986147"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869257"
 ---
 # <a name="electronic-reporting-er-overview"></a>Elektronikus jelentéskészítés (ER) áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az Elektronikus jelentéskészítés eszközről nyújt áttekintést. Tájékoztatást nyújt az alapfogalmakról, az Elektronikus jelentéskészítés által támogatott esetekről, valamint az Elektronikus jelentéskészítés megoldás részeként megtervezett és kibocsátott formátumok listájáról.
+Ez a cikk az Elektronikus jelentéskészítő eszközről nyújt áttekintést. Tájékoztatást nyújt az alapfogalmakról, az Elektronikus jelentéskészítés által támogatott esetekről, valamint az Elektronikus jelentéskészítés megoldás részeként megtervezett és kibocsátott formátumok listájáról.
 
 Az ER egy konfigurálható eszköz, amely a szabályozáson áteső elektronikus jelentések és kifizetések létrehozásában és karbantartásában segít. A következő három fogalomon alapul:
 
@@ -39,7 +39,7 @@ Az ER egy konfigurálható eszköz, amely a szabályozáson áteső elektronikus
     - A vizuális szerkesztők segítségével lehet létrehozni az ER-konfiguráció összes összetevőjét.
     - Az adatátalakításhoz használt nyelv hasonlít a Microsoft Excel.
 
-- Egy konfiguráció több Dynamics 365 Finance kiadáshoz:
+- Egy konfiguráció a Dynamics 365 Pénzügy több kiadásának:
 
     - Egy tartományspecifikus adatmodell kezelése, amely üzleti feltételekben van meghatározva.
     - Alkalmazás-kiadás részleteinek elengedése a kiadásfüggő adatmodell-leképezésekben.
@@ -60,7 +60,7 @@ Az ER segítségével a különböző országok és régiók jogi követelménye
 
 Az ER-motor a fejlesztők helyett az üzleti felhasználóknak készült. Mivel nem kódokat, hanem formátumokat konfigurál, az elektronikus dokumentumok formátumának létrehozása és beállítása gyorsabb és könnyebb.
 
-Az ER jelenleg támogatja a TEXT, XML, JSON, Microsoft Word PDF, Microsoft Excel és OPENXML munkalapformátumokat.
+Az ER jelenleg támogatja a TEXT, XML, JSON, PDF, Microsoft Word és Microsoft Excel OPENXML munkalapformátumokat.
 
 ## <a name="capabilities"></a>Képességek
 
@@ -143,7 +143,7 @@ Egy ER tárház ER konfigurációkat tárol. A következő típusú ER tárháza
 
 Egy **LCS megosztott könyvtár** tár a megosztott eszköztárbó elérést biztosít a konfigurációk listájához a közös eszköz könyvtárban a Lifecycle Services (LCS) szolgáltatásban. Az ilyen típusú ER tárházat csak a Microsoft-szolgáltatóhoz lehet regisztrálni. Az LCS közös eszköz tárból importálhatja a legújabb verzióit az ER konfigurációknak az aktuális példányba.
 
-Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi példányból egy adott **LCS-projekt** tárházba. Az LCS-projekttárház konfigurációit is importálhatja a Pénzügy és műveletek alkalmazások aktuális **példányába**.
+Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi példányból egy adott **LCS-projekt** tárházba. Az LCS-projekttárház **konfigurációit** is importálhatja a Pénzügy és műveletek alkalmazások aktuális példányába.
 
 A **Fájlrendszer** adattár hozzáférést nyújt azokhoz a konfigurációk listájához, amelyek XML-fájlként a berendezés helyi fájlrendszerének meghatározott mappájában vannak, ahol az AOS szolgáltatást tárolják. A szükséges mappát az adattár regisztrációs fázisában választják ki. Importálhat továbbá konfigurációkat egy **Fájlrendszer** adattárból a jelenlegi példányba. 
 

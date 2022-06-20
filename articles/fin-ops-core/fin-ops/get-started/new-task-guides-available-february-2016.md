@@ -1,6 +1,6 @@
 ---
 title: Új feladatútmutatók (2016. február)
-description: Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.
+description: Ez a cikk felsorolja a Microsoft BPM-könyvtáraknak 2016. február 1-jén kiadott feladat-útmutatókat.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1947ec2ef0ef061323f904c739d49a5a2594b9d0e730f19e4d4da322148e473
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb74ce407bd98dbd650804ed337e48986d58911d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725100"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861734"
 ---
 # <a name="new-task-guides-february-2016"></a>Új feladatútmutatók (2016. február)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza. A közzétett könyvtárak tartalmazzák a Microsoft Dynamics AX APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
+Ez a cikk felsorolja a Microsoft BPM-könyvtáraknak 2016. február 1-jén kiadott feladat-útmutatókat. A közzétett könyvtárak tartalmazzák a Microsoft Dynamics AX APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat-útmutatók (február 2016) a Microsoft Dynamics AX APQC Egyesített könyvtárában
 

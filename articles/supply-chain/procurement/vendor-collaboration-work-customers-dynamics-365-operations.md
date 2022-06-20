@@ -1,6 +1,6 @@
 ---
 title: Szállítói együttműködés a vevőkkel
-description: Ez a témakör leírja, hogyan használhatja a szállítói együttműködést a beszerzési rendelések használatára és a bizományosi készlet felügyelésére.
+description: Ez a cikk azt ismerteti, hogyan lehet a szállítói együttműködési funkciókat használni a beszerzési rendelésekkel és a bizományosi készlet figyelelmével.
 author: GalynaFedorova
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5690630d4dde947798c925af66c73122c2efad3d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4e5748f2368376ee03f280f1487d1de65250d3a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859169"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Szállítói együttműködés a vevőkkel
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Microsoft Dynamics 365 Supply Chain Management rendszerben. A szállítók a következő munkaterületekről tudnak különböző üzleti folyamatokat végrehajtani:
+Ez a témakör azt mutatja be, hogyan lehet szállítói együttműködési funkciókat használni a Microsoft vevőivel való munka során Dynamics 365 Supply Chain Management. A szállítók a következő munkaterületekről tudnak különböző üzleti folyamatokat végrehajtani:
 
 - **Beszerzési rendelés visszaigazolása** – Figyelje meg a beszerzési rendeléseket (POk), és válaszoljon rájuk.
 - **Szállítói ajánlattétel** – tekintse meg az ajánlatkéréseket (RFQk), és válaszoljon rájuk ajánlatok megadásával.
 - **Szállító adatai** – Tekintse meg és frissítse a szállítók alapadatait.
-- **Számlázás** – Használjon számlákat. Ez a témakör nem foglalkozik a **Számlázás** munkaterülettel. További tudnivalókért erről a munkaterületről lásd: [Szállítói együttműködési számlázás munkaterület](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Számlázás** – Használjon számlákat. Ez a cikk nem fedi le **a számlázási munkaterületet**. További tudnivalókért erről a munkaterületről lásd: [Szállítói együttműködési számlázás munkaterület](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 A szállítók is megfigyelhetik a bizományosi készlettel kapcsolatos adatokat.
 
@@ -47,9 +47,9 @@ A **Beszerzési rendelések visszaigazolási** munkaterülete három listát tar
 
 A következő oldalakat használhatja a beszerzési rendelések kezeléséhez:
 
-- **Beszerzési rendelések ellenőrzésre** – Ez az oldal ugyanazokat az adatokat tartalmazza, mint a **Beszerzési rendelések véleményezésre** lista a munkaterületben. A leírást lásd korábban a témakörben.
+- **Beszerzési rendelések ellenőrzésre** – Ez az oldal ugyanazokat az adatokat tartalmazza, mint a **Beszerzési rendelések véleményezésre** lista a munkaterületben. Lásd a cikk korábbi leírását.
 - **Beszerzési rendelés szállítójának visszaigazolási előzményei** – Ez az oldal a szállítóhoz küldött összes beszerzési rendelést, illetve azok mindegyik verzióját tartalmazza. Ezen felül az összes a szállító által küldött választ is tartalmazza.
-- **Visszaigazolt beszerzési rendelések megnyitása** – Ez az oldal ugyanazokat az adatokat tartalmazza, mint a **Visszaigazolt beszerzési rendelések megnyitása** lista a munkaterületben. A leírást lásd korábban a témakörben.
+- **Visszaigazolt beszerzési rendelések megnyitása** – Ez az oldal ugyanazokat az adatokat tartalmazza, mint a **Visszaigazolt beszerzési rendelések megnyitása** lista a munkaterületben. Lásd a cikk korábbi leírását.
 - **Az összes visszaigazolt beszerzési rendelés** – Ez az oldal az összes visszaigazolt beszerzési rendelést tartalmazza. Az ezen a lapon látható beszerzési rendelések olyan beszerzési rendeléseket is tartalmaznak, amelyeknél a termékek vagy a szolgáltatások már megérkeztek. Ezen lista segítségével követheti nyomon, hogy mely beszerzési rendelésekre küldhet számlákat.
 
 ### <a name="responding-to-pos"></a>Válaszolás beszerzési rendelésekre

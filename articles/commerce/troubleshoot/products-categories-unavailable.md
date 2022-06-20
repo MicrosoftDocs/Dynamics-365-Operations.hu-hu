@@ -1,6 +1,6 @@
 ---
 title: A termékek és a kategóriák nem jelennek meg a Commerce webhelyszerkesztőben az új webhely hozzárendelése után
-description: Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amely segítséget nyújt abban az esetben, ha a termékek és kategóriák nem jelennek meg a Commerce webhelykészítőben az új webhely hozzárendelése után.
+description: Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amelyek segítséget nyújtanak abban az esetben, ha a termékek és kategóriák nem jelennek meg a Commerce webhely-készítőben az új webhely leképezését követően.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5b37359ad8ae4329a3a03b5d03890fb3a0e4a15d17e48b7bc6667c0e4d42acd7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f0a4ef4a089ca5f476232ad521ba253ccc80763
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777452"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881239"
 ---
 # <a name="products-and-categories-dont-appear-in-commerce-site-builder-after-a-new-site-is-mapped"></a>A termékek és a kategóriák nem jelennek meg a Commerce webhelyszerkesztőben az új webhely hozzárendelése után
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amely segítséget nyújt abban az esetben, ha a termékek és kategóriák nem jelennek meg a Commerce webhelykészítőben az új webhely hozzárendelése után.
+Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amelyek segítséget nyújtanak abban az esetben, ha a termékek és kategóriák nem jelennek meg a Commerce webhely-készítőben az új webhely leképezését követően.
 
 ## <a name="description"></a>Leírás
 

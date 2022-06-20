@@ -1,6 +1,6 @@
 ---
 title: Munkavégzési helyszín életciklus-állapotai
-description: Ez a cikk azt ismerteti, hogyan állítható be a munkavégzési helyszínek állapota és életciklusmodellje az Eszközkezelésben.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani a funkcionális hely államokat és életciklus-modelleket az Eszközkezelésben.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
-ms.translationtype: HT
+ms.openlocfilehash: ae56c2b734339343b134be95abe0ce40b70c8a0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360970"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934729"
 ---
 # <a name="functional-location-lifecycle-states"></a>Munkavégzési helyszín életciklus-állapotai
 
@@ -28,7 +28,7 @@ ms.locfileid: "6360970"
 
  
 
-Ez a cikk azt ismerteti, hogyan állítható be a munkavégzési helyszínek életciklus-állapota és életciklusmodellje az Eszközkezelésben. A munkavégzési helyszínek életciklus-állapota határozza meg a munkavégzési helyszín esetleges állapotait (például létrehozott, aktív, befejezett). Az életciklus-állapottól függetlenül minden munkavégzési helyszín megtekinthető az **Összes munkavégzési helyszín** listaoldalon. Ha módosítani szeretné egy munkavégzési helyszín állapotát, jelölje ki az **Összes munkavégzési helyszín** listaoldalon, és válassza a **Munkavégzési helyszín állapotának frissítése** lehetőséget.
+Ez a témakör azt ismerteti, hogyan lehet beállítani a funkcionális hely életciklus-államokat és életciklus-modelleket az Eszközkezelésben. A munkavégzési helyszínek életciklus-állapota határozza meg a munkavégzési helyszín esetleges állapotait (például létrehozott, aktív, befejezett). Az életciklus-állapottól függetlenül minden munkavégzési helyszín megtekinthető az **Összes munkavégzési helyszín** listaoldalon. Ha módosítani szeretné egy munkavégzési helyszín állapotát, jelölje ki az **Összes munkavégzési helyszín** listaoldalon, és válassza a **Munkavégzési helyszín állapotának frissítése** lehetőséget.
 
 ## <a name="set-up-functional-location-lifecycle-states"></a>Munkavégzési helyszín életciklus-állapotainak beállítása
 
@@ -39,6 +39,7 @@ Ez a cikk azt ismerteti, hogyan állítható be a munkavégzési helyszínek él
 5. Az **Eszközök létrehozása** váltógombnál válassza az „Igen” lehetőséget, ha azt szeretné, hogy automatikusan létre lehessen hozni egy eszközt a munkavégzési helyszín nevével, és telepíteni lehessen a munkavégzési helyszínen ebben az állapotban.  
 >[!NOTE]
 >Ez a váltógomb össze van kapcsolva az **Eszköztípus** mezővel (amely az **Általános** gyorslapon található a **Munkavégzési helyszínek típusai** űrlapon – **Eszközök kezelése** > **Beállítás** > **Munkavégzési helyszín** > **Munkavégzési helyszínek típusai**).
+
 6. A **Hely átnevezése** váltógombnál válassza az „Igen” lehetőséget, ha azt szeretné, hogy lehessen módosítani a munkavégzési helyszín nevét ebben az állapotban.
 7. Az **Új alhelyek** váltógombnál válassza az „Igen” lehetőséget, ha azt szeretné, hogy lehessen új alhelyeket felvenni a munkavégzési helyszínhez ebben az állapotban.
 8. Az **Eszközök telepítése** váltógombnál válassza az „Igen” lehetőséget, ha azt szeretné, hogy lehessen eszközöket telepíteni a munkavégzési helyszínen ebben az állapotban.

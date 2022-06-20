@@ -1,6 +1,6 @@
 ---
-title: Kedvencek ikon hozzáadása
-description: Ez a témakör azt mutatja be, hogyan lehet egy kedvencek ikont hozzáadni a webhelyhez.
+title: Weblapikon hozzáadása
+description: Ez a cikk bemutatja, hogyan lehet fa egy webhelyhez adva.
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2047a0c30c9e723c717657475a111181299aaa8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964732"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855795"
 ---
-# <a name="add-a-favicon"></a>Kedvencek ikon hozzáadása
+# <a name="add-a-favicon"></a>Weblapikon hozzáadása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet egy kedvencek ikont hozzáadni a webhelyhez.
+Ez a cikk bemutatja, hogyan lehet fa egy webhelyhez adva.
 
 A kedvencek ikon egy kis grafikai fájl, amely a webböngésző lapján, a címsorban, a böngészési előzményekben, a könyvjelzők vagy a Kedvencek között jelenik meg sok más hely mellett. Javasoljuk, hogy adjon kedvencek ikont webhelyéhez, mert ezzel a saját márkáját képviseli és megerősíti, valamint segít megkülönböztetni a webhelyet a vevők által látogatott egyéb helyektől.
 
-Bár több, különböző méretű és fájltípusú kedvencek ikont is webhelxéhez adhat, ebben a témakörben az egyetlen kedvencek ikon hozzáadását mutatjuk be. Ugyanakkor ugyanaz a folyamat és a hely több kedvencek ikon hozzáadására is használható.
+Bár a webhelyhez több különböző méretű és fájltípusú favovoon is hozzáadhat, ez a cikk bemutatja, hogyan lehet egyetlen faterjesztést hozzáadni. Ugyanakkor ugyanaz a folyamat és a hely több kedvencek ikon hozzáadására is használható.
 
 ## <a name="upload-a-favicon-to-your-sites-asset-collection"></a>Kedvencek ikon feltöltése a webhely eszközgyűjteménybe
 

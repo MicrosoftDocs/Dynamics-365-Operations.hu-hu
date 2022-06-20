@@ -1,6 +1,6 @@
 ---
 title: A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
-description: Ez a témakör ismerteti, hogyan hasonlíthatja össze a generált elektronikus jelentések (ER) eredményeit a kiindulási jelentés értékekkel.
+description: Ez a cikk bemutatja, hogy hogyan hasonlíthatja össze a létrehozott elektronikus jelentési (ER) jelentések eredményeit a kiinduló jelentés értékeivel.
 author: NickSelin
 ms.date: 06/17/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9fabdef96b02747c84a76bf42997633842f185e9
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 168060f6dee7420a496e06cc3a85f5b10239c2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605205"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847372"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
 

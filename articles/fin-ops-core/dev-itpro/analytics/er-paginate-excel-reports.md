@@ -1,6 +1,6 @@
 ---
 title: ER-formátum megtervezése a létrehozott dokumentumok Excel programban való oldalszámozásához
-description: Ez a témakör azt mutatja be, hogyan lehet Elektronikus jelentéskészítési (ER) formátumotz tervezni, amely oldalszámoz egy Microsoft Excel használatával létrehozott dokumentumot.
+description: Ez a cikk bemutatja, hogy hogyan lehet olyan elektronikus jelentési (ER) formátumot tervezni, amely a létrehozott dokumentumot a következőben lapozódja fel:Microsoft Excel
 author: NickSelin
 ms.date: 09/14/2021
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: ce29225c4bce24adc2abefc3d3d6f20774852af4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909278"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>ER-formátum megtervezése a létrehozott dokumentumok Excel programban való oldalszámozásához
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja, hogyan konfigurálhat egy Rendszergazda vagy Elektronikus jelentéskészítési szakterületi konzulens egy [Elektronikus jelentéskészítési](general-electronic-reporting.md) formátumot, hogy kimenő dokumentumokat hozzon létre a Microsoft Excelben, és kezelje a dokumentumok oldalszámozását.
+Ez a cikk bemutatja, hogy hogyan konfigurálhat egy elektronikus jelentésformátumot (ER) [a](general-electronic-reporting.md) rendszergazdák és az elektronikus jelentéskészítő funkcionális tanácsadó szerepkörű felhasználók a kimenő dokumentumok generálása és a Microsoft Excel dokumentum-lapozás kezelése érdekében.
 
 Ebben a példában módosítja a Microsoft által megadott ER-formátumot, amely az ellenőrző jelentés nyomtatására használható az Intrastat nyilatkozat [létrehozásakor](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md). Ezzel a jelentéssel megfigyelheti a jelentett Intrastat-tranzakciókat. A módosításokkal kezelni lehet a létrehozott ellenőrzési jelentések oldalszámozását.
 
-A jelen témakörben szereplő eljárások az **DEMF** vállalatnál végezhetők el. Nincs szükség kódolásra. Mielőtt belekezdene, a következő fájlokat is le kell töltenie és mentenie kell.
+A cikk eljárásait a **DEMF vállalatnál lehet** végrehajtani. Nincs szükség kódolásra. Mielőtt belekezdene, a következő fájlokat is le kell töltenie és mentenie kell.
 
 | Leírás       | Fájlnév |
 |-------------------|-----------| 
@@ -43,7 +43,7 @@ Kövesse az [ER-keretrendszer konfigurálása](er-quick-start2-customize-report.
 
 ## <a name="import-the-standard-er-format-configuration"></a>A szabvány ER-formátumkonfiguráció importálása
 
-A [A szabvány ER-formátumkonfiguráció importálása](er-quick-start2-customize-report.md#ImportERSolution1) rész lépéseit követve adja hozzá a szabványos ER-konfigurációkat az aktuális Dynamics 365 Finance-példányhoz. Az **Intrastat jelentés** formátumkonfigurációjának **1.9**-es verziójának importálása. A rendszer automatikusan importálja a tárházból az alap **Intrastat-modell** konfigurációjának 1. alapverzióját.
+A Szabványos ER [formátumkonfiguráció](er-quick-start2-customize-report.md#ImportERSolution1) importálása lépéseit követve adja hozzá a normál ER-konfigurációkat a Dynamics 365 Pénzügy aktuális példányához. Az **Intrastat jelentés** formátumkonfigurációjának **1.9**-es verziójának importálása. A rendszer automatikusan importálja a tárházból az alap **Intrastat-modell** konfigurációjának 1. alapverzióját.
 
 ## <a name="customize-the-standard-er-format"></a>A szabvány ER-formátum testreszabása
 
@@ -165,7 +165,7 @@ Ezután az egyéni ER-formátum használatával hozza létre az Intrastat nyilat
 
 ### <a name="repeat-the-replacement-of-the-current-excel-template-in-the-custom-er-format"></a>Az aktuális Excel-sablon cseréjének megismétlése az egyéni ER formátumban
 
-1. Hajtsa végre a témakör [Az aktuális Excel-sablon cseréje az egyéni ER formátumban](#replace-template) szakaszának lépéseit. A 7. lépésben azonban válassza ki az **ERIntrastatReportDemo2.xlsx** fájlt.
+1. Hajtsa végre a jelen cikk [egyéni ER](#replace-template) formátumszakaszának Aktuális Excel-sablon cseréje című lépéseit. A 7. lépésben azonban válassza ki az **ERIntrastatReportDemo2.xlsx** fájlt.
 2. A **Formátumtervező** oldalon bontsa ki az **Intrastat** elemet.
 3. A szerkeszthető ER-formátumhoz hozzáadott [Tartomány](er-fillable-excel.md#range-component) formátum-összetevők neve, amelyek hozzá lettek adva a szerkeszthető ER-formátumban, hogy szinkronizálva legyen a struktúra az alkalmazott Excel-sablon struktúrájával.
 
@@ -406,7 +406,7 @@ A láthatóság módosítása érdekében frissítse a **Jelentés lap fejléce*
 
 ## <a name="generate-an-intrastat-declaration-control-report-updated"></a>Az EU Intrastat nyilatkozat ellenőrzőjelentésének létrehozása (frissített)
 
-1. Győződjön meg róla, hogy 24 tranzakciója van az **Intrastat** lapon. Ismételje meg a témakör [Az Intrastat nyilatkozat ellenőrzőjelentésének létrehozása](#generate-intrastat-control-report) szakaszában található lépéseket az ellenőrző jelentés létrehozásához és ellenőrzéséhez.
+1. Győződjön meg róla, hogy 24 tranzakciója van az **Intrastat** lapon. Ismételje meg az [Intrastat](#generate-intrastat-control-report) nyilatkozat ellenőrzési jelentésének létrehozása szakaszban található lépéseket az ellenőrző jelentés létrehozásához és ellenőrzéséhez.
 
     Minden tranzakció az első oldalon látható. A lap összesítései és számlálói egyenlők a jelentés végösszegeivel és számlálóival. Az oldalfejléctartomány az első oldalon el van rejtve, mert a jelentésfejlécben már vannak oszlopcímek. Az oldal fejléce és lábléce a második oldalon van elrejtve, mert az az oldal nem tartalmaz tranzakciókat.
 

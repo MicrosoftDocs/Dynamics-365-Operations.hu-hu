@@ -1,6 +1,6 @@
 ---
 title: Eszköz DBJ-k
-description: Ez a témakör az Eszközkezelésben használt eszközök darabjegyzékét mutatja be (DBJ-j)
+description: Ez a témakör az Eszközkezelés eszközjegyzékeket (AOS) ismerteti.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882779"
 ---
 # <a name="asset-boms"></a>Eszköz DBJ-k
 
@@ -28,7 +28,7 @@ ms.locfileid: "6751985"
 
  
 
-Ez a témakör az Eszközkezelésben használt eszközök darabjegyzékét mutatja be (DBJ-j) Az **Eszköz DBJ** oldalon látható az eszköz által a teljes élettartama alatt használt összes cikk listája (pótalkatrészek és más cikkek egyaránt). Új eszköz létrehozásakor javasoljuk az eszköz DBJ létrehozását a beállítási eljárás részeként. Így nyomon követheti az eszköz cikkelőzményeit a létrehozás dátumától.
+Ez a témakör az Eszközkezelés eszközjegyzékeket (AOS) ismerteti. Az **Eszköz DBJ** oldalon látható az eszköz által a teljes élettartama alatt használt összes cikk listája (pótalkatrészek és más cikkek egyaránt). Új eszköz létrehozásakor javasoljuk az eszköz DBJ létrehozását a beállítási eljárás részeként. Így nyomon követheti az eszköz cikkelőzményeit a létrehozás dátumától.
 
 Miután befejezett egy karbantartási feladatot, és a cikkfelhasználást rögzítik a munkarendelésen, nyomon követheti a pótalkatrészek és más cikkek felhasználását, amelyeket az eszközhöz használtak. Ez a funkció lehetővé teszi, hogy teljes cikkfelhasználási rekordot tartson nyilván az összes eszköz számára. A rekorddal például megfigyelheti, hogy egy adott pótalkatrészt gyakran cserélnek-e, vagy nyomon követheti a pótalkatrészeket és más cikkeket, amelyeket jelenleg az eszközön használnak.
 

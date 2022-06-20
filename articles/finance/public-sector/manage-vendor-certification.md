@@ -1,6 +1,6 @@
 ---
 title: Szállítói minősítés karbantartása
-description: Ez a témakör azokat a lépéseket ismerteti, amelyek segítségével a szállítók a szállítói együttműködési munkaterületen karbantarthatják a tanúsítványukat.
+description: Ez a cikk azokat a lépéseket ismerteti, amelyek segítségével a szállítók a szállítói együttműködési munkaterületen karbantartják a tanúsítványukat.
 author: v-kiarnd
 ms.date: 04/27/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b1b2cdd4389afd8997b60fe8e7a9b6851cbde199
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 37990292748c363f44d306bda0263dd117808eb1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735695"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891437"
 ---
 # <a name="maintain-vendor-certification"></a>Szállítói minősítés karbantartása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azokat a lépéseket ismerteti, amelyek segítségével a szállítói a **Szállítói együttműködési munkaterületen** karbantarthatják a tanúsítványukat. A minősítési példák között lehet Női üzleti vállalkozás (WBE) vagy Energia- és környezettervezésben vezető (LEED) vállalat. A szállítóknak meg kell adniuk a minősítési információkat a **Szállítói adatok** munkaterületen. Ezután a szállítók kiválasztják a **További részleteket**, majd a **Minősítéseket**.
+Ez a cikk azokat a lépéseket ismerteti, amelyek segítségével a **szállítók a szállítói együttműködési munkaterületen karbantartsák a tanúsítványukat**. A minősítési példák között lehet Női üzleti vállalkozás (WBE) vagy Energia- és környezettervezésben vezető (LEED) vállalat. A szállítóknak meg kell adniuk a minősítési információkat a **Szállítói adatok** munkaterületen. Ezután a szállítók kiválasztják a **További részleteket**, majd a **Minősítéseket**.
 
 ## <a name="turn-on-the-vendor-certification-feature"></a>Kapcsolja be a szállítóminősítési funkciót
 

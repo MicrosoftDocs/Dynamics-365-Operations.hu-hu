@@ -1,6 +1,6 @@
 ---
 title: Telepítési irányelvek a pénzügyi regisztrációs szolgáltatás integrációs mintához Ausztriához (legacy)
-description: Ez a témakör a Microsoft Dynamics 365 Commerce Retail szoftverfejlesztői csomagból (SDK) származó, Ausztriához tartozó pénzügyi integrációs minta telepítésével kapcsolatban tartalmaz irányelveket.
+description: Ez a cikk a Microsoft Dynamics 365 Commerce Retail szoftverfejlesztői csomagból (SDK) származó, Ausztriához tartozó pénzügyi integrációs minta telepítésével kapcsolatos irányelveket tartalmaz.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 7cb0e7b665add397b12e1a841b6a2e9565528d6d
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 94fe6817358ae18126a30794fd52fe5eb01a5265
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613936"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885437"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>Telepítési irányelvek a pénzügyi regisztrációs szolgáltatás integrációs mintához Ausztriához (legacy)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce Lifecycle Services (LCS) fejlesztői virtuális gépére (VM) telepített Retail szoftverfejlesztői csomagból (SDK) Microsoft Dynamics származó, Ausztriához tartozó pénzügyi regisztrációs szolgáltatás integrációs minta telepítésével kapcsolatban tartalmaz tájékoztatást. A pénzügyi integrációs mintával kapcsolatos további [tudnivalókat lásd az Ausztriában található Pénzügyi nyilvántartási szolgáltatás integrációs minta](emea-aut-fi-sample.md). 
+Ez a témakör Microsoft Dynamics 365 Commerce a Lifecycle Services (LCS) fejlesztői virtuális gépére (VM) telepített Retail szoftverfejlesztői csomagból (SDK) Microsoft Dynamics származó, Ausztriához tartozó pénzügyi regisztrációs szolgáltatás integrációs minta telepítésével kapcsolatban tartalmaz irányelveket. A pénzügyi integrációs mintával kapcsolatos további [tudnivalókat lásd az Ausztriában található Pénzügyi nyilvántartási szolgáltatás integrációs minta](emea-aut-fi-sample.md). 
 
-Az Ausztriához tartozó pénzügyi integrációs minta a Retail SDK része. Az SDK [telepítésével és használatával kapcsolatos tudnivalókat lásd a Retail szoftverfejlesztői csomag (SDK) architektúráját](../dev-itpro/retail-sdk/retail-sdk-overview.md). A pénzügyi integrációs minta a Commerce runtime (CRT), hardverállomás és pénztár (POS) bővítményeiből áll. A minta futtatásához módosítania CRT és fel kell építenie a, hardverállomást és POS-projekteket. Javasoljuk, hogy egy nem módosított Retail SDK készlet használatával tegye meg az ebben a témakörben leírt változtatásokat. Javasoljuk továbbá, hogy forrásvezérlő rendszert használjon, Azure DevOps például olyanokat, ahol a fájlok még nem módosultak.
+Az Ausztriához tartozó pénzügyi integrációs minta a Retail SDK része. Az SDK [telepítésével és használatával kapcsolatos tudnivalókat lásd a Retail szoftverfejlesztői csomag (SDK) architektúráját](../dev-itpro/retail-sdk/retail-sdk-overview.md). A pénzügyi integrációs minta a Commerce runtime (CRT), hardverállomás és pénztár (POS) bővítményeiből áll. A minta futtatásához módosítania CRT és fel kell építenie a, hardverállomást és POS-projekteket. Javasoljuk, hogy egy nem módosított Retail SDK készlet használhatja az ebben a cikkben leírt módosításokat. Javasoljuk továbbá, hogy forrásvezérlő rendszert használjon, Azure DevOps például olyanokat, ahol a fájlok még nem módosultak.
 
 ## <a name="development-environment"></a>Fejlesztői környezet
 
@@ -30,20 +30,20 @@ A következő lépések szerint állíthatja be a fejlesztői környezetet, hogy
 
 ### <a name="enable-commerce-runtime-extensions"></a>Commerce futásidejű bővítmények engedélyezése
 
-A CRT kiterjesztési összetevők a mintában vannak CRT. A következő eljárások **befejezéséhez nyissa meg a CommerceRuntimeSamples.sln megoldást** a **RetailSdkSampleExtensionsCommerceRuntime\\\\ alatt**.
+A CRT kiterjesztési összetevők a mintában vannak CRT. A következő eljárások befejezéséhez nyissa **meg a CommerceRuntimeSamples.sln** megoldást a **RetailSdk\\ SampleExtensions\\ CommerceRuntime alatt**.
 
 #### <a name="documentproviderefrsample-component"></a>DocumentProvider.EFRSample összetevő
 
 1. A Runtime.Extensions.DocumentProvider.EFRSample **projekt** megkeresása és összeállítása.
-2. **A Runtime.Extensions.DocumentProvider.EFRSamplebinDebug\\\\** **mappában keresse meg a Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll** szerelvényfájlt.
+2. A Runtime.Extensions.DocumentProvider.EFRSample **bin\\ hibakeresési\\** mappában keresse meg a Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll **szerelvényfájlt**.
 3. A szerelvényfájl másolása a bővítmények CRT mappájába:
 
-    - **Commerce Scale Unit:** A **\\ fájl másolása az Internet Information Services (IIS) Commerce Scale Unit webhelyének binext\\** mappájába.
+    - **Commerce Scale Unit:** A fájl másolása **\\\\ az Internet Information Services (IIS) Commerce Scale Unit webhelyének bin ext** mappájába.
     - **Helyi CRT a Modern POS terminálon:** Másolja **\\ a fájlt a helyi ügyfélügynök helye alatti ext** CRT mappába.
 
 4. A következő bővítmény-konfigurációs fájl megkeresve CRT:
 
-    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **és az IIS Commerce Scale Unit webhely binext\\** mappájában található.
+    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **\\ és az IIS Commerce Scale Unit webhely bin ext** mappájában található.
     - **Helyi CRT a Modern POS terminálon:** **A fájl neve CommerceRuntime.MPOSOffline.Ext.config**, CRT és a helyi ügyfélügynök helye alatt található.
 
 5. A változás CRT regisztrálása a kiterjesztés konfigurációs fájljában.
@@ -55,15 +55,15 @@ A CRT kiterjesztési összetevők a mintában vannak CRT. A következő eljárá
 #### <a name="documentproviderdatamodelefr-component"></a>DocumentProvider.DataModelEFR összetevő
 
 1. Keresse meg **és építse fel a Runtime.Extensions.DocumentProvider.DataModelEFR** projektet.
-2. **A Runtime.Extensions.DocumentProvider.DataModelEFRbinDebug\\\\** **mappában keresse meg a Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** szerelvényfájlt.
+2. A Runtime.Extensions.DocumentProvider.DataModelEFR **bin\\ hibakeresési\\** mappában keresse meg a Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll **szerelvényfájlt**.
 3. A szerelvényfájl másolása a bővítmények CRT mappájába:
 
-    - **Commerce Scale Unit:** A fájl másolása **\\ az IIS Commerce Scale Unit webhely binext\\** mappájába.
+    - **Commerce Scale Unit:** A fájl másolása **\\\\ az IIS Commerce Scale Unit webhely bin ext** mappájába.
     - **Helyi CRT a Modern POS terminálon:** Másolja **\\ a fájlt a helyi ügyfélügynök helye alatti ext** CRT mappába.
 
 4. A következő bővítmény-konfigurációs fájl megkeresve CRT:
 
-    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **és az IIS Commerce Scale Unit webhely binext\\** mappájában található.
+    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **\\ és az IIS Commerce Scale Unit webhely bin ext** mappájában található.
     - **Helyi CRT a Modern POS terminálon:** **A fájl neve CommerceRuntime.MPOSOffline.Ext.config**, CRT és a helyi ügyfélügynök helye alatt található.
 
 5. A változás CRT regisztrálása a kiterjesztés konfigurációs fájljában.
@@ -76,7 +76,7 @@ A CRT kiterjesztési összetevők a mintában vannak CRT. A következő eljárá
 
 1. A következő bővítmény-konfigurációs fájl megkeresve CRT:
 
-    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **és az IIS Commerce Scale Unit webhely binext\\** mappájában található.
+    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **\\ és az IIS Commerce Scale Unit webhely bin ext** mappájában található.
     - **Helyi CRT a Modern POS terminálon:** **A fájl neve CommerceRuntime.MPOSOffline.Ext.config**, CRT és a helyi ügyfélügynök helye alatt található.
 
 2. A változás CRT regisztrálása a kiterjesztés konfigurációs fájljában.
@@ -93,12 +93,12 @@ A pénzügyi csatlakoztató-bővítményeket a hardverállomáson [vagy a PÉNZT
 
 #### <a name="enable-hardware-station-extensions"></a>Hardverállomás-bővítmények engedélyezése
 
-A Hardverállomás bővítmény összetevői a hardverállomás mintáiban szerepelnek. A következő eljárások **befejezéséhez nyissa meg a HardwareStationSamples.sln** megoldást a **RetailSdkSampleExtensionsHardwareStation\\\\ alatt**.
+A Hardverállomás bővítmény összetevői a hardverállomás mintáiban szerepelnek. A következő eljárások befejezéséhez **nyissa meg a HardwareStationSamples.sln** megoldást a **RetailSdk\\ SampleExtensions\\ HardwareStation eszközben**.
 
 ##### <a name="efrsample-component"></a>EFRSample összetevő
 
 1. Keresse meg **és építse ki a HardwareStation.Extension.EFRSample** projektet.
-2. **Az Extension.EFRSamplebinDebug\\\\ mappában** keresse meg a következő szerelvényfájlokat:
+2. **Az Extension.EFRSample\\ bin\\ hibakeresési** mappában keresse meg a következő szerelvényfájlokat:
 
     - Contoso.Commerce.HardwareStation.EFRSample.dll
     - Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll
@@ -121,7 +121,7 @@ A Hardverállomás bővítmény összetevői a hardverállomás mintáiban szere
 
 #### <a name="enable-pos-extensions"></a>POS-bővítmények engedélyezése
 
-A POS-bővítményminta a **megoldástárház srcFiscalIntegrationPosFiscalConnectorSample\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található.
+A POS-bővítmény mintavétele a **\\ megoldástárház FiscalIntegration\\ PosFiscalConnectorSample**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található.
 
 A következő lépésekkel használhatja a POS-bővítményt az örökölt SDK készletben.
 
@@ -145,7 +145,7 @@ A következő lépésekkel használhatja a POS-bővítményt az örökölt SDK k
 
 ### <a name="enable-modern-pos-extension-components"></a>A Modern POS bővítmény összetevőinek engedélyezése
 
-1. Nyissa meg **a ModernPOS.sln megoldást** **a RetailSdkPOS\\** alatt, és ellenőrizze, hogy hiba nélkül fordítható-e. A Futtatás paranccsal arról is győződjön meg, hogy futtatható a Modern POS Visual Studio **·**.
+1. Nyissa meg **a ModernPOS.sln megoldást** **a RetailSdk\\ POS** alatt, és ellenőrizze, hogy hiba nélkül fordítható-e. A Futtatás paranccsal arról is győződjön meg, hogy futtatható a Modern POS Visual Studio **·**.
 
     > [!NOTE]
     > A Modern POS nem szabható testre. Engedélyeznie kell a Felhasználói fiókok vezérlése (UAC) alkalmazást, és szükség szerint el kell távolítania a Modern POS korábban telepített példányait.
@@ -170,7 +170,7 @@ A következő lépésekkel használhatja a POS-bővítményt az örökölt SDK k
 
 ### <a name="enable-cloud-pos-extension-components"></a>A Felhő POS bővítmény összetevőinek engedélyezése
 
-1. Nyissa meg **a CloudPOS.sln megoldást** **a RetailSdkPOS\\** alatt, és ellenőrizze, hogy hiba nélkül fordítható-e.
+1. Nyissa meg **a CloudPOS.sln megoldást** **a RetailSdk\\ POS** alatt, és ellenőrizze, hogy hiba nélkül fordítható-e.
 2. A bővítmények a következő soroknak a **extensions.json** fájlba való hozzáadásával tölthetők be.
 
     ``` json
@@ -193,7 +193,7 @@ A következő lépésekkel használhatja a POS-bővítményt az örökölt SDK k
 
 Az előző eljárás lehetővé teszi a pénzügyi nyilvántartási szolgáltatás integrációs mintája által tartalmazott bővítményeket. Ezenkívül ezeket a lépéseket kell követnie ahhoz, hogy commerce összetevőket tartalmazó telepíthető csomagokat hozzon létre, és ezeket a csomagokat éles környezetben alkalmazza.
 
-1. Tegye a következő módosításokat **a RetailSdkAssets\\ mappa csomagkonfigurációs fájljaiban**:
+1. Tegye a következő módosításokat **a RetailSdk\\ Assets mappa csomagkonfigurációs fájljaiban**:
 
     - **A Commerceruntime.ext.config** **és a CommerceRuntime.MPOSOffline.Ext.config** **konfigurációs fájlokban adja hozzá a következő sorokat az összeállítási szakaszhoz**.
 
@@ -298,11 +298,11 @@ A POS pénzügyi csatlakoztató bővítményének célja, hogy kommunikáljon a 
 
 #### <a name="fiscal-connector-factory"></a>Pénzügyi csatlakoztató gyára
 
-A pénzügyi csatlakoztató gyári leképezi a csatlakoztató **nevét a pénzügyi csatlakoztató megvalósításra, és a Pos.ExtensionConnectorsFiscalConnectorFactory.ts\\\\ fájlban** található. A csatlakoztató nevének meg kell egyeznie a Commerce Headquarters által megadott pénzügyi csatlakoztató nevével.
+A pénzügyi csatlakoztató gyári leképezi a csatlakoztató **nevét a pénzügyi csatlakoztató megvalósításra, és a Pos.Extension\\ Connectors\\ FiscalConnectorFactory.ts fájlban** található. A csatlakoztató nevének meg kell egyeznie a Commerce Headquarters által megadott pénzügyi csatlakoztató nevével.
 
 #### <a name="efr-fiscal-connector"></a>EFR pénzügyi csatlakoztató
 
-Az EFR pénzügyi csatlakoztató a **Pos.ExtensionConnectorsEfrEfrFiscalConnector.ts\\\\\\ fájlban** található. Az IFiscalConnector **felületet** valósítja meg, amely a következő kéréseket támogatja:
+Az EFR pénzügyi csatlakoztató a **Pos.Extension\\ Connectors\\ EfrFiscalConnector.ts\\ fájlban** található. Az IFiscalConnector **felületet** valósítja meg, amely a következő kéréseket támogatja:
 
 - **FiscalRegisterSubmitDocumentClientRequest** – ez a kérés dokumentumokat küld a pénzügyi regisztrációs szolgáltatásnak, és visszaküldi a választ.
 - **FiscalRegisterIsReadyClientRequest** – ez a kérés a pénzügyi nyilvántartási szolgáltatás állapotellenőrzésére használható.
@@ -310,7 +310,7 @@ Az EFR pénzügyi csatlakoztató a **Pos.ExtensionConnectorsEfrEfrFiscalConnecto
 
 #### <a name="configuration"></a>Konfiguráció
 
-A konfigurációs fájl a **megoldástárház srcFiscalIntegrationEfrConfigurationsConnectors\\\\\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található. A fájl célja, hogy engedélyezze a Commerce Headquarters alkalmazásból konfigurálható pénzügyi csatlakoztató beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállításokat lehet hozzáadni:
+A konfigurációs fájl a **\\ megoldástárház FiscalIntegration\\ Efr\\ Configurations\\ Connectors**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található. A fájl célja, hogy engedélyezze a Commerce Headquarters alkalmazásból konfigurálható pénzügyi csatlakoztató beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállításokat lehet hozzáadni:
 
 - **Végpont címe** – a pénzügyi regisztrációs szolgáltatás URL-címe.
 - **Időtúllépés** – az az idő ezredmásodpercben, ahányszor a csatlakoztató választ vár a pénzügyi regisztrációs szolgáltatástól.

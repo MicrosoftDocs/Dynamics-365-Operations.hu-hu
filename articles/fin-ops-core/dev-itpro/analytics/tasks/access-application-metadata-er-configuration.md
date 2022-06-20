@@ -1,6 +1,6 @@
 ---
 title: Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával
-description: Az ebben a témakörben leírtak azt mutatják be, hogy a Regulatory Configuration Service felhasználói hogyan tervezhetik meg egy új elektronikus jelentési modell hozzárendelését a metaadatok használatával.
+description: A cikk azt írja le, hogyan tervezhet meg egy szabályozó konfigurációs szolgáltatás felhasználója új elektronikus jelentési modellleképezést a metaadatok segítségével.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ad175f81edcf6b21927d85927c42a3398a0286b4a766e06c88a61952384f75e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76e31e08cafb06cb2e8508c29f6e03d2559ebeb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754342"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883654"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával
 
 [!include [banner](../../includes/banner.md)]
 
-A következő lépések leírják, hogy a Regulatory Configuration Service (RCS) Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tervezhetnek új Elektronikus jelentés (ER) modell hozzárendelést az alkalmazás metaadatainak használatával. Az alkalmazás metaadatainak egy olyan ER-metaadat konfigurációval érhető el, amely minta metaadatkészletet tartalmaz, amelyek a külföldi kereskedelmi tranzakciók eléréséhez használható. Az alábbi lépések végrehajtásához az RCS-ben először hajtsa végre a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](er-configuration-provider-mark-it-active-2016-11.md) eljárás cikk lépéseit. Ezután végezze el a következő témakör lépéseit: [RCS-ben felhasználandó alkalmazás-metaadatok előkészítése](prepare-application-metadata-rcs.md).
+A következő lépések leírják, hogy a Regulatory Configuration Service (RCS) Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tervezhetnek új Elektronikus jelentés (ER) modell hozzárendelést az alkalmazás metaadatainak használatával. Az alkalmazás metaadatainak egy olyan ER-metaadat konfigurációval érhető el, amely minta metaadatkészletet tartalmaz, amelyek a külföldi kereskedelmi tranzakciók eléréséhez használható. Ezeket a lépéseket az RCS szolgáltatásban csak akkor lehet végrehajtani, ha előbb a cikk lépéseit végre kell hozni, előbb konfigurációs szolgáltatókat kell létrehozni, [és](er-configuration-provider-mark-it-active-2016-11.md) aktív eljárásként megjelölni őket. Ezután az RCS szolgáltatásban használt [alkalmazás metaadatainak előkészítése](prepare-application-metadata-rcs.md).
 
 ## <a name="prerequisites"></a>Előfeltételek
 1. Ugorjon **Az összes munkaterület** > **Elektronikus jelentés** pontra. 

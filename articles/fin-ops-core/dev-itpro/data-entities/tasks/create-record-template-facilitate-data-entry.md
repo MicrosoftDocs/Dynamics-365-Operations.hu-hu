@@ -1,6 +1,6 @@
 ---
 title: Adatbevitel megkönnyítése érdekében rekordsablon létrehozása
-description: Ez a témakör bemutatja, hogyan hozható létre rekordsablon azért, hogy a gyakran használt mezőértékeket ne kelljen minden új rekordhoz explicit módon megadni.
+description: Ez a cikk bemutatja, hogyan lehet rekordsablont létrehozni, hogy a gyakran használt mezőértékeket ne kell explicit módon megadni minden egyes új rekordhoz.
 author: margoc
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72ffb6458ca3b10415d75fc835677ed2fa03e4197978ab648f2b244248f45058
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43bbc790d0e3145ffc9d7cb9dda7b8b3f7048e23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880196"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Adatbevitel megkönnyítése érdekében rekordsablon létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan hozható létre rekordsablon azért, hogy a gyakran használt mezőértékeket ne kelljen minden új rekordhoz explicit módon megadni. Ezzel az eljárással létrehoz egy új rekordot az új laptopokhoz, amelyeket fel kell venni a tárgyi eszközök közé. Ez az eljárás az USMF bemutatócéget használja.
+Ez a cikk bemutatja, hogyan lehet rekordsablont létrehozni, hogy a gyakran használt mezőértékeket ne kell explicit módon megadni minden egyes új rekordhoz. Ezzel az eljárással létrehoz egy új rekordot az új laptopokhoz, amelyeket fel kell venni a tárgyi eszközök közé. Ez az eljárás az USMF bemutatócéget használja.
 
 1. A navigációs ablaktáblán ugorjon a **Modulok > Tárgyi eszközök > Tárgyi eszközök > Tárgyi eszközök** elemre.
 2. Válassza az **Új** lehetőséget.

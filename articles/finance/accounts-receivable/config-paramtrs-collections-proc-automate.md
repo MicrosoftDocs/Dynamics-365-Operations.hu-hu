@@ -1,6 +1,6 @@
 ---
 title: Beszedési folyamat automatizálási paramétereinek konfigurálása
-description: Ez a témakör leírja az automatizált beszedési folyamatokat befolyásoló paramétereket, és útmutatást ad a beállításukhoz, hogy az automatizált folyamat megfeleljen a szándékokainak és a várakozásainak.
+description: Ez a cikk az automatizált beszedési folyamatokat befolyásoló paramétereket írja le, és útmutatást ad a beállításukhoz, hogy az automatizált folyamat tükrözze a szándékokat és az várakozásokat.
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e7a7e048a371fc90456368206b91c29c4b1264d5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c5d0f801c47ef2d98d8ba410dc593bd7640839c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734396"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900042"
 ---
 # <a name="configure-parameters-for-collection-process-automation"></a>Beszedési folyamat automatizálási paramétereinek konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja az automatizált beszedési folyamatokat befolyásoló paramétereket, és útmutatást ad a beállításukhoz, hogy az automatizált folyamat megfeleljen a szándékokainak és a várakozásainak. A beszedési folyamatok automatizálásával kapcsolatos további tudnivalókat lásd: [Beszedési folyamat automatizálása](collections-process-automate.md).
+Ez a cikk az automatizált beszedési folyamatokat befolyásoló paramétereket írja le, és útmutatást ad a beállításukhoz, hogy az automatizált folyamat tükrözze a szándékokat és az várakozásokat. A beszedési folyamatok automatizálásával kapcsolatos további tudnivalókat lásd: [Beszedési folyamat automatizálása](collections-process-automate.md).
 
 ## <a name="general"></a>Általános
 Adjon meg egy számot az **Ügyfelek százaléka kötegelt feladatonként** helyen a kötegelt feladatok automatizálási folyamatonkénti számának meghatározásához. A **Fizetési felszólítások automatikus közzététele** beállítása legyen **Igen**, így a fizetési felszólítás művelettípusa az automatizálás során feladja a levelet. A **Tevékenységek automatikus létrehozása** elemet állítsa **Igen** beállításra a nem tevékenység művelettípusok létrehozásához és lezárásához, hogy megtekinthesse az összes, a fiókon végzett automatizálási lépést. Adja meg, hogy hány napig tárolja a rendszer a beszedési előzményeket a **A beszedési folyamatok automatizálása megtartása ennyi napig** helyen. Amikor egy számla eléri a beszedési folyamat utolsó lépését, a rendszer nem fogja használni a jövőbeli folyamatautomatizálási művelettípusok létrehozására, ha a **Számla kizárása az utolsó folyamatlépés aktiválása után** beállítása **Igen**. A következő legrégebbi számla meghatározza a következő folyamatautomatizálási lépést, hogy a beszedési folyamat automatizálási művelete folytatódjon. 

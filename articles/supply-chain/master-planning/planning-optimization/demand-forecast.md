@@ -1,6 +1,6 @@
 ---
 title: Alaptervezés az igény-előrejelzésekkel
-description: Ez a témakör azt mutatja be, hogyan lehet szerepeltetni a Tervezési optimalizálással történő alaptervezés során az igény-előrejelzéseket.
+description: Ez a cikk bemutatja, hogy hogyan lehet az igény-előrejelzéseket szerepeletni az alaptervezés és a tervezési optimalizálás során.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ec5150186e190e67913409b9cac107ff2bd55001
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468441"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878990"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Alaptervezés az igény-előrejelzésekkel
 
@@ -42,7 +42,7 @@ Ha egy alaptervet úgy kíván konfigurálni, hogy az tartalmazza az igény-elő
 
     - **Előrejelzési modell** – Válassza ki az alkalmazni kívánt előrejelzési modellt. Ezt a modellt akkor kell figyelembe venni, amikor az aktuális alaptervhez létrejön egy ellátási javaslat.
     - **Igény-előrejelzéssel együtt** – Állítsa ezt a beállítást *Igen* értékre az igény-előrejelzés aktuális alaptervben való szerepeltetéséhez. Ha *Nem* értékre állítja be, az igény-előrejelzési tranzakciók nem fognak szerepelni az alaptervben.
-    - **Előrejelzési követelmények csökkentéséhez használt módszer** – Válassza ki az előrejelzési követelmények csökkentéséhez használandó módszert. További tudnivalókért lásd a [Előrejelzés csökkentési kulcsok](#reduction-keys) című részt, a témakör későbbi részében.
+    - **Előrejelzési követelmények csökkentéséhez használt módszer** – Válassza ki az előrejelzési követelmények csökkentéséhez használandó módszert. További információt a cikk későbbi [,](#reduction-keys) az Előrejelzés csökkentési kulcsok című részében talál.
 
 1. Az **Időkorlát napokban** gyorslapon a következő mezőkkel adhatja meg azt az időszakot, amelyen az igény-előrejelzés szerepel:
 
@@ -61,7 +61,7 @@ Ha egy fedezeti csoportot úgy kíván konfigurálni, hogy az tartalmazza az ig�
 1. Az **Egyéb** gyorslapon állítsa be a következő mezőket:
 
     - **Előrejelzési terv időkorlátja** – Adja meg a napok számát (a mai dátumtól számítva), amelyre az igény-előrejelzést alkalmazni kell. Ez az érték felülbírálható az alaptervben szereplő **Előrejelzési terv** beállítással, az előző szakaszban leírtak szerint.
-    - **Csökkentési kulcs** – Válassza ki az alkalmazni kívánt csökkentési kulcsot. A további tudnivalókat lásd: [Előrejelzési és csökkentési kulcs létrehozása és beállítása](#create-reduction-key), majd a [Csökkentési kulcs használata](#use-reduction-key) szakaszokban a témakör későbbi részében.
+    - **Csökkentési kulcs** – Válassza ki az alkalmazni kívánt csökkentési kulcsot. A további tudnivalókat [lásd az előrejelzés-csökkentési kulcs létrehozása és beállítása](#create-reduction-key)[, valamint a csökkentési](#use-reduction-key) kulcs szakaszainak használata a cikk későbbi részében.
     - **Előrejelzés csökkentésének mennyisége** – Azon alaptervek esetében, amelyeknél az **Előrejelzési követelmények csökkentéséhez használt módszer** a *Tranzakciók – Csökkentési kulcs* vagy a *Tranzakciók – Dinamikus időszak* beállítására van állítva, adja meg, hogy mely tranzakciók csökkentsék az előrejelzést. Válasszon a következő értékek közül:
 
         - **Minden tranzakció** – Minden tranzakciónak csökkentenie kell az előrejelzést.

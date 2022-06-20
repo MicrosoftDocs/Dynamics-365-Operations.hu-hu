@@ -1,6 +1,6 @@
 ---
-title: Újdonságok és változások a Warehouse Management mobilalkalmazásban
-description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új és módosult funkcióit ismerteti.
+title: A Warehouse Management mobilalkalmazás újdonságai vagy változásai
+description: Ez a cikk felsorolja a Microsoft Raktárkezelés mobilalkalmazás minden kiadott verziójának új és módosított funkcióit Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
-ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
-ms.translationtype: MT
+ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/02/2022
-ms.locfileid: "8661825"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945723"
 ---
-# <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Újdonságok és változások a Warehouse Management mobilalkalmazásban
+# <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás újdonságai vagy változásai
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új funkcióit, hibajavításait, fejlesztéseit és ismert hibáit ismerteti.
+Ez a cikk a Microsoft Raktárkezelés mobilalkalmazás minden egyes kiadott verziójához tartalmaz új funkciókat, javításokat, javításokat és ismert problémákat Dynamics 365 Supply Chain Management.
+
+## <a name="version-20240"></a>2.0.24.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+- Továbbfejlesztett beolvasóoldalak, amelyek lehetővé teszik a beolvasást a Részletek **lapokon**.
+- Továbbfejlesztett kijelzők, például érintőképernyő/érintőképernyő.
+- Javított teljesítménybeli problémák Android esetében.
+- Több fejléc rögzített elhelyezése, hogy több kártya is megjeleníthető a Lekérdezés **lapon**.
+- Továbbfejlesztett görgetés, így a görgetési lapozás kisebb távolsága engedélyezve van.
+- Hosszú gombokkal további szöveget jelenít meg a Lekérdezés **lapon**.
+- Rögzített, hiányzó eszközazonosító-adatok a( stb.) számára Android.
+- Jobb stabilság.
+- A bejelentkezési elrendezés optimalizálása.
+- A számbillentyűzet, a Részletek lap és a beviteli lapok párbeszédpanel-előugró **oldalának** bezárásához hozzáadta a húzással jobbra húzást.
 
 ## <a name="version-20220"></a>2.0.22.0-s verzió
 

@@ -1,6 +1,6 @@
 ---
 title: A Microsoft Power Apps portál használata a Fél adatmodelljével
-description: Ez a témakör a Microsoft Power Apps portálok webszerepkörök változásait írja le a fél adatmodell megjelenése miatt a kettős írásban.
+description: Ez a cikk a portálok webszerep-változásait Microsoft Power Apps írja le, a kétírásos rendszerbeli fél adatmodellje miatt.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2e9d0f47ef90167bf84bb5b20e6a7ad2d58ffd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898946"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>A Microsoft Power Apps portál használata a Fél adatmodelljével
 
@@ -24,7 +24,7 @@ ms.locfileid: "8060920"
 
 A kettős írású alkalmazás vezérlési megoldása 2.0.999.0 és későbbi verziója tartalmazza a partner- és globális címjegyzék adatmodell-módosításait a Számla és Kapcsolattartó táblákban. A módosítások több a többhöz kapcsolatot is lehetővé tesznek, amelyek speciális üzleti helyzeteket támogatnak. Ezeket a módosításokat nem támogatják a portál webes szerepkörei, köztük a vevői portál, amelyek a gyári telepítés része, vagy amelyek a környezetben léteztek a kettős írás telepítése előtt. Ahhoz, hogy a webes szerepkörök a várt módon működjenek, új webes szerepköröket kell létrehozni az új adatmodell segítségével. 
 
-Összegzésképpen: a táblák kommunikációja megváltozott, de a vevői portál táblaengedélyei nem módosultak. Ez a témakör bemutatja az új speciális adatmodellel működő új webes szerepkörök létrehozásához szükséges feladatokat.
+Összegzésképpen: a táblák kommunikációja megváltozott, de a vevői portál táblaengedélyei nem módosultak. Ez a cikk bemutatja az új speciális adatmodellel kapcsolatos új webes szerepkörök létrehozásához szükséges feladatokat.
 
 Ez az ábra a fél és a globális címjegyzék adatmodell **nélkül** ábrázolja a táblakapcsolatokat:
 

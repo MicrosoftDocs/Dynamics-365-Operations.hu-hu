@@ -1,6 +1,6 @@
 ---
 title: TDS visszatéríthető tanúsítvány számának rögzítése
-description: Ez a témakör elmagyarázza, hogyan lehet a Visszatéríthető tanúsítványok oldalt használni az adott szállítóhoz, vevőhöz vagy főkönyvhöz tartozó Forrásnál levont adó (TDS) tanúsítványszámainak és dátumainak rögzítéséhez.
+description: Ez a cikk bemutatja, hogy hogyan lehet a Vissza állítható tanúsítványok lapon rögzíteni az adott szállítóhoz, vevőhöz vagy főkönyvhöz beérkezett adó levont adó tanúsítványszámait és dátumait.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5d62f560fe58a5fb7bd158bed9bcb111d75c7f00
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 513412e292167795fad9d80b68e6e5e14dbd13c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726490"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853256"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>TDS visszatéríthető tanúsítvány számának rögzítése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör elmagyarázza, hogyan lehet a **Visszatéríthető tanúsítványok** oldalt használni az adott szállítóhoz, vevőhöz vagy főkönyvhöz tartozó Forrásnál levont adó (TDS) tanúsítványszámainak és dátumainak rögzítéséhez. Az ezen az oldalon a TDS-tranzakcióknál rögzített TDS-bizonylatszámok és dátumok frissítéséhez használja a **Tanúsítvány frissítése** lapot (**Főkönyv \> Időszakos \> Adóelőleg \> Tanúsítvány frissítése**). Miután befejezte a TDS-tanúsítványszámok frissítését, zárja be azokat.
+Ez a cikk **bemutatja**, hogy hogyan lehet a Vissza állítható tanúsítványok lapon rögzíteni az adott szállítóhoz, vevőhöz vagy főkönyvhöz beérkezett adó levont adó tanúsítványszámait és dátumait. Az ezen az oldalon a TDS-tranzakcióknál rögzített TDS-bizonylatszámok és dátumok frissítéséhez használja a **Tanúsítvány frissítése** lapot (**Főkönyv \> Időszakos \> Adóelőleg \> Tanúsítvány frissítése**). Miután befejezte a TDS-tanúsítványszámok frissítését, zárja be azokat.
 
 Kövesse az alábbi lépéseket a TDS-tanúsítványok számának és dátumának rögzítéséhez.
 

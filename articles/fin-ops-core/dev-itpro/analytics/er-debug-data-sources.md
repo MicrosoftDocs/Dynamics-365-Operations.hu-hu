@@ -1,6 +1,6 @@
 ---
 title: Egy végrehajtott ER formátum hibakeresési adatforrásai az adatfolyam elemzéséhez és átalakításához
-description: Ez a témakör azt mutatja be, hogyan lehet hibakeresést végezni egy végrehajtott ER-formátum adatforrásaiból, hogy jobban megérthesse a konfigurált adatáramlást és átalakítást.
+description: Ez a cikk bemutatja, hogy hogyan lehet hibakeresést végezni egy végrehajtott ER-formátum adatforrásában, hogy jobban megértsük a konfigurált adatáramlást és -átalakítást.
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6fca177093caf42ad27b58eaa97e3f6997289eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323761"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884228"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Egy végrehajtott ER formátum hibakeresési adatforrásai az adatfolyam elemzéséhez és átalakításához
 
@@ -34,7 +34,7 @@ Előfordulhat, hogy a létrejövő kimenet adatai eltérően jelennek meg az alk
 
 Ha be kívánja kapcsolni az adatforrás hibakeresési funkcióját, állítsa be az **Adatok hibakeresésének engedélyezése a formátum futtatása során** lehetőséget **Igen** értékre az ER felhasználói paraméterei. Ezt követően elindíthatja az adatforrás hibakeresését, miközben a kimenő dokumentumok létrehozásához futtat egy ER-formátumot. A **Hibakeresés indítása** lehetőséggel is elindíthatja az adatforrás hibakeresését egy ER-formátumhoz, amely konfigurálva van az [ER művelettervezőben](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document).
 
-Ez a témakör a végrehajtható ER formátumokhoz tartozó adatforrás-hibakeresés kezdeményezéséhez tartalmaz útmutatást. Bemutatja, hogy az adatok hogyan segítenek az adatáramlás és az adatok átalakítások megértésében. Az ebben a témakörben szereplő példák a szállítói kifizetések feldolgozásának üzleti folyamatát használják.
+Ez a témakör a végrehajtott ER-formátumok adatforrás-hibakeresésének kezdeményezésére vonatkozó irányelveket tartalmaz. Bemutatja, hogy az adatok hogyan segítenek az adatáramlás és az adatok átalakítások megértésében. Az ebben a példában említett példák az üzleti folyamatot használják a szállítói kifizetések feldolgozásához.
 
 ## <a name="limitations"></a>Korlátozások
 
@@ -49,7 +49,7 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-- A jelen témakörben szereplő példák végrehajtásához hozzáféréssel kell rendelkeznie a következő [szerepkörök](../sysadmin/tasks/assign-users-security-roles.md) egyikéhez:
+- A példában olvasható példák csak [a következő szerepkörök valamelyikének eléréséhez férhetnek hozzá](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Elektronikus jelentések fejlesztője
     - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -57,12 +57,12 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 
 - A vállalatot **DEMF** értékre kell beállítani.
 
-- Kövesse a témakör [1. függelékének](#appendix1) lépéseit a Microsoft ER-megoldás szállítói kifizetések feldolgozásához szükséges összetevőinek letöltéséhez.
-- Kövesse a témakör [2. függelékének](#appendix2) lépéseit a szállítói kifizetések feldolgozásához szükséges Kötelezettségek előkészítéséhez az Ön által letöltött ER-megoldás segítségével.
+- Hajtsa végre a [cikk 1](#appendix1) . mellékletének lépéseit a Szállítói kifizetések feldolgozásához szükséges Microsoft ER-megoldás összetevőinek letöltéséhez.
+- Hajtsa végre a [cikk 2](#appendix2) . mellékletének lépéseit a Kötelezettségek szállítói kifizetések feldolgozására való előkészítéséhez a letöltendő ER-megoldás alkalmazásával.
 
 ## <a name="process-a-vendor-payment-to-get-a-payment-file"></a>Szállítói kifizetések feldolgozása kifizetési fájl beszerzéséhez
 
-1. A szállítói kifizetések feldolgozásához kövesse a témakör [3. függelékének](#appendix3) lépéseit.
+1. A szállítói kifizetések feldolgozásához [kövesse a cikk 3](#appendix3) . mellékletének lépéseit.
 
     ![Szállítói kifizetések feldolgozása folyamatban.](./media/er-data-debugger-process-payment.png)
 
@@ -89,7 +89,7 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Szállítói fizetés feldolgozása hibakereséshez
 
-1. A szállítói kifizetések feldolgozásához kövesse a témakör [3. függelékének](#appendix3) lépéseit.
+1. A szállítói kifizetések feldolgozásához [kövesse a cikk 3](#appendix3) . mellékletének lépéseit.
 2. Az üzenetablakban válassza az **Igen** lehetőséget annak megerősítéséhez, hogy szeretné megszakítani a szállítói kifizetések feldolgozását, és ehelyett elindítani az adatforrás hibakeresését az **Adatforrások hibakeresése** oldalon.
 
     ![Megerősítő üzenet mezője.](./media/er-data-debugger-start-debugging.png)
@@ -188,7 +188,7 @@ Ha ER-megoldást szeretne használni egy elektronikus fizetési fájl generálá
 
 ![Az ER fizetési formátum importálása a Konfigurációk tárháza oldalon.](./media/er-data-debugger-import-from-repo.png)
 
-A kiválasztott ER-formátumon kívül a következő [konfigurációkat](general-electronic-reporting.md#Configuration) automatikusan importálni kell a Microsoft Dynamics 365 Finance példányba az **ISO20022-átutalás** ER-megoldás részeként:
+A kiválasztott ER-formátumon kívül [a](general-electronic-reporting.md#Configuration)Microsoft Dynamics következő konfigurációkat kell automatikusan importálni a 365 Pénzügy **példányba az ISO20022 Jóváírás-átutalás** ER megoldás részeként:
 
 - **Fizetési modell** ER adatmodell-konfigurációja
 - **ISO20022 Jóváírás ER formátumának** konfigurálása

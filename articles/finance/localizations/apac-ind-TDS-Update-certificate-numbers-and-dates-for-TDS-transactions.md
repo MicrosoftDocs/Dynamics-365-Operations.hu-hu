@@ -1,6 +1,6 @@
 ---
 title: Tanúsítványszámok és -dátumok frissítése TDS-tranzakciókhoz
-description: Ez a témakör elmagyarázza, hogyan lehet frissíteni a visszaigényelhető tanúsítványszámokat és dátumokat frissíteni, amelyek a szállítói, ügyfél- és könyvelési számlákhoz lettek rögzítve a Forrásnál levont adóhoz (TDS).
+description: Ez a cikk bemutatja, hogy hogyan lehet frissíteni a forrásnál levont adó (TDS) szállítói, vevői és főkönyvi számláihoz rögzített vissza állítható tanúsítványszámokat és dátumokat.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7f8b5713e8ce3f9e9c89b8b3bc6ea84fe1f0fa54
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 147a27261a4a282550f0bacede78c9edd38b4fe6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904441"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>Tanúsítványszámok és -dátumok frissítése TDS-tranzakciókhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör elmagyarázza, hogyan lehet frissíteni a visszaigényelhető tanúsítványszámokat és dátumokat frissíteni, amelyek a szállítói, ügyfél- és könyvelési számlákhoz lettek rögzítve a Forrásnál levont adóhoz (TDS). A TDS-tranzakciók tanúsítványait a **Visszatéríthető tanúsítványok** lapon lehet megtekinteni. A tanúsítványokat a **Tanúsítványok frissítése** lapon frissítheti.
+Ez a cikk bemutatja, hogy hogyan lehet frissíteni a forrásnál levont adó (TDS) szállítói, vevői és főkönyvi számláihoz rögzített vissza állítható tanúsítványszámokat és dátumokat. A TDS-tranzakciók tanúsítványait a **Visszatéríthető tanúsítványok** lapon lehet megtekinteni. A tanúsítványokat a **Tanúsítványok frissítése** lapon frissítheti.
 
 Kövesse az alábbi lépéseket a TDS-tanúsítványok számának és dátumának frissítéséhez.
 

@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 12deca22fd6ff3cb4556e0525ab831e1aea0ee33
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468916"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847933"
 ---
 # <a name="coverage-time-fences"></a>Fedezet időkorlátjai
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet *fedezeti időkorlátokat* beállítani a tervezési optimalizálás használata esetén. A tervezők meghatározhatják a tervezési időhatárt (a fedezet időkorlátját napokban), és kizárhatják az adott időhatáron túlra eső ellátásokat és igényeket. A fedezet időkorlátja így megakadályozza a „zajt”, amelyet az ellátási javaslatok okozhatnak, amelyekre nem kell hónapokig reagálnia. Ilyen például a következő év előrejelzése és a vevői rendelések, amelyeket a rendes átfutási időnél távolabbi időpontra adtak le.
+Ez a témakör azt ismerteti, hogyan lehet fedezeti *időkorlátokat* beállítani a tervezési optimalizálás használata esetén. A tervezők meghatározhatják a tervezési időhatárt (a fedezet időkorlátját napokban), és kizárhatják az adott időhatáron túlra eső ellátásokat és igényeket. A fedezet időkorlátja így megakadályozza a „zajt”, amelyet az ellátási javaslatok okozhatnak, amelyekre nem kell hónapokig reagálnia. Ilyen például a következő év előrejelzése és a vevői rendelések, amelyeket a rendes átfutási időnél távolabbi időpontra adtak le.
 
 A fedezeti időkorlát azon napok száma a mai dátum (vagy pontosabban a tervezési futtatás dátuma) után, amelyekből a készlet és az igény ki van zárva. A késések elkerülése érdekében gondoskodnia kell arról, hogy a fedezeti időkorlát hosszabb legyen a teljes átfutási időnél. Az alapértelmezett rendszerbeállítás a 100 nap.
 

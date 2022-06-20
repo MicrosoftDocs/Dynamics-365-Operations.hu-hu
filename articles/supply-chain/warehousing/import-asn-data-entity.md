@@ -1,6 +1,6 @@
 ---
 title: Bejövő ASN-ek importálása a V3 adatentitáson keresztül
-description: Ez a témakör leírja, hogyan kell kezelni a bejövő speciális szállítási értesítések (ASN) bejövő ASN-adatentitáson keresztüli importálását.
+description: Ez a cikk bemutatja, hogyan kell kezelni a bejövő speciális szállítási értesítések (ASN) bejövő ASN-adatentitáson keresztüli importálását.
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 44ec0230236451a413d483b3e9f3ddc58b49a0b0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907116"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Bejövő ASN-ek importálása a V3 adatentitáson keresztül
 
@@ -26,7 +26,7 @@ A speciális szállítási értesítések (ASN-ek) a szállítók kézbesítés�
 
 Az ASN-ek segítségével a raktári dolgozók áttekintheti, hogy mi mikor érkezik, akik így felkészülhetnek. Ezenkívül a raktári dolgozók az ASN-ek használatával egyeztethetik a szállítmány részleteit a korábban létrehozott kapcsolódó beszerzési rendeléssel.
 
-Ez a témakör olyan forgatókönyvek gyűjteményét tartalmazza, amelyek példákon keresztül mutatják be az ASN-fájlokkal végzett munkát.
+Ez a cikk olyan helyzetek gyűjteményét mutatja be, amelyek példákon keresztül mutatják be, hogyan lehet az ASN-fájlokat dolgozni.
 
 > [!IMPORTANT]
 > *A bejövő ASN-ek* importálása csak a speciális raktárkezelési modulban (WMS) engedélyezett cikkekkel használható. Az ASN-ek fogadása előtt egy beszerzési rendelést regisztrálni kell a rendszerben az adott ASN-t küldő szállítóra vonatkozóan.

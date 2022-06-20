@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e66a2e24d3b1e77d5c790d2f3b7cfdce98fc4cca6e3734ad8b87ac7714192853
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5abb7d902cc72ecaa6def0aef29d9418cea71255
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892711"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Formátumok módosítása Excel-sablonok újbóli alkalmazásával
 
@@ -25,7 +25,7 @@ ms.locfileid: "6749656"
 
 Az alábbi lépések végrehajtásához először hajtsa végre az „ER-konfiguráció létrehozása az OPENXML formátumban létrejövő jelentésekre vonatkozóan” eljárás lépéseit.
 
-Ez az eljárás azt ismerteti, hogyan módosíthatja egy elektronikus jelentési (ER) formátum konfigurációját egy módosított Microsoft Excel-sablon ismételt alkalmazásával. Ebben az eljárásban egy módosított Excel-sablont importálunk az ER-formátum konfigurációkba, amelyeket a Litware, Inc. mintavállalathoz hoztak létre, és ezután elvégezzük az elektronikus dokumentumok létrehozását. Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználók számára készült. A lépések a GBSI-adathalmazzal hajthatók végre. A kezdés előtt töltse le és mentse a SampleVendPaymWsReport2.xlsx fájlt, amely a Elektronikus jelentéskészítési formátum módosítása egy Microsoft Excel-sablon ismételt alkalmazásával súgótémakörben szerepel (modify-electronic-reporting-format-reapply-excel-template/).
+Ez az eljárás azt ismerteti, hogyan módosíthatja egy elektronikus jelentési (ER) formátum konfigurációját egy módosított Microsoft Excel-sablon ismételt alkalmazásával. Ebben az eljárásban egy módosított Excel-sablont importálunk az ER-formátum konfigurációkba, amelyeket a Litware, Inc. mintavállalathoz hoztak létre, és ezután elvégezzük az elektronikus dokumentumok létrehozását. Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználók számára készült. A lépések a GBSI-adathalmazzal hajthatók végre. Mielőtt elkezdené, töltse le és mentse a fájlt (SampleVendPaymWsReport2.xlsx), amely a súgócikkben található. Az Elektronikus jelentésformátum módosítása Excel-sablon újra alkalmazásával (az elektronikus jelentés formátumának módosítása-excel-sablon újraalkalmazása/).
 
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
     * Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.  

@@ -1,6 +1,6 @@
 ---
 title: Minőségi társítások
-description: Ez a témakör azt mutatja be, hogyan használhatók a Microsoft Dynamics 365 Supply Chain Management minőségi társításai az értékesítési, beszerzési és termelési folyamatokkal kapcsolatos minőségi rendelések automatikus létrehozása során.
+description: Ez a témakör azt mutatja be, hogyan használhatók a Microsoft Dynamics 365 Supply Chain Management minőségi társításai az értékesítési, beszerzési és termelési folyamatokkal kapcsolatos minőségi rendelések automatikus generálása során.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28984730e5660414eec1ba087eb5de1eba4cbbb8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4e96f301d8dec255e57f0f0fbfa9c8e1a5922ae9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571929"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887515"
 ---
 # <a name="quality-associations"></a>Minőségi társítások
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan használhatók a Microsoft Dynamics 365 Supply Chain Management minőségi társításai az értékesítési, beszerzési és termelési folyamatokkal kapcsolatos minőségi rendelések automatikus létrehozása során.
+Ez a témakör azt mutatja be, hogyan használhatók a Microsoft Dynamics 365 Supply Chain Management minőségi társításai az értékesítési, beszerzési és termelési folyamatokkal kapcsolatos minőségi rendelések automatikus generálása során.
 
 A minőségi társítás meghatározza a létrehozott minőségi rendelésre vonatkozó alábbi adatok mindegyikét:
 

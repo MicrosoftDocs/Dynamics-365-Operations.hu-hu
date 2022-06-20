@@ -1,6 +1,6 @@
 ---
 title: Helyutasítások kezelése
-description: Ez a témakör a helyutasítások működését ismerteti. A helyutasítások olyan a felhasználó által megadott szabályok, melyek segítik a kitárolási és betárolási helyek meghatározását a készletmozgatáshoz.
+description: Ez a témakör a helyi irányelvekről szóló útmutatót ismerteti. A helyutasítások olyan a felhasználó által megadott szabályok, melyek segítik a kitárolási és betárolási helyek meghatározását a készletmozgatáshoz.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103138"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903695"
 ---
 # <a name="work-with-location-directives"></a>Helyutasítások kezelése
 
@@ -27,7 +27,7 @@ ms.locfileid: "8103138"
 A helyutasítások olyan szabályok, amik segítik a kitárolási és betárolási helyek meghatározását, készletmozgatás esetében. Például egy értékesítési rendelés tranzakciójába a helyutasítás azt határozza meg, ahol a cikkek kitárolása történik, valamint ahol a cikkeket betárolják. A helyutasítások fejlécből és a kapcsolódó sorokból állnak. Ezek meghatározott *munkarendelés-típusokhoz* jönnek létre.
 
 > [!NOTE]
-> Ez a témakör a **Raktárkezelés** modul egyes funkcióira vonatkozik. Ez nem vonatkozik az [Árukészletkezelés kezelése](../inventory/inventory-home-page.md) modul egyes funkcióira.
+> Ez a cikk a Raktárkezelés modul **szolgáltatásaira vonatkozik**. Ez nem vonatkozik az [Árukészletkezelés kezelése](../inventory/inventory-home-page.md) modul egyes funkcióira.
 
 Helyutasítások segítségével elvégezheti az alábbi feladatokat:
 
@@ -109,7 +109,7 @@ Az alábbi táblázat az egyes munkarendelés-típusokra jellemző mezőket soro
 
 A **Helyutasítások** oldal megnyitásához vagy szerkesztéséhez nyissa meg a **Raktárkezelés \> Beállítás \> Helyutasítások** elemet.
 
-Itt a Művelet panel parancsaival megtekintheti, létrehozhatja és szerkesztheti a helyutasításokat. A témakör további szakaszaiban olvashat arról, hogyan használhatja az oldalon elérhető összes mezőt.
+Itt a Művelet panel parancsaival megtekintheti, létrehozhatja és szerkesztheti a helyutasításokat. A cikk további részeiben található tájékoztatás az oldalon elérhető mezők használatával kapcsolatban.
 
 ## <a name="action-pane"></a>Műveleti panel
 
@@ -162,7 +162,7 @@ A **Helyutasítások** gyorslap mezői a listaablak **Munkarendelés típusa** m
 - **Alkalmazható intézkedési kód** – Adja meg, hogy a helymeghatározási elv intézkedéskódjának meg kell-e egyeznie a cikkek fogadásakor alkalmazott intézkedéskóddal, vagy a helyutasítás bármilyen intézkedéskód alapján kiválasztható. Ha a *Pontos egyezés* lehetőséget választja, és az **Intézkedéskód** mező üresen marad, akkor csak az üres intézkedéskódokat veszi figyelembe a rendszer ennél a helyutasításnál.
 
     > [!NOTE]
-    > Ez a mező csak olyan kiválasztott munkarendelés-típusoknál érhető el, ahol a feltöltés megengedett. A teljes listát a témakör korábbi, [Munkarendelés-típusokra jellemző mezők](#fields-specific-types) című szakaszában találhatja.
+    > Ez a mező csak olyan kiválasztott munkarendelés-típusoknál érhető el, ahol a feltöltés megengedett. A teljes listát lásd [a](#fields-specific-types) cikk korábbi, a munkarendeléstípusokra jellemző mezőkben.
 
 - **Keresés szempontja** – Adja meg, hogy az elraktározott mennyiség legyen-e a teljes mennyiség az azonosítótáblán, vagy cikkenként szerepeljen. Ebben a mezőben biztosíthatja, hogy az azonosítótábla teljes tartalma egy helyre kerüljön, és hogy a rendszer ne javasolja a tartalom felosztását több helyre az **ASN** (azonosítótábla fogadása), a **Vegyes azonosítótábla** fogadása és a **Fürt** fogadási folyamatokra. (A **Fürt** fogadási folyamatához be kell kapcsolni a [Fürt eltárolási funkciója](putaway-clusters.md) funkciót.) A helyutasítási lekérdezés, a sorok és a helyutasítási műveletek viselkedése a kiválasztott értéktől függően változhat. A **Sorok** gyorslap csak akkor használatos, ha a **Keresés szempontja** *Cikk* értékre van állítva.
 
@@ -254,7 +254,7 @@ Miután helyutasításokat hozott létre, összekapcsolhat minden utasításkód
 ## <a name="additional-resources"></a>További erőforrások
 
 - Videó: [Raktárkezelési konfiguráció teljes részletességgel](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Súgótémakör: [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](control-warehouse-location-directives.md)
+- Súgócikk: [A raktári munka vezérlése munkasablonok és helyi irányelvek segítségével](control-warehouse-location-directives.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

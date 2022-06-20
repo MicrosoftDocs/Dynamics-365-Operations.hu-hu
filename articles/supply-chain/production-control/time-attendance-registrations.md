@@ -1,6 +1,6 @@
 ---
 title: Munkaidő és jelenlét rögzítésének áttekintése
-description: A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a témakör regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához.
+description: A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a cikk regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához.
 author: johanhoffmann
 ms.date: 07/25/2019
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af257427661cb9a0d976800b657d3eb4afe7feca
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f648663d81cd37a1df7794ee9d5ad6598fb16594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875217"
 ---
 # <a name="time-and-attendance-registration-overview"></a>Munkaidő és jelenlét rögzítésének áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a témakör regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához.
+A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a cikk regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához.
 
 ## <a name="registrations"></a>Regisztrációk
 

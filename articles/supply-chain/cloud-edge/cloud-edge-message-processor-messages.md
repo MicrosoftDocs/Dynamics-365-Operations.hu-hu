@@ -1,6 +1,6 @@
 ---
 title: Üzenetfeldolgozó üzenetei
-description: Ez a témakör az üzenetfeldolgozó üzenetei funkcióval kapcsolatban tartalmaz tájékoztatást a skálázási egységgekkel kapcsolatos munkaterhelés esetén.
+description: Ez a cikk az üzenetfeldolgozó üzenetekkel és az egységméretre vonatkozó terhelésekkel kapcsolatban tartalmaz tájékoztatást.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a5f8d48ba697df389150f70ac159e690156de33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069429"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893613"
 ---
 # <a name="message-processor-messages"></a>Üzenetfeldolgozó üzenetei
 
@@ -29,7 +29,7 @@ ms.locfileid: "8069429"
 
 Az üzenetfeldolgozó üzenetei a felhő- és peremalapú skálázási egységek futtatásakor használatosak a [gyártási munkaterhelések](cloud-edge-workload-manufacturing.md) és a [raktárkezelési munkaterhelések](cloud-edge-workload-warehousing.md) során.
 
-A hub és a scale unit telepítési környezetek nagy mennyiségű adatot cserélnek, hogy szinkronban maradjanak. A kicserélt adatok egy része további logikát vált ki a *üzenetfeldolgozó*. Az üzenetfeldolgozó által feldolgozott üzeneteket a címen tekintheti meg **Rendszerfelügyelet > Üzenetfeldolgozó > Üzenetfeldolgozó üzenetek**.
+A központi és a mérlegegység-telepítési környezetben nagy mennyiségű adat cserélve marad szinkronban. Egyes cserélt adatok további logikát váltnak ki az *üzenetfeldolgozóban*. Az üzenetfeldolgozó **által feldolgozott üzeneteket az Üzenetfeldolgozó üzenet-feldolgozó üzenetei között > rendszerfelügyeleti > megtekintheti**.
 
 ## <a name="message-grid-columns-and-filters"></a>Üzenetrács oszlopai és szűrői
 

@@ -1,6 +1,6 @@
 ---
 title: Feloldási stratégia termékkonfigurációhoz
-description: Ez a témakör leírja, hogyan használhatja a feloldási stratégiát a termékkonfiguráció teljesítményének javítása érdekében.
+description: Ez a cikk azt ismerteti, hogyan lehet a megoldási stratégiával javítható a termékkonfiguráció teljesítménye.
 author: t-benebo
 ms.date: 02/19/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37e8f2c9557ee6fc827d60ca6dc83cd638b6378a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 76ad64c19fe088ec85fafba4a3276a4d8c23a18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852360"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Feloldási stratégia termékkonfigurációhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja, hogyan használhatja a feloldási stratégiát a termékkonfiguráció teljesítményének javítása érdekében.
+Ez a cikk azt ismerteti, hogyan lehet a megoldási stratégiával javítható a termékkonfiguráció teljesítménye.
 
 A feloldási stratégia fogalmát először a Microsoft Dynamics AX 2012 R2 7. összesített frissítése (CU7) vezette be. Ez bővítve lett frissítése a Microsoft Dynamics AX 2012 R3 8. összesített frissítésében (CU 8) és Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3 verziójában.
 

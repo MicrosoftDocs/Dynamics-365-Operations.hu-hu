@@ -1,6 +1,6 @@
 ---
-title: Gyorsnézeti modul
-description: Ez a témakör a gyorsnézeti modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: Modul gyors megtekintése
+description: Ez a témakör a gyorsnézet modulokat ismerteti, és bemutatja, hogyan lehet webhelyoldalakhoz adni őket Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 5ba42806d8f77f41ab9c5cf5e26b20ecb647aadf
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: e9066357fda4f5d91c547622ac64d8c4eef253ae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780818"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847575"
 ---
 # <a name="quick-view-module"></a>Modul gyors megtekintése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a gyorsnézeti modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör a gyorsnézet modulokat ismerteti, és bemutatja, hogyan lehet webhelyoldalakhoz adni őket Microsoft Dynamics 365 Commerce.
 
 A gyorsnézeti modul segítségével a felhasználók gyorsan megtekinthetik a termékinformációkat, amikor a termékeket egy listaoldalon böngészik, és egy vagy több terméket adnak a kosárhoz a listaoldalról anélkül, hogy a termék részleteit tartalmazó oldalra (PDP) kellene lépniük. A gyorsnézeti modul áttekintést nyújt a felhasználók által a „hozzáadás a kosárhoz” döntés meghozatalához szükséges termékinformációkról. A PDP-re mutató hivatkozást is tartalmaz, így a felhasználók további termékrészleteket és vásárlási lehetőségeket tekinthetnek meg.
 

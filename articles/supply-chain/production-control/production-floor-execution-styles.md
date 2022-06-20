@@ -1,6 +1,6 @@
 ---
 title: A termelési üzem végrehajtási felületének kialakítása
-description: A témakör bemutatja, hogyan kell konfigurálni az űrlapvezérlőket úgy, hogy a rendszer alkalmazza a termelési üzem alapértelmezett végrehajtási stílusát.
+description: A cikk bemutatja, hogyan kell konfigurálni az űrlapvezérlőket úgy, hogy a rendszer alkalmazza a termelés alapértelmezett végrehajtási stílusát.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ef39dc6414f0afdadd4a4b5a41e1fb1fe60e4974
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ad6ecd591353fe8ddc1a5b9049d65491fb58e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859140"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének kialakítása
 
 [!include [banner](../includes/banner.md)]
 
-A témakör bemutatja, hogyan kell konfigurálni az űrlapvezérlőket úgy, hogy a rendszer alkalmazza a termelési üzem alapértelmezett végrehajtási stílusát.
+A cikk bemutatja, hogyan kell konfigurálni az űrlapvezérlőket úgy, hogy a rendszer alkalmazza a termelés alapértelmezett végrehajtási stílusát.
 
 ## <a name="forms-and-dialogs"></a>Űrlapok és párbeszédpanelek
 
@@ -31,7 +31,7 @@ A stílusokat csak akkor lehet alkalmazni egy űrlapra vagy párbeszédpanelre, 
 - Ha a képernyőnek meg kell egynie a jelentés folyamatjelző képernyőjéhez, akkor a képernyő vagy párbeszédpanel nevének a következővel kell kezdődnie:`JmgProductionFloorExecutionCustomInputDialog`
 - Az űrlap vagy párbeszédpanel egy részletes űrlaprészt tartalmazhat. Ahhoz, hogy stílusokat alkalmazz, a részletképernyő nevének kezdetével kell kezdődnie `JmgProductionFloorExecutionCustomDetailsDialog`.
 - Ha a képernyőnek vagy párbeszédpanelnek egyszerű nézetnek kell lennie, akkor az egyszerű nézet nevének a kezdetével kell kezdődnie `JmgProductionFloorExecutionCustomDialog`. Az egyszerű nézetű űrlapokra példa a kezdő űrlap és a közvetett tevékenység űrlap.
-- A párbeszédpanelen található összes vezérlőelemet az ebben a témakörben leírt módon kell konfigurálni.
+- A párbeszédpanelen látható összes vezérlőelemet a jelen cikknek megfelelően kell konfigurálni.
 
 > [!IMPORTANT]
 > A lista első két pontja által említett funkciókhoz a Supply Chain Management 10.0.19-es vagy újabb verziója szükséges.
@@ -52,7 +52,7 @@ A következő ábra egy jellemző képernyőt vagy párbeszédpanel-fejlécet mu
 
 ![Szokásos képernyő vagy párbeszédpanel fejléce.](media/pfe-styles-header.png "Szokásos képernyő vagy párbeszédpanel fejléce")
 
-A fejlécek a következő példában látható szerkezettel jelennek Visual Studio meg.
+A Visual Studio fejlécek a következő példában látható szerkezettel jelennek meg.
 
 ![Tipikus kódstruktúra a fejlécek létrehozásához.](media/pfe-styles-header-code-structure.png "Tipikus kódstruktúra fejlécek létrehozásához")
 
@@ -72,9 +72,9 @@ private void setCaption()
 
 A fejléckód megírásakor a következő szabályokat kell alkalmazni:
 
-- A fő csoport nevének a következőnek kell `TableRowHeaderGroup` lennie:
-- Minden szövegblokknak (felsorolással elválasztva) a következővel kell `HeaderFieldWithSeparatorText` kezdődnie:
-- Az utolsó szöveg nevének a következővel kell `HeaderFieldText` kezdődnie:
+- A fő csoport nevének a következőnek kell lennie:`TableRowHeaderGroup`
+- Minden szövegblokknak (felsorolással elválasztva) a következővel kell kezdődnie `HeaderFieldWithSeparatorText`:
+- Az utolsó szöveg nevének a következővel kell kezdődnie:`HeaderFieldText`
 - `CaptionImage` nem hagyható ki.
 
 ### <a name="progress-indicator"></a>Folyamatjelző
@@ -83,13 +83,13 @@ Az állapotjelző a fejléc jobb látható. A következő ábra egy folyamatjelz
 
 ![Tipikus folyamatjelző.](media/pfe-styles-header-progress.png "Tipikus folyamatjelző")
 
-Az állapotjelző csak akkor mutatja meg, ha a szövegmező neve `ShowProgress` ".
+Az állapotjelző csak akkor mutatja meg, ha a szövegmező neve ".`ShowProgress`
 
 ## <a name="grid"></a>Rács
 
 A stílusok automatikusan vannak alkalmazva. Nincs szükség specifikus konfigurációra.
 
-A rácsnak stílussal kell lennie, és felül kell írni az egyéni képernyőn található metódust, mivel az új rács `TabularView``run()` még nem támogatott. Adja hozzá a következő kódot.
+A rácsnak stílussal `TabularView` kell lennie, és `run()` felül kell írni az egyéni képernyőn található metódust, mivel az új rács még nem támogatott. Adja hozzá a következő kódot.
 
 ```xpp
 public void run()
@@ -100,14 +100,14 @@ public void run()
 }
 ```
 
-Ha fő nézetben szeretné frissíteni az adatokat, akkor a művelet egy módszeréhez hasonlót `this.parmParentForm().updateLayout();``click` érdemes használnia. (Példaként nézze meg az `JmgProductionFloorExecutionReportFeedbackAction` osztályt.) Győződjön meg róla, hogy ez az új képernyő `parmDataSource``init` módszerében van beállítva `formCaller.parmDataSource(this.dataSource(1));` (). Példaként nézze meg a `JmgProductionFloorExecutionMainGrid` képernyőt.
+Ha fő nézetben szeretné frissíteni az adatokat, `this.parmParentForm().updateLayout();``click` akkor a művelet egy módszeréhez hasonlót érdemes használnia. (Példaként nézze meg az osztályt `JmgProductionFloorExecutionReportFeedbackAction` .) Győződjön meg róla, hogy `parmDataSource` be `init` van állítva az új képernyő (`formCaller.parmDataSource(this.dataSource(1));`) módszerében. Példaként nézze meg a képernyőt `JmgProductionFloorExecutionMainGrid`.
 
 ## <a name="card-view"></a>Kártyanézet
 
 A stílusokat csak akkor lehet alkalmazni kártyanézet-vezérlőkre, ha teljesülnek a következő követelmények:
 
 - Minden kártyanézet egy űrlapcsoportba tartozik.
-- A csoportnév kezdete `CardGroup``CardGroupJobsView` (például).
+- A csoportnév kezdete `CardGroup` (például `CardGroupJobsView`).
 
 A következő ábra egy olyan kártyanézetet mutat, amelyben nincsenek vezérlőelemek.
 
@@ -124,7 +124,7 @@ A következő ábrák kártyanézeteteket mutatnak be, amelyekben vannak vezérl
 A stílusokat csak akkor lehet alkalmazni névjegykártya-vezérlőkre, ha teljesülnek a következő követelmények:
 
 - Minden névjegykártya egy űrlapcsoportba tartozik.
-- A csoportnév kezdete `BusinessCardGroup``BusinessCardGroupJobsList` (például).
+- A csoportnév kezdete `BusinessCardGroup` (például `BusinessCardGroupJobsList`).
 
 A következő tulajdonságokat állítsa be a névjegykártyán:
 
@@ -140,12 +140,12 @@ A következő tulajdonságokat állítsa be a névjegykártyán:
 A stílusokat csak akkor lehet alkalmazni választógombokra, ha teljesülnek a következő követelmények:
 
 - Az összes választógomb egy űrlapcsoporthoz tartozik.
-- A csoportnév kezdete vagy – attól függően, hogy `RadioTextBelow` hol szeretné megjelenni a `RadioTextRight` szöveget.
+- A csoportnév kezdete `RadioTextBelow` vagy – `RadioTextRight` attól függően, hogy hol szeretné megjelenni a szöveget.
 
 A következő tulajdonságokat állítsa be a választógombon:
 
 - **Váltógomb:** *Ellenőrzés*
-- **Érték váltása: Be van jelölve, ha ki kell választani a** *·* választógombot, egyébként, *Ki*
+- **Érték váltása:** *Be van jelölve*, ha ki kell választani a választógombot, egyébként, Ki *·*
 
 A következő ábra egy példát mutat be arra, hogy hol jelenik meg a szöveg a választógombok alatt.
 
@@ -155,11 +155,11 @@ A következő ábra egy példát mutat be arra, hogy hol jelenik meg a szöveg a
 
 ![Választógombok szöveggel a jobb oldalon.](media/pfe-styles-radio-text-right.png)
 
-### <a name="radio-buttons-in-internet-explorer"></a>Választógombok az Internet Explorer ben
+### <a name="radio-buttons-in-internet-explorer"></a>Választógombok az Internet Explorerben
 
 A választógombok stílusát nem támogatja az Internet Explorer. Az alábbi ábra azt mutatja, hogyan néznek ki a választógombok a Internet Explorer alkalmazásban.
 
-![Választógombok az Internet Explorer ben.](media/pfe-styles-browser.png)
+![Választógombok az Internet Explorerben.](media/pfe-styles-browser.png)
 
 ## <a name="buttons"></a>Gombok
 
@@ -181,7 +181,7 @@ A következő tulajdonságokat állítsa be a gombon:
 A stílusokat csak akkor lehet alkalmazni elsődleges gombra, ha teljesülnek a következő követelmények:
 
 - A gomb egy űrlapcsoporthoz tartozik.
-- A csoportnév kezdete `DefaultButtonGroup` vagy `PrimaryButtonGroup``DefaultButtonGroup10` (például).
+- A csoportnév kezdete vagy `DefaultButtonGroup``PrimaryButtonGroup` (például `DefaultButtonGroup10`).
 
 ![Elsődleges gomb.](media/pfe-styles-first.png)
 
@@ -190,7 +190,7 @@ A stílusokat csak akkor lehet alkalmazni elsődleges gombra, ha teljesülnek a 
 A stílusokat csak akkor lehet alkalmazni a másodlagos gombra, ha teljesülnek a következő követelmények:
 
 - A gomb egy űrlapcsoporthoz tartozik.
-- A csoport neve Jobb panel, vagy **a csoport neve a**`SecondaryButtonGroup` kezdete.
+- A csoport neve **Jobb panel**, vagy a csoport neve `SecondaryButtonGroup` a kezdete.
 
 ![Másodlagos gomb.](media/pfe-styles-second.png)
 
@@ -199,7 +199,7 @@ A stílusokat csak akkor lehet alkalmazni a másodlagos gombra, ha teljesülnek 
 A stílusokat csak akkor lehet alkalmazni a harmadlagos gombra, ha teljesülnek a következő követelmények:
 
 - A gomb egy űrlapcsoporthoz tartozik.
-- A csoport neve Bal panel, vagy **·** a csoportnév `ThirdButtonGroup` kezdete:
+- A csoport neve **Bal panel**, vagy a csoportnév kezdete:`ThirdButtonGroup`
 
 ![Harmadlagos gomb.](media/pfe-styles-third.png)
 
@@ -208,7 +208,7 @@ A stílusokat csak akkor lehet alkalmazni a harmadlagos gombra, ha teljesülnek 
 A stílusokat csak akkor lehet alkalmazni a negyedleges gombra, ha teljesülnek a következő követelmények:
 
 - A gomb egy űrlapcsoporthoz tartozik.
-- A csoportnév `FourthButtonGroup` kezdete:
+- A csoportnév kezdete:`FourthButtonGroup`
 
 A következő tulajdonságokat állítsa be a gombon:
 
@@ -242,7 +242,7 @@ A következő tulajdonságokat állítsa be a gombon:
 A stílusok csak akkor alkalmazhatók a folytatási gombra, ha teljesülnek a következő követelmények:
 
 - A gomb egy űrlapcsoporthoz tartozik.
-- A csoportnév `ContinueButtonGroup` kezdete:
+- A csoportnév kezdete:`ContinueButtonGroup`
 
 A következő tulajdonságokat állítsa be a gombon:
 
@@ -261,9 +261,9 @@ A kombinált lista három vezérlőelem együttesét jelenti: egy beviteli vezé
 A stílusokat csak akkor lehet alkalmazni kombinált listákra, ha teljesülnek a következő követelmények:
 
 - A kombinált lista egy űrlapcsoporthoz tartozik.
-- A csoportnév `Combobox` kezdete:
+- A csoportnév kezdete:`Combobox`
 - A csoporton belül az első vezérlőelem egy `AxFormStringControl` vezérlő. Ez a vezérlő mutatja az aktuális értéket, és itt adja meg a felhasználó a szükséges értéket.
-- A második vezérlő egy vezérlő, a neve `CommonButton` pedig a következővel `ClearButton` kezdődik: Ennek a gombnak olyan kódot kell tartalmaznia, amely a tulajdonságot használja a gomb `enable` megjelenítése vagy elrejtése. Ha például, amikor a felhasználó a beviteli vezérlőbe beír egy adatokat, megjeleníti vagy elrejti a **Törlés** gombot, használhatja a következő kódot.
+- A második vezérlő egy vezérlő, a `CommonButton` neve pedig a következővel kezdődik:`ClearButton` Ennek a gombnak olyan kódot kell tartalmaznia, amely `enable` a tulajdonságot használja a gomb megjelenítése vagy elrejtése. Ha például, amikor a felhasználó a beviteli vezérlőbe beír egy adatokat, megjeleníti vagy elrejti a **Törlés** gombot, használhatja a következő kódot.
 
     ```xpp
     public void textChange()
@@ -288,7 +288,7 @@ A stílusokat csak akkor lehet alkalmazni kombinált listákra, ha teljesülnek 
     }
     ```
 
-    A Clear gomb metódusa a következő `clicked`**·** kódot használja.
+    A Clear gomb metódusa `clicked` a **következő kódot** használja.
 
     ```xpp
     public void clicked()
@@ -298,9 +298,9 @@ A stílusokat csak akkor lehet alkalmazni kombinált listákra, ha teljesülnek 
     }
     ```
 
-    A beviteli vezérlő értékének `AxFormStringControl` beállítása, ha a képernyőt a módszerrel inicializálják. `init` Ha az érték nem üres, engedélyezze a **Törlés** gombot. Ha az érték nem üres letiltja a **Törlés** gombot.
+    A beviteli vezérlő értékének beállítása, `AxFormStringControl` ha a képernyőt a módszerrel inicializálják `init`. Ha az érték nem üres, engedélyezze a **Törlés** gombot. Ha az érték nem üres letiltja a **Törlés** gombot.
 
-- A harmadik vezérlőelem egy vezérlő, a neve pedig a `CommonButton` következővel `SearchButton` kezdődik:
+- A harmadik vezérlőelem egy `CommonButton` vezérlő, a neve pedig a következővel kezdődik:`SearchButton`
 
 A következő ábra két kombinált lista vezérlőelemet mutat be. A bal oldali kombinált listában egy üres szövegmező található, és a **Törlés** gomb nincs engedélyezve. A jobb oldali kombinált listában egy szövegmezőben szöveg található, és a **Törlés** gomb engedélyezve van.
 
@@ -311,10 +311,10 @@ A következő ábra két kombinált lista vezérlőelemet mutat be. A bal oldali
 A gyorsszűrő-vezérlő keresési mezőt ad az oldalhoz. A stílusokat akkor alkalmazhatja gyorsszűrőkre, ha teljesülnek a következő követelmények:
 
 - A gyorsszűrő egy űrlapcsoporthoz tartozik.
-- A csoportnév `SearchInputGroup` kezdete:
+- A csoportnév kezdete:`SearchInputGroup`
 - A csoporton belül az első vezérlőelem egy `QuickFilter` vezérlő. (Itt adhatja meg a felhasználó a keresési karakterláncot.)
-- A második vezérlőelem neve `FormStaticTextControl``NumberOfResults`. (Ezt a vezérlőelemet nem kötelező megadni. Ha szerepel benne, akkor a talált cikkek számát is mutatja.)
-- A harmadik vezérlőelem egy vezérlő, a neve pedig a `CommonButton` következővel `ClearButton` kezdődik:
+- A második vezérlőelem neve `FormStaticTextControl` .`NumberOfResults` (Ezt a vezérlőelemet nem kötelező megadni. Ha szerepel benne, akkor a talált cikkek számát is mutatja.)
+- A harmadik vezérlőelem egy `CommonButton` vezérlő, a neve pedig a következővel kezdődik:`ClearButton`
 
 A következő ábra két gyorsszűrő vezérlőelemet mutat be. A bal oldalon látható gyorsszűrő üres gyorsszűrővel rendelkezik, és az eredmények száma nem látható. A jobb oldalon található gyorsszűrő egy keresési sztringet tartalmaz, amely megjeleníti az eredmények számát.
 
@@ -322,7 +322,7 @@ A következő ábra két gyorsszűrő vezérlőelemet mutat be. A bal oldalon l�
 
 ## <a name="center-align-elements-on-a-tab"></a>Lap elemeinek középre igazítása
 
-A lap középpontjában található elemek beállításának a csoport nevével kell kezdődnie, és a csoportnak a következő tulajdonságokkal `TabContentGroup` kell kezdődnie:
+A lap középpontjában található elemek beállításának a csoport nevével kell kezdődnie, `TabContentGroup` és a csoportnak a következő tulajdonságokkal kell kezdődnie:
 
 - **Szélesség módja:**`SizeToAvailable`
 - **Magasság módja:**`SizeToAvailable`
@@ -331,14 +331,14 @@ A lap középpontjában található elemek beállításának a csoport nevével 
 
 Ha egy testreszabott rácsot, részlet alkatrészt és gyors szűrőt úgy lehet rendezni, hogy hasonlítanak a normál tervhez, akkor tartsa szem előtt a következő pontokat, amikor az összeset összerakja:
 
-- Ha a rácsnak gyorsszűrője van, akkor a rácsnak és a gyorsszűrőnek is abban a csoportban kell lennie, amely a nevével `GridGroup` kezdődik.
-- Ahhoz, hogy a stílusokat egy részletrészre alkalmazza, a csoport nevének a következővel kell `DetailInformationGroup` kezdődnie:
+- Ha a rácsnak gyorsszűrője van, akkor a rácsnak és a gyorsszűrőnek is abban a csoportban kell lennie, amely a nevével kezdődik `GridGroup`.
+- Ahhoz, hogy a stílusokat egy részletrészre alkalmazza, a csoport nevének a következővel kell kezdődnie:`DetailInformationGroup`
 
 A következő ábra egy jellemző rácsot mutat be, amely gyorsszűrőt és a jobb oldalon egy részlet részletét tartalmazza.
 
 ![Tipikus rács, amely gyors szűrést és részletet foglal magában.](media/pfe-styles-align-grid.png "Tipikus rács, amely gyors szűrést és részletet tartalmaz")
 
-A rácsban, a részletekben és a gyorsszűrőkben egy szerkezet – például az alábbi ábra – használatával Visual Studio lehet létrehozni.
+A Visual Studio rácsban, a részletekben és a gyorsszűrőkben egy szerkezet – például az alábbi ábra – használatával lehet létrehozni.
 
 ![Tipikus kódstruktúra, amely egy rácsot, egy részlet részt és egy gyorsszűrőt igazított ki.](media/pfe-styles-header-code-structure2.png "Tipikus kódstruktúra, amely egy rácsot, egy részlet részt és egy gyorsszűrőt igazított ki")
 

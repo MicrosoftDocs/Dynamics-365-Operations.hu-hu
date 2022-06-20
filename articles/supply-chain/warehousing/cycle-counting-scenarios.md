@@ -1,6 +1,6 @@
 ---
 title: Ciklikus leltározás példa esetek
-description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management ciklikus leltározási funkcióinak lehetőségeinek gyűjteményét tárja fel.
+description: Ez a témakör a Microsoft ciklikus leltározási funkcióit tárja fel Dynamics 365 Supply Chain Management.
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 60be945035570634c572baaa37ae0d02e41dd0be
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674701"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899324"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Ciklikus leltározás példa esetek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management ciklikus leltározási funkcióinak lehetőségeinek gyűjteményét tárja fel. Először a meglévő Supply Chain Management környezet követelményeit írja le. Ezután bemutatja a ciklikus leltározás konfigurálást, és leírja az összes ciklikus leltározási fokozatot. Ha befejezte, jól kell ismernie a ciklikus leltározást, például irányított ciklikus leltározást, számlálást, azonnali ciklikus leltározást, ciklikus leltározási küszöbértékeket és ciklikus leltározási terveket.
+Ez a témakör a Microsoft ciklikus leltározási funkcióit tárja fel Dynamics 365 Supply Chain Management. Először a meglévő Supply Chain Management környezet követelményeit írja le. Ezután bemutatja a ciklikus leltározás konfigurálást, és leírja az összes ciklikus leltározási fokozatot. Ha befejezte, jól kell ismernie a ciklikus leltározást, például irányított ciklikus leltározást, számlálást, azonnali ciklikus leltározást, ciklikus leltározási küszöbértékeket és ciklikus leltározási terveket.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 ### <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-A témakör hivatkozásainak minden egyes esete olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban. Ha azt szeretné, hogy az itt megadott értékeket használja a forgatókönyvek végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy (vállalat) beállítása legyen **USMF**.
+A cikk minden egyes esete az Ellátásilánc-kezelés szabványos bemutató adataiban található értékekre és rekordokra hivatkozik. Ha azt szeretné, hogy az itt megadott értékeket használja a forgatókönyvek végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy (vállalat) beállítása legyen **USMF**.
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás támogatásának bekapcsolása
 
@@ -158,7 +158,7 @@ A következő lépések szerint hozhat létre ciklikus leltározási munkát a c
 
 Miután létrehozott egy ciklikus leltározási munkát, a raktárhelyen található cikkek számlálásával végezheti el a ciklikus leltározási munkát, majd mobileszközén rögzítheti az eredményt a Supply Chain Management rendszerbe. A következő lépések szerint hajtsa végre a ciklikus leltározási munkát a Warehouse Management mobilalkalmazásban.
 
-1. Jelentkezzen be a Warehouse Management mobilalkalmazásba a témakör korábbi, [Az esetek adatainak előkészítése szakaszban beállított](#prepare-demo-data) munkafelhasználóként. Az ebben a témakörben példaként beállított felhasználó neve *Julia Funderburk* *61*-es raktárban. (Az USMF bemutatóadatok segítségével úgy jelentkezhet be, mint ez a munkafelhasználó, hogy a *61*-es felhasználóazonosítót, és *1*-et a jelszóként ad meg.)
+1. Jelentkezzen be a Raktárkezelés mobilalkalmazásba [az](#prepare-demo-data) a munkafelhasználó, aki a cikk korábbi, Az esetek adatainak előkészítése szakaszban be van állítva. Ebben a példában a *felhasználó Neve Mindig Funderburk* *, és a 61-es raktárhoz van beállítva*. (Az USMF bemutatóadatok segítségével úgy jelentkezhet be, mint ez a munkafelhasználó, hogy a *61*-es felhasználóazonosítót, és *1*-et a jelszóként ad meg.)
 1. Válassza a főmenü **Készlet** elemét.
 1. Válassza a **Készlet** menü **Ciklikus leltár irányított** parancsát.
 1. Válassza ki a **Mennyiség** mezőt, írja be a *9* értéket a számbillentyűzet használatával, majd jelölje be az **OK** (jelölőnégyzetet).
@@ -227,7 +227,7 @@ Mielőtt ciklikus leltározás nélküli esemény történhet, létre kell hozni
 
 A ciklikus leltározás munka létrehozása után a következő lépések szerint hajtsa végre a ciklikus leltározási munkát a Warehouse Management mobilalkalmazásban.
 
-1. Jelentkezzen be a Warehouse Management mobilalkalmazásba a témakör korábbi, [Az esetek adatainak előkészítése szakaszban beállított](#prepare-demo-data) munkafelhasználóként. Az ebben a témakörben példaként beállított felhasználó neve *Julia Funderburk* *61*-es raktárban. (Az USMF bemutatóadatok segítségével úgy jelentkezhet be, mint ez a munkafelhasználó, hogy a *61*-es felhasználóazonosítót, és *1*-et a jelszóként ad meg.)
+1. Jelentkezzen be a Raktárkezelés mobilalkalmazásba [az](#prepare-demo-data) a munkafelhasználó, aki a cikk korábbi, Az esetek adatainak előkészítése szakaszban be van állítva. Ebben a példában a *felhasználó Neve Mindig Funderburk* *, és a 61-es raktárhoz van beállítva*. (Az USMF bemutatóadatok segítségével úgy jelentkezhet be, mint ez a munkafelhasználó, hogy a *61*-es felhasználóazonosítót, és *1*-et a jelszóként ad meg.)
 1. Válassza a főmenü **Készlet** elemét.
 1. Válassza a **Készlet** menü **Ciklikus leltár nélküli** parancsát.
 1. Válassza ki a **Zónaazonosító** mezőt, adja meg a *BULK06* mezőt, majd válassza az **OK** gombra (a pipagombra).
@@ -259,7 +259,7 @@ A tényleges készlet azt állítja, hogy az *L0101* cikkből tényleges készle
 
 A következő lépések szerint hajtsa végre a ciklikus leltározási munkát a Warehouse Management mobilalkalmazásban.
 
-1. Jelentkezzen be a Warehouse Management mobilalkalmazásba a témakör korábbi, [Az esetek adatainak előkészítése szakaszban beállított](#prepare-demo-data) munkafelhasználóként. Az ebben a témakörben példaként beállított felhasználó neve *Julia Funderburk* *61*-es raktárban. (Az USMF bemutatóadatok segítségével úgy jelentkezhet be, mint ez a munkafelhasználó, hogy a *61*-es felhasználóazonosítót, és *1*-et a jelszóként ad meg.)
+1. Jelentkezzen be a Raktárkezelés mobilalkalmazásba [az](#prepare-demo-data) a munkafelhasználó, aki a cikk korábbi, Az esetek adatainak előkészítése szakaszban be van állítva. Ebben a példában a *felhasználó Neve Mindig Funderburk* *, és a 61-es raktárhoz van beállítva*. (Az USMF bemutatóadatok segítségével úgy jelentkezhet be, mint ez a munkafelhasználó, hogy a *61*-es felhasználóazonosítót, és *1*-et a jelszóként ad meg.)
 1. Válassza a főmenü **Készlet** elemét.
 1. Válassza a **Készlet** menü **Eseti leltározás** parancsát.
 1. Válassza ki a **Hely** mezőt, adja meg a *01A02R2S1B* mezőt, majd válassza az **OK** gombra (a pipagombra).

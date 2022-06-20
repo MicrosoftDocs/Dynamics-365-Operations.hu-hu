@@ -1,6 +1,6 @@
 ---
 title: Kézi készletmozgás halasztott feldolgozása
-description: Ez a témakör azt mutatja be, hogyan használható a kézi készletmozgás halasztott feldolgozása a Micorsoft Dynamics 365 Supply Chain Managementben.
+description: Ez a témakör azt mutatja be, hogyan használható a Microsoft kézi készletmozgásának halasztott feldolgozása Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 04/27/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c2e7296d77332b665e5d618d39804216f4347ca2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863737"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Kézi készletmozgás halasztott feldolgozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan használható a kézi készletmozgás halasztott feldolgozása a Micorsoft Dynamics 365 Supply Chain Managementben.
+Ez a témakör azt mutatja be, hogyan használható a Microsoft kézi készletmozgásának halasztott feldolgozása Dynamics 365 Supply Chain Management.
 
 A halasztott feldolgozás esetében a raktári dolgozók továbbra is más munkát folytatnak, mialatt a betárolási művelet a háttérben lesz feldolgozva. A haslasztott feldolgozás akkor hasznos, ha a kiszolgálón előfordulhat a feldolgozási idő megnövekedése alkalomszerűen vagy nem tervezetten, és a megnövekedett feldolgozási idő hatással lehet a dolgozó termelékenységére. Ezzel a *Készletmozgás* munkatípus hozzá lett adva a funkció által támogatott munkatípusok halmazhoz.
 

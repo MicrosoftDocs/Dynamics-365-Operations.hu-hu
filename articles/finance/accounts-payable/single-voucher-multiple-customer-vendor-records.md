@@ -1,6 +1,6 @@
 ---
 title: Egyetlen bizonylat több vevő- vagy szállítórekorddal
-description: Ez a témakör áttekinti, mi történik, ha több vevő- vagy szállítórekordot tartalmazó bizonylatot ad fel. Ez a funkció a Microsoft Dynamics 365 Finance későbbi verzióiban meg fog szűnni. Emiatt – az elszámolásfeldolgozás könyvelési hatása miatt – nem ajánlott ezzel a módszerrel végrehajtani a feladást.
+description: Ez a cikk áttekintést nyújt arról, hogy mi történik, ha egy bizonylatot több vevői vagy szállítói rekordot ad fel. Ennek a funkciónak Microsoft Dynamics a használata a 365 Pénzügy jövőbeli verzióiban megszűnik, ezért a kiegyenlítés feldolgozására gyakorolt könyvelési hatás miatt nem ajánljuk ezt a feladási módszert.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8677eba2c38c6273555e1189c0153272a8ff9e005655f3846c0d7605b872ff94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb94d582020484d8f37eb139c037fb108894c9ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889091"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Egyetlen bizonylat több vevő- vagy szállítórekorddal
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekinti, mi történik, ha több vevő- vagy szállítórekordot tartalmazó bizonylatot ad fel. Ez a funkció a későbbi verziókban meg fog szűnni. Emiatt – az elszámolásfeldolgozás könyvelési hatása miatt – nem ajánlott ezzel a módszerrel végrehajtani a feladást. 
+Ez a cikk áttekintést nyújt arról, hogy mi történik, ha egy bizonylatot több vevői vagy szállítói rekordot ad fel. Ez a funkció a későbbi verziókban meg fog szűnni. Emiatt – az elszámolásfeldolgozás könyvelési hatása miatt – nem ajánlott ezzel a módszerrel végrehajtani a feladást. 
 
 Egy bizonylat több vevő vagy szállító esetében történő használatára általánosan elterjedt példa az egyenlegátvitel az ügyfelek között vagy az egyenleg nettóérték-számítása a vevők és a szállítók között az adott szervezeten belül. 
 
@@ -35,7 +35,7 @@ Az egynél több vevőt vagy szállítót tartalmazó bizonylatok az alábbi mó
 -   Többsoros bizonylat használata több vevővel vagy szállítóval, amelynél nincs főkönyvi ellenszámla.
 -   Bizonylat bevitele, amelynél a számla és az ellenszámla szállító/szállító, vevő/vevő, szállító/vevő vagy vevő/szállító.
 
-Ez a témakör bemutatja, hogyan történik a kiegyenlítés feldolgozása több vevő- vagy szállítórekordot tartalmazó bizonylat feladásakor. Ez a témakör emellett megkerülő megoldásokat tartalmaz, amelyek segítenek megismerni azt, hogyan kerülhető el a több vevőt vagy szállítót tartalmazó bizonylatok használata. Konkrét példákat is ismertetünk, amelyek két olyan gyakori kiegyenlítési helyzetet mutatnak be, amelyekre hatással van a több vevőt vagy szállítót tartalmazó bizonylatok használata:
+Ez a cikk azt mutatja be, hogyan történik a kiegyenlítés feldolgozása, amikor egy bizonylat több vevői vagy szállítói rekordot ad fel. Ez a cikk további megoldásokat is biztosít annak érdekében, hogy jobban megértsük, hogyan lehet elkerülni egy bizonylat több vevővel vagy szállítóval történő alkalmazását. Konkrét példákat is ismertetünk, amelyek két olyan gyakori kiegyenlítési helyzetet mutatnak be, amelyekre hatással van a több vevőt vagy szállítót tartalmazó bizonylatok használata:
 
 -   Készpénzfizetési engedmény könyvelése
 -   Átértékelés könyvelése

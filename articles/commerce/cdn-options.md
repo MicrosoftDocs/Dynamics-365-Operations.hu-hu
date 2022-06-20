@@ -1,6 +1,6 @@
 ---
 title: Tartalomkézbesítési hálózat végrehajtási beállításai
-description: Ez a témakör a tartalomkézbesítési hálózat (CDN) végrehajtásának különböző, Microsoft Dynamics 365 Commerce-környezetekben használható beállításait vizsgálja meg. Ilyen lehetőségek például az Azure Front Door és a vevő által birtokolt Azure Front Door natív, Commerce rendszerbeli példányai.
+description: Ez a cikk a tartalomszállítási hálózat (CDN) megvalósítás különböző, környezetekben használható Microsoft Dynamics 365 Commerce beállításait vizsgálja meg. Ilyen lehetőségek például az Azure Front Door és a vevő által birtokolt Azure Front Door natív, Commerce rendszerbeli példányai.
 author: BrianShook
 ms.date: 07/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 944123f3afe1c869c262da3997a73d8c60bbc366
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a63751d42ab98610904191f1c09794b2311b0189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884417"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Tartalomkézbesítési hálózat végrehajtási beállításai
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a tartalomkézbesítési hálózat (CDN) végrehajtásának különböző, Microsoft Dynamics 365 Commerce-környezetekben használható beállításait vizsgálja meg. Ilyen lehetőségek például az Azure Front Door és a vevő által birtokolt Azure Front Door natív, Commerce rendszerbeli példányai.
+Ez a cikk a tartalomszállítási hálózat (CDN) megvalósítás különböző, környezetekben használható Microsoft Dynamics 365 Commerce beállításait vizsgálja meg. Ilyen lehetőségek például az Azure Front Door és a vevő által birtokolt Azure Front Door natív, Commerce rendszerbeli példányai.
 
 A Commerce-vevőknek számos lehetőségük van, amikor a CDN-szolgáltatás Commerce-környezetben történő használatát fontolgatják. A Commerce rendszer alapvető Azure Front Door támogatással jelenik meg, amely alapvető tárhely- és egyéni tartománykövetelményeket fed le. Olyan vállalatok esetén, amelyek nagyobb ellenőrzést és konkrétabb biztonsági képességeket, például webalkalmazási tűzfalat (WAF) szeretnének, a legjobb lehetőség az Azure Front Door vevő által birtokolt példánya vagy külső CDN-szolgáltatás használata.
 

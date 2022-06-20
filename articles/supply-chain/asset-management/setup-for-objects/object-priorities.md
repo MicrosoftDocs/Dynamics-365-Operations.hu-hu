@@ -1,6 +1,6 @@
 ---
-title: Eszköz szolgáltatásszintjei
-description: Ez a témakör bemutatja az Eszközkezelés eszközökhöz tartozó szolgáltatási szintjeit.
+title: Eszköz szolgáltatási szintjei
+description: Ez a témakör bemutatja az eszközkezelés eszközkezelési szolgáltatási szintjeinek témakörét.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4f7daa10931ce406a5d2bdbbc1dced067e3de5065cdb61cce369d617709d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f7429b30253f540925e67ff9239667a0a404f26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723599"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908685"
 ---
-# <a name="asset-service-levels"></a>Eszköz szolgáltatásszintjei
+# <a name="asset-service-levels"></a>Eszköz szolgáltatási szintjei
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Ez a témakör bemutatja az Eszközkezelés eszközökhöz tartozó szolgáltatási szintjeit. Az eszköz szolgáltatási szintje az eszközökhöz kapcsolódnak, és átkerülnek a karbantartási kérésekre és munkarendelésekre. A Munkarendelés ütemezése során a munkarendelések prioritásának kiszámításához használatosak. Az eszköz szolgáltatási szintjei módosíthatók, ha szükségesek a változtatások.
+Ez a témakör bemutatja az eszközkezelés eszközkezelési szolgáltatási szintjeinek témakörét. Az eszköz szolgáltatási szintje az eszközökhöz kapcsolódnak, és átkerülnek a karbantartási kérésekre és munkarendelésekre. A Munkarendelés ütemezése során a munkarendelések prioritásának kiszámításához használatosak. Az eszköz szolgáltatási szintjei módosíthatók, ha szükségesek a változtatások.
 
 A munkarendelés ütemezéséhez szükséges értékelési pontszámok kiszámításával kapcsolatos beállításra vonatkozó további információkat az [Eszközkezelés paraméterei](../setup-for-objects/enterprise-asset-management-parameters.md) részben találhat. Az eszköz szolgáltatási szintjéhez legalább egy alapértelmezett rekordot be kell állítania. Ez az alapértelmezett rekord akkor használatos, ha a Munkarendelés ütemezése során nem találhatók egyéb egyezések.
 

@@ -1,6 +1,6 @@
 ---
 title: Képek feltöltése
-description: Ez a témakör azt mutatja be, hogyan tölthet fel képeket a Microsoft Dynamics 365 Commerce webhelykészítőben.
+description: Ez a témakör azt ismerteti, hogyan lehet képeket feltölteni a webhelyszerkesztőbe Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: e0f5cdd0381932cffc64f1c7e83eecd4662d8c9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892834"
 ---
 # <a name="upload-images"></a>Képek feltöltése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan tölthet fel képeket a Microsoft Dynamics 365 Commerce webhelykészítőben.
+Ez a témakör azt ismerteti, hogyan lehet képeket feltölteni a webhelyszerkesztőbe Microsoft Dynamics 365 Commerce.
 
 A Commerce webhelykészítő médiatára segítségével képeket tölthet fel, egyesével vagy tömegesen mappákkal. Mindig a legnagyobb felbontással és minőséggel töltse fel a képet, mert a képátméretező összetevő automatikusan optimalizálja a képet különböző nézetablakok és töréspontok számára.
 
@@ -42,7 +42,7 @@ Kép feltöltésekor meg lehet adni a következő adatokat.
 
 > [!NOTE]
 > - A kiválasztott kategóriába tartozó képeszközöket is automatikusan címkézik a kategóriával, hogy egy adott kategóriába tartozó eszközök keresésekor támogassa a keresést.
-> - A termék részletező lapjai dinamikusan generálják az Alt Text szöveget a terméknév használatával, így a termékkép Helyettesítő szövegének módosítása nem fogja befolyásolni **a** megjelenített **képet**.
+> - A termék részletező **lapjai dinamikusan generálják az Alt Text** szöveget a terméknév használatával, **így** a termékkép Helyettesítő szövegének módosítása nem fogja befolyásolni a megjelenített képet.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Az omnicsatornás képek elnevezési konvenciói 
 

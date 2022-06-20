@@ -1,6 +1,6 @@
 ---
 title: Az ügyfélportál telepítése, beállítása és frissítése
-description: Ez a témakör tartalmazza az Ügyfélportál licencelési adatait és telepítési útmutatását.
+description: Ez a cikk a licencelés részleteit és a vevői portál beállítási útmutatását tartalmazza.
 author: Henrikan
 ms.date: 06/08/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 187efe1372bf2400241f3d65751189247c001447
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8344212e66cb57ea8c9d4e8c2cdfbf022bc199c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060613"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850583"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Az ügyfélportál telepítése, beállítása és frissítése
 

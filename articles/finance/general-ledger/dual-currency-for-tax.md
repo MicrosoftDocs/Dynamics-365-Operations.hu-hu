@@ -1,6 +1,6 @@
 ---
 title: Kettős pénznemtámogatás adó esetén
-description: Ez a témakör azt mutatja be, hogyan lehet kiterjeszteni a kettős pénznemkönyvelési funkciót az adózási területre, és az adószámítás és a feladás hatását
+description: Ez a cikk bemutatja, hogy hogyan lehet kiterjeszteni a kettős pénznemkönyvelési funkciót az adótartományban, és hogyan lehet kiterjeszteni az adószámítást és a feladást.
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fcd5a3afb442d9c85aba12b7782cf09f88f0e51a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 13d70d964a83c2efba090244d549bdb38ad25af2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713044"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909040"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Kettős pénznemtámogatás áfa esetén
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet kiterjeszteni a kettős pénznemkönyvelést az áfára, és az áfaszámítás, -feladás és -kiegyenlítések hatását.
+Ez a cikk bemutatja, hogy hogyan lehet kiterjeszteni a kettős pénznemelszámolást az áfákra, és hogyan lehet kiterjeszteni az áfaszámításokat, -feladásokat és kiegyenlítéseket.
 
 A Dynamics 365 Pénzügy két pénznemes funkcióját a 8.1-es verzióban (2018. október 1.) vezették be. Megváltoztatja a könyvelési bejegyzések számításának módját a jelentési pénznemben.
 
@@ -89,7 +89,7 @@ Ez a funkció csak az új tranzakciókra lesz alkalmazva. A TAXTRANS táblában 
 
 Az előző eset megakadályozása érdekében ajánlott módosítani ezt a paramétert egy olyan új (tiszta) adóelszámolási időszakban, amely nem tartalmaz kiegyenlítetlen adózási tranzakciókat. Ha módosítani kívánja ezt az értéket egy adózási időszak közepén, futtassa "az áfa kiegyenlítése és feladása" programot a jelenlegi adózási időszakra, mielőtt módosítaná a paraméter értékét.
 
-Ez a funkció olyan könyvelési tételeket vesz fel, amelyek egyértelművé teszik a pénznemek közötti átváltásból származó nyereségeket és veszteségeket. Amikor az áfafizetés során újraértékelés történik, a bejegyzéseket a realizált pénznemkorrekció eredményszámláira könyveli a program. További információ ennek a témakörnek a későbbi részén lévő, [Adóelszámolás automatikus egyenlege a jelentési pénznemben](#tax-settlement-auto-balance-in-reporting-currency) című szakaszában található.
+Ez a funkció olyan könyvelési tételeket vesz fel, amelyek egyértelművé teszik a pénznemek közötti átváltásból származó nyereségeket és veszteségeket. Amikor az áfafizetés során újraértékelés történik, a bejegyzéseket a realizált pénznemkorrekció eredményszámláira könyveli a program. A további tudnivalókat lásd [a](#tax-settlement-auto-balance-in-reporting-currency) jelentési pénznemek automatikus egyenlegének jelentési pénznemben című részében.
 
 > [!NOTE]
 > Az áfafizetés során a pénzügyi dimenziók adatai az adóügyi számlákból (a mérlegszámlákból) származnak, és az adatok a pénznemkorrekció – nyereséget vagy a veszteséget mutató – eredményszámláira kerülnek. Mivel a pénzügyi dimenziók értékére vonatkozó korlátozások eltérnek a mérlegszámlák és az eredményszámlák között, a forgalmi adó rendezése és feladása között hiba történhet. Ha el szeretné kerülni a számlastruktúrák módosítását bekapcsolhatja a „Pénzügyi dimenziók kitöltése a realizált pénznemkorrekció eredményszámláin az áfafizetéshez” funkciót. Ez a funkció kényszeríti a pénzügyi dimenziók pénznemkorrekciós eredményszámlákra történő származtatását. 

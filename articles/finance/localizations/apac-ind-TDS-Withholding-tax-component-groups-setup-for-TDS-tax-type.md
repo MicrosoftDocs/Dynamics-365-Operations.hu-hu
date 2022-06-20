@@ -1,6 +1,6 @@
 ---
 title: Adóelőleg összetevőcsoportok beállítása a TDS adótípusokhoz
-description: Ez a témakör elmagyarázza, hogyan állíthatja be az adóelőleg-összetevőcsoportokat, mint a Bérleti díj és Alvállalkozó a Forrásnál levont adó (TDS) adótípushoz.
+description: Ez a cikk bemutatja az adóelőleg-összetevő csoportok (például Bérlet és Alvállalkozó) beállítását a forrásnál levont adó (TDS) adótípushoz.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ad4ac16d2618a99ba8ea5c2da010eb8e96447775
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e7b856be18618573408388fe0acbd702aeb4bcc3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726865"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896254"
 ---
 # <a name="set-up-withholding-tax-component-groups-for-the-tds-tax-type"></a>Adóelőleg összetevőcsoportok beállítása a TDS adótípusokhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör elmagyarázza, hogyan állíthatja be az adóelőleg-összetevőcsoportokat, mint a **Bérleti díj** és **Alvállalkozó** a Forrásnál levont adó (TDS) adótípushoz.
+Ez a cikk bemutatja **az** **adóelőleg**-összetevő csoportok (például Bérlet és Alvállalkozó) beállítását a forrásnál levont adó (TDS) adótípushoz.
 
 1. Lépjen az **Adó \> Beállítás \> Adóelőleg \> Adóelőleg összetevőcsoportok** részhez.
 

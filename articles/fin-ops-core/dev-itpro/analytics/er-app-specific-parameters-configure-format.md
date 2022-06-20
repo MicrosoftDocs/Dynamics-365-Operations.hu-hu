@@ -1,6 +1,6 @@
 ---
-title: ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
-description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni az Elektronikus jelentéskészítési (ER) formátumokat a jogi személyeknél megadott paraméterek használatára.
+title: ER-formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
+description: Ez a cikk bemutatja, hogy hogyan konfigurálhatja az elektronikus jelentési (ER) formátumokat a jogi személyenként megadott paraméterek használatára.
 author: NickSelin
 ms.date: 04/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb44422c4cdcc87989cdfb28dcd7d5cfea9002eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765832"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858828"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
 
@@ -33,17 +33,17 @@ Számos olyan Elektronikus jelentéskészítési (ER) formátumban, amelyet a k�
 -   Minél több jogi személy van, annál több ER formátumkonfigurációt kell karbantartani.
 -   Az ER konfigurációk karbantartása megköveteli, hogy az üzleti felhasználók rendelkeznek ER-ismeretekkel.
 
-Az ER alkalmazásspecifikus paraméterek funkcióval a kiemelt felhasználók konfigurálhatják az adatszűrést egy ER formátumban, hogy az absztrakt szabályok egy csoportján alapuljon. Ezek a szabályok beállíthatók úgy, hogy az ER formátumban elérhető adatforrásokat használják. Az üzleti felhasználók ezután az ER-keretrendszeren túl valódi szabályokat is megadhatnak a felhasználói felület (UI) segítségével, amely a megfelelő ER formátum beállításain alapulva automatikusan létrejön, és az aktuális jogi személy adataihoz hozzáférnek az ER formátum adatforrásai. Az ER formátumhoz megadott szabályok csoportját exportálhatja a Dynamics 365 Finance (Finance) példány aktuális jogi személyéből. Ezt követően importálható egy másik jogi személybe akár ugyanazon a Finance példányon, akár egy másik példányon, ugyanazon ER formátum szabálycsoportjaként.
+Az ER alkalmazásspecifikus paraméterek funkcióval a kiemelt felhasználók konfigurálhatják az adatszűrést egy ER formátumban, hogy az absztrakt szabályok egy csoportján alapuljon. Ezek a szabályok beállíthatók úgy, hogy az ER formátumban elérhető adatforrásokat használják. Az üzleti felhasználók ezután az ER-keretrendszeren túl valódi szabályokat is megadhatnak a felhasználói felület (UI) segítségével, amely a megfelelő ER formátum beállításain alapulva automatikusan létrejön, és az aktuális jogi személy adataihoz hozzáférnek az ER formátum adatforrásai. Az ER-formátumhoz megadott szabályok exportálhatók a Dynamics 365 Pénzügy (Finance) példány aktuális jogi személyeiből. Ezt követően importálható egy másik jogi személybe akár ugyanazon a Finance példányon, akár egy másik példányon, ugyanazon ER formátum szabálycsoportjaként.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A jelen témakörben leírt példák végrehajtásához hozzáféréssel kell rendelkeznie a Regulatory Configuration Service (RCS) példányához, amelyet ugyanarra a bérlőre telepítettek, mint a Finance szolgáltatást, a következő szerepkörök egyikéhez:
+Az ebben a példában olvasható példák közül csak akkor lehet végrehajtani, ha hozzáfér a Regulatory Configuration Services (RCS) példányhoz, amely ugyanannak a bérlőnek van kiépítve, mint a Pénzügy, a következő szerepkörök valamelyikéhez:
 
 - Elektronikus jelentések fejlesztője
 - Elektronikus jelentések funkcióival foglalkozó konzulens
 - Rendszergazda
 
-Javasoljuk, hogy hajtsa végre az [ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban](er-calculated-field-type.md) témakörben leírt lépéseket. Ha már elvégezte ezeket a lépéseket, akkor kihagyhatja a következő, **ER konfigurációk importálása az RCS-be** szakaszban leírt lépéseket.
+Javasoljuk, hogy a [SZÁMÍTOTT MEZŐ típusú cikk ER-adatforrásaira vonatkozó paraméterezett hívások támogatásához kövessen](er-calculated-field-type.md) végre lépéseket. Ha már elvégezte ezeket a lépéseket, akkor kihagyhatja a következő, **ER konfigurációk importálása az RCS-be** szakaszban leírt lépéseket.
 
 ## <a name="import-er-configurations-into-rcs"></a>ER Konfigurációk importálása RCS-be
 
@@ -58,7 +58,7 @@ Töltse le és helyben tárolja a következő ER-konfigurációkat.
 
 Ezután jelentkezzen be a RCS-példányba.
 
-Ebben a példában egy konfigurációt hoz létre a Litware, Inc. mintavállalatra vonatkozóan. A jelen eljárás befejezése előtt hajtsa végre a [Konfigurációszolgáltató létrehozása és aktívként történő megjelölése](tasks/er-configuration-provider-mark-it-active-2016-11.md) témakör lépéseit az RCS-ben.
+Ebben a példában egy konfigurációt hoz létre a Litware, Inc. mintavállalatra vonatkozóan. Mielőtt ezt az eljárást végre tudja hozni, [végre kell hoznia a](tasks/er-configuration-provider-mark-it-active-2016-11.md) konfigurációszolgáltató létrehozása lépést, és aktívként kell megjelölnie az RCS-ben.
 
 1.  Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés** elemet.
 2.  Válassza a **Jelentéskészítési konfigurációk** elemet.
@@ -300,7 +300,7 @@ Az ebben a szakaszban található lépéseket ismételje meg a **LE adatok keres
 -   Leképezés paraméterezett hívások tanulásához.xml
 -   Modell paraméterezett hívások tanulásához.xml
 
-Ha meg szeretné tudni, hogyan kell a konfigurált **LE adatok keresésének tanulási formátuma** ER-formátumot használni jogi személytől függő adókódcsoportok létrehozásához az adótranzakciók különböző adózási szintek alapján történő szűréséhez, kövesse az [ER-formátum paramétereinek beállítása jogi személyenként](er-app-specific-parameters-set-up.md) témakörben leírt lépéseket.
+**Ha meg szeretne ismerkedni a konfigurált formátum használatával, ismerkedhet meg a LE** adat ER-formátumával a jogi személyfüggő adókódkészletek beállításával, hogy az adótranzakciókat különböző adózási szintek szerint szűrje, [kövesse az ER-formátum](er-app-specific-parameters-set-up.md) paramétereinek beállítása jogi személyenként cikket.
 
 ## <a name="additional-resources"></a>További erőforrások
 

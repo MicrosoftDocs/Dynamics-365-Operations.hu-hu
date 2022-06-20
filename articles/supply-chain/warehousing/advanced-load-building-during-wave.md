@@ -1,6 +1,6 @@
 ---
 title: Speciális rakomány-összeállítás hullám közben
-description: Ez a témakör a speciális hullámrakomány-összeállítással kapcsolatban tartalmaz tájékoztatást, amely összeállítás a hullám-végrehajtás során automatikusan hozzárendeli a szállítmányokat a meglévő hullámokhoz. Ebből következően olyan releváns rakományokat hozhat létre, amelyek a rakománytervezés munkaterületének használata nélkül jelölik a teherautókat.
+description: Ez a cikk a speciális hullámbetöltési folyamatról nyújt tájékoztatást, amely a hullám végrehajtása során automatikusan hozzárendeli a szállítmányokat a meglévő hullámokhoz. Ebből következően olyan releváns rakományokat hozhat létre, amelyek a rakománytervezés munkaterületének használata nélkül jelölik a teherautókat.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0dafac981bcdec307de6dc202f557e7b8837ae2e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3a630a7f388e0bbb6fee96e4de753b2380d305c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863766"
 ---
 # <a name="advanced-load-building-during-wave"></a>Speciális rakomány-összeállítás hullám közben
 
@@ -220,7 +220,7 @@ Igény szerint tetszőleges számú rakomány-összeállítási sablont beállí
 
 ## <a name="scenario"></a>Forgatókönyv
 
-Ez a példa azt mutatja be, hogy az ebben a témakörben korábban ismertetett beállítások milyen módon befolyásolják a raktári műveleteket egy értékesítési rendelés feldolgozásakor. Ez a forgatókönyv az **USMF** bemutatóadatokat együtt használja a beállítási útmutatóban megadott egyéb bemutatóértékekkel együtt.
+Ez az eset bemutatja, hogy az ebben a cikkben korábban ismertetett beállítások hogyan befolyásolják a raktári műveleteket az értékesítési rendelések feldolgozása során. Ez a forgatókönyv az **USMF** bemutatóadatokat együtt használja a beállítási útmutatóban megadott egyéb bemutatóértékekkel együtt.
 
 ### <a name="create-sales-orders"></a>Értékesítési rendelések létrehozása
 

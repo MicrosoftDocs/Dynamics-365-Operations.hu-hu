@@ -1,6 +1,6 @@
 ---
 title: Ügyfélportál testre szabása és használata
-description: Ez a témakör azt mutatja be, hogyan lehet testreszabni a Ügyfélportált a rendszerhez történő hozzáadását követően.
+description: Ez a cikk bemutatja, hogy hogyan szabható testre a vevői portál, miután hozzáadta a rendszert.
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 85ec4beda2efe62ff5076a5ed694efbc47c6d87f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878874"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Ügyfélportál testre szabása és használata
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör bemutatja azokat a különböző lapokat, amelyek a Ügyfélportál modulban gyári kiépítésben elérhetők. Bemutatja, hogy mire képesek a lapok, illetve hogyan lehet ezeket testre szabni.
+Ez a témakör a vevői portálon a mezőből elérhető különböző lapokat írja le. Bemutatja, hogy mire képesek a lapok, illetve hogyan lehet ezeket testre szabni.
 
 A Ügyfélportál néhány weblapot és műveletet kínál már gyári állapotban is. A következő oldaltérkép áttekintést nyújt ezekről a weboldalakról és műveletekről, valamint a műveletek végrehajtására képes szerepkörökről.
 
@@ -32,16 +32,16 @@ A Ügyfélportál néhány weblapot és műveletet kínál már gyári állapotb
 
 ## <a name="typical-customizations"></a>Jellemző testreszabások
 
-A következő témakörökben megismerkedhet a Power Apps portálok alapjaival és a portálok testreszabásával:
+Az alábbi cikkek segítséget segítenek a portálokkal Power Apps kapcsolatos alapismeretek és a portálok testreszabásának elsajátításában:
 
-- [Sablonok használata](/powerapps/maker/portals/work-with-templates) – Ez a témakör általános áttekintést nyújt a Power Apps-portálok működéséről, valamint a portálok egyszerű testreszabásainak végrehajtásáról.
-- [Portáltartalom kezelése](/dynamics365/portals/manage-portal-content) – Ez a témakör azt mutatja be, hogyan lehet kezelni és testreszabni a portál felületén található tartalmakat.
-- [CSS-szerkesztés](/powerapps/maker/portals/edit-css) – Ez a témakör a portál felhasználói felületének (UI) bonyolultabb testreszabásához nyújt segítséget.
-- [Téma létrehozás a portálhoz](/dynamics365/portals/create-theme) – Ez a témakör segít létrehozni egy UI-témát a portálhoz.
-- [A portál tartalmának egyszerű létrehozása és közzététele](/dynamics365/portals/create-expose-portal-content) – Ez a témakör a portálon használt mögöttes adatok és táblák kezelését segíti.
-- [A portálon használható kapcsolattartó konfigurálása](/powerapps/maker/portals/configure/configure-contacts) – Ez a témakör azt mutatja be, hogyan lehet létrehozni és testreszabni a felhasználói szerepköröket, valamint a biztonsági és a hitelesítés működését a Power Apps-portálokon.
-- [A táblák űrlapjaihoz és a portálokon található webképernyőkhez tartozó megjegyzések konfigurálása](/powerapps/maker/portals/configure-notes) – Ez a témakör azt mutatja be, hogyan lehet dokumentumokat és további tárolóhelyeket hozzáadni a portálhoz.
-- [Hibakezelés a portál webhelyéhez](/powerapps/maker/portals/admin/view-portal-error-log) – Ez a témakör azt mutatja be, hogyan lehet megtekinteni a portál hibanaplóit, és tárolni azokat a Microsoft Azure Blob tárolási fiókban.
+- [Sablonok használata](/powerapps/maker/portals/work-with-templates) – ez a cikk általános áttekintést nyújt a Power Apps portálok működését és a portálok egyszerű testreszabásának lehetőségről.
+- [Portál tartalmának](/dynamics365/portals/manage-portal-content) kezelése – ez a cikk bemutatja, hogyan kezelhető és testreszabható a portál felületi tartalma.
+- [Szerkesztés CSS](/powerapps/maker/portals/edit-css) – ez a cikk segít a portál felhasználói felületének összetettebb testreszabásában.
+- [Téma létrehozása a portál számára](/dynamics365/portals/create-theme) – ez a cikk segít a portál felhasználói felületi téma létrehozásában.
+- [A portál tartalmának létrehozása és elérhetővé](/dynamics365/portals/create-expose-portal-content) tehetők – ez a cikk segít kezelni a portál által használt mögöttes adatokat és táblákat.
+- [Kapcsolattartó konfigurálása portál használatra – ez a cikk bemutatja, hogyan lehet létrehozni és testreszabni a felhasználói szerepköröket, valamint](/powerapps/maker/portals/configure/configure-contacts) hogyan működik a Power Apps portálok biztonsága és hitelesítése.
+- [Megjegyzések konfigurálása a portálok](/powerapps/maker/portals/configure-notes) táblázatos képernyőihez és webes képernyőihez – ez a cikk bemutatja, hogyan adhat hozzá dokumentumokat és további tárolókat a portálhoz.
+- [Hibakezelés a portálwebhelyhez](/powerapps/maker/portals/admin/view-portal-error-log) – ez a cikk bemutatja, hogyan lehet megtekinteni a portál hibanaplóit, és tárolni azokat a Microsoft Azure Blob tárolási fiókban.
 
 ## <a name="customize-the-order-creation-process"></a>A rendelés létrehozási folyamatának testreszabása
 

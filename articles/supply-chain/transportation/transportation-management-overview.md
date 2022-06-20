@@ -1,6 +1,6 @@
 ---
-title: Szállítás kezelés áttekintése
-description: Ez a témakör áttekintést ad a szállításkezelés funkcióiról a Supply Chain Management szolgáltatásban.
+title: Szállításkezelés áttekintése
+description: Ez a cikk áttekintést nyújt az Ellátásilánc-kezelés szállításkezelő funkcióiról.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6181d63c9ab447c4892948fe1f3ee41d2680b78d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 12f870c95f28e752c3c3b3dd4161d82815b9954a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671646"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897458"
 ---
 # <a name="transportation-management-overview"></a>Szállításkezelés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést ad a szállításkezelés funkcióiról a Supply Chain Management szolgáltatásban.
+Ez a cikk áttekintést nyújt az Ellátásilánc-kezelés szállításkezelő funkcióiról.
 
 A Szállításkezelés lehetővé teszi, hogy a vállalata szállítását használja, továbbá hogy azonosítsa a szállítót és az útvonal-tervezési megoldásokat a bejövő és a kimenő rendelésekhez. Például azonosíthatja a leggyorsabb vagy a legolcsóbb útvonalat a szállítmányhoz. A következő táblázat bemutatja a szállításkezelésben használatos fő eseteket.
 

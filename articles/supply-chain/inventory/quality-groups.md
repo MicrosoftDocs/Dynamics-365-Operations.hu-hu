@@ -1,6 +1,6 @@
 ---
 title: Cikkminőségi csoportok
-description: Ez a témakör azt írja le, hogyan lehet a termékek logikai csoportosítására cikkminőségi csoportokat használni és létrehozni, hogy a minőségi rendelések automatikus létrehozásához minőségi rendeléseket lehessen hozzárendelni.
+description: Ez a témakör azt írja le, hogyan lehet a termékek logikai csoportosítására cikkminőségi csoportokat használni és létrehozni, hogy a minőségi rendelések automatikus létrehozásához minőségi társítások rendelhetők hozzá.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f7a4932c561c052bec1eb0094a390e315b9b1bb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bf1ce49fa58fd1a8a5aa07636e0b2bd7e2fc10e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580912"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875365"
 ---
 # <a name="item-quality-groups"></a>Cikkminőségi csoportok
 
 [!include [banner](../includes/banner.md)]
 
-A minőségi csoport a cikkekre vonatkozó közös tesztkövetelményeket képvisel. Ez a témakör azt írja le, hogyan lehet a termékek logikai csoportosítására cikkminőségi csoportokat használni és létrehozni, hogy a minőségi rendelések automatikus létrehozásához minőségi rendeléseket lehessen hozzárendelni.
+A minőségi csoport a cikkekre vonatkozó közös tesztkövetelményeket képvisel. Ez a témakör azt írja le, hogyan lehet a termékek logikai csoportosítására cikkminőségi csoportokat használni és létrehozni, hogy a minőségi rendelések automatikus létrehozásához minőségi társítások rendelhetők hozzá.
 
 A minőségi csoporthoz rendelt cikkeket, illetve a cikkhez rendelt minőségi csoportokat lehet beállítani, módosítani és megtekinteni, ehhez menjen a **Készletkezelés \> Beállítás \> Minőségi csoportok** részhez. Miután a **Tesztcsoportok** oldalon definiálta a tesztkövetelményeket, meghatározhatja a minőségi rendelések automatikus létrehozásának szabályait. A folyamat egyszerűsítése érdekében az egyes cikkekhez tartozó szabályokat Ön nem határozza meg. Ehelyett egy minőségi csoportra vonatkozó szabályokat definiálhatunk a **Minőségi társítások** oldalon.
 

@@ -1,6 +1,6 @@
 ---
 title: Kiadásellenőrök konfigurálása
-description: Ez a témakör azt írja le, hogyan lehet a kiadásellenőrök használatával dinamikusan kiválasztani azt a felhasználót, akihez egy munkafolyamat-feladat, jóváhagyás vagy manuális döntés van hozzárendelve.
+description: Ez a témakör azt ismerteti, hogyan lehet dinamikusan kiválasztani a kiadás-felülvizsgálókat annak a felhasználónak a kiválasztásában, akihez egy munkafolyamat-feladat, jóváhagyás vagy manuális döntés van hozzárendelve.
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 110edf4c2733f899368069c7d215ae5b0882f5cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863223"
 ---
 # <a name="configure-expenditure-reviewers"></a>Kiadásellenőrök konfigurálása
 [!include[banner](../includes/banner.md)]
@@ -52,7 +52,7 @@ A pénzügyi dimenziókat az egyes jogi személyek fiókstruktúrái vezérlik. 
 
 ## <a name="example-1-expenditure-reviewers-based-on-organization-distributions"></a>1. példa: Költségellenőrök a szervezeti kiosztások alapján
 
-Ön a Contoso Appliances vállalatnál dolgozik, és szervezetének hat osztálya és 10 költséghelye van. Új beszerzési igénylés beküldése esetén először a részlegvezető, majd a költséghelyvezető jóváhagyását kell megszerezni.
+A Contoso Electronics vállalatnál dolgozik, és szervezetének hat részlege és 10 költségközpontja van. Új beszerzési igénylés beküldése esetén először a részlegvezető, majd a költséghelyvezető jóváhagyását kell megszerezni.
 
 Ebben a példában két *beszerzési igénylési kiadásellenőrt* konfigurál:
 
@@ -65,7 +65,7 @@ A beszerzési igénylés létrehozásakor a részleg és a költséghely pénzü
 
 ## <a name="example-2-expenditure-reviewers-based-on-project-distributions"></a>2. példa: Költségellenőrök a projektkiosztások alapján
 
-Ön a Contoso Appliances szolgáltatási részlegénél dolgozik. A szervezet előírja, hogy minden beszerzési rendelés projektvezetőjének jóvá kell hagyni a költséget. Ezenkívül a projekt költséghely-kezelőjének is jóvá kell hagynia. A jóváhagyásokat egyszerre is el lehet végezni. A munkafolyamat folytatása előtt minden esetben mindkét felhasználónak jóvá kell hagynia a beszerzési rendelést.
+A Contoso szolgáltatási osztályán dolgozik. A szervezet előírja, hogy minden beszerzési rendelés projektvezetőjének jóvá kell hagyni a költséget. Ezenkívül a projekt költséghely-kezelőjének is jóvá kell hagynia. A jóváhagyásokat egyszerre is el lehet végezni. A munkafolyamat folytatása előtt minden esetben mindkét felhasználónak jóvá kell hagynia a beszerzési rendelést.
 
 Ebben a példában létrehoz egy *beszerzési rendelési kiadásellenőrt*, amelynek a **PM és költséghely** nevet adja. Bejelöli a **Projektvezető** jelölőnégyzetet, és a **Költséghely dimenzió** számára beállítja az **Igen** értéket a **Beszerzési rendelési kiadásellenőr** oldal **Projektkiosztások** lapján. A konfiguráció részeként gondoskodni kell arról, hogy a **Projektvezető** mező minden projektnél be legyen állítva, és hogy a **Pénzügyi dimenzióértékek** oldalon az összes költséghelyhez meg legyen adva tulajdonos.
 
@@ -75,7 +75,7 @@ A beszerzési rendelés létrehozásakor meg kell adni a **Projekt** mezőt. Ha 
 
 ## <a name="set-up-expenditure-reviewers"></a>Kiadásellenőrök beállítása
 
-Ebben a példában azt láthatja, hogyan konfigurálhat beszerzési igénylési kiadásellenőrt. Egyéb típusú kiadásellenőrök konfigurálásához cserélje le az 1. lépésben szereplő navigációs útvonalat a jelen témakörben feljebb található, [Kiadásellenőrök típusai](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) című szakasz táblázatából származó megfelelő útvonalra.
+Ebben a példában azt láthatja, hogyan konfigurálhat beszerzési igénylési kiadásellenőrt. Ha egyéb típusú kiadás-felülvizsgálókat is konfigurálni kell, akkor az [1](configure-expenditure-reviewers.md#types-of-expenditure-reviewers). lépésben található navigációs útvonalat le kell cserélnie a kiadás-felülvizsgálók típusai szakasz táblázatának megfelelő elérési útjának helyére a cikk korábbi részében.
 
 1. Lépjen a **Beszerzés és forrás \> Beállítás \> Irányelvek \> Beszerzési igénylés kiadásellenőrei** oldalra.
 2. A **Beszerzési igénylés kiadásellenőrei** oldalon válassza az **Új** lehetőséget.

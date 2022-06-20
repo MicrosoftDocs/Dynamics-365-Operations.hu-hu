@@ -1,6 +1,6 @@
 ---
-title: Az ügyfélkör áttekintése
-description: Ez a témakör az üzleti alkalmazásban rendelkezésre álló új ügyfélkör-kezelési lehetőségekről ad áttekintést.
+title: Ügyfélkör áttekintése
+description: Ez a cikk áttekintést nyújt az üzletalkalmazásban elérhető új ügyfélprogram-funkciókról.
 author: bebeale
 ms.date: 02/01/2021
 ms.topic: overview
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b1e1b7a67141ffec01d926b7f917ebd4e1f24741
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984596"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885611"
 ---
 # <a name="clienteling-overview"></a>Ügyfélkör áttekintése
 
@@ -81,7 +81,7 @@ Ha be szeretné kapcsolni az Ügyfélkör funkciót, hajtsa végre az alábbi l�
     - Állítsa be a megjelenítési sorrendet ezekhez az attribútumokhoz. Ez a megjelenítési sorrend határozza meg, hogy melyik attribútumok jelenjenek meg az ügyfélkönyv vevői kártyáján. Az 1. helyen lévő elem magasabb, mint a 2. helyen lévő. Ennek megfelelően az 1. megjelenítési helyen lévő attribútum előbb megjelenik, mint a 2. helyen lévő.
 
     > [!NOTE]
-    > A Customer Insights ugyanarról az oldalról is elérhetővé tehető. Ehhez azonban Azure-alkalmazásazonosítót és titkos kulcsot kell létrehozni a hitelesítéshez. (A követelményekkel kapcsolatos további tudnivalók a témakör később következő, [A Customer Insights és a Commerce integrációjának bekapcsolása](#turn-on-the-integration-of-customer-insights-with-commerce) című szakaszában találhatók.) Ha be van kapcsolva a Customer Insights, és kiválaszt legalább egy olyan intézkedést, amelyet meg akar jeleníteni a vevő kártyáján, akkor ezek az intézkedések jelennek meg először. Ezután az ügyfélkönyv attribútumcsoportjai jelennek meg, a megjelenítési sorrend alapján. Ha például két intézkedést választ a Customer Insights rendszerből, akkor ez a két intézkedés és az ügyfélkönyv egyik attribútuma jelenik meg a vevő kártyáján. (Az ügyfélkönyv megjelenített attribútuma az az attribútum lesz, amelyik a legmagasabban van a megjelenítési sorrendben.)
+    > A Customer Insights ugyanarról az oldalról is elérhetővé tehető. Ehhez azonban Azure-alkalmazásazonosítót és titkos kulcsot kell létrehozni a hitelesítéshez. (A követelményekkel kapcsolatos tudnivalókat lásd: [A Cikk későbbi részében bekapcsolhatja a Vevői adatokat és a Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) szakaszt.) Ha a vevői adatkapcsolat be van kapcsolva, és a vevőkártyán egy vagy több olyan intézkedés van kiválasztva, amely meg fog jelenni a vevői kartonon, akkor ezek a intézkedések jelennek meg először. Ezután az ügyfélkönyv attribútumcsoportjai jelennek meg, a megjelenítési sorrend alapján. Ha például két intézkedést választ a Customer Insights rendszerből, akkor ez a két intézkedés és az ügyfélkönyv egyik attribútuma jelenik meg a vevő kártyáján. (Az ügyfélkönyv megjelenített attribútuma az az attribútum lesz, amelyik a legmagasabban van a megjelenítési sorrendben.)
 
 6. A **Kereskedelmi paraméterek** oldal **ügyfélkör** lapjának **Ügyfélkönyv attribútumcsoportja** mezőjében válassza ki az éppen létrehozott attribútumcsoportot.
 

@@ -1,6 +1,6 @@
 ---
 title: ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából
-description: Ez a témakör azt mutatja be, hogyan lehet letölteni az elektronikus jelentéskészítési (ER) konfigurációkat a konfigurációs szolgáltatás globális tárából.
+description: Ez a cikk bemutatja, hogyan tölthetők le az Elektronikus jelentéskészítés (ER) konfigurációi a Konfigurációs szolgáltatás globális tárházból.
 author: NickSelin
 ms.date: 06/02/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 4386e8fdbb2856d14d5b47ee5ab416c8d58b8d63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891904"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelentéskészítési (ER) konfigurációkat](general-electronic-reporting.md#Configuration) a konfigurációs szolgáltatás globális tárából. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Ez a cikk bemutatja, hogyan tölthetők [le az Elektronikus jelentéskészítés (ER)](general-electronic-reporting.md#Configuration) konfigurációi a konfigurációs szolgáltatás globális tárházból. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Konfigurációs tár megnyitása
 
-1. Jelentkezzen be a Dynamics 365 Finance alkalmazásba az alábbi szerepkörök egyikének használatával:
+1. Jelentkezzen be a Dynamics 365 Pénzügy alkalmazásba a következő szerepkörök valamelyikével:
 
     - Elektronikus jelentések fejlesztője
     - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -80,7 +80,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
     ![Konfigurációs tárházoldal, Verziók gyorslap, Importálás gomb.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
-> Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. További információkért nézze meg a jelen témakörrel kapcsolatos erőforrások listáját.
+> Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. A további tudnivalókat lásd a cikkhez kapcsolódó erőforrások listájában.
 
 > [!NOTE]
 > Az ER-konfigurációk konfigurálható úgy, hogy más konfigurációktól függjenek. Ezért a kiválasztott konfigurációval együtt előfordulhat, hogy más konfigurációk is automatikusan importálódnak. A konfiguráció függőségeivel kapcsolatos további tudnivalókat lásd: [Az ER-konfigurációk függőségének meghatározása más összetevőknél](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).

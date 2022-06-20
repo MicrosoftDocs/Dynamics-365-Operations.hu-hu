@@ -1,6 +1,6 @@
 ---
 title: Beszerzési rendelés létrehozása
-description: Ez a témakör bemutatja, hogy hogyan lehet manuálisan létrehozni beszerzési rendelést.
+description: Ez a cikk bemutatja, hogyan lehet manuálisan létrehozni egy beszerzési rendelést.
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2fd627b9874b3e3f7aad71fb2970ddcc333a608
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2a04a9f4a512a307efecb19703cd3df638ba5ff5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677394"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856077"
 ---
 # <a name="create-a-purchase-order"></a>Beszerzési rendelés létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet manuálisan létrehozni beszerzési rendelést. Sokkal jobban megfigyelhető, hogy a rendszer az alaptervezés, a közvetlen kiszállítás és más folyamatok eredményeként automatikusan hozza létre a beszerzési rendeléseket. Általában a beszerzési ügynök hozza létre a beszerzési rendeléseket. Az itt bemutatott példát az USMF bemutatócégben használhatja a különböző lépések megjegyzéseiben javasolt értékek használatával.
+Ez a cikk bemutatja, hogyan lehet manuálisan létrehozni egy beszerzési rendelést. Sokkal jobban megfigyelhető, hogy a rendszer az alaptervezés, a közvetlen kiszállítás és más folyamatok eredményeként automatikusan hozza létre a beszerzési rendeléseket. Általában a beszerzési ügynök hozza létre a beszerzési rendeléseket. Az itt bemutatott példát az USMF bemutatócégben használhatja a különböző lépések megjegyzéseiben javasolt értékek használatával.
 
 
 ## <a name="create-the-purchase-order-header"></a>Beszerzési rendelési fejléc létrehozása

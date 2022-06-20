@@ -1,6 +1,6 @@
 ---
 title: Potenciális vevők készpénzre váltása kettős írásban
-description: Ez a témakör a potenciális vevők készpénzre váltásáról a kettős írásban tartalmaz tájékoztatást.
+description: Ez a cikk a kettős írású potenciális vevő készpénzzel kapcsolatban tartalmaz tájékoztatást.
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7c53bcd1084d89b59d0f6b2674a85d7c3481a9bf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781791"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860109"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potenciális vevők készpénzre váltása kettős írásban
 
@@ -29,7 +29,7 @@ Az alkalmazások kezelőfelületén a feldolgozási állapotok és a számlázá
 A vevői és kapcsolattartói integrációval kapcsolatos tudnivalókat lásd: [Integrált vevői alapadatok](customer-mapping.md). A termékintegrációval kapcsolatos tudnivalókat lásd: [Egyesített termékkel kapcsolatos tapasztalat](product-mapping.md).
 
 > [!NOTE]
-> A Dynamics 365 Sales megoldásban mind a potenciális vevő, mind a vevő egy olyan rekordra hivatkozik a **Számla** táblában, ahol a **RelationshipType** oszlop **Potenciális vevő** vagy **Vevő**. Ha az üzleti logikában szerepel egy **Számla** minősítési folyamat, ahol a **Számla** rekordot létrehozták, majd előbb potenciális vevőként, majd vevőkén minősítették, akkor ez a rekord csak akkor szinkronizál a Finance and Operations alkalmazással, amikor az egy vevő (`RelationshipType=Customer`). Ha azt szeretné, hogy a **Számla** sor potenciális vevőként szinkronizálva legyen, a potenciális vevői adatok integrálásához egyéni leképezés szükséges.
+> A Dynamics 365 Sales megoldásban mind a potenciális vevő, mind a vevő egy olyan rekordra hivatkozik a **Számla** táblában, ahol a **RelationshipType** oszlop **Potenciális vevő** vagy **Vevő**. **·** **Ha** az üzleti logikában szerepel egy Számla – minősítési folyamat, amelyben a számlarekordot előbb létrehozzák, majd vevőként minősítik potenciális vevőként, akkor ez a rekord csak akkor szinkronizál a Pénzügy és műveletek alkalmazással, ha az vevő (`RelationshipType=Customer`). Ha azt szeretné, hogy a **Számla** sor potenciális vevőként szinkronizálva legyen, a potenciális vevői adatok integrálásához egyéni leképezés szükséges.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
@@ -96,7 +96,7 @@ Ha a Supply Chain Management alkalmazásól a Sales alkalmazásba szinkronizál,
 Új oszlopok kerülnek hozzáadásra a **Rendelés** táblához, és megjelennek a lapon. Ezeknek az oszlopoknak a többsége megjelenik az értékesítés modul **Integráció** lapján. Ha további információkat szeretne arról, hogyan lehet leképezni az állapot oszlopokat, lásd: [Értékesítési rendelés állapotához tartozó oszlopok alapján történő leképezés beállításhoz](sales-status-map.md).
 
 + A **Számla létrehozása** és a **Rendelés törlése** gombok az **Értékesítési rendelés** oldalon rejtettek a Salesben.
-+ Az **Értékesítési rendelés állapota** érték **Aktív** marad annak biztosítására, hogy a Supply Chain Management módosításai átkerülhessenek az értékesítési rendelésbe a Sales szolgáltatásban. Ennek vezérléséhez az alapértelmezett **Statecode \[ állapot\]** értékét **Aktívra** kell állítani.
++ Az **Értékesítési rendelés állapota** érték **Aktív** marad annak biztosítására, hogy a Supply Chain Management módosításai átkerülhessenek az értékesítési rendelésbe a Sales szolgáltatásban. Ennek vezérléséhez az alapértelmezett **Statecode \[állapot\]** értékét **Aktívra** kell állítani.
 
 ## <a name="invoices"></a>Számlák
 
@@ -111,7 +111,7 @@ Az értékesítési számlák létrehozása a Supply Chain Management történik
 
 A Potenciális vevők készpénzre váltása tartalmazza azokat a központi táblaleképezéseket, amelyek – az alábbi táblázatban látható módon – együttműködnek az adatok interakciója során.
 
-| Finance and Operations-alkalmazásoknak | Customer Engagement alkalmazások | Leírás |
+| Finance and Operations alkalmazások | Customer Engagement alkalmazások | Leírás |
 |-----------------------------|-----------------------------------|-------------|
 [Minden termék](mapping-reference.md#138) | msdyn_globalproducts | |
 [Vevők V3](mapping-reference.md#101) | számlák | |
@@ -122,7 +122,7 @@ A Potenciális vevők készpénzre váltása tartalmazza azokat a központi táb
 [CDS értékesítésiajánlat-fejléc](mapping-reference.md#215) | ajánlatok | |
 [CDS értékesítési ajánlat sorai](mapping-reference.md#214) | quotedetails | |
 [Kiadott termékek V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák | Az értékesítési számla fejlécek V2 táblája a Finance and Operations alkalmazásban tartalmazza az értékesítési rendelések és a szabadszöveges számlák számláit. A Dataverse kettős írás szűrője kiszűri a szabadszöveges számladokumentumokat. |
+[Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák | A Pénzügy és műveletek alkalmazás Értékesítési számlafejlécek V2 táblája tartalmazza az értékesítési rendelések és a szabadszöveges számlák számláit. A Dataverse kettős írás szűrője kiszűri a szabadszöveges számladokumentumokat. |
 [Értékesítésiszámla-sorok V2](mapping-reference.md#117) | invoicedetails | |
 [Értékesítési rendelés eredetkódjai](mapping-reference.md#186) | msdyn_salesorderorigins | |
 

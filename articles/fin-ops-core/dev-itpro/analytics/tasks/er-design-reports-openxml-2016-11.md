@@ -1,6 +1,6 @@
 ---
 title: ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
-description: Ez a témakör azt ismerteti, hogyan lehet létrehozni egy olyan új Elektronikus jelentéskészítési konfigurációt, amely egy sablont tartalmaz az elektronikus dokumentumok OPENXML-formátumú előállításához.
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni egy olyan új elektronikusjelentés-konfigurációt, amely openXML formátumú elektronikus dokumentumok előállításához tartalmaz sablont.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3dfe6ce9c918b5fccbd7097096fa359facdf41bbf6fd0fab6c61153171484cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b2325a5389e0bfe1efff17e5cd117ad8dbcd65d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753028"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908413"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör leírja, hogy a Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy új Elektronikus jelentés (ER) konfigurációt, amely tartalmazza az elektronikus dokumentumok létrehozására vonatkozó sablont az OPENXML formátumban. Ezt a konfigurációt a szállítói kifizetések feldolgozására használják.
+Ez a cikk bemutatja, hogy hogyan hozhatnak létre a System Administrator vagy Electronic Reporting Developer szerepkörű felhasználók egy új, OPENXML formátumú elektronikus dokumentumgeneráló sablont tartalmazó elektronikus jelentési (ER) konfigurációt. Ezt a konfigurációt a szállítói kifizetések feldolgozására használják.
 
 Ebben a példában a mintavállalatra, Litware-ra, Inc.-ra vonatkozóan létrehoz egy konfigurációs szolgáltatót. Ezeket a lépéseket a GBSI vállalatban hajthatja végre.
 

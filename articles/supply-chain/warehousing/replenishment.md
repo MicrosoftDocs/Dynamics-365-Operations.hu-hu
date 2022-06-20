@@ -1,6 +1,6 @@
 ---
 title: Feltöltés áttekintése
-description: A témakör ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat.
+description: A leírás ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat.
 author: Mirzaab
 ms.date: 02/19/2020
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7681294c1c05f1ca93330c948fc454b6460cb41c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3dceb8e6300d19eb9253e88debbaaef0b6987420
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985784"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893091"
 ---
 # <a name="replenishment-overview"></a>Feltöltés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-A témakör ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat. A témakör információi nem vonatkoznak a raktározási megoldásra, amely a Készletkezelés modulból érhető el.
+A leírás ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat. A cikk adatai nem vonatkoznak a Készletkezelésben elérhető raktárkezelési megoldásra.
 
 A következő feltöltési stratégiák állnak rendelkezésre:
 

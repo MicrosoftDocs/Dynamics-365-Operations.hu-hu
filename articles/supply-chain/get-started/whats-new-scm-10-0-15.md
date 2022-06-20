@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.15 szolgáltatásban (2021. január)
-description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.15 új vagy módosított szolgáltatásait írja le.
+description: Ez a témakör olyan funkciókat ír le, amelyek vagy Dynamics 365 Supply Chain Management újak, vagy módosulnak a 10.0.15-ben.
 author: kamaybac
 ms.date: 10/13/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3141cea22b6ab80f36f5562fd450b0cd547d235d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471812"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879134"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.15 szolgáltatásban (2021. január)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.15 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.644 a buildszáma, és a következő módon érhető el:
+Ez a cikk felsorolja azokat a funkciókat, amelyek vagy újak, vagy módosulnak a Microsoft Dynamics 365 Supply Chain Management 10.0.15-ös verziójában. Ennek a verziónak 10.0.644 a buildszáma, és a következő módon érhető el:
 
 - **A kiadás előzetes verziója** 2020. október
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2020. november
@@ -57,9 +57,9 @@ Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Fun
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások platformfrissítései
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.15 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.15 verziójához (2020. október)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md).
+A Microsoft Dynamics 365 Supply Chain Management 10.0.15 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.15-ös verziójának Platformfrissítései (2020. október)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
@@ -73,12 +73,12 @@ Lásd: [Dynamics 365: 2020-as 2. frissítési hullám tervét](/dynamics365-rele
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 
-A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltatásai](removed-deprecated-features-scm-updates.md) témakör azokat a funkciókat írja le, amelyek el lettek távolítva a Supply Chain Management szolgáltatásól vagy eltávolításuk ütemezve van.
+A [cikk Eltávolított Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) vagy elavult funkciói olyan funkciókat írnak le, amelyek már el vannak távolítva, illetve amelyek már el vannak távolítva vagy elavultak az Ellátásilánc-kezeléshez.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
 
-Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
+Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) az értékcsökkenési értesítés 12 hónappal az eltávolítás előtt törlődik az Eltávolított vagy elavult funkciókból.
 
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 

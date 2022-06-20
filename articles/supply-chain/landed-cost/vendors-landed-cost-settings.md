@@ -1,6 +1,6 @@
 ---
 title: Partraszállítási költséghez hozzáadott szállítói beállítások
-description: Ez a témakör a Partraszállítási költség modul engedélyezésekor a meglévő Szállítók oldalhoz hozzáadott új mezőket írja le. Ezekkel a mezőkkel állíthatja be a Partraszállási költség funkcióival együtt használt szállítókat.
+description: Ez a témakör a Landed költség modul engedélyezésekor a meglévő Szállítók laphoz hozzáadott új mezőket írja le. Ezekkel a mezőkkel állíthatja be a Partraszállási költség funkcióival együtt használt szállítókat.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b4e02397f7a4cdeaa21b451268b16e4fbe773612
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 84d1dee0815b036a3d411eabff49d8a08249bed3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882576"
 ---
 # <a name="vendor-settings-added-for-landed-cost"></a>Partraszállítási költséghez hozzáadott szállítói beállítások
 

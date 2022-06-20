@@ -1,6 +1,6 @@
 ---
 title: Munkarendelési projekt beállítása
-description: Ez a témakör a munkarendelés projektbeállítását mutatja be az Eszközkezelésben.
+description: Ez a cikk bemutatja az Eszközkezelés munkarendelési projektbeállítását.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31d8f42eb5753ea2656d502d2670a6cf7683c0f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754083"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874130"
 ---
 # <a name="work-order-project-setup"></a>Munkarendelési projekt beállítása
 
@@ -80,7 +80,7 @@ A beállítás lehetővé teszi a teljes integrációt a **Projektvezetés és k
 ![Munkarendelések projekt beállítási lapja, Munkarendelés hozzáadása.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
-> Minden alkalommal, amikor munkarendelési sort hoz létre, az Eszközkezelés megkeresi azt a projektcsoportot, amely kapcsolódik a munkarendelési feladat projektjéhez. A Keresés az ebben a témakörben ismertetett beállításon alapul. Minden projektcsoport tartalmaz egy kapcsolódó projekttípust. Az **Idő- és anyageszámolás** vagy **Rögzített ár** projekttípussal rendelkező projektcsoportok csak olyan eszközök esetén érvényesek, amelyek kapcsolódnak a vevői számlához.
+> Minden alkalommal, amikor munkarendelési sort hoz létre, az Eszközkezelés megkeresi azt a projektcsoportot, amely kapcsolódik a munkarendelési feladat projektjéhez. A keresés az ebben a cikkben leírt beállításokon alapul. Minden projektcsoport tartalmaz egy kapcsolódó projekttípust. Az **Idő- és anyageszámolás** vagy **Rögzített ár** projekttípussal rendelkező projektcsoportok csak olyan eszközök esetén érvényesek, amelyek kapcsolódnak a vevői számlához.
 >
 > A fölérendelt projektek és projektcsoportok esetén, amikor a rendszer kiválasztja az elérhető munkarendelési projektet vagy projektcsoportot, a kiválasztás az előző eljárás használatával létrehozott rekordok alapján történik. Az Eszközkezelés végigfut a munkarendelési projekthez kapcsolódó rekordokon, lehetséges egyezést keresve. Mindig a leginkább meghatározott kombinációt ellenőrzi először. Más szóval a munkarendelés fölérendelt projektjéhez az Eszközkezelés modul először az **Eszköz** mezővel való lehetséges egyezést ellenőrzi. Ha nem talál egyezést, akkor az **Eszköztípus** mezővel való egyezést ellenőrzi. Ha nem talál egyezést, akkor a **Munkavégzési helyszín** mezővel való egyezést ellenőrzi, és így tovább. Ahogy az a **Munkarendelési projektbeállítás** oldal elrendezésében is látható, ez a viselkedésmód azt jelenti, hogy a legspecifikusabb kombináció megkereséséhez az Eszközkezelés minden egyes rekordot jobbról balra ellenőriz egyezést keresve. Ha nem talál egyezést, akkor az alapértelmezett rekord, amelyben csak a projekt azonosítója van kiválasztva, lesz használva A kapcsolódó projektcsoport megkeresésének folyamata hasonló. Az Eszközkezelés először az **Eszköz** mezővel való lehetséges egyezést ellenőrzi, majd az **Eszköztípus** mezővel, majd a **Munkarendelés-típus** mezővel. Ha nem talál egyezést, akkor az alapértelmezett rekord, amelyben csak a projektcsoport van kiválasztva, lesz használva.
 

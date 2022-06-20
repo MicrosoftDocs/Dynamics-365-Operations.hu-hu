@@ -1,6 +1,6 @@
 ---
 title: Beosztások
-description: Ez a témakör azokat a fogalmi elemeket írja le, amelyeket a beosztások tartalmazhatnak. Példákkal szolgál arra is, hogyan használhatók ezek az elemek a szervezeten belül.
+description: Ez a témakör azokat az elméleti elemeket ismerteti, amelyekbe a beosztások tartozhatnak. Példákkal szolgál arra is, hogyan használhatók ezek az elemek a szervezeten belül.
 author: twheeloc
 ms.date: 06/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.custom: 269054
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bb7582165f49c40d294acd3cf804fe89782936c4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9c97a96e27188d12b9c5e626613e18d54d6632c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689438"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888730"
 ---
 # <a name="positions"></a>Beosztások
 
@@ -28,7 +28,7 @@ ms.locfileid: "8689438"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör azokat a fogalmi elemeket írja le, amelyeket a beosztások tartalmazhatnak. Példákkal szolgál arra is, hogyan használhatók ezek az elemek a szervezeten belül.
+Ez a témakör azokat az elméleti elemeket ismerteti, amelyekbe a beosztások tartozhatnak. Példákkal szolgál arra is, hogyan használhatók ezek az elemek a szervezeten belül.
 
 Beosztás létrehozása előtt be kell állítani egy feladatot. Bizonyos beosztásadatok– például a kompenzációs régió, a dolgozó hozzárendelése, a beosztás időtartama és a jelentési kapcsolat – érvényessége dátumalapú.
 

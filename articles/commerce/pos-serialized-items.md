@@ -1,6 +1,6 @@
 ---
 title: Szerializált cikkek használata a pénztárban
-description: Ez a témakör azt mutatja be, hogyan kell kezelni a szerializált cikkeket a pénzár(POS) alkalmazásban.
+description: Ez a cikk bemutatja, hogyan kell kezelni a pénztári alkalmazás szerializált cikkeket.
 author: boycezhu
 ms.date: 01/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a715a9d025f36656506daeb9e611bfacdafa102
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880029"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Szerializált cikkek használata a pénztárban
 
 [!include [banner](includes/banner.md)]
 
-Számos kiskereskedő olyan termékeket értékesít, amelyek sorozatszám-ellenőrzést igényelnek. Ezeket a termékeket *szerializált cikkeknek* nevezzük. Előfordulhat, hogy néhány kiskereskedő meg szeretné tartani a sorozatszámokat az áruházi vagy raktárkészletben nyomon követés céljából. Míg más kiskereskedők is szeretnék rögzíteni a sorozatszámot az értékesítési folyamat során, a szolgáltatási és a jótállási célokból. Ez a témakör azt mutatja be, hogyan lehet kezelni a szerializált cikkeket a Microsoft Dynamics 365 Commerce pénztár (POS) alkalmazásban.
+Számos kiskereskedő olyan termékeket értékesít, amelyek sorozatszám-ellenőrzést igényelnek. Ezeket a termékeket *szerializált cikkeknek* nevezzük. Előfordulhat, hogy néhány kiskereskedő meg szeretné tartani a sorozatszámokat az áruházi vagy raktárkészletben nyomon követés céljából. Míg más kiskereskedők is szeretnék rögzíteni a sorozatszámot az értékesítési folyamat során, a szolgáltatási és a jótállási célokból. Ez a cikk bemutatja, hogy hogyan kezelhetők Microsoft Dynamics 365 Commerce a pénztári alkalmazás szerializált cikkei.
 
 ## <a name="serial-number-configurations"></a>Sorozatszám-konfigurációk
 
@@ -124,7 +124,7 @@ A jövőbeli átvételhez vagy szállítmányhoz értékesített szerializált c
 
 ### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Sorozatszámok alkalmazása vevői rendelés teljesítése vagy átvétele során
 
-Amikor a pénztár **Rendelési teljesítés** műveletével teljesíti a szerializált termékekre vonatkozó vevői rendelési sorokat, a pénztár kötelezően rögzíti a sorozatszámot a végleges teljesítés előtt. Ezért ha a kezdeti rendelés rögzítése során nem adott meg sorozatszámot, rögzíteni kell a pénztár kitárolási, csomagolási vagy szállítási folyamatai során. A rendszer minden lépést ellenőriz, és a felhasználótól a rendszer csak akkor kéri a sorozatszámadatokat, ha azok hiányoznak vagy már nem érvényesek. Ha például egy felhasználó kihagyja a kitárolási vagy csomagolási lépéseket és azonnal elindít egy szállítmányt, a sorhoz pedig nem regisztráltak sorozatszámot, a pénztár előírja a sorozatszám beírását a végső számlázási lépés befejezése előtt. A sorozatszám rögzítésének a pénztárban való rögzítésekor a korábban említett szabályok továbbra is érvényesek. Csak az **Aktív** típusúként konfigurált szerializált cikkek mennek át sorozatszám-készletellenőrzésen. Az **Értékesítési folyamatban aktív** típusúként konfigurált cikkek érvényesítése nem történik meg. Ha az **Aktív** termékek esetében engedélyezve van a **Tényleges negatív készlet**, a készlet rendelkezésre állásától függetlenül a rendszer bármilyen sorozatszámot elfogad. Ha az **Aktív** és **Értékesítési folyamatban aktív** típusú cikkek esetén az **Üres kiadás megengedett** beállítás konfigurálva van, a felhasználó üresen hagyhatja a sorozatszámokat a kitárolási, csomagolási és szállítási lépések során, ha szeretné.
+Amikor a pénztár **Rendelési teljesítés** műveletével teljesíti a szerializált termékekre vonatkozó vevői rendelési sorokat, a pénztár kötelezően rögzíti a sorozatszámot a végleges teljesítés előtt. Ezért ha a kezdeti rendelés rögzítése során nem adott meg sorozatszámot, rögzíteni kell a pénztár kitárolási, csomagolási vagy szállítási folyamatai során. A rendszer minden lépést ellenőriz, és a felhasználótól a rendszer csak akkor kéri a sorozatszámadatokat, ha azok hiányoznak vagy már nem érvényesek. Ha például egy felhasználó kihagyja a kitárolási vagy csomagolási lépéseket és azonnal elindít egy szállítmányt, a sorhoz pedig nem regisztráltak sorozatszámot, a pénztár előírja a sorozatszám beírását a végső számlázási lépés befejezése előtt. A sorozatszám rögzítésének a POS-terminálon való rögzítésekor a korábban említett szabályok érvényesek maradnak. Csak az **Aktív** típusúként konfigurált szerializált cikkek mennek át sorozatszám-készletellenőrzésen. Az **Értékesítési folyamatban aktív** típusúként konfigurált cikkek érvényesítése nem történik meg. Ha az **Aktív** termékek esetében engedélyezve van a **Tényleges negatív készlet**, a készlet rendelkezésre állásától függetlenül a rendszer bármilyen sorozatszámot elfogad. Ha az **Aktív** és **Értékesítési folyamatban aktív** típusú cikkek esetén az **Üres kiadás megengedett** beállítás konfigurálva van, a felhasználó üresen hagyhatja a sorozatszámokat a kitárolási, csomagolási és szállítási lépések során, ha szeretné.
 
 A sorozatszámok ellenőrzése akkor is megtörténik, amikor a felhasználó végrehajtja a vevői rendeléseken pénztárban a felvételi műveleteket. A pénztáralkalmazás nem engedélyezi a felvétel véglegesítését a szerializált termékre, hacsak meg nem felel a korábban említett ellenőrzéseken. Az ellenőrzések mindig a termék nyomonkövetési dimenzióján és az értékesítési raktár konfigurációin alapulnak. 
 

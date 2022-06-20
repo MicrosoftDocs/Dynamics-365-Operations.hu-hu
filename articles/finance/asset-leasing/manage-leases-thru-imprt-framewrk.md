@@ -1,6 +1,6 @@
 ---
 title: Lízingek kezelése a lízingimportálási keretrendszeren keresztül
-description: Ez a témakör bemutatja, hogyan használhatja a Lízingimportálási keretrendszert több lízinghez egyszerre.
+description: Ez a cikk bemutatja, hogy hogyan lehet egyszerre több bérleti szerződést módosítani a Bérlet importálási keretrendszer használatával.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e3443225b5c7cb6d8f758248e538c2a427a89265
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 8cf81ccf61e62ac49e6cb90d13ca5fe50147cc76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723167"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894964"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Lízingek kezelése a lízingimportálási keretrendszeren keresztül
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan használhatja a Lízingimportálási keretrendszert több lízinghez egy lépésben. Ezzel a funkcióval időt takaríthat meg, és az emberi hibák esélyének csökkentésével pontosabb beállításokat is biztosíthat. Ezen kívül ez a képesség Microsoft Dynamics a 365 Pénzügyet külső adatentitásokkal is összekapcsolhatja az adatok hatékony feltöltése érdekében.
+Ez a cikk bemutatja, hogy egy lépésben hogyan lehet több bérleti szerződést módosítani a Bérlet importálási keretrendszer használatával. Ezzel a funkcióval időt takaríthat meg, és az emberi hibák esélyének csökkentésével pontosabb beállításokat is biztosíthat. Ezen kívül ez a képesség Microsoft Dynamics a 365 Pénzügyet külső adatentitásokkal is összekapcsolhatja az adatok hatékony feltöltése érdekében.
 
 Az eszközlízing külső rendszerekkel való integrálására a következő adatentitások használhatók:
 

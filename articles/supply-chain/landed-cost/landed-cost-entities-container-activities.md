@@ -1,6 +1,6 @@
 ---
-title: Tárolótevékenységek entitás
-description: Ez a témakör a tárolótevékenységekkel kapcsolatban tartalmaz tájékoztatást, amelyek a szállítási tárolók haladásának nyomon követésére használhatók.
+title: Konténertevékenységek entitása
+description: Ez a cikk a tárolótevékenységekkel kapcsolatban tartalmaz tájékoztatást, amelyek a szállítási tárolók haladásának nyomon követésére használhatók.
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 7bb2b97e8885e3b1265f0c93585873c8a64f1dfb
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: b69d26ee8abaa403f6a0ef3b03d9015fe507dd5b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8813155"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873956"
 ---
-# <a name="container-activities-entity"></a>Tárolótevékenységek entitás
+# <a name="container-activities-entity"></a>Konténertevékenységek entitása
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

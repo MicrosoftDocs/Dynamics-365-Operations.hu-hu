@@ -1,6 +1,6 @@
 ---
 title: Új vagy frissített feladat-útmutatók (2016. augusztus)
-description: Ez a témakör felsorolja a Microsoft (2016 augusztus – minden nyelv) APQC Egyesített könyvtárhoz kiadott új vagy frissített feladat-útmutatókat a Microsoft Dynamics AX szolgáltatáshoz. Nincs új Első lépések könyvtár.
+description: Ez a cikk felsorolja azokat az új vagy frissített feladat-segédeket, amelyek kiadták a Microsoftnak (2016. augusztus - minden nyelv) AZ APQC egységes tárat Microsoft Dynamics AX. Nincs új Első lépések könyvtár.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: be2dbf8307baa37549e2e81ec05f067ab82bfda8e77cace6a4f4731a84f2776d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16777901e66aeac93c8e0bbd2ee024a033fe5b52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886550"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Új vagy frissített feladat-útmutatók (2016. augusztus)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör felsorolja a Microsoft (2016 augusztus – minden nyelv) APQC Egyesített könyvtárhoz kiadott új vagy frissített feladat-útmutatókat a Microsoft Dynamics AX szolgáltatáshoz. Nincs új Első lépések könyvtár.
+Ez a cikk felsorolja azokat az új vagy frissített feladat-segédeket, amelyek kiadták a Microsoftnak (2016. augusztus - minden nyelv) AZ APQC egységes tárat Microsoft Dynamics AX. Nincs új Első lépések könyvtár.
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat-útmutatók (2016. augusztus - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
 
-A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2. platformfrissítéséhez (2016. augusztus), a Dynamics AX 2016. májusi alkalmazásfrissítéshez, és a Microsoft Dynamics AX 2016. februári kiadáshoz szánt, Súgóval használatos feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások a Finance and Operations kezdőlapján](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Súgórendszer](help-overview.md).
+A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2. platformfrissítéséhez (2016. augusztus), a Dynamics AX 2016. májusi alkalmazásfrissítéshez, és a Microsoft Dynamics AX 2016. februári kiadáshoz szánt, Súgóval használatos feladat-útmutatókat. Ha további tájékoztatást szeretne ezekről a kiadásokról, tekintse meg: [Új vagy módosult elemek a Finance and Operations kezdőoldalán](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Súgórendszer](help-overview.md).
 
 ### <a name="data-access"></a>Adatelérés
 

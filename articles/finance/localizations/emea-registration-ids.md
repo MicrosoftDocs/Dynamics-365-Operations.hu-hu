@@ -1,6 +1,6 @@
 ---
 title: Nyilvántartási azonosítók
-description: Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást.
+description: Ez a cikk a regisztrációs adatok beállításával és használatával kapcsolatban tartalmaz tájékoztatást.
 author: ShylaThompson
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 379cf78ece388f738fad8121d5b0adb4434d7905
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883075"
 ---
 # <a name="registration-ids"></a>Nyilvántartási azonosítók
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást.
+Ez a cikk a regisztrációs adatok beállításával és használatával kapcsolatban tartalmaz tájékoztatást.
 
-Számos ország és régió eltérő szabályokkal és követelményekkel rendelkezik az adónyilvántartási számok és azonosítók nyilvántartására. Ez a témakör a különböző európai országokban/régiókban található felek nyilvántartási típusaihoz szükséges beállításokat és feldolgozási eljárásokat tekinti át. Minden országban/régióban léteznek követelmények a különböző állami hivatalok által kiadott nyilvántartási számokkal kapcsolatos különböző ország-specifikus funkciók támogatását illetően. Nyilvántartási számok közé tartoznak a társadalombiztosítási szám (TAJ szám), az adóazonosító szám (adószám) és a közösségi adószám. Ez a szolgáltatás egységes keretet biztosít minden régióban minden ország számára, és figyelembe veszi az egyes európai országok országspecifikus követelményeit. Az alábbi szakaszok leírják a nyilvántartási azonosítók létrehozásához és feldolgozásához használt teljes információáramlást.
+Számos ország és régió eltérő szabályokkal és követelményekkel rendelkezik az adónyilvántartási számok és azonosítók nyilvántartására. Ez a cikk áttekintést nyújt a különböző európai országok/régiók felei számára szükséges beállításokról és a támogatott regisztrációs típusok feldolgozásról. Minden országban/régióban léteznek követelmények a különböző állami hivatalok által kiadott nyilvántartási számokkal kapcsolatos különböző ország-specifikus funkciók támogatását illetően. Nyilvántartási számok közé tartoznak a társadalombiztosítási szám (TAJ szám), az adóazonosító szám (adószám) és a közösségi adószám. Ez a szolgáltatás egységes keretet biztosít minden régióban minden ország számára, és figyelembe veszi az egyes európai országok országspecifikus követelményeit. Az alábbi szakaszok leírják a nyilvántartási azonosítók létrehozásához és feldolgozásához használt teljes információáramlást.
 
 ## <a name="registration-type-creation"></a>Nyilvántartási típus létrehozása
 Nyilvántartási azonosító megadása előtt nyilvántartási típusokat kell beállítania az egyes felek által használt különböző nyilvántartási számokhoz. Lépjen a **Szervezeti adminisztráció** &gt; **Globális címjegyzék** &gt; **Nyilvántartástípusok** &gt; **Nyilvántartástípusok** lapra, ahol létrehozat és kezelhet a különböző országokban/régiókban található szállítók, vevők, dolgozók, valamint jogi személyek által használt nyilvántartási típusokat.
@@ -51,7 +51,7 @@ A nyilvántartási kategória egy olyan ország-/régióalapú nyilvántartási 
 |-----------------------|----------------|
 | Regisztráció típusa     | A nyilvántartási típus konkrét országban/régióban.|
 | Korlátozva         | Az adónyilvántartás-típusra vonatkozó korlátozás fajtája: Nincs, Személy, Szervezet.|
-| Nyilvántartási kategória | Az országban használatra jóváhagyott egyedi nyilvántartási azonosító. A támogatott kategóriák teljes listája ebben a témakörben később olvasható. |
+| Nyilvántartási kategória | Az országban használatra jóváhagyott egyedi nyilvántartási azonosító. A támogatott kategóriák teljes listája ebben a cikkben később jelenik meg. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Globális címjegyzék nyilvántartási azonosítóinak megadása
 
@@ -76,7 +76,7 @@ A globális címjegyzék vevők, szállítók, partnerek, üzleti kapcsolatok é
 A felek rekordjainak keresése nyilvántartási azonosító alapján a fél, jogi személy, szállító, vevő és dolgozó adott űrlapján érhető el. Kattintson a **Regisztrációs azonosító keresése** elemre a **Regisztrációs azonosító keresési feltételei** lap megnyitásához. Adja meg a keresési feltételeket, és kattintson a **Keresés** elemre. A rendszer megjeleníti a kijelölt rekordokat a globális címjegyzékből és a fél hozzá tartozó típusú rekordjait.
 
 ## <a name="supported-registration-categories"></a>Támogatott nyilvántartási kategóriák
-A következő táblázat felsorolja a támogatott regisztrációtípusokat. Ha ismeri a Microsoft Dynamics AX 2012 nyilvántartási azonosítókhoz tartozó mezőit, ez a tábla ugyanazon mezőket kapcsolja a Dynamics 365 Finance nyilvántartási kategóriáihoz.
+A következő táblázat felsorolja a támogatott regisztrációtípusokat. Ha jól ismeri a Microsoft Dynamics AX 2012-es adóregisztrációs mezőket, ez a tábla a mezőket a Dynamics 365 Pénzügy regisztrációs kategóriáihoz is leképezi.
 
 | Finance nyilvántartási kategória         |Ország/régió  | Dynamics AX 2012 kifejezés/mező|
 |---------------------------------------------------------------|---------------------|---------------------------------|

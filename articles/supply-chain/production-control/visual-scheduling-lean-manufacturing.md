@@ -1,6 +1,6 @@
 ---
 title: Vizuális ütemezés lean manufacturing céljára
-description: Ez a témakör a Kanbanütemezési tábláról nyújt tájékoztatást, amelyet a termelési tervező arra használhat, hogy ellenőrizze és optimalizálja a kanbanfeladatok termelési tervét.
+description: Ez a cikk a kanbanütemező tábláról nyújt tájékoztatást, amelynek használatával a termeléstervező a kanbanfeladatok termelési tervének szabályozására és optimalizálására használható.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a743be96867c1f325e6fe01f23355c27cb4d0cc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764812"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875188"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Vizuális ütemezés lean manufacturing céljára
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Kanbanütemezési tábláról nyújt tájékoztatást, amelyet a termelési tervező arra használhat, hogy ellenőrizze és optimalizálja a kanbanfeladatok termelési tervét.
+Ez a cikk a kanbanütemező tábláról nyújt tájékoztatást, amelynek használatával a termeléstervező a kanbanfeladatok termelési tervének szabályozására és optimalizálására használható.
 
-Ez a témakör a Kanbanütemezési tábláról nyújt tájékoztatást, amelyet a termelési tervező arra használhat, hogy ellenőrizze és optimalizálja a kanbanfeladatok termelési tervét.
+Ez a cikk a kanbanütemező tábláról nyújt tájékoztatást, amelynek használatával a termeléstervező a kanbanfeladatok termelési tervének szabályozására és optimalizálására használható.
 
 A Kanbanütemezési tábla lehetővé teszi, hogy a termeléstervező ellenőrizze és optimalizálja a kanbanfeladatok termelési tervét. Átláthatóvá teszi a kanbanfeladatok áramlását, és olyan eszközt ad a termeléstervező kezébe, amely optimalizálja és beállítja a termelési tervet a lean manufacturing munkacella számára.
 

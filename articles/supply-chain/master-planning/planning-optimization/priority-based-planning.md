@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468300"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873811"
 ---
 # <a name="priority-based-planning"></a>Prioritásokon alapuló tervezés
 
@@ -62,7 +62,7 @@ A konvertálás az alábbi képlet alapján történik:
 
 Ebben a képletben a *nettó áramlási pozíció* számítása a következőképpen történik:
 
-*Nettó áramlási positionOn* = *handOn-order* + *·* – minősített *igény*
+*Nettó áramlási pozíció* = *- megrendelt* + *·* - minősített *igény*
 
 - *A megrendelt* készlet a várt készlet.
 - *A minősített igény* a tervezési időkorláton belüli szükségletdátummal rendelkező nettó követelményeket jelöli.

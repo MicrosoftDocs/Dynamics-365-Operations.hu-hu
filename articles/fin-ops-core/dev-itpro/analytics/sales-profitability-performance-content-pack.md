@@ -1,6 +1,6 @@
 ---
 title: Értékesítési és jövedelmezőségi teljesítmény Power BI tartalom
-description: Ez a témakör azt ismerteti, mit tartalmaz az Értékesítési és a jövedelmezőségi teljesítmény Power BI tartalom modul.
+description: Ez a témakör az Értékesítés és nyereségesség teljesítménytartalma által tartalmazott részeket Power BI ismerteti.
 author: ShylaThompson
 ms.date: 12/18/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ec9ef5f4abf898100c670b1ca1cc845d6ebeeea36f21cdda3a9b7d3f1027d4e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8433250efad467e92aeaa851f0b60c3c1eced99c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898682"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Értékesítési és jövedelmezőségi teljesítmény Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, mit tartalmaz az **Értékesítési és a jövedelmezőségi teljesítmény** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör ismerteti, hogy mi szerepel az Értékesítés **és nyereségesség teljesítménytartalomban** Microsoft Power BI. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 

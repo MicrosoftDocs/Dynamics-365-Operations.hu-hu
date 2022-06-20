@@ -1,6 +1,6 @@
 ---
 title: Partraszállítási költség és Szállításkezelés
-description: A Microsoft Dynamics 365 Supply Chain Management két különböző modult biztosít a szállítás kezelésére, a Szállításkezelés (TMS) és a Partraszállítási költség modult. Ez a témakör összefoglalja a két modul közös funkcióit, és kiemeli a két modul közötti különbségeket.
+description: A Microsoft Dynamics 365 Supply Chain Management két különböző modult biztosít a szállítás kezelésére, a Szállításkezelés (TMS) és a Partraszállítási költség modult. Ez a cikk összefoglalja a két modul közös funkcióit, és kijelöli a két modul közötti különbségeket.
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8c59d7d1887986d308cb591ece077cff9f4648a5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40489ff8d8683d19a5f726546cc4c43cc3e7a05d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690372"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905921"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Partraszállítási költség és Szállításkezelés
 
 [!include [banner](../../includes/banner.md)]
 
-A Microsoft Dynamics 365 Supply Chain Management két különböző modult biztosít a szállítás kezelésére, a **Szállításkezelés** (TMS) és a **Partraszállítási költség** modult. Ez a témakör összefoglalja a két modul közös funkcióit, és kiemeli a két modul közötti különbségeket. Az információk alapján eldöntheti, hogy melyik modul a legmegfelelőbb az üzleti gyakorlatához. Előfordulhat, hogy egyes üzleti gyakorlatok jobban működnek a TMS-sel, míg mások a Partraszállítási költséggel működnek a legjobban. Ezután az üzleti követelményektől függően dönthet úgy, hogy csak egy modult használ, vagy kombinálhatja a két modult.
+A Microsoft Dynamics 365 Supply Chain Management két különböző modult biztosít a szállítás kezelésére, a **Szállításkezelés** (TMS) és a **Partraszállítási költség** modult. Ez a cikk összefoglalja a két modul közös funkcióit, és kijelöli a két modul közötti különbségeket. Az információk alapján eldöntheti, hogy melyik modul a legmegfelelőbb az üzleti gyakorlatához. Előfordulhat, hogy egyes üzleti gyakorlatok jobban működnek a TMS-sel, míg mások a Partraszállítási költséggel működnek a legjobban. Ezután az üzleti követelményektől függően dönthet úgy, hogy csak egy modult használ, vagy kombinálhatja a két modult.
 
-Ez a témakör nem nyújt teljes áttekintést egyik modul összes funkciójáról sem. Ehelyett a rendelkezésre álló funkciókat emeli ki, mivel az áruk szállítótól a vállalat raktárába történő szállítására vonatkozik, ahol azokat fel lehet használni.
+Ez a cikk nem áttekintést nyújt egyik modul minden funkcióját sem. Ehelyett a rendelkezésre álló funkciókat emeli ki, mivel az áruk szállítótól a vállalat raktárába történő szállítására vonatkozik, ahol azokat fel lehet használni.
 
 ## <a name="terminology-reference-data-and-reporting-differences"></a>Terminológia, hivatkozási adatok és jelentéskészítési különbségek
 

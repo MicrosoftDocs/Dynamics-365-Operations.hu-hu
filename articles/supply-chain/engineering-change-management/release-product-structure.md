@@ -1,6 +1,6 @@
 ---
 title: Termékszerkezetek kiadása
-description: Ez a témakör azt mutatja be, hogyan lehet a teljes termékszerkezeteket a termékekkel és azok mérnöki verzióikkal együtt kiadni. Így biztosíthatja, hogy a mérnökileg releváns termékadatokat könnyen újra fel lehessen használni a különböző jogi személyekben.
+description: Ez a cikk bemutatja, hogy hogyan lehet a termékek műszaki verzióival együtt kiadni a teljes termékszerkezeteket. Így biztosíthatja, hogy a mérnökileg releváns termékadatokat könnyen újra fel lehessen használni a különböző jogi személyekben.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4dc1b073350044ef8afb765470ed14da88a70fdd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c8359f86e5123ee40e9673971de626e1b327ac95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567487"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875481"
 ---
 # <a name="release-product-structures"></a>Termékszerkezetek kiadása
 

@@ -1,6 +1,6 @@
 ---
-title: Okkódok készletszámláláshoz
-description: Ez a témakör ismerteti az okkódok beállítását számlálási feladatokhoz.
+title: Készletleltár okkódjai
+description: Ez a témakör azt ismerteti, hogyan lehet a leltározási feladatokhoz okkódokat beállítani és alkalmazni.
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 7d182f1d979543eeec700924d2bd180ee06be8ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857112"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Okkódok készletszámláláshoz
 
@@ -42,7 +42,7 @@ Mielőtt beállítaná a rendszert, javasoljuk, hogy dolgozzon ki egy stratégi�
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Okkód funkció bekapcsolása a rendszerben
 
-Ha nem látja a rendszerben az ebben a témakörben leírt összes szolgáltatást, akkor valószínűleg be kell kapcsolnia a *Az ellenszámlákhoz kapcsolódó kódok használatával történő készlethelyesbítések feladása* funkciót. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+Ha nem látja a rendszerben az ebben a cikkben ismertetett összes szolgáltatást, *akkor* valószínűleg az ellenszámlák funkcióhoz kapcsolódó konfigurálható okkódok használatával be kell kapcsolnia az elérhető készlet korrekcióit. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Raktárkezelés*
 - **Funkció neve:** *Az ellenszámlákhoz kapcsolódó konfigurálható okkódok használatával történő készlethelyesbítések feladása*
@@ -111,7 +111,7 @@ A leltározási okkódok beállításához kövesse az alábbi lépéseket.
 
 ### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Leltározási okkódok csoportjainak beállítása
 
-A *Leltározási okkódcsoportok* a Warehouse Management mobilalkalmazás *Korrekció be* és *Korrekció ki* menüelemei részeként használhatók a leltározási okkódok listájának kolrátozásához. (A leltározási okkódcsoportokkal kapcsolatos további tudnivalókat lásd: [A mobileszköz-menüpont módosítása igazítás be és igazítás ki folyamathoz](#setup-adjustment-in-out) szakaszt a témakör későbbi részében.)
+A *Leltározási okkódcsoportok* a Warehouse Management mobilalkalmazás *Korrekció be* és *Korrekció ki* menüelemei részeként használhatók a leltározási okkódok listájának kolrátozásához. (A leltári okkódcsoportokkal kapcsolatos további tudnivalókat lásd: [Mobileszköz menüpontok beállítása a](#setup-adjustment-in-out) cikk későbbi szakaszának beállításához és igazításához.)
 
 1. Nyissa meg a **Készletkezelés** \> **Beállítás** \> **Készlet** \> **Leltározási okkód-csoportok** menüpontot.
 1. Jelölje be a Műveleti ablaktáblán az **Új** lehetőséget csoprot hozzáadásához.
@@ -174,7 +174,7 @@ Mobileszköz-menüelem beállításához a az igazítás be és igazítás folya
         - *Elrejtés* – Ne jelenítse meg az okkódot.
 
     - **Leltározási okkód szerkesztése** – Állítsa ezt a beállítást *Igen* értékre, hogy a dolgozó szerkeszthesse az okkódot, amikor a leltár során megjelenik a mobileszközön. Állítsa *Nem* értékre, ha meg szeretné akadályozni, hogy a dolgozó szerkessze a kódot.
-    - **Leltározási okkódcsoport** – Ha korlátozni szeretné a dolgozóknak megjelenő lehetőségek listáját, válasszon egy okkódcsoportot. Az okkódcsoportok beállítását a témakör korábbi, [Leltározási okkódcsoportok beállítása](#reason-groups) című szakasza tartalmazza. 
+    - **Leltározási okkódcsoport** – Ha korlátozni szeretné a dolgozóknak megjelenő lehetőségek listáját, válasszon egy okkódcsoportot. Az okkódcsoportok [beállítását](#reason-groups) a cikk korábbi, Leltározási okkódcsoportok beállítása című szakaszában olvashatja. 
 
 > [!NOTE]
 > Amikor leltározási okkódcsoportot rendel az *Igazítás be* és *Igazítás ki* menüelemekhez, ahol a **Folyamatútmutató használata** beállítás *Igen* értékű, akkor a leltározási okkódok korlátozott listáját jelenítheti meg a feldolgozás részeként a Warehouse Management mobilalkalmazásban.

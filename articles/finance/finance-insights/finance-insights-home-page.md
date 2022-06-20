@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 05b0de8b0104238a33f006234d4a0e8ba9fcdb2a
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 42ea8884c357bcb26ac96df8dca75e7ff449d4f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087293"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881962"
 ---
 # <a name="finance-insights-home-page"></a>A Finance Insights kezdőlapja
 
 [!include [banner](../includes/banner.md)]
 
-A Finance Insights konfigurálható és bővíthető megoldásokat kínál, amelyek segítségével intelligensen megjósolhatja vállalata pénzforgalmát, megjósolhatja, hogy mikor kaphat kifizetést a fennálló követeléseiért, és olyan költségvetési javaslatot készíthet, amely felgyorsíthatja a költségvetési folyamatot. Ezek a funkciók intelligens gépi tanulási sablonokat használnak a modellek felépítéséhez az Ön által megadott adatok (beleértve egy harmadik féltől származó adatok, például egy iroda fogyasztói jelentési információi) felhasználásával. Ezek az intelligens képességek tájékoztatják a döntéshozatalt, és segítenek abban, hogy hatékonyan reagáljon a jelenlegi és várható üzleti kihívásokra. Ön felelős minden olyan adatért, amelyet a Finance insightokkal együtt használnak fel, vagy azokból kiadnak.
+A pénzügyi információk konfigurálható és extensible megoldásokat kínálnak, amelyek segítségével intelligens módon előre jelezhető a vállalat pénzforgaloma, várható, hogy mikor kap fizetést a kinnlevőségekért, és olyan költségvetési javaslatot generál, amely gyorsíthatja a költségvetés-folyamot. Ezek a funkciók intelligens gépi oktatási sablonokat használnak a modellek ön által használt felhasználásával (például egy külső féltől származó adatok, például egy iroda felhasználói jelentési információi). Ezek az intelligens képességek a döntéshozásról nyújtanak tájékoztatást, és segítséget nyújtanak annak érdekében, hogy hatékonyan reagáljanak a jelenlegi és várható üzleti problémákra. Ön felelős minden adatért, amely a Pénzügyi információkkal együtt (vagy ezek kimenetei alapján) használatos.
 
 > [!NOTE]
-> A Finance Insights az Amerikai Egyesült Államokban, Kanadában, az Egyesült Királyságban, Európában, Ázsia-csendes-óceáni térségben, Japánban, Ausztráliában és Új-Zélandon telepíthető. A Microsoft fokozatosan adja hozzá a további régiók támogatását.
+> A pénzügyi információk rendelkezésre állnak az Amerikai Egyesült Államokban, Kanadában, az Egyesült Királyságban, Az Európa, Ázsia csendes-óceáni, Japánban, Ausztráliában és Új-Zélandban való telepítéshez. A Microsoft fokozatosan adja hozzá a további régiók támogatását.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -43,23 +43,23 @@ A 2. szintű környezet (többdobozos) szükséges a Finance Insights előzetes 
 
 ### <a name="version-requirements"></a>Verziókövetelmények
 
-Ez a témakör a Microsoftra vonatkozik Dynamics 365 Finance 10.0.21 és újabb verzió.
+Ez a cikk a Microsoft Dynamics 365 Pénzügy 10.0.21-es és újabb verziójára vonatkozik.
 
 ### <a name="license-requirements"></a>Licenckövetelmények
 
-Pénzügyi betekintések felhasználása AI Builder hitelek pénzügyi előrejelzések készítéséhez. Az ehhez szükséges összes licencet a bérlői licenc tartalmazza. Minden egyes Dynamics 365 Finance bérlőt biztosítanak 20.000 AI Builder kredit minden hónapban. Ha az üzleti igényekhez további hitelekre van szükség, azokat közvetlenül a webhelyről vásárolhatja meg AI Builder.
+A pénzügyi információk hiteleket AI Builder felhasználva pénzügyi előrejelzéseket hoznak létre. Ehhez az összes szükséges licenc a bérlői licenchez tartozik. A Dynamics 365 Pénzügy minden bérlője minden hónapban 20 000 AI Builder jóváírást biztosít. Ha az üzleti igényekhez további jóváírások szükségesek, közvetlenül a vállalattól lehet őket beszerezni AI Builder.
 
 ### <a name="historical-data-requirements"></a>Korábbi adatokra vonatkozó követelmények
 
-Legalább egy év értékű vevői számlákra van szükség a gépi tanulási modell megfelelő betanításához, amelyet a Vevői fizetési előrejelzések funkcióhoz használnak. A cash flow-előrejelzésekhez három év múltbeli adatok javasoltak. Az intelligens költségvetési javaslatokhoz három éves múltbeli költségvetés és/vagy tényleges adatok javasoltak.
+Legalább egy év értékű vevői számlákra van szükség a gépi tanulási modell megfelelő betanításához, amelyet a Vevői fizetési előrejelzések funkcióhoz használnak. A pénzforgalmi előrejelzésekhez három év előzményadat ajánlott. Az intelligens költségvetési javaslatokhoz három évnyi múltbeli költségvetés és/vagy tény használata ajánlott.
 
 ## <a name="configure-finance-insights"></a>A Finance Insights konfigurálása
 
-A Finance Insights használatához végre kell hajtania a konfigurációs lépéseket. A Pénzügyi elemzések konfigurálásáról a [Konfiguráció a pénzügyi elemzésekhez](configure-for-fin-insites.md) című témakörben talál további információt.
+A Pénzügyi információk használata előtt el kell végrehajtania a konfigurációs lépéseket. A Pénzügyi elemzések konfigurálásáról a [Konfiguráció a pénzügyi elemzésekhez](configure-for-fin-insites.md) című témakörben talál további információt.
 
 ## <a name="create-a-data-integrator-project"></a>Adatintegrációs projekt létrehozása
 
-Létre kell hoznia egy adatintegrációs projektet, hogy a gépi tanulási modell által létrehozott adatok befolyhassanak a Dynamics 365 Finance-ba. A projekt létrehozásának lépéseit az [Adatintegrációs projekt létrehozása](create-data-integrate-project.md) című témakörben találja.
+Létre kell hoznia egy adatintegrátor projektet, hogy a gépi oktatási modell által generált adatok át tudjanak lenni a Dynamics 365 Pénzügybe. A projekt létrehozásának lépéseit az [Adatintegrációs projekt létrehozása](create-data-integrate-project.md) című témakörben találja.
 
 ## <a name="enable-finance-insights-capabilities"></a>Pénzügyi elemzési funkciók engedélyezése
 
@@ -68,29 +68,29 @@ Miután elvégezte a konfigurációs lépéseket, és beállította a bemutató 
 ### <a name="enable-customer-payment-predictions"></a>Vevői fizetési előrejelzések engedélyezése
 Ha bemutatóadatokat használ az ügyfelek fizetési előrejelzéseinek teszteléséhez, előfordulhat, hogy további bemutatóadatokat kell importálnia az AI-modell sikeres létrehozásához. 
 
-Az Ügyfél fizetési előrejelzéseinek engedélyezéséhez lépések sorozatát kell végrehajtania egy olyan gépi tanulási modell felépítéséhez, amely a szervezet adatait használja fel arra vonatkozóan, hogy az ügyfelek várhatóan mikor fizetik ki a fennálló számlákat, és mikor fizetnek ki bizonyos számlákat. További információkért és a végrehajtandó konkrét lépésekért olvassa el a [Vevői fizetési előrejelzések engedélyezése](enable-cust-paymnt-prediction.md) című témakört. 
+A vevői kifizetések előrejelzésének engedélyezéséhez egy sor lépést kell végrehajtania egy gépi oktatási modell létrehozásához, amely a szervezet adatai alapján előrejelzéseket generál arról, hogy a vevők mikor várhatóan kifizetik a ki nem fizetett számlákat, és mikor várható az egyes számlák kifizetése. További információkért és a végrehajtandó konkrét lépésekért olvassa el a [Vevői fizetési előrejelzések engedélyezése](enable-cust-paymnt-prediction.md) című témakört. 
 
 ### <a name="enable-cash-flow-forecasting"></a>Pénzforgalmi előrejelzés engedélyezése
 A pénzforgalmi előrejelzés engedélyezéséhez végre kell hajtson egy sor lépést egy olyan gépi tanulási modell létrehozásához, amely a szervezet adatait használja pénzforgalmi előrejelzések létrehozásához. További információkért és a végrehajtandó konkrét lépésekért olvassa el a [Pénzforgalmi előrejelzések engedélyezése](enable-cash-flow-forecasting.md) című témakört.
 
 ### <a name="enable-budget-proposals"></a>Költségvetési javaslatok engedélyezése
 
-A Költségvetési javaslatok funkció egy gépi tanulási modellt és a szervezet előzményadatait használja a költségvetési javaslat létrehozásához. A létrehozott javaslat segítségével elindíthatja a manuális folyamatoknál hatásosabb és hatékonyabb költségvetés-kezelési folyamatot. A funkció engedélyezésének konkrét lépéseiért lásd: [Költségvetési javaslatok engedélyezése](enable-budget-proposal.md). 
+A Költségvetési javaslatok funkció egy gépi tanulási modellt és a szervezet előzményadatait használja a költségvetési javaslat létrehozásához. A létrehozott javaslat segítségével elindíthatja a manuális folyamatoknál hatásosabb és hatékonyabb költségvetés-kezelési folyamatot. A funkció engedélyezésének részletes lépéseit lásd A költségvetési [javaslatok engedélyezése](enable-budget-proposal.md). 
 
 ## <a name="using-finance-insights-features"></a>A Finance Insights funkcióinak használata
 
 ### <a name="using-customer-payment-predictions"></a>Vevői fizetési előrejelzések használata
 
-- Ha meg szeretné tudni, hogy az Ügyfél fizetési előrejelzései hogyan biztosíthatják a beszedési tevékenységek proaktív megkezdéséhez szükséges információkat, lásd: [Használja az Ügyfél fizetési előrejelzéseit](use-customer-payment-predictions.md).
+- A Vevői kifizetések [előrejelzései segítségével a beszedési tevékenységek proaktív megkezdéséhez szükséges információkat tudni a Vevői kifizetések előrejelzésének használata](use-customer-payment-predictions.md).
 - A funkció használatának megkezdése után, az előrejelzési modell hatékonyságának kiértékelésében hasznos információkkal kapcsolatban további tájékoztatást a [Kezdeti vevői fizetési előrejelzési modell kiértékelése](evaluate-payment-prediction.md) szakaszban talál.
 - Az előrejelzés létrehozásához és ezáltal a hatékonyság növeléséhez használt adatok módosításához az[ Előrejelzési modell javítása](improve-model.md) című témakörben talál tájékoztatást.
 - Az AI-előrejelzési modellek eredményeivel kapcsolatos további információt a [Gépi tanulási modellek eredményei](confusion-matrix.md) részben talál.
 
 ### <a name="using-cash-flow-forecasts"></a>Pénzforgalmi előrejelzés használata
 
-A Pénzforgalmi előrejelzés funkció segítségével pontosabban megbecsülheti készpénzpozícióját. Az intelligens cash flow-előrejelzés a meglévő cash flow-előrejelzési funkcióra épül Dynamics 365 Finance. A meglévő képesség áttekintéséhez olvassa el a [Pénzforgalmi előrejelzés](../cash-bank-management/cash-flow-forecasting.md) című témakört.
+A Pénzforgalmi előrejelzés funkció segítségével pontosabban megbecsülheti készpénzpozícióját. Az intelligens pénzforgalmi előrejelzés a Dynamics 365 Pénzügy meglévő pénzforgalmi előrejelzési funkcióin alapul. A meglévő képesség áttekintéséhez olvassa el a [Pénzforgalmi előrejelzés](../cash-bank-management/cash-flow-forecasting.md) című témakört.
 
-- Ha többet szeretne megtudni a Cash flow-előrejelzések új lehetőségeiről, lásd: [Cash flow előrejelzés](cash-flow-forecast-intro.md).
+- A pénzforgalmi előrejelzésekben új képességekre vonatkozó tudnivalókat lásd a [Pénzforgalmi előrejelzésben](cash-flow-forecast-intro.md).
 - A pénzforgalmi előrejelzésben szereplő külső adatok importálásáról a [Külső adatok használata a pénzforgalmi előrejelzésekben](external-data-in-cash-flow.md) című témakörben olvashat. 
 - Ha tudni szeretné, hogyan használható a rövid távú pénzforgalom az AI-modell használatával, olvassa el a [Készpénzpozíció](cash-position.md) című témakört.
 - A pénzforgalmi pozíciók és a pénzforgalmi előrejelzések pillanatképként való mentésével, valamint a pillanatképek tényleges adatokkal való összehasonlításáról a [Pillanatképek áttekintése](payment-snapshots.md) című témakörben olvashat.
@@ -101,6 +101,6 @@ A költségvetés létrehozásának felgyorsításáról a [Költségvetési jav
 
 ## <a name="feedback-and-support"></a>Visszajelzés és támogatás
 
-Ha szeretne visszajelzést adni, vagy támogatásra van szüksége, küldjön e-mailt a következő címre: [Pénzügyi betekintések](mailto:fiap@microsoft.com).
+Ha visszajelzést szeretne küldeni, vagy segítségre van szüksége, e-mailben [küldje el a pénzügyi információkat.](mailto:fiap@microsoft.com)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

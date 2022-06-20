@@ -1,6 +1,6 @@
 ---
 title: Hullámcímkék újranyomtatása és érvénytelenítése
-description: Ez a témakör azt mutatja be, hogyan lehet érvényteleníteni és újranyomtatni a meglévő hullám-címkéket.
+description: Ez a cikk bemutatja, hogyan lehet érvényteleníteni és újranyomtatni a meglévő hullámcímkéket.
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9f057d9985fb8431ec7c9ced23f2cd3c476570d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572337"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871833"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Hullámcímkék újranyomtatása és érvénytelenítése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan kezelhetők a hullámfeldolgozással létrejövő címkék. (Részletes leírás és konfigurációs utasítások: [Hullámcímkék nyomtatásának konfigurálása](../warehousing/configure-wave-label-printing.md) .)
+Ez a cikk bemutatja a hullámfeldolgozás által létrehozott címkék kezelését. (Részletes leírás és konfigurációs utasítások: [Hullámcímkék nyomtatásának konfigurálása](../warehousing/configure-wave-label-printing.md) .)
 
 A hullámcímkéket bármikor újra lehet nyomtatni. Előfordulhat például, hogy ki kell nyomtatnia egy címkét, ha a meglévő címke elveszett vagy sérült. Másik lehetőségként előfordulhat, hogy a raktár dolgozójának vagy felettesének újra kell nyomtatnia egy teljes címketekercset, ha a hullámcímkék egy teljes sorozatának száma és/vagy összetétele megváltozott (például a készlethiány vagy más okok miatt). Előfordul, hogy a teljes tekercset akkor is újra kell nyomtatni, ha csak a dobozok száma módosult, hogy az egyes címkék „X/Y doboz” szakaszában a teljes szám pontos maradjon.
 
@@ -32,10 +32,10 @@ A hullámcímkék újranyomtatása funkció a következő funkciókat támogatja
 - Címkék érvénytelenítése és egyidejű újranyomtatása. (Például a címkék érvénytelenítésének képessége be van ágyazva a rövid kitárolási forgatókönyvekbe.)
 - Hullámcímke-előzmények törlése.
 
-Ez a témakör olyan forgatókönyvek gyűjteményét mutatja be, amelyek példákon keresztül mutatják be a munkát a címkék újranyomtatása funkcióval.
+Ez a cikk olyan helyzetek gyűjteményét mutatja be, amelyek példákon keresztül mutatják be az újranyomtatott hullámcímkék funkcióját.
 
 > [!IMPORTANT]
-> Az ebben a témakörben ismertetett eseteket végigkövetéséhez, először be kell kapcsolnia, és konfigurálnia kell a szükséges hullámnyomtatási funkciókat a [Hullámcímkék nyomtatásának konfigurálása](../warehousing/configure-wave-label-printing.md) témakörben leírtak szerint. Az ebben a témakörben szereplő forgatókönyvek közül több is megköveteli, elvégezze az abban a témakörben található forgatókönyveket az előfeltételt jelentő mintaadatok létrehozásához.
+> Az ebben a cikkben leírt eseteken való munka érdekében először be kell kapcsolnia és konfigurálnia kell a megfelelő hullámnyomtatási funkciókat, [mint azt a Hullámcímke-nyomtatás konfigurálása ismerteti](../warehousing/configure-wave-label-printing.md). A cikk számos esete esetén az előfeltételként szükséges mintaadatok előállításához először végig kell dolgozni az abban a cikkben olvasható eseteket.
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>1. eset: Címkék újranyomtatása a webes ügyfélprogramból
 

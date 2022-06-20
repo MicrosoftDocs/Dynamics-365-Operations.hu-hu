@@ -1,6 +1,6 @@
 ---
-title: Hívásközpont-csatornák beállítása
-description: Ebben a témakörben a hívásközpontok folyamatrendeléseiről tájékozódhat a Dynamics 365 Commerce használatával.
+title: Hívásközponti csatornák beállítása
+description: Ez a cikk a hívásközponti rendeléseknek a használatával való feldolgozásával kapcsolatban tartalmaz tájékoztatást Dynamics 365 Commerce.
 author: josaw1
 ms.date: 02/04/2022
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: c6d21385d956534c799af5b9e20a54c9970da368
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092432"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854871"
 ---
 # <a name="set-up-call-center-channels"></a>Hívásközponti csatornák beállítása
 
@@ -58,7 +58,7 @@ Ezenkívül, ha a **Rendeléskiegészítés engedélyezése** beállítás enged
 Akkor is, ha a **Rendeléskiegészítés engedélyezése** beállítás ki van kapcsolva, a felhasználók továbbra is alkalmazhatnak egy forráskódot egy értékesítési rendelésre. Azonban ehhez meg kell nyitni az értékesítési rendelés fejlécének részleteit a **Forrás** mező eléréséhez. Ez azt jelenti, hogy néhány további kattintással szükség. Ugyanez vonatkozik az olyan funkciókra, mint a szállítás befejeződött és a sürgős rendelések. Ezek a funkciók a hívásközpontban létrehozott összes rendeléshez elérhetők. Ugyanakkor, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, a felhasználók megtekinthetik ezeknek a szolgáltatásoknak a konfigurációját az eladási fejlécben, amíg a sorbeviteli nézetben vannak. Nem kell megnyitniuk az értékesítési rendelés fejlécének részletes információit a megfelelő beállítások és mezők megkereséséhez.
 
 > [!NOTE]
-> Amikor az **Omni-channel Commerce megrendelések kifizetése** funkció engedélyezve van, a call center **Megrendelés befejezésének engedélyezése** gomb el lesz rejtve a központban a **Tábornok** Csatornád gyorslapja itt **Kiskereskedelem és kereskedelem \> Csatornák \> Call Centerek**.
+> **Ha engedélyezve van aCsatorna csatorna Commerce** rendeléskifizetési szolgáltatása, **·** **·** **\>\> a Kiskereskedelmi és Commerce Csatornák hívásközpontja általános gyorsgombjával rejtve marad a Rendeléskiegészítés engedélyezése hívásközpont.**
 
 ### <a name="enable-direct-selling"></a>Közvetlen értékesítés engedélyezése
 
@@ -77,7 +77,7 @@ A hívásközponti csatornák definiálásakor a csatornafelhasználókat hozzá
 Alapértelmezés szerint az **Értékesítés** jelző az értékesítési rendelés fejlécében be van kapcsolva a hívásközpont felhasználói által létrehozott minden megrendelésre. A rendelések ezután élvezhetik a rendszer kereskedelemspecifikus ár- és promóciófunkcióinak előnyeit.
 
 
-Hívásközponti csatornához nem kapcsolt felhasználók szokásos rendelésibeviteli funkciókat használhatják a Microsoft Dynamics 365 Finance rendszerben. Az ilyen felhasználók által az értékesítési rendelés bevitele képernyőről bevitt rendelések nem lesznek rendszeresen Commerce megrendelésként azonosítva. Emellett ezek a rendelések, amelyeket ezek a felhasználók visznek be, nem tartoznak a rendelés teljesítésére vonatkozó szabályok feldolgozása, az árképzéslogika vagy más rendelés-ellenőrzések hatálya alá, amelyeket a hívásközponti csatorna konfigurálásánál és a hívásközponti rendszerparaméterekben lehet meghatározni.
+Azok a felhasználók, akik nem kapcsolódnak hívásközponti csatornához, Microsoft Dynamics a 365 Pénzügy általános rendelésbeviteli funkcióit használják. Az ilyen felhasználók által az értékesítési rendelés bevitele képernyőről bevitt rendelések nem lesznek rendszeresen Commerce megrendelésként azonosítva. Emellett ezek a rendelések, amelyeket ezek a felhasználók visznek be, nem tartoznak a rendelés teljesítésére vonatkozó szabályok feldolgozása, az árképzéslogika vagy más rendelés-ellenőrzések hatálya alá, amelyeket a hívásközponti csatorna konfigurálásánál és a hívásközponti rendszerparaméterekben lehet meghatározni.
 
 A hívásközponti csatornák konfigurálása és a csatorna felhasználóinak megadása után, a kívánt rendszerviselkedés garantálásának elősegítésére érdekében ellenőrizze, hogy az összes szükséges hívásközponti paraméter meg van határozva itt: **Retail és Commerce** \> **Csatorna beállítása** \> **Hívásközpont beállítása** \> **Hívásközponti paraméterek**. Győződjön meg arról, hogy kapcsolódó számsorozatok is meg vannak határozva.
 

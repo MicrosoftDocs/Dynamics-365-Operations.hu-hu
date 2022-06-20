@@ -1,6 +1,6 @@
 ---
-title: Vevői tanúsítványok és tanúsítványok
-description: Ez a témakör bemutatja, hogy hogyan lehet beállítani a vevői tanúsítványokat és az elektronikus számlázást.
+title: Vevői tanúsítványok és titkos kódok
+description: Ez a cikk bemutatja, hogy hogyan állíthatja be a vevői tanúsítványokat és azok elektronikus számlázását.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1325cad95e9a6dc470691f5f168439fccaaa78e1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: a4d33135bf352a4c4a245e597e0c3c7467317864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880660"
 ---
-# <a name="customer-certificates-and-secrets"></a>Vevői tanúsítványok és tanúsítványok
+# <a name="customer-certificates-and-secrets"></a>Vevői tanúsítványok és titkos kódok
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ A következő lépések szerint hozhatja létre és állíthatja be a tanúsítv
 2. A **Globalizációs funkció** munkaterületen a **Környezet** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
 3. A Környezet **beállítása lapon**, a munkaablakban válassza a Szolgáltatáskörnyezetek **beállítást**.
 4. A Szolgáltatási **környezetek** lapon, a munkaablakban válassza ki **a Kulcs paramétereit**.
-5. A Kulcs **– Paraméterek** lapon válasszon ki egy Key Inss Key Paraméter-hivatkozást, **majd** a Tanúsítványok szakaszban válassza a Hozzáadás **gombra**.
+5. A Kulcs **– Paraméterek** lapon válasszon ki egy Key Inss Key Paraméter-hivatkozást, **majd** a Tanúsítványok szakaszban válassza a Hozzáadás **gombra.**
 6. A Név **mezőbe** írja be a kulcs tanúsítványának vagy titkos tanúsítványának nevét. A további tudnivalókat [lásd Az Azure-tárfiók létrehozása az Azure-portálon](e-invoicing-create-azure-storage-account-azure-portal.md).
 7. Adjon meg egy leírást a **Leírás** mezőben.
 8. A Típus **mezőben** válassza a Tanúsítvány lehetőséget, **ha** a kulcstárolóban tárolt tanúsítványra hivatkozik. Válassza **a Titkos** lehetőséget, ha a kulcskulcsban tárolt titkos információra hivatkozik.

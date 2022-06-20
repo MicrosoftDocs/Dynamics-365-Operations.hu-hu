@@ -1,6 +1,6 @@
 ---
 title: A kezdeti vevői fizetési előrejelzési modell kiértékelése
-description: Ez a témakör azokat a lépéseket mutatja be, amelyekkel megismerheti a vevői kifizetési előrejelzési modellt, és értékelheti annak hatékonyságát.
+description: Ez a témakör ismerteti azokat a lépéseket, amelyek segítségével jobban megértheti a vevői kifizetések előrejelzési modelljét, és kiértékelheti annak hatékonyságát.
 author: ShivamPandey-msft
 ms.date: 05/02/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: fcdf276505cf58267a38e9d6174a155ad307653b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847002"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>A kezdeti vevői fizetési előrejelzési modell kiértékelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet értékelni egy előrejelzési modellt, miután bekapcsolta a Finance Insights lehetőséget, majd létrehozta és betanította az első modellt. Ez a témakör a vevői fizetések előrejelzési modelljeivel foglalkozik. Azokat a lépéseket mutatja be, amelyekkel megismerheti a vevői kifizetési előrejelzési modellt, és értékelheti annak hatékonyságát.
+Ez a cikk azt mutatja be, hogyan lehet kiértékelni egy előrejelzési modellt, miután bekapcsolta a Pénzügyi adatáttekintéseket, majd előállította és előállította az első modellt. Ez a cikk a vevői kifizetések előrejelzésére használható modelleket tartalmazza. Azokat a lépéseket mutatja be, amelyekkel megismerheti a vevői kifizetési előrejelzési modellt, és értékelheti annak hatékonyságát.
 
 ## <a name="getting-details-about-the-model"></a>A modell részleteinek megszerzése
 

@@ -1,6 +1,6 @@
 ---
 title: Szolgáltatási szerződések létrehozása
-description: Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és könyvelés modulok funkcióinak használatát a szolgáltatási szerződések létrehozásánál.
+description: Ez a témakör leírja, hogyan lehet szolgáltatási szerződéseket létrehozni a Szolgáltatáskezelés és a Projektkezelés és könyvelés modul szolgáltatásaival.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8a139d1a11cca036ace2540cba59bf2cace0db
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d18d279cd437e98cad6495def953978cb78e723e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901763"
 ---
 # <a name="create-service-agreements"></a>Szolgáltatási szerződések létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és könyvelés modulok funkcióinak használatát a szolgáltatási szerződések létrehozásánál.
+Ez a témakör leírja, hogyan lehet szolgáltatási szerződéseket létrehozni a Szolgáltatáskezelés és a Projektkezelés és könyvelés modul szolgáltatásaival.
 
 ## <a name="create-a-service-agreement-from-service-management"></a>Szolgáltatási szerződés létrehozása a Szolgáltatáskezelésből
 
@@ -51,10 +51,10 @@ Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és kön
 2. Az **Összes projekt** elemet válassza.
 3. Válassza ki a projektet a listából.
 4. A **Műveleti ablaktáblán** válassza a **Kezelés** lehetőséget. Az **Új** műveletcsoportban válassza a **Szolgáltatás** lehetőséget, és válassza ki a **Szolgáltatási szerződés** pontot.
-5. Kövesse a jelen témakör korábbi, **Szolgáltatási szerződések létrehozása** című szakaszában található utasításokat a projektreferencia megadásához.
+5. A projekthivatkozás létrehozásához **kövesse a** Szolgáltatási szerződés létrehozása című szakaszban ismertetett lépéseket.
 
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Szolgáltatási szerződések kialakítása és megkötése – áttekintés](service-agreements.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Munkarendelések ütemezése
-description: Ez a témakör azt mutatja be, hogyan lehet munkarendeléseket ütemezni az Eszközkezelés modulban.
+description: Ez a cikk bemutatja, hogyan lehet ütemezni a munkarendeléseket az Eszközkezelésben.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718059"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845054"
 ---
 # <a name="schedule-work-orders"></a>Munkarendelések ütemezése
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718059"
 
  
 
-Ez a témakör azt mutatja be, hogyan lehet munkarendeléseket ütemezni az Eszközkezelés modulban. 
+Ez a cikk bemutatja, hogyan lehet ütemezni a munkarendeléseket az Eszközkezelésben. 
 
 A munkarendeléshez szükséges óraszámot az előre jelzett munkaórák összege mínusz a feladott órák száma határozza meg. Ha több időre van szükség, az előrejelzést ennek megfelelően módosítani kell. Az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** pontban a munkarendelés kiválasztásával és a **Munkarendelés** lap **Előrejelzés** elemére kattintva megtekintheti vagy szerkesztheti a munkarendelés előrejelzéseit. Munkarendelések létrehozása és becslése esetén a következő lépés a befejezéshez szükséges karbantartási dolgozók és eszközök hozzárendelése a munkarendeléshez.
 

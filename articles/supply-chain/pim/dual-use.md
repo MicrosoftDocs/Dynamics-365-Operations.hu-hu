@@ -1,6 +1,6 @@
 ---
 title: Kettős felhasználású áruk
-description: Ez a témakör azt mutatja be, hogyan lehet nyomon követni a kettős felhasználású árukként azonosított termékeket, tárolni az összes érintett termék és célország esetében a tanúsítványok számait, valamint kinyomtatni a megfelelő számlákra, szállítólevelekre és/vagy értékesítési rendelésekre vonatkozó érvényes tanúsítványok számát.
+description: Ez a cikk bemutatja, hogy hogyan lehet nyomon követni a kettős felhasználású árukként azonosított termékeket, az egyes érintett termékek és rendeltetési országok tanúsítványszámait, valamint érvényes tanúsítványszámokat nyomtatni a megfelelő számlákra, csomagjegyzékre és/vagy értékesítési rendelésekre.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878903"
 ---
 # <a name="dual-use-goods"></a>Kettős felhasználású áruk
 
@@ -42,7 +42,7 @@ Vegyük például a következő esetet:
 
 6. A rendelés X-100 terméket tartalmaz, és a termék szállítása Franciaországba történik, és a termékhez francia tanúsítvány van. A tanúsítvány azonban lejárt. Ennek megfelelően a következő figyelmeztető üzenet jelenik meg: „Az értékesítési rendelésben egy vagy több kettős felhasználású cikk található, amelynek kettős használatára vonatkozó tanúsítványok nem érvényesek. Folytatja a visszaigazolást?"
 
-Ez a témakör azt mutatja be, hogyan lehet konfigurálni azokat a beállításokat, amelyek szükségesek a kettős felhasználású áruk beállításához és a helyzet támogatásához.
+Ez a cikk bemutatja, hogy hogyan konfigurálható minden olyan beállítás, amely a két használatú cikkek beállításához és az eset támogatásához szükséges.
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>A kettős használat követelményeinek meghatározása mindegyik érintett ország esetében
 

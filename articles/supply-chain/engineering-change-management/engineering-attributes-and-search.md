@@ -1,6 +1,6 @@
 ---
 title: Mérnöki attribútumok és mérnöki attribútumkeresés
-description: Ez a témakör bemutatja, hogyan használhatja a mérnöki attribútumokat az összes nem szabványos jellemző megadására annak érdekében, hogy az összes terméktörzsi adat regisztrálható legyen a rendszerben. Azt is elmagyarázza, hogyan használhatja a mérnöki attribútumkeresést a termékek egyszerű megtalálásához a regisztrált jellemzők alapján.
+description: Ez a cikk bemutatja, hogy a mérnöki attribútumok használatával lehet megadni az összes nem szabványos jellemzőt, hogy minden alapterméket regisztrálni lehet a rendszerben. Azt is elmagyarázza, hogyan használhatja a mérnöki attribútumkeresést a termékek egyszerű megtalálásához a regisztrált jellemzők alapján.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 59710f0366418e240a4109e7cf8fcf84073110bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4b25ab0bfda08b7aa091de8c6833007c586b9c87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103213"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852563"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Mérnöki attribútumok és mérnöki attribútumkeresés
 
@@ -74,7 +74,7 @@ Termékstruktúrák, például anyagjegyzékek vagy receptúrák esetén a kivá
 
 #### <a name="turn-engineering-attribute-inheritance-on-or-off"></a>Attribútumöröklődés be- és kikapcsolása
 
-Ehhez a funkcióhoz a mérnöki *változáskezelés* *és* a Jobb attribútumöröklődés a rendszer számára is be kell kapcsolva lennie. A szolgáltatások be- és kikapcsolásáról a Géptervezési változáskezelés áttekintése című témakörben [olvashat](product-engineering-overview.md).
+Ehhez a funkcióhoz a mérnöki *változáskezelés* *és* a Jobb attribútumöröklődés a rendszer számára is be kell kapcsolva lennie. A funkciók be- és kikapcsolása a [Műszaki változáskezelés témakörében található](product-engineering-overview.md).
 
 #### <a name="attribute-inheritance-example"></a>Példa attribútumok öröklődésére
 

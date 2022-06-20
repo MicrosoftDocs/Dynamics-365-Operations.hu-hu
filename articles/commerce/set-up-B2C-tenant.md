@@ -1,6 +1,6 @@
 ---
 title: B2C-bérlő beállítása a Commerce-ben
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directory (Azure AD) cég-ügyfél (B2C) bérlőket felhasználói webhely-hitelesítéshez Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör azt Azure Active Directory ismerteti, hogyan lehet beállítani a felhasználók által használt (Azure AD B2C) bérlőket a felhasználói webhely hitelesítésére Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/05/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 4b1ee8999717d70dfe36baef95921962a1b7be65
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714312"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853741"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directory (Azure AD) cég-ügyfél (B2C) bérlőket felhasználói webhely-hitelesítéshez Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt Azure Active Directory ismerteti, hogyan lehet beállítani a felhasználók által használt (Azure AD B2C) bérlőket a felhasználói webhely hitelesítésére Dynamics 365 Commerce.
 
 A Dynamics 365 Commerce az Azure AD B2C protokollt használja a felhasználók hitelesítő adatainak és hitelesítési folyamatainak támogatásához. A felhasználó ezeket a folyamatokat feliratkozhat, bejelentkezhet és alaphelyzetbe állíthatja jelszavát. Az Azure AD B2C érzékeny természetű felhasználói hitelesítési adatokat, például a felhasználónevet és a jelszót tárolja. A B2C-bérlőben a felhasználói rekordja a B2C helyi fiók rekordját vagy a B2C társadalmi identitásszolgáltatói rekordját fogja tárolni. Ezek a B2C rekordoknak a vevői rekordra mutatnak vissza a Commerce környezetben.
 

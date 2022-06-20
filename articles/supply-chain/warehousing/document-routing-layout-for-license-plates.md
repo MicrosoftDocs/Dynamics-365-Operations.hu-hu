@@ -1,6 +1,6 @@
 ---
-title: Dokumentumirányítás elrendezés azonosítótábla-címkékhez
-description: Ez a témakör azt mutatja be, hogyan lehet használni a formázási metódusokat értékek nyomtatásához a címkékre.
+title: Dokumentumirányítási elrendezés azonosítótábla-címkékhez
+description: Ez a témakör azt ismerteti, hogyan lehet a címkékre nyomtatni az értékeket formázási módszerek használatával.
 author: perlynne
 ms.date: 04/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847875"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentumirányítás elrendezés azonosítótábla-címkékhez
 
@@ -53,7 +53,7 @@ Számos széles körben elérhető címke-létrehozási eszköz segít a szöveg
 
 ## <a name="turn-on-this-feature-for-your-system"></a>A funkció bekapcsolása a rendszerhez
 
-Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a kapcsolja be az *Engedélyezett azonosítótáblacímke-elrendezések* funkciót. (Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni.)
+Ha a rendszer még nem tartalmazza az ebben a cikkben ismertetett funkciókat, akkor menjen a [Funkciókezeléshez](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), *és kapcsolja be az Táblacímke-elrendezések továbbfejlesztett funkcióját*. (Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni.)
 
 ## <a name="custom-number-formats"></a>Egyéni számformátumok
 
@@ -129,7 +129,7 @@ A következő formátummal nyomtathat egy megjelenítési módból.
 $DisplayMethod()$
 ```
 
-Ez a formátum kombinálható a témakör korábbi részében ismertetett egyéb típusokkal is. Például van egy `DisplayListOfItemsNumbers()` névvel ellátott megjelenítési módja, és ki szeretné nyomtatni a mód első cikkszámát. Ebben az esetben a következő kódot használhatja.
+Ez a formátum kombinálható a cikk korábbi leírásában ismertetett egyéb típusokkal. Például van egy `DisplayListOfItemsNumbers()` névvel ellátott megjelenítési módja, és ki szeretné nyomtatni a mód első cikkszámát. Ebben az esetben a következő kódot használhatja.
 
 ```dos
 $DisplayListOfItemsNumbers()[1]$

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e452bda02c814b78c4bb48140b07f0113ab4a571
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358314"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903507"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>Számlasorok létrehozása szállítói számlák importálásakor
 
@@ -42,7 +42,7 @@ A következő lépések szerint engedélyezheti a számlasorok automatikus létr
 
 ## <a name="data-entity-changes"></a>Adatentitás-módosítások
 
-Az ebben a témakörben ismertetett funkciók támogatása érdekében a **Szállítói számla fejléce** adatentitás bővítve lett. Három mező lett hozzáadva:
+Az ebben a cikkben ismertetett funkciók támogatása érdekében **a szállítói** számla fejlécadat-entitása továbbfejlesztett módon fel lett bővítve. Három mező lett hozzáadva:
 
 - **HeaderOnlyImport** – a számlafejlécek sorait csak Igen **beállítású** mezőben állíthatja elő.
 - **PurchIdRange** – A beszerzési rendelési számok listája. A számlaszámok lehetnek tartomány, például **INV0001..INV0009** (ahol két pont választja el a tartomány kezdő és záró értékét), vagy különálló értékek, például **INV0001, INV0003, INV0006**. Minden beszerzési rendelésnek ugyan ahhoz a szállítói számlához kell tartozni a számlafejlécben. Ellenkező esetben a következő hibaüzenet jelenik meg: "Nem sikerült számlasorokat generálni. A beszerzési rendelésekhez eltérő szállítói számlák tartoznak."

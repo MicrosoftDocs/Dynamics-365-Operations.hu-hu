@@ -1,6 +1,6 @@
 ---
 title: Raktárkezelés készleten lévő bejegyzéseinek karbantartási feladata
-description: Ez a témakör bemutatja az aktuális készlet bejegyzések karbantartási feladatát, amely a kapcsolódó, de szükségtelen rekordok azonosításával és törlésével segít a rendszer teljesítményének növelésében.
+description: Ez a témakör leírja az adott feladathoz tartozó, az adatok törlését, ami a kapcsolódó, de szükségtelen rekordok azonosításával és törlésével javítja a rendszer teljesítményét.
 author: perlynne
 ms.date: 04/23/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900506"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Raktárkezelés készleten lévő bejegyzéseinek karbantartási feladata
 
@@ -26,7 +26,7 @@ ms.locfileid: "8103863"
 
 Az aktuális készlet kiszámításához használt lekérdezések teljesítményére hatással van az érintett táblák rekordjainak száma. A teljesítmény javítása érdekében az egyik mód az, hogy csökkentse azoknak a rekordoknak a számát, amelyeket az adatbázisnak figyelembe kell vennie.
 
-Ez a témakör bemutatja az aktuális készlet bejegyzések karbantartási feladatát, amely törli a szükségtelen rekordokat az InventSum és a WHSInventReserve táblákban. Ezek a táblák a raktárkezelési feldolgozására engedélyezett cikkek aktuális adatait tárolják. (Ezeket a cikkeket WHS cikkeknek nevezzük.) A rekordok törlése jelentősen javíthatja az aktuáliskészlet-számítások teljesítményét.
+Ez a cikk az InventSum és a WHSInventReserve táblák szükségtelen rekordjainak törlését írja le az inventSum és a WHSInventReserve tábla adatkarban lévő bejegyzéseinek törléséről. Ezek a táblák a raktárkezelési feldolgozására engedélyezett cikkek aktuális adatait tárolják. (Ezeket a cikkeket WHS cikkeknek nevezzük.) A rekordok törlése jelentősen javíthatja az aktuáliskészlet-számítások teljesítményét.
 
 ## <a name="what-the-cleanup-job-does"></a>A karbantartási feladat tartalma
 

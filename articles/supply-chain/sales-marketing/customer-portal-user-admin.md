@@ -1,6 +1,6 @@
 ---
-title: Ügyfélportál-felhasználók létrehozása és kezelése (videót tartalmaz)
-description: Ez a témakör azt mutatja be, hogyan kell létrehozni az Ügyfélportál felhasználói fiókjait, és hogyan állíthatja be a rájuk vonatkozó engedélyeket.
+title: Vevői portál felhasználóinak létrehozása és kezelése (videofelvételt tartalmaz)
+description: Ez a cikk bemutatja a vevői portál felhasználói fiókjainak létrehozásához és az ilyen fiókokhoz szükséges engedélyek beállítását.
 author: Henrikan
 ms.date: 07/31/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d095b0f6ff707852b4c9e22fd9c31cf87ccbe9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062490"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905776"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Ügyfélportál felhasználóinak létrehozása és kezelése
 
@@ -33,7 +33,7 @@ Amikor a felhasználók magukat regisztrálják, a kapcsolattartói rekordok aut
 ## <a name="video"></a>Videó
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-A [Hívja meg az ügyfeleket, hogy regisztráljanak, és használják ügyfélkapuját](https://youtu.be/drGUYHX9QIQ) videó (fent látható) szerepel a [Finance and Operations lejátszási lista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) elérhető YouTube.
+A [Vevők meghívása a](https://youtu.be/drGUYHX9QIQ) vevői portál videofelvételének regisztrálásához és használatára (fent látható) [a Pénzügyi és műveletek elérhetővé](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) teve YouTube.
 
 ## <a name="prerequisite-setup"></a>A beállítás előfeltételei
 

@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. szeptember 26.)
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. szeptember 26-i kiadásban.
+description: Ez a témakör olyan funkciókat ismertet, amelyek vagy újak, vagy módosulnak a Microsoftban Dynamics 365 Human Resources 2020. szeptember 26-án.
 author: jcart1106
 ms.date: 09/26/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8b0260c4d1bafe271a08336ceed7dc3742f1d590
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 1b7a89ae8a2132c8548d9451aa235d1bccb88809
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061384"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874246"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. szeptember 26.)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8061384"
 
 
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
+Ez a témakör az új, módosított vagy hamarosan érkező funkciókat írja le Dynamics 365 Human Resources. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
 További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -39,16 +39,16 @@ Ez a kiadás az alábbi új funkciókat és hibajavításokat tartalmazza. A vá
 
 Az alábbi funkció általában a következő verzióval lesz elérhető:
 
-- **A 10.0.13-as platformfrissítés már elérhető** : A frissítéssel kapcsolatos további információkért lásd: [Platformfrissítések a Finance and Operations alkalmazások 10.0.13-as verziójához (2020. október)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
+- **A 10.0.13-as** verziófrissítés most elérhető: [A frissítéssel kapcsolatos további tudnivalókat lásd a Pénzügyi és műveleti alkalmazások 10.0.13-as verziójának Platformfrissítései (2020. október)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 > [!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakör frissítései olyan hibajavításokat is tartalmazhatnak, amelyek annak első közzététele után léptek életbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a cikk frissítései a cikk első közzététele után tartalmaznak hibajavításokat a buildben.
 
-| Kiadás száma | Kiadás | Leírás |
+| Kiadás száma | Probléma | Leírás |
 | --- | --- | --- |
 | 469495 | A pénzügyi dimenziók alapértelmezett rácsának és párbeszédpanelének frissítése | A pénzügyi dimenziók rácsa és párbeszédpanel frissült a Human Resources alkalmazás minden részében. |
 | 474887 | A szabadságkérelem munkaelem rossz hivatkozást nyit meg kézi döntés esetén | Amikor egy munkafolyamat-konfiguráció manuális döntést tartalmaz, a **Hozzám rendelt munkatételek** elemről a szabadságkérelemre lépve nem a megfelelő hivatkozás jelenik meg, és vagy egy üres képernyő, vagy az aktuális felhasználó által a kézi döntés céljára hozzárendelt, nem pedig az aktuális felhasználó által létrehozott szabadságkérelem jelenik meg. |

@@ -1,6 +1,6 @@
 ---
 title: Szállítói együttműködési mobil munkaterület
-description: Ez a témakör a Szállítói együttműködés mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
+description: Ez a cikk a Szállítói együttműködési mobileszköz munkaterületével kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
 author: GalynaFedorova
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811714"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851652"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Szállítói együttműködési mobil munkaterület
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Ez a témakör a **Szállítói együttműködés** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
+Ez a cikk a Szállítói együttműködési mobileszköz **munkaterületével kapcsolatban** tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
 
 Ez a mobil munkaterület a Pénzügy és műveletek (Dynamics 365) mobilalkalmazással való használatra szolgál.
 
@@ -97,7 +97,7 @@ Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-
 </tr>
 <tr class="even">
 <td>A szállítói felhasználónak hozzáférést kell biztosítania a szállítói együttműködési webes felületéhez a webes ügyfélen, és létre kell hoznia egy szállítói együttműködő felhasználót.</td><td>Beszerzési szakértők és a rendszergazda</td>
-<td>Kövesse az alábbi témakörökben leírt lépéseket az eladói együttműködési webes felület beállításához és működtetéséhez.
+<td>Kövesse az alábbi cikkek lépéseit a szállítói együttműködési webes felület beállításának és a velük való együttműködésnek érdekében.
 <ul>
 <li><a href="vendor-collaboration-work-external-vendors.md">A külső szállítókkal történő szállítói együttműködés használata</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Szállítói együttműködés felhasználóinak kezelése</a></li>

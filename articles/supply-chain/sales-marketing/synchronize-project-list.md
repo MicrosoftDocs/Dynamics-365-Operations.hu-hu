@@ -1,6 +1,6 @@
 ---
 title: Projektlista szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management projektjeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
+description: Ez a cikk a projektek szinkronizálásához használt sablonokat és mögöttes feladatokat tárgyalja Dynamics 365 Supply Chain Management Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b825e2fce61e96b963ba0d41f8db49ca9ba646f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 71c0580953f01c2d29e99fa2928a0b4a3937d5c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571593"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899353"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Projektlista szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management projektjeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
+Ez a cikk a projektek szinkronizálásához használt sablonokat és mögöttes feladatokat tárgyalja Dynamics 365 Supply Chain Management Dynamics 365 Field Service.
 
 [![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 

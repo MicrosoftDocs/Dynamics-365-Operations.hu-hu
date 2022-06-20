@@ -1,6 +1,6 @@
 ---
 title: Naptárak létrehozása és munkaidők generálása
-description: A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását. Ez a témakör bemutatja, hogyan definiálhat egy munkanaptárat egy munkaidősablon alapján.
+description: A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását. Ez a cikk bemutatja, hogyan definiálhat egy munkanaptárat egy munkaidősablon alapján.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: business-process
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b49b5393448bc501abd1b96123b64c034d7cc67
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 811f49307a8ae44bbee9906cb40a3ca31101f52b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692891"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846329"
 ---
 # <a name="create-calendars-and-generate-working-times"></a>Naptárak létrehozása és munkaidők generálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben jelezhető funkció jelenleg elérhető a pénzügyi infrastruktúra emberi erőforrás vevői számára.  
+> Az ebben a cikkben jelezhető funkció jelenleg elérhető a pénzügyi infrastruktúra emberi erőforrás vevői számára.  
 
 
-A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását. Ez a témakör bemutatja, hogyan definiálhat egy munkanaptárat egy munkaidősablon alapján. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.
+A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását. Ez a cikk bemutatja, hogyan definiálhat egy munkanaptárat egy munkaidősablon alapján. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.
 
 1. A kezdőlapon válassza az **Erőforrás életcikluskezelése** lehetőséget.
 2. Válassza a **Naptárak** lehetőséget.

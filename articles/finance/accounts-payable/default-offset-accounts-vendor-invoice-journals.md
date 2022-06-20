@@ -1,6 +1,6 @@
 ---
 title: Alapértelmezett ellenszámlák szállítóiszámla-naplók és számlajóváhagyási naplók számára
-description: A jelent témakör segítségével eldöntheti, hogy hová rendelje hozzá az alapértelmezett számlákat a számlanaplókhoz.
+description: Ez a cikk segít eldönteni, hogy hová kell hozzárendelni az alapértelmezett számlákat a számlanaplókhoz.
 author: abruer
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1b0184850602191da5448df25779437f70e5c3182e1b7b70d92d4c406e08599
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fb351a1f3df54f74b3a0fc7ca2669f04f3f68301
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749028"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889178"
 ---
 # <a name="default-offset-accounts-for-vendor-invoice-and-invoice-approval-journals"></a>Alapértelmezett ellenszámlák szállítóiszámla-naplók és számlajóváhagyási naplók számára
 

@@ -1,6 +1,6 @@
 ---
 title: Rekordok csoportosítása és számítások összesítése GROUPBY adatforrások használatával
-description: Ez a témakör bemutatja, hogy hogyan használhatók a GROUPBY típusú adatforrások az elektronikus jelentéskészítésben (ER).
+description: Ez a cikk bemutatja, hogy hogyan használhatók a GROUPBY típusú adatforrások az elektronikus jelentéskészítésben (ER).
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b79dfe62122a031ae9ed7f51ea7ff578cd47358
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 7b20b5db0794157560f27f15594a84083966642f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861787"
 ---
 # <a name="group-records-and-aggregate-calculations-by-using-groupby-data-sources"></a>Rekordok csoportosítása és számítások összesítése GROUPBY adatforrások használatával
 
@@ -69,7 +69,7 @@ Ha többet szeretne megtudni erről a funkcióról, töltse ki az alábbi péld�
 
 A példa bemutatja, hogy a rendszergazdai vagy elektronikus jelentéskészítési funkcionális tanácsadói szerepkörű felhasználók hogyan konfigurálhatnak egy OLYAN ER-modellleképezést **, amelynek GROUPBY** adatforrása az összesítő függvények és a csoportrekordok kiszámítására használható. Ezzel a modellleképezéssel nyomtatható ki az ellenőrző jelentés az Intrastat-nyilatkozat generálása során. Ezzel a jelentéssel áttekintheti a jelentett Intrastat-tranzakciókat.
 
-A példában következő eljárásokat a **Microsoft DEMF vállalatában** lehet végrehajtani Dynamics 365 Finance. 
+Az ebben a példában alkalmazott eljárások a **DEMF** Microsoft Dynamics vállalatnál, a 365 Pénzügyben használhatja. 
 
 ### <a name="prepare-sample-data"></a>Mintaadatok előkészítése
 
@@ -83,7 +83,7 @@ Kövesse az [ER-keretrendszer konfigurálása](er-quick-start2-customize-report.
 
 ### <a name="import-the-standard-er-format-configuration"></a>A szabvány ER-formátumkonfiguráció importálása
 
-A [A szabvány ER-formátumkonfiguráció importálása](er-quick-start2-customize-report.md#ImportERSolution1) rész lépéseit követve adja hozzá a szabványos ER-konfigurációkat az aktuális Dynamics 365 Finance-példányhoz. Importálja az Intrastat-modell **konfigurációjának 1**. verzióját a tárházból.
+A Szabványos ER [formátumkonfiguráció](er-quick-start2-customize-report.md#ImportERSolution1) importálása lépéseit követve adja hozzá a normál ER-konfigurációkat a Dynamics 365 Pénzügy aktuális példányához. Importálja az Intrastat-modell **konfigurációjának 1**. verzióját a tárházból.
 
 ### <a name="create-a-custom-data-model-configuration"></a>Egyéni adatmodell-konfiguráció létrehozása
 

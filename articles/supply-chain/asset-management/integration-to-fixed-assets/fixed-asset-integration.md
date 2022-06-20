@@ -1,6 +1,6 @@
 ---
 title: Eszközkezelés integrálása tárgyi eszközökkel
-description: Ez a témakör azt mutatja be, hogyan lehet integrálni az eszközkezelés és a tárgyi eszközök modulokat, hogy a tárgyi eszközöket a karbantartás alatt álló eszközökkel lehessen kapcsolni.
+description: Ez a cikk bemutatja, hogy hogyan lehet integrálni az Eszközkezelés és a Tárgyi eszközök modulokat, hogy a tárgyi eszközöket össze lehet hozni a karbantartási eszközökkel.
 author: johanhoffmann
 ms.date: 04/17/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d5dfaaf9e4cd989ad6b993e8d152f4713c0d3aa4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567583"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874217"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Eszközkezelés integrálása tárgyi eszközökkel
 
@@ -26,7 +26,7 @@ ms.locfileid: "7567583"
 Az **Eszközkezelés** és a **tárgyi eszközök** modulok integrálásával a tárgyi eszközöket a karbantartás alatt álló eszközökkel lehet kapcsolni. A tárgyi eszközök felhasználói ezt követően létrehozhatnak egy új vagy meglévő tárgyi eszközből karbantartás alatt álló eszközt, és az eszközkezelési felhasználók egy meglévő tárgyi eszközhöz rendelhetik a karbantartás alatt álló eszközt. Ez a funkció megkönnyíti a tárgyi eszközök felhasználói számára, hogy megtekintsék a kapcsolódó karbantartás alatt álló eszköz munkarendeléseiből feladott költségeket.
 
 > [!NOTE]
-> Ebben a témakörben a *karbantartás alatt álló eszköz* az **Eszközkezelés** modul eszközeire utal, a *tárgyi eszközök* pedig a **Tárgyi eszközök** modul eszközeire.
+> Ebben a cikkben *a* **karbantartási** eszközök az Eszközkezelési modul eszközeire, *·* **a tárgyi eszközök a Tárgyi eszközök modulból származó eszközökre vonatkoznak.**
 
 ## <a name="set-a-default-location-for-new-maintenance-assets-that-are-created-from-fixed-assets-optional"></a>A tárgyi eszközökből létrehozott új karbantartás alatt álló eszközök alapértelmezett helyének beállítása (nem kötelező)
 

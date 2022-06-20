@@ -1,6 +1,6 @@
 ---
-title: Terv a globális címjegyzékhez és további címjegyzékekhez
-description: Ez a témakör ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során figyelembe kell venni, valamint az ekkor meghozandó döntéseket.
+title: Terv a globális címjegyzékhez és egyéb címjegyzékekhez
+description: Ez a témakör ismerteti a tervezési folyamat során el kell döntenie a szempontokat és a döntéseket.
 author: msftbrking
 ms.date: 01/13/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b3f6a74c217b0cc7cec784ca6a964ab2caae0c7e9438aee2cc82987a508d63
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 288c96d8c877f5e3b3101080294b2f6cdeb39882
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771896"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863159"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Terv a globális címjegyzékhez és egyéb címjegyzékekhez
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során – a globális vagy bármely más címjegyzék beállítása és konfigurálása előtt – figyelembe kell venni, valamint az ekkor meghozandó döntéseket. Egyes döntések megkövetelik a korábban, a termék más területével kapcsolatban hozott döntések (pl. a szervezeti hierarchia) megerősítését.
+Ez a cikk ismerteti a tervezési folyamat során, a globális címjegyzék és az esetleges további címjegyzékek beállítása és konfigurálása előtt szükséges szempontokat és döntéseket. Egyes döntések megkövetelik a korábban, a termék más területével kapcsolatban hozott döntések (pl. a szervezeti hierarchia) megerősítését.
 
 ## <a name="global-address-book"></a>Globális címjegyzék
 

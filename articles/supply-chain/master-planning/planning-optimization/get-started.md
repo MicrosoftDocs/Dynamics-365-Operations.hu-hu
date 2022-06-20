@@ -1,6 +1,6 @@
 ---
-title: Első lépések a tervezési optimalizálással
-description: Ez a témakör bemutatja, hogyan kezdje el használni a tervezési optimalizáció funkciót.
+title: A Tervezési optimalizálás kezdő lépései
+description: Ez a cikk bemutatja, hogy hogyan lehet elkezdeni a tervezésoptimalizálási funkciót.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a08128f9529e576294181bd70134b02caae54b90
-ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
+ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648709"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900970"
 ---
 # <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
@@ -99,7 +99,7 @@ A kapcsolat állapota jelzi a kapcsolat aktuális állapotát a Supply Chain Man
 |---|---|---|
 | Csatlakoztatva | A rendszer kapcsolatot létesített a Tervezésoptimalizálás és a Supply Chain Management között. | Igen |
 | Kapcsolat engedélyezése | Jelenleg folyamatban van a Tervezésoptimalizálás szolgáltatással való kapcsolat bekapcsolási kérelme. | Nem |
-| Leválasztva | Nincs kapcsolat a tervezés optimalizálása szolgáltatással. A kapcsolat a következő témakörben leírtak szerint a LCS-ről kapcsolható be. | Nem |
+| Leválasztva | Nincs kapcsolat a tervezés optimalizálása szolgáltatással. A kapcsolat az LCS-ről is bekapcsolható a jelen cikk korábbi leírása szerint. | Nem |
 | Kapcsolat letiltása | Jelenleg folyamatban van a Tervezésoptimalizálás szolgáltatással való kapcsolat kikapcsolási kérelme. | Nem |
 | Állapot lekérése | A rendszer a tervezés optimalizálása szolgáltatásból származó állapotadatokra várakozik. | Nem |
 

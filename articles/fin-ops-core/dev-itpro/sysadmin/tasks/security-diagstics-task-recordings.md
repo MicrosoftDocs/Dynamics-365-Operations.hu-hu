@@ -1,6 +1,6 @@
 ---
 title: Biztonsági diagnosztika feladatrögzítésekhez
-description: Ez a témakör azt mutatja be, hogyan lehet elemezni és kezelni a biztonsági engedélykövetelményeket a feladatrögzítés alapján.
+description: Ez a cikk a feladatrögzítésen alapuló biztonsági engedélykövetelmények elemzésével és kezelésével kapcsolatban tartalmaz tájékoztatást.
 author: Peakerbl
 ms.date: 05/05/2020
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: 44af35f16f6e9ff89b30bc10eef3f16ecdfaf907c4c6e22aa5775d1941fb6a5d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb69bf997100f25cd0ad2b7e34139857199e5d00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880167"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Biztonsági diagnosztika feladatrögzítésekhez
 
@@ -26,7 +26,7 @@ ms.locfileid: "6745120"
 
 ## <a name="before-you-begin"></a>Előzetes feladatok
 
-Ez a témakör azt mutatja be, hogyan lehet elemezni és kezelni a biztonsági engedélykövetelményeket a feladatrögzítés alapján. A témakör lépéseinek elvégzése előtt rendelkeznie kell a elemezni kívánt üzleti folyamat feladatrögzítésével. Üzleti folyamat rögzítéséhez lásd: [Feladatrögzítő erőforrásai](../../user-interface/task-recorder.md). 
+Ez a cikk a feladatrögzítésen alapuló biztonsági engedélykövetelmények elemzésével és kezelésével kapcsolatban tartalmaz tájékoztatást. A cikk lépéseit csak azt megelőzően lehet végrehajtani, hogy rögzítenének egy feladatrögzítést az elemezni kívánt üzleti folyamatról. Üzleti folyamat rögzítéséhez lásd: [Feladatrögzítő erőforrásai](../../user-interface/task-recorder.md). 
 
 ## <a name="manage-security-for-a-task-recording"></a>Biztonság kezelése a feladatrögzítéshez
 

@@ -1,6 +1,6 @@
 ---
-title: E-kereskedelmi webhely áttekintése
-description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce e-kereskedelmi webhelyeinek támogatásáról.
+title: Az e-kereskedelmi webhely áttekintése
+description: Ez a cikk áttekintést nyújt a következőben található e-commerce webhelyek támogatásról:Microsoft Dynamics 365 Commerce
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 9b7e4d09eaa4f91478d27cbca5eaea48af86e676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487768"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899121"
 ---
-# <a name="e-commerce-site-overview"></a>E-kereskedelmi webhely áttekintése
+# <a name="e-commerce-site-overview"></a>Az e-kereskedelmi webhely áttekintése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce e-kereskedelmi webhelyeinek támogatásáról. Információkat tartalmaz arról, hogy az e-kereskedelem online áruházait hogyan inicializálják és kezelik a Dynamics 365 Commerce rendszerben. A témakör az online áruházakkal kapcsolatos további információkra mutató hivatkozásokat is tartalmaz, valamint információt nyújt az e-kereskedelmi webhely beállításáról és konfigurálásáról. Bár ez a témakör számos alapvető tudnivalót tartalmaz, nem terjed ki mindenre, ami egy éles e-kereskedelmi webhely beállításához szükséges. A Dynamics 365 Commerce dokumentációban részletesebb témakörök találhatók.
+Ez a cikk áttekintést nyújt a következőben található e-commerce webhelyek támogatásról:Microsoft Dynamics 365 Commerce Információkat tartalmaz arról, hogy az e-kereskedelem online áruházait hogyan inicializálják és kezelik a Dynamics 365 Commerce rendszerben. A témakör az online áruházakkal kapcsolatos további információkra mutató hivatkozásokat is tartalmaz, valamint információt nyújt az e-kereskedelmi webhely beállításáról és konfigurálásáról. Bár ez a cikk számos alapokat lefed, nem foglalkozik mindennel, ami a termelési e-commerce webhely beállításához szükséges. A speciális cikkek a dokumentációban találhatók Dynamics 365 Commerce.
 
 ## <a name="online-store-channel"></a>Online áruház csatornája
 
@@ -74,7 +74,7 @@ A Dynamics 365 Commerce az Azure Active Directory (Azure AD) vállalat és ügyf
 
 ## <a name="overview-of-the-default-site-pages"></a>Az alapértelmezett webhelyoldalak áttekintése
 
-Az **alapértelmezett** és a **fabrikam** webhelyek előre konfigurált sablonokat, töredékeket és lapokat tartalmaznak az első lépések hez. További információért tekintse át az alábbi témaköröket:
+Az **alapértelmezett** és a **fabrikam** webhelyek előre konfigurált sablonokat, töredékeket és lapokat tartalmaznak az első lépések hez. További információért tekintse át az alábbi cikkeket:
 
 - [Kezdőlap – áttekintés](quick-tour-home-page.md)
 - [Termékadatok oldal áttekintése](quick-tour-pdp.md)
@@ -83,7 +83,7 @@ Az **alapértelmezett** és a **fabrikam** webhelyek előre konfigurált sablono
 
 ## <a name="manage-site-settings"></a>Webhelybeállítások kezelése
 
-Ha szeretne többet megtudni a webhelybeállítások kezeléséről, tekintse át az alábbi témaköröket:
+A webhely beállításainak kezelésével kapcsolatos tudnivalókat lásd a következő cikkekben:
 
 - [Az e-kereskedelem felhasználóinak és szerepköreinek kezelése](manage-ecommerce-users-roles.md)
 - [A webhely keresőmotor-optimalizálási (SEO) szempontjai](search-engine-optimization-considerations.md)
@@ -92,7 +92,7 @@ Ha szeretne többet megtudni a webhelybeállítások kezeléséről, tekintse á
 
 ## <a name="manage-site-content"></a>Webhelytartalom kezelése
 
-Ha szeretne többet megtudni a webhelytartalom kezeléséről, tekintse át az alábbi témaköröket:
+A webhely tartalmának kezelésével kapcsolatos tudnivalókat lásd a következő cikkekben:
 
 - [Oldal modellszószedete](page-elements-overview.md)
 - [Állapotok és életciklus dokumentálása](document-states-overview.md)

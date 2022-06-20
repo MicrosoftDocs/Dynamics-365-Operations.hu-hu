@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) tárhely kivezetése
-description: Ez a témakör a Regulatory Configuration Service (RCS) globális tárházának kivezetésének a Microsoft Dynamics Lifecycle Services (LCS) tárolók kivezetéséről tájékoztatást.
+description: Ez a cikk a Microsoft Dynamics Jogi konfigurációs szolgáltatás (RCS) globális tárházának részeként tervezett Lifecycle Services (LCS) tárolók értékcsökkenéséről nyújt tájékoztatást.
 author: JaneA07
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849731"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) tárhely kivezetése
 
@@ -85,7 +85,7 @@ Az RCS a *csatlakoztatott alkalmazás* koncepcióját használja. A csatlakoztat
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Vannak példák a beállításokra és a kezelésre?
 
-Nincsenek példák, de a témakör korábbi lépései alapján át lehet telepíteni a konfigurációkat az RCS globális tárházba.
+Nincsenek példák, de a cikk korábbi lépéseit végre lehet tenni a konfigurációk RCS globális tárházba való áttelepítése érdekében.
 
 ### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Az RCS előfeltétele az Elektronikus jelentéskészítés konfigurálásának?
 

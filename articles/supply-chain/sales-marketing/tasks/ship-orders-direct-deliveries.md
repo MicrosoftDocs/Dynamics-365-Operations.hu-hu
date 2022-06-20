@@ -1,6 +1,6 @@
 ---
 title: Szállítási rendelés közvetlen kiszállításként
-description: Ez a témakör bemutatja, hogyan hozhatja létre az értékesítési rendelések közvetlen kiszállításait.
+description: Ez a cikk bemutatja, hogyan lehet közvetlen kiszállítást létrehozni az értékesítési rendelésekhez.
 author: Henrikan
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f5f145bacecc47a782c60335c6ff5b79f978007c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572441"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875159"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Szállítási rendelés közvetlen kiszállításként
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan hozhatja létre az értékesítési rendelések közvetlen kiszállításait. A közvetlen kiszállítás akkor használatos, amikor a szállítótól közvetlenül a vevőhöz kell árut szállítani, ahelyett hogy a saját raktárába szállítaná. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. A „Közvetlen kiszállítások létrehozása a munkaterületről” második alfeladat sikeres befejezéséhez, ügyeljen rá, hogy az értékesítési rendelésen kiválasztott cikkhez tartozzon alapértelmezett szállító a kiadott alaptermék Beszerzés gyorslapján.
+Ez a cikk bemutatja, hogyan lehet közvetlen kiszállítást létrehozni az értékesítési rendelésekhez. A közvetlen kiszállítás akkor használatos, amikor a szállítótól közvetlenül a vevőhöz kell árut szállítani, ahelyett hogy a saját raktárába szállítaná. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. A „Közvetlen kiszállítások létrehozása a munkaterületről” második alfeladat sikeres befejezéséhez, ügyeljen rá, hogy az értékesítési rendelésen kiválasztott cikkhez tartozzon alapértelmezett szállító a kiadott alaptermék Beszerzés gyorslapján.
 
 ## <a name="set-an-individual-order-for-direct-delivery"></a>Állítson be egyetlen rendelést közvetlen kiszállításhoz.
 1. Ugorjon a **Navigációs ablaktábla > Modulok > Kintlévőségek > Megrendelések > Minden értékesítési megrendelés** lehetőségre.

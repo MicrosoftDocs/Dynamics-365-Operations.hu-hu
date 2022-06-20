@@ -1,6 +1,6 @@
 ---
 title: Termékazonosítók
-description: Ez a témakör a különféle típusú termékazonosítókkal kapcsolatban tartalmaz tájékoztatást, és bemutatja, hogyan adhat hozzá termékazonosítókat a termékadataihoz.
+description: Ez a cikk a termékazonosítók különböző típusairól nyújt tájékoztatást, és bemutatja, hogyan lehet termékazonosítókat hozzáadni a termékadatokhoz.
 author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3fc2d5c01209f15a9cb680e3bb569087f08c08d3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851710"
 ---
 # <a name="product-identifiers"></a>Termékazonosítók
 
@@ -29,7 +29,7 @@ ms.locfileid: "8063341"
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a különféle típusú termékazonosítókkal kapcsolatban tartalmaz tájékoztatást, és bemutatja, hogyan adhat hozzá termékazonosítókat a termékadataihoz.
+Ez a cikk a termékazonosítók különböző típusairól nyújt tájékoztatást, és bemutatja, hogyan lehet termékazonosítókat hozzáadni a termékadatokhoz.
 
 Amikor az üzemben vagy a raktárban dolgozik termékekkel a Microsoft Dynamics ERP vagy a Microsoft Dynamics CRM alkalmazásban, a termékek és a termékváltozatok helyes azonosítási stratégiájával kell rendelkeznie.
 
@@ -39,7 +39,7 @@ A Dynamics 365 Supply Chain Management, rendszerben a termék elsődleges azonos
 
 Sok esetben a termékszámot eredetileg nem a Dynamics 365 Supply Chain Management rendszerben hozták létre. Ehelyett egy termékciklus-kezelő (PLM) vagy termékadatkezelő (PDM) rendszerben található termékhez kapcsolódik. Ebben az esetben adatentitások használhatók a termékek és a termékváltozatok importálására. Ezt követően a Supply Chain Management az összes műveletben a számokat fogja használni.
 
-A Supply Chain Management implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. Egy jó termékazonosító általában legfeljebb 20 karakterből állhat, de általában azt javasoljuk, hogy 10-nél kevesebb karaktert használjon, és legfeljebb 5 osztályozó karaktert tartalmazzon. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
+A Supply Chain Management implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. A helyes termékazonosítónak általában 20 karakterből vagy rövidebbből kell lennie, de általában 10 karakternél kevesebb karakter használatát javasoljuk, és 5 karakternél nem hosszabb osztályozást. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
 
 A Microsoft Dataverse használata során a Supply Chain Management termékszáma egyben a termék száma is a Microsoft Dataverse rendszerben. A termékváltozatok a Dataverse-be egyedi termékként szinkronizálódnak.
 
@@ -125,7 +125,7 @@ Sajnos nincs olyan szabványos funkció, amely lehetővé teszi a termékek kere
 | Termékek V2 | Termékszám, termék keresési neve, termék neve, termékleírás | Termékszám, termék keresési neve, termék neve, termékleírás | Az entitás beállításaitól és a termékszám számsorozatától függően a termékszám automatikusan létrehozható az importálás során. |
 | Termékváltozatok | Termékszám, termék keresési neve, termék neve, termékleírás | Termékszám, termék keresési neve, termék neve, termékleírás | A terméknómenklatúra sablonjától függően a termékszám automatikusan létrehozható az importálás során. Azonban bármilyen egyedi termékszám importálható, és a termékszámnak nem kell a termékek elnevezési rendszerének sablonjának szerkezetét követnie. |
 | Termékfordítások | Terméknév, termékleírás | Terméknév, termékleírás | Ez az entitás felülír minden nyelvet. Ha egy jogi személy elsődleges nyelvének nevét vagy leírását felülírják, maga a termék neve és leírása is megváltozik. |
-| Kiadott termék létrehozása V2 | Cikkszám, termékszáma, cikk keresési neve| Cikkszám, termékszám, cikk keresési neve, termék keresési neve, termék neve | Ez az entitás kihívást jelenthet, amikor új kiadott termékek létrehozása során számsorozatokat használnak. Mind a **Cikkszám** számsorozat, mind a **Termékszám** számsorozat hatással vannak. Azonban a **Cikkszám** számsor jogi személyenként érvényes,a **Termékszám** számsor pedig globális. Emiatt nem ajánlott, hogy a **Cikkszám** számsorozatot használja újonnan kiadott termékek telepítésekor. Természetesen ha az entitás meglévő termék kiadásához van használva, a termékszámot meg kell adni az entitásban. További információkhoz lásd a jelen témakör lásd „Termék- és cikkszámsorozatok” részét. |
+| Kiadott termék létrehozása V2 | Cikkszám, termékszáma, cikk keresési neve| Cikkszám, termékszám, cikk keresési neve, termék keresési neve, termék neve | Ez az entitás kihívást jelenthet, amikor új kiadott termékek létrehozása során számsorozatokat használnak. Mind a **Cikkszám** számsorozat, mind a **Termékszám** számsorozat hatással vannak. Azonban a **Cikkszám** számsor jogi személyenként érvényes,a **Termékszám** számsor pedig globális. Emiatt nem ajánlott, hogy a **Cikkszám** számsorozatot használja újonnan kiadott termékek telepítésekor. Természetesen ha az entitás meglévő termék kiadásához van használva, a termékszámot meg kell adni az entitásban. A további tudnivalókat lásd a cikk "Termék- és cikkszámsorozatok" című szakaszában. |
 | Kiadott termékváltozatok | Cikkszám, termékdimenziók, termékszám | Termékszám, termék keresési neve, termék neve, termékleírás, termékdimenziók | A **Termékváltozatok** entitáshoz hasonlóan ez az entitás használható új termékek létrehozására, amelyek vagy követik a termékek elnevezési rendszerének sablonját, vagy saját termékszámokat használnak a változathoz. |
 | Vevőkhöz tartozó külső cikkleírás | Vevői cikkszám, vevői-cikk neve, vevő leírása, vevői számla | Vevői cikkszám, vevői-cikk neve, vevő leírása, vevői számla | A vevők egy csoportja (például egy vevőszövetség) egy csoportba vonható össze az **Külső cikkleírásokhoz tartozó vevőcsoportok** entitás segítségével. |
 | Szállítókhoz tartozó külső cikkleírás | Szállító cikkszáma, szállító cikkneve, szállító leírása, szállítói számla | Szállító cikkszáma, szállító cikkneve, szállító leírása, szállítói számla | A szállítói egy csoportja (például egy szállítói szövetség vagy iparági szervezet) egy csoportba vonható össze az **Külső cikkleírásokhoz tartozó szállítócsoportok** entitás segítségével. |
@@ -184,7 +184,7 @@ Tegye a következőket a környezet konfigurálásához.
 
 Most már használhatók a **Termékentitás Common Data Service azonosító entitás**, a **Termékentitás azonosító kód** és a **Termékentitás azonosító hatókör** adatentitások az azonosítók exportálásához bármilyen célrendszerbe.
 
-## <a name="related-topic"></a>Kapcsolódó témakör
+## <a name="related-article"></a>Kapcsolódó cikk
 
 [Termékek és termékváltozatok keresése a rendelésbevitel során](search-products-product-variants.md)
 

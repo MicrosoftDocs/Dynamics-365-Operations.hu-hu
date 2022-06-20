@@ -1,6 +1,6 @@
 ---
 title: Hozzáférési jogok költségobjektum-ellenőrök számára
-description: Ez a témakör a költségobjektum-ellenőrök hozzáférési jogairól nyújt tájékoztatást.
+description: Ez a cikk a költségobjektum-kontrollerek hozzáférési jogairól nyújt tájékoztatást.
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13d562a4f42644b822c9548d1ea87d44a396b2c2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c40be758c5e5d1d1fb025630ed8321ae46251892
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903189"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Hozzáférési jogok költségobjektum-ellenőrök számára
 
@@ -38,7 +38,7 @@ Négy egyedi szerepkör található a Költségkönyvelésben.
 | Költségkönyvelő adminisztrátor   | Operations   |
 | Költségobjektum-ellenőr  | Csapattagok |
 
-Ez a témakör megmagyarázza, hogy miként rendelheti hozzá a **Költségobjektum-ellenőr** szerepkört egy vezetőhöz.
+Ez a cikk bemutatja, hogyan lehet a **költségobjektum-kontroller** szerepkört vezetőhöz rendelni.
 
 Ha hozzá van rendelve a **Költségobjektum-ellenőr** szerepkör a vezetőhöz, akkor a következő feladatokat hajthatja végre:
 
@@ -95,7 +95,7 @@ A Hozzáférési lista hierarchiájának beállításait használja a rendszer a
 
 > [!IMPORTANT]
 > - Ahhoz, hogy a Hozzáférési lista hierarchia befolyásolhassa a Power BI adatait, párosítani kell a Hozzáférési lista hierarchiát és a sorszintű biztonságot a Power BI-ben. További információ: [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
-> - Ez a témakör azokat az előfeltételeket mutatja be, amelyeknek teljesülniük kell a **Költségkontroll** munkaterület használatához.
+> - Ez a cikk bemutatja azokat az előfeltételeket, amelyek már használatban vannak a Költségellenőrzés **munkaterület használata** előtt.
 
 További erőforrások
 

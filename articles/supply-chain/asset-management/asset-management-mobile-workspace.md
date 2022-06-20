@@ -1,6 +1,6 @@
 ---
 title: Eszközkezelés mobil munkaterület használata
-description: Ez a témakör az Eszközkezelési mobil munkaterületével kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk az Eszközkezelés mobileszköz-munkaterületével kapcsolatban tartalmaz tájékoztatást.
 author: johanhoffmann
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 8b874237721d9252e7102c2611414a2cc74026c3
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: d7e68cbe1132547fea5c72458a93b1a449a67c86
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902140"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Eszközkezelés mobil munkaterület használata
 
 [!include [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Ez a témakör az **Eszközkezelés** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. Ez a munkaterület lehetővé teszi a felhasználók számára a karbantartási kérelmek és munkarendelések megtekintését és létrehozását. A felhasználók naptár vagy lista nézetben is megtekinthetik a hozzárendelt munkarendelési feladatokat. A tárgyi eszközök és a funkcionális helyszínek is megtekinthetők és kereshetők.
+Ez a cikk az Eszközkezelés mobileszköz-munkaterületével **kapcsolatban** tartalmaz tájékoztatást. Ez a munkaterület lehetővé teszi a felhasználók számára a karbantartási kérelmek és munkarendelések megtekintését és létrehozását. A felhasználók naptár vagy lista nézetben is megtekinthetik a hozzárendelt munkarendelési feladatokat. A tárgyi eszközök és a funkcionális helyszínek is megtekinthetők és kereshetők.
 
 ## <a name="overview"></a>Áttekintés
 

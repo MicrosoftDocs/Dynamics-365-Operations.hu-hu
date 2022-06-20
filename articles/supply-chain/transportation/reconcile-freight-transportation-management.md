@@ -1,6 +1,6 @@
 ---
 title: Szállítási költség egyeztetése a szállításkezelésben
-description: A témakör a szállítási költség egyeztetési folyamatot ismerteti.
+description: A cikk a szállítási költség egyeztetési folyamatot ismerteti.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 520a0fc78a136b416c943cfb72db1b2be7d2ed0c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ff29de62de12e8ca8bea0f374921a51b5819222e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844223"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Szállítási költség egyeztetése a szállításkezelésben
 
 [!include [banner](../includes/banner.md)]
 
-A témakör a szállítási költség egyeztetési folyamatot ismerteti.
+A cikk a szállítási költség egyeztetési folyamatot ismerteti.
 
 Szállítási költség egyeztetés elvégezhető manuálisan vagy beállítható automatikusra. Automatikus szállítási egyeztetés használatához vizsgálati alapadatok beállítása szükséges, ahol megadhatja a feltételeket, amelyek meghatározzák, hogy mely fuvarszámla egyeztetése legyen automatikus.
 

@@ -1,6 +1,6 @@
 ---
-title: Projektszámlázás
-description: Ez a témakör az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz.
+title: 'Projekt számlázása:'
+description: Ez a cikk az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz.
 author: TaylorVH
 ms.date: 07/10/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: bdb5c9162ab85632c8780a737df0998e4cd34f0c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4af44127d80c943ed9cebeac21d7e9c8372910f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733848"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861676"
 ---
-# <a name="project-invoicing"></a>Projektszámlázás
+# <a name="project-invoicing"></a>Projekt számlázása:
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz.
+Ez a cikk az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz.
 
 A projekt típusa határozza meg, hogy melyik számlázási eljárást kell alkalmazni. Kizárólag a két külső projekttípus, az Idő- és anyagelszámolású, illetve a Rögzített árú projektek számlázhatók. Az Idő- és anyagelszámolású projektek és a Rögzített árú projektek mindig projektszerződéshez kapcsolódnak.
 

@@ -1,6 +1,6 @@
 ---
 title: B2B webhelyrendelések gyors elküldése
-description: Ez a témakör leírja Microsoft Dynamics 365 Commerce azokat a lehetőségeket, amelyek lehetővé teszi a B2B webhely felhasználóinak, hogy gyorsan ömlesztett cikkeket adjanak fel, és újra megismétljék a rendeléseket.
+description: Ez a témakör olyan Microsoft Dynamics 365 Commerce lehetőségeket ismertet, amelyek lehetővé tírják az üzleti (B2B) webhely felhasználóinak gyors tömeges elküldéset és a rendelések ismételt megismétlhetőségét.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ac4833b2ca05e90b4019ffdfc4b669c542b0cf6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b13fb49c49b0a540b192f4dd0f3a847fb5dd8a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686546"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881361"
 ---
 # <a name="place-b2b-website-orders-quickly"></a>B2B webhelyrendelések gyors elküldése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör leírja Microsoft Dynamics 365 Commerce azokat a lehetőségeket, amelyek lehetővé teszi a B2B webhely felhasználóinak, hogy gyorsan ömlesztett cikkeket adjanak fel, és újra megismétljék a rendeléseket.
+Ez a témakör olyan Microsoft Dynamics 365 Commerce lehetőségeket ismertet, amelyek lehetővé tírják az üzleti (B2B) webhely felhasználóinak gyors tömeges elküldéset és a rendelések ismételt megismétlhetőségét.
 
 Dynamics 365 Commerce A B2B e-commerce webhelyek segítségével a felhasználók szokásos műveleteket végezhetnek el, például keresést és böngészést végezhetnek el az új termékek között, megtekinthetik a termék részletes adatait, cikkeket adhatnak a kosárhoz, illetve kijelentkezhetik őket. Ugyanakkor míg a vevők általában kis mennyiségben rendelik a cikkeket, és csak egyszer rendelik meg őket, a B2B vevők jellemzően nagy mennyiségben rendelnek cikkeket, és többször rendelik újra őket. Mivel ezek a vevők általában pontosan tudják, hogy milyen cikkeket vásárolnak, gyakran kihagyják a termékfelfedezési fázist, és közvetlenül a rendeléshez ugrik. Ezeknek a vevőknek az igényeinek kielégítése érdekében a Commerce B2B e-commerce webhelyek különféle lehetőségeket nyújtanak, amelyek segítik őket a rendelések gyors megrendelésében.
 
@@ -65,4 +65,4 @@ A következő ábra a felhasználó rendelési előzményeit mutatja be, és a c
 
 ![Újrarendelés a rendelési előzményekből](../media/Reorder.png)
 
-Ez a témakör néhány olyan módszert ismertet, amelyek segítségével a Commerce B2B webhelyek segítik a felhasználókat a kívánt termékek gyors megkeresésében, megrendelésében és újrarendelésében. A fejlesztésben további lehetőségek állnak készen a tömeges rendelések rögzítésének további egyszerűsítése érdekében.
+Ez a cikk néhány olyan módszert ismertet, amelyek segítségével a Commerce B2B webhelyek segítik a felhasználókat a kívánt termékek gyors megkeresésében, megrendelésében és újrarendelésében. A fejlesztésben további lehetőségek állnak készen a tömeges rendelések rögzítésének további egyszerűsítése érdekében.

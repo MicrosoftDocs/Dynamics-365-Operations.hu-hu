@@ -1,6 +1,6 @@
 ---
 title: Automatizált szállítói számlázási folyamatok – áttekintés
-description: Ez a témakör szállítói számla feldolgozásának automatizálási lehetőségét és az automatikus folyamat használatának előnyeit mutatja be.
+description: Ez a témakör a szállítói számlák feldolgozásának automatizálható és az automatizált folyamat használatának előnyeiről nyújt részletes információt.
 author: abruer
 ms.date: 02/12/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: d2c629ed2d064a3350ec8ffe53940098d12ab0b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358430"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883445"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Automatizált szállítói számlázási folyamatok – áttekintés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör szállítói számla feldolgozásának automatizálási lehetőségét és az automatikus folyamat használatának előnyeit mutatja be. Ez a lehetőség a Funkciókezelés modulban bekapcsolt funkciókból áll. Ezek a funkciók csak a szállítói számlákra vonatkoznak, nem pedig a **Számlanapló** vagy a **Számlajegyzéknapló** oldalon feldolgozott számlákra.
+Ez a témakör a szállítói számlák feldolgozásának automatizálható és az automatizált folyamat használatának előnyeiről nyújt részletes információt. Ez a lehetőség a Funkciókezelés modulban bekapcsolt funkciókból áll. Ezek a funkciók csak a szállítói számlákra vonatkoznak, nem pedig a **Számlanapló** vagy a **Számlajegyzéknapló** oldalon feldolgozott számlákra.
 
 Sok esetben a szervezetek a papíralapú számlák feldolgozását harmadik felekkel együttműködve, optikai karakterfelismerési (OCR) szolgáltató igénybevételével oldják meg. A szolgáltató géppel olvasható számlázási metaadatokat juttat vissza. Az automatizálás elősegítése érdekében a Kötelezettségek automatizálása funkciók segítségével ezeket az elemeket a Kötelezettségek modulból vonhatja be.
 

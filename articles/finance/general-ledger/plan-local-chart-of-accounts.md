@@ -1,6 +1,6 @@
 ---
 title: Helyi számlatükör tervezése
-description: Ez a témakör segítséget nyújt a számlatükre tervezéséhez, ha követelményei vannak a szervezete törvényi/helyi követelményei kapcsán.
+description: Ez a cikk olyan információkat tartalmaz, amelyek segítséget nyújt a számlatükre tervezésében, amikor a szervezetre jogszabályban előírt/helyi követelmények vonatkoznak.
 author: VeselinaE
 ms.date: 10/07/2021
 ms.topic: article
@@ -10,7 +10,7 @@ ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, Ledge
 ROBOTS: ''
 audience: Application User
 ms.devlang: ''
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.tgt_pltfrm: ''
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: veneva
 ms.search.validFrom: 10/07/2021
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e224a2e24b4ba293c953c6c883307038128e2f04
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 78379fd51cf24985fce83e2b6aa9a475af7df363
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798296"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946245"
 ---
 # <a name="plan-your-local-chart-of-accounts"></a>Helyi számlatükör tervezése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör segítséget nyújt a számlatükre tervezéséhez, ha a szervezet olyan jogi személyeket is tartalmaz, amelyek meg kell feleljenek a vállalkozás szemben elvárt helyi követelményeknek. Ez a témakör a következő kifejezések alapján írja le a számlatükröket:
+Ez a cikk segít a számlatükre tervezésében, ha a szervezet olyan jogi személyeket is tartalmaz, amelyek megfelelnek a vállalkozás meghatározott helyekkel kapcsolatos követelményeinek. Ez a témakör a következő kifejezések alapján írja le a számladiagramokat:
 
 - **Globális** – A szervezet globálisan használt számlatükre. A legtöbb esetben ebbe a számlatükörbe konszolidál.
 - **Helyi** – Egy számlatükör, amely egy adott ország vagy régió területén jogi személynél használ.
@@ -54,7 +54,7 @@ Ha a szervezet megköveteli, hogy egy jogi személy helyi számlatükröt haszn�
 
 Az alkalmazott megoldást a szervezeti struktúra és a jelentési struktúra határozza meg.
 
-[![ Diagram, amely mutatja, hogyan határozza meg a szervezeti struktúra, hogy globális vagy helyi számlatükör legyen-e használva.](./media/local-chart-of-accounts-diagram.png)](./media/local-chart-of-accounts-diagram.png)
+[![Diagram, amely mutatja, hogyan határozza meg a szervezeti struktúra, hogy globális vagy helyi számlatükör legyen-e használva.](./media/local-chart-of-accounts-diagram.png)](./media/local-chart-of-accounts-diagram.png)
 
 Ha a globális számlatükör hozzá van rendelve a jogi személyhez, a következő lehetőségek állnak rendelkezésre a helyi jelentési követelményeknek való megfeleléshez:
 
@@ -154,7 +154,7 @@ Ez a megközelítés egy pénzügyi dimenziót használ, ahol a pénzügyi dimen
 
 ### <a name="do-external-mapping-to-the-local-chart-of-accounts"></a>Külső leképezés készítése a helyi számlatükörhöz
 
-A globális számlatükör azt feltételezi, hogy Ön a leképezéseket és honosításokat a rendszeren kívül kezeli. Ebben a megközelítésben egyetlen globális számlatükröt hoz létre a Microsoft Dynamics 365 Finance alkalmazásban és a rendszeren kívül kezeli a követelményeket.
+A globális számlatükör azt feltételezi, hogy Ön a leképezéseket és honosításokat a rendszeren kívül kezeli. Ebben a megközelítésben egyetlen globális számlatüklapot hoz létre a Microsoft Dynamics 365 Pénzügyben, és a rendszeren kívül kezeli a követelményeket.
 
 #### <a name="set-up-external-mapping-to-a-local-chart-of-accounts"></a>Külső leképezés beállítása a helyi számlatükörhöz
 

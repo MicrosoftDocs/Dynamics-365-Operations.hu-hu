@@ -1,6 +1,6 @@
 ---
 title: Első lépések a Global Inventory Accounting szolgáltatással
-description: Ez a témakör azt ismerteti, hogyan lehet elkezdeni a Global Inventory Accounting szolgáltatást.
+description: Ez a témakör azt ismerteti, hogyan lehet elkezdeni a globális készletkönyvelést.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 17d4816fc5fcad0b0665640a8347b1f4ea032dd7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
-ms.translationtype: MT
+ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679443"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891089"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Első lépések a Global Inventory Accounting szolgáltatással
 
@@ -38,12 +38,18 @@ A Global Inventory Accounting szolgáltatás egy bővítmény. Ahhoz, hogy hozz�
 
 A Global Inventory Accounting jelenleg nem támogatja a Supply Chain Management eszközbe beépített költségkezelési funkciókat. Ezért fontos, hogy meggyőződjön, hogy a jelenleg elérhető funkciókészlet kielégíti-e a követelményeket.
 
-## <a name="how-to-get-the-global-inventory-accounting-public-preview"></a><a name="sign-up"></a>A Global Inventory Accounting nyilvános előzetes verzió beszerzése
+## <a name="how-to-get-the-global-inventory-accounting-add-in"></a><a name="sign-up"></a> A Globális készletkönyvelés bővítmény bejezése
 
 > [!IMPORTANT]
 > A Global Inventory Accounting csak akkor használható, ha engedélyezve van az LCS-szolgáltatásban engedélyezett, nagy rendelkezésre állású környezet (nem OneBox környezet). Ezenkívül a Supply Chain Management 10.0.19-es vagy újabb verziójának is futnia kell.
 
-A Global Inventory Accounting nyilvános előnézetére való regisztrációhoz küldje el e-mailben az LCS-környezetazonosítót a [Global Inventory Accounting csoportnak](mailto:GlobalInvAccount@microsoft.com). Ha jóváhagyta a programot, a csoport egy követő e-mailt küld, amely tartalmaz egy Global Inventory Accounting bétakulcsot és a szolgáltatási végpontokat. Miután megkapja a béta kulcsot, [telepítheti a bővítményt](#install).
+### <a name="supply-chain-management-version-10019-to-10026"></a>Az Ellátásilánc-kezelés 10.0.19-es verziója 10.0.26-ra
+
+Ha telepíteni szeretne egy globális készletkönyvelést az Ellátásilánc-kezelés 10.0.19-es verziójához a 10.0.26-os verzióhoz, telepítse [a bővítményt](#install). Ezután küldje el az LCS-környezetazonosítót és vállalatnevet e-mailben a globális [készletkönyvelési csoportnak](mailto:GlobalInvAccount@microsoft.com). A csoport egy követési e-mailt küld, amely a globális készletkönyvelési szolgáltatási végpontokat tartalmazza.
+
+### <a name="supply-chain-management-version-10027-and-later"></a>Ellátásilánc-kezelés – 10.0.27-es és újabb verzió
+
+Ha telepíteni szeretne egy globális készletkönyvelést az Ellátásilánc-kezelés 10.0.27-es és újabb verziójához, akkor telepítse a [bővítményt](#install). Az Ellátásilánc-kezelés ezen verzióihoz automatikusan be lesznek állítva a globális készletkönyvelési szolgáltatási végpontok, így ezeket nem kell manuálisan megtalálni. Ha a bővítmény beállítása során bármilyen problémát tapasztal, forduljon a [globális készletkönyvelési csapathoz](mailto:GlobalInvAccount@microsoft.com).
 
 ## <a name="licensing"></a>Licenckezelés
 
@@ -84,7 +90,7 @@ Ezután hozza létre az alkalmazásfelhasználókat a Global Inventory Accountin
 1. Lépjen a **Speciális beállítások \> Rendszer \> Biztonság \> Felhasználók** lehetőségre, és hozzon létre egy alkalmazásfelhasználót. A **Nézet** mező használatával módosítsa az oldal nézetét az *Alkalmazásfelhasználók* lehetőségre.
 1. Válassza az **Új** lehetőséget.
 1. Állítsa az **Alkalmazásazonosító** mező értékét erre: *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9*.
-1. Válassza a **Szerepkör hozzárendelése**, majd a *Rendszergazda* lehetőséget. Ha van *Common Data Service-felhasználó* nevű szerepkör, válassza ki azt is.
+1. Válassza a **Szerepkör hozzárendelése**, majd a *Rendszergazda* lehetőséget. Ha van Felhasználó nevű szerepkör *Common Data Service*, válassza ki azt is.
 1. Ismételje meg az előző lépéseket, de állítsa az **Alkalmazásazonosító** mezőt a következőre: *5f58fc56-0202-49a8-ac9e-0946b049718b*.
 
 További tudnivalókért lásd: [Alkalmazásfelhasználó létrehozása](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
@@ -98,12 +104,7 @@ Ha a Dataverse telepítés alapértelmezett nyelve nem angol, kövesse az alább
 
 A következő lépések szerint telepítheti a bővítményt a Global Inventory Accounting használata érdekében.
 
-1. [Regisztrálás](#sign-up) a Global Inventory Accounting nyilvános előzetes verziójára.
 1. Bejelentkezés az [LCS](https://lcs.dynamics.com/Logon/Index) alkalmazásba.
-1. Lépjen a **Előzetes funkció kezelése** lehetőségre.
-1. Válassza ki a plusz jelet (**+**).
-1. A **Kód** mezőbe írja be a Global Inventory Accounting szolgáltatáshoz tartozó bővítmény bétakulcsát. (A bétakulcsot e-mailben kellett volna megkapni a kijelentkezett verzióban.)
-1. Válassza a **Blokkolás feloldása** lehetőséget.
 1. Nyissa meg azt a LCS-környezetet, amelyhez hozzá szeretné adni a szolgáltatást.
 1. Lépjen a **Teljes részletek** elemre.
 1. Menjen a **Power Platform Integráció** gombra, és válassza a **Telepítőt**.
@@ -124,6 +125,8 @@ A következő lépések szerint állíthatja be a Global Inventory Accounting é
 1. A Mind **lapon** keresse meg a globális készletkönyvelés nevű *(Előnézet) funkciót*.
 1. Válassza az **Engedélyezés most** lehetőséget.
 1. Ugrás a **Globális készletkönyvelés \> Beállítása \> Global Inventory Accounting paraméterei \> Integrációs paraméterek**.
-1. Az **Adatszolgáltatás végpontja** és a **Global Inventory Accounting végpont** mezőiben adja meg az URL-címeket abból az e-mailből, amit a globális készletkönyvelési csoport küldött, amikor előképként jelentkezett.
+1. A futtatott Ellátásilánc-kezelés melyik verziójától függően tegye a következő lépéseket:
+    - **Ellátásilánc-kezelés - 10.0.19-10.0.26- 10.0.26**: **·** **Az** Adatszolgáltatás végpontja és a Globális készletkönyvelés végpont mezőiben adja meg a globális készletkönyvelési csoporttól e-mailben Önnek küldött URL-címeket [(](#sign-up) lásd még a Globális készletkönyvelés bővítmény beolvassa).
+    - **Ellátásilánc-kezelés – 10.0.27-es** verzió és újabb: Nem kell megadnia a végpontokat, ezért kihagyhatja ezt a lépést.
 
 A Global Inventory Accounting készen áll a használatra.

@@ -1,7 +1,7 @@
 ---
 title: Alaptervezés beállítása
-description: Ez a témakör az alaptervezés beállításához használt különböző fontos stratégiákat és paramétereket ismerteti.
-author: ChristianRytt
+description: Ez a témakör számos fontos stratégiát és paramétert ír le, amelyek az alaptervezés beállításában használatosak.
+author: t-benebo
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: effdefcf8326babaa89d7de4b28a86bbef7280f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580720"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888557"
 ---
 # <a name="set-up-master-planning"></a>Alaptervezés beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az alaptervezés beállításához használt különböző fontos stratégiákat és paramétereket ismerteti. Áttekintést nyújt az alaptervezés által használt tervek típusairól, és bemutatja, hogy az Ön üzleti igényeitől függően melyik tervstratégiát kell használnia. Azokat a fő paramétereket is ismerteti, amelyek hatással vannak a tervre, és bemutatja, hogyan befolyásolják ezek a paraméterek a javasolt tervezett rendeléseket.
+Ez a témakör számos fontos stratégiát és paramétert ír le, amelyek az alaptervezés beállításában használatosak. Áttekintést nyújt az alaptervezés által használt tervek típusairól, és bemutatja, hogy az Ön üzleti igényeitől függően melyik tervstratégiát kell használnia. Azokat a fő paramétereket is ismerteti, amelyek hatással vannak a tervre, és bemutatja, hogyan befolyásolják ezek a paraméterek a javasolt tervezett rendeléseket.
 
 ## <a name="types-of-master-plans"></a>Alaptervek típusai
 

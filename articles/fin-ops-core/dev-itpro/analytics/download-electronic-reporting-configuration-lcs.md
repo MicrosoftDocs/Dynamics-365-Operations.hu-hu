@@ -1,6 +1,6 @@
 ---
-title: Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből
-description: Ez a témakör az elektronikus jelentési (ER) konfiguráció Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát mutatja be.
+title: Az elektronikus jelentéskészítési konfigurációk letöltése a Lifecycle Services rendszerből
+description: Ez a cikk bemutatja, hogyan tölthetők le az Elektronikus jelentéskészítés (ER) konfigurációi a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
 author: NickSelin
 ms.date: 08/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ea603d01d05e98ac69d5a0d12802b5f23ee34793bf4c9b4f885f0e4303f77d2b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ba720f997981e85ea08d532f23341a838533ac4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762272"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885294"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Az elektronikus jelentéskészítési konfigurációk letöltése a Lifecycle Services rendszerből
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelentéskészítési (ER) konfigurációk](general-electronic-reporting.md#Configuration) legújabb verzióját az [Közös eszközök könyvtárából](../lifecycle-services/asset-library.md) a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban.
+Ez a cikk bemutatja, hogy [hogyan töltheti le az Elektronikus jelentéskészítés (ER) legújabb konfigurációit a Lifecycle Services (LCS)](general-electronic-reporting.md#Configuration)[...](../lifecycle-services/asset-library.md)Microsoft Dynamics megosztott eszköztárából.
 
 > [!IMPORTANT]
 > Az LCS tárolási adattárként való használata az ER-konfigurációknál [elavult](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). További információért lásd a [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) tárhely elavulása](../../../finance/localizations/rcs-lcs-repo-dep-faq.md) részt.
@@ -70,7 +70,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
     [![Konfigurációk tárháza oldal.](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
-> Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. További információkért nézze meg a jelen témakörrel kapcsolatos témakörök listáját.
+> Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. A további tudnivalókat lásd a témakör kapcsolódó témakörei listájában.
 
 ## <a name="additional-resources"></a>További erőforrások
 

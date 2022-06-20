@@ -1,6 +1,6 @@
 ---
-title: Készletláthatóság-foglalások
-description: Ez a témakör azt írja le, hogyan kell beállítani a foglalási funkciót, hogy a Készletláthatóság használatával foglalásokat hozzon létre, foglalásokat fogyasszon el és/vagy feloldjon meghatározott készletmennyiségeket.
+title: Inventory Visibility – foglalások
+description: Ez a témakör leírja, hogyan lehet beállítani a foglalási funkciót a foglalások, foglalások és/vagy a megadott készletmennyiségek foglalásának a Készlet láthatósága funkcióval való létrehozásához.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5e6752539a6381e1f7271883102391374e04f3aa
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3b74907709ab97ddf4cc829dba324df213ca229f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061704"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895728"
 ---
-# <a name="inventory-visibility-reservations"></a>Készletláthatóság-foglalások
+# <a name="inventory-visibility-reservations"></a>Inventory Visibility – foglalások
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör azt írja le, hogyan kell beállítani a foglalási funkciót, hogy a Készletláthatóság használatával foglalásokat hozzon létre, foglalásokat fogyasszon el és/vagy feloldjon meghatározott készletmennyiségeket.
+Ez a témakör leírja, hogyan lehet beállítani a foglalási funkciót a foglalások, foglalások és/vagy a megadott készletmennyiségek foglalásának a Készlet láthatósága funkcióval való létrehozásához.
 
 A foglalások olyan készletmennyiséget jelölnek, amelyet a jövőben fognak felhasználni. A foglalás létrehozásakor a rendszer megakadályozza, hogy más megrendelések lefoglalják vagy elfogyasszák a lefoglalt árukat, amíg a foglalás el nem fogy vagy fel nem oldják a foglalás feloldását. A foglalások létrehozása, felhasználása és törlése a Készletláthatóság szolgáltatáshoz intézett API-hívások segítségével történik.
 

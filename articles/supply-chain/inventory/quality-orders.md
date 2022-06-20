@@ -1,6 +1,6 @@
 ---
 title: Minőségi rendelések
-description: Ez a témakör bemutatja, hogyan lehet manuálisan vagy automatikusan minőségi rendeléseket létrehozni, és hogyan lehet velük vizsgálatot végezni, illetve rögzíteni a teszteredményeket a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
+description: Ez a témakör bemutatja, hogyan lehet manuálisan vagy automatikusan minőségi rendeléseket létrehozni, és hogyan lehet velük vizsgálatot végezni, illetve rögzíteni a Microsoft teszteredményeit Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69a4a61a599f1279ec7ad68ebb20c7b4b0f37005
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb7ab1de0fb4d93ed18f1862630c1af7af7f3095
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571857"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857779"
 ---
 # <a name="quality-orders"></a>Minőségi rendelések
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet manuálisan vagy automatikusan minőségi rendeléseket létrehozni, és hogyan lehet velük vizsgálatot végezni, illetve rögzíteni a teszteredményeket a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
+Ez a témakör bemutatja, hogyan lehet manuálisan vagy automatikusan minőségi rendeléseket létrehozni, és hogyan lehet velük vizsgálatot végezni, illetve rögzíteni a Microsoft teszteredményeit Dynamics 365 Supply Chain Management.
 
 ## <a name="automatically-created-quality-orders"></a>Automatikusan létrehozott minőségi rendelések
 
@@ -39,7 +39,7 @@ A minőségi rendelés manuális létrehozásához kövesse az alábbi lépések
 
 1. Ugorjon a **Készletkezelés \> Időszakos feladatok \> Minőségkezelés \> Minőségi rendelések** lehetőségre.
 1. Válassza az **Új** lehetőséget.
-1. A **Minőségi rendelések** párbeszédpanel **Hivatkozástípus** mezőjében válassza ki azt a készlethivatkozást, amelyhez a minőségi rendelés kapcsolódik majd. A kiválasztásra elérhető hivatkozástípusok leírását lásd a témakör későbbi [Minőségi rendelések hivatkozástípusai](#ref-types) című részében.
+1. A **Minőségi rendelések** párbeszédpanel **Hivatkozástípus** mezőjében válassza ki azt a készlethivatkozást, amelyhez a minőségi rendelés kapcsolódik majd. A kiválasztásra elérhető [hivatkozástípusok](#ref-types) leírását a cikk minőségi rendelés hivatkozástípusokkal rovatában olvashatja.
 
     > [!NOTE]
     > Elérhetőnek kell lennie a kiválasztott hivatkozáshoz kapcsolódó készletnek. Ha a kiválasztott hivatkozástípus, mennyiség és készletdimenzió kombinációjához nem áll rendelkezésre készlet, egy hibaüzenet jelenik meg.
@@ -88,7 +88,7 @@ A minőségi rendelés lap használatával manuálisan létrehozhat új minősé
 
 ### <a name="from-the-quality-orders-page"></a>A Minőségi rendelések lapról
 
-Minőségi rendelések manuális létrehozásához és az összes meglévő minőségi rendelés megtekintéséhez, menjen a **Készletkezelés \> Időszakos feladatok \> Minőségkezelés \> Minőségi rendelések** elemre. A témakör további részei a **Minőségi rendelések** lap használatáról nyújtanak további tájékoztatást.
+Minőségi rendelések manuális létrehozásához és az összes meglévő minőségi rendelés megtekintéséhez, menjen a **Készletkezelés \> Időszakos feladatok \> Minőségkezelés \> Minőségi rendelések** elemre. A cikk további részei a Minőségi rendelések lapról nyújtanak **további** tájékoztatást.
 
 ### <a name="from-sales-orders"></a>Értékesítési rendelésekből
 

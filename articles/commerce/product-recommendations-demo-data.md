@@ -1,6 +1,6 @@
 ---
 title: Ajánlások létrehozása bemutató adatokkal
-description: Ez a témakör útmutatást ad a többcsatornás termékajánlásoknak az 1.szintű egyablakos környezetekben történő kihasználásához előre kitöltött, testreszabható demóadatok felhasználásával.
+description: Ez a cikk útmutatást ad arról, hogyan lehet alkalmazni az egykulcsos környezetekben a csatorna-ajánlásokat az 1. szintű környezetben, előre kitöltve, testreszabható bemutatóadatok használatával.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1a9592ee5cae88c6277115ed495b15ec09945e56cad0634fd246b6ee7e5dd048
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a0e6666cc163f97567cf5c6f820d436ef6ef4cca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874895"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Ajánlások létrehozása bemutató adatokkal
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör útmutatást ad a többcsatornás termékajánlásoknak az 1.szintű egyablakos környezetekben történő kihasználásához előre kitöltött, testreszabható demóadatok felhasználásával.
+Ez a cikk útmutatást ad arról, hogyan lehet alkalmazni az egykulcsos környezetekben a csatorna-ajánlásokat az 1. szintű környezetben, előre kitöltve, testreszabható bemutatóadatok használatával.
 
 A többcsatornás termékajánlások termékek szerkesztők által karbantartott vagy program által generált listájának készletét adják. Ezek a listák több esetben is használhatók, attól függően, hogy milyen üzleti szükséglet van. A termékajánlási listákkal kapcsolatos további tudnivalókat lásd: [Termékajánlások áttekintése](product-recommendations.md).
 

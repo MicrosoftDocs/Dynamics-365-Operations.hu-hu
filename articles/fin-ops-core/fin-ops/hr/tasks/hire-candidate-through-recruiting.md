@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4bae8c038d048d18096eab20150701fd0e47250a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: b48fcfe46dbc8a512a2ff9523b62c3a99d1bcd28
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734660"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888093"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Jelölt felvétele toborzás útján
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben található toborzási funkciókat a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
+> A cikk toborzási funkcióit a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
 
 Ez az eljárás lehetővé teszi a toborzók számára az olyan pályázók felvételét, akik egy speciális toborzási projekten keresztül pályáztak. Amikor egy pályázót toborzási projekten keresztül szerződtet, létrejön egy új dolgozórekord, és a **pályázó rekordja Alkalmazva állapotú**. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.
 

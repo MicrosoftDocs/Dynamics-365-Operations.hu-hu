@@ -1,6 +1,6 @@
 ---
 title: Mértékegységek kezelése
-description: Ez a témakör leírja, hogyan lehet meghatározni egy mértékegységet, meghatározni fordításokat a mértékegységhez és a leírását, és átváltási szabályokat megadni a kapcsolódó egységekhez.
+description: Ez a témakör ismerteti, hogyan lehet definiálni egy mértékegységet, át lehet adni az egységet és annak leírását, valamint meg lehet adni a kapcsolódó egységek átváltási szabályait.
 author: t-benebo
 ms.date: 04/09/2021
 ms.topic: business-process
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e13897396810507bb4b2cbb415b873eb3dd7f4e8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8e2c21756b270ef7d914dc74a0cf61727953206a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565520"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863911"
 ---
 # <a name="manage-units-of-measure"></a>Mértékegységek kezelése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör leírja, hogyan lehet meghatározni egy mértékegységet, meghatározni fordításokat a mértékegységhez és a leírását, és átváltási szabályokat megadni a kapcsolódó egységekhez.
+Ez a témakör ismerteti, hogyan lehet definiálni egy mértékegységet, át lehet adni az egységet és annak leírását, valamint meg lehet adni a kapcsolódó egységek átváltási szabályait.
 
 ## <a name="open-the-units-page"></a>Nyissa meg az Egységek lapot
 
 A rendszerben elérhető mértékegységek létrehozásához és a velük való munkához kattintson a **Szervezet felügyelete \> Beállítás \> Mértékegységek\>** gombra.
 
-A témakör további részei leírják, hogy miket tud megtenni a **Mértékegységek** lapon.
+A cikk további részei leírják, hogy mit lehet tenni az Egységek **lapon**.
 
 ## <a name="create-standard-units-and-conversions"></a>Szabványos mértékegységek és átváltások létrehozása
 

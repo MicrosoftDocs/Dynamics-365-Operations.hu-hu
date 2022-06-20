@@ -1,6 +1,6 @@
 ---
 title: Rendelési értesítések megjelenítése a pénztárnál (POS)
-description: Ez a témakör ismerteti, hogyan lehet engedélyezni a rendelési értesítéseket a pénztárban és az értesítési keretrendszerben.
+description: Ez a témakör azt ismerteti, hogyan lehet engedélyezni a rendelési értesítéseket a értékesítés és az értesítési keretrendszer számára.
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e646d6bf48461e78dc75c8a154f2fbf1443393
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714138"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853980"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Rendelési értesítések megjelenítése a pénztárnál (POS)
 
@@ -65,10 +65,10 @@ A rendelésteljesítések és a rendelés-visszavonási értesítések esetében
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Élő tartalom engedélyezése a pénztár gombjain
 
-A pénztárgombok most már egy számlálót is megjeleníthetnek, amelynek a segítségével a dolgozó egyszerűen azonosíthatja az azonnali figyelmet igénylő feladatokat. A szám megjelenítéséhez a pénztárgombon hajtsa végre az ebben a témakörben korábban ismertetett értesítésbeállítást (vagyis engedélyezni kell az értesítéseket egy művelethez, szükséges az értesítési időköz beállítása, és a POS-engedélycsoportot frissíteni kell a dolgozóhoz). Ezenkívül meg kell nyitni a gombrácstervezőt, meg kell tekinteni a gomb tulajdonságait, és be kell jelölni az **Élő tartalom engedélyezése** jelölőnégyzetet. A **Tartalom igazítása** mezőben kiválaszthatja, hogy a gomb jobb felső sarkában jelenjen meg a számláló (**Jobb felső**) vagy a közepén (**Középen**).
+A pénztárgombok most már egy számlálót is megjeleníthetnek, amelynek a segítségével a dolgozó egyszerűen azonosíthatja az azonnali figyelmet igénylő feladatokat. Ahhoz, hogy a POS-gombon meg tudja jelenni ezt a számot, be kell állítania a korábban ismertetett értesítési beállításokat (ez azt jelenti, hogy engedélyeznie kell egy műveletre vonatkozó értesítéseket, be kell állítania az értesítési időközt, és frissítenie kell a dolgozó POS-engedélycsoportját). Ezenkívül meg kell nyitni a gombrácstervezőt, meg kell tekinteni a gomb tulajdonságait, és be kell jelölni az **Élő tartalom engedélyezése** jelölőnégyzetet. A **Tartalom igazítása** mezőben kiválaszthatja, hogy a gomb jobb felső sarkában jelenjen meg a számláló (**Jobb felső**) vagy a közepén (**Középen**).
 
 > [!NOTE]
-> Az élő tartalom csak akkor engedélyezhető a műveletekhez, ha az **Értesítések engedélyezése** jelölőnégyzet be van jelölve hozzájuk a **POS-műveletek** oldalon, az ebben a témakörben korábban ismertetett módon.
+> A műveletek élő tartalma **csak** **akkor engedélyezhető, ha be van jelölve az Értesítések engedélyezése jelölőnégyzet a POS** műveletek lapján, amint azt a jelen cikk korábban ismerteti.
 
 A következő ábrán az élő tartalom beállítása látható a rácsgombtervezőben.
 

@@ -1,6 +1,6 @@
 ---
 title: Fordított költségmechanizmus az adó/GST sémához
-description: A cikk azt tekinti át, hogyan állítható be fordított áfa az európai országokhoz, Szaúd-Arábiához és Szingapúrhoz.
+description: Ez a cikk bemutatja, hogy hogyan lehet beállítani a fordított áfafizetést az európai országok, Szaúd-Arábia és Szingapúr számára.
 author: epodkolz
 ms.date: 10/05/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4176f8e853b7d7c2acc1044cab33371202f10c4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861262"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Fordított költségmechanizmus az adó/GST sémához
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az áfa- vagy GST sémákat alkalmazó országok/régiók fordított költségfunkció beállítására szolgáló általános megközelítést ismerteti.
+Ez a témakör általános megközelítést ír le a fordított fizetésű funkcióknak az áfa- és a forgalmiadó-sémákat alkalmazó országok/régiók számára való beállításával kapcsolatban.
                                                                                  
 A funkció ország-/régióelérhetőségét a **Funkciókezelési** munkaterületen a következő funkciók kezelik.
 
@@ -33,7 +33,7 @@ A funkció ország-/régióelérhetőségét a **Funkciókezelési** munkaterül
 | Fordított áfa további országok esetében            | Bahrein  </br>Kuvait  </br>Omán  </br>Katar                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Fordított költségmechanizmus engedélyezése áfa/GST-sémához | Minden más ország/régió, kivéve:  </br>Brazília  </br>India  </br>Oroszország                                                                                                                                                                                                                                                                                                                                                                                         |
  
- További információt a témakör későbbi, [Fordított költségmechanizmus engedélyezése áfa/GST-séma funkcióhoz](#enable-reverse-charge) szakaszban talál.
+ A további tudnivalókat [lásd a fordított fizetés mechanizmusának engedélyezése az áfa/GST séma](#enable-reverse-charge) funkciónak ebben a cikkében.
 
 A fordított áfaszámítás egy olyan adózási rendszer, amely az áfa könyvelésének és jelentésének felelősségét a termék vagy szolgáltatás eladójáról a vevőre ruházza. Ezért az áruk és/vagy szolgáltatások fogadói vallják be mind a kimeneti áfát (az eladó szerepében), mind a bemeneti áfát (a beszerző szerepében).
 

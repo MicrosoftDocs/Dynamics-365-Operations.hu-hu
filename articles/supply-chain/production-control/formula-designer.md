@@ -1,6 +1,6 @@
 ---
 title: Képletszerkesztő
-description: Ez a témakör azt ismerteti, hogy a képletszerkesztő segítségével hogyan elemezhetők és tarthatók karban a receptúrák a fanézetben
+description: Ez a cikk bemutatja, hogy hogyan lehet fastruktúrában elemezni és karbantartani a képleteket a képletek tervezővel.
 author: johanhoffmann
 ms.date: 06/01/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf45fdf44e6d060ee16edf1a6628c5ffd9920dcb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 247f41b43030d392df67275e6e7db1bea5df1847
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566834"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849271"
 ---
 # <a name="formula-designer"></a>Képletszerkesztő
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogy a képletszerkesztő segítségével hogyan elemezhetők és tarthatók karban a receptúrák a fanézetben
+Ez a cikk bemutatja, hogy hogyan lehet fastruktúrában elemezni és karbantartani a képleteket a képletek tervezővel.
 
 Amikor megnyitja a **Képletszerkesztő** oldalt a **Kiadott termékek** oldalon, a fában a bal oldali ablakban megjelenik a társtermékek listája, és a kiadott termékhez tartozó összetevők hierarchiája. A szerkezet alapja a kiválasztott cikkre és összetevőire vonatkozó aktív és jóváhagyott receptúrahierarchia, a cikk alapértelmezett rendelési webhelye és a tényleges dátum.
 

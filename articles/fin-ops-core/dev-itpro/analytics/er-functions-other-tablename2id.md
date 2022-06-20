@@ -1,6 +1,6 @@
 ---
 title: TABLENAME2ID ER-függvény
-description: A témakör tájékoztatást nyújt a TABLENAME2ID Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
+description: Ez a cikk a TABLENAME2ID Elektronikus jelentés (ER) funkcióval kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a500eda75fbb5867f74b56753ee45016c60803b06f508340540764a6cd0399cc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5deea69d5c43be599ccf02c0344ba8d662a6e0f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725234"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886849"
 ---
 # <a name="tablename2id-er-function"></a>TABLENAME2ID ER-függvény
 
@@ -47,7 +47,7 @@ Az eredményül kapott numerikus érték.
 
 ## <a name="usage-notes"></a>Használati megjegyzések
 
-Ennek a funkciónak a végrehajtása különböző eredményeket hozhat a Microsoft Dynamics 365 Finance különböző példányain, még akkor is, ha ugyanazt a vállalatnevet használják.
+Ennek a funkciónak a végrehajtása a Microsoft Dynamics 365 Pénzügy különböző példányaiban eltérő eredményekhez vezethet akkor is, ha ugyanaz a vállalatnév van használva.
 
 ## <a name="example"></a>Példa
 

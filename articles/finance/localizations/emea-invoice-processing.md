@@ -1,6 +1,6 @@
 ---
 title: Számlák feldolgozása
-description: Ez a témakör a kelet-európai számlafeldolgozással kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk a kelet-európai számlák feldolgozásával kapcsolatban tartalmaz tájékoztatást.
 author: EvgenyPopovMBS
 ms.date: 02/02/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9eb4f3ace8c6295e82ba9ab44ef49baa0d10e96b
-ms.sourcegitcommit: 2aca3a95d42403c7f5d80dcd5e3ee958dca5c894
+ms.openlocfilehash: edb50ddebeca18653a318596e9c291a3f3df6d9c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8087816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848445"
 ---
 # <a name="invoice-processing"></a>Számlák feldolgozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör röviden leír néhány országspecifikus forgatókönyvet, például a közösségi általános forgalmi adó (áfa) és a halasztott áfa vonatkozásában. Egyes európai országok számára a jogi követelmények befolyásolják a számlázási folyamatot. Ez a témakör a vevői és szállítói számlák feldolgozásáról is információkkal szolgál az említett országokban. 
+Ez a témakör röviden leír néhány országspecifikus helyzetet, például a közösségen belüli forgalmi adót (áfa) és a halasztott adót. Egyes európai országok számára a jogi követelmények befolyásolják a számlázási folyamatot. Ez a cikk arról is tájékoztatást ad, hogyan kell feldolgozni a vevői és szállítói számlákat ezekben az országokban. 
 <table>
 <thead>
 <tr>
@@ -70,7 +70,7 @@ Ez a témakör röviden leír néhány országspecifikus forgatókönyvet, péld
 <p>A jogszabályok eltérő szabályokat adnak meg az érvényes árfolyamok kiválasztásához az üzleti tranzakciók számára. Az <strong>Árfolyam dátuma</strong> mezőben a <strong>Kinnlevőségek paraméterei</strong> és a <strong>Kötelezettségek paraméterei</strong> lapon, kiválaszthatja a dátumot, amely a könyvelési pénznemben szereplő összegekre használandó a beszerzési és értékesítési bizonylatok számításánál. Adatbevitel közben a rendszer beolvassa a tranzakció átváltási árfolyamát ennek a paraméternek az alapján.</p>
 <blockquote>[!NOTE]<br>Olaszország esetében ez a funkció csak a kötelezettségek modulban használható. A kötelezettségek paraméterei között a felhasználó kiválaszthatja a <strong>feladási dátumot</strong> vagy a <strong>bizonylat dátumát</strong> az <strong>árfolyam dátuma</strong> mezőben.   </blockquote>
 <blockquote><br>Az <strong>Árfolyam dátuma</strong> mező beállításakor a <strong>Bizonylat dátuma (csak EU-kereskedelemben)</strong> lehetőségre, a rendszer az áfacsoportot használja. Az áfacsoportra nézve van egy <strong>EU-kereskedelem</strong> paraméter az <strong>Általános</strong> lapon. Ha az <strong>EU-kereskedelem</strong> beállítás <strong>Igen</strong> az áfacsoport esetében, és a bizonylat fejlécében létezik ez az áfacsoport, a rendszer beolvassa az átváltási árfolyamot a bizonylat dátuma alapján. Ha az <strong>EU-kereskedelem</strong> beállítás <strong>Nem</strong> az áfacsoport esetében, a rendszer a bizonylat feladási dátuma alapján olvassa be az árfolyamot.</blockquote>
-  <blockquote><br>Lengyelország esetében a<strong>Követelések</strong> modul, egy további<strong>Automatikus dátummeghatározás</strong> elérhető ennek a paraméternek az értéke. Kiválasztásakor a rendszer automatikusan kiválasztja a legkorábbi dátumot a számla könyvelési dátuma, az értékesítés dátuma és a fizetési dátumok közül.</blockquote>
+  <blockquote><br>Lengyelország esetében a Kinnlevőségek <strong></strong><strong>modulban további automatikus dátummeghatározási</strong> érték érhető el ehhez a paraméterhez. Ha be van jelölve, a rendszer automatikusan kiválasztja a legkorábbi dátumot a számla feladási dátumtól, értékesítési dátumtól és fizetési dátumtól.</blockquote>
 </td>
 </tr>
 <tr>

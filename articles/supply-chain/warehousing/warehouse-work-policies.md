@@ -1,6 +1,6 @@
 ---
 title: Munkairányelvek
-description: Ez a témakör ismerteti a munkával kapcsolatos irányelvek beállítását.
+description: Ez a cikk bemutatja a munka irányelvek beállítását.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7637ef908ffa6e79f81e4ecfb8afac4e3e3fed26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855848"
 ---
 # <a name="work-policies"></a>Munkairányelvek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a rendszert és a Raktárkezelés mobilalkalmazást úgy, hogy támogassák a munkairányelveket. Ez a funkció a beszerzési vagy átmozgatási rendelések fogadása, illetve a termelési folyamatok befejezése esetén a készlet gyors regisztrálására használható, eltárolási munka létrehozása nélkül. Ez a témakör általános tájékoztatást tartalmaz. Az azonosítótábla-beszerzéssel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a Raktárkezelés mobilalkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
+Ez a cikk bemutatja, hogyan lehet beállítani a rendszert és a Raktárkezelés mobilalkalmazást, hogy azok támogassák a munka irányelveit. Ez a funkció a beszerzési vagy átmozgatási rendelések fogadása, illetve a termelési folyamatok befejezése esetén a készlet gyors regisztrálására használható, eltárolási munka létrehozása nélkül. Ez a cikk általános tájékoztatást tartalmaz. Az azonosítótábla-beszerzéssel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a Raktárkezelés mobilalkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
 
 A munkairányelvek azt vezérlik, hogy a gyártott cikk készként jelentésekor vagy a Raktárkezelés mobilalkalmazásba történő bevételezéskor történik-e a raktári munka létrehozása. Minden munkairányelvet úgy állíthat be, hogy meghatározza a feltételeket: a munkarendelés-típusokat és folyamatokat, a készlet helyét és a termékeket (ha van). Például egy beszerzési rendelést az *A0001* terméknél el kell fogadni a *RECV* helyen a *24*-es raktárban. Később a termék egy másik folyamatban lesz felhasználva a *RECV* helyen. Ebben az esetben munkairányelvet állíthat be, amellyel megakadályozhatja, hogy az eltárolási munka létrejöjjön, amikor egy dolgozó jelenti a beérkezett *A0001* terméket a *RECV* helyen.
 
@@ -35,7 +35,7 @@ A munkairányelvek azt vezérlik, hogy a gyártott cikk készként jelentésekor
 
 ## <a name="activate-the-features-in-your-system"></a>A rendszer szolgáltatásainak aktiválása
 
-Ha azt szeretné, hogy az ebben a témakörben ismertetett összes funkció elérhető legyen a rendszerben, kapcsolja be a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) következő két funkcióját:
+Ha az ebben a cikkben leírt összes funkciót elérhetővé tenni a rendszerben, [kapcsolja be a Funkciókezelés következő két funkcióját](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Azonosítótábla bevételezés fejlesztései
 - Munkairányelv fejlesztései bejövő munkára vonatkozóan

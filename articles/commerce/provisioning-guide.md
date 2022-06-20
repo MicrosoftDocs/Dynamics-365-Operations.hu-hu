@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce értékelési környezet kiépítése
-description: Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce értékelési környezetet létesíteni.
+description: Ez a témakör bemutatja, hogyan lehet egy értékelési Microsoft Dynamics 365 Commerce környezetet létesítni.
 author: psimolin
 ms.date: 12/17/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 52a263d1ab833eb688b1049cd4e8c584e8c9a94d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868909"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet kiépítése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce értékelési környezetet létesíteni.
+Ez a témakör bemutatja, hogyan lehet egy értékelési Microsoft Dynamics 365 Commerce környezetet létesítni.
 
-A művelet elkezdése előtt ajánljuk, hogy a jelen témakörben keressen egy rövid áttekintést, hogy megtudja, mire van szüksége a folyamatnak.
+Javasoljuk, hogy mielőtt nekikezdana, olvassa el gyorsan ezt a cikket, és olvassa el, hogy mire van szükség a folyamat során.
 
 > [!NOTE]
 > A Commerce értékelési környezetek általában nem állnak rendelkezésre, és a partnerek és a vevők számára a kérelem alapján biztosítják. További információért lépjen kapcsolatba Microsoft-partnerének kapcsolattartójával.
 
-A Commerce értékelési környezetének sikeres létrehozásához létre kell hoznia egy projektet, amely egy adott terméknévvel és típussal rendelkezik. A környezet és a Commerce Scale Unit (CSU) szintén rendelkezik bizonyos paraméterekkel, amelyeket későbbiekben, az e-kereskedelem létesítésekor használnia kell. Az ebben a témakörben szereplő útmutatás leírja a létesítéshez szükséges összes lépést és a használandó paramétereket.
+A Commerce értékelési környezetének sikeres létrehozásához létre kell hoznia egy projektet, amely egy adott terméknévvel és típussal rendelkezik. A környezet és a Commerce Scale Unit (CSU) szintén rendelkezik bizonyos paraméterekkel, amelyeket későbbiekben, az e-kereskedelem létesítésekor használnia kell. Az ebben a témakörben található útmutatás a létesítés befejezéséhez szükséges összes lépést és a szükséges paramétereket írja le.
 
 A Kereskedelem értékelési környezetének sikeres létesítését követően meg kell tennie néhány létesítést követő lépést a felkészítéséhez. Bizonyos lépések nem kötelezők, az értékelni kívánt rendszer bizonyos szempontjaitól függően. A választható lépéseket a későbbiekben bármikor befejezheti.
 

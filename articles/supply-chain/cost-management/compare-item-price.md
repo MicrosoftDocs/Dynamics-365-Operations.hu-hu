@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f88dd1c23153d325709e28b056f902b555f05376
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675375"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846213"
 ---
 # <a name="compare-item-prices-storage-report"></a>Cikkárak tárhelyének összehasonlítása jelentés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör mutatja be a **Cikkárak tárhelyének összehasonlítása** jelentés futtatását, és a kimenet digitális elérhetővé tételét, vagy interaktív oldalként a Dynamics 365 Supply Chain Management szolgáltatásban, vagy exportált dokumentumként számos formátum egyikében.
+Ez a cikk azt mutatja be, hogyan lehet a Cikkárak összehasonlítása jelentést futtatni, és a **kimenetet** digitálisan elérhetővé tenni interaktív Dynamics 365 Supply Chain Management lapként vagy exportált dokumentumként, bármilyen formátumban.
 
 Ha a jelentést a böngészőben tekinti meg, az oszlopok és az összesítő egyenlegek dinamikusan módosulnak, attól függően, hogy milyen elrendezés van beállítva. Lehetőség van az eredmények rendezésére, szűrésére, az adatok leásására és további részletekre.
 

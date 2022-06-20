@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5eb18ce29cbd1434b2a766c2ba5d78ed1be4e72b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579904"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851246"
 ---
 # <a name="wave-template-grouping"></a>Hullámsablon csoportosítása
 
@@ -41,7 +41,7 @@ A *Hullámsablon-csoportosítás* funkciót használata előtt be kell kapcsolni
 A hullámsablon-csoportosítás elérhetővé tételéhez hajtsa végre az alábbi lépéseket a [hullámsablon](tasks/configure-wave-processing.md) beállításához.
 
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámsablonok** pontra.
-1. A bal oldali ablaktáblában válassza ki a beállítani kívánt hullámsablont. Ha a bemutató adatainak felhasználásával készül a témakörben később a forgatókönyvvel dolgozni, válassza ki a **62 Szállítási alapértelmezett** sablont.
+1. A bal oldali ablaktáblában válassza ki a beállítani kívánt hullámsablont. Ha a bemutatóadatok segítségével készül a cikk későbbi, az eseten való munkára, **válassza a 62 Szállítás alapértelmezett sablont**.
 1. Válassza ki a **Szerkesztés** parancsot, hogy a lapot szerkesztési módba helyezze.
 1. Az **Általános** gyorslapon állítsa be a következő értékeket:
 
@@ -84,7 +84,7 @@ A forgatókönyvet a gyártási rendszerben végzett munka során a funkció has
 
 Ez a példa azt mutatja be, hogyan kell használni a hullámsablon-csoportosítást több hullámnak a hullámsablonban definiált feltételek alapján történő automatikus létrehozásához. Ebben a forgatókönyvben a hullámsablon úgy van beállítva a rendszerben, hogy szállítmányozói szolgáltatásonként egy hullámot hozzon létre.
 
-A kezdés előtt készítse elő a hullámsablont a témakör korábbi [Hullámsablon beállítása a hullámsablon-csoportosítás használatára](#set-up-template) szakaszában leírtak alapján. Ha ebben a helyzetben a bemutatóadatokkal dolgozik, ügyeljen arra, hogy az adott eljárásban javasolt bemutatóadat-értékeket használja. Ez a beállítás az egyes értékesítési rendelésekhez megadott szállítmányozói szolgáltatás alapján csoportosítja a hullámokat.
+Mielőtt hozzákezd, készítse elő [a hullámsablont a](#set-up-template) cikk korábbi hullámsablon-csoportosítási szakaszának a Hullámsablon beállítása című fejezetében leírtak szerint. Ha ebben a helyzetben a bemutatóadatokkal dolgozik, ügyeljen arra, hogy az adott eljárásban javasolt bemutatóadat-értékeket használja. Ez a beállítás az egyes értékesítési rendelésekhez megadott szállítmányozói szolgáltatás alapján csoportosítja a hullámokat.
 
 #### <a name="create-sales-order-1"></a>1. értékesítési rendelés létrehozása
 

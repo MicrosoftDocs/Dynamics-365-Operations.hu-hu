@@ -1,6 +1,6 @@
 ---
 title: Fájlok importálása XML-formátumban opcionális attribútumokkal
-description: Ez a rész az olyan ER-formátumok kialakítását ismerteti, amelyek meghatározzák az XML-formátumú beérkező elektronikus dokumentumok elemzésére használt XML-attribútumokat.
+description: Ez a cikk a bejövő elektronikus dokumentumok XML-formátumban történő feldolgozásához szükséges XML-attribútumokat definiáló ER-formátumok tervezését írja le.
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 81156cf13e003a67fde0a73bdcd69b2c997f23a33c464fad82132f7768f8a99f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5b25b51a4f59bf9c308bcaeb140e2737597798e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873222"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Fájlok importálása XML-formátumban opcionális attribútumokkal
 
@@ -26,7 +26,7 @@ ms.locfileid: "6757297"
 
 Olyan elektronikus jelentési (ER) formátumokat tervezhet, amelyekkel elemezhetők az XML-formátumú bejövő elektronikus dokumentumok. Az XML-elemek bizonyos attribútumai választhatóként adhatók meg a tervezett ER-formátumban. Ezzel a megoldással megfelelően kezelhetők az ilyen XML-attribútumokkal rendelkező és nem rendelkező bejövő fájlok. Az ezekből a fájljokból származó tartalmakat felhasználhatja az alkalmazásadatok frissítésére.
 
-Ha további információt szeretne erről a szolgáltatásról, hajtsa végre az [(RCS) Fájlok importálása XML-formátumban opcionális attribútumokkal](tasks/import-files-xml-format-optional-attributes.md) című cikk lépéseit. Ez a cikk a 7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677) üzleti folyamat része. Ez a feladat-útmutató és a kapcsolódó mintafájlok a [Microsoft letöltőközpontjából](https://go.microsoft.com/fwlink/?linkid=874684) tölthetők le.
+Ha többet szeretne erről a funkcióról, kövesse a következő lépéseket: [(RCS) Importálja a fájlokat XML](tasks/import-files-xml-format-optional-attributes.md) formátumban, választható attribútumokkal, amelyek a 7.5.4.3 Beszerzés/fejlesztés it-szolgáltatás/megoldásösszetevők (10677) üzleti folyamatának részét képezi. Ez a feladat-útmutató és a kapcsolódó mintafájlok a [Microsoft letöltőközpontjából](https://go.microsoft.com/fwlink/?linkid=874684) tölthetők le.
 
 
 | Tartalom leírása       | Fájl                                                         |
@@ -38,7 +38,7 @@ Ha további információt szeretne erről a szolgáltatásról, hajtsa végre az
 A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó hogyan alakíthat ki Elektronikus jelentés (ER) formátumkonfigurációt választható attribútumokat tartalmazó XML-formátumú fájlok importálásához. Az alábbi lépések végrehajtásához először hajtsa végre a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárás lépéseit. A kezdés előtt töltse le a Microsoft letöltőközpontjából (https://go.microsoft.com/fwlink/?linkid=874684 ) és mentse helyileg az IncomingDocumentToLearnHowToHandleOptionalAttributes.xml fájlt.
 
 1. Lépjen a **Szervezeti adminisztráció** > **Munkaterületek** > **Elektronikus jelentés** részre.
-2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) témakör lépéseit.
+2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja ezt a konfigurációs szolgáltatót, a következő lépésekkel hozza létre a konfigurációs szolgáltatókat, [és jelölje meg aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Kattintson a **Jelentéskészítés konfigurációi** lehetőségre.
 
 ## <a name="create-a-new-data-model-configuration"></a>Új adatmodell-konfiguráció létrehozása

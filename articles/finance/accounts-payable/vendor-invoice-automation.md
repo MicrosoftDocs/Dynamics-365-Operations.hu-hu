@@ -1,6 +1,6 @@
 ---
 title: Számlaautomatizálás beolvasott dokumentumokhoz
-description: Ez a témakör azokat a funkciókat mutatja be, amelyek a szállítói számlák végponttól végpontig történő automatizálására érhetők el, még a mellékleteket tartalmazó számlák esetében is.
+description: Ez a cikk bemutatja a szállítói számlák, akár a mellékleteket is magában vevő számlák teljes zárása érdekében használható funkciókat.
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716394"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883416"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Számlaautomatizálás beolvasott dokumentumokhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azokat az adatentitásokat mutatja be, amelyek a szállítói számlák végponttól végpontig történő automatizálására érhetők el, még a mellékleteket tartalmazó számlák esetében is.
+Ez a cikk bemutatja azokat az adatentitásokat, amelyek elérhetőek a szállítói számlák teljes zárása érdekében, beleértve a melléklettel együtt rendelkezésre álló számlákat is.
 
 Azok a szervezetek amelyek egyszerűsítik a Kötelezettségek folyamatot, gyakran a számlafeldolgozás folyamatát tartják az egyik olyan kiemelt területnek, amelynek hatékonyabbnak kellene lennie. Sok esetben ezek a szervezetek a papíralapú számlák feldolgozását külső optikai karakterfelismerési (OCR) szolgáltatónak adják át. Ezután géppel olvasható számlázi metaadatokat kapnak az egyes számlák beolvasott képével. Az automatizálás elősegítése érdekében egy ún. „utolsó mérföld”megoldást építenek ki, amely lehetővé teszi az ilyen műtermékek felhasználását a számlázási rendszerben. Most az „utolsó mérföld” azonnali automatizálása engedélyezve van egy számlaautomatizálási megoldás révén.
 
@@ -46,7 +46,7 @@ A megoldás helyigénye a következő összetevőkből áll:
 + A számlák kivételes feldolgozása
 + Mellékletek párhuzamos megjelenítése a számlákon
 
-A témakör többi része ezen megoldási összetevők részletes leírását tartalmazza.
+A cikk többi része részletes leírást nyújt a megoldásösszetevőkről.
 
 ## <a name="data-entities"></a>Adatentitások
 

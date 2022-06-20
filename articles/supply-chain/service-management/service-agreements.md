@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 559f4571a60ea8ec048b291e3b6a0a93e8bc9d44
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: cf28619e66fa5d3e86bdbb3838dc7f711916bcec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677702"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905602"
 ---
 # <a name="develop-and-establish-service-agreements-overview"></a>Szolgáltatási szerződések kialakítása és megkötése – áttekintés
 
@@ -72,7 +72,7 @@ A szolgáltatási szerződések minden egyes sora részletesen leírja a javasol
 -  A sor le van-e állítva. Ha egy sor le van állítva, akkor ahhoz nem hozható létre szervizrendelés.
 -  Projektbeállítások, például a kategória és a sortulajdonság.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Szolgáltatási szerződések létrehozása](create-service-agreements.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Cikkek és nyersanyagok nyomon követése a készletben, a gyártás során és az értékesítésben
-description: Ez a témakör leírja, hogyan használja a cikk-követés azonosítására, amikor cikkeket vagy nyersanyagokat használták, használják vagy vesznek részt a termelési és értékesítési folyamatok.
+description: Ez a témakör azt ismerteti, hogyan lehet a cikk-nyomkövetést használni annak azonosítására, hogy hol voltak használatban a cikkek vagy a nyersanyagok, illetve hol voltak használatban a termelési és értékesítési folyamatokban.
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f59a3eca20634d03520ad88f71a3096309e23e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 23d860b86e2eebb520bf2fd472c5655f40dd0ca0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571809"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854413"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Cikkek és nyersanyagok nyomon követése a készletben, a gyártás során és az értékesítésben
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja, hogyan használja a cikk-követés azonosítására, amikor cikkeket vagy nyersanyagokat használták, használják vagy vesznek részt a termelési és értékesítési folyamatok.
+Ez a témakör azt ismerteti, hogyan lehet a cikk-nyomkövetést használni annak azonosítására, hogy hol voltak használatban a cikkek vagy a nyersanyagok, illetve hol voltak használatban a termelési és értékesítési folyamatokban.
 
 A cikk nyomon követési funkció a **cikk nyomon követése** oldalon érhető el. A következő szakaszok leírják, hogyan használható a cikk-követés és az ahhoz tartozó beállításokat és korlátozásokat.
 

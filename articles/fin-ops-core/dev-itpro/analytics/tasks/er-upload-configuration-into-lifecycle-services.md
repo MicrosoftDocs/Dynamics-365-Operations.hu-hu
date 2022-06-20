@@ -1,6 +1,6 @@
 ---
 title: A konfiguráció feltöltése a Lifecycle Services szolgáltatásba
-description: Ez a témakör egy új Elektronikus jelentéskészítési (ER) konfiguráció létrehozására és Microsoft Dynamics Lifecycle Services (LCS) rendszerbe való feltöltésére szolgáló folyamatot mutatja be.
+description: Ez a cikk bemutatja, hogyan lehet új elektronikus jelentési konfigurációt létrehozni és feltölteni a Lifecycle Services (LCS) Microsoft Dynamics szolgáltatásba.
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b480351875c7d300db790a68d61a402218f8ee36d8247188b912762f21d035b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2b84fc3167b3edaf6b99fa8bb0efd373c7f57c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720760"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885514"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>A konfiguráció feltöltése a Lifecycle Services szolgáltatásba
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör leírja, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre új [Elektronikus jelentés (ER) konfigurációt](../general-electronic-reporting.md#Configuration) , és hogyan töltheti fel a [projektszintű Eszközkönyvtárba](../../lifecycle-services/asset-library.md) a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban.
+Ez a [cikk bemutatja, hogy a rendszergazdai vagy elektronikusjelentés-fejlesztő](../general-electronic-reporting.md#Configuration)[szerepkörű felhasználók hogyan hozhatnak létre új elektronikus jelentéskészítési (ER) konfigurációt, és tölthetik fel azt a Lifecycle Services (LCS)](../../lifecycle-services/asset-library.md)Microsoft Dynamics projektszintű eszköztárába.
 
 > [!IMPORTANT]
 > Az LCS tárolási adattárként való használata az ER-konfigurációknál [elavult](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). További információért lásd a [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) tárhely elavulása](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md) részt.
@@ -42,7 +42,7 @@ Ebben a példában a mintavállalatra, a Litware-ra, Inc.-re vonatkozóan létre
 
 <a name="accessconditions"></a>
 > [!NOTE]
-> Győződjön meg róla, hogy az aktuális Dynamics 365 Finance felhasználó tagja annak az LCS projektnek, amely tartalmazza azt az [Eszköztárat](../../lifecycle-services/asset-library.md#asset-library-support), amely az ER-konfigurációk importálásához használatos.
+> Győződjön meg róla, hogy az aktuális Dynamics 365 Pénzügy felhasználó tagja annak az LCS-projektnek [...](../../lifecycle-services/asset-library.md#asset-library-support), amely az ER-konfigurációk importálására használt eszköztárat tartalmazza.
 >
 > Nem férhet hozzá egy LCS-projekthez egy olyan ER-adattárból, amely egy másik tartományt képvisel, mint a Finance-ben használt tartomány. Ha megpróbálja, akkor az LCS-projektek üres listája jelenik meg, és nem fogja tudni importálni a projekt-szintű Eszközökkönyvtár ER-konfigurációit az LCS-ben. Ahhoz, hogy a projekt-szintű Eszköztárakat egy olyan ER-adattárból elérje, amely ER-konfigurációk importálására szolgál, a Finance alkalmazásba való bejelentkezéshez olyan felhasználó hitelesítő adatait használja, aki olyan bérlőhöz (tartomány) tartozik, amelyhez az aktuális Finance-példány ki lett építve.
 

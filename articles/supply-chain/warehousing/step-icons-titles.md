@@ -1,6 +1,6 @@
 ---
 title: Lépésikonok és -címek hozzárendelése a Warehouse Management mobilalkalmazáshoz
-description: Ez a témakör azt ismerteti, hogyan lehet lépésikonokat és -címeket hozzárendelni a Warehouse Management mobilalkalmazás új vagy testre szabott feladatfolyamataihoz.
+description: Ez a témakör azt ismerteti, hogyan lehet lépésikonokat és címeket hozzárendelni a Raktárkezelés mobilalkalmazás új vagy testreszabott feladatfolyamatokhoz.
 author: Mirzaab
 ms.date: 05/17/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 361ace454f7125ec86bd99cffefc7d268f81d37f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103313"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890596"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Lépésikonok és -címek hozzárendelése a Warehouse Management mobilalkalmazáshoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet lépésikonokat és lépéscímeket hozzárendelni a Warehouse Management mobilalkalmazás új vagy testre szabott feladatfolyamataihoz.
+Ez a témakör ismerteti, hogyan lehet lépésikonokat és lépéscímeket hozzárendelni a Raktárkezelés mobilalkalmazás új vagy testreszabott feladatfolyamataihoz.
 
 A következő ábrákon az látható, hogyan jelennek meg a lépésikonok és -címek a Warehouse Management mobilalkalmazásban.
 
@@ -29,7 +29,7 @@ A következő ábrákon az látható, hogyan jelennek meg a lépésikonok és -c
 
 ## <a name="turn-this-feature-on-or-off"></a>A funkció be- és kikapcsolása
 
-Az ebben a témakörben *leírt funkciók használatához a rendszer számára be kell kapcsolva lennie az új raktári alkalmazás felhasználói beállításainak,* ikonjainak és lépéscímének. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
+Az ebben a cikkben leírt funkciók használatához az új raktári alkalmazás funkció felhasználói beállításait, *ikonjait* és lépéscímeit be kell kapcsolva a rendszeren. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Szabványos lépések azonosítói, osztályai és ikonjai
 
@@ -39,7 +39,7 @@ Egy feladatfolyamat mindegyik lépését egy lépésazonosító azonosítja, és
 
 A következő táblázatban az aktuálisan elérhető összes lépésazonosító és a hozzá tartozó lépésosztály látható. Az elsődleges beviteli mező vezérlőneve használatos lépésazonosítóként.
 
-A lépésazonosítók és -osztályok használatát bemutató példára vonatkozóan tekintse meg a `WHSMobileAppStepInfoBuilder.stepId()` metódus implementációját a cikk későbbi részében: [Példa: Lépésikonok és -címek hozzárendelése egyéni folyamatokhoz](#example).
+A lépésszámok `WHSMobileAppStepInfoBuilder.stepId()`[és osztályok használatával kapcsolatos példát lásd a példa metódusának megvalósításában:](#example) A lépésikonok és -címek hozzárendelése egy egyéni folyamatszakaszhoz a cikk későbbi részében.
 
 | Lépésazonosító | Lépés osztálya |
 |-|-|
@@ -373,7 +373,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 A lépésikon azonosítója a `defaultStepIcon` osztálytagban, a lépés címe pedig a `defaultStepTitle` osztálytagban van tárolva.
 
-Lépésikon hozzárendeléséhez állítsa be a témakör korábbi részén, az [Elérhető lépésikonok](#step-icons) szakaszban lévő ikonok valamelyikére a `defaultStepIcon` tagot.
+A lépésikon hozzárendelése a `defaultStepIcon`[cikk](#step-icons) korábbi szakaszában elérhető lépésikonok valamelyik ikon-adatának beállítását jelenti.
 
 ### <a name="use-a-standard-or-custom-step-icon-and-title-for-the-weight-input"></a>Standard vagy egyéni lépésikon és -cím használata a súly beviteléhez
 
@@ -405,7 +405,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-Ezután létre kell hoznia egy lépésosztályt a `NewWeight` lépéshez. A kódnak hasonlítania kell a témakörben korábban bemutatott `ContainerId` példa kódjához.
+Ezután létre kell hoznia egy lépésosztályt a `NewWeight` lépéshez. A kódnak hasonlítania kell a `ContainerId` korábban ebben a cikkben látható példához.
 
 #### <a name="override-the-stepinfo-method"></a>A stepInfo() metódus felülbírálása
 

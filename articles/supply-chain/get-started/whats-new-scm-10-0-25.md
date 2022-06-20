@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.25. (2022. április ) szolgáltatásban
-description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.25 új vagy módosított szolgáltatásait írja le.
+description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.25 rendszer új vagy módosult funkcióit ismerteti.
 author: kamaybac
 ms.date: 03/14/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 27f3233ebb3363abcbfc5b98b3786865fa32366c
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
-ms.translationtype: MT
+ms.openlocfilehash: 1fa2ec6e21026552a4f14a67188db0720d3feae5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462439"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850786"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.25. (2022. április ) szolgáltatásban
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.25 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.1149 a buildszáma, és a következő módon érhető el:
+Ez a cikk felsorolja azokat a funkciókat, amelyek vagy újak, vagy módosulnak a Microsoft Dynamics 365 Supply Chain Management 10.0.25-ös verziójában. Ennek a verziónak 10.0.1149 a buildszáma, és a következő módon érhető el:
 
 - **Előzetes kiadás:** 2022. február
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2022. március
@@ -29,7 +29,7 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.25 változa
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Lehet, hogy frissítjük ezt a témát, hogy tartalmazza azokat a funkciókat, amelyek a téma eredeti közzététele után kerültek be a buildbe.
+Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Előfordulhat, hogy a cikk első közzététele után frissítjük ezt a cikket, hogy szerepeljenek a buildben található funkciók.
 
 | Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
@@ -75,7 +75,7 @@ A táblázat felsorolja azokat a funkciókat is, amelyek korábban nyilvános el
 | Költségkezelés | [Készletérték-jelentés tárolója](../cost-management/inventory-value-report-storage.md) | Alapértelmezés szerint be |
 | Költségkezelés | Készletzárási napló megjelenítése rácsban | Alapértelmezés szerint be |
 | Tervezési változáskezelés | [Változáskezelés engedélyezése meglévő termékek esetében](../engineering-change-management/change-management-existing-products.md) | Alapértelmezés szerint be |
-| Tervezési változáskezelés | [Mérnöki változáskezelés](../engineering-change-management/product-engineering-overview.md) | Alapértelmezés szerint be |
+| Tervezési változáskezelés | [Tervezési változáskezelés](../engineering-change-management/product-engineering-overview.md) | Alapértelmezés szerint be |
 | Tervezési változáskezelés | [Tervezési értesítések a termelés számára](../engineering-change-management/engineering-change-management.md) | Alapértelmezés szerint be |
 | Tervezési változáskezelés | [Továbbfejlesztett attribútumöröklődés a tervezési változáskezeléshez](../engineering-change-management/engineering-attributes-and-search.md) | Alapértelmezés szerint be |
 | Tervezési változáskezelés | [Receptúrák és összetevőik módosításainak kezelése](../engineering-change-management/manage-formula-changes.md) | Alapértelmezés szerint be |
@@ -199,12 +199,12 @@ Tekintse meg a [Dynamics 365 és ipari felhők: 2022-es 1. kiadási hullám csom
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 
-A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltatásai](removed-deprecated-features-scm-updates.md) témakör azokat a funkciókat írja le, amelyek el lettek távolítva a Supply Chain Management szolgáltatásól vagy eltávolításuk ütemezve van.
+A [cikk Eltávolított Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) vagy elavult funkciói olyan funkciókat írnak le, amelyek már el vannak távolítva, illetve amelyek már el vannak távolítva vagy elavultak az Ellátásilánc-kezeléshez.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
 
-Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
+Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) az értékcsökkenési értesítés 12 hónappal az eltávolítás előtt törlődik az Eltávolított vagy elavult funkciókból.
 
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 

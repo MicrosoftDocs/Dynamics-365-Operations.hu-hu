@@ -1,6 +1,6 @@
 ---
 title: Új szállításkezelő motor létrehozása
-description: Ez a témakör azt ismerteti, hogyan lehet új szállításkezelő motort létrehozni a Dynamics 365 Supply Chain Management alkalmazásban.
+description: Ez a témakör azt ismerteti, hogyan lehet új szállításkezelő motort létrehozni a Dynamics 365 Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be52c6afb66e88b36f3b2cdf5af14e17b3d3005f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 627972ef6afb7551bb57821ded24183f8f335e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678122"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857257"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>Új szállításkezelő motor létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet új szállításkezelő motort létrehozni a Dynamics 365 Supply Chain Management alkalmazásban. 
+Ez a témakör azt ismerteti, hogyan lehet új szállításkezelő motort létrehozni a Dynamics 365 Supply Chain Management. 
 
 A szállításkezelő motorok (TMS) határozzák meg azt a logikát, amit a Szállításkezelő a szállítási díjak előállítására és feldolgozására használ. A Supply Chain Management számos különböző típusú motort kínál, amelyek különböző paramétereket számítnak ki, például a díjakat, a szállítási időket, valamint a szállítás közben keresztezett zónák számát. Ez a cikk bemutatja, hogy hogyan használható a Microsoft Visual Studio fejlesztői környezete a Supply Chain Management fejlesztési eszközeivel együtt egy új TMS-motor létrehozásához és telepítéséhez, majd a motornak az Műveletekben való beállításához. A motorokkal kapcsolatos további tudnivalókat lásd: [Szállításkezelő motorok](transportation-management-engines.md).
 

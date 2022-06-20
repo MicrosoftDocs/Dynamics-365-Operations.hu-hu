@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711320"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861705"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
@@ -320,7 +320,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 <td>A <strong>Súgóra</strong> kattintva hozzáférhet Folyamatsúgóhoz (feladat-útmutatók) és az elméleti témakörökhöz-</td>
 <td>Az AX 2012 Súgórendszer helyi webkiszolgálón tárolt HTML témaköröket mutat. Vevők és a partnerek létrehozhatják saját Súgójukat.</td>
 <td>A Súgórendszer a Dynamics AX jelenlegi verziójában a Microsoft Dynamics Lifecycle Services (LCS) BPM-ben tárolt feladat-útmutatókat jelenít meg. A Súgórendszer a Microsoft dokumentációs webhelyéről származó témaköröket is megjelenít. További információkat lásd: <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Súgórendszer</a> és <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Új feladat-útmutatók (2016. február)</a>.</td>
-<td>A feladat-útmutató irányított, interaktív tapasztalatot tartalmaz, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. Letöltheti és testreszabhatja a Microsoft által kínált feladat-útmutatókat. A témakör segítségével gyorsabb és rugalmasabb a termékdokumentáció létrehozása, leszállítása, és frissítése. Ezért segítségével garantálható, hogy a legfrissebb technikai információkhoz jut hozzá.</td>
+<td>A feladat-útmutató irányított, interaktív tapasztalatot tartalmaz, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. Letöltheti és testreszabhatja a Microsoft által kínált feladat-útmutatókat. A cikk a termékdokumentációk létrehozására, kézbesítésére és frissítésére gyorsabb és rugalmasabb lehetőséget biztosít. Ezért segítségével garantálható, hogy a legfrissebb technikai információkhoz jut hozzá.</td>
 </tr>
 </tbody>
 </table>

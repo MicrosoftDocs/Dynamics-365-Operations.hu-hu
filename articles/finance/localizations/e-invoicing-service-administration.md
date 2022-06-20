@@ -1,6 +1,6 @@
 ---
 title: Elektronikus számlázás adminisztrációs összetevői
-description: Ez a témakör az Elektronikus számlázás adminisztrációval kapcsolatos összetevőiről nyújt tájékoztatást.
+description: Ez a cikk az elektronikus számlázás adminisztrációval kapcsolatos összetevőiről nyújt tájékoztatást.
 author: gionoder
 ms.date: 08/31/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d187e8a03552258099d7021ff056d0726ea60ca1
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.openlocfilehash: cdd4d6705730bca967bb1bbff528df6d83a2390d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463881"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876000"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Elektronikus számlázás adminisztrációs összetevői
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör az Elektronikus számlázás adminisztrációval kapcsolatos összetevőiről nyújt tájékoztatást. Arról is tájékoztatást tartalmaz, hogyan kell konfigurálni az Elektronikus számlázás szolgáltatást.
+Ez a cikk az elektronikus számlázás adminisztrációval kapcsolatos összetevőiről nyújt tájékoztatást. Arról is tájékoztatást tartalmaz, hogyan kell konfigurálni az Elektronikus számlázás szolgáltatást.
 
 ## <a name="azure"></a>Azure
 
@@ -97,7 +97,7 @@ Ajánlott rendszeres időközönként cserélni a titkokat. További részletek 
 
 #### <a name="users"></a>Felhasználók
 
-Minden szolgáltatási környezetben fel kell sorolni azokat a felhasználókat, akik csatlakozni tudnak a Dynamics 365 Finance és a Dynamics 365 Supply Chain Management modulból az Elektronikus számlázáshoz.
+Minden szolgáltatási környezetben fel kell sorolni azokat a felhasználókat, akik csatlakozni tudnak a Dynamics 365 Pénzügy modulhoz és az Dynamics 365 Supply Chain Management Elektronikus számlázás modulhoz.
 
 #### <a name="publication"></a>Közzététel
 
@@ -123,7 +123,7 @@ A Finance and Supply Chain Management modul és az Elektronikus számlázási b�
 
 A szolgáltatásvégpont az az URL-cím, ahol az Elektronikus számlázás található. Ahhoz, hogy a Finance and Supply Chain Management modul segítségével elektronikus számlákat tudjon kiállítani a szolgáltatásvégpontot úgy kell konfigurálni, hogy lehetővé tegye a szolgáltatással való kommunikációt.
 
-A szolgáltatásvégpont beállításához lépjen a **Szervezeti adminisztráció \> Beállítás \> Elektronikus dokumentum paraméterei** lehetőségre, majd az **Elektronikus számlázás** oldal **Végpont URL-címe** mezőben adja meg a megfelelő URL-címet az ebben a témakörben korábban ismertetett [Szolgáltatás-végpont](#svc-endpoint-uris) szakaszban található táblázatból.
+A szolgáltatási **\>\>** végpont beállításához lépjen a Szervezet felügyelete – Elektronikus dokumentumparaméterek pontra, **majd az Elektronikus számlázás** **lap Végpont URL-mezőjében adja meg a megfelelő URL-címet**[a](#svc-endpoint-uris) szolgáltatási végpont szakaszának korábban található táblából.
 
 #### <a name="environments"></a>Környezetek
 

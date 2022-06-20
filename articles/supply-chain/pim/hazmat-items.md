@@ -1,6 +1,6 @@
 ---
 title: Termékekben, megrendelésekben, szállítmányokban és rakományokban lévő veszélyes anyagok
-description: Ez a témakör azt mutatja be, hogyan kell megadni a kiadott termékekhez tartozó veszélyes anyagok jellemzőit, a veszélyes cikkekre vonatkozó készlet korlátozását, valamint a veszélyes anyagok értékesítési rendelésbe, szállítmányba vagy rakományba történő felvételének módját.
+description: Ez a cikk bemutatja a kiadott termékek veszélyes anyagtulajdonságának beállítását, a veszélyes cikkek készletkorlátozásának a beállítását, valamint a veszélyes anyagoknak az értékesítési rendelésekben, szállítmányban vagy rakományban való szerepeletési tulajdonságait.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eaae3ce4916465cd57da65eaa217c40f9c3ea88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860696"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Termékekben, megrendelésekben, szállítmányokban és rakományokban lévő veszélyes anyagok
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan kell megadni a kiadott termékekhez tartozó veszélyes anyagok jellemzőit, a veszélyes cikkekre vonatkozó készlet korlátozását, valamint a veszélyes anyagok értékesítési rendelésbe, szállítmányba vagy rakományba történő felvételének módját.
+Ez a cikk bemutatja a kiadott termékek veszélyes anyagtulajdonságának beállítását, a veszélyes cikkek készletkorlátozásának a beállítását, valamint a veszélyes anyagoknak az értékesítési rendelésekben, szállítmányban vagy rakományban való szerepeletési tulajdonságait.
 
 ## <a name="set-hazardous-material-specifications-for-products"></a>Termékekhez tartozó veszélyesanyag-specifikációk megadása
 
@@ -109,11 +109,11 @@ A képlet jelmagyarázata:
 - A *&lt;UnitConversion&gt;* egy átváltási tényező a rakománysor mennyiségéhez használt mértékegység és a termékhez megadott mértékegység között az **Anyagkezelés** gyorslap **Mértékegység** mezőjében.
 - A *&lt;Szorzó&gt;* az a szorzó, amely a termékhez meg van adva az **Anyagkezelés** gyorslap **Szorzó** mezőjében.
 
-Ez a pontszám minden olyan rakománysor esetében jelentve van, amely tartalmaz egy terméket, ahol ezek az értékek meg vannak adva. A további tudnivalókat lásd a [Veszélyes anyagokat tartalmazó szállítmányok](#hazmat-shipments) és a [Veszélyes anyagok szakaszait tartalmazó rakományok](#hazmat-loads) részben a témakör további részében.
+Ez a pontszám minden olyan rakománysor esetében jelentve van, amely tartalmaz egy terméket, ahol ezek az értékek meg vannak adva. A további [tudnivalókat](#hazmat-shipments)[lásd](#hazmat-loads) a cikk veszélyes anyagokat és rakományokat tartalmazó szállítmányai, amelyek veszélyesanyag-szakaszokat tartalmaznak.
 
 #### <a name="how-the-hazardous-material-weight-is-calculated"></a>A veszélyesanyag tömegének kiszámítása
 
-Azon rakományoknál és rakománysoroknál, ahol a **Korlátozott menyiség** beállítás az **Anyagkezelés** gyorslapon **Igen** értékre van állítva, meg lesz jelenítve a veszélyes anyag teljes tömege a [Veszélyes anyagokat tartalmazó szállítmányok](#hazmat-shipments) és [Veszélyes anyagokat tartalmazó rakományok](#hazmat-loads) című későbbi szakaszokban leírtak szerint. A rendszer a következő képlettel számítja ki a veszélyes anyag tömegét:
+**·** **·** **Az** Olyan termékeket tartalmazó rakományok és rakománysorok, amelyeknél az Anyagkezelés gyorsgombban a Korlátozott mennyiség beállítás Beállítása Igen beállítású, a veszélyes anyagok össztömegét mutatja [a](#hazmat-shipments)[jelen](#hazmat-loads) cikk későbbi, veszélyes anyagokat tartalmazó szállítmányokban ismertetettek szerint. A rendszer a következő képlettel számítja ki a veszélyes anyag tömegét:
 
 Veszélyes anyag tömege = *&lt;LineQty&gt;* × *&lt;ProductWeight&gt;* × *&lt;UnitConversion&gt;*
 

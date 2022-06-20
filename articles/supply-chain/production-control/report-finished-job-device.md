@@ -1,6 +1,6 @@
 ---
-title: Jelentés befejezettként a feladatkártya eszközből
-description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni a rendszert úgy, hogy a Feladatkártya-eszköz felhasználói a termelési rendelésből a készletbe bejelenthetik a kész termékeket.
+title: Jelentés befejezettként a feladatkártya-eszközből
+description: Ez a témakör leírja, hogyan kell konfigurálni a rendszert annak érdekében, hogy a feladatkártya-eszközök felhasználói kész termékeket jelentsen a termelési rendelésből a készletbe.
 author: johanhoffmann
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857373"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Jelentés befejezettként a feladatkártya eszközből
 
 [!include [banner](../includes/banner.md)]
 
-A dolgozók a munkakártya eszköz **jelentés-végrehajtási** lapját használják a termelési feladatokra kitöltött mennyiségek jelentése céljából. Ez a témakör azt mutatja be, hogyan lehet beállítani a különböző lehetőségeket, amelyek meghatározzák, hogy a dolgozók hogyan jelenthetik készként a munkát ezen az oldalon, és mi történik a következőn. A lehetőségek a következők:
+A dolgozók a munkakártya eszköz **jelentés-végrehajtási** lapját használják a termelési feladatokra kitöltött mennyiségek jelentése céljából. Ez a témakör ismerteti, hogyan lehet beállítani különböző lehetőségeket, amelyek meghatározzák, hogyan lehet a dolgozók készként jelenteni az oldalt, és mi történik ezután. A lehetőségek a következők:
 
 - Annak megadása, hogy a készként jelentett mennyiségeket hozzáadja-e a program a készlethez, és ha igen, akkor hogyan.
 - Annak megadása, hogy a készként jelentett kötegszámokat létrehozza és alkalmazza-e, és ha igen, akkor hogyan.

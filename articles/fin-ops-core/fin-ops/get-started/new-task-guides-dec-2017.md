@@ -1,6 +1,6 @@
 ---
 title: Új vagy frissített feladat-útmutatók (2017. december)
-description: Ez a témakör felsorolja a Microsoft (2016 december - minden nyelv) APQC Egyesített könyvtárhoz kiadott új vagy frissített feladat-útmutatókat a Microsoft Dynamics 365 for Operations szolgáltatáshoz. Nincs új Első lépések könyvtár.
+description: Ez a cikk felsorolja azokat az új vagy frissített feladat-segédeket, amelyek kiadták a Microsoftnak (2016. december - minden nyelv) AZ APQC egységes tárat Microsoft Dynamics 365 for Operations. Nincs új Első lépések könyvtár.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 42bf8e4a1264b67ff11dad7417d16b6273e6feb36294596014faf562a4a0ef3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b111b686bc7fd06508878261e959a8dad92aacc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855549"
 ---
 # <a name="new-or-updated-task-guides-december-2017"></a>Új vagy frissített feladat-útmutatók (2017. december)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör felsorolja a Microsoft (2016 december - minden nyelv) APQC Egyesített könyvtárhoz kiadott új vagy frissített feladat-útmutatókat a Microsoft Dynamics 365 for Operations szolgáltatáshoz.
+Ez a cikk felsorolja azokat az új vagy frissített feladat-segédeket, amelyek kiadták a Microsoftnak (2016. december - minden nyelv) AZ APQC egységes tárat Microsoft Dynamics 365 for Operations.
 
 ## <a name="new-task-guides"></a>Új feladat-útmutatók
 

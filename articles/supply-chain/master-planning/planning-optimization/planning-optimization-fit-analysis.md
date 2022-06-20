@@ -1,6 +1,6 @@
 ---
-title: A tervezésoptimalizálása illeszkedési elemzése
-description: Ez a témakör azt mutatja be, hogyan lehet ellenőrizni az aktuális beállításokat és adatokat a Tervezésoptimalizálás funkció szolgáltatásaival szemben.
+title: A Tervezési optimalizálás igazítási elemzése
+description: Ez a cikk bemutatja, hogyan lehet a jelenlegi beállításokat és adatokat a tervezésoptimalizálási funkció lehetőségeihez ellenében ellenőrizni.
 author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: bf63069c5f18fe67c7d7f538311853d79c0f4fe8
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 644593f263ed6675615c34855ec511a29f63b242
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649157"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889577"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 

@@ -1,6 +1,6 @@
 ---
-title: Rugalmas raktárszintű dimenziófoglalási irányelv
-description: Ez a témakör azt mutatja be, hogy a készletfoglalási irányelv, amely lehetővé teszi, hogy a kötegelt nyomon követésű termékeket értékesítő és a logisztikát a WMS-kompatibilis műveletekekként futtató vállalatok lefoglaljanak bizonyos kötegeket ügyfelek értékesítési rendeléseihez, még akkor is, ha a foglalási hierarchia a termékekhez kapcsolódóan nem engedélyezi a meghatározott kötegek foglalását.
+title: Rugalmas raktárszintű dimenzió foglalási irányelv
+description: Ez a cikk leírja a készletfoglalási házirendet, amely lehetővé teszi, hogy a kötegben nyomon követéses termékeket értékesítő vállalkozások a WMS-t engedélyező műveletként futtatják a logisztikájukat, konkrét kötegeket foglaljanak le a vevői értékesítési rendelésekhez, még akkor is, ha a termékekhez rendelt foglalási hierarchia nem teszi lehetővé meghatározott kötegek lefoglalását.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: fb42d4ccd2d8797a34f6351caf7dedbc1e957fd5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474940"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885812"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenzió foglalási irányelv
 
@@ -28,7 +28,7 @@ Amikor egy *Köteg alatti\[hely\]* típusú készlet foglalási hierarchiája te
 
 Ugyanígy nem foglalható le specifikus azonosítótábla az értékesítési rendelésen szereplő termékekhez, amikor ezek a termékek az alapértelmezett foglalási hierarchiához vannak társítva.
 
-Ez a témakör bemutatja azt a készletfoglalási irányelvet, amely alapján a vállalatok meghatározott kötegeket vagy azonosítótáblákat foglalhatnak le, még akkor is, ha a termékek a *Köteg alatti\[hely\]* foglalási hierarchiával vannak társítva.
+Ez a témakör leírja a készletfoglalási házirendet, amely lehetővé teszi, hogy ezek a vállalatok konkrét kötegeket vagy licenctáblákat foglaljanak le még akkor is, ha a *\[\]* termékek köteg alatti helyfoglalási hierarchiához vannak társítva.
 
 ## <a name="inventory-reservation-hierarchy"></a>Készletfoglalási hierarchia
 

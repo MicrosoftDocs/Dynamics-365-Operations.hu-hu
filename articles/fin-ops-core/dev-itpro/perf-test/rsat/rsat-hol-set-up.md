@@ -1,6 +1,6 @@
 ---
 title: A Regression Suite Automation Tool beállítása és telepítése oktatóanyag
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani és telepíteni a Regression Suite Automation Tool (RSAT) szolgáltatást.
+description: Ez a cikk egy oktatóanyag, amely bemutatja, hogyan lehet beállítani és telepíteni a Regression Suite automatizálási eszközt (RSAT).
 author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ec4ae765aaac038e6c7eff11403fb21ebd27fc2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781991"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858590"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>A Regression Suite Automation Tool beállítása és telepítése oktatóanyag
 
-Ez a témakör egy olyan oktatóanyag, amely segítséget nyújt a beállítások végrehajtásában, és az RSAT-tal, valamint a RSAT használatával kapcsolatos eszközökkel való megismerkedésben.
+Ez a cikk egy olyan oktatóanyag, amely segítséget nyújt a beállításhoz és az RSAT használatához, valamint az RSAT használatához használt eszközökhez.
 
 [!include [banner](../../includes/banner.md)]
 
@@ -42,7 +42,7 @@ Ez a témakör egy olyan oktatóanyag, amely segítséget nyújt a beállításo
 
 - Az oktatóanyaghoz olyan környezet szükséges, amely a Microsoft Dynamics 365 for Finance and Operations 10.0-s (2019. áprilisi) vagy újabb verzióját futtatja. A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 szolgáltatást használó ügyfelek számára a Platform update 20 (PU 20) vagy újabb verzió is támogatott.
 - A felhasználónak rendszergazdai jogosultsággal kell rendelkeznie a környezethez.
-- Rendelkeznie kell hozzáféréssel az ügyfél bérlői LCS-éhez és Azure DevOps szolgáltatásához (korábban Microsoft Visual Studio Team Services \[ VSTS\] néven volt ismert).
+- Rendelkeznie kell hozzáféréssel az ügyfél bérlői LCS-éhez és Azure DevOps szolgáltatásához (korábban Microsoft Visual Studio Team Services \[VSTS\] néven volt ismert).
 - A tesztek létrehozásához és kezeléséhez a felhasználónak Azure DevOps Test Plans- vagy Test Manager-licenccel kell rendelkeznie. A következő licencekkel szintén hozzáférést nyerhet a Test Plans felületéhez:
     - Visual Studio Enterprise-licenc
     - Visual Studio Test Professional-licenc
@@ -111,7 +111,7 @@ Ebben az oktatóanyagban az LCS Üzletifolyamat-modellező (BPM) szolgáltatáss
 
 ## <a name="configure-the-lcs-project"></a>LCS-projekt konfigurálása
 
-A tesztek alaptárához szüksége van egy Lifecycle Services (LCS) projektre. Az LCS Üzletifolyamat-modellező (BPM) használatos alaptárként a tesztesetekhez. A BPM a teszttáraknak az LCS-projektekben történő kezelésére és terjesztésére szolgál. Például egy Microsoft partner vagy független szoftvergyártó (ISV) teszttárakat épít, azzal BPM-tárak formájában adja ki a teszteseteket. A BPM esetében a teszteseteket az üzleti folyamatok szerint szervezik. A BPM nem határozza meg a végrehajtási sorrendet vagy a sikeres tesztek gyakoriságát. Ezeket a részleteket az Azure DevOps szolgáltatásban kezelheti, ahogy a témakör későbbi részében le van írva.  
+A tesztek alaptárához szüksége van egy Lifecycle Services (LCS) projektre. Az LCS Üzletifolyamat-modellező (BPM) használatos alaptárként a tesztesetekhez. A BPM a teszttáraknak az LCS-projektekben történő kezelésére és terjesztésére szolgál. Például egy Microsoft partner vagy független szoftvergyártó (ISV) teszttárakat épít, azzal BPM-tárak formájában adja ki a teszteseteket. A BPM esetében a teszteseteket az üzleti folyamatok szerint szervezik. A BPM nem határozza meg a végrehajtási sorrendet vagy a sikeres tesztek gyakoriságát. Ezeket az adatokat a jelen cikk későbbi Azure DevOps leírásában leírtak szerint lehet kezelni.  
 
 A LCS-projekthez meglévő ügyfélvégrehajtás vagy Partner projekt használható.
 
@@ -386,7 +386,7 @@ Ha engedélyezni szeretné a hitelesítést, akkor ugyanazon a számítógépen 
 
     ![AOSService a webhelyek listáján.](./media/setup_rsa_tool_49.png)
 
-3. Kattintson a jobb gombbal a **Felfedezés** gombra a **\<Drive\>: \\ AosService\\ WebRoot** mappa megnyitásához. Keresse meg a **wif.config** fájlját.
+3. Kattintson a jobb gombbal a **Felfedezés** gombra a **\<Drive\>: \\AosService\\WebRoot** mappa megnyitásához. Keresse meg a **wif.config** fájlját.
 
     ![Wif.config fájl a WebRoot mappában.](./media/setup_rsa_tool_50.png)
 
@@ -501,7 +501,7 @@ Az RSAT régebbi verzióiban telepíteni kellett a Seleniumot és a böngésző-
     - **Projekt neve** – válassza ki a Azure DevOps-projekt nevét.
     - **Tesztelési terv** – válassza ki azt a Azure DevOps-tesztelési tervet, amely a teszt eseteit tartalmazza. A további tudnivalókat lásd: [Tesztelési tervek és tesztcsomagok létrehozása](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). Miután kiválasztotta a tesztelési tervet, válassza a **Kapcsolat ellenőrzése** lehetőséget, és tesztelje a kapcsolatot az Azure DevOps rendszerhez.
     - **Állomásnév** – adja meg a tesztkörnyezet állomásnevét, például **\<myaos\>.cloudax.dynamics.com**. Ne szerepeljen a **https://** vagy **http://** előtag.
-    - **SOAP állomásnév** – adja meg a tesztkörnyezet SOAP-állomásnevét. A SOAP-állomásnév általában ugyanaz, mint az állomásnév, de van **soap** -utótagja. Itt egy példa: **\<myaos\> soap.cloudax.dynamics.com**. Ne szerepeljen a **https://** vagy **http://** előtag.
+    - **SOAP állomásnév** – adja meg a tesztkörnyezet SOAP-állomásnevét. A SOAP-állomásnév általában ugyanaz, mint az állomásnév, de van **soap** -utótagja. Itt egy példa: **\<myaos\>soap.cloudax.dynamics.com**. Ne szerepeljen a **https://** vagy **http://** előtag.
 
         > [!NOTE]
         > Az állomásnév és a SOAP-állomás nevének megkereséséhez nyissa meg az IIS-kezelőt, kattintson a jobb gombbal a **Webhelyek \> AOSService** elemre, majd válassza a **Kötések szerkesztése** parancsot. Az **állomásnév** oszlopban szereplő értékek adják meg az állomásnevet és a SOAP-állomásnevet (a SOAP-állomásnév URL-címében **SOAP**-utótagnak kell lennie).
@@ -510,7 +510,7 @@ Az RSAT régebbi verzióiban telepíteni kellett a Seleniumot és a böngésző-
 
     - **Rendszergazda felhasználóneve** – Adja meg a rendszergazda felhasználó e-mail-címét a tesztkörnyezetben.
     - **Ujjlenyomat** – adja meg a hitelesítési tanúsítvány ujjlenyomatát az oktatóanyagban korábban leírt módon.
-    - **Munkakönyvtár** – adja meg a mappa helyét a tesztautomatizálás fájljainak (például az Excel tesztadatfájlok) tárolásához. Például írja be vagy válassza ki **C:\\ Temp\\ RegressionTool** mappát.
+    - **Munkakönyvtár** – adja meg a mappa helyét a tesztautomatizálás fájljainak (például az Excel tesztadatfájlok) tárolásához. Például írja be vagy válassza ki **C:\\Temp\\RegressionTool** mappát.
 
         > [!NOTE]
         > Ha a mappa neve szóközöket tartalmaz, akkor a végrehajtás sikertelen lesz, mert a mappa nem található. Ez a probléma ismert probléma, és kijavítjuk az eszköz egy későbbi verziójában.
@@ -538,7 +538,7 @@ Az RSAT régebbi verzióiban telepíteni kellett a Seleniumot és a böngésző-
 
     ![Tesztvégrehajtás és paraméterfájlok létrehozása parancs az Új menüben.](./media/setup_rsa_tool_65.png)
 
-    A program az Excel-paraméterfájlt a RSAT-konfigurációban megadott helyi mappában hozza létre (például **C:\\ Temp\\ RegressionTool**).
+    A program az Excel-paraméterfájlt a RSAT-konfigurációban megadott helyi mappában hozza létre (például **C:\\Temp\\RegressionTool**).
 
     ![Excel-paraméterfájl létrehozva.](./media/setup_rsa_tool_66.png)
 
@@ -569,7 +569,7 @@ Az RSAT régebbi verzióiban telepíteni kellett a Seleniumot és a böngésző-
     ![Figyelmeztető üzenet a Chrome böngészőhöz.](./media/setup_rsa_tool_70.png)
 
     > [!NOTE]
-    > Ha a Chrome böngészőt használja, és egy hibaüzenet jelenik meg, amely azt jelzi, hogy a munkamenet nem lett létrehozva, mert a Chrome-verzió nem megfelelő, töltse le a legfrissebb Chrome-illesztőprogramot a <http://chromedriver.chromium.org/downloads> oldalról a **C:\\ Program Files (x86)\\Regression Suite Automation Tool\\ Common\\ External\\ Selenium** mappába.
+    > Ha a Chrome böngészőt használja, és egy hibaüzenet jelenik meg, amely azt jelzi, hogy a munkamenet nem lett létrehozva, mert a Chrome-verzió nem megfelelő, töltse le a legfrissebb Chrome-illesztőprogramot a <http://chromedriver.chromium.org/downloads> oldalról a **C:\\Program Files (x86)\\Regression Suite Automation Tool\\Common\\External\\Selenium** mappába.
 
     ![Hibaüzenet a Chrome böngészőhöz.](./media/setup_rsa_tool_71.png)
 
@@ -614,7 +614,7 @@ Az RSAT régebbi verzióiban telepíteni kellett a Seleniumot és a böngésző-
     ![Részletes hibaüzenet.](./media/setup_rsa_tool_79.png)
 
     > [!NOTE]
-    > Minden hibaüzenet helyileg is elérhető itt: **C:\\ Users\\\$ YourUserName\\ AppData\\ Roaming\\ regressionTool\\ errormsg-.txt**.
+    > Minden hibaüzenet helyileg is elérhető itt: **C:\\Users\\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg-.txt**.
 
 7. A tesztfutás eredményeit a tesztelési terv szintjéről is exportálhatja az **Export** paranccsal.
 
@@ -712,7 +712,7 @@ Ebben a szakaszban egy mentett változót fog létrehozni az első tesztesethez,
     > [!NOTE]
     > Ha az Excel-paraméterfájl nyitva maradt, az újbóli létrehozás nem fog sikerülni. Győződjön meg róla, hogy a tesztesethez tartozó Excel-paraméterfájl be van zárva, mielőtt létrehozza az új Excel-paraméterfájlt.
 
-16. Az új Excel-paraméterfájl megnyitásához válassza a **Szerkesztés** parancsot. Egy új, **mentett változó** nevű bejegyzést fog látni a 9. sorban. Ez a változó, az **{{ EcoResProductCreate\_ Identification\_ ProductNumber\_ Copy}}** a feladatrögzítés XML-fájljába lett mentve, és az egymást követő teszteknél használható.
+16. Az új Excel-paraméterfájl megnyitásához válassza a **Szerkesztés** parancsot. Egy új, **mentett változó** nevű bejegyzést fog látni a 9. sorban. Ez a változó, az **{{EcoResProductCreate\_Identification\_ProductNumber\_Copy}}** a feladatrögzítés XML-fájljába lett mentve, és az egymást követő teszteknél használható.
 
     ![Mentett változó bejegyzése.](./media/setup_rsa_tool_94.png)
 
@@ -785,7 +785,7 @@ Ebben a szakaszban egy mentett változót fog létrehozni az első tesztesethez,
 #### <a name="edit-the-excel-parameter-file"></a>Excel-paraméterfájl szerkesztése
 
 1. Válassza ki csak a második tesztesetet, majd a **Szerkesztés** parancsot a kapcsolódó Excel-paraméterfájl megnyitásához.
-2. Másolja az **{{ EcoResProductCreate\_ Identification\_ ProductNumber\_ Copy}}** mentett változót (lásd: [Meglévő feladatrögzítés módosítása mentett változó létrehozásához](#modify-an-existing-task-recording-to-create-a-saved-variable) szakaszt) az első tesztesetből a termékszámot használó összes mezőbe. Ebben az esetben a változót a **Termékszám** és **Termékszám ellenőrzése** mezőkbe másolja az **EcoResProductListPage** munkafüzetben.
+2. Másolja az **{{EcoResProductCreate\_Identification\_ProductNumber\_Copy}}** mentett változót (lásd: [Meglévő feladatrögzítés módosítása mentett változó létrehozásához](#modify-an-existing-task-recording-to-create-a-saved-variable) szakaszt) az első tesztesetből a termékszámot használó összes mezőbe. Ebben az esetben a változót a **Termékszám** és **Termékszám ellenőrzése** mezőkbe másolja az **EcoResProductListPage** munkafüzetben.
 
     ![Termékszám és Termékszám ellenőrzése mezők.](./media/setup_rsa_tool_104.png)
 

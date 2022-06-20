@@ -1,6 +1,6 @@
 ---
 title: Áru minőségének ellenőrzése
-description: Ez a témakör a minőségi rendelések feldolgozását írja le.
+description: Ez a témakör a minőségi rendelések feldolgozását ismerteti.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -14,20 +14,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575848"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857576"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Áru minőségének ellenőrzése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a minőségi rendelések feldolgozását írja le. A minőségvizsgálatokat általában minőségadminisztrátorok végzik.
+Ez a témakör a minőségi rendelések feldolgozását ismerteti. A minőségvizsgálatokat általában minőségadminisztrátorok végzik.
 
-Ha telepítve vannak a szabványos bemutatóadatok, akkor az ebben a témakörben található eljárásokat lehet használni. A bemutatóadatok használatához az *USMF* jogi személyt is ki kell választani a kezdés előtt. Ezt követően meg kell erősítenie a *000016-os* beszerzési rendelést, és fel kell adnia egy terméknyugtát. A minőségi rendelések automatikusan létre vannak hozva.
+Ha telepítve vannak a szabványos bemutatóadatok, akkor az ebben a cikkben olvasható eljárásokat lehet használni. A bemutatóadatok használatához az *USMF* jogi személyt is ki kell választani a kezdés előtt. Ezt követően meg kell erősítenie a *000016-os* beszerzési rendelést, és fel kell adnia egy terméknyugtát. A minőségi rendelések automatikusan létre vannak hozva.
 
 ## <a name="step-1-select-a-quality-order"></a>1. lépés: Minőségi rendelés kiválasztása
 

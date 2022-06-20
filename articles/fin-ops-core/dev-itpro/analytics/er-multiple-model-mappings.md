@@ -1,6 +1,6 @@
 ---
 title: Egyetlen modellgyökérhez tartozó több származtatott leképezés kezelése
-description: Ez a témakör bemutatja, hogyan lehet kezelni az egy modellgyökérhez konfigurált több származtatott leképezést.
+description: Ez a cikk bemutatja, hogyan lehet kezelni az egy modell gyökéréhez konfigurált több származtatott leképezést.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324112"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892479"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Egyetlen modellgyökérhez tartozó több származtatott leképezés kezelése
 
@@ -26,15 +26,15 @@ ms.locfileid: "8324112"
 
 Az [elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) adatmodell-component minden konfigurált ER-formátumösszetevő használja adatforrásként a kimenő dokumentumok előállításához. Ha egyetlen üzleti tartományt kell leírni, konfigurálnia kell egy olyan adatmodell-összetevőt, amely számos gyökérdefiníciót tartalmaz. 
 
-Minden gyökérdefiníció segít az adott tartomány adatait az adott jelentési céloknak leginkább megfelelő módon ábrázolni. Minden gyökérdefinícióhoz konfigurálhat egy ER modellleképezési összetevőt az adatmodell Microsoft-specifikus Dynamics 365 Finance implementációjaként. Ily módon leírható, hogyan lesz kitöltve az adatmodell futásidőben.
+Minden gyökérdefiníció segít az adott tartomány adatait az adott jelentési céloknak leginkább megfelelő módon ábrázolni. Minden gyökérdefinícióhoz konfigurálhat egy ER-modellleképezési összetevőt az Microsoft Dynamics adatmodell 365-ös pénzügyi megvalósításaként. Ily módon leírható, hogyan lesz kitöltve az adatmodell futásidőben.
 
 Az ER modell-leképezés összetevői az ER-adatmodell [konfigurációiban](general-electronic-reporting.md#Configuration) és az ER-modell hozzárendelési konfigurációiban találhatók. Egyetlen ER-konfiguráció több leképezési összetevőt tartalmazhat, amelyek mindegyike egyetlen gyökérdefinícióhoz van beállítva. Alternatív megoldásként egyetlen ER-konfiguráció csak egy olyan leképezési összetevőt tartalmazhat, amely egyetlen gyökérdefinícióhoz van beállítva.
 
 Számos konfigurációszolgáltató kínálhat ER-modell-leképezési konfigurációkat ugyanahhoz az ER-adatmodellhez. Ezek a modell-leképezési konfigurációk tartalmazhatnak eltérő gyökérdefiníciókhoz tartozó leképezési összetevőket. Egy modell-leképezést használhat az egyik gyökérdefinícióhoz, amelyet az egyik [szolgáltató](general-electronic-reporting.md#Provider) kínál, és a másik gyökérdefinícióhoz használhat egy másik szolgáltató által kínált modell-leképezést.
 
-A jelen témakörben található eljárások bemutatják, hogyan kezelheti egy ER-adatmodell több ER-modell-leképezési konfigurációját, amikor ugyanahhoz a gyökérdefinícióhoz konfigurált, különböző modell-leképezéseket tartalmaznak. 
+Az ebben a cikkben található eljárásokkal lehet kezelni az ER-adatmodellek több ER-modell-hozzárendelési konfigurációját, amikor az ugyanannak a gyökérdefiníciónak megfelelően konfigurált különböző modellleképezési összetevőket tartalmaznak. 
 
-A témakör eljárásainak végrehajtásához a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel kell rendelkeznie.
+A ebben a cikkben olvasható folyamatok befejezéséhez a Rendszergazdához vagy az Elektronikus jelentéskészítő fejlesztői szerepkörhöz kell rendelni.
 
 A USMF vállalatban valamennyi következő eljárást végrehajthatja. Nincs szükség kódolásra.
 

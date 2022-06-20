@@ -1,6 +1,6 @@
 ---
 title: Receptúrák és receptúra-összetevők változásainak kezelése
-description: Ez a témakör azt ismerteti, hogyan kezelhetők a receptúrák és a folyamatszerű gyártás alapadatainak változásai.
+description: Ez a témakör azt ismerteti, hogyan kell a receptúrakezelést és kezelni a folyamatgyártási alapadatok változásait.
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8105ebc7f3698a6baaa04b6548dac18a7bf81a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103039"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904072"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Receptúrák és receptúra-összetevők változásainak kezelése
 
@@ -29,7 +29,7 @@ Ha a folyamatszerű gyártáshoz a Microsoft Dynamics 365 Supply Chain Managemen
 
 ## <a name="turn-this-feature-on-or-off"></a>A funkció be- és kikapcsolása
 
-Az ebben a *témakörben* *leírt* funkciók megkövetelik, hogy a képletek és összetevők változásainak kezelése is bekapcsolva legyen a rendszerben. A szolgáltatások be- és kikapcsolásáról a Géptervezési változáskezelés áttekintése című témakörben [olvashat](product-engineering-overview.md).
+Az ebben a cikkben *leírt* *funkciók* megkövetelik, hogy a képletek és összetevők változásainak kezelése is bekapcsolva legyen a rendszerben. A funkciók be- és kikapcsolása a [Műszaki változáskezelés témakörében található](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Funkcióelnevezési konvenciók
 
@@ -46,7 +46,7 @@ Az alábbi listában összefoglaltuk, hogyan érintik a tervezési változáskez
 - **Készenléti ellenőrzés** – a rendszerellenőrzések és a felhasználói útmutatások (kérdőívek és ellenőrzőlisták) használatával gondoskodhat arról, hogy az összes szükséges termékadat teljes mértékben meg legyen adva a termék kiadása előtt. További információ: [Termékkészenlét](product-readiness.md).
 - **Továbbfejlesztett termék-kiadási funkció** – a termék teljes körűen definiált verzióinak és a termék receptúráinak kiadása egy szervezettől (jogi személytől) más jogi személyeknek. Azt is eldöntheti, hogy a termék adatait ellenőrizni kell-e vagy szerkeszteni kell-e a kiadás előtt. További információért lásd: [Termékstruktúrák kiadása](release-product-structure.md)
 
-Ne feledje, hogy az előző listában hivatkozott témakörök nagy része olyan példákat tartalmaz, amelyek anyagjegyzéken alapulnak. A receptúrák ugyanakkor hasonló módon működnek. Az alábbi néhány további fogalom jól használható annak megállapításához, hogy mikor érdemes változáskezelést (vagy csak receptúraváltozás-kezelést) használni a receptúrák és az anyagjegyzékek kezeléséhez:
+Ne feledje, hogy az előző listában hivatkozott legtöbb cikk példákkal szolgál, amelyek anyagjegyzéken (AJ) alapulnak. A receptúrák ugyanakkor hasonló módon működnek. Az alábbi néhány további fogalom jól használható annak megállapításához, hogy mikor érdemes változáskezelést (vagy csak receptúraváltozás-kezelést) használni a receptúrák és az anyagjegyzékek kezeléséhez:
 
 - Minden [terméktervezési kategóriához](engineering-versions-product-category.md) megadható a termelés típusa (anyagjegyzék, receptúra vagy tervezési cikk). Megadhatja azt is, hogy szükséges-e a tényleges súly támogatása a kategóriát használt termékek esetében.
 - A társtermékek és a melléktermékek nem tervezési termékek. Ennek megfelelően nincs verziószámuk. Ha módosítania kell őket, hozzon létre új terméket. Ezzel a módszerrel egyszerűbb a karbantartás.

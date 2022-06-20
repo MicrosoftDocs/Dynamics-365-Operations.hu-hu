@@ -1,6 +1,6 @@
 ---
 title: Eszköztípusok
-description: Ez a témakör bemutatja, hogyan lehet eszköztípusokat létrehozni az Eszközkezelés modulban. Leírja az eszköztípusokhoz kapcsolódó elemeket is.
+description: Ez a cikk bemutatja, hogyan lehet eszköztípusokat létrehozni az Eszközkezelésben. Leírja az eszköztípusokhoz kapcsolódó elemeket is.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3a51fdb55e9158e88e89549e3d0049e699c233e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730371"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887631"
 ---
 # <a name="asset-types"></a>Eszköztípusok
 
@@ -28,7 +28,7 @@ ms.locfileid: "6730371"
 
 
 
-Ez a témakör az eszköztípusok létrehozásának lépéseit mutatja be. Leírja az eszköztípusokhoz kapcsolódó elemeket is. Az eszköztípusokat az eszközök általános kategóriaként használják. Ilyenek például a CNC-gépek, mérőműszerek és teherautó-motorok. Az eszköztípusok a karbantartási feladattípusok (karbantartási feladatok), az eszközök életciklus-állapotainak, számláóknak, az eszközmérések, az eszközattribútumok, az állapotértékelési sablonok és az eszközhöz választható eszközmodellek kezelésére szolgálnak. Az eszköz létrehozásakor meg kell adnia az eszköz típusát.
+Ez a cikk bemutatja az eszköztípusok létrehozásához szükséges eszközöket. Leírja az eszköztípusokhoz kapcsolódó elemeket is. Az eszköztípusokat az eszközök általános kategóriaként használják. Ilyenek például a CNC-gépek, mérőműszerek és teherautó-motorok. Az eszköztípusok a karbantartási feladattípusok (karbantartási feladatok), az eszközök életciklus-állapotainak, számláóknak, az eszközmérések, az eszközattribútumok, az állapotértékelési sablonok és az eszközhöz választható eszközmodellek kezelésére szolgálnak. Az eszköz létrehozásakor meg kell adnia az eszköz típusát.
 
 Minden eszköztípushoz az eszköztípus-beállítások különböző változatait lehet létrehozni. Például a **Teherautók** nevű eszköztípushoz létre lehet hozni különböző eszköztípus-változatokat a különböző eszközgyártókhoz és eszközmodellekhez. Az egyes eszköztípus-beállításokhoz hozzáadhatja a szükséges pótalkaltrészeket és karbantartási terveket.
 

@@ -1,6 +1,6 @@
 ---
 title: ER – Szükséges konfigurációk létrehozása adatok importálásához egy külső fájlból
-description: Ez a témakör bemutatja, hogyan lehet az elektronikus jelentési konfigurációt úgy megtervezni, hogy külső fájlból importáljon adatokat a Microsoft Dynamics 365 Finance alkalmazásába.
+description: Ez a témakör azt ismerteti, hogyan Microsoft Dynamics lehet elektronikus jelentési konfigurációkat tervezni, amelyek egy külső fájlból importálják az adatokat a 365 Pénzügy alkalmazásba.
 author: NickSelin
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa1dc55e8cdee7d61e5ababe92e8a9234788664f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865893"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER – Szükséges konfigurációk létrehozása adatok importálásához egy külső fájlból
 
@@ -241,7 +241,7 @@ Hajtsa végre ezt a formátumleképezést tesztelési célokra. Használja a kor
 19. Zárja be a lapot.
 20. Kattintson a Szerkesztés lehetőségre.
 
-    Ha telepítette a következő gyorsjavítást: „KB 4012871 GER-modell-leképezések támogatása elkülönített konfigurációkban különböző típusú előfeltételek megadásának képességével a telepítésükhöz a Dynamics 365 Finance különböző verzióiban” ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), hajtsa végre a következő lépést: „Alapértelmezett modell-leképezéshez jelző bekapcsolása” a megadott formátumkonfigurációhoz. Ellenkező esetben hagyja ki a következő lépést.  
+    Ha telepítette a "KB 4012871 GER modellleképezések támogatása különálló konfigurációkban, és lehetővé teszi a különböző előfeltételek megadását a Dynamics 365 Pénzügy" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) különböző verzióira való telepítéshez, hajtsa végre a következő lépést a megadott formátumkonfiguráció "Az Alapértelmezett modellleképezés jelzője" beállításának bekapcsolása. Ellenkező esetben hagyja ki a következő lépést.  
 
 21. Válassza az Igen lehetőséget a Modell-leképezés alapértelmezett értéke mezőben.
 22. A fastruktúrában válassza ki ezt: „1099 fizetések modellje”.

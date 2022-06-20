@@ -1,6 +1,6 @@
 ---
 title: Felkészülés a gyártott cikkek elszámolóárának karbantartására
-description: Ez a téma leírja a gyártott cikkek költségeinek karbantartásának előkészítésére irányuló lépéseket.
+description: Ez a témakör a gyártott cikkek költségeinek karbantartására való felkészülés lépéseit ismerteti.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d42f61bcd44e89f0563c8f7450a1cdd6fd0e3ce
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 423da8022faf8066c5aa524c49c5071d0871de04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679135"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886015"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Felkészülés a gyártott cikkek elszámolóárának karbantartására
 
 [!include [banner](../includes/banner.md)]
 
-Ez a téma leírja a gyártott cikkek költségeinek karbantartásának előkészítésére irányuló lépéseket. A gyártott cikkek lépései kissé eltérnek a megvásárolt cikkek lépéseitől.
+Ez a témakör a gyártott cikkek költségeinek karbantartására való felkészülés lépéseit ismerteti. A gyártott cikkek lépései kissé eltérnek a megvásárolt cikkek lépéseitől.
 
 A termékekhez hozzárendelt szabályok kihatással lehetnek a költségszámításokra a szülő gyártott termékek felé. Felkészüléshez a gyártott cikkek költségeinek karbantartására kövesse e lépéseket.
 
@@ -63,7 +63,7 @@ A termékekhez hozzárendelt szabályok kihatással lehetnek a költségszámít
 
 Ha útvonaladatokat kíván használni a költségképzési célokra, az további előkészületi lépéseket igényel. Például az útvonalműveletekhez rendelt költségkategóriáknak pontosaknak és hiánytalanoknak kell lenniük.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [A legyártott cikkek állandó költségeinek amortizálása](amortize-constant-costs-manufactured-item.md)
 

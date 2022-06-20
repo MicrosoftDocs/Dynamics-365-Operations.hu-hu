@@ -1,6 +1,6 @@
 ---
 title: Készletkorosítási jelentés – példák és logika
-description: Ez a témakör néhány példát mutat be, amelyek a készletkorosítási jelentés eredményeinek értelmezését mutatják be.
+description: Ez a cikk néhány olyan példát mutat be, amelyek bemutatják, hogyan kell értelmezni a készletkorosítási jelentések eredményeit.
 author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4cfffa49f802c601da391617b123134c435fba92
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40066431ddfb9644c059025eac55d1b36789882e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848020"
 ---
 # <a name="inventory-aging-report-examples-and-logic"></a>Készletkorosítási jelentés – példák és logika
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör néhány példát mutat be, amelyek a **Készletkorosítási** jelentés eredményeinek értelmezését mutatják be. Ez a jelentés egy kiválasztott cikk vagy cikkcsoport aktuális mennyiségét és készletérték-adatait több időszakra bontja szét. Ez a témakör a jelentés belső logikáját is bemutatja.
+Ez a cikk néhány olyan példát mutat be, amelyek bemutatják, hogyan kell értelmezni a **készletkorosítási jelentések** eredményeit. Ez a jelentés egy kiválasztott cikk vagy cikkcsoport aktuális mennyiségét és készletérték-adatait több időszakra bontja szét. Ez a cikk a jelentés belső logikáját is mutatja.
 
-Az ebben a témakörben szereplő példák a standard **Készlet-korosítási** jelentés eredményeinek megjelenítését mutatják be. Általánosságban azonban azt ajánljuk, hogy a jelentés [Készletkorosítási jelentés tárhely](inventory-aging-report-storage.md) változatát használja, különösen, ha sok cikket és raktárat kell feldolgozni. A készlet-korosítási jelentés tárolója menti a létrehozott jelentéseket, az eredményeket interaktív lapként és diagramként jeleníti meg, valamint minden elmentett jelentés exportálását is lehetővé teszi.
+Az ebben a példában található példák a **normál készletkorosítási jelentéseken megjelenő eredményeket mutatják**. Általánosságban azonban azt ajánljuk, hogy a jelentés [Készletkorosítási jelentés tárhely](inventory-aging-report-storage.md) változatát használja, különösen, ha sok cikket és raktárat kell feldolgozni. A készlet-korosítási jelentés tárolója menti a létrehozott jelentéseket, az eredményeket interaktív lapként és diagramként jeleníti meg, valamint minden elmentett jelentés exportálását is lehetővé teszi.
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>A példákban használt mintaadatok
 
-Az ebben a témakörben szereplő példák az ebben a szakaszban ismertetett minta tranzakciós adatokon alapulnak.
+Az ebben a részben ismertetett példák a készlettranzakció-mintaadatokon alapulnak.
 
 ### <a name="storage-dimension-setup"></a>Tárolásidimenzió beállítása
 

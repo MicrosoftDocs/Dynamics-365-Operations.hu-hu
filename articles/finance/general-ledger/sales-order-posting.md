@@ -1,6 +1,6 @@
 ---
 title: Értékesítési rendelés feladása
-description: Ez a témakör a készletfeladási profil lap Értékesítési rendelés lapján található tájékoztatást tartalmaz.
+description: Ez a cikk a készletfeladási profil oldalának Értékesítési rendelés lapjára vonatkozó információkat tartalmaz.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventItemGroup
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 5d84723b51d6977867fa162c4a47befa61bd9ef6
-ms.sourcegitcommit: dc3053625dfe24aef64399dd1d002214e7f7619f
+ms.openlocfilehash: 5ea1c3c90b32d18243615e3ff283e1e818ac23b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886313"
 ---
 # <a name="sales-order-posting"></a>Értékesítési rendelés feladása
 
@@ -79,7 +79,7 @@ Az alábbi táblázat példákat mutat be az alapértelmezett feladási típusok
 | Kiszállított egységek költsége | 140100</br>140101 | Anyagkészlet</br>Nem számlázott leszállított anyagok | Eszközök | Jóváírás | Igen | P | Számlázott egységek költsége | Értékesítési rendelés csomagjegyzékének feladásakor használatos. A számla ellentétele az eladott áruk költsége, leszállított áruk. Az értékesítési rendelés számlájának feladott összege ebben a számlán sztornírozva lesz. Előfordulhat, hogy a leszállított, nem számlázott anyagok számláját szeretné a tényleges készletnek megfelelő összegként használni, és le szeretné foglalni az Anyag készletszámlát a pénzügyi frissítéshez. |
 | Eladott, kiszállított áruk beszerzési értéke | 500150 | Elhalasztott ELÁBÉ | Költség | Terhelés | Igen | P  | Értékesítési rendelés csomagjegyzékének feladásakor használatos. A számla ellenszámlája a szállított egységek költsége. Az értékesítési rendelés számlájának feladott összege ebben a számlán sztornírozva lesz. |
 | Számlázott egységek költsége | 140100 | Anyagkészlet | Eszközök | Jóváírás | Nem | P | Kiszállított egységek költsége | Értékesítési rendelés számlájának feladott dátumakor használatos. A számla ellenszámlája a számlázott eladott áruk költsége. Ez a számla jelenti a készletet a mérlegben. |
-| Eladott áruk számlázott beszerzési értéke | 500100 | ELÁBÉ-anyagok | Költség | Terhelés | Nem | P  | Értékesítési rendelés számlájának feladott dátumakor használatos. A számla ellenszámlája a számlázott egységek költsége. Ez a számla képviseli az ELÁBÉ-t az ön PL-kivonatán&amp;. |
+| Eladott áruk számlázott beszerzési értéke | 500100 | ELÁBÉ-anyagok | Költség | Terhelés | Nem | P  | Értékesítési rendelés számlájának feladott dátumakor használatos. A számla ellenszámlája a számlázott egységek költsége. Ez a számla képviseli az ELÁBÉ-t az ön KK kimutatásán&amp;. |
 | Bevétel (értékesítési rendelés bevétele*) | 400100 | Bevételi anyagok | Bevétel | Jóváírás | Nem | P   | Értékesítési rendelés számlájának feladott dátumakor használatos. Ennek a számlának az ellenszámlája a **Kinnlevőségek feladási profil** összesített számlája (vevői egyenleg*). |
 | Jutalék (értékesítés, jutalék*) | 602150 | Jutalék költsége | Költség | Terhelés | Nem | P  | Akkor használatos, amikor a jutalék engedélyezve van és ki van számítva egy értékesítéshez, és fel van adva az értékesítési rendelés számlázási folyamata során. Ennek a számlának az ellenszámlája a Kötelezettség Jutalék. |
 | Jutalék-ellenszámla (értékesítés, jutalék-ellenszámla*) | 201110 | Fizetendő jutalékok | Kötelezettség | Jóváírás | Igen | P | Akkor használatos, amikor a jutalék engedélyezve van és ki van számítva egy értékesítéshez, és fel van adva az értékesítési rendelés számlázási folyamata során. Ennek a számlának az ellenszámlája a Jutalék költsége. |
@@ -87,7 +87,7 @@ Az alábbi táblázat példákat mutat be az alapértelmezett feladási típusok
 | Szállítás halasztott bevételének ellenszámlája (értékesítés - szállítólevél - bevétel ellenszámlája)* | 130400 | Kinnlevőségek - nem számlázott | Eszközök | Terhelés | Igen | P  | Akkor használja a rendszer, ha engedélyezve van a Szállítás halasztott bevétel, és akkor ad fel, amikor értékesítési rendelés csomagjegyzékét feldolgozja. Ennek a számlának az ellenszámlája a Szállítás halasztott bevétele. Az értékesítési rendelés számlájának feladott összegei automatikusan sztornírozódnak a számlán. |
 | Szállításkor halasztott áfa (értékesítés, szállítólevél - adó*) | 250500 | Halasztott áfa | Kötelezettség | Jóváírás | Igen | P  | Akkor használatos, ha a Szállítás halasztott bevétel engedélyezve van, és engedélyezve van a Tényleges áfa feladása beállítás. Az adóösszeg feladása az értékesítési rendelés csomagjegyzékének feldolgozásakor történik. |
 
-\* Az ebben a táblában zárójelben **látható értékek a Bizonylattranzakciók lapPosting típus** **mezőjében használt értéket képviselik**. A feladás típusát az **Általános** lap Bizonylattranzakciók **lapján** lehet **megtekinteni**.
+\* Az ebben a táblában **zárójelben** **megjelenő értékek a Bizonylattranzakciók lap Feladástípus mezőjében használt értéket képviselik.** A feladás típusát az **Általános** lap Bizonylattranzakciók **lapján** lehet **megtekinteni**.
 
 ## <a name="sales-category-posting"></a>Értékesítési kategória feladása
 

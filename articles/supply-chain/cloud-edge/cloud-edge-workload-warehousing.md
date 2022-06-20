@@ -1,6 +1,6 @@
 ---
-title: Raktárkezelési számítási feladatok felhőalapú és peremhálózati skálázási egységekhez
-description: Ez a témakör arról a szolgáltatásról nyújt tájékoztatást, amely lehetővé teszi a skálázási egységek számára a kiválasztott folyamatok futtatását a raktárkezelési számítási feladatából.
+title: Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
+description: Ez a cikk arról a funkcióról nyújt tájékoztatást, amely lehetővé teszi a mérlegegységek számára a kiválasztott folyamatok futtatását a raktárkezelési terhelésből.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f9839ad9a18eb543734c2ba43a56b568460a64c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384484"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893497"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Nem minden raktárkezelési üzleti funkció támogatott teljesen az olyan raktárak esetében, amelyek munkaterhelést futtatnak egy skálázási egységen. Ügyeljen arra, hogy csak azokat a folyamatokat használja, amelyeket ez a témakör kifejezetten támogatottként ír le.
+> Nem minden raktárkezelési üzleti funkció támogatott teljesen az olyan raktárak esetében, amelyek munkaterhelést futtatnak egy skálázási egységen. Mindenképpen csak azokat a folyamatokat használja, amelyek kifejezetten támogatottnak írják le ezt a cikket.
 
 ## <a name="warehouse-execution-on-scale-units"></a>Raktári végrehajtás skálázási egységeken
 
@@ -184,7 +184,7 @@ A mérlegegységek esetében jelenleg semmilyen más típusú forrásdokumentum-
 >
 > Néhány további lépés szükséges ahhoz, hogy a Raktárkezelés mobilalkalmazás egy felhővel vagy peremhálózati egységgel működjön. A további tudnivalókat lásd [a Raktárkezelés mobilalkalmazás konfigurálása a felhő- és szélskálaegységekhez](cloud-edge-workload-setup-warehouse-app.md).
 >
-> Amikor egy skálázási egységen számítási feladatot alkalmaz, akkor nem futtathat nem támogatott folyamatokat az adott raktár esetében a központban. A témakörben később található táblázatok a támogatott funkciókat dokumentálják.
+> Amikor egy skálázási egységen számítási feladatot alkalmaz, akkor nem futtathat nem támogatott folyamatokat az adott raktár esetében a központban. A cikk későbbi táblái a támogatott funkciókat dokumentálják.
 >
 > Kiválasztott raktári munkatípusokat a központon és a skálázási egységeken is létre lehet hozni, de csak a saját központ vagy skálázási egység (az adatokat létrehozó telepítés) tarthatja fenn.
 >

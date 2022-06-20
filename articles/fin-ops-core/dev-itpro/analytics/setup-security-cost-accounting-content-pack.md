@@ -1,6 +1,6 @@
 ---
-title: Biztonság beállítása a Power BI-tartalmú költségkönyvelés elemzéséhez
-description: Ez a témakör azt mutatja be, hogy miként alkalmazhatja a hozzáférésszintű biztonságot a Költségkönyvelésnél a sorszintű biztonságnál, a Microsoft Power BI szolgáltatásban.
+title: Biztonság beállítása a költségkönyvelés elemzéséhez – Power BI-tartalom
+description: Ez a cikk bemutatja, hogy hogyan terjesztheti tovább a költségkönyvelés hozzáférési szintű biztonságát a következő sorszintű biztonságra:Microsoft Power BI
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f519a38b381da0efc1e91ba0f2015780d086550c3e38810e6845a0fc07976767
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc4d72fb688733b9c1547346c520dd9d77a3b12f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883686"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Biztonság beállítása a költségkönyvelés elemzéséhez – Power BI-tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogy miként alkalmazhatja a hozzáférésszintű biztonságot a Költségkönyvelésnél a sorszintű biztonságnál, a Microsoft Power BI szolgáltatásban. Ez a funkció segít garantálni, hogy a felhasználók csak azokat a Power BI adatokat láthassák, amelyekhez hozzáférést kaptak.
+Ez a cikk bemutatja, hogy hogyan terjesztheti tovább a költségkönyvelés hozzáférési szintű biztonságát a következő sorszintű biztonságra:Microsoft Power BI Ez a funkció segít garantálni, hogy a felhasználók csak azokat a Power BI adatokat láthassák, amelyekhez hozzáférést kaptak.
 
 ## <a name="overview"></a>Áttekintés
 

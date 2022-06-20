@@ -1,6 +1,6 @@
 ---
 title: Adatok importálásának konfigurálása a SharePoint-rendszerből
-description: Ez a témakör ismerteti az adatok importálásának módját a Microsoft SharePoint rendszerből.
+description: Ez a cikk bemutatja, hogyan lehet adatokat importálni a Microsoftból SharePoint.
 author: NickSelin
 ms.date: 01/05/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 0163ece2f61735073567b32a45d3dc6df8be1864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074766"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864778"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Adatok importálásának konfigurálása a SharePoint-rendszerből
 
 [!include[banner](../includes/banner.md)]
 
-Ahhoz, hogy bejövő fájlból adatokat importálhasson az Elektronikus jelentéskészítési keretrendszer segítségével, konfigurálnia kell egy elektronikus jelentéskészítési formátumot, amely támogatja az importálást, majd futtatnia kell a **Célhoz** típus modell-leképezését, amely adatforrásként használja az adott formátumot. Az adatok importálásához meg kell keresnie az importálni kívánt fájlt. A bejövő fájlt a felhasználó manuálisan is kiválaszthatja. Az új elektronikus jelentéskészítési lehetőséggel, amely támogatja az adatok importálását a Microsoft SharePoint rendszerből, ez a folyamat felügyelet nélkül is konfigurálható. Az elektronikus jelentéskészítés konfigurációk segítségével végrehajthatja az adatok importálását a Microsoft SharePoint mappáiban tárolt fájlokból. Ez a témakör bemutatja, hogyan lehet végrehajtani az importálást a SharePoint megoldásból. A példákban a szállítói tranzakciók üzleti adatokként szerepelnek.
+Ahhoz, hogy bejövő fájlból adatokat importálhasson az Elektronikus jelentéskészítési keretrendszer segítségével, konfigurálnia kell egy elektronikus jelentéskészítési formátumot, amely támogatja az importálást, majd futtatnia kell a **Célhoz** típus modell-leképezését, amely adatforrásként használja az adott formátumot. Az adatok importálásához meg kell keresnie az importálni kívánt fájlt. A bejövő fájlt a felhasználó manuálisan is kiválaszthatja. Az új elektronikus jelentéskészítési lehetőséggel, amely támogatja az adatok importálását a Microsoft SharePoint rendszerből, ez a folyamat felügyelet nélkül is konfigurálható. Az elektronikus jelentéskészítés konfigurációk segítségével végrehajthatja az adatok importálását a Microsoft SharePoint mappáiban tárolt fájlokból. Ez a cikk bemutatja, hogyan lehet végrehajtani az importálást a következőből:SharePoint A példákban a szállítói tranzakciók üzleti adatokként szerepelnek.
 
 ## <a name="prerequisites"></a>Előfeltételek
-A jelen témakörben szereplő példák elvégzéséhez a következő hozzáférésekkel kell rendelkeznie:
+Az ebben a példában olvasható példák csak a következő hozzáféréssel egészek ki:
 
 - Hozzáférés a következő szerepkörök egyikéhez:
 
@@ -140,7 +140,7 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 
 4. A modell-leképezés [felügyelet nélkül](#limitations) futtatható kötegelt módban. Ebben az esetben minden alkalommal, amikor egy köteg futtatja az adott elektronikus jelentéskészítési formátumot, a rendszer egyetlen fájlt importál a beállított fájlforrásokból.
 
-    Ha egy fájl sikeresen importálva lett a SharePoint mappából, az törölve lesz a mappából, és átkerül a sikeresen importált fájlok mappájába vagy a figyelmeztetésekkel importált fájlok mappájába. Ellenkező esetben a rendszer áthelyezi a sikertelen fájlok mappájába, vagy ebben a mappában marad, ha a sikertelen fájlok mappája nincs beállítva. 
+    Ha egy fájl sikeresen importálva lett a SharePoint mappából, az törölve lesz a mappából, és átkerül a sikeresen importált fájlok mappájába vagy a figyelmeztetésekkel importált fájlok mappájába. Ellenkező esetben a hibás fájlok mappájába kerül, vagy ebben a mappában marad, ha nincs beállítva a sikertelen fájlok mappája. 
 
 5. Adja meg a bizonylatazonosítót, például **V-00001**, majd válassza az **OK** lehetőséget.
 
@@ -192,11 +192,11 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 
 ## <a name=""></a><a name="limitations">Korlátozások</a>
 
-verzióiban Dynamics 365 Finance A 10.0.25-ös verzió előtt az ER-keretrendszer felhasználói felülete (UI) nem kínál olyan új kötegelt feladat kezdeményezését, amely modellleképezést futtat az adatok importálásához felügyelet nélküli módban. Ehelyett új logikát kell kifejlesztenie, hogy a konfigurált ER-modell-leképezés meghívható legyen az alkalmazás felhasználói felületéről a bejövő fájlokból származó adatok importálásához. Ennek a logikának a kialakításához némi mérnöki munkára van szükség. 
+A Dynamics 365 Pénzügy 10.0.25-ös verzió előtti verzióiban az ER-keretrendszer felhasználói felülete nem teszi lehetővé új kötegelt feladat kezdeményezését, amely felügyelet nélküli módban futtatja az adatimportált adatok modell-leképezését. Ehelyett új logikát kell kialakíta, hogy a konfigurált ER modellleképezés hívható legyen az alkalmazás felhasználói felületről, és importálni tudja az adatokat a bejövő fájlokból. Ennek a logikának a kialakítása érdekében mérnöki munkára van szükség. 
 
-A vonatkozó ER API-val kapcsolatos további információkért tekintse meg a [Kód az adatimportáláshoz szükséges formátumleképezés futtatásához](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) szakasz be [Az ER-keretrendszer API változásai a 7.3-as alkalmazásfrissítéshez](er-apis-app73.md). Tekintse át a `BankImport_RU` modell `Application Suite` osztályának kódját , és tekintse meg, hogyan hajthatja végre az egyéni logikát. A`BankImport_RU` osztály kiterjeszti a`RunBaseBatch` osztály. Különösen tekintse át a`runER()` módszer, ahol a`ERIModelMappingDestinationRun` Az objektum egy ER-modell-leképezés futtatójaként jön létre.
+A megfelelő ER API-val [kapcsolatos további tudnivalókat lásd az Adatimportmal kapcsolatos szakasz formátumleképezésének futtatásához az](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import)[ER-keretrendszer API-módosításaiban az alkalmazás frissítése 7.3-as verzióban](er-apis-app73.md). Tekintse át a `BankImport_RU` modell `Application Suite` osztályának kódját , és tekintse meg, hogyan hajthatja végre az egyéni logikát. Az `BankImport_RU` osztály kiterjeszti az osztályt `RunBaseBatch`. Különösen a módszer áttekintése `runER()`, `ERIModelMappingDestinationRun` ahol az objektum az ER modellleképezés céljaként jön létre.
 
-A Finance 10.0.25-ös és újabb verzióiban az ER-keretrendszer felhasználói felülete lehetőséget kínál egy új kötegelt feladat kezdeményezésére, amely modellleképezést futtat az adatok importálásához felügyelet nélküli módban. A folyamattal kapcsolatos további információkért lásd: [Importáljon adatokat kötegelt módban a manuálisan kiválasztott fájlokból](er-configure-data-import-batch.md).
+A Pénzügy 10.0.25-ös és újabb verziókban az ER keretrendszer felhasználói felület lehetővé teszi egy új kötegelt feladat kezdeményezését, amely modell-hozzárendelést futtat az adatok importálására felügyelet nélküli módban. Ezzel a folyamattal kapcsolatos további [tudnivalókat lásd az Adatok importálása kötegelt módban a kiválasztott fájlokból](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 

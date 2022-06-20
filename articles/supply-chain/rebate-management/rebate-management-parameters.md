@@ -1,6 +1,6 @@
 ---
 title: Visszatérítés-kezelés paraméterei
-description: Ez a témakör a Visszatérítés-kezelési paraméterek oldalt ismerteti. Ez az oldal olyan beállításokat tartalmaz, amelyek befolyásolják a közzétételt, az állapotfrissítéseket, a számsorozatokat és egyéb viselkedéseket.
+description: Ez a cikk a Visszatérítések kezelése paraméterei lapot írja le. Ez az oldal olyan beállításokat tartalmaz, amelyek befolyásolják a közzétételt, az állapotfrissítéseket, a számsorozatokat és egyéb viselkedéseket.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8f5c9734b2480329eed246bcbbfe3bd6e9991e0b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 218c54d97f3ac204e8613f5efdda0cc9d713ee04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688991"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895525"
 ---
 # <a name="rebate-management-parameters"></a>Visszatérítés-kezelés paraméterei
 
@@ -45,11 +45,11 @@ A következő táblázat felsorolja azokat a mezőket, amelyek elérhetők a **V
 
 ## <a name="number-sequences-tab"></a>Számsorozatok lap
 
-A **Visszatérítés-kezelés paraméterei** oldal **Számsorozatok** lapján számsorozatkódokat rendelhet a visszatérítés-kezelés által használt különböző számsorozatokhoz. Az alábbi táblázat az egyes számsorozatok célját ismerteti. A számsorozatokról a [Számsorozatok áttekintése](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) és a kapcsolódó témakörökben olvashat bővebben.
+A **Visszatérítés-kezelés paraméterei** oldal **Számsorozatok** lapján számsorozatkódokat rendelhet a visszatérítés-kezelés által használt különböző számsorozatokhoz. Az alábbi táblázat az egyes számsorozatok célját ismerteti. A számsorozatokkal kapcsolatos további tudnivalókat lásd [a Számsorozatok](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) áttekintésben és a kapcsolódó cikkekben.
 
 | Hivatkozás | Leírás |
 |---|---|
-| Visszatérítés-kezelési ajánlat | A számsorozat minden visszatérítési ajánlathoz egyedi kulcsértéket rendel. Ez a kulcs az ajánlatok létrehozásakor használható. |
+| Visszatérítés-kezelési ügylet | A számsorozat minden visszatérítési ajánlathoz egyedi kulcsértéket rendel. Ez a kulcs az ajánlatok létrehozásakor használható. |
 | Visszatérítés-kezelési szám | A számsorozat minden visszatérítéshez egyedi kulcsértéket rendel. Ez a kulcs a visszatérítési kapcsolatok azonosítására használható. |
 | Visszatérítési tranzakció száma | A számsorozat minden visszatérítési tranzakcióhoz egyedi kulcsértéket rendel. Ez a kulcs a visszatérítési tranzakciók azonosítására használható. |
 | Adószámla | A számsorozat minden visszatérítési számlához egyedi kulcsértéket rendel. Ezt a kulcsot a program a visszatérítési naplók automatikus feladásakor használja. |

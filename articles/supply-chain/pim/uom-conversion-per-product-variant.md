@@ -1,6 +1,6 @@
 ---
 title: Mértékegység-átváltás termékváltozatonként
-description: Ez a témakör bemutatja, hogyan lehet mértékegység-átváltásokat beállítani a termékváltozatokon. Egy példát is tartalmaz a beállításra.
+description: Ez a cikk bemutatja a termékváltozatok mértékegység-átváltási beállítását. Egy példát is tartalmaz a beállításra.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c02252abcaf82cb2aab928949827e25ef7cce8c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a605e510ac8faa1f92e105c9fcc30222ef78e05e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869633"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mértékegység-átváltás termékváltozatonként
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet mértékegység-átváltásokat beállítani a különféle termékváltozatokon.
+Ez a témakör bemutatja a különböző termékváltozatok mértékegység-átváltási beállítását.
 
 A karbantartani kívánt több egyéni termék létrehozása helyett használhatja a termékváltozatokat egyetlen termék változatainak létrehozásához. Egy termékváltozat lehet például egy adott méretű és színű póló.
 

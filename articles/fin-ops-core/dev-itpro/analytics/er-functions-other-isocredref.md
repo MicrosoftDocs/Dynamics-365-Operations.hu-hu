@@ -1,6 +1,6 @@
 ---
 title: ISOCREDREF ER-függvény
-description: A témakör tájékoztatást nyújt az ISOCREDREF Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
+description: Ez a cikk az ISOCREDREF Elektronikus jelentés (ER) funkcióval kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e13b9bacc642917e6a520968630fc75fb30bc9dc3fd02b2d9aa3cfb2ceb33790
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dcbd53ec1939e6fb4bcd829bad01b353e823795a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896763"
 ---
 # <a name="isocredref-er-function"></a>ISOCREDREF ER-függvény
 

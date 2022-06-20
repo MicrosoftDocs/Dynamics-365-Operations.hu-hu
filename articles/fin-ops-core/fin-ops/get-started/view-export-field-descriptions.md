@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea52c39ef1c7d7b62f20da9fe4d94103119ccc23
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 75019f3f9bcd081f32d06971b11429bcdd794240
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069273"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847099"
 ---
 # <a name="view-and-export-field-descriptions"></a>Mezőleírások megtekintése és exportálása
 
@@ -91,11 +91,11 @@ Ez a szakasz a mezőleírások használata során felmerülő lehetséges probl�
 
 ### <a name="i-cant-find-a-field-description"></a>Nem található mezőleírás
 
-Jelenleg zajlik az összetettebb mezők leírásának folyamata. Ha segítségre van szüksége egy adott mezőhöz, kérjük tudassa velünk azzal, hogy hozzászól ehhez a témakörhöz.
+Jelenleg zajlik az összetettebb mezők leírásának folyamata. Ha segítségre van szüksége egy adott mezőhöz, akkor egy megjegyzést fűz a cikkhez.
 
 ### <a name="the-field-description-isnt-helpful"></a>A mezőleírás nem ad segítséget
 
-Kérjük, tudassa ezt velünk azzal, hogy hozzászól ehhez a témakörhöz. Ha lehetséges, írja le azokat a kiegészítő információkat, amelyekre szüksége van.
+Ha megjegyzést ad ehhez a cikkhez, akkor tud erről a cikkről. Ha lehetséges, írja le azokat a kiegészítő információkat, amelyekre szüksége van.
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Nem találok egy mezőt a Mezőleírások oldalon
 

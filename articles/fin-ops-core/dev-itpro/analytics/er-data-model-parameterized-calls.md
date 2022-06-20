@@ -1,5 +1,5 @@
 ---
-title: ER-adatmodellek paraméterezett hívásának támogatása
+title: ER-adatmodellekhez tartozó paraméterezett hívások támogatása
 description: Ez a témakör bemutatja az elektronikus jelentés (ER) adatmodellek paraméterezett hívásait.
 author: NickSelin
 ms.date: 03/14/2022
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 968b0769607e9fdbed57c25b727ed44988a92913
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8419513"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884257"
 ---
-# <a name="support-parameterized-calls-of-er-data-models"></a>ER-adatmodellek paraméterezett hívásának támogatása
+# <a name="support-parameterized-calls-of-er-data-models"></a>ER-adatmodellekhez tartozó paraméterezett hívások támogatása
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,21 +42,21 @@ A modell-hozzárendelési hívások korábban nem paraméterezettek, mert függ�
 <tr align="center">
 <td>
 <b>Formátum</b><br>
-Formátum&nbsp;<br>
+Elem formázása&nbsp;<br>
 &nbsp;
 </td>
 <td>
 <i>Kötés</i><br>
-&gt;&nbsp; Kérés&nbsp;&gt;<br>
+&gt;&nbsp;kérelem&nbsp;&gt;<br>
 &lt;&nbsp;érték&nbsp;&lt;
 </td>
-<td><b>Formázás&nbsp;</b><br>
+<td><b>Formátum-hozzárendelés&nbsp;</b><br>
 Adatforrás<br>
 &nbsp;
 </td>
 <td>
-<i>Datamodel&nbsp;</i><br>
-&gt;&nbsp; Kérés&nbsp;&gt;<br>
+<i>Data&nbsp; modell</i><br>
+&gt;&nbsp;kérelem&nbsp;&gt;<br>
 &lt;&nbsp;érték&nbsp;&lt;
 </td>
 <td>
@@ -66,7 +66,7 @@ Adatforrás&nbsp;<br>
 </td>
 <td>
 <i>Kötés</i><br>
-&gt;&nbsp; Kérés&nbsp;&gt;<br>
+&gt;&nbsp;kérelem&nbsp;&gt;<br>
 &lt;&nbsp;érték&nbsp;&lt;
 </td>
 <td>
@@ -85,57 +85,57 @@ A 10.0.15-ös és újabb verziókban azonban konfigurálni lehet olyan adatmodel
 <tr align="center">
 <td>
 <b>Formátum</b><br>
-Formatelement1&nbsp;&nbsp;<br>
+1.&nbsp; formátumelem&nbsp;<br>
 <br>
-Formatelement2&nbsp;&nbsp;<br>
+2.&nbsp; formátumelem&nbsp;<br>
 &nbsp;<br>
 &nbsp;
 </td>
 <td>
 <i>Kötés</i><br>
-&gt;&nbsp; 1. kérés&nbsp;&nbsp;&gt;<br>
-&lt;&nbsp; érték1&nbsp;&nbsp;&lt;<br>
+&gt;&nbsp;&nbsp; 1-es kérelem&nbsp;&gt;<br>
+&lt;&nbsp;&nbsp; 1 érték&nbsp;&lt;<br>
 &gt;&nbsp; 2.&nbsp; kérés&nbsp;&gt;<br>
-&lt;&nbsp; érték3&nbsp;&nbsp;&lt;<br>
+&lt;&nbsp;&nbsp; 3-as érték&nbsp;&lt;<br>
 &nbsp;
 </td>
 <td>
-<b>Formatmapping&nbsp;</b><br>
-&nbsp; Adatforrás1&nbsp;<br>
+<b>Format megfeleltetés&nbsp;</b><br>
+&nbsp; 1.&nbsp; adatforrás<br>
 &nbsp;<br>
 <b>érték2=Func(érték1)</b><br>
 &nbsp;<br>
 &nbsp;
 </td>
 <td>
-<i>Datamodel&nbsp;</i><br>
+<i>Data&nbsp; modell</i><br>
 &gt;&nbsp; mező1&nbsp;&gt;<br>
-&lt;&nbsp; érték1&nbsp;&nbsp;&lt;<br>
+&lt;&nbsp;&nbsp; 1 érték&nbsp;&lt;<br>
 <b>&gt;&nbsp; field2(érték2)&nbsp;&gt;</b><br>
-&lt;&nbsp; érték3&nbsp;&nbsp;&lt;<br>
+&lt;&nbsp;&nbsp; 3-as érték&nbsp;&lt;<br>
 &nbsp;
 </td>
 <td>
 <b>Modell-hozzárendelés&nbsp;</b><br>
-&nbsp; Adatforrás1&nbsp;<br>
+&nbsp; 1.&nbsp; adatforrás<br>
 <br>
-&nbsp; Adatforrás2&nbsp;<br>
+2.&nbsp;&nbsp; adatforrás<br>
 &nbsp;<br>
 &nbsp;
 </td>
 <td>
 <i>Kötés</i><br>
-&gt;&nbsp; 1. kérés&nbsp;&nbsp;&gt;<br>
-&lt;&nbsp; érték1&nbsp;&nbsp;&lt;<br>
+&gt;&nbsp;&nbsp; 1-es kérelem&nbsp;&gt;<br>
+&lt;&nbsp;&nbsp; 1 érték&nbsp;&lt;<br>
 &gt;&nbsp; 2.&nbsp; kérés&nbsp;&gt;<br>
-&lt;&nbsp; érték3&nbsp;&nbsp;&lt;<br>
+&lt;&nbsp;&nbsp; 3-as érték&nbsp;&lt;<br>
 &nbsp;
 </td>
 <td>
-<b>Table1&nbsp;</b><br>
+<b>1.table&nbsp;</b><br>
 &nbsp; 1. rekord<br>
 1.&nbsp; mező<br>
-<b>Table2&nbsp;</b><br>
+<b>Table&nbsp; 2</b><br>
 2.&nbsp; rekord<br>
 2.&nbsp; mező
 </td>
@@ -160,7 +160,7 @@ Egy olyan adatmodell-mező minden paraméterét be lehet adni, amelyhez az argum
 > [!NOTE]
 > Az adatmodell-mező paraméterének alapértelmezett értéke nem támogatott. Ha paramétert ad hozzá egy adatmodell egy mezőjéhez, és az adatmodell verziója már ki van adva és közzé lett adva, [az](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) összes megfelelő modellleképezést és -formátumot az új verzióra kell lebázisítania, mivel ez az adatmodell-módosítás nem kompatibilis visszafelé.
 
-A paraméteres adatmodell-mezőket konfigurálhatja úgy, hogy a modellfeleltetési hívások formátumspecifikusak legyen. Ezzel a módszersel csökkenthető az egy adatmodell számos formátumára konfigurálható modellleképezések száma. Ezzel a módszersel javíthatja a formátumok végrehajtásának teljesítményét, és csökkentheti az üzleti dokumentumok előállításához szükséges időt. Ha további tájékoztatást szeretne erről a funkcióról, végezze el a példafeladatot ebben a témakörben.
+A paraméteres adatmodell-mezőket konfigurálhatja úgy, hogy a modellfeleltetési hívások formátumspecifikusak legyen. Ezzel a módszersel csökkenthető az egy adatmodell számos formátumára konfigurálható modellleképezések száma. Ezzel a módszersel javíthatja a formátumok végrehajtásának teljesítményét, és csökkentheti az üzleti dokumentumok előállításához szükséges időt. A funkcióval kapcsolatos további tudnivalókat az alábbi példában olvashatja.
 
 ## <a name="example-use-parameterized-calls-of-er-data-models"></a>Példa: paraméterezett ER-adatmodellhívások használata
 
@@ -201,7 +201,7 @@ A modell jelenleg úgy van kialakítva, hogy csak a szükséges adatokat tartalm
 
 ### <a name="design-a-model-mapping-for-the-configured-data-model"></a>Modell-leképezés tervezése a konfigurált adatmodellhez
 
-Az Elektronikus jelentéskészítő fejlesztő szerepkör felhasználójaként létre kell hoznia egy új ER-konfigurációt, amely a mintavizsgálati adatmodell modell-hozzárendelési összetevőjét tartalmazza. Ez az összetevő a Microsoft Dynamics 365 Finance konfigurált adatmodelljét valósítja meg, és az adott alkalmazásra vonatkozik. A modell-hozzárendelési összetevőt úgy kell konfigurálni, hogy megadja azokat az alkalmazásobjektumokat, amelyeket a futásidőben használni kell a konfigurált adatmodell alkalmazásadatokkal való feltöltéséhez. A feladat végrehajtásához meg kell érteni, hogyan valósítja meg az adózási tartomány adatszerkezetét a Pénzügyben.
+Az Elektronikus jelentéskészítő fejlesztő szerepkör felhasználójaként létre kell hoznia egy új ER-konfigurációt, amely a mintavizsgálati adatmodell modell-hozzárendelési összetevőjét tartalmazza. Ez az összetevő a Microsoft Dynamics 365 Pénzügy konfigurált adatmodelljét valósítja meg, és az adott alkalmazásra jellemző. A modell-hozzárendelési összetevőt úgy kell konfigurálni, hogy megadja azokat az alkalmazásobjektumokat, amelyeket a futásidőben használni kell a konfigurált adatmodell alkalmazásadatokkal való feltöltéséhez. A feladat végrehajtásához meg kell érteni, hogyan valósítja meg az adózási tartomány adatszerkezetét a Pénzügyben.
 
 A következő lépések szerint importálhatja a szükséges modellleképezéseket a Microsoft által biztosított XML-fájlból.
 
@@ -454,7 +454,7 @@ A módosításokat akkor hajthatja végre, amikor egy futó formátum összegyű
     2. Válassza a **Képlet szerkesztése** elemet.
     3. A Képletszerkesztő **lapon** írja be a kifejezést `model.Party(PartyIds.Result)`.
     4. Válassza a **Mentés** lehetőséget, majd a **Képlettervező** oldalt.
-    5. A formátumszerkezetben válassza ki a **Report**.Party.Name elemét.
+    5. A formátumszerkezeti fában válassza ki a **Report**.Party.Name elemét.
     6. A Megfeleltetés **lapon** jelölje ki az adatmodell `model.Party.Name` mezőjét.
     7. Válassza a **Bind** elemet.
 

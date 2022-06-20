@@ -1,6 +1,6 @@
 ---
-title: Analitikus munkaterületek
-description: Ez a témakör a rendelkezésre álló beágyazott analitikai munkaterületeket sorolja fel, és útbaigazítást ad azon erőforrásokhoz, ahol többet tudhat meg róluk.
+title: Elemzési munkaterületek
+description: Ez a cikk felsorolja azokat a beágyazott, elemzési munkaterületeket, amelyek elérhetők, és olyan erőforrásokra mutat, amelyekről további tudnivalókat lehet szerezni.
 author: sericks007
 ms.date: 10/02/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64a960d4658fa38aa45c08c443d12202ebe8acae1cb6fa80113d0132fa226d70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 03211aefeb1b2b9453379979f70eb547eafa8c3f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867704"
 ---
 # <a name="analytical-workspaces"></a>Analitikus munkaterületek
 [!include[banner](../includes/banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Gyakorlatkezelés Power BI tartalom
-description: Ez a témakör azt ismerteti, mit tartalmaz a Gyakorlatvezető Power BI tartalom modul.
+description: Ez a cikk a gyakorlatvezető tartalmának tartalmát írja Power BI le.
 author: kfend
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4acef3c595f25fa0be16945a9f41611832cfcea9
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 31ca2841983d972194b55d91a6789fd84d62d890
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500221"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898987"
 ---
 # <a name="practice-manager-power-bi-content"></a>Gyakorlatkezelés Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, mit tartalmaz a **Gyakorlatvezető** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a cikk a gyakorlatvezető **tartalmának tartalmát írja** Microsoft Power BI le. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 

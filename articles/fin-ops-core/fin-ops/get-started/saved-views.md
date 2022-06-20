@@ -1,6 +1,6 @@
 ---
 title: Mentett nézetek
-description: Ez a témakör azt mutatja be, hogyan lehet használni a mentett nézetek funkcióit.
+description: Ez a témakör azt ismerteti, hogyan lehet használni a mentett nézeteket.
 author: jasongre
 ms.date: 04/25/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845413"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
@@ -196,7 +196,7 @@ Az adott lap összes közzétett nézetének listájához a következő művelet
 
 ## <a name="managing-views-globally"></a>Nézetek globális kezelése
 
-Bár egyes felügyeleti képességek megjelennek az összes oldalon, ahogyan a jelen témakörben is szerepel, a **rendszergazdák** és a **mentett nézet adminisztrátorok** a **Személyre szabás** oldalon keresztül a rendszerre nézve holisztikusabban kezelhetik a nézeteket. Ez a lap különösen a következő szakaszokat és funkciókat tartalmazza: 
+Bár egyes vezetői képességek minden oldalon láthatóak, mint azt a jelen cikk is jelzi, **·** **·** **a** rendszergazdák és a mentett nézetgazdák a Személyre szabás oldalon holisztikaibb módon kezelhetik a rendszernézeteket. Ez a lap különösen a következő szakaszokat és funkciókat tartalmazza: 
 
 - **Közzétett nézetek** – Ez a szakasz felsorolja azokat a nézeteket, amelyeket közzétettek a szervezeténél. Innen újra közzéteheti a nézeteket, miután módosítja azokat a biztonsági szerepköröket vagy jogi személyeket, amelyek a nézet céljai. Ezeket a nézeteket exportálhatja, törölheti vagy megszüntetheti a közzétételüket. Használhatja a **Mentés személyesként** műveletet a nézet személyes példányának létrehozásához, hogy a nézet módosítható legyen, vagy jobban megérthesse a tartalmát. 
 - **Nem közzétett nézetek** – Ez a szakasz felsorolja a rendszerben jelenleg közzé nem tett szervezeti nézeteket. Ezek a nézetek többnyire az importálási képességen keresztül kerülnek be a rendszerbe. Ezeket a nézeteket közzéteheti, exportálhatja vagy törölheti. A 10.0.12 verzióban hozzáadott **Gyors közzététel** művelet lehetővé teszi, hogy az ebből a szakaszból származó több nézetet egy műveletben tegyék közzé, a meglévő biztonsági szerepkör és a jogi személy-konfigurációk segítségével. Használhatja a **Mentés személyesként** műveletet a nézetek személyes példányainak létrehozásához, hogy jobban megérthesse a tartalmukat.

@@ -1,6 +1,6 @@
 ---
 title: Főkönyvi devizaátértékelés
-description: 'Ez a témakör áttekintést nyújt a főkönyvi devizaátértékelési folyamat következő pontjairól: telepítés, a folyamat futtatása, a folyamat számításai, valamint szükség esetén az átértékelési tranzakciók sztornírozása.'
+description: Ez a cikk áttekintést nyújt a főkönyv devizaátértékelési folyamatának a következőkről – beállításról, a folyamat futtatásáról, a folyamat kiszámításáról és szükség esetén az átértékelési tranzakciók sztornírozásához kapcsolódóan.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4a138a26a23c804f5fd358d335b04aee3897dce
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720338"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904528"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Főkönyvi devizaátértékelés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a főkönyvi devizaátértékelési folyamat következő pontjairól: telepítés, a folyamat futtatása, a folyamat számításai, valamint szükség esetén az átértékelési tranzakciók sztornírozása. 
+Ez a cikk áttekintést nyújt a főkönyv devizaátértékelési folyamatának a következőkről – beállításról, a folyamat futtatásáról, a folyamat kiszámításáról és szükség esetén az átértékelési tranzakciók sztornírozásához kapcsolódóan. 
 
 Az időszak végén a könyvelési szabályok előírják a külföldi pénznemben levő főkönyvi számlaegyenlegek a különböző árfolyamtípusok használatával történő átértékelését (aktuális, múltbeli, átlag stb.). Például az egyik könyvelési megállapodás előírja az eszközök és források aktuális átváltási árfolyamon, a tárgyi eszközök múltbeli árfolyamon, illetve az eredményszámlák havi átlagon történő átértékelését. A Főkönyvi devizaátértékelés segítségével átértékelheti a mérleg- és az eredményszámlákat. 
 

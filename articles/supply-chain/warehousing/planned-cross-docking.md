@@ -1,6 +1,6 @@
 ---
 title: Tervezett áttárolás
-description: Ez a témakör a tervezett speciális áttárolást mutatja be, ahol a rendeléshez szükséges készletmennyiség a fogadástól vagy létrehozástól egyenesen a megfelelő kimenő vagy előkészítő területre irányul. A program a bejövő forrásból származó összes fennmaradó készletet a megfelelő tárolóhelyre irányítja a rendszeres elraktározási folyamaton keresztül.
+description: Ez a témakör a speciális tervezett áttárolást írja le, ahol a rendeléshez szükséges készletmennyiség a bevételezéstől vagy a létrehozástól a megfelelő kitárolási területre vagy előkészítési területre irányul. A program a bejövő forrásból származó összes fennmaradó készletet a megfelelő tárolóhelyre irányítja a rendszeres elraktározási folyamaton keresztül.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863679"
 ---
 # <a name="planned-cross-docking"></a>Tervezett áttárolás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a speciális tervezett áttárolást mutatja be. Az áttárolás egy raktározási folyamat, ahol a rendeléshez szükséges készletmennyiség a fogadástól vagy létrehozástól egyenesen a megfelelő kimenő vagy előkészítő területre irányul. A program a bejövő forrásból származó összes fennmaradó készletet a megfelelő tárolóhelyre irányítja a rendszeres elraktározási folyamaton keresztül.
+Ez a témakör a speciális tervezett áttárolást írja le. Az áttárolás egy raktározási folyamat, ahol a rendeléshez szükséges készletmennyiség a fogadástól vagy létrehozástól egyenesen a megfelelő kimenő vagy előkészítő területre irányul. A program a bejövő forrásból származó összes fennmaradó készletet a megfelelő tárolóhelyre irányítja a rendszeres elraktározási folyamaton keresztül.
 
 Az áttárolás segítségével a dolgozók kihagyhatják a bejövő elraktározást és a készlet kimenő kitárolását, amely már ki van jelölve egy kimenő rendeléshez. Ezért a készlettel való tényleges munkavégzés száma ahol lehet minimalizálásra kerül. Ezenkívül, mivel kevesebb az interakció a rendszerrel, nagyobb idő- és területmegtakarítás érhető el a raktárban.
 
@@ -37,7 +37,7 @@ A bejövő rendelés bevételezése idején az áttárolási beállítás automa
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>A tervezett áttárolási funkciók bekapcsolása
 
-Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a következő sorrendben kapcsolja be a következő funkciókat:
+Ha a rendszer még nem tartalmazza az ebben a cikkben ismertetett funkciókat, akkor menjen a Funkciókezeléshez [,](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és a következő sorrendben kapcsolja be a következő funkciókat:
 
 1. *Tervezett áttárolás*
 1. *Áttárolási sablonok helyutasításokkal*

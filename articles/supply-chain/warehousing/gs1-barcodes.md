@@ -1,6 +1,6 @@
 ---
 title: GS1 vonalkódok
-description: Ez a témakör leírja, hogyan kell beállítani a GS1 vonalkódokat és QR-kódokat, hogy a címkék beolvashatók legyenek a raktárban.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani a GS1 vonalkódokat és QR-kódokat úgy, hogy a címkéket beolvasható legyen a raktárban.
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625278"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907145"
 ---
 # <a name="gs1-bar-codes"></a>GS1 vonalkódok
 
@@ -30,11 +30,11 @@ Az Ellátásilánc-kezelés GS1-támogatásával egyszerűen le lehet egyszerűs
 
 A logisztikai menedzsereknek kell összeállítaniuk az alkalmazásazonosítók szükséges listáját, és mindegyikhez hozzárendelniük a megfelelő mobileszköz menüpontokat. Az alkalmazási azonosítók ezután a raktárakban globális beállításként használhatók költözési és csomagolási célokra. Ezért az összes szállítási címke egységes formájú lesz.
 
-Eltérő rendelkezés *hiányában* ez a témakör a "vonalkód" kifejezés segítségével lineáris (1D) és 2D vonalkódra is hivatkozhat.
+Eltérő rendelkezés *hiányában* ez a cikk a vonalkód kifejezés segítségével lineáris (1D) és 2D vonalkódra is hivatkozik.
 
 ## <a name="the-gs1-bar-code-format"></a>A GS1 vonalkódformátum
 
-A GS1 Általános specifikációk határozzák meg, hogy mely szimbólumokat lehet használni a GS1 vonalkódokkal, és hogyan kell a vonalkódba kódolni az adatokat. Ez a szakasz a témakör rövid bevezetőjében található. A teljes részleteket lásd [a GS1 általános specifikációkban](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf), amelyek a GS1 által közzétettek. A GS1 specifikációs dokumentumot rendszeresen frissítik, és a GS1 általános specifikációk 22.0-s kiadásában naprakészek.
+A GS1 Általános specifikációk határozzák meg, hogy mely szimbólumokat lehet használni a GS1 vonalkódokkal, és hogyan kell a vonalkódba kódolni az adatokat. Ez a szakasz egy rövid bevezetőt nyújt a cikkhez. A teljes részleteket lásd [a GS1 általános specifikációkban](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf), amelyek a GS1 által közzétettek. A GS1 specifikációs dokumentumot rendszeresen frissítik, és a GS1 általános specifikációk 22.0-s kiadásában naprakészek.
 
 A GS1 vonalkódok a következő szimbólumokat használják:
 

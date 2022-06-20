@@ -1,6 +1,6 @@
 ---
 title: A főkönyv lezárása időszak végén
-description: A témakör a főkönyvi időszak zárásának végrehajtásakor általában elvégzett feladatokat ismerteti.
+description: Ez a témakör azokat a feladatokat írja le, amelyek általában a főkönyv időszaki zárása során hajtódnak végre.
 author: aprilolson
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 359e177e4ac2218c28ddd7c5ac3b71ee69e652e8
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 42a5df1cd1a73462c93012b26f9b9b5c1631f2ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878041"
 ---
 # <a name="close-the-general-ledger-at-period-end"></a>A főkönyv lezárása időszak végén
 
 [!include [banner](../includes/banner.md)]
 
-A témakör a főkönyvi időszak zárásának végrehajtásakor általában elvégzett feladatokat ismerteti. 
+Ez a témakör azokat a feladatokat írja le, amelyek általában a főkönyv időszaki zárása során hajtódnak végre. 
 
 A Főkönyvben, záró eljárásokat az időszak vagy az év végén hajthatja végre. A záró folyamatok előkészítik a rendszert egy új időszakra. Az új év előkészítéséhez futtatni kell az év végi zárási folyamatot. Minden szervezetnek különböző folyamatai és lépései vannak, amelyek az időszakok végén futnak le. Néhány a lehetséges időszakvégi lépések közül:
 

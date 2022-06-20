@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi dimenziók és fő számlák a jobbról balra író nyelvek esetében
-description: Ez a témakör néhány olyan megvalósítási döntéseket ismertet, amelyet jobbról balra író nyelveknél meg kell hoznia, és be kell állítania a pénzügyi dimenziókat és a fő számlákat.
+description: Ez a témakör olyan döntéseket ír le, amelyek a jobbról balra való nyelv használata esetén szükséges, valamint be kell állítani a pénzügyi dimenziókat és a fő számlákat.
 author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: rcarlson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5de2e0e6e56651487ebd36e3594eb378ce6154ea
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: b1e2c0ef5cd405232332847078c70af42f056e17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866760"
 ---
-# <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>Pénzügyi dimenziók és fő számlák jobbról balra író nyelvek esetében
+# <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>Pénzügyi dimenziók és fő számlák a jobbról balra író nyelvek esetében
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör néhány olyan, a megvalósítási döntésekre vonatkozó szempontot ismertet, amelyet figyelembe kell venni, amikor jobbról balra író nyelvet használ, és be kell állítania a pénzügyi dimenziókat és a fő számlákat.
+Ez a témakör ismerteti azokat a megvalósítási döntéseket, amelyekre a jobbról balra való beállításnál figyelembe kell venni, és be kell állítani a pénzügyi dimenziókat és a fő számlákat.
 
 A pénzügyi dimenziók és a fő számlák rendkívül alkotóelemek a megvalósítás tervezési szakaszában. Miután létrehozták a pénzügyi dimenziókat és a fő számlákat a rendszerben, ezek a következő oldalakon kerülnek felhasználásra: **Számlastruktúrák konfigurálása**, **Speciális szabálystruktúrák** és **Pénzügyi dimenzió konfigurációja alkalmazások integrálásához**. Az ezeken a lapokon meghatározott rendelés adatbevitelre és felhasználásra szolgál a rendszerben. A rendszer egyes helyein a pénzügyi dimenziók és a fő számlák külön mezőkben jelennek meg. Más helyeken, például naplókban, a pénzügyi dimenziók és a fő számlák egyetlen karakterláncként jelennek meg.
 

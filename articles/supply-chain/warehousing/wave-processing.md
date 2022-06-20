@@ -1,6 +1,6 @@
 ---
 title: Hullám létrehozása és feldolgozása
-description: Ez a témakör azt írja le, hogyan lehet létrehozni, feldolgozni és felszabadítani terhelési, szállítási, termelési vagy kanban megrendeléshez tartozó kitárolási munkát.
+description: Ez a témakör leírja, hogyan lehet létrehozni, feldolgozni és kiadni egy hullámot, hogy kitárolási munkát hozzon létre egy rakományhoz, szállítmányhoz, termelési rendeléshez vagy kanbanrendeléshez.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 349285f089ecab00c4c1c0a0315c4223314e3e79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
-ms.translationtype: MT
+ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851275"
 ---
 # <a name="wave-creation-and-processing"></a>Hullám létrehozása és feldolgozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt írja le, hogyan lehet létrehozni, feldolgozni és felszabadítani terhelési, szállítási, termelési vagy kanban megrendeléshez tartozó kitárolási munkát. A hullámok a következő típusú rendelésekhez hozhatók létre:
+Ez a témakör leírja, hogyan lehet létrehozni, feldolgozni és kiadni egy hullámot, hogy kitárolási munkát hozzon létre egy rakományhoz, szállítmányhoz, termelési rendeléshez vagy kanbanrendeléshez. A hullámok a következő típusú rendelésekhez hozhatók létre:
 
 - **Értékesítési rendelések** – szállítási hullámok használata értékesítési rendelésekből származó sorok hozzáadásához. Amikor egy értékesítési rendelést kiad a raktárba, az értékesítési rendelés sorait szerepeltetheti a hullámban.
 - **Termelési rendelések** – termelési hullámok használata a termékhez tartozó darabjegyzékből (DBJ) származó sorok hozzáadásához.

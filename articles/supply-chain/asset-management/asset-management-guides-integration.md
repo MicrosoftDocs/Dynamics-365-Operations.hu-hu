@@ -1,6 +1,6 @@
 ---
 title: A Dynamics 365 Supply Chain Management (Eszközkezelés) integrálása a Dynamics 365 Guides alkalmazással
-description: Ez a témakör azt mutatja be, hogyan lehet integrálni a Microsoft Dynamics 365 Supply Chain Management Eszközkezelő modulját a Dynamics 365 Guides alkalmazással annak érdekében, hogy kihasználhassa a vegyes valóság útmutatókat a mindennapos szolgáltatási és karbantartási feladatokban.
+description: Ez a cikk bemutatja, hogy hogyan lehet integrálni a Microsoft Dynamics 365 Supply Chain Management Dynamics 365 Guides eszközkezelési modulját a vegyes helyzetű segéd segédek használata érdekében a napi szerviz- és karbantartási munkafolyamatokban.
 author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d06978bcbd6205111384f5c7cefdf34fdbdbfbf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568255"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875684"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>A Dynamics 365 Supply Chain Management (Eszközkezelés) integrálása a Dynamics 365 Guides alkalmazással
 
@@ -47,7 +47,7 @@ Egy útmutató társításához a Eszközkezelés modulban egy karbantartás ell
 
 Útmutató társításához egy karbantartásiellenőrzőlista-sablonhoz kövesse az alábbi lépéseket.
 
-1. Hozzon létre egy útmutatót a Dynamics 365 Guides PC és HoloLens alkalmazásokkal. Ha szeretne többet megtudni útmutatók készítéséről, tekintse át az alábbi témaköröket:
+1. Hozzon létre egy útmutatót a Dynamics 365 Guides PC és HoloLens alkalmazásokkal. Az útmutatók létrehozásáról a következő cikkek tartalmaznak további tájékoztatást:
 
     - [A számítógépes alkalmazás használata útmutató létrehozásához](/dynamics365/mixed-reality/guides/pc-app-overview)
     - [A hologramok elhelyezése a HoloLens alkalmazás segítségével](/dynamics365/mixed-reality/guides/hololens-app-overview)

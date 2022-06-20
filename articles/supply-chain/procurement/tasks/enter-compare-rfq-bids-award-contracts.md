@@ -1,6 +1,6 @@
 ---
 title: Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
-description: Ez a cikk azt tekinti át, hogyan adhatók válaszok az ajánlatkérésre, hogyan pontozhatók és hasonlíthatók össze az ajánlatok, illetve hogyan ítélhető a szerződés az egyik szállítónak.
+description: Ez a cikk bemutatja, hogy hogyan lehet megadni az ajánlatkérésre adott válaszokat, el lehet pontozni és össze lehet hasonlítani az ajánlatokat, majd a szerződést ki kell adnia az egyik szállítónak.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50b403021c347498a9b489a34196e592a2041a11
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d3ef754f2d5d58254a7c6f0e572115f8a2981ad9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677366"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893381"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a cikk azt tekinti át, hogyan adhatók válaszok az ajánlatkérésre, hogyan pontozhatók és hasonlíthatók össze az ajánlatok, illetve hogyan ítélhető a szerződés az egyik szállítónak. Az **USMF** bemutatócég adataiban használhatja ezt az eljárást.
+Ez a cikk bemutatja, hogy hogyan lehet megadni az ajánlatkérésre adott válaszokat, el lehet pontozni és össze lehet hasonlítani az ajánlatokat, majd a szerződést ki kell adnia az egyik szállítónak. Az **USMF** bemutatócég adataiban használhatja ezt az eljárást.
 
 Mielőtt elkezdené ezt az eljárást, egy legalább két szállítónak elküldött, két sorral rendelkező Ajánlatkérésének kell lennie. Az Ajánlatkérés létrehozásához hajtsa végre az [Ajánlatkérés létrehozása](create-request-quotation.md) eljárást. A pontozási feltételeket is be kell állítania az eljárás végrehajtása előtt.
 

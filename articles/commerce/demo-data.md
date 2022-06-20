@@ -1,6 +1,6 @@
 ---
 title: A Modern POS (MPOS) bemutató adatképernyő-elrendezései
-description: Ez a témakör a Dynamics 365 Commerce pénztári bemutató adatkészleteinek részét képező képernyő-elrendezésekkel kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk a pénztári tapasztalatok bemutató adathalmazában szereplő képernyőelrendezésekkel kapcsolatban tartalmaz tájékoztatást Dynamics 365 Commerce.
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb7a288b61e8b467dd8ad6a8f7dc42b7fca0d943
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897225"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>A Modern POS (MPOS) bemutató adatképernyő-elrendezései
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 Commerce pénztári bemutató adatkészleteinek részét képező képernyő-elrendezésekkel kapcsolatban tartalmaz tájékoztatást.
+Ez a cikk a pénztári tapasztalatok bemutató adathalmazában szereplő képernyőelrendezésekkel kapcsolatban tartalmaz tájékoztatást Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Áttekintés
 
-Bemutató adatokhoz mellékelt Commerce minta képernyő-elrendezések különböző kiskereskedelmi szegmensekhez, áruházi dolgozói szerepkörökhöz és eszközökhöz optimalizált tartalmakat nyújtanak. Egyetlen elrendezés több elrendezésméretet és gombrácsok kombinációit tartalmazhatja, a fedezet biztosítása érdekében, miközben a dolgozók az eszközök és az állomások között mozognak. Ez a témakör ismerteti az elrendezések közötti különbségeket, a műveleteket, amelyeket elérhetővé tesznek, valamint a teljes felhasználói élményt, amelyet nyújtanak.
+Bemutató adatokhoz mellékelt Commerce minta képernyő-elrendezések különböző kiskereskedelmi szegmensekhez, áruházi dolgozói szerepkörökhöz és eszközökhöz optimalizált tartalmakat nyújtanak. Egyetlen elrendezés több elrendezésméretet és gombrácsok kombinációit tartalmazhatja, a fedezet biztosítása érdekében, miközben a dolgozók az eszközök és az állomások között mozognak. Ez a cikk be összefoglalja az elrendezések közötti különbségeket, a nekik megfelelő műveleteket és az általános tapasztalatokat.
 
 ![Párhuzamos eszközök bemutatóadat-elrendezései.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -51,9 +51,9 @@ A képernyő-elrendezés azonosítója legfeljebb 10 karaktert tartalmazhat. Az 
 
 | Levél | Cég         |
 |--------|-----------------|
-| A      | Adventure Works |
-| P      | Fabrikam        |
-| K      | Contoso         |
+| A      | Kalandorbolt |
+| G      | Gyár        |
+| t      | Contoso         |
 
 ### <a name="layout-version"></a>Elrendezésverzió
 
@@ -141,7 +141,7 @@ Az alábbi ábrákon a három fiktív vállalat üdvözlőoldalára és tranzakc
 
 ### <a name="contoso"></a>Contoso
 
-![Bemutató adatok – Contoso-elrendezések.](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![A Contoso bemutató adatelrendezései.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Felhasználói bejelentkezési mátrix
 

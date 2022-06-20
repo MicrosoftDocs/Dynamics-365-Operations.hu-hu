@@ -1,6 +1,6 @@
 ---
 title: Kompenzáció - fizetés gyakorisága
-description: Ez a témakör részleteket nyújt, és példalekérdezést tartalmaz a Kompenzáció fizetési gyakorisága entitásra vonatkozóan a Dynamics 365 Human Resources rendszerben.
+description: Ez a cikk részletes adatokat és példa-lekérdezést nyújt a Kompenzációs fizetési gyakoriság entitáshoz a következőben:Dynamics 365 Human Resources
 author: marcelbf
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 171b7fb7b361bd1fe2e7e637cd555c88a81a8bcf
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9afe27776797b2355a32226bbd7fa514b5c5d962
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066143"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894614"
 ---
 # <a name="compensation-pay-frequency"></a>Kompenzáció - fizetés gyakorisága
 
@@ -27,7 +27,7 @@ ms.locfileid: "8066143"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources kompenzáció fizetési gyakorisága entitását ismerteti.
+Ez a témakör leírja a Kompenzáció - fizetési gyakoriság entitást a következőben:Dynamics 365 Human Resources
 
 Fizikai név: mshr_hcmpayrateconversionentity.
 

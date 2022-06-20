@@ -1,6 +1,6 @@
 ---
 title: A Warehouse Management mobilalkalmazás előléptetett mezőinek konfigurálása
-description: Ez a témakör azt ismerteti, hogyan lehet előléptetni vagy kiemelni bizonyos információkat bármelyik lépésben a Warehouse Management mobilalkalmazás feladatfolyamataiban.
+description: Ez a témakör azt ismerteti, hogyan lehet konkrét információkat előléptetni és kiemelni a Raktárkezelés mobilalkalmazás feladatfolyamatának lépéseinél.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920323"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857054"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás előléptetett mezőinek konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben ismertetett funkciók csak az új Warehouse Management mobilalkalmazásra vonatkoznak. Ezek nem érintik a régi raktár alkalmazást, amely már elavult.
+> Az ebben a cikkben leírt funkciók csak az új Raktárkezelés mobilalkalmazásra vonatkoznak. Ezek nem érintik a régi raktár alkalmazást, amely már elavult.
 
-Ez a témakör azt ismerteti, hogyan lehet előléptetni vagy kiemelni bizonyos információkat bármelyik lépésben a Warehouse Management mobilalkalmazás feladatfolyamataiban. Ez a képesség segítséget nyújt a dolgozók figyelmének a legfontosabb mezőkre irányításában, miközben egy folyamat során dolgoznak. Minden egyes lépésnél, minden folyamatban a rendszergazdák kiválaszthatják, hogy mely mezőket kell előléptetni, és melyik mezőket kell kiemelni.
+Ez a témakör azt ismerteti, hogyan lehet konkrét információkat előléptetni és kiemelni a Raktárkezelés mobilalkalmazás feladatfolyamatának lépéseinél. Ez a képesség segítséget nyújt a dolgozók figyelmének a legfontosabb mezőkre irányításában, miközben egy folyamat során dolgoznak. Minden egyes lépésnél, minden folyamatban a rendszergazdák kiválaszthatják, hogy mely mezőket kell előléptetni, és melyik mezőket kell kiemelni.
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Előléptetett mezők engedélyezése a rendszerben
 
@@ -44,7 +44,7 @@ Ahhoz, hogy előléptetett mezőket állítson be, az alábbi eljárást kell v�
     - **Modul:** *Raktárkezelés*
     - **Funkció neve:** *Raktári alkalmazásban előléptetett mezők*
 
-    Ez a funkció az ebben a témakörben ismertetett funkció.
+    Ez a funkció az ebben a cikkben leírt funkció.
 
 1. Frissítse a Warehouse Management mobilalkalmazás mezőneveit a **Raktárkezelés \> Beállítás \> Mobileszköz \> Raktári alkalmazás mezőnevei** helyen és válassza az **Alapértelmezett beállítás létrehozása** lehetőséget. ovábbi információ: [A Raktárkezelés mobilalkalmazás mezőinek konfigurálása](configure-app-field-names-priorities-warehouse.md).
 1. Ismételje meg az előző lépést minden olyan jogi személynél (vállalatnál), ahol a Warehouse Management mobilalkalmazást használja.
@@ -56,7 +56,7 @@ Az alábbi eljárással állíthat be előléptetett mezőket.
 1. Menüspecifikus felülbírálás létrehozása a megfelelő menühöz és lépéshez a [A Warehouse Management mobilalkalmazás lépéscímeinek és utasításainak testreszabása](mobile-app-titles-instructions.md) című témakörben leírtak szerint.
 1. Keresse meg a **Lépésazonosító** és a **Menüelem neve** értékek azon kombinációját, amelyet szerkeszteni szeretne, majd jelölje ki az értéket a **Lépésazonosító** oszlopban.
 1. A megjelenő oldalon, az **Előléptetett mezők kiválasztása** gyorslapon válassza az eszköztár **Mezők kijelölése** lehetőséget.
-1. Az **Előléptetett mezők** párbeszédpanelen válassza ki azokat a mezőket, amelyeket elő szeretne léptetni. A kijelölt mezőke közül akár kettőt is kiemelhet. A kijelölt mezők félkövér betűkkel jelennek meg a Warehouse Management mobilalkalmazásban. A mezők kiválasztása után fontolja meg, hogy egyes képernyők csak ahhoz elég nagyok csak a legfelső egy vagy két előléptetett mező lesz látható. A beállítások használatával kapcsolatos példát lásd a témakör későbbi forgatókönyvében.
+1. Az **Előléptetett mezők** párbeszédpanelen válassza ki azokat a mezőket, amelyeket elő szeretne léptetni. A kijelölt mezőke közül akár kettőt is kiemelhet. A kijelölt mezők félkövér betűkkel jelennek meg a Warehouse Management mobilalkalmazásban. A mezők kiválasztása után fontolja meg, hogy egyes képernyők csak ahhoz elég nagyok csak a legfelső egy vagy két előléptetett mező lesz látható. A beállítások használatát bemutatja egy példa, amely a cikk későbbi forgatókönyvében olvasható.
 
     > [!NOTE]
     > Az **Elérhető mezők** listája csak a menüelemben megjeleníthető mezőkre korlátozódik. Azonban, más tényezők (például cikkösszetétel) határozzák meg, hogy egy mező ténylegesen megjelenik-e a Warehouse Management mobilalkalmazásban. Ha beállította az előléptetett mezőket, csak a kiválasztott mezők jelennek meg a Warehouse Management mobilalkalmazás főoldalán. Ugyanakkor a dolgozók továbbra is megtekinthetik a további mezőket a részleteket lapon.

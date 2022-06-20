@@ -1,6 +1,6 @@
 ---
 title: Szakértelmi szint típusa
-description: Ez a témakör bemutatja a Szakértelmi szint típusa lehetőség beállítását a Dynamics 365 Human Resources rendszerben.
+description: Ez a témakör a szakértelemszint-típus beállításának beállítását írja le Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 772656285d99b0eff8135cfc5d24eea5d5aef02c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a97f1d4d13bd803523e5601ac6d86e148073add1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066193"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861160"
 ---
 # <a name="skill-level-type"></a>Szakértelmi szint típusa
 
@@ -27,7 +27,7 @@ ms.locfileid: "8066193"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör bemutatja a Szakértelmi szint típusa lehetőség beállítását a Dynamics 365 Human Resources rendszerben.
+Ez a témakör a szakértelemszint-típus beállításának beállítását írja le Dynamics 365 Human Resources.
 
 Fizikai név: mshr_hrmskillleveltype
 

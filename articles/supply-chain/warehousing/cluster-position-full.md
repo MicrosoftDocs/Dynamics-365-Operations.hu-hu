@@ -1,6 +1,6 @@
 ---
 title: Fürtpozíció tele
-description: Ez a témakör a Fürtpozíció tele funkcióról nyújt tájékoztatást. Ez a funkció a munkamegszakítási szabályok szigorúbb végrehajtását teszi lehetővé a fürtkitárolás használata esetén, mivel nagyobb hibahatárt tesz lehetővé a tárolók és rakományok térfogatkorlátai tekintetében.
+description: Ez a cikk a fürtpozíció teljes funkcióval kapcsolatban tartalmaz tájékoztatást. Ez a funkció a munkamegszakítási szabályok szigorúbb végrehajtását teszi lehetővé a fürtkitárolás használata esetén, mivel nagyobb hibahatárt tesz lehetővé a tárolók és rakományok térfogatkorlátai tekintetében.
 author: Mirzaab
 ms.date: 08/25/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4d46933b7c60317234b8e39cd6dfd63d383de860
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102827"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857141"
 ---
 # <a name="cluster-position-full"></a>Fürtpozíció tele
 
@@ -28,9 +28,9 @@ A *Fürtpozíció tele* funkció a munkamegszakítási szabályok szigorúbb vé
 
 Ez a funkció bevezeti a **Megtelt** gomb futtatásának lehetőségét a fürt egyik munkaegységén. A régebbi verziókban ez a lehetőség csak a szokásos rendeléskitároláskor volt elérhető, na fürtkitároláshoz nem. Ez a funkció azonban különbözik a szokásos **Megtelt** gombtól, amely a hátralévő munkát érvényteleníti. Nem javasolja, hogy a felhasználó adjon hozzá egy másik tárolót ugyanahhoz a fürthöz, és nem hoz létre automatikusan új munkát.
 
-## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>A Fürtpozíció teljes szolgáltatásának be- és kikapcsolása
+## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>A Fürtpozíció teljes funkció be- és kikapcsolása
 
-A témakörben ismertetett funkciók használatához a *fürtpozíció teljes* funkcióját be kell kapcsolni a rendszerhez. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha a 10.0.25-ösnél régebbi verziót futtatja, akkor a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a *Szolgáltatáskezelési* munkaterület fürtpozíciójának teljes [funkcióját](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) keresik.
+Az ebben a cikkben *leírt* funkciók használatához a fürtpozíció teljes funkcióját be kell kapcsolva lennie a rendszeren. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Funkciókezelés munkaterületén a Fürtpozíció teljes funkciót keresi.
 
 ## <a name="setup"></a>Beállítás
 

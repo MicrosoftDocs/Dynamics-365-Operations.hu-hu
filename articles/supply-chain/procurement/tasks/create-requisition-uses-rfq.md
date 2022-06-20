@@ -1,6 +1,6 @@
 ---
 title: Olyan igénylés létrehozása, amely ajánlatkérést használ
-description: Ez a témakör ismeteti, hogy hogyan lehet egy ajánlatkérési folyamat árral és a szállítóval kapcsolatos információit a beszerzési igényléshez hozzáadni.
+description: Ez a cikk bemutatja, hogyan lehet ár- és szállítóadatokat hozzáadni egy ajánlatkérési folyamatból származó beszerzési igényléshez.
 author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78092205c1a1d149b4dc202e085871d1fe46c4ad
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5ecde250e3517464611b68fe3c960bfbfdf06319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846011"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Olyan igénylés létrehozása, amely ajánlatkérést használ
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör ismeteti, hogy hogyan lehet egy ajánlatkérési folyamat árral és a szállítóval kapcsolatos információit a beszerzési igényléshez hozzáadni. A példában szereplő útmutatót az USMF bemutatócég használhatja, és rendszergazdaként kell bejelentkeznie ahhoz, hogy végrehajthassa az összes lépést. Általában a beszerzési szakemberek hajtják végre a példában szereplő útmutatót.
+Ez a cikk bemutatja, hogyan lehet ár- és szállítóadatokat hozzáadni egy ajánlatkérési folyamatból származó beszerzési igényléshez. A példában szereplő útmutatót az USMF bemutatócég használhatja, és rendszergazdaként kell bejelentkeznie ahhoz, hogy végrehajthassa az összes lépést. Általában a beszerzési szakemberek hajtják végre a példában szereplő útmutatót.
 
 
 ## <a name="create-a-requisition"></a>Igénylés létrehozása

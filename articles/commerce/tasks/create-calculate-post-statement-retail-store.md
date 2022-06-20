@@ -1,6 +1,6 @@
 ---
 title: Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása
-description: Ez az témakör leírja egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit.
+description: Ez a témakör az áruházi kimutatások létrehozásához, kiszámításához és feladására vonatkozó kézi lépéseket ismerteti.
 author: jashanno
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a3d82daed16c1b37d10653f04c1dc473cd5c5abc3a6443972da6e8ecf9820f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 740857e6a902e21588855eef5e36cac68e560898
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873278"
 ---
 # <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása
 
 [!include [banner](../includes/banner.md)]
 
-Ez az témakör leírja egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit. Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók. A kötegelt feladatok konfigurálásának és futtatásának lépései egy másik témakörben találhatók meg. Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics 365 Commerce programba. Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat.
+Ez a témakör az áruházi kimutatások létrehozásához, kiszámításához és feladására vonatkozó kézi lépéseket ismerteti. Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók. A kötegelt feladatok konfigurálásához és futtatásához szükséges lépések más cikkekben találhatók. Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics 365 Commerce programba. Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat.
 
 1. Válassza ki az **Üzlet pénzügyei** lehetőséget a kezdőlapról.
 2. Válassza az **Új kimutatás** lehetőséget.

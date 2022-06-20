@@ -1,6 +1,6 @@
 ---
 title: Szállítói visszatérítések
-description: Ez a témakör áttekintést nyújt a szállítói visszatérítésekkel végzett munka során végrehajtandó leggyakoribb feladatokról. A szállítói visszatérítések segítséget nyújtanak a vállalatoknak szállító visszatérítési programjuk könnyebb kezelésében úgy, hogy automatizálják a megszerzett visszatérítések felügyeletéhez, nyomon követéséhez és igényléséhez szükséges feladatokat.
+description: Ez a témakör áttekintést nyújt a szállítói visszatérítések végrehajtása során leggyakrabban elvégezni kívánt feladatokról. A szállítói visszatérítések segítséget nyújtanak a vállalatoknak szállító visszatérítési programjuk könnyebb kezelésében úgy, hogy automatizálják a megszerzett visszatérítések felügyeletéhez, nyomon követéséhez és igényléséhez szükséges feladatokat.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ed41fe18048050ecb80a93e929d66ebc3a2e2441
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 789a58af40595cbb72d55d598510c43315aead2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890799"
 ---
 # <a name="vendor-rebates"></a>Szállítói visszatérítések
 
@@ -26,7 +26,7 @@ ms.locfileid: "8672962"
 
 A szállítói visszatérítések segítséget nyújtanak a vállalatoknak szállító visszatérítési programjuk könnyebb kezelésében úgy, hogy automatizálják a megszerzett visszatérítések felügyeletéhez, nyomon követéséhez és igényléséhez szükséges feladatokat.
 
-Ez a témakör áttekintést nyújt a szállítói visszatérítésekkel végzett munka során végrehajtandó leggyakoribb feladatokról. Az áttekintés a következő feladatokat foglalja magában:
+Ez a témakör áttekintést nyújt a szállítói visszatérítések végrehajtása során leggyakrabban elvégezni kívánt feladatokról. Az áttekintés a következő feladatokat foglalja magában:
 
 - Visszatérítési megállapodás részleteinek áttekintése.
 - Visszatérítéseket lehetővé tevő rendelések azonosítása és a visszatérítési igények létrehozása.
@@ -34,7 +34,7 @@ Ez a témakör áttekintést nyújt a szállítói visszatérítésekkel végzet
 
 ## <a name="audience-and-purpose"></a>Célközönség és cél
 
-Ezen témakör információi nagyvállalatok üzleti döntéshozóinak, például beszerzési vezetőknek, pénzügyi igazgatóknak (CFO) és főkönyvelőknek szólnak, akiknek a következő feladataik vannak:
+A jelen cikk információi a vállalati vállalatok üzleti döntéshozóinak, például beszerzési vezető, pénzügyi igazgató és főkönyvelési vezető beosztásban, valamint főkönyvelési vezetőnek szántak, akik a következő felelősségi köröket vállalják:
 
 - Szállítói árak, engedmények és visszatérítési megállapodások megtárgyalása.
 - A személyzet felügyelete, amely feldolgozza a visszatérítési igényeket, és beszedi a kifizetéseket.

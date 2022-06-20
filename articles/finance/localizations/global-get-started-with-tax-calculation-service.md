@@ -1,6 +1,6 @@
 ---
 title: Az adószámítás első lépései
-description: Ez a témakör bemutatja, hogyan állítsuk be az adószámítást.
+description: Ez a cikk bemutatja az adószámítás beállítását.
 author: wangchen
 ms.date: 03/25/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ab9c0cf974114c4fa9b673e5601e138acef534d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c2293102057ac055f0958c1c6b1de2a19cb331d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685911"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855283"
 ---
 # <a name="get-started-with-tax-calculation"></a>Az adószámítás első lépései
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az adószámítással kapcsolatos első lépésekről nyújt tájékoztatást. A témakör szakaszai Microsoft Dynamics a Lifecycle Services (LCS), a Regulatory Configuration Service (RCS), a Dynamics 365 Pénzügy és a Dynamics 365 Supply Chain Management. 
+Ez a cikk az adószámítás első lépésekkel kapcsolatban tartalmaz tájékoztatást. A témakör szakaszai Microsoft Dynamics a Lifecycle Services (LCS), a Regulatory Configuration Service (RCS), a Dynamics 365 Pénzügy és a Dynamics 365 Supply Chain Management. 
 
 A beállítás három lépésből áll.
 
@@ -77,11 +77,11 @@ A lépések után a következő beállítások automatikusan szinkronizálódnak
 - Áfacsoportok
 - Cikkáfacsoportok
 
-A témakör további részei részletesebb konfigurációs lépéseket tartalmaznak.
+A cikk további részei részletesebb konfigurációs lépéseket tartalmaznak.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A témakör további eljárásainak befejezése előtt teljesülnie kell a következő előfeltételeknek:<!--TO HERE-->
+A cikk további eljárásait csak akkor lehet végrehajtani, ha teljesülnek a következő előfeltételek:<!--TO HERE-->
 
 - Hozzá kell férnie az LCS-fiókjához, és rendelkeznie kell egy telepített LCS-projekttel, amely Tier 2 vagy annál magasabb szintű környezetet tartalmaz, és a Dynamics 365 10.0.21-es vagy újabb verzióját futtatja.
 - Létre kell hoznia egy RCS-környezetet a szervezet számára, és hozzáféréssel kell rendelkeznie a fiókjához. Az RCS-környezet létrehozásával kapcsolatos további információkért lásd a [Regulatory Configuration Service áttekintése](rcs-overview.md) című részt.
@@ -212,7 +212,7 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
     | Értékesítés            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
-    > Ha az adóköteles bizonylatsorok alapértelmezett áfacsoportja helyes, akkor hagyja üresen ezt a mátrixot. A további tudnivalókat lásd [a témakör Futásidejű](#runtime) tervezés szakaszában.
+    > Ha az adóköteles bizonylatsorok alapértelmezett áfacsoportja helyes, akkor hagyja üresen ezt a mátrixot. A további tudnivalókat lásd [a cikk Futásidejű](#runtime) terv részében.
 
 22. A **Tétel adócsoport alkalmazhatósága** lapon jelölje ki a helyes adókód meghatározásához szükséges oszlopokat, majd válassza a **Hozzáadás** gombot. Adja meg vagy válassza ki az egyes oszlopok értékeit. Ennek a mátrixnak a kimenete a **tételadó-csoport** mező lesz. Ha ez a lap nincs beállítva, akkor a tranzakciósoron lévő tétel forgalmi adócsoportját kell használni.
 
@@ -224,7 +224,7 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
     | D0003     | Csökkentett        |
 
     > [!NOTE]
-    > Ha az adóköteles bizonylatsorok alapértelmezett cikk áfacsoportja helyes, akkor hagyja üresen ezt a mátrixot. A további tudnivalókat lásd [a témakör Futásidejű](#runtime) tervezés szakaszában.
+    > Ha az adóköteles bizonylatsorok alapértelmezett cikk áfacsoportja helyes, akkor hagyja üresen ezt a mátrixot. A további tudnivalókat lásd [a cikk Futásidejű](#runtime) terv részében.
 
     Az adókódok Adószámításban történő meghatározásáról további információt az [Értékesítési adócsoport és tétel értékesítési adócsoport meghatározási logikája](global-sales-tax-group-determination.md) című témakörben talál.
 
@@ -243,7 +243,7 @@ Az ebben a szakaszban található beállításokat jogi személy végzi. Be kell
 2. Az **Általános** lapon állítsa be a következő mezőket:
 
     - **Adószámítási szolgáltatás engedélyezése** - Jelölje be ezt a jelölőnégyzetet a jogi személy adószámításának engedélyezéséhez. Ha az aktuális jogi személyhez nincs engedélyezve, a jogi személy továbbra is a meglévő adómotor használatával határozza meg és számítja ki az adót.
-    - **Funkció beállítása** – A közzétett adófunkció beállítás és verzió kiválasztása a jogi személyhez. A közzétett adó funkció beállításához és befejezéséhez kapcsolódó további tudnivalókat lásd a témakör előző szakaszában.
+    - **Funkció beállítása** – A közzétett adófunkció beállítás és verzió kiválasztása a jogi személyhez. A közzétett adó funkció beállításához és befejezéséhez szükséges további tudnivalókat lásd a cikk előző szakaszában.
     - **Üzleti folyamat** – az engedélyezni kívánt üzleti folyamatok kiválasztása.
 
 3. A **Számítás** lapon határozza meg a jogi személy elvárt kerekítési szabályát. A kerekítési logikával kapcsolatos további információkért lásd: [Adószámítás kerekítési szabályok](https://go.microsoft.com/fwlink/?linkid=2166988).

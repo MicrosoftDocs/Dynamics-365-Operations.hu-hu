@@ -1,6 +1,6 @@
 ---
-title: Azonosítótábla fogadása a Raktárkezelés mobilalkalmazáson keresztül
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a Raktárkezelés mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamathoz.
+title: Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával
+description: Ez a cikk bemutatja, hogy hogyan lehet beállítani a Raktárkezelés mobilalkalmazást, amely a fizikai készlet bevételezéséhez egy tábla bevételezését támogatja.
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103063"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907000"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Azonosítótábla fogadása a Raktárkezelés mobilalkalmazáson keresztül
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a Raktárkezelés mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamat támogatásához.
+Ez a cikk bemutatja a Raktárkezelés mobilalkalmazás beállítását, amely lehetővé teszi a fizikai készlet bevételezéséhez az tábla-bevételezés folyamatának alkalmazását.
 
 Ezen funkció segítségével gyorsan rögzítheti az előzetes kiszállítási értesítéshez (ASN) kapcsolódó bejövő készlet bevételezését. A rendszer automatikusan létrehoz egy ASN-t, amikor a raktárkezelési folyamatokat egy átmozgatási rendelés szállítására használják. A beszerzési rendelés folyamatahoz egy ASN manuálisan is rögzíthető, vagy automatikusan importálható a bejövő ASN adatentitás folyamata segítségével.
 

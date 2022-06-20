@@ -1,6 +1,6 @@
 ---
 title: A tervezésoptimalizálás által nem használt paraméterek
-description: Ez a témakör felsorolja azokat a paramétereket, amelyeket a tervezésoptimalizálás a működése során jelenleg nem vesz figyelembe.
+description: Ez a cikk azokat a paramétereket sorolja fel, amelyekre a tervezési optimalizálás a művelet során jelenleg nem számít.
 author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 3791ac804b78a20d0051881a83cb075e56ec8639
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907348"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>A tervezésoptimalizálás által nem használt paraméterek
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör felsorolja azokat a paramétereket, amelyeket a tervezésoptimalizálás a működése során jelenleg nem vesz figyelembe. Előfordulhat, hogy a tervezési szolgáltatás kihagy egy paramétert, mert például a kapcsolódó funkció még nem támogatott. A paraméter a funkcionális változások miatt elavulttá is válhatott.
+Ez a cikk azokat a paramétereket sorolja fel, amelyekre a tervezési optimalizálás a művelet során jelenleg nem számít. Előfordulhat, hogy a tervezési szolgáltatás kihagy egy paramétert, mert például a kapcsolódó funkció még nem támogatott. A paraméter a funkcionális változások miatt elavulttá is válhatott.
 
 Az alábbi szakaszok felsorolják azokat a paramétereket, amelyeknél a tervezési optimalizálás nem használható az egyes lapokon. Arra is magyarázatot ad, hogy miért nem használják az egyes paramétereket.
 
@@ -60,7 +60,7 @@ A tervezésoptimalizálás nem használja a következő paramétereket és beál
 
 - **Általános** Gyorslap:
 
-  - **Pozitív napok** – A *pozitív napok* értékét nem használjuk. A tervezésoptimalizálással a pozitív napok végtelennek tekinthetők.
+  - **Pozitív napok** – *a pozitív napok* értéke nincs használva. A tervezési optimalizálás során a pozitív napok végtelennek számítanak.
   - **Aktuális készletfelhasználás** – az *Aktuális készletfelhasználás* támogatása függőben van.
   - **A megadott anyagjegyzék- vagy receptúraverzió használata** – a *Képletverziók társ- vagy melléktermékekkel* támogatása függőben van.
   - **A megadott útvonalverzió használata** – az *Igény megadott darajegyzék- vagy meghatározott útvonal-követelményekkel* támogatása függőben van.
@@ -148,9 +148,9 @@ A tervezésoptimalizálás nem használja a következő paramétereket és beál
   - **A számított késés hozzáadása a szükségletdátumhoz** (a **Tervezett átvitel** szakaszban) – a *Számított késések* támogatása függőben van.
   - **A számított késés hozzáadása a szükségletdátumhoz** (a **Tervezett kanban** szakaszban) – a *Számított késések* támogatása függőben van.
 
-- **Műveletkérő üzenet** gyorslapja:
+- **Műveletkértes üzenet** gyorsattab:
 
-  - **Elhalasztott dátum frissítése követelménydátumként** – Ez a paraméter a Tervezésoptimalizálás funkcióval megszűnik.
+  - **Frissítés elhalasztási dátuma szükségletdátumként** – ez a paraméter már nincs tervezésoptimalizálásban.
 
 - **Sorrendbe állítás** gyorslap:
 

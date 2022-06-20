@@ -1,6 +1,6 @@
 ---
 title: A cím változásainak megtekintése és kezelése
-description: Ez a témakör azt mutatja be, hogyan lehet megtekinteni és kezelni a cím változásait a Dynamics 365 Human Resources rendszerben.
+description: Ez a cikk bemutatja, hogy hogyan lehet megtekinteni és kezelni a címváltozásokat a következőben:Dynamics 365 Human Resources
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 819f22c58da485980c38d35dcc6dda6aebacf423
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 744ab532fcc663f25ce376817779924bbef15432
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695844"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899585"
 ---
 # <a name="view-and-manage-address-changes"></a>A cím változásainak megtekintése és kezelése
 
@@ -27,7 +27,7 @@ ms.locfileid: "8695844"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör bemutatja, **hogy** hogyan lehet megtekinteni és kezelni a címváltozásokat a Személyes adatok szerkesztése lapon (**amelyet** az Alkalmazott önkiszolgáló munkaterületén nyit meg) **vagy** a Dolgozó részletei lapról Dynamics 365 Human Resources.
+Ez a cikk bemutatja, **hogy** hogyan lehet megtekinteni és kezelni a címváltozásokat a Személyes adatok szerkesztése lapon (**amelyet** az Alkalmazott önkiszolgáló munkaterületén nyit meg) **vagy** a Dolgozó részletei lapról Dynamics 365 Human Resources.
 
 Számos szervezet azt szeretné, hogy az alkalmazottak saját maguk, saját felületen kezelhessék saját személyes adataikat. Engedélyezheti a felhasználóknak, hogy frissítsék a címüket az **Alkalmazotti önkiszolgáló rendszer** munkaterületén. Ezt követően a változásokat a **Személyzetkezelés** munkaterületen követheti nyomon. A funkció használatához meg kell adnia, hogy hány napig kívánja megtekinteni a változásokat az **Emberierőforrás-paraméterek** oldalon.
 

@@ -1,6 +1,6 @@
 ---
 title: Számlázási ütemezés funkciói
-description: Ez a témakör bemutatja a számlázási ütemezések jellemzőit, mint például az árképzési módszerek, az eszkalációk és engedmények, az igazítási dátumok, a proráció, a sztornószámlázás és a cikkcsoportok felosztása.
+description: Ez a cikk bemutatja a számlázási ütemezések jellemzőit, mint például az árképzési módszerek, az eszkalációk és engedmények, az igazítási dátumok, a proráció, a sztornószámlázás és a cikkcsoportok felosztása.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0ce323565a94e8e70d90a65b7a3143e984a1c159
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b6cfebc2bbfe06e118bfc96f9ae0df6323805e39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696646"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853583"
 ---
 # <a name="billing-schedule-features"></a>Számlázási ütemezés funkciói
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a számlázási ütemezések és a számlázási ütemezési sorok jellemzőit. Ismerteti az árképzéshez használt különböző módszereket, az eszkalációk és engedmények használatát, valamint a számlázási időszak sztornírozhatóságát. Példákat tartalmaz a prorációszámításra és a megosztott cikkcsoportokra is.
+Ez a cikk bemutatja a számlázási ütemezések és a számlázási ütemezési sorok szolgáltatásait. Ismerteti az árképzéshez használt különböző módszereket, az eszkalációk és engedmények használatát, valamint a számlázási időszak sztornírozhatóságát. Példákat tartalmaz a prorációszámításra és a megosztott cikkcsoportokra is.
 
 ## <a name="pricing-methods"></a>Árképzési módszerek
 
@@ -185,7 +185,7 @@ A számlázási ütemezés éves összege nem $5,000. A kezdő dátum 2019. augu
 
 - **Napi**
 
-    - *Napok számaEndátum* = *·* – *Kezdő dátum* + 1 = 133 nap
+    - *Napok száma záró* = *dátum* – *kezdő dátum* + 1 = 133 nap
     - *Napok száma az évben* = 2020. augusztus 11. – 2019. augusztus 12. + 1 = 366 nap
     - *Prorated összeg* = 5 000 &times; (133 &divide; 366) = 1816,94
 
@@ -202,7 +202,7 @@ A számlázási ütemezés éves összege nem $12,000. A kezdő dátum 2019. aug
 
 - **Napi**
 
-    - *Napok számaEndátum* = *·* – *Kezdő dátum* + 1 = 153 nap
+    - *Napok száma záró* = *dátum* – *kezdő dátum* + 1 = 153 nap
     - *Napok száma az évben* = 2020. július 31. – 2019. augusztus 1. + 1 = 366 nap
     - *Prorated összeg* = 12 000 &times; (153 &divide; 366) = 5016,39
 

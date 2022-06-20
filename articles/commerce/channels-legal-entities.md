@@ -1,6 +1,6 @@
 ---
 title: Jogi személyek létrehozása
-description: Ez a témakör azt mutatja be, hogyan lehet jogi személyeket létrehozni a Microsoft Dynamics 365 Commerce szolgáltatásban, amelyet a csatornák létrehozása előtt létre kell hozni és be kell állítani.
+description: Ez a témakör azt ismerteti, hogyan lehet Microsoft Dynamics 365 Commerce jogi személyeket létrehozni, amelyeket létre kell hozni és konfigurálni kell a csatornák létrehozása előtt.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c9812a828cb159400c6388f02f10e00694aa64ad
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 160dd82298705eab9edecb9d30d051382b6b4471
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847706"
 ---
 # <a name="create-legal-entities"></a>Jogi személyek létrehozása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet jogi személyeket létrehozni a Microsoft Dynamics 365 Commerce szolgáltatásban, amelyet a csatornák létrehozása előtt létre kell hozni és be kell állítani.
+Ez a témakör azt ismerteti, hogyan lehet Microsoft Dynamics 365 Commerce jogi személyeket létrehozni, amelyeket létre kell hozni és konfigurálni kell a csatornák létrehozása előtt.
 
 A jogi személy olyan szervezet, amely bejegyzett vagy törvényben szabályozott jogi struktúrával rendelkezik. A jogi személyek törvényes szerződéseket köthetnek, teljesítményükről pedig tájékoztató beszámolókat kell készíteniük.
 

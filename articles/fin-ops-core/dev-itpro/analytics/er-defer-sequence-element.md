@@ -1,6 +1,6 @@
 ---
 title: A szekvenciaelemek végrehajtásának elhalasztása az ER-formátumokban
-description: Ez a témakör azt mutatja be, hogyan lehet elhalasztani egy szekvenciaelem végrehajtását egy elektronikus jelentési (ER) formátumban.
+description: Ez a cikk bemutatja, hogyan lehet elhalasztni egy szekvenciaelem végrehajtását az elektronikus jelentés (ER) formátumban.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 19d1cf0aa6e9b40a0e72a3a74acda6e2579d6ee2
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 5d4c5395c87c7bdc874f277a691e84081f68742d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323690"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880233"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>A szekvenciaelemek végrehajtásának elhalasztása az ER-formátumokban
 
@@ -32,7 +32,7 @@ Az Elektronikus jelentéskészítési [(ER)](general-electronic-reporting.md)[ke
 
 Ha beállítja a <a name="DeferredSequenceExecution"></a>**Halasztott végrehajtás** beállítást a sorszámozott formátumelemre a konfigurált formátumban, akkor elhalaszthatja az elem végrehajtását. Ebben az esetben az elem mindaddig nem fut, amíg a szülő többi elemét nem futtatták.
 
-Ha további tájékoztatást szeretne erről a funkcióról, végezze el a példafeladatot ebben a témakörben.
+A funkcióval kapcsolatos további tudnivalókat az alábbi példában olvashatja.
 
 ## <a name="limitations"></a>Korlátozások
 
@@ -44,7 +44,7 @@ A **Halasztott végrehajtás** beállítás nem alkalmazható olyan sorszámok e
 
 A következő lépésekkel megtudhatja, hogy a rendszergazda vagy elektronikus jelentéskészítési tanácsadó [szerepkörrel](../sysadmin/tasks/assign-users-security-roles.md) rendelkező felhasználó hogyan konfigurálhat egy olyan, szekvenciaelemet tartalmazó ER-formátumot, amelynél a végrehajtási sorrend eltér a formátumhierarchiában megadott sorrendtől.
 
-Ezeket a lépéseket a **USMF** vállalatban hajthatja végre a Microsoft Dynamics 365 Finance megoldásban.
+Ezek a lépések az **USMF** vállalatnál végezhetők el a Microsoft Dynamics 365 Pénzügyben.
 
 ### <a name="prerequisites"></a>Előfeltételek
 
@@ -53,7 +53,7 @@ A jelen példa végrehajtásához hozzáféréssel kell rendelkeznie az **USMF**
 - Elektronikus jelentések funkcióival foglalkozó konzulens
 - Rendszergazda
 
-Ha még nem végezte el a példát a következő témakörben: [Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md#Example), töltse le a minta ER-megoldás következő [konfigurációit](general-electronic-reporting.md#Configuration).
+Ha még nem fejeződött [be az XML-elemek ER-formátumban való végrehajtásának elhalasztása példáját,](er-defer-xml-element.md#Example)[töltse le az ER-minta](general-electronic-reporting.md#Configuration) megoldás következő konfigurációit.
 
 | Tartalom leírása            | Fájlnév |
 |--------------------------------|-----------|
@@ -93,7 +93,7 @@ A kezdés előtt le kell tölteni és menteni kell a minta ER-megoldás követke
 ### <a name="activate-a-configurations-provider"></a>Konfigurációs szolgáltató aktiválása
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
-2. Győződjön meg róla, hogy a **Honosítási konfigurációk** lap **Konfigurációs szolgáltatók** szakaszában a Litware, Inc. [konfigurációs szolgáltatója](general-electronic-reporting.md#Provider) (`http://www.litware.com`) szerepel a listán, és aktívként van megjelölve. Ha ez a konfigurációs szolgáltató nem szerepel a listán, vagy ha nem aktívként van megjelölve, hajtsa végre a [Konfigurációs szolgáltató létrehozása és megjelölje aktív](./tasks/er-configuration-provider-mark-it-active-2016-11.md) témakör lépéseit.
+2. Győződjön meg róla, hogy a **Honosítási konfigurációk** lap **Konfigurációs szolgáltatók** szakaszában a Litware, Inc. [konfigurációs szolgáltatója](general-electronic-reporting.md#Provider) (`http://www.litware.com`) szerepel a listán, és aktívként van megjelölve. Ha ez a konfigurációs szolgáltató nincs felsorolva, vagy ha nem aktívként van megjelölve, kövesse a Konfigurációszolgáltató létrehozása lépést, [és jelölje meg aktív cikkként](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
     ![Litware, Inc. mintavállalat a Lokalizációs konfigurációk oldalon.](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Szolgáltatás intervallumainak beállítása
-description: Ez a témakör az szolgáltatási intervallumok beállítását írja le. A szerviz intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssorok létrejönnek a szervizrendelések automatikus létrehozása esetén.
+description: Ez a témakör a szolgáltatási intervallumok beállítását ismerteti. A szerviz intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssorok létrejönnek a szervizrendelések automatikus létrehozása esetén.
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 943ed0b8f329b45225b61247998e15a1d82356aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 56b8a31af061b90aeddfb460f6e86c2c5636b280
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673438"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845953"
 ---
 # <a name="set-up-service-intervals"></a>Szolgáltatás intervallumainak beállítása  
 
@@ -48,7 +48,7 @@ A szerviz intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssor
 5. A **Gyakoriság** mezőben adja meg a 10 értéket.
 6. Az **Alt+S** billentyűkombinációval mentse a szolgáltatás intervallumát.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Szolgáltatás intervallumai](service-intervals.md)  
 

@@ -1,6 +1,6 @@
 ---
 title: Igény-előrejelzési beállítások
-description: Ez a témakör az igény-előrejelzés használata előtt elvégzendő telepítési feladatokat mutatja be.
+description: Ez a témakör ismerteti az igény-előrejelzés előkészítéséhez szükséges beállítási feladatokat.
 author: t-benebo
 ms.date: 11/23/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b52b970a8040dcba5a1fc59d297dc9ce1a3c53
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
-ms.translationtype: MT
+ms.openlocfilehash: 10a211e0e20f22dfbfdb4923841808750b6ed71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470009"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901002"
 ---
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet beállítani az igény-előrejelzést.  
+Ez a témakör ismerteti, hogyan lehet beállítani az igény-előrejelzést.  
 
 ## <a name="item-allocation-keys"></a>Cikkfelosztási kulcsok
 
@@ -245,7 +245,7 @@ A következő eljárás szerint hozzon létre egy új gépi oktatási munkaterü
 1. Töltse ki a varázslót a képernyőn látható útmutatások segítségével. Munka közben tartsa szem előtt a következő pontokat:
 
     - Használja az alapértelmezett beállításokat, hacsak a listában más pontok nem javasolnak eltérő beállításokat.
-    - Győződjön meg róla, hogy azt a földrajzi régiót választja ki, amely megfelel annak a régiónak, ahová az ellátásilánc-kezelés egy példányát telepítik. Ellenkező esetben az adatok egy része a régióhatárok határán haladhat végig. A további tudnivalókat lásd a témakör [későbbi](#privacy) adatvédelmi nyilatkozatában.
+    - Győződjön meg róla, hogy azt a földrajzi régiót választja ki, amely megfelel annak a régiónak, ahová az ellátásilánc-kezelés egy példányát telepítik. Ellenkező esetben az adatok egy része a régióhatárok határán haladhat végig. A további tudnivalókat lásd a cikk [későbbi](#privacy) adatvédelmi nyilatkozatában.
     - Használjon külön erőforrásokat, például erőforráscsoportokat, tárolási fiókokat, tárolóregisztrálókat, Azure-kulcsokat és hálózati erőforrásokat.
     - A varázsló **Azure-számítógép oktatási szolgáltatás kapcsolati paramétereinek** lapján meg kell adnia egy tárolási fiók nevét. Igény-előrejelzésre kijelölt fiók használata. Az igény-előrejelzés bemeneti és kimeneti adatait a rendszer ebben a tárolási fiókban tárolja.
 
@@ -278,7 +278,7 @@ A következő eljárás szerint állíthat be egy számítási erőforrást az A
 1. A Fürtök **számítása** lapon az Új **gombra választva megnyit egy varázslót,** amely segít új számítási fürt létrehozásában. Kövesse a képernyőn megjelenő utasításokat. A számítási fürt az igény-előrejelzések előállítására lesz használva. A beállítások befolyásolják a teljesítményt és a futtatás maximális párhuzamosítási szintjét. A következő mezők beállítása, de az összes többi mező alapértelmezett beállításainak használata:
 
     - **Név** – adja meg az *e2ecpuclustert*.
-    - **Virtuális gép mérete** – a beállítást annak megfelelően kell módosítani, hogy milyen adatmennyiségre számít az igény-előrejelzés bemeneteként. A csomópontok számának nem szabad 11-et túllépni, mert egy csomópont szükséges az igény-előrejelzés előállításának az aktiválásához, és az előrejelzés generálása esetén használható csomópontok maximális száma 10. (A csomópontok számát a <a0/parameters.py fájljában is be fogja állítani. [5. lépés: Csővezetékek szakasz](#create-pipelines) létrehozása.) Minden csomóponton több olyan dolgozói folyamat is lesz, amelyek párhuzamosan futtatnak előrejelzési parancsfájlokat. A feladatban található *dolgozói* *folyamatok száma a csomópontok csomópontok számának megfelelő × lesz*. *Ha például a számítási fürt StandardD4\_* (nyolc mag) típusú, és legfeljebb 11 csomópont, `nodes_count`*és ha az parameters.py fájlban 10-re* van állítva, akkor a párhuzamosság tényleges szintje 80.
+    - **Virtuális gép mérete** – a beállítást annak megfelelően kell módosítani, hogy milyen adatmennyiségre számít az igény-előrejelzés bemeneteként. A csomópontok számának nem szabad 11-et túllépni, mert egy csomópont szükséges az igény-előrejelzés előállításának az aktiválásához, és az előrejelzés generálása esetén használható csomópontok maximális száma 10. (A csomópontok számát a <a0/parameters.py fájljában is be fogja állítani. [5. lépés: Csővezetékek szakasz](#create-pipelines) létrehozása.) Minden csomóponton több olyan dolgozói folyamat is lesz, amelyek párhuzamosan futtatnak előrejelzési parancsfájlokat. A feladatban található *dolgozói* *folyamatok száma a csomópontok csomópontok számának megfelelő × lesz.* *\_ Ha például a számítási fürt szabványos D4* (8 mag) típusú, maximum 11 csomópont, `nodes_count`*és ha az parameters.py fájlban 10-re* van állítva, akkor a párhuzamosság tényleges szintje 80.
 
 ##### <a name="step-5-create-pipelines"></a><a name="create-pipelines"></a> 5. lépés: Csővezetékek létrehozása
 

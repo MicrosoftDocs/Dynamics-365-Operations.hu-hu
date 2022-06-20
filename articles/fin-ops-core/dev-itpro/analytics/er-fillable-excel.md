@@ -1,6 +1,6 @@
 ---
 title: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
-description: Ez a témakör azt mutatja be, hogyan lehet az Elektronikus jelentéskészítés (ER) formátumát egy Excel-sablon kitöltéséhez tervezni, majd a kimenő Excel-formátumú dokumentumokat generálni.
+description: Ez a témakör azt mutatja be, hogyan lehet elektronikus jelentés formátumot tervezni egy Excel-sablon kitöltéséhez, majd a kimenő Excel formátumú dokumentumok létrehozásához.
 author: NickSelin
 ms.date: 05/09/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4660aaf438ee091eed30387d984746ac2c3b4bd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811420"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854814"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811420"
 
 Elektronikus jelentéskészítő [(ER)](general-electronic-reporting.md) formátumkonfigurációt tervezhet, amely egy ER Microsoft Excel formátumösszetevővel rendelkezik, és amely konfigurálható a kimenő dokumentumok munkafüzet formátumú előállítására. Erre a célra külön ER formátumú komponenseket kell használni.
 
-Ha további tájékoztatást szeretne erről a funkcióról, kövesse a [Jelentések készítésének konfigurációja OPENXML formátumban](tasks/er-design-reports-openxml-2016-11.md) témakör lépéseit.
+Ha további tudnivalókat szeretne erről a funkcióról, kövesse a cikk lépéseit, [és tervezza meg az OPENXML formátumú jelentések létrehozásához szükséges konfigurációt](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="add-a-new-er-format"></a>Új ER-formátum hozzáadása
 
@@ -150,7 +150,7 @@ Ha elkezdi használni ezt a funkciót, amikor bármilyen OLYAN ER-formátumot fu
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. A **Lokalizációs konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** elemet.
-3. Az Elektronikus jelentés paraméterei lap Futási **idő** lapján állítsa Az Automatikus illesztés **sor magassága beállítást Igen beállításra** **.** **·**
+3. Az Elektronikus jelentés paraméterei lap Futási **idő** lapján állítsa Az Automatikus illesztés **sor magassága beállítást Igen beállításra**.**·** **·**
 
 Ha egyetlen ER-formátumban szeretné módosítani ezt a szabályt, a következő lépések szerint frissítse annak vázlatverzióját.
 
@@ -263,7 +263,7 @@ Egyetlen **Lap** összetevőhöz több **Lábléc** összetevőt is hozzáadhat,
 
 A hozzáadott **Lábléc** összetevőnél adja hozzá a **Szöveg\\Sztring**, **Szöveg\\DátumIdő** vagy egyéb típusú beágyazott összetevőit. Konfigurálja ezen összetevők kötését a lábléc kitöltési módjának beállítására.
 
-Speciális [formázási kódokat](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) is használhat a létrehozott lábléc tartalmának megfelelő formázása érdekében. A megközelítés használatának elsajátításához kövesse a témakör [1. példájában](#example-1) leírt lépéseket.
+Speciális [formázási kódokat](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) is használhat a létrehozott lábléc tartalmának megfelelő formázása érdekében. A módszer használatának elsajátítás érdekében kövesse az 1 [. példa](#example-1) e cikk későbbi, majd következő lépéseit.
 
 > [!NOTE]
 > Az ER-formátumok konfigurálásakor figyelembe kell venni az Excel-[korlátot](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) és az egyes fejlécek és láblécek maximális karakterszámát.

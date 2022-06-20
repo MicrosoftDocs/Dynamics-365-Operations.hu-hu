@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.26 szolgáltatásban (2022. május)
-description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.26 új vagy módosított szolgáltatásait írja le.
+description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.26 új vagy módosított szolgáltatásait ismerteti.
 author: kamaybac
 ms.date: 03/01/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 0724045824f39f316c8b3dbb06a48eb6ca6dbef3
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
-ms.translationtype: MT
+ms.openlocfilehash: 73f2f9a819312d8d6e111b998c68b65ba85e7818
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850757"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.26 szolgáltatásban (2022. május)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.26 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.1192 a buildszáma, és a következő módon érhető el:
+Ez a cikk felsorolja azokat a funkciókat, amelyek vagy újak, vagy módosulnak a Microsoft Dynamics 365 Supply Chain Management 10.0.26-os verziójában. Ennek a verziónak 10.0.1192 a buildszáma, és a következő módon érhető el:
 
 - **Kiadás előzetes verziója:** 2022. március
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2022. április
@@ -29,7 +29,7 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.26 változa
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Lehet, hogy frissítjük ezt a témát, hogy tartalmazza azokat a funkciókat, amelyek a téma eredeti közzététele után kerültek be a buildbe.
+Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Előfordulhat, hogy a cikk első közzététele után frissítjük ezt a cikket, hogy szerepeljenek a buildben található funkciók.
 
 | Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
@@ -56,11 +56,11 @@ Ha bármelyik funkciót be szeretné kapcsolni [, akkor ezt a funkciókezelésbe
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 
-A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelentősen frissítve. Ezek a témakörök nem feltétlenül kapcsolódnak a kiadáshoz hozzáadott új funkciókhoz, mint azt az előző szakaszok felsorolják. Előfordulhat azonban, hogy segítenek a meglévő funkciókból további lehetőségeket kihozni.
+Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikkeket. Ezek a cikkek nem feltétlenül kapcsolódnak az ehhez a verzióhoz hozzáadott új funkciókhoz, mint azt az előző szakaszok felsorolják. Előfordulhat azonban, hogy segítenek a meglévő funkciókból további lehetőségeket kihozni.
 
-| Szolgáltatásterület | Új vagy frissített témakörök |
+| Szolgáltatásterület | Új vagy frissített cikkek |
 |---|---|
-| Költségkezelés | A következő témakörökben frissített példák és diagramok voltak hozzáadva:<ul><li>[FIFO tényleges értékkel és jelöléssel](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO tényleges értékkel és jelöléssel](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO dátum tényleges értékkel és jelöléssel](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Mozgóátlagon alapuló önköltségi ár](../cost-management/running-average-cost-price.md)</li><li>[Súlyozott átlag tényleges értékkel és jelöléssel](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
+| Költségkezelés | A frissített példák és diagramok a következő cikkekhez hozzáadva:<ul><li>[FIFO tényleges értékkel és jelöléssel](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO tényleges értékkel és jelöléssel](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO dátum tényleges értékkel és jelöléssel](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Mozgóátlagon alapuló önköltségi ár](../cost-management/running-average-cost-price.md)</li><li>[Súlyozott átlag tényleges értékkel és jelöléssel](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
 | Beszerzés és forrás | [Beszerzésirendelés-sor adateltérései](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
 
 ## <a name="additional-resources"></a>További erőforrások
@@ -81,12 +81,12 @@ Tekintse meg a [Dynamics 365 és ipari felhők: 2022-es 1. kiadási hullám csom
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 
-A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltatásai](removed-deprecated-features-scm-updates.md) témakör azokat a funkciókat írja le, amelyek el lettek távolítva a Supply Chain Management szolgáltatásól vagy eltávolításuk ütemezve van.
+A [cikk Eltávolított Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) vagy elavult funkciói olyan funkciókat írnak le, amelyek már el vannak távolítva, illetve amelyek már el vannak távolítva vagy elavultak az Ellátásilánc-kezeléshez.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
 
-Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
+Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) az értékcsökkenési értesítés 12 hónappal az eltávolítás előtt törlődik az Eltávolított vagy elavult funkciókból.
 
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 

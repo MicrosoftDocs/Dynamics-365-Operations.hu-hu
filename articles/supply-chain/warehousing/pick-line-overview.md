@@ -1,6 +1,6 @@
 ---
 title: Mobileszköz-menüelem beállítása a kitárolási sor áttekintésének biztosításához
-description: Ez a témakör azt mutatja be, hogyan lehet meghatározni, hogy az összes munkasor listája mikor jelenik meg a raktári dolgozók számára, akik mobileszközön dolgoznak fel raktári munkát. Ez a lehetőség olyan raktári dolgozók számára hasznos, akik gyakran igényelnek áttekintést a kivételezési sorokról egy munkarendelésben, hogy optimalizálni tudják a kitárolási sorozatot.
+description: Ez a cikk bemutatja, hogy mikor jelenik meg a munkasorok listája a mobileszközön raktári munkát feldolgozó raktári dolgozók számára. Ez a lehetőség olyan raktári dolgozók számára hasznos, akik gyakran igényelnek áttekintést a kivételezési sorokról egy munkarendelésben, hogy optimalizálni tudják a kitárolási sorozatot.
 author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d3a8972c5d2f4c52dddef458ebd6079118cadfe
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 5b3bf0d94e6975f543361481b73c845ef9c56d05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901922"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885667"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Mobileszköz-menüelem beállítása a kitárolási sor áttekintésének biztosításához
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a kitárolási munka feldolgozásához használt mobileszköz-menüelemeket, amelyek a kitárolási munka feldolgozásához használatosak. A kitárolási sor áttekintése a raktári dolgozók számára lehetővé teszi az aktuális feladathoz kapcsolódó összes munkasor listájának megtekintését és a kiválasztást abból. Ez a funkció segítséget nyújt a dolgozóknak a kitárolási folyamat optimalizálásában. A szolgáltatás olyan beállításokat tartalmaz, amelyek a szokásos **Kihagyás** gombot cserélik le, hogy a dolgozók rögzített sorrendben, egyenként haladjanak végig a sorokon. (Ugyanakkor a gomb használatának lehetősége továbbra is elérhető.)
+Ez a témakör leírja, hogyan kell konfigurálni a kitárolási munka feldolgozásához használt mobileszköz-menüpontok kitárolási soráttekintő beállításokat. A kitárolási sor áttekintése a raktári dolgozók számára lehetővé teszi az aktuális feladathoz kapcsolódó összes munkasor listájának megtekintését és a kiválasztást abból. Ez a funkció segítséget nyújt a dolgozóknak a kitárolási folyamat optimalizálásában. A szolgáltatás olyan beállításokat tartalmaz, amelyek a szokásos **Kihagyás** gombot cserélik le, hogy a dolgozók rögzített sorrendben, egyenként haladjanak végig a sorokon. (Ugyanakkor a gomb használatának lehetősége továbbra is elérhető.)
 
 Az adminisztrátorok egyenként állíthatják be az egyes menüelemeket annak meghatározására, hogy a Raktárkezelés mobilalkalmazás milyen módon jeleníti meg a kitárolási sor áttekintését.
 

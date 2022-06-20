@@ -1,8 +1,8 @@
 ---
 title: Többnyelvű jelentések tervezése elektronikus jelentésekben
-description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) címkéit a többnyelvű jelentések tervezéséhez és létrehozásához.
+description: Ez a cikk bemutatja, hogy hogyan használhatók az elektronikus jelentési (ER) címkék a többnyelvű jelentések tervezésére és készítésére.
 author: NickSelin
-ms.date: 04/28/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: c042d609d68544aa4be5d707109a15b2ab8d422c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845744"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Többnyelvű jelentések tervezése elektronikus jelentésekben
 
@@ -142,6 +142,9 @@ Ha ilyen módon állítja be az ER-formátumot, akkor a jelentés az ER-címkék
 
 Ha egy hivatkozott címkén nem szerepel fordítás a formátum-végrehajtási környezet nyelvéhez, a program helyette az EN-US nyelvű címke szövegét használja.
 
+> [!TIP]
+> A szerkeszthető **ER formátumban a MAPPA** **és** egyedi fájlösszetevők használhatók a kimenő fájlok generálása során. A létrehozott fájl elnevezéseként konfigurálja az ÖSSZETEVŐ Fájlnév paraméterének ER-kifejezését [...](er-formula-language.md)**.** A címkéket a konfigurált kifejezésben használhatja. **Mivel a Fájlnév** paraméter alapértelmezés szerint nyelvről való, ezért az ebben a kifejezésben használt összes címke szövege futásidőben az alapértelmezett EN-US nyelven látható. A 10.0.28-as **és újabb verziókban azonban engedélyezni lehet a "Nyelv beállítása" paramétert a "Fájlnév" kifejezés funkcióra**. A **Fájlnév kifejezés** ezt követően **a** számításkor figyelembe veszi a Nyelvbeállítások paramétert.
+
 ## <a name="language"></a>Nyelv
 
 Az ER különböző módszereket támogat a létrejövő jelentések nyelvének meghatározására. A **Nyelvi beállítások** területén a **Formátum** lapon a következő értékek választhatók:
@@ -198,7 +201,7 @@ Egy ER-összetevő konfigurációját azon az ER-konfiguráció piszkozat verzi�
 
 ![A konfiguráció piszkozat állapotához való hozzáférést ajánló ER-konfigurációk lapja.](./media/er-multilingual-labels-configurations.png)
 
-A témakör korábbi részében ismertetett módon egy szerkeszthető ER-összetevőhöz hozzáadhatja a kötelező ER-címkéket. Ily módon meghatározhatja az ER-címkék szövegét az EN-USA nyelven. Ezután a beépített ER-funkcióval exportálhatja az ER-összetevő címkéit. Válassza ki azt a piszkozat verzióját az ER-konfigurációnak, amely a szerkeszthető ER-összetevőt tartalmazza, majd válassza ki az **Átváltás \> Címkék exportálása** elemet.
+A cikk korábbi leírása szerint szükséges ER-címkéket adhat hozzá egy szerkeszthető ER-összetevőhez. Ily módon meghatározhatja az ER-címkék szövegét az EN-USA nyelven. Ezután a beépített ER-funkcióval exportálhatja az ER-összetevő címkéit. Válassza ki azt a piszkozat verzióját az ER-konfigurációnak, amely a szerkeszthető ER-összetevőt tartalmazza, majd válassza ki az **Átváltás \> Címkék exportálása** elemet.
 
 ![Az ER-konfigurációk lap a kiválasztott konfigurációverzióból származó címkék exportálását teszi lehetővé.](./media/er-multilingual-labels-export.png)
 
@@ -229,7 +232,7 @@ Az ER-verziószámozása vezérli az ER-összetevőben bármely attribútumához
 
 A beépített [LISTOFFIELDS](er-functions-list-listoffields.md) ER-funkcióval olyan ER-címkék is elérhetők, amelyek az egyes összetevőkhöz vannak konfigurálva.
 
-A jelen témakörben korábban ismertetett módon a **Címke** és **Leírás** attribútuma minden [modell](#LinkModelEnum) vagy [formátum](#LinkFormatEnum) ER-számlálás értékének ER-címkéhez kapcsolható, amely elérhető a megfelelő ER-összetevőben. Beállítható egy olyan ER-kifejezés, amelynél a **LISTOFFIELDS** funkciót hívja meg az ER-enumerálás használatával argumentumként. Ez a kifejezés visszaad egy listát, amely egy rekordot tartalmaz, amely a funkció argumentumaként meghatározott összes ER-számlálás értékére vonatkozik. Minden rekord tartalmazza egy ER-címke értékét, amely egy ER-enumerálási értékhez van kapcsolva:
+A cikk korábbi leírása szerint minden modell, illetve ER enumeráció formátumának címke- és leírásattribútumát egy olyan ER-címkéhez lehet kapcsolni, **·** **·**[...](#LinkModelEnum)[amely](#LinkFormatEnum) elérhető a megfelelő ER összetevőben. Beállítható egy olyan ER-kifejezés, amelynél a **LISTOFFIELDS** funkciót hívja meg az ER-enumerálás használatával argumentumként. Ez a kifejezés visszaad egy listát, amely egy rekordot tartalmaz, amely a funkció argumentumaként meghatározott összes ER-számlálás értékére vonatkozik. Minden rekord tartalmazza egy ER-címke értékét, amely egy ER-enumerálási értékhez van kapcsolva:
 
 - A **Címke** attribútumaihoz kapcsolt ER-címke értékét a visszaküldött rekord **Címke** mezőjében tárolja a program.
 - A **Leírás** attribútumaihoz kapcsolt ER-címke értékét a visszaküldött rekord **Leírás** mezőjében tárolja a program.

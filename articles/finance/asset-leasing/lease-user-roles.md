@@ -1,6 +1,6 @@
 ---
 title: Lízingfelhasználói szerepkörök hozzárendelése
-description: Ez a témakör az Eszközlízinghez használt biztonsági szerepeket ismerteti. Azt is bemutatja, hogyan rendelhet hozzá felhasználókat ezekhez a szerepkörökhöz.
+description: Ez a témakör a tárgyi eszközök frissítésére használt biztonsági szerepköröket írja le. Azt is bemutatja, hogyan rendelhet hozzá felhasználókat ezekhez a szerepkörökhöz.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1a9e7772448314e0c3fd101576c07a5b6508270f
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 38c859d64742d582d0709506d83600ea26a21147
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878131"
 ---
 # <a name="assign-lease-user-roles"></a>Lízingfelhasználói szerepkörök hozzárendelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az Eszközlízinghez használt biztonsági szerepeket ismerteti. Azt is bemutatja, hogyan rendelhet hozzá felhasználókat ezekhez a szerepkörökhöz.
+Ez a témakör a tárgyi eszközök frissítésére használt biztonsági szerepköröket írja le. Azt is bemutatja, hogyan rendelhet hozzá felhasználókat ezekhez a szerepkörökhöz.
 
 Három felhasználói szerepkör különbözteti meg a hozzáférést az Eszközlízingben. Az egyik szerepkör megfelelő a lízingek karbantartásához, a másik a lízingek megtekintéséhez, a harmadik pedig a lízingadminisztrátor feladatainak ellátásához. Minden szerepkör rendelkezik az összes lízinglapra vonatkozó speciális engedélyekkel, és mindegyik lehetővé teszi a felhasználók számára a lízingek megtekintését, létrehozását, szerkesztését vagy törlését a feladatköreiknek megfelelően.
 

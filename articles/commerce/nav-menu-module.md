@@ -1,6 +1,6 @@
 ---
-title: Navigációs menü modulja
-description: Ez a témakör a navigációs menü modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: Navigációs menü modul
+description: Ez a témakör leírja a navigációs menümodulokat, és bemutatja, hogyan lehet őket a webhelyoldalakhoz adni Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 1af1fc03ead21150415295d83d292afe0110e5bd
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: d2ac2bcf4324f2386c97fbf264c076062e6f304c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852745"
 ---
 # <a name="navigation-menu-module"></a>Navigációs menü modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a navigációs menü modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör leírja a navigációs menümodulokat, és bemutatja, hogyan lehet őket a webhelyoldalakhoz adni Microsoft Dynamics 365 Commerce.
 
 A navigációs menü modulok elsődleges célja, hogy a webhely felhasználói a Dynamics 365 Commerce központban megadott csatorna-navigációs hierarchia alapján böngésszék a termékeket és a weboldalakat. A navigációs menü modulban konfigurált cikkek a webhely fejlécének navigációs részeként jelennek meg. A navigációs menü modulok olyan statikus menüelemeket is támogatnak, amelyek az e-commerce webhely más lapjaira hivatkoznak.
 
@@ -62,7 +62,7 @@ A navigációs menü modulnak a fejléc-modulba való felvételével kapcsolatos
 
 [Útkövetési modul](add-breadcrumb.md)
 
-[Helyválasztó modul](site-selector.md)
+[Webhelyválasztó modul](site-selector.md)
 
 [Vásárlásmező-modul](add-buy-box.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Szállítási cím modul
-description: Ez a témakör ismerteti szállítási cím modult, és bemutatja, hogyan konfigurálhatjuk a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör leírja a szállítási cím modult, és bemutatja, hogyan kell konfigurálni a modulban Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 02/11/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 30baef62e03cdaa766133efc4b182c61da3dc7b67e077d80716a035f0b5e40e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e30e639b7ba1c0caaf72fa66d13f80d04c2e861c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765194"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882196"
 ---
 # <a name="shipping-address-module"></a>Szállítási cím modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti szállítási cím modult, és bemutatja, hogyan konfigurálhatjuk a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör leírja a szállítási cím modult, és bemutatja, hogyan kell konfigurálni a modulban Microsoft Dynamics 365 Commerce.
 
 A szállítási cím modul segítségével a vásárlók hozzáadhatnak vagy kiválaszthatnak egy szállítási címet egy rendeléshez a fizetési folyamat során. Ha egy vásárló be van jelentkezve, minden addig mentett cím megjelenítésre kerül a vásárlónak, és a vásárló akár közülük is választhat. A vevő új címet is hozzáadhat. A szállítási cím modul minden cikkre használható, amely szállítást igényel.
 

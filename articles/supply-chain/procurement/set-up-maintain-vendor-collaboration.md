@@ -1,6 +1,6 @@
 ---
 title: Szállítói együttműködés beállítása és karbantartása
-description: Ez a témakör ismerteti a szállítói együttműködés beállítását a Dynamics 365 Supply Chain Management alkalmazásban. Bemutatja azt is, hogyan lehet új szállítói együttműködési felhasználókat létesíteni, és kezelni ezeknek a felhasználóknak a biztonsági szerepköreit.
+description: Ez a cikk bemutatja, hogyan lehet beállítani a szállítók együttműködési funkcióját Dynamics 365 Supply Chain Management. Bemutatja azt is, hogyan lehet új szállítói együttműködési felhasználókat létesíteni, és kezelni ezeknek a felhasználóknak a biztonsági szerepköreit.
 author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
-ms.translationtype: MT
+ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890828"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Szállítói együttműködés beállítása és karbantartása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8677562"
 
 A szállítói együttműködési felület a beszerzési rendelésekkel, a számlákkal és a külső szállító felhasználóknak szánt bizományos készlettel kapcsolatos korlátozott információkat jelenít meg. Ezen a felületen a szállítók válaszolhatnak ajánlatkérésekre (RFQ-k) is, és megtekinthetik és szerkeszthetik az alapvető vállalati adatokat.
 
-Ez a témakör ismerteti a szállítói együttműködés beállítását a Dynamics 365 Supply Chain Management alkalmazásban. Bemutatja azt is, hogyan munkafolyamatot beállítani új szállítói együttműködési felhasználók létesítéséhez, és hogyan lehet kezelni ezeknek a felhasználóknak a biztonsági szerepköreit.
+Ez a cikk bemutatja, hogyan lehet beállítani a szállítók együttműködési funkcióját Dynamics 365 Supply Chain Management. Bemutatja azt is, hogyan munkafolyamatot beállítani új szállítói együttműködési felhasználók létesítéséhez, és hogyan lehet kezelni ezeknek a felhasználóknak a biztonsági szerepköreit.
 
 > [!NOTE]
 > A szállítói együttműködési biztonsági szerepkörök beállításával kapcsolatos információk csak a Pénzügy és műveletek aktuális verziójára vonatkoznak. A Microsoft Dynamics AX 7.0 (2016. február) és a Microsoft Dynamics AX 7.0.1 (2016. május) alkalmazásverziókban a **Szállítói portál** modul segítségével működhet együtt a szállítókkal. A szállítói portál felhasználói engedélyekkel kapcsolatos tudnivalókat a Microsoft Dynamics AX alkalmazásban lásd a [Szállítói portál felhasználói biztonsága](configure-security-vendor-portal-users.md) részben.
@@ -77,7 +77,7 @@ A **Szállító (külső) szerepkör** a beszerzési rendelésekkel dolgozó sz�
 
 ## <a name="set-up-security-roles-that-are-used-when-prospective-vendors-are-onboarded"></a>A potenciális szállítók beléptetésekor biztonsági szerepkörök beállítása
 
-Szállítók beléptetéséhez potenciális szállítók regisztrálási kérelmével, a külső biztonsági szerepkört kell beállítani a külső szállítókhoz. Ezt a szerepkört az új felhasználókhoz rendeli hozzá a rendszer a **Felhasználói kérelem munkafolyamat (platform)** típusú munkafolyamat által szabályozott létrehozási folyamat során. A további tudnivalókat lásd a témakör későbbi [Szállítói együttműködési felhasználói kérelmek feldolgozására vonatkozó munkafolyamatok beállítása](#set-up-workflows-to-process-vendor-collaboration-user-requests) című részében.
+Szállítók beléptetéséhez potenciális szállítók regisztrálási kérelmével, a külső biztonsági szerepkört kell beállítani a külső szállítókhoz. Ezt a szerepkört az új felhasználókhoz rendeli hozzá a rendszer a **Felhasználói kérelem munkafolyamat (platform)** típusú munkafolyamat által szabályozott létrehozási folyamat során. A további tudnivalókat a [cikk](#set-up-workflows-to-process-vendor-collaboration-user-requests) későbbi, A szállítói együttműködési felhasználói kérelmek feldolgozására vonatkozó munkafolyamatok beállítása című részében olvashatja.
 
 A potenciális szállítók felvételével kapcsolatos tudnivalókat lásd [Szállítók felvétele](vendor-onboarding.md).
 

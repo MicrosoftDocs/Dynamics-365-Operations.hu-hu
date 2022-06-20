@@ -1,6 +1,6 @@
 ---
 title: Kerekítési szabályok beállítása
-description: Ez a témakör azt mutatja be, hogyan állíthatók be a kerekítési szabályok a Dynamics 365 Human Resources alkalmazásban, hogy megfeleljenek a szervezet igényeinek.
+description: Ez a témakör azt ismerteti, hogyan lehet a szervezet Dynamics 365 Human Resources igényeinek megfelelő kerekítési szabályokat beállítani.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 31070d498499a380d91f681f8a8e78342f9a2120
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 76d53e6a306a930eb6a99de69cc0eac7964e299a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696096"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861131"
 ---
 # <a name="set-up-rounding-rules"></a>Kerekítési szabályok beállítása
 

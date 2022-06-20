@@ -1,6 +1,6 @@
 ---
 title: VALUEIN ER-függvény
-description: A témakör tájékoztatást nyújt a VALUEIN Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
+description: Ez a cikk a VALUEIN Elektronikus jelentés (ER) funkcióval kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
 ms.date: 12/14/2021
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efa811df360b2ca38eb59bac849e70041405fa81
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: ca4bd5ad671e1c70027a2cdaa0797bfdc89cf914
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922362"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909307"
 ---
 # <a name="valuein-er-function"></a>VALUEIN ER-függvény
 
@@ -64,7 +64,7 @@ Az eredményül kapott *Logikai* érték.
 Bizonyos esetekben az `EXISTS JOIN` operátor használatával lefordítható egy adatbázis SQL-utasításra.
 
 > [!NOTE]
-> A függvény által visszaadott érték használata különböző, attól függően, hogy ez a funkció használatos-e a funkció vagy a `VALUEIN`[funkció kiválasztási](er-functions-list-filter.md#usage-notes)[`FILTER`](er-functions-list-filter.md) feltételeinek [`WHERE`](er-functions-list-where.md) megadására.
+> A függvény által `VALUEIN` visszaadott [érték](er-functions-list-filter.md#usage-notes) használata különböző, attól függően, [`FILTER`](er-functions-list-filter.md) hogy ez a funkció használatos-e a funkció vagy a funkció kiválasztási feltételeinek megadására [`WHERE`](er-functions-list-where.md).
 
 ## <a name="example-1"></a>1. példa
 

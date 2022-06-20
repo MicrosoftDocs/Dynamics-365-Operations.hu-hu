@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi időszakok tömeges lezárása
-description: Ez a cikk bemutatja, hogyan várakoztatható, illetve hogyan zárható le véglegesen egy időszak egyszerre, több jogi személyre vonatkoztatva.
+description: Ez a cikk bemutatja, hogyan lehet egy adott időszakot vagy egynél több jogi személyt egyszerre véglegesen lezárni vagy véglegesen lezárni.
 author: aprilolson
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0acaad0d6e89fe7c81537e554b36ffb210e5abad
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722066"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872441"
 ---
 # <a name="mass-financial-period-close"></a>Pénzügyi időszakok tömeges lezárása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a cikk bemutatja, hogyan várakoztatható, illetve hogyan zárható le véglegesen egy időszak egyszerre, több jogi személyre vonatkoztatva. Ezenkívül a feladat megmutatja, hogyan lehet bizonyos modulokra korlátozni a felhasználói csoportok könyvelését.
+Ez a cikk bemutatja, hogyan lehet egy adott időszakot vagy egynél több jogi személyt egyszerre véglegesen lezárni vagy véglegesen lezárni. Ezenkívül a feladat megmutatja, hogyan lehet bizonyos modulokra korlátozni a felhasználói csoportok könyvelését.
 
 1. A navigációs ablakban menjen a Főkönyv **és a > időszak > főkönyvi naptárakba**. Vegye figyelembe, hogy a megjelenített jogi személyek listája a lapon kiválasztott pénzügyi naptár függvénye. Csak azok a jogi személyek jelennek meg, akik a kijelölt pénzügyi naptárat használják.
 2. Válassza ki a **Szerkesztés** opciót.

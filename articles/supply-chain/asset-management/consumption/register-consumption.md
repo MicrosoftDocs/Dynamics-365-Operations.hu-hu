@@ -1,6 +1,6 @@
 ---
 title: Felhasználás regisztrálása
-description: Ez a témakör azt mutatja be, hogyan lehet felhasználást regisztrálni az Eszközkezelés modulban.
+description: Ez a cikk bemutatja, hogyan lehet regisztrálni a felhasználást az eszközkezelésben.
 author: johanhoffmann
 ms.date: 08/21/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 619da584ea37e80b1803ae5983e52e8ee4053f3751a8df75a8f5bc1ddf7e65d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886044"
 ---
 # <a name="register-consumption"></a>Felhasználás regisztrálása
 
@@ -90,7 +90,7 @@ Felhasználási regisztrációk végrehajtásakor a rendszer egy megadott sorren
 - *Cikkregisztrációk:* először a napló fejlécében szereplő pénzügyi dimenziókat adja hozzá a program, ha vannak ilyen dimenziók. Majd a kapcsolódó munkarendelés-projekt pénzügyi dimenzióinak felvételére kerül sor. A következő lépés a hely pénzügyi dimenzióinak felvétele. Végezetül a cikk pénzügyi dimenzióit adja hozzá a program.
 
 >[!NOTE]
->A program mindhárom regisztrációtípusnál ellenőrzi a pénzügyi dimenzió kombinációját, és az érvénytelen kombinációkat üresen hagyja. Ez a szokásos beállítás más Finance and Operations alkalmazások esetében.
+>A program mindhárom regisztrációtípusnál ellenőrzi a pénzügyi dimenzió kombinációját, és az érvénytelen kombinációkat üresen hagyja. Ez a szokásos beállítás más Finance and Operations alkalmazásokkal.
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Eszközök telepítése munkavégzési helyszínekre
-description: Ez a cikk azt ismerteti, hogyan telepíthetők eszközök a munkavégzési helyszínekre az Eszközök kezelése szolgáltatásban.
+description: Ez a cikk bemutatja, hogyan lehet telepíteni az eszközöket az eszközkezelés működési helyeire.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894501"
 ---
 # <a name="install-assets-on-functional-locations"></a>Eszközök telepítése munkavégzési helyszínekre
 
@@ -28,7 +28,7 @@ ms.locfileid: "6775747"
 
  
 
-A munkavégzési helyszínek struktúrájának kialakítása után eszközöket kell telepíteni a releváns munkavégzési helyszínekre. Ez a cikk azt ismerteti, hogyan telepíthetők eszközök ezekre a munkavégzési helyszínekre az Eszközök kezelése szolgáltatásban. Az eszközök létrehozásáról a [Bevezetés: eszközök](../objects/introduction-to-objects.md) cikkben talál további információt.
+A munkavégzési helyszínek struktúrájának kialakítása után eszközöket kell telepíteni a releváns munkavégzési helyszínekre. Ez a cikk bemutatja, hogy hogyan telepíthetők az eszközök az Eszközkezelés ezen funkcionális helyeire. Az eszközök létrehozásáról a [Bevezetés: eszközök](../objects/introduction-to-objects.md) cikkben talál további információt.
 
 Ha hozott létre eszközstruktúrát, a teljes struktúrát telepíteni kell a munkavégzési helyszíneken. Ennek megfelelően egy munkavégzési helyszínen csak fölérendelt eszközök (fölérendelt eszközzel nem rendelkező felső szintű eszközök) telepíthetők. Minden összekapcsolt alárendelt eszköz (aleszköz) a munkavégzési helyszínen is települ. Amikor eszközöket telepít egy munkavégzési helyszínen, a munkavégzési helyszín pénzügyi dimenziói – a munkavégzési helyszín típusának beállításától függően – automatikusan átkerülhetnek az eszközre. A munkavégzési helyszínek típusainak beállításáról a [Munkavégzési helyszínek típusai](../setup-for-functional-locations/functional-location-types.md) című cikkben talál további információt.
 

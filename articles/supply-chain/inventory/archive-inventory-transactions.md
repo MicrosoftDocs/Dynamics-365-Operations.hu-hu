@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: c63cdee862e2e22649a3eb58ae37597741770e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736061"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874101"
 ---
 # <a name="archive-inventory-transactions"></a>Készlettranzakciók archiválása
 
 [!include [banner](../../includes/banner.md)]
 
-Az idő folyamán a készlettranzakciók táblája (`InventTrans`) tovább nő és több adatbázisterületet foglal el. Emiatt a táblába küldött lekérdezések fokozatosan lelassulnak. Ez a témakör azt írja le, hogy hogyan archiválhatja a *Készlettranzakciók archívuma* funkcióval a készlettranzakciók adatait, hogy ezzel javítsa a rendszer teljesítményét.
+Az idő folyamán a készlettranzakciók táblája (`InventTrans`) tovább nő és több adatbázisterületet foglal el. Emiatt a táblába küldött lekérdezések fokozatosan lelassulnak. Ez a cikk azt ismerteti, hogyan *lehet* archiválni a készlettranzakciók archív funkcióját a készlettranzakciók adatainak archiválásához, hogy ezzel javítsa a rendszer teljesítményét.
 
 > [!NOTE]
 > Csak a pénzügyileg frissített készlettranzakciók archiválhatók a kiválasztott lezárt főkönyvi időszakban. Az archiváláshoz a pénzügyileg frissített kimenő készlettranzakciók kiadási állapotának *Eladva* értéknek kell lennie, a bejövő készlettranzakcióknak *Beszerzett* bevételezési állapotúnak kell lennie.
@@ -35,7 +35,7 @@ Ha egy `itemId` és `inventDimId` kombináció csak egy bevételezési vagy kibo
 
 ## <a name="turn-on-the-feature-in-your-system"></a>A funkció bekapcsolása a rendszerben
 
-Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a kapcsolja be az *Készlettranzakciók archívuma* funkciót. Ne feledje, hogy ezt a funkciót engedélyezés után nem lehet letiltani.
+Ha a rendszer még nem tartalmazza az ebben a cikkben ismertetett funkciókat, [használja a Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) funkciót, *és kapcsolja be a Készlettranzakciók archívum funkcióját*. Ne feledje, hogy ezt a funkciót engedélyezés után nem lehet letiltani.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Megfontolandó szempontok a készlettranzakciók archiválását megelőzően
 

@@ -1,6 +1,6 @@
 ---
 title: Anyagfelhasználás regisztrálása mobileszköz segítségével
-description: Ez a témakör olyan munkafolyamatot ír le, amely lehetővé teszi a nyersanyag-felhasználás regisztrálását a termelésben egy kézi eszköz használatával.
+description: Ez a cikk egy olyan munkafolyamatot ír le, amely kézi eszközzel lehetővé teszi a nyersanyag-felhasználás regisztrációját a termelésben.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1aeb527255358ecafafcb64185cb9dcb31243d499c533f9c9390d79658534e3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e1dbc399eb06d1049950bbdd755b479ef275563
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849242"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Anyagfelhasználás regisztrálása mobileszköz segítségével
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan munkafolyamatot ír le, amely lehetővé teszi a nyersanyag-felhasználás regisztrálását a termelésben egy kézi eszköz használatával.
+Ez a cikk egy olyan munkafolyamatot ír le, amely kézi eszközzel lehetővé teszi a nyersanyag-felhasználás regisztrációját a termelésben.
 
 ## <a name="introduction"></a>Bevezetés
 

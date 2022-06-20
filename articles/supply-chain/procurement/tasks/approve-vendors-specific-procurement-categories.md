@@ -1,6 +1,6 @@
 ---
 title: Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan
-description: Ez a témakör azt mutatja be, hogyan lehet jóváhagyni a Dynamics 365 Supply Chain Management megoldásban szállítókat az egyes beszerzési kategóriákhoz.
+description: Ez a témakör leírja, hogyan lehet jóváhagyni a szállítókat a következőben megadott beszerzési kategóriákhoz:Dynamics 365 Supply Chain Management
 author: GalynaFedorova
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4247833a011704a9e3c83ad4a2b464ee49d6b3f5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: bb6861c1cfbc7702fae74b4aa97fe618b50ac0bb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670188"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903985"
 ---
 # <a name="approve-vendors-for-specific-procurement-categories"></a>Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet jóváhagyni a Dynamics 365 Supply Chain Management megoldásban szállítókat az egyes beszerzési kategóriákhoz. Amikor egy beszerzési igénylést hoznak létre, lehet szükséges lesz egy engedélyezett vagy preferált szállító kiválasztása, attól függően, hogy a beszerzési irányelvek hogy vannak beállítva. Ez az eljárás bemutatja, hogyan adja meg, hogy a szállító jóváhagyott vagy preferált egy adott beszerzési kategóriához. Ezt a feladatot általában egy beszerzési szakember végzi el. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
+Ez a témakör leírja, hogyan lehet jóváhagyni a szállítókat a következőben megadott beszerzési kategóriákhoz:Dynamics 365 Supply Chain Management Amikor egy beszerzési igénylést hoznak létre, lehet szükséges lesz egy engedélyezett vagy preferált szállító kiválasztása, attól függően, hogy a beszerzési irányelvek hogy vannak beállítva. Ez az eljárás bemutatja, hogyan adja meg, hogy a szállító jóváhagyott vagy preferált egy adott beszerzési kategóriához. Ezt a feladatot általában egy beszerzési szakember végzi el. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
 
 1. A Navigációs ablaktáblán válassza a **Modulok > Beszerzés és forrás > Szállítók > Összes beszállító** elemet.
 2. Válassza ki a szállítót, amelyet be szeretne állítani a kategóriához jóváhagyott vagy preferált szállítóként.

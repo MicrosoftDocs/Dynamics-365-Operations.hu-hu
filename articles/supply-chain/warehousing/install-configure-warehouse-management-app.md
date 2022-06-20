@@ -1,6 +1,6 @@
 ---
-title: A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
-description: Ez a témakör azt mutatja be, hogyan lehet telepíteni a Raktárkezelés alkalmazást mindegyik mobileszközre, és konfigurálni a Microsoft Dynamics 365 Supply Chain Management környezethez való csatlakozásra.
+title: A Warehouse Management mobilalkalmazás telepítése és csatlakoztatása
+description: Ez a cikk bemutatja, hogy hogyan lehet telepíteni a Raktárkezelés mobilalkalmazást minden mobileszközre, és konfigurálni azt a Microsoft-környezethez való kapcsolódásra Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
+ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103413"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8941766"
 ---
-# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
+# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás telepítése és csatlakoztatása
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Ez a témakör ismerteti, hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást. Ha a régi raktári alkalmazás (már elavult) konfigurálásával kapcsolatos információkat keres, tekintse meg a következőt: [A raktározási alkalmazás telepítése és csatlakoztatása](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Ez a témakör azt ismerteti, hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást. Ha a régi raktári alkalmazás (már elavult) konfigurálásával kapcsolatos információkat keres, tekintse meg a következőt: [A raktározási alkalmazás telepítése és csatlakoztatása](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Ez a témakör azt mutatja be, hogyan lehet letölteni és telepíteni a Raktárkezelés mobilalkalmazást mindegyik mobileszközre, és konfigurálni az alkalmazást a Supply Chain Management-környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
+Ez a cikk bemutatja, hogy hogyan lehet letölteni és telepíteni az egyes mobileszközre a Raktárkezelés mobilalkalmazást, és hogyan kell konfigurálni az alkalmazást az Ellátásilánc-kezelési környezethez való kapcsolódáshoz. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
 
 ## <a name="system-requirements"></a>Rendszerkövetelmények
 
@@ -39,7 +39,7 @@ A Raktárkezelés mobilalkalmazás Windows és Google Android operációs rendsz
 - Windows 10 (Univerzális Windows-platform \[UWP\]) 2018. októberi frissítés, 1809 (10.0.17763-as build) vagy újabb
 - Android 4.4 vagy újabb
 
-## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>A Raktárkezelés mobilalkalmazás funkcióinak és kikapcsolása az Ellátásilánc-kezelés eszközben
+## <a name="turn-warehouse-management-mobile-app-features-on-or-off-in-supply-chain-management"></a>A Raktárkezelés mobilalkalmazás funkcióinak be- és kikapcsolása az Ellátásilánc-kezelés eszközben
 
 A Raktárkezelés mobilalkalmazás *használatához be kell kapcsolva lennie a rendszerben az új raktári alkalmazás felhasználói beállításainak,* ikonjainak és lépéscímének. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
 
@@ -87,11 +87,11 @@ Ahhoz, hogy a Raktárkezelés mobilalkalmazás együttműködhessen a kívánt S
 
     ![Alkalmazás regisztrálása varázsló.](media/app-connect-azure-register-wizard.png "Alkalmazás regisztrálása varázsló")
 
-1. Megnyílik az új alkalmazás regisztrációja. Jegyezze fel az **Alkalmazás (ügyfél) azonosító** értékét, mert később szüksége lesz rá. Erre az azonosítóra a témakör későbbi részében *ügyfélazonosítóként* hivatkozunk.
+1. Megnyílik az új alkalmazás regisztrációja. Jegyezze fel az **Alkalmazás (ügyfél) azonosító** értékét, mert később szüksége lesz rá. Erre az azonosítóra a cikk később ügyfélazonosítóként *hivatkozik*.
 
     ![Alkalmazás (ügyfél) azonosítója.](media/app-connect-azure-app-id.png "Alkalmazás (ügyfél) azonosítója")
 
-1. Válassza a **Tanúsítvány és titkok** lehetőséget a **Kezelés** listában. Ezt követően válassza ki a következő gombok egyikét, attól függően, hogy hogyan szeretné konfigurálni az alkalmazást hitelesítésre. (További információkért tekintse meg a [Hitelesítés tanúsítványok vagy titkos ügyfélkód használatával](#authenticate) fejezetet a témakör későbbi részében.)
+1. Válassza a **Tanúsítvány és titkok** lehetőséget a **Kezelés** listában. Ezt követően válassza ki a következő gombok egyikét, attól függően, hogy hogyan szeretné konfigurálni az alkalmazást hitelesítésre. (További tájékoztatás: [Hitelesítés tanúsítvány vagy ügyfél titkos szakaszának használatával](#authenticate) a cikk későbbi részében.)
 
     - **Tanúsítvány feltöltése** – A titkos kódként használt tanúsítvány feltöltése. Ezt a megközelítést ajánljuk, mert a biztonságosabb, és nagyobb mértékben automatizálható is. Ha Windows-eszközökön futtatja a Raktárkezelés mobilalkalmazást, jegyezze fel a tanúsítvány feltöltése után megjelenő **Ujjlenyomat** értéket. Erre az értékre akkor lesz szükségem amikor Windows-eszközökön konfigurálja a tanúsítványt.
     - **Új titkos ügyfélkód** – Hozzon létre egy kulcsot a kulcs leírásának és időtartamának megadásával a **Jelszavak** részben, majd válassza a **Hozzáadás** elemet. Készítsen másolatot a kulcsról, és tárolja biztonságosan.
@@ -101,7 +101,7 @@ Ahhoz, hogy a Raktárkezelés mobilalkalmazás együttműködhessen a kívánt S
 Az Azure AD webszolgáltatási alkalmazásainak beállításával kapcsolatos további tudnivalókat lásd a következő forrásokban:
 
 - A webszolgáltatási alkalmazások Windows PowerShell eszközzel, az Azure AD rendszerben történő beállításával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Útmutató: Az Azure PowerShell használata egy tanúsítvánnyal rendelkező szolgáltatási főkiszolgáló létrehozásához](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- A webszolgáltatási alkalmazások Azure AD rendszerben való manuális létrehozásával kapcsolatos további tudnivalókat lásd a következő témakörökben:
+- A webszolgáltatás-alkalmazások kézi létrehozásáról a Azure AD következő cikkekben olvashat részletesen:
 
     - [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app)
     - [Útmutató: Erőforrások elérésére képes Azure AD alkalmazás és szolgáltatási főkiszolgáló létrehozása portál használatával](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -129,13 +129,13 @@ A következő lépésekkel engedélyezheti az Supply Chain Management számára 
     ![Azure Active Directory alkalmazások.](media/app-connect-aad-apps.png "Azure Active Directory alkalmazások")
 
 > [!TIP]
-> Ezeknek a beállításoknak a használatának az egyik módja az, hogy létrehoz egy ügyfélazonosítót az Azure szolgáltatásban minden egyes fizikai eszközhöz, majd hozzáadja az egyes ügyfélazonosítókat az **Azure Active Directory alkalmazások** oldalhoz. Ezt követően, ha elveszik egy eszköz, egyszerűen eltávolíthatja a Supply Chain Management alkalmazáshoz való hozzáférést, ha eltávolítja az ügyfélazonosítóját ezen az oldalon. (Ez a megközelítés működik, mert az egyes eszközökre mentett kapcsolati hitelesítő adatok szintén meghatároznak egy ügyfélazonosítót, amint azt a témakör későbbi része ismerteti.)
+> Ezeknek a beállításoknak a használatának az egyik módja az, hogy létrehoz egy ügyfélazonosítót az Azure szolgáltatásban minden egyes fizikai eszközhöz, majd hozzáadja az egyes ügyfélazonosítókat az **Azure Active Directory alkalmazások** oldalhoz. Ezt követően, ha elveszik egy eszköz, egyszerűen eltávolíthatja a Supply Chain Management alkalmazáshoz való hozzáférést, ha eltávolítja az ügyfélazonosítóját ezen az oldalon. (Ez a megközelítés működik, mert az egyes eszközökre mentett kapcsolati hitelesítő adatok szintén meghatároznak egy ügyfélazonosítót, amint azt a jelen cikk későbbi leírása ismerteti.)
 >
 > Ezenkívül az egyes ügyfélazonosítók alapértelmezett nyelv-, számformátum- és időzóna-beállításait az itt beállított **Felhasználói azonosítóhoz** beállított beállítások határozzák meg. Tehát ezeket a beállításokat használhatja az egyes eszközök vagy eszközgyűjtemények alapértelmezett beállításainak létrehozására, az ügyfélazonosító alapján. Ezeket az alapértelmezett beállításokat azonban felülbírálja a rendszer, ha azok a *raktári alkalmazás felhasználói fiókjához* is be vannak állítva, amelyről a dolgozó bejelentkezik az eszközre. (További tudnivalókat lásd: [Mobileszközök felhasználói azonosítói](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Hitelesítés tanúsítványok vagy titkos ügyfélkód használatával
 
-Az Azure AD használatával történő hitelesítéssel biztonságos módon csatlakoztathat egy mobileszközt a Supply Chain Management alkalmazsáshoz. A hitelesítést elvégezheti titkos ügyfélkód vagy tanúsítványok használatával. Ha a csatlakozási beállításokat importálja, javasoljuk, hogy a titkos ügyfélkód helyett helyett használjon tanúsítványt. Mivel a titkos ügyfélkódot mindig biztonságosan kell tárolni, nem importálhatja azt egy kapcsolatbeállítási fájlból vagy egy QR-kódból, a témakörben később ismertetett módon.
+Az Azure AD használatával történő hitelesítéssel biztonságos módon csatlakoztathat egy mobileszközt a Supply Chain Management alkalmazsáshoz. A hitelesítést elvégezheti titkos ügyfélkód vagy tanúsítványok használatával. Ha a csatlakozási beállításokat importálja, javasoljuk, hogy a titkos ügyfélkód helyett helyett használjon tanúsítványt. Mivel az ügyfél titkos adatát mindig biztonságosan kell tárolni, nem importálható kapcsolatbeállítási fájlból vagy QR-kódból, mint azt a jelen cikk későbbi leírása ismerteti.
 
 A tanúsítványok felhasználhatók titkos kódokként az alkalmazás azonosságának igazolására, ha a rendszer tokent kér. A tanúsítvány nyilvános része fel van töltve az alkalmazásregisztrációba az Azure portálon, míg a teljes tanúsítványt telepíteni kell minden olyan eszközre, amelyre a Raktárkezelés mobilalkalmazás telepítésre kerül. A szervezet felelős a tanúsítvány rotációjának és egyéb szempontjainak kezelésével kapcsolatban. Önaláírt tanúsítványok is használhatók, de mindig nem exportálható tanúsítványokat kell használnia.
 
@@ -266,7 +266,7 @@ Ha nem rendelkezik fájllal vagy QR-kóddal, manuálisan konfigurálhatja az alk
 
 1. Adja meg a következő adatokat:
 
-    - **Titkos ügyfélkód használata** – Adja meg ezt a beállítást _Igen_ értékkel titkos ügyfélkóddal történő hitelesítéshez a Supply Chain Management alkalmazásban. Állítsa _Nem_ értékre, ha tanúsítványt kíván használni a hitelesítéshez. (További információkért tekintse meg a [Webes szolgáltatás alkalmazás létrehozása az Azure Active Directory szolgáltatásban](#create-service) szakaszt a témakör korábbi részében.)
+    - **Titkos ügyfélkód használata** – Adja meg ezt a beállítást _Igen_ értékkel titkos ügyfélkóddal történő hitelesítéshez a Supply Chain Management alkalmazásban. Állítsa _Nem_ értékre, ha tanúsítványt kíván használni a hitelesítéshez. (További tájékoztatás: [Hozzon létre egy webszolgáltatás alkalmazást Azure Active Directory](#create-service) a cikk korábbi szakaszában.)
     - **Kapcsolat neve** – Adjon nevet az új kapcsolatnak. Ez a név fog megjelenni a **Kapcsolat kiválasztása** mezőben, amikor legközelebb megnyitja a kapcsolatbeállításokat. A megadott névnek egyedinek kell lennie. (Más szóval különböznie kell az eszközön tárolt összes egyéb kapcsolatnévtől, ha más kapcsolatneveket is tárol ott.)
     - **Active directory ügyfélazonosító** – Adja meg az ügyfélazonosítót, amelyet az Azure AD beállítása közben jegyzett fel a [Webszolgáltatási alkalmazás létrehozása az Azure Active Directory rendszerben](#create-service) szakaszban.
     - **Active Directory titkos ügyfélkódja** – Ez a mező csak akkor érhető el, ha a **Titkos ügyfélkód használata** beállítás értéke _Igen_. Adja meg a titkos ügyfélkódot, amelyet az Azure AD beállítása közben jegyzett fel a [Webszolgáltatási alkalmazás létrehozása az Azure Active Directory rendszerben](#create-service) szakaszban.

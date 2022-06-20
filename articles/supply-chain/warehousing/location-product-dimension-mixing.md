@@ -1,6 +1,6 @@
 ---
 title: Hely és termékdimenzió kombinálása
-description: Ez a témakör a helyi termékdimenziók kombinálásával kapcsolatban tartalmaz tájékoztatást. Ez a helyprofil funkció segít a helykezelés javításában, ha a termékváltozat vagy dimenziókkal rendelkező termékek kerülnek felhasználásra, például a divatiparban. Ez lehetővé teszi annak eldöntését, hogy a konfigurációk, színek, stílusok és méretek egy adott helyprofil esetében kombinálva vannak-e, illetve hogy csak az ilyen dimenziók egyikét vagy ezek kombinációját lehet ugyanazon a helyen elhelyezni.
+description: Ez a cikk a hely termékdimenziók kombinációiról nyújt tájékoztatást. Ez a helyprofil funkció segít a helykezelés javításában, ha a termékváltozat vagy dimenziókkal rendelkező termékek kerülnek felhasználásra, például a divatiparban. Ez lehetővé teszi annak eldöntését, hogy a konfigurációk, színek, stílusok és méretek egy adott helyprofil esetében kombinálva vannak-e, illetve hogy csak az ilyen dimenziók egyikét vagy ezek kombinációját lehet ugyanazon a helyen elhelyezni.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9daf6061d56ef004753114aaffa8eb580cea1186
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103488"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885725"
 ---
 # <a name="location-product-dimension-mixing"></a>Hely és termékdimenzió kombinálása
 
@@ -28,7 +28,7 @@ A helyi termékdimenziók kombinálása helyprofilfunkció segít a helykezelés
 
 ## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>A Hely termékdimenzió-kombinációs funkció be- és kikapcsolása
 
-Az ebben a témakörben *leírt* funkciók használatához a rendszeren be kell kapcsolva lennie a Hely termékdimenziók kombinációs funkciójának. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Funkciókezelés munkaterületÉn a Termékhely dimenziók kombinációs szolgáltatását keresi.
+Az ebben a cikkben *leírt* funkciók használatához a rendszeren be kell kapcsolva lennie a Hely termékdimenziók kombinációs funkciójának. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Funkciókezelés munkaterületÉn a Termékhely dimenziók kombinációs szolgáltatását keresi.
 
 ## <a name="setup"></a>Beállítás
 
@@ -44,7 +44,7 @@ A raktárban minden helyhez társítani kell egy helyprofilt, amely leírja a he
     > [!NOTE]
     > Ez a beállítás csak akkor állítható *Igen* értékűre, ha a **Vegyes cikkek engedélyezése** beállítás *Nem* értékre van állítva.
 
-1. Az **Termékdimenzió-kombinálás engedélyezett** gyorslapon adja meg a **Méret** beállítását *Igen* értékre. Az ebben a témakörben leírt esetben a kombinálás csak olyan termékek esetében hajtható végre, amelyeknél különböző **Méret** dimenziók vannak. Más beállítások is elérhetők azonban.
+1. Az **Termékdimenzió-kombinálás engedélyezett** gyorslapon adja meg a **Méret** beállítását *Igen* értékre. Az ebben a cikkben ismertetett helyzetben csak olyan termékek esetében lehetséges a kombináció, **amelyekhez különböző méretdimenziók** vannak. Más beállítások is elérhetők azonban.
 1. Válassza a **Mentés** lehetőséget.
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>Új alaptermék és termékváltozatok létrehozása

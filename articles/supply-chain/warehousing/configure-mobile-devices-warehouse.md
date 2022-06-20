@@ -1,6 +1,6 @@
 ---
 title: Mobileszközök beállítása raktári munkához
-description: Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amelyeket a raktári dolgozók használnak a mobileszközökön végzendő munkához.
+description: Ez a cikk bemutatja, hogyan kell konfigurálni a raktári munkások által munkára használt menüpontokat egy mobileszközön.
 author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902179"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905573"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobileszközök beállítása raktári munkához
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amelyeket a raktári dolgozók használnak a mobileszközökön végzendő munkához.
+Ez a cikk bemutatja, hogyan kell konfigurálni a raktári munkások által munkára használt menüpontokat egy mobileszközön.
 
 > [!NOTE]
-> Ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A menüpontok, amelyek a raktári mobileszközön jelennek meg, a **Mobileszköz menüpontok** oldalon vannak konfigurálva. Mivel a menüelemek különféle menükbe sorolhatók, könnyen lehet úgy konfigurálni a menü szerkezetét, hogy bizonyos típusú munkák csak bizonyos felhasználók számára legyenek elérhetők. Beállíthatja, hogy a menüelemekkel a következő feladatok legyenek elvégezhetők:
+> Ez a cikk a Raktárkezelés funkcióira vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A menüpontok, amelyek a raktári mobileszközön jelennek meg, a **Mobileszköz menüpontok** oldalon vannak konfigurálva. Mivel a menüelemek különféle menükbe sorolhatók, könnyen lehet úgy konfigurálni a menü szerkezetét, hogy bizonyos típusú munkák csak bizonyos felhasználók számára legyenek elérhetők. Beállíthatja, hogy a menüelemekkel a következő feladatok legyenek elvégezhetők:
 
 - Kérelem feldolgozása vagy tevékenység elvégzése, például címke nyomtatása, rendszámtáblák létrehozása, termelési rendelés indítása vagy cikkekre vonatkozó információk gyors megkeresése egy helyen.
 - Hozzon létre egy másik folyamaton keresztül elvégzendő munkát. Például egy beszerzési rendelés elemének fogadása betárolási munkát hozhat létre egy másik dolgozó számára.
@@ -38,7 +38,7 @@ Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amel
 Menüelem létrehozásához tevékenységhez vagy lekérdezéshez állítsa a **Mód** mezőt **Közvetett** értékre. Ekkor elérhetővé válik a **Tevékenységkód**-lehetőségek listája, és kiválaszthatja a lekérdezés vagy tevékenység típusát, amelyre a menüelem vonatkozni fog. Raktári munka létrehozására szolgáló menüelem készítéséhez állítsa a **Mód** mezőt **Munka** értékre. Ekkor elérhetővé válik a **Munkalétrehozási folyamat** lehetőségeinek listája. Ha szeretne létrehozni egy meglévő raktári munka feldolgozására való menüelemet, állítsa a **Mód** mezőt **Munka** állásba, majd állítsa a **Meglévő munka használata** opciót az **Igen** lehetőségre. 
 
 > [!NOTE]
-> A menüelemhez kiválasztott módtól, és attól függően, hogy a menüelem használatos-e meglévő munkához, további mezők lehetnek elérhetők a menüelemhez. A mezőkijelölésekkel kapcsolatos további tudnivalókért lásd a jelen témakör „Kiegészítő menüpont-lehetőségek” című szakaszát.
+> A menüelemhez kiválasztott módtól, és attól függően, hogy a menüelem használatos-e meglévő munkához, további mezők lehetnek elérhetők a menüelemhez. A további mezőválasztékkal kapcsolatos tudnivalókat lásd a jelen cikk „További menüelem-beállítások” című, későbbi szakaszában.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Menüelemek konfigurációja tevékenységekhez és lekérdezésekhez
 

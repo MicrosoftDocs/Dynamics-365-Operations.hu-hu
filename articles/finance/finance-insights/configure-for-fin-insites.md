@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi konfiguráció – információk
-description: Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Pénzügyi információkban elérhető képességek használatát.
+description: Ez a cikk bemutatja a konfigurációs lépéseket, amelyek lehetővé teszik a rendszer számára a pénzügyi információkban elérhető képességek használatát.
 author: ShivamPandey-msft
 ms.date: 01/27/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac0f0cb078b6e202540fadbff337a01379febc8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861416"
 ---
 # <a name="configuration-for-finance-insights"></a>Pénzügyi konfiguráció – információk
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-A pénzügyi adatelemzés a Microsoft Dynamics 365 Pénzügy Dataverse és az Azure funkciókat kombinálja, AI Builder és hatékony előrejelzési eszközöket biztosít a szervezet számára. Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Pénzügyi információkban elérhető képességek használatát. [A témakörben található eljárások sikeres befejezéséhez a Power Portal](https://admin.powerplatform.microsoft.com/) adminközpontjában rendszergazdai és rendszer testreszabó hozzáféréssel, a Dynamics 365 Pénzügy rendszergazdai hozzáférésével, Microsoft Dynamics valamint a Lifecycle Services (LCS) környezetek létrehozásához szükséges hozzáféréssel kell rendelkezik.
+A pénzügyi adatelemzés a Microsoft Dynamics 365 Pénzügy Dataverse és az Azure funkciókat kombinálja, AI Builder és hatékony előrejelzési eszközöket biztosít a szervezet számára. Ez a cikk bemutatja a konfigurációs lépéseket, amelyek lehetővé teszik a rendszer számára a pénzügyi információkban elérhető képességek használatát. [A témakörben található eljárások sikeres befejezéséhez a Power Portal](https://admin.powerplatform.microsoft.com/) adminközpontjában rendszergazdai és rendszer testreszabó hozzáféréssel, a Dynamics 365 Pénzügy rendszergazdai hozzáférésével, Microsoft Dynamics valamint a Lifecycle Services (LCS) környezetek létrehozásához szükséges hozzáféréssel kell rendelkezik.
 
 > [!NOTE]
 > A Pénzügyi információk beállításának következő eljárásai a Dynamics 365 Pénzügy 10.0.21-es és újabb verzióira érvényesek.
@@ -101,7 +101,7 @@ A bővítmény telepítése sikeresen megtörtént, **és** a Pénzügyi inform�
    Az **Adatátépítési** **állapot ellenőrzése sikeres futtatása után engedélyezheti a Pénzügyi információk funkciókat a Szolgáltatáskezelés munkaterületen**.
 
 > [!NOTE]
-> Ha az **Ellenőrzés létesítés állapotellenőrzése** nem fut le, **akkor a Rendszerfelügyeleti** > **lekérdezésekBatch** > **feladatok stb**. A Folyamatautomatizálás **lekérdezése rendszermezőben** módosítsa **a** Folyamat kezdeményezése várakozás értékre az értéket. 
+> Ha az **Ellenőrzés létesítés** állapotának ellenőrzése nem fut le, akkor **a Rendszerfelügyelet** > **– Lekérdezések** > **kötegelt feladatoknál ússa le a rendszert**. A Folyamatautomatizálás **lekérdezése rendszermezőben** módosítsa **a** Folyamat kezdeményezése várakozás értékre az értéket. 
 > 
 ## <a name="feedback-and-support"></a>Visszajelzés és támogatás
 

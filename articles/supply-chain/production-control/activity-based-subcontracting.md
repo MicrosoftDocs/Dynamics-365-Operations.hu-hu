@@ -1,6 +1,6 @@
 ---
 title: Tevékenységi alapú alvállalkozásba adás
-description: Ez a témakör részletesen ismerteti, hogyan használhatók alvállalkozásba adott tevékenységek a termelési folyamatban a lean manufacturing érdekében.
+description: Ez a cikk részletesen leírja, hogyan lehet alvállalkozói tevékenységeket használni a termelési folyamat során lean manufacturing (lean gyártás).
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c2e1efceb800930d9f9e19a109da80d8cfebe2e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e53da46a27fd573ae7f7450fcf34ffd8ef43e3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566792"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890741"
 ---
 # <a name="activity-based-subcontracting"></a>Tevékenységi alapú alvállalkozásba adás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör részletesen ismerteti, hogyan használhatók alvállalkozásba adott tevékenységek a termelési folyamatban a lean manufacturing érdekében.
+Ez a cikk részletesen leírja, hogyan lehet alvállalkozói tevékenységeket használni a termelési folyamat során lean manufacturing (lean gyártás).
 
 A Microsoft Dynamics 365 Supply Chain Management-ben az alvállalkozásba adásnak két megközelítése van: termelési rendelések és lean manufacturing. A lean manufacturing megközelítés esetén az alvállalkozói munka egy termelési folyamat egy tevékenységhez kapcsolódó szolgáltatásként modelleződik. Egy speciális, **Közvetlen kiszervezés** nevű költségcsoporttípus került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele az anyagjegyzékbe (AJ). Az alvállalkozói munkák költségkönyvelése teljesen integrálva van a lean manufacturing költségszámítási megoldásába.
 

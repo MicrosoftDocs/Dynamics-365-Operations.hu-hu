@@ -1,6 +1,6 @@
 ---
 title: ER Pénzügyi dimenziók használata adatforrásként (3. rész – A jelentés megtervezése)
-description: Ez a témakör azt ismerteti, hogyan kell konfigurálni egy Elektronikus jelentési (ER) modellt, amely a pénzügyi dimenziókat használja az ER-jelentések adatforrásaként. (3. rész)
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni egy elektronikus jelentési (ER) modellt, hogy a pénzügyi dimenziókat használja az ER-jelentések adatforrásaként. (3. rész)
 author: NickSelin
 ms.date: 05/27/2020
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c854e9d30006dfa2deed63983a3a6b67f6ae9717
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 82ed6ae71a3da0350c74ee98e60161cfb7d0f658
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605185"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886762"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Pénzügyi dimenziók használata adatforrásként (3. rész – A jelentés megtervezése)
 

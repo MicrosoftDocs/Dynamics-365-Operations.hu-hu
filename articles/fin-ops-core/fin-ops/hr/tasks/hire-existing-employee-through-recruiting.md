@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07dae424f32281a39c3887437ac7976fb3beb8d3
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 3fdbdfc7a1a642bae2e693d1f6de0af3c08a8a6e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876473"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Meglévő dolgozók felvétele toborzás útján
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben található toborzási funkciókat a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
+> A cikk toborzási funkcióit a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
 
 
 Bizonyos esetekben a nyitott pozíciókat kitöltik azok a pályázók, akik már alkalmazottak a szervezetben. Ez az eljárás végigvezeti egy meglévő alkalmazott felvételén a toborzási folyamat lépéseivel. Ezzel az eljárással egy toborzási projekt már létrejött, és egy meglévő alkalmazott már beküldött a toborzási projekthez egy kérelmet. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.

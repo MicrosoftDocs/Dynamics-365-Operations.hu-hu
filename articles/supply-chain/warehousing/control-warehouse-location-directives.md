@@ -1,6 +1,6 @@
 ---
 title: Raktári munka ellenőrzése munkasablonok és helyutasítások használatával
-description: A témakör ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
+description: A cikk ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
 author: perlynne
 ms.date: 10/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7e955fba12e963a443c0304f0a8a0e395c46909dd34de12cd51fa9788491786
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65675d8a99d023176e3e66e92cd3d634750bdb0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770144"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877421"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Raktári munka ellenőrzése munkasablonok és helyutasítások használatával
 
 [!include [banner](../includes/banner.md)]
 
-A témakör ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
+A cikk ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
 
 A Dynamics 365 Supply Chain Management programban beállított munkasablonok determinálják az utasításokat, amiket a raktári dolgozók a mobileszközeikre kapnak. Ezek határozzák meg a különböző raktári folyamatokat és feladatokat. A munkasablonok határozzák meg, hogy miként történik a munka minden egyes raktári folyamat esetében. A helyutasítás hozzárendelése a munkasablonhoz elősegíti, hogy a munka a raktárak meghatározott területein történjen.
 
@@ -73,7 +73,7 @@ A helyutasítások határozzák meg, hogy a cikkek kitárolása *hol* történje
 ## <a name="additional-resources"></a>További erőforrások
 
 - Videó: [Raktárkezelési konfiguráció teljes részletességgel](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Súgótémakör: [Munka helyutasításokkal](create-location-directive.md)
+- Súgócikk: [A hely irányelveinek végrehajtása](create-location-directive.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

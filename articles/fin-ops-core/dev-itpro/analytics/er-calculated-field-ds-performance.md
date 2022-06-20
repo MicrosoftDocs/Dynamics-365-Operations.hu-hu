@@ -1,6 +1,6 @@
 ---
 title: Az ER megoldások teljesítményének javítása a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával
-description: Ez a témakör azt mutatja be, hogyan lehet elősegíteni a Electroinic jelentéskészítés (ER) megoldások hatékonyságát a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával.
+description: Ez a cikk bemutatja, hogy hogyan javíthatja az elektronikus jelentéskészítő (ER) megoldások teljesítményét azáltal, hogy paraméterezett SZÁMÍTOTT MEZŐ-adatforrásokat ad hozzá.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,32 +14,32 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c2c0499ac3d41c9bb6026cc05f971087799c28f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850114"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Az ER megoldások teljesítményének javítása a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet [teljesítménykövetést](trace-execution-er-troubleshoot-perf.md) végezni a futtatott [elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) formátumokon, majd felhasználni az információkat ezekből a követésekből a teljesítmény javításához egy paraméterezett **Számított mező** adatforrás konfigurálásával.
+Ez a cikk [bemutatja](trace-execution-er-troubleshoot-perf.md)[, hogy hogyan lehet a futtatott elektronikus jelentési (ER)](general-electronic-reporting.md) formátumokat teljesítménykövetéssel nyomon követni, majd ezeknek a nyomkövetési adatoknak az használatával javíthatja a teljesítményt egy **paraméterezett Számított** mező adatforrás beállításával.
 
 Az ER üzleti dokumentumok létrehozására használatos konfigurációinak tervezési folyamatának részeként meghatározhatja azt a módszert, amellyel a rendszer adatokat kérhet le az alkalmazásból, majd a létrehozott kimenetbe illesztheti őket. A **Számított mező** típusú paraméterezett ER adatforrás tervezésével csökkenthető az adatbázis-hívások száma, és jelentősen csökkenthető az idő és költség, amely az ER formátumvégrehajtás részleteinek gyűjtéséhez kapcsolódik.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-- A jelen témakörben szereplő példák végrehajtásához hozzáféréssel kell rendelkeznie a következő [szerepkörök](../sysadmin/tasks/assign-users-security-roles.md) egyikéhez:
+- A példában olvasható példák csak [a következő szerepkörök valamelyikének eléréséhez férhetnek hozzá](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Elektronikus jelentések fejlesztője
     - Elektronikus jelentések funkcióival foglalkozó konzulens
     - Rendszergazda
 
 - A vállalatot **DEMF** értékre kell beállítani.
-- Kövesse a témakör [1. függelékének](#appendix1) lépéseit a minta Microsoft ER-megoldás szállítói kifizetések feldolgozásához szükséges összetevőinek letöltéséhez, amelyek szükségesek a témakör példáinak elvégzéséhez.
-- Kövesse a jelen témakör [2. függelékének](#appendix2) lépéseit, hogy a konfigurálja az ER-paraméterek minimális halmazát, amelyek szükségesek az ER.keretrendszerhez, hogy elősegítsék a minta Microsoft ER-megoldás teljesítményének javítását.
+- Hajtsa végre a [cikk 1](#appendix1) . mellékletének lépéseit a Microsoft ER-minta megoldásnak az ebben a példában szereplő példák befejezéséhez szükséges összetevőinek letöltéséhez.
+- A cikk [2](#appendix2) . mellékletében található lépések segítségével konfigurálhatja az ER-keretrendszerhez szükséges minimális ER-paramétereket a Microsoft ER-megoldás teljesítményének javítása érdekében.
 
 ## <a name="import-the-sample-er-solution"></a>A minta ER-megoldás importálása
 
@@ -47,8 +47,8 @@ Tegyük fel, hogy egy új ER-megoldást kell terveznie, amellyel szállítói tr
 
 Az első lépés az, hogy a minta ER-megoldást importálni kell a szállítói tranzakciók jelentésének előállításához.
 
-1. Jelentkezzen be a vállalata részére biztosított Microsoft Dynamics 365 Finance-példányba.
-2. Ebben a témakörben létrehozzuk és módosítjuk a konfigurációkat a **Litware, Inc.** mintavállalatra vonatkozóan. Győződjön meg róla, hogy ezt a konfigurációszolgáltatót hozzáadták a Finance-példányhoz, és aktívként megjelölték. További információért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
+1. Jelentkezzen be a Microsoft Dynamics vállalathoz létesített 365 Pénzügy példányba.
+2. Ebben a cikkben létrehozhatja és módosíthatja a **Litware, Zrt.** mintavállalat konfigurációit. Győződjön meg róla, hogy ezt a konfigurációszolgáltatót hozzáadták a Finance-példányhoz, és aktívként megjelölték. További információért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
 3. Az **Elektronikus jelentéskészítés** munkaterületen válassza ki a **Jelentéskészítési konfiguráció** csempét.
 4. A **Konfigurációk** lapon importálja az előfeltételként az Finance-ba letöltött ER-konfigurációkat, a következő sorrendben: adatmodell, modell-hozzárendelés, formátum. Minden konfiguráció esetén hajtsa végre az alábbi lépéseket:
 
@@ -220,7 +220,7 @@ Hajtsa végre a következő lépéseket a gyorsítótárazás és a **Számítot
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>A módosított ER-megoldás futtatása a végrehajtás nyomon követéséhez
 
-Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtatása](#run-format) szakasz lépéseit az új teljesítmény-nyomkövetés létrehozásához.
+Új teljesítménykövetés létrehozásához [ismételje meg a cikk korábbi, Az ER-formátum](#run-format) futtatása szakaszban található lépéseket.
 
 ## <a name="use-the-performance-trace-to-analyze-adjustments-to-the-model-mapping"></a>A teljesítmény nyomon követése használata a modell-leképezés módosításainak elemzéséhez 
 

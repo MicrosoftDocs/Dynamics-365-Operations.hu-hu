@@ -1,6 +1,6 @@
 ---
 title: A Dynamics 365 Human Resources új vagy módosult elemei (2020. július 08.)
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. július 8-i kiadásban.
+description: Ez a témakör olyan funkciókat ismertet, amelyek vagy újak, vagy módosulnak a Microsoftban Dynamics 365 Human Resources 2020. július 8-án.
 author: andreabichsel
 ms.date: 07/08/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 37e22dcfb89349186526cf87d5f2a82bb86c48b1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c07646b70d07fbcd6f5aac897f79df7d159266af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693557"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848136"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>A Dynamics 365 Human Resources új vagy módosult elemei (2020. július 8.)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8693557"
 
 
 
-Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le. A változtatások a 8.1.3382-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az LCS támogatási számaira vonatkoznak referenciaképpen.
+Ez a cikk a Dynamics 365 Human Resources szolgáltatásban található új vagy módosított funkciókat írja le. A változtatások a 8.1.3382-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az LCS támogatási számaira vonatkoznak referenciaképpen.
 
 ## <a name="database-logging"></a>Adatbázis naplózása
 

@@ -1,6 +1,6 @@
 ---
 title: Értékesítési szerződések megadása
-description: Ez a témakör bemutatja, hogyan hozhat létre értékesítési szerződést, amely kötelezi valamelyik vevőjét egy termék vásárlására egy egyeztetett összegben adott idő alatt, különleges engedményekért cserébe.
+description: Ez a cikk bemutatja, hogyan lehet olyan értékesítési szerződést létrehozni, amely arra kötelezi az egyik vevőt, hogy egy megállapodás szerinti összegben, meghatározott összegű terméket vásároljon speciális engedményekért.
 author: Henrikan
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Service industries
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee2c1494842c5fd2aa598546ba655c33d6fd3f16
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b3aa72057753a9592fd47275dc996a3a904d86b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568303"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897487"
 ---
 # <a name="enter-sales-agreements"></a>Értékesítési szerződések megadása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan hozhat létre értékesítési szerződést, amely kötelezi valamelyik vevőjét egy termék vásárlására egy egyeztetett összegben adott idő alatt, különleges engedményekért cserébe. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
+Ez a cikk bemutatja, hogyan lehet olyan értékesítési szerződést létrehozni, amely arra kötelezi az egyik vevőt, hogy egy megállapodás szerinti összegben, meghatározott összegű terméket vásároljon speciális engedményekért. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
 
 
 ## <a name="set-up-sales-agreement-header"></a>Értékesítési szerződés fejléc beállítása

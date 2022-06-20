@@ -1,6 +1,6 @@
 ---
 title: A Global Inventory Accounting által támogatott üzleti dokumentumok
-description: Ez a témakör felsorolja azokat az üzleti dokumentumokat, amelyeket a Global Inventory Accounting támogat. Részletes példát mutat a beszerzési rendelés dokumentumokra is.
+description: Ez a cikk felsorolja azokat az üzleti dokumentumokat, amelyek a globális készletkönyvelés által támogatottak. Részletes példát mutat a beszerzési rendelés dokumentumokra is.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 44081be35c6737aa0d16b6e11a5fc8f94b41e872
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: dc88d095c039b22ac347db949f6b61d5a89dc4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875423"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>A Global Inventory Accounting által támogatott üzleti dokumentumok
 
@@ -32,7 +32,7 @@ Az üzleti műveleteket két típusra osztjuk:
 - **Naplóval rendelkező dokumentumok** – Ezek a dokumentumok tartalmazzák a termék nyugtát, a vásárlási számlát, a szállítólevelet és az értékesítési számla dokumentumait.
 - **Naplóval nem rendelkező dokumentumok** – Ezek a dokumentumok tartalmazzák a számlálási, mozgatási és készletkorrekciós dokumentumokat.
 
-A téma későbbi szakaszában a beszerzési megbízások lesznek példaként a folyamat szemléltetésére.
+A cikk későbbi része a beszerzési rendeléseket mutatja be példaként a folyamat illusztrálására.
 
 Az alábbi táblázat felsorolja azokat a dokumentumokat, amelyeket az aktuális kiadás támogat.
 

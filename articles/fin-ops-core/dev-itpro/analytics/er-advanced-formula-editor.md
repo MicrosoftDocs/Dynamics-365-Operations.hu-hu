@@ -1,6 +1,6 @@
 ---
 title: Elektronikus jelentéskészítés speciális képlet-szerkesztő
-description: Ez a témakör azt mutatja be, hogyan használható a speciális képletszerkesztő kifejezések konfigurálására az elektronikus jelentési (ER) modell hozzárendelési és formátum összetevőiben.
+description: Ez a témakör azt ismerteti, hogyan használható a speciális képletszerkesztő a kifejezések konfigurálésére az Elektronikus jelentés (ER) modellleképezésében és a formátumösszetevőkben.
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 58d7a936f94e1cd453c904ef6404e0db65083c54235c8420b9cfa561bcde1584
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f54ab248e38d87b0a9fb7a73143f56fa704a3f67
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714659"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869099"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Elektronikus jelentéskészítés speciális képlet-szerkesztő
 
 [!include [banner](../includes/banner.md)]
 
-Az [Elektronikus jelentéskészítés](general-electronic-reporting.md) [képlet szerkesztőn](general-electronic-reporting-formula-designer.md) kívül a fejlett elektronikus jelentéskészítési képletszerkesztőt is használhatja az elektronikus jelentéskészítési (ER) kifejezések beállításának élményének javítására. A speciális szerkesztő a [Monaco-szerkesztő által működtetett böngésző-alapú ](https://microsoft.github.io/monaco-editor). Ez a témakör a leggyakrabban használt speciális szerkesztési funkciókat írja le:
+Az [Elektronikus jelentéskészítés](general-electronic-reporting.md) [képlet szerkesztőn](general-electronic-reporting-formula-designer.md) kívül a fejlett elektronikus jelentéskészítési képletszerkesztőt is használhatja az elektronikus jelentéskészítési (ER) kifejezések beállításának élményének javítására. A speciális szerkesztő a [Monaco-szerkesztő által működtetett böngésző-alapú ](https://microsoft.github.io/monaco-editor). A leggyakrabban használt speciális szerkesztői funkciók az alábbi leírásban olvashatók:
 
 - [Kód automatikus formázása](#Autoformatting)
 - [IntelliSense](#IntelliSense)
@@ -39,7 +39,7 @@ Az [Elektronikus jelentéskészítés](general-electronic-reporting.md) [képlet
 
 ## <a name=""></a><a name="ActivateAdvEditor">A speciális képletszerkesztő aktiválása</a>
 
-A következő lépések végrehajtásával kezdheti el használni Microsoft Dynamics 365 Finance-példányának speciális képletszerkesztőjét.
+Kövesse az alábbi lépéseket, ha el kell kezdenie a speciális receptúraszerkesztőt a Microsoft Dynamics 365 Pénzügyben.
 
 1.  Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
 2.  A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
@@ -50,7 +50,7 @@ A következő lépések végrehajtásával kezdheti el használni Microsoft Dyna
 > [!NOTE]
 > Ne feledje, hogy ez a paraméter a felhasználó- és a vállalatspecifikus.
 
-A Microsoft Dynamics 365 Finance 10.0.19-es verziójától kezdve szabályozható, hogy alapértelmezés szerint milyen ER képletszerkesztőt kínálnak. A következő lépések segítségével engedélyezheti a speciális képletszerkesztőt az aktuális Pénzügyi példány összes felhasználója és vállalata számára.
+Microsoft Dynamics A 365-ös pénzügyi verziótól kezdve a 10.0.19-es verziótól szabályozható, hogy alapértelmezés szerint milyen ER képletszerkesztőt kínálnak. A következő lépések segítségével engedélyezheti a speciális képletszerkesztőt az aktuális Pénzügyi példány összes felhasználója és vállalata számára.
 
 1.  Nyissa meg a **Funkciókezelés** munkaterületet.
 2.  Keresse meg és válassza ki a listában található **Összes felhasználó alapértelmezettként az ER speciális képletszerkesztő beállítása** funkciót, majd válassza az **Engedélyezés most** lehetőséget.

@@ -1,6 +1,6 @@
 ---
 title: A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban
-description: Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a kiskereskedelmi munkaidő- és jelenlét-nyilvántartás kezelését a Dynamics 365 Commerce rendszerben.
+description: Ez a témakör azokat a helyzeteket ismerteti, amelyek a jelenlét és a jelenlét kezelése esetét támogatják Dynamics 365 Commerce.
 author: aamirallaqaband
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68aafc9f397333d88644bb1870bb4e65da32c265decb10e6ac420be99c1e2c4e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 75c09d9e98a08bec0697b0b522ba6e647d35b140
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762668"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855728"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a kiskereskedelmi munkaidő- és jelenlét-nyilvántartás kezelését a Dynamics 365 Commerce rendszerben.
+Ez a témakör azokat a helyzeteket ismerteti, amelyek a jelenlét és a jelenlét kezelése esetét támogatják Dynamics 365 Commerce.
 
 ## <a name="manage-worker-setup-and-scheduling"></a>Dolgozók elhelyezésének és ütemezésének kezelése
 

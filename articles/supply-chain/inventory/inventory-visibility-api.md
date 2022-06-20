@@ -1,6 +1,6 @@
 ---
 title: Készletláthatóság nyilvános API-jai
-description: Ez a témakör a Készletláthatóság által biztosított nyilvános API-kat ismerteti.
+description: Ez a témakör a készlet láthatósága által biztosított nyilvános API-król nyújt részletes információkat.
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786865"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902024"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör a Készletláthatóság által biztosított nyilvános API-kat ismerteti.
+Ez a témakör a készlet láthatósága által biztosított nyilvános API-król nyújt részletes információkat.
 
 A Készlet láthatósága bővítmény nyilvános REST API-ja az integráció több konkrét végpontját mutatja be. Négy fő interakciótípust támogat:
 
@@ -160,7 +160,7 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
    ```
 
 > [!IMPORTANT]
-> Amikor a *Postman* kérésgyűjteményt használja a Készlet láthatósága nyilvános API-k hívására, minden egyes kéréshez hozzá kell adni egy tulajdonosi jogkivonatot. A tulajdonosi jogkivonat megkeresése érdekében válassza az **Engedélyezés** lapot a kérés URL-címe alatt, jelölje és válassza ki a **Tulajdonosi jogkivonat** típust, és másolja át az utolsó lépésben beírt hozzáférési jogkivonatot. A témakör későbbi szakaszaiban a `$access_token` elemet fogja használni az utolsó lépésben lekért token ábrázolására.
+> Amikor a *Postman* kérésgyűjteményt használja a Készlet láthatósága nyilvános API-k hívására, minden egyes kéréshez hozzá kell adni egy tulajdonosi jogkivonatot. A tulajdonosi jogkivonat megkeresése érdekében válassza az **Engedélyezés** lapot a kérés URL-címe alatt, jelölje és válassza ki a **Tulajdonosi jogkivonat** típust, és másolja át az utolsó lépésben beírt hozzáférési jogkivonatot. A cikk későbbi részei `$access_token` az utolsó lépésben bekérett tokent fogják képviselni.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Kézben lévő változtatási események létrehozása
 
@@ -359,7 +359,7 @@ Body:
     ]
 ```
 
-A következő példa a törzs tartalmának mintáját mutatja. Ennek az API-nak a viselkedése eltér a témakör korábbi, a [Kézi változási események létrehozása](#create-onhand-change-event) című szakaszában leírt API-k viselkedésétől. Ebben a mintában a *póló* termék mennyisége 1 lesz.
+A következő példa a törzs tartalmának mintáját mutatja. Az API viselkedése eltér a cikk korábbi, Az elérhető változási események létrehozása című részében ismertetett API-k [viselkedéstől](#create-onhand-change-event). Ebben a mintában a *póló* termék mennyisége 1 lesz.
 
 ```json
 [

@@ -1,6 +1,6 @@
 ---
 title: Értékesítési jutalékok regisztrálása
-description: Ez a témakör az értékesítési jutalékok számításának és regisztrálásának módját mutatja be.
+description: Ez a cikk bemutatja az értékesítési jutalékok számítását és regisztrációját.
 author: Henrikan
 ms.date: 08/06/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4aca37350938d54d4acf283093365bfcab64f70
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b15ca78da14068fd2f3275e7aff04852625db7ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575363"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862511"
 ---
 # <a name="register-sales-commissions"></a>Értékesítési jutalékok regisztrálása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör az értékesítési jutalékok számításának és regisztrálásának módját mutatja be. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. Mielőtt elindítaná az útmutatót, az „Értékesítési jutalékok szabályainak beállítása” című segédlet futtatásával győződjön meg, hogy rendelkezik az összes szükséges jutalékszámítási beállítással.
+Ez a cikk bemutatja az értékesítési jutalékok számítását és regisztrációját. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. Mielőtt elindítaná az útmutatót, az „Értékesítési jutalékok szabályainak beállítása” című segédlet futtatásával győződjön meg, hogy rendelkezik az összes szükséges jutalékszámítási beállítással.
 
 Jegyezze fel a jutalékfolyamathoz kiválasztott vevő és cikkszámokat, majd használja ezeket ebben az útmutatóban a megfelelő helyen értékesítési rendelés létrehozásához.
 

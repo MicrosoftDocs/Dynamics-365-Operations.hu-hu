@@ -1,6 +1,6 @@
 ---
 title: ER-konfigurációk újrafelhasználása Excel-sablonokkal Word-formátumú jelentések generálásához
-description: Ez a témakör azt mutatja be, hogyan lehet jelentések Excel-munkafüzetként való előállítására használható jelentésformátumokat beállítani úgy, hogy a jelentéseket Word-dokumentumként hozza létre.
+description: Ez a témakör azt mutatja be, hogyan lehet jelentések előállítására használható jelentésformátumokat Excel-munkafüzetként beállítani úgy, hogy a jelentéseket Word-dokumentumként hozza létre.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de8286c7612cd588b28cf4667340374906962dde
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1e0fe9ba55be435fb214c9d0885dd4ef942f5081
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324062"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910386"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>ER-konfigurációk újrafelhasználása Excel-sablonokkal Word-formátumú jelentések generálásához
 
@@ -43,7 +43,7 @@ Ezek az eljárások a Dynamics 365 for Operations 1611-es verzióban (2016. nove
 
 ## <a name="select-the-existing-er-report-configuration"></a>Válassza ki a meglévő ER-jelentéskonfigurációt
 
-1. A Dynamics 365 Finance alkalmazásban lépjen a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
+1. A Dynamics 365 Pénzügy alkalmazásban található a Szervezet **felügyelete** \> **– Munkaterületek –** \> **Elektronikus jelentés.**
 2. Győződjön meg arról, hogy a **Litware, Inc.** konfigurációszolgáltató **Aktív** állapottal van megjelölve. Ha nem, kövesse a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](er-configuration-provider-mark-it-active-2016-11.md) feladat-útmutatót.
 3. Válassza a **Jelentéskészítési konfigurációk** elemet. Újrahasznosítja a meglévő ER-konfigurációt, amelyet a jelentés OPENXML-formátumban történő előállítására terveztek.
 4. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában bontsa ki a **Fizetési modell** elemet, majd válassza a **Minta munkalap jelentés** lehetőséget.

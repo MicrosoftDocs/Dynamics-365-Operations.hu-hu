@@ -1,6 +1,6 @@
 ---
 title: Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI-be való lehívásához
-description: Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) konfiguráció arra, hogy adatokat vigyen át a példányából a Power BI szolgáltatásokba.
+description: Ez a cikk bemutatja, hogy hogyan lehet az elektronikus jelentési (ER) konfigurációban rendezni a példány adatainak szolgáltatásokba történő átvitelét Power BI.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,31 +14,31 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa9a47c9ee7c76322fd2d9bfcf5fc61a50bf421321891b3c78a782be6a9f8e6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6903513dec4da20dbc4463fbae6a406fc06e1a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896734"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI-be való lehívásához
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) konfiguráció arra, hogy adatokat vigyen át a példányából a Power BI szolgáltatásokba. A jelen témakörben bemutatott példa Intrastat-tranzakciókat alkalmaz olyan üzleti adatokként, amelyeket át kell adni. A Power BI térképes megjelenítése ezt az Intrastat-tranzakciós adatot használja egy olyan nézet bemutatásához, amellyel egy vállalat importálási/exportálási tevékenységeit lehet elemezni a Power BI-jelentésben.
+Ez a cikk bemutatja, hogy hogyan lehet az elektronikus jelentési (ER) konfigurációban rendezni a példány adatainak szolgáltatásokba történő átvitelét Power BI. Ez a cikk például az Intrastat-tranzakciókat átvihető üzleti adatként használja. A Power BI térképes megjelenítése ezt az Intrastat-tranzakciós adatot használja egy olyan nézet bemutatásához, amellyel egy vállalat importálási/exportálási tevékenységeit lehet elemezni a Power BI-jelentésben.
 
 ## <a name="overview"></a>Áttekintés
 
-A Microsoft Power BI olyan szoftverek, szolgáltatások, alkalmazások és összekötők gyűjteménye, amelyek együtt dolgoznak azért, hogy a külső forrásokból származó adatokat koherens, vizuálisan élményt nyújtó és interaktív betekintéssé alakítsák. Elektronikus jelentés (ER) lehetővé teszi, hogy a felhasználók könnyen beállíthatják az adatforrásokat és megszervezhetik az adatok átvitelét a szolgáltatásból a Power BI szolgáltatásba. Az adatok átvitele fájlokban történik, OpenXML munkalap (Microsoft Excel-munkafüzet) formátumban. Az átvitt fájlok tárolása a Microsoft SharePoint Server felületén történik, amely ennek a célnak megfelelően lett konfigurálva. A tárolt fájlokat a Power BI olyan jelentések elkészítésére használja, amelyek tartalmaznak megjelenítőeszközöket (táblázatok, diagramok, térképek stb.). A Power BI-jelentések megosztásra kerülnek a Power BI-felhasználókkal, hozzáférésük a Power BI-irányítópulton és az alkalmazásoldalakon történik. Ez a témakör az alábbi feladatokat magyarázza el:
+A Microsoft Power BI olyan szoftverek, szolgáltatások, alkalmazások és összekötők gyűjteménye, amelyek együtt dolgoznak azért, hogy a külső forrásokból származó adatokat koherens, vizuálisan élményt nyújtó és interaktív betekintéssé alakítsák. Elektronikus jelentés (ER) lehetővé teszi, hogy a felhasználók könnyen beállíthatják az adatforrásokat és megszervezhetik az adatok átvitelét a szolgáltatásból a Power BI szolgáltatásba. Az adatok átvitele fájlokban történik, OpenXML munkalap (Microsoft Excel-munkafüzet) formátumban. Az átvitt fájlok tárolása a Microsoft SharePoint Server felületén történik, amely ennek a célnak megfelelően lett konfigurálva. A tárolt fájlokat a Power BI olyan jelentések elkészítésére használja, amelyek tartalmaznak megjelenítőeszközöket (táblázatok, diagramok, térképek stb.). A Power BI-jelentések megosztásra kerülnek a Power BI-felhasználókkal, hozzáférésük a Power BI-irányítópulton és az alkalmazásoldalakon történik. Ez a témakör a következő feladatokat mutatja be:
 
-- A Microsoft Dynamics 365 Finance konfigurálása.
+- A Microsoft Dynamics 365 Pénzügy konfigurálása.
 - Az ER-formátum konfigurációjának előkészítése a Finance adatainak beolvasásához.
 - Az ER-környezet konfigurálása a Power BI szolgáltatásba történő adatátvitelhez.
 - Az átvitt adatok felhasználása Power BI-jelentés létrehozására.
 - A Power BI-jelentés elérhetővé tétele a Finance alkalmazásban.
 
 ## <a name="prerequisites"></a>Előfeltételek
-A jelen témakörben szereplő példa elvégzéséhez a következő hozzáférésekkel kell rendelkeznie:
+Az ebben a példában olvasható példához a következő hozzáféréssel kell rendelkezik:
 
 - Hozzáférés a következő szerepkörök egyikével:
 

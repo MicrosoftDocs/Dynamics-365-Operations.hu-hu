@@ -1,6 +1,6 @@
 ---
 title: Konszolidáció és megszüntetés áttekintése
-description: Ez a témakör általános tájékoztatást tartalmaz a konszolidációs és eltávolítási folyamattal kapcsolatban. Magában foglalja a gyakori kérdésekre adott válaszokat is.
+description: A cikk a konszolidációs és megszüntetési folyamat általános ismertetését tartalmazza. Magában foglalja a gyakori kérdésekre adott válaszokat is.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670b238580ecf800686324fe664be747c551090d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710698"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871391"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Konszolidáció és megszüntetés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör általános tájékoztatást tartalmaz a konszolidációs és eltávolítási folyamattal kapcsolatban. Magában foglalja a gyakori kérdésekre adott válaszokat is.
+A cikk a konszolidációs és megszüntetési folyamat általános ismertetését tartalmazza. Magában foglalja a gyakori kérdésekre adott válaszokat is.
 
 Ha megszűntet adatokat, akkor több leányvállalat pénzügyi eredményei egyesülnek egy konszolidált vállalatként. A lényvállalatok eltérő verziókon vagy rendszereken lehetnek, résztulajdonoltak lehetnek és eltérő pénznemeket használhatnak. Adategyesítéshez több lehetőséget választhat:
 

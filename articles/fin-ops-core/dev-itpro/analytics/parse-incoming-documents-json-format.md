@@ -1,6 +1,6 @@
 ---
 title: Bejövő dokumentumok elemzése JSON-formátumban
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a bejövő dokumentumok JavaScript Object Notation (JSON) formátumú elemzéséhez szükséges elektronikus jelentéskészítés (ER) formátumait.
+description: Ez a cikk bemutatja, hogyan lehet beállítani az elektronikus jelentési (ER) formátumokat a bejövő dokumentumok JavaScript object Notation (JSON) formátumban történő feldolgozásához.
 author: kfend
 ms.date: 05/20/2019
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: ba30b06cc0c4af230113d532a932594278e13b29a87e6252849483c9dfcbc198
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93a2f669a555beefc3a1529af4df7b543aaab931
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905080"
 ---
 # <a name="parse-incoming-documents-in-json-format"></a>Bejövő dokumentumok elemzése JSON-formátumban
 

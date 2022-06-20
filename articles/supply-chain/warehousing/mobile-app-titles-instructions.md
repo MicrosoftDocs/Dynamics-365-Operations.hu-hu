@@ -1,6 +1,6 @@
 ---
 title: A Warehouse Management mobilalkalmazás lépéscímeinek és utasításainak testreszabása
-description: Ez a témakör leírja, hogyan hozhat létre és jeleníthet meg egyéni utasításokat a Warehouse Management mobilalkalmazáshoz beállított feladatfolyamatok minden egyes lépéséhez.
+description: Ez a témakör azt mutatja be, hogyan lehet egyéni utasításokat létrehozni és látni minden egyes lépéshez, amely a Raktárkezelés mobilalkalmazáshoz van beállítva.
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902247"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895496"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás lépéscímeinek és utasításainak testreszabása
 
 > [!IMPORTANT]
-> Az ebben a témakörben ismertetett funkciók csak az új Warehouse Management mobilalkalmazásra vonatkoznak. Ezek nem érintik a régi raktár alkalmazást, amely már elavult.
+> Az ebben a cikkben leírt funkciók csak az új Raktárkezelés mobilalkalmazásra vonatkoznak. Ezek nem érintik a régi raktár alkalmazást, amely már elavult.
 
-Ez a témakör leírja, hogyan hozhat létre és jeleníthet meg egyéni utasításokat a Warehouse Management mobilalkalmazáshoz beállított minden feladatfolyamat minden egyes lépéséhez. Ha a raktári dolgozók jól megírt utasításokat kapnak, azonnal elkezdhetik használni az új folyamatokat anélkül, hogy előzetes képzésre lenne szükségük. Ez a funkció a következő előnyöket biztosítja:
+Ez a témakör azt mutatja be, hogyan lehet egyéni utasításokat létrehozni és látni minden lépéshez, amely a Raktárkezelés mobilalkalmazáshoz be van állítva. Ha a raktári dolgozók jól megírt utasításokat kapnak, azonnal elkezdhetik használni az új folyamatokat anélkül, hogy előzetes képzésre lenne szükségük. Ez a funkció a következő előnyöket biztosítja:
 
 - **Gyorsítsa fel a dolgozókat azáltal, hogy minden feladatlépésnél egyszerű utasításokat követhetnek.** A folyamat minden egyes lépése olyan utasításokat tartalmaz, amelyek lehetővé teszik, hogy a frontvonalban dolgozók megértsék a feladatot.
 - **Adjon a saját folyamatainak megfelelő utasításokat.** Írja meg saját utasításait az üzleti és raktári folyamatoknak megfelelően. Például a terminológiát a fizikai térhez és a helyi rövidítésekhez igazíthatja.

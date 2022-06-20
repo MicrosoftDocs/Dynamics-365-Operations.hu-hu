@@ -1,6 +1,6 @@
 ---
 title: Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
-description: Ez a témakör azt mutatja be, hogyan lehet hozzáadni tartalomkézbesítési hálózatot (CDN) a Microsoft Dynamics 365 Commerce-környezetéhez.
+description: Ez a témakör azt ismerteti, hogyan lehet a környezethez hozzáadni egy tartalomszállítási hálózatot Microsoft Dynamics 365 Commerce (CDN).
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: caed13c37c9043a2acea751c8a8b15261f26ecb2e10b6e64c0ce50f6ce9a68de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2ed8f66d447e1d9e890c0885fd20e9b55c66ac0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722054"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855876"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet hozzáadni tartalomkézbesítési hálózatot (CDN) a Microsoft Dynamics 365 Commerce-környezetéhez.
+Ez a témakör azt ismerteti, hogyan lehet a környezethez hozzáadni egy tartalomszállítási hálózatot Microsoft Dynamics 365 Commerce (CDN).
 
 Ha egy e-kereskedelmi környezetet hoz létre a Dynamics 365 Commerce alkalmazásban, akkor konfigurálhatja úgy, hogy együttműködjön az Ön CDN-szolgáltatásával. 
 
@@ -60,7 +60,7 @@ A CDN beállítási folyamata az alábbi általános lépésekből áll:
 
 ### <a name="add-a-front-end-host"></a>Adjon hozzá egy előtéri állomást
 
-Bármely CDN-szolgáltatás használható, de a jelen témakör példájában az Azure Front Door Service kerül felhasználásra. 
+Bármely CDN-szolgáltatás használható, de ebben a példában az Azure front Door Service szolgáltatás van használatban. 
 
 Az Azure Front Door Service beállításával kapcsolatos információkat itt talál: [Rövid útmutató: Front Door létrehozása egy magas szintű rendelkezésre állású, globális webes alkalmazáshoz](/azure/frontdoor/quickstart-create-front-door).
 
@@ -101,7 +101,7 @@ Ha be szeretne állítani egy útvonaltervezési szabályt az Azure Front Door S
 
 
 > [!WARNING]
-> Ha a használni kívánt tartomány már aktív és élő, hozzon létre egy támogatási jegyet az [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) **Támogatás** mozaikján, és kérjen segítséget a következő lépésekhez. További információért tekintse át a [Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) szolgáltatáshoz.
+> Ha a használni kívánt tartomány már aktív és élő, hozzon létre egy támogatási jegyet az [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) **Támogatás** mozaikján, és kérjen segítséget a következő lépésekhez. A további tudnivalókat lásd [a Pénzügyi és műveleti alkalmazások, illetve a Lifecycle Services (LCS) támogatásában](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 Ha a tartománya új, és nem egy korábban létező élő tartomány, akkor a saját egyéni tartományát hozzáadhatja az Azure Front Door Service konfigurációhoz. Ez lehetővé teszi a webforgalom számára, hogy az Azure Front Door példányon keresztül irányítsa a webhelyét. Az egyéni tartomány (például `www.fabrikam.com`) hozzáadásához be kell állítania egy kanonikus nevet (CNAME) a tartomány számára.
 

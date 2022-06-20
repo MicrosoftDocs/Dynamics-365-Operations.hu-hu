@@ -1,7 +1,7 @@
 ---
 title: Az alaptervezés teljesítményének javítása
-description: Ez a témakör bemutatja azokat a különböző beállításokat, amelyek segítségével javítható az Alaptervezés teljesítménye és a problémák elhárítása.
-author: ChristianRytt
+description: Ez a cikk bemutatja az alaptervezés és hibaelhárítás teljesítményének javítását segítő beállításokat.
+author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fcbc732fce4120268acd774cc4d42193ba95787d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2c4b7e2197d312d22f9851121a9e6d4d4d03ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897603"
 ---
 # <a name="improve-master-planning-performance"></a>Az alaptervezés teljesítményének javítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja azokat a különböző beállításokat, amelyek segítségével javítható az Alaptervezés teljesítménye és a problémák elhárítása. A paraméterekkel és beállításokkal, valamint az ajánlott konfigurációkkal és műveletekkel kapcsolatos információkat tartalmaz. A témakör tartalmazza továbbá az összes fontos paraméter összesítését, amelyet akkor kell figyelembe venni, ha régóta futtat Alaptervezési feladatokat.
+Ez a cikk bemutatja az alaptervezés és hibaelhárítás teljesítményének javítását segítő beállításokat. A paraméterekkel és beállításokkal, valamint az ajánlott konfigurációkkal és műveletekkel kapcsolatos információkat tartalmaz. A témakör tartalmazza továbbá az összes fontos paraméter összesítését, amelyet akkor kell figyelembe venni, ha régóta futtat Alaptervezési feladatokat.
 
-Ez a témakör olyan rendszergazdák vagy informatikai felhasználók számára készült, akik képesek a problémák elhárítására. Emellett termelési vagy beszerzési tervezők számára is készül, mivel az üzleti tervezés követelményeihez kapcsolódó paraméterekkel kapcsolatban tartalmaz tájékoztatást. 
+Ez a cikk rendszergazdáknak vagy hibaelhárítási képességgel rendelkező rendszergazdáknak szánt. Emellett termelési vagy beszerzési tervezők számára is készül, mivel az üzleti tervezés követelményeihez kapcsolódó paraméterekkel kapcsolatban tartalmaz tájékoztatást. 
 
 ## <a name="parameters-related-to-master-planning-performance"></a>Az Alaptervezés teljesítményéhez kapcsolódó paraméterek
 
@@ -151,9 +151,9 @@ A fedezeti lépés megkezdése előtt van egy előzetes fedezeti lépés, amelyn
 ## <a name="performance-checklist-summary"></a>Teljesítménnyel kapcsolatos ellenőrzőlista – összefoglalás
 
 - **A szálak száma** – **0** (nulla) értéknél nagyobb értékre legyen állítva.
-- **A segítő feladatcsomagban található feladatok száma** – **0** (nulla) fölötti értékre legyen állítva. (Használja a témakör korábbi részében megadott képleteket.)
+- **A segítő feladatcsomagban található feladatok száma** – **0** (nulla) fölötti értékre legyen állítva. (Használja a korábban ebben a cikkben megadott képleteket.)
 - **A gyorsítótár használata** – Állítsa a **Maximális** értékre, kivéve, ha a rendszer alacsony memóriával rendelkezik.
-- **A megerősítési kötegben lévő rendelések száma** – **0** (nulla) fölötti értékre legyen állítva. (Használja a témakör korábbi részében megadott képletet.)
+- **A megerősítési kötegben lévő rendelések száma** – **0** (nulla) fölötti értékre legyen állítva. (Használja a korábban ebben a cikkben megadott képletet.)
 - **Időkorlátok** – az üzleti szükségletekhez igazítsa.
 - **Műveletek és határidők** – Tiltsa le a műveleteket és a határidőt, ha nem használja őket.
 - **Egy megterhelő rutin egyszerre** – ne futtassa az alaptervezést a többi további megterhelő rutinnal együtt.

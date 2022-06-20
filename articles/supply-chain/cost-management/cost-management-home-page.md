@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0c5d7e8f9561ba81e0be93220df9afcd493179f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e9ba69f637087298bf6a93dbb049d78dff739aaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672486"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891147"
 ---
 # <a name="cost-management-home-page"></a>Költségkezelés kezdőlap
 
@@ -53,7 +53,7 @@ Keresse fel a [Microsoft Dynamics 365 Ütemterv](https://roadmap.dynamics.com/) 
 
 #### <a name="white-paper"></a>Útmutató
 
-A [Darabjegyzék-számítás költségszámítási táblázat segítségével](https://www.microsoft.com/download/details.aspx?id=101937) című rész ismerteti az anyagokat és a gyártást tartalmazó költségszámítási táblázat beállítását, valamint hogy a beállítás hogyan befolyásolja az anyagjegyzék-számítás eredményét. A témakör jobb magyarázata érdekében konkrét forgatókönyveket és adatokat biztosít, melyek bemutatják a különböző beállítások és konfigurációk hatását.
+A [Darabjegyzék-számítás költségszámítási táblázat segítségével](https://www.microsoft.com/download/details.aspx?id=101937) című rész ismerteti az anyagokat és a gyártást tartalmazó költségszámítási táblázat beállítását, valamint hogy a beállítás hogyan befolyásolja az anyagjegyzék-számítás eredményét. A cikkek jobb magyarázata érdekében konkrét eseteket és adatokat biztosít, amelyek bemutatják a különböző beállítások és konfigurációk hatását.
 
 #### <a name="blogs"></a>Blogok
 

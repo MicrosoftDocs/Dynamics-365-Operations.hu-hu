@@ -1,6 +1,6 @@
 ---
-title: SharePoint Kapcsolat konfigurálása
-description: Ez a témakör leírja, hogyan kell konfigurálni a kapcsolatot úgy, hogy az elektronikus számlázás hozzáfér a Microsoft-webhelyhez SharePoint.
+title: SharePoint kapcsolat konfigurálása
+description: Ez a cikk bemutatja a kapcsolatot úgy, hogy az elektronikus számlázás hozzáfér a Microsoft-webhelyhez SharePoint.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b9fffc1f3525e69792517dd1c6ebdcfbe5a74d2
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: fb4258190b9480c1302060dd7b75145f80bb7f18
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856580"
 ---
-# <a name="configure-a-sharepoint-connection"></a>SharePoint Kapcsolat konfigurálása
+# <a name="configure-a-sharepoint-connection"></a>SharePoint kapcsolat konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
@@ -96,7 +96,7 @@ Az Elektronikus számlázás szolgáltatás fájlokat olvas a Microsoft SharePoi
 
         ![POST lekérdezés.](media/app-id-query.jpg)
 
-    11. Az Engedélyek módosítása lapon válassza **az Engedélyek megnyitása panelt**, majd válassza a Webhelyek.FullControl.All **·** **·** \> **Consent lehetőséget.** \> **·**
-    12. Válassza a Lekérdezés futtatása **lehetőséget**.
+    11. Az Engedélyek **módosítása lapon** válassza **az** Engedélyek panelt, **majd válassza a Sites** \> **Sites.FullControl.Minden** \> **hozzájárulás.**
+    12. Válassza a Lekérdezés **futtatása lehetőséget**.
 
-Az elektronikus számlázási szolgáltatás mostantól hozzáférhet a SharePoint webhelyéhez.
+Az elektronikus számlázási szolgáltatás hozzáfér a webhelyhez SharePoint.

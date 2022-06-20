@@ -1,6 +1,6 @@
 ---
-title: Az országkörnyezet-függő modell-leképezések konfigurálása
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani az ER modell-hozzárendeléseket, hogy azok a használatukat szabályozó jogi személy ország-/régióbeli környezetétől függjenek.
+title: Országkörnyezet-függő ER-modell leképezések konfigurálása
+description: Ez a cikk bemutatja, hogyan lehet beállítani olyan ER-modellleképezéseket, amelyek a használatukat vezérlő jogi személy ország/régió kontextusától függenek.
 author: NickSelin
 ms.date: 11/11/2019
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 771b14662638838ac1f39d85b19ac58a47352c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605371"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883875"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Az országkörnyezet-függő modell-leképezések konfigurálása
 
 [!include[banner](../includes/banner.md)]
 
-Az elektronikus jelentéskészítési (ER) modell-hozzárendeléseket úgy konfigurálhatja, hogy az általános ER adatmodellt hajtsák végre, de legyen jellemző a Dynamics 365 Finance szolgáltatásra. Ez a témakör azt mutatja be, hogyan lehet több ER modell-hozzárendelést tervezni egy ER-adatmodellre vonatkozóan annak szabályozására, hogy hogyan használják azokat a megfelelő ER formátumok, amelyek a különböző ország/régió környezetekben működő vállalatoktól származnak.
+Konfigurálhatja az Elektronikus jelentéskészítés (ER) modellleképezéseit, hogy általános ER-adatmodellt implementáljanak, de a Dynamics 365 Pénzügy alkalmazásra jellemzőek. Ez a cikk bemutatja, hogyan lehet az ER-adatmodellek több ER modellleképezését tervezni, amelyek segítségével szabályozható, hogy hogyan használják őket a különböző ország-/régiókörnyezetű vállalatokból futtatott ER-formátumok.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A jelen témakörben szereplő példák elvégzéséhez a következő hozzáférésekkel kell rendelkeznie:
+Az ebben a példában olvasható példák csak a következő hozzáféréssel egészek ki:
 
 - Hozzáférés a Finance alkalmazáshoz a következő szerepkörök egyikével:
     - Elektronikus jelentések fejlesztője
@@ -42,11 +42,11 @@ A jelen témakörben szereplő példák elvégzéséhez a következő hozzáfér
     - Elektronikus jelentések funkcióival foglalkozó konzulens
     - Rendszergazda
 
-Az ebben a témakörben leírt lépések végrehajtásához kötelező az ER formátum. Bizonyos esetekben az ER-formátum végrehajtását érinti annak a vállalatnak az ország-/régióbeli környezete, amelybe jelenleg be van jelentkezve. A jelenlegi RCS példányban is futtathat egy ER formátumot, ha a szükséges ország-/régió környezettel rendelkező vállalat elérhető az RCS-ben. Ellenkező esetben fel kell töltenie az ER-modell hozzárendelésének és ER formátumkonfigurációk teljes verzióját, amelyek a Finance példány számára az ER-adatmodellt használják, majd a Finance példányban futtassa az ER formátumot. A RCS egy Finance példányban található konfigurációk importálásával kapcsolatos tudnivalókat lásd: [Konfigurációk importálása a RCS-ből](rcs-download-configurations.md).
+A cikk néhány lépése ER-formátum végrehajtását igényli. Bizonyos esetekben az ER-formátum végrehajtását érinti annak a vállalatnak az ország-/régióbeli környezete, amelybe jelenleg be van jelentkezve. A jelenlegi RCS példányban is futtathat egy ER formátumot, ha a szükséges ország-/régió környezettel rendelkező vállalat elérhető az RCS-ben. Ellenkező esetben fel kell töltenie az ER-modell hozzárendelésének és ER formátumkonfigurációk teljes verzióját, amelyek a Finance példány számára az ER-adatmodellt használják, majd a Finance példányban futtassa az ER formátumot. A RCS egy Finance példányban található konfigurációk importálásával kapcsolatos tudnivalókat lásd: [Konfigurációk importálása a RCS-ből](rcs-download-configurations.md).
 
 ## <a name="single-model-mapping-case"></a>Egy modell-hozzárendelési eset
 
-A szükséges ER-összetevők megtervezéséhez kövesse a témakör [1. függelékének](#appendix1) lépéseit. Most megvan a **Leképezés (Általános)** modell-leképezési konfiguráció, amely tartalmazza az **1. belépési pont** meghatározásához tartozó modell-leképezést.
+Hajtsa végre a cikk [1](#appendix1) . mellékletének lépéseit a szükséges ER-összetevők tervezéséhez. Most megvan a **Leképezés (Általános)** modell-leképezési konfiguráció, amely tartalmazza az **1. belépési pont** meghatározásához tartozó modell-leképezést.
 
 ![ER konfigurációs lap, formátumok a megfeleltetések konfigurációjának elsajátításához.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
@@ -59,7 +59,7 @@ Figyelje meg, hogy a webböngésző felajánlja a végrehajtható ER formátumma
 
 ## <a name="multiple-shared-model-mappings-case"></a>Több megosztott modell-hozzárendelési eset
 
-A szükséges ER-összetevők megtervezéséhez kövesse a témakör [2. függelékének](#appendix2) lépéseit. Most megvan a **Leképezés (Általános)** és **Leképezés (Általános) egyéni** modell-leképezési konfiguráció, amelyek tartalmazzák az **1. belépési pont** meghatározásához tartozó modell-leképezést.
+Hajtsa végre a [cikk 2](#appendix2) . mellékletének a szükséges ER-összetevők tervezéséhez szükséges lépéseket. Most megvan a **Leképezés (Általános)** és **Leképezés (Általános) egyéni** modell-leképezési konfiguráció, amelyek tartalmazzák az **1. belépési pont** meghatározásához tartozó modell-leképezést.
 
 ![ER konfigurációs lap, Leképezés általános egyéni konfiguráció.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
@@ -97,7 +97,7 @@ Figyelje meg, hogy a kijelölt ER formátum végrehajtása sikeres. A webböngé
 
 ## <a name="multiple-mixed-model-mappings-case"></a>Több vegyes modell-hozzárendelési eset
 
-A szükséges ER-összetevők megtervezéséhez kövesse a témakör [3. függelékének](#appendix3) lépéseit. Most megvan a **Leképezés (Általános)**, **Leképezés (Általános) egyéni** és **Leképezés (FR) modell-leképezési** konfiguráció, amelyek tartalmazzák az **1. belépési pont** meghatározásához tartozó modell-leképezést.
+Hajtsa végre a [cikk 3](#appendix3) . mellékletének lépéseit a szükséges ER-összetevők tervezéséhez. Most megvan a **Leképezés (Általános)**, **Leképezés (Általános) egyéni** és **Leképezés (FR) modell-leképezési** konfiguráció, amelyek tartalmazzák az **1. belépési pont** meghatározásához tartozó modell-leképezést.
 
 Figyelje meg, hogy a **Leképezés (FR)** modell-hozzárendelési konfiguráció 1. verziója úgy van beállítva, hogy csak a **Leképezések megismerési modellje** modell ER formátumaira érvényes, amelyek a francia ország/régió környezettel rendelkező Finance vállalatokon futnak.
 
@@ -138,10 +138,10 @@ Figyelje meg, hogy a kijelölt ER formátum végrehajtása sikeres. A webböngé
 
 Amint már láttuk, a következő módon lehet kiválasztani egy modell hozzárendelését az ER-formátum végrehajtásához:
 
-- A modell-hozzárendelés definíciója, amelyet az ER formátum használ (**1. belépési pont** a jelen témakörben használt példákban).
-- Minden olyan leképezési konfiguráció, amely a megadott definícióval rendelkezik, és amely megfelel a konfigurált ország-/régióbeli környezeti korlátozásoknak, használható az ER-formátum futtatására (a jelen témakörben szereplő példákban: **Leképezés (általános)**, **Leképezés (általános) egyéni** és **Leképezés (FR)**).
-- Az ország-/régió környezeti korlátozásokat tartalmazó alapértelmezett modell-hozzárendelések a legmagasabb kiválasztási prioritással rendelkeznek (a jelen témakörben szereplő példákban: **Leképezés (FR)**).
-- Az ország/régió környezeti korlátozásokat nem tartalmazó alapértelmezett modell-hozzárendelések a második legmagasabb kiválasztási prioritással rendelkeznek (a jelen témakörben szereplő példákban: **Leképezés (általános) egyéni**).
+- Meg van adva a modellleképezés definíciója, amit az ER-formátum használ (**a példa 1** . belépési pontja ebben a példában).
+- Minden olyan hozzárendelési konfiguráció, amely a megadott definíciónak megfelelő hozzárendelést tartalmaz, és amely a konfigurált ország-/régiókontextus-megszorításokat teljesíti, az ebben a példában található példákban potenciálisan használható az ER-formátum (Hozzárendelés (**Általános), Hozzárendelés (** **Általános)**, **egyéni és megfeleltetés (FR)** futtatására.
+- Az ország-/régiófüggő korlátozásokkal rendelkező alapértelmezett modellleképezések esetében a legmagasabb prioritású kijelölés (**Mapping (FR)** van a példában.)
+- Az olyan alapértelmezett modellleképezések, amelyekre nem vonatkoznak ország-/régiófüggő korlátozások, a következő magasabb prioritású kijelölési prioritással rendelkezik (**a példában található példákban a hozzárendelés (általános)** egyéni).
 - Az ország/régió környezeti korlátozásokat tartalmazó modell-hozzárendelések kiválasztási prioritása magasabb, mint egy olyan modell-hozzárendelés, amely nem rendelkezik az ország-/régióbeli környezet korlátozásával.
 
 A következő táblázat a modell-hozzárendelési kiválasztéások eredményeivel kapcsolatban tartalmaz tájékoztatást a modell hozzárendelési beállítások minden egyes esetére vonatkozóan:

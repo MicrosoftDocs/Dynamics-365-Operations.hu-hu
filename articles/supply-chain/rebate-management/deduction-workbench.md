@@ -1,6 +1,6 @@
 ---
 title: A levonások kezelése a levonás munkaterületről
-description: Ez a témakör ismerteti, hogyan használja a levonás munkaterületről lehet levonások tartalmazó vevői kifizetések feldolgozása.
+description: Ez a témakör azt ismerteti, hogyan lehet a levonás munkaterületen feldolgozni a levonásokat is magukban foglaló vevői kifizetéseket.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 607ad528b56d1f0c9a78e113f67c920cdae6e620
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500402"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873608"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>A levonások kezelése a levonás munkaterületről
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti, hogyan használja a levonás munkaterületről lehet levonások tartalmazó vevői kifizetések feldolgozása.
+Ez a témakör azt ismerteti, hogyan lehet a levonás munkaterületen feldolgozni a levonásokat is magukban foglaló vevői kifizetéseket.
 
 Olyan vevő, aki a visszatérítés tartozik eldöntheti, hogy ne várja meg a visszatérítési kifizetés. Feladhat olyan vevői fizetéseket is, amelyek visszatérítés miatti levonást tartalmaznak. A levonás munkaterületet használja a levonások és a nyitott hitelkártyatranzakciók párosításához, levonások megosztásához, levonások megtagadásához, és levonások leírásához.
 
 > [!NOTE]
-> A levonás munkaterület már hosszú ideje része a Microsoft Dynamics 365 Supply Chain Management értékesítési és marketing funkcióinak. Azonban tovább lett fejlesztve, hogy működjön az újabb **Visszatérítés-kezelés** modullal is. Ez a témakör azt ismerteti, hogyan lehet a levonás munkaterület régebbi funkciókkal és visszatérítéskezelési funkcióival is használni. Ha azonban [nem bekapcsolta a rendszer **Visszatérítéskezelés** modulját](rebate-management-enable.md), az itt leírt funkciók egy része nem lesz elérhető.
+> A levonás munkaterület már hosszú ideje része a Microsoft Dynamics 365 Supply Chain Management értékesítési és marketing funkcióinak. Azonban tovább lett fejlesztve, hogy működjön az újabb **Visszatérítés-kezelés** modullal is. Ez a témakör azt ismerteti, hogyan lehet a levonás munkaterület régebbi és visszatérítés-kezelési funkcióit is használni. Ha azonban [nem bekapcsolta a rendszer **Visszatérítéskezelés** modulját](rebate-management-enable.md), az itt leírt funkciók egy része nem lesz elérhető.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -159,11 +159,11 @@ Kövesse az alábbi lépéseket új nyitóegyenleg-napló létrehozásához.
         - *Mennyiségalapú* – Egy negatív értékesítési rendelés vagy visszárurendelés jön létre.
 
     - **Igény dátuma** – Az igény dátumának kiválasztása. Az alapértelmezett érték az aktuális dátum.
-    - **Igény oka** – Az aktuális levonásra vonatkozó okkód kiválasztása. A kiválasztott igény alapja hatással van az alkalmazandó beállításokra. Az itt kiválasztott igény-okok létrehozásáról és konfigurálásról a témakör korábbi, [Levonási okok létrehozása](#deduction-reasons) című szakasza nyújt további tájékoztatást.
+    - **Igény oka** – Az aktuális levonásra vonatkozó okkód kiválasztása. A kiválasztott igény alapja hatással van az alkalmazandó beállításokra. Az itt kiválasztott [igénylési](#deduction-reasons) okok létrehozásáról és konfigurálásról a jelen cikk korábbi, Levonási okok létrehozása szakasza nyújt tájékoztatást.
     - **Megjegyzések** – Az esetleges alkalmazandó megjegyzések hozzáadása. Az igény jóváhagyása után a jóváhagyó szerkesztheti vagy hozzáadhatja az igény megjegyzéseit.
     - **Igénynapló létrehozása** – Ezzel a beállítással megadhatja, hogy az igénynapló létre legyen-e hozva az igény vagy a levonás létrehozásakor:
 
-        - *Igen* – a rendszer a **Kinnlevőségek paraméterei** oldalon beállított igénynapló segítségével hoz létre és ad fel általános naplót. (További tájékoztatás: [A kinnlevőségek és levonások konfigurálása](#accounts-receivable-deductions) szakasz a témakör korábbi részében.) Amikor az igényhez számla kapcsolódik, az igénynapló segítségével csökkentjük a vonatkozó számla egyenlegét. Ha az igényt később visszautasítják, akkor a rendszer sztornírozja az igénynaplót és a kiegyenlítéseket (ha csatoltak számlát).
+        - *Igen* – a rendszer a **Kinnlevőségek paraméterei** oldalon beállított igénynapló segítségével hoz létre és ad fel általános naplót. (További tájékoztatás: [A kinnlevőségek és levonások szakaszának](#accounts-receivable-deductions) beállítása a cikk korábbi részében.) Ha az igényhez számla van csatolva, az igénynapló segítségével csökkenti az alkalmazható számla egyenlegét. Ha az igényt később visszautasítják, akkor a rendszer sztornírozja az igénynaplót és a kiegyenlítéseket (ha csatoltak számlát).
         - *Nem* – Most nem jön létre igénynapló. Az igény jóváhagyásakor jön létre. Annak ellenére csatolható számla az új igényhez, hogy nincs létrehozva igénynapló. Az igénynapló nélkül azonban nem lehet kiegyenlítést végezni.
 
 1. Válassza ki az **OK** lehetőséget.
@@ -197,11 +197,11 @@ A vevői kiegyenlítésből történő levonás létrehozásának folyamata haso
         - *Mennyiségalapú* – Egy negatív értékesítési rendelés vagy visszárurendelés jön létre.
 
     - **Igény dátuma** – Az igény dátumának kiválasztása. Az alapértelmezett érték az aktuális dátum.
-    - **Igény oka** – Az aktuális levonásra vonatkozó okkód kiválasztása. A kiválasztott igény alapja hatással van az alkalmazandó beállításokra. Az itt kiválasztott igény-okok létrehozásáról és konfigurálásról a témakör korábbi, [Levonási okok létrehozása](#deduction-reasons) című szakasza nyújt további tájékoztatást.
+    - **Igény oka** – Az aktuális levonásra vonatkozó okkód kiválasztása. A kiválasztott igény alapja hatással van az alkalmazandó beállításokra. Az itt kiválasztott [igénylési](#deduction-reasons) okok létrehozásáról és konfigurálásról a jelen cikk korábbi, Levonási okok létrehozása szakasza nyújt tájékoztatást.
     - **Megjegyzések** – Az esetleges alkalmazandó megjegyzések hozzáadása. Az igény jóváhagyása után a jóváhagyó szerkesztheti vagy hozzáadhatja az igény megjegyzéseit.
     - **Igénynapló létrehozása** – Ezzel a beállítással megadhatja, hogy az igénynapló létre legyen-e hozva az igény vagy a levonás létrehozásakor:
 
-        - *Igen* – a rendszer a **Kinnlevőségek paraméterei** oldalon beállított igénynapló segítségével hoz létre és ad fel általános naplót. (További tájékoztatás: [A kinnlevőségek és levonások konfigurálása](#accounts-receivable-deductions) szakasz a témakör korábbi részében.) Amikor az igényhez számla kapcsolódik, az igénynapló segítségével csökkentjük a vonatkozó számla egyenlegét. Ha az igényt később visszautasítják, akkor a rendszer sztornírozja az igénynaplót és a kiegyenlítéseket (ha csatoltak számlát).
+        - *Igen* – a rendszer a **Kinnlevőségek paraméterei** oldalon beállított igénynapló segítségével hoz létre és ad fel általános naplót. (További tájékoztatás: [A kinnlevőségek és levonások szakaszának](#accounts-receivable-deductions) beállítása a cikk korábbi részében.) Ha az igényhez számla van csatolva, az igénynapló segítségével csökkenti az alkalmazható számla egyenlegét. Ha az igényt később visszautasítják, akkor a rendszer sztornírozja az igénynaplót és a kiegyenlítéseket (ha csatoltak számlát).
         - *Nem* – Most nem jön létre igénynapló. Az igény jóváhagyásakor jön létre. Annak ellenére csatolható számla az új igényhez, hogy nincs létrehozva igénynapló. Az igénynapló nélkül azonban nem lehet kiegyenlítést végezni.
 
 1. Válassza ki az **OK** lehetőséget.
@@ -235,11 +235,11 @@ A vevői oldalról történő levonás létrehozásának folyamata hasonlít a l
         - *Mennyiségalapú* – Egy negatív értékesítési rendelés vagy visszárurendelés jön létre.
 
     - **Igény dátuma** – Az igény dátumának kiválasztása. Az alapértelmezett érték az aktuális dátum.
-    - **Igény oka** – Az aktuális levonásra vonatkozó okkód kiválasztása. A kiválasztott igény alapja hatással van az alkalmazandó beállításokra. Az itt kiválasztott igény-okok létrehozásáról és konfigurálásról a témakör korábbi, [Levonási okok létrehozása](#deduction-reasons) című szakasza nyújt további tájékoztatást.
+    - **Igény oka** – Az aktuális levonásra vonatkozó okkód kiválasztása. A kiválasztott igény alapja hatással van az alkalmazandó beállításokra. Az itt kiválasztott [igénylési](#deduction-reasons) okok létrehozásáról és konfigurálásról a jelen cikk korábbi, Levonási okok létrehozása szakasza nyújt tájékoztatást.
     - **Megjegyzések** – Az esetleges alkalmazandó megjegyzések hozzáadása. Az igény jóváhagyása után a jóváhagyó szerkesztheti vagy hozzáadhatja az igény megjegyzéseit.
     - **Igénynapló létrehozása** – Ezzel a beállítással megadhatja, hogy az igénynapló létre legyen-e hozva az igény vagy a levonás létrehozásakor:
 
-        - *Igen* – a rendszer a **Kinnlevőségek paraméterei** oldalon beállított igénynapló segítségével hoz létre és ad fel általános naplót. (További tájékoztatás: [A kinnlevőségek és levonások konfigurálása](#accounts-receivable-deductions) szakasz a témakör korábbi részében.) Amikor az igényhez számla kapcsolódik, az igénynapló segítségével csökkentjük a vonatkozó számla egyenlegét. Ha az igényt később visszautasítják, akkor a rendszer sztornírozja az igénynaplót és a kiegyenlítéseket (ha csatoltak számlát).
+        - *Igen* – a rendszer a **Kinnlevőségek paraméterei** oldalon beállított igénynapló segítségével hoz létre és ad fel általános naplót. (További tájékoztatás: [A kinnlevőségek és levonások szakaszának](#accounts-receivable-deductions) beállítása a cikk korábbi részében.) Ha az igényhez számla van csatolva, az igénynapló segítségével csökkenti az alkalmazható számla egyenlegét. Ha az igényt később visszautasítják, akkor a rendszer sztornírozja az igénynaplót és a kiegyenlítéseket (ha csatoltak számlát).
         - *Nem* – Most nem jön létre igénynapló. Az igény jóváhagyásakor jön létre. Annak ellenére csatolható számla az új igényhez, hogy nincs létrehozva igénynapló. Az igénynapló nélkül azonban nem lehet kiegyenlítést végezni.
 
 1. Válassza ki az **OK** lehetőséget.
@@ -280,7 +280,7 @@ A levonás jóváírással való egyeztetéséhez kövesse az alábbi lépéseke
 1. A Műveletpanelen válasza a **Karbantartás \> Egyeztetés** elemet. A rendszer egyezteti a levonást a jóváírással. Ha marad egyenleg a levonásban, akkor az megjelenik a **Levonások** lap **Fennmaradó összeg** mezőjében.
 
     > [!NOTE]
-    > Olyan levonások esetén, amelyek a levonás munkaterületén, a vevői kiegyenlítésnél vagy a vevőoldalon az **Új levonás parancs** használatával lettek létrehozva, a **Karbantartás \> Egyeztetés** parancs csak akkor érhető el, ha az **Igény állapota** mező beállítása *Elfogadott*. Ezzel a paranccsal lehet manuálisan megfeleltetni az ár alapú vagy mennyiség alapú tranzakciót a **Nyitott tranzakciók** szakasz kapcsolódó jóváírásával. Ez a jóváírás vagy akkor jön létre, amikor a levonást jóváhagyták (a **Karbantartás \> Levonás jóváhagyása** paranccsal), vagy amikor egy meglévő jóváíráshoz csatolták, amint azt a témakör későbbi [A levonás jóváhagyási folyamaton kívül jóváhagyott jóváírások](#credits-outside-approval) szakaszában olvashatja. A *Jóváhagyott levonások kiegyenlítése* időszakos feladat (**Értékesítési és marketing \> Időszakos feladatok \> Jóváhagyott levonások kiegyenlítése**) segítségével automatikusan egyeztetni lehet az azonos **Levonási azonosító** értékekkel és összegekkel rendelkező levonásokkal és jóváírásokkal.
+    > Olyan levonások esetén, amelyek a levonás munkaterületén, a vevői kiegyenlítésnél vagy a vevőoldalon az **Új levonás parancs** használatával lettek létrehozva, a **Karbantartás \> Egyeztetés** parancs csak akkor érhető el, ha az **Igény állapota** mező beállítása *Elfogadott*. Ezzel a paranccsal lehet manuálisan megfeleltetni az ár alapú vagy mennyiség alapú tranzakciót a **Nyitott tranzakciók** szakasz kapcsolódó jóváírásával. Ez a jóváírás vagy akkor jön létre, amikor a levonást jóváhagyták (**\>** a Levonás jóváhagyása paranccsal), [vagy](#credits-outside-approval) amikor egy meglévő jóváíráshoz csatolták, amint azt a jelen cikk későbbi, a levonási folyamat jóváhagyása szakaszon kívül létrehozott jóváírások ismertetik. A *Jóváhagyott levonások kiegyenlítése* időszakos feladat (**Értékesítési és marketing \> Időszakos feladatok \> Jóváhagyott levonások kiegyenlítése**) segítségével automatikusan egyeztetni lehet az azonos **Levonási azonosító** értékekkel és összegekkel rendelkező levonásokkal és jóváírásokkal.
 
 ### <a name="split-a-deduction"></a>Levonás felosztása
 

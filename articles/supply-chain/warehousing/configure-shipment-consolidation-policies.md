@@ -1,6 +1,6 @@
 ---
 title: Szállítmánykonszolidációs irányelvek konfigurálása
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani alapértelmezett és egyéni szállítmányok konszolidációs irányelveit.
+description: Ez a cikk bemutatja az alapértelmezett és az egyéni szállítmánykonszolidáció irányelveinek beállítását.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 0a575648c0e6f5d0e3b9fb03ea6f47252837bf9c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845924"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Szállítmánykonszolidációs irányelvek konfigurálása
 
@@ -26,12 +26,12 @@ ms.locfileid: "8672570"
 
 A szállítmánykonszolidációs irányelveket használó szállítmánykonszolidációs folyamat lehetővé teszi az automatizált szállítmánykonszolidálást a raktárba történő automatikus és manuális kiadáskor. Miután bekapcsolta ezt a funkciót, konfigurálnia kell a kezdeti irányelveket. Ha nincsenek beállítva irányelvek, akkor minden értékesítési sor egyetlen rakománysorral rendelkező, külön szállítmányt hoz létre.
 
-Az ebben a témakörben ismertetett forgatókönyvek mutatják be az alapértelmezett és az egyéni szállítmánykonszolidációs irányelvek beállítását.
+Az ebben a cikkben ismertetett helyzetek bemutatják, hogyan lehet beállítani az alapértelmezett és az egyéni szállítmánykonszolidáció irányelveit.
 
 ## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>A szállítmánykonszolidációs irányelvek funkció bekapcsolása
 
 > [!IMPORTANT]
-> A jelen témakörben leírt [első forgatókönyvben](#scenario-1) először beállít egy raktárat, hogy az a korábbi szállítmánykonszolidációs funkciót használja. Ezután elérhetővé teszi a szállítmánykonszolidációs irányelveket. Ily módon a frissítési forgatókönyv működését megtapasztalhatja. Ha az első forgatókönyv végigvezetéséhez bemutató környezetet tervez használni, ne kapcsolja be a funkciót a forgatókönyv elvégzése előtt.
+> A jelen [cikkben ismertetett](#scenario-1) első esetben először be kell állítani egy raktárat, hogy az a korábbi szállítmánykonszolidációi funkciót használja. Ezután elérhetővé teszi a szállítmánykonszolidációs irányelveket. Ily módon a frissítési forgatókönyv működését megtapasztalhatja. Ha az első forgatókönyv végigvezetéséhez bemutató környezetet tervez használni, ne kapcsolja be a funkciót a forgatókönyv elvégzése előtt.
 
 A *Szállítmánykonszolidációs irányelvek* funkció használata előtt először be kell kapcsolnia rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
@@ -40,7 +40,7 @@ A *Szállítmánykonszolidációs irányelvek* funkció használata előtt elős
 
 ## <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-Az ebben a témakörben szereplő minden egyes forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Microsoft Dynamics 365 Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.
+A cikk minden egyes esete a Microsoft szabványos bemutatóadatában található értékekre és rekordokra hivatkozik Dynamics 365 Supply Chain Management. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>1. forgatókönyv: Alapértelmezett szállítmánykonszolidációs irányelvek konfigurálása
 
@@ -339,7 +339,7 @@ Miután létrehozta az összes irányelvet, létre kell hoznia azt a sorrendet, 
 
 ## <a name="example-scenarios-of-how-to-use-shipment-consolidation-policies"></a><a name="example-scenarios"></a> Példa a szállítmányok konszolidációs irányelveinek használatára
 
-A következő forgatókönyvek azt mutatják be, hogyan lehet használni a témakör olvasása közben létrehozott szállítmánykonszolidációs irányelveket. Minden egyes forgatókönyv végigvezeti egy szállítmánykonszolidációs irányelveket használó szállítmánykonszolidációs folyamaton a raktárba történő automatikus vagy manuális kiadáskor:
+A következő esetek bemutatják, hogy hogyan használhatók a cikk elolvasása során létrehozott szállítmánykonszolidációi irányelvek. Minden egyes forgatókönyv végigvezeti egy szállítmánykonszolidációs irányelveket használó szállítmánykonszolidációs folyamaton a raktárba történő automatikus vagy manuális kiadáskor:
 
 - 1. forgatókönyv: [Szállítmányok konszolidálása a raktárba történő kiadáskor Értékesítési rendelések automatikus kiadása funkció használatával](../warehousing/consolidate-shipments-automatic.md)
 - 2. forgatókönyv: [Szállítmányok konszolidálása, amikor a szállítmánykonszolidációs irányelv felülírásra kerül a Kiadástól a raktárba lapról](../warehousing/consolidate-shipments-release-to-warehouse-override.md)

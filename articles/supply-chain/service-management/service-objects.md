@@ -1,6 +1,6 @@
 ---
 title: Szolgáltatási tárgyak áttekintése
-description: Ez a témakör a szolgáltatási objektumok használatával kapcsolatban nyújt áttekintést.
+description: Ez a témakör áttekintést nyújt a szolgáltatási tárgyakkal való munkáról.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cef4cf1222c4c66991069da72e3e6f5a7040153
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8150a94677fe38f4caa6f3e0b5fb5d1be5972eaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677674"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862411"
 ---
 # <a name="service-objects-overview"></a>Szolgáltatási tárgyak áttekintése
 
@@ -39,7 +39,7 @@ A szolgáltatási tárgyak a vevő azon eszközei és termékei, amelyhez szolg�
 
 Az A vállalat pénzügyi nyilvántartást kezel több kisebb vállalat számára. Az A vállalat egyik ügyfele a helyi futballcsapat, amely számára A vállalat heti könyvelést végez, valamint évente auditálja a klub könyvelését. A klub könyvelése A szolgáltatás tárgyai képernyőn van beállítva, és a szolgáltatási szerződésben ez van megadva objektumként. Az objektumhoz két szolgáltatásiszerződés-sor tartozik. Az 1. sor a heti könyvelés a sorokhoz rendelt heti időközökkel, a 2. sor pedig az éves audit, amihez egy éves időtartam van hozzárendelve.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Szolgáltatási objektumok létrehozása](create-service-objects.md)
 

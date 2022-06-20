@@ -1,6 +1,6 @@
 ---
 title: Az ER-alapú megoldások teljesítményének javítása a futásidőben behívott táblamezők számának csökkentésével
-description: Ez a témakör azt mutatja be, hogyan lehet javítható a teljesítmény javítása a futásidőben bekért táblamezők számának csökkentésével.
+description: Ez a cikk bemutatja, hogy hogyan javíthatja a teljesítményt a futásidőben bekért táblamezők számának csökkentésével.
 author: NickSelin
 ms.date: 05/12/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd192a7718ac4fd8bcb636ede6c005ca29ee5f08
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: eb76c415da87d421b8135a93b84f4e905f01e70d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847451"
 ---
 # <a name="improve-performance-of-er-solutions-by-reducing-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Az ER-alapú megoldások teljesítményének javítása a futásidőben behívott táblamezők számának csökkentésével
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811830"
 
 Az elektronikus jelentéskészítő [(ER](general-electronic-reporting.md)) [formátumokat meg lehet tervezni,](er-overview-components.md#format-components-for-outgoing-electronic-documents) amelyek különböző formátumokban generálják a kimenő dokumentumokat. Dokumentum generálása esetén az ER-formátum hívja meg a megfelelő ER [modellleképezésben beállított adatforrásokat](er-overview-components.md#model-mapping-component). A rekordlekéréshez szükséges alkalmazástáblákhoz, lekérdezésekhez és entitásokhoz való hozzáférés beállításához a táblarekord-típus ER-adatforrásait *használhatja*. Alapértelmezés szerint a Tábla rekordtípus egyik *adatforrása* a kért rekordok összes mezőjének értékét olvassa be. Konfigurálhatja azonban ezt az adatforrást úgy, hogy csak a futó ER-formátumhoz szükséges mezőértékeket használja. Ez a konfiguráció segít csökkenteni az adatkeresést és további rekord-gyorsítótárazást végző alkalmazáskiszolgáló memóriafelhasználását.
 
-Ha többet szeretne tudni arról, hogyan *lehet* korlátozni a Tábla rekordtípus adatforrás-beolvasási mezőinek listáját, akkor ezt a témakörben olvashatja.
+Ha többet szeretne tudni arról, hogyan *lehet* korlátozni a Tábla rekordtípus adatforrás-beolvasási mezőinek listáját, akkor ezt a példát kell bemutatja ebben a cikkben.
 
 ## <a name="example-reduce-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Példa: csökkentse a futásidőben bekért táblamezők számát.
 
@@ -49,7 +49,7 @@ Kövesse az [ER-keretrendszer konfigurálása](er-quick-start2-customize-report.
 
 ### <a name="import-the-sample-er-configurations"></a>Minta ER-konfigurációk importálása
 
-Ha még [nem fejeződött be az új ER-megoldás megtervezése témakör példájának, akkor egyéni jelentéstémakört nyomtathat, töltse le és tárolja helyben a](er-quick-start1-new-solution.md) megadott ER-megoldás következő konfigurációiban található XML-fájlokat.
+Ha még [nem fejeződött be az új ER-megoldás megtervezése abban a példában, amely egyéni jelentéscikket nyomtat, töltse le és tárolja helyben a](er-quick-start1-new-solution.md) megadott ER-megoldás következő konfigurációihoz használható XML-fájlokat.
 
 | Tartalom leírása            | Fájlnév |
 |--------------------------------|-----------|

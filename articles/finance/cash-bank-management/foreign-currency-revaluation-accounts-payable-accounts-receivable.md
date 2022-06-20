@@ -1,6 +1,6 @@
 ---
 title: A Kötelezettségek és a Kinnlevőségek modul devizaátértékelése
-description: Ez a témakör tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik.
+description: Ez a cikk tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf32a31df1d56740d803b97d65829b1b1d31eb17
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 33750e7bb2f1fc4158a5f2faba5eeae5a356db7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713924"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906384"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>A Kötelezettségek és a Kinnlevőségek modul devizaátértékelése
 
 [!include [banner](../includes/banner.md)]
 
-Az árfolyamok ingadozásai a devizában megadott nyitott tranzakciók elméleti értékét (könyv szerinti értéke) az idők során megváltoztatják. Ez a témakör tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik. 
+Az árfolyamok ingadozásai a devizában megadott nyitott tranzakciók elméleti értékét (könyv szerinti értéke) az idők során megváltoztatják. Ez a cikk tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik. 
 
 A nyitott szállítói tranzakciók devizában megadott elméleti értéke (könyv szerinti értéke) az idők során az árfolyam ingadozásának megfelelően változik. A kötelezettségek és Kinnlevőségek nyitott tranzakciók értékét frissítik, futtassa a deviza-átértékelési folyamat. A kötelezettségek és Kinnlevőségek árfolyam-korrekció. A folyamat átértékelni a nyitott összeg az új árfolyam használatával, vagy a Kiegyenlítetlen összegek, a megadott dátumon. Az eredetileg feladott összegek és az újraszámított összegek közötti különbségek azt eredményezik, hogy nem realizált nyereség vagy veszteség keletkezik minden nyitott tranzakciónál. A Kötelezettségek és Kinnlevőségek részkönyvszámlák ezután a nem realizált nyereséget vagy veszteséget tükrözve frissülnek, és egy könyvelési tétel kerül feladásra a főkönyvbe.
 

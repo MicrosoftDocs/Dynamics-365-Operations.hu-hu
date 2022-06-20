@@ -1,6 +1,6 @@
 ---
 title: NMFC (National Motor Freight Classification) kódok
-description: Ez a témakör azt mutatja be, hogyan lehet dolgozni az NMFC (National Motor Freight Classification) kódokkal a Microsoft Dynamics 365 Supply Chain Management szolgáltatásban
+description: Ez a témakör azt mutatja be, hogyan lehet dolgozni a Microsoft NMFC-kódjaival. Dynamics 365 Supply Chain Management
 author: Weijiesa
 ms.date: 04/22/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 5127e132a8c06815e9ecd11338c729cd8bb87f18
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 522e4d4e26b04b5ca1dd317e433c5a20ff3cb12e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670580"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893265"
 ---
 # <a name="national-motor-freight-classification-nmfc-codes"></a>NMFC (National Motor Freight Classification) kódok
 
@@ -31,7 +31,7 @@ Ez a funkció segít a dolgozóknak az NMFC-kódok használatával az LTL-száll
 - Ez az osztályozás fontos lehet a vállalat számára, mivel ez az adott rakomány költségének megállapítására használható.
 - Vállalata azonosíthatja egy LTL-logisztikai és szállítmányozási vállalat nyereségességét.
 
-Ez a témakör az NMFC-kódokkal végzett munkát mutatja be a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
+Ez a témakör azt mutatja be, hogyan lehet az NMFC-kódokat a Microsoftban dolgozni Dynamics 365 Supply Chain Management.
 
 ## <a name="prerequisites"></a>Előfeltételek
 

@@ -1,6 +1,6 @@
 ---
 title: Tárolócsomagolási stratégiák
-description: Ez a témakör leírja a tárolócsomagolási stratégiák közötti különbségeket, és példákat mutat be.
+description: Ez a témakör a tárolók csomagolási stratégiái közötti különbségeket írja le, és példákkal szolgál.
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ab34cee7fd495ec26f6b20da2aa43895f49f677c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676383"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862366"
 ---
 # <a name="container-packing-strategies"></a>Tárolócsomagolási stratégiák
 
 [!include [banner](../includes/banner.md)]
 
-A *konténercsomagolási stratégia* olyan stratégia, amin a tárolók közötti cikkallokációk definiálhatók. Ez a témakör bemutatja a *Csomagolás az összes nyitott tárolóba* és a *Csomagolás csak az aktuális tárolóba* stratégiák közötti különbségeket.
+A *konténercsomagolási stratégia* olyan stratégia, amin a tárolók közötti cikkallokációk definiálhatók. Ez a cikk bemutatja a *nyitott* *tárolókba történő csomagolás és az aktuális tárolóra való csomagolás csak stratégiában való csomagolás közötti különbségeket*.
 
 - **Csomagolás az összes nyitott tárolóba** – A rendszernek ellenőriznie kell az összes olyan nyitott tárolót, amely már létre lett hozva a tároló-létrehozási ciklus során, hogy a cikk biztosan elférjen valamelyikben. A rendszer a csomagolás során mindegyik cikknél ellenőrzi, hogy befér-e valamelyik korábban létrehozott tárolóba. Ha a cikk nem fér bele egy meglévő tárolóba, a rendszer létrehoz egy új tárolót, és addig folytatja a csomagolást, amíg be nem fejeződik a teljes rendelés csomagolása.
 

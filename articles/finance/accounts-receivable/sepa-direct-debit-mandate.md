@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fec85e63b0c3c2875a153c55b1fd30a2c55d5fd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0bea974750a6ac62d8ddeea5d9d4457f4846cb79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726100"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891638"
 ---
 # <a name="set-up-sepa-direct-debit-mandate"></a>SEPA beszedési megbízás beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Az egységes eurófizetési térség (SEPA) beszedési megbízással a hitelező pénzt szedhet be a vevő bankszámlájáról, feltéve , ha a vevő aláírt meghatalmazást adott a hitelezőnek. A rendelet, amit a vevő aláírás engedélyez egy hitelezőnek, hogy gyűjtse össze a fizetéstést és utasítja a vevő bankját a beszedés kifizetésére. A témakör célja, hogy bemutassa a SEPA beszedési megbízási felhatalmazások beállításának folyamatát.
+Az egységes eurófizetési térség (SEPA) beszedési megbízással a hitelező pénzt szedhet be a vevő bankszámlájáról, feltéve , ha a vevő aláírt meghatalmazást adott a hitelezőnek. A rendelet, amit a vevő aláírás engedélyez egy hitelezőnek, hogy gyűjtse össze a fizetéstést és utasítja a vevő bankját a beszedés kifizetésére. Ez a cikk a SEPA beszedési megbízási felhatalmazások beállításának folyamatát mutatja be.
 
 ## <a name="prerequisites"></a>Előfeltételek
 Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfeltételeket.

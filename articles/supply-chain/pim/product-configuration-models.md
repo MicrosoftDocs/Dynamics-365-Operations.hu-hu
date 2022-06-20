@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fddad1fffd61ef0cf78977721bdf2da51aa4c682
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9bee2d68a2ed2aa339ddf8232bba4541f4fe52b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984646"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871920"
 ---
 # <a name="product-configuration-models-overview"></a>Termékkonfigurálási modellek áttekintése
 
@@ -75,7 +75,7 @@ Ha az attribútum típusa <strong>Logikai</strong>, tartományba eső <strong>Eg
 <td>Megszorítások</td>
 <td>A megszorítások írják le a termékmodell konfigurálásának korlátozásait. A megszorítások használata garantálja, hogy csak az érvényes értékeket lehessen kiválasztani a termék konfigurálása során. A megszorítások kifejezést vagy táblázatot korlátozhatnak:
 <ul>
-<li>A kifejezés megszorításai csak olyan összetevőnél használhatók, melyhez hozzá vannak kapcsolva. Egy összetevőre vonatkozó kifejezés megszorításai az összetevők részösszetevőinek attribútumaira is hivatkozhatnak. A megszorításokat a Termékkonfiguráció-feloldó oldja meg, megszorítások írásakor a feloldási szintaktikát kell használnia. További tudnivalók: lásd a kifejezésmegszorítások és táblamegszorítások témakörének hivatkozását.</li>
+<li>A kifejezés megszorításai csak olyan összetevőnél használhatók, melyhez hozzá vannak kapcsolva. Egy összetevőre vonatkozó kifejezés megszorításai az összetevők részösszetevőinek attribútumaira is hivatkozhatnak. A megszorításokat a Termékkonfiguráció-feloldó oldja meg, megszorítások írásakor a feloldási szintaktikát kell használnia. A további tudnivalókat lásd a kifejezésmegszorításokkal és a táblamegszorításokkal kapcsolatos hivatkozással kapcsolatban.</li>
 <li>A táblamegszorításokat a konfigurációs termékmodell összetevőire való alkalmazás előtt definiálni kell. A táblázatok megszorításai felhasználó által definiáltak vagy rendszer definiáltak is lehetnek. Egy táblázat felhasználó által definiált megszorítása egy olyan mátrix, mely az attribútumtípusok által definiált attribútumértékek kombinációinak halmaza leírására használható. Például hangszórók gyártása esetén a felhasználó által definiált táblamegszorításnál az oszlopok a hangszórók borítását és rácsát tartalmazhatják.</li>
 </ul>
 <strong>Példa</strong> A hangszórók négyféle borításban érhetőek el: Fekete, Tölgyfa, Rózsafa, Fehér. A hangszórók a három első rács egyikével rendelkezhetnek: fekete, fém vagy fehér. A fekete szín minden rácshoz elérhető, de a többi szín különleges rácsokra korlátozódik. Az alábbi táblázat egy példát mutat a <strong>Táblamegszorítás szerkesztése</strong> oldal <strong>Megengedett kombinációk</strong> lapján megjelenő információkra.

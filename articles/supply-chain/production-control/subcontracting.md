@@ -1,6 +1,6 @@
 ---
 title: Alvállalkozásba adás
-description: Ez a témakör segítségével létrehozhat egy bemutatót az alvállalkozói a gyártáshoz a Dynamics 365 Supply Chain Management alkalmazásban.
+description: Ez a cikk segít az alvállalkozói tevékenységeknek a gyártásban való felépítésében Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ef8f30e934ece4a148c6f5259d74f8f67799999d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579352"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854177"
 ---
 # <a name="subcontracting"></a>Alvállalkozásba adás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör segítségével létrehozhat egy bemutatót az alvállalkozásba adásról a gyártásban a Microsoft Dynamics 365 Supply Chain Management alkalmazásban. A témakör első része az adatok beállításáról szól. A második rész végigvezeti Önt a forgatókönyv lépésein.
+Ez a cikk segítséget segít a Microsoft gyártási alvállalkozásba adásának felépítésében Dynamics 365 Supply Chain Management. A cikk első része az adatok beállítását írja le. A második rész végigvezeti Önt a forgatókönyv lépésein.
 
 ## <a name="target-audience"></a>Célközönség
 
-Ebben a témakörben megtudhatja, hogyan állíthatja be a gyártási alvállalkozásba adást. A HQUS jogi személynél lévő adatokat fogja használni az alvállalkozásba adás tevékenységfolyamatának alapvető beállításához. A HQUS jogi személynél lévő bemutató adatok olyan beállítási paramétereket is tartalmaznak, amik az útmutató lépéseinek támogatására vannak állítva. Annak ellenére, hogy az útmutató a kulcsfontosságú gyenge pontokat és a kihívásokat a különböző szerepkörök számára vizsgálja, a rendszergazda is elvégezheti.
+Ebben a cikkben meg lehet ismerkedni az alvállalkozói szerződések beállításával a gyártás területén. A HQUS jogi személynél lévő adatokat fogja használni az alvállalkozásba adás tevékenységfolyamatának alapvető beállításához. A HQUS jogi személynél lévő bemutató adatok olyan beállítási paramétereket is tartalmaznak, amik az útmutató lépéseinek támogatására vannak állítva. Annak ellenére, hogy az útmutató a kulcsfontosságú gyenge pontokat és a kihívásokat a különböző szerepkörök számára vizsgálja, a rendszergazda is elvégezheti.
 
 ## <a name="demo-scenario"></a>Bemutató eset
 

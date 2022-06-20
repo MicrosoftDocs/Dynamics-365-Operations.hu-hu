@@ -1,6 +1,6 @@
 ---
 title: Szabálytalanság létrehozása és feldolgozása
-description: Ez a témakör leírja, hogy hogyan hajtsa végre a szabálytalanság kezelését, a meglévő minőségi rendelés alapján.
+description: Ez a témakör azt ismerteti, hogyan lehet a szabálytalanságok kezelését egy meglévő minőségi rendelés alapján elvégezni.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032f5b712c2be5312524129cd25e655e778f5f44
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dd8a10e88ab4d1be24a11739dddd7619b3fa6bbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580864"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901966"
 ---
 # <a name="create-and-process-nonconformances"></a>Szabálytalanság létrehozása és feldolgozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör leírja, hogy hogyan hajtsa végre a szabálytalanság kezelését, a meglévő minőségi rendelés alapján. A szabálytalanságok kezelését általában egy minőségi munkatárs végez. Előfeltételként rendelkeznie kell egy minőségi rendeléssel. (A minőségi rendelés létrehozásáról további tájékoztatásért lásd: [Az áruk minőségének vizsgálata](inspect-quality-goods.md).)
+Ez a témakör azt ismerteti, hogyan lehet a szabálytalanságok kezelését egy meglévő minőségi rendelés alapján elvégezni. A szabálytalanságok kezelését általában egy minőségi munkatárs végez. Előfeltételként rendelkeznie kell egy minőségi rendeléssel. (A minőségi rendelés létrehozásáról további tájékoztatásért lásd: [Az áruk minőségének vizsgálata](inspect-quality-goods.md).)
 
 Ahhoz, hogy egy felhasználó feldolgozhassa a szabálytalanság jóváhagyását, hozzájuk kell rendelni egy dolgozót a **Személy** mezőben a **Felhasználók** oldalon. Ezenkívül ahhoz, hogy a felhasználó használni tudja a dokumentum megjegyzéseit, felhasználói beállításai között be kell állítani a **Dokumentumkezelés engedélyezése** beállítást *Igen* értékre.
 

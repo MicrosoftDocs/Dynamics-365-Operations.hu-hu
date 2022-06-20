@@ -1,6 +1,6 @@
 ---
 title: Mobileszköz felhasználói beállításai
-description: Ez a témakör bemutatja a raktári dolgozók mobileszköze felhasználói beállításainak kezelését.
+description: Ez a cikk bemutatja a raktári dolgozók mobileszköz-felhasználói beállításainak kezelését.
 author: Mirzaab
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 15f9ce1768e1ed9dc6f7e84d245082b46a7f122c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882344"
 ---
 # <a name="mobile-device-user-settings"></a>Mobileszköz felhasználói beállításai
 
@@ -39,9 +39,9 @@ Ez a funkció gyors kezdést biztosít a dolgozóknak új eszköz használata es
 > [!IMPORTANT]
 > A *Mobileszköz-felhasználói beállítások* funkció csak az új Raktárkezelés mobilalkalmazásra vonatkozik. Nem működik a régi raktári alkalmazással.
 
-## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>A mobileszköz felhasználói beállításai funkciójának be- és kikapcsolása
+## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>A mobileszköz felhasználói beállításai funkció be- és kikapcsolása
 
-Az ebben a témakörben *leírt funkciók használatához a rendszer számára be kell kapcsolva lennie az új raktári alkalmazás felhasználói beállításainak,* ikonjainak és lépéscímének. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
+Az ebben a cikkben leírt funkciók használatához az új raktári alkalmazás funkció felhasználói beállításait, *ikonjait* és lépéscímeit be kell kapcsolva a rendszeren. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
 
 ## <a name="create-and-manage-user-settings"></a>Felhasználói beállítások létrehozása és kezelése
 

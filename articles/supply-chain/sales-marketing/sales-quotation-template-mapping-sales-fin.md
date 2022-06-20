@@ -1,6 +1,6 @@
 ---
 title: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Supply Chain Management szolgáltatásba
-description: Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak a értékesítésiajánlat-fejlécek és sorok közvetlen szinkronizálásához a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között.
+description: A cikk be tárgyalja az értékesítési ajánlat fejlécei és sorai között közvetlenül a Dynamics 365 értékesítésének szinkronizálásához használt sablonokat és a mögöttes feladatokat Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 362b6c290b1784d05e42ecb650911cc51aa8478a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 440b0a6fd2d297027cf3cab548c611544450269a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854123"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Supply Chain Management szolgáltatásba
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061984"
 
 
 
-Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak a értékesítésiajánlat-fejlécek és sorok közvetlen szinkronizálásához a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között.
+A cikk be tárgyalja az értékesítési ajánlat fejlécei és sorai között közvetlenül a Dynamics 365 értékesítésének szinkronizálásához használt sablonokat és a mögöttes feladatokat Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
 > A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Microsoft Dataverse for Apps szolgáltatásban](/powerapps/administrator/data-integrator).
@@ -136,7 +136,7 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 
 ![Sablonleképezés az adatintegrátorban, QuoteLine.](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Potenciális vevők készpénzre váltása](prospect-to-cash.md)
 

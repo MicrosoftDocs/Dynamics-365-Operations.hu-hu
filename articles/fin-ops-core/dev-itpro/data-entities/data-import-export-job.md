@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644459"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860164"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
@@ -29,7 +29,7 @@ ms.locfileid: "8644459"
 Az **Adatkezelés** munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat. Alapértelmezés szerint az adatimportálási és -exportálási folyamat létrehoz egy előkészítési táblát az egyes entitásokhoz a céladatbázisban. Az előkészítési táblák segítségével ellenőrizhetők, megtisztíthatók és konvertálhatók az adatok a mozgatás előtt.
 
 > [!NOTE]
-> Ez a témakör feltételezi, hogy már ismeri az [adatentitásokat](data-entities.md).
+> Ez a cikk abból indul ki, hogy jól ismeri az [adatentitásokat](data-entities.md).
 
 ## <a name="data-importexport-process"></a>Adatimportálási és -exportálási folyamat
 Az alábbiakban a lépéseket kövesse az adatok exportálásához vagy importálásához.
@@ -48,7 +48,7 @@ Az alábbiakban a lépéseket kövesse az adatok exportálásához vagy importá
 5. Annak az ellenőrzése, hogy a feladat megfelelően futott-e le, a feladat előzményeinek megtekintésével.
 6. Az előkészítési táblák megtisztítása.
 
-A témakör hátralévő részei további részleteket tartalmaznak az eljárás egyes lépéseiről.
+A cikk további részei a folyamat mindegyik lépését részletesen ismertetik.
 
 > [!NOTE]
 > Használja a képernyő frissítése ikont az adatimportálási/-exportálási képernyő frissítéséhez a legújabb állapot megjelenítése érdekében. A böngészőszintű frissítés nem ajánlott, mert az megszakít minden olyan importálási/exportálási feladatot, amelyet nem kötegben futtattak.

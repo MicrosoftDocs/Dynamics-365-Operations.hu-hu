@@ -1,6 +1,6 @@
 ---
 title: Termékszám elnevezési rendszerének létrehozása előre definiált termékváltozatokhoz
-description: Ez a témakör bemutatja, hogyan állítható be termékszámozási rendszer előre definiált termékváltozatok számára, és hogyan rendelhető hozzá a megfelelő termékdimenzió-csoporthoz.
+description: Ez a cikk bemutatja az előre definiált termékváltozatok termékszám-névnómenklajának beállítását, valamint azt, hogy hogyan rendelhető hozzá a megfelelő termékdimenzió-csoporthoz.
 author: t-benebo
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5179dd54f22de11dc4c0f54113376f13b2f59c48
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e77c8eabe1657f7fbfef71747627207dccff3b60
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569577"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887312"
 ---
 # <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Termékszám elnevezési rendszerének létrehozása előre definiált termékváltozatokhoz
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan állítható be termékszámozási rendszer előre definiált termékváltozatok számára, és hogyan rendelhető hozzá a megfelelő termékdimenzió-csoporthoz. Ez az eljárás az USMF bemutatócéget használja. Az új termékszámozási rendszer a szín és méret termékdimenzió-csoporthoz van rendelve. Ezt a feladatot általában egy terméktervező végzi.
+Ez a cikk bemutatja az előre definiált termékváltozatok termékszám-névnómenklajának beállítását, valamint azt, hogy hogyan rendelhető hozzá a megfelelő termékdimenzió-csoporthoz. Ez az eljárás az USMF bemutatócéget használja. Az új termékszámozási rendszer a szín és méret termékdimenzió-csoporthoz van rendelve. Ezt a feladatot általában egy terméktervező végzi.
 
 
 ## <a name="create-a-product-number-nomenclature"></a>Termékszámozási rendszer létrehozása

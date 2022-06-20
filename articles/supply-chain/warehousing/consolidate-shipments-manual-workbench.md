@@ -1,6 +1,6 @@
 ---
 title: Szállítmányok konszolidálása a szállítmánykonszolidációs munkaterület használatával
-description: Ez a témakör egy olyan esetet mutat be, amikor több rendelést adnak ki a raktárba, majd később szállítmánykonszolidációs munkaterület használatával szállítmányokba konszolidálják őket.
+description: Ez a cikk egy olyan helyzetet mutatja be, amikor több rendelés kerül ki a raktárba, majd a szállítmánykonszolidáció munkaterület használatával később szállítmányok leszállítják.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 43669bc302ac0d5dd9e6f161e17dde1155aae0f6
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 388066b9c81ecb63ac1f81b70dc4b168f3f4a71d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888325"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Szállítmányok konszolidálása a szállítmánykonszolidációs munkaterület használatával
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör egy olyan esetet mutat be, amikor több rendelést adnak ki a raktárba, majd később szállítmánykonszolidációs munkaterület használatával szállítmányokba konszolidálják őket.
+Ez a cikk egy olyan helyzetet mutatja be, amikor több rendelés kerül ki a raktárba, majd a szállítmánykonszolidáció munkaterület használatával később szállítmányok leszállítják.
 
 ## <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-Az ebben a témakörben szereplő minden egyes forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Microsoft Dynamics 365 Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.
+A jelen cikkváltozat a Microsoft szabványos bemutatóadatában található értékekre és rekordokra hivatkozik Dynamics 365 Supply Chain Management. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Szállítmánykonszolidációs irányelvek és a termékszűrők beállítása
 

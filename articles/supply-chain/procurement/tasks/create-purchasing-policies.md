@@ -1,6 +1,6 @@
 ---
 title: Beszerzési irányelvek létrehozása
-description: Ez az témakör bemutatja, hogy hogyan lehet olyan beszerzési irányelveket létrehozni, amelyeket egyeztetni kíván az üzleti folyamattal a beszerzéshez.
+description: Ez a cikk bemutatja, hogyan lehet beszerzési irányelveket létrehozni a beszerzéssel kapcsolatos üzleti folyamatoknak megfelelően.
 author: GalynaFedorova
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f51c88506044359787257ba0e0a6668213a170d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 011705723466d746fa5b23c5499d03a548f133f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677870"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878845"
 ---
 # <a name="create-purchasing-policies"></a>Beszerzési irányelvek létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az témakör bemutatja, hogy hogyan lehet olyan beszerzési irányelveket létrehozni, amelyeket egyeztetni kíván az üzleti folyamattal a beszerzéshez. A beszerzési irányelvek létrehozása előtt, be kell állítania a beszerzési irányelvek paramétereit. Lehetőség van a beszerzési irányelvek létrehozására, módosítására és visszavonására, azonban nem törölheti a beszerzési irányelvet. Ezt a folyamatot általában egy beszerzési vezető végzi el. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.
+Ez a cikk bemutatja, hogyan lehet beszerzési irányelveket létrehozni a beszerzéssel kapcsolatos üzleti folyamatoknak megfelelően. A beszerzési irányelvek létrehozása előtt, be kell állítania a beszerzési irányelvek paramétereit. Lehetőség van a beszerzési irányelvek létrehozására, módosítására és visszavonására, azonban nem törölheti a beszerzési irányelvet. Ezt a folyamatot általában egy beszerzési vezető végzi el. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.
 
 
 ## <a name="set-up-policy-parameters"></a>Irányelv-paraméterek beállítása

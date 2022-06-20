@@ -1,6 +1,6 @@
 ---
 title: A pénzügyi nyomtató integrációs mintája olaszországi telepítési irányelvei (legacy)
-description: Ez a témakör a pénzügyi Microsoft Dynamics 365 Commerce nyomtató integrációs mintáinak a Retail szoftverfejlesztői csomagból (SDK) való telepítésével kapcsolatban nyújt tájékoztatást.
+description: Ez a cikk a Microsoft Dynamics 365 Commerce pénzügyi nyomtató integrációs mintáinak a Retail szoftverfejlesztői csomagból (SDK) való telepítésével kapcsolatos irányelveket tartalmaz.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 617e97272fb4bd7cea0958958ae99648bb847b56
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: bb07ca91c9e5bf1a79f672f9ba29b7bcc21688c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848898"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>A pénzügyi nyomtató integrációs mintája olaszországi telepítési irányelvei (legacy)
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce Lifecycle Services (LCS) fejlesztői virtuális gépére (VM) telepített Retail szoftverfejlesztői csomagból (SDK) Microsoft Dynamics származó, Olaszországhoz tartozó pénzügyi nyomtató-integrációs minta telepítésével kapcsolatban nyújt tájékoztatást. A pénzügyi integrációs mintával kapcsolatos további tudnivalókat lásd [a Pénzügyi nyomtató integrációs mintája Olaszország esetében](emea-ita-fpi-sample.md). 
+Ez a témakör a Microsoft Dynamics 365 Commerce pénzügyi nyomtató integrációs mintáinak telepítéséről nyújt irányelveket (Retail software development kit, SDK) a Lifecycle Services (LCS) Microsoft Dynamics egy fejlesztői virtuális gépére (VM). A pénzügyi integrációs mintával kapcsolatos további tudnivalókat lásd [a Pénzügyi nyomtató integrációs mintája Olaszország esetében](emea-ita-fpi-sample.md). 
 
-Az Olaszországhoz tartozó pénzügyi integrációs minta a Retail SDK része. Az SDK [telepítésével és használatával kapcsolatos tudnivalókat lásd a Retail szoftverfejlesztői csomag (SDK) architektúráját](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ez a minta a Commerce runtime (CRT) és a hardverállomás bővítményeiből áll. A minta futtatásához módosítania és fel kell építenie a és CRT a hardverállomás-projekteket. Javasoljuk, hogy egy nem módosított Retail SDK készlet használatával tegye meg az ebben a témakörben leírt változtatásokat. Javasoljuk továbbá, hogy forrásvezérlő rendszert használjon, Azure DevOps például olyanokat, ahol a fájlok még nem módosultak.
+Az Olaszországhoz tartozó pénzügyi integrációs minta a Retail SDK része. Az SDK [telepítésével és használatával kapcsolatos tudnivalókat lásd a Retail szoftverfejlesztői csomag (SDK) architektúráját](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ez a minta a Commerce runtime (CRT) és a hardverállomás bővítményeiből áll. A minta futtatásához módosítania és fel kell építenie a és CRT a hardverállomás-projekteket. Javasoljuk, hogy egy nem módosított Retail SDK készlet használhatja az ebben a cikkben leírt módosításokat. Javasoljuk továbbá, hogy forrásvezérlő rendszert használjon, Azure DevOps például olyanokat, ahol a fájlok még nem módosultak.
 
 ## <a name="development-environment"></a>Fejlesztői környezet
 
@@ -30,18 +30,18 @@ A következő lépések szerint állíthatja be a fejlesztői környezetet, hogy
 
 ### <a name="commerce-runtime-extension-components"></a>Commerce runtime kiterjesztésű összetevők
 
-A CRT bővítmények összetevői a Retail SDK szoftverfejlesztő készletében találhatók. A következő eljárások **befejezéséhez nyissa meg a CommerceRuntimeSamples.sln megoldást** a **RetailSdkSampleExtensionsCommerceRuntime\\\\ alatt**.
+A CRT bővítmények összetevői a Retail SDK szoftverfejlesztő készletében találhatók. A következő eljárások befejezéséhez nyissa **meg a CommerceRuntimeSamples.sln** megoldást a **RetailSdk\\ SampleExtensions\\ CommerceRuntime alatt**.
 
 1. A Runtime.Extensions.DocumentProvider.EpsonFP90IISample **projekt** megkeresása és összeállítása.
-2. **Az Extensions.DocumentProvider.EpsonFP90IISamplebinDebug\\\\ mappában** **keresse meg a Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IISample.dll** szerelvényfájlt.
+2. Az Extensions.DocumentProvider.EpsonFP90IISample **bin\\ hibakeresési\\** mappában keresse meg a Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IISample.dll **szerelvényfájlt**.
 3. A szerelvényfájl másolása a bővítmények CRT mappájába:
 
-    - **Commerce Scale Unit:** A **\\ fájl másolása az Internet Information Services (IIS) Commerce Scale Unit webhelyének binext\\** mappájába.
+    - **Commerce Scale Unit:** A fájl másolása **\\\\ az Internet Information Services (IIS) Commerce Scale Unit webhelyének bin ext** mappájába.
     - **Helyi CRT a Modern POS terminálon:** Másolja **\\ a fájlt a helyi ügyfélügynök helye alatti ext** CRT mappába.
 
 4. A következő bővítmény-konfigurációs fájl megkeresve CRT:
 
-    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **és az IIS Commerce Scale Unit webhely binext\\** mappájában található.
+    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **\\ és az IIS Commerce Scale Unit webhely bin ext** mappájában található.
     - **Helyi CRT a Modern POS terminálon:** **A fájl neve CommerceRuntime.MPOSOffline.Ext.config**, CRT és a helyi ügyfélügynök helye alatt található.
 
 5. A változás CRT regisztrálása a kiterjesztés konfigurációs fájljában.
@@ -57,10 +57,10 @@ A CRT bővítmények összetevői a Retail SDK szoftverfejlesztő készletében 
 
 ### <a name="hardware-station-extension-components"></a>Hardverállomás bővítési összetevői
 
-A Retail SDK tartalmazza a Hardverállomás bővítmény összetevőit. A következő eljárások **befejezéséhez nyissa meg a HardwareStationSamples.sln** megoldást a **RetailSdkSampleExtensionsHardwareStation\\\\ alatt**.
+A Retail SDK tartalmazza a Hardverállomás bővítmény összetevőit. A következő eljárások befejezéséhez **nyissa meg a HardwareStationSamples.sln** megoldást a **RetailSdk\\ SampleExtensions\\ HardwareStation eszközben**.
 
 1. Keresse meg **és építse ki a HardwareStation.Extensions.EpsonFP90IIFiscalDeviceSample** projektet.
-2. **Az Extensions.EpsonFP90IIFiscalDeviceSamplebinDebug\\\\** **mappában keresse meg a Contoso.Commerce.HardwareStation.EpsonFP90IIFiscalDeviceSample.dll** szerelvényfájlt.
+2. Az Extensions.EpsonFP90IIFiscalDeviceSample **bin\\ Hibakeresési\\** mappában keresse meg a Contoso.Commerce.HardwareStation.EpsonFP90IIFiscalDeviceSample.dll **szerelvényfájlt**.
 3. A szerelvényfájl másolása egy telepített hardverállomás-gépre:
 
     - **Távoli hardverállomás:** Másolja a **fájlt** az IIS hardverállomás helyének bin mappájába.
@@ -86,8 +86,8 @@ A Retail SDK tartalmazza a Hardverállomás bővítmény összetevőit. A követ
 
 A Commerce összetevőket tartalmazó telepíthető csomagok létrehozásához és a csomagok éles környezetben való alkalmazáshoz kövesse ezeket a lépéseket.
 
-1. A témakör korábbi [részében](#development-environment), a Fejlesztői környezetben leírt lépések befejezése.
-2. Tegye a következő módosításokat **a RetailSdkAssets\\ mappa csomagkonfigurációs fájljaiban**:
+1. A jelen cikk fejlesztői környezetben korábban [ismertetett](#development-environment) lépéseit kell végrehajtani.
+2. Tegye a következő módosításokat **a RetailSdk\\ Assets mappa csomagkonfigurációs fájljaiban**:
 
     1. **A Commerceruntime.ext.config** **és CommerceRuntime.MPOSOffline.Ext.config** **konfigurációs fájlokban adja hozzá a következő sort az összeállítási szakaszhoz**.
 
@@ -115,7 +115,7 @@ A Commerce összetevőket tartalmazó telepíthető csomagok létrehozásához �
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
-4. **A következő módosítások hajthatóak végre az Sdk.ModernPos.Shared.csproj** **fájlban a PackagesSharedPackagingProjectComponents\_ mappában**, hogy a telepíthető csomagokban szerepeljenek az Olaszországhoz tartozó erőforrásfájlok:
+4. **A következő módosítások hajthatóak végre az Sdk.ModernPos.Shared.csproj** **fájlban a SharedPackagingProjectComponents\_ mappában**, hogy az Olaszországhoz tartozó erőforrásfájlok telepíthető csomagokban szerepeljenek:
 
     1. Adjon hozzá **egy ItemGroup szakaszt**, amely a kívánt fordítások erőforrásfájljaira mutató csomópontokat tartalmaz. Győződjön meg róla, hogy a megfelelő névtereket és mintaneveket adja meg. A következő példa erőforrás-csomópontokat ad hozzá **az** **adott és az it-CH** területi beállításokhoz.
 
@@ -133,7 +133,7 @@ A Commerce összetevőket tartalmazó telepíthető csomagok létrehozásához �
         <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
         ```
 
-5. **A következő módosítások hajthatóak végre az Sdk.RetailServerSetup.proj** **fájlban a PackagesSharedPackagingProjectComponents\_ mappában**, hogy a telepíthető csomagokban szerepeljenek az Olaszországhoz tartozó erőforrásfájlok:
+5. **A következő módosítások hajthatóak végre az Sdk.RetailServerSetup.proj** **fájlban a SharedPackagingProjectComponents\_ mappában**, hogy az Olaszországhoz tartozó erőforrásfájlok telepíthető csomagokban szerepeljenek:
 
     1. Adjon hozzá **egy ItemGroup szakaszt**, amely a kívánt fordítások erőforrásfájljaira mutató csomópontokat tartalmaz. Győződjön meg róla, hogy a megfelelő névtereket és mintaneveket adja meg. A következő példa erőforrás-csomópontokat ad hozzá **az** **adott és az it-CH** területi beállításokhoz.
 

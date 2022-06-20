@@ -1,6 +1,6 @@
 ---
 title: Beszerzési és ráfordítási elemzés Power BI tartalom
-description: Ez a témakör a Beszerzési kiadások elemzése Power BI tartalom modul tartalmát ismerteti.
+description: Ez a cikk azt írja le, hogy mi szerepel a Beszerzési költekedelem-elemzési tartalomban Power BI.
 author: FrankDahl
 ms.date: 04/24/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a40d4f39a7119def9ed0393d4ced2be1f7e801a5c1c3f984b002e5224299915a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08937d36be27f7b21ab50473715cc155e4fd0c9e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716112"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892740"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Beszerzési és ráfordítási elemzés Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a **Beszerzési kiadások elemzése** Microsoft Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a cikk azt írja le, hogy mi szerepel a Beszerzési költekedelem-elemzési **tartalomban** Microsoft Power BI. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 

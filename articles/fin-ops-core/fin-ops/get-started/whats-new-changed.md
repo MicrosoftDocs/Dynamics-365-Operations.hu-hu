@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 98add33413f38db52b70b9c39c4ebd004ab3dd57
-ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
+ms.openlocfilehash: 2430e75897a8ddc78a6b1b9288b23458aa44108a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2022
-ms.locfileid: "8457398"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908227"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>A Pénzügy és művelet alkalmazások kezdőlapján újdonságok vagy módosulok
 
@@ -33,7 +33,7 @@ ms.locfileid: "8457398"
 
 A Pénzügy és műveletek alkalmazás minden kiadásában újdonságok vagy módosulásokat a következő témakörök tartalmaznak:
 
-- **Pénzügy:** [Új vagy módosult elemek a Dynamics 365 Finance alkalmazásban](../../../finance/get-started/whats-new-home-page.md)
+- **Pénzügy:**[A Dynamics 365 Pénzügy újdonságei vagy módosult](../../../finance/get-started/whats-new-home-page.md)
 - **Emberi erőforrások (egyesített infrastruktúra):**[Újdonságok vagy módosultak a Microsoftban Dynamics 365 Human Resources](../../../human-resources/get-started/hr-whats-new-changed-10-0-26.md)  
 - **Supply Chain Management:** [Új vagy módosult elemek a Dynamics 365 Supply Chain Management alkalmazásban](../../../supply-chain/get-started/whats-new-home-page.md) 
 - **Kereskedelem:** [Új vagy módosult elemek a Dynamics 365 Commerce alkalmazásban](../../../commerce/get-started/whats-new-home-page.md)
@@ -41,18 +41,18 @@ A Pénzügy és műveletek alkalmazás minden kiadásában újdonságok vagy mó
 
 ## <a name="stand-alone-applications"></a>Különálló pályázatok
 
-Ha meg tudni, hogy milyen új vagy módosított funkciókat tartalmaz a különálló Dynamics 365 Human Resources funkcióknál, tekintse meg a következő témakört:
+Ha meg tudni, hogy milyen új vagy módosított funkciókat hoz létre önállóként Dynamics 365 Human Resources, tekintse meg a következő cikket:
 
 - **Human Resources:** [Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban](../../../human-resources/hr-admin-whats-new.md)
 
 ## <a name="platform-updates"></a>Platformfrissítések
 
-A Pénzügy és műveletek platformfrissítései alkalmazás újdonságai vagy módosulásait lásd a következő témakörben:
+A Pénzügy és műveletek platformfrissítései alkalmazás újdonságai vagy módosulásait a következő cikk tartalmazza:
 
 - [Új vagy módosult elemek a Platform frissítésekben](../../dev-itpro/get-started/whats-new-home-page.md)
 
 ## <a name="lifecycle-services-releases"></a>Lifecycle Services-kiadások
-Ha látni szeretné, hogy mi új vagy módosult a Lifecycle Services szolgáltatásban, tekintse át a következő témakört:
+A Lifecycle Services újdonságokkal és módosulásokkal kapcsolatban a következő cikk nyújt további információkat:
 
 - [Új vagy módosult elemek a Lifecycle Services (LCS) szolgáltatásban](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 

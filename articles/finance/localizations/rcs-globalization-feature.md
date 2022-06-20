@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Services (RCS) – Globalizációs funkció
-description: Ez a témakör azt mutatja be, hogyan használható a Microsoft Regulatory Configuration Services (RCS) és a Globális tár a globalizációs funkciók létrehozásához és használatához.
+description: Ez a cikk bemutatja, hogy hogyan használható a Microsoft Regulatory Configuration Services (RCS) és a globális tárház a globalizációs funkciók létrehozására és használatára.
 author: JaneA07
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760631"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888894"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – Globalizációs funkció
 
@@ -40,7 +40,7 @@ Az eljárások elvégzése előtt be kell fejeznie a következő feladatokhoz ka
 - Hozzáférés egy RCS-példányhoz.
 - Konfigurációs szolgáltató létrehozása és aktiválása. További információért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
 
-Hajtsa végre az alábbi lépéseket a Finance and Operations alkalmazáspéldányban.
+A Következő lépések szerint hajtsa végre a Pénzügy és műveletek alkalmazáspéldányt.
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. Ha nincs RCS környezete a vállalathoz, kattintson a **Regulatory services – konfiguráció** lehetőségre, és kövesse a létrehozására vonatkozó instrukciókat.
@@ -64,7 +64,7 @@ A globalizációs funkciók használatához először importálnia kell azt a gl
 
 ## <a name="access-globalization-features"></a>Globalizációs funkciók elérése
 
-1. Győződjön meg róla, hogy a **globalizációs szolgáltatások** funkció be van kapcsolva a szolgáltatások kezelése modulban, az ebben a témakörben korábban ismertetett módon.
+1. Győződjön meg róla, hogy **a** Globális funkció szolgáltatás be van kapcsolva a Funkciókezelésben, amint azt a jelen cikk ismerteti.
 2. Nyissa meg az új **Globalizációs szolgáltatások** munkaterületet, majd a **Szolgáltatások** területen válassza az **E-számlázás** mozaikot.
 
     ![Globális szolgáltatások munkaterülete.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -161,7 +161,7 @@ A konfigurációkhoz az alábbi műveletek érhetők el:
 - **Nézet** – a frissítést nem igénylő alapfunkció-konfigurációk megtekintése.
 - **Szerkesztés** – a kiválasztott konfiguráció vázlat verziójának létrehozása, amellyel szerkeszthető a formátum vagy a formátum-hozzárendelés a formátumtervezőben.
 - **Törlés** – a funkcióból kiválasztott konfiguráció törlése.
-- **Új alap** – a funkció új alapra helyezése. További információt a témakör későbbi részében található [Származtatott globalizációs funkciók új alapra helyezése](#rebase) című szakaszban talál.
+- **Új alap** – a funkció új alapra helyezése. A további tudnivalókat lásd [a cikk későbbi, Az adatbázisból származtatott](#rebase) globalizációs funkciók című részében.
 
 ### <a name="setups"></a>Beállítások
 
@@ -182,7 +182,7 @@ A funkcióbeállításhoz az alábbi műveletek érhetők el:
 
 A környezetekhez az alábbi műveletek érhetők el:
 
-- **Engedélyezés** – a kiválasztott szolgáltatási verzió esetében válasszon ki egy közzétett környezetet, és válassza ki a **tényleges kezdő** dátumot, amikor elérhetővé kell tenni. További információt a témakör későbbi részében találhat: [Környezet konfigurálása engedélyezéshez](#configureenvironment) című szakaszban talál.
+- **Engedélyezés** – a kiválasztott szolgáltatási verzió esetében válasszon ki egy közzétett környezetet, és válassza ki a **tényleges kezdő** dátumot, amikor elérhetővé kell tenni. A további tudnivalókat lásd [a](#configureenvironment) Jelen cikk Környezet beállítása az engedélyezéshez című részében.
 - **Mégse** – környezet eltávolítása a funkció beállításához.
 
 ### <a name="organizations"></a>Szervezetek
@@ -195,7 +195,7 @@ Kövesse az alábbi lépéseket egy globalizációs funkció külső szervezette
 
     ![Szolgáltatás megosztása egy szervezettel.](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
 
-A funkció megosztásra kerül a kiválasztott szervezettel, és a szervezet számára elérhető a globális tárban. Innen a funkció a szervezet RCS- vagy Dynamics 365 Finance-példányába importálható, hogy használható legyen.
+A funkció megosztásra kerül a kiválasztott szervezettel, és a szervezet számára elérhető a globális tárban. A funkció innen importálható a szervezet RCS vagy Dynamics 365 Pénzügy példányába, hogy használható legyen.
 
 ## <a name="rebase-derived-globalization-features"></a><a name="rebase"></a>Származtatott globalizációs funkciók új alapra helyezése
 

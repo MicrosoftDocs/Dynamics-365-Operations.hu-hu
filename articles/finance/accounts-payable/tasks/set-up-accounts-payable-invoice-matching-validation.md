@@ -1,6 +1,6 @@
 ---
-title: A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása
-description: Ez a cikk a kötelezettségek számlaegyeztetésének hitelesítésbeállítását ismerteti.
+title: A kötelezettségek számlaegyeztetésére vonatkozó ellenőrzés beállítása
+description: Ez a cikk a kötelezettségek számlaegyeztetés-ellenőrzésének beállításáról nyújt tájékoztatást.
 author: abruer
 ms.date: 02/14/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86cc5cf688e3b66cf976fc7f507bd8f8df757612
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182555"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904959"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása
 
@@ -44,7 +44,7 @@ Négy típusú egyeztetési ellenőrzés használható.
 5. A tényleges számlaösszegek és a várható összegek egyeztetéséhez jelölje be a **Számlaösszegek egyeztetése** jelölőnégyzetet, vagy törölje a jelölést.
     * Válassza ki, ikon jelezze-e, ha a számlaegyeztetési eltérés meghaladja a tűréshatárt. Választhat, hogy ikon, ha pozitív eltérés meghaladja a tűréshatárt, vagy ha a pozitív vagy negatív eltérés meghaladja a tűréshatára.  
     * Ha például a tűréshatára értéke 5 százalék, és a beszerzési rendelésen megadott teljes számlaösszeghez 100,00. Ezért áregyeztetési ikon jelenik meg a számlán a számla teljes összege meghaladja a 105,00. Amennyiben a **Nagyobb vagy kisebb a tűréshatárnál** beállítást választja, akkor is megjelenik az ikon, ha a számla összege kisebb, mint 95,00.  
-6. A **Számlaösszegek tűréshatára százalékban** mezőbe írja be az elfogadható eltérés százalékos értékét. Ez az érték a vállalathoz tartozó alapértelmezett érték. Ez az érték meghatározott szállítók esetében felülbírálható a **Számlaösszegek tűréshatárai** oldalon. Egy adott szállító százalékban megadott számlaösszeg-tűréshatárának a felülbírálásáról a cikk későbbi részében, a „Tűréshatárnak megfelelő számlaösszegek beállítása a szállítókhoz” című szakaszban talál további információt.
+6. A **Számlaösszegek tűréshatára százalékban** mezőbe írja be az elfogadható eltérés százalékos értékét. Ez az érték a vállalathoz tartozó alapértelmezett érték. Ez az érték meghatározott szállítók esetében felülbírálható a **Számlaösszegek tűréshatárai** oldalon. Ha felül szeretné bírálni egy adott szállítóra vonatkozó számlaösszegek tűréshatárát, akkor a cikk későbbi, "Szállítói számlaösszegek egyeztetési tűréshatárának beállítása" című szakasza nyújt tájékoztatást.
 7. Adja meg az **Ár és mennyiség egyeztetése** beállítást.
 8. A **Soregyeztetési irányelv** mezőben válassza ki az aktuális jogi személyhez alapértelmezett irányelvként használandó értéket. A **Nem kötelező** beállítás azt jelenti, hogy nem szükséges a számlasorokban szereplő egyes árak, illetve a számlán feltüntetett mennyiségek összevetése a beszerzési rendelés árával, illetve a szállítólevélen feltüntetett mennyiségekkel. A **Kétirányú egyeztetés** azt jelenti, hogy szükséges a számlasorok ellenőrzése, de az kizárólag a beszerzési rendelés és a szállító számladokumentumai alapján történik. Az egyeztetési ellenőrzése nem terjed ki a termékbevételezési bizonylatra. A **Háromirányú egyeztetés** azt jelenti, hogy a rendszer a számla nettó egységárát a beszerzési rendelés nettó egységárával, a termékbevételezési mennyiséget pedig a számla szerinti mennyiséggel egyezteti.
 9. Ha engedélyezni szeretné egy cikk, szállító, szállító-cikk kombináció vagy beszerzési-rendelési sor eltérő szintű egyeztetését, akkor válasszon ki egy értéket az **Egyeztetési irányelv felülbírálásának engedélyezése** mezőben. Egy adott szállítóra, cikkre, vagy szállító-cikk kombinációra vonatkozóan az **Egyeztetési irányelv** oldalon tudja felülbírálni a jogi személy soregyeztetési irányelvét.
@@ -75,7 +75,7 @@ A  alapértelmezés szerint megengedi a negatív áreltéréseket. Negatív árk
 
 ## <a name="set-up-matching-policy-override"></a>Egyeztetési irányelv felülbírálásának beállítása
 
-Menjen a **Kötelezettségek > beállítási > Számlaegyeztetés beállítása > Egyeztetési** **irányelv, ha meg kell határoznia a Beszerzési rendelés oldal sorai egyeztetési irányelv** **mezőjének alapértelmezett** bejegyzését. Ez a beállítás nem kötelező. Ezen a lapon beállíthatja a cikkek, szállítók, illetve cikk- és szállítókombinációk oda-vissza egyeztetését. Ezekkel a bejegyzésekkel részletesebben határozhatók meg az egyeztetési irányelvek, mint a jogi személyre vonatkozó, a **Kötelezettségek paraméterei** lapon megadott egyeztetési irányelvvel. Az alapértelmezett jogi személy soregyeztetési irányelve csak azokra a tételekre és szállítókra nem vonatkozik, amelyekhez ehhez a lapon eltérő soregyeztetési irányelvet határoztak meg.
+Menjen a **Kötelezettségek > beállítási > Számlaegyeztetés beállítása > Egyeztetési** **irányelv, ha meg kell határoznia a beszerzési rendelési lap sorai egyeztetési irányelv** **mezőjének alapértelmezett** bejegyzését. Ez a beállítás nem kötelező. Ezen a lapon beállíthatja a cikkek, szállítók, illetve cikk- és szállítókombinációk oda-vissza egyeztetését. Ezekkel a bejegyzésekkel részletesebben határozhatók meg az egyeztetési irányelvek, mint a jogi személyre vonatkozó, a **Kötelezettségek paraméterei** lapon megadott egyeztetési irányelvvel. Az alapértelmezett jogi személy soregyeztetési irányelve csak azokra a tételekre és szállítókra nem vonatkozik, amelyekhez ehhez a lapon eltérő soregyeztetési irányelvet határoztak meg.
 
 Ezen a lapon válassza ki az **Egyeztetési irányelv szintje** beállítást. Az a hierarchiaszint, amelynél felül kell bírálni a vállalat soregyeztetési irányelvét.
 

@@ -1,6 +1,6 @@
 ---
 title: ER Dokumentumkezelési fájlok használata formátumkimenetekben (5. rész – Formátum módosítása és futtatása)
-description: Ez a témakör azt ismerteti, hogyan kell konfigurálni egy Elektronikus jelentéskészítési (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatára az ER-kimenetben. (5. rész)
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni egy elektronikus jelentési (ER) formátumot az ER kimenet dokumentumkezelési fájljainak (mellékletei) használatára. (5. rész)
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48175de4e58f9def15bf2bf8b10a1348036c88a1af284eb2a3e5f9fbefd649c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12e4f3a1a9f6f780587b686baa4e5eadce4b7649
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748400"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892893"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-5---modify-and-run-format"></a>ER Dokumentumkezelési fájlok használata formátumkimenetekben (5. rész – Formátum módosítása és futtatása)
 

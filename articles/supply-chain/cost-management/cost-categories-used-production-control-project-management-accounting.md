@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e35a6b7da4ead8ab6f007ef8800ed8a05b1c513
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 09a808c91ece25a9a40f662e0aca2c504246fc0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675347"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854500"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>A gyártásvezérlésben és a projekt vezetés könyvelésében alkalmazott költségkategóriák
 
@@ -31,7 +31,7 @@ A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésé
 
 A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésére és jelentésekre. Ebben az esetben a költségkategóriára termelési és projektcélokból van szükség. Amikor egy költségkategóriát termelésben vagy projektekben használnak, további projektekhez kapcsolódó információkat is meg kell adni. Például a projektekhez kapcsolódó óránkénti költségek eltérőek lehetnek a termeléshez kapcsolódó óránkénti költségekhez képest. A **Költségkategóriák** lap segítségével meghatározhatja a Gyártásvezérlésben és a Projekt vezetés könyvelésében alkalmazott költségkategóriákat. 
 
-**Megjegyzés:** A költségkönyvelés **Projektkategóriák** oldallal rendelkezik, de ez az oldal még nincs kapcsolatban az ebben a témakörben ismertetett funkciókkal. A költségkategóriák projektekben történő használata esetén a **költségkategóriák** lapon további projekthez kapcsolódó adatot megjelenítő további lapok találhatók. Ez az adat a kategóriacsoportot, a sortulajdonságot és a költségkategóriához társított főkönyvi számlákat tartalmazza.
+**Megjegyzés:** A költségkönyveléshez tartozik egy **Projektkategóriák** lap, de ez a lap nincs kapcsolatban az ebben a cikkben ismertetett szolgáltatásokkal. A költségkategóriák projektekben történő használata esetén a **költségkategóriák** lapon további projekthez kapcsolódó adatot megjelenítő további lapok találhatók. Ez az adat a kategóriacsoportot, a sortulajdonságot és a költségkategóriához társított főkönyvi számlákat tartalmazza.
 
 -   A költségkategóriákat az **Órák** tranzakciótípust támogató költségcsoporthoz kell hozzárendelni.
 -   A sortulajdonság arról nyújt alapértelmezett információkat, hogy hogyan lehet a jelentett időt a projektekre terhelhetővé tenni.

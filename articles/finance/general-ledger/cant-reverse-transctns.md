@@ -1,6 +1,6 @@
 ---
 title: Miért nem lehet sztornírozni ezt a tranzakciót?
-description: Ez a témakör különböző okokat ismertet, amelyek miatt a tranzakciókat nem lehet sztornírozni. A probléma megoldásait is felsorolja.
+description: Ez a témakör ismerteti azokat a különböző okokat, amelyek miatt a tranzakciókat nem lehet sztornírozni. A probléma megoldásait is felsorolja.
 author: kweekley
 ms.date: 07/21/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9a8b26584b1a9b82440583db693cd14daa580e22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724529"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876182"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>Miért nem lehet sztornírozni ezt a tranzakciót?
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör különböző okokat ismertet, amelyek miatt a tranzakciókat nem lehet sztornírozni. A probléma megoldásait is felsorolja.
+Ez a témakör ismerteti azokat a különböző okokat, amelyek miatt a tranzakciókat nem lehet sztornírozni. A probléma megoldásait is felsorolja.
 
 ## <a name="symptom"></a>Tünet
 
@@ -35,14 +35,14 @@ A szervezetek olyan helyzetben lehetnek, amikor sztornírozniuk kell egy feladot
 
 ## <a name="resolution"></a>Megoldás
 
-Csak akkor lehet sztornírozni a tranzakciókat, ha teljesülnek bizonyos feltételek. A témakör további részei az egyes modulokra vonatkozó ellenőrzést biztosítják. Bár ez a témakör a Microsoft Dynamics 365 Pénzügy tranzakcióira fókuszál, néhány fogalom és ellenőrzés más alkalmazásokra, például az alkalmazásokra is alkalmazható Dynamics 365 Supply Chain Management.
+Csak akkor lehet sztornírozni a tranzakciókat, ha teljesülnek bizonyos feltételek. A cikk további részeiben az egyes modulok érvényesség-ellenőrzése található. Bár ez a cikk a Microsoft Dynamics 365 Pénzügy tranzakcióira fókuszál, néhány fogalom és érvényesség más alkalmazásokra, például alkalmazásokra is alkalmazható Dynamics 365 Supply Chain Management.
 
 Ezenkívül a tranzakció sztornírozásának helye is befolyásolhatja, hogy visszafordítható-e a tranzakció. Például egy csekként feladott szállítói kifizetést csak a bankszámlák tranzakciós lapján található **Csekkek** szakaszból lehet sztornírozni. Nem sztornírozható a főkönyv **Bizonylattranzakciók** lapján.
 
 Ha a **Funkciókezelés** munkaterületén be van kapcsolva a **Tömeges sztornírozás több dokumentumhoz** funkció (más néven Tömeges sztornírozó funkció), akkor ez befolyásolja, hogy hány tranzakciót lehet sztornírozni, és hol lehet őket sztornírozni. Ez a funkció bekapcsolva két előnnyel jár:
 
 - Bizonyos típusú tranzakcióknál egyszerre több tranzakció is kiválasztható és sztornírozható abból a naplóból, amelyből fel lett adva, illetve a **Bizonylattranzakciók** lapon. A funkció bekapcsolása előtt azonban az egyes tranzakcióknak sztornírozhatóknak kell lenniük. A funkció bevezetése előtt a tranzakciókat egyesével kellett sztornírozni.
-- *Egyes* analitikus tranzakciók sztornírozhatóak a naplóból (általános napló) vagy a **Bizonylattranzakciók** lapról. Ezeket nem kell sztornírozni a Részfőkönyv lapról. Például egy szállítói számlanaplót előzőleg csak a **Szállítói tranzakciók** lapról lehetett sztornírozni. Most viszont a Főkönyv oldaláról is sztornírozható a naplóból vagy a **Bizonylattranzakciók** lapról. A témakör egyes részei bemutatják, hogy milyen típusú tranzakciókra nem alkalmazható ez az előny.
+- *Egyes* analitikus tranzakciók sztornírozhatóak a naplóból (általános napló) vagy a **Bizonylattranzakciók** lapról. Ezeket nem kell sztornírozni a Részfőkönyv lapról. Például egy szállítói számlanaplót előzőleg csak a **Szállítói tranzakciók** lapról lehetett sztornírozni. Most viszont a Főkönyv oldaláról is sztornírozható a naplóból vagy a **Bizonylattranzakciók** lapról. A cikk minden szakasza bemutatja, hogy milyen típusú tranzakciókra nem vonatkozik ez a juttatás.
 
 A Tömeges sztornírozás funkció **nem** teszi lehetővé több tranzakciótípus sztornírozát. Ha egy tranzakciótípust korábban nem lehetett sztornírozni, a funkció bekapcsolása után sem lehet sztornírozni. Például a beszerzési rendelés szállítói számláit nem lehet sztornírozni, függetlenül attól, hogy be van-e kapcsolva a Tömeges sztornírozás funkció.
 
@@ -189,7 +189,7 @@ A következő típusú tranzakciókat nem lehet sztornírozni:
 
 Számos tranzakciótípus frissíti a Kinnlevőségek részfőkönyvét. Ilyenek például az értékesítési rendelésekből származó vevői számlák, az általános naplón keresztül bevitt vevői számlák, a szabadszöveges számlák, a vevői kifizetések és a leírások.
 
-Ha a Tömeges sztornírozás funkció ki van kapcsolva, a tranzakciók egyenként is sztornírozhatók a **Vevői tranzakciók** lapon a számlák esetében, vagy a **Bankszámlák** lapon a letétek esetében. A kifizetések sztornírozásáról lásd a [Készpénz- és bankkezelés](cant-reverse-transctns.md#cash-and-bank-management) című szakaszt a témakör további részében.
+Ha a Tömeges sztornírozás funkció ki van kapcsolva, a tranzakciók egyenként is sztornírozhatók a **Vevői tranzakciók** lapon a számlák esetében, vagy a **Bankszámlák** lapon a letétek esetében. A kifizetések sztorníroz erről a [szakaszának készpénz- és bankkezelési](cant-reverse-transctns.md#cash-and-bank-management) szakaszában olvashat tájékoztatást.
 
 Ha a Tömeges sztornírozás funkció be van kapcsolva, egy vagy több kinnlevőséget is sztornírozni lehet a **Bizonylattranzakciók** lapról, és abból a naplóból, amelyből a tranzakciókat feladták. A betéteket azonban továbbra is csak a bankszámláról lehet sztornírozni, a szabadszöveges számlákat pedig csak az eredeti oldalról lehet sztornírozni (ha be van kapcsolva a javításokat lehetővé tévő funkció). Ezenkívül a főkönyv **Tranzakciók a \<main account\>-hoz** lapjáról továbbra sem lehet vevői tranzakciókat sztornírozni. Azoban ezek sztornírozhatók a **Bizonylattranzakciók** lapról.
 

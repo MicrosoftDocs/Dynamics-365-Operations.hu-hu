@@ -1,6 +1,6 @@
 ---
 title: Értékesítési és átmozgatási rendeléseknél az előírtnál nagyobb mennyiségek kitárolása
-description: Ez a témakör bemutatja, hogyan lehet engedélyezni az előírtál nagyobb mennyiségű kitárolást az értékesítési rendelésekhez és átviteli rendelésekhez.
+description: Ez a cikk bemutatja, hogyan lehet engedélyezni a túltárolást az értékesítési és áttárolási rendelésekhez.
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 52a4225efa88a7b9303dd611d5652f59da1612a4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8bbc7d532f910edfb442831d6c906f253dee06c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678408"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897284"
 ---
 # <a name="over-picking-for-sales-orders-and-transfer-orders"></a>Értékesítési és átmozgatási rendeléseknél az előírtnál nagyobb mennyiségek kitárolása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör egy olyan helyzetet mutat be, amely bemutatja, hogyan lehet engedélyezni egy adott dolgozó vagy az összes dolgozó számára az előírtnál nagyobb mennyiség kitárolását. Az előírtnál nagyobb mennyiség kitárolása folyamat lehetővé teszi a kitárolás során szabályozott túlzott kitárolást.
+Ez a cikk egy olyan helyzetet mutat be, amely bemutatja, hogyan lehet engedélyezni egy adott dolgozó vagy az összes dolgozó számára a túl-ki válogatásokat. Az előírtnál nagyobb mennyiség kitárolása folyamat lehetővé teszi a kitárolás során szabályozott túlzott kitárolást.
 
 A raktári előírtnál nagyobb mennyiségű kitárolás egyszerű fogalom. A rendszer lehetővé teszi a dolgozók számára, hogy a rendelésben megadottnál több elemet tároljanak ki. Ennek ellenére figyelembe veszi az átviteli rendelés vagy értékesítési rendelés sorszinten beállított túlszállítási korlátot. Ha túllépik ezt a határértéket, a Warehouse Management alkalmazás értesíti a dolgozókat, hogy túllépik a túlszállítási korlátot.
 
@@ -41,11 +41,11 @@ A előírtnál nagyobb mennyiség kitárolása funkció segítségével a dolgoz
 > [!IMPORTANT]
 > A előírtnál nagyobb mennyiség kitárolása funkció csak az értékesítési rendelések és az átviteli rendelések kitárolására és feldolgozására vonatkozik. A feltöltés nem támogatja az előírtnál nagyobb mennyiség kitárolását. A feltöltési munka futtatásakor a rendszer nem engedélyezi a felhasználók számára az előírtnál nagyobb mennyiség kitárolását.
 
-A témakör forgatókönyve azt mutatja be, hogyan lehet beállítani és használni az előírtnál nagyobb mennyiség kitárolása funkciót.
+Ez a cikk bemutatja, hogy hogyan lehet beállítani és használni a túl válogatás funkciót.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Forgatókönyv előfeltétele: Bemutatóadatok elérhetővé tétele
 
-Az ebben a témakörben szereplő minden egyes forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Microsoft Dynamics 365 Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen *USMF*.
+A jelen cikkváltozat a Microsoft szabványos bemutatóadatában található értékekre és rekordokra hivatkozik Dynamics 365 Supply Chain Management. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen *USMF*.
 
 ## <a name="scenario-setup"></a>Eset beállítása
 

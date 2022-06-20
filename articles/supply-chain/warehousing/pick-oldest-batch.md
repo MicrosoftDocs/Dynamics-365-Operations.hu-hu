@@ -1,6 +1,6 @@
 ---
 title: A mobileszköz legrégebbi kötegének kitárolása
-description: Ez a témakör leírja, hogyan állíthatja be és alkalmazhatja a mobileszköz legrégebbi kötegének kitárolási beállításait.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani és alkalmazni a legrégebbi köteg mobileszközről való kivetkedő lehetőségének beállítását és alkalmazását.
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d96221ae14610057cceed304efa01261eb01aef134e4bdad10ccd0386bd52cf9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad1f2cfd029d71784d5efcc169178a791f0ae077
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885638"
 ---
 # <a name="pick-oldest-batch-on-a-mobile-device"></a>A mobileszköz legrégebbi kötegének kitárolása
 

@@ -1,6 +1,6 @@
 ---
 title: TDS-csoport, PAN és TAN-információk beállítása a vevők és szállítók számára
-description: Ez a témakör bemutatja a forrásnál levont adó (TDS) csoport, az állandó számlaszám (PAN) és az adószámlaszám (TAN) beállítását szállítókhoz.
+description: Ez a cikk bemutatja a forrásnál levont adó (TDS) csoport, a állandó számlaszám (PAN) és a szállítók adószámlaszámának (TAN) beállítását.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 83ec532e95bde553c3a339e2ca103ebaacdb52ae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1a29f59e380360b6f828dcddbe84cad229b42d17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726949"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859766"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>TDS-csoport, PAN és TAN-információk beállítása a vevők és szállítók számára
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a forrásnál levont adó (TDS) csoport, az állandó számlaszám (PAN) és az adószámlaszám (TAN) beállítását szállítókhoz.
+Ez a cikk bemutatja a forrásnál levont adó (TDS) csoport, a állandó számlaszám (PAN) és a szállítók adószámlaszámának (TAN) beállítását.
 
 1. Ugrás a **Kötelezettségek \> Szállítók: \> Minden szállító** vagy **Kinnlevőségek \> Vevők \> Minden vevő** lehetőségre.
 

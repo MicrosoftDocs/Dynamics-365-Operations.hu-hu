@@ -1,6 +1,6 @@
 ---
 title: Visszatérítések feldolgozása, felülvizsgálata és feladása
-description: Ez a témakör bemutatja, hogyan lehet feldolgozni a Visszatérítés-kezelési ajánlatokat, kiszámítani a kedvezményeket, átnézni a létrehozott tranzakciókat, tranzakciókat feladni és átnézni a feladásokat.
+description: Ez a témakör leírja, hogyan kell feldolgozni a visszatérítés-kezelési ügyleteket, kiszámítani az engedményeket, áttekintni a létrehozott tranzakciókat, tranzakciókat lehet feladásra és a feladások áttekintésére.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 524aec8025378391057275f77e31191f88e4a98b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e63f02e5e93ec2ce8c321a20c2a0c5886edcbe42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690274"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901937"
 ---
 # <a name="process-review-and-post-rebates"></a>Visszatérítések feldolgozása, felülvizsgálata és feladása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet feldolgozni a Visszatérítés-kezelési ajánlatokat, kiszámítani a kedvezményeket, átnézni a létrehozott tranzakciókat, tranzakciókat feladni és átnézni a feladásokat.
+Ez a témakör leírja, hogyan kell feldolgozni a visszatérítés-kezelési ügyleteket, kiszámítani az engedményeket, áttekintni a létrehozott tranzakciókat, tranzakciókat lehet feladásra és a feladások áttekintésére.
 
 ## <a name="change-the-status-of-a-deal"></a>Ajánlat állapotának módosítása
 
@@ -45,7 +45,7 @@ Lépjen a **Visszatérítés-kezelés \> Ismétlődő feladatok \> FIFO beszerz�
 
 Létrehozhat értékesítési és beszerzési rendeléseket, amelyekhez forrástranzakciókat tartalmaznak egy megfelelő visszatérítési ügylet létrehozása előtt vagy után is.
 
-Minden egyes ajánlatsor beállítható úgy, hogy automatikusan létrehoz visszatérítési rendelkezést azáltal, hogy feladja a szállítást vagy számlát az értékesítési rendeléshez vagy beszerzési rendeléshez. Az ajánlatsor **Tranzakciótípus** mezőjét állítsa *Szállítás* vagy *Számla* értékre, és a **Feldolgozás feladáskor** beállítás legyen *Igen*. Ha a **Tranzakciótípus** mező beállítása *Rendelés*, akkor a feladáskor történő feldolgozás le van tiltva. Az ügylet aktiválása után létrehozott forrástranzakciók esetében továbbra is lehetséges a feldolgozás, ezzel a jelen témakör későbbi, [Visszatérítés-kezelési ajánlatok feldolgozása](#process-deals) szakasz a foglalkozik.
+Minden egyes ajánlatsor beállítható úgy, hogy automatikusan létrehoz visszatérítési rendelkezést azáltal, hogy feladja a szállítást vagy számlát az értékesítési rendeléshez vagy beszerzési rendeléshez. Az ajánlatsor **Tranzakciótípus** mezőjét állítsa *Szállítás* vagy *Számla* értékre, és a **Feldolgozás feladáskor** beállítás legyen *Igen*. Ha a **Tranzakciótípus** mező beállítása *Rendelés*, akkor a feladáskor történő feldolgozás le van tiltva. Az ügylet aktiválása után létrehozott forrástranzakciók esetében a [jelen](#process-deals) cikk későbbi, a Visszatérítések kezelése szakaszának leírása szerint továbbra is feldolgozható a tartalék.
 
 ### <a name="enable-price-details"></a>Áradatok engedélyezése
 

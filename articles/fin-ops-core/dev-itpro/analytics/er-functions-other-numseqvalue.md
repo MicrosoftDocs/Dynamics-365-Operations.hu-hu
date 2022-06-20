@@ -1,6 +1,6 @@
 ---
 title: NUMSEQVALUE ER-függvény
-description: A témakör tájékoztatást nyújt a NUMSEQVALUE Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
+description: Ez a cikk a NUMSEQVALUE Elektronikus jelentés (ER) funkcióval kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53040d1f4b3c8089fab264a524309df909a90ed5e617bd86658704b286fabb34
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 569d9ba1497bbc6dfc0ca909207aa5a78a877fe9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758240"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879833"
 ---
 # <a name="numseqvalue-er-function"></a>NUMSEQVALUE ER-függvény
 
@@ -94,7 +94,7 @@ Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vis
 
 A következő adatforrások megadása a modell-hozzárendelésben történik:
 
-- A Microsoft Dynamics 365 Finance *felsorolási típus* **enumScope** adatforrása. Ez az adatforrás az **ERExpressionNumberSequenceScopeType** felsorolásra vonatkozik.
+- A **365 Pénzügyi felsorolásos típus enum Olyan** Microsoft Dynamics adatforrása, amely a 365 Pénzügyi *felsorolásos típus*. Ez az adatforrás az **ERExpressionNumberSequenceScopeType** felsorolásra vonatkozik.
 - A *Számított mező* típus **NumSeq** adatforrása. Az adatforrás tartalmazza a `NUMSEQVALUE ("Gene_1", enumScope.Company, "")` kifejezést.
 
 Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vissza a **Gene\_1** számsorozatnak, amely a vállalathoz van beállítva, amely a kontextust adja, amely alatt az ER-formátumot futtatják.

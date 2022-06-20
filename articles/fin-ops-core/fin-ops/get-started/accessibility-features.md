@@ -1,6 +1,6 @@
 ---
 title: Kisegítő lehetőségek funkciói
-description: Ez a témakör azokat a funkciókat mutatja be, amelyek a különböző fogyatékkal élő felhasználókat segítik.
+description: Ez a témakör a különböző fogyatékkal élőknek nyújt segítséget nyújtó funkciókat ismerteti.
 author: TLeforMicrosoft
 ms.date: 12/02/2019
 ms.topic: article
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: af17b7933aed2a40d81fbc4e7b79e4e716aaf59b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881051"
 ---
-# <a name="accessibility-features"></a>Hozzáférhetőségi funkciók
+# <a name="accessibility-features"></a>Kisegítő lehetőségek funkciói
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ez a témakör azokat a funkciókat mutatja be, amelyek a különböző fogyatékkal élő felhasználókat segítik az alkalmazás használatában. Bizonyos funkciók például azokat segítik, akik olyan, gyengénlátóknak kifejlesztett technológiákat használnak, mint a Microsoft Windows Narrátor.
+Ez a témakör azokat a funkciókat ismerteti, amelyek segítik a különböző fogyatékkal élőket az alkalmazás használatában. Bizonyos funkciók például azokat segítik, akik olyan, gyengénlátóknak kifejlesztett technológiákat használnak, mint a Microsoft Windows Narrátor.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>A Windows Narrátor, és csak a billentyűzet elérése
 
@@ -49,7 +49,7 @@ További információ: [Navigációs keresés](navigation-search.md).
 
 ## <a name="action-search-for-keyboard-only-users-or-for-heads-down-data-entry"></a>Művelet keresése csak a billentyűzetet használó felhasználók számára vagy legördülő adatbevitelhez
 
-Az oldalon megadott minden művelet elérhető a billentyűzetről, a TAB-sorrenden keresztül. A TAB-sorrenddel kapcsolatos információk a témakör későbbi részében találhatók. A műveletek közvetlenebb futtatásához használhatja a műveletkeresési funkciót.
+Az oldalon megadott minden művelet elérhető a billentyűzetről, a TAB-sorrenden keresztül. A lapsorozatról később ebben a cikkben olvashat tájékoztatást. A műveletek közvetlenebb futtatásához használhatja a műveletkeresési funkciót.
 
 ### <a name="example"></a>Példa
 

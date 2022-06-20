@@ -1,6 +1,6 @@
 ---
 title: Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez
-description: Ez a témakör azt mutatja be, hogyan kerül sor a mobileszköz menüelemeinek beállítására.
+description: Ez a cikk bemutatja a mobileszköz menüpontok beállítását.
 author: Mirzaab
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d18b0ab1057dbccdd45a52a58f80ef9346e4459f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 09286e8e482780523b61006081205868be487755
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565177"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882286"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan kerül sor a mobileszköz menüelemeinek beállítására. Ebben a példában, ez a menüpont a Beszerzési rendelés típusú munkák végrehajtásához használatos. A menüponthoz társított munkaosztály határozza meg, hogy melyik munka érvényes. Ezt az útmutatót használhatja az USMF bemutatócégen. Ezt az eljárást általában a raktárvezető követi nyomon.
+Ez a cikk bemutatja a mobileszköz menüpontok beállítását. Ebben a példában, ez a menüpont a Beszerzési rendelés típusú munkák végrehajtásához használatos. A menüponthoz társított munkaosztály határozza meg, hogy melyik munka érvényes. Ezt az útmutatót használhatja az USMF bemutatócégen. Ezt az eljárást általában a raktárvezető követi nyomon.
 
 
 ## <a name="create-a-mobile-device-menu-item"></a>Mobileszköz-menüpont létrehozása

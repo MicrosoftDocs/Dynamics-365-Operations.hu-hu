@@ -1,6 +1,6 @@
 ---
 title: Engedélyek létrehozása, amelyek birtokában mások nevében lehet termékeket rendelni
-description: Ez a témakör bemutatja, hogyan adhat engedélyt dolgozóknak más dolgozók nevében beszerzési igénylésének elkészítésére.
+description: Ez a cikk bemutatja, hogy hogyan adhat engedélyt a dolgozóknak arra, hogy más dolgozók nevében beszerzési igényléseket készítsenek.
 author: GalynaFedorova
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1313ca01686e55d802716adf335e77ffeb1ece34
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3053f28fdf97637b1da5f644f64676bfd10fb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679303"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854210"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Engedélyek létrehozása, amelyek birtokában mások nevében lehet termékeket rendelni
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan adhat engedélyt dolgozóknak más dolgozók nevében beszerzési igénylésének elkészítésére. Más szóval a beszerzési igénylés „készítő” létrehozhat igénylést másik „kérelmező”-nek. AZ eljárás azt is megmutatja, hogyan adjon dolgozói engedélyeket cikkek és szolgáltatások megrendelésére különböző jogi személyek vagy üzemi egységek esetén. Általában a beszerzési vezető végzi el ezeket a feladatokat. Ezt a folyamatot az USMF bemutatócégnél vagy a saját adataiban is használhatja.
+Ez a cikk bemutatja, hogy hogyan adhat engedélyt a dolgozóknak arra, hogy más dolgozók nevében beszerzési igényléseket készítsenek. Más szóval a beszerzési igénylés „készítő” létrehozhat igénylést másik „kérelmező”-nek. AZ eljárás azt is megmutatja, hogyan adjon dolgozói engedélyeket cikkek és szolgáltatások megrendelésére különböző jogi személyek vagy üzemi egységek esetén. Általában a beszerzési vezető végzi el ezeket a feladatokat. Ezt a folyamatot az USMF bemutatócégnél vagy a saját adataiban is használhatja.
 
 
 ## <a name="grant-permission-to-enter-purchase-requisitions-on-behalf-of-another-worker"></a>Adjon engedélyt, hogy bevihessen beszerzési igénylést egy másik dolgozó nevében.

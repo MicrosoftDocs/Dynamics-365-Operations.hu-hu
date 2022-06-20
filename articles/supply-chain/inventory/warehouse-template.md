@@ -1,6 +1,6 @@
 ---
 title: Raktár beállítása a raktári konfigurációs sablon segítségével
-description: Ez a témakör bemutatja, hogyan lehetséges egy raktár beállítása a raktári konfigurációs sablon segítségével.
+description: Ez a cikk bemutatja, hogyan lehet raktárat beállítani a raktár konfigurációs sablon segítségével.
 author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571089"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856106"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Raktár beállítása a raktári konfigurációs sablon segítségével
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehetséges egy raktár beállítása a raktári konfigurációs sablon segítségével. Számos előre definiált konfigurációs sablont használhat. Ha tájékoztatást szeretne ezen sablonok használatáról, lásd a [Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md) című részt.
+Ez a cikk bemutatja, hogyan lehet raktárat beállítani a raktár konfigurációs sablon segítségével. Számos előre definiált konfigurációs sablont használhat. Ha tájékoztatást szeretne ezen sablonok használatáról, lásd a [Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md) című részt.
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Esetek, amikor a konfigurációs sablonok hasznosak lehetnek
 
@@ -38,7 +38,7 @@ A konfigurációs sablonok számos helyzetben hasznosak lehetnek. Íme néhány 
 - Szeretne gyorsan felkészülni a raktárfunkciók bemutatójára.
 - Azt szeretné, hogy a meglévő elemek és raktárak a Raktárkezelésben használják a funkciót a Készletkezelés modul funkciója helyett.
 
-Ez a témakör az első esetre fókuszál. Megmutatja, hogyan használhat konfigurációs sablont egy konfigurációs beállítás tesztkörnyezetből éles környezetbe való másolására.
+Ez a cikk az első ilyen helyzetre fókuszál. Megmutatja, hogyan használhat konfigurációs sablont egy konfigurációs beállítás tesztkörnyezetből éles környezetbe való másolására.
 
 ## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a>Konfigurációs beállítás átmásolása egy tesztkörnyezetből egy éles környezetbe
 
@@ -90,9 +90,9 @@ Az adatcsomag zip-fájlját letöltheti. Ez a fájl minden adatot a kijelölt fo
 
 A **Végrehajtás megtekintése** napló részletes információt nyújt minden egyes importált adatentitásról. Az előkészítési adatok nézetének segítségével gyorsan megtekintheti a céladatokat. Ezzel a módszerrel megnézheti, hogy néznek ki az importált adatok a kapcsolódó lapokon az alkalmazásban. Az alapértelmezett adatsablonok használata esetén az egyes adatentitások importálási sorrendje az előre meghatározott módon történik annak biztosítása érdekében, hogy először az összes függő adat importálása történjen meg. Ha egyéni adatentitások is a projekt részét képezik, gondoskodnia kell arról, hogy meg van adva a megfelelő sorrend. További tájékoztatás: [Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
-Ha további információt szeretne arról, hogy miként használhatja a raktársablont egy raktárkonfiguráció adott vállalattól egy új vállalathoz való átmásolásához azonos példányban, nézze meg a következő a 3 perces videót a YouTube-on: [raktársablon használata konfiguráció másolásához a Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs) rendszerben.
+Ha további információt szeretne arról, hogy miként használhatja a raktársablont egy raktárkonfiguráció adott vállalattól egy új vállalathoz való átmásolásához azonos példányban, nézze meg ezt a 3 perces videót a YouTube-on: [Raktársablon használata konfiguráció másolásához a Finance and Operations rendszerben](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
-## <a name="related-topic"></a>Kapcsolódó témakör
+## <a name="related-article"></a>Kapcsolódó cikk
 
 [Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 

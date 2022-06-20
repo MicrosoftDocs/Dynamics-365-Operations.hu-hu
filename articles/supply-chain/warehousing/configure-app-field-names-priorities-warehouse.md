@@ -1,6 +1,6 @@
 ---
-title: A Raktárkezelés mobilalkalmazás mezőinek konfigurálása
-description: Ez a témakör ismerteti, hogyan történik a Raktárkezelés mobilalkalmazásban szereplő mezők neveinek és prioritásainak meghatározása és konfigurálása.
+title: A Warehouse Management mobilalkalmazás mezőinek konfigurálása
+description: Ez a témakör leírja, hogyan lehet beállítani és beállítani a Raktárkezelés mobilalkalmazásban megjelenő mezők nevét és prioritását.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c9c1d921f68538d5b84db16b1e88e28147e6b41
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 1ce274c997119c7fdba193fa9559832e63febddc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902296"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893236"
 ---
-# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás mezőinek konfigurálása
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás mezőinek konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti, hogyan történik a Raktárkezelés mobilalkalmazásban szereplő mezők neveinek és prioritásainak meghatározása és konfigurálása.
+Ez a témakör leírja, hogyan lehet beállítani és beállítani a Raktárkezelés mobilalkalmazásban megjelenő mezők nevét és prioritását.
 
 > [!NOTE]
-> Ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A Raktárkezelés mobilalkalmazás egy raktározási feladatok végrehajtásához használt alkalmazás. Meghatározhatja és beállíthatja az alkalmazásban használt mezőneveket, és konfigurálhatja a prioritást, amelyhez a mezőneveket hozzá kell rendelni. Ez a témakör ismerteti, hogyan történik a Raktárkezelés mobilalkalmazás ezen mezőneveinek és prioritásainak meghatározása és konfigurálása, továbbá használata.
+> Ez a cikk a Raktárkezelés funkcióira vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A Raktárkezelés mobilalkalmazás egy raktározási feladatok végrehajtásához használt alkalmazás. Meghatározhatja és beállíthatja az alkalmazásban használt mezőneveket, és konfigurálhatja a prioritást, amelyhez a mezőneveket hozzá kell rendelni. Ez a cikk bemutatja a Raktárkezelés mobilalkalmazás e mezőnevének és prioritásának a beállítását, valamint használatukról.
 
 ## <a name="configure-warehouse-app-field-names"></a>A raktári alkalmazáson belüli mezőnevek konfigurálása
 
@@ -135,7 +135,7 @@ A raktári alkalmazás a fenti táblában beállított mezőprioritásai alapjá
 -   2. sor: Elem leírása
 -   3. sor: méret
 
-A fennmaradó metaadatok, például a Hely nem fog megjelenni a feladatlapon, de megjelenik a részletek lapon. További információért és a felhasználói felülettel kapcsolatos példákért olvassa el [A Finance and Operations- Warehousing bejelentése](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/) blogbejegyzést.
+A fennmaradó metaadatok, például a Hely nem fog megjelenni a feladatlapon, de megjelenik a részletek lapon. További információért és a felhasználói felülettel kapcsolatos példákért olvassa el a [Finance and Operations - Warehousing bejelentése](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/) blogbejegyzést.
 
 ## <a name="additional-resources"></a>További erőforrások
 

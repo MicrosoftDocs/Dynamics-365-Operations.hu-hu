@@ -1,6 +1,6 @@
 ---
-title: Kimenő szállítmányok jóváhagyása kötegelt feladatokból
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy olyan kötegelt feladatot, amely automatikusan megerősíti a kimenő átmozgatási rendelések szállítását a szállításra kész rakományok számára.
+title: Kimenő szállítmányok megerősítése kötegelt feladatokból
+description: Ez a témakör leírja, hogyan lehet olyan kötegelt feladatot beállítani, amely automatikusan megerősíti a kimenő átszállítású szállítmányokat a szállításra kész rakományok számára.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f68dcfc0c1454ee5b095e186c52faa6c83bf8dc6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 00749a69b17b0064290d7b41ccb2171386716302
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875101"
 ---
-# <a name="confirm-outbound-shipments-from-batch-jobs"></a>Kimenő szállítmányok jóváhagyása kötegelt feladatokból
+# <a name="confirm-outbound-shipments-from-batch-jobs"></a>Kimenő szállítmányok megerősítése kötegelt feladatokból
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani egy olyan kötegelt feladatot, amely automatikusan megerősíti a kimenő átmozgatási rendelések szállítását a szállításra kész rakományok számára. Az itt leírt kötegelt feladat csak átmozgatási rendelések szállítására vonatkozik, az értékesítési rendelésekre nem.
+Ez a témakör leírja, hogyan lehet olyan kötegelt feladatot beállítani, amely automatikusan megerősíti a kimenő átszállítású szállítmányokat a szállításra kész rakományok számára. Az itt leírt kötegelt feladat csak átmozgatási rendelések szállítására vonatkozik, az értékesítési rendelésekre nem.
 
 ## <a name="turn-the-confirm-outbound-shipments-from-batch-jobs-feature-on-or-off"></a>A Kimenő szállítmányok megerősítése kötegelt feladatokból funkció be- és kikapcsolása
 
-Az ebben a témakörben *leírt* funkció használatához a rendszeren be kell kapcsolva lennie a Kimenő szállítmányok megerősítése kötegelt feladatokból funkciónak. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Funkciókezelés munkaterület Kimenő szállítmányok megerősítése funkciójának keresésével kapcsolják be és kapcsolják ki a funkciót.
+Az ebben a cikkben ismertetett *funkció* használatához a rendszeren be kell kapcsolva lennie a Kimenő szállítmányok megerősítése kötegelt feladatokból funkciónak. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Funkciókezelés munkaterület Kimenő szállítmányok megerősítése funkciójának keresésével kapcsolják be és kapcsolják ki a funkciót.
 
 ## <a name="process-outbound-shipments"></a>Kimenő szállítmányok feldolgozása
 

@@ -1,6 +1,6 @@
 ---
 title: Oldaltartalom hozzáférhetőségének ellenőrzése
-description: Ez a témakör leírja, hogyan ellenőrizhető a Microsoft Dynamics 365 Commerce oldaltartalmának hozzáférhetősége.
+description: Ez a témakör azt írja le, hogyan lehet ellenőrizni, hogy a lap tartalma elérhető-e a következőben:Microsoft Dynamics 365 Commerce
 author: josaw1
 ms.date: 01/08/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6f92d5c34896e284a40a4806cd83e469c2db4c9181c919d2d967dacc84076201
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: caccb6085947193e4a5f8a8555722dd073f0c275
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884760"
 ---
 # <a name="verify-page-content-accessibility"></a>Oldaltartalom hozzáférhetőségének ellenőrzése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör leírja, hogyan ellenőrizhető a Microsoft Dynamics 365 Commerce oldaltartalmának hozzáférhetősége.
+Ez a témakör azt írja le, hogyan lehet ellenőrizni, hogy a lap tartalma elérhető-e a következőben:Microsoft Dynamics 365 Commerce
 
 Amikor befejezte egy oldal módosítását, győződjön meg arról, hogy a tartalom mindenki számára elérhető a weben. A Commerce szerkesztőeszközök könnyen ellenőrizhető az oldal tartalmának hozzáférhetősége az integrált [Microsoft hozzáférhetőségi információk](https://accessibilityinsights.io/) szolgáltatás használatával. Ez a szolgáltatás ellenőrzi az oldal tartalmát a legfrissebb [World Wide Web CONSORTIUM (W3C) akadálymentesítési](https://www.w3.org/standards/webdesign/accessibility) irányelvei alapján.
 

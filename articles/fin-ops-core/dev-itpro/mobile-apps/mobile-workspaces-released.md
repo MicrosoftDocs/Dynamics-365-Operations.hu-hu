@@ -1,6 +1,6 @@
 ---
 title: Elérhető mobil munkaterületek
-description: Ez a témakör az elérhető mobil munkaterületeket sorolja fel.
+description: Ez a cikk felsorolja azokat a mobil munkaterületeket, amelyek elérhetők használatra.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4398bd8cf944ef11a0463d937aeaa3b5cc109142
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 79abd22bab9ec88358fa039060a67006fc53cb5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811004"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868640"
 ---
 # <a name="available-mobile-workspaces"></a>Elérhető mobil munkaterületek
 

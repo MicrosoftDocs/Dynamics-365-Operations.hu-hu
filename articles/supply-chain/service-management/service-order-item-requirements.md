@@ -1,6 +1,6 @@
 ---
 title: Szervizrendelés cikkszükségletei
-description: Ez a témakör bemutatja a szervizrendelések cikkszükségleteit.
+description: Ez a témakör a szervizrendelés cikkekkel kapcsolatos követelményeit ismerteti.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a6cd7e89e28b8fc00a8c09f51703995cd79ade5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
-ms.translationtype: MT
+ms.openlocfilehash: f6f12b0dd1facc753bfcde820eea26a4052caf67
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674225"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882402"
 ---
 # <a name="service-order-item-requirements"></a>Szervizrendelés cikkszükségletei
 

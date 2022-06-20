@@ -1,6 +1,6 @@
 ---
 title: Jóváhagyási lépések konfigurálása munkafolyamatban
-description: Ez a témakör bemutatja, hogyan kell konfigurálni a jóváhagyási lépés tulajdonságait.
+description: Ez a cikk bemutatja a jóváhagyási lépés tulajdonságainak konfigurálját.
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5d7491c690cce7014f1aca0fb30ff6c3f21f45f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070777"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848693"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Jóváhagyási lépések konfigurálása munkafolyamatban
 
@@ -28,7 +28,7 @@ ms.locfileid: "8070777"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ez a témakör bemutatja, hogyan kell konfigurálni a jóváhagyási lépés tulajdonságait.
+Ez a cikk bemutatja a jóváhagyási lépés tulajdonságainak konfigurálját.
 
 A munkafolyamat-szerkesztő jóváhagyási lépésének beállításához kattintson a jobb gombbal a jóváhagyási lépésre, és kattintson **Tulajdonságok** oldalon a **Tulajdonságok** lehetőségre. Ezt követően a következő eljárások segítségével állítsa be a jóváhagyási lépés tulajdonságait.
 

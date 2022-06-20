@@ -1,6 +1,6 @@
 ---
 title: Vállalatközi pénznem átváltása
-description: Ez a témakör bemutatja a vállalatközi tranzakciók pénznemátváltásait
+description: Ez a cikk bemutatja a vállalatközi tranzakciók pénznemátváltását.
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f0af05c324bb67744ba6650e3d7a4ba8b958040e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 41bfafc0dcb3bd356931b67dc63b717c0d098116
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671898"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851478"
 ---
 # <a name="intercompany-currency-conversions"></a>Vállalatközi pénznem átváltása
 

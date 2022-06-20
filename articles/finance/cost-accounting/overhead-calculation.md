@@ -1,6 +1,6 @@
 ---
-title: Járulékos költség számítása
-description: Ez a témakör a járulékos költségek kiszámításának és allokálásának jellemző folyamatait írja le.
+title: Járulékos költségek számítása
+description: Ez a témakör a többletköltségek kiszámítására és fedezésére használt általános eljárásokat ismerteti.
 author: AndersGirke
 ms.date: 10/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9d704268f481fdf377033740f727e5d581a8c510
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9322fb5237afdbf73147bb549eb3f70929c46ce2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733934"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881991"
 ---
-# <a name="overhead-calculation"></a>Járulékos költség számítása
+# <a name="overhead-calculation"></a>Járulékos költségek számítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a járulékos költségek kiszámításának és allokálásának jellemző folyamatait írja le.
+Ez a témakör a többletköltségek kiszámítására és fedezésére használt általános eljárásokat ismerteti.
 
 ## <a name="term-definition"></a>A kifejezés meghatározása
 
@@ -1333,10 +1333,10 @@ Költségösszetevő | Költségobjektum<br>CC099 | Költségobjektum<br>CC001 |
 10001 Villamos energia | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10,00 | 7,770.57 | 2,189.43 | 10,000.00 |
 Nem besorolt | 0,00 |  |  |  |  |  |  |  |  |  |
 Fix költség | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Változó költség | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 1000 | 6,994.21 | 1,965.79 | 9,000.00 |
+Változó költség | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
-> Ez a témakör azt mutatja meg, hogy egy elsődleges költségelem, az 10001 villamosenergia hogyan irányul a költségelemekhez. Emiatt ez a járulékos költség a szervezet legalsó szintjéig fel van osztva. Más szóval a legalsó szintű költségobjektumok viselik a költséget. Ha a költségobjektumok közötti költség vizuális áramlását szeretné megtekinteni, a költségösszesítési házirend szabályaival megjelenítheti a költség áramlását. A további tudnivalókat lásd: [Költségösszesítéssel kapcsolatos irányelv és járulékos költség számítása](cost-rollup.md).
+> Ez a cikk bemutatja, hogy hogyan járja végig az elsődleges költségelemet (10001) a költségobjektumok között. Emiatt ez a járulékos költség a szervezet legalsó szintjéig fel van osztva. Más szóval a legalsó szintű költségobjektumok viselik a költséget. Ha a költségobjektumok közötti költség vizuális áramlását szeretné megtekinteni, a költségösszesítési házirend szabályaival megjelenítheti a költség áramlását. A további tudnivalókat lásd: [Költségösszesítéssel kapcsolatos irányelv és járulékos költség számítása](cost-rollup.md).
 
 
 

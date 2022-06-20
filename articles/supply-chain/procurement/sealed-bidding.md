@@ -1,6 +1,6 @@
 ---
 title: Lezárt ajánlattétel ajánlatkéréshez
-description: Ez a témakör leírja, hogyan lehet lezárt pályázatokat beállítani, hogy a szállítói ajánlatok válaszai titkosak maradjak, amíg a beszerzési személyzet fel oldja azokat.
+description: Ez a témakör leírja, hogyan lehet lepecsételt árajánlatokat beállítani, hogy a szállítói ajánlatokra adott válaszok titkosak maradjak, amíg a beszerzési személyzet fel nem választja őket.
 author: GalynaFedorova
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dfc19646d6724627c8a25bcfc8a6b2a70a73c261
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40f1735d7efa5131b1462963758b6b48eec78fea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675149"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890886"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Lezárt ajánlattétel ajánlatkéréshez
 
@@ -148,7 +148,7 @@ A lezárt ajánlatok esetén az ajánlatkérési eset létrehozása szinte telje
 A lezárt ajánlatok ajánlatkérési eseteink **Ajánlattípus** mezőjének *Lezárt* értékűnek kell lennie. Ezt az értéket háromféleképpen lehet egy ajánlatkérési esethez rendelni:
 
 - Létrehozás után közvetlenül az ajánlatkérési eseten állítsa be az értéket.
-- Adja meg a lezárt ajánlatot alapértelmezett ajánlattípusként a Beszerzés és forrásparaméterek között az összes ajánlatkérési esethez. (Lásd: [Alapértelmezett ajánlattípus beállítása](#set-default-bid-type) szakasz a témakör korábbi részében.)
+- Adja meg a lezárt ajánlatot alapértelmezett ajánlattípusként a Beszerzés és forrásparaméterek között az összes ajánlatkérési esethez. (Lásd: [A cikk korábbi, alapértelmezett](#set-default-bid-type) ajánlattípus-szakaszának beállítása.)
 - Új ajánlatkérési eset létrehozásakor válasszon ki egy meghirdetési típust, amely lezárt ajánlatkérésre van beállítva. (Lásd: [Az alapértelmezett ajánlattípus beállítása](#set-default-bid-type) szakaszt.)
 
 Lezárt ajánlatok esetén az ajánlatkérési eset **Lejárati dátuma és időpontja** határozza meg, hogy a beküldött ajánlatokat mikor lehet feloldani. Az egyes sorok **Lejárati dátum és időpont** értéke meg fog egyezni a fejlécben található értékkel.

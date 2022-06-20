@@ -1,6 +1,6 @@
 ---
 title: Átlagos és napi árfolyam kiszámítása
-description: Ez a témakör azt mutatja be, hogyan lehet kiszámítani a kimenő banki és a készpénzfizetési tranzakciók átlagos árfolyamát.
+description: Ez a témakör bemutatja a kimenő banki és készpénztranzakciók átlagos átváltási árfolyamának kiszámítását.
 author: anasyash
 ms.date: 03/30/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: fcd107b504eee317cf0ca70cb615b275da43520b
-ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
+ms.openlocfilehash: 9251132081b398e2a4ca0c5e9321c2acc0884d34
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8509257"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888946"
 ---
 # <a name="calculate-average-and-daily-exchange-rates"></a>Átlagos és napi árfolyam kiszámítása
 
@@ -32,7 +32,7 @@ A „számvitelről szóló 2000. évi C. törvény” szerinti külföldi pénz
 
 Az országos kontextusú magyar jogi személyeknél a kimenő pénzforgalmi és banki tranzakciók átlagos árfolyamának kiszámítására szolgáló funkció érhető el. A kimenő pénzforgalmi és banki tranzakciókkal rendelkező naplósorokban az átlagos átváltási árfolyam kiszámításának algoritmusához a könyvelési pénznem és a külföldi pénznem összesített összegei használatosak a tranzakció megadott időpontja előtt.
 
-Ez a témakör azt mutatja be, hogyan használható a kiszámítás funkció a kimenő banki és a készpénzfizetési tranzakciók átlagos árfolyamához. Azt is bemutatja, hogyan használható a kiszámítás funkció a napi bejövő és kimenő banki és a pénzforgalmi tranzakciók átlagos árfolyamához.
+Ez a cikk bemutatja, hogy hogyan használható a funkció a kimenő banki és készpénztranzakciók átlagos átváltási árfolyamának számításához. Azt is bemutatja, hogyan használható a kiszámítás funkció a napi bejövő és kimenő banki és a pénzforgalmi tranzakciók átlagos árfolyamához.
 
 ## <a name="daily-exchange-rate"></a>Napi árfolyam
 

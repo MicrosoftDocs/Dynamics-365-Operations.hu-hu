@@ -1,6 +1,6 @@
 ---
 title: Munkasablon beállítása beszerzési rendelésekhez
-description: Ez a témakör a bevételezett cikkek betárolásakor alkalmazandó egyszerű munkasablon beállítását ismerteti.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani egy egyszerű munkasablont, amely a beérkezett cikkek berakodáskor használatos.
 author: Mirzaab
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32dbdd8243c6b37cfe0c42d2e7b06adfa32a947a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ee6bc896a979c326001e1596e4a463753005fabf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572289"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877363"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Munkasablon beállítása beszerzési rendelésekhez
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a bevételezett cikkek betárolásakor alkalmazandó egyszerű munkasablon beállítását ismerteti. A munkasablonok határozzák meg a raktári dolgozó számára mobilkészüléken biztosított utasításkészletet, amikor cikkeket helyez át a bevételezési területről. Használhatja ezt az eljárást a USMF bemutatócégnél említett adatokkal. Mielőtt belekezdene ebbe az útmutatóba, hozzon létre egy munkagyűjtő-azonosítót. Ebben a példában egy a Bejövőben meghívott munkagyűjtő-azonosítót használunk. Ezt az eljárást a raktári vezető használja.
+Ez a témakör azt ismerteti, hogyan lehet beállítani egy egyszerű munkasablont, amely a beérkezett cikkek berakodáskor használatos. A munkasablonok határozzák meg a raktári dolgozó számára mobilkészüléken biztosított utasításkészletet, amikor cikkeket helyez át a bevételezési területről. Használhatja ezt az eljárást a USMF bemutatócégnél említett adatokkal. Mielőtt belekezdene ebbe az útmutatóba, hozzon létre egy munkagyűjtő-azonosítót. Ebben a példában egy a Bejövőben meghívott munkagyűjtő-azonosítót használunk. Ezt az eljárást a raktári vezető használja.
 
 1. A navigációs ablaktáblán ugorjon a **Modulok > Raktárkezelés > Beállítás > Munka > Munkasablonok** lehetőségre.
 2. A **Munka rendeléstípusa** mezőben válassza ki a **Beszerzési rendelések** elemet.

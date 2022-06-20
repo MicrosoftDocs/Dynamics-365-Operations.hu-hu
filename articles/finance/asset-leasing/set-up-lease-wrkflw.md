@@ -1,6 +1,6 @@
 ---
 title: Lízingjóváhagyási munkafolyamatok beállítása
-description: A témakör bemutatja, hogyan állíthat be egy jóváhagyási munkafolyamatot, amely új lízing létrehozásakor fog futni.
+description: A cikk bemutatja, hogy hogyan lehet beállítani egy jóváhagyási munkafolyamatot, amely az új bérlet létrehozásakor fog futni.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f7781fcb643d678fed528af947efb01911899f54
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0162e559f8aaec248cfb9042b0152788536c9fc9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724613"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870278"
 ---
 # <a name="set-up-lease-approval-workflows"></a>Lízingjóváhagyási munkafolyamatok beállítása
 
 [!include [banner](../includes/banner.md)]
 
-A témakör bemutatja, hogyan állíthat be egy jóváhagyási munkafolyamatot, amely új lízing létrehozásakor fog futni. A munkafolyamat használatáról a [Lízingjóváhagyási munkafolyamatok használata](use-create-lease-wrkflw.md) című témakörben talál további információt. 
+A cikk bemutatja, hogy hogyan lehet beállítani egy jóváhagyási munkafolyamatot, amely az új bérlet létrehozásakor fog futni. A munkafolyamat használatáról a [Lízingjóváhagyási munkafolyamatok használata](use-create-lease-wrkflw.md) című témakörben talál további információt. 
 
 1. Nyissa meg az **Eszközlízing \> Beállítás \> Lízingmunkafolyamat** lehetőséget.
 2. A **Lízingmunkafolyamat** oldalon válassza az **Új** lehetőséget.

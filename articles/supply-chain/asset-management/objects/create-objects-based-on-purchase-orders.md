@@ -1,6 +1,6 @@
 ---
 title: Eszközök létrehozása beszerzési rendelések alapján
-description: Ez a témakör bemutatja, hogyan hozhat létre olyan eszközelemeket tartalmazó listát, amelyet az Eszközmenedzsment területén a karbantartási feladatokhoz használt eszközök létrehozásának alapjául használhat fel.
+description: Ez a cikk bemutatja, hogy hogyan lehet létrehozni az eszközelemek listáját, amely a tárgyi eszközök eszközkezelési feladatokhoz való létrehozásához ad alapot.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754107"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893700"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Eszközök létrehozása beszerzési rendelések alapján
 
@@ -28,7 +28,7 @@ ms.locfileid: "6754107"
 
  
 
-Ez a témakör bemutatja, hogyan hozhat létre olyan eszközelemeket tartalmazó listát, amelyet az Eszközmenedzsment területén a karbantartási feladatokhoz használt eszközök létrehozásának alapjául használhat fel. Az eszköztételek alapján megtekintheti az ezekre a cikkekre létrehozott beszerzésirendelés-sorok listáját. Ennek a funkciónak a célja, hogy a beszerzési rendelés alapján könnyen létre lehessen hozni egy eszközt az Eszközkezelésben.
+Ez a cikk bemutatja, hogy hogyan lehet létrehozni az eszközelemek listáját, amely a tárgyi eszközök eszközkezelési feladatokhoz való létrehozásához ad alapot. Az eszköztételek alapján megtekintheti az ezekre a cikkekre létrehozott beszerzésirendelés-sorok listáját. Ennek a funkciónak a célja, hogy a beszerzési rendelés alapján könnyen létre lehessen hozni egy eszközt az Eszközkezelésben.
 
 Először be kell állítania az eszközök beszerzési rendelésből történő létrehozására szolgáló cikkeket az **Eszköztételek** helyen. A beszerzésirendelés-sor létrehozása után az eszközök a **Függőben lévő eszközök** között hozhatók létre. Meg lehet határozni azt, hogy a beszerzési rendelés melyik szakaszában kell létrehozni az eszközt.
 

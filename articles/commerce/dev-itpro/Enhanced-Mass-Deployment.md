@@ -1,6 +1,6 @@
 ---
 title: Lepecsételt Commerce önkiszolgáló-összetevők központi telepítése
-description: Ez a témakör bemutatja, hogy hogyan lehet csendes módon telepíteni és telepíteni az önkiszolgáló összetevők telepítőinek keretrendszerét.
+description: Ez a cikk bemutatja, hogy hogyan lehet csendes módon telepíteni és telepíteni az önkiszolgáló összetevők telepítőinek keretrendszerét.
 author: jashanno
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 5cb27fd0ea366d12c8bd6ee1cdb0c6d584375862
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: a679d78db3ad5bd9cccbd4ab6a7026bd07890f55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8742582"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898579"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Lepecsételt Commerce önkiszolgáló-összetevők központi telepítése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a havonta kiadott lepecsételt keretrendszerre, a minden hónapban kiadott összetevő-telepítőkre vonatkozik, a 10.0.18-as kiadással kezdődően, Microsoft Dynamics és amelyek elérhetővé állnak a Lifecycle Services (LCS) Megosztott eszköztárában. Ne feledje, hogy ezeknek az új telepítőknek az első több kiadása előnézetként **van kiképve**. A megnevezés egyetlen célja azonban az, hogy megkülönböztesse az új telepítőket, míg a Microsoft meghatározza, hogy használ-e további funkcionális követelményeket. Ez nem jelenti azt, hogy a telepítők nem érvényesek termeléshez. Az új telepítők kiadása alapján a Microsoft azt tervezi, hogy 2023. októberben vagy annak körül elavulté tervezi a régi (örökölt) telepítőket. 
+Ez a cikk a havonta kiadott lepecsételt keretrendszerre, a minden hónapban kiadott összetevő-telepítőkre vonatkozik, a 10.0.18-as kiadással kezdődően, Microsoft Dynamics és amelyek elérhetővé állnak a Lifecycle Services (LCS) Megosztott eszköztárában. Ne feledje, hogy ezeknek az új telepítőknek az első több kiadása előnézetként **van kiképve**. A megnevezés egyetlen célja azonban az, hogy megkülönböztesse az új telepítőket, míg a Microsoft meghatározza, hogy használ-e további funkcionális követelményeket. Ez nem jelenti azt, hogy a telepítők nem érvényesek termeléshez. Az új telepítők kiadása alapján a Microsoft azt tervezi, hogy 2023. októberben vagy annak körül elavulté tervezi a régi (örökölt) telepítőket. 
 
-Ez a témakör bemutatja, hogyan használhatók az új telepítők csendes telepítésre és parancssori argumentumokkal történő frissítésre. Ezekkel az argumentumokkal többféle módon lehet tömegesen központi telepítést tenni.
+Ez a témakör bemutatja, hogy hogyan lehet az új telepítőket csendes telepítésre és parancssori argumentumok segítségével telepíteni és szervizelni. Ezekkel az argumentumokkal többféle módon lehet tömegesen központi telepítést tenni.
 
 > [!NOTE]
 > Az új önkiszolgáló, lepecsételt telepítők nem lesznek elérhetők a Headquarters alkalmazásból, csak az LCS-n keresztül tölthetők le.
@@ -108,7 +108,7 @@ A keretrendszer régi összetevő-telepítőiből az új keretrendszer-összetev
 
 ### <a name="before-you-begin"></a>Előzetes feladatok
 
-Rendkívül fontos, hogy eltávolítsa a régi, önkiszolgáló Modern POS összetevőt. A további tudnivalókat lásd a témakör korábbi áttelepítési lépéseinél.
+Rendkívül fontos, hogy eltávolítsa a régi, önkiszolgáló Modern POS összetevőt. A további tudnivalókat lásd a cikk korábbi áttelepítési lépéseinél.
 
 ### <a name="examples-of-silent-deployment"></a>Példák csendes telepítésre
 
@@ -125,7 +125,7 @@ CommerceModernPOS.exe --help install
 ```
 
 > [!NOTE]
-> A Modern POS esetében nincs szükség konfigurációs fájlra. A telepítőnek már vannak paraméterei (a témakörben korábban látható) az eszköz aktiválása során használt különféle értékekre.
+> A Modern POS esetében nincs szükség konfigurációs fájlra. A telepítőnek már vannak paraméterei (a cikk korábbi verziójában látható) az eszköz aktiválása során használt különféle értékekre.
 
 A következő parancs minden paramétert meghatároz, amely az eszköz aktiválása során szükséges a Modern POS alkalmazás telepítése után. Ez a példa a **Demo-3** pénztárgépet használja, amely általában bemutatóadatokban Dynamics 365 Commerce használatos.
 
@@ -145,7 +145,7 @@ Ezeknek a fogalmaknak a kombinációval lehet megvalósítani a kívánt telepí
 
 ### <a name="before-you-begin"></a>Előzetes feladatok
 
-Kulcsfontosságú, hogy eltávolítsa a régi önkiszolgáló hardverállomás összetevőt. A további tudnivalókat lásd a témakör korábbi áttelepítési lépéseinél. Már nincs kereskedőiszámla-információs eszköz. Ehelyett a kereskedői számla adatait telepíti a rendszer, amikor a POS terminált párosítja a hardverállomással. Amikor első alkalommal teszteli ezt a telepítőt, kifejezetten ajánljuk, hogy futtassa a következő parancsot:
+Kulcsfontosságú, hogy eltávolítsa a régi önkiszolgáló hardverállomás összetevőt. A további tudnivalókat lásd a cikk korábbi áttelepítési lépéseinél. Már nincs kereskedőiszámla-információs eszköz. Ehelyett a kereskedői számla adatait telepíti a rendszer, amikor a POS terminált párosítja a hardverállomással. Amikor első alkalommal teszteli ezt a telepítőt, kifejezetten ajánljuk, hogy futtassa a következő parancsot:
 
 ```Console
 CommerceHardwareStation.exe --help install
@@ -166,7 +166,7 @@ HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics36
 ```
 
 > [!NOTE]
-> A hardverállomáshoz nem szükséges konfigurációs fájl. A telepítőnek már vannak paraméterei (a témakörben korábban látható) a különféle szükséges értékekre.
+> A hardverállomáshoz nem szükséges konfigurációs fájl. A telepítőnek már vannak paraméterei (a cikk korábbi verziójában látható) a különféle szükséges értékekre.
 
 A következő parancs minden paramétert megad, amely szükséges az előfeltételek ellenőrzésének kihagyásához egy szokásos telepítés során. 
 
@@ -189,7 +189,7 @@ CommerceStoreScaleUnitSetup.exe --help install
 
 ### <a name="before-you-begin"></a>Előzetes feladatok
 
-Rendkívül fontos, hogy eltávolítsa a régi ÖNkiszolgáló RENDSZER (önkihelyezett) összetevőt. A további tudnivalókat lásd a témakör korábbi áttelepítési lépéseinél.
+Rendkívül fontos, hogy eltávolítsa a régi ÖNkiszolgáló RENDSZER (önkihelyezett) összetevőt. A további tudnivalókat lásd a cikk korábbi áttelepítési lépéseinél.
 
 ### <a name="examples-of-silent-deployment"></a>Példák csendes telepítésre
 

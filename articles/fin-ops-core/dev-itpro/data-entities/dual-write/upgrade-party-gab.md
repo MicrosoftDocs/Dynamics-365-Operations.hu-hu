@@ -1,6 +1,6 @@
 ---
 title: Frissítés a fél és globális címjegyzék modelljére
-description: Ez a témakör azt ismerteti, hogyan lehet kettős írású adatot frissíteni a partner és a globális címjegyzék modellel.
+description: Ez a témakör azt ismerteti, hogyan lehet két írásos adatot frissíteni a fél és a globális címjegyzék modellel.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688375"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895276"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Frissítés a fél és globális címjegyzék modelljére
 
@@ -40,7 +40,7 @@ A folyamat végén a program a következő, vesszővel elválasztott értékeket
 | ImportFONewPostalAddress.csv | Ez a fájl új postai címrekordok **létrehozásában** segít a Pénzügy és műveletek alkalmazásban. |
 | ImportFONewElectronicAddress.csv | Ez a fájl segít létrehozni az **új elektronikus címrekordokat** a Pénzügy és műveletek alkalmazásban. |
 
-Ez a témakör bemutatja az adatgyártott sablonok használatát és az adatok frissítését. Ha nincsenek testreszabásai, a sablonokat a sablonokkal egy módon használhatja. Ha azonban testreszabott beállításai vannak **a számla-,** **·** **kapcsolattartó- és szállítóadatokhoz, módosítania kell a sablonokat az ebben a témakörben leírt módon.**
+Ez a témakör bemutatja az adatgyártott sablonok használatát és az adatok frissítését. Ha nincsenek testreszabásai, a sablonokat a sablonokkal egy módon használhatja. Ha azonban testreszabott beállításai vannak **a számla-,** **·** **kapcsolattartó- és szállítóadatokhoz, módosítania kell a sablonokat az ebben a cikkben leírt módon.**
 
 > [!IMPORTANT]
 > A felek postai cím- és e-mail címsablonjainak futtatására különleges utasítások vonatkoznak. Először a Fél sablont, majd a Fél postai cím sablonját, majd a Fél elektronikus címsablonját kell futtatni. Minden sablon egy külön adat üzemben történő importálásra van kialakítva.

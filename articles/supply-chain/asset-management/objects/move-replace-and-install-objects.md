@@ -1,6 +1,6 @@
 ---
 title: Eszközök áthelyezése, cseréje és telepítése
-description: Ez a témakör bemutatja, hogyan lehet eszközöket áthelyezni, kicserélni és telepíteni az Eszközkezelés modulban.
+description: Ez a témakör ismerteti, hogyan lehet áthelyezni, lecserélni és telepíteni az eszközöket az Eszközkezelésben.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aad94f17d6efadf7c520c021354963e7135d6d4da1426774925ce877f705e01a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769635"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872124"
 ---
 # <a name="move-replace-and-install-assets"></a>Eszközök áthelyezése, cseréje és telepítése
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769635"
 
  
 
-Ez a témakör bemutatja, hogyan lehet eszközöket áthelyezni, kicserélni és telepíteni az Eszközkezelés modulban. Létrehozhat olyan egyedi eszközöket, amelyeknek nincs kapcsolata más eszközökkel, vagy létrehozhat egy olyan eszközstruktúrát, amely egy fölérendelt eszközt (legfelső szintű eszköz) és a kapcsolódó alárendelt eszközöket (aleszközök) tartalmaz. Az Eszközkezelésben három módszerrel mozgathatja az eszközt és módosíthatja a helyét:
+Ez a témakör ismerteti, hogyan lehet áthelyezni, lecserélni és telepíteni az eszközöket az Eszközkezelésben. Létrehozhat olyan egyedi eszközöket, amelyeknek nincs kapcsolata más eszközökkel, vagy létrehozhat egy olyan eszközstruktúrát, amely egy fölérendelt eszközt (legfelső szintű eszköz) és a kapcsolódó alárendelt eszközöket (aleszközök) tartalmaz. Az Eszközkezelésben három módszerrel mozgathatja az eszközt és módosíthatja a helyét:
 
 - **Áthelyezés** – Az eszköz áthelyezése egy másik eszközszerkezetbe vagy ugyanazon eszközstruktúra más helyére.
 - **Csere** – Ideiglenesen eltávolít egy eszközt az eszközstruktúrából javítási vagy felújítási céllal, majd visszahelyezi a javított eszközt később az eszközstruktúrába. Vagy véglegesen lecserélheti a használt eszközt egy új eszközre.
@@ -42,7 +42,7 @@ Ez a témakör bemutatja, hogyan lehet eszközöket áthelyezni, kicserélni és
 Az **Eszköz áthelyezése** funkcióval egy másik eszközszerkezetbe vagy ugyanazon eszközstruktúra más helyére helyezheti át az eszközt. Az eszközt ki is veheti egy eszközszerkezetből úgy, hogy önálló eszközként álljon, amelynek nincsenek szerkezeti kapcsolatai.
 
 > [!NOTE]
-> Ne használja ezt a funkciót, ha az eszközöket javítja, vagy csak ideiglenesen lecseréli. Ehelyett használja a témakör későbbi részében ismertetett **Eszköz cseréje** funkciót.
+> Ne használja ezt a funkciót, ha az eszközöket javítja, vagy csak ideiglenesen lecseréli. Ehelyett használja a Jelen cikk **későbbi leírásában ismertetett Eszköz** cseréje funkciót.
 
 1. Válassza ki az **Eszközkezelés** \> **Általános** \> **Eszközök** \> **Összes eszköz** vagy **Aktív eszközök** lehetőséget.
 2. A listából válassza ki az áthelyezni kívánt eszközt. Ha az eszköz rendelkezik alárendelt eszközökkel, akkor ezeket az eszközöket is áthelyezi.

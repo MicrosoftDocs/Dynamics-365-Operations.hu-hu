@@ -1,6 +1,6 @@
 ---
 title: Kompenzációk és Juttatások Power BI tartalom
-description: Ez a témakör ismerteti a Kompenzáció és juttatások Power BI-tartalmat.
+description: Ez a témakör a Kompenzáció és juttatások tartalmát Power BI írja le.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13f084ba49baa01eea99822baa6960136725140a80c9d29a4104aabc5d7d5dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bed0e8ffbd23c6793c037bade218f637105734b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772082"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908619"
 ---
 # <a name="compensation-and-benefits-power-bi-content"></a>Kompenzációk és Juttatások Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti a Kompenzáció és juttatások Power BI-tartalmat. 
+Ez a témakör a Kompenzáció és juttatások tartalmát Power BI írja le. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott jelentések
 Miután csatlakoztatta a tartalmi csomagot a rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás oldal a Power BI szolgáltatáshoz](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData) oldalon. A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.

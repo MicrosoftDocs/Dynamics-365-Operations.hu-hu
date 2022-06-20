@@ -1,6 +1,6 @@
 ---
 title: Problémák elhárítása a kezdeti szinkronizációkor
-description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók a kezdeti szinkronizálás során fellépő problémák.
+description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek a kezdeti szinkronizálás során esetleg előforduló problémák kijavításában segítenek.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 030e565ffff561f6c1efbdd0de9928f70c7c46c0
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: bb3db4c651aaac521974d92753be5a8219bfe1ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892357"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Problémák elhárítása a kezdeti szinkronizációkor
 
@@ -22,12 +22,12 @@ ms.locfileid: "8063058"
 
 
 
-Ez a témakör hibaelhárítási információkat tartalmaz a Finance and Operations alkalmazások és a kettős írási integrációhoz Dataverse. Pontosabban, ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók a kezdeti szinkronizálás során fellépő problémák.
+Ez a témakör hibaelhárítási információkat tartalmaz a Pénzügy és művelet alkalmazások, illetve a Dataverse. Pontosabban, ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók a kezdeti szinkronizálás során fellépő problémák.
 
 > [!IMPORTANT]
-> Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
+> Az ebben a témakörben említett problémák egy része a rendszergazdai szerepkörhöz vagy a Microsoft Azure Active Directory (Azure AD) bérlői rendszergazdai hitelesítő adatokhoz lehet szükséges. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
 
-## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Ellenőrizze a kezdeti szinkronizálási hibákat a Finance and Operations alkalmazásban
+## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Kezdeti szinkronizálási hibák ellenőrzése a Pénzügy és műveletek alkalmazásban
 
 Miután engedélyezte a leképezési sablonokat, a leképezések állapotának **Fut** állapotnak kell lennie. Ha az állapot **Nem fut**, akkor hiba történt a kezdeti szinkronizálás során. A hibák megtekintéséhez válassza a **Kettős írás** oldal **Kezdeti szinkronizálás adatai** lapját.
 
@@ -63,7 +63,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 Ha ez a hiba folyamatosan történik, és a kezdeti szinkronizálás nem hajtható végre, hajtsa végre az alábbi lépéseket a probléma megoldásához.
 
-1. Jelentkezzen be a virtuális gépbe (VM) a Finance and Operations alkalmazáshoz.
+1. Jelentkezzen be a Pénzügy és műveletek alkalmazás virtuális gépe (VM) alkalmazásba.
 2. Nyissa meg a Microsoft Management Console programot.
 3. Győződjön meg arról, hogy a **Szolgáltatások** panelen fut a Microsoft Dynamics 365 adatimportálási és -exportálási keretrendszer szolgáltatása. Indítsa újra, ha leállították, mert erre szükség van a kezdeti szinkronizáláshoz.
 
@@ -75,7 +75,7 @@ A következő hibaüzenetek jelenhetnek meg a kezdeti szinkronizálás során:
 
 Egy hiba javításához kövesse az alábbi lépéseket.
 
-1. Jelentkezzen be a Finance and Operations alkalmazásba.
+1. Jelentkezzen be a Pénzügy és műveletek alkalmazásba.
 2. Az **Azure Active Directory-alkalmazások** oldalon törölje a **DtAppID** klienst, majd adja hozzá újra.
 
 ![DtAppID-ügyfél a Azure AD alkalmazások listáján.](media/aad_applications.png)
@@ -102,9 +102,9 @@ A kapott hibaüzenetek a következő formátumban jelennek meg.
 
 Ha a szállítói táblának a **PrimaryContactPersonId** és az **InvoiceVendorAccountNumber** oszlopaiban értékei vannak, akkor a kezdeti szinkronizálás befejezéséhez kövesse az alábbi szakasz lépéseit.
 
-1. A Finance and Operations alkalmazásban törölje a **PrimaryContactPersonId** és **InvoiceVendorAccountNumber** oszlopokat a leképezésből, majd mentse a leképezést.
+1. A Pénzügy és műveletek alkalmazásban törölje **az PrimaryContactPersonId** **és a InvoiceVendorAccountNumber** oszlopot a megfeleltetésből, majd mentse a megfeleltetést.
 
-    1. A kettős írású leképezési oldalon **Szállítók V2 (msdyn\_ árusok)**, a **Táblázatleképezések** lapon a bal oldali szűrőben válassza ki **Finance and Operations alkalmazások. Szállítók V2**. A jobb oldali szűrőben válassz a **Sales.Vendor** lehetőséget.
+    1. A V2 szállítók (msdyn szállítók) **\_** **két írásos hozzárendelési lapján, a Táblaleképezések lapon, a bal oldali szűrőben válassza a Pénzügy és műveletek alkalmazást.** **V2. szállító** A jobb oldali szűrőben válassz a **Sales.Vendor** lehetőséget.
     2. Keressen rá a **primarycontactperson** elemre a **PrimaryContactPersonId** forrásoszlop megkereséséhez.
     3. Válassza a **Műveletek**, majd a **Törlés** lehetőséget.
 
@@ -149,9 +149,9 @@ A kapott hibaüzenetek a következő formátumban jelennek meg.
 
 Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceAccount** oszlopokban értékei vannak, akkor a kezdeti szinkronizálás befejezéséhez kövesse az alábbi szakasz lépéseit. Ezt a megközelítést használhatja bármely gyári táblákhoz például a **Partnerek** és **Kapcsolattartók** entitásokhoz.
 
-1. A Finance and Operations alkalmazásban törölje a **ContactPersonID** és **InvoiceAccount** oszlopok a **Ügyfelek V3 (fiókok)** leképezést, majd mentse el a leképezést.
+1. A Pénzügy és műveletek alkalmazásban törölje **a ContactPersonID** **és a InvoiceAccount** **oszlopot a Vevők V3 (számlák)** hozzárendelésből, majd mentse a megfeleltetést.
 
-    1. A kettős írású leképezési oldalon **Ügyfelek V3 (fiókok)**, a **Táblázatleképezések** lapon a bal oldali szűrőben válassza ki **Finance and Operations app.Customers V3**. A jobb oldali szűrőben válassza a **Dataverse.Account** lehetőséget.
+    1. A V3 vevők (**számlák)** **két** írásos hozzárendelési lapján, a Táblaleképezések lapon, **a bal oldali szűrőben válassza a Pénzügy és műveletek alkalmazást. V3** vevők A jobb oldali szűrőben válassza a **Dataverse.Account** lehetőséget.
     2. Keressen rá a **contactperson** elemre a **ContactPersonID** forrásoszlop megkereséséhez.
     3. Válassza a **Műveletek**, majd a **Törlés** lehetőséget.
 
@@ -182,16 +182,16 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
     > Két olyan megfeleltetés van, amelyeknek ugyanaz a neve. Válassza ki azt a leképezést, amelynek a következő a leírása a **Részletek** lapon: **Kettős írású sablon a FO.CDS Vendor Contacts V2 – CDS.Contacts szinkronizálásához. Új csomag szükséges \[Dynamics365SupplyChainExtended\].**
 
 5. Adja hozzá ismét az **InvoiceAccount** és **ContactPersonId** oszlopot az **Ügyfelek V3 (partnerek)** leképezéshez, majd mentse a leképezést. Most az **InvoiceAccount** és a **ContactPersonId** oszlop is újra része az élő szinkronizálási üzemmódnak. A következő lépésben végre fogja hajtani ezeknek az oszlopoknak a kezdeti szinkronizálását.
-6. Futtassa le az **Ügyfelek V3 (Partnerek)** hozzárendelésének kezdeti szinkronizálását ismét. Mivel a változáskövetés ki van kapcsolva, a for **InvoiceAccount** és **ContactPersonId** szinkronizálva lesz a Finance and Operations alkalmazásból Dataverse.
-7. Az adatok szinkronizálásához **InvoiceAccount** és **ContactPersonId** tól től Dataverse a Finance and Operations alkalmazáshoz adatintegrációs projektet kell használnia.
+6. Futtassa le az **Ügyfelek V3 (Partnerek)** hozzárendelésének kezdeti szinkronizálását ismét. Mivel a változáskövetés ki van kapcsolva, **ezért a rendszer szinkronizálja a InvoiceAccount** **és a ContactPersonId** adatait a Pénzügy és műveletek alkalmazásból a következőbe Dataverse.
+7. Ahhoz, **hogy a InvoiceAccount** **és a ContactPersonId** Dataverse adatait szinkronizálja a Pénzügyi és műveletek alkalmazással, adatintegrációs projektet kell használnia.
 
-    1. Ban ben Power Apps között hozzon létre adatintegrációs projektet **Értékesítés.Számla** és **Finance and Operations alkalmazások. Ügyfelek V3** táblázatok. Az adatiránynak innen kell lennie Dataverse a Finance and Operations alkalmazásba. Mivel az **InvoiceAccount** egy új attribútum a kettős írás funkcióban, érdemes lehet kihagyni kezdeti szinkronizálást ehhez az attribútumhoz. További információkért tekintse át az [Adatok integrálása a Dataverse-szolgáltatásba](/power-platform/admin/data-integrator) című részt.
+    1. Ebben Power Apps a műveletben hozzon létre egy adatintegrációs projektet **a Sales.Account, a** **Pénzügy és a Műveletek alkalmazások között. Vevők V3 táblái** Az adatiránynak a Pénzügy és műveletek Dataverse alkalmazásba kell átesnie. Mivel az **InvoiceAccount** egy új attribútum a kettős írás funkcióban, érdemes lehet kihagyni kezdeti szinkronizálást ehhez az attribútumhoz. További információkért tekintse át az [Adatok integrálása a Dataverse-szolgáltatásba](/power-platform/admin/data-integrator) című részt.
 
         A következő képen egy olyan projekt látható, amely frissíti a **CustomerAccount** és a **ContactPersonId** entitásokat.
 
         ![Adatintegrációs projekt a CustomerAccount és a ContactPersonId frissítéséhez.](media/cust_selfref6.png)
 
-    2. Adja hozzá a vállalati feltételeket a szűrőhöz Dataverse oldalon, így csak a szűrési feltételeknek megfelelő sorok frissülnek a Finance and Operations alkalmazásban. Szűrő hozzáadásához kattintson a szűrő ikonra. Ezután a **Lekérdezés szerkesztése** párbeszédpanelen hozzáadhat egy olyan szűrőlekérdezést, mint az **\_msdyn\_company\_value eq '\<guid\>'**.
+    2. Adja hozzá a vállalatra Dataverse vonatkozó feltételeket az oldal szűrőjéhez, hogy csak a szűrő feltételeknek megfelelő sorokat frissítve legyen a Pénzügy és műveletek alkalmazásban. Szűrő hozzáadásához kattintson a szűrő ikonra. Ezután a **Lekérdezés szerkesztése** párbeszédpanelen hozzáadhat egy olyan szűrőlekérdezést, mint az **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [MEGJEGYZÉS] Ha a szűrő gomb nem látszik, akkor hozzon létre egy támogató jegyet, és kérje meg az adatintegrációs csoportot, hogy engedélyezze a szűrő képességét a bérlőjén.
 
@@ -201,7 +201,7 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
 
     A sorok kezdeti szinkronizálása most befejeződött.
 
-8. A Finance and Operations alkalmazásban kapcsolja vissza a változáskövetést a **Ügyfelek V3** asztal.
+8. A Pénzügy és műveletek alkalmazásban kapcsolja vissza a változások követését a **Vevők V3 táblához**.
 
 ## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Kezdeti szinkronizálási hibák 10-nél több keresési mezőt tartalmazó térképeken
 
@@ -227,9 +227,9 @@ A következő hibaüzenetet kaphatja, amikor megpróbálja lefuttatni a Fél pos
 
 *A fél száma nem található a Dataverse-en.*
 
-Van egy tartomány beállítva **DirPartyCDSEntity** a Finance and Operations alkalmazásban, amely szűri a típusú feleket **Személy** és **Szervezet**. Ennek eredményeképpen a **CDS felek - msdyn_parties** leképezés kezdeti szinkronizálása nem szinkronizálja a más típusú feleket, beleértve a **Jogi személyt** és a **Működési egységet**. A **CDS Party postai címek (msdyn_partypostaladdresses)** vagy a **Party Contacts V3 (msdyn_partyelectronicaddresses)** kezdeti szinkronizálásakor előfordulhat, hogy a következő hiba jelentkezik.
+A Pénzügyi és műveletalkalmazások DirPartyCDSEntity tartománya szűri a **Személy** **és szervezet típusú feleket**.**·** Ennek eredményeképpen a **CDS felek - msdyn_parties** leképezés kezdeti szinkronizálása nem szinkronizálja a más típusú feleket, beleértve a **Jogi személyt** és a **Működési egységet**. A **CDS Party postai címek (msdyn_partypostaladdresses)** vagy a **Party Contacts V3 (msdyn_partyelectronicaddresses)** kezdeti szinkronizálásakor előfordulhat, hogy a következő hiba jelentkezik.
 
-Dolgozunk a javításon, hogy eltávolítsuk a párttípus-tartományt a Finance and Operations entitásból, hogy minden fél szinkronizálhasson Dataverse sikeresen.
+Egy olyan javításon dolgozikunk, amely eltávolítja a féltípus-tartományt a Pénzügy és Műveletek entitásban, Dataverse hogy a bármilyen típusú felek sikeresen szinkronizálhatóak legyenek.
 
 ## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Vannak teljesítményproblémák az ügyfelek vagy a névjegyek adatainak kezdeti szinkronizálása során?
 

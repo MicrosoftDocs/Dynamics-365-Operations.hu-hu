@@ -1,6 +1,6 @@
 ---
 title: Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával
-description: Ez a témakör egy olyan forgatókönyvet mutat be, hogy hogyan regisztrálhat cikkeket a cikkérkeztetési napló segítségével, ha a készletkezelési folyamatban speciális raktárkezelést használ.
+description: Ez a cikk bemutatja, hogy hogyan regisztrálhat cikkeket a cikkérkezési napló segítségével a speciális raktárkezelési folyamatok használata esetén.
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,22 +14,22 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565255"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863621"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör egy olyan forgatókönyvet mutat be, hogy hogyan regisztrálhat cikkeket a cikkérkeztetési napló segítségével, ha a készletkezelési folyamatban speciális raktárkezelést használ. Ezt általában egy bevételezési adminisztrátor végzi.
+Ez a cikk bemutatja, hogy hogyan regisztrálhat cikkeket a cikkérkezési napló segítségével a speciális raktárkezelési folyamatok használata esetén. Ezt általában egy bevételezési adminisztrátor végzi.
 
 ## <a name="enable-sample-data"></a>Mintaadatok engedélyezése
 
-Ha a témakörben megadott mintarekordokat és értékeket használva szeretne végigmenni ezen a forgatókönyvön, olyan rendszert kell használnia, amelyben telepítve vannak a szabványos bemutatóadatok, és mielőtt hozzákezd, ki kell választania az *USMF* jogi személyt.
+Ha ezt az esetet az ebben a cikkben megadott mintarekordokkal és értékekkel kell dolgozni, olyan rendszert kell használnia, ahol telepítve vannak a szabványos bemutatóadatok, *és mielőtt nekikezd, ki kell választania az USMF* jogi személyt.
 
 Ehelyett a saját adatokból származó értékeket behelyettesítésével is dolgozhat, feltéve, hogy rendelkezésre állnak a következő adatok:
 

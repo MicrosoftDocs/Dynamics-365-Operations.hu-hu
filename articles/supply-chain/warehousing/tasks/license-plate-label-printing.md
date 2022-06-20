@@ -1,6 +1,6 @@
 ---
 title: Azonosítótábla-címke nyomtatásának engedélyezése
-description: Ez az eljárás bemutatja a Konténer sorszáma (SSCC) címke automatikus nyomtatásának engedélyezését, miután az utolsó cikk készletből való kitárolása is megtörtént az értékesítési kiválasztási munkafolyamat során.
+description: Ez a cikk bemutatja, hogyan lehet engedélyezni a SSCC-kód (Serial shipping container code – SSCC) automatikus nyomtatását az utolsó cikk készletről történő kitárolása után egy értékesítési kitárolási folyamatban.
 author: perlynne
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b3895961f1f682a3fd06800a83a497afaf2fa65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dec552cac505b3fdc24dd453dbf723fa1d009ced
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903666"
 ---
 # <a name="enable-license-plate-label-printing"></a>Azonosítótábla-címke nyomtatásának engedélyezése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az eljárás bemutatja a Konténer sorszáma (SSCC) címke automatikus nyomtatásának engedélyezését, miután az utolsó cikk készletből való kitárolása is megtörtént az értékesítési kiválasztási munkafolyamat során. Ezt a folyamatot lefuttathatja az USMF bemutatócégen. Ha a saját adatok használatával futtatja le, akkor szüksége lesz egy az azonosítótáblákhoz beállított számsorozatra. A feladat megkezdése előtt be kell állítania egy címkenyomtatót. Lépjen a Szervezetadminisztráció > Beállítás > Hálózati nyomtatókra. A Művelet panelen kattintson az Opciókra, majd a Dokumentumirányítási ügynök telepítőjének letöltése gombra. Futtassa a telepítőt, és győződjön meg arról, hogy van-e működő hálózati nyomtató, amely aktív, mielőtt folytatná a műveletet.
+Ez a cikk bemutatja, hogyan lehet engedélyezni a SSCC-kód (Serial shipping container code – SSCC) automatikus nyomtatását az utolsó cikk készletről történő kitárolása után egy értékesítési kitárolási folyamatban. Ezt a folyamatot lefuttathatja az USMF bemutatócégen. Ha a saját adatok használatával futtatja le, akkor szüksége lesz egy az azonosítótáblákhoz beállított számsorozatra. A feladat megkezdése előtt be kell állítania egy címkenyomtatót. Lépjen a Szervezetadminisztráció > Beállítás > Hálózati nyomtatókra. A Művelet panelen kattintson az Opciókra, majd a Dokumentumirányítási ügynök telepítőjének letöltése gombra. Futtassa a telepítőt, és győződjön meg arról, hogy van-e működő hálózati nyomtató, amely aktív, mielőtt folytatná a műveletet.
 
 
 ## <a name="set-up-the-gs1-company-prefix"></a>GS1 vállalatelőtag felállítása.

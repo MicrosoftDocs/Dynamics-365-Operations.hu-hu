@@ -1,6 +1,6 @@
 ---
 title: Díjazási profilok
-description: Ez a témakör az adatok beállítását írja le a díjazási profilokhoz.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani az adatokat a minősítési profilokhoz.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2512b79c87a4640a2b31b7699e85d743b451a14c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1f7408574187ddb099181bd2566c46c52307f603
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676439"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850467"
 ---
 # <a name="rating-profiles"></a>Díjazási profilok
 
@@ -56,7 +56,7 @@ A **Díjazási profilok** lapon tekintheti meg az összes elérhető díjazási 
 1. Ugorjon a **Szállításkezelés \> Beállítás \> Szállítmányozók \> Szállítmányozók** lehetőségre.
 1. A listában válasszon ki egy szállítót.
 1. A **Díjazási profilok** gyorslapon válassza az **Új** lehetőséget a díjazási profil létrehozásához.
-1. Adja meg az új díjazási profil mezőit. Ezek a mezők megegyeznek a **Díjazási profilok** lap mezőivel, a témakör előző szakaszának leírása szerint.
+1. Adja meg az új díjazási profil mezőit. Ezek a mezők megfelelnek a **Minősítési** profilok lap mezőinek, amint azt a jelen cikk előző része ismerteti.
 
 > [!NOTE]
 > A **Szállítmányozók** lapon létrehozott profilok a **Díjazási profilok** oldalon is megjelennek.

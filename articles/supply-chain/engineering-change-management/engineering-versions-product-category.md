@@ -1,6 +1,6 @@
 ---
 title: Mérnöki változatok és mérnöki termékkategóriák
-description: Ez a témakör a mérnöki verziók fogalmával kapcsolatban tartalmaz tájékoztatást. A mérnöki verziók gondoskodnak arról, hogy a termék különböző állapotai, valamint az adatok folyamatos és egyértelműek legyenek, és hogy megjeleníthetők legyenek a rendszerben.
+description: Ez a cikk a mérnöki verziók fogalmával kapcsolatban tartalmaz tájékoztatást. A mérnöki verziók gondoskodnak arról, hogy a termék különböző állapotai, valamint az adatok folyamatos és egyértelműek legyenek, és hogy megjeleníthetők legyenek a rendszerben.
 author: t-benebo
 ms.date: 04/07/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
-ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
+ms.openlocfilehash: a98ead81a61ceac2ed721848847164f76e758f80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8553362"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872065"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Mérnöki változatok és mérnöki termékkategóriák
 
@@ -60,7 +60,7 @@ Vegye figyelembe, hogy egy mérnöki termék egyszerre csak egy mérnöki válto
 
 ## <a name="track-versions-in-transactions"></a>A tranzakciók verziójának nyomon követése
 
-A mérnöki változáskezelés használatakor a terméktörzsadatok mindig egy vagy több mérnöki verziót tartalmaznak. A mérnöki termékek beállításában kiválaszthatja, hogy a mérnöki verzió része-e a *logisztikai tranzakcióknak* is. (További információkért lásd a [Mérnöki termékkategóriák beállítása](#product-category) szakaszt a témakör későbbi részében.) Ha a logisztikai hatás releváns, az termékenként és vállalatonként eltérő. Néha csak a termék legújabb verzióját használják. Ezért új verzió bevezetésekor az előző verzió már nem használható. Más esetekben az előző verzió szükséges a logisztikai tranzakciókban a következő kihívások leküzdéséhez:
+A mérnöki változáskezelés használatakor a terméktörzsadatok mindig egy vagy több mérnöki verziót tartalmaznak. A mérnöki termékek beállításában kiválaszthatja, hogy a mérnöki verzió része-e a *logisztikai tranzakcióknak* is. (További tájékoztatás: [A cikk későbbi, mérnöki termékkategóriákra](#product-category) vonatkozó szakaszának beállítása.) Ha fontos a logisztikai hatás, akkor termékenként és vállalatonként eltérő. Néha csak a termék legújabb verzióját használják. Ezért új verzió bevezetésekor az előző verzió már nem használható. Más esetekben az előző verzió szükséges a logisztikai tranzakciókban a következő kihívások leküzdéséhez:
 
 - A logisztikai részlegnek egy termék két darabját kell szállítania egy vevőnek. Ebben az esetben el kell döntenie, hogy két különböző verziót kíván-e vagy engedélyez-e szállítani.
 - Később kiderül, hogy probléma merül fel, ami egy adott változáshoz kapcsolódik. Ebben az esetben hasznos lehet pontosan meghatározni, hogy melyik verziót szállították az egyes rendelésekben.
@@ -118,7 +118,7 @@ A mérnöki termékkategóriák kezeléséhez lépjen a **Mérnöki változtatá
 | Termékdimenzió-csoport | A **Tranzakciók verzióinak nyomon követése** beállítás segít kiválasztani a termék dimenziócsoportját. Ha megadta, hogy nyomon szeretné követni a verziót a tranzakciókban, akkor megjelennek azok a termékdimenzió-csoportok, ahol a *verzió* dimenziót használják. Egyébként csak azok a termékdimenzió-csoportok jelennek meg, ahol a *verzió* dimenzió nincs használatban. |
 | Termékéletciklus-állapot létrehozáskor | Állítsa be az alapértelmezett termékéletciklus-állapotot, amellyel egy mérnöki terméknek az első létrehozásakor rendelkeznie kell. További információ: [Termékéletciklus-állapotok és tranzakciók](product-lifecycle-state-transactions.md). |
 | Verziószám szabálya | Válassza ki a kategóriára vonatkozó verziószámszabályt:<ul><li>**Manuális** – Minden új verzió verziószámát ön választja ki.</li><li>**Automatikus** – A rendszer a megadott formátum alapján állítja be a verziószámot. A formátum beállításakor használjon egy számjelet (\#) egy számjegye és bármely más karakter esetében egy állandó érték ábrázolására. Ha például a *V-\#\#* formátumot adja meg, az első verzió „V-01”, a második verzió „V-02” lesz, és így tovább.</li><li>**Lista** – A rendszer a következő számot a megadott egyéni értékek előre meghatározott listájából veszi át.</li></ul> |
-| Érvényesség kényszerítése | Adja meg, hogy a műszaki verziók érvényességi dátumainak összefüggőnek kell-e lenniük, vagy lehetnek hézagok és átfedések. Ez a beállítás befolyásolja, hogy hogyan használhatja az **Érvényesség kezdete** és az **Érvényesség vége** mezőket az egyes mérnöki verziókhoz, amelyekre a kategória érvényes.<ul><li>Ha ez a beállítás *Igen*, akkor minden verzióhoz meg kell adni egy **Érvényesség kezdete** értéket, és a verziók között sem átfedések, sem hézagok nem engedélyezettek. Az egyes mérnöki verziók dátumtartománya közvetlenül kapcsolódik az előző és a következő mérnöki verzióhoz, ha vannak ilyenek. Ebben a forgatókönyvben mindig a legújabb verziót használja a rendszer, a régebbi verziókat pedig már nem.</li><li>Ha ez a beállítás **Nem**, nincs korlátozás a mérnöki verziók érvényességi dátummezőire vonatkozóan, és az átfedések és a hézagok is megengedettek. Ebben a forgatókönyvben egyszerre több verzió is aktív lehet, és bármilyen aktív verzióval dolgozhat.</li></ul><p>Ez a beállítás a termékverzióhoz kapcsolódó anyagjegyzékekre és útvonalakra is hatással van. További információt a témakör [Anyagjegyzékek és útvonalak összekapcsolása a mérnöki verziókkal](#boms-routes) című szakaszában talál.</p> |
+| Érvényesség kényszerítése | Adja meg, hogy a műszaki verziók érvényességi dátumainak összefüggőnek kell-e lenniük, vagy lehetnek hézagok és átfedések. Ez a beállítás befolyásolja, hogy hogyan használhatja az **Érvényesség kezdete** és az **Érvényesség vége** mezőket az egyes mérnöki verziókhoz, amelyekre a kategória érvényes.<ul><li>Ha ez a beállítás *Igen*, akkor minden verzióhoz meg kell adni egy **Érvényesség kezdete** értéket, és a verziók között sem átfedések, sem hézagok nem engedélyezettek. Az egyes mérnöki verziók dátumtartománya közvetlenül kapcsolódik az előző és a következő mérnöki verzióhoz, ha vannak ilyenek. Ebben a forgatókönyvben mindig a legújabb verziót használja a rendszer, a régebbi verziókat pedig már nem.</li><li>Ha ez a beállítás **Nem**, nincs korlátozás a mérnöki verziók érvényességi dátummezőire vonatkozóan, és az átfedések és a hézagok is megengedettek. Ebben a forgatókönyvben egyszerre több verzió is aktív lehet, és bármilyen aktív verzióval dolgozhat.</li></ul><p>Ez a beállítás a termékverzióhoz kapcsolódó anyagjegyzékekre és útvonalakra is hatással van. A további tudnivalókat lásd [a](#boms-routes) cikk későbbi, Az AKK és útvonalak a mérnöki verziókhoz szakaszában.</p> |
 | Számszabály elnevezési rendszerének használata | Állítsa ezt a beállítást *Igen* értékre, ha engedélyezni szeretné a termékszámok számsorozatok, mérnöki attribútumnevek és értékek, valamint szöveges állandók szegmensként történő használatával való definiálására vonatkozó szabályokat. Szabályok létrehozásához vagy módosításához kattintson a **Szerkesztés** gombra. |
 | Névszabály elnevezési rendszerének használata | Állítsa ezt a beállítást *Igen* értékre, ha engedélyezni szeretné a nevek mérnöki attribútumnevek, mérnöki attribútumértékek, valamint szöveges állandók szegmensként történő használatával való definiálására vonatkozó szabályokat. Szabályok létrehozásához vagy módosításához kattintson a **Szerkesztés** gombra. |
 | Leírási szabály elnevezési rendszerének használata | Állítsa ezt a beállítást *Igen* értékre, ha engedélyezni szeretné a leírás mérnöki attribútumnevek, mérnöki attribútumértékek, valamint szöveges állandók szegmensként történő használatával való definiálására vonatkozó szabályokat. Szabályok létrehozásához vagy módosításához kattintson a **Szerkesztés** gombra. |

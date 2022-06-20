@@ -1,6 +1,6 @@
 ---
 title: Fordított naplófeladás
-description: Ez a témakör bemutatja azokat a funkciókat, amelyek lehetővé teszik a bizonylatok sztornírozását a bizonylati tranzakciólistáról vagy a pénzügyi naplókból.
+description: Ez a témakör olyan lehetőségeket ismertet, amelyek lehetővé teszik bizonylatok sztornírozését a bizonylattranzakciók listájából vagy pénzügyi naplókból.
 author: kweekley
 ms.date: 10/08/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb1615312e9fd1786a5a0050dda3e9e9b20fe710
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: bec7d5d0dd64a2d89b00e2aa630a4fe670feaa2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753778"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868402"
 ---
-# <a name="reverse-journal-posting"></a>Naplófeladás sztornírozása
+# <a name="reverse-journal-posting"></a>Fordított naplófeladás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Finance egyik funkcióját mutatja be, amelyek lehetővé teszik a teljes napló sztornírozását, illetve egy vagy több bizonylat sztornírozását a bizonylati tranzakciólistáról, az eredettől függetlenül. 
+Ez a témakör a Microsoft Dynamics 365-ös pénzügyi képességeket írja le, amelyek lehetővé teszik egy teljes napló sztornírozését, illetve egy vagy több bizonylat sztornírozését a bizonylattranzakciók listájából, az eredetétől függetlenül. 
 
-Az ebben a témakörben ismertetett funkciók bármelyikének használata előtt be kell kapcsolni azokat a rendszerben. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+A jelen cikk leírásában ismertetett egyik funkció használata előtt be kell kapcsolva lennie a rendszerben. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
  - Modul: Főkönyv
  - Funkció neve: **Több dokumentum tömeges sztornírozása**
 
@@ -69,7 +69,7 @@ Ha a bizonylat sorainak száma meghaladja a 100-at, akkor a sztornírozási foly
 
 Ha a bizonylatsorok száma 100 vagy kevesebb, akkor a sztornírozási folyamat azonnal elindul. Az eredmények egy párbeszédablakban jelennek meg, amely minden olyan bizonylatot megjelenít, amely nem sztornírozható, és megadja a annak okát. Az **OK** gombbal zárja be a párbeszédpanelt.
 
-A tranzakciókat csak akkor lehet sztornírozni, ha megfelelnek a sztornírozáshoz szükséges üzleti szabályoknak. A szállítói kifizetéseket nem lehet sztornírozni az ebben az témakörben leírt képességgel. A szállítói kifizetéseket a [Szállítói kifizetés sztornózása](../accounts-payable/reverse-vendor-payment.md) leírt lépésekkel lehet sztornírozni.
+A tranzakciókat csak akkor lehet sztornírozni, ha megfelelnek a sztornírozáshoz szükséges üzleti szabályoknak. A szállítói kifizetések nem sztornírozhatóak az ebben a cikkben ismertetett képességekkel. A szállítói kifizetéseket a [Szállítói kifizetés sztornózása](../accounts-payable/reverse-vendor-payment.md) leírt lépésekkel lehet sztornírozni.
 
 
 

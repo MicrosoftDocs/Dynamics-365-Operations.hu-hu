@@ -1,6 +1,6 @@
 ---
 title: Hívásközpont rendeléseinek várakoztatása - beállítás és használat
-description: Ez a témakör a várakoztatott rendelések használatát ismerteti a Dynamics 365 Commerce rendszerben.
+description: Ez a témakör azt ismerteti, hogy hogyan lehet a rendeléseket <a0/1><a2/5><a2/5><a2/5><a2/5><Dynamics 365 Commerce
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f8c5daecc6aa05cc6a0f5dc4a2bc44a0fbba07d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762596"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860137"
 ---
-# <a name="configure-and-work-with-call-center-order-holds"></a>Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat
+# <a name="configure-and-work-with-call-center-order-holds"></a>Hívásközpont rendeléseinek várakoztatása - beállítás és használat
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azokat a rendelésvárakoztatási funkciókat ismerteti, amelyek a Dynamics 365 Commerce alkalmazásban találhatók a hívásközpont rendeléseihez.
+Ez a témakör a hívásközponti rendelésekre Dynamics 365 Commerce vonatkozó rendelési hold funkciókat ismerteti.
 
 ## <a name="configuring-call-center-order-holds"></a>Hívásközpont rendeléseinek várakoztatása - konfigurálás
 

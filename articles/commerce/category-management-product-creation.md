@@ -1,6 +1,6 @@
 ---
 title: Termékkategóriák és termékek kezelése
-description: Ez a témakör leírja, hogy a termékkihelyezési vezetők hogyan használhatják a termékkategóriákat a Commerce-termékhierarchia és a kiadott termék részletei közötti kapcsolatok kezeléséhez.
+description: Ez a témakör azt ismerteti, hogy az árusítási vezetők hogyan használhatnak termékkategóriákat a Commerce termékhierarchia és a kiadott termékadatok közötti kapcsolatok kezelésére.
 author: ashishmsft
 ms.date: 10/23/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 101e03c053203fc92648b7024998202d782f46fb07a5b6d5647b8e2a6514ea17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0871475e0910e0a46544c56083b505ff647fd6a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878570"
 ---
 # <a name="manage-product-categories-and-products"></a>Termékkategóriák és termékek kezelése
 
 [!include [banner](./includes/banner.md)]
 
-Ez a témakör a termékkategóriák és termékek kezelésének továbbfejlesztett módját mutatja be a Dynamics 365 Commerce alkalmazásban. A fejlesztések segítségével a termékkihelyezési vezetők megtekinthetik a termékek hierarchiája és a kiadott termékrészletek között megosztott terméktulajdonság-struktúráját.
+Ez a témakör a termékkategóriák és termékek továbbfejlesztett kezelését ismerteti a következőben:Dynamics 365 Commerce A fejlesztések segítségével a termékkihelyezési vezetők megtekinthetik a termékek hierarchiája és a kiadott termékrészletek között megosztott terméktulajdonság-struktúráját.
 
 Ha többet szeretne tudni a termékkategóriák kezeléséről, a **Kategória és termék kezelése** munkaterületen válassza a **Kereskedelmi termékek hierarchiája** csempét.
 

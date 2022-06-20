@@ -1,6 +1,6 @@
 ---
 title: B2B üzleti partnerek kezelése vevőhierarchiák használatával
-description: Ez a témakör azt ismerteti, hogyan lehet a vevői hierarchiákat használni az üzleti partnerek kezelésére a Microsoft Dynamics 365 Commerce vállalat és vállalat közötti (B2B) e-commerce webhelyeken.
+description: Ez a témakör azt ismerteti, hogyan lehet a vevői Microsoft Dynamics 365 Commerce hierarchiákat használni a vállalat-vállalat közötti (B2B) e-commerce webhelyek kezelésére.
 author: josaw1
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 70acdf469be2fcddd9e2bf755e958c1b20ee2fcf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ddd02045b5df3ce20160a4feaa23339475823d3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864981"
 ---
 # <a name="manage-b2b-business-partners-using-customer-hierarchies"></a>B2B üzleti partnerek kezelése vevőhierarchiák használatával
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet a vevői hierarchiákat használni az üzleti partnerek kezelésére a Microsoft Dynamics 365 Commerce vállalat és vállalat közötti (B2B) e-commerce webhelyeken.
+Ez a témakör azt ismerteti, hogyan lehet a vevői Microsoft Dynamics 365 Commerce hierarchiákat használni a vállalat-vállalat közötti (B2B) e-commerce webhelyek kezelésére.
 
 A Commerce Headquartersban egy *vevőhierarchia-entitás* képviseli azokat az üzleti partnereket, amelyek a B2B e-commerce webhelyet fogják használni. Ahhoz, hogy a vevői hierarchiákat használni tudja az üzleti partnerek kezelésére, engedélyeznie kell a B2B e-commerce képességeket a Commerce Headquarters szolgáltatásban, majd meg kell határoznia a vevőhierarchia számsorozatát.
 

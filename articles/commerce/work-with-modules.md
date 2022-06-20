@@ -1,6 +1,6 @@
 ---
 title: Modulok használata
-description: Ez a témakör azt mutatja be, hogyan és mikor lehet a modulokat a Microsoft Dynamics 365 Commerce rendszerben használni.
+description: Ez a témakör azt írja le, hogy mikor és hogyan kell modulokat használni a modulban Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c393f1e619647795a5ae8da3a78500c1678da9f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728264"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860192"
 ---
 # <a name="work-with-modules"></a>Modulok használata
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan és mikor lehet a modulokat a Microsoft Dynamics 365 Commerce rendszerben használni.
+Ez a témakör azt írja le, hogy mikor és hogyan kell modulokat használni a modulban Microsoft Dynamics 365 Commerce.
 
 A modulok olyan logikai építőelemek, amelyek megalkotják a lap struktúráját, és különböző céljaik és hatóköreik vannak. Egyes modulok magas szintű tárolók, és egyetlen céljuk a többi modul (származtatott modulok) megtartása és rendszerezése. A többi modul – például egy egyszerű képelhelyezési modul – kifejezetten konkrét célt szolgál. Más modulok, például a körhinta-modul, valahová a két kategória közé esnek.
 
@@ -151,7 +151,7 @@ Egy tárolómodulnak egy lapon történő konfigurálásához kövesse az alább
 
 1. Válasszon ki egy konténermodult az oldalon (például körhinta vagy folyékony tárolómodult).
 1. A jobb oldali tulajdonságok ablaktáblán bontsa ki a beágyazott vezérlőket a fejlécek kiválasztásával, és adja meg a szükséges vezérlő értékeket.
-1. A bal oldali vázlat ablaktáblán válassza az eltávolítani tároló vagy a tároló bármelyik helye neve melletti három pont gombot, majd válassza ki a **Modul hozzáadása** lehetőséget. Ezután adja hozzá a származtatott modulokat a kiválasztott tárolóhoz. A további tudnivalókat lásd: [Modulok használata](#add-a-module) rész a témakör korábbi részében.
+1. A bal oldali vázlat ablaktáblán válassza az eltávolítani tároló vagy a tároló bármelyik helye neve melletti három pont gombot, majd válassza ki a **Modul hozzáadása** lehetőséget. Ezután adja hozzá a származtatott modulokat a kiválasztott tárolóhoz. További információt a [cikk korábbi, A modulokkal kapcsolatos szakasza](#add-a-module) tartalmaz.
 1. Ha több származtatott modul van egy szülő tárolóban, akkor a szülő tárolóban módosítható a megjelenítési sorrendjük. Jelölje ki az egyik modulhoz tartozó három pont gombot, majd a fel és a le nyílbillentyűket.
 
 ## <a name="additional-resources"></a>További erőforrások

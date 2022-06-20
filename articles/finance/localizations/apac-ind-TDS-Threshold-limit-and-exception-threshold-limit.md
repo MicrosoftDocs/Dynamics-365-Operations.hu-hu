@@ -1,6 +1,6 @@
 ---
 title: Küszöbérték és kivételi küszöbérték
-description: Ez a témakör a Forrásnál levont adó (TDS) küszöbértékét és kivételi küszöbértékeit írja le.
+description: Ez a témakör leírja a forrásnál levont adó küszöbértékét és kivételét.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7fa7d871fdf25f29b003a68cacd9fc0d487dce5b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aceebad08b5454b64059e7ef374b9634bad35c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877936"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>Küszöbérték és kivételi küszöbérték
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Forrásnál levont adó (TDS) küszöbértékét és kivételi küszöbértékeit írja le. A számlákra és kifizetésekre vonatkozó TDS-t mindig az **Adóelőleg-összetevők** oldalon a TDS-adóösszetevőkre meghatározott küszöbérték és kivételi küszöbérték figyelembevételével számítják ki. A TDS-adóösszetevők a TDS-adókódjaihoz vannak csatolva, amelyek a TDS-adócsoportok részét képezik. A TDS-adócsoportok a szállítókhoz és az ügyfelekhez vannak csatolva, hogy a TDS-t számla- vagy fizetés szintjén számítsák ki.
+Ez a témakör leírja a forrásnál levont adó küszöbértékét és kivételét. A számlákra és kifizetésekre vonatkozó TDS-t mindig az **Adóelőleg-összetevők** oldalon a TDS-adóösszetevőkre meghatározott küszöbérték és kivételi küszöbérték figyelembevételével számítják ki. A TDS-adóösszetevők a TDS-adókódjaihoz vannak csatolva, amelyek a TDS-adócsoportok részét képezik. A TDS-adócsoportok a szállítókhoz és az ügyfelekhez vannak csatolva, hogy a TDS-t számla- vagy fizetés szintjén számítsák ki.
 
 A TDS kiszámítása akkor történik, ha egy adott TDS-csoporttal egy szállítónál feladott tranzakció vagy kumulatív tranzakció összege meghaladja az **Adóelőleg-összetevők** lapon megadott értékhatárt. A TDS-t addig nem számítják ki, amíg a kumulált tranzakcióösszeg nem haladja meg a megadott küszöbértéket.
 

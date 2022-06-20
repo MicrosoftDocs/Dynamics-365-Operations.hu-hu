@@ -1,6 +1,6 @@
 ---
 title: IoT Intelligencia figyelése és kezelése
-description: Ez a témakör azt mutatja be, hogyan lehet felügyelni és kezelni az IoT Intelligencia alkalmazást.
+description: Ez a cikk bemutatja, hogy hogyan lehet figyelni és kezelni az ION-intelligenciát.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e078f1895b44ca388b75f5cd3d19e0e8f7c36630
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a640b523adac619377e19d670f932d4d85cfb6a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669740"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852418"
 ---
 # <a name="monitor-and-manage-iot-intelligence"></a>IoT Intelligencia figyelése és kezelése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet felügyelni és kezelni az IoT Intelligencia alkalmazást.
+Ez a cikk bemutatja, hogy hogyan lehet figyelni és kezelni az ION-intelligenciát.
 
 ## <a name="monitor-scenarios-in-microsoft-dynamics-365-supply-chain-management"></a><a id="monitor-scenarios"></a>A Microsoftnál Dynamics 365 Supply Chain Management forgatókönyveinek figyelése
 
@@ -54,7 +54,7 @@ Ha egy forgatókönyv fut, akkor ezek a változtatások tiltottak:
 
 ## <a name="simulation-options"></a>Szimulációs lehetőségek
 
-Szimulálhatja a gyári gépek jeleit. További részletekért lásd ezeket a témaköröket:
+Szimulálhatja a gyári gépek jeleit. További tájékoztatás a következő cikkekben található:
 
 + [IoT DevKit AZ3166 csatlakoztatása az Azure IoT-központhoz](/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Raspberry Pi online szimulátor csatlakoztatása az Azure IoT-központhoz (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)

@@ -1,6 +1,6 @@
 ---
 title: Kötegalapú kiigazítás
-description: Ez a témakör leírja a tételalapú kiigazítás folyamatát.
+description: Ez a témakör ismerteti a kötegelosztási folyamatot.
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a9e69b4d9213e57e5a920c7adda934ba845d17410c17d9c8a6356d717870ac23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780076"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856048"
 ---
 # <a name="batch-balancing"></a>Kötegalapú kiigazítás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja a tételalapú kiigazítás folyamatának támogatási módját.
+Ez a témakör azt ismerteti, hogyan támogatott a kötegelosztási folyamat.
 
 További tájékoztatásért tekintse meg a [tételalapú kiigazítással kapcsolatos videót](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
@@ -149,7 +149,7 @@ A töltőanyag kiegyenlített mennyisége 100 liter kötegméretének és az A, 
 A tételalapú kiigazítás folyamatot a **Tételalapú kiigazítás** oldalról kell végrehajtani.
 Válassza ki a **Költségkezelés \> Kötegelt rendelések** elemet, majd a **Folyamat** lapon válassza ki a **Tételalapú kiigazítás** elemet. A tételalapú kiigazítás azokhoz kötegrendelésekhez érhető el, amelyeknek az állapota **Elindítva**.
 
-Általánosságban a tételalapú kiigazítás akkor alkalmazható a kötegrendelésekhez, ha a formulának van legalább egy formulasora, ahol az **Összetevő típusa** *Aktív*. (A szabály alóli kivételekhez lásd a „Kötegelt rendelések, amelyek nem alkalmazhatók a tételalapú kiigazításhoz” című részt, a témakör későbbi részében.)
+Általánosságban a tételalapú kiigazítás akkor alkalmazható a kötegrendelésekhez, ha a formulának van legalább egy formulasora, ahol az **Összetevő típusa** *Aktív*. (A szabály alóli kivételt lásd a témakör későbbi, "Kötegrendelések, amelyek nem alkalmazhatók kötegelosztásra".)
 
 A tételalapú kiigazítás folyamatot két alfolyamatra lehet osztani:
 

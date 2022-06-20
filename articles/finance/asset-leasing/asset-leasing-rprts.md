@@ -1,6 +1,6 @@
 ---
 title: Eszközlízing-jelentések
-description: Ez a témakör az eszközlízing számára elérhető jelentéseket listázza és röviden ismerteti.
+description: Ez a cikk röviden felsorolja és röviden leírja azokat a jelentéseket, amelyek elérhetők a Tárgyi eszköz eszközben.
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: a6e6eb851b9b2dce7259a5355326dd594a940b8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550039"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856712"
 ---
 # <a name="asset-leasing-reports"></a>Eszközlízing-jelentések
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az eszközlízing számára elérhető jelentéseket listázza és röviden ismerteti. A legtöbb jelentést úgy jelenítheti meg, hogy a következő vagy a következőkhöz nagyon hasonló lépéseket végrehajtja. 
+Ez a cikk röviden felsorolja és röviden leírja azokat a jelentéseket, amelyek elérhetők a Tárgyi eszköz eszközben. A legtöbb jelentést úgy jelenítheti meg, hogy a következő vagy a következőkhöz nagyon hasonló lépéseket végrehajtja. 
 
 - A legtöbb eszközlízing-jelentés megtekintéséhez válassza az **Eszközlízing > Lekérdezések és jelentések > Lízingjelentések** lehetőséget, majd válassza ki a megtekinteni kívánt jelentést. Az eltérő kijelölési útvonalat igénylő jelentések esetében a jelentés megnyitásának lépéseit a jelentés leírása tartalmazza. 
 - Amikor kiválaszt egy nyomtatandó jelentést, megnyílik egy paraméteroldal, amely lehetővé teszi a jelentésben szereplő információk szűrését. Írja be a szűrési feltételeket, majd a jelentés létrehozásához kattintson az **OK** gombra. A létrehozott jelentés olyan információkat jelenít meg, amelyek a megadott szűrőkbe tartoznak.

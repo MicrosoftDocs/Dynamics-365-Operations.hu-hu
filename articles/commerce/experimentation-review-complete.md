@@ -1,30 +1,24 @@
 ---
 title: Változat előléptetése és egy kísérlet végrehajtása
-description: Ez a témakör azt mutatja be, hogyan lehet egy sikeres változatot előléptetni és egy kísérletet végrehajtani a Dynamics 365 Commerce rendszerben.
+description: Ez a témakör ismerteti, hogyan lehet elősegíteni a sikeres változatokat, és végrehajtani a kísérletekkel a következőben:Dynamics 365 Commerce
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/07/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 48d66e84ce52e77e83843853e3d528f9394a7676cadc4a4be5198065696dd10e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e9a978551622bbb14d9213f607d9dfabe42672a
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738746"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942743"
 ---
 # <a name="promote-a-variation-and-complete-an-experiment"></a>Változat előléptetése és egy kísérlet végrehajtása
 
-Ez a témakör azt mutatja be, hogyan lehet előléptetni a kísérletek legjobb eredményeit hozó változatokat, valamint a kísérleteket végrehajtani. A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
+Ez a témakör ismerteti, hogyan lehet elősegíteni a kísérlet során legjobb eredményt hozó variációt, valamint a kísérlet befejezését. A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön cikkekbe tartoznak.
 
 [ ![Kísérletezés felhasználói interakciósorozata – Áttekintés és befejezés.](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
 
@@ -48,7 +42,7 @@ A nyerő változat előléptetéséhez kövesse az alábbi lépéseket.
 ## <a name="delete-your-experiment"></a>A kísérlet törlése
 A Commerce rendszerből ugyan nem kell kitörölni a befejezett kísérletet, erre azonban lehetőség van tárhely felszabadítása vagy a munkatér megtisztítása érdekében. 
 
-A következő lépésekkel törölhet egy kísérletet a Commerce webhelyszerkesztőben.
+A Commerce Webhelyszerkesztő egy befejezett kísérletének törléséhez kövesse ezeket a lépéseket.
 
 1. Lépjen a **Kísérletek** fülre a bal oldali navigációs panelen, majd válassza ki a kísérletet. 
     > [!NOTE]

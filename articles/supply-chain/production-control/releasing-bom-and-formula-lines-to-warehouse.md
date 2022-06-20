@@ -1,6 +1,6 @@
 ---
 title: Az anyagjegyzék- és receptúrasorok kiadása a raktárba
-description: Ez a témakör ismerteti a nyersanyag kiadásának folyamatát az anyagjegyzéksorok és receptúrasorok kiadásához a raktárba.
+description: Ez a témakör azt a folyamatot írja le, amikor az anyagjegyzéksorok és receptúrasorok nyersanyagát ki kell szabadadni a raktárba.
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53e3a943dbd6cf982101f42ed8f94b7e0f46597c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731223"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860609"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Az anyagjegyzék- és receptúrasorok kiadása a raktárba
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti a nyersanyag kiadásának folyamatát az anyagjegyzéksorok és receptúrasorok kiadásához a raktárba. Amikor kiadunk egy anyagjegyzék- vagy receptúrasort a raktárba, a rendszer először azt határozza meg, hogy az anyagok már rendelkezésre állnak-e a termelés bemeneti helyén az üzemben, ahol az anyagot felhasználják a termelési folyamat során.
+Ez a cikk azt írja le, hogyan lehet a nyersanyagot az anyagjegyzéksorok és receptúrasorok raktárba való kiadása során kiadni. Amikor kiadunk egy anyagjegyzék- vagy receptúrasort a raktárba, a rendszer először azt határozza meg, hogy az anyagok már rendelkezésre állnak-e a termelés bemeneti helyén az üzemben, ahol az anyagot felhasználják a termelési folyamat során.
 
 - Ha az anyag rendelkezésre áll a termelés bemeneti helyén, azonnal kitárolják a helyről, amint megérkezik a jelzés az anyagok raktárba való kiadására.
 - Ha az anyag nem áll rendelkezésre a termelés bemeneti helyén, az anyag kiadása azt jelzi, hogy anyagot át kell helyezni a helyekről a raktárban a termelés bemeneti helyére. Az anyagot áthelyezik nyersanyag-kitárolásra raktári munkával. Ennek megfelelően be kell állítani nyersanyag-kitárolási raktárkezelési folyamatokat. További információkat lásd: [Feltöltés áttekintése](../warehousing/replenishment.md) és [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](../warehousing/control-warehouse-location-directives.md).

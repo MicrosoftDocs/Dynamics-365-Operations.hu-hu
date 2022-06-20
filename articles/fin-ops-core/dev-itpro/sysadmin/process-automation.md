@@ -1,6 +1,6 @@
 ---
 title: Folyamatok automatizálása
-description: Ez a témakör részletesen bemutatja, hogy hogyan lehet a folyamatok automatizálásával egyszerű ütemezést végezni a kötegelt kiszolgálón futtatott folyamatok között.
+description: Ez a cikk részletesen bemutatja, hogy hogyan teszi lehetővé a folyamatautomatizálás a kötegkiszolgáló által futtatott folyamatok egyszerű ütemezését.
 author: RyanCCarlson2
 ms.date: 04/20/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: b69fa378539e39053b6f7066ba4b6ae9984157c9bdc4f38b78de4c062c04ad09
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f13392fd6610735f8c539d42b62cf71cece71fba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898609"
 ---
 # <a name="process-automation"></a>Folyamatok automatizálása
 

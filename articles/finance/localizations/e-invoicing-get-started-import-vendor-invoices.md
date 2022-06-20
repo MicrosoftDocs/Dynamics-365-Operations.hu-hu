@@ -1,6 +1,6 @@
 ---
 title: Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
-description: Ez a témakör arról tartalmaz tájékoztatást, hogy hogyan lehet importálni a szállítói számlákat az elektronikus számlázás szolgáltatással.
+description: Ez a cikk a szállítói számlák elektronikus számlázási szolgáltatással történő importálásával kapcsolatban tartalmaz tájékoztatást.
 author: gionoder
 ms.date: 09/03/2021
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 2d239bbafad9292ba6cef5534e778a2824a9cc5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "7983823"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865584"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
 
@@ -30,7 +30,7 @@ ms.locfileid: "7983823"
 
 [!include [banner](../includes/preview-banner.md)]
 
-Ez a témakör olyan információkat tartalmaz, amelyek segítenek a szállítói számlák Elektronikus számlázás szolgáltatással történő importálásában. Végigvezeti a Regulatory Configuration Services (RCS), a Dynamics 365 Finance és a Dynamics 365 Supply Chain Management konfigurációs lépésein, amelyeket követnie kell ahhoz, hogy elektronikus szállítói számlákat kapjon a szállítóktól.
+Ez a cikk segítséget nyújt a szállítói számlák elektronikus számlázási szolgáltatás használatával történő importálásának első lépéseihez. Ez a témakör végigvezeti a Konfigurációs szolgáltatások (RCS), a Dynamics 365 Pénzügy konfigurációs lépésen, Dynamics 365 Supply Chain Management és a szállítói elektronikus szállítói számlák fogadását is követnie kell.
 
 ## <a name="set-up-vendor-invoice-import-in-rcs"></a>Szállítói számlák importálásának beállítása az RCS-ben
 A szállítói számlák importálásának beállításához az RCS-ben kövesse az alábbi lépéseket:
@@ -57,7 +57,7 @@ Konfiguráljon egy e-mail fiók csatornát, ha az Elektronikus számlázás funk
     - A sikeres feldolgozás után mentve: **Archiválási mappa**
     - A sikertelen feldolgozás után mentve:  **Hibamappa**, ezeket a mappákat nem szükséges létrehozni a postafiókban. A mappák automatikusan létrejönnek az első e-számla importálása és feldolgozása után. 
    
-10. Adja hozzá a fájlszűrés adatait a **Mellékletszűrő** mezőcsoportban. A rendszer csak a megadott szűrőnek megfelelő mellékleteket dolgozza fel. Beállíthatja például az xml-kiterjesztésű mellékletekhez az "\*.xml"-t. A melléklet nevét a Dynamics 365 Finance vagy a Dynamics 365 Supply Chain Management beállítás során használja. 
+10. Adja hozzá a fájlszűrés adatait a **Mellékletszűrő** mezőcsoportban. A rendszer csak a megadott szűrőnek megfelelő mellékleteket dolgozza fel. Beállíthatja például az xml-kiterjesztésű mellékletekhez az "\*.xml"-t. A melléklet neve a Dynamics 365 Pénzügyben Dynamics 365 Supply Chain Management vagy a telepítés során használatos. 
 11. Az **Alkalmazhatósági szabályok** lapon tekintse át és szükség szerint frissítse a kritériumokat. A **Csatorna** mezőnek meg kell egyeznie a korábban megadott **Adatcsatornával**. További információ: [Alkalmazhatósági szabályok](e-invoicing-configuration-rcs.md#applicability-rules).
 12. Válassza a **Mentés** gombot, és zárja be az oldalt.
 

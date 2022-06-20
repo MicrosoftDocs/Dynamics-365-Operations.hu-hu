@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e9d937211c049b2ec4ac06ac6eddce7fd9bcb5b0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f4f06b7916fb2eeed802b2dce95edfce448dcd97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880845"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Tárgyi eszközök értékmodellje és az értékcsökkenési könyv egyesítése
 
@@ -27,7 +27,7 @@ ms.locfileid: "8719999"
 
 Ez a témakör a Tárgyi eszközök aktuális könyv funkcióját ismerteti. Ez a funkció a korábbi verziókban elérhető értékmodellfunkción alapul, de magában foglal minden olyan funkciót, amelyek korábban csak az értékcsökkenési könyvekben szerepeltek.
 
-A könyv funkcióval egyetlen lap-, lekérdezés- és jelentéskészletet használhat a szervezet összes tárgyieszköz-folyamatában. A jelen témakörben szereplő táblázatok az értékcsökkenési könyvek és értékmodellek korábbi funkcióit ismerteti, a könyvek aktuális funkcióival együtt.
+A könyv funkcióval egyetlen lap-, lekérdezés- és jelentéskészletet használhat a szervezet összes tárgyieszköz-folyamatában. Az ebben a témakörben található táblázatok az értékcsökkenés könyvekre és értékmodellre vonatkozó korábbi funkciókat, valamint a könyvek jelenlegi funkcióit írják le.
 
 ## <a name="setup"></a>Beállítás
 Alapértelmezés szerint a könyvek adatokat szolgáltatnak a főkönyvnek (főkönyv) és a tárgyi eszközök analitikus naplójának. A könyveknek van egy új **Továbbítás a főkönyvnek** opciójuk, amely lehetővé teszi a Főkönyvi feladás tiltását, ahol a feladás csak a Tárgyi eszközök analitikus naplójába történik. Ez a funkció az értékcsökkenési könyv korábbi feladási viselkedésére hasonlít. A naplónevek beállításához a "nincs" nevű új feladási réteg tartozik. A feladási réteg kifejezetten a tárgyieszköz-tranzakciókhoz került hozzáadásra. Ahhoz, hogy olyan könyvekhez végezzen feladást, amelyek nem végeznek feladást a Főkönyvhöz, egy olyan naplónevet kell használnia, amelynél a feladási réteg beállítása **nincs**.

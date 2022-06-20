@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893120"
 ---
 # <a name="zone-threshold-replenishment"></a>Feltöltés a zóna küszöbértéke alapján
 
@@ -45,7 +45,7 @@ A *Feltöltés a zóna küszöbértéke alapján* funkció használatához a ren
 
 ## <a name="set-up-zone-based-replenishment"></a><a name="setup"></a>Zónaalapú feltöltés beállítása
 
-A zónaalapú feltöltés beállításához a rendszer több részét kell konfigurálnia. Ez a szakasz bemutatja a különböző beállításokat, valamint a bemutató adatértékeket biztosít, amelyeket meg lehet adni, ha végig akar haladni a témakör végén található forgatókönyvön.
+A zónaalapú feltöltés beállításához a rendszer több részét kell konfigurálnia. Ez a szakasz bemutatja a különböző beállításokat, és bemutató adatértékeket tartalmaz, amelyek akkor íratják le, ha a cikk végén szeretné végigértékelni az esetet.
 
 ### <a name="set-up-directive-codes"></a>Utasításkódok beállítása
 
@@ -57,7 +57,7 @@ Az utasításkódok megtekintéséhez vagy szerkesztéséhez nyissa meg a **Rakt
 
 #### <a name="prepare-demo-data-directive-codes"></a>A bemutatóadatok utasításkódjainak előkészítése
 
-Ez a példa azt mutatja be, hogyan kell előkészíteni az utasításkódot. Ha azt tervezi, hogy végighalad a téma végén található forgatókönyvön, használja az itt megadott bemutatóértékeket. Ellenkező esetben használja a saját értékeit.
+Ez a példa azt mutatja be, hogyan kell előkészíteni az utasításkódot. Ha a cikk végén tervezi az eset végigvégi használatát, használja az itt található bemutató adatértékeket. Ellenkező esetben használja a saját értékeit.
 
 1. Válassza ki az **USMF** jogi személyt a bemutatóadatok kezeléséhez.
 1. Ugrás a **Raktárkezelés \> Beállítás \> Utasítskódok** elemre.
@@ -79,7 +79,7 @@ A feltöltési sablont olyan szabályok alkotják, amelyek megszabják, mikor é
 
 #### <a name="prepare-a-demo-data-replenishment-template"></a>Bemutatóadatokból álló feltöltési sablon előkészítése
 
-Ez a példa azt mutatja be, hogyan kell előkészíteni egy feltöltési sablont. Ha azt tervezi, hogy végighalad a téma végén található forgatókönyvön, használja az itt megadott bemutatóértékeket. Ellenkező esetben használja a saját értékeit.
+Ez a példa azt mutatja be, hogyan kell előkészíteni egy feltöltési sablont. Ha a cikk végén tervezi az eset végigvégi használatát, használja az itt található bemutató adatértékeket. Ellenkező esetben használja a saját értékeit.
 
 1. Válassza ki az **USMF** jogi személyt a bemutatóadatok kezeléséhez.
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Feltöltés \> Feltöltési sablonok** pontra.
@@ -144,7 +144,7 @@ A szükséges kitárolási helyutasítások és elhelyezési helyutasítások l�
 
 #### <a name="prepare-demo-data-location-directives"></a>A bemutatóadatok helyutasításainak előkészítése
 
-A bemutatóadatok előkészítéséhez, hogy a témakör végén felhasználhatók legyenek a forgatókönyvben, két helyutasítást kell létrehoznia, amelyek egyike a kitárolásra, a másik pedig az elhelyezésre vonatkozik.
+Ahhoz, hogy a cikk végén felhasználhatók legyen a bemutatóadatok, két helyválasztó irányelvet kell létrehozni: egyet ki lehet választani, egyet be lehet tenni.
 
 ##### <a name="create-a-replenishment-pick-directive"></a>Feltöltési kitárolási utasítás létrehozása
 
@@ -258,7 +258,7 @@ Ez a szakasz egy példaesetet tartalmaz, amely bemutatja a funkció kezelését.
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-sample-scenario"></a>Készítse elő a mintaesethez szükséges mintaadatokat
 
-Mielőtt elkezdené a munkafolyamatot, aktiválni kell a mintaadatokat, és be kell állítania a szolgáltatást az ebben a szakaszban és a témakör korábbi szakaszaiban ismertetett módon.
+Mielőtt elkezdené a munkát az eseten, aktiválnia kell a mintaadatokat, és be kell állítania a funkciót az ebben és a cikk korábbi részeiben leírt módon.
 
 #### <a name="use-the-usmf-legal-entity"></a>Az USMF jogi személy használata
 
@@ -266,7 +266,7 @@ Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kí
 
 #### <a name="prepare-additional-sample-data"></a>További mintaadatok előkészítése
 
-Miután kiválasztotta az **USMF** jogi személyt, vegye fel a szükséges további mintaadattípusokat a témakör korábbi, [Zónaalapú feltöltés beállítása](#setup) című részében írtak szerint.
+**Az USMF** jogi személy kiválasztása után adja hozzá a szükséges további mintaadatokat a [cikk korábbi, Zóna alapú feltöltés beállítása című szakaszának](#setup) leírása szerint.
 
 #### <a name="check-your-on-hand-inventory"></a>Ellenőrizze az aktuális készletet
 

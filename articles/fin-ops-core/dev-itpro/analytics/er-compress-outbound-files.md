@@ -1,6 +1,6 @@
 ---
 title: Elektronikus jelentésekben létrehozott nagyméretű dokumentumok tömörítése
-description: Ez a témakör azt mutatja be, hogyan lehet tömöríteni olyan nagyméretű dokumentumokat, amelyeket Elektronikus jelentéskészítési (ER) formátumban hoztak létre.
+description: Ez a cikk bemutatja, hogy hogyan tömöríti az elektronikus jelentés formátuma által létrehozott nagy méretű dokumentumokat.
 author: NickSelin
 ms.date: 09/11/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4995879717e715f8ebadb6a80e00949df7545c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718599"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864807"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Elektronikus jelentésekben létrehozott nagyméretű dokumentumok tömörítése 
 
 [!include [banner](../includes/banner.md)]
 
-Az [Elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-reporting.md) segítségével konfigurálhatja azt a megoldást, amely a tranzakciós adatokat a kimenő dokumentumok előállításához kérdezi le. Ez a létrehozott dokumentum elég nagy lehet. Ha ilyen típusú dokumentumot hoz létre, akkor azt az [Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) kiszolgáló memóriájával tárolhatja. Valamikor le kell töltenie a dokumentumot a Microsoft Dynamics 365 Finance alkalmazásból. Jelenleg az ER-ben létrehozott dokumentum mérete legfeljebb 2 gigabájt (GB) lehet. Ezenkívül a Finance jelenleg 1 GB-ra [korlátozza](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) a letöltött fájlok méretét. Éppen ezért konfigurálnia kell egy olyan ER-megoldást, amely csökkenti annak a valószínűségét, hogy túllépi ezeket a korlátozásokat, és hogy a **Adatfolyam túl hosszú volt** vagy **Az aritmetikai művelet kivétele során túlcsordulás vagy alulcsordulás következett be** kivételt kapjon.
+Az [Elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-reporting.md) segítségével konfigurálhatja azt a megoldást, amely a tranzakciós adatokat a kimenő dokumentumok előállításához kérdezi le. Ez a létrehozott dokumentum elég nagy lehet. Ha ilyen típusú dokumentumot hoz létre, akkor azt az [Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) kiszolgáló memóriájával tárolhatja. Egy idő után Microsoft Dynamics a dokumentumot le kell tölteni a 365 Pénzügy alkalmazásból. Jelenleg az ER-ben létrehozott dokumentum mérete legfeljebb 2 gigabájt (GB) lehet. Ezenkívül a Finance jelenleg 1 GB-ra [korlátozza](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) a letöltött fájlok méretét. Éppen ezért konfigurálnia kell egy olyan ER-megoldást, amely csökkenti annak a valószínűségét, hogy túllépi ezeket a korlátozásokat, és hogy a **Adatfolyam túl hosszú volt** vagy **Az aritmetikai művelet kivétele során túlcsordulás vagy alulcsordulás következett be** kivételt kapjon.
 
 Ha konfigurál egy megoldást, akkor úgy állíthatja be a saját ER-formátumát a Műveletek tervezőben, hogy hozzáadja a **Mappa** egy gyökérelemét, és tömöríti a saját beágyazott elemei által előállított valamelyik tartalmat. A tömörítés „pont időben” működik, így a csúcs memóriahasználat, és a letöltendő fájl mérete csökkenthető.
 
 > [!NOTE]
 > A fájltömörítés további CPU-százalékot vesz igénybe.
 
-Ha további tájékoztatást szeretne erről a megközelítésről, végezze el a példafeladatot ebben a témakörben.
+Ezzel a megközelítéssel kapcsolatban az alábbi példában olvashat bővebben.
 
 ## <a name="example-compress-an-outbound-document"></a>Példa: Kimenő dokumentum tömörítése
 
@@ -41,7 +41,7 @@ Ez a példa azt mutatja be, hogyan tudja a **Rendszergazda** vagy az **Elektroni
 
 ### <a name="prerequisites"></a>Előfeltételek
 
-Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, meg kell tennie a következő lépéseket:
+A következő lépéseket kell végrehajtani a cikk eljárásainak befejezése előtt.
 
 1. [Konfigurációszolgáltató aktiválása](er-defer-xml-element.md#activate-a-configuration-provider).
 2. [Minta ER-konfigurációk importálása](er-defer-xml-element.md#import-the-sample-er-configurations).

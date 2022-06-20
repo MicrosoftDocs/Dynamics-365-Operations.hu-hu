@@ -1,6 +1,6 @@
 ---
 title: ER-formátum megtervezése a sorok ugyanazon az Excel-lapon való együttes megtartására
-description: Ez a témakör bemutatja egy olyan elektronikus jelentés (ER) formátumot, amely egy oldalon tartja a sorokat Microsoft Excel.
+description: Ez a cikk bemutatja, hogyan lehet olyan elektronikus jelentési (ER) formátumot tervezni, amely egy oldalon tartja a sorokat Microsoft Excel.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 98e6dd4f926908f65239f3e4f3608f9c9408f9d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612352"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854669"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>ER-formátum megtervezése a sorok ugyanazon az Excel-lapon való együttes megtartására
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör leírja, hogyan konfigurálhat egy, a Rendszergazda vagy elektronikus jelentéskészítő funkcionális konzulens szerepkörű felhasználó egy elektronikus jelentési formátumot, [...](general-electronic-reporting.md)[amely](er-overview-components.md#format-component) kimenő dokumentumokat hoz létre, és kezeli a dokumentumlapozást úgy, hogy a Microsoft Excel létrehozott sorok ugyanazon az oldalon maradnak.
+Ez a cikk bemutatja, hogy a rendszergazdai és elektronikus jelentéskészítő funkcionális tanácsadó szerepkörű felhasználók hogyan konfigurálhatnak egy elektronikus jelentésformátumot (ER), [...](general-electronic-reporting.md)[amely](er-overview-components.md#format-component) kimenő dokumentumokat generál és a dokumentumok számozását úgy kezeli, hogy a Microsoft Excel létrehozott sorok ugyanazon az oldalon maradnak.
 
 Ebben a példában módosítani fogja a Microsoft által megadott ER-formátumot, amely a szabadszöveges számlák Excel programban való nyomtatására használható. A módosítások lehetővé teszi a létrehozott szabadszöveges számlajelentés oldalszámozásának kezelését, hogy egyetlen számlasor minden sora ugyanazon az oldalon maradjon, amikor lehetséges.
 
-A jelen témakörben szereplő eljárások az **USMF** vállalatnál végezhetők el. Nincs szükség kódolásra.
+A cikk eljárásait az **USMF** vállalatnál lehet végrehajtani. Nincs szükség kódolásra.
 
 Ebben a példában hozza létre a szükséges ER-konfigurációkat [a](general-electronic-reporting.md#Configuration) **Litware, Zrt. mintavállalat** számára. Győződjön meg róla **, hogy a Litware, Zrt.** (`http://www.litware.com`) mintavállalat konfigurációs szolgáltatója szerepel az ER keretrendszerben, és hogy Aktívként **van-e megjelölve**. Ha ez a konfigurációs szolgáltató nem szerepel a listán, **vagy** ha nem Aktív jelölésű, kövesse a Konfigurációszolgáltató létrehozása lépést, [és jelölje meg aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -73,7 +73,7 @@ Hajtsa végre a [Nyomtatáskezelés](er-embed-images-header-footer-excel-reports
 
     ![A létrehozott szabadszöveges számla oldalszámozásának áttekintése az Excel asztali alkalmazásban.](./media/er-keep-excel-rows-together-invoice1.gif)
 
-A témakör további eljárásai mutatják be, hogyan javítható a normál ER-formátum, hogy javítható legyen a számlajelentés megjelenésének és olvashatóságának a tartalma úgy, hogy ugyanazon a lapon tartjuk az egyes számlasorok tartalmát.
+A cikk további eljárásai mutatják be, hogyan javítható a normál ER-formátum a számlajelentés jobb megjelenésének és olvashatóságának javítása érdekében azáltal, hogy ugyanazon az oldalon tart minden tartalmat egyetlen számlasoron.
 
 ## <a name="create-a-custom-format"></a>Egyéni formátum létrehozása
 

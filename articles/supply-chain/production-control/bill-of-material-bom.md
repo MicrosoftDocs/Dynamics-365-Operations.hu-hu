@@ -1,6 +1,6 @@
 ---
 title: Anyagjegyzékek és receptúrák
-description: Ez a témakör a termékek és termékváltozatok meghatározásának alapvető részét képező anyagjegyzékekkel (AJ) és receptúrákkal kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk az anyagjegyzékekkel és receptúrákkal kapcsolatban tartalmaz tájékoztatást, amelyek a termékek és a termékváltozatok definíciójának központi részét jelentik.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a70720775d9903a875dd1759ea2372f1f3b122
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 57a30aba3b0a37d939d0747b2dd305a92c82ae23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578008"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887283"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Anyagjegyzékek és receptúrák
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a termékek és termékváltozatok meghatározásának alapvető részét képező anyagjegyzékekkel (AJ) és receptúrákkal kapcsolatban tartalmaz tájékoztatást. Az anyagjegyzékek és receptúrák határozzák meg az adott termékre vonatkozóan a szükséges anyagokat vagy összetevőket. A receptúrák emellett egy adott termelési környezetben kapott társ- és melléktermékeket is meghatároznak. 
+Ez a cikk az anyagjegyzékekkel és receptúrákkal kapcsolatban tartalmaz tájékoztatást, amelyek a termékek és a termékváltozatok definíciójának központi részét jelentik. Az anyagjegyzékek és receptúrák határozzák meg az adott termékre vonatkozóan a szükséges anyagokat vagy összetevőket. A receptúrák emellett egy adott termelési környezetben kapott társ- és melléktermékeket is meghatároznak. 
 
 ## <a name="bills-of-materials"></a>Anyagjegyzékek
 

@@ -1,6 +1,6 @@
 ---
 title: Hullámfelosztás
-description: Ez a témakör a hullámfelosztási lépés beállítását ismerteti, beleértve a párhuzamos feldolgozás engedélyezését is.
+description: Ez a témakör leírja, hogyan lehet beállítani a hullámfelosztási lépést, valamint engedélyezni a párhuzamos feldolgozást.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 08781b26a4e066a026d4efa14670f073b04ec185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c6b89364afd57b9c4b4413d0319b86e725433594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695535"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906951"
 ---
 # <a name="wave-allocation"></a>Hullámfelosztás
 
@@ -25,7 +25,7 @@ ms.locfileid: "8695535"
 
 A hullámfeldolgozás időigényes lehet, és a feldolgozási idő nagy részét a felosztási lépésben és a munkalétrehozási lépésben költi el.
 
-Most már ezeket a lépéseket párhuzamosan is futtathatja, ami javíthatja a hullámfeldolgozás teljesítményét, és ugyanabban a raktárban nagyobb hullámátviteli sebességet tesz lehetővé. Ez a témakör ismerteti, hogyan kell beállítani a hullámfelosztási mód párhuzamos futtatását. A munkalétrehozás párhuzamos futtatásának beállításához lásd: [Munkalétrehozás ütemezése hullám során](configure-wave-schedule-work-creation.md).
+Most már ezeket a lépéseket párhuzamosan is futtathatja, ami javíthatja a hullámfeldolgozás teljesítményét, és ugyanabban a raktárban nagyobb hullámátviteli sebességet tesz lehetővé. Ez a cikk bemutatja, hogyan lehet párhuzamosan futtatni a hullámfelosztási módszert. A munkalétrehozás párhuzamos futtatásának beállításához lásd: [Munkalétrehozás ütemezése hullám során](configure-wave-schedule-work-creation.md).
 
 Korábban egyszerre csak egy hullámot lehetett felosztani egy raktárban. Ezt a korlátozást eltávolítottuk, és egy új korlát lépett a helyébe, amely csak azokat az elemeket és dimenziókat zátolja, amelyek a hely fölött találhatók a foglalási hierarchiában. A hely feletti dimenziók mindig termékdimenziókat is tartalmaznak. Ha például egy elem konfigurálva van a *Szín* tulajdonsággal, akkor a *Piros*, a *Kék* és a *Sárga* változatait párhuzamosan fel lehet dolgozni.
 

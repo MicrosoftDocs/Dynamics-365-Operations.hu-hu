@@ -1,6 +1,6 @@
 ---
 title: A lízingkötelezettség rövid távú részének átsorolása
-description: Ez a témakör bemutatja, hogyan hozhat létre havi naplóbejegyzést a lízingkötelezettség egy részének rövid távúként történő átsorolásához.
+description: Ez a témakör bemutatja, hogyan lehet havi naplóbejegyzést létrehozni a bérleti kötelezettség egy részének rövid távú átsorolása érdekében.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3a71b809b4bb16c2b918b7acd4fbb8bc49278ff6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7c7c3f86aa5d24e9aeed89526a4b7317699e9a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727734"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886342"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>A lízingkötelezettség rövid távú részének átsorolása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan hozhat létre havi naplóbejegyzést a lízingkötelezettség egy részének rövid távúként történő átsorolásához. Ha a kötegfolyamatban kiválasztott ütemezés **Rövidtávú lízingkötelezettség átsorolásakor** egy naplóbejegyzés jön létre. Ez a bejegyzés a lízingkötelezettség aktuális részének feladására szolgál a hónap utolsó napján. Ezzel egy időben a következő hónap első napjától a függvény a következő hónap első napjától adja fel a sztornírozott bejegyzést.
+Ez a témakör bemutatja, hogyan lehet havi naplóbejegyzést létrehozni a bérleti kötelezettség egy részének rövid távú átsorolása érdekében. Ha a kötegfolyamatban kiválasztott ütemezés **Rövidtávú lízingkötelezettség átsorolásakor** egy naplóbejegyzés jön létre. Ez a bejegyzés a lízingkötelezettség aktuális részének feladására szolgál a hónap utolsó napján. Ezzel egy időben a következő hónap első napjától a függvény a következő hónap első napjától adja fel a sztornírozott bejegyzést.
 
 A lízingkötelezettség rövid távú része a kötelezettség amortizációs ütemezésében jelenik meg. A naplóbejegyzés feladásakor elérhetővé válik a **Létrehozott kötelezettség-átsorolási napló** oszlopa, és a naplóazonosító is ki lesz töltve az ütemezésben.
 

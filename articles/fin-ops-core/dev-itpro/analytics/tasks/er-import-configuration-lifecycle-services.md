@@ -1,6 +1,6 @@
 ---
 title: A konfiguráció importálása a Lifecycle Services szolgáltatásból
-description: Ez a témakör azt ismerteti, hogyan lehet importálni egy Elektronikus jelentéskészítési (ER) konfiguráció új verzióját a Microsoft Dynamics Lifecycle Services (LCS) alkalmazásból.
+description: Ez a témakör azt ismerteti, hogyan lehet importálni az elektronikus jelentéskészítési (ER) konfigurációk új verzióját a Lifecycle Services (LCS) Microsoft Dynamics alkalmazásból.
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05a8ad127df177c54e67ff1f2ddcd8b3a3f51ea12b6e11d087105bd74b6bdb3f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2aae59334828a5636f35051d50cf2ea392074b71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712592"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886672"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>A konfiguráció importálása a Lifecycle Services szolgáltatásból
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör leírja, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként importálhat új [Elektronikus jelentés (ER) konfigurációt](../general-electronic-reporting.md#Configuration) a [projektszintű Eszközkönyvtárból](../../lifecycle-services/asset-library.md) a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
+Ez a cikk bemutatja, hogy a rendszergazdai vagy elektronikus jelentéskészítő fejlesztői szerepkörű felhasználók hogyan importálhatják az elektronikus jelentéskészítési (ER) konfiguráció új verzióját a [Lifecycle Services (LCS)](../general-electronic-reporting.md#Configuration)[...](../../lifecycle-services/asset-library.md)Microsoft Dynamics projektszintű eszköztárából.
 
 > [!IMPORTANT]
 > Az LCS tárolási adattárként való használata az ER-konfigurációknál [elavult](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). További információért lásd a [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) tárhely elavulása](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md) részt.
@@ -41,7 +41,7 @@ Az alábbi példában kiválasztja az ER konfiguráció kívánt verzióját, ma
 
 <a name="accessconditions"></a>
 > [!NOTE]
-> Győződjön meg róla, hogy az aktuális Dynamics 365 Finance felhasználó tagja annak az LCS projektnek, amely tartalmazza azt az Eszköztárat, amelyet a felhasználó [elérni](../../lifecycle-services/asset-library.md#asset-library-support) szeretne az ER-konfigurációk importálásához.
+> Győződjön meg róla, hogy az aktuális Dynamics 365 Pénzügyi felhasználó tagja annak az LCS-projektnek [...](../../lifecycle-services/asset-library.md#asset-library-support), amely azt az eszköztárat tartalmazza, amelybe a felhasználó er-konfigurációkat szeretne importálni.
 >
 > Nem férhet hozzá egy LCS-projekthez egy olyan ER-adattárból, amely egy másik tartományt képvisel, mint a Finance-ben használt tartomány. Ha megpróbálja, akkor az LCS-projektek üres listája jelenik meg, és nem fogja tudni importálni a projekt-szintű Eszközökkönyvtár ER-konfigurációit az LCS-ben. Ahhoz, hogy a projekt-szintű Eszköztárakat egy olyan ER-adattárból elérje, amely ER-konfigurációk importálására szolgál, a Finance alkalmazásba való bejelentkezéshez olyan felhasználó hitelesítő adatait használja, aki olyan bérlőhöz (tartomány) tartozik, amelyhez az aktuális Finance-példány ki lett építve.
 
@@ -49,7 +49,7 @@ Az alábbi példában kiválasztja az ER konfiguráció kívánt verzióját, ma
 
 1. A **Konfigurációk** oldalon található konfigurációk fájában válassza ki a **Mintamodell-konfiguráció** elemet.
 
-    A rendszer létrehozott egy minta adatmodell konfigurációjának első verzióját és közzé tette az LCS-ben, amikro elvégezte [A konfiguráció feltöltése a Lifecycle Services szolgáltatásba](er-upload-configuration-into-lifecycle-services.md) eljárás lépéseit. Ebben az eljárásban törli az ER-konfiguráció azon verzióját. Ezt a verziót később, ebben a témakörben importálja az LCS-ből.
+    A rendszer létrehozott egy minta adatmodell konfigurációjának első verzióját és közzé tette az LCS-ben, amikro elvégezte [A konfiguráció feltöltése a Lifecycle Services szolgáltatásba](er-upload-configuration-into-lifecycle-services.md) eljárás lépéseit. Ebben az eljárásban törli az ER-konfiguráció azon verzióját. Ezt követően a cikket később importálja az LCS-ről.
 
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
 

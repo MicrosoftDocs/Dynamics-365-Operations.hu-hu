@@ -1,6 +1,6 @@
 ---
 title: BYOD ütemezett kötegelt feladatok optimalizálása
-description: Ez a témakör azt mutatja be, hogyan lehet optimalizálni a teljesítményt a saját adatbázis használata (BYOD) szolgáltatás használata során a Microsoft Dynamics 365 Human Resources alkalmazással.
+description: Ez a cikk bemutatja, hogyan lehet optimalizálni a teljesítményt, amikor a saját adatbázis (BYOD) funkciót használja a Microsoftnál Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 2fcdc89ce65fd123b4cf845acf83070119cc3701
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4df60a82e016ec8f3ba6ba0d70c261824961d221
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717168"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848313"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>BYOD ütemezett kötegelt feladatok optimalizálása
 
@@ -27,7 +27,7 @@ ms.locfileid: "8717168"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet optimalizálni a teljesítményt a saját adatbázis használata (BYOD) szolgáltatás használata során. A BYOD-funkcióval kapcsolatos további tudnivalókat lásd: [Használja saját adatbázisát (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+Ez a cikk bemutatja, hogyan lehet optimalizálni a teljesítményt a saját adatbázis (BYOD) szolgáltatás használata esetén. A BYOD-funkcióval kapcsolatos további tudnivalókat lásd: [Használja saját adatbázisát (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## <a name="performance-considerations-for-data-export"></a>Az adatexportálással kapcsolatos teljesítményszempontok
 

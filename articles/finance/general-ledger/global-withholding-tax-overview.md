@@ -1,6 +1,6 @@
 ---
 title: Globális adóelőleg
-description: Ez a témakör a globális adóelőleg funkcióval és a funkció beállításával kapcsolatban tartalmaz tájékoztatást. A globális adóelőleg funkció továbbfejlesztett szállítói és vevői tranzakcióknál használható, így az adóelőleg számítása a cikk szintjén történik.
+description: Ez a cikk az adóelőleg globális funkcióiról és beállítási funkcióiról nyújt tájékoztatást. A globális adóelőleg funkció továbbfejlesztett szállítói és vevői tranzakcióknál használható, így az adóelőleg számítása a cikk szintjén történik.
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 9cb02ba77fa33c839bc2a74811131973d1e5877f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 49d5048b9df30e94d959cf9f22b8ae837b74abdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720223"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846828"
 ---
 # <a name="global-withholding-tax"></a>Globális adóelőleg
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a globális adóelőleg funkcióval és a funkció beállításával kapcsolatban tartalmaz tájékoztatást. Az új funkció a 10.0.17-es és későbbi verziókban áll rendelkezésre.
+Ez a cikk a globális adóelőleg funkcióval kapcsolatban tartalmaz tájékoztatást, és bemutatja a funkció beállításának a lépését. Az új funkció a 10.0.17-es és későbbi verziókban áll rendelkezésre.
 
 A globális adóelőleg funkció továbbfejlesztett szállítói és vevői tranzakcióknál használható, így az adóelőleg számítása a cikk szintjén történik. A beszerzési tranzakciók adóelőleg-számlájának egyenlege az adóelőleg-kiegyenlítési feladatnak az adóelőleg-elszámolási számlára vonatkozó futtatásával egyenlíthető ki.
 

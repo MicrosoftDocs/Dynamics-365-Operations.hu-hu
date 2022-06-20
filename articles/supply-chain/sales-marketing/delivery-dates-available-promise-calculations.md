@@ -1,6 +1,6 @@
 ---
 title: Rendelési ígéretek
-description: A témakör a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
+description: A cikk a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
 author: Henrikan
 ms.date: 04/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f7535ba28358fef21784956da38cd334a4aebe7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 21af95f06182863c6ba74e4329052fc15c1b49a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878816"
 ---
 # <a name="order-promising"></a>Rendelési ígéretek
 
 [!include [banner](../includes/banner.md)]
 
-A témakör a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
+A cikk a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
 
 Rendelés ígéret számítja ki a lehető legkorábbi szállítási és kézhezvételi dátumok, és a szállítási dátum vezérlő módot és szállítási napok szállítási alapul. Négy szállítási dátum ellenőrzési módszer közül választhat:
 

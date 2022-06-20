@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce e-commerce honosítási útmutató
-description: Ez a témakör azt ismerteti, hogyan Microsoft Dynamics 365 Commerce lehet további nyelvekre honosítani egy e-commerce webhelyet, és hogyan kell konfigurálni a webhelyet több csatorna támogatásához.
+description: Ez a témakör azt ismerteti, hogyan Microsoft Dynamics 365 Commerce lehet további nyelvekre honosítani egy e-commerce webhelyet, és konfigurálni azt, hogy több csatornát támogatjon.
 author: bicyclingfool
 ms.date: 04/29/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1e9d91036ceeb9161dc8ee903532b2cf3ca435e2
-ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
+ms.openlocfilehash: 955a85340f6d35f1e203d74920d07b5dc6ff8654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873384"
 ---
 # <a name="dynamics-365-commerce-e-commerce-localization-guide"></a>Dynamics 365 Commerce e-commerce honosítási útmutató
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt Microsoft Dynamics 365 Commerce ismerteti, hogyan lehet további nyelvekre honosítani az e-commerce webhelyet, és konfigurálni azt, hogy több csatornát támogatjon, valamint leírja a folyamattal kapcsolatos fogalmakat és fogalmakat.
+Ez a témakör ismerteti Microsoft Dynamics 365 Commerce, hogyan lehet további nyelvekre honosítani egy e-commerce webhelyet, és konfigurálni azt, hogy több csatornát támogatjon, valamint leírja a folyamattal kapcsolatos fogalmakat és fogalmakat.
 
 A meglévő e-commerce Dynamics 365 Commerce képességek lehetővé teszik az olyan online tapasztalatokat, amelyek meghatározott országokra és nyelvekre szabottak, ugyanakkor lehetővé teszik a sablonok, lapok, tartalom és média maximális újrahasználatát. Létre lehet hozni egy alapvető telephelyet is, majd az idő után további országok és nyelvek támogatásának hozzáadásával új piacokra lehet kibontni.
 
@@ -74,12 +74,12 @@ A csatornákról a Csatornák áttekintése nyújt további [tájékoztatást](c
 
 A beállításon kívül minden Dynamics 365 Commerce e-commerce webhely úgy van beállítva, hogy egy online csatornát és egy nyelvet használjon, függetlenül attól, hogy a Gyár bemutatówebhelyével kezd, vagy teljesen új webhelyet hoz létre.
 
-Ebben a konfigurációban a vevők és partnerek általában minden eszközt kialakítanak, amely ország- és nyelv szerint használható. Ezek közé tartoznak a sablonok, lapok, részletek, tartalom és adathordozók. A webhely minden tartalma a webhelyhez elsőként kiválasztott nyelven van fejlesztés alatt, vagy ha a Gyár bemutatówebhelyét használja, a webhely tartalma angol nyelven fog kifejlni.
+Ebben a konfigurációban a vevők és partnerek általában minden eszközt kialakítnak, amely ország- és nyelv szerint használható. Ezek közé tartoznak a sablonok, lapok, részletek, tartalom és adathordozók. A webhely minden tartalma a webhelyhez elsőként kiválasztott nyelven van fejlesztés alatt, vagy ha a Gyár bemutatówebhelyét használja, a webhely tartalma angol nyelven fog kifejlni.
 
 ![Nincs meg az Dynamics 365 Commerce e-commerce webhely a mezőben](media/loc-guide-1.png)
 
 > [!NOTE]
-> A Gyár bemutatówebhelyét egy további nyelvre is be lehet állítani, hogy a tartalom fejlesztése ezen a nyelven legyen leállítva. Ha további tájékoztatást szeretne arról, hogyan adhat hozzá új nyelvet egy webhelyhez és csatornához, [akkor](#configure-an-additional-language-for-your-site) tekintse meg a témakör későbbi, A webhely szakaszának további nyelvének konfigurálása című témakörét.
+> A Gyár bemutatówebhelyét egy további nyelvre is be lehet állítani, hogy a tartalom fejlesztése ezen a nyelven legyen leállítva. Ha további tájékoztatást szeretne arról, hogyan adhat hozzá új nyelvet egy webhelyhez és csatornához, [akkor](#configure-an-additional-language-for-your-site) tekintse meg a webhely szakaszának további nyelvének konfigurálása című fejezetét.
 
 Az e-commerce webhelyekhez készült tartalomkezelő rendszer (CMS) Dynamics 365 Commerce és oldalmodell azonban úgy van kialakítva, hogy lehetővé tegye az új piacok és területek bővítését. Ebből következően egyetlen e-commerce webhelyen kezelhetők egy több piacokra és nyelvekre is átfogják egy online áruház eszközeit.
 
@@ -117,7 +117,7 @@ A webhelyszerkesztő csatornáihoz a következő lépések szerint adhat hozzá 
 
 Amikor visszatér a **Commerce** webhelyszerkesztő Oldal nézethez, az új nyelv elérhetővé válik a csatornában, és a jobb felső részén található területi beállítások kiválasztója látható. Most létrehozhatja a lapok honosított verzióit az alapnyelven.
 
-A lapok tartalmának [és a részletek honosizálásának folyamatát a témakör későbbi, Az e-commerce](#localize-e-commerce-site-content) webhely honosítani szakasza tartalmaz.
+A lapok tartalmának [és a cikkrészletek honosizálásának folyamatát a cikk későbbi, Az e-commerce](#localize-e-commerce-site-content) webhely honosítani szakasza tartalmaz.
 
 ### <a name="configure-a-new-channel-for-your-site"></a>Új csatorna konfigurálása a webhely számára
 
@@ -156,7 +156,7 @@ A webhelyszerkesztő a következő e-commerce webhely-eszközöket honoshatja:
 
 Minden új oldal, részlet és médiaeszköz annak a csatornának és nyelvnek a kontextusában jön létre, amely ki van választva a csatornában és a területi beállításban. Ez a nyelv általában az alapnyelv, feltéve, hogy nem konfigurált további nyelveket vagy csatornákat. Olyan webhelyeken, ahol több csatorna és nyelv van konfigurálva, a csatorna határozza meg az " **alapnyelvet", és ez a beállítás van beállítva alapértelmezettként a Webhely beállításai között a Csatornák** lapon.
 
-Hasonlóak a lapok, részletek és médiaeszközök tartalmának honosizálására vonatkozó lépések. A következő szakaszok kivételeket és eltéréseket mutatnak be. A modul tartalmának honosizálására vonatkozó lépések azonban eltérőek. A további tudnivalókat lásd [a](#localize-modules) témakör Későbbi Honosítani moduljainak szakaszban.
+Hasonlóak a lapok, részletek és médiaeszközök tartalmának honosizálására vonatkozó lépések. A következő szakaszok kivételeket és eltéréseket mutatnak be. A modul tartalmának honosizálására vonatkozó lépések azonban eltérőek. A további tudnivalókat lásd [a](#localize-modules) cikk Honosítani moduljainak szakaszban.
 
 #### <a name="step-1-export-an-xliff-file"></a>1. lépés: XLIFF-fájl exportálása
 

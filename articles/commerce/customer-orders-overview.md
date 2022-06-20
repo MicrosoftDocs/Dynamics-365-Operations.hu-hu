@@ -1,6 +1,6 @@
 ---
 title: Vevői rendelések a pénztárban (POS)
-description: Ez a témakör a pénztár (POS) vevői rendeléseivel kapcsolatban tartalmaz információkat. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
+description: Ez a cikk a pénztári (POS) vevői rendelésekkel kapcsolatban tartalmaz tájékoztatást. A vevői rendelések speciális rendelések néven is ismertek. A cikk a kapcsolódó paraméterek és tranzakciós folyamatok vitafórumát tartalmazza.
 author: josaw1
 ms.date: 08/02/2021
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6051e0a18823b354dd9940aac70a086a0f317002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982818"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850382"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Vevői rendelések a pénztárban (POS)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a pénztár (POS) alkalmazásban a vevői rendelések létrehozásának és kezelésének módjáról tartalmaz információkat. A vevői rendelések arra használhatók fel, hogy olyan értékesítéseket rögzítsenek, amelyeknél a vásárlók egy későbbi időpontban kívánnak termékeket felvenni, másik helyről szeretnének termékeket átvenni, vagy kiszállítást kérnek. 
+Ez a cikk a vevői rendeléseknek a pénztári (POS) alkalmazásban történő létrehozásáról és kezeléséhez nyújt tájékoztatást. A vevői rendelések arra használhatók fel, hogy olyan értékesítéseket rögzítsenek, amelyeknél a vásárlók egy későbbi időpontban kívánnak termékeket felvenni, másik helyről szeretnének termékeket átvenni, vagy kiszállítást kérnek. 
 
 A sokcsatornás kereskedelmi világ számos kiskereskedő biztosít lehetőséget vevői rendelésekre vagy speciális rendelésekre, hogy így elégítsen ki termékkel és teljesítéssel kapcsolatos különböző igényeket. Íme néhány tipikus forgatókönyv:
 

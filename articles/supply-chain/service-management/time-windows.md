@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 857e9e023aa5648a06ae564936f06c491ea7cefc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ccbb9cf71ff1df7aa336deb5bf9d7dacb8004134
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678094"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862395"
 ---
 # <a name="time-windows"></a>Időablakok  
 
@@ -38,7 +38,7 @@ Az időszakok meghatározzák, hogy milyen távol kerülhetnek a szervizrendelé
 
 Ha a szolgáltatásiszerződés-sorra nem határoz meg időszakot, akkor a szerződéssorból származó szervizrendeléssort pontosan azon a napon kell végrehajtani, amelyre eredetileg ütemezték.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Időablakok létrehozása](create-time-windows.md)
 

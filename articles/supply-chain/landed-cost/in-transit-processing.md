@@ -1,6 +1,6 @@
 ---
 title: Úton lévő áruk feldolgozása
-description: Ez a témakör az úton lévő árukra vonatkozó rendelések használatát ismerteti. Ha egy rendelés vagy hajóút úton lévő áruk feldolgozásának használatára van beállítva, az áruk még azelőtt számlázhatók, hogy a raktárban felhasználásra bevételezték volna őket.
+description: Ez a témakör azt ismerteti, hogyan kell dolgozni a szállítás közbeni áruk rendelésekkel. Ha egy rendelés vagy hajóút úton lévő áruk feldolgozásának használatára van beállítva, az áruk még azelőtt számlázhatók, hogy a raktárban felhasználásra bevételezték volna őket.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8df07c7c94cf64b0e4cf1def794270e176241b5f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47e5ef2ef99fcf23af73cfdb6ec57b92ad62f18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694655"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854384"
 ---
 # <a name="goods-in-transit-processing"></a>Úton lévő áruk feldolgozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör az úton lévő árukra vonatkozó rendelések használatát ismerteti. Ezt a rendeléstípust csak a **Partraszállítási költség** modul használja. Ha egy rendelés vagy hajóút úton lévő áruk feldolgozásának használatára van beállítva, az áruk számlázásával nem kell várnia addig, amíg a raktárban felhasználásra bevételezik őket. Ehelyett az áruk számlázása akkor történik meg, amikor elhagyják a szállító raktárát vagy származási kikötőjét, és a pénzügyi költségeket a hajóút megkezdésekor könyvelik. Ez a funkció lehetővé teszi, hogy helyesen tulajdonosa legyen a készletnek, mivel az áruk gyakran a szervezet tulajdonába kerülnek, amikor elhagyják a szállítási kikötőt.
+Ez a témakör azt ismerteti, hogyan kell dolgozni a szállítás közbeni áruk rendelésekkel. Ezt a rendeléstípust csak a **Partraszállítási költség** modul használja. Ha egy rendelés vagy hajóút úton lévő áruk feldolgozásának használatára van beállítva, az áruk számlázásával nem kell várnia addig, amíg a raktárban felhasználásra bevételezik őket. Ehelyett az áruk számlázása akkor történik meg, amikor elhagyják a szállító raktárát vagy származási kikötőjét, és a pénzügyi költségeket a hajóút megkezdésekor könyvelik. Ez a funkció lehetővé teszi, hogy helyesen tulajdonosa legyen a készletnek, mivel az áruk gyakran a szervezet tulajdonába kerülnek, amikor elhagyják a szállítási kikötőt.
 
 Az úton lévő árukra vonatkozó rendelések használata esetén a pénzügyileg frissített cikkeket egy ideiglenes raktárba vételezik be, amelyet úton lávő áruk raktárának is neveznek. Az áruk ezután mindaddig ebben a raktárban maradnak, amíg a végső célraktárban (tehát a beszerzési sorban meghatározott raktárban) be nem vételezik őket. Ezek manuálisan nem távolíthatók el.
 

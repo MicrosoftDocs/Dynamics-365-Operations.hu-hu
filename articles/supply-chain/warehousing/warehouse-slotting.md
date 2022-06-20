@@ -1,6 +1,6 @@
 ---
 title: Raktári időközökre bontás
-description: Ez a témakör a raktári időközökre bontással kapcsolatban tartalmaz információkat. A raktári időközökre bontás lehetővé teszi a kereslet cikkek és mértékegységek szerinti konszolidációját a rendelésekből, amelyek Megrendelt, Lefoglalt vagy Kiadott állapottal rendelkeznek. A raktári kezelők számára intelligens módon segít kitárolási helyeket tervezni, mielőtt a rendeléseket a raktárba kiadnák, és kitárolási munkát hoznának létre.
+description: Ez a cikk a raktári slottingről nyújt tájékoztatást. A raktári időközökre bontás lehetővé teszi a kereslet cikkek és mértékegységek szerinti konszolidációját a rendelésekből, amelyek Megrendelt, Lefoglalt vagy Kiadott állapottal rendelkeznek. A raktári kezelők számára intelligens módon segít kitárolási helyeket tervezni, mielőtt a rendeléseket a raktárba kiadnák, és kitárolási munkát hoznának létre.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e057992b15f0a1fa76a78ef78ea9aeea3c088be9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676299"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897255"
 ---
 # <a name="warehouse-slotting"></a>Raktári időközökre bontás
 
@@ -156,7 +156,7 @@ Minden értékesítési rendelési sablon esetében hajtsa végre az alábbi lé
 
     - **Mértékegységszint:** _EaBoxPl_
 
-        Ez a mező azt a keresleti mértékegységet határozza meg, amely a sorhoz érvényes. (További információt a [Mértékegységszintek beállítása időközökre bontáshoz](#unit-tiers) című részben talál, a téma korábbi részében.)
+        Ez a mező azt a keresleti mértékegységet határozza meg, amely a sorhoz érvényes. (További tájékoztatás: [A cikk korábbi szakaszában](#unit-tiers) található mértékegységszintek beállítása a pontozási szakaszhoz.)
 
     - **Időköz-hozzárendelési feltétel társítása:** _Figyelembe vett mennyiség_
 

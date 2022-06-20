@@ -1,6 +1,6 @@
 ---
 title: Manuális feladatok konfigurálása munkafolyamatban
-description: Ez a témakör bemutatja, hogyan kell konfigurálni a manuális feladat tulajdonságait.
+description: Ez a témakör bemutatja a manuális feladatok tulajdonságainak konfigurálját.
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 726abcf20789fb3a7a9a3adbebf17249042910d1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 265f127f948aa7425c5eb523abe18986a942cfb0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889207"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Manuális feladatok konfigurálása munkafolyamatban
 
@@ -28,7 +28,7 @@ ms.locfileid: "8066468"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ez a témakör bemutatja, hogyan kell konfigurálni a manuális feladat tulajdonságait.
+Ez a témakör bemutatja a manuális feladatok tulajdonságainak konfigurálját.
 
 A munkafolyamat-szerkesztő manuális feladatának konfigurálásához, kattintson a jobb gombbal a feladatra, és kattintson **Tulajdonságok** oldal megnyitásához a **Tulajdonságok** lehetőségre. Ezt követően a következő eljárások segítségével állítsa be a manuális feladat tulajdonságait.
 

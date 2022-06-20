@@ -1,6 +1,6 @@
 ---
 title: Könyvelések áttekintése
-description: Ez a témakör a könyveléseket írja le, és a tranzakciók beállításának és létrehozásának a lépésekkel kapcsolatban tartalmaz tájékoztatást.
+description: A cikk leírást ad a könyveléseket illetően és információt biztosít azok beállításairól és a tranzakciók létrehozásáról.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62b56e698d3d9eeec08824eb799d74a8c6792ea7
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 2e10842929ba58b845a1df949ecb7c776ae077e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735232"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904701"
 ---
 # <a name="accruals-overview"></a>Könyvelések áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a könyveléseket írja le, és a tranzakciók beállításának és létrehozásának a lépésekkel kapcsolatban tartalmaz tájékoztatást.
+A cikk leírást ad a könyveléseket illetően és információt biztosít azok beállításairól és a tranzakciók létrehozásáról.
 
 Könyvelések az elhatárolásban használtak, az olyan bevétel követésére, amelyet a megkeresési időszakban ismertek fel, nem a bevételezési időszakhoz, és kiadások (költségek) követésére, amelyeket akkor ismertek fel, amikor megjelentek, nem amikor a fizetés megtörtént.
 

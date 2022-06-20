@@ -1,6 +1,6 @@
 ---
-title: Egységes termékélmény
-description: Ez a témakör a termékadatok integrációját ismerteti a Finance and Operations alkalmazások és a Dataverse között.
+title: Egységesített terméktapasztalat
+description: Ez a témakör leírja a termékadatok integrálását a Pénzügy és a Műveletek alkalmazások és a Dataverse.
 author: t-benebo
 ms.date: 12/12/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a8071887678f16a0b8ee075d2aa24a07e4df5319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884998"
 ---
 # <a name="unified-product-experience"></a>Egységes termékélmény
 
@@ -30,13 +30,13 @@ Itt a termék adatmodellje a Sales megoldásból.
 
 Itt a Finance and Operations alkalmazások termék adatmodellje.
 
-![A Finance and Operations termékeinek adatmodellje.](media/dual-write-products-5.jpg)
+![Adatmodell a Pénzügy és műveletek termékeihez.](media/dual-write-products-5.jpg)
 
 Ez a két termékadat-modell integrálva lett a Dataverse szolgáltatásba az alábbiakban látható módon.
 
 ![Adatmodell a Dynamics 365 alkalmazások termékeihez.](media/dual-write-products-6.jpg)
 
-A termékekhez tartozó kettős írású táblázattérképeket úgy alakították ki, hogy az adatokat csak egyirányú, közel valós időben áramolják a Finance and Operations alkalmazásokból a következőbe Dataverse. A termék-infrastruktúra azonban nyitott, hogy szükség esetén kétirányú lehessen. Noha személyre szabható, ez azonban az Ön felelőssége; a Microsoft nem javasolja ezt a megközelítést.
+A termékek két írásos táblatérképét úgy tervezték, hogy az adatokat csak egy időben, a pénzügy- és műveletalkalmazások közel valós idejű áramlására tervezték Dataverse. A termék-infrastruktúra azonban nyitott, hogy szükség esetén kétirányú lehessen. Noha személyre szabható, ez azonban az Ön felelőssége; a Microsoft nem javasolja ezt a megközelítést.
 
 ## <a name="templates"></a>Sablonok
 
@@ -44,7 +44,7 @@ A termékinformációk tartalmazzák a termékhez és a termék meghatározásá
 
 Finance and Operations alkalmazások | Egyéb Dynamics 365 alkalmazások | Leírás
 -----------------------|--------------------------------|---
-[Minden termék](mapping-reference.md#138) | msdyn_globalproducts | Az összes termék táblázat tartalmazza a Finance and Operations alkalmazásokban elérhető összes terméket, mind a kiadott, mind a ki nem adott termékeket.
+[Minden termék](mapping-reference.md#138) | msdyn_globalproducts | Az összes terméktábla tartalmazza az összes, a Pénzügy és műveletek alkalmazásokban elérhető terméket, mind a kiadott termékeket, mind a nem kiadott termékeket.
 [Kiadott CDS-egyedi termékek](mapping-reference.md#213) | Termék | A **Termék** tábla a termék meghatározására szolgáló oszlopokat tartalmazza. Tartalmazza az egyedi termékeket (termék altípusú termékeket) és a termékváltozatokat. A következő táblázat a leképezéseket mutatja be.
 [Színek](mapping-reference.md#170) | msdyn\_productcolors
 [Konfigurációk](mapping-reference.md#171) | msdyn\_productconfigurations
@@ -61,7 +61,7 @@ Finance and Operations alkalmazások | Egyéb Dynamics 365 alkalmazások | Leír
 [Alaptermékstílusok](mapping-reference.md#191) | msdyn_sharedproductstyles | A **Megosztott termékstílus** tábla azt jelzi, hogy egy adott alapterméknek milyen stílusai lehetnek. Ezt a koncepciót a program a Dataverse szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
 [Termékszám alapján azonosított vonalkód](mapping-reference.md#164) | msdyn\_productbarcodes | A termék vonalkódja a termékek egyedileg történő azonosítására szolgál.
 [Termékspecifikus egységátváltások](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
-[Kiadott termékek V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | A **msdyn\_ megosztott termékrészletek** táblázat tartalmazza a Finance and Operations alkalmazásokból származó oszlopokat, amelyek meghatározzák a terméket, és tartalmazzák a termék pénzügyi és kezelési adatait.
+[Kiadott termékek V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | Az **msdyn\_ sharedproductdetails tábla** tartalmazza a termék meghatározására, valamint a termék pénzügyi és felügyeleti adatait tartalmazó, a Pénzügy és műveletek alkalmazások oszlopait.
 [Méretek](mapping-reference.md#174) | msdyn\_productsizes
 [Tárolásidimenzió-csoportok](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | A termék tárolási dimenziócsoportja képviseli azt a módszert amelyet használnak a termék elhelyezésének definiálásához a raktárban.
 [Stílusok](mapping-reference.md#178) | msdyn\_productsytles
@@ -81,17 +81,17 @@ Mivel a termék SKU-ként képviselteti magát, az egyedi termékek, alaptermék
 
 ![Adatmodell termékekhez.](media/dual-write-product.png)
 
-Ha a kettős írási funkció engedélyezve van, a Finance and Operations termékei szinkronizálva lesznek a többi Dynamics 365 termékkel **Piszkozat** állapot. Az első árlistához az ügyfélkapcsolati alkalmazásban használt pénznemmel és az árlista nevének ábécé szerinti rendezésével kerülnek hozzáadásra. Más szóval, a Dynamics 365 alkalmazás első árlistájához adják őket, amely megegyezik annak a jogi táblázatnak a pénznemével, ahol a termék kiadta a Finance and Operations alkalmazásban. Ha a megadott pénznemhez nincs árlista, a program automatikusan létrehoz egy árlistát, és hozzárendeli a terméket.
+Ha engedélyezve van a kettős írásos funkció, a Pénzügy és műveletek programból származó termékek a Vázlat állapotban lesznek szinkronizálva a többi Dynamics 365 **termékkel**. Az első árlistához az ügyfélkapcsolati alkalmazásban használt pénznemmel és az árlista nevének ábécé szerinti rendezésével kerülnek hozzáadásra. Más szóval bekerülnek a Dynamics 365 alkalmazás első árlistájának értékére, amely megfelel annak a jogi táblának, amely a pénzügyi és műveleti alkalmazásban ki van adva. Ha a megadott pénznemhez nincs árlista, a program automatikusan létrehoz egy árlistát, és hozzárendeli a terméket.
 
-Az alapértelmezett árlistát az egységhez társító kettős írásmódú beépülő modulok jelenlegi megvalósítása megkeresi a Finance and Operations alkalmazáshoz társított pénznemet, és megkeresi az első árlistát az ügyfél-elköteleződési alkalmazásban az árlista nevének ábécé szerinti rendezésével. Ha egy adott pénznemhez alapértelmezett árlistát szeretne beállítani, ha több árlistája van az adott pénznemnek, akkor frissítenie kell az árlista nevét olyan névre, amely a betűrendben korábbi, mint bármely más árlista ugyanarra a pénznemre. Ha nincs árlista az adott pénznemhez, akkor egy újat hoz létre.
+A kettős írású mértékegységek jelenlegi megvalósítása, amelyek az alapértelmezett árlistát társítják az egységhez, és megkeresik a Pénzügy és műveletek alkalmazás pénznemét, és az árlista betűrendes rendezésével megkeresik az első árlistát a vevői megállapodás alkalmazásában. Ha egy adott pénznemhez alapértelmezett árlistát szeretne beállítani, ha több árlistája van az adott pénznemnek, akkor frissítenie kell az árlista nevét olyan névre, amely a betűrendben korábbi, mint bármely más árlista ugyanarra a pénznemre. Ha nincs árlista az adott pénznemhez, akkor egy újat hoz létre.
 
 Alapértelmezés szerint a Finance and Operations-alkalmazások termékeit szinkronizálja a rendszer a többi Dynamics 365-alkalmazással **Piszkozat** állapotban. Ha azt szeretné, hogy az **Aktív** állapotú termék szinkronizálva legyen, hogy például közvetlenül tudja használni az értékesítési rendelések árajánlataiban, akkor az alábbi beállítást kell választani: a **Rendszer > Adminisztráció > Rendszeradminisztráció > Rendszerbeállítások > Sales** lapon válassza a **Termékek létrehozása az aktív állapotban = igen** értéket.
 
-A termékek szinkronizálása során meg kell adnia egy értéket a **Értékesítési egység** mezőt a Finance and Operations alkalmazásban, mert ez kötelező mező az Értékesítésben.
+A termékek szinkronizálása során meg kell adnia egy értéket a **Pénzügy** és műveletek alkalmazásban az Értékesítési egység mezőben, mert az kötelező mező az Értékesítés mezőben.
 
 A termékek Dynamics 365 Sales alkalmazásból való létrehozása nem támogatott a termékek kettős írású szinkronizálása során.
 
-A termékek szinkronizálása a Finance and Operations alkalmazásból a következőre történik Dataverse. Ez azt jelenti, hogy a terméktábla oszlopainak értékei módosíthatók Dataverse, de amikor a szinkronizálás elindul (ha egy termékoszlopot módosítanak egy Finance and Operations alkalmazásban), ez felülírja a Dataverse.
+A termékek szinkronizálása a Pénzügy és műveletek alkalmazásból a következőbe történik:Dataverse Ez azt jelenti Dataverse, hogy a terméktábla oszlopainak értékei módosíthatók, de a szinkronizálás kiváltása esetén (amikor a termékoszlopot módosítják a Pénzügyi és műveleti alkalmazásban), Dataverse ezzel felülírja az értékeket a következőben: .
 
 Finance and Operations alkalmazások | Customer Engagement alkalmazások |
 ---|---
@@ -126,7 +126,7 @@ Finance and Operations alkalmazások | Customer Engagement alkalmazások |
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Alapértelmezett rendelési beállítások és termékspecifikus alapértelmezett rendelési beállítások
 
-Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét. Ezek az információk a Dataverse rendszerben az alapértelmezett rendelési beállításokkal és a termékre vonatkozó alapértelmezett rendelésbeállítási entitással érhetők el. További információ az [Alapértelmezett rendelési beállítások cikkben](../../../../supply-chain/production-control/default-order-settings.md)olvasható.
+Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét. Ezek az információk a Dataverse rendszerben az alapértelmezett rendelési beállításokkal és a termékre vonatkozó alapértelmezett rendelésbeállítási entitással érhetők el. A funkcióval kapcsolatos további tudnivalókat az Alapértelmezett rendelési beállítások [cikk tartalmazhatja](../../../../supply-chain/production-control/default-order-settings.md).
 
 Finance and Operations alkalmazások | Customer Engagement alkalmazások |
 ---|---
@@ -151,24 +151,24 @@ Finance and Operations alkalmazások | Customer Engagement alkalmazások |
 
 ### <a name="initial-synchronization-of-units"></a>Egységek kezdeti szinkronizálása
 
-Ha a kettős írás engedélyezett, a Finance and Operations-alkalmazások egységeit szinkronizálja a rendszer a többi Dynamics 365-alkalmazással. A Finance and Operations alkalmazásból szinkronizált egységcsoportok Dataverse be van állítva egy zászló, amely azt jelzi, hogy „Külsőleg karbantartott”.
+Ha a kettős írás engedélyezett, a Finance and Operations-alkalmazások egységeit szinkronizálja a rendszer a többi Dynamics 365-alkalmazással. A Pénzügy és műveletek alkalmazásból szinkronizált Dataverse egységcsoportokhoz egy jelzőkészlet van beállítva, amely azt jelzi, hogy ezek "Külsőleg karbantartva".
 
 ### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Egyező egységek és egységosztályok/csoportok Finance and Operations- és más Dynamics 365-alkalmazásokból származó adatai
 
-Fontos megjegyezni, hogy az egység integrációs kulcsa az msdyn_symbol. Ennek megfelelően az értéknek egyedinek kell lennie a Dataverse- vagy más Dynamics 365-alkalmazásokban. Mivel más Dynamics 365-alkalmazásokban az „Egységcsoport-azonosító” és „Név” pár határozza meg az egység egyediségét, különböző forgatókönyveket kell figyelembe vennie az egységadatok egyeztetésére a Finance and Operations alkalmazások és a Dataverse.
+Fontos megjegyezni, hogy az egység integrációs kulcsa az msdyn_symbol. Ennek megfelelően az értéknek egyedinek kell lennie a Dataverse- vagy más Dynamics 365-alkalmazásokban. Mivel más Dynamics 365-alkalmazásokban ez az egység egyediségét meghatározó "Egységcsoport azonosítója" és "Név" pár, Dataverse különböző helyzeteket kell figyelembe venni az egységadatoknak a Pénzügy és a Műveletek alkalmazások és a.
 
 A Finance and Operations-alkalmazások és más Dynamics 365-alkalmazások egyező/átfedő egységei:
 
-+ **Az egység olyan, másik Dynamics 365-alkalmazásokban lévő egységcsoportba tartozik, amelyik megfelel a Finance and Operations-alkalmazások társított egységosztályának**. Ebben az esetben az msdyn_symbol oszlopot más Dynamics 365-alkalmazásokban a Finance and Operations alkalmazások egységszimbólumával kell kitölteni. Emiatt az adatok egyeztetése során az egységcsoport beállítása „Külsőleg karbantartott” lesz a többi Dynamics 365-alkalmazásban.
++ **Az egység olyan, másik Dynamics 365-alkalmazásokban lévő egységcsoportba tartozik, amelyik megfelel a Finance and Operations-alkalmazások társított egységosztályának**. Ebben az esetben msdyn_symbol Dynamics 365-alkalmazások oszlopát a Pénzügy és Műveletek alkalmazások egységszimbólumával kell kitölteni. Emiatt az adatok egyeztetése során az egységcsoport beállítása „Külsőleg karbantartott” lesz a többi Dynamics 365-alkalmazásban.
 + **Az egység más Dynamics 365-alkalmazások olyan egységcsoportjába tartozik, amely nem felel meg a Finance and Operations-alkalmazások társított egységosztályának (nincs egységosztály a Finance and Operations-alkalmazásokban a többi Dynamics 365-alkalmazás egységosztályához).** Ebben az esetben a msdyn_symbol mezőt véletlenszerű karakterlánccal kell kitölteni. Ügyeljen rá, hogy az értéknek egyedinek kell lennie a többi Dynamics 365-alkalmazásban.
 
 A Finance and Operations-egységek és -egységosztályok nem léteznek más Dynamics 365-alkalmazásokban:
 
-A kettős írás részeként a Finance and Operations alkalmazások egységcsoportjai, valamint a hozzájuk tartozó egységek jönnek létre és szinkronizálódnak más Dynamics 365 alkalmazásokban és Dataverse és az egységcsoport "Külsőleg karbantartott" lesz. Nincs szükség további rendszerindításra.
+Az egységcsoportoknak a Pénzügy és művelet alkalmazásokból való kettős írása részeként a megfelelő egységeket más Dynamics 365-alkalmazásokban Dataverse kell létrehozni és szinkronizálni, és az egységcsoport "Külsőleg karbantartva" lesz beállítva. Nincs szükség további rendszerindításra.
 
 Más Dynamics 365-alkalmazások egységei, amelyek nem találhatók meg Finance and Operations-alkalmazásokban:
 
-Az msdyn_symbol oszlop minden egységnél ki kell tölteni. Az egységek bármikor létrehozhatók a megfelelő egységosztályban (ha van ilyen) lévő Finance and Operations-alkalmazásokban. Ha az egységosztály nem létezik, először létre kell hozni az egységosztályt (vegye figyelembe, hogy a Finance and Operations alkalmazásokban nem hozhat létre egységosztályt, kivéve a kiterjesztés révén, ha bővíti a felsorolást), amely megfelel a többi Dynamics 365 alkalmazások egységcsoportjának. Ezt követően létrehozhatja az egységet. Ügyeljen rá, hogy a Finance and Operations-alkalmazások egységszimbólumának az egységhez a többi Dynamics 365-alkalmazásban korábban meghatározott msdyn_symbol szimbólumnak kell lennie.
+Az msdyn_symbol oszlop minden egységnél ki kell tölteni. Az egységek bármikor létrehozhatók a megfelelő egységosztályban (ha van ilyen) lévő Finance and Operations-alkalmazásokban. Ha az egységosztály nem létezik, akkor először létre kell hozni az egységosztályt (ne feledje, hogy a másik Dynamics 365-ös alkalmazásegységcsoportnak megfelelő mértékegységcsoportot csak kiterjesztéssel lehet létrehozni a Pénzügy és Művelet alkalmazásokban) egységosztályt. Ezt követően létrehozhatja az egységet. Ügyeljen rá, hogy a Finance and Operations-alkalmazások egységszimbólumának az egységhez a többi Dynamics 365-alkalmazásban korábban meghatározott msdyn_symbol szimbólumnak kell lennie.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Termékirányelvek: dimenzió, nyomon követés és tárolás csoportjai
 
@@ -201,17 +201,17 @@ Ha alkalmazásokat épít a Dataverse szolgáltatásban, akkor ügyeljen arra, h
 
 ### <a name="initial-synchronization-of-products"></a>Termékek kezdeti szinkronizálása
 
-Ha a kettős írás engedélyezve van, a Finance and Operations alkalmazások termékei szinkronizálva vannak a következőkkel Dataverse és az ügyfelek bevonására szolgáló alkalmazások. A következő termékek:Dataverse és más Dynamics 365-alkalmazások a kettős írás megjelenése előtt nem frissülnek, és nem egyeztethetők össze a Finance and Operations alkalmazások termékadataival.
+Ha engedélyezve van a kettős írás, a Pénzügy és a Művelet alkalmazásból származó termékek szinkronizálódnak Dataverse az ügyfél-kapcsolati alkalmazásokkal és az ügyfél-kapcsolati alkalmazásokkal. A kettős írású Dataverse írású alkalmazásokban és más Dynamics 365-alkalmazásokban létrehozott termékek nem frissülnek és nem egyeztetésre kerül a Pénzügy és az Üzemeltetési alkalmazásokból származó termékadatokkal.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>A Finance and Operations és más Dynamics 365-alkalmazások termékadatainak egyeztetése
 
-Ha ugyanazokat a termékeket megtartják (átfedésben/egyezésben) a Finance and Operations és a ben Dataverse és más Dynamics 365 alkalmazások, amikor a kettős írást engedélyezi, a Finance and Operations termékeinek szinkronizálása megtörténik, és ismétlődő sorok jelennek meg a Dataverse ugyanarra a termékre.
-A korábbi helyzet elkerülése érdekében, ha más Dynamics 365-alkalmazásokban vannak olyan termékek, amelyek átfedésben vannak/egyeznek a Finance and Operations szolgáltatással, akkor a kettős írást engedélyező rendszergazdának be kell indítania az oszlopokat.**Vállalat** (példa: "USMF") és **msdyn_productnumber** (például: "1234:Black:S"), mielőtt a termékek szinkronizálása megtörténik. Más szóval, ez a két oszlop a termékben Dataverse ki kell tölteni azzal a céggel a Finance and Operations-ben, amelyhez a terméket a termékszámmal és a termékszámmal egyeztetni kell.
+Ha ugyanazok a termékek lesznek átfedve(átfedik/egyezést) Dataverse a Pénzügy és műveletek, valamint más Dynamics 365-alkalmazásokban, akkor a termékeknek a Pénzügy és a Műveletek funkcióból való kettős írása engedélyezésekor sor kerül a pénzügy és a műveletek szinkronizálására, Dataverse és ugyanannál a terméknél többször jelennek meg sorok.
+A korábbi **helyzet** elkerülése érdekében, ha más Dynamics 365-alkalmazások olyan termékeket tartalmaznak, amelyek átfedik/egyeztetik a Pénzügyet és a Műveleteket, akkor a kettős írást engedélyező rendszergazdának el kell indítania a Vállalat oszlopokat (például: "USMF") **és msdyn_productnumber (** például: "1234:Black:S") a termékek szinkronizálása előtt. Más szóval a Dataverse termék e két oszlopát ki kell tölteni a Pénzügy és Műveletek megfelelő vállalatával, amellyel a terméket és annak termékszámát meg kell egyezni.
 
 Amikor ezután megkezdődik a szinkronizálás, a Finance and Operations szolgáltatásból származó termékeket a rendszer szinkronizálja a Dataverse szolgáltatásban és a többi Dynamics 365-alkalmazásban lévő egyeztetett termékekkel. Ez egyedi termékekre és termékváltozatokra is vonatkozik.
 
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>A termékadatok áttelepítése más Dynamics 365-alkalmazásokból a Finance and Operations szolgáltatásba
 
-Ha más Dynamics 365 alkalmazásokban vannak olyan termékek, amelyek nincsenek jelen a Finance and Operations szolgáltatásban, a rendszergazda először használhatja a **EcoResReleasedProductCreationV2Entity** ezen termékek Finance and Operationsba történő importálására. Ezután a fent ismertett módon egyeztetheti a Finance and Operations modulból és a többi Dynamics 365-alkalmazásból származó termékadatokat.
+Ha más Dynamics 365-alkalmazások olyan termékeket tartalmaznak, amelyek nem nincsenek meg a Pénzügy és műveletekben, **akkor a rendszergazda először az EcoResReleasedProductCreationV2Entity** funkcióval importálhatja ezeket a termékeket a Pénzügy és a Műveletek területről. Ezután a fent ismertett módon egyeztetheti a Finance and Operations modulból és a többi Dynamics 365-alkalmazásból származó termékadatokat.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: A pénzforgalmi előrejelzés beállításaival kapcsolatos hibák elhárítása
-description: Ez a témakör olyan kérdésekre ad választ, amelyek a pénzforgalmi előrejelzés konfigurálásakor merülhetnek fel. Tartalmazza a pénzforgalmi beállításokra, a pénzforgalom frissítésére és a Power BI pénzforgalomra vonatkozó gyakran feltett kérdéseket (GYIK) is.
+description: Ez a cikk olyan kérdésekre ad választ, amelyek a pénzforgalmi előrejelzés konfigurálásakor merültek fel. Tartalmazza a pénzforgalmi beállításokra, a pénzforgalom frissítésére és a Power BI pénzforgalomra vonatkozó gyakran feltett kérdéseket (GYIK) is.
 author: panolte
 ms.date: 03/23/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e2b5a8df84ff5159a85526251a6367857afa1808
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0e3438bc07fde28d5d9d2d5b3d83bbe70692c0bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878070"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>A pénzforgalmi előrejelzés beállításaival kapcsolatos hibák elhárítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan kérdésekre ad választ, amelyek a pénzforgalmi előrejelzés konfigurálásakor merülhetnek fel. Tartalmazza a pénzforgalmi beállításokra, a pénzforgalom frissítésére és a Power BI pénzforgalomra vonatkozó gyakran feltett kérdéseket (GYIK) is.
+Ez a cikk olyan kérdésekre ad választ, amelyek a pénzforgalmi előrejelzés konfigurálásakor merültek fel. Tartalmazza a pénzforgalmi beállításokra, a pénzforgalom frissítésére és a Power BI pénzforgalomra vonatkozó gyakran feltett kérdéseket (GYIK) is.
 
 ## <a name="why-is-cash-flow-shown-for-only-one-legal-entity"></a>Miért jelenik meg a pénzforgalom csak egyetlen jogi személynél?
 
