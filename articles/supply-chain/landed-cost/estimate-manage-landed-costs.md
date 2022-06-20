@@ -1,6 +1,6 @@
 ---
 title: Partraszállítási költségek becslése és kezelése
-description: A rendszer az automatikus költségbeállítás alapján határozza meg a partraszállítási költséget. Ez a témakör bemutatja, hogy hogyan lehet pontosabb becslést adni különböző helyzetek megadásával.
+description: A rendszer az automatikus költségbeállítás alapján határozza meg a partraszállítási költséget. Ez a cikk bemutatja, hogy hogyan lehet pontosabb becslést kínálni a különböző helyzetek meghatározásához.
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 630fb9dc8e7954fcbc4f54941d81de1caa657676
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2e7cdd7c7439a24ec75a59bcee1e8f42f37bb2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696207"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854441"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Partraszállítási költségek becslése és kezelése
 
@@ -50,7 +50,7 @@ Az alábbi táblázat bemutatja az egyes sablonokhoz rendelkezésre álló mező
 
 A **Költségbecslés** párbeszédpanelen új költségbecslést generálhat, amely a kiválasztott költségsablonon, kiválasztott cikkhalmazon és az utazás egyéb adatain alapul. Ezek a beállítások ezután meghatározzák az áruk becsült partraszállítási költségét. Ezek a költségbecslések elsősorban az elszámolóáras cikkekhez használatosak. Ha a becsült partraszállítási költséget hozzáadja a készletben meglévő áruk elszámolóáraihoz, akkor kisebb különbözeti tranzakciók merülnek fel, amikor az árukat hozzáadják egy hajóúthoz, mivel az elszámolóár tükrözi ezeknek a partraszállítási költségeknek a becslését.
 
-A **Költségbecslés** párbeszédpanel megnyitásához lépjen a **Partraszállítási költség \> Időszakos feladatok \> Költségbecslés** lehetőségre. Ezután állítsa be a következő alszakaszokban leírt mezőket. A becslés létrehozásához végül válassza az **OK** elemet. Ezt követpen megjelenik a **Költségbecslés** oldal (**Partraszállítási költség \> Lekérdezések \> Költségbecslések**), és megjeleníti az új becslést, amint azt a témakör későbbi része ismerteti.
+A **Költségbecslés** párbeszédpanel megnyitásához lépjen a **Partraszállítási költség \> Időszakos feladatok \> Költségbecslés** lehetőségre. Ezután állítsa be a következő alszakaszokban leírt mezőket. A becslés létrehozásához végül válassza az **OK** elemet. A **Költségbecslés** lap (**Partra \>\>** kerül költségbecslések) ezt követően megjelenik és megjeleníti az új becslést, amint azt a jelen cikk későbbi ismerteti.
 
 ### <a name="settings-on-the-parameters-tab"></a>Beállítások a Paraméterek lapon
 
@@ -91,7 +91,7 @@ Egy cikk térfogatának és/vagy súlyának megtekintéséhez vagy módosítás�
 
 ## <a name="manage-estimated-costs"></a>Becsült költségek kezelése
 
-A létrehozott költségbecslések megtekintéséhez és szerkesztéséhez kattintson a **Partraszállítási költség \> Lekérdezések \> Költségbecslések** elemre. A **Költségbecslések** oldalon a bal oldali listaablak az összes aktuális költségbecslést mutatja. A Művelet panel gombjaival kezelhet egy kiválasztott becslést. Ne feledje, hogy a **Költségbecslések** oldalon nem hozhat létre új költségbecslést. Ehelyett használja a **Költségbecslés** párbeszédpanelt (**Partraszállítási költség \> Időszakos feladatok \> Költségbecslés**) a témakörben korábban ismertetett módon.
+A létrehozott költségbecslések megtekintéséhez és szerkesztéséhez kattintson a **Partraszállítási költség \> Lekérdezések \> Költségbecslések** elemre. A **Költségbecslések** oldalon a bal oldali listaablak az összes aktuális költségbecslést mutatja. A Művelet panel gombjaival kezelhet egy kiválasztott becslést. Ne feledje, hogy a **Költségbecslések** oldalon nem hozhat létre új költségbecslést. Ehelyett használja a Költségbecslés **párbeszédpanelt** (**Partra kerül költség \>\> – Időszakos feladatok Költségbecslés**), amint azt a jelen cikk ismerteti.
 
 A **Költségbecslés** oldal bemutatja, hogyan származtatták az egyes becsült költségeket. Az egyes cikkek becsült partraszállítási költségét is megjeleníti. A költségbecslések a különféle árukhoz társított önköltségi ár és/vagy pénznem módosításával módosíthatók. A kapcsolódó hajóútköltségek a hajóút és a konténer szintjén is módosíthatók. Ha ezen a lapon módosítja a költségeket, akkor a program felkéri a költségbecslésben található cikkek becsült költségeinek újraszámítására. Ha készen áll, a becslések segítségével frissítheti a költségsablonban található cikkek önköltségi árát.
 

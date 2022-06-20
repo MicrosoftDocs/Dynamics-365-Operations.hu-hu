@@ -1,6 +1,6 @@
 ---
 title: ER-sablonok biztonságimentés-tárhelye
-description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) biztonságimentés-tárhelyét a sablonok helyreállításához.
+description: Ez a cikk bemutatja, hogy hogyan használható az elektronikus jelentéskészítés biztonsági másolattárolója a sablonok visszatérítéséhez.
 author: NickSelin
 ms.date: 04/29/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2ca847f6f11d5d849ea570cc3886e6470021e451
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767877"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880393"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-sablonok biztonságimentés-tárhelye
 
@@ -58,7 +58,7 @@ Ha a kimenő dokumentumok létrehozásához, beszállítói fizetések feldolgoz
 
 A **Hibás sablonok visszaállítási eljárásának automatikus kötegelt futtatása** paraméter beállításához végezze el az alábbi lépéseket:
 
-1. A Finance and Operations alkalmazásban Nyissa meg a **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációk** oldalt.
+1. A Finance and Operations alkalmazásban nyissa meg a **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációs oldal** menüt.
 2. A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
 3. A **Felhasználó paraméterei** párbeszédpanelen állítsa be a szükséges értéket a **Hibás sablonok visszaállítási eljárásának automatikus kötegelt futtatása** paraméterhez.
 
@@ -83,7 +83,7 @@ Alapértelmezésként a folyamat automatikusan létrehozza az ER formátumúkonf
 
 Ha a **Sablonok biztonsági másolatai elkészítésének leállítása** elem **Igen** értékre van beállítva, és nem szeretné megtartani azokat a biztonsági másolatokat, amelyek korábban a sablonokról készültek válassza a **Biztonsági mentés tárhelyének karbantartása** lehetőséget az **Elektronikus jelentéskészítés paraméterei** oldalon.
 
-Ha frissítette a környezetet a Finance and Operations 10.0.5 (október 2019) verzióra, és egy olyan új környezetbe kíván áttérni, amely futtatható ER formátumkonfigurációkat tartalmaz válassza ki a **Biztonsági mentés táhelyének kitöltése** lehetőséget az **Elektronikus jelentéskészítési paraméterek** oldalon még az áttelepítés előtt. Ez a gomb elindítja az összes elérhető sablon biztonsági másolatainak elkészítésének folyamatát, így a sablonokat a biztonsági mentési tárolóhelyen tárolja.
+Ha frissítette a környezetet a Finance and Operations 10.0.5 (október 2019) verzióra, és egy olyan új környezetbe kíván áttérni, amely futtatható ER formátumkonfigurációkat tartalmaz válassza ki a **Biztonsági mentést kitöltése** lehetőséget az **Elektronikus jelentéskészítési paraméterek** oldalon még az áttelepítés előtt. Ez a gomb elindítja az összes elérhető sablon biztonsági másolatainak elkészítésének folyamatát, így a sablonokat a biztonsági mentési tárolóhelyen tárolja.
 
 ![Elektronikus jelentéskészítés paraméterei lap.](./media/GER-BackupTemplates-5.png)
 

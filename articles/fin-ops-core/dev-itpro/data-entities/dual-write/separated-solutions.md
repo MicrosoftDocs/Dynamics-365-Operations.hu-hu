@@ -1,6 +1,6 @@
 ---
 title: Két írásos alkalmazás- és előírásos csomag elválasztása
-description: A kettős írású Application Orchestration csomag már nem egy csomag, hanem kisebb csomagokra lett bontva. Ez a témakör ismerteti az egyes csomagok megoldásait és leképezését, valamint a más csomagoktól való függőségét.
+description: A kettős írású Application Orchestration csomag már nem egy csomag, hanem kisebb csomagokra lett bontva. Ez a cikk bemutatja az egyes csomagok megoldásait és leképezését, valamint a többi csomagtól való függőségét.
 author: RamaKrishnamoorthy
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716552"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874812"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Két írásos alkalmazás- és előírásos csomag elválasztása
 
@@ -42,7 +42,7 @@ Mivel ez egy csomag volt, ez a csomag "minden vagy semmi" helyzetet hozott létr
 
 ![Csomag elválasztva.](media/separated-package-1.png)
 
-Ez a témakör ismerteti az egyes csomagok megoldásait és leképezését, valamint a más csomagoktól való függőségét.
+Ez a cikk bemutatja az egyes csomagok megoldásait és leképezését, valamint a többi csomagtól való függőségét.
 
 ## <a name="dual-write-application-core"></a>Két írásos Application Core
 
@@ -94,7 +94,7 @@ A következő térképeket tartalmazza ez a csomag.
 | Etnikumok              | cdm_ethnicorigins                |
 | Kompenzáció - beosztás funkciója   | cdm_jobfunctions                 |
 | Pozíciók V2                | cdm_jobpositions                 |
-| Munkák                        | cdm_jobs                         |
+| Feladatok                        | cdm_jobs                         |
 | Kompenzáció - beosztás típusa       | cdm_jobtypes                     |
 | Nyelvkódok              | cdm_languages                    |
 | Beosztás típusa               | cdm_positiontypes                |

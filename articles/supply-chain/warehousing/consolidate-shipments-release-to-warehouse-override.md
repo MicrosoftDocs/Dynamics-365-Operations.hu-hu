@@ -1,6 +1,6 @@
 ---
 title: Szállítmányok összesítése a szállítmányösszesítési szabályzat felülbírálása esetén
-description: Ez a témakör egy olyan esetet mutat be, amikor egy vagy több értékesítési sort manuálisan kell kiadni a raktárba a Kiadás a raktárba oldalról, és a rendszer által definiált szállítmánykonszolidációs irányelvet felül kell írni a kiadás előtt.
+description: Ez a cikk olyan helyzetről ad le, amikor egy vagy több értékesítési sort manuálisan kell kiadni a raktárnak a Kiadás raktárba lapról a raktárba, és a rendszer által meghatározott szállítmánykonszolidációi házirendet a kiadás előtt felül kell bírálni.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8b1c8ac41fe0941c9bbfce20ce593eafe5699ef1
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 680941adeba1fc1cd54a02fb366d3d5903938d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675459"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878700"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>Szállítmányok összesítése a szállítmányösszesítési szabályzat felülbírálása esetén
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör egy olyan esetet mutat be, amikor egy vagy több értékesítési sort manuálisan kell kiadni a raktárba a **Kiadás a raktárba** oldalról, és a rendszer által definiált szállítmánykonszolidációs irányelvet felül kell írni a kiadás előtt. Előfordulhat, hogy a szállítmánykonszolidációs irányelvének felülbírálására szükség lehet, ha például egy olyan rendelést, amelynél a nyitott szállítmányok általában nem lettek összesítve, nyitott szállítmányokkal kell összesíteni.
+Ez a cikk olyan helyzetről ad le, amikor egy vagy több értékesítési sort manuálisan kell kiadni a **raktárnak** a Kiadás raktárba lapról a raktárba, és a rendszer által meghatározott szállítmánykonszolidációi házirendet a kiadás előtt felül kell bírálni. Előfordulhat, hogy a szállítmánykonszolidációs irányelvének felülbírálására szükség lehet, ha például egy olyan rendelést, amelynél a nyitott szállítmányok általában nem lettek összesítve, nyitott szállítmányokkal kell összesíteni.
 
 Az eset során létrehoz egy értékesítési rendelést, majd felülírja az alapértelmezett szállítmánykonszolidációs irányelvet, mielőtt a rendeléseket kiadja a raktárba.
 
 ## <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-Az ebben a témakörben szereplő minden egyes forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Microsoft Dynamics 365 Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.
+A jelen cikkváltozat a Microsoft szabványos bemutatóadatában található értékekre és rekordokra hivatkozik Dynamics 365 Supply Chain Management. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Szállítmánykonszolidációs irányelvek és a termékszűrők beállítása
 

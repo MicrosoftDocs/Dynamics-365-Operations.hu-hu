@@ -1,6 +1,6 @@
 ---
 title: Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services szolgáltatáshoz
-description: A témakör bemutatja, hogyan kereshet segítséget a Finance and Operations alkalmazásokhoz vagy a Microsoft Dynamics Lifecycle Services (LCS) rendszerhez.
+description: Ez a cikk bemutatja, hogyan lehet segítséget kapni a Pénzügy és műveletek alkalmazások, illetve a Microsoft Dynamics Lifecycle Services (LCS) alkalmazással kapcsolatban.
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e697c574efb0b04db6cb04d01c41066a0ac3974
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 278a62c0393be503352db39dddeca1095e7e4a5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068034"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866431"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services szolgáltatáshoz
 
@@ -28,7 +28,7 @@ ms.locfileid: "8068034"
 
 [!INCLUDE [PEAP](../../../includes/peap-2.md)]
 
-A témakör bemutatja, hogyan kereshet segítséget a Finance and Operations alkalmazásokhoz vagy a Microsoft Dynamics Lifecycle Services (LCS) rendszerhez. 
+Ez a cikk bemutatja, hogyan lehet segítséget kapni a Pénzügy és műveletek alkalmazások, illetve a Microsoft Dynamics Lifecycle Services (LCS) alkalmazással kapcsolatban. 
 
 <table>
 <thead>
@@ -51,7 +51,7 @@ A témakör bemutatja, hogyan kereshet segítséget a Finance and Operations alk
 <td>Az <a href="https://lcs.dynamics.com/">LCS</a> rendszerben használja a <strong>Megoldáskereső</strong> eszközt a Microsoft Tudásbázis (KB) cikkeinek, gyorsjavításainak és megkerülő megoldásainak megtalálásához a bejelentett problémák megoldására. Megtudhatja, hogy melyik jelentett probléma van folyamatban, vagy már megoldották egy adott funkcionális területre vonatkozóan. További tudnivalókért lásd: <a href="issue-search-lcs.md">Megoldáskereső (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Kérjen támogatást a Finance and Operations alkalmazásban.</td>
+<td>Segítség a Pénzügy és műveletek alkalmazáson belül.</td>
 <td>Válassza ki az alkalmazás jobb felső sarkában látható <strong>Súgó</strong> gombot (<strong>?</strong>), majd válassza a <strong>Támogatás</strong> lehetőséget. A problémák az <strong>Aktív problémák</strong> LCS-lapon lesznek bejelentve. Itt az adminisztrátorok meghatározhatják, hogy saját támogatást biztosítanak, vagy elküldik a Microsoft számára a kérdéseket.</td>
 </tr>
 <tr>

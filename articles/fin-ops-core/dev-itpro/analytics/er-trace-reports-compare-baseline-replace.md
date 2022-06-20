@@ -1,6 +1,6 @@
 ---
 title: A létrehozott ER-jelentések eredményeinek nyomon követésének és a kiindulási értékekkel való összehasonlításának fejlesztései
-description: Ez a témakör a Microsoft Dynamics 365 for Finance and Operations 10.0.3-as verzió (2019. június) kiindulási ER-funkciójának javításait ismerteti.
+description: Ez a témakör a 10.0.3-as verzió (2019. június) eri Microsoft Dynamics 365 for Finance and Operations alapkonfigurációja által tartalmazott javításokat ismerteti.
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847401"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>A létrehozott ER-jelentések eredményeinek nyomon követésének és a kiindulási értékekkel való összehasonlításának fejlesztései
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a fejlesztések első körét, amelyet az Elektronikus jelentéskészítés (ER) keretrendszer alaptervfunkciójában végeztek. Ezek a fejlesztések a Microsoft Dynamics 365 for Finance and Operations 10.0.3-as (2019. júniusi) és a újabb verziókban érhetők el.
+Ez a témakör az elektronikus jelentési keretrendszer (ER) kiindulási funkcióját javítására tett első lépésekkel ismerteti. Ezek a fejlesztések a Microsoft Dynamics 365 for Finance and Operations 10.0.3-as (2019. júniusi) és a újabb verziókban érhetők el.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Alaptervszabályok beállításának automatizálása
 
-[A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel](er-trace-reports-compare-baseline.md) témakör bemutatja, hogy az ER-keretrendszer konfigurálása segítségével hogyan lehet információt gyűjteni az ER formátum-végrehajtásokról, és értékelni a végrehajtások eredményeit. Az ebben a témakörben szereplő példa bemutatja, hogy milyen lépéseket kell végrehajtani.
+A [Nyomkövetés jelentéseredményeket](er-trace-reports-compare-baseline.md) generált, és összeveti azokat a kiindulási értékekkel. Ez a cikk bemutatja, hogyan kell konfigurálni az ER-keretrendszert az ER-formátum-végrehajtásokkal kapcsolatos adatok gyűjtésére és a végrehajtások eredményének kiértékeléséhez. Az ebben a példában példaként bemutatja a teljesítendő lépéseket.
 
 Az alábbiakban látható néhány ilyen lépés:
 
@@ -45,7 +45,7 @@ Az alábbiakban látható néhány ilyen lépés:
 
 ## <a name="example-automate-the-setting-of-baseline-rules"></a>Példa: Alaptervszabályok beállításának automatizálása
 
-A példa lépéseinek végrehajtásához először végre kell hajtania [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a alaptervértékekkel](er-trace-reports-compare-baseline.md) témakör példájának lépéseit, egészen az „Új alapterv hozzáadása egy megtervezett ER-formátumhoz” szakaszig.
+A példában található lépések befejezéséhez először végre kell végrehajtani a Példában a Jelentés nyomon követésében létrehozott eredményekben található lépéseket, [és](er-trace-reports-compare-baseline.md) össze kell őket hasonlítani a kiindulási értékekkel a "Tervezett ER-formátum új kiindulási alapértékének hozzáadása" szakaszig.
 
 ### <a name="review-added-baseline"></a>Hozzáadott alapterv áttekintése
 
@@ -80,7 +80,7 @@ A alaptervet a a rendszer hozzáadta a kiválasztott **ER-alaptervek tanulási f
 
 ### <a name="run-the-format"></a>A formátum futtatása
 
-Most már készen áll [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a alaptervértékekkel](er-trace-reports-compare-baseline.md) témakör példájának fennmaradó lépéseit megtenni, a „Megtervezett ER-formátum futtatása, és a napló áttekintése az eredmények elemzéséhez” szakasztól kezdve.
+Ezzel készen [áll](er-trace-reports-compare-baseline.md) arra, hogy a Példában a létrehozott jelentés eredményei között fennmaradó lépéseket befejezze, és összehasonlítsa azokat a kiinduló értékekkel, kezdve a "Tervezett ER-formátum futtatásával, és az eredmények elemzéséhez tekintse át a naplót" szakasztól kezdve.
 
 > [!NOTE]
 > Amikor törli az automatikusan hozzáadott alaptervszabályt az **Alaptervek** gyorslapon, a hivatkozott mellékletet nem törli automatikusan a program.
@@ -91,7 +91,7 @@ Ha egy ER-formátum úgy van kialakítva, hogy a formátum futtatásakor módosu
 
 ## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a>Példa: Alapterv konfigurálása úgy, hogy figyelmen kívül hagyja az ER-kimenet állandóan változó részeit
 
-A példa lépéseinek végrehajtásához először végre kell hajtania [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel](er-trace-reports-compare-baseline.md) témakör példájának lépéseit.
+A példában található lépések befejezéséhez először [végre kell követni a Példában a Jelentés nyomonkövetése által generált eredményeket, és össze kell hasonlítani azokat a kiindulási értékekkel.](er-trace-reports-compare-baseline.md)
 
 ### <a name="modify-a-configured-er-format"></a>Konfigurált ER-formátum módosítása
 
@@ -142,7 +142,7 @@ A kiválasztott ER-formátum-összetevő hozzá van adva az összetevők listáj
 
 ### <a name="make-a-new-baseline-rule"></a>Új alaptervszabály létrehozása
 
-Kövesse az aktuális témakör korábbi, „Példa: Kiindulási szabályok beállításának automatizálása” szakaszának lépéseit. Egy értesítés figyelmeztet arra, hogy a kimenő fájl az alapterv-beállítások alapján lett létrehozva, és a formátum kötésének kényszerű helyettesítése történt.
+Hajtsa végre a cikk korábbi, "Példa: Automatizálja a kiindulási szabályok beállítását" című rész lépéseit. Egy értesítés figyelmeztet arra, hogy a kimenő fájl az alapterv-beállítások alapján lett létrehozva, és a formátum kötésének kényszerű helyettesítése történt.
 
 ![Konfigurációk oldal értesítése.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Képernyőkép – Értesítés a Konfigurációk oldalon")
 

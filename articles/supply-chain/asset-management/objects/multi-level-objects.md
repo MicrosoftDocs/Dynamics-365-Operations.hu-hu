@@ -1,6 +1,6 @@
 ---
 title: Többszintű eszközök
-description: Ez a témakör a többszintű eszközök létrehozásának és törlésének módját ismerteti.
+description: Ez a témakör bemutatja a többszintű eszközök létrehozásához és törléséhez szükséges eszközöket.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c7c97f8b05a1bf76b2f2c869e6868689f388d06337064f04af839f2403357
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769611"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908772"
 ---
 # <a name="multi-level-assets"></a>Többszintű eszközök
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769611"
 
  
 
-Ez a témakör a többszintű eszközök létrehozásának és törlésének módját ismerteti. Az eszközöket és a kapcsolódó aleszközöket hierarchikus fastruktúrában lehet létrehozni. Így megjelenítheti az eszközök közötti kapcsolatokat és függőségeket. A karbantartási munkákat a fastruktúra minden szintjéhez lehet kapcsolni. Statisztikákat egyéni szintekhez, vagy az összes aleszközszint összességéhez is létre lehet hozni.
+Ez a témakör bemutatja a többszintű eszközök létrehozásához és törléséhez szükséges eszközöket. Az eszközöket és a kapcsolódó aleszközöket hierarchikus fastruktúrában lehet létrehozni. Így megjelenítheti az eszközök közötti kapcsolatokat és függőségeket. A karbantartási munkákat a fastruktúra minden szintjéhez lehet kapcsolni. Statisztikákat egyéni szintekhez, vagy az összes aleszközszint összességéhez is létre lehet hozni.
 
 Az **Összes eszköz** listoldalon (**Eszközkezelés** \> **Általános** \> **Eszközök** \> **Összes eszköz**) az **Eszköz** oszlopban megtlaálható az eszközök listája hierarchikus sorrendben. A **Fölérendelt** oszlop a kapcsolódó fölérendelt elemet mutatja. Ezenkívül, ha már létrehoztak eszközöket és aleszközöket, akkor a **Kapcsolódó információk** ablaktábla **Eszközfa** szakaszában láthatók az eszközök fastruktúrában.
 

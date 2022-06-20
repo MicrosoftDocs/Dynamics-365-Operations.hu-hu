@@ -1,6 +1,6 @@
 ---
 title: Teljes költségfelosztási módszer
-description: Ez a témakör bemutatja a teljes költségfelosztás (TCA) használatának irányelveit. A TCA egy számítási módszer, amely a köteghez tartozó fő receptúracikk és a receptúrában meghatározott társtermékek közötti költséget adja meg.
+description: Ez a cikk bemutatja a teljes költségfelosztás (TCA) használatának irányelveit. A TCA egy számítási módszer, amely a köteghez tartozó fő receptúracikk és a receptúrában meghatározott társtermékek közötti költséget adja meg.
 author: JennySong-SH
 ms.date: 04/15/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 948b2e91f8ab8ffe8d704159b60a281391e5bd6c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 213db8303c27934050f5b414a67f6e510486dc94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862685"
 ---
 # <a name="total-cost-allocation-method"></a>Teljes költségfelosztási módszer
 

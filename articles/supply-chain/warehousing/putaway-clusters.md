@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 559ca80976955d6328cb4d6b2020d5662460cef9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863650"
 ---
 # <a name="putaway-clusters"></a>Betárolási fürtök
 
@@ -27,7 +27,7 @@ A betárolási fürtökkel egyszerre több azonosítótábla felvételére is le
 
 ## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>A fürt be- és kikapcsolása
 
-Az ebben a témakörben *leírt* funkciók használatához a fürt berakodó funkcióját be kell kapcsolva lennie a rendszeren. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Funkciókezelés munkaterület Fürt berakodó funkcióját keresi.
+Az ebben a cikkben *leírt* funkciók használatához a fürt berakodó funkcióját be kell kapcsolva lennie a rendszeren. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Funkciókezelés munkaterület Fürt berakodó funkcióját keresi.
 
 ## <a name="setup-for-the-example-scenario"></a>Beállítás a példahelyzethez
 

@@ -1,6 +1,6 @@
 ---
 title: Az elszámolóárakkal kapcsolatos költségszámítási verziókra vonatkozó korlátozások
-description: Ez a témakör az elszámolóárakra vonatkozó költségszámítási verziókra érvényes korlátozásokat mutatja be.
+description: Ez a témakör az elszámolóáras költségszámítási verziókra vonatkozó korlátozásokat ismerteti.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11bf14b2926fd4ff053697bef8b7dad781948a2c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8c5c00ae8952e2c80d97d039271a6f5c63e9a72f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867985"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Az elszámolóárakkal kapcsolatos költségszámítási verziókra vonatkozó korlátozások
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az elszámolóárakra vonatkozó költségszámítási verziókra érvényes korlátozásokat mutatja be. 
+Ez a témakör az elszámolóáras költségszámítási verziókra vonatkozó korlátozásokat ismerteti. 
 
 A következő korlátozások segítenek biztosítani a szabványos költségszámítási elvek alkalmazását:
 
@@ -37,9 +37,9 @@ A következő korlátozások segítenek biztosítani a szabványos költségszá
 
 -  Az anyagjegyzék-számításokhoz egyszintű alábontást kell alkalmazni.
 
-Az elszámolóárakhoz tartozó cikk-költség adatokat át lehet másolni az elszámolóárakat vagy tervezett költségeket tartalmazó másik költségszámítási verzióba. A tervezett költségekre vonatkozó cikk-költség adatokat azonban olyan költségszámítási verzióba nem lehet másolni, amely elszámolóárakat tartalmaz, mert a témakörben feljebb ismertetett megkötések nem érvényesek a tervezett költségekre.
+Az elszámolóárakhoz tartozó cikk-költség adatokat át lehet másolni az elszámolóárakat vagy tervezett költségeket tartalmazó másik költségszámítási verzióba. A tervezett költségekhez kapcsolódó cikk-költség adatokat azonban nem lehet olyan költségszámítási verzióba másolni, amely elszámolóárakat tartalmaz, mert a cikk korábbi felsorolása nem vonatkozik a tervezett költségekre.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Költségszámítási verziók áttekintése](costing-versions.md)
 

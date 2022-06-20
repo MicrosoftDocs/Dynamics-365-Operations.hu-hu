@@ -1,6 +1,6 @@
 ---
 title: Toborzási folyamatok kezelése
-description: Ez a témakör azt a fogalmat írja le, amely szerint a toborzási folyamat lépéseit a toborzási folyamat során a toborzók nyomon követhetik.
+description: Ez a témakör azt a koncepciót írja le, amellyel a toborzási folyamat lépéseit a toborzók nyomon követhetik.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb7cc1db906ba0cd07caaa1d82a12182f78b19ba
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 1ada6dfc9b227c7ae4ca873e8354d1fcc11ecbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735374"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910319"
 ---
 # <a name="manage-recruiting-processes"></a>Toborzási folyamatok kezelése
 
 > [!IMPORTANT]
-> Az ebben a témakörben található toborzási funkciókat a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni. 
+> A cikk toborzási funkcióit a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni. 
 
 
-Ez a témakör egy olyan koncepciót ismertet, amellyel a toborzók követhetik a toborzási folyamat lépéseit, köztük a nyitott beosztások meghirdetését és a pályázók felvételét, követhetik a pályázók és pályázatok adatait, pályázókat interjúztathatnak, és kiválaszthatak egy vagy több jelöltet a szervezet nyitott beosztásainak betöltésére.
+Ez a cikk egy fogalom recruiters segítségével nyomon követheti a lépéseket a toborzási folyamatban, többek között a nyitott pozíciók hirdetése és a pályázók felvételéhez szükséges, pályázó és az alkalmazás nyomon követésére, kikérdezése pályázók és egy vagy több jelöltek ki kell töltenie a szervezeten belüli nyitott pozíciók kiválasztása.
 
 ## <a name="overview"></a>Áttekintés
 

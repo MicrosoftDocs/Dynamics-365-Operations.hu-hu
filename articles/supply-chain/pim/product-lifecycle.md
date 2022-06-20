@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5d1ea1517c75393b1c8d7c95c8aa2405042b4532
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850641"
 ---
 # <a name="product-lifecycle-state-overview"></a>A termékéletciklus-állapot áttekintése
 
@@ -74,7 +74,7 @@ Az adatentitások támogatják a termékéletciklus-állapotokat, és az életci
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Elavult termékek és termékváltozatok keresése
 
-Lefuttatható egy elemzésszimuláció az elavult kiadott termékek vagy termékváltozatok felkutatására, és ezt követően frissíthető a termékéletciklus-állapotuk. Az elavult termékek felkutatásához lásd: [Elavult termékváltozatok keresése és termékéletciklus-állapot hozzárendelése](tasks/obsolete-product-variants.md). Ez az témakör bemutatja, hogyan lehet megkeresni az elavult kiadott termékeket vagy termékváltozatokat, és hogyan lehet termékéletciklus-állapotot társítani az elavult termékekhez. Azt is bemutatja, hogyan lehet megtekinteni a szimulációs eredményeket, és kiértékeli, hogy hány termékhez és termékváltozathoz lesz új termékéletciklus-állapot társítva, ha a frissítést szimuláció nélkül futtatjuk.  
+Lefuttatható egy elemzésszimuláció az elavult kiadott termékek vagy termékváltozatok felkutatására, és ezt követően frissíthető a termékéletciklus-állapotuk. Az elavult termékek felkutatásához lásd: [Elavult termékváltozatok keresése és termékéletciklus-állapot hozzárendelése](tasks/obsolete-product-variants.md). Ez a cikk bemutatja, hogyan lehet megtalálni az elavult kiadott termékeket vagy termékváltozatokat, és hogyan lehet az elavult termékekhez társítani egy termék életciklus-állapotát. Azt is bemutatja, hogyan lehet megtekinteni a szimulációs eredményeket, és kiértékeli, hogy hány termékhez és termékváltozathoz lesz új termékéletciklus-állapot társítva, ha a frissítést szimuláció nélkül futtatjuk.  
 
 Az elemzés szimulációs üzemmódban való futtatásával az elavultként azonosított termékek és termékváltozatok egy erre a célra szolgáló képernyőn jelennek meg, ahol egyszerűen ellenőrizhetők. Az elemzés tranzakciókat és alapadatokat keres azzal a céllal, hogy azonosítsa azokat a termékeket, amelyek iránt nincs igény egy változtatható időperióduson belül, és nincs igényt eredményező alapadat. Az elemzésből ki lehet zárni a beállítható időn belül újonnan kiadott termékeket. Amikor az elemzésszimuláció visszaadja a várt eredményt, a felhasználó lefuttathatja az elemzést, és új termékéletciklus-állapotot állíthat be az összes, az elemzés által elavultként azonosított termékhez.  
 
@@ -97,7 +97,7 @@ Használja a következő feltételeket a kiadott termékek vagy termékváltozat
 - Nincs aktív vagy jövőbeli értékesítési vagy beszerzésiszerződés-sor a termékre vagy a termékváltozatra.
 - A termék vagy a termékváltozat nincs használatban egy olyan anyagjegyzékben, amely társítva van egy le nem járt, jóváhagyott, tervezéshez aktív anyagjegyzék-verzióhoz a termékre vagy a termékváltozatra nézve.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 - [Új termékéletciklus-állapot létrehozása](tasks/new-product-lifecycle-state.md)
 - [Alapértelmezett termékéletciklus-állapot létrehozása](tasks/default-product-lifecycle-state.md)

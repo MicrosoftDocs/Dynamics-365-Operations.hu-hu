@@ -1,6 +1,6 @@
 ---
 title: Szállítókódok beállítása
-description: Ez a témakör ismerteti azokat az információkat, amelyeket egy új szállítói számla létrehozása esetén meg kell adnia.
+description: Ez a témakör ismerteti, hogy milyen típusú információkat kell megadnia az új szállítói számlák létrehozásakor.
 author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d1ddf126305f39a35f61b9a98da1c6bce29372cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676974"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875275"
 ---
 # <a name="set-up-vendor-accounts"></a>Szállítókódok beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti azokat az információkat, amelyeket egy új szállítói számla létrehozása esetén meg kell adnia.
+Ez a témakör ismerteti, hogy milyen típusú információkat kell megadnia az új szállítói számlák létrehozásakor.
 
 Szállítói fiók létrehozásakor meg kell adnia a szállítóra vonatkozó információkat. Ez az információ arra szolgál, hogy az adatokat automatikusan beírja a dokumentumokba és nyomonköveti az olyan tevékenységeket, amelyek érintik a szállítót. Például a szállító következő információit konfigurálhatja:
 

@@ -1,6 +1,6 @@
 ---
 title: Raktári folyamatok minőségkezelése
-description: A témakör raktárfolyamatok funkcióhoz tartozó minőségkezelési folyamatról tartalmaz információkat. Ez a funkció kiterjeszti a minőségkezelési funkciókat, és lehetővé teszi a felhasználók számára, hogy a speciális raktárkezelés modul segítségével cikk-mintavételezési funkciókat integráljanak a raktárba.
+description: Ez a cikk a raktári folyamatok minőségkezelésével kapcsolatban tartalmaz tájékoztatást. Ez a funkció kiterjeszti a minőségkezelési funkciókat, és lehetővé teszi a felhasználók számára, hogy a speciális raktárkezelés modul segítségével cikk-mintavételezési funkciókat integráljanak a raktárba.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a8a7ac8266c14791137f9eda51b5abb5a59e5961
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857837"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Raktári folyamatok minőségkezelése
 
@@ -69,7 +69,7 @@ Mielőtt a raktári munka automatikusan létrehozható lenne a készlet minősé
 1. Minden munkarendelés-típusnál állítsa be a helyutasításokat, amelyek alkalmazzák a megfelelő minőségellenőrzési helyeket, ahová a készletet át kell helyezni. A minőség-ellenőrzés befejezése után a _Minőségi rendelés_ munkarendelés-típushoz tartozó helyutasítás gondoskodik arról, hogy az új célhely ki legyen jelölve, hogy a készlet áthelyezhető legyen a minőség-ellenőrzés helyéről.
 1. A megfelelő mobileszköz-menüelemek beállításával támogathatja a bevételezett készlet mozgását a minőség-ellenőrzési helyre, valamint a minőségellenőrzésen átmenő, illetve elbukó készlet áthelyezését minőség-ellenőrzés helyétől egy új helyre.
 
-A témakör végén található [példa forgatókönyvben](#example-scenario) talál egy részletes útmutatót a beállítás elvégzéséről.
+Lépésről lépésre bemutatja a beállítás befejezésének a műveletét, [és](#example-scenario) tekintse meg a példahelyzetet a cikk végén.
 
 ## <a name="enable-a-warehouse-for-quality-management"></a>Raktár engedélyezése minőségkezeléshez
 
@@ -188,7 +188,7 @@ A következő példák **Hivatkozási típusa** értéke a _Beszerzés_ és az *
 | Betöltés | Teljes azonosítótábla | Igen _(zárolt/nem szerkeszthető)_ | <p>Hely: Igen</p><p>Azonosítótábla: Igen _(zárolt/nem szerkeszthető)_</p> | Igen | 3 | <p>**Két elem:**</p><ul><li>**Rendelési sor mennyisége az A cikkhez: 120 EA (4 raklap)**</li><li>**Rendelési sor mennyisége a B cikkhez: 90 EA (3 raklap)**</li></ul><p>**Egy rakomány, két terhelési sor minden rendelési sorhoz**</p><ol><li>Fogadás regisztrálása a Raktárkezelés mobilalkalmazásban az A cikkhez, 30 EA-hoz, LP1<p>Minőségi cikkek mintavétel munka 30 EA számára</p><p>1. minőségi rendelés 30 EA-hoz</p></li><li>Fogadás regisztrálása a Raktárkezelés mobilalkalmazásban az A cikkhez, 30 EA-hoz, LP2<p>Beszerzési rendelési munka 30 EA-hoz (elraktározás)</p></li><li>Fogadás regisztrálása a Raktárkezelés mobilalkalmazásban az A cikkhez, 30 EA-hoz, LP3<p>Beszerzési rendelési munka 30 EA-hoz (elraktározás)</p></li><li>Fogadás regisztrálása a Raktárkezelés mobilalkalmazásban az A cikkhez, 30 EA-hoz, LP4<p>Minőségi cikkek mintavétel munka 30 EA számára</p><p>1. minőségi rendelés 30 EA-hoz</p></li><li>Fogadás regisztrálása a Raktárkezelés mobilalkalmazásban a B cikkhez, 30 EA-hoz, LP5<p>Minőségi cikkek mintavétel munka 30 EA számára</p><p>1. minőségi rendelés 30 EA-hoz</p></li><li>Fogadás regisztrálása a Raktárkezelés mobilalkalmazásban a B cikkhez, 30 EA-hoz, LP6<p>Beszerzési rendelési munka 30 EA-hoz (elraktározás)</p></li><li>Fogadás regisztrálása a Raktárkezelés mobilalkalmazásban az A cikkhez, 30 EA-hoz, LP7<p>Beszerzési rendelési munka 30 EA-hoz (elraktározás)</p></li></ol> |
 | Betöltés | Százalék = 10 | Igen _(zárolt/nem szerkeszthető)_ | <p>Helyszín: Nem</p><p>Azonosítótábla: Nem</p> | Nem | Nem alkalmazható | <p>**Rendelési sor mennyisége: 100 EA**</p><p>**Nincs rakomány létrehozva. A rendelési hatókör alkalmazva.**</p><ol><li>Fogadás regisztrálása a Raktárkezelés mobilalkalmazásban az A cikkhez, 50 EA-hoz, LP1<p>Minőségi cikkek mintavétel munka 5 EA számára</p><p>1. minőségi rendelés 5 EA-hoz</p><p>Beszerzési rendelési munka 45 EA-hoz (elraktározás)</p></li><li>Fogadás regisztrálása a Raktárkezelés mobilalkalmazásban az A cikkhez, 50 EA-hoz, LP2<p>Minőségi cikkek mintavétel munka 5 EA számára</p><p>1. minőségi rendelés 5 EA-hoz</p><p>Beszerzési rendelési munka 45 EA-hoz (elraktározás)</p></li></ol> |
 
-Amikor egy dolgozó érvényesít egy olyan minőségi rendelést, amely az előző táblában látható, a rendszer automatikusan minőségi rendelési munkát hoz létre, hogy a készletet áthelyezze a minőség-ellenőrzési helyről arra a helyre, ami definiálva van a helyutasításokban a _Minőségi rendelés_ munkarendeléstípushoz. A minőségi rendelésre vonatkozó teszteredmények alapján bármilyen helyet beállíthat erre a célra, például a visszáru vagy a tárolás helyét. Erre a beállításra példát a [példa forgatókönyv](#example-scenario) tartalmaz a témakör végén.
+Amikor egy dolgozó érvényesít egy olyan minőségi rendelést, amely az előző táblában látható, a rendszer automatikusan minőségi rendelési munkát hoz létre, hogy a készletet áthelyezze a minőség-ellenőrzési helyről arra a helyre, ami definiálva van a helyutasításokban a _Minőségi rendelés_ munkarendeléstípushoz. A minőségi rendelésre vonatkozó teszteredmények alapján bármilyen helyet beállíthat erre a célra, például a visszáru vagy a tárolás helyét. Erre a beállításra a [cikk](#example-scenario) végén példaként tekintse meg a helyzetet.
 
 Újra megnyithatja azt a minőségi rendelést, amely már ellenőrizve lett, feltéve, hogy a minőség-ellenőrzési helyről a készlet áthelyezéséhez kapcsolódó minőségi rendelési munka **Munkaállapot** értéke nem *Lezárt* vagy *Folyamatban*.
 

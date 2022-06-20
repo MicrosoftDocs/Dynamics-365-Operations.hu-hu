@@ -1,8 +1,8 @@
 ---
-title: Készlet láthatóságának készletfelosztása
-description: Ez a témakör bemutatja a készletfelosztási funkció beállítását és használatát, amelynek segítségével félreteheti a külön kijelölt készletet, hogy a legnyereségesebb csatornákat és vevőket teljesíteni tudja.
+title: Inventory Visibility – készlet felosztása
+description: Ez a cikk bemutatja a készletfelosztási funkció beállítását és használatát, amelynek segítségével félreteheti a külön kijelölt készletet, hogy a legnyereségesebb csatornákat és vevőket teljesíteni tudja.
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 4293ead4ccfc9ba04e8b9da437134b4e97569026
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8787468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852505"
 ---
-# <a name="inventory-visibility-inventory-allocation"></a>Készlet láthatóságának készletfelosztása
+# <a name="inventory-visibility-inventory-allocation"></a>Inventory Visibility – készlet felosztása
 
 [!include [banner](../includes/banner.md)]
 
@@ -98,7 +98,7 @@ Itt vannak a kiindulási számított intézkedések:
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>További fizikai mértékek hozzáadása a felosztásra elérhető számított mértékhez
 
-A felosztás csak akkor használható, ha be van állítva a felosztásra elérhető számított mérték (`@iv`.`@available_to_allocate`). Van például egy `fno` adatforrás, a `onordered` mérték, `pos``inbound` az adatforrás és a mérték, és az összeg és a mérték kiosztása az `fno.onordered``pos.inbound` rendelkezésren, az összeg és a. Ebben az esetben tartalmaznia `@iv.@available_to_allocate` kell a képletet `pos.inbound``fno.onordered` és a képletet. Egy példa:
+A felosztás csak akkor használható, ha be van állítva a felosztásra elérhető számított mérték (`@iv.@available_to_allocate`). Van például egy `fno` adatforrás, a `onordered` mérték, `pos``inbound` az adatforrás és a mérték, és az összeg és a mérték kiosztása az `fno.onordered``pos.inbound` rendelkezésren, az összeg és a. Ebben az esetben tartalmaznia `@iv.@available_to_allocate` kell a képletet `pos.inbound``fno.onordered` és a képletet. Példa:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound`– `@iv.@allocated`
 
@@ -110,11 +110,12 @@ A csoportneveket a Készlet **láthatósága power app konfigurációja oldalon 
 
 Ha például négy \[`channel` csoportnevet használ, és ezeket a `customerGroup` következőre állítsa, akkor `region``orderType`\] ezek a nevek a konfigurációfrissítési API hívata esetén érvényesek lesznek a felosztással kapcsolatos kérések esetén.
 
-### <a name="allcoation-using-tips"></a>Tippeket használó allcoation
+### <a name="allocation-using-tips"></a>Felosztás tippek használatával
 
-- A felosztási funkciónak minden termékre a termékindex-hierarchia konfigurációjában beállított termékindex-hierarchia [szerint ugyanazon dimenziószinten kell használnia](inventory-visibility-configuration.md#index-configuration). Az indexhierarchia lehet például Hely, Hely, Corus, Méret. Ha egy termékhez mennyiséget foglal le a Hely, Hely, Szín szinten. A következő foglaláskor a Hely, Hely, Szín szinten is meg kell jelenni, ha a Helyet, a Helyet, a Szín, a Méret vagy a Hely, a Hely szintet használja, az adatok nem lesznek egységesek.
+- A felosztási funkciónak *minden* termékre a termékindex-hierarchia konfigurációjában beállított termékindex-hierarchia [szerint ugyanazon dimenziószinten kell használnia](inventory-visibility-configuration.md#index-configuration). Tegyük fel például, hogy az indexhierarchia \[`Site`, `Location`, `Color`. `Size`\] Ha egy termékhez \[`Site` mennyiséget foglal le a dimenziószinten, `Location` akkor `Color`\] a következő alkalommal, amikor fel szeretné osztani ezt a terméket, ugyanazon a szinten kell felosztani, \[`Site`, `Location`. `Color`\] A szint \[`Site`, az `Location`, `Color` vagy a `Size`\]\[`Site`, használata `Location`\] esetén az adatok inkonzisztensek lesznek.
 - A felosztási csoport nevének módosítása nem fogja befolyásolni a szolgáltatásban mentett adatokat.
 - A felosztásnak azt követően kell történnie, hogy a termékhez a pozitív tényleges készletmennyiség van megszava.
+- Ha egy magas felosztási szintű *csoport termékeit* alcsoporthoz is fel kell osztani, használja az `Reallocate` API-t. Például van \[`channel` egy felosztási csoport hierarchiája, `customerGroup`, `region`, `orderType`\]\[és néhány terméket online felosztási csoportból szeretne felosztani, a VIP-t\]\[az Online, VIP, EU\] alfelosztási csoportba, `Reallocate` az API segítségével áthelyezni a mennyiséget. Ha az API-t használja `Allocate`, a rendszer felosztja a mennyiséget a virtuális közös készletből.
 
 ### <a name="using-the-allocation-api"></a><a name="using-allocation-api"></a> A felosztási API használata
 
@@ -128,7 +129,7 @@ Jelenleg öt felosztási API van megnyitva:
 
 #### <a name="allocate"></a>Lefoglalás
 
-Egy, a megadott `Allocate` dimenziókkal rendelkezik termék foglalásához hívja meg az API-t. Ez a kérés törzsének sémája.
+Egy, a megadott `Allocate` dimenziókkal rendelkezik termék foglalásához hívja meg az API-t. A kérelem törzsének sémája.
 
 ```json
 {
@@ -179,7 +180,7 @@ A művelet `Unallocate` sztornírozhatja az API-t `Allocate`. A negatív mennyis
 
 #### <a name="reallocate"></a>Újrafokozni
 
-Az API segítségével `Reallocate` egy felosztott mennyiséget át lehet áthelyezni egy másik csoportkombinációba. Ez a kérés törzsének sémája.
+Az API segítségével `Reallocate` egy felosztott mennyiséget át lehet áthelyezni egy másik csoportkombinációba. A kérelem törzsének sémája.
 
 ```json
 {
@@ -234,7 +235,7 @@ Az API segítségével `Reallocate` egy felosztott mennyiséget át lehet áthel
 
 #### <a name="consume"></a>Felhasználás
 
-Az API-t `Consume` használja a felhasználási mennyiség felosztással szembeni felad feladára. Ezt az API-t használhatja például a felosztott mennyiség valós intézkedésekhez való áthelyezésre. Ez a kérés törzsének sémája.
+Az API-t `Consume` használja a felhasználási mennyiség felosztással szembeni felad feladára. Ezt az API-t használhatja például a felosztott mennyiség valós intézkedésekhez való áthelyezésre. A kérelem törzsének sémája.
 
 ```json
 {
@@ -295,9 +296,9 @@ Most három egész készletet értékesít, és kiveszi őket a felosztási kés
 
 A hívás után a termék felosztott mennyisége 3-val csökken. A készlet láthatósága ezen felül -3`pos.inbound` = *tényleges készletváltozási eseményt is generál*. Másik lehetőségként megtarthatja az `pos.inbound` értéket, és felhasználhatja a felosztott mennyiséget. Ebben az esetben azonban vagy létre kell hozni egy másik fizikai mértéket a felhasznált mennyiségek megtartása vagy az előre megadott mérték használata esetén `@iv.@consumed`.
 
-Ebben a kérelemben figyelje meg, hogy a vessző igénylés törzsében használt fizikai mértékegységnek a kiszámított mérték módosítótípusával (Kiegészítés vagy Kivonás) ellentétes módosítótípust kell alkalmaznia. Tehát ebben a felhasznált törzsben `iv.inbound` az érték `Subtraction` van, nem `Addition`.
+Ebben a kérelemben figyelje meg, hogy a felhasznált kérés törzsében használt fizikai mértékhez az ellentétes módosító típust (Kiegészítés vagy Kivonás) kell használni, ellentétben a számított mérték módosítótípusával. Tehát ebben a felhasznált törzsben `iv.inbound` az érték `Subtraction` van, nem `Addition`.
 
-`fno` Az adatforrás nem használható a felhasznált törzsben, mert mindig az volt az igény, hogy a készlet láthatósága nem módosíthatja az adatforrás `fno` adatait. Az adatforgalom egy egy mód, ami azt jelenti, `fno` hogy az adatforrás mennyiségi változásainak az Ellátásilánc-kezelés környezetből kell erednie.
+Az `fno` adatforrás nem használható a felhasznált törzsben, mert mindig az volt az igény, hogy a készlet láthatósága nem módosíthatja az adatforrás adatait `fno`. Az adatforgalom egy egy mód, ami azt jelenti, `fno` hogy az adatforrás mennyiségi változásainak az Ellátásilánc-kezelés környezetből kell erednie.
 
 #### <a name="consume-as-a-soft-reservation"></a><a name="consume-to-soft-reserved"></a> Felhasznált, mint soft foglalás
 
@@ -343,7 +344,7 @@ Ebben a kérelemben ne figyelje meg, hogy `iv.softreserved` az értéke `Additio
 
 #### <a name="query"></a>Lekérdezés
 
-Az API `Query` segítségével beolvassa egyes termékek felosztással kapcsolatos adatait. Az eredmények szűkítését dimenziószűrők és felosztási csoportszűrők használatával lehet szűrni. A dimenzióknak exatcly módon meg kell egyezniük a beolvassani kívánt eredménysel, \[például a hely=1, a hely=11\]\[nem kapcsolódó találat lesz a hely=1, hely=11, szín=piros \].
+Az API `Query` segítségével beolvassa egyes termékek felosztással kapcsolatos adatait. Az eredmények szűkítését dimenziószűrők és felosztási csoportszűrők használatával lehet szűrni. A dimenzióknak pontosan meg kell egyezniük a beolvassani kívánt eredménysel, \[például az 1. hely=11\]\[. hely esetén a nem kapcsolódó eredmények a hely=1, hely=11, szín=piros\] lesz.
 
 ```json
 {

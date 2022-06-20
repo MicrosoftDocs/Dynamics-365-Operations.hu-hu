@@ -1,6 +1,6 @@
 ---
 title: Megerősítés és áthelyezés
-description: Ez a témakör azt mutatja be, hogyan kell használni a Megerősítés és áthelyezés funkciót, amely lehetővé teszi a felhasználók számára a rakományok szállítását, mielőtt elvégzik a rakományhoz társított összes munkát.
+description: Ez a cikk bemutatja a Megerősítés és átvitel funkció használatát, amellyel a felhasználók még az összes, az ilyen rakományhoz kapcsolódó munka befejezése előtt ki tudják szállítozni a raktárból a rakományokat.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0d34dd1b33467aa1ea3a723e1baaf7f06285c3fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9257d8f9e6ed62ac0b19b0cdc8fd858e8b2f97a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675487"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900564"
 ---
 # <a name="confirm-and-transfer"></a>Megerősítés és áthelyezés
 
@@ -55,11 +55,11 @@ Csak olyan rakományok oszthatók fel, amelyek megfelelnek az összes következ�
 
 ## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>A megerősítési és átviteli funkció be- és kikapcsolása
 
-Az ebben a témakörben leírt *funkciók* használatához a rendszernek be kell kapcsolva lennie a Megerősítés és átvitel szolgáltatásnak. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Funkciókezelés munkaterület Megerősítés és átvitel szolgáltatásának keresésével be- vagy kikapcsolhatja ezt a funkciót.
+A jelen cikkben leírt funkciók használatához a rendszernek be kell kapcsolva lennie *a* Megerősítés és átvitel szolgáltatásnak. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Funkciókezelés munkaterület Megerősítés és átvitel szolgáltatásának keresésével be- vagy kikapcsolhatja ezt a funkciót.
 
 ## <a name="set-up-confirm-and-transfer"></a>A megerősítés és áthelyezés beállítása
 
-A *Megerősítés és áthelyezés* funkció használatához be kell kapcsolnia azt minden megfelelő rakománysablonban. Ezenkívül az igényektől függően előfordulhat, hogy a munkasablonok előkészítésére is szükség van a funkció támogatásához. Ha szeretne végighaladni a jelen témakörben később megadott példákon, állítsa be a rendszert az ebben a szakaszban ismertetett módon. (Ez a forgatókönyv az **USMF** bemutatóadatokon alapul.)
+A *Megerősítés és áthelyezés* funkció használatához be kell kapcsolnia azt minden megfelelő rakománysablonban. Ezenkívül az igényektől függően előfordulhat, hogy a munkasablonok előkészítésére is szükség van a funkció támogatásához. Ha a cikk későbbi részében ismertetett példaesetben kíván dolgozni, állítsa be a rendszert az ebben a szakaszban leírt módon. (Ez a forgatókönyv az **USMF** bemutatóadatokon alapul.)
 
 ### <a name="prepare-your-load-templates"></a>A rakomány sablonjainak előkészítése
 
@@ -69,7 +69,7 @@ A *Megerősítés és áthelyezés* funkció használatához be kell kapcsolnia 
 
 ### <a name="prepare-your-work-templates"></a>Munkasablonok előkészítése
 
-Ez a beállítás nem szükséges minden helyzetben. Az itt megjelenített példa lehetővé teszi a munka megszakítását a szállítással annak érdekében, hogy támogassa a jelen témakörben később megadott példaforgatókönyvet. Más lehetőségek is vannak az eredmény elérésére.
+Ez a beállítás nem szükséges minden helyzetben. Az itt látható példa gondoskodik arról, hogy a munkát szállítmányok szerint szét lehet bontani, hogy támogassák a cikk későbbi példahelyzetét. Más lehetőségek is vannak az eredmény elérésére.
 
 1. Lépjen a **Raktárkezelés \> Beállítás \> Munka \> Munkasablonok** elemre.
 1. A lap felső részén található rácsban válasszon ki egy olyan meglévő munkasablont, amelynél be szeretné állítani a *Megerősítés és áthelyezés* funkciót. (Ha az **USMF** bemutatóadatokkal dolgozik, válassza ki a **51 kitárolás szakaszhoz** munkasablont.) Másik lehetőségként hozzon létre egy új munkasablont.

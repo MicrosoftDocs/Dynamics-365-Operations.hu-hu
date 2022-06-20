@@ -1,6 +1,6 @@
 ---
 title: Raktárak szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management raktárainak a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
+description: Ez a cikk a raktárak szinkronizálásához használt sablonokat és mögöttes feladatokat tárgyalja Dynamics 365 Supply Chain Management Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f38d2dfdba1f2afa1005bd740cba27afe9dcb0ec
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7fac40ebd8a1f7994997e12f1231e5522a0c0e24
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062136"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865063"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Raktárak szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
 
@@ -29,7 +29,7 @@ ms.locfileid: "8062136"
 
 
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management raktárainak a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
+Ez a cikk a raktárak szinkronizálásához használt sablonokat és mögöttes feladatokat tárgyalja Dynamics 365 Supply Chain Management Dynamics 365 Field Service.
 
 [![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 

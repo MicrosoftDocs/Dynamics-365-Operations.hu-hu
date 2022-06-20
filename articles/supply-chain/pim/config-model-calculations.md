@@ -1,6 +1,6 @@
 ---
 title: Termékkonfigurációs modell számításai
-description: Ez a témakör azt mutatja be, hogyan hozhat létre számításokat attribútumokhoz egy termékkonfigurációs modellben
+description: Ez a témakör azt ismerteti, hogyan lehet számításokat létrehozni a termékkonfigurációs modell attribútumaihoz.
 author: t-benebo
 ms.date: 03/18/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-18
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 349fed3ca75b94db2f421a1ff3c3553c96c202c37d59857a3d973f3de8f995ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 35057a4fc59732fea24e4d953cafed633a936ec1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878932"
 ---
 # <a name="product-configuration-model-calculations"></a>Termékkonfigurációs modell számításai
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan hozhat létre számításokat attribútumokhoz egy termékkonfigurációs modellben.
+Ez a témakör azt ismerteti, hogyan lehet számításokat létrehozni a termékkonfigurációs modell attribútumaihoz.
 
 ## <a name="prerequisites"></a>Előfeltételek
 

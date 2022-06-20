@@ -1,6 +1,6 @@
 ---
 title: Beszerzési és forrásparaméterek kezdőlapja
-description: Ez a témakör a Beszerzés és forrás modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel.
+description: Ez a cikk a beszerzéshez és forráshoz rendelkezésre álló súgócikkek és egyéb erőforrások listáját tartalmazza.
 author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf56084147edcdf8951d4a267611c10dc7eb6dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
-ms.translationtype: MT
+ms.openlocfilehash: 68409b15a3f4874d05a43931136ce91097c4f904
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673018"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885870"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beszerzési és forrásparaméterek kezdőlapja
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Beszerzés és forrás modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel.
+Ez a cikk a beszerzéshez és forráshoz rendelkezésre álló súgócikkek és egyéb erőforrások listáját tartalmazza.
 
 A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgáltatásigény azonosításától, a termék beszerzésén keresztül egészen a kézhezvételig, számlázásig, illetve a szállító felé esedékes kifizetés feldolgozásáig. A beszerzési folyamatokat beszerzési irányelvek és munkafolyamatok megadásával tudja az üzleti igényekhez igazítani. Általános információkat itt talál: [A Beszerzések és forrás modul áttekintése](procurement-sourcing-overview.md). További források az alábbi listában találhatók.
 

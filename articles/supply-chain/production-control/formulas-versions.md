@@ -1,6 +1,6 @@
 ---
 title: Receptúrák és receptúraverziók
-description: Ez a témakör receptúrákkal és receptúraverziókkal kapcsolatban tartalmaz tájékoztatást. A receptúra határozza meg az anyagokat, az összetevőket és egy adott folyamat eredményeit a folyamatszerű gyártás során. Receptúrák segítségével tervezhet és állíthat elő termékeket a folyamatszerű gyártásban.
+description: Ez a cikk a receptúrákról és receptúraverziókról nyújt tájékoztatást. A receptúra határozza meg az anyagokat, az összetevőket és egy adott folyamat eredményeit a folyamatszerű gyártás során. Receptúrák segítségével tervezhet és állíthat elő termékeket a folyamatszerű gyártásban.
 author: johanhoffmann
 ms.date: 09/12/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7111811d14aaf0f6c8b814877897884e4cd76f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 236a283736078e80506a1ecaab53c013a91c3721
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570273"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844148"
 ---
 # <a name="formulas-and-formula-versions"></a>Receptúrák és receptúraverziók
 

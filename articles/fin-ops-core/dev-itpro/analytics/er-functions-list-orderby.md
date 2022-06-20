@@ -1,6 +1,6 @@
 ---
 title: ORDERBY ER-függvény
-description: A témakör tájékoztatást nyújt az ORDERBY Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
+description: Ez a cikk az ORDERBY Elektronikus jelentés (ER) funkcióval kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 963d55bcf98a9109c8b6ceb57edf5b55f15a2b0f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 1a922405ea23d2b1ff5ac062785e68626edbc8f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883759"
 ---
 # <a name="orderby-er-function"></a>ORDERBY ER-függvény
 
@@ -40,18 +40,18 @@ ORDERBY (location, list, expression 1[, expression 2, …, expression N])
 ```
 
 > [!NOTE]
-> Ezt a szintaxist a Microsoft támogatja Dynamics 365 Finance 10.0.25 és újabb verzió.
+> Ez a szintaxis a Microsoft Dynamics 365 Pénzügyi verzió 10.0.25-ös és újabb verzióiban támogatott.
 
 ## <a name="arguments"></a>Argumentumok
 
-`location`:*[Húr](er-formula-supported-data-types-primitive.md#string)*
+`location`: Karakterlánc *[...](er-formula-supported-data-types-primitive.md#string)*
 
-Az a hely, ahol a válogatást le kell futtatni. A következő opciók érvényesek:
+Az a hely, ahol a rendezést futtatni kell. A következő lehetőségek érvényesek:
 
 - "Lekérdezés"
-- "Emlékül"
+- "InMemory"
 
-`list`:*[Rekordlista](er-formula-supported-data-types-composite.md#record-list)*
+`list`: *[rekordlista](er-formula-supported-data-types-composite.md#record-list)*
 
 A *Rekordlista* adattípus adatforrásának érvényes elérési útja.
 
@@ -73,76 +73,76 @@ A rekordok eredményül kapott listája.
 
 ### <a name="syntax-1"></a>Szintaxis 1
 
-Az adatok rendezése mindig az alkalmazásszerver memóriájában történik. További részletekért lásd [példa 1](#example-1).
+Az adatok rendezése mindig az alkalmazáskiszolgáló memóriájában történik. További részleteket az [1. példában talál](#example-1).
 
 ### <a name="syntax-2"></a>Szintaxis 2
 
 ### <a name="sorting-in-memory"></a>Rendezés a memóriában
 
-Amikor az`location` argumentum így van megadva **Emlékül**, az adatok rendezése egy alkalmazásszerver memóriájában történik. További részletekért lásd [2. példa](#example-2).
+Ha az `location` argumentum **InMemory** típusú, az adatok rendezése az alkalmazáskiszolgáló memóriájában történik. További részleteket a [2. példában talál](#example-2).
 
-### <a name="sorting-in-database"></a>Rendezés adatbázisban
+### <a name="sorting-in-database"></a>Rendezés az adatbázisban
 
-Amikor az`location` argumentum így van megadva **Lekérdezés**, az adatok rendezése adatbázis szinten történik. Ebben az esetben a`list` Az argumentumnak a következők egyikére kell mutatnia [Elektronikus jelentéstétel (ER)](general-electronic-reporting.md) adatforrások, amelyek megadják azt az alkalmazásforrást, amelyhez közvetlen adatbázis-lekérdezés hozható létre:
+Ha az `location` argumentum Lekérdezés, **az** adatok rendezése az adatbázis szintjén történik. Ebben az esetben az `list`[argumentumnak a következő elektronikus jelentési (ER)](general-electronic-reporting.md) adatforrásra kell mutatnie, amely meghatározza azt az alkalmazásforrást, amely számára közvetlen adatbázis-lekérdezést lehet létrehozni:
 
-- Adatforrás a *Táblázat rekordok* típus
-- Az adatforrás kapcsolata a *Táblázat rekordok* típus
-- Adatforrás a *Számítási mező* típus
+- A táblarekord-típus *adatforrása*
+- A Tábla rekordtípus egyik adatforrásának *kapcsolata*
+- A Számítás mezőtípus *adatforrása*
 
-A`expression 1` és`expression N` Az argumentumoknak egy olyan ER adatforrás mezőire kell mutatniuk, amelyek meghatározzák az alkalmazásforrás releváns mezőit, amelyekhez közvetlen adatbázis-lekérdezés is létrehozható.
+Az `expression 1` argumentumok `expression N` csak olyan ER-adatforrás mezőire mutatnak, amelyeken az alkalmazásforrás olyan mezői is megadhatók, amelyekre közvetlen adatbázis-lekérdezést lehet létrehozni.
 
-Ha nem lehet közvetlen adatbázis-lekérdezést létrehozni, akkor érvényesítés [hiba](er-components-inspections.md#i18) az ER modell leképezés tervezőjében fordul elő. Az üzenet arról tájékoztatja, hogy a függvényt tartalmazó ER kifejezés, amely a `ORDERBY` függvényt tartalmazza nem futtatható futásidőben.
+Ha nem lehet közvetlen adatbázis-lekérdezést létrehozni, ellenőrzési hiba történik [az](er-components-inspections.md#i18) ER modellleképezés-tervezőben. Az üzenet arról tájékoztatja, hogy a függvényt tartalmazó ER kifejezés, amely a `ORDERBY` függvényt tartalmazza nem futtatható futásidőben.
 
-A jobb teljesítmény érdekében javasoljuk, hogy használja a **Lekérdezés** opció, ha a rendezés olyan alkalmazás-adatforrásokhoz van konfigurálva, amelyek nagyszámú rekordot tartalmazhatnak (például tranzakciós alkalmazástáblákhoz).
+A jobb teljesítmény **érdekében érdemes a Lekérdezés** lehetőséget használni olyan alkalmazás-adatforrások rendezése esetén, amelyek nagy számú rekordot tartalmazhatnak (például tranzakciós alkalmazástáblák esetén).
 
 > [!NOTE]
-> A`ORDEBY` maga a függvény nem fordítható le közvetlen adatbázis-lekérdezésre. Ezért az ezt a függvényt tartalmazó ER adatforrás nem lekérdezhető. Nem használható olyan ER-funkciókban sem, mint pl [SZŰRŐ](er-functions-list-filter.md) és [ALLITEMSQUERY](er-functions-list-allitemsquery.md), ahol csak lekérdezhető adatforrások használhatók.
+> Magát `ORDEBY` a függvényt nem lehet lefordítani közvetlen adatbázis-lekérdezésre. Ennek megfelelően nem lehet lekérdezni olyan ER-adatforrást, amely tartalmazza ezt a funkciót. Az ER-függvények [hatókörében (például FILTER](er-functions-list-filter.md)[és ALLITEMSQUERY](er-functions-list-allitemsquery.md)) nem használható, ahol csak lekérdezésre használható adatforrások használhatók.
 
-További részletekért lásd [3. példa](#example-3) és [4. példa](#example-4).
+A további részleteket lásd a [3](#example-3)[. és a 4. példában](#example-4).
 
-### <a name="comparability"></a>Összehasonlíthatóság
+### <a name="comparability"></a>Összehasonlíthatóságát
 
-Mivel az SQL adatbázismotor és a Finance alkalmazásszerver eltérő rangsorolási értéket használhat egyetlen karakterhez, ugyanazon rekordlista rendezési eredménye eltérhet, ha [Húr](er-formula-supported-data-types-primitive.md#string) mezőt a rendezésre használják. További részletekért lásd [5. példa](#example-5).
+Mivel az SQL adatbázismotor és a Pénzügy alkalmazáskiszolgáló más rangsorolási értéket használhat egy karakterhez, a rekordok azonos listájának rendezési eredménye eltérő lehet, amikor a [Rendezés](er-formula-supported-data-types-primitive.md#string) karakterlánc mezőt használ. További részleteket az [5. példában talál](#example-5).
 
 ## <a name="example-1-in-memory-default-execution"></a><a name="example-1"></a> 1. példa: Alapértelmezett végrehajtás a memóriában
 
 Ha megadja a *Számított mező* típusú **DS** adatforrást és az tartalmazza a `SPLIT ("C|B|A", "|")` kifejezést, akkor a `FIRST( ORDERBY( DS, DS. Value)).Value` kifejezés az **„A”** szöveges értéket adja vissza.
 
-## <a name="example-2-in-memory-explicit-execution"></a><a name="example-2"></a> 2. példa: Explicit végrehajtás a memóriában
+## <a name="example-2-in-memory-explicit-execution"></a><a name="example-2"></a> 2. példa: memóriában való explicit végrehajtás
 
-Ha **Eladó** ER adatforrásként van konfigurálva *Táblázat rekordok* típusra hivatkozik **VendTable** táblázat, mindkét kifejezés`ORDERBY (Vendor, Vendor.'name()')` és a kifejezés`ORDERBY ("InMemory", Vendor, Vendor.'name()')` visszaadja a szállítók listáját, amely név szerint növekvő sorrendben van rendezve.
+Ha **a Szállító egy ER** *adatforrásként* van beállítva a VendTable **táblára hivatkozó táblarekord-típushoz,**`ORDERBY (Vendor, Vendor.'name()')` mind a kifejezés, mind a kifejezés a szállítók listáját adja vissza, amely név szerint, növekvő sorrendben van rendezve.`ORDERBY ("InMemory", Vendor, Vendor.'name()')`
 
-Amikor konfigurálja a kifejezést`ORDERBY ("Query", Vendor, Vendor.'name()')` az ER modell leképezés tervezőjében egy érvényesítés [hiba](er-components-inspections.md#i8) tervezéskor fordul elő, mert a`Vendor.'name()'` Az elérési út olyan alkalmazási metódusra utal, amelynek logikája nem fordítható le közvetlen adatbázis-lekérdezésre.
+Amikor az `ORDERBY ("Query", Vendor, Vendor.'name()')` ER modellleképezés tervezőben konfigurálja a kifejezést, [ellenőrzési](er-components-inspections.md#i8) hiba történik a tervezéskor, mivel az elérési út olyan alkalmazás metódusra hivatkozik, `Vendor.'name()'` amely logikája nem fordítható le közvetlen adatbázis-lekérdezésre.
 
-## <a name="example-3-database-query"></a><a name="example-3"></a> 3. példa: Adatbázis lekérdezés
+## <a name="example-3-database-query"></a><a name="example-3"></a> 3. példa: adatbázis-lekérdezés
 
-Ha **Adótranzakció** ER adatforrásként van konfigurálva *Táblázat rekordok* típusra hivatkozik **TaxTrans** táblázat, a kifejezés`ORDERBY ("Query", TaxTransaction, TaxTransaction.TaxCode)` az alkalmazás adatbázis szintjén rendezi a rekordokat, és visszaadja az adótranzakciók listáját, amely adókód szerint van rendezve növekvő sorrendben.
+**Ha a TaxTransaction** a TaxTrans *táblára hivatkozó táblarekord-típus ER* **adatforrásaként** van konfigurálva, a kifejezés az alkalmazás adatbázisának szintjén rendezi a rekordokat, `ORDERBY ("Query", TaxTransaction, TaxTransaction.TaxCode)` és az adókódok alapján növekvő sorrendben rendezi a tranzakciók listáját.
 
 ## <a name="example-4-queryable-data-sources"></a><a name="example-4"></a> 4. példa: Lekérdezhető adatforrások
 
-Ha **Adótranzakció** ER adatforrásként van konfigurálva *Táblázat rekordok* típusra hivatkozik **TaxTrans** asztal, a **TaxTransactionFiltered** Az ER adatforrás konfigurálható úgy, hogy tartalmazza a kifejezést`FILTER(TaxTransaction, TaxCode="VAT19")` amely lekéri a tranzakciókat egy adott adószámhoz. Mivel a beállított **TaxTransactionFiltered** Az ER adatforrás lekérdezhető, a kifejezés`ORDERBY ("Query", TaxTransactionFiltered, TaxTransactionFiltered.TransDate)` konfigurálható úgy, hogy visszaadja a szűrt adótranzakciók listáját, amely a tranzakció dátuma szerint van rendezve növekvő sorrendben.
+**Ha a TaxTransaction** *·* **a TaxTrans** táblára hivatkozó táblarekord-típus ER adatforrásaként van konfigurálva, **a TaxTransactionFiltered** ER `FILTER(TaxTransaction, TaxCode="VAT19")` adatforrás konfigurálható úgy, hogy tartalmazza azt a kifejezést, amely egy adott adókód tranzakcióit fogja bekérni. **Mivel a beállított TaxTransactionFiltered** ER adatforrás lekérdezhető, a kifejezés beállítható úgy, `ORDERBY ("Query", TaxTransactionFiltered, TaxTransactionFiltered.TransDate)` hogy a tranzakciódátum szerint növekvő sorrendben állítsa vissza a szűrt adótranzakciók listáját.
 
-Ha beállítod **TaxTransactionOrdered** mint ER adatforrás a *Számított mező* kifejezést tartalmazó típus`ORDERBY ("Query", TaxTransaction, TaxTransaction.TransDate)` és egy ER adatforrás a *Számított mező* kifejezést tartalmazó típus`FILTER(TaxTransactionOrdered, TaxCode="VAT19")`, egy érvényesítés [hiba](er-components-inspections.md#i18) tervezéskor fordul elő az ER modell leképezés tervezőjében. Ez a hiba azért fordul elő, mert a [SZŰRŐ](er-functions-list-filter.md#usage-notes) függvénynek egy lekérdezhető ER adatforrásra kell hivatkoznia, de a **TaxTransactionOrdered** adatforrás, amely tartalmazza a`ORDERBY` függvény nem lekérdezhető.
+**Ha a TaxTransactionOrdered adatforrásként konfigurálja a TaxTransactionOrdered** *·*`ORDERBY ("Query", TaxTransaction, TaxTransaction.TransDate)` adatforrást annak a Számított mezőtípusnak, amely a kifejezést és a kifejezést tartalmazó Számított mezőtípus EGYIK ER-adatforrását tartalmazza, akkor az *ER* `FILTER(TaxTransactionOrdered, TaxCode="VAT19")`[modellleképezés](er-components-inspections.md#i18) tervezője tervezési időpontban érvényesítési hibát jelez. Ez a [hiba azért fordul elő, mert a FILTER](er-functions-list-filter.md#usage-notes) függvény első argumentumának egy lekérdezhető ER adatforrásra kell hivatkozni, **de a funkciót tartalmazó TaxTransactionOrdered**`ORDERBY` adatforrás nem lekérdezhető.
 
 ## <a name="example-5-comparability"></a><a name="example-5"></a> 5. példa: Összehasonlíthatóság
 
 ### <a name="prerequisites"></a>Előfeltételek
 
-1. Adja meg az adatforrást **DS1** a *Számított mező* kifejezést tartalmazó típus `SPLIT ("D1|_D2|D3", "|")`.
-2. Nyissa meg a **[Pénzügyi dimenzió értékek](../../../finance/general-ledger/financial-dimensions.md)** oldalt, és válassza ki a **Költségközpont** dimenzió.
-3. Adja meg a következő dimenzióértékeket: **D1**,**\_ D2**, és **D3**.
+1. Adja meg a kifejezést **tartalmazó Számított mezőtípus** DS1 *adatforrását* `SPLIT ("D1|_D2|D3", "|")`.
+2. Nyissa meg **[a Pénzügyi dimenzióértékek lapot](../../../finance/general-ledger/financial-dimensions.md)**, és válassza ki a **CostCenter dimenziót**.
+3. Adja meg a következő dimenzióértékeket: **D1**, **\_ D2** és **D3**.
 
 ### <a name="sorting-in-memory"></a>Rendezés a memóriában
 
-1. Adatforrás konfigurálása **DS2** a *Számított mező* kifejezést tartalmazó típus `ORDERBY("InMemory", DS1, DS1.Value)`.
-2. Figyeljük meg, hogy a kifejezés`FIRST(DS2).Value` visszaadja a szöveges értéket **"D1"**, a kifejezés`INDEX(DS2, COUNT(DS2)).Value` visszaadja a szöveges értéket **"\_ D2"**, és a kifejezés`STRINGJOIN(DS2, DS2.Value, "|")` visszaadja a szöveges értéket **"D1\| D3\|\_ D2"**.
+1. Konfigurálja a kifejezést **tartalmazó Számított mezőtípus** DS2 *adatforrását* `ORDERBY("InMemory", DS1, DS1.Value)`.
+2. Ne feledjük `FIRST(DS2).Value`**, hogy a kifejezés a "D1**" szövegértéket adja vissza, `INDEX(DS2, COUNT(DS2)).Value`**a kifejezés a "\_ D2**" szöveges értéket adja eredményül, `STRINGJOIN(DS2, DS2.Value, "|")`**a kifejezés a "D1\| D3\|\_ D2**" szövegértéket.
 
-### <a name="sorting-in-database"></a>Rendezés adatbázisban
+### <a name="sorting-in-database"></a>Rendezés az adatbázisban
 
-1. Adja meg az adatforrást **DS3** a *Táblázat rekordok* típusra hivatkozik **FinancialDimensionValueEntity** entitás.
-2. Adatforrás konfigurálása **DS4** a *Számított mező* kifejezést tartalmazó típus `FILTER(DS3, DS3.FinancialDimension="CostCenter")`.
-3. Adatforrás konfigurálása **DS5** a *Számított mező* kifejezést tartalmazó típus `ORDERBY(DS4, DS4.DimensionValue)`.
-4. Figyeljük meg, hogy a kifejezés`FIRST(DS5).Value` visszaadja a szöveges értéket **"\_ D2"**, a kifejezés`INDEX(DS5, COUNT(DS5)).Value` visszaadja a szöveges értéket **"D3"**, és a kifejezés`STRINGJOIN(DS5, DS5.Value, "|")` visszaadja a szöveges értéket **"\_ D2\| D1\| D3"**.
+1. **A FinancialDimensionValueEntity entitásra hivatkozó táblarekord-típus adatforrásának DS3-a.** *·* **·**
+2. Konfigurálja a kifejezést **tartalmazó Számított mezőtípus** DS4 *adatforrását* `FILTER(DS3, DS3.FinancialDimension="CostCenter")`.
+3. Konfigurálja a kifejezést **tartalmazó Számított mezőtípus** DS5 *adatforrását* `ORDERBY(DS4, DS4.DimensionValue)`.
+4. Ne feledjük `FIRST(DS5).Value`**, hogy a kifejezés a "\_ D2**" szövegértéket adja eredményül, `INDEX(DS5, COUNT(DS5)).Value`**a kifejezés a "D3**" szöveges értéket adja eredményül, `STRINGJOIN(DS5, DS5.Value, "|")`**a kifejezés a "\_ D2\| D1\| D3**" szövegértéket.
 
 ## <a name="additional-resources"></a>További erőforrások
 

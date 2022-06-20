@@ -1,6 +1,6 @@
 ---
-title: Egyéni tárolóhely meghatározása a létrehozott dokumentumoknak
-description: Ez a témakör ismerteti, hogyan bővítheti a dokumentumok tárolóhelyeinek listáját, amelyeket az elektronikus jelentési (ER) formátumok hoznak létre.
+title: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
+description: Ez a cikk bemutatja, hogyan lehet kiterjeszteni a tárolási helyek listáját az elektronikus jelentési (ER) formátumban generált dokumentumokra.
 author: NickSelin
 ms.date: 02/22/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70d9ccfac18b4cdf1ea19b3def87fc10ba9ddcb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718501"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864746"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Egyéni tárolóhely meghatározása a létrehozott dokumentumoknak
 
 [!include[banner](../includes/banner.md)]
 
-A alkalmazásprogramozási felület (API) az Elektronikus jelentéskészítéshez (ER) lehetővé teszi a tárolóhelyek listájának kibővítését ER formátumok által létrehozott dokumentumokhoz.. Ez a témakör áttekintést ad a fő feladatokról, amelyeket el kell végeznie egyéni tárolóhely hozzáadásához.
+A alkalmazásprogramozási felület (API) az Elektronikus jelentéskészítéshez (ER) lehetővé teszi a tárolóhelyek listájának kibővítését ER formátumok által létrehozott dokumentumokhoz.. Ez a témakör áttekintést nyújt az egyéni tárolási hely hozzáadásához szükséges fő feladatokról.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -118,7 +118,7 @@ Az **AttachingFile()** esemény akkor következik be, amikor a következő ER c�
 ## <a name="configure-an-er-destination"></a>Egy ER-célhely konfigurálása
 
 1. Konfigurálja az archivált célt valamelyik korábban említett elemhez (fájl, mappa, egyesítés vagy melléklet) a létrehozott vagy importált ER formátumhoz. Útmutatásért lásd: [ER célok konfigurálása](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
-2. Használja a dokumentumtípust, amelyet korábban hozzáadott a konfigurált célhoz. (Például ebben a témakörben a dokumentumtípus **FileX**.)
+2. Használja a dokumentumtípust, amelyet korábban hozzáadott a konfigurált célhoz. (A példában ebben a példában a dokumentum típusa **FileX**.)
 
 ![Célhely beállításai párbeszédablak.](media/er-extend-file-storages-destination.png)
 

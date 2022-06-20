@@ -1,8 +1,8 @@
 ---
-title: Készletláthatóság konfigurálása
-description: Ez a témakör a Készletláthatóság konfigurálását ismerteti.
+title: Inventory Visibility konfigurálása
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni a készlet láthatóságát.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786838"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895815"
 ---
-# <a name="configure-inventory-visibility"></a>Készletláthatóság konfigurálása
+# <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör a Készlet láthatósága alkalmazás használatával a Készlet láthatósága bővítmény konfigurálását ismerteti a Power Apps rendszerben.
+Ez a témakör azt ismerteti, hogyan kell konfigurálni a készlet láthatóságát a Készlet láthatósága alkalmazásban Power Apps.
 
 ## <a name="introduction"></a><a name="introduction"></a>Bevezetés
 
-Mielőtt elkezdene dolgozni a Készletláthatósággal, a következő konfigurációt kell elvégeznie a témakörben leírtak szerint:
+Mielőtt elkezdené a készlet láthatóságát, be kell fejeződnie a következő konfigurálásnak, amint azt a jelen cikk ismerteti:
 
 - [Adatforrás konfiguráció](#data-source-configuration)
 - [Partíciókonfiguráció](#partition-configuration)
@@ -41,7 +41,7 @@ Mielőtt elkezdené, telepítse és állítsa be a Készletláthatóság bővít
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>A Készlet láthatósága alkalmazás konfigurációs lapja
 
-A Power Apps alkalmazásban a [Készlet láthatósága alkalmazás](inventory-visibility-power-platform.md) **Konfiguráció** oldala segít a kézi konfiguráció és a lágy foglalási konfiguráció beállításában. A bővítmény telepítése után az alapértelmezett konfiguráció tartalmazza a Microsoft Dynamics 365 Supply Chain Management (a `fno` adatforrás) értékét. Az alapértelmezett beállítást felülvizsgálhatja. Ezenfelül, az Ön üzleti követelményei és a külső rendszer készletkönyvelési követelményei alapján módosíthatja a konfigurációt, hogy egységesítse a készletváltozások könyvelésének, rendszerezésének és lekérdezésének módját a több rendszerben. A témakör további részei a **Konfiguráció** lap egyes részeinek használatát ismertetik.
+A Power Apps alkalmazásban a [Készlet láthatósága alkalmazás](inventory-visibility-power-platform.md) **Konfiguráció** oldala segít a kézi konfiguráció és a lágy foglalási konfiguráció beállításában. A bővítmény telepítése után az alapértelmezett konfiguráció tartalmazza a Microsoft Dynamics 365 Supply Chain Management (a `fno` adatforrás) értékét. Az alapértelmezett beállítást felülvizsgálhatja. Ezenfelül, az Ön üzleti követelményei és a külső rendszer készletkönyvelési követelményei alapján módosíthatja a konfigurációt, hogy egységesítse a készletváltozások könyvelésének, rendszerezésének és lekérdezésének módját a több rendszerben. A cikk további részei **a Konfigurációs lap egyes részeinek használatát magyarázzák** el.
 
 A konfiguráció befejezése után mindenképpen válassza ki a **Konfiguráció frissítése** lehetőséget az alkalmazásban.
 
@@ -54,6 +54,7 @@ A Készlet láthatósága bővítmény számos új funkcióval bővíti a Power 
 | *OnHandReservation* | Ezzel a funkcióval foglalásokat, foglalásokat és/vagy nem foglalt készletmennyiségeket lehet létrehozni a Készlet láthatósága funkcióval. További információért lásd a [Készletláthatósági foglalások](inventory-visibility-reservations.md) című részt. |
 | *OnHandMostSpecificBackgroundService* | Ez a funkció a termékekkel és az összes dimenzióval együtt egy készletösszegzést ad meg. A készletösszegzési adatokat a rendszer rendszeres időközönként szinkronizálja a Készletláthatóságból. További információ a készlet összesítésében [található](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Ez az opcionális funkció lehetővé teszi az ígérethez rendelkezésre álló változási ütemezést és az ígérethez rendelkezésre álló funkciókat. A további tudnivalókat lásd [a Készlet láthatósága aktuális készlet változásának ütemezésében, amely ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md). |
+| *Foglalás* | Ez az opcionális funkció lehetővé teszi, hogy a készlet láthatósága lehetővé teszi a készletellenőrzést (ringfencing) és a túlkiértékelést. A további tudnivalókat lásd [a Készlet láthatósága készletfelosztásban](inventory-visibility-allocation.md). |
 | *Raktári cikkek engedélyezése a Készletláthatóság funkcióban* | Ez az opcionális funkció lehetővé teszi a készlet láthatóságát a speciális raktári folyamatokban (raktárkezelési cikkeknél) engedélyezett cikkek támogatása érdekében. A további tudnivalókat lásd [a raktárkészlet-készlet cikkekkel kapcsolatos láthatósági támogatásában](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>A szolgáltatás végpontjának keresése
@@ -116,7 +117,7 @@ A dimenzió-konfiguráció célja a több rendszerre kiterjedő integráció sza
 >
 > A készlet (egyéni) dimenziókat a Supply Chain Management számára lehet fenntartani. Ebben az esetben használhatja helyette a kiterjesztett méreteket.
 
-A külső rendszerek a RESTful API-kon keresztül érhetik el a Készletláthatóságot. Az integrációhoz az Készletláthatóság lehetővé teszi a _külső adatforrás_ és a _külső dimenziók_ és az _alapdimenziók_ közötti leképezés konfigurálását. Íme egy példa egy dimenzió-leképező táblázatra.
+A külső rendszerek a RESTful API-kon keresztül érhetik el a Készletláthatóságot. Az integrációhoz az Készletláthatóság lehetővé teszi a _külső adatforrás_ és a _külső dimenziók_ és az _alapdimenziók_ közötti leképezés konfigurálását. Példa a dimenzió-hozzárendelési táblára.
 
 | Külső dimenzió | Alapdimenzió |
 |---|---|
@@ -318,7 +319,14 @@ A termékhierarchia-index beállításához kövesse az alábbi lépéseket.
 1. Alapértelmezés szerint az indexek listáját adja meg. Egy meglévő index módosításához válassza a **Szerkesztés** vagy a **Hozzáadás** lehetőséget az adott indexre vonatkozó szakaszban. Új indexkészlet létrehozásához válassza az **Új indexkészlet** lehetőséget. Minden indexkészlet minden sora esetében a **Dimenzió** mezőben válasszon az alapdimenziók listájából. A következő mezők értékei automatikusan generálódnak:
 
     - **Készletszám** - Az azonos csoportba (indexbe) tartozó dimenziók csoportosítva lesznek, és ugyanaz a készletszám lesz hozzájuk rendelve.
-    - **Hierarchia** - A hierarchia a dimenziócsoportban (index) lekérdezhető támogatott dimenziókombinációk meghatározására szolgál. Ha például olyan dimenziócsoportot állít be, amelynek hierarchiasorrendje a *Stílus*, a *Szín* és a *Méret*, a rendszer három lekérdezési csoport eredményét támogatja. Az első csoport csak a stílus. A második csoport a stílus és a szín kombinációja. A harmadik csoport pedig a stílus, a szín és a méret kombinációja. A többi kombináció nem támogatott.
+    - **Hierarchia** - A hierarchia a dimenziócsoportban (index) lekérdezhető támogatott dimenziókombinációk meghatározására szolgál. Ha például olyan dimenziócsoportot ad meg, amely stílus, *·* *szín* és méret hierarchiasorozatot használ, a *rendszer* három lekérdezési csoport eredményét támogatja. Az első csoport csak a stílus. A második csoport a stílus és a szín kombinációja. A harmadik csoport pedig a stílus, a szín és a méret kombinációja. A többi kombináció nem támogatott.
+
+> [!TIP]
+> Az indexhierarchia beállításakor tartsa szem előtt a következő tanácsokat:
+>
+> - A partíciókonfigurációban definiált alapdimenziókat nem lehet definiálni az indexkonfigurációkban. Ha az indexkonfigurációban ismét meg van adva alapdimenzió, akkor ezzel az indexszel nem lehet lekérdezést tenni.
+> - Ha csak olyan készletet kell lekérdezni, amely az összes dimenziókombinációval összesítve van, akkor egyetlen indexet kell beállítania, amely az alapdimenziót tartalmazza `Empty`.
+> - Szükség van legalább egy indexhierarchiára (`Empty` például az alapdimenziót tartalmazóra), különben a lekérdezések leállnak a "Nincs indexhierarchia beállítva" hibával.
 
 ### <a name="example"></a>Példa
 
@@ -372,11 +380,6 @@ Az index segítségével a következő módon kérdezheti le a készletet:
     - Póló, Piros, kicsi, szabályos, 6
     - Póló, piros, nagy, szabályos, 7
 
-> [!NOTE]
-> A partíciókonfigurációban definiált alapméreteket nem szabad definiálni az indexkonfigurációkban.
-> 
-> Ha csak olyan készletet kell lekérdeznie, amelyet az összes dimenziókombináció összesít, egyetlen indexet is be lehet állítani, amely az `Empty` alapdimenziót tartalmazza.
-
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Foglalási konfiguráció (opcionális)
 
 A foglalási konfigurációra akkor van szükség, ha a lágy foglalási funkciót használni kívánja. A konfiguráció két alapvető részből áll:
@@ -390,7 +393,7 @@ Foglaláskor érdemes tudni, hogy a készleten lévő készletek jelenleg rendel
 
 A fizikai mérték és a számított mérték közötti leképezés beállításával lehetővé teszi a Készletláthatóság szolgáltatás számára, hogy a fizikai mérték alapján automatikusan érvényesítse a foglalások rendelkezésre állását.
 
-Mielőtt beállítaná ezt a hozzárendelést, a fizikai mérőszámokat, a számított mérőszámokat és azok adatforrásait a Power Apps oldalon a **Konfiguráció** lap **Adatforrás** és **Számított intézkedés** lapjain kell meghatározni (a témakör korábbi részében leírtak szerint).
+A megfeleltetés beállítása előtt meg kell határozni a fizikai mérőszámokat, **·** **·** **·** Power Apps a számított mértékeket és azok adatforrását a Konfigurációs lap Számított mérték lapján (a jelen cikknek a korábban ismertetett módon).
 
 A lágy foglalási leképezés definiálásához kövesse az alábbi lépéseket.
 
@@ -460,7 +463,7 @@ A foglalási hierarchia a foglalások során megadandó dimenziók sorrendjét �
 
 A foglalási hierarchia független a termékindex-hierarchiától. Ez a függetlenség lehetővé teszi a kategóriamenedzsment megvalósítását, ahol a felhasználók részletekre bonthatják a dimenziókat, hogy pontosabb foglalásokhoz meghatározzák a követelményeket. A lágy foglalás hierarchiájának tartalmaznia kell a `SiteId` és a `LocationId` elemet összetevőként, mivel ezek partíciókonfigurációt alkotnak. A foglalás során meg kell adnia egy partíciót a termékhez.
 
-Íme egy példa a lágy foglalási hierarchiára.
+Az alábbi példa az ilyen típusú foglalási hierarchiákra mutat be.
 
 | Alapdimenzió | Hierarchia |
 |---|---|
@@ -508,7 +511,7 @@ Az inicializálási szakaszban a Készletláthatóság alapértelmezett konfigur
 
 Ez a szakasz a `iv` adatforrás konfigurálását ismerteti.
 
-##### <a name="physical-measures-configured-for-the-iv-data-source"></a>Az iv adatforráshoz konfigurált fizikai mérőszámok
+##### <a name="physical-measures-configured-for-the-iv-data-source"></a>A "iv" adatforráshoz konfigurált fizikai intézkedések
 
 A következő fizikai mérőszámok vannak beállítva a `iv` adatforráshoz:
 
@@ -651,11 +654,11 @@ A `InventoryDemand` számított mérőszámot a `iv` adatforráshoz a következ�
 | Hozzáadás | `iv` | `ReservPhysical` |
 | Hozzáadás | `iv` | `ReservOrdered` |
 
-#### <a name="configuration-of-the-fno-data-source"></a>Az fno adatforrás konfigurálása
+#### <a name="configuration-of-the-fno-data-source"></a>A "szno" adatforrás konfigurálása
 
 Ez a szakasz a `fno` adatforrás konfigurálását ismerteti.
 
-##### <a name="dimension-mappings-for-the-fno-data-source"></a>Dimenzióleképezések az fno adatforráshoz
+##### <a name="dimension-mappings-for-the-fno-data-source"></a>Dimenzióleképezések a "szno" adatforráshoz
 
 A következő táblázatban felsorolt dimenzió-leképezések a `fno` adatforráshoz vannak konfigurálva.
 
@@ -687,7 +690,7 @@ A következő táblázatban felsorolt dimenzió-leképezések a `fno` adatforrá
 | `InventDimension11` | `CustomDimension11` |
 | `InventDimension12` | `CustomDimension12` |
 
-##### <a name="physical-measures-configured-for-the-fno-data-source"></a>Az fno adatforráshoz konfigurált fizikai mérőszámok
+##### <a name="physical-measures-configured-for-the-fno-data-source"></a>A "szno" adatforráshoz konfigurált fizikai intézkedések
 
 A következő fizikai mérőszámok vannak beállítva a `fno` adatforráshoz:
 
@@ -699,11 +702,11 @@ A következő fizikai mérőszámok vannak beállítva a `fno` adatforráshoz:
 - `ReservOrdered`
 - `OnOrder`
 
-#### <a name="configuration-of-the-pos-data-source"></a>A pos adatforrás konfigurálása
+#### <a name="configuration-of-the-pos-data-source"></a>A "POS" adatforrás konfigurálása
 
 Ez a szakasz a `pos` adatforrás konfigurálását ismerteti.
 
-##### <a name="physical-measures-for-the-pos-data-source"></a>Fizikai mérőszámok a pos adatforráshoz
+##### <a name="physical-measures-for-the-pos-data-source"></a>Fizikai intézkedések a "POS" adatforráshoz
 
 A következő fizikai mérőszámok vannak beállítva a `pos` adatforráshoz:
 
@@ -720,14 +723,14 @@ A `AvailQuantity` számított mérőszámot a `pos` adatforráshoz a következő
 | Hozzáadás | `pos` | `PosInbound` |
 | Kivonás | `pos` | `PosOutbound` |
 
-#### <a name="configuration-of-the-iom-data-source"></a>Az iom adatforrás konfigurálása
+#### <a name="configuration-of-the-iom-data-source"></a>Az "iom" adatforrás konfigurálása
 
 A következő fizikai mérőszámok vannak beállítva a `iom` (intelligens rendeléskezelés) adatforráshoz:
 
 - `OnOrder`
 - `OnHand`
 
-#### <a name="configuration-of-the-erp-data-source"></a>Az erp adatforrás konfigurálása
+#### <a name="configuration-of-the-erp-data-source"></a>Az "erp" adatforrás konfigurálása
 
 A következő fizikai mérőszámok vannak beállítva a `erp` (vállalati erőforrás-tervezés) adatforráshoz:
 

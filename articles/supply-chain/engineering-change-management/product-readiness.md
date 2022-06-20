@@ -1,6 +1,6 @@
 ---
 title: Termékkészenlét
-description: Ez a témakör elmagyarázza, hogyan használhatja a készenléti ellenőrzéseket annak biztosítására, hogy a szükséges törzsadatok kitöltésre kerüljenek egy termékhez, mielőtt azt a tranzakciókban használnák.
+description: Ez a cikk bemutatja, hogy hogyan használhatók a készenlét-ellenőrzések annak biztosítására, hogy a termékekhez a tranzakciókban történő felhasználás előtt meg kell adni a szükséges alapadatokat.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f7ab6165e85cd2b1165292b74cd036f1233b22b4
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a8e76d5fc786b6f4cac7cd0430399ca3ad13a7bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103013"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856222"
 ---
 # <a name="product-readiness"></a>Termékkészenlét
 
@@ -61,7 +61,7 @@ Ha új tervezési *verziót* hoznak létre egy termékhez, a rendszer ellenőrzi
 - A mérnöki verzió inaktív értékre van állítva a termék használatának blokkolásához.
 
 > [!NOTE]
-> A normál (nem tervezési) termékekhez készenléti ellenőrzési irányelveket is beállíthat. További információ a cikk későbbi részén lévő [Készenléti ellenőrzés haszánálata normál termékekhez](#standard-products) szakaszban olvasható.
+> A normál (nem tervezési) termékekhez készenléti ellenőrzési irányelveket is beállíthat. A további tudnivalókat [lásd](#standard-products) a cikk szokásos termékekkel kapcsolatos készenlét-ellenőrzése című részében.
 
 ## <a name="view-readiness-checks"></a>Készenléti ellenőrzések megtekintése
 
@@ -151,7 +151,7 @@ Minden egyes hozzáadott sorhoz állítsa be a következő mezőket.
 | Cég | Ha a **Végrehajtás helye** mezőt a *Egyetlen vállalat* értékre állítja be, válassza ki a vállalatot. |
 | Tulajdonos típusa | Adja meg, hogy a sor által generált készenléti ellenőrzések egy személyhez vagy egy csoporthoz legyenek-e hozzárendelve. |
 | Tulajdonos | Válassza ki a személyt vagy csoportot, amelyhez a készenléti ellenőrzéseket hozzá kívánja rendelni. |
-| Kérdőív | Válassza ki azt a kérdőívet, amelyet alkalmazni kell az ellenőrzőlista esetében. Az ellenőrzőlista egy helyi ellenőrzőlista azon a vállalaton belül, ahol a készenléti ellenőrzést végrehajtják. A rendszernek képesnek kell lennie annak értékelésére, hogy helyesen válaszol-e az ellenőrzőlista. Ezért a ellenőrzőlistát úgy kell beállítani, hogy a helyes válaszok alapján végezze el az értékelést. A kérdőívek létrehozásával kapcsolatos további tudnivalókat lásd a [Kérdőívek használata](/dynamicsax-2012/appuser-itpro/using-questionnaires) és a kapcsolódó témakörök között. |
+| Kérdőív | Válassza ki azt a kérdőívet, amelyet alkalmazni kell az ellenőrzőlista esetében. Az ellenőrzőlista egy helyi ellenőrzőlista azon a vállalaton belül, ahol a készenléti ellenőrzést végrehajtják. A rendszernek képesnek kell lennie annak értékelésére, hogy helyesen válaszol-e az ellenőrzőlista. Ezért a ellenőrzőlistát úgy kell beállítani, hogy a helyes válaszok alapján végezze el az értékelést. A kérdőívek létrehozásáról a [Kérdőívek](/dynamicsax-2012/appuser-itpro/using-questionnaires) használata és a kapcsolódó cikkek tartalmaznak további tájékoztatást. |
 | Automatikus jóváhagyás | A készenléti ellenőrzés rekordjai egy **Jóváhagyott** jelölőnégyzetet tartalmaznak, amely jelzi a jóváhagyási állapotot. Jelölje be az **Automatikus jóváhagyás** jelölőnégyzetet azon ellenőrzések esetén, amelyeket a hozzárendelt felhasználó általi végrehajtás után azonnali jóváhagyásra kell beállítani. Ennek a jelölőnégyzetnek a törlésével további lépésként explicit jóváhagyást követelhet meg. |
 | Kötelező | Ezt a jelölőnégyzetet a hozzárendelt felhasználó által végrehajtandó ellenőrzések esetében jelölje be. A kötelező ellenőrzéseket nem lehet kihagyni. |
 
@@ -159,7 +159,7 @@ Minden egyes hozzáadott sorhoz állítsa be a következő mezőket.
 
 ## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Készenléti házirendek hozzárendelése a szokásos és a tervezési termékekhez
 
-Ha egy tervezési kategória alapján hoz létre új terméket, akkor egy *kiadott terméket* és egy kapcsolódó *megosztott terméket* is létre kell hoznia. A kiadott termékekre vonatkozó készenlét-szabályok megoldásának módja attól függ, hogy a rendszer be van-e kapcsolva a *Termék* készenlét-ellenőrzése funkció ([a](#standard-products) funkcióról és annak bekapcsolásról a témakör későbbi, A szokásos termékekre való készenlét ellenőrzése című részében olvashat bővebben).
+Ha egy tervezési kategória alapján hoz létre új terméket, akkor egy *kiadott terméket* és egy kapcsolódó *megosztott terméket* is létre kell hoznia. A kiadott termékekre vonatkozó készenlét-szabályok megoldásának módja attól függ, hogy a rendszer be van-e kapcsolva a *Termék* készenlét-ellenőrzése funkció ([a](#standard-products) funkcióról és annak bekapcsolásról a cikk későbbi, a szokásos termékekre való készenlét ellenőrzése című részében olvashat bővebben).
 
 - Ha a *Termék készenléti ellenőrzései* funkció *ki* van kapcsolva, a readiness policy készenléti irányelv csak a [terevzési kategóriájú](engineering-versions-product-category.md) rekordoknál van beállítva, és csak náluk jelenik meg. Annak megállapításához, hogy melyik irányelv vonatkozik egy kiadott termékre, a rendszer ellenőrzi a kapcsolódó tervezési kategória **Termékkészenléti házirend** mezőjét. Egy meglévő termékre vonatkozó készenléti házirend a kapcsolódó tervezési kategória (és nem a megosztott termék) szerkesztésével módosítható.
 - Ha a *Termék készenléti ellenőrzései* funkció *be* van kapcsolva, a rendszer hozzáadja a **Termékkészenléti házirend** mezőt a **Termék** oldalhoz (ahol a megosztott termékek beállítása történik) és a **Kiadott termék** oldalhoz (ahol az érték írásvédett és a kapcsolódó megosztott termékből származik). A rendszer a kapcsolódó megosztott termék ellenőrzésével megkeresi a kiadott termékre vonatkozó készenléti házirendet. Ha új tervezési termék létrehozásához tervezési kategóriát használ, a rendszer egy megosztott terméket és egy kiadott terméket is létrehoz, és a tervezési kategóriához tartozó **Termékkészenléti házirend** beállításait átmásolja az új megosztott termékbe. Egy meglévő termékre vonatkozó készenléti házirend a kapcsolódó megosztott termék (és nem a kiadott tervezési kategória) szerkesztésével módosítható.
@@ -184,18 +184,18 @@ A normál (nem tervezési) termékekre vonatkozó termékkészenléti ellenőrz�
 
 ### <a name="enable-or-disable-readiness-checks-on-standard-products"></a>Szokásos termékek készenlét-ellenőrzésének engedélyezése vagy letiltása
 
-Ehhez a funkcióhoz a mérnöki *változáskezelést* *és* a termékre való készenlétet ellenőrző funkciókat is be kell kapcsolva lennie a rendszeren. A szolgáltatások be- és kikapcsolásáról a Géptervezési változáskezelés áttekintése című témakörben [olvashat](product-engineering-overview.md).
+Ehhez a funkcióhoz a mérnöki *változáskezelést* *és* a termékre való készenlétet ellenőrző funkciókat is be kell kapcsolva lennie a rendszeren. A funkciók be- és kikapcsolása a [Műszaki változáskezelés témakörében található](product-engineering-overview.md).
 
 ### <a name="create-readiness-policies-for-standard-products"></a>Készenléti irányelvek létrehozása normál termékekhez
 
-A normál termékekhez ugyanúgy hozható létre készenléti irányelv, mint a tervezési termékekhez. A vonatkozó információk a témakör korábbi részében találhatók.
+A normál termékekhez ugyanúgy hozható létre készenléti irányelv, mint a tervezési termékekhez. Lásd a korábbi, ebben a cikkben található információkat.
 
 ### <a name="assign-readiness-policies-to-standard-products"></a>Készenléti irányelvek hozzárendelése normál termékekhez
 
-Ha normál termékhez szeretne készenléti házirendet hozzárendelni, nyissa meg a kapcsolódó megosztott terméket, és állítsa be a **Termékkészenléti házirend** mezőben az alkalmazni kívánt házirend nevét. További információ a cikk korábbi részében, a [Készenléti házirendek hozzárendelése a szokásos és a tervezési termékekhez](#assign-policy) szakaszban található.
+Ha normál termékhez szeretne készenléti házirendet hozzárendelni, nyissa meg a kapcsolódó megosztott terméket, és állítsa be a **Termékkészenléti házirend** mezőben az alkalmazni kívánt házirend nevét. A további tudnivalókat lásd [a](#assign-policy) cikk korábbi, "Készenlét hozzárendelése a szabványos és mérnöki termékekhez" című részében.
 
 ### <a name="view-and-process-readiness-checks-on-standard-products"></a>Normál termékek készenléti ellenőrzésének megtekintése és feldolgozása
 
-Ha ez a funkció be van kapcsolva, akkor a normál termékekre vonatkozó készenléti ellenőrzéseket úgy lehet megtekinteni és feldolgozni, mint a tervezési termékekét. A vonatkozó információk a témakör korábbi részében találhatók.
+Ha ez a funkció be van kapcsolva, akkor a normál termékekre vonatkozó készenléti ellenőrzéseket úgy lehet megtekinteni és feldolgozni, mint a tervezési termékekét. Lásd a korábbi, ebben a cikkben található információkat.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

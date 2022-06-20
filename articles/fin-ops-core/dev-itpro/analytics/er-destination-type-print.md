@@ -1,6 +1,6 @@
 ---
 title: Nyomtató ER céltípusa
-description: Ez a témakör bemutatja, hogyan kell konfigurálni egy nyomtatási célt az Elektronikus jelentéskészítési (ER) formátumok egyes MAPPA vagy FÁJL összetevőihez.
+description: Ez a cikk bemutatja, hogy hogyan konfigurálhatja a célnyomtatót az elektronikus jelentésformátumok (ER) minden mappájához vagy FÁJLösszetevőihez.
 author: NickSelin
 ms.date: 02/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 826455d0901a45ef26755fd323ee2a2737b5eec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388288"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845570"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Nyomtatási cél
 
@@ -34,7 +34,7 @@ Először telepítenie és konfigurálnia kell a dokumentumirányítási ügynö
 
 ## <a name="make-the-printer-destination-available"></a>A nyomtató célhelyének elérhetővé tétele
 
-Ahhoz, hogy a **Nyomtató** célhelyet elérhetővé tegye a Microsoft Dynamics 365 Finance aktuális példányában, lépjen a **Funkció kezelése** munkaterületre, majd kapcsolja be az alábbi funkciókat, ebben a sorrendben:
+Ha **a** Microsoft Dynamics 365 Pénzügy aktuális példányán elérhetővé tenni a célnyomtatót, **használja** a Funkciókezelés munkaterületet, és ebben a sorrendben kapcsolja be a következő funkciókat:
 
 1. A kimenő Elektronikus jelentéskészítési dokumentumok konvertálásának engedélyezése Microsoft Office formátumokról PDF-fájllá
 2. Dokumentumirányítási ügynök az Elektronikus jelentéskészítés céljaként a kimenő dokumentumok esetében
@@ -50,13 +50,13 @@ A Pénzügy rendszer 10.0.18-as verzió előtti verzióiban a célnyomtató csak
 A 10.0.18-as **·** **verzióban** azonban beállíthatja a közös fájlformátumelem nyomtatási célját. Ez a formátumelem elsősorban a kimenet TXT vagy XML formátumú előállítására használatos. Konfigurálhat olyan ER-formátumot **·** **·**, amely a közös fájlformátum-elemet tartalmazza gyökérformátumelemként, és a bináris tartalom formátumelemeként az alatta található egyetlen beágyazott elemként. Ebben az esetben a **Közös** fájlformátum elem a **Bináris** tartalomformátum elemhez beállított kötés által meghatározott formátumban hoz létre kimenetet. Be lehet állítani például, [hogy](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) ez a [kötés](../../fin-ops/organization-administration/configure-document-management.md) PDF- vagy Office (Excel- vagy Word-) formátumú dokumentumkezelési mellékletek tartalmával töltse ki ezt az elemet. A kimenetet a konfigurált nyomtató céljával **nyomtathatja** ki. 
 
 > [!NOTE]
-> **Ha a célnyomtató beállításához a CommonFile \\** **formátumelemet** választja, a tervezés során nem lehet garantálni, hogy a kiválasztott elem PDF-formátumú vagy pdf formátumú kimenetet hoz létre. Ezért a következő figyelmeztető üzenet jelenik meg: "Győződjön meg róla, hogy a kiválasztott formátumösszetevő által létrehozott kimenet konvertálható PDF formátumúvá. Ellenkező esetben törölje a jelet a "KONVERTÁLÁS PDF formátumba" beállításból." Meg kell tenni a szükséges lépéseket a futásidejű problémák megelőzése érdekében, ha futásidőben nem PDF vagy nem PDF formátumú kimenet van rendelkezésre a nyomtatáshoz. Ha arra számít, hogy a kimenet Office (Excel vagy Word) formátumú lesz, **be kell lennie jelölve a Konvertálás PDF formátumba**.
+> Ha a **Nyomtató** cél beállításához a **Közös\\fájl** formátumelemet választja, a tervezés során nem lehet garantálni, hogy a kiválasztott elem PDF-formátumú vagy pdf formátumú kimenetet hoz létre. Ezért a következő figyelmeztető üzenet jelenik meg: "Győződjön meg róla, hogy a kiválasztott formátumösszetevő által létrehozott kimenet konvertálható PDF formátumúvá. Ellenkező esetben törölje a jelet a "KONVERTÁLÁS PDF formátumba" beállításból." Meg kell tenni a szükséges lépéseket a futásidejű problémák megelőzése érdekében, ha futásidőben nem PDF vagy nem PDF formátumú kimenet van rendelkezésre a nyomtatáshoz. Ha arra számít, hogy a kimenet Office (Excel vagy Word) formátumú lesz, **be kell lennie jelölve a Konvertálás PDF formátumba**.
 >
 > A 10.0.26-os **és újabb verzióban a KONVERTÁLÁS PDF-fájlba** **·** **·** **beállításhoz pdf formátumot kell választania a konfigurált nyomtató cél dokumentumirányítási típus paraméteréhez.**
 
 #### <a name="zpl-printing"></a>ZPL-nyomtatás
 
-A 10.0.26-os és újabb verziókban konfigurálhatja a **CommonFile** **formátumelem nyomtatócélját úgy,\\** **hogy kiválasztja a ZPL** **paramétert a Dokumentumirányítás típusú** paraméterhez. Ebben az **esetben futásidőben a rendszer figyelmen kívül hagyja a PDF-formátumra** konvertálás beállítást, és a TXT- vagy XML-kimenetet közvetlenül a kiválasztott nyomtatóra küldi a dokumentumirányítási ügynök (DRA [) Programnyelv (ZPL)](install-document-routing-agent.md) szerződésének használatával. Ez a funkció a ZPL II címkeelrendezésnek megfelelő ER-formátumban használható különböző címkék nyomtatására.
+A 10.0.26-os és újabb verziókban konfigurálhatja a közös **Közös\\Fájl** **Nyomtató** célját úgy, ·hogy kiválasztja a **ZPL** paramétert a **Dokumentumirányítás típusa** paraméterhez. Ebben az **esetben futásidőben a rendszer figyelmen kívül hagyja a PDF-formátumra** konvertálás beállítást, és a TXT- vagy XML-kimenetet közvetlenül a kiválasztott nyomtatóra küldi a dokumentumirányítási ügynök (DRA [) Programnyelv (ZPL)](install-document-routing-agent.md) szerződésének használatával. Ez a funkció a ZPL II címkeelrendezésnek megfelelő ER-formátumban használható különböző címkék nyomtatására.
 
 [![A Dokumentumirányítás típusa paraméter beállítása a Cél beállításai párbeszédpanelen.](./media/ER_Destinations-SetDocumentRoutingType.png)](./media/ER_Destinations-SetDocumentRoutingType.png)
 

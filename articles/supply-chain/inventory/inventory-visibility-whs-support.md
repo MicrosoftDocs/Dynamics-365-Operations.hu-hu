@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility támogatása WHS-cikkekhez
-description: Ez a témakör a speciális raktári folyamatokban (whS- cikkeknél) engedélyezett cikkek készlet láthatósági támogatást ismerteti.
+description: Ez a témakör a speciális raktári folyamatokban (whS- cikkeknél) engedélyezett cikkek láthatóságát ismerteti.
 author: yufeihuang
 ms.date: 03/10/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-10
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: cfbff05697f4159cb74d110887b8029f28fbf96b
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: ec2254d6cf203216acea88fdfb54ad491abdeb49
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625424"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895670"
 ---
 # <a name="inventory-visibility-support-for-whs-items"></a>Inventory Visibility támogatása WHS-cikkekhez
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a speciális raktári folyamatokban (whS- cikkeknél) engedélyezett cikkek készlet láthatósági támogatást ismerteti. A lehetőséget a Készlet láthatósága beállításhoz hozzáadó funkció neve *Speciális raktárkészlet-zárás*.
+Ez a témakör a speciális raktári folyamatokban (whS- cikkeknél) engedélyezett cikkek láthatóságát ismerteti. A lehetőséget a Készlet láthatósága beállításhoz hozzáadó funkció neve *Speciális raktárkészlet-zárás*.
 
 ## <a name="whs-items"></a>Cikkek va. y
 

@@ -1,6 +1,6 @@
 ---
 title: Integrált főkönyv
-description: Ez a témakör a főkönyvi adatok Finance and Operations és más Dynamics 365 alkalmazások közötti, a Dataverse használatával történő integrációját ismerteti.
+description: Ez a témakör a főkönyvi adatoknak a Pénzügy és műveletek, illetve más Dynamics 365-alkalmazások közötti integrációját írja le Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e83d66f3f8c8927b9baaf99838a4e242e7e011dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063647"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847189"
 ---
 # <a name="integrated-ledger"></a>Integrált főkönyv
 
@@ -22,7 +22,7 @@ ms.locfileid: "8063647"
 
 
 
-Egy üzleti pályázatban a főkönyvi adatok határozzák meg a vállalat üzleti tevékenységének alapbeállítását. A főkönyvi adatok például tartalmazzák a vállalat üzleti évét, a tranzakciók pénznemét és a vállalat által használt számlákat. Ez a témakör az alapvető pénzügyi adatok integrálását írja le.
+Egy üzleti pályázatban a főkönyvi adatok határozzák meg a vállalat üzleti tevékenységének alapbeállítását. A főkönyvi adatok például tartalmazzák a vállalat üzleti évét, a tranzakciók pénznemét és a vállalat által használt számlákat. Ez a témakör leírja ennek az alapvető pénzügyi adatnak az integrációját.
 
 ## <a name="templates"></a>Sablonok
 

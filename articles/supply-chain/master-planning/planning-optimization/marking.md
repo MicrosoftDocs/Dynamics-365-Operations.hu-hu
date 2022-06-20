@@ -1,6 +1,6 @@
 ---
 title: Készletjelölés tervezési optimalizálással
-description: Ez a témakör a megerősített rendelések készletének megjelölésére használható beállításokról nyújt tájékoztatást a tervezésoptimalizálás során.
+description: Ez a cikk a tervezési optimalizálás használata esetén a készlet megjelölésére rendelkezésre álló beállításokkal kapcsolatban tartalmaz tájékoztatást.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8d06527d125837b056729574517ca5ed6738fcff
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 2f1902ba76db59b61b0437eb3cd68ee94018b7c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468356"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844467"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Készletjelölés tervezési optimalizálással
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a megerősített rendelések készletének megjelölésére használható beállításokról nyújt tájékoztatást a tervezésoptimalizálás során.
+Ez a cikk a tervezési optimalizálás használata esetén a készlet megjelölésére rendelkezésre álló beállításokkal kapcsolatban tartalmaz tájékoztatást.
 
 A *Jelölés* a kínálat és kereslet összekapcsolására szolgál. Ez hasonlít az *igénykövetés* műveletre, amely azt jelzi, hogy az alaptervezés hogyan tervezi a szükségletek lefedését. Tervezési szempontból a fő különbség az, hogy a jelölés állandóbb, mint az igénykövetés.
 

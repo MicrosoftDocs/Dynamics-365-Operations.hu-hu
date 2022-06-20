@@ -1,6 +1,6 @@
 ---
 title: A kivétel kezelésére vonatkozó raktári munka visszavonása
-description: Ez a témakör a Munka érvénytelenítése funkciót mutatja be, amellyel a raktár felügyelői kezelhetik a blokkolt munkát.
+description: Ez a témakör a Munka visszavonása funkciót írja le, amely a raktárvezetők számára a zárolt munkát kezeli.
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af0c147eefbfe22cb6b6d531f514e6f293d66689
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9a5c0cc988141b102cf3659ab4599e025f8f4640
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907174"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>A kivétel kezelésére vonatkozó raktári munka visszavonása
 

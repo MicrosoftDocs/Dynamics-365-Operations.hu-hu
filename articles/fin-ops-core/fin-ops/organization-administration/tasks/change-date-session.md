@@ -1,6 +1,6 @@
 ---
 title: Munkamenet dátumának módosítása
-description: Ez a témakör azt mutatja be, hogyan lehet módosítani a munkamenet dátumát.
+description: Ez a cikk bemutatja, hogyan lehet módosítani a munkamenet dátumát.
 author: pvillads
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fb8f896645df7c7c9a8afa3d9dc9106a7162959d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 22d014cdcf384253250590cf2c229da16b327495
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065630"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880961"
 ---
 # <a name="change-the-date-for-a-session"></a>Munkamenet dátumának módosítása
 
@@ -27,7 +27,7 @@ ms.locfileid: "8065630"
 
 [!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet módosítani a munkamenet dátumát. Alapértelmezés szerint a rendszer a naplóbejegyzések vagy a forrásbizonylatok bevitelekor és feladásakor az aktuális dátumot használja. Megváltoztathatja az aktuális munkamenethez használt dátumot. Használja ezt a szolgáltatást a naplóbejegyzések vagy forrásbizonylatok szükség szerinti visszadátumozásához.
+Ez a cikk bemutatja, hogyan lehet módosítani a munkamenet dátumát. Alapértelmezés szerint a rendszer a naplóbejegyzések vagy a forrásbizonylatok bevitelekor és feladásakor az aktuális dátumot használja. Megváltoztathatja az aktuális munkamenethez használt dátumot. Használja ezt a szolgáltatást a naplóbejegyzések vagy forrásbizonylatok szükség szerinti visszadátumozásához.
 
 1. A navigációs ablakban nyissa meg a **Modulok > Közös > Közös > Munkamenet dátuma és ideje** elemet.
 2. Adja meg a dátumot a **Dátum** mezőben.

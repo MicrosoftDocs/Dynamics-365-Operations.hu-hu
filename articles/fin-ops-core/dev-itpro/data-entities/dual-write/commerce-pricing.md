@@ -1,6 +1,6 @@
 ---
 title: A Dynamics 365 Commerce díjszabási motor használata a Dynamics 365 Sales alkalmazással
-description: Ez a témakör azt mutatja be, hogyan kell használni a Microsoft Dynamics 365 Commerce árképzési motorját értékesítési árajánlatok a Dynamics 365 Sales alkalmazásból.
+description: Ez a témakör azt ismerteti, hogyan Microsoft Dynamics 365 Commerce lehet az árképzési motort értékesítési ajánlatok létrehozására a Dynamics 365 értékesítésben.
 author: ShalabhjainMSFT
 ms.date: 11/19/2020
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c3f1527e5f37bebba57661ca86b1a3aae7e62da0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 11a164ec15c8b7a69172a153b961011a8b324712
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416755"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881394"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>A Dynamics 365 Commerce díjszabási motor használata a Dynamics 365 Sales alkalmazással
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan kell használni a Microsoft Dynamics 365 Commerce árképzési motorját értékesítési árajánlatok a Dynamics 365 Sales alkalmazásból.
+Ez a témakör azt ismerteti, hogyan Microsoft Dynamics 365 Commerce lehet az árképzési motort értékesítési ajánlatok létrehozására a Dynamics 365 értékesítésben.
 
 Az Dynamics 365 Commerce árképzési motor a legtöbb cég és ügyfél közötti (B2C) árképzési forgatókönyveket támogatja, így például az üzlet szintjének árképzését, a tagságon alapuló és a hűségprogramon alapuló árképzést, a kombinációs engedményeket, a mennyiségi kedvezményeket és a küszöbérték-kedvezményeket. Az árképzési motor összetett szabályokat használ egy adott árajánlat vagy rendelés legjobb árának megállapításához.
 

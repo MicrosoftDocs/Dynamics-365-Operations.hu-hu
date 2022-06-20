@@ -1,6 +1,6 @@
 ---
 title: Munkafolyamatok létrehozása – áttekintés
-description: Ez a témakör a munkafolyamat létrehozásának lépéseit mutatja be.
+description: Ez a cikk bemutatja a munkafolyamatok létrehozásához szükséges műveleteket.
 author: ChrisGarty
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: abdb8ce3186806ac1b756c9161d53547dd8ae40b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 1343061ba06d13e68a98b05c013867af0a4d07a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067958"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864486"
 ---
 # <a name="create-workflows-overview"></a>Munkafolyamatok létrehozása – áttekintés
 
@@ -31,7 +31,7 @@ ms.locfileid: "8067958"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ez a témakör a munkafolyamat létrehozásának lépéseit mutatja be.
+Ez a cikk bemutatja a munkafolyamatok létrehozásához szükséges műveleteket.
 
 ## <a name="open-the-workflow-editor"></a>A munkafolyamat-szerkesztő megnyitása
 
@@ -56,7 +56,7 @@ Az alábbi lépések segítségével állítsa be a munkafolyamat tulajdonságai
 
 1. Kattintson a vászonra, és győződjön meg arról, hogy nincs munkafolyamat-elem kiválasztva.
 2. Kattintson a **Tulajdonságok** lehetőségre a **Tulajdonságok** lap megnyitásához az adott munkafolyamatra vonatkozóan.
-3. Kövesse a [Munkafolyamat-tulajdonságok konfigurálása](configure-workflow-properties.md) cikkben leírt eljárásokat.
+3. Hajtsa végre az eljárásokat a Munkafolyamat-tulajdonságok [konfigurálása cikkében](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>A munkafolyamat elemeinek beállítása
 

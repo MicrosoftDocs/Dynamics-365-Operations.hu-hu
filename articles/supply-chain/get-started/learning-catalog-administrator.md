@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a61e501d843e220259f9e26aac4309e6902d7a22
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a9ff9cb71b08d94e45e82c2b8f81550c9f8aba64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897748"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Képzési katalógus a Dynamics 365 Supply Chain Management adminisztrátorok számára
 
@@ -42,7 +42,7 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | [Adatok áttelepítése és élőben a Pénzügy és műveletek alkalmazásokkal](/learn/paths/migrate-data-go-live-finance-operations/) | Funkcionális konzulensként meg kell érteni, hogyan lehet előkészíteni az ügyfél adatait az áttelepítésre, az adatkezeléssel dolgozni, és végrehajtani a felhasználói elfogadás tesztelését, hogy az élőben működjön a Pénzügy és az Üzemeltetés alkalmazással. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra |
 | [Az elemzés és a jelentés készítése a Finance and Operation megoldásban](/learn/modules/work-with-analytics-reporting-in-dynamics-365-finance-ops/) | Az üzleti vezetők fontos döntéseket tehetnek a vállalatban, ha pontos betekintésük van a pénzügyi és a működési adatokba. Az adatok láthatósága nélkül az üzleti vezetőkre szinte lehetetlen feladat vár. Az analitika és jelentéskészítés a Pénzügy és a Műveletek alkalmazásban történő alkalmazásával biztonsági jogaiktól függően minden üzleti felhasználó számára ki lehet ruházni a fontos döntésekhez szükséges információkat. | Ingyenes, saját tempójú online tanulási útvonal | 1.5 óra |
 | [A Pénzügyi és Üzemeltetési projekt megvalósításának kezelése](/learn/paths/implement-finance-operations/) | A pénzügyi és üzemeltetési projektek sikeres kezeléséhez szükséges legfontosabb elemek és gyakorlati tanácsok megismerje. Az első lépéstől, amely során a projekt módszertanát, a FastTrack szolgáltatások használatát, a fejlesztési stratégiát, adatkezelést és sok mást megtervezi és kialakítja, egészen a közzététel után a műveletek karbantartásának és nyomon követésének legjobb módjaiig. | Ingyenes, saját tempójú online tanulási útvonal | 11.5 óra |
-| [Rendszerfelügyelet kezdőlap](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Ez a témakör a Microsoft Dynamics 365 for Finance and Operations rendszeradminisztrátorok számára mutat be tartalmat. A tartalom segítséget nyújt a rendszer folyamatos és hatékony működésének konfigurálásában a szervezet és a cég számára. | Dokumentáció | |
+| [Rendszerfelügyelet kezdőlap](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Ez a cikk a .Microsoft Dynamics 365 for Finance and Operations A tartalom segítséget nyújt a rendszer folyamatos és hatékony működésének konfigurálásában a szervezet és a cég számára. | Dokumentáció | |
 | [Finance and Operations: Felvétel a Dynamics 365 (DYN542PAL2) megoldásba](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | A FastTrack minden Dynamics 365 for Finance and Operations projektben Onboarding szolgáltatást nyújt. Ebben a TechTalk elmagyarázzák a felvételi folyamatot, átveszik a felvételi munkamenet tartalmát, és a közeljövőben leplezik, hogy hogyan lehet hatékonyabbá és kényelmesebbé tenni a felvételt. Ez a munkamenet különösen hasznos mindenkinek, aki a vevőkkel együtt dolgozik a projekt kezdeti szakaszaiban, a licenc-megállapodás zárása és a végrehajtási projekt kezdeményezése között. | Webes konferencia szabad rögzítése | 62 perc |
 | [Intézményi (helyi üzleti adatok) telepítés (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Kérem, csatlakozzon ehhez a technológiai beszélgetéshez a Dynamics 365 for Finance and Operations Enterprise Edition helyszíni telepítési beállításának áttekintéséhez. Ebben a munkamenetben megvizsgáljuk egy helyszíni telepítés, ALM szempontok, rendszerkövetelmények és a életciklus-szolgáltatások projekt létrehozási módjának felépítését. | Webes konferencia szabad rögzítése | 48 perc |
 | [Másolás jogi személybe (DYN383PAL)](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | Ebben a munkamenetben megbeszéljük az adatkezelési keretrendszer Másolás jogi személybe új funkcióját. Először röviden ellenőrizzük a 8-as platformfrissítéseben adatkezelési keretrendszerhez hozzáadott új funkciókat a munkaterületen, a sablonokban és az adatprojektekben, majd megvitatjuk a Másolás jogi személybe hozzáadott további funkciókat. | Webes konferencia szabad rögzítése | 54 perc |

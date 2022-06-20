@@ -1,6 +1,6 @@
 ---
 title: Rendszer által irányított munka sorrendbe állítása
-description: Ez a témakör a rendszer által irányított munka sorrendbe állítással kapcsolatban tartalmaz tájékoztatást. Ez a funkció lehetővé teszi a rendszer által a felhasználóknak a végrehajtásra bemutatott munkarendelések rendezését és szűrését. Ez olyan esetekben hasznos, amikor további feltételek szükségesek a raktári kitárolási folyamat vezetéséhez.
+description: Ez a cikk a rendszer által irányított munkaszekvencia-adatokat tartalmaz. Ez a funkció lehetővé teszi a rendszer által a felhasználóknak a végrehajtásra bemutatott munkarendelések rendezését és szűrését. Ez olyan esetekben hasznos, amikor további feltételek szükségesek a raktári kitárolási folyamat vezetéséhez.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849126"
 ---
 # <a name="system-directed-work-sequencing"></a>Rendszer által irányított munka sorrendbe állítása
 
@@ -44,7 +44,7 @@ A rendszer által irányított munka sorrendbe állításának használata előt
 
 ### <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-Ha ezt a forgatókönyvet az ebben a témakörben megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszeren kell dolgoznia, amelynél a szokásos demóadatok telepítve vannak. Ezenkívül ki kell választania az **USMF** jogi személyt. A forgatókönyv az *51*-es raktárt használja a demóadatokból.
+Ahhoz, hogy az ebben a cikkben megjelenő értékekkel végig tudja dolgozni az esetet, egy olyan rendszeren kell dolgoznia, ahol telepítve vannak a szokásos bemutatóadatok. Ezenkívül ki kell választania az **USMF** jogi személyt. A forgatókönyv az *51*-es raktárt használja a demóadatokból.
 
 > [!IMPORTANT]
 > Mielőtt kiadja a rendeléseket a raktárba, győződjön meg arról, hogy a kitárolási helyek elegendő készlettel rendelkeznek a rendelések minden cikkéhez.

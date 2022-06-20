@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 364117133cb7a868e613088b14a33869fd9fedb1
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 15b1796367338bf40b434cfab9368ed3386aed99
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876502"
 ---
 # <a name="develop-and-open-job-requisition"></a>Beosztásigénylés kialakítása és megnyitása
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben található toborzási funkciókat a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
+> A cikk toborzási funkcióit a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
 
 
 A toborzási projektek segítenek a toborzási folyamat kezelésében. Minden toborzási projekthez be lehet állítani olyan adatokat, mint például az a feladat, ahol a toborzás történik, a toborzó nevét, a projekt állapotát, valamint azt a részleget, ahol a feladat található. Miután létrehozott egy toborzási projektet, be lehet írni egy álláshirdetést, közzé lehet tenni a **hirdetést** az Alkalmazott önkiszolgáló oldalán, hozzá lehet társítani az álláspályáztatási pályázatokat a projekthez, és nyomon lehet követni a projekt tevékenységeit. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.

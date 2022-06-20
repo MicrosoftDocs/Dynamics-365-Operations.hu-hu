@@ -1,8 +1,8 @@
 ---
 title: A Készlet láthatósága bővítmény telepítése
-description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management készlet láthatósági kiegészítőjének telepítését ismerteti.
+description: Ez a témakör azt mutatja be, hogyan lehet telepíteni a Microsoft készlet láthatósági bővítményét Dynamics 365 Supply Chain Management.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a49f35211f30cdb76104cc5be78f5b114320a228
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062650"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895699"
 ---
-# <a name="install-and-set-up-inventory-visibility"></a>Készletláthatóság telepítése és beállítása
+# <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibility telepítése és beállítása
 
 [!include [banner](../includes/banner.md)]
 
+Ez a témakör azt mutatja be, hogyan lehet telepíteni a Microsoft készlet láthatósági bővítményét Dynamics 365 Supply Chain Management.
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management készlet láthatósági kiegészítőjének telepítését ismerteti.
+A Készletláthatóság kiegészítő telepítéséhez a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatást kell használnia. Az LCS egy olyan együttműködési portál, amely olyan környezetet és rendszeresen frissített szolgáltatásokat biztosít, amelyek segítenek a pénzügyi és üzemeltetési alkalmazások életciklusának kezelésében. További tudnivalókért lásd: [Lifecycle Services-erőforrások](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-A Készletláthatóság kiegészítő telepítéséhez a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatást kell használnia. Az LCS egy olyan együttműködési portál, amely olyan környezetet és rendszeresen frissített szolgáltatásokat biztosít, amelyek segítenek a pénzügyi és üzemeltetési alkalmazások életciklusának kezelésében.
-
-További tudnivalókért lásd: [Lifecycle Services-erőforrások](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
+> [!TIP]
+> Javasoljuk, hogy csatlakozzon a Készlet láthatósági bővítmények felhasználócsoporthoz, ahol hasznos segédeket találhat, behasználhatja a legújabb frissítéseit, és bármilyen kérdést feladhat, amelyek a készlet láthatóságának használatával kapcsolatban előfordulhatnak. A csatlakozáshoz e-mailt küld a készlet láthatósági [termékcsoportjának inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) az ellátásilánc-kezelési környezet azonosítójával együtt.
 
 ## <a name="inventory-visibility-prerequisites"></a>Készletláthatóság előfeltételei
 
@@ -44,6 +44,9 @@ Ha bármilyen kérdése van ezekkel az előfeltételekkel kapcsolatban, kérjük
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>A Készlet láthatósága bővítmény telepítése
 
 A bővítmény telepítése előtt regisztráljon egy alkalmazást, és adjon hozzá egy ügyféltitkot a Azure Active Directory (Azure AD) címre az Azure-előfizetése alatt. Útmutatásért lásd: [Alkalmazás regisztrálása](/azure/active-directory/develop/quickstart-register-app) és [Ügyféltitok hozzáadása](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Mindenképpen jegyezze fel az **Alkalmazás (ügyfél) azonosító**, az **Ügyféltitok** és a **Bérlő azonosító** értékeit, mert később szüksége lesz rájuk.
+
+> [!IMPORTANT]
+> Ha több LCS-környezete van, mindegyikhez Azure AD hozzon létre egy másik alkalmazást. Ha ugyanazt az alkalmazásazonosítót és bérlőazonosítót használja a készlet láthatósági bővítményének különböző környezetekben való telepítéséhez, jogkivonat-probléma fog előfordulni a régebbi környezetekben. Emiatt csak az utolsó telepítés lesz érvényes.
 
 Miután regisztrált egy alkalmazást, és hozzáad egy ügyféltitkot a Azure AD rendszerhez, kövesse az alábbi lépéseket a Készletláthatóság kiegészítő telepítéséhez.
 
@@ -72,11 +75,18 @@ Miután regisztrált egy alkalmazást, és hozzáad egy ügyféltitkot a Azure A
 1. Válassza a **Telepítés** parancsot. A bővítmény állapota a következő: **Telepítés**. Ha a telepítés befejeződött, frissítse az oldalt. Az állapotnak **Telepítettre** kell változnia.
 1. A Dataverse-ben válassza ki az **Alkalmazások** szakaszt a bal oldali navigációban, és ellenőrizze, hogy sikeresen telepítve van-e **Készlet láthatósága** Power Apps. Ha az **Alkalmazások** szakasz nem létezik, lépjen kapcsolatba a Készletláthatóság termékcsapattal az [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) címen.
 
-> [!TIP]
-> Javasoljuk, hogy csatlakozzon az Inventory Visibility Add-in felhasználói csoporthoz, ahol hasznos útmutatókat találhat, megkaphatja legfrissebb frissítéseinket, és felteheti a készlet láthatóságának használatával kapcsolatos kérdéseit. A csatlakozáshoz kérjük, küldjön e-mailt a Készletláthatósági termékcsapatnak a következő címen: [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) és tartalmazza a Supply Chain Management környezetazonosítóját.
-
-> [!IMPORTANT]
-> Ha több LCS-környezete van, mindegyik környezethez hozzon létre egy másik Azure AD alkalmazást. Ha ugyanazt az alkalmazásazonosítót és bérlőazonosítót használja a készlet láthatósági bővítményének különböző környezetekben való telepítéséhez, jogkivonat-probléma fog előfordulni a régebbi környezetekben. Csak az utolsó telepített bővítmény lesz érvényes.
+> [!NOTE]
+> Ha az LCS-lapról több mint egy óráig tart a telepítés, akkor a felhasználói fióknak valószínűleg nincs engedélye a megoldások telepítésére a környezetben Dataverse. A probléma megoldásához hajtsa végre a következő lépéseket:
+>
+> 1. A Készlet láthatósági bővítményének telepítési folyamatának megszakítása az LCS-lapon
+> 1. Jelentkezzen be a [Microsoft 365 rendszergazdai](https://admin.microsoft.com) központba, és győződjön meg róla, hogy a bővítmény telepítéséhez használni kívánt felhasználói fiókhoz hozzá van rendelve a "Dynamics 365 Unified Operations Terv" licenc. Szükség esetén rendelje hozzá a licencet.
+> 1. Jelentkezzen be a rendszergazdai [Power Platform központba](https://admin.powerplatform.microsoft.com) a megfelelő felhasználói fiók segítségével. Ezután a következő lépések szerint telepítse a készlet láthatósági bővítményét:
+>     1. Válassza ki azt a környezetet, ahová telepíteni szeretné a bővítményt.
+>     1. Válassza ki a **Dynamics 365-alkalmazásokat**.
+>     1. Válassza a **Telepítési alkalmazást**.
+>     1. A készlet **láthatóságának kiválasztása**
+>
+> 1. A telepítés befejeződése után menjen vissza az LCS lapra, és próbálja **újratelepíteni a Készlet láthatósága** bővítményt.
 
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>A Készletláthatóság kiegészítő eltávolítása
 

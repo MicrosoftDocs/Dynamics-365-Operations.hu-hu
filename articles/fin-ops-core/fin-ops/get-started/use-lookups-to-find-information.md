@@ -1,6 +1,6 @@
 ---
 title: Információk megtalálása keresésekkel
-description: Ebben a témakörben megismerheti ezeket a keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit.
+description: Ebben a cikkben ismerkedni lehet a keresési funkciókkal, és hasznos tippeket kap, hogy a rendszerből optimálisan használható legyen a keresés.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ee309330c165dfb0b67f647afc3514d4c827dad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069298"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901523"
 ---
 # <a name="find-information-by-using-lookups"></a>Információk megtalálása keresésekkel
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069298"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit.
+Számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a cikkben megismeri ezeket az új keresési funkciókat, és hasznos tippeket kap, hogy a rendszerből optimálisan használható legyen a keresés.
 
 ## <a name="responsive-lookups"></a>Kontextusfüggő keresések
 

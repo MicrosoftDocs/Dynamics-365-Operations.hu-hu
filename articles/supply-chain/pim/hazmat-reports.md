@@ -1,6 +1,6 @@
 ---
 title: Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
-description: Ez a témakör azt mutatja be, hogyan lehet a veszélyes anyagokhoz kapcsolódó különböző jelentésekkel dolgozni. Számos ilyen jelentés szükséges annak érdekében, hogy a szállítás és a tárolás során a különböző veszélyes anyagokra vonatkozó rendeletek követelményei teljesüljenek.
+description: Ez a témakör bemutatja a veszélyes anyagokra vonatkozó jelentésekben való munkát. Számos ilyen jelentés szükséges annak érdekében, hogy a szállítás és a tárolás során a különböző veszélyes anyagokra vonatkozó rendeletek követelményei teljesüljenek.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 782b1b4995af09a63c483d2b81ed255a5c11803a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568543"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846040"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
 
@@ -63,7 +63,7 @@ A jelentés megtekintéséhez válassza a **Termékinformáció-kezelés \> Lek�
 
 Ha további tájékoztatást szeretne arról, hogyan lehet a kiadott termékre vonatkozó készlet-korlátozásokat megadni, akkor lásd: [Készletkorlátok a veszélyes termékekhez](hazmat-items.md#stock-limits).
 
-A készletkorlátokhoz használt előírás a **Raktárkezelési paraméterek** oldalon definiálható. Nyissa meg a **Raktárkezelés \> Beállítások \> Raktárkezelési paraméterek** lehetőséget, majd a **Jelentések** lapon a **Veszélyes anyagok készletkorlátozása** lapon adja meg a rendeletkódot. További tudnivalókért tekintse meg a [Veszélyes anyagok jelentéseinek beállítása](#set-up) című részt, a témakör korábbi részében.
+A készletkorlátokhoz használt előírás a **Raktárkezelési paraméterek** oldalon definiálható. Nyissa meg a **Raktárkezelés \> Beállítások \> Raktárkezelési paraméterek** lehetőséget, majd a **Jelentések** lapon a **Veszélyes anyagok készletkorlátozása** lapon adja meg a rendeletkódot. A további tudnivalókat lásd [a](#set-up) cikk korábbi, Veszélyes anyagok jelentésének beállítása című részében.
 
 ## <a name="verified-gross-mass-report"></a>Ellenőrzött bruttótömeg jelentés
 

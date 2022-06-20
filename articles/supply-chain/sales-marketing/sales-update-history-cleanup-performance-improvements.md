@@ -1,5 +1,5 @@
 ---
-title: Értékesítési előzmények adatainak tisztításának ütemezése
+title: Értékesítési előzményadatok tisztításának ütemezése
 description: Ez a témakör azt mutatja be, hogyan lehet javítani a rendszer teljesítményét az értékesítési frissítések előzményeinek rendszeres időközönként futtatott ismétlődő feladatának ütemezésével.
 author: myvakalo
 ms.date: 03/21/2022
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6c6c1e08d45f2a7d1e1267010b286111bad01a6c
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570366"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900825"
 ---
-# <a name="schedule-sales-history-data-cleanup"></a>Értékesítési előzmények adatainak tisztításának ütemezése
+# <a name="schedule-sales-history-data-cleanup"></a>Értékesítési előzményadatok tisztításának ütemezése
 
 [!include [banner](../includes/banner.md)]
 
@@ -28,7 +28,7 @@ Ha az értékesítési frissítések *előzményeinek* tisztítási ismétlődő
 
 ## <a name="turn-on-the-sales-history-cleanup-features"></a>Az értékesítési előzmények tisztítási funkcióinak bekapcsolás
 
-*Az* értékesítési frissítések előzményeinek tisztítási ismétlődő feladatának, valamint az ebben a témakörben ismertetett összes funkciónak a beállítását úgy állíthatja be és használhatja, *·* *hogy* az Értékesítési előzményekben leírt teljesítmény-tisztítási fejlesztések és az értékesítések frissítési előzményeinek tisztítása a Funkciókezelés kori funkciói alapján engedélyezhető az alábbi alszakaszok szerint.
+*Az* értékesítési frissítések előzményeinek tisztítási ismétlődő feladatának, valamint az ebben a cikkben ismertetett összes funkciónak a beállítását úgy állíthatja be és használhatja, *·* *hogy* engedélyezi az Értékesítési előzmények tisztítása teljesítményjavításokat és az értékesítések frissítésének előzményeinek tisztítását a Funkciókezelés kori funkciói alapján, az alábbi alszakaszok szerint.
 
 ### <a name="sales-history-cleanup-performance-improvements"></a>Értékesítési előzmények adattisztítási teljesítményének javításai
 

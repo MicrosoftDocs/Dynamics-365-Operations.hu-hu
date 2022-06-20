@@ -1,6 +1,6 @@
 ---
 title: Költségvetés-tervezés frissítése
-description: Ez a témakör elmagyarázza, hogy mit kell újrakonfigurálni, és leírja azokat az új funkciókat, amelyeket érdemes kipróbálni a frissítés befejezése után.
+description: Ez a cikk bemutatja az újrakonfigurálható funkciókat, valamint azokat az új funkciókat, amelyekre a frissítés befejezése után figyelembe kell venni.
 author: panolte
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c52de15faddd797d31d0875882863b8fe37a7d173b38be058e51a06b2e7fe078
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769191"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890406"
 ---
 # <a name="upgrade-budget-planning"></a>Költségvetés-tervezés frissítése
 
 [!include [banner](../includes/banner.md)]
 
-A költségvetés-tervezésben lényeges különbségek vannak a Microsoft Dynamics AX 2012 és Dynamics 365 Finance között. Egyes funkciók nem frissültek, ezért újrakonfigurálást igényelnek. Ez a témakör elmagyarázza, hogy mit kell újrakonfigurálni, és leírja azokat az új funkciókat, amelyeket érdemes kipróbálni a frissítés befejezése után.  
+Microsoft Dynamics AX A 2012-es költségvetés-tervezés és a Dynamics 365 Pénzügy között lényeges különbségek vannak. Egyes funkciók nem frissültek, ezért újrakonfigurálást igényelnek. Ez a cikk bemutatja az újrakonfigurálható funkciókat, valamint azokat az új funkciókat, amelyekre a frissítés befejezése után figyelembe kell venni.  
 
-A költségvetés-tervezés a Finance rendszerben sok fejlesztést kínál, amelyek nem érhetők el a Dynamics AX 2012 rendszerben. Ez a téma azokat a változásokat mutatja be, amelyeket a frissítő ügyfeleknek végre kell hajtaniuk. Emellett felhívja a figyelmet azokra az új funkciókra is, amelyeket figyelembe kell venni a frissítési folyamat során. A változtatások mértéke miatt a meglévő költségvetési tervek csak akkor nyithatók meg, ha a jelen témakörben felvázolt változtatások megtörténtek. A jelentéseknek azonban továbbra is működniük kell, és nincs szükség hozzájuk plusz módosításokra.
+A költségvetés-tervezés a Finance rendszerben sok fejlesztést kínál, amelyek nem érhetők el a Dynamics AX 2012 rendszerben. Ez a cikk bemutatja, hogy a frissítéssel vevőknek kell-e módosításokat végrehajtottak. Emellett felhívja a figyelmet azokra az új funkciókra is, amelyeket figyelembe kell venni a frissítési folyamat során. A módosítások terjedelmének miatt a meglévő költségvetési tervek mindaddig nem nyithatók meg, amíg az ebben a cikkben körvonalazott módosítások el nem készülnek. A jelentéseknek azonban továbbra is működniük kell, és nincs szükség hozzájuk plusz módosításokra.
 
 ## <a name="overview-of-changes"></a>Változások áttekintése
-Számos jelentős változás következett be a Finance and Operations Költségvetés részében. Ezek a változtatások arra szolgálnak, hogy könnyebben konfigurálhatóvá és újrahasználhatóbbá tegyék a költségvetés tervezését, csökkentve az évről évre szükséges karbantartási és beállítási igényt. Az AX 2012 következő területei már nem léteznek a Finance szolgáltatásban:
+Számos jelentős változás következett be a Dynamics 365 for Finance and Operations Költségvetés részében. Ezek a változtatások arra szolgálnak, hogy könnyebben konfigurálhatóvá és újrahasználhatóbbá tegyék a költségvetés tervezését, csökkentve az évről évre szükséges karbantartási és beállítási igényt. Az AX 2012 következő területei már nem léteznek a Finance szolgáltatásban:
 
 -   Költségvetésiterv-sablonok (Költségvetési terv konfigurációja)
 -   Költségvetésiterv-mappák (Költségvetési terv konfigurációja)
@@ -58,7 +58,7 @@ A költségvetés-tervezési eljárások többnyire ugyanazok, mint az AX 2012-b
 Az AX 2012-ben az igazoló dokumentumokat a mellékletek mappájába mentette a rendszer. A korábbi igazoló dokumentumok nem frissülnek. Az igazoló dokumentumok mostantól az adatbázisba kerülnek. Ha ezeket az információkat menteni kell a frissített verzióban, az egyes tervekhez csatolmányként felveheti a végső igazoló dokumentumokat az **Igazolás** gomb megnyomásával a Műveleti ablaktáblán. Az AX 2012-ben Excel-munkafüzetet hozott létre a program minden egyes költségvetési tervhez a sablon alapján. A Finance programban minden terv megnyitja az elrendezés egy példányát. Az Excel-fájl módosítása azonban nem történik meg. Minden olyan képletet és támogató adatot, amelyet tervenkénti alapon használt, megjegyzésként, igazoló dokumentumként vagy más kiegészítő folyamatként kell megadni.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Frissített környezet konfigurálása az AX 2012-ből
-A frissített rendszer beállításaira vonatkozó konfiguráció meghatározásához a következő példa egy frissített költségvetési folyamatot használ az AX 2012 demóadatokból. Az oszlopok alapértelmezett konfigurációs adatainak létrehozása a frissítési folyamatban való segítséghez jött létre. Frissítheti vagy törölheti az alapértelmezett adatokat, ha nem felelnek meg a konfigurációs követelményeknek. **Megjegyzés:** Új kötelező mezők is vannak, amelyeknek beállítása nem a rendszerben történik. Ha elakad egy oldalon, például a **Költségvetés-tervezési konfiguráció** oldalon, és nem tud elnavigálni, bezárhatja a böngészőt, majd újra megnyithatja egy másik oldalon, hogy a megfelelő sorrendben megadhassa a részleteket. Vannak kötelező mezők, amelyek még nincsenek beállítva. Ennélfogva a problémák mindaddig előfordulhatnak, amíg mindent nem konfigurált, és minden szükséges mezőt be nem állított. Ez a témakör azt ismerteti, hogy miként kell ezeket a mezőket beállítani. Az alábbiakban néhány ilyen kötelező mező látható:
+A frissített rendszer beállításaira vonatkozó konfiguráció meghatározásához a következő példa egy frissített költségvetési folyamatot használ az AX 2012 demóadatokból. Az oszlopok alapértelmezett konfigurációs adatainak létrehozása a frissítési folyamatban való segítséghez jött létre. Frissítheti vagy törölheti az alapértelmezett adatokat, ha nem felelnek meg a konfigurációs követelményeknek. **Megjegyzés:** Új kötelező mezők is vannak, amelyeknek beállítása nem a rendszerben történik. Ha elakad egy oldalon, például a **Költségvetés-tervezési konfiguráció** oldalon, és nem tud elnavigálni, bezárhatja a böngészőt, majd újra megnyithatja egy másik oldalon, hogy a megfelelő sorrendben megadhassa a részleteket. Vannak kötelező mezők, amelyek még nincsenek beállítva. Ennélfogva a problémák mindaddig előfordulhatnak, amíg mindent nem konfigurált, és minden szükséges mezőt be nem állított. Ez a cikk bemutatja a mezők szükség szerint beállítását. Az alábbiakban néhány ilyen kötelező mező látható:
 
 -   **Költségvetés-tervezési folyamat** oldal: **Alapértelmezett számlastruktúra** mező
 -   **Költségvetés-tervezési folyamat** oldal: **Elrendezés** mező a **Költségvetés-tervezési szakaszok szabályai és elrendezései** gyorslapon
@@ -69,7 +69,7 @@ A frissített rendszer beállításaira vonatkozó konfiguráció meghatározás
    -   Költségvetési tervek forgatókönyvei: Tényleges adatok, Kiindulás, Költségvetési kérelem, Költségvetés jóváhagyva
    -   Költségvetési terv sorai 2017 minden forgatókönyvéhez, valamint Tényleges adatok 2017-re és 2016-ra
 
-   A következő oszlopok jönnek létre a Finance and Operations alkalmazásban:
+   A következő oszlopok jönnek létre a Finance and Operations programban:
 
    | Oszlop neve    | Költségvetési tervváltozat | Oszlop időszaka | Év eltolása |
    |----------------|----------------------|--------------------|-------------|

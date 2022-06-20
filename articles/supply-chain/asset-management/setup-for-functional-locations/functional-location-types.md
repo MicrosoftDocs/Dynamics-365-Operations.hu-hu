@@ -1,6 +1,6 @@
 ---
-title: Munkavégzési helyszínek típusai
-description: Ez a cikk azt ismerteti, hogy hozhatók létre a munkavégzési helyszínek típusai az Eszközkezelésben.
+title: Munkavégzési helyszín típusai
+description: Ez a témakör azt ismerteti, hogyan lehet működési helytípusokat létrehozni az Eszközkezelésben.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739155"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879221"
 ---
-# <a name="functional-location-types"></a>Munkavégzési helyszínek típusai
+# <a name="functional-location-types"></a>Munkavégzési helyszín típusai
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Ez a cikk azt ismerteti, hogy hozhatók létre a munkavégzési helyszínek típusai az Eszközkezelésben. A munkavégzési helyszínek típusaival a munkavégzési helyszínek követelményei kezelhetők (például az eszközök munkavégzési helyszíneken történő telepítésének módja). Az adott típusú munkavégzési helyszínhez használható eszköztípusok és karbantartási tervek, a munkavégzési helyszínek attribútumai és az eszközattribútumok követelményei beállíthatók. Amikor új munkavégzési helyszínt hoz létre, meg kell adni a munkavégzési helyszín típusát.
+Ez a témakör azt ismerteti, hogyan lehet működési helytípusokat létrehozni az Eszközkezelésben. A munkavégzési helyszínek típusaival a munkavégzési helyszínek követelményei kezelhetők (például az eszközök munkavégzési helyszíneken történő telepítésének módja). Az adott típusú munkavégzési helyszínhez használható eszköztípusok és karbantartási tervek, a munkavégzési helyszínek attribútumai és az eszközattribútumok követelményei beállíthatók. Amikor új munkavégzési helyszínt hoz létre, meg kell adni a munkavégzési helyszín típusát.
 
 >[!NOTE] 
 >Ha munkavégzési helyszíneket szeretne használni, létre kell hoznia egy alapértelmezett munkavégzési helyszínt, amelyet csak új eszközök létrehozásához használ majd. Ehhez az alapértelmezett munkavégzési helyszínhez létre kell hoznia egy olyan alapértelmezett típust, ami kifejezetten egyszerű, és lehetővé teszi több eszköz telepítését az alapértelmezett munkavégzési helyszínen. A munkavégzési helyszínek beállításáról a [Munkavégzési helyszínek létrehozása](../functional-locations/create-functional-locations.md) című cikkben talál további információt.

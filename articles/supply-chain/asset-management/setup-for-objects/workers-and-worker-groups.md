@@ -1,6 +1,6 @@
 ---
 title: Karbantartási dolgozók és dolgozói csoportok
-description: Ez a témakör a karbantartási dolgozókat és dolgozói csoportokat mutatja be az Eszközkezelésben.
+description: Ez a cikk bemutatja az Eszközkezelésben dolgozó dolgozók és dolgozócsoportok karbantartását.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a24c880ee76af1490824aef07976b998d9225d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750124"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860899"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Karbantartási dolgozók és dolgozói csoportok
 
@@ -28,7 +28,7 @@ ms.locfileid: "6750124"
 
  
 
-Ez a témakör a karbantartási dolgozókat és dolgozói csoportokat mutatja be az Eszközkezelésben. A Eszközkezelés modulban hozzákapcsolhatja a karbantartási dolgozókat a munkavégzési helyszínekhez. (A munkavégzési helyszínekkel kapcsolatos további tudnivalókat lásd a [Munkavégzési helyszínek létrehozása](../functional-locations/create-functional-locations.md) című témakörben.) Ez a funkció akkor lehet hasznos, ha például egy olyan gépen szeretné ütemezni a karbantartási feladatot, amely a 01. munkavégzési helyszínen található, és a munka végrehajtásához ugyanarról a helyről kívánja hozzárendelni a karbantartási dolgozókat.
+Ez a cikk bemutatja az Eszközkezelésben dolgozó dolgozók és dolgozócsoportok karbantartását. A Eszközkezelés modulban hozzákapcsolhatja a karbantartási dolgozókat a munkavégzési helyszínekhez. (A munkavégzési helyszínekkel kapcsolatos további tudnivalókat lásd a [Munkavégzési helyszínek létrehozása](../functional-locations/create-functional-locations.md) című témakörben.) Ez a funkció akkor lehet hasznos, ha például egy olyan gépen szeretné ütemezni a karbantartási feladatot, amely a 01. munkavégzési helyszínen található, és a munka végrehajtásához ugyanarról a helyről kívánja hozzárendelni a karbantartási dolgozókat.
 
 Karbantartási munkacsoportokat is létrehozhat, és társíthat hozzájuk karbantartási dolgozókat. Ez a funkció akkor hasznos, ha egyszerű munkarendelés-ütemezést végez, és karbantartási dolgozók egy csoportját szeretné egy munkarendeléshez ütemezni. A karbantartási dolgozók és karbantartási munkacsoportok segítségével beállíthatja az előnyben részesített karbantartási dolgozókat és felelős karbantartási dolgozókat. 
 

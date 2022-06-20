@@ -1,6 +1,6 @@
 ---
 title: Aktuális készlet listája
-description: Ez a témakör azt mutatja be, hogyan lehet az Aktuális készlet lapot használni az aktuális készlet részleteinek vizsgálatához. Néhány olyan módszert mutat be, amelyekkel a különböző szűrési és rendezési lehetőségek együtt dolgoznak, illetve azt, hogy miért hozhatnak ezek a lehetőségek időnként nem várt eredményeket.
+description: Ez a témakör azt ismerteti, hogyan lehet az aktuális készlet adatait az Aktuális készlet lapon ellenőrizni. Néhány olyan módszert mutat be, amelyekkel a különböző szűrési és rendezési lehetőségek együtt dolgoznak, illetve azt, hogy miért hozhatnak ezek a lehetőségek időnként nem várt eredményeket.
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5747ae985e1791de8ddd93b678c2449a4a1802da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879048"
 ---
 # <a name="inventory-on-hand-list"></a>Aktuális készlet listája
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet az **Aktuális készlet** lapot használni az aktuális készlet részleteinek vizsgálatához. Néhány olyan módszert mutat be, amelyekkel a különböző szűrési és rendezési lehetőségek együtt dolgoznak, illetve azt, hogy miért hozhatnak ezek a lehetőségek időnként nem várt eredményeket.
+Ez a témakör azt ismerteti, hogyan **lehet az aktuális készlet adatait** az Aktuális készlet lapon ellenőrizni. Néhány olyan módszert mutat be, amelyekkel a különböző szűrési és rendezési lehetőségek együtt dolgoznak, illetve azt, hogy miért hozhatnak ezek a lehetőségek időnként nem várt eredményeket.
 
 ## <a name="query-your-on-hand-inventory"></a>Kérdezze le az aktuális készletet
 
@@ -35,9 +35,9 @@ Az **Aktuális lista** lapja automatikusan frissül, ha a tranzakciókat a kész
 A következő eszközök használatával találhatja meg a keresett termékeket:
 
 - A Műveleti ablaktáblán válassza ki a [**Dimenziókat**](#dimensions) a párbeszédpanel megnyitásához, ahol az **Aktuális** rácsban megjelenő oszlopokat adhat hozzá vagy távolíthat el.
-- A [**Szűrők** ablaktáblában](#filters-pane) adja meg az egyes mezők értékeit, hogy csak azok a rekordok jelenjenek meg, amelyek megfelelnek ezeknek az értékeknek. Ne felejtse el, hogy az itt megadott szűrők olyan forrástáblákra vonatkoznak, amelyek később összesítve lehetnek a megjelenítendőként kiválasztott dimenziók alapján. Ha további tájékoztatást szeretne arról, hogy ez a viselkedés milyen hatással lehet az eredményekre, tekintse meg a [Példák](#examples) lehetőséget a témakör későbbi részében.
+- A [**Szűrők** ablaktáblában](#filters-pane) adja meg az egyes mezők értékeit, hogy csak azok a rekordok jelenjenek meg, amelyek megfelelnek ezeknek az értékeknek. Ne felejtse el, hogy az itt megadott szűrők olyan forrástáblákra vonatkoznak, amelyek később összesítve lehetnek a megjelenítendőként kiválasztott dimenziók alapján. Arról, hogy hogyan befolyásolhatja ez a viselkedés az eredményeket, [tekintse](#examples) meg a példákat ebben a cikkben.
 - A **Szűrők** ablaktáblán válassza ki az **Alkalmaz** lehetőséget a megegyező aktuális készlet létrehozásához az **Aktuális** rácsban.
-- Az **Aktuális** rácsban válassza ki bármelyik az oszlop fejlécét, hogy az oszlopban szereplő értékek alapján rendezzen vagy szűrjön. A rács felső részén található GyorsSzűrő további szűrési beállításokat biztosít. Ezek a szűrők az eredményekre vonatkoznak, nem pedig a forrástáblákra. Ha további tájékoztatást szeretne arról, hogy ez a viselkedés milyen hatással lehet az eredményekre, tekintse meg a [Példák](#examples) lehetőséget a témakör későbbi részében.
+- Az **Aktuális** rácsban válassza ki bármelyik az oszlop fejlécét, hogy az oszlopban szereplő értékek alapján rendezzen vagy szűrjön. A rács felső részén található GyorsSzűrő további szűrési beállításokat biztosít. Ezek a szűrők az eredményekre vonatkoznak, nem pedig a forrástáblákra. Arról, hogy hogyan befolyásolhatja ez a viselkedés az eredményeket, [tekintse](#examples) meg a példákat ebben a cikkben.
 
 Az egyező cikkekhez az **Aktuális** rács minden a következő készletadatok oszlopait adja meg.
 
@@ -64,7 +64,7 @@ Használja a **Szűrők** lehetőséget az ablaktáblán az aktuális készletli
 > [!IMPORTANT]
 > Az **Aktuális lista** lap egy részletes aktuális készlettáblából van összeállítva, amely az összes elérhető dimenziót tartalmazza. A lap listája azonban összesítés jellegű. Így előfordulhat, hogy a forrástábla sorait egyesíti a megjelenített dimenzióknak megfelelő értékek összesítésével.
 >
-> A **Szűrők** ablaktáblában meghatározott szűrők a forrástáblára vonatkoznak, nem az összesített listára. Ez a viselkedés esetenként váratlan eredményeket hozhat. Ha további tájékoztatást szeretne arról, hogy ez a viselkedés milyen hatással lehet az eredményekre, tekintse meg a [Példák](#examples) lehetőséget a témakör későbbi részében.
+> A **Szűrők** ablaktáblában meghatározott szűrők a forrástáblára vonatkoznak, nem az összesített listára. Ez a viselkedés esetenként váratlan eredményeket hozhat. Arról, hogy hogyan befolyásolhatja ez a viselkedés az eredményeket, [tekintse](#examples) meg a példákat ebben a cikkben.
 > 
 > A rácsban megadott [szűrők azonban](#grid-filters) *vonatkoznak* az összesített listára. Ezek a szűrők egyaránt tartalmazzák a rács felső részén található GyorsSzűrő, valamint az egyes oszlopok fejlécének szűrőjét.
 
@@ -75,7 +75,7 @@ A **Szűrők** ablaktáblában elérhető szűrőkészletet a következő lépé
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Válassza ki, hogy mely dimenziók jelenjenek meg
 
-A dimenziók ismertetik az aktuális készletlistán lévő egyes cikkeket, és több lehetőséget kínálnak a lista rendezésére és szűrésére. A megjelenítendőként kiválasztott dimenziók az **Aktuális lista** lapon lévő sorok összesítésének módját is befolyásolhatják. Ez az összesítés viszont hatással lehet arra, hogy a forrástáblák sorai hogyan lesznek összesítve a megjelenített eredményekben. Ha további tájékoztatást szeretne arról, hogy ez a viselkedés milyen hatással lehet az eredményekre, tekintse meg a [Példák](#examples) lehetőséget a témakör későbbi részében.
+A dimenziók ismertetik az aktuális készletlistán lévő egyes cikkeket, és több lehetőséget kínálnak a lista rendezésére és szűrésére. A megjelenítendőként kiválasztott dimenziók az **Aktuális lista** lapon lévő sorok összesítésének módját is befolyásolhatják. Ez az összesítés viszont hatással lehet arra, hogy a forrástáblák sorai hogyan lesznek összesítve a megjelenített eredményekben. Arról, hogy hogyan befolyásolhatja ez a viselkedés az eredményeket, [tekintse](#examples) meg a példákat ebben a cikkben.
 
 A megjelenő készletdimenziók beállításának személyre szabásához kövesse az alábbi lépéseket.
 
@@ -89,7 +89,7 @@ A megjelenő készletdimenziók beállításának személyre szabásához köves
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Szűrjön a készlet aktuális listájának kimenetére
 
-Válassza ki bármelyik az oszlop fejlécét az **Aktuális** rácsban, hogy az oszlopban szereplő értékek alapján rendezzen vagy szűrjön. A rács felső részén található GyorsSzűrő további szűrési beállításokat biztosít. Ezek a szűrők az eredményekre vonatkoznak, nem pedig a forrástáblákra. Ha további tájékoztatást szeretne arról, hogy ez a viselkedés milyen hatással lehet az eredményekre, tekintse meg a [Példák](#examples) lehetőséget a témakör későbbi részében.
+Válassza ki bármelyik az oszlop fejlécét az **Aktuális** rácsban, hogy az oszlopban szereplő értékek alapján rendezzen vagy szűrjön. A rács felső részén található GyorsSzűrő további szűrési beállításokat biztosít. Ezek a szűrők az eredményekre vonatkoznak, nem pedig a forrástáblákra. Arról, hogy hogyan befolyásolhatja ez a viselkedés az eredményeket, [tekintse](#examples) meg a példákat ebben a cikkben.
 
 > [!NOTE]
 > Nem szűrheti és rendezheti az összes oszlopot. A legtöbb mennyiségi oszlop nem tartalmaz rendezési és szűrési vezérlőket, mivel ezek kiszámított mezők. A **Rendelésben lévő** oszlop kivétel.

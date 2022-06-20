@@ -1,8 +1,8 @@
 ---
 title: A felhasználói élmény testreszabása
-description: Ez a témakör bemutatja, hogyan lehet személyre szabni az alkalmazást.
+description: Ez a cikk bemutatja, hogyan lehet személyre szabni az alkalmazást.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b922d68fcf3e83be57140cf8c54c4bacd2b75f56
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: c326e51dc127d8b82ccef28146ec223ca5169c5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602989"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845442"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8602989"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet személyre szabni az alkalmazást, illetve a következő témákat is taglalja: 
+Ez a cikk bemutatja, hogy hogyan lehet személyre szabni az alkalmazást, és a következő tárgyakat foglalja magában: 
 
 - **Az egész rendszerre érvényes beállítások** – Ezek a személyre szabási beállítások egy beállítási oldalon készülnek, és minden felhasználó számára elérhetők. Példák: a stílus és az időzóna. 
 - **Korlátozott személyre szabási hozzáférés** – Ezen a hozzáférési szinten a szokásos oldalhasználathoz társított felhasználói műveleteket automatikusan menti az alkalmazás, és visszaállítja amikor legközelebb meglátogatja ezt a lapot. Például az alkalmazás visszaállítja a rácsoszlopok szélességét, ha ezt beállítja, vagy a gyorslapok összecsukott/kibontott állapotát. 
@@ -58,7 +58,7 @@ Itt láthatók azoknak a műveleteknek a listája, amelyek a szokásos oldalhasz
 
 - **Rácsoszlopok szélessége:** – Megadhatja egy oszlop szélességét a listában, ha az oszlop fejlécén található méretező sávot balra vagy jobbra húzza a kívánt oszlopszélességig. Az alkalmazás tárolja az oszlop beállított szélességét. Majd minden alkalommal, amikor megnyitja a lapot, átméretezi az oszlop szélességét.
 - **Rács lábléce és oszlopok összegei** – *(Csak az új rács vezérlőelem bekapcsolásakor érhető el)* Eldöntheti, hogy megjeleníti-e a rács numerikus oszlopainak alján látható összesítést, valamint azt, hogy a rács ábléce látható legyen-e. Az alkalmazás ezeket a preferenciákat tárolja, és az oldal következő megnyitásakor alkalmazza őket. További információkért lásd az [Rácsfunkciók](grid-capabilities.md) részt. 
-- **Gyorslapok** – Néhány lapon kibontható szakaszok vannak, amelyeket *Gyorslapoknak* hívunk. Az alkalmazás tárolja a már kibontott vagy összecsukott gyorslapok adatait. A következő alkalommal, amikor megnyitja a lapot, ugyanazon gyorslap ki lesz bontva és össze lesz csukva, a lappal folytatott utolsó kommunikációt alapján. Bizonyos esetekben a gyorslap összecsukása javíthatja a teljesítményt, mivel az alkalmazásnak nem kell betöltenie azoknak a gyorslapoknak az információit egészen addig, amíg a gyorslapokat nem bontjuk ki. Amint később a témakörben elmagyarázzuk, a lapon módosítható a gyorslapok sorrendje.
+- **Gyorslapok** – Néhány lapon kibontható szakaszok vannak, amelyeket *Gyorslapoknak* hívunk. Az alkalmazás tárolja a már kibontott vagy összecsukott gyorslapok adatait. A következő alkalommal, amikor megnyitja a lapot, ugyanazon gyorslap ki lesz bontva és össze lesz csukva, a lappal folytatott utolsó kommunikációt alapján. Bizonyos esetekben a gyorslap összecsukása javíthatja a teljesítményt, mivel az alkalmazásnak nem kell betöltenie azoknak a gyorslapoknak az információit egészen addig, amíg a gyorslapokat nem bontjuk ki. Amint azt a cikk későbbi része is kifejti, módosíthatja egy oldalon a FastTabs sorrendjét is.
 - **Adatterületek** – Egyes lapokhoz tartozik egy **Kapcsolódó információk** ablaktábla jelenik meg, amely a lap aktuális tárgyához kapcsolódó írásvédett adatokat jelenít meg. Az **Kapcsolódó információk** minden szakaszának neve: *Adatterület*. Ki lehet bontani vagy össze lehet csukni a **Kapcsolódó információk** megjelenítését, illetve kibonthatók és összecsukhatók az egyes Adatterületek. Az alkalmazás tárolja ezeket a beállításokat. Legközelebb ha megnyitja a lapot a **Kapcsolódó információk** panel és az egyes Adatterületek állapota visszaáll, és ki lesz bontva vagy össze lesz csukva a lap utolsó kommunikációja alapján. Bizonyos esetekben a **Kapcsolódó információ** ablakpanel vagy az adatterület összecsukása javíthatja a teljesítményt, mivel az alkalmazásnak nem kell betöltenie azoknak a adatterületeknek az információit egészen addig, amíg azokat nem bontjuk ki.
 - **Műveleti ablaktábla** – A *Műveleti ablak* a legtöbb oldal tetején jelenik meg. A műveleti ablak gombjaival számos műveleteket hajthat végre az aktuális lapon. Ezek a gombok gyakran a lapokon vannak csoportosítva. A teljes műveletpanel lehet nyitottan *kitűzve*, ahogy alapértelmezés szerint összecsukva is. A következő alkalommal, amikor megnyitja a Művelet panelt, ugyanazon gyorslap ki lesz nyitva vagy össze lesz csukva, a lappal folytatott utolsó interakció alapján. Ha megnyitotta a Műveleti ablaktáblát, akkor a program a legutóbb használt lapot jeleníti meg.
 - **QuickFilters** – A *Gyorsszűrő* sok rács felett jelenik meg. A Gyorsszűrő lehetővé teszi a rács egyetlen kiválasztott oszlop alapján történő szűrését. Az alkalmazás tárolja az oszlopot, amelynek alapján szűrt. Ezt követően, a lap következő megnyitásakor a rács ugyanazon oszlopra fog szűrni alapértelmezettként. Azonban ezután még mindig kiválaszthat egy másik oszlopot, amire szűrni szeretné a rácsot.
@@ -173,14 +173,14 @@ A 10.0.26-os **verziótól** kezdve a csempeméretek kiválasztásának és mód
 
 ### <a name="personalizing-your-dashboard"></a>Az irányítópult személyre szabása
 
-Az irányítópult legtöbbször az első oldal, amelyet az alkalmazás megnyitásakor lát. Minden más rendszerben lévő laphoz hasonlóan személyre szabható a témakörben korábban ismertetett hasonló mechanizmusokkal. 
+Az irányítópult legtöbbször az első oldal, amelyet az alkalmazás megnyitásakor lát. Személyre szabható, mint a rendszer bármely más lapja, ugyanazoknak a mechanizmusoknak a felhasználásával, amelyek a jelen cikkben korábban le vannak írva. 
 
 > [!WARNING]
 > Jelenleg, ha tartalmat rejt el az irányítópulton, akkor fontos, hogy közvetlenül egy csempét célozzon meg, és ne a körülötte levő helyet. Ha elrejt egy csoportot egy csempe körül, akkor nem várt eredmény érhető el, ha később több csempét adnak hozzá, vagy ha a rendszer másik nyelvre vált.
 
 Az irányítópulton elérhető egyedi személyre szabási lehetőséggel adhat hozzá lapokat. 
 
-- Ha a **Teljes oldalas alkalmazások** funkció ki van kapcsolva, akkor új csempét adhat hozzá, ha a jobb gombbal rákattint egy elemre az irányítópulton, majd kiválasztja a **Hozzáadás a munkaterülethez** lehetőséget. Egy új munkaterület lap jön létre az irányítópult alsó részén. Ez az új munkaterület csempe átnevezhető. Hozzáadhat listákat, csempéket és hivatkozásokat a munkaterülethez a témakörben itt leírtak szerint: [Csempék, listák és hivatkozások hozzáadása munkaterülethez](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
+- Ha a **Teljes oldalas alkalmazások** funkció ki van kapcsolva, akkor új csempét adhat hozzá, ha a jobb gombbal rákattint egy elemre az irányítópulton, majd kiválasztja a **Hozzáadás a munkaterülethez** lehetőséget. Egy új munkaterület lap jön létre az irányítópult alsó részén. Ez az új munkaterület csempe átnevezhető. A cikk egy munkaterületi szakaszának listái,ái és listára mutató hivatkozásai szintén hozzáadhatók, [ezek](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) leírása a lapok hozzáadása című témakörben olvasható.
 - Ha a **Teljes oldalas alkalmazások** funkció be van kapcsolva, akkor új csempét adhat hozzá, ha a jobb gombbal rákattint egy elemre az irányítópulton, majd kiválasztja az **Alkalmazás hozzáadása** lehetőséget. A párbeszédpanelen válassza ki, hogy szeretne-e csempét hozzáadni egy új munkaterülethez, vagy egy olyan csempét, amelynek tartalma a Power Appsből származik vagy egy webhelyről. Ezután a lépéseket követve konfigurálja a kiválasztott lehetőséget. Egy új csempe jön létre az irányítópult alsó részén. A beágyazott alkalmazások hozzáadásával, szerkesztésével, törlésével és megosztásával kapcsolatos további információkért lásd: [Vászonalkalmazások beágyazása a Power Apps helyről](embed-power-apps.md) és [Harmadik féltől származó alkalmazások beágyazása](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Személyre szabások megosztása
@@ -236,7 +236,7 @@ A személyre szabás egy másik módja az exportálás és importálás. Az egye
 
 #### <a name="export"></a>Exportálás
 
-Általában a saját nézeteit vagy személyre szabásait a megfelelő lap megnyitásával, a **Személyre szabás** eszköztár megnyitásával, majd az **Exportálás** lehetőség kiválasztásával exportálhatja. Az eszköztárral kapcsolatos további információt a témakör korábbi, [Személyre szabási eszköztár](#personalization-toolbar) szakasza tartalmaz. Ha engedélyezve van a [mentett nézetek](saved-views.md), akkor a **Beállítások \> Felhasználói beállítások \> Személyre szabás** funkcióval megtekintheti a rendszer személyre szabási beállításainak listáját. Ezután kiválaszthatja az exportálni kívánt nézeteket vagy személyre szabásokat, majd válassza az **Exportálás** lehetőséget.
+Általában a saját nézeteit vagy személyre szabásait a megfelelő lap megnyitásával, a **Személyre szabás** eszköztár megnyitásával, majd az **Exportálás** lehetőség kiválasztásával exportálhatja. Az eszköztárról a [jelen cikk korábbi, Személyre szabási eszköztárának](#personalization-toolbar) szakasza nyújt további tájékoztatást. Ha engedélyezve van a [mentett nézetek](saved-views.md), akkor a **Beállítások \> Felhasználói beállítások \> Személyre szabás** funkcióval megtekintheti a rendszer személyre szabási beállításainak listáját. Ezután kiválaszthatja az exportálni kívánt nézeteket vagy személyre szabásokat, majd válassza az **Exportálás** lehetőséget.
 
 A következő lépésekkel a rendszergazdák exportálják más felhasználók személyre szabási adatait is.
 
@@ -277,7 +277,7 @@ Ha nincsenek engedélyezve a mentett nézetek, akkor kövesse az alábbi lépés
 
 A **Személyre szabás** oldal a személyre szabások kezelésének központja a szervezeti szinten. Az oldal tartalma és képességei attól függenek, hogy a **Mentett nézetek** funkció be van-e kapcsolva.
 
-Azon vevők esetében, akik bekapcsolták a **Mentett nézetek** funkciót, tekintse meg a [Mentett nézetek](saved-views.md) témakör "Nézetek globális kezelése" szakaszát.
+A Mentett nézetek **szolgáltatást** bekapcsoló vevők esetében lásd a Mentett nézetek című cikk "Nézetek globális kezelése" [szakaszát](saved-views.md).
 
 Azoknak a vevőknek, akik még nem kapcsolták be a [Mentett nézetek](saved-views.md) lehetőséget, ennek a weboldalnak négy lapja van:
 
@@ -285,6 +285,9 @@ Azoknak a vevőknek, akik még nem kapcsolták be a [Mentett nézetek](saved-vie
 - **Törlés** – A lap vagy a munkaterület összes személyre szabása egy vagy több felhasználó esetében is törölhető. Először válasszon egy oldalt vagy munkaterületet, hogy megtekinthesse azon felhasználók listáját, akik személyre szabták ezt az oldalt. Ezután válassza ki azokat a felhasználókat, akiknek az adott oldalhoz vagy munkaterülethez tartozó személyre szabását törölni kell, majd válassza a **Törlés** elemet. A kiválasztott felhasználók által a kiválasztott lapra vagy munkaterületre alkalmazott valamennyi személyre szabási beállítás törlődik. Ez a művelet nem vonható vissza. Ugyanakkor ha a lapnak vagy a munkaterületnek létezik mentett személyre szabási beállítása, ez a beállítás visszaimportálható.
 - **Felhasználók** – Válasszon egy felhasználót, hogy megtekinthesse a felhasználó által személyre szabott oldalak listáját. Ezután kiválaszthatja, hogy engedélyezze vagy letiltsa a kiválasztott felhasználónak a személyre szabott képességek használatát bizonyos oldalakon vagy az egész rendszerben. Emellett törölhet, importálhat és exportálhat személyre szabásokat a felhasználó számára. Ezenkívül a felhasználó számára alaphelyzetbe állíthatók a funkció-ábrafeliratok. Ebben az esetben, ha a felhasználó korábban elutasította az új funkciókat bemutató előugró ablakokat, ezek legközelebb újra megjelennek a felhasználó számra
 - **Rendszer:** – Itt tudja ideiglenesen kikapcsolni a rendszerben személyre szabásokat az összes felhasználó számára. Ebben az esetben minden személyre szabás minden felhasználónál törlődik, és az összes lap visszaáll az alapértelmezett állapotába. Amennyiben később újra bekapcsolja a személyre szabásokat, a rendszer minden személyre szabást újra alkalmaz. Véglegesen is törölheti a rendszerben szereplő személyes beállításokat az összes felhasználó számára. A törölt személyes beállításokat nem lehet visszaállítani. Ezért a lépés végrehajtása előtt ellenőrizze, hogy exportálta mindazokat a személyes beállításokat, amelyeket később esetleg importálni szeretne.
+
+### <a name="service-updates-and-personalization"></a>Szolgáltatásfrissítések és személyre szabás
+A személyre szabási adatokat nem kell sem törlik, sem alaphelyzetbe állítani a termék új verziójára való áthelyezéskor. A személyre szabás és a mentett nézetek adatai több frissítésen keresztül is működnek. Ez alól kivételt képeznek a képernyőnek az olyan módosításai, amelyek érvényteleníti a személyre szabásokat (például az eltávolított vezérlőelemeket), vagy a képernyő alaplekérdezését olyan módon módosítják, hogy az többé ne egyesítsen a nézetlekérdezéshez társított adatforrás-résztáraval.
 
 ## <a name="personalizing-inventory-dimensions"></a>A készletdimenziók személyre szabása
 

@@ -1,6 +1,6 @@
 ---
 title: Értékesítési visszáruk
-description: Ez a témakör a visszárurendelések folyamatáról nyújt tájékoztatást. Magában foglalja a vevői visszárura vonatkozó információkat, valamint azok hatását a költségszámításra és a készletek mennyiségére.
+description: Ez a cikk a visszárurendelések folyamatára vonatkozó információkat tartalmaz. Magában foglalja a vevői visszárura vonatkozó információkat, valamint azok hatását a költségszámításra és a készletek mennyiségére.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9e8045ec39b9caf9bf0dc2b2d331419efb54e6d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695563"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860406"
 ---
 # <a name="sales-returns"></a>Értékesítési visszáruk
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a visszárurendelések folyamatáról nyújt tájékoztatást. Magában foglalja a vevői visszárura vonatkozó információkat, valamint azok hatását a költségszámításra és a készletek mennyiségére.
+Ez a cikk a visszárurendelések folyamatára vonatkozó információkat tartalmaz. Magában foglalja a vevői visszárura vonatkozó információkat, valamint azok hatását a költségszámításra és a készletek mennyiségére.
 
 A vevők számos különböző ok miatt küldhetnek visszárut. Például lehet, hogy egy cikk hibás, vagy nem felel meg a vevő elvárásainak. A visszárufolyamat olyankor indul el, amikor a vevő egy cikk visszaküldését kéri. Miután megérkezik egy vevői kérés, visszárurendelés jön létre.
 
@@ -84,7 +84,7 @@ Miután befejezte a visszáru fejlécét, az alábbi módszerek egyikével vissz
 -   Hozzon létre egy visszárusort az **Értékesítési rendelés megkeresése** funkcióval. Javasoljuk, hogy ezt a funkciót használja visszáru-rendelés létrehozásakor. Az **Értékesítési rendelés keresése** funkció a számlázott értékesítésirendelés-sort a visszáru rendelés sornak a hivatkozást hoz létre, és olvassa be a részletek, például cikkszám, mennyiség, ár, engedmény és az eladás sorból költségértékek sor. A hivatkozás segít garantálni, hogy amikor a terméket visszaküldik a vállalatnak, az ugyanazon egységköltséggel kerüljön felértékelésre, mint az eladás során. A hivatkozás azt is igazolja, hogy a visszáru-rendeléseket nem olyan mennyiségben hozták létre, amely meghaladja a számlán eladott mennyiséget.
 
 >[!NOTE] 
->Az értékesítési rendelésre hivatkozó visszárusorokat az értékesítés helyesbítéseként vagy annak visszáru-újrarendeléseként kell kezelni. További tudnivalókért lásd a "Feladás a főkönyvbe" című részt, a témakör későbbi részében.
+>Az értékesítési rendelésre hivatkozó visszárusorokat az értékesítés helyesbítéseként vagy annak visszáru-újrarendeléseként kell kezelni. A további tudnivalókat lásd a cikk későbbi, "Feladás a főkönyvbe" című részében.
 
 ### <a name="charges"></a>Költségek
 
@@ -179,7 +179,7 @@ Visszaküldött cikkeket készletre könyvelésével egy szállítólevélen fiz
 
 [![Érkeztetési folyamat.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-A folyamat számos egyéb változattal rendelkezik, melyek nem szerepelnek ebben a témakörben. Az alábbiakban látható néhány ilyen változat:
+A folyamatnak számos más változata is van, amelyekről ez a cikk nem fog lefedni. Az alábbiakban látható néhány ilyen változat:
 
 -   Ne használja az **Érkeztetési áttekintés** listát Érkeztetési napló létrehozásához. Ehelyett manuális létrehozása a cikkérkezési napló. Visszáru rendeléseket kell **Értékesítési rendelés** referenciaként.
 -   Raktárkezelés használata, a raklapos szállítások készítése. A Visszárusor állapota lesz **beérkezett** raklapos szállítás közben.

@@ -1,6 +1,6 @@
 ---
 title: E-mail ER céltípusa
-description: Ez a témakör bemutatja, hogyan kell konfigurálni egy e-mail-célt az Elektronikus jelentéskészítési (ER) formátumok egyes MAPPA vagy FÁJL összetevőihez.
+description: Ez a témakör ismerteti, hogyan kell konfigurálni egy e-mail célt az elektronikus jelentésformátumok (ER) mappa- vagy fájlösszetevőihez.
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 08d64b0f21e4957727de1e8f5f13f9067c0fbc7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324008"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845657"
 ---
 # <a name="email-er-destination-type"></a>E-mail ER céltípusa
 
@@ -120,7 +120,7 @@ A **Képlettervező** lap **Képlet** mezőjébe írja be a támogatott szerepk�
 
 ![E-mail-forrásfiók konfigurálása.](./media/er_destinations-emaildefineaddresssource.gif)
 
-Ha a konfigurált szerepkör számlaszáma egyedi az egész Microsoft Dynamics 365 Finance egész példányra vonatkozóan, akkor a **E-mail címzettje** párbeszédpanel **E-mail forrásának vállalata** mezője nem maradhat üresen.
+Ha a beállított szerepkör Microsoft Dynamics számlaszámai a 365 Pénzügy teljes példánya számára egyediek, **·** **akkor az E-mail forrás vállalata mező üresen maradhat az E-mail** cím párbeszédpanelen.
 
 Olyan helyzet is előfordulhat, amikor a [Globális címjegyzékben](../../fin-ops/organization-administration/overview-global-address-book.md) különböző feleket különböző vállalatokban ([jogi személyek](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) regisztráltak, olyan módon hogy minden felhasználó ugyanazt a számlaszámot használja a konfigurált szerepkör kitöltéséhez. Ebben az esetben a konfigurált szerepkör számlaszáma nem egyedi a teljes Finance példány esetében. Ennélfogva egy fél explicit kiválasztása esetén nem adható meg csak számlaszám. Meg kell adnia azt a vállalatot is, amelynél a fél regisztrálva van a konfigurált szerepkör kitöltéséhez. Válassza a **Kapcsolás** gombot (lánc szimbólum) az **E-mail címzettje** párbeszédpanel **E-mail forrás vállalata** mezőjét a [Képlettervező lap](general-electronic-reporting-formula-designer.md) megnyitásához. Ezután ezen a lapon konfigurálhatja azt a képletet, amely a program futási idején a megfelelő forrást tartalmazó vállalat kódját adja vissza.
 
@@ -162,7 +162,7 @@ A következő ábra egy olyan ER-formátum szerkezetét mutatja be, amely úgy l
 
 [![Kimenő dokumentumokat létrehozó ER-formátum szerkezete.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
-A következő ábra az egyes összetevők csoportosításának és az új csoport **E-mail** céljának engedélyezésének folyamatát mutatja be, hogy a rendszer a megfelelő vevői számlákkal együtt fizetési felszólítást küldjön e-mail mellékletként, ahogy az ebben a fejezetben be lett mutatva.
+Az alábbi ábra az egyes összetevők csoportosítását és az új csoport e-mail célhelyének engedélyezését mutatja be, **így** a fizetési megjegyzéseket a megfelelő vevői számlákkal együtt e-mail mellékletként küldi el a rendszer.
 
 [![Az egyes összetevők csoportosítása és az E-mail cél engedélyezése.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 

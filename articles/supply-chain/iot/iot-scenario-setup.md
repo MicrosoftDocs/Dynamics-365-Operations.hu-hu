@@ -1,6 +1,6 @@
 ---
 title: Forgatókönyv beállítása IoT Intelligencia esetén
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a IoT-intelligencia forgatókönyveit a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
+description: Ez a cikk bemutatja, hogyan kell konfigurálni a Microsoft iM-intelligenciával kapcsolatos helyzeteket Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dddc282ef3e479d524b1dfa0c60091cad1c231e0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3172bdb81e00d20c5b1d1f3f8e4299ca69c59434
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675177"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889606"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Forgatókönyv beállítása IoT Intelligencia esetén
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a IoT-intelligencia forgatókönyveit a Microsoft Dynamics 365 Supply Chain Management alkalmazásban. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
+Ez a cikk bemutatja, hogyan kell konfigurálni a Microsoft iM-intelligenciával kapcsolatos helyzeteket Dynamics 365 Supply Chain Management. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
-Ebben a témakörben konfigurálni fogja a **Berendezés üzemkimaradása** forgatókönyvet, hogy értesítést hozzon létre a Supply Chain Management alkalmazásban, amikor egy gép leáll. A témakör bemutatja, hogy hogyan lehet beállítani a **Termékminőség** esetet, hogy az értesítés jöjjön létre, ha a cikk egy attribútuma egy megadott tartományon kívülre esik, és hogyan kell beállítani a **Termelési késések** esetet, ha a termelési teljesítmény egy küszöbérték alá esik.
+Ebben a cikkben konfigurálni fogja a berendezés leállási helyzetét, **hogy** egy gép leesése esetén az ellátásilánc-kezelésben értesítést állítson be. **A** cikk azt is bemutatja, hogyan kell konfigurálni a termékminőségi helyzetet, hogy egy értesítés generálható, ha egy cikk egy attribútuma kívül esik egy adott tartományon, **és** hogyan kell konfigurálni a termelés késleltetési esetét, hogy figyelmeztetés megjelenik, ha a termelés termelési teljesítményére egy küszöbérték alá esik.
 
 ## <a name="configure-the-equipment-downtime-scenario-in-supply-chain-management"></a>A Berendezés üzemkimaradása forgatókönyv konfigurálása a Supply Chain Management alkalmazásban
 

@@ -1,6 +1,6 @@
 ---
 title: Vonalkód-adatforrások használata vonalkód-képek létrehozásához
-description: Ez a témakör bemutatja, hogy hogyan lehet vonalkód-adatforrásokat használni vonalkód-képek létrehozásához.
+description: Ez a cikk bemutatja, hogy hogyan lehet vonalkód-adatforrásokat használni vonalkód-képek létrehozásához.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: c8e755b664656a1a10672a990dc581969f6a7b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323952"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880312"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Vonalkód-adatforrások használata vonalkód-képek létrehozásához
 
@@ -77,7 +77,7 @@ A **Vonalkód** típusú adatforrás használatával a következő formátumokba
 >
 > Amikor egy **Vonalkód** adatforrást egy cella elemhez köt egy formátumban, és a cella elem vagy egy Word tartalmi vezérlőelemet vagy egy Excel-képet képvisel, akkor az adatforrás egy olyan funkcióként jelenik meg a kötésben, amely egyetlen, **karakterlánc** típusú paraméterrel rendelkezik. Ennek a paraméternek a használatával meg kell határoznia, hogy milyen szöveget kell a vonalkód-lemezképbe átalakítani, és mit kell kiolvasni a létrehozott vonalkódot beolvasásakor.
 
-Ha további tájékoztatást szeretne erről a funkcióról, végezze el a példafeladatokat ebben a témakörben.
+A funkcióval kapcsolatos további tudnivalókat az alábbi példában olvashatja.
 
 ## <a name="example-generate-a-payment-check-that-contains-a-bar-code-that-encodes-the-payable-amount"></a>Példa: Egy olyan vonalkódot tartalmazó kifizetési csekk előállítása, amely kódolja a kötelezettség összegét
 
@@ -103,7 +103,7 @@ Ez a példa azt mutatja be, hogy a **Rendszergazda** vagy az **Elektronikus jele
 
 Ebben a példában a megadott ER-megoldást kell konfigurálni a kifizetési csekkek létrehozásához. Ez a megoldás olyan kifizetési csekkeket hoz létre, amelyeknél a fizetendő összeg számként és szövegként van írva. Ezt az ER-megoldást akkor fogja módosítani, ha a csekk tartalmaz egy olyan felállított vonalkódot is, amelyben a fizetendő összeg kódolva van, és a vonalkódos lapolvasó használatával olvasható.
 
-Ezeket a lépéseket a **USMF** vállalatban hajthatja végre a Microsoft Dynamics 365 Finance megoldásban.
+A lépéseket az **USMF** vállalatnál lehet végrehajtani a Microsoft Dynamics 365 Pénzügyben.
 
 ### <a name="complete-the-prerequisites"></a><a name="ExamplePrerequisites"></a>Teljesítse az előfeltételeket
 
@@ -112,7 +112,7 @@ A jelen példa végrehajtásához hozzáféréssel kell rendelkeznie az USMF vá
 - Elektronikus jelentések funkcióival foglalkozó konzulens
 - Rendszergazda
 
-Ha még nem végezte el a példát a következő témakörben: [Beágyazott képek és alakzatok az ER-rel generált dokumentumokban](electronic-reporting-embed-images-shapes.md), töltse le a minta ER-megoldás következő konfigurációit.
+Ha még nem fejeződött [be a példa az ER-cikk segítségével generált dokumentumok képek és alakok beágyazása részen, töltse le az ER-minta](electronic-reporting-embed-images-shapes.md) megoldás alábbi konfigurációit.
 
 | Tartalom leírása         | Fájlnév                   |
 |-----------------------------|-----------------------------|
@@ -128,7 +128,7 @@ Ezenkívül töltse le a következő Excel-fájlt, amely tartalmazza a megadott 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Konfigurációszolgáltató aktiválása
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
-2. Győződjön meg róla, hogy a **Honosítási konfigurációk** lap **Konfigurációs szolgáltatók** szakaszában a **Litware, Inc.** [konfigurációs szolgáltatója](general-electronic-reporting.md#Provider) szerepel a listán, és aktívként van megjelölve. Ha nem szerepel a listán, vagy ha nem aktívként van megjelölve, hajtsa végre a [Konfigurációs szolgáltató létrehozása és megjelölje aktív](tasks/er-configuration-provider-mark-it-active-2016-11.md) témakör lépéseit.
+2. Győződjön meg róla, hogy a **Honosítási konfigurációk** lap **Konfigurációs szolgáltatók** szakaszában a **Litware, Inc.** [konfigurációs szolgáltatója](general-electronic-reporting.md#Provider) szerepel a listán, és aktívként van megjelölve. Ha nem szerepel a listán, vagy ha nem aktívként van megjelölve, kövesse a Konfigurációszolgáltató létrehozása lépést, [és jelölje meg aktív cikkként](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![Mintavállalat beállítása aktívként a Lokalizációs konfigurációk oldalon.](./media/er-barcode-data-source-active-provider.png)
 
@@ -284,7 +284,7 @@ A kijelölt formátum piszkozata használatra elérhető megjelölést kap a kiv
 
 ### <a name="convert-the-generated-check-to-a-pdf"></a><a name="ExampleConvertToPDF"></a>A létrejövő csekk átalakítása PDF-formátumra
 
-A [Nyomtatható FTI-űrlapok generálása](er-generate-printable-fti-forms.md#finland) című témakörben leírtak szerint speciális betűtípussal lehet létrehozni vonalkódokat egy generált dokumentumban. Ebben az esetben előfordulhat, hogy a létrejövő dokumentum további átalakítása függhet az átalakítási környezetben található betűtípustól. Ha például a dokumentumot PDF-formátumra próbálja meg átalakítani, vagy egy olyan környezetben tekinti meg, ahol hiányzik a betűtípus, akkor a vonalkódok nem fognak helyesen megjeleníteni.
+Amint azt a Nyomtatható [FTI képernyők](er-generate-printable-fti-forms.md#finland) létrehozása cikk ismerteti, különleges betűtípussal lehet vonalkódokat előállítani a generált dokumentumokban. Ebben az esetben előfordulhat, hogy a létrejövő dokumentum további átalakítása függhet az átalakítási környezetben található betűtípustól. Ha például a dokumentumot PDF-formátumra próbálja meg átalakítani, vagy egy olyan környezetben tekinti meg, ahol hiányzik a betűtípus, akkor a vonalkódok nem fognak helyesen megjeleníteni.
 
 Ha azonban a **Vonalkód** adatforrást használja a vonalkódok létrehozásához, akkor az ilyen vonalkódok renderelése nem függ semmilyen betűtípustól. Ezért a vonalkódokat tartalmazó dokumentumokat egyszerűen konvertálhatja PDF-formátumba. A következő ábra egy olyan generált fizetési csekk előnézetét jeleníti meg, amely PDF-fájllá lett [konvertálva](electronic-reporting-destinations.md#OutputConversionToPDF) a konfigurált ER [cél](electronic-reporting-destinations.md) beállításai alapján.
 

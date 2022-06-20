@@ -1,6 +1,6 @@
 ---
 title: Készlet költségszámítási gyakori kérdések
-description: Ez a témakör megválaszol néhány, a Microsoft készletköltség-költségszámítási kérdéseire vonatkozó kérdést Dynamics 365 Supply Chain Management.
+description: Ez a cikk megválaszol néhány, a Microsoft készletköltségszámítását kapcsolatban leggyakrabban feltett kérdést Dynamics 365 Supply Chain Management.
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 45f65bd4a5cfb9bd0c4eb03ceb56eca452f6ec95
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809303"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850844"
 ---
 # <a name="inventory-costing-faq"></a>Készlet költségszámítási gyakori kérdések
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör megválaszol néhány, a Microsoft készletköltség-költségszámítási kérdéseire vonatkozó kérdést Dynamics 365 Supply Chain Management.
+Ez a cikk megválaszol néhány, a Microsoft készletköltségszámítását kapcsolatban leggyakrabban feltett kérdést Dynamics 365 Supply Chain Management.
 
 ## <a name="inventory-close-adjustments-and-recalculation"></a>Készletzárás, helyesbítések és újraszámítás
 
@@ -359,7 +359,7 @@ Javasoljuk, hogy gyakran figyelje és javítsa a negatív készletet, ha a szerv
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>Kell új cikket létrehozni, ha a készlet negatív lett, és mozgó átlagot használok?
 
-Nem. Ha a szervezet lehetővé teszi a készlet fizikai negatív működését, és a mozgó átlagot használja készletmodellként, **a** rendszer a Készlet- és raktárkezelési paraméterek lapon hozzárendelt tartalékköltség-sorozatot használja annak meghatározására, hogy hogyan lesz hozzárendelve a költség a problémákhoz. Általában javasoljuk, hogy a készlet fizikai negatív hatása ne legyen megengedve. A további tudnivalókat lásd a [témakör Negatív készlet](#negative-inventory) szakaszának többi kérdésében.
+Nem. Ha a szervezet lehetővé teszi a készlet fizikai negatív működését, és a mozgó átlagot használja készletmodellként, **a** rendszer a Készlet- és raktárkezelési paraméterek lapon hozzárendelt tartalékköltség-sorozatot használja annak meghatározására, hogy hogyan lesz hozzárendelve a költség a problémákhoz. Általában javasoljuk, hogy a készlet fizikai negatív hatása ne legyen megengedve. A további tudnivalókat lásd a [cikk Negatív készlet](#negative-inventory) szakaszban található további kérdéseknél.
 
 ## <a name="not-stocked-products"></a>Nem raktárkészlet-termékek
 
@@ -433,7 +433,7 @@ Ha áreltérés van a tényleges és a pénzügyi frissítés feladása között
 
 ### <a name="when-i-use-moving-average-what-happens-if-there-is-an-issue-before-the-receipt"></a>Mozgó átlag használata esetén mi történik, ha kiadás van a bevételezés előtt?
 
-Általában a bevételezés előtt probléma lehet, vagy azért, mert a cikkmodellcsoportban engedélyezi a tényleges negatív készletet, vagy mert a kiadás visszadátumolt. A további tudnivalókat lásd a [témakör](#negative-inventory) Negatív készlet szakaszában.
+Általában a bevételezés előtt probléma lehet, vagy azért, mert a cikkmodellcsoportban engedélyezi a tényleges negatív készletet, vagy mert a kiadás visszadátumolt. A további tudnivalókat lásd a [cikk](#negative-inventory) Negatív készlet című részében.
 
 Ha vissza szeretné vezetni a tranzakciókat, javasoljuk, hogy alaposan mérlegelje az üzleti folyamatot és a műveleteket, hogy megállapítsa, van-e mód ennek az esetnek az elkerülésére. Ha mozgó átlagot használó cikkhez hoz háttérbe egy tranzakciót, a rendszer hozzárendeli az aktuális mozgó átlagot a tranzakcióhoz. A későbbi problémák nincsenek kiigazítva. A visszadátumos tranzakciók mozgó átlagával kapcsolatos további tudnivalókat lásd [: Mozgó átlag](moving-average.md).
 

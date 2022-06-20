@@ -1,6 +1,6 @@
 ---
-title: Vállalat fogalma a Dataverse szolgáltatásban
-description: Ez a témakör az vállalatadatok integrációját ismerteti a Finance and Operations és a Dataverse között.
+title: Vállalati koncepció a Dataverse szolgáltatásban
+description: Ez a témakör a vállalatadatoknak a Pénzügy és Műveletek, illetve a Pénzügy és Műveletek közötti integrációját írja le Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873178"
 ---
 # <a name="company-concept-in-dataverse"></a>Vállalat fogalma a Dataverse szolgáltatásban
 
@@ -29,7 +29,7 @@ A Dataverse nem rendelkezik ezzel egyenértékű koncepcióval. A legközelebbi 
 
 Mivel a részleg és a vállalat nem egyenértékű fogalmak, nem lehetséges egy-az-egyhez (1:1) leképzés kényszerítése hozzájuk a Dataverse integráció céljából. Mivel azonban a felhasználóknak alapértelmezés szerint meg kell tudniuk tekinteni ugyanazokat a sorokat az alkamazásban és a Dataverse megoldásokban, a Microsoft egy új táblát vezetett be a Dataverse megoldásban, amelynek neve cdm\_Company. Ez a tábla egyenértékű a Vállalat táblával az alkalmazásban. Annak garantálására, hogy a sorok láthatósága alapértelmezetten megegyezzen az alkalmazás és a Dataverse között, a következő beállításokat javasoljuk a Dataverse adatai számára:
 
-+ Minden egyes Finance and Operations Company sorhoz, amelynél engedélyezett a kettős írás, egy társított CD-lemez\_ Létrejön a cégsor.
++ A két írásra engedélyezett pénzügyi és műveletvállalati sorokhoz létrejön egy társított VÁLLALATI CDM-sor \_.
 + Egy cdm\_Company sor létrehozásakor és a kettős írás engedélyezésekor egy alapértelmezett részleg jön létre ugyanazzal a névvel. Bár a részleghez automatikusan létrejön egy alapértelmezett csoport, a részleg nincs használatban.
 + Olyan különálló tulajdonoscsapat jön létre, amelynek neve azonos. Ez is hozzá van rendelve a részleghez.
 + Alapértelmezés szerint az alkalmazásban létrehozott, és a Dataverse szolgáltatásban duplán írt sorok tulajdonosa a hozzárendelt részleghez kapcsolódó „DW Owner” csoport.
@@ -43,13 +43,13 @@ Ezen konfigurációnak az következtében az USMF vállalathoz kapcsolódó mind
 + Az „Értékesítési menedzser” szerepkört a "„USMF Sales” csoport tagjaihoz rendelték.
 + Azok a felhasználók, akik rendelkeznek az „Értékesítési menedzser” szerepkörrel, hozzáférhetnek minden olyan partnersorhoz, amelyek ugyanannak a részlegnek a tagjai, amelynek ők is.
 + Az „USMF Sales” csapat s kapcsolva van az USMF üzleti egységhez, amely korábban említettünk.
-+ Ezért az "USMF Sales" csapat tagjai láthatnak minden olyan fiókot, amely az "USMF DW" felhasználó tulajdonában van, és amely a Finance and Operations USMF Company táblázatából származott volna.
++ Ebből következően az "USMF Sales" csapat tagjai minden olyan számlát láthatnak, amelynek az "USMF DW" felhasználó a tulajdonosa, és amely a Pénzügy és Műveletek 2003 rendszer USMF Vállalat táblája alapján jött volna létre.
 
 ![Hogyan használhatók a csapatok.](media/dual-write-company-2.png)
 
 Ahogy az előző ábrán is látható, ez a 1:1 leképezés az üzleti egység, a vállalat és a csapat között csak egy kiindulási pont. Ebben a példában egy új „Európa” nevű részleg manuálisan lett létrehozva a Dataverse szolgáltatásban mint DEMF és ESMF szülője. Ez az új gyökérszintű részleg nem kapcsolódik kettős íráshoz. Ugyanakkor használható arra, hogy az „EUR Sales” csapat hozzáférhessen a partneradatokhoz a DEMF és az ESMF rekordokban is, azáltal, hogy az adatok láthatóságát **Szülő/gyermek részleg** értékre állítják a társított biztosági szerepkörben.
 
-Egy utolsó témában ismertetjük, hogyan határozza meg a lettős írás, hogy melyik tulajdonoshoz rendelje hozzá a sorokat. Ezt a viselkedés az **Alapértelmezett tulajdonoscsoport** oszlop szabályozza a cdm\_Vállalat sorban. Ha egy cdm\_Vállalat sorhoz a kettős írás engedélyezve van, egy beépülő modul automatikusan létrehozza a hozzárendelt üzleti egységet és a tulajdonos csoportot (ha még nem létezik), és beállítja az **Alapértelmezett tulajdonosi csapat** oszlopot. Az adminisztrátor megváltoztathatja ezt az oszlopot egy másik értékre. Azonban az adminisztrátor nem törölheti ezt az oszlopot, amíg a tábla engedélyezve van kettős íráshoz.
+A két írás határozza meg, hogy melyik tulajdonoscsoporthoz kell sorokat hozzárendelni. Ezt a viselkedés az **Alapértelmezett tulajdonoscsoport** oszlop szabályozza a cdm\_Vállalat sorban. Ha egy cdm\_Vállalat sorhoz a kettős írás engedélyezve van, egy beépülő modul automatikusan létrehozza a hozzárendelt üzleti egységet és a tulajdonos csoportot (ha még nem létezik), és beállítja az **Alapértelmezett tulajdonosi csapat** oszlopot. Az adminisztrátor megváltoztathatja ezt az oszlopot egy másik értékre. Azonban az adminisztrátor nem törölheti ezt az oszlopot, amíg a tábla engedélyezve van kettős íráshoz.
 
 > [!div class="mx-imgBorder"]
 ![Alapértelmezett tulajdonosi csoport oszlop.](media/dual-write-default-owning-team.jpg)

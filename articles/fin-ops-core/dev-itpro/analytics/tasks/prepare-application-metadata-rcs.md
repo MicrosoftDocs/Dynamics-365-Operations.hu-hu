@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 71a33a69796b31c456bfcc5abbb3b18bcb1064be65c1c58b36656a9cebfbf47d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b5e7f69653381e16b4a8a8def56845a41bb14b0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868797"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Az RCS-ben felhasználandó alkalmazás-metaadatok előkészítése
 [!include [banner](../../includes/banner.md)]
 
-A következő lépések ismertetik, hogy a Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználók hogyan hozhatnak létre olyan új Elektronikus jelentéskészítési konfigurációt, amely tartalmazza az alkalmazás metaadatait az ER modell-leképezési konfigurációk Regulatory Configuration Service (RCS) rendszerben való kialakításához. Ez a konfiguráció olyan minta ER-modell-leképezési konfiguráció kialakításához használatos, amellyel hozzá lehet férni a külkereskedelmi tranzakciókhoz. Ebben a példában a mintavállalatra, a Litware, Inc.-ra vonatkozóan létrehoz egy konfigurációs szolgáltatót. Ezeket a lépéseket bármilyen vállalatban végrehajthatja. Az alábbi lépések végrehajtásához először hajtsa végre a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](er-configuration-provider-mark-it-active-2016-11.md) cikk lépéseit.
+A következő lépések ismertetik, hogy a Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználók hogyan hozhatnak létre olyan új Elektronikus jelentéskészítési konfigurációt, amely tartalmazza az alkalmazás metaadatait az ER modell-leképezési konfigurációk Regulatory Configuration Service (RCS) rendszerben való kialakításához. Ez a konfiguráció olyan minta ER-modell-leképezési konfiguráció kialakításához használatos, amellyel hozzá lehet férni a külkereskedelmi tranzakciókhoz. Ebben a példában a mintavállalatra, a Litware, Inc.-ra vonatkozóan létrehoz egy konfigurációs szolgáltatót. Ezeket a lépéseket bármilyen vállalatban végrehajthatja. Ezeket a lépéseket csak akkor lehet végrehajtani, ha előbb a cikk lépéseit létrehozza, [majd aktívként megjelöli őket](er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="prerequisites"></a>Előfeltételek
 1.    Lépjen a **Szervezeti adminisztráció** > **Munkaterületek** > **Elektronikus jelentés** részre. 

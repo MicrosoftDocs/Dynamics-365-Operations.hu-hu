@@ -1,6 +1,6 @@
 ---
 title: Munkagyűjtő módosítása a munkán
-description: Ez a témakör azt mutatja be, hogy hogyan lehet módosítani a Munkagyűjtő módosítása gombot a munkaelemekhez a meglévő munka munkagyűjtőjének módosításához.
+description: Ez a cikk bemutatja, hogy hogyan módosíthatja a meglévő munka munkakészletét a Munkakészlet módosítása gombbal.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: dc210de420705062ba52c674f3ddb8eb7944715a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 817b45e8f5af957801a0af04e50acf20ba16c26d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669852"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900622"
 ---
 # <a name="change-work-pool-on-work"></a>Munkagyűjtő módosítása a munkán
 
@@ -34,14 +34,14 @@ A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehe
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>A Munkagyűjtő módosítása a munkán funkció beállítása
 
-Ez a funkció csak akkor használható, ha be van állítva néhány munkagyűjtő. A munkasablonokat úgy is be lehet állítani, hogy automatikusan társítson egy gyűjtőt. Ha szeretne végighaladni a jelen témakörben később megadott példákon, állítsa be a rendszert az ebben a szakaszban ismertetett módon.
+Ez a funkció csak akkor használható, ha be van állítva néhány munkagyűjtő. A munkasablonokat úgy is be lehet állítani, hogy automatikusan társítson egy gyűjtőt. Ha a cikk későbbi részében ismertetett példaesetben kíván dolgozni, állítsa be a rendszert az ebben a szakaszban leírt módon.
 
 ### <a name="set-up-work-pools"></a>Munkagyűjtők beállítása
 
 A munkagyűjtők a munkatételek típus szerinti rendszerezését teszik lehetővé. Ha a *Munkagyűjtő módosítása a munkán* funkcióban szeretne dolgozni, legalább két munkagyűjtőnek elérhetőnek kell lennie. A Munkagyűjtő megtekintéséhez és hozzáadásához kövesse az alábbi lépéseket.
 
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Munka \> Munkagyűjtők** pontra.
-1. Ha az **USMF** vállalattól származó demóadatokkal dolgozik , és a jelen témakörben később elvégzi a példát, vegyen fel két olyan munkagyűjtőt, amelyeknek a következő beállításai vannak:
+1. Ha az **USMF** vállalat bemutató adataival dolgozik, és a példában később végig szeretne menni a példán, két olyan munkakészletet adjon hozzá, amelyek a következő beállításokkal:
 
     - 1. munkagyűjtő:
 
@@ -57,7 +57,7 @@ A munkagyűjtők a munkatételek típus szerinti rendszerezését teszik lehető
 
 ### <a name="set-up-work-templates"></a>Munkasablonok beállítása
 
-A munkasablonok mindegyikéhez beállíthat egy alapértelmezett munkagyűjtőt, ha szükséges. Minden megfelelő sablonhoz társítani kell egy munkagyűjtőt a **munkagyűjtő azonosítója** oszlopban. Ebben az esetben az adott sablon használatával létrejövő összes munkaelem automatikusan örökli a hozzárendelt munkagyűjtőt. Ha az **USMF** vállalattól származó demóadatokkal dolgozik , és a jelen témakörben később elvégzi a példát, kövesse az alábbi lépéseket.
+A munkasablonok mindegyikéhez beállíthat egy alapértelmezett munkagyűjtőt, ha szükséges. Minden megfelelő sablonhoz társítani kell egy munkagyűjtőt a **munkagyűjtő azonosítója** oszlopban. Ebben az esetben az adott sablon használatával létrejövő összes munkaelem automatikusan örökli a hozzárendelt munkagyűjtőt. Ha az **USMF** vállalat bemutató adataival dolgozik, és a cikk későbbi példaadatán dolgozik, kövesse ezeket a lépéseket.
 
 1. Lépjen a **Raktárkezelés \> Beállítás \> Munka \> Munkasablonok** elemre.
 1. A műveleti ablaktáblán válassza ki a **Szerkesztés** parancsot, hogy a lapot szerkesztési módba helyezze.
@@ -70,7 +70,7 @@ A munkasablonok mindegyikéhez beállíthat egy alapértelmezett munkagyűjtőt,
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
-Ez a példa azt mutatja be, hogyan lehet módosítani egy meglévő munkaelem feldolgozási folyamát a munkagyűjtők megváltoztatásával. A program a **USMF** vállalattól származó demóadatokat, valamint a korábban a témakörben korábban javasolt beállításokat használja.
+Ez a példa azt mutatja be, hogyan lehet módosítani egy meglévő munkaelem feldolgozási folyamát a munkagyűjtők megváltoztatásával. Az USMF **vállalat** bemutató adatait, valamint a cikk korábban ajánlott beállításait használja.
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Értékesítési rendelés létrehozása és kiadása a raktárba
 

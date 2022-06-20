@@ -1,6 +1,6 @@
 ---
-title: Termékek adatainak áttekintése
-description: Ez a témakör a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba.
+title: Termékadatok áttekintése
+description: Ez a cikk a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba.
 author: t-benebo
 ms.date: 06/01/2017
 ms.topic: overview
@@ -15,20 +15,20 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8aabeed66f864d1d1060a6452a3b554611c295
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: fa06e718d2acc44cfced7db842814c48fb210d1e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063316"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867869"
 ---
-# <a name="product-information-overview"></a>Termékek adatainak áttekintése
+# <a name="product-information-overview"></a>Termékadatok áttekintése
 
 [!include [banner](../includes/banner.md)]
 
 
 
-Ez a témakör a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba. 
+Ez a cikk a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba. 
 
 A termékinformáció az ellátási lánc és a kereskedelmi alkalmazások gerince minden ágazatban. Olyan folyamatokra és technológiákra utal, amelyek középpontjában a termékekkel kapcsolatos információk központi kezelése áll (például az ellátási láncok között). Nagyon fontos, megosztott termékdefiníciókat, dokumentációkat, attribútumokat és azonosítókat használjanak. Az üzleti megoldások különböző moduljaiban termékkel kapcsolatos információkra és a konfigurálásra van szükség az egyes termékekhez, termékcsaládokhoz vagy termékkategóriákhoz kapcsolódó üzleti folyamatok kezeléséhez.
 

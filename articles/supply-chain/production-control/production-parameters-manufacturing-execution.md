@@ -1,6 +1,6 @@
 ---
 title: Termelési paraméterek a Gyártásvégrehajtásban
-description: Ez a témakör a Gyártásvégrehajtás modul termelési paramétereinek beállításával kapcsolatos információkat tartalmazza.
+description: Ez a cikk a gyártásvégrehajtás termelési paramétereinek beállításával kapcsolatban tartalmaz tájékoztatást.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ce0dadd353df756a468384e3bf8e68c0ad2033a7042b4986fce41aa0764afdbc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752730"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873666"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Termelési paraméterek a Gyártásvégrehajtásban
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Gyártásvégrehajtás modul termelési paramétereinek beállításával kapcsolatos információkat tartalmazza.
+Ez a cikk a gyártásvégrehajtás termelési paramétereinek beállításával kapcsolatban tartalmaz tájékoztatást.
 
 A **Gyártásvégrehajtás** modul elsősorban gyártó vállalatok általi használatra készült. Termelési feladatok vagy projektek időpontjának és cikkfelhasználásának regisztrálására használható. A Gyártásvégrehajtás modul feladatregisztrálásra történő használatának megkezdése előtt be kell állítania a különböző termelési paramétereket, amelyek meghatározzák, mikor és hogyan történik a regisztrációk feladása a termelési folyamat során. A termelési paraméterek beállításai befolyásolják a készletkezelést, a termelésirányítást és a költségszámítást.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd8ba10441c1300c913827122c09741c58a42973
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: af1e443078b6a7832388b38f2b99a438af461ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844351"
 ---
 # <a name="work-with-customer-service-overview"></a>A vevőknek nyújtott szolgáltatások használata – áttekintés
 
@@ -41,7 +41,7 @@ Az ügyfélszolgálat a következő funkciókat tartalmazza:
 
   - Szolgáltatásiszint-szerződések a differenciált vevőbázis támogatására.
 
-Ebben a szakaszban található témakörök az ügyfélszolgálati üzleti folyamatot és minden üzleti folyamat összetevő áttekintését nyújtják. Felsorolja az egyes üzleti folyamat összetevőkhöz tartozó képernyőket is, valamint tárgyalja az egyes összetevőkhöz kapcsolódó feladatokat.
+Az ebben a szakaszban található cikkek áttekintést nyújtanak az Ügyfélszolgálat üzleti folyamatról és az egyes összetevőkről. Felsorolja az egyes üzleti folyamat összetevőkhöz tartozó képernyőket is, valamint tárgyalja az egyes összetevőkhöz kapcsolódó feladatokat.
 
 
 

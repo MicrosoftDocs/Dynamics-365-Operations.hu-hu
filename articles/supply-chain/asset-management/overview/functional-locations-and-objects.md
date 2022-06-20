@@ -1,6 +1,6 @@
 ---
 title: Munkavégzési helyszínek és eszközök
-description: Ez a cikk az Eszközkezelés munkavégzési helyszíneit és eszközeit ismerteti. Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Supply Chain Management rendszerben történő kezelésére szolgáló speciális modul.
+description: Ez a témakör az Eszközkezelés működési helyeit és tárgyi eszközeit írja le. Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Supply Chain Management rendszerben történő kezelésére szolgáló speciális modul.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0bf90d99a8bd093817f9e804e8075e779428f1fadb3128c5a455ca839dece55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 274e80136ee303af9d0fe5fd04095f575a345d19
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875655"
 ---
 # <a name="functional-locations-and-assets"></a>Munkavégzési helyszínek és eszközök
 
@@ -28,11 +28,11 @@ ms.locfileid: "6750148"
 
  
 
-Ez a cikk az Eszközkezelés munkavégzési helyszíneit és eszközeit ismerteti. Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Supply Chain Management rendszerben történő kezelésére szolgáló speciális modul.
+Ez a témakör az Eszközkezelés működési helyeit és tárgyi eszközeit írja le. Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Supply Chain Management rendszerben történő kezelésére szolgáló speciális modul.
 
 ## <a name="overview"></a>Áttekintés
 
-Az Eszközkezelés a Finance and Operations alkalmazások számos moduljával zökkenőmentesen integrálva van. A következő ábra a más modulokkal való kapcsolatot mutatja be.
+Az Eszközkezelés a Finance and Operations alkalmazások számos moduljával zökkenőmentesen együttműködik. A következő ábra a más modulokkal való kapcsolatot mutatja be.
 
 ![Az Eszközkezelés egyéb modulokkal való kapcsolódását mutató ábra.](media/01-overview-image.png)
 

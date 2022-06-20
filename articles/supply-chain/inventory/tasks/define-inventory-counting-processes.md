@@ -1,6 +1,6 @@
 ---
 title: Készletleltár-folyamatok meghatározása
-description: Ez az témakör bemutatja az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával.
+description: Ez a témakör leltárcsoport és leltárnapló létrehozásával ismerteti az alapvető készletleltározási folyamatok konfigurációját.
 author: yufeihuang
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee47b04ba7ec9f3d74230b7a41b1c295eaea9313
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bb86c99e74dc8251ed48c0b749c0b0ef1ce75e34
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580840"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879019"
 ---
 # <a name="define-inventory-counting-processes"></a>Készletleltár-folyamatok meghatározása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az témakör bemutatja az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával. Azt is bemutatja, hogy hogyan engedélyezheti a leltározási irányelveket raktár vagy cikk szintjén. Ezeket a feladatokat jellemzően egy raktárvezető végzi el. Ez előfeltétele annak, hogy legyen létező kiadott termék és raktár. Ha bemutató adatokat használ, ezt az eljárást az USMF vállalatban bármilyen raktározott cikkre futtathatja.
+Ez a témakör leltárcsoport és leltárnapló létrehozásával ismerteti az alapvető készletleltározási folyamatok konfigurációját. Azt is bemutatja, hogy hogyan engedélyezheti a leltározási irányelveket raktár vagy cikk szintjén. Ezeket a feladatokat jellemzően egy raktárvezető végzi el. Ez előfeltétele annak, hogy legyen létező kiadott termék és raktár. Ha bemutató adatokat használ, ezt az eljárást az USMF vállalatban bármilyen raktározott cikkre futtathatja.
 
 
 ## <a name="create-a-counting-group"></a>Leltárcsoport létrehozása

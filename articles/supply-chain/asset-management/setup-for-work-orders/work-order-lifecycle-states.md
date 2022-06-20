@@ -1,6 +1,6 @@
 ---
 title: Munkarendelés életciklus-állapotai
-description: Ez a témakör a munkarendelés életciklus-állapotait mutatja be az Eszközkezelésben.
+description: Ez a cikk bemutatja a munkarendelések életciklusának államát az Eszközkezelésben.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 67f857e4bfb828250e632e3ba46af9930cd908a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768666"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860870"
 ---
 # <a name="work-order-lifecycle-states"></a>Munkarendelés életciklus-állapotai
 
@@ -69,7 +69,7 @@ A következő táblázat leírja a lehetőségeket a **Munkarendelés életciklu
 
     A **Részletek** gyorslapon az **Életciklusmodellek** mezőben látható az adott életciklus-állapotot használó munkarendelés életciklusmodelljeinek a száma.
 
-8. Az **Általános** gyorslapon a **Munkarendelés** szakaszban válassza ki a funkciókat, amelyek elérhetőknek kell lenniük ennél az életciklus-állapotnál az **Igen** érték kiválasztásával a releváns beállításoknál. A választható lehetőségek leírását a témakör korábbi részében szereplő táblázatban találja.
+8. Az **Általános** gyorslapon a **Munkarendelés** szakaszban válassza ki a funkciókat, amelyek elérhetőknek kell lenniük ennél az életciklus-állapotnál az **Igen** érték kiválasztásával a releváns beállításoknál. A lehetőségek leírása a cikk korábbi táblázatában olvasható.
 9. A **Projekt** szakaszban, a **Fázis** mezőben válassza ki azt a projektfázist, amelynek az életciklus-állapothoz kell kapcsolódnia.
 10. A **Projekt** szakaszban állítsa a **Tevékenységek bezárása** beállítást **Igen** értékre, ha az egyes munkarendelési feladatokhoz kapcsolódó projekttevékenységeket a rendszer automatikusan zárja be, amikor a munkarendelés ebben az életciklus-állapotban van.
 
@@ -77,7 +77,7 @@ A következő táblázat leírja a lehetőségeket a **Munkarendelés életciklu
     > A munkarendelési feladathoz kapcsolódó projekttevékenység számának megkereséséhez válassza az **Eszközkezelés** \> **Általános** \> **Munkarendelések** \> **Összes munkarendelés**, **Aktív munkarendelések** vagy **Saját aktív munkarendelések** lehetőséget. Nyissa meg a munkarendelést, majd válassza ki a Munkarendelés feladatát. A tevékenység száma a **Sor részletei** gyorslap **Általános lapján**, a **Projekt** szakasz **Tevékenységszám** mezőjében látható.
 
 11. Az **Előrejelzés** szakaszban állítsa be az **Óra-előrejelzés másolása**, **Cikk-előrejelzés másolása** és/vagy **Költség-előrejelzés másolása** lehetőséget **Igen** értékre, ha a munkarendelés projekt-előrejelzéseit a rendszer automatikusan másolja a munkarendelési naplókba, amikor a munkarendelés ebben az életciklus-állapotban van.
-12. Az **Ütemezés** szakaszban állítsa a beállítások egyikét **Igen** értékre, ha a munkarendelési feladatok ütemezési állapotát frissíteni kell, amikor a Munkarendelés ebben az életciklus-állapotban van. A **Készen áll**, **Indítás**, **Befejezés** és **Ütemezési sorok törlése** beállítások leírásait a témakör korábbi részében látható táblázatban találja.
+12. Az **Ütemezés** szakaszban állítsa a beállítások egyikét **Igen** értékre, ha a munkarendelési feladatok ütemezési állapotát frissíteni kell, amikor a Munkarendelés ebben az életciklus-állapotban van. A Kész **, Kezdés,** **·** **Záró** **és Törlés ütemezési sorok beállításainak leírása a cikk korábbi táblázatában olvasható.**
 
     > [!NOTE]
     > A munkarendelési feladathoz kapcsolódó ütemezési sorok megtekintéséhez válassza az **Eszközkezelés** \> **Általános** \> **Munkarendelések** \> **Összes munkarendelés**, **Aktív munkarendelések** vagy **Saját aktív munkarendelések** lehetőséget. Nyissa meg a munkarendelést, válassza ki a munkarendelési feladatot a **Munkarendelési feladatok** gyorslapon, és tekintse meg a kapcsolódó információkat a **Sor részletei** gyorslapon. Az **Ütemezés** lap **Állapot** mezőjében látható a munkarendelési feladat állapota. Az **Állapot** mező a következő értékekre állítható be: **Ütemezve**, **Készen áll**, **Elindítva**, **Leállítva** és **Befejezve**.

@@ -1,6 +1,6 @@
 ---
 title: Látszólagos cikkek
-description: Ez a témakör azt ismerteti, hogyan használható a Látszólagos sortípus az anyagjegyzék sorainál és a receptúráknál Dynamics 365 Supply Chain Management.
+description: Ez a témakör azt írja le, hogyan használható a Látszólagos sortípus egy anyagjegyzék és egy receptúra sorában a következőben:Dynamics 365 Supply Chain Management
 author: johanhoffmann
 ms.date: 05/05/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-05-05
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5c9768381d35709611e4bec3d2b7793a4d896b34
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 64139873216decd8ecb2fcaf1f284e726c53c332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713246"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893323"
 ---
 # <a name="phantom-items"></a>Látszólagos cikkek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör részletesen leírja, hogyan használható a Látszólagos sortípus egy anyagjegyzék (BOM) sorainál, illetve egy képletben.
+Ez a cikk részletesen leírja, hogyan használható a Látszólagos sortípus egy anyagjegyzék és egy receptúra sorában.
 
 Az 1., (a) ábra a H termék és az F és G termék anyagjegyzéke, és (b) a H és az F rész termék útvonallapja.
 

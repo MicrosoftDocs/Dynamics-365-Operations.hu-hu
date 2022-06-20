@@ -1,6 +1,6 @@
 ---
 title: Cikk-konszolidáció – hely kihasználtsága
-description: Ez a témakör olyan funkcióról tartalmaz információkat, amely megkönnyítik a raktárvezetők számára hogy megtekintsék és szűrje a raktáraknak a raktáron belüli térfogat-kihasználását. A menedzserek kiválaszthatnak helyeket, és a cikkek konszolidálásához közvetlenül a cikk-összesítés lapon hozhatnak létre készletmozgatási munkát, és így jobban ki tudják használni a raktári helyet.
+description: Ez a cikk olyan funkciókkal kapcsolatban tartalmaz tájékoztatást, amelyek segítségével a raktárvezetők egyszerűen megtekinthetik és szűrik a különböző helyek térfogat-kihasználtságát a raktáron belül. A menedzserek kiválaszthatnak helyeket, és a cikkek konszolidálásához közvetlenül a cikk-összesítés lapon hozhatnak létre készletmozgatási munkát, és így jobban ki tudják használni a raktári helyet.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578608"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849184"
 ---
 # <a name="item-consolidation---location-utilization"></a>Cikk-konszolidáció – hely kihasználtsága
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan funkcióról tartalmaz információkat, amely megkönnyítik a raktárvezetők számára hogy megtekintsék és szűrje a raktáraknak a raktáron belüli térfogat-kihasználását. A menedzserek kiválaszthatnak helyeket, és a cikkek konszolidálásához közvetlenül a **Cikk-konszolidáció** lapon hozhatnak létre készletmozgatási munkát, és így jobban ki tudják használni a raktári helyet.
+Ez a cikk olyan funkciókkal kapcsolatban tartalmaz tájékoztatást, amelyek segítségével a raktárvezetők egyszerűen megtekinthetik és szűrik a különböző helyek térfogat-kihasználtságát a raktáron belül. A menedzserek kiválaszthatnak helyeket, és a cikkek konszolidálásához közvetlenül a **Cikk-konszolidáció** lapon hozhatnak létre készletmozgatási munkát, és így jobban ki tudják használni a raktári helyet.
 
 ## <a name="turn-on-the-features"></a>A funkciók bekapcsolása
 
-Az ebben a témakörben ismertetett szolgáltatások használata előtt be kell kapcsolni azokat a rendszerben. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet e funkciók állapotának ellenőrzéséhez, és szükség esetén a bekapcsolásához. A következő szolgáltatásokat kapcsolja be a listán szereplő sorrendben. (Mindkét funkció a **Raktárkezelés** modulhoz tartozik.)
+A jelen cikkben ismertetett szolgáltatások használata előtt be kell kapcsolnia őket a rendszerben. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet e funkciók állapotának ellenőrzéséhez, és szükség esetén a bekapcsolásához. A következő szolgáltatásokat kapcsolja be a listán szereplő sorrendben. (Mindkét funkció a **Raktárkezelés** modulhoz tartozik.)
 
 1. Raktár helyállapota
 2. Cikk-konszolidáció helyének kihasználtsága
@@ -51,7 +51,7 @@ Ezeknél a mezőknél a raktári vezetők jobb áttekintést kaphatnak a raktár
 
 ## <a name="set-up-item-consolidation-and-location-utilization"></a>Cikk-konszolidáció és helykihasználtság beállítása
 
-Ez a szakasz bemutatja, hogyan kell előkészíteni a rendszert a cikk-konszolidáció és a helykihasználtság használatára. Az eljárások a mintaértékeket a szokásos demóadatokból használják. Ha azt tervezi, hogy a jelen témakörben később ismertetett példaforgatókönyvvel dolgozik, válassza ki a **USMF** jogi személyt (amely tartalmazza a standard demóadatokat), és hozza létre azokat a rekordokat, amelyeket ebben a szakaszban ismertetve vannak. Ha nem tervezi elvégezni a példaforgatókönyvet, akkor az itt megadott értékek példaként szolgálnak, hogy milyen típusú beállításokat kell végrehajtani a szolgáltatások használatához.
+Ez a szakasz bemutatja, hogyan kell előkészíteni a rendszert a cikk-konszolidáció és a helykihasználtság használatára. Az eljárások a mintaértékeket a szokásos demóadatokból használják. Ha a cikk egy későbbi részében ismertetett példaesetet tervezi végig látni, **válassza ki az USMF** jogi személyt (amely a szokásos bemutatóadatokat tartalmazza), és hozzon létre minden, ebben a szakaszban ismertetett rekordot. Ha nem tervezi elvégezni a példaforgatókönyvet, akkor az itt megadott értékek példaként szolgálnak, hogy milyen típusú beállításokat kell végrehajtani a szolgáltatások használatához.
 
 ### <a name="released-product"></a>Kiadott termék
 

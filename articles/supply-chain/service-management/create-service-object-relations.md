@@ -1,6 +1,6 @@
 ---
 title: Szolgáltatásiobjektum-kapcsolat létrehozása
-description: Ez a témakör a szolgáltatási szerződésekhez és a szervizrendelésekhez alkalmazható szolgáltatásitárgy-kapcsolatok létrehozását mutatja be.
+description: Ez a témakör azt ismerteti, hogyan lehet szolgáltatásiobjektum-kapcsolatokat létrehozni egy szolgáltatási szerződéshez és egy szervizrendeléshez.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4178132b03cd146aacbcbb8bf8e1e774a161726c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
-ms.translationtype: MT
+ms.openlocfilehash: e89039356f167ef2f06824ffee8645f74f8a2b53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677226"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890654"
 ---
 # <a name="create-service-object-relations"></a>Szolgáltatásiobjektum-kapcsolat létrehozása 
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör a szolgáltatási szerződésekhez és a szervizrendelésekhez alkalmazható szolgáltatásitárgy-kapcsolatok létrehozását mutatja be. Egy szolgáltatásitárgy-kapcsolat létrehozásakor a szolgáltatási tárgyat egy szolgáltatási szerződéshez vagy egy szervizrendeléshez társítja. Ha egy vevő szolgáltatást igényel egy olyan cikkhez, ami egy szolgáltatási tárgy, a szolgáltatási tárgyat kiválaszthatja a szolgáltatásitárgy-kapcsolatok listájáról.
+Ez a témakör azt ismerteti, hogyan lehet szolgáltatásiobjektum-kapcsolatokat létrehozni egy szolgáltatási szerződéshez és egy szervizrendeléshez. Egy szolgáltatásitárgy-kapcsolat létrehozásakor a szolgáltatási tárgyat egy szolgáltatási szerződéshez vagy egy szervizrendeléshez társítja. Ha egy vevő szolgáltatást igényel egy olyan cikkhez, ami egy szolgáltatási tárgy, a szolgáltatási tárgyat kiválaszthatja a szolgáltatásitárgy-kapcsolatok listájáról.
 
 ## <a name="create-a-service-object-relation-for-a-service-agreement"></a>Hozzon létre szolgáltatásitárgy-kapcsolatot egy szolgáltatási szerződéshez
 

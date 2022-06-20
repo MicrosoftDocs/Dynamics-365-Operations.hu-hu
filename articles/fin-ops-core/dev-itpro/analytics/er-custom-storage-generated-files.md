@@ -1,6 +1,6 @@
 ---
 title: Egyéni tárhelyek meghatározása a létrehozott dokumentumoknak
-description: Ez a témakör ismerteti, hogyan bővítheti a dokumentumok tárolóhelyeinek listáját, amelyeket az elektronikus jelentési (ER) formátumok hoztak létre.
+description: Ez a cikk bemutatja, hogy hogyan lehet kiterjeszteni a tárolási helyek listáját az elektronikus jelentési (ER) formátumok által létrehozott dokumentumokra.
 author: NickSelin
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 103a7e51fc6042e19b1db3b3d6b00436df15fd89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594909"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898856"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Egyéni tárhelyek meghatározása a létrehozott dokumentumoknak
 
 [!include[banner](../includes/banner.md)]
 
-A alkalmazásprogramozási felület (API) az Elektronikus jelentéskészítéshez (ER) lehetővé teszi a tárolóhelyek listájának kibővítését ER formátumok által létrehozott dokumentumokhoz.. Ez a témakör bemutatja, hogyan adhat hozzá egyéni tárolási helyet a létrehozott dokumentumokhoz úgy, hogy az ER célhelyek létrehozásának feladatát átadja az alapértelmezett célgyárnak, majd egy egyéni osztály megvalósításával, amely saját céllogikával rendelkezik.
+A alkalmazásprogramozási felület (API) az Elektronikus jelentéskészítéshez (ER) lehetővé teszi a tárolóhelyek listájának kibővítését ER formátumok által létrehozott dokumentumokhoz.. Ez a cikk bemutatja, hogyan lehet egyéni tárolási helyet hozzáadni a létrehozott dokumentumokhoz úgy, hogy delegálják az ER-célok alapértelmezett célgyárban való létrehozásának feladatát, majd egy olyan egyéni osztályt, amelybe saját céllogika van beállítva.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -35,7 +35,7 @@ Telepít egy topológiát, amely támogatja a folyamatos buildet. A további tud
 
 Ezen topológia fejlesztői környezetéhez való hozzáféréssel is kell rendelkezzen.
 
-A témakörben szereplő összes feladat elvégezhető az **USMF** vállalatnál.
+A cikk minden feladata **az USMF** vállalatnál végrehajtásához szükséges.
 
 ## <a name="import-the-fixed-asset-roll-forward-er-format"></a>A tárgyieszköz-meghosszabbítás ER formátum importálása
 

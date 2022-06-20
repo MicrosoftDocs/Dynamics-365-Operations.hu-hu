@@ -1,6 +1,6 @@
 ---
 title: Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
-description: Ez a témakör azt mutatja be, hogyan lehet megkeresni a tervezett rendelés szállítói és/vagy átfutási idejét a beszerzési kereskedelmi megállapodásokban található legjobb ár vagy átfutási idő alapján.
+description: Ez a témakör leírja, hogy a tervezési optimalizálás hogyan találja meg a tervezett rendelés szállítóját és/vagy átfutási idejét a beszerzési kereskedelmi megállapodásokban található legjobb ár vagy átfutási idő alapján.
 author: t-benebo
 ms.date: 06/29/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: cb790836042506ed6676ee7edbd8bba58191519b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468413"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873753"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet megkeresni a tervezett rendelés szállítói és/vagy átfutási idejét az adott projekthez megadott beszerzési kereskedelmi megállapodásokban található legjobb ár vagy átfutási idő alapján.
+Ez a témakör leírja, hogy a tervezési optimalizálás hogyan találja meg a tervezett rendelés szállítóját és/vagy átfutási idejét, az adott termékhez meghatározott valamennyi beszerzési kereskedelmi megállapodás között talált legjobb ár vagy átfutási idő alapján.
 
 ## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>A beszerzési kereskedelmi megállapodások bekapcsolása a tervezés optimalizálása funkcióhoz
 

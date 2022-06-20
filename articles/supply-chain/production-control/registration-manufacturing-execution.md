@@ -1,6 +1,6 @@
 ---
 title: Gyártásvégrehajtás regisztrációja
-description: Ez a témakör leírja az alapfogalmakat és folyamatokat, amelyek a gyártásvégrehajtás beállításához és használatához szükségesek.
+description: Ez a témakör olyan alapvető fogalmakat és feltételeket ír le, amelyek alapján a gyártásvégrehajtás konfigurálása és használata szükséges.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c843bc87c7b9c0676211c8f3363ec3e05ee97d20b3eedc940b9ffaee2d3211fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c43a9d847045f2c029f232d6317268d91ee0129a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718900"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907203"
 ---
 # <a name="registration-for-manufacturing-execution"></a>Gyártásvégrehajtás regisztrációja
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja az alapfogalmakat és folyamatokat, amelyek a gyártásvégrehajtás beállításához és használatához szükségesek. 
+Ez a témakör olyan alapvető fogalmakat és feltételeket ír le, amelyek alapján a gyártásvégrehajtás konfigurálása és használata szükséges. 
 
 A gyártás-végrehajtás elsősorban gyártó vállalatok általi használatra készült. A dolgozók a **Feladatregisztrálás** oldalon regisztrálhatják a termelési folyamatok idő- és cikkfelhasználását. Minden regisztrációt jóváhagynak, és később átkerülnek a megfelelő modulokba. A regisztrációk folyamatos jóváhagyása és továbbítása lehetővé teszi, hogy a vezetők könnyen nyomon követhessék a termelési rendelések tényleges költségeit.
 

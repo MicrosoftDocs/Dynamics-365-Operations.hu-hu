@@ -1,6 +1,6 @@
 ---
 title: ER-konfigurációk tervezése az előállított fájlokban található bájtsorrendjelző karakterek elrejtéséhez
-description: Ez a témakör bemutatja, hogyan konfigurálhat elektronikus jelentés (ER) formátumot olyan jelentések létrehozásához, amelyek elrejtik a bájtsorrendjelző (BOM) karaktereket.
+description: Ez a cikk bemutatja, hogyan kell konfigurálni egy elektronikus jelentési (ER) formátumot olyan jelentések létrehozásához, amelyek nem tartalmaznak bájtrendelési jelölést (AJ-) karaktereket.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323740"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847430"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>ER-konfigurációk tervezése az előállított fájlokban található bájtsorrendjelző karakterek elrejtéséhez
 
@@ -38,7 +38,7 @@ Ha az **UTF-8**, **UTF-16** vagy **UTF-32** kódolást adja meg, elérhetővé v
 
 ![A Bájtsorrendjelző karakterek elrejtése beállítás megadása a Formátumtervező lapon.](./media/er-suppress-bom-characters-image2.gif)
 
-A funkció futásidőben való áttekintéséhez a megfelelő eljárást kell végrehajtani. Például a következő témakör lépéseit kell végrehajtani: [Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md). Miután befejezte a lépéseket a témakör [Módosítsa úgy a formátumot, hogy a számítás alapja a létrejövő kimenet legyen](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) szakaszában, kövesse ezeket a további lépéseket.
+A funkció futásidőben való áttekintéséhez a megfelelő eljárást kell végrehajtani. Például az ER formátumokban található [XML-elemek végrehajtásának elhalasztása cikk lépéseit kell](er-defer-xml-element.md) végrehajtani. Miután befejezte a lépéseket a [Formátum](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) módosítása szakaszban, hogy a számítás a cikk generált kimeneti szakaszán alapul, kövesse ezeket a további lépéseket.
 
 1. Adja meg az UTF-kódolást:
 
@@ -48,12 +48,12 @@ A funkció futásidőben való áttekintéséhez a megfelelő eljárást kell v�
 2. BOM-karaktert tartalmazó XML-fájl létrehozása:
 
     1. Állítsa **Nem** értékre a **Bájtsorrendjelző karakterek elrejtése** beállítást a BOM-karakterek generált XML-fájlokban való szerepeltetéséhez.
-    2. Hajtsa végre a lépéseket [Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md) témakör [Az összesítő XML-elem végrehajtásának elhalasztása, hogy a kiszámított összeg használatban legyen](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) szakaszában, és mentse a generált fájlt **SampleXmlReport.xml** néven.
+    2. Az összesítő XML-elem [halasztás](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) végrehajtása során a rendszer a kiszámított összesítést használja fel az XML-elemek ER-formátumban való végrehajtásának elhalasztása című [cikkében,](er-defer-xml-element.md) és mentse a generált fájlt MintaXmlReport.xml **fájlként.**
 
 3. BOM-karaktert nem tartalmazó XML-fájl létrehozása:
 
     1. Állítsa **Igen** értékre a **Bájtsorrendjelző karakterek elrejtése** beállítást a BOM-karakterek generált XML-fájlokból való mellőzéséhez.
-    2. Hajtsa végre a lépéseket [Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md) témakör [Az összesítő XML-elem végrehajtásának elhalasztása, hogy a kiszámított összeg használatban legyen](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) szakaszában, és mentse a generált fájlt **SampleXmlReport (1).xml** néven.
+    2. [Az összesítő XML-elem](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used)[halasztás végrehajtása során kövesse el a lépéseket, hogy a kiszámított végösszeget használja a rendszer az XML-elemek ER-formátumban való végrehajtásának elhalasztása című](er-defer-xml-element.md) cikkben, **és mentse a generált fájlt SampleXmlReport (1.xml**) formátumban.
 
 4. Hasonlítsa össze a generált fájlokat egy fájl-összehasonlítási segédprogramban.
 

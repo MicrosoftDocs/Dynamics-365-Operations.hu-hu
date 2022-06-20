@@ -1,6 +1,6 @@
 ---
 title: Felhasználási igénylés létrehozása
-description: Ez a témakor az igénylés létrehozásának folyamatát írja le.
+description: Ez a témakör ismerteti az igénylések létrehozásának folyamatát.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5881e8a415ad37ff4bdb61b1043901c0b87ef743
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b4fc4a9f0dbd5c413300d27640512df69df30122
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671123"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888470"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Felhasználási igénylés létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakor az igénylés létrehozásának folyamatát írja le. Megmutatja, hogy milyen különböző módokon tudja keresni a termékeket a beszerzési katalógusban, illetve hogyan tud hozzáadni egy olyan terméket, amely nem szerepel a katalógusban. Az eljárás megkezdése előtt rendelkeznie kell egy beszerzési irányelvvel, amelyet az igénylés alapértelmezett típusaként kell beállítania. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti. Az eljárás csak olyan felhasználói profil által hajtható végre, amely dolgozóként van beállítva. Ezt a feladatot általában egy alkalmazott végzi el. Az **Alkalmazott** által alkalmazott biztonsági szerepkör teszi lehetővé a feladatok elvégzését, vagy ha USMF-et használ, jelentkezzen be ezen a néven: **Alíz**.
+Ez a témakör ismerteti az igénylések létrehozásának folyamatát. Megmutatja, hogy milyen különböző módokon tudja keresni a termékeket a beszerzési katalógusban, illetve hogyan tud hozzáadni egy olyan terméket, amely nem szerepel a katalógusban. Az eljárás megkezdése előtt rendelkeznie kell egy beszerzési irányelvvel, amelyet az igénylés alapértelmezett típusaként kell beállítania. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti. Az eljárás csak olyan felhasználói profil által hajtható végre, amely dolgozóként van beállítva. Ezt a feladatot általában egy alkalmazott végzi el. Az **Alkalmazott** által alkalmazott biztonsági szerepkör teszi lehetővé a feladatok elvégzését, vagy ha USMF-et használ, jelentkezzen be ezen a néven: **Alíz**.
 
 
 ## <a name="create-a-new-requisition"></a>Új igénylés létrehozása

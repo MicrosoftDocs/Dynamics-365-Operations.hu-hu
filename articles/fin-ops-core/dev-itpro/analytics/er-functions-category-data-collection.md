@@ -1,6 +1,6 @@
 ---
 title: Az adatgyűjtés kategóriába tartozó ER-függvények listája
-description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) támogatott adatgyűjtési függvényekről.
+description: Ez a cikk az Elektronikus jelentés (ER) által támogatott adatgyűjtési funkciókkal kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2046931732f2d1c1ca040c1c84d4b182c2214f2f44a5a90fceda49298445b743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8d4f5068bedcf1f15ae5257e29004a4773ef84c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760074"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908561"
 ---
 # <a name="list-of-er-functions-in-the-data-collection-category"></a>Az adatgyűjtés kategóriába tartozó ER-függvények listája
 
 [!include [banner](../includes/banner.md)]
 
-Az Elektronikus jelentéskészítés (ER) adatgyűjtési függvényei az éppen futtatott ER formátumban történő számlálásra és összegzésre használhatók a már létrehozott **Szöveg** vagy **Xml** formátumban előállított kimeneti adatok alapján. Ez a módszer használható a futtatott ER-formátum teljesítményének javítására, a létrehozott dokumentumokban lévő folyó összértékek értékeinek megadására az előállított dokumentumokban, és egyéb célokra. Ez a témakör ezeknek a függvényeknek az összefoglalása.
+Az Elektronikus jelentéskészítés (ER) adatgyűjtési függvényei az éppen futtatott ER formátumban történő számlálásra és összegzésre használhatók a már létrehozott **Szöveg** vagy **Xml** formátumban előállított kimeneti adatok alapján. Ez a módszer használható a futtatott ER-formátum teljesítményének javítására, a létrehozott dokumentumokban lévő folyó összértékek értékeinek megadására az előállított dokumentumokban, és egyéb célokra. Ez a témakör összefoglalást nyújt a funkciókról.
 
 ## <a name="list-of-supported-functions"></a>Támogatott függvények listája
 

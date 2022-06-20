@@ -1,6 +1,6 @@
 ---
 title: Globális mobileszköz-paraméterek
-description: Ez a témakör bemutatja a mobileszköz beállításának módját a Raktárkezelési paraméterek lapon.
+description: Ez a cikk bemutatja a mobileszköz-beállításokat a Raktárkezelési paraméterek lapon.
 author: Mirzaab
 ms.date: 08/13/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ae04c86ff1eafb649fcef7c34ace66bdc3e5cb8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6e03414edd9243fcc4156195928455b30a7cee9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679165"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847759"
 ---
 # <a name="global-mobile-device-parameters"></a>Globális mobileszköz-paraméterek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet beállítani a globális raktárkezelési paramétereket, amelyek a rendszer és a mobileszköz kapcsolatát befolyásolják.
+Ez a cikk bemutatja, hogy hogyan lehet beállítani a globális raktárkezelési paramétereket, amelyek a rendszer és a mobileszköz kapcsolatát befolyásolják.
 
 A raktári dolgozók beállításának további tudnivalókat lásd a [Raktári dolgozó kezelése](manage-warehouse-workers.md) oldalon. Az azonosítótáblák kezelésével mobileszközön kapcsolatos részletes információk: [Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md). A ciklikus leltározási folyamatokkal kapcsolatos további tudnivalókat lásd a [Ciklikus leltározás](cycle-counting.md) és a [Ciklikus leltározás példahelyzetek](cycle-counting-scenarios.md) részben.
 
 ## <a name="open-the-warehouse-management-parameters-page"></a>Nyissa meg a Raktárkezelési paraméterek engedélyezése oldalt
 
-A **Raktárkezelési paraméterek oldal** megnyitásához menjen a **Raktárkezelés \> Beállítások \> Raktárkezelési paraméterek** szakaszba. Ezután beállíthatja a mobileszközön végzett munkához kapcsolódó mezőket a témakör következő részében leírt módon.
+A **Raktárkezelési paraméterek oldal** megnyitásához menjen a **Raktárkezelés \> Beállítások \> Raktárkezelési paraméterek** szakaszba. Ezután beállíthatja a mobileszköz-munkához kapcsolódó mezőket a jelen cikk következő részében leírt módon.
 
 ## <a name="mobile-device-fasttab-on-the-general-tab"></a>A Mobileszköz gyorslapja az Általános lapon
 

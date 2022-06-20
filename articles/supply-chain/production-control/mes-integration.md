@@ -1,6 +1,6 @@
 ---
 title: Integráció külső gyártásvégrehajtási rendszerekkel
-description: Ez a témakör bemutatja, hogy hogyan integrálhatja a Microsoftot Dynamics 365 Supply Chain Management egy külső gyártásvégrehajtási rendszerrel (MES).
+description: Ez a cikk bemutatja, hogy hogyan integrálhatja a Microsoftot Dynamics 365 Supply Chain Management egy külső gyártásvégrehajtási rendszerrel (MES).
 author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: c7633ba32f9265aa0fd8f702552f48dbf675375d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678687"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860638"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integráció külső gyártásvégrehajtási rendszerekkel
 
@@ -238,7 +238,7 @@ A termelési *rendelés záró üzenetének* értéke `_messageType` :`ProdProdu
 
 ## <a name="other-production-information"></a>Egyéb termelési adatok
 
-Az üzenetek az üzletben történik műveleteket és eseményeket támogatják. A feldolgozásuk az ebben a témakörben ismertetett MES integrációs keretrendszer használatával folyamatban van. A terv feltételezi, hogy a rendszer más hivatkozási adatokat (például a termékhez kapcsolódó információkat, vagy az anyagjegyzéket vagy útvonalat (a konkrét beállítási és konfigurációs időivel) fájlátvitel útján), illetve OData adatok felhasználásával olvassa be a [rendszerből](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities).
+Az üzenetek az üzletben történik műveleteket és eseményeket támogatják. A feldolgozásuk az ebben a cikkben ismertetett MES integrációs keretrendszer használatával folyamatban van. A terv feltételezi, hogy a rendszer más hivatkozási adatokat (például a termékhez kapcsolódó információkat, vagy az anyagjegyzéket vagy útvonalat (a konkrét beállítási és konfigurációs időivel) fájlátvitel útján), illetve OData adatok felhasználásával olvassa be a [rendszerből](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities).
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Visszajelzés fogadása egy üzenet állapotáról
 
@@ -251,7 +251,7 @@ Miután a MES elküldte az üzenetet az ellátásilánc-kezelésnek, az ellátá
 
 Ilyen esetekben az Ellátásilánc-kezelés általános figyelmeztetési szolgáltatása használható. A normál figyelmeztetések hogyan működnek, az alábbi forrásokban található tájékoztatás:
 
-- Súgótémakör: [Figyelmeztetések – áttekintés](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Súgócikk: [Figyelmeztetések – áttekintés](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - Video: Figyelmeztetési szabály beállításai a következőben: [Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 Beállíthatja például az alábbi figyelmeztetéseket, hogy visszajelzést ad az üzenetek állapotáról:

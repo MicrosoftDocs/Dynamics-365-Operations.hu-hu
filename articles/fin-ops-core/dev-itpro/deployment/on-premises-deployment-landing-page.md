@@ -1,6 +1,6 @@
 ---
 title: Helyszíni telepítés kezdőlapja
-description: Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat.
+description: Ez a cikk a telephelyen való telepítésekkel kapcsolatos információkat és hivatkozásokat tartalmaz.
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566039"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867412"
 ---
 # <a name="on-premises-deployment-home-page"></a>Helyszíni telepítés kezdőlapja
 
 [!include [banner](../includes/banner.md)]
 
-Telepítheti Dynamics 365 Finance + Operations (on-premises). Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól. Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.
+Telepítheti Dynamics 365 Finance + Operations (on-premises). Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól. Ez a cikk a létesítményen kívül telepítésekkel kapcsolatos információkat tartalmazó tartalomra mutató hivatkozásokat tartalmaz.
 
 ## <a name="get-started"></a>Első lépések
 - [Helyszíni telepítés áttekintése](on-premises-overview.md)

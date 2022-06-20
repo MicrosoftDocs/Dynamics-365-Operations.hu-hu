@@ -1,6 +1,6 @@
 ---
 title: Kiadás raktárba
-description: Ez a témakör a raktárba való kiadás folyamatának részleteit tartalmazza. Olyan entitásokat ír le, amelyek akkor jönnek létre, amikor egy rendelést kiadnak a raktárnak, valamint azokat a beállításokat, amelyek a folyamat inicializálására használhatók.
+description: Ez a cikk a raktárba való kiadás folyamatának részleteit tartalmazza. Olyan entitásokat ír le, amelyek akkor jönnek létre, amikor egy rendelést kiadnak a raktárnak, valamint azokat a beállításokat, amelyek a folyamat inicializálására használhatók.
 author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8624db42e9d0f3d08ed3b582224ed7937d52f85d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678351"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893178"
 ---
 # <a name="release-to-warehouse"></a>Kiadás raktárba
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a raktárba való kiadás folyamatának részleteit tartalmazza. Olyan entitásokat ír le, amelyek akkor jönnek létre, amikor egy rendelést kiadnak a raktárnak, valamint azokat a beállításokat, amelyek a folyamat inicializálására használhatók.
+Ez a cikk a raktárba való kiadás folyamatának részleteit tartalmazza. Olyan entitásokat ír le, amelyek akkor jönnek létre, amikor egy rendelést kiadnak a raktárnak, valamint azokat a beállításokat, amelyek a folyamat inicializálására használhatók.
 
 ## <a name="release-to-warehouse-overview"></a>Raktárba kiadás áttekintése
 
-A raktárba történő kiadás az a folyamat, amellyel a készletet felkészítik a kiszállási feldolgozásra. A rendelés raktárba való kiadásakor a rendszer rakománysorokat és szállítmányokat hoz létre. Ha be van állítva az automatikus hullámfeldolgozás, létrejönnek a rakományok és a szükséges munka is. Az érintett entitások konfigurációja a rendszer beállításaitól függ. A témakörnek ez a része áttekinti a raktárba való kiadási folyamat során létrehozott entitásokat és az azokat meghatározó rendszerbeállításokat.
+A raktárba történő kiadás az a folyamat, amellyel a készletet felkészítik a kiszállási feldolgozásra. A rendelés raktárba való kiadásakor a rendszer rakománysorokat és szállítmányokat hoz létre. Ha be van állítva az automatikus hullámfeldolgozás, létrejönnek a rakományok és a szükséges munka is. Az érintett entitások konfigurációja a rendszer beállításaitól függ. A cikknek ez a szakasza áttekinti a raktári kiadási folyamat során létrehozott entitásokat és az azokat meghatározó rendszerbeállításokat.
 
 A *szállítmány* az ugyanannak a vevőnek vagy ugyanannak a szállítási címnek megfelelő értékesítésirendelés-sorok vagy átmozgatásirendelési-sorok csoportja.
 
@@ -67,7 +67,7 @@ Az **Értékesítési rendelések** és **Átmozgatási rendelések** oldalakon 
 
 A hullámsablonok, munkasablonok és helyi irányelvek beállításaitól függően az folyamat egyes lépései manuálisak lehetnek. A teljes folyamat ugyanakkor változatlan marad.
 
-A rendelés raktárba való kiadására számos lehetőség áll rendelkezésre. A műveletet manuálisan is végrehajthatja, illetve kötegelt feladatot is be lehet állítani. A témakör további részei részletesen áttekintik, hogy milyen módokon lehet raktárba való kiadási műveletet végrehajtani.
+A rendelés raktárba való kiadására számos lehetőség áll rendelkezésre. A műveletet manuálisan is végrehajthatja, illetve kötegelt feladatot is be lehet állítani. A cikk további részei részletesen áttekintik, hogy milyen módon lehet raktári kiadási műveletet végrehajtani.
 
 ## <a name="manual-release-to-the-warehouse-from-the-sales-orders-and-transfer-orders-pages"></a>Manuális kiadás a raktárba az Értékesítési rendelések és Átmozgatási rendelések lapról
 

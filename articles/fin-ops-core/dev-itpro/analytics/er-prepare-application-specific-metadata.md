@@ -1,6 +1,6 @@
 ---
 title: Alkalmazásspecifikus metaadatok előkészítése az RCS és ER számára
-description: Ez a témakör azt mutatja be, hogyan kell előkészíteni az alkalmazásspecifikus metaadatokat a Regulatory Configuration Service (RCS) és az elektronikus jelentés (ER) számára.
+description: Ez a cikk bemutatja, hogy hogyan lehet előkészíteni az alkalmazásspecifikus metaadatokat a Szabályozó konfigurációs szolgáltatás (RCS) és az Elektronikus jelentéskészítés (ER) számára.
 author: NickSelin
 ms.date: 04/04/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9136bd3db2aee1447d6af3b3c47b908177cee966aba630490cc6e72072525d29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d41069cf03e9ce49a3faa4f3933d91edd3b7d360
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864636"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Alkalmazásspecifikus metaadatok előkészítése az RCS és ER számára
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör a következő feladatok példáival nyújt útmutatót:
+Ez a cikk a következő feladatokról ad példaként:
 
 - [RCS-ben felhasználandó alkalmazás-metaadatok előkészítése](#prepare-application-metadata-that-can-be-used-in-rcs)
 - [Alkalmazás-metaadatokhoz való hozzáférés egy ER-konfiguráció használatával](#access-application-metadata-by-using-an-er-configuration)
@@ -97,10 +97,10 @@ Mielőtt teljesítené ezt az eljárást, végre kell hajtania a következő elj
 
 1. Ugorjon az **Összes munkaterület \> Elektronikus jelentés** pontra.
 2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltatók létrehozása, és megjelölésük aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárásban szereplő lépéseket. 
-3. Importálja az alkalmazáshoz tartozó metaadatokat tartalmazó ER-metaadat konfigurációt, valamint a külkereskedelmi üzleti tartományhoz elektronikus dokumentumokat létrehozó konfigurációs konfigurációt. Létrehozta ezt az ER-metaadat konfigurációt, és exportálta XML-fájlként az [ RCS-ben felhasználandó alkalmazás-metaadatok előkészítése](#prepare-application-metadata-that-can-be-used-in-rcs) eljárásban a témakör korábbi részében.
+3. Importálja az alkalmazáshoz tartozó metaadatokat tartalmazó ER-metaadat konfigurációt, valamint a külkereskedelmi üzleti tartományhoz elektronikus dokumentumokat létrehozó konfigurációs konfigurációt. Létrehozta ezt az ER metaadat-konfigurációt, és XML-fájlként [exportálta az ALKALMAZÁS metaadatainak előkészítéseként, amely felhasználható az RCS-eljárásban](#prepare-application-metadata-that-can-be-used-in-rcs) a cikk korábbi verzióiban.
 
     1. Kattintson a **Metaadat-konfigurációk** elemre.
-    2. **Árfolyam** kijelölése.
+    2. **Exchange** kijelölése.
     3. Kattintson a **Betöltés XML-fájlból** lehetőségre.
     4. Tallózással válassza ki a **Foreign trade metadata.xml** fájlt.
     5. Válassza ki az **OK** lehetőséget.
@@ -198,12 +198,12 @@ A szükséges módon a meglévő metaadatok készletét az alkalmazásban kibőv
 
 A következő eljárás bemutatja, hogy egy RCS felhasználó, aki rendelkezik a **Rendszergazda** vagy az **Elektronikus jelentéskészítési fejlesztő** szerepkörrel, megtervezhet egy új ER-modellhozzárendelést az alkalmazás metaadatainak segítségével. Alkalmazás-metaadatokhoz való hozzáférés online RCS összekapcsolt alkalmazások használatával történik A minta ER-modell-hozzárendelést a külföldi kereskedelmi tranzakciók elérése érdekében konfigurálja a program.
 
-A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az [Konfigurációszolgáltatók létrehozása és aktívként történő megjelölésük](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárás lépéseit az RCS-ben. Ha még nem végezte el a témakör lépéseit [Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával](#access-application-metadata-by-using-an-er-configuration) korábban a témakörben, nyissa meg az [Elektronikus jelentéskészítési feladat-útmutatók a Dynamics 365 for Finance and Operations 8.1 alkalmazáshoz](https://go.microsoft.com/fwlink/?linkid=2082739) lapot a következő ER-konfigurációk letöltéséhez és előzetes helyi mentéséhez: **Foreign trade metadata.xml**, **Foreign trade model.xml** és **Foreign trade mapping.xml**.
+A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az [Konfigurációszolgáltatók létrehozása és aktívként történő megjelölésük](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárás lépéseit az RCS-ben. Ha a cikk korábbi konfigurálási eljárásával még nem kitöltötte a Hozzáférési alkalmazás metaadatait, [az](#access-application-metadata-by-using-an-er-configuration) Elektronikus jelentési feladatok útmutatója 8.1 [oldalról elérhető az alábbi ER-konfigurációs fájlok előzetes letöltéséhez és helyi mentéséhez: Dynamics 365 for Finance and Operations Külkereskedelmi metaadatok.xml](https://go.microsoft.com/fwlink/?linkid=2082739), **Külkereskedelmi modell.xml** **és Külkereskedelmi hozzárendelés.xml**.**·**
 
 
 ### <a name="get-required-er-configurations"></a>Szükséges elektronikus jelentéskészítés-konfigurációk lekérése
 
-Ha már végrehajtotta az [Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával](#access-application-metadata-by-using-an-er-configuration) eljárásban megadott lépéseket korábban a témakörben, akkor az aktuális RCS már rendelkezik az összes szükséges ER konfigurációval (külkereskedelmi metaadatok, modell-hozzárendelési konfigurációk) az aktuális ER-példányban. Ebben az esetben ki lehet hagyni ezt az eljárást.
+Ha már [kitöltötte a Hozzáférési alkalmazás metaadatait egy ER](#access-application-metadata-by-using-an-er-configuration) konfigurációs eljárás segítségével a cikk korábbi verzióiban, akkor már rendelkezik az összes szükséges ER-konfigurációval (a külkereskedelmi metaadatok, modell és megfeleltetési konfigurációk) az aktuális RCS-példányban. Ebben az esetben ki lehet hagyni ezt az eljárást.
 
 1. Ugorjon az **Összes munkaterület \> Elektronikus jelentés** pontra.
 2. Válassza a **Jelentéskészítési konfigurációk** elemet.

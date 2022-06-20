@@ -1,6 +1,6 @@
 ---
 title: A IoT Intelligencia beépülő modul telepítése az LCS-ben
-description: Ez a témakör bemutatja, hogyan telepítheti az IoT Intelligencia beépülő modult a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban.
+description: Ez a cikk bemutatja, hogy hogyan telepíthető az Online intelligencia bővítmény a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásba.
 author: johanhoffmann
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 12ffa71dc1c2badaffdc2e419a47d855635016f2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679023"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887486"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>A IoT Intelligencia beépülő modul telepítése az LCS-ben
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan telepítheti az IoT Intelligencia beépülő modult a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban. Ne felejtse el, hogy a bővítmények nem telepíthetők bemutató/próbaverziós környezetbe. A bővítmény telepítése előtt [létre kell hoznia az Azure-erőforrásokat](iot-azure-setup.md).
+Ez a cikk bemutatja, hogy hogyan telepíthető az Online intelligencia bővítmény a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásba. Ne felejtse el, hogy a bővítmények nem telepíthetők bemutató/próbaverziós környezetbe. A bővítmény telepítése előtt [létre kell hoznia az Azure-erőforrásokat](iot-azure-setup.md).
 
 Az IoT-intelligenciát kód írása nélkül is be lehet állítani és lehet konfigurálni. Az alapvető lépések a következők.
 
 1. [Azure-erőforrások beállítása](iot-azure-setup.md) – Egy IoT-központ, egy Redis Cache és egy olyan kulcstartó beállítása, amely elérhető a Supply Chain Management alkalmazásból.
 2. [Üzenetsémák formátumai az IoT Huboz](iot-schema-format.md)– Állítsa be az eszközök úgy, hogy üzeneteket küldjenek az IoT Hubba, és definiálja a JavaScript Object Notation (JSON) üzenetformátumot.
 3. A Funkciókezelés helyen engedélyezze az IoT-intelligencia funkciójelölőt.
-4. Az IM-intelligenciához bővítmény telepítése a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban – telepítse a bővítményt az LCS-be, és konfigurálja az Azure-bővítményeket (az ebben a témakörben leírtak szerint).
+4. Az IM-intelligenciához bővítmény telepítése a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban – telepítse a bővítményt az LCS-be, és konfigurálja az Azure-bővítményeket (a jelen cikknek megfelelően).
 5. [Metrikák beállítása](iot-metrics-setup.md) – Metrikák beállítása a Supply Chain Management alkalmazásban.
 6. [Eset beállítása](iot-scenario-setup.md) – Az eseteket a Supply Chain Management alkalmazásban állíthatja be.
 

@@ -1,6 +1,6 @@
 ---
 title: A külső szállítókkal történő szállítói együttműködés
-description: Ez a témakör azt magyarázza el, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt.
+description: Ez a cikk bemutatja, hogy a beszerzők hogyan dolgozhatnak együtt külső szállítóval a beszerzési rendelésekkel és a bizományosi készlettel kapcsolatos információk cseréje során.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05a2ecc82306c013912b3ee824d63d7d39c4258f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
-ms.translationtype: MT
+ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676887"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907290"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>A külső szállítókkal történő szállítói együttműködés
 
 [!include [banner](../includes/banner.md)]
 
-A **Szállítói együttműködés** modul azokat a szállítókat célozza meg, akik nem rendelkeznek elektromos adatátviteli (EDI) integrációval a Microsoft Dynamics 365 Supply Chain Management rendszerhez. Segítségével a szállítók beszerzési rendelésekkel, számlákkal, bizományosi készlet adataival és ajánlatkérésekel dolgozhatnak, valamint hozzáférhetnek a szállítók alapadatainak részeihez. Ez a témakör bemutatja, hogyan működhet együtt a szállítói együttműködési felületet használó külső szállítókkal a beszerzési rendelések és a bizományosi készlet kezelésében. Bemutatja továbbá, hogyan engedélyezheti egy adott szállítónak a szállítói együttműködés használatát, valamint hogyan definiálja azokat az információkat, amelyeket minden szállító lát egy beszerzési rendelésre történő válaszolás során.
+A **Szállítói együttműködés** modul azokat a szállítókat célozza meg, akik nem rendelkeznek elektromos adatátviteli (EDI) integrációval a Microsoft Dynamics 365 Supply Chain Management rendszerhez. Segítségével a szállítók beszerzési rendelésekkel, számlákkal, bizományosi készlet adataival és ajánlatkérésekel dolgozhatnak, valamint hozzáférhetnek a szállítók alapadatainak részeihez. Ez a cikk bemutatja, hogy hogyan lehet együttműködni azokkal a külső szállítóval, akik a szállítói együttműködési felületet használják a beszerzési rendelésekkel, ajánlatkérésekkel és bizományosi készlettel való munkára. Bemutatja továbbá, hogyan engedélyezheti egy adott szállítónak a szállítói együttműködés használatát, valamint hogyan definiálja azokat az információkat, amelyeket minden szállító lát egy beszerzési rendelésre történő válaszolás során.
 
 Ha többet szeretne megtudni arról, hogy milyen tevékenységeket végezhetnek a külső szállítók a szállítói együttműködési felületen, olvassa el a [Szállítói együttműködés vevőkkel](vendor-collaboration-work-customers-dynamics-365-operations.md) részt.
 
 > [!NOTE]
-> Az ebben a szállítói együttműködésről szóló témakörben található információk csak a Supply Chain Management jelenlegi verziójára érvényesek. A Microsoft Dynamics AX 7.0 (2016. február) és a Microsoft Dynamics AX 7.0.1 (2016. május) alkalmazásverziókban a **Szállítói portál** modul segítségével működhet együtt a szállítókkal. A **Szállítói portál** modullal kapcsolatos további tudnivalókat lásd: [Együttműködés a szállítókkal a Szállítói portálon keresztül](collaborate-vendors-vendor-portal.md).
+> A szállítói együttműködésről ebben a cikkben található tájékoztatás csak az Ellátásilánc-kezelés aktuális verziójára vonatkozik. A Microsoft Dynamics AX 7.0 (2016. február) és a Microsoft Dynamics AX 7.0.1 (2016. május) alkalmazásverziókban a **Szállítói portál** modul segítségével működhet együtt a szállítókkal. A **Szállítói portál** modullal kapcsolatos további tudnivalókat lásd: [Együttműködés a szállítókkal a Szállítói portálon keresztül](collaborate-vendors-vendor-portal.md).
 
 Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md) részt. Az új szállítói együttműködési felhasználók létrehozásával kapcsolatos tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md).
 
@@ -112,7 +112,7 @@ A szállítónak elküldött és <strong>Külső ellenőrzés alatt</strong> ál
 <li>Helyettesíthet egy cikket.</li>
 </ul>
 A szállító nem módosíthatja az árinformációkat és a költségeket. Azonban a szállító felajánlhatja ezeket a módosításokat megjegyzések segítségével.</td>
-<td>A szállító válasza <strong>Elfogadva módosításokkal</strong> értékű lesz, és a beszerzési rendelés <strong>Külső ellenőrzés alatt</strong> állapotú marad. Az állapotok megjelenítik, hogy milyen típusú módosításokat javasolt a szállító. A módosítások automatikus felhasználásáról lásd a következő, „A beszerzési rendelés frissítése, ha a szállító módosításokat javasol” című részt a beszerzési rendelés frissítéséről, amikor a szállító módosításokat javasol. </td>
+<td>A szállító válasza <strong>Elfogadva módosításokkal</strong> értékű lesz, és a beszerzési rendelés <strong>Külső ellenőrzés alatt</strong> állapotú marad. Az állapotok megjelenítik, hogy milyen típusú módosításokat javasolt a szállító. A változások automatikus felhasználásról a Beszerzési rendelés frissítése című részben olvashat tájékoztatást, &quot; ha a szállító a&quot; cikk későbbi, módosítási szakaszát javasolja. </td>
 </tr>
 </tbody>
 </table>

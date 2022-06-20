@@ -1,6 +1,6 @@
 ---
 title: Készletnapló-jóváhagyási munkafolyamatok
-description: Ez a témakör bemutatja, hogyan kell beállítani a készletnapló-jóváhagyási munkafolyamatokat különböző típusú fizikai készlettranzakciókhoz. A készletnapló-munkafolyamatok segítségével biztosítható, hogy csak a jóváhagyott készletnaplókat tegyék közzé a tranzakciókhoz.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani és használni a készletnapló-jóváhagyási munkafolyamatokat a tényleges készlettranzakciók különböző típusaihoz. A készletnapló-munkafolyamatok segítségével biztosítható, hogy csak a jóváhagyott készletnaplókat tegyék közzé a tranzakciókhoz.
 author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778305"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873985"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Készletnapló-jóváhagyási munkafolyamatok
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan kell beállítani a készletnapló-jóváhagyási munkafolyamatokat különböző típusú fizikai készlettranzakciókhoz, például kiadások és bevételek feladása, készletmozgások, anyagjegyzékek (BOM) létrehozása és a fizikai készlet egyeztetése. A készletnapló-munkafolyamatok segítségével biztosítható, hogy csak a jóváhagyott készletnaplókat tegyék közzé a tranzakciókhoz.
+Ez a témakör leírja, hogyan lehet beállítani és használni a készletnapló-jóváhagyási munkafolyamatokat a különböző típusú tényleges készlettranzakciókra, például a cikkekre és a bevételezésre, a készletmozgásokra, az anyagjegyzékre és a tényleges készlet egyeztetésére. A készletnapló-munkafolyamatok segítségével biztosítható, hogy csak a jóváhagyott készletnaplókat tegyék közzé a tranzakciókhoz.
 
 > [!NOTE]
 > A készletnapló-jóváhagyási munkafolyamatok csak a Készletkezelési modul használatával rögzített tranzakciókra vonatkoznak. Nem működnek a Raktárkezelési modulból indított készletnaplókkal.
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Készletnaplók jóváhagyási munkafolyamatai funkció aktiválása
 
-Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés [lapon ellenőrizhetik](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a funkció állapotát, és szükség esetén engedélyezhetik vagy letilthatják azt. Itt a funkció a következőként szerepel:
 
 - **Modul:** *Készlet- és raktárkezelés*
 - **Funkció neve:** *Készletnapló jóváhagyási munkafolyamata*
@@ -44,7 +44,7 @@ A munkafolyamatok támogatják a verzióvezérlést, illetve mindegyikhez tartoz
 
 A saját készletnapló-jóváhagyási munkafolyamatai létrehozásához:
 
-1. Menjen a **Készletkezelés \> Beállítás \> Készletkezelési munkafolyamatok** lehetőségre.
+1. Menjen a **Készletkezelés \> Beállítás\> Készletkezelési munkafolyamatok** lehetőségre.
 1. A Művelet panelen válassza az **Új** lehetőséget.
 1. Válassza ki azt a készletnapló-típust, amelyhez be szeretné állítani a munkafolyamatot:
     - l **Készlet címkeszámlálási naplója**

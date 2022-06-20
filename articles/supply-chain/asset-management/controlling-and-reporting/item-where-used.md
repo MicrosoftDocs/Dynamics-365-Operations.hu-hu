@@ -1,6 +1,6 @@
 ---
 title: Cikk használati helye
-description: Ez a témakör azt mutatja be, hogyan lehet áttekintést kapni arról, hogy egy cikk hol van használva Eszközkezelésben.
+description: Ez a témakör ismerteti, hogyan lehet áttekintést kapni arról, hogy hol használják az egyes cikkeket az Eszközkezelésben.
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2308fc4fabe541b8affeba5860a3154f81e8903e4853fd36d777f15a503d9dd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5232b7554f542fd183d3002e6d94ca49bfde06ec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861015"
 ---
 # <a name="item-where-used"></a>Cikk használati helye
 

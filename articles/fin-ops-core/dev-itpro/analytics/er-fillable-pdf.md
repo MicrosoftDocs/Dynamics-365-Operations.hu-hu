@@ -1,6 +1,6 @@
 ---
 title: A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
-description: Ez a témakör a PDF-sablon kitöltéséhez szükséges elektronikus jelentéskészítési (ER) formátum megtervezésével kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk a PDF-sablonok kitöltésére használható elektronikus jelentési formátumok (ER) tervezését tartalmazza.
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: ef9b650e9b676d79af8839c08cfbb1000a5aee5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645107"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908590"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
 
 [!include[banner](../includes/banner.md)]
 
-Az ebben a témakörben szereplő eljárások példák arra, hogy egy **Rendszergazda** vagy **Elektronikus jelentések fejlesztője** szerepkörrel rendelkező felhasználó hogyan tudja konfigurálni az Elektronikus jelentéskészítési (ER) formátumot, amely PDF-formátumban jelentéseket hoz létre jelentéssablonként használt, kitölthető PDF-dokumentumok segítségével. Ezek a lépések a Dynamics 365 Finance vagy Regulatory Configuration Services (RCS) bármely vállalatában elvégezhetők.
+**·** **Az** ebben a cikkben található eljárások bemutatják, hogyan konfigurálhat egy felhasználó a Rendszergazda szerepkörben vagy az Elektronikus jelentéskészítő fejlesztő szerepkörben egy olyan elektronikus jelentésformátumot (ER), amely PDF-fájlként generál jelentéseket a kitölthető PDF-dokumentumok jelentéssablonok használatával. Ezek a lépések a Dynamics 365 Finance vagy Regulatory Configuration Services (RCS) bármely vállalatában elvégezhetők.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A művelet elkezdése előtt rendelkeznie kell az alábbi hozzáférések egyikével, a témakörben említett eljárások végrehajtásához használt szolgáltatástól függően:
+Mielőtt hozzákezd, a következő típusú hozzáférésre van csak akkor van jogosultsága, attól függően, hogy milyen szolgáltatásokkal kell végrehajtani az ebben a cikkben olvasható eljárásokat:
 
 - Hozzáférés a Finance alkalmazáshoz a következő szerepkörök egyikével:
 

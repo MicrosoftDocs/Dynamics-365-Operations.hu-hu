@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-28
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 391f741ee08eb0624e80f5c297009c527e50c14c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 385144738b83fcf6873eae5204b4784d6ecd5b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468538"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851769"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage-for-items"></a>A biztonsági készlet napló használata a cikkek minimális fedezetének frissítésére
 
@@ -24,7 +24,7 @@ ms.locfileid: "8468538"
 
 A biztonsági készlet a készletben tartott cikk további mennyiségét jelzi, ami csökkenti annak a kockázatot, hogy a cikkből készleten kell kimenni. A biztonsági készlet pufferként használható az értékesítési rendelések bevétele esetén, de a szállító nem tudja teljesíteni a vevő által kért szállítási dátumot.
 
-Ez a témakör azt írja le, hogyan lehet a biztonsági készletnapló segítségével kiszámítani a korábbi tranzakciók alapján a minimális fedezeti javaslatokat, majd frissíteni a cikkfedezetet a javaslatokkal.
+Ez a cikk azt írja le, hogyan lehet a biztonsági készletnapló segítségével kiszámítani a minimális fedezeti javaslatokat az előzménytranzakciók alapján, majd frissíteni a cikkfedezetet a javaslatokkal.
 
 ## <a name="overview-of-minimum-coverage-usage"></a>A minimális fedezeti kihasználtság áttekintése
 
@@ -43,7 +43,7 @@ A **minimális** érték háromféleképpen lehet beállítani:
 
 A biztonságikészlet-naplók segítségével lehet kiszámítani a javasolt minimális mennyiséget a cikk múltbeli használata alapján, vagy a minimális/maximális, vagy a készlettervek céljából. A korábbi használat egy adott időszak minden kiadási tranzakcióját jelenti. Ilyen kiadási tranzakciók többek között az értékesítési rendelési tranzakciók és a készlethelyesbítások. A számítások meghatározzák továbbá a javasolt minimális mennyiség hatását a készletértékre, valamint a készletérték változását az aktuális minimális mennyiséghez képest.
 
-Minden biztonságikészlet-naplósor egy cikket és annak fedezeti dimenzióit tartalmazza. Ezek a naplósorok létrejönnek, és megjelennek **a Biztonsági készlet naplósorai** lapon (**Alaptervezés \> – Futtatás \>\> biztonsági készlet számítása**). A biztonságikészlet-naplóknak a javasolt minimális mennyiségek kiszámításához való használatának üzleti folyamatát a témakör későbbi része ismerteti.
+Minden biztonságikészlet-naplósor egy cikket és annak fedezeti dimenzióit tartalmazza. Ezek a naplósorok létrejönnek, és megjelennek **a Biztonsági készlet naplósorai** lapon (**Alaptervezés \> – Futtatás \>\> biztonsági készlet számítása**). A biztonságikészlet-naplóknak a javasolt minimális mennyiségek kiszámításához való használatának üzleti folyamatát a jelen cikk későbbi leírása ismerteti.
 
 A tervező egy biztonságikészlet-napló segítségével számítja ki a kiválasztott cikkek javasolt minimális mennyiségét, a kiválasztott időszakokban korábbi használat alapján. A javasolt minimumok szükség esetén manuálisan felülbírálhatók, és lehetőség van a javasolt minimumok készletértékre gyakorolt lehetséges hatásának áttekintésre. A napló feladása esetén a cikkfedezetben társított minimális mennyiségek automatikusan frissülnek.
 
@@ -89,7 +89,7 @@ A következő lépések szerint generálhat automatikusan naplósorokat.
 
     - **Kezdő dátum** – válassza ki annak az időszaknak a kezdő dátumát, amelybe a számításban figyelembe kell venni a problémákat.
     - **Záró dátum** – válassza ki annak az időszaknak a záró dátumát, amely időszakban a számításban figyelembe kell venni a problémákat. Legalább két hónapnak kell lennie a kezdő és a záró dátum között.
-    - **Alapeltérés** számítása – az alapeltérés kiszámításához állítsa *Igen* beállításra. A javaslat számítása *esetén* **a** Szolgáltatásszint használata beállítás csak Igen beállítással használható (a témakör későbbi témakörében ismertetett módon).
+    - **Alapeltérés** számítása – az alapeltérés kiszámításához állítsa *Igen* beállításra. A javaslat kiszámításakor *a* **Szolgáltatásszint** használata beállítás csak Igen beállítással használható (a jelen cikk későbbi leírásában leírtak szerint).
 
 1. A Gyors **gyorselemet** is beleveendő rekordokban szűrők és megszorítások beállításával meghatározhatja, hogy mely cikkek szerepeljenek a halmazban. (Szűrés például a következő szerint: **Fedezeti csoport** értéke.) A **Szűrő kiválasztásával** megnyithat egy szokásos lekérdezésszerkesztő párbeszédpanelt, ahol meghatározhatja a kiválasztási feltételeket, a rendezési feltételeket és az illesztéseket. A mezők a Microsoft más típusú lekérdezéseihez is működnek Dynamics 365 Supply Chain Management.
 1. A futtatás **a** háttérben gyorslapon adja meg, hogy kötegelt módban futtassa-e a feladatot, és/vagy ismétlődő ütemezést állítson be. A mezők ugyanúgy működnek, mint a Supply Chain Management más, [háttérben futó feladattípusai](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
@@ -110,7 +110,7 @@ Ez a lépés kiszámít egy javasolt minimumot minden naplósorhoz, és a sornak
 A megjelenő számítások mindaddig **nem** befolyásolják az egyes termékek tényleges minimális mennyiségértékét, amíg a Munkaablakban ki nem választják a Post adatokat. Ebben az időpontban minden **egyes** termékre az Új minimális mennyiség érték lesz érvényes.
 
 1. Ugrás az Alaptervezés **futtatása \> biztonsági \>\> készlet számítása műveletre**
-1. Nyissa meg azt a naplót, amelyhez javaslatot kell számítani. Másik lehetőségként hozzon létre egy új naplót a témakörben korábban ismertetett módon.
+1. Nyissa meg azt a naplót, amelyhez javaslatot kell számítani. Másik lehetőségként hozzon létre egy új naplót a jelen cikk korábbi leírása szerint.
 1. A Naplósorok **gyorslapon** válassza az eszköztár **Javaslat** számítása lehetőséget. (Nem kell kiválasztania sorokat.)
 1. A Minimumkészlet-szint **kiszámítása** párbeszédpanelen állítsa be a következő mezőket:
 

@@ -1,6 +1,6 @@
 ---
 title: Bevezetés az eszközökbe
-description: Ez a témakör áttekintést ad az Eszközkezelésben használt eszközökről.
+description: Ez a cikk áttekintést nyújt az Eszközkezelésben található eszközökről.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874188"
 ---
 # <a name="introduction-to-assets"></a>Bevezetés az eszközökbe
 
@@ -30,9 +30,9 @@ ms.locfileid: "6767508"
 
  
 
-Ez a témakör áttekintést ad az Eszközkezelésben használt eszközökről. Az *Eszköz* bármilyen típusú berendezés, például gép vagy gépalkatrész, amely karbantartást, szervizt vagy javítást igényel.
+Ez a cikk áttekintést nyújt az Eszközkezelésben található eszközökről. Az *Eszköz* bármilyen típusú berendezés, például gép vagy gépalkatrész, amely karbantartást, szervizt vagy javítást igényel.
 
-Egy eszköz automatikusan frissül a kapcsolódó információkkal. Ilyen információ lehet például az új vagy frissített munkakrendelésekkel kapcsolatban. Az eszközök az **Összes eszköz** menüpont vagy a **Függőben lévő eszközök** menüpont segítségével hozhatók létre. Ez a témakör bemutatja, hogyan lehet eszközöket létrehozni az **Összes eszköz** menüpont használatával. A **Függőben lévő eszközök** menüelem segítésével való eszközlétrehozás módjával kapcsolatos további információkért lásd: [Eszközök létrehozása munkarendelések alapján](../objects/create-objects-based-on-purchase-orders.md).
+Egy eszköz automatikusan frissül a kapcsolódó információkkal. Ilyen információ lehet például az új vagy frissített munkakrendelésekkel kapcsolatban. Az eszközök az **Összes eszköz** menüpont vagy a **Függőben lévő eszközök** menüpont segítségével hozhatók létre. Ez a cikk bemutatja, hogy hogyan lehet eszközöket létrehozni az **Összes eszköz** menüelem használatával. A **Függőben lévő eszközök** menüelem segítésével való eszközlétrehozás módjával kapcsolatos további információkért lásd: [Eszközök létrehozása munkarendelések alapján](../objects/create-objects-based-on-purchase-orders.md).
 
 ## <a name="all-assets"></a>Minden eszköz
 

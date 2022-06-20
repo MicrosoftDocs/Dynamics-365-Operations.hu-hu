@@ -1,6 +1,6 @@
 ---
 title: Készlettranzakció részletei
-description: Ez a témakör áttekintést nyújt a Tranzakciók részletei lapról, amely a kiválasztott készlettranzakció részleteit mutatja be.
+description: Ez a cikk áttekintést nyújt a Tranzakciók részletei lapról, amely a kiválasztott készlettranzakció részletes adatait tartalmazza.
 author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: fd1416f21ce15dc832dd41ea4110c93bf5bb41a2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 55e29d5804f57cd86fb5ddac5d6c5576b7ea5f61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735877"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859387"
 ---
 # <a name="inventory-transaction-details"></a>Készlettranzakció részletei
 
@@ -36,8 +36,8 @@ A **Tranzakciók részletei** lap több FastTabs gyorslapra van osztva. A követ
 
 | Gyorslap | Leírás |
 |---|---|
-| Általános | Ez a gyorsáb a kiválasztott készlettranzakcióval kapcsolatos alapvető információkat jeleníti meg. A Készlettranzakciók **lapon** megjelenő mezők mellett további, a témakörben később ismertetett mezőket is tartalmaz. |
-| Frissítések | Ez a gyorsáb a kiválasztott készlettranzakció fizikai, pénzügyi és kiegyenlítési aspektusával kapcsolatos adatokat jeleníti meg. A tranzakció aktuális állapotától függően egyes mezők üresen maradnak. Ezeket a mezőket azonban automatikusan beállítja a rendszer a tranzakciók feladása során. A Gyorslap **a** Készlettranzakciók lapon megjelenő mezők mellett további, a témakörben később ismertetett mezőket is tartalmaz. |
+| Általános | Ez a gyorsáb a kiválasztott készlettranzakcióval kapcsolatos alapvető információkat jeleníti meg. A Készlettranzakciók **lapon** megjelenő mezők mellett további, ebben a cikkben később ismertetett mezőket is tartalmaz. |
+| Frissítések | Ez a gyorsáb a kiválasztott készlettranzakció fizikai, pénzügyi és kiegyenlítési aspektusával kapcsolatos adatokat jeleníti meg. A tranzakció aktuális állapotától függően egyes mezők üresen maradnak. Ezeket a mezőket azonban automatikusan beállítja a rendszer a tranzakciók feladása során. A Készlettranzakciók **lapon** megjelenő mezők mellett ez a gyorslap a jelen cikk későbbi leírásában ismertetett további mezőket is tartalmazza. |
 | Főkönyvi feladások | Ez a gyorsjelentés mutatja a feladás típusát és a főkönyvi számlát, amely a kiválasztott készlettranzakcióval kapcsolatos tényleges frissítéshez, pénzügyi frissítéshez, tényleges bevételhez, fizikai költségekhez, pénzügyi bevételhez és pénzügyi költségekhez használatos. |
 | Hivatkozások | Ez a gyorsáb további adatokat mutat a kijelölt készlettranzakciót létrehozó forrástranzakcióról. Ezek az adatok például a beszerzési vagy értékesítési rendelés adatait is tartalmazhatják. |
 | Kapcsolódó információ | Ez a gyorsáb további adatokat tartalmaz a kijelölt készlettranzakcióról. Előfordulhat, hogy ezek a mezők nincsenek beállítva, ha nem használ bizonyos funkciókat, például beszerzési kategóriákat vagy projekteket. |

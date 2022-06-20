@@ -1,6 +1,6 @@
 ---
 title: Közös értékek létrehozása a mérnöki módosításkezeléshez
-description: Ez a témakör azt ismerteti, hogyan hozhat létre közös értékeket, amelyeket a mérnöki módosításkezelés különböző részeinek paramétereihez használnak.
+description: Ez a témakör a műszaki változáskezelés különböző részeiben a paraméterekhez használt közös értékek megállapításának a módszerét ismerteti.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c2ff21490dc71859d75923dd757e264096d4fcba
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 376e3f209109d36e5a18b11d81afc55ba509e3e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852534"
 ---
 # <a name="establish-common-values-for-engineering-change-management"></a>Közös értékek létrehozása a mérnöki módosításkezeléshez
 

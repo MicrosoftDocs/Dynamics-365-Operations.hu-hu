@@ -1,6 +1,6 @@
 ---
 title: A kettős írás Finance and Operations alkalmazásokban és a Dataverse-ben történő konfigurálásának igazolása
-description: Ez a témakör bemutatja, hogyan állapíthatja meg, hogy a kettős írás be van-e konfigurálva a Finance and Operations alkalmazásokban és a Dataverse.
+description: Ez a cikk bemutatja, hogy hogyan határozható meg a kétírásos írás a Pénzügy és műveletek alkalmazásokban és a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3fa16a450032464e445ae166f0699fe0dc388071
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7131e6c2c4ca4d9c6bb84ad74bf425faf28bd92c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884459"
 ---
 # <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>A kettős írás Finance and Operations alkalmazásokban és a Dataverse-ben történő konfigurálásának igazolása
 
@@ -24,21 +24,21 @@ ms.locfileid: "8062800"
 
 
 
-Ez a témakör hibaelhárítási információkat tartalmaz a Finance and Operations alkalmazások és a kettős írási integrációhoz Dataverse. Pontosabban elmagyarázza, hogyan állapíthatja meg, hogy a kettős írás be van-e konfigurálva a Finance and Operations alkalmazásokban és a Dataverse.
+Ez a témakör hibaelhárítási információkat tartalmaz a Pénzügy és művelet alkalmazások, illetve a Dataverse. Ez a témakör ismerteti, hogy hogyan határozható meg, hogy a kettős írás van-e beállítva a Pénzügy és műveletek alkalmazásokban és a Dataverse.
 
-## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Ellenőrizze, hogy a kettős írás be van-e állítva egy Finance and Operations alkalmazásban
+## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Ellenőrizze, hogy a kettős írás a Pénzügy és műveletek alkalmazásban van-e beállítva.
 
 Annak eldöntéséhez, hogy a sorok frissítésre való mentéskor megjelenő hibák a kettős írásból származnak-e, először ellenőrizze, hogy a kettős írás konfigurálva van-e.
 
-+ Ha rendszergazdai jogosultságokkal rendelkezik a Finance and Operations alkalmazásban, lépjen a következő helyre: **Munkaterületek \> Adatkezelés**, és válassza ki a lehetőséget **Kettős írás** csempe. Ha megjelenik a csatolt környezetek részletei és a futó táblaleképezések listája, akkor a kettős írás konfigurálva van.
++ Ha rendszergazdai jogosultságai vannak a Pénzügy és műveletek alkalmazásban, **menjen a Munkaterületek \>** adatai kezelése lapra, és **válassza a Kétírásos csempe** lehetőséget. Ha megjelenik a csatolt környezetek részletei és a futó táblaleképezések listája, akkor a kettős írás konfigurálva van.
 
-    ![A Finance and Operations alkalmazás kapcsolatának ellenőrzése, ha rendszergazdai jogosultságokkal rendelkezik.](media/verify_fin_ops_1.png)
+    ![A Pénzügy és műveletek alkalmazáskapcsolat ellenőrzése, ha rendszergazdai jogosultságai vannak.](media/verify_fin_ops_1.png)
 
-+ Ha nincs rendszergazdai jogosultsága, a következő hibaüzenet jelenik meg: *Nem lehet adatokat írni az \<entity name\>* entitásba. A következő ábrán látható példában nem hozhat létre ügyfélsort a Finance and Operations alkalmazásban, mert a kettős írás konfigurálva van, de az ügyfélcsoport és a fizetési feltételek referenciaadatai nem léteznek a következőben:Dataverse.
++ Ha nincs rendszergazdai jogosultsága, a következő hibaüzenet jelenik meg: *Nem lehet adatokat írni az \<entity name\>* entitásba. A következő példában nem lehet vevősort létrehozni a Pénzügy és műveletek alkalmazásban, mert a kettős írás van beállítva, de a vevőcsoport és a fizetési feltételek hivatkozási adatai nem léteznek itt Dataverse.
 
-    ![A Finance and Operations alkalmazás kapcsolatának ellenőrzése, ha nem rendelkezik rendszergazdai jogosultságokkal.](media/verify_fin_ops_2.png)
+    ![A Pénzügy és műveletek alkalmazáskapcsolat ellenőrzése, ha nincsenek rendszergazdai jogosultságai.](media/verify_fin_ops_2.png)
 
-A Finance and Operations alkalmazásokban történő adatok létrehozása során felmerülő problémák megoldásával kapcsolatos információkért lásd: [Az élő szinkronizálással kapcsolatos problémák elhárítása](dual-write-troubleshooting-live-sync.md).
+Az adatok Pénzügyi és üzemeltetési alkalmazásokban [való létrehozásakor a problémák megoldásáról az Élő szinkronizálási problémák elhárítása témakörben található tájékoztatás](dual-write-troubleshooting-live-sync.md).
 
 ## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Ellenőrizze, hogy a kettős írás be van-e állítva a Dataverse szolgáltatásban
 

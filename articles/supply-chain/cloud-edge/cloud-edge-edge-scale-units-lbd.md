@@ -1,6 +1,6 @@
 ---
 title: Peremhálózati skálázási egységek telepítése egyedi hardverre LBD segítségével
-description: Ez a témakör bemutatja, hogy hogyan lehet a helyszíni peremhálózati egységeit a helyi üzleti adatokon (BELID) alapuló egyedi hardvereszközök és telepítések segítségével létesíteni.
+description: Ez a cikk bemutatja, hogy hogyan lehet a létesítmények peremhálózati egységeit a helyi üzleti adatokon (BELID) alapuló egyedi hardvereszközök és telepítések segítségével létesítni.
 author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540ac1f6d69d869256f49b8501e18966575903fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 794de8c0d77949789e4046418ac2b55dba1bee02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674086"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882750"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Peremhálózati skálázási egységek telepítése egyedi hardverre LBD segítségével
 
@@ -27,7 +27,7 @@ A peremhálózati egységek fontos szerepet töltenek be az ellátásilánc-keze
 
 A peremhálózati egységek úgy telepíthetők, hogy létrehoznak egy helyi üzleti adatok (LBD) [helyi környezetet](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md), majd úgy konfigurálják, hogy skálázási egységként működjön a terjesztett hibrid topológiában a Supply Chain Managementhez. Ez úgy érhető el, hogy a helyi LBD-környezetet egy Supply Chain Management környezethez társítja a felhőben, amely a központként való működésre van konfigurálva.  
 
-Ez a témakör azt írja le, hogyan lehet beállítani a helyi LBD-környezetet peremskálaegységként, majd társítani azt egy központhoz.
+Ez a témakör azt ismerteti, hogyan lehet beállítani a telephelyen található BELIN-környezetet szélskálaegységként, majd társítani egy központhoz.
 
 ## <a name="infrastructure-considerations"></a>Infrastruktúra-szempontok
 
@@ -44,21 +44,21 @@ Itt talál egy áttekintést a telepítési lépésekről.
 
 1. **Az LBD-környezet beállítása és telepítése *üres* adatbázissal.**
 
-    Az LCS segítségével a legújabb topológiával és egy üres adatbázissal telepítheti az LBD-környezetet. A további tudnivalókat lásd a témakör későbbi [Az LBD-környezet beállítása és telepítése üres adatbázissal](#set-up-deploy) szakaszát. Az Ellátásilánc-kezelés 10.0.21-es vagy újabb verziója szükséges az összes központi és mérlegegység-környezetben.
+    Az LCS segítségével a legújabb topológiával és egy üres adatbázissal telepítheti az LBD-környezetet. A további tudnivalókat lásd a telepítőben, [és a cikk egy üres adatbázisszakaszt is tartalmazó környezetének](#set-up-deploy) telepítésével kapcsolatban. Az Ellátásilánc-kezelés 10.0.21-es vagy újabb verziója szükséges az összes központi és mérlegegység-környezetben.
 
 1. **Célcsomagok feltöltése LBD-projekteszközökbe az LCS-ben.**
 
-    A központban és a perem skálázási egységen használt alkalmazás-, platform- és testreszabási csomagok előkészítése. A további tudnivalókat lásd a témakör későbbi, [Célcsomagok feltöltése LBD-projekteszközökbe az LCS-ben](#upload-packages) című szakaszában.
+    A központban és a perem skálázási egységen használt alkalmazás-, platform- és testreszabási csomagok előkészítése. A további tudnivalókat [lásd a cikk későbbi, LCS](#upload-packages) szakasz célcsomagjainak feltöltése STB. projekteszközökbe.
 
 1. **Az LBD-környezet kiszolgálása a célcsomagokkal.**
 
-    Ezzel a lépéssel gondoskodik arról, hogy ugyanaz a build és testreszabások legyenek telepítve a központban és küllőben. A további tudnivalókat lásd a témakör későbbi, [Az LBD-környezet kiszolgálása a célcsomagokkal](#service-target-packages) részében.
+    Ezzel a lépéssel gondoskodik arról, hogy ugyanaz a build és testreszabások legyenek telepítve a központban és küllőben. A további tudnivalókat lásd [a](#service-target-packages) cikk célcsomagokat is tartalmazó szolgáltatás környezete című részében.
 
 1. **A skálázási egység konfigurációjának és a terhelés hozzárendelésének befejezése.**
 
-    A további tudnivalókat lásd a témakör későbbi, [az LBD perem skálázási egység hozzárendelése központhoz](#assign-edge-to-hub) című témakörben.
+    A további tudnivalókat [lásd a](#assign-edge-to-hub) cikk későbbi, EDD-szélskálaegységének központi szakaszhoz való hozzárendelése című részében.
 
-A témakör hátralévő részei további részleteket tartalmaznak lépések elvégzéséről.
+A cikk további részei a lépések következő lépéseit ismertetik.
 
 ## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a>Az LBD-környezet beállítása és telepítése üres adatbázissal
 
@@ -67,7 +67,7 @@ Ez a lépés egy működő LBD-környezetet hoz létre. A környezet azonban nem
 1. Kövesse a [Helyszíni környezetek beállítása és telepítése (Platformfrissítés 41-es és újabb verziókon)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) rész utasításait. Az Ellátásilánc-kezelés 10.0.21-es vagy újabb verziója szükséges az összes központi és mérlegegység-környezetben. Ezenkívül az infrastruktúra-parancsfájlok 2.12.0-s vagy újabb verzióját is használnia kell. 
 
     > [!IMPORTANT]
-    > Olvassa el a szakasz további részét, **mielőtt** végrehajtaná annak a témakörnek a lépéseit.
+    > Olvassa el a szakasz hátralévő részét **,** mielőtt a cikk lépéseit beolvassa.
 
 1. Mielőtt leírná a konfigurációt az infrastruktúra\\ConfigTemplate.xml fájlban, futtassa a következő parancsfájlt:
 
@@ -95,9 +95,9 @@ Ez a lépés egy működő LBD-környezetet hoz létre. A környezet azonban nem
 
         | Felhasználó            | Típus | Adatbázis-szerepkör |
         |-----------------|------|---------------|
-        | svc-LocalAgent$ | gMSA | dbowner\_     |
+        | svc-LocalAgent$ | gMSA | db\_ tulajdonosa     |
 
-1. Kövesse a telepítőben található utasításokat, [és telepítse a helyi környezeteket (Platform update 41-es és újabb verzió)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
+1. Kövesse a telepítőben található utasításokat, [és telepítse a létesítményben (Platform update 41-es és újabb verziók)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md)
 1. Miután befejezte az [AD FS](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) konfigurálás lépését, hajtsa végre a következő lépéseket:
 
     1. Új Active Directory összevonási szolgáltatások (AD FS) alkalmazás létrehozása, amely lehetővé teszi, hogy az Alm Szolgáltatás szolgáltatás kommunikáljon az Application Object Server (AOS) kiszolgálóval.
@@ -116,7 +116,7 @@ Ez a lépés egy működő LBD-környezetet hoz létre. A környezet azonban nem
                                        -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
         ```
 
-1. Kövesse a telepítőben található utasításokat, [és telepítse a helyi környezeteket (Platform update 41-es és újabb verzió)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Amikor meg kell adnia a helyi ügynök konfigurációját, ellenőrizze, hogy engedélyezi-e az peremhálózati egység funkcióit, és adja meg az összes szükséges paramétert.
+1. Kövesse a telepítőben található utasításokat, [és telepítse a létesítményben (Platform update 41-es és újabb verziók)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) Amikor meg kell adnia a helyi ügynök konfigurációját, ellenőrizze, hogy engedélyezi-e az peremhálózati egység funkcióit, és adja meg az összes szükséges paramétert.
 
     ![A peremhálózati egység funkcióinak engedélyezése.](media/EnableEdgeScaleUnitFeatures.png "A peremhálózati egység funkcióinak engedélyezése.")
 

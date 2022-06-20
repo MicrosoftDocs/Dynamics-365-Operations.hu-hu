@@ -1,6 +1,6 @@
 ---
 title: Eszközattribútum áttekintése
-description: Ez a témakör áttekintést ad az Eszközkezelésben használt eszközattribútumokról.
+description: Ez a cikk áttekintést nyújt az Eszközkezelés eszközattribútumainakról.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98386b6ffe2a5f9c79c0ee1f18073ac13fc3a039
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d1585f200e4baba519085685a41979c70a64fb1a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986460"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862743"
 ---
 # <a name="asset-attribute-overview"></a>Eszközattribútum áttekintése
 
@@ -30,7 +30,7 @@ ms.locfileid: "7986460"
 
  
 
-Ez a témakör áttekintést ad az Eszközkezelésben használt eszközattribútumokról. Az eszközattribútumok olyan tulajdonságok, amelyek egy eszköztípushoz vagy eszközhöz kapcsolódnak. Ha beállította az [attribútumtípusokat](../setup-for-functional-locations/specification-types.md), és azokat az eszközöknél használta, akkor áttekintést kaphat az eszközökön beállított attribútumértékekről. Ez az áttekintés két lapon jelenik meg az Eszközkezelésben: **Eszközattribútum áttekintése** és **Eszközattribútum** szerint.
+Ez a cikk áttekintést nyújt az Eszközkezelés eszközattribútumainakról. Az eszközattribútumok olyan tulajdonságok, amelyek egy eszköztípushoz vagy eszközhöz kapcsolódnak. Ha beállította az [attribútumtípusokat](../setup-for-functional-locations/specification-types.md), és azokat az eszközöknél használta, akkor áttekintést kaphat az eszközökön beállított attribútumértékekről. Ez az áttekintés két lapon jelenik meg az Eszközkezelésben: **Eszközattribútum áttekintése** és **Eszközattribútum** szerint.
 
 Az **Eszközattribútum áttekintése** lap minden eszközhöz külön sort jelenít meg. A sorban az adott eszközhöz kapcsolódó összes attribútumtípus látható. Az **Eszközattribútum áttekintése** lap megnyitásához és használatához kövesse az alábbi lépéseket.
 

@@ -1,6 +1,6 @@
 ---
 title: Termékszűrők konfigurálása raktári tranzakciókhoz
-description: Ez a témakör bemutatja, hogyan tud termékszűrőket és szűrőkódokat beállítani a raktárban található készletcikkek csoportosításához. A szűrők használatával megadhatja, hogy mely vevők rendelhetnek meg egy adott cikket, valamint egy adott szállítótól mely cikkek szerezhetők be.
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni a termékszűrőket és szűrőkódokat a raktári készletcikkek kategóriákba sorolása érdekében. A szűrők használatával megadhatja, hogy mely vevők rendelhetnek meg egy adott cikket, valamint egy adott szállítótól mely cikkek szerezhetők be.
 author: Mirzaab
 ms.date: 01/04/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 021ce940a4ea6d59719d1c6bc79532832cc2f3ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567679"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850438"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Termékszűrők konfigurálása raktári tranzakciókhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan tud termékszűrőket és szűrőkódokat beállítani a raktárban található készletcikkek csoportosításához. A szűrők használatával megadhatja, hogy mely vevők rendelhetnek meg egy adott cikket, valamint egy adott szállítótól mely cikkek szerezhetők be.
+Ez a témakör azt ismerteti, hogyan kell konfigurálni a termékszűrőket és szűrőkódokat a raktári készletcikkek kategóriákba sorolása érdekében. A szűrők használatával megadhatja, hogy mely vevők rendelhetnek meg egy adott cikket, valamint egy adott szállítótól mely cikkek szerezhetők be.
 
 Ezenkívül beállíthatja és a termékszűrők segítségével automatikusan kezelheti a készletcikkeket a raktárban, valamint szűrőcsoportokba egyesítheti a szűrt elemeket. A szűrők segítségével kategóriákba lehet sorolni a cikkeket kezelési, beszerzési és értékesítési folyamatokban. Előfordulhat, hogy csoportosítani szeretné a cikkeket, vagy elválasztani őket egymástól, ha a kezelés súly- vagy kezelési korlátozásokon alapul. Meghatározhatja azt is, hogy egy cikk mely vevők vagy szállítók által vásárolható meg vagy adható el egy cikk.
 
@@ -48,7 +48,7 @@ A termékszűrők legfeljebb 10 **Szűrőcím** jellemzőt tartalmaznak, amelyek
 
     ![Termékszűrő beállítása.](media/Product_Filters10.png "Termékszűrő beállítása")
 
-1. A **Leírás** mezőbe írja be a kód nevét. A *2. kód* például a szállítókat jelentheti. Ezt követően termékszűrőt hozhat létre egy adott szállítóhoz vagy szállítócsoporthoz. További tudnivalókat a [Szállítói szűrőkódok beállítása](#vendor-product-filters) részben olvashat, a témakör későbbi részében.
+1. A **Leírás** mezőbe írja be a kód nevét. A *2. kód* például a szállítókat jelentheti. Ezt követően termékszűrőt hozhat létre egy adott szállítóhoz vagy szállítócsoporthoz. A további tudnivalókat lásd [a Cikk Szállítói szűrőkódok](#vendor-product-filters) beállítása című szakaszában.
 
     ![Termékszűrők készlete.](media/Product_Filters.png "Termékszűrők készlete")
 

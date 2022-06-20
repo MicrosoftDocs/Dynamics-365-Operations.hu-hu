@@ -1,6 +1,6 @@
 ---
 title: Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
-description: Ez a témakör az új beépített tervezési motorral, a tervezési optimalizálással és a meglévő motorból történő átállítással kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk az új alaptervezési motorról, a tervezési optimalizálásról és a meglévő motorból való áttelepítésről nyújt tájékoztatást.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: a94b424ad1a454feecede8a7b037171b2984504f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809095"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846098"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
 
 [!include [banner](../includes/banner.md)]
 
-A beépített alaptervezési motor elavultnak van ütemezve (elavult). A Microsoft Dynamics 365 Supply Chain Management Tervezés optimalizálása bővítménye váltja fel. Ez a témakör az új és a meglévő telepítésekre gyakorolt hatásával kapcsolatban tartalmaz tájékoztatást. A szükséges műveletekre vonatkozó információkat tartalmaz.
+A beépített alaptervezési motor elavultnak van ütemezve (elavult). A Microsoft Dynamics 365 Supply Chain Management Tervezés optimalizálása bővítménye váltja fel. Ez a cikk az új és a meglévő telepítésekre gyakorolt hatásokkal kapcsolatban tartalmaz tájékoztatást. A szükséges műveletekre vonatkozó információkat tartalmaz.
 
 A Tervezési optimalizálás lehetővé teszi, hogy az alaptervezési számítások a Supply Chain Management szolgáltatáson és a kapcsolódó Azure SQL-adatbázison kívül történjenek. A Tervezési optimalizáláshoz tartozó előnyök között szerepel a továbbfejlesztett teljesítmény és az SQL-adatbázisra tett minimális hatás az alaptervezés futtatásakor. Mivel a gyors tervezési futtatások a nyitvatartási idő alatt is megtehetők, így a tervezők azonnal reagálni tudnak a igényre vagy a paraméterek változásaira.
 
@@ -63,7 +63,7 @@ Jelenleg a Tervezési optimalizálás áttelepítési kivételei csak akkor rele
 
 A szükséges szolgáltatások elérhetővé válása után a Microsoft türelmi időszakot ad meg, amíg a kivétel lejár. A környezet adminisztrátorát tájékoztatni kell a szükséges szolgáltatások elérhetővé válásakor és a türelmi időszak indulásakor.
 
-Az alábbi folyamatábra összefoglalja a témakörben található információkat, így gyorsan ki tudja találni, hogy kivételt kér-e. Ha kivételt kell kérnie, töltse ki és küldje el a [Tervezési optimalizálás áttelepítése és kivétel kérdőívet](https://go.microsoft.com/fwlink/?linkid=2144962). A termékcsoport felelős az egyes kivételi kérelmek kiértékeléséért és jóváhagyásáért, ezért kérjük, a megadott hivatkozás használatával közvetlenül a termékcsoportnak küldje el a kérést, és ne hozzon létre támogató jegyet. Ha a kérést elutasítják, ne hozzon létre támogatási jegyet, mert a Microsoft-támogatás nem tudja újra kiértékelni vagy támogatni a kivételeket.
+Az alábbi folyamatábra összefoglalja a jelen cikk adatait, így gyorsan ki tudja találni, hogy kivételt kell-e kérnie. Ha kivételt kell kérnie, töltse ki és küldje el a [Tervezési optimalizálás áttelepítése és kivétel kérdőívet](https://go.microsoft.com/fwlink/?linkid=2144962). A termékcsoport felelős az egyes kivételi kérelmek kiértékeléséért és jóváhagyásáért, ezért kérjük, a megadott hivatkozás használatával közvetlenül a termékcsoportnak küldje el a kérést, és ne hozzon létre támogató jegyet. Ha a kérést elutasítják, ne hozzon létre támogatási jegyet, mert a Microsoft-támogatás nem tudja újra kiértékelni vagy támogatni a kivételeket.
 
 ![Kivétel folyamatábra.](media/exception-diagram.png "Kivétel folyamatábra")
 

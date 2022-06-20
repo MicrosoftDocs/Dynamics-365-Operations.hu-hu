@@ -1,6 +1,6 @@
 ---
 title: Eszközkritikusságok típusai
-description: Ez a témakör bemutatja az eszközkritikussági típusokat az Eszközkezelés modulban.
+description: A cikk bemutatja az eszközök kritikusságának típusait az Eszközkezelésben.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfde9a9bc681c0d758491fc5c361b5b046e20d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776920"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899498"
 ---
 # <a name="asset-criticality-types"></a>Eszközkritikusságok típusai
 
@@ -28,7 +28,7 @@ ms.locfileid: "6776920"
 
  
 
-Ez a témakör bemutatja az eszközkritikussági típusokat az Eszközkezelés modulban. Az eszközkritikusság kapcsolódik az eszközökhöz, és átkerül a munkarendelésekre. A munkarendeléseken nem módosítható. Az eszközkritikusság segítségével kiszámíthatja a munkarendelés kritikusságát a munkarendelés ütemezése során. Más szavakkal élve, annak kiszámítására használják, hogy egy eszköz karbantartási feladata milyen mértékben befolyásolja a vállalat termelési ütemezését és termelékenységét. A munkarendelés ütemezéséhez szükséges értékelési pontszámok kiszámításával kapcsolatos beállításra vonatkozó további információkat az [Eszközkezelés paraméterei](../setup-for-objects/enterprise-asset-management-parameters.md) részben találhat.
+A cikk bemutatja az eszközök kritikusságának típusait az Eszközkezelésben. Az eszközkritikusság kapcsolódik az eszközökhöz, és átkerül a munkarendelésekre. A munkarendeléseken nem módosítható. Az eszközkritikusság segítségével kiszámíthatja a munkarendelés kritikusságát a munkarendelés ütemezése során. Más szavakkal élve, annak kiszámítására használják, hogy egy eszköz karbantartási feladata milyen mértékben befolyásolja a vállalat termelési ütemezését és termelékenységét. A munkarendelés ütemezéséhez szükséges értékelési pontszámok kiszámításával kapcsolatos beállításra vonatkozó további információkat az [Eszközkezelés paraméterei](../setup-for-objects/enterprise-asset-management-parameters.md) részben találhat.
 
 A kritikusság beállításához először létre kell hozni a kritikusságtípusokat, amelyeket az eszköz beállítása során kell használni. Ezután beállíthat eszközkritikusságokat.
 

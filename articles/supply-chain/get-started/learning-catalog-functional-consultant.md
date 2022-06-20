@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 296cee4c5da82d8bfcab298a5a2a13d982f8f808
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 05f2f11408dac93faa8f71cb0396893c03cdb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672094"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851884"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Képzési katalógus a Dynamics 365 Supply Chain Management funkcionális konzulensek számára
 
@@ -68,7 +68,7 @@ A funkcionális konzulensek esetében a feladatunk-feladat elemzése során a ku
 | [Tanfolyam MB-300T01-A: a Dynamics 365 for Finance and Operations alapvető közös jellemzői](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Ez a tanfolyam bemutatja a Microsoft Dynamics 365 for Finance and Operations fő közös jellemzőit. | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 1 nap |
 | [Tanfolyam MB-300T02-A: Dynamics 365 for Finance and Operations alap konfiguráció](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | Ez a tanfolyam bemutatja a Microsoft Dynamics 365 for Finance and Operations fő konfigurációs feladatait. | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 1 nap |
 | [Tanfolyam MB-300T03-A: adatáttelepítés és felkészülés az éles indításra szolgáltatáshozDynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | Ez a tanfolyam bemutatja az adatáttelepítést és az éles indítás előkészítését a Microsoft Dynamics 365 for Finance and Operations esetében. | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 1 nap |
-| [Életciklus bevezetésének kezdőlapja](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Ez a témakör leírja azokat a programokat, eszközöket és folyamatokat, amelyek elérhetők a Microsoft Dynamics 365 for Finance and Operations projekt végrehajtási életciklusával kapcsolatban. | Dokumentáció | |
+| [Életciklus bevezetésének kezdőlapja](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Ezek a cikkek a projekt megvalósításának életciklusával kapcsolatos programokat, eszközöket és folyamatokat írják Microsoft Dynamics 365 for Finance and Operations le. | Dokumentáció | |
 
 ## <a name="migration-and-upgrade"></a>Frissítés és áttelepítés<a name="migration"></a>
 
@@ -105,7 +105,7 @@ A funkcionális konzulensek esetében a feladatunk-feladat elemzése során a ku
 | [Warehousing mobilalkalmazás (VIR816PAL) ](https://community.dynamics.com/365/b/techtalks/posts/warehousing-mobile-app-march-22-2017) | Ez a Tech Talk fogja megvitatni a speciális raktározási rendszert a Dynamics 365 for Operations esetében, és azt, hogy mi a jövője a speciális raktározási mobile kezelőfelületnek. Megvizsgáljuk az új mobilalkalmazást, amely már ki van adva, és a program összeveti a korábbi WMDP. Megtudhatja, hogy mi szükséges a mobil alkalmazások telepítéséhez, konfigurálásához és üzemeltetéséhez, valamint a megvalósításokban nyújtott előnyeiket is megismerheti. | Webes konferencia szabad rögzítése | 54 perc |
 | [Szállítói együttműködés (DYN327PAL) ](https://community.dynamics.com/365/b/techtalks/posts/vendor-collaboration-july-25-2017) | Ez a Tech Talk áttekintést fog biztosítani a szállítói együttműködés funkcióról, többek között a július (tavaszi) kiadásban található szállítótól származó válasz felhasználása funkcióról. | Webes konferencia szabad rögzítése | 58 perc |
 | [Cikk és raktár áttelepítési folyamat, amely speciális raktárkezelést használja (DYN316PAL) ](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | Ebben a Tech Talkban megtanítjuk a meglévő raktári beállítások és a nyitott tranzakciókkal rendelkező cikkek áttelepítését az előzetes raktárkezelésbe, az új képességekkel, hogy megváltoztassák a cikkek tárolási dimenziójára vonatkozó csoportját, és engedélyezzék a raktárak számára a speciális raktárkezelési folyamatok használatát. | Webes konferencia szabad rögzítése | 54 perc |
-| [Az ellátási lánc kezelése kezdőlap](/dynamics365/unified-operations/supply-chain/) | Ez a témakör a Microsoft Dynamics 365 for Finance and Operations ellátásilánc-kezeléssel kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza. | Dokumentáció | |
+| [Az ellátási lánc kezelése kezdőlap](/dynamics365/unified-operations/supply-chain/) | Ez a cikk felsorolja a súgócikkeket és az ellátásilánc-kezelési funkciók további erőforrásait Microsoft Dynamics 365 for Finance and Operations. | Dokumentáció | |
 | [Feltöltés igény nyersanyag-kitároláshoz (DYN333PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/demand-replenishment-for-raw-material-picking-september-28-2017) | Ez a TechTalk az alapanyagkitárolást és az alapanyagkitárolási igényfeltöltést fogja tartalmazni. | Webes konferencia szabad rögzítése | 38 perc |
 | [Tanfolyam MB-330T01-A: A Supply Chain Management konfigurálása és használata itt: Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | Ez a tanfolyam bemutatja a Supply Chain Management konfigurálását és használatát a Dynamics 365 for Finance and Operations esetében. | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 2 nap |
 | [Tanfolyam MB-330T02-A: Minőségirányítási, vállalatközi kereskedelmi és alaptervezés használata itt: Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T02) | Ez a kurzus azt mutatja be, hogyan használható a minőségirányítás, a vállalatközi kereskedelem és az alaptervezés itt: Dynamics 365 for Finance and Operations. | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 1 nap |

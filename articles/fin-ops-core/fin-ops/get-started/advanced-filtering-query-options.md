@@ -1,6 +1,6 @@
 ---
 title: Speciális szűrési és lekérdezési szintaxis
-description: A témakör ismerteti a szűrési és lekérdezési beállításokat a Speciális szűrés/rendezés párbeszédpanelen és az egyezések operátor vagy a rács oszlop fejléce szűrők használata esetén.
+description: Ez a témakör leírja a Speciális szűrés/rendezés párbeszédpanel szűrési és lekérdezési beállításait, valamint a Szűrő ablaktábla vagy rács oszlopfejlécszűrőiben szereplő egyezés operátort.
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070009"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856918"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Speciális szűrési és lekérdezési szintaxis
 
@@ -122,9 +122,9 @@ A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek el
 <td>A két egymást követő dupla idézőjel (<strong>""</strong>) olyan sorokat keres, amelyeknek nincs értéke az aktuális oszlopban.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations lekérdezés</span>) (Finance and Operations lekérdezés zárójelben)</td>
+<td>(<span class="code">Pénzügy és műveletek lekérdezése</span>) (Pénzügy és Műveletek lekérdezés zárójelek között)</td>
 <td>A megadott lekérdezésnek megfelelő.</td>
-<td>Írjon be egy lekérdezést SQL utasításként a zárójelek közé a Finance and Operations lekérdezési nyelv használatával.</td>
+<td>Írjon be egy SQL-lekérdezést zárójelek között a Pénzügy és műveletek lekérdezési nyelvének használatával.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        példaként egy szűrő feltételének szintaxisára a gyökérszintű adatforrás mezőjéből, valamint egy másik adatforrásmezőből (az összes vevő laphoz)</td>
 </tr>

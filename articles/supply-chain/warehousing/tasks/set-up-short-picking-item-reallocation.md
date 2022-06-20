@@ -1,6 +1,6 @@
 ---
 title: Rövid kitárolásra jelölt cikkek újbóli felosztásának beállítása
-description: Ez a témakör bemutatja, hogyan engedélyezze a raktári dolgozók számára az alternatív helyek gyorsan megtalálását, ha nincs elegendő készlet a helyen, ahová átirányították őket.
+description: Ez a cikk bemutatja, hogyan lehet gyorsan másodlagos helyeket találni a raktári dolgozók számára, ha nincs elegendő készlet azon a helyen, ahol már irányítottak.
 author: Mirzaab
 ms.date: 06/29/2020
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe17246037a35e44d12476f184af3bd4c806022
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4e6d7f9b09434346cb0f3670d10437ef8197822
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565232"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875014"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Rövid kitárolásra jelölt cikkek újbóli felosztásának beállítása
 

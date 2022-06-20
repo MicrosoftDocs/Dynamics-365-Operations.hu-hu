@@ -1,6 +1,6 @@
 ---
 title: Helyutasítás – készletkitárolás korosítása
-description: Ez a témakör azt mutatja be, hogyan kell használni az első be, elsőként ki (FIFO) és a utoljára be, elsőnek ki (LIFO) helyirányelv-stratégiákat a kitárolás során.
+description: Ez a cikk bemutatja, hogy hogyan lehet elsőként be, elsőként ki (FIFO) és utolsóként be, elsőként ki (LIFO) hely irányelvstratégiát használni kitároláskor.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 229dd0033e3eae4bdd33acca6736b7a9feec8c9b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676271"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885696"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Helyutasítás – készletkitárolás korosítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan kell használni az első be, elsőként ki (FIFO) és a utoljára be, elsőnek ki (LIFO) helyirányelv-stratégiákat a kitárolás során. Ezek a stratégiák együtt működnek a raktáraknak a raktárba történő első beérkezése alkalmával nyilvántartott korosítási dátumokkal együtt. A *Helyutasítás – készletkitárolás korosítása* szolgáltatása a hely dátumát használja a korosítás megállapításához. A *Raktár helyállapota* funkció a helyen érvényes dátumot az azonosítótábla dátuma alapján frissíti.
+Ez a cikk bemutatja, hogy hogyan lehet elsőként be, elsőként ki (FIFO) és utolsóként be, elsőként ki (LIFO) hely irányelvstratégiát használni kitároláskor. Ezek a stratégiák együtt működnek a raktáraknak a raktárba történő első beérkezése alkalmával nyilvántartott korosítási dátumokkal együtt. A *Helyutasítás – készletkitárolás korosítása* szolgáltatása a hely dátumát használja a korosítás megállapításához. A *Raktár helyállapota* funkció a helyen érvényes dátumot az azonosítótábla dátuma alapján frissíti.
 
 A FIFO-és LIFO-stratégiákkal mind a kötegelt nyomon követett cikkek, mind a nem kötegelt követett cikkek szállíthatók a készlet raktárba érkezésének dátuma alapján. Ez a funkció különösen a nem kötegelt nyomon követett készletekben hasznos, ahol a lejárati dátum nem használható a rendezéshez.
 

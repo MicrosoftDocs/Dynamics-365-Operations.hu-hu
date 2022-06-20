@@ -1,6 +1,6 @@
 ---
 title: Termékbevételezés összevetése a beszerzési rendelésekkel
-description: Ez a témakör bemutatja a termékek átvettként történő regisztrálására vonatkozó különböző opciókat.
+description: A cikk ismerteti a termékek átvettként történő regisztrálására vonatkozó különböző opciókat.
 author: GalynaFedorova
 ms.date: 11/15/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ea22357b4d966f50ef2021ba7534ae633859455
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 53925426b5df6000617b0d8cee757a551fb89c95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674393"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904043"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Termékbevételezés összevetése a beszerzési rendelésekkel
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a termékek átvettként történő regisztrálására vonatkozó különböző opciókat.
+A cikk ismerteti a termékek átvettként történő regisztrálására vonatkozó különböző opciókat.
 
 A termékbevételezés azon megrendelt termékek dokumentálása, melyek leszállításra kerültek, ezáltal a beszerzésirendelés-sorok készen állnak a kiszámlázásra történő feldolgozásra. Bizonyos esetekben a termékek előregisztráción esnek át, ahol a szállítótól a termékek átadása előtt további információk kerülnek dokumentálásra. Amikor a termékek megérkeznek, először **Regisztrált** megjelölést kapnak. A termékek ezután további folyamatokon eshetnek át, mint pl. a minőségellenőrzés, mielőtt véglegesen **Átvett** megjelölést kapnak.
 

@@ -1,6 +1,6 @@
 ---
 title: Az ER-konfigurációk függőségének meghatározása más összetevőknél
-description: Ez a témakör bemutatja, hogyan lehet Elektronikus jelentéskészítési (ER) konfigurációt tervezni, és megadni az egyéb szoftverösszetevőktől való függőségét.
+description: Ez a témakör ismerteti, hogyan lehet elektronikus jelentési konfigurációt tervezni, és megadni az egyéb szoftverösszetevőktől való függőségét.
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717594"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883568"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Az ER-konfigurációk függőségének meghatározása más összetevőknél
 
@@ -46,7 +46,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 7. Válassza a Microsoft Dynamics 365 for Operations (1611) lehetőséget.
 8. A Verzió mezőbe írja be a következő értéket: [7.1.1541.3036,8).
     * [7.1.1541.3036,8)  
-    * A beírt függőségeket a rendszer akkor értékeli ki, amikor ezt a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Amennyiben korábban letöltötték, a kitöltését a Finance and Operations alkalmazásban kell elvégezni, amelynek verziója kötelezően 7.1.1541.3036 vagy újabb verzió, de nem haladhatja meg a 8-as főverziót.   
+    * A beírt függőségeket a rendszer akkor értékeli ki, amikor ezt a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Ha előzetesen letölti a rendszer, akkor azt a Pénzügyi és műveletek 7.1.1541.3036 verzióban kell végrehajtani, de nem haladhatja meg a 8-as főverziót.   
 9. Kattintson a Mentés gombra.
 10. Zárja be a lapot.
 11. Kattintson az Állapot módosítása elemre.
@@ -136,7 +136,7 @@ A rendszer törli a létrehozott konfigurációkat, és visszatölti őket az LC
 25. Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.
 26. A fastruktúrában bontsa ki a „Minta adatmodell” elemet.
     * Vegye figyelembe, hogy a Mintaleképezés modell-leképezési konfigurációt a rendszer a kijelölt adatmodell-konfigurációval együtt letöltötte. A két fájl letöltése együtt történik, mivel a Mintaleképezés meghatározása a kiválasztott adatmodell végrehajtása, és mivel az alkalmazásra vonatkozik. A „Mintaleképezés (másodlagos)” konfiguráció még nincs letöltve, mivel nem teljesült a kívánt alkalmazásverzióhoz kapcsolódó feltétel.   
-    * Ha bejelentkezik a Finance and Operations programba, regisztrálja ugyanazt a szolgáltatót, belép ugyanabba az LCS-projektbe, és letölti ugyanazt az adatmodell-konfigurációt, a „Mintaleképezés (másodlagos)” konfigurációt tölti le, mivel a „Mintaleképezés” konfigurációt átugorja a rendszer.  
+    * Ha bejelentkezik a Pénzügy és műveletek szolgáltatásba, regisztrálja ugyanazt a szolgáltatót, hozzáfér ugyanannak az LCS-projektnek, és letölti ugyanazt az adatmodell-konfigurációt, a "Minta megfeleltetés (alternatív)" konfiguráció lesz letöltve, míg a program kihagyja a "Minta megfeleltetés" konfigurációt.  
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -1,6 +1,6 @@
 ---
 title: A Supply Chain Management szabványos mentett nézetei
-description: Ez a témakör a rendelkezésre álló szabványos mentett nézeteket írja le, és bemutatja az ilyen nézetek engedélyezésének menetét.
+description: Ez a témakör a rendelkezésre álló szabványos mentett nézeteket írja le, és bemutatja az ilyen nézetek engedélyezésének a módszerét.
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103688"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887558"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>A Supply Chain Management szabványos mentett nézetei
 
 [!include [banner](../../includes/banner.md)]
 
-A Microsoft Dynamics 365 Supply Chain Management számos mentett nézetet tartalmaz, amelyek a szükséges módon engedélyezhetők és használhatók. A szabványos mentett nézetek közül néhány egy konkrét szerepkörre vagy feladatra van optimalizálva vagy azok után van elnevezve (például „Minőség-ellenőrzés” vagy „Bevétel”). Mások optimalizálása úgy történik, hogy csak azokat a mezőket és beállításokat tartalmazzák, amelyekre a Microsoft használati statisztikája úgy utal mint a vevők által leggyakrabban használtakra. Ezeket a mentett nézeteket általában *egyszerűsített* nézeteknek is nevezik. Ez a témakör a rendelkezésre álló szabványos mentett nézeteket írja le, és bemutatja az ilyen nézetek engedélyezésének és testreszabásának menetét.
+A Microsoft Dynamics 365 Supply Chain Management számos mentett nézetet tartalmaz, amelyek a szükséges módon engedélyezhetők és használhatók. A szabványos mentett nézetek közül néhány egy konkrét szerepkörre vagy feladatra van optimalizálva vagy azok után van elnevezve (például „Minőség-ellenőrzés” vagy „Bevétel”). Mások optimalizálása úgy történik, hogy csak azokat a mezőket és beállításokat tartalmazzák, amelyekre a Microsoft használati statisztikája úgy utal mint a vevők által leggyakrabban használtakra. Ezeket a mentett nézeteket általában *egyszerűsített* nézeteknek is nevezik. Ez a témakör az elérhető szabványos mentett nézeteket írja le, és bemutatja az ilyen nézetek engedélyezését és testreszabását.
 
 A mentett nézetekkel való munkavégzésről (a szabványos mentett nézeteket is beleértve) az engedélyezésüket követő részletes információkért lásd: [Mentett nézetek](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json).
 
@@ -39,7 +39,7 @@ A mentett nézetek testreszabásáról és átnevezéséről lásd: [Mentett né
 
 A mentett nézetek használatához – függetlenül attól, *·*[hogy](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a normál mentett nézeteket fogja-e használni – be kell kapcsolnia a Funkciókezelés Mentett nézet funkcióját (a 10.0.21-es verzióban ez a funkció alapértelmezés szerint engedélyezve van).
 
-A témakör további részei olyan táblákat tartalmaznak, amelyek leírják az egyes modulokban jelenleg elérhető szabványos mentett nézeteket. Minden tábla megjeleníti az egyes mentett nézeteket, azt a lapot, ahol megtalálható, valamint a leírását. Minden tábla a mentett nézetet tartalmazó funkció nevét is megjeleníti. Ha egy szabványos mentett nézetet meg szeretne tekinteni a rendszerben, be kell kapcsolnia a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) helyen megadott funkciót. A 10.0.25-ös verziótól minden felsorolt nézet alapértelmezés szerint be van kapcsolva.
+A cikk további részei olyan táblákat tartalmaznak, amelyek leírják az egyes modulokban jelenleg elérhető szabványos mentett nézeteket. Minden tábla megjeleníti az egyes mentett nézeteket, azt a lapot, ahol megtalálható, valamint a leírását. Minden tábla a mentett nézetet tartalmazó funkció nevét is megjeleníti. Ha egy szabványos mentett nézetet meg szeretne tekinteni a rendszerben, be kell kapcsolnia a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) helyen megadott funkciót. A 10.0.25-ös verziótól minden felsorolt nézet alapértelmezés szerint be van kapcsolva.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>A Készletkezelési modul mentett nézetei
 
@@ -50,9 +50,9 @@ Az alábbi táblázat leírja a Készletkezelési modulban elérhető mentett n�
 | Aktuális készlet listája | Pénzügyek | Ezzel az egyszerűsített nézettel a pénzügyi információkra fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
 | Aktuális készlet listája | Minőség-ellenőrzés | Ezzel az egyszerűsített nézettel a minőség-ellenőrzésre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
 | Aktuális készlet listája | Bevételezés | Ezzel az egyszerűsített nézettel a bevételezési műveletekre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Aktuális készlet listája | Szállítás | Ezzel az egyszerűsített nézettel a szállítási műveletekre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
+| Aktuális készlet listája | Kiszállítás | Ezzel az egyszerűsített nézettel a szállítási műveletekre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
 | Tranzakciók | Egyszerűsített | Ezzel az egyszerűsített nézettel anélkül lehet áttekinteni a készlet állapotát, hogy a pénzügyi adatok és a kevésbé gyakran használt mezők elvonnák a figyelmet. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Átmozgatási rendelések | Szállítás | Ezzel az egyszerűsített nézettel a szállítási műveletekre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
+| Átmozgatási rendelések | Kiszállítás | Ezzel az egyszerűsített nézettel a szállítási műveletekre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
 | Átmozgatási rendelések | Bevételezés | Ezzel az egyszerűsített nézettel a bevételezési műveletekre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
 | Átmozgatási rendelések | Minőség-ellenőrzés | Ezzel az egyszerűsített nézettel a minőség-ellenőrzésre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
 | Átmozgatási rendelések | Pénzügyek | Ezzel az egyszerűsített nézettel a pénzügyi információkra fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |

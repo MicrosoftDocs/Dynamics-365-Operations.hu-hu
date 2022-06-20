@@ -1,6 +1,6 @@
 ---
 title: Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése
-description: Ez a témakör ismerteti az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését a Dynamics 365 Finance megoldás esetén.
+description: Ez a cikk azt ismerteti, hogyan lehet kezelni a Dynamics 365 Pénzügy elektronikus jelentéskészítési (ER) konfigurációinak életciklusát.
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0220fa03283119471b3d1f78a23a04ed4036264e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767779"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906797"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését a Dynamics 365 Finance megoldás esetén.
+Ez a cikk azt ismerteti, hogyan lehet kezelni a Dynamics 365 Pénzügy elektronikus jelentéskészítési (ER) konfigurációinak életciklusát.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -73,7 +73,7 @@ A következő szerepkörök és a kapcsolódó tevékenységek társítva vannak
 | Kötelezettségkifizetési adminisztrátor            | Egy ER műtermék használata egy meghatározott üzleti folyamatban.                | Például egy **Kötelezettségkifizetési adminisztrátor** szerepkör, ami engedélyezi a megszabott fizetési módhoz konfigurált ER formátumon alapuló, feldolgozás alatt lévő számlákhoz tartozó elektronikus fizetési üzenet létrehozását. |
 
 ## <a name="er-configuration-development-lifecycle"></a>ER konfiguráció fejlesztési életciklusa
-A következő, ER-rel kapcsolatos okok miatt javasolt a ER-konfigurációkat a fejlesztői környezetben megtervezni egy különálló Finance and Operations-példányként:
+A következő, ER rendszerrel kapcsolatos okok miatt javasolt a ER-konfigurációkat a fejlesztői környezetben megtervezni egy különálló Finance and Operations példányként:
 
 - Az **Elektronikus jelentések fejlesztője** vagy az **Elektronikus jelentések funkcióival foglalkozó konzulens** szerepkörrel rendelkező felhasználók szerkeszthetik a konfigurációkat is futtathatják azokat tesztelés céljából. Olyan osztályok és táblázatok módszereit hívhatja meg, amelyek esetleg károsak lehetnek az üzleti adatokra és a példány használati hatékonyságára nézve.
 - A belépési pontok és naplózott vállalati tartalmak nem korlátozzák az osztály- és táblázatmódszerek ER-konfigurációkhoz tartozó ER-adatforrásokként történő hívását. Tehát a bizalmas üzleti adatokhoz hozzáférnek az **Elektronikus jelentések fejlesztője** vagy az **Elektronikus jelentések funkcióival foglalkozó konzulens** szerepkörrel rendelkező felhasználók.

@@ -1,6 +1,6 @@
 ---
 title: Új vagy frissített feladat-útmutatók (2016. november)
-description: Ez a témakör felsorolja a Microsoft (2016 november - minden nyelv) APQC Egyesített könyvtárhoz kiadott új vagy frissített feladat-útmutatókat a Microsoft Dynamics 365 for Operations szolgáltatáshoz. Nincs új Első lépések könyvtár.
+description: Ez a cikk felsorolja a Microsoft részére kiadott új vagy frissített feladati segédkönyveket (2016. november - minden nyelv) az APQC egységes tárkönyvtárat Microsoft Dynamics 365 for Operations. Nincs új Első lépések könyvtár.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f36ceb535919991c1be0501daabd94e966723fa875cf8765439212d235e82a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3836456f8d4ba8aba95e90563f8bdb27fc547e09
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728127"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886585"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Új vagy frissített feladat-útmutatók (2016. november)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör felsorolja a Microsoft (2016 november – minden nyelv) APQC Egyesített könyvtárhoz kiadott új vagy frissített feladat-útmutatókat a Microsoft Dynamics 365 for Operations szolgáltatáshoz. Nincs új Első lépések könyvtár.
+Ez a cikk felsorolja a Microsoft részére kiadott új vagy frissített feladati segédkönyveket (2016. november – minden nyelv) az APQC egységes tárkönyvtárat Microsoft Dynamics 365 for Operations. Nincs új Első lépések könyvtár.
 
-A (2016. november – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics 365 for Operations rendszerhez, a Microsoft Dynamics 365 for Operations 3. platformfrissítéséhez, Microsoft Dynamics AX 2. platformfrissítéséhez, valamint a Dynamics AX 2016. májusi frissítéséhez és a Microsoft Dynamics AX 2016. februári kiadásához szánt, Súgóval használatos Feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások a Finance and Operations kezdőlapján](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Súgórendszer](help-overview.md).
+A (2016. november – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics 365 for Operations rendszerhez, a Microsoft Dynamics 365 for Operations 3. platformfrissítéséhez, Microsoft Dynamics AX 2. platformfrissítéséhez, valamint a Dynamics AX 2016. májusi frissítéséhez és a Microsoft Dynamics AX 2016. februári kiadásához szánt, Súgóval használatos Feladat-útmutatókat. Ha további tájékoztatást szeretne ezekről a kiadásokról, tekintse meg: [Új vagy módosult elemek a Finance and Operations kezdőoldalán](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Súgórendszer](help-overview.md).
 
 > [!NOTE]
 > Egy csillag (\*) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat feladat-útmutatója a Dynamics Dynamics 365 for Operations 2016. novemberi frissítése számára készült, és a Microsoft Dynamics AX korábbi verzióiban nem támogatott.

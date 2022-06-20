@@ -1,6 +1,6 @@
 ---
 title: Alaptervezés beállítási varázsló (videofelvételt tartalmaz)
-description: Ez a témakör azt ismerteti, hogyan lehet futtatni az alaptervezés telepítővarázslóját az alaptervezés beállításához.
+description: Ez a témakör azt ismerteti, hogyan lehet futtatni az alaptervezés beállítási varázslóját az alaptervezés beállításához.
 author: t-benebo
 ms.date: 10/21/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: a5914f63de654acd076048240c6e37d5b67f4ffa
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1c79e1df53dfabc33aeacb56096b113e62b765d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470205"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875333"
 ---
 # <a name="master-planning-setup-wizard"></a>Alaptervezés-beállítás varázslója
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör útmutatót tartalmaz az **Alaptervezés-beállítási varázsló** funkcióhoz. Bemutatja a paraméterjavaslatok kiszámításának módját, valamint példákat is tartalmaz, amelyek bemutatják, hogy a különböző vállalatok hogyan állíthatják be az alaptervezést az üzleti igényeik alapján.
+Ez a témakör az Alaptervezés beállítási varázsló **útmutatóját tartalmaz**. Bemutatja a paraméterjavaslatok kiszámításának módját, valamint példákat is tartalmaz, amelyek bemutatják, hogy a különböző vállalatok hogyan állíthatják be az alaptervezést az üzleti igényeik alapján.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 

@@ -1,6 +1,6 @@
 ---
 title: Útmutató a kettős írás beállításához
-description: Ez a témakör azt mutatja be, hogy milyen eseteket támogat a kettős írás beállítás.
+description: Ez a témakör a két írásos beállításnál támogatott helyzeteket ismerteti.
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6de449b14bcdd82336e3e255bf62ad069d3daaf5
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a0d1b4e1f093874a8fd37cf7aadb331cd1e7adc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061604"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873149"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Útmutató a kettős írás beállításához
 
@@ -24,102 +24,102 @@ ms.locfileid: "8061604"
 
 
 
-Beállíthat kettős írási kapcsolatot a Finance and Operations környezet és a Dataverse környezet.
+Két írásos kapcsolatot állíthat be a Pénzügyi és üzemeltetési környezet és a környezet Dataverse között.
 
-+ A **Pénzügyi és működési környezet** biztosítja a mögöttes platformot **Finance and Operations alkalmazások** (például a Microsoft Dynamics 365 Finance,Dynamics 365 Supply Chain Management,Dynamics 365 Commerce, és Dynamics 365 Human Resources).
++ A **Pénzügyi és műveleti környezet** **biztosítja** a Pénzügy és művelet alkalmazások alap platformját (Microsoft Dynamics például a 365 Pénzügy, Dynamics 365 Supply Chain Management az és Dynamics 365 Commerce az stb Dynamics 365 Human Resources.).
 + A **Dataverse-környezet** biztosítja az **ügyfélkapcsolati alkalmazások** alapjául szolgáló platformot (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 column Service, Dynamics 365 Marketing és Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
-> A Human Resources modul a Dynamics 365 Finance kettős írás kapcsolatok használatát támogatják, de az Dynamics 365 Human Resources alkalmazás nem.
+> A Dynamics 365 Pénzügy emberierőforrás-modulja támogatja a kettős írású kapcsolatokat, Dynamics 365 Human Resources de az alkalmazást nem.
 
 A beállítási mechanizmus az előfizetéstől és a környezettől függően változik:
 
-+ A Finance and Operations alkalmazások új példányainál a kettős írási kapcsolat beállítása itt kezdődik Microsoft Dynamics Életciklus-szolgáltatások (LCS). Ha rendelkezik licenccel a Microsoft Power Platform szolgáltatáshoz, akkor új Dataverse-környezetbe kerül, ha a bérlő nem rendelkezik eggyel.
-+ A meglévő Finance and Operations alkalmazások esetében a kettős írási kapcsolat beállítása a Finance and Operations környezetben kezdődik.
++ A Pénzügy és a Műveletek alkalmazás új példányainál a kettős írású kapcsolat beállítása a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban kezdődik. Ha rendelkezik licenccel a Microsoft Power Platform szolgáltatáshoz, akkor új Dataverse-környezetbe kerül, ha a bérlő nem rendelkezik eggyel.
++ A meglévő Pénzügy és Műveletek alkalmazásoknál a két írásos kapcsolat beállítása a Pénzügy és műveletek környezetben kezdődik.
 
-Mielőtt elkezdené a kettős írást egy entitáson, lefuttathat egy kezdeti szinkronizálást, hogy kezelje a meglévő adatokat mindkét oldalon: a Finance and Operations és az ügyfél-elköteleződési alkalmazásokban. Ha nem szükséges szinkronizálni a két környezet adatait, akkor ki lehet hagyni a kezdeti szinkronizálást.
+Mielőtt kettős írásba kezd egy entitáson, kezdeti szinkronizálást futtathat, hogy mindkét oldalon kezelni tudja a meglévő adatokat: a Pénzügy és üzemeltetési alkalmazások, valamint az ügyfél-kapcsolati alkalmazások. Ha nem szükséges szinkronizálni a két környezet adatait, akkor ki lehet hagyni a kezdeti szinkronizálást.
 
 A kezdeti szinkronizálás lehetővé teszi a meglévő adatok másolását egyik alkalmazásból a másikba. Számos telepítési eset van, attól függően, hogy mely környezetekkel rendelkezik már, és milyen típusú adatok találhatók a környezetben.
 
 A következő beállítású forgatókönyvek támogatottak:
 
-+ [Egy új Finance and Operations alkalmazáspéldány és egy új ügyfél-elköteleződési alkalmazáspéldány](#new-new)
-+ [Egy új Finance and Operations alkalmazáspéldány és egy meglévő ügyfél-elköteleződési alkalmazáspéldány](#new-existing)
-+ [Egy új Finance and Operations alkalmazáspéldány, amely adatokat és egy új ügyfél-elköteleződési alkalmazáspéldányt tartalmaz](#new-data-new)
-+ [Egy új Finance and Operations alkalmazáspéldány, amely adatokat és egy meglévő ügyfél-elköteleződési alkalmazáspéldányt tartalmaz](#new-data-existing)
-+ [Egy meglévő Finance and Operations alkalmazáspéldány és egy új ügyfél-elköteleződési alkalmazáspéldány](#existing-new)
-+ [Egy meglévő Finance and Operations alkalmazáspéldány és egy meglévő ügyfél-elköteleződési alkalmazáspéldány](#existing-existing)
++ [Egy új Pénzügyi és Műveleti alkalmazáspéldány és egy új vevői megbízási alkalmazáspéldány](#new-new)
++ [Egy új Pénzügyi és Műveleti alkalmazáspéldány és egy létező vevői megbízási alkalmazáspéldány](#new-existing)
++ [Egy új Pénzügyi és Műveleti alkalmazáspéldány, amely adatokat és egy új vevői megbízási alkalmazáspéldányt tartalmaz.](#new-data-new)
++ [Egy új Pénzügyi és Műveleti alkalmazáspéldány, amely adatokat és egy meglévő vevői megbízási alkalmazáspéldányt tartalmaz.](#new-data-existing)
++ [A Pénzügy és műveletek egy meglévő alkalmazáspéldánya és egy új vevői megbízási alkalmazáspéldány](#existing-new)
++ [A Pénzügy és műveletek egy meglévő alkalmazáspéldánya és egy létező vevői megbízási alkalmazáspéldány.](#existing-existing)
 
-## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a> Egy új Finance and Operations alkalmazáspéldány és egy új ügyfél-elköteleződési alkalmazáspéldány
+## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a> Egy új Pénzügyi és Műveleti alkalmazáspéldány és egy új vevői megbízási alkalmazáspéldány
 
-Ha kettős írási kapcsolatot szeretne létrehozni egy új, adatokkal nem rendelkező Finance and Operations alkalmazás és egy ügyfél-elköteleződési alkalmazás új példánya között, kövesse a következő lépéseit: [A Lifecycle Services kettős írási beállítása](lcs-setup.md). A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
+Ha kettős írású kapcsolatot kell létesíteni egy olyan pénzügyi és műveleti alkalmazással, amely nem rendelkezik adatokkal, és egy ügyfél-kapcsolati alkalmazás egy új példánya között, [kövesse a Lifecycle Services](lcs-setup.md) két írásos beállításának lépéseit. A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
 
-- Egy új, üres Finance and Operations környezet van kiépítve.
+- Új, üres Pénzügyi és Műveleti környezet van létesítve.
 - Az ügyfélkapcsolati alkalmazások egy új, üres példánya létesítésre kerül, ahol a CRM Prime megoldást telepítik.
 - A DAT vállalati adatokhoz egy kettős írás kapcsolat jön létre.
 - A táblaleképezések engedélyezve vannak az élő szinkronizáláshoz.
 
 A két környezet készen áll az élő adatszinkronizálására.
 
-## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a> Egy új Finance and Operations alkalmazáspéldány és egy meglévő ügyfél-elköteleződési alkalmazáspéldány
+## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a> Egy új Pénzügyi és Műveleti alkalmazáspéldány és egy létező vevői megbízási alkalmazáspéldány
 
-Ha kettős írási kapcsolatot szeretne létrehozni egy új, adatokkal nem rendelkező Finance and Operations alkalmazáspéldány és egy ügyfélelköteleződési alkalmazás meglévő példánya között, kövesse a következő lépéseit: [A Lifecycle Services kettős írási beállítása](lcs-setup.md). A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
+Ha kettős írású kapcsolatot kell létesíteni egy olyan pénzügyi és műveleti alkalmazás egy új példánya között, amely nem rendelkezik adatokkal, [és egy vevői kapcsolat alkalmazásának egy meglévő példánya között, hajtsa végre a Lifecycle Services kétírásos beállításának lépéseit](lcs-setup.md). A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
 
-- Egy új, üres Finance and Operations környezet van kiépítve.
+- Új, üres Pénzügyi és Műveleti környezet van létesítve.
 - A DAT vállalati adatokhoz egy kettős írás kapcsolat jön létre.
 - A táblaleképezések engedélyezve vannak az élő szinkronizáláshoz.
 
 A két környezet készen áll az élő adatszinkronizálására.
 
-A meglévő szinkronizálásához Dataverse adatokat a Finance and Operations alkalmazásba, kövesse az alábbi lépéseket.
+A következő lépésekkel szinkronizálhatja Dataverse a meglévő adatokat a Pénzügy és műveletek alkalmazással.
 
-1. Hozzon létre egy új céget a Finance and Operations alkalmazásban.
+1. Hozzon létre egy új vállalatot a Pénzügy és műveletek alkalmazásban.
 2. Adja hozzá a vállalatot a kettős írás kapcsolat beállításhoz.
 3. [Rendszerindítás](bootstrap-company-data.md) a Dataverse-adatokkal a három betűs Nemzetközi Szabványügyi Szervezet (ISO) vállalati kóddal.
 4. Futtassa a **kezdeti szinkronizálási** funkciókat azon táblák esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
-A példaekre mutató hivatkozásokat és az alternatív megközelítést a témakör későbbi [Példa](#example) részében találhatja meg.
+Egy példára és egy [alternatív megközelítésre mutató hivatkozásokat a témakör későbbi Példa](#example) szakaszában talál.
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a> Egy új Finance and Operations alkalmazáspéldány, amely adatokat és egy új ügyfél-elköteleződési alkalmazáspéldányt tartalmaz
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a> Egy új Pénzügyi és Műveleti alkalmazáspéldány, amely adatokat és egy új vevői megbízási alkalmazáspéldányt tartalmaz.
 
-Ha kettős írási kapcsolatot szeretne létrehozni egy új, adatokat tartalmazó Finance and Operations alkalmazáspéldány és egy ügyfél-elköteleződési alkalmazás új példánya között, kövesse a [Egy új Finance and Operations alkalmazáspéldány és egy új ügyfél-elköteleződési alkalmazáspéldány](#new-new) részben ebben a témában. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné az adatait az ügyfélkapcsolati alkalmazással.
+Ha kettős írású kapcsolatot kell létesíteni egy olyan pénzügyi és műveleti alkalmazás, amely adatokat tartalmaz, és egy ügyfél-szerződés alkalmazás egy új példánya között, [hajtsa végre az Új](#new-new) Pénzügy és műveletek alkalmazáspéldány és a cikk korábbi részében található új ügyfél-szerződési alkalmazáspéldány lépéseit. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné az adatait az ügyfélkapcsolati alkalmazással.
 
-1. Nyissa meg a Finance and Operations alkalmazást az LCS oldalról, jelentkezzen be, majd lépjen a következőre **Adatkezelés \> Kettős írás**.
+1. Nyissa meg a Pénzügy és műveletek alkalmazást az LCS lapról, jelentkezzen be, majd lépjen **be az Adatkezelés \> kettős írása lapra**.
 2. Futtassa a **kezdeti szinkronizálási** funkciókat azon táblák esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
 A példaekre mutató hivatkozásokat és az alternatív megközelítést a [Példa](#example) részben találhatja meg.
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a> Egy új Finance and Operations alkalmazáspéldány, amely adatokat és egy meglévő ügyfél-elköteleződési alkalmazáspéldányt tartalmaz
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a> Egy új Pénzügyi és Műveleti alkalmazáspéldány, amely adatokat és egy meglévő vevői megbízási alkalmazáspéldányt tartalmaz.
 
-Ha kettős írási kapcsolatot szeretne létrehozni egy adatokat tartalmazó Finance and Operations alkalmazás új példánya és egy ügyfél-elköteleződési alkalmazás meglévő példánya között, kövesse a [Egy új Finance and Operations alkalmazáspéldány és egy meglévő ügyfél-elköteleződési alkalmazáspéldány](#new-existing) részben ebben a témában. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné az adatait az ügyfélkapcsolati alkalmazással.
+Ha kettős írású kapcsolatot kell létesíteni egy olyan pénzügyi és műveleti alkalmazás egy új példánya, amely adatokat tartalmaz, valamint egy ügyfél-szerződés alkalmazás egy meglévő példánya között, [hajtsa végre az Új](#new-existing) Pénzügy és műveletek alkalmazáspéldány és a cikk korábbi vevői szerződési alkalmazáspéldányának lépéseit. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné az adatait az ügyfélkapcsolati alkalmazással.
 
-1. Nyissa meg a Finance and Operations alkalmazást az LCS oldalról, jelentkezzen be, majd lépjen a következőre **Adatkezelés \> Kettős írás**.
+1. Nyissa meg a Pénzügy és műveletek alkalmazást az LCS lapról, jelentkezzen be, majd lépjen **be az Adatkezelés \> kettős írása lapra**.
 2. Futtassa a **kezdeti szinkronizálási** funkciókat azon táblák esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
-A meglévő szinkronizálásához Dataverse adatokat a Finance and Operations alkalmazásba, kövesse az alábbi lépéseket.
+A következő lépésekkel szinkronizálhatja Dataverse a meglévő adatokat a Pénzügy és műveletek alkalmazással.
 
-1. Hozzon létre egy új céget a Finance and Operations alkalmazásban.
+1. Hozzon létre egy új vállalatot a Pénzügy és műveletek alkalmazásban.
 2. Adja hozzá a vállalatot a kettős írás kapcsolat beállításhoz.
 3. [Rendszerindítás](bootstrap-company-data.md) a Dataverse-adatokkal a három betűs ISO vállalati kóddal.
 4. Futtassa a **kezdeti szinkronizálási** funkciókat azon táblák esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
 A példaekre mutató hivatkozásokat és az alternatív megközelítést a [Példa](#example) részben találhatja meg.
 
-## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a> Egy meglévő Finance and Operations alkalmazáspéldány és egy új ügyfél-elköteleződési alkalmazáspéldány
+## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a> A Pénzügy és műveletek egy meglévő alkalmazáspéldánya és egy új vevői megbízási alkalmazáspéldány
 
-A Finance and Operations alkalmazás egy meglévő példánya és egy ügyfél-elköteleződési alkalmazás új példánya közötti kettős írási kapcsolat beállítása a Finance and Operation környezetben történik.
+A Pénzügy és művelet alkalmazás egy meglévő példánya és egy vevői kapcsolat alkalmazásának egy új példánya közötti kettős írásos kapcsolat a Pénzügyi és műveleti környezetben történik.
 
-1. [Állítsa be a kapcsolatot a Finance and Operations alkalmazásból](enable-dual-write.md).
+1. [A kapcsolat beállítása a Pénzügy és műveletek alkalmazásból](enable-dual-write.md).
 2. Futtassa a **kezdeti szinkronizálási** funkciókat azon táblák esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
 A példaekre mutató hivatkozásokat és az alternatív megközelítést a [Példa](#example) részben találhatja meg.
 
-## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a> Egy meglévő Finance and Operations alkalmazáspéldány és egy meglévő ügyfél-elköteleződési alkalmazáspéldány
+## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a> A Pénzügy és műveletek egy meglévő alkalmazáspéldánya és egy létező vevői megbízási alkalmazáspéldány.
 
-A Finance and Operations alkalmazás meglévő példánya és egy ügyfél-elköteleződési alkalmazás meglévő példánya közötti kettős írási kapcsolat beállítása a Finance and Operations környezetben történik.
+A Pénzügy és műveletek alkalmazás egy meglévő példánya és az ügyfél-kapcsolat alkalmazásának egy meglévő példánya közötti kettős írásos kapcsolat a Pénzügyi és műveleti környezetben történik.
 
-1. [Állítsa be a kapcsolatot a Finance and Operations alkalmazásból](enable-dual-write.md).
-2. A meglévő szinkronizálásához Dataverse adatokat a Finance and Operations alkalmazásba, [bootstrap](bootstrap-company-data.md) a Dataverse adatokat hárombetűs ISO cégkóddal.
+1. [A kapcsolat beállítása a Pénzügy és műveletek alkalmazásból](enable-dual-write.md).
+2. Ha szinkronizálni Dataverse kell a meglévő adatokat a Pénzügy és műveletek alkalmazással, [...](bootstrap-company-data.md)Dataverse akkor hárombetűs ISO-vállalati kód használatával kell eltenni az adatokat.
 3. Futtassa a **kezdeti szinkronizálási** funkciókat azon táblák esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
 A példaekre mutató hivatkozásokat és az alternatív megközelítést a [Példa](#example) részben találhatja meg.

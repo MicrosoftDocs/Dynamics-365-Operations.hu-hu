@@ -1,6 +1,6 @@
 ---
 title: Biztosra tervezett rendelések
-description: Ez a témakör azt mutatja be, hogyan tudja biztosra tervezni a rendeléseket. A tervezett rendelések a megerősítéskor tényleges beszerzési rendelésekké, átmozgatási rendelésekké vagy termelési rendelésekké válnak.
+description: Ez a cikk bemutatja a tervezett rendelések meg kell erősedelét. A tervezett rendelések a megerősítéskor tényleges beszerzési rendelésekké, átmozgatási rendelésekké vagy termelési rendelésekké válnak.
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30f3ee656b97e0337b6e3e78f0acb2300d7d85dc
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857518"
 ---
 # <a name="firm-planned-orders"></a>Biztosra tervezett rendelések
 
@@ -29,11 +29,11 @@ Háromféleképpen tudja biztosra tervezni a rendeléseket:
 - **Automatikus megerősítés** – Határozzon meg egy alapértelmezett megerősítési időkorlátot a fedezetcsoportokhoz, egyedi cikkekhez, valamint a cikkek és alaptervek kombinációihoz. Ezt követően az alaptervezés futtatásakor a tervezett rendelések automatikusan meg lesznek erősítve, ha a rendelés dátuma a megerősítés adott időkorlátján belül van.
 - **Lekérdezésalapú megerősítés** – Lekérdezés meghatározása a tulajdonságaik alapján tervezett rendelések kiválasztásához. Be lehet állítani egy kötegelt feladatot, amely a lekérdezés futtatását és az egyező rendeléseket rendszeres ütemezés szerint megerősíti.
 
-Ez a témakör részletesen ismerteti az egyes módszereket.
+Ez a témakör részletesen ismerteti az egyes metódusokat.
 
-## <a name="enable-the-features-that-are-described-in-this-topic"></a><a name="enable-features"></a>A jelen témakörben leírt funkciók engedélyezése
+## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a> Az ebben a cikkben leírt funkciók engedélyezése
 
-A legtöbb tervezett rendelési funkció a Microsoft Dynamics 365 Supply Chain Management minden olyan standard telepítésében elérhető, amely Tervezési optimalizálást használ. A témakörben leírt funkciókat azonban csak akkor lehet használni, ha be vannak kapcsolva a Funkciókezelésben.
+A legtöbb tervezett rendelési funkció a Microsoft Dynamics 365 Supply Chain Management minden olyan standard telepítésében elérhető, amely Tervezési optimalizálást használ. A jelen leírásban ismertetett funkciók egy része azonban csak akkor használható, ha be van kapcsolva a Funkciókezelés.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Tervezett rendelések párhuzamos meg- és kikapcsolása
 
@@ -97,7 +97,7 @@ Az automatikus megerősítéssel az Alaptervezési folyamat részeként megerős
 > A megerősített származtatott rendelések (azaz alvállalkozói beszerzési rendelések) *Ellenőrzés alatt* állapottal jelennek meg, ha a változás követése be van kapcsolva.
 
 > [!IMPORTANT]
-> Mielőtt a jelen részben ismertetett funkció felhasználható lenne a tervezési optimalizálással, be kell kapcsolnia a [*Tervezési optimalizálási automatikus megerősítése* funkciót](#enable-features) a témakör elején ismertetett módon. Az automatikus tervezés mindig használható a beépített alaptervezési motorral.
+> Mielőtt az ebben a részben ismertetett funkció felhasználható a tervezési optimalizálással, [*·*](#enable-features) a rendszernek be kell kapcsolva lennie a tervezési optimalizálási funkciónak az első részében ismertetett módon. Az automatikus tervezés mindig használható a beépített alaptervezési motorral.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatikus megerősítés a tervezési optimalizálással és a beépített tervezőmotor
 
@@ -130,7 +130,7 @@ A lekérdezésalapú megerősítés lehetővé teszi a megerősítés előre meg
 Az automatikus és a lekérdezésen alapuló megerősítésekkel kombinálhatja az automatikus megerősítéseket. Egy lekérdezésalapú megerősítési feladathoz például egy olyan előre hozott időkorlát tartozik, amely hosszabb, mint a megegyező automatikus megerősítési fedezett konfiguráció időkorlátja. Emiatt a lekérdezésalapú megerősítés az automatikus megerősítés előtt feldolgozhatja a tervezett rendeléseket. Ezt a viselkedést kihasználhatja, ha az egyes szállítók rendeléseit másképp ütemezi, mint a más szállítóktól származó hasonló termékek rendeléseit.
 
 > [!IMPORTANT]
-> Mielőtt a jelen részben ismertetett funkció felhasználható lenne, be kell kapcsolnia a [*Tervezési rendelés megerősítése szűréssel* funkciót](#enable-features) a témakör elején ismertetett módon.
+> Az ebben a részben [*·*](#enable-features) ismertetett funkció használata előtt a Tervezett rendelések szűrési funkcióját be kell kapcsolva a rendszerben a cikk elején leírt módon.
 
 A rendelések lekérdezésen alapuló megerősítési folyamattal való biztosra tervezéséhez kövesse az alábbi lépéseket.
 

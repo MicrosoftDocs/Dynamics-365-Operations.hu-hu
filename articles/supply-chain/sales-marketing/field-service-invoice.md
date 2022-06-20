@@ -1,6 +1,6 @@
 ---
 title: Field Service megállapodási számlák szinkronizálása Supply Chain Management szabadszöveges számlákká
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Field Service szerződési számláinak a Dynamics 365 Supply Chain Management szolgáltatásban található szabadszöveges számláival történő szinkronizálására használatosak.
+description: Ez a témakör a Dynamics 365 mezőszolgáltatás szerződési számláit a szabadszöveges számlák szabadszöveges számláihoz használt sablonokról és a kapcsolódó feladatokról tárgyalja Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 04/10/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70f1c072c3a2a1b201aac1f1d2beea9979a3b792
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c4ef70af71ae223baaa2abb2b64428beab946e3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060764"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900883"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Field Service megállapodási számlák szinkronizálása Supply Chain Management szabadszöveges számlákká
 
@@ -29,7 +29,7 @@ ms.locfileid: "8060764"
 
 
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Field Service szerződési számláinak a Dynamics 365 Supply Chain Management szolgáltatásban található szabadszöveges számláival történő szinkronizálására használatosak.
+Ez a cikk be tárgyalja a sablonokat és a mögöttes Dynamics 365 Field Service feladatokat, amelyek segítségével szinkronizálni lehet a szerződési számlákat a szabadszöveges számlákkal a következőben:Dynamics 365 Supply Chain Management
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 

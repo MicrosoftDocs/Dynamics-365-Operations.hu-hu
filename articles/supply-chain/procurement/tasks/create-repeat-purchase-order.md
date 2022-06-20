@@ -1,6 +1,6 @@
 ---
 title: Ismételt beszerzési rendelés létrehozása
-description: Ez a témakör bemutatja, hogy hogyan lehet egy ismételt beszerzési rendelést (PO) létrehozni azáltal, hogy a sorokat egy korábbi beszerzési rendelési dokumentumból egy új, vagy egy már létező beszerzési rendelésbe másol.
+description: Ez a cikk bemutatja, hogyan lehet ismétlődő beszerzési rendelést létrehozni úgy, hogy sorokat másol egy korábbi beszerzési rendelési dokumentumból egy új beszerzési rendelésbe vagy egy meglévő beszerzési rendelésbe.
 author: GalynaFedorova
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be4eca824794b8d45c7a6f40cb68aff7c4a53cd0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 42bfbc7a10d21a475055ee87e76c89db0ad64165
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671126"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865092"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Ismételt beszerzési rendelés létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet egy ismételt beszerzési rendelést (PO) létrehozni azáltal, hogy a sorokat egy korábbi beszerzési rendelési dokumentumból egy új, vagy egy már létező beszerzési rendelésbe másol. Kétféleképpen lehetséges az ismételt rendelések létrehozása. Vagy a Művelet Panel dokumentum szintjén elérhető műveleteket vagy a sorrészletek műveleteit használhatja. A dokumentumszintű műveletek leginkább egy új beszerzési rendelés létrehozására szolgálnak a sorok és egy másik rendelés fejléc információinak hozzáadásával, viszont a soradatok művelete a sorok egy már meglévő rendeléshez történő hozzáadására szolgál. Az útmutatóban mutatott példa használható az USMF demo adatok cégben. Ezt a feladatot általában a beszerzési ügynök végzi el.
+Ez a cikk bemutatja, hogyan lehet ismétlődő beszerzési rendelést létrehozni úgy, hogy sorokat másol egy korábbi beszerzési rendelési dokumentumból egy új beszerzési rendelésbe vagy egy meglévő beszerzési rendelésbe. Kétféleképpen lehetséges az ismételt rendelések létrehozása. Vagy a Művelet Panel dokumentum szintjén elérhető műveleteket vagy a sorrészletek műveleteit használhatja. A dokumentumszintű műveletek leginkább egy új beszerzési rendelés létrehozására szolgálnak a sorok és egy másik rendelés fejléc információinak hozzáadásával, viszont a soradatok művelete a sorok egy már meglévő rendeléshez történő hozzáadására szolgál. Az útmutatóban mutatott példa használható az USMF demo adatok cégben. Ezt a feladatot általában a beszerzési ügynök végzi el.
 
 
 ## <a name="create-a-new-repeat-purchase-order"></a>Új ismételt beszerzési rendelés létrehozása

@@ -1,6 +1,6 @@
 ---
 title: Szerializált cikkek használata
-description: Ez a témakör bemutatja, hogy hogyan regisztrálhatja a sorozatszámokat a szállítólevélen vagy a számlákon az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig.
+description: Ez a cikk bemutatja, hogy hogyan regisztrálhat sorozatszámokat a csomagjegyzéken vagy a számlán az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig.
 author: Henrikan
 ms.date: 10/31/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62e53ec57a8d5c5c922f580219e4bde5338d0707
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b89e9ab547d13e68ead88d76f9922d14fde4beb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571689"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901850"
 ---
 # <a name="working-with-serialized-items"></a>Szerializált cikkek használata
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan regisztrálhatja a sorozatszámokat a szállítólevélen vagy a számlákon az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig.
+Ez a cikk bemutatja, hogy hogyan regisztrálhat sorozatszámokat a csomagjegyzéken vagy a számlán az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig.
 
 Sok vállalat csak szolgáltatási és garanciális célokra akar sorozatszámot rögzíteni, és nem kell sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig. Az ilyen esetekben a lehetővé teszi hogy bejegyezze a sorozatszámokat a szállítóleveleken vagy számlákon, amikor a termékek eladásra kerülnek. Ha a termékek később visszatérnek Önhöz, akkor minden termék nyomon követhető egy számlához, hogy meghatározza, hogy Ön adta-e el a terméket és hogy a szerviz és garancia kötelezettségek érvényesek-e.
 

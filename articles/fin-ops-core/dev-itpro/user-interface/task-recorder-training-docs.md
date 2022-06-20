@@ -1,6 +1,6 @@
 ---
 title: Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
-description: Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-útmutatók, hogyan hozhat létre rögzítéseket, és hogyan szabhatja testre a Microsoft-feladatútmutatókat, illetve hogyan szerepeltesse azokat a Súgóban.
+description: Ez a cikk bemutatja, hogy milyen feladatrögzítők és feladatvezetőkről van szó, hogyan lehet felvételeket létrehozni, és hogyan lehet testreszabni a Microsoft feladat-segédeket, és azokat szerepeletni a súgóban.
 author: josaw1
 ms.date: 03/24/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b556003edf2fe186f6b095e538f142fcf5a0bba5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891814"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
 
@@ -29,7 +29,7 @@ ms.locfileid: "8070526"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-útmutatók, hogyan hozhat létre feladatrögzítéseket, és hogyan szabhatja testre a Microsoft-feladatútmutatókat, illetve hogyan szerepeltesse azokat a Súgóban.
+Ez a cikk bemutatja, hogy milyen feladatrögzítők és feladatvezetőkről van szó, hogyan lehet feladatrögzítéseket létrehozni, és hogyan lehet testreszabni a Microsoft feladat-segédeket, és azokat szerepeletni a súgóban.
 
 > [!IMPORTANT]
 > Rögzítheti saját feladat-útmutatóit a Dynamics 365 Human Resources számára, de jelenleg nem mentheti őket az Üzletifolyamat-modellező (BPM) tárba, illetve nem nyithatja meg őket a Súgó ablaktáblából. Mentheti őket helyben vagy egy hálózati helyre, majd megnyithatja és újra lejátszhatja őket a Feladatrögzítő használatával. 

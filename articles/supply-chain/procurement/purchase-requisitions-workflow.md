@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3381c752e4f1f723162ad314c29ab477caf635a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6934c1147de79c24eb66127d2e08ae8b627bc744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675935"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849358"
 ---
 # <a name="purchase-requisition-workflow"></a>beszerzési igénylési munkafolyamat
 
@@ -89,7 +89,7 @@ Ebben a példában, a beszerzési igénylés sorainak munkafolyamata a következ
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Beszerzési igénylési munkafolyamat konfigurációja
 Egy beszerzési igénylés ellenőrzésre való eljuttatásához, konfigurálnia kell a beszerzési igénylési munkafolyamatokat. Az Ön által definiált munkafolyamat folyamata szabályozza a cikkeket kérő felhasználó (a kérelmező) és az ellenőrző és jóváhagyó között a munkafolyamatban létrejövő interakciót. A beszerzési igénylési útvonal a munkafolyamat-konfigurációban megadott feltételektől függ. Ezeket a feltételek határozzák meg például, hogy mikor kerül sor a beszerzési igénylés útvonalának meghatározására, illetve mi a címzett felhasználó szerepköre, és melyek a felhasználók által elérhető műveletek.  
 
-Az ebben a témakörben szereplő példák bemutatják, hogy hogyan lehet egy beszerzési igénylést egyedi dokumentumként vagy egyéni beszerzési igénylési sorokként továbbítani a munkafolyamatban. Konfigurálhatja úgy is a beszerzési igénylési munkafolyamatot, hogy láthatóvá váljon a szervezetben definiált beszerzési igénylések belső szabályozási ellenőrzése.  
+Az ebben a példában található példák bemutatják, hogyan lehet egy beszerzési igénylést egyetlen dokumentumként vagy beszerzési igénylési sorként egy munkafolyamaton keresztül végigkedni. Konfigurálhatja úgy is a beszerzési igénylési munkafolyamatot, hogy láthatóvá váljon a szervezetben definiált beszerzési igénylések belső szabályozási ellenőrzése.  
 
 Az adott munkafolyamatban egy feladathoz hozzárendelt résztvevő vagy ellenőr lehet egy adott felhasználói csoport tagja, egy konkrét biztonsági szerepkörrel rendelkező felhasználó, , egy vezetői hierarchiában a benyújtóhoz társított felhasználó, vagy megnevezett vagy konkrét költségvetési felelősséggel rendelkező felhasználó.
 

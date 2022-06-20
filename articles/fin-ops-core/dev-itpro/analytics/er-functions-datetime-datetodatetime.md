@@ -1,6 +1,6 @@
 ---
 title: DATETODATETIME ER-függvény
-description: A témakör tájékoztatást nyújt a DATETODATETIME Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
+description: Ez a cikk a DATETKISZÁMÍTHATATLANETIME Elektronikus jelentés (ER) funkcióval kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e5fa64b776ed2702ac65a2f6416adcf657c748caa1156a71b4c3e99ee188880
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba80c4c3eac703ba96a4f2741fcc19bceeb24ed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898491"
 ---
 # <a name="datetodatetime-er-function"></a>DATETODATETIME ER-függvény
 
@@ -47,7 +47,7 @@ Az eredményül kapott dátum-/időérték.
 
 ## <a name="example-1"></a>1. példa
 
-A `DATETODATETIME (CompInfo. 'getCurrentDate()')` a jelenlegi Microsoft Dynamics 365 Finance munkamenet dátumát (2015. december 24.) adja vissza **12/24/2015 12:00:00 AM** értékként. Ebben a példában a **CompInfo** a **Finance and Operations/Tábla** típus Elektronikus jelentéskészítési (ER) adatforrása, és a CompanyInfo táblára hivatkozik.
+`DATETODATETIME (CompInfo. 'getCurrentDate()')` a jelenlegi Microsoft Dynamics 365 pénzügyi munkamenet dátumát adja vissza 2015. december 24-én, **de. 12/24 2015 12:00:00 dátummal**. Ebben a példában a **CompInfo** a **Finance and Operations/Tábla** típus Elektronikus jelentéskészítési (ER) adatforrása, és a CompanyInfo táblára hivatkozik.
 
 ## <a name="example-2"></a>2. példa
 

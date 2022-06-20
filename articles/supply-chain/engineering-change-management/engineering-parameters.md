@@ -1,6 +1,6 @@
 ---
 title: Tervezési változáskezelés paraméterei
-description: Ez a témakör bemutatja, hogyan lehet mérnöki módosításkezelési funkciókat konfigurálni a Microsoft Dynamics 365 Supply Chain Management rendszerhez.
+description: Ez a témakör bemutatja a Microsoft mérnöki változáskezelési szolgáltatásainak konfigurálását Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ef4113077c538ca1a54009aacbdeaf2ccbd0232
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581008"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875510"
 ---
 # <a name="engineering-change-management-parameters"></a>Tervezési változáskezelés paraméterei
 
@@ -27,7 +27,7 @@ A **Mérnöki módosításkezelési paraméterek** oldal olyan beállítási par
 
 ## <a name="open-the-engineering-change-management-parameters-page"></a>A mérnöki módosításkezelési paraméterek oldal megnyitása
 
-A **Mérnöki módosításkezelési paraméterek** oldal megnyitásához nyissa meg a **Mérnöki módosítások kezelése \> Beállítás \> Mérnöki módosításkezelési paraméterek** lehetőséget. Ezt követően a mezőket a téma hátralévő szakaszaiban leírtak szerint lehet megadni.
+A **Mérnöki módosításkezelési paraméterek** oldal megnyitásához nyissa meg a **Mérnöki módosítások kezelése \> Beállítás \> Mérnöki módosításkezelési paraméterek** lehetőséget. Ezután a cikk további részeiben leírt módon állíthatja be a mezőket.
 
 ## <a name="release-control-tab"></a>Kiadásellenőrzés lap
 

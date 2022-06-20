@@ -1,6 +1,6 @@
 ---
 title: Különböző dimenziók beállítása csomagoláshoz és tároláshoz
-description: Ez a témakör bemutatja, hogyan adhatja meg, hogy az egyes megadott dimenziókat mely folyamathoz (csomagolás, tárolás vagy beágyazott csomagolás) használják.
+description: Ez a cikk bemutatja, hogy milyen eljáráshoz (csomagolás, tárolás vagy beágyazott csomagolás) használható az egyes megadott dimenziókban.
 author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 090a6f653b50d8f22a2f34354172f129624813f1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687645"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905486"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Különböző dimenziók beállítása csomagoláshoz és tároláshoz
 
@@ -33,7 +33,7 @@ Egyes cikkek csomagolása és tárolása olyan módon történik, hogy különb�
 A *Tárolás* dimenziók akkor is támogatottak, ha a *Csomagolótermék-dimenziók* funkció nincs engedélyezve. Ezeket a **Fizikai dimenzió** lapon állíthatja be a Supply Chain Management eszközben. Ezeket a dimenziókat minden olyan folyamat használja, ahol nincs megadva a csomagolás és a beágyazott csomagolási dimenzió.
 
 A *Csomagolás* és a *Beágyazott csomagolás* dimenziók beállítása a **Tényleges termékdimenziók** lapon történik, amelyet a rendszer a *Csomagolótermék-dimenziók* funkció engedélyezésekor ad hozzá.
-Ez a témakör egy olyan forgatókönyvet tartalmaz, amely bemutatja a funkció használatát.
+Ez a cikk egy olyan esetet tartalmaz, amely bemutatja a funkció használatát.
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>Kapcsolja be a Csomagolótermék-dimenziók funkciót
 

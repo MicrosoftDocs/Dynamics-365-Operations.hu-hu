@@ -1,6 +1,6 @@
 ---
 title: Helyprofil létrehozása
-description: Ez a témakör bemutatja, hogyan lehet helyprofilokat létrehozni a Dynamics 365 Supply Chain Management megoldásban.
+description: Ez a cikk bemutatja, hogyan lehet létrehozni egy helyprofilt a következőben:Dynamics 365 Supply Chain Management
 author: Mirzaab
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74141cdad6841a602c7fb061e897646fae072a73
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 98537f3ad45d66e348ecd489c60d95ef875e5c07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580000"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875043"
 ---
 # <a name="create-a-location-profile"></a>Helyprofil létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet helyprofilokat létrehozni a Dynamics 365 Supply Chain Management megoldásban. A raktárban minden helyhez társítani kell egy helyprofilt, amely leírja a hely tulajdonságait, például azt, hogy a hely engedélyezi-e a vegyes cikkeket. Ebben az eljárásban olyan helyprofilt hozunk létre, amely nem igényel azonosítótáblás szabályozást. Engedélyezzük a vegyes cikkeket és a kevert készletállapotokat, és engedélyezzük a ciklus leltározást. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
+Ez a cikk bemutatja, hogyan lehet létrehozni egy helyprofilt a következőben:Dynamics 365 Supply Chain Management A raktárban minden helyhez társítani kell egy helyprofilt, amely leírja a hely tulajdonságait, például azt, hogy a hely engedélyezi-e a vegyes cikkeket. Ebben az eljárásban olyan helyprofilt hozunk létre, amely nem igényel azonosítótáblás szabályozást. Engedélyezzük a vegyes cikkeket és a kevert készletállapotokat, és engedélyezzük a ciklus leltározást. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
 
 
 1. A navigációs ablaktáblán ugorjon a **Modulok > Raktárkezelés > Beállítás > Raktár > Helyprofilok** lehetőségre.

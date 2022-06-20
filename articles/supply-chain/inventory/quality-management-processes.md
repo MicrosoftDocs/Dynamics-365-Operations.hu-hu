@@ -1,6 +1,6 @@
 ---
 title: A minőség- és a szabálytalanságkezelés áttekintése
-description: Ez a témakör bemutatja a Microsoft Dynamics 365 Supply Chain Management minőség- és szabálytalanságkezelési funkcióit, és azt, hogyan lehet javítani az ellátási láncban a termékek minőségét.
+description: Ez a cikk bemutatja a Microsoft Dynamics 365 Supply Chain Management minőség- és szabálytalanságkezelési funkcióit, és bemutatja, hogyan lehet javítani az ellátási láncban a termékek minőségét.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510dee78f6fed02e6511aedad00fcb1b15195470
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985509"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907493"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>A minőség- és a szabálytalanságkezelés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a Microsoft Dynamics 365 Supply Chain Management minőség- és szabálytalanságkezelési funkcióit, és azt, hogyan lehet javítani az ellátási láncban a termékek minőségét.
+Ez a cikk bemutatja a Microsoft Dynamics 365 Supply Chain Management minőség- és szabálytalanságkezelési funkcióit, és bemutatja, hogyan lehet javítani az ellátási láncban a termékek minőségét.
 
 A minőségbiztosítás magába foglalja a terméktesztelést és a nem megfelelő anyagok kezelését. A minőségirányítási folyamatok segítik biztosítani a kiemelkedő minőségű termékeket az önök ellátási láncában. Ezek a folyamatok segítik továbbá optimalizálni az ellátási lánc folyamatait és növelik a vásárlók elégedettségét. A minőségirányítás segítséget nyújt a szabálytalan termékek javítási folyamatának kezelésében, azok eredetétől függetlenül. A diagnosztikai eredményeket csatolhatja a javítási feladatokhoz. A rendszer képes ütemezni a feladatokat annak érdekében, hogy kijavítsa a hibákat és ily módon segít megelőzni a problémák visszatérését a jövőben. A minőségellenőrzés segít továbbá a problémák típus szerinti kinyomozásában (a belső problémákat is beleértve) és segít megtalálni a rövid- és a hosszú távú megoldásokat is. A fő teljesítménymutatókról (KPI-kről) vezetett statisztikák betekintést nyújtanak a múltban felmerült szabálytalansági problémákba és az azok javítására használt megoldásokba. Az előzményadatok segítségével felülvizsgálhatja a korábbi minőségi mérések hatékonyságát, és kidolgozhatja a jövőben alkalmazni kívánt megfelelő méréseket.
 

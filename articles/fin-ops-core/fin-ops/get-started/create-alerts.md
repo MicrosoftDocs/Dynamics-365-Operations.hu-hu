@@ -1,6 +1,6 @@
 ---
 title: Figyelmeztetési szabályok létrehozása
-description: Ez a témakör a riasztásokkal kapcsolatos információkat ismerteti, és bemutatja, hogyan hozhat létre riasztási szabályt.
+description: Ez a cikk a figyelmeztetésekkel kapcsolatban tartalmaz tájékoztatást, és bemutatja a figyelmeztetési szabályok létrehozásához szükséges tudnivalókat.
 author: RichdiMSFT
 ms.date: 10/08/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 597785e65f127794ca84fe3053a664f717b056bd7374e0396732d4bcf59a743c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f523680f3d71ffd75c6cd2df284d2fd3610cef96
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736198"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853617"
 ---
 # <a name="create-alert-rules"></a>Figyelmeztetési szabályok létrehozása
 
@@ -75,7 +75,7 @@ A **Figyelmeztetés módja** gyorslapján a **Figyelmeztetési szabály** létre
 
 ## <a name="alerts-as-business-events"></a>Figyelmeztetések üzleti eseményekként
 
-A figyelmeztetéseket az üzleti események keretrendszerén kívül is el lehet küldeni. Figyelmeztetés létrehozásakor állítsa az **Egész szervezet** beállítást **Nem** értékre, és a **Küldés külsőleg** beállítást **Igen** értékre. Az üzleti eseményt kiváltó figyelmeztetés után elindíthat egy Power Automate-ba beépített folyamatot a **Üzleti esemény bekövetkezésekor** eseményindítóval a Finance and Operations-összekötőn, vagy kifejezetten elküldheti az eseményt egy üzletiesemény-végpontra az **Üzletiesemény-katalóguson** keresztül.
+A figyelmeztetéseket az üzleti események keretrendszerén kívül is el lehet küldeni. Figyelmeztetés létrehozásakor állítsa az **Egész szervezet** beállítást **Nem** értékre, és a **Küldés külsőleg** beállítást **Igen** értékre. Miután aktiválta az üzleti eseményt kiváltó figyelmeztetést, Power Automate **elindíthat egy beépített folyamatot az Üzleti esemény bekövetkeztének bekövetkeztét követően a** Pénzügy és műveletek csatlakoztatójára, **vagy explicit módon elküldheti az eseményt egy üzleti esemény végpontnak az üzleti eseménykatalóguson keresztül**.
 
 ## <a name="create-an-alert-rule"></a>Figyelmeztetési szabály létrehozása
 

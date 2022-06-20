@@ -1,6 +1,6 @@
 ---
 title: Karbantartási ellenőrzőlisták
-description: Ez a témakör bemutatja a karbantartási ellenőrzőlistákat az Eszközkezelés modulban.
+description: Ez a témakör az Eszközkezelés karbantartási ellenőrzőlistájait ismerteti.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ece9abcbaed0a1881f6b6a0d1b2357bc87ef181636a37564709f62c6aa38475
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 25e9139ce57283482d8da4b7f1e5d6275c74ad28
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854529"
 ---
-# <a name="maintenance-checklists"></a>Karbantartási ellenőrző listák
+# <a name="maintenance-checklists"></a>Karbantartási ellenőrzőlisták
 
 [!include [banner](../../includes/banner.md)]
 

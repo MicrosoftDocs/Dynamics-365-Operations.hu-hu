@@ -1,6 +1,6 @@
 ---
 title: Tevékenységek ismételt hozzárendelése
-description: Ez a témakör leírja, hogyan tudja a szolgáltatási tevékenységeket az egyik dolgozótól a másikhoz hozzárendelni.
+description: Ez a témakör azt ismerteti, hogyan lehet a szolgáltatási tevékenységeket másik dolgozóhoz hozzárendelni.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55ebcda19aba074191a2820d2ac7faf27313db8e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5f6cd7523a9185de0bb2dfd81ffb3fe5e7dba5e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671814"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860464"
 ---
 # <a name="reassign-activities"></a>Tevékenységek ismételt hozzárendelése 
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör leírja, hogyan tudja a szolgáltatási tevékenységeket az egyik dolgozótól a másikhoz hozzárendelni. Újraoszthatja a szolgáltatási tevékenységeket az alkalmazottak között, még akkor is, ha ők különböző kiszálló csoportokhoz tartoznak.
+Ez a témakör azt ismerteti, hogyan lehet a szolgáltatási tevékenységeket másik dolgozóhoz hozzárendelni. Újraoszthatja a szolgáltatási tevékenységeket az alkalmazottak között, még akkor is, ha ők különböző kiszálló csoportokhoz tartoznak.
 
 A következő lépések segítségével tudja átadni a tevékenységet egy másik dolgozónak:
 

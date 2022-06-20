@@ -1,6 +1,6 @@
 ---
 title: Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
-description: Ez a témakör azt mutatja be, hogyan lehet testreszabni a Microsoft által biztosított elektronikus jelentéskészítési (ER) konfigurációkat, amelyekkel egyedi elektronikus dokumentumok generálhatók.
+description: Ez a cikk bemutatja, hogy hogyan szabhatja testre a Microsoft által biztosított elektronikus jelentéskészítési (ER) konfigurációkat, amelyek az egyedi elektronikus dokumentumok előállításához használatosak.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661658"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854698"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
 
@@ -32,9 +32,9 @@ Az [Elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-re
 
 ## <a name="overview"></a>Áttekintés
 
-Az ebben a témakörben szereplő példa esetében meg kell adnia egy szövetségi adóazonosító kódot új egyéni attribútumként minden olyan Ügyfélnek, akinek elektronikusan számláz. Éppen ezért a jelenleg használt számla szerkezetét testre kellszabni egy olyan új elem hozzáadásával, amelyet minden létrehozott e-számlán ki kell tölteni az áfakód alapján.
+Ebben a példában a szövetségi adóazonosító kódot kell megadnia minden elektronikusan számlázott vevő új egyéni attribútumaként. Éppen ezért a jelenleg használt számla szerkezetét testre kellszabni egy olyan új elem hozzáadásával, amelyet minden létrehozott e-számlán ki kell tölteni az áfakód alapján.
 
-Az ebben a témakörben ismertetett eljárások azt mutatják be, hogy a Rendszergazda, az Elektronikus jelentéskészítési fejlesztő vagy az Elektronikus jelentéskészítési funkcionális tanácsadói szerepkörével rendelkező felhasználó hogyan hajthatja végre a következő feladatokat a Finance példányban:
+A ebben a cikkben olvasható eljárásokkal le lehet magyarázni, hogyan végezheti el a felhasználó a Pénzügyi példányban a rendszergazda, az elektronikus jelentéskészítő fejlesztő vagy az elektronikus jelentéskészítő funkcionális tanácsadó szerepkör valamelyik felhasználóját:
 
 - [ER-paraméterek minimális csoportjának konfigurálása, amely az ER-keretrendszer elindításához szükséges](#ConfigureER).
 - [A standard ER-konfigurációk kezdeti verzióinak importálása, amelyek meg vannak adva az e-számla létrehozásához](#ImportERConfigurations1).

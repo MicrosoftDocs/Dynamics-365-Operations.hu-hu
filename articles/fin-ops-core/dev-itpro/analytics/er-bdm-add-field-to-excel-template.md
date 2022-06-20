@@ -1,6 +1,6 @@
 ---
 title: Új mezők hozzáadása üzleti dokumentum-sablonhoz a Microsoft Excel szolgáltatásban
-description: Ez a témakör azt mutatja be, hogyan lehet új mezőket felvenni egy üzleti dokumentumsablonba a Microsoft Excel programban az üzleti dokumentumkezelő funkció segítségével.
+description: Ez a cikk arról nyújt tájékoztatást, hogyan lehet új mezőket felvenni egy üzletidokumentum-sablonba Microsoft Excel az Üzleti dokumentumkezelési funkció segítségével.
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767242"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869402"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Új mezők hozzáadása üzleti dokumentum-sablonhoz a Microsoft Excel szolgáltatásban
 
@@ -28,14 +28,14 @@ ms.locfileid: "6767242"
 
 Új mezőket hozzáadhat egy sablonhoz, amely a következő Microsoft Excel formátumú üzleti dokumentumok létrehozásához használatos. Ezek a mezők olyan helyőrzőként adhatók hozzá, amelyekkel az alkalmazásból a létrehozott dokumentumokat a szükséges adatokkal ki lehet tölteni. Minden hozzáadott mező esetében megadhat egy kötést az adatforrásokhoz, amely meghatározza, hogy milyen alkalmazásadatok szerepeljenek a mezőben, ha a sablont az üzleti dokumentumok létrehozásához használják.
 
-Ha további tájékoztatást szeretne erről a funkcióról, végezze el a példafeladatot ebben a témakörben. Ez a példa azt mutatja be, hogyan lehet módosítani egy sablont a létrejövő Szabadszöveges számlaűrlapok mezőinek kitöltéséhez.
+A funkcióval kapcsolatos további tudnivalókat az alábbi példában olvashatja. Ez a példa azt mutatja be, hogyan lehet módosítani egy sablont a létrejövő Szabadszöveges számlaűrlapok mezőinek kitöltéséhez.
 
 ## <a name="configure-business-document-management-to-edit-templates"></a>Az üzleti dokumentumkezelés modul konfigurálása sablonok szerkesztéséhez
 
 Mivel az üzleti Dokumentumkezelés (BDM) az [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md) keretrendszerén alapul, konfigurálnia kell a szükséges ER és BDM paramétereket, mielőtt elkezdené a munkát a BDM-mel.
 
-1.  Jelentkezzen be a Microsoft Dynamics 365 Finance példányára rendszeradminisztrátorként.
-2.  Hajtsa végre a példa következő lépéseit az [üzleti Dokumentumkezelés – áttekintés](er-business-document-management.md) témakörben:
+1.  Jelentkezzen be a Microsoft Dynamics 365 Pénzügy 365-ös példányába rendszergazdaként.
+2.  Az üzleti dokumentumok kezelésével kapcsolatos áttekintési témakörben a következő [lépéseket kell végrehajtani a példában](er-business-document-management.md):
 
     1.  Konfigurálja az ER-paramétereket.
     2.  Kapcsolja be a BDM-et.
@@ -61,7 +61,7 @@ Az ER-konfigurációk importálásának módjával kapcsolatos további tudnival
 
 3.  A rácsban válassza ki a **Szabadszöveges számla (Excel)** sablonját.
 4.  A jobb oldali ablakban válassza ki az **új sablon** elemet a kiválasztott sablonon alapuló új sablon létrehozásához.
-5.  A **Cím** mezőbe írja be a **Szabadszöveges számla (Excel) Contoso** kifejezést az új sablon címeként.
+5.  A **Cím** mezőbe írja be: **Szabadszöveges számla (Excel) Contoso** az új sablon címeként.
 6.  A szerkesztési folyamat kezdetének jóváhagyásához kattintson az **OK** gombra.
 
 Megjelenik a BDM sablonszerkesztő lap. A kiválasztott sablont a Microsoft 365 segítségével online szerkesztheti a beágyazott vezérlőben.
@@ -148,9 +148,9 @@ Az **üzleti Dokumentumkezelés** munkaterületen a **Sablon** lap jobb oldali a
 2.  Válassza ki az **FTI-00000002** számlát, majd válassza a **Nyomtatáskezelő** parancsot.
 3.  A bal oldali ablaktáblán bontsa ki a **Modul – Kinnlevőségek \> dokumentumok \> szabadszöveges számla** elemet.
 4.  A **Szabadszöveges számla** részben válassza az **Eredeti dokumentum** szintet a feldolgozáshoz szükséges számlahatókör megadásához.
-5.  A jobb oldali ablakban a **Jelentés formátuma** mezőben válassza ki a **Szabadszöveges számla (Excel) Contoso** sablont a megadott dokumentum szintjéhez.
+5.  A jobb oldali ablakban a **jelentés formátuma** mezőben válassza ki a **Szabadszöveges számla (Excel) contoso** sablonját a megadott dokumentum szintjén.
 
-    ![A Szabadszöveges számla (Excel) Contoso sablon kiválasztva.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
+    ![Kijelölt szabadszöveges számla (Excel) Contoso-sablon.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 
 6.  Az **Esc** gombbal zárja be az aktuális lapot.
 7.  Válassza a **Nyomtatás \> Kiválasztott** elemet.

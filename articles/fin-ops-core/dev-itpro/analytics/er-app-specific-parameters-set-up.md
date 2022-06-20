@@ -1,6 +1,6 @@
 ---
 title: Az ER-formátum paramétereinek beállítása jogi személyenként
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy Elektronikus jelentéskészítési (ER) formátum paramétereit jogi személyenként.
+description: Ez a cikk bemutatja, hogy hogyan lehet jogi személyenként beállítani az elektronikus jelentési (ER) formátumok paramétereit.
 author: NickSelin
 ms.date: 03/25/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dbcf968dde432da182b5bd2d6a7bcb9f83dad6fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890212"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Az ER-formátum paramétereinek beállítása jogi személyenként
 
@@ -30,7 +30,7 @@ ms.locfileid: "8644499"
 
 Ezeknek a lépéseknek a végrehajtásához először végre kell hajtania az [ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára](er-app-specific-parameters-configure-format.md) szakaszban megadott lépéseket.
 
-Az ebben a témakörben található példák befejezéséhez Microsoft Dynamics a következő szerepkörök valamelyikével hozzá kell férnie a 365 Pénzügy hez:
+Az ebben a példában olvasható példák közül az Microsoft Dynamics alábbi egyikhez kell hozzáféréssel a 365 Pénzügy 365-ös szerepkörhöz:
 
 - Elektronikus jelentések fejlesztője
 - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -221,7 +221,7 @@ Az ER formátum alkalmazásfüggő paraméterei jogi személyektől-függőek. H
 
 Ezzel az exportálás-importálás módszerrel olyan ER formátumhoz kapcsolódó alkalmazásspecifikus paramétereket is átvihet a Finance másik példányába, amely eredetileg az egyik Finance példányhoz volt konfigurálva.
 
-Ha egy ER-formátum alkalmazásspecifikus paramétereit konfigurálja, majd egy későbbi verzióját importálja ugyanannak a formátumnak az aktuális Finance példányá, a meglévő alkalmazásspecifikus paramétereket nem alkalmazza a program az importált verzióra, hacsak nem az **Alkalmazásspecifikus paraméterek használata az elektronikus jelentéskészítési formátumok előző verzióiból** funkciót használja. További tudnivalókat a [Meglévő paraméterek újrafelhasználása](#reuse-existing-parameters) részben olvashat, a témakör későbbi részében.
+Ha egy ER-formátum alkalmazásspecifikus paramétereit konfigurálja, majd egy későbbi verzióját importálja ugyanannak a formátumnak az aktuális Finance példányá, a meglévő alkalmazásspecifikus paramétereket nem alkalmazza a program az importált verzióra, hacsak nem az **Alkalmazásspecifikus paraméterek használata az elektronikus jelentéskészítési formátumok előző verzióiból** funkciót használja. A további tudnivalókat lásd [a cikk Meglévő paraméterek](#reuse-existing-parameters) újrafelhasználása című részében.
 
 Amikor importálásra kiválaszt egy fájlt, akkor az adott fájl alkalmazásspecifikus paramétereinek szerkezetét összeveti az importálásra kijelölt ER formátum kapcsolódó, **Keresés** típusú adatforrásainak szerkezetével. Az importálás alapértelmezetten csak akkor történik meg, amikor az alkalmazásspecifikus paraméterek szerkezete megfelel a kapcsolódó adatforrás struktúrájának az importáláshoz kiválasztott ER-formátumban. Ha a szerkezetek nem egyeznek, akkor egy figyelmeztető üzenet tájékoztatja, hogy az importálás nem hajtható végre. Ha kényszeríti az importálást, akkor a program a kijelölt ER formátumra vonatkozó meglévő alkalmazásfüggő paramétereket kitörli, és a kezdetektől fogva újra be kell állítani őket.
 

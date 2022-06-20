@@ -1,6 +1,6 @@
 ---
 title: FORMAT ER-függvény
-description: A témakör tájékoztatást nyújt a FORMAT Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
+description: Ez a cikk az ELEKTRONIKUS JELENTÉSFORMÁTUM (ER) funkcióval kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dbde3ebfd2670639a2fff19d83ea9bd8d15c22b09b43ab49ae1b9e35562625a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ce9dd95dc347416f6f9c3024b0b1de3f60f88bfb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720880"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876776"
 ---
 # <a name="format-er-function"></a>FORMAT ER-függvény
 
@@ -92,7 +92,7 @@ Ha ugyanazt a jelentést 2015. december 17-én a **Litware Retail** vevőre vona
 >[!NOTE]
 > A címkék ER-képleteinél a következő szintaxis kerül alkalmazásra:
 >
-> - **A Microsoft Dynamics 365 Finance alkalmazás erőforrásaiból származó címkék esetében:** **\@X**, ahol **X** a címkeazonosító az alkalmazásobjektum-fában (AOT)
+> - **Címkék a Microsoft Dynamics 365 Pénzügy alkalmazás erőforrásaiból:** **\@ X**, **ahol X** az alkalmazásobjektum-fában található címkeazonosító
 > - **Az ER-konfigurációkban található címkékhez:** **@"GER_LABEL:X"**, ahol **X** az ER-konfigurációban található címkeazonosító
 
 ## <a name="additional-resources"></a>További erőforrások

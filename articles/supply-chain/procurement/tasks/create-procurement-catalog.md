@@ -1,6 +1,6 @@
 ---
 title: Beszerzési katalógus létrehozása
-description: Ez a témakör a beszerzési katalógus létrehozásának lépéseit mutatja be.
+description: Ez a cikk bemutatja a beszerzési katalógusok létrehozásához szükséges eljárásokat.
 author: GalynaFedorova
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e94f2ef23a3c4020f46138a10fcdf84552451515
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8e35e8c5b5c93fa9aac914f04e7ea658748cb052
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673866"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869546"
 ---
 # <a name="create-a-procurement-catalog"></a>Beszerzési katalógus létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a beszerzési katalógus létrehozásának lépéseit mutatja be. Ezt a feladatot tipikusan egy beszerzési szakember végzi el. Azt is megtudhatja, hogy hogyan használhatják az alkalmazottak a katalógust egy igénylést létrehozásakor. Katalógus létrehozása előtt már kell egy beszerzési kategória hierarchiával rendelkeznie a rendszerben. Az új katalógussal örökli a hierarchiát, minden olyan termékkel együtt, ami a hierarchiában benne van. Használhatja ezt a segédletet az USMF bemutató adatok vállalatban, ahol a beszerzési kategóriák hierarchiája rendelkezésre áll, ugyanúgy, mint az eljárásban használt példák.
+Ez a cikk bemutatja a beszerzési katalógusok létrehozásához szükséges eljárásokat. Ezt a feladatot tipikusan egy beszerzési szakember végzi el. Azt is megtudhatja, hogy hogyan használhatják az alkalmazottak a katalógust egy igénylést létrehozásakor. Katalógus létrehozása előtt már kell egy beszerzési kategória hierarchiával rendelkeznie a rendszerben. Az új katalógussal örökli a hierarchiát, minden olyan termékkel együtt, ami a hierarchiában benne van. Használhatja ezt a segédletet az USMF bemutató adatok vállalatban, ahol a beszerzési kategóriák hierarchiája rendelkezésre áll, ugyanúgy, mint az eljárásban használt példák.
 
 
 ## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>Győződjön meg arról, hogy létezik a beszerzési kategóriák hierarchiája

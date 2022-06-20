@@ -1,6 +1,6 @@
 ---
 title: FILTER ER-funkció
-description: A témakör tájékoztatást nyújt a FILTER Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
+description: Ez a cikk a FILTER Electronic Reporting (ER) funkcióval kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
 ms.date: 12/14/2021
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: dfa4afdcfad8c1855a10e1fa37c36cc5b20682ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922423"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884517"
 ---
 # <a name="filter-er-function"></a>FILTER ER-funkció
 
@@ -56,10 +56,10 @@ Ez a függvény eltér a [WHERE](er-functions-list-where.md) függvénytől, miv
 Ha a függvényhez konfigurált egyik vagy mindkét argumentum (`list` és `condition`) nem engedélyezi ennek a kérésnek a lefordítását a közvetlen SQL-hívásra, akkor a tervezési időben kivétel történik. Ez a kivétel tájékoztatja a felhasználót, hogy a `list` vagy `condition` nem használható az adatbázis lekérdezéséhez.
 
 > [!NOTE]
-> A funkció másképp működik, mint a funkció, ha a funkció a `FILTER``WHERE` kiválasztási feltételek [`VALUEIN`](er-functions-logical-valuein.md) megadására használható.
+> A `FILTER` funkció másképp működik, mint a `WHERE` funkció, [`VALUEIN`](er-functions-logical-valuein.md) ha a funkció a kiválasztási feltételek megadására használható.
 > 
-> - Ha a függvényt a függvény hatókörében használják, és a második argumentum olyan adatforrásra hivatkozik, amely nem ad vissza rekordokat, a rendszer a logikai hamis értéket `VALUEIN``WHERE` figyelembe véve adja `VALUEIN`*[...](er-formula-supported-data-types-primitive.md#boolean)*`VALUEIN` vissza. Ebből következően a kifejezés nem ad vissza `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` szállítói rekordokat, ha a **VendGroups adatforrás nem ad vissza** szállítóicsoport-rekordot.
-> - Ha a függvényt a függvény hatókörében használják, és a második argumentum olyan adatforrásra hivatkozik, amely nem ad vissza rekordokat, a rendszer figyelmen kívül hagyja a logikai értékként megadott hamis `VALUEIN``FILTER``VALUEIN`*[...](er-formula-supported-data-types-primitive.md#boolean)*`VALUEIN` értéket. Emiatt a kifejezés a szállítói adatforrás összes szállítói rekordját visszaadja, még akkor is, ha a `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))`**·** **VendGroups adatforrás nem ad vissza** szállítóicsoport-rekordot.
+> - `VALUEIN` Ha a függvényt a `WHERE` függvény hatókörében használják, és a második argumentum olyan adatforrásra hivatkozik, `VALUEIN` amely nem ad vissza rekordokat, a rendszer a logikai hamis *[...](er-formula-supported-data-types-primitive.md#boolean)*`VALUEIN` értéket figyelembe véve adja vissza. Ebből következően a kifejezés `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` nem ad vissza szállítói rekordokat, ha **a VendGroups** adatforrás nem ad vissza szállítóicsoport-rekordot.
+> - `VALUEIN` Ha a függvényt a `FILTER` függvény hatókörében használják, és a második argumentum olyan adatforrásra hivatkozik, `VALUEIN` amely nem ad vissza rekordokat, *[a rendszer figyelmen kívül hagyja a logikai értékként megadott](er-formula-supported-data-types-primitive.md#boolean)*`VALUEIN` hamis értéket. Emiatt a kifejezés `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` a **szállítói** adatforrás összes szállítói rekordját visszaadja, még akkor is, **ha a VendGroups** adatforrás nem ad vissza szállítóicsoport-rekordot.
 
 ## <a name="example-1"></a>1. példa
 

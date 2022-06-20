@@ -1,6 +1,6 @@
 ---
-title: Eltávolított vagy elavult Platform-funkciók
-description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve amelyek a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
+title: A platform eltávolított vagy elavult funkciói
+description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve a Pénzügyi és műveletek alkalmazás platformfrissítései során tervezett eltávolításra vannak tervezve.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811246"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945804"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>A platform eltávolított vagy elavult funkciói
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve amelyek a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
+Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve a Pénzügyi és műveletek alkalmazás platformfrissítései során tervezett eltávolításra vannak tervezve.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
@@ -40,7 +40,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A pénzügyek és műveletek (Dynamics 365) alkalmazás és platform elavult, hogy egyetlen mobil platformra, azaz egy platformra konszolidálunk Power Apps. |
-| **Felváltotta másik szolgáltatás?**   | Igen, a Pénzügy és műveletek alkalmazás adatain keresztüli mobil tapasztalatok integrációval is építhetőek Power Platform. További [részleteket a mobil](../power-platform/build-mobile-experiences.md) tapasztalatok építésénél talál. |
+| **Felváltotta másik szolgáltatás?**   | Igen, a Pénzügy és műveletek alkalmazás adatain keresztüli mobil tapasztalatok integrációval is építhetőek Power Platform. További részleteket [a](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) post post és [Building mobil tapasztalatokkal](../power-platform/build-mobile-experiences.md) talál. |
 | **Érintett területek**         | Finance and Operations alkalmazások |
 | **Telepítési beállítás**              | Minden |
 | **Állapot**                         | Elavult. A támogatás végének dátuma 2024. október. |

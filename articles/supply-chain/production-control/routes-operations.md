@@ -1,6 +1,6 @@
 ---
 title: Útvonalak és műveletek
-description: Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban.
+description: Ez a cikk az útvonalakkal és műveletekkel kapcsolatban tartalmaz tájékoztatást.
 author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: 103c7007cd002c5953d096ff6001a93c4936b702
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856019"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban. Az útvonal határozza meg egy termék vagy termékváltozat előállításának folyamatát. Leírja az termelési folyamat minden egyes lépését (műveletét), valamint meghatározza a lépések végrehajtásának sorrendjét is. Az útvonal minden egyes lépés esetében meghatározza a szükséges üzemi erőforrásokat, beállítási időt és futtatási időt, továbbá azt, hogy miként kell számítani a költséget.
+Ez a cikk az útvonalakkal és műveletekkel kapcsolatban tartalmaz tájékoztatást. Az útvonal határozza meg egy termék vagy termékváltozat előállításának folyamatát. Leírja az termelési folyamat minden egyes lépését (műveletét), valamint meghatározza a lépések végrehajtásának sorrendjét is. Az útvonal minden egyes lépés esetében meghatározza a szükséges üzemi erőforrásokat, beállítási időt és futtatási időt, továbbá azt, hogy miként kell számítani a költséget.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -223,7 +223,7 @@ Ez a módszer használata esetén a **műveleti kapcsolatok** oldal lesz az els�
 Ha nem ad meg üzemi erőforrást vagy erőforráscsoportot egy művelet erőforrásigényének részeként, az alkalmazott erőforrások különböző sebességgel működhetnek. Emiatt az egy-egy művelet feldolgozásához szükséges idő változó lehet. A probléma megoldásához használhatja a műveleti kapcsolat **Képlet** mezőjét, ahol megadhatja a feldolgozási idő kiszámításának módját. Az alábbi lehetőségek közül választhat:
 
 - **Szabványos** – (Alapértelmezett beállítás) A számítás csak a műveleti kapcsolat mezőit használja, és megszorozza a megadott futási időt a rendelés mennyiségével.
-- **Kapacitás** – A számítás magába foglalja a **Kapacitás** mezőt az üzemi erőforrásból. Ezért az idő erőforrásfüggő. Az üzemi erőforrásnál megadott érték óránkénti kapacitás. A **Feldolgozási időt** úgy számítja ki a rendszer, hogy a **Rendelési mennyiséget** a **Kapacitással** elosztja. A kapacitás értéke nem egy bizonyos mértékegységre jellemző, ezért nem konvertálható a Kapacitásegység mező alapján, amely csak egy leíró mező, amely nem használatos **számításokban**.
+- **Kapacitás** – A számítás magába foglalja a **Kapacitás** mezőt az üzemi erőforrásból. Ezért az idő erőforrásfüggő. Az üzemi erőforrásnál megadott érték óránkénti kapacitás. A **Feldolgozási időt** úgy számítja ki a rendszer, hogy a **Rendelési mennyiséget** a **Kapacitással** elosztja. A kapacitás értéke nem egy **bizonyos** mértékegységre jellemző, ezért nem konvertálható a Kapacitásegység mező alapján, amely csak egy leíró mező, amely nem használatos számításokban.
 - **Köteg** – A kötegkapacitás kiszámítása a műveleti kapcsolat adatainak felhasználásával történik. Ezt követően a rendelt mennyiség alapján kiszámítható a kötegek száma, és így a feldolgozási idő is.
 - **Erőforrásköteg** – Ez a lehetőség gyakorlatilag megegyezik a **Köteg** beállítással. A számítás azonban magába foglalja a **Kötegkapacitás** mezőt a műveletek erőforrás mezőből. Ezért az idő erőforrásfüggő.
 

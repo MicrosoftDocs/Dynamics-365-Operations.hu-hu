@@ -1,6 +1,6 @@
 ---
 title: A Tervezési optimalizálás által használt dátum- és időparaméterek
-description: Ez a témakör a Tervezési optimalizálási műveletei során használt dátum- és időparaméterekkel kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk a tervezés optimalizálási műveletei során használt dátum- és időparaméterekkel kapcsolatban tartalmaz tájékoztatást.
 author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 0708404f286253449e0400fc65680e903f6d1e9b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468832"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885899"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>A Tervezési optimalizálás által használt dátum- és időparaméterek
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a Tervezési optimalizálási műveletei során használt dátum- és időparaméterekkel kapcsolatban tartalmaz tájékoztatást.
+Ez a cikk a tervezés optimalizálási műveletei során használt dátum- és időparaméterekkel kapcsolatban tartalmaz tájékoztatást.
 
 Míg a beépített alaptervezési motor minden számításban tranzakciódátumokat használ, a Tervezési optimalizálás a dátumokká konvertált dátum- és időértékeket használja. Ez a viselkedéssel kapcsolatos eltérés olyan helyzetekhez vezethet, amikor például az alaptervezés futtatásakor éjfélkor létrehozott előrejelzési tranzakciók nem szerepelnek, mivel a tervezési optimalizálás figyelembe veszi, hogy ezeket az aktuális dátum előtt hozták létre.
 

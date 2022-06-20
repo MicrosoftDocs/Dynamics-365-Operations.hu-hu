@@ -1,6 +1,6 @@
 ---
 title: Több alkalmazási táblából származó adatok beolvasásához használja a JOIN adatforrásokat az ER-modell-leképezésekben.
-description: Ez a témakör bemutatja, hogyan használhatók JOIN típusú adatforrások elektronikus jelentésekhez (ER).
+description: Ez a cikk bemutatja, hogy hogyan használhatók a JOIN típusú adatforrások az elektronikus jelentéskészítésben (ER).
 author: NickSelin
 ms.date: 04/26/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: c9a06c048e98676e30a6652cad6634c2e13531d4ebc6d35f325f4c7153cd82ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0994c19ad79a3e73dc787ef8d82716db637f9ab0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723213"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845518"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Több alkalmazási táblából származó adatok beolvasásához használja a JOIN adatforrásokat az elektronikus jelentéskészítési (ER) modell-leképezésekben.
 
@@ -40,15 +40,15 @@ A konfigurált **Egyesítés** adatforrásban, amikor az összes adatforrás a *
 > [!NOTE]
 > A **VALUEIN** függvény használata az ER-kifejezésekben, amelyek meghatározzák, hogy milyen feltételekkel lehet egyesíteni rekordokat az Egyesítés típusú adatforrásokból még nem támogatott. Keresse fel a [Függvénytervező az elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md) oldalt az ezzel a függvénnyel kapcsolatos további részletekért.
 
-Ha további tájékoztatást szeretne erről a funkcióról, végezze el a példafeladatot ebben a témakörben.
+A funkcióval kapcsolatos további tudnivalókat az alábbi példában olvashatja.
 
 ## <a name="example-use-join-data-sources-in-er-model-mappings"></a>Példa: JOIN adatforrások használata az ER modell-leképezésekben
 
-A következő lépések elmagyarázzák hogy a rendszergazda vagy az elektronikus jelentéskészítési fejlesztő hogyan konfigurálhatja az elektronikus jelentéskészítés (ER) model-léleképezését, ha egyszerre több alkalmazási táblából szeretné beolvasni az adatokat, ha az **Egyesítés** típusú adatforrások használatával az adatelérési teljesítmény javításához. Ezeket a lépéseket bármely Dynamics 365 Finance vagy Regulatory Configuration Service (RCS)-vállalathoz végrehajthatja.
+A következő lépések elmagyarázzák hogy a rendszergazda vagy az elektronikus jelentéskészítési fejlesztő hogyan konfigurálhatja az elektronikus jelentéskészítés (ER) model-léleképezését, ha egyszerre több alkalmazási táblából szeretné beolvasni az adatokat, ha az **Egyesítés** típusú adatforrások használatával az adatelérési teljesítmény javításához. Ezek a lépések a Dynamics 365 Finance vagy Regulatory Configuration Services (RCS) bármely vállalatára elvégezhetők.
 
 ### <a name="prerequisites"></a>Előfeltételek
 
-A jelen témakörben szereplő példák végrehajtásához a következők egyikéhez hozzáaféréssel kell rendelkeznie, attól függően, hogy milyen szolgáltatással kívánja elvégezni a lépéseket:
+A példában olvasható példák befejezéséhez a következő lehetőségek egyikének elérhetőnek kell lennie attól függően, hogy milyen szolgáltatás használatos a fenti lépésekben:
 
 **Hozzáférés a Finance alkalmazáshoz a következő szerepkörök egyikével:**
 
@@ -257,9 +257,9 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
 ## <a name="limitations"></a>Korlátozások
 
-Amint a témakör példájában látható, az **EGYESSÍTÉS** adatforrás több olyan adatforrásból is elvégezhető, amely leírja azon rekordok egyedi adathalmazait, amelyeket végül egyesíteni kell. Ezeket az adatforrásokat a beépített ER [SZŰRŐ](er-functions-list-filter.md) funkcióval lehet konfigurálni. Amikor az adatforrás úgy van beállítva, hogy az az **EGYESÍTÉS** adatforráson túl legyen meghívva, az adatválasztás feltételei részeként használhat vállalattartományokat. Az **EGYESÍTÉS** adatforrás kezdeti implementációja nem támogatja az ilyen típusú adatforrásokat. Ha például egy [SZŰRŐ](er-functions-list-filter.md)alapú adatforrást hív meg egy **EGYESÍTÉS** adatforrás végrehajtásának hatókörén belül, akkor kivétel történik, ha a meghívott adatforrás az adatválasztási feltételének részeként tartalmaz vállalati tartományokat.
+Amint a témakör példája alapján látható, a JOIN **adatforrás több olyan adatforrásból is létrehozható,** amelyek leírják az egyes rekordok egyes adatkészleteit, amelyekhez végül csatlakozni kell. Ezeket az adatforrásokat a beépített ER [SZŰRŐ](er-functions-list-filter.md) funkcióval lehet konfigurálni. Amikor az adatforrás úgy van beállítva, hogy az az **EGYESÍTÉS** adatforráson túl legyen meghívva, az adatválasztás feltételei részeként használhat vállalattartományokat. Az **EGYESÍTÉS** adatforrás kezdeti implementációja nem támogatja az ilyen típusú adatforrásokat. Ha például egy [SZŰRŐ](er-functions-list-filter.md)alapú adatforrást hív meg egy **EGYESÍTÉS** adatforrás végrehajtásának hatókörén belül, akkor kivétel történik, ha a meghívott adatforrás az adatválasztási feltételének részeként tartalmaz vállalati tartományokat.
 
-A Microsoft Dynamics 365 Finance 10.0.12 verzió (2020. augusztus) esetében a vállalati tartományokat is használhat az adatválasztás feltételének [SZŰRŐ](er-functions-list-filter.md) alapú adatforrásokban, amely egy **EGYESÍTÉS** adatforrás végrehajtásának hatókörében lettek meghívva. Az alkalmazás [lekérdezés](../dev-ref/xpp-library-objects.md#query-object-model) szerkesztőjének korlátai miatt a vállalati tartományok csak az **EGYESÍTÉS** adatforrás első adatforrásához használhatók.
+Microsoft Dynamics A 365 Finance 10.0.12 verziójában (2020. augusztus), [a vállalattartományokat fel lehet használni a SZŰRÉS](er-functions-list-filter.md) alapú adatforrások adatválasztási feltételének részeként, ezeket a **JOIN adatforrások végrehajtási hatókörében hívták** meg. Az alkalmazás [lekérdezés](../dev-ref/xpp-library-objects.md#query-object-model) szerkesztőjének korlátai miatt a vállalati tartományok csak az **EGYESÍTÉS** adatforrás első adatforrásához használhatók.
 
 ### <a name="example"></a>Példa
 

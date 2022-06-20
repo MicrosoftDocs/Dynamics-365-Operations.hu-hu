@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.23 szolgáltatásban (2022. január)
-description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.23 új vagy módosított szolgáltatásait írja le.
+description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.23 rendszer új vagy módosult funkcióit ismerteti.
 author: kamaybac
 ms.date: 10/15/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 86e33296fd8631082e47bf6814d8e5e716d9fa1b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: acffe97cf1844f16a70c716a7f2078b1e9a072d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691470"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849474"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.23 szolgáltatásban (2022. január)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.23 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.1037 a buildszáma, és a következő módon érhető el:
+Ez a cikk felsorolja azokat a funkciókat, amelyek vagy újak, vagy módosulnak a Microsoft Dynamics 365 Supply Chain Management 10.0.23-as verziójában. Ennek a verziónak 10.0.1037 a buildszáma, és a következő módon érhető el:
 
 - **A kiadás előzetes verziója** 2021. október
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2021. december
@@ -29,9 +29,9 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.23 változa
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: A *Funkció* oszlop a [kiadási tervre](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features) mutató hivatkozásokat tartalmaz, amelyeken látható az egyes funkciók hivatalos kiadási dátuma. A *További tudnivalók* oszlopban további részletek és/vagy a kapcsolódó dokumentációra mutató hivatkozások találhatóak. A funkciók bekapcsolásának meghatározásához lásd az *Engedélyező* oszlopban. A funkciókezelés használatávall kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Lehet, hogy frissítjük ezt a témát, hogy tartalmazza azokat a funkciókat, amelyek a téma eredeti közzététele után kerültek be a buildbe.
+Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: A *Funkció* oszlop a [kiadási tervre](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features) mutató hivatkozásokat tartalmaz, amelyeken látható az egyes funkciók hivatalos kiadási dátuma. A *További tudnivalók* oszlopban további részletek és/vagy a kapcsolódó dokumentációra mutató hivatkozások találhatóak. A funkciók bekapcsolásának meghatározásához lásd az *Engedélyező* oszlopban. A funkciókezelés használatávall kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Előfordulhat, hogy a cikk első közzététele után frissítjük ezt a cikket, hogy szerepeljenek a buildben található funkciók.
 
-| Szolgáltatásterület | Funkció | További információ | Engedélyezte:   |
+| Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
 | Globális címjegyzék | A címbeállításban minden országhoz/területhez meg kell határoznia egy alapértelmezett államot/tartományt | Ezzel minden országhoz/területhez meghatározhat egy alapértelmezett államot/tartományt a globális címjegyzék címbeállításában. Ha be van állítva az alapértelmezett állam/tartomány, akkor ez lesz az állam/tartomány mezők alapértelmezett értéke, amikor új megye- vagy városrekordot hoz létre az adott országhoz/régióhoz. Lásd még [Címbeállítás.](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json) | Alapértelmezés szerint engedélyezve. |
 | Készlet&nbsp;és&nbsp;logisztika | [A Warehouse Management mobilalkalmazás feladatainak szüneteltetése](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | [Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez](../warehousing/warehouse-app-detours.md) | Funkciókezelés (*Warehouse Management alkalmazás kitérők*) |
@@ -63,9 +63,9 @@ Ha bármelyik funkciót be vagy ki szeretné kapcsolni, akkor ezt a [funkciókez
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 
-A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelentősen frissítve. Ezek a témakörök nem feltétlenül kapcsolódnak az ehhez a verzióhoz hozzáadott új funkciókhoz, mint azt az előző szakaszban felsoroltak. Előfordulhat azonban, hogy segítenek a meglévő funkciókból további lehetőségeket kihozni.
+Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikkeket. Ezek a cikkek nem feltétlenül kapcsolódnak az ehhez a verzióhoz hozzáadott új funkciókhoz, mint azt az előző szakaszban felsoroltak. Előfordulhat azonban, hogy segítenek a meglévő funkciókból további lehetőségeket kihozni.
 
-| Szolgáltatásterület | Új vagy frissített témakörök |
+| Szolgáltatásterület | Új vagy frissített cikkek |
 |---|---|
 | Tervezési változáskezelés | A [Mérnöki attribútumok és mérnöki attribútumok keresése](../engineering-change-management/engineering-attributes-and-search.md) immár leírja, hogyan működik a mérnöki attribútumok öröklése. |
 | Alaptervezés | Az [Alaptervezés az igény-előrejelzésekkel](../master-planning/planning-optimization/demand-forecast.md) és [Előrejelzés-csökkentési kulcsok](../master-planning/reduction-keys.md) immár tájékoztatást ad arról, hogyan lehet használni a csökkentési kulcsokat. |
@@ -74,9 +74,9 @@ A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelent�
 | Alaptervezés | [Készletütemezés](../master-planning/supply-schedule.md) |
 | Raktárkezelés | [Globális mobileszköz-paraméterek](../warehousing/mobile-device-parameters.md) |
 | Raktárkezelés | [Horgonyzás](../warehousing/anchoring.md) |
-| Értékesítés és marketing | A vállalatközi kereskedelem leírása most részletesen, a [Vállalatközi kereskedelem beállításával](../sales-marketing/intercompany-trade-set-up.md) és a kapcsolódó témakörökkel kezdődik. |
+| Értékesítés és marketing | A vállalatközi kereskedelem leírása mostantól részletes, [a](../sales-marketing/intercompany-trade-set-up.md) vállalatközi kereskedelem és a kapcsolódó cikkek beállításával kezdődik. |
 | Értékesítés és marketing | [Értékesítési előzmények adattisztítási teljesítményének javításai](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
-| Készletgazdálkodás | A készlet láthatósági dokumentációja ki lett bővítve és frissítve lett, és a [Készletláthatóság bővítményének áttekintése](../inventory/inventory-visibility.md) témakörrel és kapcsolódó témaköreivel kezdődik. |
+| Készletgazdálkodás | A készlet láthatósági dokumentációja ki lett bontva és frissítve lett, [a kapcsolódó cikkek és a készlet láthatósági](../inventory/inventory-visibility.md) bővítményével kezdve. |
 | Raktárkezelés | [Mobileszköz felhasználói fiókjai](../warehousing/mobile-device-work-users.md) |
 
 ## <a name="additional-resources"></a>További erőforrások
@@ -97,12 +97,12 @@ Tekintse meg a [Dynamics 365 és ipari felhők: 2021-es 2. kiadási hullám csom
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 
-A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltatásai](removed-deprecated-features-scm-updates.md) témakör azokat a funkciókat írja le, amelyek el lettek távolítva a Supply Chain Management szolgáltatásól vagy eltávolításuk ütemezve van.
+A [cikk Eltávolított Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) vagy elavult funkciói olyan funkciókat írnak le, amelyek már el vannak távolítva, illetve amelyek már el vannak távolítva vagy elavultak az Ellátásilánc-kezeléshez.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
 
-Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
+Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) az értékcsökkenési értesítés 12 hónappal az eltávolítás előtt törlődik az Eltávolított vagy elavult funkciókból.
 
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 

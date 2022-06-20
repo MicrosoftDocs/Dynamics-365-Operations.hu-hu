@@ -1,6 +1,6 @@
 ---
 title: Műveletek szabálytalanságokhoz kapcsolódóan
-description: Ez a témakör azt ismerteti, hogyan lehet létrehozni és használni a szabálytalanságokhoz kapcsolódó műveleteket.
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni és használni a szabálytalanságok műveleteit.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35619454af8b1cb1b7d383d393362f58d9dd0ea6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d2e63156dd2b230da7f1ea89e2c2006c1b4f3eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573873"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847991"
 ---
 # <a name="operations-for-nonconformances"></a>Műveletek szabálytalanságokhoz kapcsolódóan
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet létrehozni és használni a szabálytalanságokhoz kapcsolódó műveleteket.
+Ez a témakör azt ismerteti, hogyan lehet létrehozni és használni a szabálytalanságok műveleteit.
 
 A **Műveletek** lapot használhatja a jóváhagyott szabálytalanságokon elvégezhető műveletek osztályzásához. Amikor a szabálytalansághoz egy kapcsolódó műveletet rendel, részleteket adhat meg a kapcsolódó anyagról, például a munkaidőről és költségekről, amelyek a művelet végrehajtásához szükségesek. A rendszer ezen információ alapján számítja ki a művelet becsült költségét. A részletes adatok és a becsült költségek csak tájékoztató jellegűek. A minőséggel kapcsolatos műveletek nem olyan műveletek, mint a termelési útvonalban meghatározható műveletek.
 

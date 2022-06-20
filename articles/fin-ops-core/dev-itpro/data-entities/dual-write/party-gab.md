@@ -1,6 +1,6 @@
 ---
 title: Fél és globális címjegyzék
-description: Ez a témakör a kettős írás Fél és globális címjegyzék-funkcióit ismerteti.
+description: Ez a témakör a kettős írású fél és globális címjegyzék funkcióját írja le.
 author: RamaKrishnamoorthy
 ms.date: 04/25/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892193"
 ---
 # <a name="party-and-global-address-book"></a>Fél és globális címjegyzék
 
@@ -292,7 +292,7 @@ Ahogy az alábbi táblázatban látható, az táblaleképezések gyűjteménye e
 | [Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák |
 | [Üdvözlések](mapping-reference.md#228) | msdyn\_salutations |
 | [Szállítók V2](mapping-reference.md#202) | msdyn\_vendors |
-| [CDS-címszerepkre](mapping-reference.md#301) |msdynaddressroles\_|
+| [CDS-címszerepkre](mapping-reference.md#301) |msdyn\_ addressroles|
 
 További tájékoztatás: [Kettős írású leképezési hivatkozás](mapping-reference.md).
 

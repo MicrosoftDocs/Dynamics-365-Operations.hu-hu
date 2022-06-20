@@ -1,6 +1,6 @@
 ---
 title: Új ER-megoldás tervezése egyéni jelentés nyomtatásához
-description: Ez a témakör azt mutatja be, hogyan tervezhető elektronikus jelentési megoldás (ER) egyéni jelentés nyomtatásához.
+description: Ez a cikk bemutatja, hogyan lehet elektronikus jelentéskészítő (ER) megoldást tervezni az egyéni jelentések kinyomtatása során.
 author: NickSelin
 ms.date: 08/10/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 7194fa9243362d4eb61d6ce706e30a66c9cf3217
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323842"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847488"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Új ER-megoldás tervezése egyéni jelentés nyomtatásához
 
@@ -292,7 +292,7 @@ A konfiguráció 1. verziójának állapota **Piszkozatról** **Befejezett** ér
 További információ az ER-konfigurációk verziószámozásáról: [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md#component-versioning).
 
 > [!NOTE]
-> A konfigurált adatmodell a **Kérdőív** üzleti terület absztrakt ábrázolása, és nem tartalmaz konkrét, Microsoft Dynamics 365 Finance-specifikus összetevőket.
+> A konfigurált adatmodell **a** Microsoft Dynamics Kérdőív üzleti tartomány absztrakt ábrázolása, és nem tartalmaz kapcsolatot a 365 Pénzügy területhez specifikus műveletekkel.
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>Modell-leképezés tervezése a konfigurált adatmodellhez
 

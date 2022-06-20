@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a00e20569f05730296ef611938a94b73ebb7f6f5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d59b5a2c99813fee2e12e30e8694edf6da7391d9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735318"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909249"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Pályázók és a pályázatok adatainak manuális megadása
 
 > [!NOTE]
-> Az ebben a témakörben található toborzási funkciókat a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
+> A cikk toborzási funkcióit a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
 
 
 Ez az eljárás bemutatja, hogyan lehet manuálisan karbantartani a pályázóval és pályázatukkal kapcsolatos információkat. Megadhat és karban tarthat személyes információkat, állásinterjú dátumokat és időpontokat, referenciákat, kompetenciákat és a pályázó kérvényeit. A pályázók állásra való jelentkezésének állapotát is frissítheti, illetve a pályázókkal való kommunikáció céljából létrehozhat leveleket és e-maileket. Ha létrehoz egy pályázói rekordot, egy személyes rekord jön létre a pályázószámára a globális címjegyzékben. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.

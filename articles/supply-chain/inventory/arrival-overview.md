@@ -1,6 +1,6 @@
 ---
 title: Beérkezés áttekintése
-description: Ez a témakör a Beérkezés áttekintése funkcióival kapcsolatban tartalmaz tájékoztatást. A funkció része a Beérkezés áttekintése lap, és minden, várhatóan beérkező cikk áttekintését nyújtja.
+description: Ez a cikk az Érkezések áttekintése funkcióval kapcsolatban tartalmaz tájékoztatást. A funkció része a Beérkezés áttekintése lap, és minden, várhatóan beérkező cikk áttekintését nyújtja.
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
@@ -18,20 +18,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8118db9469c01c43b23c64ee383ac1d383a0ba7a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567439"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874072"
 ---
 # <a name="arrival-overview"></a>Beérkezés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Beérkezés áttekintése funkcióival kapcsolatban tartalmaz tájékoztatást. A funkció része a Beérkezés áttekintése lap, és minden, várhatóan beérkező cikk áttekintését nyújtja.
+Ez a cikk az Érkezések áttekintése funkcióval kapcsolatban tartalmaz tájékoztatást. A funkció része a Beérkezés áttekintése lap, és minden, várhatóan beérkező cikk áttekintését nyújtja.
 
-A **Beérkezés áttekintése** lap az összes várhatóan bejövő cikkek áttekintését nyújtja. Megjeleníti az áttekintés alapján inicializálható érkezéseket is. Ez a témakör a bevételezési folyamatra összpontosít.
+A **Beérkezés áttekintése** lap az összes várhatóan bejövő cikkek áttekintését nyújtja. Megjeleníti az áttekintés alapján inicializálható érkezéseket is. Ez a cikk a bevételi folyamatra fókuszál.
 
 ## <a name="business-scenario"></a>Üzleti eset
 Fontolja meg a következő példát a bevételezési folyamatokban.

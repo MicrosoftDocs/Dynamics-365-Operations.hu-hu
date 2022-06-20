@@ -1,6 +1,6 @@
 ---
 title: A termelési üzem végrehajtási felületének konfigurálása
-description: Ez a témakör azt mutatja be, hogyan lehet egy vagy több konfigurációt létrehozni a termelési üzem végrehajtási felületéhez. Amikor megnyitja a termelési üzem végrehajtási felületét, a program automatikusan betölti a kiválasztott konfigurációt és a feladatra vonatkozó szűrőket, amelyek a böngészővel és az eszközzel kapcsolatosak. A konfigurációban be kell állítania azokat a szabályokat, amelyek az adott használathoz szükségesek.
+description: Ez a témakör azt ismerteti, hogyan lehet egy vagy több konfigurációt létrehozni a termelési emelet végrehajtási felületére. Amikor megnyitja a termelési üzem végrehajtási felületét, a program automatikusan betölti a kiválasztott konfigurációt és a feladatra vonatkozó szűrőket, amelyek a böngészővel és az eszközzel kapcsolatosak. A konfigurációban be kell állítania azokat a szabályokat, amelyek az adott használathoz szükségesek.
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
-ms.translationtype: MT
+ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899411"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -35,11 +35,11 @@ Ez a témakör a telephelyen használt eszközök üzemenenkénti végrehajtási
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>A termelési üzem végrehajtási felületének és a kapcsolódó választható funkcióinak bekapcsolása
 
-A termelési üzem végrehajtási felületét, valamint a jelen témakörben leírt választható számos beállítást is be kell kapcsolni a rendszerben, mielőtt azokat használni lehetne. A [Funkció kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lapon bekapcsolhatja a következő alszakaszokban ismertetett funkciók egyikét vagy mindegyikét szükség szerint.
+A termelési emelet végrehajtási felületét, valamint számos, ebben a cikkben ismertetett opcionális beállítást be kell kapcsolva a rendszerben, mielőtt használnál egy ilyen felületet. A [Funkció kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lapon bekapcsolhatja a következő alszakaszokban ismertetett funkciók egyikét vagy mindegyikét szükség szerint.
 
 ### <a name="the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felülete
 
-Ez a témakörben ismertetett elsődleges funkció, amely előfeltétele a fejezetben említett összes többi funkciónak. A 10.0.25-ös ellátásilánc-kezelésben kötelező megadni, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterületÉn a Termelésirányítás végrehajtási szolgáltatását keresi.
+Ez az ebben a részben ismertetett elsődleges funkció, amely előfeltétele a fejezetben említett összes többi funkciónak. A 10.0.25-ös ellátásilánc-kezelésben kötelező megadni, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterületÉn a Termelésirányítás végrehajtási szolgáltatását keresi.
 
 ### <a name="generate-license-plates"></a>Azonosítótáblák előállítása
 
@@ -146,7 +146,7 @@ Ez a funkció a következő funkciók beállításait adja meg a Termelési **em
 - Az anyagfelhasználási helyesbítések engedélyezése a Jelentés **állapota párbeszédpanelről**. (Ehhez a funkcióhoz szükség van a *Regisztrálja az anyagfelhasználást a termelési emelet végrehajtási felületén (nem WMS)* szolgáltatáson.)
 - Projektazonosító alapján való keresés engedélyezése.
 
-A beállítások használatával kapcsolatban a témakör későbbi tájékoztatást tartalmaz.
+A beállítások használatával kapcsolatban a jelen cikk későbbi tájékoztatást tartalmaz.
 
 Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

@@ -1,6 +1,6 @@
 ---
 title: Készletegységgel rendelkező termékek szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
-description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Dynamics 365 Supply Chain Management raktáregységeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
+description: Ez a cikk a készletegység és a készletegység között szinkronizált termékek sablonjairól és a mögöttes feladatokról ad tárgyalja Dynamics 365 Supply Chain Management Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6ac346d735bc44e9f9660c60b23a73057e4b7306
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5f7658eacd20aa69a64d6288e9d29e53b6ccb002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566335"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887254"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a>Készletegységgel rendelkező termékek szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Dynamics 365 Supply Chain Management raktáregységeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
+Ez a cikk a készletegység és a készletegység között szinkronizált termékek sablonjairól és a mögöttes feladatokról ad tárgyalja Dynamics 365 Supply Chain Management Dynamics 365 Field Service.
 
 [![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
 A használt **Field Service termékek készletegységgel (Supply Chain Management – Field Service)** sablon a **Field Service termékek (Supply Chain Management – Field Serivce)** sablonon alapul. További információért, lásd: [Termékek szinkronizálása a Supply Chain Management szolgáltatásban a Field Service szolgáltatás termékeivel](field-service-product.md).
 
-Ez a témakör csak a két sablonok eltéréseit írja le: 
+Ez a témakör csak a két sablon közötti különbségeket írja le: 
 - **Készletegységgel rendelkező Field Service-termékek (Supply Chain Management alkalmazásból a Sales alkalmazásba)**
 - **Field Service-termékek (Supply Chain Management és Field Service között)** 
 

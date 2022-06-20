@@ -1,6 +1,6 @@
 ---
 title: Tervezett rendelések egyszerűsítve
-description: Ez a témakör azt írja le, hogyan lehet megtekinteni, kezelni és biztosra tervezni a tervezett rendeléseket a Tervezett rendelések egyszerűsített lapján.
+description: Ez a témakör azt írja le, hogyan lehet megtekinteni, kezelni és biztosra tervezni a tervezett rendeléseket az egyszerűsített Tervezett rendelések lapon.
 author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b039aa5481b835d3523b86c4ea88afff6a96ba8b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5f207fa1edb11d05910e22732cf54e100e4e3489
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887370"
 ---
 # <a name="planned-orders-simplified"></a>Tervezett rendelések egyszerűsítve
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt írja le, hogyan lehet megtekinteni, **kezelni és biztosra tervezni a tervezett rendeléseket a Tervezett rendelések egyszerűsített lapján**.
+Ez a témakör azt írja le, hogyan lehet megtekinteni, **kezelni és biztosra tervezni a tervezett rendeléseket az egyszerűsített Tervezett rendelések lapon**.
 
 A **Tervezett rendelések egyszerűsített** oldal a Tervezett rendelések lap **egyszerűsített** változata. Kevesebb beállítási lehetőséget biztosít, de gyorsabb a munka, ha csak a tervezett rendeléseket kell áttekintened, jóváhagyni és jóváhagyni.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>A funkció bekapcsolása a rendszerhez
 
-Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, [használja a Funkciókezelést](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), *és kapcsolja be a Tervezett rendelések egyszerűsített funkcióját*.
+Ha a rendszer még nem tartalmazza az ebben a cikkben ismertetett funkciókat, [használja a Funkciókezelést](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), *és kapcsolja be a Tervezett rendelések egyszerűsített funkcióját*.
 
 ## <a name="view-manage-and-firm-planned-orders"></a>Tervezett rendelések megtekintése, kezelése és biztosra rendelése
 

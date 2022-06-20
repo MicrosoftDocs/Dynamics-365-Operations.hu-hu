@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d594fc18a104c434a334a5b6d1d249330a6be9a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6c6387be5204fde6ebc7a4983567801900974af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877653"
 ---
 # <a name="inventory-value-report-examples-and-logic"></a>Készletérték-jelentés – példák és logika
 
@@ -28,7 +28,7 @@ Az egyes típusú készletérték-jelentések generálásról és használatáva
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>A példákban használt mintaadatok
 
-Az ebben a témakörben szereplő példák az ebben a szakaszban ismertetett minta tranzakciós adatokon alapulnak.
+Az ebben a részben ismertetett példák a készlettranzakció-mintaadatokon alapulnak.
 
 ### <a name="storage-dimension-setup"></a>Tárolásidimenzió beállítása
 
@@ -70,7 +70,7 @@ A példarendszer egy készletérték-jelentési konfigurációt tartalmaz, amely
 
 ## <a name="inventory-value-report-example-1"></a>Készletérték-jelentés – 1. példa
 
-Az alábbi táblázat és ábrák az ebben a témakörben korábban ismertetett mintaadatok és jelentéskonfigurációk használata esetén mutatják be az eredményeket.
+Az alábbi táblázat és ábrák az eredményeket mutatják be a példában korábban ismertetett mintaadatok és jelentéskonfigurációk használata során.
 
 | Erőforrás típusa | Erőforrás | Webhely | Hivatkozás | Készlet: pénzügyi mennyiség | Készlet: pénzügyi összeg | Készlet: feladott tényleges mennyiség | Készlet: feladott tényleges összeg | Készlet: mennyiség | Készlet: összeg | Átlagos egységenkénti költség |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,7 +91,7 @@ A következő ábra a Készletérték-jelentés **tárolási jelentését mutatj
 
 ## <a name="inventory-value-report-example-2"></a>Készletérték-jelentés – 2. példa
 
-A következő táblázat és ábrák az ebben a témakörben korábban ismertetett mintaadatok használata esetén mutatják be az eredményeket, **·** *de* a jelentés konfigurálása során a Szint mező értékét a Tranzakciók értékre módosítja, **·** *és a jelentés futtatásakor március 15-ére* állíthatja a "Dátumtartomány" mezőt.
+A következő táblázat és ábrák az eredményeket mutatják be, amikor a korábban ismertetett mintaadatokat használja, **·** *de* a jelentés konfigurálása során a Szint mező értékét a Tranzakciók értékre módosítja, **·** *és a jelentés futtatásakor március 15-ére* állíthatja a "Dátumtartomány" mezőt.
 
 | Erőforrás típusa | Erőforrás | Webhely | Dátum | Szám | Hivatkozás | Készlet: pénzügyi mennyiség | Készlet: pénzügyi összeg | Készlet: feladott tényleges mennyiség | Készlet: feladott tényleges összeg | Készlet: mennyiség | Készlet: összeg |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ A következő alszakaszok mutatják be a készlet május 30-ig való zárása ut
 
 ### <a name="example-3-when-the-totals-level-is-used"></a>3. példa az Összegszint használatakor
 
-Az alábbi táblázat a témakörben korábban ismertetett mintaadatok és jelentéskonfigurációk használata esetén mutatja be az eredményeket. (A jelentés konfigurációjában a **A** Szint mező az Összegek értékre *van állítva*.)
+Az alábbi táblázat bemutatja az eredményeket, amikor a mintaadatokat és a jelentés konfigurációját a jelen cikk korábban ismertetett módon használja. (A jelentés konfigurációjában a **A** Szint mező az Összegek értékre *van állítva*.)
 
 | Erőforrás típusa | Erőforrás | Webhely | Hivatkozás | Készlet: pénzügyi mennyiség | Készlet: pénzügyi összeg | Készlet: feladott tényleges mennyiség | Készlet: feladott tényleges összeg | Készlet: mennyiség | Készlet: összeg | Átlagos egységenkénti költség |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,7 +136,7 @@ Az alábbi táblázat a témakörben korábban ismertetett mintaadatok és jelen
 
 ### <a name="example-3-when-the-transactions-level-is-used"></a>3. példa a Tranzakciószint használata esetén
 
-Az alábbi táblázat bemutatja az eredményeket, amikor a témakörben korábban ismertetett mintaadatokat használja, **·** *de* a jelentés konfigurációjában a Szint mező értékét Át kell változtatni Tranzakciók értékre.
+Az alábbi táblázat bemutatja az eredményeket, amikor az ebben a cikkben korábban ismertetett mintaadatokat használja, **·** *de* a jelentés konfigurációjában a Szint mező értékét Tranzakció értékre módosítja.
 
 | Erőforrás típusa | Erőforrás | Webhely | Dátum | Szám | Hivatkozás | Készlet: pénzügyi mennyiség | Készlet: pénzügyi összeg | Készlet: feladott tényleges mennyiség | Készlet: feladott tényleges összeg | Készlet: mennyiség | Készlet: összeg |
 |---|---|---|---|---|---|---|---|---|---|---|---|

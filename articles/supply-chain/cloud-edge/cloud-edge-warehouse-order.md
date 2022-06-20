@@ -1,6 +1,6 @@
 ---
 title: Raktérkezelés rendelései felhőalapú és peremhálózat-lépték szerinti egységekhez
-description: Ez a témakör a raktári rendelési funkcióval kapcsolatban tartalmaz tájékoztatást, amely a raktári mérlegegység terhelésének részeként használatos.
+description: Ez a cikk a raktári rendelési képességekkel kapcsolatban tartalmaz tájékoztatást, amelyek a raktári mérlegegység terhelésének részeként használatosak.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: db254216e6c34b81f83c87a8fda454d0aeb1cece
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471692"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893526"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Raktérkezelés rendelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Nem minden üzleti funkció teljes mértékben támogatott a nyilvános előzetes verzióban, ha a mérlegegység munkaterheléseket használja. Ha a mérlegegységeket használja, ügyeljen arra, hogy csak azokat a folyamatokat használja, amelyeket ez a témakör kifejezetten támogatottként ír le.
+> Nem minden üzleti funkció teljes mértékben támogatott a nyilvános előzetes verzióban, ha a mérlegegység munkaterheléseket használja. Ha mérlegegységeket használ, mindenképpen csak azokat a folyamatokat használja, amelyek kifejezetten támogatottként írják le ezt a cikket.
 
 ## <a name="what-are-warehouse-orders"></a>Mi az a raktári rendelés?
 

@@ -1,6 +1,6 @@
 ---
 title: Funkciókezelés áttekintése
-description: Ez a témakör a funkciókezelést és annak használatát ismerteti.
+description: Ez a témakör ismerteti a szolgáltatáskezelést és annak használatát.
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0691bc34ac8b57d20cfbeb58b6a2e2a03a57d067
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068009"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850052"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -41,7 +41,7 @@ A funkciólista a következő információkat tartalmazza:
 - **Állapot** - Egy szimbólum jelzi, hogy egy funkció be van-e kapcsolva (pipa), ki van-e kapcsolva (üres), be van-e ütemezve (óra), kötelező-e (lakat), bekapcsolás előtt figyelmet igényel-e (figyelmeztető szimbólum), vagy nem kapcsolható be (X). A látható beállítást minden jogi személyhez használja a rendszer. Ne felejtse el, hogy ha a funkció be is van kapcsolva, a biztonság szabályozza azt. Ezért a funkció csak azon felhasználók számára lesz elérhető, akiknek biztonsági szerepkörük alapján hozzáférésük van hozzá. Csak olyan jogi személyekben érhető el, amelyekhez a felhasználó hozzáfér.
 - **Engedélyezési dátum** – Az a dátum, amikor a funkciót bekapcsolták, vagy ütemezve van a bekapcsolásra.
 - **Funkció hozzáadása** – Az a dátum, amikor a funkciót hozzáadták a környezethez. A program automatikusan beírja ezt a dátumot, amikor a havi kiadási ciklus során frissíti a környezetet.
-- **A funkció állapota** - A funkció aktuális életciklus állapota: **Előnézet**, **Felszabadítva** (üresen jelenik meg), **Alapértelmezés szerint bekapcsolva**, és **Kötelező**. Az állapotokkal később részletesebben foglalkozunk ebben a témakörben. 
+- **A funkció állapota** - A funkció aktuális életciklus állapota: **Előnézet**, **Felszabadítva** (üresen jelenik meg), **Alapértelmezés szerint bekapcsolva**, és **Kötelező**. Az államokról a cikk későbbi részletes adatai tartalmaznak részletes információkat. 
 - **Modul** – Az új funkció által érintett modul.
 
 > [!NOTE]
@@ -72,14 +72,14 @@ Ezeknek a jellemzőknek a **Funkcióállapot** oszlopa üres. A kezdetben kiadá
 
 ### <a name="on-by-default-features-optional"></a>Alapértelmezés szerint bekapcsolt funkciók (opcionális)
 
-Az **Alapértelmezés szerint bekapcsolt** állapotra frissített funkciók alapértelmezés szerint be vannak kapcsolva, de letilthatók. Miután a letiltható funkciók legalább hat hónapig **Kiadott** állapotban voltak, a következő nagy kiadásban várhatóan átkerülnek ebbe az állapotba. Az **Alapértelmezés szerint bekapcsolt** állapotba átváltott funkciók várhatóan a kiadáshoz tartozó [Újdonságok](../whats-new-changed.md) témakörben lesznek közölve. A frissítést a tulajdonos termékcsapat kezdeményezi.
+Az **Alapértelmezés szerint bekapcsolt** állapotra frissített funkciók alapértelmezés szerint be vannak kapcsolva, de letilthatók. Miután a letiltható funkciók legalább hat hónapig **Kiadott** állapotban voltak, a következő nagy kiadásban várhatóan átkerülnek ebbe az állapotba. Az alapértelmezés szerint **Be (On**[) funkcióra való váltás várható a Újdonságok](../whats-new-changed.md) a kiadás új cikkében. A frissítést a tulajdonos termékcsapat kezdeményezi.
 
 > [!NOTE]
 > Mivel ezek a funkciók automatikusan lesznek engedélyezve, fontos annak meghatározása, hogy a szervezete készen áll-e a funkciók átvételére, vagy több időre van szükség. Ha több időre van szükség, szükség lehet ezen funkciók ideiglenes letiltására. Vegye figyelembe, hogy egy funkció **Alapértelmezés szerint bekapcsolt** állapotba történő átváltása általában a funkció **Kötelező**-vé tétele előtt a fő verzióban történik. Ekkor már nem lesz lehetősége a funkció letiltására. 
 
 ### <a name="mandatory"></a>Kötelező
 
-**Kötelező** a funkciók várható végső állapota. Azt jelzi, hogy a funkciók be vannak kapcsolva, és nem lehet letiltani őket a Microsoft értesítése nélkül. A választható funkciók várhatóan két nagyobb kiadás után válnak kötelezővé. A kritikus funkciók kivételes jelleggel kötelezően bevezethetők.
+**Kötelező a** funkciók várható végső állapota. Azt jelzi, hogy a funkciók be vannak kapcsolva, és nem lehet letiltani őket a Microsoft értesítése nélkül. A választható funkciók várhatóan két nagyobb kiadás után válnak kötelezővé. A kritikus funkciók kivételes jelleggel kötelezően bevezethetők.
 
 ## <a name="example-of-expected-feature-lifecycles"></a>Példa a funkciók várható életciklusára
 

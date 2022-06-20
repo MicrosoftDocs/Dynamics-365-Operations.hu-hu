@@ -1,6 +1,6 @@
 ---
 title: Átmozgatási rendelések létrehozása a raktári alkalmazásból
-description: Ez a témakör azt részletezi, hogyan lehet átmozgatási rendeléseket létrehozni és feldolgozni a Raktárkezelés mobilalkalmazásból
+description: Ez a témakör azt ismerteti, hogyan lehet áthozni és feldolgozni a Raktárkezelés mobilalkalmazásból áthozott rendeléseket.
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: cbaeb120032bf2239fd9a5bce39fd7936229b308
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102938"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877450"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Átmozgatási rendelések létrehozása a raktári alkalmazásból
 
@@ -26,14 +26,14 @@ ms.locfileid: "8102938"
 
 Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy közvetlenül a Raktárkezelés mobilalkalmazásból hozzanak létre és dolgozzanak fel átmozgatási rendeléseket. A dolgozók azzal kezdik, hogy kiválasztják a célraktárat, majd az alkalmazás segítségével egy vagy több azonosítótáblát beolvasnak, hogy azonosítótáblát adhassanak hozzá az átmozgatási rendeléshez. Ha a raktári dolgozó kiválasztja a **Rendelés teljesítése** elemet, akkor egy kötegelt feladat létrehozza a szükséges átmozgatási rendelést és a rendelési sorokat az adott azonosítótáblákhoz regisztrált aktuális készlet alapján.
 
-## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a> A szolgáltatás be- és kikapcsolása
+## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a> A funkció be- és kikapcsolása
 
 A funkció használatba vétele előtt engedélyeznie kell a funkciót és annak előfeltételeit a rendszerben. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) oldalt a funkció állapotának ellenőrzéséhez, és szükség esetén engedélyezéséhez.
 
-1. Engedélyezze a következő két funkciót (sorrendben) a [szolgáltatáskezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületen. A Supply Chain Management 10.0.25-ös verziója alapértelmezés szerint mindkét funkció be van kapcsolva.
+1. Engedélyezze a következő két funkciót (sorrendben) [a Funkciókezelés munkaterületen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint mindkét funkció alapértelmezés szerint be van kapcsolva.
     1. *Raktári alkalmazás eseményeinek feldolgozása*
     1. *Átmozgatási rendelések létrehozása és feldolgozása a raktári alkalmazásból*
-1. A kimenő szállítmányok feldolgozásának automatizálásához engedélyeznie kell a [kimenő szállítmányok megerősítése kötegelt feldolgozásokból](confirm-outbound-shipments-from-batch-jobs.md) funkciót is.
+1. A kimenő szállítmányok feldolgozásának automatizálásához [engedélyeznie](confirm-outbound-shipments-from-batch-jobs.md) kell a Kimenő szállítmányok megerősítése kötegelt feladatokból szolgáltatást is.
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Mobileszköz-menüelem beállítása átmozgatási rendelések létrehozásához
 

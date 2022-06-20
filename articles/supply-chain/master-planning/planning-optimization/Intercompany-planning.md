@@ -1,6 +1,6 @@
 ---
 title: Vállalatközi tervezés
-description: Ez a témakör bemutatja a vállalatközi tervezést, és bemutatja, hogyan kell konfigurálni a vállalatközi tervezést a Microsoft Dynamics 365 Supply Chain Management Tervezési optimalizálás megoldásával.
+description: Ez a témakör leírja a vállalatközi tervezést, és bemutatja, hogyan kell konfigurálni a vállalatközi tervezést a Microsoft tervezésoptimalizálásával Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468496"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850670"
 ---
 # <a name="intercompany-planning"></a>Vállalatközi tervezés
 
@@ -29,9 +29,9 @@ ms.locfileid: "8468496"
 
 Néhány szervezetnél a logisztikai műveletek a szervezet többi jogi személyétől (vállalatától) függenek. Ezeket a műveleteket vállalatközi értékesítések és beszerzések használatával kezeli a program, mert mindegyik jogi személyhez külön számlatükör tartozik.
 
-Ez a témakör bemutatja a vállalatközi tervezést, és bemutatja, hogyan kell konfigurálni a vállalatközi tervezést a Microsoft Dynamics 365 Supply Chain Management Tervezési optimalizálás megoldásával.
+Ez a témakör leírja a vállalatközi tervezést, és bemutatja, hogyan kell konfigurálni a vállalatközi tervezést a Microsoft tervezésoptimalizálásával Dynamics 365 Supply Chain Management.
 
-Ez a témakör a következő fontos vállalatközi kifejezéseket használja:
+Ez a cikk a következő fontos vállalatközi feltételeket használja:
 
 - **Felfelé irányuló** – Relatív hivatkozás egy vállalatban vagy egy ellátási láncban. Az alapanyag beszállítója irányába mutató mozgást jelez.
 - **Lefelé irányuló** – Relatív hivatkozás egy vállalatban vagy egy ellátási láncban. A vevő irányába mutató mozgást jelez.

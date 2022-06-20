@@ -1,6 +1,6 @@
 ---
 title: Horgonyzás
-description: Ez a témakör bemutatja a horgonyzás engedélyezésének módját és használatát.
+description: Ez a témakör bemutatja a lehorgonyzás engedélyezését és használatát.
 author: GalynaFedorova
 ms.date: 07/29/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-29
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26a7bf60912ff1e8a23305e9331d520fe8d65727
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8a0fa849f07f0cc0a41a663fc97b5aba927700b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903811"
 ---
 # <a name="anchoring"></a>Horgonyzás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a horgonyzás folyamatának részleteit tartalmazza. Leírja a szükséges konfigurációt, valamint azt a logikát, amely akkor fut, amikor egy raktári dolgozó megváltoztatja vagy az előkészítő helyet, vagy a berakodási helyet.
+Ez a cikk a lehorgonyozás folyamatának részletes adatait tartalmazza. Leírja a szükséges konfigurációt, valamint azt a logikát, amely akkor fut, amikor egy raktári dolgozó megváltoztatja vagy az előkészítő helyet, vagy a berakodási helyet.
 
 A horgonyozás funkcióval felülbírálható az előkészítési vagy berakodási hely. A rendszer ezután minden nyitott berakodást az új bekészítési vagy berakodási helyre irányít.
 
@@ -36,11 +36,11 @@ A mobileszköz menüelemekkel való lehorgonyzás a **Horgony** lehetőséggel k
 > [!IMPORTANT]
 > Az ezt követő nyitott berakodások helye csak az azonos munkasablonsorból létrehozott munkasorok esetén változik meg. Más szóval a rendszer lehorgonyozza az azonos munkasablonsorból származó rakodási sorokat.
 
-Ez a témakör egy olyan helyzetet mutat be, amely bemutatja a horgonyzás működését. A forgatókönyv során értékesítési rendelések készletét hozza létre, és mindegyiket kiadja a raktárba. Ezt követően felülbírálja a javasolt előkészítő helyet, és ellenőrzi, hogy az összes berakodási munka az új helyre van-e irányítva.
+Ez a témakör a lehorgonyzás működését mutatja be. A forgatókönyv során értékesítési rendelések készletét hozza létre, és mindegyiket kiadja a raktárba. Ezt követően felülbírálja a javasolt előkészítő helyet, és ellenőrzi, hogy az összes berakodási munka az új helyre van-e irányítva.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Forgatókönyv előfeltétele: Bemutatóadatok elérhetővé tétele
 
-Az ebben a témakörben szereplő minden egyes forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Microsoft Dynamics 365 Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen *USMF*.
+A jelen cikkváltozat a Microsoft szabványos bemutatóadatában található értékekre és rekordokra hivatkozik Dynamics 365 Supply Chain Management. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen *USMF*.
 
 ## <a name="scenario-setup"></a>Eset beállítása
 

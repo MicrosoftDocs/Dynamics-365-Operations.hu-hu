@@ -1,6 +1,6 @@
 ---
 title: Műveletfüggő ER-célok konfigurálása
-description: Ez a témakör elmagyarázza, hogyan lehet beállítani műveletfüggő célhelyeket a kimenő dokumentumok létrehozásához konfigurált elektronikus jelentési (ER) formátumú fájlok MAPPA vagy FÁJL összetevőihez.
+description: Ez a cikk bemutatja, hogy hogyan konfigurálja a műveletfüggő célokat egy kimenő dokumentumok előállítására konfigurált elektronikus jelentési formátumhoz.
 author: NickSelin
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: b7dfd92fd9e256298c13dcbde4b6da3f07d250d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876834"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Műveletfüggő ER-célok konfigurálása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323979"
 
 A kimenő dokumentumok [generálása](electronic-reporting-destinations.md) során használt elektronikus jelentési formátumkonfigurációk minden kimeneti összetevőjére (mappára vagy fájlra) [...](general-electronic-reporting.md)[beállíthatja](general-electronic-reporting.md#Configuration) a célokat. Azok a felhasználók, akik ilyen típusú ER-formátumot futtatnak, és megfelelő hozzáférési jogokkal rendelkeznek, futásidőben módosíthatják a konfigurált cél beállításait is.
 
-A Microsoft Dynamics 365 Finance **10.0.17-es és újabb verzióiban** az ER-formátum futtatható egy olyan műveletkód [üzembe helyezése](er-apis-app10-0-17.md) által, amelyet a felhasználó az adott ER-formátum futtatásával hajt végre. Például a **Kinnlevőségek** modul Nyomtatáskezelési beállításainál választhat olyan ER-formátumot, amely konkrét üzleti dokumentumot, például szabadszöveges számlát generál. Ezután a számla előnézeti képe megtekinthető a **Nézet** lehetőséggel, illetve a **Nyomtatás** gombbal elküldheti egy nyomtatóra. Ha futásidőben felhasználói művelet van átállítva a futó ER-formátumhoz, eltérő ER-célokat lehet beállítani a különböző felhasználói műveletekhez. Ez a témakör leírja, hogyan kell konfigurálni az ER-célokat az ilyen típusú ER-formátumhoz.
+A Microsoft Dynamics 365 Pénzügyi **csoport 10.0.17-es** és újabb verziójában az ER-formátum [az](er-apis-app10-0-17.md) olyan műveletkódok megépítése után futtatható, amelyet a felhasználó az ER-formátum futtatásával hajt végre. Például a **Kinnlevőségek** modul Nyomtatáskezelési beállításainál választhat olyan ER-formátumot, amely konkrét üzleti dokumentumot, például szabadszöveges számlát generál. Ezután a számla előnézeti képe megtekinthető a **Nézet** lehetőséggel, illetve a **Nyomtatás** gombbal elküldheti egy nyomtatóra. Ha futásidőben felhasználói művelet van átállítva a futó ER-formátumhoz, eltérő ER-célokat lehet beállítani a különböző felhasználói műveletekhez. Ez a cikk bemutatja, hogyan kell konfigurálni az ER-célokat az ilyen típusú ER-formátumhoz.
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Műveletfüggő ER-célok elérhetővé tétele
 
@@ -82,7 +82,7 @@ A következő ábra bemutatja, hogy hogyan lehet elérni ugyanazon alternatív m
 
 Ha ER-formátumot futtat, és olyan felhasználók létesítenek felhasználói műveleteket, akik rendelkeznek a megfelelő [engedélyekkel](electronic-reporting-destinations.md#security-considerations) a konfigurált célbeállítások futásidőben való módosításához, megjelenik egy párbeszédpanel, amely lehetőséget ad a konfigurált célbeállítások módosítására. Ez a párbeszédpanel nem kötelező, és megjelenésének módja attól függ, hogy az ER-keretrendszer hogyan valósítja meg az ER-formátumot. Ha megjelenik ez a párbeszédpanel, a mezőben található ER-célok a megadott felhasználói műveletnek megfelelően lesznek engedélyezve.
 
-A következő ábra az **Elektronikus jelentési formátum célokat** bemutató párbeszédpanel egy példáját mutatja be, amely a szabadszöveges számla [feladása](../../../finance/accounts-receivable/create-free-text-invoice-new.md) esetén jelenik meg, és a **Szabadszöveges számla (Excel)** ER-formátumának futtatásával generálja ezt a dokumentumot, ha a **Nyomtató** művelet létesítve van, és az ER-célok erre a formátumra vannak konfigurálva, amint az ebben a témakörben korábban látható.
+A következő ábra az elektronikus jelentési formátum célokat bemutató párbeszédpanel egy példáját mutatja be, amely a szabadszöveges számla feladásakor jelenik meg, és a szabadszöveges számla (Excel) **ER-formátumának futtatásával generálja ezt a dokumentumot, ha a nyomtató művelet ki van állítva,**[és az ER-célok erre a](../../../finance/accounts-receivable/create-free-text-invoice-new.md)**formátumra** vannak konfigurálva, amint azt a jelen cikk korábban mutatja.**·**
 
 ![Párbeszédpanel, amely lehetőséget ad a kezdetben konfigurált ER-célok megváltoztatására a futó ER-formátumhoz.](./media/er-destination-action-dependent-02.gif)
 

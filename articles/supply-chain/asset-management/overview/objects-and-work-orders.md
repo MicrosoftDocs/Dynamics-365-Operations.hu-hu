@@ -1,6 +1,6 @@
 ---
 title: Eszközök és munkarendelések
-description: Ez a témakör bemutatja az eszközöket és munkarendeléseket az Eszközkezelés modulban.
+description: Ez a témakör az Eszközkezelés eszköz- és munkarendeléseit ismerteti.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2872dc84ec11ae7fad9fd5b225b9207f13280db334cc0d010a3d6749a591ee2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2d0fcc5162900ad2ad67f2629d14015f694bd4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718107"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869691"
 ---
 # <a name="assets-and-work-orders"></a>Eszközök és munkarendelések
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718107"
 
  
 
-Ez a témakör bemutatja az eszközöket és munkarendeléseket az Eszközkezelés modulban. Az eszközök és a munkarendelések az Eszközkezelés központi részei. Az *eszköz* olyan gép vagy gépalkatrész, amely folyamatos karbantartást és szervizt igényel. Az eszközöket hierarchikus szerkezetben lehet létrehozni, és a munkavégzési helyszínekhez kapcsolódhatnak. A karbantartási munkákat az eszközstruktúra minden szintjéhez lehet tervezni.
+Ez a témakör az Eszközkezelés eszköz- és munkarendeléseit ismerteti. Az eszközök és a munkarendelések az Eszközkezelés központi részei. Az *eszköz* olyan gép vagy gépalkatrész, amely folyamatos karbantartást és szervizt igényel. Az eszközöket hierarchikus szerkezetben lehet létrehozni, és a munkavégzési helyszínekhez kapcsolódhatnak. A karbantartási munkákat az eszközstruktúra minden szintjéhez lehet tervezni.
 
 Különböző adatok, például termékadatok és eszközspecifikációk, valamint a szükséges karbantartási tervek vannak beállítva az egyes eszközökhöz. A következő ábrán az eszközadatok áttekintése és az eszközök feladattípusokhoz való viszonya látható. Az öröklést és a függőségeket mutató példák vörös betűkkel jelzettek.
 

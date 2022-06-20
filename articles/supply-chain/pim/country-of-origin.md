@@ -1,6 +1,6 @@
 ---
 title: Származási ország
-description: Számos szervezet állít ki tanúsítványt a szállítóknak annak biztosítása érdekében, hogy a termékek megfelelnek a meghatározott minősítési szabványoknak. Ezek a tanúsítványok gyakran a származási országtól függenek. Ez a témakör a származási ország funkcióval kapcsolatban tartalmaz tájékoztatást, amely lehetővé teszi, hogy a terméket a származási országhoz kapcsolja, és nyomon kövesse a termék minősítéseit.
+description: Számos szervezet állít ki tanúsítványt a szállítóknak annak biztosítása érdekében, hogy a termékek megfelelnek a meghatározott minősítési szabványoknak. Ezek a tanúsítványok gyakran a származási országtól függenek. Ez a cikk a származási ország funkcióval kapcsolatban tartalmaz tájékoztatást, amellyel összekapcsolhatja a cikkeket a származási országgal, és nyomon követheti a termék tanúsítványát.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 60d5a2067b8e3d311af89fb09cfa3b5c007db219
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777621"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882518"
 ---
 # <a name="country-of-origin"></a>Származási ország
 
@@ -28,7 +28,7 @@ Számos szervezet állít ki tanúsítványt a szállítóknak annak biztosítá
 
 ## <a name="turn-on-the-country-of-origin-feature"></a>A származási ország funkció bekapcsolása
 
-Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés [lapon ellenőrizhetik](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a funkció állapotát, és szükség esetén engedélyezhetik vagy letilthatják azt. Itt a funkció a következőként szerepel:
 
 - **Modul:** *Termékinformáció-kezelés*
 - **Funkció neve:** *Származási ország kezelési funkciója*

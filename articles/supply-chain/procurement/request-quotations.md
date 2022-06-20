@@ -1,6 +1,6 @@
 ---
 title: Ajánlatkérések (RFQ-k) áttekintése
-description: Ez a témakör áttekintést nyújt az ajánlatkérésekről (RFQ-król). Egy szervezet akkor ad ki ajánlatkérést (RFQ-t), amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat.
+description: Ez a cikk az ajánlatkérések áttekintését nyújt. Egy szervezet akkor ad ki ajánlatkérést (RFQ-t), amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat.
 author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3de48c03ac73ee164dea0c329b2595db21c841cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 89abf82879ab08f2341ce5b14e6af1d5c42140b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895583"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Ajánlatkérések (RFQ-k) áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt az ajánlatkérésekről (RFQ-król). Egy szervezet akkor ad ki ajánlatkérést (RFQ-t), amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat. Az ajánlatkérésben arra kéri a szállítókat, hogy adják meg a meghatározott számú cikkekhez ajánlott áraikat és szállítási idejüket.
+Ez a cikk az ajánlatkérések áttekintését nyújt. Egy szervezet akkor ad ki ajánlatkérést (RFQ-t), amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat. Az ajánlatkérésben arra kéri a szállítókat, hogy adják meg a meghatározott számú cikkekhez ajánlott áraikat és szállítási idejüket.
 Emellett kérheti a szállítóktól annak meghatározását, hogy vannak-e egyéb járulékos költségek, például szállítási költséget, illetve kínálnak-e nagyobb rendelések vagy a szállítói számla korai kifizetése esetén engedményeket.
 
 Az ajánlatkérés folyamata a következő feladatokból áll:
@@ -45,7 +45,7 @@ Ajánlatkérési esetet tervezett rendelésekből, beszerzési igénylésből é
 
 Miután előkészítette az ajánlatkérési esetet és hozzáadta a szállítókat, válassza a **Küldés** (**Küldés és közzététel** az állami szektor esetében) lehetőséget az ajánlatkérési esetnél. Ajánlatkérési napló jön létre minden egyes olyan szállítóra vonatkozóan, amelyek számára elküldte az ajánlatkérést. A Küldés művelet nyomtatási beállításait módosítva megadhatja, hogy a rendszer külön jelentést nyomtasson minden szállítóhoz az archívumba, vagy a jelentést e-mailben küldje a szállítók e-mail-címére. Ezenkívül az egyes szállítók ajánlatkérési naplóját olyan napló létrehozására is felhasználhatja, amelyet később elküldhet vagy újraküldhet a szállítónak. A Küldés műveletet úgy is beállíthatja, hogy a rendszer a szállító által kitölthető válaszlapot is generáljon.
 
-Ez a témakör az ajénlatkérések kezelését foglalja össze arra az esetre, amikor a szállítói együttműködés nincs használatban. Ha a rendszer be van állítva szállítói együttműködéshez a szállítók közvetlenül vihetnek be ajánlatokat a Supply Chain Management rendszerbe. További tudnivalók: [Szállítói együttműködés a vevőkkel](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) és [A külső szállítókkal történő szállítói együttműködés](vendor-collaboration-work-external-vendors.md).
+Ez a cikk azt a folyamatot tartalmazza, amely az ajánlatkérések kezelését tartalmazza, ha a szállítói együttműködés nincs használatban. Ha a rendszer be van állítva szállítói együttműködéshez a szállítók közvetlenül vihetnek be ajánlatokat a Supply Chain Management rendszerbe. További tudnivalók: [Szállítói együttműködés a vevőkkel](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) és [A külső szállítókkal történő szállítói együttműködés](vendor-collaboration-work-external-vendors.md).
 
 Ha módosítania kell az ajánlatkérést, miután elküldte azt, újra elküldheti az ajánlatkérést a szállítóknak, ha elkészült a két módosítási művelettel: ezek a Létrehozás és a Véglegesítés.
 
@@ -59,7 +59,7 @@ Miután kiválasztott egy ajánlatot vagy néhány sort egy ajánlatban, elfogad
 
 Az ajánlatkérési eset két állapottal rendelkezik: legalacsonyabb és legmagasabb állapot. Az állapotot **Az összes ajánlatkérés** listalapon tekintheti meg. Legalacsonyabb állapota az ajánlatkérési eset minden sorban a legkevésbé készültségi foka, és a lehető legnagyobb készültségi foka minden olyan sor, az ajánlatkérési eset legmagasabb állapota. Tegyük fel, hogy egy három sorral rendelkező ajánlatkérési esetet két szállítónak küldenek el, így két ajánlatkérés van, egyenként három sorral. Minden sor **Elküldve** állapotú. Az egyik szállító ajánlatot ír be, és az ajánlatkérés sorai **Beérkezett** állapotúak lesznek. Ez azt jelenti, hogy az ajánlatkérési eseten három sorából mindegyik **Elküldve** állapotú egy ajánlatkérés esetében, és **Beérkezett** egy másik ajánlatkérés esetében. A legalacsonyabb állapot **Elküldve**, a legmagasabb állapot pedig **Beérkezett** értékű lesz.
 
-Az ilyen állapotokról részletesen a jelen témakör későbbi szakaszaiban olvashat.
+Ezeket az állapotokat a cikk későbbi részletesebb leírásai ismertetik.
 
 ## <a name="setting-up-rfq-functionality"></a>Ajánlatkérési funkció beállítása
 

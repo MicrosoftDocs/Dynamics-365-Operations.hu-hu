@@ -1,8 +1,8 @@
 ---
 title: ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
-description: Ez a témakör azt mutatja be, hogyan kell használni a Számított mezőtípust ER-adatforrásokhoz.
+description: Ez a cikk a Számított mezőtípus ER-adatforrások esetén való használatával kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
-ms.translationtype: HT
+ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349160"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934723"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet az elektronikus jelentéskészítési (ER) adatforrást tervezni a **Számított mező** típusban. Ez az adatforrás olyan ER-kifejezéseket tartalmazhat, amelyek a végrehajtás során paraméterargumentumok értékeivel vezérelhetők, amely egy hozzárendelésben konfigurálható, amely meghívja ezt az adatforrást. Egy ilyen adatforrás paraméterezett hívásának konfigurálásával több kötésben is felhasználható egyetlen adatforrás, ami csökkenti azoknak az adatforrásoknak a számát, amelyeket az ER-formátumok ER modell-leképezéseihez konfigurálni kell. Leegyszerűsíti a konfigurált ER-összetevőt is, amely csökkenti a karbantartási költségeket és a más felhasználók által felhasználás költségeit.
+Ez a cikk bemutatja, hogy hogyan lehet elektronikus jelentési (ER) adatforrást tervezni a Számított **mezőtípus** használatával. Ez az adatforrás olyan ER-kifejezéseket tartalmazhat, amelyek a végrehajtás során paraméterargumentumok értékeivel vezérelhetők, amely egy hozzárendelésben konfigurálható, amely meghívja ezt az adatforrást. Egy ilyen adatforrás paraméterezett hívásának konfigurálásával több kötésben is felhasználható egyetlen adatforrás, ami csökkenti azoknak az adatforrásoknak a számát, amelyeket az ER-formátumok ER modell-leképezéseihez konfigurálni kell. Leegyszerűsíti a konfigurált ER-összetevőt is, amely csökkenti a karbantartási költségeket és a más felhasználók által felhasználás költségeit.
 
 ## <a name="prerequisites"></a>Előfeltételek
-A jelen témakörben szereplő példák elvégzéséhez a következő hozzáférésekkel kell rendelkeznie:
+Az ebben a példában olvasható példák csak a következő hozzáféréssel egészek ki:
 
 - Hozzáférés egy ilyen szerepkörhöz:
 
@@ -36,7 +36,7 @@ A jelen témakörben szereplő példák elvégzéséhez a következő hozzáfér
     - Elektronikus jelentések funkcióival foglalkozó konzulens
     - Rendszergazda
 
-- A Regulatory Configuration Services (RCS) szolgáltatáshoz való hozzáférés, ami ugyanattól a bérlőtől került szolgáltatásra, mint Finance and Operations Operations egyre vonatkozik az alábbi lépések közül:
+- Hozzáférés a Regulatory Configuration Service (RCS) szolgáltatáshoz, amelyet ugyanarra a bérlőre telepítettek, mint a Finance and Operations szolgáltatást, a következő szerepkörök egyikéhez:
 
     - Elektronikus jelentések fejlesztője
     - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -46,10 +46,10 @@ A következő fájlokat is le kell töltenie és helyben tárolnia.
 
 | **Tartalom**                           | **Fájlnév**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Minta ER-adatmodell konfigurációja    | [Model to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Minta ER-metaadat konfigurációja      | [Metadata to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Minta ER-adatmodell leképezési konfigurációja | [Mapping to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Minta ER-formátum konfigurációja        | [Format to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Minta ER-adatmodell konfigurációja    | [Model to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Minta ER-metaadat konfigurációja      | [Metadata to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Minta ER-adatmodell leképezési konfigurációja | [Mapping to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Minta ER-formátum konfigurációja        | [Format to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Jelentkezzen be a RCS-példányba
 Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő eljárás lépéseit kell végrehajtani az RCS-ben: [Konfigurációszolgáltatók létrehozása, és megjelölésük aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md):
@@ -84,7 +84,7 @@ Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállal
             - Adóértékek összege.
             - Az alkalmazott adómérték minimális értéke.
 
-    A modell-leképezés ebben a konfigurációban implementálása az alap adatmodellt bármely ER formátumhoz, amely ehhez a modellhez lett készítve és a Finance and Operations által lett végrehajtva. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
+    Az ebben a konfigurációban szereplő modell-hozzárendelés az alapadatok modellt alkalmazza az ehhez a modellhez létrehozott, valamint a Finance and Operations megoldásban végrehajtott összes ER-formátum esetében. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
 
     ![Modell-hozzárendelés tervező lapja az Adó és Gr adatforrásokat jeleníti meg.](media/er-calculated-field-type-01.png)
 
@@ -306,7 +306,7 @@ Ha egy paraméterezett számított mező rekordot ad vissza, akkor támogatnia k
 A kezdeti és a továbbfejlesztett ER formátumot futtathatja, hogy meggyőzpdjön arról, hogy a konfigurált paraméterezett számított mezők megfelelően működnek.
 
 ### <a name="import-er-configurations"></a>ER-konfigurációk importálása
-Az **RCS** típushoz tartozó ER-tároló használatával importálhatja az áttekintett konfigurációkat. Ha már elvégezte az [Elektronikus jelentéskészítési (ER) konfigurációkat importálása a Regulatory Configuration Service (RCS) szolgáltatásból](rcs-download-configurations.md) lépéseit, használja a konfigurált ER-tárolót, a korábban tárgyalt konfigurációk importálásához környezetébe. Máskülönben kövesse az alábbi lépéseket:
+Az **RCS** típushoz tartozó ER-tároló használatával importálhatja az áttekintett konfigurációkat. Ha már végigment a cikk lépésén, [az Elektronikus jelentéskészítési (ER) konfigurációk importálása a Regulatory Configuration Services (RCS)](rcs-download-configurations.md) szolgáltatásból, a konfigurált ER-tárház segítségével importálhatja a cikk korábban említett konfigurációit a környezetbe. Máskülönben kövesse az alábbi lépéseket:
 
 1. Válassza ki a **DEMF** vállalatot és az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés** lehetőséget.
 2. Válassza a **Jelentéskészítési konfigurációk** elemet.

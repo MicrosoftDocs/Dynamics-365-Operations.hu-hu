@@ -1,6 +1,6 @@
 ---
 title: ER-formátum megtervezése az oldalfejlécben vagy láblécben beágyazott képeket tartalmazó Excel-formátumú jelentés létrehozásához
-description: Ez a témakör elmagyarázza, hogyan lehet az Elektronikus jelentés (ER) segítségével olyan üzleti dokumentumokat létrehozni, amelyek oldalfejlécekbe vagy láblécekbe ágyazott képeket és alakzatokat tartalmaznak.
+description: Ez a cikk bemutatja az elektronikus jelentéskészítés (ER) használatát olyan üzleti dokumentumok létrehozásához, amelyekben a lapfejlécek és -láblécek képei és iramai vannak.
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323775"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854843"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>ER-formátum megtervezése az oldalfejlécben vagy láblécben beágyazott képeket tartalmazó Excel-formátumú jelentés létrehozásához
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogy a Rendszergazda vagy az Elektronikus jelentéskészítési szakterületi konzulens szerepkörű felhasználók hogyan hajthatják végre ezeket a feladatokat:
+Ez a cikk bemutatja, hogy hogyan végezhetik el a következő feladatokat a rendszergazdák és az elektronikus jelentéskészítő funkcionális tanácsadó szerepkörű felhasználók:
 
 - Az [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) keretrendszer paramétereinek konfigurálása.
 - A Microsoft által [biztosított](general-electronic-reporting.md#Provider) [ER-konfigurációk](general-electronic-reporting.md#Configuration) importálása [szabadszöveges számlák](../../../finance/accounts-receivable/create-free-text-invoice-new.md) előállításához Microsoft Excel-formátumú [sablon](er-fillable-excel.md#excel-file-component) alapján.
 - A Microsoft által biztosított szabvány ER-formátumú konfiguráció [egyéni (származtatott)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) verziójának létrehozása.
 - Az egyéni ER-formátum konfigurációjának módosítása úgy, hogy olyan szabadszöveges számlajelentést generáljon, amelynek láblécében a vállalati embléma képe szerepel.
 
-A jelen témakörben szereplő eljárások az **USMF** vállalatnál végezhetők el. Nincs szükség kódolásra. Mielőtt belekezdene, a következő fájlt is le kell töltenie, illetve mentenie kell.
+A cikk eljárásait az **USMF** vállalatnál lehet végrehajtani. Nincs szükség kódolásra. Mielőtt belekezdene, a következő fájlt is le kell töltenie, illetve mentenie kell.
 
 | Leírás        | Fájlnév |
 |--------------------|-----------|
@@ -132,7 +132,7 @@ További információért az ER-konfigurációszolgáltatókkal kapcsolatban tek
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat"></a>A szabvány ER-konfigurációk importálása
 
-Ha a standard ER-konfigurációkat a Dynamics 365 Finance jelenlegi példányához szeretné hozzáadni, importálnia kell őket az adott példányhoz konfigurált [ER-adattárból](general-electronic-reporting.md#Repository).
+Ha a szabványos ER-konfigurációkat hozzá szeretne adni a Dynamics 365 Pénzügy aktuális példányához, akkor importálnia kell azokat az adott példányhoz beállított ER-tárházból [...](general-electronic-reporting.md#Repository).
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. A **Lokalizációs konfigurációk** oldalon, a **Konfigurációszolgáltatók** szakaszban válassza ki a **Microsoft** csempét, majd válassza ki az **Adattárak** lehetőséget a **Microsoft** szolgáltatóhoz tartozó adattárak listájának megtekintéséhez.
@@ -153,9 +153,9 @@ Ha a standard ER-konfigurációkat a Dynamics 365 Finance jelenlegi példányáh
 3. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában bontsa ki a **Számlamodell** elemet.
 4. A kiválasztott **Szabadszöveges számla (Excel)** ER-formátumon kívül más szükséges ER-konfigurációk importálása is megtörtént. Győződjön meg arról, hogy a konfigurációs fában a következő ER-konfigurációk érhetők el:
 
-    - **Számlamodell** – Ez a konfiguráció tartalmazza az ADATMODELL ER összetevőt, amely a számlázási üzleti tartomány adatstruktúráját képviseli.
-    - **Számlamodell-hozzárendelés** – Ez a konfiguráció tartalmazza a modellleképezés ER összetevőjét, amely leírja, hogyan tölti ki az adatmodellt alkalmazásadatokkal futásidőben.
-    - **Szabadszöveges számla (Excel)** – Ez a konfiguráció tartalmazza az ER-összetevők formátum- és formátumleképezését. A formátum-összetevő egy Excel-formátumú sablon alapján határozza meg a jelentéselrendezést. A formátumleképezési összetevő tartalmazza a modell-adatforrást, és meghatározza, hogy a jelentés elrendezését milyen módon kell kitölteni ennek az adatforrásnak a használatával futásidőben.
+    - **Számlamodell** – ez a konfiguráció a számlázás üzleti tartományának adatszerkezetét képviselő ER adatmodell-összetevőt tartalmazza.
+    - **Számlamodell-hozzárendelés** – ez a konfiguráció tartalmazza a modellleképezés ER összetevőjét, amely leírja, hogyan kell az adatmodellt futásidőben kitölteni az alkalmazás adataival.
+    - **Szabadszöveges számla (Excel)** – ez a konfiguráció az ER-összetevők formátum- és formátum-hozzárendelését tartalmazza. A formátum-összetevő egy Excel-formátumú sablon alapján határozza meg a jelentéselrendezést. A formátumleképezési összetevő tartalmazza a modell-adatforrást, és meghatározza, hogy a jelentés elrendezését milyen módon kell kitölteni ennek az adatforrásnak a használatával futásidőben.
 
 ![Importált ER-konfigurációk a Konfigurációk oldalon.](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
 

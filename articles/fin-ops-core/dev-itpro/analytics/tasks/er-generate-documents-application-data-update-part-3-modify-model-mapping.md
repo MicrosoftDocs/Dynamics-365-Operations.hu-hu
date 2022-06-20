@@ -1,6 +1,6 @@
 ---
 title: Modellek és leképezések módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
-description: Ez a témakör egy elektronikus dokumentumot létrehozó és alkalmazásadatokat frissítő jelentéskészítési konfigurációk megtervezését mutatja be. (2. rész – Dokumentumok létrehozása).
+description: Ez a témakör azt ismerteti, hogyan lehet tervezni a jelentési konfigurációkat az elektronikus dokumentumok generálása és az alkalmazásadatok frissítése érdekében. (2. rész – Dokumentumok létrehozása).
 author: NickSelin
 ms.date: 06/19/2017
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d7df46bab244d11509b86a27eeed3c2725400b5eb4d0fbf50af1750e7de45d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 797057112e9476389655b870fd729acd33d57e43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745888"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908297"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Modellek és leképezések módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
 

@@ -1,6 +1,6 @@
 ---
 title: Szállítók, vevők, és cikkek beállítása vállalatközi kereskedelemhez
-description: Ez a témakör a szállítók, vevők, és cikkek beállításának módját ismerteti a vállalatközi kereskedelemhez
+description: Ez a cikk bemutatja a szállítók, vevők és cikkek vállalatközi kereskedelemben való beállítását.
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3e1eb7b8673f3af682204b65b33a1d8b61742721
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c928435a4e66832b09dbc805664934cfb1236be
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675037"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945755"
 ---
 # <a name="set-up-vendors-customers-and-items-for-intercompany-trade"></a>Szállítók, vevők, és cikkek beállítása vállalatközi kereskedelemhez
 
@@ -34,12 +34,13 @@ A szervezet vállalatközi kereskedelemre való előkészítéséhez meg kell ha
 1. A vállalatközi szállítóként definiálni kívánt ügyfél kiválasztásához válassza ki az ügyfelet.
 1. A Műveleti ablaktábla **Általános** lapján válassza a **Vállalatközi** menüpontot.
 1. Vállalatközi beállítási paraméterek megadása a vevői fiókhoz. A paraméterek közé tartoznak továbbá a szállító jogi személy és partner, beszerzési rendelések irányelvei, a értékesítési rendelések irányelvei, az értékleképezés, valamint az értékesítési és beszerzési szerződésekre vonatkozó irányelvek. Megadhatja azt is, hogy a vevői számláról vagy a másik jogi személy szállítói számlájáról származó alapadatokat használja-e.
-1. A **Vevők** lapon, a **Számla- és szállítás** gyorslapon jelölje be a **Vállalatközi rendelések létrehozása** jelölőnégyzetet. Ha a rendeléseket közvetlenül a vevőkhöz szeretné szállítani, jelölje be a **Közvetlen kiszállítás** jelölőnégyzetet.
+1. Ha végzett a vállalatközi paraméterek beállításával, **a** kiválasztott vevői adatokhoz való visszatéréshez zárja be a vállalatközi lapot.
+1. Bontsa ki a Vegyes **részletek gyorsét,** **és állítsa a Vállalatközi rendelések létrehozása gombra Igen** *gombra*. Ha azt is szeretné, hogy a rendeléseket közvetlenül a vevőkhöz szállítják, állítsa a **Közvetlen kiszállítás** állítva Az *igen beállításra*.
 
     > [!NOTE]
-    > Ha vannak olyan cikkek, amelyet a vállalat raktároz és szállít ki a vevőknek, akkor előfordulhat, hogy nem szeretne automatikusan vállalatközi rendelést létrehozni, még akkor sem, ha van raktáron a cikkből. Ha ki szeretné kapcsolni a rendelések automatikus létrehozását olyan cikkeknél, amelyekből néha lehet raktáron, törölje a **Vállalatközi értékesítései rendelések létrehozása** jelölőnégyzet jelölését.
+    > Ha vannak olyan cikkek, amelyet a vállalat raktároz és szállít ki a vevőknek, akkor előfordulhat, hogy nem szeretne automatikusan vállalatközi rendelést létrehozni, még akkor sem, ha van raktáron a cikkből. Ha inaktiválnia kell a rendelések automatikus generálését olyan cikkekhez, amelyekből néha lehet készleten, állítsa **·** *a Vállalatközi rendelések létrehozása elemet Nem beállításra.*
 
-1. Ha engedélyezni szeretné, hogy egy értékesítési rendelésen közvetetten további sorokat hozzanak létre, jelölje be a **Közvetett rendeléssorok létrehozása** jelölőnégyzetet. Így a felhasználó sorokat adhat hozzá az eredeti értékesítési rendeléshez a vállalatközi értékesítési rendelésből.
+1. Ha azt szeretné, hogy közvetetten is létre tudjanak hozni további sorokat egy értékesítési rendelésen, állítsa **·** *a Közvetett rendelési sorok létrehozása lehetőséget Igen beállításra.* Így a felhasználó sorokat adhat hozzá az eredeti értékesítési rendeléshez a vállalatközi értékesítési rendelésből.
 
 > [!WARNING]
 > Ha engedélyezi a rendeléssorok közvetett létrehozását, lehetővé teszi, hogy a vállalatközi értékesítési rendelésből bármit hozzáadjanak az eredeti értékesítési rendeléshez. A program ezután feldolgoz minden kiegészítést a vevőn keresztül, és hozzáadja a rendeléshez és a számlához. Ezenkívül a program minden, az értékesítésben érintett dokumentumot kinyomtat és felad automatikusan. A felhasználók nem kapnak figyelmeztetést a kiegészítésről.

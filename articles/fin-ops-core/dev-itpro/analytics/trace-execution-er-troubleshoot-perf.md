@@ -1,6 +1,6 @@
 ---
 title: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
-description: Ez a témakör azt mutatja be, hogyan kell használni az Elektronikus jelentéskészítés (ER) teljesítményfigyelő funkcióját a teljesítménnyel kapcsolatos problémák elhárításához.
+description: Ez a cikk az elektronikus jelentés (ER) teljesítménykövetési funkciójának használatával kapcsolatban tartalmaz tájékoztatást a teljesítményproblémák elhárítása érdekében.
 author: NickSelin
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 10eddf2f60db914e6451840d4d7aedb9dce7108874ea3ff45f375b85a55a694f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724393"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851951"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához
 
@@ -98,7 +98,7 @@ Tegyük fel, hogy egy új ER-megoldást tervez, amellyel szállítói tranzakci�
 
 Tegyük fel, hogy befejezte az ER-megoldás első verziójának tervezését. Ezt követően tesztelni szeretné példányában, és elemezni a végrehajtás teljesítményét.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER konfigurációk importálása RCS-ből a Finance and Operations-alkalmazásba
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER-konfiguráció importálása az RCS szolgáltatásból a Finance and Operations modulba
 
 1. Jelentkezzen be az alkalmazás példányába.
 2. Ebben az oktatóanyagban konfigurációkat importálunk az RCS-példányból (ahol az ER-összetevőket tervezzük) az Ön példányába (ahol teszteljük és használjuk majd őket). Ezért győződjön meg arról, hogy az összes szükséges műterméket előkészítette. További útmutatásért tekintse át az [Elektronikus jelentéskészítési (ER) konfigurációk importálása a Regulatory Configuration Service (RCS)](rcs-download-configurations.md) eljárást.
@@ -134,7 +134,7 @@ Az adatmodell- és modell-hozzárendelési konfigurációk megfelelő verzióit 
             - Minden adatforrás futtatása abban a formátumleképezésben, amelyet az adatok lekéréséhez meghív a rendszer
             - Minden egyes formátumelem feldolgozása a létrejövő kimeneti fájlba való adatbevitel érdekében
 
-            Az **Összesített nyomkövetési formátum** értéke a Microsoft Dynamics 365 Finance 10.0.20-as és újabb verzióiban érhető el.
+            Az **összesített nyomkövetési** formátum értéke a Microsoft Dynamics 365 Pénzügy 10.0.20-as és újabb verzióiban érhető el.
 
             Az ER-formátumtervezőben és az ER-modell leképezéstervezőjében megtekinthető a teljes végrehajtási idő egy adott összetevőhöz. Ezenkívül a nyomkövetés részletes adatokat tartalmaz a végrehajtásról, például a végrehajtások számát, valamint az egyes végrehajtások minimális és maximális idejéről.
 
@@ -305,27 +305,27 @@ A LedgerTransTypeList-adatforrásra vonatkozó lehívások számának csökkent�
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>A módosított ER-modell-hozzárendelési konfiguráció importálása az RCS szolgáltatásból az alkalmazásba
 
-Ismételje meg a jelen témakörben korábban ismertetett, [ER-konfiguráció importálása az RCS szolgáltatásból a Finance and Operations-modulba](#import-configuration) című szakasz lépéseit a **Teljesítmény-nyomkövetés** hozzárendelése konfiguráció 1.2-es verziójának importálásához.
+Ismételje meg az [RCS-konfiguráció importálása az RCS](#import-configuration) rendszerből a Pénzügy és műveletek szakasz korábbi részében található lépéseket a teljesítmény-nyomkövetési konfiguráció 1.2-es **verziójának importálása** érdekében.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>A módosított ER-megoldás futtatása a végrehajtás nyomon követéséhez
 
 ### <a name="run-the-er-format"></a>Az ER-formátum futtatása
 
-Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtatása](#run-format) szakasz lépéseit az új teljesítmény-nyomkövetés létrehozásához.
+Új teljesítménykövetés létrehozásához [ismételje meg a cikk korábbi, Az ER-formátum](#run-format) futtatása szakaszban található lépéseket.
 
 ## <a name="work-with-the-execution-trace"></a>Munka végrehajtás nyomon követésével
 
 ### <a name="export-the-generated-trace-from-the-application"></a>A létrejövő nyomkövetés exportálása az alkalmazásból
 
-Ismételje meg a jelen témakörben korábban ismertetett, [A létrejövő nyomkövetés exportálása az alkalmazásból](#export-trace) szakasz lépéseit az új teljesítmény-nyomkövetés helyi mentéséhez.
+Az új teljesítménykövetés helyi mentéséhez [ismételje](#export-trace) meg a létrehozott nyomkövetés exportálása az alkalmazás szakaszának korábbi lépéseit.
 
 ### <a name="import-the-generated-trace-into-rcs"></a>A létrejövő nyomkövetés importálása az RCS szolgáltatásba
 
-Ismételje meg a jelen témakörben korábban ismertetett, [A létrejövő nyomkövetés importálása az RCS szolgáltatásba](#import-trace) szakasz lépéseit az új teljesítmény-nyomkövetés RCS szolgáltatásba történő importálásához.
+Ismételje meg a létrehozott [nyomkövetés importálása AZ RCS szakasz korábbi részében található lépéseket az új teljesítmény-nyomkövetés RCS-be](#import-trace) importálása érdekében.
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a>A teljesítmény-nyomkövetés alkalmazása elemzési célokra az RCS szolgáltatásban – Modell-hozzárendelés
 
-Ismételje meg a jelen témakörben korábban ismertetett, [AA teljesítmény-nyomkövetés alkalmazása elemzési célokra az RCS szolgáltatásban – Modell-hozzárendelés](#use-trace) című szakasz lépéseit a legutóbbi teljesítmény-nyomkövetés elemzéséhez.
+Ismételje meg a lépést [az RCS –](#use-trace) modellleképezés szakasz teljesítménykövetés használata elemzéshez szakaszban a legújabb teljesítménykövetés elemzéséhez.
 
 Megfigyelheti, hogy az Ön által a modell-hozzárendelésen végzett kiigazításokkal megszüntette az adatbázisba intézett ismétlődő lekérdezéseket. Az adott modellhozzárendeléshez tartozó, adatbázistáblákba és adatforrásokba küldött lehívások száma is csökkent. Ezáltal a teljes ER-megoldás teljesítménye javult.
 
@@ -355,7 +355,7 @@ Ha ezen verziók egyikét használja, akkor közvetlenül az alkalmazásban elem
 
 ### <a name="run-the-er-format"></a>Az ER-formátum futtatása
 
-Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtatása](#run-format) szakasz lépéseit az új teljesítmény-nyomkövetés létrehozásához.
+Új teljesítménykövetés létrehozásához [ismételje meg a cikk korábbi, Az ER-formátum](#run-format) futtatása szakaszban található lépéseket.
 
 Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését. Ez a fájl a teljesítmény-nyomkövetést PerfView formátumban tartalmazza. Ezután használhatja a PerfView teljesítményelemzési eszközt az ER-formátum végrehajtás részleteinek elemzésére.
 
@@ -379,7 +379,7 @@ Az elektronikus jelentéskészítési keretrendszer fejlesztéseinek köszönhet
 
 ### <a name="run-the-er-format"></a>Az ER-formátum futtatása
 
-Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtatása](#run-format) szakasz lépéseit az új teljesítmény-nyomkövetés létrehozásához.
+Új teljesítménykövetés létrehozásához [ismételje meg a cikk korábbi, Az ER-formátum](#run-format) futtatása szakaszban található lépéseket.
 
 Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését. Ez a fájl a teljesítmény-nyomkövetést PerfView formátumban tartalmazza. Ezután használhatja a PerfView teljesítményelemzési eszközt az ER-formátum végrehajtás részleteinek elemzésére. Ez a nyomon követés már az SQL-adatbázis ER-formátum végrehajtása alatti hozzáférés részleteire is vonatkozik.
 

@@ -1,6 +1,6 @@
 ---
 title: Munkarendelések létrehozása karbantartási kérésekből
-description: Ez a témakör azt mutatja be, hogyan lehet munkarendelést létrehozni karbantartási kérésből az Eszközkezelés modulban.
+description: Ez a cikk bemutatja, hogyan lehet munkarendelést létrehozni az Eszközkezelésben karbantartási kérésből.
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c69ad91e931475dd4c8e5a126190e867bd193f881ad58525c1d2ac8997c972a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 0c73f019951460dc7cb6395d616a0f0a22fd0b91
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909701"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Munkarendelések létrehozása karbantartási kérésekből
 
@@ -29,7 +29,7 @@ ms.locfileid: "6726921"
  
 
 
-Miután létrehozta a karbantartási kéréseket, egyszerűen átalakíthatja azokat a munkarendelésekké. Ez a témakör a karbantartási kérésekkel végzett munkával kapcsolatos leggyorsabb módszert írja le, egyszerre több karbantartási kérelmet frissít, majd egyszerre több karbantartási kérelemhez készít munkarendelést. Az **Aktív karbantartási kérések** vagy **Saját munkavégzési helyszínhez tartozó karbantartási kérések** oldalon egyszerre egy karbantartási kéréssel is dolgozhat, és egy karbantartási kérést is átalakíthat munkarendeléssé.
+Miután létrehozta a karbantartási kéréseket, egyszerűen átalakíthatja azokat a munkarendelésekké. Ez a témakör a karbantartási kérések gyors munkához, egyszerre több karbantartási kérés frissítéséhez, majd több karbantartási kéréshez egyidejűleg több munkarendelés létrehozásához ad le. Az **Aktív karbantartási kérések** vagy **Saját munkavégzési helyszínhez tartozó karbantartási kérések** oldalon egyszerre egy karbantartási kéréssel is dolgozhat, és egy karbantartási kérést is átalakíthat munkarendeléssé.
 
 > [!NOTE]
 > Minden karbantartási kérés csak egy munkarendeléshez kapcsolható. Azonban több karbantartási kérés is szerepelhet egy munkarendelésben, még akkor is, ha a karbantartási kérések különböző eszközökkel rendelkeznek.

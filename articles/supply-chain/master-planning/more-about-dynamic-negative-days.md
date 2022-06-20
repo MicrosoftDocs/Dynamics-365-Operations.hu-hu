@@ -1,6 +1,6 @@
 ---
 title: Negatív napok és dinamikus negatív napok
-description: Ez a témakör a negatív napokkal és a dinamikus negatív napokkal kapcsolatos tudnivalókat ismerteti, és azt, hogyan segítik az ilyen napok vállalkozása működését.
+description: Ez a cikk a negatív napokról és a dinamikus negatív napokról, valamint a vállalat segítelmének ezekről nyújt tájékoztatást.
 author: t-benebo
 ms.date: 05/25/2021
 ms.topic: article
@@ -10,27 +10,27 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d88517c99a274911e8abd8de4bcd318139822a5
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d83aab9b7d3d30d519e8b313a57f2802de3cfb72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846127"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negatív napok és dinamikus negatív napok
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a negatív napokkal és a dinamikus negatív napokkal kapcsolatos tudnivalókat ismerteti, és azt, hogyan segítik az ilyen napok vállalkozása működését. A *negatív napok időkorlátja* azoknak a napoknak a számát jelenti, amennyit Ön hajlandó várni új feltöltés rendelése előtt, ha a készlet negatív.
+Ez a cikk a negatív napokról és a dinamikus negatív napokról, valamint a vállalat segítelmének ezekről nyújt tájékoztatást. A *negatív napok időkorlátja* azoknak a napoknak a számát jelenti, amennyit Ön hajlandó várni új feltöltés rendelése előtt, ha a készlet negatív.
 
-Ebből a témakörből az alábbiakat tudhatja meg:
+Ebben a cikkben a következő információkat lehet megismerni:
 
 - Hogyan jönnek létre a tervezett rendelések
 - A negatív napok időkorlátja és a cikk átfutási ideje közötti összefüggés
 - Hogyan számítja ki a rendszer a dinamikus negatív napok időkorlátját, valamint azt, hogy a cikk átfutási ideje milyen módon szerepeljen a számításban
 - A negatív napokhoz kapcsolódó, [az anyagszükséglet tervezéséhez (MRP) (alaptervezés) rendelkezésre álló futási idő javítására vonatkozó javaslatok](https://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx) értelmezése
 
-Ez a témakör három elméleti forgatókönyv szemléltetésével segít megérteni ezt az információt. A forgatókönyvek között az igény beérkezési idejében tapasztalható különbség: az igény a cikk átfutási időszaka előtt, közben vagy után érkezik be.
+Ez a cikk három eseten keresztül segít megérteni ezt az információt. A forgatókönyvek között az igény beérkezési idejében tapasztalható különbség: az igény a cikk átfutási időszaka előtt, közben vagy után érkezik be.
 
 ## <a name="scenario-1-you-get-demand-before-the-items-lead-time-period"></a>1. forgatókönyv: az igény a cikk átfutási időszaka előtt érkezik be
 
@@ -93,7 +93,7 @@ Az alábbi ábra bemutatja annak grafikus nézetét, hogy mi történik ebben az
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>E eset: Használja mindkét negatív napot, amelyek meghaladják a cikk átfutási idejét és a dinamikus negatív napok időkorlátját.
 
-Ha a negatív napokat a cikk átfutási idejénél nagyobb számra állítja, és ha a dinamikus negatív napok időkorlátját is használja, akkor a dinamikus negatív napok időkorlátja 6 + 6 + 0 = 12 nap. Ez a megközelítés nagyon hosszú időkorlátot jelenthet, amelyben az MRP-nek keresnie kell az eredményt. Ha további tájékoztatást szeretne arról, hogyan kapcsolódik az E eset egy olyan helyzethez, amikor a negatív napokat hosszú időkorláttal állítja be, olvassa el a témakör [Következtetés,](#conclusion) című szakaszát.
+Ha a negatív napokat a cikk átfutási idejénél nagyobb számra állítja, és ha a dinamikus negatív napok időkorlátját is használja, akkor a dinamikus negatív napok időkorlátja 6 + 6 + 0 = 12 nap. Ez a megközelítés nagyon hosszú időkorlátot jelenthet, amelyben az MRP-nek keresnie kell az eredményt. Arról, hogy hogyan kapcsolódik az E eset egy olyan helyzethez, amelyben a negatív napokat hosszú időkorlátra állíthatja, [tekintse](#conclusion) meg a jelen cikk Összegzés szakaszát.
 
 ## <a name="scenario-2-you-get-demand-during-the-items-lead-time-period"></a>2. forgatókönyv: az igény a cikk átfutási időszaka közben érkezik be
 
@@ -142,7 +142,7 @@ Ha a negatív napokat **0-ra** (nulla) állítja, és csak a dinamikus negatív 
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>E eset: Használja mindkét negatív napot, amelyek meghaladják a cikk átfutási idejét és a dinamikus negatív napok időkorlátját.
 
-Ha a negatív napokat a cikk átfutási idejénél nagyobb számra állítja, és ha a dinamikus negatív napok időkorlátját is használja, akkor a dinamikus negatív napok időkorlátja 6 + 6 – 4 = 8 nap. Ez a megközelítés nagyon hosszú időkorlátot jelenthet, amelyben az MRP-nek keresnie kell az eredményt. Ha további tájékoztatást szeretne arról, hogyan kapcsolódik az E eset egy olyan helyzethez, amikor a negatív napokat hosszú időkorláttal állítja be, olvassa el a témakör [Következtetés,](#conclusion) című szakaszát.
+Ha a negatív napokat a cikk átfutási idejénél nagyobb számra állítja, és ha a dinamikus negatív napok időkorlátját is használja, akkor a dinamikus negatív napok időkorlátja 6 + 6 – 4 = 8 nap. Ez a megközelítés nagyon hosszú időkorlátot jelenthet, amelyben az MRP-nek keresnie kell az eredményt. Arról, hogy hogyan kapcsolódik az E eset egy olyan helyzethez, amelyben a negatív napokat hosszú időkorlátra állíthatja, [tekintse](#conclusion) meg a jelen cikk Összegzés szakaszát.
 
 ## <a name="scenario-3-you-get-demand-after-the-items-lead-time-period"></a>3. forgatókönyv: az igény a cikk átfutási időszaka után érkezik be
 
@@ -204,7 +204,7 @@ Ez az eset megegyezik az 1. és a 2. forgatókönyv E esetével. Lényegében ug
 
 ## <a name="conclusion"></a>Összefoglalás
 
-Az ebben a témakörben szereplő három esetnek megfelelően célszerű a negatív napokat a fedezeti csoportba tartozó cikkek átfutási idejénél nagyobb értékre beállítani. Célszerű csak dinamikus negatív napokat használni, és a negatív napokat annyi napra beállítani, amennyit negatív készlet esetén hajlandó várakozni, mielőtt új feltöltést rendel (vagyis amíg hajlandó tovább halasztani az igény teljesítését). Ezenkívül ugyanazon fedezeti csoport cikkeinek hasonló átfutási időkkel kell rendelkezniük.
+A cikk három helyzete szerint jó megoldás a negatív napok számát a fedezeti csoportban található cikkek átfutási idejenél nagyobb számra állítani. Célszerű csak dinamikus negatív napokat használni, és a negatív napokat annyi napra beállítani, amennyit negatív készlet esetén hajlandó várakozni, mielőtt új feltöltést rendel (vagyis amíg hajlandó tovább halasztani az igény teljesítését). Ezenkívül ugyanazon fedezeti csoport cikkeinek hasonló átfutási időkkel kell rendelkezniük.
 
 Ha a negatív napokat **0** (nulla) értékre állítja, és nem használ dinamikus negatív napokat, akkor az MRP mindig új tervezett rendelést hoz létre az igény teljesítéséhez. Ebben a helyzetben fontos, hogy a műveletkérő üzenetekkel dolgozzon, hogy ne történjen készletfelhalmozás.
 

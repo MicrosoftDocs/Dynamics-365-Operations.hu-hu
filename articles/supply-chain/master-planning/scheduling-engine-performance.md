@@ -1,6 +1,6 @@
 ---
 title: Az ütemezési motor teljesítményének javítása
-description: Ez a témakör az ütemezési motorral és a teljesítmény javításával kapcsolatban nyújt tájékoztatást.
+description: Ez a cikk az ütemezési motorról és a teljesítmény javításaról nyújt tájékoztatást.
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 972e566153b7423398b2ad4a4e70b264f02c40cd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854297"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Az ütemezési motor teljesítményének javítása
 
@@ -29,7 +29,7 @@ ms.locfileid: "8469006"
 
 Az erőforrás-ütemezési motor a tervezett és kiadott termelési rendelések útvonalának ütemezéséhez használható. A motort eredetileg a Dynamics AX 2012 részeként adták ki, és a megjelenése óta számos fejlesztésen ment keresztül.
 
-A [job shop ütemezési probléma](https://en.wikipedia.org/wiki/Job_shop_scheduling) egy rendkívül összetett kombinatorikus probléma, ahol a megoldás ideje exponenciálisan nő a döntési változók számával. A vevők a termelési útvonalakat és a kapcsolódó adatokat gyakran úgy határozzák meg, hogy az ütemezési problémát okoz, amely még a legmodernebb hardveren sem oldható meg ésszerű időn belül. Ez a témakör segít megismerni az ütemezési motort, illetve azt, hogy egy adott beállítás milyen hatással lehet a teljesítményre.
+A [job shop ütemezési probléma](https://en.wikipedia.org/wiki/Job_shop_scheduling) egy rendkívül összetett kombinatorikus probléma, ahol a megoldás ideje exponenciálisan nő a döntési változók számával. A vevők a termelési útvonalakat és a kapcsolódó adatokat gyakran úgy határozzák meg, hogy az ütemezési problémát okoz, amely még a legmodernebb hardveren sem oldható meg ésszerű időn belül. Ez a cikk segít megérteni az ütemezési motort, valamint azt, hogy egy adott beállítás hogyan befolyásolhatja a teljesítményt.
 
 Az ütemezés teljesítményének javítására vonatkozóan, az általános iránymutatások a motor által megoldandó probléma összetettségének csökkentését javasolják. Néhány főbb tényező, amely a teljesítményre hatással lehet:
 

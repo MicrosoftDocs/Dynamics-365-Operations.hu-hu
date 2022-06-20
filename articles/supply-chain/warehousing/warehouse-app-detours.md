@@ -1,6 +1,6 @@
 ---
 title: Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez
-description: Ez a témakör azt ismerteti, hogyan konfigurálhatja a menüelemek eltereléseit úgy, hogy a dolgozók parkoltathassák az aktuális feladatot, elvégezhessenek egy másik feladatot, majd információvesztés nélkül visszatérhessenek az eredeti feladathoz.
+description: Ez a cikk azt írja le, hogyan kell konfigurálni a menüelemeket, hogy a dolgozók információvesztés nélkül elvégezzék az aktuális feladatot, másik feladatot hajtsanak végre, majd térjenek vissza az eredeti feladathoz.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 874abbdf7c0938a7ad4cc66e23dd01d901a1f0d3
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920348"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863592"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben ismertetett funkciók csak az új Warehouse Management mobilalkalmazásra vonatkoznak. Ezek nem érintik a régi raktár alkalmazást, amely már elavult.
+> Az ebben a cikkben leírt funkciók csak az új Raktárkezelés mobilalkalmazásra vonatkoznak. Ezek nem érintik a régi raktár alkalmazást, amely már elavult.
 
-Ez a témakör azt ismerteti, hogyan konfigurálhatja a menüelemek eltereléseit úgy, hogy a dolgozók „parkoltathassák” az aktuális feladatot, elvégezhessenek egy másik feladatot, majd információvesztés nélkül visszatérhessenek az eredeti feladathoz.
+Ez a témakör leírja, hogyan kell konfigurálni a menüelemek hibasorát, hogy a dolgozók "egyetlen" feladatot is végrehajt tudjanak, másik feladatot hajtsanak végre, majd adatok elvesztése nélkül térjenek vissza az eredeti feladathoz.
 
 Az elterelés egy külön menüpont, amely egy fő tevékenység egyik lépéséből nyitható meg. Az elterelés végén a dolgozó visszakerül arra a helyre, ahol abbahagyta a fő feladatot. A konfiguráció során meg kell adnia azt a menüpontot, amely elterelésként működik. Azt is kiválaszthatja, hogy a fő tevékenység mely mezőértékeit kell automatikusan továbbítani (másolni) a az eltereléshez, és itt megadni. Ezért meg kell értenie, hogy a feladatfolyamatban hol szeretné, hogy az elterelés a munkavállalók számára elérhető legyen. Azt is biztosítania kell, hogy az eltereléshez másolandó információk rendelkezésre álljanak a feladatfolyamat adott lépéséhez.
 
@@ -46,7 +46,7 @@ Mielőtt eltereléseket állíthatna be a lépésekhez a mobileszköz menüeleme
     - **Modul:** *Raktárkezelés*
     - **Funkció neve:** *Warehouse Management alkalmazás elterelések*
 
-    Ez a funkció az ebben a témakörben ismertetett funkció.
+    Ez a funkció az ebben a cikkben leírt funkció.
 
 1. Frissítse a Warehouse Management mobilalkalmazás mezőneveit a **Raktárkezelés \> Beállítás \> Mobileszköz \> Raktári alkalmazás mezőnevei** helyen és válassza az **Alapértelmezett beállítás létrehozása** lehetőséget. ovábbi információ: [A Raktárkezelés mobilalkalmazás mezőinek konfigurálása](configure-app-field-names-priorities-warehouse.md).
 1. Ismételje meg az előző lépést minden olyan jogi személynél (vállalatnál), ahol a Warehouse Management mobilalkalmazást használja.
@@ -57,7 +57,7 @@ Az alábbi eljárással beállíthatja a menüspecifikus felülbírálásból sz
 
 1. Menüspecifikus felülbírálás létrehozása a megfelelő menühöz és lépéshez a [A Warehouse Management mobilalkalmazás lépéscímeinek és utasításainak testreszabása](mobile-app-titles-instructions.md) című témakörben leírtak szerint.
 1. Keresse meg a **Lépésazonosító** és a **Menüelem neve** értékek azon kombinációját, amelyet szerkeszteni szeretne, majd jelölje ki az értéket a **Lépésazonosító** oszlopban.
-1. A megjelenő oldalon a **Elérhető elterelések (menüpontok)** gyorslapon megadhatja azt a menüpontot, amely elterelésként kell működjön. Azt is kiválaszthatja, hogy a fő tevékenység mely mezőértékeit kell automatikusan másolni az eltereléshez és az elterelésből. A beállítások használatával kapcsolatos példákat lásd a témakör későbbi forgatókönyveiben.
+1. A megjelenő oldalon a **Elérhető elterelések (menüpontok)** gyorslapon megadhatja azt a menüpontot, amely elterelésként kell működjön. Azt is kiválaszthatja, hogy a fő tevékenység mely mezőértékeit kell automatikusan másolni az eltereléshez és az elterelésből. A beállítások használatát szemléltető példák a cikk későbbi, az esetekről tartalmaznak további példákat.
 
 ## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>1. mintaforgatókönyv: Értékesítési kitárolás, ahol a helykeresés elterelésként működik
 
