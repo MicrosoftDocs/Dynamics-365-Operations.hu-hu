@@ -1,6 +1,6 @@
 ---
 title: Fizetési modul
-description: Ez a témakör ismerteti a fizetési modult, és bemutatja, hogyan konfigurálhatjuk őket a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör leírja a fizetési modult, és bemutatja, hogyan kell konfigurálni a modulban Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 04/12/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: a89ca5dd4f46611e75faccd3213028750fa48d35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565729"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850275"
 ---
 # <a name="payment-module"></a>Fizetési modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti a fizetési modult, és bemutatja, hogyan konfigurálhatjuk őket a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör leírja a fizetési modult, és bemutatja, hogyan kell konfigurálni a modulban Microsoft Dynamics 365 Commerce.
 
 A fizetési modul lehetővé teszi a vásárlóknak a rendelések fizetését hitelkártyával vagy bankkártyával. A fizetés integrációját ehhez a modulhoz a Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz alkalmazás biztosítja. A fizetési összekötő telepítésével és konfigurálásával kapcsolatos további információkért lásd: [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](dev-itpro/adyen-connector.md).  
 

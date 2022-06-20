@@ -1,6 +1,6 @@
 ---
 title: Megjelenítési beállítások alkalmazása termékdimenziókra
-description: Ez a témakör a termékdimenziókra vonatkozó megjelenítési beállításokat ismerteti, és áttekinti a Microsoft Dynamics 365 Commerce történő használatukat.
+description: Ez a témakör leírja a termékdimenziók megjelenítési beállításait, és bemutatja, hogyan lehet azokat alkalmazni a termékdimenziókban Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/28/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80a0861c51ea14ddb6bce02d757667adac34e740cd04311e26211d9bdbae4ed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d7575e205a9732259b00e424f66eeadfe8c659ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899175"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>Megjelenítési beállítások alkalmazása termékdimenziókra
 
 [!include [banner](includes/banner.md)]
 
 
-Ez a témakör a termékdimenziókra vonatkozó megjelenítési beállításokat ismerteti, és áttekinti a Microsoft Dynamics 365 Commerce történő használatukat.
+Ez a témakör leírja a termékdimenziók megjelenítési beállításait, és bemutatja, hogyan lehet azokat alkalmazni a termékdimenziókban Microsoft Dynamics 365 Commerce.
 
 A Dynamics 365 Commerce támogatja a termékváltozatok megkülönböztetésére szolgáló méret-, stílus- és színdimenziókat. A dimenziók jellemzően szöveges értékként jelennek meg (például méretek esetén „Kicsi”, „Közepes” vagy „Nagy”; vagy színek esetén „Fekete” vagy „Barna”). Ha viszont egy termék számos változatot támogat, akkor nehéz lehet tallózással megkeresni a termékváltozatokat, mivel az egyes változatok képének megtekintéséhez több beállításra van szükség. A termékváltozatok közötti tallózás megkönnyítése érdekében a Commerce 10.0.20-as kiadása képek és hexadecimális (hex) kódok használatával, palettaként jeleníti meg a dimenziókat.
 

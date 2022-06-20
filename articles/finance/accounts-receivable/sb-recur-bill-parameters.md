@@ -1,6 +1,6 @@
 ---
 title: Ismétlődő szerződéses számlázási paraméterek
-description: Ez a témakör bemutatja az ismétlődő szerződés számlázása esetén létrehozott számlázási ütemezések alapértelmezett értékeinek beállítását. Ezenkívül bemutatja a számlázási ütemezési csoportok létrehozásához szükséges beállításokat is.
+description: Ez a cikk bemutatja az ismétlődő szerződéses számlázásban létrehozott számlázási ütemezések alapértelmezett értékeinek beállítását. Ezenkívül bemutatja a számlázási ütemezési csoportok létrehozásához szükséges beállításokat is.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 19fe77ade0523aa7fd6382266457fd739df46d75
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685831"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903334"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Ismétlődő szerződéses számlázási paraméterek
 
@@ -27,7 +27,7 @@ Az Ismétlődő szerződés **számlázási paraméterei** lapon beállíthatja 
 
 ## <a name="general-tab"></a>Általános fül
 
-1. Az Ismétlődő szerződés **számlázási paraméterei** lap **·** **Általános lapján, a Számlázási ütemezés csoport** mezőben válasszon ki egy számlázási ütemezési csoportot. A számlázási ütemezési csoportok [beállítását a témakör számlázási ütemezési csoportjainak](#set-up-billing-schedule-groups) későbbi szakaszában található tájékoztatás.
+1. Az Ismétlődő szerződés **számlázási paraméterei** lap **·** **Általános lapján, a Számlázási ütemezés csoport** mezőben válasszon ki egy számlázási ütemezési csoportot. A számlázási ütemezési csoportok [beállítását a cikk számlázási ütemezési csoportjai](#set-up-billing-schedule-groups) című későbbi részében olvashatja.
 2. A Felmondás **típusa mezőben** válassza ki, hogyan történik a végső számla kiszámítása a számlázási ütemezés megszüntetésekor:
 
     - **Ütemezés módosítása** – a felmondási dátum számlázási ütemezésének kikapcsolása, **az** ütemezés állapotának módosítása Utolsó számlázás állapotra, és a kapcsolódó halasztás ütemezésének módosítása a már nem felismerhető összeg megfordítása alapján. Ha a számlázás kezdő dátuma a munkaviszony megszűnésének dátuma utánra kerül, a fennmaradó számlázási időszakok törlődnek.

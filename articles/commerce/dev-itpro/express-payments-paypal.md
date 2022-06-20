@@ -1,5 +1,5 @@
 ---
-title: Expressz kifizetések konfigurálása a PayPal számára
+title: Expressz kifizetések konfigurálása a PayPal-hoz
 description: Ez a témakör azt ismerteti, hogyan kell konfigurálni az expressz kifizetéseket a PayPal számára a gyorsabb pénztári funkciók engedélyezése érdekében Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/11/2022
@@ -9,14 +9,14 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 5fff17959e7ed9299df169c68b2ed07f6b7c7d2c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: b69b7384992fb86370ff6881824a7d2c9a77d2c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905282"
 ---
-# <a name="configure-express-payments-for-paypal"></a>Expressz kifizetések konfigurálása a PayPal számára
+# <a name="configure-express-payments-for-paypal"></a>Expressz kifizetések konfigurálása a PayPal-hoz
 
 [!include [banner](../includes/banner.md)]
 
@@ -28,7 +28,7 @@ Ez a témakör azt ismerteti, hogyan kell konfigurálni az expressz kifizetések
 |---|---|
 | PayPalpal | A PayPal csatlakoztató által támogatott felhasználói élmény és integráció. Másik neve PayPal gomb. |
 | Pénztárca | Olyan fizetéstípus, amely nem tartalmazza a hagyományos fizetési jellemzőket, például a bank azonosítószám-tartományát és a lejárati dátumot, amely a hitelkártya- és bankkártyatípusok megkülönböztetésére szolgál. |
-| Fizetés expressz | Commerce-modul, amely a támogatott fizetési módok használata esetén gyorsabb pénztári működést támogat. Ez a témakör a PayPal fizetési expressz modul használatát foglalkozik. |
+| Fizetés expressz | Commerce-modul, amely a támogatott fizetési módok használata esetén gyorsabb pénztári működést támogat. Ez a cikk a PayPal fizetési expressz modul használatát tartalmazza. |
 
 Dynamics 365 Commerce A <a0/10/<a2/1><a2/5><a2/–<a3/<a Ha be van állítva a Dynamics 365 Payment Connector for PayPal, a PayPal gomb kiválasztható fizetési módként jelenik meg az online rendelés kifizetése során. Amikor a felhasználók kiválasztják a PayPal-kifizetést, a rendszer őket közvetlenül a PayPal szolgáltatáson keresztül fizeti ki, majd visszaküldi őket az online üzletnek, hogy teljesítse a rendelését. A PayPal bevásárlókocsiba történő fizetésnél a vevők a fizetési számla adatait használják a kifizetési képernyő előzetes kitöltésére, így gyorsabban befejeződhet a kifizetési folyamat.
 

@@ -1,6 +1,6 @@
 ---
 title: Kettős jelentéskészítés
-description: Ez a témakör egy olyan példát mutat be, amely megmutatka, hogyan lehet teljesíteni a követelményeket mind a Nemzetközi pénzügyi jelentési standard (IFRS) -jelentésekben, mind a kötelező jelentésekben a tárgyi eszközlízingben.
+description: Ez a cikk egy olyan példán vezeti keresztül, amely bemutatja, hogyan teljesítheti mind a Nemzetközi Pénzügyi jelentési standard (IFRS) jelentés, mind a kötelezően előírt eszközjelentési kötelezettségek követelményeit.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9c96730bea52a69f672f8936ebbcb24449940636
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 9941d0bb251a95a71338c59f6eaa4bb9a505a5b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713389"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886371"
 ---
 # <a name="dual-reporting"></a>Kettős jelentéskészítés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör egy olyan példát mutat be, amely megmutatka, hogyan lehet teljesíteni a követelményeket mind a Nemzetközi pénzügyi jelentési standard (IFRS) -jelentésekben, mind a kötelező jelentésekben a tárgyi eszközlízingben. Microsoft Dynamics A 365 Pénzügyben meg kell ismerkedni a feladási rétegekkel, és így könnyebb lesz a példa ismerete.
+Ez a cikk egy olyan példán vezeti keresztül, amely bemutatja, hogyan teljesítheti mind a Nemzetközi Pénzügyi jelentési standard (IFRS) jelentés, mind a kötelezően előírt eszközjelentési kötelezettségek követelményeit. Microsoft Dynamics A 365 Pénzügyben meg kell ismerkedni a feladási rétegekkel, és így könnyebb lesz a példa ismerete.
 
 ## <a name="example"></a>Példa
 

@@ -1,6 +1,6 @@
 ---
 title: 200 százalék degresszív értékcsökkenés
-description: Ez a témakör áttekintést nyújt az értékcsökkenés 200 százalékos delegáló módszerével kapcsolatban.
+description: Ez a témakör áttekintést nyújt az értékcsökkenés 200 százalékos decsökkentési módszerével kapcsolatban.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 831a99246f0a2d5f223e3624aace1c218c3c4ff4
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 7abcf26f3e658e8a6f451f26240890d183547982
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870162"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>200 százalék degresszív értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt az értékcsökkenés 200 százalékos delegáló módszerével kapcsolatban.
+Ez a témakör áttekintést nyújt az értékcsökkenés 200 százalékos decsökkentési módszerével kapcsolatban.
 
 Amikor beállít egy tárgyieszköz-értékcsökkenési profilt és kijelöli a **200% degresszív** értéket a **Mód** mezőben az **Értékcsökkenési profilok** lapon, akkor a tárgyi eszközök, amelyek az értékcsökkenési profilokhoz vannak rendelve értékcsökkentve lesznek ugyanazzal százalékos értékkel, ami az egyes értékcsökkenési időszakoknál szerepel. A százalék kiszámítása az eszköz élettartama alapján történik. Ha például egy eszköz élettartama öt év, akkor a számított százalékos érték 40% lesz (200% ÷ 5). 
 
@@ -43,7 +43,7 @@ A kiválasztás függvényében változnak az **Időszak gyakorisága** mezőben
 
 Megtarthatja az alapértelmezett értéket az **Értékcsökkenési év** mezőben, **Naptár**. 
 
-A **naptár** lehetőség választása esetén az értékcsökkenés alapja minden évben január 1-jén frissül. Jellemzően az értékcsökkenés a nettó könyv szerinti érték mínusz a maradványérték. Az ebben a témában szereplő későbbi példákban az értékcsökkenés alapja a számítások oszlop első kifejezésében szereplő számláló. 
+A **naptár** lehetőség választása esetén az értékcsökkenés alapja minden évben január 1-jén frissül. Jellemzően az értékcsökkenés a nettó könyv szerinti érték mínusz a maradványérték. A cikk későbbi példáiban az értékcsökkenés alapja a számítás oszlopában lévő első szám. 
 
 Ha bejelöli **Naptár** értéket az értékcsökkenés éveként a következő lehetőségek érhetők el az **Időszak-gyakoriság** mezőben:
 

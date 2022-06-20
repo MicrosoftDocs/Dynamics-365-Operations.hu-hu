@@ -1,6 +1,6 @@
 ---
 title: Fő számlaadatok a kötelezettségekbe jóváhagyási napló használatával
-description: Ez a témakör bemutatja hogy kell használni a számlajegyzéket számlák létrehozásához, majd hogyan kell a kiadási számlákat frissíteni a jóváhagyási napló segítségével.
+description: Ez a cikk bemutatja, hogy hogyan használható a számlajegyzék a számlák létrehozására, majd a jóváhagyási napló segítségével frissítheti a költségszámlákat.
 author: abruer
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ce66a4b92f26bcec0849accad3878aef2b2f658
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: afe1471949bbf892f4e28ed3bea830ee491a517f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109658"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909214"
 ---
 # <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>Fő számlaadatok a kötelezettségekbe jóváhagyási napló használatával
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja hogy kell használni a számlajegyzéket számlák létrehozásához, majd hogyan kell a kiadási számlákat frissíteni a jóváhagyási napló segítségével.
+Ez a cikk bemutatja, hogy hogyan használható a számlajegyzék a számlák létrehozására, majd a jóváhagyási napló segítségével frissítheti a költségszámlákat.
 
 ## <a name="create-and-post-and-invoice"></a>Számla létrehozása és feladása
 1. Anavigációs ablaktáblán válassza a **Modulok > Kötelezettségek > számlák > Számlajegyzék** elemre.

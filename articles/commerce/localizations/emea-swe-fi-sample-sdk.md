@@ -1,6 +1,6 @@
 ---
-title: Üzembe helyezési irányelvek a vezérlőegység-integrációs mintához Svédországban (örökölt)
-description: Ez a témakör útmutatást ad a vezérlőegység-integrációs mintának Svédország számára a Retail SDK-ból történő telepítéséhez
+title: A Svédországra vonatkozó vezérlőegység-integrációs minta telepítési irányelvei (legacy)
+description: Ez a cikk a Svédországra vonatkozó, a Retail SDK készletből származó, az ellenőrzési egységekkel kapcsolatos integrációs minta telepítésével kapcsolatos irányelveket tartalmaz.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,57 +9,57 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870547"
 ---
-# <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Üzembe helyezési irányelvek a vezérlőegység-integrációs mintához Svédországban (örökölt)
+# <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>A Svédországra vonatkozó vezérlőegység-integrációs minta telepítési irányelvei (legacy)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör útmutatást ad a kiskereskedelmi szoftverfejlesztő készletből (SDK) származó vezérlőegység-integrációs mintának Svédország számára történő telepítéséhez egy fejlesztői virtuális gépen (VM)Microsoft Dynamics Életciklus-szolgáltatások (LCS). Erről a költségvetési integrációs mintáról további információkért lásd: [Vezérlőegység-integrációs minta Svédország számára](emea-swe-fi-sample.md). 
+Ez a cikk a Svédországra vonatkozó vezérlőegység-integrációs minta telepítéséről a Lifecycle Services (LCS) fejlesztői virtuális gépére (SDK) vonatkozó kiskereskedelmi szoftverfejlesztői csomagból (SDK) Microsoft Dynamics nyújt tájékoztatást. A pénzügyi integrációs mintával kapcsolatos további tudnivalókat [lásd: Vezérlőegység-integrációs minta Svédország esetében](emea-swe-fi-sample.md). 
 
-A svédországi fiskális integrációs minta a Retail SDK része. Az SDK telepítésével és használatával kapcsolatos információkért lásd: [Kiskereskedelmi szoftverfejlesztő készlet (SDK) architektúrája](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ez a minta a Commerce futtatókörnyezet bővítményeiből áll (CRT), Hardverállomás és értékesítési pont (POS). A minta futtatásához módosítania kell és össze kell építenie a CRT, Hardverállomás és POS projektek. Javasoljuk, hogy módosítatlan kiskereskedelmi SDK-t használjon a témakörben ismertetett módosítások végrehajtásához. Azt is javasoljuk, hogy használjon forrásvezérlő rendszert, mint pl Azure DevOps ahol még nem módosítottak fájlokat.
+A Svédországhoz tartozó pénzügyi integrációs minta a Retail SDK része. Az SDK [telepítésével és használatával kapcsolatos tudnivalókat lásd a Retail szoftverfejlesztői csomag (SDK) architektúráját](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ez a minta a Commerce runtime (CRT), hardverállomás és pénztár (POS) bővítményeiből áll. A minta futtatásához módosítania CRT és fel kell építenie a, hardverállomást és POS-projekteket. Javasoljuk, hogy egy nem módosított Retail SDK készlet használhatja az ebben a cikkben leírt módosításokat. Javasoljuk továbbá, hogy forrásvezérlő rendszert használjon, Azure DevOps például olyanokat, ahol a fájlok még nem módosultak.
 
 ## <a name="development-environment"></a>Fejlesztői környezet
 
-Kövesse az alábbi lépéseket egy fejlesztői környezet beállításához, amely lehetővé teszi a minta tesztelését és kiterjesztését.
+A következő lépések szerint állíthatja be a fejlesztői környezetet, hogy tesztelni és ki tudja terjeszteni a mintát.
 
-### <a name="enable-crt-extensions"></a>Engedélyezze CRT kiterjesztések
+### <a name="enable-crt-extensions"></a>Bővítmények CRT engedélyezése
 
-A CRT bővítőelemek szerepelnek a CRT minták. A következő eljárások végrehajtásához nyissa meg a **CommerceRuntimeSamples.sln** alatti megoldás **RetailSdk\\ SampleExtensions\\ CommerceRuntime**.
+A CRT kiterjesztési összetevők a mintában vannak CRT. A következő eljárások befejezéséhez nyissa **meg a CommerceRuntimeSamples.sln** megoldást a **RetailSdk\\ SampleExtensions\\ CommerceRuntime alatt**.
 
-#### <a name="documentprovidercleancashsample-component"></a>DocumentProvider.CleanCashSample komponens
+#### <a name="documentprovidercleancashsample-component"></a>DocumentProvider.CleanCashSample összetevő
 
-1. Találd meg **Runtime.Extensions.DocumentProvider.CleanCashSample** projektet, és megépíteni.
-2. Ban,-ben **Runtime.Extensions.DocumentProvider.CleanCashSample\\ kuka\\ Debug** mappát, keresse meg a **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** összeállítási fájl.
-3. Másolja az összeállítási fájlt a CRT kiterjesztések mappa:
+1. Keresse meg **a Runtime.Extensions.DocumentProvider.CleanCashSample** projektet, és építse fel.
+2. A Runtime.Extensions.DocumentProvider.CleanCashSample **bin\\ hibakeresési\\** mappában keresse meg a Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll **szerelvényfájlt**.
+3. A szerelvényfájl másolása a bővítmények CRT mappájába:
 
-    - **Kereskedelmi mértékegység:** Másolja a fájlt a **\\ kuka\\ ext** mappát az Internet Information Services (IIS) Commerce Scale Unit webhely helye alatt.
-    - **Helyi CRT a modern POS-on:** Másolja a fájlt a **\\ ext** mappát a helyi alatt CRT ügyfél bróker helye.
+    - **Commerce Scale Unit:** A fájl másolása **\\\\ az Internet Information Services (IIS) Commerce Scale Unit webhelyének bin ext** mappájába.
+    - **Helyi CRT a Modern POS terminálon:** Másolja **\\ a fájlt a helyi ügyfélügynök helye alatti ext** CRT mappába.
 
-4. Keresse meg a kiterjesztés konfigurációs fájlját CRT:
+4. A következő bővítmény-konfigurációs fájl megkeresve CRT:
 
-    - **Kereskedelmi mértékegység:** A fájl neve **commerceruntime.ext.config**, és benne van a **kuka\\ ext** mappát az IIS Commerce Scale Unit webhely helye alatt.
-    - **Helyi CRT a modern POS-on:** A fájl neve **CommerceRuntime.MPOSOffline.Ext.config**, és a helyi alatt van CRT ügyfél bróker helye.
+    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **\\ és az IIS Commerce Scale Unit webhely bin ext** mappájában található.
+    - **Helyi CRT a Modern POS terminálon:** **A fájl neve CommerceRuntime.MPOSOffline.Ext.config**, CRT és a helyi ügyfélügynök helye alatt található.
 
-5. Regisztrálja a CRT módosítás a kiterjesztés konfigurációs fájljában.
+5. A változás CRT regisztrálása a kiterjesztés konfigurációs fájljában.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
     ```
 
-#### <a name="extension-configuration-file"></a>Kiterjesztés konfigurációs fájl
+#### <a name="extension-configuration-file"></a>Kiterjesztés konfigurációs fájlja
 
-1. Keresse meg a kiterjesztés konfigurációs fájlját CRT:
+1. A következő bővítmény-konfigurációs fájl megkeresve CRT:
 
-    - **Kereskedelmi mértékegység:** A fájl neve **commerceruntime.ext.config**, és benne van a **kuka\\ ext** mappát az IIS Commerce Scale Unit webhely helye alatt.
-    - **Helyi CRT a modern POS-on:** A fájl neve **CommerceRuntime.MPOSOffline.Ext.config**, és a helyi alatt van CRT ügyfél bróker helye.
+    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **\\ és az IIS Commerce Scale Unit webhely bin ext** mappájában található.
+    - **Helyi CRT a Modern POS terminálon:** **A fájl neve CommerceRuntime.MPOSOffline.Ext.config**, CRT és a helyi ügyfélügynök helye alatt található.
 
-2. Regisztrálja a CRT módosítás a kiterjesztés konfigurációs fájljában.
+2. A változás CRT regisztrálása a kiterjesztés konfigurációs fájljában.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
@@ -67,36 +67,36 @@ A CRT bővítőelemek szerepelnek a CRT minták. A következő eljárások végr
 
 ### <a name="enable-hardware-station-extensions"></a>Hardverállomás-bővítmények engedélyezése
 
-A hardverállomás-bővítmény összetevői a hardverállomás-mintákban találhatók. A következő eljárások végrehajtásához nyissa meg a **HardwareStationSamples.sln** alatti megoldás **RetailSdk\\ SampleExtensions\\ HardwareStation**.
+A Hardverállomás bővítmény összetevői a hardverállomás mintáiban szerepelnek. A következő eljárások befejezéséhez **nyissa meg a HardwareStationSamples.sln** megoldást a **RetailSdk\\ SampleExtensions\\ HardwareStation eszközben**.
 
-#### <a name="cleancash-component"></a>CleanCash komponens
+#### <a name="cleancash-component"></a>CleanCash összetevő
 
-1. Találd meg **HardwareStation.Extension.CleanCashSample** projektet, és megépíteni.
-2. Ban,-ben **Extension.CleanCashSample\\ kuka\\ Debug** mappát, keresse meg a **Contoso.Commerce.HardwareStation.CleanCashSample.dll** és **Interop.CleanCash\_ 1\_ 1.dll** összeállítási fájlokat.
-3. Másolja az összeállítási fájlokat a Hardware station extensions mappába:
+1. Keresse meg **és építse fel a HardwareStation.Extension.CleanCashSample** projektet.
+2. Keresse meg **a Contoso.Commerce.HardwareStation.CleanCashSample.dll\\\\ és az Interop.CleanCash 1 1.dll** **szerelvényfájlt a Extension.CleanCash** **\_\_** bin hibakeresési mappában.
+3. A szerelvényfájlok másolása a hardverállomás bővítmények mappájába:
 
-    - **Megosztott hardverállomás:** Másolja a fájlokat a **kuka** mappát az IIS hardver állomás helye alatt.
-    - **Dedikált hardverállomás a Modern POS-en:** Másolja a fájlokat a Modern POS kliens közvetítő helyére.
+    - **Megosztott hardverállomás:** A fájlok másolása **az** IIS hardverállomás webhelyének bin mappájába.
+    - **Külön hardverállomás a Modern POS terminálon: A** fájlok másolása a Modern POS ügyfélügynöki helyére.
 
-4. Keresse meg a hardverállomás kiterjesztéseinek konfigurációs fájlját. A fájl neve **HardwareStation.Extension.config**.
+4. A hardverállomás bővítményének konfigurációs fájlja. A fájl neve **HardwareStation.Extension.config**.
 
-    - **Megosztott hardverállomás:** A fájl az IIS hardver állomás helye alatt található.
-    - **Dedikált hardverállomás a Modern POS-en:** A fájl a Modern POS kliens bróker helye alatt található.
+    - **Megosztott hardverállomás:** A fájl az IIS hardverállomás helye alatt található.
+    - **A Modern POS külön hardverállomása:** A fájl a Modern POS ügyfélügynök helye alatt található.
 
-5. Adja hozzá a következő sort a **fogalmazás** szakasza a konfigurációs fájlban.
+5. Adja hozzá a következő sort a **konfigurációs** fájl összeállítási szakaszhoz.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
     ```
 
-### <a name="enable-modern-pos-extension-components"></a>Modern POS-bővítmény-összetevők engedélyezése
+### <a name="enable-modern-pos-extension-components"></a>A Modern POS bővítmény összetevőinek engedélyezése
 
-1. Nyissa meg a **ModernPOS.sln** alatti megoldás **RetailSdk\\ pozíció**, és győződjön meg arról, hogy hibamentesen lefordítható. Ezenkívül győződjön meg arról, hogy a Modern POS-t futtatni tudja Visual Studio segítségével **Fuss** parancs.
+1. Nyissa meg **a ModernPOS.sln megoldást** **a RetailSdk\\ POS** alatt, és ellenőrizze, hogy hiba nélkül fordítható-e. A Futtatás paranccsal arról is győződjön meg, hogy futtatható a Modern POS Visual Studio **·**.
 
     > [!NOTE]
-    > A modern POS-t nem szabad testre szabni. Engedélyeznie kell a felhasználói fiókok felügyeletét (UAC), és szükség szerint el kell távolítania a Modern POS korábban telepített példányait.
+    > A Modern POS nem szabható testre. Engedélyeznie kell a Felhasználói fiókok vezérlése (UAC) alkalmazást, és szükség szerint el kell távolítania a Modern POS korábban telepített példányait.
 
-2. Engedélyezze a betöltendő bővítményeket a következő sorok hozzáadásával a **extensions.json** fájlt.
+2. Engedélyezze a betölthető **bővítményeket a következő soroknak a extensions.json** fájlba való hozzáadásával.
 
     ``` json
     {
@@ -109,15 +109,15 @@ A hardverállomás-bővítmény összetevői a hardverállomás-mintákban talá
     ```
 
     > [!NOTE]
-    > További információkért, valamint a forráskód-mappák beillesztését és a kiterjesztések betöltésének engedélyezését bemutató mintákért tekintse meg a readme.md fájl utasításait a **Pos.Extensions** projektet.
+    > A további tudnivalókat, valamint azokat a **mintákat, amelyek mutatják, hogyan kell a forráskódmappákat szerepeletni, és hogyan lehet a bővítményeket betölteni, lásd a Pos.Extensions** projekt readme.md fájljában található utasításokat.
 
-3. Építse újra a megoldást.
-4. Futtassa a Modern POS-t a hibakeresőben, és tesztelje a funkcionalitást.
+3. A megoldás újraépítése.
+4. Futtassa a Modern POS szolgáltatást a hibakeresőben, és tesztelje a funkciót.
 
-### <a name="enable-cloud-pos-extension-components"></a>Engedélyezze a Cloud POS bővítmény összetevőit
+### <a name="enable-cloud-pos-extension-components"></a>A Felhő POS bővítmény összetevőinek engedélyezése
 
-1. Nyissa meg a **CloudPOS.sln** alatti megoldás **RetailSdk\\ pozíció**, és győződjön meg arról, hogy hibamentesen lefordítható.
-2. Engedélyezze a betöltendő bővítményeket a következő sorok hozzáadásával a **extensions.json** fájlt.
+1. Nyissa meg **a CloudPOS.sln megoldást** **a RetailSdk\\ POS** alatt, és ellenőrizze, hogy hiba nélkül fordítható-e.
+2. Engedélyezze a betölthető **bővítményeket a következő soroknak a extensions.json** fájlba való hozzáadásával.
 
     ``` json
     {
@@ -130,46 +130,46 @@ A hardverállomás-bővítmény összetevői a hardverállomás-mintákban talá
     ```
 
     > [!NOTE]
-    > További információkért, valamint a forráskód-mappák beillesztését és a kiterjesztések betöltésének engedélyezését bemutató mintákért tekintse meg a readme.md fájl utasításait a **Pos.Extensions** projektet.
+    > A további tudnivalókat, valamint azokat a **mintákat, amelyek mutatják, hogyan kell a forráskódmappákat szerepeletni, és hogyan lehet a bővítményeket betölteni, lásd a Pos.Extensions** projekt readme.md fájljában található utasításokat.
 
-3. Építse újra a megoldást.
-4. Futtassa a megoldást a segítségével **Fuss** parancsot, és kövesse a Retail SDK kézikönyv lépéseit.
+3. A megoldás újraépítése.
+4. Futtassa a megoldást a Futtatás **parancs** használatával, és kövesse a Retail SDK útmutató lépéseit.
 
 ## <a name="production-environment"></a>Működési környezet
 
-Az előző eljárás engedélyezi azokat a bővítményeket, amelyek a vezérlőegység integrációs mintájának összetevői. Ezenkívül követnie kell ezeket a lépéseket a Commerce összetevőket tartalmazó telepíthető csomagok létrehozásához, és ezeknek a csomagoknak éles környezetben való alkalmazásához.
+Az előző eljárás lehetővé teszi az egységintegrációs minta összetevőit tartalmazó bővítményeket. Ezenkívül ezeket a lépéseket kell követnie ahhoz, hogy commerce összetevőket tartalmazó telepíthető csomagokat hozzon létre, és ezeket a csomagokat éles környezetben alkalmazza.
 
-1. Végezze el a következő módosításokat a csomag konfigurációs fájljaiban a **RetailSdk\\ Eszközök** mappa:
+1. Tegye a következő módosításokat **a RetailSdk\\ Assets mappa csomagkonfigurációs fájljaiban**:
 
-    - Ban,-ben **commerceruntime.ext.config** és **CommerceRuntime.MPOSOffline.Ext.config** konfigurációs fájlokat, adja hozzá a következő sorokat a **fogalmazás** szakasz.
+    - **A Commerceruntime.ext.config** **és a CommerceRuntime.MPOSOffline.Ext.config** **konfigurációs fájlokban adja hozzá a következő sorokat az összeállítási szakaszhoz**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
         ```
 
-    - Ban,-ben **HardwareStation.Extension.config** konfigurációs fájlt, adja hozzá a következő sort a **fogalmazás** szakasz.
+    - **A HardwareStation.Extension.config** konfigurációs fájlban adja hozzá a következő sort az összeállítási **szakaszhoz**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
         ```
 
-2. Végezze el a következő módosításokat a **Testreszabás.beállítások** alatti csomag testreszabási konfigurációs fájlja **BuildTools** mappa:
+2. Tegye a következő módosításokat a **Testreszabás.beállítások** csomag testreszabása konfigurációs fájlban a **BuildTools mappában**:
 
-    - Adja hozzá a következő sort a CRT bővítményeket a telepíthető csomagokban.
+    - A következő sor hozzáadása a bővítményeknek CRT a telepíthető csomagokba való felvételéhez.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll" />
         ```
 
-    - Adja hozzá a következő sorokat, hogy a Hardverállomás-bővítményt belefoglalja a telepíthető csomagokba.
+    - Adja hozzá a következő sorokat, hogy a hardverállomás bővítmény szerepeljen a telepíthető csomagokban.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
         ```
 
-3. Engedélyezze a POS kiterjesztést a következő sorok hozzáadásával a **extensions.json** alatti fájl **RetailSDK\\ pozíció\\ Kiterjesztések** mappát.
+3. Engedélyezze a POS-bővítményt a **következő soroknak a RetailSDK** POS-bővítmények **mappában található extensions.json\\\\ fájlba való felvételével**.
 
     ``` json
     {
@@ -181,167 +181,167 @@ Az előző eljárás engedélyezi azokat a bővítményeket, amelyek a vezérlő
     }
     ```
 
-4. Indítsa el az MSBuild parancssort a következőhöz:Visual Studio segédprogramot, és futtassa **msbuild** a Retail SDK mappa alatt telepíthető csomagok létrehozásához.
-5. Alkalmazza a csomagokat LCS-n keresztül vagy manuálisan. További információkért lásd [Hozzon létre telepíthető csomagokat](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-6. Végezze el az összes szükséges beállítási feladatot, amelyek a leírásban szerepelnek [A vezérlőegységekkel való integráció beállítása](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
+4. Indítsa el az MSBuild parancssort Visual Studio a segédprogrammal, **és futtassa az msbuild** csomagot a Retail SDK mappában a telepíthető csomagok létrehozásához.
+5. A csomagok alkalmazása LCS-en keresztül vagy manuálisan. A további tudnivalókat lásd [a Telepíthető csomagok létrehozása.](../dev-itpro/retail-sdk/retail-sdk-packaging.md)
+6. Az összes szükséges beállítási művelet végrehajtása, [amely a vezérlőegységekkel való integráció beállítása során van leírva](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 
 ## <a name="design-of-the-extensions"></a>A bővítmények tervezése
 
-### <a name="crt-extension-design"></a>CRT bővítmény kialakítása
+### <a name="crt-extension-design"></a>CRT kiterjesztésterv
 
-A fiskális bizonylat-szolgáltató bővítmény célja szolgáltatás-specifikus dokumentumok előállítása és a vezérlőegység válaszainak kezelése.
+A kiterjesztés célja, amely egy pénzügyi bizonylat szolgáltatója, a szolgáltatásspecifikus dokumentumok generálása és az ellenőrző egység válaszának kezelnie.
 
-A CRT kiterjesztése az **Runtime.Extensions.DocumentProvider.CleanCashSample**.
+A CRT kiterjesztés a **Runtime.Extensions.DocumentProvider.CleanCashSample**.
 
-A fiskális integrációs megoldás kialakításával kapcsolatos további információkért lásd: [Fiskális regisztrációs folyamat és fiskális integrációs minták a fiskális eszközökhöz és szolgáltatásokhoz](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+A pénzügyi integráció megoldásának [kialakításával kapcsolatos további tudnivalókat lásd a Pénzügyi nyilvántartási folyamat és a pénzügyi eszközök és szolgáltatások pénzügyi integrációs mintáiban](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Kérelemkezelő
 
-Egyetlen van **DocumentProviderCleanCash** kéréskezelő a dokumentumszolgáltató számára. Ez a kezelő a vezérlőegység fiskális dokumentumainak előállítására szolgál.
+A dokumentumszolgáltatóhoz egyetlen **DocumentProviderCleanCash** kérelemkezelő van. Ezzel a kezelővel lehet pénzügyi bizonylatokat létrehozni az ellenőrzési egységhez.
 
-Ezt a kezelőt a **INamedRequestHandler** felület. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott összekötő dokumentumszolgáltató nevével.
+Ez a kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName metódus** felelős a kezelő nevének visszaküldéséért. A kezelő nevének meg kell egyeznie a Commerce Headquarters szolgáltatásban megadott csatlakoztató dokumentumszolgáltató nevével.
 
-Az összekötő a következő kéréseket támogatja:
+Az csatlakoztató a következő kéréseket támogatja:
 
-- **GetFiscalDocumentDocumentProviderRequest** – Ez a kérés információt tartalmaz arról, hogy milyen dokumentumot kell létrehozni. Egy szolgáltatás-specifikus dokumentumot ad vissza, amelyet regisztrálni kell a vezérlőegységben.
-- **GetSupportedRegistrableEventsDocumentProviderRequest** – Ez a kérés visszaadja az előfizetendő események listáját. Jelenleg értékesítési események és audit események támogatottak.
+- **GetFiscalDocumentDocumentProviderRequest** – ez a kérés tartalmazza a létrehozandó dokumentum adatait. Olyan szolgáltatásspecifikus dokumentumot ad vissza, amely regisztrálva kell lennie az ellenőrzési egységben.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** – ez a kérés a regisztrált események listáját adja eredményül. Jelenleg az értékesítési és a könyvvizsgálati események támogatottak.
 
 #### <a name="configuration"></a>Konfiguráció
 
-A **DocumentProviderFiscalCleanCashSample** konfigurációs fájl a **Konfiguráció** a kiterjesztési projekt mappája. Ennek a fájlnak az a célja, hogy lehetővé tegye a dokumentumszolgáltató beállításait a Commerce központjában. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállítások kerülnek hozzáadásra:
+A **DocumentProviderFiscalCleanCashSample** konfigurációs fájl **a** bővítményprojekt Konfigurációs mappájában található. A fájl célja, hogy lehetővé tegye a dokumentumszolgáltató Commerce Headquarters rendszerből származó konfigurálásának beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállításokat lehet hozzáadni:
 
 - Áfakódok leképezése
 
-### <a name="hardware-station-extension-design"></a>Hardverállomás-bővítés kialakítása
+### <a name="hardware-station-extension-design"></a>Hardverállomás bővítményének tervezése
 
-A fiskális összekötő bővítmény célja a vezérlőegységgel való kommunikáció.
+A kiterjesztés célja, amely pénzügyi csatlakoztató, az a cél, hogy kommunikáljon az ellenőrző egységgel.
 
-A Hardver állomás kiterjesztése a **HardwareStation.Extension.CleanCashSample**. A HTTP protokoll használatával elküldi a CRT bővítmény által létrehozott dokumentumokat a vezérlőegységnek. Kezeli a vezérlőegységtől kapott válaszokat is.
+A Hardverállomás kiterjesztése **HardwareStation.Extension.CleanCashSample**. A HTTP protokollal küldheti el a CRT kiterjesztés által az ellenőrzési egységnek generált dokumentumokat. Kezeli az ellenőrzési egységtől kapott válaszokat is.
 
 #### <a name="request-handler"></a>Kérelemkezelő
 
-A **CleanCashHandler** kérelemkezelő a vezérlőegységhez intézett kérések kezelésének belépési pontja.
+A **CleanCashHandler** kérelemkezelő a vezérlőegységhez történő kérések kezelésének belépési pontja.
 
-A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott pénzügyi összekötő nevével.
+A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName metódus** felelős a kezelő nevének visszaküldéséért. A kezelő nevének meg kell egyeznie a Commerce Headquartersban megadott pénzügyi csatlakoztató nevével.
 
-Az összekötő a következő kéréseket támogatja:
+Az csatlakoztató a következő kéréseket támogatja:
 
-- **SubmitDocumentFiscalDeviceRequest** – Ez a kérés dokumentumokat küld a vezérlőegységnek, és választ ad vissza belőle.
-- **IsReadyFiscalDeviceRequest** – Ez a kérés a vezérlőegység állapotfelmérésére szolgál.
-- **InitializeFiscalDeviceRequest** – Ez a kérés a vezérlőegység inicializálására szolgál.
+- **SubmitDocumentFiscalDeviceRequest** – ez a kérés dokumentumokat küld az ellenőrzési egységnek, és választ ad vissza.
+- **IsReadyFiscalDeviceRequest** – ez a kérés az ellenőrzési egység állapotellenőrzésére használható.
+- **InitializeFiscalDeviceRequest** – ez a kérés a vezérlőegység inicializálására használatos.
 
 #### <a name="configuration"></a>Konfiguráció
 
-A konfigurációs fájl a **Konfiguráció** a kiterjesztési projekt mappája. A fájl célja, hogy engedélyezze a pénzügyi összekötő beállításait a Commerce központjából. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállítások kerülnek hozzáadásra:
+A konfigurációs fájl a bővítményprojekt **Konfigurációs** mappájában található. A fájl célja, hogy engedélyezze a Commerce Headquarters alkalmazásból konfigurálható pénzügyi csatlakoztató beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállításokat lehet hozzáadni:
 
-- **Csatlakozási karakterlánc** – A vezérlőegység csatlakozási beállításai.
-- **Időtúllépés** – Az az idő, ezredmásodpercben, ameddig a vezető vár a vezérlőegység válaszára.
+- **Kapcsolati karakterlánc** – a vezérlőegység kapcsolati beállításai.
+- **Időtúllépés** – az az idő ezredmásodpercben, ahányszor a vezető az ellenőrző egység válaszát várja.
 
-## <a name="migrating-from-the-earlier-integration-sample"></a>Áttérés a korábbi integrációs mintáról
+## <a name="migrating-from-the-earlier-integration-sample"></a>Áttelepítés a korábbi integrációs mintából
 
-Ha a korábbit használja [minta POS-integrációhoz vezérlőegységekkel Svédország számára](retail-sdk-control-unit-sample.md), előfordulhat, hogy át kell térnie róla az aktuális integrációs mintára. Ahhoz, hogy a jövőben átvehesse a változást, és időben frissítéseket kapjon a svédországi szolgáltatásokhoz, előfordulhat, hogy frissítenie kell, kisebb kód- és konfigurációmódosításokat kell végrehajtania a megépített bővítményekben, és újra kell építenie a megoldásokat. Nincs szükség jelentős változtatásokra a létrehozott bővítménylogikában. A korábbi integrációs minta és a testreszabásai továbbra is működni fognak, ha nem történik változás az Ön részéről. Ezért megtervezheti, felkészülhet a környezetére, és elvégezheti a felvételt.
+Ha a korábbi mintát svédországi [ellenőrző egységgel való POS-integrációra](retail-sdk-control-unit-sample.md) használja, lehet, hogy át kell áttelepítése abból az aktuális integrációs mintába. A svédországi funkciók módosításainak jövőbeli felvételéhez és a funkciók időben elérhető frissítéséhez lehet, hogy frissítenie kell az alkódokat és a konfigurációkat a beépített bővítményekben, és újra kell építenie a megoldásokat. A létrehozott kiterjesztési logika nem igényel nagyobb változtatásokat. A korábbi integrációs minta és a testreszabások továbbra is működni fognak, ha az ön oldalán nem történik módosítás. Ennek megfelelően tervezheti, előkészítheti és elkészítheti a környezetben szükséges felvételeket.
 
-### <a name="migration-process"></a>Migrációs folyamat
+### <a name="migration-process"></a>Áttelepítési folyamat
 
-A korábbi integrációs mintáról a jelenlegi vezérlőegység-integrációs mintára való áttérésnek a fokozatos frissítés koncepcióján kell alapulnia. Más szavakkal, a kereskedelmi központ és a kereskedelmi mérlegegység összes összetevőjét már frissíteni kell, mielőtt elkezdené frissíteni a POS és a Hardver állomás összetevőit.
+A korábbi integrációs minta és az ellenőrzési egység jelenlegi integrációs minta közötti áttelepítésének a fokozatos frissítés koncepcióját kell figyelembe vennie. Más szóval a Commerce Headquarters és a Commerce Scale Unit összetevőt már frissíteni kell, mielőtt elkezdené a POS és a hardverállomás összetevőinek frissítését.
 
-Az olyan helyzetek elkerülése érdekében, amikor egy eseményt vagy tranzakciót kétszer írnak alá (azaz a korábbi bővítmény és a jelenlegi bővítmény is aláírja), vagy amikor egy eseményt vagy tranzakciót nem lehet aláírni a hiányzó konfiguráció miatt, javasoljuk, hogy kikapcsolja az összes POS és Hardver állomás eszközt, amely a korábbi mintát használja, majd egyidejűleg frissíti azokat. Ezt az egyidejű frissítést például üzletenként, az áruház működési profiljának és a hardverállomás hardverprofiljának frissítésével lehet elvégezni.
+Olyan helyzet megakadályozása érdekében, amikor egy eseményt vagy tranzakciót kétszer aláírnak (vagyis a korábbi és a jelenlegi kiterjesztés is aláírja), vagy ha egy eseményt vagy tranzakciót nem lehet aláírni a hiányzó konfiguráció miatt, javasoljuk, hogy kapcsolja ki a korábbi mintát tartalmazó összes POS- és hardverállomás eszközt, , majd frissítheti őket egyszerre. Ez a párhuzamos frissítés például üzletről üzletre történő frissítésre az üzlet funkcióprofilja és a hardveres állomás hardverprofilja frissítésével egyidejűleg történik.
 
-A migrációs folyamatnak a következő lépésekből kell állnia.
+Az áttelepítési folyamatnak a következő lépésekből kell állnia.
 
-1. Frissítse a Commerce központ összetevőit.
-1. Frissítse a Commerce Scale Unit összetevőit, és engedélyezze az aktuális minta bővítményeit.
-1. Győződjön meg arról, hogy az összes offline tranzakció szinkronizálva van az offline funkcióval rendelkező MPOS-eszközökről.
-1. Kapcsolja ki az összes olyan eszközt, amely a korábbi minta összetevőit használja.
-1. Végezze el az összes szükséges beállítási feladatot, amelyek a leírásban szerepelnek [A vezérlőegységekkel való integráció beállítása](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
-1. Frissítse a POS és a Hardver állomás összetevőit, tiltsa le a korábbi minta részét képező bővítményeket, és engedélyezze az aktuális minta bővítményeit.
+1. A Commerce Headquarters összetevőinek frissítése
+1. A Commerce Scale Unit összetevőinek frissítése és az aktuális minta kiterjesztésének engedélyezése.
+1. Győződjön meg róla, hogy minden offline tranzakció szinkronizálva van az offline módú MPOS-eszközökről.
+1. Minden olyan eszköz kikapcsolása, amely a korábbi minta összetevőit használja.
+1. Az összes szükséges beállítási művelet végrehajtása, [amely a vezérlőegységekkel való integráció beállítása során van leírva](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
+1. A POS és a Hardverállomás összetevő frissítése, a korábbi minta részeiben található bővítmények letiltása, valamint az aktuális minta kiterjesztésének engedélyezése.
 
     > [!NOTE]
-    > A környezet típusától függően további technikai részleteket találhat az áttelepítési folyamatról mindkét oldalon [Migráció fejlesztési környezetben](#migration-in-a-development-environment) szakasz vagy a [Migráció termelési környezetben](#migration-in-a-production-environment) részben ebben a témában.
+    > A környezet típusától függően [az áttelepítési folyamattal kapcsolatos további technikai részleteket az Áttelepítés fejlesztési](#migration-in-a-development-environment)[környezetben vagy az](#migration-in-a-production-environment) Áttelepítés termelési környezetben szakaszból találhatja meg.
 
-### <a name="migration-in-a-development-environment"></a>Migráció fejlesztési környezetben
+### <a name="migration-in-a-development-environment"></a>Áttelepítés fejlesztési környezetben
 
 #### <a name="update-crt"></a>CRT frissítése
 
-1. Találd meg **Runtime.Extensions.DocumentProvider.CleanCashSample** projektet, és megépíteni.
-2. Ban,-ben **Runtime.Extensions.DocumentProvider.CleanCashSample\\ kuka\\ Debug** mappát, keresse meg a **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** összeállítási fájl.
-3. Másolja az összeállítási fájlt a CRT kiterjesztések mappa:
+1. Keresse meg **a Runtime.Extensions.DocumentProvider.CleanCashSample** projektet, és építse fel.
+2. A Runtime.Extensions.DocumentProvider.CleanCashSample **bin\\ hibakeresési\\** mappában keresse meg a Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll **szerelvényfájlt**.
+3. A szerelvényfájl másolása a bővítmények CRT mappájába:
 
-    - **Kereskedelmi mértékegység:** Másolja a fájlt a **\\ kuka\\ ext** mappát az IIS Commerce Scale Unit webhely helye alatt.
-    - **Helyi CRT a modern POS-on:** Másolja a fájlt a **\\ ext** mappát a helyi alatt CRT ügyfél bróker helye.
+    - **Commerce Scale Unit:** A fájl másolása **\\\\ az IIS Commerce Scale Unit webhely bin ext** mappájába.
+    - **Helyi CRT a Modern POS terminálon:** Másolja **\\ a fájlt a helyi ügyfélügynök helye alatti ext** CRT mappába.
 
-4. Keresse meg a kiterjesztés konfigurációs fájlját CRT:
+4. A következő bővítmény-konfigurációs fájl megkeresve CRT:
 
-    - **Kereskedelmi mértékegység:** A fájl neve **CommerceRuntime.ext.config**, és benne van a **kuka\\ ext** mappát az IIS Commerce Scale Unit webhely helye alatt.
-    - **Helyi CRT a modern POS-on:** A fájl neve **CommerceRuntime.MPOSOffline.Ext.config**, és benne van a **kuka\\ ext** mappát a helyi alatt CRT ügyfél bróker helye.
+    - **Commerce Scale Unit:** **A fájl neve CommerceRuntime.ext.config**, **\\ és az IIS Commerce Scale Unit webhely bin ext** mappájában található.
+    - **Helyi CRT a Modern POS terminálon:** **A fájl neve CommerceRuntime.MPOSOffline.Ext.config**, **és a helyi ügyfélügynök helye, a bin\\ ext** CRT mappában található.
 
     > [!WARNING]
-    > Tedd **nem** szerkessze a CommerceRuntime.config és a CommerceRuntime.MPOSOffline.config fájlokat. Ezek a fájlok nem testreszabhatók.
+    > Ne **szerkessze** a CommerceRuntime.config és a CommerceRuntime.MPOSOffline.config fájlokat. Ezek a fájlok nem testreszabott fájlok.
 
-5. Keresse meg és távolítsa el a korábbit CRT kiterjesztést a kiterjesztési konfigurációs fájlból.
+5. A kiterjesztés konfigurációs fájljában található korábbi CRT kiterjesztés megkeresve és eltávolítása.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
     ```
 
     > [!WARNING]
-    > Ne hajtsa végre ezt a lépést mindaddig, amíg nem frissíti az összes ezzel működő POS-eszközt CRT példa.
+    > Ezt a lépést ne kell végrehajtani, amíg nem frissít minden OLYAN POS-eszközt, amely ezzel a példánysal CRT dolgozik.
 
-6. Regisztrálja az aktuális mintát CRT kiterjesztéseket a kiterjesztés konfigurációs fájljában a következő sorok hozzáadásával.
+6. Az aktuális mintakiterjesztések CRT regisztrálása a kiterjesztés konfigurációs fájljában a következő sorok hozzáadásával.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
     ```
 
-#### <a name="update-hardware-station"></a>Frissítse a hardver állomást
+#### <a name="update-hardware-station"></a>Hardverállomás frissítése
 
-1. Találd meg **HardwareStation.Extension.CleanCashSample** projektet, és megépíteni.
-2. Ban,-ben **Extension.CleanCashSample\\ kuka\\ Debug** mappát, keresse meg a **Contoso.Commerce.HardwareStation.CleanCashSample.dll** és **Interop.CleanCash\_ 1\_ 1.dll** összeállítási fájlokat.
-3. Másolja az összeállítási fájlokat a Hardware station extensions mappába:
+1. Keresse meg **és építse fel a HardwareStation.Extension.CleanCashSample** projektet.
+2. Keresse meg **a Contoso.Commerce.HardwareStation.CleanCashSample.dll\\\\ és az Interop.CleanCash 1 1.dll** **szerelvényfájlt a Extension.CleanCash** **\_\_** bin hibakeresési mappában.
+3. A szerelvényfájlok másolása a hardverállomás bővítmények mappájába:
 
-    - **Megosztott hardverállomás:** Másolja a fájlokat a **kuka** mappát az IIS hardver állomás helye alatt.
-    - **Dedikált hardverállomás a Modern POS-en:** Másolja a fájlokat a Modern POS kliens közvetítő helyére.
+    - **Megosztott hardverállomás:** A fájlok másolása **az** IIS hardverállomás webhelyének bin mappájába.
+    - **Külön hardverállomás a Modern POS terminálon: A** fájlok másolása a Modern POS ügyfélügynöki helyére.
 
-4. Találd meg **HardwareStation.Extension.config** kiterjesztési konfigurációs fájl:
+4. Keresse meg **a HardwareStation.Extension.config kiterjesztés** konfigurációs fájlját:
 
-    - **Távoli hardver állomás:** A fájl az IIS hardver állomás helye alatt található.
-    - **Helyi hardverállomás a Modern POS-en:** A fájl a Modern POS kliens bróker helye alatt található.
+    - **Távoli hardverállomás:** A fájl az IIS hardverállomás helye alatt található.
+    - **Helyi hardverállomás a Modern POS terminálon:** A fájl a Modern POS ügyfélügynök helye alatt található.
 
     > [!WARNING]
-    > Tedd **nem** szerkessze a CommerceRuntime.config és a CommerceRuntime.MPOSOffline.config fájlokat. Ezek a fájlok nem testreszabhatók.
+    > Ne **szerkessze** a CommerceRuntime.config és a CommerceRuntime.MPOSOffline.config fájlokat. Ezek a fájlok nem testreszabott fájlok.
 
-5. Keresse meg és távolítsa el a korábbi hardverállomás-kiterjesztést a kiterjesztési konfigurációs fájlból.
+5. A korábbi hardverállomás-kiterjesztés megkeresi és eltávolítja a kiterjesztés konfigurációs fájlját.
 
-    # <a name="retail-73-and-earlier"></a>[Kiskereskedelem 7.3 és korábbi verziók](#tab/retail-7-3)
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
-    ```
-
-    # <a name="retail-731-and-later"></a>[Kiskereskedelem 7.3.1 és újabb](#tab/retail-7-3-1)
+    # <a name="retail-73-and-earlier"></a>[Retail 7.3 és korábbi](#tab/retail-7-3)
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
     ```
 
-    # <a name="retail-100-and-later"></a>[Kiskereskedelem 10.0 és újabb](#tab/retail-10-0)
+    # <a name="retail-731-and-later"></a>[Retail 7.3.1 és újabb](#tab/retail-7-3-1)
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+    ```
+
+    # <a name="retail-100-and-later"></a>[Retail 10.0 és újabb](#tab/retail-10-0)
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
     ```
     ---
 
-6. Adja hozzá a következő sort a **fogalmazás** szakasza a kiterjesztés konfigurációs fájljában.
+6. Adja hozzá a következő sort a **kiterjesztési** konfigurációs fájl összeállítási szakaszhoz.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
     ```
 
-#### <a name="update-modern-pos"></a>Frissítse a Modern POS-t
+#### <a name="update-modern-pos"></a>Modern POS frissítése
 
-1. Nyissa meg a **CloudPOS.sln** alatti megoldás **RetailSdk\\ pozíció**.
-2. Tiltsa le a korábbi POS-bővítményt a következő sorok eltávolításával a **extensions.json** fájlt.
+1. Nyissa meg **a CloudPOS.sln megoldást** a **RetailSdk POS szolgáltatásban\\**.
+2. Tiltsa le a korábbi POS-bővítményt a **következő soroknak a extensions.json fájlból** való eltávolításával.
 
     ``` json
     {
@@ -349,7 +349,7 @@ A migrációs folyamatnak a következő lépésekből kell állnia.
     }
     ```
 
-2. Engedélyezze az aktuális minta POS-kiterjesztést a következő sorok hozzáadásával a **extensions.json** fájlt.
+2. Engedélyezze az aktuális minta POS-bővítményt a **következő soroknak a extension.json fájlba való hozzáadásával**.
 
     ``` json
     {
@@ -361,10 +361,10 @@ A migrációs folyamatnak a következő lépésekből kell állnia.
     }
     ```
 
-#### <a name="update-cloud-pos"></a>Frissítse a Cloud POS-t
+#### <a name="update-cloud-pos"></a>A Felhő POS frissítése
 
-1. Nyissa meg a **ModernPOS.sln** alatti megoldás **RetailSdk\\ pozíció**.
-2. Tiltsa le a korábbi POS-bővítményt a következő sorok eltávolításával a **extensions.json** fájlt.
+1. Nyissa meg **a ModernPOS.sln megoldást** a **RetailSdk POS alatt\\**.
+2. Tiltsa le a korábbi POS-bővítményt a **következő soroknak a extensions.json fájlból** való eltávolításával.
 
     ``` json
     {
@@ -372,7 +372,7 @@ A migrációs folyamatnak a következő lépésekből kell állnia.
     }
     ```
 
-2. Engedélyezze az aktuális minta POS-kiterjesztést a következő sorok hozzáadásával a **extensions.json** fájlt.
+2. Engedélyezze az aktuális minta POS-bővítményt a **következő soroknak a extension.json fájlba való hozzáadásával**.
 
     ``` json
     {
@@ -384,89 +384,89 @@ A migrációs folyamatnak a következő lépésekből kell állnia.
     }
     ```
 
-### <a name="migration-in-a-production-environment"></a>Migráció termelési környezetben
+### <a name="migration-in-a-production-environment"></a>Áttelepítés éles környezetben
 
 #### <a name="update-crt"></a>CRT frissítése
 
-1. Távolítsa el a korábbit CRT kiterjesztés a **CommerceRuntime.ext.config** és **CommerceRuntime.MPOSOffline.Ext.config** alatti konfigurációs fájlok **RetailSdk\\ Eszközök** mappát.
+1. CRT Távolítsa el a korábbi bővítményt a **CommerceRuntime.ext.config** **és CommerceRuntime.MPOSOffline.Ext.config konfigurációs fájlokból** **a RetailSdk\\ Assets mappában**.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
     ```
 
     > [!WARNING]
-    > Ne hajtsa végre ezt a lépést mindaddig, amíg nem frissíti az összes ezzel működő POS-eszközt CRT példa.
+    > Ezt a lépést ne kell végrehajtani, amíg nem frissít minden OLYAN POS-eszközt, amely ezzel a példánysal CRT dolgozik.
 
-2. Engedélyezze az aktuális mintát CRT kiterjesztéseket a következő változtatásokkal a **CommerceRuntime.ext.config** és **CommerceRuntime.MPOSOffline.Ext.config** alatti konfigurációs fájlok **RetailSdk\\ Eszközök** mappát.
+2. Engedélyezze az aktuális mintakiterjesztéseket CRT **a CommerceRuntime.ext.config** **és CommerceRuntime.MPOSOffline.Ext.config** **konfigurációs fájloknak a RetailSdk\\ Assets** mappában végrehajtott változtatásával.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
     ```
 
-3. Ban,-ben **Testreszabás.beállítások** alatti csomag testreszabási konfigurációs fájlja **BuildTools** mappát, adja hozzá a következő sort az aktuális minta szerepeltetéséhez CRT bővítmény telepíthető csomagokban.
+3. **A BuildTools** mappa Alatti Testreszabás.beállítások **csomag**-testreszabási konfigurációs fájlban adja hozzá a következő sort, hogy az aktuális mintakiterjesztés CRT szerepeljen a telepíthető csomagokban.
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll" />
     ```
 
-#### <a name="update-hardware-station"></a>Frissítse a hardver állomást
+#### <a name="update-hardware-station"></a>Hardverállomás frissítése
 
-1. Távolítsa el a korábbi hardverállomás-kiterjesztést a **HardwareStation.Extension.config** konfigurációs fájl.
+1. Távolítsa el a korábbi hardverállomás-kiterjesztést a **HardwareStation.Extension.config konfigurációs fájl** módosításával.
 
-    # <a name="retail-73-and-earlier"></a>[Kiskereskedelem 7.3 és korábbi verziók](#tab/retail-7-3)
+    # <a name="retail-73-and-earlier"></a>[Retail 7.3 és korábbi](#tab/retail-7-3)
 
-    Távolítsa el a következő részt a **HardwareStation.Shared.config** és **HardwareStation.Dedicated.config** konfigurációs fájlok.
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
-    ```
-
-    # <a name="retail-731-and-later"></a>[Kiskereskedelem 7.3.1 és újabb](#tab/retail-7-3-1)
-
-    Távolítsa el a következő részt a **HardwareStation.Extension.config** konfigurációs fájl.
+    Távolítsa el a következő szakaszt a **HardwareStation.Shared.config** és **HardwareStation.Dedicated.config konfigurációs** fájlokból.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
     ```
 
-    # <a name="retail-100-and-later"></a>[Kiskereskedelem 10.0 és újabb](#tab/retail-10-0)
+    # <a name="retail-731-and-later"></a>[Retail 7.3.1 és újabb](#tab/retail-7-3-1)
 
-    Távolítsa el a következő részt a **HardwareStation.Extension.config** konfigurációs fájl.
+    Távolítsa el a következő szakaszt a **HardwareStation.Extension.config konfigurációs** fájlból.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+    ```
+
+    # <a name="retail-100-and-later"></a>[Retail 10.0 és újabb](#tab/retail-10-0)
+
+    Távolítsa el a következő szakaszt a **HardwareStation.Extension.config konfigurációs** fájlból.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
     ```
     ---
 
-2. Engedélyezze az aktuális minta Hardverállomás-kiterjesztést a következő sor hozzáadásával a **fogalmazás** szakaszban a **HardwareStation.Extension.config** konfigurációs fájl.
+2. Engedélyezze az aktuális hardverállomás-mintakiterjesztést **·** **a Következő sornak a HardwareStation.Extension.config konfigurációs fájl összeállítási szakaszához való hozzáadásával**.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
     ```
 
-3. Végezze el a következő módosításokat a **Testreszabás.beállítások** alatti csomag testreszabási konfigurációs fájlja **BuildTools** mappa:
+3. Tegye a következő módosításokat a **Testreszabás.beállítások** csomag testreszabása konfigurációs fájlban a **BuildTools mappában**:
 
-    - Távolítsa el a következő sort, hogy kizárja a korábbi hardverállomás-bővítményt a telepíthető csomagokból.
+    - Távolítsa el a következő sort, ha ki szeretné zárni a korábbi hardverállomás-bővítményt a telepíthető csomagokból.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
         ```
 
-    - Adja hozzá a következő sorokat az aktuális minta Hardverállomás-bővítménynek a telepíthető csomagokba való belefoglalásához.
+    - Adja hozzá a következő sorokat, hogy az aktuális minta hardverállomás bővítmény szerepeljen a telepíthető csomagokban.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
         ```
 
-#### <a name="update-modern-pos"></a>Frissítse a Modern POS-t
+#### <a name="update-modern-pos"></a>Modern POS frissítése
 
-1. Nyissa meg a **CloudPOS.sln** megoldás at **RetailSdk\\ pozíció**.
+1. Nyissa meg **a CloudPOS.sln megoldást** a **RetailSdk POS-terminálon\\**.
 2. A korábbi POS-bővítmény letiltása:
 
-    - Ban,-ben **tsconfig.json** fájlt, adja hozzá a **FiscalRegisterSample** mappát a kizárási listára.
-    - Távolítsa el a következő sorokat a **extensions.json** alatti fájl **RetailSDK\\ pozíció\\ Kiterjesztések** mappát.
+    - **A tsconfig.json fájlban** adja **hozzá a FiscalRegisterSample** mappát a kizárási listához.
+    - A következő sorok eltávolítása a RetailSDK **POS-bővítmények** mappában található extensions.json **\\ fájlból\\.**
 
         ``` json
         {
@@ -474,7 +474,7 @@ A migrációs folyamatnak a következő lépésekből kell állnia.
         }
         ```
 
-3. Engedélyezze az aktuális minta POS-kiterjesztést a következő sorok hozzáadásával a **extensions.json** fájlban a **RetailSDK\\POS\\Extensions** mappa alatt.
+3. Engedélyezze az aktuális minta POS-bővítményt **a Következő soroknak a RetailSDK** POS-bővítmények **mappában található extensions.json\\\\ fájlba való felvételével**.
 
     ``` json
     {
@@ -486,13 +486,13 @@ A migrációs folyamatnak a következő lépésekből kell állnia.
     }
     ```
 
-#### <a name="update-cloud-pos"></a>Frissítse a Cloud POS-t
+#### <a name="update-cloud-pos"></a>A Felhő POS frissítése
 
-1. Nyissa meg a **ModernPOS.sln** alatti megoldás **RetailSdk\\ pozíció**.
+1. Nyissa meg **a ModernPOS.sln megoldást** a **RetailSdk POS alatt\\**.
 2. A korábbi POS-bővítmény letiltása:
 
-    - Ban,-ben **tsconfig.json** fájlt, adja hozzá a **FiscalRegisterSample** mappát a kizárási listára.
-    - Távolítsa el a következő sorokat a **extensions.json** alatti fájl **RetailSDK\\ pozíció\\ Kiterjesztések** mappát.
+    - **A tsconfig.json fájlban** adja **hozzá a FiscalRegisterSample** mappát a kizárási listához.
+    - A következő sorok eltávolítása a RetailSDK **POS-bővítmények** mappában található extensions.json **\\ fájlból\\.**
 
         ``` json
         {
@@ -500,7 +500,7 @@ A migrációs folyamatnak a következő lépésekből kell állnia.
         }
         ```
 
-3. Engedélyezze az aktuális minta POS-kiterjesztést a következő sorok hozzáadásával a **extensions.json** fájlban a **RetailSDK\\POS\\Extensions** mappa alatt.
+3. Engedélyezze az aktuális minta POS-bővítményt **a Következő soroknak a RetailSDK** POS-bővítmények **mappában található extensions.json\\\\ fájlba való felvételével**.
 
     ``` json
     {
@@ -514,4 +514,4 @@ A migrációs folyamatnak a következő lépésekből kell állnia.
 
 #### <a name="create-deployable-packages"></a>Telepíthető csomagok létrehozása
 
-Futtassa **az msbuild parancsot** a teljes Retail SDK-hoz üzembe helyezhető csomagok létrehozásához. Alkalmazza a csomagokat LCS-n keresztül vagy manuálisan. További információ: [Retail SDK csomagolás](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+Futtassa **az msbuild** csomagot a teljes Retail SDK készletből, hogy telepíthető csomagokat hozzon létre. A csomagok alkalmazása LCS-en keresztül vagy manuálisan. A további tudnivalókat lásd a [Retail SDK csomagolásával kapcsolatban](../dev-itpro/retail-sdk/retail-sdk-packaging.md).

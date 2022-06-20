@@ -1,6 +1,6 @@
 ---
 title: Jövőben esedékes csekkek beállítása
-description: Ez a témakör bemutatja, hogyan állíthatja be, miként legyenek feladva a jövőben esedékes csekkek naplóbejegyzési, és melyik feladási naplókat kell használni elszámolási tételekhez és szállítói kifizetésekhez.
+description: Ez a cikk bemutatja, hogy fel kell-e adni a jövőben esedékes csekkek naplóbejegyzését, és hogy mely feladási naplókat kell használni a bejegyzések és a szállítói kifizetések elszámolására.
 author: kweekley
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 645b474b8b4bd13cd47bef404cda002e6b29a1ba
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e045648230aba7965ed68fbc499f73e077caceed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724841"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870307"
 ---
 # <a name="set-up-postdated-checks"></a>Jövőben esedékes csekkek beállítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan állíthatja be, miként legyenek feladva a jövőben esedékes csekkek naplóbejegyzési, és melyik feladási naplókat kell használni elszámolási tételekhez és szállítói kifizetésekhez. Emellett beállíthat elszámolószámokat a kiállított csekkekhez, a fogadott csekkekhez és az adóelőleghez is. Jövőben esedékes csekkek, amelyeket jövőbeli dátumon való fizetés céljából állítottak ki. Megadhatja, hogy a csekk szerepeljen-e a számviteli könyvekben az esedékesség dátuma előtt.
+Ez a cikk bemutatja, hogy fel kell-e adni a jövőben esedékes csekkek naplóbejegyzését, és hogy mely feladási naplókat kell használni a bejegyzések és a szállítói kifizetések elszámolására. Emellett beállíthat elszámolószámokat a kiállított csekkekhez, a fogadott csekkekhez és az adóelőleghez is. Jövőben esedékes csekkek, amelyeket jövőbeli dátumon való fizetés céljából állítottak ki. Megadhatja, hogy a csekk szerepeljen-e a számviteli könyvekben az esedékesség dátuma előtt.
 
 
 

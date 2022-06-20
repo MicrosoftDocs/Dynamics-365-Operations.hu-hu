@@ -1,26 +1,26 @@
 ---
 title: E-kereskedelmi webhely másolása
-description: Ez a témakör azt ismerteti, hogyan lehet másolni egy meglévő e-commerce webhelyet a webhelyszerkesztő e-commerce Microsoft Dynamics 365 Commerce környezetei között, illetve között.
+description: Ez a témakör ismerteti, hogyan lehet másolni egy meglévő e-commerce webhelyet a webhelyszerkesztő e-commerce Microsoft Dynamics 365 Commerce környezetei között, illetve között.
 author: psimolin
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: a23f544cbd1e960cb704d2b9666b7db4c3894b5e
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: cb53a76b2ebe5b511bf5009727f20f20755e5720
+ms.sourcegitcommit: 13c7a1cc4c90417e3e88db59b7d2165b3c40a56c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462326"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "8935744"
 ---
 # <a name="copy-an-e-commerce-site"></a>E-kereskedelmi webhely másolása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet másolni egy meglévő e-commerce webhelyet a webhelyszerkesztő e-commerce Microsoft Dynamics 365 Commerce környezetei között, illetve között.
+Ez a témakör ismerteti, hogyan lehet másolni egy meglévő e-commerce webhelyet a webhelyszerkesztő e-commerce Microsoft Dynamics 365 Commerce környezetei között, illetve között.
 
 Dynamics 365 Commerce A <a0/1><a2/1><a2/"<a2/<a2/a Webhelyek másolása és cloning a Commerce Webhelyszerkesztőben önkiszolgáló műveletként való másolását és cloningot támogatja. A telephelyek egyetlen e-kereskedelmi környezetbe vagy két e-kereskedelmi környezetbe másolhatók. A webhely másolási műveletét kezdeményező felhasználónak bérlő-rendszergazdának kell lennie mind a forrás, mind a cél e-commerce környezetben.
 
@@ -40,23 +40,23 @@ A következő lépésekkel másolhatja le a webhelyet az e-commerce környezetbe
 1. Jelentkezzen be a helyszerkesztőbe, annak a környezetnek a számára, ahol a másolási műveletet végre szeretné végezni.
 1. Nyissa meg a webhelylista nézetet a **Jobb** felső sarkában lévő Hely kapcsoló kiválasztásával, **majd a Helyek kezelése lehetőség választásával**.
 1. Keresse meg azt a helyet, amelyet másolni vagy másolni szeretne, és válassza ki azt a hely neve melletti jelölőnégyzet be jelölje be.
-1. A munkaablakban válassza a Hely másolása **lehetőséget**.
-1. Adja meg **az új webhely** nevét **a Webhely másolása párbeszédpanel Új** hely neve mezőjében. Az új hely nevének egyedinek kell lennie az e-commerce környezetben. A **Forrás bérlő és** **Forrás** webhely mezői automatikusan az aktuális bérlő és a kiválasztott telephely adataira vannak beállítva.
+1. Válassza a Webhely másolása lehetőséget a **parancssorban**.
+1. Írja be **az új hely** nevét a Webhely másolása menü **Új** hely neve mezőjébe. Az új hely nevének egyedinek kell lennie az e-commerce környezetben. A **Forrás bérlő és** **Forrás** webhely mezői automatikusan az aktuális bérlő és a kiválasztott telephely adataira vannak beállítva.
 1. Válassza a Másolat **létrehozása lehetőséget**.
 
 Az adatok ellenőrzése után az értesítés azt jelzi, hogy a rendszer új másolati feladatot hozott létre a webhelyen. A feladat haladását a [**Bérlő – Feladatok lap jobb oldali ablakában követheti** nyomon](#monitor-the-site-copy-operation). Ha a másolási művelet sikeresen befejeződött, az új hely megjelenik a helyek listájában a webhelylista nézetben.
 
-Az alábbi ábra a Webhely másolása **párbeszédpanelt** mutatja be a webhelyszerkesztőben.
+Az alábbi ábra a Webhely másolása **menü** példáját mutatja be a webhelyszerkesztőben.
 
-![A Webhely másolása párbeszédpanel a Webhelyszerkesztőben](media/site-copy_1.png)
+![Hely menü másolása a webhelyszerkesztőben](media/site-copy_1.png)
 
 ## <a name="copy-a-site-between-two-e-commerce-environments"></a>Hely másolása két e-commerce környezet között
 
 Ha egy webhelyet két e-commerce környezet között kell másolni, kövesse ezeket a lépéseket.
 
 1. Jelentkezzen be a helyszerkesztőbe a cél e-commerce környezetben.
-1. A munkaablakban válassza a Hely másolása **lehetőséget**.
-1. Adja meg **az új webhely** nevét **a Webhely másolása párbeszédpanel Új** hely neve mezőjében. Az új hely nevének egyedinek kell lennie az e-commerce környezetben.
+1. Válassza a Webhely másolása lehetőséget a **parancssorban**.
+1. Írja be **az új hely** nevét a Webhely másolása menü **Új** hely neve mezőjébe. Az új hely nevének egyedinek kell lennie az e-commerce környezetben.
 1. A Forrás **bérlő mezőben** válassza ki a forrás bérlő nevét.
 1. A Forráshely **mezőben** válassza ki a forráshelyet.
 1. Válassza a Másolat **létrehozása lehetőséget**.
@@ -66,6 +66,32 @@ Ha egy webhelyet két e-commerce környezet között kell másolni, kövesse eze
 
 Az adatok ellenőrzése után az értesítés azt jelzi, hogy a rendszer új másolati feladatot hozott létre a webhelyen. A feladat haladását a [**Bérlő – Feladatok lap jobb oldali ablakában követheti** nyomon](#monitor-the-site-copy-operation). Ha a másolási művelet sikeresen befejeződött, az új hely megjelenik a helyek listájában a webhelylista nézetben.
 
+## <a name="map-channels-during-the-site-copy-operation-optional"></a>Csatornák leképezése a webhely másolási művelete során (nem kötelező)
+
+A forráscsatornák és a területi adatok a célcsatornákhoz és a területi adatokhoz is hozzárendelhetők a hely másolási műveletének részeként. Ha a csatorna-hozzárendelés a hely másolási műveletének részeként történik, akkor nem szükséges a hely inicializálása a FRE folyamat használatával, és a csatornákat a helybeállítások között konfigurálni. 
+
+A webhelyszerkesztőben az összes csatorna és területi hely leképezésének a 1 és 1 között való leképezésére hajtsa végre a következő lépéseket.
+
+1. Nyissa meg a webhelylista nézetet a **Jobb** felső sarkában lévő Hely kapcsoló kiválasztásával, **majd a Helyek kezelése lehetőség választásával**.
+1. Keresse meg azt a helyet, amelyet másolni vagy másolni szeretne, és válassza ki azt a hely neve melletti jelölőnégyzet be jelölje be.
+1. Válassza a Webhely másolása lehetőséget a **parancssorban**.
+1. A Webhely másolása menüBen **adja** meg az Új helynév, **·** **a Forrás bérlő és a Forrás** hely értékeit (ha még nem létezik).**·**
+1. Válassza a **Csatorna-hozzárendelések hozzáadása lehetőséget**.
+1. Válassza ki a Forrás **csatornát**, **majd** válassza ki a forrás csatornát a Hely csatornái és a Területi beállítások menüben.  
+1. Válassza ki **a Cél csatornát**, majd válassza ki ugyanazt a csatornát, mint a forráscsatorna. 
+1. Válassza a **Területi beállítás hozzáadása lehetőséget**.
+1. Válassza **a Forrás területi beállításokat**, majd válassza ki a forrás területi beállítását.
+1. Válassza **a Cél területi beállításokat**, majd válassza ki ugyanazt a területi beállításokat, mint a forrás területi beállítások. 
+1. Az **URL-cím elérési** útjaként adjon meg egy egyedi URL-címet, amely jelenleg nincs használatban a célkörnyezetben.
+1. Ismételje meg a 8-11. lépést a csatornához hozzárendelni szükséges területi stb. lépésekkel.
+1. Válassza az **Alkalmazás** lehetőséget.
+1. Ismételje meg a 6-11. lépést mindegyik forráscsatornára.
+1. Válassza **Bezárás** lehetőséget.
+1. Ellenőrizze a konfiguráció pontosságát, majd válassza a Hely másolása **lehetőséget**.
+
+> [!NOTE]
+> Minden forráscsatornát és területi csatornát leképezni kell, és csak egyszer lehet megfeleltetni.
+
 ## <a name="monitor-the-site-copy-operation"></a>A hely másolási műveletének figyelése
 
 A hely másolási műveletének előrehaladását a következő lépések szerint követheti.
@@ -74,9 +100,9 @@ A hely másolási műveletének előrehaladását a következő lépések szerin
 1. A bal oldali ablakban válassza a Bérlő feladatok **lehetőséget**.
 1. A Bérlő **– Feladatok** lapon keresse meg és válassza ki a listában a telephely másolási feladatot. A jobb oldalon megjelenik egy ablak, amely megjeleníti a kiválasztott feladat állapotát és részletes adatait.
 
-A Folyamatban állapotú **feladat visszavonható**. Válassza ki a feladatot a listából, majd válassza a **Mégse** lehetőséget a munkaablakban.
+A Folyamatban állapotú **feladat visszavonható**. Válassza ki a feladatot a listából, majd válassza a parancssorból **a Mégse** lehetőséget.
 
-Egy Sikertelen **vagy** **Befejeződött állapotú feladatot is megpróbálhat újrapróbálkozáskor.** Válassza ki a feladatot a listából, majd válassza az **Újrapróbálkozás** lehetőséget a munkaablakban.
+Egy Sikertelen **vagy** **Befejeződött állapotú feladatot is megpróbálhat újrapróbálkozáskor.** Válassza ki a feladatot a listából, majd válassza az Újrapróbálkozás **parancsot** a parancssorban.
 
 > [!NOTE]
 > A videoeszközök feldolgozása a hely másolási feladatának befejezése után folytatódhat.

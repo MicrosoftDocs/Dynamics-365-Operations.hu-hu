@@ -1,6 +1,6 @@
 ---
 title: Zökkenőmentes offline kapcsoló ajándékutalvány- és jóváírási műveletek esetén
-description: Ez a témakör áttekintést nyújt azokról a fejlesztésekről, amelyek egy zökkenőmentes offline kapcsolót biztosítanak bizonyos fizetéstípusokhoz.
+description: Ez a cikk áttekintést nyújt az olyan fejlesztésekről, amelyek problémamentes offline váltást biztosítanak az adott fizetéstípusokhoz.
 author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: e0416a61bd5fd3b875b427ad8a6313d0e9936f0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869161"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Zökkenőmentes offline kapcsoló ajándékutalvány- és jóváírási műveletek esetén
 
 [!include [banner](../includes/banner.md)]
 
-Ha egy pénztári(POS) eszköz elveszíti a csatlakozását a csatorna-adatbázishoz, akkor a legtöbb pénztári művelet és a folyamatban lévő tranzakció végebe mehet, miután a pénztáros figyelmeztető üzenetet kap a kapcsolat elvesztésével kapcsolatban. Bizonyos esetekben azonban a tranzakciók olyan elemekkel rendelkeznek, amelyek a valós idejű szolgáltatáson alapulnak, és a pénztár offline állapotában nem támogatottak ezek az elemek. Ez a témakör bemutatja azokat a funkciókat, amelyek segítségével csökkenthető az elvesztett kapcsolatok hatása ezekben az esetekben.
+Ha egy pénztári(POS) eszköz elveszíti a csatlakozását a csatorna-adatbázishoz, akkor a legtöbb pénztári művelet és a folyamatban lévő tranzakció végebe mehet, miután a pénztáros figyelmeztető üzenetet kap a kapcsolat elvesztésével kapcsolatban. Bizonyos esetekben azonban a tranzakciók olyan elemekkel rendelkeznek, amelyek a valós idejű szolgáltatáson alapulnak, és a pénztár offline állapotában nem támogatottak ezek az elemek. Ez a témakör olyan funkciókat ismertet, amelyek az ilyen helyzetekben csökkentik az elveszett kapcsolatok hatását.
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>Ajándékutalvány-tranzakciók lebonyolítása offline módban
 
@@ -50,7 +50,7 @@ Ha szeretné bekapcsolni a funkciót, hogy offline állapotban is el lehessen v�
 
 A Commerce paraméterek általában a gyorsítótárazva vannak. Ennek megfelelően a paraméter beállításának frissítése után a program a módosítást a csatornára történő szinkronizálás céljából kezdeményezi, és a módosítás akár 24 óráig is eltarthat. A módosítások azonnali érvénybe léptetéséhez állítsa vissza az IIS-t.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 - [Offline pénztárfunkció (POS)](../pos-offline-functionality.md)
 - [Online és offline pénztár (POS) műveletek](../pos-operations.md)

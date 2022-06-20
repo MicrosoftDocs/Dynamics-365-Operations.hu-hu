@@ -1,6 +1,6 @@
 ---
 title: Üzleti partner felhasználóinak kezelése a B2B e-commerce webhelyeken a Dynamics 365 Értékesítések segítségével
-description: Ez a témakör azt ismerteti, hogyan Microsoft Dynamics lehet a 365 Értékesítés segítségével kezelni az üzleti partner jóváhagyásait a Dynamics 365 Commerce vállalathoz –vállalaton keresztül (B2B) webhelyeken.
+description: Ez a témakör azt ismerteti, hogyan Microsoft Dynamics lehet a 365 Dynamics 365 Commerce Értékesítés segítségével kezelni a vállalat és vállalkozás között (B2B) webhelyek jóváhagyását.
 author: shajain
 ms.date: 2/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540e8f26d7f2a08060a3839f9e4f97bf8ddcafac
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ac4aa15f2c6e7f557105254c2c8ce743a9466985
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692563"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878621"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites-using-dynamics-365-sales"></a>Üzleti partner felhasználóinak kezelése a B2B e-commerce webhelyeken a Dynamics 365 Értékesítések segítségével
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan Microsoft Dynamics lehet a 365 Értékesítés segítségével kezelni az üzleti partner jóváhagyásait a Dynamics 365 Commerce vállalathoz –vállalaton keresztül (B2B) webhelyeken. Azok a szervezetek, amelyek már beleesnek a Dynamics 365 értékesítési megoldásba, a B2B e-commerce üzleti partner jóváhagyási folyamatában használhatók az érdeklődő- és lehetőségkoncepciók.
+Ez a témakör azt ismerteti, hogyan Microsoft Dynamics lehet a 365 Dynamics 365 Commerce Értékesítés segítségével kezelni a vállalat és vállalkozás között (B2B) webhelyek jóváhagyását. Azok a szervezetek, amelyek már beleesnek a Dynamics 365 értékesítési megoldásba, a B2B e-commerce üzleti partner jóváhagyási folyamatában használhatók az érdeklődő- és lehetőségkoncepciók.
 
 A B2B [üzleti partner jóváhagyási folyamatával kapcsolatos háttér-információkért lásd az üzleti partner felhasználóinak kezelése a B2B e-commerce webhelyeken](manage-b2b-users.md).
 

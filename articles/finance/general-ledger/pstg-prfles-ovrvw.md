@@ -1,6 +1,6 @@
 ---
 title: Feladási profilok áttekintése
-description: Ez a témakör bemutatja a feladási profiloknak Microsoft Dynamics az egész 365-ös alkalmazáson való alkalmazáson való alkalmazását.
+description: Ez a cikk bemutatja a feladási profiloknak az Microsoft Dynamics egész 365-ös alkalmazáson való alkalmazáson való alkalmazását.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c29597155e525638e7c2ded7d641017f2189c49
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734576"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876124"
 ---
 # <a name="posting-profiles-overview"></a>Feladási profilok áttekintése
 
@@ -104,7 +104,7 @@ A Dynamics 365 Pénzügy, Dynamics 365 Supply Chain Management és Dynamics 365 
 - [Számlák automatikus tranzakciókhoz](accounts-for-auto-transactions.md)
 - [Kötelezettségek feladása](accts-payble-posting.md)
 - [Fogadható számlák feladása](accts-recvble-posting.md)
-- [Tárgyi eszköz feladása](../asset-leasing/set-up-lease-posting-accts.md)
+- [Eszközlízing feladása](../asset-leasing/set-up-lease-posting-accts.md)
 - Eszközkezelés feladása (hamarosan)
 - Készpénz- és bankkezelés (Hamarosan)
 - Devizaátértékelés-feladási számlák (hamarosan)

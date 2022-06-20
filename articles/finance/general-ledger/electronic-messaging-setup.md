@@ -1,6 +1,6 @@
 ---
 title: Elektronikus üzenetek beállítása
-description: Ez a témakör az Elektronikus üzenetek (EM) funkció beállításának lépéseiről tartalmaz információt.
+description: Ez a cikk az Elektronikus üzenetek (EM) szolgáltatások beállításának lépéseit tartalmaz.
 author: liza-golub
 ms.date: 11/18/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6ac6e4fbc37165a3126de3b1f937a43c980410b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874551"
 ---
 # <a name="set-up-electronic-messages"></a>Elektronikus üzenetek beállítása
 
@@ -66,7 +66,7 @@ Az alábbi táblázat ismerteti az **Üzenetállapotok** oldalon elérhető mez�
 |---------------------|-------------|
 | Üzenet állapota      | Adjon meg egy egyedi nevet az üzenetállapot számára. Az üzenetállapotok egy elektronikus üzenet az adott pillanatban érvényes állapotának jellemzésére használatosak. A beírt név jelenik meg az **Elektronikus üzenetek** lapon, és az elektronikus üzenetekhez kapcsolódó naplóban. |
 | Leírás         | Adja meg az üzenetállapot leírását. |
-| Választípus       | Válassza ki az üzenetállapothoz tartozó választípust. Előfordulhat, hogy bizonyos műveletek a feldolgozás során egynél több választípust eredményeznek. Például a **Webszolgáltatás** típusú műveletek **Sikeresen végrehajtott** vagy **Technikai hiba** választípust is eredményezhetnek a végrehajtás eredményétől függően. Ebben az esetben mindkét választípus üzenetállapotát meg kell határozni. A művelettípusokkal és a hozzájuk kapcsolódó választípusokkal kapcsolatos további információkért lásd az alábbi, [Üzenetfeldolgozási művelettípusok](#action-types) részt. |
+| Választípus       | Válassza ki az üzenetállapothoz tartozó választípust. Előfordulhat, hogy bizonyos műveletek a feldolgozás során egynél több választípust eredményeznek. Például a **Webszolgáltatás** típusú műveletek **Sikeresen végrehajtott** vagy **Technikai hiba** választípust is eredményezhetnek a végrehajtás eredményétől függően. Ebben az esetben mindkét választípus üzenetállapotát meg kell határozni. A művelettípusokkal [és](#action-types) a hozzájuk kapcsolódó válaszok típusaival kapcsolatban a cikk későbbi, Az üzenetfeldolgozási művelettípusok című részében olvashat bővebben. |
 | Üzenetelem-állapot | Bizonyos esetekben előfordulhat, hogy egy elektronikus üzenet állapotának a kapcsolódó üzenetelemek állapotát is befolyásolnia kell. Válassza ki az üzenetelem állapotát ebben a mezőben, amelyet társítani szeretne az üzenet állapotával. |
 | Törölhető        | Jelölje be ezt a jelölőnégyzetet, ha szeretné, hogy a felhasználók képesek legyenek az olyan elektronikus üzenetek törlésére, amelyek az **Elektronikus üzenetek** oldalon ezzel az állapottal rendelkeznek. |
 
@@ -240,7 +240,7 @@ Az alábbi táblázat ismerteti az **Üzenetfeldolgozási műveletek** oldalon e
 
 | Mező                                     | Leírás |
 |-------------------------------------------|-------------|
-| Művelettípus                               | Válassza ki a művelet típusát. A rendelkezésre álló lehetőségekkel kapcsolatos további tudnivalókat lásd az [Üzenetfeldolgozási művelettípusok](#action-types) szakaszban alább. |
+| Művelettípus                               | Válassza ki a művelet típusát. A rendelkezésre álló lehetőségekkel kapcsolatos tudnivalókat [lásd a cikk üzenetfeldolgozási](#action-types) művelettípusokkal kapcsolatos részében. |
 | Formátum leképezése                            | Válassza ki, hogy a művelethez milyen ER-formátumot kell lehívni. Ez a mező csak az **Elektronikus jelentéskészítés exportálása**, **Elektronikus jelentéskészítés importálása** és **Elektronikus jelentéskészítés exportálási üzenete** típusokhoz tartozó műveletekhez érhető el. |
 | Formátum megfeleltetése az URL-cím elérési útvonalára vonatkozóan               | Válassza ki, hogy a művelethez milyen ER-formátumot kell lehívni. Ennek a formátumnak a segítségével lehet létrehozni az URL-cím elérési útvonalát, amelyet a kiválasztott webkiszolgálóhoz meghatározott alap internetes címhez adnak hozzá. Ez a mező csak a **Webszolgáltatás** típusú műveletekhez érhető el. |
 | Üzenetelem típusa                         | Válassza ki a rekordok típusát, amelyhez a műveletet értékelni kell. Ez a mező az **Üzenetelem végrehajtási szint**, **Elektronikus jelentéskészítés exportálása**, **Elektronikus jelentéskészítés importálása** és **Webszolgáltatás** típusokhoz tartozó műveletekhez érhető el, illetve néhány másik típushoz. Ha üresen hagyja ezt a mezőt, minden olyan üzenetelem-típus értékelésre kerül, amely az üzenetfeldolgozáshoz meg van határozva. |

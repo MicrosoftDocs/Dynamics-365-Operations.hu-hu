@@ -1,6 +1,6 @@
 ---
 title: Termékajánlatok GYIK-je
-description: Ez a témakör a termékajánlások vagy azok eredményeivel kapcsolatos problémák elhárításához használható folyamatokkal és eszközökkel kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk olyan folyamatokkal és eszközökkel kapcsolatban tartalmaz tájékoztatást, amelyek a termékajánlásokat és azok eredményeit hibaelhárításra használhatók.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 88ad0efd8f678c3082c31b1c3162b8288e14fc9edb69e8756f1641461b808e07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77a5532ab1ae3b630bb335aa7cff6dc747184994
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733965"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900447"
 ---
 # <a name="product-recommendations-faq"></a>Termékajánlatok GYIK-je
 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a [termékajánlások](product-recommendations.md) vagy azok eredményeivel kapcsolatos problémák elhárításához használható folyamatokkal és eszközökkel kapcsolatban tartalmaz tájékoztatást.
+Ez a cikk olyan folyamatokkal [és](product-recommendations.md) eszközökkel kapcsolatban tartalmaz tájékoztatást, amelyek a termékajánlásokat és azok eredményeit hibaelhárításra használhatók.
 
 ## <a name="best-practices"></a>Gyakorlati tanácsok
 Nagyon fontos az alaptermék és változatai fogalmának hasznosítása. Egy adott szülő alaptermék változatainak ésszerű csoportosítása segít a listaalgoritmusoknak és a szolgáltatásnak a jobb modellek létrehozásában. A szolgáltatás ezenkívül a termék egyetlen példányát is kiszolgálhatja ahelyett, hogy egy listára helyezné az összes közeli kapcsolatban álló változatot. Ha minden szorosan kapcsolódó változat szerepel egy listán, akkor hibás vagy ismétlődő eredmények léphetnek fel.

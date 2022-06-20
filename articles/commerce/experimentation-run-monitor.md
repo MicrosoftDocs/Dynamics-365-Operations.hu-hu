@@ -1,6 +1,6 @@
 ---
 title: Kísérlet futtatása és nyomon követése
-description: Ez a témakör azt mutatja be, hogyan indíthat el és követhet nyomon kísérletet egy harmadik fél szolgáltatásban. Ez a témakör azt is leírja, hogy hogyan lehet módosítani a változatokat a kísérlet elindítása után.
+description: Ez a témakör azt ismerteti, hogyan lehet futtatni és figyelni egy harmadik fél szolgáltatásában történő kísérleteket. Ez a témakör azt is leírja, hogy hogyan lehet módosítani a változatokat a kísérlet elindítása után.
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cd8864caec23f6aca30badba1a79da31301a0ddb92a74bb4a6fe027214d0f8d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9f62c97b46fa00791de52b2804dad5edde7f625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777572"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909583"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Kísérlet futtatása és nyomon követése
 
-Ez a témakör azt mutatja be, hogyan futtathatja és követheti nyomon a kísérleteit egy harmadik fél alkalmazásban, továbbá hogyan módosíthatja szükség esetén a változatokat. A témakör lépéseinek végrehajtása előtt először [közzé kell tennie](experimentation-preview-publish.md) a kísérletet a Commerce modulban. 
+Ez a témakör leírja, hogyan lehet futtatni és figyelni a harmadik fél alkalmazásában történő kísérleteket, és szükség esetén módosítani a variációkat. A cikk lépéseit csak azt megelőzően lehet végrehajtani, [hogy](experimentation-preview-publish.md) közzéteheti a kereskedelmi kísérleteket. 
 
-A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
+A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön cikkekbe tartoznak.
 
 [ ![Kísérletezés felhasználói interakciósorozata – Futtatás és nyomon követés.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 

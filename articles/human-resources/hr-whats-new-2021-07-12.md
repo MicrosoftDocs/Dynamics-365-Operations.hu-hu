@@ -1,6 +1,6 @@
 ---
 title: A Dynamics 365 Human Resources új vagy módosult elemei (2021. július 12.)
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. július 12-i kiadásban.
+description: Ez a témakör olyan funkciókat ismertet, amelyek vagy újak, vagy módosulnak a Microsoftban Dynamics 365 Human Resources 2021. július 12-re.
 author: marcelbf
 ms.date: 07/12/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c01d00e7ede44c20e64fc4a8cd8646201caa3992
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870958"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>A Dynamics 365 Human Resources új vagy módosult elemei (2021. július 12.)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le.
+Ez a témakör az új, módosított vagy hamarosan érkező funkciókat írja le Dynamics 365 Human Resources.
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -49,7 +49,7 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 > [!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakört frissítjök olyan hibajavításokkal, amelyek annak első közzététele után léptek életbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. A cikk első közzététele után frissíthet egy hibajavítást, amely a javításokat tartalmazza a buildben.
 
 | Kiadás száma | Probléma |  Leírás |
 | --- | --- | --- |

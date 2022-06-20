@@ -1,6 +1,6 @@
 ---
 title: Adószámítások importálása és exportálása
-description: Ez a témakör az adószámítási szolgáltatás importálási és exportálási funkcióival kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk az adószámítási szolgáltatás importálási és exportálási funkcióival kapcsolatban tartalmaz tájékoztatást.
 author: Kai-Cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 02ad47b5f350969b4935a8f383ddf26a7ce7a46a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9daee683763d7cb0eb9573497eb4e20cba9b1863
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855173"
 ---
 # <a name="import-and-export-tax-calculations"></a>Adószámítások importálása és exportálása
 
-Ez a témakör az adószámítási szolgáltatás importálási és exportálási funkcióival kapcsolatban tartalmaz tájékoztatást. Ez a funkció rugalmas és hatékony konfigurálást biztosít.
+Ez a cikk az adószámítási szolgáltatás importálási és exportálási funkcióival kapcsolatban tartalmaz tájékoztatást. Ez a funkció rugalmas és hatékony konfigurálást biztosít.
 
 ## <a name="import-and-export-tax-codes"></a>Adókódok importálása és exportálása
 

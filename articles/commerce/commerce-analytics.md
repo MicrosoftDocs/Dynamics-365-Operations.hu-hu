@@ -1,6 +1,6 @@
 ---
 title: Commerce elemzések (Előzetes verzió)
-description: Ez a témakör azt mutatja be, hogyan lehet telepíteni és használni az analitika-funkciókat a rendszerben Microsoft Dynamics 365 Commerce.
+description: Ez a cikk bemutatja, hogy hogyan lehet telepíteni és használni az analitika-funkciókat a rendszerben Microsoft Dynamics 365 Commerce.
 author: AamirAllaq
 ms.date: 02/24/2022
 audience: Application user
@@ -8,18 +8,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: 9ffa0affa0b80af65dd2aa37ef2fe969752ae332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887166"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce elemzések (Előzetes verzió)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja a Commerce Analitikának (Előnézet) a telepítéséhez szükséges funkciókat Microsoft Dynamics 365 Commerce.
+Ez a cikk bemutatja a Commerce Analitikának (Előnézet) a telepítéséhez szükséges funkciókat Microsoft Dynamics 365 Commerce.
 
 ## <a name="commerce-analytics-preview-live-demo"></a>Commerce Analytics (Preview) élő bemutató
 
@@ -53,7 +53,7 @@ Az adatok vagy tranzakciós adatokból, vagy a következő forrásokból szárma
 - Az értékesítések egyedi alkalmazásokban, a Headless Commerce (Commerce Scale Unit) használatával jön létre.
 - Az e-commerce rendszer egy vásárlója tallózással megkeresi az e-commerce webhelyet.
 - Az e-commerce rendszer egy vásárlója rendelést ad fel az e-commerce webhelyre.
-- Az adatokat más rendszerek, például Dynamics 365 Connected Spaces a.
+- Az adatokat más rendszerek, például a Dynamics 365 Connected Spaces.
 
 #### <a name="step-2-ingestion-and-pre-processing"></a>2. lépés: Áthozat és előfeldolgozás
 
@@ -110,7 +110,7 @@ A Commerce Analytics sablonalkalmazás a következő fő jelentésoldalakat tart
 - Csatornabeállítások
 
     - Jogi személy
-    - Csatorna típusa
+    - Csatornatípus
     - Vevőtípus
     - Értékesítés típusa
     - Csatorna
@@ -189,7 +189,7 @@ A Commerce Analytics sablonalkalmazás a következő fő jelentésoldalakat tart
 - Felbontás
 
     - Jogi személy
-    - Csatorna típusa
+    - Csatornatípus
     - Üzlet
     - Terminál
     - Fizetési mód
@@ -231,7 +231,7 @@ A Commerce Analytics sablonalkalmazás a következő fő jelentésoldalakat tart
 #### <a name="top-level-filters"></a><a name="WebActivityTopLevelFilters"></a> Legfelső szintű szűrők
 
 - Dátumtartomány
-- Csatorna típusa
+- Csatornatípus
 - Csatorna
 - Kategóriahierarchia
 
@@ -253,7 +253,7 @@ A Commerce Analytics sablonalkalmazás a következő fő jelentésoldalakat tart
 
     - Lapnézet laptípus szerint (kezdőlap, kategóriaoldal vagy termék részletei oldal)
     - Hozzáadás a kosárhoz
-    - Pénztár
+    - Kivétel
     - Beszerzés
 
 #### <a name="sessions"></a>Munkamenetek
@@ -425,7 +425,7 @@ A Commerce Analytics (Preview) bővítmény telepítéséhez és konfiguráléhe
     | Az Azure-kulcs DNS-neve | Adja meg kulcskulcsának DNS-nevét. Ezt az értéket meg kell jegyezte volna, [miközben az Adatexportált bővítményt konfigurálta](#keyVault). | `https://contosod365datafeedpoc.vault.azure.net/` |
     | Az alkalmazásazonosítót tartalmazó titkos név | Adja meg az alkalmazásazonosítót tároló titkos nevet. Ezt az értéket meg kell jegyezte volna, [miközben az Adatexportált bővítményt konfigurálta](#keyVault). | `app-id` |
     | Az alkalmazás titkos nevét tartalmazó titkos név | Adja meg az alkalmazás titkos nevét. Ezt az értéket meg kell jegyezte volna, [miközben az Adatexportált bővítményt konfigurálta](#keyVault). | `app-secret` |
-    | A kiszolgáló nélküli SQL-végpontot tartalmazó titkos név a következő számára: Azure Synapse | Adja meg a kiszolgáló nélküli SQL-végpontot tároló titkos nevet. A titkos kulcsot létre kellett volna hozatni, miközben a [kulcsértékhez hozzáadott egy új 5000 000 000 000 000 000 000 00](#addSecrets) | `synapse-sql-server` |
+    | A kiszolgáló nélküli SQL-végpontot tartalmazó titkos név a következő számára: Azure Synapse | Adja meg a kiszolgáló nélküli SQL-végpontot tároló titkos nevet. A titkos kulcsot létre kellett volna hozatni, miközben a [kulcsértékhez hozzáadott egy új 5000 000 000 000](#addSecrets) 000 000 000 00 | `synapse-sql-server` |
     | Az SQL írásra csak olvasható felhasználók számára beállított jelszót tartalmazó titkos név a következőben: Azure Synapse | Annak a titkos névnek a megadása, amely a kiszolgáló nélküli SQL-írás nélküli felhasználók számára beállított jelszót tárolja. Ezt a felhasználót fogja létrehozni a rendszer, Power BI és a felhasználónak kell használnia a jelentésben a kiszolgáló nélküli SQL-kiszolgálóhoz való csatlakozásra. A titkos kulcsot akkor kellett volna létrehoznia, amikor hozzáadta [a kulcs értékét](#addSecrets). | `readonly-sql-pwd` |
 
 1. Fogadja el az ajánlat feltételeit: jelölje be a jelölőnégyzetet, majd válassza a Telepítés **lehetőséget**.

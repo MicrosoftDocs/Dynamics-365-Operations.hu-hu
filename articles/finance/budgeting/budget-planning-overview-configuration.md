@@ -1,6 +1,6 @@
 ---
 title: Költségvetés-tervezés áttekintése
-description: Ez a témakör bemutatja a költségvetés-tervezést. Olyan információt közöl, mely a költségvetés-tervezés konfigurálásához és a költségvetés-tervezési folyamatok beállításához nyújt segítséget.
+description: Ez a cikk a költségvetés-tervezést írja le. Olyan információt közöl, mely a költségvetés-tervezés konfigurálásához és a költségvetés-tervezési folyamatok beállításához nyújt segítséget.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 1f1ecf830953362636c8b0369586d8b76499ebb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711743"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853554"
 ---
 # <a name="budget-planning-overview"></a>Költségvetés-tervezés áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a költségvetés-tervezést. Olyan információt közöl, mely a költségvetés-tervezés konfigurálásához és a költségvetés-tervezési folyamatok beállításához nyújt segítséget.
+Ez a cikk a költségvetés-tervezést írja le. Olyan információt közöl, mely a költségvetés-tervezés konfigurálásához és a költségvetés-tervezési folyamatok beállításához nyújt segítséget.
 
 ## <a name="overview-of-budget-planning"></a>A költségvetés-tervezés áttekintése
 
@@ -91,7 +91,7 @@ A költségvetés-tervezési munkafolyamat egy rendezett szakaszokból álló re
 
 Költségvetés-tervezési munkafolyamatot létrehozhat a **Munkafolyamat szakaszai** menüpontban a **Költségvetés-tervezés konfigurációja** lapon. Itt ki tudja választani a program által használt szakaszt és a költségvetési munkafolyamatot, és további beállításokat is hozzáadhat.
 
-A jó gyakorlat az, ha egy költségvetési hierarchia minden szintjéhez külön költségvetés-tervezési munkafolyamatot hoz létre. Azután olyan költségvetési munkafolyamatot rendel hozzá, melynek elemei megfelelnek a szakaszoknak a költségvetés-tervezési munkafolyamatban. A témakörben szereplő korábbi mintasablonon egy költségvetés-tervezési munkafolyamat hozható létre az értékesítési részleg számára, és egy másik a központ számára. A költségvetési munkafolyamat végigviszi a költségvetési terveket a különböző szakaszokon.
+A jó gyakorlat az, ha egy költségvetési hierarchia minden szintjéhez külön költségvetés-tervezési munkafolyamatot hoz létre. Azután olyan költségvetési munkafolyamatot rendel hozzá, melynek elemei megfelelnek a szakaszoknak a költségvetés-tervezési munkafolyamatban. A példában korábban megjelenő sémában létrejön egy költségvetés-tervezési munkafolyamat az értékesítési részlegek számára, egy másik pedig a központ számára. A költségvetési munkafolyamat végigviszi a költségvetési terveket a különböző szakaszokon.
 
 Költségvetési munkafolyamatot a költségvetés-tervezésre a **Költségvetési munkafolyamatok** oldalon hozhat létre. A folyamat hasonlít más munkafolyamatok létrehozásához. A következő ábrán a Központ munkafolyamatának példája látható.
 
@@ -141,7 +141,7 @@ A szakaszok felosztásait arra használjuk, hogy automatikusan felosszuk a költ
 
 Szakaszfelosztás beállításakor társítsa a költségvetés-tervezési munkafolyamatot és a szakaszt a felosztási ütemezéssel. A költségvetés-tervezési munkafolyamatot társítani kell egy, a **Költségvetés-tervezési szakasz felosztása** automatizált munkafolyamatot használó költségvetési munkafolyamattal. Ha a munkafolyamat eléri a megadott szakaszt, a felosztás automatikusan megtörténik. Ez az automatizált feladat egy új változat költségvetési terv-sorainak létrehozására használható.
 
-A mintasablonban, amely a témakör korábbi részében szerepelt, egy felosztás végrehajtása szerepel összegek átvitelére a költségvetési tervből és tervváltozatokból a központ „kiindulási” szakaszában egy másik költségvetési tervbe és tervváltozatba az Értékesítési részlegek „Becslési” szakaszában. A következő ábrán a mintasablon idevágó szakasza látható.
+A cikk korábbi sémája szerint felosztás történik a központ "Kiindulási" szakaszának megfelelő költségvetési tervek és esetek összegének egy másik költségvetési tervbe történő átviteléhez, illetve az értékesítési részlegek "Becslés" szakaszának eseteibe. A következő ábrán a mintasablon idevágó szakasza látható.
 
 [![Felosztási szakasz.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 

@@ -1,6 +1,6 @@
 ---
 title: Ismétlődő adatexportálási alkalmazás létrehozása
-description: Ez a témakör leírja, hogyan hozhat létre egy olyan Microsoft Azure logikai alkalmazást, amely ismétlődő ütemezéssel exportálja az adatokat a Microsoft Dynamics 365 Human Resources rendszerből.
+description: Ez a témakör azt mutatja be, hogyan Microsoft Azure lehet olyan logikai alkalmazást létrehozni, amely ismétlődő ütemezés szerint exportálja az adatokat a Microsoftból Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c53adc56c19acae05904edcf4109a134566d30b7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9c840dbf4f717da3359640ee5c8231ccd129ebb2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688771"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875829"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Ismétlődő adatexportálási alkalmazás létrehozása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688771"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör leírja, hogyan hozhat létre egy olyan Microsoft Azure logikai alkalmazást, amely ismétlődő ütemezéssel exportálja az adatokat a Microsoft Dynamics 365 Human Resources rendszerből. Az oktatóanyag kihasználja a Human Resources DMF-csomagjának REST alkalmazásprogramozási felületét (API) az adatok exportálásához. Az adatok exportálása után a logikai alkalmazás az exportált adatcsomagot a Microsoft OneDrive for Business mappába menti.
+Ez a témakör azt mutatja be, hogyan Microsoft Azure lehet olyan logikai alkalmazást létrehozni, amely ismétlődő ütemezés szerint exportálja az adatokat a Microsoftból Dynamics 365 Human Resources. Az oktatóanyag kihasználja a Human Resources DMF-csomagjának REST alkalmazásprogramozási felületét (API) az adatok exportálásához. Az adatok exportálása után a logikai alkalmazás az exportált adatcsomagot a Microsoft OneDrive for Business mappába menti.
 
 ## <a name="business-scenario"></a>Üzleti eset
 

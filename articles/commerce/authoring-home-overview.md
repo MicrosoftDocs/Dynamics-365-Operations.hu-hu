@@ -1,6 +1,6 @@
 ---
 title: Szerkesztési oldal áttekintése
-description: Ez a témakör a Microsoft Dynamics 365 Commerce szerkesztési lapjával kapcsolatban nyújt áttekintést.
+description: Ez a témakör áttekintést nyújt a témakör szerzője lapról Microsoft Dynamics 365 Commerce.
 author: brendans
 ms.date: 10/31/2019
 ms.topic: overview
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bc8cdbc0a521f3aa444a3af0d0230f8567729694
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984621"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855004"
 ---
 # <a name="authoring-page-overview"></a>Szerkesztési oldal áttekintése
 
   
  [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce szerkesztési lapjával kapcsolatban nyújt áttekintést.
+Ez a témakör áttekintést nyújt a témakör szerzője lapról Microsoft Dynamics 365 Commerce.
 
 Webhelyeket lehet létrehozni a különböző üzleti szükségletek támogatásához. Képviselhetnek egy egész vállalatot, a vállalat egyetlen csatornáját vagy egy adott hallgatóságot vagy célközönséget célozhatnak meg. Előfordulhat például, hogy egy ruházati gyártónak van egy olyan webhelye, amely a tulajdonában lévő összes márkát bemutatja. Ugyanezen a ruházati gyártónál előfordulhat, hogy egy külön webhely van a márkák mindegyikéhez, valamint webhelyek olyan köre, amely luxusdivattal, túradivattal és gyermekdivattal foglalkozik.
 

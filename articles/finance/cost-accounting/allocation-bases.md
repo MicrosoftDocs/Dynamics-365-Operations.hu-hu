@@ -1,6 +1,6 @@
 ---
 title: Felosztás alapjai
-description: A témakör a felosztási alapokról nyújt tájékoztatást. A felosztási alapok a költségkönyvelés kulcselemei, és többnyire az általános költségek elosztására szolgálnak.
+description: Ez a cikk a felosztási alapokkal kapcsolatban tartalmaz tájékoztatást. A felosztási alapok a költségkönyvelés kulcselemei, és többnyire az általános költségek elosztására szolgálnak.
 author: AndersGirke
 ms.date: 05/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bb50fe7d258bdd56529bc5d0ef55dae309d3edec
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 138a1a101610fc0f18ef3d8d2d3d336e5a48a1da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733791"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894084"
 ---
 # <a name="allocation-bases"></a>Felosztás alapjai 
 
@@ -174,7 +174,7 @@ A költségkönyvelés statisztikai mérések gyűjtését támogatja a követke
 - Adatkezelési importálás/exportálás eszköz
 - Statisztikai mértékek
 
-A rendszer statisztikai méréseinek lekéréséhez statisztikai mérőszolgáltatást igénylő sablon szükséges. További információk: Statisztikaimérték-szolgáltató sablon (Ide egy hivatkozás kerül, miután ez a témakör megíródott.)
+A rendszer statisztikai méréseinek lekéréséhez statisztikai mérőszolgáltatást igénylő sablon szükséges. További információk: Statisztikaimérték-szolgáltató sablon (Hivatkozás hozzáadása a cikk írása után.)
 
 **Statisztikai mérték szolgáltatójának sablonjai**
 

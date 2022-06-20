@@ -1,6 +1,6 @@
 ---
 title: Pénzforgalmi előrejelzés
-description: Ez a témakör a pénzforgalmi előrejelzések folyamatáról nyújt áttekintést. Azt is elmagyarázza, hogy miként integrálódnak a pénzforgalm előrejelzések a rendszer más moduljaival.
+description: Ez a cikk áttekintést nyújt a pénzforgalmi előrejelzési folyamatról. Azt is elmagyarázza, hogy miként integrálódnak a pénzforgalm előrejelzések a rendszer más moduljaival.
 author: panolte
 ms.date: 02/16/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4979a57c966f25dba62a944a4e44086e5f6aed28
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: c811afb0129b25a257bdc3519c511d70ecb44714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904672"
 ---
 # <a name="cash-flow-forecasting"></a>Pénzforgalmi előrejelzés
 
@@ -110,7 +110,7 @@ További információ a pénzforgalmi előrejelzések [külső adatainál talál
 
 A 10.0.17-es verzióban egy új funkció lehetővé teszi az integrációt a Projektvezetés és könyveléssel és a cash flow előrejelzéssel. A **Funkciókezelés** munkaterületen kapcsolja be a **Pénzforgalmi projektelőrejelzés** funkciót, amely tartalmazza az előre jelzett költségeket és bevételeket a pénzforgalmi előrejelzésben. A **Pénzforgalmi előrejelzés beállítása** lapon a **Projektvezetés és könyvelés** oldalon válassza ki azokat a projekttípusokat és tranzakciótípusokat, amelyeknek szerepelniük kell a pénzforgalmi előrejelzésben. Ezután válassza ki a projekt-előrejelzési modellt. A csökkentési típusú almodell működik a legjobban. AKövetelések beállításában megadott likviditási számlákat kell alapértelmezett likviditási számlákként használni. Ezért a pénzforgalmi előrejelzés beállításakor nem kell alapértelmezett likviditási számlákat megadnia. Költségvetési modell is használható, de csak egy típus választható ki a Projektkezelés és -könyvelés **Pénzforgalmi előrejelzés beállítása** lapján. Az előrejelzési modell nyújtja a legnagyobb rugalmasságot a Projektvezetés és könyvelés, illetve a Project Operations használata esetén.
 
-Miután a Pénzforgalmi projektelőrejelzé funkció be van kapcsolva, a pénzforgalmi előrejelzés megtekinthető minden projekthez a **Minden projekt** oldalon. A Művelet panelen a **Tervezés** lapon, az **Előrejelzés** csoportban, kattintson a **Pénzforgalmi előrejelzés** elemre. A **Pénzforgalmi áttekintés** munkaterületeken (lásd a [Jelentés](#reporting) szakaszt később ebben a témakörben), a Projekt előrejelzés tranzakciótípus mutatja a beáramlások (projekt előrejelzett bevétele) és a kiáramlásokat (projekt előrejelzett költségei). Az összegek csak akkor szerepeltethetők, ha a **Projektfázis** mező a **Pénzforgalmi áttekintés** munkaterületeken **Feldolgozás alatt** értékre van állítva.
+Miután a Pénzforgalmi projektelőrejelzé funkció be van kapcsolva, a pénzforgalmi előrejelzés megtekinthető minden projekthez a **Minden projekt** oldalon. A Művelet panelen a **Tervezés** lapon, az **Előrejelzés** csoportban, kattintson a **Pénzforgalmi előrejelzés** elemre. A Készpénzáttekintő **munkaterületeken** (a [cikk](#reporting) későbbi jelentési szakaszában) a projekt-előrejelzés tranzakciótípusa mutatja a beáramlásokat (projekt-előrejelzési bevétel) és a kiáramlásokat (projekt-előrejelzési költségek). Az összegek csak akkor szerepeltethetők, ha a **Projektfázis** mező a **Pénzforgalmi áttekintés** munkaterületeken **Feldolgozás alatt** értékre van állítva.
 
 A projekttranzakciók továbbra is többféleképpen szerepelnek a pénzforgalmi előrejelzésben, függetlenül attól, hogy be van-e kapcsolva a **Pénzforgalmi projektelőrejelzés** funkció. A feladott projektszámlákat az előrejelzés tartalmazza a nyitott vevői tranzakciók részeként. A projekt által kezdeményezett értékesítési rendelések és beszerzési rendelések az előrejelzésben nyitott rendelésként szerepelnek a rendszerbe való beírásuk után. Projektelőrejelzéseket át is lehet vinni egy főkönyvi költségvetésmodellbe. Ez a főkönyvi költségvetési modell a költségvetési nyilvántartási bejegyzések részeként szerepel a pénzforgalmi előrejelzésben. Ha bekapcsolta a **Pénzforgalmi projekt előrejelzés** funkciót, ne vigye át a projekt-előrejelzéseket főkönyvi költségvetési modellbe, mert ez a művelet a projekt-előrejelzések kétszeri számítását fogja okozni.
 

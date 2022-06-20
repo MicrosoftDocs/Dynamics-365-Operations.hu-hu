@@ -1,6 +1,6 @@
 ---
 title: Kisegítő funkciók és lehetőségek
-description: Ez a témakör a Microsoft Dynamics 365 Commerce különböző verzióiban rendelkezésre álló kisegítő lehetőségekről és segédprogramokról nyújt tájékoztatást.
+description: Ez a cikk a <a0/<a2/<a2/<a2/<a2/<a Microsoft Dynamics 365 Commerce
 author: BrianShook
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77c5b2e40c3dd16b95afe421d4515c45af0e81358940c29a14c03754c39a076e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f4e73ebaf6dc3fc6eb97f69df8545c9ab9fa9df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716276"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853902"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Kisegítő funkciók és lehetőségek
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce különböző verzióiban rendelkezésre álló kisegítő lehetőségekről és segédprogramokról nyújt tájékoztatást.
+Ez a cikk a <a0/<a2/<a2/<a2/<a2/<a Microsoft Dynamics 365 Commerce
 
 A kisegítő lehetőségek és képességek funkcionális eszközöket biztosítanak a felhasználók számára, hogy hozzáférjenek és végrehajthassanak műveleteket a céljaik elérése érdekében. A felhasználók ezen széles köre segítőeszközöket igényel hallás, látás, mozgékonyság vagy idegrendszeri problémák leküzdése érdekében.
 
 A Dynamics 365 Commerce különböző funkcióival úgy építheti fel a webhelyét, hogy az magában foglalja a kisegítő funkciókat. A webhely tervezésekor vegye figyelembe a kisegítő lehetőségek azon területeit, amelyeket a [Microsoft kisegítő lehetőségek központja](https://www.microsoft.com/accessibility) említ. 
 
-Ez a témakör a kisegítő lehetőségek további területeit ismerteti, amelyeket a Dynamics 365 Commerce használata során figyelembe kell vennie.
+Ez a témakör a kisegítő lehetőségek további olyan területeit ismerteti, amelyek használatát érdemes figyelembe venni Dynamics 365 Commerce.
 
 ## <a name="image-alt-text"></a>Képek alternatív szövege
 

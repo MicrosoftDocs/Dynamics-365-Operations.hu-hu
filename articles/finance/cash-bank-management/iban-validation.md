@@ -1,6 +1,6 @@
 ---
 title: Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelése
-description: Ez a témakör bemutatja a Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelését
+description: Ez a cikk bemutatja a nemzetközi bankszámlaszám-ellenőrzés (International Bank Account Number – IBAN) kezelését.
 author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 89d6c38088e43f0f24fa41accecaa262a64006cf
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 3d825e8699fbe10e080cd85f15d3d86f8c780f15
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462764"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880899"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelése
 
@@ -25,7 +25,7 @@ ms.locfileid: "8462764"
 
 A Nemzetközi bankszámlaszám (IBAN) ellenőrzése növeli az ellenőrzések mennyiségét, amikor IBAN-t ad hozzá egy bankszámlához.
 
-Az IBAN szerkezetére vonatkozó adatokat a Microsoft tárolja, és automatikusan betölti a rendszer Dynamics 365 Finance, amikor először használja az IBAN-t a bankszámlákon. Az IBAN-szám hosszát, a bankszámlaszám és a bank regisztrációs azonosítójának kezdő pozícióit, és a bankszámlaszám és a bank regisztrációs azonosítójának hosszát tartalmazza.
+Az IBAN Microsoft Dynamics szerkezetével kapcsolatos információk a 365 Pénzügy tárolják, és automatikusan betöltődik, amikor az IBAN először használja a bankszámlákat. Az IBAN-szám hosszát, a bankszámlaszám és a bank regisztrációs azonosítójának kezdő pozícióit, és a bankszámlaszám és a bank regisztrációs azonosítójának hosszát tartalmazza.
 
 ## <a name="set-up-iban-structures"></a>IBAN-szerkezetek beállítása
 

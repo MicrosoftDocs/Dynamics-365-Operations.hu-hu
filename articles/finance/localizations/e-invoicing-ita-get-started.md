@@ -1,6 +1,6 @@
 ---
 title: Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során
-description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az olaszországi Elektronikus számlázással kapcsolatos első lépéseket.
+description: Ez a cikk az Olaszországnak szóló elektronikus számlázással kapcsolatban tartalmaz tájékoztatást.
 author: gionoder
 ms.date: 09/22/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c0197ff9d93833aa50fef56ec597fa0c904d792d
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: a04866cef56aaa6f52a0177fae8c1e4f8fc6e70e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313646"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908982"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során
 
@@ -30,13 +30,13 @@ ms.locfileid: "8313646"
 
 
 > [!IMPORTANT]
-> Előfordulhat, hogy az Olasz elektronikus számlázás jelenleg nem támogatja az elektronikus számlákhoz rendelkezésre álló összes funkciót a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management számára. 
+> Lehet, hogy az olaszországi Microsoft Dynamics elektronikus számlázás jelenleg nem támogat minden olyan funkciót, amely elérhető az elektronikus számlákhoz a 365 Pénzügy és a Pénzügyi modulban Dynamics 365 Supply Chain Management. 
 
-Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az olaszországi Elektronikus számlázással kapcsolatos első lépéseket. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Továbbá a szolgáltatáson keresztül végigvezeti az Olaszország-specifikus **FatturaPA**-formátumban létrejövő elektronikus számlák küldésének folyamatán, és elmagyarázza, hogyan kell áttekinteni a feldolgozás eredményeit.
+Ez a cikk az Olaszországnak szóló elektronikus számlázással kapcsolatban tartalmaz tájékoztatást. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Továbbá a szolgáltatáson keresztül végigvezeti az Olaszország-specifikus **FatturaPA**-formátumban létrejövő elektronikus számlák küldésének folyamatán, és elmagyarázza, hogyan kell áttekinteni a feldolgozás eredményeit.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A témakör lépéseinek végrehajtása előtt végre kell hajtania az [Első lépések az Elektronikus számlázással](e-invoicing-get-started.md) részben található lépéseket.
+A cikk lépéseit [csak az Elektronikus számlázás első lépései modulban lehet végrehajtani](e-invoicing-get-started.md).
 
 ## <a name="rcs-setup"></a>RCS beállítása
 
@@ -203,7 +203,7 @@ Miután bekapcsolta a **Konfigurálható elektronikus számlázás integrációj
 A dokumentumokat a saját e-számla dokumentumok igényeinek megfelelően manuálisan is elküldheti.
 
 > [!NOTE]
-> Mielőtt folytatná, győződjön meg arról, hogy az olasz e-számlákhoz szükséges beállítások el lettek végezve. A további információkat lásd: [Vevői elektronikus számlák](./emea-ita-e-invoices.md). Ne feledje, hogy a témakörben leírt néhány beállítási lépés nem érhető el az elektronikus számlázás aktiválása miatt.
+> Mielőtt folytatná, győződjön meg arról, hogy az olasz e-számlákhoz szükséges beállítások el lettek végezve. A további információkat lásd: [Vevői elektronikus számlák](./emea-ita-e-invoices.md). Ne feledje, hogy az ebben a cikkben leírt egyes telepítési lépések az elektronikus számlázás aktiválása miatt nem érhetők el.
 
 1. Menjen a **Szervezeti adminisztráció \> Időszakos \> Elektronikus dokumentumok \> Elektronikus dokumentumok beküldése** lehetőségre.
 2. A dokumentumok első beküldésekor **Nem** értékre kell állítania a **Dokumentumok újraküldése** lehetőséget. Ha a szolgáltatáson keresztül újra kell küldenie a dokumentumot, akkor ezt a beállítást állítsa **Igen** értékre.

@@ -1,6 +1,6 @@
 ---
 title: SEO-metaadatok kezelése
-description: Ez a témakör azt mutatja be, hogyan lehet kezelni a keresőmotor-optimalizálási (SEO) metaadatokat a Microsoft Dynamics 365 Commerce megoldásban.
+description: Ez a témakör azt ismerteti, hogyan kell kezelni a keresőprogram optimalizálási metaadatait a Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/21/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3d6f56968e9adfe90142955cba8e6c7ecc50fc92
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
-ms.translationtype: MT
+ms.openlocfilehash: 78ed94ced246157daafbc482ce674cda6579f930
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644759"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881297"
 ---
 # <a name="manage-seo-metadata"></a>SEO-metaadatok kezelése
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet kezelni a keresőmotor-optimalizálási (SEO) metaadatokat a Microsoft Dynamics 365 Commerce megoldásban.
+Ez a témakör azt ismerteti, hogyan kell kezelni a keresőprogram optimalizálási metaadatait a Microsoft Dynamics 365 Commerce.
 
 A webhely SEO metaadatait a webhelytérképek és az oldalak metaadatai használatával lehet kezelni.
     

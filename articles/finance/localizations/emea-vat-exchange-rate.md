@@ -1,6 +1,6 @@
 ---
 title: Áfa átváltási arány áttekintése
-description: Ez a témakör a Cseh Köztársaságban, Magyarországban és Lengyelországban elérhető áfaszámítási árfolyamokról tartalmaz tájékoztatást.
+description: Ez a cikk a Cseh Köztársaságban, Magyarországban és Lengyelországban elérhető áfaszámítás árfolyamával kapcsolatban tartalmaz tájékoztatást.
 author: ShylaThompson
 ms.date: 07/08/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: b96c5e7c3dc32cb720f6174fb84d878a5c02f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d8ca93f4e62e07730a32d7b08546c55e584e8b21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982952"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865478"
 ---
 # <a name="vat-exchange-rate-overview"></a>Áfa átváltási arány áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Cseh Köztársaságban, Magyarországban és Lengyelországban elérhető áfaszámítási árfolyamokról tartalmaz tájékoztatást. Az áfa kiszámításához választott átváltási árfolyam eltérhet a vállalat könyvelési funkciói esetében alkalmazott átváltási árfolyamtól. Amikor külföldi pénznemben lévő dokumentumot adnak fel, az esetleges árfolyamkülönbségek a meghatározott főkönyvi számlákra kerülnek.
+Ez a cikk a Cseh Köztársaságban, Magyarországban és Lengyelországban elérhető áfaszámítás árfolyamával kapcsolatban tartalmaz tájékoztatást. Az áfa kiszámításához választott átváltási árfolyam eltérhet a vállalat könyvelési funkciói esetében alkalmazott átváltási árfolyamtól. Amikor külföldi pénznemben lévő dokumentumot adnak fel, az esetleges árfolyamkülönbségek a meghatározott főkönyvi számlákra kerülnek.
 
 A szervezet kiválaszthatja az áfa kiszámítására használni kívánt árfolyamot az áfabevallásokhoz. Az árfolyam eltérhet attól az árfolyamtól, amelyet a szervezet a vállalati könyvelési feladatok során alkalmaz. A könyvelési feladatok közé tartozik az adókkal kapcsolatos következő dokumentumok előkészítése:
 

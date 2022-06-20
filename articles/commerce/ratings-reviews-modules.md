@@ -1,6 +1,6 @@
 ---
-title: Értékelések és vélemények modulok
-description: Ez a témakör a Microsoft Dynamics 365 Commerce termékrészletek oldalain használt minősítési és az értékelési modulokat tárgyalja.
+title: Minősítések és értékelések modulok
+description: Ez a cikk a termék részletező lapjain használt modulok értékelésekkel és ellenőrzésekkel foglalkozik Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: 66ee2d4185cad45b70b19fb474c64ae77a2868e835b20d5275e21610c0150370
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5829ccf9fad78e8669f5109d6c15e71af2ca768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894410"
 ---
 # <a name="ratings-and-reviews-modules"></a>Minősítések és értékelések modulok
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce termékrészletek oldalain (PDP-k) használt minősítési és az értékelési modulokat tárgyalja.
+Ez a cikk a termék részletező lapjain (PDP) használt modulok értékeléseit és áttekintését tartalmazza a modulban Microsoft Dynamics 365 Commerce.
 
 Az e-kereskedelmi webhelyek minősítései és értékelései segítik a vevőket a termékek beszerzési döntés előtt történő megismerésében, ugyanakkor egy módszert jelentenek a termékkel kapcsolatos ügyfél-visszajelzések gyűjtésére. 
 

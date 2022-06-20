@@ -1,6 +1,6 @@
 ---
 title: Minősítések és értékelések konfigurálása
-description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni az e-kereskedelmi webhelyet a vevőértékelések megjelenítésére a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör azt mutatja be, hogyan kell konfigurálni az e-Commerce webhelyet a vevőértékelések és az értékelések megjelenítése érdekében Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/17/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 56325eb0d6298f3b30316e104a4b3913ef860366
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968102"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862255"
 ---
 # <a name="configure-ratings-and-reviews"></a>Minősítések és értékelések konfigurálása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet konfigurálni az e-kereskedelmi webhelyet a vevőértékelések megjelenítésére a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt mutatja be, hogyan kell konfigurálni az e-Commerce webhelyet a vevőértékelések és az értékelések megjelenítése érdekében Microsoft Dynamics 365 Commerce.
 
 Az e-kereskedelmi webhelyek minősítései és értékelései segítik a vevőket a termékek beszerzési döntés előtt történő megismerésében, és megmutatják, hogy egyéb vevők mit gondolnak ezekről a termékekről. Az e-kereskedelmi webhelyek esetében a minősítések és értékelések a termékekkel kapcsolatos vevői visszajelzések összegyűjtésének mechanizmusai is egyben. 
 
@@ -91,9 +91,9 @@ A Minősítések és értékelések modulok a termék részletei oldalain tört�
 
 [A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
 
-[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
+[Értékelések és véleményezések importálása és exportálása](import-export-reviews.md)
 
-[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
+[Szolgáltatás a szolgáltatáshoz típusú hitelesítés konfigurálása](service-to-service-auth.md)
 
 [Értékelések és vélemények GYIK](ratings-reviews-faq.md)
 

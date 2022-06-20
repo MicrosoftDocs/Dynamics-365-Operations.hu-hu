@@ -1,6 +1,6 @@
 ---
 title: Dedikált fizetési terminálok és utasítások a nyomtatónak és a pénztárgépfióknak
-description: Ez a témakör a dedikált kifizetési terminálok biztosításának képességével kapcsolatban tartalmaz tájékoztatást, és felkéri a felhasználót egy pénztárgépfiók és egy nyugtanyomtató kiválasztására.
+description: Ez a cikk tájékoztatást ad arról, hogy van-e külön fizetési terminálja, és kéri a felhasználót, hogy válasszon ki egy pénztárfiókot és egy nyugtanyomtatót.
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 7c010448e43bbfb1f949508ce1b62bd07f3107e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779770"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874921"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikált fizetési terminálok és utasítások a nyomtatónak és a pénztárgépfióknak
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a dedikált kifizetési terminálok biztosításának képességével kapcsolatban tartalmaz tájékoztatást, és felkéri a felhasználót egy pénztárgépfiók és egy nyugtanyomtató kiválasztására.
+Ez a cikk tájékoztatást ad arról, hogy van-e külön fizetési terminálja, és kéri a felhasználót, hogy válasszon ki egy pénztárfiókot és egy nyugtanyomtatót.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -46,7 +46,7 @@ A Microsoft Dynamics 365 Commerce ezeket a trendeket úgy támogatja, hogy lehet
 
 ## <a name="supported-pos-clients-and-devices"></a>Támogatott POS-ügyfelek és eszközök
 
-Az ebben a témakörben ismertetett funkciókat a Modern POS for Windows és a Modern POS for Android POS-kliensek támogatják.
+Az ebben a cikkben ismertetett funkciókat támogatja a Modern POS for Windows, és a Modern POS for POS pos Android ügyfelek.
 
 Ez a funkció támogatja a hálózatban engedélyezett fizetési terminálokat és a nyugtanyomtatókat. A pénztárgépfiókok támogatásához csatlakoztassa a pénztárgépfiókot a hálózatra engedélyezett nyugtanyomtatóhoz a d/k porton keresztül.
 

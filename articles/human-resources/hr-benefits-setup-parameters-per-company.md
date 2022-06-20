@@ -1,6 +1,6 @@
 ---
 title: Juttatáskezelési paraméterek konfigurálása vállalatonként
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources rendszerben a Juttatások kezelése paramétereinek vállalatonkénti konfigurálását ismerteti.
+description: Ez a témakör azt mutatja be, hogyan kell konfigurálni a Juttatások kezelése vállalatonkénti paramétereit a Microsoftnál Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 8/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3c5e53d3dec4c6fc8be573b8a1ad3ba8fb01b490
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e9516977002280e17ee82bf7581d8d7c5060de2a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689944"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904217"
 ---
 # <a name="configure-benefits-management-parameters-per-company"></a>Juttatáskezelési paraméterek konfigurálása vállalatonként
 

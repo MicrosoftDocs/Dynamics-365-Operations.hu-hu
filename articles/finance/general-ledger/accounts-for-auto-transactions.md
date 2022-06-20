@@ -1,6 +1,6 @@
 ---
 title: Számlák automatikus tranzakciókhoz
-description: Ez a témakör bemutatja, Microsoft Dynamics hogy hogyan használhatók az automatikus tranzakciók számlái a 365-ös feladás során, és példákkal szolgál az automatikus tranzakciók kulcsszámláira.
+description: Ez a témakör bemutatja az Microsoft Dynamics automatikus tranzakciók számláinak a 365-ös átadás során való alkalmazását, és példákkal szolgál az automatikus tranzakciók kulcsszámláira.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 275c74d673d1ba2468e23c5fa443c9272d13a184
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 74e72840fea1f5d89c908b00e2cf572bce6befbe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735260"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880759"
 ---
 # <a name="accounts-for-automatic-transactions"></a>Számlák automatikus tranzakciókhoz
 

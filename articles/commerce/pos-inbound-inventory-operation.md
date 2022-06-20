@@ -1,6 +1,6 @@
 ---
 title: Bejövő készletműveletek a pénztárban
-description: Ez a témakör a pénztár (POS) bejövő készletműveletének képességeit írja le.
+description: Ez a témakör a pénztár bejövő készletműveletének lehetőségeit írja le.
 author: hhaines
 ms.date: 09/17/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858882"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Bejövő készletműveletek a pénztárban
 
@@ -215,7 +215,7 @@ Miután sikeresen elküldte a vázlatdokumentumot a Commerce Headquarters modulb
 
 Miután a dokumentum **Kérelmezett** állapotban van, az **Aktív** lapon látható. Azonban a bejövő üzlet vagy raktár nem bevételezheti. Miután a kimenő raktár már szállított egy vagy több átmozgatási rendelést, a bejövő üzlet vagy raktár feladhatja a pénztárból a nyugtákat. Miután a kimenő oldal feldolgozta az átmozgatási rendelés dokumentumait állapotuk **Kérelmezett** állapotból **Szállítva** vagy **Részben szállítva** értékre módosul. Miután a dokumentumok **Kiszállított** vagy **Részben kiszállított** állapotban vannak, a bejövő üzlet vagy a raktár a bejövő művelet bevételezési folyamata alapján is feladhatja a bevételezéseket azokkal szemben.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [Kimenő készletműveletek a pénztárban](pos-outbound-inventory-operation.md)
 

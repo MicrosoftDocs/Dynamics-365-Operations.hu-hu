@@ -1,5 +1,5 @@
 ---
-title: Kereskedelmi feladási paraméterek
+title: Commerce feladási paraméterek
 description: Ez a témakör a pénzügyi és fizikai tranzakciók feladására vonatkozó paramétereket írja le Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/27/2022
@@ -9,14 +9,14 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2022-04-12
-ms.openlocfilehash: 1b49c893567d39f05e16cefee47407a424b7e139
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
-ms.translationtype: MT
+ms.openlocfilehash: 10ea650b7c5c0cad7e1a3d7556c073aecef06036
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649176"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887114"
 ---
-# <a name="commerce-posting-parameters"></a>Kereskedelmi feladási paraméterek
+# <a name="commerce-posting-parameters"></a>Commerce feladási paraméterek
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
@@ -103,4 +103,4 @@ Az alábbi táblázat felsorolja azokat a kimutatási paramétereket, amelyek a 
 | Kerekítési különbözet felezésének letiltása | Ez a paraméter letiltja a tranzakciós kifizetés és a bruttó összeg kerekítési különbözetének feladását a kifizetések feldolgozása során. |
 | Vevői letétek automatikus kiegyenlítése | Ha ez a paraméter engedélyezve van, a vevői kivonat feladása során feladott vevői betéteket a vevő nyitott tranzakciói egyenlítik ki. |
 | Pénztári készpénzkezelési egyeztetés engedélyezése és használata | Ha ez a paraméter engedélyezve van, a készpénzkezelési egyeztetés a POS-terminálon történik, és az értékek átmennek a kiskereskedelmi pénzügyi kimutatás feladására, hogy kimutatássorokat hozzanak létre. |
-| Főkönyvi bizonylat részletező szintje | Ez a paraméter meghatározza a pos rendszerből származó kijelölt tranzakciók főkönyvi bizonylatán szereplő részletességi szintet. A tranzakciótípusok közé tartoznak a bevételek, a kiadások és az engedmények. Engedmények esetén ezt a paramétert csak akkor veszi figyelembe a rendszer, ha egy időszaki kedvezmény számlaszáma és a rendes engedmény számlaszáma nem ugyanaz. Hacsak nem kötelező megadni a részleteket, **akkor ezeknél** a feladásnál az összegzés az ajánlott érték. Amikor meg van adva az összegző szintű feladás, **nem lesz kitöltve a TransactionDiscountTrans.RecID** tábla. A Commerce 10.0.27 verzióverzió kiadásában a jelzőt átnevezték és áthelyezték. Korábban Részletezett szint **nevű volt**, és a **Készlet frissítése szakaszban** volt. |
+| Főkönyvi bizonylat részletezési szintje | Ez a paraméter meghatározza a pos rendszerből származó kijelölt tranzakciók főkönyvi bizonylatán szereplő részletességi szintet. A tranzakciótípusok közé tartoznak a bevételek, a kiadások és az engedmények. Engedmények esetén ezt a paramétert csak akkor veszi figyelembe a rendszer, ha egy időszaki kedvezmény számlaszáma és a rendes engedmény számlaszáma nem ugyanaz. Hacsak nem kötelező megadni a részleteket, **akkor ezeknél** a feladásnál az összegzés az ajánlott érték. Amikor meg van adva az összegző szintű feladás, **nem lesz kitöltve a TransactionDiscountTrans.RecID** tábla. A Commerce 10.0.27 verzióverzió kiadásában a jelzőt átnevezték és áthelyezték. Korábban Részletezett szint **nevű volt**, és a **Készlet frissítése szakaszban** volt. |

@@ -1,6 +1,6 @@
 ---
 title: Üzletek és csapatok leképezése, ha már vannak csapatok a Microsoft Teams alkalmazásban
-description: Ez a témakör azt mutatja be, hogyan lehet leképezni az üzleteket és a megfelelő csapatokat a Dynamics 365 Commerce központi felületén, ha a szervezet már létrehozott csapatokat a Microsoft Teams alkalmazásban a Commerce-integráció előtt.
+description: Ez a cikk bemutatja, hogyan Dynamics 365 Commerce lehet leképezni az üzleteket és a központ megfelelő csapatait arra az esetben, Microsoft Teams ha a szervezet már létrehozott csoportokat a Commerce-integráció előtt.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aafeaa1da3c3dab5d76a6bfcee06db34a6afba91
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cb18affd0df59dc986602a684a3fe3d418644fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691105"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902737"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Üzletek és csapatok leképezése, ha már vannak csapatok a Microsoft Teams alkalmazásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet leképezni az üzleteket és a megfelelő csapatokat a Dynamics 365 Commerce központi felületén, ha a szervezet már létrehozott csapatokat a Microsoft Teams alkalmazásban a Commerce-integráció előtt.
+Ez a cikk bemutatja, hogyan Dynamics 365 Commerce lehet leképezni az üzleteket és a központ megfelelő csapatait arra az esetben, Microsoft Teams ha a szervezet már létrehozott csoportokat a Commerce-integráció előtt.
 
 Előfordulhat, hogy a szervezet a Dynamics 365 Commerce és a Microsoft Teams integrációja előtt csapatokat hoz létre az összes üzlet egy részére vagy mindegyikére. Ebben az esetben a feladatszinkronizálás létrehozásához a Commerce POS és a Microsoft Teams között, és meg kell adnia az üzletek és a megfelelő csapat hozzárendelését a Commerce központi felületén.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2deb20646a532509c9e3a3e7a39f646bced2a3fb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693115"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868159"
 ---
 # <a name="configure-rates"></a>Díjak konfigurálása
 
@@ -47,7 +47,7 @@ A mértékek használatával meghatározhatja, hogy az alkalmazottak és a munk�
    | **Érvénybe lépés** | Ezen a dátumon válik aktívvá a mérték. Az alapértelmezett érték az aktuális rendszerdátum. Ennek a dátumnak a juttatási időszak napján vagy azelőttre kell lennie. A legjobb gyakorlat az, ha ezt a dátumot a juttatási terv dátumára állítják. |
    | **Lejárat** | A mérték záró dátuma. Az alapértelmezett érték a 2154. 12. 31., ami a „soha” megfelelője. |
    | **Szintek használata** |  Akkor használja ezt a mezőt, ha van olyan logikája, amelyet a mérték meghatározására kell használni. Ha például a mértéknek az életkor alapján kell nőnie, itt egy értéket válasszon. Válassza a **Szimpla szint** lehetőséget az egyszintű juttatási mértékhez vagy **Dupla szint** lehetőséget a kétszintű juttatási mértékhez. Dupla szint lehet például a nemen és az életkoron alapuló szint. Az érték kiválasztása után válassza a **Műveletek**, majd a **Szintmértékek** lehetőséget. Ha átalánymérték van, ami nem változik, hagyja üresen ezt a mezőt. |
-   | **Fizetés gyakorisága** | Adja meg, hogy milyen gyakran kell kifizetni a juttatási prémiummértékét a juttatásszolgáltatónak. Az oldalon később ismertetett mértékek az itt megadott fizetési gyakoriságon alapulnak. Ha például ebben a mezőben a **Havi** számot adja meg, és az alkalmazotti díj **100 dollár,** akkor a program feltételezi, hogy a juttatás az alkalmazottnak havi100 dollárba fog kerülni. Előfordulhat azonban, hogy az alkalmazott havonta kétszer kap juttatást, az alkalmazotti rekordban beállított juttatásfizetési-gyakoriság alapján. Ebben az esetben, amikor az alkalmazott bejelentkezik az **Alkalmazotti önkiszolgáló rendszerbe**, a fizetett összeg 50 dollár lesz, mivel az **Alkalmazotti önkiszolgáló rendszer** által megjelenített díj az alkalmazott fizetési gyakoriságán alapul. |
+   | **Fizetés gyakorisága** | Adja meg, hogy milyen gyakran kell kifizetni a juttatási prémiummértékét a juttatásszolgáltatónak. Az oldalon később ismertetett díj mértékek az itt megadott fizetési gyakoriságon alapulnak. Ha például ebben a mezőben a **Havi** számot adja meg, és az alkalmazotti díj **100 dollár,** akkor a program feltételezi, hogy a juttatás az alkalmazottnak havi100 dollárba fog kerülni. Előfordulhat azonban, hogy az alkalmazott havonta kétszer kap juttatást, az alkalmazotti rekordban beállított juttatásfizetési-gyakoriság alapján. Ebben az esetben, amikor az alkalmazott bejelentkezik az **Alkalmazotti önkiszolgáló rendszerbe**, a fizetett összeg 50 dollár lesz, mivel az **Alkalmazotti önkiszolgáló rendszer** által megjelenített díj az alkalmazott fizetési gyakoriságán alapul. |
    | **Fizetési gyakoriság mértékének kerekítése** | Az árfolyam kerekítési módjai: Standard, Csonkolt, Normál, Lefelé és Felkerekítés. </br></br><ul><li>**Standard** – Mindig felfelé kerekítés. A 10,611-es kerekítés például 10,62 lesz. -10,231 kerekítése -10,23-ra. </li><li>**Csonkolt** – Mindig lefelé kerekítés. A 10,619-es kerekítés például 10,61 lesz. -10,231 kerekítése -10,24-ra. </li><li>**Normál** – Az 5-re vagy annál nagyobbra végződő tizedesértékek nulláról kerekítve lesznek. A 4-re vagy annál kisebbre végződő tizedesértékek nullára kerekítnek. A 10,615-es kerekítés például 10,62 lesz. -10,235 kerekítése -10,24-ra. 10,614 kerekítése 10,61-ra. -10,234 kerekítése -10,23-ra. </li><li>**Lefelé** – Kerekítés nullához. A 10,619-es kerekítés például 10,61 lesz. -10,231 kerekítése -10,23-ra. </li><li>**Felkerekítés** – Kerekítés nulláról. A 10,619-es kerekítés például 10,62 lesz. -10,231 kerekítése -10,24-ra. |
    | **Nem dohányzó alkalmazott összege** | A nem dohányzó alkalmazottnak a juttatásszolgáltató által adott díj összege. Ez az az összeg, amelyet a munkáltató fizet a juttatásszolgáltatónak, és a mértékbeállítás kifizetési gyakoriságán kell alapulnia. |
    | **Nem dohányzó munkáltató összege** | A nem dohányzó alkalmazottnak a juttatásszolgáltató által adott díj összege. Ez az az összeg, amelyet a munkáltató fizet a juttatásszolgáltatónak, és a mértékbeállítás kifizetési gyakoriságán kell alapulnia. |

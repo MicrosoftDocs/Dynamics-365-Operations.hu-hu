@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 717bf7dcbd9a7e19a6dc960648655fdbd3e2465a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0cb4e745eb6531d90a02778ba85e6caf790f2d46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694823"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874275"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Munkaerő szervezése részlegek, feladatok és beosztások szerint
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694823"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek. Ez a témakör általános tájékoztatást ad ezeket az elemeket illetően. 
+A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek. Ez a cikk általános tájékoztatást ad ezeket az elemeket illetően. 
 
 Az alábbi példa mutatja be a jelen cikkben leírt koncepciókat.
 

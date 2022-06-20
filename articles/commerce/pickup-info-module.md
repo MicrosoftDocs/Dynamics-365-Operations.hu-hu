@@ -1,6 +1,6 @@
 ---
 title: Átvételi információ modul
-description: Ez a témakör az átvételi információk modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni a fizetési oldalakhoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör leírja a felvételi információs modult, és bemutatja, hogyan lehet hozzáadni a pénztároldalakhoz Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 11/06/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad877a0c018093fe97f0aa8ac213357c0520a1c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764561"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892597"
 ---
 # <a name="pickup-information-module"></a>Átvételi információ modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör az átvételi információk modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni a fizetési oldalakhoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör leírja a felvételi információs modult, és bemutatja, hogyan lehet hozzáadni a pénztároldalakhoz Microsoft Dynamics 365 Commerce.
 
 Az átvételi információk modul egy fizetési modulban használható a rendelésfelvételi információk megjelenítéséhez. Az ügyfelek megtekinthetik a rendelkezésre álló felvételi dátumokat és időközöket, majd kiválaszthatják a megfelelő időpontot a rendelés felvételéhez. Például egy vevő választhat, hogy március 21-én 15:00 órakor vesz fel egy rendelést a San Francisco-i üzletből.
 

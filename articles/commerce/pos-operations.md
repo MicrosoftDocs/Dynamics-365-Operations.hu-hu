@@ -1,6 +1,6 @@
 ---
 title: Online és offline pénztár (POS) műveletek
-description: Ez a témakör ismerteti a pénztár (POS) műveleteit Dynamics 365 Commerce alkalmazásban. Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el.
+description: Ez a cikk a pénztári (POS) műveletekről nyújt részletes tájékoztatást a következőben:Dynamics 365 Commerce Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el.
 author: jblucher
 ms.date: 05/27/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7e4556ad11cbea0cb8fb3c5447116a1b54576e17
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
-ms.translationtype: MT
+ms.openlocfilehash: aa1ca9c057b8a1332cd52f73a24adf2089ebef3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811202"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852719"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 

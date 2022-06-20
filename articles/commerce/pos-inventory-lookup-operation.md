@@ -1,6 +1,6 @@
 ---
 title: Készletkeresés-művelet a pénztárban
-description: Ez a témakör azt ismerteti, hogyan lehet a Dynamics 365 Commerce pénztárakban (POS) a készletkeresési művelet segítségével megtekinteni az üzletekben és raktárakban az aktuális készlet rendelkezésre állását.
+description: Ez a cikk bemutatja Dynamics 365 Commerce, hogy hogyan használható a készletkeresési művelet a pénztárnál a termékek aktuális készletének üzletek és raktárak közötti rendelkezésre állásának megtekintésére.
 author: boycezhu
 ms.date: 08/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 01f10c348c61ffbcb30be26a57b3edd436aacc8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343836"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850249"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Készletkeresés-művelet a pénztárban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet a Dynamics 365 Commerce pénztárakban (POS) a készletkeresési művelet segítségével megtekinteni az üzletekben és raktárakban az aktuális készlet rendelkezésre állását.
+Ez a cikk bemutatja Dynamics 365 Commerce, hogy hogyan használható a készletkeresési művelet a pénztárnál a termékek aktuális készletének üzletek és raktárak közötti rendelkezésre állásának megtekintésére.
 
 A készletnek a szervezeten belüli pontos nézetének segítségével az üzlet munkatársai gyors és hatékony ügyfélkiszolgálást nyújthatnak. A legfontosabb pillanat az, amikor a vevő készen áll a beszerzési döntés meghozására. Fontos, hogy a pénztárosok a kiskereskedelmi üzletben valós idejű vagy közel valós idejű készletadatokkal rendelkezzenek, és így pontosan ígéreteket tehessenek a termék szállítására és felvételére.
 

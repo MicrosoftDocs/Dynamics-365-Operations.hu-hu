@@ -1,6 +1,6 @@
 ---
 title: A fájlokba exportált leányvállalati adatok importálása
-description: Ez a témakör bemutatja, hogy hogyan lehet előkészíteni Microsoft Dynamics a külső rendszerből az adatokat a 365 Pénzügybe történő importáláshoz.
+description: Ez a cikk bemutatja, hogy hogyan lehet előkészíteni Microsoft Dynamics a külső rendszerből az adatokat a 365 Pénzügybe történő importáláshoz.
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 045ecd6dfb95ccf38773293d44834531668ac1ff
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6886e2ee79ee9e4ccc067dc4f661c1eea646cfa6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733819"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846770"
 ---
 # <a name="import-subsidiary-data-from-files"></a>A fájlokba exportált leányvállalati adatok importálása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet előkészíteni Microsoft Dynamics a külső rendszerből az adatokat a 365 Pénzügybe történő importáláshoz. A **Konszolidálás importálással** oldal (**Konszolidációk \> Konszolidálás importálással**) használható a külső rendszerekből származó leányvállalati adatok átvitelének előkészítésére.
+Ez a cikk bemutatja, hogy hogyan lehet előkészíteni Microsoft Dynamics a külső rendszerből az adatokat a 365 Pénzügybe történő importáláshoz. A **Konszolidálás importálással** oldal (**Konszolidációk \> Konszolidálás importálással**) használható a külső rendszerekből származó leányvállalati adatok átvitelének előkészítésére.
 
 1. Hozzon létre egy leányvállalati jogi személyt a konszolidációhoz. A jogi személyek létrehozásáról a [Jogi személy létrehozása](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) című témakörben talál információt. A további tudnivalókat lásd: [Jogi személy előkészítése a konszolidációs folyamathoz](prepare-company-for-consolidation.md), valamint [Alárendelt jogi személy beállítása a konszolidációra](set-up-subsidiary-company-for-consolidation.md).
 

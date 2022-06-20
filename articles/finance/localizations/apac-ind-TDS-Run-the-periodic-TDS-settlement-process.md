@@ -1,6 +1,6 @@
 ---
 title: Időszakos TDS-elszámolási folyamat futtatása
-description: Ez a témakör elmagyarázza, hogyan kell elszámolni az időszakos forrásnál levont adót (TDS).
+description: Ez a cikk bemutatja, hogyan lehet a forrásnál (TDS) levont időszakos adókat elszámolni.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6c0aca4d0a916b21ca5ac6ee14e6ab658e0bae26
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1376e2ae342aedb8fe44d95a11dd47f906a4ca48
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726434"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864242"
 ---
 # <a name="run-the-periodic-tds-settlement-process"></a>Időszakos TDS-elszámolási folyamat futtatása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör elmagyarázza, hogyan kell elszámolni az időszakos forrásnál levont adót (TDS).
+Ez a cikk bemutatja, hogyan lehet a forrásnál (TDS) levont időszakos adókat elszámolni.
 
 1. Lépjen az **Adó \> Bevallások \> Adóelőleg \> Adóelőleg kifizetése** részhez.
 

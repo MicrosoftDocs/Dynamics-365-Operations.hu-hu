@@ -1,6 +1,6 @@
 ---
 title: Vevői feladási profilok
-description: Ez a témakör a vevői feladási profilokat írja le, amelyek a vevői tranzakciók főkönyvbe való feladását szabályírják le.
+description: Ez a témakör a vevői feladási profilokat írja le, amelyek a vevői tranzakciók főkönyvbe való feladását szabályják.
 author: JodiChristiansen
 ms.date: 12/22/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ed5ab24e37c75222080bd242aa72a39ecb476bf
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891695"
 ---
 # <a name="customer-posting-profiles"></a>Vevői feladási profilok
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a vevői feladási profilokat írja le, amelyek a vevői tranzakciók főkönyvbe való feladását szabályírják le.
+Ez a témakör a vevői feladási profilokat írja le, amelyek a vevői tranzakciók főkönyvbe való feladását szabályják.
 
 ## <a name="customer-posting-profiles"></a>Vevői feladási profilok
 

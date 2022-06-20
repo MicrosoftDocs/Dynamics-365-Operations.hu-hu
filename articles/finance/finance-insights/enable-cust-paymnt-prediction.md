@@ -1,6 +1,6 @@
 ---
 title: Az ügyfélfizetési előrejelzések lehetővé tétele
-description: Ez a témakör azt mutatja be, hogyan lehet bekapcsolni és konfigurálni a Vevői fizetési előrejelzések funkciót a pénzügyi elemzésekben.
+description: Ez a cikk bemutatja, hogy hogyan lehet bekapcsolni és konfigurálni a Vevői kifizetések előrejelzése funkciót a Pénzügyi információk között.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a52d38e8fb842c7fbc8adf60a6daaef6cdc9d5ec
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f04ee9db5efe3595dea30d641c5097d6b90c0d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713360"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898207"
 ---
 # <a name="enable-customer-payment-predictions"></a>Az ügyfélfizetési előrejelzések lehetővé tétele
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet bekapcsolni és konfigurálni a Vevői fizetési előrejelzések funkciót a pénzügyi elemzésekben. Bekapcsolja a funkciót a **Szolgáltatáskezelés** munkaterületen **, és a konfigurációs beállításokat a Pénzügyi információk konfigurációs oldalon adja** meg. Ez a témakör olyan információkat is tartalmaz, amelyek segíthetnek a funkció hatékony használatában.
+Ez a cikk bemutatja, hogy hogyan lehet bekapcsolni és konfigurálni a Vevői kifizetések előrejelzése funkciót a Pénzügyi információk között. Bekapcsolja a funkciót a **Szolgáltatáskezelés** munkaterületen **, és a konfigurációs beállításokat a Pénzügyi információk konfigurációs oldalon adja** meg. Ez a cikk olyan információkat is tartalmaz, amelyek segítséget nyújtnak a funkció hatékony használatához.
 
 > [!NOTE]
-> A következő lépések elvégzése előtt mindenképpen hajtsa végre az előfeltételeket a [Pénzügyi elemzések konfigurálása](configure-for-fin-insites.md) témakörben.
+> A következő lépések előtt [mindenképpen kövesse az alábbi lépéseket a Pénzügyi információk](configure-for-fin-insites.md) konfigurálása cikknél.
 
 1. A Vevői kifizetések előrejelzése funkció bekapcsolva:
 

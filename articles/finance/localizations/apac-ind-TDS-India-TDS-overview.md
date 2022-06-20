@@ -1,6 +1,6 @@
 ---
 title: Forrásnál levont indiai adó (TDS) áttekintése
-description: Ez a témakör részletes információkat nyújt a forrásnál levont indiai adóról (TDS). A TDS dokumentáció lefedi ennek a képességnek a funkcionalitását.
+description: Ez a cikk részletes tájékoztatást tartalmaz a forrásnál levont indiai adóról (TDS). A TDS dokumentáció lefedi ennek a képességnek a funkcionalitását.
 author: kailiang
 ms.date: 03/19/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 0947481f27323a53d5ef9c7295d8dda078fb4254
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 7ddcf11013921b5d5e242c9026d332d319ed8169
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720196"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896283"
 ---
 # <a name="indian-tax-deducted-at-source-tds-overview"></a>Forrásnál levont indiai adó (TDS) áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör részletes információkat nyújt a forrásnál levont indiai adóról (TDS).
+Ez a cikk részletes tájékoztatást tartalmaz a forrásnál levont indiai adóról (TDS).
 
 A TDS dokumentáció lefedi ennek a képességnek a funkcionalitását. Azt is elmagyarázza, hogyan kell elvégezni a TDS alapbeállítását, kiszámítani a TDS-t a tranzakciókon, befejezni a TDS-elszámolási folyamatot, rögzíteni a TDS-tanúsítványszámokat, és TDS-lekérdezéseket, TDS-kimutatásokat és TDS-tanúsítványokat generálni. A dokumentáció a következő témaköröket tartalmazza:
 

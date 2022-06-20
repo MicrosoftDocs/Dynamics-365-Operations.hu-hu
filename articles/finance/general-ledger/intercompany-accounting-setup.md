@@ -1,6 +1,6 @@
 ---
 title: Vállalatközi könyvelés beállítása
-description: Ez a témakör ismerteti a vállalatközi könyvelés beállításának módját annak érdekében, hogy a vállalatközi naplók használhatók legyenek főkönyvi felosztásokhoz és pénzügyi naplókhoz, például a napi naplókhoz, szállítóiszámla-naplókhoz és fizetési naplókhoz.
+description: Ez a cikk bemutatja a vállalatközi könyvelés beállítását, hogy a vállalatközi naplókat használni tudja a főkönyvi és a pénzügyi naplókhoz, például a napi naplókhoz, a szállítói számlanaplókhoz és a kifizetési naplókhoz.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c9914d9fff3407d8d469fe2ed27a9bfd6b26a50
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 309c121c1ef4b3814d676cad6f3c2b6826b59843
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720365"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871217"
 ---
 # <a name="intercompany-accounting-setup"></a>Vállalatközi könyvelés beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti a vállalatközi könyvelés beállításának módját annak érdekében, hogy a vállalatközi naplók használhatók legyenek főkönyvi felosztásokhoz és pénzügyi naplókhoz, például a napi naplókhoz, szállítóiszámla-naplókhoz és fizetési naplókhoz.
+Ez a cikk bemutatja a vállalatközi könyvelés beállítását, hogy a vállalatközi naplókat használni tudja a főkönyvi és a pénzügyi naplókhoz, például a napi naplókhoz, a szállítói számlanaplókhoz és a kifizetési naplókhoz.
 
 Vállalatközi naplók számos helyzetben létrehozhatóak, például napi naplók, szállítóiszámla-naplók, főkönyvi felosztások és központosított kifizetések számára. Az esetek engedélyezéséhez, be kell állítania a vállalatközi könyvelést.
 

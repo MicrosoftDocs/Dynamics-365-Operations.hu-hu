@@ -1,6 +1,6 @@
 ---
 title: Havi naplóbejegyzések létrehozása kötegben
-description: Ez a témakör bemutatja, hogyan hozhat létre naplóbejegyzéseket egy kötegben a havi lízingköltségek rögzítésekor a hatékonyság növelése érdekében.
+description: Ez a cikk bemutatja, hogyan lehet naplóbejegyzéseket létrehozni egy kötegben a hatékonyság növelése érdekében a havi bérleti költségek rögzítésekor.
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd282ab04312a3ed1821160146b86db902906f3b
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: fb5c65b0a2c982171fa0ae88141d92c2f1ead6ac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714061"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894993"
 ---
 # <a name="create-monthly-journal-entries-in-a-batch"></a>Havi naplóbejegyzések létrehozása kötegben
 
@@ -28,7 +28,7 @@ ms.locfileid: "8714061"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Ez a témakör bemutatja, hogyan hozhat létre naplóbejegyzéseket egy kötegben a havi lízingköltségek rögzítésekor a hatékonyság növelése érdekében. A kötegelt feldolgozás segítségével több ütemezésből hozhat létre naplóbejegyzéseket. Ezek a naplóbejegyzések magukban foglalhatják a lízingkifizetéseket, a kötelezettségamortizációt, a használatijog-eszköz (ROU) amortizációját és a végrehajtási költségköltségeket. Kötegelt feldolgozással egyszerre több lízing kezdeti megjelenítését is elvégezheti, vagy egyszerre több lízinghez is létrehozhat átmeneti korrekciókat.
+Ez a cikk bemutatja, hogyan lehet naplóbejegyzéseket létrehozni egy kötegben a hatékonyság növelése érdekében a havi bérleti költségek rögzítésekor. A kötegelt feldolgozás segítségével több ütemezésből hozhat létre naplóbejegyzéseket. Ezek a naplóbejegyzések magukban foglalhatják a lízingkifizetéseket, a kötelezettségamortizációt, a használatijog-eszköz (ROU) amortizációját és a végrehajtási költségköltségeket. Kötegelt feldolgozással egyszerre több lízing kezdeti megjelenítését is elvégezheti, vagy egyszerre több lízinghez is létrehozhat átmeneti korrekciókat.
 
 Kötegelt feldolgozás beállításához, illetve több lízing kifizetési számláinak, értékcsökkenésének vagy kamatának feldolgozásához nyissa meg az **Eszközlízing \> Időszakos \> Kötegnapló létrehozása** című szakaszt. A megjelenő párbeszédpanelen kiválaszthatja azt az ütemezést, amelyből a naplóbejegyzéseket létre kell hozni. Azt is megadhatja, hogy a kötegelt folyamatot meghatározott entitásokhoz, lízingcsoportokhoz vagy lízingkönyvekhez kell-e futtatni.
 

@@ -1,6 +1,6 @@
 ---
 title: Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
-description: Ez a témakör a magyarországi jogi személyek tárgyi eszközeinek értékcsökkenésével kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk a jogi személyek tárgyieszköz-értékcsökkenéssel kapcsolatban tartalmaz tájékoztatást.
 author: Anasyash
 ms.date: 04/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Hungary
 ms.author: anasyash
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: b34236730dd9d3f85d3ae033a716d5e6f45b5606df8b55016ac9f6fba4d527f9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70a14f1ef0be9b45c66eac823ca04fc8ab70799a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727237"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849756"
 ---
 # <a name="fixed-assets-depreciation-methods-for-hungary"></a>Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a magyarországi jogi személyek tárgyi eszközeinek értékcsökkenésével kapcsolatban tartalmaz tájékoztatást. Magyarországon a következő négy országspecifikus értékcsökkenési mód létezik:
+Ez a cikk a jogi személyek tárgyieszköz-értékcsökkenéssel kapcsolatban tartalmaz tájékoztatást. Magyarországon a következő négy országspecifikus értékcsökkenési mód létezik:
 
 -   Egyenes (Magyarország)
 -   Szorzótényező

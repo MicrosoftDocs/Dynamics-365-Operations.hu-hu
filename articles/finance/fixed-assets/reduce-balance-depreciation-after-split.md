@@ -1,6 +1,6 @@
 ---
 title: Degresszív értékcsökkenés felosztás után
-description: Ez a témakör azt a módszert ismerteti, amelyet a Tárgyi eszközök eszköz felosztása utáni értékcsökkenés kiszámítására használnak az egyenleg csökkentése módszerrel.
+description: Ez a témakör ismerteti a Tárgyi eszközök eszköz eszköz értékcsökkenésének az egyenleg csökkentése módszerrel való felosztása után alkalmazott módszerét.
 author: moaamer
 ms.date: 11/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 35637ac1484121232c3571d1a26132a86d69e366
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 539967a9a73da91f6b49c1bb89f404267ae0a804
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883300"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Degresszív értékcsökkenés felosztás után
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt a módszert ismerteti, amelyet a Tárgyi eszközök egy másik eszköz felosztása utáni értékcsökkenés kiszámítására használnak az egyenleg csökkentése módszerrel. Az eszközkönyvben konfigurált értékcsökkenési év a pénzügyi év. További információ: [Degresszív értékcsökkenés](reduce-balance-depreciation.md) és [Tárgyi eszköz felosztása](tasks/split-fixed-asset.md).
+Ez a témakör azt a módszert írja le, amelyet a Tárgyi eszközök eszköz értékcsökkenésének a tárgyi eszközöknek az egyenlegcsökkentés módszerével való felosztása után számít ki. Az eszközkönyvben konfigurált értékcsökkenési év a pénzügyi év. További információ: [Degresszív értékcsökkenés](reduce-balance-depreciation.md) és [Tárgyi eszköz felosztása](tasks/split-fixed-asset.md).
 
 Ha egy tárgyi eszközt olyan pénzügyi időszakban oszt fel, amely későbbi, mint az eszköz beszerzésének időszaka, a degresszív értékcsökkenés az eszköz előző évi nettó könyv szerinti értékét (NBV) veszi figyelembe. Figyelembe veszi az eszközt felosztó tranzakcióból származó beszerzési és értékcsökkenés-kiigazítási tranzakciókat is. Ez a viselkedés azt feltételezi, hogy az eszközt egy pénzügyi évben szerezték be, és egy későbbi pénzügyi évben osztották fel. Az az összeg, amelyet a felosztás után az eredeti eszközre le kell csökkenteni, az eszköz felosztása előtti NBV-t, valamint a felosztásra feladott beszerzési és értékcsökkenési kiigazítási tranzakciót tükrözi.
 

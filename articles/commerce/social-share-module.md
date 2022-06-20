@@ -1,6 +1,6 @@
 ---
-title: Közösségi megosztás modul
-description: Ez a témakör a közösségi megosztás modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: Közösségi megosztási modul
+description: Ez a témakör a közösségi megosztási modulokat ismerteti, és bemutatja, hogyan lehet hozzáadni azokat a webhelyoldalakhoz Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: d145602a217b32b97142251c65d51945569be9ac
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: e520f425f86c4005a8756ddc0941a9b44f23c262
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780893"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844646"
 ---
 # <a name="social-share-module"></a>Közösségi megosztási modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a közösségi megosztás modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör a közösségi megosztási modulokat ismerteti, és bemutatja, hogyan lehet hozzáadni azokat a webhelyoldalakhoz Microsoft Dynamics 365 Commerce.
 
 A Közösségi megosztás modulok lehetővé teszik a felhasználók számára, hogy megosszanak e-kereskedelmi oldal URL-címeket közösségi felületeken, mint a Facebook, a Twitter, a Pinterest és a LinkedIn. A webhely URL-címeit e-mailen keresztül is meg lehet osztani. A Közösségi megosztási modulokat gyakran használják a termékek részletező oldalain (PDP-k), hogy segítsenek a felhasználóknak megosztani a termék adatait.
 

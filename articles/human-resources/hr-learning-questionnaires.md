@@ -1,6 +1,6 @@
 ---
 title: Kérdőívek
-description: Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz.
+description: Ez a cikk a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: efe0ac953e5c1cb04044256e799ecfc07cf3eebe
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: de38bcbfc89479d6b643ca5ee256c38c88fa7f69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897893"
 ---
 # <a name="questionnaires"></a>Kérdőívek
 
@@ -28,7 +28,7 @@ ms.locfileid: "8690750"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
+Ez a cikk a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
 
 A 365 Pénzügyben elérhető különféle funkciók segítségével testreszabhatja Microsoft Dynamics a kérdőívet, hogy az igényeknek megfelelően elférjen. Íme néhány példa a kérdőív használatához:
 
@@ -40,11 +40,11 @@ A 365 Pénzügyben elérhető különféle funkciók segítségével testreszabh
 
 Az alábbi táblázatban találhatóak hivatkozások, a kérdőív fő feladatairól. További tudnivalóért kattintson a hivatkozásokra.
 
-| Témakör| Leírás|
+| Cikk | Leírás|
 |------|------------|
-| [Kérdőívek tervezése](hr-learning-design-questionnaires.md) | Ez a témakör a kérdőívek tervezésével kapcsolatban tartalmaz tájékoztatást. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
-| [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md) | Ez a témakör a kérdőívek válaszadók között való elosztásával és a kérdőívek kitöltésével kapcsolatban tartalmaz tájékoztatást. |
-| [A kérdőív eredményeinek megtekintése és kiértékelése](hr-learning-evaluate-questionnaire-results.md) | Ez a témakör a kitöltött kérdőívek eredményeinek megtekintésével és kiértékelével kapcsolatban tartalmaz tájékoztatást. |
+| [Kérdőívek tervezése](hr-learning-design-questionnaires.md) | Ez a cikk a kérdőívek tervezésével kapcsolatban tartalmaz tájékoztatást. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
+| [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md) | Ez a cikk a kérdőívek válaszadóknak történő kiosztásáról, valamint a kérdőívek kitöltéséről szól. |
+| [A kérdőív eredményeinek megtekintése és kiértékelése](hr-learning-evaluate-questionnaire-results.md) | Ez a cikk a kitöltött kérdőívek eredményének megtekintéséről és kiértékeléséről szól. |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

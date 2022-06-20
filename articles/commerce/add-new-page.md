@@ -1,6 +1,6 @@
 ---
 title: Új webhelyoldal hozzáadása
-description: Ez a témakör azt mutatja be, hogyan lehet egy új webhelyoldalt hozzáadni a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör azt ismerteti, hogyan lehet új webhelyet felvenni a laphoz Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 76fc3f52746943d5cbf1cb31e677344a1d14bee3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871728"
 ---
 # <a name="add-a-new-site-page"></a>Új webhelyoldal hozzáadása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet egy új webhelyoldalt hozzáadni a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt ismerteti, hogyan lehet új webhelyet felvenni a laphoz Microsoft Dynamics 365 Commerce.
 
 Miután létrehozott sablonokat és töredékeket a webhelyhez, a következő lépés az, hogy megkezdi az azokat használó oldalak létrehozását. A kezdéshez ki kell választania egy sablont vagy egy elrendezést, egy oldalnevet és egy oldal URL-t.
 
@@ -33,11 +33,11 @@ Miután létrehozott sablonokat és töredékeket a webhelyhez, a következő l�
 
 Az új oldalhoz egy sablon vagy egy elrendezés használható. A további tudnivalókat lásd: [Sablonok és elrendezések áttekintése](templates-layouts-overview.md).
 
-## <a name="specify-the-page-name"></a>Adja meg az oldal nevét
+## <a name="specify-the-page-name"></a>Az oldal nevének megadása
 
-Az oldal nevének egyedinek kell lennie a webhelyen, és leíró jellegűnek kell lennie, hogy könnyen megtalálhassa, és mások tudják, mire szánják az oldalt. Később átnevezheti az oldalt, ha szerkeszti, majd kiválasztja a toll szimbólumot az oldal neve mellett a tulajdonságpanelen.
+A lap nevének egyedinek kell lennie a webhelyen, és leíró jellegűnek kell lennie, hogy könnyen meg tudja találni, és mások is tudják, mi a lap célja. A lapot később átnevezheti úgy, hogy szerkeszti, majd kijelöli az oldal neve melletti toll szimbólumot a tulajdonságablakban.
 
-## <a name="specify-the-page-url"></a>Adja meg az oldal URL-jét
+## <a name="specify-the-page-url"></a>A lap URL-címének megadása
 
 Lehetőség van az új oldal URL-címének megadására is. Az oldalak létrehozásakor megadhatja a teljes URL-cím alapjául szolgáló karakterláncot. Ez a karaktersorozat ismert relatív URL vagy URL alkategória néven is. A program ezt követően egy teljes URL-címet generál, és az új oldalt hozzárendeli a program az URL alkategória alapján. Később a lap közzététele előtt módosíthatja az URL alkategóriát. További tudnivalókkal kapcsolatban lásd: [Weblap URL-címének létrehozása](create-page-URL.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Tárgyi eszközök értékcsökkenése
-description: Ez a témakör a Tárgyi eszközök értékcsökkenéséről nyújt áttekintést.
+description: Ez a cikk a tárgyi eszközök értékcsökkenésének áttekintését nyújt.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b4fedee481b4066c81671cf1fca3781c8c75aaeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890980"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874523"
 ---
 # <a name="fixed-asset-depreciation"></a>Tárgyi eszközök értékcsökkenése
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a Tárgyi eszközök értékcsökkenéséről nyújt áttekintést.
+Ez a cikk a tárgyi eszközök értékcsökkenésének áttekintését nyújt.
 
 Állítson be értékcsökkenést, ami egy ismétlődő tranzakció, és amely a mérlegszámlán csökkenti a tárgyi eszköz értékét, és a csökkenést kiadásként egy eredményszámlára terheli. Ezért általában a fő számla szolgál a mérlegszámla időszakos értékcsökkenése jóváírására. Az Ellenszámla pedig a a számlatükör eredményszámla részébe egy olyan számla.
 
-A 10.0.24-es verziónak megfelelő Könyvoldal pozitív értékcsökkenés könyv szerinti konfigurációjának használata esetén az értékcsökkenés a negatív könyv szerinti értékkel (követel) rendelkező tárgyi eszközök terhelését **teszi** **lehetővé**.
+A 10.0.24-es **·** **verziónak** megfelelő Könyvoldal pozitív értékcsökkenés könyv szerinti konfigurációjának használata esetén az értékcsökkenés a negatív könyv szerinti értékkel (követel) rendelkező tárgyi eszközök terhelését teszi lehetővé.
 
 ## <a name="depreciation-adjustment"></a>Értékcsökkenés helyesbítése
 Általában csak egy már feladott értékcsökkenési tranzakció helyesbítése adható fel úgy, mint az. A fő számla és az ellenszámla beállításai így megegyeznek az értékcsökkenés számláival. Az értékcsökkenési kiigazítás pozitív és negatív összeg is lehet, de a fő számla (mint mérlegszámla) és az ellenszámla (általában mint eredményszámla) működése nem változik.

@@ -1,6 +1,6 @@
 ---
-title: Fejlécdíjak arányosítása a megfelelő értékesítési sorokhoz
-description: Ez a témakör további képességeket mutat be a Commerce csatorna rendeléseihez kapcsolódó automatikus költéségek kiszámításához és alkalmazásához a haladó automatikus költségek funkcióval..
+title: Fejlécköltségek arányosítása az egyező értékesítési sorokhoz
+description: Ez a témakör további lehetőségeket ismertet a Commerce csatornarendelések automatikus díjának számításához és alkalmazásával kapcsolatos funkciókról a speciális automatikus díjak funkcióval.
 author: hhaines
 ms.date: 03/30/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b41aa7b012b161626a98fc4aa2d37134552a57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774509"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886932"
 ---
-# <a name="prorate-header-charges-to-matching-sales-lines"></a>Fejlécdíjak arányosítása a megfelelő értékesítési sorokhoz
+# <a name="prorate-header-charges-to-matching-sales-lines"></a>Fejlécköltségek arányosítása az egyező értékesítési sorokhoz
 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör leírja a fejléc szintű automatikus díjak csoportosításához, illetve azok arányosításához a kereskedelmi értékesítési csatornákhoz funkciókat. Ez a funkció a Retail 10.0.1 verzióban a pénztárnál (POS) létrehozott tranzakciók érhető el és olyan értékesítésekhez, amelyek a Retail 10.0.2 verziójának hívásközpontjában lettek létrehozva.
+Ez a témakör a fejléc szintű automatikus költségek csoportosítására és a kereskedelmi értékesítési sorokhoz való újrasorolására vonatkozó funkciókat ismerteti. Ez a funkció a Retail 10.0.1 verzióban a pénztárnál (POS) létrehozott tranzakciók érhető el és olyan értékesítésekhez, amelyek a Retail 10.0.2 verziójának hívásközpontjában lettek létrehozva.
 
 Ez a funkció csak akkor érhető el, ha a [speciális automatikus költségek](/dynamics365/unified-operations/retail/omni-auto-charges) szolgáltatás be van kapcsolva a **Commerce paraméterek** lap beállításával. Ezenkívül a továbbfejlesztett számítási módok az automatikus költségekhez csak a kereskedelmi értékesítési rendelésekhez rendelhetők hozzá, amelyeket kereskedelmi csatornákon keresztül hoztak létre (a POS egy hívásközpont és a Dynamics elektronikus kereskedelmi platform).
 

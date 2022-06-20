@@ -1,6 +1,6 @@
 ---
 title: Szállítói kifizetések készítése fizetési javaslat segítségével
-description: Ez a témakör tájékoztatást nyújt a fizetési javaslat beállításairól, és néhány olyan példát is tartalmaz, amely bemutatja a kifizetési javaslatok működésének módját.
+description: Ez a cikk tájékoztatást nyújt a fizetési javaslatbeállításokról és néhány olyan példát is tartalmaz, amely bemutatja a kifizetési javaslatok működésének módját.
 author: abruer
 ms.date: 04/04/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629720"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845374"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Szállítói kifizetések készítése fizetési javaslat segítségével
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör tájékoztatást nyújt a fizetési javaslat beállításairól, és néhány olyan példát is tartalmaz, amely bemutatja a kifizetési javaslatok működésének módját. A kifizetési javaslatok segítségével gyakran szállítói számlát is létrehozhat, mert a lekérdezést a kifizetés szállítói számláinak gyors kiválasztására lehet használni, amely olyan feltételeken alapul, mint a határidő vagy a készpénzfizetési engedmény. 
+Ez a cikk tájékoztatást nyújt a fizetési javaslatbeállításokról és néhány olyan példát is tartalmaz, amely bemutatja a kifizetési javaslatok működésének módját. A kifizetési javaslatok segítségével gyakran szállítói számlát is létrehozhat, mert a lekérdezést a kifizetés szállítói számláinak gyors kiválasztására lehet használni, amely olyan feltételeken alapul, mint a határidő vagy a készpénzfizetési engedmény. 
 
 A szervezetek gyakran alkalmaznak fizetési javaslatokat a szállítói kifizetések lebonyolítására. A fizetési javaslatos lekérdezés segít a kifizetendő szállítói számlák gyors kiválasztásában a határidő, készpénzfizetési engedmény és egyéb kritériumok alapján. 
 

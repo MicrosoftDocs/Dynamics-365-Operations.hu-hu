@@ -1,6 +1,6 @@
 ---
 title: Adatintegrációs projekt létrehozása
-description: Ez a témakör bemutatja az adatintegrációs projektek létrehozásához szükséges témaköröket.
+description: Ez a cikk bemutatja az adatintegrációs projektek létrehozásához szükséges útmutatót.
 author: ShivamPandey-msft
 ms.date: 05/06/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4d69ffcb6ccfcc7bae2891f2539941f7b6bbf86e
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 4ff4f88c6c5d55d853aebd7d437bfb107292fb2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876240"
 ---
 # <a name="create-a-data-integration-project"></a>Adatintegrációs projekt létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja az adatintegrációs projektek létrehozásához szükséges témaköröket.
+Ez a cikk bemutatja az adatintegrációs projektek létrehozásához szükséges útmutatót.
 
 1. Jelentkezzen be a Microsoft Dynamics 365 Pénzügy 365-be.
 2. Menjen a **Munkaterületek \> Adatkezelés** pontra, és válassza az **Adatentitások** lehetőséget. Várja meg, amíg az összes adatentitás frissül, mielőtt továbblépne a következő lépésre.
@@ -67,6 +67,6 @@ Ez a témakör bemutatja az adatintegrációs projektek létrehozásához szüks
     2. Állítsa be a megfelelő ütemezést az egyes projektekhez.
 
 > [!NOTE]
-> Ha nem látja a Dataverse szükséges entitásokat a mezőben, **akkor kattintson a Jóváírás és collectionsSetupFinance** > **·** > **Az előrejelzés** > **paraméterei** között, engedélyezze a funkciót, **a** vevői kifizetések előrejelzéseit, **majd válassza az Előrejelzési modell létrehozása** lehetőséget. Amikor befejeződött az AI-modell telepítése, Dataverse az integráció létrehozásához szükséges entitások telepítve lesznek.
+> Ha nem látja a Dataverse **·** > **·** > **szükséges entitásokat, akkor kattintson a Jóváírás és beírások – Beállítás –** > **Pénzügyi** információk – betekintő paraméterek gombra, engedélyezze a funkciót, **a** Vevői kifizetések előrejelzéseit, **majd válassza az Előrejelzési modell létrehozása** lehetőséget. Amikor befejeződött az AI-modell telepítése, Dataverse az integráció létrehozásához szükséges entitások telepítve lesznek.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59b67589139c0ce332716acf998825c6a024bded
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 7a0a9c19009c49b80ca8c182c31592c1a713a2aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371881"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906287"
 ---
 # <a name="connected-applications"></a>Csatlakoztatott alkalmazások
 
 [!include [banner](../includes/banner.md)]
 
-A csatlakoztatott alkalmazások a Microsoft Dynamics 365 Finance Dynamics 365 Supply Chain Management példányai, és a konfigurációs szolgáltatáson (RCS) keresztül lehet szükség. A csatlakoztatott alkalmazásokon keresztül a Pénzügy és az Ellátásilánc-kezelés globalizációs funkcióját be lehet állítani, hogy az elektronikus számlázási helyzet működjön.
+A csatlakoztatott alkalmazások a Microsoft Dynamics 365 Pénzügy Dynamics 365 Supply Chain Management példányai, és a konfigurációs szolgáltatáson (RCS) keresztül lehet szükség. A csatlakoztatott alkalmazásokon keresztül a Pénzügy és az Ellátásilánc-kezelés globalizációs funkcióját be lehet állítani, hogy az elektronikus számlázási helyzet működjön.
 
 A globalizációs funkció telepítésekor a Pénzügyi vagy Ellátásilánc-kezelés alkalmazásra vonatkozó beállítási információk közvetlenül közzé tehetőek az RCS rendszerből a megfelelő csatlakoztatott alkalmazásba.
 
@@ -39,7 +39,7 @@ Az RCS pénzügyi és ellátásilánc-kezelési paramétereinek rendelkezésre �
 3. A Környezet **beállítási lapján**, a munkaablakban válassza a Kapcsolódó alkalmazások **lehetőséget**.
 4. Válassza ki az **Új** lehetőséget egy csatlakoztatott alkalmazás létrehozásához.
 5. A **Név** mezőben adja meg a csatlakoztatni kívánt alkalmazás nevét.
-6. A **Típus** mezőben válassza ki a **Dynamics 365 Finance** lehetőséget.
+6. A Típus **mezőben** válassza a **Dynamics 365 Pénzügy lehetőséget**.
 7. Az Alkalmazás **mezőben** adja meg a csatlakoztatni kívánt környezet URL-címét.
 8. A Bérlő **mezőben** adja meg a környezet bérlőját.
 9. Válassza a **Mentés** lehetőséget.

@@ -1,6 +1,6 @@
 ---
 title: Hogyan lehet beállítani a kiegyenlítő pénzügyi dimenziókat?
-description: Ez a témakör a Pénzügyi dimenziók kiegyenlítése funkció beállításával és használatával kapcsolatos beállításokat ismerteti.
+description: Ez a témakör a Pénzügyi dimenziók kiigazítása funkció beállításával és használatával kapcsolatos beállításokat ismerteti.
 author: kweekley
 ms.date: 08/25/2021
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-08-17
 ms.dyn365.ops.version: 10.0.210
-ms.openlocfilehash: cb3033a615200a358c1b28b0991bae4b84470ae0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: dd859629b0eb9f14fa4907699613382f3897d21d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720111"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878012"
 ---
 # <a name="how-do-i-set-up-balancing-financial-dimensions"></a>Hogyan lehet beállítani a kiegyenlítő pénzügyi dimenziókat?
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Pénzügyi dimenziók kiegyenlítése funkció beállításával és használatával kapcsolatos beállításokat ismerteti.
+Ez a témakör a Pénzügyi dimenziók kiigazítása funkció beállításával és használatával kapcsolatos beállításokat ismerteti.
 
 ## <a name="symptom"></a>Tünet
 
-A pénzügyi dimenziók kiegyenlítésének beállítása két lehetőséggel lehetséges. Az első lehetőség a **Pénzügyi dimenziók kiegyenlítése** mező használata a **Főkönyv** beállítási oldalon (**Főkönyv \> Főkönyv beállítása \> Főkönyv**). A második lehetőség a **Dimenziók kiegyenlítésének kötelezővé tétele** mezőt a **Pénzügyi dimenziók** oldalon (**Főkönyv > Számlatükör \> Dimenziók \> Pénzügyi dimenziók**). Ez a témakör bemutatja a két lehetőség közötti különbséget.
+A pénzügyi dimenziók kiegyenlítésének beállítása két lehetőséggel lehetséges. Az első lehetőség a **Pénzügyi dimenziók kiegyenlítése** mező használata a **Főkönyv** beállítási oldalon (**Főkönyv \> Főkönyv beállítása \> Főkönyv**). A második lehetőség a **Dimenziók kiegyenlítésének kötelezővé tétele** mezőt a **Pénzügyi dimenziók** oldalon (**Főkönyv > Számlatükör \> Dimenziók \> Pénzügyi dimenziók**). Ez a cikk bemutatja a két lehetőség közötti különbséget.
 
 ## <a name="resolution"></a>Megoldás
 

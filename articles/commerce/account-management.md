@@ -1,6 +1,6 @@
 ---
 title: Számlakezelési oldalak és modulok
-description: Ez a témakör a fiókkezelési lapokkal és modulokkal foglalkozik a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a cikk a fiókkezelési lapokat és modulokat tartalmazza a következőben:Microsoft Dynamics 365 Commerce
 author: v-chgri
 ms.date: 03/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c10288aa65d58d1442e742fa8f39b4e380c7b9e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853876"
 ---
 # <a name="account-management-pages-and-modules"></a>Számlakezelési oldalak és modulok
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a fiókkezelési lapokkal és modulokkal foglalkozik a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a cikk a fiókkezelési lapokat és modulokat tartalmazza a következőben:Microsoft Dynamics 365 Commerce
 
 A fiókkezelési lapok egy csoportjára vonatkozik, amelyek a felhasználói fiókkal kapcsolatos információk kezelésére szolgálnak a Dynamics 365 Commerce alkalmazásban. A fiókkezelési lapok közé tartozik a fiókkezelés nyitólapja, a felhasználói profil lapja, a felhasználói cím lapja, a rendeléselőzmények lapja, a rendelés részleteinek lapja, a hűségprogram lapja és a kívánságlista lapja.
 

@@ -1,6 +1,6 @@
 ---
 title: Szállítói számla irányelveinek beállítása
-description: Ez a témakör ismerteti a szállítói számlákkal kapcsolatos irányelvek beállítását.
+description: Ez a cikk bemutatja a szállítói számlákra vonatkozó irányelvek beállítását.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 049b38b6feba5f4369d79b89b4c81a8195dd7758
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109756"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904730"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Szállítói számla irányelveinek beállítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör ismerteti a szállítói számlákkal kapcsolatos irányelvek beállítását. A szállítói számlákra vonatkozó irányelvek akkor futnak le, amikor szállítói számlát **a** **Szállítói számla lapon felad, és amikor megnyitja a szállítói számla irányelvének megszegése lapot.** A szállítói számla munkafolyamatát is beállíthatja úgy, hogy a valahányszor számlát küld egy munkafolyamathoz, futtatja a szállítói számlára vonatkozó irányelveket. 
+Ez a cikk bemutatja a szállítói számlákra vonatkozó irányelvek beállítását. A szállítói számlákra vonatkozó irányelvek akkor futnak le, amikor szállítói számlát **a** **Szállítói számla lapon felad, és amikor megnyitja a szállítói számla irányelvének megszegése lapot.** A szállítói számla munkafolyamatát is beállíthatja úgy, hogy a valahányszor számlát küld egy munkafolyamathoz, futtatja a szállítói számlára vonatkozó irányelveket. 
 
 - A szállítói számla irányelvek nem vonatkoznak azokra a számlákra, amelyek a számlajegyzékben vagy a számlanaplóban jöttek létre.  
 - A számlaegyeztetés érvényesítése nem használ szállítói számla irányelveket, **hanem a Kötelezettségek paraméterei lapon van beállítva**.  

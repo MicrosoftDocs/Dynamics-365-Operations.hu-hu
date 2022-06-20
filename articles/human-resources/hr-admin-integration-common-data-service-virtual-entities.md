@@ -1,6 +1,6 @@
 ---
 title: A Dataverse virtuális tábláinak konfigurálása
-description: Ez a témakör bemutatja, hogyan kell konfigurálni, létrehozni, frissíteni a meglévő virtuális táblákat, valamint elemezni a generált és a rendelkezésre álló táblákat a Dynamics 365 Human Resources számára.
+description: Ez a cikk bemutatja, hogyan kell konfigurálni, létrehozni, frissíteni a meglévő virtuális táblákat, és elemezni a generált és elérhető táblákat a következőben:Dynamics 365 Human Resources
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d7f4d3770c754d2a7974d17fc7c40462ac8fc642
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0154faec8a9f3e968ea1b665e2a815cc9ec02379
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899730"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>A Dataverse virtuális tábláinak konfigurálása
 

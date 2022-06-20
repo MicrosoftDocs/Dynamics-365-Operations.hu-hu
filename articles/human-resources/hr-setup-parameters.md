@@ -1,6 +1,6 @@
 ---
 title: A Human Resources paramétereinek konfigurálása
-description: Ez a témakör ismerteti a vállalat-specifikus paraméterek beállítását a Dynamics 365 Human Resources alkalmazásban.
+description: Ez a témakör bemutatja, hogy hogyan lehet beállítani a vállalatspecifikus paramétereket a következőben:Dynamics 365 Human Resources
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689410"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856280"
 ---
 # <a name="configure-human-resources-parameters"></a>A Human Resources paramétereinek konfigurálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A Human Resources egyes paramétereinek beállításait közösen használják a vállalatok, azonban vannak olyan paraméter-beállítások, amelyek vállalatonként különböznek. Ez a témakör ismerteti a vállalat-specifikus Human Resources paraméterek beállítását.
+A Human Resources egyes paramétereinek beállításait közösen használják a vállalatok, azonban vannak olyan paraméter-beállítások, amelyek vállalatonként különböznek. Ez a cikk bemutatja a vállalatspecifikus emberierőforrás-paraméterek beállítását.
 
 A Human Resources paraméterek beállítása két oldalon történik. A vállalatok között megosztott paraméterekhez az **Emberi erőforrások megosztott paraméterei** oldal használatos. A vállalatspecifikus (más szóval, a beállítások csak egy vállalatra vonatkoznak) paraméterekhez az **Emberierőforrás-paraméterek** oldal használatos.
 

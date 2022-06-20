@@ -1,6 +1,6 @@
 ---
 title: Olasz Intrastat
-description: Ez a témakör az Olaszországban az Intrastat-jelentéskészítéssel kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk az Intrastat-jelentésekről tartalmaz információkat (Olaszország).
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488259"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874363"
 ---
 # <a name="italian-intrastat"></a>Olasz Intrastat
 
@@ -631,7 +631,7 @@ A következő lépések szerint állítsa be az Olaszországra jellemző beáll�
 
     További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2. A Dynamics 365 Finance alkalmazásban menjen az **Adó** > **Beállítás** > **Külkereskedelmi paraméterek** menüponthoz.
+2. A Dynamics 365 Pénzügyben kattintson az Adó **beállítása** > **·** > **– Külkereskedelmi paraméterek gombra**.
 3. Az **Intrastat** lapon az **Általános** gyorslapon állítsa be a következő mezőket:
 
     - **Származási/cél megye**: A vállalat megyének kiválasztása. Ez a megye lesz használva az elküldések során.
@@ -650,7 +650,7 @@ A következő lépések szerint állítsa be az Olaszországra jellemző beáll�
 6. A **Statisztikai érték** gyorslapon állítsa a **Statisztikai adatok nyomtatása és exportálása** lehetőséget **Igen** értékre, ha szükséges. Ez a beállítás aktiválja a statisztikai szakasz átvitelét. A statisztikai szakasz a súlyokkal, kiegészítő egységekkel, statisztikai értékekkel, szállítási feltételekkel, szállítási ütemezésekkel, szállítási módokkal és származási régiókkal kapcsolatos adatokból áll.
 
     > [!NOTE]
-    > Negyedévente történő bevallás esetén az Intrastat-jelentés nem tartalmazza a statisztikai szakaszt, illetve a szállítási feltételekre és szállítási módokra vonatkozó adatokat. A további tudnivalókat lásd a témakör [Áttekintés](#overview) részében található táblázatban.
+    > Negyedévente történő bevallás esetén az Intrastat-jelentés nem tartalmazza a statisztikai szakaszt, illetve a szállítási feltételekre és szállítási módokra vonatkozó adatokat. A további tudnivalókat lásd a [témakör Áttekintés](#overview) szakaszában található táblázatban.
 
 7. Az **Ország/régió tulajdonságai** lap sorolja fel azokat az országokat és régiókat, amelyekkel a szervezet üzleti tevékenységet végez. Állítsa be a következő mezőket minden egyes ország vagy régió esetében:
 

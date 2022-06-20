@@ -1,6 +1,6 @@
 ---
 title: A szállítói számla automatizálásának beállítási lehetőségei (előzetes verzió)
-description: Ez a témakör a szállítóiszámla-automatizálás beállításának és konfigurálásának lehetőségeit ismerteti.
+description: Ez a témakör a szállítói számlák automatizálásának beállításához és konfigurálásához rendelkezésre álló beállításokat ismerteti.
 author: sunfzam
 ms.date: 02/14/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c1dc443e4225a3ffc6b88cedf7add396a66ec25d
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86ad68b3dc08bf2c57ab5f9bc6c65bc37c0901e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182438"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874841"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>A szállítói számla automatizálásának beállítási lehetőségei
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a szállítóiszámla-automatizálás beállításának és konfigurálásának lehetőségeit ismerteti. A számlázásautomatizáló szolgáltatások a következő típusú beállítási paramétereket használják:
+Ez a témakör a szállítói számlák automatizálásának beállításához és konfigurálásához rendelkezésre álló beállításokat ismerteti. A számlázásautomatizáló szolgáltatások a következő típusú beállítási paramétereket használják:
 
 - Az előlegek automatikus alkalmazásának paraméterei az importált számlákon.
 - Az importált szállítói számlák munkafolyamat-rendszerbe történő beküldésének paraméterei és a feladott terméknyugta sorainak egyeztetése a függőben lévő szállítói számlák soraival.

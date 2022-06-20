@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce értékelési környezet GYIK
-description: Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce értékelési környezettel kapcsolatos gyakori kérdésekre.
+description: Ez a cikk az értékelési környezettel kapcsolatos gyakori kérdésekre ad Microsoft Dynamics 365 Commerce választ.
 author: v-chgri
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e8a3e760353b351d42aff82c0d372d2aca350cd2
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
-ms.translationtype: MT
+ms.openlocfilehash: 94717c1b9ff4ec05ee9734e1471a137cef55edfe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343558"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861940"
 ---
 # <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Dynamics 365 Commerce értékelési környezet GYIK
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce értékelési környezettel kapcsolatos gyakori kérdésekre.
+Ez a cikk az értékelési környezettel kapcsolatos gyakori kérdésekre ad Microsoft Dynamics 365 Commerce választ.
 
 ## <a name="can-we-use-the-commerce-evaluation-environment-as-an-e-commerce-storefront-for-customers-that-currently-implement-retail"></a>Használható a Commerce értékelési környezet e-kereskedelmi áruházként a jelenleg Retail alkalmazást megvalósító ügyfeleink esetében?
 
@@ -37,7 +37,7 @@ Nem (többnyire). A Commerce értékelési összetevők csak olyan környezetekb
 
 ## <a name="what-costs-are-involved-in-deploying-the-commerce-evaluation-environment-on-microsoft-azure-via-microsoft-dynamics-lifecycle-services-lcs"></a>Milyen költségekkel jár a Commerce értékelési környezet telepítése a Microsoft Azure oldalon a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáson keresztül?
 
-Egy hagyományos Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce központ demókörnyezete (virtuális gép \[VM\]) fog megjelenni az Azure-előfizetésében. Az [Azure árkalkulátorral](https://azure.microsoft.com/pricing/calculator/) megbecsülheti ezt a költséget.
+Az Azure-előfizetésben a hagyományos Dynamics 365 Pénzügy/Dynamics 365 Supply Chain Management központ Dynamics 365 Commerce bemutatókörnyezet (virtuális \[gép VM\]) működik. Az [Azure árkalkulátorral](https://azure.microsoft.com/pricing/calculator/) megbecsülheti ezt a költséget.
 
 Más összetevők, például a Commerce Scale Unit, a Commerce webhelyépítő és az e-commerce webhely szoftverként, valamint a Microsoft által működtetett „szoftver szolgáltatásként” (SaaS) formájában elérhetővé válik.
 

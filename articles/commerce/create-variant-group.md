@@ -1,6 +1,6 @@
 ---
-title: Változatcsoport létrehozása
-description: Ez a témakör azt mutatja be, hogyan hozhat létre szín-, stílus- vagy színváltozat csoportot egy termékhez a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: Variánscsoport létrehozása
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni méret-, stílus- és színváltozatcsoportot a termékekhez a következőben:Microsoft Dynamics 365 Commerce
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 49e6860fa22bbfba8b86a8243fa29b831e22b489d967a45310648e5debd7512b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a46dc9fd5cdb848818964e771d373924b217147a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749931"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874961"
 ---
 # <a name="create-a-variant-group"></a>Variánscsoport létrehozása
 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan hozhat létre szín-, stílus- vagy színváltozat csoportot egy termékhez a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt ismerteti, hogyan lehet létrehozni méret-, stílus- és színváltozatcsoportot a termékekhez a következőben:Microsoft Dynamics 365 Commerce
 
 ## <a name="overview"></a>Áttekintés
 
 A Dynamics 365 Commerce támogatja a termékek több változatát. Ideális megoldás változatcsoportok beállítása a különböző termékkategóriákhoz. Például méretcsoport hozható létre a az extrakicsi, kicsi, közepes, nagy, extranagy méretű pólókhoz, illetve színcsoportot is létre lehet hozni, amely tartalmazza a termék összes rendelkezésre álló színét. A termékek felvétele előtt kell hozzáadni a változatcsoportokat.
 
-Ebben a témakörben egy méretcsoportot hozunk létre és konfigurálunk. Hasonló eljárások használhatók a stílus- és színcsoportok hozzáadására és beállítására is.
+Ebben a cikkben egy méretcsoport jön létre és konfigurálható. Hasonló eljárások használhatók a stílus- és színcsoportok hozzáadására és beállítására is.
 
 ## <a name="create-a-size-group"></a>Méretcsoport létrehozása
 

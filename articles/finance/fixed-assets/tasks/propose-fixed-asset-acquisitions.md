@@ -1,6 +1,6 @@
 ---
 title: Javaslat tárgyieszköz-beszerzésekre
-description: Ez a témakör leírja, hogyan szerezhető be tárgyi eszköz a Tárgyi eszközök naplójában található Beszerzési javaslat segítségével.
+description: Ez a témakör azt ismerteti, hogyan lehet tárgyi eszközt szerezni a tárgyieszköz-napló beszerzési javaslatának használatával.
 author: moaamer
 ms.date: 03/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd54642e5ec6c56fbc3a5ebb07fc8fdaf5545926
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 35d2171dc828cb0227f310e81be1d3e3359f41c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725680"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909069"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Javaslat tárgyieszköz-beszerzésekre
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör leírja, hogyan szerezhető be tárgyi eszköz a Tárgyi eszközök naplójában található Beszerzési javaslat segítségével. Ez a könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez. Ha tárgyi eszköz javaslati naplón keresztül kíván beszerezni egy tárgyi eszközt, először létre kell hoznia a tárgyi eszköz rekordját, majd meg kell határoznia a beszerzési árat a tárgyi eszköz könyvében.
+Ez a témakör azt ismerteti, hogyan lehet tárgyi eszközt szerezni a tárgyieszköz-napló beszerzési javaslatának használatával. Ez a könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez. Ha tárgyi eszköz javaslati naplón keresztül kíván beszerezni egy tárgyi eszközt, először létre kell hoznia a tárgyi eszköz rekordját, majd meg kell határoznia a beszerzési árat a tárgyi eszköz könyvében.
 
 ## <a name="create-an-asset-acquisition-proposal"></a>Eszközbeszerzési javaslat létrehozása
 

@@ -1,6 +1,6 @@
 ---
 title: Adóinformációk rányomtatása az átmozgatási rendelésekre
-description: Ez a témakör leírja, hogy hogyan nyomtathatók az adószámítási szolgáltatás által meghatározott adóinformációk az átmozgatási rendelések dokumentumaira.
+description: Ez a cikk bemutatja, hogy hogyan nyomtathatók az adószámítási szolgáltatás által meghatározott adóinformációk az átszámítási rendelés dokumentumaira.
 author: Kai-Cloud
 ms.date: 10/15/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-10-12
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e74336270ab46fc19adb4c797745c9582028391a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca7a610162c539a0ecd74cf9e663f08ea80a7e44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687471"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855202"
 ---
 # <a name="print-tax-information-on-transfer-order-documents"></a>Adóinformációk rányomtatása az átmozgatási rendelésekre
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör ismerteti az adóinformációk rányomtatását az átmozgatási rendelésekre. Kinyomtathatja átmozgatási rendelés proforma számladokumentumát olyan készletátvitelekhez, amelyek közösségen belüli szállításnak és közösségen belüli beszerzésnek minősülnek az Európai Unió (EU) áfa (ÁFA) rendelkezései alapján. 
+Ez a cikk bemutatja, hogy hogyan nyomtathatók ki az adózási adatok az átrendelt rendelés dokumentumaira. Kinyomtathatja átmozgatási rendelés proforma számladokumentumát olyan készletátvitelekhez, amelyek közösségen belüli szállításnak és közösségen belüli beszerzésnek minősülnek az Európai Unió (EU) áfa (ÁFA) rendelkezései alapján. 
 
 Az átmozgatási rendelés dokumentumaihoz a következő adózási adatok kerülnek:
 

@@ -1,6 +1,6 @@
 ---
 title: Konszolidált pénzügyi kimutatások létrehozása
-description: Ez a témakör a különböző helyzeteket mutatja be, ahol konszolidált pénzügyi kimutatásokat hozhat létre.
+description: Ez a témakör ismerteti azokat a különböző eseteket, amikor konszolidált pénzügyi kimutatásokat lehet létrehozni.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: c6a132b742414a3dab635634c7bb5ba0dbea527d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716523"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846799"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a különböző helyzeteket mutatja be, ahol konszolidált pénzügyi kimutatásokat hozhat létre.
+Ez a témakör ismerteti azokat a különböző eseteket, amikor konszolidált pénzügyi kimutatásokat lehet létrehozni.
 
 ## <a name="single-level-and-multilevel-consolidations-across-legal-entities"></a>Egyszintű és többszintű konszolidáció jogi személyek között
 Pénzügyi jelentések segítségével való konszolidálás legegyszerűbb módja a jelentési fák használatával az adatok aggregálása a vállalatok között, amelyek azonos számlatükörrel és pénzügyi időszakokkal rendelkeznek. Az alábbiakban találhatók a magas szintű lépések a konszolidáláshoz jelentési fa segítségével.
@@ -153,7 +153,7 @@ A következő ábra a jelentésdefinícióban található beállításokat mutat
 ![Beállítások jelentésdefiníciós időszak száma.](./media/options-report-definition-period-number.png "Beállítások jelentésdefiníciós időszak száma")
 
 ## <a name="business-unit-consolidations"></a>Üzleti egység konszolidációi
-Ez a témakör a jelentési fa defincíciók használatára és a hierarchiák Pénzügyi jelentéskészítésben való, konszolidációs célú szervezésére összpontosított. A jelentési fa segítségével üzleti egység konszolidációs jelentéseket is léterhozhat, például globális értékesítésről vagy üzemeltetésről szóló jelentéseket. Ezek a jelentések általában kötelezőek. Ezek létrehozásához minden konszolidálandó egységhez válasszon egy vállalatot és egy dimenziót. Például az alábbi példában az üzleti egység görgetett összesítése úgy volt elérhető, hogy minden egyes vállalatot megismételtek a **Vállalat** oszlopban (A oszlop) és azonosították a Részleg dimenzióértékeinek csoportját vállalatonként a **Dimenziók** oszlopban (D oszlop).
+Ez a cikk a jelentési fadefiníciók és szervezeti hierarchiák konszolidálási célú jelentési fastruktúrák használatával fókuszált. A jelentési fa segítségével üzleti egység konszolidációs jelentéseket is léterhozhat, például globális értékesítésről vagy üzemeltetésről szóló jelentéseket. Ezek a jelentések általában kötelezőek. Ezek létrehozásához minden konszolidálandó egységhez válasszon egy vállalatot és egy dimenziót. Például az alábbi példában az üzleti egység görgetett összesítése úgy volt elérhető, hogy minden egyes vállalatot megismételtek a **Vállalat** oszlopban (A oszlop) és azonosították a Részleg dimenzióértékeinek csoportját vállalatonként a **Dimenziók** oszlopban (D oszlop).
 
 ![Üzleti egység konszolidációs jelentései.](./media/business-unit-consolidation-reports.png "Üzleti egység konszolidációs jelentései")
 
@@ -218,7 +218,7 @@ Annak érdekében, hogy a pénznemek használatakor helyesen átváltott összeg
 
 ## <a name="additional-resources"></a>További erőforrások
 
-További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás áttekintése](./financial-consolidations-currency-translation.md).
+A konszolidációval és a pénznemátváltásokkal kapcsolatos további tudnivalókat lásd a cikk szülőcikkében, [a pénzügyi konszolidációk és a pénznemátváltások áttekintésében](./financial-consolidations-currency-translation.md).
 
 A konszolidáció részleteinek online úton történő megadásával kapcsolatos további információkért tekintse meg a következőt: [Online pénzügyi konszolidációk](./consolidate-online.md).
 

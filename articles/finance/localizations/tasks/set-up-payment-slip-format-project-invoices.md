@@ -1,6 +1,6 @@
 ---
 title: Fizetési bizonylat formátumának beállítása projektszámlákhoz
-description: Ez a témakör bemutatja, hogyan lehet csatolni kinyomtatott kifizetési bizonylatokat a projektszámlákhoz, így segítve az ügyfeleket, hiszen ezzel fizetési hivatkozást biztosítanak a feladáshoz és a kiegyenlítéshez.
+description: Ez a cikk bemutatja, hogy hogyan csatolhatók nyomtatott fizetési bizonylatok a projektszámlákhoz, és hogyan lehet fizetési hivatkozást csatolni a feladáshoz és kiegyenlítéshez.
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 88bdce7697e47fc49b6ffb2fe6a8a468860f41f3
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 8f9e956f6c6a5d7a783bfc3a475ff4ca60473f17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879438"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Fizetési bizonylat formátumának beállítása projektszámlákhoz
 

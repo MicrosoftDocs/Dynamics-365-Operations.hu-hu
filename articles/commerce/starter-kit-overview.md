@@ -1,6 +1,6 @@
 ---
 title: Modultár áttekintése
-description: Ez a témakör a Microsoft Dynamics 365 Commerce modulkönyvtárról nyújt áttekintést.
+description: Ez a témakör áttekintést nyújt a modultárról Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 94ff18fc34fbfbaee434db12f0d0bc8bb7042c2f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: dbf3754136de62b72938742b7cd4cb3d56532f8b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985759"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882170"
 ---
 # <a name="module-library-overview"></a>Modultár áttekintése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce modulkönyvtárról nyújt áttekintést.
+Ez a témakör áttekintést nyújt a modultárról Microsoft Dynamics 365 Commerce.
 
 A Dynamics 365 Commerce modulkönyvtár olyan modulok gyűjteménye, amelyek egy e-kereskedelmi webhely felépítésére használhatók. A modulokban felhasználói felületi (UI) szempontok és funkcionális működéssel kapcsolatos szempontok is találhatók.
 

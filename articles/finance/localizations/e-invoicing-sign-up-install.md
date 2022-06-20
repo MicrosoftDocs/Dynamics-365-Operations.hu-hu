@@ -1,6 +1,6 @@
 ---
 title: Az elektronikus számlázási szolgáltatás regisztrációja és telepítése
-description: Ez a témakör az elektronikus számlázási szolgáltatásra való regisztrációval és telepítésvel kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk az elektronikus számlázási szolgáltatásra való regisztrációval és telepítésvel kapcsolatban tartalmaz tájékoztatást.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ab16652e4a50dd71a5d0b2b49b4dd79e327f7a8
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 57314058883e60599bc51d91a65b0daeae724bb7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865526"
 ---
 # <a name="sign-up-for-and-install-the-electronic-invoicing-service"></a>Az elektronikus számlázási szolgáltatás regisztrációja és telepítése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az elektronikus számlázási szolgáltatásra való regisztrációval és telepítésvel kapcsolatban tartalmaz tájékoztatást. A folyamat négy lépésből áll. Az 1–3. lépés kötelező, a 4. lépés pedig nem kötelező.
+Ez a cikk az elektronikus számlázási szolgáltatásra való regisztrációval és telepítésvel kapcsolatban tartalmaz tájékoztatást. A folyamat négy lépésből áll. Az 1–3. lépés kötelező, a 4. lépés pedig nem kötelező.
 
 ### <a name="step-1-sign-up-for-regulatory-configuration-service"></a>1. lépés: Regisztráció a konfigurációs szolgáltatásra
 
@@ -38,7 +38,7 @@ Az RCS regisztrációját a Szabályozó konfigurációs [szolgáltatás oldalon
 
 ### <a name="step-2-install-the-add-in-for-microservices-in-microsoft-dynamics-lifecycle-services"></a>2. lépés: A Microsoft Dynamics mikroszolgáltatások bővítményének telepítése a Lifecycle Services szolgáltatásba
 
-Az elektronikus számlázási szolgáltatás a Microsoft-adatforrásokban tárolt mikroszolgáltatások halmaza. Alapértelmezés szerint azok a vevők, Dynamics 365 Finance Dynamics 365 Supply Chain Management akik nem férnek hozzá az elektronikus számlázási szolgáltatáshoz. Telepítenie kell bővítményként a Microsoft Dynamics Lifecycle Services (LCS) bővítményeként. A bővítmény telepítésekor a pénzügyi és az ellátásilánc-kezelési környezet regisztrálva van az elektronikus számlázási szolgáltatáshoz való csatlakozásra engedélyezett alkalmazások nyilvántartásában.
+Az elektronikus számlázási szolgáltatás a Microsoft-adatforrásokban tárolt mikroszolgáltatások halmaza. Alapértelmezés szerint a Dynamics 365 Pénzügy Dynamics 365 Supply Chain Management felhasználóinak nincs hozzáférésük az elektronikus számlázási szolgáltatáshoz. Telepítenie kell bővítményként a Microsoft Dynamics Lifecycle Services (LCS) bővítményeként. A bővítmény telepítésekor a pénzügyi és az ellátásilánc-kezelési környezet regisztrálva van az elektronikus számlázási szolgáltatáshoz való csatlakozásra engedélyezett alkalmazások nyilvántartásában.
 
 Ezt a lépést a [mikroszolgáltatások bővítményének telepítése a Lifecycle Services szolgáltatásba lépésenként tudja végrehajtani](e-invoicing-install-add-in-microservices-lcs.md).
 

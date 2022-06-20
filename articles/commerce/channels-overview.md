@@ -1,6 +1,6 @@
 ---
 title: Csatornák áttekintése
-description: Ez a témakör áttekintést nyújt a csatornákról a Microsoft Dynamics 365 Commerce szolgáltatásban.
+description: Ez a cikk a csatornákról nyújt áttekintést a következőben:Microsoft Dynamics 365 Commerce
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: overview
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: cc7f00d69a6fd57efcd9b6eece56ddc0702c6935
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: af5089f0065610873360b2e2883928a43600caa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985005"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884637"
 ---
 # <a name="channels-overview"></a>Csatornák áttekintése
 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a csatornákról a Microsoft Dynamics 365 Commerce szolgáltatásban. Az egyes csatornák beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat.
+Ez a cikk a csatornákról nyújt áttekintést a következőben:Microsoft Dynamics 365 Commerce Az egyes csatornák beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat.
 
 ## <a name="types-of-channels"></a>Csatornák típusai
 

@@ -1,6 +1,6 @@
 ---
 title: Kötelezettség-, eszköz- és költségtranzakciók megtekintése
-description: Ez a témakör a lízingbe adott eszköz tranzakcióinak megtekintését ismerteti. Ezek a tranzakciók magukban foglalják a lízingkötelezettséggel kapcsolatos tranzakciókat és a feladott végrehajtási költségtranzakciókat.
+description: Ez a cikk bemutatja a bérelt eszközök tranzakcióinak megtekintését. Ezek a tranzakciók magukban foglalják a lízingkötelezettséggel kapcsolatos tranzakciókat és a feladott végrehajtási költségtranzakciókat.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: be11250a85d160aa71ab76af9cfdb0258fd7bf11
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 552b5a6044950c4dd7547a5239c1b3f7d355dbce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727482"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906413"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>Kötelezettség-, eszköz- és költségtranzakciók megtekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a lízingbe adott eszköz tranzakcióinak megtekintését ismerteti. Ezek a tranzakciók magukban foglalják a lízingkötelezettséggel kapcsolatos tranzakciókat és a feladott végrehajtási költségtranzakciókat. A kötelezettség és a használatijog-eszköz (ROU) könyv szerinti értékeit több jelentésben is felhasználják. A korrekciós értékek kiszámítására is szolgálnak.
+Ez a cikk bemutatja a bérelt eszközök tranzakcióinak megtekintését. Ezek a tranzakciók magukban foglalják a lízingkötelezettséggel kapcsolatos tranzakciókat és a feladott végrehajtási költségtranzakciókat. A kötelezettség és a használatijog-eszköz (ROU) könyv szerinti értékeit több jelentésben is felhasználják. A korrekciós értékek kiszámítására is szolgálnak.
 
 ## <a name="liability-transactions"></a>Kötelezettség tranzakciói
 

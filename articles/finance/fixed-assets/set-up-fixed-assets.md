@@ -1,6 +1,6 @@
 ---
 title: Tárgyi eszközök beállítása
-description: Ez a témakör áttekintést nyújt a Tárgyi eszközök modul beállításához.
+description: Ez a cikk áttekintést nyújt a Tárgyi eszközök modul beállításához.
 author: moaamer
 ms.date: 06/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 164f19d4b346a51d4f5d43064cb33bf0c01378dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3baa842dadddd0f763f803528d322b9561b3141e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726238"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910142"
 ---
 # <a name="set-up-fixed-assets"></a>Tárgyi eszközök beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a **Tárgyi eszközök** modul beállításához. 
+Ez a cikk a **Tárgyi eszközök modul beállításairól nyújt áttekintést**. 
 
 A Tárgyi eszközök lehetőségen belül a paraméterek az általános viselkedést szabályozzák. A tárgyieszköz-csoportok lehetővé teszik az eszközök csoportosítását, valamint alapértelmezett attribútumok meghatározását egy csoporthoz rendelt minden eszköz esetén. A tárgyieszköz-csoportokhoz a rendszer könyveket társít. A könyvek nyomon követik egy tárgyi eszköz időben változó pénzügyi értékét az értékcsökkenési profil értékcsökkenési konfigurációjának használatával.
 

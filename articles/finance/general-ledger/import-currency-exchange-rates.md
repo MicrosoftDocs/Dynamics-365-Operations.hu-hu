@@ -1,6 +1,6 @@
 ---
 title: Devizaárfolyamok importálása
-description: Ez a témakör a devizaárfolyam-szolgáltatók által közzétett árfolyam-referenciaértékekkel kapcsolatos követelményekkel kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk az árfolyam-szolgáltatók által közzétett devizaárfolyamok importálásának követelményeivel kapcsolatban tartalmaz tájékoztatást.
 author: EvgenyPopovMBS
 ms.date: 03/17/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f96622132be3c8a404f3f4e9c34f3ac5085a4fdc007ecb627d06a95d7c80932b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27f9b06646d9ce948a6b4528c38c5df9784b24b2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727324"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894935"
 ---
 # <a name="import-currency-exchange-rates"></a>Devizaárfolyamok importálása
 
 [!include [banner](../includes/banner.md)]
 
-Ha egy jogi személy devizában kapott számlákat, a devizát át kell váltani a saját pénznembe. Ez azt jelenti, hogy különböző pénznemekre nézve szükség van a legfrissebb átváltási árfolyamra. Ez a témakör áttekintést ad a devizaárfolyam-szolgáltatók, mint az Európai Központi Bank és az Orosz Központi Bank által közzétett referencia-devizaárfolyamok feldolgozásához és importálásához szükséges beállításokról.
+Ha egy jogi személy devizában kapott számlákat, a devizát át kell váltani a saját pénznembe. Ez azt jelenti, hogy különböző pénznemekre nézve szükség van a legfrissebb átváltási árfolyamra. Ez a cikk áttekintést nyújt az árfolyam-szolgáltatók által közzétett devizaárfolyamok importálásához szükséges beállításokról és feldolgozásról, mint például az Európai Központi Bank és az Oroszországi Központi Bank.
 
 Az alábbi szakaszok a devizaárfolyamok importálásának beállításához és feldolgozásához használt teljes információáramlást leírják.
 
 ## <a name="configure-an-exchange-rate-provider"></a>Árfolyam-szolgáltató konfigurálása
-Árfolyamok importálása előtt be kell állítani az árfolyamokat biztosító szolgáltatók által igényelt információkat. Használja az **Árfolyam-szolgáltatók konfigurálása** oldalt az árfolyam-szolgáltatók kiválasztásához. Egyes árfolyam-szolgáltatók a Dynamics 365 Finance-ben található bemutató adatokban is megtalálhatók. A következő táblázatban megtalálható az oldal vezérlőelemeinek leírása.
+Árfolyamok importálása előtt be kell állítani az árfolyamokat biztosító szolgáltatók által igényelt információkat. Használja az **Árfolyam-szolgáltatók konfigurálása** oldalt az árfolyam-szolgáltatók kiválasztásához. Egyes árfolyam-szolgáltatók a Dynamics 365 Pénzügy bemutató adatai között szerepelnek. A következő táblázatban megtalálható az oldal vezérlőelemeinek leírása.
 
 | Mező | Leírás                   |
 |-----------|-----------------------------------|

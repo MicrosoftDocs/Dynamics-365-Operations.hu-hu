@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e4aa910d92c2905d54d96f656e1d3d1c36388636
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 228c891e8c29cf4309856b90139d0b88805a9812
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693864"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886160"
 ---
 # <a name="process-compensation"></a>Folyamatkompenzáció
 
@@ -27,7 +27,7 @@ ms.locfileid: "8693864"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A kompenzációfeldolgozás lehetővé teszi, hogy új alapkompenzációs összegeket számoljon ki az alkalmazottai számára a részvénymódosítások, az érdemi elismerések és a teljesítmény alapján. Ez a témakör a kompenzációfeldolgozás alapvető folyamatát mutatja be a rögzített kompenzációs konstrukciók esetében az alkalmazotti teljesítmény beszámítása nélkül.
+A kompenzációfeldolgozás lehetővé teszi, hogy új alapkompenzációs összegeket számoljon ki az alkalmazottai számára a részvénymódosítások, az érdemi elismerések és a teljesítmény alapján. Ez a cikk a kompenzációfeldolgozás alapvető folyamatát mutatja be a rögzített kompenzációs konstrukciók esetében az alkalmazotti teljesítmény beszámítása nélkül.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Tervezze meg az új kompenzációs összegek és költségvetéseket
 Ha érdemen alapuló emelést szeretne adni az alkalmazottaknak, be kell állítania egy fix növekményes költségvetést minden szervezeti egységekben: **Kompenzációkezelés** > **Hivatkozások** > **Érdemen alapuló emelési** célok. (Az oldalt megnyithatja ezen a részlegen keresztül is: **Szervezet** > **Részlegek**.) Itt megadhatja, hogy bizonyos szakszervezetben vagy helyen lévő alkalmazottak eltérő növekményszázalékot kapjanak. A **Költségvetés** és a **Pénznem** mezők csak tájékoztatásul szolgálnak, és felhasználhatók a költségvetés pénznemének megjelölésére.
@@ -41,7 +41,7 @@ Az **Időpont szerinti** feldolgozási esemény dátum csak bizonyos változó k
 
 A feldolgozási esemény paramétereinek mentése után kattinthat a **Beállítás** gombra, hogy kiválassza a feldolgozásba bevenni kívánt konstrukciókat, valamint hogy milyen fix kompenzációs műveletet kell végrehajtani minden egyes konstrukcióhoz.
 
-Kattintson a **Hozzáadás** gombra a **Csomagok** lapon egy kompenzációs konstrukció feldolgozási eseményhez történő hozzáadása érdekében. A **Más emelés használata**, **Emelési tényező** és **Emelés leírása** oszlopok csak a változó kompenzációs konstrukciók használatosak, és nem tartoznak ebbe a témakörbe.
+Kattintson a **Hozzáadás** gombra a **Csomagok** lapon egy kompenzációs konstrukció feldolgozási eseményhez történő hozzáadása érdekében. A **Más emelés használata**, **Emelési tényező** és **Emelés leírása** oszlopok csak a változó kompenzációs konstrukciók használatosak, és nem tartoznak ebbe a cikkbe.
 
 Mentse a rekordot, majd kattintson a **Hozzáadás** gombra a **Műveletek** lapon a fix kompenzációs műveletek kijelölt konstrukcióhoz való hozzáadásához. Használja az **Ajánlás engedélyezése** lehetőséget, ha a művelethez más összeget szeretne megadni, mint a kiszámított előirányzott növekmény. Több kompenzációs művelet összekapcsolása érdekében az előző művelet eredményének eredménye alapján kiszámításához jelölje be az **Előző eredmény használata** lehetőséget. A fix kompenzációs műveletek olyan kompenzációs logikatípusok, amelyek leíró nevet is adhatnak. Osztály **-** és **sávtervek** esetén csak a következő típusú fix kompenzációs műveleteket lehet hozzáadni:
 

@@ -1,6 +1,6 @@
 ---
 title: Tárgyieszköz-kivezetés feladási számlája
-description: Ez a témakör bemutatja, hogy hogyan állíthat be Főkönyvi feladási számlákat eszközök elhelyezésére.
+description: Ez a cikk bemutatja, hogyan lehet beállítani a főkönyvi feladási számlákat az eszközök kipüggesztése számára.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8501bbb0fc47fb52e100d9086054db4831dae178
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1272cdb16396d24b5495f023e7b9fe3dee341507
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871333"
 ---
 # <a name="fixed-asset-disposal-posting-accounts"></a>Tárgyieszköz-kivezetés feladási számlája
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan állíthat be Főkönyvi feladási számlákat eszközök kivezetésére.
+Ez a cikk bemutatja, hogy hogyan lehet beállítani a főkönyvi feladási számlákat az eszközök kiesése esetén.
 
 Hogy beállítson tárgyi eszközök kivezetésére használt Főkönyvi feladási számlákat, válassza a **Kivezetés - értékesítés** és **Kivezetés - selejtezés** lehetőséget a **Tárgyi eszközök feladási profiljai** oldal **Főkönyvi számlák** gyorslapján.
 

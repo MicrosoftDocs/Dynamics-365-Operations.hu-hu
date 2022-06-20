@@ -1,6 +1,6 @@
 ---
 title: Sorozatszámmal szabályozott termékek visszaküldése a pénztárban
-description: Ez a témakör a Microsoft Dynamics 365 Commerce pénztári (POS) alkalmazás visszárufolyamatának részeként a sorozatszámmal rendelkező termékek ellenőrzését írja le.
+description: Ez a témakör a Microsoft Dynamics 365 Commerce pénztári alkalmazás visszárufolyamatának részeként a szerializált cikkek érvényességének érvényességét ismerteti.
 author: hhainesms
 ms.date: 06/01/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 179d66e19c7fa81d587ea920b1c71468ec070177d7e7e68e45c2b58da2f9f5af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2af301180dc2284400b887ce36357660bdd86fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716348"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860321"
 ---
 # <a name="return-serial-numbercontrolled-products-in-pos"></a>Sorozatszámmal szabályozott termékek visszaküldése a pénztárban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce pénztári (POS) alkalmazás visszárufolyamatának részeként a sorozatszámmal rendelkező termékek ellenőrzését írja le.
+Ez a témakör a Microsoft Dynamics 365 Commerce pénztári alkalmazás visszárufolyamatának részeként a szerializált cikkek érvényességének érvényességét ismerteti.
 
 > [!NOTE]
 > A Commerce 10.0.20 és újabb kiadásaiban , a POS-terminálon elérhető egy új funkció, amelynek neve **Egyesített visszaküldés-feldolgozási élmény a pénztárban**. Ahhoz, hogy a visszárurendelések feldolgozása során a sorozatszám érvényesség ellenőrzése használható legyen a pénztárban, be kell kapcsolnia ezt a funkciót. A funkció bekapcsolása által biztosított egyéb funkciókkal kapcsolatos tudnivalókat lásd [Visszatérítések létrehozása a pénztárban](POS-returns.md).

@@ -1,6 +1,6 @@
 ---
 title: Adóelőleg-bevallás Egyiptom számára
-description: Ez a témakör bemutatja, hogyan kell konfigurálni és létrehozni az adóelőleg-bevallásokat Egyiptom számára.
+description: Ez a cikk bemutatja, hogy hogyan kell konfigurálni és létrehozni az adóelőleg-bevallásokat Egyiptomi számára.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403891"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907687"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Adóelőleg-bevallás Egyiptom számára (EG-00005)
 
@@ -26,11 +26,11 @@ ms.locfileid: "7403891"
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Áttekintés
-Ez a témakör bemutatja az adóelőleg-bevallás beállítását és létrehozását, valamint az egyiptomi jogi személyek adóelőleg-bevallásainak 41-es és 11-es űrlapjait. 
+Ez a cikk bemutatja az adóelőleg-bevallás beállítását és előállítását, valamint az egyiptomi jogi személyek 41-es és 11-es űrlapja 41-es és 11-es adóelőleg-bevallásokat. 
 
 Minden egyiptomi entitásnak elő kell készítenie a 41-es űrlapot, amely összegzi a helyi szállítóktól és szolgáltatóktól visszatartott adókat. A 41-es űrlapon kívül a 11-es űrlapot is létre kell hozni, amelyen a külföldi szolgáltatóktól származó visszatartott adót kell részletezni. 
 
-Az **Adóelőleg-bevallás** a Dynamics 365 Finance rendszerben a következő jelentéseket tartalmazza:
+**A** Dynamics 365 Pénzügy adóelőleg-bevallása a következő jelentéseket tartalmazza:
 
 - Bevallás űrlapja, szám: 41
 - Bevallás űrlapja, szám: 11
@@ -58,7 +58,7 @@ További információért azzal kapcsolatosan, hogyan importálhat le Elektronik
 
 Az Egyiptomra vonatkozó WHT bevallás űrlapjainak végrehajtása az elektronikus jelentéskészítési (ER) konfigurációkon alapul. A konfigurálható jelentésekkel kapcsolatos funkciókról és fogalmakról további információkat itt talál: [Elektronikus jelentéskészítés](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-A termelési és a felhasználói elfogadási tesztelési (UAT) környezetekkel kapcsolatban kövesse [Az elektronikus jelentéskészítési konfigurációk letöltése a Lifecycle Services rendszerből](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) témakör utasításait.
+A termelési és felhasználói elfogadási tesztelési (UAT) [környezetekben kövesse az elektronikus jelentéskonfigurációk letöltése a Lifecycle Services szolgáltatásból útmutatót](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 Az adóelőleg-bevallás egyiptomi jogi személynél való létrehozásához fel kell töltenie a következő konfigurációkat:
 

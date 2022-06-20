@@ -1,6 +1,6 @@
 ---
 title: Összetételi intervallum funkció
-description: Ez a témakör olyan információkat tartalmaz, amelyek segítségével választhat a havi, negyedéves, féléves és éves összetételi intervallumok közül.
+description: Ez a cikk segít választani a havi, negyedéves, féléves és éves összetételi időszakok közül.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d1b8af3d5f8f6a6812fe309f57f682d0c5023d00
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 2de5f1e9d52de41388298031a03fbc487a1b1cde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710442"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886414"
 ---
 # <a name="compounding-interval-functionality"></a>Összetételi intervallum funkció
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör olyan információkat tartalmaz, amelyek segítségével választhat a havi, negyedéves, féléves és éves összetételi intervallumok közül. Az összetételi intervallum funkció az éves lízingfizetési ütemezésben az összetett időszakok számának meghatározására szolgál. A témakörben szereplő négy példa mindegyike bemutatja, hogyan fog kinézni a lízingfizetési ütemezés egy másik intervallumban.
+Ez a cikk segít választani a havi, negyedéves, féléves és éves összetételi időszakok közül. Az összetételi intervallum funkció az éves lízingfizetési ütemezésben az összetett időszakok számának meghatározására szolgál. A cikk négy példa közül mindegyik azt mutatja be, hogy hogyan fog kinézni a bérlet fizetési ütemezése egy másik időszakra.
 
 Nem választhat olyan összetételi intervallumot, amely ritkábban történik, mint a lízingfizetés gyakorisága. Például egy negyedéves összetételi intervallum nem használható havi fizetési gyakorisággal, és az éves összetételi intervallum nem használható féléves fizetési gyakorisággal. Ha megpróbál olyan összetételi intervallumot választani, amely ritkábban történik, mint a lízingfizetés gyakorisága, akkor hibaüzenetet fog kapni.
 
 > [!NOTE]
-> Ebben a témakörben mind a négy példában az összetételi intervallum megegyezik a fizetési gyakorisággal.
+> Ebben a példában mind a négy példában az összetételi intervallum megegyezik a fizetési gyakorisággal.
 
 ## <a name="examples"></a>Példák
 

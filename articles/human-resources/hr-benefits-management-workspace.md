@@ -1,6 +1,6 @@
 ---
 title: Juttatáskezelési munkaterület
-description: Ez a témakör a Dynamics 365 Human Resources Juttatáskezelési munkaterületét részletezi.
+description: Ez a témakör ismerteti a juttatáskezelés munkaterületét a következőben:Dynamics 365 Human Resources
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39e7f606ae3c5c0a66764cc3235837380725241f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7975d1723e07ae390961d4f44e0f34f2ff2df44d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902918"
 ---
 # <a name="benefits-management-workspace"></a>Juttatáskezelési munkaterület
 
@@ -30,7 +30,7 @@ ms.locfileid: "8690027"
 
 [!include [preview feature](./includes/preview-feature.md)]
 
-Ez a témakör a Dynamics 365 Human Resources **Juttatáskezelési munkaterületét** részletezi.
+Ez a témakör ismerteti a juttatáskezelés **munkaterületét** a következőben:Dynamics 365 Human Resources
 
 > [!NOTE]
 > A **Juttatáskezelés** munkaterület megtekintéséhez először engedélyeznie kell a Funkciókezelés **(Előzetes verzió) Juttatáskezelési munkaterület** funkcióját. Az előzetes funkciók aktiválásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](hr-admin-manage-features.md) oldalt.<br><br>![Juttatáskezelési munkaterület engedélyezése.](./media/hr-benefits-management-workspace-enable.png)
@@ -96,7 +96,7 @@ Ha egy másik juttatási időszakot is meg kell tekinteni, válassza ki az **Id�
 A művelet elemeit csempe vagy lap kiválasztásával lehet megtekinteni. Ha kiválaszt egy lapot, a munkaterületi oldalon megtekintheti és kiválaszthatja a dolgozókat.
 A **Nyitott belépés** lap fontos mérőszámokat biztosít a nyitott beléptetési folyamathoz. 
 
-A nyitott tagságra vonatkozó adatok a **Beléptetés kezdő dátuma** előtt 30 nappal lesznek látható. Ez az **Időszakok** beállításban van meghatározva a **Juttatáskezelés** > **Hivatkozások** > **Időszakok** menüben a **Beléptetés kezdődátuma** mezőben.  A beállítás módosítása érdekében váltsa át az Emberi erőforrások megosztott paraméterei:Benefits managementOpen enrollment options and update the Number of field.To change this setting, go to **Human Resources shared parametersBenefits** > **managementOpen** > **enrollment** **options and update the Number of** field.  
+A nyitott tagságra vonatkozó adatok a **Beléptetés kezdő dátuma** előtt 30 nappal lesznek látható. Ez az **Időszakok** beállításban van meghatározva a **Juttatáskezelés** > **Hivatkozások** > **Időszakok** menüben a **Beléptetés kezdődátuma** mezőben.  Ennek a beállításnak a beállítását az **Emberi** > **erőforrások megosztott paraméterei – Juttatások kezelése** > **– Nyitott tagsági** **beállításoknál módosíthatja, és frissítheti a Mezőszám** mezőt.  
 
 A Következő információk érhetők el a **Beléptetés megnyitása** lapon:
  - Azok az alkalmazottak, akik még nem indították el a beléptetés megnyitása folyamatot

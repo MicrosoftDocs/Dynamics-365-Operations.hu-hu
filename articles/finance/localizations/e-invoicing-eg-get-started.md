@@ -1,6 +1,6 @@
 ---
 title: Elektronikus számlázás Egyiptomihoz
-description: Ez a témakör az Microsoft Dynamics Egyiptomi elektronikus számlázással kapcsolatban nyújt segítséget a 365-ös pénzügyi és az elektronikus számlázásban Dynamics 365 Supply Chain Management.
+description: Ez a cikk az Microsoft Dynamics Egyiptomi elektronikus számlázással kapcsolatban nyújt segítséget a 365-ös pénzügyi és az elektronikus számlázásban Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: c2a46ef938c5dee62c0d0acd1648584df344c81a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661722"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904412"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Elektronikus számlázás Egyiptomihoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az egyiptomi Elektronikus számlázással kapcsolatos első lépéseket. Ez a varázsló végigvezeti a konfigurációs szolgáltatáson (RCS) országfüggő konfigurációs lépéseken. Ezek a lépések kiegészítik az [Elektronikus számlázás beállítása modulban leírt lépéseket](e-invoicing-set-up-overview.md).
+Ez a cikk az Egyiptomi elektronikus számlázással kapcsolatban tartalmaz tájékoztatást. Ez a varázsló végigvezeti a konfigurációs szolgáltatáson (RCS) országfüggő konfigurációs lépéseken. Ezek a lépések kiegészítik az [Elektronikus számlázás beállítása modulban leírt lépéseket](e-invoicing-set-up-overview.md).
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Mielőtt elkezdené a témakörben található eljárásokat, teljesítsen a következő előfeltételeket:
+Mielőtt elkezdené a ebben a cikkben olvasható eljárásokat, teljesítsen a következő előfeltételeket:
 
 - Az Elektronikus számlázás témakörben [leírt módon ismerkedjen meg az elektronikus számlázással](e-invoicing-service-overview.md).
 - Regisztráció RCS-re, és az elektronikus számlázás beállítása. További információért tekintse át az alábbi témaköröket:

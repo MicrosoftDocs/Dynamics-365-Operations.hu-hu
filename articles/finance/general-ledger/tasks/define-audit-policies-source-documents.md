@@ -1,6 +1,6 @@
 ---
-title: Naplózási házirendek meghatározása a forrásbizonylatok számára
-description: Ez a témakör bemutatja, hogyan állíthatók be és működtethetők könyvvizsgálati irányelvszabályok.
+title: Könyvvizsgálati irányelvek meghatározása forrásbizonylatok számára
+description: Ez a témakör bemutatja a könyvvizsgálati irányelvszabályok beállítását és futtatását.
 author: panolte
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8698dd2c14321498d23efe1d01be274c56d5721
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: b8aa106cd5a5596f6b9a6663390e03ebc3f91a7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872528"
 ---
-# <a name="define-audit-policies-for-source-documents"></a>Naplózási házirendek meghatározása a forrásbizonylatok számára
+# <a name="define-audit-policies-for-source-documents"></a>Könyvvizsgálati irányelvek meghatározása forrásbizonylatok számára
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan állíthatók be és működtethetők könyvvizsgálati irányelvszabályok. A példa költségjelentéseket használ szállodai költségtípussal. Ez az eljárás az USMF bemutatócéget használja. A könyvvizsgáló szerepkör tartalmazza a megfelelő engedélyeket ezen műveletek elvégzése érdekében.
+Ez a témakör bemutatja a könyvvizsgálati irányelvszabályok beállítását és futtatását. A példa költségjelentéseket használ szállodai költségtípussal. Ez az eljárás az USMF bemutatócéget használja. A könyvvizsgáló szerepkör tartalmazza a megfelelő engedélyeket ezen műveletek elvégzése érdekében.
 
 1. A navigációs ablakban nyissa meg **Modulokat > Könyvvizsgálati munkaterület > Beállítás > Irányelv-szabály típusa** lehetőséget.
 2. Válassza az **Új** lehetőséget.

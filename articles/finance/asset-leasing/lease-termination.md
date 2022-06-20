@@ -1,6 +1,6 @@
 ---
 title: Javaslat lízing felmondására
-description: Ez a témakör bemutatja, hogyan történik egy lízing megszüntetésének javasolása.
+description: Ez a cikk bemutatja, hogyan lehet bérletet javasolni a felmondáshoz.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2f6990177251418bece8c99a0f9befa333d6549f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: a5939f165943ff76ba453fb49d8c0c376c8ce4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720502"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879653"
 ---
 # <a name="propose-a-lease-for-termination"></a>Lízing megszüntetésének javasolása
 
 [!include [banner](../includes/banner.md)]
 
-Ha egy lízinget korábban szüntetnek meg, az Eszközlízing rögzíthet egy felmondási naplóbejegyzést a lízingkötelezettség, a használatijog-eszköz és a halmozott értékcsökkenés leírásának, valamint nyereség vagy veszteség könyvelése érdekében. A korai megszüntetési folyamat lezárja a lízinget és a hozzá tartozó lízingkönyveket. Nem szünteti meg az egyes lízingkönyveket. Ez a témakör ismerteti azokat a funkciókat, amelyek segítségével javasolhatja egy lízing megszüntetését, és feldolgozhatja a lízing megszüntetésével kapcsolatos naplóbejegyzést.
+Ha egy lízinget korábban szüntetnek meg, az Eszközlízing rögzíthet egy felmondási naplóbejegyzést a lízingkötelezettség, a használatijog-eszköz és a halmozott értékcsökkenés leírásának, valamint nyereség vagy veszteség könyvelése érdekében. A korai megszüntetési folyamat lezárja a lízinget és a hozzá tartozó lízingkönyveket. Nem szünteti meg az egyes lízingkönyveket. Ez a témakör ismerteti azokat a funkciókat, amelyek segítségével javasolhatja a felmondási bérletet, és feldolgozhatja a bérlet-felmondási napló bejegyzését.
 
 Ha egy lízing nem minősül halasztott bérleti díjkezelési lízingnek, és nincs tárgyi eszközhöz társítva, az Eszközlízing a következő megszüntetési naplóbejegyzést állítja elő.
 
@@ -121,7 +121,7 @@ Az alábbi táblázatok a példában használt lízing **Általános** és **Fiz
 
 ### <a name="steps-for-terminating-the-lease"></a>A lízing megszüntetésének lépései
 
-1. Miután létrehozta a lízinget a témakörben korábban leírtak szerint, lépjen a lízingkönyvre, és erősítse meg a fizetési ütemezést. Ezután adja fel a kezdeti megjelenítési naplóbejegyzést. Az eredeti ROU-eszköz 71,235.81 dollár, a lízingkötelezettségnek pedig 70.235,81 dollárnak kell lennie. Ebben a példában a lízinget a Könyvelési standardok kodifikációs témaköre 842 (ASC 842) szerinti operatív lízingnek minősítették.
+1. Miután a cikket már leírta, hozza létre a bérleti könyvet, és erősítse meg a fizetési ütemezést. Ezután adja fel a kezdeti megjelenítési naplóbejegyzést. Az eredeti ROU-eszköz 71,235.81 dollár, a lízingkötelezettségnek pedig 70.235,81 dollárnak kell lennie. Ebben a példában a lízinget a Könyvelési standardok kodifikációs témaköre 842 (ASC 842) szerinti operatív lízingnek minősítették.
 2. Futtassa a kötegnapló-folyamatot háromszor, hogy szimulálja a három év áthaladását a lízingfizetések, a kamatköltségek és az értékcsökkenési költségek esetében.
 3. Miután befejezte mindhárom kötegfeladat futtatását, lépjen vissza a lízingkönyvbe, és nyissa meg a Kötelezettség- és Eszköztranzakciók tábláit a ROU-eszköz és a lízingkötelezettség aktuális könyv szerinti értékének megtekintéséhez. Három év elteltével a kötelezettség értékének körülbelül -53.893,00 dollárnak kell lennie, és az eszköz értékének körülbelül 54.593,00 dollárnak kell lennie.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ed31dd96b0115610cfb74aed69f1acc1055bfe56
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1248799f92dc6cbce8528a53cc8a3012d2a67b3c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903392"
 ---
 # <a name="create-billing-schedules"></a>Számlázási ütemezések létrehozása
 
@@ -83,7 +83,7 @@ A következő lépések szerint távolíthatja el a kívánt elemet a számláz�
 2. Válassza ki **a törölni kívánt** sort a Számlázási ütemezés sorai gyorsgombra, majd válassza az Eltávolítás **lehetőséget**.
 3. Válassza a **Mentés** lehetőséget.
 
-A témakör hátralévő része a **Számlázási** ütemezés sorai gyorsabban a sorokhoz elérhető műveleteket és részleteket írja le.
+A cikk többi része a **Számlázási** ütemezés sorai gyorsabban a sorokhoz elérhető műveleteket és részleteket írja le.
 
 ## <a name="billing-schedule-line-actions"></a>Számlázási ütemezés sorműveletei
 

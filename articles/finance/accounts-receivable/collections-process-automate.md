@@ -1,6 +1,6 @@
 ---
 title: Beszedési folyamat automatizálása
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani azokat a beszedési folyamat-stratégiákat, amelyekkel automatikusan azonosíthatja a vevői számlákat, amelyekhez egy e-mail emlékeztető, a beszedési tevékenység vagy a vevőnek küldendő fizetési felszólítás szükséges.
+description: Ez a cikk bemutatja a beszedési folyamat stratégiáit, amelyek automatikusan azonosítják azokat a vevői számlákat, amelyekhez e-mailben küldött emlékeztető, beszedési tevékenység vagy fizetési felszólítás szükséges.
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 9ec749db197b4d04ee2e99ac7a16f4f2120c6707
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486869"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946178"
 ---
 # <a name="collections-process-automation"></a>Beszedési folyamat automatizálása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani azokat a beszedési folyamat-stratégiákat, amelyekkel automatikusan azonosíthatja a vevői számlákat, amelyekhez egy e-mail emlékeztető, a beszedési tevékenység (például a telefonhívás) vagy a vevőnek küldendő fizetési felszólítás szükséges. 
+Ez a cikk bemutatja a beszedési folyamat stratégiáit, amelyek automatikusan azonosítják azokat a vevői számlákat, amelyekhez e-mailben kell emlékeztetőt, beszedési tevékenységet (például telefonhívást) vagy fizetési felszólítást küldeni a vevőnek. 
 
 A vállalatok gyakran jelentős időt töltenek az éves egyenlegjelentések, a vevői számlák és a nyitott számlák kutatására, hogy megtudják, hogy mely vevőkkel kell felvenni a kapcsolatot nyitott számlákkal vagy számlával kapcsolatos egyenleggel kapcsolatban. Ez a kutatás időt vesz igénybe a beszedési ügynököktől, hogy kommunikáljanak a vevőkkel, beszedjék a lejárt tartozásokat, vagy megoldják a számlákkal kapcsolatos vitákat. A beszedési folyamatok automatizálásával stratégián alapuló megközelítést állíthat be a beszedési folyamathoz. Ily módon a beszedési tevékenységeket következetesen alkalmazhatja a személyre szabott e-mailes emlékeztetőkkel, illetve a fizetési felszólítások küldésének programozott folyamatával. 
 

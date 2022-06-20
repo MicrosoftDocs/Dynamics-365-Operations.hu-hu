@@ -1,6 +1,6 @@
 ---
-title: Nyugtaszámok visszaállítása
-description: Ez a témakör azt mutatja be, hogyan lehet alaphelyzetbe állítani a különböző műveletekhez használt nyugtaszámokat (például a pénzügyi évet vagy naptári évet).
+title: Nyugta számainak visszaállítása
+description: Ez a témakör azt írja le, hogyan lehet alaphelyzetbe állítani a kívánt dátumon (például a pénzügyi év vagy a naptári év) különböző műveletekhez használt nyugtaszámokat.
 author: ShalabhjainMSFT
 ms.date: 10/06/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 855c39f15db6de8fac1f0cd4667eec485c70542b9aebde0d7085e2703f4609bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5dc9f3f977e04866562781d9768141a4a96166f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858856"
 ---
 # <a name="reset-receipt-numbers"></a>Nyugta számainak visszaállítása 
 
@@ -30,7 +30,7 @@ ms.locfileid: "6733869"
 > [!NOTE]
 > A funkció használata előtt ki kell választania a **Független sorozat** tulajdonságot a működési profil összes nyugtatípusához. Ezenkívül az eszköz rendszeridőzónája, ahol a pénztár használatban van, meg kell egyezzen a megfelelő üzlet időzónájával. E korlátozások miatt nem ajánlott ezt a szolgáltatást a termelésben használni. Mindeközben a jövőbeli kiadásokban igyekszünk javítani ezeket a problémákat. 
 
-A kiskereskedők az üzletben különböző műveletekhez, például készpénz- és szállítási tranzakciókat, visszáru-tranzakciókat, vevői rendeléseket, árajánlatokat és kifizetéseket generálnak. Bár a kiskereskedők saját nyugtaformátumokat határoznak meg, egyes országokban vagy régiókban vannak olyan rendeletek, amelyek megszabják a nyugta formátumának korlátozását. Például ezek a rendeletek korlátozhatják a nyugtán szereplő karakterek számát, megkövetelhetik az egymást követő nyugták számát, korlátozhatnak néhány speciális karaktert, illetve előírhatják, hogy a nyugta számait az év elejére kell állítani. A Microsoft Dynamics 365 Commerce nagyon rugalmasan kezeli a nyugtaszámok feldolgozását, így segít a kiskereskedőknek megfelelni a szabályozási követelményeknek. Ez a témakör azt mutatja be, hogyan kell használni a funkciókat a nyugtaszámok visszaállításához.
+A kiskereskedők az üzletben különböző műveletekhez, például készpénz- és szállítási tranzakciókat, visszáru-tranzakciókat, vevői rendeléseket, árajánlatokat és kifizetéseket generálnak. Bár a kiskereskedők saját nyugtaformátumokat határoznak meg, egyes országokban vagy régiókban vannak olyan rendeletek, amelyek megszabják a nyugta formátumának korlátozását. Például ezek a rendeletek korlátozhatják a nyugtán szereplő karakterek számát, megkövetelhetik az egymást követő nyugták számát, korlátozhatnak néhány speciális karaktert, illetve előírhatják, hogy a nyugta számait az év elejére kell állítani. A Microsoft Dynamics 365 Commerce nagyon rugalmasan kezeli a nyugtaszámok feldolgozását, így segít a kiskereskedőknek megfelelni a szabályozási követelményeknek. Ez a cikk bemutatja, hogy hogyan lehet a nyugtaszámok alaphelyzetbe állítására használni a funkciókat.
 
 A Commerce-ben a nyugta formátuma alfanumerikus lehet. A statikus tartalmat és a dinamikus tartalmat egyszerre is be lehet állítani. A statikus tartalom alfabetikus karaktereket, számokat és speciális karaktereket tartalmaz. A dinamikus tartalom egy vagy több olyan karaktert tartalmaz, amely olyan információkat jelenít meg, mint például az üzlet száma, a terminál száma, a dátum, a hónap, az év és a számsorozat, amely automatikusan megnő. A formátumokat a funkció profiljának **Nyugtaszámozási** szakasza határozza meg. A következő táblázat leírja a dinamikus tartalmat megjelenítő karaktereket.
 

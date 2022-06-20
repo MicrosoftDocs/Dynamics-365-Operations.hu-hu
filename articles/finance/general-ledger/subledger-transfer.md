@@ -1,6 +1,6 @@
 ---
 title: Részfőkönyv átvitele a főkönyvbe
-description: Ez a témakör azt mutatja be, hogy a milyen funkciók kapcsolódnak a részfőkönyv főkönyvbe történő átmozgatási folyamatához kapcsolódóan.
+description: Ez a témakör a főkönyv a számba vevő átviteli folyamatához kapcsolódó funkciókat ismerteti.
 author: RyanCCarlson2
 ms.date: 12/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 70a34fa1f4ee540d89ec05816e4065fb3e1df9ef
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6d9b40409089e2050dc28c21040069107b766aa0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727314"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871246"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Részfőkönyv átvitele a főkönyvbe
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azokat a képességeket mutatja be, amelyek a főkönyvi naplóbejegyzések kötegek átviteléhez szükséges szabályokhoz kapcsolódnak.
+Ez a témakör az adagotra vonatkozó naplóbejegyzések kötegeinek átvitelére vonatkozó szabályokkal kapcsolatos funkciókat ismerteti.
 
 A 8.1 verzióban a módosítások lehetővé teszik azon szabályok átmozgatását, amelyek felváltották a **Szinkron** opciót. A további tudnivalókat [lásd a Pénzügyi és műveletek eltávolítva vagy elavult funkcióinál](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
 

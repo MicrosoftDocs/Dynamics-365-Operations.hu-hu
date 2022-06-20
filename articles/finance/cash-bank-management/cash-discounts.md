@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37698133a959792338abcc2abd75b6fa654177f6
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b684cf16b172432fc3bdb485be98a5c3476c8ed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846955"
 ---
 # <a name="cash-discounts"></a>Készpénzfizetési engedmények
 
@@ -30,7 +30,7 @@ A készpénzfizetési engedmények be vannak állítva és a meg vannak osztva a
 
 ## <a name="cash-discounts"></a>Készpénzfizetési engedmények
 
-A vevők vagy szállítók készpénzfizetési engedményei a készpénzfizetési engedmények lapján is létrehozhatók. Azt is meghatározhatja a Következő engedmény kód mező használatával, hogy követik egymást az előző készpénzfizetési engedmény dátum lejárataként. További tájékoztatás, lásd "Példa: készpénzfizetési engedmények sorozata" később a témakörben. Ha a számla vagy jóváírási tranzakció (jóváírás vagy kifizetés) vagy mindekettő a jogi személy könyvelési pénznemében eltérő pénznemben vannak megadva, a készpénzfizetési engedmény számítása a kifizetések vagy jóváírások napja alapján az érvényes árfolyamának felhasználásával történik. Ha a számlák és jóváírási bizonylat különböző jogi személyek esetében vannak megadva, és ha a jogi személyek könyvelési pénznemei különböznek, az átváltási árfolyam a számla jogi személyétől származnak, mint a hitel dokumentum dátuma. További információkat, lásd "Példa: készpénzfizetési engedmények átváltási díjai" később a témakörben.
+A vevők vagy szállítók készpénzfizetési engedményei a készpénzfizetési engedmények lapján is létrehozhatók. Azt is meghatározhatja a Következő engedmény kód mező használatával, hogy követik egymást az előző készpénzfizetési engedmény dátum lejárataként. További tudnivalókat a cikk későbbi, "Példa: Készpénzfizetési engedmények sorozata" tartalmaz. Ha a számla vagy jóváírási tranzakció (jóváírás vagy kifizetés) vagy mindekettő a jogi személy könyvelési pénznemében eltérő pénznemben vannak megadva, a készpénzfizetési engedmény számítása a kifizetések vagy jóváírások napja alapján az érvényes árfolyamának felhasználásával történik. Ha a számlák és jóváírási bizonylat különböző jogi személyek esetében vannak megadva, és ha a jogi személyek könyvelési pénznemei különböznek, az átváltási árfolyam a számla jogi személyétől származnak, mint a hitel dokumentum dátuma. További tudnivalókat a cikk későbbi, "Példa: készpénzfizetési engedmények árfolyama" tartalmaz.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Fő számla készpénzfizetési engedmény alapértelmezési sorrendje
 

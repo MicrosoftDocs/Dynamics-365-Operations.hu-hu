@@ -1,6 +1,6 @@
 ---
 title: Év végi zárás Magyarország és Csehország esetén
-description: Ez a témakör információkat nyújt az év végi zárási folyamatról és a nyitó tranzakciókról Magyarország és Csehország esetén.
+description: Ez a cikk a Cseh Köztársaság és Magyarország év végi zárási folyamatának és nyitótranzakcióinak a lépésekkel kapcsolatban tartalmaz tájékoztatást.
 author: EvgenyPopovMBS
 ms.date: 05/18/2018
 ms.topic: article
@@ -13,17 +13,17 @@ ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 062bbf03e802657f5e98174a6bd3410000d34b35011918f590ccf5d0ca3e4ec4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cdd1c6021ad553b96d9429149ef42a5a81b4e0c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752901"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861277"
 ---
 # <a name="year-end-close-for-czech-republic-and-hungary"></a>Év végi zárás Magyarország és Csehország esetén
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör információkat nyújt az év végi zárási folyamatról és a nyitó tranzakciókról Magyarország és Csehország esetén. Ez a funkció lehetővé teszi, hogy a felhasználók beállítsák az év végi zárási folyamatot a következő módokon:
+Ez a cikk a Cseh Köztársaság és Magyarország év végi zárási folyamatának és nyitótranzakcióinak a lépésekkel kapcsolatban tartalmaz tájékoztatást. Ez a funkció lehetővé teszi, hogy a felhasználók beállítsák az év végi zárási folyamatot a következő módokon:
 
 -    Feladás különböző számlákra egyenlegszámlák megnyitásához és bezárásához.
 -    Év végi nyereség és veszteség eredmények átutalása az újonnan megnyitott évre egy másik számlára.

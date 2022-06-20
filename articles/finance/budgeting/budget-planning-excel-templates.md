@@ -1,6 +1,6 @@
 ---
 title: Költségvetés-tervezési sablonok az Excel programhoz
-description: Ez a témakör ismerteti, hogyan hozhatók létre költségvetési tervekhez használt Microsoft Excel-sablonok.
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni Microsoft Excel a költségvetési tervekkel használható sablonokat.
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872499"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Költségvetés-tervezési sablonok az Excel programhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti, hogyan hozhatók létre költségvetési tervekhez használt Microsoft Excel-sablonok.
+Ez a témakör azt ismerteti, hogyan lehet létrehozni Microsoft Excel a költségvetési tervekkel használható sablonokat.
 
-Ez a témakör azon Excel-sablonok létrehozásának módját mutatja be, amelyek költségvetési tervekhez használhatók a normál bemutató adatkészlet és rendszergazdai felhasználói bejelentkezés használatával. Költségvetés-tervezéssel kapcsolatos további tudnivalók: [A költségvetés-tervezés áttekintése.](budget-planning-overview-configuration.md) A modul alapvető konfigurációjának és használati elveinek megismeréséhez végigcsinálhatja a [Költségvetés-tervezés](budget-plan.md) oktatóprogramot.
+Ez a cikk bemutatja, hogyan lehet létrehozni a költségvetési tervekhez használt Excel-sablonokat a normál bemutató adathalmaz és az Admin felhasználói bejelentkezés segítségével. Költségvetés-tervezéssel kapcsolatos további tudnivalók: [A költségvetés-tervezés áttekintése.](budget-planning-overview-configuration.md) A modul alapvető konfigurációjának és használati elveinek megismeréséhez végigcsinálhatja a [Költségvetés-tervezés](budget-plan.md) oktatóprogramot.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Munkalap létrehozása költségvetési terv dokumentumelrendezésben
 
-A költségvetésiterv-dokumentumok egy vagy több elrendezés használatával tekinthetők meg és szerkeszthetők. Minden elrendezéshez tartozhat egy kapcsolódó költségvetésiterv-dokumentumsablon, amely a költségvetési terv adatainak Excel-munkalapon történő megtekintésére és szerkesztésére szolgál., Ebben a témakörben a költségvetési terv dokumentumsablonját egy meglévő elrendezéskonfiguráció segítségével hozzuk létre. 
+A költségvetésiterv-dokumentumok egy vagy több elrendezés használatával tekinthetők meg és szerkeszthetők. Minden elrendezéshez tartozhat egy kapcsolódó költségvetésiterv-dokumentumsablon, amely a költségvetési terv adatainak Excel-munkalapon történő megtekintésére és szerkesztésére szolgál., Ebben a cikkben egy költségvetésiterv-dokumentumsablont egy meglévő elrendezéskonfigurációval hoz létre a rendszer. 
 
 1. Nyissa meg a **Költségvetési tervek listája** (**Költségvetés készítése** &gt; **Költségvetési tervek**) elemet. 
 2. Új költségvetésiterv-dokumentum létrehozásához kattintson az **Új** gombra. 

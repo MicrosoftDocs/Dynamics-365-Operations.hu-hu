@@ -1,6 +1,6 @@
 ---
 title: URl megnyitása a pénztárban
-description: Ez a témakör áttekintést nyújt a Dynamics 365 Commerce termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
+description: Ez a témakör áttekintést nyújt a termék- és vevőkeresési funkciók javításairól Dynamics 365 Commerce.
 author: AamirAllaq
 ms.date: 01/28/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 529908df866c71ea84d90bbb5d46b23311ed74d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853962"
 ---
-# <a name="open-url-in-pos"></a>URL megnyitása a pénztárban
+# <a name="open-url-in-pos"></a>URl megnyitása a pénztárban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör leírja, hogyan konfigurálható egy gomb a Dynamics 365 Commerce pénztárban (POS) egy URL megnyitására. Ez a funkció nem igényli a kód testreszabását, és nem-fejlesztői szereppel rendelkező személy által konfigurálható. 
+Ez a témakör azt írja le, hogyan lehet konfigurálni egy GOMBOT a Dynamics 365 Commerce pénztárnál egy URL megnyitásához. Ez a funkció nem igényli a kód testreszabását, és nem-fejlesztői szereppel rendelkező személy által konfigurálható. 
 
 Ez a funkció lehetővé teszi a pénztárban található gombok konfigurálását a gombrácstervező segítségével egy URL megnyitására. Jelenleg ez az alábbi konfigurációkban támogatott:
 

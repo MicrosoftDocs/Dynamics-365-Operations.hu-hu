@@ -1,6 +1,6 @@
 ---
 title: Adószámítási adatmodell
-description: Ez a témakör információt nyújt az adózási adatmodelről, valamint arról, hogy az egyes adatmodellek mezőértékeit hogyan határozza meg az adószámítási tranzakciók kontextusa.
+description: Ez a cikk az adózási adatmodellel, valamint az egyes adatmodellek mezőértékének az adószámítási tranzakciók kontextusán alapul.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694256"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859695"
 ---
 # <a name="tax-calculation-data-model"></a>Adószámítási adatmodell
 
-Ez a témakör információt nyújt arról, hogy az adózási adatmodell mezőértékeit hogyan határozzák meg az adószámítási tranzakciókban.
+Ez a cikk arról nyújt tájékoztatást, hogyan határozzák meg az adóadat-modell mezőértékét az adószámítási tranzakciókban.
 
 Az *adózási adatmodell* az adószámításhoz szükséges mezőkből áll. A Microsoft biztosítja az adószámítási *adatmodellt*, amely tartalmazza a Pénzügyi és műveletalkalmazások tranzakciós dokumentumainak fejlécmezőit és sormezőit. Az adószámítási adatmodellben definiált mezők az alkalmazhatósági szabályok tábláinak rendelkezésre álló oszlopai az adószámítási funkció konfigurációjában.
 
@@ -99,7 +99,7 @@ A jobb és második adatmodellek a tranzakció fejlécében szereplő mezőkkén
 | Szállítás címzettjének megyéje/állama          | <ul><li>**Értékesítési rendelés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Állam</li></ol></li><li>**Beszerzési rendelés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Állam</li></ol></li><li>**Átmozgatási rendelések – Szállítás**<ol><li>Fejléc &gt; Címzett raktár &gt; Elsődleges cím &gt; Állam</li><li>Fejléc &gt; Címzett telephely &gt; Elsődleges cím &gt; Állam</li></ol></li><li>**Átmozgatási rendelés – Bevételezés**<ol><li>Fejléc &gt; Címzett raktár &gt; Elsődleges cím &gt; Állam</li><li>Fejléc &gt; Címzett telephely &gt; Elsődleges cím &gt; Állam</li></ol></li><li>**Ajánlatkérés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Állam</li></ol></li><li>**Értékesítési ajánlat:**<ol><li>Fejléc &gt; Szállítási cím &gt; Állam</li></ol></li><li>**Szabadszöveges számla:**<ol><li>Fejléc &gt; Vevői számla &gt; Alapértelmezett szállítási cím &gt; Állam</li><li>Fejléc &gt; Vevői számla &gt; Elsődleges cím &gt; Állam</li></ol></li><li>**Napló (vevő):**<ol><li>Vevői számla alapértelmezett &gt; szállítási címének állama &gt;</li><li>Vevői számla Elsődleges &gt; címének állama &gt;</li></ol></li><li>**Napló (szállító):**<ol><li>Jogi személy &gt; Alapértelmezett szállítási cím &gt; Állam</li><li>Jogi személy &gt; Elsődleges cím &gt; Állam</li></ol></li></ul> |
 | Szállítás címzettjének irányítószáma                 | <ul><li>**Értékesítési rendelés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Irányítószám</li></ol></li><li>**Beszerzési rendelés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Irányítószám</li></ol></li><li>**Átmozgatási rendelések – Szállítás**<ol><li>Fejléc &gt; Címzett raktár &gt; Elsődleges cím &gt; Irányítószám</li><li>Fejléc &gt; Címzett telephely &gt; Elsődleges cím &gt; Irányítószám</li></ol></li><li>**Átmozgatási rendelés – Bevételezés**<ol><li>Fejléc &gt; Címzett raktár &gt; Elsődleges cím &gt; Irányítószám</li><li>Fejléc &gt; Címzett telephely &gt; Elsődleges cím &gt; Irányítószám</li></ol></li><li>**Ajánlatkérés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Irányítószám</li></ol></li><li>**Értékesítési ajánlat:**<ol><li>Fejléc &gt; Szállítási cím &gt; Irányítószám</li></ol></li><li>**Szabadszöveges számla:**<ol><li>Fejléc &gt; Vevői számla &gt; Alapértelmezett szállítási cím &gt; Irányítószám</li><li>Fejléc &gt; Vevői számla &gt; Elsődleges cím &gt; Irányítószám</li></ol></li><li>**Napló (vevő):**<ol><li>Vevőkód Alapértelmezett szállítási &gt; cím - &gt; irányítószám</li><li>Vevőkód – &gt; Elsődleges cím &gt; irányítószáma</li></ol></li><li>**Napló (szállító):**<ol><li>Jogi személy &gt; Alapértelmezett szállítási cím &gt; Irányítószám</li><li>Jogi személy &gt; Elsődleges cím &gt; Irányítószám</li></ol></li></ul> |
 | Webhely                             | <ul><li>**Értékesítési rendelés**: Telephely</li><li>**Beszerzési rendelés:** Telephely</li><li>**Átmozgatási rendelések – Szállítás:** A Feladó raktár telephelye</li><li>**Átmozgatási rendelések – Bevételezés:** A Címzett raktár telephelye</li><li>**Ajánlatkérés:** Telephely</li><li>**Értékesítési árajánlat:** Telephely</li></ul> |
-| Adó iránya                    | <ul><li>**Értékesítési rendelés:** Kimenet</li><li>**Beszerzési rendelés:** Bemenet</li><li>**Átmozgatási rendelés - Szállítás:** Kimenet</li><li>**Átmozgatási rendelés – Bevételezés** Bemenet</li><li>**Beszerzési igénylések:** Bemenet</li><li>**Ajánlatkérés:** Bemenet</li><li>**Értékesítési árajánlat:** Kimenet</li><li>**Szabadszöveges számla:** Kimenet</li></ul> |
+| Adó iránya                    | <ul><li>**Értékesítési rendelés:** Kimenet</li><li>**Beszerzési rendelés:** Bemenet</li><li>**Átmozgatási rendelés - Szállítás:** Kimenet</li><li>**Átmozgatási rendelés – Bevételezés** Bemenet</li><li>**Beszerzési igénylések:** Bemenet</li><li>**Ajánlatkérés:** Bemenet</li><li>**Értékesítési árajánlat:** Kimenet</li><li>**Szabadszöveges számla:** Kimenet</li><li>**Napló:** Kimenet</li></ul> |
 | Szállítói számla                   | <ul><li>**Beszerzési rendelés:** Szállítói számla</li><li>**Napló (szállító):** Szállítói számla</li></ul> |
 | Szállító számlaszáma           | <ul><li>**Beszerzési rendelés:** Számlafogadó</li><li>**Napló (szállító):**<ol><li>Szállító fő számlaszáma &gt;</li><li>Szállítói számla</li></ol></li></ul> |
 | Raktár                        | <ul><li>**Értékesítési rendelés:** Raktár</li><li>**Beszerzési rendelés:** Raktár</li><li>**Átmozgatási rendelés – Szállítás:** Feladó raktár</li><li>**Átmozgatási rendelés – Bevételezés:** Címzett raktár</li><li>**Ajánlatkérés:** Raktár</li><li>**Értékesítési ajánlat:** Raktár</li></ul> |

@@ -1,6 +1,6 @@
 ---
 title: Előre beállított stílusok használata
-description: Ez a témakör az előre beállított oldalstílus-elrendezésekkel végzett munkát mutatja be a Microsoft Dynamics 365 Commerce oldalépítőben.
+description: Ez a témakör azt ismerteti, hogyan lehet a webhelyszerkesztőben előre beállított Microsoft Dynamics 365 Commerce webhelystílusokat dolgozni.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 0a06052ab29502c57a2ad5a25e5bec870585ef4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964853"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900360"
 ---
 # <a name="work-with-style-presets"></a>Előre beállított stílusok használata
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör az előre beállított oldalstílus-elrendezésekkel végzett munkát mutatja be a Microsoft Dynamics 365 Commerce oldalépítőben.
+Ez a témakör azt ismerteti, hogyan lehet a webhelyszerkesztőben előre beállított Microsoft Dynamics 365 Commerce webhelystílusokat dolgozni.
 
 A stílus-előbeállítás az összes szerzői stílusérték tárolt készlete, amelyek lefedik a webhely témáját. Felhasználható arra, hogy azonnal módosítsa a webhely megjelenését a webhelyépítőből. A stílus előre beállításával a Commerce webhelyépítő szerzői gyorsan módosíthatják, előnézhetik és aktiválhatják a stílus értékeit a saját webhelyükön anélkül, hogy az egymásra épülő stílusalapokat (CSS) kellene használni, vagy a témákat kellene telepíteni. A betűstílusok, a gombstílusok és a webhely színei a stílus-előbeállításokon keresztül kezelhető stílusváltozók tipikus példái.
 

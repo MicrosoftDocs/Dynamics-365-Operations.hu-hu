@@ -1,6 +1,6 @@
 ---
 title: Áfameghatározás főkönyvi tranzakció jelentésenként
-description: Ez a témakör azt mutatja be, hogyan lehet a főkönyvi tranzakció jelentés alapján az ÁFA-specifikációt az ÁFA kiszámításához használt főkönyvi tranzakciókra vonatkozó adatok megjelenítésére és kinyomtatására használni.
+description: Ez a cikk bemutatja, hogy hogyan használható a főkönyvi tranzakciónkénti áfaspecifikáció jelentés, amely az áfa kiszámításához használt főkönyvi tranzakciókra vonatkozó információkat tartalmazza.
 author: EricWang
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: a51bfd604a1ecc790d5f26f4be95a72375a9ffe6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c96f457a0ea24aef1769f370c3c0657ada31eebf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898091"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>Áfameghatározás főkönyvi tranzakció jelentésenként
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet a **főkönyvi tranzakció jelentés alapján az ÁFA-specifikációt** az ÁFA kiszámításához használt főkönyvi tranzakciókra vonatkozó adatok megjelenítésére és kinyomtatására használni.
+Ez a cikk bemutatja, **hogy** hogyan használható a főkönyvi tranzakciónkénti áfaspecifikáció jelentés, amely az áfa kiszámításához használt főkönyvi tranzakciókra vonatkozó információkat tartalmazza.
 
 ## <a name="tax-accounts-vs-non-tax-accounts"></a>Adóügyi és nem adóügyi számlák
 

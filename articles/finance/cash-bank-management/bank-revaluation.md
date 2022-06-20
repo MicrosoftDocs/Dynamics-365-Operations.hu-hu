@@ -1,6 +1,6 @@
 ---
 title: Bank – devizaátértékelés
-description: Ez a témakör a banki devizaátértékelés folyamatával kapcsolatban nyújt áttekintést. A telepítéssel, a folyamat futtatásával, a folyamathoz tartozó számításokkal és az újraértékelési tranzakciók sztornírozásával kapcsolatban tartalmaz információkat.
+description: Ez a cikk áttekintést nyújt a banki devizaátértékelés folyamatának folyamatról. A telepítéssel, a folyamat futtatásával, a folyamathoz tartozó számításokkal és az újraértékelési tranzakciók sztornírozásával kapcsolatban tartalmaz információkat.
 author: kweekley
 ms.date: 05/16/2019
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a8ce792fdc0c6b441deaead32db04ee0246becc9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d68232af3e87cef2f86213211e6c87f7d654df33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711203"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863101"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – devizaátértékelés
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör a banki devizaátértékelés folyamatával kapcsolatban nyújt áttekintést. Bemutatja, hogyan lehet a folyamatot beállítani és futtatni, valamint tájékoztatást nyújt a folyamathoz tartozó számításokról. Azt is bemutatja, hogy hogyan lehet az újraértékelési tranzakciókat sztornírozni, ha sztornírozásra lenne szükség.
+Ez a cikk áttekintést nyújt a banki devizaátértékelés folyamatának folyamatról. Bemutatja, hogyan lehet a folyamatot beállítani és futtatni, valamint tájékoztatást nyújt a folyamathoz tartozó számításokról. Azt is bemutatja, hogy hogyan lehet az újraértékelési tranzakciókat sztornírozni, ha sztornírozásra lenne szükség.
 
 Az időszak végén a könyvelési szabályok előírják a külföldi pénznemben levő bankszámlaegyenlegek a különböző árfolyamtípusok használatával történő átértékelését (aktuális, múltbeli, átlag stb.). A banki devizaátértékelés funkció segítségével egy vagy több bankszámla átértékelésére van lehetőség. A funkció globális funkció is. Ezért egyetlen oldalról az Ön által hozzáférhető összes jogi személyhez tartozó bankot átértékelheti.
 

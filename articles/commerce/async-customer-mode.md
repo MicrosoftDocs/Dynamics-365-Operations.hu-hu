@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: ca7cceb066d30b7bba82265a3654f3bfb26f57f6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4ca63fe06a804035e976a3432454078c1cca0020
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689102"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880140"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Aszinkron vevőlétrehozási mód
 

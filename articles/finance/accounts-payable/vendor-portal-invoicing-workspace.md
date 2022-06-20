@@ -1,6 +1,6 @@
 ---
 title: Szállítói együttműködési számlázás munkaterület
-description: Ez a témakör bemutatja, hogyan tekintheti meg a szállítói számlákat, és hogyan küldheti be a számlákat a szállítói együttműködési számlázás munkaterületen.
+description: Ez a cikk bemutatja, hogy hogyan lehet megtekinteni a szállítói számlákat, és hogyan lehet számlákat benyújtani a szállítói együttműködési számlázási munkaterületről.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1d9415b7118efb06099b775f68ce7ca9fb6673ed
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 9ef4204e0be437b50af047704e07600653c877c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182629"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896550"
 ---
 # <a name="vendor-collaboration-invoicing-workspace"></a>Szállítói együttműködési számlázás munkaterület
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan **lehet megtekinteni a szállítói számlákat, és hogyan lehet számlákat benyújtani a szállítói együttműködési számlázási munkaterületről**.
+Ez a cikk bemutatja, hogy hogyan **lehet megtekinteni a szállítói számlákat, és hogyan lehet számlákat benyújtani a szállítói együttműködési számlázási munkaterületről**.
 
 A **Szállítói együttműködési számlázás** munkaterület a szállítói számla adatainak megtekintésére, és a számlák rendszerbe küldésére használható a munkafolyamat-lehetőségeinek használatával.
 

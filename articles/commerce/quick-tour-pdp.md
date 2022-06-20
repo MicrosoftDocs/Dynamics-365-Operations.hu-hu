@@ -1,6 +1,6 @@
 ---
 title: Termékadatok oldalainak áttekintése
-description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékrészletek oldalairól (PDP-k).
+description: Ez a cikk áttekintést nyújt a termék részleteinek oldalait (PDPs) a témakörben Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 01/23/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7b7630a15f98da4a1454f7c9b0d3501d4f035649
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986201"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884285"
 ---
 # <a name="product-details-pages-overview"></a>Termékadatok oldalainak áttekintése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékrészletek oldalairól (PDP-k).
+Ez a cikk áttekintést nyújt a termék részleteinek oldalait (PDPs) a témakörben Microsoft Dynamics 365 Commerce.
 
 A PDP részletes információt nyújt a termékről, és a vevők számára lehetővé teszi a termékopciók például a méret, a stílus és a szín kiválasztását. A PDP-nek meg kell jelenítenie az összes olyan termékre vonatkozó információt, amely a vevőnek a beszerzési döntés meghozatalához szükséges.
 
@@ -35,7 +35,7 @@ A következő ábrán a PDP egy példája látható.
 
 ## <a name="header-and-footer-modules"></a>Fejléc- és láblécmodulok
 
-A PDP felső részén egy fejléc jelenik meg, amely az összes termékkategóriát és az egyéb olyan oldalakt, amelyet a kereskedő azt szeretné, hogy böngésznének. A lap alján van egy lábléc, amely gyorshivatkozásokat tartalmaz a különböző témájú témákhoz, amelyek érdekesek lehetnek a vevők számára.
+A PDP felső részén egy fejléc jelenik meg, amely az összes termékkategóriát és az egyéb olyan oldalakt, amelyet a kereskedő azt szeretné, hogy böngésznének. A lap alján egy lábléc található, amely gyorshivatkozásokat tartalmaz különböző, a vevőket érdeklő cikkekre.
 
 ## <a name="buy-box-module"></a>Vásárlásmező-modul
 

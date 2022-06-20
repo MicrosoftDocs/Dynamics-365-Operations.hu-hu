@@ -1,6 +1,6 @@
 ---
 title: Rendelés keresésének engedélyezése vendégpénztárak részére
-description: Ez a témakör azt ismerteti, hogyan lehet engedélyezni a rendeléskeresést a vendégpénztáraknál a Microsoft Dynamics 365 Commerce-ben.
+description: Ez a témakör azt ismerteti, hogyan lehet engedélyezni a rendeléskeresést a vendég-pénztárnál Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: fe32bb59b6529dd9686ced92c1016f12a75a32d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891987"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Rendelés keresésének engedélyezése vendégpénztárak részére
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet engedélyezni a rendeléskeresést a vendégpénztáraknál a Microsoft Dynamics 365 Commerce-ben.
+Ez a témakör azt ismerteti, hogyan lehet engedélyezni a rendeléskeresést a vendég-pénztárnál Microsoft Dynamics 365 Commerce.
 
 A vendégpénztárok rendeléskeresési funkciója lehetővé teszi, hogy a vendégfelhasználóként vásárló vevők megkeressenek rendeléseket. A rendeléskeresési képesség akkor hasznos, ha a vevők olyan műveleteket szeretnének végrehajtani, mint például a rendelésben szereplő termékek teljesítési állapotának ellenőrzése, a rendelés szállítási címének ellenőrzése, egy termék újrarendelése, vagy annak megerősítése, hogy melyik üzletben vehető át egy rendelés.
 
@@ -58,7 +58,7 @@ A **Rendeléskeresés** gyorslapon, a **Vevői rendelések** oldalon a Commerce 
 > [!NOTE]
 > Ezek a lehetőségek határozzák meg, hogy a névtelen vendég felhasználók számára mikor jelennek meg a személyes adatok, például a vevő címe és a vevő hitelkártyaszámának utolsó négy számjegye. A regisztrált vevők adatainak védelme érdekében javasoljuk, hogy **Csak a vendégrendelések** beállítást válassza. A legbiztonságosabb beállítás azonban a **Soha**.
 
-Miután a Személyes adatok behelyettesítése a vendégrendelések keresési mezőjébe értékét módosítja, a **Commerce** Headquarters 1070-es feladatának **(csatornakonfigurációja) futtatásához a Retail and Commerce Retail and Commerce IT Distribution ütemezését kell** **\>\> futtatnia**.
+Miután a Személyes adatok **behelyettesítése** a vendégrendelések keresési mezőjébe értékét módosítja, a Commerce Headquarters **1070-es feladatának (** csatornakonfigurációjának **) futtatásához a Retail and Commerce \> Retail and Commerce IT \> Distribution ütemezését kell futtatnia**.
 
 ## <a name="configure-the-order-lookup-module"></a>A rendeléskeresési modul konfigurálása
 
@@ -66,7 +66,7 @@ A Commerce modultár rendeléskeresési modulja a vendégfelhasználók által a
 
 ## <a name="configure-the-order-details-page"></a>A rendelés részleteit tartalmazó lap konfigurálása
 
-Ahhoz, hogy a vendég felhasználók megtekinthetik a rendelési adataikat, az e-commerce webhelyen be kell állítani a rendelési adatokat úgy, hogy ne legyen szükség a bejelentkezésre. Ha ki kívánja kapcsolni a rendelési adatok oldalához szükséges bejelentkezési követelményeket, nyissa meg a lapot a Commerce webhelyszerkesztőben, fanézetben válassza ki az Alapértelmezett oldal (kötelező) lehetőséget, és törölje a jelet a Be kell jelentkezni szükséges jelölőnégyzetből a tulajdonságok **ablaktábla** **alján**.
+Ahhoz, hogy a vendég felhasználók megtekinthetik a rendelési adataikat, az e-commerce webhelyen be kell állítani a rendelési adatokat úgy, hogy ne legyen szükség a bejelentkezésre. Ha ki kívánja kapcsolni a rendelési adatok oldalához szükséges bejelentkezési követelményeket, nyissa meg a lapot a Commerce webhelyszerkesztőben, **fanézetben válassza ki az Alapértelmezett oldal (kötelező)** lehetőséget, **és** törölje a jelet a Be kell jelentkezni szükséges jelölőnégyzetből a tulajdonságok ablaktábla alján.
 
 ## <a name="add-a-link-to-order-details-in-transactional-emails"></a>Rendelési részletekre mutató hivatkozás hozzáadása a tranzakciós e-mailekben
 

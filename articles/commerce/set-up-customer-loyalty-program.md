@@ -1,6 +1,6 @@
 ---
 title: Hűség áttekintése
-description: Ez a témakör leírja a hűséggel kapcsolatos képességeket a Dynamics 365 Commerce programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat.
+description: Ez a cikk leírja Dynamics 365 Commerce a hűségprogramon belüli hűségprogramokat és a hozzájuk tartozó beállítási lépéseket, amelyek segítenek a kiskereskedőnek a hűségprogramok egyszerű elkezdésében.
 author: scott-tucker
 ms.date: 07/21/2020
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 57512bbd735e26ba31e00518ca8179f2d9b14bc4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 667c30e52bae34f8ddfdc7b74f271d08612ac594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985162"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883903"
 ---
 # <a name="loyalty-overview"></a>Hűség áttekintése
 
 [!include [banner](includes/banner.md)]
 
-A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha kapcsolatba lépnek a kiskereskedő márkájával. A Dynamics 365 Commerce programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kereskedelmi csatornára alkalmazhatók. Ez a témakör leírja a hűséggel kapcsolatos képességeket a Commerce programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat.
+A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha kapcsolatba lépnek a kiskereskedő márkájával. A Dynamics 365 Commerce programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kereskedelmi csatornára alkalmazhatók. Ez a cikk a Commerce rendszer hűségprogramokkal kapcsolatos lehetőségeiről és a kiskereskedő hűségprogramokkal való egyszerű elindulásának lépéseit írja le.
 
 A hűségprogram beállíthatja, hogy a következőket tartalmazza:
 

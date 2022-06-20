@@ -1,6 +1,6 @@
 ---
-title: POS-engedélycsoportok létrehozása
-description: Ez a témakör a pénztár engedélycsoport létrehozásának lépéseit mutatja be.
+title: Pénztári engedélycsoportok létrehozása
+description: Ez a cikk bemutatja a POS-engedélycsoport létrehozásához szükséges szükséges engedélyeket.
 author: scott-tucker
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 362fbfb5f0cae7cc8583754b53a198eae90bc67f24a871523374c4b7997826eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 009f311dd00f48edb8c0f6622f0a5107881ab2ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762296"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905424"
 ---
-# <a name="create-pos-permission-groups"></a>POS-engedélycsoportok létrehozása
+# <a name="create-pos-permission-groups"></a>Pénztári engedélycsoportok létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a pénztár engedélycsoport létrehozásának lépéseit mutatja be. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. Ez a feladat Kereskedelmi üzemeltetési vezető szerepkörhöz tartozik.
+Ez a cikk bemutatja a POS-engedélycsoport létrehozásához szükséges szükséges engedélyeket. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. Ez a feladat Kereskedelmi üzemeltetési vezető szerepkörhöz tartozik.
 
 1. A navigációs ablakban nyissa meg a **Modulok > Kiskereskedelem és kereskedelem > Alkalmazottak > Engedélycsoportok** elemet.
 2. Válassza az **Új** lehetőséget.

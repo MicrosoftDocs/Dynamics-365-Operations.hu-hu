@@ -1,6 +1,6 @@
 ---
 title: Fizetési pozitív fájlok beállítása és létrehozása az Elektronikus jelentés segítségével
-description: Ez a témakör bemutatja, hogy hogyan lehet beállítani az elektronikus jelentéssel az pozitív fizetést.
+description: Ez a cikk bemutatja, hogy hogyan lehet beállítani az elektronikus jelentéssel az pozitív fizetést.
 author: panolte
 ms.date: 03/20/2022
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc2f17d62b429b599d5ac5f2a521819275d36b64
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 491048c7274ba6bb52e0a4b7a6ea5cd0f5ff4741
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770247"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878218"
 ---
 # <a name="set-up-positive-pay-files-by-using-electronic-reporting"></a>Fizetési fájlok beállítása elektronikus jelentéssel
 
-Ez a témakör bemutatja, hogy hogyan lehet beállítani az elektronikus jelentés segítségével az pozitív fizetést és a fizetési fájlokat.
+Ez a cikk bemutatja, hogyan lehet beállítani az elektronikus jelentés segítségével az pozitív fizetést és a fizetési fájlokat.
 
 > [!NOTE] 
 > A Banki fizetési **fájlok** létrehozása funkció használata előtt először frissítenie kell az entitáslistát.

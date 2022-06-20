@@ -9,22 +9,22 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
-ms.translationtype: MT
+ms.openlocfilehash: 7d87b6c64a6038c4518eeec178f9e139ef6f5ae2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782837"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848989"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Commerce-katalógusok létrehozása B2B webhelyekhez
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet Kereskedelmi termékkatalógusokat létrehozni a Microsoft Dynamics 365 Commerce vállalat számára (B2B) webhelyek számára. A B2B webhelyek commerce katalógusai gyakran feltett kérdésekre adott válaszokkal [kapcsolatban lásd a Commerce Catalogs for B2B FAQ (Gyakori kérdések) című témakört](catalogs-b2b-sites-FAQ.md).
+Ez a témakör azt ismerteti, hogyan lehet kereskedelmi termékkatalógusokat létrehozni a Microsoft Dynamics 365 Commerce vállalathoz tartozó (B2B) webhelyek számára. A B2B webhelyek commerce katalógusai gyakran feltett kérdésekre adott válaszokkal [kapcsolatban lásd a Commerce Catalogs for B2B FAQ (Gyakori kérdések) című témakört](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Ez a témakör a Dynamics 365 Commerce 10.0.27-es és későbbi verziókra vonatkozik.
+> Ez a cikk a Dynamics 365 Commerce 10.0.27-es és későbbi verziókra vonatkozik.
 
 A Commerce katalógusok segítségével azonosíthatja a B2B online áruházakban kínálni kívánt termékeket. Katalógus létrehozása esetén azonosítja azokat az online áruházakat, amelyekben a termékek felkínálják, hozzáadja a szerepelni kívánt termékeket, és árusítási részletek hozzáadásával javítja a termék kínálatát. Minden egyes B2B online áruházhoz több katalógust is létrehozhat.
 

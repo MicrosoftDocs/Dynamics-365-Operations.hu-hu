@@ -1,6 +1,6 @@
 ---
 title: Elektronikus számlázás beállítása
-description: Ez a témakör áttekintést nyújt az elektronikus számlázás beállításának és beállításának folyamatával kapcsolatban.
+description: Ez a témakör áttekintést nyújt az elektronikus számlázás beállításának és beállításának folyamatával.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 42e617e26e7658fae9ee54cb8a4dee45314fddaa
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 8e2aa89119530a0ba00a8561d94006285d67a71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661692"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883119"
 ---
 # <a name="electronic-invoicing-setup"></a>Elektronikus számlázás beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt az elektronikus számlázás beállításának és beállításának folyamatával kapcsolatban. A beállítási lépéseket az itt megadott sorrendben kell végrehajtani. Ha egy lépés kötelező, de kihagyja, a funkció nem működik megfelelően, és több hiba történik a következő lépések során vagy a funkció használata során. 
+A cikk áttekintést nyújt az elektronikus számlázás beállításának és beállításának folyamatával. A beállítási lépéseket az itt megadott sorrendben kell végrehajtani. Ha egy lépés kötelező, de kihagyja, a funkció nem működik megfelelően, és több hiba történik a következő lépések során vagy a funkció használata során. 
 
 Mielőtt hozzákezd, győződjön meg arról, hogy minden fő összetevő helyesen van beállítva, hogy jelentkezett-e be a konfigurációs szolgáltatásra (RCS), illetve hogy telepítve van-e Microsoft Dynamics az RCS egy példánya, valamint hogy a 365 Dynamics 365 Supply Chain Management Pénzügy vagy a környezet elektronikus számlázási bővítménye telepítve van-e. A további tudnivalókat lásd [az Elektronikus számlázás regisztrációja és telepítése oldalon](e-invoicing-install-add-in-microservices-lcs.md).
 

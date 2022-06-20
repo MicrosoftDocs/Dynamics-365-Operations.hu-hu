@@ -10,16 +10,16 @@ ms.search.form: InventPosting, InventItemGroup
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: bc4f1bd7c1bf7a8f214f20460b10d371d8f3c790
-ms.sourcegitcommit: 1ea145dc606e243c7f51d91a5c0dd9e385bbda4a
+ms.openlocfilehash: e7b2d04f32b75dbd1354b3ef74a41ea1b6469c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804638"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894877"
 ---
 # <a name="standard-cost-variance-posting"></a>Elszámoló költségeltérés feladása
 
-Ha a szervezetben egy vagy több termékhez elszámolóáras költségszámítást használ, [konfigurálnia kell az elszámolóáras költségszámítás előfeltételeit](/supply-chain/cost-management/prerequisites-standard-costs.md). Ez a témakör leírja a 3. lépéshez szükséges feladási számlákat "Főkönyvi számlák hozzárendelése az elszámolóköltség-különbözetekkel kapcsolatos cikkfeladáshoz" témakörben.
+Ha a szervezetben egy vagy több termékhez elszámolóáras költségszámítást használ, [konfigurálnia kell az elszámolóáras költségszámítás előfeltételeit](/supply-chain/cost-management/prerequisites-standard-costs.md). Ez a cikk bemutatja a 3. lépéshez szükséges feladási számlákat "Rendeljen főkönyvi számlákhoz az elszámolóköltség-különbözetekkel kapcsolatos cikkfeladáshoz."
 
 A beszerzések és a termelési rendelések különböző típusú eltérések fordulhatnak elő. A termelési eltérésekre vonatkozó példákat lásd [a termelési különbözetek közös forrásait](/supply-chain/cost-management/common-sources-of-production-variances.md). A beszerzési rendelés áreltérései akkor lépnek fel, amikor a beszerzett cikkre elszámolóárat használ, és a beszerzési rendelésen eltérés van a termék elszámolóára és a számlázott összeg között.
 

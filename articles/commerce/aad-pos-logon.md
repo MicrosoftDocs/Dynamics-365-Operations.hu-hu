@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory-hitelesítés konfigurálása a pénztári bejelentkezéshez
-description: Ez a témakör bemutatja, hogy hogyan kell konfigurálni az Azure Active Directoryt mint hitelesítési módszert a Microsoft Dynamics 365 Commerce pénztárban.
+description: Ez a cikk bemutatja, hogyan kell konfigurálni Azure Active Directory a hitelesítési Microsoft Dynamics 365 Commerce módszert a értékesítésnél.
 author: boycezhu
 ms.date: 04/23/2021
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 47da2c78cef2bbee324fbc2202898fbabd927c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402151"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853928"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Azure Active Directory-hitelesítés konfigurálása a pénztári bejelentkezéshez
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan kell konfigurálni az Azure Active Directoryt (Azure AD) mint hitelesítési módszert a Microsoft Dynamics 365 Commerce pénztárban (POS).
+Ez a cikk bemutatja, hogy hogyan Azure Active Directory kell konfigurálni (Azure AD) a Microsoft Dynamics 365 Commerce pénztárnál történő hitelesítés módját.
 
-Olyan kiskereskedők, akik a Dynamics 365 Commerce-t Microsoft más felhőszolgáltatásával, például a Microsoft Azure, a Microsoft 365 és a Microsoft Teams szolgáltatással együtt használják, általában az Azure AD-t a felhasználói hitelesítő adatok centralizált kezeléséhez szeretnék használni azért, hogy az alkalmazásokban biztonságos és zökkenőmentes bejelentkezési élmény váljon lehetővé. Az Azure AD-hitelesítés Commerce-pénztárhoz való használatához először konfigurálnia kell az Azure AD-t hitelesítési módszerként a kereskedelmi központban.
+Olyan kiskereskedők, akik a Dynamics 365 Commerce Microsoft Microsoft Azure Microsoft 365 más felhőszolgáltatásával együtt használják ezeket a szolgáltatásokat, Microsoft Teams Azure AD és jellemzően a felhasználói hitelesítő adatok központosított kezeléséhez kívánják használni az alkalmazások közötti biztonságos és problémamentes bejelentkezés érdekében. Az Azure AD-hitelesítés Commerce-pénztárhoz való használatához először konfigurálnia kell az Azure AD-t hitelesítési módszerként a kereskedelmi központban.
 
 ## <a name="configure-pos-authentication-method"></a>Pénztár-hitelesítési mód konfigurálása
 

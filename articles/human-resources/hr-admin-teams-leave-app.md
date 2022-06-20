@@ -1,6 +1,6 @@
 ---
-title: Human Resources alkalmazás a Teams rendszerben
-description: Ez a témakör bemutatja a Microsoft Dynamics 365 Human Resources alkalmazást a Microsoft Teams rendszerben.
+title: Human Resources alkalmazás a Teamsben
+description: Ez a cikk bemutatja a Microsoft alkalmazást a következőben Dynamics 365 Human Resources :Microsoft Teams
 author: twheeloc
 ms.date: 12/15/2021
 ms.topic: article
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: debb18ab85e5b9011166a73571533a84d3f53512
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a7ff576efbfeb0c5383a48756fdd7e79f1abdba2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717083"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902256"
 ---
-# <a name="human-resources-app-in-teams"></a>Human Resources alkalmazás a Teams rendszerben
+# <a name="human-resources-app-in-teams"></a>Human Resources alkalmazás a Teamsben
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
@@ -46,7 +46,7 @@ Ha azt szeretné, hogy a felhasználók a Távollét és szabadság naptárát a
 
 ## <a name="update-app"></a>Alkalmazás frissítése
 >[!NOTE]
-> 2021. december 20-án kezdődően elindul a Microsoft bérlőben tárolt Emberi erőforrások alkalmazás szolgáltatás. A telepítésre elérhető, naprakész bővítményekre (verziókra és verziókra1.1.5) lesz hatással. A fő hatás az elavult kiterjesztésre (verziószám) lesz 1.1.4. A verzióban elérhető csevegési program leáll. Az **Idő-idő** lap mindkét kiterjesztésben továbbra is működni fog.
+> 2021. december 20-án kezdődően elindul a Microsoft bérlőben tárolt Emberi erőforrások alkalmazás szolgáltatás. A telepítésre elérhető, naprakész bővítményekre (verziókra és verziókra1.1.5) lesz hatással. A fő hatással lesz az elavult kiterjesztésre (1.1.4). A verzióban elérhető csevegési program leáll. Az **Idő-idő** lap mindkét kiterjesztésben továbbra is működni fog.
 
 Az 1.1.4-es verziónál a beszélgetési program leállítja a válaszadást bármilyen üzenetre. Például bejelentkezés, **·** **egyenlegek megtekintése** és **idő-idő megtekintése**. Az alkalmazást manuálisan kell frissíteni a legújabb verzióra. A további tudnivalókat lásd [Az alkalmazások frissítése itt:Microsoft Teams](/MicrosoftTeams/apps-update-experience)
 
@@ -156,7 +156,7 @@ Ha egy felhasználó hibaüzenetet kap, miközben szabadságkéréseket próbál
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
 
-A felhasználói Dynamics 365 Human Resources szövegbevitel Microsoft Teams elemzése után a program elemzi a bejövő szövegeket, hogy megértsük a mögöttes lekérdezést/célját. A felhasználó által megadott adatok például a "Search account Contoso" a Microsoft language Understanding Intelligens szolgáltatás (LANGUAGE Understanding Intelligens szolgáltatás) nevű szolgáltatásának, a Language Understanding Intelligens szolgáltatásnak (STB) az egyikéhez vannak irányítva. A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ez az információ ezután át lesz stb. a Microsoft'sAzure [bot keretrendszernek](https://azure.microsoft.com/services/bot-service/), Dynamics 365 Human Resources amely az adatokkal kommunikál a felhasználói lekérdezésből, és beolvassa a kívánt adatokat.
+A felhasználói Dynamics 365 Human Resources szövegbevitel Microsoft Teams elemzése után a program elemzi a bejövő szövegeket, hogy megértsük a mögöttes lekérdezést/célját. A felhasználó által megadott adatok például a "Search account Contoso" a Microsoft language Understanding Intelligens szolgáltatás (LANGUAGE Understanding Intelligens szolgáltatás) nevű szolgáltatásának, a Language Understanding Intelligens szolgáltatásnak (STB) az egyikéhez vannak irányítva. A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ezt követően a rendszer áttér az adatra a Microsoft [Azure felhasználói](https://azure.microsoft.com/services/bot-service/) keretrendszerére, amely az adatokkal kommunikál a felhasználói lekérdezésből, Dynamics 365 Human Resources és beolvassa a kívánt adatokat.
 
 A robot telepítésével és a használatához való hozzáférés engedélyezésével Ön elfogadja, hogy a LUIS szolgáltatás és az Azure robot keretrendszer feldolgozza a bemenet mögötti szándékot, ami egy továbbfejlesztett, társalgásszerű felhasználói élményt eredményez. A LUIS szolgáltatás és az Azure robot keretrendszer különböző szintű megfeleléssel rendelkezhet a Dynamics 365 Human Resources alkalmazáshoz képest. Habár az ORI Dynamics 365 Human Resources szolgáltatás csak a felhasználói lekérdezésekhez van hozzáférése, és nincs a felhasználó adataihoz vagy fiókjához való csatlakozásra tervezve, az Dynamics 365 Human Resources adatbázis egy felhasználója tudott egy vevői adatokat, személyes adatokat vagy más adatokat tartalmazó lekérdezést, és ezeket a lekérdezési tartalmat el lehet küldeni aKISZOLGÁLÓ szolgáltatásnak és az Azure-keretrendszernek. 
 

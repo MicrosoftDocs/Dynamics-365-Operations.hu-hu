@@ -1,6 +1,6 @@
 ---
 title: Retail értékesítési utalványok beállítása
-description: Ez a témakör az utalványokat tekinti át, és bemutatja, hogyan állíthatja be őket a Dynamics 365 Commerce alkalmazásban.
+description: Ez a cikk áttekintést nyújt az utalványokról, és bemutatja, hogyan lehet beállítani őket a következőben:Dynamics 365 Commerce
 author: josaw1
 ms.date: 10/05/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
-ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
+ms.openlocfilehash: 72ad7b527662bb863069b633d64eea41fee67d44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7603123"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891932"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Retail értékesítési utalványok beállítása
 

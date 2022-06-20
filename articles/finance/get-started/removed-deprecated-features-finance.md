@@ -1,6 +1,6 @@
 ---
-title: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
-description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Finance alkalmazásban.
+title: Eltávolított vagy elavult szolgáltatások a Dynamics 365 Finance alkalmazásban
+description: Ez a témakör olyan funkciókat ismertet, amelyek el vannak távolítva, illetve amelyek a Dynamics 365 Pénzügy rendszerből való eltávolításra tervezve vannak.
 author: kfend
 ms.date: 03/21/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6df84e5c2d530e708560495bceaeb23e2ee0dd4b
-ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
+ms.openlocfilehash: 0278b57ccfa2da9dba6b5ea77821fdc47ad2d078
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8466834"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846654"
 ---
-# <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
+# <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult szolgáltatások a Dynamics 365 Finance alkalmazásban
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Finance alkalmazásban.
+Ez a témakör olyan funkciókat ismertet, amelyek el vannak távolítva, illetve amelyek a Dynamics 365 Pénzügy rendszerből való eltávolításra tervezve vannak.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
@@ -129,7 +129,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Lecserélve az új Regulatory Configuration Service (RCS) globális adattárra |
 | **Felváltotta másik szolgáltatás?**   | Igen |
-| **Érintett területek**         | Dynamics 365 Finance-, Supply Chain Management- és Project Operations-termékek|
+| **Érintett területek**         | Dynamics 365 Pénzügy, Ellátásilánc-kezelés és Projektművelet termékek|
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: Úgy tervezzük, hogy 2022. április 1. után már nem támogatjuk a Microsoft Dynamics Lifecycle Services (LCS) adattárat tárolási lehetőségként Elektronikus jelentéskészítési (ER) konfigurációk számára. A rendszer az új Microsoft ER-konfigurációkat kizárólag a globális adattárból való letöltésre teszi közzé. A globális adattárat Dynamics 365-termékekből és az RCS-rendszerből érheti el. További tájékoztatás: [ER-konfigurációk importálása az RCS-ből](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) és a [Regulatory Configuration Service - Lifecycle Services tárolás kivezetése](../localizations/rcs-lcs-repo-dep-faq.md). |
 

@@ -1,6 +1,6 @@
 ---
 title: Támogatás és megújítások
-description: Ez a témakör bemutatja, hogy hogyan lehet az értékesítési rendeléseken a támogatási és megújítási folyamatot beállítani és használni a cikkek megújítása számlázási ütemezésének létrehozásához.
+description: Ez a cikk bemutatja, hogy hogyan lehet az értékesítési rendeléseken a támogatási és megújítási folyamatot beállítani és használni a cikkek megújítására vonatkozó számlázási ütemezés létrehozásához.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 7de74f2b12e8e7201663ba78d936131b301b1ff9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b40e0136883d909755480a3ce101627297bd9ffb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685770"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896521"
 ---
 # <a name="support-and-renewals"></a>Támogatás és megújítások 
 
-Ez a témakör azt mutatja be, hogyan lehet megadni a támogatási cikkeket és a cikkek megújítását az értékesítési rendelések beíratása során. Ezek a cikkek az eredeti támogatási szerződés díjának és/vagy a megújítási összegnek a kiszámítására használhatók, amikor az előfizetési számlázásban számlázási ütemezést hoznak létre. Például a vállalat egy kiszolgálót ad el a vevőnek, és egy biztonsági másolati előfizetést ajánl fel az első évre, és minden évben lehetőséget nyújt annak az előfizetésnek a megújítására. A *támogatási tétel az* első év előfizetése, *a* megújítási cikk minden következő év megújítása.
+Ez a témakör azt mutatja be, hogyan lehet megadni a támogatási cikkeket, illetve új cikkeket az értékesítési rendelések beíratása során. Ezek a cikkek az eredeti támogatási szerződés díjának és/vagy a megújítási összegnek a kiszámítására használhatók, amikor az előfizetési számlázásban számlázási ütemezést hoznak létre. Például a vállalat egy kiszolgálót ad el a vevőnek, és egy biztonsági másolati előfizetést ajánl fel az első évre, és minden évben lehetőséget nyújt annak az előfizetésnek a megújítására. A *támogatási tétel az* első év előfizetése, *a* megújítási cikk minden következő év megújítása.
 
 Megadhatja a támogatási szerződés, a megújítási szerződés vagy mindkettő adatait. Amikor beírja a támogatási szerződés adatait, csak a támogatási cikk lesz hozzáadva az értékesítési rendeléshez. A megújítási szerződés adatokat a megújítási elem segítségével lehet számlázási ütemezést létrehozni.
 

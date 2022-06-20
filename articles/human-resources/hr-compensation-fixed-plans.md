@@ -1,6 +1,6 @@
 ---
 title: Fix kompenzációs konstrukciók létrehozása
-description: A témakör ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
+description: A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 05f4748f66f4027972aabf53e7a1c237b8dbb543
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f254afc37d5afae48c3b2b3b16bd86634ac9aa3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693059"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875742"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Fix kompenzációs konstrukciók létrehozása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8693059"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. A témakör ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
+A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
 
 A fix kompenzációs összegek az alkalmazottak számára számíthatók ki, a teljesítmény, a régió és az előirányzott fizetésemelések alapján. Dynamics 365 Human Resources támogatja a lépés, az osztály és a sáv szerinti kompenzációtípust.
 

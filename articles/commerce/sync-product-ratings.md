@@ -1,6 +1,6 @@
 ---
 title: 'A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce'
-description: Ez a témakör azt mutatja be, hogyan lehet szinkronizálni a termékminősítéseket a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör azt ismerteti, hogyan lehet szinkronizálni a termékminősítéseket a következőben:Microsoft Dynamics 365 Commerce
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: ac94a8b4505aba509f0a71ed36d32adac864aedf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967950"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909335"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet szinkronizálni a termékminősítéseket a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt ismerteti, hogyan lehet szinkronizálni a termékminősítéseket a következőben:Microsoft Dynamics 365 Commerce
 
 A termék minősítések többcsatornán helyen történő felhasználásához, például a pénztárnál (POS) és a hívásközpontokban a minősítési és az értékelés szolgáltatásból származó minősítéseket importálni kell a Commerce csatornaadatbázisába. Amikor a többcsatornás helyeken elérhetővé teszik a termék minősítését, azzal közvetett módon segítik a vásárlókat, hogy kapcsolatba lépjenek az értékesítőkkel.
 
-Ez a témakör a következő feladatok leírását tartalmazza:
+Ez a témakör a következő feladatokat ismerteti:
 
 1. A **Termék minősítések szinkronizálása** kötegelt feladatként konfigurálható a **Minősítések és vélemények szolgáltatásból származó** termékminősítések szinkronizálására.
 1. Annak megerősítése hogy a termékminősítések szinkronizálásának kötegelt feladata sikeres volt.
@@ -133,11 +133,11 @@ A következő ábrán egy példa látható a termékminősítésekre a hívásk�
 
 [A termék minősítések szinkronizálása](sync-product-ratings.md)
 
-[A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
+[Az értékelések és vélemények moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
 
-[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
+[Értékelések és véleményezések importálása és exportálása](import-export-reviews.md)
 
-[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
+[Szolgáltatás a szolgáltatáshoz típusú hitelesítés konfigurálása](service-to-service-auth.md)
 
 [Értékelések és vélemények GYIK](ratings-reviews-faq.md)
 

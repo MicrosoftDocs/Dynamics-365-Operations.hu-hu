@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 743c78d3526db2707630229d4cf21531f9641dd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879250"
 ---
 # <a name="recruit-job-candidates"></a>Állásjelöltek toborzása
 
@@ -46,12 +46,13 @@ Ha nem használ külön toborzási alkalmazást, manuálisan is kezelheti a jel�
 Ha a HR-toborzásnál toborzási kéréseket szeretne benyújtani, **először engedélyeznie kell a HR** **felhasználói élmény és a Toborzás folyamatkezelési funkciókat**.
 
 Miután bekapcsolta a funkciókat, válassza ki a következő lépéseket: 
-1. Ugrás a **Human resourcesSetup** > **·** > **Tuan erőforrások paramétereihez**.
-2.  **ARecruitmenttabán** **állítsa a Toborzás letiltva mezőben** a Nem **gombra.**
-3. A Toborzási **tapasztalat** legördülő menüben válassza ki a **HR-toborzást**.   
+1. Ugrás az Emberi **erőforrások beállítása emberierőforrás-paraméterekhez** > **·** > **·**.
+2. A Toborzás  **lapon** állítsa **a Toborzás engedélyezve mező** Igen **beállításra**.
+3. A Toborzási **tapasztalat** legördülő menüben válassza ki a **HR-toborzást**.  
+4. Kattintson a **Mentés** gombra. 
 
 > [!Note] 
-> A **HR toborzás** kiválasztása után **a toborzási** projektek (legacy) csak olvashatók. 
+> A **HR-toborzás** kiválasztása után **a toborzási** projektek (legacy) nem lesznek elérhetők. 
 
 
 ## <a name="add-a-recruiting-request-location"></a>Toborzási kérelem helyének hozzáadása

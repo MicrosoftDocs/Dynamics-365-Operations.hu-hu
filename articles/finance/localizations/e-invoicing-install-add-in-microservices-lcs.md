@@ -1,6 +1,6 @@
 ---
 title: A mikroszolgáltatások bővítményének telepítése a Lifecycle Services szolgáltatásba
-description: Ez a témakör bemutatja, hogyan lehet telepíteni a Lifecycle Services (LCS) elektronikus számlázási Microsoft Dynamics bővítményét.
+description: Ez a cikk bemutatja, hogyan lehet telepíteni az Elektronikus számlázás bővítményt a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban.
 author: dkalyuzh
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a575f3e26489607dc2143ba05c941240969a0feb
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 26f92262eff07ded3e894ee5513dd8dbaa6f94a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371973"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849805"
 ---
 # <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>A mikroszolgáltatások bővítményének telepítése a Lifecycle Services szolgáltatásba
 
 [!include [banner](../includes/banner.md)]
 
-Az elektronikus számlázási szolgáltatás hitelesítéséhez regisztrálnia kell a Microsoftot Dynamics 365 Finance Dynamics 365 Supply Chain Management vagy a környezetet a szolgáltatási platformon Microsoft Dynamics azáltal, hogy telepíti a környezet bővítményét a Lifecycle Services (LCS) szolgáltatásban.
+Microsoft Dynamics Az elektronikus számlázási szolgáltatás hitelesítéséhez regisztrálnia kell a 365 Dynamics 365 Supply Chain Management Pénzügy vagy környezet szolgáltatást a szolgáltatási platformon Microsoft Dynamics azáltal, hogy telepíti a környezet bővítményét a Lifecycle Services (LCS) szolgáltatásban.
 
 A következő lépések szerint regisztrálhat egy környezetet.
 

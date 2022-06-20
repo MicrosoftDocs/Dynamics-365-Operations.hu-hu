@@ -1,6 +1,6 @@
 ---
 title: Eszközök vételezése beszerzésen keresztül
-description: Ez a témakör azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat.
+description: Ez a cikk azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat.
 author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b654dbf97f8d91e0a3233803ee182b1383ad317d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac25114fe8036a474d637e9ad9ede5e46b50d92e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712090"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891580"
 ---
 # <a name="acquire-assets-through-procurement"></a>Eszközök vételezése beszerzésen keresztül
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat. Egy beszerzési sor létrehoz egy eszközt, a beszerzési sorban szereplő mennyiségtől függetlenül. Ha több tárgyi eszköz létrehozása szükséges, ha több beszerzési sort kell létrehoznia.
+Ez a cikk azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat. Egy beszerzési sor létrehoz egy eszközt, a beszerzési sorban szereplő mennyiségtől függetlenül. Ha több tárgyi eszköz létrehozása szükséges, ha több beszerzési sort kell létrehoznia.
 
  A Tárgyi eszközök és a Kötelezettségek modul integrálására a következő módszerek állnak rendelkezésre; minden tárgyi eszköz esetében ugyanazt a módszert kell alkalmazni:
 -   Manuálisan létrehoz egy tárgyi eszközt, mielőtt megadná a tárgyi eszköz számát a beszerzési rendelés vagy a szállítói számla sorában. A szállítói számla feladásakor a rendszer automatikusan felad egy beszerzési tranzakciót a tárgyi eszközre. Ez az alapértelmezett módszer.
@@ -38,7 +38,7 @@ Válassza az első két módszer egyikét, ha a tárgyi eszközöket inkább man
 
 Amikor manuálisan hoz létre tárgyi eszközöket, vagy valamelyik rugalmasabb megközelítést alkalmazza, el kell döntenie, hogy a beszerzési tranzakciót csak a Tárgyi eszközökhöz lehet-e feladni, vagy feladható-e a szállítói számla feladásakor. Egyes szervezetek előnyben részesítik, ha a felhasználók manuálisan hozzák létre a beszerzéseket és a beszerzési tranzakciókat a Tárgyi eszközök modulban manuális naplóbejegyzések vagy -javaslatok használatával. 
 
-Ez a témakör az egyes módszerekről nyújt részletes tájékoztatást.
+Ez a cikk az egyes módszerek részleteit tárgyalja.
 
 ## <a name="methods-for-manually-creating-fixed-assets"></a> Módszerek tárgyi eszközök manuális létrehozásához
 Olyan szállítói számla feladásakor, amelynél a sorokban tárgyieszközszám van megadva, amennyiben a Tárgyi eszközök paraméterei oldalon a Tárgyi beszerzés engedélyezése a Beszerzéstől jelölőnégyzet be van jelölve, a beszerzés feladása automatikusan megtörténik, és az eszköz állapota Nyitott értékre változik. 

@@ -1,6 +1,6 @@
 ---
 title: Bérlistában szereplő dolgozói juttatási terv
-description: Ez a témakör részleteket és egy példa lekérdezést tartalmaz a Bérlistában szereplő dolgozói juttatási tervhez a Dynamics 365 Human Resources szolgáltatásban.
+description: 'Ez a cikk részletes adatokat és példalekérdezéseket tartalmaz a bérlista dolgozói juttatási tervének entitáshoz a következőben: <a0/<a0/<a3/Dynamics 365 Human Resources.'
 author: twheeloc
 ms.date: 07/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ade1c789716ea5f559a73c8551b7c1adf030b806
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: ef45855d9e60131ac065ae6e2769b71ae3f69537
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533796"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902285"
 ---
 # <a name="payroll-worker-benefit-plan"></a>Bérlistában szereplő dolgozói juttatási terv
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533796"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a téma a Bérlistában szereplő dolgozói juttatási terv entitást írja le a Dynamics 365 Human Resources szolgáltatáshoz.
+Ez a témakör a dolgozói juttatási terv bérlistaentitását ismerteti Dynamics 365 Human Resources.
 
 Fizikai név: mshr_payrollworkerbenefitplanentities.
 

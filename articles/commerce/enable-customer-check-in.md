@@ -1,6 +1,6 @@
 ---
 title: Vevői bejelentkezéssel kapcsolatos értesítések engedélyezése a pénztárnál (POS)
-description: Ez a témakör azt ismerteti, hogyan lehet engedélyezni a Microsoft Dynamics 365 Commerce pénztár (POS) szolgáltatásban engedélyezni a vevői bejelentkezéssel kapcsolatos értesítéseket.
+description: Ez a témakör azt ismerteti, hogyan lehet engedélyezni Microsoft Dynamics 365 Commerce a vevői bejelentkezéssel kapcsolatos értesítéseket a pénztárnál.
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 95b4e3a1750cf072db919492f7445e87654701da
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ae53657c95128eae793f670bd9dbc31d9fac0fe4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885145"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Vevői bejelentkezéssel kapcsolatos értesítések engedélyezése a pénztárnál (POS)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet engedélyezni a Microsoft Dynamics 365 Commerce pénztár (POS) szolgáltatásban engedélyezni a vevői bejelentkezéssel kapcsolatos értesítéseket.
+Ez a témakör azt ismerteti, hogyan lehet engedélyezni Microsoft Dynamics 365 Commerce a vevői bejelentkezéssel kapcsolatos értesítéseket a pénztárnál.
 
 A szervezet a „rendelés készen áll a felvételre” e-mailjeiben egy hivatkozást vagy gombot biztosít, hogy a vevők értesítsék az üzletet arról, hogy a létesítményben vannak, és arra várnak, hogy kihozzák hozzájuk a csomagjukat. A vevők ezt követően megerősítést kapnak a bejelentkezésükről, és az üzlet értesítést kap a pénztár alkalmazásában. Ez a feladat arra kéri az értékesítési munkatársat, hogy a rendelést kivigye a vevő járművéhez. A vevőnek tehát nem kell bemennie az üzletbe.
 
@@ -68,25 +68,25 @@ A vevői bejelentkezés funkció tesztelése érdekében kövesse az alábbi lé
 
 1. A vevői bejelentkezés oldal létrehozása, majd a vevői bejelentkezés modul hozzáadása és konfigurálása. A további tudnivalókat lásd [a Be- és felvétel modulban](check-in-pickup-module.md). 
 1. Ellenőrizze az oldalon, de ne tegye közzé.
-1. Adja hozzá a következő hivatkozást egy e-mail sablonhoz, amelyet egy felvételes szállítási mód csomagolásának teljes értesítési típusa hív meg. További tájékoztatás: [Tranzakciós események e-mail sablonjainak létrehozása](email-templates-transactions.md).
+1. Adja hozzá a következő hivatkozást egy e-mail sablonhoz, amelyet egy felvételes szállítási mód csomagolásának teljes értesítési típusa hív meg. További tájékoztatás: Tranzakciós események [e-mail sablonjainak létrehozása](email-templates-transactions.md).
 
-    - **Termelés előtti (UAT) környezetek esetén: Adja hozzá a kódrészletet a témakör korábbi, Tranzakciós e-mail sablonjának**[konfigurálása](#configure-the-transactional-email-template) szakaszból.
-    - **Éles környezetben: Adja meg a következő megjegyzést, hogy a meglévő vevőket ne befolyásolja** a probléma.
+    - **Termelés előtti (UAT) környezetek esetén:** Adja hozzá a kódrészletet [a](#configure-the-transactional-email-template) cikk korábbi, A tranzakciós e-mail sablonjának konfigurálása szakaszból.
+    - **Éles környezetben:** Adja meg a következő megjegyzést, hogy a meglévő vevőket ne befolyásolja a probléma.
 
         `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
 
 1. Rendelés létrehozása, amelyben meg van adva a válogatásos szállítás módja.
-1. Amikor meg megkapja a csomagolási teljes értesítési típus által kiváltott e-mailt, a korábban megadott URL-címet kapó beküldési lap megnyitásával tesztelje a be- és bejelentkezést. Mivel az URL-cím tartalmazza a jelzőt, a rendszer a lap megtekintése előtt kéri a `&preview=inprogress` hitelesítést.
+1. Amikor meg megkapja a csomagolási teljes értesítési típus által kiváltott e-mailt, a korábban megadott URL-címet kapó beküldési lap megnyitásával tesztelje a be- és bejelentkezést. Mivel az URL-cím tartalmazza a jelzőt `&preview=inprogress`, a rendszer a lap megtekintése előtt kéri a hitelesítést.
 1. Adja meg a modul konfigurálásához szükséges további információkat.
 1. Ellenőrizze, hogy a bejelentkezés visszaigazolási nézete megfelelően látható-e.
 1. A rendelés felvételét lehetővé tárolják az üzlet POS-terminálját.
-1. Válassza ki a csempe felvenni kívánt rendeléseit, és ellenőrizze, hogy **megjelenik**-e a rendelés.
+1. Válassza ki **a csempe felvenni kívánt rendeléseit**, és ellenőrizze, hogy megjelenik-e a rendelés.
 1. Győződjön meg róla, hogy a részleteket tartalmazó ablakban megjelennek a betekintő modulban konfigurált további információk.
 
 Miután ellenőrizte, hogy a vevői bejelentkezés funkció a végtől a végéig működik, kövesse ezeket a lépéseket.
 
 1. A be check-in oldal közzététele
-1. Ha éles környezetben tesztel, akkor az URL-cím meghagyása a "rendelés felvételre kész" e-mail sablonban, hogy az **I am here link vagy button** megjelenik. Ezután töltse be újra a sablont.
+1. Ha éles környezetben tesztel, akkor az URL-cím meghagyása a "rendelés felvételre kész" e-mail sablonban, **hogy az I am here** link vagy button megjelenik. Ezután töltse be újra a sablont.
 
 ## <a name="additional-resources"></a>További erőforrások
 

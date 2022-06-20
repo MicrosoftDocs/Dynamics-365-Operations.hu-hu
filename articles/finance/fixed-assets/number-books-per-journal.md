@@ -1,6 +1,6 @@
 ---
 title: Könyvek száma naplónként
-description: Ez a témakör azt mutatja be, hogyan viszonyul a napló- és a tárgyi eszközök között a tárgyi eszközbeszerzési vagy értékcsökkenési javaslat kötegelt feladattal történő létrehozásakor. Megadhatja, hogy hány könyv szerepeljen az egyes beszerzéseknél és az értékcsökkenéseknél.
+description: Ez a témakör ismerteti a naplók és az eszközkönyvek közötti viszonyt, amikor egy kötegelt feladat segítségével tárgyieszköz-beszerzési vagy értékcsökkenési javaslatot hoz létre. Megadhatja, hogy hány könyv szerepeljen az egyes beszerzéseknél és az értékcsökkenéseknél.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1e37d40c30d784eea5ba097447f2b2e69920830a
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2dbd50963cf13f00e09b82e884cd8ebc0b67d424
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722380"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883329"
 ---
 # <a name="number-of-books-per-journal"></a>Könyvek száma naplónként
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan viszonyul a napló- és a tárgyi eszközök között a tárgyi eszközbeszerzési vagy értékcsökkenési javaslat kötegelt feladattal történő létrehozásakor. A **Tárgyi eszközök paraméterei** lap (**Tárgyi eszközök \> Beállítás \> Tárgyi eszközök paraméterei**) **Általános** fülön megadhatja az egyes beszerzéseknél és az értékcsökkenéseknél lévő **Naplónkénti könyvek száma**. Ezekkel a mezőkkel eloszthatók a tárgyi eszközkönyvek száma a beszerzési naplóban és az értékcsökkenési naplóban.
+Ez a témakör ismerteti a naplók és az eszközkönyvek közötti viszonyt, amikor egy kötegelt feladat segítségével tárgyieszköz-beszerzési vagy értékcsökkenési javaslatot hoz létre. A **Tárgyi eszközök paraméterei** lap (**Tárgyi eszközök \> Beállítás \> Tárgyi eszközök paraméterei**) **Általános** fülön megadhatja az egyes beszerzéseknél és az értékcsökkenéseknél lévő **Naplónkénti könyvek száma**. Ezekkel a mezőkkel eloszthatók a tárgyi eszközkönyvek száma a beszerzési naplóban és az értékcsökkenési naplóban.
 
 Egy beszerzési javaslat esetében az alapértelmezett érték legalább 10.000 könyv. Egy értékcsökkentési javaslat esetében az alapértelmezett érték legalább 2.000 könyv.
 

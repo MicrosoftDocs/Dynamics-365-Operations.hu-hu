@@ -1,6 +1,6 @@
 ---
 title: Kis értékű tárgyi eszközök
-description: Ez a témakör a Magyarországon használt kis értékű tárgyi eszközökhöz tartalmaz információt.
+description: Ez a cikk a kis költségű tárgyi eszközökről nyújt tájékoztatást Magyarország számára.
 author: EvgenyPopovMBS
 ms.date: 10/31/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 76b68eef1df5ec80684f7349df847cdd8f81e867e9dc460e3310b3f4955db66e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c15b92d5727f1605e9918a63bb3d04d421cfbbad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880628"
 ---
 # <a name="low-cost-fixed-assets"></a>Kis értékű tárgyi eszközök
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Magyarországon használt kis értékű tárgyi eszközökhöz tartalmaz információt.
+Ez a cikk a kis költségű tárgyi eszközökről nyújt tájékoztatást Magyarország számára.
 
 A kis értékű tárgyi eszköz olyan eszköz, amelynek a beszerzési költsége nem halad meg egy előre meghatározott összeget. A magyar adójog meghatározza a kis értékű tárgyi eszközök összeghatárát (küszöbértékét). Ezek az eszközök teljes mértékben leírhatók a beszerzéssel egy időben.
 

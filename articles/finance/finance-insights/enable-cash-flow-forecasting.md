@@ -1,6 +1,6 @@
 ---
 title: A pénzforgalom előrejelzésének lehetővé tétele
-description: Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Pénzforgalmi előrejelzések funkcióját a pénzügyi elemzésekben.
+description: Ez a témakör bemutatja a Pénzügyi információk funkció pénzforgalmi előrejelzési funkcióját.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8dba56af53090d5d78632da4d414143b136f8a8d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 253e3ea9c1c44573b37503f167b4cb3860683c10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859875"
 ---
 # <a name="enable-cash-flow-forecasting"></a>A pénzforgalom előrejelzésének lehetővé tétele
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a Pénzügyi információk pénzforgalmi előrejelzési funkció bekapcsolt funkcióját.
+Ez a cikk bemutatja, hogy hogyan lehet bekapcsolni a Pénzügyi információk pénzforgalmi előrejelzési funkcióját.
 
 > [!NOTE]
 > Ha fizetési előrejelzéseket szeretne használni a pénzforgalomban, be kell állítania a Vevői fizetési előrejelzések funkciót a [Vevői fizetési előrejelzések engedélyezése](enable-cust-paymnt-prediction.md) című részben leírtak szerint.

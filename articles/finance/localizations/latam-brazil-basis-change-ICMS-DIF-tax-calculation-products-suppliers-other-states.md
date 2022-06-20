@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2022-1-17
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 63e3cbaaf77456b55f08ea91831ba9d49cb57185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1fde18c79f375db4db6bc52cdb5c40a61625ae63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689156"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868262"
 ---
 # <a name="basis-change-in-icms-dif-tax-calculations-for-products-from-suppliers-in-other-states"></a>Más államok szállítói termékeire vonatkozó ICMS-DIF adószámítások alapváltozása
 

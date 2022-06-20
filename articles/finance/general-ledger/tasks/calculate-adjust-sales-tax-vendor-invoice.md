@@ -1,6 +1,6 @@
 ---
 title: Szállítói számla áfatartalmának kiszámítása és kiigazítása
-description: Ez a témakör bemutatja, hogy hogyan lehet módosítani a forgalmi adót a Dynamics 365 Pénzügy egyik szállítói számláján.
+description: Ez a cikk bemutatja, hogy hogyan lehet módosítani a forgalmi adót a Dynamics 365 Pénzügy egyik szállítói számláján.
 author: twheeloc
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d4d6a23f6f58906730c5ce00c5fe06885aaa6da
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9a1093631688351d065d6b55bc65055b6f92d256
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734689"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868364"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Szállítói számla áfatartalmának kiszámítása és kiigazítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet helyesbíteni az áfát egy szállítói számlán. Ha az eredeti forrásbizonylat eltérő adóösszegeket jelenít meg számítva, akkor feladás előtt ezeket az összegeket módosíthatja. Ez a feladat az DEMF bemutatócéget használja.
+Ez a cikk bemutatja, hogyan lehet módosítani a szállítói számlákon szereplő forgalmi adót. Ha az eredeti forrásbizonylat eltérő adóösszegeket jelenít meg számítva, akkor feladás előtt ezeket az összegeket módosíthatja. Ez a feladat az DEMF bemutatócéget használja.
 
 1. Ugrás a Kötelezettségek **> számlanapló > lapra**.
 2. Válassza az **Új** lehetőséget.

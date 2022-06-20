@@ -1,6 +1,6 @@
 ---
-title: Médiatár modul
-description: Ez a témakör a médiatár modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: Médiagaléria modul
+description: Ez a témakör a médiagaléria modulokat ismerteti, és bemutatja, hogyan lehet őket a webhelyoldalakhoz hozzáadni Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 0d05129145c5d6c3967b243cb0855a1c4fd3e84e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 73eba2c39f9ebf1e4092545565b8cbf2db75cfb5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881735"
 ---
 # <a name="media-gallery-module"></a>Médiagaléria modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a médiatár modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör a médiagaléria modulokat ismerteti, és bemutatja, hogyan lehet őket a webhelyoldalakhoz hozzáadni Microsoft Dynamics 365 Commerce.
 
 A médiatár modulok egy vagy több képet jelenítenek meg a galéria nézetben. A médiatár modulok támogatják a miniatűr képek vízszintes (a kép alatti sorként) vagy függőleges (a kép melletti oszlopként) elrendezését is. A médiatár modulok olyan képességeket is biztosítanak, amelyek lehetővé teszik a képek nagyítását vagy teljes képernyős módban való megtekintését. A médiatár modulban történő megjelenítéshez egy képnek a Commerce webhelykészítő médiatárában kell lennie. Jelenleg a médiatár modulok csak képeket támogatnak.
 
@@ -78,7 +78,7 @@ Amikor a kép forrása a lap kontextusából származik, a PDP termékazonosít�
 A következő lépésekkel lehet hozzáadni egy médiatár-modult egy marketing laphoz.
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
-1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra.**
+1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra**.
 1. Válassza ki a **három** pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget** a Törzsnél.
 1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **az Alapértelmezett** lap modult, majd kattintson az **OK gombra**.
 1. Az alapértelmezett **oldal** főbejáratában válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.

@@ -1,6 +1,6 @@
 ---
 title: Visszatérítési fizetések feldolgozása hívásközpontoknál
-description: Ez a témakör bemutatja, hogyan generálja a program a kifizetések visszatérítését a hívásközpontokon keresztül a visszatérítések létrehozása, illetve a rendelések vagy rendeléssorok érvénytelenítése esetén.
+description: Ez a cikk bemutatja, hogy hogyan generálja a program a kifizetések visszatérítését a hívásközpontokkal a visszaküldések létrehozása, illetve a rendelések vagy rendeléssorok érvénytelenítésének esetén.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 330674a31dc59e99ffedb82d0896c64214562eb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880114"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Visszatérítési fizetések feldolgozása hívásközpontoknál
 
-Ez a témakör bemutatja, hogyan generálja a program a kifizetések visszatérítését a hívásközpontokon keresztül a visszatérítések létrehozása, illetve a rendelések vagy rendeléssorok érvénytelenítése esetén.
+Ez a cikk bemutatja, hogy hogyan generálja a program a kifizetések visszatérítését a hívásközpontokkal a visszaküldések létrehozása, illetve a rendelések vagy rendeléssorok érvénytelenítésének esetén.
 
 Az a felhasználó, aki visszárurendelést hoz létre egy vevőnek hívásközponti felhasználóként a Microsoft Dynamics 365 Commerce alkalmazásban, a **Visszárurendelés** lapon létrehozza a kezdeti visszáru-jóváhagyást (RMA). Az RMA határozza meg, hogy a vevő milyen termékeket szeretne visszaküldeni vagy kicserélni, és létrehoz egy kapcsolt visszárurendelést, amely a **Visszaküldött rendelés** rendeléstípussal rendelkezik. Ez a kapcsolt visszaküldött rendelés a visszaküldött készlet feladásának, valamint a feladott jóváírások és kifizetés-visszatérítések nyomon követésére használható.
 
@@ -33,7 +33,7 @@ A hívásközponti logika határozza meg a visszatérítési fizetési sor fizet
 
 A hívásközpont az eredeti rendelés fizetési módja alapján határozza meg a visszárurendelésre alkalmazandó fizetési módot. Ez a folyamat az eredeti fizetési módokon a következőképpen működik:
 
-- **Normál** (készpénz) vagy **Csekk** – ha a létrehozott visszárurendelés olyan eredeti rendelésre hivatkozik, amelyet a normál (készpénzes) vagy csekkfizetési típus használatával fizettek ki, akkor a hívásközponti alkalmazás a **Hívásközponti visszatérítési módok** lapján található konfigurációkra hivatkozik. Ez a lap lehetővé teszi a szervezetek számára, hogy a rendelés pénzneme szerint meghatározzák, hogyan adták ki a vevőknek az eredetileg a normál vagy csekkes fizetéstípussal kifizetett rendelések visszatérítését. A Hívásközpont visszatérítési módok lapja azt is lehetővé teszi a szervezetek számára, hogy kiválasztják, kell-e rendszer által generált visszatérítési csekket küldeni a **vevőnek**. Ilyen helyzetekben a hívásközponti logika a visszárurendelés pénznemére hivatkozik, majd az ahhoz a pénznemhez a **Kiskereskedelmi fizetési mód** értékével hoz létre visszatérítési fizetési sort a visszáruértékesítési rendelésen. Később a pénznemhez kapcsolva létezik egy kinnlevőségek (AR) vevői fizetési napló, amely a leképezett kinnlevőségek fizetési módot használja.
+- **Normál** (készpénz) vagy **Csekk** – ha a létrehozott visszárurendelés olyan eredeti rendelésre hivatkozik, amelyet a normál (készpénzes) vagy csekkfizetési típus használatával fizettek ki, akkor a hívásközponti alkalmazás a **Hívásközponti visszatérítési módok** lapján található konfigurációkra hivatkozik. Ez a lap lehetővé teszi a szervezetek számára, hogy a rendelés pénzneme szerint meghatározzák, hogyan adták ki a vevőknek az eredetileg a normál vagy csekkes fizetéstípussal kifizetett rendelések visszatérítését. A **Hívásközpont visszatérítési módok** lapja azt is lehetővé teszi a szervezetek számára, hogy kiválasztják, kell-e rendszer által generált visszatérítési csekket küldeni a vevőnek. Ilyen helyzetekben a hívásközponti logika a visszárurendelés pénznemére hivatkozik, majd az ahhoz a pénznemhez a **Kiskereskedelmi fizetési mód** értékével hoz létre visszatérítési fizetési sort a visszáruértékesítési rendelésen. Később a pénznemhez kapcsolva létezik egy kinnlevőségek (AR) vevői fizetési napló, amely a leképezett kinnlevőségek fizetési módot használja.
 
     A következő ábra egy olyan helyzetet mutat be, amikor a vevő az USD pénznemhez kapcsolódó értékesítési rendelésből küld vissza termékeket, és amelyeket eredetileg a normál vagy csekkes fizetéstípussal fizettek ki. Ebben az esetben a rendszer létrehoz egy visszatérítési csekket, és a vevő ezen kapja meg a visszatérítést. A **REF-CHK** kinnlévőségek fizetési módot visszatérítési csekkes fizetéstípusként állították be.
 
@@ -92,7 +92,7 @@ Az **Igen** beállítás a **Jóváírás alkalmazása** beállításnál csak a
 
 ## <a name="payment-overrides-for-call-center-returns"></a>Hívásközponti visszáruk kifizetés-felülbírálásai
 
-Bár a hívásközponti logika szisztematikusan határozza meg a visszatérítési fizetési módot a témakörben korábban ismertetett módon, előfordulhat, hogy a felhasználók időnként felül szeretnék bírálni ezeket a kifizetéseket. Például egy felhasználó szerkesztheti vagy eltávolíthatja a meglévő visszatérítési kifizetési sorokat, és új kifizetési sorokat alkalmazhat. A rendszer által kiszámított visszatérítési kifizetéseket csak azok a felhasználók módosíthatják, akik megfelelő felülbírálási engedélyekkel rendelkeznek. Ezek az engedélyek a Kiskereskedelem és kereskedelem rendszer **Engedélyek felülbírálása** lapján konfigurálhatók. Visszatérítési kifizetés felülbírálása esetén a felhasználót egy olyan biztonsági szerepkörhöz kell kapcsolni, ahol az **Alternatív fizetés engedélyezése** beállítás **Igen** értékre van állítva az **Engedélyek felülbírálása** lapon.
+Bár a hívásközponti logika módszerrel határozzák meg a visszatérítési fizetési módot a jelen cikk korábbi leírásának megfelelő módon, a felhasználók időnként felülbírálhatják ezeket a kifizetéseket. Például egy felhasználó szerkesztheti vagy eltávolíthatja a meglévő visszatérítési kifizetési sorokat, és új kifizetési sorokat alkalmazhat. A rendszer által kiszámított visszatérítési kifizetéseket csak azok a felhasználók módosíthatják, akik megfelelő felülbírálási engedélyekkel rendelkeznek. Ezek az engedélyek a Kiskereskedelem és kereskedelem rendszer **Engedélyek felülbírálása** lapján konfigurálhatók. Visszatérítési kifizetés felülbírálása esetén a felhasználót egy olyan biztonsági szerepkörhöz kell kapcsolni, ahol az **Alternatív fizetés engedélyezése** beállítás **Igen** értékre van állítva az **Engedélyek felülbírálása** lapon.
 
 ![Alternatív fizetési beállítás engedélyezése az Engedélyek felülbírálása lapon.](media/overridepermissions.png)
 

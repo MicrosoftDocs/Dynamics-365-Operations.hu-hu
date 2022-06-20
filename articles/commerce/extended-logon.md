@@ -1,6 +1,6 @@
 ---
 title: A kiterjesztett bejelentkezési képesség beállítása és használata
-description: Ez a témakör azt ismerteti, Microsoft Dynamics 365 Commerce hogyan lehet beállítani és használni a pénztári alkalmazás kiterjesztett bejelentkezési képességét.
+description: Ez a cikk azt ismerteti, hogyan Microsoft Dynamics 365 Commerce lehet beállítani és használni a pénztári alkalmazás kiterjesztett bejelentkezési képességét.
 author: boycez
 ms.date: 03/18/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d211ecfe1550f6093e1d35e7c2b37c036b50dd4a
-ms.sourcegitcommit: 5aebb181004eb63210503fb566dcda5c55032bee
+ms.openlocfilehash: e27e8d94adccc46559089928b0481442306567ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "8491439"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884311"
 ---
 # <a name="set-up-and-use-the-extended-logon-capability"></a>A kiterjesztett bejelentkezési képesség beállítása és használata
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt ismerteti, Microsoft Dynamics 365 Commerce hogyan lehet beállítani és használni a pénztári alkalmazás kiterjesztett bejelentkezési képességét.
+Ez a cikk azt ismerteti, hogyan Microsoft Dynamics 365 Commerce lehet beállítani és használni a pénztári alkalmazás kiterjesztett bejelentkezési képességét.
 
 A Cloud POS (CPOS) és a Modern POS (MPOS) egy kiterjesztett bejelentkezési funkciót biztosít, amely lehetővé teszi a kiskereskedelmi üzlet dolgozóinak, hogy egy vonalkód beolvasásával vagy egy kártya mágnescsíkolvasóval történő leolvasásával jelentkezzenek be a POS-alkalmazásba.
 

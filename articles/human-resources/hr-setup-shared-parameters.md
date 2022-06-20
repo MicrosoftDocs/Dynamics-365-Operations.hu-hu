@@ -1,6 +1,6 @@
 ---
 title: Megosztott paraméterek konfigurálása
-description: Ez a témakör bemutatja az emberi erőforrások paramétereinek jogi személyek közötti beállítását.
+description: A cikk ismerteti a jogi személyek közötti emberi erőforrás-paraméterek beállítását.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e59745e01905be50e6908fb9587b8afc17604382
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c0d8dbca302d90cc402feb4715a6fcc2b935d8b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906182"
 ---
 # <a name="configure-shared-parameters"></a>Megosztott paraméterek konfigurálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A több vállalat között megosztott rekordokra vonatkozó megosztott paramétereket is be kell állítania, például **a Pozíciórekordok** beállítását. Ez a témakör bemutatja az emberi erőforrások paramétereinek jogi személyek közötti beállítását.
+A több vállalat között megosztott rekordokra vonatkozó megosztott paramétereket is be kell állítania, például **a Pozíciórekordok** beállítását. A cikk ismerteti a jogi személyek közötti emberi erőforrás-paraméterek beállítását.
 
 Bizonyos típusú rekordok, például **a pozíciórekordok**, vállalatok között meg vannak osztva. Ezen bejegyzésekhez megosztott paramétereket kell beállítani. Például az Emberi erőforrások megosztott **paraméterei** lap használatával lehet beállítani az emberi erőforrások paramétereit a jogi személyek között. 
 

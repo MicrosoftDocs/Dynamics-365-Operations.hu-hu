@@ -1,6 +1,6 @@
 ---
 title: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
-description: Ebből a témakörből megtudhatja, hogyan vehet fel adatmezőket az X++ bővítmények használatával az adóintegrációban.
+description: Ez a cikk bemutatja, hogy hogyan lehet X++ bővítményeket használni az adóintegrációs adatmezők hozzáadásához.
 author: qire
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 184012dcc0b68e017bb28d8d73caa9e8415bdbfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695388"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871049"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Adatmezők hozzáadása az adóintegrációhoz bővítmény használatával
 
 [!include [banner](../includes/banner.md)]
 
 
-Ebből a témakörből megtudhatja, hogyan vehet fel adatmezőket az X++ bővítmények használatával az adóintegrációban. Ezek a mezők kiterjeszthetőek az adózási szolgáltatás adózási adatmodelljéhez, és az adókódok meghatározására használhatók. További információt az [Adatmezők hozzáadása az adókonfigurációkban](tax-service-add-data-fields-tax-configurations.md) részben talál.
+Ez a cikk bemutatja, hogy hogyan lehet X++ bővítményeket használni az adóintegrációs adatmezők hozzáadásához. Ezek a mezők kiterjeszthetőek az adózási szolgáltatás adózási adatmodelljéhez, és az adókódok meghatározására használhatók. További információt az [Adatmezők hozzáadása az adókonfigurációkban](tax-service-add-data-fields-tax-configurations.md) részben talál.
 
 ## <a name="data-model"></a>Adatmodell
 
@@ -359,7 +359,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 Ebben a kódban `_destination` ez a csomagolóobjektum, amely a kérést generálja, és `_source` ez az `TaxIntegrationLineObject` objektum.
 
 > [!NOTE]
-> A kérésben saját korlátozásként **használt mezőnév megadása**. A karakterláncnak pontosan meg kell egy lennie a csomópont nevével (nem a címkével), [amely az Adókonfigurációk Adatmezőinek hozzáadása témakörben van hozzáadva](tax-service-add-data-fields-tax-configurations.md).
+> A kérésben saját korlátozásként **használt mezőnév megadása**. A karakterláncnak pontosan meg kell egy lennie a csomópont nevével (nem a címkével), [amely az Adókonfigurációk Adatmezők hozzáadása mezőjében található](tax-service-add-data-fields-tax-configurations.md).
 > 
 > Állítsa be a **mezőt a copyToTaxableDocumentLineWrafromTaxIntegrationLineObjectByLine metódusban** **a SetField metódus** használatával. A második paraméter adattípusának karakterláncnak kell **lennie**. Ha az adattípus nem **karakterlánc**, konvertálja karakterláncra.
 > Ha az adattípus X++ **enum** típusú, akkor javasoljuk, **hogy az enum2Symbol** metódust használja az enum érték karakterláncgé konvertálására. Az adókonfigurációban hozzáadott felsorolási értéknek pontosan meg kell egy lennie a felsorolás nevével. Az alábbiakban a felsorolási érték, címke és név eltérései vannak felsorolva.
@@ -382,7 +382,7 @@ A projekt sikeres felépítéséhez adja hozzá a következő hivatkozási model
 
 Az előző lépések befejezése után ellenőrizheti a változtatásokat.
 
-1. A Pénzügyben menjen a Kötelezettségek **lapra**, **és adja hozzá az URL-címhez a &debug=vsCconfirmExit%2>** gombra. Például. `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&` A végső **&** döntés alapvető fontosságú.
+1. A Pénzügyben menjen a Kötelezettségek **lapra**, **és adja hozzá az URL-címhez a &debug=vs%2 CconfirmExit>** gombra. Például. `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&` A végső **&** döntés alapvető fontosságú.
 2. Nyissa meg **a Beszerzési rendelés lapot**, és a beszerzési rendelés létrehozásához **válassza az Új** lehetőséget.
 3. Állítsa be az testreszabott mező értékét, majd válassza az Áfa **értéket**. **A TaxServiceTuubleshootingLog** előtaggal együtt automatikusan letölt egy hibakeresési fájlt. Ez a fájl az adószámítási szolgáltatásba feladott tranzakcióadatokat tartalmazza. 
 4. Ellenőrizze, hogy az adószolgáltatás számításának **bemeneti JSON** szakaszában adva van-e meg az testreszabott mező, és helyes-e az értéke. Ha az érték nem megfelelő, ellenőrizze duplán a dokumentum lépéseit.

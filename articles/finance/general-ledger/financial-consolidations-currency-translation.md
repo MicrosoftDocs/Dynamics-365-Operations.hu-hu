@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi konszolidáció és pénznemátváltás áttekintése
-description: Ez a témakör leírja a pénzügyi konszolidálási és devizaátváltási tranzkaciókat a főkönyvben.
+description: Ez a témakör a pénzügyi konszolidációkat és a főkönyv pénznemének átszámítását írja le.
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6f0094ac3307164e1c715a71e16b0766247e275
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846857"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Pénzügyi konszolidáció és pénznemátváltás áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Pénzügyi és Pénzügyi jelentések konszolidációs célokra használt megközelítésének végigkörét veszi. Leírja, kapcsolódó többvállalatos jelentéskészítéssel, összesítéssel, eltávolítással és kisebbség kamattal kapcsolatos eseteket. Azt is bemutatja, hogyan kezelje a különleges helyzeteket, például ha jogi személyek különböző pénzügyi időszakokkal vagy a számlatükörrel rendelkeznek.
+Ez a cikk a Microsoft Dynamics 365 Pénzügyi és Pénzügyi jelentés konszolidációkhoz használt megközelítésének végigmeni. Leírja, kapcsolódó többvállalatos jelentéskészítéssel, összesítéssel, eltávolítással és kisebbség kamattal kapcsolatos eseteket. Azt is bemutatja, hogyan kezelje a különleges helyzeteket, például ha jogi személyek különböző pénzügyi időszakokkal vagy a számlatükörrel rendelkeznek.
 
-Ez a témakör a felhasználók és működési tanácsadók számára készült, és azt feltételezi, hogy olvasók általános ismeretekkel rendelkeznek a Pénzügy és pénzügyi jelentések terén. Az általános beállítások nincsenek bemutatva.
+Ez a cikk a felhasználók és a funkcionális tanácsadók számára íródott, és feltételezi, hogy az olvasó általánosan megért a Pénzügyi és Pénzügyi jelentésekkel. Az általános beállítások nincsenek bemutatva.
 
 > [!NOTE]
-> A *jogi személy* kifejezés a Finance esetében, míg a *vállalat* a Financial reportingban használatos. A témakör mindkét fogalmat használja. Azonban e témakör esetében azok jelentése megegyezik.
+> A *jogi személy* kifejezés a Finance esetében, míg a *vállalat* a Financial reportingban használatos. Mindkét feltétel ebben a cikkben használatos. A cikk szempontjából azonban jelentésük megegyezik.
 
 ## <a name="audience"></a>Közönség
-Ez a témakör a pénzüggyel és könyveléssel foglalkozó felhasználóknak és pályázati tanácsadóknak szól akik a Finance and Reporting és a Financial reporting eszközöket többvállalatos és többpénznemes adatokhoz szeretnék használni.
+Ez a cikk a pénzügyi és számviteli felhasználóknak és az alkalmazás-tanácsadóknak szánt, akik a pénzügyi és jelentéskészítési és pénzügyi jelentéskészítés segítségével kíván több vállalatot és több pénznemű adatokat konszolidálni.
 
 ## <a name="approach"></a>Megközelítés
 A Finance önálló jogi személyt használ a konszolidációs folyamatokhoz. Lehetővé teszi, hogy egyetlen-példányos konszolidációt de lehetővé teszi más forrásból származó adatok bevonását is. A konszolidációs folyamatot mindannyiszor kell futtatni, amikor módosítás történik a forrás jogi személynél.

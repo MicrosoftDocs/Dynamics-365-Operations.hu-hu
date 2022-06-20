@@ -1,6 +1,6 @@
 ---
 title: Lízingjóváhagyási munkafolyamatok használata
-description: Ez a témakör bemutatja, hogyan használhatók munkafolyamatok az eszközlízingek jóváhagyására, és hogyan követhetők nyomon a munkafolyamatok állapota és előzményei.
+description: Ez a cikk bemutatja, hogy hogyan lehet munkafolyamatokat használni az eszközbérletek jóváhagyására, és hogyan lehet nyomon követni a munkafolyamatok állapotát és előzményeit.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0b35dfa599895cb39cdd6a0a95fdcdcc54c45044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 4205b83919f0b3c30a4b5d8e3290af230f538f39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724925"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906442"
 ---
 # <a name="use-lease-approval-workflows"></a>Lízingjóváhagyási munkafolyamatok használata
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan használhatók munkafolyamatok az eszközlízingek jóváhagyására, és hogyan követhetők nyomon a munkafolyamatok állapota és előzményei. A munkafolyamatok segítenek a lízingjóváhagyások kezelésének konzisztenciáját a jóváhagyási lépések szabványos készletének biztosításával és a folyamat egyes lépéseit jóváhagyó felhasználók hozzárendelésével. A jóváhagyó jóváhagyhatja a lízinget, elutasíthatja, módosíthatja azt, vagy hozzárendelheti egy másik felhasználóhoz jóváhagyásra. A munkafolyamatok nagyobb betekintést nyerhetnek a jóváhagyási folyamatba azáltal, hogy nyomon követhetik azok állapotát és előzményeit. Ezenkívül megtekinthet egy központi munkalistát, amely felsorolja az adott jóváhagyókhoz rendelt feladatokat és jóváhagyásokat.
+Ez a cikk bemutatja, hogy hogyan lehet munkafolyamatokat használni az eszközbérletek jóváhagyására, és hogyan lehet nyomon követni a munkafolyamatok állapotát és előzményeit. A munkafolyamatok segítenek a lízingjóváhagyások kezelésének konzisztenciáját a jóváhagyási lépések szabványos készletének biztosításával és a folyamat egyes lépéseit jóváhagyó felhasználók hozzárendelésével. A jóváhagyó jóváhagyhatja a lízinget, elutasíthatja, módosíthatja azt, vagy hozzárendelheti egy másik felhasználóhoz jóváhagyásra. A munkafolyamatok nagyobb betekintést nyerhetnek a jóváhagyási folyamatba azáltal, hogy nyomon követhetik azok állapotát és előzményeit. Ezenkívül megtekinthet egy központi munkalistát, amely felsorolja az adott jóváhagyókhoz rendelt feladatokat és jóváhagyásokat.
 
 Az eljárás használata előtt győződjön meg arról, hogy legalább a lízingjóváhagyási munkafolyamat létrejött. Ha nem létezik munkafolyamat, hozzon létre egyet. A munkafolyamat beállításáról a [Lízingjóváhagyási munkafolyamatok beállítása](set-up-lease-wrkflw.md) című témakörben talál további információt.
 

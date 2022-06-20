@@ -1,6 +1,6 @@
 ---
 title: Vevő korosítási pillanatképek
-description: Ez a témakör a vevőkorosítási pillanatképekkel kapcsolatban tartalmaz információkat. A korosítási pillanatkép kiszámítja egy vevőcsoport korosított egyenlegeit egy időpontra.
+description: Ez a cikk a vevők korosítási pillanatképekkel kapcsolatban tartalmaz tájékoztatást. A korosítási pillanatkép kiszámítja egy vevőcsoport korosított egyenlegeit egy időpontra.
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54db3e53cd31936ce80f0cdf1147535216d0d4b4
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c1a83f2648b52e436d19a11862e58dc33313f341
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722995"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902573"
 ---
 # <a name="customer-aging-snapshots"></a>Vevő korosítási pillanatképek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a vevőkorosítási pillanatképekkel kapcsolatban tartalmaz információkat. A korosítási pillanatkép kiszámítja egy vevőcsoport korosított egyenlegeit egy időpontra. Létrehozhat korosítási pillanatképrekordokat minden vevőre vagy egy adott vevőgyűjtőben levő vevőkre vonatkozóan.
+Ez a cikk a vevők korosítási pillanatképekkel kapcsolatban tartalmaz tájékoztatást. A korosítási pillanatkép kiszámítja egy vevőcsoport korosított egyenlegeit egy időpontra. Létrehozhat korosítási pillanatképrekordokat minden vevőre vagy egy adott vevőgyűjtőben levő vevőkre vonatkozóan.
 
 A korosítási pillanatkép információ megjelennek a **Korosított egyenlegek** listaoldalon és a **Beszedés** lapon. A listalap használatához előbb létre kell hozni egy korosítási pillanatképet a **Korosított egyenlegek** listaoldalon. A listaoldal csak olyan vevőkről sorol fel információt, amelyek számára lett korosítási pillanatkép készítve.
 

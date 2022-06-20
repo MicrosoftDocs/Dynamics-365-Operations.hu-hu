@@ -1,6 +1,6 @@
 ---
 title: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
-description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a mexikói Elektronikus számlázással kapcsolatos első lépéseket.
+description: Ez a cikk a Mexikóhoz történő elektronikus számlázással kapcsolatban tartalmaz tájékoztatást.
 author: gionoder
 ms.date: 12/01/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 540b6e6f9b4b669957cc3310e473ad59b9210594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855329"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
 
@@ -31,11 +31,11 @@ ms.locfileid: "8565999"
 > [!IMPORTANT]
 > Lehet, hogy Mexikó elektronikus számlázása jelenleg nem minden funkciót támogat a Comprobante Fiscal Digital por Internet (CFDI) dokumentumban, illetve a kapcsolódó integrációban, Microsoft Dynamics amely a 365 Finance vagy az Dynamics 365 Supply Chain Management.
 
-Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a mexikói Elektronikus számlázással kapcsolatos első lépéseket. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Ezenkívül végigvezeti azokon a lépéseken, amelyeket a CFDI a szolgáltatáson keresztül történő elküldése érdekében, a Finance szolgáltatásban követnie kell, valamint bemutatja, hogyan kell áttekinteni a feldolgozási eredményeket és a CFDI-számlák állapotát.
+Ez a cikk a Mexikóhoz történő elektronikus számlázással kapcsolatban tartalmaz tájékoztatást. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Ezenkívül végigvezeti azokon a lépéseken, amelyeket a CFDI a szolgáltatáson keresztül történő elküldése érdekében, a Finance szolgáltatásban követnie kell, valamint bemutatja, hogyan kell áttekinteni a feldolgozási eredményeket és a CFDI-számlák állapotát.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A témakörben található [lépések](e-invoicing-get-started-service-administration.md)[befejezése előtt el kell kezdenie az Elektronikus számlázás szolgáltatásfelügyeletének első lépéseit és az Elektronikus számlázás használatának első lépéseit](e-invoicing-get-started.md).
+A cikk lépéseit csak azt követően tudja végrehajtani, [...](e-invoicing-get-started-service-administration.md)[hogy milyen lépéseket kell végrehajtani az Elektronikus számlázás szolgáltatás felügyelete és az Elektronikus számlázás első lépései modulban](e-invoicing-get-started.md).
 
 ## <a name="set-up-the-cadena-xslt"></a>A Patna XSLT beállítása
 
@@ -141,11 +141,11 @@ A CFDI-számla érvénytelenítésre való beküldéséhez az **Érvénytelenít
 1. A Funkcióverzió **beállítása** **lapon**, a Változók lapon válassza ki a változó nevét(**DigitalSignatureXSLT).**
 2. Az Értékek **mezőben** adja meg a következőt: {"containerUrl":"https://&lt; AccountStorageName&gt;.blob.core.windows.net/&lt; ContainerName&gt;","path":"&lt; RelativePath&gt;"}
    
-    where: \<RelativePath\> = mappanév\\\\ _fájlnév kettős perjelekkel, a ContainerName a szolgáltatáshoz használt tárolót jelöli.
+    where: \<RelativePath\> = mappamappa\\\\ fájlneve dupla perjelekkel, a ContainerName mezőben a szolgáltatáshoz használt tárolót kell jelöli.
    
     Példa a változóra:
     
-    {"path":"xdev xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\\\ cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
+    {"path":"x xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\ dev\\ cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## <a name="assign-the-draft-version-to-an-e-invoicing-environment"></a>A Piszkozat verzió hozzárendelése e-számlázási környezethez
 

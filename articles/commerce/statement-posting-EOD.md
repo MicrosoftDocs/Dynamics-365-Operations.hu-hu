@@ -1,6 +1,6 @@
 ---
 title: Kimutatásfeladás funkcionalitás továbbfejlesztései
-description: Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javításokat.
+description: Ez a témakör a kimutatásfeladási funkció javításait ismerteti.
 author: analpert
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: a7f25a7cc1e214b5c08013055126728b2ad10f3f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886906"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Kimutatásfeladás funkcionalitás továbbfejlesztései
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javítások első készletét. Ezek a fejlesztések érhetők el a Microsoft Dynamics 365 for Finance and Operations 7.3.2 verziójában.
+Ez a témakör a kimutatásfeladási funkció első fejlesztéseit ismerteti. Ezek a fejlesztések érhetők el a Microsoft Dynamics 365 for Finance and Operations 7.3.2 verziójában.
 
 ## <a name="activation"></a>Aktiválás
 

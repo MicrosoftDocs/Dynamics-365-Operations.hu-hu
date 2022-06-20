@@ -1,6 +1,6 @@
 ---
 title: 'A TDS-paraméterek beállítása:'
-description: Ez a témakör bemutatja, hogy hogyan lehet beállítani a paramétereket a forrásnál levont adó (TDS) funkció aktiválásához a megadott tranzakciókban. Ez a lépés szükséges Forrásnál levont adó funkció használatához.
+description: Ez a témakör bemutatja, hogyan lehet beállítani a paramétereket a forrásnál levont adó aktiválásához a megadott tranzakciókban. Ez a lépés szükséges Forrásnál levont adó funkció használatához.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f7c8802d10a065c60894e80c8ff3cb19163d5ffe
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3390cad6979858fbff73769d0d25132ba18a2157
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865613"
 ---
 # <a name="set-the-tds-parameters"></a>A TDS-paraméterek beállítása:
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet beállítani a paramétereket a forrásnál levont adó (TDS) funkció aktiválásához a megadott tranzakciókban. Ez a lépés szükséges Forrásnál levont adó funkció használatához.
+Ez a témakör bemutatja, hogyan lehet beállítani a paramétereket a forrásnál levont adó aktiválásához a megadott tranzakciókban. Ez a lépés szükséges Forrásnál levont adó funkció használatához.
 
 1. Menjen a **Főkönyv \> Főkönyv beállítás \> Főkönyv paraméterei** pontra.
 2. A **Közvetlen adók** lapon a **Forrásnál levont adó** szakaszban állítsa a **TDS aktiválása** lehetőséget **Igen** beállításra a TDS funkció, valamint az ahhoz használt lapok és mezők aktiválásához.

@@ -1,6 +1,6 @@
 ---
 title: Többcsatornás speciális automatikus költségek
-description: Ez a témakör a Commerce csatorna rendeléseihez kapcsolódó egyéb rendelési költségek automatikus költségfunkciók használatával való kezelésére vonatkozó lehetőségeket írja le.
+description: Ez a témakör a Commerce csatornarendelések egyéb rendelési költségeinek speciális automatikus díjak funkcióval való kezelésére nyújt lehetőségeket.
 author: hhaines
 ms.date: 03/24/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
-ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
+ms.openlocfilehash: 412f5befa255d12914444b57918f14ab51243bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "8489618"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851131"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Többcsatornás speciális automatikus költségek
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör tájékoztatást nyújt a speciális automatikus költségek funkció konfigurációjáról és telepítéséről, amely rendelkezésre áll a Dynamics 365 for Retail 10.0 verziójában.
+Ez a cikk a Dynamics 365 for Retail 10.0-s verzióban elérhető automatikus díjak speciális funkcióinak konfigurálásjával és telepítéssel kapcsolatban tartalmaz tájékoztatást.
 
 Ha a speciális automatikus költségek funkciók engedélyezve vannak, akkor az összes támogatott Commerce-csatornában (pénztár (POS), hívásközpont, és az interneten keresztül) kihasználhatja az [automatikus költségek](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációk előnyeit, amelyeket a fejléc- és sorszintű kapcsolódó költségekre vonatkozóan meghatároztak az ERP-alkalmazásban.
 

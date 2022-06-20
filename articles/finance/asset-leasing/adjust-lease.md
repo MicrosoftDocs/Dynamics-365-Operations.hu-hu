@@ -1,6 +1,6 @@
 ---
 title: Lízingek kiigazítása
-description: A témakör azt mutatja be, hogyan lehet beállítani egy lízinget. Előfordulhat, hogy kiigazításra van szükség a lízingfeltételek módosításakor, a lízing meghosszabbításakor vagy más körülmény változásakor.
+description: A cikk bemutatja a bérlet módosításának a beállítását. Előfordulhat, hogy kiigazításra van szükség a lízingfeltételek módosításakor, a lízing meghosszabbításakor vagy más körülmény változásakor.
 author: moaamer
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 89ec876c9bd967107635eb2955209a4dcb95cde5
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 48d1a261a43d6e3a68dfc0aae6f06c0d7d6b82db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898327"
 ---
 # <a name="adjust-leases"></a>Lízingek kiigazítása
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-A témakör azt mutatja be, hogyan lehet beállítani egy lízinget. Előfordulhat, hogy kiigazításra van szükség a lízingfeltételek módosításakor, a lízing meghosszabbításakor vagy más körülmény változásakor. Az eszközök lízingelése megfelel a 842 (ASC 842) és a nemzetközi pénzügyi beszámolási szabvány 16. (IFRS 16) szerinti számviteli szabványoknak, amelyek a lízing módosítását írják elő. Az ASC 842-20-15-1 meghatározza a lízing módosítását olyan szerződések feltételeinek bármilyen változása esetén, amelyek a lízing hatókörét vagy ellenértékét eredményezik. Az IFRS 16 39. pontja szerint a lízingbevevőnek át kell értékelnie a lízingkötelezettséget, hogy az tükrözze a lízingdíjfizetések változását.
+A cikk bemutatja a bérlet módosításának a beállítását. Előfordulhat, hogy kiigazításra van szükség a lízingfeltételek módosításakor, a lízing meghosszabbításakor vagy más körülmény változásakor. Az eszközök lízingelése megfelel a 842 (ASC 842) és a nemzetközi pénzügyi beszámolási szabvány 16. (IFRS 16) szerinti számviteli szabványoknak, amelyek a lízing módosítását írják elő. Az ASC 842-20-15-1 meghatározza a lízing módosítását olyan szerződések feltételeinek bármilyen változása esetén, amelyek a lízing hatókörét vagy ellenértékét eredményezik. Az IFRS 16 39. pontja szerint a lízingbevevőnek át kell értékelnie a lízingkötelezettséget, hogy az tükrözze a lízingdíjfizetések változását.
 
 Az ASC 842 vagy IFRS 16 szabványoknak megfelelő szervezetek esetében a lízinget újra kell mérni, hogy a jövőbeli minimális lízingdíjfizetések jelenértéke (PVFMLP) változását tükrözzék. Ha a PVFMLP növekszik, akkor a létrehozott naplóbejegyzés tartozik a használatijog-eszközszámlához (ROU), valamint az új PVFMLP és az előző PVFMLP közötti különbséghez a lízingkötelezettség számlájára történő jóváírás. Ha a PVFMLP csökken, akkor a naplóbejegyzés tartozik a lízingkötelezettség számlájához, és különbözet a ROU-eszközszámlához tartozó jóváíráshoz.
 

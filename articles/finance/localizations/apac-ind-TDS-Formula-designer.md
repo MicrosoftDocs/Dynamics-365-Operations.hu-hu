@@ -1,6 +1,6 @@
 ---
 title: Képlettervező TDS-számításokhoz
-description: Ez a témakör egy példát mutat arra, hogy a Forrásnál levont adót (TDS) hogyan számítják ki a tranzakcióhoz csatolt TDS-csoport minden egyes TDS-adókódjára meghatározott képlet alapján.
+description: Ez a cikk azt példázhatja, hogyan lehet a Forrásnál levont adó (TDS) számítását a tranzakcióhoz kapcsolódó TDS-csoport minden egyes adókódja számára meghatározott képlet alapján.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: e60db55fd3bbcfb8dc34670b3bbbd39336b04efb
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1196f7258c898a55f3f29ddce7457e6f527185d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720083"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889861"
 ---
 # <a name="formula-designer-for-tds-calculations"></a>Képlettervező TDS-számításokhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör egy példát mutat arra, hogyan számítják ki a forrásnál levont adót (TDS) az egyes TDS-adókódokra meghatározott képlet alapján. A TDS adókódokat a tranzakcióhoz csatolt TDS csoport határozza meg. A TDS-képletek tervezése előtt töltse ki a TDS-hez szükséges alapbeállítást a következő lépésekben felsoroltak szerint. 
+Ez a cikk azt példázhatja, hogyan lehet a Forrásnál levont adó (TDS) számítását az egyes adókódok képlete alapján kiszámítani. A TDS adókódokat a tranzakcióhoz csatolt TDS csoport határozza meg. A TDS-képletek tervezése előtt töltse ki a TDS-hez szükséges alapbeállítást a következő lépésekben felsoroltak szerint. 
 
 - Állítsa be a TDS-adóelőleg-összetevőkkel kapcsolatos csoportokat az **Adóelőleg-összetevő csoportok** oldalon. 
 - Állítsa be a TDS-összetevőket, és csatolja a TDS-összetevők csoportját a TDS-összetevőkhöz az **Adóelőleg-összetevők** oldal használatával. 

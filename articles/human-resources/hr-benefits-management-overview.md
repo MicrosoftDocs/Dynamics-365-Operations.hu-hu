@@ -1,6 +1,6 @@
 ---
 title: Juttatáskezelés áttekintése
-description: Ez a témakör a Dynamics 365 Human Resources rendszerben található Juttatások kezelése funkció áttekintését nyújtja.
+description: Ez a cikk áttekintést nyújt a juttatáskezelés funkcióról a következőben:Dynamics 365 Human Resources
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e53a68aed2e4b1e0b0d7797e7326e223c47443f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687191"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901147"
 ---
 # <a name="benefits-management-overview"></a>Juttatáskezelés áttekintése
 
@@ -44,7 +44,7 @@ Ha szeretne hozzáférni a bemutató adatokhoz, újra kell telepítenie a tesztk
 
 ## <a name="enable-benefits-management"></a>Juttatáskezelés engedélyezése
 
-A témakör azt írja le, hogyan lehet bekapcsolni funkciókat a Human Resources szolgáltatásban. Azt is elmagyarázza, hogy a Humán erőforrás meglévő funkcióit mely funkciókat váltja fel a Juttatások kezelése, és mely funkciókat tiltja le a Juttatások kezelése bekapcsolása után.
+A cikk azt írja le, hogyan lehet bekapcsolni funkciókat a Human Resources szolgáltatásban. Azt is elmagyarázza, hogy a Humán erőforrás meglévő funkcióit mely funkciókat váltja fel a Juttatások kezelése, és mely funkciókat tiltja le a Juttatások kezelése bekapcsolása után.
 
 > [!IMPORTANT]
 > Miután engedélyezte a juttatások kezelését egy **Termelési** környezetben, azt nem lehet letiltani. Azt ajánljuk , hogy a **Termelési** környezetben történő engedélyezése előtt engedélyezze és tesztelje a juttatások kezelését egy **Teszt** környezetben. Jelentősen különböznek egymástól a korábbi Juttatási funkciók és az új Juttatáskezelés funkciók – ezek további beállításokat igényelnek, és a termelésbe történő helyezés előtt tesztelni kell azokat.

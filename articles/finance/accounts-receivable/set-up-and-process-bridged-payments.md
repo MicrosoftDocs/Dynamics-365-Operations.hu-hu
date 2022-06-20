@@ -1,6 +1,6 @@
 ---
 title: Áthidalt kifizetések beállítása és feldolgozása
-description: Ez a témakör azt mutatja be, hogyan lehet áthidalt vevői kifizetéseket beállítani és feldolgozni. Az áthidalt kifizetés olyan kifizetés, amely két lépésben van feladva a főkönyvbe.
+description: Ez a cikk bemutatja az áthidalt vevői kifizetések beállítását és feldolgozását. Az áthidalt kifizetés olyan kifizetés, amely két lépésben van feladva a főkönyvbe.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca93d99ce04e607b137a2755d507022a33ab1be8
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734191"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887977"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Áthidalt kifizetések beállítása és feldolgozása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8734191"
 
 Az áthidalt kifizetés olyan kifizetés, amely két lépésben van feladva a főkönyvbe. Ez a megközelítés **jellemzően akkor használatos, amikor a fizetési mód a Bank** beállításra van beállítva, és csak akkor kell tranzakciókat a bankszámlára könyvelni, ha már törölték a bankot. Főkönyvi számlákhoz azonban használható. Ebben az esetben a rendszer az áthidaló feladás feldolgozásakor az összeget egyik fő számláról a másikra mozgatja át.
 
-Áthidalt kifizetéseket a Kötelezettségek és a Kinnlevőségek alapján is létre lehet hozni. Bár ez a témakör bemutatja, hogyan kell konfigurálni az áthidaló feladásokat a Kinnlevőségek esetében, a Kötelezettségek tranzakcióinak lépései hasonlóak.
+Áthidalt kifizetéseket a Kötelezettségek és a Kinnlevőségek alapján is létre lehet hozni. Bár ez a cikk bemutatja, hogyan kell konfigurálni az áthidaló feladásokat a Kinnlevőségek esetében, a Kötelezettségek tranzakcióinak lépései hasonlóak.
 
 ## <a name="set-up-bridging-posting"></a>Áthidaló feladás beállítása
 

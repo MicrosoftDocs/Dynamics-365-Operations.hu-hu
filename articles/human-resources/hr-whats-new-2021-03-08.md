@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. március 8.)
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. március 8-i kiadásban.
+description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. március 8-i kiadásban.
 author: marcelbf
 ms.date: 03/08/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7b1e616f9bc72ab1f30f69671c673241096f3276
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9280e85f9701573717c4115b4d752ed11be4862e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868054"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-08-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. március 08.)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le.
+Ez a témakör az új, módosított vagy hamarosan érkező funkciókat írja le Dynamics 365 Human Resources.
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -48,9 +48,9 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 > [!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakört frissítjök olyan hibajavításokkal, amelyek annak első közzététele után léptek életbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. A cikk első közzététele után frissíthet egy hibajavítást, amely a javításokat tartalmazza a buildben.
 
-| Kiadás száma | Kiadás |  Leírás |
+| Kiadás száma | Probléma |  Leírás |
 | --- | --- | --- |
 | 486611 | Távollét jelenik meg a szabadságnaptárban, amikor engedélyezve van a **Szabadság letiltása az összes naptárban** | Ha engedélyezve van a **Szabadság letiltása az összes naptárban** funkció, akkor már nem jelennek meg a szabadságadatok, amikor engedélyezve van a Szabadság és távollét naptár fejlesztései funkciót.|
 | 508972 | A Szabadság és távollét banktranzakciós entitásból hiányzik a beléptetés ellenőrzése | A Szabadság és távollét banktranzakciós entitás használatakor a konstrukcióba nem regiszrtált alkalmazottak már nem importálhatók. |

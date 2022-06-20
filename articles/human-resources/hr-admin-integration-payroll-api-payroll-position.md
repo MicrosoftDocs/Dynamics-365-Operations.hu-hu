@@ -1,6 +1,6 @@
 ---
 title: Bérlista beosztásokra vonatkozó részletei
-description: Ez a témakör részleteket nyújt, és példalekérdezést tartalmaz a Bérszámfejtési részletek a beosztáshoz entitásra vonatkozóan a Dynamics 365 Human Resources rendszerben.
+description: Ez a cikk részletes adatokat és példa-lekérdezést nyújt a beosztások entitás bérszámfejtési adatairól Dynamics 365 Human Resources.
 author: jcart
 ms.date: 04/07/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bbb234d2f51391ea65e3d6153d6cee250f3c6dc
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ac36b0386312e1631528b8ab5976db2cb3924caf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904130"
 ---
 # <a name="payroll-position"></a>Bérlista szerinti beosztás
 
@@ -27,7 +27,7 @@ ms.locfileid: "8069807"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources bérlistabeosztások entitását írja le.
+Ez a témakör leírja a bérszámfejtési pozíciók entitást a következőben:Dynamics 365 Human Resources
 
 Fizikai név: mshr_payrollpositionentity.
 

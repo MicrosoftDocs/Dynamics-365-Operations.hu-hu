@@ -1,6 +1,6 @@
 ---
 title: Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan
-description: Ez a témakör áttekintést nyújt a lengyelországi költségvetési integrációs mintáról Microsoft Dynamics 365 Commerce.
+description: Ez a cikk áttekintést nyújt Lengyelország pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,197 +9,197 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: 43d9a54334d97a65a1f9a356daf54154f6c069b3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076836"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876949"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a lengyelországi költségvetési integrációs mintáról Microsoft Dynamics 365 Commerce.
+Ez a cikk áttekintést nyújt Lengyelország pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 
-A Dynamics 365 Commerce A lengyelországi funkcionalitás magában foglalja az értékesítési pont (POS) mintaintegrációját egy adónyomtatóval. A minta kiterjeszti a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md) és támogatja a POSNET THERMAL HD 2.02 protokollt a pénzügyi nyomtatókhoz [Posnet Polska SA](https://www.posnet.com.pl) A minta lehetővé teszi a kommunikációt egy olyan adónyomtatóval, amely natív szoftver-illesztőprogram segítségével COM-porton keresztül csatlakozik. A Posnet által a Posnet Thermal HD FV EJ fiskális nyomtatóhoz biztosított szoftveremulátor segítségével valósították meg és tesztelték. A minta forráskód formájában áll rendelkezésre, és a kiskereskedelmi szoftverfejlesztő készlet (SDK) része.
+A Dynamics 365 Commerce Lengyelországra vonatkozó funkciók közé tartozik a pénztár és egy pénzügyi nyomtató közötti mintaintegráció. A minta kiterjeszti [a](fiscal-integration-for-retail-channel.md) pénzügyi integrációs funkciókat, és támogatja a POSNET 2.02 PROTOCOL 2.02 protokollt [a Posnet Polkiszolgáló S.A pénzügyi nyomtatóihoz.](https://www.posnet.com.pl) A minta lehetővé teszi a kommunikációt olyan pénzügyi nyomtatóval, amely COM-porton keresztül csatlakozik egy natív szoftverillesztő segítségével. A rendszer egy szoftveremulátor segítségével megvalósította és tesztelték, amelyet a Posnet FV FV pénzügyi nyomtatóhoz megadott Posnet. A minta forráskód formájában kapható, és része a Retail szoftverfejlesztői csomagnak (SDK).
 
-A Microsoft nem ad ki semmilyen hardvert, szoftvert vagy dokumentációt a Posnettől. Az adónyomtató beszerzésével és kezelésével kapcsolatos információkért forduljon a következőhöz: [Posnet Polska SA](https://www.posnet.com.pl)
+A Microsoft nem ad ki hardvert, szoftvert vagy dokumentációt a Posnet rendszerből. A pénzügyi nyomtató be- és működésával [kapcsolatos tudnivalókat a Posnet Polrin S.A.A-hez kell forduljon.](https://www.posnet.com.pl)
 
 ## <a name="scenarios"></a>Forgatókönyvek
 
-A lengyelországi adónyomtató-integrációs minta a következő forgatókönyveket fedi le:
+A lengyelországi pénzügyi nyomtató integrációs mintája a következő helyzeteket tartalmazza:
 
-- Értékesítési forgatókönyvek:
+- Értékesítési esetek:
 
-    - Nyomtasson ki egy adóbizonylatot a készpénzes eladásokról és visszaküldésekről.
-    - Rögzítse a választ a fiskális nyomtatóról, és tárolja a csatornaadatbázisban.
+    - Pénzügyi nyugta nyomtatása a készpénz- és az áthozott értékesítések és visszaküldések számára.
+    - A pénzügyi nyomtató válaszának rögzítése és tárolása a csatorna-adatbázisban.
     - Adók:
 
-        - Leképezés az adónyomtató adószámaihoz (részlegeihez).
-        - A leképezett adóadatok átvitele az adónyomtatóra.
+        - Leképezés a pénzügyi nyomtató adókódjaira (részlegek).
+        - A megfeleltetett adóadatok átvitele a pénzügyi nyomtatóra.
 
     - Kifizetések:
 
-        - Térképezze fel az adónyomtató fizetési módjait.
-        - Nyomtassa ki a kifizetéseket egy adóbizonylatra.
-        - Nyomtassa ki a változási információkat.
+        - Leképezés a pénzügyi nyomtató fizetési módjaira.
+        - Kifizetések nyomtatása pénzügyi nyugtára.
+        - Módosítási adatok nyomtatása.
 
-    - Nyomtatási vonal kedvezmények.
+    - Sorengedmények nyomtatása.
     - Ajándékutalványok:
 
-        - A kibocsátott/újra felszámított ajándékkártya-sor kizárása az eladásról szóló adóbizonylatból.
-        - Nyomtasson ki olyan fizetést, amely szokásos fizetési módként ajándékkártyát használ.
+        - Kiadott/újra felszámított ajándékutalvány-sor kizárása az értékesítés pénzügyi nyugtáiból
+        - Ajándékutalványt rendszeres fizetési módként használó fizetés nyomtatása.
 
-    - Nyomtassa ki a vevői rendelési műveletekhez tartozó pénzügyi bizonylatokat:
+    - Pénzügyi nyugták nyomtatása a vevői rendelési műveletekhez:
 
-        - A vevő rendelési letétjéről nem nyomtatnak pénzügyi nyugtát.
-        - Nyomtasson ki egy pénzügyi bizonylatot a hibrid vevői rendelés teljesítési sorairól.
-        - Nyomtasson ki egy pénzügyi nyugtát a vevői rendelés átvételi műveletéről.
-        - Nyomtasson ki egy fiskális nyugtát a visszaküldési megrendelésről.
+        - Nem nyomtat pénzügyi nyugtát a rendszer vevői rendelés letétje számára.
+        - Pénzügyi nyugta nyomtatása egy vevői rendelés áthozott sorairól.
+        - Pénzügyi nyugta nyomtatása a vevői rendelés felvételi művelete számára.
+        - Pénzügyi nyugta nyomtatása visszárurendeléshez.
 
-    - Nyomtassa ki a [vásárlói információ](emea-pol-customer-information.md) amely egy értékesítési tranzakcióhoz van megadva egy adóbizonylaton. Ilyen információ például az ügyfél adószáma.
+    - Annak a vevőnek [az adatai](emea-pol-customer-information.md), amely meg van adva egy pénzügyi nyugtán található értékesítési tranzakcióhoz. Ilyen például a vevő áfaszáma.
 
-- Nap végi kimutatások (fiskális X és fiskális Z jelentések).
+- Nap végi kivonatok (pénzügyi X- és pénzügyi Z-jelentések)
 - Hibakezelés, például a következő lehetőségek:
 
-    - Próbálkozzon újra a fiskális regisztrációval, ha lehetséges, például ha az adónyomtató nincs csatlakoztatva, nincs készen vagy nem válaszol, a nyomtatóból kifogyott a papír, vagy papírelakadás van.
-    - Az adóbejegyzés elhalasztása.
-    - Hagyja ki a fiskális regisztrációt, vagy jelölje meg a tranzakciót regisztráltként, és adjon meg információs kódokat a hiba okának rögzítéséhez és további információkhoz.
-    - Ellenőrizze az adónyomtató elérhetőségét, mielőtt új értékesítési tranzakciót nyitna vagy véglegesítene.
+    - Próbálja meg újra a pénzügyi regisztrációt, ha egy újrapróbálkozás lehetséges, például ha a pénzügyi nyomtató nincs csatlakoztatva, nem áll készen vagy nem válaszol, a nyomtató ki van nyomtatva, vagy papírelakadás van.
+    - Pénzügyi regisztráció elhalasztása.
+    - Pénzügyi regisztráció kihagyása, vagy a tranzakció megjelölése regisztráltként, és infókódok beírása a hiba okának és a további információknak a rögzítéséhez.
+    - Ellenőrizze a pénzügyi nyomtató elérhetőségét, mielőtt új értékesítési tranzakciót nyit meg vagy egy értékesítési tranzakciót véglegesítettek.
 
 ### <a name="gift-cards"></a>Ajándékutalványok
 
-Az adónyomtató-integrációs minta a következő, ajándékkártyákkal kapcsolatos szabályokat valósítja meg:
+A pénzügyi nyomtató integrációs mintája az ajándékutalványokkal kapcsolatos következő szabályokat valósítja meg:
 
-- A következőhöz kapcsolódó értékesítési sorok kizárása *Ajándékkártya kiadása* és *Hozzáadás ajándékkártyához* műveleteket az adóbizonylatból.
-- Ne nyomtasson pénzügyi nyugtát, ha az csak ajándékkártya-sorokból áll.
-- A tranzakció során kibocsátott vagy újraterhelt ajándékutalványok teljes összegét vonja le a pénzügyi nyugta fizetési soraiból.
-- Mentse el a fizetési sorok kiszámított korrekcióit a csatornaadatbázisban a megfelelő fiskális tranzakcióra való hivatkozással.
-- Az ajándékkártyás fizetés rendszeres fizetésnek minősül.
+- Az ajándékutalvány-kiadáshoz *·* *és* az ajándékutalvány-műveletekhez hozzáadva kapcsolódó értékesítési sorok kihagyása a pénzügyi nyugtából
+- Ne nyomtass pénzügyi nyugtát, ha az csak ajándékutalvány-sorokból áll.
+- A tranzakcióban kiadott vagy újra felszámított ajándékutalványok teljes összegének levonása a pénzügyi nyugta fizetési soraiból.
+- A kifizetési sorok számított módosításainak mentése a csatorna-adatbázisban a megfelelő pénzügyi tranzakcióra való hivatkozással.
+- Az ajándékutalványos fizetés rendszeres fizetésnek számít.
 
-### <a name="customer-deposits-and-customer-order-deposits"></a>Vevői betétek és vevői megrendelések betétei
+### <a name="customer-deposits-and-customer-order-deposits"></a>Vevői betétek és vevői rendelési betétek
 
-Az adónyomtató-integrációs minta a következő szabályokat valósítja meg, amelyek az ügyfelek betéteire és a vevői megrendelések betéteire vonatkoznak:
+A pénzügyi nyomtató integrációs mintája a vevői betétekre és a vevői rendelési betétekre vonatkozó következő szabályokat valósítja meg:
 
-- Ne nyomtasson fiskális nyugtát, ha a tranzakció az ügyfél letétje.
-- Ne nyomtasson adóbizonylatot, ha egy tranzakció csak a vevői rendelés letétjét vagy a vevői rendelés letéti visszatérítését tartalmazza.
-- Nyomtassa ki a korábban befizetett letét összegét a vevői rendelés felvételi műveletének pénzügyi bizonylatára.
-- Hibrid vevői rendelés létrehozásakor vonja le a vevői rendelés letéti összegét a fizetési sorokból.
-- Mentse el a fizetési sorok kiszámított kiigazításait a csatornaadatbázisban egy hibrid vevői megrendelés fiskális tranzakciójára való hivatkozással.
+- Ne nyomtass pénzügyi nyugtát, ha a tranzakció vevői letét.
+- Ne nyomtass pénzügyi nyugtát, ha a tranzakció csak vevői rendelés letétét vagy a vevői rendelés letéti visszatérítését tartalmazza.
+- A korábban kifizetett letét összegének nyomtatása egy vevői rendelés felvételi műveletének pénzügyi nyugtára.
+- A vevői rendelés letéti összegének levonása a kifizetési sorokból a vevői rendelés létrehozásakor.
+- A csatorna-adatbázis fizetési sorai kiszámított korrekcióinak mentése egy vevői rendelés pénzügyi tranzakciójára való hivatkozással.
 
 ### <a name="limitations-of-the-sample"></a>A minta korlátai
 
-- Az adónyomtató csak azokat a forgatókönyveket támogatja, amelyeknél az ár tartalmazza a forgalmi adót. Ezért a **Az ár forgalmi adót tartalmaz** opcióra kell állítani **Igen** üzleteknek és vásárlóknak egyaránt.
-- A napi jelentések (fiskális X és fiskális Z) nyomtatása a beágyazott használatával történik *Műszaki jelentés* formátum.
-- A vonalkód nyomtatása az adóbizonylatokra potenciális testreszabásnak tekinthető, mivel ez a funkció a beágyazott formátumokban nem támogatott, és csak a testreszabható **Szuper formátum** jelentés.
-- Az adónyomtató nem támogatja a vegyes tranzakciókat. A **Tilos az értékesítés és a visszaküldés egy nyugtában keverése** opcióra kell állítani **Igen** a POS funkcióprofilokban.
+- A pénzügyi nyomtató csak olyan eseteket támogat, amelyekben az ár tartalmazza az adót. Emiatt az üzletek **és** **a** vevők esetében az Ár tartalmazza az áfa beállítását Igen beállítást kell beállítani.
+- A napi jelentések (pénzügyi X és pénzügyi Z) *a beágyazott Műszakjelentés-formátum használatával vannak kinyomtatva*.
+- A vonalkód pénzügyi nyugtákra történő nyomtatása potenciális testreszabásnak tekinthető, mivel ez a funkció nem támogatott a beágyazott formátumokban, **és csak a testreszabható Super-format** jelentéssel valósítható meg.
+- A pénzügyi nyomtató nem támogatja a vegyes tranzakciókat. A **POS funkcióprofilok** **esetében** a Kombinációs értékesítések és visszaküldések tiltása egy nyugta beállításban igen értéket kell beállítani.
 
-## <a name="set-up-fiscal-integration-for-poland"></a>Fiskális integráció létrehozása Lengyelország számára
+## <a name="set-up-fiscal-integration-for-poland"></a>Pénzügyi integráció beállítása Lengyelországhoz
 
-A lengyelországi fiskális nyomtató-integrációs minta a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md) és a Retail SDK része. A minta a **src\\ Fiskális integráció\\ Posnet** mappa a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattár (pl.[a minta kiadásban/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). A minta [egy pénzügyi bizonylatszolgáltatóból áll](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services), amely a Commerce futtatókörnyezet (CRT) kiterjesztése, és egy fiskális összekötőből, amely a Commerce Hardware Station kiterjesztése. A Kiskereskedelmi SDK használatáról a Retail SDK architektúrája [és](../dev-itpro/retail-sdk/retail-sdk-overview.md) build-folyamat beállítása a független csomagolású SDK-hoz [című témakörben talál](../dev-itpro/build-pipeline.md) további információt.
+A lengyelországi pénzügyi nyomtató-integrációs [minta](fiscal-integration-for-retail-channel.md) a pénzügyi integrációs funkciókon alapul, és része a Retail SDK csomagnak. A minta a **FiscalIntegration\\ Posnet\\**[Dynamics 365 Commerce tárház src](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet) mintája). A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, amely a Commerce runtime () futási idő kiterjesztése CRT, és egy pénzügyi csatlakoztató, amely a Commerce Hardware Station kiterjesztése. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
 
 > [!WARNING]
-> Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját egy fejlesztői virtuális gépen (VM) kell használnia az Microsoft Dynamics Életciklus-szolgáltatásokban (LCS). További információkért lásd [Üzembe helyezési irányelvek a lengyelországi adónyomtató-integrációs mintához (örökölt)](emea-pol-fpi-sample-sdk.md).
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK korábbi verzióját egy fejlesztő virtuális gépen (VM) kell használnia a Lifecycle Services (LCS) Microsoft Dynamics szolgáltatásban. A további tudnivalókat [lásd a lengyelországi pénzügyi nyomtató integrációs mintája (legacy) telepítési irányelveinél](emea-pol-fpi-sample-sdk.md).
 >
-> A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
+> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
-Végezze el a fiskális integráció beállítási lépéseit az alábbiak szerint [Állítsa be a kereskedelmi csatornák pénzügyi integrációját](setting-up-fiscal-integration-for-retail-channel.md).
+A pénzügyi integráció beállítási lépéseit [a Commerce-csatornák pénzügyi integrációjának beállítása leírtak szerint lehet végrehajtani](setting-up-fiscal-integration-for-retail-channel.md).
 
-1. [Hozzon létre egy pénzügyi regisztrációs folyamatot](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Jegyezze fel a fiskális regisztrációs folyamat beállításait is [erre a fiskális nyomtató-integrációs mintára jellemző](#set-up-the-registration-process).
-1. [Állítsa be a hibakezelési beállításokat](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Fiskális X/Z jelentések beállítása a POS-ból](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Az elhalasztott adóregisztráció](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration) manuális végrehajtásának engedélyezése.
-1. [Csatornaösszetevők konfigurálása](#configure-channel-components).
+1. [Pénzügyi regisztrációs folyamat beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Ezenkívül jegyezze fel a [pénzügyi nyomtató integrációs mintáját jellemző pénzügyi regisztrációs folyamat beállításait](#set-up-the-registration-process).
+1. [Hibakezelési beállítások megadása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+1. [Pénzügyi X-/Z-jelentések beállítása a POS-ból](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+1. [Halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)
+1. [Csatornaösszetevők konfigurálása](#configure-channel-components)
 
 ### <a name="set-up-the-registration-process"></a>A regisztrációs folyamat beállítása
 
-A regisztrációs folyamat engedélyezéséhez kövesse az alábbi lépéseket a Kereskedelmi központ beállításához. További információ: [A kereskedelmi csatornák](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process) pénzügyi integrációjának beállítása.
+A regisztráció engedélyezéséhez kövesse az alábbi lépéseket a Commerce Headquarters beállításához. A további tudnivalókat lásd [A Commerce-csatornák pénzügyi integrációjának beállítása.](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process)
 
-1. Konfigurációs fájlok letöltése a pénzügyi dokumentumszolgáltatóhoz és a pénzügyi összekötőhöz:
+1. A pénzügyi bizonylat szolgáltatójának és a pénzügyi csatlakoztatónak megfelelő konfigurációs fájlok letöltése:
 
-    1. Nyissa meg a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattárat.
-    1. Válassza ki a megfelelő kiadási ágverziót az SDK/alkalmazás verziója szerint (például **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
-    1. Nyisd ki **src \> Fiskális integráció \> Posnet**.
-    1. Töltse le az adódokumentum-szolgáltató konfigurációs fájlját a következő címről: **CommerceRuntime \> DocumentProvider.PosnetSample \> Konfiguráció \> DocumentProviderPosnetSample.xml** (például, [a kiadáshoz tartozó fájl/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/CommerceRuntime/DocumentProvider.PosnetSample/Configuration/DocumentProviderPosnetSample.xml)).
-    1. Töltse le a fiskális csatlakozó konfigurációs fájlját a következő címről: **HardwareStation \> ThermalDeviceSample \> Konfiguráció \> ConnectorPosnetThermalFVEJ.xml** (például, [a kiadáshoz tartozó fájl/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)).
+    1. Nyissa meg [Dynamics 365 Commerce a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
+    1. Az SDK/alkalmazás verziójának (**[például kiadás/9.33) megfelelő kiadási ágverzió kiválasztása](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**.
+    1. PénzügyiIntegration **posnet \> megnyitása \>**
+    1. Töltse le a pénzügyi bizonylat szolgáltatójának konfigurációs **fájlját a CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml** fájlban ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/CommerceRuntime/DocumentProvider.PosnetSample/Configuration/DocumentProviderPosnetSample.xml) fájlban).
+    1. Töltse le a pénzügyi csatlakoztató **konfigurációs fájlját a HardwareStation \> XmlDeviceSample \> Configuration ConnectorPosnetThermalFVEJ.xml \>** fájlból ([például a kiadás fájlja/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)).
 
     > [!WARNING]
-    > Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői virtuális gépen az LCS-ben. A pénzügyi integrációs minta konfigurációs fájljai a Retail SDK következő mappáiban találhatók egy fejlesztői virtuális gépen az LCS-ben:
+    > Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A pénzügyi integrációs minta konfigurációs fájljai a Retail SDK készlet alábbi mappáiban találhatók az LCS egy fejlesztői VIRTUÁLIS eszközében:
     >
-    > - **Fiskális dokumentum-szolgáltató konfigurációs fájlja:** RetailSdk\\ SampleExtensions\\ CommerceRuntime\\ Extension.DocumentProvider.PosnetSample\\ Konfiguráció\\ DocumentProviderPosnetSample.xml
-    > - **Fiskális csatlakozási konfigurációs fájl:** RetailSdk\\ SampleExtensions\\ HardwareStation\\ Extension.Posnet.ThermalDeviceSample\\ Konfiguráció\\ ConnectorPosnetThermalFVEJ.xml
+    > - **Pénzügyi bizonylat szolgáltatójának konfigurációs fájlja:** RetailSdk\\ SampleExtensions\\ CommerceRuntime\\ Extension.DocumentProvider.PosnetSample\\ Configuration\\ DocumentProviderPosnetSample.xml
+    > - **Pénzügyi csatlakoztató konfigurációs fájlja:** RetailSdk\\ SampleExtensions\\ HardwareStation\\ Extension.Posnet.TerjesztésDeviceSample\\ Configuration\\ ConnectorPosnetThermalFVEJ.xml
     > 
-    > A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
+    > Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
-1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce megosztott paraméterek** menüpontra. Az Általános **lapon állítsa a** Költségvetési integráció **engedélyezése beállítást Igen értékre** **.**
-1. Menj **Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Fiskális integráció \> Fiskális dokumentumszolgáltatók**, és töltse be a korábban letöltött adódokumentum-szolgáltató konfigurációs fájlját.
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi összekötők, és töltse be a korábban letöltött pénzügyi összekötő konfigurációs** fájlt.
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integrációs \> összekötő funkcionális profiljai**. Hozzon létre egy új csatlakozó funkcionális profilt. Válassza ki a dokumentumszolgáltatót és a korábban betöltött csatlakozót. Szükség szerint frissítse az [adatleképezési beállításokat](#default-data-mapping).
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Összekötő technikai profiljai**. Hozzon létre egy új összekötő műszaki profilját, és válassza ki a korábban betöltött pénzügyi összekötőt. Szükség szerint frissítse az [összekötő beállításait](#fiscal-connector-settings).
-6. Lépjen a **Kiskereskedelem és kereskedelem \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi összekötő csoportok**. Hozzon létre egy új pénzügyi összekötő-csoportot a korábban létrehozott összekötő funkcionális profilhoz.
-7. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi regisztrációs folyamatok**. Hozzon létre egy új adóregisztrációs folyamatot és egy fiskális regisztrációs folyamat lépést, és válassza ki a korábban létrehozott adóösszekötő csoportot.
-8. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**. Válasszon ki egy olyan funkcióprofilt, amely ahhoz az üzlethez kapcsolódik, ahol a regisztrációs folyamatot aktiválni kell. **A Pénzügyi regisztrációs folyamat** gyorslapon válassza ki a korábban létrehozott pénzügyi regisztrációs folyamatot.
-9. Lépjen a **Kiskereskedelem és kereskedelem \> Csatorna beállítás \> POS beállítás \> POS profilok \> Hardverprofilok** pontra. Válasszon ki egy hardverprofilt, amely ahhoz a hardverállomáshoz kapcsolódik, amelyhez a pénzügyi nyomtató csatlakozik. **A Pénzügyi perifériák** gyorslapon válassza ki a korábban létrehozott összekötő műszaki profilját.
-10. Nyissa meg a terjesztési ütemezést (**Kiskereskedelmi és \> kereskedelmi kiskereskedelem és kereskedelem IT-terjesztési \> ütemezése**), és válassza az 1070-es és **1090-es** **feladatokat** az adatok csatornaadatbázisba történő átviteléhez.
+1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce megosztott paraméterek** menüpontra. Az Általános **lapon** állítsa **a** Pénzügyi integráció engedélyezése lehetőséget Igen **beállításra**.
+1. Menjen a **Retail és Commerce \> Csatorna beállítása pénzügyi \> integráció \> pénzügyi dokumentumszolgáltatóihoz**, és töltse be a korábban letöltött pénzügyidokumentum-szolgáltató konfigurációs fájlját.
+1. Menjen a **Retail és Commerce \> csatorna beállítása \> Pénzügyi integráció \> pénzügyi csatlakoztatóihoz**, és töltse be a korábban letöltött pénzügyi csatlakoztató konfigurációs fájlját.
+1. Ugrás a **Retail és Commerce \> csatorna beállítása \> Fiscal integration \> Connector funkcionális profiljaihoz**. Új funkcionális csatlakoztatóprofil létrehozása. Válassza ki a korábban betöltött dokumentumszolgáltatót és csatlakoztatót. Szükség szerint [frissítse az adatleképezés](#default-data-mapping) beállításait.
+1. Ugrás a **Retail és Commerce \> csatorna beállítása \> Fiscal integration \> Connector műszaki profilokhoz**. Hozzon létre egy új technikai csatlakoztatóprofilt, és válassza ki a korábban betöltött pénzügyi csatlakoztatóját. Szükség szerint [frissítse a csatlakoztató](#fiscal-connector-settings) beállításait.
+6. Ugrás a **Retail és Commerce \> csatorna beállítása Pénzügyi \> integráció \> Pénzügyi csatlakoztatócsoportjához** Hozzon létre egy új pénzügyi csatlakoztatócsoportot a korábban létrehozott csatlakoztató funkcionális profil számára.
+7. Ugrás a Kiskereskedelmi és **Commerce csatorna \> beállítása pénzügyi \> integráció \> pénzügyi regisztrációs folyamatainak lépéseihez**. Hozzon létre egy új pénzügyi regisztrációs folyamatot és egy pénzügyi nyilvántartási folyamat lépését, és válassza ki a korábban létrehozott pénzügyi csatlakoztatócsoportot.
+8. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**. Válasszon ki egy funkcióprofilt, amely ahhoz az üzlethez kapcsolódik, ahol aktiválni kell a regisztrációs folyamatot. A Pénzügyi regisztráció **folyamata** gyors oldalon válassza ki a korábban létrehozott pénzügyi regisztrációs folyamatot.
+9. Lépjen a **Kiskereskedelem és kereskedelem \> Csatorna beállítás \> POS beállítás \> POS profilok \> Hardverprofilok** pontra. Válassza ki azt a hardverprofilt, amely ahhoz a hardverállomáshoz van kapcsolva, amelyhez a pénzügyi nyomtató csatlakozik. Válassza ki a **korábban** létrehozott csatlakoztató-technikai profilt a Pénzügyi perifériák gyorstára.
+10. Nyissa meg az elosztási ütemezést (**Retail and Commerce \> Retail és Commerce IT \> Distribution schedule**), **majd válassza ki a 1070-es** **és 1090-es** feladatokat az adatoknak a csatorna-adatbázisba történő átviteléhez.
 
 #### <a name="default-data-mapping"></a>Alapértelmezett adatleképezés
 
-A költségvetési integrációs minta részeként megadott pénzügyi bizonylatszolgáltató konfigurációja a következő alapértelmezett adatleképezést tartalmazza:
+A pénzügyiintegrációs minta részeként megadott pénzügyi bizonylatszolgáltató konfigurációja a következő alapértelmezett adatleképezést tartalmazza:
 
-- **Általános forgalmi adó (áfa) kulcsok feltérképezése** – A forgalmiadó-kódokhoz beállított adószázalék-értékek hozzárendelése adónyomtató-specifikus áfakulcsokhoz. Íme az alapértelmezett leképezés:
+- **Áfakulcsok megfeleltetése** – az áfakódok százalékértékének megfeleltetése a pénzügyi nyomtatóspecifikus áfamértékek között. Az alapértelmezett hozzárendelés:
 
     ```
     0 : 23.00 ; 1 : 8.00 ; 2 : 5.00 ; 3 : 0.00
     ```
 
-    Az egyes párok első összetevője az adónyomtatóban konfigurált áfakulcsszámot jelöli. A második összetevő a megfelelő héakulcsot képviseli. Az adónyomtató áfakulcs-konfigurációjával kapcsolatos további információkért tekintse meg a POSNET illesztőprogram dokumentációját.
+    Minden párban az első összetevő a pénzügyi nyomtatón beállított áfakulcsszámot képviseli. A második összetevő a megfelelő áfakulcsot képviseli. A pénzügyi nyomtató áfakulcs-konfigurációjával kapcsolatos további tudnivalókat lásd a POSNET illesztőprogram-dokumentációjában.
 
-- **Pályázati típus leképezés** – Az üzlet számára konfigurált fizetési módok hozzárendelése az adónyomtató által támogatott fizetési űrlapokhoz. Íme az alapértelmezett leképezés:
+- **Fizetőeszköz-típus hozzárendelés** – az üzlethez beállított fizetési módok megfeleltetése a pénzügyi nyomtató által támogatott fizetési képernyőknek. Az alapértelmezett hozzárendelés:
 
     ```
     0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0
     ```
 
-    Az egyes párok első összetevője az üzlet számára beállított fizetési módot jelöli. A második összetevő az adónyomtató által támogatott megfelelő fizetési módot képviseli. Az adónyomtató által támogatott fizetési formákkal kapcsolatos további információkért tekintse meg a POSNET illesztőprogram dokumentációját. Módosítania kell a mintaleképezést az alkalmazásban konfigurált fizetési módoknak megfelelően.
+    Az egyes párok első komponense egy, az üzlethez beállított fizetési módot jelent. A második összetevő a pénzügyi nyomtató által támogatott megfelelő fizetési képernyőt jelöli. A pénzügyi nyomtató által támogatott fizetési képernyőkről a POSNET illesztőprogram dokumentációja tartalmaz további tudnivalókat. A minta-hozzárendelést az alkalmazásban beállított fizetési módoknak megfelelően kell módosítani.
 
-#### <a name="fiscal-connector-settings"></a>Pénzügyi összekötő beállításai
+#### <a name="fiscal-connector-settings"></a>Pénzügyi csatlakoztató beállításai
 
-A költségvetési integrációs minta részeként megadott pénzügyi összekötő konfiguráció a következő beállításokat tartalmazza:
+A pénzügyi integrációs minta részeként biztosított pénzügyi csatlakoztató konfigurációja a következő beállításokat tartalmazza:
 
-- **Csatlakozási karakterlánc** – Egy karakterlánc, amely leírja az eszközzel való kapcsolat részleteit az illesztőprogram által támogatott formátumban. További információért tekintse meg a POSNET illesztőprogram dokumentációját.
-- **Dátum és idő szinkronizálása** – Egy érték, amely megadja, hogy a nyomtató dátumát és idejét szinkronizálni kell-e a csatlakoztatott hardverállomással.
-- **Eszköz időtúllépése** – Az az idő, ezredmásodpercben, ameddig a vezető vár az eszköztől érkező válaszra. További információért tekintse meg a POSNET illesztőprogram dokumentációját.
+- **Kapcsolati** karakterlánc – karakterlánc, amely az illesztő által támogatott formátumban írja le az eszközzel való kapcsolat részleteit. A további tudnivalókat lásd a POSNET illesztőprogram dokumentációjában.
+- **Dátum- és időszinkronizálás** – ez az érték határozza meg, hogy szinkronizálni kell-e a nyomtató dátumát és időpontját a csatlakoztatott hardverállomással.
+- **Eszköz időkorlátja** – az az idő ezredmásodpercben, ahányszor a vezető választ vár az eszközről. A további tudnivalókat lásd a POSNET illesztőprogram dokumentációjában.
 
 ### <a name="configure-channel-components"></a>Csatornaösszetevők konfigurálása
 
 > [!WARNING]
-> Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői virtuális gépen az LCS-ben. További információkért lásd [Üzembe helyezési irányelvek a lengyelországi adónyomtató-integrációs mintához (örökölt)](emea-pol-fpi-sample-sdk.md).
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd a lengyelországi pénzügyi nyomtató integrációs mintája (legacy) telepítési irányelveinél](emea-pol-fpi-sample-sdk.md).
 >
-> A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
+> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
-#### <a name="set-up-the-development-environment"></a>A fejlesztési környezet beállítása
+#### <a name="set-up-the-development-environment"></a>A fejlesztői környezet beállítása
 
-A minta tesztelésére és kiterjesztésére vonatkozó fejlesztési környezet beállításához kövesse az alábbi lépéseket.
+A minta tesztelésére és kiterjesztésére fejlesztői környezet beállításához kövesse az alábbi lépéseket.
 
-1. Klónozza vagy töltse le a [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) adattárat. Válassza ki a megfelelő kiadási ágverziót az SDK/alkalmazás verziójának megfelelően. További információkért lásd [Töltsön le Retail SDK-mintákat és referenciacsomagokat a GitHubból és a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-1. Nyissa meg a fiskális nyomtató-integrációs megoldást a következő címen: **Dynamics365Commerce.Solutions\\ Fiskális integráció\\ Posnet\\ Posnet.sln**, és megépíteni.
-1. Telepítés CRT kiterjesztések:
+1. Le kell tölteni vagy le kell [Dynamics 365 Commerce tölteni a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions). Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd [a Retail SDK-minta- és hivatkozáscsomagok letöltése aHub és NuGet](../dev-itpro/retail-sdk/sdk-github.md) a.
+1. Nyissa meg a pénzügyi nyomtató integrációs **megoldását a Dynamics365Commerce.Solutions\\ FiscalIntegration\\ Posnet.sln\\** webhelyen, és építse fel.
+1. A következő CRT bővítmények telepítése:
 
-    1. Találd meg CRT bővítmény telepítő:
+    1. A bővítmény telepítője CRT:
 
-        - **Kereskedelmi mértékegység:** Ban,-ben **Posnet\\ ScaleUnit\\ ScaleUnit.Posnet.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **ScaleUnit.Posnet.Installer** telepítő.
-        - **Helyi CRT a modern POS-on:** Ban,-ben **Posnet\\ Modern POS\\ ModernPOS.Posnet.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **ModernPOS.Posnet.Installer** telepítő.
+        - **Commerce Scale Unit:** **A Posnet\\ ScaleUnit.Posnet.Installer\\\\ bin\\ debug\\ net461** **mappájában keresse meg a ScaleUnit.Posnet.Installer** telepítőt.
+        - **Helyi CRT a Modern POS terminálon:** **A Posnet\\ ModernPOS ModernPOS.Posnet.Installer\\\\ bin\\ debug\\ net461** **mappájában keresse meg a ModernPOS.Posnet.Installer** telepítőjét.
 
-    1. Indítsa el a CRT kiterjesztés telepítője a parancssorból:
+    1. A kiterjesztés telepítőjét CRT a következő parancssorból indítja el:
 
-        - **Kereskedelmi mértékegység:**
+        - **Commerce Scale Unit:**
 
             ```Console
             ScaleUnit.Posnet.Installer.exe install --verbosity 0
             ```
 
-        - **Helyi CRT a modern POS-on:**
+        - **Helyi CRT a Modern POS terminálon:**
 
             ```Console
             ModernPOS.Posnet.Installer.exe install --verbosity 0
@@ -207,8 +207,8 @@ A minta tesztelésére és kiterjesztésére vonatkozó fejlesztési környezet 
 
 1. Hardverállomás-bővítmények telepítése:
 
-    1. Ban,-ben **Posnet\\ HardwareStation\\ HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **HardwareStation.PosnetThermalFVFiscalPrinter.Installer** telepítő.
-    1. Indítsa el a bővítménytelepítőt a parancssorból:
+    1. A Posnet **HardwareStation\\ HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\ bin\\ debug\\ net461\\** mappában keresse meg a HardwareStation.PosnetThermalFVFiscalPrinter.Installer **telepítőjét.**
+    1. A kiterjesztés telepítőjét a következő parancssorból indítja el:
 
         ```Console
         HardwareStation.PosnetThermalFVFiscalPrinter.Installer.exe install --verbosity 0
@@ -216,52 +216,52 @@ A minta tesztelésére és kiterjesztésére vonatkozó fejlesztési környezet 
 
 #### <a name="production-environment"></a>Működési környezet
 
-Kövesse a lépéseket [Állítson be egy összeállítási folyamatot a fiskális integrációs mintához](fiscal-integration-sample-build-pipeline.md) a Cloud Scale Unit és az önkiszolgáló telepíthető csomagok létrehozása és kiadása a költségvetési integrációs mintához. A **Posnet build-pipeline.yml** sablon YAML fájl megtalálható a **Csővezeték\\ YAML_Files** mappa a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions) adattár.
+Hajtsa végre [a pénzügyi integrációs minta felépítési folyamatának beállításához szükséges lépéseket a](fiscal-integration-sample-build-pipeline.md) felhőskálaegység és az önkiszolgáló rendszer telepíthető csomagjainak előállításához és kiadásához a pénzügyi integrációs mintához. A Posnet build-pipeline.yml sablonFÁJL a MEGOLDÁStárház **YAML_Files** **\\** csővezetékében található.[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions)
 
-## <a name="design-of-extensions"></a>Bővítések tervezése
+## <a name="design-of-extensions"></a>Bővítmények tervezése
 
-A lengyelországi fiskális nyomtató-integrációs minta a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md) és a Retail SDK része. A minta a **src\\ Fiskális integráció\\ Posnet** mappa a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattár (pl.[a minta kiadásban/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). A minta [áll](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) egy fiskális dokumentumszolgáltató, amely a kiterjesztése CRT és egy fiskális csatlakozó, amely a Commerce Hardware Station kiterjesztése. A Kiskereskedelmi SDK használatáról a Retail SDK architektúrája [és](../dev-itpro/retail-sdk/retail-sdk-overview.md) build-folyamat beállítása a független csomagolású SDK-hoz [című témakörben talál](../dev-itpro/build-pipeline.md) további információt.
+A lengyelországi pénzügyi nyomtató-integrációs [minta](fiscal-integration-for-retail-channel.md) a pénzügyi integrációs funkciókon alapul, és része a Retail SDK csomagnak. A minta a **FiscalIntegration\\ Posnet\\**[Dynamics 365 Commerce tárház src](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet) mintája). A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, CRT amely a Commerce Hardverállomás kiterjesztése, és egy pénzügyi csatlakoztató. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
 
 > [!WARNING]
-> Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői virtuális gépen az LCS-ben. További információkért lásd [Üzembe helyezési irányelvek a lengyelországi adónyomtató-integrációs mintához (örökölt)](emea-pol-fpi-sample-sdk.md). A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd a lengyelországi pénzügyi nyomtató integrációs mintája (legacy) telepítési irányelveinél](emea-pol-fpi-sample-sdk.md). Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
-### <a name="commerce-runtime-extension-design"></a>Kereskedelmi futásidejű bővítmény tervezése
+### <a name="commerce-runtime-extension-design"></a>Commerce runtime bővítmény tervezése
 
-Az adódokumentum-szolgáltató bővítmény célja, hogy nyomtató-specifikus dokumentumokat állítson elő, és kezelje a fiskális nyomtatótól érkező válaszokat. Ez a bővítmény nyomtatóspecifikus parancsokat hoz létre JavaScript Object Notation (JSON) formátumban, amelyeket a POSNET 19-3678-as specifikációja határoz meg.
-
-#### <a name="request-handler"></a>Kérelemkezelő
-
-A **DocumentProviderPosnetProtocol** A kérelemkezelő a belépési pontja a dokumentumoknak az adónyomtatóból történő létrehozására irányuló kérelemnek.
-
-A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott összekötő dokumentumszolgáltató nevével.
-
-Az összekötő a következő kéréseket támogatja:
-
-- **GetFiscalDocumentDocumentProviderRequest** – Ez a kérés információt tartalmaz arról, hogy milyen dokumentumot kell létrehozni. Nyomtatóspecifikus dokumentumot ad vissza, amelyet regisztrálni kell az adónyomtatóban.
-- **GetSupportedRegistrableEventsDocumentProviderRequest** – Ez a kérés visszaadja az előfizetendő események listáját. Jelenleg a következő események támogatottak: értékesítés, X-jelentés nyomtatása és Z-jelentés nyomtatása.
-
-#### <a name="configuration"></a>Konfiguráció
-
-A pénzügyi dokumentumszolgáltató konfigurációs fájlja az **src\\FiscalIntegration\\Posnet\\CommerceRuntime\\DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml** található a [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattárban. A fájl célja, hogy lehetővé tegye a költségvetési dokumentumszolgáltató beállításainak konfigurálását a Commerce központjából. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
-
-### <a name="hardware-station-extension-design"></a>Hardverállomás-bővítés kialakítása
-
-A fiskális összekötő bővítmény célja a fiskális nyomtatóval való kommunikáció. Ez a bővítmény felkéri a POSNET-illesztőprogram funkcióit, hogy küldjenek el parancsokat, amelyeket a CRT bővítmény generál a költségvetési nyomtatónak. Az eszközhibákat is kezeli.
+A kiterjesztés célja, amely egy pénzügyi bizonylatot szolgáltató, az a cél, hogy nyomtatóspecifikus dokumentumokat generáljon, és kezelni tudja a pénzügyi nyomtató válaszait. Ez a kiterjesztés a POSNET 19-3678-as meghatározása által meghatározott JavaScript object Notation (JSON) formátumú nyomtatóspecifikus parancsokat generál.
 
 #### <a name="request-handler"></a>Kérelemkezelő
 
-A **FiscalPrinterHandler** kérelemkezelő a kérelem pénzügyi perifériára irányuló kezelésének belépési pontja.
+A **DocumentProviderPosnetProtocol** kérelemkezelő a pénzügyi nyomtatón történő dokumentum-generálás igénylésének belépési pontja.
 
-A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott pénzügyi összekötő nevével.
+A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName metódus** felelős a kezelő nevének visszaküldéséért. A kezelő nevének meg kell egyeznie a Commerce Headquarters szolgáltatásban megadott csatlakoztató dokumentumszolgáltató nevével.
 
-Az összekötő a következő kéréseket támogatja:
+Az csatlakoztató a következő kéréseket támogatja:
 
-- **SubmitDocumentFiscalDeviceRequest** – Ez a kérelem dokumentumokat küld a nyomtatóknak, és visszaadja a válaszát a költségvetési nyomtatóról.
-- **IsReadyFiscalDeviceRequest** – Ez a kérés az eszköz állapotfelmérésére szolgál.
-- **InitializeFiscalDeviceRequest** – Ez a kérés a nyomtató inicializálásához használatos.
+- **GetFiscalDocumentDocumentProviderRequest** – ez a kérés tartalmazza a létrehozandó dokumentum adatait. Olyan nyomtatóspecifikus bizonylatot ad vissza, amely regisztrálva kell lennie a pénzügyi nyomtatón.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** – ez a kérés a regisztrált események listáját adja eredményül. Jelenleg a következő események támogatottak: értékesítés, X-jelentés nyomtatás és Z-jelentés nyomtatás.
 
 #### <a name="configuration"></a>Konfiguráció
 
-A fiscal connector konfigurációs fájlja az **src\\FiscalIntegration\\Posnet\\HardwareStation\\ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml** található a [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattárban. A fájl célja, hogy lehetővé tegye a pénzügyi összekötő beállításainak konfigurálását a Commerce központjából. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
+A pénzügyi bizonylat **szolgáltatójának konfigurációs fájlja a megoldástárház\\ FiscalIntegration\\ Posnet\\ CommerceRuntime\\ DocumentProvider.PosnetSample\\ Configuration\\ DocumentProviderPosnetSample.xml**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) fájljában található. A fájl célja, hogy lehetővé tegye a pénzügyi bizonylat szolgáltatójának beállításait a Commerce Headquarters alkalmazásból való konfigurálásban. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
+
+### <a name="hardware-station-extension-design"></a>Hardverállomás bővítményének tervezése
+
+A pénzügyi csatlakoztatóként használt bővítmény célja a pénzügyi nyomtatóval való kommunikáció. Ez a kiterjesztés hívja meg a POSNET illesztőprogram funkcióit, és elküldi CRT a kiterjesztés által a pénzügyi nyomtatón generált parancsokat. Az eszközhibákat is kezeli.
+
+#### <a name="request-handler"></a>Kérelemkezelő
+
+A **FiscalPrinterHandler** kérelemkezelő a kérésnek a pénzügyi perifériás eszközzel való kezelés belépési pontja.
+
+A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName metódus** felelős a kezelő nevének visszaküldéséért. A kezelő nevének meg kell egyeznie a Commerce Headquartersban megadott pénzügyi csatlakoztató nevével.
+
+Az csatlakoztató a következő kéréseket támogatja:
+
+- **SubmitDocumentFiscalDeviceRequest** – ez a kérés dokumentumokat küld a nyomtatóknak, és visszaküldi a választ a pénzügyi nyomtatóról.
+- **IsReadyFiscalDeviceRequest** – ez a kérés az eszköz állapotának ellenőrzésére használható.
+- **InitializeFiscalDeviceRequest** – ez a kérés a nyomtató inicializálásához használatos.
+
+#### <a name="configuration"></a>Konfiguráció
+
+A pénzügyi csatlakoztató **konfigurációs fájlja a megoldástárház\\ FiscalIntegration\\ Posnet HardwareStation\\ AeviceSample\\\\ Configuration\\ ConnectorPosnetThermalFVEJ.xml**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) fájljában található. A fájl célja, hogy engedélyezze a pénzügyi csatlakoztató beállításait a Commerce Headquarters alkalmazásból való konfigurálásban. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

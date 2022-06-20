@@ -1,6 +1,6 @@
 ---
 title: Tárgyi eszköz beszerzés előtti műveleteinek feladása
-description: Ez a témakör bemutatja, hogyan állíthatja be és könyvelheti a tárgyi eszközök beszerzése előtti műveleteket.
+description: Ez a cikk bemutatja a tárgyi eszközök előzetes beszerzésekkel való beállítását és fel irányítószámát.
 author: EvgenyPopovMBS
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa7e1dd743790d494a4b80e656ce5732c81b08bfea4da70750cd92f67b8618f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2d5b6220c70a9f9e23aa413ed7f7982631789f79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752904"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894767"
 ---
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Tárgyi eszköz beszerzés előtti műveleteinek feladása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan állíthatja be és könyvelheti a tárgyi eszközök beszerzése előtti műveleteket.
+Ez a cikk bemutatja a tárgyi eszközök előzetes beszerzésekkel való beállítását és fel irányítószámát.
 
 **Megjegyzés:** a tárgyi eszközök beszerzése előtti műveletek könyvelése funkció csak azon jogi személyeknél érhető el, amelyek elsődleges címe Magyarországon vagy Csehországban található. Tárgyi eszköz beszerzés előtti műveletei nem használhatók fel értékcsökkenésben, és ezek nem befolyásolják sem a tárgyi eszköz beszerzési költségeit, sem pedig a tárgyi eszköz nettó könyv szerinti értékét. Beszerzés előtti művelet feladásakor a tárgyi eszköz állapota **Beszerzett** értékre módosul. A **Beszerzett** állapotú tárgyi eszközök nem használhatók fel értékcsökkenésben. Beszerzés feladásakor ellenben a tárgyi eszköz állapota **Nyitva** értékre módosul, és így felhasználható értékcsökkenésben.
 

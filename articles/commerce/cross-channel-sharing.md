@@ -1,6 +1,6 @@
 ---
 title: Csatornaközi megosztás engedélyezése és használata
-description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni és használni a Microsoft Dynamics 365 Commerce webhelykészítő csatornaközi megosztás funkcióját.
+description: Ez a témakör azt ismerteti, hogyan lehet engedélyezni és használni a webhelyszerkesztő Microsoft Dynamics 365 Commerce többcsatornás megosztási funkcióját.
 author: psimolin
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 637149c088cb87301018868e680537eb58b17852
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742416"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866004"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Csatornaközi megosztás engedélyezése és használata
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet engedélyezni és használni a Microsoft Dynamics 365 Commerce webhelykészítő csatornaközi megosztás funkcióját.
+Ez a témakör azt ismerteti, hogyan lehet engedélyezni és használni a webhelyszerkesztő Microsoft Dynamics 365 Commerce többcsatornás megosztási funkcióját.
 
 A csatornaközi megosztással a kiskereskedők újra felhasználhatják és megoszthatják a tartalmat a webhely több csatornája között. Ez a lehetőség akkor hasznos, ha a webhelycsatornák kompatibilis alapnyelvet használnak, vagy ha sok közös tartalmi elemük van.
 

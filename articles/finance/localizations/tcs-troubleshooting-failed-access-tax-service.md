@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 02/16/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: f4682b83405071b4ad7647958122ab2b4e082133
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 65d819b97be3d1238bc0ecfc201b4e24edac8616
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612316"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861222"
 ---
 # <a name="failed-to-access-tax-service"></a>Nem sikerült hozzáférni az adószolgáltatáshoz
 
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör leírja, hogyan lehet kijavítani az adószámítási szolgáltatás "Nem lehet elérni az adószolgáltatást" hibaüzenetét.
+Ez a cikk bemutatja az adószámítási szolgáltatás "Nem lehet elérni az adószolgáltatást" hibaüzenetét.
 
 ## <a name="symptoms"></a>Tünetek
 

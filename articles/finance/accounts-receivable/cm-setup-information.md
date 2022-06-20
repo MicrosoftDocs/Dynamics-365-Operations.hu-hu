@@ -1,6 +1,6 @@
 ---
 title: Hitelkezelés beállítása
-description: Ez a témakör a Hitelkezeléshez szükséges beállításokat írja le.
+description: Ez a témakör a Jóváíráskezeléshez szükséges beállításokat ismerteti.
 author: JodiChristiansen
 ms.date: 02/15/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: cc46faa3c5da590fe5ec574fabe452e547044eac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182443"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886487"
 ---
 # <a name="credit-management-setup"></a>Hitelkezelés beállítása 
 

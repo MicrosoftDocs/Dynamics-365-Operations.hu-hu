@@ -1,6 +1,6 @@
 ---
 title: Számlakezelés B2B e-commerce webhelyekhez
-description: Ez a témakör a vállalat Microsoft Dynamics 365 Commerce és vállalat között üzleti kapcsolatban található e-commerce webhelyek számlakezelési lehetőségeit ismerteti.
+description: Ez a témakör ismerteti Microsoft Dynamics 365 Commerce a vállalat és vállalat között létre tartozó e-commerce webhelyek számlakezelési lehetőségeit.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 60cb0c8aaede4a0eaeed80cf5ebe41068da57836
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: fa6b81187481a6b7f47ea02291e5a581052d6c7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686300"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854926"
 ---
 # <a name="invoice-management-for-b2b-e-commerce-websites"></a>Számlakezelés B2B e-commerce webhelyekhez
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a vállalat Microsoft Dynamics 365 Commerce és vállalat között üzleti kapcsolatban található e-commerce webhelyek számlakezelési lehetőségeit ismerteti.
+Ez a témakör ismerteti Microsoft Dynamics 365 Commerce a vállalat és vállalat között létre tartozó e-commerce webhelyek számlakezelési lehetőségeit.
 
 A B2B tranzakciókat kezelő vállalatoknál be kell fogadniuk a vevői jóváírásra vonatkozó rendeléseket, majd a rendelés teljesítése után számlát kell küldeniük a vevőknek. A fizetési feltételek meg vannak határozva a vevőkhöz, és előfordulhatnak bizonyos engedmények, amelyek a vevők motiváltak arra, hogy időben vagy idő előtt fizethetnek. A B2B e-commerce webhelyek segítségével a vevők megtekinthetik az összes számlájukat, így növelheti annak a valószínűségét, hogy a kifizetések időben érkeziknek. A vevő egyszerűen szűrheti a számlákat, hogy a fizetett, a kifizetetlen és a részben kifizetett számlákat a határidővel együtt tekintse meg.
 

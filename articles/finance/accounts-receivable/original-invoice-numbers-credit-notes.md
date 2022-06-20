@@ -1,6 +1,6 @@
 ---
 title: Hivatkozások eredeti számlákra a jóváírásokban
-description: Ez a témakör bemutatja az eredeti számlaszámok beállítását és nyomtatását a kapcsolódó jóváírásokban.
+description: Ez a cikk bemutatja a kapcsolódó jóváírások eredeti számlaszámának beállítását és nyomtatását.
 author: ilkond
 ms.date: 10/26/2021
 ms.topic: article
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1362bf41416202631dc4b966338e8166b26a67f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ebfeb43aaf137ef336b460f340fbda50f5918d08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861531"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Hivatkozások eredeti számlákra a jóváírásokban
 
 [!include [banner](../includes/banner.md)]
 
 
-Egyes országokban és régiókban jogi előírás, hogy a nyomtatott jóváírások hivatkozást tartalmazzanak az eredeti számlákra. Ez a témakör bemutatja az eredeti számlaszámok beállítását és nyomtatását a kapcsolódó jóváírásokban.
+Egyes országokban és régiókban jogi előírás, hogy a nyomtatott jóváírások hivatkozást tartalmazzanak az eredeti számlákra. Ez a cikk bemutatja a kapcsolódó jóváírások eredeti számlaszámának beállítását és nyomtatását.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 - A **Funkciókezelés** munkaterületen kapcsolja be az **Értékesítési és projektszámla-jelentések jóváírás-számlázási elrendezése** funkciót. További tájékoztatás: [Funkciókezelés – áttekintés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - A szükséges dokumentumok nyomtatható formátumait a Nyomtatáskezelésben kell konfigurálni.
 
-Az ebben a témakörben leírt funkciók a következő dokumentumokra vonatkoznak:
+Az ebben a cikkben ismertetett funkciók a következő dokumentumokra vonatkoznak:
 
 **Kinnlevőségek**
 

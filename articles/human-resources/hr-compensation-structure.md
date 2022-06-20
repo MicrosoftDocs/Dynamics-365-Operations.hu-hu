@@ -1,6 +1,6 @@
 ---
 title: Kompenzációs struktúra kialakítása
-description: Ez a témakör végigvezeti a fix kompenzációs konstrukció létrehozásának és az alkalmazottak konstrukcióba való regisztrálásának folyamatán alkalmazhatósági szabályokon keresztül.
+description: Ez a cikk bemutatja, hogyan lehet fix kompenzációs konstrukciókat létrehozni, és alkalmazottakat regisztrálni a konstrukcióba az alkalmazhatósági szabályok segítségével.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f069d4e982a9c02070c2010b894b2ec7a9c7f6ab
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 86953e6d54843f17d0d6090a9def8bc256624f21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693087"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902970"
 ---
 # <a name="develop-a-compensation-structure"></a>Kompenzációs struktúra kialakítása
 
@@ -26,7 +26,7 @@ ms.locfileid: "8693087"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör leírja a fix kompenzációs konstrukció létrehozásának és az alkalmazottak konstrukcióba való regisztrálásának folyamatát az alkalmazhatósági szabályokon keresztül. Ez a témakör a USMF bemutató adatait használja, és a kompenzációs és juttatási vezetőket érinti.
+Ez a témakör a fix kompenzációs konstrukciók létrehozását és az alkalmazottaknak a konstrukcióba való felvételét írja le az alkalmazhatósági szabályokon keresztül. Ez a cikk az USMF bemutató adatait használja, és a kompenzációs és juttatások vezetőire vonatkozik.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Fix kompenzációs konstrukciók létrehozása
 

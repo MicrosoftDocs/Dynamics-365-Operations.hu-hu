@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources A 2021. november 19. újdonsága vagy módosult
-description: Ez a témakör olyan funkciókat ír le, amelyek vagy újak, vagy módosulnak a Microsoft Dynamics 365 Human Resources önálló verziójában 2021. november 19-én.
+description: Ez a témakör olyan funkciókat ír le, amelyek vagy újak, vagy módosulnak a Különálló Microsoftban Dynamics 365 Human Resources 2021. november 19. óta.
 author: marcelbf
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f28057c370b27dbdad4bfe1104e9289f7df65621
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d3e08432a4ce4d73cd67ad839191abe9f6e691a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886073"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-november-19-2021"></a>Dynamics 365 Human Resources A 2021. november 19. újdonsága vagy módosult
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a téma a Microsoft Dynamics 365 Human Resources új, megváltozott vagy hamarosan megjelenő funkcióit ismerteti.
+Ez a témakör a Microsoft új, módosított vagy hamarosan érkező funkcióit írja le Dynamics 365 Human Resources.
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -40,7 +40,7 @@ Ez a kiadás a következő hibajavításokat tartalmazza. A változtatások a 8.
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 > [!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Lehet, hogy frissítjük ezt a témát, hogy tartalmazza azokat a hibajavításokat, amelyek a téma eredeti közzététele után kerültek be a buildbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a cikk első közzététele után frissítjük ezt a cikket, hogy a hibajavítások is szerepeljenek a buildben.
 
 | Kiadás száma | Probléma | Leírás |
 |---|---|---|

@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi információk konfigurációja - 10.0.20-as és újabb verzió
-description: Ez a témakör leírja, hogyan kell konfigurálni a rendszert a pénzügyi információkban elérhető lehetőségek használatára a 10.0.20-as és újabb verziókban.
+description: Ez a cikk bemutatja, hogyan kell konfigurálni a rendszert a pénzügyi információkban elérhető lehetőségek használatára a 10.0.20-as és újabb verziókban.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 61cc002395ac3bc946fa03a04833a7b6d4820194
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711604"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868518"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Pénzügyi információk konfigurációja - 10.0.20-as és újabb verzió
 
@@ -29,10 +29,10 @@ ms.locfileid: "8711604"
 
 
 
-A pénzügyi adatelemzés a Microsoft Dynamics 365 Pénzügy Dataverse és az Azure funkciókat kombinálja, AI Builder és hatékony előrejelzési eszközöket biztosít a szervezet számára. Ez a témakör leírja, hogyan kell konfigurálni a Dynamics 365 Pénzügy 10.0.20-as verzióját, hogy a rendszer használni tudja a pénzügyi információkban elérhető lehetőségeket.
+A pénzügyi adatelemzés a Microsoft Dynamics 365 Pénzügy Dataverse és az Azure funkciókat kombinálja, AI Builder és hatékony előrejelzési eszközöket biztosít a szervezet számára. Ez a cikk bemutatja, hogyan kell konfigurálni a Dynamics 365 Pénzügy 10.0.20-as verzióját, hogy a rendszer használni tudja a Pénzügyi információkban elérhető lehetőségeket.
 
 > [!NOTE]
-> Az ebben a témakörben ismertetett konfigurációs lépések csak a Finance 10.0.20-as és későbbi verzióira érvényesek. "A Finance Insights 10.0.19-es és korábbi verzióinak beállításával kapcsolatosan lásd: [Konfiguráció a Finance Insights alkalmazáshoz – 10.0.19 verzióig](configure-for-fin-insites.md).
+> Az ebben a cikkben ismertetett konfigurációs lépések csak a Pénzügy 10.0.20-as és újabb verziókra vonatkoznak. "A Finance Insights 10.0.19-es és korábbi verzióinak beállításával kapcsolatosan lásd: [Konfiguráció a Finance Insights alkalmazáshoz – 10.0.19 verzióig](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>A Finance telepítése
 

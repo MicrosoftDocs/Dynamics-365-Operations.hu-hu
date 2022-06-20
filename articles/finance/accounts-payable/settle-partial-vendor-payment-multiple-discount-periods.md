@@ -1,6 +1,6 @@
 ---
 title: Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
-description: Ez a témakör olyan helyzetről ad képet, amikor több részleges kifizetést kell fizetni egy olyan szállítónak, amely több készpénzfizetési engedményt kínál.
+description: Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d805ce2de866d0073b4bb797eb7ddae0736e8948
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f0599c25d1cd5e07ca5a955ecc96fed2e31383ec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716279"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861647"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan helyzetről ad képet, amikor több részleges kifizetést kell fizetni egy olyan szállítónak, amely több készpénzfizetési engedményt kínál. 
+Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak. 
 
 A 3054. szállító a Fabrikamnak 2 százalékos készpénzfizetési engedményt ad, ha a számlát öt napon belül kifizeti, és 1 százalékot, ha a számlát 14 napon belül kifizeti.
 

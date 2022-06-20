@@ -1,6 +1,6 @@
 ---
-title: Élettartamon alapuló lineáris értékcsökkenés
-description: Ez a témakör a Lineáris-hasznosélettartam értékcsökkenési módszeréről nyújt tájékoztatást.
+title: Lineáris – élettartam szerinti értékcsökkenés
+description: Ez a cikk a Lineáris, élettartam szerinti értékcsökkenés módszeréről nyújt tájékoztatást.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d39bfea3f222d83d3b3d47e4ba931521b8e1aed0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 8766d38958ccb17142132fb78d04368f1b73af71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896463"
 ---
-# <a name="straight-line-service-life-depreciation"></a>Élettartamon alapuló lineáris értékcsökkenés
+# <a name="straight-line-service-life-depreciation"></a>Lineáris – élettartam szerinti értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Lineáris-hasznosélettartam értékcsökkenési módszeréről nyújt tájékoztatást.
+Ez a cikk a Lineáris, élettartam szerinti értékcsökkenés módszeréről nyújt tájékoztatást.
 
 Ha lineáris vagy degresszív tárgyieszköz-értékcsökkenési profilt állít be, akkor a Lineáris - hátralevő élettartam érték is választható az Értékcsökkenési profilok képernyő Módszer mezőjében, és az értékcsökkenési profilhoz társított tárgyi eszközök értékcsökkenésének az eszköz fennmaradó élettartama lesz az alapja. Ez általában időszakonként azonos értékcsökkenési összeget eredményez. 
 
@@ -41,7 +41,7 @@ Kiválaszthatja a Naptár vagy Pénzügyi elemeket az Értékcsökkenési év me
 
 Naptár választása esetén az év január 1-től december 31-ig számít, akkor is, ha a tárgyieszköznaptár vagy a főkönyvi időszakok ettől eltérően vannak definiálva. 
 
-A Naptár beállítás használata esetén a rendszer minden évben január elsején frissíti az értékcsökkenés alapját, amely jellemzően a nettó könyv szerinti érték csökkentve a maradványértékkel. Az ebben a témában szereplő későbbi példákban az értékcsökkenés alapja a számítások oszlop első kifejezésében szereplő számláló. 
+A Naptár beállítás használata esetén a rendszer minden évben január elsején frissíti az értékcsökkenés alapját, amely jellemzően a nettó könyv szerinti érték csökkentve a maradványértékkel. A cikk későbbi példáiban az értékcsökkenés alapja a számítás oszlopában lévő első szám. 
 
 A Naptár lehetőség választása esetén a következő beállítások állnak rendelkezésre az Időszak gyakorisága mezőben, amelyek egész évben meghatározzák az értékcsökkenés feladási időpontját és összegét:
 - Éves felad egy összeget december 31-én.

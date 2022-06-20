@@ -1,6 +1,6 @@
 ---
 title: Perifériák csatlakozás a pénztárhoz (POS)
-description: Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához.
+description: Ez a cikk bemutatja, hogyan lehet perifériákat csatlakoztatni a Retail POS terminálhoz.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
-ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
+ms.openlocfilehash: ffee75e1713c7c9d31b1d023cd055c2f1a3fc43d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897108"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Perifériák csatlakozás a pénztárhoz (POS)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához.
+Ez a cikk bemutatja, hogyan lehet perifériákat csatlakoztatni a Retail POS terminálhoz.
 
 > [!NOTE]
 > Specifikus telepítési utasítások: [A Retail Hardware Station konfigurálása és telepítése](retail-hardware-station-configuration-installation.md) és [A Modern (MPOS) konfigurálása, telepítése és aktiválása](retail-modern-pos-device-activation.md).
@@ -157,7 +157,7 @@ A nyugtaprofilok a hardverprofil nyomtatóihoz vannak hozzárendelve. Arra haszn
 
 #### <a name="hardware-profiles"></a>Hardverprofilok
 
-A hardverprofilok magyarázata a témakör korábbi részében, az ügyfélbeállítás egyik összetevőjeként ismertető. A hardverprofilok közvetlenül a POS-pénztárgéphez vagy egy megosztott hardverállomáshoz vannak hozzárendelve, és az adott POS-pénztárgép vagy hardverállomás által használt eszközök típusának megadására használhatók. A hardverprofilokkal adhatóak meg továbbá az EFT beállítások, amelyek a fizetési SDK-val való kommunikációt végzik.
+Ez a cikk már korábban bemutatta a hardverprofilokat, a kliensbeállítás egyik összetevőjeként. A hardverprofilok közvetlenül a POS-pénztárgéphez vagy egy megosztott hardverállomáshoz vannak hozzárendelve, és az adott POS-pénztárgép vagy hardverállomás által használt eszközök típusának megadására használhatók. A hardverprofilokkal adhatóak meg továbbá az EFT beállítások, amelyek a fizetési SDK-val való kommunikációt végzik.
 
 #### <a name="visual-profiles"></a>Vizuális profilok
 

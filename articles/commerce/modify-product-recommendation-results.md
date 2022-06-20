@@ -1,6 +1,6 @@
 ---
 title: AI-ML-alapú termékajánlás eredményeinek kiigazítása
-description: Ez a témakör azt mutatja be, hogyan lehet testreszabni a termékjavaslatok eredményeit a mesterséges intelligencia gépi tanulás (AI-ML) alapján a vállalkozása számára.
+description: Ez a cikk bemutatja, hogy hogyan lehet testreszedni a termék ajánlási eredményeit a vállalatnak a jól érthető intelligencia – gépi tanulás (AI-STB) alapján.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5374b2ce559134bd26036b06ac6d96a9f5510ab847544707fc9885506aaab547
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74fa013d44e0f113bdf0ce0ca9efeb943926e9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901702"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML-alapú termékajánlás eredményeinek kiigazítása
 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet kiigazítani a termékjavaslatok eredményeit a mesterséges intelligencia gépi tanulás (AI-ML) alapján a vállalkozása számára. 
+Ez a cikk bemutatja, hogyan lehet a vállalatnak a visszaható intelligencia – gépi tanulás (AI-STB) alapján módosítani a termék ajánlási eredményeit. 
 
 A termékjavaslatok engedélyezése után az alapértelmezett beállítások lépnek érvénybe ezek a paraméterek számos szükséglethez használhatók lehetnek. A legjobb az, ha hagynak egy kis időt arra, hogy az eredmények megfelelnek-e a termékek értékesítési irányának. Javasoljuk, hogy néhány napig értékelje ki az eredményeket, mielőtt igény szerint módosítaná a paramétereket az újratesztelés előtt. 
 

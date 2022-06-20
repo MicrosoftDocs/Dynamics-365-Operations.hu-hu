@@ -1,6 +1,6 @@
 ---
 title: Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken
-description: Ez a témakör azt ismerteti, hogyan adhat hozzá, Microsoft Dynamics 365 Commerce törölhet és szerkeszthet üzleti partnereket az üzleti partner felhasználóihoz a vállalattól vállalat számára szóló e-commerce webhelyeken és a Commerce Headquarters alkalmazáson keresztül.
+description: Ez a témakör azt ismerteti, hogyan lehet üzleti partner felhasználóit hozzáadni, Microsoft Dynamics 365 Commerce törölni és szerkeszteni a vállalathoz – b2B – e-commerce webhelyeken és a Commerce Headquarters alkalmazáson keresztül.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ef8ae583f18048fc6a36adf38ee7be0fb5b02fcd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4a3d1c7bf7e7ea545590315d9e185fa525b5d5e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686324"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860295"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan adhat hozzá, Microsoft Dynamics 365 Commerce törölhet és szerkeszthet üzleti partnereket az üzleti partner felhasználóihoz a vállalattól vállalat számára szóló e-commerce webhelyeken és a Commerce Headquarters alkalmazáson keresztül.
+Ez a témakör azt ismerteti, hogyan lehet üzleti partner felhasználóit hozzáadni, Microsoft Dynamics 365 Commerce törölni és szerkeszteni a vállalathoz – b2B – e-commerce webhelyeken és a Commerce Headquarters alkalmazáson keresztül.
 
 > [!NOTE]
-> - A [dokumentum előfeltétele a B2B üzleti partnerek kezelése a vevőhierarchiákat](partners-customer-hierarchies.md) használó témakörökben.
+> - A [dokumentum előfeltétele a B2B üzleti partnerek kezelése a vevői hierarchiák](partners-customer-hierarchies.md) cikket használó felhasználók számára.
 > - A Dokumentumtípusok képernyő megnyitásával inicializálja a dokumentumtípus-entitásokat a Commerce **Headquarters** **\>\> alkalmazásból, hogy megnyitja a Szervezet felügyelete dokumentumkezelési dokumentumtípusok képernyőt**.
 
 A B2B e-kereskedelmi webhelyek esetén a szervezeteknek regisztrálniuk kell, hogy üzleti partnerekké váljanak. Miután egy szervezet elküldi a regisztrációs adatokat a B2B e-commerce webhelynek, a regisztrációra vonatkozó kérelem egy képesítési folyamaton megy keresztül. Ha a szervezet minősítése sikeres, üzleti partnerként léptetik be.
@@ -121,7 +121,7 @@ Az üzleti partnereknak és felhasználóknak a Commerce központi felületén t
 
 ## <a name="additional-information"></a>További információk
 
-- A témakörben említett összes feladat konfigurálható úgy, hogy kötegelt formátumban fusson meghatározott ütemezés alapján. A feltételezés az, hogy az üzleti partnerek a szükséges módon konfigurálják a kötegelt feladatokat.
+- A cikk minden, a fenti feladat konfigurálható úgy, hogy kötegelt formátumban fusson az ütemezésen. A feltételezés az, hogy az üzleti partnerek a szükséges módon konfigurálják a kötegelt feladatokat.
 - Jelenleg csak egy felhasználó-/vevőrekord jelölhető ki rendszergazdaként, és ez a szerepkör csak a Commerce központi felületén módosítható. Az önkiszolgáló rendszer funkciói nem támogatják azokat a lehetőségeket, amelyek lehetővé teszi az üzleti partnerek számára, hogy több rendszergazdát jelöljenek ki, vagy hogy a rendszergazdákat a B2B e-kereskedelmi webhelyekről módosítsák.
 - Bár a felhasználókra költségkereteket lehet meghatározni, a rendelésbeviteli folyamat során még nincs végrehajtva a költségkeretek érvényesítése.
 - A felhasználók B2B e-kereskedelmi webhelyen szerzett tapasztalatainak minden üzleti logikája és érvényesítése a Commerce központi felületén lévő felhasználóhoz leképezett vevőrekord konfigurációján alapul.

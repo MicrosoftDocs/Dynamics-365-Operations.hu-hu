@@ -1,6 +1,6 @@
 ---
 title: Felosztási feltételek
-description: Ez a témakör a felosztási feltételek fő számlán történő használatáról nyújt tájékoztatást.
+description: Ez a cikk a fő számlán történő felosztási feltételek használatával kapcsolatban tartalmaz tájékoztatást.
 author: rachel-profitt
 ms.date: 06/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab3f797505e2c3d7521d3af5c231f5985e6efaa5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d62c0cc79c9d61e0ebb1c2c62a345ad47412d0d2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734895"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859827"
 ---
 # <a name="allocation-terms"></a>Felosztási feltételek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a felosztási feltételek fő számlán történő használatáról nyújt tájékoztatást. A felosztási feltételek segítségével összegeket oszthat fel több főkönyvi számla kombináció között. Ezek garantáljak azt, hogy a költségek vagy a bevételek a megfelelő objektumot terhelik a könyvelés során.
+Ez a cikk a fő számlán történő felosztási feltételek használatával kapcsolatban tartalmaz tájékoztatást. A felosztási feltételek segítségével összegeket oszthat fel több főkönyvi számla kombináció között. Ezek garantáljak azt, hogy a költségek vagy a bevételek a megfelelő objektumot terhelik a könyvelés során.
 
 A fő számlán létrehozott felosztási feltételek határozzák meg, hogy egy bizonylat hány százalékát kell hozzárendelni egy egyforrású fő számlából, illetve a pénzügyi dimenziók kombinációját. Ezenkívül Ön meghatározhatja a cél fő számlát, és azokat a pénzügyi dimenziókat, ahol az összeget fel szeretné osztani. 
 

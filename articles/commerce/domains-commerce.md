@@ -1,6 +1,6 @@
 ---
 title: Tartományok a Dynamics 365 Commerce szolgáltatásban
-description: Ez a témakör azt mutatja be, hogyan kezelhetők a tartományok a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör azt ismerteti, hogyan kell kezelni a tartományokat Microsoft Dynamics 365 Commerce.
 author: BrShoo
 ms.date: 05/10/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
-ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
+ms.openlocfilehash: c48c8bd57d90a8c7d47bfa4263cd9ab38002629b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8737346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848954"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce szolgáltatásban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan kezelhetők a tartományok a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt ismerteti, hogyan kell kezelni a tartományokat Microsoft Dynamics 365 Commerce.
 
-A tartományok a webböngészőkben a Dynamics 365 Commerce webhelyekhez való navigálásra használt webcímek . A tartomány kezelését a kiválasztott tartományi névkiszolgálóval (DNS-szolgáltatóval) vezérelheti. A tartományok a Dynamics 365 Commerce webhely-építők között hivatkoznak hogy koordinálják, hogyan lehet elérni a webhelyet a közzétételkor. Ez a témakör azt mutatja be, hogyan kezeli a rendszer a tartományokat a Commerce oldalfejlesztés és indítás életciklusok alatt.
+A tartományok a webböngészőkben a Dynamics 365 Commerce webhelyekhez való navigálásra használt webcímek . A tartomány kezelését a kiválasztott tartományi névkiszolgálóval (DNS-szolgáltatóval) vezérelheti. A tartományok a Dynamics 365 Commerce webhely-építők között hivatkoznak hogy koordinálják, hogyan lehet elérni a webhelyet a közzétételkor. Ez a cikk áttekinti, hogyan kezeli és hivatkozik a tartományokra a Commerce-webhely fejlesztési és indítási életciklusában.
 
 > [!NOTE]
 > 2022 Dynamics 365 Commerce`.dynamics365commerce.ms` . május 6-án minden környezetben létre lesz hozva a tartomány, amely a korábbi rendszert használja `.commerce.dynamics.com`. A tartománysal létesített `.commerce.dynamics.com` meglévő környezetek továbbra is működni fognak.

@@ -1,6 +1,6 @@
 ---
 title: Feladat összetevőinek beállítása
-description: Ez a témakör azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben.
+description: Ez a cikk azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: de828bc1ab764a8a1bd084a508f38ff19a3947d5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: afe100879a4f83e4ef16048bc4b1acace19b679b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877714"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Feladat összetevőinek beállítása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8693584"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben. 
+Ez a cikk azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben. 
 
 Feladatok létrehozása előtt be kell állítania bizonyos referenciaadatokat. Létrehozhat olyan feladatot is, amelynek csak neve van. További információk - például beosztás - megadásával viszont alapértelmezett értékek biztosíthatók a feladathoz rendelt beosztások számára. Emellett a beírt adatok egy része használható kompenzációs konstrukciók szűréséhez konkrét feladatokhoz. Ha szeretne jogosultságot beállítani, amelyet felhasználhat bizonyos feladathoz tartozó kompenzációs konstrukciók szűrésére, úgy állítson be feladatbeosztásokat és feladattípusokat a feladatok beállítása előtt. Ha ezen alapértelmezett értékek elérhetők, időt takaríthat meg, amikor beosztások hozzáadását végzi a feladathoz. 
 

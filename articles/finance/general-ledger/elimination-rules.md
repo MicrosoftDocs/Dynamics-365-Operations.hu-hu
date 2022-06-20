@@ -1,6 +1,6 @@
 ---
 title: Eltávolítási szabályok
-description: Ez a témakör az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban szolgáltat információt.
+description: Ez a cikk információt szolgáltat az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e062e7541871d77803cbed475d715621b19537f1
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3eb3ea117959dbc51eb5666aad60299210ff3ac5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722633"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864310"
 ---
 # <a name="elimination-rules"></a>Eltávolítási szabályok
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban szolgáltat információt.
+Ez a cikk információt szolgáltat az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban.
 
 Az eltávolítási tranzakciókra akkor van szükség, amikor egy konszolidált pénzügyi jelentést alkalmazó anyavállalat üzleti kapcsolatban van egy vagy több leányvállalatával. A konszolidált pénzügyi kiadásoknak csak olyan tranzakciókat kell tartalmazniuk, amelyek a konszolidált szervezet és egyéb, a szervezeten kívüli entitások között jönnek létre. Emiatt azokat a jogi személyek közötti tranzakciókat, amelyek ugyanazon szervezet között jönnek létre, el kell távolítani a főkönyvből, hogy ne jelenjenek meg a pénzügyi jelentésekben. Több mód létezik, hogy jelentést tegyünk az eltávolításokról:
 
@@ -34,7 +34,7 @@ Az eltávolítási tranzakciókra akkor van szükség, amikor egy konszolidált 
 -   A pénzügyi jelentés használható, hogy megmutassa az eltávolítások számláit és dimenziót az adott sorban vagy oszlopban.
 -   Egy különálló jogi személy használható, hogy kézi tranzakció bejegyzéseket adjon föl az eltávolítások követéséhez.
 
-Ez a téma azon eltávolítási szabályokra összpontosít, amelyek a konszolidáló vagy eltávolító vállalatban vannak feldolgozva. Annál a vállalatnál lehet felállítani eltávolítási szabályokat az eltávolítási tranzakciók létrehozására, amely az eltávolítások célvállalataként vagy eltávolítási vállalatként lett meghatározva. Ezt a célvállalatot eltávolítási jogi személynek is nevezik. Az eltávolítási naplók a konszolidáció folyamata során, vagy egy eltávolítási naplójavaslat felhasználásával hozhatók létre. Mielőtt eltávolítási szabályokat állítana fel, meg kell ismerkednie a következő fogalmakkal:
+Ez a cikk a konszolidációs vagy eltávolítási vállalatban feldolgozott eltávolítási szabályokra vonatkozik. Annál a vállalatnál lehet felállítani eltávolítási szabályokat az eltávolítási tranzakciók létrehozására, amely az eltávolítások célvállalataként vagy eltávolítási vállalatként lett meghatározva. Ezt a célvállalatot eltávolítási jogi személynek is nevezik. Az eltávolítási naplók a konszolidáció folyamata során, vagy egy eltávolítási naplójavaslat felhasználásával hozhatók létre. Mielőtt eltávolítási szabályokat állítana fel, meg kell ismerkednie a következő fogalmakkal:
 
 -   **Forrás jogi személy** – azon jogi személy, amelyben az eltávolítandó összegeket feladták.
 -   **Cél jogi személy** – az a vállalat, amelybe az eltávolítási szabályok feladása történik.

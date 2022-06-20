@@ -1,6 +1,6 @@
 ---
 title: Több felvételi szállítási mód engedélyezése a vevői rendelésekhez
-description: Ez a témakör a Microsoft Dynamics 365 Commerce azon funkcióit ismerteti, amelyek lehetővé teszik vevői rendelések létrehozását az üzletben való felvételhez.
+description: Ez a cikk bemutatja, hogy hogyan Microsoft Dynamics 365 Commerce lehet vevői rendeléseket létrehozni az üzletben való felvételre.
 author: hhainesms
 ms.date: 06/07/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: a8fec96eb644cccea3566a32f3eb2ac3c699faa412be2bb9cdb2690d34999542
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 555ae3900bd7f9c66366f19a6eb2f12503898c93
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745356"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858908"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Több felvételi szállítási mód engedélyezése a vevői rendelésekhez
 

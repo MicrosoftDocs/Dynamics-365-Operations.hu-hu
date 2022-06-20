@@ -1,6 +1,6 @@
 ---
-title: A rendelés összegző részösszege nem tartalmazza a költségek adóját az testreszabott rendelésösszegző modulok használata esetén.
-description: Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amely segítséget nyújt az testreszabott rendelésösszegző modulok használata esetén, és a rendelés összegző részösszege nem tartalmazza a költségekre kivetett adókat az "ár tartalmazza az áfát" helyzetben.
+title: A rendelésösszesítés részösszege nem tartalmazza a díjak adóját testreszabott rendelésösszesítő modulok használata esetén.
+description: Ez a cikk olyan hibaelhárítási útmutatást tartalmaz, amely segítséget nyújt az egyedi rendelésösszegző modulok használata esetén, és a rendelés összegző részösszege nem tartalmazza a költségekre kivetett adókat az "ár tartalmazza az áfát" helyzetben.
 author: gvrmohanreddy
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,16 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-04-22
-ms.openlocfilehash: 1a47561a3ac984bc554b5b93546592237c16cf18
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: 260dcb6bc1585615195e32adfcd1da6bfbca294e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767922"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848837"
 ---
-# <a name="order-summary-subtotal-doesnt-include-taxes-on-charges-when-using-customized-order-summary-modules"></a>A rendelés összegző részösszege nem tartalmazza a költségek adóját az testreszabott rendelésösszegző modulok használata esetén.
+# <a name="order-summary-subtotal-doesnt-include-taxes-on-charges-when-using-customized-order-summary-modules"></a>A rendelésösszesítés részösszege nem tartalmazza a díjak adóját testreszabott rendelésösszesítő modulok használata esetén.
 
-Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amely segítséget nyújt az testreszabott rendelésösszegző modulok használata esetén, és a rendelés összegző részösszege nem tartalmazza a költségekre kivetett adókat az "ár tartalmazza az áfát" helyzetben.
+Ez a cikk olyan hibaelhárítási útmutatást tartalmaz, amely segítséget nyújt az egyedi rendelésösszegző modulok használata esetén, és a rendelés összegző részösszege nem tartalmazza a költségekre kivetett adókat az "ár tartalmazza az áfát" helyzetben.
 
 ## <a name="description"></a>Leírás
 

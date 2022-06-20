@@ -1,6 +1,6 @@
 ---
 title: Folyamat típusa
-description: Ez a témakör bemutatja a Folyamat típusa lehetőség beállítását a Dynamics 365 Human Resources rendszerben.
+description: Ez a témakör a feldolgozás típusának beállítását ismerteti Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 06/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9f30b50e6ec24b44f7832905a43c9fd979986065
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 51be840b3af41e1ae32e9eae87ef62f4f4f15a09
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865353"
 ---
 # <a name="process-type"></a>Folyamat típusa
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533682"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör bemutatja a Igen Nem lehetőség beállítását a Dynamics 365 Human Resources rendszerben.
+Ez a témakör a Nem igen beállítás beállítását írja le Dynamics 365 Human Resources.
 
 ## <a name="option-set-process-type"></a>Beállításkészlet: Folyamat típusa
 

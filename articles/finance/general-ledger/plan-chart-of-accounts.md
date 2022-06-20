@@ -1,6 +1,6 @@
 ---
 title: Számlatükör tervezése
-description: A témakör olyan információkat tartalmaz, melyek segítik önt számlatükröt tervezni szervezete számára.
+description: A cikk olyan információkat tartalmaz, melyek segítik önt számlatükröt tervezni szervezete számára.
 author: aprilolson
 ms.date: 04/02/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734276a736cfdb91ec3a129c83dae1c0a6d3955
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722464"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853348"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Számlatükör tervezése
 
 [!include [banner](../includes/banner.md)]
 
-A témakör olyan információkat tartalmaz, melyek segítik önt számlatükröt tervezni szervezete számára.
+A cikk olyan információkat tartalmaz, melyek segítik önt számlatükröt tervezni szervezete számára.
 
 A szervezet pénzügyi adatainak nyomon követésére és karbantartására számlatükröt állíthat be. A számlatükör a számlák összessége, amelyek meghatározzák a pénzügyi keretet. Ezeken a számlákon szereplő tranzakciók további követésére szegmenseket is hozzáadhat. Ezeket a szegmenseket pénzügyi dimenzióknak nevezik. Például egy költségszámla magába foglalhat olyan pénzügyi dimenziókat, mint a részleg, a költséghely és a cél. Felhasználó által definiált szabályok határozzák meg, hogyan kapcsolódnak ezek a pénzügyi dimenziók a fő számlákhoz és más pénzügyi dimenziókhoz, és hogyan lehet bevinni tranzakciókat. Ezek a felhasználó által megadott szabályokon számlastruktúrák és speciális szabályok néven ismertek.
 

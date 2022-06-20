@@ -1,6 +1,6 @@
 ---
 title: Szabadság- és távollétparaméterek konfigurálása
-description: Ez a témakör azt írja le, hogyan lehet definiálni az emberi erőforrásokkal kapcsolatos paramétereket a távolléthez és a távolléthez Dynamics 365 Human Resources.
+description: Ez a témakör azt írja le, hogyan lehet definiálni a szabadságra és távollétre vonatkozó emberi erőforrások paramétereit Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79052c550783dee1ba4091ad10bde4d79d7b905e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3a39c74eef3865c03ccb9dd5aa2fece7f25e639a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690694"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891379"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Szabadság- és távollétparaméterek konfigurálása
 
 >[!Important]
->Az ebben a témakörben említett funkciók jelenleg csak a különálló Dynamics 365 Human Resources rendszerében lévő vevőknek érhetők el. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
+>Az ebben a cikkben említett funkciók jelenleg önálló vevők számára érhetők el Dynamics 365 Human Resources. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

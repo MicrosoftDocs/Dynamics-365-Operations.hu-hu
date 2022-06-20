@@ -1,6 +1,6 @@
 ---
 title: A Human Resources szolgáltatás nem jelenik meg a Microsoft Dynamics 365 alkalmazásai között
-description: Ez a téma elmagyarázza, mi a teendő, ha a Microsoft Dynamics 365 Human Resources nem szerepel a Microsoft Dynamics 365 alkalmazások között.
+description: Ez a cikk bemutatja, mi a mit kell tenni, ha a Microsoft Dynamics 365 Human Resources nincs felsorolva a Microsoft Dynamics 365-ös alkalmazások között.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a973b10a15846f7a27bff955deb2a961f45d9701
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2d520ac06bcc0990714929c0fdd622516eda5f30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687729"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872239"
 ---
 # <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>A humánerőforrás alkalmazás nem jelenik meg a Microsoft Dynamics 365 alkalmazások között
 

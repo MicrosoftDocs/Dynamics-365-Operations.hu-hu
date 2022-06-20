@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi dimenziók hozzáadása a pénzügyi igazgatói munkaterülethez
-description: Ez a témakör bemutatja a pénzügyi dimenziók hozzáadását a pénzügyi igazgatói munkaterülethez, így felhasználhatók a főkönyvi és költségvetési jelentésekhez.
+description: Ez a cikk bemutatja, hogyan lehet pénzügyi dimenziókat hozzáadni a pénzügyi igazgató munkaterületéhez, hogy felhasználhatók legyen a főkönyvi és a költségvetési jelentésekben.
 author: aprilolson
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fb558fbe25bd8977b712101df15cce7a76556dda
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: ea453eed826dec2e97371ec559e91b94933bdce6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853380"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Pénzügyi dimenziók hozzáadása a pénzügyi igazgatói munkaterülethez
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a pénzügyi dimenziók hozzáadását a pénzügyi igazgatói munkaterülethez, így felhasználhatók a főkönyvi és költségvetési jelentésekhez. A pénzügyi igazgatói munkaterület van egy **Áttekintés** lap és egy **Pénzügyi** lapon. Az ezeken a lapokon levő jelentéseket két mérték támogatja: a LedgerActivityMeasure és a BudgetActivityMeasure. Kapcsolat van a két mérték és a DimensionCombinationEntity entitás között. Ezért dimenziókat választhat ki.
+Ez a cikk bemutatja, hogyan lehet pénzügyi dimenziókat hozzáadni a pénzügyi igazgató munkaterületéhez, hogy felhasználhatók legyen a főkönyvi és a költségvetési jelentésekben. A pénzügyi igazgatói munkaterület van egy **Áttekintés** lap és egy **Pénzügyi** lapon. Az ezeken a lapokon levő jelentéseket két mérték támogatja: a LedgerActivityMeasure és a BudgetActivityMeasure. Kapcsolat van a két mérték és a DimensionCombinationEntity entitás között. Ezért dimenziókat választhat ki.
 
 1. A Finance rendszerben az **Entitástár** oldalon frissítse a **LedgerActivityMeasure** és a **BudgetActivityMeasure** mértékeket.
 2. A Microsoft Visual Studio alkalmazásban nyissa meg az Application Explorer lehetőséget, és keressen a **LedgerCFO** kifejezésre.

@@ -1,6 +1,6 @@
 ---
 title: Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül
-description: Ez a témakör két helyzetet mutat be, amelyek azt mutatják, hogyan lehet a készpénzfizetési engedményt még akkor is igénybe venni, ha a fizetés a készpénzfizetési engedmény időszakán kívül történik.
+description: A cikk két esetet tartalmaz, amelyek megmutatják, hogyan írható jóvá a készpénzfizetési engedmény, akkor is, ha a kifizetés a készpénzfizetési engedmény időszakán kívül történt.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daafa71dcbe46302fd7b9e8ab068d98e4925fc04
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 0b2d88b7f03a13e0e8229d7b45367f6da17390fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716579"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879711"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör két helyzetet mutat be, amelyek azt mutatják, hogyan lehet a készpénzfizetési engedményt még akkor is igénybe venni, ha a fizetés a készpénzfizetési engedmény időszakán kívül történik.
+A cikk két esetet tartalmaz, amelyek megmutatják, hogyan írható jóvá a készpénzfizetési engedmény, akkor is, ha a kifizetés a készpénzfizetési engedmény időszakán kívül történt.
 
 Június 28-én April egy 2.000,00 értékű számlát hoz létre 3052-es szállító számára. A számla 1 százalékos készpénzfizetési engedményt kínál, ha a számla 14 napon belül befizetésre kerül.
 

@@ -1,6 +1,6 @@
 ---
 title: QR-kód vagy vonalkód hozzáadása tranzakciós és bevételezési e-mailekhez
-description: Ez a témakör bemutatja, hogy hogyan lehet a rendelési azonosítókat képviselő QR-kódokat és vonalkódokat beszúrni a tranzakciós és bevételezési e-mailekbe a Microsoft Dynamics 365 Commerce rendszerben.
+description: Ez a cikk bemutatja, hogy hogyan lehet a rendelési kódot képviselő QR-kódokat és vonalkódokat beszúrni a tranzakciós és bevételezési e-mailekbe Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 03/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5f7b349700a4b3b43f818b30bb479e630048e8b8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ffa0009c55b5322b209b19692952c2e0704f65c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688965"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872884"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>QR-kód vagy vonalkód hozzáadása tranzakciós és bevételezési e-mailekhez
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet a rendelési azonosítókat képviselő QR-kódokat és vonalkódokat beszúrni a tranzakciós és bevételezési e-mailekbe a Microsoft Dynamics 365 Commerce rendszerben.
+Ez a cikk bemutatja, hogy hogyan lehet a rendelési kódot képviselő QR-kódokat és vonalkódokat beszúrni a tranzakciós és bevételezési e-mailekbe Microsoft Dynamics 365 Commerce.
 
 A QR-kódok és vonalkódok könnyen beemelhetők a tranzakciós e-mailekbe, hogy felgyorsítsák a rendeléskeresési folyamatot kiskereskedelmi környezetben. A QR-kódok és vonalkódok e-mailbe történő beszúrása során egy HTML **\<img\>** címkét kell használni, amely egy generáló és renderelő szolgáltatástól QR-kódot vagy vonalkódképet kér. A Microsoft nem biztosítja ezt a szolgáltatást. Vannak azonban olyan ingyenes vagy olyan szolgáltatások, amelyek kiszolgálnak olyan QR-kódokat vagy vonalkódokat, amelyek dinamikusan, lekérdezési sztringben átadott érték alapján jönnek létre.
 

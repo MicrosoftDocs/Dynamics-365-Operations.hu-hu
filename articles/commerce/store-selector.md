@@ -1,6 +1,6 @@
 ---
-title: Üzletkiválasztó modul
-description: Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: Üzletválasztó modul
+description: Ez a cikk az üzletválasztó modulra vonatkozik, és bemutatja, hogyan lehet a webhely lapjaihoz hozzáadni Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 05/18/2022
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a91b50d2177483615cf45276cf342be381814717
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780639"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881683"
 ---
 # <a name="store-selector-module"></a>Üzletválasztó modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a cikk az üzletválasztó modulra vonatkozik, és bemutatja, hogyan lehet a webhely lapjaihoz hozzáadni Microsoft Dynamics 365 Commerce.
 
 A vevők az üzletválasztó modulban kiválaszthatják, hogy melyik üzletben szeretnék felvenni a kiválasztott terméket az online vásárlás után. A Commerce 10.0.13 verziójában az üzletválasztó modul olyan további képességeket is tartalmaz, amelyek bemutatják az **Üzlet keresése** oldalt, ahol megjelennek a közelben található üzletek.
 
@@ -132,10 +132,10 @@ A **Felvétel áruházban** módban a modul csak a PDP-k és a kosár oldalain h
 - Az üzletválasztó modulnak egy vásárlásmező modulhoz való hozzáadásával kapcsolatos tudnivalókat lásd: [Vásárlásmező](add-buy-box.md) modul. 
 - Az üzletválasztó modulnak egy kosármodulhoz való hozzáadásával kapcsolatos tudnivalókat lásd: [Kosár modul](add-cart-module.md).
 
-Ha az üzlethelyekhez szeretné konfigurálni az üzletválasztó modult az elérhető üzletek megjelenítéséhez, akkor a jelen témakörben korábban mutatott ábrához hasonlóan hajtsa végre az alábbi lépéseket.
+A következő lépések szerint konfigurálhatja az üzletválasztó modult az üzletek helyoldalán elérhető áruházak megjelenítése érdekében, mint az ebben a cikkben korábban látható ábra.
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
-1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra.**
+1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
 1. Az Új lap **létrehozása párbeszédpanel** Lap neve **csoportban** adja **meg** az áruházi helyeket, majd válassza **a Tovább gombra.**

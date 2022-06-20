@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
-description: Ez a témakör áttekintést nyújt az Ausztriában található pénzügyi integrációs mintavételről Microsoft Dynamics 365 Commerce.
+description: Ez a cikk áttekintést nyújt az Ausztriában található pénzügyi integrációs mintavételről Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 826c1cb0fba7025b16dadbfa6157683392945103
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 099c3630d035ea673342d8345cd8f65dbd6db6a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614151"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873358"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Pénzügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt az Ausztriában található pénzügyi integrációs mintavételről Microsoft Dynamics 365 Commerce.
+Ez a cikk áttekintést nyújt az Ausztriában található pénzügyi integrációs mintavételről Microsoft Dynamics 365 Commerce.
 
 Az Ausztriában használt Dynamics 365 Retail pénztárgépekkel kapcsolatos helyi pénzügyi követelmények követelményeinek megfelelően az Ausztriában használt funkciók közé tartozik a pénztárgép és a külső pénzügyi regisztrációs szolgáltatás mintaintegrációja. A minta kiterjeszti a pénzügyi [integrációs funkciókat](fiscal-integration-for-retail-channel.md). [Az EFSTA](https://www.efsta.eu/at/fiskalloesungen/oesterreich) EFR (Electronic Fiscal Register) [megoldásán](https://www.efsta.eu/at/) alapul, és HTTPS protokollon keresztül engedélyezi a kommunikációt az EFR szolgáltatással. Az EFR szolgáltatásnak vagy a Retail hardverállomáson, vagy egy hardverállomásról csatlakoztatott külön számítógépen kell lennie. A minta forráskód formájában kapható, és része a Retail szoftverfejlesztői csomagnak (SDK).
 
@@ -204,7 +204,7 @@ A nyugtaformátumok beállításával [és tervezésával kapcsolatos további t
 
 ## <a name="set-up-fiscal-integration-for-austria"></a>Pénzügyi integráció beállítása Ausztriához
 
-Az adóregisztrációs szolgáltatás integrációs mintája az adóügyi [integrációs](fiscal-integration-for-retail-channel.md) funkciókon alapul, és része a Retail SDK csomagnak. A minta a megoldástárház **srcFiscalIntegrationEfr\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr) mintában). A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, amely a Commerce runtime () futási idő kiterjesztése CRT, és egy pénzügyi csatlakoztató, amely a Commerce Hardware Station kiterjesztése. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
+Az adóregisztrációs szolgáltatás integrációs mintája az adóügyi [integrációs](fiscal-integration-for-retail-channel.md) funkciókon alapul, és része a Retail SDK csomagnak. A minta a FiscalIntegration Efr src **\\\\** mappában található a megoldások tárházában ([Dynamics 365 Commerce például a release/9.33 mintában).](https://github.com/microsoft/Dynamics365Commerce.Solutions/)[...](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr) A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, amely a Commerce runtime () futási idő kiterjesztése CRT, és egy pénzügyi csatlakoztató, amely a Commerce Hardware Station kiterjesztése. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
 
 > [!WARNING]
 > Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK korábbi verzióját egy fejlesztő virtuális gépen (VM) kell használnia a Lifecycle Services (LCS) Microsoft Dynamics szolgáltatásban. A további tudnivalókat [lásd az Ausztriához (legacy) vonatkozó pénzügyi integrációs minta telepítési irányelveinél](emea-aut-fi-sample-sdk.md). Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
@@ -231,8 +231,8 @@ A regisztráció engedélyezéséhez kövesse az alábbi lépéseket a Commerce 
     > [!WARNING]
     > Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A pénzügyi integrációs minta konfigurációs fájljai a Retail SDK készlet alábbi mappáiban találhatók az LCS egy fejlesztői VIRTUÁLIS eszközében:
     >
-    > - **Pénzügyi bizonylat szolgáltatójának konfigurációs fájljai:** RetailSdkSampleExtensionsCommerceRuntimeExtensions.DocumentProvider.EFRSampleConfiguration\\\\\\\\
-    > - **Pénzügyi csatlakoztató konfigurációs fájlja:** RetailSdkSampleExtensionsHardwareStationExtension.EFRSampleConfiguration\\\\\\\\
+    > - **Pénzügyi bizonylat szolgáltatójának konfigurációs fájljai:** RetailSdk\\ SampleExtensions\\ CommerceRuntime\\ Extensions.DocumentProvider.EFRSample\\ konfiguráció
+    > - **Pénzügyi csatlakoztató konfigurációs fájlja:** RetailSdk\\ SampleExtensions\\ HardwareStation\\ Extension.EFRSample\\ konfiguráció
     > 
     > Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
@@ -278,14 +278,14 @@ A pénzügyi integrációs minta részeként biztosított pénzügyi csatlakozta
 
 A minta tesztelésére és kiterjesztésére fejlesztői környezet beállításához kövesse az alábbi lépéseket.
 
-1. Le kell tölteni vagy le kell [Dynamics 365 Commerce tölteni a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions). Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd [a Retail SDK-minta- és hivatkozáscsomagok letöltése aHub és a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-1. Nyissa meg az EFR-megoldást **a Dynamics365Commerce.SolutionsFiscalIntegrationEfrEFR.sln\\\\\\ fájlban**, és építse fel.
+1. Le kell tölteni vagy le kell [Dynamics 365 Commerce tölteni a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions). Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd [a Retail SDK-minta- és hivatkozáscsomagok letöltése aHub és NuGet](../dev-itpro/retail-sdk/sdk-github.md) a.
+1. Nyissa meg az EFR-megoldást **a Dynamics365Commerce.Solutions\\ FiscalIntegration\\ Efr\\ EFR.sln** fájlban, és építse fel.
 1. A következő CRT bővítmények telepítése:
 
     1. A bővítmény telepítője CRT:
 
-        - **Commerce Scale Unit:** Az EfrScaleUnitScaleUnit.EFR.InstallerbinDebugnet461 **\\\\\\\\\\** mappában keresse meg a ScaleUnit.EFR.Installer **telepítőjét.**
-        - **Helyi CRT a Modern POS terminálon:** Az **EfrModernPOSModernPOS.EFR.InstallerbinDebugnet461\\\\\\\\\\ mappában** keresse meg a **ModernPOS.EFR.Installer** telepítőjét.
+        - **Commerce Scale Unit:** Az Efr **ScaleUnit.EFR.Installer\\\\ bin\\ debug\\ net461 \\** mappában keresse meg a ScaleUnit.EFR.Installer **telepítőjét**.
+        - **Helyi CRT a Modern POS terminálon:** Az **Efr\\ ModernPOS\\ ModernPOS.EFR.Installer\\ bin\\ hibakeresési\\ net461** **mappában keresse meg a ModernPOS.EFR.Installer** telepítőjét.
 
     1. A kiterjesztés telepítőjét CRT a következő parancssorból indítja el:
 
@@ -307,7 +307,7 @@ A minta tesztelésére és kiterjesztésére fejlesztői környezet beállítás
 
     1. Hardverállomás-bővítmények telepítése:
 
-        1. **Az EfrHardwareStationHardwareStation.EFR.InstallerbinDebugnet461\\\\\\\\\\** **mappában keresse meg a HardwareStation.EFR.Installer** telepítőjét.
+        1. Az Efr **HardwareStation\\ HardwareStation.EFR.Installer\\ bin\\ hibakeresési\\ net461\\** mappában keresse meg a HardwareStation.EFR.Installer telepítőjét **.**
         1. A kiterjesztés telepítőjét a parancssorból a következő parancs futtatásával indítja el.
 
             ```Console
@@ -316,8 +316,8 @@ A minta tesztelésére és kiterjesztésére fejlesztői környezet beállítás
 
     1. Pos-bővítmények telepítése:
 
-        1. Nyissa meg a POS pénzügyi **csatlakoztató minta megoldását a Dynamics365Commerce.SolutionsFiscalIntegrationPosFiscalConnectorSampleContoso.PosFiscalConnectorSample.sln\\\\\\** fájlban, és építse ki.
-        1. **A PosFiscalConnectorSampleStoreCommerce.InstallerbinDebugnet461\\\\\\\\** **mappában keresse meg a Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** telepítőjét.
+        1. Nyissa meg a POS pénzügyi **csatlakoztató minta megoldását a Dynamics365Commerce.Solutions\\ FiscalIntegration\\ PosFiscalConnectorSample\\ Contoso.PosFiscalConnectorSample.sln** fájlban, és építse ki.
+        1. A PosFiscalConnectorSample **StoreCommerce.Installer\\ bin\\\\ net461 \\** mappában keresse meg a Contoso.PosFiscalConnectorSample.StoreCommerce.Installer **telepítőjét.**
         1. A kiterjesztés telepítőjét a következő parancsot futtató parancssorból indítja el.
 
             ```Console
@@ -326,11 +326,11 @@ A minta tesztelésére és kiterjesztésére fejlesztői környezet beállítás
 
 #### <a name="production-environment"></a>Működési környezet
 
-Hajtsa végre [a pénzügyi integrációs minta felépítési folyamatának beállításához szükséges lépéseket a](fiscal-integration-sample-build-pipeline.md) felhőskálaegység és az önkiszolgáló rendszer telepíthető csomagjainak előállításához és kiadásához a pénzügyi integrációs mintához. Az **EFR build-pipeline.yml** sablonFÁJL a csővezetékben **\\ található YAML_Files**[Dynamics 365 Commerce a](https://github.com/microsoft/Dynamics365Commerce.Solutions) megoldástárház mappájában.
+Hajtsa végre [a pénzügyi integrációs minta felépítési folyamatának beállításához szükséges lépéseket a](fiscal-integration-sample-build-pipeline.md) felhőskálaegység és az önkiszolgáló rendszer telepíthető csomagjainak előállításához és kiadásához a pénzügyi integrációs mintához. Az EFR build-pipeline.yml sablonFÁJL a megoldástárház csővezeték-YAML_Files **·** **\\** található.[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions)
 
 ## <a name="design-of-extensions"></a>Bővítmények tervezése
 
-Az adóregisztrációs szolgáltatás integrációs mintája az adóügyi [integrációs](fiscal-integration-for-retail-channel.md) funkciókon alapul, és része a Retail SDK csomagnak. A minta a megoldástárház **srcFiscalIntegrationEfr\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr) mintában). A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, CRT amely a Commerce Hardverállomás kiterjesztése, és egy pénzügyi csatlakoztató. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
+Az adóregisztrációs szolgáltatás integrációs mintája az adóügyi [integrációs](fiscal-integration-for-retail-channel.md) funkciókon alapul, és része a Retail SDK csomagnak. A minta a FiscalIntegration Efr src **\\\\** mappában található a megoldások tárházában ([Dynamics 365 Commerce például a release/9.33 mintában).](https://github.com/microsoft/Dynamics365Commerce.Solutions/)[...](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr) A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, CRT amely a Commerce Hardverállomás kiterjesztése, és egy pénzügyi csatlakoztató. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
 
 > [!WARNING]
 > Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd az Ausztriához (legacy) vonatkozó pénzügyi integrációs minta telepítési irányelveinél](emea-aut-fi-sample-sdk.md). Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
@@ -357,7 +357,7 @@ Az csatlakoztató a következő kéréseket támogatja:
 
 #### <a name="configuration"></a>Konfiguráció
 
-A pénzügyi bizonylat szolgáltatójának **konfigurációs fájljai a megoldástárház srcFiscalIntegrationEfrConfigurationsDocumentProviders\\\\\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában találhatók:
+A pénzügyi bizonylat szolgáltatójának **konfigurációs fájljai a következő megoldások tárház src\\ FiscalIntegration\\ Efr\\ Configurations\\ DocumentProviders**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában találhatók:
 
 - **DocumentProviderFiscalEFRSampleAustria** – a pénzügyi bizonylatok szolgáltatójának konfigurációs fájlja.
 - **DocumentProviderNonFiscalEFRSampleAustria** – a nem pénzügyi bizonylatok pénzügyi bizonylatokat szolgáltató konfigurációs fájlja.
@@ -382,7 +382,7 @@ A pénzügyi csatlakoztató a következő kéréseket támogatja:
 
 #### <a name="configuration"></a>Konfiguráció
 
-A pénzügyi csatlakoztató **konfigurációs fájlja a megoldástárházban található srcFiscalIntegrationEfrConfigurationsConnectorsConnectorEFRSample.xml\\\\\\\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). A fájl célja, hogy engedélyezze a pénzügyi csatlakoztató beállításait a Commerce Headquarters alkalmazásból való konfigurálásban. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
+A pénzügyi csatlakoztató **konfigurációs fájlja a megoldástárházban\\ található FiscalIntegration\\ Efr\\ Configurations Connectors\\ Connectors ConnectorS\\ ConnectorEFRSample.xml**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) fájlban található. A fájl célja, hogy engedélyezze a pénzügyi csatlakoztató beállításait a Commerce Headquarters alkalmazásból való konfigurálásban. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
 
 ### <a name="pos-fiscal-connector-extension-design"></a>POS pénzügyi csatlakoztató bővítményének tervezése
 
@@ -390,11 +390,11 @@ A POS pénzügyi csatlakoztató bővítményének célja, hogy kommunikáljon a 
 
 #### <a name="fiscal-connector-factory"></a>Pénzügyi csatlakoztató gyára
 
-A pénzügyi csatlakoztató gyári leképezi a csatlakoztató **nevét a pénzügyi csatlakoztató megvalósításra, és a Pos.ExtensionConnectorsFiscalConnectorFactory.ts\\\\ fájlban** található. A csatlakoztató nevének meg kell egyeznie a Commerce Headquarters által megadott pénzügyi csatlakoztató nevével.
+A pénzügyi csatlakoztató gyári leképezi a csatlakoztató **nevét a pénzügyi csatlakoztató megvalósításra, és a Pos.Extension\\ Connectors\\ FiscalConnectorFactory.ts fájlban** található. A csatlakoztató nevének meg kell egyeznie a Commerce Headquarters által megadott pénzügyi csatlakoztató nevével.
 
 #### <a name="efr-fiscal-connector"></a>EFR pénzügyi csatlakoztató
 
-Az EFR pénzügyi csatlakoztató a **Pos.ExtensionConnectorsEfrEfrFiscalConnector.ts\\\\\\ fájlban** található. Az IFiscalConnector **felületet** valósítja meg, amely a következő kéréseket támogatja:
+Az EFR pénzügyi csatlakoztató a **Pos.Extension\\ Connectors\\ EfrFiscalConnector.ts\\ fájlban** található. Az IFiscalConnector **felületet** valósítja meg, amely a következő kéréseket támogatja:
 
 - **FiscalRegisterSubmitDocumentClientRequest** – ez a kérés dokumentumokat küld a pénzügyi regisztrációs szolgáltatásnak, és visszaküldi a választ.
 - **FiscalRegisterIsReadyClientRequest** – ez a kérés a pénzügyi nyilvántartási szolgáltatás állapotellenőrzésére használható.
@@ -402,7 +402,7 @@ Az EFR pénzügyi csatlakoztató a **Pos.ExtensionConnectorsEfrEfrFiscalConnecto
 
 #### <a name="configuration"></a>Konfiguráció
 
-A konfigurációs fájl a **megoldástárház srcFiscalIntegrationEfrConfigurationsConnectors\\\\\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található. A fájl célja, hogy engedélyezze a Commerce Headquarters alkalmazásból konfigurálható pénzügyi csatlakoztató beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállításokat lehet hozzáadni:
+A konfigurációs fájl a **\\ megoldástárház FiscalIntegration\\ Efr\\ Configurations\\ Connectors**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található. A fájl célja, hogy engedélyezze a Commerce Headquarters alkalmazásból konfigurálható pénzügyi csatlakoztató beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállításokat lehet hozzáadni:
 
 - **Végpont címe** – a pénzügyi regisztrációs szolgáltatás URL-címe.
 - **Időtúllépés** – az az idő ezredmásodpercben, ahányszor a csatlakoztató választ vár a pénzügyi regisztrációs szolgáltatástól.

@@ -1,6 +1,6 @@
 ---
 title: Több B2C bérlő konfigurálása egy Commerce-környezetben
-description: Ez a témakör azt mutatja be, hogy mikor és hogyan lehet több csatornánkénti Microsoft Azure Active Directory (Azure AD) vállalat és ügyfél közötti (B2C) bérlőt beállítani felhasználói hitelesítésre egy kijelölt Dynamics 365 Commerce-környezetben.
+description: Ez a témakör azt mutatja be, hogy mikor és hogyan lehet beállítani több csatornánkénti Microsoft-felhasználó Azure Active Directory (Azure AD B2C) bérlőt a felhasználói hitelesítéshez egy külön erre a célra kijelölt környezetben Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a372561b8a6cdca8e1a3dc362009379884f1a3414330f3f056d4c3af7703a132
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13504a612c388b4720ec3328aaf2db83da2aad8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736404"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890569"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Több B2C bérlő konfigurálása egy Commerce-környezetben
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogy mikor és hogyan lehet csatornánként több Microsoft Azure Active Directory (Azure AD) vállalat és ügyfél közötti (B2C) bérlőt beállítani felhasználói hitelesítésre egy kijelölt Dynamics 365 Commerce-környezetben.
+Ez a témakör azt mutatja be, hogy mikor és hogyan lehet csatornánként több ügyfél-felhasználó bérlőt beállítani a felhasználói Azure Active Directory Azure AD hitelesítéshez egy külön erre a célra kijelölt környezetben Dynamics 365 Commerce.
 
 A Dynamics 365 Commerce az Azure AD B2C felhőalapú identitásszolgáltató segítségével támogatja a felhasználói hitelesítési adatokat és hitelesítési folyamatokat. A felhasználók a hitelesítési folyamatok segítségével regisztrálhatnak, jelentkezhetnek be, és alaphelyzetbe állíthatják a jelszavukat. Az Azure AD B2C érzékeny természetű felhasználói hitelesítési adatokat, például a felhasználónevet és a jelszót tárolja. A felhasználói rekord minden B2C bérlő számára egyedi, a felhasználó neve (e-mail-cím) hitelesítő adatait vagy a közösségi identitásszolgáltató adatait használja.
 

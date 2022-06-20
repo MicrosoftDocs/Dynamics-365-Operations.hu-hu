@@ -1,6 +1,6 @@
 ---
 title: Referencia-kamatlábhoz kapcsolt lízingdíjfizetések újraértékelése
-description: Ez a témakör azt a kiigazítást ismerteti, amely a kötelezettség használatijog-eszköz (ROU) lízingeléséhez történik, amikor a változó lízingfizetések a referencia-kamatláb változása miatt változnak.
+description: Ez a témakör azt a módosítást írja le, amely egy használatra való jogdíj (ROU) kötelezettségének bérletére vonatkozik, amikor a változó bérleti díjak az indexárváltozás miatt megváltoznak.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 8dc2325e9f0651bea0d70d9f66e5d88b741009f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903247"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Referencia-kamatlábhoz kapcsolt lízingdíjfizetések újraértékelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt a kiigazítást ismerteti, amely a lízingkötelezettség használatijog-eszköz (ROU) lízingeléséhez történik, amikor a változó lízingfizetések a referencia-kamatláb változása miatt változnak. A lízingkötelezettség és a ROU-eszköz korrekciója történik az új kifizetési összegek könyvelése érdekében. A könyvelési standardok kodifikációs témaköre 842 (ASC 842) szerint, ami a standard az általánosan elfogadott könyvelési alapelveknél az Egyesült Államokban (US GAAP), csak a változó kifizetések változnak a kifizetések emelkedése vagy csökkenésekor a referencia-kamatláb változása miatt, kivéve, ha a pénzforgalomban további változások vannak. Ezek a további változások magukban foglalhatják a lízingfeltételeknek a kamatlábakhoz kapcsolódó módosítását. További információ: ASC 842-10-55-225 és a nemzetközi pénzügyi jelentési standard 16 (IFRS 16) 42 (b) bekezdése.
+Ez a témakör ismerteti azokat a helyesbítéseket, amelyek a használatra való jog (ROU) bérleti kötelezettségére vonatkoznak, amikor a változó bérleti díjak az indexárváltozás miatt megváltoznak. A lízingkötelezettség és a ROU-eszköz korrekciója történik az új kifizetési összegek könyvelése érdekében. A könyvelési standardok kodifikációs témaköre 842 (ASC 842) szerint, ami a standard az általánosan elfogadott könyvelési alapelveknél az Egyesült Államokban (US GAAP), csak a változó kifizetések változnak a kifizetések emelkedése vagy csökkenésekor a referencia-kamatláb változása miatt, kivéve, ha a pénzforgalomban további változások vannak. Ezek a további változások magukban foglalhatják a lízingfeltételeknek a kamatlábakhoz kapcsolódó módosítását. További információ: ASC 842-10-55-225 és a nemzetközi pénzügyi jelentési standard 16 (IFRS 16) 42 (b) bekezdése.
 
 ## <a name="adjust-lease-payments"></a>Lízingdíjfizetések módosítása
 
@@ -67,6 +67,6 @@ Megtekintheti az átértékelési dátummal kezdődő újonnan létrehozott fize
 A naplóbejegyzés automatikusan feladta a helyesbítő naplóbejegyzést a számlára az index újraértékeléshez kapcsolódó lízingkifizetések változására.
 
 > [!NOTE]
-> Ha a Fizetés összegének lebontása beállítás engedélyezve van a Bérlet részletei lap Általános gyorslapján, és a kapcsolódó könyv **az** **·** **IFRS** 16, az indexátértékelési folyamat **automatikusan hozzáad egy rekordot a Kifizetési összeg lebontása** párbeszédpanelen. Az összeg az index átértékelés miatt a kifizetésen történt változtatást tükrözi. A rekord az **IRFS 16 index átértékelésében használtként lesz** megjelölve.
+> **·** **·** **Ha** a Fizetés összegének lebontása beállítás engedélyezve van a Bérlet részletei lap Általános gyorslapján, és a kapcsolódó könyv az IFRS 16, az indexátértékelési folyamat automatikusan hozzáad egy rekordot a **Kifizetési** összeg lebontása párbeszédpanelen. Az összeg az index átértékelés miatt a kifizetésen történt változtatást tükrözi. A rekord az **IRFS 16 index átértékelésében használtként lesz megjelölve**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

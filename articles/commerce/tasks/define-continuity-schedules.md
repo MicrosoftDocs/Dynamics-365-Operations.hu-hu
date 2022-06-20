@@ -1,6 +1,6 @@
 ---
 title: Folytonossági ütemezések meghatározása
-description: Ez a témakör végigvezeti a folyamatos program (más néven ismétlődő rendelések) beállításának lépésein.
+description: Ez a cikk egy folytonossági program (más néven rendelések újrafuttatása) beállításával jár le.
 author: josaw1
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c7b05bc82acfad89c9b50777bd0c5fd85f7bda90efd73f278f122c9aa0d073df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: faa55c844c8ee8742fbb0868b55a520cec6686aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885084"
 ---
 # <a name="define-continuity-schedules"></a>Folytonossági ütemezések meghatározása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör végigvezeti a folyamatos program (más néven ismétlődő rendelések) beállításának lépésein. Ez a témakör az USRT cég bemutatóadatait használja.
+Ez a cikk egy folytonossági program (más néven rendelések újrafuttatása) beállításával jár le. Ez a cikk az USRT vállalatot használja a bemutatóadatokban.
 
 
 ## <a name="create-continuity-program"></a>Folytonos program létrehozása

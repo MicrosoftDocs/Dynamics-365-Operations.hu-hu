@@ -1,6 +1,6 @@
 ---
 title: Részleges vevői kifizetés rendezése az engedmény dátuma előtt és végső fizetés az engedmény bevezetésének dátuma után
-description: Ez a témakör végigvezeti a felhasználó egy olyan helyzeten, amikor több részleges kifizetést, néhányat a készpénzfizetési engedmény időszakán belül, másokat a készpénzfizetési engedmény időszakán kívülre fizet.
+description: 'Ez a cikk egy olyan esetet mutat be, ahol több részfizetés is történt: néhány a készpénzfizetési engedmény időszakán belül, a többi pedig a készpénzfizetési engedmény időszakán kívül.'
 author: abruer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7331b4b2ad48cfa380497336d4ac22c8723568b5
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 1e249be4024ee6581060e3890795770054c6ab67
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871362"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Részleges vevői kifizetés rendezése az engedmény dátuma előtt és végső fizetés az engedmény bevezetésének dátuma után
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör végigvezeti a felhasználó egy olyan helyzeten, amikor több részleges kifizetést, néhányat a készpénzfizetési engedmény időszakán belül, másokat a készpénzfizetési engedmény időszakán kívülre fizet.
+Ez a cikk egy olyan esetet mutat be, ahol több részfizetés is történt: néhány a készpénzfizetési engedmény időszakán belül, a többi pedig a készpénzfizetési engedmény időszakán kívül.
 
 A Gyár 3057.-es számú szállítótól árut szerez be. A Gyár 1 százalékos készpénzfizetési engedményt kap, ha a számla 14 napon belül befizetésre kerül. A számlakat 30 napon belül be kell fizetni. A szállító továbbá engedélyezi a Gyárnak, készpénzfizetési engedményeket a részleges fizetések esetén. A Kiegyenlítési paraméterek a **Kötelezettségek paraméterei** oldalon találhatók.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e6af5fbd050642ac462ecb159c05d78f534f0ce
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: ae6b2b505acb211f9fb5506234953eba9f3ec2a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722549"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865772"
 ---
 # <a name="posting-definition-examples"></a>Példák feladásdefiníciókra
 
@@ -28,7 +28,7 @@ ms.locfileid: "8722549"
 
 Ez a cikk arra tartalmaz példákat, hogyan használatosak feladásdefiníciók beszerzési rendelések terheléséhez és költségvetési előirányzatokhoz.
 
-Mielőtt ezt a témakört elolvassa, a feladási definíciókkal és a tranzakciós feladási feladási definíciókkal tisztában kell lennie. Információ: lásd a [Feladási definíciók](posting-definitions.md) részt. Az alábbi példákat be kell állítani a **Feladási definíciók** oldalon. Mindegyik példa ezeket a szakaszokat tartalmazza:
+A cikk elolvasa előtt ismerkedjen meg a feladásdefinícióval és a tranzakció-feladásdefinícióval. Információ: lásd a [Feladási definíciók](posting-definitions.md) részt. Az alábbi példákat be kell állítani a **Feladási definíciók** oldalon. Mindegyik példa ezeket a szakaszokat tartalmazza:
 
 -   Feladási definíció – Egyeztetési feltételek
 -   Feladási definíció – Generált tételek

@@ -1,6 +1,6 @@
 ---
 title: Online számlázási rendszer
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani az elektronikus jelentéskészítési (ER) konfigurációkat, valamint azt, hogy hogyan lehet beállítani és használni az elektronikus üzenetküldési funkciókat (EM) a valós idejű számlajelentéshez (RTIR).
+description: Ez a témakör ismerteti, hogyan lehet beállítani az Elektronikus jelentéskészítés (ER) konfigurációit, és hogyan lehet beállítani és használni az RTIR elektronikus üzenetkezelés (EM) funkcióit.
 author: anasyash
 ms.date: 09/20/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: b32711efa6cb0ed95022aa7621daf212f920ad41
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 1aa1560af29b9eef4b8dc6bfa0d7f56786f18dab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647675"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897996"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 
@@ -29,9 +29,9 @@ A magyarországi belföldi adó-és vámigazgatás bejelentette, hogy 2018. júl
 
 További tájékoztatást a következő témakörben talál: <https://onlineszamla.nav.gov.hu>.
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani az elektronikus jelentéskészítési (ER) konfigurációkat, valamint azt, hogy hogyan lehet beállítani és használni az elektronikus üzenetküldési funkciókat (EM) a valós idejű számlajelentéshez (RTIR).
+Ez a témakör ismerteti, hogyan lehet beállítani az Elektronikus jelentéskészítés (ER) konfigurációit, és hogyan lehet beállítani és használni az RTIR elektronikus üzenetkezelés (EM) funkcióit.
 
-A témakör a következő feladatok végrehajtásával kapcsolatban tartalmaz tájékoztatást:
+A cikk a következő feladatok elvégzésével kapcsolatban tartalmaz tájékoztatást:
 
 - ER-konfigurációk importálása és a alkalmazásspecifikus paraméterek beállítása.
 - Az EM (elektronikus üzenetküldés) funkció beállítása.
@@ -41,7 +41,7 @@ A magyarországi online számlázási rendszerben a TLS 1.2 használata szüksé
 
 ## <a name="import-er-configurations"></a>ER-konfigurációk importálása
 
-A Microsoft Dynamics 365 Finance alkalmazás RTIR-re történő előkészítéséhez importálnia kell a következő ER-konfigurációkat.
+Microsoft Dynamics A 365-ös Pénzügyi pályázat rtir programra való előkészítéséhez importálni kell a következő ER-konfigurációkat.
 
 | Szám | Konfiguráció neve                     | Konfiguráció típusa     | Leírás                                                                                                     |
 |--------|----------------------------------------|------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -245,7 +245,7 @@ A következő táblázat leírja az **Online számlázás** feldolgozásának fe
 | EM elem állapotának visszaállítása           | Felhasználói feldolgozás                     | Ez a manuális felhasználói művelet visszaállítja az EM-elem állapotát a **Elutasítva** értékről **Létrehozva** értékre. |
 | EM állapot visszaállítása                | Üzenetszint felhasználói feldolgozás       | Ez a manuális felhasználói művelet alaphelyzetbe állítja az elektronikus üzenet állapotát **Hiba a számlaválasz importálása során**, **Hiba a számlakérelem elküldése során** vagy **Hiba a tokenválasz importálása során** állapotról **Létrehozva** állapotra, hogy az elektronikus üzenet feldolgozása folytatódhasson. |
 
-Ha további tájékoztatást szeretne kapni az RTIR-hez tartozó csomag adatentiásainak előbeállításiaról, lásd [1. függelék: Elektronikus üzenetek beállítása az RTIR-hez](#appendix-1-electronic-message-setup-for-rtir) részt a témakör későbbi szakaszában.
+Az RTIR-csomagban található adatentitások előre beállított beállítására vonatkozó további tudnivalókat lásd az 1. mellékletben: Elektronikus üzenetek beállítása az RTIR [számára](#appendix-1-electronic-message-setup-for-rtir) a cikk későbbi részen.
 
 ## <a name="set-up-em-for-rtir"></a>EM beállítása az RTIR-hez
 
@@ -348,7 +348,7 @@ Minden üzenetelem további, a feldolgozáshoz szükséges mezőkkel rendelkezik
 
 | További mező           | Leírás |
 |----------------------------|-------------|
-| Művelet                  | Az értékek többek között a **Létrehozás**, **Helyesbítés** és **Sztornó**. A Finance a kiegészítő mező értékét az **EM elemek kiértékelése** művelet végrehajtása során állítja be. A **Művelethez** tartozó további mező értéke automatikusan vagy a számlán szereplő pénzügyi indokkal definiálható. További tudnivalókért lásd a [Pénzügyi okok beállítása az RTIR-hez](#set-up-financial-reasons-for-rtir) című részt, a témakör korábbi részében. |
+| Művelet                  | Az értékek többek között a **Létrehozás**, **Helyesbítés** és **Sztornó**. A Finance a kiegészítő mező értékét az **EM elemek kiértékelése** művelet végrehajtása során állítja be. A **Művelethez** tartozó további mező értéke automatikusan vagy a számlán szereplő pénzügyi indokkal definiálható. A további tudnivalókat lásd [az RTIR-okokkal](#set-up-financial-reasons-for-rtir) kapcsolatos pénzügyi okok beállítása szakasz korábbi részében. |
 | Eredeti üzenetelem      | Ha a **Művelet** kiegészítő mező **Helyesbítés** vagy **Sztornó** értékre van beállítva , akkor az **Eredeti üzenetelem** kiegészítő mezőt be kell állítani. Ha a rendszer nem tudja beállítani ezt a mezőt, a kapcsolódó üzenet elemét **Manuális szerkesztés** értékre állítja , és ezt a mezőt manuálisan kell beállítania. |
 | Index                      | Ez a kiegészítő mező meghatározza a számla pozícióját a kérelemben (a számlák csomagja). Az érték jelentése a **ManageInvoiceRequest.xml** fájl **\<index\>** elemében történik. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor a **Számlázási kérelem létrehozása** művelet fut. |
 | Módosítási index         | Ez a további mező az eredeti számlára (a módosító dokumentum sorszámára) hivatkozó egyedi sorszámot adja meg. Ez az érték a **Módosítás** vagy **Sztornó** művelettípusú üzenetelemek **\<modificationIndex\>** elemében jelenik meg. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor az **EM-elemek értékelése** művelet fut. |
@@ -407,7 +407,7 @@ Az internetes címeket a Magyar online számlázási rendszer határozza módos�
 
 ### <a name="additional-fields"></a>További mezők
 
-Ha meg kívánja tekinteni az **Online számlázás** feldolgozásának további mezőinek teljes leírását, tekinste meg a [További mezők az üzenetelemekhez](#additional-fields-for-message-items) szakaszt a témakör korábbi részében.
+Az online **számlafeldolgozás**[további](#additional-fields-for-message-items) mezőinek részletes leírása az üzenetcikkek további mezőiben olvasható a cikk korábbi részében.
 
 > [!NOTE]
 > Ezeket a mezőket a felhasználó nem módosíthatja.
@@ -468,7 +468,7 @@ Az **Online számlázás** feldolgozása a következő elektronikus üzenetálla
 
 ### <a name="electronic-message-actions"></a>Elektronikusüzenet-műveletek
 
-A **OnlineInvoicing** feldolgozás elektronikus üzenetei műveleteinek teljes leírását lásd a [Előre meghatározott EM-beállításokat tartalmazó adatentitások csomagjának importálása](#import-a-package-of-data-entities-that-includes-a-predefined-em-setup) szakaszban a témakör korábbi részében.
+**Az OnlineInvoicing** feldolgozás elektronikus üzenetekkel kapcsolatos műveletének teljes leírását lásd az Adatentitások importálása című részben, [amely a cikk egy előre meghatározott EM](#import-a-package-of-data-entities-that-includes-a-predefined-em-setup) beállítási szakaszát tartalmazza.
 
 ### <a name="electronic-processing-actions"></a>Elektronikus feldolgozási műveletek
 
@@ -527,7 +527,7 @@ A következő üzleti folyamat az "Előlegszámlák és végleges számlák" jel
 2. A vevő által történő fizetést követően és a szállító átvételét követően a szállító számlát állít ki az előlegről.
 3. A végső számlát a teljesítéskor állítják ki. Ez a számla figyelembe veszi az előleg összegét. Az áfa összegét az előlegfizetéssel csökkentett teljes ellenérték után kell megfizetni.
 
-A Dynamics 365 Finance megoldásában magyar Online számlázási rendszerhez támogatja az "Előlegszámlák és záró számlák" jelentését az alábbi forgatókönyvek szerint.
+A Dynamics 365 Pénzügy magyarországi online számlázási rendszerében használható megoldása lehetővé teszi az alábbi leírások jelentését az "Előlegfizetési számlák és a végleges számlák" esetében.
 
 #### <a name="scenario-1-a-prepayment-that-has-sales-tax-transactions-is-posted-accounts-receivable-module"></a>1. forgatókönyv: Áfatranzakciókat tartalmazó előleget könyvelnek (Követelések modul)
 

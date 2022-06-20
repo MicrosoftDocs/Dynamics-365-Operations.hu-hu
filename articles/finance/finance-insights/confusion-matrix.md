@@ -1,6 +1,6 @@
 ---
 title: Gépi tanulási modellek eredményei
-description: Ez a témakör a zavartság-mátrixokat, az osztályzási problémákat és a gépi tanulási (ML) modellek pontosságát tárgyalja. Az a cél, hogy jobban megértsék az ML előrejelzési eredményeinek pontosságát.
+description: Ez a cikk a mátrixok félreértését, osztályozási problémákat és a gépi tanulás (FOG) modelljeinek pontosságát tárgyalja. Az a cél, hogy jobban megértsék az ML előrejelzési eredményeinek pontosságát.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c57a023995e0bb58d4fba0a4fd2f147d07e51348
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 23df5979231fbd6908b6f1e7c3aca5dd3e0e733d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725960"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910171"
 ---
 # <a name="results-of-machine-learning-models"></a>Gépi tanulási modellek eredményei
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a zavartság-mátrixokat, az osztályzási problémákat és a gépi tanulási (ML) modellek pontosságát tárgyalja. Az a cél, hogy jobban megértsék az ML előrejelzési eredményeinek pontosságát. A célközönség olyan mérnökök, elemzők és vezetők, akik szeretnék fejleszteni tudásukat és szakértelmüket az adattudomány terén.
+Ez a cikk a mátrixok félreértését, osztályozási problémákat és a gépi tanulás (FOG) modelljeinek pontosságát tárgyalja. Az a cél, hogy jobban megértsék az ML előrejelzési eredményeinek pontosságát. A célközönség olyan mérnökök, elemzők és vezetők, akik szeretnék fejleszteni tudásukat és szakértelmüket az adattudomány terén.
 
 ## <a name="confusion-matrix"></a>Zavartság-mátrix
 Miután a felügyelt ML-es problémát az előzményadatok egy csoportján képezik, a teszt a képzési folyamatból visszatartott adatok alapján történik. Így összevetheti a képzett modell előrejelzéseit a tényleges értékekkel. A zavartság-mátrix meghatározza, hogy milyen sikeresek az osztályozási problémák, és hogy hol vét hibákat (azaz hol „zavaros”).
@@ -73,16 +73,16 @@ A pontosság fontos eszköz a statisztikai adatokat nem ismerő tartományszaké
 
 A kifizetés előrejelzési esetéhez beállíthatja egy ML-modell célt, amely tényezőket tartalmaz a különböző fizetési módokban. A cél az, hogy a modell tökéletesítse a naiv becslést a helytelen válaszok számának legalább 50 százalékos csökkentésével. Más szóval azt szeretné, hogy a cél pontossága elossza a különböző pontosságot a naiv becslés és a 100 százalék között.
 
-A következő tábla összefoglalja ezt az elvet a zavartság-mátrixok számára ebben a témában.
+Az alábbi táblázat összefoglalja ezt az elvet a cikk félreértések mátrixai miatt.
 
-| Típus   | Naiv becslés | Cél | Modell pontossága | Megfelel a célnak?                                          |
+| Modell   | Naiv becslés | Cél | Modell pontossága | Megfelel a célnak?                                          |
 |---------|-------------|--------|----------------|-----------------------------------------------------------|
 | 1. modell | 0.50        | 0.75   | 0.73           | Majdnem. Ez a modell jelentősen javítja a becslést. |
 | 2. modell | 0.80        | 0.90   | 0.83           | Szám Javításra van szükség.                              |
 
 ## <a name="classification-f1-accuracy"></a>F1-es osztályozás pontossága
 
-Az ebben a témakörben megjelenő végleges megfontolás egy speciális mértékű ML-teljesítményosztályzás, F1-es pontosságként ismert teljesítmény.
+A végső szempont ebben a cikkben a MÁS NÉVEN F1 pontosságú besorolás teljesítményének egy speciális mértéke.
 
 Az F1 pontosság meghatározása előtt két további metrikát kell bevezetni: precizitás és visszahívás. A precizitás azt jelzi, hogy a pozitívként megadott előrejelzések számának hány százalékát rendeli hozzá helyesen a program. Ez a metrika pozitív előrejelző-értékként is ismert. A visszahívás azon tényleges pozitív esetek teljes száma, amelyeket helyesen jósoltak meg. Ez a metrika más néven érzékenység.
 
@@ -97,7 +97,7 @@ Az F1-mérték ötvözi a precizitást és a visszahívást. Az eredmény a két
 
 - F1 = 2 × (precízió × visszahívás) ÷ (precízió + visszahívás)
 
-Nézzünk meg egy konkrét példát. Ez a témakör korábban egy olyan modellt mutatott be, amely azt jelezte előre, hogy egy állat kutya vagy macska-e. A program itt ismétli meg az ábrát.
+Nézzünk meg egy konkrét példát. A cikk korábbi része egy olyan modellre példa, amely előrejelzést ad arról, hogy egy új verzió vagy egy cat volt-e. A program itt ismétli meg az ábrát.
 
 [![Példa a fajok előrejelzésére (ismétlés).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
@@ -111,7 +111,7 @@ Amint látható, az F1 érték a pontosság és a visszahívás értékei közö
 
 Bár az F1 pontosságát nem könnyű megérteni, árnyaltságot ad az alapszintű pontossági számnak. Ezenkívül segíthet a kiegyenlítetlen adathalmazok esetében is, ahogy azt a következő beszélgetés is mutatja.
 
-Ennek a témakörnek a [Modell pontossága](#model-accuracy) szakasza a következő két zavartság-mátrixhoz hasonlít. Annak ellenére, hogy az első modellnél alacsonyabb a pontosság, hasznosabb modellnek tekintették, mivel nagyobb javulást mutatott, mint a határidős fizetés alapértelmezett becslése.
+A [cikk Modell pontossági](#model-accuracy) szakasza összehasonlította a következő két félreértési mátrixot. Annak ellenére, hogy az első modellnél alacsonyabb a pontosság, hasznosabb modellnek tekintették, mivel nagyobb javulást mutatott, mint a határidős fizetés alapértelmezett becslése.
 
 ![Fizetés előrejelzése és a tényleges példa.](media/payment-prediction-matrix.png)
 

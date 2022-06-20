@@ -1,6 +1,6 @@
 ---
 title: A Dayforce szolgáltatással való integráció konfigurálása
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources és a Ceridian Dayforce közötti integrációhoz szükséges konfigurációs lépéseket ismerteti.
+description: Ez a témakör leírja a Microsoft Dynamics 365 Human Resources és a Ceridian Dayforce integrációhoz szükséges konfigurációs lépéseket.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4e95a78364fcee2c03614e110f9b5983abfde37
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5a5d296dd4c1b09065fc47673dd540d8c122c482
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896134"
 ---
 # <a name="configure-integration-with-dayforce"></a>A Dayforce szolgáltatással való integráció konfigurálása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8691332"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A Microsoft Dynamics 365 Human Resources és Ceridian Dayforce integrálásához több konfigurációs lépést szükséges elvégezni, melyek ebben a témakörben vannak ismertetve. A fizetési időszak feldolgozása előtt konfigurálnia kell az integrációt a Human Resources alkalmazásban és a Dayforce alkalmazásban is.
+A Microsoft Dynamics 365 Human Resources és a Ceridian Dayforce között végbemenő integrálás több olyan konfigurációs lépésre támaszkodik, amelyeket ebben a cikkben ismertünk. A fizetési időszak feldolgozása előtt konfigurálnia kell az integrációt a Human Resources alkalmazásban és a Dayforce alkalmazásban is.
 
 Ha olyan szolgáltatást használ a fizetési időszak teljesítéséhez, mint a Dayforce, engedélyeznie kell az integrációt a Human Resources alkalmazásban. Az integrációhoz szükségesek bizonyos adatok a Human Resources alkalmazásból. Ezért ellenőriznie kell, hogy a Dayforce alkalmazáshoz hozzárendelt adatok olyan módon legyenek konfigurálva a Human Resources alkalmazásban, hogy az támogassa az integrációt. Az integráció a következő szélesebb adatkategóriákat használja:
 
@@ -37,7 +37,7 @@ Ha olyan szolgáltatást használ a fizetési időszak teljesítéséhez, mint a
 - Bérlistaadatok, mint kifizetési ciklus, fizetési időszakok és bevételkódok
 - Dolgozóadatok
 
-Ez a témakör ismerteti azokat a lépéseket, amelyeket az integráció engedélyezéséhez követnie kell, valamint az integrációhoz szükséges adattípusokat és konfigurációs részleteket.
+Ez a témakör ismerteti az integráció engedélyezéséhez szükséges lépéseket, valamint bemutatja az integrációhoz szükséges adattípusokat és konfigurációs adatokat.
 
 ## <a name="enable-the-integration"></a>Engedélyezze az integrációt
 

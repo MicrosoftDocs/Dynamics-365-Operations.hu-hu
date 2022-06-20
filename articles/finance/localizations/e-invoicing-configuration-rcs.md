@@ -1,6 +1,6 @@
 ---
 title: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
-description: Ez a témakör bemutatja, hogy hogyan konfigurálhatja az Elektronikus számlázást a Dynamics 365 Regulatory Configuration Services (RCS) szolgáltatásban.
+description: Ez a cikk bemutatja az elektronikus számlázás konfigurálást a Dynamics 365 Regulatory Configuration Services (RCS) szolgáltatásaiban.
 author: gionoder
 ms.date: 11/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 985bed767442d196a9ce0528673b4ed5946379ac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865642"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Dynamics 365 Regulatory Configuration Services (RCS) Elektronikus számlázásnak konfigurációs lehetőségeiről nyújt tájékoztatást.
+Ez a cikk a Dynamics 365 Regulatory Configuration Services (RCS) elektronikus számlázás konfigurációs lehetőségeiről nyújt tájékoztatást.
 
 Az Elektronikus számlázás konfigurációs lehetőségei révén segíti az elektronikus számlákra vonatkozó üzleti és jogi követelményeknek programozás nélkül való megfelelését. És olyan helyzetekben, amikor egy webszolgáltatásnak elektronikusan jóvá kell hagynia az elektronikus számlákat, a konfigurációs képességek segítséget nyújtanak a webszolgáltatással történő üzenetcserével kapcsolatos, kód nélküli követelményeknek is.
 
@@ -40,7 +40,7 @@ További információkért lásd: [Elektronikus jelentés (ER) – áttekintés]
 
 ## <a name="electronic-invoicing-features"></a>Elektronikus számlázási funkciók
 
-Az elektronikus számlázási funkciók felelősek az elektronikus számlák az Elektronikus számlázáson keresztüli létrehozásáért. Beágyazzák a konfigurációs szabályokat, és felhasználják azokat a Microsoft Dynamics 365 Finance és a Dynamics 365 Supply Chain Management által az Elektronikus számlázásnak és az elektronikus számláknak küldött adatok feldolgozására.
+Az elektronikus számlázási funkciók felelősek az elektronikus számlák az Elektronikus számlázáson keresztüli létrehozásáért. Befogják Microsoft Dynamics a konfigurációs szabályokat, és ezek segítségével feldolgozzák a 365 Pénzügy Dynamics 365 Supply Chain Management modul adatait, és elküldik az Elektronikus számlázás és az elektronikus számlák modulba.
 
 Ez a funkció olyan eseteket is támogat, ahol meg kell adni a fájlformátum-specifikációknak való megfelelést, és a kimenet egy önálló elektronikus fájl. A legtöbb esetben az adóhatóság közzéteszi a fájlformátum-specifikációkat.
 

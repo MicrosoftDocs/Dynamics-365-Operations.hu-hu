@@ -1,6 +1,6 @@
 ---
 title: Féléves értékcsökkenési szabály módszertana
-description: Ez a témakör azt mutatja be, hogy a tárgyi eszközökhöz milyen módszerrel számítják ki az értékcsökkenést a féléves szabály alapján, amely az eszköz első és utolsó évében a szolgáltatásban számított hat hónapos értékcsökkenést számítja ki.
+description: Ez a témakör azt a módszert írja le, amellyel a tárgyi eszközök értékcsökkenését a féléves szabály alkalmazásával számítják ki, amely a tárgyi eszköz első és utolsó évében hat hónap értékcsökkenést számít ki.
 author: moaamer
 ms.date: 08/17/2019
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: fb15a293bb8cec1b4faba7bcbd29eb4df7916786
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: fac20f7a31eca7922ed079f9554437f28448620d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720392"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879595"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Féléves értékcsökkenési szabály módszertana
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör azt mutatja be, hogy milyen módszer van alkalmazva a tárgyi eszközökhöz az értékcsökkenés kiszámítására a féléves szabályok használatával. A Féléves szabály egy eszköz első és utolsó évében kiszámítja az értékcsökkenést hat hónapra. Az értékcsökkenési szabályokkal kapcsolatos további tudnivalókért lásd: [Értékcsökkenési módszerek és szabályok](Fixed-asset-depreciation-conventions.md). 
+Ez a témakör azt a módszert írja le, amely a tárgyi eszközök értékcsökkenésének a féléves szabály alapján való kiszámítására használatos. A Féléves szabály egy eszköz első és utolsó évében kiszámítja az értékcsökkenést hat hónapra. Az értékcsökkenési szabályokkal kapcsolatos további tudnivalókért lásd: [Értékcsökkenési módszerek és szabályok](Fixed-asset-depreciation-conventions.md). 
 
 Amikor a hathónapos értékcsökkenési szabályt használja, a rendszer a beszerzés évét vagy az eszköz üzembe helyezésének évét használja, majd az adott évtől számított öt éves értékcsökkenést számítja ki, majd hat hónapot hozzáad. Ennek a folyamatnak a szemléltetéséhez képzeljen el egy olyan eszközt, amelyet a 50 000 dollárért vettek 2020 augusztusában. Azt is feltételezi, hogy az eszköznek ötéves élettartama van.
 

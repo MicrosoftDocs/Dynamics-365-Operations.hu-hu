@@ -1,6 +1,6 @@
 ---
 title: Változó kompenzációs konstrukció bérlistája
-description: Ez a témakör részleteket nyújt, és példalekérdezést tartalmaz a Bérlista változó kompenzációs konstrukció entitásra vonatkozóan a Dynamics 365 Human Resources rendszerben.
+description: Ez a cikk a bérlista változó kompenzációs konstrukció entitásának részletes adatait és példa-lekérdezését tartalmazza a következőben:Dynamics 365 Human Resources
 author: twheeloc
 ms.date: 06/15/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-06-15
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c5cc9e02ff2dd49e2eb0c8131fcff2eca4b9c3b1
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 5c6190084c3f1ce15d6a4ab8f13843a5da801dd3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533647"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868130"
 ---
 # <a name="payroll-variable-compensation-plan"></a>Változó kompenzációs konstrukció bérlistája
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533647"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources bérszámfejtési változó kompenzációs konstrukció entitását ismerteti.
+Ez a témakör a bérlista változó kompenzációs konstrukciója entitását ismerteti Dynamics 365 Human Resources.
 
 ### <a name="description"></a>Leírás
 

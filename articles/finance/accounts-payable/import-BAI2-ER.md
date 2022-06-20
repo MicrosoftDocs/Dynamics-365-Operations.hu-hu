@@ -1,6 +1,6 @@
 ---
 title: Továbbfejlesztett banki egyeztetés importálásának beállítása az Elektronikus jelentés segítségével
-description: Ez a témakör bemutatja az Elektronikus jelentéskészítés segítségével a továbbfejlesztett banki egyeztetés importálási folyamatának beállítását.
+description: Ez a cikk bemutatja, hogy hogyan lehet az Elektronikus jelentéskészítés segítségével beállítani a továbbfejlesztett banki egyeztetési importálási folyamatot.
 author: panolte
 ms.date: 03/30/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 30530a9870ba2ff0546237d2698d1675afa78104
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2ac8811a5c10490d90f782472d3c198474c7edc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770194"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889120"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Továbbfejlesztett banki egyeztetés importálásának beállítása az Elektronikus jelentés segítségével
 
 [!include [banner](../includes/banner.md)]
 
-A Speciális banki egyeztetési funkció lehetővé teszi az elektronikus banki kivonatok importálását Microsoft Dynamics és automatikus egyeztetését a 365 Pénzügy banki tranzakcióival. Ez a témakör bemutatja a banki kivonatok importálási funkcióinak beállítását. A banki kivonat importálási beállítások az elektronikus banki kivonat formátumától függően változnak. Microsoft Dynamics A 365 Finance három banki kivonatformátumot támogat: ISO20022, MT940 és BAI2. 
+A Speciális banki egyeztetési funkció lehetővé teszi az elektronikus banki kivonatok importálását Microsoft Dynamics és automatikus egyeztetését a 365 Pénzügy banki tranzakcióival. Ez a cikk ismerteti, hogyan állítható be az importálás az Ön banki kivonataihoz. A banki kivonat importálási beállítások az elektronikus banki kivonat formátumától függően változnak. Microsoft Dynamics A 365 Finance három banki kivonatformátumot támogat: ISO20022, MT940 és BAI2. 
 
 ## <a name="set-up-the-electronic-reporting-configuration"></a>Az elektronikusjelentés-konfiguráció beállítása
 
@@ -34,7 +34,7 @@ A Speciális banki egyeztetési funkció lehetővé teszi az elektronikus banki 
 2. A Microsoft **konfigurációs szolgáltató csempe** tárházát **jelölje ki**.
 3. Válassza ki a **Globális**, majd a **Megnyitás** lehetőséget.
 4. Ha kapcsolatot kell létesíteni a tárházzal, jelölje ki a kék kapcsolatot a párbeszédpanelen.
-5. A konfigurációs listában keresse meg a **\> BAI2** banki kivonatmodellját.
+5. A konfigurációs listában keresse meg a **\> BAI2 banki kivonatmodellját**.
 6. Válassza a **BAI2 formátumot**.
 7. Válassza ki **a legújabb** verziót a Verziók gyorsgombra, majd válassza az Importálás **lehetőséget**.
 

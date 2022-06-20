@@ -1,6 +1,6 @@
 ---
 title: A Dynamics 365 Commerce és a Microsoft Teams integrációjának engedélyezése
-description: Ez a témakör a Microsoft Dynamics 365 Commerce és a Microsoft Teams integrációjának engedélyezését ismerteti.
+description: Ez a témakör bemutatja az engedélyezést és az Microsoft Dynamics 365 Commerce integrációt Microsoft Teams.
 author: gvrmohanreddy
 ms.date: 02/17/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dfada577ab97fdb9912c22d2399529f934b25d54
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 505e3854818e4d5b73fc1a22724be16036300c3b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695734"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872828"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>A Dynamics 365 Commerce és a Microsoft Teams integrációjának engedélyezése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce és a Microsoft Teams integrációjának engedélyezését ismerteti.
+Ez a témakör bemutatja az engedélyezést és az Microsoft Dynamics 365 Commerce integrációt Microsoft Teams.
 
 A Teams alkalmazást Dynamics 365 Commerce rendszerből származó információkkal információkkal szeretné kiépíteni, és szinkronizálni szeretné a kezelési funkciókat a Teams és a pénztár (POS) alkalmazás között, akkor engedélyeznie kell a Commerce központi felületének integrációs funkcióit.
 

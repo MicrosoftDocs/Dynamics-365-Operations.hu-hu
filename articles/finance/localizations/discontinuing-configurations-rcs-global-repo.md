@@ -1,6 +1,6 @@
 ---
 title: Konfigurációk megszüntetése az RCS Globális adattárban
-description: Ez a témakör leírja, hogyan lehet megszüntetni a konfigurációkat az RCS Globális adattárban.
+description: Ez a témakör leírja, hogyan lehet megszüntetni a konfigurációkat az RCS globális tárházban.
 author: JaneA07
 ms.date: 02/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 340fc96e7dfe56da9ee8d4831a5980e3e96ec3ee0f2f5a8fb2ab72f713de9737
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4121f45a95e1712f21390c317af532662846a0fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712170"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894811"
 ---
 # <a name="discontinue-configurations-in-the-rcs-global-repository"></a>Konfigurációk megszüntetése az RCS Globális adattárban
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja, hogyan lehet megszüntetni a konfigurációt az RCS Globális adattárban. Korábban csak olyan konfigurációk voltak törölhetők, amelyekre már nem volt szükség. Most azonban egy kiadott konfigurációt **Kifutott** állapotúként jelölhet meg az RCS Globális adattárban. Ezzel a funkcióval a következőkre is lehetőség nyílik: 
+Ez a témakör leírja, hogyan lehet megszüntetni a konfigurációt az RCS globális tárházban. Korábban csak olyan konfigurációk voltak törölhetők, amelyekre már nem volt szükség. Most azonban egy kiadott konfigurációt **Kifutott** állapotúként jelölhet meg az RCS Globális adattárban. Ezzel a funkcióval a következőkre is lehetőség nyílik: 
  
  - Előzetes értesítés biztosítása egy konfiguráció tervezett megszüntetése esetén.
  - Adja hozzá a cserekonfigurációra vonatkozó részleteket.
@@ -56,7 +56,7 @@ Ha egy tervezett megszüntetésről szeretne információkat megosztani még a k
 
 ## <a name="finance-supports-displaying-this-information-starting-in-version-10014"></a>A Finance rendszer támogatja ezen adatok megjelenítését a 10.0.14-es verziótól kezdve.
 
-A Dynamics 365 Finance rendszer támogatja a megszüntetési adatok megjelenítését a 10.0.14-es verziótól kezdve. A **Globális adattár** oldalon megtekintheti a megszüntetéshez kapcsolódó naprakész információkat. Alapértelmezés szerint a már megszüntetett konfigurációkat kiszűri a rendszer.
+A Dynamics 365 Pénzügy 10.0.14-es verziójától kezdve támogatja a nem folytonos adatok megjelenítését. A **Globális adattár** oldalon megtekintheti a megszüntetéshez kapcsolódó naprakész információkat. Alapértelmezés szerint a már megszüntetett konfigurációkat kiszűri a rendszer.
   
 Az **Importált konfigurációk** (ERSolutionTable) oldalon megjelennek az importáláskor már megszüntetett konfigurációk. Az importálás után megszüntetett konfigurációk esetén az importálás után megszüntetett adatokat az **Konfigurációfrissítések importálása** feladat futtatásával szinkronizálhatja.
 

@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 707640ca211e997533d0f5a0b4e6d52cb5be9db4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899210"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Elvetett kosarak észlelése és értesítések küldése a vevőknek
 
@@ -52,7 +52,7 @@ Az alábbi ábra az összeeső bevásárlókocsi csatlakoztató mintaalkalmazás
 
 ## <a name="obtain-the-code-sample"></a>A kód minta beszerzése
 
-Az a bevásárlókocsi-csatlakoztató mintaalkalmazás, amely a 10.0.16-os verziónak megfelelő Retail SDK készletbe tartozik. A kód a **\\ RetailSDKCodeSampleExtensionsRetailServerExtensions.ServerExtensions.AtlanCartSample\\\\\\\\ alatt található.** A Retail SDK készletről és annak beszerzéséről a [Retail szoftverfejlesztői csomag (SDK) nyújt további tájékoztatást](retail-sdk/retail-sdk-overview.md).
+Az a bevásárlókocsi-csatlakoztató mintaalkalmazás, amely a 10.0.16-os verziónak megfelelő Retail SDK készletbe tartozik. A kód a **\\ RetailSDK\\ code\\ SampleExtensions\\ RetailServer\\ Extensions.ServerServer Extensions.AjaxdSample kód alatt található**. A Retail SDK készletről és annak beszerzéséről a [Retail szoftverfejlesztői csomag (SDK) nyújt további tájékoztatást](retail-sdk/retail-sdk-overview.md).
 
 > [!NOTE]
 > Bár a mintakódot először a 10.0.16-os verzióban készítették el, kompatibilis a Retail Server 10.0.13-as verziójával és későbbi buildekkel.
@@ -160,6 +160,6 @@ Ha a Commerce rendszer e-commerce lehetőségeit használja, a Commerce digitál
 | ImageViewPorts/viewport              | A nézetport-definíció. Ezzel a tulajdonságtal képpontban megadhatja a nézet szélességi tartományát. A tulajdonság használatával kapcsolatos **példát lásd az appSettings.json konfigurációs** fájlban. |
 | ImageViewPorts/imageWidth            | A nézetport képszélessége képpontban. |
 | imageViewPorts/imageHetükrök           | A nézet nézetének kép magassága képpontban. |
-| imageViewPorts/useForDefaultImageTag | **Truefalse**/**·**`<picture>` érték, amely jelzi, hogy a nézetport által definiált képdimenziókat kell-e használni, ha a HTML-címke nem támogatott webböngésző vagy e-mail ügyfél esetén. |
+| imageViewPorts/useForDefaultImageTag | Igaz **hamis**/**érték**`<picture>`, amely azt jelzi, hogy a nézetport által definiált képdimenziókat kell-e használni, ha a HTML-címke nem támogatott webböngésző vagy e-mail ügyfél esetén. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

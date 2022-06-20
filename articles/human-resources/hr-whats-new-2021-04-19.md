@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban, 2021. április 19.
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. április 19-i kiadásban.
+description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. április 19-i kiadásban.
 author: marcelbf
 ms.date: 04/19/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6734069b1448999c62a8c538f97d786fc10995e5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685742"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846300"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban, 2021. április 19.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le.
+Ez a témakör az új, módosított vagy hamarosan érkező funkciókat írja le Dynamics 365 Human Resources.
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 > [!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakört frissítjök olyan hibajavításokkal, amelyek annak első közzététele után léptek életbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. A cikk első közzététele után frissíthet egy hibajavítást, amely a javításokat tartalmazza a buildben.
 
-| Kiadás száma | Kiadás |  Leírás |
+| Kiadás száma | Probléma |  Leírás |
 | --- | --- | --- |
 | 552164 | **Mentett nézet** az **Alkalmazott önkiszolgáló rendszer > Nyitott tanfolyamok** nem működnek napirendet tartalmazó tanfolyamokhoz | Ha a Nyitott tanfolyamokon (ESS) egy Mentett nézetet használnak, és valamelyik tanfolyamhoz tartozik napirend, akkor a nézet a továbbiakban nem fog több sort megjeleníteni a tanfolyamnál |
 | 560614 | **Juttatások > Életesemény beállításai** megjeleníti az elemleírás dokumentációjának és a kód viselkedésének eltérését. | Módosított elemleírások az **Életesemény beállításokban** a helyes viselkedés megjelenítéséhez. |

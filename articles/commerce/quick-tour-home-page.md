@@ -1,6 +1,6 @@
 ---
 title: Kezdőlap – áttekintés
-description: Ez a témakör a Microsoft Dynamics 365 Commerce kezdőlapjával kapcsolatban nyújt áttekintést.
+description: Ez a cikk áttekintést nyújt a kezdőlapról a következőben:Microsoft Dynamics 365 Commerce
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce94dce081957af620e3ab85e466877c0bcc5bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844672"
 ---
 # <a name="home-page-overview"></a>Kezdőlap – áttekintés
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce kezdőlapjával kapcsolatban nyújt áttekintést.
+Ez a cikk áttekintést nyújt a kezdőlapról a következőben:Microsoft Dynamics 365 Commerce
 
 A kezdőlap az az alapértelmezett lap, amelyre a vásárlók kerülnek, amikor meglátogatnak egy e-kereskedelmi webhelyet. Ez a lap általában termékeket és promóciókat jelenít meg marketingmodulok kombinációjának használatával. A kezdőlapnak képekben és szövegben gazdagnak kell lennie ahhoz, hogy a bevonzza a vásárlókat.
 
@@ -33,7 +33,7 @@ A következő ábra egy olyan kezdőlapot mutat be, amely a modulkönyvtár és 
 
 ![Példa a kezdőlapra.](./media/Homepage2.PNG)
 
-A kezdőlap felső részén egy fejléc jelenik meg, amely az összes termékkategóriát és az egyéb olyan oldalakt, amelyet a kereskedő azt szeretné, hogy böngésznének. A kezdőlaplap alján van egy lábléc, amely gyorshivatkozásokat tartalmaz a különböző témájú témákhoz, amelyek érdekesek lehetnek a vevők számára.
+A kezdőlap felső részén egy fejléc jelenik meg, amely az összes termékkategóriát és az egyéb olyan oldalakt, amelyet a kereskedő azt szeretné, hogy böngésznének. A kezdőlap alján egy lábléc található, amely gyorshivatkozásokat tartalmaz különböző, a vevőket érdeklő cikkekre.
 
 A kezdőlap fő része a termékeket, kategóriákat vagy promóciókat jelenít meg különböző Dynamics 365 Commerce modulok használatával:
 
@@ -49,8 +49,8 @@ A kezdőlap fő része a termékeket, kategóriákat vagy promóciókat jelenít
 
     ![Példák a funkciómodulokra.](./media/Feature.PNG)
 
-- **Csempe** – a tartalomblokk modul csempeelrendezése a különböző termékek vagy termékkategóriák megjelenítésére szolgál a képek és a szöveg kombinációjának használatával a többoszlopos elrendezésben. A jelen témakörben korábban bemutatott kezdőlap illusztráción egy csempeelrendezés van használva a **Vásárlás nőknek**, **Vásárlás férfiaknak** és **Kiegészítők vásárlása** háromoszlopos leképezéshez.
-- **Videolejátszó** – A videolejátszó modul videotartalom megjelenítésére használható a kezdőlapon. A témakörben korábban bemutatott Kezdőlap illusztrációja egy videolejátszó modult is tartalmaz.
+- **Csempe** – a tartalomblokk modul csempeelrendezése a különböző termékek vagy termékkategóriák megjelenítésére szolgál a képek és a szöveg kombinációjának használatával a többoszlopos elrendezésben. **A** cikk egy korábban megjelenő kezdőlapján egy csempeelrendezést használ a háromoszlopos megjelenítésre, amely a Női üzlet, **·** **az** Üzlet férfi és az Üzleti kiegészítők típusú cikkeket tartalmazza.
+- **Videolejátszó** – A videolejátszó modul videotartalom megjelenítésére használható a kezdőlapon. A cikk korábbi kezdőlapja egy Video Player modult is tartalmaz.
 - **Szövegblokk** – a tartalomgazdag blokkmodul a kezdőlapon egy egyoszlopos vagy többoszlopos elrendezésben megjeleníthető szöveges tartalom megjelenítésére használható.
 - **Termékjavaslatok** – A termékjavaslatok modulok olyan listák megjelenítésére használhatók a kezdőlapon, mint az **Új**, **Népszerű** és **Legkelendőbb**. Ezek a listák a termékeket a vásárlási trendek alapján jelenítik meg, és a algoritmussal generálhaók vagy manuálisan is összeállíthatók. Segítségükkel a vevők gyorsan felfedezhetik a legnépszerűbb termékeket, majd folytathatják a vásárlást.
 

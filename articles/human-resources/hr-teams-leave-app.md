@@ -1,6 +1,6 @@
 ---
-title: Szabadság- és távollétkérelmek kezelése a Teams alkalmazásban
-description: Ez a témakör azt mutatja be, hogyan lehet szabadságot kérelmezni a Dynamics 365 Human Resources alkalmazásban a Microsoft Teams rendszerben.
+title: Szabadságkérelmek kezelése a Teamsben
+description: Ez a cikk bemutatja, hogyan lehet időt kérni Dynamics 365 Human Resources az alkalmazásban Microsoft Teams.
 author: twheeloc
 ms.date: 12/15/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3ba1ecc97183c147b46ea2396df78fcdce07c27e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4843e5bc0cc97f47e212c0cb4a6ddc4a2032f306
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687980"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858127"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Szabadságkérelmek kezelése a Teamsben
 
@@ -219,7 +219,7 @@ A Teams Human Resources alkalmazásában a következőak adálymentességgel kap
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
 
-A felhasználói Dynamics 365 Human Resources szövegbevitel Microsoft Teams elemzése után a program elemzi a bejövő szövegeket, hogy megértsük a mögöttes lekérdezést/célját. A felhasználó által megadott adatok például a "Search account Contoso" a Microsoft language Understanding Intelligens szolgáltatás (LANGUAGE Understanding Intelligens szolgáltatás) nevű szolgáltatásának, a Language Understanding Intelligens szolgáltatásnak (STB) az egyikéhez vannak irányítva. A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ez az információ ezután át lesz stb. a Microsoft'sAzure [bot keretrendszernek](https://azure.microsoft.com/services/bot-service/), Dynamics 365 Human Resources amely az adatokkal kommunikál a felhasználói lekérdezésből, és beolvassa a kívánt adatokat. 
+A felhasználói Dynamics 365 Human Resources szövegbevitel Microsoft Teams elemzése után a program elemzi a bejövő szövegeket, hogy megértsük a mögöttes lekérdezést/célját. A felhasználó által megadott adatok például a "Search account Contoso" a Microsoft language Understanding Intelligens szolgáltatás (LANGUAGE Understanding Intelligens szolgáltatás) nevű szolgáltatásának, a Language Understanding Intelligens szolgáltatásnak (STB) az egyikéhez vannak irányítva. A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ezt követően a rendszer áttér az adatra a Microsoft [Azure felhasználói](https://azure.microsoft.com/services/bot-service/) keretrendszerére, amely az adatokkal kommunikál a felhasználói lekérdezésből, Dynamics 365 Human Resources és beolvassa a kívánt adatokat. 
 
 A robot telepítésével és a használatához való hozzáférés engedélyezésével Ön elfogadja, hogy a LUIS szolgáltatás és az Azure robot keretrendszer feldolgozza a bemenet mögötti szándékot, ami egy továbbfejlesztett, társalgásszerű felhasználói élményt eredményez. A LUIS szolgáltatás és az Azure robot keretrendszer különböző szintű megfeleléssel rendelkezhet a Dynamics 365 Human Resources alkalmazáshoz képest. Habár az ORI Dynamics 365 Human Resources szolgáltatás csak a felhasználói lekérdezésekhez van hozzáférése, és nincs a felhasználó adataihoz vagy fiókjához való csatlakozásra tervezve, az Dynamics 365 Human Resources adatbázis egy felhasználója tudott egy vevői adatokat, személyes adatokat vagy más adatokat tartalmazó lekérdezést, és ezeket a lekérdezési tartalmat el lehet küldeni aKISZOLGÁLÓ szolgáltatásnak és az Azure-keretrendszernek. 
 

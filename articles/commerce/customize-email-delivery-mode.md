@@ -1,6 +1,6 @@
 ---
 title: Tranzakciós e-mailek testreszabása kézbesítési mód szerint
-description: Ez a témakör azt ismerteti, hogy miként állíthat be egyéni e-mail sablonokat a Microsoft Dynamics 365 Commerce adott értesítési típusaihoz és kézbesítési módjaihoz.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani egyéni e-mail sablonokat a megadott értesítési típusokhoz és szállítási módokhoz Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: d15e7c5c7050ad373cb45da72de59416e85a5f2034f7a11b007d497b2e2b98bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f16bc23e3527f57bd61d73e92506946067c6eeb9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749907"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850304"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>Tranzakciós e-mailek testreszabása kézbesítési mód szerint
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogy miként állíthat be egyéni e-mail sablonokat a Microsoft Dynamics 365 Commerce adott értesítési típusaihoz és kézbesítési módjaihoz.
+Ez a témakör azt ismerteti, hogyan lehet beállítani egyéni e-mail sablonokat a megadott értesítési típusokhoz és szállítási módokhoz Microsoft Dynamics 365 Commerce.
 
 A tranzakciós e-mailek mostantól testreszabhatók egy értesítési típus (például **Rendelés létrehozva**, **Rendelés csomagolva** vagy **Rendelés számlázva**) és egy kézbesítési mód (pl. egynapos, átvétel üzletben, átvétel utcán) kombinációjára vonatkozóan. Az egyéni tranzakciós e-mailek lehetővé teszik a kiskereskedők számára, hogy ügyfeleik rendeléseinek olyan teljesítési élményeket nyújtsanak, amelyek a megrendelés szállítási módjához igazodnak. A "rendelés csomagolva" esemény például testre szabható, így útszéli felvételi utasításokat biztosít azoknak az ügyfeleknek, akik a járdaszéli felvételeket választják. Másik lehetőségként szállítmányozói és szállítási információkat is biztosíthat azoknak az ügyfeleknek, akik úgy döntenek, hogy a rendelésüket szállíttatják.
 

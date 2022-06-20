@@ -1,6 +1,6 @@
 ---
 title: Áfabevallás (Németország)
-description: Ez a témakör azt írja le, hogyan lehet a hivatalos XML-formátumban előrehozott áfabevallást létrehozni és generálni Németország számára.
+description: Ez a témakör azt írja le, hogyan lehet a hivatalos XML-formátumban előlegbevallást (áfa- és áfabevallást) létrehozni Németország számára.
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: ff52963c03ec2eb662eb0c20ef2a960e3b999167
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402803"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879532"
 ---
 # <a name="vat-declaration-germany"></a>Áfabevallás (Németország)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt írja le, hogyan lehet a hivatalos XML-formátumban előrehozott áfabevallást létrehozni és generálni Németország számára. Ez a témakör bemutatja az áfabevallás előnézetét is Microsoft Excel.
+Ez a témakör azt írja le, hogyan lehet a hivatalos XML-formátumban előlegbevallást (áfa- és áfabevallást) létrehozni Németország számára. Ez a cikk azt is bemutatja, hogy hogyan lehet az áfabevallást előnézetben látni a következőben:Microsoft Excel
 
 A jelentés automatikus létrehozásához hozzon létre elég áfakódot ahhoz, hogy az előleg áfabevallásán minden egyes rovatban külön áfakönyvelés legyen. Ezenkívül az előzetes áfabevallás elektronikus jelentési (ER) formátumának alkalmazásspecifikus paramétereiben az áfakódokat hozzá kell társítani az áfabevallás mezőihez keresési eredményekhez.
 
-Németország esetében be kell állítania a **Jelentés mezőkeresést**. Az alkalmazásspecifikus paraméterek beállításával kapcsolatos további [tudnivalókat](#set-up-application-specific-parameters-for-vat-declaration-fields) lásd a Témakör későbbi, Az áfabevallási mezők alkalmazásspecifikus paramétereinek beállítása című részében.
+Németország esetében be kell állítania a **Jelentés mezőkeresést**. Az alkalmazásspecifikus paraméterek beállításával kapcsolatos további [tudnivalókat](#set-up-application-specific-parameters-for-vat-declaration-fields) lásd a Cikk áfabevallási mezők alkalmazásspecifikus paramétereinek beállítása című részében.
 
 A következő táblázatban a "Keresés eredménye" oszlop mutatja azt a keresési eredményt, amely az áfabevallási formátumban egy adott áfabevallási sorhoz előre konfigurálva van. Ezzel az információval lehet megfelelően társítani az áfakódokat a keresési eredményhez, majd az áfabevallás sorhoz.
 
@@ -59,7 +59,7 @@ Az előleg áfabevallása Németországban a következő adatokat tartalmazza.
 |-----|----------------|------------------|--------------------------------------------------------|-----------------------------------------|
 | 30  | 48             | *Nincs adóösszeg*  | Adómentes értékesítés, amely nem adólevonást jelent. | 30-TaxFreeSalesWithoutInputTaxDeduction |
 
-**Közösségen belüli beszerzések**
+**Közösségi beszerzések**
 
 | Sor | Doboz – adóalap | Doboz – adó összege | Leírás                                                                                                                   | Keresési eredmény                                                    |
 |-----|----------------|------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -144,7 +144,7 @@ A fordított áfa beállításával kapcsolatos további tudnivalókat lásd: [F
 
 1. Nyissa meg a következőt: **Szervezetek adminisztrációja** > **Szervezetek** > **Jogi személyek**.
 2. Válassza ki a jogi személyt, majd válassza ki a Regisztrációkhoz **való jogokat**.
-3. Válassza ki vagy hozza létre a címet Németországban, majd válassza **a** Hozzáadás lehetőséget a Regisztrációs azonosító gyorsgombra.**·**
+3. Válassza ki vagy hozza létre a címet Németországban, majd válassza **a** Hozzáadás lehetőséget a Regisztrációs azonosító **gyorsgombra**.
 4. A Regisztráció **típusa mezőben** válassza ki azt a regisztrációtípust, amely Németországhoz tartozik, **és amely a Vállalatazonosító (COID) regisztrációs** kategóriát használja.
 5. A Regisztrációs **szám mezőbe** írja be az adószámot.
 6. Az Általános **lap** Hatályos **mezőjébe** írja be azt a dátumot, amikor a szám hatályba lép.
@@ -169,14 +169,14 @@ Nyissa meg az Elektronikusjelentés-munkaterületet **·**, és importálja a k�
 
 A következő lépések szerint adhatja meg, hogy mely áfakódok generálják az áfabevallás mezőit.
 
-1. Menjen a **WorkspacesElectronic** > **jelentéskészítéshez**, és válassza ki a Jelentéskészítési **konfigurációkat**.
+1. Menjen a Munkaterületek **elektronikus** > **jelentési szolgáltatásba**, és válassza ki a Jelentéskészítési **konfigurációkat**.
 2. Válassza ki az áfabevallás **XML-konfigurációját**, majd **a Konfigurációk \> alkalmazásspecifikus paramétereinek beállítását**.
 3. Az Alkalmazásspecifikus **paraméterek lapon**, **a** Keresések gyorslapon válassza a Jelentés **mező keresését**.
 4. A Feltételek **gyorscsoporton** állítsa be a következő mezőket az áfakódok és a jelentésmezők társítása érdekében.
 
     | Mező                  | Leírás                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Keresési eredmény          | A jelentésmező értékének kiválasztása. Az értékekről és az [áfabevallási sorokhoz való hozzárendelésükről a témakör korábbi, áfabevallás áttekintő](#vat-declaration-overview) szakaszában olvashat bővebben.                                                                                               |
+    | Keresési eredmény          | A jelentésmező értékének kiválasztása. Az értékekről és az [áfabevallási sorokhoz való hozzárendelésükről a cikk korábbi, áfabevallási áttekintő](#vat-declaration-overview) szakaszában olvashat bővebben.                                                                                               |
     | Adókód               | A jelentésmezőhöz társítani kívánt áfakód kiválasztása. A kiválasztott áfakódot használják a feladott adótranzakciók a megfelelő bevallás mezőben lesznek összegyűjtve. Javasoljuk, hogy az áfakódokat úgy válassza el, hogy egy áfakód csak egy bevallásmezőben generáljon összegeket. |
     | Tranzakcióosztályozó | Ha a bevallás meghatározásához elegendő áfakódot hozott létre, válassza **\* a Nem üres lehetőséget\***. Ha nem létrehozott elég áfakódot ahhoz, hogy egy áfakód csak egy bevallásmezőben generáljon összegeket, akkor be lehet állítani egy tranzakcióosztályozót. A következő tranzakcióosztályozók érhetők el:</br>-   **Beszerzés**</br>-   **PurchaseExempt** (adómentes beszerzés)</br>-   **PurchaseReverseCharge** (beszerzés fordított áfafizetésből visszakövethető adója)</br>-   **Értékesítés**</br>-   **SalesExempt** (adómentes értékesítés)</br>-   **SalesReverseCharge** (a beszerzés fordított vagy fordított áfafizetésből fizetendő adója)</br>-   **Az adó használata.** </br>Minden tranzakcióosztályozónál elérhető a jóváírás osztályozója is. Például az egyik osztályozó a **PurchaseCreditNote** (beszerzési jóváírás).</br>Mindenképpen hozzon létre két sort mindegyik áfakódhoz: egyet a tranzakcióosztályozó értékével, és egyet a jóváírási érték tranzakcióosztályozóval. |
 
@@ -193,7 +193,7 @@ A következő lépések szerint adhatja meg, hogy mely áfakódok generálják a
 ### <a name="set-up-the-vat-reporting-format-for-preview-amounts-in-excel"></a>Áfabevallási formátum beállítása az összegek excelben való megtekintéséhez
 
 1. A Funkciókezelés **munkaterületen** keresse meg és engedélyezze az áfabevallék-formátum **jelentési szolgáltatását**.
-2. Ugrás a **FőkönyvI főkönyvi** > **·** > **paraméterek modulra**.
+2. Ugrás a Főkönyv **beállítása** > **főkönyvi** > **paraméterekhez**.
 3. Válassza az **Áfabevallási** **·** **Excel (DE) lehetőséget az Áfabeállítások gyorslap Áfabevallás formátumleképezés mezőjében.** **·**
 
    Ez a formátum a kiegyenlítési időszak áfajelentésének **futtatásakor kerül nyomtatásra**. Akkor is kinyomtatja, ha **az** Áfakifizetések **lapon** a Nyomtatás lehetőséget választja.
@@ -202,7 +202,7 @@ A következő lépések szerint adhatja meg, hogy mely áfakódok generálják a
 
 Ha több áfaregisztrációval [rendelkező](emea-reporting-for-multiple-vat-registrations.md) jogi személynél konfigurálja az áfabevallást, kövesse a következő lépéseket:
 
-1. Ugrás a **FőkönyvI főkönyvi** > **·** > **paraméterek modulra**.
+1. Ugrás a Főkönyv **beállítása** > **főkönyvi** > **paraméterekhez**.
 2. Válassza az **Áfabevallási** **Excel (DE)** ER formátumot az Ország-/**régiójelentések** gyorslapon, a DEU-s **sorban**.
 
 ## <a name="set-up-electronic-messages"></a>Elektronikus üzenetek beállítása
@@ -212,17 +212,17 @@ Ha több áfaregisztrációval [rendelkező](emea-reporting-for-multiple-vat-reg
 Az adatcsomag olyan elektronikus üzenet-beállításokat tartalmaz, amelyek az áfabevallás XML-formátumú előállításához, majd az Excel programban való előnézetének megtekintéséhez használatosak. Ezek a beállítások bővíthetők, de létrehozható egy saját beállítás is. Az elektronikus üzenetkezelés alkalmazásával és a saját beállítások beállításával kapcsolatos további tudnivalókat lásd: [Elektronikus üzenetkezelés](../general-ledger/electronic-messaging.md).
 
 1. A [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)**megosztott** eszköztárában válassza ki eszköztípusként az Adatcsomagot, **majd töltse le a DE áfabevallási EM csomagot.** A letöltött fájl neve **DE ÁFAbevallás EM package.zip**.
-2. Az Dynamics 365 Finance Adatok kezelése munkaterületen **válassza** az Importálás **lehetőséget**.
+2. Válassza az Importálás lehetőséget a Dynamics 365 Pénzügy **eszköz** Adatkezelési **munkaterületén**.
 3. Az Importálás **gyorscsoport** Csoportnév **mezőjébe** írja be a feladat nevét.
 4. A **Kiválasztott entitások** gyorslapon válassza a **Fájl hozzáadása** elemet.
 5. A **Fájl hozzáadása** párbeszédpanelen győződjön meg róla, **·** **·** **hogy** a Forrásadatok formátuma mező csomag, válassza a Feltöltés és hozzáadás lehetőséget, majd válassza ki a korábban letöltött zip-fájlt.
 6. Válassza **Bezárás** lehetőséget.
 7. Az adatentitások feltöltése után a műveleti ablaktáblán válassza az **Importálás** elemet.
-8. Menjen a **TaxInquiries** > **és reportsElectronic** > **messagesElectronic** > **üzenetekhez**, és ellenőrizze az importált elektronikus üzenetfeldolgozást.
+8. Ugrás az Adó-lekérdezések **·** > **és jelentések** > **elektronikus** > **üzenetekhez** és az importált elektronikus üzenetek feldolgozásának ellenőrzéséről.
 
 ### <a name="configure-electronic-messages"></a>Elektronikus üzenetek konfigurálása
 
-1. Menjen a **TaxSetupElectronic** > **·** > **messagesPopulate rekordokműveleteihez** > **·**.
+1. Ugrás az **Adóbeállítás** > **–** > **Elektronikus üzenetek –** > **Rekordok feltöltése műveletekhez**
 2. Válassza ki az áfa-visszakérdezés **rekordjainak sorát**, majd válassza a **Lekérdezés szerkesztése lehetőséget**.
 3. A szűrő használatával megadhatja a jelentésben szerepeletni kívánt kiegyenlítési időszakokat.
 4. Ha más bevallásban kell jelentenie más kiegyenlítési időszakok adótranzakcióit, hozzon létre egy új Rekord feltöltése műveletet, és válassza ki a **megfelelő** kiegyenlítési időszakokat.
@@ -231,7 +231,7 @@ Az adatcsomag olyan elektronikus üzenet-beállításokat tartalmaz, amelyek az 
 
 ### <a name="preview-the-vat-declaration-in-excel-from-the-report-sales-tax-for-settlement-period-periodic-task"></a>Áfabevallás előnézete az Excel programban a forgalmi adó jelentésből a kiegyenlítési időszak ismétlődő feladatának megtekintéséhez
 
-1. Ugrás a **TaxPeriodic** > **tasksDeclarationsSales** > **·** > **taxReport** > **forgalmi adóhoz a kiegyenlítési időszakra**.
+1. Ugrás az Adó – **Időszakos** > **feladatok** > **– Bevallás** > **– Áfajelentés** > **- áfa a kiegyenlítési időszakra**
 2. A Kiegyenlítési **időszak mezőben** válasszon ki egy értéket.
 3. Az Áfafizetés **verziószáma** mezőben válasszon a következő értékek közül:
 
@@ -244,7 +244,7 @@ Az adatcsomag olyan elektronikus üzenet-beállításokat tartalmaz, amelyek az 
 
 ### <a name="settle-and-post-sales-tax"></a><a name="settle-and-post-sales-tax"></a>Áfa kiegyenlítése és feladása
 
-1. Ugrás a TaxPeriodic **tasksDeclarationsSales** > **·** > **taxSettle** > **és az áfa feladása végrehajtásához** > **.**
+1. Ugrás az Adó – **Időszakos feladatokhoz** > **– Áfabevallások** > **áfafizetése** > **és áfa feladása** > **·**
 2. A Kiegyenlítési **időszak mezőben** válasszon ki egy értéket.
 3. Az Áfafizetés **verziószáma** mezőben válasszon a következő értékek közül:
 
@@ -256,7 +256,7 @@ Az adatcsomag olyan elektronikus üzenet-beállításokat tartalmaz, amelyek az 
 
 ### <a name="preview-the-vat-declaration-in-excel-from-a-sales-tax-payment"></a>Áfabevallás előnézete az Excel programban egy áfafizetésből
 
-1. Menjen a **TaxInquiries** > **és a reportsSales** > **tax inquiriesSales** > **adófizetések** jelentéshez, és válasszon egy áfafizetési sort.
+1. Menjen az Adó **-** > **és jelentésjelentések** > **az Áfakifizetések** > **lekérdezéshez**, és válasszon egy áfafizetési sort.
 2. Válassza a **Jelentés nyomtatása**, majd az **OK gombra való lehetőséget**.
 3. Ellenőrizze a kiválasztott áfafizetési sorhoz létrehozott Excel-fájlt.
 
@@ -265,11 +265,11 @@ Az adatcsomag olyan elektronikus üzenet-beállításokat tartalmaz, amelyek az 
 
 ## <a name="generate-a-vat-declaration-from-electronic-messages"></a>Áfabevallás létrehozása elektronikus üzenetekből
 
-Amikor elektronikus üzenetekkel generálja a jelentést, adóadatokat gyűjthet több jogi személytől. A további tudnivalókat [lásd a](#run-a-vat-declaration-for-multiple-legal-entities) témakör későbbi, Több jogi személyhez kapcsolódó áfabevallás futtatása című részében.
+Amikor elektronikus üzenetekkel generálja a jelentést, adóadatokat gyűjthet több jogi személytől. A további tudnivalókat [lásd a](#run-a-vat-declaration-for-multiple-legal-entities) cikk több jogi személyhez című szakaszának Áfabevallás futtatása című részében.
 
 A következő eljárás az LCS megosztott eszköztárból importált elektronikus üzenet-feldolgozási példára vonatkozik.
 
-1. Ugrás a **TaxInquiries** > **és reportsElectronic** > **messagesElectronic** > **üzenetekhez**.
+1. Ugrás az Adó-lekérdezések **·** > **és jelentések** > **elektronikus üzenetekhez** > **·**
 2. A bal oldali ablakban válassza ki a **DE áfabevallást**.
 3. Az Üzenetek **gyorspanelen** válassza az Új **lehetőséget**, majd **a Futtatás feldolgozása párbeszédpanelen** válassza az **OK gombra.**
 4. Válassza ki a létrehozott üzenetsort, adjon meg leírást, majd adja meg a nyilatkozat kezdő és záró dátumát.
@@ -277,7 +277,7 @@ A következő eljárás az LCS megosztott eszköztárból importált elektroniku
     > [!NOTE]
     > Az 5–7. lépés nem kötelező.
 
-5. Nem kötelező: Az Üzenetek gyors **oldalon** válassza az **Adatok** gyűjtése gombra, majd válassza az **OK gombra.** A program hozzáadja a korábban létrehozott áfafizetéseket az üzenethez. A további tudnivalókat lásd [a](#settle-and-post-sales-tax) témakör korábbi, Az áfafizetés és áfa feladás szakaszában. Ha kihagyja ezt a lépést, akkor is létrehozhat áfabevallást **a** **Bevallás** párbeszédpanel Adóbevallás verziómezője segítségével.
+5. Nem kötelező: Az Üzenetek gyors **oldalon** válassza az **Adatok** gyűjtése gombra, majd válassza az **OK gombra.** A program hozzáadja a korábban létrehozott áfafizetéseket az üzenethez. A további tudnivalókat lásd [a](#settle-and-post-sales-tax) cikk korábbi, Az áfafizetés és áfa feladás szakaszában. Ha kihagyja ezt a lépést, akkor is létrehozhat áfabevallást **a** **Bevallás** párbeszédpanel Adóbevallás verziómezője segítségével.
 6. Nem kötelező: Az Üzenet –**cikkek** gyors oldalon ellenőrizze a feldolgozásra átvitt áfafizetéseket. Alapértelmezés szerint a kijelölt időszak minden olyan áfafizetése szerepel, amely nem szerepelt ugyanannak a feldolgozásnak más üzenetében.
 7. Választható: Válassza az **eredeti dokumentumot** az áfakifizetések ellenőrzéshez, vagy válassza a Törlés **lehetőséget,** ha ki szeretné zárni az áfafizetéseket a feldolgozásból. Ha kihagyja ezt a lépést, akkor is létrehozhat áfabevallást **a** **Bevallás** párbeszédpanel Adóbevallás verziómezője segítségével.
 8. Az Üzenetek **gyorsjelentésen** válassza a Frissítés **állapot beállítását**. A Frissítés állapota párbeszédpanelen **válassza a** **Generálra kész lehetőséget, majd kattintson az** OK gombra **.** Győződjön meg róla, hogy az üzenet állapota Kész **állapotra változott.**
@@ -310,9 +310,9 @@ Ha a formátumokat használni kívánt egy jogi személycsoport áfabevallásán
 
 A következő lépések szerint állíthatja be az olyan elektronikus üzeneteket, amelyek több jogi személytől gyűjtik össze az adatokat.
 
-1. **Ugrás a WorkspacesFeature** > **kezeléséhez**.
+1. Ugrás a **Munkaterületek** > **funkciókezelésre**
 2. Keresse meg és válassza **ki** a listában a Több vállalatot átfedő lekérdezéseket a rekordműveletek feltöltése funkcióhoz, majd válassza az **Engedélyezés lehetőséget**.
-3. Ugrás a **TaxSetupElectronic** > **·** > **üzenetek feltöltése \> rekordokműveletekkel**
+3. Ugrás az **Adóbeállítás** > **–** > **Elektronikus üzenetek – \> Rekordok feltöltése műveletekhez**
 4. A Rekordok **feltöltése műveletlapon** válassza ki az Áfa-visszacsatlott áfa rekordjainak **feltöltése sort**.
 
    Az Adatforrások **beállítási rácsában** elérhető egy új **Vállalat** mező. Meglévő rekordok esetén ez a mező az aktuális jogi személy azonosítóját mutatja.

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 508723752ec7ae5f48e52c728b6ef526ec49e4e2
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f1e6932740c33ae418ac633623680eda6af7a592
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723023"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858524"
 ---
 # <a name="collections-management-key-concepts"></a>A beszedéskezelés kulcsfogalmai
 
@@ -34,7 +34,7 @@ Mielőtt elkezdené beállítani a beszedéseket vagy elkezdene dolgozni velük,
 - A leírási tranzakciók létrehozása elvégezhető egy lépésben.
 - Az Elégtelen fedezetű (NSF) fizetések feldolgozása egy lépésben elvégezhető.
 
-Ez a témakör leírja az egyes fogalmakat.
+Ez a témakör ismerteti az egyes fogalmakat.
 
 ## <a name="customer-aging-snapshots"></a>Vevő korosítási pillanatképek
 
@@ -86,7 +86,7 @@ A műveleti ablak gombokat tartalmaz, amelyek a kiválasztott vevőhöz, esethez
 
 Elengedhet, visszaállíthat vagy sztornírozhat teljes kamatleveleket, vagy olyan díjakat és tranzakciókamatokat, amelyek egy kamatlevél részei. Ezt a **Minden vevő** listaoldalon lévő Műveleti ablaktábla **Gyűjtés** lapján teheti meg, ha rákattint a **Kamatlevél**, **Tranzakciókamat** vagy **Díjak** opcióra.
 
-Ezek a kiigazítások csak a kamatleveleket és azokat a kamatokat és díjakat érinti, amiket azok tartalmaznak. Ha további tájékoztatást szeretne kapni arról, hogyan kell leírni a vevő által fizetendő összes költséget, tekintse meg a témakör [Leírási tranzakciók létrehozása](#creating-write-off-transactions) szakaszát.
+Ezek a kiigazítások csak a kamatleveleket és azokat a kamatokat és díjakat érinti, amiket azok tartalmaznak. A vevői tartozások [összes költségének a leírására vonatkozó tudnivalókat lásd a Jelen cikk "Írja le a tranzakciók](#creating-write-off-transactions) létrehozása" szakaszát.
 
 További tudnivalókat lásd a Kamatkód létrehozása tartománnyal és a Kamatfeldolgozás pontokban.
 

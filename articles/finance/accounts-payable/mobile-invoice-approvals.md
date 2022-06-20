@@ -1,42 +1,42 @@
 ---
-title: Mobil számlajóváhagyások
-description: Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével.
+title: Mobilos számlajóváhagyások
+description: Ez a cikk praktikus megközelítést kíván alkalmazni a mobil helyzetek tervezéséhez, ha a szállítói számlák jóváhagyásával mobil használat esetként veszi figyelembe.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d95ef6d9fcff060ac992b11ab5773af075fea5409e43430b4826dc097570c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f635891e3d92fbd5978e10fe01eb67c0a28542c5
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737355"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946274"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobil számlajóváhagyások
 
 [!include [banner](../includes/banner.md)]
 
-Mobil lehetőségek lehetővé teszik az üzleti felhasználónak a mobilélmények tervezését. Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket. A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása. Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével. A témakör segít a forgatókönyvek egyéb változatainak megtervezésében, és szállítói számlákhoz nem kapcsolódó más forgatókönyvekhez is alkalmazható.
+Mobil lehetőségek lehetővé teszik az üzleti felhasználónak a mobilélmények tervezését. Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket. A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása. Ez a cikk praktikus megközelítést kíván alkalmazni a mobil helyzetek tervezéséhez, ha a szállítói számlák jóváhagyásával mobil használat esetként veszi figyelembe. Ez a cikk segít az esetek egyéb variációjának tervezésében, és alkalmazható a szállítói számlákhoz nem kapcsolódó egyéb helyzetekre is.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-| Előfeltételek                                                                                            | Leírás                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Előfeltételek                                                                                            | Leírás                       |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | Mobil kézikönyv előzetes olvasás                                                                                |[Mobil platform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Egy környezet, amely 1611-os verzióval és Platform update 3 (2016. november) rendelkezik                   |
 | Telepítse a 3204341 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | A Feladatrögzítő tévesen két Bezárás parancsot rögzíthet legördülő párbeszédpaneleknél - ez a 3. platformfrissítésében található (2016. novemberi frissítés). |
 | Telepítse a 3207800 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Ez a gyorsjavítás lehetővé teszi a mellékletek megtekintését mobil kliensen - - ez a 3. platformfrissítésében található (2016. novemberi frissítés).           |
 | Telepítse a 3208224 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Alkalmazáskód a szállítói számla jóváhagyására szolgáló mobilalkalmazáshoz - ez a 7.0.1 (2016. május) verzióban szerepel.                          |
-| Android-, iOS- vagy Windows-eszköz, amelyre telepítve van a mobilalkalmazás. | Keresse meg az alkalmazást a megfelelő alkalmazásáruházban.                                                                                                                     |
+| Android-, iOS- vagy Windows-eszköz, amelyre telepítve van a mobilalkalmazás. | Keresse meg az alkalmazást a megfelelő alkalmazásáruházban.                            |
 
 ## <a name="introduction"></a>Bevezetés
 A szállítói számlák mobil jóváhagyásához az „Előfeltételek” című szakaszban említett három gyorsjavításra van szükség. Ezek a gyorsjavítások nem biztosítanak munkaterületet számlajóváhagyáshoz. A munkaterület mobil környezetben való jelentésének megismeréséhez olvassa el az „Előfeltételek” című részben említett mobil kézikönyvet. A számlajóváhagyások munkaterületét ki kell alakítani. 
@@ -51,11 +51,11 @@ Minden szervezet eltérő módon szervezi és határozza meg a szállítói szá
     -   A számlák szintén rendelkeznek könyvelési felosztásokkal a számla fejlécében? Ha igen, e könyvelési felosztásoknak rendelkezésre kell állniuk a készüléken?
 
     > [!NOTE]
-    > Ez a témakör nem magyarázza el, hogyan szerkeszthetők a könyvelési felosztások, mert ez a funkció jelenleg a mobilváltozatokban nem támogatott.
+    > Ez a cikk a könyvelési felosztások szerkesztését nem ismerteti, mivel mobil helyzetekben ez a funkció jelenleg nem támogatott.
 
 -   A felhasználók látni szeretnék a számlához tartozó mellékleteket az eszközön?
 
-A számlajóváhagyási mobilfelület kialakítása az e kérdésekre adott válaszoktól függően eltérő lesz. A cél: optimalizálni a szervezet üzleti folyamatának felhasználói élményét a mobilon. A témakör többi részében két forgatókönyv-változatot vizsgálunk meg közelebbről, amelyek az előző kérdésekre adott különböző válaszokon alapulnak. 
+A számlajóváhagyási mobilfelület kialakítása az e kérdésekre adott válaszoktól függően eltérő lesz. A cél: optimalizálni a szervezet üzleti folyamatának felhasználói élményét a mobilon. A cikk többi részében az előző kérdésekre adott különböző válaszokon alapuló változatokat nézzük meg. 
 
 Általános iránymutatásként a mobiltervezővel való munka során ügyeljen, hogy „tegye közzé” a módosításokat, nehogy elveszítse a frissítéseket.
 

@@ -1,6 +1,6 @@
 ---
-title: Forrásadó-jelentés Indonéziára
-description: Ez a témakör bemutatja, hogyan konfigurálhatja és generálhatja az indonéziai forrásadó-jelentést.
+title: Adóelőleg-jelentés Indonéziában
+description: Ez a cikk bemutatja, hogyan kell konfigurálni és generálni az indonéz adóelőleg-jelentést.
 author: sndray
 ms.date: 12/15/2021
 ms.topic: article
@@ -13,58 +13,58 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6cf2f9240ea747054578c52343af34b15c250f38
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 8acd9442ff4f0b7c19e3b4fcf211acce002e43d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944139"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883181"
 ---
-# <a name="withholding-tax-report-for-indonesia-id-00005"></a>Forrásadó-jelentés Indonéziára (ID-00005)
+# <a name="withholding-tax-report-for-indonesia-id-00005"></a>Adóelőleg-jelentés Indonéziában (ID-00005)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet beállítani és létrehozni azt a PPH forrásadó-fájlt, amelyet az indonéz jogi személyek használnak az e-Bupot alkalmazás forrástranzakcióinak bejelentésére.
+Ez a cikk bemutatja, hogy hogyan lehet beállítani és létrehozni az indonéz jogi személyek által az e-Bupot alkalmazásban az adóelőleg-tranzakciók jelentéséhez használt PPH-adóelőleg-fájlt.
 
-Az indonéz adóhatóság (DGT) megállapítja, hogy a KPP Pratama-nál adóként nyilvántartásba vett adóköteles vállalkozóknak (PKP) a jövedelemadó 23. és/vagy 26. cikkének részvényeseivel/beszedőivel elektronikus úton kell bejelenteniük a jövedelemadó-bevallás 23. és 26. cikkét az e-Bupot kérelem alkalmazásával. 
+Az indonéz adóhatóság (EFT) határozza meg, hogy a KPP Prtama (PKP) által a jövedelemadó (PPh) 23. és/vagy 26. cikke (23. és/vagy 26. cikk) adóőrzőként/-gyűjtőként regisztrált adóköteles adóhatóságának (PKP) elektronikus úton kell jelentenie a Jövedelemadó-bevallás 23. és 26. cikkét az e-Bupot alkalmazás segítségével. 
 
-- **23. cikk** A jelentés tartalmazza az összes olyan szállítótól származó visszatartási tranzakciót, ahol az elsődleges cím ország/régió kódja Indonézia kódja.
-- **26. cikk** A jelentés tartalmazza az összes olyan szállítótól származó visszatartási tranzakciót, ahol az elsődleges cím ország/régió kódja nem Indonézia kódja.
+- **23 . cikk** – a jelentés tartalmaz minden olyan szállítótól származó adóelőleg-tranzakciót, amelyekben az elsődleges cím ország-/régiókódja Az Indonéz terület kódja.
+- **26** . cikk – a jelentés olyan szállítók összes adóelőleg-tranzakcióját tartalmazza, amelyekben az elsődleges cím ország-/régiókódja nem Indonéz tartomány kódja.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 - A jogi személy elsődleges címének Indonéziában kell lennie.
-- A **Szolgáltatáskezelési** munkaterületen engedélyezni kell a **globális forrásadó** funkciót. A funkciók engedélyezésével kapcsolatos további tudnivalókat lásd: [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- A Szolgáltatáskezelés munkaterületén **engedélyezni** kell a Globális adóelőleg **szolgáltatást.** A funkciók engedélyezésével kapcsolatos további tudnivalókat lásd: [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="download-electronic-reporting-configurations"></a>Elektronikus jelentéskészítési konfigurációk letöltése
 
-Az importálási fájl létrehozása elektronikus jelentési (ER) konfigurációkon alapul. A konfigurálható jelentésekkel kapcsolatos funkciókról és fogalmakról további információkat itt talál: [Elektronikus jelentéskészítés](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+Az importfájl generálása az elektronikus jelentési (ER) konfigurációkon alapul. A konfigurálható jelentésekkel kapcsolatos funkciókról és fogalmakról további információkat itt talál: [Elektronikus jelentéskészítés](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-Éles és felhasználói elfogadási tesztelési (UAT) környezetek esetén kövesse az [Elektronikus jelentési konfigurációk letöltése az életciklus-szolgáltatásokból című témakör utasításait.](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+A termelési és felhasználói elfogadási tesztelési (UAT) környezetekben kövesse [az Elektronikus jelentéskészítési konfigurációk letöltése a Lifecycle Services szolgáltatásból útmutatót](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-Az importálási fájl létrehozásához töltse fel a következő konfigurációkat az adattárból:
+Az importfájl létrehozásához töltse fel a tárházból a következő konfigurációkat:
 
-- **Adóbevallás model.version.93.xml** vagy újabb verzió
-- **Adóbevallási modell mapping.version.93.153.xml** vagy egy későbbi verzió
-- **Milyen PPh sémaimportálás (ID).version.93.14** vagy újabb verzió
+- **Adóbevallási modell.version.93.xml vagy** újabb verzió
+- **Adóbevallási modell mapping.version.93.153.xml** vagy újabb verzió
+- **Milyen PPh séma importálása (ID).version.93.14** vagy újabb verzió
 
 ## <a name="set-up-general-ledger-parameters"></a>Főkönyvi paraméterek beállítása
 
-1. Lépjen **a** \> **Adóbeállítás** \> **főkönyvi paraméterei** elemre.
-2. A **Forrásadó** lap **What deklarációs formátumleképezés** mezőjében válassza a Mi **PPh sémaimportálás (ID)** lehetőséget. 
-3. A **·** \> **·** \> **·** \> **Kode Bukti Potong forrásadó-bevételtípus beállításához lépjen az Adóbeállítás forrásadó-forrásadó-bevételtípusra,** **majd** rendelje hozzá a kódokat a kapcsolódó cikkadó-csoportokhoz. A kódok szükségesek az integrációs fájl létrehozásához az e-Bupot alkalmazás használatával. 
+1. Ugrás az **Adóbeállítás** \> **főkönyvi** \> **paramétereihez.**
+2. Az Adóelőleg **lap** **Mi bevallás** **formátum-hozzárendelési mezőjében válassza ki a Mi PPh séma importálását (ID)**. 
+3. Az Adóelőleg-adóelőleg **·** \> **·** \> **·** \> **·** **bevételtípusának** az Adóelőleg-bevallás bevételtípusának beállításához menjen el az Adóelőleg-adóelőlegek adóelőleg-típusának beállításához, és rendelje hozzá a kódokat a kapcsolódó cikk adóelőleg-csoportjaihoz. A kódokat az e-Bupot alkalmazás segítségével kell generálni az integrációs fájlhoz. 
 
-## <a name="generate-the-withholding-import-file"></a>A forrásimportáló importálási fájl létrehozása
+## <a name="generate-the-withholding-import-file"></a>Az adóelőleg-importfájl létrehozása
 
-Az e-Bupot fájl egy adott időszakra történő előkészítésének és létrehozásának folyamata az elszámolási vagy utáni fizetési adófeladat során feladott forrásadó-tranzakciókon alapul.
+Az e-Bupot-fájl egy adott időszakra történő előkészítésének és előállításának folyamata a kifizetés adóelőleg-feladat során feladott adóelőleg-tranzakciókon alapul.
 
-A fájl létrehozásához kövesse az alábbi lépéseket.
+A fájl létrehozásához hajtsa végre a következő lépéseket.
 
-1. Lépjen **az** \> **adóbevallások** \> **forrásadó-ÁF** \> **importfájl e-bupot 23 és 26**.
-2. Válassza ki a jelentés "from" és "to" dátumát, majd válassza ki az elszámolási időszakot.
-3. Adja meg a tranzakció dátumát, majd válassza a **OK** lehetőséget.
-4. Válassza ki a nyelvet. Minden jelentést lefordítanak amerikai angol **(en-us)** és indonéz **(id**).
-5. Válassza ki a vállalkozás típusát, majd adja meg a csekk- és bizonylatszámokat. 
-6. Ellenőrizze, hogy a jelentést a menedzser írta-e alá. Ez az információ a fájlban jelent. 
+1. Ugrás az **adóelőleg-adóelőleg-importfájlhoz** \> **·** \> **·** \> **(e-bupot 23 és 26).**
+2. Válassza ki a jelentés "a" és a "to" dátumát, majd válassza ki a kiegyenlítési időszakot.
+3. Adja meg a tranzakció dátumát, majd válassza az **OK gombra**.
+4. Válassza ki a nyelvet. Minden jelentés angol (**en-us**) és indonéz nyelvre (id) van **lefordítva**.
+5. Válassza ki az üzleti típust, majd adja meg a csekk- és dokumentumszámokat. 
+6. Ellenőrizze, hogy a jelentést aláírta-e a vezető. Ez az információ a fájlban van jelentve. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

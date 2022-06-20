@@ -1,6 +1,6 @@
 ---
 title: Az előrejelzési modell javítása
-description: Ez a témakör az előrejelzési modellek teljesítményének javítására használható funkciókat ismerteti.
+description: Ez a témakör olyan funkciókat ismertet, amelyek az előrejelzési modellek teljesítményének javítására használhatók.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 96ba1653ea1f9a5ac1037e9ecc7e85c86a6f31c7
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: cb725f4e8f7b9dd81077f5c85059a024f3146092
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846886"
 ---
 # <a name="improve-the-prediction-model"></a>Az előrejelzési modell javítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az előrejelzési modellek teljesítményének javítására használható funkciókat ismerteti. Elindítja a modell javítását a **365 Pénzügy ügyfél-fizetési** Microsoft Dynamics előrejelzési munkaterületén. A fejlesztési lépések ezután a következőben befejeződnek: AI Builder.
+Ez a témakör olyan funkciókat ismertet, amelyek az előrejelzési modellek teljesítményének javítására használhatók. Elindítja a modell javítását a **365 Pénzügy ügyfél-fizetési** Microsoft Dynamics előrejelzési munkaterületén. A fejlesztési lépések ezután a következőben befejeződnek: AI Builder.
 
 ## <a name="select-historical-outcomes"></a>Előzményalapú eredmény kiválasztása
 

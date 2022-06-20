@@ -1,6 +1,6 @@
 ---
 title: Francia Intrastat
-description: Ez a témakör a franciaországi Intrastat-jelentéskészítéssel kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk a franciaországi Intrastat nyilatkozatról tartalmaz információkat.
 author: anasyash
 ms.date: 07/9/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d38576e1c6b40242d5c6313fb06f08e170b4466
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e86d7c8f28b1b3df0066a588d380965c21dc98a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487900"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887853"
 ---
 # <a name="french-intrastat"></a>Francia Intrastat
 
@@ -90,14 +90,14 @@ A táblázat a mező jelentési szintjét is mutatja. A mező lehet **4** (egysz
 
     További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2.  A Dynamics 365 Finance alkalmazásban menjen az **Adó** > **Beállítás** >  **Külkereskedelem** > **Külkereskedelmi paraméterek** menübe és kövesse az alábbi lépéseket.
+2.  A Dynamics 365 Pénzügy programban **kattintson** > **az Adóbeállítás** >  **– Külkereskedelmi** > **paraméterek** gombra, és hajtsa végre a következő lépéseket:
 
     1. Az **Intrastat** lapon az **Elektronikus jelentések** gyorslapon **Fájlformátum-hozzárendelés** mezőben válassza az **Intrastat INTRACOM (FR)** vagy az **Intrastat SAISUNIC (FR)** lehetőséget.
     2. A **Jelentésformátum-hozzárendelés** mezőben válassza az **Intrastat jelentés** lehetőséget.
     3. Az **Árucikk-kódok hierarchiája** gyorslapon a **Kategóriahierarchia** mezőben válassza az **Intrastat** lehetőséget.
     4. Az **Általános** gyorslap **Tranzakciókód** mezőjében válassza ki az áruk átvitelére használt kódot.
     5. A **Jóváírás** mezőben válassza ki az áruk visszaküldésére használt kódot.
-    6. Az **Exportálási kötelezettség szintje** mezőbe írja be az exportjelentés részletességi szintjét. A kiválasztott szint hatással van a jelentésben megjelenő sorokra. További információt a témakör elején található táblázatokban találhat.
+    6. Az **Exportálási kötelezettség szintje** mezőbe írja be az exportjelentés részletességi szintjét. A kiválasztott szint hatással van a jelentésben megjelenő sorokra. A további tudnivalókat lásd a cikk elején található táblákban.
 
 3. Menjen a **Szervezetfelügyelet** > **Szervezetek** > **Jogi személyek** részbe, válassza ki a vállalatot, majd hajtsa végre a következő lépéseket:
 

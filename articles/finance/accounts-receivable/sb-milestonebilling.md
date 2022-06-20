@@ -1,6 +1,6 @@
 ---
 title: Mérföldkősablonok
-description: Ez a témakör bemutatja, hogy hogyan lehet beállítani a mérföldkőhöz kapcsolódó számlázási funcationalitást az előfizetéses számlázásban.
+description: Ez a cikk bemutatja, hogyan lehet beállítani a mérföldkőhöz tartozó számlázási funcationalitást az előfizetéses számlázásban.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ecc4ddbb4d22eefac36f8cf8205d3b6084bd7d9d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d3c2cf751e4998c73bc3816e5b81e8d5963c8e53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856770"
 ---
 # <a name="milestone-billing"></a>Mérföldkőszámlázás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja az előfizetéses számlázás mérföldkőszámlázás funkció sablonjainak a beállítását. A mérföldkősablon minden sorában megadhatja a felosztási százalékot vagy összeget. Ezt követően hozzárendelheti a mérföldkősablont olyan számlázási ütemezési elemekhez, amelyek a mérföldkőhöz tartozó számlázási funkciókat használják.
+Ez a cikk bemutatja az előfizetéses számlázás mérföldkőszámlázás funkció sablonjainak a beállítását. A mérföldkősablon minden sorában megadhatja a felosztási százalékot vagy összeget. Ezt követően hozzárendelheti a mérföldkősablont olyan számlázási ütemezési elemekhez, amelyek a mérföldkőhöz tartozó számlázási funkciókat használják.
 
 ## <a name="add-a-template"></a>Sablon hozzáadása
 

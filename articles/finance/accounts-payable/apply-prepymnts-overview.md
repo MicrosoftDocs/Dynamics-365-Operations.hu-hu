@@ -1,6 +1,6 @@
 ---
 title: Előlegek automatikus alkalmazása a szállítói számlákra
-description: Ez a témakör azt írja le, hogyne lehetséges automatikusan előlegeket alkalmazni a szállítói számlákra.
+description: Ez a témakör azt írja le, hogy képes-e automatikusan előlegeket alkalmazni a szállítói számlákra.
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 547573d187460a900df7f4927ac062bd9d456729
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900071"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Automatikus alkalmazás a szállítói számlákra
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt írja le, hogyne lehetséges automatikusan előlegeket alkalmazni a szállítói számlákra. A beszerzési rendelésekhez előleget lehet létrehozni a beszerzési szerződés részeként. A szállítói számla beérkezése után az előleg felhasználható a szállítói számlából származó kötelezettségek kiegyenlítésre. Az új funkció lehetővé teszi, hogy a rendszer automatikusan használja a szállítói számlán szereplő beszerzési rendelési számokat a megfelelő előlegek kikereséséhez a szállítói számla importálása esetén.
+Ez a témakör azt írja le, hogy képes-e automatikusan előlegeket alkalmazni a szállítói számlákra. A beszerzési rendelésekhez előleget lehet létrehozni a beszerzési szerződés részeként. A szállítói számla beérkezése után az előleg felhasználható a szállítói számlából származó kötelezettségek kiegyenlítésre. Az új funkció lehetővé teszi, hogy a rendszer automatikusan használja a szállítói számlán szereplő beszerzési rendelési számokat a megfelelő előlegek kikereséséhez a szállítói számla importálása esetén.
 
 Ha találhatók előlegek, és alkalmazhatók, az előlegek alkalmazáshoz sorokat ad a meglévő számlasorokhoz. A számlaegyeztetési folyamat során soha nem számítanak az előlegsorok.
 

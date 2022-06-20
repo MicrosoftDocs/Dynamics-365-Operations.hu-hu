@@ -1,6 +1,6 @@
 ---
 title: Adatvédelmi irányelv oldalának hozzáadása
-description: Ez a témakör azt mutatja be, hogyan lehet egy adatvédelmi irányelv oldalt hozzáadni a webhelyéhez a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör azt ismerteti, hogyan lehet adatvédelmi irányelveket felvenni a webhelyre Microsoft Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 08/31/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: faf2072a5c53aa84f0de2e6d2478557bf96b7832e3433ad4cba971bc3f6e5880
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f220ee5502f269299d2af253d7790e503668c0ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729171"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871702"
 ---
 # <a name="add-a-privacy-policy-page"></a>Adatvédelmi irányelv oldalának hozzáadása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet egy adatvédelmi irányelv oldalt hozzáadni a webhelyéhez a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt ismerteti, hogyan lehet adatvédelmi irányelveket felvenni a webhelyre Microsoft Dynamics 365 Commerce.
 
 Az adatvédelmi előírásoknak való megfelelés olyan szervezeti intézkedéseket is tartalmaz, amelyek tájékoztatják a webhely felhasználóit az adatok gyűjtésének és kezelésének módjáról. A felhasználók ezután eldönthetik, hogyan kívánják személyes adataikat kezelni, és megfelelő lépéseket tehetnek.
 

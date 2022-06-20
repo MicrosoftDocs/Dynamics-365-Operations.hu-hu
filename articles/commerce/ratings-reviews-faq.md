@@ -1,6 +1,6 @@
 ---
 title: Értékelések és vélemények GYIK
-description: Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce minősítések és értékelések megoldással kapcsolatos gyakori kérdésekre.
+description: Ez a cikk a minősítésekkel Microsoft Dynamics 365 Commerce és az ellenőrzésekkel kapcsolatos gyakori kérdésekre ad választ.
 author: gvrmohanreddy
 ms.date: 09/02/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f8d79697aaf17e2860d2c47e7d1bf6b4352f0089
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3aef1135aa03d221e403fe1b5f7dce08bc9885d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909528"
 ---
 # <a name="ratings-and-reviews-faq"></a>Értékelések és vélemények GYIK
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce minősítések és értékelések megoldással kapcsolatos gyakori kérdésekre.
+Ez a cikk a minősítésekkel Microsoft Dynamics 365 Commerce és az ellenőrzésekkel kapcsolatos gyakori kérdésekre ad választ.
 
 ### <a name="how-do-i-hide-the-ratings-refiner-that-appears-on-search-results-and-category-pages-if-my-e-commerce-site-doesnt-use-the-ratings-and-reviews-solution"></a>Hogyan lehet elrejteni a minősítések finomítóját, amely megjelenik a keresési eredményekben és a kategóriaoldalakon, ha az e-kereskedelmi webhely nem használja a minősítések és értékelések megoldást?
 

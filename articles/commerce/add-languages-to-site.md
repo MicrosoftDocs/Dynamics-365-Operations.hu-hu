@@ -1,6 +1,6 @@
 ---
 title: Nyelvek hozzáadása a webhelyhez
-description: Ez a témakör azt mutatja be, hogyan lehet további nyelvi támogatást adni a Microsoft Dynamics 365 Commerce webhelyhez.
+description: Ez a cikk bemutatja, hogy hogyan lehet további nyelveket támogatni a webhelyen Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 12/12/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d118c90dc16be964bb22aa6f170fe2d2f009b3e9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 69ee1d744ce26d5040d80e470b18d87bbddbda26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964554"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871806"
 ---
 # <a name="add-languages-to-your-site"></a>Nyelvek hozzáadása a webhelyhez
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet további nyelvi támogatást adni a Microsoft Dynamics 365 Commerce webhelyhez.
+Ez a cikk bemutatja, hogy hogyan lehet további nyelveket támogatni a webhelyen Microsoft Dynamics 365 Commerce.
 
-A webhely lokalizálható bármilyen, a Commerce által támogatott nyelvre. (A támogatott nyelvek listája a témakörben később jelenik meg.) Ha nyelvet szeretne hozzáadni a webhelyhez, először hozzá kell adnia a webhelyhez kötött online áruházhoz.
+A webhely lokalizálható bármilyen, a Commerce által támogatott nyelvre. (A támogatott nyelvek listája a cikk későbbi részen jelenik meg.) Ha nyelvet szeretne hozzáadni a webhelyhez, először hozzá kell adnia egy, a webhelyhez kötött online áruházhoz.
 
 ## <a name="add-a-language-to-an-online-store"></a>Nyelv hozzáadása az online áruházhoz
 

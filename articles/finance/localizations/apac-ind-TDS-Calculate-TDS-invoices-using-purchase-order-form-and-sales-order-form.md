@@ -1,6 +1,6 @@
 ---
 title: TDS-számlák kiszámítása a beszerzési rendelési űrlap és az értékesítési rendelési űrlap segítségével
-description: Ez a témakör felsorolja a forrásnál levont adó (TDS) kiszámításának lépéseit a különböző típusú számlákon.
+description: Ez a cikk felsorolja a különböző típusú számlák levont adója (TDS) kiszámításának lépéseit.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6a7e670c38a1bce6b8f6771b4be49e56e3aa785a
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 72883741ee7eed6b0296736c80dd648c882ae53e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853285"
 ---
 # <a name="calculate-tds-invoices-using-purchase-order-form-and-sales-order-form"></a>TDS-számlák kiszámítása a beszerzési rendelési űrlap és az értékesítési rendelési űrlap segítségével
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör felsorolja a Forrásnál levont adó (TDS) kiszámításának lépéseit a különböző típusú számlákon a **Beszerzési rendelés**, a **Beszerzési napló**, a **Keretrendelés** és az **Értékesítési rendelés** oldalak használatával.
+Ez a cikk a **Beszerzési rendelés,** **·** **·** **a Beszerzési napló, a Keretrendelés és az Értékesítési rendelés lap használatával sorolja fel a különböző típusú számlák levont adója kiszámításának lépéseit.**
 
 1. Hozzon létre egy beszerzési rendelést, beszerzési naplót, beszerzési keretrendelést vagy értékesítési rendelést a felsorolt oldalon. Adja meg a szükséges adatokat.
 

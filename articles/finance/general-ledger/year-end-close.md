@@ -1,6 +1,6 @@
 ---
 title: Év végi zárás
-description: Ez a témakör Főkönyv év végi zárási eljárására vonatkozó folyamat beállítását és futtatását mutatja be.
+description: Ez a témakör ismerteti a főkönyv év végi zárási folyamatának futtatásához szükséges beállításokat és lépéseket.
 author: kweekley
 ms.date: 12/06/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 247c3286124da946937c8afd248a275e5a745044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725233"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883213"
 ---
 # <a name="year-end-close"></a>Év végi zárás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör Főkönyv év végi zárási eljárására vonatkozó folyamat beállítását és futtatását mutatja be.
+Ez a témakör ismerteti a főkönyv év végi zárási folyamatának futtatásához szükséges beállításokat és lépéseket.
 
 A pénzügyi év végén le kell futtatni az év végi zárási folyamatot, a nyitóegyenlegek átviteléhez az új évbe. A legtöbb szervezet több alkalommal is lefuttatja az év végi zárás folyamatát. Az első futtatás az új pénzügyi évre mozgatja át az egyenlegeket. A folyamat ezt követően tetszőleges alkalommal újra lefuttatható annak érdekében, hogy a korrekciós bejegyzések egyenlegeit átvihesse az új pénzügyi évbe.
 

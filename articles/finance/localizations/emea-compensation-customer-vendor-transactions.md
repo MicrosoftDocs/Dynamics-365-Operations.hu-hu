@@ -1,6 +1,6 @@
 ---
 title: Vevői és szállítói kompenzáció beállítása
-description: Ez a témakör arról nyújt információkat, hogy miként futtathat kompenzációs folyamatot az olyan szállítói és vevőszámlák esetében, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
+description: Ez a cikk arról tartalmaz tájékoztatást, hogyan lehet futtatni a szállítói és vevői számlák kompenzációs folyamatát az olyan jogi személyek esetében, akik elsődleges címükKént Magyarországon vagy Lengyelországban vannak.
 author: mrolecki
 ms.date: 05/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0797ab7decbd559fb4356b3cf2b0acaab2019e672effdd82eca5f76ba6032d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8047ead7d1f67b06a646fc2349b9c55068c10e3b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712151"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886282"
 ---
 # <a name="set-up-customer-and-vendor-compensation"></a>Vevői és szállítói kompenzáció beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan információkat nyújt, amelyek segítségével lefuttathatja a kompenzációs folyamatot az olyan szállítói és vevőszámlák esetében, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
+Ez a cikk segítséget nyújt a szállítói és vevői számlák kompenzációs folyamatának futtatásához olyan jogi személyek esetén, akik elsődleges címükKént Magyarországon vagy Lengyelországban vannak.
 
 A kelet-európai felhasználóknak gyakran követeléseket és kinnlevőségeket kell kezelniük egy olyan vállalatnál, amely vevőként és szállítóként egyaránt regisztrálva van a rendszerben. Ez az elszámolási eljárás egy olyan jogi eljárást alkalmaz, amelynek elnevezése *kompenzáció* vagy *nettóérték-számítás*. 
 

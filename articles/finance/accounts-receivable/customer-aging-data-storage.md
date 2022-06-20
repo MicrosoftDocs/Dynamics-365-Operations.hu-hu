@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d7a66485cc9a538f5c3999009b6dbe295d7a5b9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894142"
 ---
 # <a name="customer-aging-data-storage"></a>Vevőkorosítási adattároló
 
@@ -56,8 +56,8 @@ A vevő **korosítási adatainak tárolási** lapja nem tartalmazza az eredmény
 > [!NOTE]
 > Exportálás előtt adjon hozzá egy szűrőt, hogy az exportált eredmények a legutóbbi korosításra korlátozzák az exportált eredményeket. Adja meg például a következő feltételeket a legutóbbi kötegelt futtatás visszaküldésére:
 >
-> (CustAgingDataStorageSysQueryRangeUtilgetLatestBatchName::())
+> (CustAgingDataStorageSysQueryRangeUtil:: getLatestBatchName())
 >
 > Másik lehetőségként adja hozzá a következő feltételeket az aktuális felhasználó legutóbbi futtatásának visszaküldésére:
 >
-> (CustAgingDataStorageSysQueryRangeUtilgetLatestBatchNameForCurrentUser::())
+> (CustAgingDataStorageSysQueryRangeUtil:: getLatestBatchNameForCurrentUser())

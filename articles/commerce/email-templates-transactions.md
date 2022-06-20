@@ -1,6 +1,6 @@
 ---
-title: E-mail-sablonok létrehozása a tranzakciók eseményeihez
-description: Ez a témakör azt mutatja be, hogyan lehet létrehozni, feltölteni és konfigurálni a Microsoft Dynamics 365 Commerce tranzakciós eseményeihez tartozó e-mail-sablonokat.
+title: E-mail-sablonok létrehozása tranzakciós eseményekhez
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni, feltölteni és beállítani e-mail sablonokat a tranzakciós eseményekhez a következőben:Microsoft Dynamics 365 Commerce
 author: bicyclingfool
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722519"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910550"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása tranzakciós eseményekhez
 
 [!include [banner](includes/banner.md)]
 
 
-Ez a témakör azt mutatja be, hogyan lehet létrehozni, feltölteni és konfigurálni a Microsoft Dynamics 365 Commerce tranzakciós eseményeihez tartozó e-mail-sablonokat.
+Ez a témakör azt ismerteti, hogyan lehet létrehozni, feltölteni és beállítani e-mail sablonokat a tranzakciós eseményekhez a következőben:Microsoft Dynamics 365 Commerce
 
-A Dynamics 365 Commerce gyári megoldást kínál olyan e-mailek küldésére, amelyek figyelmeztetik az ügyfeleket a tranzakciós eseményekre. E-maileket lehet például küldeni a rendelés leadásakor, ha a rendelés készen áll a felvételre, vagy már leszállították. Ez a témakör a tranzakciós e-mailek küldésére használt e-mail-sablonok létrehozásához, feltöltéséhez és beállításához szükséges lépéseket mutatja be.
+A Dynamics 365 Commerce gyári megoldást kínál olyan e-mailek küldésére, amelyek figyelmeztetik az ügyfeleket a tranzakciós eseményekre. E-maileket lehet például küldeni a rendelés leadásakor, ha a rendelés készen áll a felvételre, vagy már leszállították. Ez a témakör a tranzakciós e-mailek küldésére használt e-mail sablonok létrehozásához, feltöltéséhez és konfigurálásához szükséges lépéseket ismerteti.
 
 ## <a name="notification-types"></a>Értesítési típusok
 

@@ -1,6 +1,6 @@
 ---
 title: Lízingek társítása tárgyi eszközhöz
-description: A témakör bemutatja, hogyan társítható egy meglévő tárgyi eszköz egy új lízinghez.
+description: A cikk bemutatja, hogyan lehet egy meglévő tárgyi eszközt új bérlethez társítani.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0ae7a850ceb13cb41ee5adc406e71105cdad4fe
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 5cc341008d25da544ec35d5660b5ff0b38f2287b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895109"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Lízingek társítása tárgyi eszközhöz
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-A témakör bemutatja, hogyan társítható egy meglévő tárgyi eszköz egy új lízinghez. Amikor egy tárgyi eszközt egy lízinghez társít, a használatijog-eszköz (ROU) értéke a kezdeti megjelenítéskor a tárgyi eszköz beszerzési költsége lesz.
+A cikk bemutatja, hogyan lehet egy meglévő tárgyi eszközt új bérlethez társítani. Amikor egy tárgyi eszközt egy lízinghez társít, a használatijog-eszköz (ROU) értéke a kezdeti megjelenítéskor a tárgyi eszköz beszerzési költsége lesz.
 
 Mielőtt egy befektetett eszközt egy lízinghez társítana, létre kell hoznia egy rekordot a tárgyi eszközhöz a Tárgyi eszközökben. Ezután a **Lízing összegzése** lapon létre kell hoznia egy lízinget, és csatolnia kell az eszközt az adott lízinghez.
 

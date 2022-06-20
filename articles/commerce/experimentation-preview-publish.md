@@ -1,30 +1,24 @@
 ---
 title: Kísérlet előnézetének megtekintése és közzététele
-description: Ez a témakör azt mutatja be, hogyan tekinthető meg és tehető közzé egy kísérlet a Dynamics 365 Commerce rendszerből.
+description: Ez a témakör azt ismerteti, hogyan lehet előnézetet látni és közzétenni egy kísérletből Dynamics 365 Commerce.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/08/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5da7a4e3c17057278d02ebd45702d1de404f0dc6
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740383"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946133"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Kísérlet előnézetének megtekintése és közzététele
 
-Ez a témakör azt mutatja be, hogyan tekinthető meg és tehető közzé egy kísérlet a Dynamics 365 Commerce rendszerből, miután [csatlakoztatta a kísérletet és szerkesztette a változatokat](experimentation-connect-edit.md). A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
+Ez a témakör azt írja le, hogyan Dynamics 365 Commerce [lehet előnézetet látni és közzétenni a kísérlet közben, miután összekapcsolta a kísérlettel, és szerkesztette a variációkat](experimentation-connect-edit.md). A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön cikkekbe tartoznak.
 
 [ ![Kísérletezés felhasználói interakciósorozata – előnézet és közzététel.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
@@ -51,6 +45,10 @@ Ha a kísérletekhez közzétételi csoportokat használ, akkor figyelembe kell 
 - Az élő webhely oldalaihoz kapcsolódó kísérletek nem érhetők el a közzétételi csoportokon belüli oldalakhoz, és fordítva. Hasonlóképpen az élő webhelyen futó kísérleteket tartalmazó oldalak nem érhetők el a közzétételi csoportok egyéb kísérleteihez, és fordítva.
 - Közzétételi csoport közzététele vagy ütemezése során a közzétételi csoport minden tartalmát közzéteszi a program, függetlenül attól, hogy van-e a közzétételi csoporthoz kapcsolt kísérlet.
 - Mivel a közzétételi csoport azt követően is létezik, hogy élő webhelyen közzétették, a közzétételi csoport kísérletei is megmaradnak. Emiatt más kísérleteket nem lehet ugyanazzal az oldalhoz vagy töredékhez társítani. E korlátozás elkerülése érdekében törölje a megmaradó kísérletekkel rendelkező közzétételi csoportokat. Hasonlóképpen, ha törölni szeretne egy olyan kísérletet egy élő webhelyről, amely a közzétételi csoportban is szerepel, akkor először törölje azt a közzétételi csoportból.
+
+### <a name="force-variations-for-testing"></a>Változatok kényszerítve a teszteléshez
+
+Ha a kísérlet élő, akkor hozzáfűzheti a kísérlet azonosítóját és a változatazonosítót az alapértelmezett lap URL-címéhez, hogy egy variációt kényszerítsen tesztelési vagy automatizálási célokra. Ha például az alapértelmezett oldal URL-címe `https://fabrikam.com/modern/homepage`, akkor kényszerítheti egy ilyen URL-cím variációját `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464`. Az előnézeti URL-címből a fentiekben leírt előnézeti URL-címből **megtekintheti** a kísérletazonosítót és a csoportazonosítót a kísérlethez.
 
 ## <a name="previous-step"></a>Előző lépés
 [Kísérlet csatlakoztatása és szerkesztése](experimentation-connect-edit.md)

@@ -1,6 +1,6 @@
 ---
 title: Vevői átvételi időközök létrehozása és frissítése
-description: Ez a témakör azt mutatja be, hogyan lehet a Commerce központban létrehozni, konfigurálni és frissíteni a vevői átvételi időközöket.
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni, konfigurálni és frissíteni a vevők felvételi időkorrekját a Commerce Headquarters szolgáltatásban.
 author: anupamar-ms
 ms.date: 01/05/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a135f592225e4b388b5c9fdaa5fe23e60baf0185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713421"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882233"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Vevői átvételi időközök létrehozása és frissítése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet a Commerce központban létrehozni, konfigurálni és frissíteni a vevői átvételi időközöket.
+Ez a témakör azt ismerteti, hogyan lehet létrehozni, konfigurálni és frissíteni a vevők felvételi időkorrekját a Commerce Headquarters szolgáltatásban.
 
 Az időköz funkció lehetővé teszi a kiskereskedők számára, hogy meghatározzák az időközt azon cikkek számára, amelyeknél be van kapcsolva a vevői átvétel kézbesítési mód. Az időközök segítségével a kiskereskedők határozzák meg azokat a napokat és időpontokat, amikor a megrendeléseket át lehet venni egy üzletből. A kiskereskedők azt is meghatározhatják, hogy hány rendelést lehet felvenni egy adott időszakban. Ily módon a kiskereskedők korlátozhatják az adott napon és egy adott időpontban átvehető megrendelések számát. Az eredmény egy jobb minőségű élményt az ügyfelek számára.
 

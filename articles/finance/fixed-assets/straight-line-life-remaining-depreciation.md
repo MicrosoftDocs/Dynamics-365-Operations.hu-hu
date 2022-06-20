@@ -1,6 +1,6 @@
 ---
-title: Hátralévő élettartamon alapuló lineáris értékcsökkenés
-description: Ez a témakör a Lineáris-hátralevő élettartam értékcsökkenés módszeréről nyújt tájékoztatást.
+title: Lineáris - hátralevő élettartam értékcsökkenés
+description: Ez a cikk a Lineáris-hátralevő élettartam értékcsökkenés módszeréről nyújt tájékoztatást.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92941bc679835d38ba47464452315498a70ce2ee
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 185e1c101ffb6dfbd47348952d6dfc47ab137ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726697"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853438"
 ---
-# <a name="straight-line-life-remaining-depreciation"></a>Hátralévő élettartamon alapuló lineáris értékcsökkenés
+# <a name="straight-line-life-remaining-depreciation"></a>Lineáris - hátralevő élettartam értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Lineáris-hátralevő élettartam értékcsökkenés módszeréről nyújt tájékoztatást.
+Ez a cikk a Lineáris-hátralevő élettartam értékcsökkenés módszeréről nyújt tájékoztatást.
 
 Ha lineáris vagy degresszív tárgyieszköz-értékcsökkenési profilt állít be, akkor a **Lineáris - hátralevő élettartam** érték is választható az **Értékcsökkenési profilok** képernyő **Módszer** mezőjében, és az értékcsökkenési profilhoz társított tárgyi eszközök értékcsökkenésének az eszköz fennmaradó élettartama lesz az alapja. Ez általában időszakonként azonos értékcsökkenési összeget eredményez. A lineáris hátralévő élettartam típusú értékcsökkenés beállítása esetén be kell még jelölnie a beállításokat az **Értékcsökkenési év** mezőben és az **Időszak-gyakoriság** mezőben az **Értékcsökkenési profilok** lapon. Az **Időszak-gyakoriság** mezőben rendelkezésre álló beállítások eltérőek lehetnek, az **Értékcsökkenési év** mezőben kijelölt értéktől függően.
 
@@ -35,7 +35,7 @@ Kiválaszthatja a **Naptár** vagy **Pénzügyi** elemeket az **Értékcsökken�
 
 ### <a name="calendar"></a>Naptár
 
-Ha a **Naptár** lehetőséget választja az **_Értékcsökkenés éve_*_ mezőben, a program a január 1-től december 31-ig tart, még akkor is, ha a pénzügyi naptárat másképpen definiálta. A_* Naptár** beállítással minden év január 1-jén frissül az értékcsökkenés alapja. Jellemzően az értékcsökkenés alapja a nettó könyv szerinti érték mínusz a maradványérték. Az ebben a témában szereplő későbbi példákban az értékcsökkenés alapja a számítások oszlop első kifejezésében szereplő számláló. Ha bejelöli **Naptár** értéket az értékcsökkenés éveként a következő lehetőségek érhetők el az **Időszak-gyakoriság** mezőben:
+Ha a **Naptár** lehetőséget választja az **_Értékcsökkenés éve_*_ mezőben, a program a január 1-től december 31-ig tart, még akkor is, ha a pénzügyi naptárat másképpen definiálta. A_* Naptár** beállítással minden év január 1-jén frissül az értékcsökkenés alapja. Jellemzően az értékcsökkenés alapja a nettó könyv szerinti érték mínusz a maradványérték. A példában a későbbiekben ebben a példában az értékcsökkenés alapja a számítás oszlopának első kifejezésében lévő szám. Ha bejelöli **Naptár** értéket az értékcsökkenés éveként a következő lehetőségek érhetők el az **Időszak-gyakoriság** mezőben:
 
 - **Éves** felad egy összeget december 31-én.
 - **Havi**: felad egy havi összeget minden naptári hó végén.

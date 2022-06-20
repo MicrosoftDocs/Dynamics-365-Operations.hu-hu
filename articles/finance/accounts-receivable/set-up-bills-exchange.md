@@ -1,6 +1,6 @@
 ---
 title: Váltók beállítása
-description: Ez a témakör azt ismerteti, hogy miként lehet beállítani a váltókat.
+description: Ez a témakör a váltók beállításának lépéseit ismerteti.
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6a9d04500ffe5b93c7a95c5cac9b4270e208dde9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 91821b10afe7cdbabd0a58b61219ce29d686c5c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726809"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874725"
 ---
 # <a name="set-up-bills-of-exchange"></a>Váltók beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogy miként lehet beállítani a váltókat.
+Ez a témakör a váltók beállításának lépéseit ismerteti.
 
 A váltó olyan írott vagy elektronikus dokumentum, melyet a vevő állít ki arról, hogy egy másik fél – általában egy bank – meghatározott összeget ki fog fizetni a vállalatnak. Ha a szabad szöveges számla vagy értékesítési rendelési számla kiegyenlítésére váltót használnak, akkor a vevő számláján egy követel tétel jelenik meg. A váltó mindaddig biztosítja ezt a követel tételt, amíg a vevő ki nem fizeti a váltót a banknak. A felhasználó (a vállalat) általában a határidő napján egyenlíti ki a számlát a váltóval. Amint a vállalat megkapja a banktól az értesítés, hogy a váltón megadott összeget kifizették, le lehet zárni a váltót. A váltókat a következő időpontokban hívhatja le a bankon keresztül:
 

@@ -1,6 +1,6 @@
 ---
 title: Fix kompenzációs konstrukció bérlistája
-description: Ez a témakör részleteket nyújt, és példalekérdezést tartalmaz a Bérlista fix kompenzációs konstrukció entitásra vonatkozóan a Dynamics 365 Human Resources rendszerben.
+description: Ez a cikk a bérlista fix kompenzációs konstrukció entitásának részletes adatait és példa-lekérdezését tartalmazza a következőben:Dynamics 365 Human Resources
 author: jcart
 ms.date: 08/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 14829f18fb5e3adde83e265cd6e70b60e1ff03ac
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 83fa8aeb38cc44191242cf029022939cefb22cb8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069096"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909846"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Fix kompenzációs konstrukció bérlistája
 
@@ -27,7 +27,7 @@ ms.locfileid: "8069096"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources bérszámfejtési fix kompenzációs konstrukció entitását ismerteti.
+Ez a témakör a bérlista fix kompenzációs konstrukciója entitását ismerteti Dynamics 365 Human Resources.
 
 ### <a name="description"></a>Leírás
 

@@ -1,6 +1,6 @@
 ---
 title: Online pénzügyi konszolidációk
-description: Ez a témakör leírja az online pénzügyi konszolidációkat a főkönyvben.
+description: Ez a témakör a főkönyv online pénzügyi konszolidációit írja le.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: d5848960ec5e30c1356a93ca4cb6545cec9e39de
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848549"
 ---
 # <a name="online-financial-consolidations"></a>Online pénzügyi konszolidációk
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírja az online pénzügyi konszolidációkat a főkönyvben. A témakör elolvasása előtt tekintse át a [Pénzügyi konszolidáció és pénznemátváltás áttekintése](financial-consolidations-currency-translation.md) cikket.
+Ez a témakör a főkönyv online pénzügyi konszolidációit írja le. Mielőtt elolvasja ezt a cikket, mindenképpen olvassa el [a Pénzügyi konszolidációk és devizaátváltások áttekintő cikket](financial-consolidations-currency-translation.md).
 
 A beállítás befejezése után adja meg a konszolidáció részleteit a **Konszolidálás [Online]** oldalon. Amikor végzett, kattintson az **OK** VAGY a **Köteg** lehetőségre a konszolidáció feldolgozásához.
 
@@ -90,7 +90,7 @@ A **Devizaátváltás** lapon megadhatja a jogi személyt, a számlát és az á
 
 ## <a name="additional-resources"></a>További erőforrások
 
-További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás áttekintése](./financial-consolidations-currency-translation.md).
+A konszolidációval és a pénznemátváltásokkal kapcsolatos további tudnivalókat lásd a cikk szülőcikkében, [a pénzügyi konszolidációk és a pénznemátváltások áttekintésében](./financial-consolidations-currency-translation.md).
 
 További információért azzal kapcsolatosan, hogy hol generálhat konszolidált pénzügyi kimutatásokat, lásd: [Konszolidált pénzügyi kimutatások létrehozását](./generating-consolidated-financial-statements.md).
 

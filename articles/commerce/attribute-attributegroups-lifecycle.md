@@ -1,6 +1,6 @@
 ---
 title: Attribútumok és attribútumcsoportok kezelése
-description: Ez a témakör azt írja le, hogyan lehet attribútumok segítségével egy terméket és a jellemzőit leírni a felhasználó által definiált mezőkben.
+description: Ez a témakör azt ismerteti, hogyan lehet attribútumokkal leírni egy terméket és annak jellemzőit a felhasználó által definiált mezőkben.
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727654"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876664"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Attribútumok és attribútumcsoportok kezelése
 
@@ -85,7 +85,7 @@ Az attribútumok az *attribútumtípusokon* alapulnak. Az attribútumtípus az a
 
 Az *Attribútum-metaadatok* beállítások megadását teszi lehetővé annak a megadásához, hogy az attribútumok termékenként hogyan működjenek. Megadhatja például, hogy szükség van-e attribútumokra, hogy használhatóak-e keresésekhez, illetve szűrőként.
 
-Termékek esetén az attribútummetaadat-beállítások a csatorna szintjén felülbírálhatók. Ezt a lehetőséget a témakör későbbi tárgyalja.
+Termékek esetén az attribútummetaadat-beállítások a csatorna szintjén felülbírálhatók. Ezt a lehetőséget a cikk későbbi időpontban tárgyalja.
 
 Megfigyelheti, hogy az **Attribútumok** lap tartalmazza a beállításokat, amelyek kapcsolódnak az attribútum-metaadatokhoz. Az **attribútum-metaadatok a POS számára** alatt egy **Szűkíthető** nevű lehetőség befolyásolja az attribútumértékek viselkedését a pénztárban, vagy azt, hogy a rendszer hogyan kezeli ezeket az attribútumértékeket. Csak azok az attribútumok, amelyekre beállíthatja a **Szűkíthető** lehetőség **Igen** beállítását, jelennek meg a pénztárban termékek finomítására vagy szűrésére.
 

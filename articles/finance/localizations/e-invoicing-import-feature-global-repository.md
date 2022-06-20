@@ -1,6 +1,6 @@
 ---
 title: Funkciók importálása a globális tárházból
-description: Ez a témakör bemutatja, hogy hogyan importálhat globalizációs funkciókat a globális tárházból.
+description: Ez a cikk bemutatja, hogy hogyan importálhat globalizációs funkciókat a globális tárházból.
 author: dkalyuzh
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ff3019986d089a286f7aef94346398b3d328ad54
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: bc8f346cdef4aa0b909d75b016b37cbbe3248ebf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865555"
 ---
 # <a name="import-features-from-the-global-repository"></a>Funkciók importálása a globális tárházból
 
@@ -30,7 +30,7 @@ A globális tárház a konfigurációs szolgáltatóval megosztott elektronikus 
 
 Ha elindítani a konfigurációs szolgáltatóval megosztott elektronikus számlázási funkciókat, importálja azokat a globális tárházból az RcS (Regulatory Configuration Service) saját példányába. Ezután tekintse át a funkció részleteit, például az Elektronikus jelentés (ER) konfigurációit és a feldolgozási csővezetékeket.
 
-## <a name="import-a-feature-from-the-global-repository"></a>Szolgáltatás importálása a globális tárházból
+## <a name="import-a-feature-from-the-global-repository"></a>Funkció importálása a globális adattárból
 
 1. Jelentkezzen be a RCS-fiókba.
 2. A **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.

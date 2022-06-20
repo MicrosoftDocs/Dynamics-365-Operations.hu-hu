@@ -1,6 +1,6 @@
 ---
 title: TDS számítás a szabadszöveges számla oldalon található számlákhoz
-description: Ez a témakör ismerteti, hogyan kell kiszámítani a forrásnál levont adót (TDS) a számlákon a Szabadszöveges számla oldalon.
+description: Ez a cikk bemutatja, hogyan lehet kiszámítani a Szabadszöveges számla lapon a számlákról levont adót a forrásnál (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5a1960974dff90ef5f0cc8eab018351a9e412858
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: b1cf0f5366315884e75a6fee25b88a3aac7d62de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725177"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856611"
 ---
 # <a name="tds-calculation-on-invoices-from-the-free-text-invoice-page"></a>TDS számítás a szabadszöveges számla oldalon található számlákhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti, hogyan kell kiszámítani a forrásnál levont adót (TDS) a számlákon a **Szabadszöveges számla** oldalon.
+Ez a cikk bemutatja, hogyan lehet kiszámítani a Szabadszöveges számla lapon a számlákról levont adót a forrásnál **(TDS**).
 
 1. Ugorjon a következőre: **Kinnlévőségek \> Számlák \> Kizárólag szabadszöveges számlák**.
 

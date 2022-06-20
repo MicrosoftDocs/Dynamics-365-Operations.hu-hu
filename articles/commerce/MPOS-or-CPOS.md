@@ -1,6 +1,6 @@
 ---
-title: Választás a Store Commerce és a Felhő POS rendszer között
-description: Ez a témakör bemutatja a Store Commerce és a Cloud POS rendszer közötti alapvető különbségeket, és leírja azokat a tényezőket, Dynamics 365 Commerce amelyek közül a kiskereskedőknek érdemes megfontolni, hogy a lehető legjobb választást tárolják követelményeket.
+title: A Store Commerce és a Cloud POS közötti választás
+description: Ez a cikk bemutatja a Store Commerce és a Cloud POS rendszer közötti alapvető különbségeket, és leírja azokat a tényezőket, Dynamics 365 Commerce amelyek közül a kiskereskedőknek érdemes megfontolni, hogy a lehető legjobb választást tárolják követelményeket.
 author: jblucher
 ms.date: 04/21/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 26f6e94b13b3058ac42c4c7b83dcf7179bae18e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629290"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854006"
 ---
-# <a name="choose-between-store-commerce-and-cloud-pos"></a>Választás a Store Commerce és a Felhő POS rendszer között
+# <a name="choose-between-store-commerce-and-cloud-pos"></a>A Store Commerce és a Cloud POS közötti választás
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja a Store Commerce és a Cloud POS rendszer közötti alapvető különbségeket, és leírja azokat a tényezőket, Dynamics 365 Commerce amelyek közül a kiskereskedőknek érdemes megfontolni, hogy a lehető legjobb választást tárolják követelményeket. Ezenkívül további háttér-, tippeket és útmutatást ad a megvalósító eszközöknek, és útmutatást ad az olyan tényezőkkel kapcsolatban, amelyek a telepítéskor figyelembe kell venni őket Dynamics 365 Commerce. Az útmutató áttekintésével és követésével a telepítés részeként a bevezetők elkerülhetik azokat a problémákat, amelyek hatással lehetnek a felhasználói élményre vagy a teljesítményre.
+Ez a cikk bemutatja a Store Commerce és a Cloud POS rendszer közötti alapvető különbségeket, és leírja azokat a tényezőket, Dynamics 365 Commerce amelyek közül a kiskereskedőknek érdemes megfontolni, hogy a lehető legjobb választást tárolják követelményeket. Ezenkívül további háttér-, tippeket és útmutatást ad a megvalósító eszközöknek, és útmutatást ad az olyan tényezőkkel kapcsolatban, amelyek a telepítéskor figyelembe kell venni őket Dynamics 365 Commerce. Az útmutató áttekintésével és követésével a telepítés részeként a bevezetők elkerülhetik azokat a problémákat, amelyek hatással lehetnek a felhasználói élményre vagy a teljesítményre.
 
 ## <a name="insights"></a>Információk
 
@@ -44,7 +44,7 @@ A Commerce a következő pénztárlehetőségeket támogatja:
 A POS (Store Commerce és CPOS) minden esetben ugyanazt az alapvető alkalmazáskódot használja. Ez pont a következő okok miatt fontos:
 
 - A felhasználói felület a platformtól és a helyigénytől függetlenül egységes.
-- A funkciók többsége ugyanaz, függetlenül a platformtól és a helyigénytől. Vannak azonban fontos eltérések. Ezek a különbségek ebben a témakörben találhatók.
+- A funkciók többsége ugyanaz, függetlenül a platformtól és a helyigénytől. Vannak azonban fontos eltérések. Ezeket a különbségeket a cikk jegyezte fel.
 - Az egyes áruházakban a POS-változatok kombinálhatók, és párhuzamosan is futtathatók. Például egy kiskereskedő a fő pénztárgépein a Windows rendszert futtató számítógépeken használhatja a Store Commerce rendszert. A kiskereskedő azonban böngészőalapú terminálokkal vagy mobileszközökkel is kiegészítheti ezeket a pénztárgépeket.
 - A testreszabások és a bővítések könnyen használhatók mindegyik platform és helyigény esetében. Mivel az alapvető alkalmazáskód ugyanaz, a legtöbb testreszabás egy menetben hajtható végre, több szakasz helyett.
 

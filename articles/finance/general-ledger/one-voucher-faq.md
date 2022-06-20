@@ -1,6 +1,6 @@
 ---
 title: Egy bizonylat GYIK
-description: Ez a témakör az Egy bizonylat funkcióval kapcsolatos gyakori kérdéseket tartalmazza. A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kifizetési napló és így tovább) Egy bizonylat funkciójának használatával bevihető több analitikusnapló-tranzakció egyetlen bizonylat keretein belül.
+description: Ez a cikk az Egy bizonylat funkcióval kapcsolatban leggyakrabban feltett kérdésekre ad választ. A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kifizetési napló és így tovább) Egy bizonylat funkciójának használatával bevihető több analitikusnapló-tranzakció egyetlen bizonylat keretein belül.
 author: kweekley
 ms.date: 11/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: beab87ad569a6009fb4a42fd19681b64dcb0bb1e
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: e7eedfd4b2914000e8fd85d977b071f44545a058
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723106"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859795"
 ---
 # <a name="one-voucher-faq"></a>Egy bizonylat GYIK
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az Egy bizonylat funkcióval kapcsolatos gyakori kérdéseket tartalmazza. A pénzügyi naplók Egy bizonylat funkciójának használatával bevihető több analitikusnapló-tranzakció egyetlen bizonylat keretein belül. A bizonylatba foglalható naplók lehetnek többek között főkönyvi naplók, tárgyieszköz-naplók és szállítói kifizetési naplók.
+Ez a cikk az Egy bizonylat funkcióval kapcsolatban leggyakrabban feltett kérdésekre ad választ. A pénzügyi naplók Egy bizonylat funkciójának használatával bevihető több analitikusnapló-tranzakció egyetlen bizonylat keretein belül. A bizonylatba foglalható naplók lehetnek többek között főkönyvi naplók, tárgyieszköz-naplók és szállítói kifizetési naplók.
 
 ## <a name="when-will-the-one-voucher-functionality-be-deprecated"></a>Mikor válik elavulttá az Egy bizonylat funkció?
 

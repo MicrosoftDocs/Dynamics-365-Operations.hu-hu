@@ -1,6 +1,6 @@
 ---
-title: Pénztár felhasználói felület vizuális konfigurációja
-description: Ez a témakör a Dynamics 365 Commerce pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
+title: A pénztár felhasználói felületének vizuális konfigurációja
+description: Ez a cikk a pénztári Dynamics 365 Commerce tapasztalatokkal kapcsolatos képernyőelrendezésekkel kapcsolatban tartalmaz tájékoztatást.
 author: boycezhu
 ms.date: 09/22/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 17379dc97c7a8b22912482a7aeebd0d8ac08dc496fa7b1661952bca10a21c75b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 22a35d69780a48415076dd70c21c33b1024c217d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765880"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871633"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>A pénztár felhasználói felületének vizuális konfigurációja
 
 [!include [banner](includes/banner.md)]
 
 
-A Microsoft Dynamics 365 Commerce pénztár (POS) felhasználói felülete vizuális profilok és képernyő-elrendezések kombinációjával konfigurálhat, amelyek üzletekhez, nyilvántartásokhoz és/vagy felhasználókhoz rendelhetők. Ez a témakör a konfigurációs lehetőségekkel kapcsolatos további információkat tartalmaz.
+A Microsoft Dynamics 365 Commerce pénztár (POS) felhasználói felülete vizuális profilok és képernyő-elrendezések kombinációjával konfigurálhat, amelyek üzletekhez, nyilvántartásokhoz és/vagy felhasználókhoz rendelhetők. Ez a cikk a konfigurációs lehetőségekkel kapcsolatban tartalmaz tájékoztatást.
 
 A következő ábra a POS felhasználói felület konfigurálható részeit leképező különböző entitások közötti összefüggéseket mutatja.
 

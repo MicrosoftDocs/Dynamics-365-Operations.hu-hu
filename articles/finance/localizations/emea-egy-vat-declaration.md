@@ -1,6 +1,6 @@
 ---
 title: Áfabevallás – Egyiptom
-description: Ez a témakör bemutatja, hogyan kell konfigurálni és létrehozni az áfa-visszatérítési űrlapokat Egyiptom számára.
+description: Ez a cikk bemutatja, hogyan kell konfigurálni és generálni az áfa-vissza visszatérítési képernyőt Egyiptomi esetében.
 author: sndray
 ms.date: 06/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1d5788b2328a49f4725a6c689e29a7e784032fae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870035"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Áfabevallás – Egyiptom (EG-00002)
 
@@ -26,11 +26,11 @@ ms.locfileid: "7403948"
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan állíthat be és hozhat létre áfa-visszatérítési űrlapot, valamint bevételi és kiadási számlakönyeveket egyiptomi jogi személyek esetében.
+Ez a cikk bemutatja, hogy hogyan lehet beállítani és létrehozni az egyiptomi jogi személyek áfa-visszaadási űrlapját és bevételi és bevételi számlakönyveit.
 
 Az egyiptomi áfa-visszafizetési űrlap egy hivatalos dokumentum, amely összegzi a teljes esedékes kimeneti áfaösszeget, a visszatéríthetú teljes bemeneti áfaösszeget és a kapcsolódó áfa-kötelezettség összegét. Az űrlap az összes adófizetőtípushoz használható, és manuálisan kell kitölteni az adóhatósági portálon keresztül. Az áfa-visszatérítési űrlapot általános nevén áfa-áfa-visszatérítési dokumentumnak is nevezik.
 
-Az áfa-visszatérítési űrlap a Dynamics 365 Finance rendszerben a következő jelentéseket tartalmazza:
+A Dynamics 365 Pénzügy áfa-vissza űrlapja a következő jelentéseket tartalmazza:
 
 - A 10-es számú áfa-visszatérítési űrlap, amely a jogszabályok által meghatározott módon részletezi az összegeket, a helyesbítéseket és a sortételenkénti áfaösszegeket.
 - Értékesítési tranzakciók számlakönyve

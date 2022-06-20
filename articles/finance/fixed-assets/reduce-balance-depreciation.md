@@ -1,6 +1,6 @@
 ---
 title: Degresszív értékcsökkenés
-description: Ez a témakör az értékcsökkenés egyenleg csökkentő módszeréről nyújt tájékoztatást.
+description: Ez a cikk az értékcsökkenés egyenleg csökkentő módszeréről nyújt tájékoztatást.
 author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a81a8f926c30ac26d10c8763f43f39504249616f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 52bf9d4e9cbc9cabda5d5ab17c1a00ecea0d0348
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883271"
 ---
 # <a name="reduce-balance-depreciation"></a>Degresszív értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az értékcsökkenés egyenleg csökkentő módszeréről nyújt tájékoztatást.
+Ez a cikk az értékcsökkenés egyenleg csökkentő módszeréről nyújt tájékoztatást.
 
 Amikor beállít egy tárgyieszköz-értékcsökkenési profilt és a Degresszív értéket választja a **Mód** mezőben az **Értékcsökkenési profilok** lapon, akkor az ehhez az értékcsökkenési profilhoz hozzárendelt tárgyi eszközök értékcsökkenése minden időszakban ugyanakkora százalékkal megy végbe.
 
@@ -41,7 +41,7 @@ Kiválaszthatja a **Naptár** vagy **Pénzügyi** elemeket az **Értékcsökken�
 
 ### <a name="calendar"></a>Naptár
 
-A **Naptár beállítás** használata esetén a rendszer minden évben január 1-jén frissíti az értékcsökkenés alapját, amely jellemzően a nettó könyv szerinti érték csökkentve a maradványértékkel. A fejezet későbbi részében bemutatott degresszív értékcsökkenési példában az értékcsökkenés alapja a számítási oszlopban szereplő első szám. 
+A **Naptár beállítás** használata esetén a rendszer minden évben január 1-jén frissíti az értékcsökkenés alapját, amely jellemzően a nettó könyv szerinti érték csökkentve a maradványértékkel. A leírás későbbi, decsökkentési példában az értékcsökkenés alapja a számítás oszlopának első kifejezésében lévő szám. 
 
 A **Naptár** lehetőség választása esetén a következő beállítások állnak rendelkezésre az **Időszak gyakorisága** mezőben, amelyek egész évben meghatározzák az értékcsökkenés feladási időpontját és összegét:
 

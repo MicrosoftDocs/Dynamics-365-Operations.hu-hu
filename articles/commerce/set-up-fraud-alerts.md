@@ -1,6 +1,6 @@
 ---
 title: Hívásközpontban jelentkező csalás-ellenőrzési figyelmeztetések beállítása és használata
-description: Ez a témakör ismerteti a szabályok beállítását az ügyfélszolgálati munkatársak figyelmeztetésére az esetleg csaló információról a rendelések feldolgozása során. Meghatározhat specifikus kódokat, amelyek arra szolgálnak, hogy automatikusan vagy manuálisan várakoztassák a gyanús rendeléseket.
+description: Ez a cikk bemutatja, hogyan lehet beállítani olyan szabályokat, amelyek figyelmeztetik az ügyfélszolgálati vásárlókat a rendelések feldolgozása során potenciálisan csalást jelentő információkra. Meghatározhat specifikus kódokat, amelyek arra szolgálnak, hogy automatikusan vagy manuálisan várakoztassák a gyanús rendeléseket.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212afd594453d3594fdaef9442a7809e4cafbd07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763668"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885348"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Hívásközpontban jelentkező csalás-ellenőrzési figyelmeztetések beállítása és használata
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet kritériumokat és szabályokat létrehozni a potenciálisan csaló értékesítési megrendelések várakoztatására további ellenőrzés céljából. A csalásellenőrzési funkció meghatározza az információ érvényességét egy értékesítési megbízásban. Ha az értékesítési rendelésben szereplő információk a szervezet csalási kritériumai és szabályai alapján megkérdőjelezhetőnek tűnnek, akkor a megrendelést várakoztatni lehet további ellenőrzés céljából. Ebben az esetben a rendelés nem adható ki a raktárba további feldolgozásra a várakoztatott törléséig.
+Ez a cikk bemutatja, hogyan lehet további ellenőrzésre olyan feltételeket és szabályokat beállítani, amelyek potenciálisan csalást jelentő értékesítési rendeléseket függessen fel. A csalásellenőrzési funkció meghatározza az információ érvényességét egy értékesítési megbízásban. Ha az értékesítési rendelésben szereplő információk a szervezet csalási kritériumai és szabályai alapján megkérdőjelezhetőnek tűnnek, akkor a megrendelést várakoztatni lehet további ellenőrzés céljából. Ebben az esetben a rendelés nem adható ki a raktárba további feldolgozásra a várakoztatott törléséig.
 
 > [!NOTE]
 > Ez a funkció csak a Commerce hívásközpont csatorna értékesítési rendeléseinek feldolgozására használható.

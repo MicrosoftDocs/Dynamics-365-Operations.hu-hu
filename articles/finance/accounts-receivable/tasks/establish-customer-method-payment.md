@@ -1,6 +1,6 @@
 ---
 title: Vevői fizetési mód kialakítása
-description: Ez a témakör ismerteti a vevők a fizetési mód létrehozását ügyfélkifizetésekhez
+description: Ez a cikk bemutatja, hogyan lehet fizetési módot létrehozni a vevői kifizetésekhez.
 author: ShivamPandey-msft
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9e8974ea20497124e24e95b3761317daf126839
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f3843ce596d054263b69ccc577f3885970fe49d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713896"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861502"
 ---
 # <a name="establish-customer-method-of-payment"></a>Vevői fizetési mód kialakítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör ismerteti a vevők a fizetési mód létrehozását ügyfélkifizetésekhez Ez a feladat az USMF bemutatócéget használja.
+Ez a cikk bemutatja, hogyan lehet fizetési módot létrehozni a vevői kifizetésekhez. Ez a feladat az USMF bemutatócéget használja.
 
 1. A navigációs ablaktáblán ugorjon a **Modulok > Követelések és beszedések > Fizetés beállítása > Fizetési módok** elemre.
 2. Válassza az **Új** lehetőséget.

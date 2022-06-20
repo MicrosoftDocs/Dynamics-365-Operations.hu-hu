@@ -1,6 +1,6 @@
 ---
 title: Rendeléskeresési modul
-description: Ez a témakör ismerteti rendeléskeresési modult, és bemutatja, hogyan konfigurálhatjuk a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör leírja a rendeléskeresési modult, és bemutatja, hogyan kell konfigurálni a modulban Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 09/01/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 0ae5c8a2eea84a9aa707f7c2f6f29950f2f48faa
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c83463d9a0ece9605b0d22bee2a1c76057c8ed05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675117"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869430"
 ---
 # <a name="order-lookup-module"></a>Rendeléskeresési modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti rendeléskeresési modult, és bemutatja, hogyan konfigurálhatjuk a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör leírja a rendeléskeresési modult, és bemutatja, hogyan kell konfigurálni a modulban Microsoft Dynamics 365 Commerce.
 
 A rendeléskeresési modul egy olyan képernyőt biztosít, ahol a vevők meg tudják keresni az e-kereskedelmi webhelyen leadott rendeléseket. [A rendeléskeresés engedélyezése a vendégpénztárnál](order-lookup-guest.md) funkció részeként használatos. A rendeléskeresési modul segítségével meg lehet keresni az e-kereskedelmi webhelyen, a kiskereskedelmi pénztárban (POS) vagy egy hívásközpontban elküldött rendeléseket. A képernyő lekérheti mind a vendégfelhasználók, mind a regisztrált felhasználók által elküldött rendeléseket.
 

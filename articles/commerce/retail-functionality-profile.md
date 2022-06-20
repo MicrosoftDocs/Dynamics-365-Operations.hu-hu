@@ -1,6 +1,6 @@
 ---
 title: Retail funkcióprofil létrehozása
-description: Ez a témakör azt mutatja be, hogyan lehet egy új funkcióprofilt létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör azt ismerteti, hogyan lehet funkcióprofilt létrehozni a következőben:Microsoft Dynamics 365 Commerce
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9043486050e230fd9ecdefaaa65427264c8e40f5c3e8602c923bbede595a7243
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2ef6ae6dfd455f8021a0a2620fcacd0b4b7fcac4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717622"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900412"
 ---
 # <a name="create-a-retail-functionality-profile"></a>Retail funkcióprofil létrehozása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet egy új funkcióprofilt létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt ismerteti, hogyan lehet funkcióprofilt létrehozni a következőben:Microsoft Dynamics 365 Commerce
 
 A funkcióprofil különböző beállításokat biztosít az online csatornákhoz. Minden csatornának meg kell adnia egy funkciókat tartalmazó profilt.
 

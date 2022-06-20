@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 28caacaafa5ef20a3d8e1ce93851c48bd4af89a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848194"
 ---
 # <a name="performance-management"></a>Teljesítménymenedzsment
 
@@ -79,9 +79,9 @@ Az Ön teljesítménynaplója le fogja írni<!--note from editor: Suggested.--> 
 
 Ha dokumentumot – például teljesítésigazolást – szeretne csatolni a célhoz, ezt a **Teljesítménycélok** lap **Mellékletek** részénél teheti meg. Dokumentummegjelenítő is rendelkezésre áll, így gyorsan megtekintheti bármely csatolt dokumentum tartalmát. 
 
-Sablont hozhat létre egy célból, majd a sablon segítségével új célokat hozhat létre, amelyek az adott sablonon alapulnak. Amikor sablont hoz létre célból, a leírás, a témakörök és a célmértékek mentésre kerülnek. Azonban a rendszer eltávolít minden tényleges mértéket, befejezési dátumot és témaköri megjegyzést.
+Sablont hozhat létre egy célból, majd a sablon segítségével új célokat hozhat létre, amelyek az adott sablonon alapulnak. Amikor sablont hoz létre célból, a leírás, a témakörök és a célmértékek mentésre kerülnek. A tényleges mértékek, befejezési dátumok és megjegyzések azonban törlődnek.
 
-## <a name="performance-reviews"></a>Teljesítményértékelések
+## <a name="performance-reviews"></a>Teljesítmény-ellenőrzések
 
 A teljesítményértékelések formálisabb neve a vitafórum. Már elég rugalmasak ahhoz, hogy folyamatos visszajelzést, fejlesztési terveket és hivatalosabb értékelést támogassák. Két ember számára gyorsan létrehozhat kisebb találkozókat<!--note from editor: I think "one-on-one meeting" is implied by "two people."--> Vagy összetettebb áttekintést is fel lehet építeni, amely megfelel a vállalat felülvizsgálati folyamatának. 
 

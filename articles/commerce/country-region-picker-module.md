@@ -1,6 +1,6 @@
 ---
 title: Ország/régió kiválasztómodulja
-description: Ez a témakör az ország/régió kiválasztómodulját ismerteti, és bemutatja, hogyan konfigurálhatjuk a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör az ország-/régióválasztó modult ismerteti, és bemutatja, hogyan kell konfigurálni a modulban Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 04/06/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 9c20e614053b7a79cf962990dbd13ca0f45d5a00
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: d20b3be008a37b1c86e6fefe0ccc90c581e18340
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861992"
 ---
 # <a name="countryregion-picker-module"></a>Ország/régió kiválasztómodulja
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör az ország/régió kiválasztómodulját ismerteti, és bemutatja, hogyan konfigurálhatjuk a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör az ország-/régióválasztó modult ismerteti, és bemutatja, hogyan kell konfigurálni a modulban Microsoft Dynamics 365 Commerce.
 
 Az Dynamics 365 Commerce ország/régió választó modul a [földrajzi észlelési és átirányítási](geo-detection-redirection.md) funkciók használatával mutatja meg a javasolt webhelyeket azoknak a vevőknek, akik olyan e-commerce webhely URL-címét kérik, amely nincs az adott országhoz vagy területhez társítva.
 
@@ -38,7 +38,7 @@ Ha egy webhelyen engedélyezve van a földrajzi észlelés és az átirányítá
 
 Ha a kérés URL-címe nem felel meg egyetlen URL-címnek sem, amely a vevő országához van hozzárendelve, a válaszban az adott országra leképezett egy vagy több URL-cím listája is megjelenik. Az ország/régióválasztó a listán található összes URL-címet összeveti az ország/régió modulban beállított URL-címekkel. Az ország/régió választó minden pontos egyezés esetén megjeleníti az adott URL-cím megjelenítési fejlécét, alfejlécét és képét, és az URL használatával hivatkozással jeleníti meg ezeket az elemeket.
 
-Ha egy vevő az ország/régió választó egyik beállítását választja, akkor a rendszer a hivatkozásként megadott URL-címre használja a beállításokat. Az URL-cím az **\_ msdyn365site\_\_\_\_** süteménybe van írva, hogy a vevő webhelye által preferáltként használható legyen. Ezután amikor a vevő legközelebb a saját országához vagy régiójához nem társított URL-címet kéri, automatikusan átirányítja őket a preferált országba. Ezért javasoljuk, [hogy](site-selector.md) az e-commerce webhelyen is használja a webhelyválasztó modult, hogy a vevők felülbírálják vagy frissítsék a webhely beállításait. 
+Ha egy vevő az ország/régió választó egyik beállítását választja, akkor a rendszer a hivatkozásként megadott URL-címre használja a beállításokat. Az URL-cím az **\_ msdyn365\_\_\_\_** webhelyi süteménybe van írva, hogy a vevő által preferált webhelyként használható legyen. Ezután amikor a vevő legközelebb a saját országához vagy régiójához nem társított URL-címet kéri, automatikusan átirányítja őket a preferált országba. Ezért javasoljuk, [hogy](site-selector.md) az e-commerce webhelyen is használja a webhelyválasztó modult, hogy a vevők felülbírálják vagy frissítsék a webhely beállításait. 
 
 Ha egy vevő bezárja az ország/régió választó párbeszédpanelt, a program nem írja a süteményt, és a vevő továbbra is az aktuális webhelyen marad. 
 

@@ -1,6 +1,6 @@
 ---
 title: Nem csatolt visszatérítések feldolgozása a Dynamics 365 Commerce Payment Connector az Adyen szolgáltatáshoz segítségével
-description: Ez a témakör azt ismerteti, hogyan működnek a nem csatolt visszatérítések a Microsoft Dynamics 365 Payment Connector az Adyen szolgáltatáshoz használata esetén.
+description: Ez a témakör leírja Microsoft Dynamics, hogyan működik a nem kapcsolódó visszatérítés a 365 Payment Connector for Adyen használata esetén.
 author: BrianShook
 ms.date: 10/07/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c137dcf7d35031a293c88d8c4f5dc1e5f3d9e2f9
-ms.sourcegitcommit: a21a664cd35b95c8600c5af0aac588a64e892902
+ms.openlocfilehash: 634b30de7adbfb0c316fe14456581ea8eb89d070
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885197"
 ---
 # <a name="process-unlinked-refunds-with-the-dynamics-365-commerce-payment-connector-for-adyen"></a>Nem csatolt visszatérítések feldolgozása a Dynamics 365 Commerce Payment Connector az Adyen szolgáltatáshoz segítségével
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan működnek a nem csatolt visszatérítések a [Microsoft Dynamics 365 Payment Connector az Adyen szolgáltatáshoz](adyen-connector.md) használata esetén. Azt is bemutatja, hogy a pénztárban vagy a hívásközpontban hogyan lehet visszatérítést feldolgozni egy új fizetési mód ellenében.
+Ez a témakör leírja [Microsoft Dynamics, hogyan működik a nem kapcsolódó visszatérítés a 365 Payment Connector for Adyen használata](adyen-connector.md) esetén. Azt is bemutatja, hogy a pénztárban vagy a hívásközpontban hogyan lehet visszatérítést feldolgozni egy új fizetési mód ellenében.
 
 A Dynamics 365 Payment Connector az Adyen szolgáltatáshoz lehetővé teszi a visszatérítések feldolgozását az eredeti tranzakciónál alkalmazottól eltérő fizetési mód alkalmazásával. Bár azt ajánljuk, hogy a [csatolt visszatérítések](linked-refunds.md) segítségével dolgozzon fel egy visszatérítést a megadott eredeti kifizetési mód ellenében, bizonyos helyzetekben más módszerre fizetési móddal van szükség a visszatérítésre. Például előfordulhat, hogy az eredeti fizetéshez használt kártya lejárt vagy elveszett, vagy a felhasználó megszüntette.
 

@@ -1,6 +1,6 @@
 ---
 title: Számla felosztása funkció
-description: Ez a témakör a számlák szállítási cím és adószámlaszám (TAN) szerint történő felosztásának beállítását és működését ismerteti.
+description: Ez a témakör leírja a számlák szállítási cím és adószámlaszám (TAN) szerinti felosztásának beállításait és funkcióit.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1dac8d51c24009dcf0c4acbc49f06f32abf0dec
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7bbeb94429c2c69b7b8ea3089390db676a021b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874432"
 ---
 # <a name="split-invoice-functionality"></a>Számla felosztása funkció
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a számlák szállítási cím és adószámlaszám (TAN) szerint történő felosztásának beállítását és működését ismerteti.
+Ez a témakör leírja a számlák szállítási cím és adószámlaszám (TAN) szerinti felosztásának beállításait és funkcióit.
 
 A **Kötelezettségek paraméterek** oldalon, az **Általános** lapon válassza ki a **Termék nyugta** vagy a **Számla** jelölőnégyzetet a termék nyugtának vagy számlának a **Beszerzési rendelés** oldalán található különböző szállítási címekkel és TAN-ekkel rendelkező feladásához és felosztásához. A feladott számlát ezután felosztjuk a szállítási cím és a TAN szerint.
 

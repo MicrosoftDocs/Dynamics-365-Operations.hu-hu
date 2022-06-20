@@ -1,6 +1,6 @@
 ---
 title: Pénztár Kelet Európához és Oroszországhoz
-description: Ez a témakör ismerteti a házipénztár funkciót, amellyel a felhasználók az Észtország, Litvánia, a Cseh Köztársaság, Magyarország, Lettország, Lengyelország és Oroszország készpénzműveleteit tükrözhetik a rendszerben.
+description: Ez a cikk az Észt, Litvániában, Csehországban, Magyarországban, Lettországban, Lengyelországban és Oroszországban használható pénztári funkciókkal kapcsolatban tartalmaz tájékoztatást.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8d301cb7b16960d9f239719841516ca6354381c0011d0b2d8302f8b85012ed1e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf5e49f76753188ebeb39e4c14bf177b83bbb018
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733591"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871120"
 ---
 # <a name="petty-cash-for-eastern-europe-and-russia"></a>Pénztár Kelet Európához és Oroszországhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti a házipénztár funkciót, amellyel a felhasználók az Észtország, Litvánia, a Cseh Köztársaság, Magyarország, Lettország, Lengyelország és Oroszország készpénzműveleteit tükrözhetik a rendszerben.
+Ez a cikk az Észt, Litvániában, Csehországban, Magyarországban, Lettországban, Lengyelországban és Oroszországban használható pénztári funkciókkal kapcsolatban tartalmaz tájékoztatást.
 
 A házipénztár funkciói készpénzműveletek, -bevételek és -kiadások automatizálására, elsődleges dokumentumok létrehozására és a kapcsolódó jelentések nyomtatására használhatók. A házipénztár funkcióval az alábbi műveletek végezhetők:
 
@@ -100,7 +100,7 @@ Készpénzszámla készpénzegyenlege ellenőrzési szabályainak beállításá
 <li><strong>Figyelmeztetés</strong> – a határérték átléphető, de a felhasználó figyelmeztető üzenetet kap. A készpénzbizonylat megerősítésre vagy jóváhagyásra kerül.</li>
 <li><strong>Hiba</strong> – A határérték nem léphető túl. A felhasználó hibaüzenetet kap, és a készpénzbizonylat nem kerül megerősítésre vagy jóváhagyásra.</li>
 </ul>
-A készpénzbizonylatok jóváhagyási folyamatával kapcsolatos további tudnivalókért lásd a &quot;Készpénztranzakciók jóváhagyása és feladása&quot; részt a témakör későbbi részében.</td>
+A készpénzdokumentumok &quot; jóváhagyási folyamatával kapcsolatos további tudnivalókat lásd a Készpénztranzakciók jóváhagyása és&quot; feladása szakasz későbbi, ebben a cikkben.</td>
 </tr>
 <tr class="odd">
 <td>Egyenleg korlátja</td>

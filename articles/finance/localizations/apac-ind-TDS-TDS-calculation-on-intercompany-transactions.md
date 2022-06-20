@@ -1,6 +1,6 @@
 ---
 title: TDS kiszámítása vállalatközi tranzakciókhoz
-description: Ez a témakör azt a folyamatot írja le, amelyet a Forrásnál levont adó (TDS) kiszámítására használnak a vállalatközi tranzakciókhoz a fázisokban.
+description: Ez a témakör azt a folyamatot írja le, amely a forrásnál levont adó kiszámítására használható a vállalatközi tranzakciókon fázisok szerint.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 381b00c64e3e3a09a245c82cbe1f1599986a49aa
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c27bea997804f2c5eff6be2b20064b272ccd062f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726977"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888973"
 ---
 # <a name="tds-calculation-on-intercompany-transactions"></a>TDS kiszámítása vállalatközi tranzakciókhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt a folyamatot írja le, amelyet a Forrásnál levont adó (TDS) kiszámítására használnak a vállalatközi tranzakciókhoz a fázisokban.
+Ez a témakör azt a folyamatot írja le, amely a forrásnál levont adó kiszámítására használható a vállalatközi tranzakciókon fázisok szerint.
 
 Vállalatközi beszerzési vagy értékesítési rendelés létrehozásakor a vevő vagy szállító számára meghatározott alapértelmezett TDS-csoport szolgál a TDS-összeg kiszámítására. A TDS-összeg a számla könyvelése után kerül feladásra a visszatéríthető vagy fizetendő számlákra.
 

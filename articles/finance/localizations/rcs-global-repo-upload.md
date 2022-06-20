@@ -1,6 +1,6 @@
 ---
-title: ER-konfigurációk létrehozása az RCS-ben, és feltöltésük a globális tárba
-description: Ez a témakör azt mutatja be, hogyan hozhatók létre a Microsoft Regulatory Configuration Services (RCS) elektronikus jelentéskészítési (ER) konfigurációi, és tölthetők fel a globális tárba.
+title: Hozzon létre ER-konfigurációkat a RCS-ben, és töltse fel őket a globális tárházba
+description: Ez a cikk bemutatja, hogy hogyan lehet elektronikus jelentési (ER) konfigurációt létrehozni a Microsoft Regulatory Configuration Services (RCS) szolgáltatásban, és feltölteni azt a globális tárházba.
 author: JaneA07
 ms.date: 01/11/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: eb04362d6d7261af56d2940b085fbc8d43c9d662
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 8cfbcfea3c6056d87eb600c9a2f9e0d1727c30ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7965089"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894743"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-konfigurációk létrehozása a Regulatory Configuration Services (RCS) rendszerben, és feltöltésük a globális tárba
 
@@ -38,23 +38,23 @@ Mielőtt teljesítené ezeket az eljárásokat, végre kell hajtania a következ
 Gondoskodnia kell arról, hogy a szervezethez rcS-környezet legyen létesítve. Ha nincs rcS-példánya létesítve a szervezethez, a következő lépések segítségével használhatja ezt:
 
 1. A Pénzügy és műveletek alkalmazásban használja a Szervezet **felügyelete** \> **– Munkaterületek** \> **elektronikus jelentéseit**.
-2. A Kapcsolódó hivatkozások / Külső hivatkozások mezőben válassza a Jogi szolgáltatások – Konfiguráció lehetőséget, majd az utasítások szerint regisztrálja **az** **·** **szolgáltatásokat**.
+2. A **Kapcsolódó hivatkozások / Külső hivatkozások mezőben válassza** **a Jogi szolgáltatások –** Konfiguráció lehetőséget, **majd** az ehhez szükséges beállításokat követve hajtsa végre a regisztrációhoz szükséges utasításokat.
 
-Ha már létesített RCS-környezetet a szervezethez, az oldal URL-címével férhet hozzá, és válassza ki **a bejelentkezési** lehetőséget.
+Ha már létesített RCS-környezetet a szervezethez, az oldal URL-címével **férhet hozzá, és válassza ki a bejelentkezési lehetőséget**.
 
 ## <a name="create-a-derived-version-of-a-configuration-in-rcs"></a>Konfiguráció származtatott verziójának létrehozása az RCS-ben
 
 > [!NOTE]
 > Ha az RCS első alkalommal van használva, akkor nem lesz elérhető konfiguráció, amelyből származtatható. Konfigurációt kell importálni a globális tárházból. További információért lásd: [ER-konfigurációk letöltése a Konfigurációs szolgáltatás globális tárolójából](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-1. **Jelentkezzen be az** RCS-be, és válassza ki az **Elektronikus jelentéskészítés** munkaterületet.
+1. **Jelentkezzen be az** RCS-be, és válassza ki az Elektronikus **jelentéskészítés munkaterületet**.
 2. Győződjön meg róla, hogy van aktív konfigurációszolgáltató a szervezetnél aktívra állítva (lásd az előfeltételeket). 
 3. Válassza a **Jelentéskészítési konfigurációk** elemet.
 4. Válassza ki azt a konfigurációt, amelyből új verziót szeretne származtatni. A fa feletti szűrő mező segítségével tovább szűkítheti a keresés eredményeit.
 5. Válassza a **Konfiguráció létrehozása** \> **Származtatás névből** lehetőséget.
-6. Írjon be egy nevet és egy leírást, majd válassza a Konfiguráció létrehozása lehetőséget egy "Vázlat" állapotú új származtatott **verzió** létrehozásához.
+6. Írjon be egy nevet és egy leírást, **majd** válassza a Konfiguráció létrehozása lehetőséget egy "Vázlat" állapotú új származtatott verzió létrehozásához.
 7. Válassza ki az újonnan származtatott konfigurációt, és szükség esetén adja meg a konfigurációs formátumot. 
-8. A módosítások befejezése után a Konfiguráció módosítása "Befejezve" állapotúra kell állítani, hogy közzé tudja tenni **a** **tárházban**. Válassza ki az **OK** lehetőséget.
+8. A módosítások befejezése **után** **a** Konfiguráció módosítása "Befejezve" állapotúra kell állítani, hogy közzé tudja tenni a tárházban. Válassza ki az **OK** lehetőséget.
 
 ![Új konfigurációverzió az RCS-ben.](media/RCS_CompleteConfig.JPG)
 
@@ -73,7 +73,7 @@ Ha egy új vagy származtatott konfigurációt meg kell osztania a szervezettel,
 3. A megerősítő párbeszédpanelen válassza az **Igen** gombot. 
 4. Szükség szerint frissítse a verzió leírását, majd kattintson az **OK** gombra. A verzió tetszés szerint feltölthető egy csatlakoztatott alkalmazásba vagy EGYSTB-tárházba is.  
 
-A konfiguráció állapota "Megosztott" lesz, és a rendszer feltölti a konfigurációt a **globális** tárházba. Létrejön a feltöltött konfiguráció vázlatverziója is, amely akkor használható, ha a további módosítások szükségesek.
+A konfiguráció állapota "**Megosztott**" lesz, és a rendszer feltölti a konfigurációt a globális tárházba. Létrejön a feltöltött konfiguráció vázlatverziója is, amely akkor használható, ha a további módosítások szükségesek.
 
 Miután a konfiguráció fel lett töltve a globális tárházba, a következőképpen lehet vele dolgozni:
 

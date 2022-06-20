@@ -1,6 +1,6 @@
 ---
 title: Lengyelország – Intrastat
-description: Ez a témakör a lengyelországi Intrastat-jelentéskészítéssel kapcsolatban tartalmaz tájékoztatást.
+description: Ez a cikk a lengyelországi Intrastat-jelentésről tartalmaz tájékoztatást.
 author: andosip
 ms.date: 11/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: ''
-ms.openlocfilehash: fbacc204208e536291035c6f9bb2ef4fa4038f58
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 45bd1d3c90d0a8a8ad5db6d0b80c5eed0aa489e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566091"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871101"
 ---
 # <a name="polish-intrastat"></a>Lengyelország – Intrastat
 
@@ -74,7 +74,7 @@ További információért lásd: [ER-konfigurációk letöltése a Konfiguráci�
 
 Két regisztrációs típust kell létrehozni a vállalati kódokhoz: egyet az áfaazonosítóhoz (NIP-kód), egyet a vállalatszámhoz (Regon-kód).
 
-1. Ugrás a **Szervezet administrationGlobal** > **címjegyzékRegistration** > **typesRegistration** > **típusaihoz**.
+1. Ugrás a Szervezetfelügyelet **globális** > **címjegyzék regisztrálási** > **típusainak** > **regisztrálási típusaihoz**.
 2. A munkaablakban az Új **gombra kattintva** hozzon létre egy regisztrációs típust az áfaazonosítóhoz.
 3. A Regisztrációtípus **részletei párbeszédpanel** Név **mezőjébe** írja be az új regisztrációtípus nevét. Például adja meg az **NIP-t**.
 4. Az **Ország/régió** mezőben válassza a **POL** lehetőséget.
@@ -86,7 +86,7 @@ Két regisztrációs típust kell létrehozni a vállalati kódokhoz: egyet az �
 
 ### <a name="match-the-registration-types-with-registration-categories"></a>A regisztrációtípusok egyeztetése a regisztrációs kategóriákkal
 
-1. Ugrás a **Szervezet administrationGlobal** > **címjegyzékRegistration** > **typesRegistration** > **kategóriáihoz**
+1. Ugrás a Szervezetfelügyelet **globális** > **címjegyzék regisztrálási** > **típusainak regisztrálási** > **kategóriáihoz**
 2. A műveletpanel Új beállításának **használatával** hozzon létre kapcsolatot minden létrehozott regisztrációs típus és egy regisztrációs kategória között.
 
     - Az áfaazonosító (NIP-kód) regisztrációs típusának **kiválasztása**.
@@ -113,8 +113,8 @@ Két regisztrációs típust kell létrehozni a vállalati kódokhoz: egyet az �
 
 ## <a name="set-up-foreign-trade-parameters"></a>Külkereskedelmi paraméterek beállítása
 
-1. Ugrás a **TaxSetupForeign** > **·** > **kereskedelmi paraméterekhez**.
-2. **Az Intrastat lap** **·** **·** **Elektronikus jelentés gyorslap Fájlformátum-hozzárendelés mezőjében válassza az Intrastat (PL) lehetőséget.**
+1. Ugrás az **Adóbeállítás** > **külkereskedelmi** > **paramétereihez**
+2. **Az Intrastat lap** **·** **·** **Elektronikus jelentés gyorslap Fájlformátum-hozzárendelés mezőjében válassza az Intrastat (PL) lehetőséget**.
 3. A **Jelentésformátum-hozzárendelés** mezőben válassza az **Intrastat jelentés** lehetőséget.
 4. Az **Árucikk-kódok hierarchiája** gyorslapon a **Kategóriahierarchia** mezőben válassza az **Intrastat** lehetőséget.
 5. A **Tranzakciókód** mezőben válassza ki a vagyonátruházáshoz létrehozott tranzakciókódot. Ezt a kódot olyan tranzakciókra használja, amelyek tényleges vagy tervezett tulajdonátruházást eredményeznek (pénzügyi vagy egyéb) ellenszolgáltatás ellenében. Javításra is használható. A lengyelországi vállalatok kétjegyű tranzakciókódokat használnak.
@@ -158,7 +158,7 @@ Két regisztrációs típust kell létrehozni a vállalati kódokhoz: egyet az �
 
 2.  Intrastat-kódok szállítási módjának beállítása.
 
-    1. Ugrás a **Beszerzés és a sourcingSetupDistributionTerms** > **·** > **·** > **szállítási címhez.**
+    1. Ugrás a Beszerzés **és forrás beállításai –** > **·** > **Szállítási** > **feltételek gombra**.
     2. A rácson válasszon ki egy szállítási feltételkészletet.
     3. Az Általános **gyorssablon** Intrastat-kód **mezőjébe** írja be az egyedi kódot.
 
@@ -225,7 +225,7 @@ Importálja a következő ER-konfigurációk legújabb verzióját:
 
 ### <a name="create-registration-types-for-company-codes"></a>Regisztrációs típusok létrehozása vállalati kódokhoz
 
-1. Ugrás a **Szervezet administrationGlobal** > **címjegyzékRegistration** > **typesRegistration** > **típusaihoz**.
+1. Ugrás a Szervezetfelügyelet **globális** > **címjegyzék regisztrálási** > **típusainak** > **regisztrálási típusaihoz**.
 2. A műveletpanel Új beállításával **hozzon** létre egy regisztrációs típust az áfaazonosítóhoz (NIP-kód).
 3. A Regisztrációs **típus részletei párbeszédpanel** **·** **Név mezőjébe írja be a NIP-t.**
 4. Az **Ország/régió** mezőben válassza a **POL** lehetőséget.
@@ -237,7 +237,7 @@ Importálja a következő ER-konfigurációk legújabb verzióját:
 
 ### <a name="match-the-registration-types-with-registration-categories"></a>A regisztrációtípusok egyeztetése a regisztrációs kategóriákkal
 
-1. Ugrás a **Szervezet administrationGlobal** > **címjegyzékRegistration** > **typesRegistration** > **kategóriáihoz**
+1. Ugrás a Szervezetfelügyelet **globális** > **címjegyzék regisztrálási** > **típusainak regisztrálási** > **kategóriáihoz**
 2. A műveletpanel Új beállításának **használatával** hozzon létre kapcsolatot minden létrehozott regisztrációs típus és egy regisztrációs kategória között.
 
     - Az adószámok **regisztrációtípusa** esetén válassza ki az áfaazonosító **regisztrációjának** kategóriáját.
@@ -259,7 +259,7 @@ Importálja a következő ER-konfigurációk legújabb verzióját:
 
 1. Menjen a **Szervezeti adminisztráció** > **Számsorozatok** > **Számsorozatok** pontra.
 2. A Műveletpanel Számsorozat **lapján**, **az** Új csoportban válassza a Számsorozat **lehetőséget**.
-3. Adja meg **az** XML-fájlt az **Azonosító gyorstábla Számsorozat kódja** **mezőjében\_**.
+3. Adja meg **az** XML-fájlt **az Azonosító gyorstábla Számsorozatkód** **mezőjében\_**.
 4. Válassza a Vállalat **lehetőséget** a Hatókör paraméterei gyorsgombra vonatkozó **Hatókör** mezőben **·**.
 5. A Vállalat **mezőben** válassza a **DEMF-et**.
 6. Adja meg **a 4-et** **a** Szegmensek gyorsgombra vonatkozó Alfanumerikus **szegmens** Hossz mezőjében **.**
@@ -277,15 +277,15 @@ Importálja a következő ER-konfigurációk legújabb verzióját:
 7. A **Fél országa/régiója** mezőben válassza az **POL** értéket. Ezután az Ország **/régió típus mezőjében** válassza a Belföldi **lehetőséget**.
 8. A **Fél országa/régiója** mezőben válassza az **DEU** értéket. Ezt követően az Ország **/régió típus mezőjében** válassza az EU **lehetőséget**.
 9. Adja meg **az** Ügynök **lap** **·** **·** **Áfa területének 4200000 mezőjében az Ügynök gyorslapon.**
-10. Adja meg **a** Kapcsolattartó lap **Név mezőjében** **a Manish Mezőbera** nevét.
+10. Adja meg **a** Kapcsolattartó lap **Név mezőjében** **a Manish Mezőbera nevét**.
 11. A Telefon **mezőben** adja meg a **425-555-5068**.
 12. A Faxszám **mezőbe** írja be a **425-555-5049**.
 13. Az E-mail **mezőben** adja meg a manishc@contoso.com.**·**
-14. Válassza ki az **XML-fájlt** a **·** **Számsorozatok lap Xml-fájlhivatkozás** **\_ Számsorozatkód mezőjében.**
+14. Válassza ki az **XML-fájl** **·** **hivatkozását a Számsorozatok lap Számsorozat** **\_ kódja mezőjében.**
 
 ### <a name="set-up-product-information"></a>Termékinformációk beállítása
 
-1. Ugrás a Termékinformáció-kezelésProductsReleased **·** > **·** > **termékeihez.** **·**
+1. Ugrás a Termékinformáció-kezelési Termékek kiadott **termékeihez** > **·** > **·** **·**
 2. Válassza ki a rácson a **D0001**-et.
 3. A **Külkereskedelem** gyorslapon az **Intrastat** szakaszban, az **Árucikk** mezőben válassza a **100 200 30** kódot.
 4. A **Készletkezelés** gyorslapon a **Súlymérések** szakaszban a **Nettó súly** mezőbe írja be a **2** értéket.
@@ -327,7 +327,7 @@ Importálja a következő ER-konfigurációk legújabb verzióját:
 
 4. A szállító alapértelmezett szállítási módjának kiválasztása.
 
-    1. Ugrás a **KötelezettségekVendorsAll** > **·** > **szállítóihoz**
+    1. Ugrás a Kötelezettségek **szállítói** > **minden** > **szállítójához**.
     2. A rácsban válassza a **DE-001 et**.
     3. Válassza **a** **·** **10-et a Számlázási és kézbesítési gyorsgombra a Szállítási mód mezőben.**
 
@@ -335,7 +335,7 @@ Importálja a következő ER-konfigurációk legújabb verzióját:
 
 1. Intrastat-kód beállítása a szállítási feltételekhez.
 
-    1. Ugrás a **Beszerzés és a sourcingSetupDistributionTerms** > **·** > **·** > **szállítási címhez.**
+    1. Ugrás a Beszerzés **és forrás beállításai –** > **·** > **Szállítási** > **feltételek gombra**.
     2. Válassza ki a rácson a **CIF**-et.
     3. Az Általános **gyorssablon** **Intrastat** kód mezőjébe írja **be a CIF-t**.
 
@@ -347,7 +347,7 @@ Importálja a következő ER-konfigurációk legújabb verzióját:
 
 3. Válassza ki a szállító alapértelmezett szállítási feltételeit.
 
-    1. Ugrás a **KötelezettségekVendorsAll** > **·** > **szállítóihoz**
+    1. Ugrás a Kötelezettségek **szállítói** > **minden** > **szállítójához**.
     2. A rácsban válassza a **DE-001 et**.
     3. Válassza a **CIF** gombra **a** **Szállítási feltételek mező Számla és szállítás gyorsét**.
 
@@ -817,7 +817,7 @@ Importálja a következő ER-konfigurációk legújabb verzióját:
 6. Válassza ki az **OK** lehetőséget.
 7. A Szállítás **gyorslap** **Fejléc** lapján ellenőrizze, **·** **hogy a Szállítási mód mező 10-e**,**·** **és hogy a Szállítási feltételek mezőben a CIF beállítás van-e meg.**
 8. A **Sorok** lapon, a **Beszerzési rendelés sorai** gyorslapon a **Tételszám** mezőben válassza a **D0003-et**. Ezután a **Mennyiség** mezőbe írjon be **6**-et.
-9. **·** **·** **·** **A** Külkereskedelem lap Sor részletei gyorslapján ellenőrizze, hogy a Tranzakciókód beállítása 11-e **,** **a** Szállítás mezőben a 3-as **·** **·**, az Árucikk mezőben a 100 200 30, **az Származási ország/** **terület mezőben a DEU** beállítás van meg.
+9. **·** **·** **·** **A Külkereskedelem lap Sor részletei gyorslapján ellenőrizze, hogy a tranzakciókód 11-re** van-e állítva, **·** **a Szállítás mezőben a 3-as**, **·** **az Árucikk mezőben a 100 200 30**, **az Származási ország/** **terület mezőben a DEU** beállítás van meg.
 10. A Műveletpanelen, a **Vásárlás** lapon, a **Műveletek** csoportban válassza a **Megerősítés** lehetőséget.
 11. A Műveleti ablaktábla **Számla** lapján a **Létrehozás** csoportban válassza a **Számla** lehetőséget.
 12. A műveletpanelen válassza az Alapértelmezett **értéket**, **majd a Sorok alapértelmezett mennyisége mezőjében** válassza a Megrendelt **mennyiség beállítást**. Majd kattintson az **OK** lehetőségre.

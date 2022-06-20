@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7c853ad71aecd7f5d214c02da97f7956ff2391df
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: acb632042cdb535bea0dd625531f22d284653294
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893758"
 ---
 # <a name="configure-skills"></a>Készségek konfigurálása
 
 > [!IMPORTANT]
-> Az ebben a témakörben jelezhető funkció jelenleg elérhető a pénzügyi infrastruktúra emberi erőforrás vevői számára.  
+> Az ebben a cikkben jelezhető funkció jelenleg elérhető a pénzügyi infrastruktúra emberi erőforrás vevői számára.  
 
 
 A dolgozó készségeit nyomon követheti a Dynamics 365 Human Resources rendszerben. Emellett megadhatja, hogy egy adott beosztáshoz milyen szakértelem szükséges.

@@ -1,6 +1,6 @@
 ---
-title: Webes tevékenység eseménygyűjteményről való leiratkozás
-description: Ez a témakör azt mutatja be, hogyan engedélyezheti a webhely látogatói számára, hogy leiratkozzanak a Microsoft Dynamics 365 Commerce webes tevékenység eseménygyűjteményről.
+title: Webes esemény jellegű tevékenység gyűjtésének kikapcsolása
+description: Ez a cikk bemutatja, hogy hogyan hagyhatja ki a webhelyet a webes tevékenységek eseménygyűjteményének letiltásáról Microsoft Dynamics 365 Commerce.
 author: aamiral
 ms.date: 05/15/2020
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d71a184b541f243ccc23914ac2e7c663e5ba61be0a27cf8d41e368fe6a384b9f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 78d3f795820eb36d1a81fb28875456e7471f8971
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878399"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Webes esemény jellegű tevékenység gyűjtésének kikapcsolása
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan teheti lehetővé az ügyfeleinek a webes tevékenység eseménygyűjteményről való leiratkozást a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt mutatja be, hogyan lehet az ügyfelek számára a webes tevékenységek eseménygyűjteményét letiltni Microsoft Dynamics 365 Commerce.
 
 A Dynamics 365 Commerce segítségével a webhely rendszergazdái elemezhetik az e-kereskedelmi webhelyeik felhasználóinak webes tevékenységét. Ily módon jobban megérthetik a webhelyeik használatát, és optimalizálni tudják a webhelyeket a továbbfejlesztett felhasználói élmény biztosítása és az üzleti célkitűzések kielégítése érdekében.
 

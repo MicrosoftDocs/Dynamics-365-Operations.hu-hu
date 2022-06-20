@@ -1,6 +1,6 @@
 ---
 title: Költségkódok létrehozása
-description: Ez a témakör leírja, hogyan kell konfigurálni a költségkódokat mind a Kötelezettségek, mind a Kinnlevőségek esetében.
+description: Ez a cikk bemutatja, hogyan kell konfigurálni a költségkódokat a Kötelezettségek és a Kinnlevőségek esetében.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8526fa0f3c6e3d1b545703f6e6ef72f558b57bd
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d65952cb989672e4eac2dd6101ee9c7c9424daed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866083"
 ---
 # <a name="create-charges-codes"></a>Költségkódok létrehozása
 
-Ez a témakör leírja, hogyan kell konfigurálni a költségkódokat mind a Kötelezettségek, mind a Kinnlevőségek esetében. Ha a szervezet előírja, hogy az értékesítési és beszerzési rendelések sorai mellett az értékesítési és beszerzési rendelések sorai mellett az értékesítési összegeket is nyomon kell követni, erre a célra költségkódokat használhat. Például fuvardíjat és biztosítást fizet egy beszerzési rendelés alapján, és ezeket az összegeket külön kell tételként megadni a beszerzési rendelésen. Ebben az esetben megadhatja, hogy az összegeket kiadási számlákra adja-e fel, vagy hozzáadja a cikkek költséghez.
+Ez a cikk bemutatja, hogyan kell konfigurálni a költségkódokat a Kötelezettségek és a Kinnlevőségek esetében. Ha a szervezet előírja, hogy az értékesítési és beszerzési rendelések sorai mellett az értékesítési és beszerzési rendelések sorai mellett az értékesítési összegeket is nyomon kell követni, erre a célra költségkódokat használhat. Például fuvardíjat és biztosítást fizet egy beszerzési rendelés alapján, és ezeket az összegeket külön kell tételként megadni a beszerzési rendelésen. Ebben az esetben megadhatja, hogy az összegeket kiadási számlákra adja-e fel, vagy hozzáadja a cikkek költséghez.
 
 ## <a name="set-up-charges-codes-for-accounts-receivable"></a>A Kinnlevőségek – Költségkódok beállítása
 

@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása
-description: Ez a témakör bemutatja, hogyan állíthatók be a pénzügyi dimenzió alapértelmezett sablonjai.
+description: Ez a cikk bemutatja a pénzügyi dimenzió alapértelmezett sablonjainak beállítását.
 author: aprilolson
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08e795b44e552dbf049b460811a66741d9b6b96f
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 846347f3a0b5257e88e06ad593ba49160de9458a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722124"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872412"
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan állíthatók be a pénzügyi dimenzió alapértelmezett sablonjai. A sablonok segítségével gyorsan szétoszthatók összegek a forrásbizonylatok között.
+Ez a cikk bemutatja a pénzügyi dimenzió alapértelmezett sablonjainak beállítását. A sablonok segítségével gyorsan szétoszthatók összegek a forrásbizonylatok között.
 
 1. A navigációs panelen válassza a **Modulok Főkönyv> Számlatükör > Dimenziók > Pénzügyi dimenzió alapvető sablonjai** lehetőséget.
 2. Válassza az **Új** lehetőséget.

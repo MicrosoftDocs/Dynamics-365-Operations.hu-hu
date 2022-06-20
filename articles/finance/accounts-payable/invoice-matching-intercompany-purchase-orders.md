@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e884e96e1275f9162b642bbe48c2d891c6434002
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: d4be32a7158561bdf00a996831dca7395ce6f331
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109968"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879740"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Számlaegyeztetés és vállalatközi beszerzési rendelések
 
@@ -28,7 +28,7 @@ ms.locfileid: "8109968"
 
 A vállalatközi kereskedelmi tranzakcióban érintett vásárló jogi személyt be kell állítani a kötelezettségek számlaegyeztetésének használatához. Ha a **Kötelezettségek paraméterei** **·** **lapon** a Számlafeleltérésekkel mező beállítása Kötelező jóváhagyás, a rendszer számlaegyeztetési ellenőrzést hajt végre. Ilyenkor a feladási követelményeknek a vállalatközi kereskedelemre és a kötelezettségek számlaegyeztetésre egyaránt teljesülnie kell a vállalatközi szállítói számlák feladása előtt.
 
-A példák ebben a témában a vállalatközi kereskedelem következő beállításait használják:
+Az ebben a példában említett példák a következő vállalatközi kereskedelmi beállításokat használják:
 -   A vásárló gyár a vásárló jogi személy.
 -   A vásárló gyár az eladó jogi személy.
 -   A 4020-as vevő az Értékesítő Gyár nyilvántartásában szerepel.

@@ -1,6 +1,6 @@
 ---
 title: A Távollétkezelő szerepkör konfigurálása
-description: Ez a témakör bemutatja, hogy hogyan lehet beállítani a Távollétkezelő szerepkört az alkalmazottak szabadságainak kezeléséhez.
+description: Ez a cikk bemutatja, hogyan lehet beállítani a Távollétkezelő szerepkört az alkalmazottak szabadságának kezeléséhez.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e7865a0bb33944c803c628f94371a4c75cc38bd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886102"
 ---
 # <a name="configure-the-absence-manager-role"></a>A Távollétkezelő szerepkör konfigurálása
 
 >[!Important]
->Az ebben a témakörben említett funkciók jelenleg csak a különálló Dynamics 365 Human Resources rendszerében lévő vevőknek érhetők el. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
+>Az ebben a cikkben említett funkciók jelenleg önálló vevők számára érhetők el Dynamics 365 Human Resources. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

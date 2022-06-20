@@ -1,6 +1,6 @@
 ---
 title: Termékdimenzió értékeinek konfigurálása palettaként való megjelenítésre
-description: Ez a témakör azt tekinti át, hogyan konfigurálhatók a termékdimenzió értékei palettaként a Microsoft Dynamics 365 Commerce-központban.
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni a termékdimenzió-értékeket a központi konfigurációkban Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a21e02a8e5aacfa5251b9b7bcbc451fa886d37f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892652"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Termékdimenzió értékeinek konfigurálása palettaként való megjelenítésre
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt tekinti át, hogyan konfigurálhatók a termékdimenzió értékei palettaként a Microsoft Dynamics 365 Commerce-központban. További információ a termékdimenziókról: [Termékdimenziók](../../supply-chain/pim/product-dimensions.md).
+Ez a témakör azt ismerteti, hogyan kell konfigurálni a termékdimenzió-értékeket a központi konfigurációkban Microsoft Dynamics 365 Commerce. További információ a termékdimenziókról: [Termékdimenziók](../../supply-chain/pim/product-dimensions.md).
 
 A Dynamics 365 Commerce támogatja a termékváltozatok megjelenítésére szolgáló méret-, stílus- és színdimenziók használatát. A termékdimenziók felhasználóbarát névvel rendelkeznek; ezek a nevek megjelennek a termék részleteit tartalmazó oldalakon (PDP), így kiválaszthatók a megfelelő termékváltozatok. Ilyen felhasználóbarát név például a „Kicsi”, a „Közepes” és a „Nagy” (méreteknél) vagy a „Fekete” és a „Barna” (színeknél). Ha viszont egy termék számos változatot támogat, akkor az egyes termékváltozatok képének megtekintéséhez több kiválasztásra van szükség. Ezért a vevők számára lassú és fárasztó lehet a termékváltozatok tallózása és kiválasztása.
 

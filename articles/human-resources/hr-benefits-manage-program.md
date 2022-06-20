@@ -1,6 +1,6 @@
 ---
 title: Juttatási program meghatározása és kezelése
-description: Az emberi erőforrások számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a témakör a juttatások beállításával és kezelésével kapcsolatban tartalmaz tájékoztatást.
+description: Az emberi erőforrások számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a cikk a juttatások beállításával és kezelésével kapcsolatos tájékoztatást tartalmaz.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 54500cad7fe2b48aa4e3b2057f4edcfcf244959e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 08b80f4f90ce6b4a286120cd6329a45a4ebd3f71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694935"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877801"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Juttatási program meghatározása és kezelése
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694935"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A Human Resources számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a témakör a juttatások beállításával és kezelésével kapcsolatban tartalmaz tájékoztatást.
+A Human Resources számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a cikk a juttatások beállításával és kezelésével kapcsolatos tájékoztatást tartalmaz.
 
 ## <a name="benefit-setup"></a>Juttatási beállítás
 

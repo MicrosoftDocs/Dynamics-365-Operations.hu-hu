@@ -1,6 +1,6 @@
 ---
 title: A személyes kapcsolattartó jogosultsági beállításainak konfigurálása
-description: Ez a témakör a személyes kapcsolatok jogosultsági beállításainak konfigurálását ismerteti a Microsoft Dynamics 365 Human Resources rendszerben.
+description: Ez a cikk bemutatja, hogy hogyan konfigurálhatja a Microsoft személyes kapcsolattartói jogosultsági beállításait Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e145acf6a6ba3333acfcc6e66dadd1f7d5deac65
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 82bb7c037b4e0ab9950ce4c314c03a0f2d713bbd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692310"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895931"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>A személyes kapcsolattartó jogosultsági beállításainak konfigurálása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8692310"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör bemutatja, hogyan lehet konfigurálni a Microsoft Dynamics 365 Human Resources rendszer juttatásaiban használható személyes kapcsolattartók típusait. A személyes kapcsolattartók azok a személyek, akikre a terv fedezete vonatkozik (eltartottak), vagy akik a tervek kedvezményezettjei lesznek (kedvezményezettek). Az eltartottak általában házastársak vagy gyermekek. A kedvezményezettek házastársak, gyermekek, alapok vagy szülők lehet.
+Ez a témakör bemutatja, hogy hogyan kell konfigurálni a Microsoft juttatásokban használható személyes kapcsolattartó-típusait Dynamics 365 Human Resources. A személyes kapcsolattartók azok a személyek, akikre a terv fedezete vonatkozik (eltartottak), vagy akik a tervek kedvezményezettjei lesznek (kedvezményezettek). Az eltartottak általában házastársak vagy gyermekek. A kedvezményezettek házastársak, gyermekek, alapok vagy szülők lehet.
 
 1. A **Juttatások kezelése** munkaterület **Beállítás** részén válassza a **Személyes kapcsolattartó jogosultsági beállításai** lehetőséget.
 

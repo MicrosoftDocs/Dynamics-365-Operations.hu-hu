@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. október 6.)
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. október 6-i kiadásban.
+description: Ez a témakör olyan funkciókat ismertet, amelyek vagy újak, vagy módosulnak a Microsoftban Dynamics 365 Human Resources 2020. október 6-án.
 author: jcart1106
 ms.date: 10/06/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ac64218e48d2713b91af1541f94083aef3f815a2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4eb3e893c3243d3b2c169cb5a47001d4e0771a20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887718"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. október 6.)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8062979"
 
 
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
+Ez a témakör az új, módosított vagy hamarosan érkező funkciókat írja le Dynamics 365 Human Resources. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
 További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -48,9 +48,9 @@ Az alábbi funkció általában a következő verzióval lesz elérhető.
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 >[!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakör frissítései olyan hibajavításokat is tartalmazhatnak, amelyek annak első közzététele után léptek életbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a cikk frissítései a cikk első közzététele után tartalmaznak hibajavításokat a buildben.
 
-| Kiadás száma | Kiadás | Leírás |
+| Kiadás száma | Probléma | Leírás |
 | --- | --- | --- |
 | 448806 | Az **Alapértelmezett azonosítótípus** a HCM-paraméterekbe **RecID** típusként exportálódik | A Human Resources paraméterek entitás ezne módosítása hozzáad egy újabb oszlopot, amely az **Alapértelmezett azonosítótípust** jeleníti meg. |
 | 492923 | A feladathoz kapcsolódó felvételeket a rendszer nem menti a Lifecycle Services (LCS) szolgáltatásba | A feladatrögzítések most már menthetők az LCS rendszerben. |

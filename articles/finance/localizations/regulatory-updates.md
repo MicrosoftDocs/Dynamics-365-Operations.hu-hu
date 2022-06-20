@@ -1,6 +1,6 @@
 ---
-title: Jogszabály-követési frissítések
-description: Ez a témakör a Microsoft Dynamics 365 Pénzügy tervezett és kiadott hatósági frissítéseit tartalmazza.
+title: Jogszabálykövetési frissítések
+description: Ez a cikk a Microsoft Dynamics 365 Pénzügy rendszer tervezett és kiadott hatósági frissítéseit tartalmazza.
 author: VStamberg
 ms.date: 04/18/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 04cc8b4272bcedc7db27b0d76eccdc6375641933
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904281"
 ---
 # <a name="regulatory-updates"></a>Jogszabálykövetési frissítések
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör felsorolja a Dynamics 365 Pénzügy által támogatott honosítások tervezett és kiadott jogi frissítéseit. Szállítási ütemtervek megváltozhatnak, és a tervezett funkció más lehet, és előfordulhat, hogy nem lesz kiadva. További információért lásd a [Microsoft irányelvet](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
+Ez a témakör a Dynamics 365 Pénzügy által támogatott honosítások tervezett és kiadott jogi frissítéseit sorolja fel. Szállítási ütemtervek megváltozhatnak, és a tervezett funkció más lehet, és előfordulhat, hogy nem lesz kiadva. További információért lásd a [Microsoft irányelvet](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
 A szabályozói frissítések olyan funkciók amelyek új vagy módosult országspecifikus jogszabályokat támogatnak. A tervezett és kiadott országspecifikus funkciókkal kapcsolatos további [tudnivalókat lásd a Dynamics 365 és kiadási tervek Power Platform című témakörben](/business-applications-release-notes/index).
 

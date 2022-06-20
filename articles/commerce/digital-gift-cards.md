@@ -1,6 +1,6 @@
 ---
 title: E-kereskedelmi digitális ajándékutalványok
-description: Ez a témakör azt mutatja be, hogyan működnek a digitális ajándékutalványok a Microsoft Dynamics 365 Commerce e-kereskedelmi megvalósítása során. Áttekintést nyújt a fontos konfigurációs lépésekről is.
+description: Ez a témakör azt ismerteti, hogyan működnek a digitális ajándékutalványok az e-kereskedelem megvalósítása során Microsoft Dynamics 365 Commerce. Áttekintést nyújt a fontos konfigurációs lépésekről is.
 author: anupamar-ms
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 60de6988f14a0dcbbb881e84a9e4d8a45ca1289a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809587"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884904"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>E-kereskedelmi digitális ajándékutalványok
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan működnek a digitális ajándékutalványok a Microsoft Dynamics 365 Commerce e-kereskedelmi megvalósítása során. Áttekintést nyújt a fontos konfigurációs lépésekről is.
+Ez a témakör azt ismerteti, hogyan működnek a digitális ajándékutalványok az e-kereskedelem megvalósítása során Microsoft Dynamics 365 Commerce. Áttekintést nyújt a fontos konfigurációs lépésekről is.
 
 A Dynamics 365 Commerce rendszerben a digitális ajándékutalványok vásárlása ugyanúgy működik, mint a rendszerben az egyéb termékek vásárlása. Nincs szükség további modulok konfigurálására. Ha a kosárhoz több ajándékutalványt adnak hozzá, a rendszer az ajándékutalvány-cikkeket nem egyetlen értékesítési sorban összesíti. Erre a viselkedésre azért van szükség, mert minden értékesítési sort külön ajándékutalvány-szám alapján számláz a rendszer.
 

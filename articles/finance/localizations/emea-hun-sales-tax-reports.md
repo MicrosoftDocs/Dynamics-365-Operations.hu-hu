@@ -1,6 +1,6 @@
 ---
 title: Áfajelentések Magyarországról
-description: Ez a témakör az áfabevallásra vonatkozó információkkal és a tételes áfakimutatás-jelentésekkel kapcsolatos információkat tartalmazza
+description: Ez a cikk az áfabevallási adatokkal és a részletes áfabevallási jelentésekkel kapcsolatban tartalmaz tájékoztatást.
 author: anasyash
 ms.date: 11/19/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 07f0a658a3b44a554ffe7a2d1fb37c6670fa0459eef394dfefc2c854e7867480
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a5b15d93a70f780d235d4a1989629e474729e04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774228"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908959"
 ---
 # <a name="sales-tax-reports-for-hungary"></a>Áfajelentések Magyarországról
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az **áfabevallásra vonatkozó információkkal** és a **tételes áfakimutatás-jelentésekkel** kapcsolatos információkat tartalmazza. Ezeket a Microsoft Excel jelentéseket létrehozhatja, és ezekkel létrehozhatja az adóhatóságnak benyújtandó hozzáadottérték-adó (ÁFA) bevallásait.
+Ez a cikk az áfabevallási **adatokkal** és a részletes **áfabevallási jelentésekkel kapcsolatban tartalmaz** tájékoztatást. Ezeket a Microsoft Excel jelentéseket létrehozhatja, és ezekkel létrehozhatja az adóhatóságnak benyújtandó hozzáadottérték-adó (ÁFA) bevallásait.
 
 - **Áfabevallásra vonatkozó információk** – Ez a jelentés az áfairány (áfakövetelés, fizetendő áfa vagy használati adó) és áfakód szerint csoportosított számlák listáját tartalmazza. Az egyes áfairányok és áfakódok esetében a jelentés tartalmazza a teljes áfaösszeget és a teljes bruttó számlaösszeget is.
 - **Tételes áfabevallás** – Ez a jelentés tartalmazza a számlák teljes számát, az ellenoldali felek (partnerek) teljes számát, a teljes áfaalapot és az alábbi táblázatban szereplő egyes cikkek teljes áfaösszegét.

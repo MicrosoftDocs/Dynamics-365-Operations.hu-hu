@@ -1,6 +1,6 @@
 ---
 title: Szervezeti hierarchiák létrehozása
-description: Ez a témakör a szervezeti hierarchia beállítását írja le a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani a szervezeti hierarchiákat a Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01ba05566e966eb62a4df0b7b97ee3a442027936
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847680"
 ---
 # <a name="set-up-organization-hierarchies"></a>Szervezeti hierarchiák létrehozása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a szervezeti hierarchia beállítását írja le a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör azt ismerteti, hogyan lehet beállítani a szervezeti hierarchiákat a Microsoft Dynamics 365 Commerce.
 
 A csatornák létrehozása előtt győződjön meg arról, hogy be van állítva a szervezeti hierarchiák.
 
@@ -34,7 +34,7 @@ A szervezeti hierarchiák segítségével több nézőpontból is megtekintheti 
 A szervezeti hierarchia létrehozása előtt létre kell hoznia a szervezeteket. További tudnivalókért lásd a [Jogi személyek létrehozása](channels-legal-entities.md) vagy [Üzemi egységek létrehozása](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json) feladatokat.
 
 
-További információért tekintse át az alábbi témaköröket.
+A további tudnivalókat lásd a következő cikkekben.
 - [Szervezetek és szervezeti hierarchiák áttekintése](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 - [Szervezeti hierarchia megtervezése](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
 - [Szervezeti hierarchia létrehozása](../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json)

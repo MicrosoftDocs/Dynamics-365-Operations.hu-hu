@@ -1,6 +1,6 @@
 ---
-title: Többcsatornás fizetések áttekintése
-description: Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Dynamics 365 Commerce szolgáltatásban.
+title: Omnicsatornás kifizetések áttekintése
+description: Ez a témakör áttekintést nyújt a csatorna kifizetésekről a következőben:Dynamics 365 Commerce
 author: BrianShook
 ms.date: 09/17/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 593a647caeaf7d06aa1f2067954466db7dac6a1d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984166"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881709"
 ---
-# <a name="omni-channel-payments-overview"></a>Többcsatornás fizetések áttekintése
+# <a name="omni-channel-payments-overview"></a>Omnicsatornás kifizetések áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Dynamics 365 Commerce szolgáltatásban. Tartalmaz egy átfogó listát a támogatott esetekről, a funkciókkal, a beállítással és a hibakereséssel kapcsolatos információkat, illetve néhány tipikus probléma leírását.
+Ez a témakör áttekintést nyújt a csatorna kifizetésekről a következőben:Dynamics 365 Commerce Tartalmaz egy átfogó listát a támogatott esetekről, a funkciókkal, a beállítással és a hibakereséssel kapcsolatos információkat, illetve néhány tipikus probléma leírását.
 
 ## <a name="key-terms"></a>Kulcsfogalmak
 
@@ -45,15 +45,15 @@ Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Dynamics 
 
 Álalánosságban a *Többcsatornás fizetések* kifejezés azt a képességet írja le, amikor a rendelés létrehozása az egyik csatornán történik, a teljesítése pedig egy másik csatornán. A többcsatornás fizetés támogatásának kulcsa a fizetési adatok együtt a megrendelés többi adatával együtt való megőrzése, majd pedig ezen fizetési adatok használata a rendelés visszhívása vagy másik csatornán való feldolgozása esetén. Egy klasszikus példa a „Vásárlás online, átvétel az üzletben” eset. Ebben az esetben a fizetési részleteket hozzáadják, amikor a megrendelés online létrejön. Ezután a pénztárnál ezeket lehívják, hogy az ügyfél fizetési kártyáját megterheljék az átvétel időpontjában. 
 
-Az ebben a témakörben ismertetett összes esetet meg lehet valósítani a Commerce rendszerrel biztosított normál Fizetések szoftverfejlesztői csomaggal (SDK). A [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) készen érkező megvalósítást biztosít az itt leírt összes esethez. 
+Az ebben a cikkben ismertetett valamennyi helyzet a Commerce rendszer szabványos fizetési szoftverfejlesztő csomagja (SDK) használatával valósítható meg. A [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) készen érkező megvalósítást biztosít az itt leírt összes esethez. 
 
 ### <a name="prerequisites"></a>Előfeltételek
 
-Az ebben a témakörben leírt összes forgatókönyvhez olyan fizetési összekötő szükséges, amely támogatja az többcsatornás fizetéseket. A beépített Adyen összekötőt is lehet használni, mivel támogatja a Fizetések SDK-n keresztül elérhetővé tett eseteket. Ha további információra van szüksége a fizetési összekötők alkalmazásáról és általánosságban a Retail SDLK-ról, akkor látogasson el a [Retail informatikai szakembereknek és fejlesztőknek – kezdőoldal](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors) oldalra.
+Az ebben a cikkben ismertetett minden esetben szükség van egy olyan fizetési csatlakoztatóra, amely támogatja a csatorna-kifizetéseket. A beépített Adyen összekötőt is lehet használni, mivel támogatja a Fizetések SDK-n keresztül elérhetővé tett eseteket. Ha további információra van szüksége a fizetési összekötők alkalmazásáról és általánosságban a Retail SDLK-ról, akkor látogasson el a [Retail informatikai szakembereknek és fejlesztőknek – kezdőoldal](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors) oldalra.
 
 #### <a name="supported-versions"></a>Támogatott verziók
 
-Az ebben a témakörben ismertetett többcsatornás fizetés lehetőségei a Microsoft Dynamics 365 for Retail 8.1.3.-as verzió részeként kerültek kiadásra. 
+Az ebben a cikkben ismertetett fizetési Microsoft Dynamics 365 for Retail képességek a 8.1.3 verzió részeként jelentek meg. 
 
 #### <a name="card-present-and-card-not-present-connectors"></a>„Kártya jelen van” és „Nincs jelen kártya” összekötők
 
@@ -66,7 +66,7 @@ Az API-k második csoportja az **iNamedRequestHandler**. Ez támogatja a „Kár
 A következő összetevők és beállítási lépések szükségesek:
 
 - **E-kereskedelmi integráció:** A Commerce szolgáltatással való integráció szükséges az olyan esetek támogatására, ahol a rendelés egy online áruházból származik. A Retail e-kereskedelem SDK csomaggal kapcsolatos további tudnivalókat lásd: [e-kereskedelmi platform szoftverfejlesztői készlet](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk)(SDK). A bemutató környezetben a referencia-áruház támogatja a többcsatornás fizetési forgatókönyveket. 
-- **Online fizetések konfigurációja:** Az online csatorna beállításának tartalmaznia kell egy olyan kifizetési összekötőt, amely frissítve van a többcsatornás fizetések támogatásához. Azt is megteheti, hogy a beépített kifizetési összekötőt használja. Az Adyen fizetési összekötő online áruházak számára történő konfigurálásával kapcsolatos további információkért lásd: [Adyen fizetési összekötő](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Az ebben a témakörben ismertetett e-kereskedelem beállítási lépésein kívül az Adyen összekötő beállításaiban a **Fizetési információ mentésének engedélyezése az e-kereskedelemben** paramétert **Igaz** értékre kell állítani. 
+- **Online fizetések konfigurációja:** Az online csatorna beállításának tartalmaznia kell egy olyan kifizetési összekötőt, amely frissítve van a többcsatornás fizetések támogatásához. Azt is megteheti, hogy a beépített kifizetési összekötőt használja. Az Adyen fizetési összekötő online áruházak számára történő konfigurálásával kapcsolatos további információkért lásd: [Adyen fizetési összekötő](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Az eCommerce beállítási lépéseken kívül, amelyek ebben a cikkben le vannak írva, **az E-commerce** **paraméter** fizetési információinak mentésének engedélyezése beállítást True (Igaz) beállításra kell állítani az Adyen csatlakoztató beállításai között. 
 - **Többcsatornás fizetési konfiguráció:** A háttérirodában lépjen a **Retail és Commerce \> Központi beállítás \> Paraméterek \> Commerce megosztott paraméterei**. Ezután a **Többcsatornás fizetések** lapon állítsa a **Többcsatornás fizetések használata** beállítást **Igen** értékre. A Commerce 10.0.12 és újabb verzióiban ez a beállítás a **Funkciókezelés** munkaterületen szerepel. Válassza ki a **Többcsatornás kifizetések** funkciót, majd kattintson az **Engedélyezés most** lehetőségre. 
 - **Fizetési szolgáltatások:** A hívásközpont a **Fizetési szolgáltatások** oldalon szereplő alapértelmezett fizetési összekötőt használja a fizetések feldolgozásához. A „Vásárlás a hívásközpontban, átvétel az üzletben” és ehhez hasonló forgatókönyvek támogatása érdekében az alapértelmezett fizetési összekötőnek az Adyen fizetési összekötőnek kell lennie, vagy egy olyan fizetési összekötőnek, amely megfelel a többcsatornás fizetések megvalósítási követelményeinek.
 - **Elektronikus átutalási szolgáltatás** : A fizetési terminálon keresztül történő fizetéseket be kell állítani az **Elektronikus átutalási szolgáltatás** gyorslapon a hardverprofilban. Az Adyen összekötő beépítetten támogatja a többcsatornás fizetési forgatókönyveket. Azok a fizetési összekötők, amelyek támogatják az **iNamedRequestHandler** felületet, szintén használhatók, ha támogatják a többcsatornás fizetéseket.
@@ -231,7 +231,7 @@ Ha a rendelés létrehozásához használt kártya már nem érvényes, amikor a
 
 Ha egy olyan rendelést, amelynél több fizetőeszköz és több sor van felvéve, akkor a pénztárosnak először a **Rendelkezésre álló fizetési mód használata** figyelmeztetés jelenik meg. Ha több kártya van, amikor a pénztáros kiválasztja a **Rendelkezésre álló fizetési mód használata** pontot, akkor a program addig rögzíti a meglévő fizetőeszköz-sorokat, amíg az aktuálisan felvett cikkek egyenlege nem teljesül. A pénztárosnak nem lesz lehetősége kijelölni azt a kártyát, amelyet a felvett áruknál használni kell. 
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+## <a name="related-articles"></a>Kapcsolódó cikkek
 
 - [Kifizetésekkel kapcsolatos GYIK](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)

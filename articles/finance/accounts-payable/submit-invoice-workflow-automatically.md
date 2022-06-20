@@ -1,6 +1,6 @@
 ---
 title: Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
-description: Ez a témakör a szállítói számlák munkafolyamat-rendszerbe történő elküldését és a feladott terméknyugta sorainak a szállítói számlák soraival való automatikus egyeztetését ismerteti.
+description: Ez a cikk bemutatja a szállítói számláknak a munkafolyamat rendszerbe való elküldést és a feladott termékbevételezési soroknak a szállítói számlákhoz való automatikus egyeztetését.
 author: abruer
 ms.date: 02/11/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0962ea2bfa28deb3e86620c364feffd209cfc38e
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 960a08eb5e98cac034bbd41335b616ff41bf6fd4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861618"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a szállítói számlák munkafolyamat-rendszerbe történő elküldését és a feladott terméknyugta sorainak a szállítói számlák soraival való automatikus egyeztetését ismerteti.
+Ez a cikk bemutatja a szállítói számláknak a munkafolyamat rendszerbe való elküldést és a feladott termékbevételezési soroknak a szállítói számlákhoz való automatikus egyeztetését.
 
 ## <a name="submitting-imported-vendor-invoices-to-the-workflow-system-and-matching-posted-product-receipt-lines-to-pending-vendor-invoice-lines"></a>Az importált szállítói számlák munkafolyamat-rendszerbe történő beküldése és a feladott terméknyugta sorainak egyeztetése a függőben lévő szállítói számlák soraival.
 

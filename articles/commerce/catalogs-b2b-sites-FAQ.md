@@ -1,6 +1,6 @@
 ---
 title: Commerce-katalógusok B2B-hez – GYIK
-description: Ez a témakör a katalógusokkal kapcsolatos gyakori kérdésekre ad Microsoft Dynamics 365 Commerce választ.
+description: Ez a cikk a katalógusokkal kapcsolatos gyakori kérdésekre ad Microsoft Dynamics 365 Commerce választ.
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 5bdc7dfcb0e48aa85db2db4d178c5bf62ea0411b
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
-ms.translationtype: MT
+ms.openlocfilehash: 0cd11b4469e4dbd1205ace785fe857f6c6001480
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782862"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849041"
 ---
 # <a name="commerce-catalogs-for-b2b-faq"></a>Commerce-katalógusok B2B-hez – GYIK
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Ez a témakör megválaszolja a Microsoft Dynamics 365 Commerce [vállalat által használt (B2B) katalógusokkal kapcsolatos gyakori kérdéseket](catalogs-b2b-sites.md).
+Ez a cikk a vállalat által Microsoft Dynamics 365 Commerce [használt (B2B) katalógusokkal kapcsolatban leggyakrabban feltett kérdésekre ad választ](catalogs-b2b-sites.md).
 
 ## <a name="why-cant-i-configure-a-catalog-specific-navigation-hierarchy-or-see-an-option-to-associate-a-customer-hierarchy"></a>Miért nem lehet katalógusspecifikus navigációs hierarchiát konfigurálni, vagy látni egy vevői hierarchia társítási beállítását?
 

@@ -1,6 +1,6 @@
 ---
 title: Előlegszámlák és előlegek
-description: Ez a témakör leírásokat és összehasonlításokat tartalmaz a két módszerről, amelyeket a szervezetek használhatnak az előzetes kifizetésekhez (előlegek).
+description: Ez a témakör az előlegfizetéshez (előlegfizetéshez) használt két módszert írja le, illetve ellentételét adja meg a szervezetek számára.
 author: abruer
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f05f1d8d2a1fb454f3f227d2cc8138f2b779ff87
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716325"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895196"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Előlegszámlák és előlegek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírásokat és összehasonlításokat tartalmaz a két módszerről, amelyeket a szervezetek használhatnak az előzetes kifizetésekhez (előlegek). Az egyik módszer létrehoz egy előlegszámlát, amely társítva van egy beszerzési rendeléssel. A másik módszer előlegnapló-bizonylatokat hoz létre, naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatnak jelölésével.
+Ez a témakör az előlegfizetéshez (előlegfizetéshez) használt két módszert írja le, illetve ellentételét adja meg a szervezetek számára. Az egyik módszer létrehoz egy előlegszámlát, amely társítva van egy beszerzési rendeléssel. A másik módszer előlegnapló-bizonylatokat hoz létre, naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatnak jelölésével.
 
 Előfordulhat, hogy egyes szervezetek előlegeket (előzetes kifizetéseket) adnak ki szállítóknak árukért vagy szolgáltatásokért azok átvétele, illetve teljesítése előtt. Szállítói előlegek kiadására kétféle módszer használható. A kockázat minimálisra csökkentése érdekében az előleg beszerzési rendelésben való definiálásával nyomon követheti az előlegeket. Ehhez a módszerhez létre kell hoznia egy beszerzési rendeléshez társított előlegszámlát. A módszert előlegszámlázásnak nevezzük. Azok a szervezetek, amelyek nem kívánják az előlegeket ilyen szorosan nyomon követni vagy nem kapnak a szállítójuktól előlegszámlát, az előlegszámlázás módszere helyett használhatnak előlegnapló-bizonylatokat. Előlegnapló-bizonylatokat naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatként való megjelölésével hozhat létre. Ezzel a módszerrel nem követhető, hogy mely szállítói előleg mely beszerzési rendelés alapján kerül kifizetésre. Azonban egy beszerzési rendelés alapján kiegyenlítésre jelölhet egy feladott előleget.
 

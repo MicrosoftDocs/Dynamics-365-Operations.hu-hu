@@ -1,6 +1,6 @@
 ---
 title: Beszerzési rendelés feladása
-description: Ez a témakör a Készletfeladási profilok lap Beszerzési rendelés lapját ismerteti.
+description: Ez a témakör a Készletfeladási profilok lap Beszerzési rendelés lapját írja le.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 4b36ab9da22da7d4f3e62bd2d2aba2a2ec80e60f
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8803048"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849931"
 ---
 # <a name="purchase-order-posting"></a>Beszerzési rendelés feladása
 
@@ -125,7 +125,7 @@ A beszerzési igényléseket és a beszerzési rendelések visszaigazolását ú
 
 ## <a name="procurement-category-posting"></a>Beszerzési kategória feladása
 
-A készletfeladás beállításának alternatívájaként beállíthatja az összes cikkre, cikkcsoportra vagy egyetlen cikkre vonatkozó beállításokat, kategóriákat állíthat be, és a beszerzési kategóriák szerinti főkönyvi feladást szabályozhatja. A kategóriák beállításával [és](#sample-posting-profile-configuration) termékekhez való hozzárendelésével kapcsolatos további tudnivalókat a témakör korábbi, Minta feladási profil konfigurációjában található meg.
+A készletfeladás beállításának alternatívájaként beállíthatja az összes cikkre, cikkcsoportra vagy egyetlen cikkre vonatkozó beállításokat, kategóriákat állíthat be, és a beszerzési kategóriák szerinti főkönyvi feladást szabályozhatja. A kategóriák beállításával [és](#sample-posting-profile-configuration) termékekhez való hozzárendelésével kapcsolatos további tudnivalókat a cikk korábbi példafeladási profiljának konfigurációjában talál.
 
 Ha beszerzési rendelésekkel vagy szállítói számlákkal használ kategóriákat, **akkor a kategóriahierarchiát hozzá kell rendelni a Beszerzési kategóriahierarchia** **típushoz a Kategóriahierarchia szerepkör-hozzárendelések** lapon.
 

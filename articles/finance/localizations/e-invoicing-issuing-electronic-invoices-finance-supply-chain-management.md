@@ -1,6 +1,6 @@
 ---
-title: Elektronikus számlák kibocstása a Finance és Supply Chain Management szolgáltatásokban
-description: Ez a témakör bemutatja, hogyan állíthat ki elektronikus számlákat a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban az Elektronikus számlázás segítségével.
+title: Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
+description: Ez a cikk bemutatja, hogy Microsoft Dynamics hogyan lehet elektronikus számlákat kiszámláozni a 365 Pénzügyben Dynamics 365 Supply Chain Management és az Elektronikus számlázás segítségével.
 author: gionoder
 ms.date: 03/29/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 24909c2a2505724c159e939535c1d57cb66e48629862bebb32b3d72c0eb06c97
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 465aea4eda3cbb023f7e222ba51553654131c0c7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752126"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864179"
 ---
 # <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan állíthat ki elektronikus számlákat a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban az Elektronikus számlázás segítségével.
+Ez a cikk bemutatja, hogy Microsoft Dynamics hogyan lehet elektronikus számlákat kiszámláozni a 365 Pénzügyben Dynamics 365 Supply Chain Management és az Elektronikus számlázás segítségével.
 
 
 ## <a name="feature-activation"></a>Funkció aktiválása

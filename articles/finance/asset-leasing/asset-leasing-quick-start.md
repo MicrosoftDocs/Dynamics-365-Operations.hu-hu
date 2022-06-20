@@ -1,6 +1,6 @@
 ---
 title: Eszközlízing – első lépések
-description: Ez a témakör az eszközlízing-képességet ismerteti, valamint bemutatja az eszközlízing létrehozásának, valamint a lízingekkel kapcsolatos információk megtekintésének lépéseit.
+description: Ez a témakör leírja az eszköz kölcsönzését, valamint végigvezeti az eszközbérlet létrehozásának lépéseit, és megtekinti ezeknek a bérleti bérleti adatoknak a megtekintését.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 991685f50a00e60026331bf573561be904c7f9ab
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: df4343031b3b116318f798f31adb4d1f6bed1db9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710329"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895138"
 ---
 # <a name="asset-leasing-get-started"></a>Eszközlízing – első lépések
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az eszközlízing-képességet ismerteti, valamint bemutatja az eszközlízing létrehozásának, valamint a lízingekkel kapcsolatos információk megtekintésének lépéseit. A témakör a felhasználói felületen és a dokumentációban használt terminológiát is meghatározza. A tárgyi eszközök értékcsökkenése a bérelt eszközök pénzügyi tranzakcióinak a 365 Pénzügyben való kezelésére, Microsoft Dynamics nyomon követésére és automat kezelésére szolgáló speciális képesség. Az eszközlízing megfelel a nemzetközi könyvelési szabványoknak (IFRS 16) és az Egyesült Államokban GAAP szabványainak (ASC 842). Az eszközlízing modul rögzíti és dolgozza fel a lízinggel kapcsolatos adatokat, és segítséget nyújt a naplóbejegyzések létrehozásában a lízing életciklusa alatt – a kezdő elszámolástól és a havi naplóbejegyzésektől egészen a lízing értékvesztéséig és lezárásáig. A tárgyi eszközök problémamentesen integrálhatók a Dynamics 365 Pénzügy más összetevőivel, például a Tárgyi eszközök, a Kötelezettségek és a Főkönyv modulval.
+Ez a témakör leírja az eszköz kölcsönzését, valamint végigvezeti az eszközbérlet létrehozásának lépéseit, és megtekinti ezeknek a bérleti bérleti adatoknak a megtekintését. A cikk a felhasználói felületen és a dokumentációban használt fogalmakat is meghatározza. A tárgyi eszközök értékcsökkenése a bérelt eszközök pénzügyi tranzakcióinak a 365 Pénzügyben való kezelésére, Microsoft Dynamics nyomon követésére és automat kezelésére szolgáló speciális képesség. Az eszközlízing megfelel a nemzetközi könyvelési szabványoknak (IFRS 16) és az Egyesült Államokban GAAP szabványainak (ASC 842). Az eszközlízing modul rögzíti és dolgozza fel a lízinggel kapcsolatos adatokat, és segítséget nyújt a naplóbejegyzések létrehozásában a lízing életciklusa alatt – a kezdő elszámolástól és a havi naplóbejegyzésektől egészen a lízing értékvesztéséig és lezárásáig. A tárgyi eszközök problémamentesen integrálhatók a Dynamics 365 Pénzügy más összetevőivel, például a Tárgyi eszközök, a Kötelezettségek és a Főkönyv modulval.
 
 A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkciókezelés** munkaterületen keresse meg és válassza ki az **Eszközlízing** funkciót, majd kattintson az **Engedélyezés most** gombra.
 

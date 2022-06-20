@@ -1,6 +1,6 @@
 ---
 title: Változó kompenzációs konstrukciók létrehozása
-description: A témakör ismerteti az összetevőket, amelyeket be kell állítani, mielőtt használhatna változó kompenzációt, és bejegyezhetne egy alkalmazottat a változó kompenzációs tervbe.
+description: A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt használhatna változó kompenzációt és bejegyezhetne egy alkalmazottat a változó kompenzációs tervbe.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 589990c48d115266b57589f905de20572e76a040
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853074"
 ---
 # <a name="create-variable-compensation-plans"></a>Változó kompenzációs tervek létrehozása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688657"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A változó kompenzáció teszi ki egy alkalmazott az alapon felüli kifizetéseit, például a bónuszokat vagy a készlet díjakat. A témakör ismerteti, hogyan lehet beállítani az összetevőket, amelyek szükségesek, mielőtt használhatna változó kompenzációt, és bejegyezhetne egy alkalmazottat a változó kompenzációs tervbe.
+A változó kompenzáció teszi ki egy alkalmazott az alapon felüli kifizetéseit, például a bónuszokat vagy a készlet díjakat. Ez a témakör bemutatja a változó kompenzációhoz szükséges összetevők beállítását és az alkalmazottak változó kompenzációs konstrukcióba való felvételét.
 
 Az alkalmazottaknak járó változó kompenzációs összegek számítása számos tényező alapján történhet, például az alkalmazott teljesítménye, kompenzációs szintje és a részleg teljesítménye alapján.
 

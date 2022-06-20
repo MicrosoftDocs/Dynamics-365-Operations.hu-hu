@@ -1,6 +1,6 @@
 ---
 title: Azure-erőforrások beállítása elektronikus számlázáshoz
-description: Ez a témakör áttekintést nyújt Microsoft Azure az elektronikus számlázás erőforrás-beállításának folyamatával kapcsolatban.
+description: Ez a témakör áttekintést nyújt Microsoft Azure az elektronikus számlázás erőforrás-beállításának folyamatával.
 author: dkalyuzh
 ms.date: 01/26/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cb1fcddce1054aebf9ef70ba69eb7aca98093cbe
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: c5b7b2ca4d7733fb1c75ded8798655699284fe1a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371887"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907729"
 ---
 # <a name="set-up-azure-resources-for-electronic-invoicing"></a>Azure-erőforrások beállítása elektronikus számlázáshoz
 
@@ -34,13 +34,13 @@ Kulcskulcs létrehozása Az Azure-előfizetésben. Javasoljuk, hogy hozzon létr
 
 A lépés befejezéséről [az Azure-kulcsok létrehozása az Azure-portálon található tájékoztatás](e-invoicing-create-azure-key-vault-azure-portal.md).
 
-## <a name="create-an-azure-storage-account-in-the-azure-portal"></a>Azure-tárolási fiók létrehozása az Azure-portálon
+## <a name="create-an-azure-storage-account-in-the-azure-portal"></a>Azure-tárfiók létrehozása az Azure Portalon
 
 A felhasználó a sajátja minden olyan elektronikus dokumentumnak és fájlnak, amelyet az Elektronikus számlázási szolgáltatás generál, illetve amely a szolgáltatás beíródik. Ezeket a dokumentumokat és fájlokat Az Azure-előfizetésben létrehozott Azure-tárhelyfiók tárolja. A szolgáltatás az Ön tárolási fiókjához annak a SAS jogkivonatnak a használatával fér hozzá, amely a Kulcs Titkos titkos kulcsból van átveve.
 
 A lépéssel kapcsolatos tudnivalókat [lásd: Hozzon létre egy Azure-tárolási fiókot az Azure-portálon](e-invoicing-create-azure-storage-account-azure-portal.md).
 
-## <a name="configure-a-sharepoint-connection"></a>SharePoint Kapcsolat konfigurálása
+## <a name="configure-a-sharepoint-connection"></a>SharePoint kapcsolat konfigurálása
 
 Bizonyos helyzetekben előfordulhat, hogy mentenie kell az elektronikus fájlokat SharePoint, és be kellolvasnia őket onnan SharePoint. Annak érdekében, hogy az elektronikus számlázási szolgáltatás hozzáférjen a mappákhoz SharePoint, konfigurálja a hozzáférést a mappához SharePoint.
 

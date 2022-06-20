@@ -1,6 +1,6 @@
 ---
 title: Európa – áttekintés
-description: Ez a témakör a Microsoft Dynamics 365 Finance dokumentációforrásokra mutató hivatkozásokat tartalmaz Európára vonatkozóan.
+description: Ez a cikk az Európai Microsoft Dynamics Pénzügyi dokumentumokkal kapcsolatos 365-ös dokumentum-erőforrásokra mutató hivatkozásokat tartalmaz.
 author: kfend
 ms.date: 01/15/2022
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 9a9fd88bde02d8ea4f6eeda5e8785366ec0d8e85
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367848"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856518"
 ---
 # <a name="europe-overview"></a>Európa – áttekintés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi személyek beállításában, akiknek elsődleges cím Európában található. 
+Ez a cikk olyan erőforrásokra mutató hivatkozásokat és információkat tartalmaz, amelyek segítségével jogi személyeket állíthat be elsődleges európai címmel. 
 
 - [Előlegre jogosultak áttekintése](emea-advance-holders.md)
  - [Előlegre jogosult tranzakciói](emea-advance-holders-transactions.md)

@@ -1,6 +1,6 @@
 ---
 title: Napló kiküldésének hibája egyensúlyhiány miatt
-description: Ez a téma elmagyarázza, hogy miért fordulhat elő, hogy a terhelések és jóváírások nem egyenlők az utalványügyletekben, így a tranzakciókat nem lehet könyvelni. A téma a probléma javításának lépéseit is tartalmazza.
+description: Ez a cikk bemutatja, hogy miért lehet, hogy a tartozik és a követel tételek miért nem kiegyensúlyozottak a bizonylattranzakciókban, így a tranzakciókat nem lehet feladva. A cikk a probléma kijavításának lépéseit is tartalmazza.
 author: kweekley
 ms.date: 08/03/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 07408e608496dcc19562b866449b3b27f5f80edd
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f5afded3d5c42f8dab465b668e4c1fcdaed8c215
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861329"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Napló kiküldésének hibája egyensúlyhiány miatt
 
 [!include [banner](../includes/banner.md)]
 
-Ez a téma elmagyarázza, hogy miért fordulhat elő, hogy a terhelések és jóváírások nem egyenlők az utalványügyletekben, így a tranzakciókat nem lehet könyvelni. A téma a probléma javításának lépéseit is tartalmazza.
+Ez a cikk bemutatja, hogy miért lehet, hogy a tartozik és a követel tételek miért nem kiegyensúlyozottak a bizonylattranzakciókban, így a tranzakciókat nem lehet feladva. A cikk a probléma kijavításának lépéseit is tartalmazza.
 
 ## <a name="symptom"></a>Tünet
 

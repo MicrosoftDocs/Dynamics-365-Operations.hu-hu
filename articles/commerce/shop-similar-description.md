@@ -1,6 +1,6 @@
 ---
-title: „Hasonló megvásárlása leírás” javaslatok engedélyezése
-description: Ez a témakör azt mutatja be, hogyan engedélyezheti a „hasonló megvásárlása leírás” termékjavaslatokat a Microsoft Dynamics 365 Commerce szolgáltatásban.
+title: „Hasonló leírású termékek vásárlása” javaslatok engedélyezése
+description: Ez a témakör azt ismerteti, hogyan lehet engedélyezni a "hasonló üzletek" termékajánlásokat a következőben:Microsoft Dynamics 365 Commerce
 author: bsokolov
 ms.date: 01/13/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 733b21870f9dd7ffa42fce3bccf669a59d633b14
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b935731b24f96753c814e3b496ffeeb7a92d9cc1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691003"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852008"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>„Hasonló leírású termékek vásárlása” javaslatok engedélyezése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan engedélyezheti a „hasonló megvásárlása leírás” termékjavaslatokat a Microsoft Dynamics 365 Commerce szolgáltatásban.
+Ez a témakör azt ismerteti, hogyan lehet engedélyezni a "hasonló üzletek" termékajánlásokat a következőben:Microsoft Dynamics 365 Commerce
 
 A „hasonló megvásárlása leírás” javaslatokat tartalmazó funkció a Dynamics 365 Commerce szolgáltatásban mesterséges intelligenciát és gépi tanulást (AI-ML) alkalmaz, hogy olyan termékeket ajánljon a vevőnek, amelyek leírása hasonlít ahhoz, amit a vevő keres. A „hasonló megvásárlása leírás” javaslatok elérhetők a Commerce összes kiskereskedelmi csatornáján, ezzel a kiskereskedők segíthetnek a vevőknek abban, hogy könnyebben megtalálják azt, amit akarnak.
 

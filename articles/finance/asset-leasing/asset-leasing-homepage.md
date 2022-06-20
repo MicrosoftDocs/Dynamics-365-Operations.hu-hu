@@ -1,6 +1,6 @@
 ---
 title: Eszközlízing – kezdőlap
-description: Ez a témakör áttekintést nyújt az eszközlízing-dokumentációról, valamint az adott témakörökre mutató hivatkozásokról.
+description: Ez a cikk áttekintést nyújt az eszközök dokumentációiról, és hivatkozásokat tartalmaz bizonyos témakörökre.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c82c54b08a7d4c603d1246c598abacc51eb88839
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710385"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889149"
 ---
 # <a name="asset-leasing-home-page"></a>Eszközlízing – kezdőlap
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az eszközlízinghez rendelkezésre álló súgótémaköröket sorolja fel, és konkrét témakörökre mutató hivatkozásokat tartalmaz. 
+Ez a témakör felsorolja azokat a súgótémaköreket, amelyek elérhetőek a tárgyi eszközök értékcsökkenése számára, és hivatkozásokat tartalmaz az egyes témakörökre. 
 
 A tárgyi eszközök értékcsökkenése a bérelt eszközök pénzügyi tranzakcióinak a 365 Pénzügyben való kezelésére, Microsoft Dynamics nyomon követésére és automat kezelésére szolgáló speciális képesség. Az eszközlízing megfelel a nemzetközi könyvelési szabványoknak (IFRS 16) és az Egyesült Államokban GAAP szabványainak (ASC 842). Az eszközlízing modul rögzíti és dolgozza fel a lízinggel kapcsolatos adatokat, és segítséget nyújt a naplóbejegyzések létrehozásában a lízing életciklusa alatt – a kezdő elszámolástól és a havi naplóbejegyzésektől egészen a lízing értékvesztéséig és lezárásáig.
 
 A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkciókezelés** munkaterületen keresse meg és válassza ki az **Eszközlízing** funkciót, majd kattintson az **Engedélyezés most** gombra.
 
 ## <a name="asset-leasing-topics"></a>Eszközlízing témakörök
-Az alábbi témakör az eszközlízing konfigurálásához és használatához érhető el. 
+Az alábbi cikk segítséget ad az eszközök konfigurálásában és használatában. 
 
- - [Eszközlízing első lépések](asset-leasing-quick-start.md) – Ez a témakör ismerteti az eszközlízing általános képességeit, és felsorolja és meghatározza a szoftverben és a dokumentációban használt kifejezéseket.
+ - [Tárgyi eszközök első lépésekben –](asset-leasing-quick-start.md) ez a cikk leírja a tárgyi eszközök általános képességeit, valamint felsorolja és meghatározza a szoftverben és a dokumentációban használt feltételeket.
  
  ### <a name="set-up-asset-leasing"></a>Eszközlízing beállítása
  Ezek a témakörcsoportok segítenek a szervezetek üzleti helyzetének megfelelő eszközlízing-konfigurálásban.  
@@ -77,7 +77,7 @@ Ez a témakörcsoport a lízingek hozzáadásának, a fizetési számlák létre
  - [Lízing kezelése a lízingimportálási keretrendszeren keresztül](manage-leases-thru-imprt-framewrk.md)
  
 ### <a name="asset-leasing-reporting"></a>Eszközlízing-jelentés
-Ez a témakör az eszközlízingek számára elérhető jelentéseket ismerteti. 
+Ez a témakör a tárgyi eszközök bérletére használható jelentéseket ismerteti. 
 
  - [Eszközlízing-jelentések](asset-leasing-rprts.md)
  

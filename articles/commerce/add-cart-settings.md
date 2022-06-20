@@ -1,6 +1,6 @@
 ---
 title: Termék kosárhoz adási beállításainak alkalmazása
-description: Ez a témakör ismerteti a „Termék hozzáadása a kosárhoz” beállításait, és bemutatja, hogyan alkalmazhatók a Microsoft Dynamics 365 Commerce rendszerében.
+description: Ez a témakör leírja a "Termék hozzáadása a kosárhoz" beállítást, és bemutatja, hogyan lehet azokat alkalmazni a kosárban Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 07/08/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6299a1c815978ab9f748b6110980e673e1fbae927ed08a5e2e080f89ef063115
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 336bea289b22e4f6f98077f915d7d35f2a48682d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712814"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866030"
 ---
 # <a name="apply-add-product-to-cart-settings"></a>Termék kosárhoz adási beállításainak alkalmazása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti a **Termék hozzáadása a kosárhoz** beállításait, és bemutatja, hogyan alkalmazhatók a Microsoft Dynamics 365 Commerce rendszerében.
+Ez a témakör a Termék **hozzáadása** a kosárhoz beállítást ismerteti, és bemutatja, hogyan lehet azokat alkalmazni a kosárban Microsoft Dynamics 365 Commerce.
 
 Különböző munkafolyamatok támogatottak, amikor egy terméket hozzáadnak a kosárhoz a Dynamics 365 Commerce egyik e-kereskedelmi webhelyén. Előfordulhat például, hogy a webhely egyik felhasználója a bevásárlókocsihoz kerül. Azt is be lehet állítani, hogy a felhasználó az aktuális oldalon maradjon, de értesítést kapjon arról, hogy a terméket a kosárba helyezte.
 

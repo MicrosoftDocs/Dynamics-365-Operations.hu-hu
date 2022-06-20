@@ -1,6 +1,6 @@
 ---
 title: Automatikus kiegyenlítés és rangsorolás
-description: Ez a témakör bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt.
+description: Ez a cikk bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt.
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47ccdb49b4d5c43b4f9cb9a967bd30376474e4c1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd5b894c82beb1b5d69ad6bf485161ab9c91a806
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712258"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855520"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatikus kiegyenlítés és rangsorolás
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt.
+Ez a cikk bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt.
 
 A kifizetések számlákkal, vagy egyéb tranzakciókkal történő kiegyenlítésekor két lehetőség közül választhat. Kiválaszthatja manuálisan a kiegyenlítendő tranzakciókat, vagy a rendszer automatikusan kiválasztja a tranzakciókat az automatikus kiegyenlítési funkciót alkalmazva. Az automatikus kiegyenlítés feldolgozását testreszabhatja a **Kiegyenlítés rangsorolása** lehetőséggel. Ezek a beállítások részei a kiegyenlítési paraméterek modulnak, amelyek a **Kinnlevőségek paraméterei** lapon vannak meghatározva. A tranzakciók automatikus kiegyenlítési módjai eltérhetnek, attól függően, hogy milyen módszert használ az automatikus kiegyenlítéshez. A következő módszerek állnak rendelkezésre:
 

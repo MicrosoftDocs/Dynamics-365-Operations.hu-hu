@@ -1,6 +1,6 @@
 ---
 title: Hozzon létre Azure tárfiókot és egy kulcstartót
-description: Ez a témakör azt mutatja be, hogyan lehet egy Azure tárfiókot és egy kulcstartót létrehozni.
+description: Ez a témakör bemutatja, hogyan lehet Azure-tárolási fiókokat és kulcsokat létrehozni.
 author: gionoder
 ms.date: 08/17/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23fec7a00d800719e1a7d2c90f9d0977d56be038
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.openlocfilehash: ae2f21e959e35690ca3d8bd09059cfbf679ab842
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463857"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907761"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Hozzon létre Azure tárfiókot és egy kulcstartót
 
@@ -28,14 +28,14 @@ ms.locfileid: "7463857"
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Mielőtt teljesítené az ebben a témakörben ismertetett lépéseket, bizonyosodjon meg arról, hogy a következő feladatok el lettek végezve:
+A cikk lépéseit csak akkor lehet végrehajtani, ha előtte befejezte a következő feladatokat:
 
 - Kulcstartó-erőforrás létrehozása az Azure szolgáltatásban. További információkért lásd [Az Azure Key Vaulról](/azure/key-vault/general/overview) lehetőséget.
 - Hozzon létre egy Azure tárfiókot (Blob-tároló). További információkért lásd a [Azure tárfiók karbantartása](/azure/storage/blobs/) lehetőséget.
 
 ## <a name="overview"></a>Áttekintés
 
-Ebben a témakörben két fő lépést kell végrehajtania:
+Ebben a cikkben két lépést kell végrehajtania:
 
 - Az Azure tárfiók beállítása a tárfiók URI-azonosítójának megszerzéséhez.
 - A kulcstartó beállítása a tárfiók URI-azonosítójának tárolásához.

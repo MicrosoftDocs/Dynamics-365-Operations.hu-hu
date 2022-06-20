@@ -1,5 +1,5 @@
 ---
-title: Egységes szállításimód-kezelés engedélyezése az e-commerce csatornákban
+title: Konzisztens szállítási mód kezelésének engedélyezése az e-kereskedelmi csatornákban
 description: Ez a témakör azt ismerteti, hogyan Microsoft Dynamics 365 Commerce lehet a egységes szállítási módkezelést engedélyezni az e-commerce csatornák költségáramlásával kapcsolatos lehetséges problémák kezelésére.
 author: gvrmohanreddy
 ms.date: 02/24/2022
@@ -9,14 +9,14 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.openlocfilehash: 4cecd70dacd72572afc8e6cb65530bf2be4cc93d
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: f32f1915f8f7de1d5536b69b05bc74c6149dfda6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885585"
 ---
-# <a name="enable-consistent-delivery-mode-handling-in-e-commerce-channels"></a>Egységes szállításimód-kezelés engedélyezése az e-commerce csatornákban 
+# <a name="enable-consistent-delivery-mode-handling-in-e-commerce-channels"></a>Konzisztens szállítási mód kezelésének engedélyezése az e-kereskedelmi csatornákban 
 
 [!include [banner](includes/banner.md)]
 

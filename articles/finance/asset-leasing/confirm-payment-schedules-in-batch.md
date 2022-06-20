@@ -1,6 +1,6 @@
 ---
 title: Eszközlízing fizetési ütemezések megerősítése kötegben
-description: Ez a témakör azt mutatja be, hogyan lehet több fizetési ütemezést megerősíteni egy kötegben.
+description: Ez a cikk bemutatja, hogyan lehet egy kötegben több fizetési ütemezést megerősíteni.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c19ac162c5e4c62c2440a0f16111c8cd69748e92
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd75e22f6407d6bc25a78c1dfeacf70022238e94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711827"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895051"
 ---
 # <a name="confirm-asset-leasing-payment-schedules-in-a-batch"></a>Eszközlízing fizetési ütemezések megerősítése kötegben
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet több fizetési ütemezést megerősíteni egy kötegben. A kifizetési ütemezéseket vagy a lízingtől-lízingig alapján vagy a megerősítési köteg folyamatán keresztül lehet megerősíteni. A naplóbejegyzés csak a jóváhagyott fizetési ütemezéssel rendelkező lízingek esetében adható fel. A kifizetési ütemezés megerősítése a lízing pénzügyi adatainak végleges jóváhagyására szolgál. A lízing pénzügyi adatainak jövőbeli változásai – például a kifizetések és a lízingfutamidő – a lízingkiigazítást jelentik, és ennek megfelelően kell feldolgozni.
+Ez a cikk bemutatja, hogyan lehet egy kötegben több fizetési ütemezést megerősíteni. A kifizetési ütemezéseket vagy a lízingtől-lízingig alapján vagy a megerősítési köteg folyamatán keresztül lehet megerősíteni. A naplóbejegyzés csak a jóváhagyott fizetési ütemezéssel rendelkező lízingek esetében adható fel. A kifizetési ütemezés megerősítése a lízing pénzügyi adatainak végleges jóváhagyására szolgál. A lízing pénzügyi adatainak jövőbeli változásai – például a kifizetések és a lízingfutamidő – a lízingkiigazítást jelentik, és ennek megfelelően kell feldolgozni.
 
 Több fizetési ütemezés jóváhagyásához kövesse az alábbi lépéseket.
 

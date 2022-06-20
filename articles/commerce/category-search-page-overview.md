@@ -1,6 +1,6 @@
 ---
 title: Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
-description: Ez a témakör a Dynamics 365 Commerce alkalmazás alapértelmezett kategória-céloldalának és keresési találatoldalának áttekintését nyújtja
+description: Ez a cikk áttekintést nyújt a kategória alapértelmezett oldalának és a keresési eredmények oldalának stb Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 06/30/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982434"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881852"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce e-Commerce alkalmazás alapértelmezett kategória-céloldalának és keresési találatoldalának áttekintését nyújtja.
+Ez a cikk áttekintést nyújt az e-Commerce alapértelmezett kategória-oldalról és keresési eredményoldalról Microsoft Dynamics 365 Commerce.
 
 ## <a name="default-category-landing-page"></a>Alapértelmezett kategória-céloldal
 
@@ -32,7 +32,7 @@ Az alapértelmezett kategória kezdőlap az a lap, ahova a rendszer a webhely fe
 
 ![Alapértelmezett kategória-céloldal.](./media/SimpleCategoryLandingDressCategory.png)
 
-A lap tetején egy fejléc jelenik meg, amelyen látható az összes termékkategória és egyéb lap, amelyet a termékkihelyezési vezető kategorizált. A konfiguráció a csatorna navigációs hierarchiájának konfigurációja részeként történik. A lap alján van egy lábléc, amely gyorshivatkozásokat tartalmaz a különböző témákhoz, amelyek érdekesek lehetnek a vevők számára.
+A lap tetején egy fejléc jelenik meg, amelyen látható az összes termékkategória és egyéb lap, amelyet a termékkihelyezési vezető kategorizált. A konfiguráció a csatorna navigációs hierarchiájának konfigurációja részeként történik. Az oldal alján egy olyan lábléc látható, amely gyors hivatkozásokat tartalmaz különböző cikkekre, amelyek iránt egy üzletkötő érdeklődést lehet iránt érdeklődők.
 
 A következő összetevők elengedhetetlenek a kategóriákhoz:
 

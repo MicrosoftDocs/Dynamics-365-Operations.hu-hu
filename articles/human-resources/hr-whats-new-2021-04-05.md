@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban, 2021. április 5.
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. április 5-i kiadásban.
+description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. április 5-i kiadásban.
 author: marcelbf
 ms.date: 04/05/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 19ac856de0fed9253bf79cb4c06d4347e5a19c77
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1b8074877b8d2b2c05596406cbf2d98febd2e8cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693472"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899527"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-5-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban, 2021. április 5.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le.
+Ez a témakör az új, módosított vagy hamarosan érkező funkciókat írja le Dynamics 365 Human Resources.
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -48,9 +48,9 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 > [!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakört frissítjök olyan hibajavításokkal, amelyek annak első közzététele után léptek életbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. A cikk első közzététele után frissíthet egy hibajavítást, amely a javításokat tartalmazza a buildben.
 
-| Kiadás száma | Kiadás |  Leírás |
+| Kiadás száma | Probléma |  Leírás |
 | --- | --- | --- |
 | 550852 | A **Jóváhagyás** gomb nem érvényesíti az **Ellenőrzés** képernyőn beállított kötelező mezőket. | Ha az **Ellenőrzés** képernyőn kötelező mezőként beállít egy mezőt, és közzéteszi a módosításokat a vezetői szerepkörben, akkor a képernyő nem a várt módon ellenőrzi az érvényesítést. |
 | 559564 | A fix kompenzáció módosításakor alkalmazott korábbi dolgozói műveletek hibát jeleznek a már kilépett felhasználóknál. | Egy kilépett alkalmazotti kompenzáció dolgozói művelete hibát jelez. Ha egy alkalmazott munkaviszonya megszűnik, akkor a felmondás előtti előléptetés dolgozói művelet hibát jelez. |

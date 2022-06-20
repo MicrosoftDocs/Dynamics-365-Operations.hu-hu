@@ -1,6 +1,6 @@
 ---
 title: Állapotellenőrzés pénztárperifériákhoz és -szolgáltatásokhoz
-description: Ez a témakör áttekintést nyújt az állapotfelmérés műveleteiről a pénztárban (POS).
+description: Ez a cikk áttekintést nyújt a pénztári állapotellenőrzési műveletről.
 author: BrianShook
 ms.date: 03/06/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: cd4e97b8dbfc4faf336d4ea927342fd4fa3cc7cd
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 44fd4b6246d3d7947527416c2b8b447bd64f179f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863321"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>Állapotellenőrzés pénztárperifériákhoz és -szolgáltatásokhoz
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja az állapotfelmérés műveleteit a pénztárban (POS).
+Ez a témakör a pénztár állapotellenőrzési műveletét írja le.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -39,7 +39,7 @@ A Microsoft Dynamics 365 Commerce 10.0.10 és újabb verziói egy olyan állapot
 | Időszak | Leírás |
 |---|---|
 | Perifériák | Minden olyan eszköz, amelyet a pénztári alkalmazás használ az üzlet tranzakcióinak és egyéb műveleteinek megkönnyítésére. Ilyenek például a pénztárgépfiókok, a vonalkód-olvasók és a fizetőterminálok. |
-| Szerviz | Ebben a témakörben a szolgáltatás egy olyan kiegészítő alkalmazás, amelyre a pénztári alkalmazás támaszkodik a tranzakciók és mindennapi műveletek elvégzésében. Ilyenek például az adó-és a szállítási számításokat segítő alkalmazások. |
+| Szolgáltatás | Ebben a cikkben a szolgáltatás kiegészítő alkalmazás, amely a tranzakciók és a napi műveletek elvégzésétől függ. Ilyenek például az adó-és a szállítási számításokat segítő alkalmazások. |
 
 ## <a name="health-check-operation"></a>Állapotfelmérés művelet
 

@@ -1,6 +1,6 @@
 ---
 title: Statikus fájlok feltöltése és kiszolgálása
-description: Ez a témakör azt ismerteti, hogy miként tölthet fel statikus fájlt a Microsoft Dynamics 365 Commerce webhelyszerkesztőjébe, és hogyan hozhat létre egyéni URL-címet és fájlnevet, amely az adott fájl igényléséhez használható.
+description: Ez a témakör bemutatja, hogyan lehet feltölteni egy statikus fájlt a Microsoft Dynamics 365 Commerce webhelyszerkesztőbe, és hogyan lehet létrehozni egy egyéni URL-címet és fájlnevet, amely a fájl kérésére használható.
 author: StuHarg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1b14feba1466c3a5efc3b0ea66f20e9e818a8a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714683"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885322"
 ---
 # <a name="upload-and-serve-static-files"></a>Statikus fájlok feltöltése és kiszolgálása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogy miként tölthet fel statikus fájlt a Microsoft Dynamics 365 Commerce webhelyszerkesztőjébe, és hogyan hozhat létre egyéni URL-címet és fájlnevet, amely az adott fájl igényléséhez használható.
+Ez a témakör bemutatja, hogyan lehet feltölteni egy statikus fájlt a Microsoft Dynamics 365 Commerce webhelyszerkesztőbe, és hogyan lehet létrehozni egy egyéni URL-címet és fájlnevet, amely a fájl kérésére használható.
 
-Egyes külső összekötők megkövetelik, hogy egy fájlt az e-kereskedelmi webhelyről tárolják és szolgálják ki. Ezek az összekötők arra számítanak, hogy a fájlt egy adott visszahívási URL elérési útvonalra és fájlnévre irányuló kérelmek adják vissza. Ezért ez a témakör azt ismerteti, hogyan tölthet fel és szolgálhat ki olyan statikus fájlt, amely felhasználó által definiálható URL-címmel és fájlnévvel rendelkezik egy Dynamics 365 Commerce e-kereskedelmi webhelyen.
+Egyes külső összekötők megkövetelik, hogy egy fájlt az e-kereskedelmi webhelyről tárolják és szolgálják ki. Ezek az összekötők arra számítanak, hogy a fájlt egy adott visszahívási URL elérési útvonalra és fájlnévre irányuló kérelmek adják vissza. Ebből következően ez a cikk bemutatja egy olyan statikus fájl feltöltését és kiszolgálását, amely felhasználó által definiálható URL-címet és fájlnevet tartalmaz egy Dynamics 365 Commerce e-commerce webhelyen.
 
 ## <a name="create-a-site-url-that-returns-a-static-file"></a>Statikus fájlt visszaadó webhely URL-címének létrehozása
 
@@ -86,7 +86,7 @@ Az URL-cím létrehozása után az elérési út nem módosítható. Ha módosí
 
 Az URL-cím elérési útjának módosításához kövesse az alábbi lépéseket.
 
-1. Új URL-cím létrehozásához és a meglévő fájlhoz vagy más erőforráshoz való hozzárendeléséhez kövesse a jelen téma korábbi szakaszában, a [Statikus fájlt visszaadó webhely URL-címének létrehozása](#create-a-site-url-that-returns-a-static-file) részben leírt utasításokat.
+1. Új URL-cím [létrehozásához és meglévő fájlhoz vagy más erőforráshoz való leképezéséhez kövesse a Webhely létrehozása URL-címben található útmutatást, amely statikus fájlszakaszt ad vissza a](#create-a-site-url-that-returns-a-static-file) cikk korábbi részében.
 1. Jelölje ki az új URL-címet, és válassza a **Közzététel** lehetőséget a parancssávon. Az új URL-cím közzé lesz téve.
 1. A régi URL közzétételének visszavonásához jelölje ki, majd válassza a **Közzététel visszavonás** elemet a parancssávon. Most már törölheti a régi URL-t, ha akarja.
 

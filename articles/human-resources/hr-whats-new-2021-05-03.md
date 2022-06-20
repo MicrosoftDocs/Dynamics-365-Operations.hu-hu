@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban 2021. május 3-án
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. május 3-i kiadásban.
+description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. május 3-i kiadásban.
 author: marcelbf
 ms.date: 05/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 01babeae8ccb5af5e414cb78734ce05adf670277
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 01ebd15e09e181a7ea0ec5bf70c8df731d2169c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689775"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902860"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-3-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban 2021. május 3-án
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le.
+Ez a témakör az új, módosított vagy hamarosan érkező funkciókat írja le Dynamics 365 Human Resources.
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -48,9 +48,9 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 > [!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakört frissítjök olyan hibajavításokkal, amelyek annak első közzététele után léptek életbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. A cikk első közzététele után frissíthet egy hibajavítást, amely a javításokat tartalmazza a buildben.
 
-| Kiadás száma | Kiadás |  Leírás |
+| Kiadás száma | Probléma |  Leírás |
 | --- | --- | --- |
 | 559312 |  A szint nem jelenik meg, amikor fix kompenzációs konstrukciót hoz létre egy alkalmazott számára. |  Ha időzóna-eltérés van a felhasználó időzónája és a vállalat időzónája között, akkor a feladathoz megadott kompenzációs szintet nem sikerült beolvasni. A lekérdezés UTC-idő alapján lett frissítve a beolvasásra. |
 | 573676  | Nem lehet új időszakot hozzáadni a **Juttatási terv** űrlapon. | A képernyő frissítése után a **Juttatási tervek** **Időszak** gyorslapja alatt elérhető **Új** gomb engedélyezve lesz. |

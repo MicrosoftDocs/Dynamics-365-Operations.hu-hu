@@ -1,5 +1,5 @@
 ---
-title: Csatornák leképezése e-kereskedelmi webhelyekre
+title: Csatornák leképezése e-kereskedelmi webhelyekhez
 description: Ez a témakör néhány olyan Microsoft Dynamics 365 Commerce gyakori csatorna-hozzárendelési helyzetet ismertet, amelyek a legtöbb egyéb üzleti követelmény esetén külön is használhatók.
 author: samjarawan
 ms.date: 05/11/2022
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ce272d63b4a37f99661333a02434708205ea19a
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 94c43df26e8d6e55a5b6d459b65066d5873e1063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743599"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902763"
 ---
-# <a name="map-channels-to-e-commerce-sites"></a>Csatornák leképezése e-kereskedelmi webhelyekre
+# <a name="map-channels-to-e-commerce-sites"></a>Csatornák leképezése e-kereskedelmi webhelyekhez
 
 Ez a témakör néhány olyan Microsoft Dynamics 365 Commerce gyakori csatorna-hozzárendelési helyzetet ismertet, amelyek a legtöbb egyéb üzleti követelmény esetén külön is használhatók.
 
 Dynamics 365 Commerce A <a0/10/[...](#channels)<a2/1><a2/1><a2/<a2/5><a3/ számos üzleti helyzetet támogat az online csatornák megfeleltetéséhez, amelyekben beállított termékek, [árak és engedmények halmaza található a vevőknek szóló e-commerce](#e-commerce-sites) webhely tapasztalatokkal.
 
-Ez a témakör a következő helyzetekről tartalmaz információkat:
+Ez a cikk a következő helyzetekre terjed ki:
 
 - **Egy nyelven keresztüli csatorna, amely egyetlen e-commerce webhelyet tapasztalatokkal rendelkezik.** Ilyen helyzet lehet például egyetlen, az egyesült államoki piachoz beállított márkahely.
 - **Többnyelvű csatorna, amely egyetlen honosított webhely-tapasztalatokkal rendelkezik.** Ilyen helyzet lehet például egyetlen, Kanadában francia és angol nyelvű támogatással konfigurált márkahely. Ebben az esetben a különböző nyelveket kiválasztó felhasználók ugyanazt a webhely-tapasztalatot tapasztalják, de az egyes felhasználók által választott nyelvre vannak honosva.
@@ -63,7 +63,7 @@ A következő példa bemutatja a Commerce Headquarters egy csatorna-konfiguráci
 
 ![A Commerce Headquarters kiemelést adott a Kalandorbolt online áruház jogi személyének, pénznemének és nyelvének értékeihez.](media/channel-mapping-3.png)
 
-A webhelyszerkesztő egyetlen e-commerce webhelyének megfeleltetheti az egyetlen online csatornát. Az új webhely létrehozásáról és csatornára való leképezésről a [témakör](#map-a-channel-to-a-site-in-site-builder) Webhelyszerkesztő szakaszának Egy webhelyhez való leképezés című témaköre nyújt tájékoztatást.
+A webhelyszerkesztő egyetlen e-commerce webhelyének megfeleltetheti az egyetlen online csatornát. Az új webhely létrehozásáról és csatornára való leképezésről a [cikk](#map-a-channel-to-a-site-in-site-builder) Webhelyszerkesztő szakaszának Webhelyre leképezés című fejezete nyújt tájékoztatást.
 
 ### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>Többnyelvű csatorna, amely egyetlen honosított webhely-tapasztalatokkal rendelkezik.
 
@@ -73,7 +73,7 @@ Ennek az esetnek az az korlátozása, hogy egyetlen csatornát csak egy pénznem
 
 A csatornák minden nyelvét be lehet állítani a saját tartománynevével. Például a tartomány `www.adventure-works.ca` konfigurálható a kanadai angol verzióhoz, `www.adventure-works-fr.ca` a tartomány pedig a kanadai verzióhoz. Másik lehetőségként a csatornák különböző nyelveket is be lehet állítani egyetlen tartományban, majd mindegyik nyelvhez más-más elérési utat lehet használni. Például a `www.adventure-works.ca` tartomány konfigurálható a kanadai angol verzióhoz, `www.adventure-works.ca/fr` és az elérési út a kanadai verzióban is használható. [A földrajzi](geo-detection-redirection.md) észlelési funkció lehetővé teszi a felhasználók automatikus átirányítását a megfelelő helyre, a felhasználó helye alapján.
 
-A vevők számára a [nyelvek](#add-and-configure-the-site-picker-module) közötti manuális váltás engedélyezésével kapcsolatos tudnivalókat lásd a témakör Webhelyválasztó modul hozzáadása és konfigurálása című részében. A honosított lapok [és a darabkák testreszabását a Több csatornát és nyelveket is elérhető webhelytartalom kezelése című rész tartalmaz](#manage-site-content-that-has-multiple-channels-and-languages).
+A vevők számára a [nyelvek](#add-and-configure-the-site-picker-module) közötti manuális váltásról a cikk Webhelyválasztó modul hozzáadása és konfigurálása című részében olvashat tájékoztatást. A honosított lapok [és a darabkák testreszabását a Több csatornát és nyelveket is elérhető webhelytartalom kezelése című rész tartalmaz](#manage-site-content-that-has-multiple-channels-and-languages).
 
 ### <a name="multi-language-channel-that-has-a-different-site-experience-per-language"></a>Többnyelvű csatorna, amely nyelvenként eltérő webhely-tapasztalatokkal rendelkezik
 
@@ -87,7 +87,7 @@ Egy márkanév hely esetén előfordulhat, hogy régiónként több online csato
 
 Ebben az esetben minden egyes piac saját tartománynevekkel konfigurálható. A tartomány például `www.adventure-works.com` az Egyesült Államok piacára, `www.adventure-works.de` a tartomány pedig a német piachoz konfigurálható. Azt is be lehet állítani, hogy az egyes piacok másik útvonalat használjanak. Például a tartomány konfigurálható `www.adventure-works.com` az egyesült államok piacára, `www.adventure-works.com/de` és aztán az útvonal használható a német piac számára. [A földrajzi észlelési](geo-detection-redirection.md) funkció lehetővé teszi a felhasználók régiójuktól függően a megfelelő helyre való automatikus átirányítását is.
 
-Előfordulhat az is, hogy a webhelyen egy legördülő listát szeretne létrehozni, amely lehetővé teszi a felhasználók számára, hogy manuálisan váltson egy adott piacra. A további tudnivalókat lásd [a](#add-and-configure-the-site-picker-module) témakör Webhelyválasztó modul hozzáadása és konfigurálása című részében.
+Előfordulhat az is, hogy a webhelyen egy legördülő listát szeretne létrehozni, amely lehetővé teszi a felhasználók számára, hogy manuálisan váltson egy adott piacra. A további tudnivalókat [lásd](#add-and-configure-the-site-picker-module) a cikk Webhelyválasztó modul hozzáadása és konfigurálása című részében.
 
 Ha további tájékoztatást tartalmaz arról, hogyan lehet egy webhelyen több csatornát konfigurálni, [tekintse meg az e-commerce webhely több csatornának konfigurálása című fejezetét](#configure-multiple-channels-on-an-e-commerce-site).
 
@@ -180,7 +180,7 @@ Az egyes oldalak és részletek manuális létrehozása helyett exportálhatja a
 
 Olyan webhely, amely több csatornával és/vagy nyelvvel rendelkezik, az egyes oldalak egyedi változatát tárolja, és a csatorna és a nyelv egyes kombinációira külön darabot tartalmaz. Ez a viselkedés lehetővé teszi, hogy a lapváltozatok honosított adatokat tartalmazzanak, ugyanakkor rugalmasan módosítják az egyes változatok megjelenését és működését.
 
-A lapváltozatok alkalmazásával kapcsolatos tudnivalókat [lásd a](#implement-page-variants-for-each-language) témakör egyes nyelvi változatok megvalósítása című témakörében.
+A lapváltozatok alkalmazásával kapcsolatos tudnivalókat [lásd a](#implement-page-variants-for-each-language) cikk egyes nyelvi változatok megvalósítása című részében.
 
 ## <a name="configure-multiple-channels-on-an-e-commerce-site"></a>Több csatorna konfigurálása e-commerce webhelyen
 

@@ -1,6 +1,6 @@
 ---
 title: Pályázó követésrendszer integrációs API bevezetése
-description: Ez a témakör a Dynamics 365 Human Resources Pályázó követésrendszer (ATS) integrációs API-t írja le.
+description: Ez a cikk az Dynamics 365 Human Resources ATS integrációs API-t írja le.
 author: andreabichsel
 ms.date: 02/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e16c781a6e51c57db8ae76dcfe0d28ec709428eb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6037d09fdc484753c7e90a896ce383bd71391356
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894701"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Pályázó követésrendszer integrációs API bevezetése
 
@@ -27,7 +27,7 @@ ms.locfileid: "8069932"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources Pályázó követésrendszer (ATS) integrációs API-t írja le. Az API célja a Dynamics 365 Human Resources és az ATS-ek közötti leegyszerűsített integráció engedélyezése.
+Ez a cikk az Dynamics 365 Human Resources ATS integrációs API-t írja le. Az API célja a Dynamics 365 Human Resources és az ATS-ek közötti leegyszerűsített integráció engedélyezése.
 
 ![ATS-integrációs folyamat.](media/hr-admin-integration-ats-api-introduction-flow.png)
 

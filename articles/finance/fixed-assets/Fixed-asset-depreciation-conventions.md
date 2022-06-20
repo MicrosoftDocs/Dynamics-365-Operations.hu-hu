@@ -1,6 +1,6 @@
 ---
 title: Tárgyi eszközök értékcsökkenésére vonatkozó szabályok
-description: Ez a témakör a tárgyi eszközök értékcsökkenésére vonatkozó szabályokat írja le.
+description: Ez a témakör a tárgyi eszközök értékcsökkenési szabályát ismerteti.
 author: moaamer
 ms.date: 09/04/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e151d20fbfb9aa8fca9afc5be4f112b3de13cc7
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 6d791461a344611437e77514e47dd5dd9b7ddb10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719805"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858391"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Tárgyi eszközök értékcsökkenésére vonatkozó szabályok
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a tárgyi eszközök értékcsökkenésére vonatkozó szabályokat írja le. Az értékcsökkenési szabályok segítségével meghatározható, hogy mikor és hogyan kerüljön sor az értékcsökkenés számítására a tárgyi eszköz beszerzésének évében és abban az évben, amikor a tárgyi eszközt kivezetik.
+Ez a témakör a tárgyi eszközök értékcsökkenési szabályát ismerteti. Az értékcsökkenési szabályok segítségével meghatározható, hogy mikor és hogyan kerüljön sor az értékcsökkenés számítására a tárgyi eszköz beszerzésének évében és abban az évben, amikor a tárgyi eszközt kivezetik.
 
 A értékcsökkenési szabályok hozzárendelhetők tárgyieszköz-csoport könyvének beállításaihoz. Az értékcsökkenési szabály Megtekintéséhez vagy megadásához a tárgyi eszközök, a beállítási területen jelölje be **Tárgyi eszköz** csoportokat. Kattintson a **Vissza** gombra. Ebben az esetben a társított értékcsökkenési szabályok szolgálnak alapértelmezett értékként a tárgyieszköz-könyvek létrehozásakor. Értékcsökkenési szabályok egyéni tárgyieszköz-könyvhöz is beállíthatók. Ehhez válassza ki a **Könyvek** elemet a tárgyi eszközök beállítási területén, majd válasza a **Tárgyieszköz-csoportok** gombot.
 

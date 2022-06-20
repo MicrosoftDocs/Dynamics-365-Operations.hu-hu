@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: fa7a519b87bd5933b8b672f9f9b3e230fd7f2eb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896405"
 ---
 # <a name="one-voucher"></a>Egy bizonylat
 
@@ -37,7 +37,7 @@ A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kif
     [![Egy sor.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
-    > Az Egy bizonylat meghatározása **nem** tartalmazza azokat az eseteket, ahol a naplóneveket a **Csak egy bizonylatszám** beállítással hozták létre, de a felhasználó olyan bizonylatot ad meg, amely csak főkönyvi számla típusúakat tartalmaz. Ebben a témakörben az Egy bizonylat azt jelenti, hogy van egyetlen bizonylat, amelyen egynél több szállító, vevő, bank, tárgyi eszköz vagy projekt szerepel.
+    > Az Egy bizonylat meghatározása **nem** tartalmazza azokat az eseteket, ahol a naplóneveket a **Csak egy bizonylatszám** beállítással hozták létre, de a felhasználó olyan bizonylatot ad meg, amely csak főkönyvi számla típusúakat tartalmaz. Ebben a cikkben az Egyik bizonylat azt jelenti, hogy egy bizonylat több szállítót, vevőt, bankot, tárgyi eszközt vagy projektet tartalmaz.
 
 - Adjon meg egy többsoros bizonylatot, ha nincs ellenszámla.
 
@@ -63,16 +63,16 @@ Ekkor létrehozza a **Szállítónkénti költségek** jelentést a **Pénzügyi
 
 Az Egy bizonylat használata esetén előforduló problémák miatt ez a funkció végül elavulttá válik. Mivel azonban vannak ezen a funkción alapuló működési rések, a funkció elavulása nem egyszerre fog megtörténni. Ehelyett a következő ütemezést használja a rendszer:
 
-- **2018 tavaszi kiadás** – Ez a funkció alapértelmezés szerint ki lesz kapcsolva a **Több tranzakció engedélyezése egy bizonylat esetén** paraméteren keresztül a **Főkönyvi paraméterek** oldal **Általános** lapján. Azonban visszakapcsolhatja a funkciót, ha a szervezetének olyan helyzetet kell kezelnie, amely a témakörben később ismertetett működési rések valamelyikének felel meg.
+- **2018 tavaszi kiadás** – Ez a funkció alapértelmezés szerint ki lesz kapcsolva a **Több tranzakció engedélyezése egy bizonylat esetén** paraméteren keresztül a **Főkönyvi paraméterek** oldal **Általános** lapján. Bekapcsolhatja azonban akkor is, ha a szervezetnél olyan helyzet van, amely a cikk későbbi felsorolásában szereplő működési hiányok valamelyikére esik.
 
-    - Ha az üzleti helyzethez nem szükséges Egy bizonylat, akkor javasoljuk, hogy hagyja kikapcsolva a funkciót. A Microsoft nem javítja ki a „programhibákat”, amelyeket később ebben a témakörben azonosítunk, ha annak ellenére használják ezt a funkciót, hogy létezik másik megoldás.
+    - Ha az üzleti helyzethez nem szükséges Egy bizonylat, akkor javasoljuk, hogy hagyja kikapcsolva a funkciót. Ha annak ellenére használja, hogy létezik másik megoldás, a Microsoft nem fogja kijavítani a "javítást" a cikk későbbi, meghatározott területein.
     - Javasoljuk, hogy ne használja az Egy bizonylatot integrációkhoz, kivéve, ha a funkció a dokumentált működési rések egyikéhez szükséges.
 
 - **Későbbi kiadások** – számos üzleti követelmény csak az Egy bizonylat segítségével teljesíthető. A Microsoftnak gondoskodnia kell arról, hogy a funkció értékcsökkenése után is teljesülni tudjanak a rendszerben az azonosított üzleti követelmények. Ennek megfelelően a működési hiányok kitöltéséhez valószínűleg új funkciókat kell hozzáadni. A Microsoft nem tud konkrét megoldást kínálni, mivel minden működési hiány más, és az üzleti követelmények alapján kell felmérni őket. Bizonyos működési hiányokat valószínűleg olyan funkciók írnak felül, amelyek megfelelnek az egyes üzleti követelményeknek. Előfordulhat azonban, hogy más hiányokat úgy lehet kitölteni, hogy lehetővé teszik a naplóban való bevitelt, mint amikor az Egy bizonylat funkciót használják, de javítani kell a rendszeren, hogy szükség szerint nyomon kövesse a részletesebb adatokat.
 
 Miután minden működési hiányt kitöltött, a Microsoft közli, hogy a funkció elavulttá válik. Az értékcsökkenés azonban a tájékoztatás után legalább egy évig nem lép hatályba. Bár a Microsoft nem tud becslést adni arról, hogy mikorra válik elavulttá az Egy bizonylat funkció, az értékcsökkenés valószínűleg legalább két év múlva következik be. A Microsoft irányelve az, hogy legalább 12 hónapot hagyjon az elavult funkció bejelentése és a tényleges értékcsökkenés között, hogy a vevőknek és független szoftverszállítóknak és független szoftverszállítóknak elegendő idejük legyen arra, hogy a módosításra reagáljanak. Például előfordulhat, hogy egy szervezetnek frissítenie kell az üzleti folyamatait, entitásait és integrációit.
 
-Az Egy bizonylat értékcsökkenése jelentős változás, amelyről széles körben folyik majd tájékoztatás. A kommunikáció részeként a Microsoft frissíti ezt a témakört, felad egy postát a 365 Pénzügyi évhez, frissíti az "Eltávolított vagy elavult funkciók" témakört, a megfelelő Microsoft konferenciakon keresztül kommunikálja a Microsoft Dynamics változtatást stb.
+Az Egy bizonylat értékcsökkenése jelentős változás, amelyről széles körben folyik majd tájékoztatás. A kommunikáció részeként a Microsoft frissíti ezt a cikket, felad egy postát a Microsoft Dynamics 365 Pénzügyi évhez, frissíti az "Eltávolított vagy elavult funkciók" cikket, a változtatást a Microsoft megfelelő értekezletén stb.
 
 ## <a name="why-use-one-voucher"></a>Miért használjon egy bizonylatot?
 

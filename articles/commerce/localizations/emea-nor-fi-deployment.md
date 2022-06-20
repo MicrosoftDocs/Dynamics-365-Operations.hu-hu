@@ -1,6 +1,6 @@
 ---
-title: Útmutató a pénztárgépekhez Norvégiában
-description: Ez a témakör útmutatást nyújt a pénztárgép funkciójának engedélyezéséhez a Microsoft Dynamics 365 Commerce lokalizáció Norvégiára.
+title: Norvégiai pénztárgépekkel kapcsolatos telepítési irányelvek
+description: Ez a cikk útmutatást ad arról, hogyan lehet engedélyezni a pénztárgép funkciót Norvégia Microsoft Dynamics 365 Commerce honosításában.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,118 +9,118 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 1f2226432237662e28b9e26017020ab81bb6026b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899067"
 ---
-# <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Útmutató a pénztárgépekhez Norvégiában
+# <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Norvégiai pénztárgépekkel kapcsolatos telepítési irányelvek
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör útmutatást nyújt a pénztárgép funkciójának engedélyezéséhez a Microsoft Dynamics 365 Commerce lokalizáció Norvégiára. A lokalizáció több komponensbővítésből áll. Ezekkel a bővítményekkel olyan műveleteket hajthat végre, mint például egyéni mezők nyomtatása a nyugtákon, további ellenőrzési események, értékesítési tranzakciók és fizetési tranzakciók regisztrálása az értékesítés helyén (POS), értékesítési tranzakciók digitális aláírása és jelentések helyi formátumban történő nyomtatása. A norvég lokalizációval kapcsolatos további információkért lásd: [Pénztárgép funkció Norvégiában](./emea-nor-cash-registers.md). A Commerce for Norway konfigurálásával kapcsolatos további információkért lásd: [A Commerce beállítása Norvégiában](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
+Ez a cikk útmutatást ad arról, hogyan lehet engedélyezni a pénztárgép funkciót Norvégia Microsoft Dynamics 365 Commerce honosításában. A honosítás az összetevők több kiterjesztésből áll. Ezek a bővítmények olyan műveletek végrehajtásához használhatók, mint például a nyugták egyéni mezőinek nyomtatása, további könyvvizsgálati események, értékesítési tranzakciók és fizetési tranzakciók regisztrálása a pénztárnál (POS), az értékesítési tranzakciók digitális aláírása és a jelentések helyi formátumban történő kinyomtatása. A Norvégiához való honosítással kapcsolatos további tudnivalókat [lásd a Pénztárgép szolgáltatás Norvégiához](./emea-nor-cash-registers.md). A Commerce for Norway konfigurálásról a Commerce for Norway [beállításában található további tájékoztatás](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 > [!WARNING]
-> A korlátok miatt a [új független csomagolási és bővítési modell](../dev-itpro/build-pipeline.md), jelenleg nem használható ehhez a lokalizációs funkcióhoz. A Norvégiára vonatkozó digitális aláírási minta verzióját kell használnia a Kiskereskedelmi szoftverfejlesztő készlet (SDK) előző verziójában egy fejlesztői virtuális gépen (VM)Microsoft Dynamics Életciklus-szolgáltatások (LCS). További információkért lásd [Norvégiában a pénztárgépek telepítési irányelvei (örökölt)](./emea-nor-loc-deployment-guidelines.md).
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a honosítási funkcióhoz. A Retail szoftverfejlesztői csomag (SDK) korábbi verziójában a Lifecycle Services (LCS) egy fejlesztői virtuális gépére (VM) Microsoft Dynamics vonatkozó digitális aláírási mintaverziót kell használnia Norvégiához. A további tudnivalókat [lásd a Norvégiához (legacy) pénztárgépekkel kapcsolatos telepítési irányelvekben](./emea-nor-loc-deployment-guidelines.md).
 >
-> A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
+> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
-## <a name="set-up-fiscal-registration-for-norway"></a>Fiskális regisztráció beállítása Norvégiában
+## <a name="set-up-fiscal-registration-for-norway"></a>Pénzügyi regisztráció beállítása Norvégia esetében
 
-A Norvégia adózási regisztrációs mintája a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md) és a Retail SDK része. A minta a **src\\ Fiskális integráció\\ SequentialSignatureNorvégia** mappa a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattár (pl.[a minta kiadásban/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)). A minta [áll](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) egy fiskális dokumentum-szolgáltató és egy fiskális csatlakozó, amelyek a Commerce futtatókörnyezet kiterjesztései (CRT). A Kiskereskedelmi SDK használatáról a Retail SDK architektúrája [és](../dev-itpro/retail-sdk/retail-sdk-overview.md) build-folyamat beállítása a független csomagolású SDK-hoz [című témakörben talál](../dev-itpro/build-pipeline.md) további információt.
+A Norvégiához tartozó pénzügyi regisztrációs minta a pénzügyi [integrációs](fiscal-integration-for-retail-channel.md) funkciókon alapul, és része a Retail SDK csomagnak. A minta a **Solutions-tárház src\\ FiscalIntegration\\ SequentialSignatureNorway**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway) mintája). A minta [egy pénzügyi](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) dokumentumszolgáltatóból és egy pénzügyi csatlakoztatóból áll, amelyek a Commerce runtime (commerce runtime) kiterjesztései CRT. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
 
-Végezze el a fiskális regisztráció beállítási lépéseit, amelyek leírása a következő helyen található: [Állítsa be a kereskedelmi csatornák pénzügyi integrációját](./setting-up-fiscal-integration-for-retail-channel.md):
+A Pénzügyi regisztrálás beállításának [lépéseit a Commerce-csatornák pénzügyi integrációjának beállítása lépésekkel lehet végrehajtani](./setting-up-fiscal-integration-for-retail-channel.md):
 
-1. [Állítsa be az adózási regisztrációs folyamatot](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Ügyeljen arra, hogy jegyezze fel a fiskális regisztrációs folyamat beállításait [Norvégiára jellemző](#configure-the-fiscal-registration-process).
-1. [Állítsa be a hibakezelési beállításokat](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Az elhalasztott adóregisztráció kézi végrehajtásának engedélyezése](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-1. [Csatornaösszetevők konfigurálása](#configure-channel-components).
+1. [Pénzügyi regisztrációs folyamat beállítása](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Mindenképpen jegyezze fel a [Norvégiához specifikus pénzügyi regisztrációs folyamat beállításait](#configure-the-fiscal-registration-process).
+1. [Hibakezelési beállítások megadása](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+1. [Halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezése](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)
+1. [Csatornaösszetevők konfigurálása](#configure-channel-components)
 
-### <a name="configure-the-fiscal-registration-process"></a>Állítsa be a fiskális regisztrációs folyamatot
+### <a name="configure-the-fiscal-registration-process"></a>A pénzügyi regisztrációs folyamat konfigurálása
 
-Kövesse ezeket a lépéseket, hogy engedélyezze a Norvégia adóügyi regisztrációs folyamatát a Commerce központjában.
+A következő lépések szerint engedélyezheti a Pénzügyi nyilvántartási folyamatot Norvégia esetében a Commerce Headquarters számára.
 
-1. Töltse le az adódokumentum-szolgáltató és a fiskális csatlakozó konfigurációs fájljait a Commerce SDK-ból:
+1. A pénzügyi dokumentumszolgáltató és a pénzügyi csatlakoztató konfigurációs fájljainak letöltése a Commerce SDK készletből:
 
-    1. Nyissa meg a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattárat.
-    1. Nyissa meg az utolsó elérhető kiadási ágat (például **[kiadás/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34)**).
-    1. Nyisd ki **src \> Fiskális integráció \> SequentialSignatureNorvégia \> CommerceRuntime**.
-    1. Töltse le az adódokumentum-szolgáltató konfigurációs fájlját a következő címről: **DocumentProvider.SequentialSignNorway \> Konfiguráció \> DocumentProviderSequentialSignatureNorwaySample.xml** (például, [a kiadás/9.34 fájl](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/DocumentProvider.SequentialSignNorway/Configuration/DocumentProviderSequentialSignatureNorwaySample.xml)).
-    1. Töltse le a fiskális csatlakozó konfigurációs fájlját a következő címről: **Csatlakozó.SequentialSignNorway \> Konfiguráció \> ConnectorSequentialSignatureNorwaySample.xml** (például, [a kiadás/9.34 fájl](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/Connector.SequentialSignNorway/Configuration/ConnectorSequentialSignatureNorwaySample.xml)).
+    1. Nyissa meg [Dynamics 365 Commerce a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
+    1. Az utolsó elérhető kiadási ág megnyitása (például kiadás **[/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34)**).
+    1. A **src \> FiscalIntegration \> SequentialSignatureNorway \> CommerceRuntime megnyitása**
+    1. **Töltse le a pénzügyi bizonylat szolgáltatójának konfigurációs fájlját a DocumentProvider.SequentialSignNorway \> Configuration \> DocumentProviderSequentialSignatureNorwaySample.xml** fájlban ([például a release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/DocumentProvider.SequentialSignNorway/Configuration/DocumentProviderSequentialSignatureNorwaySample.xml) fájlban).
+    1. A pénzügyi csatlakoztató konfigurációs fájljának letöltése a Connector.SequentialSignNorway **Configuration \> ConnectorSequentialSignatureNorwaySample.xml \> fájlból (** például a kiadás fájlja/9.34 [).](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/Connector.SequentialSignNorway/Configuration/ConnectorSequentialSignatureNorwaySample.xml)
 
-1. Menj **Kiskereskedelem és kereskedelem \> A központ felállítása \> Paraméterek \> Megosztott paraméterek**. Az Általános **lapon állítsa a** Költségvetési integráció **engedélyezése beállítást Igen értékre** **.**
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi összekötők, és töltse be a korábban letöltött pénzügyi összekötő konfigurációs** fájlt.
-1. Menj **Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Fiskális integráció \> Fiskális dokumentumszolgáltatók**, és töltse be a korábban letöltött adódokumentum-szolgáltató konfigurációs fájlját.
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integrációs \> összekötő funkcionális profiljai**. Hozzon létre egy új csatlakozási funkcióprofilt, és válassza ki a dokumentumszolgáltatót és a korábban betöltött csatlakozót.
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Összekötő technikai profiljai**. Hozzon létre egy új csatlakozási műszaki profilt, és válassza ki a korábban betöltött csatlakozót. Állítsa be a csatlakozó típusát **Belső**.
-1. Menj **Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Fiskális integráció \> Fiskális összekötő csoportok**, és hozzon létre egy új pénzügyi összekötő csoportot a korábban létrehozott összekötő funkcionális profilhoz.
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi regisztrációs folyamatok**. Hozzon létre egy új adóregisztrációs folyamatot és egy fiskális regisztrációs folyamat lépést, és válassza ki a korábban létrehozott adóösszekötő csoportot.
-1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**. Válasszon ki egy olyan funkcióprofilt, amely ahhoz az üzlethez kapcsolódik, ahol a regisztrációs folyamatot aktiválni kell. **A Pénzügyi regisztrációs folyamat** gyorslapon válassza ki a korábban létrehozott pénzügyi regisztrációs folyamatot. A **Adóügyi szolgáltatások** FastTab, válassza ki a korábban létrehozott csatlakozási műszaki profilt. 
-1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra. Nyissa meg a terjesztési ütemezést, és válassza ki a munkákat **1070** és **1090** adatok átviteléhez a csatorna adatbázisba.
+1. Ugrás a **Retail and Commerce \> Headquarters telepítőparaméterek \>\> megosztott paramétereihez** Az Általános **lapon** állítsa **a** Pénzügyi integráció engedélyezése lehetőséget Igen **beállításra**.
+1. Menjen a **Retail és Commerce \> csatorna beállítása \> Pénzügyi integráció \> pénzügyi csatlakoztatóihoz**, és töltse be a korábban letöltött pénzügyi csatlakoztató konfigurációs fájlját.
+1. Menjen a **Retail és Commerce \> Csatorna beállítása pénzügyi \> integráció \> pénzügyi dokumentumszolgáltatóihoz**, és töltse be a korábban letöltött pénzügyidokumentum-szolgáltató konfigurációs fájlját.
+1. Ugrás a **Retail és Commerce \> csatorna beállítása \> Fiscal integration \> Connector funkcionális profiljaihoz**. Hozzon létre egy új funkcionális csatlakoztatóprofilt, és válassza ki a dokumentumszolgáltatót és a korábban betöltött csatlakoztatóját.
+1. Ugrás a **Retail és Commerce \> csatorna beállítása \> Fiscal integration \> Connector műszaki profilokhoz**. Hozzon létre egy új technikai csatlakoztatóprofilt, és válassza ki a korábban betöltött csatlakoztatóját. A csatlakoztató típusának beállítása Belső **típusúra**.
+1. Menjen a **Retail és Commerce \> csatorna \> beállítása Pénzügyi integráció \> pénzügyi csatlakoztatócsoportjához**, és hozzon létre egy új pénzügyi csatlakoztatócsoportot a korábban létrehozott csatlakoztató funkcionális profilhoz.
+1. Ugrás a Kiskereskedelmi és **Commerce csatorna \> beállítása pénzügyi \> integráció \> pénzügyi regisztrációs folyamatainak lépéseihez**. Hozzon létre egy új pénzügyi regisztrációs folyamatot és egy pénzügyi nyilvántartási folyamat lépését, és válassza ki a korábban létrehozott pénzügyi csatlakoztatócsoportot.
+1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**. Válasszon ki egy funkcióprofilt, amely ahhoz az üzlethez kapcsolódik, ahol aktiválni kell a regisztrációs folyamatot. A Pénzügyi regisztráció **folyamata** gyors oldalon válassza ki a korábban létrehozott pénzügyi regisztrációs folyamatot. Válassza ki a **korábban** létrehozott csatlakoztató műszaki profilt a Pénzügyi szolgáltatások gyorstára. 
+1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra. Az elosztási ütemezés megnyitása, és **az 1070-es és 1090-es** **feladat** kiválasztása az adatoknak a csatorna-adatbázisba történő átviteléhez.
 
-### <a name="configure-the-digital-signature-parameters"></a>Konfigurálja a digitális aláírás paramétereit
+### <a name="configure-the-digital-signature-parameters"></a>A digitális aláírás paramétereinek konfigurálása
 
-Be kell állítania az értékesítési tranzakciók digitális aláírására szolgáló tanúsítványokat az üzletben. Az Azure Key Vaultban tárolt digitális tanúsítványt használják az aláíráshoz. A Modern POS offline üzemmódjában az aláírás egy digitális tanúsítvány használatával is elvégezhető, amely annak a gépnek a helyi tárolójában van tárolva, amelyre a Modern POS telepítve van.
+Az üzlet értékesítési tranzakcióinak digitális aláírásához használt tanúsítványokat be kell állítania. Az Aláírás az Azure kulcsként tárolt digitális tanúsítványt használja. A Modern POS offline üzemmódjában az aláírás digitális tanúsítvány használatával is használhatja azt, amelyet a Modern POS telepített számítógépének helyi tárolójában tárolnak.
 
-A Key Vault tárhelyen tárolt digitális tanúsítvány használata előtt a következő lépéseket kell végrehajtania.
+A kulcstárolóban tárolt digitális tanúsítvány használata előtt a következő lépéseket kell végrehajtani.
 
-1. Létre kell hozni a Key Vault tárhelyet. Javasoljuk, hogy a tárhelyet ugyanabban a földrajzi régióban telepítse, mint a Commerce Scale Unit.
-1. A tanúsítványt fel kell tölteni a Key Vault tárhelyre base64 karakterlánc-titkaként.
-1. Az Application Object Server (AOS) alkalmazásnak jogosultnak kell lennie a Key Vault tároló titkainak olvasására.
+1. A kulcstárolót létre kell hozva. Javasoljuk, hogy a tárolást a Commerce Scale Unit mértékegység földrajzi elhelyezkedésének megfelelő területen telepítse.
+1. A tanúsítványt base64-karakterlánc titkosként kell feltölteni a Key Tároló tárolóba.
+1. Az Application Object Server (AOS) alkalmazásnak engedélyezve kell lennie ahhoz, hogy olvasni tudjon a Kulcs Tároló tárolóból.
 
-A Key Vault használatával kapcsolatos további információkért lásd: [Kezdje el az Azure Key Vault használatát](/azure/key-vault/key-vault-get-started).
+A Kulcskulcs- és kulcskulcsok használatával kapcsolatos további tudnivalókat lásd [Az Azure kulcs– Kulcssúva (Im) használatának első lépésekben](/azure/key-vault/key-vault-get-started).
 
-Következő, a **Key Vault paraméterek** oldalon meg kell adnia a Key Vault tárhely eléréséhez szükséges paramétereket:
+Ezután a Kulcs –**Paraméterek** lapon meg kell adnia a Kulcs– Tároló eléréséhez szükséges paramétereket:
 
-- **Név** és **Leírás** – A Key Vault tárhely neve és leírása.
-- **Key Vault URL** – A Key Vault tárhely URL-címe.
-- **Key Vault kliens** – Az interaktív ügyfélazonosító a Azure Active Directory (Azure AD) alkalmazás, amely hitelesítési célból a Key Vault tárolóhoz van társítva. Ennek az ügyfélnek hozzáféréssel kell rendelkeznie a tároló titkainak olvasásához.
-- **Key Vault titkos kulcs** – Egy titkos kulcs, amely a Azure AD alkalmazás, amelyet a Key Vault tárolóban történő hitelesítésre használnak.
-- **Név**, **·**, és **Titkos hivatkozás** – A tanúsítvány neve, leírása és titkos hivatkozása.
+- **Név** és **leírás** – a Kulcs Tároló neve és leírása.
+- **Kulcs Url-címe** – a KulcsTároló tároló URL-címe
+- **Kulcs ügyfél –** a Azure Active Directory Kulcs– Ügyféltároló kulcshoz hitelesítési célból társított (Azure AD) alkalmazás interaktív ügyfél-azonosítója. Ennek az ügyfélnek hozzáféréssel kell lennie a tárolóból való olvasáshoz.
+- **Kulcs, Titkos kulcs** – Titkos Azure AD kulcs, amely az alkalmazáshoz van társítva, és amely hitelesítésre használatos a Kulcsot tároló tárolóban.
+- **Név**, **leírás** és titkos **hivatkozás** – a tanúsítvány neve, leírása és titkos hivatkozása.
 
-Ezután be kell állítania egy összekötőt a Key Vault-ban vagy a helyi tanúsítványtárolóban tárolt tanúsítványaihoz. Ez a csatlakozó a csatornaoldali aláírásra szolgál.
+Ezután konfigurálnia kell egy csatlakoztatót a kulcstárolóban vagy a helyi tanúsítványtárolóban tárolt tanúsítványokhoz. Ez a csatlakoztató a csatorna oldalán való bejelentkezésre használható.
 
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Összekötő technikai profiljai**.
-1. A **Beállítások** FastTab, adja meg a következő paramétereket a digitális aláírásokhoz:
+1. Ugrás a **Retail és Commerce \> csatorna beállítása \> Fiscal integration \> Connector műszaki profilokhoz**.
+1. A Beállítások **gyors** lapon adja meg a digitális aláírások következő paramétereit:
 
-    - **Titkos név** – Válassza ki a titkos nevet, amelyet korábban konfigurált az oldalon **Key Vault paraméterek** oldalon.
-    - **Helyi tanúsítvány ujjlenyomata** – Adjon meg ujjlenyomatot a helyben tárolt tanúsítványhoz.
-    - **Hash algoritmus** – Adja meg a által támogatott kriptográfiai hash algoritmusok egyikét Microsoft .NET, mint például **SHA1**.
-    - **Tanúsítványbolt neve** – Ez a mező nem kötelező. Itt megadhat egy alapértelmezett üzletnevet, amelyet a helyi tanúsítványok keresésénél használni kell.
-    - **Tanúsítvány bolt helye** – Ez a mező nem kötelező. Itt megadhat egy alapértelmezett üzlethelyet, amelyet a helyi tanúsítványok keresésénél lehet használni.
-    - **Először próbálja ki a helyi tanúsítványt** – Válassza ezt a lehetőséget, ha alapértelmezés szerint a helyi tárolóból származó tanúsítványt szeretné használni az adatok aláírására a Key Vault tanúsítványa helyett.
-    - **Aktiválja az állapotfelmérés** – Az állapotfelmérés funkcióval kapcsolatos további információkért lásd: [Fiskális regisztrációs állapotfelmérés](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+    - **Titkos név** – válassza ki a kulcsparaméterek **lapon korábban beállított titkos nevet**.
+    - **Helyi tanúsítvány ujjlenyomata** – adja meg a helyileg tárolt tanúsítvány ujjlenyomatát.
+    - **Kivonat algoritmusa** – adja meg az egyik olyan kriptográfiai Microsoft .NET kivonati algoritmust, amelyet támogat például **az SHA1**.
+    - **Tanúsítványtár neve** – ez a mező nem kötelező. Itt megadhat egy alapértelmezett üzletnevet, amelyet a helyi tanúsítványok keresésénél használni kell.
+    - **Tanúsítványtároló helye** – ez a mező nem kötelező. Itt megadhat egy alapértelmezett üzlethelyet, amelyet a helyi tanúsítványok keresésénél lehet használni.
+    - **Először próbálja meg a helyi tanúsítványt** – válassza ezt a lehetőséget, ha alapértelmezés szerint a helyi üzletből származó tanúsítványt használja adatok aláírásához, és nem a Kulcs Kulcs KulcsBól származó tanúsítványhoz.
+    - **Állapotellenőrzés aktiválása** – az állapotellenőrzési funkcióval kapcsolatos további tudnivalókat lásd [: Pénzügyi regisztrációk állapotellenőrzése](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 > [!NOTE]
-> - Csak a **SHA1** kriptográfiai hash algoritmus jelenleg elfogadható Norvégia számára.
-> - Az alapértelmezett boltnév és az áruház helye hozzáadásra került, hogy leegyszerűsítsék a helyi tanúsítványok keresésének folyamatát CRT. Az X509StoreProvider a mappák listáját tartalmazza, ahol a tanúsítványokat tárolják. Ha az alapértelmezett áruháznév és az alapértelmezett tárolóhely nincs megadva, az X509StoreProvider megpróbál tanúsítványt találni a listán szereplő összes mappában.
+> - Norvégiában **jelenleg csak a SHA1** kriptográfiai kivonat algoritmusa fogadható el.
+> - A program hozzáadja az alapértelmezett üzletnevet és tárolóhelyet a helyi tanúsítványok keresésének egyszerűsítése érdekében CRT. Az X509StoreProvider a mappák listáját tartalmazza, ahol a tanúsítványokat tárolják. Ha nincs megadva az alapértelmezett üzletnév és az alapértelmezett üzlethely, az X509StoreProvider a lista minden mappájában megpróbál tanúsítványt találni.
 
 ### <a name="configure-channel-components"></a>Csatornaösszetevők konfigurálása
 
 ### <a name="development-environment"></a>Fejlesztői környezet
 
-Kövesse az alábbi lépéseket egy fejlesztői környezet beállításához, amely lehetővé teszi a minta tesztelését és kiterjesztését.
+A következő lépések szerint állíthatja be a fejlesztői környezetet, hogy tesztelni és ki tudja terjeszteni a mintát.
 
-1. Klónozza vagy töltse le a [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) adattárat. Válassza ki a megfelelő kiadási ágverziót az SDK/alkalmazás verziójának megfelelően. További információkért lásd [Töltsön le Retail SDK-mintákat és referenciacsomagokat a GitHubból és a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-1. Nyissa meg a **SequentialSignatureNorway.sln** alatti megoldás **Dynamics365Commerce.Solutions\\ Fiskális integráció\\ SequentialSignatureNorvégia**, és megépíteni.
-1. Telepítés CRT kiterjesztések:
+1. Le kell tölteni vagy le kell [Dynamics 365 Commerce tölteni a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions). Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd [a Retail SDK-minta- és hivatkozáscsomagok letöltése aHub és NuGet](../dev-itpro/retail-sdk/sdk-github.md) a.
+1. Nyissa meg **a SequentialSignatureNorway.sln megoldást** **a Dynamics365Commerce.Solutions\\ FiscalIntegration\\ SequentialSignatureNorway alatt, és építse fel**.
+1. A következő CRT bővítmények telepítése:
 
-    1. Találd meg CRT bővítmény telepítő:
+    1. A bővítmény telepítője CRT:
 
-        - **Kereskedelmi mértékegység:** Ban,-ben **SequentialSignatureNorvégia\\ ScaleUnit\\ ScaleUnit.SequentialSignNorway.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **ScaleUnit.SequentialSignNorway.Installer** telepítő.
-        - **Helyi CRT a modern POS-on:** Ban,-ben **SequentialSignatureNorvégia\\ Modern POS\\ ModernPos.SequentialSignNorway.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **ModernPos.SequentialSignNorway.Installer** telepítő.
+        - **Commerce Scale Unit:** **A ScaleUnit.SequentialSignatureNorway\\ ScaleUnit.SequentialSignNorway.Installer\\\\ bin\\ debug\\ net461** **mappában keresse meg a ScaleUnit.SequentialSignNorway.Installer** telepítőjét.
+        - **CRT Helyi a Modern POS terminálon:** **A SzekquentialSignatureNorway ModernPOS.SequentialSignNorway.Installer\\\\ bin\\ debug\\ net461\\** mappában keresse meg a ModernPos.SequentialSignNorway.Installer **telepítőjét**.
 
-    1. Indítsa el a CRT kiterjesztés telepítője a parancssorból:
+    1. A kiterjesztés telepítőjét CRT a következő parancssorból indítja el:
 
-        - **Kereskedelmi mértékegység:**
+        - **Commerce Scale Unit:**
 
             ```Console
             ScaleUnit.SequentialSignNorway.Installer.exe install --verbosity 0
             ```
 
-        - **Helyi CRT a modern POS-on:**
+        - **Helyi CRT a Modern POS terminálon:**
 
             ```Console
             ModernPOS.SequentialSignNorway.Installer.exe install --verbosity 0
@@ -128,16 +128,16 @@ Kövesse az alábbi lépéseket egy fejlesztői környezet beállításához, am
 
 ### <a name="production-environment"></a>Működési környezet
 
-Kövesse a lépéseket [Állítson be egy összeállítási folyamatot a fiskális integrációs mintához](fiscal-integration-sample-build-pipeline.md) a Cloud Scale Unit és az önkiszolgáló telepíthető csomagok létrehozása és kiadása a költségvetési integrációs mintához. A **SequentialSignatureNorway build-pipeline.yaml** sablon YAML fájl megtalálható a **Csővezeték\\ YAML_Files** mappa a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions) adattár.
+Hajtsa végre [a pénzügyi integrációs minta felépítési folyamatának beállításához szükséges lépéseket a](fiscal-integration-sample-build-pipeline.md) felhőskálaegység és az önkiszolgáló rendszer telepíthető csomagjainak előállításához és kiadásához a pénzügyi integrációs mintához. A **SequentialSignatureNorway build-pipeline.stbml** sablonfájl a megoldástárház **\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions) tasmappában található YAML_Files csővezetékben.
 
-### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Engedélyezze a digitális aláírást offline módban a Modern POS számára
+### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>A digitális aláírás engedélyezése offline módban a Modern POS terminálon
 
-Ha engedélyezni szeretné a digitális aláírást offline módban a Modern POS-hoz, kövesse ezeket a lépéseket, miután aktiválta a Modern POS-t egy új eszközön.
+A Modern POS kapcsolat nélküli módban való digitális aláírásának engedélyezéséhez ezeket a lépéseket kell követnie, miután aktiválta a Modern POS eszközt egy új eszközön.
 
 1. Bejelentkezés az POS alkalmazásba.
-1. A **Adatbázis kapcsolat állapota** oldalon, győződjön meg arról, hogy az offline adatbázis teljesen szinkronizálva van. Amikor az értéke a **Függőben lévő letöltések** mező az **0** (nulla), az adatbázis teljesen szinkronizálva van.
-1. Jelentkezzen ki a POS-ból.
-1. Várja meg, amíg az offline adatbázis teljesen szinkronizálódik.
+1. Az Adatbázis-kapcsolat **állapotlapján** győződjön meg arról, hogy az offline adatbázis teljesen szinkronizálva van. Ha a Függőben **lévő** **letöltések mező értéke 0** (nulla), akkor az adatbázis teljesen szinkronizálva van.
+1. Kijelentkezni a POS-terminálról
+1. Az offline adatbázis teljes szinkronizálásának várakozása.
 1. Bejelentkezés az POS alkalmazásba.
-1. A **Adatbázis kapcsolat állapota** oldalon, győződjön meg arról, hogy az offline adatbázis teljesen szinkronizálva van. Amikor az értéke a **Függőben lévő tranzakciók az offline adatbázisban** mező az **0** (nulla), az adatbázis teljesen szinkronizálva van.
-1. Nyissa meg újra a Modern POS-t.
+1. Az Adatbázis-kapcsolat **állapotlapján** győződjön meg arról, hogy az offline adatbázis teljesen szinkronizálva van. Ha az offline adatbázis **mezőjében** **a Függő tranzakciók értéke 0** (nulla), akkor az adatbázis teljesen szinkronizálva van.
+1. A Modern POS újranyitása

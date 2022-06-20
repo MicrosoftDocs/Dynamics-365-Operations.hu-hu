@@ -1,6 +1,6 @@
 ---
 title: Dokumentumok és bizonylatok időrendi számozása
-description: Ez a témakör bemutatja, hogyan állíthatja be és használhatja az időrendi számozást az alkalmazandó dokumentumok és a kapcsolódó bizonylatok esetében.
+description: Ez a cikk bemutatja, hogy hogyan lehet időrendben beállítani és használni a megfelelő dokumentumokat és a kapcsolódó bizonylatokat.
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0ce1afdbd31a78611e6b51dd93f7159d684c97cb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6baf307406982e8f72acc0d02f047dbc7c63a5ed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692673"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876383"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Dokumentumok és bizonylatok időrendi számozása
 
 [!include [banner](../includes/banner.md)]
 
 
-Egyes országokban kötelező a dokumentumok és a kapcsolódó bizonylatok időrendi számozása. Az időszakoknak támogatniuk kell az időrendet. Minden korábbi időszakhoz tartozó számnak kisebbnek kell lennie a későbbi időszakokhoz tartozó számoknál. Ennek a követelménynek megfelelően időrendi számozási funkciókat hajtottunk végre. Ez a témakör bemutatja, hogyan konfigurálhatja és használhatja az időrendi számozást az alkalmazandó dokumentumok és a kapcsolódó bizonylatok esetében.
+Egyes országokban kötelező a dokumentumok és a kapcsolódó bizonylatok időrendi számozása. Az időszakoknak támogatniuk kell az időrendet. Minden korábbi időszakhoz tartozó számnak kisebbnek kell lennie a későbbi időszakokhoz tartozó számoknál. Ennek a követelménynek megfelelően időrendi számozási funkciókat hajtottunk végre. Ez a cikk bemutatja, hogy hogyan konfigurálható és használható időrendi számok a megfelelő dokumentumokhoz és a kapcsolódó bizonylathoz.
 
 ## <a name="prerequisites"></a>Előfeltételek
 

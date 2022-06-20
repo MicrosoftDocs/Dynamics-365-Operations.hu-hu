@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. január 28.)
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. január 28-i kiadásban.
+description: Ez a témakör olyan funkciókat ismertet, amelyek vagy újak, vagy módosulnak a Microsoftban Dynamics 365 Human Resources 2021. január 28-án.
 author: marcelbf
 ms.date: 01/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d59e242421b1b86c32f9009ae6ae17e0f161a2e2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 46bbda21c3eb2b32030b93afc2a40785c22b124e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689298"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909759"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-28-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. január 28.)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le.
+Ez a témakör az új, módosított vagy hamarosan érkező funkciókat írja le Dynamics 365 Human Resources.
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -48,10 +48,10 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 > [!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakört frissítjök olyan hibajavításokkal, amelyek annak első közzététele után léptek életbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. A cikk első közzététele után frissíthet egy hibajavítást, amely a javításokat tartalmazza a buildben.
 
 
-| Kiadás száma | Kiadás |  Leírás |
+| Kiadás száma | Probléma |  Leírás |
 | --- | --- | --- |
 | 539456 | A naptár a szabadságtípust jeleníti meg rámutatáskor, ha a **Csak távollét megjelenítése részletek nélkül** paraméter van engedélyezve. | Ha a **Csak távollét megjelenítése részletek nélkül** beállítás engedélyezve van, a kérelem dátuma rámutatáskor megjelenik. |
 | 528907 | A jogi személyhez alkalmazotti szerepkörben való hozzáférés megadása azt eredményezi, hogy a vezetők nem látják az alkalmazotti szabadság és távollét egyensúlyával kapcsolatos tevékenységeket az Alkalmazotti önkiszolgáló rendszer **Saját csoport** területén. |Ezen lehetőség beállításával a vezetők továbbra is láthatják a szabadság és távollét egyensúlyával kapcsolatos tevékenységeket. |

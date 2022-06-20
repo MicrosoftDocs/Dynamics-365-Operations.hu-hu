@@ -1,6 +1,6 @@
 ---
 title: Költségösszesítési irányelv többletköltségek kiszámítása
-description: Ez a témakör tájékoztatást nyújt a másodlagos költségelemek helyes szintjének meghatározásáról és az olyan költségszerzési szabályok létrehozásáról, amelyek illeszkednek a szervezet jelentéseibe és a költségek nyomon követhetőségébe.
+description: Ez a témakör a másodlagos költségösszetítések helyes szintjének meghatározásával és a szervezeti jelentésekhez és a költségkövetéshez illeszthető költségösszesítési szabályok létrehozásáról nyújt tájékoztatást.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f35bf3e900b8dd9c1864be8668f7ff7296924c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734429"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874609"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Költségösszesítési irányelv többletköltségek kiszámítása 
 
@@ -33,7 +33,7 @@ A Költségkönyvelés lehetővé teszi, hogy betekintést nyerjen a költségek
 -   Azoknak a költségbejegyzéseknek a mennyisége, amelyeket a járulékosköltség-számítás generál, magas lehet.
 -   Nem lehet követni a költségek áramlását a költségobjektumok között.
 
-Ezen következmények elkerülése érdekében a Költségkönyvelés segítségével költségfelosztást állíthat be a szervezet vezetői jelentési követelményeihez. Ez a témakör segítséget nyújt a másodlagos költségelemek helyes szintjének meghatározásáról és az olyan költségszerzési szabályok létrehozásáról, amelyek illeszkednek a szervezet jelentéseibe és a költségek nyomon követhetőségébe.
+Ezen következmények elkerülése érdekében a Költségkönyvelés segítségével költségfelosztást állíthat be a szervezet vezetői jelentési követelményeihez. Ez a cikk bemutatja, hogy hogyan határozható meg a másodlagos költségösszetítők helyes szintje, és hogyan lehet létrehozni a szervezeti jelentésekhez és a költségkövetéshez illeszthető költségösszesítési szabályokat.
 
 > [!NOTE]
 > Ha a jelentési követelmények megváltoznak, módosíthatja a konfigurációkat.

@@ -1,6 +1,6 @@
 ---
 title: Kettős pénznem
-description: Ez a témakör a kettős pénznemről nyújt tájékoztatást, ahol a 365 Pénzügy második könyvelési pénznemeként a Microsoft Dynamics jelentési pénznem használatos.
+description: Ez a cikk a kettős pénznemről nyújt tájékoztatást, ahol a jelentési pénznem a Microsoft Dynamics 365 Pénzügy második könyvelési pénzneme.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 04738d2fe88fef5c0e96a39febfec86fab3bee7d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906355"
 ---
 # <a name="dual-currency"></a>Kettős pénznem
 
@@ -36,7 +36,7 @@ Ezenkívül több modul javítva lett a jelentési pénznem nyomon követése, j
 - Tárgyi eszközök 
 - Konszolidációk
 
-Egy frissítést követően el kell végezni bizonyos lépéseket a Készpénz- és bankkezelés esetében. Ezért ügyeljen arra, hogy a témakör vonatkozó részeit figyelmesen olvassa el.
+Egy frissítést követően el kell végezni bizonyos lépéseket a Készpénz- és bankkezelés esetében. Mindenképpen olvassa el és értse meg a cikk megfelelő szakaszait.
 
 ## <a name="posting-process"></a>Feladási folyamat
 
@@ -93,7 +93,7 @@ A következő további módosítások történtek a **Főkönyv** modulon:
 - Egy külön árfolyamtípust a lehet megadni a főkönyvben a jelentési pénznemhez. Ha egy szervezet nem szeretné használni a külön árfolyamtípust, üresen hagyhatja a jelentési pénznem árfolyamtípusának mezőjét. Azt is megteheti, hogy kiválasztja ugyanazt az árfolyamtípust, amely a könyvelési pénznemhez használt. Ha üresen hagyja a mezőt, a rendszer a könyvelési pénznem árfolyamtípusát használja.
 - Egy új napló, a Jelentési pénznem kiigazítási naplója, lehetővé teszi a kiigazítások feladását a főkönyvi számlákra csak a jelentési pénznemben. Ez a napló lehetővé teszi csak a főkönyvi számlákra történő feladást. Nem támogatja a vállalatközi megoldást, és a pénznemnek a napló feladása szerinti jogi személy jelentési pénznemének kell lennie. A napló feladásakor a tranzakció pénzneme és a könyvelési pénznem összegei 0 (nulla), és a jelentési pénznem összegének feladása a tranzakcióhoz megadott összeggel történik. Mivel a jelentési pénznem használatának módja a **Kötelezettségek**, **Kinnlevőségek** és **Tárgyi eszközök** modulokban megváltozott, ez a napló használható a korrekciókhoz a frissítéseket követően. Példák arra, hogy hogyan használható ez a napló, a modulok szakaszokban olvashatók.
 - Az időszak-felosztási folyamat frissítve lett, így az összegeket a tranzakció, a könyvelés és a jelentés pénznemében osztja fel. Korábban az összegeket a tranzakció és a könyvelési pénznemben osztották fel, és ezután fordították a könyvelési pénznem összegét a jelentési pénznemre. Ezt a viselkedést azzal járhatott, hogy továbbra is a jelentési pénznemben maradt az egyenleg a főkönyvi számlán. Most, amikor az összegek számítása és használata a könyvelési bejegyzésben történik, nincs fordítás.
-- A devizaátértékelési folyamatban már átértékelte a jelentési pénznemben az összegeket. Azonban a jelentési pénznem összegének számítása a tranzakció pénzneméből történik, a témakör korábbi részében az itt leírtak szerint: [Feladási folyamat](#posting-process).
+- A devizaátértékelési folyamatban már átértékelte a jelentési pénznemben az összegeket. A jelentési pénznem összegét azonban most a tranzakció pénznemösszege alapján számítja ki a program, [amint](#posting-process) azt a jelen cikk korábbi feladási folyamat szakasza ismerteti.
 - Számos jelentés és lekérdezés a főkönyvben már rendelkezett a jelentési pénznemmel, de néhány nem. Az egyik példa a **Főkönyvi kivonat** listaoldal. Ezen listaoldal most oszlopokat tartalmaz a könyvelési pénznemhez és a jelentési pénznemhez. Vegye figyelembe, hogy ha a könyvelési pénznem és a jelentési pénznem megegyezik, vagy ha nincs jelentési pénznem meghatározva a főkönyvben, a jelentési pénznem oszlopai rejtettek.
 
 ### <a name="financial-reporting"></a>Pénzügyi jelentéskészítés

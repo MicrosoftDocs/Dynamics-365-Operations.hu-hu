@@ -1,6 +1,6 @@
 ---
 title: Egyéni hivatkozások létrehozása a vezetői önkiszolgáló rendszerhez
-description: Ez a témakör azt mutatja be, hogyan lehet egyéni hivatkozásokat létrehozni a Dynamics 365 Human Resources Vezetői önkiszolgálás szolgáltatásában.
+description: Ez a témakör azt ismerteti, hogyan lehet egyéni hivatkozásokat létrehozni a vezető önkiszolgáló rendszerében a következőben:Dynamics 365 Human Resources
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3437a8ce7af942334c76b763bb216b8492b111bc
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0597c8a19bae7997500fc88e38847bcd053643bb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853016"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Egyéni hivatkozások létrehozása a vezetői önkiszolgáló rendszerhez
 

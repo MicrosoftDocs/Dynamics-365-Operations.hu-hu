@@ -1,5 +1,5 @@
 ---
-title: Vevői ügyfelek integrálása e-commerce webhelyoldalakra
+title: A Customer Voice integrálása e-kereskedelmi webhelyek oldalaira
 description: Ez a témakör azt mutatja be, hogyan lehet integrálni a Microsoftot Dynamics 365 Customer Voice az Dynamics 365 Commerce e-commerce webhelyoldalakba.
 author: samjarawan
 ms.date: 05/17/2022
@@ -9,14 +9,14 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 272ec1a59ed45b2d2336dcfea16051d27011360f
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: c8c67ecf4950c92fc91c8d119e06e5e8afff0ddf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850330"
 ---
-# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Vevői ügyfelek integrálása e-commerce webhelyoldalakra
+# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>A Customer Voice integrálása e-kereskedelmi webhelyek oldalaira
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,7 +37,7 @@ A vevő Projekt projektsablonjának kiválasztásához kövesse ezeket a lépés
 1. Válassza ki az összegyűjteni kívánt visszajelzéstípus projektsablonját, **majd válassza a Tovább gombra**.
 1. A Küldés **lap** Beágyazási formátum **kiválasztása** csoportjában válasszon ki egy beágyazási formátumot. A **Beágyazott kód** mező mutatja a Commerce webhelyszerkesztőben beágyazható kódot.
 
-Az ebben a témakörben található példák az Időszakos vevői **felmérés** projektsablonját **és a Gomb beágyazási formátumot** használják.
+Az ebben a példában lévő példák az Időszakos vevői **felmérés** projektsablonját **és a Gomb beágyazási formátumot** használják.
 
 A következő **példa bemutatja** az Időszakos vevői felmérés projektsablonjának lapját, **ahol** be van jelölve a Gomb beágyazási formátumának lehetősége, és a beállítás beágyazási kódja megjelenik a Beágyazott kód mezőben **.** Három különálló műveletre van szükség a megadott kódnak a webhelyoldalakba történő beágyazása érdekében, az alábbi szakaszokban leírtak szerint.
 

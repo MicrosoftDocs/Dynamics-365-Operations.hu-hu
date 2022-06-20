@@ -1,6 +1,6 @@
 ---
 title: Kiegyenlítés konfigurálása
-description: A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a témakör a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be.
+description: A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a cikk a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be.
 author: kweekley
 ms.date: 05/16/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 978c99ddd3e56e6699ab128a154a5594685d5956
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 14ed2999a9ad8ffc64815ca3f8b1556aad27ae48
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910200"
 ---
 # <a name="configure-settlement"></a>Kiegyenlítés konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
-A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a témakör a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be. 
+A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a cikk a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be. 
 
 A következő paraméterek a kiegyenlítések feldolgozását befolyásolják a Microsoft Dynamics 365 Pénzügyben. A kiegyenlítés az a folyamat, amikor a számlát kiegyenlítjük egy kifizetéssel vagy jóváírással szemben. Ezek a paraméterek a **Kiegyenlítés** területen, a **Kinnlevőségek paraméterei** és a **Kötelezettségek paraméterei** lapokon találhatók.
 

@@ -1,6 +1,6 @@
 ---
-title: Azure-tárolási fiók létrehozása az Azure-portálon
-description: Ez a témakör azt mutatja be, hogyan lehet Azure-tárolási fiókot létrehozni elektronikus számlázáshoz.
+title: Azure-tárfiók létrehozása az Azure Portalon
+description: Ez a cikk bemutatja, hogyan lehet Azure-tárolási fiókot létrehozni elektronikus számlázáshoz.
 author: dkalyuzh
 ms.date: 02/14/2022
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3d9647e234b3603ef6305ec6031a793b744bbe98
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 4380261140086bcb278162f8dc70b39eaa7078fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371895"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898018"
 ---
-# <a name="create-an-azure-storage-account-in-the-azure-portal"></a>Azure-tárolási fiók létrehozása az Azure-portálon
+# <a name="create-an-azure-storage-account-in-the-azure-portal"></a>Azure-tárfiók létrehozása az Azure Portalon
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +49,7 @@ Az elektronikus számlázási szolgáltatás Microsoft Azure által létrehozott
     - Hozzáadás
     - Létrehozás
     - Írás
-    - Törlés
+    - Delete
     - Lista
 
 14. Válassza a **SAS-jogkivonat és URL létrehozása** lehetőséget.

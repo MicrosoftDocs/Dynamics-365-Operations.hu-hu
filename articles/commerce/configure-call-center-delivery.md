@@ -1,6 +1,6 @@
 ---
 title: Szállítási módok és költségek beállítása a hívásközponthoz
-description: Ez a témakör leírja, hogyan lehet a hívásközpont rendeléshez tartozó költségeket és szállítási költségeket beállítani a Dynamics 365 Commerce szolgáltatásban.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani a hívásközponti rendelés szállítási módjait és költségeit Dynamics 365 Commerce.
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f445e9dabd0210951609170369eae63bcc30ce6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888298"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Szállítási módok és költségek beállítása a hívásközponthoz
 
@@ -35,7 +35,7 @@ A Commerce funkciói lehetővé teszik a felhasználók számára, hogy korláto
 
 Mielőtt megadná, hogy mely szállítási módok használhatók a hívásközponti rendelésekhez, illetve meghatározná a kapcsolódó szabályokat és költségeket, meg kell adnia a szállítási módot. Lépjen az **Értékesítés és marketing \> Beállítás \> Elosztás \> Szállítási módok** pontra. Kattintson az **Új** lehetőségre új szállítási mód létrehozásához. Másik megoldásként válasszon a listából egy meglévő szállítási módot, majd válassza a **Szerkesztés** lehetőséges a szállítási mód módosításához.
 
-A **Szállítási mód** mezőben alfanumerikus karakterek bármilyen kombinációját megadhatja az üzleti követelményei alapján. Ezután a **Leírás** mezőben további kontextust adhat meg. A **Költségcsoport** és **Sürgős** mezők kitöltése nem kötelező, és később részletesebben tárgyaljuk őket ebben a témakörben.
+A **Szállítási mód** mezőben alfanumerikus karakterek bármilyen kombinációját megadhatja az üzleti követelményei alapján. Ezután a **Leírás** mezőben további kontextust adhat meg. A **Költségcsoport és** **a Expedite** mezők kitöltése nem kötelező, és a cikk későbbi, részletesebben is ismerteti.
 
 A **Commerce csatornák** gyorslapon adjon meg minden kiskereskedelmi csatornát, amely használhatja a szállítási módot, amikor értékesítési tranzakciót hoznak létre az adott csatornában.
 

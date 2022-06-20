@@ -1,6 +1,6 @@
 ---
 title: Szabadszöveges számla létrehozása
-description: Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni.
+description: Ez a cikk bemutatja a szabadszöveges számlák létrehozásához szükséges számlákat.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 87dc6334baa83ace23b77d94da4d1e464cb0b574
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878160"
 ---
 # <a name="create-a-free-text-invoice"></a>Szabadszöveges számla létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni. Ez az eljárás az **USMF** bemutatócéget használja.
+Ez a cikk bemutatja a szabadszöveges számlák létrehozásához szükséges számlákat. Ez az eljárás az **USMF** bemutatócéget használja.
 
 ## <a name="create-a-free-text-invoice"></a>Szabadszöveges számla létrehozása
 
@@ -37,7 +37,7 @@ Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni. 
     * SEPA típusú felhatalmazások használatakor a beszedési megbízási felhatalmazást automatikusan kitölti a program, ha a vevői számla lehetőséget választja.
 
 4. A **Leírás** mezőben adjon meg egy értéket.
-5. A **Fő számla** mezőben adja meg egy számlaszámot, amelynek nincsenek dimenziói. A dimenziók megadását az útmutató később ismerteti.
+5. A **Fő számla** mezőben adja meg egy számlaszámot, amelynek nincsenek dimenziói. Ebben a cikkben később beírhatja a dimenziókat.
 
     Megadhat továbbá egy vagy több karaktert a fő számlából, és használhatja a keresés funkciót a számla megtalálásához.
 

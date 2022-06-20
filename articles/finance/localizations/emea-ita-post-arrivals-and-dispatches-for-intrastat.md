@@ -1,6 +1,6 @@
 ---
 title: Érkezések és küldemények feladása az Intrastat számára
-description: Ez a témakör egy példát mutat be az Intrastat érkezések és küldemények postázására.
+description: Ez a cikk az Intrastat érkezések és elküldések feladását mutatja be.
 author: anasyash
 ms.date: 8/23/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4ab4402740d199043519773b18732bdde9a0fb2f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aef20f0261e103be7fe231a7efb39751ab4d1151
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724783"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862964"
 ---
 # <a name="post-arrivals-and-dispatches-for-intrastat"></a>Érkezések és küldemények feladása az Intrastat számára
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör egy példát mutat be az Intrastat érkezések és küldemények postázására. A példa az **ITCO** jogi személyt használja.
+Ez a cikk az Intrastat érkezések és elküldések feladását mutatja be. A példa az **ITCO** jogi személyt használja.
 
 ## <a name="setup"></a>Beállítás
 
@@ -32,7 +32,7 @@ Ez a témakör egy példát mutat be az Intrastat érkezések és küldemények 
 
     További részleteket a [Konfigurációs szolgáltatás globális adattárából ER konfigurációk letöltése](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md) című részben talál.
 
-2. A Microsoft Dynamics 365 Pénzügyben folyamatosként adja meg a következő számsorozatokat: **Azon397\_**, **Aogatás16403\_**, **407\_** **és PURVÉ.\_**
+2. A Microsoft Dynamics 365 Pénzügyben folyamatosként adja meg a következő számsorozatokat: **Szon\_ 397**, **A illetve\_ 16403**, **Var\_ 407** és **PUR\_ EU**.
 
     1. Menjen a **Szervezeti adminisztráció** > **Számsorozatok** > **Számsorozatok** pontra.
     2. Válassza ki a táblázatból a számsorozat kódok egyikét.

@@ -1,6 +1,6 @@
 ---
 title: Lingek hozzáadása vagy másolása (előzetes verzió)
-description: Ez a témakör azt mutatja be, hogyan lehet új lízinget létrehozni az eszközlízingben való adatok megadásával vagy egy meglévő lízing adatainak másolásával.
+description: Ez a témakör azt írja le, hogyan lehet új bérleti bérletet létrehozni a tárgyi eszköz adatainak megadásával vagy egy meglévő bérleti szerződésből származó adatok másolásével.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 798ab3ece45ee6f21694a364cfb7a4ff14a9c8aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880932"
 ---
 # <a name="add-or-copy-leases-preview"></a>Lingek hozzáadása vagy másolása (előzetes verzió)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet a nulláról új lízinget létrehozni az eszközlízingben, illetve hogyan lehet lízinget létrehozni egy meglévő lízing adatainak másolásával. A lízingek nulláról való létrehozásának folyamata az új lízing adatainak megadását, majd a lízing ütemezés létrehozását jelenti. Ha legalább egy lízing be van állítva, akkor könnyebben megtalálhatja az adatok meglévő lízingből történő másolását, majd az új lízing létrehozásához szükséges adatok szerkesztését.
+Ez a cikk bemutatja, hogyan lehet az akkenből bérleni, és hogyan lehet egy meglévő bérletet másolni. A lízingek nulláról való létrehozásának folyamata az új lízing adatainak megadását, majd a lízing ütemezés létrehozását jelenti. Ha legalább egy lízing be van állítva, akkor könnyebben megtalálhatja az adatok meglévő lízingből történő másolását, majd az új lízing létrehozásához szükséges adatok szerkesztését.
 
 ## <a name="create-a-lease"></a>Lízing létrehozása
 
@@ -37,16 +37,16 @@ A következő lépéseket követve hozzon létre egy lízinget az Eszközlízing
 
 A bérleti díj kezdő dátuma nem lehet korábbi a bérlet kezdő dátumán. Ha a bérlet kezdő dátumán korábbi dátumot ad meg a bérleti díj kifizetésére, akkor hibaüzenetet kap.
 
-Alapértelmezés szerint a Bérlet részletei lap Általános gyorslapján a Fizetési összeg lebontása beállítás Nem beállítás van megjelölve, ha a Fizetéslebontás engedélyezése az Eszköz paraméterei lapon Az Igen **beállítás** **van** **·** **·** **·** **·** **megjelölve**. 
+Alapértelmezés **szerint** **·** **·** **·** **a Bérlet részletei lap Általános gyorslapján a Fizetési összeg lebontása beállítás Nem beállítás van megjelölve, ha a Fizetéslebontás** **·** **engedélyezése az Eszköz paraméterei lapon Az Igen beállítás van megjelölve.** 
 
-Ha a Kifizetés összegének lebontása beállítás Igen, a Fizetési ütemezés sorai gyorsábra Fizetési összeg **mezője** **·** **·** **zárolva** van. Ez lesz a kifizetés összegének összesítése, amely a kifizetési összegeket lebontó katalógusból később **van** beállítva.
+Ha a **Kifizetés összegének** lebontása beállítás **Igen**, **·** **a** Fizetési ütemezés sorai gyorsábra Fizetési összeg mezője zárolva van. Ez lesz a kifizetés összegének **összesítése, amely a kifizetési összegeket lebontó katalógusból később van beállítva**.
 
-Válassza **ki a Kifizetés összegének** lebontását egy olyan lap megnyitásához, ahol hozzáadhatja a részletezett kifizetéstípusokat. Az **Összegek hozzáadása a kifizetés összeghez gombja az összegeket a Kifizetés összege** **mezőbe** mozgatja.
+Válassza ki **a Kifizetés összegének lebontását** egy olyan lap megnyitásához, ahol hozzáadhatja a részletezett kifizetéstípusokat. Az **Összegek hozzáadása a kifizetés** összeghez gombja az összegeket a **Kifizetés összege mezőbe mozgatja**.
 
 > [!NOTE]
-> Ha egy tételes kifizetési összeget ad hozzá, majd az Esc billentyűt választja, a beírt összegek nem kerülnek be a Fizetési ütemezés sorai gyorsbillentyű Fizetési ütemezés **sorai** **·** **mezőbe**. Ehelyett a Kifizetés összegeit részletező párbeszédpanelen **tárolja** őket a rendszer. Ha azt szeretné, hogy a párbeszédpanelen a teljes összeg látható, válassza az Összeg oszlopot, válassza ki és tartsa lenyomva (vagy kattintson a jobb **gombbal**), majd válassza az Összesítés ezt az **oszlopot**. 
+> Ha egy tételes **kifizetési összeget ad hozzá, majd az Esc** billentyűt választja, **·** **a** beírt összegek nem kerülnek be a Fizetési ütemezés sorai gyorsbillentyű Fizetési ütemezés sorai mezőbe. Ehelyett a Kifizetés összegeit **részletező párbeszédpanelen tárolja őket** a rendszer. Ha azt szeretné, hogy a párbeszédpanelen a teljes összeg látható, válassza az Összeg oszlopot, **válassza** ki és tartsa lenyomva (vagy kattintson a jobb gombbal), majd válassza **az Összesítés ezt az oszlopot**. 
 
-A **Sor** másolása gomb a részletezett kifizetés részletezését másolja.
+A **Sor másolása** gomb a részletezett kifizetés részletezését másolja.
 
 ## <a name="create-a-lease-schedule"></a>Lízingütemezés létrehozása
 

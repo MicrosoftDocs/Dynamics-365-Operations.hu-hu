@@ -1,6 +1,6 @@
 ---
 title: Feladatkezelés
-description: Ez a témakör bemutatja a Microsoft által elérhető feladatkezelési funkciókat Dynamics 365 Human Resources.
+description: Ez a cikk bemutatja a Microsoft által elérhető feladatkezelési funkciókat Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 12/20/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae453bd57217f272038decc7e40ed373f618ae03
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: c567f6d74e6ff87a72ff3b8663ca3a291dff3abb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710221"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897864"
 ---
 # <a name="task-management"></a>Feladatkezelés
 
@@ -96,8 +96,8 @@ A feladathivatkozás egy külső weboldalra vagy a Dynamics 365 alkalmazás egy 
 - **URL** – ha ezt a lehetőséget választja, adja meg annak a weblapnak az URL-címét, amelybe a feladathoz rendelt személyt el szeretné menni. A megadott lap olyan lap lehet, amely nem része a Dynamics 365 alkalmazásnak.
 - **Dolgozó részletei** – ha ezt a lehetőséget választja, válasszon a következő lehetőségek közül:
 
-    - **Alkalmazotti önkiszolgáló műveletek** – ez a beállítás az alkalmazotti **önkiszolgáló szolgáltatásban elérhető lapok listáját jeleníti meg**. Akkor használja, **ha a felvehető alkalmazotthoz rendelt feladatot az Alkalmazott önkiszolgáló szolgáltatásban kell végrehajtani**. Ha például azt szeretné, hogy az alkalmazott adja meg személyes kapcsolattartási adatait, **válassza** az Alkalmazott önkiszolgálói műveleteket, **majd válassza a Személyes részletekPersonal&gt; Information lehetőséget**.
-    - **Dolgozókezelési műveletek** – ez a beállítás megjeleníti a dolgozó rekordjához kapcsolódó, de az alkalmazott számára nem elérhető lapok listáját. Ha például azt szeretné, hogy a feladat tulajdonosa adja meg a külsős dolgozókra jellemző adatokat, például a kompenzációs adatokat, **válassza ki a Dolgozókezelési műveleteket,** **majd válassza a Kompenzáció-tag kompenzációt&gt;.**
+    - **Alkalmazotti önkiszolgáló műveletek** – ez a beállítás az alkalmazotti **önkiszolgáló szolgáltatásban elérhető lapok listáját jeleníti meg**. Akkor használja, **ha a felvehető alkalmazotthoz rendelt feladatot az Alkalmazott önkiszolgáló szolgáltatásban kell végrehajtani**. Ha például azt szeretné, hogy az alkalmazott adja meg személyes kapcsolattartási adatait, válassza ki **az** alkalmazott önkiszolgáló tevékenységét, majd **válassza a Személyes adatok&gt; adatokat**.
+    - **Dolgozókezelési műveletek** – ez a beállítás megjeleníti a dolgozó rekordjához kapcsolódó, de az alkalmazott számára nem elérhető lapok listáját. Ha például azt szeretné, hogy a feladat tulajdonosa adja meg a beépített dolgozóra jellemző adatokat, például a kompenzációs adatokat, **válassza ki a Dolgozókezelési műveleteket,** **majd válassza a Fix kompenzáció kompenzációt&gt;.**
 
 ### <a name="assignment-types"></a>Hozzárendelés-típusok
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 943a84407d022c2c05bc534a35a2b5d44a94653e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105463"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876412"
 ---
 # <a name="vendor-invoice-dates"></a>Szállítóiszámla-dátumok
 
@@ -37,7 +37,7 @@ A **Függőben lévő szállítói számla részletek** oldalon a számla fejlé
 
 Előfordulhat, hogy a szállítói számla függő állapotban van hosszú ideig az időszak lezárása után. Ha készen áll a feladásra, akkor a korábbi feladási időszak régi feladási dátumát használja a a napló. Az az időszak azonban már le van zárva. Emiatt a Kötelezettségek (AP) adminisztrátorának manuálisan kell módosítania minden korábban létrehozott függőben lévő számla feladási dátumát az új feladási időszakra.
 
-Az ebben a témakörben ismertetett funkció lehetővé teszi a rendszer beállítását, hogy a feladási dátum automatikusan az üzleti követelményeknek megfelelően korrigálva legyen.
+Az ebben a cikkben ismertetett funkció segítségével beállítható a rendszer, így automatikusan az üzleti követelményeknek megfelelően módosítja a feladási dátumot.
 
 ## <a name="parameter-for-automatically-adjusting-the-vendor-invoice-posting-date"></a>Paraméter a szállítói számla feladási dátumának automatikus módosításához
 

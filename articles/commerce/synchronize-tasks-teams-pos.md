@@ -1,6 +1,6 @@
 ---
 title: Feladatkezelés szinkronizálása a Microsoft Teams és a Dynamics 365 Commerce-pénztár között
-description: Ez a témakör azt ismerteti, hogyan kell szinkronizálni a feladatkezelést a Microsoft Teams és a Dynamics 365 Commerce pénztár (POS) között.
+description: Ez a témakör leírja, hogyan kell szinkronizálni a feladatkezelést a Microsoft Teams Dynamics 365 Commerce pénztár és a pénztár között.
 author: gvrmohanreddy
 ms.date: 02/17/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b7bb38a415524290d1636eda1f379f3cdcf7e593
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 23da56f4f6aee906aad261939d1c7ef9feac5922
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688911"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874869"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Feladatkezelés szinkronizálása a Microsoft Teams és a Dynamics 365 Commerce-pénztár között
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan kell szinkronizálni a feladatkezelést a Microsoft Teams és a Dynamics 365 Commerce pénztár (POS) között.
+Ez a témakör leírja, hogyan kell szinkronizálni a feladatkezelést a Microsoft Teams Dynamics 365 Commerce pénztár és a pénztár között.
 
 A Teams integráció egyik fő célja a feladatkezelés szinkronizálása a pénztáralkalmazás és a Teams között. Ily módon az üzlet alkalmazottai a pénztáralkalmazást vagy a Teams alkalmazást használhatja feladatok kezelésére, és nem kell másik alkalmazásra váltani.
 

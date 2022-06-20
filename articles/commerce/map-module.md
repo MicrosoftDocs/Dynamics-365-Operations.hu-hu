@@ -1,6 +1,6 @@
 ---
-title: Modul feltérképezése
-description: Ez a témakör a feltérképezési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket konfigurálni a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: Térképmodul
+description: Ez a témakör a térképmodulokat tartalmazza, és bemutatja, hogyan kell konfigurálni őket Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 191d98d039dea6466eeee9a1db0835393be0a9ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747393"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894436"
 ---
 # <a name="map-module"></a>Térképmodul
 
 [!include [banner](includes/banner.md)]
 
 
-Ez a témakör a feltérképezési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket konfigurálni a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör a térképmodulokat tartalmazza, és bemutatja, hogyan kell konfigurálni őket Microsoft Dynamics 365 Commerce.
 
 A modul feltérképezése egy interaktív térképen jeleníti meg az üzleteket, amelyeket a [8. verziós Bing Térképek webes vezérlő](/bingmaps/v8-web-control/) használatával renderelnek. A Bing Maps API-kulcsot kötelező megadni, és hozzá kell adni a Commerce központ megosztott paraméterei oldalhoz. A modul feltérképezése különböző nézeteket nyújt – például közúti, légi és utcai –, amelyekkel a felhasználók megtekinthetik a leképezési helyeket. Olyan interakciókat is lehetővé tesznek, mint például a nagyítás és a felhasználó helyének használata.
 

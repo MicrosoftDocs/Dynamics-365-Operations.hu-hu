@@ -1,6 +1,6 @@
 ---
 title: TDS-kifizetések elszámolása TDS-hatósági szállítóknak és TDS-challan generálása
-description: Ez a témakör elmagyarázza, hogyan kell rendezni a Forrásnál levont adó (TDS) kifizetését hatóság szállítóinak.
+description: Ez a témakör leírja, hogyan lehet elszámolni a forrás (TDS) kifizetéseknél levont adókat az adatforrás-szolgáltató szállítói számára.
 author: kailiang
 ms.date: 03/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: e9dcf2e9d5fc1a1f9eae9d93050b0831bd42f78c
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e1ee65a555193433e6712a8caa892d7a3ad7bf61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725539"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848510"
 ---
 # <a name="settle-tds-payments-to-tds-authority-vendors-and-generate-tds-challan"></a>TDS-kifizetések elszámolása TDS-hatósági szállítóknak és TDS-challan generálása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör elmagyarázza, hogyan kell rendezni a Forrásnál levont adó (TDS) kifizetését hatóság szállítóinak.
+Ez a témakör leírja, hogyan lehet elszámolni a forrás (TDS) kifizetéseknél levont adókat az adatforrás-szolgáltató szállítói számára.
 
 1. Ugorjon a **Kötelezettségek \> Fizetések \> Szállítói kifizetés naplója** lehetőségre.
 

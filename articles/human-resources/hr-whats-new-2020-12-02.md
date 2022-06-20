@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. december 2.)
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. december 2-i kiadásban.
+description: Ez a témakör olyan funkciókat ismertet, amelyek vagy újak, vagy módosulnak a Microsoftban Dynamics 365 Human Resources 2020. december 2-án.
 author: marcelbf
 ms.date: 12/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6e02586ad3e6b4428f2ba826851db6ebc3172bdf1760b483032f5159e7864a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cecef6d2e73b42126b1be100dca52ebd8d9270fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782659"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848107"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. december 2.)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le.
+Ez a témakör az új, módosított vagy hamarosan érkező funkciókat írja le Dynamics 365 Human Resources.
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -52,9 +52,9 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 > [!NOTE]
-> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakört frissítjök olyan hibajavításokkal, amelyek annak első közzététele után léptek életbe.
+> Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. A cikk első közzététele után frissíthet egy hibajavítást, amely a javításokat tartalmazza a buildben.
 
-| Kiadás száma | Kiadás | Leírás |
+| Kiadás száma | Probléma | Leírás |
 | --- | --- | --- |
 | 514087 | A BenefitEligibilityProcessResult eredménynek tartalmaznia kell a feldolgozáshoz használt datetime értéket. | A BenefitEligibity feldolgozási eredménye mostmár tartalmazza az utolsó feldolgozás datetime pecsétjét, amely korábban hiányzott. |
 | 526903 | A juttatási regisztráció sikertelen a függő feleket tartalmazó csomagok esetében ha a **Kijelölt személyek automatikus kiválasztása** be van kapcsolva az **Human Resource megosztott paramétereiben**. | Kijavítottuk azt a problémát, amely miatt a juttatási regisztráció sikertelen volt az függő felek esetében, amikor a **Kijelölt személyek automatikus kiválasztása** beállítás be volt kapcsolva az alapértelmezett kijelölt személyek számára. |

@@ -1,6 +1,6 @@
 ---
 title: Tárgyi eszközök kivezetése selejtként
-description: Ez a témakör azt mutatja be, hogyan lehet kiküszöbölni a tranzakciókat olyan tárgyi eszközök esetében, amelyek selejtként kerültek kivezetésre.
+description: A cikk leírja, hogy egy olyan tárgyi eszköz tranzakcióit kell megszüntetni, amelyek selejtként ki vannak selejtezésre kivetve.
 author: moaamer
 ms.date: 08/14/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: c30837da84bff67bbab80ff5116135e2533a867d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 6564314c70de1880e437c3c493689f12d96d91ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855433"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Tárgyi eszközök kivezetése selejtként
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet kiküszöbölni a tranzakciókat olyan tárgyi eszközök esetében, amelyek selejtként kerültek kivezetésre. Az eltávolítható tranzakciótípusok között szerepelnek egy eszköz beszerzési és felhalmozott értékcsökkenési tranzakciói, valamint egyéb tárgyieszköz-tranzakciói. Ezeknek a tranzakcióknak a felszámolása érinti a mérlegszámlákat, például a beszerzések helyesbítését, az értékcsökkenés kiigazítását, az átértékelést, a felértékelési és a leírási számlákat.
+A cikk leírja, hogy egy olyan tárgyi eszköz tranzakcióit kell megszüntetni, amelyek selejtként ki vannak selejtezésre kivetve. Az eltávolítható tranzakciótípusok között szerepelnek egy eszköz beszerzési és felhalmozott értékcsökkenési tranzakciói, valamint egyéb tárgyieszköz-tranzakciói. Ezeknek a tranzakcióknak a felszámolása érinti a mérlegszámlákat, például a beszerzések helyesbítését, az értékcsökkenés kiigazítását, az átértékelést, a felértékelési és a leírási számlákat.
 
 | Tranzakció                                         | Tartozás (Dr.) | Jóváírás (Cr.) |
 |-----------------------------------------------------|-------------|--------------|

@@ -1,6 +1,6 @@
 ---
 title: Az e-kereskedelem felhasználóinak és szerepköreinek kezelése
-description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni a felhasználóknak a Microsoft Dynamics 365 Commerce webhely szerzői környezetéhez való hozzáférést.
+description: Ez a cikk bemutatja, hogy hogyan lehet hozzáférést biztosít a felhasználóknak a webhelyre vonatkozó szerzője környezethez Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ff0d3e607eb905eb9264bbb9ba151fbd527a81a2c72252252f2a45edc201e1b4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ac4342e4439db229997d9d4a0ad32f3664a795b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715406"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868961"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Az e-kereskedelem felhasználóinak és szerepköreinek kezelése
 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet engedélyezni a felhasználóknak a Microsoft Dynamics 365 Commerce webhely szerzői környezetéhez való hozzáférést.
+Ez a cikk bemutatja, hogy hogyan lehet hozzáférést biztosít a felhasználóknak a webhelyre vonatkozó szerzője környezethez Microsoft Dynamics 365 Commerce.
 
 A felhasználói hozzáférés szabályozására és a felhasználóknak a meghatározott feladatok végrehajtásához való jogosultságának biztosítására a webhelyszerkesztő környezet a Microsoft Azure Active Directory (Azure AD) felületen létrehozott biztonsági csoportokat használja. Először egy új vagy meglévő biztonsági csoportot kell társítania a fejlesztői környezet minden szerepköréhez az Azure AD felületről. Ezt követően megadhatja vagy visszavonhatja az egyes felhasználók engedélyeit, ha hozzáadja ezeket a felhasználókat egy megfelelő biztonsági csoporthoz, vagy eltávolítja őket egy biztonsági csoportból.
 
@@ -50,7 +50,7 @@ A mikor telepíti a Dynamics 365 Commerce példányt a Microsoft Dynamics Lifecy
 
 ## <a name="administrator-role"></a>Adminisztrátor szerepkör
 
-Amikor új webhelyet hoz létre a Commerce szolgáltatásban, meg kell adnia egy biztonsági csoportot s **Rendszergazda** szerepkörhöz. Az ebben a témakörben korábban ismertetett táblázatban megtekintheti az egyes szerepkörök által biztosított engedélyek áttekintését.
+Amikor új webhelyet hoz létre a Commerce szolgáltatásban, meg kell adnia egy biztonsági csoportot s **Rendszergazda** szerepkörhöz. A témakör korábbi táblázatában található a szerep által adott engedélyek áttekintése.
 
 ## <a name="add-or-update-security-groups"></a>Biztonsági csoportok hozzáadása vagy frissítése
 

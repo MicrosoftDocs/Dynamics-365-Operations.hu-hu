@@ -1,6 +1,6 @@
 ---
 title: Töredékek használata
-description: Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
+description: Ez a témakör ismerteti, hogy miért, mikor és hogyan lehet a cikkrészleteket használni Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 8824a42e46d94904f50d3f95b486673c231d9828
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090744"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896822"
 ---
 # <a name="work-with-fragments"></a>Töredékek használata 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
+Ez a témakör ismerteti, hogy miért, mikor és hogyan lehet a cikkrészleteket használni Microsoft Dynamics 365 Commerce.
 
 A töredékek lehetővé teszik a modul-konfigurációk központosított szerkesztési élményének létrehozásár, amelyet a webhely minden területén újra fel lehet használni. Például a fejléceket, élőlábakat és szalagcímeket gyakran töredékként konfigurálják, mivel több oldal megosztva használja azokat. A töredékeket úgy képzelje el, mint kicsiny weboldalakat, amelyek a webhely egyéb oldalaiba illeszthetők be. A töredékek saját életciklussal rendelkeznek. Más szóval a létrehozásuk, hivatkozásuk, frissítése és törlése független entitásként történik a szerkesztőeszközökben.
 
@@ -122,19 +122,19 @@ A következő lépésekkel szerkeszthet új töredéket a Commerce webhelykész�
 
 A töredékeket úgy is szerkesztheti, hogy kijelöli azt egy lapon, egy sablonban vagy egy szülő töredékben, majd a jobb oldali Tulajdonságok ablaktáblában kiválasztja a **Töredék szerkesztése** elemet.
 
-### <a name="rename-a-fragment"></a>Nevezze át a töredéket
+### <a name="rename-a-fragment"></a>Részlet átnevezése
 
-Ha át szeretne nevezni egy meglévő töredéket a webhelykészítőben, kövesse az alábbi lépéseket.
+A webhelyszerkesztő egy meglévő részletének átnevezéséhez hajtsa végre a következő lépéseket.
 
-1. A bal oldali navigációs panelen válassza a lehetőséget **Töredékek**.
-1. Válassza ki az átnevezni kívánt töredék nevét.
-1. Válassza ki **Szerkesztés** a töredék szerkesztésének megkezdéséhez. Vegye figyelembe, hogy nem szerkesztheti a töredéket, ha valaki más már szerkeszti a töredéket.
-1. A töredék tulajdonságai ablaktáblában válassza ki a töredék neve melletti toll szimbólumot.
-1. Szükség szerint szerkessze a töredék nevét.
-1. Jelölje be a pipát a névváltoztatás megerősítéséhez.
+1. A bal oldali navigációs ablakban válassza a Részletek **lehetőséget**.
+1. Válassza ki az átnevezni kívánt részlet nevét.
+1. A szerkesztés **kiválasztásával** elkezdheti szerkeszteni a részletet. Ne feledje, hogy ha valaki más már szerkeszti a részletet, akkor a részlet nem szerkeszthető.
+1. A részlettulajdonságok ablaktáblán válassza ki a részletnév melletti tollszimbólumot.
+1. Szükség szerint szerkessze a részletnevet.
+1. A névváltozás megerősítéséhez jelölje be ezt a jelölőnégyzetet.
 1. Válassza a **Szerkesztés befejezése** lehetőséget.
 
-A töredéket a létrehozás után átnevezheti úgy, hogy szerkeszti, majd kiválasztja a toll szimbólumot a töredék neve mellett a tulajdonságpanelen.
+Létrehozás után átnevezhet egy részletet, ha szerkeszti, majd a tulajdonságablakban kiválasztja a részlet neve melletti toll szimbólumot.
 
 ## <a name="additional-resources"></a>További erőforrások
 

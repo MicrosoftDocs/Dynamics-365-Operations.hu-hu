@@ -1,6 +1,6 @@
 ---
 title: Árfolyam-korrekciók
-description: Ez a témakör ismerteti az árfolyam-korrekció funkciót az Észtországban, Magyarországon, a Cseh Köztársaságban, Lettországban, Litvániában, Lengyelországban és Oroszországban levő jogi személyek felhasználói számára.
+description: Ez a cikk az észt, magyar, cseh, lett, litván, lengyelországi és oroszországi jogi személyek árfolyam-korrekciós funkcióiról nyújt tájékoztatást.
 author: ShylaThompson
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 82f9d51bb882ae83c6382a424fbdff65900fd3822d70f496c0956c2e57180ebf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf9e047872269b8fca56c702bd9599c759b0acd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767604"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889793"
 ---
 # <a name="exchange-rate-adjustments"></a>Árfolyam-korrekciók
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti az árfolyam-korrekció funkciót az Észtországban, Magyarországon, a Cseh Köztársaságban, Lettországban, Litvániában, Lengyelországban és Oroszországban levő jogi személyek felhasználói számára.
+Ez a cikk az észt, magyar, cseh, lett, litván, lengyelországi és oroszországi jogi személyek árfolyam-korrekciós funkcióiról nyújt tájékoztatást.
 
 Az Észtországra, Magyarországra, Csehországra, Lettországra, Litvániára, Lengyelországra és Oroszországra vonatkozó árfolyam-korrekciós funkció a következő, a Kinnlevőségek és a Kötelezettségek szempontjából releváns kiterjesztéseket tartalmazza:
 

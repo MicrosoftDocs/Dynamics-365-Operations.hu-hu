@@ -1,6 +1,6 @@
 ---
 title: Termékmennyiség-korlátok beállítása B2B e-kereskedelmi webhelyekhez
-description: Ez a témakör azt ismerteti, hogyan állíthat be termékmennyiség-korlátokat a vállalkozások közötti (B2B) e-kereskedelmi webhelyekhez.
+description: Ez a témakör azt ismerteti, hogyan lehet termékmennyiség-korlátokat beállítani a vállalat és vállalat között üzleti e-kereskedelmi webhelyekre.
 author: josaw1
 ms.date: 01/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 18dc138693dc9fb0e8cf8727de77b5f8584cde79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 034441f8f712c676dbcc89f0009361d0a4a65721
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690196"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877005"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Termékmennyiség-korlátok beállítása B2B e-kereskedelmi webhelyekhez
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan állíthat be termékmennyiség-korlátokat a vállalkozások közötti (B2B) e-kereskedelmi webhelyekhez.
+Ez a témakör azt ismerteti, hogyan lehet termékmennyiség-korlátokat beállítani a vállalat és vállalat között üzleti e-kereskedelmi webhelyekre.
 
 A legtöbb terméknek van egy mértékegysége, amely meghatározza a csoportosításukat. A csoportosítás befolyásolja a termékek értékesítésének módját. Egyes termékek további, mennyiségi csoportosítást tartalmazhatnak. Ez a csoportosítás határozza meg, hogy a termékek egyedi egységként vagy többszörösként értékesíthetők-e, és hogy van-e minimális vagy maximális rendelési mennyiségi korlát, amelyet be kell tartani.
 

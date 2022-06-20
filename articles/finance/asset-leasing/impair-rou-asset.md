@@ -1,6 +1,6 @@
 ---
 title: Használatijog-eszközök értékvesztésének könyvelése
-description: Ez a témakör az értékvesztést rögzítő funkciókat ismerteti, és a 842-es könyvelési standardok kodifikációs témakörének eszközértékcsökkenési ütemezését módosítja.
+description: Ez a témakör ismerteti azokat a funkciókat, amelyek a értékvesztést rögzítik, és módosítják egy könyvelési szabványok codification Topic 842 (ASC 842) működési bérletének értékcsökkenési ütemezését.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 497739e56c6ce0f4fe0bd4aec889f0782d08fc4a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f953b3a351859c6becba10a129bbb17b49be6290
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720167"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894113"
 ---
 # <a name="impair-right-of-use-assets"></a>Használatijog-eszközök értékvesztésének könyvelése
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ha a használatijog-eszköz (ROU) könyv szerinti értéke nem hasznosítható meg, előfordulhat, hogy meg kell vizsgálnia, hogy az eszköz értékvesztett-e. Ha úgy dönt, hogy az eszköz értékvesztett, az eszközlízing rögzítheti az értékvesztést, és ennek megfelelően módosíthatja az értékcsökkenési ütemezést. Ez a témakör az értékvesztést rögzítő funkciókat ismerteti, és a 842-es könyvelési standardok kodifikációs témakörének értékcsökkenési ütemezését módosítja. Ugyanez a módszer vonatkozik a nemzetközi pénzügyi beszámolási szabvány 16 (IFRS 16) lízingre is.
+Ha a használatijog-eszköz (ROU) könyv szerinti értéke nem hasznosítható meg, előfordulhat, hogy meg kell vizsgálnia, hogy az eszköz értékvesztett-e. Ha úgy dönt, hogy az eszköz értékvesztett, az eszközlízing rögzítheti az értékvesztést, és ennek megfelelően módosíthatja az értékcsökkenési ütemezést. Ez a témakör leírja azokat a funkciókat, amelyek a értékvesztést rögzítik, és módosítják egy könyvelési szabványok codification Topic 842 (ASC 842) működési bérletének értékcsökkenési ütemezését. Ugyanez a módszer vonatkozik a nemzetközi pénzügyi beszámolási szabvány 16 (IFRS 16) lízingre is.
 
 A ROU-eszköz fennmaradó egyenlegét a fennmaradó időszakok száma alapján pontosan amortizálják, függetlenül attól, hogy a lízinget az IFRS 16 vagy az ASC 842 szerinti operatív lízing alapján pénzügyi lízingnek minősítették-e.
 
@@ -83,7 +83,7 @@ Az alábbi táblázatok a példában használt lízing **Általános** és **Fiz
 
 ### <a name="steps"></a>Lépések
 
-1. Miután létrehozta a lízinget a témakörben korábban leírtak szerint, lépjen a lízingkönyvre, és erősítse meg a fizetési ütemezést. Ezután adja fel a kezdeti megjelenítési naplóbejegyzést. Az eredeti ROU-eszköz és lízingkötelezettségnek 70.235,81 dollárnak kell lennie. Ebben a példában a lízinget az ASC 842 szerinti operatív lízingnek minősítették.
+1. Miután a cikket már leírta, hozza létre a bérleti könyvet, és erősítse meg a fizetési ütemezést. Ezután adja fel a kezdeti megjelenítési naplóbejegyzést. Az eredeti ROU-eszköz és lízingkötelezettségnek 70.235,81 dollárnak kell lennie. Ebben a példában a lízinget az ASC 842 szerinti operatív lízingnek minősítették.
 2. Futtassa a kötegnapló-folyamatot háromszor, hogy szimulálja a három év áthaladását a lízingfizetések, a kamatköltségek és az értékcsökkenési költségek esetében.
 3. Miután befejezte mindhárom kötegfeladat futtatását, lépjen vissza a lízingkönyvbe, és nyissa meg a forrás- és eszköztranzakciók tábláit a ROU-eszköz és a lízingkötelezettség aktuális könyv szerinti értékének megtekintéséhez. Három év elteltével a kötelezettség értékének körülbelül -53.893,00 dollárnak kell lennie, és az eszköz értékének körülbelül 53.893,00 dollárnak kell lennie. 
 

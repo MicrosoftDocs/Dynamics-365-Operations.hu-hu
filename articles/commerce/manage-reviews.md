@@ -1,6 +1,6 @@
 ---
 title: Minősítések és értékelések kezelése
-description: Ez a témakör azt mutatja be, hogyan kezelheti az értékeléseket és véleményeket a Microsoft Dynamics 365 Commerce webhelykészítőjében.
+description: Ez a cikk bemutatja, hogyan lehet kezelni a értékeléseket és az értékeléseket a webhelyszerkesztőben Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 10/09/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 79738030d4e33ceaad105a404b8188384d5a320c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968227"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881323"
 ---
 # <a name="manage-ratings-and-reviews"></a>Minősítések és értékelések kezelése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan kezelheti az értékeléseket és véleményeket a Microsoft Dynamics 365 Commerce webhelykészítőjében.
+Ez a cikk bemutatja, hogyan lehet kezelni a értékeléseket és az értékeléseket a webhelyszerkesztőben Microsoft Dynamics 365 Commerce.
 
 A Dynamics 365 Commerce a Microsoft Azure kognitív szolgáltatását használja a szöveg automatikus moderálására a profán szavak kivonásával. Ezenkívül a moderátorok a Dynamics 365 Commerce webhelykészítő segítségével a következő manuális feladatokat hajthatják végre:
 
@@ -130,9 +130,9 @@ A Commerce webhelykészítőben az értékelések és vélemények trendjeinek m
 
 [A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
 
-[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
+[Értékelések és véleményezések importálása és exportálása](import-export-reviews.md)
 
-[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
+[Szolgáltatás a szolgáltatáshoz típusú hitelesítés konfigurálása](service-to-service-auth.md)
 
 [Értékelések és vélemények GYIK](ratings-reviews-faq.md)
 

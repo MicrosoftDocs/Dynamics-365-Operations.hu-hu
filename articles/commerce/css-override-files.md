@@ -1,6 +1,6 @@
 ---
 title: A CSS felülíró fájljainak használata
-description: Ez a témakör ismerteti, hogy miért, mikor és hogyan kell használni az egymásba ágyazott stíluslapok (CSS) felülíró fájljait a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör leírja, hogy miért, mikor és hogyan kell használni az egymásra épülő stíluslapok (CSS Cascading Style Sheets) fájlokat a következőben:Microsoft Dynamics 365 Commerce
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: eaeeee4c9de7293ba94cc836c4d7b62787eca81d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964604"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892860"
 ---
 # <a name="work-with-css-override-files"></a>A CSS felülíró fájljainak használata
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti, hogy miért, mikor és hogyan kell használni az egymásba ágyazott stíluslapok (CSS) felülíró fájljait a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör leírja, hogy miért, mikor és hogyan kell használni az egymásra épülő stíluslapok (CSS Cascading Style Sheets) fájlokat a következőben:Microsoft Dynamics 365 Commerce
 
 Az állandó webhelystílusokat általában a webhely témáján keresztül kell kezelni. A témák biztosítják az alapvető CSS- és stílusbeállításokat a webhely minden oldala esetén. A témák az Dynamics 365 Commerce online szoftverfejlesztői készlet (SDK) segítségével hozhatók létre, és a webhelyekre a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáson keresztül vannak telepítve. Az SDK téma-hibakeresés képességei és modulinterfész-konfigurációi segítenek a webhely fejlesztőinek testreszabható és összetartó webhelytervcsomagok létrehozásában. Ha ezeket a tervezési csomagokat egy webhelyre telepítik, a webhelykészítők a tartalom webhelyfejlesztés helyett a tartalom létrehozására, szerkesztésére és közzétételére összpontosíthatnak.
 

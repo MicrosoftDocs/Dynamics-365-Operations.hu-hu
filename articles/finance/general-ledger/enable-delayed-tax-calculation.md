@@ -1,6 +1,6 @@
 ---
 title: Késleltetett adószámítás engedélyezése a naplókban
-description: Ez a témakör azt mutatja be, hogyan lehet a Késleltetett adó számításának engedélyezése funkciót a számítási teljesítmény növelésére használni, ha a naplósorok mennyisége nagyon nagy.
+description: Ez a cikk bemutatja, hogy hogyan lehet bekapcsolni a Késleltetett adószámítás funkciót, hogy javítsa az adószámítások teljesítményét, ha nagyon nagy a naplósorok száma.
 author: EricWang
 ms.date: 09/18/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fddb6d3a9850b8f2f88f813f9591006637c7e535
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 02a038318d4c0fb44b6fcc4bb159ea87c2e9368a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887919"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Késleltetett adószámítás engedélyezése a naplókban
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör azt mutatja be, hogyan lehet késleltetni az áfa számítását a naplókon. Ez a lehetőség segít az adószámítás hatékonyságának javításában, ha sok naplósor van.
+Ez a cikk bemutatja, hogy hogyan késleltetheti a naplók áfaszámítását. Ez a lehetőség segít az adószámítás hatékonyságának javításában, ha sok naplósor van.
 
 Alapértelmezés szerint a rendszer a naplósorokban szereplő áfaösszegeket akkor számítja ki, amikor az adóval kapcsolatos mezőket frissítették. Ezek a mezők tartalmazzák az áfacsoportok és a cikkáfacsoportok mezőit. A naplósor frissítésével az összes naplósor esetében újra lesznek számítva az adózási összegek. Annak ellenére, hogy ez a viselkedés segít a felhasználó számára a valós időben számított adóknál, hatással lehet a teljesítményre is, ha a naplósorok száma nagyon nagy.
 

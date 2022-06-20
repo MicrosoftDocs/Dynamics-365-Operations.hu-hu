@@ -1,6 +1,6 @@
 ---
 title: A pénzügyi dimenziók és a feladás
-description: Amikor megtervezi beállítja a számlatükröt, át kell gondolnia, hogyan működnek majd együtt az egyes elemek egy dokumentum vagy egy napló feladásakor. Ezen összetevők közé tartoznak a számlastruktúrák, a speciális szabályok, valamint a kiegyenlítő és a rögzített dimenziók. Ez a témakör ismerteti az összetevőket, valamint az összetevők együttműködését.
+description: Amikor megtervezi beállítja a számlatükröt, át kell gondolnia, hogyan működnek majd együtt az egyes elemek egy dokumentum vagy egy napló feladásakor. Ezen összetevők közé tartoznak a számlastruktúrák, a speciális szabályok, valamint a kiegyenlítő és a rögzített dimenziók. Ez a cikk bemutatja, hogy mi az egyes összetevők, és hogyan működnek együtt az összetevők.
 author: aprilolson
 ms.date: 08/04/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a612f3b703349e1cffe300b75afd44e72ae63b2c
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910113"
 ---
 # <a name="financial-dimensions-and-posting"></a>A pénzügyi dimenziók és a feladás 
 
 [!include [banner](../includes/banner.md)]
 
-Amikor megtervezi beállítja a számlatükröt, át kell gondolnia, hogyan működnek majd együtt az egyes elemek egy dokumentum vagy egy napló feladásakor. Ezen összetevők közé tartoznak a számlastruktúrák, a speciális szabályok, valamint a kiegyenlítő és a rögzített dimenziók. Ez a témakör ismerteti az összetevőket, valamint az összetevők együttműködését.
+Amikor megtervezi beállítja a számlatükröt, át kell gondolnia, hogyan működnek majd együtt az egyes elemek egy dokumentum vagy egy napló feladásakor. Ezen összetevők közé tartoznak a számlastruktúrák, a speciális szabályok, valamint a kiegyenlítő és a rögzített dimenziók. Ez a cikk bemutatja, hogy mi az egyes összetevők, és hogyan működnek együtt az összetevők.
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Számlatükör és pénzügyi dimenzió összetevők
 
@@ -46,7 +46,7 @@ Tetszés szerint meghatározhat egy kiegyenlítő pénzügyi dimenziót. A **Fő
 
 ### <a name="defaultfixed-financial-dimensions-on-the-main-account"></a>Alapértelmezett/rögzített pénzügyi dimenziók a fő számlán
 
-Az alapértelmezett dimenziók különböző helyekről származnak, például törzsrekordokból (például vevő- vagy szállítórekordok), a dokumentum-fejlécekből és a fő számlából. Ez a témakör a jogi személy fő számlájának alapértelmezett dimenzióinak bemutatására szolgál. Megadhatja, hogy a fő számla rendelkezik-e **Nem rögzített** vagy **Rögzített** értékkel minden olyan pénzügyi dimenzió esetében, amelyet a főkönyv összes számlastruktúrájában használ. Ha a pénzügyi dimenzió **Nem rögzített**, akkor az alapértelmezett értéket használja, de ez az érték módosítható. Ez a viselkedés minden alapértelmezett értékre vonatkozik a rendszerben, még azokra is, amelyek a törzsrekordokból származnak. Ha egy pénzügyi dimenzió értéke **Rögzített**, a rendszer mindig azt az értéket alkalmazza, függetlenül attól, hogy alapértelmezett értékként vagy a felhasználó által megadott értékként érkezett.
+Az alapértelmezett dimenziók különböző helyekről származnak, például törzsrekordokból (például vevő- vagy szállítórekordok), a dokumentum-fejlécekből és a fő számlából. Ez a cikk a fő számla alapértelmezett dimenzióira, jogi személyek szerint foglalkozik. Megadhatja, hogy a fő számla rendelkezik-e **Nem rögzített** vagy **Rögzített** értékkel minden olyan pénzügyi dimenzió esetében, amelyet a főkönyv összes számlastruktúrájában használ. Ha a pénzügyi dimenzió **Nem rögzített**, akkor az alapértelmezett értéket használja, de ez az érték módosítható. Ez a viselkedés minden alapértelmezett értékre vonatkozik a rendszerben, még azokra is, amelyek a törzsrekordokból származnak. Ha egy pénzügyi dimenzió értéke **Rögzített**, a rendszer mindig azt az értéket alkalmazza, függetlenül attól, hogy alapértelmezett értékként vagy a felhasználó által megadott értékként érkezett.
 
 ## <a name="order-in-which-default-dimensions-are-applied-during-posting"></a>A rendelés feladása során alkalmazott alapértelmezett dimenziók sorrendje
 

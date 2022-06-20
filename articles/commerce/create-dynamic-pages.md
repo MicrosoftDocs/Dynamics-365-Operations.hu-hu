@@ -1,6 +1,6 @@
 ---
 title: Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani olyan Microsoft Dynamics 365 Commerce e-kereskedelmi oldalt, amely az URL-paraméterek alapján szolgáltat dinamikus tartalmat.
+description: Ez a témakör azt ismerteti, hogyan Microsoft Dynamics 365 Commerce lehet beállítani olyan e-commerce oldalt, amely az URL-paraméterek alapján dinamikus tartalmat szolgál.
 author: StuHarg
 ms.date: 05/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884663"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani olyan Microsoft Dynamics 365 Commerce e-kereskedelmi oldalt, amely az URL-paraméterek alapján szolgáltat dinamikus tartalmat.
+Ez a témakör azt ismerteti, hogyan Microsoft Dynamics 365 Commerce lehet beállítani olyan e-commerce oldalt, amely az URL-paraméterek alapján dinamikus tartalmat szolgál.
 
 Az e-kereskedelmi oldalak különböző tartalmak nyújtására konfigurálhatók az URL elérési útjának egy szegmense alapján. Ennek megfelelően az oldal dinamikus oldalként ismert. A szegmenst a program paraméterként használja az oldal tartalmának beolvasására. Például egy webhelyszerkesztőben **létrehozott lap, amely a Viewer Viewer\_** nevet tartalmazza, az URL-címhez lesz hozzárendelve `https://fabrikam.com/blog`. Ezen a lapon különböző tartalmak láthatók az URL elérési útjának utolsó szegmense alapján. A `https://fabrikam.com/blog/article-1` URL utolsó szegmense például: **article-1**.
 

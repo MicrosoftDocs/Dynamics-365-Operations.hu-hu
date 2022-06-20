@@ -1,6 +1,6 @@
 ---
 title: B2B e-kereskedelmi webhely beállítása
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy B2B e-kereskedelmi webhelyet a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör azt ismerteti, hogyan lehet beállítani egy vállalatnak szóló (B2B) e-commerce webhelyet a következő helyen:Microsoft Dynamics 365 Commerce
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 31266f84270f170e172eadea75a90397c5a6e8e6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0bcd864694ff2ad2aa211c927da4d698c0039715
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881906"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>B2B e-kereskedelmi webhely beállítása
 
 [!include [banner](../../includes/banner.md)]
 
-A vállalatok közötti (B2B) e-kereskedelmi webhelyek néhány olyan kulcsfontosságú lehetőséget kínálnak, amelyek optimalizálják a munkafolyamatot egy B2B-felhasználó számára. Ez a témakör azt mutatja be, hogyan lehet beállítani egy B2B e-kereskedelmi webhelyet a Microsoft Dynamics 365 Commerce alkalmazásban. Végigmegy a modulokon és a webhelybeállításokon, amelyeket a B2B-specifikus helyzetek engedélyezéséhez kell konfigurálni.
+A vállalatok közötti (B2B) e-kereskedelmi webhelyek néhány olyan kulcsfontosságú lehetőséget kínálnak, amelyek optimalizálják a munkafolyamatot egy B2B-felhasználó számára. Ez a témakör azt ismerteti, hogyan lehet beállítani egy B2B e-commerce webhelyet a Microsoft Dynamics 365 Commerce. Végigmegy a modulokon és a webhelybeállításokon, amelyeket a B2B-specifikus helyzetek engedélyezéséhez kell konfigurálni.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-- A B2B e-kereskedelmi webhely beállításához engedélyeznie és konfigurálnia kell néhány meghatározott funkciót a Commerce központi felületén a témakörben leírt módon.
+- A B2B e-commerce webhely beállításához engedélyeznie és konfigurálnia kell a Commerce Headquarters meghatározott funkcióit, amint azt a jelen cikk ismerteti.
 - Az alaptevékenységeket, például a termékfelderítést, a termék részletes oldalait, a kosarat és a pénztárat ugyanazok a modulok működtetik, mint amelyek a cég és ügyfél (B2C) között működő e-kereskedelmi webhelyeken használatosak. A webhelykészítőknek ismerniük kell minden olyan modult, amelyet a Dynamics 365 Commerce támogat. A további tudnivalókat lásd itt: [Modultár-frissítések](../starter-kit-overview.md).
-- Ez a témakör abból indul ki, hogy a webhelykészítő ismeri a Commerce webhelykészítő alapjait, a sablonokat, a töredékeket és az oldalakat, hogy így engedélyezhesse a B2B funkciókat az e-kereskedelmi webhelyeken.
+- Ez a cikk abból indul ki, hogy a webhely és a tudásbáziscikkek tisztában vannak a Commerce webhelyszerkesztő, a sablonok, a részletek és a lapok alapismeretével, és így engedélyezhetik a B2B funkciókat az e-commerce webhelyeken.
 
 ## <a name="site-level-settings"></a>Webhelyszintű beállítások
 

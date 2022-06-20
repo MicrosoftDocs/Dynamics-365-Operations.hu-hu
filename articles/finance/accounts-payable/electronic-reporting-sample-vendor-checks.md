@@ -1,6 +1,6 @@
 ---
-title: Elektronikus jelentéskészítés mintája szállítói csekkekhez
-description: A témakör általános tájékoztatást nyújt az elektronikus jelentések mintacsekkformátumainak használatáról.
+title: Elektronikus jelentéskészítéskészítési minta szállítói csekkekhez
+description: Ez a cikk az elektronikus jelentési minta csekkformátumok használatával kapcsolatban tartalmaz általános tájékoztatást.
 author: sunfzam
 ms.date: 06/14/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 38a037903a994f6212f4ccce10e10c795eb7364d
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d2b26a083540924d2368a298632aea90ecf95e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734544"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908183"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>Elektronikus jelentéskészítés mintája szállítói csekkekhez
 
@@ -28,7 +28,7 @@ Az elektronikus jelentéskészítés segítségével formázhatja a szállítói
 
 ## <a name="what-check-formats-are-currently-supported"></a>Melyik csekkformátumok támogatottak jelenleg?
 
-Mindig meg kell keresnie a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközkönyvtárát, és meg kell tekintenie az aktuális listát a rendelkezésre álló fájlokról, amelyek **GER-konfiguráció** eszköztípusúak. A következő szakasz, a "Mit kell beállítanom?" hivatkozást biztosít a témához, amely alapján LCS-adattárat hozhat létre az elérhető konfigurációk áttekintéséhez és a kiválasztott konfigurációk importálásához.
+Mindig meg kell keresnie a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközkönyvtárát, és meg kell tekintenie az aktuális listát a rendelkezésre álló fájlokról, amelyek **GER-konfiguráció** eszköztípusúak. A következő, "Mit kell beállítani?" rész egy olyan cikkre mutató hivatkozást tartalmaz, amely bemutatja egy LCS-tárház létrehozásához szükséges szükséges beállításokat, így áttekintheti a rendelkezésre álló konfigurációkat, és importálhatja a kiválasztott konfigurációkat.
 
 Microsoft Dynamics A 365 Pénzügy egy olyan mintaformátumot tartalmaz, amelyben a csekk felül van, amelyet két átutalási szakasz követ. Olyan mintaformátumot is tartalmaz, ahol a csekk középütt van, két átutalási szakasz között. Ezek a mintaformátumok a Deluxe üzleti csekkformátumnak felelnek meg.
 
