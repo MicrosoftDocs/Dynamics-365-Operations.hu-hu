@@ -1,8 +1,8 @@
 ---
-title: Dynamics 365 Commerce értékelési környezet konfigurálása
-description: Ez a témakör bemutatja, hogyan kell konfigurálni az Microsoft Dynamics 365 Commerce értékelési környezetet a létesítést követően.
+title: Abox Dynamics 365 Commerce környezet konfigurálása
+description: Ez a cikk bemutatja, hogyan kell konfigurálni az Microsoft Dynamics 365 Commerce üzenetkészlet-környezetet a beállítás után.
 author: psimolin
-ms.date: 05/12/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,34 +14,34 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 19d88139e35554bce68bc6203141957b96e439a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 259a580981003f135e234f66e9e93ceb18605412
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892330"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013109"
 ---
-# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet konfigurálása
+# <a name="configure-a-dynamics-365-commerce-sandbox-environment"></a>Abox Dynamics 365 Commerce környezet konfigurálása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan kell konfigurálni az Microsoft Dynamics 365 Commerce értékelési környezetet a létesítést követően.
+Ez a cikk bemutatja, hogyan kell konfigurálni az Microsoft Dynamics 365 Commerce üzenetkészlet-környezetet a beállítás után.
 
-Az ebben a cikkben olvasható eljárásokat csak a Commerce értékelési környezet létesítése után kell végrehajtani. A Commerce értékelési környezetének létesítésével kapcsolatos információkért lásd: [Commerce értékelési környezet kiépítése](provisioning-guide.md).
+Az ebben a cikkben olvasható eljárásokat csak akkor kell végrehajtani, ha a Commerce üzenetkészlet-környezet már létesítve van. A Commerce üzenetkészlet környezetének létesítével kapcsolatos tudnivalókat [lásd: Provision a Commerce üzenetbox környezet](provisioning-guide.md).
 
-Miután a Commerce értékelési környezet teljes körűen kiépítésre került, további létrehozás utáni konfigurálási lépéseket el kell végezni, mielőtt megkezdheti a környezet értékelését. Ezen lépések elvégzéséhez a Microsoft Dynamics Lifecycle Services (LCS) és Dynamics 365 Commerce alkalmazásokat kell használnia.
+Miután a Commerce üzenetkészlet környezete elkészült, a környezet használata előtt további, az utólagos létesítés konfigurációs lépéseit kell végrehajtani. Ezen lépések elvégzéséhez a Microsoft Dynamics Lifecycle Services (LCS) és Dynamics 365 Commerce alkalmazásokat kell használnia.
 
 ## <a name="before-you-start"></a>A program használatának megkezdése előtt
 
 1. Jelentkezzen be az [LCS portálra](https://lcs.dynamics.com).
 1. Lépjen a projektjére.
-1. Válassza a felső menü **Felhőalapú környezetek** pontját.
 1. A listából válassza ki a környezetét.
 1. Kattintson a jobb oldalon található környezeti információk **Bejelentkezés a környezetbe** elemére. Megnyílik a Commerce központ modul.
-1. Győződjön meg róla , hogy az **USRT** jogi személy van kiválasztva a jobb felső sarokban.
-1. Menjen a **Commerce rendszer paramétereihez \> : Konfigurációs paraméterek**, és ellenőrizze, hogy van-e bejegyzés a **ProductSearch.UseAzureSearch** fájlhoz, és hogy az érték igaz értékre van-e **állítva**. Ha hiányzik ez a bejegyzés, hozzáadhatja, az értéket igaz értékre állíthatja, **·** **\>** majd az e-commerce webhelyhez társított Commerce Scale Unit egységre vonatkozó Teljes adatszinkronizálási lehetőséget választhatja.
+1. Győződjön meg róla , hogy az **USRT** jogi személy van kiválasztva a jobb felső sarokban. Ez a jogi személy előre konfigurálva van a bemutató adataiban.
+1. Menjen a **Commerce rendszer paramétereihez \> : Konfigurációs paraméterek**, és ellenőrizze, hogy van-e bejegyzés a **ProductSearch.UseAzureSearch** fájlhoz, és hogy az érték igaz értékre van-e **állítva**. Ha hiányzik ez a bejegyzés, adja hozzá, és állítsa igaz értékre **az értéket**.
 1. Ugrás a **Retail and Commerce \> Headquarters telepítő \> Commerce ütemezője \>, a Commerce inicializálása ütemezőjére** A Commerce Scheduler **inicializálása** menü **·** **Igen** beállításúra állítsa a Létező konfiguráció törlése parancsot, majd válassza **az OK elemet.**
-1. Ha csatornákat szeretne hozzáadni a Commerce Scale Unit egységhez, **válassza a Retail and Commerce \> Headquarters \> beállítás commerce ütemező \> csatorna-adatbázisát**, majd a bal oldali ablakban válassza ki a Commerce Scale Unit beállítást. Adja hozzá a Kiskereskedelmi csatorna **gyorsblokkján** az AW online **áruházat,** az AW Business online **áruházat** és a Gyár bővített online áruházi csatornáit **.** A POS használata esetén kiskereskedelmi áruházakat is hozzáadhat (**például San** **Fransis, San Francisco** **és San Grace**).
+1. Ahhoz, hogy az üzlet- és az e-commerce csatornák megfelelően működjön, hozzá kell adni őket a Commerce Scale Unit egységhez. Menjen a **Retail and Commerce \> Headquarters beállításához \> a Commerce ütemező \> csatorna-adatbázisához**, majd a bal oldali ablakban válassza ki a Commerce Scale Unit beállítást. **A Retail csatorna** gyorséta panelen **adja hozzá az AW online** áruházat, **az AW Business online** **áruházat és a Gyár bővített online** áruházi csatornáit, ha ezeket az e-commerce csatornákat tervezi használni. Arra is lehetőség van, hogy kiskereskedelmi áruházakat is hozzáad a pénztárhoz (POS) (**például Washington**, **San Francisco** és/vagy **San Ba).**
+1. Annak érdekében, hogy minden módosítás szinkronizálva legyen a csatorna-adatbázissal, jelölje **\> be a Csatorna-adatbázis teljes** adatszinkronizálását a Commerce Scale Unit számára.
 
 A Commerce központ alkalmazásban történő létesítés utáni tevékenységek során győződjön meg arról, hogy a **USRT** jogi személy mindig be van jelölve.
 
@@ -52,7 +52,7 @@ A Commerce központ alkalmazásban történő létesítés utáni tevékenysége
 Ha a munkavállalót az identitásához szeretné társítani, kövesse az alábbi lépéseket a Commerce központban.
 
 1. A bal oldalon található menü használatával nyissa meg a **Modulok \> Kiskereskedelem és kereskedelem \> Alkalmazottak \> Dolgozók** lehetőséget.
-1. Keresse meg és jelölje ki a következő rekordot a listán: **000713 - Andrew Collette**.
+1. Keresse meg és jelölje ki a következő rekordot a listán: **000713 - Andrew Collette**. Ebben a példában a felhasználó társítva van a Következő szakaszban használt San Fransis üzlethez.
 1. A Műveleti ablaktáblán válassza ki a **Commerce** lehetőséget.
 1. Válassza a **Létező identitás társítása** lehetőséget.
 1. Írja be az e-mail címét az **E-mail** mezőbe a **Keresés e-mailt használatával** lehetőségtől jobbra.
@@ -76,24 +76,24 @@ A Felhőalapú pénztár aktiválásához hajtsa végre az alábbi lépéseket a
 1. Válassza az **Aktiválás** lehetõséget. Kijelentkezett, és a pénztár bejelentkezési oldalára került.
 1. Most bejelentkezhet a Felhőalapú pénztár élménybe, a **000713** kezelői azonosítóval és az **123** jelszóval.
 
-## <a name="set-up-your-site-in-commerce"></a>Webhely beállítása a Commerce alkalmazásban
+## <a name="set-up-your-e-commerce-sites"></a>E-kereskedelmi webhelyek beállítása
 
-Az értékelési webhely beállításának megkezdéséhez a Commerce alkalmazásban, kövesse az alábbi lépéseket.
+Három e-commerce bemutatóhely érhetők el: a Gyár, a Kalandor munka és a Kalandor munka. Az alábbi lépések szerint konfigurálhatja az egyes bemutatówebhelyeket.
 
 1. Jelentkezzen be a webhelykészítőbe azzal az URL-címmel, amelyet az e-kereskedelem inicializálásakor a létesítés során megadott (lásd: [E-kereskedelem inicializálása](provisioning-guide.md#initialize-e-commerce)).
-1. A hely beállítási mezőjének megnyitásához kattintson a **Fabrikam** helyre.
-1. Válassza ki azt a tartományt, amelyet az e-kereskedelem inicializálásakor megadott.
-1. Alapértelmezett csatornaként válassza ki a **Fabrikam bővített online áruház** lehetőséget. (Győződjön meg arról, hogy a **kiterjesztett** online áruházat választja.)
+1. Válassza ki a telephelyet (Gyár, Kalandoror **vagy** Kalandoror **üzlet), és nyissa meg a webhely beállítási párbeszédpanelét.** **·**
+1. Válassza ki a Commerce inicializálása során megadott tartományt.
+1. A központban válassza ki az alapértelmezett csatornának megfelelő előre beállított online áruház-csatornát (Gyár kiterjesztett online áruház, **AW** online **áruház vagy AW Business online áruház**).**·**
 1. Alapértelmezett nyelvnek válassza az **en-us** elemet.
-1. Hagyja az **Útvonal** mező értékét változatlanul.
+1. Az elérési út mezőinek konfigurálása. Ezt üresen is lehet hagyni egyetlen hely esetén, de konfigurálni kell, ha több hely ugyanazt a tartománynevet használja. `https://www.constoso.com` Ha például a tartománynév az, akkor üres elérési utat használhat a Gyár számára,`https://contoso.com` majd az "aw" nevet a Kalandorüzlet () és az "awbusiness"`https://contoso.com/aw` nevet a Kalandorüzlet üzleti webhely számára`https://contoso.com/awbusiness`.
 1. Válassza ki az **OK** lehetőséget. Megjelenik a webhelyen lévő oldalak listája.
-1. Ismételje meg a 2-7 **AdventureWorks**. lépést a webhelyre (**amely az AW online** áruház csatornájára leképezi) **AdventureWorks** és az üzleti webhelyet (**amely az AW üzleti online áruház csatornájára leképezi**). **Ha a Gyár** webhely Elérési útja mező üres, AdventureWorks akkor hozzá kell adni a két hely elérési útvonalát (például "aw" és "awbusiness").
+1. Ha szükséges, ismételje meg a 2–7. lépést a többi bemutatóhely beállításának érdekében.
 
 ## <a name="enable-jobs"></a>Munkák engedélyezése
 
 A feladatok engedélyezéséhez a Kereskedelemben kövesse az alábbi lépéseket.
 
-1. Jelentkezzen be a környezetbe (HQ).
+1. Jelentkezzen be a központ környezetbe.
 1. A bal oldali menü használatával nyissa meg a **Kiskereskedelem és kereskedelem \> Lekérdezések és jelentések \> Kötegelt feladatok** lehetőséget.
 
     Az eljárás további lépéseit az alábbi feladatok mindegyikére el kell végezni:
@@ -146,12 +146,11 @@ Teszttranzakciók végrehajtásához a weboldalon használhatja a következő te
 
 ## <a name="next-steps"></a>Következő lépések
 
-A létesítési és a konfigurálási lépések befejezését követően készen áll arra, hogy elkezdje az értékelési környezet használatát. Használja a Commerce webhelyépítő eszköz URL-címét a szerzői élményhez lépéshez. Használja a Commerce webhelykezelő eszköz URL-címét a kiskereskedelmi ügyfél webhely élményhez lépéshez.
+A létesítés és a konfigurálás lépésének befejezése után elkezdheti használni abox környezetét. Használja a Commerce webhelyépítő eszköz URL-címét a szerzői élményhez lépéshez. Használja a Commerce webhelykezelő eszköz URL-címét a kiskereskedelmi ügyfél webhely élményhez lépéshez.
 
-A Commerce értékelési környezete nem kötelező funkcióinak konfigurálásához lásd: [Commerce értékelési környezete nem kötelező funkcióinak konfigurálása](cpe-optional-features.md).
+A Commerce üzenetdoboz környezet választható funkcióinak konfigurálása a [Commerce üzenetbox környezet választható funkcióinak konfigurálása.](cpe-optional-features.md)
 
-> [!NOTE]
-> A kereskedelmi értékelő környezetek egy előre feltöltött Azure Active Directory (Azure AD) üzleti-fogyasztói (B2C) bérlőt tartalmaznak bemutató célokra. A saját Azure AD B2C bérlő konfigurálása nem szükséges az értékelő környezetek esetében. Ha azonban az értékelő környezetet úgy konfigurálja, hogy a saját Azure AD B2C bérlőjét használja, kérjük, győződjön meg róla, hogy az Azure Portálon keresztül hozzáadja a ``https://login.commerce.dynamics.com/_msdyn365/authresp`` címet válasz URL-ként a Azure AD B2C alkalmazásban.
+Ahhoz, hogy az e-commerce felhasználók bejelentkeztek volna az e-commerce webhelyre, Azure Active Directory további konfigurálás szükséges a vállalati felhasználókon (B2C) keresztüli hitelesítés engedélyezéséhez. További tudnivalók: [B2C bérlő beállítása a Commerce rendszerből](set-up-b2c-tenant.md).
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 
@@ -171,21 +170,17 @@ A következő lépések segítségével biztosíthatja, hogy a szín- és méret
 
 ### <a name="business-features-dont-appear-to-be-turned-on-for-the-adventureworks-business-site"></a>Úgy látszik, hogy az üzleti funkciók nincsenek bekapcsolva az üzleti webhelyen AdventureWorks.
 
-A központnál győződjön meg arról, hogy az online **áruház** **csatornája a B2B vevőtípushoz van beállítva**. Ha a **Vevő típusa** **B2C**, új csatornát kell létrehozni, mert a meglévő csatorna nem szerkeszthető. 
+A központnál győződjön meg arról, hogy az online **áruház** **csatornája a B2B vevőtípushoz van beállítva.** Ha a **Vevő típusa** **B2C**, új csatornát kell létrehozni, mert a meglévő csatorna nem szerkeszthető. 
 
 A Commerce 10.0.26-os **és korábbi verziójában szállított bemutatóadatoknál egy hiba történt, ahol az AW Business online áruház** csatornája hibás volt. A megoldás megoldás egy új csatorna létrehozása ugyanazokkal a **beállításokkal** és konfigurációval, kivéve a Vevőtípust, amelyet **B2B-re kell beállítani**.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Dynamics 365 Commerce értékelési környezet áttekintése](cpe-overview.md)
+[Üzenetkészlet Dynamics 365 Commerce környezetének létesítása](provisioning-guide.md)
 
-[Dynamics 365 Commerce értékelési környezet kiépítése](provisioning-guide.md)
+[Az üzenetdoboz-környezet választható funkcióinak Dynamics 365 Commerce konfigurálása](cpe-optional-features.md)
 
-[Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
-
-[BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](cpe-bopis.md)
-
-[Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
+[BoPIS konfigurálásabox Dynamics 365 Commerce környezetben](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

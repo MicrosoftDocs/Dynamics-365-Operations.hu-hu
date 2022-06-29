@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 25561802996514f6f60fc9400c22dc61a30ef1c8
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907290"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023788"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>A külső szállítókkal történő szállítói együttműködés
 
@@ -29,9 +29,6 @@ ms.locfileid: "8907290"
 A **Szállítói együttműködés** modul azokat a szállítókat célozza meg, akik nem rendelkeznek elektromos adatátviteli (EDI) integrációval a Microsoft Dynamics 365 Supply Chain Management rendszerhez. Segítségével a szállítók beszerzési rendelésekkel, számlákkal, bizományosi készlet adataival és ajánlatkérésekel dolgozhatnak, valamint hozzáférhetnek a szállítók alapadatainak részeihez. Ez a cikk bemutatja, hogy hogyan lehet együttműködni azokkal a külső szállítóval, akik a szállítói együttműködési felületet használják a beszerzési rendelésekkel, ajánlatkérésekkel és bizományosi készlettel való munkára. Bemutatja továbbá, hogyan engedélyezheti egy adott szállítónak a szállítói együttműködés használatát, valamint hogyan definiálja azokat az információkat, amelyeket minden szállító lát egy beszerzési rendelésre történő válaszolás során.
 
 Ha többet szeretne megtudni arról, hogy milyen tevékenységeket végezhetnek a külső szállítók a szállítói együttműködési felületen, olvassa el a [Szállítói együttműködés vevőkkel](vendor-collaboration-work-customers-dynamics-365-operations.md) részt.
-
-> [!NOTE]
-> A szállítói együttműködésről ebben a cikkben található tájékoztatás csak az Ellátásilánc-kezelés aktuális verziójára vonatkozik. A Microsoft Dynamics AX 7.0 (2016. február) és a Microsoft Dynamics AX 7.0.1 (2016. május) alkalmazásverziókban a **Szállítói portál** modul segítségével működhet együtt a szállítókkal. A **Szállítói portál** modullal kapcsolatos további tudnivalókat lásd: [Együttműködés a szállítókkal a Szállítói portálon keresztül](collaborate-vendors-vendor-portal.md).
 
 Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md) részt. Az új szállítói együttműködési felhasználók létrehozásával kapcsolatos tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md).
 
@@ -57,8 +54,25 @@ A rendszergazda konfigurálja a szállítói együttműködés általános beál
 
 Mielőtt felhasználói fiókokat hozna létre egy külső szállító számára, konfigurálnia kell a szállítókódot a szállítói együttműködés engedélyezése érdekében. Használja az **Együttműködés aktiválása** mezőt az **Általános** lapon, a **Szállítók** oldalon. Ehhez a következő lehetőségek állnak rendelkezésre:
 
-- **Aktív (beszerzési rendelés automatikus megerősítése)**– a rendszer automatikusan megerősíti a beszerzési rendeléseket, amikor a szállító módosítások nélkül fogadja el azokat.
+- **Aktív (beszerzési rendelés automatikus megerősítése)**– a rendszer automatikusan megerősíti a beszerzési rendeléseket, amikor a szállító módosítások nélkül fogadja el azokat. Ha ezt a lehetőséget használja, győződjön meg róla, *hogy* ütemezi a szállítói együttműködési kötegelt feladat által elfogadott beszerzési rendelések visszaigazolását, amely a visszaigazolások feldolgozásáért felelős. Az útmutatás a következő szakaszban található.
 - **Aktív (beszerzési rendelés nincs automatikusan megerősítve)**– A beszerzési rendeléseket szervezetének manuálisan kell jóváhagynia, miután a szállító elfogadta őket.
+
+### <a name="scheduling-the-auto-confirmation-batch-job"></a>Az automatikus visszaigazolási kötegelt feladat ütemezése
+
+**Ha egy vagy több szállítónál az Aktív (a beszerzési rendelés automatikus visszaigazolt)** lehetőséget használja (az előző szakaszban leírtak szerint), *ütemeznie* kell a szállítói együttműködési kötegelt feladatból az Elfogadott beszerzési rendelések megerősítése feladatot, amely a beszerzési rendelések feldolgozásáért és megerősítéséért felelős. Ellenkező esetben az automatikus visszaigazolások soha nem fordulhatnak elő. A következő eljárás szerint ütemezi ezt a feladatot.
+
+1. Menjen a Beszerzés **és forrás beszerzési rendelések \> beszerzési rendelés \>\> visszaigazolása és a szállítói együttműködés elfogadott beszerzési rendelésének megerősítése.**
+1. Az Elfogadott beszerzési **rendelések megerősítése a** **szállítói együttműködési párbeszédpanelEn, a Futtatás a háttérben** gyorslapon kattintson az Ismétlődés **gombra**.
+1. Az Ismétlődés **definiálása** párbeszédpanelen definiálja a feladat futtatásának ütemezését. Amikor az ütemezést választja, vegye figyelembe a következő problémákat:
+
+    - Ha a rendszer nagy mennyiségű adatot feldolgoz, és sok kötegelt munkát futtat, akkor a teljesítmény problémát jelent. Ebben az esetben valószínűleg nem kell 10 percnél többet futtatnia ezt a feladatot (az egyéb követelményektől függően). Ha a teljesítmény nem jelent problémát, szükség esetén akár 1–2 percenként futtatható.
+    - Ha a szállítók gyorsan le tudják szállítani a cikkeket (a megállapodás szerinti napon belül), az ismétlődésnek gyakorinak kell lennie (10-30 percenként). Így a raktári dolgozók a visszaigazolás után a visszaigazolt beszerzési rendelés ellenében kapják meg az árut.
+    - Ha a szállítóknak hosszú (24 óránál hosszabb) átfutási ideje van, akkor beállíthatja, hogy a feladat naponta egyszer fusson.
+
+1. Az **ÜTEMEZÉS alkalmazásának és az** elfogadott beszerzési rendelések megerősítése a szállítói együttműködési párbeszédpanelen való visszatéréshez kattintson az OK **gombra**.
+1. Szükség szerint adja meg a további háttér-beállításokat. A párbeszédpanelen a szokásos beállításokat adhatja meg a kötegelt feladatoknak az Ellátásilánc-kezelés eszközben való beállításához.
+
+A kötegelt feladatokkal kapcsolatos további tudnivalókat lásd [a Kötegelt feldolgozás témakörben](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Annak megadása, hogy a szállító láthatja-e az árakkal kapcsolatos adatokat
 

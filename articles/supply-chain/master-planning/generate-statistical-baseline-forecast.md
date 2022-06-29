@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c45d763a1f3d199c91f3cf6181c22f4b8130fabc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 98595d900f9e87a4ec6ed4c1f23971801d334487
+ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844938"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "8960143"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Statisztikai kiinduló előrejelzés generálása
 
@@ -70,10 +70,8 @@ Ha az előrejelzés generálása nagyszámú cikk esetén sikertelen, de példá
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Igény-előrejelzés beállítása](demand-forecasting-setup.md)
-
 - [A kiinduló előrejelzés manuális kiigazítása](manual-adjustments-baseline-forecast.md)
-
 - [Módosított előrejelzés engedélyezése](authorize-adjusted-forecast.md)
-
+- [Webes szolgáltatás: Igény-előrejelzés az Azure-számítógép-oktatósorozattal](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

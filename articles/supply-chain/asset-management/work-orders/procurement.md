@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 015499463f1eab4aaa3f3658b3204229382e73cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 6e41a28ec922924b0ef86858a881280fd44bfe63
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893642"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014952"
 ---
 # <a name="procurement"></a>Beszerzés
 
@@ -28,7 +28,7 @@ ms.locfileid: "8893642"
 
 Az Eszközkezelés modulban áttekintheti a munkarendelésekhez kapcsolódó beszerzési igényléseket és beszerzési rendeléseket. Lehetősége van arra is, hogy beszerzési rendelést vagy beszerzési igénylést hozzon létre egy munkarendelésből.
 
-A **Munkarendelés beszerzési igénylése** listaoldalon (**Eszközkezelés** > **Közös** > **Beszerzés** > **Munkarendelés beszerzési igénylése**) láthatók a munkarendelésekhez kapcsolódó beszerzési igénylések. Amikor ezen a lapon munkarendelési feladatot jelöl ki, a **Munkarendelés beszerzési igénylés** Műveleti paneljének **Megjelenítés** csoportjának gombjaival különböző műveleteket lehet végrehajtani:
+A **munkarendelés beszerzési igénylésének** listaoldala (**Eszközkezelés** > **·** > **·** – Beszerzési munkarendelés – beszerzési igénylés) a munkarendelésekkel kapcsolatos beszerzési igénylések listáját jeleníti meg. Amikor ezen a lapon munkarendelési feladatot jelöl ki, a **Munkarendelés beszerzési igénylés** Műveleti paneljének **Megjelenítés** csoportjának gombjaival különböző műveleteket lehet végrehajtani:
 
 - A kapcsolódó beszerzési igénylés megnyitásához válassza ki **Beszerzési igénylés** lehetőséget. 
 - A kapcsolódó munkarendelés megnyitásához válassza a **Munkarendelés** lehetőséget.
@@ -39,7 +39,7 @@ Az alábbi ábra a **Munkarendelés beszerzési igénylés** listaoldal egy pél
 ![1. ábra](media/08-work-orders.png)
 
 
-A **Munkarendelés beszerzési igénylése** listaoldalon (**Eszközkezelés** > **Közös** > **Beszerzés** > **Munkarendelés beszerzési igénylése**) láthatók a munkarendelésekhez kapcsolódó beszerzési rendelések. Amikor ezen a lapon munkarendelési feladatot jelöl ki, a **Munkarendelés beszerzési igénylés** lapon a Műveleti paneljen a **Megjelenítés** csoportjának gombjaival különböző műveleteket lehet végrehajtani:
+A **munkarendelések beszerzési** listaoldala (**Eszközkezelés** > **·** > **·** – Beszerzési munkarendelés – Beszerzés) a munkarendelésekkel kapcsolatos beszerzési rendelések listáját jeleníti meg. Amikor ezen a lapon munkarendelési feladatot jelöl ki, a **Munkarendelés beszerzési igénylés** lapon a Műveleti paneljen a **Megjelenítés** csoportjának gombjaival különböző műveleteket lehet végrehajtani:
 
 - A kapcsolódó beszerzési rendelés megnyitásához válassza a **Beszerzési rendelés** lehetőséget. 
 - A kapcsolódó munkarendelés megnyitásához válassza a **Munkarendelés** lehetőséget.
@@ -69,7 +69,7 @@ A beszerzési igénylésen az esetleges késés kiszámításához használatos 
 
 Az **Összes munkarendelés** listaoldalon kiválaszthatja a munkarendelési feladatot, majd létrehozhat egy kapcsolódó beszerzési rendelést vagy beszerzési igénylést. Így biztosíthatja a projekt kapcsolatát a beszerzési rendelés vagy a beszerzési igénylés és a munkarendelés között.
 
-1. Válassza az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** lehetőséget.
+1. Válassza ki **az Eszközkezelés** > **munkarendelések minden** > **munkarendelését vagy** az aktív **munkarendeléseket**.
 
 2. Válassza ki azt a munkarendelést, amelyhez beszerzési rendelést szeretne létrehozni, majd válassza a **Szerkesztés** parancsot.
 

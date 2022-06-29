@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851275"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014619"
 ---
 # <a name="wave-creation-and-processing"></a>Hullám létrehozása és feldolgozása
 
@@ -60,9 +60,9 @@ Hullám manuális létrehozásához kövesse az alábbi lépéseket:
 1. Győződjön meg róla, hogy a [Hullámsablonok](wave-templates.md) beállítása miatt nem hoz létre automatikusan egy hullámot a raktárhoz és a rendeléstípushoz, ahol ezt manuálisan szeretné végrehajtani.
 1. A létrehozandó hullám típusától függően, tegye a következők valamelyikét:
 
-    - Ugorjon a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Szállítmányhullámok** \> **Összes hullámok** menübe. A műveleti ablaktáblán válassza a **Hullám** lehetőséget.
-    - Ugorjon a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Termelési hullámok** \> **Összes termelési hullám** menübe. A műveleti ablaktáblán válassza a **Termelési hullám** lehetőséget.
-    - Ugorjon a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Kanbanhullámok** \> **Összes kanbanhullám** menübe. A műveleti ablaktáblán válassza a **Hullám létrehozása** lehetőséget.
+    - Ugrás a Raktárkezelés **kimenő** \> **hullámai –** \> **Szállítmányhullámok –** \> **Minden hullám** A műveleti ablaktáblán válassza a **Hullám** lehetőséget.
+    - Ugrás a Raktárkezelés **kimenő** \> **hullámai –** \> **Termelési hullámok –** \> **Minden termelési hullám** A műveleti ablaktáblán válassza a **Termelési hullám** lehetőséget.
+    - Ugrás a **Raktárkezelés kimenő** \> **hullámai** \> **kanbanhullámok** \> **minden kanbanhullámhoz** A műveleti ablaktáblán válassza a **Hullám létrehozása** lehetőséget.
 
 1. A **Leírás** mezőben adja meg a hullám rövid leírását. Ennek érdemes utalnia a hullámban feldolgozott folyamatra.
 
@@ -87,9 +87,9 @@ Ha egy hullám létrejött, de még nem adták ki, manuálisan megadhatja, hogy 
 
 1. Attól függően, hogy milyen típusú hullámhoz szeretne sorokat adni, tegye a következők egyikét:
 
-    - Ugorjon a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Szállítmányhullámok** \> **Összes hullámok** menübe. A műveleti ablaktáblán válassza a **Hullám** lehetőséget.
-    - Ugorjon a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Termelési hullámok** \> **Összes termelési hullám** menübe. A műveleti ablaktáblán válassza a **Termelési hullám** lehetőséget.
-    - Ugorjon a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Kanbanhullámok** \> **Összes kanbanhullám** menübe. A műveleti ablaktáblán válassza a **Hullám létrehozása** lehetőséget.
+    - Ugrás a Raktárkezelés **kimenő** \> **hullámai –** \> **Szállítmányhullámok –** \> **Minden hullám** A műveleti ablaktáblán válassza a **Hullám** lehetőséget.
+    - Ugrás a Raktárkezelés **kimenő** \> **hullámai –** \> **Termelési hullámok –** \> **Minden termelési hullám** A műveleti ablaktáblán válassza a **Termelési hullám** lehetőséget.
+    - Ugrás a **Raktárkezelés kimenő** \> **hullámai** \> **kanbanhullámok** \> **minden kanbanhullámhoz** A műveleti ablaktáblán válassza a **Hullám létrehozása** lehetőséget.
 
 1. Válassza ki a hullámot. A Műveleti ablak fülön válassza a következő lehetőségek valamelyikét:
 
@@ -121,9 +121,9 @@ Egy olyan hullám manuális feldolgozásához, amely az összes kötelező tarta
 
 1. A feldolgozandó hullám típusától függően, tegye a következők egyikét:
 
-    - Válassza a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Szállítmányhullámok** \> **Összes hullámok** menüpontot. A műveleti ablaktáblán válassza a **Hullám** lehetőséget.
-    - Válassza a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Termelési hullámok** \> **Összes termelési hullám** menüpontot. A műveleti ablaktáblán válassza a **Termelési hullám** lehetőséget.
-    - Válassza a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Kanbanhullámok** \> **Összes kanbanhullám** menüpontot. A műveleti ablaktáblán válassza a **Hullám létrehozása** lehetőséget.
+    - Raktárkezelés **kimenő** \> **hullámai –** \> **Minden hullám** kijelölése \>**·** A műveleti ablaktáblán válassza a **Hullám** lehetőséget.
+    - Válassza ki **a Raktárkezelés** \> **kimenő hullámok termelési** \> **hullámait az** \> **összes termelési hullámhoz.** A műveleti ablaktáblán válassza a **Termelési hullám** lehetőséget.
+    - Raktárkezelés **kimenő** \> **hullámai** \> **kanbanhullámok kiválasztása** \> **minden kanbanhullámhoz** A műveleti ablaktáblán válassza a **Hullám létrehozása** lehetőséget.
 
 1. Válassza ki a feldolgozandó hullámot. A Művelet ablaktáblán válassza ki a **Folyamat** elemet.
 
@@ -141,9 +141,9 @@ Egy hullám manuális kiadásához kövesse az alábbi lépéseket:
 
 1. A kiadni kívánt hullám típusától függően, tegye a következők egyikét:
 
-      - Válassza a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Szállítmányhullámok** \> **Összes hullámok** menüpontot. A műveleti ablaktáblán válassza a **Hullám** lehetőséget.
-      - Válassza a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Termelési hullámok** \> **Összes termelési hullám** menüpontot. A műveleti ablaktáblán válassza a **Termelési hullám** lehetőséget.
-      - Válassza a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Kanbanhullámok** \> **Összes kanbanhullám** menüpontot. A műveleti ablaktáblán válassza a **Hullám létrehozása** lehetőséget.
+      - Raktárkezelés **kimenő** \> **hullámai –** \> **Minden hullám** kijelölése \>**·** A műveleti ablaktáblán válassza a **Hullám** lehetőséget.
+      - Válassza ki **a Raktárkezelés** \> **kimenő hullámok termelési** \> **hullámait az** \> **összes termelési hullámhoz.** A műveleti ablaktáblán válassza a **Termelési hullám** lehetőséget.
+      - Raktárkezelés **kimenő** \> **hullámai** \> **kanbanhullámok kiválasztása** \> **minden kanbanhullámhoz** A műveleti ablaktáblán válassza a **Hullám létrehozása** lehetőséget.
 
 1. Válassza ki a kiadandó hullámot. A műveleti ablaktáblán válassza a **Hullám kiadása** lehetőséget.
 
@@ -179,9 +179,9 @@ Szükség esetén megszakíthat egy feldolgozott hullámot. Egy létrehozott hul
 
 1. A megszakítani kívánt hullám típusától függően, tegye a következők egyikét:
 
-      - Ugorjon a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Szállítmányhullámok** \> **Összes hullámok** menübe.
-      - Ugorjon a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Termelési hullámok** \> **Összes termelési hullám** menübe.
-      - Ugorjon a **Raktárkezelés** \> **Gyakori** \> **Hullámok** \> **Kanbanhullámok** \> **Összes kanbanhullám** menübe.
+      - Ugrás a Raktárkezelés **kimenő** \> **hullámai –** \> **Szállítmányhullámok –** \> **Minden hullám**
+      - Ugrás a Raktárkezelés **kimenő** \> **hullámai –** \> **Termelési hullámok –** \> **Minden termelési hullám**
+      - Ugrás a **Raktárkezelés kimenő** \> **hullámai** \> **kanbanhullámok** \> **minden kanbanhullámhoz**
 
 1. Válassza ki a megszakítandó hullámot. A Művelet panelen a **Munka** lapon válassza a **Megszakítás** menüpontot.
 

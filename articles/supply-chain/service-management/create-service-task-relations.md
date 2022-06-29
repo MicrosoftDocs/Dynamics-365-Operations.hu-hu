@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80980d83248612037999c665b6058c4d0bbf6a7c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 51ea26a0f6519d26f5207a7b6c8afbcdfa358be9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678234"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015259"
 ---
 # <a name="create-service-task-relations"></a>Szervizfeladat-kapcsolatok létrehozása    
 
@@ -30,7 +30,7 @@ A szervizfeladatok társítani lehet a szolgáltatási szerződésekhez vagy sze
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Kapcsolat létrehozása szolgáltatási szerződéssel
 
-1.  Lépjen a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.
+1.  Menjen a **Szolgáltatáskezelés szolgáltatási** \> **szerződések szolgáltatási** \> **szerződéseibe.**
 
 2.  Válasszon ki egy meglévő szolgáltatási szerződést, vagy hozzon létre egy új szolgáltatási szerződést.
 
@@ -48,7 +48,7 @@ A szolgáltatási szerződéshez kapcsolt szervizfeladatok elérhetők minden ol
 
 ## <a name="create-a-relation-with-a-service-order"></a>Kapcsolat létrehozása szervizrendeléssel
 
-1.  Lépjen ide: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1.  Ugrás a Szolgáltatáskezelés **szervizrendelések** \> **szervizrendeléséhez** \> **·**
 
 2.  Válasszon ki egy meglévő szervizrendelést, vagy hozzon létre egy új szervizrendelést.
 
