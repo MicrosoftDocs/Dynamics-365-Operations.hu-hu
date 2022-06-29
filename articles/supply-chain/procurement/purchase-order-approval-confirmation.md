@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: af33dbd38b1eb70e79392860e48c6943a4192f78
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907377"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016449"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Beszerzési rendelések jóváhagyása és megerősítése
 
@@ -50,7 +50,7 @@ Ha a változáskezelés engedélyezve van, a beszerzési rendelések 6 jóváhag
 ## <a name="confirming-purchase-orders"></a>Beszerzési rendelések megerősítése
 Azok a beszerzési rendelések, amik **Jóváhagyva** állapotúak, további lépéseken is áteshetnek, mielőtt meg lesznek erősítve. Például, ha egy beszerzési értesítést kell küldeni a szállítónak, hogy lekérdezze az árakat, kedvezményeket és a szállítási dátumokat. Ebben az esetben a beszerzési rendelést **Külső ellenőrzés alatt** állapotúra módosíthatja a **Beszerzési értesítő** művelet segítségével.
 
-Azok a szállítók, akik a szállítói portált használják, áttekintheti a rendeléseket, majd jóváhagyhatják vagy elutasíthatják azokat. Ez alatt az áttekintési folyamat alatt a beszerzési rendelés **Külső ellenőrzés alatt** állapotú. A szállítói portál konfigurálható, így a szállítótól érkező visszaigazolás automatikusan megerősíti a rendelést a Supply Chain Management rendszerben. Másik megoldásként megerősíthet egy beszerzési rendelést manuálisan is, miután megkapta a megerősítést a szállítótól. Ha a szállító elutasítja a beszerzési rendelést, az elutasítás az indoklással, valamint a változtatási javaslattal kerül kézbesítésre. Ebben az esetben a beszerzési rendelés állapota továbbra is **Külső ellenőrzés alatt** lesz.
+A szállítói együttműködési modul használatára beállított szállítók áttekinthetik a portálon található rendeléseket, és jóváhagyhatják vagy elutasíthatják őket. Ez alatt az áttekintési folyamat alatt a beszerzési rendelés **Külső ellenőrzés alatt** állapotú. A szállítói együttműködési modul úgy konfigurálható, hogy a szállítótól származó megerősítés automatikusan megerősítse a rendelést az Ellátásilánc-kezelés modulban. Másik megoldásként megerősíthet egy beszerzési rendelést manuálisan is, miután megkapta a megerősítést a szállítótól. Ha a szállító elutasítja a beszerzési rendelést, az elutasítás az indoklással, valamint a változtatási javaslattal kerül kézbesítésre. Ebben az esetben a beszerzési rendelés állapota továbbra is **Külső ellenőrzés alatt** lesz.
 
 A pro-forma megerősítés generálására is van lehetőség, olyan megrendeléshez, amihez még nem készült aktuális megerősítés. Ez a beállítás olyan jelentést hoz létre, amit megoszthat a szállítóval. Ez nem hoz létre napló adatokat.
 

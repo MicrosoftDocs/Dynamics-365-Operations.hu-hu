@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14442853152764fce7e5a8a275532ed553da16dc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c1d236918eddf3203a544a6b047f8ccac777971
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677086"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017240"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Visszáru önköltségi ára és visszáru adagazonosítója        
 
@@ -38,7 +38,7 @@ Ha nem akarja a vevő által visszaküldött termékek jelenlegi költségeit ha
 
 Alapértelmezés szerint, amikor cikkeket ad hozzá egy visszárurendeléshez, a cikkek visszakerülnek készletbe, az aktuális önköltségi áron. Ahhoz, hogy másik önköltségi árat adjon meg a visszáruhoz, kövesse az alábbi lépéseket.
 
-1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés**.
+1.  Kattintson az **Értékesítés és marketing parancsra** \> **, ha minden visszárurendelést** \> **visszahoz**.
 
 2.  A **Műveleti ablaktáblán** az **Új** csoportban kattintson a **Visszárurendelés** lehetőségre.
 
@@ -54,7 +54,7 @@ Alapértelmezés szerint, amikor cikkeket ad hozzá egy visszárurendeléshez, a
 
 Ez az elsődlegesen ajánlott módszer a visszárusorok létrehozásához. Ahhoz, hogy a terméknek az akkori költségét használja, amikor a termékeket az ügyfélnek eladta, hozzon létre egy visszárurendelést, és adjon meg egy értékesítési sort a visszáruhoz.
 
-1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés**.
+1.  Kattintson az **Értékesítés és marketing parancsra** \> **, ha minden visszárurendelést** \> **visszahoz**.
 
 2.  A **Műveleti ablaktáblán** az **Új** csoportban kattintson a **Visszárurendelés** lehetőségre.
 

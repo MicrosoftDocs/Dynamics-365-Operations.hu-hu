@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886044"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015085"
 ---
 # <a name="register-consumption"></a>Felhasználás regisztrálása
 
@@ -35,7 +35,7 @@ Bizonyos esetekben előfordulhat, hogy egy munkarendelésben lehetősége van ho
 >[!NOTE]
 >A munkarendelés életciklus-állapotára vonatkozó naplókhoz automatikus feladás is beállítható. További információt itt talál: [Munkarendelés életciklus-állapotai](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-1. Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** elemre.
+1. Kattintson az **Eszközkezelés munkarendelések** > **–** > **Minden munkarendelés vagy** aktív **munkarendelés gombra**.
 
 2. Válassza ki a munkarendelést, és kattintson a **Naplók** elemre.
 
@@ -61,7 +61,7 @@ Az alábbi képernyőkép azt szemlélteti, hogyan kell a **Munkarendelési napl
 
 Ha a munkarendelés több munkarendelési feladatot is tartalmaz, akkor a munkaórák regisztrálhatók az **Órák megosztása** funkció segítségével, ami azt jelenti, hogy az egyes munkarendelési feladatokban egyenletesen lehet felosztani az egyórás regisztrációs sort.
 
-1. Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** elemre.
+1. Kattintson az **Eszközkezelés munkarendelések** > **–** > **Minden munkarendelés vagy** aktív **munkarendelés gombra**.
 
 2. Válassza ki a munkarendelést, majd kattintson a **Naplók** elemre.
 

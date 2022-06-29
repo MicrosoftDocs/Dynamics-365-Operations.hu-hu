@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb29c5e7170011b95151d9aaf2a96a570563096d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 5d2cc1f5b8eccb51b6bea8655fdee243c1a2df55
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902082"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015027"
 ---
 # <a name="manually-created-work-orders"></a>Manuálisan létrehozott munkarendelések
 
@@ -34,7 +34,7 @@ A munkarendelések manuális létrehozására két mód van:
 
 ## <a name="create-work-order"></a>Munkarendelés létrehozása
 
-1. Válassza az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** lehetőséget.
+1. Tárgyieszköz-kezelés munkarendelések **selece** > **·** > **: minden munkarendelés vagy** aktív **munkarendelés**.
 
 2. Válassza az **Új** lehetőséget.
 
@@ -82,7 +82,7 @@ Vegye figyelembe az alábbiakat:
 
 Olyan munkarendelést hozhat létre, amely egy meglévő munkarendeléshez kapcsolódik. Ez a képesség például akkor lehet hasznos, ha elsődleges és másodlagos munkarendelésekkel szeretne dolgozni. Az új munkarendelés egy meglévő munkarendelésből származó munkarendelési feladaton alapul.
 
-1. Válassza az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** lehetőséget.
+1. Válassza ki **az Eszközkezelés** > **munkarendelések minden** > **munkarendelését vagy** az aktív **munkarendeléseket**.
 
 2. Válassza ki a munkarendelést, amelyhez kapcsolódó munkarendelést hoz létre.
 
@@ -120,7 +120,7 @@ Az alábbi ábra a **Munkarendelés létrehozása** párbeszédpanel egy példá
 
 Meglévő munkarendelésből gyorsan hozhat létre új munkarendelést. A munkarendelések ilyen használata különbözik a munkarendelések [karbantartási tervek](../preventive-and-reactive-maintenance/maintenance-plans.md) alapján történő létrehozásától. Ez például akkor lehet hasznos, ha a munkarendelés sok olyan munkarendelési feladatot tartalmaz, amelyek esetében adott időszakokban különböző eszközökön kell feladatokat elvégezni.
 
-1. Válassza az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** lehetőséget.
+1. Válassza ki **az Eszközkezelés** > **munkarendelések minden** > **munkarendelését vagy** az aktív **munkarendeléseket**.
 
 2. Válassza ki azt a munkarendelést, amelyből a tartalmat másolni szeretné.
 
@@ -142,7 +142,7 @@ Az alábbi ábra a **Munkarendelés másolása** párbeszédpanel egy példájá
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Egy munkarendelés létrehozása karbantartási kérés alapján
 
-1. Válassza az **Eszközkezelés** > **Közös** > **Karbantartási kérések** > **Összes karbantartási kérés** vagy **Aktív karbantartási kérések** elemet.
+1. Válassza ki az eszközkezelés **karbantartási kérését** > **, amely minden karbantartási kérést vagy** > **az aktív** karbantartási kérést kéri **.**
 
 2. Válassza ki azt a karbantartási kérést, amelyhez munkarendelést szeretne létrehozni, majd kattintson a **Szerkesztés** elemre.
 

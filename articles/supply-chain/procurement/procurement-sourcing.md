@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68409b15a3f4874d05a43931136ce91097c4f904
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: ec5a9dac1d3b1288d060fe92ec94e6a105f84be8
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885870"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015288"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beszerzési és forrásparaméterek kezdőlapja
 
@@ -56,8 +56,6 @@ A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgá
 -   [Szállítói együttműködés beállítása és karbantartása](set-up-maintain-vendor-collaboration.md)
 -   [Bejövő szállítmánykészlet bemutató parancsfájl: Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(ismertető)
 -   [Bizományosi készlet figyelése szállítói együttműködéssel](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
--   [Együttműködés a szállítókkal a Szállítói portálon keresztül](collaborate-vendors-vendor-portal.md) (csak a Dynamics AX 2016. februári és 2016. májusi verziói)
--   [Szállítói portál felhasználói biztonsága](configure-security-vendor-portal-users.md) (csak a Finance and Operations 2016. februári és 2016. májusi verziói)
 -   [Szállítói együttműködési mobil munkaterület](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Beszerzési termék kezelése

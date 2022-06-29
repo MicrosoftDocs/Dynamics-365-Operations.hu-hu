@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e89039356f167ef2f06824ffee8645f74f8a2b53
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: b4d9424b5678a6f37d46203e5d4e359b020fda7a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890654"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016970"
 ---
 # <a name="create-service-object-relations"></a>Szolgáltatásiobjektum-kapcsolat létrehozása 
 
@@ -33,7 +33,7 @@ Ez a témakör azt ismerteti, hogyan lehet szolgáltatásiobjektum-kapcsolatokat
 
 Kövesse az alábbi lépéseket egy szolgáltatási szerződéshez tartozó szolgáltatásitárgy-kapcsolat létrehozásához:
 
-1.  Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.
+1.  Kattintson a **Szolgáltatáskezelés** \> **szolgáltatási szerződések szolgáltatási** \> **szerződései hivatkozásra**.
 
 2.  A **Szolgáltatási szerződések** listából válasszon ki egy létező szolgáltatási szerződést, vagy kattintson az **Új** lehetőségre egy új szolgáltatási szerződés létrehozásához.
 
@@ -47,7 +47,7 @@ Kövesse az alábbi lépéseket egy szolgáltatási szerződéshez tartozó szol
 
 Kövesse az alábbi lépéseket egy szervizrendeléshez tartozó szolgáltatásitárgy-kapcsolat létrehozásához:
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1.  Kattintson a **Szolgáltatáskezelés szervizrendelések** \> **szervizrendelések** \> **lehetőségre**.
 
 2.  Válasszon ki egy meglévő szervizrendelést a **Szervizrendelések** listáról, vagy hozzon létre egy új szervizrendelést.
 

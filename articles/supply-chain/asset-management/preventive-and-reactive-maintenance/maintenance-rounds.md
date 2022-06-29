@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dfb75d69f20c68a40242bb1c0c25ca77f85e0c14
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 519431d84652e45dcd45aefbbaaa2a0e2afe6349
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852871"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016507"
 ---
 # <a name="maintenance-rounds"></a>Karbantartási körök
 
@@ -87,7 +87,7 @@ Az alábbi ábra három tárgyi eszközt tartalmazó karbantartási fordulóra m
 
 Ha beállította a karbantartási kört, akkor ütemezési feladatot futtathat a karbantartási körhöz kapcsolódó feladatok ütemezéséhez.
 
-1. Kattintson az **Eszközkezelés** > **Időszakos** > **Megelőző karbantartás** > **Karbantartási körök ütemezése** vagy az **Eszközkezelés** > **Közös** > **Karbantartási ütemezés** > **Összes karbantartási ütemezés** vagy a **Nyitott karbantartási ütemezés** vagy a **Nyitott karbantartási ütemezési csoportok** > a lista kiválasztott karbantartási ütemezési sora > **Karbantartási körök** gombra.
+1. **Kattintson az Eszközkezelés** > **·** > **·** > **időszakos** megelőző karbantartási ütemezésének karbantartási fordulókörére **vagy** > **·** > **·** **·** **az** Eszközkezelés karbantartása minden karbantartási ütemezésre vagy Karbantartási ütemezési sorok megnyitása vagy Karbantartási ütemezések > karbantartási ütemezési sorok kiválasztására a **lista** > Karbantartási körök gomb segítségével.
 
 2. Az **Időszak** mezőben válassza ki az ütemezési feladathoz használandó időszaktípust.
 
@@ -102,7 +102,7 @@ Ha beállította a karbantartási kört, akkor ütemezési feladatot futtathat a
 
 6. Kattintson az **OK** gombra.
 
-7. Most már látni fogja a karbantartási körök feladatait az **Eszközkezelés** > **Közös** > **Karbantartási ütemezés** > **Összes karbantartási ütemezés** vagy **Nyitott karbantartási ütemezés** sorban. Ha az ütemezett köröket munkarendelési csoporttal kapcsolja össze, akkor a karbantartási ütemezés sorai is láthatók a **Nyitott karbantartási ütemezési csoportok** részen. A kör alapján létrehozott karbantartási ütemezési sorok hivatkozástípusa „Karbantartási körök”.
+7. Így láthatja, hogy **·** > **·** > **·** **a** karbantartási feladatok az Összes karbantartási ütemezés és a Nyitott karbantartási ütemezés sorai között stb. Ha az ütemezett köröket munkarendelési csoporttal kapcsolja össze, akkor a karbantartási ütemezés sorai is láthatók a **Nyitott karbantartási ütemezési csoportok** részen. A kör alapján létrehozott karbantartási ütemezési sorok hivatkozástípusa „Karbantartási körök”.
 
 Az alábbi két illusztráció egy ütemezési feladatot mutat be a **Karbantartási körök ütemezése** párbeszédablakban, és az ütemezési feladat alapján az **Összes karbantartási ütemezésben** létrehozott karbantartási ütemezési sorokat.
 

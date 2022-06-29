@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95d0998bbacef7a4350d0fd0a58259ec35759d28
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: b00cb62926f3a482ec655235b6e2f5880edbcd04
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868101"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016275"
 ---
 # <a name="asset-manufacturers-and-models"></a>Eszközgyártók és modellek
 
@@ -53,7 +53,7 @@ Ez a cikk bemutatja, hogy hogyan lehet beállítani az eszköz gyártókat és a
 
 ## <a name="select-a-manufacturer-and-model-on-an-object"></a>Egy tárgy gyártójának és modelljének kiválasztása
 
-1. Válassza ki az **Eszközkezelés** \> **Általános** \> **Eszközök** \> **Összes eszköz** lehetőséget.
+1. Válassza ki **az Eszközkezelés**\> **_– Összes_*\>**eszköz lehetőséget**.
 2. Az **Eszköz** oszlopban válassza ki az eszköz hivatkozását. Megjelenik a **Részletek** oldal.
 3. Válassza ki a **Szerkesztés** opciót.
 4. Az **Általános** gyorslapon válassza ki a **Gyártó** és **Modell** mezők értékeit.

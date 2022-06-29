@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: ccd14493aac6484dc54ccf51ae159a071c8697a5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893700"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015609"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Eszközök létrehozása beszerzési rendelések alapján
 
@@ -45,7 +45,7 @@ Először be kell állítania az eszközök beszerzési rendelésből történő
 
 ## <a name="create-assets-from-pending-assets"></a>Eszközök létrehozása függőben lévő eszközökből
 
-1. Kattintson az **Eszközkezelés** > **Általános** > **Eszközök** > **Függőben lévő eszközök** lehetőséget.
+1. Kattintson **a Függőben** > **lévő eszközök eszközkezelési** > **elemre**.
 2. A beszerzési rendelések frissített listája az **Eszközcikkek** helyen kiválasztott cikkek alapján jelenik meg.
 3. A beszerzési rendelések állapotát szűrheti, így kiválaszthatja, hogy melyik életciklus-állapotban kell létrehozni az eszközt. Előfordulhat például, hogy csak akkor szeretne eszközöket létrehozni, ha egy termékbevételezés fel lett adva egy beszerzési rendelésre.
 4. A cikkre vonatkozó részletes információk megtekintéséhez válassza ki a beszerzési rendelési sor **Hivatkozási szám** linkjét.

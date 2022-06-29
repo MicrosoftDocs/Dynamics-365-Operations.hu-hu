@@ -2,7 +2,7 @@
 title: Pénzügyi jelentéskészítés – áttekintés
 description: Ez a cikk bemutatja, hogy hol lehet hozzáférni a pénzügyi jelentésekhez a Microsoft Dynamics 365 Pénzügyben, és hogyan lehet használni a pénzügyi jelentéskészítési lehetőségeket.
 author: aprilolson
-ms.date: 03/31/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b09adc738ac36625436e5cc3197e79603fff9b8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853409"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033660"
 ---
 # <a name="get-started-with-financial-reporting"></a>Első lépések a Pénzügyi jelentéskészítéssel 
 
@@ -30,14 +30,17 @@ ms.locfileid: "8853409"
 
 Ez a cikk bemutatja, hogy hol lehet hozzáférni a pénzügyi jelentésekhez, és hogyan lehet használni a pénzügyi jelentéskészítési funkciókat. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.
 
-## <a name="accessing-financial-reporting"></a>Pénzügyi jelentéskészítés elérése
+## <a name="enable-financial-reporting"></a>Pénzügyi jelentés engedélyezése
+A pénzügyi jelentéskészítő szolgáltatás szervezetnél történő alkalmazáshoz a Lifecycle Services (LCS) rendszergazdájának engedélyeznie kell ezt a szolgáltatást a szervezet LCS-portálján. Ha nincs létesítve a környezethez a pénzügyi jelentéskészítés, a szolgáltatás engedélyezéséhez forduljon az LCS-rendszergazdához. 
+
+## <a name="accessing-financial-reporting"></a>Hozzáférés a pénzügyi jelentéskészítéshez
 
 A **Pénzügyi jelentéskészítés** menüt a következő helyen találhatja meg:
 
-- **Főkönyv** &gt; **Lekérdezések és jelentések**
-- **Költségvetés készítése** &gt; **Lekérdezések és jelentések** &gt; **Alapvető költségvetés-tervezés**
-- **Költségvetés készítése** &gt; **Lekérdezések és jelentések** &gt; **Költségvetés-tervezés**
-- **Költségvetés készítése** &gt; **Lekérdezések és jelentések** &gt; **Költségvetés-ellenőrzés**
+- **Főkönyvi** > **lekérdezések és jelentések**
+- **Költségvetési lekérdezések** > **és jelentések** > **- Alapszintű költségvetés-készítés**
+- **Költségvetés-tervezési** > **lekérdezések és jelentések** > **Költségvetés-tervezés**
+- **Költségvetés-ellenőrzési** > **lekérdezések és jelentések** > **·**
 - Konszolidációk
 
 Ha pénzügyi jelentést szeretne létrehozni és generálni egy jogi személy számára, be kell állítania a következő adatokat az adott jogi személyhez:

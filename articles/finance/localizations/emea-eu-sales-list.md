@@ -2,7 +2,7 @@
 title: EU értékesítési lista jelentése
 description: Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást.
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 8dfd3fafdfc011973b169516cd4e2d239751e96d
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323476"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012500"
 ---
 # <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentés
 
@@ -68,7 +68,7 @@ Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfe
 <td>Állítsa be az adómentesség azonosítási paramétereit az <strong>Országos/területi paraméterek</strong> lapon (kattintson az <strong>Adó</strong> &gt; <strong>Beállítások</strong> &gt; <strong>Áfa</strong> &gt; <strong>Országos/területi paraméterek</strong> elemre). Minden külön országban/régióban tartózkodó ügyfélhez hozzon létre egy rekordot az oldalon, és adja meg a következő információkkal:
 <ul>
 <li><strong>Ország/régió</strong> – Válasszon ki egy országot/területet egy adómentességi azonosítóval.</li>
-<li><strong>Áfa </strong> – adja meg a kiválasztott ország/régió adómentességi azonosító számát (azaz az áfaszámot vagy az adómentességi szám előtagját).</li>
+<li><strong>Áfa</strong> – adja meg a kiválasztott ország/régió adómentességi azonosító számát (azaz az áfaszámot vagy az adómentességi szám előtagját).</li>
 <li><strong>Adómentességi szám ellenőrzése</strong> –Jelölje be ezt a jelölőnégyzetet a kiválasztott ország/régió adómentességi azonosítójának ellenőrzéséhez.</li>
 </ul></td>
 </tr>
@@ -150,7 +150,7 @@ A következő típusú tranzakciók Közösségen belüli kereskedelmi tranzakci
 -   Projektszámlák
 -   Szállítói számlák
 
-Egy tranzakció Közösségen belüli kereskedelmi tranzakciónak minősül, ha a tranzakció szállítási címe egy EU-tagállamon belül van. Létre kell hozni egy rekordot az ilyen országokhoz és régiókhoz az **Országok/régiók paraméterei** lapján a **Külkereskedelmi paraméterek** oldalnak, és az **Ország/régió típusa** értékhez az **EU** értéket kell megadni. A Közösségen belüli kereskedelmi tranzakciók meg vannak jelölve a **Listakód** mezőben. Ezzel a mezővel elkülöníthetőek az általános Közösségen belüli kereskedelmi tranzakciók a Háromszögügylet tranzakcióktól. Közösségen belüli kereskedelmi tranzakciókkal kapcsolatos információkat gyűjthet az **EU értékesítési lista** lapon (kattintson az **Adó** &gt; **Nyilatkozatok** &gt; **Külkereskedelem** &gt; **EU értékesítési lista** fülre) az **Áthelyezés** funkció segítségével. Ennek a funkciónak segítségével olyan tranzakciókról is kaphat információkat, amelyek különböző jelentéstípusokkal bírnak (pl. cikkek vagy szolgáltatások) a tranzakció sorban megadott cikkáfacsoportokat illetően. Egyéb szűrőket is alkalmazhat, hogy megadja, mely tranzakciók szerepeljenek benne. Az **Áthelyezés** funkció létrehoz egy rekordot az **EU értékesítési lista** oldalon minden Közösségen belüli kereskedelmi tranzakcióhoz, ami szerepel benne, valamint megadja egy ügyfél számlaszámát, országát/régióját, adómentességi számát, egy számlaszámot és dátumot, illetve a sorok teljes összegét jelentésenként. Át is másolja a **Listakód** értékét a tranzakcióból. Egy tranzakció listakódját manuálisan is megváltoztathatja az **EU értékesítési lista** oldalon. Az **Áthelyezés** funkció rekordokat hoz létre, ha a **Jelentéskészítési állapot** értéke **Beleszámít**. Ellenőrizheti az összegyűjtött adatokat az **EU értékesítési lista** lapon, az **Érvényesítés** funkció használatával.
+Egy tranzakció Közösségen belüli kereskedelmi tranzakciónak minősül, ha a tranzakció szállítási címe egy EU-tagállamon belül van. Létre kell hozni egy rekordot az ilyen országokhoz és régiókhoz az **Országok/régiók paraméterei** lapján a **Külkereskedelmi paraméterek** oldalnak, és az **Ország/régió típusa** értékhez az **EU** értéket kell megadni. A Közösségen belüli kereskedelmi tranzakciók meg vannak jelölve a **Listakód** mezőben. Ezzel a mezővel elkülöníthetőek az általános Közösségen belüli kereskedelmi tranzakciók a Háromszögügylet tranzakcióktól. Közösségen belüli kereskedelmi tranzakciókkal kapcsolatos információkat gyűjthet az **EU értékesítési lista** lapon (kattintson az **Adó** &gt; **Nyilatkozatok** &gt; **Külkereskedelem** &gt; **EU értékesítési lista** fülre) az **Áthelyezés** funkció segítségével. Ennek a funkciónak segítségével olyan tranzakciókról is kaphat információkat, amelyek különböző jelentéstípusokkal bírnak (pl. cikkek vagy szolgáltatások) a tranzakció sorban megadott cikkáfacsoportokat illetően. Egyéb szűrőket is alkalmazhat, hogy megadja, mely tranzakciók szerepeljenek benne. Az **Áthelyezés** funkció létrehoz egy rekordot az **EU értékesítési lista** oldalon minden Közösségen belüli kereskedelmi tranzakcióhoz, ami szerepel benne, valamint megadja egy ügyfél számlaszámát, országát/régióját, adómentességi számát, egy számlaszámot és dátumot, illetve a sorok teljes összegét jelentésenként. Át is másolja a **Listakód** értékét a tranzakcióból. Egy tranzakció listakódját manuálisan is megváltoztathatja az **EU értékesítési lista** oldalon. Az **Áthelyezés** funkció rekordokat hoz létre, ha a **Jelentéskészítési állapot** értéke **Beleszámít**. Ellenőrizheti az összegyűjtött adatokat az **EU értékesítési lista** lapon, az **Érvényesítés** funkció használatával. A számla részletes adatait (értékesítési irányban) az Összegek funkcióval **kaphatja** meg.
 
 ### <a name="generating-the-eu-sales-list-report"></a>EU értékesítési lista jelentés létrehozása.
 
@@ -160,8 +160,26 @@ Létrehozhat egy **EU értékesítési lista** jelentés, a **Jelentés** funkci
 
 Amikor befejezte az adott időszakra kiterjedő jelentési folyamatot (például amikor az adóhatóságok elfogadták az **EU értékesítési lista** jelentést), az ESL rekordokat, amelyek szerepelnek a jelentésben, megjelölheti, ha a **Jelentéskészítési állapot** értékét **Lezárt** értékre módosítja. Ezen állapot beállításához használja a **Megjelölés lezártként** funkciót az **EU értékesítési lista** oldalon. Az időszak zárásának visszaállításával megjelölheti az ESL rekordokat,ha a **Jelentéskészítési állapot** értékét **Beleszámít** értékre módosítja. Ezeket a rekordokat aztán felveheti egy **EU értékesítési lista** jelentésben újra. Ezen állapot beállításához használja a **Megjelölés** **beleszámítottként** funkciót az **EU értékesítési lista** oldalon.
 
+## <a name="list-of-country-specific-topics"></a>Országspecifikus témakörök listája
 
-
+| Ország/régió          | Hivatkozás      |
+|------------------|-----------|
+| Ausztria          | [EU értékesítési lista Ausztriához](emea-aut-eu-sales-list.md)| 
+| Belgium          |[EU értékesítési lista Belgiumhoz](emea-bel-eu-sales-list.md)|
+| Cseh Köztársaság          |[EU értékesítési lista a Cseh Köztársaság számára](emea-cze-eu-sales-list.md)|
+| Dánia          |[EU értékesítési lista Dániához](emea-dnk-eu-sales-list.md)|
+| Észtország          |[EU értékesítési lista Észt Köztársaság](emea-est-eu-sales-list.md)|
+| Finnország          |[EU értékesítési lista Finnországhoz](emea-fin-eu-sales-list.md)|
+| Franciaország          |[EU értékesítési lista Franciaországhoz](emea-fra-eu-sales-list.md)|
+| Németország          |[EU értékesítési lista Németország számára](emea-deu-eu-sales-list.md)|
+| Magyarország          |[EU értékesítési lista Magyarország számára](emea-hun-eu-sales-list.md)|
+| Lettország          |[EU értékesítési lista Lettországhoz](emea-lva-eu-sales-list.md)|
+| Litvánia          |[EU értékesítési lista Litvániához](emea-ltu-eu-sales-list.md)|
+| Hollandia          |[EU értékesítési lista Hollandia számára](emea-nl-eu-sales-list.md)|
+| Lengyelország          |[EU értékesítési lista Lengyelországhoz](emea-pol-eu-sales-list.md)|
+| Spanyolország          |[EU értékesítési lista Spanyolországhoz (349-es jelentés)](emea-esp-sales-list.md)|
+| Svédország          |[EU értékesítési lista Svédországhoz](emea-swe-eu-sales-list.md)|
+| Egyesült Királyság (Észak-Írország)          |[EU értékesítési lista (Észak-Írország)](emea-uk-eu-sales-list.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

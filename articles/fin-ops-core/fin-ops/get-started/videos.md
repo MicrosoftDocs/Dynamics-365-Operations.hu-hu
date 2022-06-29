@@ -2,7 +2,7 @@
 title: Videók
 description: Ez a lap felsorolja azokat a Microsoft által létrehozott „útmutató” és technikai beszélgetés videókat, amelyek a Finance and Operations alkalmazásokra vonatkoznak, és amelyek a YouTube és más webhelyeken állnak rendelkezésre.
 author: sericks007
-ms.date: 09/15/2021
+ms.date: 06/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
+ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487991"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8958138"
 ---
 # <a name="videos"></a>Videók 
 
@@ -30,7 +30,7 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 > [!Note]
 > A felsorolt videók egy részét a korábbi terméknév alatt tették közzé, azonban még mindig érvényesek.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videók a Finance and Operations alkalmazások fejlesztéséhez és adminisztrációjához
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>A Finance and Operations fejlesztéséről és adminisztrációjáról szóló videók
 
 ### <a name="data-integration"></a>Adatintegrálás
 
@@ -42,7 +42,6 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 
 ### <a name="development"></a>Fejlesztés
 
-- [Ütközések feloldása a Visual Studio szolgáltatásban](https://youtu.be/4rxO0zUN2zU)
 - [Optimalizálási tanácsadó](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [A fejlesztési fiók és a build beállítása](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [A fejlesztési gépek beállítása](https://www.youtube.com/watch?v=cqp9MetfiyM)
@@ -52,7 +51,7 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 
 - [Beágyazott jelentés szerkesztése analitikai munkaterületen](https://youtu.be/_8WlwmSggcQ)
 - [PowerBI.com jelentések beágyazása a Finance and Operations alkalmazásokba](https://youtu.be/gGWuNJDoi-M)
-- [Használja saját adatbázisát (BYOD) a Finance and Operations alkalmazásokhoz](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [A saját adatbázis átvitele (BYOD) a Finance and Operations alkalmazásokba](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Költségkezelés Power BI-tartalom használata a Dynamics 365 alkalmazásban](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -81,7 +80,7 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 - [A továbbfejlesztett Excel-élmény Regression Suite Automation Tool (RSAT) 2.0.](https://youtu.be/fcEkSIVQ1Bg)
 
 
-## <a name="videos-for-dynamics-365-finance"></a>Videók a Dynamics 365 Finance szolgáltatáshoz
+## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Pénzügy - videók
 
 ### <a name="business-document-management"></a>Üzleti dokumentumok kezelése
 - [Új üzleti dokumentum létrehozása az üzleti dokumentumkezelés modulban](https://www.youtube.com/watch?v=gAIYl-mM_pw)

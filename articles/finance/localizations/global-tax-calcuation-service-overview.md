@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c9511643806a2201b3379dec9bbca01a8ccbcdc3
-ms.sourcegitcommit: 58af7348be9ce60a86a111ede42a7fc5b2b77708
-ms.translationtype: HT
+ms.openlocfilehash: 24d4a722ee143dc0869f758475aaf377e7a9e084
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8941730"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954521"
 ---
 # <a name="tax-calculation-overview"></a>Adószámítás áttekintése
 
@@ -79,6 +79,7 @@ Javasoljuk, hogy importálja és állítsa be az adószámítás konfigurációj
 | 10.0.25         | Adószámítási konfiguráció 40.50.225 |
 | 10.0.26         | Adószámítási konfiguráció 40.54.234 |
 | 10.0.27         | Adószámítási konfiguráció 40.54.234 |
+| 10.0.28         | Adószámítási konfiguráció 40.54.234 |
 
 
 ## <a name="data-flow"></a>Adatáramlás

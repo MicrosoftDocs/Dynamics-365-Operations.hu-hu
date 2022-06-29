@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: b4a98b90491093f55ce6974b9b11ff326c0c2f5c
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903869"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015318"
 ---
 # <a name="credit-limits-for-customers"></a>Hitelkeretet a vevőknek
 
@@ -117,7 +117,7 @@ Használja a **Kinnlevőségek paraméterei** képernyőt annak a megadásához,
 
 Használja a **Vevők** képernyőt az adott vevőhöz tartozó hitelkeret összegének megadására. A Vevő alapadatainak karbantartása (CustCustomersMaintain) feladat hozzárendelésével rendelkező biztonsági szerepkör tagjának kell lennie ahhoz, hogy ezen a képernyőn módosításokat végzhessen.
 
-1.  Kattintson a következőre: **Kinnlevőségek** \> **Közös** \> **Vevők** \> **Minden vevő**. Kattintson duplán egy vevőkódra.
+1.  Kattintson a **Kinnlevőségek –** \> **Vevők –** \> **Minden vevő elemre**. Kattintson duplán egy vevőkódra.
 
 2.  A **Vevők** képernyő Művelet ablakában kattintson a **Szerkesztés** elemre.
 
@@ -132,7 +132,7 @@ Használja a **Vevők** képernyőt az adott vevőhöz tartozó hitelkeret össz
 
 Néha előfordulhat, hogy manuálisan kell ellenőrizni a vevő hitelkeretét. Például előfordulhat, hogy manuálisan ellenőrzi egy vevő hitelkeretét az értékesítési rendelés létrehozának megkezdése előtt. Használhatja az **Értékesítési rendelés** képernyőt a hitelkeret manuális ellenőrzéséhez. Az Értékesítési rendelés karbantartása (SalesOrderMaintain) feladat hozzárendelésével rendelkező biztonsági szerepkör tagjának kell lennie ahhoz, hogy ezen a képernyőn módosításokat végzhessen.
 
-1.  Kattintson ide: **Értékesítés és marketing** \> **Közös** \> **Értékesítési rendelések** \> **Minden értékesítési rendelés**. Kattintson duplán egy értékesítési rendelésre.
+1.  Kattintson az **Értékesítési és marketingrendelések** \> **–** \> **Minden értékesítési rendelés lehetőségre.** Kattintson duplán egy értékesítési rendelésre.
 
 2.  Az **Értékesítési rendelés** képernyőn, a Művelet ablakban, a **Kezelés** lapon, kattintson a **Hitelkeretének ellenőrzése** elemre.
 

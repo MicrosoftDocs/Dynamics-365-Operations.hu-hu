@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b372e7d06fdf25df81b11e74e20a5ff214503a0c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 6c2a1a30fe3f1c86d316cc04bf88b428369e7f14
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852128"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014792"
 ---
 # <a name="create-service-objects"></a>Szolgáltatási objektumok létrehozása  
 
@@ -29,9 +29,9 @@ ms.locfileid: "8852128"
 A szolgáltatási tárgyak a vevő azon eszközei és termékei, amelyhez szolgáltatást lehet elvégezni.
 
 1. Válassza a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **A szolgáltatás tárgyai** lehetőséget.
-2. Válassza ki az eszköztár **Új** gombját.
+2. A Műveleti ablaktáblán kattintson az **Új** elemre.
 3. A **Leírás** mezőbe írja be a tárgy leírását.
-4. A **A szolgáltatás tárgyának csoportja** mezőben válassza ki azt a csoportot, amelyhez a tárgy tartozik. 
+4. A **A szolgáltatás tárgyának csoportja** mezőben válassza ki azt a csoportot, amelyhez a tárgy tartozik.
 5. Nem kötelező: Válasszon ki egy cikket a szolgáltatás tárgyának sorához, vagy válasszon egy anyagjegyzéksablont (BOM).
 
 ## <a name="related-articles"></a>Kapcsolódó cikkek

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c3def1b8ebd75da44588732d9f54a1cc03c999c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 92f3a2bc3d2a4d5d1c3be0c6dda2674dc3e7d0bb
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891234"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016826"
 ---
 # <a name="create-maintenance-requests"></a>Karbantartási kérések létrehozása
 
@@ -32,9 +32,9 @@ A karbantartási kérések akkor használhatók, ha a karbantartás dolgozók va
 
 **Példa:** Amikor a karbantartási dolgozó javítási munkát végez, észreveszi, hogy egy másik eszközt is szervizelni kell ugyanazon a helyen. Azonban a karbantartási dolgozónak nincs ideje vagy a pótalkatrészek szükségesek a javítási feladat végrehajtásához. Ezért létrehoz egy karbantartási kérést az eszközhöz, és megadja a probléma rövid leírását.
 
-Az **Aktív karbantartási kérések** részben a **Kapcsolódó információk** ablaktáblán az **Összes eszköz** vagy **Összes eszköz** oldal jobb oldalán (**Eszközök kezelése** \> **Közös** \> **Eszközök** \> **Összes eszköz** vagy **Aktív eszközök**) láthatók a kijelölt eszközhöz csatolt karbantartási kérések.
+**A Minden** **·** **·** **eszköz** vagy az Aktív eszközök lap jobb oldalán található Kapcsolódó információ ablaktábla Aktív karbantartási kérelmek szakasza (**·** \> **·** \> **·** **Eszközkezelés** – Összes eszköz vagy Aktív eszköz) mutatja a kiválasztott eszközhöz kapcsolódó aktív karbantartási kérelmeket.
 
-1. Válassza az **Eszközkezelés** \> **Közös** \> **Karbantartási kérések** \> **Összes karbantartási kérés** vagy **Aktív karbantartási kérések** lehetőséget.
+1. Válassza ki **az eszközkezelés** \> **karbantartási kérését** \> **, amely minden karbantartási kérést vagy** az aktív **karbantartási kérést kéri.**
 2. Válassza az **Új** lehetőséget.
 3. A **Kérelem létrehozása** párbeszédpanel **Karbantartási kérés típusa** mezőjében válassza ki a karbantartási kérés típusát. Egy alapértelmezett típus javasolva van.
 4. A **Leírás** mezőben adjon meg egy nevet vagy egy címet, amely röviden leírja a karbantartási kérést.
