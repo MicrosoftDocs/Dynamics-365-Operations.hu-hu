@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 723eae906260d152a8729f91c75cd9860eca84c5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4f2b4213574a2d84089ab20ab1a584e1ab894ad9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669488"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016362"
 ---
 # <a name="manage-template-boms-on-object-relations"></a>Anyagjegyzéksablonok kezelése tárgykapcsolatokon 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8669488"
 
 ## <a name="attach-a-template-bom-to-a-service-object"></a>Sablonanyagjegyzék kapcsolása szolgáltatási tárgyhoz
 
-1.  Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.
+1.  Kattintson a **Szolgáltatáskezelés** \> **szolgáltatási szerződések szolgáltatási** \> **szerződései hivatkozásra**.
 
 2.  Kattintson duplán arra a szolgáltatási szerződésre, amelynél egy sablonanyagjegyzéket egy tárgykapcsolathoz szeretne csatolni.
 
@@ -43,7 +43,7 @@ ms.locfileid: "8669488"
 
 ## <a name="delete-a-service-bom-from-a-service-object"></a>Szolgáltatási anyagjegyzék törlése egy szolgáltatási tárgytól
 
-1.  Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.
+1.  Kattintson a **Szolgáltatáskezelés** \> **szolgáltatási szerződések szolgáltatási** \> **szerződései hivatkozásra**.
 
 2.  Kattintson duplán arra a szolgáltatási szerződésre, amelynél törölni szeretne egy sablonanyagjegyzéket egy tárgykapcsolatról.
 
@@ -55,7 +55,7 @@ ms.locfileid: "8669488"
 
 ## <a name="move-the-service-bom-history-from-one-service-agreement-to-another"></a>A szolgáltatási anyagjegyzék előzményeinek áthelyezése egy szolgáltatási szerződésből a másikba
 
-1.  Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.
+1.  Kattintson a **Szolgáltatáskezelés** \> **szolgáltatási szerződések szolgáltatási** \> **szerződései hivatkozásra**.
 
 2.  Kattintson duplán arra a szolgáltatási szerződésre, amelyből át szeretne helyezni egy szolgáltatási anyagjegyzéket.
 

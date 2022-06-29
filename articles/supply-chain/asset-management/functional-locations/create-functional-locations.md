@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: f7c36fe230db38bfdbfd70fec7bdfd0a313d5a15
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869720"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015841"
 ---
 # <a name="create-functional-locations"></a>Munkavégzési helyszínek létrehozása
 
@@ -41,7 +41,7 @@ A munkavégzési helyszínekkel való munkához a munkavégzési helyszínek ké
 
 Ha munkavégzési helyszíneket használ, kezdje azzal, hogy létrehoz egy alapértelmezett helyszínt, amelyet az új eszközök létrehozásakor fog használni. Ez az a munkavégzési helyszín amelyet az **Eszközkezelés** > **Beállítás** > **Eszközkezelés paraméterei** > **Eszközök** hivatkozás > **Alapértelmezett munkavégzési helyszín** mezőjében választ ki. Az alapértelmezett munkavégzési helyszín akkor használható, amikor új eszközöket hoz létre, és még nem állított be munkavégzési helyszínstruktúrát ezekhez az eszközökhöz.
 
-1. Válassza ki az **Eszközkezelés** > **Általános** > **Munkavégzési helyszínek** > **Összes munkavégzési helyszín** lehetőséget.  
+1. Válassza ki **az Eszközkezelés** > **működési helyeit** > **minden funkcionális helyhez**.  
 2. Az **Összes munkavégzési helyszín** helyen válassza az **Új** lehetőséget.
 3. Szúrjon be egy azonosítót a **Munkavégzési helyszín** hely mezőbe, például „0000” vagy „Default”, jelezve, hogy ez egy különleges munkavégzési helyszín.
 4. Az alapértelmezett munkavégzési helyszín nevének beszúrása a **Név** mezőbe.
@@ -53,7 +53,7 @@ Ha munkavégzési helyszíneket használ, kezdje azzal, hogy létrehoz egy alap�
 
 Az alábbi eljárás bemutatja, hogyan hozhatók létre a vállalat karbantartásához szükséges munkavégzési helyszínek.
 
-1. Válassza ki az **Eszközkezelés** > **Általános** > **Munkavégzési helyszínek** > **Összes munkavégzési helyszín** lehetőséget. A munkavégzési helyszínt rácsnézetben vagy a részletek nézetben hozhatja létre.
+1. Válassza ki **az Eszközkezelés** > **működési helyeit** > **minden funkcionális helyhez**. A munkavégzési helyszínt rácsnézetben vagy a részletek nézetben hozhatja létre.
 2. Kattintson a **Új** gombra.
 3. Azonosító beszúrása a **Munkavégzési helyszín** mezőbe.
 4. Az alapértelmezett munkavégzési helyszín nevének beszúrása a **Név** mezőbe.

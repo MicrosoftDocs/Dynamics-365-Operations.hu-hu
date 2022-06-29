@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 5ab715be3bfdc380f5736fadd901af3ed78d7035
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860928"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016304"
 ---
 # <a name="create-an-asset"></a>Eszköz létrehozása
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860928"
 
 Ez a témakör azt ismerteti, hogyan lehet létrehozni egy eszközt az Eszközkezelésben.
 
-1. Kattintson az **Eszközök kezelése** > **Közös** > **eszközök** > **Minden eszköz** vagy **Aktív eszközök** lehetőségre.
+1. Kattintson **az Eszközkezelés** > **– Összes** > **eszköz vagy az** **Aktív eszközök elemre**.
 2. Kattintson az **Új** gombra.
 3. Az **Eszközök létrehozása** párbeszédpanelen írja be az **Eszközre** vonatkozó adatokat (az eszközazonosítót) és az eszköz nevét. Az eszközhöz válaszon egy dátumot a **Hatályos** mezőben Ettől a dátumtól kezdve telepítheti az eszközt a munkavégzési helyszínre, valamint áthelyezheti és lecserélheti az eszközt egy eszközszerkezetben.
 4. Az **Eszköztípus** mezőben válassza ki az eszköz eszköztípusát (kötelező mező). Ha szükséges, válassza az ki az **Eszköz gyártója** és **Eszközmodell** értékeket az eszközhöz. Ha csak egy termék van beállítva, akkor a termék automatikusan ki lesz választva az eszköz gyártójának az **Eszköz gyártója** mezőben. Az **Eszköz gyártója** és **Eszközmodell** mezőben elérhető választási lehetőségek az [Eszköz gyártói és modelljei](../setup-for-objects/product-and-model.md) mező beállításaitól függenek.

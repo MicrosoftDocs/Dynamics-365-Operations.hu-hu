@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e75ed6e30ece1f4807ff036d831c269774d941a7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 228b76d6f6f0bb048662c8e82df76f51b7cb3652
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670972"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017376"
 ---
 # <a name="cancel-service-orders"></a>Szervizrendelések érvénytelenítése   
 
@@ -36,11 +36,11 @@ A szervizrendelést és annak sorait magából a rendelésből is érvénytelen�
 
 ## <a name="cancel-a-service-order-in-the-service-orders-form"></a>Szervizrendelés érvénytelenítése a Szervizrendelések képernyőn
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**. Válassza ki a szervizrendelést, majd kattintson a **Rendelés törlése** gombra a Műveletpanelen.
+1.  Kattintson a **Szolgáltatáskezelés szervizrendelések** \> **szervizrendelések** \> **lehetőségre**. Válassza ki a szervizrendelést, majd kattintson a **Rendelés törlése** gombra a Műveletpanelen.
 
 ## <a name="cancel-a-service-order-line"></a>Szervizrendeléssor érvénytelenítése
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**. Kattintson duplán az érvényteleníteni kívánt sort tartalmazó szervizrendelésre.
+1.  Kattintson a **Szolgáltatáskezelés szervizrendelések** \> **szervizrendelések** \> **lehetőségre**. Kattintson duplán az érvényteleníteni kívánt sort tartalmazó szervizrendelésre.
 
 2.  Válassza ki a érvényteleníteni kívánt szervizrendeléssort, és kattintson a **Rendelési sor érvénytelenítése** lehetőségre ahhoz, hogy a sor állapotát **töröltre** módosítsa.
 
