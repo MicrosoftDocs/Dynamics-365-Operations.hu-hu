@@ -2,37 +2,34 @@
 title: Szolgáltatásiszerződés-csoportok létrehozása
 description: Ez a témakör a szolgáltatásiszerződés-csoportok létrehozásához szükséges eljárásokat mutatja be.
 author: sorenva
-ms.date: 02/19/2018
+ms.date: 06/15/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: SMAAgreementGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d94dfe38a6aef765bb1089908827275c00b3dc9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: f7cd195f8c8cda0b975f47bc73fc27860eb3a40f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889486"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014590"
 ---
-# <a name="create-service-agreement-groups"></a>Szolgáltatásiszerződés-csoportok létrehozása 
+# <a name="create-service-agreement-groups"></a>Szolgáltatásiszerződés-csoportok létrehozása
 
 [!include [banner](../includes/banner.md)]
 
 A szolgáltatásiszerződés-csoportok jól hasznosíthatók a szolgáltatási szerződések rendezésére és szűrésére.
 
 1. Válassza a **Szolgáltatáskezelés** \> **Beállítás** \> **Szolgáltatási szerződések** \> **Szolgáltatásiszerződés-csoportok** lehetőséget.
-2. Hozzon létre egy új szolgáltatásiszerződés-csoportot az **Alt+N** billentyűkombináció lenyomásával.
-3. A **Szolgáltatásiszerződés-csoport** mezőben adja meg szolgáltatásiszerződés-csoport azonosítóját.
-4. A **Leírás** mezőben adjon meg egy leírást a szolgáltatásiszerződés-csoporthoz.
-5. A módosítások mentéséhez zárja be az oldalt.
+1. A munkaablakban az Új **gombra kattintva** hozzon létre egy új szolgáltatásiszerződés-csoportot.
+1. A **Szolgáltatásiszerződés-csoport** mezőben adja meg szolgáltatásiszerződés-csoport azonosítóját.
+1. A **Leírás** mezőben adjon meg egy leírást a szolgáltatásiszerződés-csoporthoz.
+1. A Szolgáltatásiszint-szerződés **mezőben** válassza ki a csoportra vonatkozó szerződést.
+1. A módosítások mentéséhez zárja be az oldalt.
 
 > [!NOTE]
 > Ha meg van határozva egy szolgáltatásiszerződés-csoport a **Szolgáltatáskezelés paraméterei** lap **Szolgáltatásiszerződés-csoport** mezőjében, akkor a program ezt a csoportot ajánlja fel az összes létrehozott új szolgáltatási szerződésnél.

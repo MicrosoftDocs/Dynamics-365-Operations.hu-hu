@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ec7e300f60f76aaa467238d7a2c2a199fdeafeed
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: e25d1c108e5cc90fcedc7e8f7e4bbc14052719f1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857924"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015956"
 ---
 # <a name="schedule-work-order-on-specific-date-and-time"></a>Munkarendelés ütemezése megadott dátumra és időpontra
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857924"
 
 Ha egy munkarendelést meghatározott napon *és* időpontban kell ütemezni, felülbírálhatja az alap ütemezési folyamatot az Eszközkezelés modulban, és létrehozhat egy meghatározott ütemezést a munkarendeléshez.
 
-1. Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** elemre.
+1. Kattintson az **Eszközkezelés munkarendelések** > **–** > **Minden munkarendelés vagy** aktív **munkarendelés gombra**.
 
 2. A munkarendelés listán kattintson a munkarendelés azonosítójára a **Munkarendelés** oszlopban.
 

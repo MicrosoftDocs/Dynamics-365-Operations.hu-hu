@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858243"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015346"
 ---
 # <a name="provision-human-resources"></a>A Human Resources kiépítése
 
@@ -143,7 +143,9 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy melyik Power 
 6. A Human Resources és a Power Apps környezet integrálásához használható kettős írási képességek csak akkor használhatók, ha a **Dynamics 365 alkalmazások engedélyezése** beállítás van kiválasztva a környezetben. Lásd: [Kettős írás kezdőlapja](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) a kettős írással kapcsolatos további információkért.
 
     > [!NOTE]
-    > A Power Apps környezet létrehozásakor ki kell választani a **Dynamics 365-alkalmazások engedélyezése** beállítást. Ha a telepítéskor nem választja ki ezt a lehetőséget, nem használhatja a Kettős írás lehetőséget a Dynamics 365 Human Resources és a Power Apps környezet adatainak integrálására, és nem telepíthet Dynamics 365-alkalmazásokat, például a Dynamics 365 Sales és Field Service alkalmazásokat a környezetbe. Ez a beállítás nem visszavonható. További tudnivalókat a Power Platform dokumentációs webhely [Fontos szempontok új környezet létrehozásakor](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) részében talál.
+    > A Power Apps környezet létrehozásakor ki kell választani a **Dynamics 365-alkalmazások engedélyezése** beállítást. Ha a telepítéskor nem választja ki ezt a lehetőséget, nem használhatja a Kettős írás lehetőséget a Dynamics 365 Human Resources és a Power Apps környezet adatainak integrálására, és nem telepíthet Dynamics 365-alkalmazásokat, például a Dynamics 365 Sales és Field Service alkalmazásokat a környezetbe. Ez a beállítás nem visszavonható. 
+    > -  Az Emberi erőforrások nem támogatják a kapcsolt példány megváltoztatását Dataverse, ha már telepítve van az Emberi erőforrások szolgáltatás. </br></br>
+    > További tudnivalókat a Power Platform dokumentációs webhely [Fontos szempontok új környezet létrehozásakor](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) részében talál.  
 
 7. Miután meghatározta a használandó a helyes környezetet, folytathatja a létesítési folyamat. 
 

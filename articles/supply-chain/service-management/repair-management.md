@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7026453bf3a0eda2b9bc4d8538150974bd6aa634
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 32372a6a54e2adfbf511e2247be4a9baa28b4b53
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847904"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015201"
 ---
 # <a name="repair-management"></a>Javításkezelés       
 
@@ -75,7 +75,7 @@ A javítási folyamat minden lépéséhez létrehozhat külön javítási sort.
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Javítási sor létrehozása szervizrendeléshez
 
-1.  Lépjen ide: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1.  Ugrás a Szolgáltatáskezelés **szervizrendelések** \> **szervizrendeléséhez** \> **·**
 
 2.  Válassza ki azt a szervizrendelést, amelyik a javítást igénylő szolgáltatási objektumot tartalmazza.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 5b13db8b8b12aaef2e067f9a55eb8754333eb16b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908772"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017145"
 ---
 # <a name="multi-level-assets"></a>Többszintű eszközök
 
@@ -30,7 +30,7 @@ ms.locfileid: "8908772"
 
 Ez a témakör bemutatja a többszintű eszközök létrehozásához és törléséhez szükséges eszközöket. Az eszközöket és a kapcsolódó aleszközöket hierarchikus fastruktúrában lehet létrehozni. Így megjelenítheti az eszközök közötti kapcsolatokat és függőségeket. A karbantartási munkákat a fastruktúra minden szintjéhez lehet kapcsolni. Statisztikákat egyéni szintekhez, vagy az összes aleszközszint összességéhez is létre lehet hozni.
 
-Az **Összes eszköz** listoldalon (**Eszközkezelés** \> **Általános** \> **Eszközök** \> **Összes eszköz**) az **Eszköz** oszlopban megtlaálható az eszközök listája hierarchikus sorrendben. A **Fölérendelt** oszlop a kapcsolódó fölérendelt elemet mutatja. Ezenkívül, ha már létrehoztak eszközöket és aleszközöket, akkor a **Kapcsolódó információk** ablaktábla **Eszközfa** szakaszában láthatók az eszközök fastruktúrában.
+Az Összes **eszköz listaoldalon** (**Eszközkezelés** \> **·** \> **·** – Összes eszköz) **az** Eszköz oszlopban hierarchikus sorrendben vannak felsorolva az eszközök. A **Fölérendelt** oszlop a kapcsolódó fölérendelt elemet mutatja. Ezenkívül, ha már létrehoztak eszközöket és aleszközöket, akkor a **Kapcsolódó információk** ablaktábla **Eszközfa** szakaszában láthatók az eszközök fastruktúrában.
 
 Az eszközök létrehozásával kapcsolatos további tudnivalókért tekintse meg az [Eszköz létrehozása](../objects/create-an-object.md) részt. Aleszköz létrehozásához válassza ki a fölérendelt eszközt az **Általános** gyorslap **Fölérendelt** mezőjében.
 
@@ -38,7 +38,7 @@ Az eszközök létrehozásával kapcsolatos további tudnivalókért tekintse me
 
 Ha a vállalatnál több hasonló eszközstruktúra is van, az Eszközkezelés Másolás funkciója segítségével gyorsan létrehozhatja azokat.
 
-1. Válassza ki az **Eszközkezelés** \> **Általános** \> **Eszközök** \> **Összes eszköz** lehetőséget.
+1. Válassza ki **az Eszközkezelés** \> **– Összes** \> **eszköz lehetőséget.**
 2. Az **Összes eszköz** listaoldalon válassza ki a másolni kívánt eszközt. Ha például a teljes eszközstruktúrát kívánja másolni (az aleszközöket is beleértve), válasszon ki egy fölérendelt eszközt.
 3. Válassza az **Eszköz másolása** lehetőséget. A **Másolás forrása** szakasz **Eszköz** mezője a listaoldalon kiválasztott eszközre van állítva.
 4. A **Másolás célja** szakasz **Eszköz mezőjében** adja meg az új eszköz nevét.

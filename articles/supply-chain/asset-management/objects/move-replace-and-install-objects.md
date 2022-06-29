@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 0a6b5a2904d21782ae422d06eaaf03c5d5e51ab9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872124"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015579"
 ---
 # <a name="move-replace-and-install-assets"></a>Eszközök áthelyezése, cseréje és telepítése
 
@@ -44,7 +44,7 @@ Az **Eszköz áthelyezése** funkcióval egy másik eszközszerkezetbe vagy ugya
 > [!NOTE]
 > Ne használja ezt a funkciót, ha az eszközöket javítja, vagy csak ideiglenesen lecseréli. Ehelyett használja a Jelen cikk **későbbi leírásában ismertetett Eszköz** cseréje funkciót.
 
-1. Válassza ki az **Eszközkezelés** \> **Általános** \> **Eszközök** \> **Összes eszköz** vagy **Aktív eszközök** lehetőséget.
+1. Válassza ki **az Eszközkezelés** \> **– Összes** \> **eszköz vagy az** **Aktív eszközök lehetőséget.**
 2. A listából válassza ki az áthelyezni kívánt eszközt. Ha az eszköz rendelkezik alárendelt eszközökkel, akkor ezeket az eszközöket is áthelyezi.
 3. Válassza az **Eszköz áthelyezése** lehetőséget.
 4. Ha úgy szeretné áthelyezni az eszközt, hogy az eszközstruktúra részévé váljon, válassza ki az új fölérendelt eszközt a **Fölérendelt eszköz** mezőben. Ha alárendelt eszközt helyez át, vagy különálló, szerkeszeti kapcsolatokkal nem rendelkező eszközzé szeretné alakítani, hagyja üresen a **fölérendelt eszköz** mezőt.
@@ -58,7 +58,7 @@ Az **Eszköz cseréje** funkció használata az elhasználódott eszköz javít�
 > [!NOTE]
 > Ha a termeléi osztályhoz javítóműhely is kapcsolódik, akkor létrehozhat olyan munkavégzési helyszíneket, mint **Javítás**, **Selejt** és **Tárolás**, amellyel az eszközök javítása és cseréje kezelhető.
 
-1. Válassza ki az **Eszközkezelés** \> **Általános** \> **Eszközök** \> **Összes eszköz** vagy **Aktív eszközök** lehetőséget.
+1. Válassza ki **az Eszközkezelés** \> **– Összes** \> **eszköz vagy az** **Aktív eszközök lehetőséget.**
 2. Válassza ki a listából a lecserélni kívánt alárendelt eszközt. Ha az eszköz rendelkezik alárendelt eszközökkel, akkor ezeket az eszközöket is lecseréli.
 3. Válassza az **Eszköz cseréje** lehetőséget.
 
@@ -79,7 +79,7 @@ Az **Eszköz telepítése** funkcióval egy eszközstruktúrát telepíthet egy 
 > [!NOTE]
 > Mindig jelöljön ki egy fölérendelt eszközt. A fölérendelt eszköz és a kapcsolódó alárendelt eszközök a kijelölt munkavégzési helyszínre kerülnek.
 
-1. Válassza ki az **Eszközkezelés** \> **Általános** \> **Eszközök** \> **Összes eszköz** vagy **Aktív eszközök** lehetőséget.
+1. Válassza ki **az Eszközkezelés** \> **– Összes** \> **eszköz vagy az** **Aktív eszközök lehetőséget.**
 2. A listában jelölje ki a fölérendelt eszközt, amelyet másik munkavégzési helyszínen szeretne telepíteni.
 3. Válassza az **Eszköz telepítése** lehetőséget.
 

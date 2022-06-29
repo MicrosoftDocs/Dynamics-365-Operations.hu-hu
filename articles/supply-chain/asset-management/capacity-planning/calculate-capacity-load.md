@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8eb0b152f0a4b4e0f61d519262c24d02b71b8fc3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 95d1e38db8e4658a57f36139836264b87d525e61
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849648"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016130"
 ---
 # <a name="calculate-capacity-load"></a>Kapacitásterhelés kiszámítása
 
@@ -35,7 +35,7 @@ Az Eszközkezelés modulban kiszámíthatja a kapacitás terhelését a követke
 
 Ez akkor lehet hasznos, ha egy adott időszakra vonatkozóan szeretne áttekintést kapni a várható kapacitáskihasználásról. A kapacitás terhelésének számítása minden tárgyi eszköznél vagy a kiválasztott tárgyi eszközön végezhető el. Számításokat végezhet a karbantartási állásidők vagy a munkavégzési gyűjtők esetében is.
 
-1. Kattintson az **Eszközkezelés** > **Lekérdezések** > **Kapacitásterhelés**, vagy az **Eszközkezelés** > **Közös** > **Munkavégzési gyűjtők** > **Összes munkarendelési gyűjtő** / **Aktív munkarendelés-gyűjtők** > válassza a munkarendelés-gyűjtőt a listában > **Kapacitásterhelés** gomb, vagy **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemkimaradás tevékenységek** > **Minden karbantartás miatti üzemkimaradás tevékenység** / **Aktív karbantartás miatti üzemkimaradás tevékenységek** > a karbantartási tevékenységet kiválasztása a listában > **Kapacitásterhelés** gomb.
+1. **·** > **·** > **·** **·** > **·** > **·** / **Kattintson** az Eszközkezelés – Kapacitásterhelés lekérdezése vagy Az Eszközkezelés munkarendelések > Minden munkarendelési pool aktív munkarendelési > > Kapacitásterhelés listában válassza ki a **munkarendelési** készletet, **·** > **·** > **·** / **·** **vagy az Eszközkezelés - karbantartás - leállási tevékenységek minden karbantartási leállási tevékenység > Válasszon karbantartási tevékenységet a > Kapacitásterhelés** gomb listájában.
 
 2. A **Kapacitásterhelés kiszámítása** párbeszédablakban válasszon ki egy időszakot a számításhoz a **Kezdő dátum/idő** és a **Záró dátum/idő** mezőben.
 

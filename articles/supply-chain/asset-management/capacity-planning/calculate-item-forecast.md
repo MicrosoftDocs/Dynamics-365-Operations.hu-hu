@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d0552c38ddc31ad6322e9e2e0f2c2c722c045f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 25e9b00533fb183b27c1bbe616cf6f414b44b5e7
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870900"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016101"
 ---
 # <a name="calculate-item-forecast"></a>Cikkelőrejelzés kiszámítása
 
@@ -36,7 +36,7 @@ Csakúgy, mint a kapacitásterhelési számításoknál, amelyek leírása az el
 
 Ez akkor lehet hasznos, ha egy adott időszakra vonatkozóan áttekintést szeretne kapni a várható cikkfelhasználásról (pótalkatrészek, valamint a munkarendelések befejezéséhez szükséges egyéb cikkek). A kapacitás terhelésének számítása a cikkelőrejelzéseknél minden eszközön vagy a kiválasztott eszközökön végezhető el. Számítás végezhető a karbantartási állásidővel kapcsolatos tevékenységekről (**Összes karbantartási állásidő tevékenység** vagy **Aktív karbantartási állásidő tevékenységek**), vagy egy munkarendelési gyűjtőkről (**Minden munkarendelési gyűjtő** vagy **Aktív munkavégzési gyűjtők**).
 
-1. Kattintson az **Eszközkezelés** > **Lekérdezések** > **Cikkelőrejelzés**, vagy az **Eszközkezelés** > **Közös** > **Munkavégzési gyűjtők** > **Összes munkarendelési gyűjtő** / **Aktív munkarendelés-gyűjtők** > válassza a munkarendelés-gyűjtőt a listában > **Cikkelőrejelzés** gomb, vagy **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemkimaradás tevékenységek** > **Minden karbantartás miatti üzemkimaradás tevékenység** / **Aktív karbantartás miatti üzemkimaradás tevékenységek** > a karbantartás miatti üzemkimaradás tevékenység kiválasztása a listában > **Cikkelőrejelzés** gomb.
+1. Kattintson az Eszközkezelés – Lekérdezések cikk-előrejelzésre **vagy** > **·** > **·** **az Eszközkezelés munkarendelési > Minden munkarendelés-> munkarendelési készletet a cikk-előrejelzési listában,** > **·** > **·** / **·** **vagy >** **Tárgyieszköz-karbantartás - leállási tevékenységek mind karbantartási leállási tevékenység aktív karbantartási leállási tevékenységei > válassza ki a karbantartási leállási tevékenységeket a lista >** > **Cikk-előrejelzés** > **gombjával.** / **·** **·**
 
 2. A **Cikkelőrejelzés kiszámítása** párbeszédablakban válasszon ki egy időszakot a számításhoz a **Kezdő dátum/idő** és a **Záró dátum/idő** mezőben.
 

@@ -16,12 +16,12 @@ ms.search.industry: Product information
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2798e25d1f6c293aa71a6c143ded5293f241060
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 079e6de00d1a946d998648378d5ca24c1fd26218
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850554"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015406"
 ---
 # <a name="product-related-translations-faq"></a>Termékekkel kapcsolatos GYIK
 
@@ -43,20 +43,20 @@ A termékkel kapcsolatos információk fordításait bármilyen külső forrásb
 
 ## <a name="how-do-i-create-translations-for-product-related-information"></a>Hogyan hozható létre fordítás termékkel kapcsolatos információból?
 A termék-fordítások létrehozásához tegye a következőket:
-1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Kiadott termékek** lehetőségre.
+1.  Kattintson a Termékinformáció-kezelési **·** &gt; **Termékek kiadott** &gt; **termékei elemre**.
 2.  Válasszon ki egy terméket, majd a Műveleti ablaktáblapontban a **Nyelvek** csoportban kattintson a **Fordítások** lehetőségre.
 3.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadásához bontsa ki a **Nyelv** mezőt, majd kattintson az **OK** lehetőségre.
 4.  A **Lefordított szöveg** csoportban adja meg a fordításokat a **Leírás** és a **Termék neve** mezőkben.
 
 A termékattribútum-fordítások létrehozásához tegye a következőket:
-1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Kiadott termékek** lehetőségre.
+1.  Kattintson a Termékinformáció-kezelési **·** &gt; **Termékek kiadott** &gt; **termékei elemre**.
 2.  A **Beállítás** pontban kattintson az **Attribútumok** lehetőségre, majd kattintson az **Attribútumok** pontra.
 3.  A **Attribútumok** lapon kattintson a **Fordítás** lehetőségre.
 4.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadásához bontsa ki a **Nyelv** mezőt, majd kattintson az **OK** lehetőségre.
 5.  A **Lefordított szöveg** csoportban adja meg a fordításokat a **Leírás**, a **Rövid név** és a **Súgószöveg** mezőkben.
 
 Termékdimenzió-értékek létrehozásához tegye a következőket:
-1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Kiadott termékek** lehetőségre.
+1.  Kattintson a Termékinformáció-kezelési **·** &gt; **Termékek kiadott** &gt; **termékei elemre**.
 2.  Válasszon ki egy terméket, majd kattintson a **Termékdimenziók** elemre.
 3.  Válasszon egyet a termékdimenziók linkjei közül: **Konfigurációk**, **Méretek**, **Színek** vagy **Stílus**.
 4.  Válasszon egy dimenzióértéket, majd kattintson a **Fordítás** elemre.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7905dcd4c29872ec2601359baefa78545140397c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 210db3259a6c64a508119b30598a34dbda2d2dd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857895"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014998"
 ---
 # <a name="add-fault-to-work-order"></a>Hiba hozzáadása munkarendeléshez
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857895"
 
 A lekérdezéstervezőben megadott hibák a munkarendeléshez hozzáadhatók. A munkarendelésen kijelölt eszköznek tartalmaznia kell egy vagy több hibarekorddal rendelkező eszköztípust. A szolgáltatásokról további tájékoztatásért lásd: [Hibakezelés](../setup-for-work-orders/fault-management.md).
 
-1. Válassza az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** lehetőséget.
+1. Az Eszközkezelés **munkarendelések** > **kiválasztása** > **: minden munkarendelés vagy** aktív **munkarendelés**.
 
 2. Válassza ki azt a munkarendelést, amelynek a hibaregisztrációját kívánja végezni, majd kattintson a művelet ablaktábla **Munkarendelés** lapján az **Eszköz** csoport **Eszközhiba** elemére.
 
@@ -64,7 +64,7 @@ Az **Eszközhibák** listaoldalon áttekintést kaphat az összes eszközön reg
 
 Az **Összes eszköz** listája lapon kinyomtathat egy eszközhiba-jelentést, amely minden hibaregisztrációt megjelenít, valamint a hibák statisztikáinak grafikus áttekintését is.
 
-1. Válassza ki az **Eszközkezelés** > **Általános** > **Eszközök** > **Összes eszköz** lehetőséget.
+1. Válassza ki **az Eszközkezelés** > **– Összes** > **eszköz lehetőséget**.
 
 2. Jelölje ki az eszközt amelyhez hibajelentést szeretne nyomtatni.
 

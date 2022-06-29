@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f12b0dd1facc753bfcde820eea26a4052caf67
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 376cda6bbe1800611e6f24c347b9035469a30a14
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882402"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015172"
 ---
 # <a name="service-order-item-requirements"></a>Szervizrendelés cikkszükségletei
 
@@ -36,7 +36,7 @@ Amikor már létre van hozva cikkszükséglet egy szervizrendeléshez, az megtek
 
 ## <a name="view-an-item-requirement-from-a-service-order"></a>Szervizrendelés cikkszükségletének megtekintése
 
-1. Lépjen ide: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1. Ugrás a Szolgáltatáskezelés **szervizrendelések** \> **szervizrendeléséhez** \> **·**
 1. Válassza az **Elküldés** lehetőséget, és válassza a **Cikkszükséglet** elemet a **Cikkszükségletek** képernyő megnyitásához.
 1. Válassza a **Projekt** lapot és ellenőrizze a **Szervizrendelés** mezőt a cikkszükséglethez tartozó szervizrendelések megtekintéséhez.
 
@@ -44,13 +44,13 @@ Amikor már létre van hozva cikkszükséglet egy szervizrendeléshez, az megtek
 
 Ha egy szervizrendelésen cikkszükséglet van létrehozva, a szervizrendelést nem tudja törölni. Törölnie kell a cikkszükségletet mielőtt a szervizrendelést törölni tudja.
 
-1. Lépjen ide: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1. Ugrás a Szolgáltatáskezelés **szervizrendelések** \> **szervizrendeléséhez** \> **·**
 1. Válassza az **Elküldés** lehetőséget, és válassza a **Cikkszükséglet** elemet a **Cikkszükségletek** képernyő megnyitásához. A képernyő a szervizrendelésen létrehozott cikkszükségleteket tartalmazza.
 1. Válassza ki a törölni kívánt cikkszükségletet, majd válassza a **Törlés** lehetőséget.
 
 – vagy –
 
-1. Lépjen a következőkre: **Projektvezetés és könyvelés** \> **Közös** \> **Projektek** \> **Minden projekt**.
+1. Ugorjon a **Projektvezetés és könyvelés** \> **Projektek** \> **Minden projekt** pontra.
 1. Nyissa meg az azt a szervizrendelést tartalmazó projektet, amelyen a cikkszükséglet létrehozása történik.
 1. A **Projektek** képernyőn a jobb oldali ablakban válassza a **Cikkszükségletek** elemet. Megnyílik a **Cikkszükségletek** képernyő, és tartalmazza a kijelölt projekthez társított cikkszükségletek listáját.
 1. Válassza ki a törölni kívánt cikkszükségletet, majd válassza a **Törlés** lehetőséget.

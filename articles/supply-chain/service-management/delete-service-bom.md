@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b189835528e2e1b6d746c767fb53f365fa194b46
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 18e2323f0346e522e04a3d1e36d98846a66bea1e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865034"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015688"
 ---
 # <a name="delete-a-service-bom"></a>Szolgáltatási darabjegyzék törlése
 
 [!include [banner](../includes/banner.md)]
 
-1. Lépjen a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre. Jelölje ki azt a szolgáltatási szerződést, amelyből szolgáltatási anyagjegyzéket (BOM) szeretne törölni.
+1. Menjen a **Szolgáltatáskezelés szolgáltatási** \> **szerződések szolgáltatási** \> **szerződéseibe.** Jelölje ki azt a szolgáltatási szerződést, amelyből szolgáltatási anyagjegyzéket (BOM) szeretne törölni.
 1. A **Műveleti panelen** válassza a **Szolgáltatási tárgyak** lehetőséget.
 1. A **Szolgáltatás tárgyai** képernyőn válassza ki azt a szolgáltatási tárgyat, amelyből szolgáltatási anyagjegyzéket (BOM) szeretne törölni. Válassza a **Funkciók** lehetőséget, majd válassza a **Szolgáltatási AJ törlése** parancsot.
 1. Válassza ki az **Igen** lehetőséget.

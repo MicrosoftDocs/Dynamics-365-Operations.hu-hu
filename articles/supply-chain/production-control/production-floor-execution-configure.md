@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899411"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022564"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -113,9 +113,6 @@ Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés
 
 ### <a name="enable-the-my-day-dialog"></a>A "Saját nap" párbeszédpanel engedélyezése
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 A **Saját nap** párbeszédpanelen a dolgozók áttekintést kaphatnak a napi regisztrációikról és a fizetett időre, fizetett túlórára, távollétre és fizetett távollétre vonatkozó jelenlegi egyenlegeikről.
 
 Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -124,9 +121,6 @@ Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés
 
 ### <a name="enable-teams"></a>Csapatok engedélyezése
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Ha ugyanannak a termelési feladatnak több dolgozója van, akkor csapatokat lehet csapatokat formba rendelni. A csoport egy dolgozót jelölhet meg pilotként. A többi dolgozó automatikusan ennek az pilotnak az asszisztense lesz. Az eredményül kapott csapatnál csak az első csapatnak kell regisztrálnia a feladat állapotát. Az időrekordok minden csapattagra érvényesek.
 
 Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -134,9 +128,6 @@ Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés
 - *Termelési csapatok a termelési üzem végrehajtási felületében*
 
 ### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>További konfiguráció engedélyezése a termelési emelet végrehajtási felületén
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Ez a funkció a következő funkciók beállításait adja meg a Termelési **emelet végrehajtási konfigurálása lapon**:
 

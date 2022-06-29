@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75e30c8b2d74cc2f1ca538b64e5fc801f9ca130a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 42e8ba4e19333cb25464203a2583175ef082ad98
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897690"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016478"
 ---
 # <a name="maintenance-downtime-activities"></a>Karbantartás miatti üzemkimaradási tevékenységek
 
@@ -38,14 +38,14 @@ Ha a karbantartás miatti üzemkimaradás regisztrációjához eszközöket vál
 
 ## <a name="maintenance-downtime-activities"></a>Karbantartás miatti üzemkimaradási tevékenységek
 
-Kattintson az **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemkimaradási tevékenységek** > **Minden karbantartás miatti üzemkimaradási tevékenység** elemre az összes karbantartás miatti üzemkimaradás listájának, illetve a tevékenységekhez kapcsolódó információk megtekintéséhez. A részletes nézet megnyitásához kattintson a **Karbantartás miatti üzemkimaradási tevékenységek** oszlopban lévő hivatkozásra. A lenti ábra a **Karbantartás miatti üzemkimaradási tevékenységek** listaoldalt szemlélteti.
+Kattintson **az Eszközkezelés** > **·** > **- karbantartás - leállási tevékenységek lehetőségre Az** összes karbantartási leállási tevékenység gombra kattintva listát nyit az összes karbantartási leállási tevékenységről, és láthatja a tevékenységekkel kapcsolatos bizonyos adatokat. A részletes nézet megnyitásához kattintson a **Karbantartás miatti üzemkimaradási tevékenységek** oszlopban lévő hivatkozásra. A lenti ábra a **Karbantartás miatti üzemkimaradási tevékenységek** listaoldalt szemlélteti.
 
 ![1. ábra](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Karbantartás miatti üzemkimaradás tevékenység létrehozása
 
-1. Kattintson az **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemkimaradási tevékenységek** > **Minden karbantartás miatti üzemkimaradási tevékenység** vagy **Aktív karbantartás miatti üzemkimaradási tevékenységek** elemre.
+1. Kattintson az Eszközkezelés **-** > **karbantartási leállási** > **tevékenységek lehetőségre: minden karbantartási** leállási tevékenység vagy aktív **karbantartási leállási tevékenység**.
 
 2. Kattintson az **Új** elemre.
 

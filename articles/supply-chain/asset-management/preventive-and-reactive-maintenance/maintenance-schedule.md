@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4089400817d6dd8454c85e594eff05314d3fd72e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 782a8cc1f9e64b8c2d4364212c9c5755c103bbfb
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858011"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017058"
 ---
 # <a name="maintenance-schedule"></a>Karbantartási ütemezés
 
@@ -44,7 +44,7 @@ A karbantartási ütemezés négy nézete némileg különbözik, attól függő
 
 Karbantartási ütemezés megnyitása:
 
-1. Kattintson az **Eszközkezelés** > **Közös** > **Karbantartási ütemezés** > **Összes karbantartási ütemezés** vagy **Nyitott karbantartási ütemezési sorok** vagy **Nyitott karbantartási ütemezési csoportok** elemre.
+1. Kattintson az Eszközkezelés karbantartása ütemezve **minden karbantartási ütemezésre** > **, vagy** > **nyissa meg a** karbantartási ütemezési sorokat vagy nyissa **meg a karbantartási ütemezési készleteket.** **·**
 
 2. A karbantartási ütemezés frissítéséhez kattintson a **Karbantartási terv** vagy a **Karbantartási körök** elemre. 
 

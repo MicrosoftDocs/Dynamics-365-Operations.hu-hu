@@ -1,7 +1,7 @@
 ---
 title: Rögzített bevételezési ár
 description: Ez a cikk bemutatja, hogy hogyan konfigurálhatja és használhatja a rögzített bevételezési árakat a Microsoftban Dynamics 365 Supply Chain Management.
-author: raprofit
+author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
 ms.search.form: InventPosting, InventItemGroup, InventModelGroup
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 2630952f395d1a18202698b4d73b67ef4b760194
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: d58e8dcc580bf9327cd89427530f59340e27f4aa
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907580"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954692"
 ---
 # <a name="fixed-receipt-price"></a>Rögzített bevételezési ár
 

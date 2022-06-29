@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
-ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
-ms.translationtype: HT
+ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945723"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954663"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás újdonságai vagy változásai
 
 [!include [banner](../includes/banner.md)]
 
 Ez a cikk a Microsoft Raktárkezelés mobilalkalmazás minden egyes kiadott verziójához tartalmaz új funkciókat, javításokat, javításokat és ismert problémákat Dynamics 365 Supply Chain Management.
+
+## <a name="version-20250"></a>2.0.25.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+- Növelt teljesítmény.
+- Jobb stabilság.
+- A Lekérdezés lap **továbbfejlesztve** az alfejlécek hosszabb szövegeit is támogatja.
+- Lehetőség van arra, hogy azonnal megszakítsa a folyamatot egyetlen kattintással vagy kattintással (**·** **amikor a Mégse gombra kattint a További műveletek pont alatt elérhető egyetlen művelet).**
+- Kijavított egy olyan problémát, ahol néha **elveszhet** a fókusz a Kapcsolat szerkesztése lapon és az egyéni lapokon található bejegyzésvezérlők között.
+- Kijavított egy olyan problémát, amely miatt a gombok időnként nem reagálnak, és kijelölve jelennek meg görgető nézetben.
+- Kijavított egy olyan problémát, amelynél előfordulhat, hogy nem a megfelelő elrendezést használják a főoldalon.
 
 ## <a name="version-20240"></a>2.0.24.0-s verzió
 

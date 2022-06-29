@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860667"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022504"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -263,9 +263,6 @@ Ha dolgozó egy szünetet akar regisztrálni, kijelöli a **Szünet** lehetősé
 
 ## <a name="view-the-my-day-dialog"></a>A "Saját nap" párbeszédpanel megjelenítése
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 A **Saját nap** párbeszédpanelen a dolgozók áttekintést kaphatnak regisztrációikról és egyenlegeikről. A párbeszédpanel a következő három szakaszra van felosztva:
 
 - A fő szakasz felsorolja azokat a regisztrációkat, amelyekre az aktuális dolgozó a kiválasztott dátumon tett. Megjeleníti az aktuális nap regisztrációit, és olyan dátumválasztót biztosít, amely lehetővé teszi a dolgozó egyéb napok megjelenítését.
@@ -275,9 +272,6 @@ A **Saját nap** párbeszédpanelen a dolgozók áttekintést kaphatnak regisztr
 A rendszergazdák úgy **adhatják** hozzá ezt a funkciót a felülethez, hogy minden megfelelő laphoz egy eszköztáron elhelyezik a [Saját nap gombot, amint azt a Termelési üzem végrehajtási felületének tervezése című témakör ismerteti](production-floor-execution-tabs.md).
 
 ## <a name="working-in-teams"></a>Csapatokban való munka
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Ha ugyanannak a termelési feladatnak több dolgozója van, akkor csapatokat lehet csapatokat formba rendelni. A csoport egy dolgozót jelölhet meg pilotként. A többi dolgozó automatikusan ennek az pilotnak az asszisztense lesz. Az eredményül kapott csapatnál csak az első csapatnak kell regisztrálnia a feladat állapotát. Az időrekordok minden csapattagra érvényesek.
 

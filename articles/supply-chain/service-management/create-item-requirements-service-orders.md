@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c2c90ff76121b436d0fec532268cd3383de0eab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: f21cda0abb334432d22cc7e0ccfdab724253d91e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888412"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016949"
 ---
 # <a name="create-item-requirements-for-service-orders"></a>Cikkszükséglet létrehozása szervizrendelésekhez
 
@@ -34,14 +34,14 @@ Szervizrendelések cikkszükségleteinek feldolgozása projekten keresztül tör
 
 ## <a name="create-an-item-requirement-for-a-service-order"></a>Cikkszükséglet létrehozása szervizrendeléshez
 
-1. Lépjen ide: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1. Ugrás a Szolgáltatáskezelés **szervizrendelések** \> **szervizrendeléséhez** \> **·**
 1. Válassza ki azt a szervizrendelést, amelyhez cikkszükségletet szeretne létrehozni.
 1. A **Műveleti ablaktábla** **Elküldés lapján** válassza a **Cikkszükséglet** elemet.
 1. A **Cikkszükséglet** képernyőn írja be a kívánt cikkre vonatkozó megfelelő adatokat. További információk az adott mezőkről: [Cikkszükséglet (képernyő)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))..
 
 ## <a name="create-an-item-requirement-for-a-service-agreement"></a>Cikkszükséglet létrehozása szolgáltatási szerződéshez
 
-1. Lépjen a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.
+1. Menjen a **Szolgáltatáskezelés szolgáltatási** \> **szerződések szolgáltatási** \> **szerződéseibe.**
 1. Nyissa meg azt a szolgáltatási szerződést, amelyhez cikkszükségletet szeretne létrehozni.
 1. A **Sorok** gyorslapon válassza a **Hozzáadás** lehetőséget egy új sor létrehozásához.
 1. Válassza ki a **Cikk** elemet a **Tranzakció típusa** mezőben.

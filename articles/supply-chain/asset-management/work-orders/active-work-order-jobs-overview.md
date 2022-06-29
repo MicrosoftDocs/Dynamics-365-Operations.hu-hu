@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3e48ceec2e95f796b6e7662af42e6bc1c3f01b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 80072381c59b6cc0e0ea512a50900f8754a413a0
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895873"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017000"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>Aktív munkarendelés-karbantartási feladatok – áttekintés
 
@@ -29,7 +29,7 @@ ms.locfileid: "8895873"
 
 Az **Aktív munkarendelés-karbantartási feladatok** listaoldalon áttekintést kaphat arról, hogy hány munkarendelést hoztak létre az adott eszközök, eszköztípusok, gyártók, modellek, karbantartási feladattípusok és így tovább. Egy munkarendelési feladat, majd a **Szerkesztés** kijelölésével, megnyitja a kapcsolódó munkarendelést. Egy munkarendelési feladat kiválasztásával, majd a műveleti panel **Munkarendelés karbantartási feladatai** lapjának egyik gombjára kattintva megtekintheti azt a munkarendelést, amelyhez a munkarendelési feladat kapcsolódik.
 
-Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Aktív munkarendelés-karbantartási feladatok** lehetőségre a listaoldal megnyitásához. Az oldal listázza az összes aktív munkarendelést, és megjeleníti a munkarendeléssel vagy a munkarendelési munkával kapcsolatos adatokat is.
+A listaoldal megnyitásához válassza az **Eszközkezelés** > **·** > **munkarendelések aktív munkarendelés-karbantartási feladatokat**. Az oldal listázza az összes aktív munkarendelést, és megjeleníti a munkarendeléssel vagy a munkarendelési munkával kapcsolatos adatokat is.
 
 A **%** oszlopban egy szám mutatja a munkarendelés befejezését százalékban. Az elkészülés két számításon alapul: feladott órák az előre jelzett órákhoz képest, és a már befejezett karbantartási ellenőrzőlisták száma.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 665c705e3ffb617fc159a1223cb3f776878d5cd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882779"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016246"
 ---
 # <a name="asset-boms"></a>Eszköz DBJ-k
 
@@ -57,7 +57,7 @@ A pótalkatrészekkel kapcsolatos előzmények beállítása a **Készlet- és r
 
 Miután bejegyezte a cikkfelhasználást egy munkarendelésen, megtekintheti a rögzített cikkfelhasználást az **Eszköz DBJ** oldalon.
 
-1. Válassza ki az **Eszközkezelés** \> **Általános** \> **Eszközök** \> **Aktív eszközök** lehetőséget. Válassza ki az eszközt a listában, majd válassza az **Eszköz DBJ** értéket.
+1. Válassza ki **az Eszközkezelés** \> **– Eszközök** \> **aktív eszközöket**. Válassza ki az eszközt a listában, majd válassza az **Eszköz DBJ** értéket.
 
     > [!NOTE]
     > Ha az összes eszközre vonatkozó összes cikkfelhasználási nyilvántartást meg szeretné tekinteni,válassza az **Eszközkezelés** \> **Lekérdezések** \> **Eszközök** \> **Eszköz DBJ** elemet.

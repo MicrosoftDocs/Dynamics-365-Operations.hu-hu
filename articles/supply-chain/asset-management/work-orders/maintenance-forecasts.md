@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c2dbd968a22f2bded29cff3517dacbafc79ff8f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: be6ef12f34e85b90c24c43c6e55ad169c271810a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902111"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016623"
 ---
 # <a name="maintenance-forecasts"></a>Karbantartási előrejelzések
 
@@ -32,7 +32,7 @@ A munkarendelések létrehozásakor munkarendelési feladatokat hoz létre, amel
 
 Előfordulhat, hogy előrejelzési sorokat szeretné egy munkarendeléshez hozzáadni, vagy egy munkarendelésből törölni azokat. A munkarendelés életciklus-állapotának beállítása, a kapcsolódó projekttípus és a projekt típusára vonatkozó szakaszszabályok határozzák meg, hogy az előrejelzési sorok hozzáadhatók-e a naplóhoz, vagy szerkeszthetők-e. A munkarendelés életciklus-állapotaival és kapcsolódó projektfázisaival kapcsolatos további információért lásd: [Előrejelzések, munkarendelések és projektek](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Válassza az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** lehetőséget.
+1. Válassza ki **az Eszközkezelés** > **munkarendelések minden** > **munkarendelését vagy** az aktív **munkarendeléseket**.
 
 2. Válassza ki a munkarendelést a listában, majd a Művelet panel > **Munkarendelés** lapján a **Projekt** csoportban válassz az **Előrejelzés** pontot. A **Munkarendelés karbantartási előrejelzése** oldalon a munkarendelésen a kiválasztott karbantartási feladattípusból származó előrejelzési sorok jelennek meg.
 

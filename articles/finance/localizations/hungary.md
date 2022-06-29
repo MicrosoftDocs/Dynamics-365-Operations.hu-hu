@@ -12,12 +12,12 @@ ms.search.region: Hungary
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d7596bb86acbe34cbdcbd5b66a276da02005142
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 52bf87eebc5a03df6311f5479efe28744c7e3bb3
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899787"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954463"
 ---
 # <a name="hungary-overview"></a>Magyarország – áttekintés
 
@@ -36,6 +36,7 @@ Ez a cikk a magyarországi dokumentációs erőforrásokra mutató hivatkozások
 - [Áfajelentések Magyarországról](emea-hun-sales-tax-reports.md)
 - [Intrastat jelentés](emea-hun-intrastat.md)
 - [Halasztott áfa számításai](emea-hun-deferred-vat.md)
+- [EU értékesítési lista Magyarország számára](emea-hun-eu-sales-list.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76eba18fb9228c3b9c2accf17cb938e7f2a12dbe
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: fc0dee0747c26b073d750d19328a6a59c234fd3f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671702"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016400"
 ---
 # <a name="service-tasks-overview"></a>Szervizfeladatok áttekintése
 
@@ -82,7 +82,7 @@ Amikor automatikusan állít elő szervizrendeléseket, a szervizfeladatokat fel
 
 **Csoportosítás szervizfeladat alapján**
 
-1. Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.
+1. Kattintson a **Szolgáltatáskezelés** \> **szolgáltatási szerződések szolgáltatási** \> **szerződései hivatkozásra**.
 2. Válassza ki a **Beállítás** lapon a **Szervizfeladat szerint** lehetőséget a **Szervizrendelések kombinálása** mezőben.
 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7a76c0ecefbb8da762ac68cbdd7bb44f68a89894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 4a310152685f733093cc7e50404c23b6f24c40cc
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851856"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016652"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Karbantartás miatti üzemkimaradás munkarendelések esetén
 
@@ -52,7 +52,7 @@ Miután létrehozta a használni kívánt karbantartás miatti üzemkimaradási 
 
 ## <a name="create-maintenance-downtime-registrations"></a>karbantartás miatti üzemkimaradás regisztrációinak létrehozása
 
-1. Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** elemre.
+1. Kattintson az **Eszközkezelés munkarendelések** > **–** > **Minden munkarendelés vagy** aktív **munkarendelés elemre**.
 
 2. Válassza ki a munkarendelést, majd a Művelet panel **Munkarendelés** lapján az **Eszközök** csoportban válassz a **Karbantartási miatti üzemkimaradás** pontot.
 

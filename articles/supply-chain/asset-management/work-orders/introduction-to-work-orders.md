@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dcee5fd729de6e96d57462879f7851756f287dc9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 5eb911ec4ba9655c4ecaea3bf9a4f8736fa036c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902831"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016710"
 ---
 # <a name="introduction-to-work-orders"></a>Bevezetés a munkarendelések használatába
 
@@ -47,15 +47,15 @@ A munkarendeléseket a következő módokon lehet létrehozni:
 
 ## <a name="all-work-orders"></a>Összes munkarendelés
 
-Válassza az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** lehetőséget az **Új munkarendelések** listaoldal megnyitásához. Ezen az oldalon a munkarendelések, és bizonyos rájuk vonatkozó információk láthatók.
+Válassza ki **az Eszközkezelés** > **munkarendelések minden** > **munkarendelését** a Minden **munkarendelés listaoldal** megnyitásához. Ezen az oldalon a munkarendelések, és bizonyos rájuk vonatkozó információk láthatók.
 
 Az alábbi ábra az **Összes munkarendelés** listaoldal egy példáját mutatja be.
 
 ![1. ábra](media/01-work-orders.png)
 
-Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Aktív munkarendelések** lehetőségre a csak az aktív munkarendelések listájának megtekintéséhez. 
+Ha csak az aktív munkarendelések listáját megtekinteni, **válassza az Eszközkezelés** > **munkarendelések aktív** > **munkarendelések lehetőséget**. 
 
-Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Saját munkavégzési helyszín munkarendelés karbantartási feladatai** lehetőségre a munkavégzési helyszínekre telepített eszközöket tartalmazó Munkarendelés-feladatok listájának megtekintéséhez, amelyekhez ön dolgozóként kapcsolódik (a Karbantartási dolgozók és dolgozócsoportok helyen beállítva). (A dolgozók és a funkcionális helyszínek közötti kapcsolatot a **Dolgozók** lapon lehet beállítani. További információ: [Karbantartási dolgozók és dolgozói csoportok](../setup-for-objects/workers-and-worker-groups.md).)
+A dolgozóhoz kapcsolódó funkcionális helyekre telepített tárgyi eszközöket tartalmazó munkarendelési feladatok listájának megtekintéséhez jelölje be **a** > **·** > **Saját működési hely munkarendelés-karbantartási feladatok jelölőnégyzetét.** (A dolgozók és a funkcionális helyszínek közötti kapcsolatot a **Dolgozók** lapon lehet beállítani. További információ: [Karbantartási dolgozók és dolgozói csoportok](../setup-for-objects/workers-and-worker-groups.md).)
 
 Az **Összes munkarendelés** lap a következő módokon használható:
 

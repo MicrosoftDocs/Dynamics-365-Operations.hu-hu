@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969e3de9586c0c47214201b34a16f8afad5ca90
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1764d97d4492e7b982a5d2c9f7e7f1c15380be1d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678262"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014851"
 ---
 # <a name="create-service-orders-manually"></a>Szervizrendelések létrehozása manuálisan    
 
@@ -34,7 +34,7 @@ Szervizrendeléseket a szolgáltatási szerződésből vagy a **Szervizrendelés
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Szervizrendelés manuális létrehozása egy szolgáltatási szerződésből
 
-1.  Válassza a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőséget.
+1.  Válassza ki **a Szolgáltatáskezelés** \> **szolgáltatási szerződései** \> **szolgáltatási szerződéseket**.
 
 2.  Válasszon ki egy szolgáltatási szerződést, vagy hozzon létre egy új szolgáltatási szerződést.
 
@@ -42,7 +42,7 @@ Szervizrendeléseket a szolgáltatási szerződésből vagy a **Szervizrendelés
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Szervizrendelés manuális létrehozása a Szervizrendelések képernyőn
 
-1.  Válassza: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1.  Válassza ki a **Szolgáltatáskezelés szervizrendelések** \> **szervizrendeléseit.** \> **·**
 
 2.  Válassza ki az **Új** lehetőséget egy új szolgáltatási utasítás létrehozásához.
 
@@ -53,7 +53,7 @@ Szervizrendeléseket a szolgáltatási szerződésből vagy a **Szervizrendelés
 
 ## <a name="create-a-service-order-from-a-project"></a>Szervizrendelés létrehozása egy projektből
 
-1.  Lépjen a következőkre: **Projektvezetés és könyvelés** \> **Közös** \> **Projektek** \> **Minden projekt**.
+1.  Ugorjon a **Projektvezetés és könyvelés** \> **Projektek** \> **Minden projekt** pontra.
 
 2.  A **Projektek** képernyőn, a **Műveleti panelen**, válassza a **Kezelés** lapot \> kattintson **Szolgáltatás** \> **Szervizrendelések** lehetőségre.
 
@@ -66,7 +66,7 @@ Szervizrendeléseket a szolgáltatási szerződésből vagy a **Szervizrendelés
 
 Szervizrendelést az **Értékesítési rendelések** képernyő használatával is létrehozhat; ehhez használja az **Új szervizrendelés létrehozása az értékesítési rendelés alapján** varázslót.
 
-1.  Lépjen ide: **Értékesítés és marketing** \> **Közös** \> **Értékesítési rendelések** \> **Összes értékesítési rendelés**.
+1.  Ugorjon az **Értékesítés és marketing** \> **Értékesítési rendelések** \> **Minden értékesítési** rendelés pontra.
 
 2.  Nyissa meg a megfelelő értékesítési rendelést.
 

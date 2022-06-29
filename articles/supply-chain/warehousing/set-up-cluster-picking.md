@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 0ec3de073def2ff63af3c04b5696cbcec4f09948
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862308"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014720"
 ---
 # <a name="set-up-cluster-picking"></a>Fürt beállítása
 
@@ -74,9 +74,14 @@ Ha a fürtkiválasztást alkalmazzák, a cikkek megerősítése döntő fontoss�
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Cikkellenőrzés beállítása a fürtkiválasztásnál
 
-1. A mobileszköz menüpontjában nyissa meg a munkamegerősítés beállítási képernyőjét: **Raktárkezelés** \> **Raktárkezelés** \> **Beállítás** \> **Mobileszköz** \> **Mobileszköz menüpontjai**.
+1. Ugrás a **Raktárkezelés beállítása** > **mobileszköz** > **mobileszközének** > **menüpontihoz**
+1. A listaablakban válassza ki a beállítani kívánt menüelemet.
+1. A munkaablakban válassza ki a munka **visszaigazolásának beállításait**.
+1. Tegye a következő lehetőségek valamelyikét:
+    - Ha már létezik sor a **beállítani** kívánt munkatípushoz, jelölje ki, **majd** a munkaablakban válassza ki a Szerkesztés lehetőséget.
+    - Ha nem létezik a megfelelő sor, válassza az Új lehetőséget a munkaablakban, **·** **majd** állítsa a munkatípust a megfelelő típusra.
+1. Jelölje be **a Termék megerősítése** jelölőnégyzetet az új vagy kiválasztott sornál. Így a dolgozók ellenőrizhetik a készlet egyes darabját a mobileszköz segítségével.
 
-1. A mobileszköz menüpontjából nyissa meg a **Munkamegerősítés beállítását**. A **Termékmegerősítés** beállítás lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

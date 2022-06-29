@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: df1e1fe352add8361309df54b2178ec27752466d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880451"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016797"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Előrejelzések, munkarendelések és projektek
 
@@ -60,7 +60,7 @@ Például a következő ábrán a **Tehergépkocsi motor** eszköztípus be van 
 
 ![1. ábra](media/01-integration-to-pma.png)
 
-A munkarendelés feladaton szereplő projektazonosító és a kapcsolódó tevékenységszám célja munkarendelés-feladathoz kapcsolódó költségek és a kijelölt eszköz nyomon követése a **Projektmenedzsment és könyvelés** modulban. (A projekt azonosítójának és a tevékenységiszámnak megtekintéséhez válassza az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Minden munkarendelés** lehetőséget, majd jelölje ki a munkarendelést. A **Sor részletei** gyorslapon a **Projekt azonosítója** mező a projekt azonosítóját jeleníti meg, a **Tevékenység száma** mező pedig a tevékenység számát.) A költségkezeléssel kapcsolatos további tudnivalókat az Eszközkezelésben lásd a [Költség- és dátumellenőrzés](../controlling-and-reporting/cost-and-date-control.md) modulban.
+A munkarendelés feladaton szereplő projektazonosító és a kapcsolódó tevékenységszám célja munkarendelés-feladathoz kapcsolódó költségek és a kijelölt eszköz nyomon követése a **Projektmenedzsment és könyvelés** modulban. (A projektazonosító és a tevékenységszám megtekintéséhez válassza a **Eszközkezelés –** > **munkarendelések** > **: minden munkarendelés**, majd a munkarendelés kiválasztása. A **Sor részletei** gyorslapon a **Projekt azonosítója** mező a projekt azonosítóját jeleníti meg, a **Tevékenység száma** mező pedig a tevékenység számát.) A költségkezeléssel kapcsolatos további tudnivalókat az Eszközkezelésben lásd a [Költség- és dátumellenőrzés](../controlling-and-reporting/cost-and-date-control.md) modulban.
 
 Az alábbi ábrán a munkarendelési projektek és a kapcsolódó projekttevékenységek grafikus áttekintése látható.
 

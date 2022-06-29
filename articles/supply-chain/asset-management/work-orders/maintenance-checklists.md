@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 25e9139ce57283482d8da4b7f1e5d6275c74ad28
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 70b83de50105cf664bbc6b6095203d01d83cd79b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854529"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016681"
 ---
 # <a name="maintenance-checklists"></a>Karbantartási ellenőrzőlisták
 
@@ -35,7 +35,7 @@ Amikor egy munkarendelésen dolgozik a karbantartási ellenőrző, kitöltheti a
 
 ## <a name="fill-in-a-maintenance-checklist"></a>Egy karbantartási ellenőrzőlista kitöltése
 
-1. Kattintson az **Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** vagy **Aktív munkarendelések** elemre.
+1. Kattintson az **Eszközkezelés munkarendelések** > **–** > **Minden munkarendelés vagy** aktív **munkarendelés elemre**.
 
 2. Válassza ki a munkarendelést, majd a Művelet panel **Munkarendelés** lapján a **Sorok** csoportban válassz a **Karbantartási ellenőrzőlista** pontot.
 

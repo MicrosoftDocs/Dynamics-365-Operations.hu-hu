@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4483f5bc265149f70cfbea3e63152d63205c1225
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b6ff62d5f1cb3695520f9ac0696d8b9bcedb1a6b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674869"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017318"
 ---
 # <a name="invoice-subscription-transactions"></a>Előfizetési tranzakciók számlázása 
 
@@ -28,7 +28,7 @@ ms.locfileid: "8674869"
 
 
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Közös**\>**Szolgáltatási előfizetések**\>**Minden szolgáltatási előfizetés**.
+1.  Kattintson a **Szolgáltatáskezelési** \> **szolgáltatás előfizetései minden** \> **szolgáltatási előfizetésre**.
 
 2.  Válasszon ki egy szolgáltatási előfizetést, majd kattintson a **Szerkesztés** > **Előfizetés** elemre egy szolgáltatási előfizetés létrehozásához.
 

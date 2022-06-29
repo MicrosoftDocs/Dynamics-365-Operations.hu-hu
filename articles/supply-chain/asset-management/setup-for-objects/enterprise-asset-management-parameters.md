@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 750776412ce9d87389a635ef108a34cffe12b68b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870811"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015812"
 ---
 # <a name="asset-management-parameters"></a>Az Eszközkezelés paraméterei
 
@@ -37,7 +37,7 @@ Az **Eszközök lap** a következő beállításokat tartalmazza:
 
 - Az **Alapértelmezett munkavégzési helyszín** a normál munkavégzési helyszín; az új eszközök létrehozásakor automatikusan ez van kiválasztva az eszközökhöz.  
 - A **Szokásos naptár** mezőben válassza ki, hogy melyik naptárat szeretné használni az eszköz fő teljesítménymutatóinak kiszámításához, ha nincs erőforrás megadva az eszközhöz.  
-- A **Nézet** mezőben válassza ki, hogy melyik normál nézet jelenjen meg az **Eszköz megtekintése** űrlap megnyitásakor (**Eszközkezelés** > **Közös** > **Eszközök** > **Eszköz megtekintése**).
+- A Nézet mezőben válassza ki az **Eszköz** nézet megnyitásakor megjelenő szokásos nézetet (**Eszközkezelési** **eszközök – Eszköz nézet** > **).** > **·**
 - Az **Alapértelmezett kéréstípus** a karbantartási kérés normál típusa; az új kérések létrehozásakor automatikusan ez van kiválasztva.  
 - A feladattípusok előrejelzéseit az **Előrejelzési projekt** mezőben kiválasztott projektben tárolja a rendszer. Minden feladattípushoz automatikusan létrejön egy új tevékenység az előrejelzési projekthez. Ezután az előrejelzési projektben menti a rendszer a feladattípusok előrejelzéseit.  
 - A **Modell** mezőben válassza ki a feladattípus és a munkarendelés előrejelzéseihez használt előrejelzési modellt.

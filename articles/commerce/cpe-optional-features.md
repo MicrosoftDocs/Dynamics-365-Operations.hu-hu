@@ -1,8 +1,8 @@
 ---
-title: Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása
-description: Ez a témakör bemutatja, hogy hogyan konfigurálhatja a Microsoft Dynamics 365 Commerce kiértékelési környezet választható funkcióit.
+title: Az üzenetdoboz-környezet választható funkcióinak Dynamics 365 Commerce konfigurálása
+description: Ez a cikk bemutatja, hogy hogyan konfigurálhatja a beérkezett üzenetek környezetében elérhető Microsoft Dynamics 365 Commerce opcionális funkciókat.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 201628eb0c3e81d5fee0df9e53d93f5b1839adfb
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861914"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013238"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-sandbox-environment"></a>Az üzenetdoboz-környezet választható funkcióinak Dynamics 365 Commerce konfigurálása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan konfigurálhatja a Microsoft Dynamics 365 Commerce kiértékelési környezet választható funkcióit.
+Ez a cikk bemutatja, hogy hogyan konfigurálhatja a beérkezett üzenetek környezetében elérhető Microsoft Dynamics 365 Commerce opcionális funkciókat.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Ha ki szeretné próbálni tranzakciós e-mail funkciókat, akkor az alábbi előfeltételeknek kell teljesülniük:
+Ha a tranzakciós e-mail funkciókat bemutatót szeretné látni, teljesülnie kell a következő előfeltételeknek:
 
-- Rendelkezik egy e-mail kiszolgálóval (Egyszerű üzenetátviteli protokoll \[SMTP\] kiszolgáló), amelyet abból a Microsoft Azure-előfizetésből lehet használni, ahol az értékelési környezetet létesítette.
+- Elérhető e-mail kiszolgáló (Simple Mail Transfer Protocol \[SMTP-kiszolgáló\]), Microsoft Azure amely abból az előfizetésből használható, ahol a beérkezett üzenetek környezetét létesíti.
 - A kiszolgáló teljes képzésű tartományneve (FQDN)/IP-címe, SMTP-portszáma és a hitelesítési adatok rendelkezésre állnak.
 
 ## <a name="configure-the-image-back-end"></a>A képháttér konfigurálása
@@ -39,10 +39,10 @@ Ha ki szeretné próbálni tranzakciós e-mail funkciókat, akkor az alábbi el�
 ### <a name="find-your-media-base-url"></a>A média alap URL-címének megkeresése
 
 > [!NOTE]
-> A művelet végrehajtása előtt be kell fejeznie a [Webhely beállítása a Commerce alkalmazásban](cpe-post-provisioning.md#set-up-your-site-in-commerce) témakör lépéseit.
+> A művelet végrehajtása előtt be kell fejeznie a [Webhely beállítása a Commerce alkalmazásban](cpe-post-provisioning.md#set-up-your-e-commerce-sites) témakör lépéseit.
 
 1. Jelentkezzen be a Commerce webhelykészítőbe azzal az URL-címmel, amelyet az e-kereskedelem inicializálásakor a létesítés során megadott (lásd: [E-kereskedelem inicializálása](provisioning-guide.md#initialize-e-commerce)).
-1. Nyissa meg a **Gyár** webhelyet.
+1. Nyissa meg **a gyárat**, **a Kalandorort** vagy **a Kalandorék** üzleti webhelyét, amelybe dolgozni szeretne.
 1. A bal oldali menüben válassza az **Médiatár** lehetőséget.
 1. Válasszon ki egyetlen képeszközt.
 1. A jobb oldali tulajdonságvizsgálóban keresse meg a **Nyilvános URL** tulajdonságot. Az érték egy URL. Egy példa:
@@ -98,9 +98,9 @@ Az e-mail-sablont minden olyan tranzakciós eseményhez, amelyre e-maileket szer
 
 ## <a name="customize-email-templates"></a>E-mail-sablonok testreszabása
 
-Célszerű lehet testreszabni az e-mail sablonokat, hogy azok különböző képeket használhassanak. Előfordulhat az is, hogy frissíteni szeretné a sablonokban lévő hivatkozásokat, hogy azok az értékelési környezetbe kerüljenek. Ez az eljárás leírja, hogyan lehet letölteni az alapértelmezett sablonokat, illetve hogyan szabhatja testre és frissítheti a sablonokat a rendszerben.
+Célszerű lehet testreszabni az e-mail sablonokat, hogy azok különböző képeket használhassanak. Előfordulhat, hogy frissíteni szeretné a sablonokban található hivatkozásokat, hogy a beérkezett üzenetek környezetére indulnak. Ez az eljárás leírja, hogyan lehet letölteni az alapértelmezett sablonokat, illetve hogyan szabhatja testre és frissítheti a sablonokat a rendszerben.
 
-1. A böngésző használatával letöltheti a [Microsoft Dynamics 365 Commerce értékelés alapértelmezett e-mail-sablonok .zip fájlját](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) a számítógépére. Ez a fájl a következő HTML-dokumentumokat tartalmazza:
+1. A webböngészőben töltse le a bemutató [Microsoft Dynamics 365 Commerce e-mail sablonokhoz használt zip fájlt](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) a helyi számítógépre. Ez a fájl a következő HTML-dokumentumokat tartalmazza:
 
     - Rendelés megerősítési sablon
     - Ajándékutalvány-sablon kiadása
@@ -167,15 +167,11 @@ A következő tokeneket cseréli ki a rendszer értékekre az egyes termékek es
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Dynamics 365 Commerce értékelési környezet áttekintése](cpe-overview.md)
+[Üzenetkészlet Dynamics 365 Commerce környezetének létesítása](provisioning-guide.md)
 
-[Dynamics 365 Commerce értékelési környezet kiépítése](provisioning-guide.md)
+[Abox Dynamics 365 Commerce környezet konfigurálása](cpe-post-provisioning.md)
 
-[Dynamics 365 Commerce értékelési környezet konfigurálása](cpe-post-provisioning.md)
-
-[BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](cpe-bopis.md)
-
-[Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
+[BoPIS konfigurálásabox Dynamics 365 Commerce környezetben](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

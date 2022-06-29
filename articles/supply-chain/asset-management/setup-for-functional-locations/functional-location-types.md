@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 0c44e503900bd157d7f0159cdf2b2d0c1fb3393f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879221"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015783"
 ---
 # <a name="functional-location-types"></a>Munkavégzési helyszín típusai
 
@@ -57,7 +57,7 @@ Ezzel létrejött a munkavégzési helyszín kizárólag alapértelmezett munkav
 7. Az **Eszköztípus** mezőt akkor használja, ha automatikusan létre szeretne hozni *egy* eszközt az éppen létrehozott munkavégzési helyszínével egyező azonosítójú és nevű munkavégzési helyszínhez. Ez például akkor lehet lényeges, ha statikus munkavégzési helyszínt hoz létre (például épületet vagy csővezetéket). Ilyen esetben válassza ki azt az eszköztípust, amelyet az automatikusan létrehozott eszközhöz szeretne használni. Ne feledje, ha ebben a mezőben ad meg értéket, a **Több eszköz** váltógombot „Nem” értékűre kell állítani.
 8. Az **Eszköztípusok** gyorslapon válassza ki azokat az eszköztípusokat, amelyeket össze szeretne kapcsolni a munkavégzési helyszín típusával. Válassza ki a **Sor hozzáadása** lehetőséget, majd az eszköztípusokat. Ha itt ad hozzá eszköztípusokat, csak az adott típusú eszközöket tudja majd telepíteni egy ilyen típusú munkavégzési helyszínen. Ha nem választ ki eszköztípust az **Eszköztípusok** gyorslapon, az összes típus telepíthető lesz.
 9. A **Karbantartási tervek** gyorslapon válassza ki azokat a karbantartási terveket, amelyeket automatikusan be szeretne állítani az ilyen típusú munkavégzési helyszíneken. Válassza ki a **Sor hozzáadása** lehetőséget, majd a karbantartási terveket. Ha itt ad hozzá karbantartási terveket, csak azokat a terveket tudja majd használni az ilyen típusú munkavégzési helyszínen.
-10. Az **Eszközattribútum követelményei** gyorslapon állítsa be azokat az eszközattribútumokat, amelyeket automatikusan be szeretne állítani az ilyen típusú munkavégzési helyszíneken. Válassza ki a **Sor hozzáadása** lehetőséget, majd az attribútumot. Az attribútum követelményei irányelvként szolgálnak. Nincsenek összevetve az eszközön beállított attribútumokkal (**Eszközök kezelése** > **Közös** > **Eszközök** > **Minden eszköz** > válasszon ki eszközt a listaoldalon > **Általános** lap > **Attribútumok** gomb). Az attribútumokra vonatkozó követelmények megjelennek, amikor eszközöket telepít munkavégzési helyszíneken.
+10. Az **Eszközattribútum követelményei** gyorslapon állítsa be azokat az eszközattribútumokat, amelyeket automatikusan be szeretne állítani az ilyen típusú munkavégzési helyszíneken. Válassza ki a **Sor hozzáadása** lehetőséget, majd az attribútumot. Az attribútum követelményei irányelvként szolgálnak. A rendszer nem ellenőrzi az eszközökben beállított attribútumok alapján (**·** > **·** > **Eszközkezelési** eszközök: Minden eszköz > válasszon ki egy eszközt a listaoldalon > **Általános** lap > **Attribútumok** gomb). Az attribútumokra vonatkozó követelmények megjelennek, amikor eszközöket telepít munkavégzési helyszíneken.
 11. Az **Engedélyezett típusok** gyorslapon válassza ki a munkavégzési helyszín azon típusait, amelyeknek érvényesnek kell lenniük a munkavégzési helyszínnek a munkavégzési helyszín kiválasztott típusát használó szülő típusával összekapcsolt altípusok esetében.
 12. Az **Attribútumok** gyorslapon válassza ki a munkavégzési helyszín azon attribútumait, amelyeket automatikusan be szeretne állítani az ilyen típusú munkavégzési helyszíneken. Válassza ki a **Sor hozzáadása** lehetőséget, majd az attribútumot.
 

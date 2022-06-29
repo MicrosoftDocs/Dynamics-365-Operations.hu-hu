@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b04c7cca70ec8b25d40cde86be370bce224388
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 8ea84259eb8f12becdcf008ed9222a44b2626a0d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856251"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016217"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Eszközök számlálóinak automatikus frissítése
 
@@ -53,7 +53,7 @@ A fent említettek szerint az automatikus számlálók a termelési regisztráci
 
 5. Válassza ki az **OK** lehetőséget. 
 
-Az automatikus eszközszámláló-frissítést követően megtekintheti a az eszközhöz kapcsolódó számlálóregisztrációkat az **Eszköz számlálók** oldalon. Válassza ki az **Eszközkezelés** > **Közös** > **Eszközök** > **Minden eszköz** lehetőséget, válassza ki a kívánt eszközt, majd a művelet ablaktábla **Eszköz** lapjának **Megelőzés** csoportjában válassza a **Számlálók** elemet.
+Az automatikus eszközszámláló-frissítést követően megtekintheti a az eszközhöz kapcsolódó számlálóregisztrációkat az **Eszköz számlálók** oldalon. Válassza **ki az Eszközkezelés** > **– Összes** > **eszköz** eszközt, jelölje ki az eszközt, **·** **majd válassza ki a Számlálókat a műveletpanel Eszköz lapján, a Megelőző** **csoportban.**
 
 Az **Eszköz összesített értéke** oldalon áttekintést kaphat az összes eszközhöz készített összes számlálótípus legutóbbi regisztrálásairól. Válassza az **Eszközkezelés** > **Lekérdezések** > **Eszközök** > **Eszköz összesített érték** elemet. Ez a lap hasonlít az **Eszközök számlálók** lapjára, de regisztrációkat nem lehet regisztrációkat hozzáadni és szerkeszteni. Csak áttekintésre szolgál.
 

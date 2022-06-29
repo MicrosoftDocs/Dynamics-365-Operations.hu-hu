@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3a9ee0a96e6a9097608b4c7cd1f65085e95b8ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 30c672286c16a4353556a507019960edb93f8b1b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897719"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016594"
 ---
 # <a name="manual-update-of-asset-counters"></a>Eszközök számlálóinak manuális frissítése
 
@@ -34,7 +34,7 @@ Előfordulhat, hogy a számlálóhoz kiválasztott számlálótípus be van áll
 
 A **Minden eszköz** lapon, az eszköz leolvasott értékei alapján hozhatja létre az eszköz óraszám- vagy mennyiségszámláló regisztrációit.
 
-1. Válassza ki az **Eszközkezelés** > **Általános** > **Eszközök** > **Összes eszköz** lehetőséget.
+1. Válassza ki **az Eszközkezelés** > **– Összes** > **eszköz lehetőséget**.
 
 2. Jelölje ki az eszközt, majd az **Eszköz** lap műveleti ablakában a **Megelőző** csoportban válassza ki a **Számlálók** elemet. Az **Eszközszámlálók** oldalon látható a kiválasztott eszközhöz korábban létrehozott számlálóregisztrációk listája.
 

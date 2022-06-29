@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e59271771a5f332ad8470b0b8f8f54b52a25543d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c9495bbc8e5f7cb603c027a125887feba1f0e2d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671674"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017203"
 ---
 # <a name="set-up-a-preferred-technician"></a>Preferált technikus beállítása 
 
@@ -31,13 +31,13 @@ Szolgáltatási szerződéshez vagy szervizrendeléshez bármelyik dolgozót kiv
 
 ## <a name="assign-employee-to-a-dispatch-team"></a>Alkalmazott hozzárendelése kiszálló csoporthoz
 
-1.  Kattintson az **Emberi erőforrások** \> **Közös** \> **Dolgozók** \> **Dolgozók** lehetőségre. A dolgozó adatlapjának megnyitásához kattintson duplán a dolgozóra. A **Műveleti ablakban** kattintson a **Beállítás** \> **Kiszálló csoport** elemre a **Kiszálló dolgozók** képernyő megnyitásához.
+1.  Kattintson a **Humán erőforrások –** \> **Dolgozók elemre.** \> **·** A dolgozó adatlapjának megnyitásához kattintson duplán a dolgozóra. A **Műveleti ablakban** kattintson a **Beállítás** \> **Kiszálló csoport** elemre a **Kiszálló dolgozók** képernyő megnyitásához.
 
 2.  A **Kiszálló csoport** mezőben válassza ki, hogy melyik csoporthoz szeretné hozzárendelni a dolgozót.
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>Javasolt technikus hozzárendelése a szolgáltatási szerződéshez
 
-1.  Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre. Kattintson duplán a szolgáltatási szerződésre a részleteket tartalmazó képernyő megnyitásához.
+1.  Kattintson a **Szolgáltatáskezelés** \> **szolgáltatási szerződések szolgáltatási** \> **szerződései hivatkozásra**. Kattintson duplán a szolgáltatási szerződésre a részleteket tartalmazó képernyő megnyitásához.
 
 2.  Az **Általános** lapon válassza a **Preferált technikus** mezőt, majd adja meg a megfelelő kiszálló csoport egy tagját a szolgáltatási szerződés javasolt technikusaként.
 
