@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e0c382efda81067ad4c0cd977e5cfbf37b4e3fc6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: fd7482cfe943347840e9fb070151d66fbe5ef9ca
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908714"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016536"
 ---
 # <a name="inbound-and-outbound-assets"></a>Bejövő és kimenő eszközök
 
@@ -37,7 +37,7 @@ Az Eszközök kezelése beállítása határozza meg, hogy használhatók-e bej�
 
 ## <a name="register-assets-as-inbound"></a>Eszközök regisztrálása bejövőként
 
-1. Válassza az **Eszközök kezelése** \> **Közös** \> **Karbantartási kérések** \> **Aktív karbantartási kérések** elemet.
+1. Válassza ki **az Eszközkezelés** \> **karbantartása kérések aktív** \> **karbantartási kérését**.
 2. Válassza ki a karbantartási kérést.
 3. Válassza a **Karbantartási kérés állapotának frissítése** lehetőséget.
 4. Válassza a **Bejövő** (vagy a bejövő eszközökhöz létrehozott másik életciklus-állapotot), majd az **OK** lehetőséget.
@@ -46,7 +46,7 @@ Az Eszközök kezelése beállítása határozza meg, hogy használhatók-e bej�
 
 ## <a name="register-inbound-assets-as-received"></a>Bejövő eszközök regisztrálása fogadottként
 
-1. Válassza az **Eszközök kezelése** \> **Közös** \> **Bejövő / kimenő** \> **Bejövő eszközök** lehetőséget.
+1. Válassza ki **az Eszközkezelés** \> **bejövő/kimenő** \> **bejövő tárgyi eszközöket.**
 2. Válassza ki az eszközt vagy a karbantartási kérést.
 3. Válassza ki a **Tárgyi eszközök fogadása** lehetőséget.
 4. A **Fogadott** mezőben adja meg a dátumot és az időpontot. Majd kattintson az **OK** lehetőségre. A rekord eltűnik a **Bejövő eszközök** listaoldalról.
@@ -57,14 +57,14 @@ Az Eszközök kezelése beállítása határozza meg, hogy használhatók-e bej�
 
 A karbantartási vagy javítási feladat befejezése után regisztrálhatja az eszközt visszaküldöttként.
 
-1. Válassza az **Eszközök kezelése** \> **Közös** \> **Karbantartási kérések** \> **Aktív karbantartási kérések** elemet.
+1. Válassza ki **az Eszközkezelés** \> **karbantartása kérések aktív** \> **karbantartási kérését**.
 2. Válassza ki a karbantartási kérést.
 3. Válassza a **Karbantartási kérés állapotának frissítése** lehetőséget.
 4. Válassza a **Kimenő** (vagy a kimenő eszközökhöz létrehozott másik életciklus-állapotot), majd az **OK** lehetőséget.
 
 ## <a name="register-outbound-assets-as-delivered"></a>Kimenő eszközök regisztrálása átadottként
 
-1. Válassza az **Eszközök kezelése** \> **Közös** \> **Bejövő / kimenő** \> **Kimenő eszközök** lehetőséget.
+1. Válassza ki **az Eszközkezelés** \> **kimenő/bejövő** \> **tárgyi eszközöket.**
 2. Válassza ki az eszközt vagy a karbantartási kérést.
 3. Válassza ki az **Eszközök kézbesítése** lehetőséget.
 4. A **Kézbesítve** mezőben adja meg a dátumot és az időpontot. Majd kattintson az **OK** lehetőségre. A rekord eltűnik a **Kimenő eszközök** listaoldalról.

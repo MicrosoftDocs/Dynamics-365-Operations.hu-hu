@@ -2,30 +2,25 @@
 title: Cím hozzáadása szolgáltatási rendeléshez
 description: Ez a témakör azt ismerteti, hogyan lehet vevői címet hozzáadni egy szervizrendeléshez.
 author: sorenva
-ms.date: 05/02/2018
+ms.date: 06/15/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce58ff7bbb491fd2d250b8986d02fca04bd5fad1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: c485c50bab7c2e945aa0f0fc0601008dcebd3328
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844735"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015725"
 ---
-# <a name="add-an-address-to-a-service-order"></a>Cím hozzáadása szolgáltatási rendeléshez    
+# <a name="add-an-address-to-a-service-order"></a>Cím hozzáadása szolgáltatási rendeléshez
 
 [!include [banner](../includes/banner.md)]
-
 
 Ez a témakör azt ismerteti, hogyan lehet vevői címet hozzáadni egy szervizrendeléshez. A szervizrendelések létrehozásakor abból a projektből veszi át a program a címadatokat, amelyhez a szervizrendelés csatolva van. Azonban kiválaszthat egy másodlagos helyet azon címek közül, amelyek már szerepelnek a Microsoft Dynamics AX rendszerben vevők, szállítók, helyek, raktár, szolgáltatási rendelések és projektek esetén.
 
@@ -35,43 +30,36 @@ Létre is hozhat új címeket. Alapértelmezés szerint az új cím átkerül a 
 
 Egy cím hozzáadásához a szervizrendeléshez, tegye a következőket:
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1. Ugrás a Szolgáltatáskezelés **szervizrendelések** \> **szervizrendeléséhez** \> **·**
 
-2.  Nyissa meg azt a szervizrendelést, amelyhez címet szeretne létrehozni.
+1. Nyissa meg azt a szervizrendelést, amelyhez címet szeretne létrehozni.
 
-3.  Kattintson a **Műveleti ablaktáblában** lévő **Szerkesztés** lehetőségre, majd válassza a **Fejlécnézet** lehetőséget.
+1. Nyissa meg a **Fejléc** lapot.
 
-4.  A **Cím** gyorslapon kattintson a **Cím hozzáadása** lehetőségre.
+1. Bontsa ki **a** Cím gyorstáblát, majd válassza a Cím **hozzáadása** gombra a Gyorspult eszköztáron.
 
-5.  Az **Új cím** képernyőn adjon meg egy egyedi nevet a cím számára, majd töltse ki a többi mezőt. 
-    
+1. Adja meg **a cím egyedi** nevét az Új cím párbeszédpanelen, és töltse ki a többi mezőt. 
 
     > [!WARNING]
-    > <P>Ha egy létező cím nevével megegyező nevet ad meg, akkor a többi mezőbe beírt adatok felülírják a már meglévő címhez tartozó adatokat.</P>
+    > Ha egy létező cím nevével megegyező nevet ad meg, akkor a többi mezőbe beírt adatok felülírják a már meglévő címhez tartozó adatokat.
 
-
-6.  Kattintson az **OK** gombra az új címnek a szervizrendeléshez másolásához.
+1. Az **új cím szervizrendelésbe való másolása az OK** gombra való másoláshoz.
 
 ## <a name="specify-an-alternative-address-on-a-service-order"></a>Másodlagos cím megadása egy szervizrendelésen
 
 Egy másodlagos cím hozzáadásához a szervizrendeléshez, tegye a következőket:
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1. Ugrás a Szolgáltatáskezelés **szervizrendelések** \> **szervizrendeléséhez** \> **·**
 
-2.  Nyissa meg azt a szervizrendelést, amelyhez másodlagos címet szeretne megadni.
+1. Nyissa meg azt a szervizrendelést, amelyhez másodlagos címet szeretne megadni.
 
-3.  Kattintson a **Műveleti ablaktáblában** lévő **Szerkesztés** lehetőségre, majd válassza a **Fejlécnézet** lehetőséget.
+1. Nyissa meg a **Fejléc** lapot.
 
-4.  A **Cím** gyorslapon kattintson az **Egyéb cím** lehetőségre.
+1. Bontsa ki **a** Cím gyorstáblát, majd válassza az **Eszköztár** Egyéb címét.
 
-5.  A **Cím kiválasztása** űrlapon, a **Bejegyzéstípus** mezőben válassza ki a **Szervizrendelések** lehetőséget.
+1. A Címválasztás **párbeszédpanelen** válassza **ki** a Szervizrendeléseket a lap fölötti legördülő listából.
 
-6.  Válasszon ki egy címet, majd kattintson az **OK** gombra a szervizrendeléshez való másoláshoz.
-
-
-  
-
-
+1. Válasszon ki egy címet, majd a **szervizrendelésbe való másoláshoz kattintson az OK** gombra.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4d0bf82dc0dfe12991b4a48fd68a029a2ff2f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 2d4385fdd3e94d48a65baf195efa1d687fbf95c3
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887602"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016768"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Karbantartási feladatok típusai, kategóriái és változatai, karbantartási szakmák és ellenőrzőlisták
 
@@ -243,7 +243,7 @@ Beállíthat egy kötegelt feladatot úgy, hogy rendszeres időközönként fris
 
 Miután létrehozta a szükséges karbantartási feladattípus alapértelmezések kombinációit a **Minden eszköz** lapon áttekintést kaphat az aktuális karbantartási feladattípus alapértelmezésről, amely egy adott eszközhöz kapcsolódik. Az áttekintés megmutatja az összes olyan karbantartási feladattípus alapértelmezéskombinációt, amely az eszközhöz kiválasztott eszköztípushoz használható. Ezek a kombinációk olyan kombinációkat tartalmaznak, amelyekben rendelkeznek karbantartási feladattípus változatokkal és a karbantartási feladattípus szakmákkal.
 
-1. Válassza ki az **Eszközkezelés** \> **Általános** \> **Eszközök** \> **Összes eszköz** vagy **Aktív eszközök** lehetőséget.
+1. Válassza ki **az Eszközkezelés** \> **– Összes** \> **eszköz vagy az** **Aktív eszközök lehetőséget.**
 2. A listában válassza ki azt az eszközt, amelyhez karbantartásifeladattípus-kombinációk áttekintéséét meg szeretné jeleníteni.
 3. A Művelet ablaktábla **Általános** lapjának **Kapcsolódó információk** csoportjában válassza a **Karbantartási feladattípusok** elemet.
 

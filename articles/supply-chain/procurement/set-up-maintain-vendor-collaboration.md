@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 19fafb21e879d7436678bdb3c29d1a3d7e2330d7
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890828"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023760"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Szállítói együttműködés beállítása és karbantartása
 
@@ -29,9 +29,6 @@ ms.locfileid: "8890828"
 A szállítói együttműködési felület a beszerzési rendelésekkel, a számlákkal és a külső szállító felhasználóknak szánt bizományos készlettel kapcsolatos korlátozott információkat jelenít meg. Ezen a felületen a szállítók válaszolhatnak ajánlatkérésekre (RFQ-k) is, és megtekinthetik és szerkeszthetik az alapvető vállalati adatokat.
 
 Ez a cikk bemutatja, hogyan lehet beállítani a szállítók együttműködési funkcióját Dynamics 365 Supply Chain Management. Bemutatja azt is, hogyan munkafolyamatot beállítani új szállítói együttműködési felhasználók létesítéséhez, és hogyan lehet kezelni ezeknek a felhasználóknak a biztonsági szerepköreit.
-
-> [!NOTE]
-> A szállítói együttműködési biztonsági szerepkörök beállításával kapcsolatos információk csak a Pénzügy és műveletek aktuális verziójára vonatkoznak. A Microsoft Dynamics AX 7.0 (2016. február) és a Microsoft Dynamics AX 7.0.1 (2016. május) alkalmazásverziókban a **Szállítói portál** modul segítségével működhet együtt a szállítókkal. A szállítói portál felhasználói engedélyekkel kapcsolatos tudnivalókat a Microsoft Dynamics AX alkalmazásban lásd a [Szállítói portál felhasználói biztonsága](configure-security-vendor-portal-users.md) részben.
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Szállítói együttműködés beállítása biztonsági szerepkörökhöz
 
@@ -118,7 +115,7 @@ Az elágazás beállításához hozzon létre egy új **Felhasználói kérelem 
 2. Rendeljen feladatot ahhoz a személyhez, aki felelős új Microsoft Azure Active Directory (Azure AD) felhasználói fiókok kérelmezéséért az Azure portálon. A lépéshez használja az Előre meghatározott **Azure B2B felhasználói meghívó küldése** feladatot. A B2B felhasználók automatikusan exportálhatók az Azure AD-be. Használja az előre meghatározott **Azure AD B2B felhasználó létrehozása** feladatot. További információ: [B2B-felhasználók exportálása az Azure AD-be](../../fin-ops-core/dev-itpro/sysadmin/implement-b2b.md).
 3. Rendeljen hozzá egy jóváhagyási feladatot ahhoz a személyhez, aki feltölt az Azure szolgáltatásba. Ha egy fiók létrehozása nem sikerült, ez a személy elutasítja a feladatot, és lezárja a munkafolyamatot. Ez a jóváhagyási feladat kihagyható, ha van olyan lépése, amely automatikusan exportálja az új felhasználói fiókokat az Azure szolgáltatásba a B2B alkalmazásprogramozási felület (API) segítségével.
 4. Automatizált feladat hozzáadása, amely egy új felhasználót hoz létre. A lépéshez használja az előre meghatározott **Felhasználói automatizált létrehozása** feladatot.
-5. Új feladat hozzáadása, amely az új felhasználót értesíti. Lehet, hogy üdvözlő e-mailt szeretne küldeni az új felhasználónak, amely tartalmazza a Supply Chain Management URL-címét. Ez az e-mail egy sablont használhat, amely az **E-mail üzenetek** lapon hozható létre, majd ki lehet választani a **Felhasználói munkafolyamat paraméterei** oldalon. A sablon tartalmazhatja a **%portalURL%** címkét. Az üdvözlő e-mail generálása során ezt a címkét lecseréli a Supply Chain Management bérlőjének URL-címére.
+5. Új feladat hozzáadása, amely az új felhasználót értesíti. Lehet, hogy üdvözlő e-mailt szeretne küldeni az új felhasználónak, amely tartalmazza a Supply Chain Management URL-címét. Ez az e-mail egy sablont használhat, amely az **E-mail üzenetek** lapon hozható létre, majd ki lehet választani a **Felhasználói munkafolyamat paraméterei** oldalon. A sablon tartalmazhatja a **%portalURL%** címkét. Az üdvözlő e-mail generálása során ezt a címkét lecseréli az Ellátásilánc-kezelés bérlőjének URL-címe.
 
     > [!NOTE]
     > Ez a munkafolyamat több olyan helyzetben is használható, amelyek érintik a felhasználó beléptetését. Például akkor használható, amikor a potenciális szállítóknak vagy kapcsolattartóknak szállítói együttműködési fiókra van szükségük. Emiatt az e-mailt általános, többféle célra használható általános kifejezésként kell megfogalmazni.
@@ -138,13 +135,7 @@ Hozzon létre egy munkafolyamatot a **Felhasználói kérelem inaktiválása mun
 
 ## <a name="enable-vendor-collaboration-for-a-specific-vendor"></a>Szállítói együttműködési lehetőségek engedélyezése egy adott szállítóhoz
 
-Mielőtt létrehozna egy felhasználói fiókot valaki számára, aki a szállítói együttműködést fogja használni, be kell állítania a szállítót, hogy lehetővé váljon a szállítói együttműködés használata. Használja az **Együttműködés aktiválása** mezőt az **Általános** lapon, a **Szállítók** oldalon. Ehhez a következő lehetőségek állnak rendelkezésre:
-
-- **Aktív (beszerzési rendelés automatikus megerősítése)**– A rendszer automatikusan megerősíti a beszerzési rendeléseket, ha a szállító módosítások kérése nélkül fogadja el azokat.
-- **Aktív (beszerzési rendelés nincs automatikusan megerősítve)**– A beszerzési rendeléseket szervezetének manuálisan kell jóváhagynia, miután a szállító elfogadta őket.
-
-> [!NOTE]
-> Ezt a feladatot a vállalat beszerzési szakemberei is elvégezhetik.
+Mielőtt létrehozna egy felhasználói fiókot valaki számára, aki a szállítói együttműködést fogja használni, be kell állítania a szállítót, hogy lehetővé váljon a szállítói együttműködés használata. Ennek a funkciónak a részleteit a [Szállítói együttműködés külső szállítóval csoportban olvashatja](vendor-collaboration-work-external-vendors.md).
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>Új szállítói együttműködési felhasználók létesítésével kapcsolatos hibák elhárítása
 

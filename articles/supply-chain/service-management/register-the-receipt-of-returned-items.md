@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4ff01a8c4ed5fb8372ff7b498d0febdcd2f1e89
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f4942e455350844ac5614e70fef21b37461540a6
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672766"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017289"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>A visszaadott cikkek bevételezésének rögzítése 
 
@@ -87,7 +87,7 @@ A visszáruk a **Beérkezés áttekintése** képernyő használatával azonosí
 
 A **Beérkezés áttekintése** képernyő helyett másik lehetőségként a **Regisztráció** képernyő is használható a visszaküldött cikkek beérkezésének nyilvántartásba vételére.
 
-1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés**. Hozzon létre új visszárurendelést, vagy nyissa meg a listáról a visszárurendelést. Válassza ki a visszárurendelés-sort a **Sorok** gyorslapon. Kattintson a **Sor frissítése** gombra, majd kattintson a **Regisztráció** elemre.
+1.  Kattintson az **Értékesítés és marketing parancsra** \> **, ha minden visszárurendelést** \> **visszahoz**. Hozzon létre új visszárurendelést, vagy nyissa meg a listáról a visszárurendelést. Válassza ki a visszárurendelés-sort a **Sorok** gyorslapon. Kattintson a **Sor frissítése** gombra, majd kattintson a **Regisztráció** elemre.
 
 2.  Rendeljen hozzá intézkedési kódot az **Intézkedéskód** mezőben, majd kattintson az **OK** gombra.
     

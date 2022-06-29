@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e09419f802b696179901c394b2b95c9208a12b26
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8f0469d7a3ada0dc30977978a7e9c616e8cf9781
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678290"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017405"
 ---
 # <a name="cancel-a-return-order"></a>Visszárurendelés visszavonása 
 
@@ -34,11 +34,11 @@ Ha egy tervezett visszaküldés rekordját menteni szeretné, akkor a visszárur
 > <P>Csak a <STRONG>Létrehozva</STRONG> állapotú visszárurendelések vonhatók vissza. A <STRONG>Nyitott</STRONG> és <STRONG>Lezárva</STRONG> állapotú visszárurendelések nem vonhatók vissza.</P>
 
 
-1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés**.
+1.  Kattintson az **Értékesítés és marketing parancsra** \> **, ha minden visszárurendelést** \> **visszahoz**.
     
     – vagy –
     
-    Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **Létrehozott visszárurendelések**.
+    Kattintson az **Értékesítés és marketing** \> **marketing parancsra a Létrehozott** \> **visszárurendelések hivatkozásra**.
 
 2.  Válassza ki az érvényteleníteni kívánt visszárurendelést.
 

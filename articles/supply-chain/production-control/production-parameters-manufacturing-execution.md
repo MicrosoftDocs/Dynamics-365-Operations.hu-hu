@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873666"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016159"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Termelési paraméterek a Gyártásvégrehajtásban
 
@@ -63,7 +63,7 @@ A **Termelési paraméterek** lapon az automatikus Anyagjegyzék-felhasználás 
 
 Minden szakaszban az **Automatikus anyagjegyzék-felhasználás** mezőben a termelési rendelés cikkeinek három kitárolási módja közül választhat:
 
-- **Ürítési elv** – Ez a lehetőség a **Termelés** modul anyagjegyzékéhez meghatározott lehetőséggel együtt használatos. Kattintson a következő lehetőségre: **Gyártásvezérlés** &gt; **Közös** &gt; **Termelési rendelések** &gt; **Minden termelési rendelés**. A **Minden termelési rendelés** lapon kiválaszthat egy termelési rendelést a listában, majd a műveleti ablaktáblán kattintson az **Anyagjegyzék** lehetőségre. Az **Anyagjegyzék** lapon a **Beállítási** lap **Ürítési elv** mezőjében válasszon egyet a következő lehetőségek közül:
+- **Ürítési elv** – Ez a lehetőség a **Termelés** modul anyagjegyzékéhez meghatározott lehetőséggel együtt használatos. Kattintson a **Gyártásvezérlés termelési** &gt; **rendelések –** &gt; **Minden termelési rendelés elemre**. A **Minden termelési rendelés** lapon kiválaszthat egy termelési rendelést a listában, majd a műveleti ablaktáblán kattintson az **Anyagjegyzék** lehetőségre. Az **Anyagjegyzék** lapon a **Beállítási** lap **Ürítési elv** mezőjében válasszon egyet a következő lehetőségek közül:
 
   - **Indítás**
   - **Befejezés**

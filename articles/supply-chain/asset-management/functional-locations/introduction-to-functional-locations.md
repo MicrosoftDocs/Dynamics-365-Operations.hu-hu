@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: a94b366dc725db3af01c156ae517a241213f7d52
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882837"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016043"
 ---
 # <a name="introduction-to-functional-locations"></a>A munkavégzési helyszínek bemutatása
 
@@ -59,7 +59,7 @@ A munkavégzési helyszínek hierarchiájának kialakítása után az eszközök
 
 ## <a name="all-functional-locations"></a>Összes munkavégzési helyszín
 
-Válassza az **Eszközök kezelése** \> **Közös** \> **Munkavégzési helyszínek** \> **Összes munkavégzési helyszín** lehetőséget az **Összes munkavégzési helyszín** listaoldal megnyitásához. Ezen az oldalon az össze munkavégzési helyszín, bizonyos rájuk vonatkozó információk láthatók. Ha csak az aktív munkavégzési helyszíneket szeretné megtekinteni, válassza az **Aktív munkavégzési helyszínek** lehetőséget. Ha csak azokat a munkavégzési helyszíneket szeretné megtekinteni, amelyekkel Önt dolgozóként kapcsolták össze, válassza a **Saját aktív munkavégzési helyszínek** lehetőséget. (Ez a kapcsolat a **Dolgozók** oldalon állítható be. További információ: [Karbantartási dolgozók és dolgozói csoportok](../setup-for-objects/workers-and-worker-groups.md).)
+Válassza ki **az Eszközkezelés** \> **működési helyei** \> **minden funkcionális helyet,** hogy megnyíljön az Összes **funkcionális hely** listaoldal. Ezen az oldalon az össze munkavégzési helyszín, bizonyos rájuk vonatkozó információk láthatók. Ha csak az aktív munkavégzési helyszíneket szeretné megtekinteni, válassza az **Aktív munkavégzési helyszínek** lehetőséget. Ha csak azokat a munkavégzési helyszíneket szeretné megtekinteni, amelyekkel Önt dolgozóként kapcsolták össze, válassza a **Saját aktív munkavégzési helyszínek** lehetőséget. (Ez a kapcsolat a **Dolgozók** oldalon állítható be. További információ: [Karbantartási dolgozók és dolgozói csoportok](../setup-for-objects/workers-and-worker-groups.md).)
 
 A kiválasztott rekord részleteinek megtekintéséhez az **Összes munkavégzési helyszín** listaoldalon válasszon ki egy hivatkozást **Munkavégzési helyszín** oszlopban. A munkavégzési helyszín szerkesztéséhez kattintson a **Szerkesztés** gombra. A részletes nézetben a hellyel kapcsolatos részletes adatok láthatók. Ezenkívül a jobb oldalon elérhető a **Kapcsolódó információ** ablaktábla. Ezen az ablaktáblán a munkavégzési helyszín hierarchiája látható. A **Kapcsolódó információ** ablaktábla kinyitható és összecsukható.
 

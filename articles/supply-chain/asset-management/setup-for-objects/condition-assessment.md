@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa326a01bb63bd0b59c0df7a3c751a5242a3dd37
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: HT
+ms.openlocfilehash: c43424a0955d7a046186e8a4120c050990df6060
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872094"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015056"
 ---
 # <a name="condition-assessment"></a>Feltétel értékelése
 
@@ -47,7 +47,7 @@ Az állapotfelmérés eszközökre vonatkozóan készül. Állapotfelmérési el
 
 ## <a name="create-condition-assessment-registration-on-an-asset"></a>Állapotfelmérés regisztrációjának létrehozása egy eszközhöz
 
-1. Válassza ki az **Eszközkezelés** > **Általános** > **Eszközök** > **Összes eszköz** lehetőséget.
+1. Válassza ki **az Eszközkezelés** > **– Összes** > **eszköz lehetőséget**.
 2. A listáról válassza ki azt az eszközt, amelyhez állapotfelmérés-regisztrációt szeretne létrehozni.
 3. Az **Általános** lapon kattintson az **Állapotfelmérés** gombra.
 4. Új regisztráció létrehozásához kattintson az **Új** elemre.
@@ -62,7 +62,7 @@ Az állapotfelmérés eszközökre vonatkozóan készül. Állapotfelmérési el
 Ha egy eszközhöz állapotfelmérés-regisztrációt végzett, kinyomtathat egy állapotértékelő jelentést.
 
 >[!NOTE]
->Az állapotfelmérést regisztrálhatja egy munkarendelésen is (**Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** > **Állapotfelmérések** gomb.)
+>A munkarendelések állapotértékelését is regisztrálhatja (**Eszközkezelési** > **·** > **munkarendelések – Minden munkarendelés** > **feltételének értékelési** gombja.)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
