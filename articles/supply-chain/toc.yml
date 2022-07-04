@@ -18,8 +18,6 @@
                   href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (2022. május)
                   href: get-started/whats-new-scm-10-0-26.md
-                - name: Supply Chain Management 10.0.25 (2022. április)
-                  href: get-started/whats-new-scm-10-0-25.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók – kezdőlap
@@ -619,8 +617,6 @@
                   href: asset-management/asset-management-mobile-workspace.md
             - name: Eszközkezelés integrálása a Dynamics 365 Guides szolgáltatással
               href: asset-management/asset-management-guides-integration.md
-        - name: Adatkezelés
-          items:
             - name: Célentitások
               href: asset-management/data-management/target-entities.md
         - name: Költségkönyvelés
@@ -775,6 +771,10 @@
                   href: cost-management/physical-financial-updates.md
                 - name: Tényleges értékkel együtt
                   href: cost-management/include-physical-value.md
+                - name: Rögzített bevételezési ár
+                  href: cost-management/fixed-receipt-price.md
+                - name: Feladás költségszámlára könyvelési elv
+                  href: cost-management/post-to-charge-account-accounting-principle.md
                 - name: Költségobjektumok
                   href: cost-management/cost-object.md
                 - name: Költségobjektum egyenlegének megtekintése
@@ -1651,6 +1651,8 @@
                   href: inventory/tasks/check-availability-stock.md
                 - name: Aktuális készlet listája
                   href: inventory/inventory-on-hand-list.md
+                - name: Készlettranzakció részletei
+                  href: inventory/inventory-transactions-details.md
                 - name: Készletszintek inicializálása a raktárban
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Tényleges készlet áthelyezése a raktáron belül
@@ -2107,10 +2109,12 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/supply-chain/toc.json
             - name: E-mail konfigurálása és küldése
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Dátum/időadatok és időzónák
+            - name: Dátum-/időadatok és időzónák
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
         - name: Beszerzés és forrás
           items:
+            - name: Beszerzés és forrás kezdőlap
+              href: procurement/procurement-sourcing.md
             - name: A Beszerzés és forrás modul áttekintése
               href: procurement/procurement-sourcing-overview.md
             - name: Beszerzésekkel és forrásokkal kapcsolatos munkafolyamat
@@ -2167,6 +2171,8 @@
                   href: procurement/purchase-order-creation.md
                 - name: Beszerzési rendelés létrehozása
                   href: procurement/tasks/create-purchase-order.md
+                - name: Költségvetés által irányított beszerzési rendelés létrehozása
+                  href: cost-management/tasks/create-purchase-order-governed-by-budget.md
                 - name: Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: Beszerzési rendelés létrehozása egyszeri szállítóhoz
@@ -2383,6 +2389,8 @@
                       href: pim/tasks/create-dimension-based-configurations.md
                 - name: Megszorításon alapuló konfiguráció létrehozása
                   items:
+                    - name: Termékkonfigurációs modellek áttekintése
+                      href: pim/product-configuration-models.md
                     - name: Termékkonfigurációs modell beállítása
                       href: pim/set-up-maintain-product-configuration-model.md
                     - name: Termékkonfigurációs modell számításai
@@ -2933,6 +2941,8 @@
                   href: sales-marketing/customer-portal-user-admin.md
                 - name: Ügyfélportál testre szabása és használata
                   href: sales-marketing/customer-portal-customize.md
+            - name: Hitelkeretetek ügyfeleknek
+              href: sales-marketing/credit-limits-customers.md
             - name: Promóciós engedmény
               href: sales-marketing/trade-allowance.md
             - name: Új kereskedelmi szerződés létrehozása
@@ -2951,6 +2961,8 @@
                       href: service-management/service-agreement-groups.md
                     - name: Szolgáltatási szerződések létrehozása
                       href: service-management/create-service-agreements.md
+                    - name: Szolgáltatásiszerződés-csoportok létrehozása
+                      href: service-management/create-service-agreement-groups.md
                     - name: Szolgáltatás intervallumai
                       href: service-management/service-intervals.md
                     - name: Szolgáltatás intervallumainak beállítása
@@ -2972,7 +2984,7 @@
                     - name: Szolgáltatási tárgyak áttekintése
                       href: service-management/service-objects.md
                     - name: Szolgáltatási objektumok létrehozása
-                      href: service-management/create-service-task-relations.md
+                      href: service-management/create-service-objects.md
                     - name: Készletcikkek hozzárendelése a szolgáltatás tárgyához
                       href: service-management/attach-inventory-items-service-objects.md
                     - name: A szolgáltatás tárgyainak csoportjai
@@ -3117,9 +3129,11 @@
                           href: service-management/create-item-requirements-service-orders.md
                         - name: Szervizrendelés cikkszükségletei
                           href: service-management/service-order-item-requirements.md
+                        - name: Cím hozzáadása szolgáltatási rendeléshez
+                          href: service-management/add-address-service-order.md
                         - name: Előfizetési munkafolyamat áttekintése
                           href: service-management/subscription-workflow-overview.md
-                        - name: Szolgáltatásrendelések kombinálása
+                        - name: Szervizrendelések kombinálása
                           href: service-management/combine-service-orders.md
                         - name: Szolgáltatási előfizetés létrehozása előfizetési csoportból
                           href: service-management/create-service-subscriptions-from-subscription-group.md
@@ -3137,11 +3151,13 @@
                           href: service-management/set-up-service-activity-types.md
                         - name: Preferált technikus beállítása
                           href: service-management/set-up-preferred-technician.md
-                        - name: Kiszálló csoportok beállítása
+                        - name: Kiszálló csapatok beállítása
                           href: service-management/set-up-dispatch-teams.md
+                        - name: Kiszálló csapatok megjelenítése
+                          href: service-management/view-dispatch-teams.md
                         - name: Szervizrendelések prioritásának megállapítása
                           href: service-management/prioritize-service-orders.md
-                        - name: A szervizrendeléssor állapotának megtekintése
+                        - name: A szervizrendelések állapotának megtekintése
                           href: service-management/view-the-status-of-service-orders.md
                         - name: Szolgáltatási tevékenységek figyelése
                           href: service-management/monitor-service-activities.md
@@ -3257,8 +3273,6 @@
                   href: landed-cost/landed-cost-enable.md
                 - name: Partraszállási költség paraméterei
                   href: landed-cost/landed-cost-parameters.md
-                - name: A partraszállási költség beszerzési és erőforrásszerzési paraméterei
-                  href: landed-cost/landed-cost-procurement-parameters.md
                 - name: Utazási állapot beállítása
                   href: landed-cost/voyage-status-setup.md
                 - name: Konténer beállítása
@@ -3269,12 +3283,16 @@
                   href: landed-cost/multi-leg-journey-setup.md
                 - name: Szállítási adatok beállítása
                   href: landed-cost/shipping-information-setup.md
+                - name: Automatikus költségek beállítása
+                  href: landed-cost/auto-cost-setup.md
                 - name: Költségszámítási paraméterértékek beállítása
                   href: landed-cost/costing-parameters-setup.md
+                - name: A partraszállási költség beszerzési és erőforrásszerzési paraméterei
+                  href: landed-cost/landed-cost-procurement-parameters.md
+                - name: A partraszállási költséghez hozzáadott szállítói beállítások
+                  href: landed-cost/vendors-landed-cost-settings.md
                 - name: A főkönyv alapértelmezett leírásai
                   href: landed-cost/defult-descriptions.md
-            - name: A partraszállási költséghez hozzáadott szállítói beállítások
-              href: landed-cost/vendors-landed-cost-settings.md
             - name: 'Utazások, tárolók és ívek használata'
               items:
                 - name: Utazások kezelése
@@ -3643,396 +3661,6 @@
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
             - name: Készleten lévő tényleges adatentitások kiterjesztése
               href: inventory/extend-on-hand-entities.md
-        - name: Hibaelhárítás
-          items:
-            - name: Költségkezelés
-              items:
-                - name: Készletkorosítási jelentés eltérései
-                  href: troubleshooting/costing/aging-report-discrepancies.md
-                - name: Figyelmeztetések vagy hibák a főkönyvi időszak állapotának készletzárás nélküli módosításával kapcsolatban
-                  href: troubleshooting/costing/change-ledger-period-without-closing.md
-                - name: A készletérték/korosítási jelentések és a tárolási verzióik közötti működési hézagok
-                  href: troubleshooting/costing/function-gaps-storage-reports.md
-                - name: 'Frissítési ütközés történik, ha a készletellenőrző módszer a standard ár vagy mozgóátlag'
-                  href: troubleshooting/costing/update-conflict-standard-moving.md
-                - name: Mezőbeállítások hiányoznak a cikkmodellcsoportok másik jogi személybe történő másolása során
-                  href: troubleshooting/costing/copying-item-model-groups.md
-                - name: A Közvetett költségek a folyamatban jelentésben törölt termelési rendelések szerepelnek
-                  href: troubleshooting/costing/indirect-costs-in-pr.md
-                - name: Nulla összegű beszerzési elhatárolás lett feladva nulla értékű termékbevételezéshez
-                  href: troubleshooting/costing/posting-to-purchase.md
-                - name: A ténylegesen bevételezett beszerzési rendelések nem jelennek meg a készletzárási jelentésben
-                  href: troubleshooting/costing/purchase-orders-rece.md
-                - name: Nem található Kezdő dátum a Cikkár oldal Aktív árak lapján
-                  href: troubleshooting/costing/there-is-no-from-dat.md
-            - name: Készletgazdálkodás
-              items:
-                - name: Nem található a "Munkafolyamat" legördülő párbeszédpanel a készletnaplókhoz.
-                  href: troubleshooting/inventory/cant-find-workflow-dropdown.md
-                - name: 'A készletnapló munkafolyamata soha nem fejeződik be, és a napló nem dolgozható fel.'
-                  href: troubleshooting/inventory/cant-post-inventory-journal.md
-                - name: 'A készletnaplója zárolva van, és a munkafolyamat kötegelt feladata nem működik.'
-                  href: troubleshooting/inventory/inventory-journal-locked-workflow.md
-                - name: Az egység- és egységmennyiség nem működnek megfelelően a készletnaplóban.
-                  href: troubleshooting/inventory/journal-unit-quantity-incorrect.md
-                - name: 'A készletnapló munkafolyamat-feltételei naplószinten érvényesek, nem sorszinten.'
-                  href: troubleshooting/inventory/journal-workflow-conditions.md
-                - name: Az Aktuális készlet listaoldal szűrőablaka nem a vártnak megfelelően működik.
-                  href: troubleshooting/inventory/on-hand-filter-unexpected.md
-                - name: A készlet tartó egységben legfeljebb 0 tizedesjegy lehet.
-                  href: troubleshooting/inventory/sku-max-decimals-zero.md
-                - name: Több készlettranzakció egyes kötegszámokhoz „Tényleges frissítés esetén” nélkül
-                  href: troubleshooting/inventory/multiple-inventory-t.md
-                - name: Jelentés készként való visszavonása váratlan nyitott tranzakciót okoz
-                  href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: A kitárolási lista jelentése nem mutatja a naplóhoz csatolt új jegyzeteket
-                  href: troubleshooting/inventory/unable-to-print-the.md
-                - name: 'Az elindított karanténrendelésen lévő mennyiség nem frissül, ha a rendelés fel van osztva'
-                  href: troubleshooting/inventory/quantity-on-a-start.md
-                - name: Az Utolsó tesztelés dátuma mező nem frissül több minőségi rendelés létrehozásakor
-                  href: troubleshooting/inventory/the-field-last-test.md
-                - name: Ténylegessúly-mennyiség felosztása során a nominális mennyiség helyett a minimumot használják
-                  href: troubleshooting/inventory/while-splitting-the.md
-            - name: Alaptervezés
-              items:
-                - name: 'Ha több rendelést kezel, a rendszer nem talál egy tervezett rendelést'
-                  href: troubleshooting/planning/planned-order-not-exist.md
-                - name: Az anyagjegyzék alábontása másképpen viselkedik a megerősített és a becsült termelési rendeléseknél
-                  href: troubleshooting/planning/bom-explosion-works-differently.md
-                - name: 'A késleltetés érték nem frissül, amikor átütemez egy tervezett rendelést'
-                  href: troubleshooting/planning/delay-value-not-updated.md
-                - name: A tervezett rendelések frissítése hosszú időt vesz igénybe
-                  href: troubleshooting/planning/planned-order-long-update.md
-                - name: A tervezett rendelések a termelési rendelésekkel együtt létrehozott készleten vannak.
-                  href: troubleshooting/planning/planned-orders-in-stock-items.md
-                - name: A termelésütemezés nem veszi figyelembe a biztonsági időtartalékokat.
-                  href: troubleshooting/planning/prod-schedule-safety-margins.md
-                - name: 'Az alaptervezés nagyobb ütemezést tervez, mint a rendelkezésre álló kapacitás.'
-                  href: troubleshooting/planning/respect-capacity-limitations.md
-                - name: Nem található elegendő kapacitás.
-                  href: troubleshooting/planning/not-enough-capacity-error.md
-                - name: Hiba jelenik meg a beépített alaptervezési motor futtatásakor
-                  href: troubleshooting/planning/deprecated-master-planning-error.md
-                - name: A cikkhez nem tartozhat anyagjegyzék vagy képlet
-                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
-                - name: Az alapterv paraméterei nem léteznek
-                  href: troubleshooting/planning/no-parameters-for-master-plan.md
-                - name: A tervezett termelési rendelést megerősítés előtt ütemezni kell
-                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
-                - name: A terméket várakoztatják tranzakciók esetén
-                  href: troubleshooting/planning/product-is-on-hold.md
-                - name: A választott receptúraszám nincs jóváhagyva kötegrendeléshez.
-                  href: troubleshooting/planning/selected-formula-not-approved.md
-                - name: A szállítókód nincs engedélyezve egy adott termékhez és dátumhoz
-                  href: troubleshooting/planning/vendor-code-not-authorized.md
-                - name: A tervezett rendelések megerősítésénél nincs megadva szállító
-                  href: troubleshooting/planning/vendor-not-specified.md
-                - name: 'A közvetlenül származtatott, megerősített megrendeléseket egy felülvizsgálat alatt álló munkafolyamat dolgozza fel'
-                  href: troubleshooting/planning/firmed-directly-deri.md
-                - name: Az alaptervezés cikkei nem szűrhetők a vonatkozó fedezetcsoport-értékeik szerint
-                  href: troubleshooting/planning/master-planning-batc.md
-                - name: Az alaptervezés fantomtermékekhez hoz létre tervezett rendeléseket
-                  href: troubleshooting/planning/planned-orders-are-g.md
-                - name: 'Tervezett beszerzési rendelés jön létre, amikor egy beszerzés negatív napokon belül található'
-                  href: troubleshooting/planning/planning-optimisatio.md
-                - name: Az előre jelzett egységköltség nem frissíthető az igény-előrejelzési rekordok importálása során
-                  href: troubleshooting/planning/unable-to-upload-the.md
-                - name: Nem távolítható el a raktári igény-előrejelzési dimenzió az előrejelzési sorokból
-                  href: troubleshooting/planning/warehouse-removal-fr.md
-                - name: 'Menteni kell a cikkfedezeti beállításokat akkor is, ha nem eszközölt változtatásokat'
-                  href: troubleshooting/planning/when-importing-to-th.md
-            - name: Beszerzés
-              items:
-                - name: Beszerzésirendelés-sor adateltérései
-                  href: troubleshooting/procurement/purchase-order-line-data-issues.md
-                - name: Egy vagy több könyvelési felosztás túl- vagy alulosztott
-                  href: troubleshooting/procurement/accounting-over-under-distributed.md
-                - name: Csak teljesen kiosztott sorok száma esetén lehet befejezni a beszerzési rendelési műveletet.
-                  href: troubleshooting/procurement/action-requires-full-distribution.md
-                - name: Jóváhagyott szállító esetén a hatálybalépés dátuma nem változtatható meg.
-                  href: troubleshooting/procurement/approved-vendor-effective-date.md
-                - name: A visszavont beszerzési rendelések a munkaterület vázlatlistájában jelennek meg.
-                  href: troubleshooting/procurement/canceled-po-in-draft-list.md
-                - name: A tranzakciók felfüggesztett főkönyvi számlára is feladhatóak.
-                  href: troubleshooting/procurement/canceled-receipts-posted.md
-                - name: A szállítási maradvány törlése a beszerzési rendelést Visszaigazolt állapotba mozgatja át.
-                  href: troubleshooting/procurement/change-management-canceled-remainder.md
-                - name: Egyetlen beszerzési rendelésbe nem tud több terméknyugtát egyesíteni
-                  href: troubleshooting/procurement/consolidate-multiple-receipts.md
-                - name: Az alapértelmezett adócsoport és a készpénzfizetési engedmény nem a számlaszám alapján van kitöltve.
-                  href: troubleshooting/procurement/default-tax-group-and-discount.md
-                - name: A szállítási név nincs szinkronizálva a beszerzési rendelés szállítási címének módosítása után
-                  href: troubleshooting/procurement/delivery-name-isnt-synced.md
-                - name: Kivétel történik a szállítói számla feladása közben.
-                  href: troubleshooting/procurement/invocation-target-exception.md
-                - name: Az importált beszerzési rendelések helytelen sorszámokat mutatnak.
-                  href: troubleshooting/procurement/line-number-increments.md
-                - name: A beszerzési megállapodás maximális korlátja nem érvényes egy beszerzési igénylésen.
-                  href: troubleshooting/procurement/max-limit-on-requisition.md
-                - name: '"Objektumhivatkozás nincs beállítva" hiba a beszerzési rendelés megerősítése során.'
-                  href: troubleshooting/procurement/object-reference-not-set.md
-                - name: A könyvelési felosztások túl- vagy alulosztottak.
-                  href: troubleshooting/procurement/over-under-distribution.md
-                - name: Nem adhatja hozzá az Áregység mezőt a Beszerzési megállapodás laphoz.
-                  href: troubleshooting/procurement/personalize-purchase-agreement-price.md
-                - name: A beszerzési rendelések nem tükrözik a jogi személy nyelvi beállításait.
-                  href: troubleshooting/procurement/po-language.md
-                - name: A beszerzési rendelés nyugtája nem tartalmaz minden költséget
-                  href: troubleshooting/procurement/po-receipt-missing-charges.md
-                - name: A beszerzési rendeléseken szereplő egységárak számítása nem a mértékegység-átváltás alapján történik
-                  href: troubleshooting/procurement/po-unit-prices-not-calculated.md
-                - name: A Feladás főkönyvi költségszámlára beállítás nincs bekapcsolva
-                  href: troubleshooting/procurement/post-setting-turned-off.md
-                - name: 'Hiba egy beszerzési rendelés módosítást követő, a munkafolyamatba történő ismételt elküldése során'
-                  href: troubleshooting/procurement/resubmit-po-after-change.md
-                - name: Kereskedelmi megállapodás pénznemátváltási problémái
-                  href: troubleshooting/procurement/trade-agreement-currencies.md
-                - name: A kereskedelmi megállapodás feltételei nem vonatkoznak az importált rendeléssorokra.
-                  href: troubleshooting/procurement/trade-agreement-not-applied.md
-                - name: A kereskedelmi megállapodásokat elutasított ajánlatkérésből is létre lehet hozni
-                  href: troubleshooting/procurement/trade-agreements-from-rejected-rfq.md
-                - name: A szállítói visszatérítés nem halmozódik a számlák alapján
-                  href: troubleshooting/procurement/vendor-rebate-not-cumulated.md
-                - name: 'A rendszer akkor is felhasználja a termékbevételezési bizonylatszámot, ha nem generál bizonylatot.'
-                  href: troubleshooting/procurement/voucher-number-consumed.md
-                - name: Vevő által értékesített értékesítési rendelést nem lehet számlázni
-                  href: troubleshooting/procurement/not-able-to-invoice-.md
-                - name: Nem adható hozzá sor a beszerzési igényléshez módosítás kérése után
-                  href: troubleshooting/procurement/purchase-requisition.md
-            - name: Termékinformációk kezelése
-              items:
-                - name: Kiadott terméket nem lehet törölni
-                  href: troubleshooting/products/cant-delete-released-prod.md
-                - name: A termékkonfigurációs modellek kiszámításakor az egész számok kerekítése hibás.
-                  href: troubleshooting/products/integers-incorrectly-rounded.md
-                - name: 'A cikk szövegét felülírja a rendszer, ha egy termék be van állítva egy értékesítési rendelés sorához.'
-                  href: troubleshooting/products/text-overwritten-configured-item.md
-                - name: Nem alkalmazható sablon kiadott termék létrehozásához
-                  href: troubleshooting/products/apply-template-in-re.md
-                - name: Nem importálható egy cikk a Kiadott termékek V2 entitás használatával
-                  href: troubleshooting/products/cannot-import-with-r.md
-                - name: A beszerzési rendelésben nem jelenik meg a lefordított termékszöveg
-                  href: troubleshooting/products/when-the-customer-ad.md
-            - name: Gyártásvezérlés
-              items:
-                - name: Visszavezetéses költségelszámolás számítási hiba készletzáráskor
-                  href: troubleshooting/production/backflush-costing-calculation-error.md
-                - name: Termelési rendelés nem fejezhető be Anyagjegyzék consumptionCost értékhiba miatt
-                  href: troubleshooting/production/bom-consumption-cost-error.md
-                - name: Új termelési rendelés létrehozásakor nem lehet anyagjegyzéket és útvonalat beszúrni.
-                  href: troubleshooting/production/cant-insert-bom-route-number.md
-                - name: 'Az előző folyamatban lévő feladatok befejeződnek, amikor az utolsó feladatnál részmennyiséget jelent le.'
-                  href: troubleshooting/production/in-progress-jobs-ended.md
-                - name: Termelési rendelés kiadásakor az RM cikk nem foglalható le teljesen.
-                  href: troubleshooting/production/item-rm-not-reserved.md
-                - name: 'A készként jelentés frissítése sikertelen, hiányzó mennyiség hibával'
-                  href: troubleshooting/production/missing-report-finished-quantity.md
-                - name: Hiba a Készre jelentés napló feladás a során
-                  href: troubleshooting/production/posting-report-as-.md
-                - name: Hiba a termelési rendelés készként jelentett állapotról Befejezett állapotra való módosításakor.
-                  href: troubleshooting/production/production-order-status-error.md
-                - name: A termelési rendelések nem jelennek meg a Jelölés oldalon
-                  href: troubleshooting/production/production-orders-marking-page.md
-                - name: Az erőforrásnév nem frissül a dolgozó nevének a címjegyzékben történt módosítása után.
-                  href: troubleshooting/production/resource-name-not-updated.md
-                - name: Összes jó mennyiség hiba amikor megpróbálja befejezni a termelési rendelést
-                  href: troubleshooting/production/total-good-quantity-order-error.md
-                - name: A késztermékek sorozatszámai nem követhetők a felhasznált áruk sorozatszámai alapján.
-                  href: troubleshooting/production/trace-finished-goods-consumed-goods.md
-                - name: 'Nem lehet lefoglalni vagy kiadni a munkát, mert jelenleg folyamatok vannak használatban.'
-                  href: troubleshooting/production/warehouse-management-processes-used.md
-                - name: A rendszer nem veszi figyelembe az ürítési elv beállításait a DBJ sorain
-                  href: troubleshooting/production/flushing-principle-n.md
-                - name: A kötegszám törlődik az új adagazonosító kiválasztásakor
-                  href: troubleshooting/production/when-customer-is-try.md
-                - name: A rendszer nem veszi figyelembe a késői kiválasztást a termelési rendelések kötegelt feladattal való alaphelyzetbe állításával
-                  href: troubleshooting/production/late-selection-is-no.md
-                - name: 'A felhasználók visszavonhatják olyan termékek anyagsorainak kitárolását, amelyeket készként jelöltek'
-                  href: troubleshooting/production/raw-material-lines-a.md
-                - name: Hiba a Készre jelentés napló feladás a során
-                  href: troubleshooting/production/posting-report-as-.md
-                - name: A kitárolási lista naplójában szereplő raktár nem frissül a DBJ során
-                  href: troubleshooting/production/the-warehouse-in-pic.md
-            - name: Visszatérítés-kezelés
-              items:
-                - name: Sikertelen a vevői visszatérítések összesítése cikkvisszatérítési csoportok használatával
-                  href: troubleshooting/rebates/cumulating-customer-.md
-            - name: Értékesítés és marketing
-              items:
-                - name: Értékesítésfrissítések előzményadat-tisztítási feladata sikertelen vagy teljesítményproblémákat tapasztalt
-                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
-                - name: Egy csomagolt cikk nem támogatott a vállalatközi folyamatban
-                  href: troubleshooting/sales/bundle-item-intercompany-process.md
-                - name: Nem tud érvényteleníteni egy értékesítési rendeléshez kapcsolódó vállalatközi beszerzési rendelést
-                  href: troubleshooting/sales/cancel-intercompany-purchase-order.md
-                - name: Rendelés törlésekor a foglalások nem távolíthatók el.
-                  href: troubleshooting/sales/cancel-order-reservations-not-removed.md
-                - name: 'Ha két kereskedelmi megállapodás van egymást átfedő dátumokkal, akkor a program mindig ugyanazt választja ki'
-                  href: troubleshooting/sales/same-trade-agreement-selected.md
-                - name: Az értékesítési ajánlat sorában szereplő szolgáltatási cikk értékesítési mennyisége nem változtatható
-                  href: troubleshooting/sales/service-item-sales-quantity.md
-                - name: 'Az adóinformációk nem frissülnek, ha megváltozik az értékesítési rendelés fejlécén a hely.'
-                  href: troubleshooting/sales/tax-information-not-updated.md
-                - name: A mennyiség nem csökkenthető értékesítési rendelés érvénytelenítésekor
-                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
-                - name: 'A rendszergazdák nem tudják törölni a rendelés várakoztatását, mert nem rendelkeznek megfelelő jogosultsággal'
-                  href: troubleshooting/sales/system-administrator.md
-            - name: Szállításkezelés
-              items:
-                - name: Csak egyeztetési okokból adhatja hozzá a fő számlát jóváírási számlaként
-                  href: troubleshooting/transportation/reconciliation-reaso.md
-            - name: Raktárkezelés
-              items:
-                - name: Warehouse mobile app
-                  items:
-                    - name: Váratlan különbség a kérelem- és munkamenetadatok között a tesztelés során.
-                      href: troubleshooting/warehousing/request-session-data-difference.md
-                    - name: Nem található a tanúsítvány elérési útjához tartozó megbízhatósági horgonyzás az alkalmazáskapcsolat beállításakor
-                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
-                    - name: Nem található a tanúsítvány elérési útjának megbízhatósági fixpontja a WMS-be történő frissítéskor és migráláskor
-                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
-                - name: Leállított értékesítésirendelés-sorhoz nem lehet szállítólevelvet feladni
-                  href: troubleshooting/warehousing/unable-to-post-packi.md
-                - name: Feldolgozási problémák fordulnak elő a skálázási egység szerinti raktári terhelés telepítése után
-                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
-                - name: A kötegszám automatikus foglalási kérésekor még a rendelkezésre álló készlet is megjelenik
-                  href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
-                - name: Befejezetlen feltöltési munka miatt nem oldható fel a kitárolási munka zárolása.
-                  href: troubleshooting/warehousing/blocked-unfinished-replenishment-work.md
-                - name: 'Nem tudja törölni a szállítólevelet, miután ki lett adva egy értékesítési rendelésből'
-                  href: troubleshooting/warehousing/cancel-posted-packing-slip.md
-                - name: 'Nem lehet áthelyezni az azonosítótáblát, ha a sorozatszámhoz Üres kiadás és Üres bevételezés van engedélyezve.'
-                  href: troubleshooting/warehousing/cant-move-license-plate.md
-                - name: 'Nem tudja áthelyezni a készletet olyan helyre, amely azonosítótábla-vezérelt.'
-                  href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: A fürtprofil nem található.
-                  href: troubleshooting/warehousing/cluster-profile-not-found-error.md
-                - name: A szállítólevél javítása nem feldolgozható.
-                  href: troubleshooting/warehousing/delivery-note-correction.md
-                - name: Hiba a szállítmány megerősítésekor egy sorozatgyártású cikk átszállítási rendelésének létrehozása után.
-                  href: troubleshooting/warehousing/dimension-location-left-blank.md
-                - name: A közvetlen kiszállítás nem feldolgozható a WMS engedélyezett raktár számára
-                  href: troubleshooting/warehousing/direct-delivery-wms-enabled-warehouse.md
-                - name: A készlettípusok vegyesek a kikötőkezelési profilok használatakor
-                  href: troubleshooting/warehousing/dock-management-inventory-mixing.md
-                - name: A több termékváltozat opció nem értékeli ki a több helyszínre vonatkozó irányelvi műveleteket
-                  href: troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md
-                - name: 'A kitárolási munka nem jön létre azonnal, amikor a kimenő rakomány ki van adva.'
-                  href: troubleshooting/warehousing/generate-work-immediately-load-release.md
-                - name: Érvénytelen azonosítótábla hiba az azonosítótábla azonosítójának a mobilalkalmazásban történő beolvasása közben.
-                  href: troubleshooting/warehousing/invalid-license-plate.md
-                - name: Készlettulajdonos nem engedélyezett mozgások feldolgozásakor a raktári alkalmazásban
-                  href: troubleshooting/warehousing/inventory-owner-not-allowed.md
-                - name: 'A rendszer nem tudja frissíteni a készletmennyiséget, mert nincs elég tranzakció'
-                  href: troubleshooting/warehousing/inventory-quantity-insufficient-transactions.md
-                - name: A Munkatípus oszlopban nem választható ki a készlet állapotának változása
-                  href: troubleshooting/warehousing/inventory-status-change-work-type.md
-                - name: Érvénytelen azonosítótábla vagy hely hiba a mobilalkalmazásban történő beolvasás közben
-                  href: troubleshooting/warehousing/license-plate-location-invalid.md
-                - name: Az azonosítótábla mennyisége nem érvényes bejövő rendelések regisztrálása esetén
-                  href: troubleshooting/warehousing/license-plate-quantity-not-valid.md
-                - name: Azonosítótábla meghatározási hiba átrendelési rendelés szállításának megerősítésekor
-                  href: troubleshooting/warehousing/license-plate-specified-location.md
-                - name: A sorok egyike már rakományban van.
-                  href: troubleshooting/warehousing/line-already-on-load.md
-                - name: Rakomány súly hiba és frissítés megszakítva a helyszínek közötti munka feldolgozásakor
-                  href: troubleshooting/warehousing/load-weight-positive-numbers.md
-                - name: 'A vegyes azonosítótábla-fogadás nem működik semmilyen intézkedési kódnál, csak a Jóváírásnál.'
-                  href: troubleshooting/warehousing/mixed-license-plate-receiving.md
-                - name: Csak rendszergazdai szerepkör használható a mobileszköz alkalmazás emulátor elérésére.
-                  href: troubleshooting/warehousing/mobile-app-emulator-administrator.md
-                - name: Problémák az alapszintű raktározásból a speciális raktározásba való áthelyezés során
-                  href: troubleshooting/warehousing/move-basic-to-advanced-warehousing.md
-                - name: Nincs elég munka a fürthöz rendszer által irányított fürt kitárolása esetén
-                  href: troubleshooting/warehousing/not-enough-work-for-cluster.md
-                - name: A rendelés állapota Részlegesen kiadott marad az értékesítési rendelés számlázása után is
-                  href: troubleshooting/warehousing/order-status-partially-released.md
-                - name: A Warehouse Management mobilalkalmazás nem használható részleges kitárolásra.
-                  href: troubleshooting/warehousing/partial-picking-warehouse-app.md
-                - name: Készletállapot-változás engedélyezése részleges mennyiségi munkához
-                  href: troubleshooting/warehousing/partial-quantity-inventory-status.md
-                - name: Szállítólevél vagy csomagolási tartalom nyomtatása raktár vagy hely szerint
-                  href: troubleshooting/warehousing/print-documents-by-warehouse.md
-                - name: 'A mennyiség nem érvényes, ha egy helyen több azonosítótáblával folyik kitárolási munka'
-                  href: troubleshooting/warehousing/quantity-invalid-multiple-license-plates.md
-                - name: A mennyiség több köteges osztott kitárolás végrehajtásakor nem érvényes.
-                  href: troubleshooting/warehousing/quantity-invalid-split-pick.md
-                - name: Nem adhat ki újra részlegesen kiszállított rakományt a raktárba.
-                  href: troubleshooting/warehousing/rerelease-partially-shipped-load.md
-                - name: 'A rendszer nem tud foglalni, mert az elérhető készlet 0,00'
-                  href: troubleshooting/warehousing/reservations-0-inventory-available.md
-                - name: Érvénytelen készletdimenziók miatt nem hozható létre rakománysor visszáru értékesítési rendeléshez.
-                  href: troubleshooting/warehousing/return-order-invalid-dimensions.md
-                - name: Az értékesítési rendelést nem lehetett kiadni kimenő raktári műveletekkel.
-                  href: troubleshooting/warehousing/sales-order-not-released.md
-                - name: 'A rakomány szállítása visszaigazolt, de a sorok nincsenek feladva'
-                  href: troubleshooting/warehousing/shipment-confirmed-no-posting.md
-                - name: Az időközökre bontási sablonok nem veszik figyelembe az aktuális készletet a köteg fölötti cikkekhez.
-                  href: troubleshooting/warehousing/slotting-templates-inventory-batch-above.md
-                - name: Köteg fölötti foglalási hierarchiával nem lehet részleges mennyiségre vonatkozó rakományt kiadni.
-                  href: troubleshooting/warehousing/specify-dimensions-above-location.md
-                - name: A visszaigazolatlan beszerzési rendelések a termékbevételezések frissítésének futtatása után visszaigazoltak
-                  href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
-                - name: Egy értékesítési rendelés sorában nem lehet készletfoglalást visszavonni
-                  href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: 'Nem erősítheti meg a szállítmányt, mert az ügyfél várakoztatott'
-                  href: troubleshooting/warehousing/customer-is-on-hold.md
-                - name: 'Nem erősítheti meg a szállítmányt, mert a rakománysorok mennyisége nulla'
-                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
-                - name: 'A rakománysor nem frissíthető, mert a kiadott mennyiség negatív lenne.'
-                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
-                - name: A törölt terméknyugták nem frissítik a tranzakciók állapotát regisztráltra
-                  href: troubleshooting/warehousing/canceled-product-receipts.md
-                - name: A tényleges frissített mennyiség tizedesre kerekítése helytelen
-                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
-                - name: A tényleges fennmaradó mennyiség az egységben nem lehet nulla
-                  href: troubleshooting/warehousing/physical-remaining-q.md
-                - name: A kitárolt mennyiség nem elegendő a szállítólevél létrehozása során
-                  href: troubleshooting/warehousing/picked-quantity-is-n.md
-                - name: A mennyiség meghaladja a szállítási többlet százalékos mennyiségét a szállítólevél létrehozása során
-                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
-                - name: A frissíteni próbált mennyiség meghaladja a bevételezett/szállított mennyiséget
-                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
-                - name: A mennyiség meghaladja a szállítási hiány százalékos mennyiségét a szállítólevél létrehozása során
-                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
-                - name: Hiba merül fel a hely kiválasztásakor a kitárolási lista regisztrációja során
-                  href: troubleshooting/warehousing/error-cannot-update.md
-                - name: A csomagolóállomáson nem jelennek meg a termékekkel kapcsolatos megjegyzések
-                  href: troubleshooting/warehousing/packing-station-not-.md
-                - name: 'A helyprofil tiltja a negatív készletet, de a negatív tényleges készlet megengedett'
-                  href: troubleshooting/warehousing/location-profile-set.md
-                - name: Az egyetlen bizonylaton található több munkafejléc esetén csak egy címke kerül nyomtatásra
-                  href: troubleshooting/warehousing/when-receipting-prod.md
-                - name: 'Nem erősítheti meg a szállítmányt, mert probléma adódott a naptárral'
-                  href: troubleshooting/warehousing/load-has-active-appo.md
-                - name: Nem erősítheti meg a szállítmányt hiányos vagy nem teljes munka miatt
-                  href: troubleshooting/warehousing/open-or-no-work-exis.md
-                - name: 'Nem erősítheti meg a szállítmányt, mert egyes cikkeket nem tároltak ki'
-                  href: troubleshooting/warehousing/picked-quantity-is-not-on-final.md
-                - name: 'Nem erősítheti meg a szállítmányt, mert a mennyiség nulla'
-                  href: troubleshooting/warehousing/picked-quantity-is-zero.md
-                - name: 'Nem erősíthető meg a szállítmány, mert a mennyiség meghaladja a túlszállítási százalékot'
-                  href: troubleshooting/warehousing/quantity-exceeds-ove.md
-                - name: 'Nem erősíthető meg a szállítmány, mert a mennyiség meghaladja az alulszállítási százalékot'
-                  href: troubleshooting/warehousing/quantity-exceeds-und.md
-                - name: Az utolsó lezárt munkasornak betárolásnak kell lennie
-                  href: troubleshooting/warehousing/the-last-closed-work.md
-                - name: A rakománysorok mennyiségi mezői nem felelnek meg a rakomány mennyiségi mezőinek
-                  href: troubleshooting/warehousing/the-weight-fields-on.md
-                - name: A hullám nem törölhető
-                  href: troubleshooting/warehousing/wave-is-not-eligible.md
-                - name: A súly csak pozitív érték lehet
-                  href: troubleshooting/warehousing/weight-must-be-posit.md
-                - name: 'A munka nem törölhető, mert zárolva van'
-                  href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
-                - name: A munka nem törölhető az állapot miatt
-                  href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
-                - name: A munka nincs zárolva
-                  href: troubleshooting/warehousing/work-is-not-blocked.md
-                - name: A munka zárolva marad
-                  href: troubleshooting/warehousing/work-remains-blocked.md
-                - name: Felhasználóhoz rendelt munkát nem lehet érvényteleníteni
-                  href: troubleshooting/warehousing/you-cannot-cancel-wo.md
     - name: Pénzügyi és műveleti alkalmazások fejlesztése és felügyelete
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

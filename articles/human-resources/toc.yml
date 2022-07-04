@@ -496,6 +496,8 @@
                   items:
                     - name: Toborzási projektfolyamat kezelése
                       href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Toborzási projektek beállítása
+                      href: hr-personnel-develop-open-job-requisition.md
                     - name: Pályázók és a pályázatok adatainak manuális megadása
                       href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                     - name: Feladatigénylések kialakítása és megnyitása
@@ -620,12 +622,16 @@
                   href: hr-benefits-setup-employment-categories.md
                 - name: Alkalmazási típusok beállítása
                   href: hr-benefits-setup-employment-types.md
-                - name: Alkalmazotti önkiszolgáló rendszer konfigurálása
+                - name: Alkalmazotti önkiszolgálás konfigurálása
                   href: hr-benefits-setup-employee-self-service.md
                 - name: Juttatási konstrukciók létrehozása
                   items:
                     - name: Juttatási konstrukciók beállítása
                       href: hr-benefits-plans-setup.md
+                    - name: Dolgozói juttatási tervek létrehozása
+                      href: hr-benefits-plans-worker.md
+                    - name: A jövőbeli életesemények beállítása
+                      href: hr-benefits-plans-future-life-events.md
                     - name: Rugalmas jóváírási programok beállítása
                       href: hr-benefits-plans-flex-credit-programs.md
                 - name: Juttatási konstrukciók feldolgozása
@@ -836,6 +842,10 @@
               href: hr-developer-api-authentication.md
             - name: Entitások
               items:
+                - name: Munkakör adatai
+                  href: hr-admin-integration-api-job-detail.md
+                - name: Foglalkoztatás típusának lehetősége
+                  href: hr-admin-integration-payroll-api-hcmemploymenttype.md
                 - name: MyLeaveRequests
                   items:
                     - name: MyLeaveRequests áttekintése

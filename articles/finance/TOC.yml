@@ -12,14 +12,12 @@
               items:
                 - name: Újdonságok és változások a Finance szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
-                - name: Finance 10.0.28 (2021. augusztus)
+                - name: Finance 10.0.28 (augusztus)
                   href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (július)
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (május)
                   href: get-started/whats-new-changed-10-0-26.md
-                - name: Finance 10.0.25 (április)
-                  href: get-started/whats-new-changed-10-0-25.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók – kezdőlap
@@ -462,6 +460,8 @@
                   items:
                     - name: Bevétel- és költséghalasztások beállítása
                       href: accounts-receivable/sb-deferrals.md
+                    - name: Halasztás feladási módja
+                      href: accounts-receivable/Deferral-posting-methods.md
                     - name: Halasztási ütemezések létrehozása
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Halasztás alapértelmezett tranzakciói
@@ -1214,6 +1214,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: A pénzügyi jelentés összetevői
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Pénzügyi jelentések tervezése és megtekintése
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
             - name: Pénzügyi jelentések pénznemei
               href: general-ledger/financial-reporting-currency-capability.md
             - name: Pénzügyi jelentések pénzügyi eredményeinek kiszámítása
@@ -1978,6 +1980,8 @@
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
                 - name: Bankszámlaszámok beállítása Brazíliához
                   href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+                - name: Átmozgatási rendelések
+                  href: localizations/latam-bra-about-transfer-orders.md
                 - name: Adók
                   items:
                     - name: Brazília – adók áttekintése
@@ -2116,6 +2120,8 @@
                   href: localizations/emea-cze-intra-community-VAT.md
                 - name: Év végi zárás
                   href: localizations/emea-cze-hun-year-end.md
+                - name: EU-s értékesítési lista
+                  href: localizations/emea-cze-eu-sales-list.md
             - name: Dánia
               items:
                 - name: Dánia – áttekintés
@@ -2130,8 +2136,8 @@
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
                 - name: EU-s értékesítési lista
                   href: localizations/emea-dnk-eu-sales-list.md
-                - name: OIOUBL elektronikus számlázási konfiguráció importálása
-                  href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+                - name: Elektronikus vevői számlák Dániában
+                  href: localizations/emea-dnk-e-invoices.md
                 - name: Szabadszöveges számla feladása fizetési bizonylattal
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
                 - name: Projektszöveges számla feladása fizetési bizonylattal
@@ -2220,6 +2226,8 @@
                       href: localizations/emea-ISO20022-file-formats.md
                     - name: ISO20022 beszedési megbízási konfiguráció importálása
                       href: localizations/tasks/import-iso20022-direct-debit-configuration.md
+                    - name: Az ISO 20022 szabvány szerinti jóváírásátutalási formátum előfeltételei
+                      href: localizations/emea-fra-ISO20022-international.md
                     - name: ISO20022 jóváírási konfiguráció importálása
                       href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
                     - name: Vállalati bankszámlák beállítása ISO20022 típusú átutalásokhoz
@@ -2462,6 +2470,8 @@
                   href: localizations/emea-hun-intrastat.md
                 - name: Halasztott áfa számításai
                   href: localizations/emea-hun-deferred-vat.md
+                - name: EU-s értékesítési lista
+                  href: localizations/emea-hun-eu-sales-list.md
             - name: Izland
               items:
                 - name: Izland – áttekintés
@@ -2766,6 +2776,8 @@
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: TDS nyilvántartási számok beállítása jogi személyekhez
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Adóelőleg-összetevőcsoportok beállítása a TDS-adótípushoz
+                                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                                 - name: Adóelőleg-hatóságok beállítása a TDS-adótípushoz
                                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                                 - name: Adóösszetevők beállítása a TDS-adótípushoz
@@ -2966,8 +2978,10 @@
                   href: localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
                 - name: Értékcsökkenési profil és feladási profil konfigurálása további értékcsökkenéshez
                   href: localizations/tasks/configure-depreciation-profile-posting.md
-                - name: Tárgyi eszköz kivezetési kötelezettségével kapcsolatos feladási és a piaci kedvezményes árak fő számláinak beállítása
+                - name: Tárgyi eszköz kivezetési kötelezettségével kapcsolatos feladási és a piaci engedményes árak fő számláinak beállítása
                   href: localizations/tasks/configure-main-accounts-asset-retirement.md
+                - name: Felhasználási adójelentés
+                  href: localizations/apac-jpn-consumption-tax-report.md
                 - name: Gyűjtőszámlák
                   href: localizations/apac-jpn-consolidate-invoices.md
                 - name: Tárgyi eszköz létrehozása további értékcsökkenéssel
@@ -3416,6 +3430,8 @@
                           href: localizations/rus-register-acquisition.md
                         - name: Tárgyi eszközök beszerzése és üzembe helyezése
                           href: localizations/rus-fixed-asset-acquisition.md
+                        - name: Járművek és ingatlanok tárgyi eszközként
+                          href: localizations/rus-vehicles-realty.md
                         - name: Értékcsökkenés számítása
                           href: localizations/rus-depreciation-calculation.md
                         - name: Részleges tárgyieszköz-szétszerelés (felszámolás)
@@ -3444,6 +3460,8 @@
                       items:
                         - name: Nem értékes tárgyi eszközök – NVFA-k (Oroszország)
                           href: localizations/rus-not-valuable-assets.md
+                        - name: 'Nem értékes tárgyi eszközök, munkaruhák és különleges felszerelések elsődleges űrlapjai (Oroszország)'
+                          href: localizations/rus-nvfa.md
                         - name: Munkaruházat/különleges felszerelés könyvelése (Oroszország)
                           href: localizations/rus-working-clothes-instruments-accounting.md
                     - name: Tárgyi eszközök integrálása az eszközkezelési modul segítségével
@@ -3520,6 +3538,8 @@
                       href: localizations/rus-land-tax-declaration.md
                     - name: Nyereségadó-bevallása
                       href: localizations/rus-profit-tax-declaration.md
+                    - name: Jelentés a nyomon követhető árukkal kapcsolatos műveletekről
+                      href: localizations/rus-traceable-goods-operation-report.md
                 - name: Szervezeti adminisztráció
                   items:
                     - name: Címhez kapcsolódó adónyilvántartási adatok
@@ -4737,7 +4757,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/finance/toc.json
             - name: E-mail konfigurálása és küldése
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
-            - name: Dátum/időadatok és időzónák
+            - name: Dátum-/időadatok és időzónák
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/finance/toc.json
         - name: Egyesült Államok bérlista
           items:
