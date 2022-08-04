@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: f523680f3d71ffd75c6cd2df284d2fd3610cef96
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a420c5b2a036ac63a1a179f93462d152c3941fda
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853617"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124224"
 ---
 # <a name="create-alert-rules"></a>Figyelmeztetési szabályok létrehozása
 
@@ -75,7 +75,7 @@ A **Figyelmeztetés módja** gyorslapján a **Figyelmeztetési szabály** létre
 
 ## <a name="alerts-as-business-events"></a>Figyelmeztetések üzleti eseményekként
 
-A figyelmeztetéseket az üzleti események keretrendszerén kívül is el lehet küldeni. Figyelmeztetés létrehozásakor állítsa az **Egész szervezet** beállítást **Nem** értékre, és a **Küldés külsőleg** beállítást **Igen** értékre. Miután aktiválta az üzleti eseményt kiváltó figyelmeztetést, Power Automate **elindíthat egy beépített folyamatot az Üzleti esemény bekövetkeztének bekövetkeztét követően a** Pénzügy és műveletek csatlakoztatójára, **vagy explicit módon elküldheti az eseményt egy üzleti esemény végpontnak az üzleti eseménykatalóguson keresztül**.
+A figyelmeztetéseket az üzleti események keretrendszerén kívül is el lehet küldeni. Figyelmeztetés létrehozásakor állítsa az **Egész szervezet** beállítást **Nem** értékre, és a **Küldés külsőleg** beállítást **Igen** értékre. Miután aktiválta az üzleti eseményt kiváltó figyelmeztetést, Power Automate **elindíthat egy beépített folyamatot az Üzleti esemény bekövetkeztének bekövetkeztét követően a** pénzügyre és az műveleti csatlakoztatóra, **vagy explicit módon elküldheti az eseményt az üzleti események végpontjának az üzleti események katalógusán keresztül**.
 
 ## <a name="create-an-alert-rule"></a>Figyelmeztetési szabály létrehozása
 

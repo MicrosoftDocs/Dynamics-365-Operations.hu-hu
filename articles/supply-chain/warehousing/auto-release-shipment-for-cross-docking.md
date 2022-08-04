@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c7199f5a5a401e627bb5fac9dece3950900e5f97
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903782"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067911"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Szállítmány automatikus kiadása áttároláshoz
 
@@ -40,8 +40,8 @@ Ez az áttárolás funkció két előnnyel jár:
 
 | Előfeltételek | Leírás |
 |---|---|
-| Tétel | A cikknek elérhetőnek kell lennie a raktárkezelő folyamathoz.<p>**Megjegyzés:** A tényleges súllyal rendelkező cikkek nem szerepelhetnek az áttárolási folyamatok között.</p> |
-| Raktár | A raktárnak elérhetőnek kell lennie a raktárkezelő folyamathoz. |
+| Tétel | A cikket engedélyezni kell a raktárkezelési folyamatokhoz (WMS).<p>**Megjegyzés:** A tényleges súllyal rendelkező cikkek nem szerepelhetnek az áttárolási folyamatok között.</p> |
+| Raktár | A raktárat engedélyezni kell a raktárkezelési folyamatokhoz (WMS). |
 | Áttárolási sablonok | Legalább egy olyan áttárolási sablont be kell állítani egy adott raktárhoz, amely az **Ellátási elismervény esetén** igénykiadási irányelvet használja az adott raktárhoz. |
 | Munkaosztály | Egy áttárolási munkaosztály azonosítót létre kell hozni az **Áttárolási** munkarendelés típushoz. |
 | Munkasablonok | Az **Áttárolási** munkarendeléstípusának munkasablonjai szükségesek áttárolási ki- és betárolási faladathoz. |

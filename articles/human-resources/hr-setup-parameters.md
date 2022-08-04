@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13a25d3f1f72d8053ed3951b036522cfa3a15959
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856280"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065644"
 ---
 # <a name="configure-human-resources-parameters"></a>A Human Resources paramétereinek konfigurálása
 
@@ -27,7 +27,7 @@ ms.locfileid: "8856280"
 
 A Human Resources egyes paramétereinek beállításait közösen használják a vállalatok, azonban vannak olyan paraméter-beállítások, amelyek vállalatonként különböznek. Ez a cikk bemutatja a vállalatspecifikus emberierőforrás-paraméterek beállítását.
 
-A Human Resources paraméterek beállítása két oldalon történik. A vállalatok között megosztott paraméterekhez az **Emberi erőforrások megosztott paraméterei** oldal használatos. A vállalatspecifikus (más szóval, a beállítások csak egy vállalatra vonatkoznak) paraméterekhez az **Emberierőforrás-paraméterek** oldal használatos.
+A Human Resources paraméterek beállítása két oldalon történik. A vállalatok között megosztott paraméterekhez az **Emberi erőforrások megosztott paraméterei** oldal használatos. A vállalatspecifikus paraméterekhez az Emberi erőforrások paraméterei **lap használható**.
 
 ![Lépjen a Humar Resources paramétereihez.](./media/hr-employee-self-service-human-resources-parameters.png)
 
@@ -74,9 +74,10 @@ A Dynamics 365 Pénzügy programban a Kompenzáció lap beállításai határozz
 
 A Human Resources alkalmazásban a **Kompenzáció** lapon kiválaszthatja, hogy korlátozza-e a hozzáférést a kompenzációs konstrukciókhoz, és beállít-e alapértelmezett pénznemet.
 
-A kompenzációval kapcsolatos további információkért lásd: [Kompenzációs konstrukciók áttekintése](hr-compensation-overview.md).
+> [!NOTE]
+> Az egyesített infrastruktúra **esetében** **·** **az** Emberi erőforrások paraméterei lap Kompenzáció lapján található alapértelmezett Pénznem paraméter el lett távolítva. A pénznemet **a** főkönyvi pénznemparaméter kezeli előre, hogy a pénzügyi és műveleti funkciók ne ütköztek volna, és így megelőzhető az ismétlődés. A főkönyvi pénznem funkció használatával kapcsolatos további tudnivalókat lásd [: Főkönyv konfigurálása](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
-![Kompenzáció lap.](./media/hr-setup-parameters-compensation.png)
+A kompenzációval kapcsolatos további információkért lásd: [Kompenzációs konstrukciók áttekintése](hr-compensation-overview.md).
 
 ## <a name="number-sequences"></a>Számsorozatok
 
@@ -122,7 +123,7 @@ Az alkalmazotti önkiszolgáló **rendszer** beállításának további tudnival
 A Vezetői önkiszolgáló **lapon megadott beállítások** befolyásolják, hogy milyen vezetők látnak a **vezető önkiszolgáló rendszerében**. Ezen a lapon a következő beállításokat lehet beállítani:
 
 - A lejáró rekordok tartománya
-- A vezetők által a lejáró rekordokban látható információk
+- A vezetők által a lejáró rekordokban megtekinthető információk
 - Azt jelzi, hogy a vezetők megtekinthetnek-e nyitott pozíciókat a kiterjesztett jelentésekhez
 - A kilépő dolgozók nézete
 - Hasznos hivatkozások a vezetőknek

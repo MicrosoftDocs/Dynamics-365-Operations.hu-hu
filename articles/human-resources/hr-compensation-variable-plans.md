@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2f51a095a23b651dca645b14e652519f20037e2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853074"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070558"
 ---
 # <a name="create-variable-compensation-plans"></a>Változó kompenzációs tervek létrehozása
 
@@ -42,7 +42,11 @@ A **Változó kompenzációtípusok** szükséges elemek. A **Változó kompenz�
 Ha van rá igény a vállalatok megadhatnak **Átruházási szabályokat**. Az **Átruházási szabályok** leírják, hogy a változó jutalmakat időben hogyan kell felosztani. Például az átruházási szabály megszabhatja, hogy az alkalmazott a teljes jutalmának 25 százalékát kaphatja meg minden évben, a következő négy évben. Az átruházási szabályok csak tájékoztató jellegűek.
 
 ## <a name="variable-compensation-plans"></a>Változó kompenzációs konstrukciók
-A **változó kompenzációterv** tartalmazza a szabályokat, számítási módszereket és az alapértelmezett adatokat a listázott alkalmazottak változó kompenzációjának számításához. Ha változó kompenzációtervet hoz létre, akkor meg kell adnia a változó kompenzáció típusát. A változó kompenzáció típusa meghatározza, hogy a rendszer egy pénzösszeget vagy egy egységszámot ad meg jutalomként. A számítási módszert is meg kell adni:
+A **változó kompenzációterv** tartalmazza a szabályokat, számítási módszereket és az alapértelmezett adatokat a listázott alkalmazottak változó kompenzációjának számításához. Ha változó kompenzációtervet hoz létre, akkor meg kell adnia a változó kompenzáció típusát. A változó kompenzáció típusa meghatározza, hogy a rendszer egy pénzösszeget vagy egy egységszámot ad meg jutalomként. 
+
+A **Kijelölt szerepkörök elérésének** korlátozása paraméter korlátozza a hozzáférést a kompenzációs konstrukcióhoz az emberi erőforrásokban a tervhez hozzárendelt kiválasztott biztonsági szerepkörökre. Például amikor olyan kompenzációs konstrukciókat hoz létre, amelyek a vezetők számára vannak létrehozva, és nem kellene láthatóknak lenniük minden HR-specifikus szerepkör számára, ezzel a paraméterrel korlátozhatja a hozzáférést az ilyen kompenzációs konstrukciókhoz. 
+
+A számítási módszert is meg kell adni:
 
 -   **Időponthoz kötött** – A változó jutalom számítása a fix kompenzáción alapszik, amivel az alkalmazott rendelkezett egy adott időpontban. Az időpont a folyamateseményben van meghatározva, az új kompenzációs összegek feldolgozásakor.
 -   **Összetett** – Kiszámításra kerül a jutalom összege minden egyedi fix kompenzációs fizetési mértékhez ami az alkalmazottnak jár a ciklus kezdő és záró dátuma között a feldolgozási folyamat során. A díjak aztán összeadódnak a végső jutalom meghatározásához. Például a ciklus során egy alkalmazottat másik pozícióba helyeztek, aminek más a jövedelmi besorolása. Ebben az esetben a változó jutalom módosul, az egyes fizetési kategóriákban eltöltött idő szerint.

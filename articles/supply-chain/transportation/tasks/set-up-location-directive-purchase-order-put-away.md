@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d973d1cdb530a031ca8a5caf621f9bebced4842
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25484efd7be026bfc3a209fb52822b87d6b76cc2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873492"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065494"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Helyutasítás beállítása beszerzési rendelés eltárolásához
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a cikk bemutatja, hogyan lehet egy egyszerű helyi irányelvet beállítani. A példa egy helyutasítást hoz létre ahhoz, hogy a beszerzési rendelés bevételezett cikkeinek helyét meg lehessen határozni. Ezt a feladatleírást lejátszhatja az USMF bemutatócégnél említett adatokkal. Előzetes feltételek: Intézkedési kódot kell létrehoznia. Ebben az eljárásban egy Relabel nevű intézkedési kódot alkalmazunk. Ha helyutasítást hoz létre a saját adataiban, a raktárhoz és a cikkekhez speciális raktárkezelési beállítást kell megadnia. Ezt az eljárást a raktári vezető használja.
+Ez a cikk bemutatja, hogyan lehet egy egyszerű helyi irányelvet beállítani. A példa egy helyutasítást hoz létre ahhoz, hogy a beszerzési rendelés bevételezett cikkeinek helyét meg lehessen határozni. Ezt a feladatleírást lejátszhatja az USMF bemutatócégnél említett adatokkal. Előzetes feltételek: Intézkedési kódot kell létrehoznia. Ebben az eljárásban egy Relabel nevű intézkedési kódot alkalmazunk. Ha saját adatokban hoz létre helyi irányelvet, akkor be kell állítania raktárkezelési folyamatokat (WMS) a raktárhoz és a cikkekhez. Ezt az eljárást a raktári vezető használja.
 
 1. A navigációs ablaktáblán ugorjon a **Modulok > Raktárkezelés > Beállítás > Helyutasítások** lehetőségre.
 2. A **Munka rendeléstípusa** mezőben válassza ki a **Beszerzési rendelések** elemet.

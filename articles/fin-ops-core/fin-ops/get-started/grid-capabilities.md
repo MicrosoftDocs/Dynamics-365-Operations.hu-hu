@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5259e1d7d6c95074337164d8427d7f035e00dbd9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: 07791afb2de670a5b9b910e441395c2949460394
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890058"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124710"
 ---
 # <a name="grid-capabilities"></a>Rácsfunkciók
 
@@ -35,10 +35,10 @@ Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, a
 - Nyújtható oszlopok
 
 ## <a name="calculating-totals"></a>Teljes összegek számítása
-A Pénzügy és a Műveletek alkalmazásokban a felhasználók láthatják az összegeket a rácsok numerikus oszlopainak alján. Ezeket az összegeket a rács alján látható lábléc szakasz mutatja. 
+A pénzügyi és műveleti alkalmazásokban a felhasználók láthatják az összegeket a rácsok numerikus oszlopainak alján. Ezeket az összegeket a rács alján látható lábléc szakasz mutatja. 
 
 ### <a name="showing-the-grid-footer"></a>A rács láblécének megjelenítése
-A Pénzügy és műveletek alkalmazások minden táblázatos rácsának alján egy lábléc található. A lábléc értékes információkat jeleníthet meg, amely a rácsban megjelenő adatokhoz kapcsolódik. Íme néhány példa az ilyen információkra:
+A pénzügy- és műveletalkalmazások minden táblázatos rácsának alján egy lábléc található. A lábléc értékes információkat jeleníthet meg, amely a rácsban megjelenő adatokhoz kapcsolódik. Íme néhány példa az ilyen információkra:
 
 - A táblázatból kiválasztott sorok száma (ha egynél több rekord van kiválasztva)
 - Végösszegek a konfigurált numerikus oszlopok alján
@@ -86,7 +86,7 @@ Ennek az új viselkedésnek a támogatásához egy új oszlop lett hozzáadva a 
 Amikor a felhasználók az előtt a hely előtt visznek be adatokat, ahol a kiszolgáló feldolgoz, alacsonyabb szintű adatbeviteli élményt tapasztalhatnak, például a keresések hiánya, a vezérlői szintű ellenőrzés és az alapértlemezett értékek bevitele. Ha meg szeretne találni egy értéket a legördülő listáról, akkor arra kell várnia, hogy a kiszolgáló az aktuális sorhoz felzárkózzon. Amikor a kiszolgáló dolgozza fel a sort, akkor az vezérlői szint ellenőrzése és az alapértelmezett értékek bevitele is megtörténik.
 
 ### <a name="pasting-from-excel"></a>Beillesztés az Excel programból
-A felhasználók mindig Microsoft Excel **exportálni tudják az adatokat a Pénzügy és műveletalkalmazások rácsaiból az Exportálás az Excel** programba mechanizmus segítségével. Ugyanakkor az adatok rendszerbeli beíratási lehetősége lehetővé teszi, hogy az új rács lehetővé teszi táblák másolását az Excel programból, és közvetlenül bemásolást a Pénzügyi és műveleti alkalmazások rácsaiba. Az a rácsvonalcella, amelyből a beillesztési művelet el van indítva, határozza meg, hogy a program hová kezdi a másolt tábla beillesztését. A rács tartalma felülíródik a másolt tábla tartalmával, kivéve a következő két esetet:
+A felhasználók mindig Microsoft Excel **exportálni tudják a pénzügyi és műveleti alkalmazások rácsaiból az adatokat az Exportálás az Excel** programba mechanizmus segítségével. Ugyanakkor az adatok rendszerbeli beíratási lehetősége lehetővé teszi, hogy az új rács lehetővé teszi táblák másolását az Excel programból, és közvetlenül bemásolást a pénzügyi és műveleti alkalmazások rácsaiba. Az a rácsvonalcella, amelyből a beillesztési művelet el van indítva, határozza meg, hogy a program hová kezdi a másolt tábla beillesztését. A rács tartalma felülíródik a másolt tábla tartalmával, kivéve a következő két esetet:
 
 - Ha a másolt tábla oszlopainak száma meghaladja a rácsban maradó oszlopok számát, a beillesztés helyétől kezdve, a felhasználó értesítést kap arról, hogy a további oszlopok figyelmen kívül lettek hagyva. 
 - Ha a másolt tábla sorainak száma meghaladja a rács sorainak számát, a beillesztés helyétől kezdve a meglévő cellák felülíródnak, és a másolt táblából származó további sorok a rács alján új sorokként jelennek meg. 
@@ -97,7 +97,7 @@ A hatékonyság javításaként a felhasználók matematikai képleteket írhatn
 Ha azt szeretné, hogy a rendszer bizonyos értékeket kifejezésként ismerjen fel, akkor az értéket egyenlőségjellel (**=**) kell bevezetnie. A támogatott operátorokkal és szintaxissal kapcsolatos további információkat lásd: [Támogatott matematikai szimbólumok](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Táblázatos adatok csoportosítása
-Az üzleti felhasználóknak gyakran kell ad hoc adatelemzést végezniük. Microsoft Excel Miközben ez a kimutatástáblákba történő exportálással és kimutatásos táblák használatával végrehajtásához végrehajtásához használható, **a** rácsok csoportosítása funkció, amely az új rácsvezérlő funkciótól függ, lehetővé teszi a felhasználók számára, hogy érdekes módon rendszerezzék a táblázatos adatokat a Pénzügy és a Műveletek alkalmazáson belül. Mivel ez a funkció kiterjeszti az **Összegek** funkciót, a **Csoportosítás** lehetővé teszi, hogy egy csoport szintjén részösszegek megadásával jelentőségteljes betekintést nyerjen az adatokba.
+Az üzleti felhasználóknak gyakran kell ad hoc adatelemzést végezniük. Microsoft Excel Miközben ez a kimutatástáblákba történő exportálással és kimutatásos táblák használatával végrehajtásához végrehajtásához használható, **a** rácsok csoportosítása funkció, amely az új rácsvezérlő funkciótól függ, lehetővé teszi a felhasználók számára, hogy érdekes módon rendszerezzék a táblázatos adatokat a pénzügyi és műveleti alkalmazásokon belül. Mivel ez a funkció kiterjeszti az **Összegek** funkciót, a **Csoportosítás** lehetővé teszi, hogy egy csoport szintjén részösszegek megadásával jelentőségteljes betekintést nyerjen az adatokba.
 
 A funkció használatához kattintson a jobb egérgombbal a csoportosítani kívánt oszlopra, és válassza ki a **Csoportosítás az oszlop szerint** lehetőséget. Ez a művelet a kiválasztott oszlop szerint rendezi az adatokat, egy új **Csoportosítás** oszlopot ad hozzá a rácshoz, majd az egyes csoportok elejére „fejlécsorokat” szúr be. Ezek a fejlécsorok a következő információkat tartalmazzák az egyes csoportokról:
 
@@ -168,7 +168,7 @@ Ha az új rács használatát egy adott oldalra vonatkozóan elutasította, akko
 ## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Fejlesztő] Egyes rácsok kivéte a beírást a rendszer képességtől eltolása
 Bizonyos helyzetekben nem *lehet* megfelelően dolgozni a rács rendszer-előre történő beírásával. (Például néhány olyan kód, amely akkor aktiválódik, amikor egy sor ellenőrzése történik, egy adatforrás-kutatás kiváltása történik, és a kutatás a meglévő sorok nem véglegesített szerkesztései lesznek.) Ha a szervezet ilyen helyzetet fedez fel, akkor egy API áll rendelkezésre, amellyel a fejlesztő ki tudja választani az aszinkron sorellenőrzést, és visszaáll az örökölt viselkedésre.
 
-Ha egy rácsban le van tiltva az aszinkron sorellenőrzés, akkor a felhasználók nem hozhatnak létre új sort, és nem ugorhatnak át a rács egy másik meglévő sorára, amíg az aktuális sorban ellenőrzési problémák vannak. Ennek a műveletnek a hatásaként nem lehet táblákat berakodni az Excel programból a Pénzügyi és Műveleti rácsba.
+Ha egy rácsban le van tiltva az aszinkron sorellenőrzés, akkor a felhasználók nem hozhatnak létre új sort, és nem ugorhatnak át a rács egy másik meglévő sorára, amíg az aktuális sorban ellenőrzési problémák vannak. Ennek a műveletnek az a oldala, hogy az Excelből nem lehet táblákat berakodni a pénzügyi és műveleti rácsba.
 
 Ha ki szeretne választani egy rácsot az aszinkron sorellenőrzésből, `super()``run()` adja hozzá a következő hívást a képernyő metódusához.
 
@@ -200,3 +200,4 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tartalmazza.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

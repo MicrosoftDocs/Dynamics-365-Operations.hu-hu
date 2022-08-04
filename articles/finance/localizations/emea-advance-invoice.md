@@ -2,7 +2,7 @@
 title: Előlegszámlák Kelet-Európa számára
 description: Ez a cikk a kelet-európai előlegszámlákról nyújt tájékoztatást. Az előlegszámla egy vevő vagy szállító számára létrehozott dokumentum. Azt az összeget tartalmazza, amelyet előre meg kell fizetni egy értékesítési rendelésre.
 author: EvgenyPopovMBS
-ms.date: 05/25/2022
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c722d8215c2b65e24008042c9a4d65bb419ad46a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bcf8424b311b595a114d3429fa7a3252e47e643d
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886288"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135927"
 ---
 # <a name="advance-invoices-for-eastern-europe"></a>Előlegszámlák Kelet-Európa számára
 
@@ -38,6 +38,26 @@ Az előlegszámlák funkció a következő műveletek végrehajtását teszi leh
 - A vevőktől kapott előlegek csatolása előlegszámlákhoz (az előleg feladása előtt vagy után).
 - A feladott előlegek áfafeladásának módosítása (például előleg átalakítása kifizetéssé vagy a kifizetés átalakítása előleggé, vagy a feladási dátum, az adó mértéke vagy az összeg módosítása).
 - *Csak Cseh Köztársaság esetében:* Adódokumentum létrehozása az áfamentes szállításhoz.
+
+A cikk a következő szakaszokat tartalmazza:
+
+- [Előlegszámlák Lengyelország számára](#advance-invoices-for-poland)
+- [A Kinnlevőségek előlegszámlákhoz történő beállítása](#set-up-accounts-receivable-for-advance-invoices)
+- [Vevői előlegszámla létrehozása](#create-a-customer-advance-invoice)
+- [Előlegszámlák áfája](#vat-on-advance-invoices)
+- [Előlegszámla csatolása értékesítési rendeléshez vagy szabadszöveges számlához](#link-an-advance-invoice-to-a-sales-order-or-a-free-text-invoice)
+- [Vevői előlegszámla készítése értékesítési rendelésből](#create-a-customer-advance-invoice-from-a-sales-order)
+- [Vevői előlegszámla létrehozása szabadszöveges számlából](#create-a-customer-advance-invoice-from-a-free-text-invoice)
+- [Előlegszámla nyomtatása](#print-an-advance-invoice)
+- [Fizetési javaslat létrehozása előlegszámlából](#create-a-payment-proposal-from-an-advance-invoice)
+- [Előleg csatolása előlegszámlához](#link-a-prepayment-to-an-advance-invoice)
+- [Előlegszámla csatolása előleghez](#link-an-advance-invoice-to-a-prepayment)
+- [Előlegszámla jóváírása](#advance-invoice-credit-notes)
+- [Cseh Köztársaság adódokumentumai](#tax-documents-for-the-czech-republic)
+- [A Kötelezettségek előlegszámlákhoz történő beállítása](#set-up-accounts-payable-for-advance-invoices)
+- [Szállítói előlegszámla létrehozása](#create-a-vendor-advance-invoice)
+- [Az Előlegszámla és előleg kezelése funkció használata](#use-the-advance-invoice-and-prepayment-handling-functionality)
+- [Cseh Köztársaság áfaösszegének megfordítása](#reversing-sales-tax-amounts-for-czech-republic)
 
 ## <a name="advance-invoices-for-poland"></a>Előlegszámlák Lengyelország számára
 
@@ -114,7 +134,7 @@ A következő lépésekkel lehet előlegszámlát szabadszöveges számlához cs
 
 1. A Minden **előlegszámla lapon** jelölje ki az előlegszámlát.
 1. A műveletpanelen válassza ki az **Előlegszámla**, majd a **Szabadszöveges számla lehetőséget**.
-1. Válassza ki az előlegszámlához csatolni kívánt szabadszöveges számlát, majd válassza az **OK gombra.**
+1. Válassza ki az előlegszámlához csatolni kívánt szabadszöveges számlát, majd válassza az **OK gombra**.
 
 ## <a name="create-a-customer-advance-invoice-from-a-sales-order"></a>Vevői előlegszámla készítése értékesítési rendelésből
 
@@ -230,7 +250,7 @@ A következő lépésekkel lehet előlegszámlát beszerzési rendeléshez rende
 
 1. A Minden **előlegszámla lapon** jelölje ki az előlegszámlát.
 1. Válassza ki a műveletpanelen az **Előlegszámla**, majd a Beszerzési **rendelés lehetőséget**.
-1. Válassza ki azt a beszerzési rendelést, amely az előlegszámlához csatolva van, majd válassza az **OK gombra**.
+1. Válassza ki azt a beszerzési rendelést, amely az előlegszámlához csatolva van, majd válassza az **OK gombra.**
 
 ### <a name="create-a-vendor-advance-invoice-from-a-purchase-order"></a>Szállítói előlegszámla létrehozása beszerzési rendelés alapján
 
@@ -243,5 +263,33 @@ A következő lépésekkel lehet előlegszámlát beszerzési rendeléshez rende
     | Százalék | Adja meg a beszerzési rendelés előlegének százalékát. |
     | Beszerzés frissítése | Válasszon egy lehetőséget. A program a cikkek beszerzési rendelési összege alapján számítja ki az előlegszámla összegét. |
     | Feladási profil az előlegnapló-bizonylathoz | Adja meg az előleghez tartozó feladási profilt. |
+
+## <a name="use-the-advance-invoice-and-prepayment-handling-functionality"></a>Az Előlegszámla és előleg kezelése funkció használata
+
+Az üzleti folyamat **során** **használhatja** az Előlegszámla és előleg kezelése funkciót. Egy példa:
+
+1. A felhasználó előlegfizetésért előleget küld el a vevőnek áfával. Az előlegszámla nincs feladva a főkönyvbe.
+2. A felhasználó áfa nélkül hozza létre és hozza létre az előleget.
+3. A felhasználó létrehoz egy előlegkezelést, és az előlegszámlához viszonyja azt. A felhasználó ezt követően felszámláz az előlegkezelést, és létrehozza az adódokumentumot. A rendszer az áfát a főkönyvbe feladása után az előleghez viszonyja.
+
+> [!NOTE]
+> Törölje a feladási profil mező **értékét** **az Előlegszámla gyorslap Kinnlevőségek** **paramétereinek** Frissítése lapján.**·** Az előlegszámla létrehozásakor állítsa Az adó post beállítását **Igen beállításra** **.**
+
+Az előlegkezelés létrehozásához és előlegszámlához csatolása a következő lépéseket kell követni.
+
+1. Menjen a Kinnlevőségek **– Vevőkhöz** \> **·**, és keresse meg és nyissa meg a vevőrekordot.
+2. A műveletpanelen válassza ki a Vevői **tranzakciók** \> **lehetőséget**, válassza ki az előlegtranzakciót, majd válassza **az Előleg kezelése lehetőséget.**
+3. Állítsa az **Átalakítás fizetési módba** beállítást Nem **beállításra**.
+4. Válassza ki **az előlegszámlát**, ha az előlegkezelést az előlegszámlához csatolja. A rendszer automatikusan létrehozza az áfasorokat az előlegszámlából.
+5. Az előleg kezelésének feladása. A rendszer automatikusan létrehozza az előleg áfatranzakcióit.
+
+## <a name="reversing-sales-tax-amounts-for-czech-republic"></a>Cseh Köztársaság áfaösszegének megfordítása
+
+Az áfaösszegek **előlegkezelési funkción alapuló kézi definiálása érdekében engedélyezze a manuális** beviteles áfaösszegek funkciót (Csehország). A funkciók engedélyezéséről a Funkciókezelés [áttekintése nyújt tájékoztatást](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+> [!NOTE]
+> Ez a funkció csak a Kötelezettségek esetében érhető el.
+
+Ha egy kifizetéssel szemben egy számlatranzakciót jelöl meg kiegyenlítésre, **·** **a sztornírozási áfaösszegeket a Tranzakció kiegyenlítése lap Sztornírozási áfaösszegek lapján frissítheti.** Ha szükséges, az adóösszegeket frissítheti a kiegyenlítés **adóösszege mezőben**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0de12620bca54c7e43713138d7a152c2bd6edff3453f81cf779f9b875cf77eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca1c18a293d66ab78f41cac857461249826ce4c9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714836"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069122"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>Mértékegység és rakodási irányelvek
 
@@ -28,7 +28,7 @@ ms.locfileid: "6714836"
 
 Ez a cikk leírja, hogy az alapértelmezett egységek, egységsorozatok és egységátváltások hogyan vannak felhasználva a raktári folyamatokban.
 
-Az egységszekvencia-csoportok a raktári műveletek során használható egységek sorrendjét határozzák meg. Az **Egységszekvencia-csoportok** oldalon hozhatók létre. A szekvencia megmutatja a különböző egységek közötti kapcsolatot. Például raklapokat tárol, amelyek egyes cikkeket tartalmazó dobozokat foglalnak magukba. Ebben az esetben meg kell adnia a három különböző egységet és a rétegek logikai sorrendjét. Egységszekvencia-csoportok segítségével határozhatja meg az azonosítótáblák csoportosítását meghatározó szabályokat, és az alapértelmezett egységet, amelyeket a különböző raktári folyamatokhoz kell használni. Ez a cikk vonatkozik a speciális raktározási megoldásra, amely a Raktárkezelés résznél érhető el, illetve a Készletkezelés modulban rendelkezésre álló alapvetőbb raktározási megoldásra.
+Az egységszekvencia-csoportok a raktári műveletek során használható egységek sorrendjét határozzák meg. Az **Egységszekvencia-csoportok** oldalon hozhatók létre. A szekvencia megmutatja a különböző egységek közötti kapcsolatot. Például raklapokat tárol, amelyek egyes cikkeket tartalmazó dobozokat foglalnak magukba. Ebben az esetben meg kell adnia a három különböző egységet és a rétegek logikai sorrendjét. Egységszekvencia-csoportok segítségével határozhatja meg az azonosítótáblák csoportosítását meghatározó szabályokat, és az alapértelmezett egységet, amelyeket a különböző raktári folyamatokhoz kell használni. Ez a cikk a Raktárkezelési modulban elérhető raktárkezelési folyamatokra (WMS) és a Készletkezelési modulban elérhető alapvető raktárkezelési megoldásokra is vonatkozik.
 
 ## <a name="unit-sequence-groups-for-released-products"></a>Egységszekvencia-csoportok kiadott termékekhez
 Ha kiadott termékeket kíván használni raktár-munkafolyamatokon belül, egy egységszekvenciacsoporthoz kell rendelni őket. Ha egy Tárolási dimenziócsoportottal társított terméket érvényesít és a **Raktárkezelési folyamatok használata** lehetőséget a Tárolásidimenzió-csoport értéke az **Igen** lehetőségre van állítva, hibaüzenetet kap, ha egy egységszekvencia-csoport azonosítójához nincs termék definiálva. Ha a használt egységszekvencia-csoport több sort tartalmaz (és ennélfogva több egységet tartalmaz), be kell állítania a mértékegység-átváltást az egységek között. Ezt a beállítást a hajtsa végre az **Egységátváltások** oldalon. Egy cikkhez rendelt egységszekvencia-csoport legkisebb egysége meg kell hogy egyezzen a kapcsolódó kiadott termékhez hozzárendelt készletegységgel. A készletegység az az egység, amely az aktuális készlet számításainak alapjául szolgál. Használatával mértékegység-átváltásokat állíthat be alaptermékek termékváltozataihoz a **Mértékegység-átváltások engedélyezése** lehetőségnél.

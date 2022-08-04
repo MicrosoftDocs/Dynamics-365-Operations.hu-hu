@@ -6,21 +6,22 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
-ms.custom: 68873
-ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e175d1e3de1f5db31de9c4600c8a5935f0cb11a9d39bc0f4e142edf5fc00ce86
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "68873"
+ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
+ms.search.form: FinancialReports
+ms.openlocfilehash: a60e66c372d85cc05219eaa17b7924aca5f3f337
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745912"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206318"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Sordefiníciók a pénzügyi jelentéstervezőben
 
@@ -42,7 +43,7 @@ Egy sordefiníció egy jelentés-összetevő vagy építőelem, amely megadja az
 Egy sordefiníció legfeljebb 20 000 pénzügyidimenzió-sort és a következő információkat tartalmazhatja:
 
 - Leíró szöveget, amely értelmet ad a jelentésnek szakaszcímek, sorok és terek létrehozásával, például **Készpénz** vagy **Teljes bevétel**
-- Pénzügyi adatokra mutató hivatkozásokat, amelyek tartalmazhatnak a Microsoft Dynamics 365 Finance rendszerben szereplő dimenzióértékeket
+- Pénzügyi adatokra mutató hivatkozások, amelyek a Microsoft Dynamics 365 Pénzügyben dimenzióértékeket is tartalmazhatnak.
 
     > [!NOTE]
     > A sordefiníciót beállíthatja úgy, hogy minden alkalommal lekérje az adatokat a pénzügyi dimenziók rendszeréből, amikor a jelentést elkészítik.

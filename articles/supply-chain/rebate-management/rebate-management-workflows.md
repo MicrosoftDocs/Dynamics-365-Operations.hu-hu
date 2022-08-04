@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2b1611ff7877efc4a2f98b8f84a1ef91971902ab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f0590c4c906e746b54ac30fd6531b8c1cd67915
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869517"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067332"
 ---
 # <a name="rebate-management-deal-workflows"></a>Visszatérítés-kezelési ügylet munkafolyamatai
 
 [!include [banner](../includes/banner.md)]
 
-Visszatérítési ügyletek jóváhagyásához a visszatérítéskezelés ugyanazt a munkafolyamat-platformot használja, mint a többi Pénzügyi és Művelet-alkalmazás. Minden munkafolyamathoz két feladatfolyamat van társítva:
+Visszatérítési ügyletek jóváhagyásához a visszatérítéskezelés ugyanazt a munkafolyamat-platformot használja, mint a többi pénzügyi és műveletalkalmazás. Minden munkafolyamathoz két feladatfolyamat van társítva:
 
 - A munkafolyamat egyik eleme jóváhagyja az ügyletet.
 - A munkafolyamat egyik eleme aktiválja az ügyletet, így a felhasználó vagy munkafolyamat jóváhagyhatja a tranzakciókat.
@@ -55,3 +55,4 @@ Az aktiválást követően az ajánlat következő beállításait módosíthatj
 - Záró dátum
 
 Ezenkívül a visszatérítési sorok eltávolíthatók.
+

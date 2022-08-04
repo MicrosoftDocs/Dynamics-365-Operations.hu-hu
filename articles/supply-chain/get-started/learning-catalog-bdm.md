@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f97244f48cdfde6f9e91a459b123068480b9c80b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 81c20432a3094ef0fe3013c0867044ef3014adcb
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891118"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124618"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-supply-chain-management"></a>Képzési katalógus a Dynamics 365 Supply Chain Management beszerzését fontolgató üzleti döntéshozók számára
 
@@ -31,7 +31,7 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 |---------|-------------|--------|--------|
 | [Ismerje meg a Microsoft Dynamics365, valamint a Power Platform üzleti értékét](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Érdeklik az üzleti alkalmazások? Talán nem tudja, hogyan kezdjen hozzá a Microsoft Dynamics 365 és Power Platform alkalmazások használatához? Ismerje meg, hogyan lehet az üzleti alkalmazások erejével segíteni a vállalkozás átalakításában. | Ingyenes, saját tempójú online tanulási útvonal | 7 óra |
 | [Dynamics 365 és Power Platform alapok](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez. | Ingyenes, saját tempójú online tanulási útvonal | 5.5 óra |
-| [Első lépések a Pénzügy és műveletek alkalmazásokkal](/learn/paths/get-started-finance-operations/) | Ismerje meg, hogy a Pénzügy és az Üzemeltetés alkalmazás hogyan támogatja a vállalkozásokat globális pénzügyi rendszerük, a működési üzleti folyamatok és az ellátási lánc racionalizálása során, hogy a személyeknek gyorsan és megalapozott döntéseket hozzanak. A Pénzügy és művelet alkalmazásokkal való munka első lépéseként meg kell ismerkednie annak funkcióival és funkcióival, függetlenül a kívánt szereptől. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
+| [A Pénzügy és műveletek alkalmazásokkal kapcsolatos első lépések](/learn/paths/get-started-finance-operations/) | Ismerje meg, hogy a pénzügyi és műveleti alkalmazások hogyan teszik lehetővé a vállalkozások számára globális pénzügyi rendszerük, a működési üzleti folyamatok és az ellátási lánc leegyszerűsítése által, hogy a személyeknek gyorsan és megalapozott döntéseket hozzanak. A pénzügy- és műveletalkalmazások használata során első lépésként meg kell ismerkednie annak funkcióival és funkcióival, függetlenül a kívánt szereptől. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
 | [Tanfolyam MB-900T01-A: Dynamics 365 alapjai](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Ez a tanfolyam a Dynamics 365 funkcionalitásával és üzleti értékével ismerteti meg a tanulót. A tanfolyam a Dynamics 365 alkalmazásokat, a Power Platform megoldást, a felhőkoncepciókat, a biztonsági modellt és a licencelési szempontokat fogja tartalmazni. | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 1 nap |
 | [Eszközkezelés indítása a Dynamics 365 Supply Chain Management szolgáltatáshoz](/learn/modules/get-started-asset-management/index) | Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Supply Chain Management rendszerben történő kezelésére szolgáló modul. Az Eszközkezeléssel hatékonyan kezelhető és hajtható végre a cég különféle típusú felszerelésének (pl. gépek, gyártási felszerelések, járművek) kezelésére és szervizelésére szolgáló összes feladat. Az Eszközkezelés több iparág megoldását támogatja. | Ingyenes, saját tempójú online tanulási modul | 1 óra |
 | [Kezdje el a Dynamics 365 Supply Chain Management mérnöki változásmenedzsmenttel](/learn/modules/get-started-engineering-change-management/) | A Dynamics 365 Supply Chain Management lehetővé teszi az alkalmazottak és a szervezetek számára, hogy egységes képet kapjanak a készletről, a raktárról, a gyártásról, a szolgáltatásról és a logisztikáról, olyan prediktív elemzésekkel, amelyek az adatokat a jobb stratégiai döntések támogatása érdekében információkká alakítják. | Ingyenes, saját tempójú online tanulási modul | 2 óra |

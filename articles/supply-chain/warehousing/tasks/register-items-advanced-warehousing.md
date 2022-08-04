@@ -1,6 +1,6 @@
 ---
-title: Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával
-description: Ez a cikk bemutatja, hogy hogyan regisztrálhat cikkeket a cikkérkezési napló segítségével a speciális raktárkezelési folyamatok használata esetén.
+title: Cikkérkezési napló segítségével regisztrálhatja a raktárkezelési folyamatokban engedélyezett cikkeket.
+description: Ez a cikk egy olyan helyzetet mutat be, amely bemutatja, hogyan regisztrálhatja a cikkeket a cikkérkezési napló segítségével a raktárkezelési folyamatok (WMS) használata esetén.
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863621"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066967"
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával
+# <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>Cikkérkezési napló segítségével regisztrálhatja a raktárkezelési folyamatokban engedélyezett cikkeket.
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a cikk bemutatja, hogy hogyan regisztrálhat cikkeket a cikkérkezési napló segítségével a speciális raktárkezelési folyamatok használata esetén. Ezt általában egy bevételezési adminisztrátor végzi.
+Ez a cikk egy olyan helyzetet mutat be, amely bemutatja, hogyan regisztrálhatja a cikkeket a cikkérkezési napló segítségével a raktárkezelési folyamatok (WMS) használata esetén. Ezt általában egy bevételezési adminisztrátor végzi.
 
 ## <a name="enable-sample-data"></a>Mintaadatok engedélyezése
 
@@ -36,7 +36,7 @@ Ehelyett a saját adatokból származó értékeket behelyettesítésével is do
 - Rendelkeznie kell egy visszaigazolt beszerzési rendeléssel, amelyhez nyitott beszerzésirendelés-sor tartozik.
 - A sorban szereplő cikket raktárazni kell. Nem használhat termékváltozatokat, és nem használhat nyomon követési dimenziókat.
 - A cikket olyan tárolásidimenzió-csoporthoz kell társítani, amelynél engedélyezve van a raktárkezelési folyamat.
-- A használt raktár számára engedélyezni kell a raktárkezelési folyamatot és a használt helynek azonosítótáblás szabályozásúnak kell lennie.
+- A wmS számára engedélyezni kell a raktárt, és a bevételhez használt helynek táblavezéreltnek kell lennie.
 
 ## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Raktárkezelést használó cikkérkezési naplófejléc létrehozása
 

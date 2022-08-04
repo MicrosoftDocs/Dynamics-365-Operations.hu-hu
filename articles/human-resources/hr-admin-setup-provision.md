@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6fc44b52e2f7662fc6be609562cec903a8755d1b
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015346"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178503"
 ---
 # <a name="provision-human-resources"></a>A Human Resources kiépítése
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Érvényes:** Emberi erőforrások a különálló infrastruktúrán_ 
 
-
+> [!NOTE]
+> 2022 június elején az Emberi erőforrások környezeteket csak a pénzügyek és műveletek alkalmazás-infrastruktúráira lehet telepíteni. A további tudnivalókat lásd [az Emberi erőforrások biztosítása a pénzügyi és a műveleti infrastruktúra területén](hr-admin-setup-provision-fo.md).
 
 Ez a cikk bemutatja egy új termelési környezet létesítését a Microsoft számára Dynamics 365 Human Resources. 
 
@@ -40,14 +41,14 @@ Mielőtt elkezdené egy új termelési környezet biztosítását, a következő
 ## <a name="provision-a-human-resources-trial-environment"></a>Az Emberi erőforrások próbakörnyezetének kiépítése
 
 >[!NOTE]
-> 2022. április elején az Emberi erőforrások próbakörnyezete nem lesz elérhető a különálló alkalmazásban. Azok a potenciális vevők, akik az emberi erőforrásokkal kapcsolatos képességek felmérése iránt érdeklődők a Pénzügy és Műveletek alkalmazáson belül, ezt az ingyenes 30 napos próbaidőszakban, a bemutató adataival együtt megtenni. A Dynamics 365 Pénzügy az emberi erőforrások azon képességeit fogja tartalmazni, amelyek a pénzügyi infrastruktúra számára a különálló alkalmazás egyesítése révén biztosítanak majd szolgáltatásokat. A további tudnivalókat [lásd a HR-ajánlatok](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers)[egyesítése és a vevőknek való képességek egyesítésével kapcsolatban. A Dynamics 365 pénzügyekkel kapcsolatos további tudnivalókat lásd a lépésenként útmutatóban](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
+> 2022. április elején az Emberi erőforrások próbakörnyezete nem lesz elérhető a különálló alkalmazásban. A pénzügyi és műveletalkalmazásokban az emberi erőforrásokkal kapcsolatos képességek értékelése iránt érdeklődő potenciális vevők ezt az ingyenes 30 napos próbaidőszak segítségével, a bemutató adataival együtt megtenni. A Dynamics 365 Pénzügy az emberi erőforrások azon képességeit fogja tartalmazni, amelyek a pénzügyi infrastruktúra számára a különálló alkalmazás egyesítése révén biztosítanak majd szolgáltatásokat. A további tudnivalókat lásd az EMBERI-szolgáltatások [egyesítése és a vevőknek nyújtott képességek egyesítésével kapcsolatban](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). A Dynamics 365 Pénzügy teszteléssel kapcsolatos további tudnivalókat lásd a lépésenként [útmutatóban](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Az első üzenetkészlet vagy termelési környezet létesítása előtt szükség lehet egy Emberi erőforrások próbakörnyezet építésére, hogy érvényes legyen az [Emberi erőforrások próbakörnyezet](https://go.microsoft.com/fwlink/p/?LinkId=2115962) Emberi erőforrások szolgáltatás. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók a Human Resources környezet rendszergazdai felületén keresztül. 
 
-A próbakörnyezet lehetővé teszi az emberi erőforrások funkcióinak kiértékelését az olyan személyek számára, akik még nem férnek hozzá Human Resources környezethez. Ha próbakörnyezetet létesít, és a hitelesített felhasználónak már van hozzáférése egy vagy több meglévő Human Resources környezethez, a rendszer átirányítja a felhasználót a meglévő környezetre vagy a környezetek listájára.
+A próbakörnyezetekkel lehet kiértékelni az emberi erőforrásokkal kapcsolatban szükséges funkciókat az olyan személyek esetében, akik még nem férnek hozzá az Emberi erőforrások környezethez. Ha próbakörnyezetet létesít, és a hitelesített felhasználónak már van hozzáférése egy vagy több meglévő Human Resources környezethez, a rendszer átirányítja a felhasználót a meglévő környezetre vagy a környezetek listájára.
 
-A próbaverzió környezetet nem úgy tervezték, hogy termelési környezetekben használják őket. Csak a 30 napos próbaidőszakra korlátozódnak. A próbaidőszak lejártakor a környezet és az abban lévő összes adat törlődik, és nem állítható helyre. A környezet nem alakítható tesztkörnyezetté és éles környezetté. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
+A próbaverzió környezetet nem úgy tervezték, hogy termelési környezetekben használják őket. Csak a 30 napos próbaidőszakra korlátozódnak. Amikor lejár a próbaidőszak, törlődik a környezet és az benne bennelévő összes adat, és nem állítható helyre. A környezet nem konvertálhatóboxvá vagy termelési környezetké. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
 
 Az Emberi erőforrások próbakörnyezet létrehozásakor a bérlőn egy Power Apps próbakörnyezet is létrejön, és kapcsolódik a Emberi erőforrások környezethez. A "TestDrive" nevű Power Apps környezetben ugyanaz a próbaidőszak, mint az Emberi erőforrások környezetben.
 
@@ -56,14 +57,14 @@ Az Emberi erőforrások próbakörnyezet létrehozásakor a bérlőn egy Power A
 
 ## <a name="plan-human-resources-environments"></a>A Human Resources-környezetek megtervezése
 
-Az első Human Resources-környezet létrehozása előtt gondosan tervezze meg a projekt környezeti szükségleteit. A Human Resources alap-előfizetése két környezetet foglal magában: egy éles környezetet és egy tesztkörnyezetet. A projekt összetettségétől függően előfordulhat, hogy a projekttevékenységek támogatásához további tesztkörnyezeteket kell megvásárolni. 
+Az első Human Resources-környezet létrehozása előtt gondosan tervezze meg a projekt környezeti szükségleteit. A Human Resources alap-előfizetése két környezetet foglal magában: egy éles környezetet és egy tesztkörnyezetet. A projekt összetettségétől függően előfordulhat, hogy a projekttevékenységek támogatásához további üzenetkészlet-környezeteket kell megvásárolni. 
 
 További környezetekre vonatkozó megfontolások:
 
-- **Adatáttelepítés**: Előfordulhat, hogy egy további környezetre lehet szükség az adatáttelepítési tevékenységekhez ahhoz, hogy a rendszer tesztkörnyezetét használ a projekt teljes egészében tesztelési célokra használhassa. A további környezetek lehetővé teszik az adatáttelepítési tevékenységek folytatását úgy, hogy a tesztelés és a konfigurálás ezzel egyidejűleg egy másik környezetben történik.
-- **Integráció**: Előfordulhat, hogy egy további környezetre is szükség lesz az integrációk konfigurálásához és teszteléséhez. Ide tartozhatnak az olyan natív integrációk, mint például a Ceridian Dayforce vagy a LinkedIn Talent Hub integráció, vagy egyéni integrációk, mint például a bérszámfejtési, a pályázó-nyomon követési rendszerek, illetve a juttatási rendszerek és a szolgáltatók integrációja.
-- **Képzés**: Lehet, hogy külön környezetre lesz szüksége, amelyet a képzési adatok készletével konfigurált, hogy az alkalmazottakat ki tudja képezni az új rendszer használatára. 
-- **Többfázisos projekt**: Szükség lehet egy további környezetre a konfiguráció, az adatáttelepítés, a tesztelés és más tevékenységek támogatásához egy olyan projektfázisban, amelyet a projekt kezdeti indulása után terveztek be.
+- **Adatáttelepítés**: adatáttelepítési tevékenységek, amelyek lehetővé teszik, hogy a beérkezett üzenetek környezetét tesztelési célokra használják a projektben. A további környezetek lehetővé teszik az adatáttelepítési tevékenységek folytatását úgy, hogy a tesztelés és a konfigurálás ezzel egyidejűleg egy másik környezetben történik.
+- **Integráció**: konfigurálja és tesztelje az integrációkat, amelyekbe beletartozhat a natív integráció, például a Ceridian Dayforce vagy az egyéni integráció.
+- **Képzés**: Lehet, hogy egy olyan külön környezetre van szükség, amely a képzési adatok készletével van beállítva, hogy az alkalmazottakat az új rendszer használatára képezni tudja. 
+- **Többfáziss projekt**: A projekt kezdeti indulása után tervezett projektfázis konfigurációjának, adatáttelepítésének, tesztelésének és egyéb tevékenységeinek támogatása.
 
  > [!IMPORTANT]
  > Környezetének átgondolása során a következőket javasoljuk:
@@ -100,7 +101,7 @@ Miután létrehozott egy LCS-projektet, elvégezheti a Human Resources létesít
 2. Azt jelzi, hogy ez a környezet a Human Resources tesztkörnyezete-e vagy a termelési példánya. A korai előzetes funkciók elérhetők lehetnek a Védőfalpéldányokban, a korai visszajelzések és tesztelés érdekében.
    
     > [!NOTE]
-    > A Human Resources példány típusát a beállítás után nem lehet módosítani. Folytatás előtt győződjön meg arról, hogy a helyes példánytípus van kiválasztva.</br></br>
+    > Az Emberi erőforrások példánytípus nem módosítható egyszer beállítva. Folytatás előtt győződjön meg arról, hogy a helyes példánytípus van kiválasztva.</br></br>
     > A Human Resources példánytípus eltér a Microsoft Power Apps környezet Power Apps Felügyeleti központjában beállítható példánytípusától.
     
 3. Válassza a **Demó adatok felvétele** opciót, ha azt szeretné, hogy a környezet tartalmazza ugyanazt a demó adathalmazt, amelyet a humánerőforrás kísérleti környezetben használnak. A bemutatóadat hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni. Az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
@@ -111,7 +112,7 @@ Miután létrehozott egy LCS-projektet, elvégezheti a Human Resources létesít
 
 6. Válassza az **Igen** lehetőséget a feltételek elfogadásához és a telepítés megkezdéséhez.
 
-   Az új környezet megjelenik a bal oldali navigációs panelen látható környezetek listájában. Azonban a környezet nem indítható el mindaddig, amíg a telepítés állapota nem frissül **Telepítve** értékre. Ez a folyamat jellemzően csak pár percig tart. Ha a jogosultságkezelés folyamata sikertelen, kérje az Ügyfélszolgálat segítségét.
+   Az új környezet megjelenik a bal oldali navigációs panelen látható környezetek listájában. Nem elindíthatja azonban a **környezetet addig, amíg a telepítés nincs telepítve**. Ez a folyamat jellemzően csak pár percig tart. Ha a létesítés folyamata sikertelen, forduljon a támogatási szolgálathoz.
 
 7. Válassza a **Bejelentkezés a Human Resources szolgáltatásba** lehetőséget az új környezet használatához.
 
@@ -140,7 +141,7 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy melyik Power 
    
     - **Nem támogatott földrajzi területek** - A környezetnek támogatott földrajzi területnek kell lennie. A további tudnivalókat lásd: [Támogatott földrajzi területek](hr-admin-setup-provision.md#supported-geographies).
 
-6. A Human Resources és a Power Apps környezet integrálásához használható kettős írási képességek csak akkor használhatók, ha a **Dynamics 365 alkalmazások engedélyezése** beállítás van kiválasztva a környezetben. Lásd: [Kettős írás kezdőlapja](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) a kettős írással kapcsolatos további információkért.
+6. A Human Resources és a Power Apps környezet integrálásához használható kettős írási képességek csak akkor használhatók, ha a **Dynamics 365 alkalmazások engedélyezése** beállítás van kiválasztva a környezetben. A további tudnivalókat lásd [a Kétírásos honlapon](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
     > A Power Apps környezet létrehozásakor ki kell választani a **Dynamics 365-alkalmazások engedélyezése** beállítást. Ha a telepítéskor nem választja ki ezt a lehetőséget, nem használhatja a Kettős írás lehetőséget a Dynamics 365 Human Resources és a Power Apps környezet adatainak integrálására, és nem telepíthet Dynamics 365-alkalmazásokat, például a Dynamics 365 Sales és Field Service alkalmazásokat a környezetbe. Ez a beállítás nem visszavonható. 
@@ -175,3 +176,4 @@ Alapértelmezés szerint a környezetet csak az a globális rendszergazda érhet
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f44574abddb71e1a994ae60960e8c9c79242aff0
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860109"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112112"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potenciális vevők készpénzre váltása kettős írásban
 
@@ -29,7 +29,7 @@ Az alkalmazások kezelőfelületén a feldolgozási állapotok és a számlázá
 A vevői és kapcsolattartói integrációval kapcsolatos tudnivalókat lásd: [Integrált vevői alapadatok](customer-mapping.md). A termékintegrációval kapcsolatos tudnivalókat lásd: [Egyesített termékkel kapcsolatos tapasztalat](product-mapping.md).
 
 > [!NOTE]
-> A Dynamics 365 Sales megoldásban mind a potenciális vevő, mind a vevő egy olyan rekordra hivatkozik a **Számla** táblában, ahol a **RelationshipType** oszlop **Potenciális vevő** vagy **Vevő**. **·** **Ha** az üzleti logikában szerepel egy Számla – minősítési folyamat, amelyben a számlarekordot előbb létrehozzák, majd vevőként minősítik potenciális vevőként, akkor ez a rekord csak akkor szinkronizál a Pénzügy és műveletek alkalmazással, ha az vevő (`RelationshipType=Customer`). Ha azt szeretné, hogy a **Számla** sor potenciális vevőként szinkronizálva legyen, a potenciális vevői adatok integrálásához egyéni leképezés szükséges.
+> A Dynamics 365 Sales megoldásban mind a potenciális vevő, mind a vevő egy olyan rekordra hivatkozik a **Számla** táblában, ahol a **RelationshipType** oszlop **Potenciális vevő** vagy **Vevő**. **·** **Ha** az üzleti logika olyan számla-minősítési folyamatot tartalmaz, ahol a számlarekordot előbb létrehozzák, majd vevőként minősítik potenciális vevőként, akkor ez a rekord csak akkor szinkronizál a pénzügyi és műveleti alkalmazással, ha az vevő (`RelationshipType=Customer`). Ha azt szeretné, hogy a **Számla** sor potenciális vevőként szinkronizálva legyen, a potenciális vevői adatok integrálásához egyéni leképezés szükséges.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
@@ -122,7 +122,7 @@ A Potenciális vevők készpénzre váltása tartalmazza azokat a központi táb
 [CDS értékesítésiajánlat-fejléc](mapping-reference.md#215) | ajánlatok | |
 [CDS értékesítési ajánlat sorai](mapping-reference.md#214) | quotedetails | |
 [Kiadott termékek V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák | A Pénzügy és műveletek alkalmazás Értékesítési számlafejlécek V2 táblája tartalmazza az értékesítési rendelések és a szabadszöveges számlák számláit. A Dataverse kettős írás szűrője kiszűri a szabadszöveges számladokumentumokat. |
+[Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák | Az Értékesítési számla fejlécei V2 tábla a Pénzügy és műveletek alkalmazásban tartalmazza az értékesítési rendelések és a szabadszöveges számlák számláit. A Dataverse kettős írás szűrője kiszűri a szabadszöveges számladokumentumokat. |
 [Értékesítésiszámla-sorok V2](mapping-reference.md#117) | invoicedetails | |
 [Értékesítési rendelés eredetkódjai](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
@@ -135,3 +135,4 @@ Az árlistákkal kapcsolatos tudnivalókat lásd: [Egyesített termékkel kapcso
 - Az alapadatokhoz, például a vevőhöz és a szállítóhoz, be kell állítani a pénzügyi dimenziókat. Amikor egy vevőt hozzáadnak egy ajánlathoz vagy értékesítési rendeléshez, a vevői rekordhoz kapcsolódó pénzügyi dimenziók automatikusan bekerülnek a rendelésbe. A kettős írás jelenleg nem tartalmazza az alapadatok pénzügyi dimenzióinak adatait.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

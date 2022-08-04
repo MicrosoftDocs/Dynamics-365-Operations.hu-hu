@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aad48fbd3ee2f28f39f6061b5e922f5c4f47c8f6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867329"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103520"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Egyéni X++ parancsfájlok futtatása nullás leállással
 
@@ -120,7 +120,7 @@ Az alábbi lista a parancsfájlok sikeres megírására, megvalósítására és
 
 A következő eljárás szerint tölthet fel és futtathat parancsfájlt.
 
-1. A Pénzügy és műveletek alkalmazásban használja **a Rendszerfelügyelet \>\>\> – Időszakos feladatok adatbázis-egyéni parancsfájlokat.**
+1. A Pénzügy és műveletek alkalmazásban használja a Rendszerfelügyelet **\>\> – Időszakos \> feladatok adatbázis-egyéni parancsfájlokat.**
 1. Válassza a **Feltöltés** elemet.
 1. Válassza ki a korábban ismertetett módon létrehozott telepíthető csomagot. A program megkérdezi, hogy mi a forgatókönyv célja.
 1. A parancsfájlt most jóvá kell hagynia egy másik felhasználónak, aki feltöltötte. A jóváhagyónak a következő lépéseket kell követnie:
@@ -149,6 +149,7 @@ Az utolsó lépésben kiválasztott beállítás meghatározza a parancsfájl v�
 
 ## <a name="upload-and-run-a-deployable-package-through-lcs"></a>Telepíthető csomag feltöltése és futtatása az LCS-n keresztül
 
-A telepíthető csomag a Pénzügy és műveletek alkalmazás felhasználói felületén való telepítése helyett feltölthető az LCS-be, és a szokásos eljárás szerint telepítheti azt. A további tudnivalókat lásd [A telepíthető csomagok telepítése a parancssorból](../deployment/install-deployable-package.md).
+A telepíthető csomag a Pénzügyi és műveletek alkalmazás felhasználói felületén való telepítése helyett az előző szakaszban leírtak szerint feltölthető az LCS-be, és a szokásos eljárás szerint telepítheti azt. A további tudnivalókat lásd [A telepíthető csomagok telepítése a parancssorból](../deployment/install-deployable-package.md).
 
 Bár ebben a megközelítésben kevesebb korlátozás van, kisebb hiba védelmét biztosítja. Ezenkívül, mivel az összes kiszolgáló újraindítását igényli, leállást okoz.
+

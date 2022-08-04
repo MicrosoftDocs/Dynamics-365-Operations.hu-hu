@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 224d3ce5c9163e95de817a3446a57f07c85df757
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b5336549937edca6beb94137896f84b460f257f7
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863853"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111330"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Beszerzési rendelés jóváhagyása mobil munkaterület
 
@@ -71,7 +71,7 @@ Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
-Töltse le és telepítse a Finance and Operations mobilalkalmazást:
+Töltse le és telepítse a Pénzügy és műveletek mobilalkalmazást:
 
 - [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 - [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -114,3 +114,4 @@ Miután megtekintette az Önhöz rendelt beszerzési rendelést, és elolvasta a
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

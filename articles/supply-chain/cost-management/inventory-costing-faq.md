@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a1d86e7e9cca159d0a820680714a08dc73c0688
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850844"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068393"
 ---
 # <a name="inventory-costing-faq"></a>Készlet költségszámítási gyakori kérdések
 
@@ -112,11 +112,11 @@ Nem, nem engedélyezheti a **Pénzügyi** készlet beállítást a **Tárolási*
 
 ### <a name="should-i-enable-the-use-warehouse-management-processes-option-for-the-storage-dimension-group"></a>Engedélyezzem a Raktárkezelési folyamatok használata beállítást a tárolási dimenziócsoporthoz?
 
-Ha úgy gondolja, hogy a jövőben használni szeretné a speciális raktárkezelési funkciókat, **engedélyeznie kell a Raktárkezelési folyamatok használata** beállítást. A tárolásidimenzió-csoportok **mentése** után már nem lehet módosítani a Raktárkezelési folyamatok használata beállítását. Ha később úgy dönt, hogy használni fogja a raktárkezelési folyamatokat, létre kell hoznia egy új raktárat, ahol ez a lehetőség engedélyezve van. Nincs olyan automatizált folyamat, amely a készlet egyik raktárból a másikba történő áthelyezését, illetve a kapcsolódó konfigurációk új raktárba történő másolását nem használhatja.
+Ha úgy gondolja, hogy a jövőben használni szeretné a raktárkezelési folyamatokat (WMS), **engedélyeznie** kell a Raktárkezelési folyamatok használata beállítást. A tárolásidimenzió-csoportok **mentése** után már nem lehet módosítani a Raktárkezelési folyamatok használata beállítását. Ha később úgy dönt, hogy használni fogja a raktárkezelési folyamatokat, létre kell hoznia egy új raktárat, ahol ez a lehetőség engedélyezve van. Nincs olyan automatizált folyamat, amely a készlet egyik raktárból a másikba történő áthelyezését, illetve a kapcsolódó konfigurációk új raktárba történő másolását nem használhatja.
 
-### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-advanced-warehousing"></a>Engedélyezhetik a Raktárkezelési folyamatok használatát a tárolásidimenzió-csoporthoz akkor is, ha nem tervezek speciális raktárkezelést?
+### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-warehouse-management-processes-wms"></a>Engedélyezhetik a Raktárkezelési folyamatok használatát a tárolásidimenzió-csoporthoz akkor is, ha nem tervezem a raktárkezelési folyamatok (WMS) használatát?
 
-Igen, még akkor is, ha nem tervezi a speciális raktárkezelési funkciók használatát, akkor **is** engedélyezheti a Raktárkezelési folyamatok használata beállítást a tárolási dimenziócsoporthoz. A tranzakciók létrehozásához és feldolgozásához be kell fejeződni a minimális konfiguráció, például a foglalási hierarchiák és az egységszekvencia-csoportok. A speciális raktározási beállításokat ugyanakkor általában figyelmen kívül hagyja a rendszer, amikor manuálisan feldolgoz egy kitárolási listát, csomagjegyzéket és termékbevételezést (például az értékesítési és a beszerzési rendelés lapjain).
+Igen, még akkor is, ha nem tervezi a raktárkezelési folyamatok (WMS) szolgáltatások használatát, **engedélyezheti** a Raktárkezelési folyamatok használata beállítást a tárolási dimenziócsoporthoz. A tranzakciók létrehozásához és feldolgozásához be kell fejeződni a minimális konfiguráció, például a foglalási hierarchiák és az egységszekvencia-csoportok. A WMS beállításai ugyanakkor általában figyelmen kívül maradnak, ha a kitárolási listákat, a csomagjegyzékeket és a termékbevételezéseket manuálisan kell feldolgozni (például az értékesítési rendelések és a beszerzési rendelések lapjain).
 
 ### <a name="when-should-i-enable-the-physical-inventory-option-for-a-storage-or-tracking-dimension-group"></a>Mikor kell engedélyezni a Fizikai készlet beállítást tárolási vagy nyomon követési dimenziócsoportokhoz?
 

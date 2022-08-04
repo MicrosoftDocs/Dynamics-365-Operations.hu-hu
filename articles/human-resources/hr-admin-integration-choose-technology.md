@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79aee04527eea5b673555f9c7de893a400a5c617
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2c542684642e4f6eda0f862623889a68f85b2b20
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887798"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068878"
 ---
 # <a name="choose-a-data-integration-technology"></a>Adatintegrációs technológia kiválasztása
 
@@ -70,7 +70,7 @@ A Dataverse-táblák és a társított API-jaik jelentik a legjobb megoldást a 
 
 ### <a name="dmfdixf-entities"></a>DMF-/DIXF-entitások
 
-Az emberi erőforrások – amelyek elsősorban a [Pénzügy és műveletek alkalmazásokkal azonos platformra épülnek – egy DMF-keretrendszert (Data Management Framework– DMF) biztosít](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). A DMF Adatimportálási és-exportálási keretrendszerként (DIXF) is ismert. A Human Resources a humánerőforrás-adatok importálására és exportálására használható adatentitások készletét biztosítja. Noha a Dataverse-táblák alkotják a Human Resources elsődleges adatintegrációs felületét, a DMF-entitások továbbra is hasznosak lehetnek bizonyos körülmények között, például a következő helyzetekben:
+Az emberi erőforrások – amelyek elsősorban a [pénzügyi és műveletalkalmazásokkal azonos platformra épülnek – egy DMF-keretrendszert (Data Management Framework – DMF) biztosít](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). A DMF Adatimportálási és-exportálási keretrendszerként (DIXF) is ismert. A Human Resources a humánerőforrás-adatok importálására és exportálására használható adatentitások készletét biztosítja. Noha a Dataverse-táblák alkotják a Human Resources elsődleges adatintegrációs felületét, a DMF-entitások továbbra is hasznosak lehetnek bizonyos körülmények között, például a következő helyzetekben:
 
 - A Dataverse-táblák még nem érhetők el.
 
@@ -153,3 +153,4 @@ Mivel számos különböző integrációs technológia érhető el, a használan
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

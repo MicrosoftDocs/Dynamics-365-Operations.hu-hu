@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b0427d33ac39d34bccc302e58bb84e1ad4c3598c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 12a9c57e2587150914c6087c041d63af9783c1f3
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888441"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103697"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>A Microsoft Dynamics 365 Field Service integráció áttekintése
 
@@ -73,7 +73,7 @@ A második fázisban a további funkciók célja, hogy a szerviztechnikusok bete
 ### <a name="system-requirements-for-supply-chain-management"></a>A Supply Chain Management rendszerkövetelményei
 A Field Service integráció a következő verziókat támogatja:
 
-- A Dynamics 365 for Finance and Operations 8.1.2-es verziója (2018. december) 2018. decemberben jelent meg, az alkalmazás buildszáma pedig 8.1.195, valamint 22-es platformfrissítés (7.0.5095). 
+- A Dynamics 365 Finance and Operations 8.1.2-es verziója (2018. december) 2018. decemberben jelent meg, és van egy 8.1.195 platformfrissítési 22 (7.0.5095) alkalmazás buildszámával. 
 
 ### <a name="system-requirements-for-field-service"></a>A Field Service rendszerkövetelményei
 A Field Service integrációs megoldás használatához telepítenie kell a következő összetevőket:

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fa27e20bc0c0ff5c639dfb2d079adef8926f535f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889149"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069347"
 ---
 # <a name="asset-leasing-home-page"></a>Eszközlízing – kezdőlap
 
@@ -90,7 +90,7 @@ Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](/
 
 ### <a name="blogs"></a>Blogok
 
-A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 Finance and Operations – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál.
+A 365-ös és a 365-ös [Microsoft Dynamics](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) pénzügy és művelet – Pénzügy lapról további véleményeket, [Microsoft Dynamics híreket és egyéb információkat találhat](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket a Dynamics 365 új és népszerű fejlesztéseiről.
 
@@ -100,3 +100,4 @@ Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

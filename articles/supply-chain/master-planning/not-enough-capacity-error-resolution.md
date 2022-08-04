@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d4f54c06a07b3cdd0b8fe2cc52614189ff31ba7f
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891031"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135599"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>A „Nem található elegendő kapacitás" ütemezési motorhiba megoldása
 
@@ -99,17 +99,53 @@ A korlátlan kapacitásütemezés végrehajtásához hajtsa végre ezeket a lép
 Az erőforrás rendelkezésre álló kapacitásának ellenőrzéséhez hajtsa végre a következő lépéseket.
 
 1. Menjen a **Szervezeti felügyelet \> Erőforrások \> Erőforrások** lapra, és válassza ki az erőforrást, amely arra a rendelésre vonatkozik, amely nem ütemezhető.
-1. A műveleti ablaktábla **Erőforrás** lapján a **Megtekintés** csoportban válassza a **Kapacitásterhelés** vagy a **Kapacitásterhelés grafikusan** elemet, és győződjön meg róla, hogy van elérhető kapacitás.
+1. A műveletpanel Erőforrás **lapján, a** **·** **Nézet** csoportban jelölje ki a Kapacitásterhelés vagy a Kapacitásterhelés lehetőséget grafikus formában, **és ellenőrizze, hogy van-e rendelkezésre álló kapacitás.**
 
 Az erőforráscsoport rendelkezésre álló kapacitásának ellenőrzéséhez hajtsa végre a következő lépéseket.
 
 1. Menjen a **Szervezeti felügyelet \> Erőforrások \> Erőforráscsoportok** lapra, és válassza ki az erőforráscsoportot, amely arra a rendelésre vonatkozik, amely nem ütemezhető.
-1. A műveleti ablaktábla **Erőforráscsoport** lapján a **Megtekintés** csoportban válassza a **Kapacitásterhelés** vagy a **Kapacitásterhelés grafikusan** elemet, és győződjön meg róla, hogy van elérhető kapacitás.
+1. A műveletpanel Erőforráscsoport lapján, **·** **·** **a Nézet csoportban jelölje ki a Kapacitásterhelés vagy a Kapacitásterhelés lehetőséget grafikus formában,** és ellenőrizze, hogy rendelkezésre áll-e szabad kapacitás.**·**
 
 ## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Alaptervezési könyvek egy erőforrás számára az erőforrásnaptár zárása után
 
 A műveletütemezés használata esetén az alaptervezés az elsődleges erőforráscsoport naptára szerint tervezi meg a kapacitást. A másodlagos műveletet az elsődleges művelettel egyidejűleg könyvzi, és nem veszi figyelembe a másodlagos művelet naptárát és kapacitását. Emiatt a termelési rendelés ütemezése lezárt naptárhoz vagy olyan időponthoz vezethet, amikor a másodlagos művelet nem érhető el (naptár lezárva, nincs kapacitás).
 
 A feladatütemezés használata esetén a rendelés ütemezője során az alaptervezés figyelembe veszi mind az elsődleges, mind a másodlagos művelet kapacitását és naptárát. A rendelés ütemezése csak akkor lehetséges, ha a műveletek erőforrásainak naptárai nyitottak és rendelkezésre állnak.
+
+## <a name="maximum-job-lead-time-is-too-short"></a>A feladat maximális átfutási ideje túl rövid.
+
+Az ütemezési motor **nem** fog tudni rendelést ütemezni, ha a telephelyhez beállított maximális átfutási idő kevesebb, mint az alapértelmezett rendelési és fedezeti beállításokban megadott cikk átfutási ideje.
+
+A webhely maximális átfutási ideje beállításának megtekintéséhez vagy szerkesztéséhez nyissa meg a Gyártásvezérlés **beállítása** gyártásvezérlési paramétereket **, és nyissa meg az Általános \>\> lapot.** **·**
+
+A cikkek alapértelmezett rendelési beállításainak megtekintéséhez vagy szerkesztéséhez hajtsa végre a következő lépéseket:
+
+1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
+1. Keresse meg és válassza ki a listában a kívánt terméket.
+1. A munkaablakban nyissa meg a Készlet kezelése **lapot**, és válassza az Alapértelmezett rendelési **beállításokat**.
+1. Bontsa ki **a** Készlet gyorsét, **és szükség szerint tekintse meg vagy módosítsa a készlet átfutási ideje** beállítását.
+
+Egy cikk fedezeti beállításainak megtekintéséhez vagy szerkesztéséhez hajtsa végre a következő lépéseket:
+
+1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
+1. Keresse meg és válassza ki a listában a kívánt terméket.
+1. A műveletpanelen nyissa meg a Terv **lapot**, és válassza a Cikkfedezet **lehetőséget**.
+1. Nyissa meg az Átfutási **idő** lapot, és tekintse meg **vagy módosítsa a termelés időértékét**.
+
+## <a name="excessive-quantity-of-required-resources"></a>Szükséges erőforrások túlságosan nagy mennyisége
+
+Az ütemezés során a motor megpróbálja az útvonalművelethez beállított szükséges erőforrásmennyiséget a műveleti erőforrásigénynek megfelelően megfeleltetni a megfelelő erőforrásoknak. Ha túl nagy erőforrásmennyiséget ad meg, az útvonal elérhetetlenné válik, ami ütemezési hibát fog okozza.
+
+A következő eljárással lehet ellenőrizni a kiválasztott termékre, útvonalra és útvonalműveletre vonatkozó megadott mennyiséget és a szükséges erőforrásokat:
+
+1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
+1. Keresse meg és válassza ki a kívánt terméket a rácsban.
+1. A munkaablakban nyissa meg a Mérnöki **lapot**, és válassza az Útvonal **lehetőséget**.
+1. A rácsban megkeresheti és kiválaszthatja a kívánt útvonalat.
+1. A lap alján található **Áttekintés** lap megnyitása.
+1. Művelet kiválasztása a kijelölt útvonalműveletek listájából.
+1. A **Megfelelő erőforrások kiválasztása** egy párbeszédpanel megnyitásához, ahol megtekintheti a kiválasztott útvonalműveletre vonatkozó erőforrásokat.
+1. Az Erőforrás-terhelés **lap** megnyitása Az **itt** látható Mennyiség mező mutatja a kiválasztott útvonalművelethez szükséges erőforrásmennyiséget. Szükség szerint tekintse meg és/vagy szerkessze a nézetet.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

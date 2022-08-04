@@ -1,6 +1,6 @@
 ---
 title: Raktári folyamatok minőségkezelése
-description: Ez a cikk a raktári folyamatok minőségkezelésével kapcsolatban tartalmaz tájékoztatást. Ez a funkció kiterjeszti a minőségkezelési funkciókat, és lehetővé teszi a felhasználók számára, hogy a speciális raktárkezelés modul segítségével cikk-mintavételezési funkciókat integráljanak a raktárba.
+description: Ez a cikk a raktári folyamatok minőségkezelésével kapcsolatban tartalmaz tájékoztatást. Ez a funkció a minőségkezelési képességeket bővíti ki, és a raktárkezelési folyamatok (WMS) segítségével lehetővé teszi a felhasználók számára a cikkmintavételi ellenőrzések integrálását a raktár bevételezési folyamatába.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857837"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069242"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Raktári folyamatok minőségkezelése
 
 [!include [banner](../includes/banner.md)]
 
-A _Minőségkezelés a raktárfolyamatokhoz_ funkció lehetővé teszi, hogy a speciális raktárkezelés modul segítségével cikk-mintavételezési funkciókat integráljon a raktárba. A raktári munka automatikusan létrehozható úgy, hogy a készletet a minőség-ellenőrzési helyre helyezze át, egy százalék vagy a rögzített mennyiség szerint ,illetve minden *n*. azonosítótáblára vonatkozóan. A minőségi rendelés befejezése után a minőségi eredményektől függően automatikusan létrehozható a munka a készlet következő helyre történő áthelyezéséhez.
+A _raktári folyamatok minőségkezelése_ funkcióval a raktárkezelési folyamatok (WMS) segítségével a cikkmintavételi vezérlőket integrálhatja a raktári bevételezési folyamatba. A raktári munka automatikusan létrehozható úgy, hogy a készletet a minőség-ellenőrzési helyre helyezze át, egy százalék vagy a rögzített mennyiség szerint ,illetve minden *n*. azonosítótáblára vonatkozóan. A minőségi rendelés befejezése után a minőségi eredményektől függően automatikusan létrehozható a munka a készlet következő helyre történő áthelyezéséhez.
 
 A _Minőségkezelés a raktári folyamatokhoz_ funkció kiterjeszti az alapvető minőségkezelési funkció képességeit. A minőség-ellenőrzési helyre küldött készlethez minőségi rendelések létrehozását teszi lehetővé, bár a minőségi rendelések nem mindig szükségesek. Így egy könnyű minőségellenőrzési folyamatot tesz lehetővé, amely a raktári munkákon alapul.
 
@@ -77,7 +77,7 @@ Mielőtt a _Raktári folyamatok minőségkezelése_ funkciót egy adott raktárr
 
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Raktár \> Raktárak** pontra.
 1. Jelölje ki a raktárat, amelyet engedélyezni szeretne a minőségkezeléshez.
-1. A **Raktár** gyorslapon állítsa be a **Minőségi rendelések engedélyezése a raktári folyamatokhoz** beállítást _Igen_ értékre. (Ne feledje, hogy ez a beállítás csak a raktárkezelési folyamatokat használó raktárak esetében lehet _Igen_ értékre állítani.)
+1. A **Raktár** gyorslapon állítsa be a **Minőségi rendelések engedélyezése a raktári folyamatokhoz** beállítást _Igen_ értékre. (Ne feledje, hogy ez a beállítás a _Igen_, csak a raktárkezelési folyamatokat (WMS) használjon raktáraknál.)
 
 Ha a **Raktári folyamatok minőségi rendelésének engedélyezése** beállítás _Igen_ értékre van állítva, akkor a minőség társítása beállítás határozza meg, hogy a _Raktári folyamatok minőségkezelése_ funkció valójában alkalmazva van-e a kijelölt raktárra. A beállítás értékét bármikor _Nem_ értékre módosíthatja. Ebben az esetben a funkció a minőség társítása beállításaitól függetlenül nem lesz érvényes a raktárra.
 
@@ -97,7 +97,7 @@ Minden [minőség-hozzárendelési rekord](enable-quality-management.md) meghat�
     - **Mind** – A _Raktári folyamatok minőségkezelése_ funkció kikapcsolása. Válassza ki ezt az értéket minden hivatkozástípus esetében a *Beszerzés* és *Termelés* kivételével.
 
 > [!NOTE]
-> A _Raktári folyamatok minőségkezelése_ funkció csak akkor lép érvénybe, ha a forrásbizonylat sorában található cikk speciális raktárkezelési folyamatokat használ, és ha a **Minőségi rendelések engedélyezése a raktári folyamatokhoz** beállítás értéke _Igen_ a forrásbizonylat sorában található raktárhoz.
+> _A_ raktári folyamatok minőségkezelése funkció csak akkor lép hatályba, ha a forrásdokumentum sorában található cikk raktárkezelési folyamatokat (WMS) használ, **·** _és_ ha a raktári folyamatok minőségi rendelésének engedélyezése beállítás Igen a forrásdokumentumsor raktára esetén.
 
 Mivel minden egyes cikk regisztrálva van (vagy készként jelentve), a rendszer határozza meg, hogy melyik minőségi társítás vonatkozik rá.
 

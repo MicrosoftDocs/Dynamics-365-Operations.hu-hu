@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a4eb70144957ecdbeba4246fb8c7cd6a20cb08c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934723"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108329"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
 
@@ -36,7 +36,7 @@ Az ebben a példában olvasható példák csak a következő hozzáféréssel eg
     - Elektronikus jelentések funkcióival foglalkozó konzulens
     - Rendszergazda
 
-- Hozzáférés a Regulatory Configuration Service (RCS) szolgáltatáshoz, amelyet ugyanarra a bérlőre telepítettek, mint a Finance and Operations szolgáltatást, a következő szerepkörök egyikéhez:
+- Hozzáférés a szabályozó konfigurációs szolgáltatásokhoz (RCS), amely ugyanannak a bérlőnek van létesítve, mint a pénzügy és a műveletek a következő szerepkörök valamelyikéhez:
 
     - Elektronikus jelentések fejlesztője
     - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -84,7 +84,7 @@ Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállal
             - Adóértékek összege.
             - Az alkalmazott adómérték minimális értéke.
 
-    Az ebben a konfigurációban szereplő modell-hozzárendelés az alapadatok modellt alkalmazza az ehhez a modellhez létrehozott, valamint a Finance and Operations megoldásban végrehajtott összes ER-formátum esetében. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
+    A konfigurációban található modellleképezés az adott modellhez létrehozott és pénzügyben és műveletekben végrehajtott ER-formátumok alapadatmodellját valósítja meg. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
 
     ![Modell-hozzárendelés tervező lapja az Adó és Gr adatforrásokat jeleníti meg.](media/er-calculated-field-type-01.png)
 
@@ -343,3 +343,4 @@ Az **RCS** típushoz tartozó ER-tároló használatával importálhatja az átt
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

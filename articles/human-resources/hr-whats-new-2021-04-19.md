@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fffe9c042c71dc220179bb6d1ba7fd59d5e53cc0
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846300"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069533"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban, 2021. április 19.
 
@@ -41,7 +41,7 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 
 | Funkció | Kiadási terv | Dokumentáció |
 | --- | --- | --- |
-| Platform frissítése erre: 10.0.17 (41) | -- | [A Pénzügy és műveletek alkalmazások 10.0.17-es verziójának platformfrissítései (2021. április)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| Platform frissítése erre: 10.0.17 (41) | -- | [A Pénzügyi és műveleti alkalmazások 10.0.17-es verziójának platformfrissítései (2021. április)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | Egyéni mezők támogatása a Juttatások kezelése űrlapokon | [Egyéni mező támogatása a juttatások kezelésében](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Juttatáskezelés áttekintése](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>Hibajavítások
@@ -90,3 +90,4 @@ A tervezett funkciók és az ütemezett kiadásaik teljes listáját lásd: [A D
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860164"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109462"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
@@ -209,7 +209,7 @@ A tisztítási folyamat ütemezésekor a következő paramétereket kell megadni
 ## <a name="job-history-clean-up-and-archival"></a>Feladatelőzmények tisztítása és archiválása 
 A feladat előzmények törlése és archiválása funkció felülírja a karbantartás funkció korábbi verzióit. Ez a szakasz ezeket az új képességeket fogja elmagyarázni.
 
-A karbantartás funkció egyik fő változtatása a rendszer kötegelt munkájának használata a előzmények törlésére. A rendszer kötegelt feladatának használata lehetővé teszi, hogy a pénzügyi és a műveletalkalmazások a tisztítási kötegelt feladatot automatikusan ütemezve tásszák, és a rendszer elkészültének amint a rendszer készen áll. A kötegelt feladat manuális ütemezésére már nincs szükség. Ebben az alapértelmezett végrehajtási módban a kötegelt feladat éjféltől óránként indul, és a legutóbbi 7 nap végrehajtási előzményeit fogja megtartani. A program archiválja a kiürített előzményeket a jövőbeli visszakeresés céljából. A 10.0.20-as verziótól kezdve ez a funkció mindig be van kapcsolva.
+A karbantartás funkció egyik fő változtatása a rendszer kötegelt munkájának használata a előzmények törlésére. A rendszer kötegelt feladatának használata lehetővé teszi, hogy a pénzügyi és a műveletalkalmazások a tisztítási kötegelt feladatot automatikusan ütemezni és futtatják, amint a rendszer készen áll. A kötegelt feladat manuális ütemezésére már nincs szükség. Ebben az alapértelmezett végrehajtási módban a kötegelt feladat éjféltől óránként indul, és a legutóbbi 7 nap végrehajtási előzményeit fogja megtartani. A program archiválja a kiürített előzményeket a jövőbeli visszakeresés céljából. A 10.0.20-as verziótól kezdve ez a funkció mindig be van kapcsolva.
 
 A karbantartási folyamat második változása a törölt végrehajtási előzmények archiválása. A karbantartási feladat archiválja a törölt rekordokat a blob-tárolóba amelyet a DIXF használ a rendszeres integrációhoz. Az archivált fájl DIXF-csomagformátumú lesz, és 7 napig elérhető lesz a blobban, és ekkor azt le lehet tölteni. Az archivált fájl alapértelmezett megtartási időtartama 7 nap, ami legfeljebb 90 napra módosítható a paraméterekben.
 
@@ -235,3 +235,4 @@ Az archivált végrehajtási előzmények letöltéséhez nyissa meg az adatkeze
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

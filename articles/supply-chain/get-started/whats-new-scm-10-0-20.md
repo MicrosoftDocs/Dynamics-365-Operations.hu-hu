@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3eadc447d8c0c443fa9d3eab220300e3eedf051d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888643"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123808"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.20 szolgáltatásban (2021. augusztus)
 
@@ -71,9 +71,9 @@ Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikke
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A pénzügyi és az üzemeltetési alkalmazások platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.20 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.20-as verziójának Platformfrissítései (2021. július)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
+A Microsoft Dynamics 365 Supply Chain Management 10.0.20 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és üzemeltetési alkalmazások 10.0.20-as verziójának Platformfrissítései (2021. július)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
@@ -98,3 +98,4 @@ Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de bin�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

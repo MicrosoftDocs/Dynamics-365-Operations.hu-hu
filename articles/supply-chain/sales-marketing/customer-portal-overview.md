@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ff074e62489fe74f0c2de6dae0e02d1da7e7f6ae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f34acd78966cc9f26242653e9d0d16fdf22e0b2
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901908"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103830"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>A Dynamics 365 Supply Chain Management Ügyfélportáljának áttekintése
 
@@ -42,7 +42,7 @@ A Ügyfélportál-sablon minden olyan testreszabási funkcióval rendelkezik, am
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-A [vevői portál Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) sablonjának áttekintése videofelvételen (fent látható) [a Pénzügy és műveletek űrlapon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) érhető el YouTube.
+A [vevői portál Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) sablonjának áttekintése videofelvételen (fent látható) [a pénzügyi és műveletek elérhetővé](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) tevében YouTube.
 
 ## <a name="who-should-use-it"></a>Kinek érdemes használnia?
 
@@ -62,7 +62,7 @@ Az Ügyfélportál Power Apps-portálok sablonként van szállítva. A Power App
 
 A [Power Apps-portálok](/powerapps/maker/portals/overview) olyan funkció, amely lehetővé teszi, hogy a felhasználók egy kívülről elérhető hozzanak létre, amelybe a szervezeten kívüli személyek be tudnak jelentkezni. A portálok létrehozásához alig vagy nem szükséges kódolás. A Ügyfélportál a Microsoft által elérhető számos [Dynamics 365 portálsablon egyike](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365).
 
-[A kettős](/powerapps/maker/portals/overview) írás egy olyan infrastruktúra-termék, amely szinte valós idejű kommunikációt biztosít az ügyfél-megállapodási alkalmazások, illetve a Pénzügy és az Üzemeltetés alkalmazások között. A kettős írás kétirányú integrációt biztosít a Pénzügy és a Műveletek alkalmazások és a Microsoft Dataverse. Ezért integrált felhasználói élményt nyújt az alkalmazások között. A Ügyfélportál a kettős írással szinkronizált táblákra épül. Mielőtt az Supply Chain Management alkalmazásból adatok felhasználhatók lennének a vevői portálon, a kettős írást az összes szükséges táblához engedélyezni kell.
+[A kettős](/powerapps/maker/portals/overview) írás egy olyan infrastruktúra-termék, amely szinte valós idejű kommunikációt biztosít az ügyfél-megállapodási alkalmazások, illetve a pénzügyi és műveleti alkalmazások között. A kettős írás kétirányú integrációt biztosít a pénzügyek és a műveletalkalmazások, valamint a Microsoft Dataverse. Ezért integrált felhasználói élményt nyújt az alkalmazások között. A Ügyfélportál a kettős írással szinkronizált táblákra épül. Mielőtt az Supply Chain Management alkalmazásból adatok felhasználhatók lennének a vevői portálon, a kettős írást az összes szükséges táblához engedélyezni kell.
 
 ![Ügyfélportál függőségei.](media/customer-portal-elements.png "Ügyfélportál függőségei")
 

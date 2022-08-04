@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
-ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
+ms.openlocfilehash: 463a66002ec7a6536c9ff829f9ea2c3734138eae
+ms.sourcegitcommit: 6221a25f81aa83ab335de7cb6b6c3014dbec0116
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9013555"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "9177148"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Első lépések a Global Inventory Accounting szolgáltatással
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 A Global Inventory Accounting szolgáltatás segítségével több készlet könyveléseit végezheti el a beállított Global Inventory Accounting főkönyvben. Minden Global Inventory Accounting főkönyvhöz egy *szabályt* társít. Egy szabály a következő típusú könyvelési irányelvek gyűjteményét jelenti:
 
@@ -69,28 +67,34 @@ A bővítmények funkcióit a következő lépések segítségével kell Microso
 
 További információkért lásd: [Engedélyezés a környezet üzemelő példánya után](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="install-the-add-in"></a><a name="install"></a>Telepítse a bővítményt
+## <a name="install-or-update-the-add-in-and-solution"></a><a name="install"></a> A bővítmény és a megoldás telepítése vagy frissítése
 
-A következő lépések szerint telepítheti a bővítményt a Global Inventory Accounting használata érdekében.
+A következő eljárás szerint telepítheti vagy frissítheti a Globális készletkönyvelés bővítményét és megoldását. Az eljárásnak az a része, amelyet végre kell követnie, attól függ, hogy első alkalommal telepíti a rendszert, vagy csak egy meglévő telepítés megoldását kell frissítenie.
+
+- Ha még soha nem telepítette a bővítményt, a teljes eljárást kövesse a bővítmény és a megoldás telepítéséhez is.
+- Ha már globális készletkönyvelést [Power Platform használ, de frissítenie kell a megoldást a rendszergazdai](https://admin.powerplatform.microsoft.com) központban, csak a 6. lépést tegye meg, és hagyja ki az összes többi lépést.
+
+A bővítmény és a megoldás telepítése vagy frissítése:
 
 1. Bejelentkezés az [LCS](https://lcs.dynamics.com/Logon/Index) alkalmazásba.
 1. Nyissa meg azt a LCS-környezetet, amelyhez hozzá szeretné adni a szolgáltatást.
 1. Lépjen a **Teljes részletek** elemre.
-1. Menjen a **Power Platform Integráció** gombra, és válassza a **Telepítőt**.
+1. Menjen az Integráció **Power Platform gombra,** és válassza a **Telepítőt**.
 1. A **Power Platform környezetének** beállítása párbeszédpanelen jelölje be a jelölőnégyzetet, majd válassza a **Beállítás** lehetőséget. A beállítás általában 60 és 90 perc közötti időt vesz igénybe.
-1. A környezet beállítása után Microsoft Power Platform jelentkezzen be a rendszergazdai központba, [Power Platform](https://admin.powerplatform.microsoft.com) majd a következő lépések szerint telepítse a Globális készletkönyvelés bővítményt:
-   1. Válassza ki azt a környezetet, ahová telepíteni szeretné a bővítményt.
+1. A környezet Microsoft Power Platform beállítása után jelentkezzen be a rendszergazdai központba, [Power Platform](https://admin.powerplatform.microsoft.com) majd a következő lépések segítségével telepítse vagy frissítse a globális készletkönyvelési megoldást:
+   1. Válassza ki azt a környezetet, ahová telepíteni vagy frissíteni szeretné a megoldást.
    1. Válassza ki a **Dynamics 365-alkalmazásokat**.
    1. Válassza a **Telepítési alkalmazást**.
    1. Válassza a **Dynamics 365 globális készletkönyvelést**.
    1. A telepítéshez **válassza a Tovább** gombra.
-1. Vissza az LCS-környezethez. A **Környezetbővítmények** gyorslapon válassza az **Új bővítmény telepítése** lehetőséget.
+1. A megoldás teljes telepítése után menjen vissza az LCS-környezethez. A **Környezetbővítmények** gyorslapon válassza az **Új bővítmény telepítése** lehetőséget.
 1. Válassza a **Globális Inventory Accounting** eseményt.
 1. Kövesse a telepítési útmutatót, és fogadja el a feltételeit és kikötéseit.
 1. Válassza a **Telepítés** parancsot.
 1. A **Környezeti bővítmények** gyorslapon látható, hogy a Global Inventory Accounting szolgáltatás telepítése folyamatban van. Néhány perc múlva az állapotot változik *Telepítés folyamatban* állapotról *Telepítve* értékre. (Elképzelhető, hogy frissíteni kell a lapot a változás megtekintéséhez.) Ezen a ponton a Global Inventory Accounting szolgáltatás készen áll a használatra.
 
 Ha a telepítés alapértelmezett Dataverse nyelve nem angol, kövesse az alábbi lépéseket:
+
 1. Ugrás ide: **Speciális beállítások \> Adminisztráció \> Nyelvek**.
 1. Válassza az *Angol* (*LanguageCode=1033*), és majd az **Alkalmaz** lehetőséget.
 

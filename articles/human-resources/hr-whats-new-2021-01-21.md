@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9f1f660b7993804901f5fc9d3b608c141882bff5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f1daf630d3a9354012db9b5b487d8a5ed11e0ed
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901089"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066700"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. január 21.)
 
@@ -42,7 +42,7 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 
 | Funkció | Kiadási terv | Dokumentáció |
 | --- | --- | --- |
-| 10.0.16(40) platformfrissítés | -- | [A Pénzügy és műveletek alkalmazások 10.0.16-os verziójának platformfrissítései (2021. február)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| 10.0.16(40) platformfrissítés | -- | [A Pénzügyi és műveletalkalmazások alkalmazás 10.0.16-os verziójának platformfrissítései (2021. február)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
 | Továbbfejlesztett munkafolyamat-kérelmek és -jóváhagyások | [Szervezeti és személyzeti felügyeleti munkafolyamat-tapasztalatok továbbfejlesztései](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurációs beállítás a hozzám rendelt munkaelemek lista pozicionálásához](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | Az 1095-C űrlap, az 1095-B űrlap Affordable Care Act megfelelőségi frissítései, valamint elektronikus jelentéskészítés az örökölt Juttatások szolgáltatásban | -- | -- | 
 | A juttatások kezelése mostantól támogatja az ACA-megfelelőségi jelentéseket az egyesült államokbeli jogi személyek számára | -- | [ACA-jelentések készítése a Juttatáskezelésben](hr-benefits-management-aca-reports.md) |

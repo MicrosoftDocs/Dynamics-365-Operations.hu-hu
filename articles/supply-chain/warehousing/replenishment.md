@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dceb8e6300d19eb9253e88debbaaef0b6987420
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 075e74845eb8e0363cdb706f1f3af0dc9cfddfaa
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893091"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069182"
 ---
 # <a name="replenishment-overview"></a>Feltöltés áttekintése
 
@@ -70,8 +70,8 @@ Ahelyett, hogy a felosztási folyamat végén összegezné az igényeket és vé
 
 |      Előfeltételek       |                                                                                                                                Leírás                                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          Cikk           |                                                                                                        A cikknek elérhetőnek kell lennie a raktárkezelő folyamathoz.                                                                                                        |
-|        Raktár        | A raktárnak elérhetőnek kell lennie a raktárkezelő folyamathoz. A raktárt a <strong>Raktárak</strong> oldalon a raktár kiválasztásával, majd a <strong>Raktárkezelési folyamatok alkalmazása</strong> lehetőség kijelölésével tudja a raktárkezelési folyamatokhoz elérhetővé tenni. |
+|          Cikk           |                                                                                                        A cikket engedélyezni kell a raktárkezelési folyamatokhoz (WMS).                                                                                                        |
+|        Raktár        | A raktárat engedélyezni kell a raktárkezelési folyamatokhoz (WMS). Ha engedélyezni szeretné a raktárat a WMS számára, válassza ki a raktárat <strong></strong> a Raktárak lapon, <strong></strong> majd válassza a Raktárkezelési folyamatok használata lehetőséget. |
 | Feltöltési sablonok |                                                                   Legalább az egyik feltöltési sablon esetén be kell állítani a Minimális vagy maximális feltöltést, Hullámigény feltöltését vagy a Rakomány igényfeltöltését.                                                                   |
 |        Helyek        |                                                                                                       A tárolóhelyeket létre kell hozni és csatlakoztatni kell a helyprofilhoz.                                                                                                       |
 |    Helyprofilok    |                                                                                                        Tárolóhelyek létrehozásához helyprofilok meglétére van szükség.                                                                                                        |

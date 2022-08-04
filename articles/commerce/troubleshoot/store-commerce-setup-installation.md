@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 92d4a9d78485b681b4e802f695d54f44ecd7c5de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8af2c476ced05fc159a53131f8b51ad914a6c7c3
+ms.sourcegitcommit: c271b2edc4bf777f7194b09139ccbd174a359c75
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870466"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "9168947"
 ---
 # <a name="troubleshoot-store-commerce-setup-and-installation-issues"></a>A Store Commerce beállítási és telepítési problémáinak elhárítása
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör leírja, hogyan lehet elhárítani a Microsoft Dynamics 365 Commerce Store Commerce alkalmazás beállítási és telepítési problémáit.
 
@@ -31,7 +30,7 @@ Miután beírta az érvényes CPOS-url-címet a felhőben, a következő példá
 
 Ebben az esetben ellenőrizze az URL-címet, hogy vannak-e hibák a hibák esetén, vagy állapítsa meg, hogy a CPOS nem érhető-e el, mert kapcsolat nélküli állapotban van.
 
-Ezenkívül győződjön meg arról, hogy a felhőskálaegység (SCALE Unit) verziója 10.0.25 (9.35.\*\*) vagy később. A Store Commerce alkalmazás csak a 10.0.25-ös vagy újabb verziójú CPOS-fájlok esetén használható.
+Ezenkívül győződjön meg arról, hogy a felhőskálaegység (SCALE Unit) verziója 10.0.25 (9.35.\*.\*) vagy később. A Store Commerce alkalmazás csak a 10.0.25-ös vagy újabb verziójú CPOS-fájlok esetén használható.
 
 ## <a name="i-cant-install-the-app-because-modern-pos-is-already-installed"></a>Nem lehet telepíteni az alkalmazást, mert a Modern POS már telepítve van.
 

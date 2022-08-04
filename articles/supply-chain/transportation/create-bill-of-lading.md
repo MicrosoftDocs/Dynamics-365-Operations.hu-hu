@@ -1,6 +1,6 @@
 ---
 title: Fuvarlevél létrehozása
-description: Ez a cikk azt ismerteti, hogyan lehet fuvarlevélt létrehozni a raktárkezelési folyamatok használata esetén.
+description: Ez a cikk azt ismerteti, hogyan lehet fuvarlevélt létrehozni a raktárkezelési folyamatok (WMS) használata esetén.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 68a703475191255ff6ceaee25ef8e2bdf33ba0c2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885783"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069696"
 ---
 # <a name="create-a-bill-of-lading"></a>Fuvarlevél létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk azt ismerteti, hogyan lehet fuvarlevélt létrehozni a raktárkezelési folyamatok használata esetén.  
+Ez a cikk azt ismerteti, hogyan lehet fuvarlevélt létrehozni a raktárkezelési folyamatok (WMS) használata esetén.  
 
 A fuvarlevél egy jogi dokumentum a cikkeket leszállító vállalat és a szállítmányozó között. A dokumentum a szállított cikkeket kíséri, és a cikkek célhelyen történő megérkezésekor a kiszáLlítás bizonylataként szolgál. Raktárkezelés használatakor kétféleképpen lehet fuvarlevelet létrehozni:
 

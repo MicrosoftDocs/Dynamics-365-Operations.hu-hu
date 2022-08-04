@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38a9e2740232b18255109ba867fcdddd5b890774
+ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849931"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151032"
 ---
 # <a name="purchase-order-posting"></a>Beszerzési rendelés feladása
 
@@ -91,12 +91,12 @@ Az alábbi táblázat példákat mutat be az alapértelmezett feladási típusok
 > A fő számlák és a fő számlanevek csak javaslatok. Javasoljuk<!--note from editor: Via Writing Style Guide.--> A könyvelővel való munka során meghatározhatja, hogy a legjobb konfigurációt szeretné-e a vállalat igényeinek megfelelően.
 
 
-| Feladás típusa | Példa a fő számlára | Példa a fő számlanévre | Számla típusa | Tartozik/követel? | Elszámolási számla | K/F | Kövesse | Leírás |
+| Feladás típusa | Példa a fő számlára | Példa a fő számlanévre | Számla típusa | Tartozik/követel? | Elszámolási számla | K/F | Követ | Leírás |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Megvásárolt anyagok bevételezett költsége | 140100</br>140101 | Anyagkészlet</br>Nem számlázott leszállított anyagok | Eszközök | Terhelés | Igen | P | Megvásárolt anyagok számlázott költsége | Akkor használja a beszerzési rendelés termékbevételezésének feladása esetén. A számla ellentételezése a számlázatlan beszerzési kiadás. A számlán szereplő összeget a beszerzési rendelés számlájának feladott összege sztornírozja. |
+| Megvásárolt anyagok bevételezett költsége | 140100</br>140101 | Anyagkészlet</br>Nem számlázott leszállított anyagok | Eszközök | Terhelés | Igen | P | Megvásárolt anyagok számlázott költsége | Beszerzési rendelés termékbevételezésének feladott feladott ellenszámlája: Beszerzési kiadás, nem számlázva. A számlán szereplő összeget a beszerzési rendelés számlájának feladott összege sztornírozja. |
 | Beszerzési kiadás, nem számlázás | 600180 | Anyagbevételezések | Költség | Terhelés | Igen | P | |Akkor használja a beszerzési rendelés termékbevételezésének feladása esetén. A bevételezéshez két bizonylat jön létre, amelyek az elszámolóár használata esetén a beszerzési ár eltérését követik nyomon. Az első bizonylaton szereplő számla ellenszámlája a Beszerzés elhatárolása. A második bizonylaton szereplő ellenszámla a kapott beszerzett anyagok beszerzési árának és a beszerzési ár különbözetszámláknak az összege. Az erre a számlára feladott összegeket a beszerzési rendelés számlájának feladott összegei sztornírozják. |
 | Megvásárolt anyagok számlázott költsége | 140100 | Anyagkészlet | Eszközök | Terhelés | Nem | P  |Megvásárolt anyagok bevételezett költsége | Beszerzési rendelés számlájának feladott dátuma esetén használatos. Ennek a számlának az ellenszámlája a termék beszerzési kiadása. Ez a számla jelenti a készletet a mérlegben. A használt számla általában megegyezik az értékesítési rendelés szállított egységeinek költségével és a számlázott egységek költségével. |
-| Termékre vonatkozó beszerzési kiadás | 600180 | Anyagbevételezés | Költség | Jóváírás | Nem | P  | |Beszerzési rendelés számlájának feladott dátuma esetén használatos. A számla ellenszámlája a beszerzett anyagok költsége. Ez a számla jelenti a készletet a mérlegben. |
+| Termékre vonatkozó beszerzési kiadás | 600180 | Anyagbevételezés | Költség | Jóváírás | Igen | P  | |Beszerzési rendelés számlájának feladott dátuma esetén használatos. A számlához két bizonylat jön létre, amelyek az elszámolóár használata esetén a beszerzési ár eltérését követik nyomon. Ennek a számlának az ellenszámlája a beszerzési kiadás, a számlázatlan számla, amely a bevételezés feladása során használatos, és sztornírozva van a számla feladása során. Olyan számlázáskor beszerzett készlet költségeit jelöli, amelyek a mérlegszámla készlet számláján nem jelennek meg. Ez egy olyan eredményfeladás, amely a beszerzési ár különbözetét a leggyakrabban az elszámolóáras cikkbeszerzések esetén mutatja.|
 | Rögzített bevételezési ár nyeresége (beszerzés, rögzített bevételezési ár nyeresége*) | 510310 | Beszerzési árkülönbözet | Költség | Jóváírás | Nem | P | Rögzített bevételezési ár vesztesége | Akkor használja a rendszer, amikor egy beszerzési rendelési számlát feladnak, és eltérés van a számlázott ár és a cikk alapértelmezett költsége között. Ez a számla akkor használatos, ha nagyobb a különbség. Ennek a számlának az ellenszámlája a Rögzített bevételezési ár ellenszámlája. |
 | Rögzített bevételezési ár vesztesége (beszerzés, rögzített bevételezési ár vesztesége*) | 510310 | Beszerzési árkülönbözet | Költség | Terhelés | Nem | P | Rögzített bevételezési ár nyeresége | Akkor használja a rendszer, amikor egy beszerzési rendelési számlát feladnak, és eltérés van a számlázott ár és a cikk alapértelmezett költsége között. Ez a számla akkor használatos, ha kisebb a különbség. Ennek a számlának az ellenszámlája a Rögzített bevételezési ár ellenszámlája. |
 | Rögzített bevételezési ár ellentétele (beszerzés, rögzített bevételezési ár ellentétele*) | 140900 | Készlet variációja | Eszközök | Mindkettő | Nem | P  | |Akkor használja a rendszer, amikor egy beszerzési rendelési számlát feladnak, és eltérés van a számlázott ár és a cikk alapértelmezett költsége között. Ez a számla a rögzített bevételezési ár eredményszámlái ellenszámlái. |

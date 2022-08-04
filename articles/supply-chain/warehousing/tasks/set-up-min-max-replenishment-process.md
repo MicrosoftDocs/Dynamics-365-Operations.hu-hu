@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f032f95377fdc6f8ec7fbbfa7aadab8fc448be5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fb0fbfcceece2883c32a266bcbe659211b0b56ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577768"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069726"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>A minimum-maximum feltöltési folyamat beállítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az eljárás bemutatja, hogy hogyan állíthat be egy új feltöltési folyamatot, amely a minimális/maximális feltöltési stratégiát használja. Amikor a készlet a minimális szint alá esik, a rendszer a hely feltöltéséhez hozza létre munkát. Az eljárás azt is bemutatja, hogy hogyan lehet a rögzített kitárolási helyek segítségével az újratelepítést engedélyezni, ha a készlet a minimális szint alá esik, és hogyan lehet a feltöltési folyamatot engedélyezni a rendszeres futtatáshoz egy kötegelt feladat használatával. Ezeket a feladatokat jellemzően egy raktári vezető végzi el. Az alábbi példaértékek használatával futtathatja ezt az eljárást az USMF bemutató vállalatnál, vagy a saját adatait vagy futtathatja. Ha a saját adatait használja, győződjön meg arról, hogy egy olyan raktárral rendelkezik, amely engedélyezve van a Raktárkezelési folyamatok számára.
+Ez az eljárás bemutatja, hogy hogyan állíthat be egy új feltöltési folyamatot, amely a minimális/maximális feltöltési stratégiát használja. Amikor a készlet a minimális szint alá esik, a rendszer a hely feltöltéséhez hozza létre munkát. Az eljárás azt is bemutatja, hogy hogyan lehet a rögzített kitárolási helyek segítségével az újratelepítést engedélyezni, ha a készlet a minimális szint alá esik, és hogyan lehet a feltöltési folyamatot engedélyezni a rendszeres futtatáshoz egy kötegelt feladat használatával. Ezeket a feladatokat jellemzően egy raktári vezető végzi el. Az alábbi példaértékek használatával futtathatja ezt az eljárást az USMF bemutató vállalatnál, vagy a saját adatait vagy futtathatja. Ha saját adatait használja, győződjön meg róla, hogy van olyan raktára, amely engedélyezve van a Raktárkezelési folyamatok (WMS) számára.
 
 
 ## <a name="create-a-fixed-picking-location"></a>A fix kitárolási helyek létrehozása

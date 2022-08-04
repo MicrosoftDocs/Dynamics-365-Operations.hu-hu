@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 274f9b368a6074725d1938de5f2172d2810a5985
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897632"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066640"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Készletláthatóság bővítményének áttekintése
 
@@ -61,9 +61,9 @@ Fontos a közeli jövőben tervezett készlet (többek között a készletek, az
 
 Az ígérethez rendelkezésre álló szolgáltatás könnyen használható a napi rendelés teljesítésére. A legfontosabb az, hogy a többi készlet-láthatósági szolgáltatáshoz hasonló az "ATP *" funkció globális és valós idejű*. Ennek megfelelően több ATP számítási képletet is be lehet állítani, hogy a készlet rendelkezésre állására vonatkozó lekérdezések minden üzleti csatornát és adatforrást lefednek. A további tudnivalókat lásd [a Készlet láthatósága aktuális készlet változásának ütemezésében, és ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md).
 
-### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilitás a speciális raktárkezelési cikkekkel
+### <a name="compatibility-with-warehouse-management-processes-wms-items"></a>Kompatibilitás a raktárkezelő folyamatokkal (WMS) tartozó cikkekkel
 
-A Microsoft gondoskodik a speciális raktárkezelés (WHS) ingyenes integrációjáról, így a raktárkezelési szolgáltatás vevői is élvezhedhetnek a készlet-láthatósági szolgáltatás előnyeiben. A 2022-es Hullám 1. kiadásának (nyilvános betekintő ablak) szerint a készletszolgáltatás támogatja az aktuális raktárkészlet -lekérdezéseket és az ATP-t. A következő hullámban a whs vevők számára támogatott lesz az "soft reservation" és a "allocation" funkció. A további tudnivalókat lásd [a raktárkészlet-készlet cikkekkel kapcsolatos láthatósági támogatásában](inventory-visibility-whs-support.md).
+A Microsoft úgy tesz, hogy a raktárkezelési folyamatokkal (WMS) való integrációt lehetővé tesz, hogy a WMS-ügyfelek is kihasználják a készlet-láthatósági szolgáltatás előnyeit. A 2022-es Hullám 1. kiadásának (nyilvános betekintő ablak) szerint a készletszolgáltatás támogatja a WMS aktuális készletben található cikklekérdezéseit és az ATP-t. A WMS-vevők számára a következő hullámban az "soft reservation" és a "allocation" funkció lesz támogatott. További információ a WMS-cikkek [készlet láthatósági támogatásában található](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Licenckezelés
 

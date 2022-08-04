@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7643a333c269a7e1976563ff0f10b89c1fb91674
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983002"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065186"
 ---
 # <a name="warehouse-configuration-overview"></a>Raktár konfigurálása – áttekintés
 
@@ -31,10 +31,10 @@ ms.locfileid: "7983002"
 Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendezések és a raktári folyamatok engedélyezésének módjáról nyúlt információkat.
 
 > [!NOTE]
-> Ez a cikk a **Raktárkezelés** modul funkcióira vonatkozik (speciális a raktárkészlet-nyilvántartás). A **Készletkezelés** modul raktár funkcióira nem vonatkozik.
+> Ez a cikk a Raktárkezelés modul **szolgáltatásaira vonatkozik**. A **Készletkezelés** modul raktár funkcióira nem vonatkozik.
 
 ## <a name="warehouse-layout"></a>Raktárelrendezés
-A Supply Chain Management rendszerben a Raktárkezelési rendszer rugalmas lehetőségeket kínál a változó igényekhez alkalmas raktárelrendezés definiálásához, így optimális raktározást érhet el.
+Az Ellátásilánc-kezelésben található raktárkezelési folyamatok rugalmas megoldást kínálnak a raktárelrendezés meghatározására a változó igényeknek megfelelően, hogy a raktárak hatékonysága optimális legyen.
 
 -   Magas és alacsony prioritású tárolók területeket hozhat létre a termékek optimális elhelyezéséhez.
 -   A különböző raktározási igényeknek megfelelően, mint például hőmérsékleti követelmények vagy a cikkek változó forgalmi arányai, feloszthatja a raktárat különböző zónákra.
@@ -42,7 +42,7 @@ A Supply Chain Management rendszerben a Raktárkezelési rendszer rugalmas lehet
 -   Csoportosíthatja a helyeket fizikai kapacitás megszorítás beállításai alapján.
 -   Szabályozhatja cikkek tárolását és kitárolását a lekérdezésben megadott szabályokon alapján.
 
-A Supply Chain Management rendszer raktárkezelési használatához hozzon létre egy raktárat, és engedélyezzen több speciális vagy konkrét raktárkezelési tevékenységet. A **Raktárak** oldalon válassza a **Raktárkezelési folyamatok alkalmazása** lehetőséget.
+Ahhoz, hogy a WMS használható legyen az ellátásilánc-kezelésben, létre kell hoznia egy raktárat, és engedélyeznie kell azt a WMS számára. A **Raktárak** oldalon válassza a **Raktárkezelési folyamatok alkalmazása** lehetőséget.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zónacsoportok, zónák, helytípusok és helyek
 

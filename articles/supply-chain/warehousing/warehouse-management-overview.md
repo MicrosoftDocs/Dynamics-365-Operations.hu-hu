@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa2b62a0bfda57879850771488e6576592fbb894
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d22ed879f309c0fbb999bf166aefd13f27376042
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982852"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069092"
 ---
 # <a name="warehouse-management-overview"></a>Raktárkezelés áttekintése
 
@@ -39,7 +39,7 @@ Bejövő és kimenő raktározási folyamat-munkafolyamatok összetevőit az üz
 - [Helyutasítás beállítása beszerzési rendelés eltárolásához](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
 - [A beszerzési rendelések munkasablonjának beállítása](./tasks/set-up-work-template-purchase-orders.md)
 
-## <a name="warehouse-management-processes"></a>Raktárkezelési folyamatok
+## <a name="warehouse-management-processes-wms"></a>Raktárkezelő folyamatok (WMS)
 - Forrásdokumentumok integrált támogatása értékesítési rendelésekhez, visszatérítésekhez, átmozgatási rendelésekhez, termelési rendelésekhez és kanbanhoz  
 - Bejövő és kimenő anyagok lekérdezéseken alapuló, rugalmas munkafolyamat-támogatása
 - A Gyártási és szállítás ajánlatainak teljes integrálása

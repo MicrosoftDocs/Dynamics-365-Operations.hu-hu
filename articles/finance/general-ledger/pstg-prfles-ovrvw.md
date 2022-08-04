@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91078352b6376ee99e7d9ce4546ed200cb80a25a
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876124"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135843"
 ---
 # <a name="posting-profiles-overview"></a>Feladási profilok áttekintése
 
-A Pénzügy és a Műveletek alkalmazásokban a feladási profilok segítségével lehet leírni azokat a konfigurációkat, *amelyek* az alallalt számlák fő számlákká való átalakítását írják le, hogy felhasználhatók legyen a főkönyvbe feladott tranzakciókban. Például azt adhatja meg, hogyan alakítható át a vevő fő számlává a kinnlevőségek fő számlává a számla feladása esetén.
+A pénzügyi és műveleti alkalmazásokban a feladási profilok segítségével lehet leírni azokat a konfigurációkat, *amelyek* az alallalt számlák fő számlákká való átalakítását szabályják, hogy felhasználhatók legyen a főkönyvbe feladott tranzakciókban. Például azt adhatja meg, hogyan alakítható át a vevő fő számlává a kinnlevőségek fő számlává a számla feladása esetén.
 
 Egyes moduloknak és funkcióknak van egy lapja, amely a névben a "feladási profil" szót tartalmazza (**például Vevői feladási** **profil vagy Szállítói feladási profil**). Ezenkívül egyes modulokban többféle lehetőség áll rendelkezésre az akkreátorból létrehozott tranzakciók főkönyvi feladásának konfigurálásához. Például a Gyártásvezérlés **modulban** termelési csoport, erőforrás vagy erőforráscsoport szerint lehet beállítani a feladást.
 
@@ -34,7 +34,7 @@ Mielőtt konfigurálni tudja a feladási profilokat, **a** feladásdefinícióka
 
 ## <a name="posting-types"></a>Feladási típusok
 
-A Pénzügy és műveletek alkalmazásokban a feladási típus a tartozik és a követel tételek általános kategóriájának meghatározására használható. Ez a kategória független a főkönyv fő számlájától. A főkönyvben minden egyes tartozik és követel tételhez vannak feladási típusok.
+A pénzügyi és műveleti alkalmazásokban a feladási típus a tartozik és a követel tételek általános kategóriájának meghatározására használható. Ez a kategória független a főkönyv fő számlájától. A főkönyvben minden egyes tartozik és követel tételhez vannak feladási típusok.
 
 Egy bizonylatnak egy vagy több feladási típusa is lehet. Például egy olyan tranzakció, amely egy általános naplón keresztül van feladva, ahol a **számla** és az ellenszámla a főkönyvi számlára van állítva, a tartozik és a **követel** típusú főkönyvi napló lesz. Ezzel szemben a szállítói számláknak több feladási típusa lesz. Ezek a feladási típusok egy sort és **további sorokat tartalmaznak a szállítói egyenleghez, például a főkönyvi naplóhoz**.
 
@@ -71,9 +71,9 @@ Ha egy adott feladási típushoz több fő számlát kell nyomon követnie, java
 
 | Vevőcsoport | Név | Leírás |
 |----------------|------|-------------|
-| EXT | Külső vevő | Ez a csoport minden szabványos külső vevő esetében használatos. |
-| EMP | Alkalmazottak | Ez a csoport az Összes alkalmazottra alkalmazható, aki a vállalattól vásárol. |
-| INT | Vállalatközi értékesítés | Ez a csoport minden olyan vállalatközi vevői számlához használható, amely az értékesítési és beszerzési rendelésekkel együtt használatos. |
+| Ext | Külső vevő | Ez a csoport minden szabványos külső vevő esetében használatos. |
+| Emp | Alkalmazottak | Ez a csoport az Összes alkalmazottra alkalmazható, aki a vállalattól vásárol. |
+| Int | Vállalatközi értékesítés | Ez a csoport minden olyan vállalatközi vevői számlához használható, amely az értékesítési és beszerzési rendelésekkel együtt használatos. |
 
 A feladási profilban ezt követően három sort állíthat be. Minden sorban ki kell választani a Csoport **értékét** és a kapcsolódó fő számlát.
 
@@ -111,13 +111,14 @@ A Dynamics 365 Pénzügy, Dynamics 365 Supply Chain Management és Dynamics 365 
 - Költséggazdálkodás feladása (hamarosan)
 - [Tárgyi eszköz feladási profilja](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - Vállalatközi könyvelés feladása (hamarosan)
-- Készletfeladási profil (hamarosan)
+- [Készlet feladása](inventory-posting.md)
 - [Partra áras költség feladása](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [Feladásdefiníciók áttekintése](posting-definitions.md)
-- Gyártásvezérlés feladása (hamarosan)
+- [Termelés feladása](production-posting.md)
 - Projektvezetés és könyvelés feladása (hamarosan)
 - Szolgáltatáskezelés feladása (hamarosan)
 - Adó feladása (hamarosan)
 - Idő és jelenlét feladása (hamarosan)
 - Szállításkezelés feladása (hamarosan)
 - Visszatérítéskezelés feladási profiljai (hamarosan)
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d6524cb9109263ad62d221ec98e546b962b89ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850438"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067528"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Termékszűrők konfigurálása raktári tranzakciókhoz
 
@@ -95,7 +95,7 @@ A cikkcsoportok szűrőkódjainak beállításához kövesse az alábbi lépése
     Például ha kiválasztja az **1. szűrőkód használata** és **2. szűrőkód használata** jelölőnégyzeteket, akkor a cikk 1. szűrőkódjának és 2. szűrókódjának is meg kell felelnie a cikkcsoport szűrőcsoportjának beállításainak, mielőtt kijelölhetne egy szűrőcsoportot. Új cikk létrehozásakor a kiválasztott szűrőcsoport lesz az alapértelmezett szűrőcsoport az **1. csoport** és a **2. csoport** mezőben a **Kiadott termékek részletei** oldal **Raktár** gyorslapján.
 
 > [!IMPORTANT]
-> A termékszűrők csak olyan cikkeknél engedélyezettek, amelyek speciális raktárkezelést használják.
+> A termékszűrők csak olyan cikkeknél engedélyezettek, amelyek raktárkezelési folyamatokat (WMS) használnak.
 
 ## <a name="specify-filter-codes-for-released-products"></a>Kiadott termékek szűrőkódjainak megadása
 
@@ -158,7 +158,7 @@ A szállítói szűrőkódok beállításához kövesse az alábbi lépéseket.
 1. Az **1. kód** – **10. kód** mezőkben válassza ki azokat a szűrőkódokat, amelyeket feltételként használ a kiválasztott cikkcsoport szállítói számára elérhető cikkek korlátozására. Minden, a cikkcsoporthoz beállított szűrőkódhoz be kell állítania egy kiválasztást.
 
 > [!NOTE]
-> A szállítói termékszűrők beállítása azokra a kiadott termékekre vonatkozik, ahol engedélyezve vannak a raktárkezelési folyamatok a társított tárolásidimenzió-csoporthoz. A szűrőkódok annak meghatározására használhatók, hogy a rendszer lehetővé teszi-e a felhasználók számára, hogy egy adott cikket vásárolják egy adott szállítótól a beszerzésirendelés-sorok létrehozásakor. A Microsoft Dynamics 365 Supply Chain Management kétféle módszerrel rendelkezik a szállítói jóváhagyás kezelésére. Ha létezik egy vagy több olyan kiadott termék, ahol az **Engedélyezett szállítók ellenőrzési módszere** mező beállítása *Csak figyelmeztetés* vagy *Nem engedélyezett*, mindkét szállítói jóváhagyási módszer engedélyezhető ezeknél a cikkeknél. Ez a helyzet problémákat okozhat, amikor a felhasználók beszerzési rendelési sorokat hoznak létre.
+> A szállítói termékszűrők beállításai olyan kiadott termékekre vonatkoznak, amelyekben engedélyezve vannak a raktárkezelési folyamatok (WMS) a kapcsolódó tárolásidimenzió-csoportban. A szűrőkódok annak meghatározására használhatók, hogy a rendszer lehetővé teszi-e a felhasználók számára, hogy egy adott cikket vásárolják egy adott szállítótól a beszerzésirendelés-sorok létrehozásakor. A Microsoft Dynamics 365 Supply Chain Management kétféle módszerrel rendelkezik a szállítói jóváhagyás kezelésére. Ha létezik egy vagy több olyan kiadott termék, ahol az **Engedélyezett szállítók ellenőrzési módszere** mező beállítása *Csak figyelmeztetés* vagy *Nem engedélyezett*, mindkét szállítói jóváhagyási módszer engedélyezhető ezeknél a cikkeknél. Ez a helyzet problémákat okozhat, amikor a felhasználók beszerzési rendelési sorokat hoznak létre.
 
 ## <a name="see-also"></a>Lásd még
 

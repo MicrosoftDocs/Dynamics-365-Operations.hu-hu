@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 729ef6aae228ad1e528945031567b92c44cdf256
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015085"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111754"
 ---
 # <a name="register-consumption"></a>Felhasználás regisztrálása
 
@@ -90,7 +90,7 @@ Felhasználási regisztrációk végrehajtásakor a rendszer egy megadott sorren
 - *Cikkregisztrációk:* először a napló fejlécében szereplő pénzügyi dimenziókat adja hozzá a program, ha vannak ilyen dimenziók. Majd a kapcsolódó munkarendelés-projekt pénzügyi dimenzióinak felvételére kerül sor. A következő lépés a hely pénzügyi dimenzióinak felvétele. Végezetül a cikk pénzügyi dimenzióit adja hozzá a program.
 
 >[!NOTE]
->A program mindhárom regisztrációtípusnál ellenőrzi a pénzügyi dimenzió kombinációját, és az érvénytelen kombinációkat üresen hagyja. Ez a szokásos beállítás más Finance and Operations alkalmazásokkal.
+>A program mindhárom regisztrációtípusnál ellenőrzi a pénzügyi dimenzió kombinációját, és az érvénytelen kombinációkat üresen hagyja. Ez a szokásos beállítás más pénzügyi és műveletalkalmazásokkal.
 
 
 

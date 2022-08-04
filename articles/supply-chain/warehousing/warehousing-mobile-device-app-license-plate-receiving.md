@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657c29ec6ddfb2be918424e06eaf219f51a30a02
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907000"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069062"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával
 
@@ -26,7 +26,7 @@ ms.locfileid: "8907000"
 
 Ez a cikk bemutatja a Raktárkezelés mobilalkalmazás beállítását, amely lehetővé teszi a fizikai készlet bevételezéséhez az tábla-bevételezés folyamatának alkalmazását.
 
-Ezen funkció segítségével gyorsan rögzítheti az előzetes kiszállítási értesítéshez (ASN) kapcsolódó bejövő készlet bevételezését. A rendszer automatikusan létrehoz egy ASN-t, amikor a raktárkezelési folyamatokat egy átmozgatási rendelés szállítására használják. A beszerzési rendelés folyamatahoz egy ASN manuálisan is rögzíthető, vagy automatikusan importálható a bejövő ASN adatentitás folyamata segítségével.
+Ezen funkció segítségével gyorsan rögzítheti az előzetes kiszállítási értesítéshez (ASN) kapcsolódó bejövő készlet bevételezését. A rendszer automatikusan létrehoz egy ASN-t, ha a raktárkezelési folyamatok (WMS) az átvezetési rendelés szállításában használatosak. A beszerzési rendelés folyamatahoz egy ASN manuálisan is rögzíthető, vagy automatikusan importálható a bejövő ASN adatentitás folyamata segítségével.
 
 Az ASN-adatok a rakományokhoz és a szállítmányokhoz a *csomagolási struktúrákon* keresztül kapcsolhatók, ahol a raklapok (a szülő azonosítótáblák) tartalmazhatnak eseteket (beágyazott azonosítótáblák).
 

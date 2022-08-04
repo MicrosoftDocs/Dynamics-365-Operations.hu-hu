@@ -1,6 +1,6 @@
 ---
 title: Vállalati koncepció a Dataverse szolgáltatásban
-description: Ez a témakör a vállalatadatoknak a Pénzügy és Műveletek, illetve a Pénzügy és Műveletek közötti integrációját írja le Dataverse.
+description: Ez a témakör leírja a vállalati adatok integrálását a pénzügyek és a műveletek, valamint a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,29 +9,31 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ad0075e2b92ebeb9fba879bcae503100dc7adb47
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873178"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205936"
 ---
-# <a name="company-concept-in-dataverse"></a>Vállalat fogalma a Dataverse szolgáltatásban
+# <a name="company-concept-in-dataverse"></a>Vállalati koncepció a Dataverse szolgáltatásban
 
 [!include [banner](../../includes/banner.md)]
 
 
 
 
-A Finance and Operations alkalmazásban a *vállalat* koncepciója egyszerre jogi fogalom és üzleti fogalom. Mindemellett adatok biztonsági és láthatósági határa is. A felhasználók mindig egyetlen vállalat kontextusában dolgoznak, és az adatok nagy részét vállalat szerint van kezelve.
+A pénzügyek és a műveletek során a *vállalat* koncepciója egy jogi és egy üzleti szerkezet. Mindemellett adatok biztonsági és láthatósági határa is. A felhasználók mindig egyetlen vállalat kontextusában dolgoznak, és az adatok nagy részét vállalat szerint van kezelve.
 
 A Dataverse nem rendelkezik ezzel egyenértékű koncepcióval. A legközelebbi koncepció a *részleg*, amely elsősorban biztonsági és láthatósági határ a felhasználói adatok számára. Ez a fogalom nem rendelkezik ugyanazokkal a jogi vagy üzleti vonatkozásokkal, mint a vállalat koncepciója.
 
 Mivel a részleg és a vállalat nem egyenértékű fogalmak, nem lehetséges egy-az-egyhez (1:1) leképzés kényszerítése hozzájuk a Dataverse integráció céljából. Mivel azonban a felhasználóknak alapértelmezés szerint meg kell tudniuk tekinteni ugyanazokat a sorokat az alkamazásban és a Dataverse megoldásokban, a Microsoft egy új táblát vezetett be a Dataverse megoldásban, amelynek neve cdm\_Company. Ez a tábla egyenértékű a Vállalat táblával az alkalmazásban. Annak garantálására, hogy a sorok láthatósága alapértelmezetten megegyezzen az alkalmazás és a Dataverse között, a következő beállításokat javasoljuk a Dataverse adatai számára:
 
-+ A két írásra engedélyezett pénzügyi és műveletvállalati sorokhoz létrejön egy társított VÁLLALATI CDM-sor \_.
-+ Egy cdm\_Company sor létrehozásakor és a kettős írás engedélyezésekor egy alapértelmezett részleg jön létre ugyanazzal a névvel. Bár a részleghez automatikusan létrejön egy alapértelmezett csoport, a részleg nincs használatban.
-+ Olyan különálló tulajdonoscsapat jön létre, amelynek neve azonos. Ez is hozzá van rendelve a részleghez.
++ A kettős írásra engedélyezett vállalatsorok minden egyes pénzügynél és műveletnél létrejön egy társított CDM\_ Vállalat sor.
+
++ Egy cdm\_Company sor létrehozásakor és a kettős írás engedélyezésekor egy alapértelmezett részleg jön létre ugyanazzal a névvel. Bár az üzleti egységhez automatikusan létrejön egy alapértelmezett tulajdonosi csapat, az üzleti egység nincs használva.
++ A rendszer létrehoz egy külön tulajdonoscsoportot, amely azonos nevű kettős írású utótaggal rendelkezik. Ez is hozzá van rendelve a részleghez.
+
 + Alapértelmezés szerint az alkalmazásban létrehozott, és a Dataverse szolgáltatásban duplán írt sorok tulajdonosa a hozzárendelt részleghez kapcsolódó „DW Owner” csoport.
 
 A következő ábrán egy példa látható az ilyen típusú adatbeállításra a Dataverse megoldásban.
@@ -43,7 +45,7 @@ Ezen konfigurációnak az következtében az USMF vállalathoz kapcsolódó mind
 + Az „Értékesítési menedzser” szerepkört a "„USMF Sales” csoport tagjaihoz rendelték.
 + Azok a felhasználók, akik rendelkeznek az „Értékesítési menedzser” szerepkörrel, hozzáférhetnek minden olyan partnersorhoz, amelyek ugyanannak a részlegnek a tagjai, amelynek ők is.
 + Az „USMF Sales” csapat s kapcsolva van az USMF üzleti egységhez, amely korábban említettünk.
-+ Ebből következően az "USMF Sales" csapat tagjai minden olyan számlát láthatnak, amelynek az "USMF DW" felhasználó a tulajdonosa, és amely a Pénzügy és Műveletek 2003 rendszer USMF Vállalat táblája alapján jött volna létre.
++ Ebből következően az "USMF Sales" csapat tagjai bármilyen számlát láthatnak, amelynek az "USMF DW" felhasználó a tulajdonosa, és amely az USMF vállalat pénzügyi és műveleti táblája alapján jött volna létre.
 
 ![Hogyan használhatók a csapatok.](media/dual-write-company-2.png)
 

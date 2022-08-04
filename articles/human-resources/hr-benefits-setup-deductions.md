@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b4817cd6370166b6dfdf17b3d733b13374db8f49
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fb5f5b0b50f407f58193aafd79f28dd1fd432ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694907"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066792"
 ---
 # <a name="configure-deductions"></a>Levonások konfigurálása
 
@@ -45,7 +45,7 @@ A Microsoft Dynamics 365 Human Resources rendszerben levonásokat használhat an
    | **Címsor** | A címsorkód abból a bérszámfejtő rendszerből, amelyet ez a levonás fog használni a levonás alkalmazotti részéhez a juttatások bérszámfejtési feldolgozásakor. Ezt akkor alkalmazza a rendszer, amikor külső bérszámfejtő szolgáltatót használ. |
    | **Alkalmazotti bérlistalevonási referencia** | A bérlistarendszerből származó levonási kód, amelyet ez a levonás alkalmazotti részéhez használ a juttatások bérlistában való feldolgozása során. |
    | **Összeg címsora** | A címsorkód abból a bérszámfejtő rendszerből, amelyet ez a levonási összeg fog használni a levonás alkalmazotti részéhez a juttatások bérszámfejtési feldolgozásakor. Ezt általában akkor alkalmazza a rendszer, amikor külső bérszámfejtő szolgáltatót használ. |
-   | **Törölhető** | Megadja, hogy a Dynamics 365 for Finance and Operations alkalmazásból exportált érték okozhatja-e az érték törlését a bérszámfejtő rendszerben. |
+   | **Törölhető** | Megadja, hogy a Dynamics 365 Pénzügy alkalmazásból exportált érték esetén törlődhet-e az érték a bérrendszerből. |
    | **Párba állított oszlopok** | Megadja, hogy az exportálási címsor és a levonási összeg szomszédos oszlopokban, párosítva lesz-e exportálva a bérszámfejtő rendszerbe. |
    | **Módosítás érvénybe lépési dátuma** | Az a dátum, amikor a juttatás levonásának módosítása érvénybe lép. Ezen a napon a levonás megváltozik, és a levonáshoz kapcsolódó összes juttatási terv frissül, amennyiben lefuttatja a **Levonásváltozás frissítés** feldolgozása futtatást. |
    | **Levonás módosítása befejeződött** | A rendszer automatikusan bejelöli a **Levonás módosítása befejeződött** jelölőnégyzetet, amikor a levonásfrissítési módosítás feldolgozása végrehajtotta a juttatáslevonási módosításokat. |
@@ -56,3 +56,4 @@ A Microsoft Dynamics 365 Human Resources rendszerben levonásokat használhat an
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

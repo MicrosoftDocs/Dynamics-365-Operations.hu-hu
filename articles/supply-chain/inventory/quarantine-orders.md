@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ee1ba338d90c6ee9cdc37948061f518040ae1a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e18735117d1f671e0efc0947248bbe266fa0ca6
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869662"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065585"
 ---
 # <a name="quarantine-orders"></a>Karanténutasítások
 
@@ -31,7 +31,7 @@ Ez a témakör a karanténutasítások készletzárlatokkal való használatát 
 A karanténutasításokkal blokkolhatja a készletet. Például lehet, hogy minőség-ellenőrzési okok miatt szeretne karanténba tenni cikkeket. A karanténba helyezett készlet át lesz szállítva egy karantén raktárba.
 
 > [!NOTE]
-> Ha speciális raktárkezelési folyamatokat használ (a Raktárkezelésben), a karantén utasítás feldolgozása csak értékesítési visszáru-rendeléseknél lesz használva.
+> Ha raktárkezelési folyamatokat használ (a Raktárkezelés modulban), a karanténutasítás feldolgozása csak visszárurendelések esetén használatos.
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Aktuálisan készleten lévő cikkek karanténba helyezése
 

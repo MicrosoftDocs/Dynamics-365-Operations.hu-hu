@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 94e465616338b0c905ccf6b8244324c18c7a59e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849445"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166875"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.24 verziójában (2022. február)
 
@@ -46,7 +46,7 @@ Ha bármelyik funkciót be szeretné kapcsolni [, akkor ezt a funkciókezelésbe
 | Modul | Funkcióneve a funkciókezelésben | További információ |
 |---|---|---|
 | Gyártásvezérlés | Igény szerinti anyagelérhetőségi ellenőrzés a termelési rendelésekre vonatkozóan | Ez a funkció gyorsabbá teszi a **termelési** rendelések kiadási lapjának megnyitását, **amely a Termelésirányítás munkaterületről** érhető el. A rendszer e funkció nélkül automatikusan ellenőrzi, hogy a lap megnyitása után a felsorolt termelési rendelésekhez rendelkezésre állnak-e anyagok, ami nagy számú rendelés esetén jelentős időt is igénybe vehet. Ha ez a funkció engedélyezve van, akkor a rendszer egy eszköztárgombot biztosít, amelynek segítségével az anyagok ellenőrzése csak a kiválasztott rendelésekre és szükség esetén történik meg. |
-| Gyártásvezérlés | (Előzetes verzió) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS) | Ez a funkció lehetővé teszi a dolgozók számára, hogy a termelési emelet végrehajtási felületével regisztrálják az anyagfelhasználást, a kötegszámokat és a sorozatszámokat. Ez a funkció csak olyan cikkeket támogat, amelyek nincsenek engedélyezve a speciális raktári folyamatok (WMS) használatára. A WMS-kompatibilis cikkek támogatása egy jövőbeli kiadásra van ütemezve.<p>Egyes gyártóknak, különösen a folyamatiparban használt gyártóknak explicit módon regisztrálniük kell az egyes köteg- vagy termelési rendelésenként felhasznált anyagok mennyiségét. Például a dolgozók a mérleg segítségével leméneklik a munka közben felhasznált anyagok mennyiségét. A teljes anyagkövetés biztosítása érdekében ezeknek a szervezeteknek regisztrálniuk kell azt is, hogy az egyes termékek gyártása során melyik kötegszámokat felhasználták. |
+| Gyártásvezérlés | Anyagfelhasználás regisztrálása a termelési emelet végrehajtási felületén (nem WMS) | Ez a funkció lehetővé teszi a dolgozók számára, hogy a termelési emelet végrehajtási felületével regisztrálják az anyagfelhasználást, a kötegszámokat és a sorozatszámokat. Ez a funkció csak olyan cikkeket támogat, amelyek nincsenek engedélyezve a raktárkezelési folyamatok (WMS) használatára. A WMS-kompatibilis cikkek támogatása egy jövőbeli kiadásra van ütemezve.<p>Egyes gyártóknak, különösen a folyamatiparban használt gyártóknak explicit módon regisztrálniük kell az egyes köteg- vagy termelési rendelésenként felhasznált anyagok mennyiségét. Például a dolgozók a mérleg segítségével leméneklik a munka közben felhasznált anyagok mennyiségét. A teljes anyagkövetés biztosítása érdekében ezeknek a szervezeteknek regisztrálniuk kell azt is, hogy az egyes termékek gyártása során melyik kötegszámokat felhasználták. |
 | Gyártásvezérlés | Jelentés befejezettként a raktárkezelési munkaterhelésben, felhőalapú és peremhálózat-léptékű egység esetén | Ez a funkció lehetővé teszi a dolgozók számára a Raktárkezelés mobilalkalmazás használatával, hogy készként jelentsen egy termelési vagy kötegrendelést, amikor az alkalmazás egy felhő vagy peremhálózati egység raktárkezelési terhelésével szemben fut. A további tudnivalókat lásd a Készként [jelentve és a mérlegegységre rakva.](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF) |
 | Raktárkezelés | Új rakománytervezési munkaterületlapok | Két új rakománytervezési munkaterületi lapnak ad lehetőséget: **a bejövő** **rakománytervezési munkaterületet és a kimenő rakománytervezési munkaterületet**. |
 
@@ -68,9 +68,9 @@ Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikke
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A pénzügyi és az üzemeltetési alkalmazások platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.24 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások platformfrissítései a 10.0.24-es verzióban (2022. február).](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md)
+A Microsoft Dynamics 365 Supply Chain Management 10.0.24 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és műveleti alkalmazások (2022. február 10.) 10.24-es verziójának Platformfrissítései.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md)
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
@@ -94,3 +94,4 @@ Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chai
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 591c93eef61992507188323909f37e3f33550a7d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888383"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068634"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Részlegesen foglalt átmozgatási rendelések kötegelt kiadása
 
@@ -28,7 +28,7 @@ ms.locfileid: "8888383"
 A részlegesen foglalt átmozgatási rendelések kötegelt kiadása funkció lehetővé teszi az átmozgatási rendelések részleges kiadását egy raktárba kötegelt feldolgozással.
 Mivel lehetőség van egy részleges mennyiség kiadására, egy rendelés kiadásához nem kell megvárni, hogy a teljes rendelési mennyiség elérhető legyen a raktárban.
 
-A rendelések kiadása egy raktárnak speciális raktárkezelési folyamat. A folyamat olyan tevékenységeket foglal magában, például kitárolás, csomagolás és a szállítás, amelyeket egy raktári dolgozó mobileszköz használatával tud végrehajtani.
+A rendelések raktárba való kiadása raktárkezelési folyamatok (WMS) folyamat. A folyamat olyan tevékenységeket foglal magában, például kitárolás, csomagolás és a szállítás, amelyeket egy raktári dolgozó mobileszköz használatával tud végrehajtani.
 
 ## <a name="where-it-applies"></a>Alkalmazási kör
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 04cc8b4272bcedc7db27b0d76eccdc6375641933
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 129e4e1d44018da206d0e797dcfd389c9e6adeba
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904281"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206195"
 ---
 # <a name="regulatory-updates"></a>Jogszabálykövetési frissítések
 
@@ -39,27 +39,19 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 
 |Ország/régió|Kiadás dátuma|Kiadás verziója|Jogszabály-követési frissítés|
 |--------------------|---------------|-------|-------| 
-|      Brazília         |   december 2021.         | 10.0.25         |    SPED Fiscal - 2022-es elrendezés  |
-|      Brazília         |   március 2022.    | 10.0.25HF, 10.0.26HF, 10.0.27        |    ICMS-DIFAL-begyűjtés a nem adófizetőre irányuló műveletekben (kiegészítő törvénysz. 190/22)  |
-|      Brazília         |   március 2022.         | 10.0.26HF         |    Sped Fiscal - Új mezők a C500 (34-40) rekordban a bejövő pénzügyi bizonylatok esetében  |
-|      Brazília         |   március 2022.         | 10.0.27         |    VAN-e NT2021.004 v1.00 - Elrendezés- és ellenőrzési szabályok frissítései  |
-|      Brazília         |   március 2022.         | 10.0.27         |    VAN-e NT2021.004 v1.00 - Elrendezési és ellenőrzési szabályok frissítései - Retail  |
-|      Dánia         |   Január 2022.  | 10.0.25HF         |    Áfabevallás előnézete az Excel programban |
-|      Finnország         |   Január 2022.  | 10.0.26         |    Áfabevallás TXT-ben és előnézeti képként az Excel programban |
-|      Franciaország   |   2021. november | 10.0.25         |    Francia adatarchiválási export (FEC) - "Hiányzó számok indoklása" melléklet |
-|      Olaszország         |   február 2022. | 10.0.25HF, 10.0.26| Egyedi tanúsítvány - 2022 a Dynamics 365 Pénzügyben  |
-|      Litvánia|   február 2022. | 10.0.25HF, 10.0.26HF, 10.0.27 | I.SAF-változások a 2022-01-01 Dynamics 365 Pénzügyben  |
-|      Malajzia|   február 2022. |10.0.26HF | SST-02 bevallás. Mezőkben végrehajtott módosítások  |
-|      Mexikó         |   Január 2022.      | 10.0.26      |   MX - CFDI, 4.0-s verzió (visszavonás)  |
-|      Mexikó         |   március 2022.      | 10.0.25, 10.0.26, 10.0.26      |   CFDI-formátumok, 4.0-s verzió (számlák és kifizetések)  |
+|      Brazília         |   március 2022.    | 10.0.27        |    ICMS-DIFAL-begyűjtés a nem adófizetőre irányuló műveletekben (kiegészítő törvénysz. 190/22)  |
+|      Brazília         |   március 2022.         | 10.0.27         |    METRIKUS-e NT2021.004 v1.00 - Elrendezés- és ellenőrzési szabályok frissítései  |
+|      Brazília         |   március 2022.         | 10.0.27         |    METRIKUS-e NT2021.004 v1.00 - Elrendezés- és ellenőrzési szabályok frissítései - Retail  |
+|      Brazília         |   április 2022.         | 10.0.27HF, 10.0.28         |    SPED ECF - 8. ELRENDEZÉS  |
+|      Kelet-Európa         |   július 2022.         | 10.0.27HF, 10.0.28HF, 10.0.29         |    Főkönyvi kivonat a fő számla szerint  |
+|      Litvánia|   február 2022. | 10.0.27 | I.SAF-változások a 2022-01-01 Dynamics 365 Pénzügyben  |
+|      Mexikó         |   március 2022.      | 10.0.27      |   CFDI-formátumok, 4.0-s verzió (számlák és kifizetések)  |
 |      Mexikó         |   február 2022.      | 10.0.27      |   2022. január 1-jén hatályba lép a CFDI 4.0-s verziója, a 3.3-as verzió és a 4.0-s verzió közötti együttfutási időszakkal, amely 2022. január 1-től június 30-ig tart.  |
-|      Mexikó         |   március 2022.      | 10.0.25, 10.0.26, 10.0.27      |   CFDI-formátumok, 4.0-s verzió (adóelőleg)  |
-|      Lengyelország          |   április 2022.     | 10.0.25HF, 10.0.26HF, 10.0.27HF     |   JPK_FA 4. verzióból, 2022JPK_V7M 2022. januártól, új sémaverzió |
-|      Oroszország          |   Január 2022.     | 10.0.25    |   Elektronikus jelentés célhelyének engedélyezése orosz könyvelési dokumentumok (elsődleges dokumentumok és könyvelési jelentések) tárolására|
-|      Oroszország          |   december 2021.     | 10.0.25    |   Orosz Tárgyi eszköz modul integrációja az Eszközkezelési modullal|
-|      Oroszország          |   Március – 2022. április     | 10.0.25, 10.0.26    |  Szállítási számla új formátuma (Állami n-2116 30.11.2021)|
-|      Spanyolország      |   március 2022.| 10.0.25HF, 10.0.26HF, 10.0.27 | A 303-as áfabevallási modell 2022. január 1-jén módosul a Dynamics 365 Pénzügyben.|
-
+|      Mexikó         |   március 2022.      | 10.0.27      |   CFDI-formátumok, 4.0-s verzió (adóelőleg)  |
+|      Lengyelország          |   április 2022.     | 10.0.27HF, 10.0.28     |   JPK_FA 4. verzióból, 2022JPK_V7M 2022. januártól, új sémaverzió |
+|      Oroszország          |   június 2022.     | 10.0.27    |  Jelentés a nyomon követhető termékekkel kapcsolatos műveletekről (a beszerzett nyomon követhető áruk, például a monitorok, irodabútorok és más irodaibútorok saját használatra történő leírásának hatókörében)|
+|      Szingapúr      |   július 2022.| 10.0.27HF, 10.0.28HF, 10.0.29 | IRAS könyvvizsgálati fájl (IAF) TXT-formátumban|
+|      Spanyolország      |   március 2022.| 10.0.27 | A 303-as áfabevallási modell 2022. január 1-jén módosul a Dynamics 365 Pénzügyben.|
 
 
 ## <a name="additional-resources"></a>További erőforrások

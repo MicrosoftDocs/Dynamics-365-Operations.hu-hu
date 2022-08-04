@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6f8f43bcdaae9a14350c66039d204caf38d33768
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5c8fa259e51f024d19c1f2f7e84ed7edd0ddb7e1
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906971"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069028"
 ---
 # <a name="wave-execution-notifications"></a>Hullámvégrehajtási értesítések
 
@@ -28,7 +28,7 @@ A *Hullámvégrehajtási értesítések* funkció üzleti eseményeket és a Mű
 
 A navigációs sáv jobb oldalán található **Üzenetek megjelenítése** gomb (harang szimbólum) jelzi, ha Műveleti központ üzenete elérhető az aktuális felhasználó számára. A felhasználó az **Üzenetek megjelenítése** gomb kiválasztásával megnyithatja a Műveleti központot, és áttekintheti az üzeneteket.
 
-Üzleti események akkor történnek, amikor üzleti folyamatok futnak. Az üzleti folyamatok feladatokból állnak. Az üzleti folyamat során az abban részt vevő felhasználók üzleti műveleteket hajtanak végre a feladatok elvégzéséhez. Az üzleti események olyan mechanizmust biztosítanak, amely lehetővé teszi, hogy a külső rendszerek értesítést fogadjanak a Pénzügy és Üzemeltetési alkalmazásoktól. Ily módon a rendszerek üzleti műveleteket hajtanak végre az üzleti eseményekre reagálva. További tájékoztatás: [Üzleti események áttekintése](../../fin-ops-core/dev-itpro/business-events/home-page.md).
+Üzleti események akkor történnek, amikor üzleti folyamatok futnak. Az üzleti folyamatok feladatokból állnak. Az üzleti folyamat során az abban részt vevő felhasználók üzleti műveleteket hajtanak végre a feladatok elvégzéséhez. Az üzleti események olyan mechanizmust biztosítanak, amely lehetővé teszi, hogy a külső rendszerek értesítést fogadjanak a pénzügyi és műveleti alkalmazásoktól. Ily módon a rendszerek üzleti műveleteket hajtanak végre az üzleti eseményekre reagálva. További tájékoztatás: [Üzleti események áttekintése](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
 ## <a name="turn-the-wave-execution-notifications-feature-on-or-off"></a>A Hullám-végrehajtási értesítések szolgáltatás be- és kikapcsolása
 
@@ -125,3 +125,4 @@ Az üzleti események beállításától függően végül értesítést kap a h
 > Nyitott hullámrészletek
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

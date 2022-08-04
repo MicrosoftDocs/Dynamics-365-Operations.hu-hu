@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 21d7d045c812c54d6776394ad9a0b025b55df8e1
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464909"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109112"
 ---
 # <a name="financial-analysis"></a>Pénzügyi elemzés
 
@@ -40,7 +40,7 @@ A **Pénzügyi elemzés** munkaterület arra összpontosít, hogy lehetővé teg
 
 - [A Power BI vizualizációk hozzáadása vagy szerkesztése az irányítópulton](/powerapps/user/add-powerbi-dashboards)
 
-## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance beállítása
+## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Pénzügy – beállítás
 **Főkönyv**
 
 A megfelelő alapértelmezés szerinti fő számlák kitöltésére a **Mérleg** pénzügyi kimutatásban és a **Pénzügyi elemzés** alkalmazáson belüli különböző **Eredménykimutatás** pénzügyi kimutatásokban a fő számla típusa és a főszámla-kategóriák használatosak.
@@ -78,7 +78,7 @@ Jelenleg a beágyazott Power BI jelentések adatait nem lehet azon jogi személy
 | Feladatkör                                    | Szerepkörök | Leírás |
 |-----------------------------------------|-------|------------|
 | Jelenlegi vállalat pénzügyi elemzésének megtekintése | <ul><li>Könyvelő</li><li>Főkönyvelő</li><li>Számviteli felügyelő</li><li>Könyvvizsgáló</li><li>Költségvetés-kezelő</li><li>Vezérigazgató</li><li>Pénzügyi igazgató</li><li>Pénzügyi ellenőr</li></ul> | Ez a feladatkör hozzáférést biztosít a Pénzügyi elemzés alkalmazáshoz. Alapértelmezés szerint az aktív vállalat szolgál szűrőként. Nem adhat hozzá más jogi személyeket. |
-| Minden vállalat pénzügyi elemzésének megtekintése   | A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójában ez a kötelességhez nem rendelt szerepkört. A következő kiadásban ez a feladatkör a pénzügyi igazgatói szerepkörhöz kerül hozzárendelésre. | Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterület menüpontjához biztosít hozzáférést. Alapértelmezés szerint az aktív vállalat szolgál szűrőként. Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez. |
+| Minden vállalat pénzügyi elemzésének megtekintése   | A Microsoft Dynamics 365 Finance, Enterprise Edition 7.3 verzióban ez a feladat nincs szerepkörhöz rendelve. A következő kiadásban ez a feladatkör a pénzügyi igazgatói szerepkörhöz kerül hozzárendelésre. | Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterület menüpontjához biztosít hozzáférést. Alapértelmezés szerint az aktív vállalat szolgál szűrőként. Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez. |
 
 
 ## <a name="financial-reporting-vs-financial-analysis"></a>Pénzügyi jelentések és Pénzügyi elemzés
@@ -96,7 +96,7 @@ A következő összehasonlító táblázattal különbséget tehet a két lehet�
 | **Jelentéskészítési hierarchia / szervezeti hierarchia támogatása**   | Igen                                                               | Nem |
 | **Jelentés analitikus adatokról**                             | Igen a Korlátozott csak szállítóra, vevőre                              | Igen: szállító, vevő, vevői és szállítói csoportok, vevői és szállítói címek stb. |
 | **Jelentési pénznem**                                   | Igen: könyvelési pénznem és a fordítás jelentési pénznemre       | Nem: Csak a könyvelési pénznem |
-| **Biztonság**                                             | Igen, a Finance és a jelentési fa biztonsága alapján | Korlátozott: jelentések megtekintése minden vállalatnál (Finance and Operations biztonságtól függetlenül) vagy csak az aktív vállalatnál |
+| **Biztonság**                                             | Igen, a Finance és a jelentési fa biztonsága alapján | Korlátozott nézet – jelentések megtekintése az összes vállalatra (a pénzügyi és a műveleti biztonságtól függetlenül) vagy csak az aktív vállalatra |
 | **Támogatás különböző számlatükrökhöz és pénzügyi évekhez** | Igen                                                               | Nem |
 | **jelentés külső adatokról**                              | Nem                                                                | Nem |
 | **Konszolidációk támogatása**                               | Igen                                                               | Korlátozott: jelentés több vállalatról is, de csak a könyvelési pénznem használatával |
@@ -244,3 +244,4 @@ Az alábbi erőforrásokban található információk nem szükségesek a **Pén
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

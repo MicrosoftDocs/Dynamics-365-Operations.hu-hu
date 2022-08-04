@@ -1,6 +1,6 @@
 ---
 title: A platform eltávolított vagy elavult funkciói
-description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve a Pénzügyi és műveletek alkalmazás platformfrissítései során tervezett eltávolításra vannak tervezve.
+description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,25 +12,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945804"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069922"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>A platform eltávolított vagy elavult funkciói
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve a Pénzügyi és műveletek alkalmazás platformfrissítései során tervezett eltávolításra vannak tervezve.
+Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
 
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
-A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
+A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük azokat az objektumokat, amelyek megváltoztak vagy el vannak távolítva a pénzügyi és műveleti alkalmazások egyes verzióiban.
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Funkció értékcsökkenése 2022. júniusban
@@ -39,14 +39,14 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A pénzügyek és műveletek (Dynamics 365) alkalmazás és platform elavult, hogy egyetlen mobil platformra, azaz egy platformra konszolidálunk Power Apps. |
-| **Felváltotta másik szolgáltatás?**   | Igen, a Pénzügy és műveletek alkalmazás adatain keresztüli mobil tapasztalatok integrációval is építhetőek Power Platform. További részleteket [a](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) post post és [Building mobil tapasztalatokkal](../power-platform/build-mobile-experiences.md) talál. |
+| **Elavulás/eltávolítás oka** | A pénzügyek és műveletek (Dynamics 365) alkalmazás és platform leárazása egyetlen mobil platformra, azaz egy mobil platformra való konszolidálás érdekében Power Apps. |
+| **Felváltotta másik szolgáltatás?**   | Igen, a pénzügyet és a műveleteket túli mobil tapasztalatok alkalmazásadatai integrációval is felépíthetőek Power Platform. További részleteket [a](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) post post és [Building mobil tapasztalatokkal](../power-platform/build-mobile-experiences.md) talál. |
 | **Érintett területek**         | Finance and Operations alkalmazások |
 | **Telepítési beállítás**              | Minden |
 | **Állapot**                         | Elavult. A támogatás végének dátuma 2024. október. |
 
 
-## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.29-es verziójának platformfrissítései
+## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>A Pénzügyi és üzemeltetési alkalmazások 10.0.29-es verziójának platformfrissítései
 
 ### <a name="panorama-tab-style"></a>Tabulátorlap stílusa
 
@@ -77,7 +77,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Az XSLT parancsfájlok használata az Adatkezelésben elavult, így javítható a biztonság és az adatbiztonság a Pénzügy és a Műveletek alkalmazáson belül.  |
+| **Elavulás/eltávolítás oka** | Az XSLT parancsfájlok használata az Adatkezelésben elavult, így javítható a biztonság és az adatbiztonság a pénzügyi és műveleti alkalmazásokon belül.  |
 | **Felváltotta másik szolgáltatás?**   | Nem. A vevőknek és az isV-knek érdemes megfontolni, hogy XSLT-parancsfájlok használata esetén az X++ nyelv alapján újra legyen edzve a megoldásuk. |
 | **Érintett területek**         | Finance and Operations alkalmazások |
 | **Telepítési beállítás**              | Minden |
@@ -118,7 +118,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult  |
 
-## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.23-as verziójának platformfrissítései
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>A Pénzügyi és műveletalkalmazások 10.0.23-as verziójának platformfrissítései
 
 ### <a name="ondbsynchronize-event"></a>OnDBSynchronize esemény
 
@@ -141,7 +141,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult. A tervezett eltávolítás dátuma: 2023. április. |
 
-## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.21-es verziójának platformfrissítései
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>A Pénzügyi és műveletalkalmazások 10.0.21-es verziójának platformfrissítései
 
 ### <a name="skype-for-business-online-support"></a>Skype for Business Online-támogatás
 
@@ -201,7 +201,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 | **Állapot**                         | Ez a funkció el lett távolítva. |
 
 
-## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.17-es verziójának platformfrissítései
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>A Pénzügyi és üzemeltetési alkalmazások 10.0.17-es verziójának platformfrissítései
 
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
@@ -228,7 +228,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A Dynamics AX 2012 Enterprise Portal (EP) metaadat-műtermékei elavultak, mert az EP nem volt támogatva a Pénzügy és műveletek alkalmazásokban. |
+| **Elavulás/eltávolítás oka** | A Dynamics AX 2012 Enterprise Portal (EP) metaadat-műtermékei elavultak, mert az EP soha nem volt támogatott a pénzügyi és műveleti alkalmazásokban. |
 | **Felváltotta másik szolgáltatás?**   | Nem |
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
@@ -246,7 +246,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 | **Telepítési beállítás**              | Minden|
 | **Állapot**                         | Elavult: Az Internet Explorer 11 támogatása 2021. augusztusban megszűnik.|
 
-## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.15-ös verziójának platformfrissítései
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>A Pénzügyi és műveleti alkalmazások 10.0.15-ös verziójának platformfrissítései
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio-bővítmény a metaadatok gyorsjavításának alkalmazásához
 
@@ -259,7 +259,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 | **Állapot**                         | A 10.0.15-ös verziónál a bővítmény már nem szerepel a Visual Studio-eszközök között. |
 
 
-## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.14-es verziójának platformfrissítései
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>A Pénzügyi és műveletalkalmazások 10.0.14-es verziójának platformfrissítései
 
 ### <a name="online-users-page"></a>Online felhasználók oldala 
 
@@ -272,7 +272,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 | **Állapot**                         | 2021 októberétől ez a képernyő el lesz távolítva.   |
 
 
-## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.13-as verziójának platformfrissítései
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>A Pénzügyi és műveletalkalmazások 10.0.13-as verziójának platformfrissítései
 
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Az SSRS-jelentés tulajdonságai között definiált egyéni kód 
@@ -316,19 +316,19 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 | **Állapot**                         | A 10.0.13 vezió/Platform update 37, a mentett nézetek funkció általánosan elérhető, és a vevők tetszés szerint be tudják kapcsolni ezt a funkciót. A mentett nézetek funkció használata kötelezővé válik a 2021 októberi kiadástól. |
 
 
-## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.12-es verziójának platformfrissítései
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>A Pénzügyi és műveletalkalmazások 10.0.12-es verziójának platformfrissítései
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Érvénytelen mezők hivatkozásait tartalmazó rács vagy csoport vezérlő képernyő-kiterjesztések
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A rács vagy csoport vezérlőelem adatcsoport-tulajdonsága automatikusan megjeleníti a mezőcsoport összes mezőjét. A kiterjesztéssel hozzáadott rács vagy csoport tartalmazhat olyan mezőket, amelyek már nincsenek definiálva a mezőcsoportban, vagy hiányoznak azok a mezők, amelyek meg vannak határozva a mezőcsoportban. Ez inkonzisztens működést okozhat futásidőben. A Pénzügyi és műveleti alkalmazások 10.0.12-es verziójának platformfrissítései most fordítói figyelmeztetésként kategorizálják ezt a *problémát*. A hiba elhárításához nyissa meg a képernyő-kiterjesztést, és mentse.
+| **Elavulás/eltávolítás oka** | A rács vagy csoport vezérlőelem adatcsoport-tulajdonsága automatikusan megjeleníti a mezőcsoport összes mezőjét. A kiterjesztéssel hozzáadott rács vagy csoport tartalmazhat olyan mezőket, amelyek már nincsenek definiálva a mezőcsoportban, vagy hiányoznak azok a mezők, amelyek meg vannak határozva a mezőcsoportban. Ez inkonzisztens működést okozhat futásidőben. A pénzügyi és műveletalkalmazások 10.0.12-es verziójának platformfrissítései most fordítói figyelmeztetésként kategorizálják ezt a *problémát*. A hiba elhárításához nyissa meg a képernyő-kiterjesztést, és mentse.
 | **Felváltotta másik szolgáltatás?**   | Ezt a fordítói figyelmeztetést egy jövőbeli frissítés fordítói hibára fog lecserélni. |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Fordítói figyelmeztetés jelenik meg a Pénzügy és műveletek alkalmazások 10.0.12-es verziójának platformfrissítéseiben. |
+| **Állapot**                         | Fordítói figyelmeztetés jelenik meg a pénzügyi és műveleti alkalmazások 10.0.12-es verziójának platformfrissítéseiben. |
 
-## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.11-es verziójának platformfrissítései
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>A Pénzügyi és műveletalkalmazások 10.0.11-es verziójának platformfrissítései
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>Explicit biztonságos lista az önkiszolgáló környezetek számára
 
@@ -354,11 +354,11 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A tábla metaadatok definíciójában található mezőcsoportok olyan mezőhivatkozásokat tartalmazhatnak, amelyek nem érvényesek. Ezen mezőcsoportok telepítése esetén hibákat okozhatnak futásidőben a Financial Reporting és a Microsoft SQL Server Reporting Services (SSRS) szolgálatásokban. A 23-as platformfrissítés bevezetett egy fordítási *figyelmeztetést*, amely a metaadat-problémák kezelését teszi lehetővé. A Pénzügyi és műveleti alkalmazások 10.0.11-es verziójának platformfrissítései fordítói hibaként kategorizálják ezt a *problémát*.<p>Ezen hiba javításához kövesse az alábbi lépéseket.</p><ol><li>Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</li><li>Végezzen újrafordítást.</li><li>Győződjön meg arról, hogy minden hiba orvosolva lett.</li></ol> |
+| **Elavulás/eltávolítás oka** | A tábla metaadatok definíciójában található mezőcsoportok olyan mezőhivatkozásokat tartalmazhatnak, amelyek nem érvényesek. Ezen mezőcsoportok telepítése esetén hibákat okozhatnak futásidőben a Financial Reporting és a Microsoft SQL Server Reporting Services (SSRS) szolgálatásokban. A 23-as platformfrissítés bevezetett egy fordítási *figyelmeztetést*, amely a metaadat-problémák kezelését teszi lehetővé. A pénzügyi és műveletalkalmazások 10.0.11-es verziójának platformfrissítései fordítói hibaként kategorizálják ezt a *problémát*.<p>Ezen hiba javításához kövesse az alábbi lépéseket.</p><ol><li>Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</li><li>Végezzen újrafordítást.</li><li>Győződjön meg arról, hogy minden hiba orvosolva lett.</li></ol> |
 | **Felváltotta másik szolgáltatás?**   | Ez a fordítóhiba véglegesen lecseréli a fordítói figyelmeztetését.  |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: A fordító figyelmeztetés egy fordítói hiba a Pénzügy és műveletek alkalmazások 10.0.11-es verziójának platformfrissítései során. |
+| **Állapot**                         | Elavult: A fordító figyelmeztetés egy fordítói hiba a pénzügyi és műveleti alkalmazások 10.0.11-es verziójának platformfrissítései során. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>Az SHA1 kivonatolási algoritmussal létrehozott ISV-licencek
 
@@ -398,3 +398,4 @@ További tájékoztatás a korábbi verziókban eltávolított vagy elavult szol
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

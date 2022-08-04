@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: acffe97cf1844f16a70c716a7f2078b1e9a072d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849474"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124528"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.23 szolgáltatásban (2022. január)
 
@@ -81,9 +81,9 @@ Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikke
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A pénzügyi és az üzemeltetési alkalmazások platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.23 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.23-as verziójának Platformfrissítései (2021. november)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+A Microsoft Dynamics 365 Supply Chain Management 10.0.23 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és üzemeltetési alkalmazások 10.0.23-as verziójának Platformfrissítései (2021. november)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
@@ -107,3 +107,4 @@ Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chai
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

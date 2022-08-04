@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 66ed258ebddaadb5a306f41dea3e439e9b5a7be3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907116"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065863"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Bejövő ASN-ek importálása a V3 adatentitáson keresztül
 
@@ -29,7 +29,7 @@ Az ASN-ek segítségével a raktári dolgozók áttekintheti, hogy mi mikor érk
 Ez a cikk olyan helyzetek gyűjteményét mutatja be, amelyek példákon keresztül mutatják be, hogyan lehet az ASN-fájlokat dolgozni.
 
 > [!IMPORTANT]
-> *A bejövő ASN-ek* importálása csak a speciális raktárkezelési modulban (WMS) engedélyezett cikkekkel használható. Az ASN-ek fogadása előtt egy beszerzési rendelést regisztrálni kell a rendszerben az adott ASN-t küldő szállítóra vonatkozóan.
+> *A bejövő ASN-importálás* csak azokra a cikkekre vonatkozik, amelyek engedélyezve vannak a raktárkezelési folyamatokhoz (WMS). Az ASN-ek fogadása előtt egy beszerzési rendelést regisztrálni kell a rendszerben az adott ASN-t küldő szállítóra vonatkozóan.
 
 ## <a name="inbound-asn-v3-entity"></a>Bejövő ASN V3 entitás
 

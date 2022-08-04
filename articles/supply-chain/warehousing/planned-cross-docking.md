@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863679"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070289"
 ---
 # <a name="planned-cross-docking"></a>Tervezett áttárolás
 
@@ -118,7 +118,7 @@ A tervezett áttárolás a rakományok feladási módjaként történik. A funkc
     - **Beszerzési forrás:** *Beszerzési rendelés*
 
 > [!NOTE]
-> Beállíthat egy lekérdezést, amivel szabályozza, hogy egy adott áttárolási sablon mikor legyen használva. Az áttárolási sablonok lekérdezése csak az *InventTable* (cikkek) táblát és a belső összekapcsolt *WHSInventTable* (WHS-cikkek) táblát tartalmazza. Ha további táblákat szeretne hozzáadni a lekérdezéshez, akkor csak *létező egyesítéseket* vagy *nem létező egyesítések* használatával egyesítheti ezeket. Amikor az összekapcsolt táblákra szűr, a főtáblából egy rekordot olvassa be a rendszer az összekapcsolt tábla mindegyik egyező rekordjához. Ha az összekapcsolástípus *létező összekapcsolás*, a keresés az első egyezés megtalálása után ér véget. Ha például az értékesítési rendelési sor tábláját a cikkek táblához kapcsolja, a rendszer ellenőrzi és visszaadja azokat a cikkeket, amelyekre legalább egy értékesítésirendelés-sornál meg van adva a megadott feltétel. A rendszer alapvetően a szülő (cikkek) táblából, nem a gyermek táblából (értékesítésirendelés-sor) másolja át az adatokat. Emiatt forrásdokumentumok (például értékesítésirendelés-sorok vagy vevők) alapján alapkivitelben nem lehet szűrést végezni.
+> Beállíthat egy lekérdezést, amivel szabályozza, hogy egy adott áttárolási sablon mikor legyen használva. Az áttárolási sablonok lekérdezése csak az *InventTable* (cikkek) táblát és a belső összekapcsolt *WHSInventTable* (WMS-cikkek) táblát tartalmazza. Ha további táblákat szeretne hozzáadni a lekérdezéshez, akkor csak *létező egyesítéseket* vagy *nem létező egyesítések* használatával egyesítheti ezeket. Amikor az összekapcsolt táblákra szűr, a főtáblából egy rekordot olvassa be a rendszer az összekapcsolt tábla mindegyik egyező rekordjához. Ha az összekapcsolástípus *létező összekapcsolás*, a keresés az első egyezés megtalálása után ér véget. Ha például az értékesítési rendelési sor tábláját a cikkek táblához kapcsolja, a rendszer ellenőrzi és visszaadja azokat a cikkeket, amelyekre legalább egy értékesítésirendelés-sornál meg van adva a megadott feltétel. A rendszer alapvetően a szülő (cikkek) táblából, nem a gyermek táblából (értékesítésirendelés-sor) másolja át az adatokat. Emiatt forrásdokumentumok (például értékesítésirendelés-sorok vagy vevők) alapján alapkivitelben nem lehet szűrést végezni.
 
 ### <a name="create-a-work-class"></a>Munkaosztály létrehozása
 

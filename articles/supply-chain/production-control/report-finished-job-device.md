@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857373"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070469"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Jelentés befejezettként a feladatkártya eszközből
 
@@ -50,7 +50,7 @@ A **termelési rendelés alapadatai** munkalapjával kapcsolatos további tudniv
 
 ## <a name="report-batch-controlled-items-as-finished"></a>Kötegelt vezérelt cikkek jelentése készként
 
-A feladatkártya-eszköz három esetet támogat a kötegelt cikkek jelentéséhez. Ezek a helyzetek mind a speciális raktári folyamatokhoz engedélyezett cikkekre, mind a speciális raktári folyamatokhoz nem engedélyezett cikkekre vonatkoznak.
+A feladatkártya-eszköz három esetet támogat a kötegelt cikkek jelentéséhez. Ezek az esetek mind a raktárkezelési folyamatokhoz (WMS) engedélyezett cikkekre, mind a WMS számára nem engedélyezett cikkekre érvényesek.
 
 - **Kötegelt számok kézi hozzárendelése** – A dolgozók egyéni kötegszámot adnak meg. Ez a kötegszám olyan külső forrásból származhat, amelyet a rendszer nem ismer.
 - **Előre definiált kötegszám** – A dolgozók egy kötegszámnak a kiválasztását végzik el egy listáról, amelyet a rendszer automatikusan generált, a termelési rendelésnek a feladatkártya-eszközbe történő kiadása előtt.
@@ -129,7 +129,7 @@ Ha ezt a forgatókönyvet választja, akkor a feladatkártya-eszköz **Kötegsz�
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Sorozatvezérelt cikkek jelentése készként
 
-A feladatkártya-eszköz három esetet támogat a sorozatvezérelt cikkek jelentéséhez. Ezek a helyzetek mind a speciális raktári folyamatokhoz engedélyezett cikkekre, mind a speciális raktári folyamatokhoz nem engedélyezett cikkekre vonatkoznak.
+A feladatkártya-eszköz három esetet támogat a sorozatvezérelt cikkek jelentéséhez. Ezek az esetek mind a raktárkezelési folyamatokhoz (WMS) engedélyezett cikkekre, mind a WMS számára nem engedélyezett cikkekre érvényesek.
 
 - **Sorozatszámok kézi hozzárendelése** – A dolgozók egyéni sorozatszámot adnak meg. Ez a sorozatszám olyan külső forrásból származhat, amelyet a rendszer nem ismer.
 - **Előre meghatározott sorozatszám** – A dolgozók egy sorozatszámnak a kiválasztását végzik el egy listáról, amelyet a rendszer automatikusan generált, a termelési rendelésnek a feladatkártya-eszközbe történő kiadása előtt.
@@ -212,7 +212,7 @@ Ha ezt a forgatókönyvet választja, akkor a feladatkártya-eszköz **Sorozatsz
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Jelentés készként egy azonosítótáblára
 
-A speciális raktári folyamatok az azonosítótábla-dimenzió segítségével nyomon követhetik az erre a célra beállított raktári helyeket. Ebben az esetben az azonosítótábla számának megadása szükséges, ha a dolgozó készként jelenti a mennyiségeket.
+A raktárkezelő folyamatok az tábla dimenzió segítségével nyomon követhetik az erre a célra beállított raktári helyek készletét. Ebben az esetben az azonosítótábla számának megadása szükséges, ha a dolgozó készként jelenti a mennyiségeket.
 
 ### <a name="enable-license-plate-reporting-and-label-printing"></a>Azonosítótábla jelentésének és címke nyomtatásának engedélyezése
 

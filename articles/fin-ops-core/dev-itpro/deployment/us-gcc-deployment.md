@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 90e64fec512307af209ace128d5897475de7aee5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 41789d574cc7348dbf8a18db97da9c428da09602
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867273"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103938"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>Dynamics 365 Pénzügy, Ellátásilánc-kezelés és Commerce – Az Egyesült Államokkal kapcsolatos közösségi felhő (GCC)
 
@@ -38,9 +38,9 @@ A kezdeti berakodási művelet befejezése után kövesse [a Project onboarding]
 
 ## <a name="environment-deployment"></a>Környezet telepítése
 
-Miután befejezte a projektbe való befektetést, áttekintheti az LCS [további lehetőségeit, amelyek a Lifecycle Services (LCS) for Finance and Operations alkalmazások vevőiben le vannak írva](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Ezután lépjen tovább a környezet telepítésére.
+Miután befejezte a projektbe való befektetést, áttekintheti az LCS [további, a Lifecycle Services (LCS) pénzügyi és műveleti alkalmazások vevőinek leírásában leírt lehetőségeit](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Ezután lépjen tovább a környezet telepítésére.
 
-- A Microsoft által kezelt környezetek LCS-en keresztüli telepítéséhez kövesse [a Lifecycle Services (LCS) for Finance and Operations alkalmazások vevőinek a Lifecycle Services (LCS) útmutatóját](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- A Microsoft által kezelt környezetek LCS-en keresztüli telepítéséhez kövesse [a Lifecycle Services (LCS)](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience) pénzügyi és műveleti alkalmazások vevőire vonatkozó utasításokat.
 - A felhőben tárolt környezetek esetén lásd [a Fejlesztői környezetek telepítése és elérése.](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) Az egyesült [államokbeli lifecycle Services-projektekre vonatkozó Azure erőforrás-kezelő on-boarding folyamatának befejezéseként az Erőforrás-kezelő továbbjelző folyamatot is be kell fejeznie](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
@@ -84,3 +84,4 @@ Igen. Ha azonban a partner nem GCC-személyazonosságot használ, a támogatási
 - [Felhőbeli telepítés áttekintése](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

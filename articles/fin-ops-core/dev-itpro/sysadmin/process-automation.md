@@ -2,7 +2,7 @@
 title: Folyamatok automatizálása
 description: Ez a cikk részletesen bemutatja, hogy hogyan teszi lehetővé a folyamatautomatizálás a kötegkiszolgáló által futtatott folyamatok egyszerű ütemezését.
 author: RyanCCarlson2
-ms.date: 04/20/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: f13392fd6610735f8c539d42b62cf71cece71fba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
+ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898609"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9114935"
 ---
 # <a name="process-automation"></a>Folyamatok automatizálása
 
@@ -30,7 +30,7 @@ A folyamatok automatizálásával egyszerű ütemezést lehet végezni a kötege
 
 A rendszer a **Beállítás** menü Rendszeradminisztráció moduljában található összes folyamatautomatizálás központi felügyeleti lapja. Ez a lap felsorolja a rendszerben beállított összes automatizált folyamatot (sorozatot). Ez lehetővé teszi az új folyamatautomatizálások közvetlen hozzáadását ezen a lapon. Ha be van állítva a sorozat, akkor az egyes sorozatok ebből a listából kezelhetők. Választhatja, hogy a teljes sorozatot szerkeszti, törli, egy lista nézetben megtekinti az összes előfordulását, vagy letiltja a sorozatot, ha szüneteltetni szeretné az ütemezett munkát egy adott időszakra. 
 
-A szolgáltatáskezelésben letiltott folyamatok nem jelennek meg, ha a szolgáltatás le van tiltva. Ezenkívül a folyamatautomatizálás ütemezési motorja nem fogja ütemezni a letiltott szolgáltatások eseteit vagy a háttérműveleteit. A funkció újbóli engedélyezése esetén a múltbeli ütemezési események vagy háttérfolyamatok azonnal lefutnak. A folyamatautomatizálási ütemezési motor a rendszer kötegelt feladatán, a **Folyamatautomatizálás ciklikus lekérdezési rendszerfeladat** futtatásán alapul. A feladat nem változtatható meg és nem módosítható. 
+A szolgáltatáskezelésben letiltott folyamatok nem jelennek meg, ha a szolgáltatás le van tiltva. Ezenkívül a folyamatautomatizálás ütemezési motorja nem fogja ütemezni a letiltott szolgáltatások eseteit vagy a háttérműveleteit. A funkció újbóli engedélyezése esetén a múltbeli ütemezési események vagy háttérfolyamatok azonnal lefutnak. A folyamatautomatizálási ütemezési motor a rendszer kötegelt feladatán, a **Folyamatautomatizálás ciklikus lekérdezési rendszerfeladat** futtatásán alapul. A feladat nem változtatható meg és nem módosítható. Ha ez a kötegelt feladat nem fut, vagy hibaállapotban van, **a** kötegelt feladat alaphelyzetbe állításához válassza a folyamatautomatizálás inicializálását. Ezzel az alaphelyzetbe állítással garantálható, hogy az alkalmazás újabb verziójában kiadott új automatizálások inicializálva vannak. 
 
 ## <a name="calendar-view"></a>Naptár nézet
 

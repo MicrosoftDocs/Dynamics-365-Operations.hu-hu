@@ -2,19 +2,19 @@
 title: Commerce-katalógusok létrehozása B2B webhelyekhez
 description: Ez a témakör azt ismerteti, hogyan lehet kereskedelmi katalógusokat létrehozni a Microsoft Dynamics 365 Commerce vállalathoz tartozó (B2B) webhelyek számára.
 author: ashishmsft
-ms.date: 05/18/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 2cc9014d273b4ab6f23a38140d0cfcd3ffa4d630
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 7d4ed3e2a76924c2c3c0ba55e21ba648e8da7b76
+ms.sourcegitcommit: d1491362421bf2fcf72a81dc2dc2d13d3b98122b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027032"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9136826"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Commerce-katalógusok létrehozása B2B webhelyekhez
 
@@ -25,10 +25,13 @@ Ez a témakör azt ismerteti, hogyan lehet kereskedelmi termékkatalógusokat l�
 > [!NOTE]
 > Ez a cikk a Dynamics 365 Commerce 10.0.27-es és későbbi verziókra vonatkozik.
 
-A Commerce katalógusok segítségével azonosíthatja a B2B online áruházakban kínálni kívánt termékeket. Katalógus létrehozása esetén azonosítja azokat az online áruházakat, amelyekben a termékek felkínálják, hozzáadja a szerepelni kívánt termékeket, és árusítási részletek hozzáadásával javítja a termék kínálatát. Minden egyes B2B online áruházhoz több katalógust is létrehozhat.
+A Commerce katalógusok segítségével azonosíthatja a B2B online áruházakban kínálni kívánt termékeket. Katalógus létrehozása esetén azonosítja azokat az online áruházakat, amelyekben a termékek felkínálják, hozzáadja a szerepelni kívánt termékeket, és árusítási részletek hozzáadásával javítja a termék kínálatát. Minden B2B online áruházhoz több katalógust is létrehozhat, amint azt az alábbi ábra mutatja.
+
+![Kereskedelmi termékkatalógusok előnézete](./media/Commerce_Catalogs.png)
 
 A kereskedelmi termékkatalógusokkal a következő információkat lehet meghatározni:
 
+- **Katalógustípus** – az érték konfigurálása **B2B típusként**. Megadhatja a B2B katalógusspecifikus tulajdonságokat, például a navigációs hierarchiát, a vevőhierarchiát és a katalógus attribútum-metaadatait. 
 - **Katalógusspecifikus navigációs hierarchia** – a szervezetek egyedi kategóriastruktúrát hozhatnak létre az adott katalógushoz.
 - **Katalógusspecifikus attribútum-metaadatok** – az attribútumok egy termék részletes adatait tartalmazzák. Ha attribútumokat rendel a navigációs hierarchia egy kategóriájához, az adott kategóriához rendelt termékek szintjén meghatározhatja az attribútumok értékeit. A szervezetek ezután a következő feladatokat fejezheti be:
 
@@ -41,11 +44,14 @@ A kereskedelmi termékkatalógusokkal a következő információkat lehet meghat
 - **Árcsoportok** – az adott katalógusra jellemző árakat és promóciókat konfigurálhatja. Ez a képesség a B2B-csatorna katalógusának meghatározásának alapvető oka. A katalógusok árcsoportja lehetővé teszi a szervezetek számára, hogy termékeket tegyenek elérhetővé a tervezett B2B szervezetek számára, és alkalmazzák a preferált árképzést és engedményeket. A konfigurált katalógusból rendelést vásárló B2B vevők a Commerce B2B webhelyre való bejelentkezés után különleges árakat és promóciókat kaphatnak. Katalógusspecifikus árak konfigurálása **érdekében** **válassza** ki az Árcsoportokat a Katalógusok lapon, ha egy vagy több árcsoportot a katalógushoz csatol. A katalógusból vevői rendelés esetén a rendszer az azonos árcsoporthoz kapcsolt valamennyi kereskedelmi megállapodást, árkorrekció-naplót és speciális engedményt alkalmazza. (Az speciális engedmények közé tartoznak a küszöbérték-, mennyiség- és kombinációs engedmények.) Az árcsoportokkal kapcsolatos további tudnivalókat lásd: [Árcsoportok](price-management.md#price-groups).
 
 > [!NOTE]
-> Ez a funkció a Dynamics 365 Commerce 10.0.27-es verzióban érhető el. A Commerce Headquarters **alkalmazásban** katalógusspecifikus konfigurációk – például navigációs hierarchia és vevőhierarchiák – konfigurálása érdekében nyissa meg a Szolgáltatáskezelés munkaterületét (**\>\> Rendszerfelügyelet – Munkaterületek funkciókezelés**), **engedélyezze több katalógus használatát a kiskereskedelmi csatornák szolgáltatásban,** majd futtassa a 1110 CDX-feladatot.**·**
+> Ez a funkció a Dynamics 365 Commerce 10.0.27-es verziótól indul. Ha katalógusspecifikus konfigurációkat, például navigációs hierarchiákat és vevők hierarchiáját szeretné konfigurálni a Commerce Headquarters alkalmazásban, **kattintson a Szolgáltatáskezelés** **\>\>** munkaterületének kezelése képernyőre, **engedélyezze több katalógus használatát a kiskereskedelmi csatornák szolgáltatásban,** majd futtassa a 1110 CDX-feladatot.**·** Ha engedélyezi ezt a funkciót, a Katalógusok lapon az összes, POS-üzletekhez **vagy hívásközponthoz használt katalógus katalógustípus = B2C** **lesz megjelölve**. Csak a katalógustípusként **megjelölt meglévő és új katalógusok – B2C** – vonatkoznak a POS-üzletekre és a hívásközpontra. 
 
-## <a name="catalog-process-flow"></a>Katalógus folyamatának folyamata
+## <a name="b2b-catalog-process-flow"></a>B2B katalógus folyamatábra
 
 A katalógusok létrehozásának és feldolgozásának folyamata négy általános lépésből áll. Minden lépés részletesen le van ásva a következő szakaszban.
+
+> [!NOTE]
+> Mielőtt továbblép, győződjön meg róla, hogy a **katalógus katalógustípusként van megjelölve = B2B**.
 
 1. **[Konfiguráció](#configure-the-catalog)**
 
@@ -73,7 +79,7 @@ Ennek a szakasznak az adatai alapján állíthatja be a katalógust.
 
 A Commerce Headquarters alkalmazás a **katalógus konfigurálása érdekében menjen a Retail and Commerce \> Catalogs \>** és a szortimentek összes katalógusára.
 
-Új katalógus létrehozása után először társítani kell egy vagy több csatornához. A katalógus létrehozásakor csak a kiválasztott [csatorna szortimenthez](/dynamics365/unified-operations/retail/assortments) kapcsolt cikkeket lehet használni. Ha a katalógust egy vagy több csatornához szeretne társítani, **·** **válassza a Hozzáadás a Katalógusbeállítás lap Commerce csatornák** **gyorslapján** lehetőséget.
+Új katalógus létrehozása után először társítani kell egy vagy több csatornához. A katalógus létrehozásakor csak a kiválasztott [csatorna szortimenthez](/dynamics365/unified-operations/retail/assortments) kapcsolt cikkeket lehet használni. Ha a katalógust egy vagy több csatornához szeretne társítani, **·** **válassza a Hozzáadás a Katalógusbeállítás lap Commerce csatornák** **gyorslapján** lehetőséget. Győződjön meg róla, hogy a katalógus katalógustípusként **van megjelölve = B2B**.
 
 #### <a name="associate-the-navigation-hierarchy"></a>Navigációs hierarchia társítása
 
@@ -90,6 +96,17 @@ A katalógushoz hozzáadható termékek a Commerce Headquarters **alkalmazásba 
 Másik lehetőségként jelöljön ki egy csomópontot a navigációs hierarchiában. Ezt követően a katalógus egy kategóriájához közvetlenül hozzá tudja adni a termékeket.
 
 #### <a name="associate-price-groups"></a>Árcsoportok társítása
+
+A katalógushoz hozzáadható termékek a Commerce Headquarters **alkalmazásba való felvétele érdekében a Retail and Commerce \> Catalogs és a Szortimentek \> Mind katalógusok gombra való ugrásával konfigurálhatók**. Ezután a Katalógusok lapon **válassza** a Termékek **hozzáadása lehetőséget**. 
+
+Azok a termékek, amelyek a navigációs hierarchia gyökércsomópontból egy katalógushoz hozzáadva, a Termék hozzáadása a munkaablakban lehetőség választásával öröklik a kategóriákat, amennyiben a **katalógushoz** a forrás navigációs hierarchia is társítva van. A forrás navigációs hierarchiában végrehajtott kategóriák módosításai azonnal megjelennek a katalógusok között. A csatornák frissítéséhez újból közzé kell tennie a katalógusokat.
+
+Másik lehetőségként kiválaszthat egy csomópontot a navigációs hierarchiában, és közvetlenül termékeket adhat hozzá a katalógus kiválasztott kategóriájához. 
+
+Termékek hozzáadásakor az **Összes változat automatikus felvétele, ha csak** az alaptermék van kiválasztva, elérhetővé válik. Az összes változat felvételének megakadályozásához válasszon ki legalább egy változatot az alaptermékhez. 
+
+> [!NOTE]
+> Ha azt választja, hogy minden változat automatikusan szerepeljen nagy alaptermék-kiválasztásban, hosszabb feldolgozási időket is tapasztalhat. Nagy beállítások esetén azt ajánljuk, **hogy** a művelet kötegelt módban való futtatásához jelölje be az összes változatot a katalógusok oldalának műveleti ablakában. Ha a katalógusban csak az alaptermék szerepel, de egyetlen változat sem, előfordulhat, hogy a változatválasztó nem érhető el, amikor egy termék részletei lapra navigál. 
 
 Katalógusspecifikus árak konfigurálása érdekében egy vagy több árcsoportot kell a katalógushoz kapcsolnia. Ha árcsoportokat társít egy katalógushoz a Commerce Headquarters segítségével, **akkor menjen a Retail and Commerce \> Catalogs and szortimentek \> Minden katalógusba**. Ezután válassza ki az **Árcsoportokat** **a Katalógusok lapon,** az **Árképzés csoportban**. Az ugyanabba az árcsoportba tartozó minden kereskedelmi megállapodás, árkorrekció-napló és speciális engedmény (küszöbérték, mennyiség és kombinációs engedmény) akkor lesz alkalmazva, amikor a vevő rendelést rendel a katalógusból.
 
@@ -122,6 +139,9 @@ Katalógus érvényesítéséhez kövesse az alábbi lépéseket.
 1. Az Összes **katalógus lap Katalógusok** lapján **található** Katalógusok **ellenőrzése** ellenőrzés futtatásához jelölje be **a** Katalógus érvényesítése lehetőséget. Ez a lépés kötelező. Ellenőrzi, hogy helyes-e a szükséges beállítás.
 1. Az **ellenőrzés részleteinek** megtekintéséhez válassza az Eredmények megtekintése lehetőséget. Ha a rendszer hibákat talál, ki kell javítania az adatokat, majd újra futtatnia kell az ellenőrzést, amíg el nem halad.
 
+> [!NOTE]
+> Ha **a katalógus típusa = B2B**, az érvényesítés sikertelen lesz, ha pos-áruházakat vagy hívásközpontokat adott hozzá a katalógushoz. A B2B katalógusok csak B2B online csatornákhoz társíthatók. Az ellenőrzés akkor is sikertelen lesz, ha nincs hozzárendelve vevőhierarchia egy B2B-katalógushoz. 
+
 ### <a name="approve-the-catalog"></a>Katalógus jóváhagyása
 
 A katalógus érvényesítése után jóvá kell hagyni azt.
@@ -143,3 +163,5 @@ Ha egy katalógus Jóváhagyott **állapotú**, **·** **a** Katalógusok menü 
 [Commerce-katalógusok B2B-testreszabásokra vonatkozó bővíthetőségi hatása](catalogs-b2b-sites-dev.md)
 
 [Commerce-katalógusok B2B-hez – GYIK](catalogs-b2b-sites-FAQ.md)
+
+[Katalógusválasztó modul](catalog-picker.md)

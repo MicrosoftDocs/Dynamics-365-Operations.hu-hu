@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e8e6adc2c72b6e3ab567723ac01055ea8d7292e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3cfdb98f9f0f05e046784cc77c85cd4a045868c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868727"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069377"
 ---
 # <a name="company-directory-mobile-workspace"></a>Vállalati címtár mobil munkaterülete
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868727"
 
 Ez a cikk a Vállalat könyvtára mobileszköz-munkaterületről **nyújt** tájékoztatást. A munkaterület lehetővé teszi, hogy a felhasználók megtekintsék és felkeressék a szervezet más alkalmazottait.
 
-A mobil munkaterület használható a Finance and Operations mobilalkalmazásban.
+Ez a mobil munkaterület a Pénzügy és műveletek mobilalkalmazással használható.
 
 ## <a name="overview"></a>Áttekintés
 A **Vállalat címtára** mobil munkaterület használatával a felhasználók a következő feladatokat hajthatják végre:
@@ -50,12 +50,12 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 <tbody>
 <tr class="odd">
 <td>A következő termékek egyikének telepítve kell lennie a szervezeténél:
-<ul><li>A Finance and Operations alkalmazás</li>
+<ul><li>Pénzügyi és műveleti alkalmazás</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Rendszergazda</td>
-<td>Ha a vállalati hálózatra még nincs telepítve a Finance and Operations alkalmazás, lásd a következő tudnivalókat: <a href="../deployment/deploy-demo-environment.md">Bemutatókörnyezet telepítése</a>. Ha a szervezetében még nincs telepítve az Emberi erőforrások, a rendszergazda hozzáférhet a próbaverzióhoz az <a href="https://dynamics.microsoft.com/human-resources/overview/">Emberi erőforrások weboldaláról</a>.
+<td>Ha még nincs&#39; telepítve a szervezethez telepített pénzügyi és műveletalkalmazás, tekintse <a href="../deployment/deploy-demo-environment.md">meg a Bemutatókörnyezet telepítése</a>. Ha a szervezetében még nincs telepítve az Emberi erőforrások, a rendszergazda hozzáférhet a próbaverzióhoz az <a href="https://dynamics.microsoft.com/human-resources/overview/">Emberi erőforrások weboldaláról</a>.
 </td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
-Töltse le és telepítse a Finance and Operations mobilalkalmazást:
+Töltse le és telepítse a Pénzügy és műveletek mobilalkalmazást:
 
 -   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -91,3 +91,4 @@ Töltse le és telepítse a Finance and Operations mobilalkalmazást:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

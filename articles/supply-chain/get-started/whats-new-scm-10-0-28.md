@@ -1,5 +1,5 @@
 ---
-title: A Dynamics 365 Supply Chain Management 10.0.28 előzetes verziója (2022. augusztus)
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.28 szolgáltatásban (2022. augusztus)
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.28 verziójában új vagy módosult funkciókat ismerteti.
 author: kamaybac
 ms.date: 05/27/2022
@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e17127ff6ef6c52034b8aa5e0c8404772363ca9
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902053"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186519"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>A Dynamics 365 Supply Chain Management 10.0.28 előzetes verziója (2022. augusztus)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.28 szolgáltatásban (2022. augusztus)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a cikk felsorolja azokat a funkciókat, amelyek vagy újak, vagy módosulnak a Microsoft Dynamics 365 Supply Chain Management 10.0.28-as verziójában. Ennek a verziónak a buildszáma több 10.0.1264, és a következő ütemezésben érhető el:
 
@@ -35,7 +34,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 | Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
 | Készlet és logisztika | [Partraszállítási költségintegrációs entitások harmadik fél fuvarozói számára](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Partraszállási költség entitásai – áttekintés](../landed-cost/landed-cost-entities-overview.md) | Alapértelmezés szerint engedélyezve |
-| Tervezés | [Igényvezérelt anyagigény-tervezés (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Hamarosan | Funkciókezelés:<br>*(Előzetes verzió) DDMRP a Tervezési optimalizáláshoz* |
+| Tervezés | [Igényvezérelt anyagigény-tervezés (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md) | Funkciókezelés:<br>*(Előzetes verzió) DDMRP a Tervezési optimalizáláshoz* |
 | Tervezés | [Tervezési optimalizálás támogatása ígérő (CTP) funkciókhoz](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Hamarosan | Funkciókezelés:<br>*(Előzetes verzió) CTP a Tervezési optimalizáláshoz* |
 | Tervezés | [Tervezési optimalizálás támogatása eltarthatósági idő esetén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Hamarosan | Alapértelmezés szerint engedélyezve |
 
@@ -61,12 +60,12 @@ Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikke
 |---|---|
 | Költségkezelés | [Rögzített bevételezési ár](../cost-management/fixed-receipt-price.md) |
 | Költségkezelés | [Készlet költségszámítása – gyakran ismételt kérdések](../cost-management/inventory-costing-faq.md) |
-| Költségkezelés | [Fel a költségszámla könyvelési elvbe](../cost-management/post-to-charge-account-accounting-principle.md) |
+| Költségkezelés | [Feladás költségszámlára könyvelési elv](../cost-management/post-to-charge-account-accounting-principle.md) |
 | Készletgazdálkodás | [Készlettranzakció részletei](../inventory/inventory-transactions-details.md) |
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A pénzügyi és az üzemeltetési alkalmazások platformfrissítései
 
 A Microsoft Dynamics 365 Supply Chain Management 10.0.28 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és üzemeltetési alkalmazások 10.0.28-as verziójának Platformfrissítései (június 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
@@ -92,3 +91,4 @@ Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chai
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

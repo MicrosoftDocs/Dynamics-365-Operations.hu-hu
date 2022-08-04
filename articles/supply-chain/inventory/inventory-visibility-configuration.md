@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895815"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066670"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurálása
 
@@ -55,7 +55,7 @@ A Készlet láthatósága bővítmény számos új funkcióval bővíti a Power 
 | *OnHandMostSpecificBackgroundService* | Ez a funkció a termékekkel és az összes dimenzióval együtt egy készletösszegzést ad meg. A készletösszegzési adatokat a rendszer rendszeres időközönként szinkronizálja a Készletláthatóságból. További információ a készlet összesítésében [található](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Ez az opcionális funkció lehetővé teszi az ígérethez rendelkezésre álló változási ütemezést és az ígérethez rendelkezésre álló funkciókat. A további tudnivalókat lásd [a Készlet láthatósága aktuális készlet változásának ütemezésében, amely ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md). |
 | *Foglalás* | Ez az opcionális funkció lehetővé teszi, hogy a készlet láthatósága lehetővé teszi a készletellenőrzést (ringfencing) és a túlkiértékelést. A további tudnivalókat lásd [a Készlet láthatósága készletfelosztásban](inventory-visibility-allocation.md). |
-| *Raktári cikkek engedélyezése a Készletláthatóság funkcióban* | Ez az opcionális funkció lehetővé teszi a készlet láthatóságát a speciális raktári folyamatokban (raktárkezelési cikkeknél) engedélyezett cikkek támogatása érdekében. A további tudnivalókat lásd [a raktárkészlet-készlet cikkekkel kapcsolatos láthatósági támogatásában](inventory-visibility-whs-support.md). |
+| *Raktári cikkek engedélyezése a Készletláthatóság funkcióban* | Ez az opcionális funkció lehetővé teszi a készlet láthatóságát a raktárkezelési folyamatokban (WMS) engedélyezett cikkek támogatása érdekében. További információ a WMS-cikkek [készlet láthatósági támogatásában található](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>A szolgáltatás végpontjának keresése
 
@@ -63,7 +63,7 @@ Ha nem ismeri a megfelelő Készletláthatóság szolgáltatás végpontját, ny
 
 ## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Adatforrás konfiguráció
 
-Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen lehet például az `fno` adatforrás neve (ami a "Dynamics 365 Pénzügyi és műveleti alkalmazások" nevet jelenti) `pos` és (ami azt jelenti, hogy "értékesítési pont"). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
+Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen lehet például az `fno` adatforrás neve (azaz "Dynamics 365 pénzügyi és műveletalkalmazások") `pos` és (ami azt jelenti, hogy "értékesítési pont"). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
 
 > [!NOTE]
 > Az `fno` adatforrás le van foglalva az Ellátásilánc-kezeléshez. Ha a készlet láthatósági bővítménye integrálva van egy ellátásilánc-kezelési környezettel, javasoljuk, `fno` hogy ne törölje az adatforráshoz kapcsolódó konfigurációkat.
@@ -717,7 +717,7 @@ A következő fizikai mérőszámok vannak beállítva a `pos` adatforráshoz:
 
 A `AvailQuantity` számított mérőszámot a `pos` adatforráshoz a következő táblázatban bemutatott módon kell konfigurálni.
 
-| Számítás típusa | Adatforrás | Fizikai mérőszám |
+| Számítás típusa | Adatforrás | Fizikai mutató |
 |---|---|---|
 | Hozzáadás | `fno` | `AvailPhysical` |
 | Hozzáadás | `pos` | `PosInbound` |
@@ -809,3 +809,4 @@ A következő táblázat az alapértelmezett foglalási hierarchiát mutatja.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9a455ffbc4396ea4bf0e3df12e7acdcbfeaa5f5269dbe772848341ac0d22a5e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6c65c56dfe5d1e32c440789d207f787169c57269
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748264"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124866"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7.0.1 (2016. május)
 
@@ -101,7 +101,7 @@ Ez a cikk a Microsoft Dynamics AX 7.0.1 alkalmazásverziójában található új
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
+[Újdonságok vagy módosult a Pénzügy és az Üzemeltetés főoldalon](whats-new-changed.md)
 
 [Új vagy frissített feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
 

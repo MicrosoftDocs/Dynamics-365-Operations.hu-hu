@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dafd51a46b19f3709963ffc12b3c8c77b6c809ac
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856106"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070439"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Raktár beállítása a raktári konfigurációs sablon segítségével
 
@@ -90,7 +90,7 @@ Az adatcsomag zip-fájlját letöltheti. Ez a fájl minden adatot a kijelölt fo
 
 A **Végrehajtás megtekintése** napló részletes információt nyújt minden egyes importált adatentitásról. Az előkészítési adatok nézetének segítségével gyorsan megtekintheti a céladatokat. Ezzel a módszerrel megnézheti, hogy néznek ki az importált adatok a kapcsolódó lapokon az alkalmazásban. Az alapértelmezett adatsablonok használata esetén az egyes adatentitások importálási sorrendje az előre meghatározott módon történik annak biztosítása érdekében, hogy először az összes függő adat importálása történjen meg. Ha egyéni adatentitások is a projekt részét képezik, gondoskodnia kell arról, hogy meg van adva a megfelelő sorrend. További tájékoztatás: [Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
-Ha további információt szeretne arról, hogy miként használhatja a raktársablont egy raktárkonfiguráció adott vállalattól egy új vállalathoz való átmásolásához azonos példányban, nézze meg ezt a 3 perces videót a YouTube-on: [Raktársablon használata konfiguráció másolásához a Finance and Operations rendszerben](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Ha többet szeretne tudni arról, hogy hogyan lehet a raktársablon használatával átmásolni egy raktár konfigurációját az egyik vállalatból az ugyanazon a példányon belüli új vállalatba, akkor olvassa el ezt a három YouTube [perces útmutatót arról, hogyan lehet a raktársablon használatával átmásolni a konfigurációt a pénzügyek és műveletek számára](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-article"></a>Kapcsolódó cikk
 

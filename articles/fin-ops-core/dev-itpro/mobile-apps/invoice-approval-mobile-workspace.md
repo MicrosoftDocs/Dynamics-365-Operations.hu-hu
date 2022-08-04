@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4cc05d9fcea129cfb2ed8ed8df4bd4034a1fed4c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868669"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066390"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Számlajóváhagyások mobil munkaterület
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868669"
 
 Ez a cikk a Számla-jóváhagyások **mobil munkaterületről** nyújt tájékoztatást. A munkaterület a szállítói számla fejléce munkafolyamattal Önhöz rendelt számlák listáját tartalmazza. 
 
-A mobil munkaterületet a Finance and Operations mobilalkalmazásban való használatra tervezték.
+Ez a mobil munkaterület a Pénzügy és műveletek mobilalkalmazással való használatra szolgál.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -61,7 +61,7 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
 
-Töltse le és telepítse a Finance and Operations mobilalkalmazást:
+Töltse le és telepítse a Pénzügy és műveletek mobilalkalmazást:
 
 -   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -88,3 +88,4 @@ Töltse le és telepítse a Finance and Operations mobilalkalmazást:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

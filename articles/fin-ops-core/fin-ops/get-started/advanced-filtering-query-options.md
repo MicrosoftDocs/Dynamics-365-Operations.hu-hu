@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 89175763357f4309c4eb7874d0068586c5d9e726
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856918"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123948"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Speciális szűrési és lekérdezési szintaxis
 
@@ -122,9 +122,9 @@ A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek el
 <td>A két egymást követő dupla idézőjel (<strong>""</strong>) olyan sorokat keres, amelyeknek nincs értéke az aktuális oszlopban.</td>
 </tr>
 <tr>
-<td>(<span class="code">Pénzügy és műveletek lekérdezése</span>) (Pénzügy és Műveletek lekérdezés zárójelek között)</td>
+<td>(<span class="code">Pénzügy és műveletek lekérdezése</span>) (pénzügyi és műveleti lekérdezés zárójelek között)</td>
 <td>A megadott lekérdezésnek megfelelő.</td>
-<td>Írjon be egy SQL-lekérdezést zárójelek között a Pénzügy és műveletek lekérdezési nyelvének használatával.</td>
+<td>Írjon be egy SQL-lekérdezést zárójelek között a pénzügyek és a műveletek lekérdezési nyelvének használatával.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        példaként egy szűrő feltételének szintaxisára a gyökérszintű adatforrás mezőjéből, valamint egy másik adatforrásmezőből (az összes vevő laphoz)</td>
 </tr>

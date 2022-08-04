@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873811"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186483"
 ---
 # <a name="priority-based-planning"></a>Prioritásokon alapuló tervezés
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a Microsoft prioritáson alapuló tervezési funkcióját ismerteti Dynamics 365 Supply Chain Management. A funkció támogatja az igényvezérelt tervezést, amely az igényvezérelt anyagigény-tervezés (DDMRP) egyik lépése. A prioritáson alapuló tervezés lehetővé teszi a tervezési optimalizálás számára, hogy a szükségletdátások helyett tervezési prioritások által vezérelt tervezett rendeléseket generáljon.
+Ez a témakör a Microsoft prioritáson alapuló tervezési funkcióját ismerteti Dynamics 365 Supply Chain Management. A funkció támogatja az igényvezérelt tervezést, amely az [igényvezérelt anyagigény-tervezés (DDMRP) egyik lépése](ddmrp-overview.md). A prioritáson alapuló tervezés lehetővé teszi a tervezési optimalizálás számára, hogy a szükségletdátások helyett tervezési prioritások által vezérelt tervezett rendeléseket generáljon.
 
 A prioritáson alapuló tervezés segítségével fontosság szerint rangsorolhatja a feltöltési rendeléseket, hogy a sürgős igényeket a kevésbé fontos igényekhez igazítja. Például egy készletfeltöltési rendelés prioritása egy normál újratölti feltöltési rendeléshez lesz rendelve. A rendszer automatikusan kisebb rendelésekre bonthatja a nagyobb rendeléseket, ahol a rendeléssorok prioritás szerint vannak csoportosítva. Ezután az összes sürgős rendelést feldolgozhatja előbb.
 
@@ -114,7 +114,7 @@ A tervezési prioritási modellekkel való munkához menjen az **Alaptervezés \
 
 A cikkfedezeti beállítások megadása a Fedezeti beállításoknál [leírtak szerint](../coverage-settings.md). Alapértelmezés szerint a fedezeti **csoporthoz** kiválasztott fedezeti kód értékét másolja a rendszer a cikkfedezeti beállításokba. Szükség esetén azonban felülbírálhatja az alapértelmezett értéket. Bizonyos esetekben **a** *cikkfedezeti* rekord Fedezeti kód mezője a Tervezés beállításra van állítva, de a kapcsolódó fedezeti csoporthoz nincs megadva tervezési prioritási modell. Ebben **az** *·* **esetben minden olyan modell, ahol a Prioritásszámítási módszer mező beállítása a maximális készletmennyiség százaléka, és a Tervezett rendelés létrehozása** *mezőben* az Egy ellátás a legfontosabb prioritással van beállítva, alapértelmezés szerint az Egyedi készlet beállítás van beállítva.
 
-A Fedezetkód **mező** prioritásának *beállítása*, hogy a cikkfedezeti **beállítások között elérhetővé tegye az Újrarendelési pont** mezőt. Ebben a mezőben adja meg az újrarendelésipont-mennyiséget, amit a rendszernek használnia kell, amikor meghatározza, hogy mikor helyezze el **a** *prioritás fedezeti kódértékkel megadott tervezett rendeléseket.*
+A Fedezetkód **mező** prioritásának *beállítása*, hogy a cikkfedezeti **beállítások között elérhetővé tegye az Újrarendelési pont** mezőt. Ebben a mezőben adja meg az újrarendelésipont-mennyiséget, amit a rendszernek használnia kell, amikor meghatározza, hogy mikor helyezze el **a** *prioritás fedezeti kódértékkel megadott tervezett rendeléseket*.
 
 Az újrarendelésipont-mennyiséget gyakran számítják ki igényként az átfutási idő alatt plusz egy minimális érték (biztonsági készlet). A minimális és a maximális **értékek** **közötti értéknek kell lennie.**
 

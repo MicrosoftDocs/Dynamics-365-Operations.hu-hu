@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 809906c3926b200e7beac84e780314aec1f8c2ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 85b3a45c054144e414aebb28b3d8080ab295f52f
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855587"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112274"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Pénznem-adattípus áttelepítése kettős írás esetén
 
@@ -29,7 +29,7 @@ A tizedesjegyek számának módosítási folyamata két lépésből áll:
 1. Áttelepítés kérése a Microsofttól.
 2. A tizedes jegyek számának csökkentése a Dataverse megoldásban.
 
-A Pénzügy és műveletek alkalmazásnak ugyanolyan Dataverse számú tizedesjegyet kell támogatnia a pénznemértékek számában. Ellenkező esetben adatvesztés fordulhat elő, ha ez az információ szinkronizálva van az alkalmazások között. Az áttelepítési folyamat újrakonfigurálja a pénznem- és árfolyamértékek tárolásának módját, de az adatok nem módosulnak. Az áttelepítés befejeződése után a pénznemkód és az árképzés tizedesjegyei száma növelhető, és a felhasználó által megadott és megtekintett adatok több tizedesjegy pontossággal is rendelkezhetnek.
+A Pénzügy és műveletek alkalmazásnak Dataverse, és ugyanannak a tizedesjegyszámnak kell támogatottnak lennie a pénznemértékek között. Ellenkező esetben adatvesztés fordulhat elő, ha ez az információ szinkronizálva van az alkalmazások között. Az áttelepítési folyamat újrakonfigurálja a pénznem- és árfolyamértékek tárolásának módját, de az adatok nem módosulnak. Az áttelepítés befejeződése után a pénznemkód és az árképzés tizedesjegyei száma növelhető, és a felhasználó által megadott és megtekintett adatok több tizedesjegy pontossággal is rendelkezhetnek.
 
 A migráció nem kötelező. Ha több tizedesjegyet támogatása hasznos lehet Önnek, ajánlott fontolóra venni a migrációt. Azoknak a szervezeteknek, amelyeknek nem szükséges négy tizedesjegynél pontosabb érték, nem kell áttelepíteniük.
 
@@ -37,7 +37,7 @@ A migráció nem kötelező. Ha több tizedesjegyet támogatása hasznos lehet �
 
 A meglévő pénznemoszlopok esetében a Dataverse nem támogat négy tizedesjegynél többet. Ezért az áttelepítési folyamat során a program átmásolja az adatbázis új belső oszlopaiba a pénznemek értékeit. Ez a folyamat addig történik folyamatosan, amíg az összes adatot át nem telepítik. A belső működést tekintve, az áttelepítés végén az új tárolási típusok felülírják a régi tárolási típusokat, de az adatértékek változatlanok. A pénznem oszlop így már legfeljebb 10 tizedesjegyet képes támogatni. Az áttelepítési folyamat alatt a Dataverse megszakítás nélkül használható.
 
-Ugyanekkor az árfolyamok úgy módosulnak, hogy legfeljebb 12 tizedesjegyet támogassanak az aktuális 10-es határ helyett. Erre a módosításra azért van szükség, hogy a tizedesjegyek száma megegyezik a Pénzügy és műveletek alkalmazásban és a Dataverse.
+Ugyanekkor az árfolyamok úgy módosulnak, hogy legfeljebb 12 tizedesjegyet támogassanak az aktuális 10-es határ helyett. Erre a módosításra azért van szükség, hogy a tizedesjegyek száma a pénzügyi és a műveletalkalmazásban és a Dataverse.
 
 Az áttelepítés nem változtatja meg az adatokat. A pénznem és az árfolyam oszlop átalakítását követően az adminisztrátor beállíthatja, hogy a rendszer legfeljebb 10 tizedesjegyet használjon a pénznem oszlopoknak, az egyes tranzakciós pénznemek és árképzések tizedesjegyszámának megadásával.
 
@@ -100,3 +100,4 @@ Az alapértelmezett pénznem tizedes pontosságának áttelepítés és nem átt
 |          | Az adatbázis- és adatbázis-lekérdezés eredményének felhasználói felületén látható maximális tizedes pontosság | 10 számjegy. Azonban csak 4 lényeges a 4 tizedesjegyet túllépő nullák esetén. Ez a szervezet szükség esetén egyszerűbb és gyorsabb áttelepítését teszi lehetővé. | 10 számjegy      | 10 számjegy     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

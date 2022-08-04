@@ -2,7 +2,7 @@
 title: Számlastruktúrák konfigurálása
 description: Ez a cikk a számlastruktúrákkal és a pénzügyi dimenziókkal kapcsolatban tartalmaz tájékoztatást.
 author: aprilolson
-ms.date: 06/03/2019
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0a3febf8d269caec847ad879f60ac042e5fec9e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f816f0fc894b902c444a3113abfd48d4146d485
+ms.sourcegitcommit: e59990780830ac8e3382fea5df851abe86fbf496
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907980"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9141278"
 ---
 # <a name="configure-account-structures"></a>Számlastruktúrák konfigurálása
 
@@ -91,6 +91,8 @@ A további feltételek hozzáadásának folytatásához kattintson **Duplikálá
 A számlastruktúra beállításakor van néhány ajánlott eljárás, melyet követhet. Ez azonban csak útmutatás, így vegye fontolóra, hogy a megbeszélés során sort kerítsen az üzleti kérdések, növekedési és karbantartási terv átfogó megbeszélésére is.
 
 - Legyen a fő számla az első vagy legyen olyan közel a számlastruktúra elejéhez, amennyire csak lehetséges, így a felhasználóknak a lehető legjobb irányított tapasztalatban lesz részük a számlabejegyzés során.
+  
+  - Győződjön meg róla, hogy az első pozícióban található olyan külső megoldások, amelyek a fő számlát támogatják.
 
 - Használja fel újra a számlastruktúrát, ahányszor csak lehetséges, hogy csökkentse a jogi személyekre fordított karbantartást.
 

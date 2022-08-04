@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b8074877b8d2b2c05596406cbf2d98febd2e8cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9388b2f43762bedf07c89a7a565935d2043ee90c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899527"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068001"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-5-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban, 2021. április 5.
 
@@ -71,7 +71,7 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- vagy
 | Funkció | Részletek |
 | --- | --- |
 | A vezető által az alkalmazottakhoz megadott szakértelmet egy munkafolyamat automatikusan jóváhagyhatja | Hamarosan. |
-| Platform frissítése erre: 10.0.17 (41) | A 10.0.17-es verziófrissítés az ütemezés szerint a következő kiadással, 2021. április 19-én indul el. A további tudnivalókat [lásd a Pénzügy és műveletek alkalmazások 10.0.17-es verziójának Platformfrissítései (2021. április)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
+| Platform frissítése erre: 10.0.17 (41) | A 10.0.17-es verziófrissítés az ütemezés szerint a következő kiadással, 2021. április 19-én indul el. A további tudnivalókat [lásd a Pénzügyi és műveleti alkalmazások 10.0.17-es verziójának Platformfrissítései (2021. április)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
 
 A tervezett funkciók és az ütemezett kiadásaik teljes listáját lásd: [A Dynamics 365 Human Resources 2021. első kiadási hullámának áttekintése](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 

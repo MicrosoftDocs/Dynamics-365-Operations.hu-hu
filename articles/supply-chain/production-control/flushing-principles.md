@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849300"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065554"
 ---
 # <a name="flushing-principles"></a>Ürítési elvek
 
@@ -50,7 +50,7 @@ Az ürítési elvek az alapértelmezett értékek hierarchiájában vannak beál
 ## <a name="description-of-the-flushing-principles"></a>Az ürítési elvek leírása
 
 ### <a name="manual"></a>Manuális
-A manuális ürítési alapelv azt jelzi, hogy a nyersanyag-felhasználásának regisztrálása kézi művelet. Ezt az elvet jelentősége, ha például szeretné lehet nyomon követni az idő, és a felhasznált köteg- vagy sorozatszámok mennyiségét figyelembe kell venni, nyomon követési célokkal. A kézi fogyasztás regisztrálva van egy termelési kitárolási listán. A speciális raktárkezelési folyamatok számára engedélyezett cikkek esetében a kézi folyamat alkalmazhatók.
+A manuális ürítési alapelv azt jelzi, hogy a nyersanyag-felhasználásának regisztrálása kézi művelet. Ezt az elvet jelentősége, ha például szeretné lehet nyomon követni az idő, és a felhasznált köteg- vagy sorozatszámok mennyiségét figyelembe kell venni, nyomon követési célokkal. A kézi fogyasztás regisztrálva van egy termelési kitárolási listán. A raktárkezelési folyamatokhoz engedélyezett cikkek esetén a raktárkezelési folyamat alkalmazható kézi eszközként.
 
 ### <a name="start"></a>Eleje
 Ürítési alapelv kezdő azt jelzi, hogy anyag fog kell felhasználása automatikusan a termelési rendelés indításakor. A felhasznált anyag mérete arányos a megkezdett mennyiség. Ürítési alapelv kezdő és a Gyártásvégrehajtás használatakor a rendszer, is használható, amikor egy művelet anyagok ürítése, vagy egy feldolgozási feladat elindítva. Ezt az elvet jelentősége, ha, például az eltérés felhasználási hamarosan lemerül, az anyagok alacsony értékű anyagok, nincsenek nyomon követési követelmények, vagy nincs rövid futási idő műveletek. 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2a64cba837faf84f3e8470a9831d1641213a5cc4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e02cd80a3b7692f496fc70e50b812fae358103bc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909612"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067851"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>Raktári paraméterek hullámfeldolgozáshoz
 
@@ -52,7 +52,7 @@ A hullámfeldolgozáshoz szükséges raktárparaméterek beállításához köve
 > [!NOTE]
 > A hullám feldolgozásához használt hullámsablonban megadhatja a hullámfeldolgozást automatizáló beállításokat. Ha ütemezést állít be a kötegelt feladathoz, akkor az időzítést össze kell hangolnia a hullámsablonjában megadott automatizálási beállításokkal. További információ: [Hullámsablon létrehozása](wave-templates.md).
 >
-> Ha a *Szállításkezelés* és a *Speciális raktárkezelés* modulokat is használja, akkor meghatározhatja, hogy hullámfeldolgozáskor sor kerüljön-e a rakományok konszolidálására. Ez például akkor hasznos, ha több kisebb rakomány szállítható ki egyszerre. Ha egy hullám feldolgozásakor össze szeretné konszolidálni a rakományokat, a **Rakományok** lapon jelölje be a **Rakomáynok konszolidálása hullámfeldolgozás közben** jelölőnégyzetet.</P>
+> A *szállításkezelési* *és raktárkezelési folyamatok (WMS)* használata esetén megadhatja, hogy összevonja-e a rakományokat hullám feldolgozásakor. Ez például akkor hasznos, ha több kisebb rakomány szállítható ki egyszerre. Ha egy hullám feldolgozásakor össze szeretné konszolidálni a rakományokat, a **Rakományok** lapon jelölje be a **Rakomáynok konszolidálása hullámfeldolgozás közben** jelölőnégyzetet.</P>
 
 ## <a name="set-up-full-or-partial-reservation-for-production-waves"></a>Teljes vagy részleges foglalás beállítása termelési hullámokhoz
 

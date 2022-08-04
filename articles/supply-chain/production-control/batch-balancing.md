@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 939066fbf4ab7b316283d406c321f1a7936c187f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856048"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066546"
 ---
 # <a name="batch-balancing"></a>Kötegalapú kiigazítás
 
@@ -165,22 +165,22 @@ Az egyenleg tételalapú kiigazítás alfolyamatban a termelési kötegben haszn
 
 ### <a name="confirm-and-release-the-formula"></a>Erősítse meg és adja ki a receptúrát
 
-Az összetevő-mennyiségek kiszámítása után megerősítheti és kiadhatja a képletet. A kiadási folyamat eltér attól függően, hogy engedélyezve vannak-e a termékeket a raktárkezelési folyamatokhoz:
+Az összetevő-mennyiségek kiszámítása után megerősítheti és kiadhatja a képletet. A kiadási folyamat attól függően változik, hogy a termékek engedélyezve vannak-e a raktárkezelési folyamatokhoz (WMS):
 
-- Ha egy termék engedélyezve van a raktárkezelési folyamatokhoz, a receptúrasor kiadása a raktárba a raktárkezelési folyamatok elvei szerint történik. A receptúrasor kiadása a kiegyensúlyozott mennyiségeknek megfelelő mennyiségben történik, és a hatóanyagokhoz kiválasztott konkrét kötegekhez van kiadva.
+- Ha egy termék engedélyezve van a WMS számára, a receptúrasor a WMS irányelvei szerint kerül a raktárba. A receptúrasor kiadása a kiegyensúlyozott mennyiségeknek megfelelő mennyiségben történik, és a hatóanyagokhoz kiválasztott konkrét kötegekhez van kiadva.
 
     > [!NOTE]
     > A receptúrasorokat csak a tételalapú kiigazítás folyamat részeként lehet kiadni a raktárba. Bár egyéb lehetőségek is vannak az anyagok kiadására a raktárba a termeléshez, ezek a beállítások nem használhatók a receptúrasorokhoz.
 
-- Ha egy termék nem engedélyezett a raktárkezelési folyamatokhoz, a termelési kitárolási lista akkor jön létre a termékhez, ha megerősítette és kiadta a receptúrát.
+- Ha egy termék nincs engedélyezve a WMS számára, akkor a receptúra megerősítése és kiadásakor a termékhez létrejön egy termelési kitárolási lista.
 
-Egyetlen receptúrában kombinálhatók azok a termékek, amely engedélyezve vannak a raktárkezelési folyamatokhoz, és a raktárkezelési folyamatokhoz nem engedélyezett termékek. Ha a kétféle típusú termék egy formulában szerepel, a raktárkezelési folyamatokhoz engedélyezett a termékek kiadása megtörténik a raktárba. A raktárkezelési folyamatokhoz nem engedélyezett termékekhez termelési kitárolási lista jön létre, ha megerősítette és kiadta a receptúrát.
+Egyetlen receptúrában kombinálhatók azok a termékek, amely engedélyezve vannak a raktárkezelési folyamatokhoz, és a raktárkezelési folyamatokhoz nem engedélyezett termékek. Ha a két terméktípus egy képletben szerepel, akkor a WMS számára engedélyezett termékek ki vannak adva a raktárba. A WMS számára nem engedélyezett termékekhez kitárolási lista jön létre, amikor meg van adva és visszaigazolt a receptúra.
 
 ### <a name="batch-orders-that-arent-applicable-for-batch-balancing"></a>Kötegelt rendelések, amelyek nem alkalmazhatók a tételalapú kiigazításhoz
 
 Két kivétel van az alól a szabály alól, hogy a tételalapú kiigazítás akkor alkalmazható a kötegrendelésekhez, ha a formulának van legalább egy formulasora, ahol az **Összetevő típusa** *Aktív*.
 
-1. Ha egy formula tartalmaz egy hatóanyagot egy olyan termékhez, amely a raktárkezelési folyamatokhoz engedélyezve van, de a kötegszám a hely alatt van a foglalási hierarchiában, a kötegrendelés nem alkalmazható a tételalapú kiigazításhoz.
+1. Ha egy képlet egy olyan termék hatóanyagát tartalmazza, amely engedélyezve van a WMS számára, de a kötegszám a hely alatti a foglalási hierarchiában, akkor a kötegrendelés kötegelrendezésre nem alkalmazható.
 1. Ha a receptúra mértékegysége eltér a hatóanyagkészlet mértékegységtől, akkor a kötegrendelés nem alkalmazható kötegelt kiigazításra.
 
 Azok a kötegelt rendelések, amelyek nem alkalmazhatók a tételalapú kiigazításhoz, a kötegrendelések rendes folyamatciklusán mennek keresztül.

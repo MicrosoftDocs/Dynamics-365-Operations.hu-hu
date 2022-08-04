@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14aaf40ce64c8f8ba6277fa0883318e08505a464
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6cceabe652429e1c50d27db865700926e211958a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904557"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066359"
 ---
 # <a name="general-ledger-home-page"></a>A Főkönyv kezdőlapja
 
@@ -61,7 +61,7 @@ A pénzügyi jelentésekről [a Pénzügyi jelentés áttekintő](../../fin-ops-
 
 #### <a name="blogs"></a>Blogok
 
-A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 Finance and Operations – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál.
+A 365-ös és a 365-ös [Microsoft Dynamics](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) pénzügy és művelet – Pénzügy lapról további véleményeket, [Microsoft Dynamics híreket és egyéb információkat találhat](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket a Dynamics 365 új és népszerű fejlesztéseiről.
 
@@ -71,8 +71,9 @@ Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube 
 
 #### <a name="community-blogs"></a>Közösségi blogok
 
-- [Mit kell tudni a főkönyvről a Dynamics 365 for Finance and Operations szolgáltatásban?](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
+- [A Főkönyvvel kapcsolatos adatok a Dynamics 365 Pénzügy modulban](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

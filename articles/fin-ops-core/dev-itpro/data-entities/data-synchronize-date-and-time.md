@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76eadc5839785ba1624ee3894ef1d0872369aa9
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: b8faa7b73349c48d3a02b685546b47c4969c6027
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403841"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109432"
 ---
 # <a name="synchronize-date-and-time-in-import-jobs"></a>Dátum és idő szinkronizálása az importálási feladatokban
 
@@ -25,9 +25,9 @@ ms.locfileid: "7403841"
 
 Fontos, hogy az importált feladat időzónáját UTC-formátumra (koordinált világidő) állítsa be. Az importált adatokban nem várt dátumok és időpontok is előfordulhatnak, ha más beállítást használ. A helyes beállítás nélkül az importálási folyamat az UTC-dátumot helyi formátumra alakítja, majd a rendszerbeállítások újra konvertálják.
 
-A két konverzió hatására megváltoznak a dátumok az alkalmazások között. A kettős átalakítás például azzal jár, hogy egy alkalmazott kezdő dátuma eltérő lesz a helyi időzónákban lévő különbségek miatt a Dynamics 365 Human Resources és a Dynamics 365 Finance megoldásban. Az importálási feladat UTC-formátumra való beállításával ez a probléma megoldódik.
+A két konverzió hatására megváltoznak a dátumok az alkalmazások között. A kettős átalakítás Dynamics 365 Human Resources például a helyi időzónák eltérése miatt az alkalmazottak kezdő dátuma eltérő lehet a dynamics 365 Pénzügy és a Dynamics 365 Pénzügy között. Az importálási feladat UTC-formátumra való beállításával ez a probléma megoldódik.
 
-1. Válassza a Dynamics 365 Finance and Operations megoldásban az **Adatkezelés** lehetőséget.
+1. A Dynamics 365 Pénzügy és műveletek eszközben válassza az Adatkezelés **lehetőséget**.
 
 2. Válassza a **Projektek importálása** lehetőséget, majd a projektet.
 
@@ -41,3 +41,4 @@ A két konverzió hatására megváltoznak a dátumok az alkalmazások között.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

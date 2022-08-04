@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef5ed6c3c99d62010643940f3e2f158963ff0dc2
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868608"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123718"
 ---
 # <a name="embed-third-party-apps"></a>Harmadik fél alkalmazások beágyazása
 
 [!include [banner](../includes/banner.md)]
 
-Sok ügyfél különféle alkalmazások használatával végzi üzleti tevékenységét. Ezek közül a alkalmazások közül egyesek külső alkalmazások, amelyek a Pénzügy és Művelet alkalmazásokkal együtt működnek. A felhasználói felület problémamentesebb használata érdekében a Teljes oldalas alkalmazásokkal közvetlenül beágyazhatja ezeket a **külső** alkalmazásokat a Pénzügy és műveletek alkalmazásokba (feltéve, hogy a külső alkalmazások lehetővé teszik saját maguk beágyazát). Így a felhasználók anélkül is elérhetik a szükséges webhelyeket és alkalmazásokat, hogy a fülek vagy ablakok között kellene ingázniuk.
+Sok ügyfél különféle alkalmazások használatával végzi üzleti tevékenységét. Ezek közül a alkalmazások közül egyesek külső alkalmazások, amelyek a pénzügyi és műveleti alkalmazásokkal együtt működnek. A felhasználói felület problémamentesebb használata érdekében a Teljes oldalas alkalmazásokkal közvetlenül beágyazhatja ezeket a **külső** alkalmazásokat a pénzügyi és műveleti alkalmazásokba (feltéve, hogy a külső alkalmazások lehetővé teszik saját maguk beágyazát). Így a felhasználók anélkül is elérhetik a szükséges webhelyeket és alkalmazásokat, hogy a fülek vagy ablakok között kellene ingázniuk.
 
-Mielőtt harmadik féltől származó alkalmazásokat ágyazhatna be a termékbe, a funkciókezelésben be kell kapcsolnia a **Teljes oldal alkalmazásai** funkciót. Ezután a következő módszerek egyikével beágyazhat egy harmadik fél alkalmazást vagy webhelyet. Ezek a módszerek hasonlóak ahhoz Microsoft Power Apps a módszerhez, amely a vásznasalkalmazások pénzügyi és műveleti alkalmazásokba történő beágyazása során használatos.
+Mielőtt harmadik féltől származó alkalmazásokat ágyazhatna be a termékbe, a funkciókezelésben be kell kapcsolnia a **Teljes oldal alkalmazásai** funkciót. Ezután a következő módszerek egyikével beágyazhat egy harmadik fél alkalmazást vagy webhelyet. Ezek a módszerek hasonlóak ahhoz Microsoft Power Apps a módszerhez, amely a vásznas alkalmazásokat a pénzügyi és műveleti alkalmazásokba beágyazza.
 
 - Az alkalmazás vagy webhely beágyazása meglévő lapra új lapként (kimutatás fül, gyorslap, panel vagy munkaterület rész).
 - Új teljes képernyős élmény létrehozása alkalmazáshoz vagy webhelyhez az irányítópulton.
@@ -60,7 +60,7 @@ Ezt az eljárást akkor használja, ha a rendszerben egy létező oldalt ki szer
 
 ## <a name="embed-a-website-as-a-full-page-experience-from-the-dashboard"></a>Webhely beágyazása teljes képernyős élményként az irányítópultból
 
-Ezt a műveletet akkor kell használni, ha a beágyazni kívánt alkalmazás nem létező laphoz kapcsolódik, vagy ha teljes oldalt szeretne használni az alkalmazáshoz a Pénzügy és műveletek alkalmazáson belül.
+Ezt a műveletet akkor kell használni, ha a beágyazni kívánt alkalmazás nem létező laphoz kapcsolódik, vagy ha az alkalmazásnak csak egy teljes oldalas felhasználói élményre van szükség a pénzügy és a műveletek alkalmazáson belül.
 
 1. Nyissa meg az irányítópultot.
 2. Válassza ki és tartsa lenyomva (vagy kattintson a jobb gombbal) az irányítópultot, válassza a **Testreszabás**, majd az **Oldal hozzáadása** lehetőséget.
@@ -89,7 +89,7 @@ Miután az előző részekben ismertetett valamelyik módszerrel beágyazott egy
 
 ## <a name="viewing-embedded-apps"></a>A beágyazott alkalmazások megtekintése
 
-A Pénzügy és műveletek alkalmazások egy lapján található beágyazott alkalmazás megtekintéséhez nyissa meg azt a lapot, amelybe be van ágyazva alkalmazás. Ne felejtse el, hogy egyes oldalakon a beágyazott alkalmazásokat a szokásos Művelet ablaktábla **Power Apps** gombján keresztül érheti el. Másik lehetőségként megjelenhetnek közvetlenül egy oldalon új lap, gyorslap vagy lapát, illetve a munkaterület új szakasza formájában.
+A pénzügyi és műveletalkalmazások egy lapján található beágyazott alkalmazás megtekintéséhez nyissa meg azt a lapot, amelybe a beágyazott alkalmazás van be ágyazva. Ne felejtse el, hogy egyes oldalakon a beágyazott alkalmazásokat a szokásos Művelet ablaktábla **Power Apps** gombján keresztül érheti el. Másik lehetőségként megjelenhetnek közvetlenül egy oldalon új lap, gyorslap vagy lapát, illetve a munkaterület új szakasza formájában.
 
 ## <a name="editing-or-removing-embedded-apps"></a>Beágyazott alkalmazások szerkesztése vagy eltávolítása
 
@@ -129,3 +129,4 @@ Ha egy webhely nem jelenik meg megfelelően a Finance and Operation alkalmazásb
 Bár ez a cikk a külső alkalmazások és webhelyek személyre szabásán keresztül történő beágyazásán van fókuszálva, a Visual Studio fejlesztők a fejlesztői tapasztalat segítségével egy képernyőbe is beágyazhatja őket. Csak adjon hozzá a **WebsiteHostControl** vezérlőt az űrlaphoz. A vezérlőhöz elérhető metaadat-tulajdonságok a személyre szabási élményekkel azonos lehetőségeket biztosítanak.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

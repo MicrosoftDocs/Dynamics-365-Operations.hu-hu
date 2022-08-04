@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a002bae22044ea10be30340a87a191305f6c6b92
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879804"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111970"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services szolgáltatásból
 
@@ -28,8 +28,8 @@ Ez a témakör bemutatja, hogyan lehet két írást engedélyezni a Microsoft Dy
 
 A vevőknek az alábbi témakörökben Power Platform leírtak szerint kell végrehajtaniuk az integrációt:
 
-- Ha még nem használja, Microsoft Power Platform és a platform-funkciók hozzáadásával ki szeretné bonteni a Pénzügyi és műveleti környezetet, [Power Platform akkor lásd az Integráció – engedélyezés a környezet telepítése során](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
-- Ha már vannak környezetei Dataverse Power Platform és környezetei, és szeretné csatlakoztatni őket a Pénzügyi és műveleti környezetekhez, [Power Platform akkor tekintse meg az integrációt – engedélyezze a környezet telepítését követően](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
+- Ha még nem használja, Microsoft Power Platform és a platform-funkciók hozzáadásával ki szeretné bonteni a pénzügyi és műveleti környezetet, [Power Platform akkor lásd az Integráció – engedélyezés a környezet telepítése során](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Ha már vannak környezetei Dataverse Power Platform, és szeretné összekapcsolni őket a pénzügyi és az üzemeltetési környezetekkel, [Power Platform akkor tekintse meg az integrációt – engedélyezze a környezet telepítését követően](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
 ## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Kettős írás beállítása új vagy meglévő környezetekhez Dataverse
 
@@ -53,7 +53,7 @@ A kettős írás **Környezet részletes adatai** LCS-oldalról történő beál
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Összekapcsolás Power Platform-környezettel.":::
 
-8. Ha befejeződött az összekapcsolás, megjelenik egy hivatkozás. A hivatkozás segítségével jelentkezzen be a Pénzügy és műveletek környezet két írásos felügyeleti területére. Itt beállíthatja az entitások leképezését.
+8. Ha befejeződött az összekapcsolás, megjelenik egy hivatkozás. A hivatkozás segítségével jelentkezzen be a pénzügyi és műveleti környezet két írásos felügyeleti területére. Itt beállíthatja az entitások leképezését.
 
 ## <a name="linking-mismatch"></a>Kapcsolódási eltérés
 
@@ -71,3 +71,4 @@ Ha megkapja ezt a figyelmeztetést, próbálkozzon a következő megoldások egy
 A múltban egy manuális támogató jegy rendelkezésre áll, de ez a fenti 1. lehetőségnél korábbi volt.  A Microsoft már nem támogatja a manuális újrakapcsolati kéréseket a támogatási webhelyről.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

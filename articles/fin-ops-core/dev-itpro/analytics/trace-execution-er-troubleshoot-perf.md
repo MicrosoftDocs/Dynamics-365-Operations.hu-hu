@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ea6901f8d9632b021c35b9ee899385e688fc77e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851951"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108856"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához
 
@@ -98,7 +98,7 @@ Tegyük fel, hogy egy új ER-megoldást tervez, amellyel szállítói tranzakci�
 
 Tegyük fel, hogy befejezte az ER-megoldás első verziójának tervezését. Ezt követően tesztelni szeretné példányában, és elemezni a végrehajtás teljesítményét.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER-konfiguráció importálása az RCS szolgáltatásból a Finance and Operations modulba
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a> ER-konfiguráció importálása az RCS rendszerből a pénzügyekbe és a műveletekbe
 
 1. Jelentkezzen be az alkalmazás példányába.
 2. Ebben az oktatóanyagban konfigurációkat importálunk az RCS-példányból (ahol az ER-összetevőket tervezzük) az Ön példányába (ahol teszteljük és használjuk majd őket). Ezért győződjön meg arról, hogy az összes szükséges műterméket előkészítette. További útmutatásért tekintse át az [Elektronikus jelentéskészítési (ER) konfigurációk importálása a Regulatory Configuration Service (RCS)](rcs-download-configurations.md) eljárást.
@@ -305,7 +305,7 @@ A LedgerTransTypeList-adatforrásra vonatkozó lehívások számának csökkent�
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>A módosított ER-modell-hozzárendelési konfiguráció importálása az RCS szolgáltatásból az alkalmazásba
 
-Ismételje meg az [RCS-konfiguráció importálása az RCS](#import-configuration) rendszerből a Pénzügy és műveletek szakasz korábbi részében található lépéseket a teljesítmény-nyomkövetési konfiguráció 1.2-es **verziójának importálása** érdekében.
+Ismételje meg az [RCS-konfiguráció](#import-configuration) importálása a pénzügyekbe és műveletekbe szakasz korábbi lépéseit a teljesítmény-nyomkövetési konfiguráció 1.2-es **verziójának importálása** érdekében.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>A módosított ER-megoldás futtatása a végrehajtás nyomon követéséhez
 
@@ -363,7 +363,7 @@ Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Külső eszközök használata az adatbázis-lekérdezéseket tartalmazó végrehajtási nyomon követés áttekintéséhez
 
-Az elektronikus jelentéskészítési keretrendszer fejlesztéseinek köszönhetően a teljesítmény PerfView formátumában létrehozott nyomon követése több részletet biztosít az ER-formátum végrehajtásáról. A Microsoft Dynamics 365 for Finance and Operations 10.0.4-es verziójában (2019. július) ez a nyomon követés az alkalmazás-adatbázishoz végrehajtott SQL-lekérdezések részleteire is kiterjedhet.
+Az elektronikus jelentéskészítési keretrendszer fejlesztéseinek köszönhetően a teljesítmény PerfView formátumában létrehozott nyomon követése több részletet biztosít az ER-formátum végrehajtásáról. A Microsoft Dynamics 365 Pénzügy 10.0.4 verziójában (2019. július) ez a nyomkövetés az alkalmazás-adatbázisba végrehajtott SQL-lekérdezések részleteit is tartalmazhatja.
 
 ### <a name="configure-user-parameters"></a>Felhasználói paraméterek konfigurálása
 
@@ -392,3 +392,4 @@ Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

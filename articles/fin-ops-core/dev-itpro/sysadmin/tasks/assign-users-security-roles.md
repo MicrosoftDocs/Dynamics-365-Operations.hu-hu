@@ -1,6 +1,6 @@
 ---
-title: Felhasználók hozzárendelése a biztonsági szerepkörökhöz
-description: A Finance and Operations alkalmazások eléréséhez hozzá kell rendelni a felhasználókat a biztonsági szerepkörökhöz.
+title: Felhasználók hozzárendelése biztonsági szerepkörökhöz
+description: A pénzügyi és műveleti alkalmazások eléréséhez a felhasználókat hozzá kell rendelni a biztonsági szerepkörökhöz.
 author: Peakerbl
 ms.date: 02/09/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36874b996cc5708f6fd7fbc45251f3066b5b1c97
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: b5e69a79f123daff3f85d0100647615ad818288e
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105538"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103868"
 ---
 # <a name="manage-users-and-security-roles"></a>Felhasználók és biztonsági szerepkörök kezelése
 
 [!include [banner](../../includes/banner.md)]
 
-Ahhoz, hogy a Pénzügy és a Műveletek alkalmazásokban a gyakori funkciókon kívül más funkciókat használ, a felhasználókat hozzá kell rendelni a biztonsági szerepkörökhöz. A felhasználókat automatikusan, a szabályok és az üzleti adatok alapján rendelheti hozzá a szerepkörökhöz, kizárhatja a felhasználókat az automatikus szerepkör-hozzárendelésből, vagy manuálisan is hozzáadhat felhasználókat a szerepkörökhöz.
+Ahhoz, hogy a pénzügyek és műveletek alkalmazásában a gyakori lehetőségeken kívül más funkciókat is használni tud, a felhasználókat hozzá kell rendelni a biztonsági szerepkörökhöz. A felhasználókat automatikusan, a szabályok és az üzleti adatok alapján rendelheti hozzá a szerepkörökhöz, kizárhatja a felhasználókat az automatikus szerepkör-hozzárendelésből, vagy manuálisan is hozzáadhat felhasználókat a szerepkörökhöz.
 
 ## <a name="automatically-assign-users-to-roles"></a>Felhasználók automatikus hozzárendelése a szerepkörökhöz
 Ez az eljárás bemutatja, hogy hogyan lehet hozzárendelni automatikusan a szerepkörökhöz az üzleti adatokon alapuló rendszergazdákat. 
@@ -73,3 +73,4 @@ A biztonsági szerepkörökhöz manuálisan hozzárendelt felhasználókat a ren
    4. A **Műveleti ablaktáblán** kattintson a **Kizárás szerepkörből** elemre. A **hozzárendelési mód** oszlopa most Manuális **beállításra frissül,** és a felhasználók ki vannak zárva a szerepkörből.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

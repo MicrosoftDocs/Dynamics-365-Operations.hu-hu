@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f75176781620cd6f845c002876eba6e34d5793e7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1f379cd7783cc984666582d2c680a1db013627ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692226"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070172"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Virtuális Dataverse-táblák lekérdezéseinek optimalizálása
 
@@ -49,12 +49,12 @@ A Human Resources Dataverse virtuális tábláinál a lassú teljesítmény egyi
 Ilyen hatás például a dolgozóra (**mshr_hcmworkerentity**) vagy az alap dolgozóra (**mshr_hcmworkerbaseentity**) vonatkozó lekérdezésekben látható. A teljesítményprobléma többféleképpen is megjelenhet:
 
 - **Lassú lekérdezés-végrehajtás**: A virtuális tábla lekérdezése visszaadhatja a várt eredményt, de a lekérdezés végrehajtása vártnál tovább tarthat.
-- **Lekérdezés időtúllépése**: A lekérdezés időtúllépést okozhat, és a következő hibát adja vissza: "A pénzügy és a műveletek hívása tokent kapott, de a Pénzügy és műveletek belsőserverError típusú hibát adott vissza."
+- **Lekérdezés időtúllépése**: A lekérdezés időtúllépést okozhat, és a következő hibát adja vissza: "Egy tokent a pénzügy és a műveletek hívása miatt kapott a rendszer, de a pénzügy és a műveletek InternalServerError típusú hibát adott vissza."
 - **Váratlan hiba**: A lekérdezés 400-as hibatípust ad vissza a következő üzenettel: „Váratlan hiba történt.”
 
   ![400-as hibatípus a HcmWorkerBaseEntity esetében.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Szabályozás**: A lekérdezés túlhasználhatja a kiszolgáló erőforrásait, és szabályozás tárgya lehet. Ebben az esetben a lekérdezés a következő hibát adja vissza: "A pénzügyek és műveletek hívása tokent kapott, de a Pénzügy és műveletek 429-es típusú hibát adott vissza." A Human Resources szabályozásával kapcsolatos további tudnivalókat lásd: [Szabályozás – GYIK](./hr-admin-integration-throttling-faq.md).
+- **Szabályozás**: A lekérdezés túlhasználhatja a kiszolgáló erőforrásait, és szabályozás tárgya lehet. Ebben az esetben a lekérdezés a következő hibát adja vissza: "A pénzügyek és műveletek hívása során tokent kapott, de a pénzügyek és műveletek 429-es típusú hibát adott vissza." A Human Resources szabályozásával kapcsolatos további tudnivalókat lásd: [Szabályozás – GYIK](./hr-admin-integration-throttling-faq.md).
 
   ![429-as hibatípus a HcmWorkerBaseEntity esetében.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -161,3 +161,4 @@ További tájékoztatás a lapozásról: [Adja meg az egy oldalon visszaadni kí
 - [Szabályozás – GYIK](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

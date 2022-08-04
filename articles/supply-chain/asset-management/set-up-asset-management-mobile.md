@@ -1,6 +1,6 @@
 ---
 title: Eszközkezelés mobil munkaterület beállítása
-description: Ez a cikk azt mutatja be, hogyan lehet beállítani a Microsoftot és a Pénzügy Dynamics 365 Supply Chain Management és műveletek (Dynamics 365) mobilalkalmazást egy eszközkezelési mobileszköz-munkaterület futtatására, amely a dolgozók számára eszközkezelési feladatok elvégzésére használható.
+description: Ez a témakör leírja, hogyan lehet beállítani a Microsoftot és a Pénzügy Dynamics 365 Supply Chain Management és műveletek (Dynamics 365) mobilalkalmazást egy eszközkezelési mobileszköz-munkaterület futtatására, amely a dolgozók számára eszközkezelési feladatok elvégzésére használható.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef4e6bf2ae59adb05c7d4aacc3f5675a5adcafc9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870842"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070053"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Eszközkezelés mobil munkaterület beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a Dynamics 365 Supply Chain Management **cikk azt mutatja be, hogyan lehet beállítani a Microsoftot és a Pénzügy** és műveletek (Dynamics 365) mobilalkalmazást egy eszközkezelési mobileszköz-munkaterület futtatására, amely a dolgozók számára eszközkezelési feladatok elvégzésére használható.
+Ez a Dynamics 365 Supply Chain Management **témakör leírja, hogyan lehet beállítani a Microsoftot és a Pénzügy** és műveletek (Dynamics 365) mobilalkalmazást egy eszközkezelési mobileszköz-munkaterület futtatására, amely a dolgozók számára eszközkezelési feladatok elvégzésére használható.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Karbantartási dolgozói felhasználók beállítása a Supply Chain Management szolgáltatásban
 
@@ -57,7 +57,7 @@ Ahhoz, hogy elérhetővé tegye az eszközkezelési funkciókat a Pénzügy és 
     - [Google Android eszközök esetében](https://go.microsoft.com/fwlink/?linkid=850662)
     - [Apple IOS eszközök esetében](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Nyissa meg a Pénzügy és műveletek (Dynamics 365) alkalmazást. A bejelentkezési oldalnak meg kell jelenni. A **Bejelentkezés** mezőben adja meg a saját Supply Chain Management URL-címét, vagy válassza ki a közelmúltbeli URL-címet a **Közelmúltbeli környezetek** listában, majd koppintson a **Csatlakozás** gombra.
+1. A Pénzügy és műveletek (Dynamics 365) alkalmazás megnyitása. A bejelentkezési oldalnak meg kell jelenni. A **Bejelentkezés** mezőben adja meg a saját Supply Chain Management URL-címét, vagy válassza ki a közelmúltbeli URL-címet a **Közelmúltbeli környezetek** listában, majd koppintson a **Csatlakozás** gombra.
 
     ![Bejelentkezési oldal.](media/mobile-app-sign-in.png "Bejelentkezési oldal")
 

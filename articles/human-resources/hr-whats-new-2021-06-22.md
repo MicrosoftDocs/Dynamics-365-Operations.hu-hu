@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aacb605374d99a3c0bad3438c89e33a04a4d7faf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 61c457abf87ce2da554ddb1472512416159c4dca
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897777"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068424"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>A Dynamics 365 Human Resources új és módosult elemei 2021. június 22.
 
@@ -82,7 +82,7 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- vagy
 
 | Funkció | Részletek |
 | --- | --- |
-| Platform frissítése erre: 10.0.19 (43) | A 10.0.19-es verziófrissítés az ütemezés szerint a szolgáltatáskiadással, 2021. június 28-én indul el. A további tudnivalókat [lásd a Pénzügyi és műveletalkalmazások platformfrissítései a 10.0.19-es verzióhoz (június 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
+| Platform frissítése erre: 10.0.19 (43) | A 10.0.19-es verziófrissítés az ütemezés szerint a szolgáltatáskiadással, 2021. június 28-én indul el. A további tudnivalókat [lásd a Pénzügyi és műveleti alkalmazások 10.0.19-es verziójának Platformfrissítései (június 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
 |  A szolgáltatás évének megjelenítése váltása | Ez a funkció lehetőséget nyújt különböző dátumok használatára a **Korszerű alkalmazotti belépés** és a **Személyek** képernyőn megjelenített szolgáltatási évek kiszámításához.  Ez elérhető lesz az Emberi erőforrások paraméterei között. |
 |  A szabadságkezelés engedélyezése a távollét-kezelőnek | [A szabadságkezelés engedélyezése a távollét-kezelőnek](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  Rendelet mellékletei adott szabadságtípusokhoz | Ezzel a funkcióval a rendszergazdák előírhatják, hogy adott szabadságtípusokra vonatkozó kérelmek beküldésekor a felhasználóknak mellékletet kelljen csatolniuk. |
@@ -99,3 +99,4 @@ A tervezett funkciók és az ütemezett kiadásaik teljes listáját lásd: [A D
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

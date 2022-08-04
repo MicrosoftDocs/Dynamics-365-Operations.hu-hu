@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: da7aef93cf994c40410598ab9c4ff2b21f4750e7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902221"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065928"
 ---
 # <a name="cycle-counting"></a>Ciklikus leltározás
 
@@ -52,11 +52,11 @@ Az alábbi táblázat bemutatja a ciklikus leltár megkezdése előtt biztosíta
 <tbody>
 <tr class="odd">
 <td>Cikk</td>
-<td>A cikknek elérhetőnek kell lennie a raktárkezelő folyamathoz.</td>
+<td>A cikket engedélyezni kell a raktárkezelési folyamatokhoz (WMS).</td>
 </tr>
 <tr class="even">
 <td>Raktár</td>
-<td>A raktárnak elérhetőnek kell lennie a raktárkezelő folyamathoz. A raktárt a <strong>Raktárak</strong> oldalon a raktár kiválasztásával, majd a <strong>Raktárkezelési folyamatok alkalmazása</strong> lehetőség kijelölésével tudja a raktárkezelési folyamatokhoz elérhetővé tenni. Hogy engedélyezze a ciklikus leltár idejére a dolgozóknak a raklapok mozgatását, akkor jelölje ki a <strong>Raklapmozgatás engedélyezése ciklikus leltározás közben</strong> lehetőséget a <strong>Raktárkezelés</strong> gyorslapon.</td>
+<td>A raktárat engedélyezni kell a raktárkezelési folyamatokhoz (WMS). Ha engedélyezni szeretné a raktárat a WMS számára, válassza ki a raktárat <strong></strong> a Raktárak lapon, <strong></strong> majd válassza a Raktárkezelési folyamatok használata lehetőséget. Hogy engedélyezze a ciklikus leltár idejére a dolgozóknak a raklapok mozgatását, akkor jelölje ki a <strong>Raklapmozgatás engedélyezése ciklikus leltározás közben</strong> lehetőséget a <strong>Raktárkezelés</strong> gyorslapon.</td>
 </tr>
 <tr class="odd">
 <td>Munkagyűjtők</td>

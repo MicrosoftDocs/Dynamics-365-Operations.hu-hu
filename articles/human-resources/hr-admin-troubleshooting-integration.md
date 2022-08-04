@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f57e995dfcc04de8384d15f238c45290b3c3cbd
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879279"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067616"
 ---
 # <a name="integration-with-finance-faq"></a>Integráció a Finance GYIK szolgáltatással
 
@@ -88,7 +88,7 @@ Speciális beállítás nem szükséges a kivételek kezeléséhez. Az Adatinteg
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Beállíthatók kétirányú integrációt?
 
-Nem, az integráció jelenleg egy megoldás (emberi erőforrások a pénzügyek és műveletek számára). Azonban van egy alapértelmezett sablon, amelynek segítségével adatokat küldhet a Human Resources rendszerből a Finance alkalmazásba.
+Nem, az integráció jelenleg egy megoldás (emberi erőforrások a pénzügyhez és a műveletekhez). Azonban van egy alapértelmezett sablon, amelynek segítségével adatokat küldhet a Human Resources rendszerből a Finance alkalmazásba.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Rekordok törlését engedélyezhetem integráció részeként?
 
@@ -118,7 +118,7 @@ A hiba okai a következők lehetnek:
 
 - Az adatok átvitele az ismétlődő rekordokok kivonását eredményezte a forrásnál (Dataverse).
 
-- Az adatátvitel olyan mezőiben vannak nulla értékek, amelyek szükségesek a Finance and Operations alkalmazásnak. Ellenőrizze , hogy a Dataverse adatai megfelelnek a Finance and Operations követelményeinek.
+- Az adatátvitel null értéket tartalmaz a pénzügyben és műveletekben kötelező mezőkben. Ellenőrizze , hogy a Dataverse adatai megfelelnek a Finance and Operations követelményeinek.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Ha a végrehajtási hibák vannak és az Alkalmazott azonosítója nem lett szinkronizálva, hogyan találom meg az előzményfeladatot, amelyben meghiúsult az alkalmazotti rekord?
 
@@ -150,7 +150,7 @@ Ha az entitás támogatott, és az adatok elérhetők a Dataverse megoldásban, 
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>A saját alkalmazottak címei helytelenek a Finance alkalmazásban importálás után. Mit tegyek?
 
-A **Helyazonosító** számsorozata ugyanazt a mintát használja a Human Resources és a Finance alkalmazásban is. A számsorozat egyedi kell legyen mindkét oldalon, hogy ne legyenek címütközések történő az adatok integrálásakor a Dataverse megoldásból a Finance and Operations alkalmazásba.
+A **Helyazonosító** számsorozata ugyanazt a mintát használja a Human Resources és a Finance alkalmazásban is. A számsorozatnak mindkét oldalon egyedinek kell lennie, Dataverse így a címütközések nem ütköznek a pénzügyekbe és a műveletekbe származó adatok integrálása során.
 
 A Human Resources alkalmazás végrehajtása során ellenőrizze, hogy a számsorozatok ne legyenek azonosak a Human Resources alkalmazásban és a Finance alkalmazásban találhatókkal. Ellenőrizze, hogy nem azonosak számsorozatok egyetlen esetben sem, amikor az adatokat mindkét rendszer kezeli.
 
@@ -184,3 +184,4 @@ Frissítse a Finance adatentitásait az **Adatkezelés \> Keretrendszer paramét
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

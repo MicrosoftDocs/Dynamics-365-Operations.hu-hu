@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5dbf8ab2ea875e902709215e249871474b17230f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c4c2a0954c8554da0b4c859d837ab6ca4839b36
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883509"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111928"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával
 
@@ -119,7 +119,7 @@ Módosítsa a tervezett formátumkonfiguráció állapotát Vázlat állapotról
     Fontos, hogy a létrehozott konfiguráció teljesített 1.1.1-es verzióként lesz mentve. Ez azt jelenti, hogy ez az egyéni BACS (UK fiktív egyéni) formátum 1-es verziója, amely a Kifizetések (egyszerűsített modell) adatmodell 1-es verzióján alapuló BACS (UK fiktív) 1-es verzióján alapul.  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>A testreszabott formátum tesztelése a Kifizetési fájlok létrehozásához
-A "Létrehozott formátum használata a kifizetésekhez elektronikus dokumentumok generálása" művelet párhuzamos pénzügyi és műveleti munkamenetben történő lépéseit kell végrehajtani. Válassza ki a BACS (Egyesült Királyság fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a közelmúltban bevezetett XML-csomópontot, amely az IBAN mezőt a regionális követelményeknek megfelelően jeleníti meg.  
+A párhuzamos pénzügyi és műveleti munkamenetek során a "Létrehozott formátum használata a kifizetésekhez elektronikus dokumentumok előállításához" eljárás lépéseit kell végrehajtani. Válassza ki a BACS (Egyesült Királyság fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a közelmúltban bevezetett XML-csomópontot, amely az IBAN mezőt a regionális követelményeknek megfelelően jeleníti meg.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>A meglévő országspecifikus konfiguráció frissítése
 A Litware, Inc. rendszernek frissítenie kell a BACS (UK fiktív) konfigurációját, és igazodnia kell az új ország követelményeihez az elektronikus dokumentum formátumának kezelésére vonatkozóan. Később ezen konfiguráció új verziójában tárolva lesz, amelyet felajánlanak a szolgáltatás előfizetői számára, többek között a Proseware, Inc.  
@@ -239,7 +239,7 @@ Ehhez a Proseware, Inc. rendszernek meg kell változtatnia az egyéni konfigurá
     Vegye figyelembe, hogy a rendszer a létrehozott konfigurációt teljesített 1.2.2-es verzióként menti: az alap BACS (UK fiktív egyéni) formátum 2-es verziója, amely a Kifizetések (egyszerűsített modell) adatmodell 1-es verzióján alapuló alap BACS (UK fiktív) formátum 2-es verzióján alapul.  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>A testreszabott formátum tesztelése a Kifizetési fájlok létrehozásához
-A "Létrehozott formátum használata a kifizetésekhez elektronikus dokumentumok generálása" művelet párhuzamos Pénzügy és Műveletek munkamenetben történő lépéseit kell végrehajtani. Válassza ki a létrehozott „BACS (UK fiktív egyéni)” formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainak megfelelően jeleníti meg.  
+A párhuzamos pénzügyi és műveleti munkamenetek során a "Létrehozott formátum használata a kifizetésekhez elektronikus dokumentumok generálása" eljárás lépéseit kell végrehajtani. Válassza ki a létrehozott „BACS (UK fiktív egyéni)” formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainak megfelelően jeleníti meg.  
 
 
 

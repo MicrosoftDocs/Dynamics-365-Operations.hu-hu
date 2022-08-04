@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
-ms.translationtype: MT
+ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954496"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167731"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.25. (2022. április ) szolgáltatásban
 
@@ -36,8 +36,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 | Készlet&nbsp;és&nbsp;logisztika | [Veszélyes anyagok fejlesztései](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Hamarosan | Funkciókezelés:<br>*Veszélyes anyagok fejlesztései* |
 | Készlet&nbsp;és&nbsp;logisztika | [Csomagolási munka a csomagolási állomásokhoz](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Hamarosan | Funkciókezelés:<br>*Csomagolási munka a csomagolási állomásokhoz* |
 | Készlet&nbsp;és&nbsp;logisztika | [Vonalkódok beolvasása a raktárban a GS1 formátumszabványok alapján](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-vonalkódok és QR-kódok](../warehousing/gs1-barcodes.md) | Funkciókezelés:<br>*GS1-vonalkódok beolvasása* |
-| Gyártás | [Anyagfelhasználás és -foglalások a termelési emelet végrehajtási felületén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*(Előzetes verzió) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS)*<br><br>Illetve:<br><br>Funkciókezelés:<br>*(Előnézet) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (WMS-kompatibilis)* |
-| Gyártás | [Anyagfelhasználás regisztrálása mérlegegységekben](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funkciókezelés:<br>*Anyagfelhasználás regisztrálása a mobilalkalmazáson egy skálázási egységben* |
+| Gyártás | [Anyagfelhasználás és -foglalások a termelési emelet végrehajtási felületén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*Anyagfelhasználás regisztrálása a termelési emelet végrehajtási felületén (nem WMS)*<br><br>Illetve:<br><br>Funkciókezelés:<br>*(Előnézet) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (WMS-kompatibilis)* |
 | Tervezés | [Tervezési optimalizálás központosított naptár karbantartása](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Naptárak és alaptervezés](../master-planning/supply-chain-calendars-master-planning.md) | Alapértelmezés szerint engedélyezve |
 | Tervezés | [Tervezési optimalizálási javaslatok a meglévő készlet optimalizálása érdekében](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Műveletkérő üzenetek](../master-planning/action-messages.md) | Alapértelmezés szerint engedélyezve |
 | Tervezés | Tervezett rendelések egyszerűsítve | [Tervezett rendelések egyszerűsítve](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funkciókezelés:<br>*Tervezett rendelések egyszerűsítve* |
@@ -183,9 +182,9 @@ A táblázat felsorolja azokat a funkciókat is, amelyek korábban nyilvános el
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A pénzügyi és az üzemeltetési alkalmazások platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.25 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások (2022. április 10.25) platformfrissítései.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md)
+A Microsoft Dynamics 365 Supply Chain Management 10.0.25 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és műveleti alkalmazások (2022. április 10.) 10.0.25-ös verziójának platformfrissítései.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md)
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
@@ -209,3 +208,4 @@ Mielőtt a funkciót eltávolítanának a termékből, [Dynamics 365 Supply Chai
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

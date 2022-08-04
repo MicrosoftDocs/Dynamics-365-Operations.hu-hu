@@ -1,6 +1,6 @@
 ---
 title: A létrehozott ER-jelentések eredményeinek nyomon követésének és a kiindulási értékekkel való összehasonlításának fejlesztései
-description: Ez a témakör a 10.0.3-as verzió (2019. június) eri Microsoft Dynamics 365 for Finance and Operations alapkonfigurációja által tartalmazott javításokat ismerteti.
+description: Ez a cikk az ER Microsoft Dynamics 365 Pénzügyi verzió 10.0.3 verziójának (2019. június) javításokat ismerteti.
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb2e76492ac9f6feb71811d0fbfd25919b59ac4d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847401"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109142"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>A létrehozott ER-jelentések eredményeinek nyomon követésének és a kiindulási értékekkel való összehasonlításának fejlesztései
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör az elektronikus jelentési keretrendszer (ER) kiindulási funkcióját javítására tett első lépésekkel ismerteti. Ezek a fejlesztések a Microsoft Dynamics 365 for Finance and Operations 10.0.3-as (2019. júniusi) és a újabb verziókban érhetők el.
+Ez a témakör az elektronikus jelentési keretrendszer (ER) kiindulási funkcióját javítására tett első lépésekkel ismerteti. Ezek a fejlesztések a Microsoft Dynamics 365 Pénzügy 10.0.3 verziójában (2019. június) és később érhetők el.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Alaptervszabályok beállításának automatizálása
 
@@ -208,3 +208,4 @@ Ha a Microsoft SharePoint Server felületén tárolt XML-fájlból szeretne alap
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

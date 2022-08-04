@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: 79296a452e146bb17b197e9ca40db016664df6f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859695"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068848"
 ---
 # <a name="tax-calculation-data-model"></a>Adószámítási adatmodell
 
 Ez a cikk arról nyújt tájékoztatást, hogyan határozzák meg az adóadat-modell mezőértékét az adószámítási tranzakciókban.
 
-Az *adózási adatmodell* az adószámításhoz szükséges mezőkből áll. A Microsoft biztosítja az adószámítási *adatmodellt*, amely tartalmazza a Pénzügyi és műveletalkalmazások tranzakciós dokumentumainak fejlécmezőit és sormezőit. Az adószámítási adatmodellben definiált mezők az alkalmazhatósági szabályok tábláinak rendelkezésre álló oszlopai az adószámítási funkció konfigurációjában.
+Az *adózási adatmodell* az adószámításhoz szükséges mezőkből áll. A Microsoft biztosítja az adószámítási *adatmodellt*, amely tartalmazza a tranzakciós dokumentumok fejlécmezőit és sormezőit a pénzügyi és műveleti alkalmazásokban. Az adószámítási adatmodellben definiált mezők az alkalmazhatósági szabályok tábláinak rendelkezésre álló oszlopai az adószámítási funkció konfigurációjában.
 
 > [!NOTE] 
 > Az adatmodellben definiált egyes csomópontok, például a **Rekordazonosító** és a **Táblaazonosító** technikai célokat szolgálnak. Ezek nem elérhető oszlopok az adószámítási funkció konfigurációjában.
@@ -54,7 +54,7 @@ Megtekintheti az adószámítási adatmodellt és az alkalmazhatósági szabály
 
     [![Oszlopok kezelése.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Az adószámítási adatmodell integrálva van a Pénzügy és a Műveletek alkalmazással. Az adószámításhoz kapcsolódó egyes tranzakciók során a program összegyűjti az alkalmazhatósági szabályok tábláiban meghatározott mezők értékeit, és elküldi számításra az adószámítási szolgáltatásba. A 40.46 verzióban a következő tranzakciótípusokhoz 57 előre definiált adatmodell áll rendelkezésre: beszerzési rendelések, értékesítési rendelések, átmozgatási rendelések, beszerzési igénylések, ajánlatkérések és értékesítési árajánlatok.
+Az adószámítási adatmodell integrálva van a pénzügyi és a műveletalkalmazásokkal. Az adószámításhoz kapcsolódó egyes tranzakciók során a program összegyűjti az alkalmazhatósági szabályok tábláiban meghatározott mezők értékeit, és elküldi számításra az adószámítási szolgáltatásba. A 40.46 verzióban a következő tranzakciótípusokhoz 57 előre definiált adatmodell áll rendelkezésre: beszerzési rendelések, értékesítési rendelések, átmozgatási rendelések, beszerzési igénylések, ajánlatkérések és értékesítési árajánlatok.
 
 ## <a name="version-updates-and-restrictions"></a>Verziófrissítések és -korlátozások
 
@@ -134,3 +134,4 @@ Huszonhat adatmodell használható egy tranzakció sorainak mezőiként. A fejl�
 | Egység                          | <ul><li>**Értékesítési rendelés:** Egység</li><li>**Beszerzési rendelés:** Egység</li><li>**Átmozgatási rendelések – Szállítás:** Egység</li><li>**Átmozgatási rendelés – Bevételezés** Egység</li><li>**Beszerzési igénylések:** Egység</li><li>**Ajánlatkérés:** Egység</li><li>**Értékesítési árajánlat:** Egység</li></ul> |
 | Változat száma                | <ul><li>**Értékesítési rendelés:** Változatszám</li><li>**Beszerzési rendelési:** Változatszám</li><li>**Értékesítési árajánlat:** Változatszám</li></ul> |
 | Raktár                     | <ul><li>**Értékesítési rendelés:**<ol><li>Sor &gt; Raktár</li><li>Termék &gt; Raktár</li></ol></li><li>**Beszerzési rendelés:**<ol><li>Sor &gt; Raktár</li><li>Termék &gt; Raktár</li></ol></li><li>**Átmozgatási rendelés – Szállítás:** Feladó raktár</li><li>**Átmozgatási rendelés – Bevételezés:** Címzett raktár</li><li>**Beszerzési igénylés:** Sor &gt; Raktár</li><li>**Ajánlatkérés:** Sor &gt; Raktár</li><li>**Értékesítési ajánlat:**<ol><li>Sor &gt; Raktár</li><li>Termék &gt; Raktár</li></ol></li></ul> |
+

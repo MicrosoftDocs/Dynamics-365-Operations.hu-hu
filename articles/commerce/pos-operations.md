@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 23805a88fab34d925241c51ae449bd81e15d5337
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 3948fff15108568df514406ad443d4f538653e62
+ms.sourcegitcommit: 1af2b01aea6b5a4d88ee3fae6faa0eaf1976c5dd
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027283"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9146485"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
@@ -271,7 +271,7 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 1218 | Perifériás eszköz zárfeloldásának kényszerítése                           | A rendszer ezt a műveletet segítségével zárolásának feloldása a POS-perifériák beállításait.                                                                                                                                           | Nem alkalmazható | Nem alkalmazható     | Nem alkalmazható | Nem alkalmazható    | Nem              |
 | 1219 | URl megnyitása a pénztárban                                   | Rendszergazda által konfigurált URL-cím megnyitása a POS-terminálon                                                                                                                                                                           | Igen            | Igen                | Igen            | Igen               | Nem              |
 | 1220 | Széfes kezelés                                       | A különféle pénztárgépekkel kezelhető széf.                                                                                                                                                                       | Igen            | Igen                | Igen            | Igen               | Nem              |
-| 1221 | Felfüggesztett tranzakciók érvénytelenítése                       | Felfüggesztett tranzakciók érvénytelenítése                                                                                                                                                                               | Igen            | Igen                | Igen            | Igen               | Nem              |
+| 1221 | Felfüggesztett tranzakciók érvénytelenítése                       | Felfüggesztett tranzakciók érvénytelenítése                                                                                                                                                                               | Igen            | Nem                | Nem            | Igen               | Nem              |
 | 1300 | Pénzügyi regisztráció kihagyása                          | Pénzügyi regisztráció kihagyása.                                                                                                                                                                                       | Nem            | Nem                | Nem            | Igen               | Nem             |
 | 1301 | Pénzügyi esemény regisztráltként való megjelölése                      |  Pénzügyi esemény megjelölése regisztráltként.                                                                                                                                                                                  | Nem            | Nem                | Nem            | Igen               | Nem             |
 | 1302 | Pénzügyi regisztrációs folyamat befejezése              | A pénzügyi nyilvántartási folyamat befejezése.                                                                                                                                                                           | Nem            | Nem                | Igen            | Igen               | Igen             |

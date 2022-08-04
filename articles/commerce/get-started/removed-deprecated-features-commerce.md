@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör olyan funkciókat ismertet, amelyek már el vannak távolítva, illetve amelyek eltávolítása tervezett Dynamics 365 Commerce.
 author: josaw
-ms.date: 04/27/2022
+ms.date: 07/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2725ff2b8bfbaadbca1bc070e32cee7c5d2754be
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a59d62ad846eed659fa4e70390ebafc40127df0f
+ms.sourcegitcommit: ef56b5d0ed26e373add5dec63168e08ade40573e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910524"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9138586"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 
@@ -31,7 +31,20 @@ Ez a témakör olyan funkciókat ismertet, amelyek már el vannak távolítva, i
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 > [!NOTE]
-> A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
+> A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük azokat az objektumokat, amelyek megváltoztak vagy el vannak távolítva a pénzügyi és műveleti alkalmazások egyes verzióiban.
+
+## <a name="feature-deprecation-effective-july-2022"></a>Funkció értékcsökkenése 2022. július 2-án
+
+### <a name="commerce-analytics-preview"></a>Commerce elemzések (Előzetes verzió)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Dynamics 365 Commerce csoport elemezte a Commernce analitika (Előnézet) funkció használatát és felvételét, és úgy döntöttek, hogy a továbbiakban nem hozzák előre a funkciót az általános elérhetőségnek.   |
+| **Felváltotta másik szolgáltatás?**   | Jelenleg a Commerce Analytics (Preview) szolgáltatást nem cseréli le egy másik funkció vagy megoldás. A nyers tranzakciók és alapadatok pénzügyi és műveleti alkalmazásokból történő exportálása továbbra is elérhető lesz az Azure-adatügyletekbe, [mint azt a Pénzügyi és műveleti alkalmazások Adatexportakciókba exportálása is folytatja](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). A partnerek és a vevők ezt az adatfolyamot az üzleti igénynek megfelelő, bármilyen tervezett elemzési jelentés szerzője számára biztosítják.
+| **Érintett területek**         | Commerce elemzések (Előzetes verzió) |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | A funkció letiltásának 2022. augusztus 30-ig kell lennie.  Ettől a dátumtól már nem történik frissítés a Power BI Commerce analitikában (Előnézet) által biztosított aktuális jelentésekben.     |
+
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.25 kiadásában
 
@@ -98,7 +111,7 @@ További tájékoztatás:
 
 ### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln és CloudPos.sln a Retail SDK készletben
 
-POS-bővítmény fejlesztés a ModernPos.sln, CloudPos.sln, POS használatával. Az Extension.csproj és a POS mappa elavult a 10.0.21-es kiadásban. A jövőben használja a POS-független csomagolási SDK-t a POS-bővítésekhez.
+POS-bővítmény fejlesztés a ModernPos.sln, CloudPos.sln, POS segítségével. Az Extension.csproj és a POS mappa elavult a 10.0.21-es kiadásban. A jövőben használja a POS-független csomagolási SDK-t a POS-bővítésekhez.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -195,3 +208,4 @@ További tájékoztatás a korábbi verziókban eltávolított vagy elavult szol
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

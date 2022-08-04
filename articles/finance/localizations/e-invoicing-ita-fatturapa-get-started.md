@@ -2,7 +2,7 @@
 title: Az olasz És az SDI közvetlen integrációjának beállítása
 description: Ez a cikk segítséget nyújt az Elektronikus számlázás olaszországi modulban történő első lépéséhez, valamint az olasz ÁtturaPA és az Árfolyamrendszer (SDI) közvetlen integrációjának beállításhoz.
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 07/27/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 363b7b5e3d5abbb990fea8f8ad4d0c1bebf80102
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853192"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203169"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Az olasz És az SDI közvetlen integrációjának beállítása
 
@@ -58,7 +58,7 @@ Ez a szakasz kiegészíti [az](e-invoicing-get-started.md#country-specific-confi
 6. Adja hozzá az egyes alkategóriákhoz a rendszerben meghatározott feltételeket, majd mentse a módosításokat.
 
     > [!NOTE]
-    > A Név **oszlopban** adott **\*\*** **\*\*** érték helyett az Üres vagy a Nem üres helyőrző értéket lehet kiválasztani.
+    > A Név **oszlopban** adott érték helyett az **\*Üres\*** vagy a **\*Nem üres\*** helyőrző értéket lehet kiválasztani.
 
 ### <a name="configure-a-processing-pipeline-for-export"></a>Feldolgozási folyamat konfigurálása exportáláshoz
 
@@ -67,12 +67,15 @@ Ez a szakasz kiegészíti [az](e-invoicing-get-started.md#country-specific-confi
 3. A Feldolgozási **folyamat szakaszban** menjen végig a műveleteken, és állítsa be az összes szükséges mezőt:
 
     - A Dokumentum aláírása **művelet** Tanúsítvány **neve mezőjében** adja meg a Digitális aláírási tanúsítványt.
-    - A Küldés **művelethez** állítsa be az **URL-cím és a** Tanúsítványok **mezőket**. A Tanúsítványok **mező** értéke tanúsítványlánc, az első a legfelső szintű hitelesítésszolgáltatói tanúsítvány (caentrate.cer), a második pedig az Ügyfél tanúsítvány.
+    - A Küldés **művelethez** állítsa be az **URL-cím és a** Tanúsítványok **mezőket**. A Tanúsítványok **mező** értéke tanúsítványlánc, az első a legfelső szintű hitelesítésszolgáltatói tanúsítvány (caentrate.cer), a második pedig az Ügyféltanúsítvány.
 
-4. Válassza az **Ellenőrzés** lehetőséget, ha gondoskodnia kell arról, hogy az összes kötelező mező be legyen állítva.
-5. Mentse el a módosításokat, és zárja be az oldalt.
-6. A Beállítások **lapon** válassza ki a Projekt **számláit**, majd a Szerkesztés **lehetőséget**.
-7. Ismételje meg a 3–5. lépést a projektszámlákra.
+4. Az Alkalmazhatósági **szabályok szakaszban** tekintse át az záradékokat, és tekintse át vagy állítsa be a szükséges mezőket:
+    - Ellenőrizze a **LegalEntityID záradékot**, és frissítse a jogi személy helyes értékét.
+
+5. Válassza az **Ellenőrzés** lehetőséget, ha gondoskodnia kell arról, hogy az összes kötelező mező be legyen állítva.
+6. Mentse el a módosításokat, és zárja be az oldalt.
+7. A Beállítások **lapon** válassza ki a Projekt **számláit**, majd a Szerkesztés **lehetőséget**.
+8. Ismételje meg a 3–6. lépést a projektszámlákra.
 
 ### <a name="configure-the-processing-pipeline-for-import"></a>A feldolgozási folyamat konfigurálása importáláshoz
 
@@ -161,7 +164,7 @@ Ez a szakasz olyan információkat tartalmaz, amelyek segítségével beállíth
 
     2. Válassza **a Regisztrálás** lehetőséget, majd válassza ki a most létrehozott alkalmazásregisztrációt.
     3. Menjen az **API-engedélyekhez**, és válassza a Támogatás **rendszergazdai hozzájárulását**.
-    4. Menjen a Tanúsítványok **& tanúsítványhoz**, válassza a Tanúsítvány **feltöltése** lehetőséget, majd töltse fel a .cer tanúsítványfájlt az S2S-hitelesítéshez.
+    4. Menjen a Tanúsítványok **& tanúsítványhoz**, válassza a Tanúsítvány **feltöltése** lehetőséget, majd töltse fel .cer a tanúsítványfájlt S2S hitelesítéshez.
     5. Menjen az **Enterprise-alkalmazásokhoz**, és válassza ki a létrehozott alkalmazást.
     6. Az alkalmazásazonosító **(ügyfél-azonosító**) és **az objektumazonosító értékek mentése** az alkalmazás számára.
     7. A Számlázási szolgáltatás csapatának meg kell bizonyosodnie a szolgáltatáshoz való alkalmazás-hozzáférésről. A következő paraméterek értékeinek küldése a következőnek <D365EInvoiceSupport@microsoft.com>:
@@ -234,7 +237,7 @@ Hajtsa végre a következő lépéseket ezen a számítógépen, ahol a proxyszo
 
 1. Csatlakozás az VM-hez távoli asztali kapcsolat segítségével
 2. Nyissa meg a helyi számítógép tanúsítványának be- és betárolóját. A további tudnivalókat lásd [: Tanúsítványok megtekintése az HHC be- és utántával](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
-3. Importálja **a caentrate.cer** tanúsítványt a **termeléshez, és a CAEntratetest.cer**[tanúsítványt a megbízható gyökér hitelesítésszolgáltató-üzletbe való teszteléshez](/dotnet/framework/wcf/feature-details/working-with-certificates#certificate-stores). (A **CAEntratetest.cer** a hatóság által megadott legfelső szintű hitelesítésszolgáltatói tanúsítvány.)
+3. Importálja **a caentrate.cer** a termeléshez **szükséges tanúsítványt és a CAEntratetest.cer** tanúsítványt [a Trusted Root Certification Authorities tárolóba](/dotnet/framework/wcf/feature-details/working-with-certificates#certificate-stores). (**CAEntratetest.cer** a hatóság által megadott legfelső szintű hitelesítésszolgáltatói tanúsítvány.)
 4. A Vezérlőpult Windows-funkcióinak **be**- és kikapcsolása, **illetve a kiszolgálói** \> **operációs** rendszer Szerepkör és szolgáltatások hozzáadása funkciójának megnyitása a Vezérlőpulton, illetve az Internet Information Services (IIS) szolgáltatásainak bekapcsolásán:
 
     - Webkezelési eszközök
@@ -242,9 +245,9 @@ Hajtsa végre a következő lépéseket ezen a számítógépen, ahol a proxyszo
     - Webes szolgáltatások az egész világra kiterjedően
         - Alkalmazásfejlesztési funkciók
             - .NET extensibility 4.7 (vagy 4.8)
-            - ASP
+            - Áspiskígyó
             - ASP.NET 4.7 (vagy 4.8)
-            - CGI
+            - Cgi
             - ISAPI-bővítmények
             - ISAPI-szűrők
         - GYAKORI HTTP-funkciók
@@ -269,7 +272,7 @@ Hajtsa végre a következő lépéseket ezen a számítógépen, ahol a proxyszo
 3. A szolgáltatás konfigurálása
 
     1. Az elektronikus **számlázási szolgáltatás letöltött Sdi Proxy archív** mappájának kibontása.
-    2. Nyissa meg **az appsettings.json\\** **fájlt a src** Egyesetservice mappában, és állítsa be a következő paramétereket:
+    2. Nyissa meg **az appsettings.json** fájlt a **src\\Egyesetservice** mappában, és állítsa be a következő paramétereket:
 
         - **KeyVaultUri** – adja meg a számlázási szolgáltatás ügyfélbizonyítványát tároló kulcscímet.
         - **Bérlőazonosító** – adja meg a vevő bérlőjéhez globálisan egyedi azonosítót (GUID).
@@ -328,7 +331,7 @@ Hajtsa végre a következő lépéseket ezen a számítógépen, ahol a proxyszo
     - **C:\\ Logs\\** – itt tárolja a naplófájlokat. Ezeket a fájlokat az [MS Service Trace Viewer segítségével lehet megtekinteni](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
     - **C:\\ Files\\** – az összes válaszfájlt tárolja itt.
 
-21. A Fájlkezelőben **adja meg a HÁLÓZATI SZOLGÁLTATÁS** **és az IIS AppPool\\ SdiAppPool (vagy** az IIS AppPool **DefaultAppPool\\**) **·** **hozzáférést** az Alapértelmezett csoport használata esetén a Naplók és fájlok mappához.
+21. A Fájlkezelőben adja meg a **HÁLÓZATI SZOLGÁLTATÁS** és az **IIS AppPool\\ SdiAppPool** (vagy az **IIS AppPool\\DefaultAppPool**) hozzáférést az **Alapértelmezett**  csoport használata esetén a **Naplók** és fájlok mappához.
 
     1. Jelölje ki és tartsa lenyomva az egyik mappát (vagy kattintson rá a jobb gombbal), majd válassza a Tulajdonságok **parancsot**.
     2. A Tulajdonságok **párbeszédpanel** Biztonsági **lapján** válassza a Szerkesztés **lehetőséget**.

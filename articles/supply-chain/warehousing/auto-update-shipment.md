@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2963589562e2d646670183e9db35df33255e8894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5816a7cddf509260511368b74655a9fd5bfc485
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903753"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067881"
 ---
 # <a name="shipment-auto-updates"></a>Szállítmányok automatikus frissítései
 
@@ -30,7 +30,7 @@ A szállítmány automatikus frissítése funkcióval automatikusan frissítheti
 
 Amikor a szállítmány automatikus frissítése funkció nincs használatban, csak a mennyiség csökken automatikusan, amíg a raktári munka létre nem jön. A felhasználóknak manuálisan kell frissíteniük vagy törölniük a sorokat, majd újra ki kell adniuk a sorokat, ha a rendelési mennyiségek növekednek, vagy új rendelési sorok vannak hozzáadva. A szállítmányok automatikus frissítése funkció használatával a vállalatok zökkenőmentesen biztosíthatják a raktár frissítését anélkül, hogy aggódni kellene azzal kapcsolatosan, hogy a rakományok nem tükrözik a rendelési sorok frissítéseit.
 
-A szállítmányok automatikus frissítése funkció az értékesítésirendelés-sorokra és az átmozgatásirendelés-sorokra egyaránt vonatkozik, és egy adott raktárhoz van bekapcsolva. Ennélfogva a vállalatok igény szerint különböző automatikus szállítmányfrissítési szabályokat alkalmazhatnak a raktárak között. Alapértelmezetten a szállítmányok automatikus frissítésének irányelvei a mennyiségcsökkenésekre automatikusan alkalmazva van minden raktárra, amely raktárkezelési folyamatokat alkalmaz. Ha ez az alapértelmezett irányelv-beállítás van használatban, akkor csak a mennyiségcsökkenés jut el egy szállítmányhoz és rakományhoz, amíg nincs létrehozva a raktári munka. Ez a viselkedés hasonlít a szállítmányok automatikus frissítése funkció bevezetése előtt alkalmazott viselkedésre.
+A szállítmányok automatikus frissítése funkció az értékesítésirendelés-sorokra és az átmozgatásirendelés-sorokra egyaránt vonatkozik, és egy adott raktárhoz van bekapcsolva. Ennélfogva a vállalatok igény szerint különböző automatikus szállítmányfrissítési szabályokat alkalmazhatnak a raktárak között. Alapértelmezés szerint a mennyiségcsökkentésre vonatkozó automatikus frissítési irányelv minden raktárra érvényes, amely raktárkezelési folyamatokat (WMS) használ. Ha ez az alapértelmezett irányelv-beállítás van használatban, akkor csak a mennyiségcsökkenés jut el egy szállítmányhoz és rakományhoz, amíg nincs létrehozva a raktári munka. Ez a viselkedés hasonlít a szállítmányok automatikus frissítése funkció bevezetése előtt alkalmazott viselkedésre.
 
 ## <a name="main-elements-of-the-functionality"></a>A funkció fő elemei
 

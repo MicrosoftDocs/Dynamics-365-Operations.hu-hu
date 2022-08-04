@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4b63ac8a09efb9ab449b651d030bd14a24d5cc36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b81eb8e0be4c7d7357a6b8b7b5f0ac025b9ab8ca
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850078"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124258"
 ---
 # <a name="alerts-overview"></a>Figyelmeztetések áttekintése
 
@@ -77,13 +77,13 @@ A figyelmeztetési szabályok öt összetevőből állnak:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-A [Figyelmeztetések használata szűrt adatok figyeléséhez](https://youtu.be/ZYKMcv6kl9s) video (fent látható) része a [Finance and Operations lejátszási listának](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely a YouTube oldalon érhető el.
+A [(fent](https://youtu.be/ZYKMcv6kl9s) látható) [szűrt adatsúdó figyeléséhez használt figyelmeztetések használatának beállítása a pénzügyi és műveleti elérhetővé](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) válik YouTube.
 
 ### <a name="alert-rule-options"></a>Riasztási szabály beállításai
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-A [Figyelmeztetési szabályok beállításai](https://youtu.be/cpzimwOjicM) videó (fent látható) szerepel a [Finance and Operations lejátszási listában](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely YouTube oldalon érhető el.
+A [figyelmeztetési szabály beállítási lehetőségeiről](https://youtu.be/cpzimwOjicM) készült videofelvétel (fent látható) [a pénzügyi és műveleti lehetőségek](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) között.YouTube
 
 
 

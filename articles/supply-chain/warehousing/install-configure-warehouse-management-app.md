@@ -16,19 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
-ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
+ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8941766"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171455"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás telepítése és csatlakoztatása
 
 [!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> Ez a témakör azt ismerteti, hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást. Ha a régi raktári alkalmazás (már elavult) konfigurálásával kapcsolatos információkat keres, tekintse meg a következőt: [A raktározási alkalmazás telepítése és csatlakoztatása](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 Ez a cikk bemutatja, hogy hogyan lehet letölteni és telepíteni az egyes mobileszközre a Raktárkezelés mobilalkalmazást, és hogyan kell konfigurálni az alkalmazást az Ellátásilánc-kezelési környezethez való kapcsolódáshoz. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
 

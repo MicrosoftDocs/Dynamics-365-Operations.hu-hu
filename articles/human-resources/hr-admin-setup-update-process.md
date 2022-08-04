@@ -14,18 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b9ab27b443e5ec675ea03e13aa7be4ea84bfb45
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722241"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178443"
 ---
 # <a name="update-process"></a>Rendelés frissítése
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Érvényes:** Emberi erőforrások a különálló infrastruktúrán_ 
 
+> [!NOTE]
+> 2022 júliusa óta nem lehet új emberi erőforrások környezeteket létesítni a különálló emberi erőforrások infrastruktúrájára, Microsoft Dynamics és nem lehet új Lifecycle Services -projekteket létrehozni rajta. A vevők az emberi erőforrások környezetét telepítheti a pénzügyi és a műveleti infrastruktúrára. A további tudnivalókat lásd [az Emberi erőforrások biztosítása a pénzügyi és a műveleti infrastruktúra területén](/hr-admin-setup-provision-fo.md).
 
+> [!IMPORTANT]
+> A pénzügyek és műveletek alkalmazás-infrastruktúrájának frissítési és gyorsjavítási folyamata különbözik az Emberi erőforrások önálló frissítési és gyorsjavítási folyamattól. A frissítési folyamattal kapcsolatos további tudnivalókat [lásd: Folyamat a pénzügyek és műveletek legújabb frissítéséhez való áthelyezéshez](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). A gyorsjavításokkal kapcsolatos további tudnivalókat [lásd A frissítések letöltése a Lifecycle Services (LCS) alkalmazásból](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
 
 A Microsoft Dynamics 365 Human Resources teljes mértékben „szoftver szolgáltatásként” (SaaS) elven működik, amely folyamatos, érintés nélküli szolgáltatásfrissítéseket tartalmaz. Ezek a frissítések olyan alkalmazás-és platformmódosításokat tartalmaznak, amelyek kritikus fontosságú javításokat biztosítanak a szolgáltatáshoz, többek között szabályozói frissítéseket.
 
@@ -37,16 +41,14 @@ A frissítések rendszeres ütemben jelennek meg minden környezethez. A Human R
 
 A Human Resources szolgáltatás frissítései automatikusan alkalmazva vannak az összes környezetre. A Human Resources szolgáltatáshoz kétféle kiadást biztosítunk:
 
-- **Szolgáltatásfrissítések**: Hibajavításokat és új funkciókat tartalmazó frissítések kéthetente jelennek meg. A szolgáltatásfrissítések kiadáskor a platformra vonatkozó frissítéseket is tartalmazzák. A platformfrissítésekkel kapcsolatos további tudnivalókat [lásd a Platformfrissítések újdonságai és módosulásai](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). A kétheti frissítések egy szakaszos, globális bevezetés keretében jelennek meg a régiókban. A kétheti frissítésekkel kapcsolatos további tudnivalókat lásd: [Újdonságok és változások: Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Szolgáltatásfrissítések**: Hibajavításokat és új funkciókat tartalmazó frissítések kéthetente jelennek meg. A szolgáltatásfrissítések tartalmazzák a megfelelő platformfrissítéseket is, amikor ki vannak adva. A platformfrissítésekkel kapcsolatos további tudnivalókat [lásd a Platformfrissítések újdonságai és módosulásai](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). A frissítéseknek több régióra is ki van ásva a globális összesítésük. A frissítésekkel kapcsolatos további tudnivalókat [lásd a Újdonságok és a Módosítások a következőben:Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
-    Ha nincs eltérő értesítés, az összes támogatott adatközpont kéthetente frissül. A kéthetes frissítések között az Egyesült Államok, Ausztrália, Európa, az Egyesült Királyság, Ázsia és Kanada régiói szerepelnek. 
-
-- A **Dataverse megoldás frissítései**: Ezek frissítések kb. hat hetente jelennek meg, szükség szerint. Új entitásokat tartalmaz, valamint a Dataverse meglévő entitásainak módosításait. Ezek a frissítések ugyanazon régiókba irányulnak, mint a kétheti frissítések, és kb. hat hetet vesz igénybe, hogy az összes adatközpontban megtörténjen a replikálásuk. A megoldások frissítései követhetik a kétheti szolgáltatásfrissítéseket, de nem feltétlenül.
+- A **Dataverse megoldás frissítései**: Ezek frissítések kb. hat hetente jelennek meg, szükség szerint. Új entitásokat tartalmaz, valamint a Dataverse meglévő entitásainak módosításait. Ezek a frissítések kéthetes frissítésekkel azonos régiókba adták ki őket, és az összes adatforráson keresztüli replikálás körülbelül hat hétig tart. A megoldások frissítései követhetik a kétheti szolgáltatásfrissítéseket, de nem feltétlenül.
 
 > [!NOTE]
 > A megoldásfrissítések az összes adatközpontban elérhetők a kiadásuk után. Ha nem szeretné megvárni a frissítések automatikus replikálását, manuálisan is alkalmazhatja azokat bármilyen környezetben, bármelyik adatközpontban.
 
-Szükség esetén a Human Resources szolgáltatás a következő típusú javításokat is biztosítja:
+Szükség esetén az Emberi erőforrások a következő típusú javításokat biztosítják:
 
 - **Javítás (gyorsjavítás)**: Olyan hibajavítások, amelyek a kétheti szolgáltatásfrissítési kiadásokkal vagy azoktól külön jelennek meg
 
@@ -83,11 +85,11 @@ A következő helyeken tudhatja meg, hogy milyen munkák vannak folyamatban a Hu
 
 Az előzetes funkciókat tesztkörnyezetben ellenőrizheti, mielőtt engedélyezné azokat a termelési környezetben. Az új funkciók engedélyezésével kapcsolatos további tudnivalókat lásd: [Funkciókezelés áttekintése](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Minden új funkció megmarad előzetes verzióban legalább 30 napig, és általában 30-60 napig. A főbb funkciók általában az előzetes időszakot követően minden év októberében és áprilisában érhetők el. Amint az új funkciókat a Funkciókezelés munkaterületen látja, be lehet kapcsolni őket. Előfordulhat, hogy egyes funkciók alapértelmezés szerint be vannak kapcsolva.
+Minden új funkció megmarad előzetes verzióban legalább 30 napig, és általában 30-60 napig. A főbb funkciók általában az előzetes időszakot követően minden év októberében és áprilisában érhetők el. Amint az új funkciókat a **Funkciókezelés** munkaterületen látja, be lehet kapcsolni őket. Előfordulhat, hogy egyes funkciók alapértelmezés szerint be vannak kapcsolva.
 
 Időnként egy szerves funkció alapértelmezésben be van kapcsolva, de nem kapcsolható ki (például a Funkciókezelési munkaterület).
 
-Ha egy szolgáltatás általában elérhető, előfordulhat, hogy a működési környezetben be van kapcsolva vagy ki van kapcsolva. A funkciókezelés munkaterület jelzi, hogy egy előzetes funkció mikor válik kötelezővé. Ez a dátum általában október 1. vagy április 1., hogy a féléves kiadási tervekkel összehangolják. Nem kapcsolhatja ki a kötelező funkciókat. Amíg nem válik kötelezővé, bármely környezetben ki- és bekapcsolhatja a funkciót.
+Ha egy szolgáltatás általában elérhető, előfordulhat, hogy a működési környezetben be van kapcsolva vagy ki van kapcsolva. A **funkciókezelés** munkaterület jelzi, hogy egy előzetes funkció mikor válik kötelezővé. Ez a dátum általában október 1. vagy április 1., hogy a féléves kiadási tervekkel összehangolják. Nem kapcsolhatja ki a kötelező funkciókat. Amíg nem válik kötelezővé, bármely környezetben ki- és bekapcsolhatja a funkciót.
 
 Kifejezetten ajánljuk, hogy tesztkörnyezetben vagy próbakörnyezetben tekintse meg ezeket a funkciókat. A legjobb megoldás az, ha másolatot készít a jelenlegi termelési környezetről vagy adatbázisról egy tesztkörnyezetbe, hogy az adataival próbálhassa ki az új szolgáltatásokat.
 

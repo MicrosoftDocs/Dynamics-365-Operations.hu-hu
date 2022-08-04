@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900506"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065149"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Raktárkezelés készleten lévő bejegyzéseinek karbantartási feladata
 
@@ -26,11 +26,11 @@ ms.locfileid: "8900506"
 
 Az aktuális készlet kiszámításához használt lekérdezések teljesítményére hatással van az érintett táblák rekordjainak száma. A teljesítmény javítása érdekében az egyik mód az, hogy csökkentse azoknak a rekordoknak a számát, amelyeket az adatbázisnak figyelembe kell vennie.
 
-Ez a cikk az InventSum és a WHSInventReserve táblák szükségtelen rekordjainak törlését írja le az inventSum és a WHSInventReserve tábla adatkarban lévő bejegyzéseinek törléséről. Ezek a táblák a raktárkezelési feldolgozására engedélyezett cikkek aktuális adatait tárolják. (Ezeket a cikkeket WHS cikkeknek nevezzük.) A rekordok törlése jelentősen javíthatja az aktuáliskészlet-számítások teljesítményét.
+Ez a témakör leírja az egyes `InventSum``WHSInventReserve` táblák és táblák felesleges rekordjait. Ezek a táblák a raktárkezelési feldolgozására engedélyezett cikkek aktuális adatait tárolják. (Ezeket a cikkeket WMS cikkeknek nevezzük.) A rekordok törlése jelentősen javíthatja az aktuáliskészlet-számítások teljesítményét.
 
 ## <a name="what-the-cleanup-job-does"></a>A karbantartási feladat tartalma
 
-Az aktuális készlet bejegyzések karbantartási feladata törli a WHSInventReserve és az InventSum táblák azon rekordjait, amelyeknél az összes mező értéke *0* (nulla). Ezek a rekordok törölhetők, mivel nem járulnak hozzá az aktuális készlet adatokhoz. A feladat csak a **Hely** szintje alatt lévő rekordokat törli.
+A feladat az összes `WHSInventReserve``InventSum`*olyan táblában és táblában töröl minden rekordot, amelyben az összes mező értéke 0* (nulla). Ezek a rekordok törölhetők, mivel nem járulnak hozzá az aktuális készlet adatokhoz. A feladat csak a **Hely** szintje alatt lévő rekordokat törli.
 
 Ha a negatív tényleges készlet engedélyezve van, előfordulhat, hogy a karbantartási feladat nem tudja törölni az összes szükséges bejegyzést. Ennek a korlátozásnak az az oka, hogy a feladatnak lehetővé kell tennie egy speciális esetet, amikor az azonosítótábla több sorozatszámmal rendelkezik, és az egyik ilyen sorozatszám negatív lett. Például a rendszernek az azonosítótábla szintjén nulla értékkel rendelkezik aktuális készletként, amikor az azonosítótábla +1 darabbal rendelkezik az 1. sorozatszámból és – 1 darabbal a 2. sorozatszámból. Ennél a speciális esetnél a feladat ellőször egy szélességi törlést végez, ahol először az alsó szinteken próbál törölni.
 

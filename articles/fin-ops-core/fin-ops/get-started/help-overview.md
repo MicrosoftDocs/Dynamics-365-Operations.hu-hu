@@ -1,6 +1,6 @@
 ---
 title: Súgórendszer (videofelvételt tartalmaz)
-description: Ez a cikk áttekintést nyújt a Pénzügy és műveletek súgórendszerről.
+description: Ez a cikk áttekintést nyújt a Pénzügyi és üzemeltetési alkalmazások súgórendszerről.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57c17cab920c531b3eb125260064d01dd8662576
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898369"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124194"
 ---
 # <a name="help-system"></a>Súgórendszer
 
@@ -53,7 +53,7 @@ A docs.microsoft.com tartalmait bármilyen keresőmotor segítségével meg lehe
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Értesítés a változásokról RSS-hírcsatornán keresztül
 
-Ha a Pénzügy és műveletek alkalmazáson keresztül szeretne előfizetést kapni a tartalom minden frissítésére, használja docs.microsoft.com a következő hivatkozásokat:
+Ha a pénzügyi és műveleti alkalmazások között a tartalom minden frissítésére szeretne előfizetést docs.microsoft.com, használja a következő hivatkozásokat:
 
 [RSS-hírcsatorna](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -98,7 +98,7 @@ A további tudnivalókat lásd a [Docs közreműködői útmutatóban](/contribu
 
 A feladatrögzítés egy kontorollált, irányított, interaktív tapasztalat, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. A **Súgó** ablakban megnyithatja (lejátszatja) a feladat útmutatót. Amikor először kattint a feladat-útmutatóra a **Súgó** ablakban láthatja lépésenként a feladathoz tartozó utasításokat. A honosított feladat-útmutatók elérhetőek.
 
-A Microsoft feladat-útmutatók könyvtárát adta ki a termék verzióihoz a Dynamics 365 for Finance and Operations 2017. decemberi kiadásával. A [hozzáférési feladat útmutatói a cikk súgóablakában](#accessing-task-guides-from-the-help-pane) bemutatja, hogy hogyan találhatja meg a termékhez a megfelelő feladat-segéd segédeket.
+A Microsoft feladat-útmutatót adott ki a termékverziókhoz a Dynamics 365 Pénzügy és műveletek 2017. decemberi kiadásával. A [hozzáférési feladat útmutatói a cikk súgóablakában](#accessing-task-guides-from-the-help-pane) bemutatja, hogy hogyan találhatja meg a termékhez a megfelelő feladat-segéd segédeket.
 
 ![Feladat-útmutató olvasási nézete.](./media/task-guide-ops.png)
 
@@ -182,3 +182,4 @@ A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlen�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

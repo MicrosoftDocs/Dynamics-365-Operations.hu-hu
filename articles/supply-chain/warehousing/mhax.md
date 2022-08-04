@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907087"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068359"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Anyagkezelési berendezések interfésze (MHAX)
 
 [!include [banner](../../includes/banner.md)]
 
-Az *anyagkezelési berendezések interfészének* (MHAX) segítségével a külső fizikai anyagkezelési (MH) rendszereket egy olyan raktárhoz lehet csatlakoztatni, amelyet a Microsoft Dynamics 365 Supply Chain Management speciális raktárkezelése (WMS) kezel. A WMS és az MH rendszerek közötti interfész két várakozási sorból áll: egy a kimenő események (WMS – MH) és egy a bejövő események (MH – WMS) számára. A WMS rendszer a különféle munkalétrehozási és végrehajtási folyamatok során létrehozott munkasorok alapján hozza létre a kimenő eseményeket. Az MH rendszer ezután rendszeresen lekérdezi, hogy vannak-e új események a WMS rendszerben, és feldolgozza a válaszokat. Miután az MH rendszer befejezte az események kezelését a munkautasításoknak megfelelően, bejövő eseményeket, például munkasorok befejezését és rövid kitárolást küld.
+Az anyagkezelési *berendezések* felületének (MHAX) segítségével a külső fizikai anyagkezelési (MH) rendszereket egy olyan raktárhoz lehet csatlakoztatni, amelyet a Microsoft raktárkezelési folyamatai (WMS) kezelnek Dynamics 365 Supply Chain Management. A WMS és az MH rendszerek közötti interfész két várakozási sorból áll: egy a kimenő események (WMS – MH) és egy a bejövő események (MH – WMS) számára. A WMS rendszer a különféle munkalétrehozási és végrehajtási folyamatok során létrehozott munkasorok alapján hozza létre a kimenő eseményeket. Az MH rendszer ezután rendszeresen lekérdezi, hogy vannak-e új események a WMS rendszerben, és feldolgozza a válaszokat. Miután az MH rendszer befejezte az események kezelését a munkautasításoknak megfelelően, bejövő eseményeket, például munkasorok befejezését és rövid kitárolást küld.
 
 Az alábbi ábra az MHAX-integráció használata során megjelenő különféle elemeket és a folyamatok sorrendjét mutatja be.
 

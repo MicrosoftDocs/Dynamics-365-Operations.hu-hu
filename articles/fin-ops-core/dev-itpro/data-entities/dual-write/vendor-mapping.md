@@ -1,6 +1,6 @@
 ---
 title: Integrált szállítói alapadat
-description: Ez a témakör leírja a szállítók adatintegrációját a Pénzügy és a Műveletek alkalmazások és a Dataverse.
+description: Ez a témakör leírja a szállítók adatintegrációját a pénzügyi és műveleti alkalmazások és a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 394bb19000076eace6377e07bb3a939c8345da8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a2c32ef546a5bc74e090591c0ac9d51529299041
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905315"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112195"
 ---
 # <a name="integrated-vendor-master"></a>Integrált szállítói alapadat
 
@@ -37,7 +37,7 @@ Ha a szállítói adatokat továbbra is a **Partner/kapcsolattartó** táblában
 ![Bővített szállítói adatok áramlása.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
-> Ha önkiszolgáló áruházhoz Power Apps portálokat használ, akkor a szállító adatai közvetlenül a Pénzügy és műveletek alkalmazásba is átesnek.
+> Ha önkiszolgáló áruházhoz Power Apps portálokat használ, akkor a szállító adatai közvetlenül a pénzügyi és műveleti alkalmazásokba is átfolyhat.
 
 ## <a name="templates"></a>Sablonok
 
@@ -52,8 +52,9 @@ Finance and Operations alkalmazások | Customer Engagement alkalmazások     | L
 [Kifizetési lista sorai](mapping-reference.md#159) | msdyn_paymentschedulelines | Szinkronizálja a vevők és szállítók fizetési ütemezés soraira vonatkozó hivatkozási adatait.
 [Fizetési ütemezés](mapping-reference.md#160) | msdyn_paymentschedules | Ez a sablon szinkronizálja a vevők és szállítók fizetési ütemezésre vonatkozó hivatkozási adatait.
 [Fizetési feltételek](mapping-reference.md#161) | msdyn_paymentterms | Ez a sablon szinkronizálja a vevők és szállítók fizetési feltételekre vonatkozó hivatkozási adatait.
-[Szállítók V2](mapping-reference.md#202) | msdyn_vendors | A szállítókhoz egyéni megoldást használó cégek a Finance and Operations alkalmazások integrációjának köszönhetően kihasználhatják a Dataverse rendszerben bevezetett kész szállítói fogalmat.
+[Szállítók V2](mapping-reference.md#202) | msdyn_vendors | Azok a vállalatok, amelyek egyéni megoldást használnak a Dataverse szállítóknak, a pénzügyek és az üzemeltetés alkalmazásintegrációs alkalmazások integrálása miatt ki használják a most bevezetett, egyedi szállítói koncepciót.
 [Szállítói csoportok](mapping-reference.md#200) | msdyn_vendorgroups | Ez a sablon szinkronizálja a szállítói csoport adatait.
 [Szállítói fizetési mód](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Ez a sablon szinkronizálja a szállító fizetési módra vonatkozó adatait.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

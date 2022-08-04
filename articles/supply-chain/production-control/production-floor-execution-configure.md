@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
-ms.translationtype: MT
+ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022564"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167761"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -92,9 +92,9 @@ Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapért
 
 Ez a funkció lehetővé teszi a dolgozók számára, hogy a termelési emelet végrehajtási felületével regisztrálják az anyagfelhasználást, a kötegszámokat és a sorozatszámokat. Egyes gyártóknak, különösen a folyamatiparban használt gyártóknak kifejezetten regisztrálniuk kell az egyes köteg- vagy termelési rendelésenként felhasznált anyagok mennyiségét. Például a dolgozók a mérleg segítségével leméneklik a munka közben felhasznált anyagok mennyiségét. A teljes anyagkövetés biztosítása érdekében ezeknek a szervezeteknek az egyes termékek előállításához felhasznált kötegszámokat is regisztrálniuk kell.
 
-A funkciónak két változata van. Az egyik lehetőség olyan cikkeket *támogat,* amelyeknél nincs engedélyezve a speciális raktári folyamatok (WMS) használata. A másik támogatja a *WMS* használatát engedélyező cikkeket. A funkció használatához [a](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) Funkciókezelésben (ebben a sorrendben) bekapcsolhatja az alábbi funkciók egyikét vagy mindkettőt attól függően, hogy vannak-e olyan cikkek, amelyek engedélyezve vannak a WMS számára:
+A funkciónak két változata van. Az egyik lehetőség olyan cikkek *használatát támogatja,* amelyeknél nincs engedélyezve a raktárkezelési folyamatok (WMS). A másik támogatja a *WMS* használatát engedélyező cikkeket. A funkció használatához [a](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) Funkciókezelésben (ebben a sorrendben) bekapcsolhatja az alábbi funkciók egyikét vagy mindkettőt attól függően, hogy vannak-e olyan cikkek, amelyek engedélyezve vannak a WMS számára:
 
-- *(Előzetes verzió) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS)*
+- *Anyagfelhasználás regisztrálása a termelési emelet végrehajtási felületén (nem WMS)*
 - *(Előnézet) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (WMS-kompatibilis)*
 
 > [!IMPORTANT]

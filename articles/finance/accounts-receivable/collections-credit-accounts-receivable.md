@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d1304c39628323c6d6e15181263a73ba965930
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 00e536241710fc8a75158472688757320abf4247
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710357"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067208"
 ---
 # <a name="collections-in-accounts-receivable"></a>Beszedések a Kinnlevőségek modulban
 
@@ -65,7 +65,7 @@ A következő listaoldalak megkönnyítik beszedési információk rendezését.
 
 > [!NOTE]
 > A korosítási pillanatképet létre kell hozni, mielőtt megtekintheti ezeken az oldalakon lévő információkat. Csak olyan vevők adatai jelennek meg, akikről készült korosítási pillanatkép. A listalapon megjelenített rekordokat szűrni is lehet, a következőképpen:
-> <li>Alapértelmezés szerint a Finance and Operations-felhasználó hozzáféréssel rendelkezik az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
+> <li>Alapértelmezés szerint a pénzügyek és a műveletek felhasználója hozzáfér minden olyan vevőhöz, akinek van korosítási pillanatképe.</li>
 > <li>Ha léteznek vevőgyűjtők, a felhasználót pénzbehajtóként kell beállítani, hogy használhassa a gyűjtőt a beszedési listaoldalon lévő információk szűréséhez. A kiválasztott vevőgyűjtőben lévő vevők számára az információ korlátozott.</li>
 > <li>Ha egy felhasználó pénzbehajtóként van beállítva, csak annak a pénzbehajtónak kiválasztott gyűjtők érhetők el a listaoldalon. Ha a Beszedéskezelő megtekintheti az összes vevőgyűjtőt váltás van kiválasztva a Pénzbehajtó oldalon a pénzbehajtó számára, minden gyűjtő elérhető számára.</li>
 
@@ -110,3 +110,4 @@ Feldolgozhatja az Elégtelen fedezetű kifizetéseket, ha rákattint a Beszedés
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

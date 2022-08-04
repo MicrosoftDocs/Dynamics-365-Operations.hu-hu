@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45316c40cce988c0758e70af627b0123ec1f7873
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c1acc103291c5d648ac7e179a598348cd9cc2a93
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670440"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135569"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO tényleges értékkel és jelöléssel
 
@@ -82,7 +82,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 - 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 - 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 - 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.67 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
-- 7\. Készletzárást hajtanak végre. A LIFO módszer alapján az első pénzügyi kiadást a legutóbb pénzügyileg frissített bevételezés stb. egyenlíti ki. Ebben a példában egy kiegyenlítés jön létre 3b és 5b között. A program USD 14.00 korrekciót a 3b értékre, az így kapott végső költséget pedig USD 30.00. Ezenkívül a 6a. tranzakciót a 4a. bevételezési tranzakció költségére is módosítja a a tranzakció. A rendszer nem egyenlíti ki ezeket a tranzakciókat, mivel a bevételezés csak fizikailag történt meg, pénzügyileg azonban nem. Ehelyett a tényleges kiadási USD 1.33 csak a tényleges kiadási tranzakcióhoz ad fel korrekciót, és az így kapott helyesb USD 25.00.
+- 7\. Készletzárást hajtanak végre. A LIFO módszer alapján az első pénzügyi kiadást a legutóbb pénzügyileg frissített bevételezés stb. egyenlíti ki. Ebben a példában egy kiegyenlítés jön létre 3b és 5b között. A program USD 14.00 korrekciót a 3b értékre, az így kapott végső költséget pedig USD 30.00. Ezenkívül a 6a. tranzakciót a 4a. bevételezési tranzakció költségére is módosítja a a tranzakció. A rendszer nem egyenlíti ki ezeket a tranzakciókat, mivel a bevételezés csak fizikailag történt meg, pénzügyileg azonban nem. Ehelyett a tényleges kiadási USD 1.33 csak az összeg korrekciója lesz feladva, és az így kapott helyesb USD 25.00.
 
 A következő ábra bemutatja, milyen hatása van a LIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva.
 
@@ -128,7 +128,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 - 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga)
 - 7\. Készletzárást hajtanak végre. A LIFO módszert használó jelölési elv alapján a megjelölt tranzakciókat egymással szemben egyenlítik ki. Ebben a példában a 3b értékét 2b-t egyenlít ki, és a USD 6.00 feladása 3b-re, hogy az érték 3b értékre USD 22.00. Ebben a példában nincs további kiegyenlítés, mivel a lezárás csak a pénzügyileg frissített tranzakciókhoz hoz létre kiegyenlítéseket.
 
-Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg.
+Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 17,50 USD összegnek felel meg.
 
 A következő diagram a LIFO-elvű készletmodell hatását ábrázolja olyan tranzakciósorozatra, ahol kiadások és bevételezések vannak egymáshoz rendelve.
 

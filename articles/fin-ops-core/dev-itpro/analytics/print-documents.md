@@ -7,21 +7,21 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Application User
-ms.reviewer: kfend
-ms.custom:
-- "69161"
-- intro-internal
-ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.custom:
+- "69161"
+- intro-internal
+ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.openlocfilehash: d8d40f7cb94e17370f04b0c97365600f68eb5090
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984908"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206725"
 ---
 # <a name="document-printing-overview"></a>A dokumentumnyomtatás áttekintése
 
@@ -54,7 +54,7 @@ Mivel a megoldás változó, a helyzettől függően az alkalmazások beépítet
 - **2. eset** – ügyfélalkalmazásokat és a Microsoft 365 szolgáltatásokat használja.
 - **3. eset** – ügyfélalkalmazások és a Microsoft Azure által üzemeltetett szolgáltatások támogatását igényli.
 
-Az Azure előfizetésbe telepített platform mellett a Finance and Operations integrált, első fél Azure alkalmazást nyújt az ügyfeleknek,amely segítségével könnyebben használhatják a tartomány által szolgáltatott eszközöket dokumentumok nyomtatására.
+Az Azure-előfizetésre telepített platformon túl a pénzügyi és a műveletalkalmazások integrált, első félként integrált Azure-alkalmazást biztosítanak a vevőknek, ami megkönnyíti a tartományokban tárolt eszközök használatát a dokumentumok nyomtatásában.
 
 ## <a name="service-overview"></a>Szolgáltatás áttekintése
 Miközben a dokumentumok, amelyeket az üzemeltetett alkalmazások hoztak létre, a hálózathoz csatlakoztatott eszközön nyomtatásra várnak, egy Azure blob-tárolóban tárolódnak. A [Dokumentumirányítási ügynök telepítése a hálózati nyomtatás engedélyezéséhez](install-document-routing-agent.md) Azure hitelesítést használ biztonságos csatorna létrehozására az Azure-szolgáltatásokhoz.

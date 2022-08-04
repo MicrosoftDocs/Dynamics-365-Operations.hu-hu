@@ -1,6 +1,6 @@
 ---
 title: Általános hibaelhárítás
-description: Ez a témakör általános hibaelhárítási információkat tartalmaz a Pénzügy és művelet alkalmazások, illetve a Dataverse.
+description: Ez a témakör általános hibaelhárítási információkat tartalmaz a pénzügyek és a műveletalkalmazások, illetve a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853655"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112364"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
@@ -22,7 +22,7 @@ ms.locfileid: "8853655"
 
 
 
-Ez a témakör általános hibaelhárítási információkat tartalmaz a Pénzügy és művelet alkalmazások, illetve a Dataverse.
+Ez a témakör általános hibaelhárítási információkat tartalmaz a pénzügyek és a műveletalkalmazások, illetve a Dataverse.
 
 > [!IMPORTANT]
 > Az ebben a témakörben említett problémák egy része a rendszergazdai szerepkörhöz vagy a Microsoft Azure Active Directory (Azure AD) bérlői rendszergazdai hitelesítő adatokhoz lehet szükséges. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
@@ -55,28 +55,28 @@ Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi l�
 
 A nyomkövetési naplók tartalmát átmásolhatja egy másik alkalmazásba, például jegyzettömbbe vagy más eszközbe, hogy a naplókat és szövegfájlokat megtekintve könnyebben megtekintsen minden tartalmat. 
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Hibakeresési mód engedélyezése a Pénzügy és Műveletek alkalmazások élő szinkronizálási problémáinak hibaelhárításához
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Hibakeresési mód engedélyezése a pénzügyi és műveleti alkalmazások élő szinkronizálási problémáinak hibaelhárításához
 
 **A hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
 
-A kettős írásból származó hibák Dataverse a Pénzügy és műveletek alkalmazásban is megjelenhetnek. A hibák szóbeli naplózásának engedélyezéséhez kövesse az alábbi lépéseket:
+A két írásos hibák, Dataverse amelyek származnak, megjelennek a Pénzügy és műveletek alkalmazásban. A hibák szóbeli naplózásának engedélyezéséhez kövesse az alábbi lépéseket:
 
 1. A Pénzügy és műveletek alkalmazás minden projektkonfigurációjában van egy IsDebugMode **jelző** a **DualWriteProjectConfiguration táblán**.
-2. Nyissa meg a **DualWriteProjectConfiguration** elemet az Excel bővítménnyel. A bővítmény alkalmazásához engedélyezze a tervező módot a Pénzügy és műveletek Excel **bővítményben, és adja hozzá a laphoz a DualWriteProjectConfiguration** tulajdonságot. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
+2. Nyissa meg a **DualWriteProjectConfiguration** elemet az Excel bővítménnyel. A bővítmény csak akkor használható, ha engedélyezi a tervező módot a pénzügyben és az Excel-bővítményben **, és hozzáadhatja a laphoz a DualWriteProjectConfiguration** tulajdonságot. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
 3. Állítsa az **IsDebugMode**-ot **Yes**-re a projektben.
 4. Futtassa a hibákat létrehozó esetet.
 5. A szóbeli naplók a **DualWriteErrorLog** táblában tárolódnak.
 6. Az adatok kereséséhez a táblázatkezelőben használja a következő linket: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, szükség szerint a `999`-t helyettesítve.
 7. Frissítsen újra a [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe) után, amely a 37-es és későbbi platformfrissítésekhez érhető el. Ha ez a javítás telepítve van, akkor a hibakeresési mód több naplót fog rögzíteni.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Szinkronizálási hibák ellenőrzése a Virtuális számítógépen a Pénzügy és műveletek alkalmazáshoz
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Szinkronizálási hibák ellenőrzése a virtuális számítógépen a Pénzügy és műveletek alkalmazáshoz
 
 **A hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
 
 1. Jelentkezzen be a Microsoft Dynamics LifeCycle Services (LCS) szolgáltatásba.
 2. Nyissa meg azt az LCS-projektet, amelyhez kettős írású tesztelést szeretne végezni.
 3. Válassza a **Felhőbeli környezetek** csempét.
-4. A Távoli asztalon bejelentkezhet a Pénzügy és műveletek alkalmazás virtuális gépére (VM). Az LCS képernyőn látható helyi fiókot használja.
+4. A Távoli asztalon bejelentkezhet a pénzügyek és műveletek alkalmazás virtuális gépére (VM). Az LCS képernyőn látható helyi fiókot használja.
 5. Nyissa meg az eseménynaplót.
 6. Válassza az **Alkalmazás- és szolgáltatásnaplók \> Microsoft \> Dynamics \> AX-DualWriteSync \> Működő** részt.
 7. A legutóbbi hibák listájának áttekintése.
@@ -85,7 +85,7 @@ A kettős írásból származó hibák Dataverse a Pénzügy és műveletek alka
 Amikor a kettős Microsoft Edge írású lapot a vagy a Króm böngészőben nyitja meg, a kezdőlap nem töltődik be, és egy üres oldalt vagy egy hibát lát, mint például: "Valami nem sikerült".
 Az Devtoolsban egy hiba látható a konzolnaplókban:
 
->bundle.eed39124e62c58ef34d2.js:37 DOMException: Nem sikerült beolvasni a "SessionStorage" tulajdonságot a "Window" alkalmazásból: A dokumentum hozzáférése megtagadva. : t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860) új t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103) (ci) (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115) (eo ) (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728) a(z) vnál (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191) a Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692) vb vagy (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076) Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750) és (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130) hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151)
+>bundle.eed39124e62c58ef34d2.js:37 DOMException: Nem sikerült beolvasni a "sessionStorage" tulajdonságot a "Window" alkalmazásból: A dokumentum hozzáférése megtagadva. : t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860) új t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103) (ci) (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115) (eo ) (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728) a(z) vnál (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191) a Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692) vb vagy (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076) Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750) és (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130) hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151)
 
 A felhasználói felület a böngésző "munkamenet-tárolója" használatával tárol néhány tulajdonságértéket a kezdőlap betöltéséhez. Ahhoz, hogy ez működjön, a webhely böngészőjében engedélyezve kell lennie a külső felek által használt süteményeknek. A hiba azt jelzi, hogy a felhasználói felület nem férhet hozzá a munkamenet-tárolóhoz. Erre a problémára két helyzet közül lehet példa:
 
@@ -105,13 +105,13 @@ A böngésző beállításaiban meg kell engedni a harmadik fél által használ
 2.  Ha a "Harmadik fél által használt sütemények blokkolása az Incogntóban" vagy a "Harmadik fél által történő sütemények blokkolása" beállítás van megjelölve, kattintson a " **Mindig használható sütemények" webhelyre, és kattintson a Hozzáadás gombra**. 
 3.  Adja meg a Pénzügy & Műveleti alkalmazások webhelynevét – https://<your_FinOp_instance>.cloudax.dynamics.com. Győződjön meg róla, hogy a "Minden sütemény, csak ezen a helyen" jelölőnégyzetet bejel választja. 
 
-### <a name="microsoft-edge-browser"></a>Microsoft Edge Böngésző
+### <a name="microsoft-edge-browser"></a>Microsoft Edge böngésző
 1.  A Beállítások – > webhely engedélyei – > a sütemények és a webhely adatai.
 2.  A "Harmadik fél által használt sütemények blokkolása" kikapcsolása.  
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Egy másik környezet leválasztása Dataverse és csatolása a Pénzügy és műveletek alkalmazásból
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Egy másik környezet leválasztása Dataverse és csatolása egy pénzügyi és műveleti alkalmazásból
 
-**A környezet leválasztához szükséges szerepkör: a** Dataverse Pénzügy és műveletek alkalmazás vagy a.
+**A környezet leválasztához szükséges szerepkör: a** Pénzügy és a Műveletek alkalmazás vagy Dataverse a.
 
 1. Jelentkezzen be a Pénzügy és műveletek alkalmazásba.
 2. Nyissa meg a **Munkaterületek \> Adatkezelés** pontot, és válassza a **Kettős írás** csempét.
@@ -132,23 +132,23 @@ Az **Adatok** űrlapbeállítás újbóli engedélyezéséhez kövesse az alább
 3. Válassza ki az **Adatok** űrlapot, és kattintson a **Biztonsági szerepkörök engedélyezése** pontra.
 4. Módosítsa a biztonsági beállítást: **Megjelenítés mindenkinek**.
 
-## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Hogyan lehet gondoskodni az adatintegrációról a legfrissebb pénzügyi és műveleti séma használatával?
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Hogyan lehet gondoskodni az adatintegrációról a legfrissebb pénzügyi és műveleti sémát használva?
 
-Ha nem használja a legfrissebb sémát, akkor adatintegrációja során problémákba okozhatja az adatintegráció. A következő lépések segítséget fognak tenni az entitáslista frissítésében a Pénzügy és műveletek alkalmazásokban, valamint az Adat integrátorban található entitások frissítésében.
+Ha nem használja a legfrissebb sémát, akkor adatintegrációja során problémákba okozhatja az adatintegráció. A következő lépések segítséget fognak tenni az entitáslista frissítésében a pénzügyek és műveletek alkalmazásában, valamint az adatentitásban található entitások frissítésében.
 
-### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Entitáslista frissítése a Pénzügyi és műveleti környezetben
-1.  Jelentkezzen be a Pénzügy és műveleti környezetbe.
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Entitáslista frissítése a pénzügyi és műveleti környezetben
+1.  Jelentkezzen be a pénzügyi és műveleti környezetbe.
 2.  Válassza ki **az Adatkezelést**.
 3.  Az Adatkezelési keretrendszeren belül válassza ki a **Keretrendszer paramétereit**.
 4.  Az Adatimportási **és -exportálási keretrendszer paraméterei** lapon jelölje **ki** az Entitásbeállítások lapot, és válassza az **Entitáslista frissítése lehetőséget**. Az érintett entitások számától függően a frissítés több mint 30 percig is eltarthat.
-5.  Nyissa meg az **Adatkezelést**, és válassza **ki az Adatentitások** listában a várt entitások érvényességét. Ha a várt entitások nincsenek felsorolva, ellenőrizze, hogy az entitások megjelennek-e a Pénzügyi és műveleti környezetben, és szükség szerint állítsa vissza a hiányzó entitásokat.
+5.  Nyissa meg az **Adatkezelést**, és válassza **ki az Adatentitások** listában a várt entitások érvényességét. Ha a várt entitások nincsenek felsorolva, ellenőrizze, hogy az entitások megjelennek-e a pénzügyi és műveleti környezetben, és szükség szerint állítsa vissza a hiányzó entitásokat.
 
 #### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Ha a frissítés nem oldja meg a problémát, törölje és adja hozzá újra az entitásokat.
 
 > [!NOTE]
 > Lehet, hogy le kell állítania minden olyan feldolgozási csoportot, amely aktív módon használja az entitásokat a törlés előtt.
 
-1.  Válassza **ki az adatkezelést** a Pénzügyi és műveleti környezetben, és válassza ki az **Adatentitásokat**.
+1.  Válassza **ki az adatkezelést** a pénzügyi és műveleti környezetben, és válassza ki az **Adatentitások lehetőséget**.
 2.  Problémákat okozható entitások keresése, valamint megjegyzés megadása a célentitásról, az előkészítő tábláról, az entitásnévről és egyéb beállításokról. Az entitás vagy entitások törlése a listából.
 3.  Válassza az **Új** lehetőséget, és adja hozzá újra az entitásokat a 2. lépésben származó adatok használatával. 
 
@@ -166,7 +166,7 @@ Előfordulhat, hogy a támogatási csapatnak át kell néznie a hálózati nyomv
 3. Futtassa a forgatókönyvet, és figyelje meg a naplózott kéréseket.
 4. Kattintson a jobb gombbal a bejegyzésekre, és válassza az **Összes mentése HAR-ként tartalommal** lehetőséget.
 
-### <a name="microsoft-edge-browser"></a>Microsoft Edge Böngésző
+### <a name="microsoft-edge-browser"></a>Microsoft Edge böngésző
 
 1. A megnyitott lapon nyomja meg az **F12** billentyűt, vagy válassza a **Fejlesztői eszközök** lehetőséget a fejlesztői eszközök megnyitásához.
 2. Nyissa meg a **Hálózat** lapot.
@@ -174,3 +174,4 @@ Előfordulhat, hogy a támogatási csapatnak át kell néznie a hálózati nyomv
 4. Az eredmények HAR-ként történő exportálásához válassza a **mentés** lehetőséget.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

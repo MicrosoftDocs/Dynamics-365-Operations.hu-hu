@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d2632ed1f5c733e45f5d927643bdaef430bc4009
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: 6d04ca43895935329b711f2658360c41f611975e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850409"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065464"
 ---
 # <a name="warehouse-location-status"></a>Raktár helyállapota
 
@@ -165,7 +165,7 @@ A példaforgatókönyvhöz két helyprofilt kell előkészíteni.
 1. Figyelje meg, hogy annak a helynek a **Helyállapot** mezője, ahonnan az értékesítési rendelési munka a kitárolást végezte, most *Kitárolás folyamatban* értékre van beállítva, és a **Legutóbbi tevékenység dátuma és időpontja** frissült.
 
 > [!NOTE]
-> A hely mezőit csak a raktári tranzakciók frissítik. Ha a készletet napló vagy más nem WHS-folyamatok segítségével helyezi át, a mezők nem frissülnek.
+> A hely mezőit csak a raktári tranzakciók frissítik. Ha a készletet napló vagy más nem WMS-folyamatok segítségével helyezi át, a mezők nem frissülnek.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

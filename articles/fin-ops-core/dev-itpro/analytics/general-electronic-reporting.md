@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869257"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109580"
 ---
 # <a name="electronic-reporting-er-overview"></a>Elektronikus jelentéskészítés (ER) áttekintése
 
@@ -66,7 +66,7 @@ Az ER jelenleg támogatja a TEXT, XML, JSON, PDF, Microsoft Word és Microsoft E
 
 Az ER motor a következő képességekkel rendelkezik:
 
-- Egyetlen megosztott eszközt képvisel a különböző tartományokban történő elektronikus jelentésekhez, és több mint 20 különböző motort helyettesít, amelyek az elektronikus jelentés valamely típusára képesek a Finance and Operations alkalmazásokban.
+- Közös eszközt jelent a különböző tartományokban történő elektronikus jelentéskészítéshez, és több mint 20 különböző motort cserél le, amelyek valamilyen típusú elektronikus jelentéseket és pénzügyi jelentéseket és műveleteket írnak le.
 - A jelentés formátumát elkülöníti jelenlegi megvalósítástól. Más szóval a formátum különböző verziókban is használható.
 - Támogatja egy egyéni formátum létrehozását, ami az eredeti formátumon alapul. Emellett képes automatikusan frissíteni az egyéni formátumot, ha változás történik az eredeti formátumban új honosítási/személyre szabási követelmények miatt.
 - Ez válik az elsődleges, szabványos eszközzé a honosítási követelmények támogatására az elektronikus jelentésekben, mind a Microsoft-nál, mind a Microsoft partnereinél.
@@ -126,7 +126,7 @@ Az ER-konfiguráció megosztásra kerül az alkalmazás vállalatok számára.
 
 #### <a name="provider"></a><a name="Provider"></a>Szolgáltató
 
-Az ER-szolgáltató az a félazonosító, amely az egyes ER-konfigurációk szerzőjét (tulajdonosát) meghatározza. ER segítségével kezelheti a konfigurációs szolgáltatók listáját. A Finance and Operations megoldás részeként kiadott elektromos dokumentumokra érvényes formátumkonfigurációk tulajdonosa a **Microsoft** konfigurációs szolgáltató.
+Az ER-szolgáltató az a félazonosító, amely az egyes ER-konfigurációk szerzőjét (tulajdonosát) meghatározza. ER segítségével kezelheti a konfigurációs szolgáltatók listáját. Az elektronikus dokumentumokhoz **a pénzügyi és műveleti megoldás részeként kiadott formátumkonfigurációk a Microsoft konfigurációs szolgáltató tulajdonában vannak**.
 
 Új ER-szolgáltató regisztrálási módjának megismeréséhez játssza le a feladat-útmutatót: **ER Konfigurációszolgáltató létrehozása és megjelölése aktívként** (a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamat része).
 
@@ -143,7 +143,7 @@ Egy ER tárház ER konfigurációkat tárol. A következő típusú ER tárháza
 
 Egy **LCS megosztott könyvtár** tár a megosztott eszköztárbó elérést biztosít a konfigurációk listájához a közös eszköz könyvtárban a Lifecycle Services (LCS) szolgáltatásban. Az ilyen típusú ER tárházat csak a Microsoft-szolgáltatóhoz lehet regisztrálni. Az LCS közös eszköz tárból importálhatja a legújabb verzióit az ER konfigurációknak az aktuális példányba.
 
-Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi példányból egy adott **LCS-projekt** tárházba. Az LCS-projekttárház **konfigurációit** is importálhatja a Pénzügy és műveletek alkalmazások aktuális példányába.
+Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi példányból egy adott **LCS-projekt** tárházba. Az LCS-projekttárház **konfigurációit** is importálhatja a pénzügyi és műveleti alkalmazások aktuális példányába.
 
 A **Fájlrendszer** adattár hozzáférést nyújt azokhoz a konfigurációk listájához, amelyek XML-fájlként a berendezés helyi fájlrendszerének meghatározott mappájában vannak, ahol az AOS szolgáltatást tárolják. A szükséges mappát az adattár regisztrációs fázisában választják ki. Importálhat továbbá konfigurációkat egy **Fájlrendszer** adattárból a jelenlegi példányba. 
 
@@ -270,3 +270,4 @@ A Finance megoldásban az ER-konfigurációk listája folyamatosan frissül. Nyi
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

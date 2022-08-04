@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874812"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111660"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Két írásos alkalmazás- és előírásos csomag elválasztása
 
@@ -26,14 +26,14 @@ ms.locfileid: "8874812"
 Korábban a Dual-write Application Orchestration csomag egy olyan csomag volt, amely a következő megoldásokat tartalmazza:
 
 - Dynamics 365 Megjegyzések
-- Dynamics 365 Pénzügy és Műveletek közös horgonya
-- Dynamics 365 Pénzügy és Műveletek – Két írásos entitás leképezés
+- Dynamics 365 – Pénzügy és műveletek – Közös horgony
+- Dynamics 365 Pénzügy és műveletek – Kettős írású entitás leképezés
 - Dynamics 365 eszközkezelési alkalmazás
 - Dynamics 365 Eszközkezelés
 - HCM Közös
 - Dynamics 365 Ellátási lánc kiterjesztve
 - Dynamics 365 Finance Extended
-- Dynamics 365 Pénzügy és Műveletek – Közös
+- Dynamics 365 – Pénzügy és műveletek – Közös
 - Dynamics 365 vállalat
 - Devizaárfolyamok
 - Field Service - általános
@@ -85,7 +85,7 @@ A kettős írású Emberi erőforrások csomag tartalmazza az emberi erőforrás
 |----------------------------|------------------------------------------|
 | HCMCommon                  | HCM Közös                               |
 | msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entitás-leképezések |
-| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources Horgony      |
+| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources horgony      |
 
 A következő térképeket tartalmazza ez a csomag.
 
@@ -247,7 +247,7 @@ A kettős írású Megjegyzések csomag tartalmazza azokat a megoldásokat és t
 
 A következő térképeket tartalmazza ez a csomag.
 
-| Finance and Operations                     | Customer Engagement |
+| Pénzügy és műveletek                     | Customer Engagement |
 |--------------------------------------------|---------------------|
 | Értékesítési rendelési fejléc bizonylatmellékletei    | Széljegyzetek         |
 | Vevői mellékletek                       | Széljegyzetek         |
@@ -344,3 +344,4 @@ A kettős írású fél és globális címjegyzék megoldásai a következő há
 - Két írásos Application Core csomag
 - Két írású pénzügyi csomag
 - Két írású ellátásilánc-csomag
+

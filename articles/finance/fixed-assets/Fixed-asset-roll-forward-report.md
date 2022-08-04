@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9adbf8f5baa829fb28977d618a4f8beee31ef080
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4d423b149957e624269231aede510190f0c14c7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870133"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068780"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Jelentés a tárgyi eszköz meghosszabbításáról
 
@@ -30,7 +30,7 @@ A **Tárgyi eszköz meghosszabbítása** jelentés egyszerűen áttekinthető a 
 
 A **Tárgyi eszköz meghosszabbítása** jelentés az Elektronikus jelentési (ER) keretrendszert használja. A jelentés futtatása előtt a tárgyi eszközök modelljét és tárgyi eszközök meghosszabbításának konfigurációit importálni kell a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-Ez a jelentés megtalálható a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójában, vagy gyorsjavításként a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017. júliusi) kiadásában. Három gyorsjavítást kell alkalmazni a 2017. júliusi kiadást futtató környezetekben:
+Ez a jelentés a Microsoft Dynamics 365 Pénzügy, Enterprise kiadás 7.3-as kiadásában vagy a Microsoft Dynamics 365 Pénzügy, Enterprise kiadás gyorsjavításaként érhető el (2017. július). Három gyorsjavítást kell alkalmazni a 2017. júliusi kiadást futtató környezetekben:
 
 - **KB 4041754:** Az elektronikus jelentési (ER) konfiguráció nem tölthető le az LCS-ből, mivel nem alkalmazhat az aktuális alkalmazásverzióra a platformfrissítő csomag telepítése után
 - **KB 4056107:** elektronikus jelentés (GER) 5-ös összegző frissítés
@@ -67,3 +67,4 @@ Az alábbi táblázat bemutatja a jelentésben rendelkezésre álló mezőket.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

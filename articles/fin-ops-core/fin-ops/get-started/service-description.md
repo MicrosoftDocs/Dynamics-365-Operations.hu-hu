@@ -1,6 +1,6 @@
 ---
-title: A Pénzügy és műveletek alkalmazás szolgáltatásleírása
-description: Ez a cikk a Pénzügy és Műveletek alkalmazások szolgáltatásleírását tartalmazza.
+title: Szolgáltatásleírás a Pénzügy és az Üzemeltetés alkalmazáshoz
+description: Ez a cikk a pénzügyi és műveletalkalmazások szolgáltatásleírását tartalmazza.
 author: tomhig
 ms.date: 04/27/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 756895ab0ccdbd2bc42f0a750ad9895ee7b284a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9e5160cc3961703475ffb8dc4a4daf2ae872aaba
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847160"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124925"
 ---
-# <a name="service-description-for-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazás szolgáltatásleírása
+# <a name="service-description-for-finance-and-operations-apps"></a>Szolgáltatásleírás a Pénzügy és az Üzemeltetés alkalmazáshoz
 
 [!include[banner](../includes/banner.md)]
 
-A Pénzügy és a Műveletek alkalmazások vállalati erőforrás-tervezési (Enterprise Resource Planning – ERP) szoftver szolgáltatásokként (Mellss) olyan szolgáltatások, amelyekre épülnek és használatban vannak [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/). A Pénzügyi és üzemeltetési szolgáltatás ERP-funkciókat biztosít a szervezeteknek, amelyek egyedi követelményeket támogatnak, és segítik őket az üzleti környezetek folyamatos változásában, az infrastruktúra kezelése nélkül. A Pénzügy és a Műveletek alkalmazások a következő megoldásterületeket tartalmazhatják:
+A Pénzügy és a Művelet alkalmazás a vállalat erőforrás-tervezési (ERP) szoftvere, amely szolgáltatásként (Mellss) nyújt olyan szolgáltatást, amely a vállalaton és a vállalat számára készült [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/). A pénzügyi és műveleti szolgáltatás ERP-funkciókat biztosít a szervezeteknek, amelyek egyedi követelményeiket támogatják, és segítik őket az folyamatosan változó üzleti környezetekhez való igazodásban, az infrastruktúra kezelése nélkül. A Pénzügyi és műveleti alkalmazások a következő megoldásterületeket tartalmazhatják:
 
 - [Dynamics 365 Finance](/dynamics365/finance/)
 - [Dynamics 365 Human Resources](/dynamics365/human-resources/)
@@ -32,21 +32,21 @@ Az [üzleti intelligenciával](/power-bi/fundamentals/power-bi-service-overview)
 
 - Beépített [személyre szabási felület](personalize-user-experience.md)
 - A [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) eszközei
-- [Visual Studio](https://visualstudio.microsoft.com)–alapú [Pénzügyi és Műveleti szoftverfejlesztői csomag (SDK) és](../../dev-itpro/dev-tools/developer-home-page.md) az automatizálás [Azure DevOps összeállítása](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
+- [Visual Studio](https://visualstudio.microsoft.com)–alapú [pénzügyi és műveleti szoftverfejlesztői csomag (SDK) és](../../dev-itpro/dev-tools/developer-home-page.md) az automatizálás [Azure DevOps összeállítása](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Független szoftvergyártói (ISV) megoldások az [AppSource](https://appsource.microsoft.com/partners)-tól
 
 A követelmények alapján a vevők saját megoldási módszerüket választják. A megvalósítási partnerükkel együttműködve meghatározzák, fejlesztik és tesztelik a megoldásukat a [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md) rendszerben biztosított eszközök és bevált gyakorlatok segítségével. Négy általános helyzet lehetséges:
 
-- A Standard Finance és a Operations alkalmazások "a dobozból kivetve" konfiguráció (nincs kiterjesztés)
-- A Pénzügyi és üzemeltetési alkalmazások egy vagy több ISV-megoldást tartalmazó konfigurációja
-- A Pénzügy és a Műveletek alkalmazás konfigurációja, amely egy vagy több vevőspecifikus bővítményt tartalmaz
-- A Pénzügy és a Műveletek alkalmazáskonfiguráció, amely vevőspecifikus bővítmények és egy vagy több isv-megoldás kombinációját tartalmazza
+- Szokásos pénzügyi és műveletalkalmazások "dobozon ki a dobozból" konfiguráció (nincs kiterjesztés)
+- Egy vagy több ISV-megoldást tartalmazó pénzügyi és műveletalkalmazás-konfiguráció
+- Egy vagy több vevőspecifikus bővítményt tartalmazó pénzügyi és műveleti alkalmazások konfigurációja
+- A pénzügyi és műveleti alkalmazások konfigurációja, amely vevőspecifikus bővítmények és egy vagy több isv-megoldás kombinációját tartalmazza
 
 A szervezetek követhetik az üzleti növekedésüket, hiszen egyszerűen adhatnak hozzá felhasználókat és üzleti folyamatokat egy egyszerű, transzparens előfizetési modellen keresztül. [A Dynamics 365 licencelési útmutató](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365) című témakörben olvashat bővebben.
 
 ## <a name="operating-model"></a>Minősítési modell
 
-A Pénzügyi és műveleti alkalmazások működési modellje a szolgáltatás teljes életciklusában meghatározza az ügyfél, a megvalósítási partner és a Microsoft számára meghatározott szerepköröket és felelősségeket. További tájékoztatás: [Felhőműveletek és szervizelés](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
+A pénzügyi és műveleti alkalmazások működési modellje határozza meg a vevő, a megvalósítási partner és a Microsoft számára meghatározott szerepköröket és felelősségeket a szolgáltatás életciklusában. További tájékoztatás: [Felhőműveletek és szervizelés](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
 
 ### <a name="customer-activities"></a>Ügyféltevékenységek
 
@@ -61,7 +61,7 @@ Az ügyfelek a [Dynamics 365](/dynamics365/fasttrack/) implementáció útmutat�
 
 ### <a name="microsoft-responsibilities"></a>Microsoft-felelősségi körök
 
-A Microsoft a Microsoft pénzügyi és műveleti szolgáltatásainak felügyeletére, aktív figyelésére és szervizelésére, valamint a Microsoft ElőfizetésS előfizetésben használt felhasználói és gyártási környezetek telepítésével, karbantartásával kezeli. Ez a kezelés magában foglalja a rendszerinfrastruktúra felosztását, amely a szolgáltatás futtatásához és az ügyfelekkel a szolgáltatás állapotáról való proaktív kommunikálásához szükséges. A feladatkörök a következők:
+A Microsoft a Microsoft Pénzügyi és Műveleti szolgáltatását a Microsoft Előfizetés előfizetési szolgáltatásának központi, aktív megfigyelésével és szervizelésével kezeli. Ez a kezelés magában foglalja a rendszerinfrastruktúra felosztását, amely a szolgáltatás futtatásához és az ügyfelekkel a szolgáltatás állapotáról való proaktív kommunikálásához szükséges. A feladatkörök a következők:
 
 **Infrastruktúra-kezelés**
 - Biztonság és elkülönítés
@@ -79,7 +79,7 @@ A Microsoft a Microsoft pénzügyi és műveleti szolgáltatásainak felügyelet
 
 ## <a name="system-configuration"></a>Rendszerkonfiguráció
 
-A Pénzügy és a Műveletek alkalmazások a tranzakció volumenének és a felhasználói terhelésnek megfelelően skáláznak. Minden ügyfél-megvalósítás egyedi megoldást kínál, amely a következő elemekből áll:
+A pénzügyi és a műveleti alkalmazások a tranzakció volumenének és a felhasználói terhelésnek megfelelően skáláznak. Minden ügyfél-megvalósítás egyedi megoldást kínál, amely a következő elemekből áll:
 
 - **Adatok összetétele** – a paraméterek egyedi halmaza, amely a működést, a szervezet elrendezését, az alapadatok szerkezetét (például pénzügyi és készletdimenziókat) és a tranzakciókövetés részletességét szabályozza.
 - **Kiterjesztés és konfigurálás** – a kódkiterjesztéseket használó bővítményi megchanizmusokat, ISV-megoldásokat és egyedi konfigurációkat, amelyek munkafolyamatokat, integrációkat és jelentéskonfigurációkat magukban foglalnak.
@@ -89,11 +89,11 @@ A Microsoft olyan működési környezeteket konfigurál, amelyek méretei a tra
 
 - Az erőforrások megfelelő felosztása a működési környezetekben, a vevő profilkészítési adatai alapján a [LCS előfizetés-becslésében](../../dev-itpro/lifecycle-services/subscription-estimator.md)
 - A működési környezetek szolgáltatás-elérhetőségének folyamatos figyelése és ellenőrzése
-- A Rendszer teljesítményével kapcsolatos problémák elemzése és hibaelhárítása a Pénzügy és a Műveletek alkalmazással
+- A rendszer pénzügyi és műveletalkalmazásokkal kapcsolatos teljesítményével kapcsolatos problémák elemzése és hibaelhárítása
 
 Annak biztosítására, hogy a megvalósítás nagy teljesítményre legyen konfigurálva, a vevőknek a következő feladatokat kell elvégezniük:
 
-- Az LCS-előfizetés becslésének Pénzügy [és Műveletek megvalósításával kapcsolatos pontos adatok szolgáltatása](../../dev-itpro/lifecycle-services/subscription-estimator.md).
+- Az LCS előfizetési becslésének pénzügyi [és műveleti megvalósításával kapcsolatos pontos használati információk szolgáltatása](../../dev-itpro/lifecycle-services/subscription-estimator.md).
 - Bővítmények létrehozása és tesztelése teljesítménnyel és skálázással kapcsolatban.
 - Az adatkonfigurációk megfelelő tesztelése a teljesítményhez.
 - A skálázhatóság biztosítása a [teljesítménytesztelés](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) segítségével használat előtt.
@@ -112,17 +112,17 @@ A további tudnivalókat lásd: [Előkészítés egy megvalósítási projekttel
 
 ## <a name="globalization"></a>Globalizáció
 
-A Pénzügy és a Műveletek alkalmazásokat a világ számos Azure-régiója szolgálja fel. A Pénzügy és a Műveletek alkalmazások olyan funkciókat kínálnak, amelyek a különböző országokat/régiókat és anyanyelveket támogatják. További információ: [Honosítási és a szabályozási funkciók](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features).
+A pénzügyi és műveleti alkalmazások a világ számos Azure-régiójából szolgálnak ki. A Pénzügyi és műveleti alkalmazások olyan funkciókat kínálnak, amelyek a különböző országokat/régiókat és anyanyelveket támogatják. További információ: [Honosítási és a szabályozási funkciók](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features).
 
 ### <a name="countryregion-specific-considerations"></a>Ország- vagy régióspecifikus szempontok
 
-- A szabályozott iparágban vagy [kereskedelmi szervezetekben található olyan vevőknek, akik franciaországi entitásokkal üzleti kapcsolatban vannak, és ahol helyi adatokat kell rendelkezésre álltataik, át kell vizsgálniuk a Franciaországi Pénzügy és műveleteket](../../dev-itpro/deployment/france-local-deployment.md).
+- A szabályozott iparágban vagy [kereskedelmi szervezetekben található olyan vevőknek, akik franciaországi entitásokkal üzleti kapcsolatban vannak, és ahol helyi adatokat kell rendelkezésre álltataik, át kell vizsgálniuk a Pénzügy és a Franciaországi műveleteket](../../dev-itpro/deployment/france-local-deployment.md).
 - A kínai műveletekkel [működő vevőknek át kell vizsgálniuk az Azure kínai](/azure/china/)[forgatókönyvet és pénzügyet, valamint a kínai 21Vianet által működtetett műveleteket](../../dev-itpro/deployment/china-local-deployment.md).
 - Az Oroszországban üzletet folytató ügyfelek tekintsék át: [Oroszorszégi személyesadat-honosítással kapcsolatos törvény](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Általános adatvédelmi rendelet (GDPR)
 
-A Microsoft a Pénzügy és az Üzemeltetés alkalmazásnál feldolgozóként működik. A Pénzügy és műveletek adatfeldolgozóként olyan folyamatokat és szolgáltatásokat tartalmaz, amelyek segítik a vevőket a GDPR-kötelezettségeknek mint kontrollernek való megfelelésben. További információ: [GDPR áttekintése](../../dev-itpro/gdpr/gdpr-guide.md).
+A Microsoft a pénzügyek és a műveletek alkalmazásait feldolgozóként működik. A pénzügy és a műveletek adatfeldolgozóként olyan folyamatokat és szolgáltatásokat tartalmaznak, amelyek segítik a vevőket a GDPR-kötelezettségeknek mint kontrollernek való megfelelésben. További információ: [GDPR áttekintése](../../dev-itpro/gdpr/gdpr-guide.md).
 
 ## <a name="environment-and-data-management"></a>Környezet és adatkezelés
 
@@ -182,7 +182,7 @@ Az LCS [önkiszolgáló üzembe helyezést](../../dev-itpro/deployment/infrastru
 
 ## <a name="data-backup-and-retention"></a>Adatok biztonsági mentése és megőrzése
 
-A Pénzügyi és Üzemeltetési környezetek adatbázisai a Előfizetések előfizetésben automatikus biztonsági másolatokkal védettek. Éles környezetben az automatikus biztonsági másolatok 28 napig megmaradnak, hacsak a Microsoft nem végez visszaállítást. A teszt- (2. szintű) környezetek esetén 7 napig tárolják őket. A működési környezet visszaállítása akkor következhet be, ha a tervezett karbantartási frissítések során hiba történik.
+A Pénzügyi és műveleti környezetek adatbázisai a Előfizetések előfizetésben automatikus biztonsági másolatokkal védettek. Éles környezetben az automatikus biztonsági másolatok 28 napig megmaradnak, hacsak a Microsoft nem végez visszaállítást. A teszt- (2. szintű) környezetek esetén 7 napig tárolják őket. A működési környezet visszaállítása akkor következhet be, ha a tervezett karbantartási frissítések során hiba történik.
 
 Az automatikus biztonsági mentésekkel kapcsolatos további tudnivalókat lásd: [Automatikus biztonsági másolatok – Azure SQL-adatbázis & SQL-kezelt példány](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -228,9 +228,9 @@ A következő táblázat a szolgáltatásra jellemző helyzeteket és tevékenys
 
 ## <a name="service-update-strategy"></a>Szolgáltatásfrissítési stratégia
 
-A szoftver [életciklusára](../../dev-itpro/migration-upgrade/versions-update-policy.md) vonatkozó házirendnek megfelelően a Pénzügy és a Művelet alkalmazásai a Microsoft [Modern Lifecycle Irányelv](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy) hatálya alá tartoznak, amely a folyamatos szervizelt és támogatott termékeket foglalja magában. 
+A szoftver [életciklusára](../../dev-itpro/migration-upgrade/versions-update-policy.md) vonatkozó házirendnek megfelelően a pénzügy és az üzemeltetés alkalmazásai a Microsoft [Modern Lifecycle Irányelv](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy) hatálya alá tartoznak, amely a folyamatos szervizelt és támogatott termékeket foglalja magában. 
 
-A Microsoft a következő hónapokban nyolc szolgáltatásfrissítést ad ki a Pénzügy és az Üzemeltetés alkalmazásba:
+A Microsoft a következő hónapokban nyolc szolgáltatásfrissítést ad ki pénzügyi és műveleti alkalmazásokba:
 
 - január
 - február
@@ -255,7 +255,7 @@ További információért tekintse át az alábbi témaköröket:
 
 ## <a name="security-and-administrative-access"></a>Biztonság és adminisztratív hozzáférés
 
-A pénzügyek és műveletek termelési környezetéhez való adminisztratív hozzáférés szigorúan ellenőrzött és naplózott. Az ügyféladatok kezelése a [Microsoft Online szolgáltatásainak feltételeivel](https://www.microsoft.com/licensing/terms/productoffering) egyetértésben történik. 
+A pénzügyi és műveleti termelési környezetek felügyeleti hozzáférése szigorúan ellenőrzött és naplózott. Az ügyféladatok kezelése a [Microsoft Online szolgáltatásainak feltételeivel](https://www.microsoft.com/licensing/terms/productoffering) egyetértésben történik. 
 
 ### <a name="customer-administrative-access"></a>Ügyfél rendszergazdai hozzáférése
 
@@ -264,7 +264,7 @@ Az ügyfél bérlő-rendszergazdája hozzáférhet működési példányokhoz va
 | Környezet típusa | Alkalmazás célja | A vevői hozzáférés szintje |
 |---|---|---|
 | **Nem működési**<br>1. szintű tesztkörnyezet | Nem működési környezet, amelyet a vevők helyeznek üzembe fejlesztési, bemutatási vagy képzési célból. | Az 1. szintű tesztkörnyezet (más néven felhőben tárolt környezet) egy ügyfél által kezelt VM, amely a vevő Azure-előfizetésére telepítve van az LCS-ről. Mivel ez egy virtuális gép az ügyfél Azure-előfizetésében, az ügyfél teljes rendszergazdai hozzáféréssel rendelkezik a környezethez a távoli asztalon keresztül. |
-| **Nem működési**<br>2. (vagy magasabb) szintű tesztkörnyezet | Nem működési környezet, amelyet a vevők által a felhasználói elfogadás tesztelésére, integrációs tesztelésre, képzésre, előkészítésre vagy bármilyen más, éles üzem előtti helyzetre telepítik. | A 2. szint és a magasabb szintű mező a Pénzügy és műveletek – Előfizetések szolgáltatásba van telepítve. A nem működési környezethez társított Azure SQL-adatbázisokhoz való hozzáférést az [igény szerinti hozzáféréssel](../../dev-itpro/database/database-just-in-time-jit-access.md) biztosítják. A távoli asztali hozzáférés nem érhető el. |
+| **Nem működési**<br>2. (vagy magasabb) szintű tesztkörnyezet | Nem működési környezet, amelyet a vevők által a felhasználói elfogadás tesztelésére, integrációs tesztelésre, képzésre, előkészítésre vagy bármilyen más, éles üzem előtti helyzetre telepítik. | A 2. szint és a magasabb szintű mező a pénzügyi és műveleti Előfizetések mezőbe van telepítve. A nem működési környezethez társított Azure SQL-adatbázisokhoz való hozzáférést az [igény szerinti hozzáféréssel](../../dev-itpro/database/database-just-in-time-jit-access.md) biztosítják. A távoli asztali hozzáférés nem érhető el. |
 | **Termelés** | A működési környezet akkor telepíthető, ha a projekt [készen áll a kezdeti éles használatra](../imp-lifecycle/environment-planning.md#production-system-readiness). | A működési környezeteket a SaaS előfizetésre telepítik. Minden hozzáférés a böngészőn, a szolgáltatásvégpontokon vagy az LCS-n keresztüli elérést biztosít. |
 
 ### <a name="microsoft-administrative-access"></a>Microsoft adminisztratív hozzáférés
@@ -296,7 +296,7 @@ A súlyossági szintekkel kapcsolatos további tudnivalókat lásd [ebben a súl
 
 ## <a name="business-continuity-through-high-availability-and-disaster-recovery"></a>Üzletmenet-folytonosság a magas rendelkezésre állás és a vészhelyreállítás révén 
 
-A Microsoft az Azure-régióra kiterjedő kiszélesedés esetén biztosítja az üzleti folytonosság és a természeti erőforrások ki-visszaszerzését a Pénzügyi és üzemeltetési alkalmazások termelési példányai számára. A további tudnivalókat, többek között a szolgáltatás-visszaállítási idő célkitűzését (RTO) és a visszatérítésipont-célkitűzést lásd az Üzleti [folytonosság és a természetimedensség-visszaszerzés szempontjából](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
+A Microsoft az Azure-régióra vonatkozó teljes kiesés esetén biztosítja az üzleti folytonosság és a természeti erőforrások ki-visszaszerzését a pénzügyi és műveleti alkalmazások termelési példányai számára. A további tudnivalókat, többek között a szolgáltatás-visszaállítási idő célkitűzését (RTO) és a visszatérítésipont-célkitűzést lásd az Üzleti [folytonosság és a természetimedensség-visszaszerzés szempontjából](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
 
 - **Magas rendelkezésre állás** – a HA-funkciók segítségével megakadályozhatja az üzemkimaradást, amelyet az Azure-adatközpont egyetlen csomópontjának hibája okozott. Minden egyes szolgáltatás felhőarchitektúrája az Azure rendelkezésre állási csoportját használja a szint kiszámításához, hogy megakadályozza az egy pontból fakadó hibák eseményeit. Az adatbázisok HA szolgáltatását az [Azure SQL HA szolgáltatásain](/azure/azure-sql/database/high-availability-sla) keresztül biztosítják.
 - **Vészhelyreállítás** – [Azure vészhelyreállítási funkciói](/azure/best-practices-availability-paired-regions) védik az egyes szolgáltatásokat az olyan kimaradásokkal szemben, amelyek egy teljes Azure-adatközpontot érinthetnek. Az alábbiakban látható néhány ilyen funkció:
@@ -307,17 +307,17 @@ A Microsoft az Azure-régióra kiterjedő kiszélesedés esetén biztosítja az 
 
 Ha az ügyfél működési példányát vészhelyreállítás segítségével állították helyre, a Microsoft és az ügyfél megfelelnek az [esetkezelési](service-description.md#incident-management) felelősségi körüknek.
 
-A Microsoft vészhelyreállítási terveit és eljárásait rendszeresen ellenőrzik rendszer- és szervezetellenőrzések (SOC) vizsgálataival. Ezek a megfelelési ellenőrzések a Microsoft DR- és folyamatának, köztük a Dynamics 365 Pénzügyi és Üzemeltetési alkalmazásoknak a műszaki és eljárásbeli folyamatát igazolják. Az [SOC-megfelelőségi](/compliance/regulatory/offering-soc-2) vizsgálat jelentései és az összes többi megfelelőségi jelentés megtalálható a [Microsoft megbízhatósági központ megfelelőségi szolgáltatáscsomagjában](/compliance/regulatory/offering-home).
+A Microsoft vészhelyreállítási terveit és eljárásait rendszeresen ellenőrzik rendszer- és szervezetellenőrzések (SOC) vizsgálataival. Ezek a megfelelési ellenőrzések a Microsoft DR - így a Dynamics 365 pénzügy- és műveleti alkalmazások - műszaki és eljárásbeli folyamatát zák. Az [SOC-megfelelőségi](/compliance/regulatory/offering-soc-2) vizsgálat jelentései és az összes többi megfelelőségi jelentés megtalálható a [Microsoft megbízhatósági központ megfelelőségi szolgáltatáscsomagjában](/compliance/regulatory/offering-home).
 
-## <a name="finance-and-operations-support-offerings"></a>Pénzügyi és műveleteket támogató kínálatok
+## <a name="finance-and-operations-support-offerings"></a>Pénzügyi és művelettámogatási kínálatok
 
-A technikai támogatás olyan piacokon érhető el, ahol a Pénzügyi és Az Üzemeltetés szolgáltatások érhetők el. [A támogatási tapasztalatok](../../dev-itpro/lifecycle-services/lcs-support.md) az LCS vagy a Pénzügy és a Műveletek alkalmazásokban biztosítanak. Íme néhány példa:
+A technikai támogatás olyan piacokon érhető el, ahol pénzügyi és műveletszolgáltatásokat kínálnak. [A támogatási tapasztalatok](../../dev-itpro/lifecycle-services/lcs-support.md) az LCS- vagy a pénzügy- és a műveletalkalmazásokban biztosítanak. Íme néhány példa:
 
 - [Megoldáskereső](../../dev-itpro/lifecycle-services/issue-search-lcs.md) az LCS-ben
-- [Integrált műszaki támogatás a](../../dev-itpro/lifecycle-services/support-experience.md) Pénzügy és az Üzemeltetési alkalmazásokban
+- [Integrált technikai támogatás a](../../dev-itpro/lifecycle-services/support-experience.md) pénzügy és az üzemeltetés alkalmazásában
 - [Felhő alapú támogatás](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md) az LCS-ben
 
-A Microsoft három támogatási tervet kínál a Pénzügy és az Operations ügyfélnek: Előfizetés, Professional Direct, valamint az előfizetésben foglalt támogatás. A támogatás szintje tervenként eltérő. Az alábbi táblázat a három csomag összehasonlítását mutatja be.
+A Microsoft három támogatási tervet kínál a pénzügyekkel és a műveletekkel kapcsolatban a vevőknek: Előfizetés, Professional Direct, valamint az előfizetésben foglalt támogatás. A támogatás szintje tervenként eltérő. Az alábbi táblázat a három csomag összehasonlítását mutatja be.
 
 | Támogatási funkció | Premier | Professzionális közvetlen | Előfizetés |
 |---|---|---|---|
@@ -332,7 +332,7 @@ A további tudnivalókat lásd: [Támogatás áttekintése](/power-platform/admi
 
 ### <a name="process-to-engage-support"></a>Támogatáshoz való tevékenység folyamata
 
-A Pénzügy és a Műveletek alkalmazással kapcsolatos események esetén az ügyfelek támogatási jegyeket küldnek a Microsoftnak az LCS-n keresztül. A CSS kezeli az incidenst az ügyfél támogatási csomagja szerint, valamint az incidens súlyosságát, amit a CSS állapított meg.
+Pénzügyi és műveleti alkalmazásokkal kapcsolatos események esetén az ügyfelek támogatási jegyeket küldnek a Microsoftnak az LCS-n keresztül. A CSS kezeli az incidenst az ügyfél támogatási csomagja szerint, valamint az incidens súlyosságát, amit a CSS állapított meg.
 
 ### <a name="service-level-agreement"></a>Szolgáltatásiszint-szerződés
 
@@ -340,7 +340,7 @@ A Microsoft elkötelezett a szolgáltatás havonta 99,9 százalékos elérhetős
 
 ## <a name="important-resources"></a>Fontos erőforrások
 
-- **[Trust Center](https://www.microsoft.com/trust-center)** – Információk a Pénzügy és műveletek adatainak tárolód helyével kapcsolatban, valamint további információk az adatvédelmi, megfelelési és biztonsági eljárásokról.
+- **[Trust Center](https://www.microsoft.com/trust-center)** – információk a pénzügyi adatok és műveletek adatainak tárolód helyével kapcsolatban, valamint további információk az adatvédelmi, megfelelési és biztonsági eljárásokról.
 - **[Licencelési feltételek és dokumentáció](https://www.microsoftvolumelicensing.com/)** – Gyorsan hozzáférhet a licencelési feltételekhez és kiegészítő információkhoz, amelyek a Microsoft mennyiségi licencelési programokon keresztül licencelt termékek és szolgáltatások használatával kapcsolatosak.
 - **[Licencelési feltételek](https://www.microsoft.com/licensing/product-licensing/)** – Az ezen a lapon található erőforrások határozzák meg a Microsoft kereskedelmi licencprogramjaival vásárolt szoftveres és online szolgáltatási termékeire vonatkozó feltételeket.
 - **[Microsoft-életciklus-irányelv](/lifecycle/)** – ez a lap egységes és kiszámítható útmutatást ad a támogatás elérhetőségére vonatkozóan a termék élettartama során.
@@ -357,7 +357,7 @@ Olyan földrajzi terület, ahol egy vagy több Azure-adatközpont létezik. Ilye
 
 ### <a name="business-process-modeler-bpm"></a>[Üzletifolyamat-modellező (BPM)](../../dev-itpro/lifecycle-services/bpm-overview.md)
 
-Az LCS-t használó eszköz, amely az Amerikai Termelékenység & Quality Center (APQC) üzleti folyamatdefiníciói segítségével segít az adott megvalósítások hiányának elemzésében, amelyet a Pénzügy és műveletek alkalmazások támogatnak.
+Az LCS-t használó eszköz, amely a pénzügyi és műveleti alkalmazások által támogatott üzleti folyamatok meghatározásai segítségével segít az adott megvalósítások hiányának elemzésében.
 
 ### <a name="cloud-solution-provider"></a>Felhőalapú megoldásszolgáltató
 
@@ -365,7 +365,7 @@ A Microsoft Felhőalapú megoldásszolgáltatói (CSP) program partneri tagja, a
 
 ### <a name="customer"></a>Vevő
 
-Az az üzleti entitás, amely a Pénzügy és a Műveletek alkalmazásokat felhasználja, és a szervezetben egy bérlő képviseli Office 365.
+Az az üzleti entitás, amely pénzügyi és műveleti alkalmazásokat használ, és amelyet a bérlő képvisel a szervezetben Office 365.
 
 ### <a name="development-environment"></a>Fejlesztői környezet
 
@@ -377,19 +377,19 @@ Bármely időszak, amikor a felhasználók nem jelentkezhetnek be és nem férhe
 
 ### <a name="implementation-partner"></a>Megvalósítási partner
 
-Az a partner, amely a vevő által kiválasztott pénzügyi és műveleti megoldások testreszabása, konfigurálása, megvalósítása és kezelése.
+Az a partner, amely a vevő által kiválasztott pénzügyi és működési megoldások testreszabása, konfigurálása, megvalósítása és kezelése.
 
 ### <a name="incident"></a>Esemény
 
-Olyan probléma, amely akkor jelentkezik a vevők számára, amikor a Pénzügy és művelet szolgáltatást használják, és amelyért az LCS-en keresztül küldik el a jegyeket.
+Olyan probléma, amely akkor jelentkezik a vevők számára, amikor a pénzügyi és az üzemeltetési szolgáltatást igénybe vesznek, és amelyért az LCS-en keresztül küldik el a jegyeket.
 
 ### <a name="microsoft-customer-support-services-css"></a>Microsoft ügyféltámogatási szolgáltatások (CSS)
 
-A Microsoft globális támogatási csapata, amely a Pénzügyi és Üzemeltetési alkalmazások minőségi szolgáltatásának nyújtásáért van elhiva.
+A Microsoft globális támogatási csapata, amely a pénzügyi és műveletalkalmazások minőségi szolgáltatásának nyújtását biztosítja.
 
 ### <a name="microsoft-dynamics-lifecycle-services-lcs"></a>Microsoft Dynamics Lifecycle Services (LCS)
 
-A Pénzügy és művelet alkalmazások életciklus-kezelési portálja a próbaidőszaktól a megvalósításig, a termelés utáni vezetésig és támogatásig. További tudnivalókért lásd: [Lifecycle Services-erőforrások](../../dev-itpro/lifecycle-services/lcs.md).
+A pénzügyek és műveletalkalmazások életciklus-kezelési portálja a próbaidőszaktól a megvalósításig, a termelés utáni vezetésig és támogatásig. További tudnivalókért lásd: [Lifecycle Services-erőforrások](../../dev-itpro/lifecycle-services/lcs.md).
 
 ### <a name="non-production-instance"></a>Nem-működési példány
 
@@ -403,7 +403,7 @@ A 2–5. szintekkel kapcsolatos további tudnivalókat lásd: [A megfelelő 2. v
 
 ### <a name="production-instance"></a>Működési példány
 
-Pénzügyi és műveleti környezet, amely a vevő által az "élő" napi tranzakciók és üzleti folyamatok kezelésére használ.
+Olyan pénzügyi és műveleti környezet, amely az ügyfél napi tranzakcióinak és üzleti folyamatainak kezelésére használja az ügyfelet.
 
 ### <a name="sandbox-environment"></a>Tesztkörnyezet
 
@@ -411,7 +411,7 @@ Nem működési környezet, amelyet a vevő használ bemutatói, képzési, felh
 
 ### <a name="service"></a>Szolgáltatás
 
-A Pénzügy és műveletek alkalmazásokban található alapvető szolgáltatások bármelyike.
+A pénzügyi és üzemeltetési alkalmazásokban található alapvető szolgáltatások bármelyike.
 
 ### <a name="service-level-agreement-sla-for-microsoft-online-services"></a>Szolgáltatásiszint-szerződés (SLA) a Microsoft online szolgáltatásaihoz
 
@@ -419,7 +419,7 @@ A SLA a Microsoft online szolgáltatásaira vonatkozik. További információké
 
 ### <a name="service-update"></a>Szolgáltatásfrissítés
 
-A Microsoft services Finance és a Operations környezetei egységesen, szolgáltatásfrissítések segítségével. Az ügyfelek az üzleti igényeiknek megfelelően saját szolgáltatásfrissítési naptárat állíthatnak be. További információk: [Egyverziós szolgáltatásfrissítések](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+A Microsoft szolgáltatások pénzügyi környezetei és működési környezetei a szolgáltatásfrissítések révén egységesek. Az ügyfelek az üzleti igényeiknek megfelelően saját szolgáltatásfrissítési naptárat állíthatnak be. További információk: [Egyverziós szolgáltatásfrissítések](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
 
@@ -427,4 +427,5 @@ Ez a keretrendszer a kritikus szakaszokban végzett végrehajtáson keresztül m
 
 ### <a name="user"></a>Felhasználó
 
-Egyetlen személy, aki a pénzügyek és a műveletek környezetét használja, és aki a vevő bérlője.
+Egyetlen személy, aki pénzügyi és műveleti környezeteket használ, és aki a vevő bérlője.
+

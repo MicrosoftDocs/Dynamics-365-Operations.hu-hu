@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d0f0e44cfafec722f6eed3d18ba8be4739be30c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 881c3c4aa655a5ad30adffce108ba2fc3e6691c5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900680"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070409"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
@@ -82,7 +82,7 @@ Ha a tényleges súlyt a csomagolási állomáson a tároló csomagolási folyam
 > [!NOTE]
 > Mivel a **Csomagolás** beállítás azt eredményezi, hogy a készletet az átlagos kitárolt súllyal kell frissíteni, ez olyan eltérést idézhet elő, amely a ténylegessúly-nyereségi/-veszteségi kiigazítást és/vagy a tényleges készletsúly és a ténylegessúly-címke által megadott súly közti különbséget eredményezhet.
 
-A belső raktárkezelési folyamatok esetén, pl. a leltár és a kiigazítási javítások, meg lehet határozni, hogy a súlyt kell-e rögzíteni, vagy sem. Ha nem rögzítik, a névleges tömeg lesz használva. A többi beállítással a súlyt ténylegessúly-egység és leltározási mennyiség alapján lehet rögzíteni.
+Belső folyamatoknál, például a leltározáskor és a helyesbítéskorrekcióknál meg lehet határozni, hogy a súlyt meg kell-e határozni. Ha nem rögzítik, a névleges tömeg lesz használva. A többi beállítással a súlyt ténylegessúly-egység és leltározási mennyiség alapján lehet rögzíteni.
 
 Megadhatja, hogyan rögzítésék a súlyt. A két fő folyamat egyikében a ténylegessúly-címkéket követik nyomon, és a súly rögzítéséhez használják. A másik folyamatban a tényleges súly címkékez nem követik nyomon.
 
@@ -183,7 +183,7 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Egyéb korlátozások és a viselkedések a tényleges súllyal megadott termékek feldolgozásához raktárkezelés használatával
 
 - Kitárolási folyamatok során, amelyen a felhasználót a rendszer nem kéri nyomon követési dimenziók meghatározására, a súly hozzárendelését az átlagos tömeg alapján végzik. Ez a viselkedés akkor fordul elő, amikor például nyomon követési dimenziók egy kombinációját használják ugyanazon a helyen, és miután a felhasználó feldolgozza a kitárolást, csak egy nyomon követési dimenzióérték marad az adott helyen.
-- Ha a készlet le van foglalva a tényleges súllyal rendelkező termék számára, amelyet a raktárkezelési folyamatokhoz konfiguráltak, a foglalás a meghatározott minimális súly alapján történik, akkor is, ha ez a mennyiség az aktuális utolsó kezelési mennyiség. Ez a viselkedés eltér az olyan cikkek viselkedésétől, amelyeket a raktárkezelési folyamatokhoz nem konfiguráltak. Erre a korlátozásra egyetlen kivétel vonatkozik. Termelési kitárolás esetén, amikor a tényleges súllyal rendelkező termék utolsó, sorozatszámmal szabályozott mennyiségét is kitárolják, a rendszer a tényleges súlyt használja.
+- Ha a készletet olyan tényleges ssúlyos termékhez foglalják le, amely a raktárkezelési folyamatokhoz van beállítva, a foglalás a meghatározott minimális súly alapján történik, még akkor is, ha ez a mennyiség az aktuális készlet utolsó kezelési mennyisége. Ez a viselkedés eltér a WMS-hez nem konfigurált cikkek viselkedéstől. Erre a korlátozásra egyetlen kivétel vonatkozik. Termelési kitárolás esetén, amikor a tényleges súllyal rendelkező termék utolsó, sorozatszámmal szabályozott mennyiségét is kitárolják, a rendszer a tényleges súlyt használja.
 - Azok a folyamatok, amelyek a súlyt kapacitásszámítás részeként használják (hullám küszöbértékei, munka maximális szünetek, tároló maximumok, hely terhelési kapacitásai stb.) nem használják a készlet tényleges súlyát. Ehelyett a folyamatok a termékhez meghatározott fizikai kezelési súlyon alapulnak.
 - Általánosságban a tényleges súllyal rendelkező termékek esetén a kereskedelmi funkció nem támogatott.
 - A tényleges súly szerinti termékek esetében a készlet állapota nem frissíthető a **Raktári állapot változása** alapján.

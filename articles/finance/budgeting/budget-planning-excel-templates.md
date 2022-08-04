@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8996ad5d03327b9273be7860a3905dc25efa7e90
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872499"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070664"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Költségvetés-tervezési sablonok az Excel programhoz
 
@@ -79,7 +79,7 @@ A kiválasztott mezőcsoport megjeleníti a sablonban elérhető oszlopokat. Kat
 [![Oszlop hozzáadása és beszúrása.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> A képlet megadásához hozza létre a képletet a táblázatban, majd másolja a **Tervezés** ablakba. A Finance and Operationshöz kapcsolt táblák neve általában „AXTable1”. Például az 1. n.évi kérelem : 4. n.évi kérelem oszlopok a táblázatban való összegzésére szolgáló képlet = AxTable1\[1. n.évi kérelem\]+AxTable1\[2. n.évi kérelem\]+AxTable1\[3. n.évi kérelem\]+AxTable1\[4. n.évi kérelem\].
+> A képlet megadásához hozza létre a képletet a táblázatban, majd másolja a **Tervezés** ablakba. A pénzügyek és műveletek kötött tábláit általában "AXTable1" névvel kell kikötni. Például az 1. n.évi kérelem : 4. n.évi kérelem oszlopok a táblázatban való összegzésére szolgáló képlet = AxTable1\[1. n.évi kérelem\]+AxTable1\[2. n.évi kérelem\]+AxTable1\[3. n.évi kérelem\]+AxTable1\[4. n.évi kérelem\].
 
 Ismételje meg ezeket a lépéseket a **Kiigazítás** oszlop beillesztéséhez. Ennél az oszlopnál használja az = AxTable1\[Teljes kérelem\]\*$I$1 képletet. Ez veszi az I1 cella értékét, és megszorozza **Teljes kérelem** oszlop értékeit a helyesbítési összegek kiszámításához.
 
@@ -129,3 +129,4 @@ Emellett létrehozhatók és használhatók kimutatások és diagramok a költs�
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

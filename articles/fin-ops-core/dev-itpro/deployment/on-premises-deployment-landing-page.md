@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87bab110d99bd756038b9f556aa15ed9fd02fb97
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867412"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103972"
 ---
 # <a name="on-premises-deployment-home-page"></a>Helyszíni telepítés kezdőlapja
 
@@ -53,7 +53,7 @@ Telepítheti Dynamics 365 Finance + Operations (on-premises). Amikor egy on-prem
 - [Elektronikus jelentéskészítési (ER) konfigurációk importálása](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentumok létrehozása, közzététele és nyomtatása helyszíni telepítéseknél](../analytics/printing-capabilities-on-premises.md)
 - [Proxyk konfigurálása a helyszíni környezetekhez](onprem-reverseproxy.md)
-- [Műszaki támogatás beállítása a Finance and Operations alkalmazásokhoz](../lifecycle-services/support-experience.md)
+- [Pénzügyi és műveletalkalmazások technikai támogatásának beállítása](../lifecycle-services/support-experience.md)
 - [Kliens internetkapcsolata](../user-interface/client-disconnected.md)
 - [Frissítések alkalmazása helyszíni telepítésekhez](apply-updates-on-premises.md)
 - [Helyszíni környezetek ismételt telepítése](redeploy-on-prem.md)
@@ -73,9 +73,10 @@ Telepítheti Dynamics 365 Finance + Operations (on-premises). Amikor egy on-prem
 - [Forgatókönyvek a helyszíni környezetekben felmerült problémák megoldásához](onprem-tsg-implementations.md)
 - [Tanúsítványváltás](certificate-rotation-on-prem.md)
 - [Helyszíni diagnosztika](on-premises-diagnostics.md)
-- [Eltávolított vagy elavult szolgáltatások a Finance and Operations megoldásban](../migration-upgrade/deprecated-features.md)
+- [A pénzügyek és műveletek eltávolított vagy elavult funkciói](../migration-upgrade/deprecated-features.md)
 - [A szoftver életciklusára vonatkozó irányelv és a helyszíni kiadások](../migration-upgrade/on-prem-version-update-policy.md)
  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

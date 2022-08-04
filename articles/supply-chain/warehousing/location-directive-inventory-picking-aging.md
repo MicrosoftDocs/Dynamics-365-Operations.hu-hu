@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885696"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068670"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Helyutasítás – készletkitárolás korosítása
 
@@ -82,7 +82,7 @@ A demo adatokhoz beállítás és készletkorrekciók szükségesek a helyzetek 
 
 1. Az **OK** gombra kattintva alkalmazza a beállításokat, és zárja be a lekérdezési párbeszédpanelt.
 1. A helyutasítás módosításainak mentéséhez válassza a **Mentés** elemet.
-1. Egy mobileszközön vagy a *Dynamics 365 for Finance and Operations – Raktározás* alkalmazásban számítógépén következő lépésekkel távolítsa el a meglévő készletet a raktári helyről, hogy támogassa a forgatókönyveket:
+1. Egy mobileszközön vagy a *Dynamics 365 Supply Chain Management – Raktározás* alkalmazásban számítógépén következő lépésekkel távolítsa el a meglévő készletet a raktári helyről, hogy támogassa a forgatókönyveket:
 
     1. Jelentkezzen be a mobileszközön az *63-as* raktárba a megfelelő felhasználói azonosító és jelszó használatával.
     1. Válassza a főmenü **Minőség** elemét.

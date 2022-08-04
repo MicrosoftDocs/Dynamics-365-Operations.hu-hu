@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855932"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070319"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
@@ -56,7 +56,7 @@ A következő ábra a beszerzésirendelési-mennyiséggel rendelkező bejövő r
 
 ## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>Bejövő rakománnyal érkező cikkmennyiség regisztrálása
 
-A Microsoft Dynamics 365 Supply Chain Management számos operatív megközelítést támogat a megrendelt termékek érkezésének regisztrálásához. Így a rendszer beállítható úgy, hogy megfeleljen a specifikus üzleti követelményeknek. Ez a szakasz bemutatja, hogyan regisztrálhatók a bejövő cikkmennyiség egy mobileszköz használatával, amikor a speciális raktárkezelés be van kapcsolva a rendszerben. Azonban van egy alternatív folyamat, amely a mobileszköz helyett a cikkérkezési-napló használatán alapul. Ezen folyamattal kapcsolatos további információért lásd: [Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával](tasks/register-items-advanced-warehousing.md).
+A Microsoft Dynamics 365 Supply Chain Management számos operatív megközelítést támogat a megrendelt termékek érkezésének regisztrálásához. Így a rendszer beállítható úgy, hogy megfeleljen a specifikus üzleti követelményeknek. Ez a szakasz bemutatja, hogyan lehet mobileszköz használatával regisztrálni a bejövő cikkmennyiségeket, amikor a raktárkezelési folyamatok (WMS) be vannak kapcsolva a rendszerben. Azonban van egy alternatív folyamat, amely a mobileszköz helyett a cikkérkezési-napló használatán alapul. A folyamatról további [tájékoztatás olvasható a raktárkezelési folyamatokban engedélyezett cikkek regisztrálása cikkérkezési napló segítségével](tasks/register-items-advanced-warehousing.md).
 
 Amikor egy bejövő rakomány először megérkezik a raktárba, a raktári dolgozóknak regisztrálniuk kell a szállítmányban szereplő cikkmennyiségeket. Általában kézi olvasókat használnak. Ez a munkafolyamat csak akkor érhető el, ha a rendszerben a következő cikkek elérhetők:
 

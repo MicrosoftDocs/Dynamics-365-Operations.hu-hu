@@ -14,17 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692422"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178533"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Érvényes:** Emberi erőforrások a különálló infrastruktúrán_ 
 
+> [!NOTE]
+> 2022 június elején az Emberi erőforrások környezeteket csak a pénzügyek és műveletek alkalmazás-infrastruktúráira lehet telepíteni. A további tudnivalókat lásd [az Emberi erőforrások biztosítása a pénzügyi és a műveleti infrastruktúra területén](hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> A pénzügyi és műveleti infrastruktúra nem támogatja a példánymásoló funkciót. Új környezeteket telepíthet, és az adatbázismozgások segítségével másolatokat hozhat létre. Az önkiszolgáló rendszer telepítésekkel kapcsolatos további tudnivalókat lásd [az önkiszolgáló rendszer telepítésének áttekintésében](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). A pénzügyi és műveleti infrastruktúrával kapcsolatos adatbázismozgásokkal kapcsolatos további tudnivalókat lásd [az Adatbázismozgási műveletek kezdőlapján](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatással átmásolhat egy Microsoft Dynamics 365 Human Resources-adatbázist egy védőfalkörnyezetbe. Ha van másik tesztkörnyezete, akkor abból a környezetből is másolható az adatbázis a célként kiválasztott tesztkörnyezetbe.
 
@@ -50,7 +55,7 @@ A Human Resources-adatbázis másolásakor a következő események történnek:
 
 - A Microsoft Azure Blob-tárolóban lévő dokumentumok nem kerülnek át egyik környezetből a másikba. Ennek megfelelően a rendszer nem másolja a csatolt dokumentumokat és sablonokat, és a forráskörnyezetben maradnak.
 
-- A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználók és más belső szolgáltatási felhasználói fiókok kivételével egyik felhasználó sem lesz elérhető. A Rendszergazda felhasználó törölheti vagy álcázhatja az adatokat, mielőtt a többi felhasználó visszakerül a rendszerbe.
+- A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználók és más belső szolgáltatási felhasználói fiókok kivételével egyik felhasználó sem lesz elérhető. A rendszergazda felhasználó még azelőtt törölheti az adatokat, hogy más felhasználók visszatérhetnek a rendszerbe.
 
 - A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználóknak el kell végezniük a szükséges konfigurációs módosításokat, például az integrációs végpontok újrakapcsolását bizonyos szolgáltatásokhoz vagy URL-címekhez.
 
@@ -67,15 +72,17 @@ A feladat végrehajtásához először másolja a példányt, majd jelentkezzen 
 
 3. Válassza ki a másolni kívánt példányt, majd válassza a **Másolás** parancsot.
 
-4. A **Példány másolása** munkaablakban válassza ki azt a példányt, amelyet felül szeretne írni, majd válassza a **Másolás** parancsot. Várjon, amíg a **Másolás állapota** mező értéke **Kész** értékre módosul.
+4. A **Példány másolása** munkaablakban válassza ki azt a példányt, amelyet felül szeretne írni, majd válassza a **Másolás** parancsot. Várja meg, amíg **a Másolás állapotmező** befejezve **lesz**.
 
    ![[Válassza ki a felülírni kívánt példányt.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Válassza ki a **Power Platform** lehetőséget, majd jelentkezzen be a Microsoft Power Platform Admin Centerbe.
 
-   ![[Válassza a lehetőséget Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Válassza ki Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Válassza ki a másolni kívánt Power Apps-környezetet, majd válassza a **Másolás** parancsot.
+
+A környezetek másolási lehetőségével kapcsolatos további Power Apps tudnivalókat lásd [A környezet másolása tudnivalókat tartalmaz](/power-platform/admin/copy-environment#copy-an-environment-1).
 
 7. A másolási folyamat befejezése után jelentkezzen be a célpéldányba, és engedélyezze a Dataverse-integrációt. További tudnivalókért és utasításokért lásd: [A Dataverse-integráció konfigurálása](./hr-admin-integration-common-data-service.md).
 
@@ -115,7 +122,7 @@ Ezenkívül a következő állapotok módosulnak egy példány másolásakor:
 
 ## <a name="environment-admin"></a>Környezeti adminisztrátor
 
-A cél védőfalkörnyezetében található összes felhasználót, többek között a rendszergazdákat is, felváltották a forráskörnyezet felhasználói. Egy példány másolása előtt győződjön meg arról, hogy Ön a forráskörnyezet rendszergazdája. Ha nem, akkor nem tud bejelentkezni a cél védőfalkörnyezetébe a másolás befejezése után.
+A cél védőfalkörnyezetében található összes felhasználót, többek között a rendszergazdákat is, felváltották a forráskörnyezet felhasználói. Egy példány másolása előtt győződjön meg arról, hogy Ön a forráskörnyezet rendszergazdája. Ha nem, akkor nem tud bejelentkezni a cél ezredmásodógép-környezetbe, miután a másolás befejeződött.
 
 A cél-védőfalkörnyezet minden nem rendszergazdai felhasználója le van tiltva, megakadályozva a nem kívánt bejelentkezéseket a védőfalkörnyezetben. Ha szükséges, a rendszergazdák újra engedélyezhetik a felhasználókat.
 

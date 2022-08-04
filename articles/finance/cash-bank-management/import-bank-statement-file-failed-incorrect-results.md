@@ -1,7 +1,7 @@
 ---
 title: Banki kivonatfájl importálása – hibaelhárítás
 description: Ez a cikk bemutatja, hogy hogyan lehet kijavítani a problémákat, mert kis különbségek állnak a banki kivonatfájlban.
-author: panolte
+author: angelad116
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
@@ -12,19 +12,22 @@ ms.reviewer: kfend
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422b2df6c4de3a948b0e62bfb70f99b12e04a8f9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 44658ea48b9f7dae76c34c5f3d8828c9e8c4ac32
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711173"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151760"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Banki kivonatfájl importálása – hibaelhárítás
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>Ez a funkció 2022 szeptemberében lesz elavult, az új felhasználóknak elektronikus jelentéseket kell használniuk.
 
 Fontos, hogy a bank Microsoft Dynamics kivonatfájlja megegyez azzal az elrendezéssel, amit a 365 Pénzügy támogat. Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni. Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz. Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák. Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat.
 
@@ -39,7 +42,7 @@ Miután megpróbál importálni egy bankszámlakivonat fájlt, a hiba megkeresé
 Hasonlítsa össze a bankfájl elrendezésdefinícióját a Finance importdefiníciójával és vegye figyelembe a mezők és elemek esetleges eltéréseit. Hasonlítsa össze a banki kivonatfájlt a Finance kapcsolódó mintafájljával. A ISO20022 fájlokban az esetleges különbségeket elvileg könnyen látni lehet.
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>Az importált banki kivonatok időzónabeli eltérései
-Az importfájl dátum- és időértékei eltérhetnek a Finance and Operations modulban megjelenített dátum-idő értéktől. Ha meg szeretné akadályozni ezt az eltérést, adja meg az időzóna-beállítást az **Adatforrások konfigurálása** lapon. Az [Továbbfejlesztett banki egyeztetés importálási folyamata](set-up-advanced-bank-reconciliation-import-process.md) rész további tudnivalókat nyújt az időzóna-beállítások megadásához.
+Az importfájlban található dátum-idő értékek eltérhetnek a pénzügyben és műveletekben megjelenő dátum-idő értékektől. Ha meg szeretné akadályozni ezt az eltérést, adja meg az időzóna-beállítást az **Adatforrások konfigurálása** lapon. Az [Továbbfejlesztett banki egyeztetés importálási folyamata](set-up-advanced-bank-reconciliation-import-process.md) rész további tudnivalókat nyújt az időzóna-beállítások megadásához.
 
 ## <a name="transformations"></a>Átalakítások
 A változtatást általában a három átalakítás egyikében kell végezni. Minden egyes átalakítás meghatározott szabványhoz van írva.
@@ -109,3 +112,4 @@ A következő táblázat felsorolja a továbbfejlesztett banki egyeztetés impor
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

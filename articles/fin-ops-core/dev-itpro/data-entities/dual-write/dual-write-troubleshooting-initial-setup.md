@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ebb14dad723fad5b17b4dfca153bf153e77bbd4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882084"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111200"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Problémák elhárítása a kezdeti beállításkor
 
@@ -22,20 +22,20 @@ ms.locfileid: "8882084"
 
 
 
-Ez a témakör hibaelhárítási információkat tartalmaz a Pénzügy és művelet alkalmazások, illetve a Dataverse. Ez a témakör pontosabban olyan információkat tartalmaz, amelyek segítségével kijavíthatja azokat a problémákat, amelyek a kettős írásos integráció kezdeti beállításakor merülhetnek fel.
+Ez a témakör hibaelhárítási információkat tartalmaz a pénzügyek és a műveletalkalmazások, valamint a Dataverse. Ez a témakör pontosabban olyan információkat tartalmaz, amelyek segítségével kijavíthatja azokat a problémákat, amelyek a kettős írásos integráció kezdeti beállításakor merülhetnek fel.
 
 > [!IMPORTANT]
 > Az ebben a témakörben említett problémák egy része a rendszergazdai szerepkörhöz vagy a Microsoft Azure Active Directory (Azure AD) bérlői rendszergazdai hitelesítő adatokhoz lehet szükséges. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>A Pénzügy és műveletek alkalmazást nem csatolhatja a Dataverse
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Pénzügyi alkalmazáshoz és műveletalkalmazáshoz nem csatolhatja. Dataverse
 
-**A kettős írás beállításához szükséges szerepkör:** rendszergazda a Pénzügy és műveletek alkalmazásokban és a Dataverse.
+**A kettős írás beállításához szükséges szerepkör:** rendszergazda a pénzügyi és műveleti alkalmazásokban és a Dataverse.
 
 A **Hivatkozás beállítása a Dataverse szolgáltatáshoz** oldal hibáit általában hiányos beállítás vagy jogosultsági problémák okozzák. Győződjön meg arról, hogy a teljes állapot-ellenőrzés megfelelt-e a **Hivatkozás beállítása a Dataverse szolgáltatáshoz** oldalon, az alábbi ábrán látható módon. A kettős írás nem kapcsolható össze, hacsak a teljes állapot-ellenőrzés meg nem felelt.
 
 ![Sikeres állapot-ellenőrzés.](media/health_check.png)
 
-A Pénzügy, műveletek Azure AD és környezetek összekapcsolása érdekében bérlő-rendszergazdai hitelesítő adatokkal kell rendelkeznie Dataverse. A környezetek összekapcsolása után a felhasználók a saját fiókjaik hitelesítő adataival jelentkezhetnek be, és módosíthatják a meglévő táblák leképezését.
+A pénzügyek, Azure AD műveletek és környezetek összekapcsolása érdekében bérlő-rendszergazdai hitelesítő adatokkal kell rendelkeznie Dataverse. A környezetek összekapcsolása után a felhasználók a saját fiókjaik hitelesítő adataival jelentkezhetnek be, és módosíthatják a meglévő táblák leképezését.
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>A kettős íráshoz összekapcsolható táblák vagy vállalatok számához tartozó korlát megkeresése
 
@@ -55,7 +55,7 @@ A kettős írásmód nem támogatja a több, azonos nevű jogi személyt/céget.
 
 Az ügyfél blokkolásának feloldásához távolítsa el a duplikált rekordokat a **cdm_company** táblából a Dataverse-ben. Továbbá, ha a **cdm_company** táblában üres nevű rekordok vannak, távolítsa el vagy javítsa ki ezeket a rekordokat.
 
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Hiba történt a Kétírásos lap megnyitásakor a Pénzügy és műveletek alkalmazásokban.
+## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Hiba történt a Kétírásos lap megnyitásakor a Pénzügyi és üzemeltetési alkalmazásokban
 
 A következő hibaüzenetet kaphatja, amikor megpróbálja összekapcsolni a Dataverse környezetet a kettős íráshoz:
 
@@ -70,14 +70,14 @@ Ez a hiba akkor jelentkezik, ha az alkalmazás jóváhagyásának lépése nem f
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
 + A hozzájáruláshoz válassza az **Elfogadom** lehetőséget. Ön hozzájárulását adja az alkalmazás telepítéséhez (a `id=33976c19-1db5-4c02-810e-c243db79efde` oldalon) a bérlőjénél.
-+ Ez az alkalmazás a Pénzügyi és Dataverse Üzemeltetési alkalmazásokkal való kommunikációhoz szükséges.
++ Ez az alkalmazás szükséges a pénzügyi Dataverse és műveleti alkalmazásokkal való kommunikációhoz.
 
     ![Kezdeti szinkronizálási beállítási hibaelhárítás.](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
 > Ha ez nem működik, indítsa el az URL-t a Microsoft Edge privát módjában vagy a Chrome inkognitó módjában.
 
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>A Pénzügyi és műveleti környezet nem ismerhető fel.
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>A pénzügyi és a műveleti környezet nem ismerhető fel.
 
 A következő hibaüzenetet kaphatja:
 
@@ -85,7 +85,8 @@ A következő hibaüzenetet kaphatja:
 
 Két dolog okozhat problémát azzal, hogy a környezet nem ismerhető fel:
 
-+ A bejelentkezéshez használt felhasználó nem ugyanaz a bérlő, mint a Pénzügy és Műveletek példánya.
-+ Vannak olyan örökölt Pénzügy és Műveletek példányok, amelyek a Microsoft által működtetett példányok voltak, és amelyekben probléma ad volt a észleléssel. A javításhoz frissítse a Pénzügy és műveletek példányát. A környezet minden frissítéssel felismerhetővé válik.
++ A bejelentkezésre használt felhasználó nem ugyanaz a bérlő, mint a pénzügyi és műveleti példány.
++ Vannak olyan örökölt pénzügyek és műveletpéldányok, amelyek a Microsoft által működtetett környezetben voltak, és amelyekben probléma ad volt a észleléssel. A probléma megoldásáért frissítse a pénzügyi és a műveletpéldányt. A környezet minden frissítéssel felismerhetővé válik.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

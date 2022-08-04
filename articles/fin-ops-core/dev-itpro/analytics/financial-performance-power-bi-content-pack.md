@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7b6fb9643873178f1cb93e3da15e83598af51de0
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910415"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109550"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Pénzügyi teljesítmény PowerBI.com megoldás
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Ez a PowerBI.com megoldás elavult, ahogy az az [Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásban](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) részben dokumentálva van.
+> Ez PowerBI.com megoldás már [elavult, mert dokumentálva van a pénzügyi és a műveletek eltávolítva vagy elavult funkcióiban](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-Ez a cikk a pénzügyi teljesítmény **és pénzügyi PowerBI.com** ismerteti. Leírja, hogyan kell használni az irányítópultot és a megoldásban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a cikk a pénzügyi teljesítmény-kimutatási **PowerBI**.com ismerteti. Leírja, hogyan kell használni az irányítópultot és a megoldásban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="main-account-setup"></a>Fő számla beállítása
 Mivel a szervezetek szeretik, ha a kötelezettségeik és a bevételeik összegei pozitív összegként jelennek meg a jelentésekben, a fő számlák beállítása fontos szerepet játszik. Ugyanis ezen fő számlák pozitív összegként való megjelenítéséhez a fő számla típusaként **Kötelezettség** vagy **Bevétel** értéket kell megadni. E számlatípusok használatakor a Power BI szolgáltatáson keresztüli jelentéstétel megfordítja az előjeleket, és az összegeket pozitívként jeleníti meg.

@@ -1,6 +1,6 @@
 ---
 title: Szervezeti hierarchia a Dataverse szolgáltatásban
-description: Ez a témakör leírja a szervezeti adatok integrálását a Pénzügy és a Műveletek alkalmazások és a Dataverse.
+description: Ez a témakör leírja a szervezeti adatok integrálását a pénzügyi és műveleti alkalmazások és a Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a4edaf5b9c50e9d8781ff703328ac786d71ee782
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f900637855bee3e21916652a373c683e6bf1392
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884732"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112018"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Szervezeti hierarchia a Dataverse szolgáltatásban
 
@@ -28,11 +28,11 @@ Bár a Dataverse nem rendelkezik a szervezeti hierarchia koncepciójával, mégi
 
 ## <a name="data-flow"></a>Adatáramlás
 
-Egy olyan üzleti ökoszisztéma, amely a Finance and Operations alkalmazásokból és Dataverse alkalmazásokból áll továbbra is rendelkezik szervezeti hierarchiával. Ez a szervezeti hierarchia a Finance and Operations alkalmazásokra épül, de látható a Dataverse szolgáltatásban is tájékoztatási és bővítési célból. A következő ábrán a szervezeti hierarchiát tartalmazó adatok láthatók, amelyek megjelennek a Dataverse szolgáltatásban egyirányú adatáramlásként a Finance and Operations alkalmazások és a Dataverse között.
+Pénzügyi és műveleti alkalmazásokból áll üzleti hierarchiát Dataverse, amely továbbra is szervezeti hierarchiával működik. Ez a szervezeti hierarchia a pénzügyre és az üzemeltetésre vonatkozó alkalmazásokra épül, Dataverse de tájékoztató és extenzitási célokat szolgál. Az alábbi ábra a szervezeti hierarchia Dataverse azon adatait mutatja be, amelyek a pénzügyi és műveleti alkalmazásokból egy egy felé történő adatáramlásként megjelenik Dataverse.
 
 ![Architektúra képe.](media/dual-write-data-flow.png)
 
-Szervezeti hierarchia tábla-leképezések állnak rendelkezésre a Pénzügy és műveletek alkalmazásból a következőbe történő adatok egy egy átszinkronizálásához Dataverse.
+Szervezeti hierarchia tábla-leképezések állnak rendelkezésre a pénzügyi és műveleti alkalmazásokból származó adatok egy egy átszinkronizálására a következőbe:Dataverse
 
 ## <a name="templates"></a>Sablonok
 
@@ -52,3 +52,4 @@ Finance and Operations alkalmazások | Customer Engagement alkalmazások     | L
 A Dataverse belső szervezeti adatai két táblából származnak: **Üzemi egység** és **Jogi személyek**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

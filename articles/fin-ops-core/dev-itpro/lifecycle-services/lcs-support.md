@@ -1,6 +1,6 @@
 ---
-title: Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services szolgáltatáshoz
-description: Ez a cikk bemutatja, hogyan lehet segítséget kapni a Pénzügy és műveletek alkalmazások, illetve a Microsoft Dynamics Lifecycle Services (LCS) alkalmazással kapcsolatban.
+title: Pénzügyi és műveleti alkalmazások, illetve LCS (Lifecycle Services) támogatásának használata
+description: Ez a cikk bemutatja, hogyan lehet segítséget kapni a pénzügyi és műveleti alkalmazások, illetve a Microsoft Dynamics Lifecycle Services (LCS) alkalmazásokkal kapcsolatban.
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 278a62c0393be503352db39dddeca1095e7e4a5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f36709ddc2a64c31fe3c2d63fbe073fd9bc159bb
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866431"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103403"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services szolgáltatáshoz
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Pénzügyi és műveleti alkalmazások, illetve LCS (Lifecycle Services) támogatásának használata
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-2.md)]
 
-Ez a cikk bemutatja, hogyan lehet segítséget kapni a Pénzügy és műveletek alkalmazások, illetve a Microsoft Dynamics Lifecycle Services (LCS) alkalmazással kapcsolatban. 
+Ez a cikk bemutatja, hogyan lehet segítséget kapni a pénzügyi és műveleti alkalmazások, illetve a Microsoft Dynamics Lifecycle Services (LCS) alkalmazásokkal kapcsolatban. 
 
 <table>
 <thead>
@@ -72,3 +72,4 @@ Ez a cikk bemutatja, hogyan lehet segítséget kapni a Pénzügy és műveletek 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: cf9ee77b2588283f0b34f2099d6f8d78e15a5af5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4e765c6d56e0ab6d209c27a70fd4b7e52273c103
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934717"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069880"
 ---
 # <a name="electronic-messaging"></a>Elektronikus üzenetküldés
 
@@ -97,4 +97,5 @@ Az alábbi táblázat néhány, az EM funkció által támogatott országspecifi
 | Svájc | [Áfabevallás (Svájc)](../localizations/emea-che-vat-declaration-switzerland.md) | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 

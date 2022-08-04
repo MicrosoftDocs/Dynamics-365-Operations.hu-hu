@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f789fd86904c1e625be8fc5be3bfe456fe0659b4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888923"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068748"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>A Regulatory Configuration Services (RCS) globális tár elektronikus jelentéskészítési (ER) konfigurációinak megosztása külső szervezetekkel.
 
@@ -36,7 +36,7 @@ A következő lépések leírják, hogy hogyan oszthatja meg egy RCS-felhasznál
 
 Arról is meg kell győződnie, hogy a vállalatnál RCS-környezet van kiépítve.
 
-1. A Pénzügy és műveletek alkalmazásban használja a Szervezet **felügyelete** \> **– Munkaterületek** \> **elektronikus jelentéseit**.
+1. Egy pénzügyi és műveleti alkalmazásban használja a **Szervezet** \> **felügyelete – Munkaterületek** \> **elektronikus jelentéseit**.
 2. Ha nincs RCS környezete a vállalathoz, kattintson a **Regulatory services – Külső konfiguráció** lehetőségre, és kövesse az RCS-környezet létrehozására vonatkozó instrukciókat.
 
 Ha van már RCS-környezet létesítve a vállalat számára, akkor az oldal URL-címével érheti el a bejelentkezési beállítást.
@@ -67,7 +67,7 @@ Miután létrehozta a konfigurációt a konfigurációszolgáltatója alatt, a *
 
     ![Mentse a konfiguráció verzióját a külső szervezet párbeszédpanellel.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
-A konfiguráció megosztásra kerül a külső szervezettel, és a szervezet számára elérhető a globális tárban. Innen importálható a szervezet RCS-példányába vagy annak Pénzügyi és Műveleti alkalmazásaiba.
+A konfiguráció megosztásra kerül a külső szervezettel, és a szervezet számára elérhető a globális tárban. Innen importálható a szervezet RCS-példányába, illetve annak pénzügyi és műveleti alkalmazásaiba.
 
 6. Ha egy külső szervezettel korábban megosztott konfigurációt megosztását vissza szeretné vonni, válassza ki a konfigurációt, majd kattintson a **Megosztás visszavonása** elemre , majd válassza az **OK** gombot.
 

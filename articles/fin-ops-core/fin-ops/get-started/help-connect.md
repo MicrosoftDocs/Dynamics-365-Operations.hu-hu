@@ -1,5 +1,5 @@
 ---
-title: A Pénzügy és műveletek alkalmazás súgós tapasztalatának konfigurálása
+title: A Súgó tapasztalatának konfigurálása a Pénzügy és az Üzemeltetés alkalmazáshoz
 description: Ez a cikk a súgórendszer egyes Microsoft Dynamics 365-ös alkalmazásokhoz szükséges összetevőiről nyújt tájékoztatást.
 author: margoc
 ms.date: 08/11/2021
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 35f5d73075d118079ccb0616fbd1c5e1a8e00424
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900129"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123624"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazás súgós tapasztalatának konfigurálása
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>A Súgó tapasztalatának konfigurálása a Pénzügy és az Üzemeltetés alkalmazáshoz
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Ebben a témakörben áttekintést kaphat a Pénzügy és Műveletek súgórendszerének összetevőiről, Microsoft Dynamics például a 365 Pénzügy Dynamics 365 Supply Chain Management, az és Dynamics 365 Commerce az Dynamics 365 Human Resources. A cikk bemutatja az összetevők csatlakoztatását is, és bemutatja az egyéni súgó létrehozásának folyamatát.
+Ebben a témakörben áttekintést kaphat a pénzügyi és műveletalkalmazások súgórendszerének összetevőiről, Microsoft Dynamics például a 365 Pénzügy, Dynamics 365 Supply Chain Management az és Dynamics 365 Commerce az Dynamics 365 Human Resources. A cikk bemutatja az összetevők csatlakoztatását is, és bemutatja az egyéni súgó létrehozásának folyamatát.
 
 ## <a name="help-architecture"></a>Súgó-architektúra
 
-A Pénzügy és a Műveletek alkalmazások elméleti áttekintést [Microsoft Dynamics és a 365-ös dokumentációs webhelyen közzétett egyéb témaköröket is tartalmaznak](/dynamics365/). Ez a tartalom később a termék **Súgó** paneljéből érthető el. A következő ábrán a súgórendszer részei láthatók.
+A Pénzügyi és műveleti alkalmazások elméleti áttekintést [Microsoft Dynamics és a 365-ös dokumentációs webhelyen közzétett egyéb témaköröket is tartalmaznak](/dynamics365/). Ez a tartalom később a termék **Súgó** paneljéből érthető el. A következő ábrán a súgórendszer részei láthatók.
 
 [![Súgóarchitektúra.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -63,7 +63,7 @@ A megoldás feladat-útmutatóinak konfigurálásához kövesse az alábbi lép�
 2. Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
 3. Adja meg a BPM könyvtárak megjelenítési sorrendjét. A megjelenítési sorrend meghatározza a sorrendet, amelyben a feladatrögzítések megjelennek a **Súgó** ablakban.
 
-A lépések befejezése után megnyithatja a **Súgó** ablakot, és kiválaszthatja a Feladat **útmutatója lapot**. Most láthatja a Feladat útmutatóit, amelyek arra a lapra vonatkoznak, amely jelenleg a Pénzügy és Műveletek alkalmazásokban van. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést.
+A lépések befejezése után megnyithatja a **Súgó** ablakot, és kiválaszthatja a Feladat **útmutatója lapot**. Mostantól a pénzügyi és műveleti alkalmazásokban éppen használt lapra vonatkozó feladati segédalkalmazások fognak jelenni. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést.
 
 ### <a name="showing-translated-task-guides"></a>Lefordított feladat-útmutatók megjelenítése
 
@@ -87,7 +87,7 @@ Ha partnerként hozzájárul egy könyvtárral egy vállalati tár kialakítás�
 
 ### <a name="connect-a-custom-help-site"></a>Egyéni súgóoldal csatlakoztatása
 
-A Pénzügy és a Műveletek alkalmazásokat ritkán használják a dobozos formában. Helyette a megoldást testreszabják, és kiterjesztik, hogy megfeleljen a szervezet igényeihez. A Súgó élményét testreszabhatja és ki is bővítheti. Lehetőség van például egyéni súgó hozzáadására a terméken belüli **Súgó** panelen.
+A pénzügy- és a műveletalkalmazásokat ritkán használják a mezőn túli űrlapon. Helyette a megoldást testreszabják, és kiterjesztik, hogy megfeleljen a szervezet igényeihez. A Súgó élményét testreszabhatja és ki is bővítheti. Lehetőség van például egyéni súgó hozzáadására a terméken belüli **Súgó** panelen.
 
 A Microsoft egy eszközkészletet biztosít egyéni súgók telepítéséhez és csatlakoztatásához a **Súgó** panelen. A **Súgó** panelhez kapcsolt egyéni súgótartalom beállításával kapcsolatos tudnivalókat lásd: [Egyéni Súgó – áttekintés](../../dev-itpro/help/custom-help-overview.md).
 
@@ -103,3 +103,4 @@ Ha együtt szeretne működni a Microsofttal a Súgó testreszabásához szüks�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

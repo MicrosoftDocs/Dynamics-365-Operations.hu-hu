@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c9efae1061e96c0c42d5ca6a100bb36889ce56b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9640f460ed7b0b1a0cfdffb7c318bf833f8627fc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859666"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065293"
 ---
 # <a name="create-links-from-human-resources-to-another-finance-environment"></a>Hivatkozások létrehozása az Emberi erőforrások csoportból egy másik pénzügyi környezetbe
 
@@ -53,7 +53,7 @@ Minden létrehozott hivatkozáshoz a következő információk lesznek meghatár
 
    A menüelem megkereséhez a következő elemek szükségesek:
    1. Menjen a Pénzügyi környezetbe, és nyissa meg azt a lapot, amely a navigáció célja. 
-   2. Másolja ki a menüelemet az URL-ből. Például, ha azt szeretné, hogy a hivatkozásra kattintva az alkalmazottak listájához jusson a Finance and Operations alkalmazásban azt az értéket adja meg, amely a „&mi” után jelenik meg az URL-ben. 
+   2. Másolja ki a menüelemet az URL-ből. Ha például azt szeretné, hogy a hivatkozás a pénzügyek és műveletek alkalmazotti listájára vigye, adja meg az URL-címben a "&mi" után megjelenő értéket. 
    3. A menüelemet az alkalmazottak listáját tartalmazó oldal eléréshez ebben a példában: HcmWorkerListPage_Employees.
 
  - **Adatforrásra mutató** hivatkozás: Válassza ki azt az adatforrást, amelyre a hivatkozás hivatkozik. A leggyakoribb adatforrások, mint a **Dolgozó** és a **Beosztás** érhetők el.
@@ -63,4 +63,5 @@ Minden létrehozott hivatkozáshoz a következő információk lesznek meghatár
 A rendszergazdák az újonnan létrehozott hivatkozásokat látni fogják a meghatározott lapokon még akkor is, ha az **Adott hivatkozás engedélyezése** beállítás értéke **Nem**. Ez a hivatkozások ellenőrzésére használható, mielőtt azok meg lennének jelenítve az alkalmazottaknak. Az összes többi szerepkör csak a konfigurált **hivatkozásokat** fogja látni, miután a hivatkozás engedélyezése beállítás Igen beállításra **van állítva**. Azon munkavállalók, akik hozzáférnek az oldalakhoz, amelyeken a hivatkozások megjelennek elérhetik a hivatkozásokat.
 
 A felhasználóknak a másodlagos környezetben ahhoz is biztonsági jogokkal kell rendelkezikuk, hogy hozzáférjenek az adott környezet lapjaihoz. Ha nem rendelkeznek ilyennel, egy biztonsági párbeszédpanel jelenik meg a hivatkozás használata esetén.
+
 

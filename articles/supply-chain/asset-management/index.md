@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 04ee25bdf3c8b0d324c6b43769c5ee41fe14315f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ca07e84399a490e632d9c3e5de06776d9eedff34
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882808"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068810"
 ---
 # <a name="asset-management-overview"></a>Eszközkezelés – áttekintés
 
@@ -27,9 +27,9 @@ ms.locfileid: "8882808"
 
 
 
-Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Supply Chain Management rendszerben történő kezelésére szolgáló speciális modul. Az Eszközkezelés a Finance and Operations alkalmazások számos modulját zökkenőmentesen integrálja. 
+Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Supply Chain Management rendszerben történő kezelésére szolgáló speciális modul. Az Eszközkezelés problémamentesen integrálható a pénzügyi és az üzemeltetési alkalmazások számos moduljaival. 
 
-A következő ábra a Finance and Operations moduljaival való kapcsolatot mutatja be.
+Az alábbi kép a pénzügyek és műveletek más moduljaihoz való kapcsolódási felületeit ábrázolja.
 
 ![Az Eszközkezelés integrálási módjának áttekintése.](media/overview-integrate2.jpg)
 

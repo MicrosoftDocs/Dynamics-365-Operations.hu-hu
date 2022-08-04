@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716971"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065708"
 ---
 # <a name="establish-customer-payment-terms"></a>Vevői kifizetések feltételeinek kialakítása
 
@@ -35,11 +35,11 @@ Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot
 7. Kattintson a **Mentés** gombra.
 8. Zárja be a lapot.
 9. Válassza a **Navigációs ablaktábla >Modulok > Kinnlévőségek > Kifizetések beállítása > Fizetési feltételek** elemet.
-10. Kattintson az **Új** elemre. A fizetési feltételek segítségével tudja meghatározni az esedékességi dátum számítását. A készpénzfizetési engedmény dátuma egy külön lapon kerül beállításra. 
+10. Kattintson az **Új** elemre. **A fizetési feltételek** a határidők kiszámításának módját határozzák meg. A készpénzfizetési engedmény dátuma egy külön lapon kerül beállításra. 
 11. A **Fizetési feltételek mezőbe** írjon egy azonosítót.
 12. Adjon meg egy leírást a **Leírás** mezőben.
-13. Válasszon ki egy olyan **fizetési módot**, mint az utánvét, nettó, aktuális hónap stb. A fizetési mód határozza meg az esedékesség számításának kezdetét. A rendszer például a Nettó értéket használja, ha az esedékességi dátum minden esetben a számladátumot követő, meghatározott számú nap vagy hónap. Amennyiben a fizetés a számla ellenében esedékes, úgy használhatja az Utánvét lehetőséget, hogy a rendszer ne számoljon esedékességet. Ehhez a feladat-útmutatóhoz válassza a „Jelenlegi hónap” lehetőséget.  
-14. Válasszon egy **Fizetési napot**, ha a számításban szerepel a hét egy adott napja vagy egy adott dátum. Az Ön fizetési feltételei függvényében adja meg a kívánt Hónapok vagy Napok számát. Vagy használhatja a fizetési módhoz hozzáadandó **Fizetési ütemezés** vagy **Fizetési nap** lehetőséget. Amennyiben az esedékességi dátum minden esetben a következő hónap 10-e, úgy válassza ki a 10-ét, mint **Fizetési napot**. 
+13. Válasszon egy **fizetési módot, például** **utánékot**, nettót **·**, **aktuális hónapot** stb. A **fizetési mód** határozza meg, hogy mikortól számítsa ki a program az esedékes összeget. Például a nettó érték akkor **használatos,** ha a határidő mindig a számla dátuma utáni hónapok vagy napok beállított száma. **Az** utánékot arra az időpontra lehet használni, amikor a számlán fizetés szükséges, így a határidő nem számítható ki. Válassza ki **az aktuális hónapot** ehhez a feladat-útmutatóhoz.  
+14. Válasszon egy **Fizetési napot**, ha a számításban szerepel a hét egy adott napja vagy egy adott dátum. Az Ön fizetési feltételei függvényében adja meg a kívánt Hónapok vagy Napok számát. Másik lehetőségként a Fizetési **ütemezés** **vagy** a Fizetési nap segítségével "hozzáadhatja" a **fizetési mód végét.** Amennyiben az esedékességi dátum minden esetben a következő hónap 10-e, úgy válassza ki a 10-ét, mint **Fizetési napot**. Ha fizetési naptárat használ, megadhatja, hogyan határozza meg a **rendszer** az esedékesség dátumát, amikor a számított dátum leszáll egy nem munkanapra. A kezdeti határidő számítása a naptári napok alapján történik. Ha a számított dátum nem munkanapra tér vissza, a kiszámított határidő a következő munkanapra vagy korábbi munkanapra módosítható.
 15. Kattintson a **Mentés** gombra.
 16. Zárja be a lapot.
 17. Ugorjon a **Kinnlevőségek > Kifizetés beállítása > Készpénzfizetési engedmények** pontra.
@@ -50,7 +50,7 @@ Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot
 22. A **Napok** mezőben adja meg a készpénzfizetési engedmény dátumához használandó napok számát. Ha a **Nettó** irányelv lehetőséget választotta, a napok száma hozzáadódik a számla dátumához, és így kerül kiszámításra a készpénzfizetési engedmény dátuma.  
 23. Az **Engedmény** mezőben adja meg a készpénzfizetési engedmény százalékát.
 24. A **Vevői engedmények fő számláján** adja meg azt a fő számlát, amelyet a készpénzfizetési engedmény felad a vevői számlákhoz.
-25. Válasszon egy lehetőséget a **Kedvezmény ellenszámlák** mezőben. Ha a „Számlák a számlasorokban” beállítást választja, úgy a készpénzfizetési engedmény a szállítói számlasorok ugyanazon eszköz/költség főszámlájára kerül feladásra. A „Fő számla használata szállítói számlákhoz” lehetőség használata esetén a készpénzfizetési engedmény feladása a „Fő számla szállítói számlákhoz” elemnél megjelölt fő számlára történik. Ehhez a példához válassza a „Fő számla használata szállítói számlákhoz” lehetőséget. 
+25. Válasszon egy lehetőséget a **Kedvezmény ellenszámlák** mezőben. Ha a „Számlák a számlasorokban” beállítást választja, úgy a készpénzfizetési engedmény a szállítói számlasorok ugyanazon eszköz/költség főszámlájára kerül feladásra. Ha a Fő **számla használata** szállítói számlákhoz lehetőséget választja, **a készpénzfizetési engedmény a szállítói számlák fő számláján kiválasztott fő számlára adja fel a készpénzfizetési engedményt**. Ebben a példában válassza a Fő **számla használata szállítói számlákhoz lehetőséget**. 
 26. A **Beszállítói engedmények fő számláján** adja meg azt a fő számlát, amelyet a készpénzfizetési engedmény felad a beszállítói számlákhoz.
 27. Kattintson a **Mentés** gombra.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a05c34454e27244bb08bfff84f2ada6ff498f23
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 388be651164af622dbabd7b2c7b3437233454bea
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862155"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108601"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Az entitásadatok megtekintése és frissítése az Excel programmal 
 
@@ -40,15 +40,15 @@ Az entitásadatok megnyitásával az Excel programban gyorsan és egyszerűen te
 
 További tudnivalókért az Excel-bővítmény használatáról, tekintse meg a rövid videót: [Excel-sablon létrehozása a fejléc- és sormintákhoz](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Entitásadatok megnyitása az Excel programban a Pénzügy és műveletek alkalmazásból való indítóként
-1. A Pénzügy és műveletek alkalmazás egyik lapján válassza a Megnyitás **gombra Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Entitásadatok megnyitása az Excel programban a pénzügyi és műveleti alkalmazásból való indítóként
+1. A Pénzügyi és műveletek alkalmazás egy lapján válassza a Megnyitás **gombra Microsoft Office**.
 
     Ha az oldal gyökér adatforrása (tábla) megegyezik bármelyik entitás gyökér adatforrásával, létrejönnek a lap alapértelmezett **Megnyitás az Excel programban** beállításai. A **Megnyitás az Excel programban** lehetőségek megtalálhatók a gyakran használt lapokon, például az **Összes szállító** és **Összes vevő** oldalon.
  
 2. Válassza az egyik **Megnyitás az Excel programban** lehetőséget, és nyissa meg a létrejövő munkafüzetet. Ez a munkafüzet kötési információkat tartalmaz az entitásra, egy mutatót a környezetre és egy mutatót az Excel-bővítményre.
 3. Az Excel programban válassza a **Szerkesztés engedélyezése** lehetőséget az Excel-bővítmény futtatásának engedélyezéséhez. Az Excel-bővítmény egy panelen fut az Excel ablak jobb oldalán.
 4. Ha az Excel beépülő modult első alkalommal futtatja, válassza az **Ez a bővítmény megbízható** lehetőséget.
-5. Ha a program megkérdezi, hogy kell-e bejelentkeznie, jelölje be a bejelentkezést, **majd** jelentkezzen be ugyanazoknak a hitelesítő adatoknak a használatával, mint a Pénzügy és műveletek alkalmazásba. Az Excel beépülő modul a böngésző korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. (Az operációs rendszeren alapuló böngészővel kapcsolatos tudnivalókat lásd: [Az Office-bővítmények által használt böngészők](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). A bejelentkezés sikeres voltának biztosítása érdekében ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában. 
+5. Ha a program megkérdezi, hogy kell-e bejelentkeznie, jelölje be a bejelentkezést, **majd** jelentkezzen be ugyanazoknak a hitelesítő adatoknak a használatával, amelyet a Pénzügy és műveletek alkalmazásba történő bejelentkezéshez használt. Az Excel beépülő modul a böngésző korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. (Az operációs rendszeren alapuló böngészővel kapcsolatos tudnivalókat lásd: [Az Office-bővítmények által használt böngészők](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). A bejelentkezés sikeres voltának biztosítása érdekében ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában. 
 
 Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne felejtse, hogy nincsenek adatok a munkafüzetben mindaddig, amíg be nem olvassa őket az Excel-bővítmény.
 
@@ -57,7 +57,7 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 2. Az Office Áruházban keressen a **Dynamics** kulcsszóra, majd válassza a **Hozzáadás** lehetőséget a **Microsoft Dynamics Office-bővítmény** (az Excel-bővítmény) mellett.
 3. Ha az Excel beépülő modult első alkalommal futtatja, válassza az **Ez a bővítmény megbízható** lehetőséget az Excel-bővítmény futásának engedélyezéséhez. Az Excel-bővítmény egy panelen fut az Excel ablak jobb oldalán.
 4. Válassza a **Kiszolgáló adatainak hozzáadása** lehetőséget a **Beállítások** ablak megnyitásához.
-5. Másolja a böngészőben a cél Pénzügy és műveletek alkalmazáspéldányának URL-címét, **illessze be a kiszolgáló URL-mezőjébe**, és azután töröljön mindent az állomásnév után. Az eredményül kapott URL-címnek csak az állomásnévvel kell rendelkeznie.
+5. Másolja a böngészőben a cél pénzügy és műveletek alkalmazáspéldányának URL-címét, **illessze be a kiszolgáló URL-mezőjébe**, és azután töröljön mindent az állomásnév után. Az eredményül kapott URL-címnek csak az állomásnévvel kell rendelkeznie.
 
     Ha például az URL-cím `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, akkor a `https://xxx.dynamics.com` részen kívül töröljön mindent.
 
@@ -76,7 +76,7 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 Miután az Excel-bővítmény beolvasta az entitásadatokat a munkafüzetbe, bármikor frissítheti az adatokat a **Frissítés** lehetőséget választva az Excel-bővítményben.
 
 ## <a name="edit-entity-data-in-excel"></a>Az Excel programban az entitás adatainak szerkesztése
-Az entitásadatokat szükség szerint **módosíthatja**, majd az Excel-bővítmény Közzététel beállításával újra közzéteheti azt a Pénzügyi és Műveleti alkalmazásokban. Egy rekord módosításához a munkalapon jelöljön ki egy cellát, és változtassa meg a cella értékét. Új rekord hozzáadásához hajtsa végre az alábbi lépések valamelyikét:
+Ha szükséges, módosíthatja **az** entitásadatokat, majd újra közzéteheti azokat a pénzügyi és műveleti alkalmazásokban, ha az Excel bővítményBen a Közzététel gombra van szüksége. Egy rekord módosításához a munkalapon jelöljön ki egy cellát, és változtassa meg a cella értékét. Új rekord hozzáadásához hajtsa végre az alábbi lépések valamelyikét:
 
 - Kattintson bárhová az adatforrások táblázatában, majd az **Új** lehetőségre az Excel-bővítményben.
 - Kattintson az adatforrások táblázatának utolsó sorába, és nyomja le a Tab billentyűt mindaddig, amíg a kurzor ki nem lép a sor utolsó oszlopából, és új sor nem jön létre.
@@ -146,3 +146,4 @@ Vannak bizonyos problémák, amelyek néhány egyszerű lépéssel megoldhatók.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 40398a481d23b8abed59556a3c6d70e783756017
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ea07b40c0a1a7eae7cd167f46796556b1e0ecc46
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857228"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103594"
 ---
 # <a name="prospect-to-cash"></a>A potenciális vevők készpénzre váltása
 
@@ -43,13 +43,13 @@ A jelenlegi verzióban A potenciális ügyfelek készpénzre váltása megoldás
 ## <a name="system-requirements-for-supply-chain-management"></a>A Supply Chain Management rendszerkövetelményei
 A potenciális ügyfelek készpénzre váltásának integrációja a következő verziókban támogatott:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017. december)
+### <a name="microsoft-dynamics-365-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 Pénzügy és műveletek, Enterprise kiadás 7.3 (2017. december)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (December 2017) - Alkalmazásbuild 7.3.11971.56116 12-es platformfrissítéssel (7.0.4709.41129)
+- Dynamics 365 Pénzügy és Műveletek, Enterprise kiadás (2017. december) – az alkalmazás build 7.3.11971.56116 Platform Update 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (2017. július)
+### <a name="dynamics-365-finance-enterprise-edition-july-2017"></a>Dynamics 365 Pénzügy, Enterprise kiadás (2017. július)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július) - 8-as platformfrissítéssel (7.2.11792.56024 alkalmazásbuild 7.0.4565.16212 platformbuilddel).
+- Dynamics 365 Pénzügy és Műveletek, Enterprise kiadás (2017. július) – a 8. verziófrissítéssel (az alkalmazás buildszáma 7.2.11792.56024 platform build 7.0.4565.16212).
 - A következők gyorsjavítások szükségesek:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Ez a gyorsjavítás lehetővé teszi az értékesítési rendelés szinkronizálását az adatintegrációs szolgáltatással a Sales rendszerből a Supply Chain Management alkalmazásba. Ezenkívül számos más fejlesztést is biztosít.
@@ -59,9 +59,9 @@ A potenciális ügyfelek készpénzre váltásának integrációja a következő
     > [!NOTE]
     > Csak a KB4045570-et kell telepíteni, mivel a telepítés tartalmazza a többi gyorsjavítás változásait. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations 1611-es verzió (2016 november)
+### <a name="dynamics-365-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 Pénzügy és Műveletek, 1611-es verzió (2016 november)
 
-- Dynamics 365 for Finance and Operations 1611 verzió (2016. november) 8-as vagy újabb platformfrissítéssel
+- Dynamics 365 Pénzügy és Műveletek, 1611 (2016 november) 8-as vagy újabb platformfrissítéssel
 
 - A következők gyorsjavítások szükségesek:
 

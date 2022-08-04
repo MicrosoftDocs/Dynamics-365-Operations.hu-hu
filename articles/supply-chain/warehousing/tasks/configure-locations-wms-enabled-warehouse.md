@@ -1,6 +1,6 @@
 ---
 title: Helyek konfigurálása WMS szolgáltatással rendelkező raktárban
-description: Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis raktár (a speciális raktárkezelési folyamatokat alkalmazó raktár) helyének beállításait.
+description: Ez az útmutató bemutatja, hogyan kell konfigurálni a helybeállításokat egy új, WMS-t engedélyező raktárban (egy raktárban, amely raktárkezelési folyamatokat (WMS) használ).
 author: perlynne
 ms.date: 06/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
-ms.translationtype: MT
+ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599348"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067273"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Helyek konfigurálása WMS szolgáltatással rendelkező raktárban
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis raktár (a speciális raktárkezelési folyamatokat alkalmazó raktár) helyének beállításait. A folyamatot általában a raktár vezetője végzi el. Ezt az útmutatót az USMF bemutatócéggel vagy saját adataival is futtathatja. Előfeltétel, hogy legalább egy webhely legyen beállítva.
+Ez az útmutató bemutatja, hogyan kell konfigurálni a helybeállításokat egy új, WMS-t engedélyező raktárban (egy raktárban, amely raktárkezelési folyamatokat (WMS) használ). A folyamatot általában a raktár vezetője végzi el. Ezt az útmutatót az USMF bemutatócéggel vagy saját adataival is futtathatja. Előfeltétel, hogy legalább egy webhely legyen beállítva.
 
 
 ## <a name="create-a-new-warehouse"></a>Új raktár létrehozása
@@ -35,7 +35,7 @@ Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis rakt
 4. Írjon be egy értéket a **Név** mezőbe.
 5. A **Hely** mezőben válasszon ki vagy írjon be egy létező helyértéket.
 6. Bontsa ki a **Raktár** szakaszt.
-7. Állítsa **A raktárkezelési folyamatok felhasználói hibanaplója opcióját** erre: Igen. Ezzel a beállítással lehetővé válik a speciális raktározási folyamatok futtatása a raktármunkák és mobileszközök segítségével.
+7. Állítsa **A raktárkezelési folyamatok felhasználói hibanaplója opcióját** erre: Igen. Ez a beállítás lehetővé teszi a raktárkezelési folyamatok (WMS) futtatását raktári munka és mobil eszközök segítségével.
 8. Zárja be a lapot.
 
 ## <a name="define-a-location-format"></a>Helyformátum meghatározása
@@ -68,7 +68,7 @@ Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis rakt
 5. Zárja be a lapot.
 
 ## <a name="define-location-profile"></a>Helyprofil definiálása
-1. Ugrás a **Navigációs ablaktábla > modulok > Raktárkezelés > Beállítás > Raktár > Helyprofilok** elemére. A helyprofilok meghatározása nagyon fontos. A csoportosított helyek kapacitását itt határozhatja meg, illetve azt is, hogy a tárolt készletre és a tárolási módra milyen irányelvek vonatkozzanak. A szűrési beállításokként használt helyprofilokkal szabályozhatja a különböző raktárkezelési folyamatokat is. Legalább egy felhasználói helyprofilt létre kell hoznia ahhoz, hogy a raktárkezelési folyamatokat engedélyezze.
+1. Ugrás a **Navigációs ablaktábla > modulok > Raktárkezelés > Beállítás > Raktár > Helyprofilok** elemére. A helyprofilok meghatározása nagyon fontos. A csoportosított helyek kapacitását itt határozhatja meg, illetve azt is, hogy a tárolt készletre és a tárolási módra milyen irányelvek vonatkozzanak. A szűrési beállításokként használt helyprofilokkal szabályozhatja a különböző raktárkezelési folyamatokat is. A WMS engedélyezéséhez legalább egy felhasználói helyprofilt létre kell hoznia.
 2. Kattintson az **Új** elemre.
 3. Írjon egy értéket a **Helyprofil azonosítója** mezőbe.
 4. Írjon be egy értéket a **Név** mezőbe.

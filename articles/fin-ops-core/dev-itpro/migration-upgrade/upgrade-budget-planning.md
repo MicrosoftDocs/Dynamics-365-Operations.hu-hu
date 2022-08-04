@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d8d59def24fd138b4cf1d36e286b786e13b096e
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890406"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124028"
 ---
 # <a name="upgrade-budget-planning"></a>Költségvetés-tervezés frissítése
 
@@ -30,7 +30,7 @@ Microsoft Dynamics AX A 2012-es költségvetés-tervezés és a Dynamics 365 Pé
 A költségvetés-tervezés a Finance rendszerben sok fejlesztést kínál, amelyek nem érhetők el a Dynamics AX 2012 rendszerben. Ez a cikk bemutatja, hogy a frissítéssel vevőknek kell-e módosításokat végrehajtottak. Emellett felhívja a figyelmet azokra az új funkciókra is, amelyeket figyelembe kell venni a frissítési folyamat során. A módosítások terjedelmének miatt a meglévő költségvetési tervek mindaddig nem nyithatók meg, amíg az ebben a cikkben körvonalazott módosítások el nem készülnek. A jelentéseknek azonban továbbra is működniük kell, és nincs szükség hozzájuk plusz módosításokra.
 
 ## <a name="overview-of-changes"></a>Változások áttekintése
-Számos jelentős változás következett be a Dynamics 365 for Finance and Operations Költségvetés részében. Ezek a változtatások arra szolgálnak, hogy könnyebben konfigurálhatóvá és újrahasználhatóbbá tegyék a költségvetés tervezését, csökkentve az évről évre szükséges karbantartási és beállítási igényt. Az AX 2012 következő területei már nem léteznek a Finance szolgáltatásban:
+A Költségvetés a pénzügyi költségvetésben és a műveletekben számos lényeges módosítás történt. Ezek a változtatások arra szolgálnak, hogy könnyebben konfigurálhatóvá és újrahasználhatóbbá tegyék a költségvetés tervezését, csökkentve az évről évre szükséges karbantartási és beállítási igényt. Az AX 2012 következő területei már nem léteznek a Finance szolgáltatásban:
 
 -   Költségvetésiterv-sablonok (Költségvetési terv konfigurációja)
 -   Költségvetésiterv-mappák (Költségvetési terv konfigurációja)
@@ -47,7 +47,7 @@ Az oszlopok olyan új koncepciót jelentenek, amely az Excel-sablon egy része �
 
 ### <a name="layouts"></a>Elrendezések
 
-Az elrendezések az Excel-sablonokat felváltó új elemek. Az elrendezések tartalmazzák az oszlopokat, amelyek meghatározzák, hogy mely költségvetési vagy tényleges adatok és időszakok jelenjenek meg. Az elrendezések az ügyfél és az Excel-bővítmény között is megosztásra kerülnek. Ezért a Finance and Operations ügyfélprogramban az adatok beírásával vagy megtekintésével kapcsolatos felhasználói élmény jobb, mint az AX 2012 felhasználói élménye. Ha adatokat szeretne felvinni a Finance kliensbe, már nem korlátozódik egyetlen forgatókönyv megtekintésére és bevitelére tranzakciós nézetben. Ehelyett az összehasonlító nézet lehetővé teszi, hogy egyszerre több időszakot és fiókot is egyszerre megtekinthessen, és összegeket írhasson be. Az elrendezések úgy is definiálhatók, hogy pénznemet, megjegyzést és egyéb opcionális adatokat adhat meg és tekinthet meg bennük. Az elrendezések segítségével továbbá meghatározhatja, hogy mely főkönyvi dimenziók és dimenzióleírások jelenjenek meg. Az elrendezések emellett forgatókönyv-korlátokat is tartalmaznak, amelyek meghatározzák, hogy a sablonok mely oszlopai szerkeszthetők, illetve mely oszlopok legyenek elérhetők az Excel-ben. Egy elrendezés meghatározását követően sablon jön létre hozzá. Ez a sablon ugyancsak létrehozza a megfelelő Excel-sablont. Ezután szerkesztheti az Excel-sablont, hogy az további képleteket és formázást tartalmazzon, majd feltöltheti újra. Az elrendezéseket ezután a rendszer minden egyes szakaszszabályhoz hozzárendeli a **Költségvetés-tervezési folyamat** oldalon. Ezért az elrendezések helyettesítik a sablonokat, amelyeknek hasonló a hozzárendelésük és használatuk.
+Az elrendezések az Excel-sablonokat felváltó új elemek. Az elrendezések tartalmazzák az oszlopokat, amelyek meghatározzák, hogy mely költségvetési vagy tényleges adatok és időszakok jelenjenek meg. Az elrendezések az ügyfél és az Excel-bővítmény között is megosztásra kerülnek. Emiatt a felhasználói felület jobb AX, mint a 2012-es felhasználói felület, amikor adatokat ad meg vagy nézett meg a pénzügyi és műveleti ügyfélben. Ha adatokat szeretne felvinni a Finance kliensbe, már nem korlátozódik egyetlen forgatókönyv megtekintésére és bevitelére tranzakciós nézetben. Ehelyett az összehasonlító nézet lehetővé teszi, hogy egyszerre több időszakot és fiókot is egyszerre megtekinthessen, és összegeket írhasson be. Az elrendezések úgy is definiálhatók, hogy pénznemet, megjegyzést és egyéb opcionális adatokat adhat meg és tekinthet meg bennük. Az elrendezések segítségével továbbá meghatározhatja, hogy mely főkönyvi dimenziók és dimenzióleírások jelenjenek meg. Az elrendezések emellett forgatókönyv-korlátokat is tartalmaznak, amelyek meghatározzák, hogy a sablonok mely oszlopai szerkeszthetők, illetve mely oszlopok legyenek elérhetők az Excel-ben. Egy elrendezés meghatározását követően sablon jön létre hozzá. Ez a sablon ugyancsak létrehozza a megfelelő Excel-sablont. Ezután szerkesztheti az Excel-sablont, hogy az további képleteket és formázást tartalmazzon, majd feltöltheti újra. Az elrendezéseket ezután a rendszer minden egyes szakaszszabályhoz hozzárendeli a **Költségvetés-tervezési folyamat** oldalon. Ezért az elrendezések helyettesítik a sablonokat, amelyeknek hasonló a hozzárendelésük és használatuk.
 
 ### <a name="budget-planning-processes"></a>Költségvetés-tervezési folyamatok
 
@@ -69,7 +69,7 @@ A frissített rendszer beállításaira vonatkozó konfiguráció meghatározás
    -   Költségvetési tervek forgatókönyvei: Tényleges adatok, Kiindulás, Költségvetési kérelem, Költségvetés jóváhagyva
    -   Költségvetési terv sorai 2017 minden forgatókönyvéhez, valamint Tényleges adatok 2017-re és 2016-ra
 
-   A következő oszlopok jönnek létre a Finance and Operations programban:
+   A következő oszlopok lesznek létrehozva a pénzügyben és a műveletekben:
 
    | Oszlop neve    | Költségvetési tervváltozat | Oszlop időszaka | Év eltolása |
    |----------------|----------------------|--------------------|-------------|

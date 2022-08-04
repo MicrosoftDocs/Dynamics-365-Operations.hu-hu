@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a6b9cf8327f65371f8362a5729bb32746d900cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ed83450592d85205743c9ff1aefd0e66e5d2b90c
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885986"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111988"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Munkarendelések és tárgyi eszközök
 
 [!include [banner](../../includes/banner.md)]
 
 
-Az Eszközkezelésben az eszközök kapcsolódhatnak tárgyi eszközökhöz, és ezekhez az eszközökhöz munkarendeléseket is létrehozhat. A funkció használatával teljeskörű áttekintést kaphat a tárgyi eszközökről, kapcsolódó befektetési projektekről és a befektetési projekteken rögzített költségekről a **Projektvezetés és könyvelés** modulokban és a **Tárgyi eszközök** modulokban a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban.
+Az Eszközkezelésben az eszközök kapcsolódhatnak tárgyi eszközökhöz, és ezekhez az eszközökhöz munkarendeléseket is létrehozhat. Ha használja ezt a funkciót, teljes áttekintést kaphat a tárgyi eszközökről, a kapcsolódó beruházási projektekről, **·** **valamint** a Projektvezetés és könyvelés, valamint a Pénzügy és műveletek modulok projektvezetési és könyvelési moduljaiban regisztrált beruházási projektek költségeiről.
 
 >[!NOTE]
 >A **Tárgyi eszköz száma** mező csak akkor van beállítva munkarendelési feladat projektjén, ha a munkarendelési feladat projektjén a kiválasztott projekttípus **Befektetés**.

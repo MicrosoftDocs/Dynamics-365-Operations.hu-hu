@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d85f4e5c44db511970b3e22490341228fa0d1abd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7a88c5a615ec860890578873eaee736fabbeaf08
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857083"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065810"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Supply Chain Management szolgáltatásra 
 
@@ -37,11 +37,11 @@ Frissítés közben az összes olyan termék, amely hozzá van rendelve egy tár
 A frissítés után a frissítéskor zárolt termékeket feloldhatja a **Tárolási dimenziócsoportok módosítása cikkekhez** folyamatban található áttelepítési lehetőségekkel, ami után a termékekhez tartozó tranzakciók feldolgozhatók.
 
 ### <a name="enabling-items-in-supply-chain-management"></a>Cikkek engedélyezése a Supply Chain Management szolgáltatásban 
-Ez a változás azért szükséges, mert a Supply Chain Management rendszerben a cikkek követése a raktárkezelési folyamatok része. E folyamatokhoz minden raktárat és azok helyeit egy helyprofilhoz kell társítani. Ha szeretné használni a raktárkezelési folyamatokat, a következőt kell konfigurálni:
--   A meglévő raktáraknak engedélyezni kell a raktárkezelési folyamatok használatát 
--   A meglévő kiadott termékeket egy tárolási dimenziócsoporthoz kell társítani, amely raktárkezelési folyamatokat használ 
+Erre a módosításra azért van szükség, mert az Ellátásilánc-kezelésben a cikkkövetés része a raktárkezelési folyamatoknak (WMS). E folyamatokhoz minden raktárat és azok helyeit egy helyprofilhoz kell társítani. Ha WMS-t szeretne használni, a következőket kell konfigurálni:
+-   A WMS csak akkor használható, ha engedélyezve vannak a meglévő raktárak. 
+-   A meglévő kiadott termékeknek olyan tárolásidimenzió-csoporthoz kell társítva lennie, amely WMS-t használ. 
 
-Ha a forrás tárolási dimenziócsoportok a raklap-azonosítót használják, a raklap-azonosító dimenziót használó, meglévő aktuális készlet helyeit egy olyan helyi profilhoz kell társítani, amelyben az **Azonosítótábla követésének használata** paraméter van kiválasztva. Ha a már meglévő raktárak nem engedélyezhetők a raktárkezelési folyamatok használatához, módosíthatja a meglévő aktuális készlet tárolási dimenziócsoportjait olyan csoportokra, amelyek csak a Telephely, a Raktár és a Hely készletdimenziókat kezelik. 
+Ha a forrás tárolási dimenziócsoportok a raklap-azonosítót használják, a raklap-azonosító dimenziót használó, meglévő aktuális készlet helyeit egy olyan helyi profilhoz kell társítani, amelyben az **Azonosítótábla követésének használata** paraméter van kiválasztva. Ha a meglévő raktárakban nem lehet engedélyezni a WMS használatát, a meglévő aktuális készlet tárolásidimenzió-csoportjait olyan csoportokra lehet módosítani, amelyek csak a Hely, Raktár és Hely készletdimenziókat kezelik. 
 
 > [!NOTE] 
 >  Akkor is módosíthatja a tárolási dimenziócsoportot egy elemhez, ha nyitott készlettranzakciók léteznek.
@@ -56,12 +56,12 @@ A raktárkezelési folyamatok részeként való használathoz a cikkeket olyan t
 A frissítés során blokkolt termékek zárolásának feloldásához ki kell választania egy új tárolási dimenziócsoportot a termékekhez. Ne feledje, hogy akkor is módosíthatja a tárolási dimenziócsoportot, ha nyitott készlettranzakciók léteznek. Ha a frissítés során blokkolt cikkeket szeretné használni, két lehetőség közül választhat:
 
 -   Módosítsa a cikk tárolási dimenziócsoportját olyan tárolási dimenziócsoportra, amely csak a Telephely, Raktár és Hely készletdimenziókat használja. A módosítás miatt a raklap-azonosító készletdimenzió már nincs használatban.
--   Módosítsa a cikk tárolási dimenziócsoportját olyan tárolási dimenziócsoportra, amely a raktárkezelési eljárásokat használja. A módosítás miatt az Azonosítótábla készletdimenzió aktív lesz.
+-   A cikk tárolásidimenzió-csoportjának módosítása WMS-t használó tárolásidimenzió-csoportra. A módosítás miatt az Azonosítótábla készletdimenzió aktív lesz.
 
-## <a name="configure-warehouse-management-processes"></a>Raktárkezelési folyamatok konfigurálása
+## <a name="configure-wms"></a>Az WMS beállítása
 Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a termékeknek egy tárolási dimenziócsoportot kell használniuk, ahol a **Raktárkezelési folyamatok használata** paraméter van kiválasztva.
 
-### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Raktárak engedélyezése a raktárkezelési folyamatok használatára
+### <a name="enable-warehouses-to-use-wms"></a>Raktárak engedélyezése a WMS használatára
 
 1.  Hozzon létre legalább egy új helyprofilt.
 2.  Kattintson a **Raktárkezelés** &gt; **Beállítás** &gt; **Raktárkezelési folyamatok engedélyezése** &gt; **Raktár beállításának engedélyezése** lehetőségre.
@@ -70,7 +70,7 @@ Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a 
 5.  Ellenőrizze a módosításokat. Az ellenőrzési folyamat részeként az adatok integritását különböző ellenőrzések révén vizsgálja a rendszer. A nagyobb frissítési folyamat részeként hibák fordulhatnak elő, amelyeket esetleg a forrásvégrehajtásban kell módosítani. Ebben az esetben egy további adatfrissítésre lesz szükség.
 6.  Dolgozza fel a módosításokat.
 
-### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>A cikkek tárolási dimenziócsoportjának módosítása úgy, hogy az raktárkezelési folyamatokat használjon
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-wms"></a>A cikkek tárolásidimenzió-csoportjának módosítása a WMS használatával
 
 1.  Hozzon létre egy új **Készletállapot** értéket, és rendelje hozzá **Alapértelmezett készletállapot-azonosító** értékként a **Raktárkezelési paraméterek** beállításaihoz.
 2.  Hozzon létre egy új tárolási dimenziócsoportot, ahol a **Raktárkezelési folyamatok használata** paraméter van kiválasztva.

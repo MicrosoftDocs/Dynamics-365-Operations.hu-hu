@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d05403113c9b178553134ce1a9066bb2acf59b0f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868518"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068105"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Pénzügyi információk konfigurációja - 10.0.20-as és újabb verzió
 
@@ -38,7 +38,7 @@ A pénzügyi adatelemzés a Microsoft Dynamics 365 Pénzügy Dataverse és az Az
 
 Kövesse az alábbi lépéseket a környezetek telepítéséhez.
 
-1. A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban hozzon létre vagy frissítsen egy Finance környezetet. A környezethez a Pénzügyi és műveleti alkalmazásoknak a 10.0.20-as vagy újabb verziójára van szükség.
+1. A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban hozzon létre vagy frissítsen egy Finance környezetet. A környezethez a pénzügyi és műveleti alkalmazásoknak a 10.0.20-as vagy újabb verziójára van szükség.
 2. A környezetnek magas rendelkezésre állású (HA) környezetnek kell lennie a tesztkörnyezetben. (Az ilyen típusú környezetet 2. szintű környezetnek is nevezik.) További információ: [Környezettervezés](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Ha a Finance Insights beállítása egy tesztkörnyezetben történik, lehet, hogy a termelési adatokat az adott környezetbe kell másolnia, hogy az előrejelzések működjenek. Az előrejelzési modell több évnyi adatból használatával készít előrejelzéseket. A Contoso bemutató adatai nem tartalmaznak elég előzményadatot az előrejelzési modell megfelelő képzéséhez. 
 
@@ -126,7 +126,7 @@ Ha az előző alkalmazások egyikét sem találja, próbálkozzon az alábbi lé
         - **Teljesítmény** – Javasoljuk, hogy a **Standard** lehetőséget válassza.
         - **Fiók fajtája** – A **StorageV2** lehetőséget kell választania.
 
-    3. A **Speciális beállítások** párbeszédpanel **Data Lake Storage Gen2** lehetőséghez válassza az **Engedélyezés** elemet a **Hierarchikus névterek** funkció alatt. Ha nem engedélyezi ezt a funkciót, nem használhatja fel a Pénzügy és művelet alkalmazások által írt adatokat olyan szolgáltatások, mint például az adatáramlás használatával Power BI.
+    3. A **Speciális beállítások** párbeszédpanel **Data Lake Storage Gen2** lehetőséghez válassza az **Engedélyezés** elemet a **Hierarchikus névterek** funkció alatt. Ha nem engedélyezi ezt a funkciót, nem használhatja fel olyan adatokat, amelyek pénzügyi és műveleti alkalmazások írása során szolgáltatások, például adatáramlások használatával Power BI történik.
     4. Válassza a **Vélemény és létrehozás** lehetőséget. A központi telepítés befejezése után az új erőforrás megjelenik az Azure-portálon.
     5. Nyissa meg a létrehozott tárfiókot.
     6. A bal oldali menüben válassza a **Hívóbetű** lehetőséget.
@@ -755,3 +755,4 @@ A bővítmény telepítése eltarthat néhány percig.
 Ha visszajelzést szeretne küldeni, vagy ha segítségre van szüksége, e-mailben [küldje el a pénzügyi információkat](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

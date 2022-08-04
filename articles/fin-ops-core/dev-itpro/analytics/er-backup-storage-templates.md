@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2ca847f6f11d5d849ea570cc3886e6470021e451
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 635e7152bece91d5dee47f82cef7052730eb0c82
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880393"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108952"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-sablonok biztonságimentés-tárhelye
 
@@ -28,11 +28,11 @@ ms.locfileid: "8880393"
 
 Az [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md) a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé az üzleti felhasználók számára. A konfigurált ER-formátumok a különböző formátumú kimeneti dokumentumok (például Microsoft Excel munkafüzetek, Microsoft Word dokumentumok vagy PDF-dokumentumok) előállítására használhatnak előre meghatározott sablonokat. A sablonok olyan adatokkal vannak kitöltve, amelyekhez a megadott adatfolyamnak generált dokumentumokhoz szüksége van.
 
-Minden konfigurált formátum közzétehető egy ER-megoldás részeként. Minden egyes ER megoldást exportálható a Finance and Operations egyik példányából, és importálható egy másik példányba.
+Minden konfigurált formátum közzétehető egy ER-megoldás részeként. Minden ER-megoldás exportálható egy pénzügyi példányból és műveletből, és importálható egy másikba.
 
-Az ER keretrendszer a [Dokumentumkezelés konfigurálása](../../fin-ops/organization-administration/configure-document-management.md) segítségével tárolja a szükséges sablonokat az aktuális Finance and Operations példányhoz. Az ER keretrendszer beállításaitól függően a Microsoft Azure Blob tároló vagy a Microsoft SharePoint mappa választható ki a sablonok fizikai elsődleges tárolóhelyéhez. (További tájékoztatás: [Az Elektronikus jelentéskészítés (ER) keretrendszer konfigurálása](electronic-reporting-er-configure-parameters.md).) A DocuValue tábla minden egyes sablonhoz külön rekordot tárol. A **AccessInformation** mező mindegyik rekordban tárolja a konfigurált tárhelyen található sablonfájl elérési útját.
+Az ER keretrendszer a Dokumentumkezelés [konfigurálása](../../fin-ops/organization-administration/configure-document-management.md) keretrendszer használatával megtartja a szükséges sablonokat az aktuális pénzügyi és műveleti példányhoz. Az ER keretrendszer beállításaitól függően a Microsoft Azure Blob tároló vagy a Microsoft SharePoint mappa választható ki a sablonok fizikai elsődleges tárolóhelyéhez. (További tájékoztatás: [Az Elektronikus jelentéskészítés (ER) keretrendszer konfigurálása](electronic-reporting-er-configure-parameters.md).) A DocuValue tábla minden egyes sablonhoz külön rekordot tárol. A **AccessInformation** mező mindegyik rekordban tárolja a konfigurált tárhelyen található sablonfájl elérési útját.
 
-A Finance and Operations példányok kezelésekor úgy is dönthet, hogy áttelepíti az aktuális példányt egy másik helyre. Előfordulhat például, hogy egy új tesztkörnyezetbe szeretné áttelepíteni a termelési példányt. Ha úgy állította be az ER keretrendszert, hogy a Blob-tárolóban tárolja a sablonokat, akkor az új tesztkörnyezet DocuValue táblája a Blob tárhely példányára hivatkozik atermelési környezetben. Ez a példány azonban nem érhető el a tesztkörnyezetből, mivel az áttelepítési folyamat nem támogatja a Blob-tárolóban található összetevők áttelepítését. Ha tehát olyan ER formátumot próbál futtatni, amely sablon alapján üzleti dokumentumokat hoz létre, akkor kivétel történik, és a program értesíti a hiányzó sablonról. A program arra kéri, hogy használja az ER karbantartó eszközt, majd importálja újra az ER formátumkonfigurációt, amely a sablont tartalmazza. Mivel előfordulhat, hogy a több ER formátumkonfigurációja is van, ez a folyamat időigényes lehet.
+A pénzügyi és műveleti példányok kezelésekor dönthet úgy, hogy az aktuális példányt egy másik helyre áttelepítése. Előfordulhat például, hogy egy új tesztkörnyezetbe szeretné áttelepíteni a termelési példányt. Ha úgy állította be az ER keretrendszert, hogy a Blob-tárolóban tárolja a sablonokat, akkor az új tesztkörnyezet DocuValue táblája a Blob tárhely példányára hivatkozik atermelési környezetben. Ez a példány azonban nem érhető el a tesztkörnyezetből, mivel az áttelepítési folyamat nem támogatja a Blob-tárolóban található összetevők áttelepítését. Ha tehát olyan ER formátumot próbál futtatni, amely sablon alapján üzleti dokumentumokat hoz létre, akkor kivétel történik, és a program értesíti a hiányzó sablonról. A program arra kéri, hogy használja az ER karbantartó eszközt, majd importálja újra az ER formátumkonfigurációt, amely a sablont tartalmazza. Mivel előfordulhat, hogy a több ER formátumkonfigurációja is van, ez a folyamat időigényes lehet.
 
 A sablonok biztonsági mentése funkcióval elérheti, hogy mindig rendelkezésre álljanak a sablonjai az üzleti dokumentumok létrehozásához.
 
@@ -46,7 +46,7 @@ Ennek a funkciónak az esetében a program automatikusan menti az aktuális kör
 - Egy új, a sablont tartalmazó ER formátumkonfigurációt importál.
 - Befejezi egy ER formátumú konfiguráció piszkozatát, amely egy sablont tartalmaz.
 
-A sablonok biztonsági másolatait a program az alkalmazás-adatbázis részeként telepíti át egy új Finance and Operations példányra.
+A sablonok biztonsági másolatai áttelepítve az alkalmazás-adatbázis részeként egy új pénzügyi példányba és műveletbe.
 
 Ha a kimenő dokumentumok létrehozásához, beszállítói fizetések feldolgozásához, beleértve fizetési értesítések és kontrolling jelentések generálását szükséges az ER formátum, de a szükséges sablon nem található az elsődleges tárolóhelyen, a következő események történnek:
 
@@ -58,7 +58,7 @@ Ha a kimenő dokumentumok létrehozásához, beszállítói fizetések feldolgoz
 
 A **Hibás sablonok visszaállítási eljárásának automatikus kötegelt futtatása** paraméter beállításához végezze el az alábbi lépéseket:
 
-1. A Finance and Operations alkalmazásban nyissa meg a **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációs oldal** menüt.
+1. A Pénzügy és műveletek területén nyissa meg a Szervezet **felügyelete \> – Elektronikus jelentési \> konfigurációk lapot**.
 2. A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
 3. A **Felhasználó paraméterei** párbeszédpanelen állítsa be a szükséges értéket a **Hibás sablonok visszaállítási eljárásának automatikus kötegelt futtatása** paraméterhez.
 
@@ -83,7 +83,7 @@ Alapértelmezésként a folyamat automatikusan létrehozza az ER formátumúkonf
 
 Ha a **Sablonok biztonsági másolatai elkészítésének leállítása** elem **Igen** értékre van beállítva, és nem szeretné megtartani azokat a biztonsági másolatokat, amelyek korábban a sablonokról készültek válassza a **Biztonsági mentés tárhelyének karbantartása** lehetőséget az **Elektronikus jelentéskészítés paraméterei** oldalon.
 
-Ha frissítette a környezetet a Finance and Operations 10.0.5 (október 2019) verzióra, és egy olyan új környezetbe kíván áttérni, amely futtatható ER formátumkonfigurációkat tartalmaz válassza ki a **Biztonsági mentést kitöltése** lehetőséget az **Elektronikus jelentéskészítési paraméterek** oldalon még az áttelepítés előtt. Ez a gomb elindítja az összes elérhető sablon biztonsági másolatainak elkészítésének folyamatát, így a sablonokat a biztonsági mentési tárolóhelyen tárolja.
+Ha frissítette a környezetet a pénzügyre és a műveletekre a 10.0.5-ös verzióra (2019. október), és olyan új környezetbe szeretne áttelepítést készíteni, amely futtatható ER-formátumkonfigurációkat tartalmaz, **·** **mielőtt** az áttelepítésre sor kerül. Ez a gomb elindítja az összes elérhető sablon biztonsági másolatainak elkészítésének folyamatát, így a sablonokat a biztonsági mentési tárolóhelyen tárolja.
 
 ![Elektronikus jelentéskészítés paraméterei lap.](./media/GER-BackupTemplates-5.png)
 
@@ -93,7 +93,7 @@ Ugrás a **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés*
 
 ## <a name="supported-deployments"></a>Támogatott telepítések
 
-A Finance and Operations 10.0.5 verziójában az ER sablonok biztonságimentés tárhelye csak felhő alapú telepítésekben érhető el.
+A pénzügyek és műveletek 10.0.5-ös verziója esetén az ER-sablonok biztonsági mentése funkció csak a felhőalapú telepítés esetén érhető el.
 
 ## <a name="additional-resources"></a>További erőforrások
 

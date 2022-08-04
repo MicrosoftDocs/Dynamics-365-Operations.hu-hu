@@ -1,8 +1,8 @@
 ---
 title: Billentyűparancsok
-description: Ez a témakör áttekintést nyújt a Pénzügy és műveletek alkalmazások használata során használható gyorsbillentyű-kombinációkról.
+description: Ez a cikk áttekintést nyújt az olyan billentyűparancs-kombinációkról, amelyek a Pénzügyi és műveleti alkalmazások használata során használhatók.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0f833e3a6d45329fd8a69af658f392df32e4db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
+ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866117"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9140439"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
@@ -27,7 +27,7 @@ ms.locfileid: "8866117"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-A billentyűparancsokkal gyorsan és hatékonyabban adhatja meg az adatokat a Pénzügy és műveletek alkalmazásokban. 
+A gyorsbillentyűk segítségével gyorsan és hatékonyabban adhatja meg az adatokat a pénzügyi és műveleti alkalmazásokban. 
 
 > [!NOTE]
 > Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
@@ -197,6 +197,7 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | A navigációs lista bezárása a Részletek űrlapon (a fókusszal a navigációs listán) | Esc                        |
 | Ugrás a fő oldal tartalmára (a fókusszal egy másik ablakban)                    | Alt+M,M                    |
 | Ugrás az adatterület panelre (ami a megnyitását is jelentheti)                       | Alt+M,B vagy Ctrl+F2         |
+| Ugrás a következő funkcióbuborékra                                              | Alt+M,C                    |
 
 > [!NOTE]
 > **A lapfülek racionalizálása a teljes oldalas képernyők funkcióban, amely a 10.0.26-os** verzióban található, lehetővé teszi a felhasználók számára, hogy végiglépkedhetnek a lap összes régióján, anélkül, hogy a régiók között az egérnek vagy egy külön billentyűparancsnak a használatát megkövetelték volna. A meglévő gyorsbillentyűk (például az Alt+M billentyűkombinációk) továbbra is használhatók a gyorsbillentyűknek a lap régiói közötti gyors mozgatása érdekében.
@@ -259,13 +260,14 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | Az animált előugró ablakon több/kevesebb adat megjelenítése (a feladatok útmutatójának lejátszásakor) | Alt+R,M                    |
 
 ## <a name="focus-management"></a>Fókuszkezelés 
-A fókuszkezelés azt írja le, hogyan kezeli a rendszer a felhasználói fókuszt az alkalmazásokban. A Pénzügy és a Művelet alkalmazás speciális fókuszműveleteket tartalmaz a felhasználói hatékonyság optimalizálása érdekében, különösen adatbeviteli helyzetekben. A fókusz viselkedése a következőkre kiterjed:  
+A fókuszkezelés azt írja le, hogyan kezeli a rendszer a felhasználói fókuszt az alkalmazásokban. A Pénzügyi és a Műveletalkalmazások speciális fókuszműveleteket tartalmaznak, amelyek célja a felhasználói hatékonyság optimalizálása, különösen adatbeviteli helyzetekben. A fókusz viselkedése a következőkre kiterjed:  
 
 -  A lap betöltésekor a lap első szerkeszthető beviteli vezérlőjére fókuszál a rendszer, és azonnal el lehet fogadni a felhasználói adatokat. Ha a lapon nincs szerkeszthető beviteli vezérlő, akkor a kezdeti fókusz tartalékának lehetősége az első beviteli vezérlő a lapon, amelyet az első, fókuszálható vezérlő követ az oldalon.   
--  Ha egy gomb ki van választva, akkor a program feldolgoz egy műveletet, és a fókusz visszatérhet a laphoz. Ilyen esetben a fókusz visszatér a kiválasztott gombvezérlőre. Ez igaz a Pénzügy **és** Művelet alkalmazásokban is, kivéve ha a gomb a műveleti ablakban vagy egy eszköztáron található. Ilyen esetben a művelet befejezésekor a fókusz a műveletpanel (vagy eszköztár) azon utolsó vezérlőjára áll vissza, *amely* a gomb kiválasztása előtt volt a fókuszban.
+-  Ha egy gomb ki van választva, akkor a program feldolgoz egy műveletet, és a fókusz visszatérhet a laphoz. Ilyen esetben a fókusz visszatér a kiválasztott gombvezérlőre. Ez igaz a pénzügyi és műveleti **alkalmazásokban** is, kivéve ha a gomb a műveleti ablakban vagy egy eszköztáron található. Ilyen esetben a művelet befejezésekor a fókusz a műveletpanel (vagy eszköztár) azon utolsó vezérlőjára áll vissza, *amely* a gomb kiválasztása előtt volt a fókuszban.
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Billentyűparancsok a hiányzó számla elemzéshez](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

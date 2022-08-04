@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8cfbcfea3c6056d87eb600c9a2f9e0d1727c30ff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f73f7189ad82d85169a4e0df573dd26dab8bb009
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894743"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070600"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-konfigurációk létrehozása a Regulatory Configuration Services (RCS) rendszerben, és feltöltésük a globális tárba
 
@@ -37,7 +37,7 @@ Mielőtt teljesítené ezeket az eljárásokat, végre kell hajtania a következ
 
 Gondoskodnia kell arról, hogy a szervezethez rcS-környezet legyen létesítve. Ha nincs rcS-példánya létesítve a szervezethez, a következő lépések segítségével használhatja ezt:
 
-1. A Pénzügy és műveletek alkalmazásban használja a Szervezet **felügyelete** \> **– Munkaterületek** \> **elektronikus jelentéseit**.
+1. Egy pénzügyi és műveleti alkalmazásban használja a **Szervezet** \> **felügyelete – Munkaterületek** \> **elektronikus jelentéseit**.
 2. A **Kapcsolódó hivatkozások / Külső hivatkozások mezőben válassza** **a Jogi szolgáltatások –** Konfiguráció lehetőséget, **majd** az ehhez szükséges beállításokat követve hajtsa végre a regisztrációhoz szükséges utasításokat.
 
 Ha már létesített RCS-környezetet a szervezethez, az oldal URL-címével **férhet hozzá, és válassza ki a bejelentkezési lehetőséget**.
@@ -105,3 +105,4 @@ A konfigurációverziót törölve lesz, és egy megerősítő üzenet jelenik m
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

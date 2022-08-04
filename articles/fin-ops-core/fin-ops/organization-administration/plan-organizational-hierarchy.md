@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb0b306cca715cad64d62fff843987a8e98eb99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771872"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108764"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Szervezeti hierarchia megtervezése
 
@@ -42,7 +42,7 @@ Hierarchiák tervezése esetén fontos figyelembe venni a szervezeti hierarchia 
 
 Rendelkeznie kell legalább egy jogi személlyel, hogy képviselje a vállalatot. A jogi személy törvényes szerződéseket köthet és pénzügyi kimutatásokat kell készítenie, amely beszámol teljesítményéről.
 
-A jogi személyek tranzakciós üzlethez vagy konszolidációhoz használhatóak. Ez azt jelenti, hogy a jogi személy az Finance and Operations programban nem feltétlenül képvisel valódi entitást a vállalkozásban. Például egy vállalat, amely részt vesz a tranzakciókban leányvállalati jogi személyeket birtokolhat. Ebben az esetben a jogi személyt meg kell adni a tranzakciókhoz, és egy virtuális jogi személynek konszolidálnia kell a leányvállalati jogi személyek eredményeit és egyenlegét.
+A jogi személyek tranzakciós üzlethez vagy konszolidációhoz használhatóak. Ez azt jelenti, hogy a pénzügyi és a műveletek során a jogi személy nem feltétlenül képviseli a vállalat tényleges entitását. Például egy vállalat, amely részt vesz a tranzakciókban leányvállalati jogi személyeket birtokolhat. Ebben az esetben a jogi személyt meg kell adni a tranzakciókhoz, és egy virtuális jogi személynek konszolidálnia kell a leányvállalati jogi személyek eredményeit és egyenlegét.
 
 A vállalatban lévő belső szervezetek, mint például a területi irodák további jogi személyekként vagy a fő jogi személy üzemi egységeként ábrázolhatók. Az üzemi egységnek nem kell jogilag meghatározott szervezetnek lennie. Az üzemi egységek az üzletben lévő gazdasági erőforrások és üzemeltetési folyamatok szabályozására használatosak. Például a részlegek és a költséghelyek üzemi egységek.
 
@@ -171,7 +171,7 @@ Az olyan országok/régiók, amelyeket a program támogat, a legtöbb kötelező
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Ha a szervezet üzemi egységként van modellezve
 
-Kötelező jelentéseket létre kell hozni egy másik alkalmazás segítségével. Győződjön meg arról, hogy az adatok rögzítése a Finance and Operations alkalmazásokban az üzemi egységek követelményeinek támogatására, ahol azok különböznek a központ követelményeitől.
+Kötelező jelentéseket létre kell hozni egy másik alkalmazás segítségével. Gondoskodnia kell arról, hogy az adatok a pénzügyi és műveleti alkalmazásokban rögzítettek legyen, hogy támogassák az egyes üzemi egységek követelményeit, amelyek eltérnek a központ követelményeitől.
 
 ### <a name="currency"></a>Pénznem
 
@@ -242,3 +242,4 @@ Vegye figyelembe a következő legjobb gyakorlati tanácsokat a szervezeti hiera
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

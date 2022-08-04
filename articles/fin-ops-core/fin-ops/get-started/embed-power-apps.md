@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7dc45e56c5fa616c288ebb4b919f039b7358794
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898398"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123654"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vászonalapú alkalmazások beágyazása a következőből: Power Apps
 
@@ -27,7 +27,7 @@ ms.locfileid: "8898398"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-A Microsoft Power Apps egy olyan szolgáltatás, amely a fejlesztők és a nem műszaki felhasználók számára is lehetővé teszi egyedi üzleti alkalmazások megalkotását mobileszközökre, táblagépekre és internetre, kód írása nélkül. A Pénzügy és a Műveletek alkalmazások támogatják az integrációt a Power Apps. Az Ön, a szervezet vagy a szélesebb fejlesztésű alkalmazások beágyazhatók a Pénzügyi és műveleti alkalmazásokba a termék funkcióinak bővítésére. Például felépíthet egy Power Apps vásznaalkalmazást, amely egy másik rendszerből beolvasható adatokat tartalmaz a Pénzügy és műveletek alkalmazás kiegészítéseként.
+A Microsoft Power Apps egy olyan szolgáltatás, amely a fejlesztők és a nem műszaki felhasználók számára is lehetővé teszi egyedi üzleti alkalmazások megalkotását mobileszközökre, táblagépekre és internetre, kód írása nélkül. A Pénzügyi és a Műveletalkalmazások segítségével integrálni lehet a Power Apps. Az Ön, a szervezet vagy a szélesebb fejlesztésű alkalmazások pénzügyi és műveleti alkalmazásokba ágyazhatók a termék funkcióinak bővítésére. Például felépíthet egy Power Apps vásznaalkalmazást, amely egy pénzügyi alkalmazást és egy műveletalkalmazást egy másik rendszerből beolvasható adatokkal egész ki.
 
 Ha többet szeretne megtudni a vászonalapú alkalmazások beágyazásáról, nézze meg a rövid [Vászonalapú alkalmazások beágyazása](https://www.youtube.com/watch?v=x3qyA1bH-NY) videót.
 
@@ -35,7 +35,7 @@ Ha többet szeretne megtudni a vászonalapú alkalmazások beágyazásáról, n�
 
 Mielőtt Power Apps-ból vászonalapú alkalmazást ágyazna be a kliensbe, meg kell találnia vagy létre kell hoznia egy alkalmazást a kívánt megjelenéssel vagy funkcionalitással. Ez a cikk nem tartalmazza az alkalmazások gyártási folyamatának részletes leírását. Ha még nem járatos a Power Apps terén, akkor tekintse meg a [Power Apps-dokumentációt](/powerapps/).
 
-A vásznai alkalmazásokat háromféleképpen lehet beágyazni a Pénzügy és műveletek alkalmazásba. Az Ön forgatókönyvéhez legjobban illeszkedő megközelítést alkalmazhatja. 
+A vásznai alkalmazásokat háromféleképpen lehet beágyazni a pénzügyi és műveleti alkalmazásokba. Az Ön forgatókönyvéhez legjobban illeszkedő megközelítést alkalmazhatja. 
 
 - A vászonalkalmazás beágyazása a **Power Apps** gombba az oldal standard műveleti ablaktábláján.. Az ilyen módon hozzáadott alkalmazások elemekként jelennek meg a **Power Apps** menügombon, és az alkalmazások oldalablakokban nyílnak meg. 
 - A vászonalkalmazás beágyazása közvetlenül egy meglévő oldalra új lapként (pivot lap, gyorslap, lap vagy munkaterület szakasz).
@@ -68,7 +68,7 @@ A következő eljárás azt mutatja be, hogyan lehet beágyazni egy vászonalkal
 
 ### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Vászonalkalmazás beágyazása teljes oldalas élményként az irányítópultról
 
-Előfordulhat, hogy egy vásznaalkalmazást szeretne beágyazni a irányítópultba, ha az alkalmazás nem kapcsolódik meglévő laphoz, vagy ha az alkalmazást teljes oldalas felületként szeretné látni a Pénzügy és műveletek alkalmazáson belül.
+Előfordulhat, hogy egy vásznaalkalmazást szeretne beágyazni a irányítópultba, ha az alkalmazás nem kapcsolódik meglévő laphoz, vagy ha az alkalmazást teljes oldalas felületként szeretné látni a pénzügyek és a műveletek alkalmazáson belül.
 
 > [!NOTE]
 > Ahhoz, hogy ez a képesség elérhetővé váljon, a funkciókezelésben be kell kapcsolnia a **Teljes oldalas alkalmazások** funkciót. 
@@ -86,7 +86,7 @@ Amikor beágyaz egy vászonalkalmazást, a következő paramétereket kell beál
 
 - **Név** - Adja meg a beágyazott alkalmazást tartalmazó gomb vagy lap megjelenítendő szövegét. Gyakran előfordulhat, hogy ebben a mezőben meg kell ismételni az alkalmazás nevét.
 - **App ID** - Adja meg a beágyazni kívánt vászonalkalmazás globálisan egyedi azonosítóját (GUID). Az érték lekérdezéséhez keresse meg az alkalmazást a [make.powerapps.com](https://make.powerapps.com) oldalon, majd keresse meg az **Alkalmazás azonosítója** mezőt a **Részletek** alatt.
-- Az **alkalmazás bemeneti kontextusa** - opcionálisan kiválaszthatja azt a mezőt, amely tartalmazza az alkalmazásnak bemenetként átadni kívánt adatokat. Arról, hogy hogyan férhet hozzá az alkalmazás a Pénzügyi és műveleti alkalmazásokból küldött adatokhoz, [a Jelen cikk](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) későbbi, A Pénzügy és műveleti alkalmazások szakaszból elküldött adatokra vonatkozó alkalmazás megépítése című részében olvashat tájékoztatást.
+- Az **alkalmazás bemeneti kontextusa** - opcionálisan kiválaszthatja azt a mezőt, amely tartalmazza az alkalmazásnak bemenetként átadni kívánt adatokat. Arról, hogy hogyan férhet hozzá az alkalmazás a pénzügyi és műveletküldető alkalmazásokból küldött adatokhoz, [a](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) cikk későbbi, a Pénzügyi és műveleti alkalmazások szakaszból küldött adatokat kihasználó alkalmazás megépítése című részében olvashatja.
 
     A 10.0.19-es verzió óta az aktuális jogalany is átadásra kerül a vászonalkalmazásnak kontextusként a **cmp** URL paraméteren keresztül. Ez a viselkedés nem lesz hatással a célvászonalkalmazáson, amíg az alkalmazás nem használja az információt.
 
@@ -107,15 +107,15 @@ Miután beágyazott egy vászonalkalmazást egy oldalra, és meggyőződött arr
     - Ha a **Mentett nézetek** funkció ki van kapcsolva, a rendszeradminisztrátor a **Személyre szabás** lapon keresztül a vászonalkalmazást tartalmazó személyre szabást adhat a megfelelő felhasználói csoportnak. Alternatívaként exportálhatja az oldal személyre szabott beállításait, majd elküldheti azokat egy vagy több felhasználónak. Ezután minden egyes felhasználó importálhatja a személyre szabást. A személyre szabási eszköztárban vannak gombok, amelyekkel exportálhatja és importálhatja a személyre szabott beállításokat.
 
 > [!NOTE]
-> Ha a vásznaalkalmazás meg van osztva külső felhasználókkal, akkor ezek a felhasználók nem használhatja a Pénzügy és műveletek alkalmazásokba ágyazott alkalmazást. Az alkalmazást azonban közvetlenül a Power Appsen belül elérhetik. A külső felhasználók olyan vendégeket és felhasználókat Microsoft 365 tartalmaznak, akik nem tartoznak ahhoz az Azure Directoryhoz, ahová a Pénzügy és műveletek alkalmazást telepítik.
+> Ha a vásznaalkalmazás meg van osztva külső felhasználókkal, akkor ezek a felhasználók nem használhatja a pénzügy- és műveleti alkalmazásokba ágyazott alkalmazást. Az alkalmazást azonban közvetlenül a Power Appsen belül elérhetik. A külső felhasználók olyan vendégeket és felhasználókat Microsoft 365 tartalmaznak, akik nem tartoznak ahhoz az Azure Directoryhoz, ahová a Pénzügy és műveletek alkalmazást telepítik.
 
 A termék személyre szabási funkcióival és a használatukkal kapcsolatos bővebb információért lásd: [A felhasználói élmény testreszabása](personalize-user-experience.md).
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazásokból küldött adatokat használó vásznai alkalmazás telepítése
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>A pénzügyi és műveleti alkalmazásokból küldött adatokat használó vásznai alkalmazás telepítése
 
-Amikor olyan vásznaalkalmazást hoz létre, amely be lesz ágyazva a Pénzügy és műveletek alkalmazásba, a folyamat egyik fontos része az, hogy a Pénzügyi és műveleti alkalmazás bemeneteit használja fel. A fejlesztői Power Apps tapasztalatból a Pénzügy és műveletek alkalmazásból átadott bemeneti adatok a **Param("EntityId") változóval érhetők** el. Továbbá a 10.0.19-es verziótól kezdve az aktuális jogi személy is át lesz adva a vászonalapú alkalmazásnak a **Param(„cmp”)** változóval. 
+Amikor olyan vásznaalkalmazást hoz létre, amely a pénzügyi és műveleti alkalmazásba lesz beágyazva, a folyamat egyik fontos része az, hogy a pénzügyi és műveleti alkalmazás bemeneteit használja fel. A fejlesztői Power Apps tapasztalatból a pénzügyek és műveletek alkalmazásból átadott bemeneti adatok a **Param("EntityId") változóval érhetők** el. Továbbá a 10.0.19-es verziótól kezdve az aktuális jogi személy is át lesz adva a vászonalapú alkalmazásnak a **Param(„cmp”)** változóval. 
 
-Például az alkalmazás OnStart függvényében a Pénzügyi és Művelet alkalmazásokból származó adatbeviteli adatokat egy ilyen változóra állíthatja:
+Például az alkalmazás OnStart funkcióban a pénzügyi és műveleti alkalmazásokból származó adatbeviteli adatokat egy ilyen változóra állíthatja:
 
 ``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
@@ -125,7 +125,7 @@ If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegal
 
 ## <a name="viewing-a-canvas-app"></a>Vászonalapú alkalmazás megtekintése
 
-A Pénzügy és műveletek alkalmazások egy lapján található beágyazott vásznaalkalmazás megtekintéséhez menjen egy olyan oldalra, amelybe be van ágyazva alkalmazás. Ne felejtse el, hogy az alkalmazásokat a szokásos Művelet ablaktábla **Power Apps** gombján keresztül érheti el. Másik lehetőségként megjelenhetnek közvetlenül egy oldalon új lap, gyorslap vagy lapát, illetve a munkaterület új szakasza formájában. Amikor a felhasználók először megpróbálnak betölteni egy alkalmazást egy oldalon, a rendszer meg fogja kérni őket, hogy jelentkezzenek be. Ez a lépés biztosítja, hogy a felhasználók megfelelő jogosultságokkal rendelkeznek az alkalmazás használatához.
+Ha a pénzügy- és műveletalkalmazások egy lapján meg egy beágyazott vásznaalkalmazást is meg lehet jelenni, akkor egy olyan oldalra kell átmenni, amelybe be van ágyazva alkalmazás. Ne felejtse el, hogy az alkalmazásokat a szokásos Művelet ablaktábla **Power Apps** gombján keresztül érheti el. Másik lehetőségként megjelenhetnek közvetlenül egy oldalon új lap, gyorslap vagy lapát, illetve a munkaterület új szakasza formájában. Amikor a felhasználók először megpróbálnak betölteni egy alkalmazást egy oldalon, a rendszer meg fogja kérni őket, hogy jelentkezzenek be. Ez a lépés biztosítja, hogy a felhasználók megfelelő jogosultságokkal rendelkeznek az alkalmazás használatához.
 
 ## <a name="editing-an-embedded-app"></a>Beágyazott alkalmazás szerkesztése
 
@@ -184,3 +184,4 @@ public final class ClassTest_Extension
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

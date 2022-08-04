@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7fb922a35504b69aa8cc3d92cb981e8fb060290
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870958"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067586"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>A Dynamics 365 Human Resources új vagy módosult elemei (2021. július 12.)
 
@@ -80,7 +80,7 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- vagy
 
 | Funkció | Részletek |
 | --- | --- |
-| Platform frissítése erre: 10.0.20 (44) | A 10.0.20-es verziófrissítés az ütemezés szerint a szolgáltatáskiadással, 2021. július 26-én indul el. A további tudnivalókat [lásd a Pénzügy és művelet alkalmazások 10.0.20-as verziójának Platformfrissítései (augusztus 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20). |
+| Platform frissítése erre: 10.0.20 (44) | A 10.0.20-es verziófrissítés az ütemezés szerint a szolgáltatáskiadással, 2021. július 26-én indul el. A további tudnivalókat [lásd a Pénzügyi és üzemeltetési alkalmazások 10.0.20-as verziójának Platformfrissítései (2021. augusztus)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20). |
 
 A tervezett funkciók és az ütemezett kiadásaik teljes listáját lásd: [A Dynamics 365 Human Resources 2021. első kiadási hullámának áttekintése](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
@@ -92,3 +92,4 @@ A tervezett funkciók és az ütemezett kiadásaik teljes listáját lásd: [A D
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

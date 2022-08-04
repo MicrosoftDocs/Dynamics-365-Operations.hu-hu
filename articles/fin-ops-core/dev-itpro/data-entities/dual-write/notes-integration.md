@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19a1fd53f19575a16ee8d8b7391c30f0cacf26a8
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876715"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111456"
 ---
 # <a name="note-integration"></a>Megjegyzésintegráció
 
@@ -30,7 +30,7 @@ A vevői adatok a következőképpen osztályozhatók:
 + **A Dynamics 365 felhasználója esetében kezelhető adatok** – például egy olyan vevő, aki egy Felületi egységet vásárol, különleges utasításokat ad meg, amelyek azt jelzik, hogy az eszközt ajándékcsomagolással kell ellátni a szállítás előtt. Ezek az utasítások olyan kezelhető információkat tartalmaznak, amelyet a csomagolásért felelős Contoso alkalmazottnak kell kezelnie.
 + **Nem műveletre használható adatok** – például egy vevő felkeresi a Contoso üzletét, és az üzlet egyik munkatársával folytatott beszélgetés során kifejezi érdeklődését a *Halo* játék és különböző videojáték-kiegészítők iránt. Az üzlet munkatársa feljegyzi ezt az információt. A termékajánlási motor ezt arra használja, hogy ajánlatokat jelenítsen meg a vevőnek.
 
-Általános szabály, hogy a műveletekre *használható* adatok a Pénzügy és műveletek, illetve az Ügyfél-tevékenység alkalmazásokban tevékenységekként vannak rögzítettek. A nemművelhető *adatokat* a pénzügyi és műveletalkalmazások megjegyzéseiként, *illetve* az ügyfél-kötelezettségvállalási alkalmazások megjegyzéseiként rögzíti a rendszer.
+A műveletekhez használható adatok általában pénzügyi *és* műveleti alkalmazásokban, illetve vevői tevékenységi alkalmazásokban végzett tevékenységekként vannak rögzítettek. A nemművelhető információkat a *pénzügyi* és műveletalkalmazások megjegyzéseiként, *illetve* az ügyfél-kötelezettségvállalási alkalmazások megjegyzéseiként rögzíti a rendszer.
 
 > [!TIP]
 > Bár a megjegyzések nem használható adatok, az alkalmazások nem akadályozzák meg abban, hogy ezeket az adatokat kezelhető információkként tárolj és kezelje, ha ezt szeretné.
@@ -39,7 +39,7 @@ A Microsoft jelenleg a megjegyzésintegrációs funkció kiadásán dolgozik. (A
 
 ## <a name="create-a-note-in-a-customer-engagement-app"></a>Megjegyzés létrehozása egy ügyfélkapcsolati alkalmazásban
 
-A következő lépésekkel hozhat létre megjegyzést az ügyfél-kapcsolati alkalmazásban, majd szinkronizálhatja azt a Pénzügy és műveletek alkalmazással.
+A következő lépésekkel megjegyzést hozhat létre egy vevői kapcsolati alkalmazásban, és azt szinkronizálhatja egy pénzügyi és műveleti alkalmazással.
 
 1. Nyissa meg egy vevő számlarekordját az ügyfélkapcsolati alkalmazásban.
 2. Az **Idősor** ablaktáblán válassza a pluszjelet (**+**), majd a **Megjegyzés** gombra kattintva hozzon létre egy megjegyzést.
@@ -54,7 +54,7 @@ A következő lépésekkel hozhat létre megjegyzést az ügyfél-kapcsolati alk
 
     ![Új megjegyzés a vevői idősoron.](media/notes-ce-3.png)
 
-4. Jelentkezzen be a Pénzügy és műveletek alkalmazásba, és nyissa meg ugyanazt a vevőrekordot. Láthatja, hogy jobb felső sarokban látható **Mellékletek** gomb (gemkapocs szimbólum) jelzi, hogy a rekordhoz melléklet van csatolva.
+4. Jelentkezzen be a pénzügyek és műveletek alkalmazásba, és nyissa meg ugyanazt a vevőrekordot. Láthatja, hogy jobb felső sarokban látható **Mellékletek** gomb (gemkapocs szimbólum) jelzi, hogy a rekordhoz melléklet van csatolva.
 
     ![Értesítés mellékletről.](media/notes-ce-4.png)
 
@@ -62,15 +62,15 @@ A következő lépésekkel hozhat létre megjegyzést az ügyfél-kapcsolati alk
 
     ![Megjegyzés az ügyfélkapcsolati alkalmazásból.](media/notes-ce-5.png)
 
-A megjegyzés minden frissítése oda-vissza szinkronizálva lesz a Pénzügy és Műveletek alkalmazás és a vevői megállapodás alkalmazás között.
+A megjegyzés minden frissítése oda-vissza lesz szinkronizálva a pénzügyi és az üzemeltetési alkalmazás, valamint a vevői megállapodás alkalmazás között.
 
-## <a name="create-a-note-in-a-finance-and-operations-app"></a>Jegyzet létrehozása a Pénzügy és műveletek alkalmazásban
+## <a name="create-a-note-in-a-finance-and-operations-app"></a>Megjegyzés létrehozása a Pénzügyi és műveletek alkalmazásban
 
 A pénzügyi és műveleti alkalmazásokban is létrehozhat jegyzetet, és szinkronizálja a rendszer egy vevői kapcsolati alkalmazással.
 
-A következő lépések szerint hozzon létre egy megjegyzést a Pénzügy és műveletek alkalmazásban, majd szinkronizálja azt egy vevői kapcsolati alkalmazással.
+A következő lépésekkel jegyzetet hozhat létre a pénzügyi és műveleti alkalmazásban, majd szinkronizálhatja azt egy vevői kapcsolati alkalmazással.
 
-1. Válassza a Pénzügy és műveletek alkalmazás Mellékletek **lapján** az Új **megjegyzés** \> **lehetőséget**.
+1. A Pénzügy és műveletek alkalmazásban a Mellékletek **lapon** válassza az Új **megjegyzés** \> **lehetőséget**.
 
     ![Megjegyzés létrehozása a Pénzügy és műveletek alkalmazásban](media/notes-fo-1.png)
 
@@ -121,3 +121,4 @@ A megjegyzésintegráció tartalmazza azokat a táblaleképezéseket, amelyek �
 Ha már telepítette a megjegyzések megoldást, akkor azt nem lehet eltávolítani. 
 
 További tájékoztatás: [Kettős írású leképezési hivatkozás](mapping-reference.md).
+

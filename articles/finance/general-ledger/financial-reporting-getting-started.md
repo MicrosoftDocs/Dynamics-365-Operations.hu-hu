@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
-ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
+ms.openlocfilehash: 9d0c2e821ee504cd62a536674ef91ee89a25c0a9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "9033660"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066417"
 ---
 # <a name="get-started-with-financial-reporting"></a>Első lépések a Pénzügyi jelentéskészítéssel 
 
@@ -151,7 +151,7 @@ Korlátlan számú jelentési fát hozhat létre, hogy szervezete adatait külö
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>A pénzügyi jelentés verziójának frissítése slipstreamingen keresztül
 
-A Pénzügy és a Műveletek alkalmazás minden hónapban frissül. A Financial Reporting azonban nem feltétlenül frissülnek ebben az ütemben. Ezenkívül a vevőknek több lehetőség áll rendelkezésre arról, hogy mikor valósítják meg a Pénzügyi és üzemeltetési alkalmazások frissítéseit. A Financial Reporting frissítései automatikusan telepítve vannak. A Financial Reporting egy erre a célra kijelölt verziót használ fel, amely az ügyfél környezetében lesz betöltve, amikor szolgáltatásfrissítés történik, amikor a szolgáltatás leállítását kezdeményezik, vagy ha a vevő környezete Karbantartási módban van. Ennek a folyamatnak az neve *slipstreaming* vagy *valós frissítés* mivel minden ügyfél-implementáció a Financial Reporting ugyanazon verziójára van beállítva.
+A Pénzügy és a Műveletek alkalmazás minden hónapban frissül. A Financial Reporting azonban nem feltétlenül frissülnek ebben az ütemben. Ezenkívül a vevőknek több lehetőség áll rendelkezésre arról, hogy mikor valósítják meg a pénzügyi és műveleti alkalmazások frissítéseit. A Financial Reporting frissítései automatikusan telepítve vannak. A Financial Reporting egy erre a célra kijelölt verziót használ fel, amely az ügyfél környezetében lesz betöltve, amikor szolgáltatásfrissítés történik, amikor a szolgáltatás leállítását kezdeményezik, vagy ha a vevő környezete Karbantartási módban van. Ennek a folyamatnak az neve *slipstreaming* vagy *valós frissítés* mivel minden ügyfél-implementáció a Financial Reporting ugyanazon verziójára van beállítva.
 
 Az egyes verziókban kiadott módosítások [a Dynamics 365 Pénzügy újdonságei és újdonságei című témakörben találhatók](../../finance/get-started/whats-new-home-page.md). A platformfrissítések és hibajavítások az egyes kiadásokhoz a lap alján, a "További erőforrások" szakaszban találhatók.
 
@@ -254,3 +254,4 @@ Probléma: A következő hibaüzenetet kapja: „Nem sikerült csatlakozni a Fin
 - [Jelentési fa definíciója a pénzügyi jelentésekben](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

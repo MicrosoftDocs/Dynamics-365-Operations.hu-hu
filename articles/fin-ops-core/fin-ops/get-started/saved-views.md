@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845413"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125150"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
@@ -215,7 +215,7 @@ A mentett nézetekkel kapcsolatos ismert problémák listája a [Mentett nézete
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hogyan lehet engedélyezni a mentett nézeteket a saját környezetemben?
 
 > [!NOTE]
-> A **Mentett nézetek** funkcióhoz engedélyezni kell a Pénzügy és műveletek személyre szabási rendszerét. Ha a teljes környezetnél ki van kapcsolva a testreszabás, a nézeteket a rendszer akkor is letiltja, ha a lenti lépéseket elvégzi. 
+> A **Mentett nézetek** funkcióhoz engedélyezni kell a Pénzügyi és műveletalkalmazások Személyre szabási rendszerét. Ha a teljes környezetnél ki van kapcsolva a testreszabás, a nézeteket a rendszer akkor is letiltja, ha a lenti lépéseket elvégzi. 
 
 A **Mentett nézetek** funkciót bármely környezetben be- és kikapcsolhatja a Funkciókezelés segítségével. Ha be van kapcsolva, a mentett nézetek minden későbbi felhasználói munkamenetben engedélyezve lesznek.
 
@@ -255,3 +255,4 @@ Ha egy nézetet közzétesz egy adott jogalany számára, de nem teszi közzé a
 - **10.0.21-es vagy újabb verzió:** Ha a **Mentett nézetek javított jogalany-támogatása** funkció be van kapcsolva, a nézetválasztó mindig csak a megadott jogalanyok nézetét fogja megjeleníteni. Ez a viselkedés azért következik be, mert a funkció lehetővé teszi, hogy a nézetek (beleértve a személyes nézeteket is) meghatározott jogi személyekhez kapcsolódjanak.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

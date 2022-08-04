@@ -1,22 +1,22 @@
 ---
 title: A Commerce Scale Unit (felhő) inicializálása
 description: Ez a témakör bemutatja a Commerce Scale Unit (felhő) inicializálását a következőben:Microsoft Dynamics 365 Commerce
-author: AamirAllaq
-ms.date: 06/03/2022
+author: jashanno
+ms.date: 07/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: jashanno
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
-ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
+ms.openlocfilehash: 93fbf2893fecc7b731f946797907bce4f8448309
+ms.sourcegitcommit: 8032d6275e6d9994ef9759ee16e743b483f7689e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8942852"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183363"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>A Commerce Scale Unit (felhő) inicializálása
 
@@ -51,30 +51,30 @@ A Commerce Scale Unit szolgáltatás a következő régiókban érhető el telep
 
 | Globális hely | Régió              | Elérhetőség        | Megjegyzések                  |
 |-----------------|---------------------|---------------------|---------------------------|
-| AMERICAS        | USA keleti régiója             | Általánosan elérhető |                           |
-| AMERICAS        | USA keleti régiója 2           | Általánosan elérhető |                           |
-| AMERICAS        | USA északi középső régiója    | Korlátozott kapacitás    |                           |
-| AMERICAS        | USA déli középső régiója    | Korlátozott kapacitás    |                           |
-| AMERICAS        | USA középső régiója          | Általánosan elérhető |                           |
-| AMERICAS        | USA nyugati régiója             | Általánosan elérhető |                           |
-| AMERICAS        | Nyugat-EGYESÜLT-2           | Általánosan elérhető |                           |
-| AMERICAS        | Kanada – Közép-Kanada      | Korlátozott kapacitás    |                           |
-| AMERICAS        | Kanada- és Kelet-         | Korlátozott kapacitás    |                           |
-| AMERICAS        | Nyugat-Közép-Usa     | Korlátozott kapacitás    |                           |
-| APAC            | Kelet-Ausztrália      | Általánosan elérhető |                           |
+| AMERIKA        | USA keleti régiója             | Általánosan elérhető |  Nincsenek megjegyzések.                         |
+| AMERIKA        | USA keleti régiója 2           | Általánosan elérhető |  Nincsenek megjegyzések.                          |
+| AMERIKA        | USA északi középső régiója    | Korlátozott kapacitás    |  Nincsenek megjegyzések.                            |
+| AMERIKA        | USA déli középső régiója    | Korlátozott kapacitás    |  Nincsenek megjegyzések.                            |
+| AMERIKA        | USA középső régiója          | Általánosan elérhető |  Nincsenek megjegyzések.                            |
+| AMERIKA        | USA nyugati régiója             | Általánosan elérhető |  Nincsenek megjegyzések.                            |
+| AMERIKA        | Nyugat-EGYESÜLT-2           | Általánosan elérhető |  Nincsenek megjegyzések.                            |
+| AMERIKA        | Kanada – Közép-Kanada      | Korlátozott kapacitás    |  Nincsenek megjegyzések.                            |
+| AMERIKA        | Kanada- és Kelet-         | Korlátozott kapacitás    |   Nincsenek megjegyzések.                           |
+| AMERIKA        | Nyugat-Közép-Usa     | Korlátozott kapacitás    |   Nincsenek megjegyzések.                           |
+| APAC            | Kelet-Ausztrália      | Általánosan elérhető |   Nincsenek megjegyzések.                           |
 | APAC            | Délkelet-Ázsia      | Korlátozott kapacitás | Nem engedélyezett a telepítés.    |
-| APAC            | Kelet-Japán          | Általánosan elérhető |                           |
-| APAC            | Nyugat-Japán          | Általánosan elérhető |                           |
-| APAC            | Délkelet-Ausztrália | Általánosan elérhető |                           |
-| APAC            | Kelet-Ázsia           | Korlátozott kapacitás    |                           |
+| APAC            | Kelet-Japán          | Általánosan elérhető |  Nincsenek megjegyzések.                            |
+| APAC            | Nyugat-Japán          | Általánosan elérhető |   Nincsenek megjegyzések.                           |
+| APAC            | Délkelet-Ausztrália | Általánosan elérhető |   Nincsenek megjegyzések.                           |
+| APAC            | Kelet-Ázsia           | Korlátozott kapacitás    |   Nincsenek megjegyzések.                           |
 | APAC            | India- és Dél-India         | Korlátozott kapacitás | Nem engedélyezett a telepítés.    |
-| APAC            | India – Közép-India       | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges |
-| EMEA            | Nyugat-Európa         | Általánosan elérhető |                           |
-| EMEA            | Észak-Európa        | Általánosan elérhető |                           |
-| EMEA            | Egyesült Királyság - Dél            | Korlátozott kapacitás    |                           |
-| EMEA            | Egyesült Királyság – Nyugat             | Korlátozott kapacitás    |                           |
-| Svájc     | Svájc - Észak   | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges |
-| UAE             | Észak-Egyesült Arab Emírségek           | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges |
+| APAC            | India – Közép-India       | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges. |
+| EMEA            | Nyugat-Európa         | Korlátozott kapacitás    | Jelenleg nem érhető el az LCS szolgáltatásban. |
+| EMEA            | Észak-Európa        | Korlátozott kapacitás    | Jelenleg nem érhető el az LCS szolgáltatásban. |
+| EMEA            | Egyesült Királyság - Dél            | Általánosan elérhető |    Nincsenek megjegyzések.                          |
+| EMEA            | Egyesült Királyság – Nyugat             | Általánosan elérhető |    Nincsenek megjegyzések.                          |
+| Svájc     | Svájc - Észak   | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges. |
+| Uae             | Észak-Egyesült Arab Emírségek           | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges. |
 
 A korlátozott kapacitású régiók telepítési kapacitása rendkívül korlátozott. A telepítésre vonatkozó kéréseket eset szerint kell kiértékelni. Ha üzleti tevékenységre van szükség a korlátozott kapacitású régiókban való telepítéshez, támogatási kérést lehet kérni a várakozási listához való hozzáadásra. A korlátozott kapacitású területek jelenleg nem teszik lehetővé a Commerce Scale Unit telepítését. 
 

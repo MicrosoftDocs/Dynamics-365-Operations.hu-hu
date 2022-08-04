@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fb42d4ccd2d8797a34f6351caf7dedbc1e957fd5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d515fb46dcc2d135412d140b98f0578cae89c409
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885812"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065898"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenzió foglalási irányelv
 
 [!include [banner](../includes/banner.md)]
 
-Amikor egy *Köteg alatti\[hely\]* típusú készlet foglalási hierarchiája termékekhez van társítva, a kötegelt nyomon követéssel ellátott termékeket értékesítő és a logisztikai műveleteiket a Microsoft Dynamics 365 raktározási rendszerrel (WMS) kompatibilisként futtató vállalatok nem foglalhatják le az illető termékek konkrét kötegeit ügyfelek értékesítési rendeléseihez.
+*\[\]* Ha termékekhez társítva van egy köteg alatti hely típusú készletfoglalási hierarchia, akkor azok a vállalkozások, amelyek kötegben nyomon követéses termékeket értékesítik, és a raktárkezelési folyamatokhoz engedélyezett műveletként futtatják a logisztikát, nem foglalhat le adott kötegeket az adott termékekből vevői értékesítési rendelésekhez.
 
 Ugyanígy nem foglalható le specifikus azonosítótábla az értékesítési rendelésen szereplő termékekhez, amikor ezek a termékek az alapértelmezett foglalási hierarchiához vannak társítva.
 

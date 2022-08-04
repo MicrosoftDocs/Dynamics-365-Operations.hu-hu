@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 24d4a722ee143dc0869f758475aaf377e7a9e084
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954521"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166839"
 ---
 # <a name="tax-calculation-overview"></a>Adószámítás áttekintése
 
@@ -29,7 +29,7 @@ Az adószámítás egy hiperskálázható több-bérlős szolgáltatás, amely l
 Az adószámítás integrálva van a Dynamics 365 Pénzügy és a Dynamics 365 Supply Chain Management. Végül integrálva lesz a Dynamics 365 Project Operations, Dynamics 365 Commerce és más saját és harmadik féltől származó alkalmazásokkal is.
 
 > [!IMPORTANT]
-> Ha engedélyezi az Adószámítás funkciót, előfordulhat, hogy a kapcsolódó adatokon végzett egyes műveletek a szolgáltatási adatokat karbantartó adatközponttól eltérő adatközpontban kerülnek végrehajtásra. Az adószámítás engedélyezése előtt tekintse át a [Felhasználási](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) feltételeket. Az Ön személyes adatainak védelme fontos a számunkra. További információt az [adatvédelmi nyilatkozatban találhat](https://go.microsoft.com/fwlink/?LinkId=521839).
+> Ha engedélyezi az Adószámítás funkciót, előfordulhat, hogy a kapcsolódó adatokon végzett egyes műveletek a szolgáltatási adatokat karbantartó adatközponttól eltérő adatközpontban kerülnek végrehajtásra. Az adószámítás engedélyezése előtt tekintse át a [Felhasználási](https://go.microsoft.com/fwlink/?linkid=2156043) feltételeket. Az Ön személyes adatainak védelme fontos a számunkra. További információt az [adatvédelmi nyilatkozatban találhat](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Az Adószámítás egy mikroszolgáltatás-alapú adómotor, amely exponenciális skálázhatóságot kínál, és a következő feladatok elvégzésében segít:
 

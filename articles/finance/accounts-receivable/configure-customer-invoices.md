@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876325"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129512"
 ---
 # <a name="create-a-customer-invoice"></a>Vevői számla létrehozása
 
@@ -76,7 +76,7 @@ A számla feladásakor az egyes cikkekhez tartozó **Számlahátralék** érték
 
 A készlettranzakciók a számla számával frissítődnek, míg az értékesítési rendelés **Sor állapota** mezőjének értéke **Számlázott** állapotúra változik. 
 
-Tekintse meg az **Összes értékesítési rendelés** listaoldalon az értékesítési rendelések állapotát.
+Az értékesítési rendelések állapotának megtekintése az Összes **értékesítési rendelés listaoldalon**.
 
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Értékesítési rendelések vagy szállítólevelek konszolidálása feladáshoz
 Ezt a folyamatot akkor kell használni, amikor egy vagy több értékesítési rendelés is számlázásra kész, és azokat össze kívánja vonni egyetlen számlába. 
@@ -90,6 +90,14 @@ Az értékesítési rendelés **vevői** **számlái telephely vagy szállítás
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Feladás a Bevétel számlára az olyan értékesítésirendelés-sorokhoz, amelyekhez nem volt ár és költség
 A **főkönyvben** **frissítheti** a Bevétel számlát az olyan értékesítésirendelés-soroknál, amelyekben nincs ár és költség. Az adatok **beállítását** **·** **vagy** megtekintéséhez a Nulla árú és nulla költségű értékesítésirendelés-számlasorok feladása paramétert adja meg a Kinnlevőségek paraméterei oldal Főkönyv és áfa lapján. (**Kinnlevőségek > Beállítása > Kinnlevőségek paraméterei)** Válassza az **Igen** lehetőséget az olyan **értékesítésirendelés**-számlasorok Bevétel számlájának frissítéséhez, amelyekben nincs ár, és nincs költség. Ha ez a beállítás be van jelölve, a bizonylat 0,00 bejegyzést tartalmaz a **vevői** **egyenleghez és a bevételfeladási típusokhoz.** Bevételi számla definiálása az **Értékesítési** rendelés számladefiníció lapján, **a** Készletfeladás paraméterlapon található. Ha ez a beállítás nincs bejelölve, akkor az ár- vagy költségadatokat nem adó sorok nem adnak fel a bevételi **számlára**. Ehelyett a bizonylat a vevői egyenleg feladási típusának 0,00-s **bejegyzését** fogja tartalmazni.
+
+## <a name="line-creation-sequence-number-information"></a>Sor-létrehozás sorszámának adatai
+A vevői számlasorok feladása során lehetősége van sorszámok létrehozására. A sorok létrehozási sorozatszámai a feladási folyamat során rendelhetők hozzá. A nem egymást követő számozás engedélyezésével javítható a vevői számlafeladás teljesítménye. A sorok létrehozásának sorozatszámait olyan külső fél integrációi használják, amelyek egymást követő sorrendre várnak. Forduljon az it-részleghez az esetleges sor-létrehozási sorozatszámokkal integrált bővítményekről.
+
+Az információ beállításhoz vagy **megtekintéséhez** **·** **a Kinnlevőségek paraméterei lapon, a Frissítések lapon állítsa be az Egymás utáni sorszámok hozzárendelése lehetőséget a vevői számlasorok feladása** esetén:
+
+- Állítsa Nem beállításra **a** nem sorszámozást a sorok létrehozásához.
+- A szekvenciális számozáshoz **állítsa** Igen beállításra. A beállítást Igen beállításra **kell** állítani az Olaszországban elsődleges címmel beállított jogi személyek esetében. Ha **a** **CustInvoiceTransRandLineCreationSeqNumFállítva** járat le van tiltva, akkor igenre kell állítani.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>További beállítások a feladás módjának megváltoztatásához
 A következő mezők esetében módosul a viselkedés a feladási folyamat során.

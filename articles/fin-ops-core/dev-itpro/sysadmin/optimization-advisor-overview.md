@@ -1,6 +1,6 @@
 ---
 title: Optimalizálási tanácsadó – áttekintés
-description: Ez a témakör azt írja le, hogy hogyan használható a optimalizálási művelet a Pénzügy és műveletek optimális konfigurációjának biztosítása érdekében.
+description: Ez a témakör azt írja le, hogy hogyan használható a optimalizálási művelet a pénzügyek és műveletek optimális konfigurációjának biztosítása érdekében.
 author: roxanadiaconu
 ms.date: 07/23/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1dd66e27098b4125b03c4fe6b52825afe2ff34cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fb71453c37572c4956d98d4309d3526a7fbc1124
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865861"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109040"
 ---
 # <a name="optimization-advisor-overview"></a>Optimalizálási tanácsadó – áttekintés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt írja le, hogy hogyan használható a optimalizálási művelet a Pénzügy és műveletek optimális konfigurációjának biztosítása érdekében.
+Ez a témakör azt írja le, hogy hogyan használható a optimalizálási művelet a pénzügyek és műveletek optimális konfigurációjának biztosítása érdekében.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -44,7 +44,7 @@ Szabványos biztonsági házirendek vonatkoznak az optimalizálási lehetősége
 
 Amikor műveletet hajt végre az optimalizálási lehetőségeken, a rendszer kiszámítja a lehetőség hatását az üzleti folyamatok futásidő-csökkentésének szempontjából. Sajnos ez a funkció nem használható az összes optimalizálási lehetőséghez.
 
-Ha többet szeretne megtudni optimalizálási tanácsadóról nézze meg a rövid [Optimalizálási tanácsadó a Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ) videóban.
+Ha további tudnivalókat szeretne tudni az optimalizálásról, nézze meg [a rövid optimalizálási összefoglalót a Dynamics 365 Pénzügyi videofelvételen](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
 
 ## <a name="optimization-rules"></a>Optimalizálási szabályok
 
@@ -90,7 +90,7 @@ Adott szabályok kiértékelésének inaktiválásához válassza a szabály ál
 
 [Optimalizálási tanácsadó szabályainak létrehozása](./create-rules-optimization-advisor.md)
 
-[Optimalizálási tanácsadó a Dynamics 365 for Finance and Operations (Videó)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+[Optimalizálás a Dynamics 365 Pénzügyben (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91cc0e59405bc085e09f01f05ef02e4a0260481e
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894266"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111894"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>A Potenciális vevők készpénzre váltása megoldás adatainak áttelepítése az adatintegrátor megoldásból a kettős írás szolgáltatásba
 
@@ -32,7 +32,7 @@ Manuálisan kell telepítenie. A telepítés után minden pontosan ugyanaz marad
 
 A Potenciális vevők készpénzre váltási adatainak a Data Integrator szolgáltatásból kettős írásba történő áttelepítéséhez kövesse az alábbi lépéseket.
 
-1. Futtassa a Potenciális vevők készpénzre váltása Data Integrator feladatokat egy utolsó teljes szinkronizálás lefuttatása érdekében. Így garantálhatja, hogy mindkét rendszernek (a Pénzügyi és Üzemeltetési alkalmazásoknak, valamint az ügyfél-biztosi alkalmazásoknak) minden adata rendelkezésre legyen.
+1. Futtassa a Potenciális vevők készpénzre váltása Data Integrator feladatokat egy utolsó teljes szinkronizálás lefuttatása érdekében. Így garantálhatja, hogy mind a rendszerek (a pénzügyi, mind a művelet-, mind az ügyfél-tevékenységi alkalmazások) minden adatot tartalmaznak.
 2. A potenciális adatvesztés elkerülése érdekében exportálja a Potenciális vevők készpénzre váltása adatokat a Microsoft Dynamics 365 Sales szolgáltatásból egy Excel-fájlba vagy egy vesszővel tagolt (CSV-) fájlba. Exportálja a következő entitások adatait:
 
     - [Könyvelési számla](#account-table)
@@ -47,17 +47,17 @@ A Potenciális vevők készpénzre váltási adatainak a Data Integrator szolgá
 
 3. Távolítsa el a Potenciális vevők készpénzre váltása megoldást a Sales-környezetből. Ez a lépés eltávolítja a Potenciális vevők készpénzre váltása megoldás által bevezetett oszlopokat és a hozzájuk tartozó adatokat.
 4. Telepítse a kettős írású megoldást.
-5. Kettős írású kapcsolat létrehozása a Pénzügy és műveletek alkalmazás és egy vagy több jogi személy vevői megállapodási alkalmazása között.
+5. Kettős írású kapcsolat létrehozása a pénzügyi és az üzemeltetési alkalmazás, valamint egy vagy több jogi személy vevői megállapodási alkalmazása között.
 6. Engedélyezze a kettős írású táblaleképezéseket, és futtassa a szükséges hivatkozási adatok kezdeti szinkronizálását. (További információk: [Szempontok a kezdeti szinkronizáláshoz](initial-sync-guidance.md).) A szükséges adatok közé tartoznak például a vevőcsoportok, a fizetési feltételek és a fizetési ütemezések. Ne engedélyezze a kettős írású leképezéseket az inicializálást igénylő tábláknál, például a számla, az árajánlat, az ajánlati sor, a rendelés és a rendelésisor-táblák esetében.
 7. Az ügyfélkapcsolati alkalmazásban lépjen a **Speciális beállítások \> Rendszerbeállítások \> Adatkezelés \> Észlelési szabályok duplikálása** pontra, és tiltsa le az összes szabályt.
 8. Inicializálja a 2. lépésben felsorolt táblákat. Az útmutatás a cikk további részeiben olvasható.
-9. A Pénzügy és műveletek alkalmazás megnyitása és a táblatérképek engedélyezése, például a számla, ajánlat, ajánlatsor, rendelés és rendeléssor tábla-leképezések. Ezután futtassa a kezdeti szinkronizálást. (További tájékoztatás: [A kezdeti szinkronizálással kapcsolatos szempontok](initial-sync-guidance.md).) Ez a folyamat a Pénzügy és műveletek alkalmazás további adatait, például a feldolgozás állapotát, a szállítási és számlázási címeket, a helyeket és a raktárokat fogja szinkronizálni.
+9. A Pénzügy és műveletek alkalmazás megnyitása és a táblatérképek engedélyezése, például a számla, ajánlat, ajánlatsor, rendelés és rendeléssor tábla-leképezések. Ezután futtassa a kezdeti szinkronizálást. (További tájékoztatás: [A kezdeti szinkronizálással kapcsolatos szempontok](initial-sync-guidance.md).) Ez a folyamat a pénzügyi és műveleti alkalmazásból származó további adatokat, például a feldolgozás állapotát, a szállítási és számlázási címeket, a helyeket és a raktárokat fogja szinkronizálni.
 
 ## <a name="account-table"></a>Számla tábla
 
 1. A **Vállalat** oszlopban adja meg a vállalat nevét, például **USMF**.
 2. A **Kapcsolat típusa** oszlopban a **Vevő** értéke statikus érték legyen. Előfordulhat, hogy az üzleti logikában nem szeretne minden számlarekordot vevőként osztályozni.
-3. A Vevőcsoport **azonosítója oszlopban** adja meg a vevőcsoport számát a Pénzügy és műveletek alkalmazásból. A potenciális ügyfelek készpénzre váltása megoldás alapértelmezett értéke **10**.
+3. A Vevőcsoport **azonosítója oszlopban** adja meg a vevőcsoport számát a Pénzügyi és műveletek alkalmazásból. A potenciális ügyfelek készpénzre váltása megoldás alapértelmezett értéke **10**.
 4. Ha A potenciális ügyfelek készpénzre váltása megoldás megoldást a **Számlaszám** testreszabása nélkül használja, adjon meg egy **Számlaszám** értéket a **Fél száma** oszlopban. Ha testreszabott beállítások vannak, és nem tudja a fél számát, akkor ezt az információt a Pénzügy és műveletek alkalmazásból tudja le.
 
 ## <a name="contact-table"></a>Kapcsolattartó tábla
@@ -65,7 +65,7 @@ A Potenciális vevők készpénzre váltási adatainak a Data Integrator szolgá
 1. A **Vállalat** oszlopban adja meg a vállalat nevét, például **USMF**.
 2. Állítsa be a következő oszlopokat a CSV-fájl **IsActiveCustomer** értéke alapján:
 
-    - Ha a CSV-fájlban az **IsActiveCustomer** beállítása **Igen**, állítsa **Igen** beállításra az **Árusítható** oszlopot. A Vevőcsoport **azonosítója oszlopban** adja meg a vevőcsoport számát a Pénzügy és műveletek alkalmazásból. A potenciális ügyfelek készpénzre váltása megoldás alapértelmezett értéke **10**.
+    - Ha a CSV-fájlban az **IsActiveCustomer** beállítása **Igen**, állítsa **Igen** beállításra az **Árusítható** oszlopot. A Vevőcsoport **azonosítója oszlopban** adja meg a vevőcsoport számát a Pénzügyi és műveletek alkalmazásból. A potenciális ügyfelek készpénzre váltása megoldás alapértelmezett értéke **10**.
     - Ha a CSV-fájlban az **IsActiveCustomer** beállítás **Nem**, állítsa **Nem** beállításra az **Árusítható** oszlopot, és állítsa **Vevő** értékre a **Kapcsolattartó** oszlopot.
 
 3. Ha A potenciális ügyfelek készpénzre váltása megoldást a **Kapcsolattartó számának** testreszabása nélkül használja, állítsa be a következő oszlopokat:
@@ -76,7 +76,7 @@ A Potenciális vevők készpénzre váltási adatainak a Data Integrator szolgá
 
 ## <a name="invoice-table"></a>Számlatábla
 
-Mivel a Számla **táblából** származó adatok egy módon való áramlásra vannak kialakítva, a Pénzügy és műveletek alkalmazásból a vevői együttműködés alkalmazásba nincs szükség inicializálásra. Futtassa a kezdeti szinkronizálást, hogy az összes szükséges adatot átveszi a Pénzügy és műveletek alkalmazásból az ügyfél-kapcsolati alkalmazásba. További tájékoztatás: [Szempontok a kezdeti szinkronizáláshoz](initial-sync-guidance.md).
+Mivel a Számla **táblából** származó adatok egy módon való áramlásra vannak kialakítva, a pénzügyek és műveletek alkalmazásból a vevői együttműködés alkalmazásba nem szükséges inicializálni. Futtassa a kezdeti szinkronizálást, hogy minden szükséges adatot átvesz a pénzügyek és műveletek alkalmazásból az ügyfél-kapcsolati alkalmazásba. További tájékoztatás: [Szempontok a kezdeti szinkronizáláshoz](initial-sync-guidance.md).
 
 ## <a name="order-table"></a>Rendeléstábla
 
@@ -94,7 +94,7 @@ Mivel a Számla **táblából** származó adatok egy módon való áramlásra v
 
 ## <a name="products-table"></a>Termékek tábla
 
-Mivel a Termékek táblában **található** adatok egy módon való áramlásra vannak kialakítva, a Pénzügy és műveletek alkalmazásból a vevői együttműködés alkalmazásba nincs szükség inicializálásra. Futtassa a kezdeti szinkronizálást, hogy az összes szükséges adatot átveszi a Pénzügy és műveletek alkalmazásból az ügyfél-kapcsolati alkalmazásba. További tájékoztatás: [Szempontok a kezdeti szinkronizáláshoz](initial-sync-guidance.md).
+Mivel a Termékek táblában **található** adatok egy módon való áramlásra vannak kialakítva, a pénzügyek és a műveletek alkalmazásból az ügyfél-együttműködés alkalmazásba való folyamatra nincs szükség inicializálásra. Futtassa a kezdeti szinkronizálást, hogy minden szükséges adatot átvesz a pénzügyek és műveletek alkalmazásból az ügyfél-kapcsolati alkalmazásba. További tájékoztatás: [Szempontok a kezdeti szinkronizáláshoz](initial-sync-guidance.md).
 
 ## <a name="quote-and-quote-product-tables"></a>Árajánlat és az Ajánlat terméke táblák
 
@@ -102,3 +102,4 @@ Az Árajánlatok **táblában** kövesse a [cikk korábbi, Rendelés tábla](#or
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

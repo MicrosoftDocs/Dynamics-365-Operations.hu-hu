@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10906d7b30628dfe69907cfa69ae1022fde33243
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853348"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070634"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Számlatükör tervezése
 
@@ -43,7 +43,7 @@ A szervezeti számlatükör szerkezetével kapcsolatos döntések meghozatalakor
 A számlatükröket a **Számlatükör** oldalon hozhatja létre. A fő számlákat a **Számlatükör** lapon vagy a **Fő számlák** oldalon hozhatja létre. A fő számlák nevében nem használható olyan speciális karakter, amely a számlatükörben elválasztójelként használ. Ellenkező esetben instabilitást tapasztalhat, vagy előfordulhat, hogy mindig lekérdezéseket vagy párbeszédpanelt kell használnia, amikor számlák és dimenziók kombinációit adja meg. További tudnivalókkal kapcsolatban lásd: [Fő számla létrehozása](tasks/create-main-account.md).
 
 > [!NOTE]
-> A Dynamics 365 for Finance and Operations 8.0 verziójában (2018. április) a számlatükör elválasztóját a **Főkönyvi paraméterek** oldalon módosíthatja.
+> A Dynamics 365 Pénzügy 8.0-s verziójában (2018. április) **módosíthatja a számlatükr-elválasztót a Főkönyvi paraméterek lapon**.
 
 Rendkívül hasznos lehet a fő számlákat összekapcsolni főszámla-kategóriákkal, így kiélvezheti az alapértelmezett pénzügyi jelentések előnyeit anélkül, hogy módosításokat kellene végrehajtania. Így gyorsaban és egyszerűbben tud jelentéseket tervezni és karbantartani.
 
@@ -60,3 +60,4 @@ További információ a következő témakörökben olvasható:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

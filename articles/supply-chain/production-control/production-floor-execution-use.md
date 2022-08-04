@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022504"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069786"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -217,7 +217,7 @@ A dolgozók módosíthatja az anyagfelhasználást a catch weight cikkekhez. Ez 
 
 Az Anyag beállítása **párbeszédpanelen** a **dolgozó az Anyagfoglalás lehetőség választásával anyagfoglalásokat hozhat és módosíthat**. A **megjelenő Anyag lefoglalása** párbeszédpanelen látható a cikk fizikailag elérhető készlete az egyes tárolási és nyomon követési dimenziókhoz.
 
-Ha az anyag engedélyezve van a speciális raktári folyamatokban, akkor a lista csak a ténylegesen elérhető készletet jeleníti meg az anyag termelési bemeneti helyéhez. A termelés bemeneti helye abban az erőforrásban van definiálva, ahol a termelési feladatot tervezik. Ha a cikkszám köteg- vagy sorozatszám szerint ellenőrzött, akkor a ténylegesen elérhető köteg- és sorozatszámok teljes listája látható. A lefoglalandó mennyiség megadásához a dolgozó az Anyag lefoglalása lehetőséget **választhatja**. Meglévő foglalás eltávolításához a dolgozó a Foglalás eltávolítása lehetőséget **választhatja**.
+Ha az anyag engedélyezve van a raktárkezelési folyamatokhoz (WMS), akkor a listán csak az anyag termelési bemeneti helyének fizikailag elérhető készlete látható. A termelés bemeneti helye abban az erőforrásban van definiálva, ahol a termelési feladatot tervezik. Ha a cikkszám köteg- vagy sorozatszám szerint ellenőrzött, akkor a ténylegesen elérhető köteg- és sorozatszámok teljes listája látható. A lefoglalandó mennyiség megadásához a dolgozó az Anyag lefoglalása lehetőséget **választhatja**. Meglévő foglalás eltávolításához a dolgozó a Foglalás eltávolítása lehetőséget **választhatja**.
 
 A termelés bemeneti helyének beállításával kapcsolatos további tudnivalókat lásd a következő post- és utócímben: [A termelés bemeneti helyének beállítása](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 

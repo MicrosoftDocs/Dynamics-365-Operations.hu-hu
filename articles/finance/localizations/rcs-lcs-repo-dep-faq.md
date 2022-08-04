@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65d45eaf618075e0c78881634fc77bda0fab277e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849731"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065674"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) tárhely kivezetése
 
@@ -29,8 +29,8 @@ ms.locfileid: "8849731"
 A Microsoft Dynamics Lifecycle Services (LCS) használata tárolási adattárként az Elektronikus jelentéskészítés (ER) konfigurációihoz ki lesz vezetve. Ez a kivezetés a következő változásokkal jár:
 
 - A Microsoft Dynamics 365 alkalmazásokban használt Microsoft által előállított konfigurációk a továbbiakban nem lesznek közzétéve az LCS Közös eszköz könyvtárában. Ehelyett csak az RCS globális tárházon keresztül lesznek közzétéve. Ugyanakkor a Dynamics AX 2012 konfigurációi mindaddig közzé lesznek téve az LCS közös eszközkönyvtárában, amíg az AX 2012 támogatási életciklusa véget nem ér.
-- Ez a funkció inaktiválva lesz az LCS-alkalmazásokból és az RCS-alkalmazásokból származó konfigurációknak a Projekt eszköztárába való feltöltésére. Ennek ellenére használhatja az LCS böngészőjét a konfigurációknak a Projekt eszköztárba való feltöltésére. Ennek megfelelően továbbra is hozzáadhat konfigurációkat az LCS-hez, hogy azok a megoldáscsomagokba bekerülhessenek.
-- Az LCS-ről való konfigurációimportációk egy ideig továbbra is elérhetők és támogatottak lesznek a Pénzügy és műveletek alkalmazásokban, illetve az RCS-ben. Ugyanakkor az a funkció egy idő után ki lesz vezetve. (A kivezetés pontos dátumát később fogjuk bejelenteni.)
+- Ez a funkció inaktiválva lesz, így a pénzügyi és műveleti alkalmazásokból, valamint az RCS-alkalmazásokból származó konfigurációkat lehet feltölteni a Projekt eszköztárba. Ennek ellenére használhatja az LCS böngészőjét a konfigurációknak a Projekt eszköztárba való feltöltésére. Ennek megfelelően továbbra is hozzáadhat konfigurációkat az LCS-hez, hogy azok a megoldáscsomagokba bekerülhessenek.
+- Az LCS-ről való konfigurációimportációk egy ideig elérhetők és támogatottak lesznek a pénzügyi és műveleti alkalmazásokban, valamint az RCS-ben. Ugyanakkor az a funkció egy idő után ki lesz vezetve. (A kivezetés pontos dátumát később fogjuk bejelenteni.)
 
 ## <a name="deprecation-notice"></a>Elavulásáról szóló értesítés
 
@@ -73,7 +73,7 @@ A Globalizációs tárhely a következő célokra használható:
 
 ### <a name="does-this-change-mean-that-lcs-cant-be-used-as-central-storage-for-configurations"></a>Ez a módosítás azt jelenti, hogy az LCS nem használható központi tárolóként a konfigurációkhoz?
 
-Igen. Ezzel a funkcióval lehet feltölteni a konfigurációkat a Pénzügyi és üzemeltetési alkalmazásokból az LCS Projekt eszköztárába. Ennek ellenére használhatja az LCS böngészőjét a konfigurációknak a Projekt eszköztárba való feltöltésére igény szerint.
+Igen. Ezzel a funkcióval lehet feltölteni a konfigurációkat a pénzügyi és műveleti alkalmazásokból az LCS Projekt eszköztárába. Ennek ellenére használhatja az LCS böngészőjét a konfigurációknak a Projekt eszköztárba való feltöltésére igény szerint.
 
 ### <a name="i-thought-that-rcs-was-a-replacement-repository-for-importing-global-template-files-i-didnt-think-that-its-used-to-store-configurations-which-is-correct"></a>Úgy gondoltam, hogy az RCS egy helyettesítő tárház a globális sablonfájlok importálásához. Nem hittem, hogy ez konfigurációk tárolására használatos. Mi a valóság?
 
@@ -81,7 +81,7 @@ Az RCS az ER-konfigurációk létrehozására és szerkesztésére szolgáló te
 
 ### <a name="without-lcs-what-is-the-suggested-way-to-store-configurations-so-that-test-and-production-configurations-can-easily-be-managed-and-transferred"></a>Az LCS nélkül milyen módszer javasolt a konfigurációk tárolására, hogy a "teszt" és a "termelési" konfigurációk egyszerűen kezelhetők és átvihetők legyenek?
 
-Az RCS a *csatlakoztatott alkalmazás* koncepcióját használja. A csatlakoztatott alkalmazás kapcsolatot létesít az RCS, illetve a Pénzügy és a Művelet alkalmazás bármely példánya között. Mivel az RCS a konfigurációk szerkesztésére használható, a csatlakoztatott alkalmazás segítségével közvetlenül el lehet tolni a konfigurációkat a tervezőből a Pénzügyi és műveleti alkalmazások környezeteibe. Így gyorsan módosíthatja és tesztelheti a konfigurációkat, ahelyett, hogy végig kellene mennie az LCS-projektszintű tárhelyen.
+Az RCS a *csatlakoztatott alkalmazás* koncepcióját használja. A csatlakoztatott alkalmazások kapcsolatot létesíthetnek az RCS rendszer, illetve a pénzügyi és műveleti alkalmazások bármely példánya között. Mivel az RCS a konfigurációk szerkesztésére használható, a csatlakoztatott alkalmazás segítségével közvetlenül el lehet tolni a konfigurációkat a tervezőből a pénzügyi és műveleti alkalmazások környezetére. Így gyorsan módosíthatja és tesztelheti a konfigurációkat, ahelyett, hogy végig kellene mennie az LCS-projektszintű tárhelyen.
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Vannak példák a beállításokra és a kezelésre?
 
@@ -104,4 +104,4 @@ A terméktámogatásról a [Dynamics globalizációs szolgáltatások áttekint�
 
 ### <a name="whats-the-cost-of-using-rcs"></a>Mi az RCS használatának költsége?
 
-Az RCS és a globalizációs tárház ingyenes a meglévő Pénzügy és műveletek alkalmazáslicencek részeként. Nincs külön költség társítva az RCS tervezőszolgáltatás használatához vagy a konfigurációknak a globális tárházban való tárolásához. Jelenleg nincs korlátozva a konfigurációk vagy a csatlakoztatott alkalmazások száma.
+Az RCS és a globalizációs tárház ingyenes a meglévő pénzügyi és műveleti alkalmazáslicencek részeként. Nincs külön költség társítva az RCS tervezőszolgáltatás használatához vagy a konfigurációknak a globális tárházban való tárolásához. Jelenleg nincs korlátozva a konfigurációk vagy a csatlakoztatott alkalmazások száma.

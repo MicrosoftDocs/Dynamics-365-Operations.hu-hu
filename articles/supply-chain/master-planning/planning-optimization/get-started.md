@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900970"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112180"
 ---
 # <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
@@ -40,7 +40,7 @@ A tervezés optimalizálása előtt kifejezetten ajánljuk, hogy értékelje a t
 
 ## <a name="availability"></a>Elérhetőség
 
-A tervezési optimalizálás jelenleg a következő Azure földrajzi elhelyezkedésben érhető el: Egyesült Államok, Kanada, Brazília, Európa, Egyesült Királyság, Ausztrália, Ázsia csendes-óceáni, Japán és India. Ha egy másik földrajzi régióból kísérli meg telepíteni a bővítményt, akkor az LCS egy üzenetet jelenít meg, hogy ez a földrajzi hely nem támogatott. Az Azure földrajzi régiókkal és a kapcsolódó régiókkal kapcsolatos további tudnivalókat lásd: [Azure-földrajzi régiók](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+A tervezési optimalizálás jelenleg a következő Azure földrajzi elhelyezkedésben érhető el: Egyesült Államok, Kanada, Brazília, Európa, Franciaország, Egyesült Királyság, Ausztrália, Ázsia csendes-óceáni, Japán és India. Ha egy másik földrajzi régióból kísérli meg telepíteni a bővítményt, akkor az LCS egy üzenetet jelenít meg, hogy ez a földrajzi hely nem támogatott. Az Azure földrajzi régiókkal és a kapcsolódó régiókkal kapcsolatos további tudnivalókat lásd: [Azure-földrajzi régiók](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Ne feledje, hogy a Tervezés optimalizálása nem támogatott a Dynamics 365 Supply Chain Management helyszíni telepítései esetében.
 
@@ -58,7 +58,7 @@ Mielőtt telepítené a Tervezési optimalizálási bővítményt, a következő
 
 - A Supply Chain Management rendszert egy 2. szintű vagy magasabb szintű, LCS-kompatibilis magas rendelkezésre állású környezeten kell futtatnia (nem OneBox környezet), a Dynamics 365 Supply Chain Management 10.0.7-es vagy újabb verziójával. Ha OneBox- környezetbe próbálja meg telepíteni a bővítményt, akkor a telepítés nem fejeződik be, és a telepítést vissza kell vonni.
 
-- Be kell állítani a rendszert a Power Platform-integrációhoz. A további tudnivalókat lásd [Microsoft Power Platform a Pénzügy és műveletek alkalmazásokkal való integrációban](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+- Be kell állítani a rendszert a Power Platform-integrációhoz. A további tudnivalókat lásd [Microsoft Power Platform a Pénzügyi és műveleti alkalmazásokkal való integrációban](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>A Tervezési optimalizálás licencének engedélyezése
 
@@ -135,3 +135,4 @@ Ha a Tervezésoptimalizálás be van kapcsolva, akkor az alaptervezést a rendsz
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

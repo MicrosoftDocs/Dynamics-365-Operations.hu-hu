@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6d440a0d0d95fe93ed633fa588e1c3a193757d9d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016159"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070379"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Termelési paraméterek a Gyártásvégrehajtásban
 
@@ -71,7 +71,7 @@ Minden szakaszban az **Automatikus anyagjegyzék-felhasználás** mezőben a ter
   - Üres (nincs megadva beállítás)
   - **Rendelkezésre áll a helyen**
 
-    A Gyártásvégrehajtás modulban ha az **Ürítési elv** van kiválasztva az **Automatikus anyagjegyzék-felhasználás** mezőben az **Indítás** lapon, az anyagjegyzékben szereplő minden **Indítás** beállítású anyagot a rendszer levon a készletből a művelet megkezdésekor. A **Rendelkezésre áll a helyen** lehetőség a speciális raktárkezelési folyamatokkal kezelt termékek számára engedélyezett. Ha bejelöli az ürítési alapelvet, a rendszer kiürítése az anyagot a nyersanyag-kitárolás raktári munka befejezésekor. A rendszer akkor is kiüríti az anyagot, ha egy, a jelen ürítési elvet használó AJ-sort a rendszer kiadja a raktárnak, és az anyag elérhető a termelés bemeneti helyén.
+    A Gyártásvégrehajtás modulban ha az **Ürítési elv** van kiválasztva az **Automatikus anyagjegyzék-felhasználás** mezőben az **Indítás** lapon, az anyagjegyzékben szereplő minden **Indítás** beállítású anyagot a rendszer levon a készletből a művelet megkezdésekor. A **Raktárkezelési folyamatokhoz** (WMS) engedélyezett termékek esetében a "Elérhető a helyen" beállítás van használatban. Ha bejelöli az ürítési alapelvet, a rendszer kiürítése az anyagot a nyersanyag-kitárolás raktári munka befejezésekor. A rendszer akkor is kiüríti az anyagot, ha egy, a jelen ürítési elvet használó AJ-sort a rendszer kiadja a raktárnak, és az anyag elérhető a termelés bemeneti helyén.
 
     > [!NOTE]
     > Ha az **Ürítési elv** mező be van állítva az **Indítás** lapon a Gyártásvégrehajtásban, ugyanezt az elvet kell bejelölnie a **Műveletek** lapon vagy a **Jelentés készként** lapon. Ez a követelmény segít biztosítani, hogy a rendszer levonja az anyagokat azon anyagjegyzékek készletéből, amelyek a **Befejezés** ürítési elvet használják a termelési rendelésben. Ha ugyanez az ürítési elv nincs bejelölve a **Műveletek** fülön vagy a **Jelentés készként** lapon, előfordulhat, hogy a rendszer az anyagokat kétszer vonja le a készletből.

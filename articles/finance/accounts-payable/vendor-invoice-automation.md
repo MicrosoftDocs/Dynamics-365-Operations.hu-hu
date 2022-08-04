@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0449a13989bad45cf0456a2678e5724036d2af3d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883416"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070694"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Számlaautomatizálás beolvasott dokumentumokhoz
 
@@ -58,7 +58,7 @@ Az adatcsomag kötelezően elküldendő munkaegység, hogy a számlafejlécek, a
 
 A szállítói számla dokumentummelléklet a funkció részeként bevezetett új adatentitás. A Szállítói számla fejlécének entitását úgy módosította a rendszer, hogy az támogassa a mellékleteket. A Szállítói számla sorentitást nem módosították ehhez a funkcióhoz.
 
-Az adatcsomagokkal kapcsolatos részletes tudnivalók: [Adatkezelés – áttekintés](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Az adatcsomagok adatkezelési munkaterület használatával való létrehozásáról a [Dynamics 365 Pénzügy és Műveletek alkalmazás megoldásában található Az adatcsomagok feldolgozása és használata című témakörben található részletes tájékoztatás](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Az adatcsomagokkal kapcsolatos részletes tudnivalók: [Adatkezelés – áttekintés](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Az adatcsomagok adatkezelési munkaterületen [való használatával való létrehozásáról a Dynamics 365 pénzügy- és műveletalkalmazások megoldásában található Az adatcsomagok feldolgozása és használata című témakörében található részletes tájékoztatás](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 A számlákat és mellékleteket tartalmazó tesztadatok gyors létrehozásához kövesse az alábbi lépéseket.
 
@@ -86,7 +86,7 @@ Az adatcsomagok segítségével importált számlák kétféle módon társítha
 
 ## <a name="exception-processing"></a>Kivétel feldolgozása
 
-Olyan esetekben, amikor szállítói számlák integráción keresztül kerülnek a Finance and Operations rendszerbe, kell lennie egy egyszerű módnak arra, hogy a Kötelezettségek csapat egyik tagja feldolgozhassa a kivételeket és a hibás számlákat, valamint hogy függőben lévő számlákat hozzon létre a hibás számlákból. A szállítói számlák kivétellel történő feldolgozása kivétel most már a Finance and Operations része.
+Olyan helyzetekben, amikor a szállítói számlák integráció útján jönnek létre, egy kötelezettségcsoport tagjainak egyszerűen fel kell látniuk a kivételeket vagy a sikertelen számlákat, és létre kell hozniuk függő számlákat a sikertelen számlákból. Ez a kivétel a szállítói számlák feldolgozása most már a pénzügy és a műveletek része.
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>A listaoldalt nem importáló szállítói számlák
 
@@ -225,3 +225,4 @@ Alapértelmezés szerint ha felhasználói szerepkör szerkesztési jogokat bizt
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

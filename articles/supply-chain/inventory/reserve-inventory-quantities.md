@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c407b45f3df91d569c2bf043ff9f83b640837bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0c0e283189998473469164398fa6f43c8e8825e
+ms.sourcegitcommit: 3a882de1f1c27654a8e92ebc1999c75678cc9a53
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899440"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9201866"
 ---
 # <a name="reserve-inventory-quantities"></a>Tartalék készletmennyiségek
 
@@ -75,7 +75,7 @@ Egy automatikus foglalást alkalmazó, 2016. április 4-i szállítási határid
 
 A **Készlet- és raktárkezelési paraméterek** lapon levő foglalásokhoz két lehetőség kapcsolódik:
 -   Az **Általános** lap **Megrendelési cikkek lefoglalása** pontjában lefoglalhatja azokat a cikkbevételeket, amelyek a Kinnlevőségek, a Projektvezetés és könyvelés, valamint a Termelésirányítás cikk-kiadásaira vannak megrendelve. Ha törli ezt a beállítást, csak a ténylegesen bevételezett cikkeket foglalhatja le. Ha egy adott cikknél be van állítva a negatív készlet engedélyezése, ez a mező nem releváns.
--   A **Cikkek automatikus lefoglalása** beállítás a **Szállítás** lapon meghatározza az alapértelmezett beállításban, hogy a program automatikusan lefoglalja-e az átmozgatási rendelésekhez a cikkeket. Az alapértelmezett beállítás az egyes átmozgatási rendeléseken felülbírálható.
+-   Az **Átvitel lapon** a Cikkek automatikus foglalása **beállítás** határozza meg az alapértelmezett beállítást, ha a cikkek foglalása automatikusan történik az átrendelt rendelésekhez. Az alapértelmezett beállítás az egyes átmozgatási rendeléseken felülbírálható.
 
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Készletfoglalási szabályok a Termelési paraméterek lapon
 

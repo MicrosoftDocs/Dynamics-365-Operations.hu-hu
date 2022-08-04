@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6254d15d13e40007396c9f2a36a8cd3122dc2609
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892769"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109340"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
 
@@ -57,7 +57,7 @@ A funkcionális kiemelt felhasználók futtathatják a felhasználói elfogadás
 A cikk feladatainak végrehajtásához be kell fejeződnie a következő előfeltételeknek:
 
 - A tesztautomatizálást támogató topológia alkalmazása. A **rendszeradminisztrátori** szerepkörhöz hozzáféréssel kell rendelkeznie az ehhez a topológiához tartozó példányhoz. Ennek a topológiának tartalmaznia kell az ebben a példában használt demóadatokat. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató környezet telepítése és használata](../perf-test/continuous-build-test-automation.md).
-- A felhasználói elfogadási és az integrációs tesztek automatikus futtatásához telepítenie kell az RSAT-t a használt topológiában, és a megfelelő módon konfigurálnia kell. A RSAT telepítésévelés konfigurálásával, illetve a Finance and Operations alkalmazások és az Azure DevOps megoldással való együttműködés konfigurálásával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ügyeljen az eszköz használatára vonatkozó előfeltételekre. A következő ábrán egy példa látható az RSAT-beállításokra. A kék téglalap belefoglalja azokat a paramétereket, amelyek a Azure DevOps hozzáférést határozzák meg. A zöld téglalap a példányhoz való hozzáférést meghatározó paramétereket foglalja magában.
+- A felhasználói elfogadási és az integrációs tesztek automatikus futtatásához telepítenie kell az RSAT-t a használt topológiában, és a megfelelő módon konfigurálnia kell. Tájékoztatás az RSAT telepítésről és konfigurálásról, Azure DevOps valamint a pénzügyi és műveleti alkalmazásokhoz való konfigurálásról, valamint a további tudnivalókat lásd: [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357) Ügyeljen az eszköz használatára vonatkozó előfeltételekre. A következő ábrán egy példa látható az RSAT-beállításokra. A kék téglalap belefoglalja azokat a paramétereket, amelyek a Azure DevOps hozzáférést határozzák meg. A zöld téglalap a példányhoz való hozzáférést meghatározó paramétereket foglalja magában.
 
     ![RSAT-beállítások.](media/GER-Configure.png "Az RSAT-beállítások párbeszédpaneljének képernyőképe")
 
