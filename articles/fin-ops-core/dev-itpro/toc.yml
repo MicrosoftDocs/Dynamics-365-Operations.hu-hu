@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Platformfrissítések a 10.0.27 verzióhoz (2022. július)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Platformfrissítések a 10.0.26 verzióhoz (2022. május)
-                  href: get-started/whats-new-platform-updates-10-0-26.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók – kezdőlap
@@ -82,7 +80,7 @@
                   href: data-entities/service-protection-monitoring.md
                 - name: API átviteli sebesség maximalizálása
                   href: data-entities/service-protection-maximizing-api-throughput.md
-            - name: Pénzügyi és műveleti-összekötő
+            - name: Pénzügyi és műveleti összekötő
               href: data-entities/fin-ops-connector.md
             - name: Fejlesztés integrációhoz
               items:
@@ -106,39 +104,39 @@
                       items:
                         - name: Potenciális készpénzre váltás
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
+                        - name: A Sales-számlák közvetlen szinkronizálása a pénzügyi és műveleti alkalmazások ügyfeleire
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre
+                        - name: A pénzügyi és műveleti termékek közvetlen szinkronizálása a Sales-termékekre
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre
+                        - name: A Sales-kapcsolatok közvetlen szinkronizálása a pénzügyi és műveleti kapcsolatokra vagy ügyfelekre
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
+                        - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a pénzügyi és műveleti alkalmazásokba
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
+                        - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a pénzügyi és műveleti alkalmazások között
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba
+                        - name: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a pénzügyi és műveleti alkalmazásokból a Sales szolgáltatásba
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: A Field Service szolgáltatással való integráció konfigurálása
                       items:
                         - name: A Field Service szolgáltatással való integráció konfigurálása – áttekintés
                           href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
+                        - name: A pénzügyi és műveleti alkalmazások termékeinek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel
+                        - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a pénzügyi és műveleti alkalmazások értékesítési rendeléseivel
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a Finance and Operations szabadszöveges számláival'
+                        - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a pénzügyi és műveleti alkalmazások szabadszöveges számláival'
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                        - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
+                        - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból a pénzügyi és műveleti alkalmazásokba
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Készletszintű információk szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                        - name: Készletszintű információk szinkronizálása a pénzügyi és műveleti alkalmazásokból a Field Service alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                        - name: Készletegységgel rendelkező termékek szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                        - name: Készletegységgel rendelkező termékek szinkronizálása a pénzügyi és műveleti alkalmazásokból a Field Service alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                        - name: Projektlista szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                        - name: Projektlista szinkronizálása a pénzügyi és műveleti alkalmazásokból a Field Service alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Raktárak szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
+                        - name: Raktárak szinkronizálása a pénzügyi és műveleti alkalmazásokból a Field Service alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Finance and Operations alkalmazásba
+                        - name: Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a pénzügyi és műveleti alkalmazásokba
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                     - name: Project Service Automation integráció konfigurálása
                       items:
@@ -348,9 +346,9 @@
                   href: deployment/arm-onboarding.md
                 - name: Az Azure Resource Manager felvételi folyamatának teljesítése az USA kormányzati LCS-projektjeire vonatkozóan
                   href: deployment/arm-onbarding-us-goverment.md
-                - name: Azure ExpressRoute és Finance and Operations
+                - name: Azure ExpressRoute és pénzügyi és műveleti alkalmazások
                   href: deployment/expressroute.md
-                - name: Finance and Operations-architektúra
+                - name: A pénzügyi és műveleti alkalmazások architektúrája
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Frissítések alkalmazása felhőalapú környezetekre
                   href: deployment/apply-deployable-package-system.md
@@ -584,7 +582,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modellek és csomagok
                   href: dev-tools/models.md
-                - name: Finance and Operations projekttípus
+                - name: Pénzügyi és műveleti alkalmazások projekttípus
                   href: dev-tools/projects.md
                 - name: Eszközökhöz tartozó bővítmények a Visual Studio szolgáltatáshoz
                   href: dev-tools/developer-tools-add-ins.md
@@ -738,7 +736,7 @@
                       href: extensibility/customization-overlayering-extensions.md
                 - name: Újdonságok
                   items:
-                    - name: Új vagy módosult elemek a bővíthetőséggel kapcsolatban
+                    - name: Újdonságok és változások a bővíthetőséggel kapcsolatban
                       href: extensibility/extensibility-new.md
                     - name: 'Bővíthetőség módosításai, 10.0.3-as verzió'
                       href: extensibility/extensibility-changes-10-3.md
@@ -962,7 +960,7 @@
                       href: lifecycle-services/api/v1/reference-environment-history.md
                     - name: Környezeti RSAT-tanúsítvány irányítószámának beolvasása
                       href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
-                - name: Új vagy módosult elemek a Lifecycle Services szolgáltatásban
+                - name: Újdonságok és változások a Lifecycle Services szolgáltatásban
                   href: lifecycle-services/whats-new-lcs.md
             - name: Lifecycle Services használati útmutató
               href: lifecycle-services/lcs-user-guide.md
@@ -1050,7 +1048,7 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps bővítmény oktatóanyag (nyilvános előzetes verzió)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Visual Studio bővítmény (privát előzetes verzió)
+                - name: Visual Studio bővítmény (nyilvános előzetes verzió)
                   href: lifecycle-services/dts-visual-studio.md
                 - name: Visual Studio Code-bővítmény (nyilvános előzetes verzió)
                   href: lifecycle-services/dts-vscode-doc.md
@@ -1066,7 +1064,7 @@
               items:
                 - name: Kettős írás kezdőlapja
                   href: data-entities/dual-write/dual-write-home-page.md
-                - name: Új vagy módosult elemek a kettős írás szolgáltatásban
+                - name: Újdonságok és változások a kettős írás szolgáltatásban
                   href: data-entities/dual-write/whats-new-dual-write.md
                 - name: Kettős írás – áttekintés
                   href: data-entities/dual-write/dual-write-overview.md
@@ -1224,9 +1222,9 @@
                   href: power-platform/admin-reference.md
                 - name: Dataverse-beli virtuális entitások engedélyezése
                   href: power-platform/enable-virtual-entities.md
-                - name: Power Apps-portálok a Finance and Operations szolgáltatással
+                - name: Power Apps-portálok a pénzügyi és műveleti alkalmazásokkal
                   href: power-platform/power-portal-reference.md
-                - name: A Finance and Operations virtuális entitásai – gyakori kérdések
+                - name: A pénzügyi és műveleti alkalmazások virtuális entitásai – gyakori kérdések
                   href: power-platform/faq.md
             - name: Üzleti események
               items:
@@ -1574,11 +1572,11 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Támogatás
           items:
-            - name: 'Támogatás igénylése a Finance and Operations, illetve a Lifecycle Services szolgáltatáshoz'
+            - name: 'Támogatás igénylése a pénzügyi és műveleti alkalmazásokhoz, illetve a Lifecycle Services szolgáltatáshoz'
               href: lifecycle-services/lcs-support.md
             - name: A Dynamics 365 támogatásának áttekintése
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Támogatás kérése a Kínában a 21Vianet által működtetett Finance and Operations szolgáltatással kapcsolatban
+            - name: Támogatás kérése a Kínában a 21Vianet által működtetett pénzügyi és műveleti alkalmazásokkal kapcsolatban
               href: lifecycle-services/21vianet-support.md
             - name: Műszaki támogatás beállítása a pénzügyi és műveleti alkalmazásokhoz
               href: lifecycle-services/support-experience.md
@@ -1698,7 +1696,7 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Frissítés AX 2012-ről
               items:
-                - name: Frissítés AX 2012-ről a Finance and Operations alkalmazásra
+                - name: Frissítés AX 2012-ről a pénzügyi és műveleti alkalmazásokra
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: AX 2012 frissítés – A frissítési elemzőeszköz használata a tervezéshez
                   href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1758,7 +1756,7 @@
                       href: migration-upgrade/compress-tables-ax-2012.md
             - name: Adatok áttelepítése AX 2009-ből
               items:
-                - name: Adatok áttelepítése AX 2009-ből a Finance and Operations alkalmazásba
+                - name: Adatok áttelepítése AX 2009-ből a pénzügyi és műveleti alkalmazásokba
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009 áttelepítése – Az adatáttelepítési eszköz telepítése
                   href: migration-upgrade/install-dmt.md

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 412b900b5eb9a3a01feb5f4dd67529a5128e52b7
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef08d7880a0695527cbfb4ba4e11aae05aec7fc8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711854"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065365"
 ---
 # <a name="accounts-receivable-home-page"></a>Kinnlevőségek kezdőlap
 
@@ -83,7 +83,7 @@ Lépjen a [Microsoft Dynamics 365 Ütemterv](/dynamics365/release-plans/) oldal�
 
 #### <a name="blogs"></a>Blogok
 
-A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 Finance and Operations – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál a Kinnlevőségekkel és egyéb megoldásokkal kapcsolatban.
+A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 pénzügyi és műveleti alkalmazások – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál a Kinnlevőségekkel és egyéb megoldásokkal kapcsolatban.
 
 A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket a Dynamics 365 új és népszerű fejlesztéseiről.
 
@@ -103,3 +103,4 @@ Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d50af9deb5309a31b886441780fe6b40b8b152ae
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880816"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065336"
 ---
 # <a name="fixed-assets-home-page"></a>Tárgyi eszközök kezdőlap
 
@@ -44,7 +44,7 @@ Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](/
 
 #### <a name="blogs"></a>Blogok
 
-A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 Finance and Operations – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál.
+A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 pénzügyi és műveleti alkalmazások – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál.
 
 A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket a Dynamics 365 új és népszerű fejlesztéseiről.
 
@@ -63,3 +63,4 @@ Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -7,21 +7,21 @@ ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: kfend
-ms.custom:
-- "27681"
-- intro-internal
-ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4be3c576cd0fac1239113efcdd7e97810b193a88
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "27681"
+- intro-internal
+ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.openlocfilehash: 119292dccc2f2d7131f0fa39aa35a8253b948d40
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906633"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206475"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Jelentéskészítés elemzések a Power BI kezdőlapjával
 
@@ -31,8 +31,8 @@ Ebből a cikkből olyan erőforrásokat érhet el, amelyek további információ
 
 ## <a name="get-started"></a>Első lépések
 - [Adathozzáférés és jelentéskészítés](information-access-reporting.md)
-- [Technikai előadás: Jelentéskészítési lehetőségek](https://www.youtube.com/watch?v=NzZONjKs5xA) (videó)
-- [Finance and Operations: Power BI Analytics & Reporting Services blog](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
+- [Technikai előadás: Jelentéskészítési beállítások](https://www.youtube.com/watch?v=NzZONjKs5xA) (videó)
+- [pénzügyi és műveleti alkalmazások: Power BI Elemzések és jelentéskészítő szolgáltatások blog](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## <a name="analytical-workspaces"></a>Elemzési munkaterületek
 A munkaterületek olyan multimédiás infografikákat és vizuális elemeket használhatnak, amelyeket támogat a Microsoft Power BI. Ezen infografikák és vizuális elemek között megtalálhatók különféle, harmadik féltől származó vezérlők is. A munkaterületek így rendkívül látványos, interaktív élményt biztosíthatnak a felhasználók számára.

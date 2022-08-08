@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbf77b57f7a107918c3b8a03290e208ed1c4803b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879076"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066057"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management kezdőlapja
 
@@ -56,16 +56,16 @@ A Dynamics 365 Finance rendszerről kapcsolatosan a [Finance kezdőlapja](../fin
 
 ## <a name="videos"></a>Videók
 
-Ez a rövid videó összefoglalja a Microsoft Dynamics 365 for Finance and Operations 8.0-ás verziójához (2018. április) hozzáadott új ellátásilánc-kezelési funkciókat.
+Ez a rövid videó összefoglalja a Microsoft Dynamics 365 Finance 8.0-ás verziójához (2018. április) hozzáadott új ellátásilánc-kezelési funkciókat.
 
-- [Munkarendelések szinkronizálása a Field Service és a Finance and Operations között](https://youtu.be/hAB4TDVMjxU)
+- [Munkarendelések szinkronizálása a Field Service és a pénzügyi és műveleti alkalmazások között](https://youtu.be/hAB4TDVMjxU)
 
-Ezek a rövid videók összefoglalják a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójához (2017. december) hozzáadott új ellátásilánc-kezelési funkciókat.
+Ezek a rövid videók összefoglalják a Microsoft Dynamics 365 Finance, Enterprise edition 7.3-as verziójához (2017. december) hozzáadott új ellátásilánc-kezelési funkciókat.
 
 - [Optimalizálási tanácsadó](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Konfiguráció másolása a raktársablon segítségével](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Ezek a rövid videók összefoglalják a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition verzióhoz (2017. július) hozzáadott új ellátásilánc-kezelési funkciókat.
+Ezek a rövid videók összefoglalják a Microsoft Dynamics 365 Finance, Enterprise edition verzióhoz (2017. július) hozzáadott új ellátásilánc-kezelési funkciókat.
 
 - [Első lépések a költségkönyvelésben](https://youtu.be/1pUDtJQZ8FU)
 - [Költségellenőrzési mobil munkaterület](https://youtu.be/imsuTg8rUVk)
@@ -73,7 +73,7 @@ Ezek a rövid videók összefoglalják a Microsoft Dynamics 365 for Finance and 
 - [Beszerzési rendelések jóváhagyása mobileszközön](https://youtu.be/gZ-gOlJe7H8)
 - [Vizuális ütemezés a Gantt-diagrammal a termelési és kötegrendelésekhez](https://youtu.be/BtbuShkGj4I)
 
-A következő műszaki konferencián készült felvételek a Finance and Operations korábbi verzióinak ellátásilánc-kezelési funkcióira vonatkoznak. Ez a funkció most már a Dynamics 365 Supply Chain Management termék része; ugyanazok a fogalmak érvényesek, és az eljárások hasonlóak az aktuális verzióban.
+A következő műszaki konferencián készült felvételek a pénzügyi és műveleti alkalmazások korábbi verzióinak ellátási lánc kezelési funkcióira vonatkoznak. Ez a funkció most már a Dynamics 365 Supply Chain Management termék része; ugyanazok a fogalmak érvényesek, és az eljárások hasonlóak az aktuális verzióban.
 
 - **Költségkezelés:**
   - [Költségkezelés áttekintése](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -106,3 +106,4 @@ Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következ
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

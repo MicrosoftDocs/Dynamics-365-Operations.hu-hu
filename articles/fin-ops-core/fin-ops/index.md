@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f9776038530438ba8d8046b735d95b2a5701594
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865832"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067462"
 ---
 # <a name="finance-and-operations-application-documentation"></a>A pénzügyi és műveleti alkalmazás dokumentációja
 
@@ -41,7 +41,7 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre: Dynamics 365 Commer
 <h3><a href="get-started/before-you-buy.md">Vásárlás előtti teendők</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Regisztrálás az előzetes verziót tartalmazó előfizetésre</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Telepítési lehetőség kiválasztása</a></p>
- <p><a href="get-started/purchase-on-premises.md">A Finance and Operations (on-premises) megvásárlása</a></p>
+ <p><a href="get-started/purchase-on-premises.md">A pénzügyi és műveleti alkalmazások (helyi) megvásárlása</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Megvalósítási életciklus</a></h3>
 <p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
@@ -53,7 +53,7 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre: Dynamics 365 Commer
 <p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">A szoftver életciklusára vonatkozó irányelv: Felhő</a></p>
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">A szoftver életciklusára vonatkozó irányelv: Helyszíni</a></p>
 <p><a href="get-started/public-preview-releases.md">Szokásos és első kiadási szolgáltatásfrissítések</a></p>
-<p><a href="get-started/whats-new-changed.md">Új vagy módosult elemek</a></p>
+<p><a href="get-started/whats-new-changed.md">Újdonságok és változások</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Frissítések és gyorsjavítások</a></p>
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Frissítések alkalmazása felhőalapú környezetekre</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Szolgáltatásfrissítések konfigurálása</a></p>
@@ -143,3 +143,4 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre: Dynamics 365 Commer
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: abfba49c1b5e410cdc47db9965ffee26fbaebb9e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866537"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067682"
 ---
 # <a name="globalization-resources"></a>Globalizációs erőforrások
 
@@ -62,8 +62,8 @@ A következő erőforrások a tervezett és új honosítási funkciókat ismerte
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365 programverzióra vonatkozó kiadási tervek
 A [Dynamics 365 programverzióra vonatkozó kiadási tervek](/business-applications-release-notes/) ismertetik a Dynamics 365 üzleti alkalmazások és az alkalmazásplatformok tervezett új és továbbfejlesztett képességeit. 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>pénzügyi és műveleti alkalmazások – újdonságok
-Az [Új vagy módosult elemek a Finance and Operations kezdőoldalán](../../fin-ops/get-started/whats-new-changed.md) szakasz felsorolja azokat a funkciókat, amelyek a pénzügyi és műveleti alkalmazások meghatározott kiadásaiban szerepelnek.
+#### <a name="finance-and-operations-apps-whats-new"></a>A pénzügyi és műveleti alkalmazások – újdonságok
+Az [Újdonságok és változások a pénzügyi és műveleti alkalmazások kezdőoldalán](../../fin-ops/get-started/whats-new-changed.md) szakasz felsorolja azokat a funkciókat, amelyek a pénzügyi és műveleti alkalmazások meghatározott kiadásaiban szerepelnek.
 
 ### <a name="electronic-reporting"></a>Elektronikus jelentéskészítés
 Az elektronikus jelentéskészítési (ER) eszközzel a különböző országok/régiók jogi követelményeinek megfelelően konfigurálható az elektronikus dokumentumok formátuma. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. További tájékoztatás a következő témakörök egyikében található:
@@ -133,3 +133,4 @@ További információkat a [Súgórendszer](../../fin-ops/get-started/help-overv
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
