@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 183d0f13a17ffac723fac6c4801bd187dd54e976
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2cb3ca03e0d9d7e5423a405f1eb0372e1c19588d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888854"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227985"
 ---
 # <a name="configure-future-life-events"></a>A jövőbeli életesemények konfigurálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 A jövőbeli életesemények ütemezése a következőben végezhető el: Dynamics 365 Human Resources.
 
@@ -39,11 +40,12 @@ A jövőbeli életesemények ütemezése a következőben végezhető el: Dynami
    | Életesemény naplózva | Az esemény naplózásának dátuma és ideje. |
    | Eseménynapló típusa | Azt jelzi, hogy a művelet a következők egyike-e:</br></br>- **Frissítés** – olyan meglévő rekord módosítása, amely életeseményeket követ</br></br>- **Beszúrás** – új életesemény rekordjának létrehozása |
    | Életesemény-típus azonosítója | Az életesemény típusának egyedi azonosítója. |
-   | Életesemény-típus | Katalizátor az alkalmazotti juttatások regisztrálásának frissítéséhez. A további tudnivalókért lásd az Életesemény-indítók szakaszt. |
+   | Életesemény-típus | Katalizátor az alkalmazotti juttatások regisztrálásának frissítéséhez. A további tudnivalókat lásd a Life event Triggers szakaszban. |
    | Állapot | Annak megjelenítése, hogy feldolgozták-e az életeseményt vagy sem. |
-   | Vonal | A jövőbeli életesemény sorának száma. |
+   | Sor | A jövőbeli életesemény sorának száma. |
 
 4. Válassza a **Mentés** lehetőséget. 
 
+A jövőbeli életesemények törölhetők. Ha egy feldolgozott jövőbeli esemény törölve van, akkor a jövőbeli rekord is törlődik. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

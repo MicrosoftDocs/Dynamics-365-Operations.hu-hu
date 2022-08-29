@@ -1,26 +1,26 @@
 ---
 title: ER-formátum megtervezése a létrehozott dokumentumok Excel programban való oldalszámozásához
 description: Ez a cikk bemutatja, hogy hogyan lehet olyan elektronikus jelentési (ER) formátumot tervezni, amely a létrehozott dokumentumot a következőben lapozódja fel:Microsoft Excel
-author: NickSelin
+author: kfend
 ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: EROperationDesigner
+ms.openlocfilehash: e4a34dffda9e9b95f5d6c7ee382723663817ec6b
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909278"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9285001"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>ER-formátum megtervezése a létrehozott dokumentumok Excel programban való oldalszámozásához
 
@@ -58,11 +58,11 @@ Ebben az esetben Ön a Litware, Inc. képviselője, amelye a jelenleg aktív ER 
 5. A **Név** mezőbe írja be: **Intrastat-jelentés Litware**.
 6. Az új formátum létrehozásához válassza a **Konfiguráció létrehozása** elemet.
 
-Az **Intrastat jelentés Litware** ER-formátum konfigurációjának 1.9.1-es verziója jön létre. Ez a verzió **Piszkozat** [állapottal](general-electronic-reporting.md#component-versioning) rendelkezik, és szerkeszthető. Az egyéni ER-formátum jelenlegi tartalma megegyezik a Microsoft által biztosított formátum tartalmával.
+Az **Intrastat jelentés Litware** ER-formátum konfigurációjának 1.9.1-es verziója jön létre. Ez a verzió Vázlat **állapotú**, és szerkeszthető. Az egyéni ER-formátum jelenlegi tartalma megegyezik a Microsoft által biztosított formátum tartalmával.
 
 ### <a name="make-the-custom-format-runnable"></a>Egyéni formátum futtathatóvá tétele
 
-Miután létrehozta az egyéni formátum első verzióját, és az a **Piszkozat** állapottal rendelkezik, tesztelés céljából futtathatja a formátumot. A jelentés futtatásához a szállítói kifizetést az egyéni ER-formátumra hivatkozó fizetési mód használatával dolgozza fel. Alapértelmezésben, amikor egy ER-formátumot hív meg az alkalmazásból, csak a **Befejeződött** vagy **Megosztott** állapotú verziókat [veszi figyelembe](general-electronic-reporting.md#component-versioning) a rendszer. Ez a viselkedés segít megakadályozni a befejezetlen konstrukciókkal rendelkező ER-formátumok használatát. A teszt futtatásakor azonban kényszerítheti az alkalmazást egy **Piszkozat** állapottal rendelkező ER-formátumverzió használatára. Ily módon módosíthatja az aktuális formátum verziószámát, ha bármilyen módosítás szükséges. További információ: [Alkalmazhatóság](electronic-reporting-destinations.md#applicability).
+Miután létrehozta az egyéni formátum első verzióját, és az a **Piszkozat** állapottal rendelkezik, tesztelés céljából futtathatja a formátumot. A jelentés futtatásához a szállítói kifizetést az egyéni ER-formátumra hivatkozó fizetési mód használatával dolgozza fel. Alapértelmezés szerint az alkalmazásból származó ER-formátum hívása esetén csak a Kész és **a** **Megosztott állapotú verziók** számítanak. Ez a viselkedés segít megakadályozni a befejezetlen konstrukciókkal rendelkező ER-formátumok használatát. A teszt futtatásakor azonban kényszerítheti az alkalmazást egy **Piszkozat** állapottal rendelkező ER-formátumverzió használatára. Ily módon módosíthatja az aktuális formátum verziószámát, ha bármilyen módosítás szükséges. További információ: [Alkalmazhatóság](electronic-reporting-destinations.md#applicability).
 
 Ha egy ER-formátum piszkozat verzióját kívánja használni, ennek kifejezett módon be kell jelölnie az ER-formátumot.
 

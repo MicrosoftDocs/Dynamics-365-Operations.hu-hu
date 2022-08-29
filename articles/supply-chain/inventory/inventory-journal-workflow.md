@@ -2,7 +2,7 @@
 title: Készletnapló-jóváhagyási munkafolyamatok
 description: Ez a témakör azt ismerteti, hogyan lehet beállítani és használni a készletnapló-jóváhagyási munkafolyamatokat a tényleges készlettranzakciók különböző típusaihoz. A készletnapló-munkafolyamatok segítségével biztosítható, hogy csak a jóváhagyott készletnaplókat tegyék közzé a tranzakciókhoz.
 author: yufeihuang
-ms.date: 07/21/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a97eaeae24850282c39196a61e3baa29307aa93
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873985"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334655"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Készletnapló-jóváhagyási munkafolyamatok
 
@@ -29,12 +29,9 @@ Ez a témakör leírja, hogyan lehet beállítani és használni a készletnapl�
 > [!NOTE]
 > A készletnapló-jóváhagyási munkafolyamatok csak a Készletkezelési modul használatával rögzített tranzakciókra vonatkoznak. Nem működnek a Raktárkezelési modulból indított készletnaplókkal.
 
-## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Készletnaplók jóváhagyási munkafolyamatai funkció aktiválása
+## <a name="turn-the-inventory-journal-approval-workflows-feature-on-or-off"></a>A Készletnapló-jóváhagyási munkafolyamatok szolgáltatás be- és kikapcsolása
 
-Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés [lapon ellenőrizhetik](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a funkció állapotát, és szükség esetén engedélyezhetik vagy letilthatják azt. Itt a funkció a következőként szerepel:
-
-- **Modul:** *Készlet- és raktárkezelés*
-- **Funkció neve:** *Készletnapló jóváhagyási munkafolyamata*
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Készletnapló-jóváhagyási munkafolyamat-szolgáltatását keresi.
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Hozza létre a saját készletnapló-jóváhagyási munkafolyamatait
 

@@ -2,7 +2,7 @@
 title: Készletérték-jelentések
 description: Ez a cikk bemutatja a készletérték-jelentések beállítását, előállítását és használatát. Ezek a jelentések részletes adatokat szolgáltatnak a tényleges készletről, valamint a pénzügyi mennyiségekről és összegekről.
 author: JennySong-SH
-ms.date: 10/19/2021
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3128abb25fdb8f8e01b4d1fe153f5b5fff6cb706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f97b5bd228c6f769438d50bb27950b8d8fbda3e8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854558"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334925"
 ---
 # <a name="inventory-value-reports"></a>Készletérték-jelentések
 
@@ -55,7 +55,7 @@ A Készletérték-jelentés **tárolási** jelentése hasznos, ha a kimenet töb
 
 ## <a name="turn-the-inventory-value-report-storage-feature-on-or-off"></a>A Készletérték-jelentés tárolási funkció be- és kikapcsolása
 
-Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be* és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterület Készletérték-jelentés tárolási szolgáltatását [keresi](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Készletérték-jelentés tárolási szolgáltatását keresi.
 
 ## <a name="define-inventory-value-report-configurations"></a><a name="report-configuration"></a> Készletérték-jelentés konfigurációk meghatározása
 

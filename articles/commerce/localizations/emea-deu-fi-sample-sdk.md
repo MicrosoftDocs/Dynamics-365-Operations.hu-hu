@@ -2,25 +2,29 @@
 title: A pénzügyi regisztrációs szolgáltatás integrációs mintája Németország telepítési irányelvei (legacy)
 description: Ez a cikk a Microsoft Dynamics 365 Commerce Retail szoftverfejlesztői csomagból (SDK) származó németországi pénzügyi integrációs minta telepítésével kapcsolatos irányelveket tartalmaz.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 9f6ecc715e10538806998459b7fd837648494ad7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.author: josaw
+ms.search.validFrom: 2019-03-01
+ms.openlocfilehash: 7315b6bb145ccdc5631a558af88de55660ebf877
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845837"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313855"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>A pénzügyi regisztrációs szolgáltatás integrációs mintája Németország telepítési irányelvei (legacy)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Ez a cikk a Microsoft Dynamics 365 Commerce Pénzügyi nyilvántartási szolgáltatás integrációs minta telepítéséről nyújt tájékoztatást Németország számára a Retail szoftverfejlesztői csomagból (SDK) a Lifecycle Services (LCS) fejlesztői virtuális gépére (VM).Microsoft Dynamics A pénzügyi integrációs mintával kapcsolatos további [tudnivalókat lásd a Pénzügyi nyilvántartási szolgáltatás integrációs mintája Németország esetében](emea-deu-fi-sample.md). 
+> [!IMPORTANT]
+> Csak akkor kell követnie Microsoft Dynamics 365 Commerce az ebben a cikkben olvasható irányelveket, ha a 10.0.28-as vagy korábbi verziókat használja. A Commerce rendszer 10.0.29-es verziója szerint a Németországhoz tartozó pénzügyi regisztrációs szolgáltatás integrációs minta elérhető a Commerce szoftverfejlesztői csomagjában (SDK). A további tudnivalókat lásd: Csatornaösszetevők [konfigurálása](./emea-deu-fi-sample.md#configure-channel-components).
+
+Ez a témakör a Dynamics 365 Commerce Pénzügyi nyilvántartási szolgáltatás integrációs mintáinak telepítéséhez nyújt tájékoztatást, amelyek a Retail SDK készletből, egy fejlesztői virtuális gépre (VM) találhatók a Lifecycle Services (LCS) Microsoft Dynamics szolgáltatásban. A pénzügyi integrációs mintával kapcsolatos további [tudnivalókat lásd a Pénzügyi nyilvántartási szolgáltatás integrációs mintája Németország esetében](emea-deu-fi-sample.md). 
 
 A Németországhoz tartozó pénzügyi integrációs minta a Retail SDK része. Az SDK [telepítésével és használatával kapcsolatos tudnivalókat lásd a Retail szoftverfejlesztői csomag (SDK) architektúráját](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ez a minta a Commerce runtime (CRT) és a hardverállomás bővítményeiből áll. A minta futtatásához módosítania és fel kell építenie a és CRT a hardverállomás-projekteket. Javasoljuk, hogy egy nem módosított Retail SDK készlet használhatja az ebben a cikkben leírt módosításokat. Javasoljuk továbbá, hogy forrásvezérlő rendszert használjon, Azure DevOps például olyanokat, ahol a fájlok még nem módosultak.
 

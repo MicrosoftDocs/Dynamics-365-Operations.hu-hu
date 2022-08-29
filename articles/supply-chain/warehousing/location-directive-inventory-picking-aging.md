@@ -2,7 +2,7 @@
 title: Helyutasítás – készletkitárolás korosítása
 description: Ez a cikk bemutatja, hogy hogyan lehet elsőként be, elsőként ki (FIFO) és utolsóként be, elsőként ki (LIFO) hely irányelvstratégiát használni kitároláskor.
 author: Mirzaab
-ms.date: 07/15/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
-ms.translationtype: HT
+ms.openlocfilehash: 4ed1308ea36b731b156b518182846b60a59528d5
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068670"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335615"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Helyutasítás – készletkitárolás korosítása
 
@@ -34,8 +34,8 @@ A készlet első beérkezése vagy a raktárban való létrehozása alkalmával 
 
 A funkció elérhetővé tétele érdekében kapcsolja a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat ebben a sorrendben:
 
-1. Raktár helyállapota
-1. Helyutasítás – készletkitárolás korosítása
+1. *Raktár helyének állapota* (a 10.0.29-es verziónál ez a funkció kötelező, és nem lehet kikapcsolni. További tájékoztatás: Raktári [hely állapota](warehouse-location-status.md).)
+1. *Helyutasítás – készletkitárolás korosítása*
 
 ## <a name="feature-requirements"></a>Funkció követelmények
 
@@ -50,7 +50,7 @@ Ez a szakasz példákkal mutatja be, hogyan lehet beállítani és használni a 
 
 ### <a name="make-sample-data-available"></a>A mintaadatok elérhetővé tétele
 
-Ha ezeket a forgatókönyveket az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha ezeket a forgatókönyveket az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 Ezeket a forgatókönyveket a gyártási rendszer használata során a funkció használatához útmutatásként is használhatja. Ebben az esetben azonban az itt leírt mindegyik beállítás esetében be kell helyettesítenie a saját értékeit.
 

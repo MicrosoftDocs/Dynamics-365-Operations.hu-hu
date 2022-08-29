@@ -2,7 +2,7 @@
 title: A termelési üzem végrehajtási felületének konfigurálása
 description: Ez a témakör azt ismerteti, hogyan lehet egy vagy több konfigurációt létrehozni a termelési emelet végrehajtási felületére. Amikor megnyitja a termelési üzem végrehajtási felületét, a program automatikusan betölti a kiválasztott konfigurációt és a feladatra vonatkozó szűrőket, amelyek a böngészővel és az eszközzel kapcsolatosak. A konfigurációban be kell állítania azokat a szabályokat, amelyek az adott használathoz szükségesek.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
-ms.translationtype: HT
+ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167761"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336185"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -35,7 +35,7 @@ Ez a témakör a telephelyen használt eszközök üzemenenkénti végrehajtási
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>A termelési üzem végrehajtási felületének és a kapcsolódó választható funkcióinak bekapcsolása
 
-A termelési emelet végrehajtási felületét, valamint számos, ebben a cikkben ismertetett opcionális beállítást be kell kapcsolva a rendszerben, mielőtt használnál egy ilyen felületet. A [Funkció kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lapon bekapcsolhatja a következő alszakaszokban ismertetett funkciók egyikét vagy mindegyikét szükség szerint.
+A termelési emelet végrehajtási felületét, valamint számos, ebben a cikkben ismertetett opcionális beállítást be kell kapcsolva a rendszeren, mielőtt használnál egy ilyen felületet. A [Funkció kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lapon bekapcsolhatja a következő alszakaszokban ismertetett funkciók egyikét vagy mindegyikét szükség szerint.
 
 ### <a name="the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felülete
 
@@ -63,63 +63,58 @@ Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapérte
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületére vonatkozó eszközkezelési funkció
 
-Ez a funkció egy eszközkezelési lapot ad hozzá a termelési üzem végrehajtási felületéhez. A dolgozók ezen a lapon kiválaszthatják azt az eszközt, amely a feladatlista kiválasztott szűrője alatt álló gépi erőforráshoz kapcsolódik. A kijelölt gépi eszköznél a dolgozó megtekintheti az eszköz állapotát és a számlálóértékek alapján, legfeljebb négy kijelölt számláló esetén. Ha használni szeretné ezt a funkciót, kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ez a funkció egy eszközkezelési lapot ad hozzá a termelési üzem végrehajtási felületéhez. A dolgozók ezen a lapon kiválaszthatják azt az eszközt, amely a feladatlista kiválasztott szűrője alatt álló gépi erőforráshoz kapcsolódik. A kijelölt gépi eszköznél a dolgozó megtekintheti az eszköz állapotát és a számlálóértékek alapján, legfeljebb négy kijelölt számláló esetén.
 
-- *A termelési üzem végrehajtási felületére vonatkozó eszközkezelési funkció*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója alapértelmezés szerint be van kapcsolva.)
+Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a szolgáltatáskezelési munkaterület eszközkezelési funkcióit keresi.
 
-### <a name="enable-job-search"></a>A feladatkeresés engedélyezése
+### <a name="job-search"></a>Feladatkeresés
 
-Ezzel a funkcióval keresőmezőt adhat a feladatok listájához. A dolgozók a feladatazonosító megadásával rákereshetnek egy adott feladatra, vagy a rendelés azonosítójának megadásával megkereshetik egy adott rendelés összes feladatát. A dolgozók a billentyűzettel írhatják be vagy vonalkód beolvasásával adhatják meg az azonosítót. Ha használni szeretné, kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ezzel a funkcióval keresőmezőt adhat a feladatok listájához. A dolgozók a feladatazonosító megadásával rákereshetnek egy adott feladatra, vagy a rendelés azonosítójának megadásával megkereshetik egy adott rendelés összes feladatát. A dolgozók a billentyűzettel írhatják be vagy vonalkód beolvasásával adhatják meg az azonosítót.
 
-- *Feladatkeresés a gyártóüzem végrehajtási interfészén*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója alapértelmezés szerint be van kapcsolva.)
+Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterületén a feladatkeresést keresi a termelésirányítási felülethez.
 
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Társ- és melléktermékek jelentésének engedélyezése
+### <a name="report-on-co-products-and-by-products"></a>Jelentés társ- és társtermékekről
 
-Ez a funkció lehetővé teszi a dolgozók számára a gyártóterületi végrehajtási felület használatát a kötegelt rendelések előrehaladásának jelentéséhez. Ez a jelentésfunkció jelentéseket tartalmaz a társtermékekről és melléktermékekről. Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ez a funkció lehetővé teszi a dolgozók számára a gyártóterületi végrehajtási felület használatát a kötegelt rendelések előrehaladásának jelentéséhez. Ez a jelentésfunkció jelentéseket tartalmaz a társtermékekről és melléktermékekről.
 
-- *Jelentés a termelési üzem végrehajtási felületéről származó társ- és melléktermékekről*
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be és kapcsolják ki ezt a funkciót, hogy a szolgáltatáskezelés munkaterületének termelési üzemirányítási felületéről származó társ-*[és](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) társtermékekről szóló jelentést keresnek.
 
-### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>A teljes sorozat-, köteg- és azonosítótáblák megjelenítésének engedélyezése
+### <a name="display-full-serial-batch-and-license-plate-numbers"></a>Teljes sorozat-, köteg- és azonosítótáblák megjelenítése
 
 Ez a funkció jobb felületet biztosít a termelési üzem végrehajtási felületén a sorozatszám-, köteg- és azonosítótáblák listáinak megtekintéséhez. A megjelenítés egy olyan kártyanézetről változik, amely korlátozott számú karaktert mutat egy olyan listanézetre, amely elegendő helyet biztosít a teljes értékek megjelenítéséhez. A lista adott számok keresésére is lehetőséget biztosít.
 
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Funkciókezelés munkaterületén a Termelési üzem végrehajtási felületének Teljes sorozat, köteg és azonosítótáblák megjelenítése lehetőséget keresi.
+
+
 Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterület termelési üzemirányítási felületének Teljes sorozat-,*[köteg](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)- és azonosítótáblák megjelenítése parancsát keresi.
 
-### <a name="enable-registering-of-material-consumption"></a>Anyagfelhasználás regisztrálásának engedélyezése
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
+### <a name="register-material-consumption"></a>Anyagfelhasználás regisztrálása
 
 Ez a funkció lehetővé teszi a dolgozók számára, hogy a termelési emelet végrehajtási felületével regisztrálják az anyagfelhasználást, a kötegszámokat és a sorozatszámokat. Egyes gyártóknak, különösen a folyamatiparban használt gyártóknak kifejezetten regisztrálniuk kell az egyes köteg- vagy termelési rendelésenként felhasznált anyagok mennyiségét. Például a dolgozók a mérleg segítségével leméneklik a munka közben felhasznált anyagok mennyiségét. A teljes anyagkövetés biztosítása érdekében ezeknek a szervezeteknek az egyes termékek előállításához felhasznált kötegszámokat is regisztrálniuk kell.
 
 A funkciónak két változata van. Az egyik lehetőség olyan cikkek *használatát támogatja,* amelyeknél nincs engedélyezve a raktárkezelési folyamatok (WMS). A másik támogatja a *WMS* használatát engedélyező cikkeket. A funkció használatához [a](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) Funkciókezelésben (ebben a sorrendben) bekapcsolhatja az alábbi funkciók egyikét vagy mindkettőt attól függően, hogy vannak-e olyan cikkek, amelyek engedélyezve vannak a WMS számára:
 
-- *Anyagfelhasználás regisztrálása a termelési emelet végrehajtási felületén (nem WMS)*
-- *(Előnézet) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (WMS-kompatibilis)*
+- *Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS)*
+- *Az anyagfelhasználás regisztrálása a termelési emelet végrehajtási felületén (WMS-engedélyezve)*
 
 > [!IMPORTANT]
 > A nem WMS szolgáltatást csak használni lehet. A WMS használata esetén azonban mindkét funkciót engedélyezni kell.
 
-### <a name="enable-reporting-on-catch-weight-items"></a>A cikkekkel kapcsolatos jelentés engedélyezése
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
+### <a name="report-on-catch-weight-items"></a>Jelentés a cikkekről a cikken
 
 A dolgozók a termelés emeletének végrehajtási felületével jelentést tehetnek a cikkekkel, a cikkekkel, a kötegrendelésekkel. A kötegrendelések képletek alapján vannak létrehozva, amelyek definiálhatóak úgy, hogy receptúrás cikkként, társtermékként vagy társtermékként tartalmazzanak egy cikkeket. A receptúra úgy is definiálható, hogy receptúrás sorokat kap az összetevőkből, amelyek meg vannak határozva a catch weight számára. A tényleges stömegű cikkek két mértékegységet használnak a készlet nyomon követésére: a tényleges súly és a készletmennyiség. Például az élelmiszeriparban a dobozolt hús tényleges ssúlyos cikkként definiálható, ahol a tényleges súly mennyiségét használják a dobozok számának nyomon követésére, a készletmennyiséget pedig a dobozok súlyának nyomon követésére.
 
 Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *(Előzetes verzió) Jelentés a termelési üzem végrehajtási felületéről származó tényleges súly szerinti cikkekről*
+- *Jelentés a termelési üzem végrehajtási felületéről származó tényleges súly szerinti cikkekről*
 
-### <a name="enable-the-my-day-dialog"></a>A "Saját nap" párbeszédpanel engedélyezése
+### <a name="the-my-day-dialog"></a>A "Saját nap" párbeszédpanel
 
 A **Saját nap** párbeszédpanelen a dolgozók áttekintést kaphatnak a napi regisztrációikról és a fizetett időre, fizetett túlórára, távollétre és fizetett távollétre vonatkozó jelenlegi egyenlegeikről.
 
-Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be és kapcsolják ki ezt a funkciót, hogy a "Saját nap"*[nézetben használhatja a termelési emelet végrehajtási felületét a Szolgáltatáskezelés munkaterületén](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- *Saját nap nézet a termelési üzem végrehajtási felületéhez*
-
-### <a name="enable-teams"></a>Csapatok engedélyezése
+### <a name="teams"></a>Csapatok
 
 Ha ugyanannak a termelési feladatnak több dolgozója van, akkor csapatokat lehet csapatokat formba rendelni. A csoport egy dolgozót jelölhet meg pilotként. A többi dolgozó automatikusan ennek az pilotnak az asszisztense lesz. Az eredményül kapott csapatnál csak az első csapatnak kell regisztrálnia a feladat állapotát. Az időrekordok minden csapattagra érvényesek.
 
@@ -127,7 +122,7 @@ Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés
 
 - *Termelési csapatok a termelési üzem végrehajtási felületében*
 
-### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>További konfiguráció engedélyezése a termelési emelet végrehajtási felületén
+### <a name="additional-configuration-in-the-production-floor-execution-interface"></a>További konfiguráció a termelési emelet végrehajtási felületén
 
 Ez a funkció a következő funkciók beállításait adja meg a Termelési **emelet végrehajtási konfigurálása lapon**:
 
@@ -143,10 +138,9 @@ Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés
 
 - *További konfigurációk a termelési üzem végrehajtási felületén*
 
-
 ## <a name="work-with-production-floor-execution-configurations"></a>A termelési üzem végrehajtási konfiguációinak használata
 
-A termelés-végrehajtási konfigurációk létrehozásához és karbantartásához **kattintson a Gyártásvezérlés \>\> beállítása – Gyártás-végrehajtási \> konfigurálás a termelési emelet létrehozására.** A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
+A termelés-végrehajtási konfigurációk létrehozásához és karbantartásához **kattintson a Gyártásvezérlés \>\> beállítása – Gyártás-végrehajtási \> konfigurálás a termelési emelet létrehozására**. A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
 
 - Kiválaszthatja bal oldali oszlopban felsorolt termelésiüzem-konfigurációk bármelyikét, hogy megtekintse és szerkessze azt.
 - A munkaablak új konfigurációnak a **listához** való hozzáadásához válassza az Új lehetőséget. Adjon meg egy nevet a **Konfiguráció** mezőben, amely lehetővé teszi az új konfiguráció azonosítását. A beírott névnek egyedinek kell lennie minden konfigurációban, és később nem lesz lehetőség a szerkesztésére. A Leírás **mezőben** tetszés szerint megadhatja a konfiguráció leírását.

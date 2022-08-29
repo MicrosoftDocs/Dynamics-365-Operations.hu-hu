@@ -1,24 +1,24 @@
 ---
 title: Áfajelentések Magyarországról
 description: Ez a cikk az áfabevallási adatokkal és a részletes áfabevallási jelentésekkel kapcsolatban tartalmaz tájékoztatást.
-author: anasyash
+author: AdamTrukawka
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 12641
 ms.search.region: Hungary
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6a5b15d93a70f780d235d4a1989629e474729e04
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 12641
+ms.openlocfilehash: 800dbee2b697d570f1a5cad0ed736c010ae87b36
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908959"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9282412"
 ---
 # <a name="sales-tax-reports-for-hungary"></a>Áfajelentések Magyarországról
 

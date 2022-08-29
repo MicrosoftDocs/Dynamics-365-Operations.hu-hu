@@ -2,7 +2,7 @@
 title: A termelésben felhasznált anyagok alapértelmezett foglalási elvének felülbírálása
 description: Ez a témakör bemutatja, hogyan lehet beállítani alapértelmezett foglalási elvet az egyes cikkmodell-csoportokhoz, hogy automatikusan eltérő foglalási elvek alkalmazhatók legyen minden olyan cikkre, amely része egy termelési anyagjegyzéknek vagy egy kötegrendelési receptúrának.
 author: johanhoffmann
-ms.date: 12/10/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 381b7fa5046df8f2734e4b242058eb9a673388cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87f10efd7eebdc034af3f7c9081d2674a6190b38
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907232"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334595"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>A termelésben felhasznált anyagok alapértelmezett foglalási elvének felülbírálása
 
@@ -32,7 +32,7 @@ Ha például nyersanyagokat vagy összetevőket használ, amelyekhez kitárolás
 
 ## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Az Alapértelmezett termelési foglalás felülbírálása funkció be- és kikapcsolása
 
-Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be és kapcsolhatják ki ezt a funkciót, hogy a Szolgáltatáskezelés munkaterület Alapértelmezett termelési foglalás felülbírálása szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) keresi.
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Alapértelmezett termelési foglalás felülbírálása szolgáltatását keresi.
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Termelésfoglalási irányelv hozzárendelése cikkmodellcsoporthoz
 

@@ -2,26 +2,26 @@
 title: Üzletválasztó modul
 description: Ez a cikk az üzletválasztó modulra vonatkozik, és bemutatja, hogyan lehet a webhely lapjaihoz hozzáadni Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a91b50d2177483615cf45276cf342be381814717
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: ''
+manager: annbe
+ms.openlocfilehash: aa3aed837072cb6c3d4f7f92bec2f4b700408cf7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881683"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268340"
 ---
 # <a name="store-selector-module"></a>Üzletválasztó modul
 
@@ -135,7 +135,7 @@ A **Felvétel áruházban** módban a modul csak a PDP-k és a kosár oldalain h
 A következő lépések szerint konfigurálhatja az üzletválasztó modult az üzletek helyoldalán elérhető áruházak megjelenítése érdekében, mint az ebben a cikkben korábban látható ábra.
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
-1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra**.
+1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra.**
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
 1. Az Új lap **létrehozása párbeszédpanel** Lap neve **csoportban** adja **meg** az áruházi helyeket, majd válassza **a Tovább gombra.**

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e020bd3973b8b56dd1e6f3e5bdc8cba32600f7f8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af6dcb6d822ab14b0b4b881ca32626ea6eae4c28
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909643"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334506"
 ---
 # <a name="put-to-wall---put-to-store"></a>Falhoz helyez – üzletbe helyez
 
@@ -32,7 +32,7 @@ Ezt a raktározási funkciót más néven is említik, például „pu-to-light�
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>A Kimenő rendezés funkció bekapcsolása
 
-A *Falhoz helyez – üzletbe helyez* funkció használata előtt be kell kapcsolni a *Kimenő rendezés* funkciót a rendszerben. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+A Falon való *berakodás előtt –* *a* berakodva a rendszer számára be kell kapcsolva lennie a kimenő rendezési funkciónak. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
 
 - **Modul:** *Raktárkezelés*
 - **Szolgáltatás neve:** *Kimenő rendezés*

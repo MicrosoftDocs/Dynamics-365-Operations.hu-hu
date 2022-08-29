@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1b16eab5c107a3176f0890372d397947698e71de
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: ea142aff7c8f4b442d7224325e44359129efe8a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111724"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289680"
 ---
 # <a name="integrated-customer-master"></a>Integrált vevői alapadat
 
@@ -22,7 +22,7 @@ ms.locfileid: "9111724"
 
 
 
-A vevői adatok több mint egy Dynamics 365 alkalmazásban is elsajátíthatók. Egy vevői sor például származhat a Dynamics 365 Sales (egy ügyfélkapcsolati alkalmazás) értékesítési tevékenységéből, illetve a Dynamics 365 Commerce (egy Finance and Operations alkalmazás) kiskereskedelmi tevékenységéből. Nem számít, hogy honnan származik a vevői adatok, a program a háttérben integrálta. Az integrált vevői alapadat bármely Dynamics 365 alkalmazásban biztosítja a vevők alapadatainak létrehozásának rugalmasságát, és a vevő Dynamics 365 alkalmazáscsomagon keresztüli átfogó nézetét.
+A vevői adatok több mint egy Dynamics 365 alkalmazásban is elsajátíthatók. Egy vevői sor például származhat a Dynamics 365 Sales (egy ügyfélkapcsolati alkalmazás) értékesítési tevékenységéből, illetve a Dynamics 365 Commerce (egy Finance and Operations alkalmazás) kiskereskedelmi tevékenységéből. Függetlenül attól, hogy honnan származnak a vevő adatai, a környezet mögött van integrálva. Az integrált vevői alapadat bármely Dynamics 365 alkalmazásban biztosítja a vevők alapadatainak létrehozásának rugalmasságát, és a vevő Dynamics 365 alkalmazáscsomagon keresztüli átfogó nézetét.
 
 ## <a name="customer-data-flow"></a>Vevő adatfolyama
 

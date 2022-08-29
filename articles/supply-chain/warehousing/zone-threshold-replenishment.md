@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 44e7dfdbc980c5df6b9426515365611bc0de45c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893120"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335945"
 ---
 # <a name="zone-threshold-replenishment"></a>Feltöltés a zóna küszöbértéke alapján
 
@@ -38,7 +38,7 @@ A hely alapú min/max feltöltéssel ellentétben a zónaalapú min/max feltölt
 
 ## <a name="turn-on-the-zone-threshold-replenishment-feature"></a>A Feltöltés a zóna küszöbértéke alapján funkció bekapcsolása
 
-A *Feltöltés a zóna küszöbértéke alapján* funkció használatához a rendszerben be kell azt kapcsolni. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+A Zónaküszöb *feltöltési* funkció használata előtt be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Raktárkezelés*
 - **Funkció neve:** *Feltöltés a zóna küszöbértéke alapján*
@@ -262,7 +262,7 @@ Mielőtt elkezdené a munkát az eseten, aktiválnia kell a mintaadatokat, és b
 
 #### <a name="use-the-usmf-legal-entity"></a>Az USMF jogi személy használata
 
-Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 #### <a name="prepare-additional-sample-data"></a>További mintaadatok előkészítése
 

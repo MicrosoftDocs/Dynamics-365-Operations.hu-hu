@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492bbd31cae08a93cd68e5ce120d02a62141241b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d679595a1f702c4e3ade138a87c817d245fcf79
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874574"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324329"
 ---
 # <a name="accounts-receivable-posting"></a>Követelések feladása
 
 [!include [banner](../includes/banner.md)]
 
 A Kinnlevőségek modul **elsődleges** feladási profilja a vevői feladási profil. Ez a feladási profil határozza meg a vevői egyenlegek főkönyvbe való feladott összegző számláját. Az összegző számla egy fő számla. Kinnlevőségek kereskedelmi számlának is nevezik.
+
+A **vevő-főkönyvi** egyeztetési jelentés feladás után a vevői és főkönyvi számlák egyenlegének egyeztetését segíti. A jelentés a vevői feladási profil összegző számláján található információkat használja fel. Nem használja a bizonylathoz létrehozott könyvelés összegző számláját. Ha a tranzakciók feladása után megváltoztatja a vevői feladási profilt vagy a vevőhöz rendelt vevőcsoportot, a jelentés a vevő és a főkönyvi számla egyenlege közötti különbségeket is megjelenítheti. Ha csak az eltérést mutató sorokat, illetve azokat a sorokat is meg kell tekinteni, amelyeknél a vevői és a főkönyvi számla egyaránt nulla, **akkor** a jelentés nyomtatása esetén válassza a Csak a Különbségek paramétert.
 
 A további információkat lásd: [Vevői feladási profilok](../accounts-receivable/customer-posting-profiles.md).
 
@@ -101,4 +103,4 @@ További információ a Költségkód [létrehozása csoportban található](../
 
 A rendszer tetszés szerint úgy is beállítható, hogy az adott értékesítési rendelés esetén az üzletkötők vagy üzletkötők egy csoportja jutalékát számítsa ki. Ha engedélyezi ezt a funkciót, be kell állítania a jutalék kiszámításához használt feladási számlát. Ezt a konfigurációt az **Értékesítés** és marketing modul Jutalék feladási **lapján lehet** elkönyvelni.
 
-A további tudnivalókat lásd [Az értékesítési jutalékszabályok beállítása](../../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md).
+A további tudnivalókat lásd [Az értékesítési jutalékszabályok beállítása.](../../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md)

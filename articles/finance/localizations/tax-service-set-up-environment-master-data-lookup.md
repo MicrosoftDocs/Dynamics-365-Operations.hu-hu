@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3642bb88d5b0570014513b64eef5fdab6d1ee9d3
-ms.sourcegitcommit: 5b721f6fc1ba4350b5bd0eae457f71d80246db42
+ms.openlocfilehash: 2f9d882340171173e5e503f8b5e3aa856e8544b0
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9181124"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306203"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Alapadat-keresés engedélyezése adószámítási konfigurációhoz 
 
@@ -108,7 +108,7 @@ Dataverse A Azure AD aki a létrehozott alkalmazást használja a pénzügyi és
     - **Szolgáltató** – a mező nem AAD **beállítását adja meg**.
     - **E-mail** – dataverseintegration **vagy** más érték beírása. (Az értéknek nem kell érvényes e-mail fióknak lennie.)
 
-3. Rendelje hozzá **a felhasználóhoz a CDS virtuális entitás alkalmazás** biztonsági szerepkörét.
+3. Rendelje hozzá **Dataverse a felhasználóhoz a virtuális entitásintegrációs** alkalmazás biztonsági szerepkörét.
 4. Az összes többi szerepkör, többek között a Rendszerfelhasználó **eltávolítása**
 5. A regisztráláshoz **menjen a Rendszerfelügyeletet** \> **telepítő** \> **Azure Active Directory** alkalmazásokhoz.Dataverse 
 6. Adjon meg egy sort, **majd** az Ügyfél azonosítója mezőben adja **meg azt az alkalmazásazonosítót (** ügyfélazonosítót), amelyről korábban megjegyzést készített.
@@ -127,7 +127,7 @@ A csatlakozáshoz meg kell Dataverse adnia a Pénzügyi és műveletek alkalmaz�
 
 2. Válassza a **Beállítások** legördülő menü Adminisztráció **parancsát**.
 
-    [![Igazgatás.](./media/tcs-dataverse-master-data-lookup-5.png)](./media/tcs-dataverse-master-data-lookup-5.png)
+    [![Adminisztráció.](./media/tcs-dataverse-master-data-lookup-5.png)](./media/tcs-dataverse-master-data-lookup-5.png)
 
 3. Virtuális **entitás adatforrásának kiválasztása**.
 
@@ -199,17 +199,11 @@ További tudnivalókért lásd: [A Microsoft Dataverse Virtuális entitások eng
 
 ## <a name="set-up-the-connected-application-for-tax-calculation"></a><a name='set-up'></a> A kapcsolódó adószámítási alkalmazás beállítása
 
-1. Az RCS szolgáltatásban nyissa meg **a Szolgáltatáskezelés** munkaterületet, és engedélyezze a következő funkciókat:
-
-    - Elektronikus jelentés Dataverse-adatforrások támogatása
-    - Adószolgáltatás Dataverse-adatforrásainak támogatása
-    - Globalizációs funkciók
-
-2. Menjen az **Elektronikus jelentéskészítés** pontra, **majd a Kapcsolódó hivatkozások szakaszban** válassza **a Kapcsolódó alkalmazások lehetőséget**.
+1. Menjen az **Elektronikus jelentéskészítés** pontra, **majd a Kapcsolódó hivatkozások szakaszban** válassza **a Kapcsolódó alkalmazások lehetőséget**.
 
     [![Kapcsolódó alkalmazások](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. Rekord **hozzáadásához válassza az Új** lehetőséget, és adja meg a következő adatokat.
+2. Rekord **hozzáadásához válassza az Új** lehetőséget, és adja meg a következő adatokat.
 
     - **Név** – írjon be egy nevet.
     - **Típus** – válassza a lehetőséget **Dataverse**.
@@ -217,12 +211,18 @@ További tudnivalókért lásd: [A Microsoft Dataverse Virtuális entitások eng
     - **Bérlő** – adja meg a bérlőt.
     - **Egyéni URL-cím** – adja meg az Dataverse URL-címet, és fűzi **hozzá az /API/data/v9.1 adatokat**.
 
-4. Válassza **a Kapcsolat ellenőrzése** lehetőséget, **majd a megjelenő párbeszédpanelen kattintson ide a kiválasztott távoli alkalmazáshoz való csatlakozáshoz**.
+3. Válassza **a Kapcsolat ellenőrzése** lehetőséget, majd a párbeszédpanelen kattintson **ide a kiválasztott távoli alkalmazáshoz való csatlakozáshoz**.
 
     [![A kapcsolat ellenőrzése](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. Győződjön meg róla, hogy a "Sikeres" üzenetet kapja. üzenet, amely a kapcsolat sikeres létrejöttét jelzi.
+4. Győződjön meg róla, hogy a "Sikeres" üzenetet kapja. üzenet, amely a kapcsolat sikeres létrejöttét jelzi.
 
     [![Sikeres üzenet.](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. Az RCS szolgáltatásban nyissa meg **a Szolgáltatáskezelés** munkaterületet, és engedélyezze a következő funkciókat:
+
+    - Globalizációs funkciók
+    - Elektronikus jelentés Dataverse-adatforrások támogatása
+    - Adószolgáltatás Dataverse-adatforrásainak támogatása
 
 ## <a name="import-and-set-up-the-dataverse-model-mapping-configuration"></a><a name='import'></a> A modellleképezés konfigurációjának importálása Dataverse és beállítása
 

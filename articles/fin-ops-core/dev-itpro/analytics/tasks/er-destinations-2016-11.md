@@ -1,24 +1,24 @@
 ---
 title: ER - Célok konfigurálása
 description: Ez az eljárás bemutatja, hogy hogyan lehet a különböző helyeket beállítani és használnia az Elektronikus jelentés (ER) kimeneti összetevőire, például egy mappára vagy egy fájlra vonatkozóan.
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1e679b52b28ff1ca117c5224fc7e2825feb26e5e5aea1c8b5bc3a88d1eaf235
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
+ms.openlocfilehash: 3c8d03e9783013183fbe76cb36014fa9e1e1cbed
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743263"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291054"
 ---
 # <a name="er-configure-destinations"></a>ER - Célok konfigurálása
 
@@ -26,7 +26,7 @@ ms.locfileid: "6743263"
 
 Ez az eljárás bemutatja, hogy hogyan lehet a különböző helyeket beállítani és használnia az Elektronikus jelentés (ER) kimeneti összetevőire, például egy mappára vagy egy fájlra vonatkozóan. Ez az eljárás az DEMF bemutatócéget használja. Németország a jogi személy elsődleges címének országa\régiója, de ezen eljárás bármely jogi személyét használhatja. 
 
-Ezen példa formátuma az ISO20022 Jóváírás átvitele, de bármilyen formátumot használat, amelyet már importált. Ne feledje, hogy ez az eljárás egyetlen fájl és egyetlen cél beállítás példája. Az Elektronikus jelentéskészítési cél kezelésével kapcsolatos további információk a Dynamics 365 Finance súgójában találhatóak meg.
+Ezen példa formátuma az ISO20022 Jóváírás átvitele, de bármilyen formátumot használat, amelyet már importált. Ne feledje, hogy ez az eljárás egyetlen fájl és egyetlen cél beállítás példája. Az elektronikus jelentési célok kezelésével kapcsolatos további információk a Dynamics 365 Pénzügyi súgóban találhatók.
 
 1. Ugorjon a Szervezeti adminisztráció > Elektronikus jelentéskészítés > Elektronikus jelentéskészítési cél pontra.
 2. Kattintson az Új lehetőségre az új célkészlet létrehozásához a formátumra vonatkozóan.

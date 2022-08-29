@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: 1f2e4eb8825dd690f926f7f0bdfc39f1eb5fb83c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881852"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276373"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
 
@@ -46,6 +46,12 @@ A következő összetevők elengedhetetlenek a kategóriákhoz:
     - Termék neve – \[Z–A\]
     - Értékelések – növekvő sorrend
     - Értékelések – csökkenő sorrend
+
+- **A speciális rendezési beállításokat** a webhely felhasználásával használja a termékek intelligens feltételekkel való rendezése során. A Termék ajánlások [engedélyezésével](product-recommendations.md) a következő rendezési lehetőségek érhetők el. A további tudnivalókat lásd a Termékajánlásokatik [típusai cikknél](product-recommendations.md#types-of-product-recommendations).
+
+    - Új
+    - Legkelendőbb
+    - Felkapott
 
 - Az **Oldalszámozás** segítségével a webhely látogatói a kategorizált termékek találatainak egyik lapjáról a másikra kerülnek.
 - A **Teljes szám** az adott kategóriába tartozó termékek teljes számát adja meg.
@@ -78,7 +84,7 @@ A következő összetevők elengedhetetlenek a keresési találatok laphoz:
 
 - A **Termékelhelyezési csempék** a felhasználó kereséséhez jelenítik meg a termékeket. Alapértelmezés szerint ezek a csempék a felhasználó keresés felhőalapú relevancia-pontszáma alapján vannak sorba rendezve.
 - A **Finomítások és választási lehetőségek összefoglalása** olyan szűrők, amelyek számokat biztosítanak, és a cikkek finomítására használhatók. A termékkihelyezési vezető a „csatornakategóriákhoz és termékattribútumokhoz” kapcsolódó metaadatok konfigurációjának részeként konfigurálja őket.
-- A **Rendezési beállításokat** a webhely látogatói a termékek rendezéséhez használják. Alapértelmezés szerint a következő rendezési lehetőségek érhetők el:
+- **A szokásos rendezési beállításokat** a webhely rendezési beállításai használják. Alapértelmezés szerint a következő rendezési lehetőségek érhetők el:
 
     - Ár – növekvő sorrend
     - Ár – csökkenő sorrend
@@ -86,7 +92,16 @@ A következő összetevők elengedhetetlenek a keresési találatok laphoz:
     - Termék neve – \[Z–A\]
     - Értékelések – növekvő sorrend
     - Értékelések – csökkenő sorrend
-    - Alapértelmezett
+    - Alapértelmezett 
+    
+    > [!NOTE]
+    > Ha **a navigációs archiválásban** meg vannak határozva a termékek megjelenítési sorrendje, a kategóriaoldalakon alapértelmezés szerint a **megjelenítés sorrendjében megadott értékeket jeleníti meg a rendszer**. Ellenkező esetben a rendezés a termékszám alapján **történik**.)
+    
+- **A speciális rendezési beállításokat** a webhely felhasználásával használja a termékek intelligens feltételekkel való rendezése során. A Termék ajánlások [engedélyezésével](product-recommendations.md) a következő rendezési lehetőségek érhetők el. A további tudnivalókat lásd a Termékajánlásokatik [típusai cikknél](product-recommendations.md#types-of-product-recommendations).
+
+    - Új
+    - Legkelendőbb
+    - Felkapott
 
 - Az **Oldalszámozás** segítségével a webhely látogatói a kategorizált termékek találatainak egyik lapjáról a másikra kerülnek.
 - A **Teljes szám** az adott kategóriába tartozó és a keresési feltételeknek megfelelő termékek teljes számát adja meg.
@@ -94,6 +109,8 @@ A következő összetevők elengedhetetlenek a keresési találatok laphoz:
 >[!NOTE]
 >Ezek a felhőalapú keresési funkciók a 10.0.8 verziótól érhetők el. Ellenőrizze, hogy a **Kereskedelmi paraméterek > Konfigurációs paraméterek** között van-e egy bejegyzés a következőhöz: „ProductSearch. UseAzureSearch 'igaz' értékre állítva”. 
 ![A felhőalapú keresés konfigurációs paraméterei.](./media/CloudPoweredSearchConfigurationParameters.png)
+
+>Ezenkívül a speciális rendezési beállítások (például új, [legjobb](product-recommendations.md) eladási és trendek) alkalmazáshoz engedélyeznie kell a termékajánlásokat a környezet számára. Speciális rendezési beállítások állnak rendelkezésre a Commerce SDK 9.35+ és Commerce 10.0.20-as verziójával.
 
 ## <a name="additional-resources"></a>További erőforrások
 

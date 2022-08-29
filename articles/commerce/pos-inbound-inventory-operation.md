@@ -1,27 +1,27 @@
 ---
 title: Bejövő készletműveletek a pénztárban
 description: Ez a témakör a pénztár bejövő készletműveletének lehetőségeit írja le.
-author: hhaines
+author: hhainesms
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858882"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288352"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Bejövő készletműveletek a pénztárban
 
@@ -141,7 +141,7 @@ A beszerzési rendelés soraihoz tartozó alulteljesítési toleranciaszázalék
 
 Miután egy szervezet befejezte a beszerzési rendelés alulteljesítésének konfigurálását, a pénztár-felhasználók egy új **Fenmmaradó mennyiség lezárása** lehetőséget látnak a **Részletek** panelen, amikor kiválasztják a bejövő beszerzési rendelési sort a pénztár **Bejövő készlet** művelettel. Ha a felhasználó lezárja a fennmaradó mennyiséget, akkor a pénztár ellenőrzi, hogy a lezárni kívánt mennyiség a beszerzési rendelés sorában megadott alulteljesítés százalékos tűréshatárán belül van-e. Ha túllépi az alulteljesítési tűréshatárt, akkor egy hibaüzenet jelenik meg, és a felhasználó nem tudja lezárni a fennmaradó mennyiséget egészen addig, amíg a korábban bevételezett mennyiség plusz a **Bevételezés most** mennyiség el nem éri vagy meg nem haladja azt a mennyiséget, amelyet az alulteljesítés százalékos tűréshatára alapján bevételezni kell. 
 
-Ha egy beszerzésirendelés-sorhoz bekapcsolja a **Fennmaradó mennyiség lezárása** lehetősége, akkor amikor a **Bevételezés befejezése** művelettel a felhasználó befejezi a bevételezést, akkor egy lezárási kérelmet küld a program a Commerce-központba, és minden, ehhez a rendeléssorhoz nem bevételezett mennyiséget visszavon a program. Ezen a ponton a sor teljes egészében bevételezettnek tekintendő. 
+**Ha** egy beszerzésirendelés-sornál be van kapcsolva a Fennmaradó mennyiség lezárása beállítás, **és** amikor a felhasználó a Befejezés bevételezés művelettel befejezi a bevételezést, a rendszer záráskérést küld a Commerce Headquarters számára, és a rendelési sorból fel nem használt mennyiséget érvénytelenné teszi. Ezen a ponton a sor teljes egészében bevételezettnek tekintendő. 
 
 ### <a name="receiving-location-controlled-items"></a>Helyvezérlet cikkek bevételezése
 
@@ -155,15 +155,13 @@ Igény esetén kiválaszthatja az **Összes bevételezést** lehetőséget az al
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Nem tervezett cikkek fogadása beszerzési rendeléseken
 
-A Commerce 10.0.14 és újabb verzióiban a felhasználók olyan terméket fogadhatnak, amely eredetileg nem szerepeltek a beszerzési rendelésen. A funkció engedélyezéséhez kapcsolja be a **Sorok hozzáadása beszerzési rendeléshez a pénztári fogadás során**.  
-
-Ez a funkció csak a beszerzési rendelések bevételezéséhez használható. Az átmozgatási rendelésekből nem lehet cikkeket bevételezni, ha a cikkeket korábban nem rendelték meg és nem szállították ki a kimenő raktárból.
+A Commerce 10.0.14 és újabb verzióiban a felhasználók olyan terméket fogadhatnak, amely eredetileg nem szerepeltek a beszerzési rendelésen. Ez a funkció csak a beszerzési rendelések bevételezéséhez használható. Az átmozgatási rendelésekből nem lehet cikkeket bevételezni, ha a cikkeket korábban nem rendelték meg és nem szállították ki a kimenő raktárból.
 
 A felhasználók nem adhatnak hozzá új termékeket a beszerzési rendeléshez a pénztári bevételezés során, ha a beszerzési rendelés [változáskezelési munkafolyamata](../supply-chain/procurement/purchase-order-approval-confirmation.md) engedélyezve van a Commerce központban (HQ). A változtatások kezelésének engedélyezéséhez előbb jóvá kell hagynia a beszerzési rendelés minden módosítását, mielőtt a bevételezés engedélyezve van. Mivel ez a folyamat lehetővé teszi a bevételező számára, hogy új sorokat vegyen fel a beszerzési rendelésbe, a bevételezés sikertelen lesz, ha engedélyezve van a változáskezelési munkafolyamat. Ha minden beszerzési rendeléshez vagy a pénztári rendszerbe aktívan beérkezett beszerzési rendeléshez kapcsolódó szállítónál engedélyezve van a változtatások kezelése, akkor a felhasználó nem veheti fel a beszerzési rendelésbe az új termékeket a pénztári rendszerbe történő bevételezés során.
 
 Azok a funkciók, amelyek lehetővé teszik a sorok hozzáadását, nem használhatók megoldásként a már a beszerzési rendelésen szereplő termékek további mennyiségeinek fogadására. A túlbevétezés a szokásos [túlbevételezés](#over-receiving-validations) beállításokkal történik a terméksorhoz a beszerzési rendelésen.
 
-Ha **Sorok hozzáadása beszerzési rendeléshez a pénztári fogadás során** engedélyezve van, és a felhasználó fogadja a **Bejövő műveletet** a pénztári rendszerben, ha a felhasználó olyan termékazonosítót vagy termékazonosítót olvas be, amely nem az aktuális beszerzési rendelésen szereplő cikként van azonosítva, de érvényes cikkként ismerhető fel, akkor a felhasználó üzenetet kap a cikknek a beszerzési rendelésbe történő hozzáadásáról. Ha a felhasználó hozzáadja a tételt a beszerzési rendeléshez, akkor a **Bevételezés most** helyen megaott mennyisége lesz a beszerzésirendelés-sor megrendelt mennyiségének tekintve.
+Amikor egy **felhasználó** megkapja a POS bejövő műveletét, akkor egy olyan termék vonalkódját vagy termékszámát olvassa be vagy kulcsa meg, amely érvényes cikkként van elismerve, de nem ismerhető fel cikkként az aktuális beszerzési rendelésen, a felhasználó üzenetet kap, és kéri, hogy vegye fel a cikket a beszerzési rendelésbe. Ha a felhasználó hozzáadja a tételt a beszerzési rendeléshez, akkor a **Bevételezés most** helyen megaott mennyisége lesz a beszerzésirendelés-sor megrendelt mennyiségének tekintve.
 
 Amikor a beszerzési rendelés bevételezése elkészült és be lett küldve a központ számára a feldolgozásra, a program a beszerzési rendelés alapdokumentumán hozza létre a hozzáadott sorokat. A központ beszerzési rendelési sorában a **Pénztárban hozzáadva** jelölő lesz látható a beszerzésirendelés-sor **Általános** lapján. A **Pénztárban hozzáadva** jelölővel azt jelzi, hogy a beszerzési rendelési sor a pénztári bevételezési folyamat során lett hozzáadva, és a bevételezés előtt nem szerepelt az értékesítési rendelésen.
 

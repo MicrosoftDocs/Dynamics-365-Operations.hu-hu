@@ -2,7 +2,7 @@
 title: Kézi készletmozgás halasztott feldolgozása
 description: Ez a témakör azt mutatja be, hogyan használható a Microsoft kézi készletmozgásának halasztott feldolgozása Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9acacaddbde22d05d85ab9e11cd1d6de62337a6a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863737"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336395"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Kézi készletmozgás halasztott feldolgozása
 
@@ -32,10 +32,10 @@ A háttérbeli feldolgozást a [Raktári alkalmazás eseményeinek feldolgozása
 
 A funkció elérhetővé tétele érdekében kapcsolja be a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő funkciókat. A következő sorrendben kell bekapcsolni őket:
 
-1. *Szervezeti szintű munkazárolás*<br>(Az Ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni.)
-1. *Raktári alkalmazás eseményeinek feldolgozása*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója alapértelmezés szerint be van kapcsolva.)
-1. *Halasztott Put műveletek*
-1. *Manuális készletmozgási művelet halasztott feldolgozása*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni.)
+1. *Szervezeti szintű munkazárolás*<br>(Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni.)
+1. *Raktári alkalmazás eseményeinek feldolgozása*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni.)
+1. *Halasztott Put műveletek*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni.)
+1. *Manuális készletmozgási művelet halasztott feldolgozása*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurálja a munkafeldolgozási irányelveket
 

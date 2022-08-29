@@ -1,26 +1,26 @@
 ---
 title: ER-formátum megtervezése az oldalfejlécben vagy láblécben beágyazott képeket tartalmazó Excel-formátumú jelentés létrehozásához
 description: Ez a cikk bemutatja az elektronikus jelentéskészítés (ER) használatát olyan üzleti dokumentumok létrehozásához, amelyekben a lapfejlécek és -láblécek képei és iramai vannak.
-author: NickSelin
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: EROperationDesigner, ERParameters
+ms.openlocfilehash: 5b46d92094bb3f2dab67a5cb2f0e1a34b05d52f0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854843"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281812"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>ER-formátum megtervezése az oldalfejlécben vagy láblécben beágyazott képeket tartalmazó Excel-formátumú jelentés létrehozásához
 
@@ -196,7 +196,7 @@ Ebben az esetben a Litware, Inc. képviselőjeként létre kell hozni (származt
 
 ![Egyéni fizetési formátum konfigurációjának létrehozása a Konfiguráció létrehozása legördülő párbeszédpanelen.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-Létrejön a **Szabadszöveges számla (Excel) – egyéni** ER-formátum 240.112.1-es verziója. Ez a verzió **Piszkozat** [állapottal](general-electronic-reporting.md#component-versioning) rendelkezik, és szerkeszthető. Az egyéni ER-formátum jelenlegi tartalma megegyezik a Microsoft által biztosított formátum tartalmával.
+Létrejön a **Szabadszöveges számla (Excel) – egyéni** ER-formátum 240.112.1-es verziója. Ez a verzió Vázlat **állapotú**, és szerkeszthető. Az egyéni ER-formátum jelenlegi tartalma megegyezik a Microsoft által biztosított formátum tartalmával.
 
 ![Az ER-formátum konfigurációjának új verziója a Konfigurációk oldalon létrehozva.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -244,7 +244,7 @@ Létrejön a **Szabadszöveges számla (Excel) – egyéni** ER-formátum 240.11
 
 ### <a name="mark-the-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Egyéni formátum megjelölése futtathatóként
 
-Mivel az egyéni formátum első verzióját már létrehozta, és az a **Piszkozat** állapottal rendelkezik, tesztelés céljából futtathatja a formátumot. A jelentés futtatásához a szállítói kifizetést az egyéni ER-formátumra hivatkozó fizetési mód használatával dolgozza fel. Alapértelmezésben, amikor egy ER-formátumot hív meg az alkalmazásból, csak a **Befejeződött** vagy **Megosztott** állapotú verziókat [veszi figyelembe](general-electronic-reporting.md#component-versioning) a rendszer. Ez a viselkedés segít megakadályozni a befejezetlen konstrukciókkal rendelkező ER-formátumok használatát. A teszt futtatásakor azonban kényszerítheti az alkalmazást egy **Piszkozat** állapottal rendelkező ER-formátumverzió használatára. Ily módon módosíthatja az aktuális formátum verziószámát, ha bármilyen módosítás szükséges. További információ: [Alkalmazhatóság](electronic-reporting-destinations.md#applicability).
+Mivel az egyéni formátum első verzióját már létrehozta, és az a **Piszkozat** állapottal rendelkezik, tesztelés céljából futtathatja a formátumot. A jelentés futtatásához a szállítói kifizetést az egyéni ER-formátumra hivatkozó fizetési mód használatával dolgozza fel. Alapértelmezés szerint az alkalmazásból származó ER-formátum hívása esetén csak a Kész és **a** **Megosztott állapotú verziók** számítanak. Ez a viselkedés segít megakadályozni a befejezetlen konstrukciókkal rendelkező ER-formátumok használatát. A teszt futtatásakor azonban kényszerítheti az alkalmazást egy **Piszkozat** állapottal rendelkező ER-formátumverzió használatára. Ily módon módosíthatja az aktuális formátum verziószámát, ha bármilyen módosítás szükséges. További információ: [Alkalmazhatóság](electronic-reporting-destinations.md#applicability).
 
 Ha egy ER-formátum piszkozat verzióját kívánja használni, ennek kifejezett módon be kell jelölnie az ER-formátumot.
 

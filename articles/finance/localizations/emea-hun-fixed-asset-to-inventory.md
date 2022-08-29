@@ -1,25 +1,25 @@
 ---
 title: Tárgyi eszköz áthelyezése leltárba
 description: Ez a cikk azt a Magyarországra vonatkozó országspecifikus funkciót írja le, amely lehetővé teszi a tárgyi eszközök készletbe való átvitelét a nettó könyv szerinti értéken. A tárgyi eszköz állapota „Selejtezett” lesz, a nettó könyv szerinti érték pedig 0 (nulla). Ezenkívül a készletben lévő termék mennyisége 1-re van állítva, és az önköltségi ár a tárgyi eszköz nettó könyv szerinti értékére van beállítva.
-author: Anasyash
+author: AdamTrukawka
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: InventJournalAsset
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 274423
 ms.search.region: Hungary
-ms.author: anasyash
-ms.dyn365.ops.version: Version 1611
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 41be85b6b6f5b6337bce9c724fe0dafe744f23b3eb552ba251a9858b46560ecd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Version 1611
+ms.custom: 274423
+ms.search.form: InventJournalAsset
+ms.openlocfilehash: a3cb336eecc43386aa10f225df993f0315dbf22e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721709"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283898"
 ---
 # <a name="move-a-fixed-asset-to-inventory"></a>Tárgyi eszköz áthelyezése leltárba
 

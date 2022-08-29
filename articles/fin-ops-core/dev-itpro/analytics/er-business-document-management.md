@@ -1,25 +1,25 @@
 ---
 title: Üzletidokumentum-kezelés – áttekintés
 description: Ez a cikk az ER keretrendszer Üzleti dokumentumkezelési funkció használatával kapcsolatban tartalmaz tájékoztatást.
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9147a2e81329d5bf9103b6bfe067d166c1471835
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
+ms.openlocfilehash: 0fab7e1a36d9b4092cf4353533704859e83bed26
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903617"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288288"
 ---
 # <a name="business-document-management-overview"></a>Üzletidokumentum-kezelés – áttekintés
 
@@ -303,7 +303,7 @@ A **BDM sablonszerkesztő** lap megnyílik. A kiválasztott sablon elérhetővé
 
 ![Az üzleti dokumentumkezelés sablonszerkesztő oldala.](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="edit-a-template-in-microsoft-365"></a><a name="EditInOffice365"></a>Sablon szerkesztése a Microsoft 365 megoldásban
+### <a name="edit-a-template-in-microsoft-365"></a><a name="EditInOffice365"></a>Sablon szerkesztése a Microsoft 365-ben
 
 Módosíthatja a sablont az Microsoft 365 használatával. Például az Office Online webhelyen a sablon fejlécében lévő mező betűtípusát **Normál** értékről **Félkövérre** kell módosítani. Ezeket a módosításokat a rendszer automatikusan menti a szerkeszthető sablonban, amely az elsődleges sablon tárhelyén (alapértelmezés szerint az Azure blob tároló), amely konfigurálva van az ER keretrendszerben. Ez be van állítva az ER keretrendszerhez.
 

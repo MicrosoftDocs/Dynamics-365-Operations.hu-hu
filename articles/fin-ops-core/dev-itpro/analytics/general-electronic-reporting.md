@@ -1,28 +1,26 @@
 ---
 title: Elektronikus jelentéskészítés (ER) áttekintése
 description: Ez a cikk áttekintést nyújt az Elektronikus jelentéskészítő eszközről. Alapvető fogalmakat, támogatott eseteket és a megoldás részét képező formátumokat ír le.
-author: NickSelin
+author: kfend
 ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "58941"
-- intro-internal
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: e94846dd565abb6de2c1f07532d285e28307e9a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109580"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269691"
 ---
 # <a name="electronic-reporting-er-overview"></a>Elektronikus jelentéskészítés (ER) áttekintése
 
@@ -78,7 +76,7 @@ Az ER motor a következő képességekkel rendelkezik:
 
 [![ER fő adatáramlás.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### <a name="components"></a>Összetevők
+### <a name="component"></a>Összetevő
 
 Az ER a következő típusú összetevőket támogatja:
 
@@ -89,32 +87,7 @@ Az ER a következő típusú összetevőket támogatja:
 
 További információ: [Elektronikus jelentéskészítés összetevői](er-overview-components.md).
 
-
-#### <a name="component-versioning"></a>Összetevő verziókövetése
-
-Az ER-összetevő esetében támogatott a verziókövetés. A következő munkafolyamat az ER-összetevők változásainak kezelésére szolgál:
-
-1. Az eredetileg létrehozott verzió **Tervezet** verzióként van megjelölve. Ez a verzió szerkeszthető és elérhető próbakísérletekhez.
-2. A **Tervezet** verzió átkonvertálható egy **Befejeződött** verzióvá. Ez a verzió használható a helyi jelentési folyamatokban.
-3. A **Befejeződött** verzió átkonvertálható egy **Megosztott** verzióvá. Ezen verzió közzétételre kerül az LCS-n, és a globális jelentési folyamatokban is használható.
-4. A **Megosztott** verzió átkonvertálható **Nem folytatott** verzióvá. Ez a verzió törölhető.
-
-A **Befejeződött** vagy **Megosztott** állapotú verziók elérhetőek más adatcsere céljából. Egy ezekkel az állapotokkal rendelkező összetevőn a következő műveletek végezhetőek el:
-
-- Az összetevő szerializálható XML-formátumba és a rendszerből exportálható XML formátumú fájlba.
-- Az összetevők újraszerializálhatóak XML fájlból, és importálhatóak az alkalmazásba egy ER-összetevő új verziójaként.
-
-#### <a name="component-date-effectivity"></a>Összetevő érvényességi dátuma
-
-Az ER-összetevő verziói érvényességi dátumhoz kötöttek. Az ER-összetevőhöz beállítható az **Érvényesség kezdete** dátum, hogy meghatározzuk, mikortól lesz érvényes az összetevő a jelentési folyamatban. Az alkalmazás munkamenetdátuma arra használható, hogy meghatározzuk, érvényes-e az összetevő a végrehajtásra. Amennyiben egy bizonyos dátumhoz egynél több verzió is érvényes, a jelentési folyamathoz a legutóbbi verzió kerül felhasználásra.
-
-#### <a name="component-access"></a>Összetevő hozzáférése
-
-Az ER formátum összetevőinek hozzáférése függ az ország/régió ISO kódjának beállításától. Ha ez a beállítás nincs bejelölve a formátum beállítások kiválasztott verziójánál, akkor a formátum összetevők elérhetőek bármely vállalatnál a futási idő során. Ha ez a beállítás tartalmazza az ország/régió ISO kódját, akkor a formátum összetevője csak abból a vállalatból érhető el, amely elsődleges címének egy formátum-összetevő ország/terület ISO kódja van megadva.
-
-Előfordulhat, hogy az adatformátum-összetevők különböző verziói más ország/régió ISO kód beállításaival rendelkeznek.
-
-#### <a name="configuration"></a><a name="Configuration"></a>Konfiguráció
+### <a name="configuration"></a><a name="Configuration"></a>Konfiguráció
 
 Az ER-konfiguráció egy adott ER-összetevő csomagolója. Az összetevő lehet adatmodell-összetevő vagy formátum-összetevő. A konfiguráció tartalmazhatja egy ER-összetevő különböző verzióit. Az egyes konfigurációk tulajdonosa egy konkrét konfigurációs szolgáltatóként van megjelölve. Egy konfiguráció összetevőjének **Vázlat** verziója akkor szerkeszthető, amikor a konfiguráció tulajdonosa aktív szolgáltatóként van beállítva az alkalmazás ER-beállításokban.
 
@@ -124,13 +97,13 @@ A létrehozott formátumbeállítás tartalmaz egy formátum-összetevőt. Ez er
 
 Az ER-konfiguráció megosztásra kerül az alkalmazás vállalatok számára.
 
-#### <a name="provider"></a><a name="Provider"></a>Szolgáltató
+### <a name="provider"></a><a name="Provider"></a>Szolgáltató
 
 Az ER-szolgáltató az a félazonosító, amely az egyes ER-konfigurációk szerzőjét (tulajdonosát) meghatározza. ER segítségével kezelheti a konfigurációs szolgáltatók listáját. Az elektronikus dokumentumokhoz **a pénzügyi és műveleti megoldás részeként kiadott formátumkonfigurációk a Microsoft konfigurációs szolgáltató tulajdonában vannak**.
 
 Új ER-szolgáltató regisztrálási módjának megismeréséhez játssza le a feladat-útmutatót: **ER Konfigurációszolgáltató létrehozása és megjelölése aktívként** (a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamat része).
 
-#### <a name="repository"></a><a name="Repository"></a>Tárház
+### <a name="repository"></a><a name="Repository"></a>Tárház
 
 Egy ER tárház ER konfigurációkat tárol. A következő típusú ER tárházak támogatottak jelenleg: 
 
@@ -145,7 +118,7 @@ Egy **LCS megosztott könyvtár** tár a megosztott eszköztárbó elérést biz
 
 Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi példányból egy adott **LCS-projekt** tárházba. Az LCS-projekttárház **konfigurációit** is importálhatja a pénzügyi és műveleti alkalmazások aktuális példányába.
 
-A **Fájlrendszer** adattár hozzáférést nyújt azokhoz a konfigurációk listájához, amelyek XML-fájlként a berendezés helyi fájlrendszerének meghatározott mappájában vannak, ahol az AOS szolgáltatást tárolják. A szükséges mappát az adattár regisztrációs fázisában választják ki. Importálhat továbbá konfigurációkat egy **Fájlrendszer** adattárból a jelenlegi példányba. 
+A **fájlrendszertárház** hozzáférést biztosít az AOS szolgáltatást tartalmazó számítógép helyi fájlrendszerének meghatározott mappájában XML-fájlként található konfigurációk listájához. A szükséges mappát a tárház regisztrálásának fázisában kell kiválasztani. Importálhat továbbá konfigurációkat egy **Fájlrendszer** adattárból a jelenlegi példányba. 
 
 Vegye figyelembe, hogy ez a tárhelytípus elérhető a következő környezetekben:
 
@@ -162,7 +135,7 @@ A **Globális tár** adattár hozzáférést biztosít a [Konfigurációs szolg�
 
 További információért lásd: [Elektronikus jelentéskészítési (ER) konfigurációk importálása a konfigurációs szolgáltatás Globális tárából](./er-download-configurations-global-repo.md)
 
-Az **Operations-erőforrások** tárház hozzáférést biztosít azon konfigurációk listájához, melyeket kezdetben a a alkalmazásmegoldás részeként a Microsoft szállít mint ER-konfigurációszolgáltató. Ezek a konfigurációk importálhatóak a jelenlegi munkamenetbe és felhasználhatóak elektronikus jelentés céljából vagy egyszerű feladatútmutatók lejátszásához. Használhatóak ezen kívül további lokalizációkhoz és testreszabásokhoz. Vegye figyelembe, hogy a Microsoft által bizosított legfrissebb ER konfigurációkat az LCS megosztott eszköztárból kell importálni a megfelelő ER tárház használatával.
+Az **Operations-erőforrások** tárház hozzáférést biztosít azon konfigurációk listájához, melyeket kezdetben a a alkalmazásmegoldás részeként a Microsoft szállít mint ER-konfigurációszolgáltató. Ezek a konfigurációk importálhatóak a jelenlegi munkamenetbe és felhasználhatóak elektronikus jelentés céljából vagy egyszerű feladatútmutatók lejátszásához. Használhatóak ezen kívül további lokalizációkhoz és testreszabásokhoz. Ne feledje, hogy a Microsoft ER-konfigurációk által biztosított legújabb verziókat a megfelelő ER-tárház segítségével kell importálni az LCS megosztott eszköztárából.
 
 A szükséges **LCS-projekt**, **Fájlrendszer**, és **Jogszabályban előírt konfigurációs szolgáltatás** adattárakat külön-külön is lehet regisztrálni az aktuális példány minden egyes konfigurációs szolgáltatójára. Minden tárház hozzárendelhető egy bizonyos konfigurációs szolgáltatóhoz.
 
@@ -265,6 +238,7 @@ A Finance megoldásban az ER-konfigurációk listája folyamatosan frissül. Nyi
 
 ## <a name="additional-resources"></a>További erőforrások
 
+- [Elektronikus jelentéskészítés összetevői](er-overview-components.md)
 - [Elektronikus jelentéskészítési (ER) konfigurációk létrehozása](electronic-reporting-configuration.md)
 - [Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)
 

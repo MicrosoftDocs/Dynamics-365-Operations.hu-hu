@@ -1,20 +1,20 @@
 ---
 title: Áfabevallás (Dánia)
 description: Ez a témakör azt ismerteti, hogyan lehet beállítani és létrehozni egy áfa-előlegbevallást Dániára.
-author: anasyash
+author: AdamTrukawka
 ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: 666dc96cb169ab28ac3938299a3f245e3b4511ab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a47b2b98d86daf50876c783f879362ec1addb579
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862999"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9272140"
 ---
 # <a name="vat-declaration-denmark"></a>Áfabevallás (Dánia)
 
@@ -22,11 +22,11 @@ ms.locfileid: "8862999"
 
 Ez a cikk bemutatja, hogyan lehet beállítani a dán áfabevallást, és előnézeti nézetet látni a dokumentumban Microsoft Excel.
 
-A jelentés automatikus létrehozásához először hozzon létre elég áfakódot ahhoz, hogy az előleg áfabevallásán minden egyes mezőben külön áfakönyvelés legyen. Ezenkívül az előzetes áfabevallás elektronikus jelentési (ER) formátumának alkalmazásspecifikus paramétereiben az áfakódokat hozzá kell társítani az áfabevallás mezőihez keresési eredményekhez.
+A jelentés automatikus létrehozásához először hozzon létre elég áfakódot ahhoz, hogy az előleg áfabevallásán minden egyes mezőben külön áfakönyvelés legyen. Ezenkívül az előzetes áfabevallás elektronikus jelentéskészítési (ER) formátumának alkalmazásspecifikus paramétereiben társítsa a forgalmiadó-kódokat az áfabevalláson szereplő mezők keresésének eredményével.
 
 Dánia esetében be kell állítani a Jelentés **mezőkeresést**. Az alkalmazásspecifikus paraméterek beállításával kapcsolatos további [tudnivalókat](#set-up-application-specific-parameters) lásd a Cikk áfabevallási mezők alkalmazásspecifikus paramétereinek beállítása című részében.
 
-A következő táblázatban a "Keresés eredménye" oszlop mutatja azt a keresési eredményt, amely az áfabevallási formátumban egy adott áfabevallási sorhoz előre konfigurálva van. Ezzel az információval lehet megfelelően társítani az áfakódokat a keresési eredményhez, majd az áfabevallás sorhoz.
+Az alábbi táblázatban a "Keresési eredmény" oszlop az áfabevallási formátumban egy adott áfabevallási sorhoz előre konfigurált keresési eredményt mutatja. Ezen információk segítségével helyesen társíthatja az áfakódokat a keresési eredményhez, majd az áfabevallás sorához.
 
 ### <a name="vat-declaration-overview"></a>Áfabevallás áttekintése
 
@@ -65,15 +65,15 @@ A dán áfabevallás a következő adatokat tartalmazza.
 | B mező - szolgáltatásellátás. Az európai uniós szolgáltatásértékesítések áfa nélküli értékét, amelynek a vevő fordított áfa fizetésére kötelezett, jelenteni kell az "EU-értékesítés áfa nélkül"/DK VIES részére.                          | Adóalap            | **SalesServicesEU**                             |
 | C-rovat - egyéb kellékek Más áruk és szolgáltatások forgalmi adó nélkül, Dánia területén, más EU-tagállamnak, illetve harmadik országoknak vagy harmadik területeknek nyújtott értéke.                                     | Adóalap            | **EgyébSuppliesWithoutVAT**                     |
 
-#### <a name="purchase-reverse-charge-vat"></a>Beszerzés fordított áfával
+#### <a name="purchase-reverse-charge-vat"></a>Beszerzési fordított adó áfa
 
-Ha az áfakódokat úgy konfigurálja, hogy a bejövő fordított áfát az áfa használatával adja fel, **társítsa** az áfakódokat a név "UseTax" nevű jelentésmező-keresési eredményéhez.
+Ha úgy konfigurálja az áfakódokat, hogy a használati adó használatával feladják a bejövő fordított adók áfáját, társítsa az áfakódokat a Jelentés mezőkeresés **keresési eredményéhez**, amely a névben szerepel a "UseTax" kifejezés.
 
-Másik lehetőségként két külön áfakódot is be lehet állítani: egyet az esedékes áfára, egyet pedig az áfalevonásra. Ezután társítsa az egyes kódokat a Jelentés **mező keresésének megfelelő keresési eredményeihez**.
+Másik lehetőségként két külön áfakódot is konfigurálhat: egyet az esedékes áfa, egyet pedig az áfa levonásához. Ezután társítsa az egyes kódokat a Jelentés mezőkeresés megfelelő keresési **eredményeihez**.
 
 Például a **közösségen belüli adóköteles beszerzések esetén az** **UT_S_EU áfakódot hozzá kell állítani a forgalmi adóhoz, és azt társítani kell a Jelentés mező keresésének PurchaseGoodsUSETax** **keresési eredményéhez**. Ebben az esetben az **áfakódot UT_S_EU** adóösszegek megjelennek az "Áruk áfával stb. Vásárolt külföldi termékek" és "Bemeneti áfa" mezők. Az adóalapok az "A doboz - árubeszerzés" szövegben jelennek meg.
 
-Másik lehetőségként két áfakódot is be lehet állítani:
+Másik lehetőségként két áfakódot is konfigurálhat:
 
 - **VAT_S_EU**, amelynek -25 százalékos adókulcs-értéke van
 - **InVAT_S_EU**, amelynek 25 százalékos adókulcs-értéke van
@@ -229,7 +229,7 @@ A következő eljárás az LCS megosztott eszköztárából korábban importált
 7. Választható: Válassza az **eredeti dokumentumot** az áfakifizetések ellenőrzéshez, **vagy válassza a Törlés** lehetőséget, ha ki szeretné zárni az áfafizetéseket a feldolgozásból. Ha kihagyja ezt a lépést, akkor is létrehozhat áfabevallást **a** **Bevallás** párbeszédpanel Adóbevallás verziómezője segítségével.
 8. Az Üzenetek **gyorsjelentésen** válassza a Frissítés **állapot beállítását**. A Frissítés állapota párbeszédpanelen **válassza a** **Generálra kész lehetőséget, majd kattintson az** OK gombra **.** Győződjön meg róla, hogy az üzenet állapota Kész **állapotra változott.**
 9. Válassza a **Jelentés létrehozása lehetőséget**. Az áfabevallási összegek előzetes megtekintéséhez **válassza** **az** Előnézet jelentés lehetőséget a Futtatás párbeszédpanelen, majd **kattintson az OK gombra.**
-10. Az Elektronikus **jelentés**[paraméterei párbeszédpanelen állítsa be a mezőket az Ebben a cikk korábbi részében, az Áfabevallás előnézete excelben](#preview-vat-excel) funkcióban leírtak szerint, **majd válassza az OK** gombra.
+10. Az Elektronikus **jelentés**[paraméterei párbeszédpanelen állítsa be a mezőket az Ebben a cikk korábbi részében, az Áfabevallás előnézete excelben](#preview-vat-excel) funkcióban leírtak szerint, **majd válassza az OK gombra**.
 11. Válassza a **lap** jobb felső sarkában a Mellékletek gombot (papír clip-szimbólum), **majd** a Megnyitás gombra kattintva nyissa meg a fájlt. Tekintse át az összegeket az Excel-dokumentumban.
 
 ## <a name="run-a-vat-declaration-for-multiple-legal-entities"></a><a name="run-vat-declaration"></a> Áfabevallás futtatása több jogi személyhez

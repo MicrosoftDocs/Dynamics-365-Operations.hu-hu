@@ -14,19 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2fb5f5b0b50f407f58193aafd79f28dd1fd432ee
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 46a37aebf99751d16952d3d7c07c538713377a67
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066792"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324873"
 ---
 # <a name="configure-deductions"></a>Levonások konfigurálása
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Microsoft Dynamics 365 Human Resources rendszerben levonásokat használhat annak meghatározására, hogy mennyit kell levonni (ha kell) az alkalmazottak fizetéséből az egyes juttatások esetében. A levonásokhoz érvényességi dátum tartozik, így megőrizheti a levonási adatok előzményeinek nyilvántartását. 
 

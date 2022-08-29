@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3bdd161815a15d5c39b3c0afc176a288c8d9055a
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885957"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306085"
 ---
 # <a name="inventory-visibility-tips"></a>Készletláthatósággal kapcsolatos tanácsok
 
@@ -35,5 +35,8 @@ ms.locfileid: "8885957"
 - A [partíciókonfiguráció](inventory-visibility-configuration.md#partition-configuration) jelenleg két alapdimenzióból (és `SiteId`) áll,`LocationId` amelyek az adatok elosztását jelzik. Az ugyanazon a partíción található műveletek magasabb teljesítményt és alacsonyabb költségű műveleteket is tudnak szállítani. A megoldás alapértelmezés szerint tartalmazza ezt a partíciókonfigurációt. Nem kell *tehát saját magának meghatároznia*. Ne szabja testre az alapértelmezett partíciókonfigurációt. Ha törli vagy módosítja, akkor valószínűleg váratlan hibát fog okozhatni.
 - A partíciókonfigurációban definiált alapdimenziókat nem szabad definiálni a termékindex-hierarchia [konfigurációjában](inventory-visibility-configuration.md#index-configuration).
 - A [termékindex-hierarchia](inventory-visibility-configuration.md#index-configuration) konfigurációjának tartalmaznia kell legalább egy indexhierarchiát (`Empty` például az alapdimenziót tartalmazó), különben a lekérdezések nem fognak sikerülni a "Nincs indexhierarchia beállítva" hibával.
+- Az adatforrás `@iv` egy előre definiált adatforrás `@iv``@`, és az előtaggal meghatározott fizikai intézkedések előre meghatározottak. Ezek a intézkedések a felosztási funkció előre definiált konfigurációi, ezért ezeket ne módosítsa vagy törölje, vagy a felosztási funkció használata során váratlan hibákat fog látni.
+- Az előre meghatározott számított mértékhez `@iv.@available_to_allocate` új fizikai mértékeket lehet hozzáadni, de a nevét nem szabad megváltoztatni.
+- Ha visszaállít egy Ellátásilánc-kezelés adatbázist, akkor előfordulhat, hogy a visszaállított adatbázis olyan adatokat tartalmaz, amelyek már nem egyeztethetők a Készlet visibility funkcióval korábban szinkronizált adatokkal Dataverse. Az adatok inkonzisztenciája rendszerhibákat és más problémákat okozhat. Emiatt fontos, hogy minden Dataverse kapcsolódó készlet-láthatósági adatot kitisztítson az ellátásilánc-kezelési adatbázis visszaállítása előtt. A részleteket lásd [a Készlet láthatósági adatainak Dataverse tisztítása az Ellátásilánc-kezelés adatbázis visszaállítása előtt](inventory-visibility-setup.md#restore-environment-database).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

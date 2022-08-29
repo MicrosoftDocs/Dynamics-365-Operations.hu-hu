@@ -2,21 +2,21 @@
 title: Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez
 description: Ez a cikk azt írja le, hogyan kell konfigurálni a menüelemeket, hogy a dolgozók információvesztés nélkül elvégezzék az aktuális feladatot, másik feladatot hajtsanak végre, majd térjenek vissza az eredeti feladathoz.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863592"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336125"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez
 
@@ -34,22 +34,9 @@ Az elterelés egy külön menüpont, amely egy fő tevékenység egyik lépésé
 Mielőtt eltereléseket állíthatna be a lépésekhez a mobileszköz menüelemeiben, az alábbi eljárást kell végrehajtania, hogy engedélyezze a szükséges funkciókat, és előállítsa a szükséges mezőneveket a Warehouse Management mobilalkalmazásban.
 
 1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre.
-1. A [**Funkciókezelés** munkaterületen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) engedélyezze a funkciót, amely a következő módon van listázva:
-
-    - **Modul:** *Raktárkezelés*
-    - **Funkció neve:** *Raktáralkalmazás lépésutasításai*
-
-    A *Raktári alkalmazás lépésutasítások* funkciójával kapcsolatos további információkért lásd: [Lépéscímek és utasítások testreszabása a Warehouse Management mobilalkalmazáshoz](mobile-app-titles-instructions.md). Ez a funkció előfeltétele a *Warehouse Management alkalmazás elterelései* funkciónak.
-
-1. Engedélyezze a felsorolt funkciót a következő módon:
-
-    - **Modul:** *Raktárkezelés*
-    - **Funkció neve:** *Warehouse Management alkalmazás elterelések*
-
-    Ez a funkció az ebben a cikkben leírt funkció.
-
-1. Frissítse a Warehouse Management mobilalkalmazás mezőneveit a **Raktárkezelés \> Beállítás \> Mobileszköz \> Raktári alkalmazás mezőnevei** helyen és válassza az **Alapértelmezett beállítás létrehozása** lehetőséget. ovábbi információ: [A Raktárkezelés mobilalkalmazás mezőinek konfigurálása](configure-app-field-names-priorities-warehouse.md).
-1. Ismételje meg az előző lépést minden olyan jogi személynél (vállalatnál), ahol a Warehouse Management mobilalkalmazást használja.
+1. Győződjön meg arról, hogy a *Raktár alkalmazás lépéséhez* funkció be van kapcsolva a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A *Raktári alkalmazás lépésutasítások* funkciójával kapcsolatos további információkért lásd: [Lépéscímek és utasítások testreszabása a Warehouse Management mobilalkalmazáshoz](mobile-app-titles-instructions.md). Ez a funkció előfeltétele a *Warehouse Management alkalmazás elterelései* funkciónak.
+1. A Raktárkezelés *alkalmazás-hibakezelés funkció* bekapcsolása. Ez a funkció az ebben a cikkben ismertetett funkció. Az ellátásilánc-kezelés 10.0.29-es verziója alapértelmezés szerint be van kapcsolva.
+1. Ha még nem bekapcsolta a Raktárkezelés alkalmazás-hibakezelési szolgáltatást, frissítse a mezőneveket a Raktárkezelés mobilalkalmazásban *úgy, hogy a Raktárkezelés* **\>\>\> beállítása mobileszköz-alkalmazás mezőnevére vált, és az Alapértelmezett beállítás létrehozása lehetőséget választja.** **·** Ismételje meg ezt a lépést minden olyan jogi személynél (vállalatnál), ahol a Raktárkezelés mobilalkalmazást használja. ovábbi információ: [A Raktárkezelés mobilalkalmazás mezőinek konfigurálása](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Elterelés konfigurálása menüspecifikus felülbírálásból
 
@@ -65,7 +52,7 @@ Ez a forgatókönyv azt mutatja be, hogyan konfigurálhat egy helykeresést elte
 
 ### <a name="enable-sample-data"></a>Mintaadatok engedélyezése
 
-Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja használni, akkor egy olyan rendszert kell használnia amelynél a szokásos demóadatok telepítve vannak. Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ahhoz, hogy a megadott mintarekordokat és értékeket használni tudja az eseten, olyan rendszert kell használnia, ahol telepítve vannak a [szabványos bemutatóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md). Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Menüspecifikus felülbírálás létrehozása és az 1. forgatókönyv elterelésének konfigurálása
 
@@ -118,7 +105,7 @@ A helylekérdezést szükség szerint azonosítótábla-lekérdezésre vagy cikk
 
 ### <a name="enable-sample-data"></a>Mintaadatok engedélyezése
 
-Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja használni, akkor egy olyan rendszert kell használnia amelynél a szokásos demóadatok telepítve vannak. Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ahhoz, hogy a megadott mintarekordokat és értékeket használni tudja az eseten, olyan rendszert kell használnia, ahol telepítve vannak a [szabványos bemutatóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md). Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Menüspecifikus felülbírálás létrehozása és az 2. forgatókönyv elterelésének konfigurálása
 

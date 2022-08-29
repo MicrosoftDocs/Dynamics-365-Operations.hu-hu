@@ -13,17 +13,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a12649cd0604fb6acd58420fdafb5b560fcc10cf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 36e7082a890ebec3031021a0871cddad91597447
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688232"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337302"
 ---
 # <a name="benefit-statement"></a>Juttatási kimutatás
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 A **Juttatási kimutatás** jelentés kimutatást ad arról, hogy milyen juttatásokban részesül az alkalmazott. A jelentéshez közvetlenül az alkalmazott vagy a juttatások adminisztrátora fér hozzá. A **Juttatási kimutatás** listát nyújt az alkalmazott juttatásairól, fedezeti lehetőségeiről, költségeiről, valamint az esetleges eltartottakról és kedvezményezettekről. A kimutatás egyetlen dolgozóra vagy több dolgozóra is kinyomtatható.
 

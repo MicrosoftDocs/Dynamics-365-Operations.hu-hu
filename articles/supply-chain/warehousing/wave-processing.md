@@ -2,7 +2,7 @@
 title: Hullám létrehozása és feldolgozása
 description: Ez a témakör leírja, hogyan lehet létrehozni, feldolgozni és kiadni egy hullámot, hogy kitárolási munkát hozzon létre egy rakományhoz, szállítmányhoz, termelési rendeléshez vagy kanbanrendeléshez.
 author: Mirzaab
-ms.date: 03/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 0466019990773ee93e063a255c15a7d64eecdf78
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9014619"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336005"
 ---
 # <a name="wave-creation-and-processing"></a>Hullám létrehozása és feldolgozása
 
@@ -191,7 +191,7 @@ A **Hullám kötegelt feladatához tartozó részletek** oldalon vizsgálja meg 
 
 ### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>A Hullám kötegelt feladat részletei lap be- és kikapcsolása
 
-Az Ellátásilánc-kezelés 10.0.25-ös **verziója szerint a Hullám** kötegelt feladat részletei lap alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be* és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterület Hullám kötegelt feladat részletei szolgáltatását [keresi](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Funkciókezelés munkaterületÉnek Hullám kötegelt feladat részletei funkciójának keresésével kapcsolják be és kapcsolják ki ezt a funkciót.
 
 ### <a name="use-the-wave-batch-job-details-page"></a>A Hullám kötegelt feladatához tartozó részletek oldal használata
 

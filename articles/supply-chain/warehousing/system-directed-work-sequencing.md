@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1dab8d8bdace046f0f061713600fd1eab69e7c12
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849126"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335465"
 ---
 # <a name="system-directed-work-sequencing"></a>Rendszer által irányított munka sorrendbe állítása
 
@@ -35,7 +35,7 @@ Ez a funkció lehetővé teszi a raktári kitárolási folyamatok további optim
 
 ## <a name="turn-on-the-organization-wide-system-directed-work-sequencing-feature"></a>Kapcsolja be a Szervezeti szintű rendszer által irányított munka sorrendbe állítása funkciót
 
-A rendszer által irányított munka sorrendbe állításának használata előtt be kell kapcsolni azt a rendszerben. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+A rendszer által irányított munkaszekvencia használata előtt a funkciót be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
 
 - **Modul:** *Raktárkezelés*
 - **Szolgáltatás neve:** *Szervezeti szintű rendszer által irányított munka sorrendbe állítása*
@@ -44,7 +44,7 @@ A rendszer által irányított munka sorrendbe állításának használata előt
 
 ### <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-Ahhoz, hogy az ebben a cikkben megjelenő értékekkel végig tudja dolgozni az esetet, egy olyan rendszeren kell dolgoznia, ahol telepítve vannak a szokásos bemutatóadatok. Ezenkívül ki kell választania az **USMF** jogi személyt. A forgatókönyv az *51*-es raktárt használja a demóadatokból.
+Ahhoz, hogy az ebben a cikkben megjelenő értékekkel végig tudja dolgozni az esetet, egy olyan rendszeren kell dolgoznia, ahol telepítve vannak a [szokásos](../../fin-ops-core/fin-ops/get-started/demo-data.md) bemutatóadatok. Ezenkívül ki kell választania az **USMF** jogi személyt. A forgatókönyv az *51*-es raktárt használja a demóadatokból.
 
 > [!IMPORTANT]
 > Mielőtt kiadja a rendeléseket a raktárba, győződjön meg arról, hogy a kitárolási helyek elegendő készlettel rendelkeznek a rendelések minden cikkéhez.

@@ -2,7 +2,7 @@
 title: A Warehouse Management mobilalkalmazás előléptetett mezőinek konfigurálása
 description: Ez a témakör azt ismerteti, hogyan lehet konkrét információkat előléptetni és kiemelni a Raktárkezelés mobilalkalmazás feladatfolyamatának lépéseinél.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3451b1aec525cd0738af558b183f8676d20294a0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857054"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336065"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás előléptetett mezőinek konfigurálása
 
@@ -29,25 +29,12 @@ Ez a témakör azt ismerteti, hogyan lehet konkrét információkat előléptetn
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Előléptetett mezők engedélyezése a rendszerben
 
-Ahhoz, hogy előléptetett mezőket állítson be, az alábbi eljárást kell végrehajtania, hogy engedélyezze a szükséges funkciókat, és előállítsa a szükséges mezőneveket a Warehouse Management mobilalkalmazásban.
+Ha az Ellátásilánc-kezelés 10.0.28-as vagy korábbi verzióját futtatja, akkor a többi előléptetett mező beállítása előtt végre kell hoznia az alábbi eljárást, hogy engedélyezze a szükséges funkciókat, és generálja a szükséges mezőneveket a Raktárkezelés mobilalkalmazásban. Ha az Ellátásilánc-kezelés 10.0.29-es vagy újabb verziója fut, a funkciók kötelezőek, és nem lehet kikapcsolni, ezért ezt az eljárást kihagyhatja.
 
-1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre.
-1. A [**Funkciókezelés** munkaterületen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) engedélyezze a funkciót, amely a következő módon van listázva:
-
-    - **Modul:** *Raktárkezelés*
-    - **Funkció neve:** *Raktáralkalmazás lépésutasításai*
-
-    A *Raktári alkalmazás lépésutasítások* funkciójával kapcsolatos további információkért lásd: [Lépéscímek és utasítások testreszabása a Warehouse Management mobilalkalmazáshoz](mobile-app-titles-instructions.md). Ez a funkció előfeltétele a *Raktári alkalmazásban előléptetett mezők* funkciónak.
-
-1. Engedélyezze a felsorolt funkciót a következő módon:
-
-    - **Modul:** *Raktárkezelés*
-    - **Funkció neve:** *Raktári alkalmazásban előléptetett mezők*
-
-    Ez a funkció az ebben a cikkben leírt funkció.
-
-1. Frissítse a Warehouse Management mobilalkalmazás mezőneveit a **Raktárkezelés \> Beállítás \> Mobileszköz \> Raktári alkalmazás mezőnevei** helyen és válassza az **Alapértelmezett beállítás létrehozása** lehetőséget. ovábbi információ: [A Raktárkezelés mobilalkalmazás mezőinek konfigurálása](configure-app-field-names-priorities-warehouse.md).
-1. Ismételje meg az előző lépést minden olyan jogi személynél (vállalatnál), ahol a Warehouse Management mobilalkalmazást használja.
+1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre. (Lásd: [Funkciókezelés –](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) áttekintés a lapról való további tájékoztatásért.)
+1. Győződjön meg arról, hogy a *Raktár alkalmazás lépéséhez* funkció be van kapcsolva a rendszeren. Ez a funkció előfeltétele a *Raktári alkalmazásban előléptetett mezők* funkciónak. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint kötelező, és nem lehet kikapcsolni. A *Raktári alkalmazás lépésutasítások* funkciójával kapcsolatos további információkért lásd: [Lépéscímek és utasítások testreszabása a Warehouse Management mobilalkalmazáshoz](mobile-app-titles-instructions.md).
+1. Győződjön meg róla, hogy a *Raktári alkalmazás által támogatott mezők* szolgáltatás be van kapcsolva a rendszeren. Ez az ebben a cikkben leírt funkció. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint kötelező, és nem lehet kikapcsolni.
+1. Frissítse a Warehouse Management mobilalkalmazás mezőneveit a **Raktárkezelés \> Beállítás \> Mobileszköz \> Raktári alkalmazás mezőnevei** helyen és válassza az **Alapértelmezett beállítás létrehozása** lehetőséget. Ismételje meg ezt a lépést minden olyan jogi személynél (vállalatnál), ahol a Raktárkezelés mobilalkalmazást használja. ovábbi információ: [A Raktárkezelés mobilalkalmazás mezőinek konfigurálása](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-promoted-fields-from-a-menu-specific-override"></a>Előléptetett mezők konfigurálása menüspecifikus felülbírálásból
 
@@ -67,7 +54,7 @@ Az alábbi eljárással állíthat be előléptetett mezőket.
 
 ### <a name="enable-sample-data"></a>Mintaadatok engedélyezése
 
-Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja használni, akkor egy olyan rendszert kell használnia amelynél a szokásos demóadatok telepítve vannak. Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ahhoz, hogy a megadott mintarekordokat és értékeket használni tudja az eseten, olyan rendszert kell használnia, ahol telepítve vannak a [szabványos bemutatóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md). Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 ### <a name="configure-sales-picking-with-promoted-steps-on-the-license-plate-step"></a>Az értékesítési kitárolás konfigurálása előléptetett lépésekkel az azonostótábla lépésben
 

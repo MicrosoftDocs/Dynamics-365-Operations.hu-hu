@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 20a2ffb44f9b99800146e3365e6f0d6df8e9a75e
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178533"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324260"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
 
@@ -47,13 +47,14 @@ Egy példány másolásához tartsa szem előtt a következő tanácsokat:
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>A Human Resources-adatbázis másolásának hatásai
 
+> [!Note]
+> 2022. augusztus 1-ével kezdődően Microsoft Azure a Blob tárolóban található dokumentumok bekerülnek a termelési környezetek jelölőnégyzet-környezetbe való másolása során. A csatolt dokumentumok és sablonok a forráskörnyezetből a célkörnyezetbe másolhatók.
+
 A Human Resources-adatbázis másolásakor a következő események történnek:
 
 - A másolási folyamat törli a meglévő adatbázist a célkörnyezetből. A másolási folyamat befejezése után nem lehet visszaállítani a meglévő adatbázist.
 
 - A célkörnyezet addig nem lesz elérhető, amíg a másolási folyamat be nem fejeződik.
-
-- A Microsoft Azure Blob-tárolóban lévő dokumentumok nem kerülnek át egyik környezetből a másikba. Ennek megfelelően a rendszer nem másolja a csatolt dokumentumokat és sablonokat, és a forráskörnyezetben maradnak.
 
 - A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználók és más belső szolgáltatási felhasználói fiókok kivételével egyik felhasználó sem lesz elérhető. A rendszergazda felhasználó még azelőtt törölheti az adatokat, hogy más felhasználók visszatérhetnek a rendszerbe.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
-ms.translationtype: HT
+ms.openlocfilehash: d99a7a7d0261ba0afd19efbb237dff329527723d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123808"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219154"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.20 szolgáltatásban (2021. augusztus)
 
@@ -49,7 +49,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tarta
 | Modul | Funkció&nbsp;neve&nbsp;a Funkció-&nbsp;kezelésben | További információ |
 |---|---|---|
 | Alaptervezés | A helyesbített igény-előrejelzés párhuzamos engedélyezése | Ez a funkció engedélyezi a módosított igény-előrejelzés párhuzamos engedélyezését a **Módosított igény-előrejelzés** oldalon. A funkció célja az, hogy javítsa a teljesítményt, amikor nagy számú előrejelzés van engedélyezve. Az engedélyezés során a felhasználó megadhatja a **Szálak számát** az engedélyezési párbeszédpanelen. |
-| Alaptervezés | (Előzetes verzió) Kötegelhető megerősítés és konszolidáció a tervezett tömeges és csomagolt kötegelt rendelésekhez | Ez a funkció lehetővé teszi, hogy kötegelt feladattal erősítsen meg és konszolidáljon tervezett tömeges és csomagolás rendeléseket. |
+| Alaptervezés | Kötegelhető megerősítés és konszolidáció a tervezett tömeges és csomagolt kötegelt rendelésekhez | Ez a funkció lehetővé teszi, hogy kötegelt feladattal erősítsen meg és konszolidáljon tervezett tömeges és csomagolás rendeléseket. |
 | Gyártásvezérlés | Általános útvonalak másolása | Ez a funkció a nem cikkspecifikus útvonalak másolására szolgáló útvonal-másolási funkciót tökéletesíti. Lehetővé teszi a rendszer számára, hogy minden releváns információt (például a helyet, az útvonal csoportját, a forrásszükségletet és a különböző időpontokat) frissítsen, miután az útvonalmásoló funkcióval felülírták a cikkhez még hozzá nem rendelt útvonalat. |
 | Gyártásvezérlés | Kapcsolódó erőforrás-követelmények frissítése útvonalművelet módosulásakor | Ez a funkció lehetővé teszi a rendszer számára, hogy frissítse a kapcsolódó erőforrás-követelményeket, miután egy felhasználó módosítja egy meglévő útvonallépéshez tartozó műveletet. |
 | Termékinformációk kezelése | Az anyagjegyzék-jelentés előzetes feldolgozása az időtúllépés megakadályozásához | Ez a funkció az anyagjegyzék-jelentés előre történő feldolgozását teszi lehetővé. Ezzel elkerülhető az időtúllépés, ha nagy a jelentéssel járó adatterhelés. |

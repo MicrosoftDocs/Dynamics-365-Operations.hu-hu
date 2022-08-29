@@ -1,28 +1,26 @@
 ---
 title: Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
 description: Ez a cikk bemutatja, hogy hogyan szabhatja testre a Microsoft által biztosított elektronikus jelentéskészítési (ER) konfigurációkat, amelyek az egyedi elektronikus dokumentumok előállításához használatosak.
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: cd3200bea07d622632dc5781638ec825c21233e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854698"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278946"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
 
@@ -310,7 +308,7 @@ Az elektronikus jelentéskészítési funkcionális tanácsadó szerepkörében 
 5. A **Név** mezőben írja be a **Számlamodell (Litware)** szöveget.
 6. Az új ER-konfiguráció hozzáadásához válassza a **Konfiguráció létrehozása** elemet.
 
-Ezután az ER-adatmodell-tervező használatával szerkesztheti a **Számlamodell (Litware)** ER-konfiguráció 50.1-es verzióját **Piszkozat** [állapotban](general-electronic-reporting.md#component-versioning).
+Ezzel az ER adatmodell-tervezővel szerkesztheti a Vázlat állapotú számlamodell (Litware) **ER konfigurációjának 50.1-es** **verzióját**.
 
 ![Az ER-konfiguráció 50.1-es verziója a Konfigurációk oldalon.](./media/er-quick-start3-added-custom-model.png)
 
@@ -337,7 +335,7 @@ A Szövetségi adóazonosító kód értékének megadásához egy új mező hoz
 
 #### <a name="complete-a-custom-data-model-configuration"></a>Egyéni adatmodell-konfiguráció befejezése
 
-Be kell [fejeznie](general-electronic-reporting.md#component-versioning) a munkát az egyéni ER-adatmodell konfigurációjának 50.1-es verziójával annak érdekében, hogy elérhetővé váljon és így hozzáadhassa a többi egyéni ER-konfigurációt is.
+Be kell fejeznie a munkát az egyéni ER-adatmodell konfigurációjának 50.1-es verziójával annak érdekében, hogy elérhetővé váljon és így hozzáadhassa a többi egyéni ER-konfigurációt is.
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
 2. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában bontsa ki a **Számlamodell** elemet, majd válassza a **Számlamodell (Litware)** lehetőséget.
@@ -394,7 +392,7 @@ Módosítania kell az egyéni modell hozzárendelését, és meg kell adnia, hog
 
 #### <a name="complete-a-custom-model-mapping-configuration"></a>Egyéni modell-leképezési konfiguráció befejezése
 
-Az egyéni ER-modell-hozzárendelési konfiguráció 50.19.1-es verziójával végzett munkát [be kell fejeznie](general-electronic-reporting.md#component-versioning) annak érdekében, hogy elérhető legyen a használatra.
+Az egyéni ER-modell-hozzárendelési konfiguráció 50.19.1-es verziójával végzett munkát be kell fejeznie annak érdekében, hogy elérhető legyen a használatra.
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
 2. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában bontsa ki a **Ügyfélszámlamodell** \> **Ügyfélszámlamodell-leképezés** elemet, majd válassza a **Számlamodell leképezése (Litware)** lehetőséget.
@@ -428,7 +426,7 @@ Az elektronikus jelentéskészítési funkcionális tanácsadó szerepkörében 
 
 ![Az egyéni formátumkonfiguráció hozzáadása a Konfigurációk oldalon.](./media/er-quick-start3-adding-custom-format.png)
 
-Ezután az ER-művelettervező használatával szerkesztheti a **Peppol értékesítési számla (Litware)** ER-konfiguráció 11.2.2.1-es verzióját **Piszkozat** [állapotban](general-electronic-reporting.md#component-versioning).
+Ezzel az ER művelettervezővel szerkeszthető a Vázlat 11.2.2.1 **számla (Litware)** ER-konfigurációjának **verziószáma**.
 
 ![Az ER-konfiguráció 11.2.2.1-es verziója a Konfigurációk oldalon.](./media/er-quick-start3-added-custom-format.png)
 
@@ -463,7 +461,7 @@ Az egyéni formátumot úgy kell módosítani, hogy egy új fájlformátumot ad 
 
 #### <a name="complete-a-custom-format-configuration"></a>Egyéni formátumkonfiguráció végrehajtása
 
-Az egyéni ER-formátum-konfiguráció 11.2.2.1-es verziójával végzett munkát [be kell fejeznie](general-electronic-reporting.md#component-versioning) annak érdekében, hogy elérhető legyen a használatra.
+Az egyéni ER formátumkonfiguráció verziójának 11.2.2.1 végre kell működnie ahhoz, hogy használható legyen.
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
 2. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában bontsa ki a **Ügyfélszámlamodell** \> **UBL értékesítési számla** \> **Peppol értékesítési számla** elemet, majd válassza a **Peppol értékesítési számla (Litware)** lehetőséget.
@@ -650,7 +648,7 @@ Az 32.6.7.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** é
 3. A műveleti panel **Dokumentum** csoportjában válassza a **Küldés** \> **Eredeti** lehetőséget.
 
     > [!NOTE] 
-    > Mivel most már két verziója van az **Peppol értékesítési számla (Litware)** ER-formátum konfigurációban, és egyik verzió sem rendelkezik [hatályos dátummal](general-electronic-reporting.md#component-date-effectivity), a legutolsó verzió az e-számla előállítására szolgál.
+    > Mivel most már két **változata van a Számlás értékesítési számla (Litware)** ER formátumkonfigurációnak, és egyik verziónak sincs hatályos dátumértéke, a legújabb verzió használatos az e-számla generálásában.
 
 4. Zárja be a **Szabadszöveges számla** képernyőt.
 

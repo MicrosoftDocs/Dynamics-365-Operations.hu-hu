@@ -1,26 +1,26 @@
 ---
 title: ER-adatmodellekhez tartozó paraméterezett hívások támogatása
 description: Ez a témakör bemutatja az elektronikus jelentés (ER) adatmodellek paraméterezett hívásait.
-author: NickSelin
+author: kfend
 ms.date: 03/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
+ms.openlocfilehash: 5be189c19d963991ec012de189bbf7b721b88fef
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884257"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9275988"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>ER-adatmodellekhez tartozó paraméterezett hívások támogatása
 
@@ -278,7 +278,7 @@ A módosításokat akkor hajthatja végre, amikor egy futó formátum összegyű
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
 2. A Konfigurációk **lap** bal oldali konfigurációs fájában válassza **a Mintavizsgálati modell lehetőséget**.
-3. A Verziók gyorsjelentésben válassza ki **a 2-es** verziót, amely Vázlat **állapotú**.**[...](general-electronic-reporting.md#component-versioning)**
+3. A Verziók gyorsjelentésben válassza ki **a 2-es** verziót, amely Vázlat **állapotú**.**·**
 4. Válassza ki a **Konfigurációs összetevők** gyorslapot.
 5. Válassza a **Tervező** lehetőséget az adatmodell szerkesztésre való megnyitásához.
 6. Az Adatmodell **lapon** győződjön meg arról, `Root` hogy be van jelölve a mező, majd válassza az Új **lehetőséget**.
@@ -454,7 +454,7 @@ A módosításokat akkor hajthatja végre, amikor egy futó formátum összegyű
     2. Válassza a **Képlet szerkesztése** elemet.
     3. A Képletszerkesztő **lapon** írja be a kifejezést `model.Party(PartyIds.Result)`.
     4. Válassza a **Mentés** lehetőséget, majd a **Képlettervező** oldalt.
-    5. A formátumszerkezeti fában válassza ki a **Report**.Party.Name elemét.
+    5. A formátumszerkezetben válassza ki a **Report**.Party.Name elemét.
     6. A Megfeleltetés **lapon** jelölje ki az adatmodell `model.Party.Name` mezőjét.
     7. Válassza a **Bind** elemet.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 7e17127ff6ef6c52034b8aa5e0c8404772363ca9
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186519"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334775"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.28 szolgáltatásban (2022. augusztus)
 
@@ -34,9 +34,9 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 | Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
 | Készlet és logisztika | [Partraszállítási költségintegrációs entitások harmadik fél fuvarozói számára](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Partraszállási költség entitásai – áttekintés](../landed-cost/landed-cost-entities-overview.md) | Alapértelmezés szerint engedélyezve |
-| Tervezés | [Igényvezérelt anyagigény-tervezés (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md) | Funkciókezelés:<br>*(Előzetes verzió) DDMRP a Tervezési optimalizáláshoz* |
-| Tervezés | [Tervezési optimalizálás támogatása ígérő (CTP) funkciókhoz](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Hamarosan | Funkciókezelés:<br>*(Előzetes verzió) CTP a Tervezési optimalizáláshoz* |
-| Tervezés | [Tervezési optimalizálás támogatása eltarthatósági idő esetén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Hamarosan | Alapértelmezés szerint engedélyezve |
+| Tervezés | [Igényalapú anyagszükséglet-tervezés (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md) | Funkciókezelés:<br>*(Előzetes verzió) DDMRP a Tervezési optimalizáláshoz* |
+| Tervezés | [Tervezési optimalizálás támogatása ígérő (CTP) funkciókhoz](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | [Értékesítési rendelés szállítási dátumának számítása az "CTP" módszer használatával](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | Funkciókezelés:<br>*(Előzetes verzió) CTP a Tervezési optimalizáláshoz* |
+| Tervezés | [Tervezési optimalizálás támogatása eltarthatósági idő esetén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | [Korlátozott eltarthatósági időű termékek alaptervezése](../master-planning/planning-optimization/shelf-life.md) | Alapértelmezés szerint engedélyezve |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>A kiadásban található funkciófejlesztések
 

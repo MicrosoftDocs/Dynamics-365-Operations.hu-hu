@@ -13,19 +13,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e3fa839b6e0f3cbaea8d2225b5a42ee8a368272
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901147"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337327"
 ---
 # <a name="benefits-management-overview"></a>Juttatáskezelés áttekintése
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A versenyképesség megőrzéséhez juttatások széles választékát kell nyújtania, hogy felkeltse a legjobb alkalmazottak figyelmét, és meg is tudja tartani őket. A szokásos juttatások, például az orvosi és a fogászati biztosítás mellett kiterjesztett szolgáltatásokat is kínálhat, például bevezetési támogatást, rekreációs programokat és ruházati pótlékokat. A juttatások kezelése a Microsoft Dynamics 365 Human Resources rendszerben rugalmas megoldást kínál, amely a juttatási lehetőségek széles skáláját támogatja. A Human Resources szolgáltatás tartalmaz egy egyszerűen használható alkalmazotti felületet is, amelyen bemutathatja az ajánlatait.
 
@@ -147,6 +142,16 @@ Az életesemények feldolgozása előtt a felvételi időkereten belül már leg
 - [Életesemények feldolgozása](hr-benefits-process-life-events.md)
 - [Életesemények változásainak feldolgozása](hr-benefits-process-life-event-changes.md)
 - [Életesemény-jogosultság feldolgozása](hr-benefits-process-life-event-eligibility.md)
+
+Az életesemény feldolgozásának befejezése után, amíg meg van nyitva az esemény beléptetési időszaka, az alkalmazottak módosíthatnak az esemény által érintett tervbeállításokat. A rendszergazdák az alkalmazottak nevében is eltenheti a módosításokat. Miután a beléptetési időszak véget ért, és az életesemény-tranzakcióhoz nincs meg nem erősített tervtípus, a tranzakció le lesz zárva.
+
+Az életesemény által érintett terveket vagy ki kell választani, vagy el kellengedettnek, majd vissza kell igazolni. Ha nincs kiválasztva terv, akkor nem elenged, ezért nincs megerősítve, az élettartam-esemény tranzakciója nincs lezárva.
+
+A rendszergazdák szükség szerint manuálisan lezárhat egy eseménytranzakciót, ha kijelölik, majd a Bezárás **gombra választják**. Ha a tranzakcióban nem megerősített tervek vannak, és egy rendszergazda be szeretné zárni, akkor az esemény lezárásával korlátozhatja a tervek szerkesztését.
+
+A lezárt élettartam események nem törölhetők.
+
+A rendszergazdák a szükséges beállításokkal újra megnyithatnak egy életesemény-tranzakciót, ha kijelölik, majd az Újra megnyitja **stb**.
 
 ## <a name="rate-updates-optional"></a>Díjfrissítések (nem kötelező)
 

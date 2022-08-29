@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a360b8beaad2bf6916c22765131e37f90e40282b
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895757"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306173"
 ---
-# <a name="use-the-inventory-visibility-app"></a>Az Inventory Visibility alkalmazás használata
+# <a name="use-the-inventory-visibility-app"></a>A Készletláthatóság alkalmazás használata
 
 [!include [banner](../includes/banner.md)]
 
@@ -70,10 +70,24 @@ A foglalási kérelem elküldéséhez meg kell adnia egy értéket a kérelem t�
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Készlet-összesítő
 
-A **Készletösszesítő** a *Készlet OnHand Sum Entitás* testreszabott nézete. A termékek készlet összesítését az összes dimenzióval együtt biztosítja. A készletösszegzési adatokat a rendszer rendszeresen szinkronizálja a Készlet láthatósága alapján 15 percenként. A Készletösszegzés **lapon** az adatok a Funkciókezelés lapon be kell kapcsolniuk az *OnHandMostSpecificBackgroundService* **szolgáltatást**, **és ki kell választani a Konfiguráció frissítése lehetőséget**.
+A **Készletösszegzés** lap a termékekkel és az összes dimenzióval együtt egy készletösszegzést tartalmaz. Az aktuális készlet összege entitás testreszabott *nézete*. A készletösszegzési adatokat a rendszer rendszeres időközönként szinkronizálja a készlet láthatóságával.
+
+### <a name="enable-the-inventory-summary-and-set-the-synchronization-frequency"></a>A készletösszegzés engedélyezése és a szinkronizálás gyakoriságának beállítása
+
+A Készletösszegzés **oldal engedélyezéséhez** és a szinkronizálás gyakoriságának beállításához hajtsa végre a következő lépéseket:
+
+1. Nyissa meg a **Konfiguráció** oldalt.
+1. Nyissa meg a **Funkciókezelés & Beállítások lapot**.
+1. **Az OnHandMostSpecificBackgroundService** szolgáltatás váltása Igen *beállítással*
+1. Ha a funkció engedélyezve van, **elérhetővé** válik a **Szolgáltatáskonfiguráció szakasz, és tartalmaz egy sort az OnHandMostSpecificBackgroundService szolgáltatás konfigurálásához**. Ezzel a beállítással megadhatja, hogy milyen gyakorisággal szinkronizálja a rendszer a készletösszegzési adatokat. Az Érték **oszlop** **Fel és Le** **gombjaival** módosíthatja a szinkronizálások közötti időt (akár 5 perc is lehet). Majd válassza a **Mentés** lehetőséget.
+1. Az összes **módosítás mentéséhez** válassza a Frissítés konfigurációt.
+
+![OnHandMostSpecificBackgroundService beállítása](media/inventory-visibility-ohms-freq.PNG "OnHandMostSpecificBackgroundService beállítása")
 
 > [!NOTE]
 > Az *OnHandMostSpecificBackgroundService* szolgáltatás csak a funkció bekapcsolása után történt, az adott terméken végrehajtott módosításokat követi nyomon. A szolgáltatás bekapcsolása óta nem módosult termékek adatai nem szinkronizálódnak a készletszolgáltatás gyorsítótára és a környezet Dataverse között. Ha a **Készletösszegző** lap nem mutatja az összes várt aktuális készletinformációt, **akkor menjen a Készletkezelés > A** Készlet láthatósága integrációval >, tiltsa le a kötegelt feladatot, és adja újra. Ezzel meg fogja tenni a kezdeti küldést, *és* az összes adat szinkronizálva lesz az aktuális készlet összege entitással a következő 15 perc múlva. Ha használni szeretné ezt a funkciót, **ajánlott be kapcsolni, mielőtt bármilyen aktuális készletváltozást hoz létre, és engedélyezze a Készlet láthatósága integráció** kötegelt feladatot.
+
+### <a name="work-with-the-inventory-summary"></a>A készletösszegzések
 
 A Dataverse által biztosított **Speciális szűrő** használatával létrehozhat egy olyan személyes nézetet, amely az Ön számára fontos sorokat mutatja. A fejlett szűrési lehetőségekkel a nézetek széles skáláját hozhatja létre, az egyszerűtől az összetettig. Lehetővé teszik továbbá, hogy csoportosított és egymásba ágyazott feltételeket adjon a szűrőkhöz. Ha többet szeretne megtudni a **Speciális szűrő** használatáról, lásd: [Személyes nézetek szerkesztése vagy létrehozása a speciális rácsszűrők használatával](/powerapps/user/grid-filters-advanced).
 
@@ -85,4 +99,4 @@ A testreszabott nézet alján olyan információk jelennek meg, mint például �
 
 A nézet alján található a **Továbbiak betöltése** gomb, amellyel további rekordokat tölthet be a Dataverse rendszerből. A betöltött rekordok alapértelmezett száma 50. Ha a **Továbbiak betöltése** lehetőséget választja, a következő 1000 elérhető rekord kerül betöltésre a nézetbe. A **Továbbiak betöltése** gombon megjelenő szám a jelenleg betöltött rekordokat és a **Speciális szűrő** eredményének összes rekordját jelzi.
 
-![Készlet-összesítő](media/inventory-visibility-onhand-list.png "Készlet-összesítő")
+![Készlet-összesítő](media/inventory-visibility-onhand-list.png "Készlet összegzése")

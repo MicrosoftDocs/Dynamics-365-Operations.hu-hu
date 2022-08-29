@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult szolgáltatások a Dynamics 365 Finance alkalmazásban
 description: Ez a témakör olyan funkciókat ismertet, amelyek el vannak távolítva, illetve amelyek a Dynamics 365 Pénzügy rendszerből való eltávolításra tervezve vannak.
 author: kfend
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
-ms.translationtype: HT
+ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068922"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313883"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult szolgáltatások a Dynamics 365 Finance alkalmazásban
 
@@ -32,6 +32,31 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > [!NOTE]
 > A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük azokat az objektumokat, amelyek megváltoztak vagy el vannak távolítva a pénzügyi és műveleti alkalmazások egyes verzióiban.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.29 kiadásában
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Készletátmozgatási rendelések, ahol az átmozgatási ár adót tartalmaz
+
+[Készletátmozgatási rendelések, ahol az átmozgatási ár adót tartalmaz](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Elavulás/eltávolítás oka** | Továbbfejlesztett funkcióval helyettesítve az indiai készletátviteli [rendelések](../../finance/localizations/apac-ind-stock-transfer.md)|
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek** | Alkalmazás |
+| **Telepítési beállítás** | Minden |
+| **Állapot** | Elavult: 2023 áprilisa után azok a készletátviteli rendelések, amelyek adóval rendelkeznek az áthozott ár funkcióra, **a** továbbiakban nem fognak támogatást kapni hibajavítások és biztonsági javítások után. A vevőktől a továbbfejlesztett funkció – [az indiai készletátviteli rendelések – használatát kéri a rendszer](../../finance/localizations/apac-ind-stock-transfer.md). 2023. októbere után azok a készletátviteli rendelések, **amelyek** adóval megnövelik az áthozott árakat, már nem érhetők el, és a vevőknek át kell lépniük a továbbfejlesztett funkciókra. |
+
+### <a name="bank-statement-import-and-export-of-positive-pay-file"></a>Banki kivonat importálása és exportálása fizetési pozitív fájlba
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Elavulás/eltávolítás oka** |Továbbfejlesztett funkcióval helyettesítve a banki kivonatok importálása és a fizetési pozitív fájlok exportálása.| 
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Alkalmazás |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: A fájlok importálására és exportálására használható XSLT-funkciók a továbbiakban nem támogatják a hibajavításokat és a biztonsági javításokat. A vevőktől a továbbfejlesztett funkciók használatát kéri a rendszer: Fizetési [fájlok beállítása elektronikus jelentéssel](../../finance/accounts-payable/set-up-positive-pay-er.md)[, valamint a továbbfejlesztett banki egyeztetési importálás beállítása az Elektronikus jelentés segítségével](../../finance/accounts-payable/import-bai2-er.md). 2022 szeptembere után az XSLT-funkciók már nem érhetők el, és a vevőknek át kell lépniük a továbbfejlesztett funkciókra.|
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.26 kiadásában
 

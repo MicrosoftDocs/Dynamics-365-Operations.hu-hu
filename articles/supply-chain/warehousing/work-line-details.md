@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 3dd9f4930303b1e3506e613d5437613138944430
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1017527419acc2e4cb42b2bcb83131339d82b665
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877305"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218882"
 ---
 # <a name="work-line-details"></a>Munkasor adatai
 
@@ -52,7 +52,7 @@ Ez a szakasz egy három részből álló bemutatót tartalmaz, amely bemutatja, 
 
 ### <a name="make-sample-data-available"></a>A mintaadatok elérhetővé tétele
 
-Ha ezt a bemutatót az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha ezt a bemutatót az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 A bemutatót a gyártási rendszerben végzett munka során útmutatásként is használhatja. Azonban a saját értékeit kell behelyettesítenie, és előfordulhat, hogy bizonyos típusú kötelező rekordok hiányoznak, amelyeket a szabvány demóadatok biztosítanak.
 

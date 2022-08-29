@@ -14,19 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 833d6cc131b3fb45d273b60ecf6778b2be31fc8a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6ca14156c165ca3f536fc0120ebd03883284eb18
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687107"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337305"
 ---
 # <a name="plan-type-overview"></a>Tervtípus áttekintése
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 A konstrukciótípus a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait. Például az **Alapélettartam** konstrukciótípushoz az **Élettartam** konstrukciótípus-kód lesz szükséges, mivel ez egyfajta életbiztosítás típusú konstrukció, amelyeknek meg kell felelniük az **Élettartam** konstrukciótípus-kódhoz meghatározott szabályoknak. Egy másik tervtípus lehet **Kiegészítő élettartam**. Ennek a tervtípusnak is **Élet** terv típuskódja lesz.
 
@@ -67,12 +64,12 @@ A konstrukciótípus meghatározhatja a fedezeti beállításokat. A fedezeti op
    | --- | --- |
    | **Konstrukció típusa** | A konstrukciótípus, amely számára az élettartam-esemény beállításait konfigurálni kell. |
    | **Életesemény-típus azonosítója** | A élettartam-esemény típusának azonosítója. |
-   | **Megszakítás engedélyezése** | Megadja, hogy az alkalmazott érvénytelenítheti-e a juttatási konstrukciót az élettartam-esemény során. |
    | **Fedezeti beállítás módosítása** | Megadja, hogy az alkalmazott módosíthatja-e a fedezeti beállításokat az élettartam-esemény során. |
    | **Váltás új konstrukcióra** | Megadja, hogy az alkalmazott módosíthatja-e a konstrukciókat az élettartam-esemény során. |
-   | **Konstrukció automatikus megszakítása** | Megadja, hogy a konstrukció automatikusan érvénytelenítendő-e a élettartam-eseménye során. |
    | **Jogosultsági ellenőrzés automatikus újranyitása** | Megadja, hogy a rendszer automatikusan nyissa-e újra a juttatási regisztrációra való jogosultsági ellenőrzése az életesemény során. |
-   | **Jelentéskészítési időtartam** | Megadja az életeseménnyel kapcsolatos jelentéskészítés időtartamát napokban. **Megjegyzés**: Ha nem ad meg összeget, akkor a rendszer nulla értékre állítja a jelentési ablakot, és nem dolgozza fel az élettartam-eseményt. |
+   | **Életciklus-esemény beléptetési időszaka** | Megadja az életeseménnyel kapcsolatos jelentéskészítés időtartamát napokban. **Megjegyzés**: Ha nem ad meg összeget, akkor a rendszer nulla értékre állítja a jelentési ablakot, és nem dolgozza fel az élettartam-eseményt. |
+   | **Csak a rendszergazdák szerkeszthetik** | Meghatározza, hogy az adminisztrátorok visszavonhatják vagy szerkeszthetik-e a terveket az élettartam eseménye során. Az alkalmazott nem tud változtatást eszközbe tenni **az alkalmazott önkiszolgáló munkaterületén**. |
+   | **Konstrukció automatikus megszakítása** | Megadja, hogy egy élettartam eseménye esetén a terv automatikusan érvénytelenül törlődik-e. Az életesemény változásainak feldolgozása után az Automatikus **terv** visszavonása beállítás megtartja a tervkiválasztást. A rendszer csak **a Visszaigazolt** **vagy** a Kivett állapotot távolítja el. A terv továbbra is ki van választva. Emiatt azok az alkalmazottak, akik az élettartam esemény beléptetési időszaka alatt nem adnak meg tervkiválasztást, nem fogják elveszni a tervkiválasztást. 
 
 5. Válassza a **Mentés** lehetőséget. 
 

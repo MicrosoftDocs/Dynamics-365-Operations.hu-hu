@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
+ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9112180"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "9295928"
 ---
 # <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
@@ -29,7 +29,7 @@ ms.locfileid: "9112180"
 
 A [korábbi bejelentésnek megfelelően](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) a Tervezési optimalizálás várhatóan felváltja a meglévő beépített alaptervezési motort.
 
-Ha jelenleg a beépített alaptervezési motort használja, akkor most el kell indítania a Tervezési optimalizálását az áttelepítéshez. Fontos, hogy a program rögtön elindítsa az áttelepítési folyamatot, mert az elavulás kényszerítése hatással lehet a folyamatban lévő műveleteire. Az elavulás kikényszerítésekor az utolsó pillanatban jelentkező nehézségek elkerülése érdekében erősen javasoljuk, hogy végezze el az áttelepítést még 2020. december 1-je előtt. 
+Ha jelenleg a beépített alaptervezési motort használja, akkor most el kell indítania a Tervezési optimalizálását az áttelepítéshez. Fontos, hogy azonnal elindulj, mert a műveletekre hatással lehet az értékcsökkenés érvényesítésekor (bár a végrehajtás jelenleg nincs ütemezve). Javasoljuk, hogy amint a tervezési optimalizálási funkció támogatja a szükséges funkciókat, ezért az új szolgáltatás által biztosított számos teljesítményjan és más új lehetőségen már csak most végre kell végrehajtani az áttelepítést.
 
 A tervezési optimalizálás funkció jelenleg nem támogatja az összes olyan funkciót, amely a Supply Chain Managementbe épített tervezőmotorban jelenleg elérhető. Ezért fontos, hogy meggyőződjön, hogy a tervezésoptimalizálásban jelenleg elérhető szolgáltatáskészlet kielégíti-e a követelményeket. A tervezési optimalizálás funkció alapértelmezés szerint nincs bekapcsolva a Dynamics Lifecycle Services (LCS) modulban, így még a funkció bekapcsolása előtt lehetősége van az értékelésre.
 

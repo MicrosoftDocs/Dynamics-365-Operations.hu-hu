@@ -1,24 +1,24 @@
 ---
 title: Adószámítás áttekintése
 description: Ez a cikk bemutatja az adószámítási képesség általános hatókörét és szolgáltatásait.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.search.form: TaxIntegrationTaxServiceParameters
+ms.openlocfilehash: 2765b922bcc58837c32973b7ca96e0d63eb8b9d6
+ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166839"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "9295991"
 ---
 # <a name="tax-calculation-overview"></a>Adószámítás áttekintése
 
@@ -54,10 +54,15 @@ Az adószámítás a következő Azure-földrajzi területeken van telepítve. A
 
 - Ázsia és a csendes-óceáni régió
 - Ausztrália
+- Brazília
 - Kanada
 - Európa
+- Franciaország
+- India
 - Japán
+- Dél-Afrika
 - Svájc
+- Egyesült Arab Emírségek
 - Egyesült Királyság
 - Egyesült Államok
 
@@ -80,6 +85,7 @@ Javasoljuk, hogy importálja és állítsa be az adószámítás konfigurációj
 | 10.0.26         | Adószámítási konfiguráció 40.54.234 |
 | 10.0.27         | Adószámítási konfiguráció 40.54.234 |
 | 10.0.28         | Adószámítási konfiguráció 40.54.234 |
+| 10.0.29         | Adószámítási konfiguráció 40.55.236 |
 
 
 ## <a name="data-flow"></a>Adatáramlás
@@ -149,11 +155,16 @@ A 10.0.28-es verzió a következő tranzakciókat támogatja:
 - Szállító fizetési naplója
 - Vevői kifizetési napló
 
+A 10.0.29-es verzió a következő tranzakciókat támogatja: 
+
+
+- Időszaki naplók
+
 ## <a name="supported-countriesregions"></a>Támogatott országok/régiók
 
-Az adószámítás jogi személyenként engedélyezhető. 
+Az adószámítás a jogi személy elsődleges címéhez a következő országokban/régiókban támogatott honosítási szolgáltatásokkal futtatható: 
 
-A 10.0.21-es verzió a jogi személyek elsődleges címének következő országait/régióit támogatja:
+A 10.0.21 verzió támogatja:
 
 - Ausztria
 - Belgium
@@ -176,7 +187,7 @@ A 10.0.21-es verzió a jogi személyek elsődleges címének következő ország
 - Egyesült Királyság
 - Egyesült Államok
 
-A 10.0.22-es verzió a jogi személyek elsődleges címének következő országait/régióit támogatja:
+A 10.0.22 verzió támogatja:
 
 - Ausztrália
 - Bahrein
@@ -191,22 +202,24 @@ A 10.0.22-es verzió a jogi személyek elsődleges címének következő ország
 - Dél-Afrika
 - Egyesült Arab Emírségek
 
-A 10.0.23-es verzió a jogi személyek elsődleges címének következő országait/régióit támogatja:
+A 10.0.23-as verzió támogatja:
 
 - Thaiföld
 - Japán
 - Malajzia
 - Szingapúr
 
-A 10.0.24-es verzió a jogi személyek elsődleges címének következő országait/régióit támogatja:
+A 10.0.24 verzió támogatja:
 
 - Mexikó
 
-A 10.0.26-es verzió a jogi személyek elsődleges címének következő országait/régióit támogatja:
+A 10.0.26 verzió támogatja:
 
 - Kína
 - Cseh Köztársaság
 - Spanyolország
+
+Bármely olyan ország/régió esetén, amelyet nem a Microsoft honosított, az adószámítás más globális szolgáltatásokkal is engedélyezhető és futtatható.
 
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 

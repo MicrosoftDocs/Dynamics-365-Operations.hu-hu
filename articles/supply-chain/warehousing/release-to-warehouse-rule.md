@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d39ce6e07a789ff4d605a01b1d5053be150d2727
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895467"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336245"
 ---
 # <a name="release-to-warehouse-rule"></a>Raktári kiadási szabály
 
@@ -30,14 +30,14 @@ A *Raktári kiadási szabály* funkció rugalmasságot biztosít a raktárba tö
 
 ### <a name="turn-on-the-feature"></a>A funkció bekapcsolása
 
-A *Raktári kiadási szabály* funkciót használata előtt be kell kapcsolni a rendszerben. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+A Raktári kiadási *szabály* szolgáltatás használata előtt be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Raktárkezelés*
 - **Szolgáltatás neve:** *Raktári kiadási szabály*
 
 ### <a name="initialize-the-feature"></a>A funkció inicializálása
 
-Miután a funkció be van kapcsolva a rendszerben, inicializálnia kell azt, hogy a szabályt az összes raktár esetében a helyes kezdeti állapotába állítsa.
+Miután a funkciót bekapcsolta a rendszeren, inicializálni kell, hogy a szabályt az összes raktárnál a megfelelő kezdeti állapotra állítsa.
 
 - Olyan raktárak esetében, amelyeknél nem engedélyezett a raktárkezelés, a szabály kezdetben a **Nem alkalmazható** értékre van beállítva.
 - Olyan raktárak esetében, amelyeknél engedélyezett a raktárkezelés, a szabály kezdetben a **Részleges foglalás engedélyezése** értékre van beállítva.
@@ -69,7 +69,7 @@ Ez a szakasz két olyan esetet mutat be, amelyekkel megtudhatja, hogy a funkció
 
 ### <a name="make-sample-data-available"></a>A mintaadatok elérhetővé tétele
 
-Ha ezeket a forgatókönyveket az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha ezeket a forgatókönyveket az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 Ezeket a forgatókönyveket a gyártási rendszerben végzett munka során a funkció használatához útmutatásként is használhatja. Ebben az esetben azonban a saját értékeit kell helyettesítenie, és előfordulhat, hogy bizonyos típusú kötelező rekordok hiányoznak, amelyeket a szabvány demóadatok biztosítanak.
 

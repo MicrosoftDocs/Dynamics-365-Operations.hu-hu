@@ -1,25 +1,25 @@
 ---
 title: Számlakibocsátás határideje
 description: Ez a cikk bemutatja, hogy hogyan állíthatja be az Európai Unió (EU) területén belüli vevői és szállítói számlák kibocsátási határidejének kiszámításához használt paramétereket.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 10923
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Iceland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: mrolecki
+ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a99f5dcd6296a0e001a5ab2a283501c93f8751a471594f0248fe61e09378bb23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 10923
+ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
+ms.openlocfilehash: 73838bfa4148002ef00013189cf08236ebc0c379
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744277"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337369"
 ---
 # <a name="invoice-issue-deadline"></a>Számlakibocsátás határideje
 

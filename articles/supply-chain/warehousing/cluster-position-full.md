@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4d46933b7c60317234b8e39cd6dfd63d383de860
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9361448ba7993ba7cc126d6dd60a45fe497b2e84
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857141"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218770"
 ---
 # <a name="cluster-position-full"></a>Fürtpozíció tele
 
@@ -38,7 +38,7 @@ Ez a szakasz iránymutatásokat tartalmaz, és egy példán bemutatja, hogyan le
 
 ### <a name="make-sample-data-available"></a>A mintaadatok elérhetővé tétele
 
-Ha ezt a [példaforgatókönyvet](#example-scenario) az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [bemutatóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha ezt a [példaforgatókönyvet](#example-scenario) az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [bemutatóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 A példaforgatókönyvet a gyártási rendszerben végzett munka során a funkció használatához útmutatásként is használhatja. Ebben az esetben azonban az itt leírt beállítás esetében be kell helyettesítenie a saját értékeit.
 

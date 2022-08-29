@@ -6,20 +6,20 @@ ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a087c213d4a7094f75da8c20e4ccc14fc52444ce
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.search.industry: ''
+ms.search.form: ''
+ms.openlocfilehash: d10e9ed78dfc90833ff3c09021f863f6ef0b80d9
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027091"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286810"
 ---
 # <a name="search-results-module"></a>Keresési eredmények modul
 
@@ -76,7 +76,7 @@ A webhelyszerkesztő kategóriaoldalára a következő lépésekkel lehet keres�
 1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Navigációs modult**, majd kattintson az **OK gombra**.
 1. Az **Útkövetés** tulajdonságok panelen írja be az **1** értéket az **Előfordulások minimális száma** pontban.
 1. A tárolóhelyen **válassza** ki a három pontból (...), majd válassza a **Modul hozzáadása lehetőséget**.
-1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Keresési** eredmények modult, majd válassza az **OK gombra.**
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Keresési** eredmények modult, majd válassza az **OK gombra**.
 1. A **Keresési eredmények** tulajdonságok panelen adja meg az **1** értéket az **Előfordulások minimális száma** pontban, majd állítsa be az egyéb szükséges tulajdonságokat a keresési eredmények modulhoz. A tulajdonságoknak a sablonban való beállításával biztosíthatja, hogy az adott kategóriaoldal minden testreszabása automatikusan tartalmazza ezeket a beállításokat.
 1. Válassza a **Szerkesztés befejezése** parancsot, majd a **Közzététel** elemet a sablon közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.

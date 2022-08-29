@@ -2,7 +2,7 @@
 title: Szállítmányok konszolidálása a szállítmánykonszolidációs munkaterület használatával
 description: Ez a cikk egy olyan helyzetet mutatja be, amikor több rendelés kerül ki a raktárba, majd a szállítmánykonszolidáció munkaterület használatával később szállítmányok leszállítják.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 388066b9c81ecb63ac1f81b70dc4b168f3f4a71d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: db8dc5101b223a0033284d8e6c494721871809d8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888325"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335795"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Szállítmányok konszolidálása a szállítmánykonszolidációs munkaterület használatával
 
@@ -34,14 +34,11 @@ A jelen cikkváltozat a Microsoft szabványos bemutatóadatában található ér
 
 Az itt ismertetett eset feltételezi, hogy már be van kapcsolva a funkció, és végrehajtotta a [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md) részben szereplő gyakorlatokat, és létrehozta az ott ismertetett irányelveket és más rekordokat. A jelen forgatókönyv végrehajtása előtt győződjön meg arról, hogy elvégezte azokat a gyakorlatokat.
 
-## <a name="turn-on-the-manual-shipment-consolidation-feature"></a>A manuális szállítmánykonszolidáció funkció bekapcsolása
+## <a name="turn-the-manual-shipment-consolidation-feature-on-or-off"></a>A kézi szállítmánykonszolidáció funkció be- és kikapcsolása
 
-A *Manuális szállítmánykonszolidáció* funkció használata előtt először be kell kapcsolnia rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+A kézi szállítmánykonszolidáció csak akkor használható, ha a rendszeren be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterület Kézi szállítmánykonszolidáció szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) keresi.
 
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Manuális szállítmánykonszolidáció*
-
-Ahogy az a [Szállítmánykonfigurációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md) részben szerepelt, az irányelvek létrehozása előtt a *Szállítmányok konszolidálása* funkciót is be kell kapcsolnia. Azonban már korábban végre kellett volna hajtania ezt a lépést.
+*Irányelvek* létrehozása előtt be kell kapcsolnia a Szállítmány konszolidálása funkciót is (az Ellátásilánc-kezelés 10.0.29-es verziója esetén a funkció kötelező, és nem kapcsolható ki). A további tudnivalókat lásd a Szállítmánykonszolidáció [irányelveinek konfigurálása](configure-shipment-consolidation-policies.md).
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Értékesítési rendelések létrehozása ehhez a forgatókönyvhöz
 

@@ -1,25 +1,25 @@
 ---
 title: Halasztott áfa számítása
 description: Ez a témakör azt ismerteti, hogyan lehet beállítani halasztott áfaszámításokat és áfafeladásokat Magyarországra.
-author: anasyash
+author: AdamTrukawka
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 264684
 ms.search.region: Hungary
-ms.author: epopov
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 0b56e883c84939c54ab276d1631fbcf372c97f4d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 264684
+ms.search.form: AssetParameters
+ms.openlocfilehash: 03a0b5b5c549c24dd81918db046d3cc9c01569f3
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859715"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337368"
 ---
 # <a name="deferred-sales-tax-calculations"></a>Halasztott áfa számítása
 

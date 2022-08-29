@@ -2,21 +2,21 @@
 title: Az új vevők létrehozásakor az üdvözlő e-mail küldése nem történik meg
 description: Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amelyek segítséget nyújtanak abban az esetben, ha az új vevők létrehozásakor nem küldnek üdvözlő e-mail értesítést Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/24/2022
+ms.date: 08/01/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.openlocfilehash: 8e95b33d4b8a9af13c613ab89dd33de6b4934694
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5aa7d864555f96194500989e2d7ad200d8892121
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853683"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219404"
 ---
-# <a name="welcome-email-is-not-sent-when-new-customers-are-created"></a>Az új vevők létrehozásakor az üdvözlő e-mail küldése nem történik meg
+# <a name="welcome-email-isnt-sent-when-new-customers-are-created"></a>Új vevők létrehozásakor az üdvözlő e-mail nem lesz elküldve.
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,13 +28,15 @@ Amikor új vevőt hoznak létre a Commerce Headquarters alkalmazásban, akkor ne
 
 ## <a name="resolution"></a>Megoldás
 
-### <a name="set-the-correct-email-id-value-for-the-customer-created-email-notification-type"></a>A vevő által létrehozott e-mail értesítéstípus helyes e-mail azonosítójának beállítása
+### <a name="associate-an-email-notification-profile-under-commerce-parameters"></a>E-mail értesítési profil társítása a Commerce-paraméterek között
 
-A vevő által a **központban** **létrehozott** e-mail értesítési típusnak megfelelő e-mail azonosító beállítását a következő lépések szerint hajtsa végre.
+1. A központi központban kattintson a **Retail and Commerce \> Headquarters beállítási \>\> Commerce-paraméterei – \> Általános beállítási webhelyre**.
+2. Az e-mail **értesítési** profil legördülő listájában válassza ki azt az e-mail értesítési profilt, amely megfeleltetést tartalmaz a vevő által létrehozott értesítési típus és a vevő által létrehozott e-mail sablon között.  
 
-1. Menjen a **Retail and Commerce \> Headquarters beállításához a \> Commerce e-mail értesítési profilhoz**.
-1. A bal oldali navigációs ablakban válassza ki az e-mail értesítési profilt.
-1. A **Kiskereskedelmi esemény értesítési beállításai területen** a Vevő **által** létrehozott e-mail értesítési típusnál állítsa **be az e-mail** azonosító mezőjét **a NewCust típusra**.
+> [!NOTE] 
+> Ha engedélyezi a vevő által létrehozott értesítéseket, a jogi személy összes csatornája számára létrehozott vevők megkapják a vevő által létrehozott e-mailt. A vevő által létrehozott értesítések jelenleg nem korlátozható egyetlen csatornára.
+
+További tájékoztatás: Tranzakciós események [e-mail sablonjainak létrehozása](../email-templates-transactions.md). 
 
 ## <a name="additional-resources"></a>További erőforrások
 

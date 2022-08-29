@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: df20f00a639d237bf8446f24a2ad4cbbfcf36615
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065149"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334385"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Raktárkezelés készleten lévő bejegyzéseinek karbantartási feladata
 
@@ -39,7 +39,7 @@ Ha a negatív tényleges készlet engedélyezve van, előfordulhat, hogy a karba
 Az aktuális készlet bejegyzések karbantartási feladata a **Készletkezelés \> Időszakos feladatok \> Karbantartás \> Raktárkezelés készleten lévő bejegyzéseinek karbantartása** alatt érhető el. A szokásos feladatok beállításával szabályozhatja a feladat futtatásának a hatókörét és ütemezését. Ezen túlmenően a következő beállítások állnak rendelkezésre:
 
 - **Törlés, ha ennyi napig nem frissült** – Adja meg azt a minimális számú napot, ameddig a feladatnak várnia kell, mielőtt törli a nulla mennyiségere eső aktuális készlet bejegyzést. Ezzel a beállítással csökkentheti a még használatban lévő aktuális készlet bejegyzések törlésének kockázatát. Ha azt szeretné, hogy a karbantartás mielőbb történjen meg, adja meg a *0* (nulla) értéket, vagy hagyja üresen a mezőt.
-- **Maximális végrehajtási idő (óra)** – Megadja a karbantartási feladat maximális végrehajtási idejét órában. Ha a feladat a megadott idő elteltével még nem fejeződött be, akkor az addig elvégzett munkát menti, majd lezárja magát. Ez a funkció különösen fontos a magas készlethasználatú megvalósításoknál. Ezekben az esetekben ütemeznie kell a feladatot, hogy időnként fusson, amikor a rendszer terhelése a lehető legkönnyebb. Ha azt szeretné, hogy a kötegelt feladat mindaddig fusson, amíg be nem fejeződik, írjon be *0* (nulla) értéket, vagy hagyja üresen a mezőt. Ez a beállítás csak akkor érhető el, ha a kapcsolódó funkció [be van kapcsolva a rendszerben](#max-execution-time).
+- **Maximális végrehajtási idő (óra)** – Megadja a karbantartási feladat maximális végrehajtási idejét órában. Ha a feladat a megadott idő elteltével még nem fejeződött be, akkor az addig elvégzett munkát menti, majd lezárja magát. Ez a funkció különösen fontos a magas készlethasználatú megvalósításoknál. Ezekben az esetekben ütemeznie kell a feladatot, hogy időnként fusson, amikor a rendszer terhelése a lehető legkönnyebb. Ha azt szeretné, hogy a kötegelt feladat mindaddig fusson, amíg be nem fejeződik, írjon be *0* (nulla) értéket, vagy hagyja üresen a mezőt. Ez a beállítás csak akkor érhető el, ha a kapcsolódó szolgáltatás [be van kapcsolva a rendszeren](#max-execution-time).
 
 Bár a feladat a szokásos munkaidő alatt is futtatható, javasoljuk, hogy a nyitvatartási időn kívül fusson. Ily módon megakadályozhatja az olyan ütközéseket, amelyek akkor merülhetnek fel, ha a felhasználó egy olyan rekordon dolgozik, amelyet a program még tisztít.
 

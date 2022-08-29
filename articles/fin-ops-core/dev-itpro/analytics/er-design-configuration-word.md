@@ -1,24 +1,26 @@
 ---
 title: Új ER-konfiguráció tervezése Word-formátumú jelentések generálásához
 description: Ez a cikk bemutatja, hogy hogyan konfigurálhat a felhasználók egy új elektronikus jelentési (ER) formátumot a jelentések dokumentumként való előállításához Microsoft Word.
-author: NickSelin
+author: kfend
 ms.date: 12/17/2020
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: caf87659ca4ceb7b25aa43e09893d2a0ef014884
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: b56b328aa2a2b53dc177a02a4d453e5dbcb8340c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893012"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273338"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Új ER-konfiguráció tervezése Word-formátumú jelentések generálásához
 
@@ -35,7 +37,7 @@ Ha Word-dokumentumot kíván használni Word formátumú jelentések sablonjaké
 
 ![Az egyéni formátumkonfiguráció létrehozása a Konfigurációk oldalon.](./media/er-design-configuration-word-image2.gif)
 
-A megoldás ER-formátum-összetevőjének tartalmaznia kell az **Excel\\Fájl** formátumelemet, és ezt a formátumelemet össze kell kapcsolni a Word dokumentummal, amelyet a futásidőben generált jelentések sablonjaként fog használni. Az ER-formátum összetevő konfigurálásakor meg kell nyitnia a létrehozott ER-konfiguráció [vázlat](general-electronic-reporting.md#component-versioning) verzióját az ER-formátumtervezőben. Ezután adja hozzá az **Excel\\Fájl** elemet, csatolja a Word-sablont a szerkeszthető ER-formátumhoz, és csatolja a sablont a hozzáadott **Excel\\Fájl** elemhez.
+A megoldás ER-formátum-összetevőjének tartalmaznia kell az **Excel\\Fájl** formátumelemet, és ezt a formátumelemet össze kell kapcsolni a Word dokumentummal, amelyet a futásidőben generált jelentések sablonjaként fog használni. Az ER-formátum összetevő konfigurálásakor meg kell nyitnia a létrehozott ER-konfiguráció vázlat verzióját az ER-formátumtervezőben. Ezután adja hozzá az **Excel\\Fájl** elemet, csatolja a Word-sablont a szerkeszthető ER-formátumhoz, és csatolja a sablont a hozzáadott **Excel\\Fájl** elemhez.
 
 > [!NOTE]
 > A sablon manuális csatolása esetén olyan [dokumentumtípust](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) kell használnia, amely korábban [konfigurálva](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) lett az ER-paraméterekben az ER-formátumok sablonjainak tárolására.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3478e8c712c7bcbfb8ace9e7b43f0d8d3cf4ac8a
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 2bb4115a486fbfe7287c9b183224699de4dfd456
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069152"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335525"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Értékesítési rendelések szállítása raktározás nélkül
 
@@ -45,7 +45,7 @@ Ez a cikk azt mutatja be, hogyan lehet frissíteni az értékesítési rendelés
 14. Válassza ki a **Nézetváltás** lehetőséget.
 15. Válassza ki a **Fejlécnézet** elemet.
     - Ha a rendelés összes sora teljesen kiszállított, a megrendelés állapota Nyitottról Szállítottra változik.  
-    - Ebben a példában a rendelési sort részben kiszállították. Ezért a megrendelés állapota Nyitott marad.     
+    - Ebben a példában a rendelési sort részben kiszállították. Ezért marad a rendelés állapota Nyitott.     
     - A **Dokumentum állapota** mezőben a Szállítólevél érték van beállítva, mert legalább egy rendelési sor ki van szállítva.  
 16. A Művelet ablaktáblán válassza ki az **Általános** elemet.
 17. Válassza ki a **Sor mennyisége** elemet.

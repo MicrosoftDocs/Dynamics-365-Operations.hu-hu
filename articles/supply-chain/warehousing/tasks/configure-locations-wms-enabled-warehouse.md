@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
-ms.translationtype: HT
+ms.openlocfilehash: 4cce7ea0c06938d2ce038853a262f843ec76fe4c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067273"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219658"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Helyek konfigurálása WMS szolgáltatással rendelkező raktárban
 
@@ -39,7 +39,7 @@ Ez az útmutató bemutatja, hogyan kell konfigurálni a helybeállításokat egy
 8. Zárja be a lapot.
 
 ## <a name="define-a-location-format"></a>Helyformátum meghatározása
-1. Ugrás a **Navigációs ablaktábla > Modulok > Raktárkezelés > Beállítás > Raktár > Helyformátumok** elemre. A helyformátumok elnevezési rendszerével egyedi és egységes neveket hozhat létre a raktáron belül különböző helyeken tárolt rekeszekre vonatkozóan. Ez hasznos lehet az elválasztók használatához a helyformátum részeként, így könnyebben azonosíthatók lesznek a hely elemei, például a folyosószámok. Ebben a példában négy összetevővel fogunk neveket létrehozni. Például ezek lehetnek: folyosó, állvány, polc és rekesz.
+1. Ugrás a **Navigációs ablaktábla > Modulok > Raktárkezelés > Beállítás > Raktár > Helyformátumok** elemre. A helyformátumok egy elnevezési rendszer, amely egyedi és konzisztens neveket hoz létre a raktárban használt különböző hely rekeszpozíciókhoz. Ez hasznos lehet az elválasztók használatához a helyformátum részeként, így könnyebben azonosíthatók lesznek a hely elemei, például a folyosószámok. Ebben a példában négy összetevővel fogunk neveket létrehozni. Például ezek lehetnek: folyosó, állvány, polc és rekesz.
 2. Kattintson az **Új** elemre.
 3. Írjon be egy értéket a **Helyformátum** mezőbe.
 4. Írjon be egy értéket a **Név** mezőbe.

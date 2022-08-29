@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: be3d72063ac18b9abea77d5aec6e230b0c930ae6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9112364"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289360"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
@@ -85,7 +85,7 @@ A két írásos hibák, Dataverse amelyek származnak, megjelennek a Pénzügy �
 Amikor a kettős Microsoft Edge írású lapot a vagy a Króm böngészőben nyitja meg, a kezdőlap nem töltődik be, és egy üres oldalt vagy egy hibát lát, mint például: "Valami nem sikerült".
 Az Devtoolsban egy hiba látható a konzolnaplókban:
 
->bundle.eed39124e62c58ef34d2.js:37 DOMException: Nem sikerült beolvasni a "sessionStorage" tulajdonságot a "Window" alkalmazásból: A dokumentum hozzáférése megtagadva. : t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860) új t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103) (ci) (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115) (eo ) (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728) a(z) vnál (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191) a Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692) vb vagy (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076) Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750) és (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130) hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151)
+>bundle.eed39124e62c58ef34d2.js:37 DOMException: Nem sikerült beolvasni a "SessionStorage" tulajdonságot a "Window" alkalmazásból: A dokumentum hozzáférése megtagadva. : t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860) új t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103) (ci) (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115) (eo ) (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728) a(z) vnál (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191) a Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692) vb vagy (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076) Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750) és (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130) hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151)
 
 A felhasználói felület a böngésző "munkamenet-tárolója" használatával tárol néhány tulajdonságértéket a kezdőlap betöltéséhez. Ahhoz, hogy ez működjön, a webhely böngészőjében engedélyezve kell lennie a külső felek által használt süteményeknek. A hiba azt jelzi, hogy a felhasználói felület nem férhet hozzá a munkamenet-tárolóhoz. Erre a problémára két helyzet közül lehet példa:
 
@@ -105,7 +105,7 @@ A böngésző beállításaiban meg kell engedni a harmadik fél által használ
 2.  Ha a "Harmadik fél által használt sütemények blokkolása az Incogntóban" vagy a "Harmadik fél által történő sütemények blokkolása" beállítás van megjelölve, kattintson a " **Mindig használható sütemények" webhelyre, és kattintson a Hozzáadás gombra**. 
 3.  Adja meg a Pénzügy & Műveleti alkalmazások webhelynevét – https://<your_FinOp_instance>.cloudax.dynamics.com. Győződjön meg róla, hogy a "Minden sütemény, csak ezen a helyen" jelölőnégyzetet bejel választja. 
 
-### <a name="microsoft-edge-browser"></a>Microsoft Edge böngésző
+### <a name="microsoft-edge-browser"></a>Microsoft Edge Böngésző
 1.  A Beállítások – > webhely engedélyei – > a sütemények és a webhely adatai.
 2.  A "Harmadik fél által használt sütemények blokkolása" kikapcsolása.  
 
@@ -166,7 +166,7 @@ Előfordulhat, hogy a támogatási csapatnak át kell néznie a hálózati nyomv
 3. Futtassa a forgatókönyvet, és figyelje meg a naplózott kéréseket.
 4. Kattintson a jobb gombbal a bejegyzésekre, és válassza az **Összes mentése HAR-ként tartalommal** lehetőséget.
 
-### <a name="microsoft-edge-browser"></a>Microsoft Edge böngésző
+### <a name="microsoft-edge-browser"></a>Microsoft Edge Böngésző
 
 1. A megnyitott lapon nyomja meg az **F12** billentyűt, vagy válassza a **Fejlesztői eszközök** lehetőséget a fejlesztői eszközök megnyitásához.
 2. Nyissa meg a **Hálózat** lapot.

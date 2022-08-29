@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
-ms.translationtype: HT
+ms.openlocfilehash: 741377a43e2bfe702b213647cc6460a3d6ad93fb
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068634"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218682"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Részlegesen foglalt átmozgatási rendelések kötegelt kiadása
 
@@ -42,25 +42,22 @@ Mielőtt egy rendelés részben is kiadható egy raktárnak kötegelve, a teljes
 
 Az átmozgatási rendelések és az értékesítési rendelések teljesítési irányelvei a vállalat szintjén vannak megadva. A teljesítési irányelv beállításától függően a rendelések kötegelt kiadása elfogadásra vagy elutasításra kerül. A rendelések feldolgozása ennek megfelelően fog megtörténni.
 
--   Teljesítési irányelvek létrehozásához az átmozgatási rendelésekhez és az értékesítési rendelésekhez kattintson a **Raktárkezelés** \> **Beállítás** \> **Raktárba való kiadás** \> **Teljesítési irányelv**  elemre, és hozzon létre egy teljesítési irányelvet: ehhez írjon be egy nevet és egy leírást.
-
--   Teljesítési ráta, értéktípus és üzenet beállításához, amely a teljesítési irányelv megszegése esetén jelenik meg, kattintson a **Raktárkezelés** \> **Beállítás** \> **Raktárba való kiadás** \> **Teljesítési irányelv** elemre, majd adja meg a **Teljesítési ráta**, az **Értéktípus** és a **Teljesítési szabálytalanságok üzenetei** mezők tartalmát.
+- Az áthozott rendelésekre **\>\>\>** és értékesítési rendelésekre vonatkozó teljesítő irányelvek létrehozásához menjen a Raktárkezelés beállítása raktári teljesítés irányelveibe, és a név és leírás megadásával hozzon létre egy teljesítési házirendet.
+- A teljesítési ráta, egy értéktípus és a teljesítési irányelv megszegése esetén megjelenő üzenet megadásához váltsa át a Raktárkezelés **\>\>\> beállítása raktári teljesítési irányelvként való kiadását,** **és állítsa be a Teljesítési ráta,** **·** **az Érték típusa és a Teljesítés** megszegése üzenetmezőket.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Átmozgatási rendelések és értékesítési rendelések teljesítési irányelveinek megadása
 
--   Az átmozgatási rendelések teljesítési irányelveinek beállításához kattintson a **Készletkezelés** \> **Beállítás** \> **Készlet- és raktárkezelési paraméterek** \> **Átmozgatási rendelések** \> **Raktárkezelés** elemre, majd válasszon ki egy átmozgatási rendelési teljesítési irányelvet.
+- Az átvezetési **\>\>** rendelések teljesítási kötvényeinek beállításához váltsa át a Készletkezelés beállítása – Készlet- és raktárkezelési paramétereket, **·** **majd válassza ki az átvezetési rendelés teljesítésére vonatkozó házirendet az Átvezetési rendelések lap Raktárkezelés** területén.
+- Az értékesítési rendelések teljesítási **\>\>** kötvényeinek beállításához váltsa át a Kinnlevőségek beállítása – paraméterek gombra, **majd** a Raktárkezelés lapon válassza ki az értékesítési rendelések teljesítási irányelvét.
 
--   Kattintson az értékesítési rendelések teljesítési házirendjeinek beállításához kattintson a **Kinnlevőségek** \> **Beállítás** \> **Kinnlevőségek paraméterei** \> **Raktárkezelés** elemre, és válasszon ki egy értékesítésirendelés-teljesítési irányelvet.
-
-## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-release-in-a-batch"></a>Engedélyezze a kötegelt kiadást, és adja meg a mennyiséget, amelyet kötegelt kiadással kell kiadni.
+## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-released-in-a-batch"></a>Kiadás engedélyezése kötegben, és a kötegben kiadandó mennyiség megadása
 
 A kötegelt feladat rendelések raktárba történő kiadására szolgál, kötegelt módon. A kötegelt feladatban magában lehet beállítani a paramétereket, amelyek megkülönböztetik a kötegelt rendelésként futtatandó rendeléseket.
 
 A **Mennyiség** paraméter határozza meg, hogy a teljes mennyiséget vagy a ténylegesen lefoglalt mennyiséget kell kiadni kötegelve. A **Részben kiadott rendelések kiadásának engedélyezése** paraméter határozza meg, hogy a kötegelt rendeléseket el kell-e fogadni vagy el kell-e utasítani, ha részben ki lettek adva korábban.
 
--   Az átmozgatási rendelések **Mennyiség** és **Részben kiadott rendelések kiadásának engedélyezése** paramétereinek beállításához kattintson a **Raktárkezelés** \> **Raktárba való kiadás** \> **Átmozgatási rendelések automatikus kiadása** elemre.
-
--   Az értékesítési rendelések **Mennyiség** és **Részben kiadott rendelések kiadásának engedélyezése** paramétereinek beállításához kattintson a **Raktárkezelés** \> **Raktárba való kiadás** \> **Értékesítési rendelések automatikus kiadása** elemre.
+- Az átvezetési **rendelések** **·** **részlegesen kiadott rendelési paramétereinek beállítására és kiadásának engedélyezése a Raktárkezelés \>\> raktárba kiadása az átvezetési rendelések automatikus kiadására ugrással történik.**
+- Az értékesítési rendelések **részlegesen** **·** **kiadott rendelési paramétereinek mennyiség és kiadás engedélyezése beállításhoz menjen a Raktárkezelés \>\> kiadása raktárba – értékesítési rendelések automatikus kiadása.**
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

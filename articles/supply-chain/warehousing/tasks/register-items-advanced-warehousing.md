@@ -1,5 +1,5 @@
 ---
-title: Cikkérkezési napló segítségével regisztrálhatja a raktárkezelési folyamatokban engedélyezett cikkeket.
+title: Cikkek regisztrálása raktármenedzsment folyamatok engedélyezésére, cikkérkeztetési napló használatával
 description: Ez a cikk egy olyan helyzetet mutat be, amely bemutatja, hogyan regisztrálhatja a cikkeket a cikkérkezési napló segítségével a raktárkezelési folyamatok (WMS) használata esetén.
 author: Mirzaab
 ms.date: 03/24/2021
@@ -14,14 +14,14 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
-ms.translationtype: HT
+ms.openlocfilehash: 66fc9e21b79d70ec14750440c74d354bb8ec0695
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066967"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219598"
 ---
-# <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>Cikkérkezési napló segítségével regisztrálhatja a raktárkezelési folyamatokban engedélyezett cikkeket.
+# <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>Cikkek regisztrálása raktármenedzsment folyamatok engedélyezésére, cikkérkeztetési napló használatával
 
 [!include [banner](../../includes/banner.md)]
 
@@ -29,7 +29,7 @@ Ez a cikk egy olyan helyzetet mutat be, amely bemutatja, hogyan regisztrálhatja
 
 ## <a name="enable-sample-data"></a>Mintaadatok engedélyezése
 
-Ha ezt az esetet az ebben a cikkben megadott mintarekordokkal és értékekkel kell dolgozni, olyan rendszert kell használnia, ahol telepítve vannak a szabványos bemutatóadatok, *és mielőtt nekikezd, ki kell választania az USMF* jogi személyt.
+Ha ezt az esetet az ebben a cikkben megadott mintarekordokkal és értékekkel kell dolgozni, olyan rendszert kell használnia, ahol telepítve vannak a [szabványos](../../../fin-ops-core/fin-ops/get-started/demo-data.md) bemutatóadatok, *és mielőtt nekikezd, ki kell választania az USMF* jogi személyt.
 
 Ehelyett a saját adatokból származó értékeket behelyettesítésével is dolgozhat, feltéve, hogy rendelkezésre állnak a következő adatok:
 

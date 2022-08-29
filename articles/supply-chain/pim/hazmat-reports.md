@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 782b1b4995af09a63c483d2b81ed255a5c11803a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 784361f4e715921890ecff784b62935988732464
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846040"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335165"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
 
@@ -101,11 +101,11 @@ A jelentés létrehozásához és kinyomtatásához nyissa meg a **Raktárkezel�
 
 ## <a name="bill-of-lading-report"></a>fuvarlevél jelentése
 
-Amikor a veszélyes anyagok funkció be van kapcsolva a rendszerben, a **fuvarlevél** jelentés tartalmaz egy **Veszélyes anyagok** oszlopot, amely azt jelzi, hogy a rakomány tartalmaz-e veszélyes anyagokat. Ez a jelentés a szokásos módon érhető el a **Minden rakomány** oldalon.
+Ha a veszélyes anyagok funkciója be van kapcsolva az Ön rendszerében, **·** **a** fuvarlevél-jelentés tartalmaz egy Veszélyes anyagok oszlopot, amely jelzi, hogy a rakomány tartalmaz-e veszélyes anyagokat. Ez a jelentés a szokásos módon érhető el a **Minden rakomány** oldalon.
 
 ## <a name="packing-list-report"></a>Csomagolási lista jelentése
 
-Amikor a veszélyes anyagok funkció be van kapcsolva a rendszerben, a csomagolási listák a cikkek szállítási nyomtatási szövegével kapcsolatos további információkat tartalmazzák. Ez a jelentés a szokásos módon érhető el a **Minden rakomány** oldalon.
+Ha a veszélyes anyagok funkciója be van kapcsolva a rendszerben, akkor a csomagolási listák a cikkek szállítási nyomtatási szövegével kapcsolatos további információkat is tartalmaznak. Ez a jelentés a szokásos módon érhető el a **Minden rakomány** oldalon.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

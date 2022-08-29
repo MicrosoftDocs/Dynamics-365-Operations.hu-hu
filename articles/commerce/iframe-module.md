@@ -7,20 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e9f1804cde1010c585d53d63bc0a487bc5407552
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: ''
+ms.openlocfilehash: 248da5132d1a2c6dcf8f246628f969c8a200b26c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858937"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269895"
 ---
 # <a name="iframe-module"></a>Iframe modul
 
@@ -53,10 +53,10 @@ A következő kép példákat mutat be azokról az iFrame modulokról, amelyek k
 Ha fel szeretne venni egy iFrame modult egy oldalra egy külső videó bemutatásához, akkor kövesse az alábbi lépéseket.
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
-1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra**.
+1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra.**
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
-1. Az Új lap **létrehozása párbeszédpanel** Lap neve **területén** **adja meg a Marketing** lapot, majd válassza a Tovább **gombra.**
+1. Az Új lap **létrehozása párbeszédpanel** Lap neve **területén** **adja meg a Marketing** lapot, majd válassza a Tovább **gombra**.
 1. A **Sablon kiválasztása mezőben válassza** ki **a létrehozott marketingsablont**, majd válassza a Tovább **gombra**.
 1. Az **Elrendezés kiválasztása oldalon válasszon** egy lapelrendezést (például **rugalmas** elrendezés), majd válassza **a Tovább lehetőséget**.
 1. Az Ellenőrzés **és befejezés lapon** ellenőrizze a lap konfigurációját. Ha szerkesztenie kell a lap adatait, válassza a Vissza **lehetőséget**. Ha a lap adatai helyesek, válassza a Létrehozás **lapot**. 

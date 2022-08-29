@@ -1,26 +1,26 @@
 ---
 title: Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban
 description: Ez a cikk bemutatja, hogyan lehet elhalasztni egy XML-elem végrehajtását az elektronikus jelentés (ER) formátumban.
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 074b14cbb018a8e34b99124b8aaec3a5bdb30be2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: ''
+ms.search.form: EROperationDesigner
+ms.openlocfilehash: e88de2edb5950e38fca07926c302c32dbeaf60fa
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861845"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273368"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>A XML-elemek végrehajtásának elhalasztása az ER-formátumokban
 

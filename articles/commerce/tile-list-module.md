@@ -7,20 +7,20 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 44eb9b82ef9625734c7fe5ccba85207d9f210a00
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: ''
+ms.openlocfilehash: 204465df80e490c8f3f4dc5aca04cb43cd853515
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905398"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9284630"
 ---
 # <a name="tile-list-module"></a>Csempelista modul
 
@@ -67,11 +67,11 @@ A csempelista modul új oldalra való felvételéhez és a kötelező tulajdons�
 
 1. Nyissa meg a **Sablonok** lapot, és nyissa meg a webhely kezdőlapjának marketingsablonját (vagy hozzon létre új marketingsablont).
 1. Az alapértelmezett **oldal** főbejáratában válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
-1. A Modulok **kiválasztása párbeszédpanelen** válassza a **Csempe lista** modult, majd válassza az **OK gombra**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza a **Csempe lista** modult, majd válassza az **OK gombra.**
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Nyissa meg az **Oldalak** területet, majd a webhely kezdőlapját (vagy hozzon létre egy új kezdőlapot a marketingsablon használatával).
 1. Az alapértelmezett **oldal** főbejáratában jelölje ki az három pont gombot (**...**), majd válassza **a Modul hozzáadása lehetőséget**.
-1. A Modulok **kiválasztása párbeszédpanelen** válassza a **Csempe lista** modult, majd válassza az **OK gombra**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza a **Csempe lista** modult, majd válassza az **OK gombra.**
 1. A csempelista modul tulajdonságlapján adjon hozzá egy fejlécet.
 1. A Csempe **listahelyen** válassza ki az ellipszis gombot (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
 1. A Modulok **kiválasztása párbeszédpanelen** válassza a **Csempe** modul modult, majd válassza az **OK gombra.**

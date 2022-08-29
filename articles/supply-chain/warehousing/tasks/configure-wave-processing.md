@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9fc2b9f31bc9e2f73b53a900bc9b0924410768
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9a8c088f8726573e4b1fcad1944676547391a9bf
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860348"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219628"
 ---
 # <a name="configure-wave-processing-example"></a>A hullámfeldolgozási példa konfigurálása
 
@@ -29,7 +29,7 @@ Ez a témakör bemutatja azokat a feltételeket, amelyek meghatározzák, hogy e
 
 ## <a name="enable-sample-data"></a>Mintaadatok engedélyezése
 
-Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos demóadatok telepítve vannak. Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha az itt megadott mintarekordokat és értékeket használva kell végigmennie az adott helyzeten, olyan rendszert kell használnia, ahol telepítve vannak a [szabványos bemutatóadatok](../../../fin-ops-core/fin-ops/get-started/demo-data.md). Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 ## <a name="example-scenario-configure-wave-processing"></a>Példahelyzet: hullámfeldolgozás konfigurálása
 

@@ -2,7 +2,7 @@
 title: További helyzónák
 description: Ez a témakör áttekintést nyújt a Microsofthoz hozzáadott új helyzónákról Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c20225cfb3c44fff955d0ad4e96c7fecf0ddf715
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 819330e0f6e6cd419da441f919d68ff996b6475c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900651"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336515"
 ---
 # <a name="additional-location-zones"></a>További helyzónák
 
@@ -32,7 +32,7 @@ Nincs szükség további beállításra a zónamezők használatához.
 
 ## <a name="turn-the-additional-location-zone-feature-on-or-off"></a>A További helyzóna funkció be- és kikapcsolása
 
-Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a *Funkciókezelési*[munkaterület További helyzóna funkciójának keresésével kapcsolják be és kapcsolják be ezt a](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) funkciót.
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Szolgáltatáskezelés munkaterületÉnek További helyzóna szolgáltatását keresi.
 
 ## <a name="use-location-zones"></a>Helyzónák használata
 

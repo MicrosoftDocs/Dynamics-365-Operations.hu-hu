@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
-ms.translationtype: HT
+ms.openlocfilehash: 38d5ba96690dd855556a7f69591ef5b9ee5f9d7b
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070319"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335675"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
@@ -259,7 +259,7 @@ Azoknak a vállalatoknak, amelyek a bejövő rendelések szállítmányozásána
 
 ### <a name="prepare-your-system-to-run-the-sample-scenarios"></a>A rendszer előkészítése a mintaforgatókönyvek futtatására
 
-Az ebben a szakaszban ismertetett minta-forgatókönyvekkel történő munkához először győződjön meg róla, hogy minden szükséges funkció be van kapcsolva a rendszerében. A szükséges demóadatoknak is elérhetőnek kell lennie a rendszerben.
+Az ebben a szakaszban ismertetett mintaesetek végigvétéhez először meg kell győződnie arról, hogy minden szükséges funkció be van kapcsolva a rendszeren. A szükséges demóadatoknak is elérhetőnek kell lennie a rendszerben.
 
 #### <a name="turn-on-the-required-features"></a>A szükséges szolgáltatások bekapcsolása
 
@@ -279,7 +279,7 @@ A forgatókönyvek előfeltétele, hogy a _Több termékbevételezés feladása 
 
 #### <a name="enable-sample-data"></a>Mintaadatok engedélyezése
 
-Ha ezeket a forgatókönyveket a megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos demóadatok telepítve vannak. Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ahhoz, hogy a megadott mintarekordok és értékek segítségével végig tudja dolgozni az eseteket, olyan rendszert kell használnia, ahol telepítve vannak a [szabványos](../../fin-ops-core/fin-ops/get-started/demo-data.md) bemutatóadatok. Az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 #### <a name="add-a-menu-item-for-receiving-load-items-when-a-mobile-device-is-used"></a>Adjon hozzá egy menüelemet a rakománycikkek fogadásához, amikor mobileszköz van használva
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: cc3ad01c60324d751ee52d83d93fe59593775a00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910550"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279568"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása tranzakciós eseményekhez
 
@@ -117,7 +117,29 @@ A *rendelés törölve* értesítési típus akkor jelenik meg, amikor egy rende
 
 ### <a name="customer-created"></a>Vevő létrehozva
 
-Az *ügyfél létrehozva* értesítési típus akkor jelenik meg, amikor a Commerce központ alkalmazásban új ügyfélentitást hoznak létre.
+Az *ügyfél létrehozva* értesítési típus akkor jelenik meg, amikor a Commerce központ alkalmazásban új ügyfélentitást hoznak létre. 
+
+A vevő által létrehozott értesítések engedélyezéséhez a Commerce Headquarters **a Retail and Commerce \> Headquarters beállítási \>\> Commerce-paramétereinek Általános beállításához \> indul el**. Az e-mail **értesítési profil** legördülő listájában válasszon ki egy e-mail értesítési profilt, amely a vevő által létrehozott értesítési típust tartalmazza. 
+
+Alapértelmezés szerint a vevő által létrehozott események a **Központba kerülnek a Vevők és csatornakérések szinkronizálása kötegelt** feladattal. Ha ezeket az eseményeket valós idejű szolgáltatáshívással szeretné elküldeni, **állítsa be a vevő által létrehozott sablon e-mail azonosítóját az újCust beállításra**. Ez azonban nem ajánlott, mert a valós idejű szervizhívások "tűz és felejtse el" hívások, és nincsenek meg a kötegelt feladatok által nyújtott tartalék- vagy újrapróbálkozási logika.
+
+> [!NOTE] 
+> Ha engedélyezi a vevő által létrehozott értesítéseket, a jogi személy összes csatornája számára létrehozott vevők megkapják a vevő által létrehozott e-mailt. A vevő által létrehozott értesítések jelenleg nem korlátozható egyetlen csatornára.  
+
+Amikor a kötegelt feladat meghívja, a vevő által létrehozott értesítéstípus támogatja a következő helyőrzőt.
+
+| Helyőrző neve | Leírás                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | A számlát létrehozó vevő vezeték- és neve. |
+
+Valós idejű szolgáltatáshíváson keresztül meghívva az ügyfél által létrehozott értesítési típus a következő helyőrzőket támogatja.
+
+| Helyőrző neve | Leírás                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Név             | A számlát létrehozó vevő vezeték- és neve. |
+| E-mail-cím            | A számlát létrehozó vevő e-mail címe.    |
+| Telefonszám            | A számlát létrehozó vevő telefonszáma.      |
+| URL-cím              | A vevő által a számla létrehozásakor megadott URL-cím. |
 
 ### <a name="b2b-prospect-approved"></a>B2B potenciális vevő jóváhagyva
 

@@ -1,26 +1,26 @@
 ---
 title: A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 description: Ez a cikk bemutatja, hogy hogyan lehet megvizsgálja a konfigurált elektronikus jelentéskészítő (ER) összetevőket, hogy megelőzhetőek a futásidejű problémák.
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
+ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864836"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277850"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 
@@ -30,8 +30,8 @@ Minden konfigurált [Elektronikus jelentéskészítési (ER)](general-electronic
 
 Alapértelmezés szerint a program automatikusan alkalmazza az ellenőrzést a következő esetekben egy ER-konfiguráció esetében, amely tartalmazza a korábban említett ER-komponenseket.
 
-- Egy [ER-konfiguráció](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) új [verzióját](general-electronic-reporting.md#component-versioning) importálja a Microsoft Dynamics 365 Pénzügy alkalmazásba.
-- Módosítja az [állapotát](general-electronic-reporting.md#component-versioning) a szerkeszthető ER-konfigurációnak **Vázlat** állapotról **Befejezett** állapotra.
+- Egy [ER-konfiguráció](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) új verzióját importálja a Microsoft Dynamics 365 Pénzügy alkalmazásba.
+- A szerkeszthető ER-konfiguráció **állapotát** Vázlat állapotról Készre **módosítja**.
 - Egy szerkeszthető konfigurációt egy új alapverzió alkalmazásával [újraalapoz](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase).
 
 Ezt az ellenőrzést szándékosan is futtathatja. Válassza ki a következő három lehetőség egyikét, és kövesse a megadott lépéseket:
@@ -770,7 +770,7 @@ Módosítsa a konfigurált formátumot a **Kimutatás\\Fél\\Név** formátumele
 
 ## <a name="not-linked-template"></a><a id="i12"></a>Nem csatolt sablon
 
-Ha [manuálisan](er-fillable-excel.md#manual-entry) állít be egy ER formátumösszetevőt úgy, hogy az sablont használjon egy kimenő dokumentum létrehozásához, manuálisan kell hozzáadnia az **Excel\\Fájl** elemet a szerkeszthető összetevő mellékleteként, és ki kell jelölnie a mellékletet a hozzáadott **Excel\\Fájl** elemben. Ily módon azt jelzi, hogy a hozzáadott elem futásidőben kitölti a kiválasztott sablont. Ha **Vázlat** [állapotú](general-electronic-reporting.md#component-versioning) formátum-összetevő verziót állít be, a szerkeszthető összetevőhöz több sablont is hozzáadhat, majd az **Excel\\Fájl** elemben kijelölheti az egyes sablonokat az ER formátum futtatásához. Ily módon láthatja, hogy a különböző sablonok, hogyan vannak kitöltve futásidőben. Ha olyan sablonokkal rendelkezik, amelyek nincsenek kijelölve egyetlen **Excel\\Fájl** elemben sem, az ER formátumtervező figyelmezteti, hogy ezek a sablonok törlődnek a szerkeszthető ER formátum összetevőverziójából, amikor az állapota **Vázlatról** **Befejezett** értékre változik.
+Ha [manuálisan](er-fillable-excel.md#manual-entry) állít be egy ER formátumösszetevőt úgy, hogy az sablont használjon egy kimenő dokumentum létrehozásához, manuálisan kell hozzáadnia az **Excel\\Fájl** elemet a szerkeszthető összetevő mellékleteként, és ki kell jelölnie a mellékletet a hozzáadott **Excel\\Fájl** elemben. Ily módon azt jelzi, hogy a hozzáadott elem futásidőben kitölti a kiválasztott sablont. Amikor Vázlat állapotú formátumösszetevő-verziót konfigurál, több sablont is hozzáadhat a **szerkeszthető** összetevőjéhez, **majd kiválaszthatja az Excel-fájl\\** minden sablonját az ER-formátum futtatásához. Ily módon láthatja, hogy a különböző sablonok, hogyan vannak kitöltve futásidőben. Ha olyan sablonokkal rendelkezik, amelyek nincsenek kijelölve egyetlen **Excel\\Fájl** elemben sem, az ER formátumtervező figyelmezteti, hogy ezek a sablonok törlődnek a szerkeszthető ER formátum összetevőverziójából, amikor az állapota **Vázlatról** **Befejezett** értékre változik.
 
 A következő lépések a problémák előfordulásának módját mutatják be.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 89fd38ea6d2c1635e9d8974ab99c2e4cdae4d6be
+ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065554"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9266428"
 ---
 # <a name="flushing-principles"></a>Ürítési elvek
 
@@ -56,7 +56,10 @@ A manuális ürítési alapelv azt jelzi, hogy a nyersanyag-felhasználásának 
 Ürítési alapelv kezdő azt jelzi, hogy anyag fog kell felhasználása automatikusan a termelési rendelés indításakor. A felhasznált anyag mérete arányos a megkezdett mennyiség. Ürítési alapelv kezdő és a Gyártásvégrehajtás használatakor a rendszer, is használható, amikor egy művelet anyagok ürítése, vagy egy feldolgozási feladat elindítva. Ezt az elvet jelentősége, ha, például az eltérés felhasználási hamarosan lemerül, az anyagok alacsony értékű anyagok, nincsenek nyomon követési követelmények, vagy nincs rövid futási idő műveletek. 
 
 ### <a name="finish"></a>Elvégzés
-A Befejezés ürítési alapelv azt jelzi, hogy anyag fog kell felhasználása automatikusan a termelési rendelés készként való jelentése, vagy egy olyan művelet, amely be van állítva az anyagok felhasználása legfeljebb regisztrálja befejezettként. A felhasznált anyag mérete arányos az elkészült mennyiséggel. Ürítési alapelv befejező és a gyártásvégrehajtás használatakor a rendszer, is használható, amikor egy művelet anyagok ürítése, vagy egy feldolgozási feladat befejezve. Ez az elv ugyanazoknál a szituációknál lényeges, mint az Indítási elv. A Befejezés elv viszont a műveletek, amelyekhez már futási idő, ahol anyagok nem kell beállítani folyamatban lévő munka a művelet befejezése előtt. 
+A Befejezés ürítési alapelv azt jelzi, hogy anyag fog kell felhasználása automatikusan a termelési rendelés készként való jelentése, vagy egy olyan művelet, amely be van állítva az anyagok felhasználása legfeljebb regisztrálja befejezettként. A felhasznált anyag mérete arányos az elkészült mennyiséggel. Ürítési alapelv befejező és a gyártásvégrehajtás használatakor a rendszer, is használható, amikor egy művelet anyagok ürítése, vagy egy feldolgozási feladat befejezve. Ez az elv ugyanazoknál a szituációknál lényeges, mint az Indítási elv. A Befejezés elv viszont a műveletek, amelyekhez már futási idő, ahol anyagok nem kell beállítani folyamatban lévő munka a művelet befejezése előtt.
+
+> [!NOTE]
+> A cikkek tervezésével együtt nem használhatja a Befejezés ürítés elvet. Ehelyett ajánlott az Indítás ürítési elv használata. A tervezési cikkek termelési típusú *tervezési* cikkek, és csak társ- és társtermékeket lehet készként jelenteni a cikkek tervezésére létrehozott kötegrendelések alapján.
 
 ### <a name="available-at-location"></a>Rendelkezésre áll a helyen
 Rendelkezésre álló hely kiürítési elvét, azt jelzi, hogy az anyag lesz automatikusan felhasználandó regisztrálásakor, valamint a termelés. Az anyag regisztrálva van, valamint a helyről munka a nyersanyag kitárolása befejeződött, vagy ha anyag érhető el a termelési bemeneti hely és az anyagjegyzéksorban ki van adva a raktárba. A kitárolási lista, amely a folyamat során létrejön egy kötegelt feladatban feladása. Ezt az elvet jelentősége, ha például egy termelési rendeléssel szembeni több kitárolási tevékenységek vannak beállítva. Ebben az esetben nem kell manuálisan a kitárolási lista frissítése, és letöltheti a folyamatban lévő munka egyenlegű aktuális nézetét.

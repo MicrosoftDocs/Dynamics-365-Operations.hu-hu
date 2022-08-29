@@ -10,18 +10,26 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 19193cc445bc9c7d79463734d7d5787737ecc4f7
-ms.sourcegitcommit: 6989ac8a20c16d384b8307b707eeaf498c32d64e
+ms.openlocfilehash: 115708ce9e71c35feb1cf370ead556847e04cbd2
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "9188991"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324203"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás újdonságai vagy változásai
 
 [!include [banner](../includes/banner.md)]
 
 Ez a cikk a Microsoft Raktárkezelés mobilalkalmazás minden egyes kiadott verziójához tartalmaz új funkciókat, javításokat, javításokat és ismert problémákat Dynamics 365 Supply Chain Management.
+
+## <a name="version-20310"></a>2.0.31.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+-   Jobb teljesítmény és stabilság.
+-   Továbbfejlesztett felhasználói felület, amely gyorsabb és egyszerűbb a hosszú kiválasztási listák használatával. A dolgozók így név szerint kereshetnek egy listaelemet, nem kell görgetni a teljes listán.
+-   Javítva egy olyan hiba, amely miatt a karakter beolvasása során az előre megadott értékeket nem lehet felülírni.
 
 ## <a name="version-20300"></a>2.0.30.0-s verzió
 

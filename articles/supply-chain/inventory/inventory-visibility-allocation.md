@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f79497a24a5b4dd501bb0d13d9eaca7e98672533
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852505"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306114"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Inventory Visibility – készlet felosztása
 
@@ -63,12 +63,11 @@ A készletfelosztási funkció a következő összetevőkből áll:
 - Az előre meghatározott, felosztáshoz kapcsolódó adatforrás, fizikai intézkedések és számított intézkedések.
 - Nyolc szinttel testreszabható felosztási csoportok
 - A felosztási alkalmazásprogramozási felületek (API-k) egy készlete:
-
-    - felosztás
-    - újrafokosítás
-    - Nincs felosztva
-    - Fogyasztanak
-    - Lekérdezés
+  - felosztás
+  - újrafokosítás
+  - Nincs felosztva
+  - Fogyasztanak
+  - Lekérdezés
 
 A felosztási funkció konfigurálása két lépésből áll:
 
@@ -84,23 +83,26 @@ Az adatforrás neve .`@iv`
 A következő kezdeti fizikai intézkedések:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Itt vannak a kiindulási számított intézkedések:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??`– `??``@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??`– `??``@iv.@allocated`
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>További fizikai mértékek hozzáadása a felosztásra elérhető számított mértékhez
 
 A felosztás csak akkor használható, ha be van állítva a felosztásra elérhető számított mérték (`@iv.@available_to_allocate`). Van például egy `fno` adatforrás, a `onordered` mérték, `pos``inbound` az adatforrás és a mérték, és az összeg és a mérték kiosztása az `fno.onordered``pos.inbound` rendelkezésren, az összeg és a. Ebben az esetben tartalmaznia `@iv.@available_to_allocate` kell a képletet `pos.inbound``fno.onordered` és a képletet. Példa:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound`– `@iv.@allocated`
+
+> [!NOTE]
+> Az adatforrás `@iv` egy előre definiált adatforrás `@iv``@`, és az előtaggal meghatározott fizikai intézkedések előre meghatározottak. Ezek a intézkedések a felosztási funkció előre definiált konfigurációi, ezért ezeket ne módosítsa vagy törölje, vagy a felosztási funkció használata során váratlan hibákat fog látni.
+>
+> Az előre meghatározott számított mértékhez `@iv.@available_to_allocate` új fizikai mértékeket lehet hozzáadni, de a nevét nem szabad megváltoztatni.
 
 ### <a name="change-the-allocation-group-name"></a>Felosztási csoport nevének módosítása
 
@@ -136,7 +138,7 @@ Egy, a megadott `Allocate` dimenziókkal rendelkezik termék foglalásához hív
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -157,7 +159,7 @@ Például 10 mennyiséget szeretne lefoglalni a 10-es termékhez, az 1-es teleph
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -192,7 +194,7 @@ Az API segítségével `Reallocate` egy felosztott mennyiséget át lehet áthel
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -218,7 +220,7 @@ Az API segítségével `Reallocate` egy felosztott mennyiséget át lehet áthel
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -242,7 +244,7 @@ Az API-t `Consume` használja a felhasználási mennyiség felosztással szemben
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -280,7 +282,7 @@ Most három egész készletet értékesít, és kiveszi őket a felosztási kés
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -326,7 +328,7 @@ Ha 3 mennyiségű mennyiséget szeretne felhasználhatja, és közvetlenül lefo
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"

@@ -2,27 +2,28 @@
 title: Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan
 description: Ez a cikk áttekintést nyújt Lengyelország pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.author: josaw
+ms.search.validFrom: 2019-02-01.
+ms.openlocfilehash: 52710252d78d34c444de2d40e16423868b12b5c1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876949"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337221"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Ez a cikk áttekintést nyújt Lengyelország pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 
-A Dynamics 365 Commerce Lengyelországra vonatkozó funkciók közé tartozik a pénztár és egy pénzügyi nyomtató közötti mintaintegráció. A minta kiterjeszti [a](fiscal-integration-for-retail-channel.md) pénzügyi integrációs funkciókat, és támogatja a POSNET 2.02 PROTOCOL 2.02 protokollt [a Posnet Polkiszolgáló S.A pénzügyi nyomtatóihoz.](https://www.posnet.com.pl) A minta lehetővé teszi a kommunikációt olyan pénzügyi nyomtatóval, amely COM-porton keresztül csatlakozik egy natív szoftverillesztő segítségével. A rendszer egy szoftveremulátor segítségével megvalósította és tesztelték, amelyet a Posnet FV FV pénzügyi nyomtatóhoz megadott Posnet. A minta forráskód formájában kapható, és része a Retail szoftverfejlesztői csomagnak (SDK).
+A Dynamics 365 Commerce Lengyelországra vonatkozó funkciók közé tartozik a pénztár és egy pénzügyi nyomtató közötti mintaintegráció. A minta kiterjeszti [a](fiscal-integration-for-retail-channel.md) pénzügyi integrációs funkciókat, és támogatja a POSNET 2.02 PROTOCOL 2.02 protokollt [a Posnet Polkiszolgáló S.A pénzügyi nyomtatóihoz.](https://www.posnet.com.pl) A minta lehetővé teszi a kommunikációt olyan pénzügyi nyomtatóval, amely COM-porton keresztül csatlakozik egy natív szoftverillesztő segítségével. A rendszer egy szoftveremulátor segítségével megvalósította és tesztelték, amelyet a Posnet FV FV pénzügyi nyomtatóhoz megadott Posnet. A minta forráskód formájában származik, és része a Commerce szoftverfejlesztői csomagnak (SDK).
 
 A Microsoft nem ad ki hardvert, szoftvert vagy dokumentációt a Posnet rendszerből. A pénzügyi nyomtató be- és működésával [kapcsolatos tudnivalókat a Posnet Polrin S.A.A-hez kell forduljon.](https://www.posnet.com.pl)
 
@@ -97,12 +98,10 @@ A pénzügyi nyomtató integrációs mintája a vevői betétekre és a vevői r
 
 ## <a name="set-up-fiscal-integration-for-poland"></a>Pénzügyi integráció beállítása Lengyelországhoz
 
-A lengyelországi pénzügyi nyomtató-integrációs [minta](fiscal-integration-for-retail-channel.md) a pénzügyi integrációs funkciókon alapul, és része a Retail SDK csomagnak. A minta a **FiscalIntegration\\ Posnet\\**[Dynamics 365 Commerce tárház src](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet) mintája). A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, amely a Commerce runtime () futási idő kiterjesztése CRT, és egy pénzügyi csatlakoztató, amely a Commerce Hardware Station kiterjesztése. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
+A lengyelországi pénzügyi nyomtató-integrációs [minta](fiscal-integration-for-retail-channel.md) a pénzügyi integrációs funkciókon alapul, és része a Commerce SDK szoftverfejlesztő készletnek. A minta a **\\ Solutions-tárház FiscalIntegration\\ Posnet**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található. A [minta](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) egy pénzügyi dokumentumszolgáltatóból áll, amely a Commerce runtime () futási idő kiterjesztése CRT, és egy pénzügyi csatlakoztató, amely a Commerce Hardware Station kiterjesztése. A Commerce SDK használatával kapcsolatos további tudnivalókat lásd A Commerce SDK [mintáinak és hivatkozási csomagjainak letöltése a BuildHub NuGet](../dev-itpro/retail-sdk/sdk-github.md)[szoftverfejlesztő készletből, valamint a független csomagolású SDK felépítési csővezetékének beállítása](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK korábbi verzióját egy fejlesztő virtuális gépen (VM) kell használnia a Lifecycle Services (LCS) Microsoft Dynamics szolgáltatásban. A további tudnivalókat [lásd a lengyelországi pénzügyi nyomtató integrációs mintája (legacy) telepítési irányelveinél](emea-pol-fpi-sample-sdk.md).
->
-> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
+> [!NOTE]
+> A pénzügyi nyomtató integrációs mintája Lengyelországhoz elérhető a Commerce SDK szoftverfejlesztő készletében a 10.0.29-es verziónak megfelelő verzióban. A Commerce 10.0.28-as vagy korábbi verziójában a Retail SDK korábbi verzióját kell használnia a Lifecycle Services (LCS) Microsoft Dynamics egy fejlesztői virtuális gépére (VM). A további tudnivalókat [lásd a lengyelországi pénzügyi nyomtató integrációs mintája (legacy) telepítési irányelveinél](emea-pol-fpi-sample-sdk.md).
 
 A pénzügyi integráció beállítási lépéseit [a Commerce-csatornák pénzügyi integrációjának beállítása leírtak szerint lehet végrehajtani](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -119,18 +118,16 @@ A regisztráció engedélyezéséhez kövesse az alábbi lépéseket a Commerce 
 1. A pénzügyi bizonylat szolgáltatójának és a pénzügyi csatlakoztatónak megfelelő konfigurációs fájlok letöltése:
 
     1. Nyissa meg [Dynamics 365 Commerce a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Az SDK/alkalmazás verziójának (**[például kiadás/9.33) megfelelő kiadási ágverzió kiválasztása](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**.
+    1. Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően.
     1. PénzügyiIntegration **posnet \> megnyitása \>**
-    1. Töltse le a pénzügyi bizonylat szolgáltatójának konfigurációs **fájlját a CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml** fájlban ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/CommerceRuntime/DocumentProvider.PosnetSample/Configuration/DocumentProviderPosnetSample.xml) fájlban).
-    1. Töltse le a pénzügyi csatlakoztató **konfigurációs fájlját a HardwareStation \> XmlDeviceSample \> Configuration ConnectorPosnetThermalFVEJ.xml \>** fájlból ([például a kiadás fájlja/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)).
+    1. Töltse le a pénzügyi bizonylat szolgáltatójának konfigurációs fájlját a **CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml webhelyen**.
+    1. Töltse le a pénzügyi csatlakoztató konfigurációs fájlját a **HardwareStation \> Egyezettel \> a Configuration ConnectorPosnetThermalFVEJ.xml \> fájlban**.
 
-    > [!WARNING]
-    > Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A pénzügyi integrációs minta konfigurációs fájljai a Retail SDK készlet alábbi mappáiban találhatók az LCS egy fejlesztői VIRTUÁLIS eszközében:
+    > [!NOTE]
+    > A Commerce rendszer 10.0.28-as vagy korábbi verziójában a Retail SDK előző verzióját kell használnia az LCS egy fejlesztői VIRTUÁLIS gépére. A pénzügyi integrációs minta konfigurációs fájljai a Retail SDK készlet alábbi mappáiban találhatók az LCS egy fejlesztői VIRTUÁLIS eszközében:
     >
     > - **Pénzügyi bizonylat szolgáltatójának konfigurációs fájlja:** RetailSdk\\ SampleExtensions\\ CommerceRuntime\\ Extension.DocumentProvider.PosnetSample\\ Configuration\\ DocumentProviderPosnetSample.xml
     > - **Pénzügyi csatlakoztató konfigurációs fájlja:** RetailSdk\\ SampleExtensions\\ HardwareStation\\ Extension.Posnet.TerjesztésDeviceSample\\ Configuration\\ ConnectorPosnetThermalFVEJ.xml
-    > 
-    > Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
 1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce megosztott paraméterek** menüpontra. Az Általános **lapon** állítsa **a** Pénzügyi integráció engedélyezése lehetőséget Igen **beállításra**.
 1. Menjen a **Retail és Commerce \> Csatorna beállítása pénzügyi \> integráció \> pénzügyi dokumentumszolgáltatóihoz**, és töltse be a korábban letöltött pénzügyidokumentum-szolgáltató konfigurációs fájlját.
@@ -173,16 +170,15 @@ A pénzügyi integrációs minta részeként biztosított pénzügyi csatlakozta
 
 ### <a name="configure-channel-components"></a>Csatornaösszetevők konfigurálása
 
-> [!WARNING]
-> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd a lengyelországi pénzügyi nyomtató integrációs mintája (legacy) telepítési irányelveinél](emea-pol-fpi-sample-sdk.md).
->
-> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
+> [!NOTE]
+> - A pénzügyi nyomtató integrációs mintája Lengyelországhoz elérhető a Commerce SDK szoftverfejlesztő készletében a 10.0.29-es verziónak megfelelő verzióban. A Commerce rendszer 10.0.28-as vagy korábbi verziójában a Retail SDK előző verzióját kell használnia az LCS egy fejlesztői VIRTUÁLIS gépére. A további tudnivalókat [lásd a lengyelországi pénzügyi nyomtató integrációs mintája (legacy) telepítési irányelveinél](emea-pol-fpi-sample-sdk.md).
+> - A környezetben telepített kereskedelmi mintákat nem frissíti automatikusan a rendszer, amikor a Commerce rendszer összetevőire szolgáltatás- vagy minőségi frissítéseket alkalmaz. A szükséges mintákat manuálisan kell frissíteni.
 
 #### <a name="set-up-the-development-environment"></a>A fejlesztői környezet beállítása
 
 A minta tesztelésére és kiterjesztésére fejlesztői környezet beállításához kövesse az alábbi lépéseket.
 
-1. Le kell tölteni vagy le kell [Dynamics 365 Commerce tölteni a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions). Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd [a Retail SDK-minta- és hivatkozáscsomagok letöltése aHub és NuGet](../dev-itpro/retail-sdk/sdk-github.md) a.
+1. Le kell tölteni vagy le kell [Dynamics 365 Commerce tölteni a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions). Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd [a Commerce SDK-minta- és hivatkozáscsomagok letöltése aHub és NuGet](../dev-itpro/retail-sdk/sdk-github.md) a.
 1. Nyissa meg a pénzügyi nyomtató integrációs **megoldását a Dynamics365Commerce.Solutions\\ FiscalIntegration\\ Posnet.sln\\** webhelyen, és építse fel.
 1. A következő CRT bővítmények telepítése:
 
@@ -220,10 +216,10 @@ Hajtsa végre [a pénzügyi integrációs minta felépítési folyamatának beá
 
 ## <a name="design-of-extensions"></a>Bővítmények tervezése
 
-A lengyelországi pénzügyi nyomtató-integrációs [minta](fiscal-integration-for-retail-channel.md) a pénzügyi integrációs funkciókon alapul, és része a Retail SDK csomagnak. A minta a **FiscalIntegration\\ Posnet\\**[Dynamics 365 Commerce tárház src](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet) mintája). A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, CRT amely a Commerce Hardverállomás kiterjesztése, és egy pénzügyi csatlakoztató. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
+A lengyelországi pénzügyi nyomtató-integrációs [minta](fiscal-integration-for-retail-channel.md) a pénzügyi integrációs funkciókon alapul, és része a Commerce SDK szoftverfejlesztő készletnek. A minta a **\\ Solutions-tárház FiscalIntegration\\ Posnet**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található. A [minta](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) egy pénzügyi dokumentumszolgáltatóból áll, CRT amely a Commerce Hardverállomás kiterjesztése, és egy pénzügyi csatlakoztató. A Commerce SDK használatával kapcsolatos további tudnivalókat lásd A Commerce SDK [mintáinak és hivatkozási csomagjainak letöltése a BuildHub NuGet](../dev-itpro/retail-sdk/sdk-github.md)[szoftverfejlesztő készletből, valamint a független csomagolású SDK felépítési csővezetékének beállítása](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd a lengyelországi pénzügyi nyomtató integrációs mintája (legacy) telepítési irányelveinél](emea-pol-fpi-sample-sdk.md). Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
+> [!NOTE]
+> A pénzügyi nyomtató integrációs mintája Lengyelországhoz elérhető a Commerce SDK szoftverfejlesztő készletében a 10.0.29-es verziónak megfelelő verzióban. A Commerce rendszer 10.0.28-as vagy korábbi verziójában a Retail SDK előző verzióját kell használnia az LCS egy fejlesztői VIRTUÁLIS gépére. A további tudnivalókat [lásd a lengyelországi pénzügyi nyomtató integrációs mintája (legacy) telepítési irányelveinél](emea-pol-fpi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce runtime bővítmény tervezése
 

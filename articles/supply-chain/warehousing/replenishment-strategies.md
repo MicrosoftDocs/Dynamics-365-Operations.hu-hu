@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 3b4d691bbcf88cc73d10e3bb401710508ec641e1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1245d07436a9b57ee4f0402687e7a4367668cbfa
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893149"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336275"
 ---
 # <a name="replenishment-strategies"></a>Feltöltési stratégiák
 
@@ -36,7 +36,7 @@ A főszezon egy példa arra a helyzetre, amikor a *Maximális helykapacitási* s
 
 ## <a name="turn-on-the-replenish-to-max-based-on-stocking-limits-feature"></a>A Feltöltés maximumig a készletezési korlátok funkció alapján bekapcsolása
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [Funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterület ezen funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+A funkció használata előtt be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [Funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterület ezen funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
 
 - **Modul:** *Raktárkezelés*
 - **Funkció neve:** *Feltöltés maximumig a készletezési korlátok funkció alapján*

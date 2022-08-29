@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8a3ab869eb9ddc0e73061bd2363cf9b3962da1e3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: ed80ff42ea5c6e6a904ea2855953d006f66aad37
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850356"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273666"
 ---
 # <a name="cloud-powered-search-overview"></a>Felhőalapú keresés – áttekintés
 
@@ -64,11 +64,14 @@ A következő ábra egy példát mutat be, ahol a modern automatikus javaslat va
 
 ## <a name="sort"></a>Rendezés
 
-A Commerce rendszer továbbfejlesztett rendezése – például ár, terméknév és termékszám – alapján rendezheti, keresheti és megkeresheti a keresési eredményeket. A vevők az eredményeket úgy is rendezhetik, hogy a termék új, a legnépszerűbb vagy újonnan hozzáadott-e.
+A rendezési funkció lehetővé teszi a vevők számára a kategóriaeredmények rendezését, keresését és tallózását, valamint az eredmények finomítását például az ár, a terméknév és a termékszám alapján. Ha engedélyezi a termékajánlásokat [a](product-recommendations.md) környezetben, akkor a vevők speciális rendezési feltételek, például új, legjobb eladási és trend szerint is rendezheti az eredményeket.
+
 
 > [!NOTE]
 > Ezek a felhőalapú keresési funkciók a 10.0.8 verziótól érhetők el. Győződjön meg róla, hogy van "True" **értékű bejegyzés a Commerce Parameters és a Configuration Parameters > "ProductSearch.UseAzureSearch" paraméterben**. 
 ![A felhőalapú keresés konfigurációs paraméterei.](./media/CloudPoweredSearchConfigurationParameters.png)
+>A Commerce SSK 9.35+ Dynamics 365 Commerce verzióban és 10,0,20 kiadásban speciális rendezési beállítások, például új, bestsing és trendek érhetők el.  
+
 
 ## <a name="additional-resources"></a>További erőforrások
 

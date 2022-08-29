@@ -2,7 +2,7 @@
 title: Biztosra tervezett rendelések
 description: Ez a cikk bemutatja a tervezett rendelések meg kell erősedelét. A tervezett rendelések a megerősítéskor tényleges beszerzési rendelésekké, átmozgatási rendelésekké vagy termelési rendelésekké válnak.
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857518"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335345"
 ---
 # <a name="firm-planned-orders"></a>Biztosra tervezett rendelések
 
@@ -37,19 +37,21 @@ A legtöbb tervezett rendelési funkció a Microsoft Dynamics 365 Supply Chain M
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Tervezett rendelések párhuzamos meg- és kikapcsolása
 
-A párhuzamos megerősítés segít felgyorsítni a megerősítés folyamatot a több szálon keresztüli párhuzamosítás révén. Ez a megközelítés akkor lehet hasznos, ha sok tervezett rendelés meg van erősítve. Ennek a funkciónak a *használatához* be kell kapcsolva lennie a rendszer tervezett rendeléseket párhuzamos megrendelő funkciónak. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, [akkor ezt a funkciót a Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)*funkcióval* kapcsolhatja be és kapcsolhatja ki, és a tervezett rendelések párhuzamos meg lehet erősítő szolgáltatását keresi.
+A párhuzamos megerősítés segít felgyorsítni a megerősítés folyamatot a több szálon keresztüli párhuzamosítás révén. Ez a megközelítés akkor lehet hasznos, ha sok tervezett rendelés meg van erősítve. Ennek a funkciónak a *használatához* be kell kapcsolva lennie a rendszer tervezett rendeléseket párhuzamos megrendelő funkciónak. 
 
-### <a name="enable-planned-order-firming-with-filtering"></a>Tervezett rendelésmegerősítés engedélyezése szűréssel
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, [akkor ezt a funkciót a Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)*funkcióval* kapcsolhatja be és kapcsolhatja ki, és a tervezett rendelések párhuzamos meg lehet erősítő szolgáltatását keresi.
+
+### <a name="turn-planned-order-firming-with-filtering-on-or-off"></a>Tervezett rendelés-meg- és szűréssel való meg- és kikapcsolása
 
 A tervezett rendelésmegerősítés szűréssel lehetővé teszi, hogy logikai feltételt határozzon meg a megerősíteni kívánt tervezett rendelések kiválasztásához. Megtekintheti azt is, hogy mely tervezett rendelések lettek kiválasztva, a háttérben futtathatja a folyamatot, és/vagy ütemezheti kötegelt feladatként.
 
-Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be és kapcsolják ki ezt a funkciót, hogy a Funkciókezelés munkaterületén keresi a Tervezett rendelés- és szűrési funkciót](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Funkciókezelés munkaterületén keresi a Tervezett rendelés megingatása szűrési funkciót.
 
-### <a name="enable-auto-firming-for-planning-optimization"></a>Automatikus megerősítés engedélyezése a tervezési optimalizáláshoz
+### <a name="turn-auto-firming-for-planning-optimization-on-or-off"></a>A tervezési optimalizálás automatikus automatizációs funkcióának be- és kikapcsolása
 
 Az automatikus megerősítéssel a megerősítés időkorlátja alatt, az Alaptervezési folyamat részeként megerősítheti a tervezett rendeléseket. Az automatikus megerősítés mindig támogatott a Supply Chain Management szolgáltatásba beépített tervezőmotornál. Ahhoz azonban, hogy a tervezési optimalizálás is használni tudja, be kell kapcsolnia a funkciót.
 
-Ha ezt a funkciót elérhetővé szeretné tenni a rendszerben, menjen a [Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) elemre, és kapcsolja be a *Automatikus megerősítés tervezési optimalizáláshoz* funkciót. (Az Ellátásilánc-kezelés 10.0.21-es verziója alapértelmezés szerint be van kapcsolva.)
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.29-es ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,29-esnél régebbi verziót futtat, [...](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)*akkor* ezt a funkciót a Funkciókezelés funkcióval kapcsolhatja be és kapcsolhatja ki, és a tervezésoptimalizálási funkció automatikus biztosra keresésével kapcsolhatja be és kapcsolhatja ki.
 
 ## <a name="manually-firm-planned-orders"></a>Manuálisan biztosra tervezett rendelések
 
@@ -67,8 +69,8 @@ A rendelések manuális biztosra tervezése érdekében keresse meg és válassz
 
     - **Jelölés frissítése** – Válassza ki a megerősített tervezett rendeléseknél alkalmazandó készletjelölési irányelvet.
     - **Hiba esetén a megerősítés leállítása** – Állítsa *Igen* értékre ezt a lehetőséget, ha az összes kiválasztott tervezett rendelés megerősítését meg szeretné állítani, ha hiba történik valamelyiknél. Ezt a beállítást *Nem* értékre kell állítani, ha a **Megerősítés párhuzamosítása** lehetőség *Igen* értékre van állítva.
-    - **Megerősítés párhuzamosítása** – Ez a beállítás csak akkor érhető el, ha a rendszerben be van kapcsolva a [*Tervezett rendelések párhuzamos megerősítése* funkciója](#enable-features), és ha két vagy több tervezett rendelést kiválasztott megerősítésre. Állítsa *Igen* értékre, ha párhuzamosan szeretné futtatni a megerősítési folyamatokat. A párhuzamos megerősítés javíthatja a teljesítményt.
-    - **Szálak száma** – Megerősítés párhuzamosítása – Ez a beállítás csak akkor érhető el, ha a rendszerben be van kapcsolva a [*Tervezett rendelések párhuzamos megerősítése* funkció](#enable-features), és ha a **Megerősítés párhuzamosítása** lehetőség *Igen* értékre van állítva. Adja meg a megerősítési folyamat párhuzamosításához használt szálak számát. A beállítás alaptervezésben való használatával kapcsolatban az [Alaptervezés teljesítményének javítása](../master-planning-performance.md#number-of-threads) rész nyújt segítséget.
+    - **A firmizes** párhuzamos használata – [*·*](#enable-features) ez a beállítás csak akkor érhető el, ha a rendszer a tervezett rendelések párhuzamos firming funkciója be van kapcsolva, és ha két vagy több tervezett rendelést választott ki megingatásra. Állítsa *Igen* értékre, ha párhuzamosan szeretné futtatni a megerősítési folyamatokat. A párhuzamos megerősítés javíthatja a teljesítményt.
+    - **Szálak száma** –[*·*](#enable-features) ez a beállítás csak akkor érhető el, ha a rendszernél be van kapcsolva a tervezett rendelések párhuzamos meggombolása funkció, **·** *és ha a Párhuzamosizálás beállítás Beállítása Igen.* Adja meg a megerősítési folyamat párhuzamosításához használt szálak számát. A beállítás alaptervezésben való használatával kapcsolatban az [Alaptervezés teljesítményének javítása](../master-planning-performance.md#number-of-threads) rész nyújt segítséget.
 
         > [!NOTE]
         > Ha a **Szálak száma** mezőt *0* (nulla) értékre állítja, azzal növeli az alaptervezés futási idejét. Ezért azt ajánljuk, hogy mindig 0-nál nagyobb értéket adjon meg ebben a mezőben.
@@ -97,7 +99,7 @@ Az automatikus megerősítéssel az Alaptervezési folyamat részeként megerős
 > A megerősített származtatott rendelések (azaz alvállalkozói beszerzési rendelések) *Ellenőrzés alatt* állapottal jelennek meg, ha a változás követése be van kapcsolva.
 
 > [!IMPORTANT]
-> Mielőtt az ebben a részben ismertetett funkció felhasználható a tervezési optimalizálással, [*·*](#enable-features) a rendszernek be kell kapcsolva lennie a tervezési optimalizálási funkciónak az első részében ismertetett módon. Az automatikus tervezés mindig használható a beépített alaptervezési motorral.
+> Mielőtt az ebben a szakaszban ismertetett funkció felhasználható lenne a tervezési optimalizálással, [*·*](#enable-features) a rendszernek be kell kapcsolva lennie a tervezési optimalizálási funkciónak az első részében ismertetett módon. Az automatikus tervezés mindig használható a beépített alaptervezési motorral.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatikus megerősítés a tervezési optimalizálással és a beépített tervezőmotor
 
@@ -130,7 +132,7 @@ A lekérdezésalapú megerősítés lehetővé teszi a megerősítés előre meg
 Az automatikus és a lekérdezésen alapuló megerősítésekkel kombinálhatja az automatikus megerősítéseket. Egy lekérdezésalapú megerősítési feladathoz például egy olyan előre hozott időkorlát tartozik, amely hosszabb, mint a megegyező automatikus megerősítési fedezett konfiguráció időkorlátja. Emiatt a lekérdezésalapú megerősítés az automatikus megerősítés előtt feldolgozhatja a tervezett rendeléseket. Ezt a viselkedést kihasználhatja, ha az egyes szállítók rendeléseit másképp ütemezi, mint a más szállítóktól származó hasonló termékek rendeléseit.
 
 > [!IMPORTANT]
-> Az ebben a részben [*·*](#enable-features) ismertetett funkció használata előtt a Tervezett rendelések szűrési funkcióját be kell kapcsolva a rendszerben a cikk elején leírt módon.
+> Az ebben a részben [*·*](#enable-features) ismertetett funkció használata előtt a Tervezett rendelések szűrési funkcióját be kell kapcsolva a rendszeren a cikk elején ismertetettek szerint.
 
 A rendelések lekérdezésen alapuló megerősítési folyamattal való biztosra tervezéséhez kövesse az alábbi lépéseket.
 

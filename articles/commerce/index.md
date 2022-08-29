@@ -18,12 +18,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6a8bb357a600c20e98f6886cbc29bd5305395ca0
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f111ccf8b41ad420d38945b44c323d66f8f778fa
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696153"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219245"
 ---
 # <a name="commerce-home-page"></a>Commerce kezdőlap
 
@@ -54,7 +54,7 @@ További információkért válasszon ki egy szolgáltatásterületet.
 - [Saját pénzügyek kezelése](retail-statements.md)
 - [Saját e-Commerce webhely kezelése](online-store-overview.md)
 - [Csalás elleni védelem](dev-itpro/DFP.md)
-- [Kereskedelmi fejlesztés és bővíthetőség](dev-itpro/dev-retail-home-page.md)
+- [Kereskedelmi fejlesztés és bővíthetőség](dev-itpro/retail-sdk/sdk-github.md)
 
 ## <a name="elearning-courses"></a>eLearning-tanfolyamok
 

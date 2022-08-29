@@ -1,30 +1,30 @@
 ---
 title: Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
 description: A cikk lépései azt ismertetik, hogyan tervezhet egy felhasználó új, a metaadatok használatával elektronikus jelentési modell leképezését a Szabályozó konfiguráció szolgáltatás felhasználója.
-author: NickSelin
+author: kfend
 ms.date: 06/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b24d865bff0e81f79e7edde360fd5115d8637b42
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.search.form: ''
+ms.openlocfilehash: 1a935b96e247978fc2b2f9449d403c92bff35f17
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111231"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267872"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
 
 [!include [banner](../../includes/banner.md)]
 
-Az alábbi lépések azt ismertetik, hogyan tervezhet meg egy új elektronikusjelentés-modellleképezést egy RCS-felhasználó a Rendszergazda vagy elektronikus jelentéskészítő fejlesztő szerepkörben, a pénzügyek és műveletek metaadatai alapján. Alkalmazás-metaadatokhoz való hozzáférés online RCS összekapcsolt alkalmazások használatával történik A minta ER-modell-hozzárendelést a külföldi kereskedelmi tranzakciók elérése érdekében konfigurálja a program. Ezeket a lépéseket az RCS szolgáltatásban csak akkor lehet végrehajtani, ha előbb a cikk lépéseit, [a konfigurációs szolgáltatókat létrehozza és aktívként megjelöli](er-configuration-provider-mark-it-active-2016-11.md). Ha nem fejeződött be a cikk lépései, [az alkalmazás metaadatainak elérése az ER](access-application-metadata-er-configuration.md) konfiguráció használatával, töltse le az Elektronikus jelentési [példákat,](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) és mentse a következő ER-konfigurációkat: Külkereskedelmi metaadatok.xml; Külkereskedelmi modell.xml; Külkereskedelmi .xml, majd az eljárás lépéseit kell végrehajtani.
+Az alábbi lépések azt ismertetik, hogyan tervezhet meg egy új elektronikusjelentés-modellleképezést egy RCS-felhasználó a Rendszergazda vagy elektronikus jelentéskészítő fejlesztő szerepkörben, a pénzügyek és műveletek metaadatai alapján. Alkalmazás-metaadatokhoz való hozzáférés online RCS összekapcsolt alkalmazások használatával történik A minta ER-modell-hozzárendelést a külföldi kereskedelmi tranzakciók elérése érdekében konfigurálja a program. Ezeket a lépéseket az RCS szolgáltatásban csak akkor lehet végrehajtani, ha előbb a cikk lépéseit, [a konfigurációs szolgáltatókat létrehozza és aktívként megjelöli](er-configuration-provider-mark-it-active-2016-11.md). Ha nem fejeződött be a cikk lépései, [az alkalmazás metaadatainak elérése az ER](access-application-metadata-er-configuration.md) konfiguráció használatával, töltse [le az elektronikus jelentési](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) példákat, és mentse a következő ER-konfigurációkat: Külkereskedelmi metaadatok.xml; Külkereskedelmi modell.xml; Külkereskedelmi mapping.xml, majd az eljárás lépéseit kell végrehajtani.
 
 ## <a name="prerequisites"></a>Előfeltételek
 1. Ugorjon **Az összes munkaterület** > **Elektronikus jelentés** pontra. 

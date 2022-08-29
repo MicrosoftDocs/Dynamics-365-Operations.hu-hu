@@ -1,24 +1,24 @@
 ---
 title: Árumozgási dokumentum létrehozása belső készlet átviteléhez
 description: Ez az eljárás bemutatja, hogyan lehet átadási dokumentumokat létrehozni a vállalaton belüli árumozgáshoz.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: epopov
+ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d59521f9647025fb794cd2098782f524f5e1e1c47b98d4c7fca6ff7c50e525f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
+ms.openlocfilehash: 27d18b30586775c98dc602215090810b0a1b918a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780321"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337257"
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>Árumozgási dokumentum létrehozása belső készlet átviteléhez
 

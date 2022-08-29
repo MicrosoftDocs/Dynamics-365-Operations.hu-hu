@@ -14,18 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35fcb7c4068ff2f68970d9c0127491e4a63dab4c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dac3ad583be9e4cbd6eacbc6d228819bd298628b
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861073"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323573"
 ---
 # <a name="create-a-working-time-calendar"></a>Munkaidőnaptár létrehozása
 
-
-> [!Important]
-> Az ebben a cikkben említett funkciók jelenleg önálló vevők számára érhetők el Dynamics 365 Human Resources. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -49,7 +46,7 @@ Az utolsó két elemet a munkaidőnaptár beállítása közben is felveheti. K�
 
 3. A **Létrehozási beállítások** területen válassza ki a szervezet munkanapjait és munkaidőit. 
    - Munkaszünet vagy leállás hozzáadásához válassza a **Hozzáadás** gombot a **Szabadnapok és leállások** elem mellett.
-   - Ha olyan időt szeretne hozzáadni, amely nem munkaidő, például ebédet vagy szünetet, akkor válassza a **Hozzáadás** gombot a **NEM MUNKAIDŐ** területen, és adja meg a nevet és az időtartományt.
+   - A nem munka jellegű idő (**·** **például** ebédek vagy szünetek) hozzáadásához válassza a Nem munka jellegű idő beállítás alatt, majd adja meg a nevet és az időtartományt.
 
 4. A **Napok** beállításnál válassza a **Létrehozás** lehetőséget, amivel létrehozza a napokat a naptárban. Adja meg a naptár dátumtartományát, majd válassza a **Napok létrehozása** lehetőséget.
 
@@ -67,7 +64,7 @@ A munkaidőnaptárban külön is hozzáadhatja és módosíthatja a szabadnapoka
 
 A munkaidőnaptárban külön is hozzáadhatja és módosíthatja a nem munkaidőnek számító időket.
 
-1. A Szervezet **felügyelete lapon** válassza **a NEM MUNKAIDŐ lehetőséget**.
+1. A **Szervezet felügyelete** oldalon válassza a **Nem munkaidő** elemet.
 
 2. Válassza az **Új** lehetőséget, és adja meg a nem munkaidőnek számító idő nevét és időtartományát.
 

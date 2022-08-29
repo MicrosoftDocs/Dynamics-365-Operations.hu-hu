@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b88390085d86956c38c0fc167395509d0c54f860
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 565e45a1c396b9144b4a6437056a0040b2fbde1d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894171"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228751"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
@@ -71,10 +71,10 @@ A szervezet használhat meghatározott munkafolyamatokat a szállítói számlá
 
 A következőkben többféle módot ismerhet meg, amelyekkel megakadályozhatja, hogy egy számla beküldésre kerüljön a munkafolyamatba.
 
-- **A számla végösszege és a regisztrált végösszeg nem egyenlő.** A számlát benyújtó személynek figyelmeztetés érkezik, hogy az összegek nem egyeznek meg. A figyelmeztetés lehetőséget biztosít az egyenlegek korrigálására, mielőtt újból benyújtja a számlát a munkafolyamatba. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a számla végösszege és a regisztrált végösszeg nem egyeznek** paraméter a **Funkciókezelés** oldalon be van kapcsolva. 
-- **A számla nem hozzárendelt költségeket tartalmaz.** A számlát benyújtó személy figyelmeztetést kap, hogy a számlán hozzárendeletlen költségek találhatók, így a számlának a munkafolyamatba való újraküldése előtt javítani tudja a számlát. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a szállítói számlán hozzárendeletlen költéségek találhatók** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
-- **A számla sorszáma megegyezik egy másik feladott számla sorszámával.** A számlát beküldő személy üzenetet kap, amely tájékoztatja, hogy ismétlődő számú számla található. Az ismétlődő szám a számla munkafolyamatba való újrabevallása előtt kijavítható. Ez a figyelmeztetés akkor jelenik meg, ha a Kötelezettségek pont **Használt számlaszám ellenőrzése** paraméterének beállítása **Ismétlődések tiltása**. Ez a funkció akkor érhető el **Munkafolyamatba küldés tiltása, ha a számlaszám már létezik egy feladott számlán, és az Ön rendszere nincs beállítva ismétlődő számlaszámok fogadására** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
-- **A számla olyan sort tartalmaz, ahol a számlázott mennyiség kisebb, mint az egyező termékbevételezési mennyiség.** A számlát beküldő vagy feladni próbáló személy üzenetet kap arról, hogy a mennyiségek nem egyeznek. Az üzenet lehetőséget biztosít az értékeknek a számla munkafolyamatba való újbóli beküldése előtti korrigálására. Ez a funkció akkor áll rendelkezésre, ha a **Szállítói számlák munkafolyamatba történő benyújtásának és feladásának blokkolása** paraméter be van kapcsolva a **Funkciókezelés** oldalon, és a **Munkafolyamatba történő benyújtás és feladás blokkolása** paraméter be van kapcsolva a **Kötelezettségek paraméterei** oldalon.
+- **A számla végösszege és a regisztrált végösszeg nem egyenlő.** A számlát eladó felhasználó figyelmeztetést kap, ha az összegek nem egyeznek meg. Ez a figyelmeztetés lehetőséget ad a felhasználónak az egyenlegek korrigálére, mielőtt újrakenné a számlát a munkafolyamat-rendszerbe. Ez **a** **funkció akkor használható, ha** **a Munkafolyamatba való beküldés tiltása, ha a számla végösszege és a regisztrált számlaösszeg nem egyenlő a Funkciókezelési** **lapon** és a Munkafolyamat beállításban szereplő paraméterrel, ha a Számlaösszeg és a Regisztrált végösszeg beállítás nincs megadva a Kötelezettségek paraméterei lapon. 
+- **A számla nem hozzárendelt költségeket tartalmaz.** A számlát benyújtó felhasználó figyelmeztetést kap, ha a számlán nem felosztott költségek vannak. Ezzel a módszerrel a felhasználó még a munkafolyamat rendszerbe való újrabevallása előtt korrigálhatja a számlát. Ez a **funkció akkor használható, ha a Kötelezettségek paraméterei lapon be van kapcsolva a Nem lefoglalt költségek a munkafolyamatba való beküldés stb. paramétere, ha a Funkciók kezelése lapon és a** **·** **·** **Munkafolyamat** funkcióban vannak fel nem osztott költségek paraméterek.
+- **A számla sorszáma megegyezik egy másik feladott számla sorszámával.** A számlát benyújtó felhasználó figyelmeztetést kap, ha olyan számlát talált, amely ismétlődő számmal rendelkezik. A felhasználó kijavíthatja az ismétlődő számot, mielőtt újrakenheti a számlát a munkafolyamat-rendszernek. A figyelmeztetés akkor jelenik meg, ha **a** Kötelezettségek között a Számlaszám ellenőrzése paraméter értéke "Ismétlődés elutasítása **"**. Ez a funkció akkor érhető el **Munkafolyamatba küldés tiltása, ha a számlaszám már létezik egy feladott számlán, és az Ön rendszere nincs beállítva ismétlődő számlaszámok fogadására** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
+- **A számla olyan sort tartalmaz, ahol a számlázott mennyiség kisebb, mint az egyező termékbevételezési mennyiség.** A számlát elküldő vagy a feladni próbáló felhasználó egy üzenetet kap, hogy a mennyiségek nem egyenlőek. Ez az üzenet lehetőséget ad a felhasználónak arra, hogy helyeselje az értékeket, mielőtt újra elküldené a számlát a munkafolyamat-rendszernek. Ez **a** **·** **·** **funkció** akkor használható, ha a Kötelezettségek paraméterei oldalon be van kapcsolva a Szállítói számlák munkafolyamatba történő benyújtásának és feladásának blokkolása paraméter, valamint a Kötelezettségek paraméterei lapon a Feladás és beküldés a munkafolyamatba paraméter.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Szállítói számlák egyeztetése a termékbevételezésekkel
 
@@ -142,7 +142,7 @@ A jelentés minden tranzakcióhoz a következő adatokat tartalmazza:
 A **Szállító nyitott tranzakciói** jelentés létrehozásakor a következő alapértelmezett paraméterek állnak rendelkezésre. Ezekkel szűrheti a jelentésben lévő adatokat.
 
 - **Jövőbeli kiegyenlítés kizárása** – jelölje be ezt a jelölőnégyzetet, ha ki szeretné zárni a tranzakciókat, amelyek azután a dátum után vannak kiegyenlítve, amely meg van adva a **Nyitott tranzakciók ekkor** mezőben.
-- **Nyitott tranzakciók ekkor** – Adjon meg egy dátumot, hogy tartalmazza az adott napon nyitott tranzakciókat. Ha nem ad meg dátumot, akkor ez a mező a maximális dátumra lesz állítva. (A legkésőbbi dátum az a legkésőbbi dátum, amit a rendszer elfogad, tehát 2154 december 31.)Alapértelmezés szerint a jelentés következő futtatásakor ebben a mezőben az utolsó korábban beállított dátum lesz beállítva.
+- **Nyitott tranzakciók ekkor** – Adjon meg egy dátumot, hogy tartalmazza az adott napon nyitott tranzakciókat. Ha nem ad meg dátumot, akkor ez a mező a maximális dátumra lesz állítva. (A legkésőbbi dátum az a legkésőbbi dátum, amit a rendszer elfogad december 31-én, 2154.) Alapértelmezés szerint a jelentés következő futtatásakor ez a mező az utolsóként megadott dátum lesz.
 
 A **Szerepeltetni kívánt rekord** mezővel tovább korlátozhatja a jelentésben szereplő tranzakcióadatokat.
 

@@ -5,22 +5,20 @@ author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: d33fc6f4895b53f16cc6957a3a2fc6b1abe90a2f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111200"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289514"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Problémák elhárítása a kezdeti beállításkor
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Ez a témakör hibaelhárítási információkat tartalmaz a pénzügyek és a műveletalkalmazások, valamint a Dataverse. Ez a témakör pontosabban olyan információkat tartalmaz, amelyek segítségével kijavíthatja azokat a problémákat, amelyek a kettős írásos integráció kezdeti beállításakor merülhetnek fel.
 
@@ -51,7 +49,7 @@ A kettős írási környezet összekapcsolása során a művelet hibaüzenettel 
 
 *A kapcsolatkészlet mentése sikertelen! Egy azonos kulcsú elem már hozzá lett adva.*
 
-A kettős írásmód nem támogatja a több, azonos nevű jogi személyt/céget. Például, ha két „DAT” nevű vállalat van a Dataverse-ben, akkor ez a hibaüzenet jelenik meg.
+A kettős írásmód nem támogatja a több, azonos nevű jogi személyt/céget. Ha például két vállalat neve van a "DAT" Dataverse névvel, akkor ez a hibaüzenet jelenik meg.
 
 Az ügyfél blokkolásának feloldásához távolítsa el a duplikált rekordokat a **cdm_company** táblából a Dataverse-ben. Továbbá, ha a **cdm_company** táblában üres nevű rekordok vannak, távolítsa el vagy javítsa ki ezeket a rekordokat.
 
@@ -87,6 +85,19 @@ Két dolog okozhat problémát azzal, hogy a környezet nem ismerhető fel:
 
 + A bejelentkezésre használt felhasználó nem ugyanaz a bérlő, mint a pénzügyi és műveleti példány.
 + Vannak olyan örökölt pénzügyek és műveletpéldányok, amelyek a Microsoft által működtetett környezetben voltak, és amelyekben probléma ad volt a észleléssel. A probléma megoldásáért frissítse a pénzügyi és a műveletpéldányt. A környezet minden frissítéssel felismerhetővé válik.
+
+## <a name="403-forbidden-error-while-connections-are-being-created"></a>403 (Tiltott) hiba a kapcsolatok létrehozása közben
+
+A kettős Power Apps írásos csatolási folyamat részeként a felhasználó nevében a kapcsolt környezetben két kapcsolat (*más néven Apihub-kapcsolat*) jön Dataverse létre. Ha az ügyfélnek nincs licence a Power Apps környezethez, akkor az ApiHub-kapcsolatok létrehozása sikertelen lesz, és 403 -as (tiltott) hiba jelenik meg. Megjelenik egy példa a hibaüzenetre:
+
+> MSG=\[Nem sikerült beállítani két írási környezetet. Hiba részletei:A válaszállapot kódja nem jelzi sikeresnek: 403 (Tiltott). - A válaszállapot kódja nem mutatja sikeresnek: 403 (Tiltott).\] STACKTRACE=\[ – Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.\<CreateDualWriteConnectionSetAsync\> d\_\_ 29.MoveNext() az X:\\ bt\\ 1158727\\ repo src\\\\ ProjectManagementService\\ DualWrite\\ DualWriteConnectionSetProcessor.cs:line 297 --- Veremkövetés vége egy korábbi helyről, ahonnan kivétel történt --- system.runtime.ExceptionServices.ExceptionDispatchInfo.Throw() at System.Runtime.CompilerServices.TaskButiter.HandleNonSuccessAndDebuggerNotification(Task task) at Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.\<SetupDualWriteEnvironmentAsync\> d\_\_ 34.MoveNext() az X:\\ bt\\ 1158727\\ repo\\ src\\ ProjectManagementService Controllers\\\\ DualWriteEnvironmentManagementController.cs:line 265\]
+
+A hiba licenchiány miatt Power Apps fordul elő. Rendeljen a felhasználóhoz egy megfelelő licencet (Power Apps például 2. próbaterv), hogy a felhasználó engedélyt adjon a kapcsolatok létrehozására. A licenc ellenőrzéséhez a vevő a [Saját](https://portal.office.com/account/?ref=MeControl#subscriptions) fiók webhelyre használhatja a felhasználóhoz jelenleg hozzárendelt licenceket.
+
+A licencekkel kapcsolatos további Power Apps tudnivalókat lásd a következő cikkekben:
+
+- [Licencek hozzárendelése felhasználókhoz](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Beszerzés Power Apps (saját szervezet)](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 

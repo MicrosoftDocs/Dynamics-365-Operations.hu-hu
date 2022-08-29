@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
 description: Ez a témakör olyan funkciókat ismertet, amelyek már el vannak távolítva, illetve amelyek eltávolítását tervezik a funkcióban Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
-ms.translationtype: HT
+ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171515"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218802"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
 
@@ -33,6 +33,17 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 > [!NOTE]
 > A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük azokat az objektumokat, amelyek megváltoztak vagy el vannak távolítva a pénzügyi és műveleti alkalmazások egyes verzióiban.
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10029-release"></a>Eltávolított vagy elavult szolgáltatások a Supply Chain Management 10.0.29 kiadásában
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Készletátmozgatási rendelések, ahol az átmozgatási ár adót tartalmaz
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Elavulás/eltávolítás oka** | Az [áthozott ár funkcióra](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)[adózó készletátviteli rendeléseket felülírják az Indiai Készletátviteli](../../finance/localizations/apac-ind-stock-transfer.md) rendelések funkcióval. |
+| **Felváltotta másik szolgáltatás?**   | Igen, az [áthozott](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)[ár funkció adóját adó készletátviteli rendelések helyére az Indiai Készletátviteli rendelések funkció](../../finance/localizations/apac-ind-stock-transfer.md) helyettesíti. |
+| **Érintett területek** | Ellátásilánc-kezelés - készlet |
+| **Telepítési beállítás** | Felhőbeli és helyszíni |
+| **Állapot** | <p>Elavult. Az *áthozott ár* funkcióra adót adó készletátviteli rendelések nem támogatják a hibajavításokat és biztonsági javításokat.</p><p>2023 *áprilisa* után a vevőknek alapesetben az indiai készletátutalási funkciókat kell használni. 2023 *·*. október után az áthozott ár funkcióra adót adó készletátviteli rendelések többé nem lesznek elérhetők, *és* a vevőknek át kell lépniük az indiai készletátviteli funkciók továbbfejlesztett készletátviteli rendelésére.</p><p>A további tudnivalókat lásd az Indiai [Készletátviteli rendeléseknél](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Eltávolított vagy elavult szolgáltatások a Supply Chain Management 10.0.19 kiadásában
 

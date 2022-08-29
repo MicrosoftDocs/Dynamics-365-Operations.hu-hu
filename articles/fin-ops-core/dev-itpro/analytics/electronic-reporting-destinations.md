@@ -1,26 +1,26 @@
 ---
 title: Elektronikus jelentéskészítés (ER) céljai
 description: Ez a cikk az elektronikus jelentési célok kezelésével, a támogatott célok típusaival és a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
-author: nselin
+author: kfend
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
-ms.translationtype: MT
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
+ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851077"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281967"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -118,7 +118,7 @@ Ha egy kiválasztott formátumhoz a fájlok célhelyeit konfigurálja, akkor az 
 
 [![Konfigurációs hivatkozás.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-Ugyanakkor előfordulhat, hogy az aktuális Palermo példányba importált formátumnak több [verziója](general-electronic-reporting.md#component-versioning) van. Megtekintheti őket, ha kiválasztja a **Konfiguráció** hivatkozást, amelyet a rendszer a **Referencia** mező kiválasztásakor ajánl fel.
+Ugyanakkor előfordulhat, hogy az aktuális Palermo példányba importált formátumnak több verziója van. Megtekintheti őket, ha kiválasztja a **Konfiguráció** hivatkozást, amelyet a rendszer a **Referencia** mező kiválasztásakor ajánl fel.
 
 [![Konfigurációverziók.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -181,6 +181,16 @@ A Pénzügyi verzió **10.0.9** szerint az Excel-kimenetből előállított PDF-
 
 Csak a Windows operációs rendszer közös rendszerbetűkészletei használhatók olyan kimenet konvertálásához, amely nem tartalmaz beágyazott betűtípusokat.
 
+### <a name="resources"></a>Erőforrások
+
+A PÉNZÜGY 10.0.29-es verziója előtt a PDF-konverzió csak az aktuális Pénzügyi példányon kívülre ható. A generált fájlt elküldték a Pénzügy rendszerből az átalakítási szolgáltatásnak, és az a szolgáltatás ezután visszaküldte az átalakított dokumentumot. **A 10.0.29-es** **Microsoft Office és újabb verziókban azonban az Elektronikus jelentés formátumból PDF** **formátumba való konvertálása funkción kívül az alkalmazás-erőforrások használata lehetővé teszi a CBD-dokumentumok Word formátumról PDF** formátumra történő konvertálását is. Ez a funkció lehetővé teszi a létrehozott Word-dokumentumok PDF-formátumúvá konvertálását az aktuális pénzügyi példány alkalmazáskiszolgáló-erőforrásainak használatával. 
+
+Itt vannak a helyi PDF-átalakítás **előnyei**, amikor az alkalmazás-erőforrások használata a CBD-dokumentumok Word-formátumra konvertálásának elvégzéséhez engedélyezve van:
+
+- Az előállított PDF-dokumentum nem korlátozódik [a](#limitations) lapok maximális számára.
+- Az átalakított Word-dokumentum nagy [számú tartalomvezérlőt tartalmazhat](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- A létesítményben való telepítéshez nem szükséges internetkapcsolat.
+
 ### <a name="use-the-pdf-conversion-option"></a>A PDF-konverzió lehetőség használata
 
 Ha be kívánja kapcsolni a PDF-konverziót egy célhelyre, jelölje be a **Konvertálás PDF formátumba** jelölőnégyzetet.
@@ -230,7 +240,7 @@ Az **Általános** gyorslap **Mappa küldése a következőként** mezőjében v
 - **Külön fájlok** – Egy létrehozott zip-fájl összes létrehozott fájlját külön fájlként kézbesíti.
 
     > [!NOTE]
-    > Ha a **Külön fájlok** beállítást választja, a létrehozott kimenetet tömörített állapotban tárolja a rendszer a memóriában. Emiatt a rendszer maximális [fájlméretet](er-compress-outbound-files.md) alkalmaz a tömörített kimenetre, ha a valós fájlméret meghaladhatja ezt a maximális korlátot. Azt javasoljuk, hogy akkor válassza ezt az értéket, ha a létrehozott kimenet várhatóan túl nagy lesz.
+    > Ha a **Külön fájlok** beállítást választja, a létrehozott kimenetet tömörített állapotban tárolja a rendszer a memóriában. Emiatt a rendszer maximális [fájlméretet](er-compress-outbound-files.md) alkalmaz a tömörített kimenetre, ha a valós fájlméret meghaladhatja ezt a maximális korlátot. Javasoljuk, hogy akkor válassza ezt az értéket, ha a generált kimenet nagy méretére számít.
 
 [![Célhely konfigurálása Mappa formátum-összetevőhöz.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 

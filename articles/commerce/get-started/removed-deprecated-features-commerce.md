@@ -1,8 +1,8 @@
 ---
 title: Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör olyan funkciókat ismertet, amelyek már el vannak távolítva, illetve amelyek eltávolítása tervezett Dynamics 365 Commerce.
-author: josaw
-ms.date: 07/11/2022
+author: josaw1
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a59d62ad846eed659fa4e70390ebafc40127df0f
-ms.sourcegitcommit: ef56b5d0ed26e373add5dec63168e08ade40573e
+ms.openlocfilehash: 59ffcc00d67f6538980dec8965f894eb51f7230d
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9138586"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337596"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 
@@ -26,12 +26,44 @@ ms.locfileid: "9138586"
 Ez a témakör olyan funkciókat ismertet, amelyek már el vannak távolítva, illetve amelyek eltávolítása tervezett Dynamics 365 Commerce.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
-- Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
+- Egy *elavult* funkció nincs aktív fejlesztésben, és a későbbi frissítésben már valószínűleg nem fog törlődni.
 
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 > [!NOTE]
 > A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük azokat az objektumokat, amelyek megváltoztak vagy el vannak távolítva a pénzügyi és műveleti alkalmazások egyes verzióiban.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10029-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.29 kiadásában
+
+### <a name="commerce-parameters-setting---allow-price-adjustments-to-increase-product-price"></a>Kereskedelmi paraméterek beállítása - Az árkorrekciók engedélyezése a termék árának növeléséhez
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Ezzel a beállítással szabályozható, hogy az árkorrekciós funkció lehetővé teszi-e a termékár növelését. Ha ez a paraméter ki van kapcsolva, az árkorrekciós funkció szervezetei csak az alapárnál és a kereskedelmi szerződés eladási árnál alacsonyabb egységárat állíthatnak be. Ezt a beállítást elavultuk, mert az árkorrekciós funkció frissült, hogy a mezőből kivehető a kétes visszaigazítás (csökkentés vagy csökkentés). |
+| **Felváltotta másik szolgáltatás?**   | Nem |
+| **Érintett területek**         | Árképzés és engedmények |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: Ez a beállítás alapértelmezés szerint be van kapcsolva a Commerce 10.0.29-es verziója óta, és 2023 októberében törlődik. |
+
+### <a name="commerce-parameters-setting---enable-price-report-for-retail-store"></a>Kereskedelmi paraméterek beállítása - Árjelentés engedélyezése a kiskereskedelmi áruházhoz
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Ezzel a beállítással szabályozható, hogy az árjelentés funkció használható-e az üzlet konfigurációs űrlapja segítségével. Ezt a beállítást elavultuk, mert az üzlet konfigurációs képernyője frissült, hogy mindig az árjelentési funkciót alapértelmezett funkcióként működtetse. |
+| **Felváltotta másik szolgáltatás?**   | Nem |
+| **Érintett területek**         | Árképzés és engedmények |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: Ez a beállítás 2023 októberében törlődik. |
+
+### <a name="commerce-parameters-setting---use-todays-date-to-calculate-prices"></a>Kereskedelmi paraméterek beállítása – az árak kiszámítása a mai dátum alapján
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az ellátásilánc-kezelési (SCM) árképzési motor támogatja az árképzési számítást a kért szállítási dátum vagy a kért kézhezvételi dátum alapján, a mai dátummal együtt. ACommerce árképzési motor csak a mai dátumon alapuló árképzési számítást támogatja. Az SCM- és a Commerce-funkciókat is használni képes vevők esetében ezt a beállítást meg lehet adni, **és** javasolt, hogy a vevők mindig Igen beállítást adjanak meg, hogy a két árképzési motor együtt működjön. A beállítás elavult, mivel nem módosítja a számítás viselkedését, és ezek redundánsak. |
+| **Felváltotta másik szolgáltatás?**   | Nem |
+| **Érintett területek**         | Árképzés és engedmények |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: Ez a beállítás alapértelmezés szerint be van kapcsolva a Commerce 10.0.29-es verziója óta, és 2023 októberében törlődik. |
 
 ## <a name="feature-deprecation-effective-july-2022"></a>Funkció értékcsökkenése 2022. július 2-án
 
@@ -39,26 +71,11 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A Dynamics 365 Commerce csoport elemezte a Commernce analitika (Előnézet) funkció használatát és felvételét, és úgy döntöttek, hogy a továbbiakban nem hozzák előre a funkciót az általános elérhetőségnek.   |
+| **Elavulás/eltávolítás oka** | A Dynamics 365 Commerce csoport elemezte a Commerce Analytics (Előnézet) szolgáltatás használatát és felvételét, és úgy döntöttek, hogy a továbbiakban nem hozzák előre a funkciót az általános elérhetőségnek.   |
 | **Felváltotta másik szolgáltatás?**   | Jelenleg a Commerce Analytics (Preview) szolgáltatást nem cseréli le egy másik funkció vagy megoldás. A nyers tranzakciók és alapadatok pénzügyi és műveleti alkalmazásokból történő exportálása továbbra is elérhető lesz az Azure-adatügyletekbe, [mint azt a Pénzügyi és műveleti alkalmazások Adatexportakciókba exportálása is folytatja](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). A partnerek és a vevők ezt az adatfolyamot az üzleti igénynek megfelelő, bármilyen tervezett elemzési jelentés szerzője számára biztosítják.
 | **Érintett területek**         | Commerce elemzések (Előzetes verzió) |
 | **Telepítési beállítás**              | Minden |
 | **Állapot**                         | A funkció letiltásának 2022. augusztus 30-ig kell lennie.  Ettől a dátumtól már nem történik frissítés a Power BI Commerce analitikában (Előnézet) által biztosított aktuális jelentésekben.     |
-
-
-## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.25 kiadásában
-
-### <a name="modern-point-of-sale-mpos"></a>Modern pénztár (MPOS)
-
-A Modern Point of Sale (MPOS) alkalmazás a Commerce 10.0.25-ös verziójában elavult lesz, és a Store Commerce alkalmazás helyettesíti.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Elavulás/eltávolítás oka** | Az üzleten lévő alkalmazások a felcserélhető Dynamics 365 Commerce szolgáltatás alapcsomópontját kínálják. Folyamatosan inszerzentáljuk a modern és intelligens áruházi tapasztalatokat, és a megoldás további modernizációja érdekében olyan új módosításokat hozunk létre, amelyek jelentős mértékben javítják az it-működést és a felhasználói tapasztalatokat a Windows rendszerben már meglévő, üzleten lévő alkalmazásokkal. Az új Store Commerce alkalmazás a meglévő MPOS technológiafrissítése. Jobb teljesítményt, megbízhatóságot és hosszú távú támogatást nyújt a Windows platformon, és nem szükséges az alkalmazás minden egyes frissítéssel történő átcsomagolása. |
-| **Felváltotta másik szolgáltatás?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **Érintett területek**         | Modern értékesítési pont |
-| **Telepítési beállítás**              | Minden |
-| **Állapot**                         | Elavult: A Commerce rendszer 10.0.25-ös verziójának kiadásakor az LCS virtuális gépekkel (VM) szállított MPOS-telepítő eltávolítja a 2023-as verzióból. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.21 kiadásában
 
@@ -70,7 +87,7 @@ A Commerce rendszer 10.0.21-es verziójában elavult a **Commerce paraméterek**
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | <p>A Commerce paraméterek **Átfedő engedmények kezelése** beállítása határozza meg, hogy hogyan keresi meg a Commerce árképzési motor az átfedő engedményeket, és határozza meg az átfedő engedmények optimális kombinációját. Jelenleg három lehetőség áll rendelkezésre:<p><ul><li> **Legjobb teljesítmény** – Ez a beállítás speciális heurisztikus algoritmust és a [marginálisérték-rangsorolás](../optimal-combination-overlapping-discounts.md) módszerét használja a prioritás meghatározására, értékelésére és a legjobb engedménykombináció gyors meghatározására.</li><li>**Kiegyensúlyozott számítás** – az aktuális kódbázisban ez a beállítás a **Legjobb teljesítmény** beállításhoz hasonló módon működik. Emiatt gyakorlatilag egy ismétlődő beállításról van szó.</li><li>**Teljes számítás** – Ez a beállítás egy régi algoritmust használ, amely az árszámítás során minden lehetséges engedménykombináción végig megy. Nagy sorokat és mennyiségeket eredményező rendelések esetén ez a beállítás teljesítménybeli problémákat okozhat.</li></ul><p>A konfigurálás egyszerűsítése, a teljesítmény javítása és a régi algoritmus által okozott problémák csökkentése érdekében teljesen eltávolítjuk az **Átfedő engedmények kezelése** beállítást, és frissítjük a Commerce árképzési motor belső logikáját, hogy most csak a speciális algoritmust (vagyis a **Legjobb teljesítmény** beállítást használó algoritmust) használja.</p> |
+| **Elavulás/eltávolítás oka** | <p>A Commerce paraméterek **Átfedő engedmények kezelése** beállítása határozza meg, hogy hogyan keresi meg a Commerce árképzési motor az átfedő engedményeket, és határozza meg az átfedő engedmények optimális kombinációját. Jelenleg három lehetőség áll rendelkezésre:<p><ul><li> **Legjobb teljesítmény** – Ez a beállítás speciális heurisztikus algoritmust és a [marginálisérték-rangsorolás](../optimal-combination-overlapping-discounts.md) módszerét használja a prioritás meghatározására, értékelésére és a legjobb engedménykombináció gyors meghatározására.</li><li>**Kiegyensúlyozott számítás** – az aktuális kódbázisban ez a beállítás a **Legjobb teljesítmény** beállításhoz hasonló módon működik. Emiatt gyakorlatilag egy ismétlődő beállításról van szó.</li><li>**Teljes számítás** – Ez a beállítás egy régi algoritmust használ, amely az árszámítás során minden lehetséges engedménykombináción végig megy. Nagy sorokat és mennyiségeket eredményező rendelések esetén ez a beállítás teljesítménybeli problémákat okozhat.</li></ul><p>A konfigurálás egyszerűsítése, a teljesítmény javítása és a régi algoritmus által okozott események csökkentése érdekében teljesen eltávolítjuk az átfedő engedmények kezelési beállítását, **és** frissítjük a Commerce árképzési motor belső logikáját, hogy most csak a speciális algoritmust használja (**vagyis** a legjobb teljesítménybeállítást elát csökkentő algoritmust).</p> |
 | **Felváltotta másik szolgáltatás?**   | Nem. A funkció eltávolítása előtt ajánlott a **Kiegyensúlyozott számítás** vagy a **Teljes számítása** beállítást kapcsolót **Legjobb teljesítmény** értékre állítani. |
 | **Érintett területek**         | Árképzés és engedmények |
 | **Telepítési beállítás**              | Összes |
@@ -111,7 +128,7 @@ További tájékoztatás:
 
 ### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln és CloudPos.sln a Retail SDK készletben
 
-POS-bővítmény fejlesztés a ModernPos.sln, CloudPos.sln, POS segítségével. Az Extension.csproj és a POS mappa elavult a 10.0.21-es kiadásban. A jövőben használja a POS-független csomagolási SDK-t a POS-bővítésekhez.
+POS-bővítmény fejlesztés a ModernPos.sln, CloudPos.sln, POS használatával. Az Extension.csproj és a POS mappa elavult a 10.0.21-es kiadásban. A jövőben használja a POS-független csomagolási SDK-t a POS-bővítésekhez.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -127,10 +144,10 @@ POS-bővítmény fejlesztés a ModernPos.sln, CloudPos.sln, POS segítségével.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Ezzel a kiadással kezdődően a Dynamics 365 központi felületén a **Commerce ütemezés paraméterei** űrlapjában a **Teljes adatkészlet-generálás intervalluma napokban** mező elavult lesz. Ezzel a kiadással kezdődően a mezőt vizuálisan is eltávolítjuk, így az értéket nem lehet szerkeszteni. Ez **0** érték marad. |
+| **Elavulás/eltávolítás oka** | Ezzel a kiadással kezdődően a Dynamics 365 központi felületén a **Commerce ütemezés paraméterei** űrlapjában a **Teljes adatkészlet-generálás intervalluma napokban** mező elavult lesz. A kiadás elkezdődhet is, vizuálisan el lesz távolítva a mező, így az értéket nem lehet szerkeszteni. Ez **0** érték marad. |
 | **Felváltotta másik szolgáltatás?**   | Nem |
 | **Érintett területek**         | Dynamics 365 Commerce |
-| **Telepítési beállítás**              | Összes|
+| **Telepítési beállítás**              | Minden|
 | **Állapot**                         | Elavult. Ne használja ezt a mezőt, vagy ne módosítsa az értékét.|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10015-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.15 kiadásában
@@ -177,7 +194,7 @@ POS-bővítmény fejlesztés a ModernPos.sln, CloudPos.sln, POS segítségével.
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A hardverállomás-bővítmény az IHardwareStationController használatával elavult a leegyszerűsített bővítménymodell alkalmazása érdekében. Az új implementáció csak a IController osztályt fogja tartalmazni a további osztályimplementáció nélkül, és a függőség elkerüléséhez az alapszintű hardverállomás-könyvtárakkal, a korábbi bővítmények több könyvtárra kell utalnia.) |
-| **Felváltotta másik szolgáltatás?**   | Javasoljuk, hogy a IController Class Extension modellt használja a NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) csomag importálásával. |
+| **Felváltotta másik szolgáltatás?**   | Az IController NuGet osztálykiterjesztési modellt ajánlott a (Microsoft.Dynamics.Commerce.Hosting.Contracts) csomag importálásával használni. |
 | **Érintett területek**         | Hardverállomás bővítményei |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult a 10.0.11 kiadás óta |
@@ -187,18 +204,18 @@ POS-bővítmény fejlesztés a ModernPos.sln, CloudPos.sln, POS segítségével.
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A kitárolási és bevételezési műveletek új művelet-újratervezés miatt elavulnak. |
-| **Felváltotta másik szolgáltatás?**   | Igen. A két új pénztári-művelet helyettesíti: bejövő művelet (804) és kimenő művelet (805).|
+| **Felváltotta másik szolgáltatás?**   | Igen. Két új POS-művelet helyettesíti, a bejövő művelet (804) és a kimenő művelet (805).|
 | **Érintett területek**         | Pénztár (POS) alkalmazás |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: A 10.0.10 kiadástól kezdve a kitárolási és bevételezési művelet már nem fog új szolgáltatási frissítéseket kapni. Csak a kritikus hibajavítások lesznek végrehajtva ehhez a művelethez a későbbi kiadásokban. Minden ügyfelünket arra bíztatjuk, hogy álljanak át új [Bejövő műveletek](../pos-inbound-inventory-operation.md) és [Kimenő műveletekre](../pos-outbound-inventory-operation.md) lehetőségekre, amelyek továbbra is a hosszú távú termékfejlesztési program részei. |
 
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-1007-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.7 kiadásában
-### <a name="commerce-getproductavailabilities-and-getavailableinventorynearby-apis"></a>Commerce GetProductAvailabilities és GetAvailableInventoryNearby API-k
+### <a name="commerce-getproductavailabilities-and-getavailableinventorynearby-apis"></a>Commerce GetProductAvabilities és GetAvailableInventoryNearby API-k
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Új, optimalizált API-k lettek létrehozva, ezek váltják le a GetProductAvailabilities és GetAvailableInventoryNearby API-kat. |
-| **Felváltotta másik szolgáltatás?**   | Igen: Leváltották a GetEstimatedAvailability és a GetEstimatedProductWarehouseAvailability API-k. |
+| **Felváltotta másik szolgáltatás?**   | Igen: a getEstizedAvailability és a GetEstizededProductWareraktározásAvailability API-k helyettesítik. |
 | **Érintett területek**         | e-Commerce alkalmazás SDK |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: A 10.0.7-es kiadástól a továbbiakban nem fordítunk figyelmet a GetProductAvailabilities és GetAvailableInventoryNearby fejlesztésére. Azok a szervezetek, amelyek ezeket az API-kat használják az e-Commerce telepítések során, át kell álljanak az új GetEstimatedAvailability és GetEstimatedProductWarehouseAvailability API-k használatára, és engedélyezniük kell az [Optimalizált termékelérhetőség-számítás funkciót](../calculated-inventory-retail-channels.md).  |

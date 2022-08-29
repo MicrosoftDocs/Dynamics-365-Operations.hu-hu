@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186483"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335285"
 ---
 # <a name="priority-based-planning"></a>Prioritásokon alapuló tervezés
 
@@ -30,7 +30,7 @@ A funkció gyors áttekintését a következő témakörben talál: A prioritás
 
 ## <a name="turn-on-priority-based-planning-in-your-system"></a>A prioritáson alapuló tervezés bekapcsolása a rendszerben
 
-Ahhoz, hogy használhassa a funkciót, először aktiválnia kell a rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+A funkció használata előtt be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Alaptervezés modul*
 - **Funkció neve:** *A tervezés optimalizálása során a prioritás által vezérelt MRP-támogatás*
@@ -114,7 +114,7 @@ A tervezési prioritási modellekkel való munkához menjen az **Alaptervezés \
 
 A cikkfedezeti beállítások megadása a Fedezeti beállításoknál [leírtak szerint](../coverage-settings.md). Alapértelmezés szerint a fedezeti **csoporthoz** kiválasztott fedezeti kód értékét másolja a rendszer a cikkfedezeti beállításokba. Szükség esetén azonban felülbírálhatja az alapértelmezett értéket. Bizonyos esetekben **a** *cikkfedezeti* rekord Fedezeti kód mezője a Tervezés beállításra van állítva, de a kapcsolódó fedezeti csoporthoz nincs megadva tervezési prioritási modell. Ebben **az** *·* **esetben minden olyan modell, ahol a Prioritásszámítási módszer mező beállítása a maximális készletmennyiség százaléka, és a Tervezett rendelés létrehozása** *mezőben* az Egy ellátás a legfontosabb prioritással van beállítva, alapértelmezés szerint az Egyedi készlet beállítás van beállítva.
 
-A Fedezetkód **mező** prioritásának *beállítása*, hogy a cikkfedezeti **beállítások között elérhetővé tegye az Újrarendelési pont** mezőt. Ebben a mezőben adja meg az újrarendelésipont-mennyiséget, amit a rendszernek használnia kell, amikor meghatározza, hogy mikor helyezze el **a** *prioritás fedezeti kódértékkel megadott tervezett rendeléseket*.
+A Fedezetkód **mező** prioritásának *beállítása*, hogy a cikkfedezeti **beállítások között elérhetővé tegye az Újrarendelési pont** mezőt. Ebben a mezőben adja meg az újrarendelésipont-mennyiséget, amit a rendszernek használnia kell, amikor meghatározza, hogy mikor helyezze el **a** *prioritás fedezeti kódértékkel megadott tervezett rendeléseket.*
 
 Az újrarendelésipont-mennyiséget gyakran számítják ki igényként az átfutási idő alatt plusz egy minimális érték (biztonsági készlet). A minimális és a maximális **értékek** **közötti értéknek kell lennie.**
 

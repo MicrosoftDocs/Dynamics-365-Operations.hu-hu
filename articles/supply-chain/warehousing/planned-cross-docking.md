@@ -2,7 +2,7 @@
 title: Tervezett áttárolás
 description: Ez a témakör a speciális tervezett áttárolást írja le, ahol a rendeléshez szükséges készletmennyiség a bevételezéstől vagy a létrehozástól a megfelelő kitárolási területre vagy előkészítési területre irányul. A program a bejövő forrásból származó összes fennmaradó készletet a megfelelő tárolóhelyre irányítja a rendszeres elraktározási folyamaton keresztül.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b530cc1403458775fd330e826a32417d3b03bf25
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070289"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334565"
 ---
 # <a name="planned-cross-docking"></a>Tervezett áttárolás
 
@@ -37,10 +37,10 @@ A bejövő rendelés bevételezése idején az áttárolási beállítás automa
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>A tervezett áttárolási funkciók bekapcsolása
 
-Ha a rendszer még nem tartalmazza az ebben a cikkben ismertetett funkciókat, akkor menjen a Funkciókezeléshez [,](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és a következő sorrendben kapcsolja be a következő funkciókat:
+Ha az Ellátásilánc-kezelés 10.0.28-as vagy korábbi verzióját futtatja, akkor használata előtt engedélyeznie kell a tervezett áttárolást. Menjen a [Szolgáltatáskezeléshez](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), és a következő sorrendben kapcsolja be a következő funkciókat:
 
-1. *Tervezett áttárolás*
-1. *Áttárolási sablonok helyutasításokkal*
+1. *Tervezett áttárolás*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni.)
+1. *Áttárolási sablonok helyutasításokkal*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója alapértelmezés szerint be van kapcsolva.)
     > [!NOTE]
     > Ez a funkció lehetővé teszi, hogy az áttárolási sablonban is meg legyen adva az **Irányelvkód** mező, hasonlóan ahhoz, ahogyan a feltöltési sablonokat beállítja. A funkció engedélyezése megakadályozza, hogy a rendszer irányelvkódot ad hozzá az áttárolási munkasablonsorokhoz a végső *betárolási* sorhoz. Így garantálható, hogy a munkasablonok figyelembe vétele előtt meg lehet határozni a végső berakodandó helyet a munka létrehozása során.
 
@@ -92,7 +92,7 @@ A tervezett áttárolás a rakományok feladási módjaként történik. A funkc
 
     - **Utasításkód:** Hagyja üresen ezt a mezőt
 
-        Ezt a lehetőséget az *Áttárolási sablonok helyutasításokkal* funkció engedélyezi. A rendszer helyadatokat használ, hogy meghatározza az áttárolási készlet ideális helyét, amelybe áttárolási készletet lehet áthelyezni. Ezt úgy állíthatja be, hogy az egyes áttárolási sablonokhoz egy-egy műveletkódot rendel hozzá. Ha egy utasításkód meg van adva, a munka létrehozásakor a rendszer helyutasításokat fog keresni az utasításkód alapján. Ily módon korlátozhatja az adott áttárolási sablonhoz használt helyutasításokat.
+        Ezt a lehetőséget a *helyi* irányelveket kezelő áttárolási sablonok engedélyezik (az Ellátásilánc-kezelés 10.0.29-es verziója esetén a funkció alapértelmezés szerint be van kapcsolva). A rendszer helyadatokat használ, hogy meghatározza az áttárolási készlet ideális helyét, amelybe áttárolási készletet lehet áthelyezni. Ezt úgy állíthatja be, hogy az egyes áttárolási sablonokhoz egy-egy műveletkódot rendel hozzá. Ha egy utasításkód meg van adva, a munka létrehozásakor a rendszer helyutasításokat fog keresni az utasításkód alapján. Ily módon korlátozhatja az adott áttárolási sablonhoz használt helyutasításokat.
 
     - **Ellenőrzési időablak:** *Igen*
 

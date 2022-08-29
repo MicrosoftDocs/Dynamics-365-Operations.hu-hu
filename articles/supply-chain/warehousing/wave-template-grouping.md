@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 5eb18ce29cbd1434b2a766c2ba5d78ed1be4e72b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a48e6a81299badf4b811e1cf905beb06099e5a24
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851246"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335975"
 ---
 # <a name="wave-template-grouping"></a>Hullámsablon csoportosítása
 
@@ -31,7 +31,7 @@ A hullámsablon csoportosítása lehetővé teszi a rendszer számára, hogy [hu
 
 ## <a name="turn-on-the-wave-template-grouping-feature"></a>A Hullámsablon-csoportosítás funkció bekapcsolása
 
-A *Hullámsablon-csoportosítás* funkciót használata előtt be kell kapcsolni a rendszerben. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+A Hullámsablon-csoportosítási *funkció* használata előtt be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Raktárkezelés*
 - **Funkció neve:** *Hullámsablon-csoportosítás*
@@ -76,7 +76,7 @@ Ez a szakasz egy olyan szkriptet mutat be, amellyel megtudhatja, hogy a funkció
 
 ### <a name="make-sample-data-available"></a>A mintaadatok elérhetővé tétele
 
-Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 A forgatókönyvet a gyártási rendszerben végzett munka során a funkció használatához útmutatásként is használhatja. Ebben az esetben azonban a saját értékeit kell helyettesítenie, és előfordulhat, hogy bizonyos típusú kötelező rekordok hiányoznak, amelyeket a szabvány demóadatok biztosítanak.
 

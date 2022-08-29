@@ -1,26 +1,26 @@
 ---
 title: Azure-erőforrások beállítása elektronikus számlázáshoz
 description: Ez a témakör áttekintést nyújt Microsoft Azure az elektronikus számlázás erőforrás-beállításának folyamatával.
-author: dkalyuzh
+author: gionoder
 ms.date: 01/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c5b7b2ca4d7733fb1c75ded8798655699284fe1a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ''
+ms.openlocfilehash: f11e4eac831d54a6cac765a5adc4e4ffddbe0a22
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907729"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283085"
 ---
 # <a name="set-up-azure-resources-for-electronic-invoicing"></a>Azure-erőforrások beállítása elektronikus számlázáshoz
 

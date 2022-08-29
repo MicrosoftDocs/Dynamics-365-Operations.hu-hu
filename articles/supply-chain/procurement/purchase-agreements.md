@@ -2,7 +2,7 @@
 title: Beszerzési szerződések
 description: A cikk beszerzési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési szerződést olyan megállapodás, amely egy szevezetet arra kötelez, hogy több beszerzési rendelés használatával egy adott mennyiségnek vagy összegnek megfelelő terméket vásároljon. Ezen kötelezettségvállalás ellenében a vevő különleges árakat és engedményeket kaphat.
 author: GalynaFedorova
-ms.date: 06/20/2017
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8e2c4fdf640f1a9a64c60afc978a4d5812182a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 188a71ec660787b0b942a3d3bf4967b747c4469f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669572"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335885"
 ---
 # <a name="purchase-agreements"></a>Beszerzési szerződések
 
@@ -41,7 +41,7 @@ Ha meg szeretné akadályozni a beszerzési szerződés felhasználását és me
 A beszerzési szerződés osztályozásában azonosíthatja az elsődleges és a másodlagos felelős dolgozót. Ezeket az értékeket az eredményül kapott beszerzési szerződés örökli. Nem kell a felelős dolgozókat hozzáadnia a beszerzési szerződéshez, és azokat közvetlenül, eseti alapon módosíthatja a beszerzési szerződésen. Nem adhat meg másodlagos felelős dolgozót elsődleges felelős dolgozó nélkül, de nem kell rendelkeznie másodlagos felelős dolgozóval. Nem adhatja meg ugyanazt a dolgozót, mint az elsődleges, mind a másodlagos felelős dolgozóként.
 
 > [!IMPORTANT]
-> A felelős fél szolgáltatás használatához be kell kapcsolva lennie a rendszerben. A 10.0.25-ös ellátásilánc-kezelésnek ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be* és kapcsolják ki ezt a funkciót, hogy a szolgáltatáskezelés munkaterületén a beszerzési szerződésért felelős fél szolgáltatását [keresi](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> A felelős fél szolgáltatás használatához be kell kapcsolva lennie a rendszer számára. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterületén a beszerzési szerződésért felelős fél szolgáltatását keresi.
 
 ## <a name="commitment-types"></a>Kötelezettségtípusok
 A beszerzési szerződés minden sora egy-egy kötelezettségvállalás bizonyos vásárlásra. A kötelezettségvállalás kielégítésére több különböző beszerzési rendelés sorait is használhatja. A kötelezettségeknek négy típusa van:

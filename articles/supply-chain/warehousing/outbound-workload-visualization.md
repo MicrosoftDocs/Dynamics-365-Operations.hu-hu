@@ -2,7 +2,7 @@
 title: Kimenő munkaterhelések megjelenítése
 description: Ez a cikk a kimenő terhelés megjelenítésével kapcsolatban tartalmaz tájékoztatást. A funkció segítségével a raktárkezelők és a felügyelők egyéni számítási feladatok diagramjait hozhatják létre, amelyek segítségével figyelemmel kísérhető az aktuális munka előrehaladása, és a fennmaradó mennyisége. A raktárkezelők több nézetet is létrehozhatnak, és szükség szerint beállíthatják az automatikus frissítést.
 author: Mirzaab
-ms.date: 08/28/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 78d0d81095bb52a314936dd7590a5690d94ecb15
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851333"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334415"
 ---
 # <a name="outbound-workload-visualization"></a>Kimenő munkaterhelések megjelenítése
 
@@ -29,7 +29,7 @@ Ezzel a funkcióval nyomon követhető a kitárolási munka előrehaladása. A s
 
 ## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>A Kimenő terhelés megjelenítése funkció be- és kikapcsolása
 
-Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterület Kimenő*[terhelést megjelenítő szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) keresi.
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Kimenő terhelést megjelenítő szolgáltatását keresi.
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Kimenő munkaterhelések vizualizációjának beállítása
 

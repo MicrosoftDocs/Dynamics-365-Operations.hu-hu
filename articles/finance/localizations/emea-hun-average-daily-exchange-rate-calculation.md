@@ -1,25 +1,25 @@
 ---
 title: Átlagos és napi árfolyam kiszámítása
 description: Ez a témakör bemutatja a kimenő banki és készpénztranzakciók átlagos átváltási árfolyamának kiszámítását.
-author: anasyash
+author: AdamTrukawka
 ms.date: 03/30/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 264684
 ms.search.region: Hungary
-ms.author: epopov
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 9251132081b398e2a4ca0c5e9321c2acc0884d34
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 264684
+ms.search.form: AssetParameters
+ms.openlocfilehash: 639b78608553adad2c1003322fd94ba9dad3a535
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888946"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324363"
 ---
 # <a name="calculate-average-and-daily-exchange-rates"></a>Átlagos és napi árfolyam kiszámítása
 

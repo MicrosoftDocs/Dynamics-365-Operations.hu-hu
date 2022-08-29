@@ -2,7 +2,7 @@
 title: A Supply Chain Management szabványos mentett nézetei
 description: Ez a témakör a rendelkezésre álló szabványos mentett nézeteket írja le, és bemutatja az ilyen nézetek engedélyezésének a módszerét.
 author: kamaybac
-ms.date: 02/03/2021
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f94fffb9aa2c208b8c2c0005a2892853eda66a01
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887558"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334835"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>A Supply Chain Management szabványos mentett nézetei
 
@@ -47,15 +47,15 @@ Az alábbi táblázat leírja a Készletkezelési modulban elérhető mentett n�
 
 | Oldal | Nézet neve | A leírás megtekintése | Funkció neve |
 |---|---|---|---|
-| Aktuális készlet listája | Pénzügyek | Ezzel az egyszerűsített nézettel a pénzügyi információkra fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Aktuális készlet listája | Minőség-ellenőrzés | Ezzel az egyszerűsített nézettel a minőség-ellenőrzésre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Aktuális készlet listája | Bevételezés | Ezzel az egyszerűsített nézettel a bevételezési műveletekre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Aktuális készlet listája | Kiszállítás | Ezzel az egyszerűsített nézettel a szállítási műveletekre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Tranzakciók | Egyszerűsített | Ezzel az egyszerűsített nézettel anélkül lehet áttekinteni a készlet állapotát, hogy a pénzügyi adatok és a kevésbé gyakran használt mezők elvonnák a figyelmet. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Átmozgatási rendelések | Kiszállítás | Ezzel az egyszerűsített nézettel a szállítási műveletekre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Átmozgatási rendelések | Bevételezés | Ezzel az egyszerűsített nézettel a bevételezési műveletekre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Átmozgatási rendelések | Minőség-ellenőrzés | Ezzel az egyszerűsített nézettel a minőség-ellenőrzésre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Átmozgatási rendelések | Pénzügyek | Ezzel az egyszerűsített nézettel a pénzügyi információkra fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
+| Aktuális készlet listája | Pénzügyek | Ezzel az egyszerűsített nézettel a pénzügyi információkra fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Aktuális készlet listája | Minőség-ellenőrzés | Ezzel az egyszerűsített nézettel a minőség-ellenőrzésre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Aktuális készlet listája | Bevételezés | Ezzel az egyszerűsített nézettel a bevételezési műveletekre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Aktuális készlet listája | Kiszállítás | Ezzel az egyszerűsített nézettel a szállítási műveletekre fókuszálhat az aktuális készlet kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Tranzakciók | Egyszerűsített | Ezzel az egyszerűsített nézettel anélkül lehet áttekinteni a készlet állapotát, hogy a pénzügyi adatok és a kevésbé gyakran használt mezők elvonnák a figyelmet. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Átmozgatási rendelések | Kiszállítás | Ezzel az egyszerűsített nézettel a szállítási műveletekre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Átmozgatási rendelések | Bevételezés | Ezzel az egyszerűsített nézettel a bevételezési műveletekre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Átmozgatási rendelések | Minőség-ellenőrzés | Ezzel az egyszerűsített nézettel a minőség-ellenőrzésre fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Átmozgatási rendelések | Pénzügyek | Ezzel az egyszerűsített nézettel a pénzügyi információkra fókuszálhat az átmozgatási rendelések kezelése közben. | Mentett nézetek a készletgazdálkodáshoz<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
 
 ## <a name="saved-views-for-the-master-planning-module"></a>Az Alaptervezési modul mentett nézetei
 
@@ -63,8 +63,8 @@ Az alábbi táblázat leírja az Alaptervezési modulban elérhető mentett néz
 
 | Oldal | Nézet neve | A leírás megtekintése | Funkció neve |
 |---|---|---|---|
-| Tervezett rendelések: Tervezett rendelés részletei oldal | Egyszerűsített | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek az egyetlen tervezett rendelés részleteivel kapcsolatos munkához leggyakrabban használhatók. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Tervezett rendelések mentett nézete<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Tervezett rendelések: Tervezett rendelések listája oldal | Egyszerűsített | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek a tervezett rendelés listájával kapcsolatos munkához leggyakrabban használhatók. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Tervezett rendelések mentett nézete<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
+| Tervezett rendelések: Tervezett rendelés részletei oldal | Egyszerűsített | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek az egyetlen tervezett rendelés részleteivel kapcsolatos munkához leggyakrabban használhatók. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Tervezett rendelések mentett nézete<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Tervezett rendelések: Tervezett rendelések listája oldal | Egyszerűsített | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek a tervezett rendelés listájával kapcsolatos munkához leggyakrabban használhatók. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Tervezett rendelések mentett nézete<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
 
 ## <a name="saved-views-for-the-procurement-and-sourcing-module"></a>A Beszerzés és forrás modul mentett nézetei
 
@@ -72,10 +72,10 @@ Az alábbi táblázat leírja a Beszerzés és forrás modulban elérhető mente
 
 | Oldal | Nézet neve | A leírás megtekintése | Funkció neve |
 |---|---|---|---|
-| Beszerzési rendelés részletei | Rendelés létrehozása | Ez az egyszerűsített nézet az új beszerzési rendelések létrehozásához van optimalizálva. | Mentett nézetek beszerzési rendelésekhez<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Beszerzési rendelés részletei | Készletgazdálkodás | Az egyszerűsített nézet a készlettel kapcsolatos tevékenységek végrehajtásához van optimalizálva, például a bevételezésre került készletre, a bevételezésre, a nettó követelmények ellenőrzésére és a rendelési mennyiségek módosítására. | Mentett nézetek beszerzési rendelésekhez<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Beszerzési rendelés részletei | Pénzgazdálkodás | Ez az egyszerűsített nézet a pénzügyekkel kapcsolatos tevékenységek, például az árak, az összegek és a költségek számlázása és ellenőrzése érdekében optimalizálható. | Mentett nézetek beszerzési rendelésekhez<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Beszerzési rendelés részletei | Megrendelés jóváhagyása | Ez az egyszerűsített nézet az új beszerzési rendelések jóváhagyásához van optimalizálva. | Mentett nézetek beszerzési rendelésekhez<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
+| Beszerzési rendelés részletei | Rendelés létrehozása | Ez az egyszerűsített nézet az új beszerzési rendelések létrehozásához van optimalizálva. | Mentett nézetek beszerzési rendelésekhez<br><br>Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Beszerzési rendelés részletei | Készletgazdálkodás | Az egyszerűsített nézet a készlettel kapcsolatos tevékenységek végrehajtásához van optimalizálva, például a bevételezésre került készletre, a bevételezésre, a nettó követelmények ellenőrzésére és a rendelési mennyiségek módosítására. | Mentett nézetek beszerzési rendelésekhez<br><br>Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Beszerzési rendelés részletei | Pénzgazdálkodás | Ez az egyszerűsített nézet a pénzügyekkel kapcsolatos tevékenységek, például az árak, az összegek és a költségek számlázása és ellenőrzése érdekében optimalizálható. | Mentett nézetek beszerzési rendelésekhez<br><br>Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Beszerzési rendelés részletei | Megrendelés jóváhagyása | Ez az egyszerűsített nézet az új beszerzési rendelések jóváhagyásához van optimalizálva. | Mentett nézetek beszerzési rendelésekhez<br><br>Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
 
 ## <a name="saved-views-for-the-product-information-management-module"></a>A Termékinformáció kezelése modul mentett nézetei
 
@@ -83,11 +83,11 @@ Az alábbi táblázat leírja a Termékinformációk kezelése modulban elérhet
 
 | Oldal | Nézet neve | A leírás megtekintése | Funkció neve |
 |---|---|---|---|
-| Megjelent termékek listája | Termék létrehozása | Egyszerűsített lapnézet, amely csak a termékek létrehozásakor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Megjelent termék részletei | Termék létrehozása | Egyszerűsített lapnézet, amely csak a termékek létrehozásakor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Megjelent termék részletei | Logisztikai információkezelés | Egyszerűsített lapnézet, amely csak a termékek logisztikai információinak kezelésekor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Megjelent termék részletei | Beszerzési adatok kezelése | Egyszerűsített lapnézet, amely csak a termékek beszerzési adatainak kezelésekor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Megjelent termék részletei | Értékesítési adatok kezelése | Egyszerűsített lapnézet, amely csak a termékek értékesítési információinak kezelésekor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
+| Megjelent termékek listája | Termék létrehozása | Egyszerűsített lapnézet, amely csak a termékek létrehozásakor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Megjelent termék részletei | Termék létrehozása | Egyszerűsített lapnézet, amely csak a termékek létrehozásakor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Megjelent termék részletei | Logisztikai információkezelés | Egyszerűsített lapnézet, amely csak a termékek logisztikai információinak kezelésekor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Megjelent termék részletei | Beszerzési adatok kezelése | Egyszerűsített lapnézet, amely csak a termékek beszerzési adatainak kezelésekor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Megjelent termék részletei | Értékesítési adatok kezelése | Egyszerűsített lapnézet, amely csak a termékek értékesítési információinak kezelésekor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
 
 ## <a name="saved-views-for-the-production-control-module"></a>A Gyártásvezérlési modul mentett nézetei
 
@@ -95,10 +95,10 @@ Az alábbi táblázat leírja a Gyártásvezérlési modulban elérhető mentett
 
 | Oldal | Nézet neve | A leírás megtekintése | Funkció neve |
 |---|---|---|---|
-| Termelési rendelés darabjegyzékoldala | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Mentett nézetek a termelés vezérléséhez<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Termelési rendelés részleteit tartalmazó oldal | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Mentett nézetek a termelés vezérléséhez<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Termelési rendelés – kitárolásilista-oldal | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Mentett nézetek a termelés vezérléséhez<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
-| Termelési rendelések listaoldala | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Mentett nézetek a termelés vezérléséhez<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.21) |
+| Termelési rendelés darabjegyzékoldala | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Mentett nézetek a termelés vezérléséhez<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Termelési rendelés részleteit tartalmazó oldal | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Mentett nézetek a termelés vezérléséhez<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Termelési rendelés – kitárolásilista-oldal | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Mentett nézetek a termelés vezérléséhez<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
+| Termelési rendelések listaoldala | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Mentett nézetek a termelés vezérléséhez<br><br>(Alapértelmezés szerint a 10.0.21-es verziónak van beállítva. Kötelező a verziószám szerint 10.0.29.) |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Az Értékesítés és marketing modul mentett nézetei
 
@@ -106,10 +106,10 @@ Az alábbi táblázat leírja az Értékesítés és marketing modulban elérhet
 
 | Oldal | Nézet neve | A leírás megtekintése | Funkció neve |
 |---|---|---|---|
-| Szállítólevél naplója | Napló áttekintése | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a szállítólevél-naplók áttekintéséhez. | Az értékesítés és marketing modul mentett nézetei<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Értékesítési rendelés | Rendelés létrehozása | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak az értékesítési rendelések létrehozásához. | Az értékesítés és marketing modul mentett nézetei<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Értékesítési rendelés | Rendelés áttekintése | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak az értékesítési rendelések áttekintéséhez. | Az értékesítés és marketing modul mentett nézetei<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Értékesítési ajánlat | Árajánlat létrehozása | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak az értékesítési árajánlatok létrehozásához. | Az értékesítés és marketing modul mentett nézetei<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
+| Szállítólevél naplója | Napló áttekintése | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a szállítólevél-naplók áttekintéséhez. | Az értékesítés és marketing modul mentett nézetei<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Értékesítési rendelés | Rendelés létrehozása | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak az értékesítési rendelések létrehozásához. | Az értékesítés és marketing modul mentett nézetei<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Értékesítési rendelés | Rendelés áttekintése | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak az értékesítési rendelések áttekintéséhez. | Az értékesítés és marketing modul mentett nézetei<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Értékesítési ajánlat | Árajánlat létrehozása | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak az értékesítési árajánlatok létrehozásához. | Az értékesítés és marketing modul mentett nézetei<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
 
 ## <a name="saved-views-for-the-warehouse-management-module"></a>A Raktárkezelési modul mentett nézetei
 
@@ -117,13 +117,13 @@ Az alábbi táblázat leírja a Raktárkezelési modulban elérhető mentett né
 
 | Oldal | Nézet neve | A leírás megtekintése | Funkció neve |
 |---|---|---|---|
-| Minden rakomány | Bejövő feldolgozása | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a bejövő rakományok feldolgozásához. | Rakományfeldolgozás mentett nézetei<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Minden rakomány | Kimenő feldolgozás | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a kimenő rakományok feldolgozásához. | Rakományfeldolgozás mentett nézetei<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Minden szállítmány | Bejövő feldolgozás | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a bejövő szállítmányok feldolgozásához. | Szállítmányfeldolgozás mentett nézetei<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Minden szállítmány | Kimenő feldolgozás | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a kimenő szállítmányok feldolgozásához. | Szállítmányfeldolgozás mentett nézetei<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Minden hullám | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Hullámfeldolgozás mentett nézete<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Rakománytervező munkaterület | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A rakománytervezési munkaterület mentett nézetei<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
-| Munka részletes adatai | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A munka részleteit tartalmazó oldal mentett nézete<br><br>(Alapértelmezés szerint a rendszer verziószáma 10.0.25) |
+| Minden rakomány | Bejövő feldolgozása | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a bejövő rakományok feldolgozásához. | Rakományfeldolgozás mentett nézetei<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Minden rakomány | Kimenő feldolgozás | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a kimenő rakományok feldolgozásához. | Rakományfeldolgozás mentett nézetei<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Minden szállítmány | Bejövő feldolgozás | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a bejövő szállítmányok feldolgozásához. | Szállítmányfeldolgozás mentett nézetei<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Minden szállítmány | Kimenő feldolgozás | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a kimenő szállítmányok feldolgozásához. | Szállítmányfeldolgozás mentett nézetei<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Minden hullám | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Hullámfeldolgozás mentett nézete<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Rakománytervező munkaterület | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A rakománytervezési munkaterület mentett nézetei<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
+| Munka részletes adatai | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A munka részleteit tartalmazó oldal mentett nézete<br><br>(Alapértelmezés szerint a 10.0.25-ös verzióban. Kötelező a verziószám szerint 10.0.29.) |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

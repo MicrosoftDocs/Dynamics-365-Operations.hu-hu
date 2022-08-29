@@ -2,23 +2,26 @@
 title: Telepítési irányelvek Norvégia készpénzjegyzékéhez (legacy)
 description: Ez a cikk egy telepítési útmutató, amely bemutatja, hogyan lehet engedélyezni Microsoft Dynamics 365 Commerce Norvégia honosítását.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/23/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fb597add48ac3508a88142e63d80f405b6b5f8b4
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894462"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9346045"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Telepítési irányelvek Norvégia készpénzjegyzékéhez (legacy)
 
 [!include [banner](../includes/banner.md)]
+
+> [!WARNING]
+> Ez a minta pénzügyi integrációs funkció [nem](./fiscal-integration-for-retail-channel.md) használja ki a pénzügyi integrációs keretrendszert, és a későbbi frissítések során elavult lesz. Ehelyett a [pénzügyi integrációs keretrendszeren alapuló funkciókat használja](./emea-nor-fi-deployment.md).
 
 Ez a cikk egy telepítési útmutató, amely bemutatja, hogyan lehet engedélyezni Microsoft Dynamics 365 Commerce Norvégia honosítását. A honosítás a Commerce összetevők több kiterjesztésből áll. A bővítményekben például ki lehet nyomtatni az egyéni mezőket a nyugtákra, regisztrálni lehet a további könyvvizsgálati eseményeket, értékesítési tranzakciókat és fizetési tranzakciókat a pénztárban, digitálisan alá lehet írni az értékesítési tranzakciókat, és helyi formátumban lehet X- és Z-jelentéseket nyomtatni. A Norvégiához való honosítással kapcsolatos további tudnivalókat [lásd a Pénztárgép szolgáltatás Norvégiához](./emea-nor-cash-registers.md).
 
@@ -1589,15 +1592,15 @@ A következő lépések szerint hozhatja létre a Commerce összetevőket tartal
 
     # <a name="application-update-4"></a>[4-as alkalmazásfrissítés](#tab/app-update-4)
 
-    A fájl neve **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config**, **és a CommerceRuntime\\ Extensions.SalesTransactionSignatureSample\\ bin\\ hibakeresés** alatt található.
+    A fájl neve **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config**, **és a CommerceRuntime\\ Extensions.SalesTransactionSignatureSample\\ bin\\ hibakeresés alatt található**.
 
     # <a name="application-update-5-and-later"></a>[5-ös vagy újabb alkalmazásfrissítés](#tab/app-update-5-and-later)
 
-    A fájl neve **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config**, **és a CommerceRuntime\\ Extensions.SalesTransactionSignatureSample\\ bin\\ hibakeresés** alatt található.
+    A fájl neve **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config**, **és a CommerceRuntime\\ Extensions.SalesTransactionSignatureSample\\ bin\\ hibakeresés alatt található**.
 
     # <a name="retail-731"></a>[Kiskereskedelmi 7.3.1](#tab/retail-7-3-1)
 
-    A fájl neve **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config**, **és a CommerceRuntime\\ Extensions.SalesTransactionSignatureSample\\ bin\\ hibakeresés** alatt található.
+    A fájl neve **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config**, **és a CommerceRuntime\\ Extensions.SalesTransactionSignatureSample\\ bin\\ hibakeresés alatt található**.
 
     # <a name="retail-732-and-later"></a>[Retail 7.3.2 és újabb](#tab/retail-7-3-2)
 

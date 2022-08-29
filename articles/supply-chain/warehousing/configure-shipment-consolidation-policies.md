@@ -2,7 +2,7 @@
 title: Szállítmánykonszolidációs irányelvek konfigurálása
 description: Ez a cikk bemutatja az alapértelmezett és az egyéni szállítmánykonszolidáció irányelveinek beállítását.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845924"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336492"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Szállítmánykonszolidációs irányelvek konfigurálása
 
@@ -33,10 +33,7 @@ Az ebben a cikkben ismertetett helyzetek bemutatják, hogyan lehet beállítani 
 > [!IMPORTANT]
 > A jelen [cikkben ismertetett](#scenario-1) első esetben először be kell állítani egy raktárat, hogy az a korábbi szállítmánykonszolidációi funkciót használja. Ezután elérhetővé teszi a szállítmánykonszolidációs irányelveket. Ily módon a frissítési forgatókönyv működését megtapasztalhatja. Ha az első forgatókönyv végigvezetéséhez bemutató környezetet tervez használni, ne kapcsolja be a funkciót a forgatókönyv elvégzése előtt.
 
-A *Szállítmánykonszolidációs irányelvek* funkció használata előtt először be kell kapcsolnia rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Szállítmány konszolidálása*
+A Szállítmánykonszolidáció *irányelveinek* használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Szállítmánykonszolidáció irányelveinek szolgáltatását keresi.
 
 ## <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
@@ -61,7 +58,6 @@ Kövesse az alábbi lépéseket az alapértelmezett szállítmánykonszolidáci�
 1. A **Raktár** gyorslapon állítsa be a **Szállítmány konszolidálása a raktárnak való kiadáskor** beállítást *Igen* értékre.
 1. Ismételje meg a 2–4. lépést az összes többi raktárhoz, ahol szükség van a konszolidációra.
 1. Zárja be a lapot.
-1. A [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) használatával kapcsolja be a *Szállítmánykonszolidációs irányelvek* funkciót. A **Funkciókezelés** munkaterületen a funkció neve *Szállítmány konszolidálása*.
 1. Nyissa meg a **Raktárkezelés \> Beállítás \> Kiadás raktárnak \> Szállítmánykonszolidációs irányelvek** pontot. Előfordulhat, hogy frissítenie kell a böngészőt, hogy az új **szállítmánykonszolidációs irányelvek** menüelemet a funkció bekapcsolása után láthassa.
 1. A műveleti ablaktáblán válassza az **Alapértelmezett beállítás létrehozása** elemet a következő irányelvek létrehozásához:
 
@@ -81,7 +77,6 @@ Kövesse az alábbi lépéseket az alapértelmezett szállítmánykonszolidáci�
 
 Kövesse az alábbi lépéseket az alapértelmezett szállítmánykonszolidációs irányelvek beállításához egy teljesen új környezetben.
 
-1. A [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) használatával kapcsolja be a *Szállítmánykonszolidációs irányelvek*, ha még nem kapcsolta be. A **Funkciókezelés** munkaterületen a funkció neve *Szállítmány konszolidálása*.
 1. Nyissa meg a **Raktárkezelés \> Beállítás \> Kiadás raktárnak \> Szállítmánykonszolidációs irányelvek** pontot.
 1. A műveleti ablaktáblán válassza az **Alapértelmezett beállítás létrehozása** elemet a következő irányelvek létrehozásához:
 

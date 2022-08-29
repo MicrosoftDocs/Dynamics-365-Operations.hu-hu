@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37fb24bdda1d49291b88c6728e11aecf9863cc66
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868159"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324817"
 ---
 # <a name="configure-rates"></a>Díjak konfigurálása
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A mértékek határozzák meg, hogy a munkáltatók és az alkalmazottak mennyivel járulnak hozzá a juttatáshoz. Az érték a konfigurációtól függően lehet összeg vagy rugalmas jóváírás is.
 
@@ -84,7 +79,7 @@ Dupla szinteket is használhat. Ha a **Mérték beállítása** képernyőn a **
    | **Leírás** | A **Leírás** mező értékét a mértékbeállítási rekordban megadott leírás adja. Ez alapján megállapíthatja, hogy a szintmértékek melyik mértékbeállításhoz kapcsolódnak. |
    | **Szint kódja** | Válasszon szintkódot. A szintkódokat a **Szintkódok** oldalon definiálhatja. A rendszer automatikusan megjeleníti a szintkód leírását a balra lévő rácson. |
    | **Szint típusa** | Megadja, hogy melyik mezőt kell használni kiválasztási feltételként a szintmértékszámítási folyamathoz. Példa:</br></br><ul><li>Az **Életkor** használata esetén a rendszer az alkalmazott születésnapját fogja használni a juttatási mérték kiszámítási folyamatában.</li><li>A **Fizetés** használata esetén a rendszer az alkalmazott évi juttatásfizetési összegét fogja használni a juttatási mérték kiszámítási folyamatában.</li><li>A **Feladattípus** használata esetén az alkalmazott aktuális aktív pozíciójának rekordja használatos a beosztáshoz kapcsolódó feladattípus meghatározására.</li></ul></br></br>A szinttípusok a következők: **Életkor**, **Fizetés**, **Tényleges**, **Nem**, **Teljes munkaidőssel egyenértékű**, **Feladattípus**, **Kompenzációs régió** és **Szint**. | 
-   | **Szint** | Az az érték, amelyet a rétegtípussal kell használni a juttatási mérték kiszámításának folyamata során. Példa:</br></br><ul><li>Ha a szinttípus az **Életkor**, akkor ez lesz az életkor értéke.</li><li>Ha a szinttípus a **Fizetés**, akkor ez lesz a fizetés összege.</li><li> Ha a szinttípus a **Feladattípus**, akkor ez lesz a feladat típusa.</li></ul></br></br>Az **Életkor** vagy **Fizetés** fokozattípus esetén a **Szint** mezőben szereplő érték a szint felső határát jelöli. **Feladattípus** szinttípus esetén pontos egyeztetési módszer használatos a szinttípus kiválasztása során. |
+   | **Szint** | Az az érték, amelyet a rétegtípussal kell használni a juttatási mérték kiszámításának folyamata során. Példa:</br></br><ul><li>Ha a szinttípus az **Életkor**, akkor ez lesz az életkor értéke.</li><li>Ha a szinttípus a **Fizetés**, akkor ez lesz a fizetés összege.</li><li> Ha a szinttípus a **Feladattípus**, akkor ez lesz a feladat típusa.</li></ul></br></br>A Munkabér és **a** **·** **Kor** szint típusú rétegnél a Szint mező értéke a szint alsó határát jelöli. **Feladattípus** szinttípus esetén pontos egyeztetési módszer használatos a szinttípus kiválasztása során. |
    | **Számítás típusa** | Megadja, hogyan kell használni az összeget a számítási összeg mezőjében, és szükség esetén milyen matematikai számítást kell végrehajtani. Ha a számítás típusa fix összeg, akkor a rendszer az összegmezőket használja. Ha a számítás típusa a fizetés vagy a fedezet $ összege, akkor a számítás összeg és a számítási irány használatos a matematikai számításokban.</br></br>Ha a számítás típusa a fizetés $ összege, akkor a rendszer a következő matematikai egyenletet fogja használni:</br></br>Évi juttatásfizetés osztva a számítási összeggel (felfelé vagy lefelé kerekítve), szorozva a dohányzó vagy nem dohányzó alkalmazott vagy munkáltató összegével.</br></br>Ha a számítás típusa a fedezet $ összege, akkor a rendszer a következő matematikai egyenletet fogja használni:</br></br>Fedezet összege osztva a számítási összeggel (felfelé vagy lefelé kerekítve), szorozva a dohányzó vagy nem dohányzó alkalmazott vagy munkáltató összegével.</br></br>Mindkét számításban a számítási irány határozza meg, hogy felfelé vagy lefelé kell-e kerekíteni a számítás összegével elosztott évi juttatásfizetés vagy fedezet összegét. |
    | **Számítási összeg** | A juttatási mérték kiszámítási folyamata során használandó összeg. Ez az összeg lesz az osztó a szintmérték matematikai számításakor. |
    | **Számítás iránya** | A kiszámított eredmény összegének kerekítési iránya. A rendszer három számítási irányt támogat: nincs (pontos módszer), **Növelés** és **Csökkentés**.</br></br><ul><li>Ha nincs irány, akkor a rendszer a fizetés/fedezet összegének a számítás összegével elosztott pontos értékét fogja használni. Ha az értéknek van törtrésze, akkor ez lesz használatos a számításban.</li><li>Ha az irány a **Növelés**, akkor a számítás a következő egész számra növeli a fizetés/fedezet összegének a számítás összegével elosztott értékét, vagyis például a 12,25 értéket 13-ra kerekíti.</li><li>Ha az irány a **Csökkentés**, akkor a számítás az aktuális egész számra csökkenti a fizetés/fedezet összegének a számítás összegével elosztott értékét, vagyis például a 12,25 értéket 12-re kerekíti.</li></ul> |

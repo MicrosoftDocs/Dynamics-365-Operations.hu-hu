@@ -1,26 +1,26 @@
 ---
 title: Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
 description: Ez a cikk a jogi személyek tárgyieszköz-értékcsökkenéssel kapcsolatban tartalmaz tájékoztatást.
-author: Anasyash
+author: AdamTrukawka
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
+ms.search.region: Hungary
+ms.author: atrukawk
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.custom: 274443
 ms.assetid: fb4084cf-1061-4286-9f09-0f28a031483d
-ms.search.region: Hungary
-ms.author: anasyash
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 70a14f1ef0be9b45c66eac823ca04fc8ab70799a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: AssetDepreciationProfile
+ms.openlocfilehash: f537d000d27fad4d0119ae273121458a9408f052
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849756"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9268538"
 ---
 # <a name="fixed-assets-depreciation-methods-for-hungary"></a>Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
 

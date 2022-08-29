@@ -2,7 +2,7 @@
 title: Cikk-konszolidáció – hely kihasználtsága
 description: Ez a cikk olyan funkciókkal kapcsolatban tartalmaz tájékoztatást, amelyek segítségével a raktárvezetők egyszerűen megtekinthetik és szűrik a különböző helyek térfogat-kihasználtságát a raktáron belül. A menedzserek kiválaszthatnak helyeket, és a cikkek konszolidálásához közvetlenül a cikk-összesítés lapon hozhatnak létre készletmozgatási munkát, és így jobban ki tudják használni a raktári helyet.
 author: Mirzaab
-ms.date: 07/16/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d0e52769de3f200e2bb3060b3d9cb19dc0847b69
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849184"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336423"
 ---
 # <a name="item-consolidation---location-utilization"></a>Cikk-konszolidáció – hely kihasználtsága
 
@@ -30,10 +30,10 @@ Ez a cikk olyan funkciókkal kapcsolatban tartalmaz tájékoztatást, amelyek se
 
 A jelen cikkben ismertetett szolgáltatások használata előtt be kell kapcsolnia őket a rendszerben. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet e funkciók állapotának ellenőrzéséhez, és szükség esetén a bekapcsolásához. A következő szolgáltatásokat kapcsolja be a listán szereplő sorrendben. (Mindkét funkció a **Raktárkezelés** modulhoz tartozik.)
 
-1. Raktár helyállapota
-2. Cikk-konszolidáció helyének kihasználtsága
+1. *Raktári hely állapota*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni. További tájékoztatás: Raktári [hely állapota](warehouse-location-status.md).)
+2. *Cikk-konszolidáció helyének kihasználtsága*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója alapértelmezés szerint be van kapcsolva.)
 
-## <a name="warehouse-location-status"></a>Raktár helyállapota
+## <a name="warehouse-location-status"></a>Raktári hely állapota
 
 A *Raktár helyállapota* funkció négy új mezőt ad hozzá a **Helyek** oldalhoz a hely aktuális állapotával kapcsolatos további információk nyomon követése céljából:
 

@@ -1,25 +1,25 @@
 ---
 title: Tartományok a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör azt ismerteti, hogyan kell kezelni a tartományokat Microsoft Dynamics 365 Commerce.
-author: BrShoo
-ms.date: 05/10/2022
+author: BrianShook
+ms.date: 08/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: c48c8bd57d90a8c7d47bfa4263cd9ab38002629b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: retail
+ms.search.form: ''
+ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848954"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337228"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce szolgáltatásban
 
@@ -109,6 +109,10 @@ Az `<e-commerce tenant name>.dynamics365commerce.ms` végpont nem támogatja az 
 Ha a Front Door-szolgáltatás vagy a CDN használatával egyéni tartományokat szeretne beállítani, akkor két lehetőség közül választhat:
 
 - Egy belépési pont szolgáltatás, mint az Azure Front Door beállítása a kezelőfelületi forgalom kezeléséhez és annak csatlakoztatása a Commerce-környezetéhez. Ez a tartomány-és tanúsítványkezelés és a részletes biztonsági házirendek hatékonyabb kezelését teszi lehetővé.
+
+> [!NOTE]
+> Ha külső CDN- vagy front-ajtós szolgáltatást használ, győződjön meg arról, hogy a kérést a Commerce rendszer által megadott állomásnévvel, de az X-Előretolt állomás (XFH) fejléccel együtt használja a Commerce platformon \<custom-domain\>. Ha például a Commerce végpont `xyz.dynamics365commerce.ms``www.fabrikam.com` az, és az egyéni tartomány, akkor a továbbított kérésnek az állomásfejlécnek kell lennie, `xyz.dynamics365commerce.ms` az XFH-fejlécnek pedig annak kell lennie `www.fabrikam.com`.
+
 - A Commerce által biztosított Azure Front Door példány használata. Ehhez együttműködés szükséges a Dynamics 365 Commerce csapattal a tartomány hitelesítéséhez és az SSL-tanúsítványok lekéréséhez a termelési tartományhoz.
 
 A CDN-szolgáltatások közvetlen beállításával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Content Delivery Network (CDN) támogatásának hozzáadása](add-cdn-support.md).
@@ -141,14 +145,18 @@ Meglévő/aktív tartományok esetében:
 
 ## <a name="apex-domains"></a>Apex-tartományok
 
-A Commerce rendszerbeli Azure Front Door példány nem támogatja a apex-tartományokat (az altartományokat nem tartalmazó gyökértartományok). A apex-tartományokhoz IP-cím szükséges a feloldáshoz, és a Commerce Azure Front Door példánya csak a virtuális végpontokhoz van hozzárendelve. Az apex tartomány használatához két lehetőség közül választhat:
+A Commerce rendszerbeli Azure Front Door példány nem támogatja a apex-tartományokat (az altartományokat nem tartalmazó gyökértartományok). Az Apex tartományokhoz EGY IP-cím szükséges a probléma megoldásához, és a Commerce Azure front Door példánya csak virtuális végpontokkal létezik. Az apex tartományt a következő lehetőségek közül választhatja ki:
 
 - **1. lehetőség** – A DNS-szolgáltató segítségével irányíthatja át a apex-tartományt egy „www” tartományba. Például fabrikam.com átirányítása a következőre `www.fabrikam.com`, ahol a `www.fabrikam.com` a CNAME-rekord, amely a Commerce saját Azure Front Door péládnyára mutat.
 
-- **2. lehetőség** – Hozzon létre egy CDN / belépési pont példányt a saját a apex-tartományának hosztolásához.
+- **2. beállítás** – ha a DNS-szolgáltató támogatja az ALIAS rekordokat, akkor az apex tartományt az ajtó végpontjára mutathatja. Így garantálható, hogy az első ajtó végpontjának IP-módosítása tükröződni fog.
+  
+- **3. lehetőség** – ha a DNS-szolgáltató nem támogatja az ALIAS-rekordokat, akkor saját maga kell beállítania egy CDN- vagy az elvezető ajtó példányát az APEX-tartomány számára.
 
 > [!NOTE]
 > Ha Azure Front Doort használ, akkor egy Azure DNS-t is be kell állítania ugyanabban az előfizetésben. Az Azire DNS-ben található APEX-tartomány egy alias-rekordként mutathat az Azure Front Door-ra. Ez az egyetlen áthidaló megoldás, hiszen az apex-tartományoknak mindig egy IP-címre kell mutatniuk.
+  
+Ha bármilyen kérdése van az Apex tartományokkal kapcsolatban, forduljon a Microsoft támogatási [szolgálatához](https://support.microsoft.com/).
 
   ## <a name="additional-resources"></a>További erőforrások
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41b9538d3064bad24c4c5c60d401605e47e9c655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2dc24fed1ec71432d9e2a3e1cb5b366267c2938b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905454"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218742"
 ---
 # <a name="warehouse-app-event-processing"></a>Raktári alkalmazás eseményeinek feldolgozása
 
@@ -28,7 +28,7 @@ A Supply Chain Management modulban futtatott kötegelt feladatok felhasználhatj
 
 ## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>A Raktári alkalmazásesemények feldolgozása funkció be- és kikapcsolása
 
-Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterület Raktári események feldolgozása szolgáltatását keresi](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció kötelező. Ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni. Ha 10,0,29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Funkciókezelés munkaterületÉn a Raktári események feldolgozása funkcióval kapcsolhatják be és kapcsolhat ki a funkciót.
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Kötegelt feladat létrehozása a raktári alkalmazás eseményeinek feldolgozásához
 

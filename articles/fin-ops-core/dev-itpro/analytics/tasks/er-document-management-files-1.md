@@ -1,24 +1,26 @@
 ---
 title: ER Dokumentumkezelési fájlok használata formátumkimenetekben (1. rész – Adatmodell előkészítése)
 description: Ez a témakör azt ismerteti, hogyan kell konfigurálni egy elektronikus jelentési (ER) formátumot az ER kimenet dokumentumkezelési fájljainak (mellékletei) használatára. (1. rész)
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7818b4916de7f3afbead0da39aa471f690d8f5e7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
+- ERSolutionTable, ERSolutionCreateDropDialog
+ms.openlocfilehash: f407555eca4c4bd08d09047e9d8f8512cb99d254
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908384"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291024"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER Dokumentumkezelési fájlok használata formátumkimenetekben (1. rész – Adatmodell előkészítése)
 

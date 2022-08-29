@@ -2,7 +2,7 @@
 title: Kis csomagok szállítása
 description: Ez a cikk a kis csomagok szállításának (SPS) szolgáltatásáról nyújt tájékoztatást. Ez a funkció lehetővé teszi, hogy a Microsoft Dynamics 365 Supply Chain Management részleteket bocsásson a szállítmányozó rendelkezésére egy csomagolt tárolóról, majd egy szállítási címkét, szállítási díjat és nyomon követési számot fogadjon a szállítmányozótól.
 author: Mirzaab
-ms.date: 01/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 7bafd4a5118de5ca6025c6bd74fe436aa6abd1c8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b2adde2b81ed881a3c81193a2220fbe569069c7c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855903"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336155"
 ---
 # <a name="small-parcel-shipping"></a>Kis csomagok szállítása
 
@@ -34,12 +34,9 @@ A visszaküldött szállítási díj vegyes költségként hozzáadódik a kapcs
 
 Az SPS funkció használatához először be kell kapcsolnia az SPS szolgáltatást a Funkciókezelésben, hozzá kell adnia az ön díjazási motorját, és be kell állítani a **Szállításkezelés** és a **Raktárkezelés** modulokat a támogatására.
 
-### <a name="turn-on-the-sps-feature"></a>Az SPS funkció bekapcsolása
+### <a name="turn-the-sps-feature-on-or-off"></a>Az SPS szolgáltatás be- és kikapcsolása
 
-Az SPS funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [Funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterület a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
-
-- **Modul:** *Szállításkezelés*
-- **Funkció neve:** *Kiscsomagos szállítás*
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Funkciókezelés munkaterület Kis csomagszállítás szolgáltatását keresi.
 
 ### <a name="deploy-and-set-up-rate-engines"></a>Díjazási motorok telepítése és beállítása
 
@@ -81,7 +78,7 @@ A példa azt mutatja be, hogyan lehet beállítani és használni az SPS-t, miut
 
 ### <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-Ha ezt a forgatókönyvet az itt megadott bemutatórekordok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [bemutatóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha ezt a forgatókönyvet az itt megadott bemutatórekordok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [bemutatóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 ### <a name="set-up-the-scenario"></a>Forgatókönyv beállítása
 

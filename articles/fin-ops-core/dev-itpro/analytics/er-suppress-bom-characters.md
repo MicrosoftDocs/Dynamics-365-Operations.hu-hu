@@ -1,30 +1,30 @@
 ---
 title: ER-konfigurációk tervezése az előállított fájlokban található bájtsorrendjelző karakterek elrejtéséhez
 description: Ez a cikk bemutatja, hogyan kell konfigurálni egy elektronikus jelentési (ER) formátumot olyan jelentések létrehozásához, amelyek nem tartalmaznak bájtrendelési jelölést (AJ-) karaktereket.
-author: NickSelin
+author: kfend
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: EROperationDesigner
+ms.openlocfilehash: a2ea132b51f2f451fbe81a9c7869bea84bf4017a
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847430"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324019"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>ER-konfigurációk tervezése az előállított fájlokban található bájtsorrendjelző karakterek elrejtéséhez
 
 [!include [banner](../includes/banner.md)]
 
-[Elektronikus jelentési (ER)](general-electronic-reporting.md) [megoldást](er-quick-start1-new-solution.md) tervezhet kimenő dokumentumok készítéséhez. A dokumentumok szöveg- vagy XML-fájlként való létrehozásához a megoldásnak tartalmaznia [kell](general-electronic-reporting.md#Configuration) egy ER-formátumösszetevőt tartalmazó ER-konfigurációt. A generált fájlokban szereplő karakterkészlet [karakterkódolásának](/windows/win32/intl/character-sets) megadásához az ER-formátumnak tartalmaznia kell a **Közös\\Fájl** formátumelemet. Az ER-formátum összetevő konfigurálásakor meg kell nyitnia a létrehozott ER-konfiguráció [vázlat](general-electronic-reporting.md#component-versioning) verzióját az ER-formátumtervezőben, és hozzá kell adnia a **Közös\\Fájl** elemet. A **Kódolás** mezőben adja meg a futásidőben generált kimenő fájlok kódolását ezzel az összetevővel.
+[Elektronikus jelentési (ER)](general-electronic-reporting.md) [megoldást](er-quick-start1-new-solution.md) tervezhet kimenő dokumentumok készítéséhez. A dokumentumok szöveg- vagy XML-fájlként való létrehozásához a megoldásnak tartalmaznia [kell](general-electronic-reporting.md#Configuration) egy ER-formátumösszetevőt tartalmazó ER-konfigurációt. A generált fájlokban szereplő karakterkészlet [karakterkódolásának](/windows/win32/intl/character-sets) megadásához az ER-formátumnak tartalmaznia kell a **Közös\\Fájl** formátumelemet. Az ER-formátum összetevő konfigurálásán nyissa meg az ER-konfiguráció vázlatverzióját az ER-formátumtervezőben, és **adja hozzá a Közös\\ fájl** elemet. A **Kódolás** mezőben adja meg a futásidőben generált kimenő fájlok kódolását ezzel az összetevővel.
 
 > [!NOTE]
 > Ha a formátum hibás kódolási nevet tartalmaz, akkor a rendszer hibát jelez, amikor menti a formátum beállításainak módosításait.

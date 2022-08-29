@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 901683f2176189ce2f4186b4f9b3b5c64ec9f2b1
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895196"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227775"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Előlegszámlák és előlegek
 
@@ -78,6 +78,8 @@ Az előleg eltávolítható a beszerzési rendelésből, kivéve, ha már kiegye
 A szállító előlegszámlájának rögzítéséhez ugorjon a **Szállítói számla** lapra az **Előlegszámla** lehetőség kiválasztáséval a **Beszerzési rendelések** lapon (**Kötelezettségek \> Általános \> Beszerzési rendelések \> Minden beszerzési rendelés \> Számla lap \> Előlegszámla**). Az előlegszámlához tartozó információ megadása, többek között a számla számának megadása. Előlegszámla mennyisége nem módosítható. Ha a szállító a beszerzési rendelésen meghatározott előlegérték részleges összegét számlázta ki, frissítheti az egységárat a részleges értéknek megfelelően.
 
 Az előlegszámla feladásakor a szállítói egyenleg és az előlegszámla frissítve lesz. A beszerzési rendelésen szereplő előlegdefinícióhoz tartozó **Előleg alkalmazása** is frissítve lesz. Az alapértelmezett pénzügyidimenzió-bejegyzések a feladott előlegbizonylathoz a beszerzési rendelés fejlécinformációiból származnak.
+
+Ha be **van** **kapcsolva a Pénzügyi dimenziók zárolása a szállítói előlegszámla szolgáltatás számlasorainál a Funkciókezelés** lapon, akkor az előlegfejlécben vagy -sorokban szereplő dimenziók nem frissíthetők. 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Előlegszámla kifizetéseinek feladása és kiegyenlítése
 Ezután az előlegszámla kifizetése a történik a **Fizetési napló** lapon. A fizetési naplók eléréséhez kattintson a **Kötelezettségek \> Naplók \> Kifizetések \> Kifizetési napló** elemre . A kifizetés kiegyenlítésének az előlegszámlára történő feladása után a beszerzési rendelés **Fennmaradó alkalmazott előleg** értéke frissül.

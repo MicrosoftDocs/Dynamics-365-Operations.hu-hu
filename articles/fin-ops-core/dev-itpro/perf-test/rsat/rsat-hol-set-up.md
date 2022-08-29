@@ -1,25 +1,25 @@
 ---
 title: A Regression Suite Automation Tool beállítása és telepítése oktatóanyag
 description: Ez a cikk egy oktatóanyag, amely bemutatja, hogyan lehet beállítani és telepíteni a Regression Suite automatizálási eszközt (RSAT).
-author: tonyafehr
+author: frankdahl
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 21761, NotInToc
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: fdahl
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: ced1300b268df9a6503ce1d33d74cae85ade3f20
-ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
+ms.custom: 21761, NotInToc
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: abcb327324829460b0278d95e77b473fa15e363c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9103150"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277454"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>A Regression Suite Automation Tool beállítása és telepítése oktatóanyag
 

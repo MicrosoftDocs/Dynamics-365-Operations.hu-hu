@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e2cfcc13f397f57413be1773683daf1f828beaf8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905486"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334445"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Különböző dimenziók beállítása csomagoláshoz és tároláshoz
 
@@ -37,7 +37,7 @@ Ez a cikk egy olyan esetet tartalmaz, amely bemutatja a funkció használatát.
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>Kapcsolja be a Csomagolótermék-dimenziók funkciót
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+A funkció használata előtt be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
 
 - **Modul:** *Raktárkezelés*
 - **Funkció neve:** *Csomagolótermék-dimenziók*
@@ -50,7 +50,7 @@ A példahelyzet futtatása előtt elő kell készítenie a rendszert az ebben a 
 
 #### <a name="enable-demo-data"></a>Bemutatóadatok engedélyezése
 
-Ha ezt a forgatókönyvet az itt megadott bemutatórekordok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [bemutatóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az *USMF* jogi személyt is ki kell választani a kezdés előtt.
+Ha ezt a forgatókönyvet az itt megadott bemutatórekordok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [bemutatóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az *USMF* jogi személyt is ki kell választani a kezdés előtt.
 
 #### <a name="add-a-new-physical-dimension-to-a-product"></a>Új fizikai dimenzió hozzáadása egy termékhez
 

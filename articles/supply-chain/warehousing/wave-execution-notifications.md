@@ -2,7 +2,7 @@
 title: Hullámvégrehajtási értesítések
 description: Ez a témakör leírja a hullám-végrehajtási értesítéseket, és bemutatja a értesítések beállítását.
 author: Mirzaab
-ms.date: 04/03/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 5c8fa259e51f024d19c1f2f7e84ed7edd0ddb7e1
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: a6a554965c11eea3b4fa53fe4dbc4bac04624026
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069028"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336575"
 ---
 # <a name="wave-execution-notifications"></a>Hullámvégrehajtási értesítések
 
@@ -32,7 +32,7 @@ A navigációs sáv jobb oldalán található **Üzenetek megjelenítése** gomb
 
 ## <a name="turn-the-wave-execution-notifications-feature-on-or-off"></a>A Hullám-végrehajtási értesítések szolgáltatás be- és kikapcsolása
 
-Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be* és kapcsolják ki ezt a funkciót, hogy a szolgáltatáskezelési munkaterület Hullám-végrehajtási értesítési szolgáltatását [keresi](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Szolgáltatáskezelés munkaterület Hullám-végrehajtási értesítési funkciójának keresésével be- vagy kikapcsolhatja ezt a funkciót.
 
 ## <a name="scenario-send-wave-batch-execution-notifications-to-the-action-center"></a>Forgatókönyv: Hullám kötegelt végrehajtási értesítések küldése a Műveleti központba
 

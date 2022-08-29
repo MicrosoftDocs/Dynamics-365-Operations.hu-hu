@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: d6131d205e650c0de88b85434629ed9537c2a0b1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171455"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335645"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás telepítése és csatlakoztatása
 
@@ -38,7 +38,7 @@ A Raktárkezelés mobilalkalmazás Windows és Google Android operációs rendsz
 
 ## <a name="turn-warehouse-management-mobile-app-features-on-or-off-in-supply-chain-management"></a>A Raktárkezelés mobilalkalmazás funkcióinak be- és kikapcsolása az Ellátásilánc-kezelés eszközben
 
-A Raktárkezelés mobilalkalmazás *használatához be kell kapcsolva lennie a rendszerben az új raktári alkalmazás felhasználói beállításainak,* ikonjainak és lépéscímének. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
+A Raktárkezelés mobilalkalmazás használatához az új raktári alkalmazás funkció felhasználói beállításait, *ikonjait* és lépéscímeit be kell kapcsolva a rendszerben. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás beszerzése
 

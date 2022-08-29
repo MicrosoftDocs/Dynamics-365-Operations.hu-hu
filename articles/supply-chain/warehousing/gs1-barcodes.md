@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1c1c274054ed1c14c9b3fc0595baa029bf3124d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907145"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336365"
 ---
 # <a name="gs1-bar-codes"></a>GS1 vonalkódok
 
@@ -108,14 +108,14 @@ Miután az adatokat a vonalkód alapján elemezte, át lesz ásva a mobileszköz
 
 ## <a name="turn-on-the-gs1-feature"></a>Az GS1 funkció bekapcsolása
 
-Ahhoz, hogy használhassa a funkciót, először aktiválnia kell a rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+A funkció használata előtt be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Raktárkezelés*
-- **Funkció neve:** *GS1 vonalkódok beolvasása*
+- **Jellemző neve:** *GS1 vonalkódok beolvasása*
 
 ### <a name="turn-on-the-enhanced-parser-for-gs1-barcodes-feature"></a>A GS1 vonalkódok továbbfejlesztett elemző funkciója
 
-GS1 vonalkódok használata esetén javasoljuk, *hogy a GS1 vonalkódok továbbfejlesztett elemző funkcióját is* engedélyezze. Ez a funkció a GS1 vonalkód-elemző jobb implementációját biztosítja. Hozzáadja a következő fejlesztéseket:
+GS1 vonalkódok használata esetén javasoljuk, *hogy a GS1* vonalkódok továbbfejlesztett elemző funkcióját is bekapcsolja. Ez a funkció a GS1 vonalkód-elemző jobb implementációját biztosítja. Hozzáadja a következő fejlesztéseket:
 
 - A GS1 Általános specifikáció algoritmusát követi, amely a szimbólumadatok elemzési adatait tartalmazza, és ellenőrzi, hogy a szimbólum adatai a specifikációnak megfelelően érvényesek-e.
 - Ehhez nem szükséges az azonosítóértékek maximális hosszát beállítani, és a **konfigurált** alkalmazásazonosítókból származó leghosszabb előtag-egyezést kell használni.
@@ -134,7 +134,7 @@ A globális GS1 opciók beállításához kövesse az alábbi lépéseket.
 
     - **FNC1 Karakter**, **Datamatrix** karakter és **QR-kód** karakter – adja meg azokat a karaktereket, amelyeket az egyes GS1 vonalkódtípusokkal kapcsolatban előtagként kell értelmezni.
     - **Csoportelválasztó** – adja meg azt a karaktert, amely az ASCII-csoport elválasztó karakterét helyettesíti.
-    - **Az azonosító maximális hossza** - Adja meg az alkalmazás azonosítójának megengedett maximális karakterszámát. Ez a mező nem kötelező, ha *a rendszerben be van kapcsolva az Enhanced GS1 Parser* funkció.
+    - **Az azonosító maximális hossza** - Adja meg az alkalmazás azonosítójának megengedett maximális karakterszámát. Ez a mező nem kötelező, ha *a rendszer továbbfejlesztett GS1 Parser* szolgáltatása be van kapcsolva.
 
 > [!NOTE]
 > Az előtagok megszakódolják a rendszert, hogy a vonalkód kódolása a GS1 szabvány szerint történt. Egyidejűleg és különböző célokra legfeljebb három előtag **(FNC1 karakter**, **adatmátrix karakter** és **QR-kód karakter**) használható.

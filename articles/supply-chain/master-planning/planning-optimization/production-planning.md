@@ -2,7 +2,7 @@
 title: Termeléstervezés
 description: Ez a cikk a termelés tervezését írja le, és bemutatja, hogyan lehet módosítani a tervezett termelési rendeléseket a Tervezés optimalizálása segítségével.
 author: t-benebo
-ms.date: 06/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873782"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335255"
 ---
 # <a name="production-planning"></a>Termeléstervezés
 
@@ -26,9 +26,9 @@ A tervezési optimalizálások több termelési helyzetet is támogatnak. Ha egy
 
 Az alábbi videofelvétel rövid bevezetőt nyújt a cikk néhány alapfogalma bevezetőjében: [Dynamics 365 Supply Chain Management A tervezés optimalizálási fejlesztések](https://youtu.be/u1pcmZuZBTw).
 
-## <a name="turn-on-this-feature-for-your-system"></a>A funkció bekapcsolása a rendszerhez
+## <a name="turn-this-feature-on-or-off-for-your-system"></a>A funkció be- és kikapcsolása a rendszeren
 
-Ha a rendszer még nem tartalmazza az ebben a cikkben ismertetett funkciókat, akkor menjen a [Funkciókezeléshez](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)*,* és kapcsolja be a Tervezett termelési rendelések tervezési optimalizálási funkcióját.
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Funkciókezelés munkaterület tervezett termelési rendelései alapján kapcsolhatják be és kapcsolhat ki a funkciót.
 
 ## <a name="planned-production-orders"></a>Terv. term. rendelések
 

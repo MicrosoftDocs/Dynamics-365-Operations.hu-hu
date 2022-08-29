@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066670"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306318"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurálása
 
@@ -52,7 +52,7 @@ A Készlet láthatósága bővítmény számos új funkcióval bővíti a Power 
 | Funkciókezelés neve | Leírás |
 |---|---|
 | *OnHandReservation* | Ezzel a funkcióval foglalásokat, foglalásokat és/vagy nem foglalt készletmennyiségeket lehet létrehozni a Készlet láthatósága funkcióval. További információért lásd a [Készletláthatósági foglalások](inventory-visibility-reservations.md) című részt. |
-| *OnHandMostSpecificBackgroundService* | Ez a funkció a termékekkel és az összes dimenzióval együtt egy készletösszegzést ad meg. A készletösszegzési adatokat a rendszer rendszeres időközönként szinkronizálja a Készletláthatóságból. További információ a készlet összesítésében [található](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnHandMostSpecificBackgroundService* | Ez a funkció a termékekkel és az összes dimenzióval együtt egy készletösszegzést ad meg. A készletösszegzési adatokat a rendszer rendszeres időközönként szinkronizálja a Készletláthatóságból. Az alapértelmezett szinkronizálási gyakoriság 15 percenként van beállítva, és 5 percenként akárhányszor be lehet állítani. További információ a készlet összesítésében [található](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Ez az opcionális funkció lehetővé teszi az ígérethez rendelkezésre álló változási ütemezést és az ígérethez rendelkezésre álló funkciókat. A további tudnivalókat lásd [a Készlet láthatósága aktuális készlet változásának ütemezésében, amely ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md). |
 | *Foglalás* | Ez az opcionális funkció lehetővé teszi, hogy a készlet láthatósága lehetővé teszi a készletellenőrzést (ringfencing) és a túlkiértékelést. A további tudnivalókat lásd [a Készlet láthatósága készletfelosztásban](inventory-visibility-allocation.md). |
 | *Raktári cikkek engedélyezése a Készletláthatóság funkcióban* | Ez az opcionális funkció lehetővé teszi a készlet láthatóságát a raktárkezelési folyamatokban (WMS) engedélyezett cikkek támogatása érdekében. További információ a WMS-cikkek [készlet láthatósági támogatásában található](inventory-visibility-whs-support.md). |

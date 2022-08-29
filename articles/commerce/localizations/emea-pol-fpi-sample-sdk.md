@@ -2,25 +2,29 @@
 title: Telepítési irányelvek a pénzügyi nyomtató integrációs mintához Lengyelországhoz (legacy)
 description: Ez a cikk a Microsoft Dynamics 365 Commerce pénzügyi nyomtató integrációs mintáinak a Kiskereskedelmi szoftverfejlesztői csomagból (SDK) való telepítésével kapcsolatos irányelveket tartalmaz.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 3de7559838a8d8caf64993a468f06ba2d50fff46
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.author: josaw
+ms.search.validFrom: 2019-03-01
+ms.openlocfilehash: 178301e6d8e5f87376ed893e4bf5f966260cad62
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851157"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337229"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Telepítési irányelvek a pénzügyi nyomtató integrációs mintához Lengyelországhoz (legacy)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Ez a cikk a Microsoft Dynamics 365 Commerce pénzügyi nyomtató integrációs mintáinak a Lifecycle Services (LCS) fejlesztői virtuális gépére (SDK) Microsoft Dynamics származó, Lengyelországba való telepítésével kapcsolatban tartalmaz irányelveket. A pénzügyi integrációs mintával kapcsolatos további tudnivalókat lásd [a Pénzügyi nyomtató integrációs mintája Lengyelország esetében](emea-pol-fpi-sample.md). 
+> [!IMPORTANT]
+> Csak akkor kövesse az ebben Microsoft Dynamics 365 Commerce a cikkben olvasható irányelveket, ha a 10.0.28-as vagy korábbi verziókat használja. A Commerce rendszer 10.0.29-es verziója szerint a lengyelországi pénzügyi nyomtató-integrációs minta elérhető a Commerce szoftverfejlesztői csomagjában (SDK). A további tudnivalókat lásd: Csatornaösszetevők [konfigurálása](./emea-pol-fpi-sample.md#configure-channel-components).
+
+Ez a témakör a Dynamics 365 Commerce pénzügyi nyomtató integrációs mintáinak telepítésével kapcsolatban tartalmaz tájékoztatást, amelyek a Retail SDK készletből, a Lifecycle Services (LCS) egy fejlesztői virtuális gépére (VM) Microsoft Dynamics telepíthetők. A pénzügyi integrációs mintával kapcsolatos további tudnivalókat lásd [a Pénzügyi nyomtató integrációs mintája Lengyelország esetében](emea-pol-fpi-sample.md). 
 
 A Lengyelországhoz készült pénzügyi integrációs minta a Retail SDK része. Az SDK [telepítésével és használatával kapcsolatos tudnivalókat lásd a Retail szoftverfejlesztői csomag (SDK) architektúráját](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ez a minta a Commerce runtime (CRT) és a hardverállomás bővítményeiből áll. A minta futtatásához módosítania és fel kell építenie a és CRT a hardverállomás-projekteket. Javasoljuk, hogy egy nem módosított Retail SDK készlet használhatja az ebben a cikkben leírt módosításokat. Javasoljuk továbbá, hogy forrásvezérlő rendszert használjon, Azure DevOps például olyanokat, ahol a fájlok még nem módosultak.
 

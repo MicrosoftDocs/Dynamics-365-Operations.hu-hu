@@ -6,20 +6,20 @@ ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8e47c9806c21de24f0e519d0132374d2e1ff2bbf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: ''
+ms.search.form: ''
+ms.openlocfilehash: e89624a98d3cbdd861391e994386ae57d2c38aa0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892800"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269835"
 ---
 # <a name="image-list-module"></a>Képlista modul
 
@@ -54,7 +54,7 @@ Egy képlista modul új oldalra való felvételéhez és a kötelező tulajdons�
 
 1. Nyissa meg a **Sablonok** lapot, és nyissa meg a webhely kezdőlapjának marketingsablonját (vagy hozzon létre új marketingsablont).
 1. Az alapértelmezett **oldal** főbejáratában válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
-1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Képlista** modult, majd válassza az **OK gombra.**
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Képlista** modult, majd válassza az **OK gombra**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Nyissa meg az **Oldalak** területet, majd a webhely kezdőlapját (vagy hozzon létre egy új kezdőlapot a marketingsablon használatával).
 1. Az alapértelmezett **oldal** főbejáratában jelölje ki az három pont gombot (**...**), majd válassza **a Modul hozzáadása lehetőséget**.

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
-ms.translationtype: HT
+ms.openlocfilehash: 1b45cc2ba26f60ab444edca6c513c581e8332a2a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124528"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219124"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.23 szolgáltatásban (2022. január)
 
@@ -55,7 +55,7 @@ Ha bármelyik funkciót be vagy ki szeretné kapcsolni, akkor ezt a [funkciókez
 | Készlet- és raktárkezelés | (Oroszország) A készletgazdálkodásban előforduló ország- vagy régióspecifikus elsődleges képernyők esetén használjon fordítást a helyi nyelvre | A Supply Chain Management orosz honosításaihoz – ez funkció úgy engedélyezhető, hogy a következő orosz specifikus készletfelvételekben orosz fordításokat használ a termék/cikknevekre és a mértékegységekre:Leltárlista (INV-3),Leltárlista (INV-5),Leltárlista (INV-6). |
 | Alaptervezés | Azure Machine Learning szolgáltatás igény-előrejelzéshez | Ez a funkció lehetővé teszi, hogy az Azure számítógép-oktatási szolgáltatás igény-előrejelzéseket generáljon a korábbi adatok alapján. A további tudnivalókat lásd az igény-előrejelzési [beállításoknál](../master-planning/demand-forecasting-setup.md). |
 | Beszerzés és forrás | Beszerzési rendelés frissítési előzményeinek tisztítása | Ezzel a funkcióval a beszerzési rendelések frissítéséhez kapcsolódó ideiglenes előzményrekordok tisztítására van lehetőség. Hozzáad egy új **Beszerzési rendelés frissítési előzményeinek tisztítása** nevű gombot a **Minden beszerzési rendelés** lap műveletablakába. Alapértelmezetten ez a paraméter engedélyezett. |
-| Gyártásvezérlés | (Előzetes verzió) Automatikusan feladott kitárolási listákhoz engedélyezett raktári anyagok automatikus kitárolása | A funkcióval automatikusan kitárolhatja és feloldhatja a készletdimenziókat az automatikusan feladott, származtatott/visszavezetett kitárolásilista-naplókhoz. |
+| Gyártásvezérlés | Automatikusan feladott kitárolási listákhoz engedélyezett raktári anyagok automatikus kitárolása | A funkcióval automatikusan kitárolhatja és feloldhatja a készletdimenziókat az automatikusan feladott, származtatott/visszavezetett kitárolásilista-naplókhoz. |
 | Gyártásvezérlés | Nyersanyagok lejáratának ellenőrzése a tervezett felhasználási dátumhoz képest | Ez a funkció módosítja a köteg lejárati dátumának ellenőrzését a termelés során felhasznált nyersanyagok egy kötegének lefoglalása során. Ha ez a funkció engedélyezve van, a rendszer a köteg lejárati dátumát a tervezett felhasználási dátummal (a nyersanyag dátumával) szemben ellenőrzi, a termelési anyagjegyzéksoron vagy a kötegrendelés receptúra sorában meghatározottak szerint. Ha ez a funkció le van tiltva, a program a termelés vagy kötegrendelés tervezett szállítási dátuma szerint (ahogy korábban) ellenőrzi a köteg lejárati dátumát. |
 | Értékesítés és marketing | Értékesítésfrissítési előzmények tisztítása kor alapján | Ezzel a funkcióval lehet beállítani **az értékesítési frissítések előzményeinek tisztítási ismétlődő feladat futtatásakor megtartható rekordok maximális** korát. A régebbi rekordok törlődni fognak. Ez hasznos lehet akkor, ha a feladatot rendszeresen futtatásra kell beállítani, mivel a kort a program mindig a feladat futtatásának dátumára viszonyítottan számítja ki. E funkció nélkül csak azt a dátumot állíthatja be, amely a legrégebbit megtartja. További információ az Értékesítési előzmények adatainak [tisztítása ütemezése oldalon található](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Értékesítés és marketing | A 100 legjelentősebb vevő jelentés teljesítményének javítása | Ez a funkció javítja a **100 legfontosabb** vevői jelentés teljesítményét, azáltal, hogy a jelentést minden vevőn futtatja (ami a célzott felhasználás), ahelyett, hogy engedélyezné az egyéni lekérdezéseket. Ha ez a funkció engedélyezve van, akkor a **100 legfontosabb** jelentés párbeszédpanelén minden **Belefoglalandó rekordok** beállítás le van tiltva. |

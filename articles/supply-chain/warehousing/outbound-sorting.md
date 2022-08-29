@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 95afa46140de863ecdf61b0ef54e6d9e9ece91d7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ec7bc573329a0f8a37b2fd17dcb998ec161b04e8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897313"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336335"
 ---
 # <a name="outbound-sorting"></a>Kimenő rendezés
 
@@ -30,7 +30,7 @@ Ez a funkció lehetővé teszi raklapok összeállítását a csomagolási funkc
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>A Kimenő rendezés funkció bekapcsolása
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+A funkció használata előtt be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
 
 - **Modul:** *Raktárkezelés*
 - **Szolgáltatás neve:** *Kimenő rendezés*

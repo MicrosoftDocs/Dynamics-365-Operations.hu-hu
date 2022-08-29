@@ -14,19 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5bcfa60349d6d362504184dd90cc97ea27e8ba43
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 692bd5acd574492526644849fb555e5856b4463f
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689522"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323419"
 ---
 # <a name="set-up-reason-codes"></a>Okkódok beállítása
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Dynamics 365 Human Resources okkódokat használ annak elmagyarázása érdekében, hogy miért változnak az alkalmazottak juttatásai.
 

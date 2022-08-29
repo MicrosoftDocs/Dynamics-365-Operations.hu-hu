@@ -1,25 +1,25 @@
 ---
 title: Szerzői jogi értesítés hozzáadása
 description: Ez a témakör azt ismerteti, hogyan lehet szerzői jogi nyilatkozatokat hozzáadni az e-Commerce webhelyhez.
-author: psimolin
+author: josaw1
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a1e394b9a582b48c44bbec26ef42a90d50918f87
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: 044fdd958a7233322553c8d9b03163c6ce5c4cb3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851217"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270455"
 ---
 # <a name="add-a-copyright-notice"></a>Szerzői jogi értesítés hozzáadása
 

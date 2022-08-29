@@ -2,7 +2,7 @@
 title: Mérnöki változtatások kezelése funkció áttekintése
 description: Ez a témakör teljes véget ért, és bemutatja, hogyan kell dolgozni a műszaki változáskezelésben.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65ff30632a54b0b7cadbfe663698d466d41abe47
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889635"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334895"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Mérnöki változtatások kezelése funkció áttekintése
 
@@ -45,7 +45,7 @@ Mielőtt a cikk többi részében bármilyen műveletet megpróbálkozni, köves
 
 ### <a name="make-standard-demo-data-available"></a>A standard bemutató adatok elérhetővé tétele
 
-Azon a rendszeren dolgozzon, ahol a [standard bemutató adatok telepítve vannak](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). A standard demó adatok több bemutató jogi személy (vállalatok és szervezetek) adatait adja hozzá. Ahogy végrehajtja a gyakorlatokat, a navigációs sáv jobb oldalán található vállalatválasztóval válthat egy olyan vállalat (*DEMF*) között, amely *mérnöki szervezetként* van beállítva, és egy másik vállalat (*USMF*) között, amely *műveleti szervezetként* van beállítva.
+Olyan rendszeren való munka, ahol telepítve vannak [a normál bemutatóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md). A standard demó adatok több bemutató jogi személy (vállalatok és szervezetek) adatait adja hozzá. Ahogy végrehajtja a gyakorlatokat, a navigációs sáv jobb oldalán található vállalatválasztóval válthat egy olyan vállalat (*DEMF*) között, amely *mérnöki szervezetként* van beállítva, és egy másik vállalat (*USMF*) között, amely *műveleti szervezetként* van beállítva.
 
 ### <a name="set-up-an-engineering-organization"></a>Mérnöki szervezet beállítása
 
@@ -284,7 +284,7 @@ A termék áttekintéséhez és a *USMF* vállalatban történő kiadásához k�
 
 1. Válassza ki a **Termékszám** oszlopát a **Termék kiadási részletei** oldal megnyitásához. Vegye figyelembe a következőket:
 
-    - Az **Általános** gyorslap a termék kiadásával kapcsolatos információkat jelenít meg, például a kiadó vállalatot (a *DEMF* ebben a példában), a kiadó helyet (*1*) és a fogadó helyet (*1*). Mivel a **Termékek kiadása** varázslóban nem adott meg bevételezési helyet, a rendszer a bevételezési helyre másolja a kiadási hely értékét.
+    - Az **Általános** gyorslap a termék kiadásával kapcsolatos információkat jelenít meg, például a kiadó vállalatot (a *DEMF* ebben a példában), a kiadó helyet (*1*) és a fogadó helyet (*1*). Mivel nem adott meg bevételezési helyet a Termékek kiadása varázslóban, a feloldó hely értékét a **program** a bevételezési telephelyre másolja.
     - A **Kiadás részletei** gyorslap a termékkel és a kiadott verzióval kapcsolatos adatokat jeleníti meg. Itt módosíthatja a beállításokat, például az érvényesség dátumait.
     - Az **Útvonal** gyorslap a termék útvonalát jeleníti meg. Ebben a példában azonban nem adott ki útvonalakat.
 

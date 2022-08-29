@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 7141f9c7ae4e27013bd655ce78892fc44c181315
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111818"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242982"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Frissítés a fél és globális címjegyzék modelljére
 
@@ -269,19 +269,19 @@ Ez a szakasz leírja a Felek postai címének és a Felek elektronikus címének
 
 8. Az új Fél rekordjainak **importálása** a Pénzügy és műveletek alkalmazásba.
 
-    1. Töltse le **a FONewParty.csv** fájlt az Azure Blob tárolóból. Az elérési út partybootstrapping **/output/FONewParty.csv**.
-    2. **A FONewParty.csv** fájl konvertálása Excel-fájlba, és az Excel-fájl importálása a Pénzügyi és műveletek alkalmazásba. Ha a CSV importálása az Ön számára is megfelelő, akkor közvetlenül .csv importálhatja. Ez a lépés az adatmennyiségtől függően néhány óráig is igénybe vehet. A további tudnivalókat lásd: [Adatimportálási és -exportálási feladatok áttekintése](../data-import-export-job.md).
+    1. Töltse le **a FONewParty.csv fájlt** az Azure Blob tárolóból. Az elérési út partybootstrapping **/output/FONewParty.csv**.
+    2. **A FONewParty.csv fájl** konvertálása Excel-fájlba, és az Excel-fájl importálása a Pénzügyi és műveleti alkalmazásba. Ha a CSV importálása az Ön számára is megfelelő, akkor közvetlenül importálhatja a .csv fájlt. Ez a lépés az adatmennyiségtől függően néhány óráig is igénybe vehet. A további tudnivalókat lásd: [Adatimportálási és -exportálási feladatok áttekintése](../data-import-export-job.md).
 
     ![A felek rekordjainak Dataverse importálása](media/data-factory-import-party.png)
 
-9. Az adat üzemben futtassa a Fél postai címe és a Felek elektronikus címsablonját, egyiket a másik után.
+9. Az adat üzemben futtassa a Fél e-mail címét, majd a Fél postai címsablonját, egymás után.
 
     + A Fél postai címsablonja a **vevői** kapcsolati alkalmazás összes postai címrekordját hozzárendeli a megfelelő számla-,**·** **kapcsolattartó- és szállítórekordhoz**. Ezenkívül három .csv fájlt generál: ImportFONewPostalAddressLocation.csv, ImportFONewPartyPostalAddress.csv és ImportFONewPostalAddress.csv.
-    + A Fél elektronikus címsablonja az összes elektronikus címet megerősíti a vevői kapcsolati alkalmazásban, **és hozzárendeli azokat a megfelelő számla-,** **kapcsolattartó- és szállítórekordhoz** **.** Ezenkívül létrehoz egy .csv: ImportFONewElectronicAddress.csv.
+    + A Fél elektronikus címsablonja az összes elektronikus címet megerősíti a vevői kapcsolati alkalmazásban, **és hozzárendeli azokat a megfelelő számla-,** **kapcsolattartó- és szállítórekordhoz** **.** Egy .csv fájlt is generál: ImportFONewElectronicAddress.csv.
 
     ![A Fél postai címének és a Fél elektronikus címsablonjainak futtatása](media/ADF-7.png)
 
-10. Ahhoz, hogy ezzel az adatokkal frissítheti a pénzügyet és a műveletek alkalmazást, a .csv egy Excel-munkafüzetet [kell konvertálni, és azt be kell importálni a Pénzügy és műveletek alkalmazásba](../data-import-export-job.md). Ha a CSV importálása az Ön számára is megfelelő, akkor közvetlenül .csv importálhatja. A lépés a térfogattól függően néhány óráig is igénybe vehet.
+10. Ahhoz, hogy ezzel az adatokkal frissítse a pénzügyet és a műveletek alkalmazást, a .csv fájlokat egy Excel-munkafüzetké [kell konvertálni, és be kell importálni a pénzügyi és műveleti alkalmazásba](../data-import-export-job.md). Ha a CSV importálása az Ön számára is megfelelő, akkor közvetlenül importálhatja a .csv fájlokat. A lépés a térfogattól függően néhány óráig is igénybe vehet.
 
     ![Az importálás sikeresen befejeződött.](media/ADF-8.png)
 
@@ -366,10 +366,10 @@ Ez a szakasz az egyes adat üzemben található sablonok lépéseit tartalmazza.
 1. Az 1–6. lépés azonosítja azokat a vállalatokat, amelyek számára engedélyezve van a kettős írás és a szűrőzáradékok összeállítása.
 2. A 7-1–7-9. lépés adatokat olvassa be a pénzügyi és az üzemeltetési alkalmazásból, valamint a vevői megbízás alkalmazásból, és a frissítésre való adatbeolvasás fázisát.
 3. A 8–9. lépés **összeveti a fél számla-,** **·** **kapcsolattartó- és szállítórekordjait a pénzügyi és műveleti alkalmazás, valamint a vevői megállapodás alkalmazás között.** A program minden olyan rekordot kihagy, amely nem tartalmaz félszámot.
-4. A 10. lépés két .csv létrehoz a vevői együttműködés alkalmazásában, valamint a Pénzügy és műveletek alkalmazásban létrehozható félrekordok számára.
+4. A 10. lépés két .csv fájlt hoz létre a vevői együttműködés alkalmazásában, valamint a Pénzügy és műveletek alkalmazásban létrehozva a felek rekordjaihoz.
 
     - **FOCDSParty.csv** – ez a fájl mindkét rendszer összes félrekordját tartalmazza, függetlenül attól, hogy a vállalatnál engedélyezve van-e a kettős írás.
-    - **FONewParty.csv** – ez a fájl tartalmazza a Dataverse fél rekordjainak egy olyan részkészletét, amely tud róla (**például potenciális vevő típusú számlák**).
+    - **FONewParty.csv** – ez a fájl tartalmazza a Dataverse fél rekordjainak egy olyan részkészletét, **amely tud róla (például a potenciális vevő típusú számlák**).
 
 5. A 11. lépés létrehozza a feleket a vevői megállapodás alkalmazásában.
 6. A 12. lépés beolvassa a felek globális egyedi azonosítóit (GUID- azonosítókat) **a** vevői kapcsolat alkalmazásból, és a következő lépésekben beolvassa őket, hogy társítható legyen a számla-, **·** **kapcsolattartó**- és szállítórekordhoz.
@@ -385,9 +385,9 @@ Ez a szakasz az egyes adat üzemben található sablonok lépéseit tartalmazza.
 1. Az 1–1–10. lépés beolvassa az adatokat a pénzügyi és az üzemeltetési alkalmazásból, valamint a vevői megbízás alkalmazásból, és beolvassa az adatokat frissítésre.
 2. A 2. lépés a postai cím normalizálása a pénzügyi és műveleti alkalmazásban úgy, hogy csatlakozik a postai címhez és a fél postai címéhez.
 3. 3. lépés, amely az ismétlődő adatok másolását és a vevői kapcsolatfelvételi alkalmazásból származó számla-, kapcsolattartó- és szállítói címadatokat egyesít.
-4. A 4. lépés .csv pénzügyi és műveleti alkalmazás számára létrehoz egy új címadatokat, amelyek a számla-, kapcsolattartó- és szállítói címeken alapulnak.
-5. Az 5-1. lépés létrehoz .csv a vevői együttműködés alkalmazáshoz, hogy minden címadatot létrehozzon, mind a pénzügyi, mind a műveleti alkalmazáson, valamint a vevői tevékenység alkalmazáson alapul.
-6. Az 5-2. lépés a .csv pénzügyi fájlokat és műveletek importálási formátumát alakítja át a manuális importáláshoz.
+4. A 4. lépéssel .csv fájlokat hozhat létre a Pénzügy és műveletek alkalmazás számára, hogy új címadatokat hozzon létre, amelyek a számla-, kapcsolattartó- és szállítói címeken alapulnak.
+5. Az 5-1. lépés .csv fájlokat hoz létre a vevői együttműködés alkalmazáshoz, hogy minden címadatot létrehozzon, mind a pénzügyi, mind a műveleti alkalmazás, mind a vevői tevékenység alkalmazás alapján.
+6. Az 5-2. lépés a .csv fájlokat a pénzügyi és a műveletek importálási formátumára alakítja át a manuális importáláshoz.
 
     - ImportFONewPostalAddressLocation.csv
     - ImportFONewPartyPostalAddress.csv
@@ -404,20 +404,20 @@ Ez a szakasz az egyes adat üzemben található sablonok lépéseit tartalmazza.
 1. Az 1–1–5. lépés beolvassa az adatokat a pénzügyi és az üzemeltetési alkalmazásból, valamint a vevői megbízás alkalmazásból, és beolvassa az adatokat frissítésre.
 2. 2. lépés: a vevői kapcsolati alkalmazás elektronikus címeit fiók-, kapcsolattartó- és szállítói entitások alapján vonja össze.
 3. A 3. lépés egyesíti az elsődleges e-mail címadatokat a vevői együttműködés alkalmazásból, valamint a Pénzügy és műveletek alkalmazásból.
-4. A 4. lépés létrehozza .csv fájlokat.
+4. A 4. lépés a .csv fájlokat hozza létre.
 
     - Új elektronikus címadatok létrehozása a pénzügyek és műveletek alkalmazás számára a számla, a kapcsolattartó és a szállítói címek alapján.
     - Új elektronikus címadatok létrehozása a vevői kapcsolati alkalmazás számára a pénzügyi és műveleti alkalmazásban megadott e-mail, számla, kapcsolattartó és szállítói címek alapján.
 
 5. Az 5-1. lépés elektronikus címeket importál a vevői együttműködés alkalmazásába.
-6. Az 5-2. lépés .csv az ügyfél-kapcsolati alkalmazásban található partnerek és kapcsolattartók elsődleges címének frissítéséhez.
+6. Az 5-2. lépés a .csv fájlokat hozza létre, amelyek az ügyfél-kapcsolati alkalmazásban lévő vevők és kapcsolattartók elsődleges címének frissítéséhez szükségesek.
 7. 6-1–6-2. lépés: importálja a számlákat, és lépjen kapcsolatba az elsődleges címekkel a vevői együttműködés alkalmazásában.
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 
 1. Ha a folyamat sikertelen, futtassa újra az adatgyárt. Kezdés a sikertelen tevékenységtől.
 2. Az adat üzemben előállított egyes fájlok adatellenőrzésre használhatók.
-3. Az adat gyára a fájlok .csv fut. Ezért ha egy mezőértékben vessző szerepel, akkor az is lehet, hogy az eredményhez vezet. Minden vesszőt el kell távolítania a mezőértékekből.
+3. Az adat gyára .csv fájlokon alapul. Ezért ha egy mezőértékben vessző szerepel, akkor az is lehet, hogy az eredményhez vezet. Minden vesszőt el kell távolítania a mezőértékekből.
 4. A **Figyelés** lap a feldolgozott lépésekről és adatokról nyújt tájékoztatást. A hibakereséshez válasszon egy lépést.
 
     ![Figyelés lap.](media/data-factory-monitor.png)

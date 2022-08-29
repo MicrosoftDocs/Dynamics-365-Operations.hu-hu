@@ -1,28 +1,26 @@
 ---
 title: ER-formátum módosítása egyéni elektronikus dokumentum generálásához
 description: Ez a cikk bemutatja, hogy hogyan lehet módosítani a Microsoft által biztosított elektronikus jelentésformátumokat, hogy az egyedi elektronikus dokumentumokat generáljon.
-author: NickSelin
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 8b0bcdbd011c4c04e2693a3dcb8033c3cbe2adc7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886791"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283558"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER-formátum módosítása egyéni elektronikus dokumentum generálásához
 
@@ -271,7 +269,7 @@ Ebben az esetben a Litware, Inc. képviselőjeként létre kell hozni (származt
 
 6. Válassza a **Konfiguráció létrehozása** lehetőséget.
 
-A **BACS (UK egyéni)** ER-formátum konfigurációjának 1.1.1-es verziója jön létre. Ez a verzió **Piszkozat** [állapottal](general-electronic-reporting.md#component-versioning) rendelkezik, és szerkeszthető. Az egyéni ER-formátum jelenlegi tartalma megegyezik a Microsoft által biztosított formátum tartalmával.
+A **BACS (UK egyéni)** ER-formátum konfigurációjának 1.1.1-es verziója jön létre. Ez a verzió Vázlat **állapotú**, és szerkeszthető. Az egyéni ER-formátum jelenlegi tartalma megegyezik a Microsoft által biztosított formátum tartalmával.
 
 ![Konfigurációk oldal a BACS (UK egyéni) ER-formátum konfigurációjának 1.1.1-es verziójával.](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -324,7 +322,7 @@ Az egyéni formátumot úgy kell konfigurálni, hogy megfeleljen a bankspecifiku
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Egyéni formátum megjelölése futtathatóként
 
-Miután létrehozta az egyéni formátum első verzióját, és az a **Piszkozat** állapottal rendelkezik, tesztelés céljából futtathatja azt. A jelentés futtatásához a szállítói kifizetést az egyéni ER-formátumra hivatkozó fizetési mód használatával kell feldolgoznia. Alapértelmezésben, amikor egy ER-formátumot hív meg az alkalmazásból, csak a **Befejeződött** vagy **Megosztott** állapotú verziókat [veszi figyelembe](general-electronic-reporting.md#component-versioning) a rendszer. Ez a viselkedés segít megakadályozni a befejezetlen konstrukciókkal rendelkező ER-formátumok használatát. A teszt futtatásakor azonban kényszerítheti az alkalmazást egy **Piszkozat** állapottal rendelkező ER-formátumverzió használatára. Ily módon módosíthatja az aktuális formátum verziószámát, ha bármilyen módosítás szükséges. További információ: [Alkalmazhatóság](electronic-reporting-destinations.md#applicability).
+Miután létrehozta az egyéni formátum első verzióját, és az a **Piszkozat** állapottal rendelkezik, tesztelés céljából futtathatja azt. A jelentés futtatásához a szállítói kifizetést az egyéni ER-formátumra hivatkozó fizetési mód használatával kell feldolgoznia. Alapértelmezés szerint az alkalmazásból származó ER-formátum hívása esetén csak a Kész és **a** **Megosztott állapotú verziók** számítanak. Ez a viselkedés segít megakadályozni a befejezetlen konstrukciókkal rendelkező ER-formátumok használatát. A teszt futtatásakor azonban kényszerítheti az alkalmazást egy **Piszkozat** állapottal rendelkező ER-formátumverzió használatára. Ily módon módosíthatja az aktuális formátum verziószámát, ha bármilyen módosítás szükséges. További információ: [Alkalmazhatóság](electronic-reporting-destinations.md#applicability).
 
 Ha egy ER-formátum piszkozat verzióját kívánja használni, ennek kifejezett módon be kell jelölnie az ER-formátumot.
 

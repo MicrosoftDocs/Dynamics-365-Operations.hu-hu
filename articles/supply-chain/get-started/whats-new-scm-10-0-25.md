@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
-ms.translationtype: HT
+ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167731"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219094"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.25. (2022. április ) szolgáltatásban
 
@@ -34,9 +34,9 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 | Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
 | Készlet&nbsp;és&nbsp;logisztika | [Veszélyes anyagok fejlesztései](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Hamarosan | Funkciókezelés:<br>*Veszélyes anyagok fejlesztései* |
-| Készlet&nbsp;és&nbsp;logisztika | [Csomagolási munka a csomagolási állomásokhoz](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Hamarosan | Funkciókezelés:<br>*Csomagolási munka a csomagolási állomásokhoz* |
+| Készlet&nbsp;és&nbsp;logisztika | [Csomagolási munka a csomagolási állomásokhoz](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | [Csomagolási munka kimenő tárolók csomagolásához és szállítmányok feldolgozásához](../warehousing/packing-work.md) | Funkciókezelés:<br>*Csomagolási munka a csomagolási állomásokhoz* |
 | Készlet&nbsp;és&nbsp;logisztika | [Vonalkódok beolvasása a raktárban a GS1 formátumszabványok alapján](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-vonalkódok és QR-kódok](../warehousing/gs1-barcodes.md) | Funkciókezelés:<br>*GS1-vonalkódok beolvasása* |
-| Gyártás | [Anyagfelhasználás és -foglalások a termelési emelet végrehajtási felületén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*Anyagfelhasználás regisztrálása a termelési emelet végrehajtási felületén (nem WMS)*<br><br>Illetve:<br><br>Funkciókezelés:<br>*(Előnézet) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (WMS-kompatibilis)* |
+| Gyártás | [Anyagfelhasználás és -foglalások a termelési emelet végrehajtási felületén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS)*<br><br>Illetve:<br><br>Funkciókezelés:<br>*(Előnézet) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (WMS-kompatibilis)* |
 | Tervezés | [Tervezési optimalizálás központosított naptár karbantartása](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Naptárak és alaptervezés](../master-planning/supply-chain-calendars-master-planning.md) | Alapértelmezés szerint engedélyezve |
 | Tervezés | [Tervezési optimalizálási javaslatok a meglévő készlet optimalizálása érdekében](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Műveletkérő üzenetek](../master-planning/action-messages.md) | Alapértelmezés szerint engedélyezve |
 | Tervezés | Tervezett rendelések egyszerűsítve | [Tervezett rendelések egyszerűsítve](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funkciókezelés:<br>*Tervezett rendelések egyszerűsítve* |

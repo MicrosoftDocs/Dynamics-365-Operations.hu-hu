@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895699"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306054"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibility telepítése és beállítása
 
@@ -43,7 +43,7 @@ Ha bármilyen kérdése van ezekkel az előfeltételekkel kapcsolatban, kérjük
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>A Készlet láthatósága bővítmény telepítése
 
-A bővítmény telepítése előtt regisztráljon egy alkalmazást, és adjon hozzá egy ügyféltitkot a Azure Active Directory (Azure AD) címre az Azure-előfizetése alatt. Útmutatásért lásd: [Alkalmazás regisztrálása](/azure/active-directory/develop/quickstart-register-app) és [Ügyféltitok hozzáadása](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Mindenképpen jegyezze fel az **Alkalmazás (ügyfél) azonosító**, az **Ügyféltitok** és a **Bérlő azonosító** értékeit, mert később szüksége lesz rájuk.
+A bővítmény telepítése előtt regisztráljon egy alkalmazást, és adjon hozzá egy ügyféltitkot a Azure Active Directory (Azure AD) címre az Azure-előfizetése alatt. Útmutatásért lásd: [Alkalmazás regisztrálása](/azure/active-directory/develop/quickstart-register-app) és [Ügyféltitok hozzáadása](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Mindenképpen jegyezze fel az **alkalmazás (ügyfél) azonosítóját**, **·** **az** ügyfél titkos azonosítóját és a bérlőazonosító értékét, mivel ezekre később szüksége lesz.
 
 > [!IMPORTANT]
 > Ha több LCS-környezete van, mindegyikhez Azure AD hozzon létre egy másik alkalmazást. Ha ugyanazt az alkalmazásazonosítót és bérlőazonosítót használja a készlet láthatósági bővítményének különböző környezetekben való telepítéséhez, jogkivonat-probléma fog előfordulni a régebbi környezetekben. Emiatt csak az utolsó telepítés lesz érvényes.
@@ -88,20 +88,6 @@ Miután regisztrált egy alkalmazást, és hozzáad egy ügyféltitkot a Azure A
 >
 > 1. A telepítés befejeződése után menjen vissza az LCS lapra, és próbálja **újratelepíteni a Készlet láthatósága** bővítményt.
 
-## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>A Készletláthatóság kiegészítő eltávolítása
-
-A Készletláthatóság kiegészítő eltávolításához válassza az LCS oldalon az **Eltávolítás** lehetőséget. Az eltávolítási folyamat megszünteti a Készletláthatóság bővítményt, törli a bővítmény LCS-ből történő regisztrációját, és törli a Készletláthatóság bővítmény adatcache-ében tárolt ideiglenes adatokat. A Dataverse előfizetésben tárolt elsődleges készletadatok azonban nem törlődnek.
-
-A Dataverse előfizetésen tárolt készletadatok eltávolításához nyissa meg a [Power Apps](https://make.powerapps.com), válassza a navigációs sávon a **Környezet** lehetőséget, és válassza ki az LCS-környezetéhez kapcsolt Dataverse környezetet. Ezután lépjen a **Megoldások** menüpontba, és törölje a következő öt megoldást ebben a sorrendben:
-
-1. Horgonymegoldás a Dynamics 365 megoldásokban a készletláthatósági alkalmazáshoz
-1. Dynamics 365 FNO SCM Készletláthatósági alkalmazások megoldása
-1. Készletszolgáltatás konfigurációja
-1. Készletláthatóság önállóan
-1. Dynamics 365 FNO SCM készletláthatóság alapmegoldás
-
-Miután törölte ezeket a megoldásokat, a táblázatokban tárolt adatok is törlődnek.
-
 ## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Készletláthatóság beállítása a Supply Chain Management szolgáltatásban
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>A Készlet láthatósága integrációs csomag központi telepítése
@@ -122,7 +108,7 @@ Győződjön meg arról, hogy az alábbi funkciók be vannak kapcsolva a Supply 
 
 ### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Készletláthatósági integráció beállítása
 
-Ha telepítette a bővítményt, a következő lépések alkalmazásával készítse elő a Supply Chain Management rendszert a bővítménnyel való munkára.
+Ha már telepítette a bővítményt, a következő lépések alkalmazásával készítse elő az ellátásilánc-kezelő rendszert a bővítményen való munkára.
 
 1. A Supply Chain Management alkalmazásban nyissa meg a **[Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** munkaterületet, és kapcsolja be a következő funkciókat:
     - *Készletláthatósági integráció* – Szükséges.
@@ -135,10 +121,45 @@ Ha telepítette a bővítményt, a következő lépések alkalmazásával kész�
 
 1. Ha engedélyezte a *Készletláthatósági integráció foglaláseltolása* funkciót, nyissa meg a **Foglaláseltolás** lapot, és végezze el a következő beállításokat:
     - **Foglalási eltolás engedélyezése** – A funkció engedélyezéséhez állítsa *Igen* értékre.
-    - **Foglaláseltolás módosítója** – Válassza ki azt a készlettranzakció-állapotot, amely a készlet láthatósága alapján eltolja a foglalásokat. Ez a beállítás határozza meg azt a rendelésfeldolgozási szakaszt, amely az eltolásokat kiváltja. A szakasz nyomon követhető a megrendelés készlettranzakciós státusza alapján. A következők közül választhat:
+    - **Foglaláseltolás módosítója** – Válassza ki azt a készlettranzakció-állapotot, amely a készlet láthatósága alapján eltolja a foglalásokat. Ez a beállítás határozza meg azt a rendelésfeldolgozási szakaszt, amely az eltolásokat kiváltja. A szakasz nyomon követhető a megrendelés készlettranzakciós státusza alapján. Válasszon a következő lehetőségek közül:
         - *Megrendeléskor* - A *Tranzakciókor* státusz esetén a megrendelés létrehozásakor a megrendelés elküldi az ellentételezési kérelmet. Az eltolásmennyiség a létrehozott rendelés mennyisége lesz.
         - *Tartalékolás* - A *Megrendelt tartalékolás tranzakciós* státusz esetén a rendelés akkor küld beszámítási kérelmet, amikor lefoglalják, felveszik, feladják a csomagolólapot vagy kiszámlázzák. A kérés csak egyszer, az első lépésben aktiválódik, amikor az említett folyamat bekövetkezik. Az eltolás mennyisége az a mennyiség, amelynél a készlettranzakció állapota a *Megrendelt* állapotról *Lefoglalt rendeltre* (vagy későbbi állapotra) változott a megfelelő rendelési sorban.
 
 1. Lépjen a **Készletkezelés \> Időszakos \> Készlet láthatósági integrációja** elemre, és engedélyezze a feladatot. A rendszer a Supply Chain Management minden készletváltozási eseményét feladja a Készlet láthatósága számára.
+
+## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>A Készletláthatóság kiegészítő eltávolítása
+
+A készlet láthatósági bővítményének eltávolításához hajtsa végre a következő lépéseket:
+
+1. Jelentkezzen be a Supply Chain Management alkalmazásba.
+1. Menjen a Készletkezelés **időszakos \> készlet \> láthatósági integrációjához**, és tiltsa le a feladatot.
+1. Menjen az LCS-be, és nyissa meg azt a lapot, amelyben el szeretné távolítani a bővítményt ([lásd még a Készlet láthatósági bővítményének telepítése](#install-add-in)).
+1. Válassza az Eltávolítás **lehetőséget**.
+1. Az eltávolítási folyamat ezzel megszünteti a Készlet láthatósága bővítményt, megszünteti a bővítmény bejegyzését az LCS-ben, és törli a készlet láthatósági bővítményében tárolt ideiglenes adatokat. Az előfizetéssel Dataverse szinkronizált elsődleges készletadatokat azonban továbbra is ott tárolja a rendszer. Ha törölni szeretné ezeket az adatokat, akkor ehhez az eljáráshoz hátralévő részeket is végre kell végrehajtania.
+1. Nyissa meg az [Power Apps](https://make.powerapps.com) programot.
+1. A **környezet kiválasztása** a navigációs sávon
+1. Válassza ki Dataverse az LCS-környezettel kapcsolatot teremtő környezetet.
+1. Menjen a **Megoldások** alkalmazásba, és a következő sorrendben törölje a következő megoldásokat:
+    1. Horgonymegoldás az Inventory Visibility alkalmazáshoz a Dynamics 365 megoldásokban.
+    1. Dynamics 365 FNO SCM Készletláthatósági alkalmazások megoldása
+    1. Készletszolgáltatás konfigurációja
+    1. Készletláthatóság önállóan
+    1. Dynamics 365 FNO SCM készletláthatóság alapmegoldás
+
+    Miután törölte ezeket a megoldásokat, a táblázatokban tárolt adatok is törlődnek.
+
+> [!NOTE]
+> Ha az Ellátásilánc-kezelés adatbázist visszaállítja a készlet láthatósági bővítményének eltávolítása után, majd újra szeretné telepíteni a bővítményt, a bővítmény újratelepítése előtt győződjön meg arról, Dataverse hogy törölte az előfizetésben tárolt régi készlet láthatósági adatait (az előző eljárásnak megfelelően). Ezzel megakadályozható, hogy az adatok inkonzisztenciája során problémák merülhetnek fel.
+
+## <a name="clean-inventory-visibility-data-from-dataverse-before-restoring-the-supply-chain-management-database"></a><a name="restore-environment-database"></a> A készlet láthatósági adatainak tisztítása Dataverse az Ellátásilánc-kezelés adatbázis visszaállítása előtt
+
+Ha a készlet láthatóságát használja, majd visszaállítja az Ellátásilánc-kezelés adatbázist, előfordulhat, hogy a visszaállított adatbázis olyan adatokat tartalmaz, amelyek már nem egyeztethetők a Készlet láthatósága által korábban szinkronizált adatokkal Dataverse. Az adatok inkonzisztenciája rendszerhibákat és más problémákat okozhat. Emiatt fontos, hogy mindig tisztítsa a készlet láthatósági Dataverse adatait még az ellátásilánc-kezelési adatbázis visszaállítása előtt.
+
+Ha vissza kell állítania egy Ellátásilánc-kezelés adatbázist, a következő eljárást kell használnia:
+
+1. A Készlet láthatósága bővítmény eltávolítása, Dataverse [valamint az összes kapcsolódó adat eltávolítása a Készlet láthatósága bővítményben leírtak szerint](#uninstall-add-in)
+1. Állítsa vissza az ellátásilánc-kezelő adatbázist, [például az adatbázis időponthoz való visszaállításával (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md)[leírtak szerint, vagy a termelési adatbázis időponthoz való visszaállításával egy üzenetdoboz-környezetben](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md).
+1. Ha továbbra is használni szeretné, [...](#install-add-in)[telepítse újra, majd állítsa be a Készlet láthatósági bővítményét a Készlet láthatósági bővítményének telepítése és a Készlet láthatósági integrációjának beállítása](#setup-inventory-visibility-integration)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

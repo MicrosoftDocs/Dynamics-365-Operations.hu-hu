@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ddc22bdd223eff513ff571501c599712ac78a7da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854297"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219907"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Az ütemezési motor teljesítményének javítása
 
@@ -294,7 +294,9 @@ A párhuzamos műveletek alternatívájaként a párok „virtuális” erőforr
 
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>Egynél magasabb erőforrás-mennyiséggel rendelkező útvonal
 
-Ha egy művelethez szükséges erőforrások mennyisége egynél magasabbra van beállítva, akkor az ténylegesen ugyanaz lesz, mint elsődleges/másodlagos műveletek használata esetén, mert a motorhoz több párhuzamos feladatot küldenek. Ebben az esetben azonban a program nem használ specifikus erőforrás-hozzárendeléseket, mert az egynél nagyobb mennyiség a művelethez egynél több erőforrás alkalmazhatóságát igényli.
+Ha egy művelethez szükséges erőforrások mennyisége nagyobb, mint egy, akkor az eredmény ténylegesen ugyanaz, mint az elsődleges/másodlagos műveletek használata, mivel több párhuzamos feladat lesz elküldve a motornak. Ennél az esetben azonban nem lehet adott erőforrás-hozzárendeléseket alkalmazni, mert egynél nagyobb mennyiséghez több erőforrás szükséges a művelethez.
+
+Olyan másodlagos művelet, amelynél az erőforrás terhelési mennyisége egynél nagyobb, azt jelenti, hogy az elsődleges művelet minden egyes erőforrása számára szükség van a megadott másodlagos erőforrásmennyiségre. Ha például egy elsődleges művelet erőforrásmennyisége kettőre van állítva, és a másodlagos művelet erőforrásmennyisége háromra van állítva, akkor összesen hat erőforrás szükséges a másodlagos művelethez.
 
 ### <a name="excessive-use-of-finite-capacity"></a>Véges kapacitás túlzott használata
 

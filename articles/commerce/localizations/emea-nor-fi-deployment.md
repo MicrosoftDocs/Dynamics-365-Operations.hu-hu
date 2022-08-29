@@ -2,34 +2,32 @@
 title: Norvégiai pénztárgépekkel kapcsolatos telepítési irányelvek
 description: Ez a cikk útmutatást ad arról, hogyan lehet engedélyezni a pénztárgép funkciót Norvégia Microsoft Dynamics 365 Commerce honosításában.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/23/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 1f2226432237662e28b9e26017020ab81bb6026b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.author: josaw
+ms.search.validFrom: 2019-03-01
+ms.openlocfilehash: 9149e9da7222699e9ca996b69e56fff07b77a737
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899067"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9345991"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Norvégiai pénztárgépekkel kapcsolatos telepítési irányelvek
 
 [!include[banner](../includes/banner.md)]
 
-Ez a cikk útmutatást ad arról, hogyan lehet engedélyezni a pénztárgép funkciót Norvégia Microsoft Dynamics 365 Commerce honosításában. A honosítás az összetevők több kiterjesztésből áll. Ezek a bővítmények olyan műveletek végrehajtásához használhatók, mint például a nyugták egyéni mezőinek nyomtatása, további könyvvizsgálati események, értékesítési tranzakciók és fizetési tranzakciók regisztrálása a pénztárnál (POS), az értékesítési tranzakciók digitális aláírása és a jelentések helyi formátumban történő kinyomtatása. A Norvégiához való honosítással kapcsolatos további tudnivalókat [lásd a Pénztárgép szolgáltatás Norvégiához](./emea-nor-cash-registers.md). A Commerce for Norway konfigurálásról a Commerce for Norway [beállításában található további tájékoztatás](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
+> [!IMPORTANT]
+> Az ebben a cikkben Microsoft Dynamics 365 Commerce leírt lépéseket csak a 10.0.29-es vagy újabb verziók használata esetén hajtsa végre. A Commerce 10.0.28-as vagy korábbi verziójában a Retail szoftverfejlesztői csomag (SDK) korábbi verzióját kell használnia a Lifecycle Services (LCS) Microsoft Dynamics fejlesztői virtuális gépére (VM). A további tudnivalókat [lásd a Norvégiához (legacy) pénztárgépekkel kapcsolatos telepítési irányelvekben](./emea-nor-loc-deployment-guidelines.md). Ha a Commerce 10.0.28-as vagy korábbi verzióját használja, és a 10.0.29-es vagy újabb verziójú Commerce programba áll át, [akkor a Norvégiához használt, korábbi Commerce rendszerből való áttelepítéshez szükséges lépéseket kell követnie](./emea-nor-fi-migration.md).
 
-> [!WARNING]
-> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a honosítási funkcióhoz. A Retail szoftverfejlesztői csomag (SDK) korábbi verziójában a Lifecycle Services (LCS) egy fejlesztői virtuális gépére (VM) Microsoft Dynamics vonatkozó digitális aláírási mintaverziót kell használnia Norvégiához. A további tudnivalókat [lásd a Norvégiához (legacy) pénztárgépekkel kapcsolatos telepítési irányelvekben](./emea-nor-loc-deployment-guidelines.md).
->
-> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
+Ez a cikk útmutatást ad arról, hogyan lehet engedélyezni a pénztárgép funkciót a Norvégia Commerce honosításában. A honosítás több összetevőkiterjesztésből áll, amelyek lehetővéják a nyugták egyéni mezőinek nyomtatását, a további könyvvizsgálati események, az értékesítési tranzakciók és a pénztári kifizetési tranzakciók regisztrálását, az értékesítési tranzakciók digitális aláírását és a jelentések helyi formátumban történő nyomtatását. A Norvégiához való honosítással kapcsolatos további tudnivalókat [lásd a Pénztárgép szolgáltatás Norvégiához](./emea-nor-cash-registers.md). A Commerce for Norway konfigurálásról a Commerce for Norway [beállításában található további tájékoztatás](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 ## <a name="set-up-fiscal-registration-for-norway"></a>Pénzügyi regisztráció beállítása Norvégia esetében
 
-A Norvégiához tartozó pénzügyi regisztrációs minta a pénzügyi [integrációs](fiscal-integration-for-retail-channel.md) funkciókon alapul, és része a Retail SDK csomagnak. A minta a **Solutions-tárház src\\ FiscalIntegration\\ SequentialSignatureNorway**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway) mintája). A minta [egy pénzügyi](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) dokumentumszolgáltatóból és egy pénzügyi csatlakoztatóból áll, amelyek a Commerce runtime (commerce runtime) kiterjesztései CRT. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
+A Norvégiához tartozó pénzügyi regisztrációs minta a [pénzügyi](fiscal-integration-for-retail-channel.md) integrációs funkciókon alapul, és része a Commerce SDK szoftverfejlesztő készletnek. A minta a Solutions-tárház **src\\ FiscalIntegration\\ SequentialSignatureNorway**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található. A [minta](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) egy pénzügyi dokumentumszolgáltatóból és egy pénzügyi csatlakoztatóból áll, amelyek a Commerce runtime (commerce runtime) kiterjesztései CRT. A Commerce SDK használatával kapcsolatos további tudnivalókat lásd A Commerce SDK [mintáinak és hivatkozási csomagjainak letöltése a BuildHub NuGet](../dev-itpro/retail-sdk/sdk-github.md)[szoftverfejlesztő készletből, valamint a független csomagolású SDK felépítési csővezetékének beállítása](../dev-itpro/build-pipeline.md).
 
 A Pénzügyi regisztrálás beállításának [lépéseit a Commerce-csatornák pénzügyi integrációjának beállítása lépésekkel lehet végrehajtani](./setting-up-fiscal-integration-for-retail-channel.md):
 
@@ -45,10 +43,10 @@ A következő lépések szerint engedélyezheti a Pénzügyi nyilvántartási fo
 1. A pénzügyi dokumentumszolgáltató és a pénzügyi csatlakoztató konfigurációs fájljainak letöltése a Commerce SDK készletből:
 
     1. Nyissa meg [Dynamics 365 Commerce a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Az utolsó elérhető kiadási ág megnyitása (például kiadás **[/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34)**).
+    1. Az utolsó elérhető kiadási ág megnyitása.
     1. A **src \> FiscalIntegration \> SequentialSignatureNorway \> CommerceRuntime megnyitása**
-    1. **Töltse le a pénzügyi bizonylat szolgáltatójának konfigurációs fájlját a DocumentProvider.SequentialSignNorway \> Configuration \> DocumentProviderSequentialSignatureNorwaySample.xml** fájlban ([például a release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/DocumentProvider.SequentialSignNorway/Configuration/DocumentProviderSequentialSignatureNorwaySample.xml) fájlban).
-    1. A pénzügyi csatlakoztató konfigurációs fájljának letöltése a Connector.SequentialSignNorway **Configuration \> ConnectorSequentialSignatureNorwaySample.xml \> fájlból (** például a kiadás fájlja/9.34 [).](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/Connector.SequentialSignNorway/Configuration/ConnectorSequentialSignatureNorwaySample.xml)
+    1. A pénzügyi bizonylat szolgáltatójának konfigurációs fájljának letöltése a **DocumentProvider.SequentialSignNorway \> Configuration \> DocumentProviderSequentialSignatureNorwaySample.xml fájlból**.
+    1. A pénzügyi csatlakoztató konfigurációs fájljának letöltése a **Connector.SequentialSignNorway \> Configuration ConnectorSequentialSignatureNorwaySample.xml \> fájlból**.
 
 1. Ugrás a **Retail and Commerce \> Headquarters telepítőparaméterek \>\> megosztott paramétereihez** Az Általános **lapon** állítsa **a** Pénzügyi integráció engedélyezése lehetőséget Igen **beállításra**.
 1. Menjen a **Retail és Commerce \> csatorna beállítása \> Pénzügyi integráció \> pénzügyi csatlakoztatóihoz**, és töltse be a korábban letöltött pénzügyi csatlakoztató konfigurációs fájlját.
@@ -99,11 +97,11 @@ Ezután konfigurálnia kell egy csatlakoztatót a kulcstárolóban vagy a helyi 
 
 ### <a name="configure-channel-components"></a>Csatornaösszetevők konfigurálása
 
-### <a name="development-environment"></a>Fejlesztői környezet
+#### <a name="development-environment"></a>Fejlesztői környezet
 
 A következő lépések szerint állíthatja be a fejlesztői környezetet, hogy tesztelni és ki tudja terjeszteni a mintát.
 
-1. Le kell tölteni vagy le kell [Dynamics 365 Commerce tölteni a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions). Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd [a Retail SDK-minta- és hivatkozáscsomagok letöltése aHub és NuGet](../dev-itpro/retail-sdk/sdk-github.md) a.
+1. Le kell tölteni vagy le kell [Dynamics 365 Commerce tölteni a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions). Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd [a Commerce SDK-minta- és hivatkozáscsomagok letöltése aHub és NuGet](../dev-itpro/retail-sdk/sdk-github.md) a.
 1. Nyissa meg **a SequentialSignatureNorway.sln megoldást** **a Dynamics365Commerce.Solutions\\ FiscalIntegration\\ SequentialSignatureNorway alatt, és építse fel**.
 1. A következő CRT bővítmények telepítése:
 
@@ -126,7 +124,7 @@ A következő lépések szerint állíthatja be a fejlesztői környezetet, hogy
             ModernPOS.SequentialSignNorway.Installer.exe install --verbosity 0
             ```
 
-### <a name="production-environment"></a>Működési környezet
+#### <a name="production-environment"></a>Működési környezet
 
 Hajtsa végre [a pénzügyi integrációs minta felépítési folyamatának beállításához szükséges lépéseket a](fiscal-integration-sample-build-pipeline.md) felhőskálaegység és az önkiszolgáló rendszer telepíthető csomagjainak előállításához és kiadásához a pénzügyi integrációs mintához. A **SequentialSignatureNorway build-pipeline.stbml** sablonfájl a megoldástárház **\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions) tasmappában található YAML_Files csővezetékben.
 

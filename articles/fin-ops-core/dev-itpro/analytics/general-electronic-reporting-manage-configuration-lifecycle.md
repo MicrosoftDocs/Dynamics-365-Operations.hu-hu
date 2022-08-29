@@ -1,32 +1,32 @@
 ---
 title: Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése
 description: Ez a cikk azt ismerteti, hogyan lehet kezelni a Dynamics 365 Pénzügy elektronikus jelentéskészítési (ER) konfigurációinak életciklusát.
-author: NickSelin
+author: kfend
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58801
-ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
-ms.translationtype: HT
+ms.custom: 58801
+ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
+ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: 0209679c9882d87edab68d043fba9e7b3400a2a2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109082"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337263"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk azt ismerteti, hogyan lehet kezelni a Dynamics 365 Pénzügy elektronikus jelentéskészítési (ER) konfigurációinak életciklusát.
+Ez a cikk azt ismerteti, hogyan [lehet](general-electronic-reporting.md) kezelni a Dynamics 365 Pénzügy elektronikus jelentéskészítési (ER) [konfigurációinak](general-electronic-reporting.md#Configuration) életciklusát.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -84,7 +84,7 @@ A fejlesztői környezetben megtervezett ER-konfigurációk [feltölthetők](#da
 
 ## <a name="data-persistence-consideration"></a>Adatperzisztencia figyelembe vétele
 
-Az ER [konfiguráció](general-electronic-reporting.md#Configuration) különböző [verzióit](general-electronic-reporting.md#component-versioning) külön-külön is [importálhatja](tasks/er-import-configuration-lifecycle-services.md) a Finance példányba. Az ER-konfiguráció új verziójának importálása esetén a rendszer szabályozza ennek a konfigurációnak a vázlatverzióját:
+Az ER-konfiguráció [különböző](tasks/er-import-configuration-lifecycle-services.md) verzióit egyenként importálhatja a [Pénzügyi](general-electronic-reporting.md#Configuration) példányba. Az ER-konfiguráció új verziójának importálása esetén a rendszer szabályozza ennek a konfigurációnak a vázlatverzióját:
 
 - Ha az importált verzió alacsonyabb, mint a jelenlegi Finance példány konfigurációjának legmagasabb verziója, akkor a konfiguráció vázlatverziójának tartalma változatlan marad.
 - Ha az importált verzió magasabb, mint a jelenlegi Finance példány konfigurációjának bármely más verziója, akkor a program átmásolja az importált verzió tartalmát ennek a konfigurációnak a vázlatverzióba, hogy folytatható legyen a legutóbbi befejeződött verzió szerkesztése.
@@ -105,6 +105,41 @@ Bizonyos esetekben megkövetelheti, hogy a rendszer figyelmen kívül hagyja a k
 
     > [!NOTE]
     > Ez a paraméter a felhasználó- és a vállalatspecifikus.
+
+## <a name="dependencies-on-other-components"></a>Más összetevőktől való függőségek
+
+Az ER-konfigurációk más [konfigurációktól](er-download-configurations-global-repo.md#import-filtered-configurations) függenek. [Például](er-download-configurations-global-repo.md) importálhat egy ER-adatmodell-konfigurációt [...](er-overview-components.md#data-model-component)[a globális tárházból a Microsoft Regulatory Configuration Services (RCS)](../../../finance/localizations/rcs-overview.md) vagy a Dynamics 365 Pénzügy példányba, majd létrehozhat egy új ER-formátumkonfigurációt [...](er-overview-components.md#format-component)[...](er-quick-start2-customize-report.md#DeriveProvidedFormat), amely az importált ER adatmodell-konfigurációból származik. A származtatott ER-formátum konfigurációja az alap ER adatmodell-konfigurációtól függ.
+
+![Származtatott ER formátumkonfiguráció a Konfigurációk lapon.](./media/ger-configuration-lifecycle-img1.png)
+
+Amikor befejezte a formátum megtervezését, az ER-formátumkonfiguráció **kezdeti** verziójának állapotát Vázlat állapotról Készre **változtathatja**. Ezt követően a globális tárházban való közzétételével megoszthatja az ER-formátumkonfiguráció [kész](../../../finance/localizations/rcs-global-repo-upload.md) verzióját. Ezután bármely RCS vagy Pénzügyi felhőpéldányból hozzáfér a globális tárházhoz. Ezt követően importálhatja az alkalmazásra vonatkozó ER-konfigurációs verziót a globális tárházból ebbe az alkalmazásba.
+
+![Közzétett ER-formátumkonfiguráció a konfigurációs tárház oldalon.](./media/ger-configuration-lifecycle-img2.png)
+
+A konfigurációfüggőség alapján, amikor a globális tárházban az ER-formátum konfigurációját választja az újonnan telepített RCS vagy Pénzügy példányba történő importáláshoz, az alap ER adatmodell konfigurációja automatikusan megjelenik a globális tárházban, és a kiválasztott ER-formátumkonfigurációval együtt importálja azt.
+
+Exportálhatja az ER-formátum konfigurációverzióját az aktuális RCS- vagy pénzügyi példányból is, és helyileg XML-fájlként tárolhatja.
+
+![ER formátumkonfigurációs verzió exportálása XML-formátumban a Konfigurációs lapon](./media/ger-configuration-lifecycle-img3.png)
+
+**A Pénzügy rendszer 10.0.29 verzió előtti verzióiban amikor az ADOTT XML-fájlból vagy a globális tárháztól különböző tárházból próbálja meg importálni az ER-formátumkonfigurációs** verziót egy újonnan telepített RCS vagy Pénzügyi példányba, amely még nem tartalmaz ER-konfigurációt, a következő kivétel fog megnyílni, és arról tájékoztat, hogy az alapkonfigurációt nem lehet behozni:
+
+> Feloldatlan hivatkozás maradt<br>
+Nem lehet hivatkozni a\<imported configuration name\>"" objektumra az "Alap" (\<globally unique identifier of the missed base configuration\>,\<version of the missed base configuration\>) objektumra.
+
+![Az ER-formátum konfigurációs verziójának importálása a Konfigurációs tárház oldalon.](./media/ger-configuration-lifecycle-img4.gif)
+
+**A 10.0.29-es** és újabb verzióban, amikor ugyanezt a konfigurációs importálást próbálja meg használni, ha nem található alapkonfiguráció az aktuális alkalmazáspéldányban vagy a jelenleg használt forrástárházban (ha van), az ER keretrendszer automatikusan megpróbálja megtalálni a hiányzó alapkonfiguráció nevét a globális tárház-gyorsítótárban. Ezt követően a hiányzó alapkonfiguráció nevét és globálisan egyedi azonosítóját (GUID) a létrehozott kivétel szövegében mutatja.
+
+> Feloldatlan hivatkozás maradt<br>
+Nem lehet hivatkozni a\<imported configuration name\> "Base"\<name of the missed base configuration\>\<globally unique identifier of the missed base configuration\> objektumra (,\<version of the missed base configuration\>)
+
+![Kivétel van a Konfigurációs tárház oldalon, ha nem található az alapkonfiguráció.](./media/ger-configuration-lifecycle-img5.png)
+
+A megadott névvel megkeresheti az alapkonfigurációt, majd manuálisan importálhatja.
+
+> [!NOTE]
+> Ez az új lehetőség csak akkor működik, ha [legalább](er-download-configurations-global-repo.md#open-configurations-repository)[egy](er-extended-format-lookup.md) felhasználó már bejelentkezett a globális tárházba a Konfigurációs tárház lap vagy az aktuális Pénzügyi példány globális tárház-keresési mezőinek valamelyikének használatával, és ha a globális tárház tartalmát gyorsítótárazták.
 
 ## <a name="additional-resources"></a>További erőforrások
 

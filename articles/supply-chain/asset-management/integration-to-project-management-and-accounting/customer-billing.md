@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d6ad25ec49a329c16b0290278fb614293a507eae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c0d067ec4f2110b1c146ef0229b90e309578eaa7
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887689"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335075"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Vevő által birtokolt eszközök karbantartási számlája
 
@@ -40,7 +40,7 @@ Ezenkívül a funkció a következő funkciókat biztosítja:
 
 ## <a name="turn-on-the-customer-billing-feature"></a>Kapcsolja be az ügyfél fizetési elemzés funkciót
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+A funkció használata előtt be kell kapcsolva lennie a rendszeren. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Projektvezetés és könyvelés*
 - **Funkció neve:** *Munkarendelés számlázása*
@@ -49,7 +49,7 @@ A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A ren
 
 A funkció működését a következő példaesetben lehet megismerni.
 
-Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Az **USMF** jogi személyt ki kell választani a kezdés előtt.
+Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Az **USMF** jogi személyt ki kell választani a kezdés előtt.
 
 A forgatókönyvet a gyártási rendszerben végzett munka során a funkció használatához útmutatásként is használhatja. Ebben az esetben azonban a saját értékeit kell helyettesítenie, és előfordulhat, hogy bizonyos típusú kötelező rekordok hiányoznak, amelyeket a szabvány demóadatok biztosítanak.
 

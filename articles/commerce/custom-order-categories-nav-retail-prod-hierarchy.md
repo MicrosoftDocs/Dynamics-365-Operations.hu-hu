@@ -2,7 +2,7 @@
 title: Árusítási entitások rendezési sorrendjének módosítása
 description: Ez a témakör bemutatja a különböző árusítási entitások megjelenítési sorrendjének szabályozásával kapcsolatos fogalmakat a következő helyeken:Dynamics 365 Commerce
 author: josaw1
-ms.date: 08/05/2019
+ms.date: 08/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,27 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 80586597f4f60476b341e4cf1cfd90f3681e15c0
+ms.sourcegitcommit: 52e31b1ef2b3ed8675de931d06090cd57e057fc2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847654"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9265836"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Árusítási entitások rendezési sorrendjének módosítása
 
 
 [!Include [banner](includes/banner.md)]
 
-A kiskereskedők a termékfelderítésre elsődleges eszközként tekintenek az ügyfélinterakciókhoz összes kereskedelmi csatornán. A különböző funkciók segítségével a vevők könnyedén felfedezhetik a termékeket. Tallózhatók például a kategóriák között, a kereshetnek és a szűrhetnek.
+A kiskereskedők a termékfelderítésre elsődleges eszközként tekintenek az ügyfélinterakciókhoz összes kereskedelmi csatornán. Számos olyan funkció van, amely a vevők számára könnyen felhasználhatja a termékeket. Például a vevők kategóriákban, keresésben és szűrésben is kereshetnek.
 
 Ez a témakör bemutatja a különböző árusítási entitások megjelenítési sorrendjének szabályozásával kapcsolatos fogalmakat. Bemutatja a rendezési sorrend módosításának módját is.
 
 ## <a name="overview"></a>Áttekintés
 
-A különböző árusításhoz entitások rendezése tovább lett fejlesztve. Ez a támogatás most jobban igazodik a meglévő vevői esetekhez, amelyekhez korábban bővítmények voltak szükségesek az implementálási partnerektől.
+A Commerceben a különféle árusítási egymáshoz kapcsolódó entitások rendezése igazodik a meglévő vevői esetekhez, és a megvalósítási partnerek már nem igénylik a bővítmények használatát.
 
-A Retail 10.0.5 verziójánál korábbi verziókban a navigációs hierarchiában a kategóriák rendezési sorrendje ábécé sorrendben volt. Az új egyéni rendezési funkció lehetővé teszi a az árukezelők számára, hogy az összes végfelhasználói ügyfél számára konfigurálják a különböző árusítási entitások rendezési sorrendjét. Ezek az ügyfelek többek között a központok (HQ) és a hívásközpontok.
+A Commerce rendszer 10.0.5-ös és korábbi verzióiban a kategóriák rendezési sorrendje betűrendes volt. A jelenlegi egyéni rendezési sorrend funkció lehetővé teszi az árusítási vezetők számára, hogy az összes végfelhasználó ügyfélen konfigurálják a különféle árusításokkal kapcsolatos entitások rendezési sorrendjét. Ezek az ügyfelek többek között a központok (HQ) és a hívásközpontok.
 
 ## <a name="configure-the-display-order-for-categories-in-the-product-hierarchy"></a>A termékek hierarchiájában megjelenítési sorrend konfigurálása a kategóriákhoz
 
@@ -63,11 +63,11 @@ Ennek a műveletnek az elvégzése előtt a demóadatokat telepítenie kell a k�
 2. A listából válassza ki a **Divatnavigáció** hierarchiát.
 3. Kattintson a **Kategóriahierarchiák szerkesztése** pontra.
 4. Kattintson a **Szerkesztés** lehetőségre.
-5. A fában válassza ki a **Divat \> Női ruházat \> Női cipők** lehetőséget.
+5. A fában válassza **a Divatáru \> - és nőruházati \> női ruházatot**.
 6. Adjon meg egy számot az **Megjelenítés sorrendje** mezőben.
 7. A fában válassza ki a **Divat \> Női ruházat \> Felsők** lehetőséget.
 
-    Hasonlóképpen meghatározható az alkategóriák rendezési sorrendje is.
+Hasonlóképpen meghatározhatja az alkategóriák rendezési sorrendjét is.
 
 8. A fában válassza ki a **Divat \> Férfiruházat \> Casual ingek** lehetőséget.
 9. Adjon meg egy számot az **Megjelenítés sorrendje** mezőben.
@@ -84,7 +84,7 @@ A csatorna navigációs hierarchiájának megjelenítési sorrendje a központ, 
 ![Pénztár egyéni módon rendezett kategóriákkal.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Alapértelmezés szerint az egyéni rendezési sorrend funkció ki van kapcsolva. Ennek a funkciónak és egyéb funkcióknak a bekapcsolásával kapcsolatosan lásd: [Funkciókezelés](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
-
+> Alapértelmezés szerint az **Árusítási entitások megjelenítési sorrendjének engedélyezése** funkció ki van kapcsolva. A [Funkciókezelés segítségével](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) bekapcsolhatja a funkciót. Miután lefutott a funkcióról, futtassa a **Globális konfiguráció -1110** CDX-feladatot az elosztási ütemezésből.
+> Ha a POS-ban nem frissülnek a kategóriák sorrendje, aktiválja újra az eszközt. A kategóriaadatokat az eszköz aktiválása esetén a rendszer bekéri, így lehet, hogy az eszköznek át kell kérnie a kategóriaadatokat a frissített megjelenítési rendelésekkel. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

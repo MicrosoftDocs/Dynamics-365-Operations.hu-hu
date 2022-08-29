@@ -2,19 +2,19 @@
 title: Pénztárgép funkciói Norvégia esetén
 description: Ez a cikk áttekintést nyújt Microsoft Dynamics 365 Commerce a Norvégiában használható pénztárgép-funkciókról, és a funkciók beállításával kapcsolatos irányelveket tartalmaz.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/23/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: 778a947f03866518219e9c0fa44660d66f19f53a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30bd5ad8c1513c3d56cc4aa0a77b70fe38d31e0a
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906699"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9346018"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Pénztárgép funkciói Norvégia esetén
 
@@ -116,6 +116,13 @@ A Norvégia-specifikus funkciók használatához a következő feladatokat kell 
 - Állítsa AZ **ISO-kód** mezőt **NO** (Norvégia) értékre minden Norvégiában található üzlet POS-funkcióprofiljában.
 
 A következő beállításokat kell megadni Norvégia esetében is.
+
+### <a name="enable-features-for-norway"></a>Norvégiai szolgáltatások engedélyezése
+
+A Commerce Headquarters szolgáltatáskezelési munkaterületén **engedélyeznie** kell a következő funkciókat:
+
+- (Norvégia) További könyvvizsgálati események engedélyezése a pénztárban
+- (Norvégia) További információk engedélyezése a pénztár nap végi kimutatásaiban
 
 ### <a name="set-up-the-legal-entity"></a>A jogi személy beállítása
 

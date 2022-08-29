@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a8deb71713619b4be6c875223ab3b1f08499dfb2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867927"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335135"
 ---
 # <a name="product-dimensions"></a>Termékdimenziók
 
@@ -108,7 +108,7 @@ A verzió dimenzióval való kompatibilitáshoz szükséges megoldások tesztel�
 
 #### <a name="turn-on-the-version-dimension"></a>A verzió dimenzió bekapcsolása
 
-A verzió dimenziót a használat előtt be kell kapcsolnia a rendszerben. A feladathoz rendszergazdai engedélyek szükségesek.
+A verziódimenziót csak akkor használhatja, ha be van kapcsolva a rendszeren. A feladathoz rendszergazdai engedélyek szükségesek.
 
 1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre.
 1. Kapcsolja be a *Termékdimenzió – verzió* szolgáltatást. (További információ: [Funkciókezelés – áttekintés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)

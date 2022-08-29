@@ -1,25 +1,25 @@
 ---
 title: Online számlázási rendszer
 description: Ez a témakör ismerteti, hogyan lehet beállítani az Elektronikus jelentéskészítés (ER) konfigurációit, és hogyan lehet beállítani és használni az RTIR elektronikus üzenetkezelés (EM) funkcióit.
-author: anasyash
+author: AdamTrukawka
 ms.date: 09/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 264684
 ms.search.region: Hungary
-ms.author: epopov
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 1aa1560af29b9eef4b8dc6bfa0d7f56786f18dab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 264684
+ms.search.form: AssetParameters
+ms.openlocfilehash: 463853682b4b61012ba47f597f8bc250f4f5ae39
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897996"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337370"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 

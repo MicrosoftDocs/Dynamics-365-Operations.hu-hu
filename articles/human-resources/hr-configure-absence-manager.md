@@ -14,17 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b752b722bf63958fc35b10a4612f7f02e2e8e717
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886102"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337323"
 ---
 # <a name="configure-the-absence-manager-role"></a>A Távollétkezelő szerepkör konfigurálása
 
->[!Important]
->Az ebben a cikkben említett funkciók jelenleg önálló vevők számára érhetők el Dynamics 365 Human Resources. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,7 +35,6 @@ Egyes szervezeteknél a vezetők nem kezelik a saját csapatuk szabadságait. Eh
 ## <a name="turn-on-the-feature"></a>A funkció bekapcsolása
 
 1. A **Rendszerfelügyelet** munkaterületen válassza a **Funkciókezelés** lehetőséget.
-
 2. A **Funkciókezelés lapon** engedélyezze az **A távollétkezelő kezeli a szabadásgokat** funkciót.
 
 ## <a name="define-a-custom-hierarchy"></a>Egyéni hierarchia definiálása
@@ -45,37 +42,26 @@ Egyes szervezeteknél a vezetők nem kezelik a saját csapatuk szabadságait. Eh
 A távollétkezelő funkciók egyéni hierarchiát használnak, és ezt konfigurálni kell.
 
 1. A **Szervezet adminisztrációja** munkaterületen válassza ki a **Beosztáshierarchia-típusok** lehetőséget.
-
 2. Hozzon létre egy **Szabadság** nevű beosztáshierarchia-típust.
-
 3. A **Szabadság és távollét** munkaterületen a **Hivatkozások** alatt válassza a **Szabadság és távollét paraméterei** lehetőséget.
-
 4. Az **Általános** lap **Távolléti hierarchia** legördülő listájában válassza ki a korábban létrehozott **Szabadság** hierarchiatípust. Ezt a Szabadság hierarchiatársítást minden olyan jogi személynél ki kell tölteni, amelynél használni fogja a távollétkezelői funkciókat.
 
 A hierarchiatípus meghatározása után a beosztáshierarchia-jelentést hozzá kell rendelni a beosztáshoz.
 
 1. A **Szervezet adminisztrációja** munkaterületen válassza ki az **Összes beosztás** lehetőséget.
-
 2. Válassza ki a beosztást, amelyhez a Szabadság hierarchiát hozzá szeretné adni.
-
 3. A **Kapcsolatok** lapon válassza a **Hozzáadás** lehetőséget.
-
 4. A **Hierarchia neve** mezőben válassza ki az **Szabadság** lehetőséget.
-
 5. A **Felettes beosztás** mezőben válasszon ki egy beosztást. A beosztás kiválasztása után a rendszer automatikusan kitölti a dolgozó nevét.
 
 ## <a name="assign-the-absence-manager-role-to-a-user"></a>A Távollétkezelő szerepkör hozzárendelése egy felhasználóhoz
 
 A távollétkezelő szerepkört alkalmazottakhoz kell rendelni, hogy jóváhagyhassák vagy elutasíthassák a távolléti kérelmeket.
 
-1. Válassza a **Hivatkozások** lehetőséget a **Rendszergazda** munkaterületen.
-
+1. A Rendszerfelügyelet **munkaterületen** válassza a Hivatkozások **lehetőséget**.
 2. A **Felhasználók** szakaszban válassza ki a **Felhasználók** hivatkozást.
-
 3. A felhasználók listájában válassza ki azt a felhasználót, akihez a Távollétkezelő szerepkört hozzárendeli.
-
 4. A **Felhasználó szerepköre** lapon válassza a **Szerepkörök hozzárendelése** elemet.
-
 5. A listában válassza ki a **Távollétkezelő** szerepkört. Majd kattintson az **OK** lehetőségre.
 
     > [!IMPORTANT]
@@ -84,7 +70,6 @@ A távollétkezelő szerepkört alkalmazottakhoz kell rendelni, hogy jóváhagyh
 6. Miután létrehozta a Szabadsághierarchiát, a következő lépésekkel lehet megtekinteni azt:
 
     1. A **Szervezet adminisztrációja** munkaterületen válassza ki a **Beosztáshierarchia** lehetőséget.
-    
     2. A **Hierarchia típusa** mezőben válassza ki a **Szabadság** lehetőséget.
 
 ## <a name="absence-manager-workspace"></a>Távollétkezelő munkaterülete
@@ -115,9 +100,7 @@ A távollétkezelők jóváhagyhatják vagy elutasíthatják az alkalmazottak sz
 > A szabadságkérelem munkafolyamatának létrehozásával további tudnivalókért lásd: [Szabadságkérelmezési munkafolyamat létrehozása](hr-leave-and-absence-workflow.md).
 
 1. Az **Alkalmazotti önkiszolgáló** munkaterületen válassza a **Szabadságkezelés** lapot.
-
 2. A **Szabadságkérelmek** lapon jelölje ki azokat a szabadságkérelmeket, amelyekkel kapcsolatban intézkedni kíván. Ebben a listanézetben több rekordot is kijelölhet.
-
 3. A rács tetején található műveletgombok segítségével jóváhagyhatja, elutasíthatja vagy delegálhatja a szabadságkérelmet. 
 
 Másik lehetőségként a felhasználó a bal oldali **Szabadságkérelmek** csempével is navigálhat az összes szabadságkérelem munkaelem listájához. 
@@ -130,9 +113,7 @@ A Távollétkezelő szerepkörű felhasználók a naptárban megtekinthetik az s
 > A távollétkezelő naptár nézetbeállításait a rendszergazdának kell beállítania. A **Szabadság és távollét paraméterei** lap **Naptár** lapján lehetőség van a születésnapok, a részletek nélküli távollétek, a szabadásgok és a függőben lévő távolléti kérelmek elrejtésére és megjelenítésére. Lehetőség van a naptárnézet dolgozótípus szerint való szűrésére is.
 
 1. Az **Alkalmazotti önkiszolgáló** munkaterületen válassza a **Szabadságkezelés**, majd a **Távollétkezelő naptár** menüpontot.
-
 2. Adja meg a kívánt dátumokat a **Dátum** mezőben.
-
 3. Szükség szerint frissítse a nézetbeállításokat.
 
 A távollétkezelő naptára mutatja az összes olyan alkalmazott rekordját, aki a Távolléti hierarchiában a távollétkezelő alá tartoznak.

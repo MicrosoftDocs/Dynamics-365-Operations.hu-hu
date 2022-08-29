@@ -1,26 +1,26 @@
 ---
 title: Elektronikus dokumentumok létrehozása létrehozása és alkalmazásadatok frissítése ER használatával.
 description: Lehetőség van elektronikus jelentési (ER) formátumok tervezésére, amelyek kimenő elektronikus dokumentumok létrehozására használhatók az alkalmazásban.
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer, IT Pro, Application user
 ms.reviewer: kfend
-ms.custom: 27621
-ms.assetid: 018a11ae-854c-4f36-9358-8c39baca882d
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5f78f3b36a1aebfb263d64ccf2293097eb9af6e6de1ab49de39b18e1c318950
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom: 27621
+ms.assetid: 018a11ae-854c-4f36-9358-8c39baca882d
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: 1be618d16be2ce9e50c2a43864040dfd23a8ff69
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765808"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269661"
 ---
 # <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Elektronikus dokumentumok generálása és alkalmazásadatok frissítése ER használatával
 

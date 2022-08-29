@@ -2,7 +2,7 @@
 title: Rugalmas raktárszintű dimenzió foglalási irányelv
 description: Ez a cikk leírja a készletfoglalási házirendet, amely lehetővé teszi, hogy a kötegben nyomon követéses termékeket értékesítő vállalkozások a WMS-t engedélyező műveletként futtatják a logisztikájukat, konkrét kötegeket foglaljanak le a vevői értékesítési rendelésekhez, még akkor is, ha a termékekhez rendelt foglalási hierarchia nem teszi lehetővé meghatározott kötegek lefoglalását.
 author: perlynne
-ms.date: 07/31/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d515fb46dcc2d135412d140b98f0578cae89c409
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 64855460ddf015f936fe695fc68938067f31b0cc
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065898"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335705"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenzió foglalási irányelv
 
@@ -196,12 +196,12 @@ Ebben a forgatókönyvben a vállalat raktárkezelést és munkafeldolgozást al
 - Az azonosítótábla rögzíthető és lefoglalható, amikor a rendelést az értékesítési feldolgozó átveszi, és más igények során nem alkalmazható. Ez a viselkedés segít annak biztosításában, hogy a tervezett azonosítótáblát szállítsák az ügyfélnek.
 - Ha az azonosítótábla még nincs hozzárendelve értékesítési rendeléssorhoz, akkor a raktári személyzet a kitárolási munka során, az értékesítési rendelés regisztrálása és a foglalás befejeződése után kiválaszthatja az azonosítótáblát.
 
-### <a name="turn-on-flexible-license-plate-reservation"></a>Kapcsolja be a rugalmas azonosítótábla-foglalást
+### <a name="turn-flexible-license-plate-reservation-on-or-off"></a>Rugalmas táblafoglalás be- és kikapcsolása
 
-A rugalmas azonosítótábla-foglalás használata előtt két funkciót be kall kapcsolni a rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat ezen funkciók állapotának ellenőrzéséhez, és szükség esetén a bekapcsolásához. A funkciókat a következő sorrendben kell bekapcsolni:
+A rugalmas táblafoglalás használata előtt két funkciót kell bekapcsolni a rendszeren. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat ezen funkciók állapotának ellenőrzéséhez, és szükség esetén a bekapcsolásához. A funkciókat a következő sorrendben kell bekapcsolni:
 
-1. **Funkció neve:** *Rugalmas raktárszintű dimenziófoglalás*
-1. **Funkció neve:** *Rugalmas rendeléshez véglegesített azonosítótábla-foglalás*
+1. *Rugalmas raktárszintű dimenziófoglalás*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni.)
+1. *Rugalmas, rendelésben vállalt azonosítótábla-foglalás*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció kötelező, és nem lehet kikapcsolni.)
 
 ### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Specifikus azonosítótábla foglalása az értékesítési rendelésen
 

@@ -2,19 +2,19 @@
 title: Fél és globális címjegyzék
 description: Ez a témakör a kettős írású fél és globális címjegyzék funkcióját írja le.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f06b6e69b76bf12092fdceca5b45a6750b52233
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892193"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228990"
 ---
 # <a name="party-and-global-address-book"></a>Fél és globális címjegyzék
 
@@ -119,11 +119,11 @@ A rács a következő oszlopokat tartalmazza:
 
 A rács fölötti **Új cím** gombbal annyi postai címet hozhat létre, amennyit csak szeretne.
 
-A **Cím 1** és **Cím 2** mezők az **Összegzés** lapon a **Partner** lapon megfelelnek a **Szállítási** és **Számlázási** címeknek.
+A vevői tevékenység alkalmazásokban, amikor egy felhasználó beírja a címeket **a** **Számlák** lap Összegzés lapján, **az 1** **. cím és a 2** **·** **·**. cím mező meg fog egyezni a Szállítási és a Számla címével. Amikor azonban a felhasználó postai címet hoz létre a pénzügyi és műveleti alkalmazásokban, **a vevőrekord első két címe megjelenik a Cím1** **és a Cím2** mezőben, **·** **és** a felhasználónak lehetősége van a cím céljának Szállítás és Számla beállításra történő változtatására.
 
 ![A postai címek összegző lapja.](media/party-gab-image5.png)
 
-A **Cím 1**, **Cím 2** és **Cím 3** mezők az **Összegzés** lapon a **Kapcsolattartó** lapon megfelelnek a **Céges**, **Szállítási** és **Számlázási** címeknek.
+Hasonlóképpen a **kapcsolattartó lap Összesítő lapján található 1**., **2** **. cím és 3** **·** **·** **·**. cím mező is megfelel a vállalat, **·** **a** szállítás és a számla címének.
 
 ## <a name="electronic-addresses"></a>Elektronikus címek
 

@@ -14,17 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59fe5ece00500f7dafab282c00d572575706f790
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894585"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323958"
 ---
 # <a name="configure-leave-and-absence-types"></a>Szabadság- és távolléttípusok konfigurálása
-
-> [!Important]
-> Az ebben a cikkben említett funkciók jelenleg önálló vevők számára érhetők el Dynamics 365 Human Resources. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,31 +38,21 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 
 ## <a name="add-a-leave-type"></a>Szabadságtípus hozzáadása
 
-1. A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot.
-
+1. A Szabadság **és távollét munkaterületen** válassza a Hivatkozások **lapot**.
 2. A **Beállítás** területen válassza a **Szabadság- és távolléttípusok** lehetőséget.
-
 3. Válassza az **Új** lehetőséget.
-
 4. Írjon be a szabadságtípus nevét a **Típus** mezőbe, válasszon egy munkafolyamatot a **Munkafolyamat-azonosító** listáról, és adja meg a leírást a **Leírás** mezőben.
-
 5. Az **Általános** lapon válassza ki a **Nincs**, az **Ütemezett** vagy a **Nem ütemezett** elemet a **Kategória** legördülő listáról.
-
 6. Válasszon bevételkódot a **Bevételkód** legördülő listáról.
-
 7. **Az okkódot meg kell adni** beállításnál válassza ki, hogy szeretné-e előírni az okkód megadását. Ha elő szeretné írni az okkódok használatát, akkor fel kell vennie ilyen kódokat. Az **Okkódok** területen válassza a **Hozzáadás** elemet, válasszon egy okkódot, és jelölje be a mellette található **Engedélyezve** jelölőnégyzetet.
-
 8. A **Hozzáférés korlátozása a kijelölt szerepkörökre** beállításnál válassza ki, hogy szeretné-e korlátozni a hozzáférést. Ezután a **Szabadságtípus biztonsági szerepkörei** beállításnál válassza ki a biztonsági szerepköröket. A biztonsági szerepkörök a jelen eljárás korábbi pontján, a **Munkafolyamat-azonosító** beállításnál kiválasztott munkafolyamatban határozhatók meg.
-
 9. A **Naptár színe** elemben válassza ki, hogy milyen színnel szeretné megjeleníteni ezeket a szabadságtípusokat a szabadság- és a távolléti naptárakban. 
-
 10. A **Felfüggesztési kapcsolatok** alatt válassza ki, hogy szeretné, hogy ez a szabadságtípus felfüggesztene egy másik szabadságtípust, vagy ezt a szabadságtípust függesztené fel egy másik. Ha egy szabadságkérelem kerül elküldésre a felfüggesztő szabadságtípusra, akkor egy szabadságfelfüggesztés automatikusan létrehozásra kerül a felfüggesztett szabadságléttípusra. 
-
-10. Válassza a **Mentés** lehetőséget.
+11. Válassza a **Mentés** lehetőséget.
 
 ## <a name="configure-leave-type-rules"></a>A szabadságtípus-szabályok konfigurálása
 
-1. Adja meg a szabadságtípus kerekítési beállításait. Választási lehetőségek: **Nincs**, **Fel**, **Le** és **Legközelebbi**. A szabadságtípus kerekítési pontosságát is megadhatja.
+1. Az Szabadság és távollét típus kerekítési **beállításainak** megadása. Választási lehetőségek: **Nincs**, **Fel**, **Le** és **Legközelebbi**. A szabadságtípus kerekítési pontosságát is megadhatja.
 
 2. Adja meg a szabadságtípus **Munkaszünet-korrekció** beállítását. Ha bejelöli ezt a lehetőséget, akkor a munkanapra eső napok száma alapján lesz meghatározva, hogyan kell elszámolni a szabadságtípus távolléti idejét. Ha például karácsony napja hétfőre esik, akkor a Human Resources szolgáltatás levon egy napot a szabadságtípusból a könyvelés feldolgozásakor.
 

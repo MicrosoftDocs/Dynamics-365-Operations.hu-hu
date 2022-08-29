@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2f1902ba76db59b61b0437eb3cd68ee94018b7c5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844467"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219937"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Készletjelölés tervezési optimalizálással
 
@@ -43,9 +43,15 @@ Az igénykövetés a megfelelő jelöléssel, az aktuális készletfoglalásokka
 
 Ha egy tervezett rendelést erősít meg, akkor a **Megerősítés** párbeszédpanelen szerepel egy **Jelölés frissítése** mező, amellyel beállíthatók a megerősítés során létrehozott rendelésekre vonatkozó jelölési beállítások. Válasszon a következő értékek közül:
 
-- **Nem** – Nem alkalmaztak készletjelölést.
-- **Standard** – a készletjelölés frissítése az igénykövetés alapján történik. Egy szükségleti rendelést (igény) és egy teljesítési rendelést (kínálat) állít jelöléssel párba a program. Ha a teljesítési rendelésen bizonyos mennyiség megmarad, a rendszer nem jelöli meg, és a hivatkozási adatok üresen maradnak. Ha például egy 100 ea-ra vonatkozó értékesítési rendelést igénykövetéssel egy 150 ea-s beszerzési rendeléssel állítják szembe, akkor a hivatkozási adatokat a rendszer csak az értékesítési rendeléshez rendeli hozzá.
-- **Bővített** – mind a szükségleti rendelést (szükséglet), mind a teljesítési rendelést (ellátás) megjelöli a program, függetlenül attól, hogy marad-e mennyiség a teljesítési rendelésen. Ha például egy 100 ea-ra vonatkozó értékesítési rendelést igénykövetéssel egy 150 ea-s beszerzési rendeléssel állítják szembe, akkor a hivatkozási adatokat a rendszer mint az értékesítési rendeléshez, mind a beszerzési rendeléshez hozzárendeli.
+- *Nem* – Nem alkalmaztak készletjelölést.
+- *Standard* – a készletjelölés frissítése az igénykövetés alapján történik. Egy szükségleti rendelést (igény) és egy teljesítési rendelést (kínálat) állít jelöléssel párba a program. Ha a teljesítési rendelésen bizonyos mennyiség megmarad, a rendszer nem jelöli meg, és a hivatkozási adatok üresen maradnak. Ha például egy 100 ea-ra vonatkozó értékesítési rendelést igénykövetéssel egy 150 ea-s beszerzési rendeléssel állítják szembe, akkor a hivatkozási adatokat a rendszer csak az értékesítési rendeléshez rendeli hozzá.
+- *Bővített* – mind a szükségleti rendelést (szükséglet), mind a teljesítési rendelést (ellátás) megjelöli a program, függetlenül attól, hogy marad-e mennyiség a teljesítési rendelésen. Ha például egy 100 ea-ra vonatkozó értékesítési rendelést igénykövetéssel egy 150 ea-s beszerzési rendeléssel állítják szembe, akkor a hivatkozási adatokat a rendszer mint az értékesítési rendeléshez, mind a beszerzési rendeléshez hozzárendeli.
+- *Egyszintű szabvány* – egyszintű jelölést használ. Az egyszintű jelölés csak a fő cikket jelöli, az anyagjegyzék összetevőit nem. Ezért a megingás után rugalmasan lehet tartani a termelési rendelések összetevő-hozzárendelését. Az egyszintű jelölés segítségével optimalizálhatja a rendszer az utolsó percek igényváltozását. Az *egyszintű* normál jelölésnél a követelményrendelések a teljesítménnyel vannak megjelölve, de a teljesítménnyel kapcsolatos rendelések nem jelölve meg, ha maradt mennyiségük.
+- *Egyszintű kiterjesztett* – egyszintű jelölést használ. A *kiterjesztett* egyszintű jelölésnél a követelményrendelések a teljesítménnyel, a teljesítménnyel kapcsolatos rendeléseket pedig mindig megjelölik, függetlenül attól, hogy marad-e mennyiség.
 
+A rendszer alapértelmezett jelölési beállításának **\>\> beállításához használja az Alaptervezés beállítása alaptervezési paramétereit.** Ezután a Szokásos **frissítés** lapon állítsa **a** Jelölés frissítése mezőt a preferált beállításra.
+
+> [!NOTE]
+> Az *egyszintű szabványos* és *az* *egyszintű kiterjesztett lehetőségek csak akkor érhetők el, ha engedélyezve van a* rendelésre való ellátásautomatizálási funkció a rendszerben. A funkcióval és engedélyezésével kapcsolatos további tudnivalókat lásd a [Rendelésre hozás ellátási automatizálásban](../make-to-order-supply-automation.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

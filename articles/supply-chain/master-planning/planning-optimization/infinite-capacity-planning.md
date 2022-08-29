@@ -2,7 +2,7 @@
 title: Ütemezés végtelen kapacitással
 description: Ez a cikk a tervezési optimalizálás korlátlan kapacitásütemezésével kapcsolatban tartalmaz tájékoztatást. Az aktuális funkciókorlátozásokat is leírja.
 author: t-benebo
-ms.date: 09/21/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3646a7ca1f9a3a87a2f130783dc4961a61335f1d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c6e0190899abb544b559bb5f26ba974155989c3a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873869"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335315"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Ütemezés végtelen kapacitással
 
@@ -24,12 +24,9 @@ ms.locfileid: "8873869"
 
 A *Tervezés optimalizálása végtelen kapacitásütemezéssel* szolgáltatás bemutatja az útvonal-információkon alapuló ütemezést. Lehetővé teszi feladatok ütemezését az útvonal-beállítások széles tartománya alapján. A tervezésoptimalizálás ütemezése a gyakran használt útvonal-beállításokat, többek között az útvonalművelet-sorrendet vagy az útvonalművelet-erőforrásokra vonatkozó követelményeket foglalja magában.
 
-## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>A korlátlan kapacitásütemezési funkció bekapcsolása
+## <a name="turn-the-infinite-capacity-scheduling-feature-on-or-off"></a>A korlátlan kapacitásütemezési funkció be- és kikapcsolása
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-
-- **Modul:** *Alaptervezés modul*
-- **Funkció neve:** *Végtelen kapacitásütemezés a tervezési optimalizáláshoz*
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelés munkaterület Korlátlan kapacitásütemezési tervezési optimalizálási szolgáltatását](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) keresi.
 
 Ezzel a funkcióval kapcsolatos további tudnivalókat lásd: [Ütemezés erőforrás-kijelöléssel képesség alapján](capability-based-scheduling.md).
 

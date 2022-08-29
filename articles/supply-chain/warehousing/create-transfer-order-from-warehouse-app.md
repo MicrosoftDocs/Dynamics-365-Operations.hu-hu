@@ -2,7 +2,7 @@
 title: Átmozgatási rendelések létrehozása a raktári alkalmazásból
 description: Ez a témakör azt ismerteti, hogyan lehet áthozni és feldolgozni a Raktárkezelés mobilalkalmazásból áthozott rendeléseket.
 author: perlynne
-ms.date: 09/02/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45cbf7aca431c19e58de75355579304baef3cf7d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877450"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336455"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Átmozgatási rendelések létrehozása a raktári alkalmazásból
 
@@ -26,14 +26,14 @@ ms.locfileid: "8877450"
 
 Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy közvetlenül a Raktárkezelés mobilalkalmazásból hozzanak létre és dolgozzanak fel átmozgatási rendeléseket. A dolgozók azzal kezdik, hogy kiválasztják a célraktárat, majd az alkalmazás segítségével egy vagy több azonosítótáblát beolvasnak, hogy azonosítótáblát adhassanak hozzá az átmozgatási rendeléshez. Ha a raktári dolgozó kiválasztja a **Rendelés teljesítése** elemet, akkor egy kötegelt feladat létrehozza a szükséges átmozgatási rendelést és a rendelési sorokat az adott azonosítótáblákhoz regisztrált aktuális készlet alapján.
 
-## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a> A funkció be- és kikapcsolása
+## <a name="turn-on-this-feature-and-its-prerequisites"></a><a name="enable-create-transfer-order-from-warehouse-app"></a> A funkció és előfeltételei bekapcsolva
 
 A funkció használatba vétele előtt engedélyeznie kell a funkciót és annak előfeltételeit a rendszerben. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) oldalt a funkció állapotának ellenőrzéséhez, és szükség esetén engedélyezéséhez.
 
 1. Engedélyezze a következő két funkciót (sorrendben) [a Funkciókezelés munkaterületen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint mindkét funkció alapértelmezés szerint be van kapcsolva.
-    1. *Raktári alkalmazás eseményeinek feldolgozása*
-    1. *Átmozgatási rendelések létrehozása és feldolgozása a raktári alkalmazásból*
-1. A kimenő szállítmányok feldolgozásának automatizálásához [engedélyeznie](confirm-outbound-shipments-from-batch-jobs.md) kell a Kimenő szállítmányok megerősítése kötegelt feladatokból szolgáltatást is.
+    1. *Raktári alkalmazás eseményeinek feldolgozása*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni.)
+    1. *Átmozgatási rendelések létrehozása és feldolgozása a raktári alkalmazásból*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni.)
+1. A kimenő szállítmányok feldolgozásának automatizálásához [*·*](confirm-outbound-shipments-from-batch-jobs.md) engedélyeznie kell a Kimenő szállítmányok megerősítése kötegelt feladatokból szolgáltatást is. (Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni.)
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Mobileszköz-menüelem beállítása átmozgatási rendelések létrehozásához
 
@@ -307,11 +307,11 @@ Nem, több azonosítótábla már nem adható hozzá olyan átmozgatási rendel�
 
 #### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hogyan lehet megtalálni a Raktárkezelés mobilalkalmazásban az „Átmozgatási rendelés kiválasztása” gombbal használható meglévő átmozgatási rendeléseket, ha a rendelés még nincs létrehozva a háttérrendszerben?
 
-Jelenleg nem lehet átmozgatási rendeléseket keresni az alkalmazásban, de az átmozgatási rendelésszámok a **Raktári alkalmazás eseményei** lapon megtalálhatók. A további tudnivalókat lásd: [Raktári alkalmazás eseményeinek lekérdezése](#inquire-the-warehouse-app-events).
+A dolgozók számára lehetővé lehet tenni, hogy az adatbevallási képességek segítségével megkeressék az átvezetési rendelési számokat a Raktárkezelés [mobilalkalmazásban](warehouse-app-data-inquiry.md). Létre lehet hozni például egy detour mobileszköz menüelemet, amely lekérdezéseket jelenít meg a [webes ügyfél Raktár alkalmazáseseményei](warehouse-app-detours.md) oldalon (**)** a Select order - MobileDeviceQueueMessageCollectionIdentifierId`WHSMobileDeviceQueueMessageCollection` lépés részeként.*·* Az átrendelt rendelés száma megegyezik az Azonosító mezőben **látható értékkel**. Lásd még [a Raktári alkalmazás eseményeinek lekérdezése](#inquire-the-warehouse-app-events).
 
 #### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Kiválaszthatom-e manuálisan a használandó átmozgatási rendelésszámot a Raktárkezelés mobilalkalmazásból?
 
-Csak a számsorozatokon keresztül automatikusan létrehozott átmozgatási rendelésszámokat támogatja a rendszer.
+Csak a számsorozatokon keresztül automatikusan létrehozott átmozgatási rendelésszámokat támogatja a rendszer. Az áthozott rendelés kiválasztása **gomb beállításával kapcsolatos előző kérdésre adott válasz**. Az átátviteli rendelési számok megkeresése a raktári [alkalmazás eseményeinek lekérdezése oldalon található](#inquire-the-warehouse-app-events).
 
 ### <a name="background-processing"></a>Feldolgozás a háttérben
 

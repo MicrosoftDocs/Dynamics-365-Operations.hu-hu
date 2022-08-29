@@ -1,5 +1,5 @@
 ---
-title: Az Emberi erőforrások biztosítása a pénzügyi és az üzemeltetési infrastruktúrában
+title: A Human Resources kiépítése a pénzügyi és az műveleti infrastruktúrában
 description: Ez a cikk bemutatja, hogy hogyan lehet új termelési környezetet létesítni a Microsoft számára a pénzügyi Dynamics 365 Human Resources és műveleti infrastruktúra területén.
 author: twheeloc
 ms.date: 01/07/2022
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15060d8bdd598476081c22d7280319da3db0cb31
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
-ms.translationtype: HT
+ms.openlocfilehash: 2fd8176d16178ecc4ba667e5937f2cec2e0af2c3
+ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178410"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "9221592"
 ---
-# <a name="provision-human-resources-in-the-finance-and-operations-infrastructure"></a>Az Emberi erőforrások biztosítása a pénzügyi és az üzemeltetési infrastruktúrában
+# <a name="provision-human-resources-in-the-finance-and-operations-infrastructure"></a>A Human Resources kiépítése a pénzügyi és az műveleti infrastruktúrában
 
 _**Érvényes:** Emberi erőforrások a pénzügy és az üzemeltetés alkalmazás-infrastruktúra területén_ 
 
@@ -52,8 +52,8 @@ A további választható környezetek esetében a következő szempontokat kell 
 - **Integráció** – az integráció konfigurálása és tesztelése, amely lehet natív integráció vagy egyéni integráció, például a bérszámfejtés, a pályázók nyomon követési rendszereinek, vagy a juttatási rendszereknek és a szolgáltatóknak a integrációja.
 - **Oktatás** – lehet, hogy külön környezetre van szükség, amely a képzési adatok készletével van konfigurálva, hogy az alkalmazottak képzéssel képezve leselkedve használják az új rendszert. 
 - **Többfáziss projekt** – szükség lehet egy további környezetre a konfiguráció, az adatáttelepítés, a tesztelés és más tevékenységek támogatásához egy olyan projektfázisban, amely a projekt kezdeti indulása után van tervezve.
-- **Fejlesztés** – a pénzügyi és műveleti infrastruktúra területén tovább bővítheti a megoldást, és saját testreszabásokat is kialakíthat. Minden fejlesztőnek saját fejlesztői környezetet kell használnia. A további tudnivalókat lásd [a Fejlesztői környezetek telepítése és elérése.](/fin-ops-core/dev-itpro/dev-tools/access-instances)
-- **GOLD** – új telepítés esetén a leggyakoribb gyakorlat egy külön GOLD környezet használata, amely a konfigurációhoz és az adatáttelepítéshez eredeti marad. Ez a környezet a teljes megvalósításban használható más környezetek frissítésére. Ezzel hozza létre az új termelési környezetet, amely az alapkonfigurációt és az adatáttelepítést használja. Nem lehet éles környezetet telepíteni a pénzügyi és műveleti infrastruktúrára, amíg be nem fejeződött az éles készenlét. További tájékoztatás: Felkészülés [az élő élőre](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live).
+- **Fejlesztés** – a pénzügyi és műveleti infrastruktúra területén tovább bővítheti a megoldást, és saját testreszabásokat is kialakíthat. Minden fejlesztőnek saját fejlesztői környezetet kell használnia. A további tudnivalókat lásd [a Fejlesztői környezetek telepítése és elérése.](../fin-ops-core/dev-itpro/dev-tools/access-instances.md)
+- **GOLD** – új telepítés esetén a leggyakoribb gyakorlat egy külön GOLD környezet használata, amely a konfigurációhoz és az adatáttelepítéshez eredeti marad. Ez a környezet a teljes megvalósításban használható más környezetek frissítésére. Ezzel hozza létre az új termelési környezetet, amely az alapkonfigurációt és az adatáttelepítést használja. Nem lehet éles környezetet telepíteni a pénzügyi és műveleti infrastruktúrára, amíg be nem fejeződött az éles készenlét. További tájékoztatás: Felkészülés [az élő élőre](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
 <!--NOTE: Need to come back and verify Tier-1 can be used and if a customer cannot purchase tier 3-5 need specific documentation about this.-->
 
@@ -66,24 +66,24 @@ A további választható környezetek esetében a következő szempontokat kell 
 
 ## <a name="create-an-lcs-project"></a>LCS-projekt létrehozása
 
-Az LCS-nek a Human Resources kezelésére való használatához előbb egy LCS-projektet kell létrehozni. Ha az emberi erőforrások környezetét a pénzügyi és műveleti infrastruktúrába áttelepítése, új LCS-projektet kell létrehoznia a pénzügyi és műveleti alkalmazások számára. További információ az [Emberi erőforrások környezet áttelepítése oldalon található](hr-admin-migrate-overview). Ha már van LCS-projektje más pénzügyi és műveletalkalmazások számára, **engedélyezheti az Emberi erőforrások szolgáltatást a Funkciókezelés munkaterületen**. További tájékoztatás: [Funkciókezelés – áttekintés](/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Az LCS-nek a Human Resources kezelésére való használatához előbb egy LCS-projektet kell létrehozni. Ha az emberi erőforrások környezetét a pénzügyi és műveleti infrastruktúrába áttelepítése, új LCS-projektet kell létrehoznia a pénzügyi és műveleti alkalmazások számára. Ha már van LCS-projektje más pénzügyi és műveletalkalmazások számára, **engedélyezheti az Emberi erőforrások szolgáltatást a Funkciókezelés munkaterületen**. További tájékoztatás: [Funkciókezelés – áttekintés](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Amikor egy új vevő jelentkezik az Emberi erőforrások közé, az előfizetés tartalmaz egy implementáció projekt munkaterületét. Miután a vevő aktiválja a szolgáltatást, a bérlő rendszergazdájának a <https://lcs.dynamics.com> bérlői számlával kell bejelentkeznie. A projekt munkaterülete automatikusan létrejön a szervezet számára. A további tudnivalókat [lásd a Lifecycle Services (LCS) for Finance and Operations alkalmazások vevőinek](/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs).
+Amikor egy új vevő jelentkezik az Emberi erőforrások közé, az előfizetés tartalmaz egy implementáció projekt munkaterületét. Miután a vevő aktiválja a szolgáltatást, a bérlő rendszergazdájának a <https://lcs.dynamics.com> bérlői számlával kell bejelentkeznie. A projekt munkaterülete automatikusan létrejön a szervezet számára. A további tudnivalókat [lásd a Lifecycle Services (LCS) for Finance and Operations alkalmazások vevőinek](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 > [!NOTE]
 > A **sikeres** **·** Power Apps létesítés érdekében az Emberi erőforrások környezet építéséhez használt fiókot hozzá kell rendelni vagy a Rendszergazda szerepkörhöz, vagy a rendszer szabó szerepköréhez az emberi erőforrások környezethez társított környezetben. A biztonsági szerepkörök felhasználókhoz Microsoft Power Platform [való hozzárendelésének a beállításával kapcsolatos további tudnivalókat lásd: Felhasználóbiztonság konfigurálása az erőforrásokhoz](/power-platform/admin/database-security).
 
-A környezetek telepítése előtt el kell kezdenie az LCS-projekt üzembe helyezését. A további tudnivalókat lásd [a Projekt hajóra való felhozatásnál](/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding). Az LCS használatával kapcsolatos további tudnivalókat lásd [a Lifecycle Services (LCS) felhasználói útmutatóban](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide).
+A környezetek telepítése előtt el kell kezdenie az LCS-projekt üzembe helyezését. A további tudnivalókat lásd [a Projekt hajóra való felhozatásnál](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md). Az LCS használatával kapcsolatos további tudnivalókat lásd [a Lifecycle Services (LCS) felhasználói útmutatóban](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## <a name="deploy-human-resources-environments"></a>Az Emberi erőforrások környezetek telepítése
 
 A felhőben a pénzügyi és műveletalkalmazások, többek között az Emberi erőforrások telepítése megköveteli, hogy megértsük a környezetet és az előfizetést, amelyre telepít, ki hajthat végre feladatokat, és milyen adatokat és testreszabásokat kell kezelnie. Új környezetek telepítésekor ajánlott egy szolgáltatásfiókot használni elnevezett felhasználó helyett. A környezetek pénzügyi és műveleti infrastruktúrára [való telepítésével kapcsolatos további tudnivalókat lásd a Felhőtelepítési áttekintésben](/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview).
 
-Ahhoz, hogy az Emberi erőforrások termelési környezetét a pénzügyi és a műveleti infrastruktúrára telepítve legyen, be kell fejeződnie az éles készenlét folyamatának. További tájékoztatás: Felkészülés [az élő élőre](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live). Ez a folyamat tartalmazza az előfizetés becslését az LCS-be. További információ az Előfizetés [becslésében található](/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator).
+Ahhoz, hogy az Emberi erőforrások termelési környezetét a pénzügyi és a műveleti infrastruktúrára telepítve legyen, be kell fejeződnie az éles készenlét folyamatának. További tájékoztatás: Felkészülés [az élő élőre](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). Ez a folyamat tartalmazza az előfizetés becslését az LCS-be. További információ az Előfizetés [becslésében található](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
 ## <a name="integrate-microsoft-power-platform-with-human-resources"></a>Integráció az Microsoft Power Platform Emberi erőforrásokkal
 
-Microsoft Power Platform A <a0/&<a2/&ő rendszer a Dynamics 365-alkalmazásokhoz nyújt lehetőségeket a rendszergazdai Power Platform központon keresztül. Az emberi erőforrásokkal kapcsolatos adatok integrálhatók és bővíthetők a használatával Microsoft Power Platform. Az Emberi erőforrások integrálásával kapcsolatos tudnivalókat Microsoft Power Platform [Microsoft Power Platform lásd a Pénzügy és Műveletek alkalmazással való integrációval kapcsolatban](/fin-ops-core/dev-itpro/power-platform/overview).
+Microsoft Power Platform A <a0/&<a2/&ő rendszer a Dynamics 365-alkalmazásokhoz nyújt lehetőségeket a rendszergazdai Power Platform központon keresztül. Az emberi erőforrásokkal kapcsolatos adatok integrálhatók és bővíthetők a használatával Microsoft Power Platform. Az Emberi erőforrások integrálásával kapcsolatos tudnivalókat Microsoft Power Platform [Microsoft Power Platform lásd a Pénzügy és Műveletek alkalmazással való integrációval kapcsolatban](../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ## <a name="supported-geographies"></a>Támogatott földrajzi területek
 
@@ -96,8 +96,8 @@ Alapértelmezés szerint a környezetet csak az a globális rendszergazda érhet
 ## <a name="additional-resources"></a>További erőforrások
 Az LCS-kben a pénzügyekkel és a műveletekkel kapcsolatos projekteknek a következő erőforrások révén való használatával való használatával kapcsolatban további tudnivalókat lehet megindoklok:
 
-- [Lifecycle Services-erőforrások](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
-- [Lifecycle Services (LCS) használati útmutató](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+- [Lifecycle Services-erőforrások](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+- [Lifecycle Services (LCS) használati útmutató](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
 - [Az önkiszolgáló központi telepítés áttekintése](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
 - [Adatbázis-mozgási műveletek honlapja](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
 

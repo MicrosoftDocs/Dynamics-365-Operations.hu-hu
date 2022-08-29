@@ -2,7 +2,7 @@
 title: Készletzárolás
 description: A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Supply Chain Management megoldásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.
 author: yufeihuang
-ms.date: 03/02/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a16c41b56b30098945a6fbdb02577624b6e173
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83b5417dc24af85f09e6713f2b12fdc358f61d54
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857808"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334685"
 ---
 # <a name="inventory-blocking"></a>Készletzárolás
 
@@ -96,11 +96,11 @@ Ha a **Rendelt cikkek foglalása** le van tiltva, a várt bevételezéseket nem 
 
 Figyelje meg a két eset tranzakcióállapota és dimenziói közötti különbséget. Ezért javasoljuk, hogy engedélyezze a **Rendelt cikkek foglalása** lehetőséget.
 
-### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>A blokkolt készlet funkciót mintaként tartalmazó minőségi rendelésekből várt bevételezések letiltása
+## <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory"></a>Zárolt készletet mintaként tartalmazó minőségi rendelésekből várt bevételezések letiltása
 
 A készletállapot miatt blokkolt minőségi rendelések esetén a készlettranzakciók egyszerűsítése érdekében a rendszer olyan funkciót biztosít, amely letiltja az ilyen minőségi rendelésekből várható bevételezéseket. Mivel a várható bevételezést azonnal blokkolja a készletállapot zárolása, a módosítás miatt nem csökken az aktuális készlet.
 
-Ez a funkció alapértelmezés szerint ki van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be és kapcsolhatják ki, hogy a Szolgáltatáskezelés munkaterületén keresi meg a minőségi rendelésekből származó olyan várt bevételezések letiltása lehetőséget, amelyeknél a szolgáltatás blokkolt készlet funkcióját](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) mintaként használhatja.
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be és kapcsolhatják ki ezt a funkciót, hogy a Szolgáltatáskezelés munkaterületén keresi meg annak a minőségi rendelésnek a várható bevételezését, amely minta a blokkolt készlet funkciót.](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)
 
 ## <a name="additional-resources"></a>További erőforrások
 

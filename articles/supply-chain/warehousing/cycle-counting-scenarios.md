@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4f6f3f2db6efcc4d4d6ae3d278751a230fca9a64
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 91a18b6deade6d67fce6b90308671910a4196104
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068596"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335735"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Ciklikus leltározás példa esetek
 
@@ -32,7 +32,7 @@ A cikk minden egyes esete az Ellátásilánc-kezelés szabványos bemutató adat
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás támogatásának bekapcsolása
 
-A Raktárkezelés mobilalkalmazás *használatához be kell kapcsolva lennie a rendszerben az új raktári alkalmazás felhasználói beállításainak,* ikonjainak és lépéscímének. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
+A Raktárkezelés mobilalkalmazás használatához az új raktári alkalmazás funkció felhasználói beállításait, *ikonjait* és lépéscímeit be kell kapcsolva a rendszerben. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
 
 ### <a name="prepare-demo-data-for-the-scenarios"></a><a name= "prepare-demo-data"></a>Bemutatóadatok előkészítése az esetekhez
 

@@ -2,7 +2,7 @@
 title: A platform eltávolított vagy elavult funkciói
 description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
 author: sericks007
-ms.date: 05/24/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
+ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069922"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9262298"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>A platform eltávolított vagy elavult funkciói
 
@@ -32,6 +32,50 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük azokat az objektumokat, amelyek megváltoztak vagy el vannak távolítva a pénzügyi és műveleti alkalmazások egyes verzióiban.
 
+## <a name="feature-deprecation-effective-august-2022"></a>Funkciók eltávolításával kapcsolatos értesítés; 2022 augusztusától érvényes
+
+### <a name="lifecycle-services-lcs-features-deprecated-in-august-2022"></a>A Lifecycle Services (LCS) 2022 augusztusában elavult szolgáltatásai
+
+A One Dynamics One Platform [munkamunka](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) részeként a következő LCS-funkciók elavultak.
+
+| Funkció neve | AX 2012-hez használatos? | Pénzügy- és műveletalkalmazásokkal használatos? | Felváltotta másik szolgáltatás? |
+|--------------|--------------------|----------------------------------------|------------------------------|
+| Bejelentések | Igen | Igen | Igen: Az egyes projekt- és környezeti lapok értesítési címeket tartalmaznak. |
+| Konfigurációkezelő | Igen | Nem | Nem |
+| Elemzés a rendszer össze- és kiírása között | Igen | Nem | Nem |
+| Visszajelzés és programhibák | Igen | Igen | Nem |
+| Saját előfizetés | Igen | Igen | Nem |
+| Office 365 | Igen | Igen | Igen: Azure Active Directory vagy Microsoft admin portal. |
+| Hatás analyis | Nem | Igen | Nem |
+| A gazdasági hatás becslésének teljes összege | Nem | Igen | Nem |
+| Szolgáltatási kérelmek | Nem | Igen | Igen: [Önkiszolgáló telepítések](../deployment/infrastructure-stack.md) |
+| SharePoint-integráció | Igen | Igen | Nem |
+| Konfiguráció- és adatkezelő | Nem | Igen | Nem |
+| Folyamatadat-csomagok | Nem | Igen | Igen: Adatimport exportálási keretrendszer (DIXF) |
+| Beékítés frissítése | Nem | Igen | Igen: [Egyverziós](../lifecycle-services/oneversion-overview.md) szolgáltatásfrissítések állnak rendelkezésre. |
+| Infrastruktúrabecslő | Igen | Nem | Nem |
+| Licenc méretezése | Igen | Nem | Nem |
+| Használatiprofil-készítő | Igen | Nem | Nem |
+| Testreszabás-elemzés | Igen | Nem | Nem |
+| Rendszerdiagnosztika | Igen | Igen | Nem |
+| Visio üzletifolyamat-modellező kezelése | Igen | Igen | Nem |
+| AX 2012 -es felhőkörnyezet-kezelés | Igen | Nem | Nem |
+| RDFE Azure-csatlakoztató | Igen | Igen | Nem |
+| AX 2012-es verziók | Igen | Nem | Nem |
+| LCS-tárolóban tárolt munkaelemek | Igen | Igen | Nem |
+| Gyorsjavítás-kérelmek | Igen | Igen | Nem |
+
+
+### <a name="transport-layer-security-tls-rsa-cipher-suites"></a>Átviteli réteg biztonsága (TLS) RSA-kódcsomagok
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A rendszer eltávolítja a következő kódokat, hogy megfeleljenek a jelenlegi biztonsági protokolloknak.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
+| **Felváltotta másik szolgáltatás?**   | 2022 [. november 30-án kezdődően az ügyfelek csak a szabványos kódos csomagokat használhatja](/power-platform/admin/server-cipher-tls-requirements). Ez a módosítás hatással van a kiszolgálóinkkal kommunikáló ügyfelekre és kiszolgálókra, és hatással lehet például a külső fél integrációjára, amelyek nem a szabványos kódcsomagokhoz vannak hatással. |
+| **Érintett területek**         | Finance and Operations alkalmazások |
+| **Telepítési beállítás**              | Felhőtelepítések |
+| **Állapot**                         | Elavult. Az ügyfeleknek 2022. november 30. előtt frissíteniük kell a kiszolgálókat. A TLS Cipher Suite rendelés konfigurálásával kapcsolatos további tudnivalókat lásd [a Szállítási réteg biztonságának (TLS) kezelése.](/windows-server/security/tls/manage-tls)  |
+
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Funkció értékcsökkenése 2022. júniusban
 
@@ -39,7 +83,7 @@ A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes info
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A pénzügyek és műveletek (Dynamics 365) alkalmazás és platform leárazása egyetlen mobil platformra, azaz egy mobil platformra való konszolidálás érdekében Power Apps. |
+| **Elavulás/eltávolítás oka** | A pénzügyek és műveletek (Dynamics 365) alkalmazás és platform leárazása egyetlen mobil platformra, Power Apps azaz egy mobil platformra való konszolidálás érdekében. |
 | **Felváltotta másik szolgáltatás?**   | Igen, a pénzügyet és a műveleteket túli mobil tapasztalatok alkalmazásadatai integrációval is felépíthetőek Power Platform. További részleteket [a](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) post post és [Building mobil tapasztalatokkal](../power-platform/build-mobile-experiences.md) talál. |
 | **Érintett területek**         | Finance and Operations alkalmazások |
 | **Telepítési beállítás**              | Minden |

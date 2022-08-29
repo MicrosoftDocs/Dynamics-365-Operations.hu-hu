@@ -2,25 +2,29 @@
 title: A Cseh Köztársaságra vonatkozó pénzügyi regisztrációs szolgáltatás integrációs mintája telepítési irányelvei (legacy)
 description: Ez a cikk a Microsoft Dynamics 365 Commerce Retail szoftverfejlesztői csomagból (SDK) a Csehországba tartozó pénzügyi integrációs minta telepítésével kapcsolatos irányelveket tartalmaz.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 35584493cd2a4fecd5fc86d529ec43bb4ef97671
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.author: josaw
+ms.search.validFrom: 2019-03-01
+ms.openlocfilehash: 8338b1e11e1bd4fe7482b914ac6bf5f60ebc2e36
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881764"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313829"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>A Cseh Köztársaságra vonatkozó pénzügyi regisztrációs szolgáltatás integrációs mintája telepítési irányelvei (legacy)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Ez a cikk Microsoft Dynamics 365 Commerce a Cseh Köztársaságra vonatkozó pénzügyi regisztrációs szolgáltatásintegrációs minta telepítéséről a Lifecycle Services (LCS) fejlesztői virtuális gépére (SDK) vonatkozó Retail szoftverfejlesztői csomagból (SDK) Microsoft Dynamics nyújt tájékoztatást. A pénzügyi integrációs mintával kapcsolatos további [tudnivalókat lásd a Cseh Köztársaság Pénzügyi nyilvántartási szolgáltatás integrációs mintája oldalon](emea-cze-fi-sample.md). 
+> [!IMPORTANT]
+> Csak akkor kell követnie Microsoft Dynamics 365 Commerce az ebben a cikkben olvasható irányelveket, ha a 10.0.28-as vagy korábbi verziókat használja. A Commerce rendszer 10.0.29-es verziója szerint a Cseh Köztársasághoz tartozó pénzügyi regisztrációs szolgáltatás integrációs minta elérhető a Commerce szoftverfejlesztői csomagjában (SDK). A további tudnivalókat lásd: Csatornaösszetevők [konfigurálása](./emea-cze-fi-sample.md#configure-channel-components).
+
+Ez a témakör a Dynamics 365 Commerce Cseh Köztársaság pénzügyi nyilvántartási szolgáltatásintegrációs minta telepítéséről a Lifecycle Services (LCS) egy fejlesztői virtuális gépére (VM) Microsoft Dynamics vonatkozó útmutatót tartalmaz. A pénzügyi integrációs mintával kapcsolatos további [tudnivalókat lásd a Cseh Köztársaság Pénzügyi nyilvántartási szolgáltatás integrációs mintája oldalon](emea-cze-fi-sample.md). 
 
 A Cseh Köztársaság pénzügyi integrációs minta része a Retail SDK csomagnak. Az SDK [telepítésével és használatával kapcsolatos tudnivalókat lásd a Retail szoftverfejlesztői csomag (SDK) architektúráját](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ez a minta a Commerce runtime (CRT) és a hardverállomás bővítményeiből áll. A minta futtatásához módosítania és fel kell építenie a és CRT a hardverállomás-projekteket. Javasoljuk, hogy egy nem módosított Retail SDK készlet használhatja az ebben a cikkben leírt módosításokat. Javasoljuk továbbá, hogy forrásvezérlő rendszert használjon, Azure DevOps például olyanokat, ahol a fájlok még nem módosultak.
 

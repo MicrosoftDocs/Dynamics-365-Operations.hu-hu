@@ -1,24 +1,24 @@
 ---
 title: Egyetlen modellgyökérhez tartozó több származtatott leképezés kezelése
 description: Ez a cikk bemutatja, hogyan lehet kezelni az egy modell gyökéréhez konfigurált több származtatott leképezést.
-author: NickSelin
+author: kfend
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERSolutionTable, ERModelMappingTable
+ms.openlocfilehash: 868d47ccfebb9a9753d93344c72b10ae4353b0e6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892479"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277508"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Egyetlen modellgyökérhez tartozó több származtatott leképezés kezelése
 
@@ -106,7 +106,7 @@ Ez a szakasz bemutatja a Microsoft által biztosított modellleképezések [test
 3. A **Konfiguráció létrehozása** legördülő párbeszédpanel **Új** mezőjében válassza a **Származtatás innen: Számlamodell leképezése, Microsoft** lehetőséget.
 4. A **Név** mezőben írja be a **Számlamodell-leképezés (Litware)** szöveget.
 5. Válassza a **Konfiguráció létrehozása** lehetőséget.
-6. [Jelölje meg](er-quick-start2-customize-report.md#MarkFormatRunnable) a származtatott leképezések [vázlat](general-electronic-reporting.md#component-versioning) verzióit futásidőben használhatóként:
+6. [Jelölje meg](er-quick-start2-customize-report.md#MarkFormatRunnable) a származtatott leképezések [vázlat](general-electronic-reporting.md) verzióit futásidőben használhatóként:
 
     1. A Műveleti ablaktáblán a **Konfigurációk** lapon a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
     2. A **Felhasználói paraméterek** párbeszédpanelen állítsa a **Futtatási beállítások** beállítását **Igen** értékre, majd kattintson az **OK** gombra.

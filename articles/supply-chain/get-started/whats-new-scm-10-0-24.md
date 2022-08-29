@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 9b4b538e6d50013626739e19fee2a050b630bf7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166875"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334805"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.24 verziójában (2022. február)
 
@@ -46,9 +46,9 @@ Ha bármelyik funkciót be szeretné kapcsolni [, akkor ezt a funkciókezelésbe
 | Modul | Funkcióneve a funkciókezelésben | További információ |
 |---|---|---|
 | Gyártásvezérlés | Igény szerinti anyagelérhetőségi ellenőrzés a termelési rendelésekre vonatkozóan | Ez a funkció gyorsabbá teszi a **termelési** rendelések kiadási lapjának megnyitását, **amely a Termelésirányítás munkaterületről** érhető el. A rendszer e funkció nélkül automatikusan ellenőrzi, hogy a lap megnyitása után a felsorolt termelési rendelésekhez rendelkezésre állnak-e anyagok, ami nagy számú rendelés esetén jelentős időt is igénybe vehet. Ha ez a funkció engedélyezve van, akkor a rendszer egy eszköztárgombot biztosít, amelynek segítségével az anyagok ellenőrzése csak a kiválasztott rendelésekre és szükség esetén történik meg. |
-| Gyártásvezérlés | Anyagfelhasználás regisztrálása a termelési emelet végrehajtási felületén (nem WMS) | Ez a funkció lehetővé teszi a dolgozók számára, hogy a termelési emelet végrehajtási felületével regisztrálják az anyagfelhasználást, a kötegszámokat és a sorozatszámokat. Ez a funkció csak olyan cikkeket támogat, amelyek nincsenek engedélyezve a raktárkezelési folyamatok (WMS) használatára. A WMS-kompatibilis cikkek támogatása egy jövőbeli kiadásra van ütemezve.<p>Egyes gyártóknak, különösen a folyamatiparban használt gyártóknak explicit módon regisztrálniük kell az egyes köteg- vagy termelési rendelésenként felhasznált anyagok mennyiségét. Például a dolgozók a mérleg segítségével leméneklik a munka közben felhasznált anyagok mennyiségét. A teljes anyagkövetés biztosítása érdekében ezeknek a szervezeteknek regisztrálniuk kell azt is, hogy az egyes termékek gyártása során melyik kötegszámokat felhasználták. |
+| Gyártásvezérlés | Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS) | Ez a funkció lehetővé teszi a dolgozók számára, hogy a termelési emelet végrehajtási felületével regisztrálják az anyagfelhasználást, a kötegszámokat és a sorozatszámokat. Ez a funkció csak olyan cikkeket támogat, amelyek nincsenek engedélyezve a raktárkezelési folyamatok (WMS) használatára. A WMS-kompatibilis cikkek támogatása egy jövőbeli kiadásra van ütemezve.<p>Egyes gyártóknak, különösen a folyamatiparban használt gyártóknak explicit módon regisztrálniük kell az egyes köteg- vagy termelési rendelésenként felhasznált anyagok mennyiségét. Például a dolgozók a mérleg segítségével leméneklik a munka közben felhasznált anyagok mennyiségét. A teljes anyagkövetés biztosítása érdekében ezeknek a szervezeteknek regisztrálniuk kell azt is, hogy az egyes termékek gyártása során melyik kötegszámokat felhasználták. |
 | Gyártásvezérlés | Jelentés befejezettként a raktárkezelési munkaterhelésben, felhőalapú és peremhálózat-léptékű egység esetén | Ez a funkció lehetővé teszi a dolgozók számára a Raktárkezelés mobilalkalmazás használatával, hogy készként jelentsen egy termelési vagy kötegrendelést, amikor az alkalmazás egy felhő vagy peremhálózati egység raktárkezelési terhelésével szemben fut. A további tudnivalókat lásd a Készként [jelentve és a mérlegegységre rakva.](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF) |
-| Raktárkezelés | Új rakománytervezési munkaterületlapok | Két új rakománytervezési munkaterületi lapnak ad lehetőséget: **a bejövő** **rakománytervezési munkaterületet és a kimenő rakománytervezési munkaterületet**. |
+| Raktárkezelés | Új rakománytervezési munkaterületlapok | Két új rakománytervezési munkaterületi lap hozzáadása: **a bejövő** **rakománytervezési munkaterület és a kimenő rakománytervezési munkaterület**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 

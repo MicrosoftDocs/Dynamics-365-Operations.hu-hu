@@ -2,7 +2,7 @@
 title: Raktári hely állapota
 description: Ez a cikk áttekintést nyújt a Raktári hely állapot funkcióról.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6d04ca43895935329b711f2658360c41f611975e
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
-ms.translationtype: HT
+ms.openlocfilehash: 9b12a7d6a7ce388c8fd049c4aef79ea57c82ae60
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065464"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336095"
 ---
 # <a name="warehouse-location-status"></a>Raktár helyállapota
 
@@ -40,12 +40,9 @@ A **Helyek** lapon a következő négy mező követi nyomon a hely aktuális ál
     - **Kitárolás** – Kimenő tranzakciókat hajtottak végre a helyen a legutóbbi üres állapot óta.
     - **Tárolás** – Csak bemenő tranzakciókat hajtottak végre a helyen a legutóbbi üres állapot óta.
 
-## <a name="turn-on-the-warehouse-location-status-feature"></a>A Raktár helyállapota funkció bekapcsolása
+## <a name="turn-the-warehouse-location-status-feature-on-or-off"></a>A Raktári hely állapota funkció be- és kikapcsolása
 
-A *Raktár helyállapota* funkciót használata előtt be kell kapcsolni a rendszerben. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Raktár helyállapota*
+A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Raktári hely állapot szolgáltatását keresi.
 
 ## <a name="set-up-warehouse-location-status"></a>A Raktár helyállapotának beállítása
 
@@ -55,7 +52,7 @@ Mielőtt elkezdené a munkafolyamatot, aktiválni kell a mintaadatokat, és be k
 
 #### <a name="use-the-usmf-legal-entity"></a>Az USMF jogi személy használata
 
-Ha ezt a példaforgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha ezt a példaforgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 #### <a name="set-up-location-profiles"></a>Helyprofilok beállítása
 

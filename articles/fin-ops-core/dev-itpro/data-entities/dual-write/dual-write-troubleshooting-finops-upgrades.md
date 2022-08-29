@@ -1,22 +1,22 @@
 ---
-title: A Pénzügyi és műveletalkalmazások frissítésével kapcsolatos problémák elhárítása
+title: A pénzügyi és műveleti alkalmazások frissítéseivel kapcsolatos problémák elhárítása
 description: Ez a cikk olyan hibaelhárítási információkat tartalmaz, amelyek segítséget nyújtnak a pénzügyi és műveleti alkalmazások frissítésével kapcsolatos problémák megoldásához.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: b75034cbc8ca7a24472cfec1ad93d3dfef4a8fdc
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 7ab75c3a7b6c53982a32658f376a9fd148c023e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111140"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289544"
 ---
-# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>A Pénzügyi és műveletalkalmazások frissítésével kapcsolatos problémák elhárítása
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>A pénzügyi és műveleti alkalmazások frissítéseivel kapcsolatos problémák elhárítása
 
 [!include [banner](../../includes/banner.md)]
 

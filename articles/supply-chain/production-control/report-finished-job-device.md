@@ -2,7 +2,7 @@
 title: Jelentés befejezettként a feladatkártya-eszközből
 description: Ez a témakör leírja, hogyan kell konfigurálni a rendszert annak érdekében, hogy a feladatkártya-eszközök felhasználói kész termékeket jelentsen a termelési rendelésből a készletbe.
 author: johanhoffmann
-ms.date: 07/31/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 56d19a966d93202668c34ffaaef561d72b7669ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070469"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334625"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Jelentés befejezettként a feladatkártya eszközből
 
@@ -56,13 +56,12 @@ A feladatkártya-eszköz három esetet támogat a kötegelt cikkek jelentéséhe
 - **Előre definiált kötegszám** – A dolgozók egy kötegszámnak a kiválasztását végzik el egy listáról, amelyet a rendszer automatikusan generált, a termelési rendelésnek a feladatkártya-eszközbe történő kiadása előtt.
 - **Rögzített kötegszámok** – A dolgozók kötegszámot nem adnak meg. Helyette a rendszer automatikusan hozzárendel egy kötegszámot a termelési rendeléshez a kiadás előtt.
 
-
 ### <a name="enable-the-feature-on-your-system"></a>A funkció engedélyezése a rendszerben
 
-Ha engedélyezni szeretné, hogy a feladatkártya-eszközök elfogadhassanak egy kötegszámot a készként való jelentés során, akkor a [szolgáltatások kezelésével](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) be kell kapcsolni a következő szolgáltatásokat (ebben a sorrendben):
+Ahhoz, hogy a feladatkártya-eszközök elfogadjanak egy kötegszámot a készként való jelentés során, [a](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) funkciókezelés használatával be kell kapcsolni a következő funkciókat:
 
-1. Javított felhasználói élmény a feladatkártya eszközében lévő jelentés az előrehaladásról párbeszédpanelhez
-1. Engedélyezze, hogy a köteg-és sorozatszámokat megadhassa befejezettként a Feladatkártya eszközéből
+- *Javított felhasználói élmény a feladatkártya eszközében lévő jelentés az előrehaladásról párbeszédpanelhez*
+- *Engedélyezze, hogy a köteg-és sorozatszámokat megadhassa befejezettként a Feladatkártya eszközéből*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója alapértelmezés szerint be van kapcsolva.)
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>A kötegszám-jelentést igénylő termékek konfigurálása
 
@@ -137,10 +136,10 @@ A feladatkártya-eszköz három esetet támogat a sorozatvezérelt cikkek jelent
 
 ### <a name="enable-the-feature-on-your-system"></a>A funkció engedélyezése a rendszerben
 
-Ha engedélyezni szeretné, hogy a feladatkártya-eszközök elfogadhassanak egy sorozatszámot a készként való jelentés során, akkor a [szolgáltatások kezelésével](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) be kell kapcsolni a következő szolgáltatásokat (ebben a sorrendben):
+Ahhoz, hogy a feladatkártya-eszközök elfogadjanak egy sorozatszámot a készként való jelentés során, [a](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) funkciókezelés használatával be kell kapcsolni a következő funkciókat:
 
-1. Javított felhasználói élmény a feladatkártya eszközében lévő jelentés az előrehaladásról párbeszédpanelhez
-1. Engedélyezze, hogy a köteg-és sorozatszámokat megadhassa befejezettként a Feladatkártya eszközéből
+- *Javított felhasználói élmény a feladatkártya eszközében lévő jelentés az előrehaladásról párbeszédpanelhez*
+- *Engedélyezze, hogy a köteg-és sorozatszámokat megadhassa befejezettként a Feladatkártya eszközéből*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója alapértelmezés szerint be van kapcsolva.)
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>A sorozatszám-jelentést igénylő termékek konfigurálása
 

@@ -12,16 +12,15 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom:
-- "260674"
+ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.form: SalesProfitabilityPerformancePowerBI
-ms.openlocfilehash: 2a3e0a46656f54a423a3bdfb05b87e3b7ad68efd
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
-ms.translationtype: HT
+ms.openlocfilehash: 77271ad9f5a1d7c131e1d7750de280f0c70daaa4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9205601"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274659"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Értékesítési és jövedelmezőségi teljesítmény Power BI tartalom
 
@@ -77,7 +76,7 @@ Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI tartalom 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI tartalom jelentésének feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár az analitikai célokra optimalizált Microsoft SQL Server adatbázisa. További tudnivalókért lásd: [Power BI integrációja az entitástárral](power-bi-integration-entity-store.md).
 
-A tartalomcsomag összesítő mértékek a következőkben rendelkezésre álló összesítő mértékek részhalmazát alkotják: Sales Cube in Microsoft Dynamics AX 2012 és Microsoft Dynamics AX 2012 R3. A kocka összesítő mértékeinek előkészítéséhez az entitástárban, a mértékeket központilag telepíthetővé kell tenni. További információért lásd a következő blogbejegyzést az összesítő mértékek előkészítésének eljárásáról az entitástárban: A [Power BI és az entitástár integrálása a Dynamics programban](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update).
+A tartalomban található összesítő mértékek Microsoft Dynamics AX az értékesítési kockában 2012-ben és 2012 Microsoft Dynamics AX R3-ban rendelkezésre álló összesítő mértékek részkészletét jelentik. A kocka összesítő mértékeinek előkészítéséhez az entitástárban, a mértékeket központilag telepíthetővé kell tenni. További információért lásd a következő blogbejegyzést az összesítő mértékek előkészítésének eljárásáról az entitástárban: A [Power BI és az entitástár integrálása a Dynamics programban](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update).
 
 A következő kulcsfontosságú összesítő mértékek közvetlenül a számla sorai entitásból érhetők el, és a tartalom alapjául szolgálnak.
 
@@ -95,7 +94,7 @@ A következő táblázat azt mutatja, hogyan használjuk a Számlasorok entitás
 | Bruttó nyereség      | SZUM(Bruttó nyereség/(Bevétel – áfa (a vevői számlasor összegének áfatartalma)))             |
 | Tavalyi bevétel | Tavalyi év bevételei = CALCULATE(SUM('Számlasorok'\[Bevétel\]), SAMEPERIODLASTYEAR(Dátumok\[Dátum\])) |
 
-Az alábbi táblázat megjeleníti azokat a fő dimenziókat az Értékesítés kockában, amelyek szűrőként szolgálnak az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
+Az értékesítési kockában a következő kulcsdimenziók segítségével lehet szűrni az összesítő mértékeket, így nagyobb pontosságot lehet elérni, és mélyebb analitikus elemzéseket lehet elérni.
 
 | Entitás           | Példák az attribútumok                               |
 |------------------|------------------------------------------------------|

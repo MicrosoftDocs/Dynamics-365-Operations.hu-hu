@@ -2,7 +2,7 @@
 title: A IoT Intelligencia beépülő modul telepítése az LCS-ben
 description: Ez a cikk bemutatja, hogy hogyan telepíthető az Online intelligencia bővítmény a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásba.
 author: johanhoffmann
-ms.date: 07/07/2020
+ms.date: 08/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e18b05be1f2ba78c71515e4e76f180355d044b98
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887486"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227834"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>A IoT Intelligencia beépülő modul telepítése az LCS-ben
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 Ez a cikk bemutatja, hogy hogyan telepíthető az Online intelligencia bővítmény a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásba. Ne felejtse el, hogy a bővítmények nem telepíthetők bemutató/próbaverziós környezetbe. A bővítmény telepítése előtt [létre kell hoznia az Azure-erőforrásokat](iot-azure-setup.md).
 

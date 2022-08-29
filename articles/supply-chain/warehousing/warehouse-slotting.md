@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb86800f1491e8cb9ad629ed6cc1c76e9393e945
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897255"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336035"
 ---
 # <a name="warehouse-slotting"></a>Raktári időközökre bontás
 
@@ -34,7 +34,7 @@ A *Raktári időközökre bontás felosztási fejlesztései* funkció lehetősé
 
 ## <a name="turn-on-the-warehouse-slotting-features"></a>A raktári időközökre bontási funkciók bekapcsolása
 
-A funkciók használata előtt be kell azokat kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat ezen funkciók állapotának ellenőrzéséhez, és szükség esetén a bekapcsolásához. Szükség szerint kapcsolja be a következő szolgáltatásokat:
+A funkciókat csak akkor használhatja, ha bekapcsolta őket a rendszeren. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat ezen funkciók állapotának ellenőrzéséhez, és szükség esetén a bekapcsolásához. Szükség szerint kapcsolja be a következő szolgáltatásokat:
 
 - Raktári időközökre bontási funkció
 - Raktári időközökre bontás átmozgatási rendelésekhez
@@ -284,7 +284,7 @@ Ehhez a forgatókönyvhöz használja a beépített mintaadatokat, és hozza lé
 
 #### <a name="use-the-usmf-sample-data"></a>A USMF mintaadatok használata
 
-Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
+Ha ezt a forgatókönyvet az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszert kell használnia amelynél a szokásos [demóadatok](../../fin-ops-core/fin-ops/get-started/demo-data.md) telepítve vannak. Emellett az **USMF** jogi személyt is ki kell választani a kezdés előtt.
 
 #### <a name="create-demand"></a>Igény létrehozása
 
