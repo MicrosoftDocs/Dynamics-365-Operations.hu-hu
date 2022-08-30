@@ -12,6 +12,8 @@
               items:
                 - name: Újdonságok és változások a Commerce szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.29 (2022. október)
+                  href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (2022. július)
                   href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (2022. július)
@@ -60,9 +62,11 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
                 - name: Értesítések kérése szolgáltatásfrissítésekkel kapcsolatban
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+                - name: Proaktív minőségi frissítések
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
                 - name: Adatfeladat automatizálása
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
-                - name: ISV-megoldások nyújtása One Version használatával
+                - name: Független szoftverszállítói megoldások nyújtása egyverziós használatával
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?context=/dynamics365/context/commerce
                 - name: Felhasználói tesztelés létrehozása és automatizálása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/commerce
@@ -418,10 +422,12 @@
                       href: dev-itpro/gift-card-cash-out.md
                     - name: Rendelések szállítása egy másik áruházból
                       href: charge-send.md
-                    - name: A Pénztár szállítási párbeszédablakának nem szállítói kiszállítási módjainak elrejtése
+                    - name: A pénztár szállítási párbeszédablakának nem szállítói kiszállítási módjainak elrejtése
                       href: hide-non-carrier-modes.md
-                    - name: Feladatrögzítő és Súgó az MPOS-hez és a Cloud POS-hoz
+                    - name: Feladatrögzítő és Súgó az MPOS-hoz és a Cloud POS-hoz
                       href: task-recorder-retail-pos.md
+                    - name: A CPOS konfigurálása az egyéni Azure AD-alkalmazás használatához
+                      href: cpos-custom-aad.md
                     - name: Hardverperifériák
                       items:
                         - name: Perifériák
@@ -698,8 +704,8 @@
                   href: prevent-discounts.md
                 - name: Fizetőeszköz-alapú engedmények
                   href: tender_based_discounts.md
-                - name: Szállítási engedmény áttekintése
-                  href: retail-shipping-discount.md
+                - name: Szállítási engedmény
+                  href: shipping-discount.md
                 - name: Ajándék konfigurálása vásárlási promóciókkal
                   href: gift-with-purchase.md
                 - name: Kuponok beállítása
@@ -710,11 +716,15 @@
                   href: price-report.md
                 - name: Csatornaspecifikus kereskedelmi szerződések létrehozása
                   href: tasks/base-price-trade-agreements.md
-                - name: Kereskedelmi szerződések létrehozása kategóriaárazási szabályok segítségével
+                - name: Kereskedelmi szerződések létrehozása kategóriadíjszabási szabályok segítségével
                   href: tasks/category-pricing-rules-trade-agreements.md
                 - name: Pontos ár- és engedményszámítás késleltetése
                   href: delayed-price-calculation.md
-            - name: Javaslatok
+                - name: Díjszabási funkciók a pénztárban
+                  href: pos-pricing-functions.md
+                - name: Commerce díjszabási API-k
+                  href: pricing-apis.md
+            - name: Ajánlatok
               items:
                 - name: Termékajánlatok áttekintése
                   href: product-recommendations.md
@@ -872,6 +882,8 @@
               href: async-customer-mode.md
             - name: Aszinkron vevők átalakítása szinkron vevőkké
               href: convert-async-to-sync.md
+            - name: Aszinkron vevőlétrehozási mód – GYIK
+              href: async-customer-mode-faq.md
             - name: Ügyfélkör
               items:
                 - name: Ügyfélkör áttekintése
@@ -1250,8 +1262,12 @@
                   items:
                     - name: Termékgyűjtemény-modulok
                       href: product-collection-module-overview.md
-                    - name: Modul gyors megtekintése
+                    - name: Betekintő nézet modul
                       href: quick-view-module.md
+                - name: Termék-összehasonlítási modulok
+                  items:
+                    - name: Termék-összehasonlítási modulok
+                      href: product-comparison-modules.md
                 - name: Navigációs modulok
                   items:
                     - name: Útkövetési modul
@@ -1272,6 +1288,10 @@
                   items:
                     - name: Cookie-hozzájárulási modul
                       href: cookie-consent-module.md
+                - name: Csevegési modulok
+                  items:
+                    - name: Commerce-csevegési modul
+                      href: commerce-chat-module.md
             - name: Keresés
               items:
                 - name: Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
@@ -1404,8 +1424,6 @@
               items:
                 - name: Pénzügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
                   href: localizations/emea-aut-fi-sample.md
-                - name: Pénztárgépek telepítésére vonatkozó irányelvek Ausztria esetében
-                  href: localizations/emea-aut-deployment.md
                 - name: Az Ausztriára vonatkozó pénzügyi integrációs minta központi telepítési irányelvei (örökölt)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brazília
@@ -1462,9 +1480,9 @@
                   href: localizations/emea-fra-fi-deployment.md
                 - name: Pénzügyi archívum és adatintegritás ellenőrzése
                   href: localizations/emea-fra-fiscal-archive.md
-                - name: Áttelepítés a Franciaországra vonatkozó korábbi funkcióból
+                - name: Telepítse át a Franciaországra vonatkozó örökölt funkcióból
                   href: localizations/emea-fra-fi-migration.md
-                - name: Pénztárgépek telepítésére vonatkozó irányelvek (korábbi)
+                - name: Pénztárgépek telepítésére vonatkozó irányelvek (örökölt)
                   href: localizations/emea-fra-deployment.md
             - name: Németország
               items:
@@ -1502,7 +1520,9 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Pénztárgépek telepítésére vonatkozó irányelvek
                   href: localizations/emea-nor-fi-deployment.md
-                - name: Pénztárgépek telepítésére vonatkozó irányelvek (korábbi)
+                - name: Telepítse át a Norvégiára vonatkozó örökölt funkcióból
+                  href: localizations/emea-nor-fi-migration.md
+                - name: Pénztárgépek telepítésére vonatkozó irányelvek (örökölt)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Oroszország
               items:
@@ -1764,9 +1784,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
-                        - name: Felosztás
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/commerce
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/commerce
@@ -2480,11 +2502,11 @@
           items:
             - name: Keresztmegoldás
               items:
-                - name: Commerce SDK áttekintése
+                - name: Commerce szoftverfejlesztői készlet (SDK) áttekintése
                   items:
-                    - name: Minták és hivatkozási csomagok
+                    - name: Commerce szoftverfejlesztői készlet (SDK) minta- és hivatkozáscsomagok letöltése
                       href: dev-itpro/retail-sdk/sdk-github.md
-                    - name: Örökölt Retail SDK áttelepítése
+                    - name: Örökölt Retail szoftverfejlesztői készlet (SDK) áttelepítése
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                     - name: 'Elavult és eltávolított API-k, osztályok és metódusok'
                       href: dev-itpro/obsolete-apis-classes-methods.md

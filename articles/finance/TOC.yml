@@ -12,6 +12,8 @@
               items:
                 - name: Újdonságok és változások a Finance szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.29 (október)
+                  href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (augusztus)
                   href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (július)
@@ -62,9 +64,11 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/finance
                 - name: Értesítések kérése szolgáltatásfrissítésekkel kapcsolatban
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
+                - name: Proaktív minőségi frissítések
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
                 - name: Adatfeladat automatizálása
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
-                - name: ISV-megoldások nyújtása One Version használatával
+                - name: Független szoftverszállítói megoldások nyújtása egyverziós használatával
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?context=/dynamics365/context/finance
                 - name: Felhasználói tesztelés létrehozása és automatizálása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/finance
@@ -1114,6 +1118,8 @@
                       href: general-ledger/tasks/process-ledger-allocation-journal.md
                     - name: Naplóbejegyzések vagy tranzakciók megtekintése
                       href: general-ledger/tasks/view-journal-entries-or-transactions.md
+                    - name: Belső adatok szerkesztésének engedélyezése a főkönyvi bizonylatokon
+                      href: general-ledger/allow-edits-internal-data-gl-vouchers.md
                     - name: Kapcsolódó vállalatközi bizonylat megtekintése egy naplóból
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
                     - name: Naplósorok és dokumentumok közzététele az Excel programból
@@ -1568,14 +1574,20 @@
                           href: localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
                         - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázás használata során
                           href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
+                        - name: Első lépések a Franciaországra vonatkozó elektronikus számlázás használata során
+                          href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
+                        - name: Első lépések a Lengyelországra vonatkozó elektronikus számlázás használata során
+                          href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Első lépések a Szaúd-Arábiára vonatkozó Elektronikus számlázás használata során
-                          href: localizations/e-invoicing-sa-get-started.md
+                          href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                        - name: Elektronikus számlázás bevezetése Szaúd-Arábiában
+                          href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: Olasz FatturaPA és az SDI közvetlen integrációjának beállítása
-                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
                         - name: Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
-                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
                     - name: Elektronikus számlázás – GYIK
                       href: localizations/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Adószámítás
@@ -1648,6 +1660,10 @@
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-nor-vat-declaration.md
+                        - name: Lengyelországi jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-pol-vat-declaration.md
                         - name: Spanyolországi jelentés
                           items:
                             - name: 'Azonnali információbiztosítás az áfáról (Suministro Inmediato de Información del IVA, SII)'
@@ -1714,6 +1730,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Szállítói számla áfatartalmának kiszámítása és kiigazítása
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Igazítsa ki az áfát az általános naplókkal
+                      href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Késleltetett adószámítás engedélyezése a naplóban
                       href: general-ledger/enable-delayed-tax-calculation.md
                     - name: Áfakifizetés létrehozása
@@ -1770,6 +1788,8 @@
                           href: general-ledger/global-withholding-tax-overview.md
                         - name: Globális adóelőleg beállítása
                           href: general-ledger/set-up-global-withholding-tax.md
+                        - name: Engedélyezze a globális adóelőleg pénznemárfolyam-típusának és dátumtípusának beállítását
+                          href: general-ledger/global-withholding-tax-currency-exchange-rate-date-type-setup.md
                         - name: Adóelőleg a beszerzési tranzakciókban
                           href: general-ledger/withholding-tax-in-purchase-transactions.md
                         - name: Adóelőleg az értékesítési tranzakciókban
@@ -1948,6 +1968,8 @@
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
                     - name: NF-e XML-fájlok áthelyezése mellékletként
                       href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+                    - name: NT2021.004 – Az elektronikus pénzügyi bizonylat (NF-e) elrendezési és ellenőrzési frissítései
+                      href: localizations/latam-bra-nfe-nt2021.004.md
                     - name: NT2020.005 – Az elektronikus pénzügyi bizonylat (NF-e) elrendezési és ellenőrzési frissítései
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Közvetítő értékesítési digitális platform az NF-e esetében
@@ -2552,6 +2574,8 @@
                       href: localizations/apac-ind-news-letter-10-0-00.md
                 - name: Audit- és szerkesztési naplók könyvelési szoftverhez
                   href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
+                - name: Elektronikus számlák Indiában
+                  href: localizations/apac-ind-e-invoices.md
                 - name: Közvetett adók
                   items:
                     - name: Indiai GST
@@ -3548,6 +3572,10 @@
                           href: localizations/rus-set-up-inventory-profile.md
                         - name: Készletprofil használata dokumentumokban és lekérdezésekben
                           href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Vámkezelés
+                      items:
+                        - name: Együttműködés a vámkezeléssel
+                          href: localizations/rus-work-with-customs-clearance.md
                 - name: Jelentéskészítés
                   items:
                     - name: Pénzügyi jelentéskészítés
@@ -3576,6 +3604,8 @@
                       href: localizations/rus-company-divisions.md
                     - name: Orosz címformátumok és Importálás a FIAS-ból
                       href: localizations/rus-russian-address-format-and-import-from-FIAS.md
+                    - name: Importálás az Állami címjegyzékből (GAR)
+                      href: localizations/rus-russian-address-format-import-gar.md
                 - name: Halasztások
                   items:
                     - name: Halasztások beállítása
@@ -4069,9 +4099,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/finance
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/finance
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/finance
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/finance
-                        - name: Felosztás
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/finance
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/finance

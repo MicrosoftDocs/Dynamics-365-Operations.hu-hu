@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Újdonságok és változások a Human Resources szolgáltatásban
               items:
+                - name: Human Resources 10.0.29 (egyesített infrastruktúra)
+                  href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (egyesített infrastruktúra)
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Human Resources 10.0.27 (egyesített infrastruktúra)
@@ -604,6 +606,10 @@
                   href: hr-benefits-setup-parameters-per-company.md
                 - name: Juttatáskezelési és alkalmazotti önkiszolgáló paraméterek beállítása minden vállalatnál
                   href: hr-benefits-setup-parameters.md
+                - name: Rendszergazdai jogosultságok konfigurálása az életesemények számára
+                  href: admin-life-events.md
+                - name: Juttatásokra vonatkozó e-mail-értesítések konfigurálása
+                  href: hr-email-notifications.md
                 - name: Jogosultsági szabályok és beállítások konfigurálása
                   href: hr-benefits-setup-eligibility-rules.md
                 - name: A személyes kapcsolattartó jogosultsági beállításainak konfigurálása

@@ -14,6 +14,8 @@
               items:
                 - name: Újdonságok és változások a platformfrissítések terén – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Platformfrissítések a 10.0.29-es verzióhoz (2022. október)
+                  href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Platformfrissítések a 10.0.28 verzióhoz (2022. augusztus)
                   href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Platformfrissítések a 10.0.27 verzióhoz (2022. július)
@@ -1090,6 +1092,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Entitásleképezés engedélyezése a kettős íráshoz
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Öt perces munkamenet időtúllépési keret engedélyezése kettős írás munkamenetekhez
+                      href: data-entities/dual-write/5-minute-mode.md
                     - name: Szétválasztott kettős írású alkalmazás lebonyolítási csomagja
                       href: data-entities/dual-write/separated-solutions.md
                     - name: Pénznem-adattípus áttelepítése a kettős íráshoz
