@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902024"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357641"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
@@ -98,16 +98,16 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
 1. Jelentkezzen be az Azure portálra, és keresse meg a `clientId` és a `clientSecret` értékeket a Dynamics 365 Supply Chain Management alkalmazáshoz.
 1. A Azure AD token (`aadToken`) lekérése egy HTTP-kérelem elküldésével, amely a következő tulajdonságokkal rendelkezik:
 
-   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **URL:**`https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
    - **Módszer:** `GET`
    - **Törzstartalom (űrlapadatok):**
 
-     | Kulcs           | Érték                                |
-     | ------------- | ------------------------------------ |
-     | ügyfél azonosítója     | ${aadAppId}                          |
-     | titkos ügyfélkód | ${aadAppSecret}                      |
-     | engedélyezési típus    | ügyfél_azonosító adatai                   |
-     | erőforrás      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Kulcs           | Érték                                            |
+     | ------------- | -------------------------------------------------|
+     | ügyfél azonosítója     | ${aadAppId}                                      |
+     | titkos ügyfélkód | ${aadAppSecret}                                  |
+     | engedélyezési típus    | ügyfél_azonosító adatai                               |
+     | Hatókör         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
 
    Válaszként egy Azure AD tokent (`aadToken`) kell kapnia. Az alábbi példához hasonlóan jelenik meg.
 
@@ -116,9 +116,6 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
        "token_type": "Bearer",
        "expires_in": "3599",
        "ext_expires_in": "3599",
-       "expires_on": "1610466645",
-       "not_before": "1610462745",
-       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
        "access_token": "eyJ0eX...8WQ"
    }
    ```
@@ -131,7 +128,7 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
        "client_assertion_type": "aad_app",
        "client_assertion": "{Your_AADToken}",
        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context": "{$LCS_environment_id}",
        "context_type": "finops-env"
    }
    ```
@@ -516,8 +513,8 @@ Body:
 
 A kérés törzsrészében a `dimensionDataSource` még mindig egy választható paraméter. Ha nincs beállítva, a `filters` értékek *alapszintű dimenzióként* lesznek kezelve. A `filters` paraméternek négy kötelező mezője van: `organizationId`, `productId`, `siteId` és `locationId`.
 
-- Az `organizationId` csak egy értéket tartalmazhat, de ettől még egy tömb.
-- A `productId` egy vagy több értéket tartalmazhat. Ha ez egy üres tömb, a rendszer az összes terméket visszaküldi.
+- `organizationId` Csak egy értéket tartalmazhat, de az továbbra is tömb.
+- `productId` A(0) <a0/<a0/<a2/<a Ha ez egy üres tömb, a rendszer az összes terméket visszaküldi.
 - A `siteId` és a `locationId` particionálásra használatosak a Készletláthatóságban. Egynél több `siteId` és `locationId` értéket is megadhat az *Készleten lévő lekérdezés* kérésben. Az aktuális verzióban meg kell adnia a `siteId` és a `locationId` értékeket is.
 
 A `groupByValues` paraméternek követnie kell az indexelés konfigurációját. További információért lásd: [Termékindex-hierarchia konfigurálása](./inventory-visibility-configuration.md#index-configuration).

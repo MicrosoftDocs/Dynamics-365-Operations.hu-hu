@@ -2,7 +2,7 @@
 title: Elektronikus jelentéskészítés (ER) céljai
 description: Ez a cikk az elektronikus jelentési célok kezelésével, a támogatott célok típusaival és a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: DocuType, ERSolutionTable
-ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
-ms.translationtype: HT
+ms.openlocfilehash: b1bf6289e80769dfe8858f307cbb9b217b42dbb4
+ms.sourcegitcommit: f2edc193003564c5bee1747f9c2b800feee342bd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281967"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9360979"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -247,6 +247,52 @@ Az **Általános** gyorslap **Mappa küldése a következőként** mezőjében v
 ### <a name="limitations"></a>Korlátozások
 
 Ha a **Mappa küldése a következőként** mezőben a **Külön fájlok** értéket adja meg a más beágyazott **Mappa** összetevőket tartalmazó **Mappa** összetevőhöz, akkor a rendszer nem alkalmazza a beállítást rekurzív módon a többi **Mappa** összetevőre.
+
+## <a name="change-page-layout-properties-of-a-template"></a><a name="change-page-layout-properties-of-a-template"></a> Sablon lapelrendezés-tulajdonságainak módosítása
+
+Az ER-célokat olyan ER Microsoft Office formátumösszetevők számára konfigurálhatja, amelyek a jelentések generálása egy sablonjának (Excel vagy Word) formátumban való használatára vannak kialakítva. Ha nem Ön ennek a formátumnak a tulajdonosa, és módosítania kell a formátumsablon lapelrendezés-tulajdonságait, a Pénzügy verziókban a 10.0.29-es verzió előtt létre kell hoznia egy származtatott formátumot, és módosítania kell a sablon tulajdonságait. Ezután meg kell tartani a származtatott formátumkonfigurációt. A 10.0.29-es és későbbi verziókban azonban futásidőben módosíthatja a sablon oldalelrendezés-tulajdonságait, hogy elkerülje a származtatott formátumkonfiguráció létrehozását és karbantartását. Ehhez állítsa be a kívánt tulajdonságokat a konfigurált ER-cél beállításainak részeként. Ha ER-formátumot futtat, és olyan ER-célt hajt végre, amely bizonyos lapelrendezés-tulajdonságok használatára van konfigurálva, akkor a program a használt sablonra alkalmazza a végrehajtott cél oldalelrendezés-tulajdonságainak értékeit, lecserélve az eredeti sablon tulajdonságait. Ugyanannak a formátumnak különböző célhelyeket is be lehet állítani, amelyek a használatban vannak a sablon különböző lapelrendezés-tulajdonságainak konfigurálásához.
+
+A következő tulajdonságok konfigurálhatók ER-célként olyan formátumösszetevők számára, amelyek az Excel- és Word-formátumok sablonjának használatára vannak kialakítva:
+
+- Oldal tájolása
+    - Álló
+    - Fekvő
+- Papírméret
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - Jogi információ
+    - Betű
+    - Statement
+    - Tabloid
+- Oldal margói
+    - Fent
+        - Fejléc
+    - Lent
+        - Lábléc
+    - Balra
+    - Jobb
+
+> [!NOTE]
+> Az így konfigurált [sablon oldal tájolását a PDF-konverzió](#select-a-page-orientation-for-pdf-conversion) oldal tájolásának megfelelően kell igazítani, amennyiben a PDF-átalakítás be van állítva.
+
+Az oldal margóihoz ki kell választani a hosszegységet:
+
+- Hüvelyk
+- Centiméter
+- Milliméter
+
+![Lapelrendezés tulajdonságainak beállítása az Elektronikus jelentési cél oldalon.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> Ha centiméteres margót jelölnek, és több tizedesjegyet is meghatároznak, futásidőben kerekíteni kell arra a legközelebbi értékre, amelynél 1 tizedesjegy van.
+>
+> Ha az árrés értékét ezredmásodpermben jelennek meg, és tizedesjegyekkel jelölik, akkor az Excel futásidejű kerekítése a legközelebbi egész értékre lesz kerekítve tizedesjegy nélkül.
+>
+> Ha az árrés értékét ezredmásodpermben jelennek meg, és több tizedesjegyet is meghatároznak, futásidőben a Word értéke a legközelebbi értékre lesz kerekítve egy tizedesjegy pontossággal.
 
 ## <a name="security-considerations"></a>Biztonsági megfontolások
 

@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 6b42252a37f01a2b387c2393760998a6b2e4761d
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
-ms.translationtype: HT
+ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9271515"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357658"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>A Commerce Scale Unit (felhő) inicializálása
 
@@ -69,8 +69,8 @@ A Commerce Scale Unit szolgáltatás a következő régiókban érhető el telep
 | APAC            | Kelet-Ázsia           | Korlátozott kapacitás    |   Nincsenek megjegyzések.                           |
 | APAC            | India- és Dél-India         | Korlátozott kapacitás | Nem engedélyezett a telepítés.    |
 | APAC            | India – Közép-India       | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges. |
-| EMEA            | Nyugat-Európa         | Korlátozott kapacitás    | Jelenleg nem érhető el az LCS szolgáltatásban. |
-| EMEA            | Észak-Európa        | Korlátozott kapacitás    | Jelenleg nem érhető el az LCS szolgáltatásban. |
+| EMEA            | Nyugat-Európa         | Általánosan elérhető    |  Nincsenek megjegyzések. |
+| EMEA            | Észak-Európa        | Általánosan elérhető    |  Nincsenek megjegyzések. |
 | EMEA            | Egyesült Királyság - Dél            | Általánosan elérhető |    Nincsenek megjegyzések.                          |
 | EMEA            | Egyesült Királyság – Nyugat             | Általánosan elérhető |    Nincsenek megjegyzések.                          |
 | Svájc     | Svájc - Észak   | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges. |

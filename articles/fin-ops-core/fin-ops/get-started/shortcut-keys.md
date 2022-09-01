@@ -2,7 +2,7 @@
 title: Billentyűparancsok
 description: Ez a cikk áttekintést nyújt az olyan billentyűparancs-kombinációkról, amelyek a Pénzügyi és műveleti alkalmazások használata során használhatók.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
-ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
+ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9140439"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357577"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
@@ -135,10 +135,10 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | Vízszintes görgetés                                                                                                   | Műszak + egérkerék             |
 | Ugrás a következő/előző oszlopra                                                                                       | Tab/Shift+Tab                 |
 | Ugrás a következő/előző sorra                                                                                          | Lefelé nyíl/Felfelé nyíl           |
-| Lépés a következő/előző sorra kijelölés nélkül<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote> | Ctrl+Felfelé nyíl / Ctrl+Lefelé nyíl |
-| Az aktuális sor kijelölése / kijelölés törlése<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote>                    | Ctrl+Szóköz/Ctrl+Kattintás         |
-| A következő/előző sor hozzáadása a kijelölt készlethez<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote>   | Shift+Szóköz                     |
-| Egy sortartomány hozzáadása a kijelölt készlethez<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote>         | Shift+Kattintás                     |
+| Lépés a következő/előző sorra kijelölés nélkül<br><br>**Megjegyzés: Ez** a parancsikon csak a többválasztásos helyzetekre vonatkozik. | Ctrl+Felfelé nyíl / Ctrl+Lefelé nyíl |
+| Az aktuális sor kijelölése / kijelölés törlése<br><br>**Megjegyzés: Ez** a parancsikon csak a többválasztásos helyzetekre vonatkozik.                   | Ctrl+Szóköz/Ctrl+Kattintás         |
+| A következő/előző sor hozzáadása a kijelölt készlethez<br><br>**Megjegyzés: Ez** a parancsikon csak a többválasztásos helyzetekre vonatkozik.  | Shift+Szóköz                     |
+| Egy sortartomány hozzáadása a kijelölt készlethez<br><br>**Megjegyzés: Ez** a parancsikon csak a többválasztásos helyzetekre vonatkozik.         | Shift+Kattintás                     |
 | Ugrás az adatok következő/előző oldalára                                                                                   | Page up / Page down             |
 | Új sor létrehozása a rács alján                                                                             | Lefelé nyíl (az utolsó sorból)  |
 | Ugrás az első rekordra                                                                                               | Ctrl+Home                       |
@@ -148,7 +148,7 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | Ugrás a következő megjelölt sorra                                                                                            | Alt+Shift+M, L                  |
 | Ugrás az előző megjelölt sorra                                                                                        | Alt+Shift+M, P                  |
 | Ugrás az utolsó megjelölt sorra                                                                                           | Alt+Shift+M, N                  |
-| Az alapértelmezett művelet végrehajtása rácsban<blockquote>[!NOTE] Ez a billentyűparancs akkor van engedélyezve, amikor a fókusz egy hivatkozást tartalmazó cellán van, és az adott oszlop összes cellájában vannak hivatkozások.</blockquote> | Bevitel                           |
+| Az alapértelmezett művelet végrehajtása rácsban<br><br>**Megjegyzés:** Ez a parancsikon akkor használható, ha a fókusz egy hivatkozást tartalmazó cellára van kapcsolva, és annak az oszlopnak az összes celláján hivatkozások vannak. | Bevitel                           |
 | A fókusz váltása a kiválasztott sor és a fejlécsor között                                                               | Alt+Shift+H                     |
 | Az aktuális oszlop nagyítása/kicsinyítése (a fókusz a fejlécsorban)                                                  | Jobbra nyíl / balra nyíl        |
 | Az aktuális oszlop áthelyezése a következő/előző pozícióba (a fejléc sorában lévő fókuszsal)                                   | Ctrl+Shift+Jobbra nyíl / Ctrl+Shift+Balra nyíl |
