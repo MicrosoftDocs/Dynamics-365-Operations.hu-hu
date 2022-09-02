@@ -466,9 +466,11 @@
                           items:
                             - name: Támogatás külső ajándékutalványokhoz
                               href: dev-itpro/gift-card.md
+                            - name: Vállalatközi adatmegosztás ajándékutalványokhoz
+                              href: dev-itpro/data-sharing-gift-cards.md
                     - name: RSAT
                       items:
-                        - name: A Cloud POS tesztrögzítője és a Regression suite automation tool eszköze
+                        - name: A Cloud POS tesztrögzítője és a Regression Suite Automation Tool eszköze
                           href: dev-itpro/pos-rsat.md
                     - name: Értékesítési munkatársak
                       items:
