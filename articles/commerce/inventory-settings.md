@@ -2,7 +2,7 @@
 title: Készletbeállítások alkalmazása
 description: Ez a cikk a készletbeállításokat ismerteti, és bemutatja, hogyan lehet azokat alkalmazni a készletben Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: ''
-ms.openlocfilehash: bc55715b7c74f3b572459dd1aa7d409b7175535b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 49310a44f8b9c636734e04d4eed9445384b55791
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287592"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405320"
 ---
 # <a name="apply-inventory-settings"></a>Készletbeállítások alkalmazása
 
@@ -51,12 +51,12 @@ A Commerce alkalmazásban a készletbeállítások a **Webhelybeállítások \> 
     > [!IMPORTANT] 
     > A **Több raktár készletszintje** beállítás a Commerce 10.0.19-es verziójától érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Terméklistaoldalak készletbeállításai** – Ez a beállítás meghatározza, hogy hogyan jelennek meg a nem készleten található termékek a terméklistákban, amelyeket a termékgyűjtemény és keresési előzmények modulok hoztak létre. Az elérhető értékek: **Megjelenítés sorrendben más termékekkel**, **A nem készleten lévő termékek elrejtése** és **Nem készleten lévő termékek megjelenítése a lista végén**. A beállítás csak akkor használható, ha előbb konfigurál néhány előfeltételül szolgáló beállítást a Commerce Headquarters szolgáltatásban. A további tudnivalókat lásd a [Készletérzékenység engedélyezése a keresési eredmények modulban](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+- **Terméklistaoldalak készletbeállításai** – Ez a beállítás meghatározza, hogy hogyan jelennek meg a nem készleten található termékek a terméklistákban, amelyeket a termékgyűjtemény és keresési előzmények modulok hoztak létre. Az elérhető értékek: **Megjelenítés sorrendben más termékekkel**, **A nem készleten lévő termékek elrejtése** és **Nem készleten lévő termékek megjelenítése a lista végén**. A beállítás csak akkor használható, ha előbb konfigurál néhány előfeltételül szolgáló beállítást a Commerce Headquarters szolgáltatásban. További információ a készletre [vonatkozó terméklista-listában található](inventory-aware-product-listing.md).
 
     > [!IMPORTANT] 
     > A **Termékbeállítások terméklistaoldalakhoz** beállítás a Commerce 10.0.20-es verziójától érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Készlettartományok** – Ez a beállítás határozza meg a készlettartományokat, amelyekhez üzenetek kerülnek megjelenítésre a helyi modulok esetében. Csak akkor alkalmazható, ha a **Teljes rendelkezésre álló** érték vagy a **Rendelkezésre álló tényleges** érték van kiválasztva a **Készletszint alapja** számára. A rendelkezésre álló értékek a **Mind**, az **Alacsony és elfogyott**, valamint az **Elfogyott**.
+- **Készlettartományok** – ez a beállítás meghatározza a helymodulok készlettartomány-üzeneteit. Csak akkor alkalmazható, ha a **Teljes rendelkezésre álló** érték vagy a **Rendelkezésre álló tényleges** érték van kiválasztva a **Készletszint alapja** számára. A rendelkezésre álló értékek a **Mind**, az **Alacsony és elfogyott**, valamint az **Elfogyott**.
 
     - Ha a **Mind** van kiválasztva, akkor a program az összes készlettartomány esetében megjelenít üzeneteket a raktáron állapottól („Elérhető üzenet”) az elfogyott állapotig („Elfogyott” üzenet).
     - Ha az **Alacsony és elfogyott** van kiválasztva, akkor a program az összes készlettartomány esetében megjelenít üzeneteket a raktáron állapotot („Elérhető üzenet”) kivéve.

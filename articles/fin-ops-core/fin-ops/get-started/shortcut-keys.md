@@ -2,7 +2,7 @@
 title: Billentyűparancsok
 description: Ez a cikk áttekintést nyújt az olyan billentyűparancs-kombinációkról, amelyek a Pénzügyi és műveleti alkalmazások használata során használhatók.
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357577"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405437"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -87,10 +88,12 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | Szűrő ablak megnyitása (vagy váltson fókuszt a szűrő ablak és a fő űrlap között, ha a szűrő ablak már nyitva van) | Alt+M,F vagy Ctrl+F3       |
 | Szűrő ablak bezárása (a fókusszal a szűrő ablakban)                                                               | Esc                      |
 | Speciális szűrés/rendezés megnyitása                                                                                        | Ctrl+Shift+F3            |
+| A gyorsszűrő alkalmazása (ha a fókusz a Gyors szűrésben van)                                                              | Enter                    |
+| Rácsszűrő alkalmazása (ha a fókusz az oszlopfejléc szűrőmezőében van)                                             | Enter                    |
 
 ## <a name="form-shortcuts"></a>Űrlap billentyűparancsok
 
-| Teendő:                                    | Billentyű vagy billentyűkombináció             |
+| Művelet                                    | Nyomja meg a(z)  billentyűt             |
 |-----------------------------------------------|-------------------|
 | Új rekord létrehozása                           | Alt+N             |
 | Rekord törlése                               | Alt+Del vagy Alt+F9 |
@@ -160,9 +163,10 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | Művelet                                                                   | Nyomja meg a(z)  billentyűt                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Hivatkozás megnyitása                                                           | Ctrl+Enter                    |
+| A hivatkozás megnyitása (ha írásra való vezérlő van a fókuszban)<br><br>**Megjegyzés: Ez** a parancsikon csak akkor használható, ha **engedélyezve** van a kombinált lista és a keresésvezérlők Szokásos billentyűzetgombok használata.                   | Enter    |
 | A munkamenet dátumának bevitele egy dátummezőbe.                                       | T                             |
 | A mai dátum bevitele egy dátummezőbe.                                       | K                             |
-| Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel megnyitása                         | Alt+Lefelé nyíl                |
+| Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel megnyitása                         | Alt+Lefelé nyíl<br><br>Adja meg (ha a **kombinált listához és a keresésvezérlőkhöz engedélyezve van a Standardize** billentyűkombináció)                |
 | Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel bezárása                        | Esc                           |
 | Fókusz áthelyezése egy keresésbe (Ha a keresés már meg nyitva)                   | Alt+Lefelé nyíl                |
 | A vezérlés haladó előnézetének megtekintése                                          | Alt+Felfelé nyíl                  |

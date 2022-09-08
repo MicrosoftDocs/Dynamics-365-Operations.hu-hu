@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: eb17f24b90933dac0f875bb0ef2d5039a240b197
+ms.sourcegitcommit: 1ca4ad100f868d518f3634dca445c9878962108e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306054"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9388540"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibility telepítése és beállítása
 
@@ -56,7 +56,9 @@ Miután regisztrált egy alkalmazást, és hozzáad egy ügyféltitkot a Azure A
 1. A környezet oldalon görgessen lefelé, amíg meg nem találja a **Környezeti bővítmények** részt az **Power Platform integráció** szakaszban. Itt található a Dataverse környezet neve. Győződjön meg arról, hogy a Dataverse-környezet nevét szeretné használni a Készlet láthatóságához.
 
     > [!NOTE]
-    > Jelenleg csak az LCS használatával létrehozott Dataverse környezetek támogatottak. Ha a Dataverse környezetet más módon hozták létre (például a Power Apps felügyeleti központ használatával), és ha az az Ön Supply Chain Management környezetéhez kapcsolódik, akkor először a Készletláthatóság termékcsapattal kell felvennie a kapcsolatot a hozzárendelési probléma megoldása érdekében a [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) címen. Ezután telepítheti a Készletláthatóság funkciót.
+    > Jelenleg csak az LCS használatával létrehozott Dataverse környezetek támogatottak. Ha a Dataverse környezet valamilyen más módon lett létrehozva (PowerApps például az Adminisztrációs központ használatával), és kapcsolódik az ellátásilánc-kezelési környezethez, először ki kell javítania a hozzárendelési problémát, mielőtt a készlet láthatósági bővítményét telepítené.
+    >
+    > Lehetséges, hogy a Dataverse kétírásos környezet egy példányhoz kapcsolódik, miközben az LCS nincs beállítva integrációra Power Platform. Az ilyen csatolási eltérés nem várt viselkedést okozhat. Azt ajánljuk, hogy az LCS-környezet részletei megegyeznek azzal, amit két írásnál használ, hogy ugyanazt a kapcsolatot használni tudja üzleti események, virtuális táblák és bővítmények. A [megfeleltetési probléma megoldásához](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch) szükséges tudnivalókat lásd az Eltérés csatolása hivatkozásra. A megfeleltetési probléma megoldását követően folytathatja a készlet láthatóságának telepítését.
 
 1. A **Környezeti bővítmények** szakaszban válassza az **Új bővítmény telepítése** lehetőséget.
 
@@ -140,11 +142,11 @@ A készlet láthatósági bővítményének eltávolításához hajtsa végre a 
 1. A **környezet kiválasztása** a navigációs sávon
 1. Válassza ki Dataverse az LCS-környezettel kapcsolatot teremtő környezetet.
 1. Menjen a **Megoldások** alkalmazásba, és a következő sorrendben törölje a következő megoldásokat:
-    1. Horgonymegoldás az Inventory Visibility alkalmazáshoz a Dynamics 365 megoldásokban.
-    1. Dynamics 365 FNO SCM Készletláthatósági alkalmazások megoldása
-    1. Készletszolgáltatás konfigurációja
-    1. Készletláthatóság önállóan
-    1. Dynamics 365 FNO SCM készletláthatóság alapmegoldás
+    1. Dynamics 365 – Készlet láthatósága – horgony
+    1. Dynamics 365 – Készlet láthatósága – alkalmazás
+    1. Dynamics 365 – Készlet láthatósága - vezérlőelemek
+    1. Dynamics 365 – Készlet láthatósága – Láthatóságok
+    1. Dynamics 365 – Készlet láthatósága – alap
 
     Miután törölte ezeket a megoldásokat, a táblázatokban tárolt adatok is törlődnek.
 

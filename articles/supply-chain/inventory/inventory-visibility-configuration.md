@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306318"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423569"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurálása
 
@@ -303,13 +303,13 @@ A megoldás alapértelmezés szerint tartalmazza ezt a partíciókonfigurációt
 
 A legtöbbször a készletállomány-lekérdezés nem csak a legmagasabb „teljes” szinten lesz. Ehelyett érdemes lehet a készletdimenziók alapján összesített eredményeket is látni.
 
-A Készletláthatóság rugalmasságot biztosít azáltal, hogy lehetővé teszi az _indexek_ beállítását. Ezek az indexek egy dimenzión vagy dimenziók kombinációján alapulnak. Egy index egy *halmazszámból*, egy *dimenzióból* és egy *hierarchiából* áll, a következő táblázatban meghatározottak szerint.
+A készlet láthatósága rugalmasságot biztosít, mert lehetővé teszi _indexek_ beállítását a lekérdezések teljesítményének javítása érdekében. Ezek az indexek egy dimenzión vagy dimenziók kombinációján alapulnak. Egy index egy *halmazszámból*, egy *dimenzióból* és egy *hierarchiából* áll, a következő táblázatban meghatározottak szerint.
 
 | Név | Leírás |
 |---|---|
 | Beállított szám | Az azonos halmazhoz (indexhez) tartozó dimenziók csoportosítva lesznek, és ugyanaz a halmazszám lesz hozzájuk rendelve. |
 | Dimenzió | A lekérdezés eredményének aggregált bázisdimenziója. |
-| Hierarchia | A hierarchia a lekérdezhető támogatott dimenziókombinációk meghatározására szolgál. Például létrehoz egy olyan dimenziókészletet, amelynek hierarchiasorrendje a `(ColorId, SizeId, StyleId)`. Ebben az esetben a rendszer négy dimenziókombinációra vonatkozó lekérdezéseket támogat. Az első kombináció üres, a második a `(ColorId)`, a harmadik a `(ColorId, SizeId)`, a negyedik pedig a `(ColorId, SizeId, StyleId)`. A többi kombináció nem támogatott. További információért lásd a következő példát. |
+| Hierarchia | A hierarchia lehetővé teszi meghatározott dimenziókombinációk teljesítményének növelését a szűrési és csoportosítási lekérdezési paraméterekben való használata esetén. Ha például egy olyan dimenziókészletet hoz létre, amely hierarchiasorozatot használ, akkor a rendszer gyorsabban feldolgozhatja a `(ColorId, SizeId, StyleId)` négy dimenziókombinációhoz kapcsolódó lekérdezéseket. Az első kombináció üres, a második a `(ColorId)`, a harmadik a `(ColorId, SizeId)`, a negyedik pedig a `(ColorId, SizeId, StyleId)`. Más kombinációk nem lesznek felfelé felgyorsítva. A szűrőket nem korlátozza a rendelés, de ha javítani szeretné a teljesítményüket, akkor ezeken a dimenziókon belül kell lenniük. További információért lásd a következő példát. |
 
 A termékhierarchia-index beállításához kövesse az alábbi lépéseket.
 
@@ -319,14 +319,13 @@ A termékhierarchia-index beállításához kövesse az alábbi lépéseket.
 1. Alapértelmezés szerint az indexek listáját adja meg. Egy meglévő index módosításához válassza a **Szerkesztés** vagy a **Hozzáadás** lehetőséget az adott indexre vonatkozó szakaszban. Új indexkészlet létrehozásához válassza az **Új indexkészlet** lehetőséget. Minden indexkészlet minden sora esetében a **Dimenzió** mezőben válasszon az alapdimenziók listájából. A következő mezők értékei automatikusan generálódnak:
 
     - **Készletszám** - Az azonos csoportba (indexbe) tartozó dimenziók csoportosítva lesznek, és ugyanaz a készletszám lesz hozzájuk rendelve.
-    - **Hierarchia** - A hierarchia a dimenziócsoportban (index) lekérdezhető támogatott dimenziókombinációk meghatározására szolgál. Ha például olyan dimenziócsoportot ad meg, amely stílus, *·* *szín* és méret hierarchiasorozatot használ, a *rendszer* három lekérdezési csoport eredményét támogatja. Az első csoport csak a stílus. A második csoport a stílus és a szín kombinációja. A harmadik csoport pedig a stílus, a szín és a méret kombinációja. A többi kombináció nem támogatott.
+    - **Hierarchia** – a hierarchia a szűrési és csoportosítási lekérdezési paramétereknél növeli a dimenzió meghatározott kombinációinak teljesítményét.
 
 > [!TIP]
 > Az indexhierarchia beállításakor tartsa szem előtt a következő tanácsokat:
 >
 > - A partíciókonfigurációban definiált alapdimenziókat nem lehet definiálni az indexkonfigurációkban. Ha az indexkonfigurációban ismét meg van adva alapdimenzió, akkor ezzel az indexszel nem lehet lekérdezést tenni.
 > - Ha csak olyan készletet kell lekérdezni, amely az összes dimenziókombinációval összesítve van, akkor egyetlen indexet kell beállítania, amely az alapdimenziót tartalmazza `Empty`.
-> - Szükség van legalább egy indexhierarchiára (`Empty` például az alapdimenziót tartalmazóra), különben a lekérdezések leállnak a "Nincs indexhierarchia beállítva" hibával.
 
 ### <a name="example"></a>Példa
 

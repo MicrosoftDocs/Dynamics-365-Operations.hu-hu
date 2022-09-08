@@ -4,22 +4,17 @@ description: Ez a témakör azt ismerteti, hogyan kell kezelni a tartományokat 
 author: BrianShook
 ms.date: 08/19/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
-ms.search.validFrom: ''
-ms.dyn365.ops.version: Release 10.0.12
-ms.search.industry: retail
-ms.search.form: ''
-ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337228"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405496"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce szolgáltatásban
 
@@ -110,10 +105,10 @@ Ha a Front Door-szolgáltatás vagy a CDN használatával egyéni tartományokat
 
 - Egy belépési pont szolgáltatás, mint az Azure Front Door beállítása a kezelőfelületi forgalom kezeléséhez és annak csatlakoztatása a Commerce-környezetéhez. Ez a tartomány-és tanúsítványkezelés és a részletes biztonsági házirendek hatékonyabb kezelését teszi lehetővé.
 
+- A Commerce által biztosított Azure Front Door példány használata. Ehhez együttműködés szükséges a Dynamics 365 Commerce csapattal a tartomány hitelesítéséhez és az SSL-tanúsítványok lekéréséhez a termelési tartományhoz.
+
 > [!NOTE]
 > Ha külső CDN- vagy front-ajtós szolgáltatást használ, győződjön meg arról, hogy a kérést a Commerce rendszer által megadott állomásnévvel, de az X-Előretolt állomás (XFH) fejléccel együtt használja a Commerce platformon \<custom-domain\>. Ha például a Commerce végpont `xyz.dynamics365commerce.ms``www.fabrikam.com` az, és az egyéni tartomány, akkor a továbbított kérésnek az állomásfejlécnek kell lennie, `xyz.dynamics365commerce.ms` az XFH-fejlécnek pedig annak kell lennie `www.fabrikam.com`.
-
-- A Commerce által biztosított Azure Front Door példány használata. Ehhez együttműködés szükséges a Dynamics 365 Commerce csapattal a tartomány hitelesítéséhez és az SSL-tanúsítványok lekéréséhez a termelési tartományhoz.
 
 A CDN-szolgáltatások közvetlen beállításával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Content Delivery Network (CDN) támogatásának hozzáadása](add-cdn-support.md).
 

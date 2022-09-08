@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d6aa5a0cb49e5871a50a2ac5ac2c29cc09e232fc
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219094"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9404424"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.25. (2022. április ) szolgáltatásban
 
@@ -161,7 +161,7 @@ A táblázat felsorolja azokat a funkciókat is, amelyek korábban nyilvános el
 | Raktárkezelés | [Hely azonosítótáblájának elhelyezése](../warehousing/location-license-plate-positioning.md) | Kötelező |
 | Raktárkezelés | [Hely és termékdimenzió kombinálása](../warehousing/location-product-dimension-mixing.md) | Kötelező |
 | Raktárkezelés | A mobileszközzel történő készletmozgatás készletállapota mező szerkeszthetővé tétele | Kötelező |
-| Raktárkezelés | Manuális értékesítési sor kitárolási szolgáltatása felügyeleti vagy hasonló megbízható felhasználók számára | Kötelező |
+| Raktárkezelés | [Manuális értékesítési sor kitárolási szolgáltatása felügyeleti vagy hasonló megbízható felhasználók számára](../warehousing/manual-order-line-picking-exception-handling.md) | Kötelező |
 | Raktárkezelés | [Az átmozgatási rendelés által leszállított azonosítótáblák használatának megakadályozása a célraktártól eltérő raktárakban](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Kötelező |
 | Raktárkezelés | A nem egyértelmű „Hely/azonosítótábla” nevek feloldásának kérése | Kötelező |
 | Raktárkezelés | [Minőség-ellenőrzés](../warehousing/quality-check.md) | Kötelező |

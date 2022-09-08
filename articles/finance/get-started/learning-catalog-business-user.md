@@ -1,23 +1,23 @@
 ---
 title: Oktatókatalógus a Dynamics 365 Pénzügy felhasználói számára
 description: A Dynamics 365 Pénzügy összes felhasználója számára elérhető képzési lehetőségek megkeresve.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c883a425610d9b04812ba77c666b0b220184d5af
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 99a672e4fd0bfe270f0cd1bfa421b7bd6feca9e1
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069284"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424844"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Oktatókatalógus a Dynamics 365 Pénzügy felhasználói számára
 
@@ -29,7 +29,6 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 | Tartalom | Leírás | Formátum | Hossz |
 |---------|-------------|--------|--------|
-| [Ismerje meg a Microsoft Dynamics365, valamint a Power Platform üzleti értékét](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Érdeklik az üzleti alkalmazások? Talán nem tudja, hogyan kezdjen hozzá a Microsoft Dynamics 365 és Power Platform alkalmazások használatához? Ismerje meg, hogyan lehet az üzleti alkalmazások erejével segíteni a vállalkozás átalakításában. | Ingyenes, saját tempójú online tanulási útvonal | 8 óra |
 | [Dynamics 365 és Power Platform alapok](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez. | Ingyenes, saját tempójú online tanulási útvonal | 5.5 óra   |
 | [A Pénzügy és műveletek alkalmazásokkal kapcsolatos első lépések](/learn/paths/get-started-finance-operations/) | Ismerje meg, hogy a pénzügyi és műveleti alkalmazások hogyan teszik lehetővé a vállalkozások számára globális pénzügyi rendszerük, a működési üzleti folyamatok és az ellátási lánc leegyszerűsítése által, hogy a személyeknek gyorsan és megalapozott döntéseket hozzanak.   A pénzügy- és műveletalkalmazások használata során első lépésként meg kell ismerkednie annak funkcióival és funkcióival, függetlenül a kívánt szereptől. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
 | [Első lépések az Dynamics 365 Intelligent Order Management használatában](/learn/modules/get-started-intelligent-order-management/) | A Dynamics 365 Intelligent Order Management segítségével az ügyfelek irányíthatják a megrendelések összehangolását a teljesítésig. Ezek a képességek lehetővé teszik a szervezetek számára, hogy a különböző platformokon és alkalmazásokon keresztül összehangolják a megrendelések áramlását. | Ingyenes, saját tempójú online tanulási modul | 30 perc |

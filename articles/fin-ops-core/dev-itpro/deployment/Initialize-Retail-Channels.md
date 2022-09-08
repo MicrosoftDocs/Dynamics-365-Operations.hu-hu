@@ -11,12 +11,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 25ca054df6422370b1e61dff7965189ad90d7fcc
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a4a36d773e0790747c017dca35492af5caf410ab
+ms.sourcegitcommit: 61be5f43c9678e9f12b4a90410876b4a179ac585
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357658"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427076"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>A Commerce Scale Unit (felhő) inicializálása
 
@@ -73,8 +73,6 @@ A Commerce Scale Unit szolgáltatás a következő régiókban érhető el telep
 | EMEA            | Észak-Európa        | Általánosan elérhető    |  Nincsenek megjegyzések. |
 | EMEA            | Egyesült Királyság - Dél            | Általánosan elérhető |    Nincsenek megjegyzések.                          |
 | EMEA            | Egyesült Királyság – Nyugat             | Általánosan elérhető |    Nincsenek megjegyzések.                          |
-| Svájc     | Svájc - Észak   | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges. |
-| Uae             | Észak-Egyesült Arab Emírségek           | Korlátozott kapacitás    | Jóváhagyási folyamat szükséges. |
 
 A korlátozott kapacitású régiók telepítési kapacitása rendkívül korlátozott. A telepítésre vonatkozó kéréseket eset szerint kell kiértékelni. Ha üzleti tevékenységre van szükség a korlátozott kapacitású régiókban való telepítéshez, támogatási kérést lehet kérni a várakozási listához való hozzáadásra. A korlátozott kapacitású területek jelenleg nem teszik lehetővé a Commerce Scale Unit telepítését. 
 

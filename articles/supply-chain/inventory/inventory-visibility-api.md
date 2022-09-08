@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357641"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423595"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
@@ -41,6 +41,8 @@ A következő táblázat a jelenleg elérhető API-kat sorolja fel:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Feladás | [Készleten lévő mennyiségek beállítása/felülbírálása](#set-onhand-quantities) |
 | /api/környezet/{environmentId}/onhand/reserve | Feladás | [Egy foglalási esemény létrehozása](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Feladás | [Több foglalási esemény létrehozása](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Feladás | [Egy foglalási esemény sztorníroza](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Feladás | [Több foglalási esemény sztornírozése](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Feladás | [Egy ütemezett, de még beütemelt időpontbani módosítás létrehozása](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Feladás | [Több ütemezett, ütemezett, de időpontban végrehajtott módosítás létrehozása](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Feladás | [Lekérdezés a post módszer használatával](#query-with-post-method) |
@@ -56,7 +58,7 @@ A következő táblázat a jelenleg elérhető API-kat sorolja fel:
 > 
 > A tömeges API legfeljebb 512 rekordot ad vissza minden kéréshez.
 
-A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
+A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>A Lifecycle Services környezetének megfelelő végpont megkeresése
 
@@ -83,7 +85,7 @@ A régió rövid neve a Microsoft Dynamics Lifecycle Services (LCS) környezetbe
 | Dél-Brazília        | sbr               |
 | USA déli középső régiója    | scus              |
 
-A sziget száma az a hely, ahol az LCS-környezetet a Service Fabricon telepítették. Jelenleg nincs mód arra, hogy ezt az információt a felhasználói oldalról megkapjuk.
+A sziget száma az a hely, ahol az LCS-környezetet a Service Fabricon telepítették. Ezt az információt jelenleg nem lehet a felhasználói oldalról kihozni.
 
 A Microsoft egy felhasználói felületet (UI) épített be a Power Apps rendszerbe, hogy a mikroszolgáltatás teljes végpontját megismerhesse. További információért lásd: [A szolgáltatás végpontjának keresése](inventory-visibility-configuration.md#get-service-endpoint).
 
@@ -146,7 +148,7 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
    - **HTTP fejléc:** tartalmazza az API verzióját. (A kulcs a `Api-Version`, az érték pedig a `1.0`.)
    - **Törzstartalom:** Tartalmazza az előző lépésben létrehozott JSON-kérést.
 
-   Válaszként egy hozzáférési tokent (`access_token`) kell kapnia. Ezt a tokent kell használnia a Készletláthatóság API hívásához. Íme, egy példa.
+   Válaszként egy hozzáférési tokent (`access_token`) kell kapnia. Ezt a tokent kell használnia a Készletláthatóság API hívásához. Példa:
 
    ```json
    {
@@ -170,7 +172,7 @@ A következő táblázat összefoglalja a JSON-törzs egyes mezőinek jelentés�
 
 | Mezőazonosító | Leírás |
 |---|---|
-| `id` | A megadott módosítási esemény egyedi azonosítója. Ez az azonosító biztosítja, hogy ha a szolgáltatással való kommunikáció meghiúsul a feladás során, a rendszer ne számolja kétszer ugyanazt az eseményt, ha újra beküldi. |
+| `id` | A megadott módosítási esemény egyedi azonosítója. Ha szolgáltatáshiba miatt újraküldés történik, akkor ezt az azonosítót használja a rendszer annak biztosítására, hogy ugyanazt az eseményt ne számolják kétszer a rendszerben. |
 | `organizationId` | Az eseményhez kapcsolódó szervezet azonosítója. Ez az érték a Supply Chain Managementtben egy szervezet vagy adatterület azonosítójához van hozzárendelve. |
 | `productId` | A termék azonosítója. |
 | `quantities` | Az a mennyiség, amellyel a készleten lévő mennyiséget módosítani kell. Például, ha 10 új könyv kerül a polcra, ez az érték `quantities:{ shelf:{ received: 10 }}` lesz. Ha három könyvet levesznek a polcról vagy eladnak, ez az érték `quantities:{ shelf:{ sold: 3 }}` lesz. |
@@ -178,7 +180,7 @@ A következő táblázat összefoglalja a JSON-törzs egyes mezőinek jelentés�
 | `dimensions` | Dinamikus kulcs-érték pár. Az értékek a Supply Chain Management néhány dimenziójához vannak rendelve. Azonban egyéni dimenziókat is hozzáadhat (például _Forrás_), hogy jelezze, hogy az esemény a Supply Chain Managementtből vagy egy külső rendszerből származik. |
 
 > [!NOTE]
-> A `SiteId` és a `LocationId` paraméterek építik fel a [partíciókonfigurációt](inventory-visibility-configuration.md#partition-configuration). Ezért ezeket a dimenziókban kell megadni a készletmódosítási események létrehozásakor, a készleten lévő mennyiségek beállításakor vagy felülbírálásakor, illetve a foglalási események létrehozásakor.
+> A `siteId` és a `locationId` paraméterek építik fel a [partíciókonfigurációt](inventory-visibility-configuration.md#partition-configuration). Ezért ezeket a dimenziókban kell megadni a készletmódosítási események létrehozásakor, a készleten lévő mennyiségek beállításakor vagy felülbírálásakor, illetve a foglalási események létrehozásakor.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Egy kézben lévő változtatási esemény létrehozása
 
@@ -216,14 +218,14 @@ A következő példa a törzs tartalmának mintáját mutatja. Ebben a mintában
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
+    "organizationId": "SCM_IV",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "PosMachineId": "0001",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "posMachineId": "0001",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -238,12 +240,12 @@ A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -293,13 +295,13 @@ A következő példa a törzs tartalmának mintáját mutatja.
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_1",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId&quot;: &quot;0001"
+            "posSiteId": "posSite1",
+            "posLocationId": "posLocation1",
+            "posMachineId&quot;: &quot;0001"
         },
         "quantities": {
             "pos": { "inbound": 1 }
@@ -307,12 +309,12 @@ A következő példa a törzs tartalmának mintáját mutatja.
     },
     {
         "id": "654321",
-        "organizationId": "usmf",
-        "productId": "Pants",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_2",
         "dimensions": {
-            "SiteId": "1",
-            "LocationId": "11",
-            "ColorId&quot;: &quot;black"
+            "siteId": "iv_postman_site",
+            "locationId": "iv_postman_location",
+            "colorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -362,13 +364,13 @@ A következő példa a törzs tartalmának mintáját mutatja. Az API viselkedé
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
+        "organizationId": "SCM_IV",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-             "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId": "0001"
+            "posSiteId": "iv_postman_site",
+            "posLocationId": "iv_postman_location",
+            "posMachineId": "0001"
         },
         "quantities": {
             "pos": {
@@ -381,7 +383,7 @@ A következő példa a törzs tartalmának mintáját mutatja. Az API viselkedé
 
 ## <a name="create-reservation-events"></a>Foglalási események létrehozása
 
-A *Foglalási* API használatához meg kell nyitnia a foglalási funkciót, és ki kell töltenie a foglalási konfigurációt. További információért lásd: [Foglalási konfiguráció (opcionális)](inventory-visibility-configuration.md#reservation-configuration).
+A Foglalás API használatához *be* kell kapcsolni a foglalási funkciót, és be kell fejeződnie a foglalási konfiguráció. További információért lásd: [Foglalási konfiguráció (opcionális)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Egy foglalási esemény létrehozása
 
@@ -389,7 +391,7 @@ Különböző adatforrás-beállítások alapján is lehet foglalást indítani.
 
 A foglalási API hívása esetén a foglalások érvényességének ellenőrzése a logikai `ifCheckAvailForReserv` paraméter megadásával szabályozható a kérelemtörzsben. A `True` érték azt jelenti, hogy ellenőrzés szükséges, míg a `False` érték azt, hogy az ellenőrzés nem kötelező. Az alapértelmezett érték a `True`.
 
-Ha érvényteleníteni szeretne egy foglalást, vagy le szeretné foglalni a megadott készleten lévő mennyiségeket, állítsa a mennyiséget negatív értékre, és állítsa be a `ifCheckAvailForReserv` paramétert `False` értékre az ellenőrzés kihagyása céljából.
+Foglalás sztornírozása vagy a foglalás nélküli készletmennyiségek foglalása esetén állítsa a mennyiséget negatív értékre, `ifCheckAvailForReserv``False` és állítsa be a paramétert az ellenőrzés kihagyása céljából. Ugyanekhez egy külön, nem lefoglalásra szolgáló API is van. A különbség csak a két API meghívása szerint van így. Egy bizonyos foglalási esemény sztornírozható `reservationId`*a nem foglalási API használatával*. A további tudnivalókat lásd [_a Foglalatlan egy foglalási esemény szakaszban_](#reverse-reservation-events).
 
 ```txt
 Path:
@@ -427,24 +429,36 @@ A következő példa a törzs tartalmának mintáját mutatja.
 ```json
 {
     "id": "reserve-0",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "quantity": 1,
     "quantityDataSource": "iv",
-    "modifier": "softreservordered",
+    "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red",
-        "SizeId&quot;: &quot;Small"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red",
+        "sizeId&quot;: &quot;small"
     }
 }
 ```
 
+A következő példa bemutatja a sikeres választ.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "id": "ohre~id-822-232959-524",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+``` 
+
 ### <a name="create-multiple-reservation-events"></a><a name="create-multiple-reservation-events"></a>Több foglalási esemény létrehozása
 
-Ez az API az [egyszeri esemény API](#create-one-reservation-event) tömeges változata.
+Ez az API az [egyszeri esemény API](#create-reservation-events) tömeges változata.
 
 ```txt
 Path:
@@ -480,9 +494,107 @@ Body:
     ]
 ```
 
+## <a name="reverse-reservation-events"></a>Foglalási események sztornírozése
+
+A *Foglalási események sztornírozó műveleteként* a Unreserve [*API szolgál*](#create-reservation-events). Lehetőséget nyújt arra, hogy visszavonjon egy foglalási eseményt, amelyet `reservationId` a foglalási mennyiség meghatároz vagy csökkenti.
+
+### <a name="reverse-one-reservation-event"></a><a name="reverse-one-reservation-event"></a> Egy foglalási esemény sztorníroza
+
+Foglalás létrehozása esetén szerepelni fog a `reservationId` válasz törzse. Ahhoz, hogy törölve legyen a `reservationId` foglalás, ugyanazt meg kell adnia, `organizationId``dimensions` és ugyanezeket kell használni a foglalási API-híváshoz is. Végül adjon meg egy `OffsetQty` értéket, amely az előző foglalásból felszabadítható cikkek számát jelzi. A foglalás a megadott értéktől függően részben vagy teljesen sztornírozható `OffsetQty`. Ha például *100* egység cikk volt lefoglalva, megadhatja, `OffsetQty: 10`*hogy a kezdeti lefoglalt összegből 10-et* foglal le.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        reservationId: string,
+        dimensions: {
+            [key:string]: string,
+        },
+        OffsetQty: number
+    }
+```
+
+A következő kód a törzstartalomra vonatkozó példát mutat be.
+
+```json
+{
+    "id": "unreserve-0",
+    "organizationId": "SCM_IV",
+    "reservationId": "RESERVATION_ID",
+    "dimensions": {
+        "siteid":"iv_postman_site",
+        "locationid":"iv_postman_location",
+        "ColorId": "red",
+        "SizeId&quot;: &quot;small"
+    },
+    "OffsetQty": 1
+}
+```
+
+A következő kód egy példát mutat be a sikeres válasz törzsére.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "totalInvalidOffsetQtyByReservId": 0,
+    "id": "ohoe~id-823-11744-883",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+```
+
+> [!NOTE]
+> Ha a válasz törzse kisebb `OffsetQty` vagy egyenlő a foglalási mennyiségnél, `processingStatus` az "*sikeres*" `totalInvalidOffsetQtyByReservId`*és 0 lesz*.
+>
+> Ha `OffsetQty` nagyobb, mint a lefoglalt összeg, akkor "`processingStatus` részleges *·*`totalInvalidOffsetQtyByReservId` mennyiség", `OffsetQty` és ez lesz a különbség és a lefoglalt összeg között.
+>
+>Ha például a *foglalás mennyisége 10*, `OffsetQty`*és az értéke 12*, `totalInvalidOffsetQtyByReservId`*akkor 2.*
+
+### <a name="reverse-multiple-reservation-events"></a><a name="reverse-multiple-reservation-events"></a> Több foglalási esemény sztornírozése
+
+Ez az API az [egyszeri esemény API](#reverse-one-reservation-event) tömeges változata.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        {
+            id: string,
+            organizationId: string,
+            reservationId: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            OffsetQty: number
+        }
+        ...
+    ]
+```
+
 ## <a name="query-on-hand"></a>Készleten lévő lekérdezés
 
-Az aktuális _készlet lekérdezési API-ja_ segítségével lekérheti a termékek aktuális készletének adatait. Az API jelenleg legfeljebb 100 különálló cikk érték alapján való lekérdezését `ProductID` támogatja. Az `SiteID` egyes `LocationID` lekérdezések több és több értéket is meg lehet adni. A maximális korlát a következőként van meghatározva:`NumOf(SiteID) * NumOf(LocationID) <= 100`
+Az aktuális *készlet lekérdezési API-ja* segítségével lekérheti a termékek aktuális készletének adatait. Az API jelenleg legfeljebb 5000 `productID` különálló cikk érték alapján való lekérdezését támogatja. Az `siteID` egyes `locationID` lekérdezések több és több értéket is meg lehet adni. A maximális korlátot a következő egyenlet határozza meg:
+
+*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Lekérdezés a post módszer használatával
 
@@ -517,7 +629,7 @@ A kérés törzsrészében a `dimensionDataSource` még mindig egy választható
 - `productId` A(0) <a0/<a0/<a2/<a Ha ez egy üres tömb, a rendszer az összes terméket visszaküldi.
 - A `siteId` és a `locationId` particionálásra használatosak a Készletláthatóságban. Egynél több `siteId` és `locationId` értéket is megadhat az *Készleten lévő lekérdezés* kérésben. Az aktuális verzióban meg kell adnia a `siteId` és a `locationId` értékeket is.
 
-A `groupByValues` paraméternek követnie kell az indexelés konfigurációját. További információért lásd: [Termékindex-hierarchia konfigurálása](./inventory-visibility-configuration.md#index-configuration).
+Javasoljuk, hogy a paraméter használatával `groupByValues` kövesse az indexelés konfigurációját. További információért lásd: [Termékindex-hierarchia konfigurálása](./inventory-visibility-configuration.md#index-configuration).
 
 A `returnNegative` paraméter szabályozza, hogy az eredmények tartalmaznak-e negatív bejegyzéseket.
 
@@ -530,13 +642,13 @@ A következő példa a törzs tartalmának mintáját mutatja.
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["T-shirt"],
-        "siteId": ["1"],
-        "LocationId": ["11"],
-        "ColorId": ["Red"]
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
+        "colorId": ["red"]
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -546,12 +658,12 @@ A következő példa bemutatja, hogyan lehet lekérdezni egy adott telephely és
 ```json
 {
     "filters": {
-        "organizationId": ["usmf"],
+        "organizationId": ["SCM_IV"],
         "productId": [],
-        "siteId": ["1"],
-        "LocationId": ["11"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -574,10 +686,10 @@ Query(Url Parameters):
     [Filters]
 ```
 
-Íme egy minta URL-cím. Ez a get-kérés pontosan megegyezik a korábban megadott post-mintával.
+Ez egy minta bejedő URL-címe. Ez a get-kérés pontosan megegyezik a korábban megadott post-mintával.
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
 ## <a name="available-to-promise"></a>Ígérethez rendelkezésre áll

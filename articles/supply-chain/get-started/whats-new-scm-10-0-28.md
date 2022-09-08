@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334775"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9404425"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.28 szolgáltatásban (2022. augusztus)
 
@@ -35,8 +35,8 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 |---|---|---|---|
 | Készlet és logisztika | [Partraszállítási költségintegrációs entitások harmadik fél fuvarozói számára](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Partraszállási költség entitásai – áttekintés](../landed-cost/landed-cost-entities-overview.md) | Alapértelmezés szerint engedélyezve |
 | Tervezés | [Igényalapú anyagszükséglet-tervezés (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md) | Funkciókezelés:<br>*(Előzetes verzió) DDMRP a Tervezési optimalizáláshoz* |
-| Tervezés | [Tervezési optimalizálás támogatása ígérő (CTP) funkciókhoz](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | [Értékesítési rendelés szállítási dátumának számítása az "CTP" módszer használatával](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | Funkciókezelés:<br>*(Előzetes verzió) CTP a Tervezési optimalizáláshoz* |
-| Tervezés | [Tervezési optimalizálás támogatása eltarthatósági idő esetén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | [Korlátozott eltarthatósági időű termékek alaptervezése](../master-planning/planning-optimization/shelf-life.md) | Alapértelmezés szerint engedélyezve |
+| Tervezés | [Tervezési optimalizálás támogatása ígérő (CTP) funkciókhoz](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | [Értékesítési rendelés szállítási dátumának számítása az ígérhető használatával](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | Funkciókezelés:<br>*(Előzetes verzió) CTP a Tervezési optimalizáláshoz* |
+| Tervezés | [Tervezési optimalizálás támogatása eltarthatósági idő esetén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | [Korlátozott eltarthatósági idejű termékek alaptervezése](../master-planning/planning-optimization/shelf-life.md) | Alapértelmezés szerint engedélyezve |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>A kiadásban található funkciófejlesztések
 
@@ -50,7 +50,7 @@ Ha bármelyik funkciót be szeretné kapcsolni, akkor ezt a [funkciókezelésben
 | Készlet- és raktárkezelés | (India) A transzferár-szabályoknál hagyja figyelmen kívül a helyet, ha a „Feladó raktár kódja” beállítása „Mind” | <p>Ez a funkció csak az indiai honosításra vonatkozik. Ez teszi a készletátvitel során a cikkek transzferárának beállítását még inkább.</p><p>Az át transzferárakat az egyes cikkek áthozó árképzési szabályokkal való beállításával lehet beállítani. Ennek a konfigurálásnak az egyik módja, ha egy olyan szabálysort is beállít, amelyben a **Cél** raktárkód mező az Összes beállításra *van állítva*. Ez a beállítás azt jelzi, hogy a sorban meghatározott áthozott árnak attól függetlenül érvényesnek kell lennie, hogy a cikket kitárlják. Ha ez a funkció engedélyezve van, **·** *akkor* az olyan árszabályok átvitele, amelyekben a Cél raktárkód mező beállítása Mind, figyelmen kívül hagyja a Hely **beállítást.** Ennek megfelelően a szabály az átrendelésen megadott helytől függetlenül érvényes lesz. Valószínűleg ez a viselkedés várható, mivel a hely a tárolási dimenzióhierarchiában a raktár alatt van.</p><p>E szolgáltatás nélkül a rendszer csak akkor alkalmazza az ilyen típusú szabályokat, ha az átrendelt rendelés helye pontosan megegyezik azzal a helyről, amely a szabályhoz be van állítva. (Ha a szabályhoz üres hely van beállítva, a rendszer csak azokra az átvitelrendelésre alkalmazza a szabályt, amelyeknél a hely üres értékkel még be van állítva.)</p> |
 | Készlet- és raktárkezelés | Aktuális készlet jelentés adatainak tisztítása | Ez a funkció lehetőséget nyújt az *Aktuális készlet jelentés tárolási jelentésének létrehozásához használt adatok tisztítására*. |
 | Gyártásvezérlés | Projekttevékenységek hozzárendelése szolgáltatási szerződéshez és szervizrendelési sorhoz | Ez a funkció hozzáad egy Projekttevékenység nevű mezőt a **szolgáltatási** szerződéshez és a szervizrendeléssorhoz, így beállíthatja számukra a projekttevékenységet. A funkció segít megakadályozni a blokkolási hibákat, amikor feladja a szolgáltatáskezelési projekt olyan naplóit, amelyekhez projekttevékenységet kell beállítani.  |
-| Raktárkezelés | Manuális transzfersor kitárolási szolgáltatása felügyeleti vagy hasonló megbízható felhasználók számára | Ez a funkció lehetővé teszi a rendszergazdák számára, hogy manuálisan kitárják az áthozott sorokhoz kapcsolódó készlettranzakciókat. A sorok olyan sorokat tartalmaznak, amelyek már ki vannak adva a raktárba. A rendszergazdáknak csak kivételes esetekben szabad ezt a kitárolást tenni, például ha a rendszer sérült állapotban van. |
+| Raktárkezelés | Manuális transzfersor kitárolási szolgáltatása felügyeleti vagy hasonló megbízható felhasználók számára | Ez a funkció lehetővé teszi a rendszergazdák számára, hogy manuálisan kitárják az áthozott sorokhoz kapcsolódó készlettranzakciókat. A sorok olyan sorokat tartalmaznak, amelyek már ki vannak adva a raktárba. A rendszergazdáknak csak kivételes esetekben szabad ezt a kitárolást tenni, például ha a rendszer sérült állapotban van. További információ az értékesítési és [átátviteli sorok kitárolási kivételének manuális kezelésében található](../warehousing/manual-order-line-picking-exception-handling.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 

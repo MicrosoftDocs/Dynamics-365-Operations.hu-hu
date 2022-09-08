@@ -2,7 +2,7 @@
 title: Rácsfunkciók
 description: Ez a témakör a rácsvezérlő számos hatékony funkcióját ismerteti. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a8968a1263dfafd67b07b4beb78c51493e95756e
-ms.sourcegitcommit: 47534a943f87a9931066e28f5d59323776e6ac65
+ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9258947"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405465"
 ---
 # <a name="grid-capabilities"></a>Rácsfunkciók
 
@@ -178,20 +178,22 @@ A **Új rácsvezérlő** funkció elérhető közvetlenül a Funkciókezelésben
 
 A funkció alapértelmezés szerint a 10.0.21 verzióban indult el. A cél az, hogy kötelezővé váljon 2022. októberben.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Fejlesztő] Egyes oldalak elutasítása az új rács használatából 
+## <a name="developer-topics"></a>Fejlesztői témakörök
+
+### <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Fejlesztő] Egyes oldalak elutasítása az új rács használatából 
 Ha a szervezet egy olyan oldalt észlel, amelyen problémák lépnek fel az új rács használata miatt, akkor egy API felület lehetővé teszi, hogy az egyes űrlapok használhassák a régi rácsvezérlőt, miközben a rendszer további részei az új rácsvezérlőt használják. Ha el szeretné utasítani az egyes oldalakat az új rácsból, adja hozzá a következő hívásfeladást `super()` az űrlap `run()` módjához.
 
 ```this.forceLegacyGrid();```
 
 Az API-t előbb-külön elavulttá teszi a rendszer, hogy eltávolítsa az örökölt rácsvezérlőt. Azonban az értékcsökkenés visszahozaját követően legalább 12 hónapra elérhető marad. Ha bármilyen probléma az API használatát igényli jelentse azokat a Microsoftnak.
 
-### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Új rács használatának kikényszerítése egy laphoz a rács korábbi elutasítását követően
+#### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Új rács használatának kikényszerítése egy laphoz a rács korábbi elutasítását követően
 Ha az új rács használatát egy adott oldalra vonatkozóan elutasította, akkor az alapproblémák megoldása után később érdemes lehet újra engedélyeznie az új rácsot. Ehhez egyszerűen el kell távolítania a következő hívását: `forceLegacyGrid()`. A módosítás csak akkor lép hatályba, ha az alábbiak valamelyike bekövetkezik:
 
 - **Környezet újratelepítése**: Amikor egy környezetet frissítenek és újratelepítenek, az új rácsból (FormControlReactGridState) elutasított lapokat tároló táblázat automatikusan törlődik.
 - **Tábla kézi törlése**: Fejlesztési forgatókönyvek esetén SQL segítségével törölni kell a FormControlReactGridState táblát, majd újra kell indítani az AOS-t. Ez a műveletkombináció visszaállítja az új rácshálót elutasító lapok gyorsítótárazását.
 
-## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Fejlesztő] Egyes rácsok kivéte a beírást a rendszer képességtől eltolása
+### <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Fejlesztő] Egyes rácsok kivéte a beírást a rendszer képességtől eltolása
 Bizonyos helyzetekben nem *lehet* megfelelően dolgozni a rács rendszer-előre történő beírásával. (Például néhány olyan kód, amely akkor aktiválódik, amikor egy sor ellenőrzése történik, egy adatforrás-kutatás kiváltása történik, és a kutatás a meglévő sorok nem véglegesített szerkesztései lesznek.) Ha a szervezet ilyen helyzetet fedez fel, akkor egy API áll rendelkezésre, amellyel a fejlesztő ki tudja választani az aszinkron sorellenőrzést, és visszaáll az örökölt viselkedésre.
 
 Ha egy rácsban le van tiltva az aszinkron sorellenőrzés, akkor a felhasználók nem hozhatnak létre új sort, és nem ugorhatnak át a rács egy másik meglévő sorára, amíg az aktuális sorban ellenőrzési problémák vannak. Ennek a műveletnek az a oldala, hogy az Excelből nem lehet táblákat berakodni a pénzügyi és műveleti rácsba.
@@ -204,13 +206,18 @@ Ha ki szeretne választani egy rácsot az aszinkron sorellenőrzésből, `super(
 > - Ez a hívás csak kivételes esetekben hívható meg, és nem lehet norma az összes rácshoz.
 > - Nem ajánlott az API-t futásidőben ki- és bekapcsolni a képernyő betöltése után.
 
-## <a name="developer-size-to-available-width-columns"></a>[Fejlesztői] Oszlopok rendelkezésre álló szélességre méretezése
+### <a name="developer-size-to-available-width-columns"></a>[Fejlesztői] Oszlopok rendelkezésre álló szélességre méretezése
 Ha egy fejlesztő beállítja a **WidthMode** tulajdonságot **SizeToAvailable** értékre az új rácsban található oszlopokhoz, akkor ezek az oszlopok kezdetben ugyanolyan szélességgel rendelkeznek, mintha a tulajdonság **SizeToContent** értékre lenne állítva. A rácson belül azonban képesek kiszélesedni, hogy kihasználják az extra elérhető helyet. Ha a tulajdonság több oszlopnál **SizeToAvailable** értékre van állítva, akkor az egyes oszlopok a rácson belül a további rendelkezésre álló szélességet osztják fel. Ha viszont a felhasználó manuálisan átméretezi az egyik oszlopot, akkor az oszlop statikus lesz. Ezen a szélességen marad, és a rendszer nem nyúlik tovább, hogy kihasználja az extra elérhető szélességet.
 
-## <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Fejlesztő] Annak az oszlopnak a megadása, amely a kezdeti fókuszt fogadja, amikor új sorokat hoz létre a Lefelé nyíl billentyűvel
+### <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Fejlesztő] Annak az oszlopnak a megadása, amely a kezdeti fókuszt fogadja, amikor új sorokat hoz létre a Lefelé nyíl billentyűvel
 [Mint](#differences-when-entering-data-ahead-of-the-system) azt a Különbségek szakaszban is leírták, amikor a rendszerszakasz előtt beírták az adatokat, ha engedélyezve van a "Rendszer előreírása" képesség, és a felhasználó a **Le** nyílgomb használatával létrehoz egy új sort, akkor az alapértelmezett viselkedés az új sor első oszlopában található fókusz. Ez a tapasztalat eltérhet az **örökölt** rácsban vagy az Új gomb kiválasztásakor meglévő tapasztalattól.
 
 A felhasználók és a szervezetek adatbevitelre optimalizált mentett nézeteket hozhatnak létre. (Át lehet például rendezni az oszlopokat, hogy az első oszlop az, amelybe az adatokat be szeretné írni.) Ezenkívül a 10.0.29-es **verziótól a szervezetek a kiválasztottControlOnCreate()** metódussal módosíthatják ezt a viselkedést. Ezzel a módszerrel a fejlesztők megadhatják azt az oszlopot, amely a **le nyílgomb használatával új sor létrehozása esetén a kezdeti fókuszt kapja**. Bemenetként ez az API a kezdeti fókuszt kapó oszlopnak megfelelő vezérlőazonosítót veszi át.
+
+### <a name="developer-handling-grids-with-non-react-extensible-controls"></a>[Fejlesztő] Rácsok kezelése nem extensible vezérlőkkel
+Ha betölt egy rácsot, és a rendszer egy olyan extenzhető vezérlőt észlelt, amely nem Visszacsatolva, akkor a rendszer arra kényszeríti az örökölt rácsot, hogy ehelyett megjelenítsen. Amikor a felhasználó először ilyen helyzetben van, egy üzenet jelenik meg, amely jelzi, hogy frissíteni kell az oldalt. Ezután a következő rendszerfrissítésig ez a lap automatikusan betölti az örökölt rácsot, anélkül, hogy a felhasználókat értesíte volna. 
+
+Ha véglegesen kioktathatja ezt a helyzetet, akkor a ki nem használható vezérlő létrehozható a rácson való használatra az ellenőrzés Egy Olyan változata, amely a Verziókban használható.  A fejlesztést után a vezérlő X++ **osztálya kompatibilis lehet a FormReactControlAttribute** attribútummal, hogy meghatározza az adott vezérlőelem Berakodható csomagja helyét. Példaként `SegmentedEntryControl` tekintse meg az osztályt.  
 
 ## <a name="known-issues"></a>Ismert problémák
 Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tartalmazza.
@@ -218,9 +225,12 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tartalmazza.
 ### <a name="open-issues"></a>Nyitott problémák
 - Az **Új rácsvezérlő** funkció engedélyezése után néhány oldal továbbra is a meglévő rácsvezérlőt fogja használni. Ez a következő helyzetekben fog történni:
  
-    - Egy kártyalista szerepel azon az oldalon, amely több oszlopban jelenik meg.
-    - Egy csoportosított kártyalista szerepel az oldalon.
-    - Nem reagáló bővíthető vezérlővel rendelkező rácsoszlop.
+    - [Feloldott] Egy kártyalista létezik azon a lapon, amely több oszlopban jelenik meg.
+        - Ezt a kártyalistát támogatja az **Új** rácsvezérlő a 10.0.30-as verziótól kezdve. A forceLegacyGrid() alkalmazásnak erre a célra történő bármilyen használata eltávolítható. 
+    - [Feloldott] A lapon létezik csoportosított kártyalista.
+        - A csoportosított kártyalistákat a **10**.0.30-as verziótól kezdődő új rácsvezérlő támogatja. A forceLegacyGrid() alkalmazásnak erre a célra történő bármilyen használata eltávolítható. 
+    - [Feloldott] Rácsoszlop, amely nem kizárólagos vezérlővel van együtt.
+        - A extensible vezérlők a rácsba helyezésekkor betöltődik ellenőrzésük "Visszahozva" verzióját biztosítják, és a vezérlő definícióját be lehet állítani, hogy a rácsban használt vezérlő betölthető legyen. További részleteket a megfelelő fejlesztő szakaszban talál. 
 
     Amikor egy felhasználó először találkozik egy ilyen helyzettel, egy üzenet jelenik meg az oldal frissítésével kapcsolatban. Az üzenet megjelenése után az oldal a következő termékfrissítési verzióig továbbra is a meglévő rácsot használja az összes felhasználó számára. A jövőbeli frissítéshez figyelembe kell venni ezeket a forgatókönyveket, hogy az új rács használható legyen.
 

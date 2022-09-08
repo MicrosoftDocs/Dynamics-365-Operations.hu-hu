@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313883"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410450"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult szolgáltatások a Dynamics 365 Finance alkalmazásban
 
@@ -32,6 +32,20 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > [!NOTE]
 > A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük azokat az objektumokat, amelyek megváltoztak vagy el vannak távolítva a pénzügyi és műveleti alkalmazások egyes verzióiban.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.30 kiadásában
+
+### <a name="revenue-recognition"></a>Bevételelszámolás
+
+[Bevételelszámolás](../../finance/accounts-receivable/revenue-recognition-overview.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Elavulás/eltávolítás oka** |Továbbfejlesztett funkcióval, [előfizetéses számlázással helyettesítve](../../finance/accounts-receivable/subscription-billing-summary.md)
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek** | Alkalmazás |
+| **Telepítési beállítás** | Minden |
+| **Állapot** | Elavult: 2023 áprilisa után a Dynamics 365 Pénzügy árbevétel-kimutatási funkciói a továbbiakban nem fognak támogatást kapni a hibajavítások használatához. A vevőktől a továbbfejlesztett funkció, [az előfizetéses számlázás használatát kéri a rendszer](../../finance/accounts-receivable/subscription-billing-summary.md). 2023 októberében a Bevétel-kimutatás funkció már nem lesz elérhető. A vevőknek át kell lépniük a továbbfejlesztett előfizetési számlázási funkciókra.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.29 kiadásában
 

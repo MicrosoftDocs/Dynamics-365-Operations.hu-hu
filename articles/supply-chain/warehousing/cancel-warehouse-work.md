@@ -1,6 +1,6 @@
 ---
 title: A kivétel kezelésére vonatkozó raktári munka visszavonása
-description: Ez a témakör a Munka visszavonása funkciót írja le, amely a raktárvezetők számára a zárolt munkát kezeli.
+description: Ez a témakör a munka megszakítására használható funkciókat írja le, amelyek segítségével a raktárvezetők kezelni tudnák a zárolt munkát.
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
@@ -13,31 +13,31 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a5c0cc988141b102cf3659ab4599e025f8f4640
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b1e2036e4e7a8a47d6df029f285df7aca0fa74e6
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907174"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9404421"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>A kivétel kezelésére vonatkozó raktári munka visszavonása
 
 [!include [banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 Supply Chain Management Munk érvénytelenítése funkciója lehetővé teszi az adminisztrátor felhasználó számára, hogy jelenleg folyamatban lévő konkrét raktári munkát töröljön, de amit a rendszer blokkolt, vagy nem hajtható végre rendkívüli körülmények miatt. Ez a funkció vonzó és biztonságos alternatívája az SQL-javító parancsfájloknak, amelyek a nem konzisztens adatokat javítják. Azonban mivel ezeket a parancsfájlokat általában informatikai szakemberektől kell kérni, a munka visszavonása funkciót a vállalat rendszergazdai jogosultságokkal rendelkező felhasználói használhatják.
+A Microsoft Dynamics 365 Supply Chain Management visszavonási funkciói lehetővé teszi a rendszergazda felhasználó számára a jelenleg folyamatban lévő, de a rendszer által blokkolt, illetve kivételes körülmények miatt nem teljesíthető raktári munkát. Ez a funkció vonzó és biztonságos alternatívája az SQL-javító parancsfájloknak, amelyek a nem konzisztens adatokat javítják. Bár ezeket a forgatókönyveket jellemzően informatikai szakemberek kérik, a visszavonási funkciókat a vállalat rendszergazdai jogokkal dolgozó felhasználói használhatja.
 
-A Munka érvénytelenítése funkciót a **Raktárkezelési** \> **Ismétlődő feladatok** \> **Tisztítás \> Munka érvénytelenítése** helyen érheti el. A **Munka érvénytelenítése** párbeszédpanelen adja meg az érvényteleníteni kívánt munka munkaazonosítóját, majd kattintson az **OK** gombra.
+A Mégse funkcióhoz **a** \> **·** \> **Raktárkezelés időszakos feladatai – A mégse munka törlése funkció is \> elérhető.** A **Munka érvénytelenítése** párbeszédpanelen adja meg az érvényteleníteni kívánt munka munkaazonosítóját, majd kattintson az **OK** gombra.
 
 ## <a name="warehouse-work-that-can-be-canceled"></a>Nem érvényteleníthető raktári munka
 
 A raktári kitárolási műveletek során előfordulhat, hogy a dolgozó olyan helyzetekkel találkozik, amikor a tárolási helyről bejegyezték a saját felhasználói helyükre, de ekkor nem tudják regisztrálni a betárolási műveletet. Az inkonzisztens raktári adatok gyakran, de nem mindig a munka blokkolásának okát jelentik.
 
-A szokásos Érvénytelenítés funkcióval szemben, amely az **Érvénytelenítés** gombbal érhető el a munka fejlécében a Munka érvénytelenítése funkcióhoz nem szükséges, hogy az utolsó befejezett munkasor **betárolás** típusú legyen. Más szóval a munka érvénytelenítése funkció esetében a visszavonási logika akkor is futtatható, ha egy munkasorban szereplő cikkmennyiség egy felhasználói helyen van.
+**Ellentétben** a rendszeres visszavonási funkcióval, amely a munkafejléc Mégse gombjával érhető el, a mégse munkafunkcióhoz nem szükséges, hogy az **utolsó** befejezett munkasor berakodva legyen. Más szóval a munka visszavonása esetén az érvénytelenítési logika akkor is futtatható, ha a munkasor cikkmennyisége felhasználói helyen van.
 
 > [!NOTE]
-> A működési okokból érvénytelenítendő munkákhoz a raktári felhasználók toovábbra is a szokásos Érvénytelenítés funkciót kell használják a munka oldalon.
+> Olyan munka esetén, amely üzemeltetési okokból vissza kell függesnie a raktári felhasználóktól, a munkalapon továbbra is a szokásos megszakítási funkciókat kell használniuk.
 
-A munka visszavonása funkcióval csak az **Értékesítés**, **Átmozgatási probléma** **Nyersanyag kitárolása** vagy **Újratöltés** típusok érvényteleníthetők. Az érvénytelenítési logika nem futtatható a nyersanyag-kitárolási munkához vagy olyan munkához, amelyet a szokásos megszakítás funkcióval is érvényteleníteni lehet (lásd az előző megjegyzést).
+Csak az Értékesítés, Áttárolási **·** **kiadás**, Nyersanyag-kitárolás **·** **vagy** Feltöltés típusú munka érvénytelenedhet a munka megszakítása funkcióval. A befagyasztott nyersanyag-kitárolási munkához vagy az általános érvénytelenítési funkcióval visszavonható munkához nem lehet érvénytelenítési logikát futtatni (lásd az előző megjegyzést).
 
 A munka blokkolásának feloldásához a rendszer törli a hátralévő munkasorokat, és rögzíti a munkaazonosítóhoz társított felhasználó által megadott raktári adatokat. A program ezután folytatja az érintett cikkmennyiséget magába foglaló szokásos raktárkezelési műveleteket.
 

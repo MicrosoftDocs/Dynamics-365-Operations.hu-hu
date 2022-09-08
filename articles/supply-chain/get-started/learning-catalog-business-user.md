@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d43b9b331a8a88ac1282acc33dabe7b71bca57b7
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 82420ad8dae12e4a47290599a5bbd0d15a7f3c29
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124296"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423854"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management-felhasználók képzési katalógusa
 
@@ -29,7 +29,6 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 | Tartalom | Leírás | Formátum | Hossz |
 |---------|-------------|--------|--------|
-| [Ismerje meg a Microsoft Dynamics365, valamint a Power Platform üzleti értékét](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Érdeklik az üzleti alkalmazások? Talán nem tudja, hogyan kezdjen hozzá a Microsoft Dynamics 365 és Power Platform alkalmazások használatához? Ismerje meg, hogyan lehet az üzleti alkalmazások erejével segíteni a vállalkozás átalakításában. | Ingyenes, saját tempójú online tanulási útvonal | 8 óra |
 | [Dynamics 365 és Power Platform alapok](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez. | Ingyenes, saját tempójú online tanulási útvonal | 5.5 óra |
 | [A Pénzügy és műveletek alkalmazásokkal kapcsolatos első lépések](/learn/paths/get-started-finance-operations/) | Ismerje meg, hogy a pénzügyi és műveleti alkalmazások hogyan teszik lehetővé a vállalkozások számára globális pénzügyi rendszerük, a működési üzleti folyamatok és az ellátási lánc leegyszerűsítése által, hogy a személyeknek gyorsan és megalapozott döntéseket hozzanak. A pénzügy- és műveletalkalmazások használata során első lépésként meg kell ismerkednie annak funkcióival és funkcióival, függetlenül a kívánt szereptől. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
 | [Eszközkezelés indítása a Dynamics 365 Supply Chain Management szolgáltatáshoz](/learn/modules/get-started-asset-management/index) | Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Supply Chain Management rendszerben történő kezelésére szolgáló modul. Az Eszközkezeléssel hatékonyan kezelhető és hajtható végre a cég különféle típusú felszerelésének (pl. gépek, gyártási felszerelések, járművek) kezelésére és szervizelésére szolgáló összes feladat. Az Eszközkezelés több iparág megoldását támogatja. | Ingyenes, saját tempójú online tanulási modul | 1 óra |

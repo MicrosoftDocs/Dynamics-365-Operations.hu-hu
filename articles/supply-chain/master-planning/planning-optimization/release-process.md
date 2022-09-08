@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 45a35eb32cb9e51d9f63f6687808fb511f894887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5e8b4ab74bf973a131499799efa66e9c7fe9d5be
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873724"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9404443"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Tervezési optimalizálás kiadási folyamata és kiadási előzmények
 
@@ -33,6 +33,7 @@ Mivel az értesítések nem jelennek meg, amikor a környezetben frissítik a Te
 
 | Változások | Funkciókezelés részletei | Kiadási dátumok |
 |---|---|---|
+| <p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Nincs szükség funkciókezelésre. | 2022. augusztus 29. – szeptember 3. |
 | <p>Általános teljesítmény-, minőség- és stabilitásjavítások.<p>[Tervezési optimalizálás központosított naptár karbantartása](../supply-chain-calendars-master-planning.md)<p>[Tervezési optimalizálási javaslatok a meglévő készlet optimalizálása érdekében](../action-messages.md)<p>[Tervezési optimalizálás támogatása alvállalkozói szerződésekhez](../../production-control/manage-subcontract-work-production.md) | Nincs szükség funkciókezelésre. | 2022. március 7. 11. |
 | <p>A termelési rendelések tervezési prioritásának támogatása hozzáadva. | A 10.0.25-ös verzióban elérhető a *Tervezés optimalizálása prioritás által vezérelt MRP-támogatás nevű funkció részeként*. | 2021. november 12.18. |
 | <p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Nincs szükség funkciókezelésre. | 2021. november 12.18. |
