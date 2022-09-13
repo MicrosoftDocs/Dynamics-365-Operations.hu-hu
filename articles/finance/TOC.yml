@@ -12,6 +12,8 @@
               items:
                 - name: Újdonságok és változások a Finance szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.30 (november)
+                  href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (október)
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (augusztus)
@@ -1138,6 +1140,8 @@
                       href: general-ledger/subledger-transfer.md
                     - name: Könyvelési források böngészője
                       href: accounts-payable/accounting-source-explorer.md
+                    - name: Könyvelésre váró dokumentumok
+                      href: general-ledger/documents-pending-accounting.md
             - name: Jelentések és lekérdezések
               items:
                 - name: Naplóbejegyzések és tranzakciók megtekintése

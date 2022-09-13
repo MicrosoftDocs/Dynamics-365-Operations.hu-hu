@@ -3413,8 +3413,6 @@
                       href: warehousing/packing-work.md
                     - name: Rövid kitárolásra jelölt cikkek újbóli felosztásának beállítása
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                    - name: A kivétel kezelésére vonatkozó raktári munka visszavonása
-                      href: warehousing/cancel-warehouse-work.md
                     - name: Rendszer által irányított munka sorrendbe állítása
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Kitárolási sor csoportosítása
@@ -3429,8 +3427,12 @@
                       href: warehousing/outbound-sorting.md
                     - name: Falhoz helyez – üzletbe helyez
                       href: warehousing/put-to-wall-put-to-store.md
-                    - name: Kimenő munkaterhelések megjelenítése
+                    - name: Kimenő munkaterhelések vizualizációja
                       href: warehousing/outbound-workload-visualization.md
+                    - name: Értékesítési és átmozgatási sorok kitárolási kivételeinek manuális kezelés
+                      href: warehousing/manual-order-line-picking-exception-handling.md
+                    - name: A kivétel kezelésére vonatkozó raktári munka visszavonása
+                      href: warehousing/cancel-warehouse-work.md
                 - name: Feltöltés
                   items:
                     - name: Feltöltés áttekintése

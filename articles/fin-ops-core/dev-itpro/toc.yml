@@ -14,6 +14,8 @@
               items:
                 - name: Újdonságok és változások a platformfrissítések terén – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Platformfrissítések a 10.0.30-es verzióhoz (2022. november)
+                  href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Platformfrissítések a 10.0.29-es verzióhoz (2022. október)
                   href: get-started/whats-new-platform-updates-10-0-29.md
                 - name: Platformfrissítések a 10.0.28 verzióhoz (2022. augusztus)
