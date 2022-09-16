@@ -1,5 +1,5 @@
 ---
-title: Gyakori kérdések az aszinkron vevő-létrehozási módról
+title: Aszinkron vevőlétrehozási mód – GYIK
 description: Ez a cikk a vevők aszinkron létrehozási módjával kapcsolatos gyakori kérdésekre ad választ Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 08/04/2022
@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 35c999695ed33c4fc9731a5b8dd4d679cf55fa44
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: bd5741aeb3278f1d40d63bb02ca57571a907dc21
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9229973"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9474069"
 ---
-# <a name="asynchronous-customer-creation-mode-faq"></a>Gyakori kérdések az aszinkron vevő-létrehozási módról
+# <a name="asynchronous-customer-creation-mode-faq"></a>Aszinkron vevőlétrehozási mód – GYIK
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a cikk az aszinkron (async) vevő-létrehozási móddal kapcsolatos gyakori kérdésekre ad választ a következőben:Microsoft Dynamics 365 Commerce
 

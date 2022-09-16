@@ -2,7 +2,7 @@
 title: Termékajánlatok engedélyezése
 description: Ez a cikk bemutatja, hogy hogyan lehet a vevők számára elérhetővé tenni olyan termékajánlásokat, amelyek a visszaható intelligencia – gépi tanuláson (AI-FOG) alapulnak Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 08/31/2021
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dceec9e8e994a81b43cd5d1bd13970f2d246f40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc1b43fa70e6652d38b1141e2d93cf323f70a756
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892071"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460021"
 ---
 # <a name="enable-product-recommendations"></a>Termékajánlatok engedélyezése
 
@@ -36,12 +36,19 @@ Ez a cikk bemutatja, hogy hogyan lehet a vevők számára elérhetővé tenni ol
 1. Győződjön meg róla, hogy az Azure AD identitáskonfiguráció tartalmaz egy Ajánlási bejegyzést. A művelet végrehajtásával kapcsolatos további információk az alábbiakban láthatók.
 1. Győződjön meg arról, hogy az entitástár napi frissítése be lett ütemezve a Azure Data Lake Storage Gen2-höz. A további tudnivalókat lásd: [Győződjön meg róla, hogy az entitástár frissítés automatizált](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Engedélyezze a RetailSale-mértékeket az entitástárhoz. A folyamat beállításával kapcsolatos további tudnivalókat lásd: [Intézkedések használata](/dynamics365/ai/customer-insights/pm-measures).
+1. Győződjön meg arról, hogy a környezetben konfigurálva vannak az aktuálisan támogatott régiók kiszolgáló és régiói a következők szerint:
+
+    - **Támogatott érintett régiók:** EU/US/CA/AU.
+    - **Támogatott kiszolgáló régiók:** USA/CA/AU. Ha a kiszolgáló régió nem felel meg a meglévő támogatott régiók egyikének, az ajánlások szolgáltatás a legközelebb támogatott kiszolgáló régiót választja.
 
 A fenti lépések befejezése után készen áll az ajánlások engedélyezésére.
 
+> [!NOTE]
+> Van egy ismert probléma, ahol az ajánlások nem jelennek meg a következő lépések után. Ezt a problémát az adatáramlási problémák okozják a környezetben. Ha a környezetben nem mutatja az ajánlási eredményeket, konfigurálja az ajánlások szolgáltatásának alternatív adatait úgy, [hogy az ajánlásokhoz egy alternatív adatfolyamot hoz létre](set-up-alternate-data-flow.md). Ezekhez a lépésekhez azure rendszergazdai jogosultsággal kell rendelkeznie. Ha segítségre van szüksége, forduljon a FastTrack képviselőjhez.
+
 ## <a name="azure-ad-identity-configuration"></a>Azure AD identitáskonfiguráció
 
-Ezt a lépést csak az olyan vevőknek kötelező megadni, akik szolgáltatott infrastruktúra (IaaS) konfigurációt futtatnak. Az Azure AD identitáskonfiguráció automatikus a Azure Service Fabric-ben futó vevők esetében, de ajánlott ellenőrizni, hogy a beállítás az elvárásoknak megfelelően van-e konfigurálva.
+Ez a lépés csak akkor szükséges, ha a vevők szolgáltatáskonfigurációként (IaaS) futtatnak egy infrastruktúrát. Azure AD az identitás konfigurációja automatikus a Azure Service Fabric futó vevők esetében, de javasoljuk, hogy ellenőrizze, hogy a beállítás a várt módon van-e beállítva.
 
 ### <a name="setup"></a>Beállítás
 
@@ -94,9 +101,11 @@ Ha további tájékoztatást szeretne a személyre szabott ajánlásokról, lás
 
 [Az Azure Data Lake Storage engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
+[Alternatív adatfolyam beállítása ajánlásokhoz](set-up-alternate-data-flow.md)
+
 [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
 
-[A hasonlóak megvásárlására vonatkozó javaslatok engedélyezése](shop-similar-looks.md)
+[„Hasonló szettek vásárlása” javaslatok engedélyezése](shop-similar-looks.md)
 
 [Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
 
@@ -111,6 +120,7 @@ Ha további tájékoztatást szeretne a személyre szabott ajánlásokról, lás
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
 
 
 

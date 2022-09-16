@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: db8799aba8095c8144d878c96590e8d90276726b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334715"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428200"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.26 szolgáltatásban (2022. május)
 
@@ -36,7 +36,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 | Készlet és logisztika | [Készlet-láthatósági lekérdezés a speciális raktárkezelési cikkek támogatásához](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibility támogatása WMS-cikkekhez](../inventory/inventory-visibility-whs-support.md) | Funkciókezelés:<br>*Raktári cikkek engedélyezése a Készletláthatóság funkcióban* |
 | Készlet és logisztika | [Ígérethez rendelkezésre áll a készlet láthatósági bővítménye számára](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [A készlet láthatósága – az aktuális készlet változásának ütemezése, amely ígérethez rendelkezésre áll](../inventory/inventory-visibility-available-to-promise.md) | Szolgáltatáskonfiguráció által engedélyezve |
 | Gyártás | [A termelési emelet végrehajtási felületének cikkekkel súlyozott súlya](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*Jelentés a termelési üzem végrehajtási felületéről származó tényleges súly szerinti cikkekről* |
-| Gyártás | A saját feladatok lap a termelési üzem végrehajtási felületén <!-- KFM: Add link to release plan when available --> | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*A saját feladatok lap a termelési üzem végrehajtási felületén* |
+| Gyártás | A saját feladatok lap a termelési üzem végrehajtási felületén | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*A saját feladatok lap a termelési üzem végrehajtási felületén* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>A kiadásban található funkciófejlesztések
 

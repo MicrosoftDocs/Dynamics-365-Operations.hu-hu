@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.form: EROperationDesigner, ERParameters
-ms.openlocfilehash: 2feadf8e196936220cf557989cae40b742447d99
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: ff44226b7deb15bc673d121d62cad44309b5d78b
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280924"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476822"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -186,6 +186,9 @@ Ha egy **Cella**-összetevő úgy van beállítva, hogy egy Excel-képben érté
 
 > [!NOTE]
 > Minden Excel-kép és -alakzat a bal felső sarkától egy adott Excel-cellához vagy -tartományhoz van rögzítve. Ha Excel-képet vagy -alakzatot szeretne replikálni, konfigurálnia kell azt a cellát vagy tartományt, amelyhez a replikált cella vagy tartomány van rögzítve.
+
+> [!TIP]
+> Ha azt tervezi, hogy egyéni skálázást és oldalarányt használ futásidőben, akkor javasoljuk, **·**[hogy a szülő Excel-fájlösszetevő](#excel-file-component)**Képek** alkalmazása Igen beállítással adja meg, hogy a skálázás és a méretarány a használt Excel-sablonban helyőrzőként használja a skálázást és a méretarányt.
 
 Ha további tájékoztatást szeretne arról, hogyan lehet beágyazni a képeket és az alakzatokat, akkor a következő témakör tartalmaz további tájékoztatást: [Képek és alakzatok beágyazása a létrehozott dokumentumokban](electronic-reporting-embed-images-shapes.md).
 

@@ -2,7 +2,7 @@
 title: Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez
 description: Ez a cikk azt írja le, hogyan kell konfigurálni a menüelemeket, hogy a dolgozók információvesztés nélkül elvégezzék az aktuális feladatot, másik feladatot hajtsanak végre, majd térjenek vissza az eredeti feladathoz.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/01/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.dyn365.ops.version: 10.0.30
+ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336125"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428063"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez
 
@@ -35,8 +35,11 @@ Mielőtt eltereléseket állíthatna be a lépésekhez a mobileszköz menüeleme
 
 1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre.
 1. Győződjön meg arról, hogy a *Raktár alkalmazás lépéséhez* funkció be van kapcsolva a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A *Raktári alkalmazás lépésutasítások* funkciójával kapcsolatos további információkért lásd: [Lépéscímek és utasítások testreszabása a Warehouse Management mobilalkalmazáshoz](mobile-app-titles-instructions.md). Ez a funkció előfeltétele a *Warehouse Management alkalmazás elterelései* funkciónak.
-1. A Raktárkezelés *alkalmazás-hibakezelés funkció* bekapcsolása. Ez a funkció az ebben a cikkben ismertetett funkció. Az ellátásilánc-kezelés 10.0.29-es verziója alapértelmezés szerint be van kapcsolva.
-1. Ha még nem bekapcsolta a Raktárkezelés alkalmazás-hibakezelési szolgáltatást, frissítse a mezőneveket a Raktárkezelés mobilalkalmazásban *úgy, hogy a Raktárkezelés* **\>\>\> beállítása mobileszköz-alkalmazás mezőnevére vált, és az Alapértelmezett beállítás létrehozása lehetőséget választja.** **·** Ismételje meg ezt a lépést minden olyan jogi személynél (vállalatnál), ahol a Raktárkezelés mobilalkalmazást használja. ovábbi információ: [A Raktárkezelés mobilalkalmazás mezőinek konfigurálása](configure-app-field-names-priorities-warehouse.md).
+1. Az alábbi funkciók – amelyek az ebben a cikkben leírt funkciókat biztosítják – bekapcsolhatja:
+    - *A Warehouse Management alkalmazás kerülőútjai*<br>(Az Ellátásilánc-kezelés 10.0.29-es verziója alapértelmezés szerint be van kapcsolva.)
+    - *Többszintű megkerülések a Warehouse Management mobilalkalmazáshoz*
+1. Ha még nincs bekapcsolva a Raktárkezelés alkalmazás funkcióinak többszintű és/*vagy* többszintű hibakezelő alkalmazása, frissítse a mezőneveket a Raktárkezelés *mobilalkalmazásban úgy, hogy a Raktárkezelés* **\>\>\>** beállítása mobileszköz mezőnevére vált, és az Alapértelmezett beállítás létrehozása lehetőséget választja.**·** ovábbi információ: [A Raktárkezelés mobilalkalmazás mezőinek konfigurálása](configure-app-field-names-priorities-warehouse.md).
+1. Ismételje meg az előző lépést minden olyan jogi személynél (vállalatnál), ahol a Warehouse Management mobilalkalmazást használja.
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Elterelés konfigurálása menüspecifikus felülbírálásból
 
@@ -147,3 +150,6 @@ Ebben az eljárásban a Warehouse Management mobilalkalmazás használatával he
 1. Figyelje meg, hogy az azonosítótábla a kiválasztott kártyáról másolva lett. Az érték megerősítése.
 1. A mozgatás befejezéséhez követheti lehet a szokásos feladatfolyamatot. A munka befejezése után nyissa meg a Műveletek menüt, és válassza a **Mégse** lehetőséget.
 1. Visszatér a **Helylekérdezés** lapra. Ne feledje, hogy az értékek frissítése nem történik meg automatikusan. Emiatt manuálisan kell frissítenie a lapot ahhoz, hogy látni tudja a mozgatás elterelés változtatásait.
+
+> [!NOTE]
+> *A* Raktárkezelés mobilalkalmazás többszintű megugrásai segítségével többszintű megtúrásokat határozhat meg (detours belül), így a dolgozók átugorhatnak egy másik két meglévő detour után, majd vissza. A funkció a mezőn belül két szintet támogat, `WHSWorkUserSessionState` és szükség esetén testreszabhatja a rendszert, hogy a táblában kódkiterjesztéseket hozzon létre, amelyek három vagy több hibaszintet támogatnak.

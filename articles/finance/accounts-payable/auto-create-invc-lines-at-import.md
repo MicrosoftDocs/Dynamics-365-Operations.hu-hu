@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5cb2c1234de03e9777921c18e4cbb81eec7feef9
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903507"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462274"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>Számlasorok létrehozása szállítói számlák importálásakor
 
@@ -45,7 +45,7 @@ A következő lépések szerint engedélyezheti a számlasorok automatikus létr
 Az ebben a cikkben ismertetett funkciók támogatása érdekében **a szállítói** számla fejlécadat-entitása továbbfejlesztett módon fel lett bővítve. Három mező lett hozzáadva:
 
 - **HeaderOnlyImport** – a számlafejlécek sorait csak Igen **beállítású** mezőben állíthatja elő.
-- **PurchIdRange** – A beszerzési rendelési számok listája. A számlaszámok lehetnek tartomány, például **INV0001..INV0009** (ahol két pont választja el a tartomány kezdő és záró értékét), vagy különálló értékek, például **INV0001, INV0003, INV0006**. Minden beszerzési rendelésnek ugyan ahhoz a szállítói számlához kell tartozni a számlafejlécben. Ellenkező esetben a következő hibaüzenet jelenik meg: "Nem sikerült számlasorokat generálni. A beszerzési rendelésekhez eltérő szállítói számlák tartoznak."
+- **PurchIdRange** – A beszerzési rendelési számok listája. A számlaszámok tartományai tartományba esnek, például **PO0001. A PO0009** (ahol két pont választja el a tartomány kezdő és záró értékét), vagy különálló értékek, **például PO0001, PO0003, PO0006**. Minden beszerzési rendelésnek ugyan ahhoz a szállítói számlához kell tartozni a számlafejlécben. Ellenkező esetben a következő hibaüzenet jelenik meg: "Nem sikerült számlasorokat generálni. A beszerzési rendelésekhez eltérő szállítói számlák tartoznak."
 - **PackingslipRange** – A termékbevételezési számok listája. Szállítói számlasorokat termékbevételezésből lehet létrehozni. A termékbevételezési számok azonban általában nem szerepelnek a szállítói számlákon. Ebbe a mezőbe csak akkor írja be a termékbevételezési számokat, ha egyértelműen meg tudja határozni, hogy mely termékbevételezések mely meghatározott számlákhoz tartoznak. A Számlasorokat termékbevételezésből lehetséges létrehozni. Ha ezt a mezőt használja, **·** **a rendszer figyelmen kívül hagyja az Automatikus számlasor-létrehozási mennyiség kiválasztása mező beállítását a Kötelezettségek** paraméterei lapon. 
 
 **Korlátozás**: ha több termékbevételezési számot ad meg, több függő szállítói számla jön létre ugyanazzal a számlaszámmal. Ezeket manuálisan kell konszolidálni, mielőtt tovább feldolgozható lenne a számla. A későbbi verziókban úgy tervezjük, hogy a számlákat automatikusan összevonja, így a korlátozás el lesz távolítva.

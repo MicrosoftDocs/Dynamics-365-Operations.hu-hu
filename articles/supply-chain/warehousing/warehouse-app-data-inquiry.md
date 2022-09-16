@@ -1,5 +1,5 @@
 ---
-title: Adatok lekérdezése a Raktárkezelés mobilalkalmazás-hibakezelő segítségével
+title: Adatok lekérdezése a Warehouse Management mobilalkalmazás-kitérők segítségével
 description: Ez a témakör azt ismerteti, hogyan kell konfigurálni az adat lekérdezési mobileszköz menüpontokat, és azokat használni a tölcsérek részeként.
 author: perlynne
 ms.date: 08/09/2022
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 39677ebfb9babeb7246ece4d27ab1813435ca12e
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336605"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427848"
 ---
-# <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Adatok lekérdezése a Raktárkezelés mobilalkalmazás-hibakezelő segítségével
+# <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Adatok lekérdezése a Warehouse Management mobilalkalmazás-kitérők segítségével
 
 [!include [banner](../includes/banner.md)]
 
@@ -268,6 +268,6 @@ A következő lépések szerint tesztelje az új mobilalkalmazás-beállítások
     ![Beszerzés bevétele a beszerzési rendelés keresésének használatával szállító szerint, például 2.](media/wma-purchase-receive-lookup-po-vendor-detours.png "Beszerzés bevétele a beszerzési rendelés keresésének használatával szállító szerint, például 2")
 
 > [!TIP]
-> Ahelyett, hogy a Beszerzés bevételezve menüelem alapján keresné a **bevételi** folyamatot, elindíthat egy lekérdezési folyamatot (**\>\>** Fő lekérdezés – Beszerzési rendelések szállítók szerint) és meghívhat egy kitérőt, és a listában kiválasztva futtathatja a kívánt folyamatot. Ez a megközelítés akkor használható, ha a Mobileszköz lépéslapon definiálni lehet egy detour **értéket** ahhoz a lépéshez, amely **a** *GenericDataInquiryList lépésazonosító értéket tartalmazza.* Mivel ez a folyamat egy detour folyamat, nem lehet további detours folyamot hívni. Amikor tehát a cikkszám-beviteli képernyőhöz jut, a keresés például nem lesz elérhető rajta, mivel a rendszer jelenleg csak egyszintű hibakeresést támogat.
+> Ahelyett, hogy a Beszerzés bevételezve menüelem alapján keresné a **bevételi** folyamatot, elindíthat egy lekérdezési folyamatot (**\>\>** Fő lekérdezés – Beszerzési rendelések szállítók szerint) és meghívhat egy kitérőt, és a listában kiválasztva futtathatja a kívánt folyamatot. Ez a megközelítés akkor használható, ha a Mobileszköz lépéslapon definiálni lehet egy detour **értéket** ahhoz a lépéshez, amely **a** *GenericDataInquiryList lépésazonosító értéket tartalmazza.* [*·*](warehouse-app-detours.md) Ha a rendszer be van kapcsolva a Többszintű hibakezelés mobilalkalmazás funkcióhoz, szükség esetén további hiba is hozzáadható (ez a funkció két szint támpontot nyújt, és további szintek támogatása érdekében testre szabható).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

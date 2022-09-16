@@ -1,5 +1,5 @@
 ---
-title: A Dynamics 365 Commerce 10.0.29 előzetes verziója (2022. október)
+title: 'WHat új és módosított: Dynamics 365 Commerce 10.0.29 (október 2022)'
 description: Ez a témakör olyan funkciókat ismertet, amelyek újak Microsoft Dynamics 365 Commerce vagy módosulnak a 10.0.29-es dokumentumban.
 author: josaw1
 ms.date: 08/17/2022
@@ -10,19 +10,19 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 1e05f53f9ecb0a1994828172f6999a0bd5c208bc
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 6e457864f51159f46f45e9b8969863c9d34c5786
+ms.sourcegitcommit: 56677afde87a9176f879482a7af223e251801d5d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306232"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9475903"
 ---
-# <a name="preview-of-dynamics-365-commerce-10029-october-2022"></a>A Dynamics 365 Commerce 10.0.29 előzetes verziója (2022. október)
+# <a name="whats-new-or-changed-in-dynamics-365-commerce-10029-october-2022"></a>Új vagy módosult elemek a Dynamics 365 Commerce szolgáltatásban – 10.0.29. (2022. október)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a cikk felsorolja azokat a funkciókat, amelyek újak Microsoft Dynamics 365 Commerce vagy módosulnak a 10.0.29-es verzió előnézetében. Ennek a verziónak a buildszáma több 10.0.1326, és a következő ütemezésben érhető el:
+
+Ez a cikk felsorolja azokat a funkciókat, amelyek vagy Microsoft Dynamics 365 Commerce újak, vagy módosulnak a 10.0.29-es verzióban. Ennek a verziónak a buildszáma több 10.0.1326, és a következő ütemezésben érhető el:
 
 - **Előzetes kiadás:** 2022. augusztus
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2022. szeptember
@@ -85,7 +85,7 @@ A táblázat felsorolja azokat a funkciókat is, amelyek korábban nyilvános el
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Commerce 10.0.29 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és műveletalkalmazások platformfrissítései a 10.0.29-es verzióhoz (október 2022.).](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md) 
+A Microsoft Dynamics 365 Commerce 10.0.29 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és műveletalkalmazások platformfrissítései a 10.0.29-es verzióhoz (2022. október)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md). 
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

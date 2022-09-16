@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-ms.openlocfilehash: 3620fa886fd4b609a0f1f08b2338ab725065efe7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 283c882300ece460c18ffebe572238e7629f8dee
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287928"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476801"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Képletszerkesztő elektronikus jelentésekhez (ER)
 
@@ -137,7 +137,29 @@ Az alábbi ábra ilyen típusú kifejezéseket mutat be. (Az **ISO20022-jóváí
 > 
 > Ennek a beállításnak a alapján az összes adósi kifizetésre generált üzenet **Ustrd** XML-elem tartalmazni fogja a fizetési megjegyzések szövegét, vagy ha az ilyen szöveg üres, akkor a kifizetés kiegyenlítéséhez használt számlaszámok vesszővel tagolt listáját.
 
-## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Konfigurált képletek érvényesítése
+## <a name="assistance-in-formulas-writing"></a>Támogatás képletek írásában
+
+### <a name="data-sources-navigator"></a>Adatforrások- és adatforrások
+
+Olyan képletet is szerkeszthet, amely egy strukturált adatforrás egy elemét képviseli. Amikor az ER paramétereket úgy konfigurálta, hogy relatív elérési útként adja meg a [strukturált](relative-path-data-bindings-er-models-format.md) adatforrás egy elemének az elérési útját, a képletben az "at" (@) [jel](er-formula-language.md#relative-path) jelenik meg, nem pedig a hierarchikus fastruktúra abszolút elérési útjának fennmaradó része. Az abszolút útvonalnak ez a fennmaradó része a szerkeszthető elem szülő elemére mutat. **A Pénzügyi verzió 10.0.30-as** **és** újabb verzióiban, a Képlettervező lap Adatforrások ablakában az Ugrás @**lehetőségre kattintva helyezze az adatforrásfa kurzorát egy olyan elemhez,** **amely** a szerkeszthető fa szülője. A program minden összecsukott növekvő elem szerkezetét automatikusan kibontja, és szükség esetén rekurzív módon kibontja. Ezzel a bővítéssel gyorsan láthatóvá válik a szerkeszthető elem alapeleme, figyelni lehet az adatforrásfa szerkeszthető elemét a testvéreire, és szükség esetén fel lehet használni őket a szerkeszthető képletben.
+
+![Az "Ugrás a @" lehetőségre lehetőséggel helyezze az adatforrásfa kurzorát egy olyan elemhez, amely a Képlettervező lapon szerkeszthető elem szülője.](./media/er_formula-designer-data-sources-navigator.gif)
+
+### <a name="data-sources-picker"></a>Adatforrások kiválasztója
+
+A képlettervező **bal** **oldali** ablakában válassza ki annak az adatforrásnak az elemét, amelybe be szeretné vinni a szerkeszthető képletet. Ezután válassza az Adatforrás **hozzáadása lehetőséget**. Ne figyelje meg, hogy a kiválasztott elem hozzá van adva a szerkeszthető receptúra szövegéhez.
+
+> [!TIP]
+> Ha az alapértelmezett képletszerkesztőben **az** Adatforrás hozzáadása lehetőséget használja, a kijelölt elem mindig a receptúra szövegének végére kerül. Ha ezt a speciális képletszerkesztőben [is](er-advanced-formula-editor.md) beszúrja, akkor a program az aktuális kurzorpozíciónál illeszti be a kijelölt elemet a képlet szövegébe.
+
+### <a name="built-in-functions-picker"></a>Beépített függvények kiválasztója
+
+A képlettervező **jobb** **oldali** Funkciók ablakában válassza ki azt az ER beépített függvényt, amely a szerkeszthető receptúrára állítható be. Ezután válassza a Függvény **hozzáadása lehetőséget**. Figyelje meg, hogy a kiválasztott funkció felkerül a szerkeszthető receptúra szövegére.
+
+> [!TIP]
+> Ha a Funkció hozzáadása lehetőséget használja **az** alapértelmezett képletszerkesztőben, akkor a kiválasztott funkció mindig a receptúra szövegének végére kerül. Ha ezt a speciális képletszerkesztőben [is](er-advanced-formula-editor.md) beszúrja, akkor a program az aktuális kurzorpozíciónál illeszti be a kiválasztott függvényt a képlet szövegébe.
+
+### <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Konfigurált képletek érvényesítése
 
 A **Képlettervező** lapon kattintson a **Teszt** elemre a konfigurált képlet működésének ellenőrzéséhez.
 

@@ -1,5 +1,5 @@
 ---
-title: Pufferprofil és szintek
+title: Bufferprofil és -szintek
 description: Ez a cikk a pufferprofilokkal és -szintekkel kapcsolatban tartalmaz tájékoztatást, amelyek meghatározzák az egyes felállási pontonként megtartható minimális és maximális készletszinteket.
 author: t-benebo
 ms.date: 06/30/2022
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd72332abefd31fd391ff66931a5abae0efb08de
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 57ee6206da926d0dbf62f562197538bfcdd41148
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186567"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428144"
 ---
-# <a name="buffer-profile-and-levels"></a>Pufferprofil és szintek
+# <a name="buffer-profile-and-levels"></a>Bufferprofil és -szintek
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
@@ -77,6 +77,14 @@ Az előző példában, ha a mai nap június 11-e, akkor az előző három nap (j
 
 - **ADU (múlt)** = (29 + 11 + 23) ÷ 3 = 21
 
+Az átlagos napi felhasználás (múltbeli) számítása a következő tranzakciókat veszi figyelembe:
+
+- A cikkmennyiséget trakodó tranzakciók (`inventtrans` a táblában, ahol a mennyiség kisebb nullánál)
+- Megrendelt, Foglalt *rendelt*,*Foglalt* *tényleges*, Kivetve *·*, *Levonva* vagy Eladva állapotú *tranzakciók*
+- A választott visszafelé időszakon belüli tranzakciók (az elmúlt időszak átlagos napi használati ideje)
+- A raktári munkához, karanténhoz, értékesítési ajánlatokhoz vagy kimutatáshoz (`WHSWork`, `WHSQuarantine` vagy `SalesQuotation`) kapcsolódó tranzakciókon kívül`Statement`
+- Az azonos fedezeti dimenzión belüli átátviteli naplókon kívül található tranzakciók
+
 ### <a name="average-daily-usage-forward"></a>Átlagos napi felhasználás (előre)
 
 Új termékek esetén előfordulhat, hogy nem tartalmaznak korábbi felhasználási adatokat. Ehelyett használhatja az előre jelzett ADU-t (például az előre jelzett igény alapján). Az alábbi ábra azt mutatja be, hogyan működik ez a megközelítés, amikor a számítás három nappal a jövőbe (a mai napot is beleértve) bemutatja.
@@ -86,6 +94,11 @@ Az előző példában, ha a mai nap június 11-e, akkor az előző három nap (j
 Az előző példában, ha a mai nap június 11-e, akkor a következő három nap (június 11., 12. és 13.) ADU 21,66 lesz.
 
 - **ADU (előre)** = (18 + 18 + 29) ÷ 3 = 21,66
+
+Az átlagos napi felhasználás (előre) számítása a következő tranzakciókat veszi figyelembe:
+
+- Előrejelzési tranzakciók arra a cikkre, ahol az előrejelzés ki van választva az alaptervben
+- A választott előrehozott időszakon belüli tranzakciók (az átlagos napi használati időszak)
 
 ### <a name="average-daily-usage-blended"></a>Átlagos napi felhasználás (összeolvasva)
 
@@ -244,7 +257,7 @@ Miután teljes körűen beállította a DDMRP beállításait, és megerősítet
 
 A következő lépések szerint ütemezi az automatikus pufferérték-számításokat.
 
-1. Menjen az Alaptervezés **\>\> DDMRP alaptervezése – pufferértékek \> számítása.**
+1. Menjen az Alaptervezés **\>\> DDMRP alaptervezése – pufferértékek \> számítása**.
 1. A Pufferértékek **számítása** párbeszédpanelen állítsa be a következő mezőket:
 
     - **Átlagos napi használat kiszámítása** – *a* feladat minden futtatásakor az ADU érték Igen beállítással újraszámítható. A számítás kihagyásához *állítsa Nem* beállításra. Ez a beállítás általában *Igen*.

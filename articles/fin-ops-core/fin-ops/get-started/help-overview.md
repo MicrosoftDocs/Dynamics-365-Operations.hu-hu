@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16381,  ""intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
-ms.openlocfilehash: f9095db85e38598ac03b4c77c3fa3be9f450ec02
-ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
+ms.openlocfilehash: 19e1659a5fb91c7cb8916b1a8b6238038df29287
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9305224"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462357"
 ---
 # <a name="help-system"></a>Súgórendszer
 
@@ -40,18 +40,18 @@ Minden ilyen alkalmazásban hozzáférhet a termékspecifikus súgóhoz a **Súg
 
 ![Súgó ablak.](./media/help-pane-ops-help.png)
 
-## <a name="help-on-docsmicrosoftcom"></a>Súgó a docs.microsoft.com-on
+## <a name="help-on-microsoft-docs"></a>Súgó a Microsoft Docs-hez
 
-A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/](/dynamics365/)) a termékdokumentáció alapértelmezett forrása az imént felsorolt alkalmazásokhoz. Ez a webhely a következő funkciókat ajánlja:
+A korábban [Microsoft Dynamics felsorolt alkalmazások termékdokumentációjának alapértelmezett forrása a Microsoft Docs (365-ös](/dynamics365/) dokumentációja). Ez a webhely a következő funkciókat ajánlja:
 
 - **Hozzáférés a legfrissebb tartalmakhoz** – A webhely lehetőséget ad a Microsoftnak a termékdokumentációk gyorsabb, rugalmasabb létrehozására, szállítására és frissítésére. Így egyszerűen hozzáférhet a legfrissebb technikai információkhoz jut hozzá.
 - **Szakértők által írt tartalmak** – A webhely tartalma nyitott a Microsofton belül és kívül egyaránt a közösség tagjainak hozzájárulására.
 
-A docs.microsoft.com tartalmait bármilyen keresőmotor segítségével meg lehet találni. A legjobb eredmények elérése érdekében azt javasoljuk, hogy webhelyre korlátozott keresést végezzen, mint például: **site:docs.microsoft.com dynamics 365 „keresőkifejezés”**
+A Microsoft Docs-dokumentumok tartalma bármelyik keresőprogramban megkereshető. A legjobb eredmények elérése érdekében azt javasoljuk, hogy webhelyre korlátozott keresést végezzen, mint például: **site:docs.microsoft.com dynamics 365 „keresőkifejezés”**
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Értesítés a változásokról RSS-hírcsatornán keresztül
 
-Ha a pénzügyi és műveleti alkalmazások között a tartalom minden frissítésére szeretne előfizetést docs.microsoft.com, használja a következő hivatkozásokat:
+Ha a Microsoft műszaki dokumentációjában a pénzügyi és műveleti alkalmazásokban található összes frissítésre szeretne előfizetést használni, használja a következő hivatkozásokat:
 
 [RSS-hírcsatorna](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -87,7 +87,7 @@ A dokumentációban közreműködhet, és módosításokat hajthat végre. Első
 
 A [Hozzájárulás a Microsoft Dynamics 365 dokumentációhoz](https://youtu.be/m5djioozRbg) videó (lásd fentebb) része a Microsoft Dynamics 365 csatornának a YouTube oldalán.
 
-A további tudnivalókat lásd a [Docs közreműködői útmutatóban](/contribute), amelyet a docs.microsoft.com webhelyét összeállító csoport publikál.
+A további tudnivalókat [lásd a Microsoft Docs](/contribute) vezető útmutatóban, amelyet az a csapat tett közzé, amely a Microsoft Docs webhelyet felépítette.
 
 > [!NOTE]
 > Jelenleg csak az angol nyelvű tartalomhoz fogadunk el közreműködést.
@@ -166,13 +166,13 @@ Egyéni feladat-útmutatók létrehozásával létrehozhat egy súgót a felhasz
 
 A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlenül csillaggal (\*) jelölt webhelyeken a szolgáltatástervvel társított felhasználói fiókkal lehet belépni.
 
-| Hely | Leírás |
+| Webhely | Leírás |
 |------|-------------|
-| [Docs.microsoft.com](/dynamics365/) | Ezen a webhelyen található vagy kerül hivatkozásra az összes termékdokumentációhoz a Dynamics 365 rendszerben. |
+| [Microsoft Dynamics 365-ös dokumentáció](/dynamics365/) | Ezen a webhelyen található vagy kerül hivatkozásra az összes termékdokumentációhoz a Dynamics 365 rendszerben. |
 | [Microsoft Learn](/learn/) | Ez a webhely a Microsoft ingyenes e-learning webhelye. |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Ez a webhely felhőalapú együttműködési munkaterület biztosít, amelyet a vevők és a partnerek a projektek kezelésére használhatnak az értékesítés előtti műveletektől a megvalósításig és az üzemeltetésig. Az implementáció minden fázisában hasznos. |
 | [Támogatási blog](https://aka.ms/AXSupportBlog) | Ez a webhely tippeket és trükköket tartalmaz, amelyeket a Támogatás csapata adott fel. |
-| [Docs.microsoft.com/korábbi verziók](/previous-versions/dynamics/) | Ezen a webhelyen található a korábbi kiadások tartama. |
+| [Előző verziók](/previous-versions/dynamics/) | Ezen a webhelyen található a korábbi kiadások tartama. |
 | [Dynamics közösség](https://community.dynamics.com/) | A webhelyen blogok, fórumok és videók találhatók. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | A webhelyen értékelések és eladási információk érhetők el. |
 
@@ -180,4 +180,3 @@ A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlen�
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

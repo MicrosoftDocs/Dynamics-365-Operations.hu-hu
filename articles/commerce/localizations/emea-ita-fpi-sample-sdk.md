@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 46d42a2c2a5f8f40fc8b9693f26a182c8f2e6352
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 275759ffec470c6188f734968f4b18b641a49212
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337224"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9474153"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>A pénzügyi nyomtató integrációs mintája olaszországi telepítési irányelvei (legacy)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > Csak akkor kövesse az ebben Microsoft Dynamics 365 Commerce a cikkben olvasható irányelveket, ha a 10.0.28-as vagy korábbi verziókat használja. A Commerce rendszer 10.0.29-es verziója szerint az olaszországi pénzügyi nyomtató-integrációs minta elérhető a Commerce szoftverfejlesztői csomagjában (SDK). A további tudnivalókat lásd: Csatornaösszetevők [konfigurálása](./emea-ita-fpi-sample.md#configure-channel-components).

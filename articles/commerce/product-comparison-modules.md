@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: ced471dd7e3e4c3e9be938b295edaad626a890a3
-ms.sourcegitcommit: 92c4506be7dc14078e3c4f1d182edd895d64ffe0
+ms.openlocfilehash: 6fd851ce6b32d0772c3fe23c4d7bd4dae2616fdc
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246651"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9474126"
 ---
 # <a name="product-comparison-modules"></a>Termék-összehasonlítási modulok
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör leírja a termék-összehasonlítási Microsoft Dynamics 365 Commerce modulokat, és bemutatja, hogyan lehet azokat megvalósítani, hogy a vevők termék-összehasonlításokat tudjanak végrehajtani az e-commerce webhelyeken.
 
@@ -66,7 +65,7 @@ A következő lépésekkel lehet termék-összehasonlítási modult hozzáadni e
 1. A Gyorsnézet **gombműveletben** válassza ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
 1. A Modulok **kiválasztása párbeszédpanelen** válassza ki a Termék **gyorsnézet** modulját, majd kattintson az **OK gombra**.
 1. A jobb oldali tulajdonságablakban állítsa be a Termék **gyorsnézet** modultulajdonságokat.
-1. Az Üres összehasonlítási pontnál **válassza ki a három pontból (**...**), majd válassza a** Modul hozzáadása lehetőséget **.**
+1. Az Üres összehasonlítási **pontnál** válassza ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
 1. A Modulok **kiválasztása párbeszédpanelen** válassza ki a **Tartalomblokk** modult, majd válassza az **OK gombra.**
 1. A jobb oldali tulajdonságablakban állítsa be a Tartalomblokk **modul** tulajdonságait. 
 1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet.
@@ -86,7 +85,7 @@ Ha a keresési és kategória eredményoldalakon termék-összehasonlítási gom
 
 1. A webhelyszerkesztőben nyissa **meg a Pages lapokat**, és nyissa meg azt a kategóriaoldalt, amelybe termék-összehasonlítási gombot szeretne hozzáadni.
 1. A fő **pontnál válassza** ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
-1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Keresési** eredmények modult, majd válassza az **OK gombra**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Keresési** eredmények modult, majd válassza az **OK gombra.**
 1. Válassza ki a **Keresési eredmények modul** **Termék**-összehasonlítás gomb rését, válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget.**
 1. A Modulok **kiválasztása párbeszédpanelen** válassza ki a Termék-összehasonlítás **gomb** modult, majd válassza az **OK gombra.**
 1. A jobb oldali tulajdonságablakban állítsa be a Termék-összehasonlítás **gomb** modul tulajdonságait.

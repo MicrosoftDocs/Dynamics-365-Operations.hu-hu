@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: afe438767efa3082c49cc56f58c8bab9206e46e0
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: ad5f843e3bafa54a961908d9ebe5ab64e619e1bc
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228568"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475522"
 ---
 # <a name="human-resources-home-page"></a>Humán erőforrások honlap
 
@@ -40,7 +40,7 @@ További információkért válasszon ki egy szolgáltatásterületet.
 - [Kompenzációkezelés](hr-compensation-overview.md)
 - [Alkalmazotti fejlesztés](hr-develop-performance-management-overview.md)
 - [Tanulás](hr-learning-courses.md)
-- [Munkafolyamat-rendszer]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+- [Munkafolyamat-rendszer](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
 
 A Human resources összeköti az embereket és az üzemeltetési adatokat, így optimalizálhatja a munkaerő költségeit, és gondoskodhat alkalmazottairól.
 
@@ -51,7 +51,8 @@ A Dynamics 365 Pénzügy alkalmazással kapcsolatos további tudnivalókat lásd
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="elearning-courses"></a>eLearning-tanfolyamok
-Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 Human Resources a Microsoft Learn szolgáltatásban](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
+
+Online tanfolyamokhoz és tanfolyamokhoz a check out (az online tanfolyamokon) található [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
 
 ### <a name="videos"></a>Videók
 

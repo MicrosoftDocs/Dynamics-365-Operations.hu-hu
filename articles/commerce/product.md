@@ -2,7 +2,7 @@
 title: Termékajánlatok hozzáadása a pénztárnál
 description: Ez a témakör a pénztári eszközökre vonatkozó termékajánlásokat ismerteti.
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 442ae540b04588afd9aeb37a92c6ceb92c05a9ba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 170e2bf18aefc79a796620818c7100ff8e6e689a
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872799"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460056"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Termékajánlatok hozzáadása a pénztárnál
 
@@ -37,7 +37,7 @@ Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vag
 
 1. A **Termékadatok kezelése** oldalon:
 
-    - Ha az üzlet alkalmazottja megnyitja valamelyik **Termékadatok** oldalt, amikor az előző tranzakciókat nézi meg különböző csatornákon keresztül, az ajánlások szolgáltatás további elemeket javasol, amelyek várhatóan együtt fognak megvásárolni.
+    - Ha egy üzlet felkeresi a Termék részletei lapot, amikor különböző csatornákon keresztül keresi a **korábbi** tranzakciókat, az ajánlások szolgáltatás további, várhatóan együtt beszerzett cikkeket javasol. A **szolgáltatáshoz** **használt** bővítményektől függően a kiskereskedők hasonló megjelenést és az Üzletekhez hasonló leírási ajánlásokat adhatnak a termékekhez, valamint a korábbi beszerzési előzményekkel kapcsolatos, személyre szabható ajánlásoknak is.
 
     [![Javaslatok a Termék részletei oldalon.](./media/proddetails.png)](./media/proddetails.png)
 
@@ -50,21 +50,17 @@ Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vag
 
     [![Javaslatok a Tranzakció oldalon.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## <a name="configure-commerce-to-enable-pos-recommendations"></a>A Commerce konfigurálása pénztárjavaslatok engedélyezéséhez
+## <a name="configure-commerce-to-enable-pos-recommendations"></a>A Commerce konfigurálása pénztárjavaslatok engedélyezéséhez 
 
-A termékajánlások beállításához kövesse az alábbi lépéseket:
+A termék ajánlásának beállításához erősítse meg, hogy befejezte a Commerce termék-ajánlások [létesítási folyamatát a termékajánlásokat engedélyező lépések segítségével](../commerce/enable-product-recommendations.md). Alapértelmezés szerint az ajánlások **mind** **a** Termék részletei lapon, mind a Vevő adatai lapon megjelennek, miután befejezte a létesítés lépéseit, és az adatok sikeresen megfőzöttek. 
 
-1. Győződjön meg arról, hogy a szolgáltatás frissítve lett a **10.0.6 build számára.**
-2. Kövesse a [termékajánlások](../commerce/enable-product-recommendations.md) a saját vállalkozása számára történő engedélyezésének utasításait.
-3. Választható lehetőség: Javaslatok megjelenítéséhez a tranzakciók képernyőn, menjen a **Képernyőelrendezés** lehetőséghez, válassza ki a képernyőelrendezést, indítsa el a **Képernyő-elrendezés tervezőjét**, majd helyezze az **ajánlások** vezérlőjét oda, ahová szükséges.
-4. Keresse fel a **Commerce paraméterek** elemet, válassza **Gépi tanulás** elemet, jelölje be az **Igen** lehetőséget **POS-ajánlások engedélyezése** alatt.
-5. A javaslatok megtekintéséhez a POS-on, futtassa az **1110** globális konfigurációs feladatot. A POS képernyő-elrendezés tervezőjén végzett módosítások megjelenítéséhez futtassa az **1070** csatorna konfigurációs feladatot.
+## <a name="add-recommendations-to-the-transaction-screen"></a>Ajánlatok hozzáadása a tranzakció képernyőjéhez
 
-## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Már engedélyezett termékajánlások esetében problémák elhárítása
+1. Ha ajánlásokat szeretne hozzáadni a tranzakciós képernyőhöz, kövesse az [Ajánlások hozzáadása a tranzakciós képernyőhöz lépéseit](add-recommendations-control-pos-screen.md).
+1. A POS képernyőelrendezés-tervezőben végzett módosítások tükrözéséhez futtassa **a 1070-es** csatorna-konfigurációs feladatot a Commerce Headquarters alkalmazáson.
 
-- Keresse meg a **Commerce paraméterek** \> **Ajánlási lista** \> **Termékajánlások letiltása** elemet, és futtassa a **Globális konfiguráció feladat \[9999\]** elemet. 
-- Ha az **Ajánlások vezérlőelem** hozzá van adva a tranzakcióképernyőhöz a **Képernyő-elrendezés tervezője** használatával, távolítsa el azt is.
-- További tájékoztatásért tekintse meg: [Termékjavaslatok GYIK](../commerce/faq-recommendations.md).
+> [!NOTE] 
+> Ha a RecoMock vesszővel elválasztott értékeket (CSV) fájllal szeretné engedélyezni a POS-ajánlások engedélyezését, az elrendezéskezelő konfigurálása előtt telepítenie kell a CSV-fájlt Microsoft Dynamics a Lifecycle Services (LCS) eszköztárára. Ha a RecoMock CSV fájlt használja, akkor nem kell engedélyeznie az ajánlásokat. A CSV-fájl csak bemutató céljára érhető el. Ajánlott az olyan vevőknek vagy megoldástervezőknek, akik az ajánlási listák megjelenését bemutató jellegű megjelenési célokra is le szeretnék utánozni anélkül, hogy meg kellene vásárolniuk egy kiegészítő stock keeping unit (SKU) adatokat.
 
 ## <a name="additional-resources"></a>További erőforrások
 

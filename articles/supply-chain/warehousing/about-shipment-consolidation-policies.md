@@ -1,5 +1,5 @@
 ---
-title: Szállítmánykonszolidációs irányelvek
+title: Szállítmánykonszolidáció irányelveinek áttekintése
 description: Ez a cikk áttekintést nyújt a szállítmánykonszolidáció irányelveinek rugalmas konfigurálást lehetővé tő funkcióiról.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 27f5d52dac2e428655f1b16908ff796ed9d02e82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7113fc635a7c01e4b9cc44898daa3d2617058b6b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903898"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427928"
 ---
-# <a name="shipment-consolidation-policies"></a>Szállítmánykonszolidációs irányelvek
+# <a name="shipment-consolidation-policies-overview"></a>Szállítmánykonszolidáció irányelveinek áttekintése
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ A szállítmánykonszolidációs irányelvek bevezetése előtt a konszolidáci�
 
 A lekérdezések a vonatkozó szállítmánykonszolidációs irányelv meghatározására szolgálnak, és a mezők szerkeszthető csoportja határozza meg, hogy a rakománysorok milyen módon legyenek csoportosítva a szállítmány szintjén. (Ez a minta hasonlít a hullámsablonok által követett mintához.) Ezenkívül a program hozzáadta a **Konszolidáció meglévő szállítmányokkal** beállítást az egyes irányelvekhez. Ha ez a beállítás be van kapcsolva, a *Kiadás a raktárba* eljárás megkeresi a konszolidációhoz a szállítmányokat az ugyanazon a konszolidációs irányelv alapján létrehozott meglévő szállítmányok közti kereséssel. Ebben az esetben a rendszer egy létező szállítmányt vagy rakományt fog kijelölni, nem pedig újat létrehozni. A rendszer azonban csak *Nyitott* állapotú meglévő szállítmányokkal fog konszolidálni; a *Kiadott* vagy magasabb állapotú hullámkiadáshoz tartozó szállítmányokat nem tekinti a konszolidáció céljának.
 
-Amikor a szállítmánykonszolidációs irányelvek elérhetővé válnak, a **Szállítmány konszolidálása a raktárnak való kiadáskor** beállítás, amely korábban a **Raktárak** beállítási oldalon volt elérhető, rejtve lesz. Az új szállítmánykonszolidációs funkcióra való áttérés támogatása érdekében a **Szállítmánykonszolidációs irányelvek** oldal egyik funkciója létrehoz egy olyan alapértelmezett irányelvet, amelyben automatikusan szerepel a meglévő raktárakhoz tartozó régi beállítás. Miután létrejött az alapértelmezett irányelv, a **Szállítmány konszolidálása a raktárnak való kiadáskor** beállítást a **Raktárak** beállítási oldalon már nem veszi figyelembe a rendszer.
+Ha a *szállítmánykonszolidáció* irányelvei be vannak kapcsolva a rendszeren, **·** **akkor a raktárba való kiadáskor beállított Szállítmány konszolidálása nem látható, amely korábban elérhető volt a Raktárak** beállítása lapon. Az új szállítmánykonszolidáció funkcióra való átállást lehetővé teszi, hogy a **Szállítmánykonszolidáció** irányelveit tartalmazó lapon egy olyan alapértelmezett házirendet hozzon létre, amely automatikusan tartalmazza a meglévő raktárak régi beállítását. Miután létrejött az alapértelmezett irányelv, a **Szállítmány konszolidálása a raktárnak való kiadáskor** beállítást a **Raktárak** beállítási oldalon már nem veszi figyelembe a rendszer. A további tudnivalókat lásd a Szállítmánykonszolidáció [irányelveinek konfigurálása.](configure-shipment-consolidation-policies.md)
 
 A **Kiadás a raktárba** oldalon manuálisan felülbírálhatja a megfelelő konszolidációs irányelveket ugyanúgy, ahogy felülbírálhatja a teljesítési irányelveket.
 

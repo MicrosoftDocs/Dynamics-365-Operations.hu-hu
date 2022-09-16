@@ -2,7 +2,7 @@
 title: Adószámítás áttekintése
 description: Ez a cikk bemutatja az adószámítási képesség általános hatókörét és szolgáltatásait.
 author: EricWangChen
-ms.date: 03/02/2022
+ms.date: 09/08/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2765b922bcc58837c32973b7ca96e0d63eb8b9d6
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: a193db82b2b079c1e10fbfb6bfde7aa43b18bc4a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295991"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465166"
 ---
 # <a name="tax-calculation-overview"></a>Adószámítás áttekintése
 
@@ -74,18 +74,10 @@ Javasoljuk, hogy importálja és állítsa be az adószámítás konfigurációj
 
 | Pénzügyi vagy ellátásilánc-kezelés verziója | Adókonfigurációs verzió               |
 | --------------- | --------------------------------------- |
-| 10.0.18         | Adókonfiguráció - Európa 30.12.82     |
-| 10.0.19         | Adószámítási konfiguráció 36.38.193 |
-| 10.0.20         | Adószámítási konfiguráció 40.43.208 |
-| 10.0.21         | Adószámítási konfiguráció 40.48.215 |
-| 10.0.22         | Adószámítási konfiguráció 40.48.215 |
-| 10.0.23         | Adószámítási konfiguráció 40.50.221 |
-| 10.0.24         | Adószámítási konfiguráció 40.50.225 |
-| 10.0.25         | Adószámítási konfiguráció 40.50.225 |
-| 10.0.26         | Adószámítási konfiguráció 40.54.234 |
-| 10.0.27         | Adószámítási konfiguráció 40.54.234 |
-| 10.0.28         | Adószámítási konfiguráció 40.54.234 |
+| 10.0.30         | Adószámítási konfiguráció 40.55.239 |
 | 10.0.29         | Adószámítási konfiguráció 40.55.236 |
+| 10.0.28         | Adószámítási konfiguráció 40.54.234 |
+| 10.0.27         | Adószámítási konfiguráció 40.54.234 |
 
 
 ## <a name="data-flow"></a>Adatáramlás
@@ -104,120 +96,27 @@ Az adószámítási folyamat szerkezeti része.
 
 Az adószámítás tranzakciónként engedélyezhető. 
 
-A 10.0.21-es verzió a következő tranzakciókat támogatja: 
+Az alábbi táblázat felsorolja a megfelelő verzióban támogatott tranzakciókat.
 
-- Értékesítés
-
-    - Értékesítési ajánlat
-    - Értékesítési rendelés
-    - Visszaigazolás
-    - Kitárolási lista
-    - Szállítólevél
-    - Értékesítési számla
-    - Jóváírás
-    - Visszárurendelés
-    - Fejléc vegyes költségek
-    - Sor vegyes költsége
-
-- Beszerzés
-
-    - Beszerzési rendelés
-    - Visszaigazolás
-    - Bevételezések listája
-    - Termékbevételezés
-    - Beszerzési számla
-    - Fejléc vegyes költségek
-    - Sor vegyes költsége
-    - Jóváírás
-    - Visszárurendelés
-    - Beszerzési igénylés
-    - A beszerzési igénylési sor vegyes díja
-    - Ajánlatkérés
-    - Ajánlatkérés fejlécének vegyes díja
-    - Ajánlatkérés sorának vegyes díja
-
-- Készlet
-
-    - Átmozgatási rendelések – szállítás
-    - Átmozgatási rendelés – bevételezés
-
-A 10.0.23-es verzió a következő tranzakciókat támogatja: 
-
-- Szabadszöveges számla
-
-A 10.0.26-es verzió a következő tranzakciókat támogatja: 
-
-- Általános naplók
-- Szállítói számla naplója
-
-A 10.0.28-es verzió a következő tranzakciókat támogatja: 
-
-- Szállító fizetési naplója
-- Vevői kifizetési napló
-
-A 10.0.29-es verzió a következő tranzakciókat támogatja: 
-
-
-- Időszaki naplók
+| Verzió | Tranzakciók |
+|---------|--------------|
+| 10.0.29 | Időszaki naplók |
+| 10.0.28 | Szállító fizetési naplója<br> Vevői kifizetési napló | 
+| 10.0.26 | Általános naplók<br> Szállítói számla naplója |
+| 10.0.23 | Szabadszöveges számla |
+| 10.0.21| Értékesítés<br><ul><li>Értékesítési ajánlat</li><li>Értékesítési rendelés</li><li>Megerősítés</li><li>Kitárolási lista</li><li>Szállítólevél</li><li>Értékesítési számla</li><li>Jóváírás</li><li>Visszárurendelés</li><li>Fejléc vegyes költségek</li><li>Sor vegyes költsége</li></ul>Beszerzés<br><ul><li>Beszerzési rendelés</li><li>Visszaigazolás</li><li>Bevételezések listája</li><li>Termékbevételezés</li><li>Beszerzési számla</li><li>Fejléc vegyes költségek</li><li>Sor vegyes költsége</li><li>Jóváírás</li><li>Visszárurendelés</li><li>Beszerzési igénylés</li><li>A beszerzési igénylési sor vegyes díja</li><li>Ajánlatkérés</li><li>Ajánlatkérés fejlécének vegyes díja</li><li>Ajánlatkérés sorának vegyes díja</li></ul>Készlet<ul><li>Átmozgatási rendelések – szállítás</li><li>Átmozgatási rendelés – bevételezés</li></ul>|
 
 ## <a name="supported-countriesregions"></a>Támogatott országok/régiók
 
-Az adószámítás a jogi személy elsődleges címéhez a következő országokban/régiókban támogatott honosítási szolgáltatásokkal futtatható: 
+Az adószámítás támogatott honosítási szolgáltatásokkal futtatható. A következő táblázat felsorolja a jogi személy elsődleges címében található országokat/régiókat.
 
-A 10.0.21 verzió támogatja:
-
-- Ausztria
-- Belgium
-- Dánia
-- Észtország
-- Finnország
-- Franciaország
-- Németország
-- Magyarország
-- Izland
-- Írország
-- Olaszország
-- Lettország
-- Litvánia
-- Hollandia
-- Norvégia
-- Lengyelország
-- Svédország
-- Svájc
-- Egyesült Királyság
-- Egyesült Államok
-
-A 10.0.22 verzió támogatja:
-
-- Ausztrália
-- Bahrein
-- Kanada
-- Egyiptom
-- Hongkong (KKT)
-- Kuvait
-- Új-Zéland
-- Omán
-- Katar
-- Szaúd-arábiai
-- Dél-Afrika
-- Egyesült Arab Emírségek
-
-A 10.0.23-as verzió támogatja:
-
-- Thaiföld
-- Japán
-- Malajzia
-- Szingapúr
-
-A 10.0.24 verzió támogatja:
-
-- Mexikó
-
-A 10.0.26 verzió támogatja:
-
-- Kína
-- Cseh Köztársaság
-- Spanyolország
+| Verzió | Ország/régió |
+|---------|----------------|
+| 10.0.26 | - Kína <br>- Cseh Köztársaság<br>- Spanyolország |
+| 10.0.24 | Mexikó |
+| 10.0.23 | - Thaiföld <br>- Japán <br>- Malajzia <br>- Szingapúr |
+| 10.0.22 | - Ausztrália<br>- Bahreini <br>- Kanada<br>- Egyiptomi <br>- Hongkong (KKT) <br>Kuvait <br>- Új-Zéland <br>- Omán <br>- Katar <br>- Szaúd-arab <br>- Dél-Afrika <br>- Egyesült Arab Emírségek |
+| 10.0.21 | - Ausztria <br>- Belgium <br>- Dánia <br>- Észt <br>- Finnország <br>- Franciaország <br>- Németország <br>- Magyarország <br>- Izland <br>- Írország <br>- Olaszország <br>- Lettország <br>- Litván <br>- Hollandia <br>- Norvégia <br>- Lengyelország <br>- Svédország <br>- Svájc <br>- Egyesült Királyság <br>- Amerikai Egyesült Államok |
 
 Bármely olyan ország/régió esetén, amelyet nem a Microsoft honosított, az adószámítás más globális szolgáltatásokkal is engedélyezhető és futtatható.
 

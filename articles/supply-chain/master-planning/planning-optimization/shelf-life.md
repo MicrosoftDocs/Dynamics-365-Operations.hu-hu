@@ -1,5 +1,5 @@
 ---
-title: Korlátozott eltarthatósági időű termékek alaptervezése
+title: Korlátozott eltarthatósági idejű termékek alaptervezése
 description: Ez a témakör azt ismerteti, hogyan lehet olyan tervezési funkciókat beállítani és használni, amelyek figyelembe veszik a ásható termékek eltarthatóságát.
 author: t-benebo
 ms.date: 08/10/2022
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 95c905cbcc3c057dbccf2b7d6e894b1e99ddfba5
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 68a1ba2bfe90aaf0462917c405d483fa12bf8126
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337355"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428221"
 ---
-# <a name="master-planning-for-products-with-limited-shelf-life"></a>Korlátozott eltarthatósági időű termékek alaptervezése
+# <a name="master-planning-for-products-with-limited-shelf-life"></a>Korlátozott eltarthatósági idejű termékek alaptervezése
 
 [!include [banner](../../includes/banner.md)]
 
@@ -298,8 +298,6 @@ A következő ábra a példában szereplő időrendet mutatja be.
 ![4. példa: egyszerű FEFO, időszak, átfutási idő a mennyiségtől függ.](media/fefo-example-4.png "4. példa: egyszerű FEFO, időszak, átfutási idő a mennyiségtől függ.")
 
 ## <a name="example-5-simple-fefo-requirement-10-negative-days"></a>5. példa: egyszerű FEFO, követelmény, 10 negatív nap
-
-<!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe otherwise remove this example). -->
 
 Ez a példa azt mutatja be, hogyan működik az eltarthatósági idő, amikor nagy számú negatív napot adnak hozzá egy cikkhez. A negatív napok azon napok számát jelentik, amelyekre a negatív készlettelrendelt cikk feltöltése előtt hajlandó várni. A rendszer csak akkor hoz létre ellátásokat, ha a negatív napok száma meghaladja a megengedettet.
 

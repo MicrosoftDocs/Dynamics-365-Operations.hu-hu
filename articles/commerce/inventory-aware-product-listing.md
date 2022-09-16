@@ -1,5 +1,5 @@
 ---
-title: Készletre vonatkozó terméklista
+title: Készletet figyelembe vevő terméklista
 description: Ez a cikk azt írja le, hogyan konfigurálják a szervezetek Microsoft Dynamics 365 Commerce az e-commerce webhelyük terméklistaoldalait úgy, hogy a készletben legyenek figyelembe vétele.
 author: boycez
 ms.date: 08/31/2022
@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: boycez
 ms.search.validFrom: 2022-08-23
-ms.openlocfilehash: e33a4dd8650ee2e371c51c5a19e955f2d2bdade2
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 2a65dedf2da62fcd92169077d75a0f3b7832a86d
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405515"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473733"
 ---
-# <a name="inventory-aware-product-listing"></a>Készletre vonatkozó terméklista
+# <a name="inventory-aware-product-listing"></a>Készletet figyelembe vevő terméklista
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a cikk azt írja le, hogyan konfigurálják a szervezetek Microsoft Dynamics 365 Commerce az e-commerce webhelyük terméklistaoldalait úgy, hogy a készletben legyenek figyelembe vétele. A terméklistaoldalak kategória- és keresési eredményoldalakat tartalmaznak.
 

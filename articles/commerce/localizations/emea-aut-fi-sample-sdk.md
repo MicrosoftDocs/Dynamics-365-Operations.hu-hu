@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: f5f12dbd638c8228dbc63c1fae8f3dfffc7bfe9c
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 8d41dfb359a71f24d0cb0c5aa0114225cd28fe59
+ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313772"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473998"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>Telepítési irányelvek a pénzügyi regisztrációs szolgáltatás integrációs mintához Ausztriához (legacy)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > Csak akkor kell követnie Microsoft Dynamics 365 Commerce az ebben a cikkben olvasható irányelveket, ha a 10.0.28-as vagy korábbi verziókat használja. A Commerce rendszer 10.0.29-es verziója szerint az Ausztriához tartozó pénzügyi regisztrációs szolgáltatás integrációs minta elérhető a Commerce szoftverfejlesztői csomagjában (SDK). A további tudnivalókat lásd: Csatornaösszetevők [konfigurálása](./emea-aut-fi-sample.md#configure-channel-components).

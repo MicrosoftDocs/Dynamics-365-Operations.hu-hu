@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: caa38c4ed1c7fb8cf1ead3ba6534f8405a5ff57f
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893178"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428036"
 ---
 # <a name="release-to-warehouse"></a>Kiadás raktárba
 
@@ -34,7 +34,7 @@ A *rakomány* az értékesítésirendelés- vagy átmozgatásirendelés-sorok eg
 
 A raktári *munka* bármilyen raktári művelet, amelyet egy raktári dolgozó hajt végre. Általában a raktári műveletek legalább két egymást követő műveletből állnak: egy raktári dolgozó felveszi az aktuális készletet az egyik helyen, majd eltárolja a készletet egy másik helyen.
 
-A rendelések raktárba való kiadásakor a rendszer *rakománysorokat* hoz létre, és szállítmányokba csoportosítja őket. A szállítmánykonszolidáció folyamata lehetővé teszi az automatikus szállítmánykonszolidációt a raktárba történő kiadás folyamat során. További információ: [Szállítmánykonszolidációs irányelvek](about-shipment-consolidation-policies.md).
+A rendelések raktárba való kiadásakor a rendszer *rakománysorokat* hoz létre, és szállítmányokba csoportosítja őket. A szállítmánykonszolidáció folyamata lehetővé teszi az automatikus szállítmánykonszolidációt a raktárba történő kiadás folyamat során. A további tudnivalókat lásd a Szállítmánykonszolidáció [irányelveinek áttekintésében](about-shipment-consolidation-policies.md).
 
 A rendszer a *hullámok* segítségével hozza létre a kitárolási munkát és a szállítmányhoz szükséges rakományokat. A *hullámsablonnak* elérhetőnek kell lennie a létrehozni kívánt hullámtípushoz és a rendelési sor raktárához. A *Szállítás* típusú hullámsablonok értékesítési rendelések és átmozgatási rendelések cikkeinek szállításaihoz használható.
 

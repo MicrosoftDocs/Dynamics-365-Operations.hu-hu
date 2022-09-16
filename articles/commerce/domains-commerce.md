@@ -2,19 +2,19 @@
 title: Tartományok a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör azt ismerteti, hogyan kell kezelni a tartományokat Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/19/2022
+ms.date: 09/09/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405496"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465193"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce szolgáltatásban
 
@@ -144,9 +144,9 @@ A Commerce rendszerbeli Azure Front Door példány nem támogatja a apex-tartom�
 
 - **1. lehetőség** – A DNS-szolgáltató segítségével irányíthatja át a apex-tartományt egy „www” tartományba. Például fabrikam.com átirányítása a következőre `www.fabrikam.com`, ahol a `www.fabrikam.com` a CNAME-rekord, amely a Commerce saját Azure Front Door péládnyára mutat.
 
-- **2. beállítás** – ha a DNS-szolgáltató támogatja az ALIAS rekordokat, akkor az apex tartományt az ajtó végpontjára mutathatja. Így garantálható, hogy az első ajtó végpontjának IP-módosítása tükröződni fog.
+- **2. beállítás** – ha a DNS-szolgáltató támogatja az ALIAS-rekordokat, akkor az Apex tartományt az Azure front Door végpontra mutathatja, így garantálható, hogy a végpont által megváltoztatott IP-adatok tükröződnek. Az Azure front Door példányát saját magának kell állomásranie.
   
-- **3. lehetőség** – ha a DNS-szolgáltató nem támogatja az ALIAS-rekordokat, akkor saját maga kell beállítania egy CDN- vagy az elvezető ajtó példányát az APEX-tartomány számára.
+- **3. beállítás** – ha a DNS-szolgáltató nem támogatja az ALIAS-rekordokat, akkor a DNS-szolgáltatót Azure DNS-szolgáltatásra kell módosítania, és mind az Azure DNS-t, mind az Azure front door-példányt saját nevére kell módosítania.
 
 > [!NOTE]
 > Ha Azure Front Doort használ, akkor egy Azure DNS-t is be kell állítania ugyanabban az előfizetésben. Az Azire DNS-ben található APEX-tartomány egy alias-rekordként mutathat az Azure Front Door-ra. Ez az egyetlen áthidaló megoldás, hiszen az apex-tartományoknak mindig egy IP-címre kell mutatniuk.

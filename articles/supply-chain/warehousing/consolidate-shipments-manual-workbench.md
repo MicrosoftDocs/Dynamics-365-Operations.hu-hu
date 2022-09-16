@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: db8dc5101b223a0033284d8e6c494721871809d8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: eed484cd37b02e58831e0041c3e0625091283b65
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335795"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428117"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Szállítmányok konszolidálása a szállítmánykonszolidációs munkaterület használatával
 
@@ -38,7 +38,7 @@ Az itt ismertetett eset feltételezi, hogy már be van kapcsolva a funkció, és
 
 A kézi szállítmánykonszolidáció csak akkor használható, ha a rendszeren be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterület Kézi szállítmánykonszolidáció szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) keresi.
 
-*Irányelvek* létrehozása előtt be kell kapcsolnia a Szállítmány konszolidálása funkciót is (az Ellátásilánc-kezelés 10.0.29-es verziója esetén a funkció kötelező, és nem kapcsolható ki). A további tudnivalókat lásd a Szállítmánykonszolidáció [irányelveinek konfigurálása](configure-shipment-consolidation-policies.md).
+*Irányelvek* létrehozása előtt be kell kapcsolnia a Szállítmány konszolidálása funkciót is (az Ellátásilánc-kezelés 10.0.29-es verziója esetén a funkció kötelező, és nem kapcsolható ki). A további tudnivalókat lásd a Szállítmánykonszolidáció [irányelveinek konfigurálása.](configure-shipment-consolidation-policies.md)
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Értékesítési rendelések létrehozása ehhez a forgatókönyvhöz
 
@@ -259,7 +259,7 @@ Négy szállítmányt kellett létrehozni:
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Szállítmánykonszolidációs irányelvek](about-shipment-consolidation-policies.md)
+- [Szállítmánykonszolidáció irányelveinek áttekintése](about-shipment-consolidation-policies.md)
 - [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md)
 
 

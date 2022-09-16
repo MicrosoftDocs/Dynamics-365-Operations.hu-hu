@@ -2,7 +2,7 @@
 title: Szállítmánykonszolidációs irányelvek konfigurálása
 description: Ez a cikk bemutatja az alapértelmezett és az egyéni szállítmánykonszolidáció irányelveinek beállítását.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 0312d425d2ebc5311e894030423a916b90f1881a
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336492"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427982"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Szállítmánykonszolidációs irányelvek konfigurálása
 
@@ -28,75 +28,49 @@ A szállítmánykonszolidációs irányelveket használó szállítmánykonszoli
 
 Az ebben a cikkben ismertetett helyzetek bemutatják, hogyan lehet beállítani az alapértelmezett és az egyéni szállítmánykonszolidáció irányelveit.
 
-## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>A szállítmánykonszolidációs irányelvek funkció bekapcsolása
+> [!WARNING]
+> Ha olyan Microsoft Dynamics 365 Supply Chain Management rendszert frissít, amelyben már használja az örökölt szállítmánykonszolidáció funkciót, a konszolidáció leállhat a vártnak megfelelően, hacsak nem követi az itt kapott tambóliaot.
+>
+> Az ellátásilánc-kezelés olyan *telepítéseinél*, ahol ki van kapcsolva a Szállítmánykonszolidáció irányelvei funkció, **az** egyes raktárakba való kiadáskor a Szállítmányok konszolidálása beállításával engedélyezheti a szállítmánykonszolidációt. Ez a funkció a 10.0.29-es verziótól kötelező. Ha be van kapcsolva, **a** konszolidált szállítmány a raktárba való kiadáskor beállítás nem látható, *és* a funkció helyére az ebben a cikkben ismertetett szállítmánykonszolidációi irányelvek állnak. Minden egyes irányelv konszolidálási szabályokat állapít meg, és egy lekérdezéssel határozza meg, hogy az irányelv hol érvényes. Amikor először bekapcsolja a funkciót, **a Szállítmánykonszolidáció irányelvei lapon nem határoz meg szállítmánykonszolidációs házirendet**. Ha nincsenek megadva irányelvek, a rendszer az örökölt viselkedést használja. Ennek megfelelően minden meglévő raktár továbbra is **tartsa** be a konszolidált szállítmányt a raktárba való kiadáskor, annak ellenére, hogy ez a beállítás már nem látható. Miután azonban már legalább egy szállítmánykonszolidációi házirendet létrehozott, **a** szállítmány konszolidálása a raktárba való kiadáskor már nem lesz hatással, és a konszolidálási funkciókat teljes egészében a házirend vezérli.
+>
+> Miután legalább egy szállítmánykonszolidációra vonatkozó házirendet meghatározott, a rendszer a rendelés raktárba való kiszállításakor ellenőrzi a konszolidációs irányelveket. A rendszer az irányelvek **irányelvsorrend-értéke által meghatározott rangsorolás alapján dolgozza fel az irányelveket**. Az első olyan házirendet alkalmazza, amelyben a lekérdezés megfelel az új rendelésnek. Ha egyetlen lekérdezés sem felel meg a rendelésnek, minden rendelési sor külön szállítmányt hoz létre, amely egyetlen rakománysort hoz létre. Ezért javasoljuk, hogy tartalékként hozzon létre egy alapértelmezett házirendet, amely rendelésszám szerint minden raktárra és csoportra érvényes. Adja meg ennek a tartalék házirendnek **a** legmagasabb sorszámértékét, hogy a feldolgozás utolsóként essen.
+>
+> Az örökölt viselkedést olyan házirend létrehozása szükséges, amely nem rendelésszám szerint van csoportosítva, és olyan lekérdezési feltételekkel rendelkezik, amelyek minden vonatkozó raktárat tartalmaznak.
 
-> [!IMPORTANT]
-> A jelen [cikkben ismertetett](#scenario-1) első esetben először be kell állítani egy raktárat, hogy az a korábbi szállítmánykonszolidációi funkciót használja. Ezután elérhetővé teszi a szállítmánykonszolidációs irányelveket. Ily módon a frissítési forgatókönyv működését megtapasztalhatja. Ha az első forgatókönyv végigvezetéséhez bemutató környezetet tervez használni, ne kapcsolja be a funkciót a forgatókönyv elvégzése előtt.
+## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>A szállítmánykonszolidációs irányelvek funkció bekapcsolása
 
 A Szállítmánykonszolidáció *irányelveinek* használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Szállítmánykonszolidáció irányelveinek szolgáltatását keresi.
 
-## <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
+## <a name="set-up-your-initial-consolidation-policies"></a><a name="initial-policies"></a> Kezdeti konszolidációs irányelvek beállítása
 
-A cikk minden egyes esete a Microsoft szabványos bemutatóadatában található értékekre és rekordokra hivatkozik Dynamics 365 Supply Chain Management. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.
-
-## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>1. forgatókönyv: Alapértelmezett szállítmánykonszolidációs irányelvek konfigurálása
-
-Két olyan eset van, amikor konfigurálnia kell az alapértelmezett irányelvek minimális számát a *Szállítmánykonszolidációs irányelvek* funkció bekapcsolása után:
-
-- Olyan környezetet frissít, amely már tartalmaz adatokat.
-- Teljesen új környezetet állít be.
-
-### <a name="upgrade-an-environment-where-warehouses-are-already-configured-for-cross-order-consolidation"></a>Olyan környezet frissítése, amelyben a raktárak már be vannak állítva a rendelésközi konszolidáláshoz
-
-Az eljárás indításakor ki kell kapcsolnia a *Szállítmánykonszolidációs irányelvek* funkciót, olyan környezet szimulálása érdekében, ahol már használatban van az alapvető rendelésközi konszolidálás funkció. Ezt követően a funkciókezelés segítségével bekapcsolhatja a funkciót, így megismerheti, hogy a frissítés után hogyan kell szállítmánykonszolidációs irányelveket beállítani.
-
-Kövesse az alábbi lépéseket az alapértelmezett szállítmánykonszolidációs irányelvek beállításához olyan környezetben, ahol a raktárakat már konfigurálták a rendelésközi konszolidációhoz.
-
-1. Ugorjon a **Raktárkezelés \> Beállítás \> Raktár \> Raktárak** pontra.
-1. A listán keresse meg és nyissa meg a kívánt raktári rekordot (például raktár *24* az **USMF** bemutatóadatokban).
-1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
-1. A **Raktár** gyorslapon állítsa be a **Szállítmány konszolidálása a raktárnak való kiadáskor** beállítást *Igen* értékre.
-1. Ismételje meg a 2–4. lépést az összes többi raktárhoz, ahol szükség van a konszolidációra.
-1. Zárja be a lapot.
-1. Nyissa meg a **Raktárkezelés \> Beállítás \> Kiadás raktárnak \> Szállítmánykonszolidációs irányelvek** pontot. Előfordulhat, hogy frissítenie kell a böngészőt, hogy az új **szállítmánykonszolidációs irányelvek** menüelemet a funkció bekapcsolása után láthassa.
-1. A műveleti ablaktáblán válassza az **Alapértelmezett beállítás létrehozása** elemet a következő irányelvek létrehozásához:
-
-    - Az *Értékesítési rendelések* irányelvtípushoz tartozó **CrossOrder** irányelv (feltéve, hogy legalább egy raktárat már beállítottak a korábbi konszolidációs funkció használatához)
-    - **Alapértelmezett** irányelv az *Értékesítési rendelés* irányelvtípushoz
-    - **Alapértelmezett** irányelv az *Átviteli probléma* irányelvtípushoz
-    - Az *Átviteli probléma* irányelvtípushoz tartozó **CrossOrder** irányelv (feltéve, hogy legalább egy raktárat már beállítottak a korábbi konszolidációs funkció használatához)
-
-    > [!NOTE]
-    > - Mindkét **CrossOrder** irányelv ugyanazt a mezőkészletet veszi figyelembe, mint a korábbi logika, kivéve a rendelésszámhoz tartozó mező. (Ez a mező a sorok szállítmányokba történő konszolidálására szolgál, olyan tényezők alapján, mint a raktár, a szállítási mód és a cím.)
-    > - Mindkét **Alapértelmezett** irányelv ugyanazt a mezőkészletet veszi figyelembe, mint a korábbi logika, beleértve a rendelésszámhoz tartozó mezőt is. (Ez a mező a sorok szállítmányokba történő konszolidálására szolgál, olyan tényezők alapján, mint a rendelésszám, a raktár, a szállítási mód és a cím.)
-
-1. Válassza ki az *Értékesítési rendelés* irányelvtípushoz tartozó **CrossOrder** irányelvet, majd a műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** elemet.
-1. A lekérdezéstervező párbeszédpanelen figyelje meg, hogy azok a raktárak szerepelnek a listán, amelyeknél a **Szállítmány konszolidálása a raktárnak való kiadáskor** beállítás értéke *Igen*. Ezért a lekérdezésben szerepelnek.
-
-### <a name="create-default-policies-for-a-new-environment"></a>Új környezet alapértelmezett irányelveinek létrehozása
-
-Kövesse az alábbi lépéseket az alapértelmezett szállítmánykonszolidációs irányelvek beállításához egy teljesen új környezetben.
+Ha új rendszerrel vagy olyan rendszerrel dolgozik, amelynél az első alkalommal bekapcsolta a *Szállítmánykonszolidáció* irányelveit, a következő lépések szerint állítsa be a szállítmányok kezdeti konszolidációs irányelveit.
 
 1. Nyissa meg a **Raktárkezelés \> Beállítás \> Kiadás raktárnak \> Szállítmánykonszolidációs irányelvek** pontot.
 1. A műveleti ablaktáblán válassza az **Alapértelmezett beállítás létrehozása** elemet a következő irányelvek létrehozásához:
 
-    - **Alapértelmezett** irányelv az *Értékesítési rendelés* irányelvtípushoz
-    - **Alapértelmezett** irányelv az *Átviteli probléma* irányelvtípushoz
+    - Az Értékesítési rendelések irányelvtípus *alapértelmezett* *nevű* irányelve.
+    - Alapértelmezett nevű irányelv az *Átadás* kiadási *irányelvtípushoz*.
+    - Egy CrossOrder *nevű* irányelv az *Átadás kiadási irányelvtípushoz*. (Ez a házirend csak akkor jön létre, ha legalább egy olyan raktára van, ahol az örökölt **A szállítmány konszolidálása a raktárba való kiadáskor** beállítás engedélyezve van.)
+    - Az értékesítési rendelések irányelvtípusának *CrossOrder* *nevű* irányelve. (Ez a házirend csak akkor jön létre, ha legalább egy olyan raktára van, ahol az örökölt **A szállítmány konszolidálása a raktárba való kiadáskor** beállítás engedélyezve van.)
 
     > [!NOTE]
-    > Mindkét **Alapértelmezett** irányelv ugyanazt a mezőkészletet veszi figyelembe, mint a korábbi logika, beleértve a rendelésszámhoz tartozó mezőt is. (Ez a mező a sorok szállítmányokba történő konszolidálására szolgál, olyan tényezők alapján, mint a rendelésszám, a raktár, a szállítási mód és a cím.)
+    > - Mindkét *CrossOrder irányelv* ugyanazt a mezőkészletet veszi figyelembe, mint a korábbi logikát. Ugyanakkor a rendelésszám mezőt is figyelembe veszi a program. (Ez a mező a sorok szállítmányokba történő konszolidálására szolgál, olyan tényezők alapján, mint a raktár, a szállítási mód és a cím.)
+    > - Mindkét *alapértelmezett* irányelv ugyanazt a mezőkészletet veszi figyelembe, mint a korábbi logikát. Ugyanakkor a rendelésszám mezőt is figyelembe veszi a program. (Ez a mező a sorok szállítmányokba történő konszolidálására szolgál, olyan tényezők alapján, mint a rendelésszám, a raktár, a szállítási mód és a cím.)
 
-## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>2. forgatókönyv: Egyéni szállítmánykonszolidációs irányelvek konfigurálása
+1. Ha a rendszer CrossOrder-házirendet generált az értékesítési rendelések irányelvtípusára, válassza ki, *majd a műveletpanelen válassza ki a* Lekérdezés szerkesztése lehetőséget *.* **·** A lekérdezésszerkesztőben látható, **hogy** a raktárba való kiadáskor a Konszolidált szállítmány melyik raktár esetében volt engedélyezve korábban. Ennek megfelelően ez a házirend az ilyen raktárakra vonatkozó korábbi beállításokat is újra előveszi.
+1. Az új alapértelmezett irányelvek testreszabása mezők hozzáadásával és törlésével, illetve a lekérdezések szerkesztésével. Ha szükséges, akár több új házirendet is hozzáadhat. A házirendek testreszabását és konfigurálését bemutató példákat a cikk későbbi példaesetében olvashatja.
 
-Ez a példa azt mutatja be, hogyan lehet beállítani az egyéni szállítmánykonszolidációs irányelveket. Az egyéni irányelvek olyan összetett üzleti követelményeket támogatnak, amelyeknél több feltétel is függ a szállítmányok konszolidálástól. A forgatókönyvben szereplő valamennyi példairányelv esetében az üzleti eset rövid leírása szerepel. Ezeket a példairányelveket olyan sorrendben kell beállítani, amely biztosítja a lekérdezések piramisszerű értékelését. (Más szóval a legtöbb feltételnek megfelelő irányelveket a legmagasabb prioritással kell értékelni.)
+## <a name="scenario-configure-custom-shipment-consolidation-policies"></a>Helyzet: Egyéni szállítmánykonszolidáció irányelveinek konfigurálása
 
-### <a name="turn-on-the-feature-and-prepare-master-data-for-this-scenario"></a>A funkció bekapcsolása és alapadatok előkészítése ehhez a forgatókönyvhöz
+Ez az eset egy olyan példát mutat be, amely bemutatja, hogyan lehet beállítani az egyéni szállítmánykonszolidáció irányelveit, majd a bemutató adatok segítségével tesztelni azokat. Az egyéni irányelvek olyan összetett üzleti követelményeket támogatnak, amelyeknél több feltétel is függ a szállítmányok konszolidálástól. A forgatókönyvben szereplő valamennyi példairányelv esetében az üzleti eset rövid leírása szerepel. Ezeket a példairányelveket olyan sorrendben kell beállítani, amely biztosítja a lekérdezések piramisszerű értékelését. (Más szóval a legtöbb feltételnek megfelelő irányelveket a legmagasabb prioritással kell értékelni.)
 
-Mielőtt végighaladhatna a jelen forgatókönyv gyakorlatain, be kell kapcsolni a funkciót, és elő kell készíteni a szűrés elvégzéséhez szükséges alapadatokat a következő alszakaszokban leírtak szerint. (Ezek az előkövetelmények a [Példaforgatókönyvek a szállítmánykonszolidációs irányelvek használatához](#example-scenarios) című listában szereplő forgatókönyvekre is vonatkoznak.)
+### <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-#### <a name="turn-on-the-feature-and-create-the-default-policies"></a>A funkció bekapcsolása és az alapértelmezett irányelvek létrehozása
+Ez az eset olyan értékeket és [rekordokat](../../fin-ops-core/fin-ops/get-started/demo-data.md) hivatkozik, amelyek az Ellátásilánc-kezelés szabványos bemutató adataiban szerepelnek. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen *USMF*.
 
-Ha még nem kapcsolta be, akkor a funkciókezelés segítségével kapcsolja be a funkciót, és hozza létre az alapértelmezett konszolidációs irányelveket, amelyek az [1. forgatókönyvben](#scenario-1) szerepelnek.
+### <a name="prepare-master-data-for-this-scenario"></a>Alapadatok előkészítése ehhez az esethez
+
+Ahhoz, hogy végig tudja menni az ebben az esetben szükséges eseteket, elő kell készítenie a szűréshez szükséges alapadatokat, amint azt az alábbi alszakaszok ismertetik. (Ezek az előfeltételek azokra a forgatókönyvkere is vonatkoznak, amelyek fel vannak sorolva a [Példaforgatókönyvek a szállítmánykonszolidáció irányelveinek használatára](#example-scenarios) szakaszban.)
 
 #### <a name="create-two-new-product-filter-codes"></a>Két új termékszűrési kód létrehozása
 
@@ -152,7 +126,7 @@ Ha még nem kapcsolta be, akkor a funkciókezelés segítségével kapcsolja be 
 1. Lépjen az **Értékesítés és marketing \> Vevők \> Összes vevő** menüpontba.
 1. Nyissa meg az *US-003* számlaszámú vevőt.
 1. Az **Értékesítési rendelés alapértelmezett értékei** gyorslapon állítsa az **Értékesítési rendelés gyűjtője** mezőt az imént létrehozott rendelésgyűjtőre.
-1. Zárja be a lapot, majd ismételje meg a 4–5. lépést az *US-004* számlaszámú vevővel.
+1. Zárja be a lapot, majd ismételje meg a 4–5. lépést a *US-004* partnerszámmal rendelkező vevőnél.
 
 ### <a name="create-example-policy-1"></a>1. példairányelv létrehozása
 
@@ -300,7 +274,7 @@ Ebben a példában létrehozza a *Konszolidációt engedélyező raktárak* irá
 - A nyitott szállítmányok konszolidálása ki van kapcsolva.
 - A konszolidáció a rendelések között történik az alapértelmezett CrossOrder irányelv által kijelölt mezők használatával (a korábbi **Szállítmány konszolidálása a raktárnak való kiadáskor** jelölőnégyzet replikálásához ).
 
-Leggyakrabban ezt az üzleti esetet meg lehet oldani, ha az [1. forgatókönyvben](#scenario-1) létrehozott alapértelmezett irányelveket használja. Azonban manuálisan is létrehozhat hasonló irányelveket az alábbi lépések követésével.
+Ez az üzleti eset általában [a kezdeti konszolidációs irányelvek beállítása során létrehozott alapértelmezett irányelvekkel foglalkozik](#initial-policies). Azonban manuálisan is létrehozhat hasonló irányelveket az alábbi lépések követésével.
 
 1. Nyissa meg a **Raktárkezelés \> Beállítás \> Kiadás raktárnak \> Szállítmánykonszolidációs irányelvek** pontot.
 1. Az **Irányelvtípus** mezőt állítsa *Értékesítési rendelések* értékre.
@@ -345,7 +319,7 @@ A következő esetek bemutatják, hogy hogyan használhatók a cikk elolvasása 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Szállítmánykonszolidációs irányelvek](about-shipment-consolidation-policies.md)
+- [Szállítmánykonszolidáció irányelveinek áttekintése](about-shipment-consolidation-policies.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

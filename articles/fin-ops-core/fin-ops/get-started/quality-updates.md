@@ -2,7 +2,7 @@
 title: Proaktív minőségi frissítések
 description: Ez a cikk a minőségi frissítések proaktív teljesítésével kapcsolatban tartalmaz tájékoztatást.
 author: rashmansur
-ms.date: 08/23/2022
+ms.date: 09/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9d81cb15e9a127e7bea7ad9b5e0f50a1ee543f71
-ms.sourcegitcommit: 78e85ad49634cd31459fdb7325cb273352bf1501
+ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
+ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9338136"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473605"
 ---
 # <a name="proactive-quality-updates"></a>Proaktív minőségi frissítések
 
@@ -58,12 +58,67 @@ A folyamatok változásainak egy része a proaktív minőségi frissítés aktiv
 - **Növelt módosítási változás** - jelenleg már van egy extra folyamatlépés, amely a minőségi frissítésbe való felvétel módosításainak jóváhagyására vonatkozik. Az extra lépésben nagyobb lesz a kockázat, hogy csökkentse a regresszívség potenciális lehetőségeit. A minőségi frissítésekben nem lehet törést módosítani, és a nagyobb változás biztosítja, hogy teljes legyen ez a cél.
 - **Láthatóság** – e-mailben és Lifecycle Services (LCS) szolgáltatáson keresztül küldjük az értesítéseket a közelgő proaktív minőségi frissítésekről. Ezen kívül a támogatási csoportok és az események érdeklődői láthatóvá lesznek abban, hogy hol vannak proaktív módon telepítve a minőségi frissítések.
 - **Verzió tartaléka** – a járatozás a proaktív minőségi frissítés minden változásának csoportosításére használható. Ha egy proaktív telepítés után tartalékra van szükség, akkor az a repülőrendszeren keresztül is meg lehet tenni.
-- **Üzenetkészlet szinkronizálásának megnevezése** – a vevők kevesebb, mint 20 százaléka rendelkezik több mezővel, és egy olyan mező van telepítve, amelyben a verzió megfelel a termelésnek, és így segít a hibaelhárításban. A közeli jövőben lehetőség van arra, hogy a vevők olyanbox környezetet adjanak meg, amely nem a többi mezővel együtt kapják meg a proaktív minőségfrissítést, hanem később, a termelési környezettel együtt kapják meg. Ne feledje, hogy ha egy vevő üzenetdobozt használ a termelésnél újabb verzió tesztelésére, akkor az abox az újabb verzióra vonatkozó minőségi frissítéseket fogja kapni.
-- 
-## <a name="when-will-proactive-quality-updates-start"></a>Mikor indítja el a proaktív minőségi frissítéseket?
+- **Üzenetkészlet szinkronizálásának megnevezése** – a vevők kevesebb, mint 20 százaléka rendelkezik több mezővel, és egy olyan mező van telepítve, amelyben a verzió megfelel a termelésnek, és így segít a hibaelhárításban. Ha egy vevő a termelésnél újabb verziót használ tesztre, akkor az abox az újabb verzióra vonatkozó minőségi frissítéseket fogja kapni.
+
+## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Milyen okkal történik az összesítés javítása a minőségi frissítésekhez?
 
 Az Azure nyilvános felhőt igénybe vevő ügyfeleknél várhatóan szeptember vagy október végén kezdődik a proaktív minőségi frissítések elosztása az üzenetkészlet környezetekben. A próbakörnyezet abban az időpontban elindul a proaktív frissítés telepítésében is. Szeptemberben egy értesítést kap a vevő, amely tájékoztatja őket a környezetük várható ütemezésről. A proaktív, frissített elosztási folyamat alóli kivételek csak az FDA által szabályozott vevők számára lesznek engedélyezve. Még mindig azon dolgozunk, hogy hogyan fogják kezelni a szabályozott környezeteket és az állami felhő vevőket.
 
 A következő hat hónap során fokozatosan növelni kell az olyan környezetek százalékát, amelyek proaktív frissítéseket kapnak, amíg minden erre a célra kijelölt környezetben nem szerepel a frissítés, illetve amíg az összes erre a célra kijelölt környezetben nem haladunk előre a termelési környezet frissítése során. Az időszak során figyelni kell, hogy a telepítési folyamat problémamentes legyen, és újra megszinkonláljuk a nem romboló rakományok célkitűzését.
 
 Mivel a vevők rendszeresen kisebb rakományokat kapnak, arra számítunk, hogy az aktuális helyzetben egyszerűbb lesz a folyamat. A frissítéstelepítés gyakoriságát korrigáljuk, mivel bemutatja a folyamat megszakítás nélküli futtatásának a lehetőségeként. Ez a folyamat már jól működik platformunk Dataverse és alkalmazásaink során, és a szolgáltatás minőségében várható fejlesztéseknek lesz része. Nem tudjuk ugyanezt az lépést előrelépni a pénzügyi és az üzemeltetési pályázatokban.
+
+## <a name="when-will-quality-updates-start-for-production-environments"></a>Mikor indulnak el a minőségi frissítések az éles környezetekben?
+Jelenleg a minőségfrissítések csak a mezőket célként célják. A termelési környezetek frissítése 2022 novembere után kezdődik.
+
+## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Milyen ütemezést kell ütemezni a minőségi frissítésekre?
+További tájékoztatás az egyes régiók sötét óráiról: [Mi a proaktív minőségi frissítések ütemezése](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates)?
+
+## <a name="how-are-the-dark-hours-handled-for-customers-that-have-one-finance-and-operations-apps-instance-but-are-active-in-multiple-time-zones"></a>Hogyan kell kezelni a sötét órákat az olyan vevők esetében, akiknél egy pénzügyi és műveleti alkalmazáspéldány van, de több időzónában aktívak? 
+Nincsenek speciális ütemezések azon a sötét órákon kívül, ahol létezik egy pénzügyi és műveletalkalmazás-példány, [mivel úgy tervezjük, hogy az nZDT-t minimálisan megszakító módon frissítik a minőségi frissítéseket](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
+
+## <a name="how-will-microsoft-ensure-the-quality-of-these-updates"></a>Hogyan fogja biztosítani a Microsoft ezeknek a frissítéseknek a minőségét?
+A Microsoft annak érdekében, hogy a kiadási prognózis elég hatékony legyen ahhoz, hogy kis rakományokat szállítson, hogy az ellenőrzési költség alacsony legyen. A minőségfrissítések minden javítása egy biztonságos és megbízható telepítési folyamaton megy keresztül, amely javítja a minőség és a megbízhatóságot, és csökkenti a vevők hatását. A telepítés először abox környezetek, majd a termelés szakaszaiban történik. Az szakaszos telepítések lehetővé teszik a megfelelő figyelés számára annak megállapítását, hogy a további telepítések biztonságosak-e. Leállítjuk az összesítést, ha problémákat észlelnek az egyes telepített vevőcsoportokkal, és biztosítjuk, hogy az összesítés minden lépése elegendő időt biztosít a problémák felületének kiláttatásához. Minden közelgő minőségi frissítésnél a nyilvános dokumentációk és e-mail üzenetek frissítései révén láthatóvá tudjuk tenni az ütemezést, így a vevők előre tervezhetnek.
+
+## <a name="can-customers-delay-reschedule-or-pause-a-quality-update"></a>A vevők elhalaszthat, újraütemezhet vagy felfüggeszthet egy minőségfrissítést?
+Nem. A minőségfrissítések fő célja, hogy garantálják a biztonságot, az adatvédelemet, a megbízhatóságot, az elérhetőségt és a teljesítményt, és folyamatos fejlesztéseket eredményeznek a vevői számára. A frissítés késleltetése vagy szüneteltetása kockába fogja kockán a biztonságot, az elérhetőségt és a megbízhatóságot.
+
+## <a name="how-can-one-know-the-set-of-changes-that-went-into-a-quality-update-payload"></a>Honnan lehet tudni a minőségfrissítés rakományába bement módosítások halmazát?
+Az LCS Környezeti részletek lapján található minőségi frissítésben az összes tudásbáziscikket megnyitva navigálhet a **Minőség** frissítése szakaszra **.** 
+
+## <a name="what-is-the-process-if-a-critical-issue-is-found-after-a-quality-update"></a>Mi a folyamat, ha kritikus probléma van a minőségi frissítés után?
+A kritikus probléma vagy regressáció olyan esemény, amely jellemzően több vevőnek csökken a tapasztalata egy vagy több szolgáltatásunk esetén. Ezek a problémák váratlan leállást okozhatnak, például elérhetetlenséget, teljesítménycsökkenést és a szolgáltatáskezelésbe való beavatkozást. Ha az ilyen regresszív problémák széles körben befolyásolják a vevőket, akkor leállítjuk a minőségi frissítés kigörgetését addig, amíg nem lehet kommunikálni és kijavítani a problémát. Általában a következő minőségi frissítéshez szükséges javítás szükséges a kigörgetés folytatásához.
+
+Ha egyetlen ügyfélkörnyezetet érint, lépjen kapcsolatba a Microsoft terméktámogatással, hogy nyisson meg egy jegyet. Az indoklás alapján a probléma enyhítésáig leállítjuk a minőségi frissítés minden más környezetbe való kiadását.
+
+## <a name="can-customers-still-manually-apply-hotfix-updates-from-lcs"></a>A vevők továbbra is alkalmazhatják manuálisan az LCS-ről származó gyorsjavítás-frissítéseket?
+Igen. A gyorsjavítások munkakörnyezetének folyamatos biztosítása érdekében a gyorsjavítások frissítései továbbra is alkalmazhatók az LCS-környezetekben lévő ügyfélkörnyezetre. Fontos azonban megjegyezni, hogy a minőségi frissítés részeként telepített gyorsjavítások a frissítés telepítése előtt végigmennek a szokásos SDP-frissítésen. Ez csökkenti a magasabb minőségből következő regresszívség kockázatát. Javasoljuk, hogy a nagyobb megbízhatóság érdekében manuálisan alkalmazza a minőségi frissítéseket.
+
+## <a name="can-customers-self-install-a-quality-update-build-by-themselves-ahead-of-the-schedule"></a>Az ügyfelek saját maguk telepíthetik a minőségi frissítéseket az ütemezésnél előre?
+Igen. A minőségi frissítéseket proaktív módon telepítheti. A Microsoft kihagyja a frissítést, ha a környezet aktuális buildverziója megegyezik vagy magasabb, mint a kérdéses minőségfrissítés.
+
+## <a name="if-an-environment-has-an-upcoming-scheduled-monthly-service-update-within-a-week-will-it-still-receive-quality-updates"></a>Ha egy környezetben várható havi szolgáltatási frissítés van egy héten belül, akkor is fognak minőségi frissítéseket kapni?
+- A minőségi frissítések nem alkalmazhatók, ha egy héten belül ütemezve van egy függőben lévő szolgáltatásfrissítés, amelytől a minőségi frissítés ütemezése bekövetkezik.
+- Ha abox környezetben ugyanaz vagy magasabb a buildverzió, mint a függőben lévő minőségi frissítés, akkor a program kihagyja.
+- Ha egy termelési környezetnek ugyanaz vagy magasabb a buildverziója, mint a függő minőségi frissítésnek, akkor a rendszer kihagyja.
+- Ha a minőségi frissítés vagy a termelés manuális frissítése miatt a műhely ugyanaz vagy magasabb buildverzióval rendelkezik, a termelés akkor is a havi szolgáltatási frissítés ütemezett verzióját fogja kapni. Ha nem szeretné, hogy az ütemezett termelési környezet frissítve legyen a szolgáltatásfrissítési verzióra, szüneteltetheti a szolgáltatás frissítését az LCS-ről. 
+- Javasoljuk, hogy a legújabb minőségi frissítéssel tesztelje a várható szolgáltatásfrissítések változásait a jobb stabilság és az eredmények érdekében.
+
+## <a name="can-an-environment-be-brought-back-to-its-previous-state-if-there-are-issues-after-a-quality-update-is-applied"></a>Vissza lehet hozni a környezetet az előző állapotba, ha problémák vannak a minőségi frissítés alkalmazása után?
+A minőségi frissítés alkalmazása után semmilyen körülmények között nem kerül sor visszaállításra. Csak a problémák enyhítése érdekében vannak előre javító lehetőségek.
+
+## <a name="what-about-fda-regulation-and-gpx"></a>Mi a helyzet az FDA szabályozásával és a FDA-szabályozásokkal?
+Az FDA-ellenőrzésen és szabályozáson áteső vevőknek szóló tervek még mindig nem teljesek. Várható további frissítések ebben a területben. Jelenleg minden ilyen vevő mentesül a minőségi frissítések alól.
+
+## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>A szolgáltatásfrissítések melyik verziói támogatottak ezekhez a minőségi frissítésekhez?
+A vevőnél alacsonyabb verziójú N-2 nem fognak minőségi frissítéseket kapni. 
+
+## <a name="finance-and-operations-apps-deployments-with-retail-components-typically-require-additional-work-in-addition-to-having-to-redeploy-mpos-how-will-these-quality-updates-impact-the-retailsdk"></a>A kiskereskedelmi összetevőkből telepített pénzügyi és műveleti alkalmazások általában további munkát igényelnek az MPOS újratelepítésén kívül. Hogyan lesznek hatással ezek a minőségi frissítések a RetailSDK szolgáltatásra? 
+Mivel a gyorsjavítások jellege nem változik meg a minőségi frissítések rakományában, jelenleg nem várható további hatás a kiskereskedelmi összetevőkre nézve.
+
+## <a name="is-there-any-impact-to-cloud-hosted-environments-che-"></a>Van hatása a felhőben tárolt környezetre (CHE)? ? 
+Nem.
+
+## <a name="are-there-any-integration-issues-with-microsoft-dataverse"></a>Vannak integrációs problémák?Microsoft Dataverse 
+Nem.
+

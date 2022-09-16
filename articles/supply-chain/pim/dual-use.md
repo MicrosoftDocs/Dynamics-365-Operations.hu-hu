@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5147a837be91aab519c373e624acc036f9293641
+ms.sourcegitcommit: 555de844b8ba02fe095c28a2d447fc7c441ae549
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878903"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460548"
 ---
 # <a name="dual-use-goods"></a>Kettős felhasználású áruk
 
@@ -85,7 +85,14 @@ Ha egy terméket kettős felhasználású termékként szeretne megjelölni, és
 1. A **Külkereskedelem** gyorslapon a **kettős felhasználású termékek** beállítást válassza **Igen** értékre, ha az aktuális terméket kettős használatú áruként állítja be.
 1. A **Kettős felhasználás kódja** mezőt az aktuális termékre vonatkozó kódra kell megadni. (Ezt a kódot definiálta a **Kettős felhasználási kategóriák** lapon.)
 
-Ez a beállítás az értékesítési rendelések létrehozásakor be van jelölve.
+> [!NOTE]
+>
+> A rendszer az értékesítési visszaigazolások generáláskor a következő kettős felhasználású ellenőrzéseket végez:
+>
+> 1. Tartalmaz a rendelés két használatú terméket?
+> 1. Ebben azben a célországban kettős felhasználású bizonyítványokra van szükség?
+> 1. Ha igen, létezik tanúsítvány minden egyes két használatra használt jó esetében a célország számára, és ezek a bizonyítványok érvényesek a visszaigazolt szállítási dátumokra?
+> 1. Ha az 1. és a 2. kérdésre az "Igen" válasz, a 3. kérdésre pedig a "Nem" válasz, akkor a rendszer figyelmeztetést ad a felhasználónak arról, hogy az értékesítési rendelésben egy vagy több kettős felhasználású cikknél hiányoznak a kettős felhasználású tanúsítványok. A felhasználónak valószínűleg meg kell szereznie a szükséges tanúsítványokat, majd újra meg kell szereznie, de ha kívánja, felülbírálhatja a figyelmeztetést, és folytathatja az értékesítési visszaigazolást.
 
 ## <a name="set-up-dual-use-certificates"></a>Kettős beállítású tanúsítványok beállítása
 

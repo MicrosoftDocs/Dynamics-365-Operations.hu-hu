@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ff92e6904b8042232159a0aea095d7a91c17d4b7
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 3ce3b2f3524dbeb043717ed9ef5429ea0eea4b8a
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124100"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427800"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10027-july-2022"></a>A Dynamics 365 Supply Chain Management 10.0.27 új vagy módosult elemei (2022. július)
 
@@ -68,7 +68,7 @@ Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikke
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>A pénzügyi és az üzemeltetési alkalmazások platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.27 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és üzemeltetési alkalmazások 10.0.27-es verziójának Platformfrissítései (június 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
+A Microsoft Dynamics 365 Supply Chain Management 10.0.27 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és üzemeltetési alkalmazások 10.0.27-es verziójának Platformfrissítései (2022. július)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

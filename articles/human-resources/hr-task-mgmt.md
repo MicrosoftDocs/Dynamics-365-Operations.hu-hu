@@ -2,7 +2,7 @@
 title: Feladatkezelés
 description: Ez a cikk bemutatja a Microsoft által elérhető feladatkezelési funkciókat Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,14 +12,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c567f6d74e6ff87a72ff3b8663ca3a291dff3abb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29b547ff4f55b572ab774e7e70949ec8cb53ef42
+ms.sourcegitcommit: 167f73a834629752c6b79c312d744e52df7f0927
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897864"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9445894"
 ---
 # <a name="task-management"></a>Feladatkezelés
 
@@ -43,7 +43,7 @@ Az Egyesült Államokban felvett valamennyi alkalmazottnak el kell elvégeznie b
 
 **2. példa**
 
-Egy vállalatnál szezonális alkalmazottak és rendszeres, teljes munkaidős alkalmazottak is vannak. Bár bizonyos feladatok (például az új alkalmazott érkezésének ellenőrzése) mindkét típusú alkalmazottra vonatkoznak, néhány további feladat csak a rendes teljes munkaidős alkalmazottakra vonatkozik. Ebben az esetben két ellenőrzőlistát hozhat létre. Mindkét ellenőrzőlista a szezonális és a rendes teljes munkaidős alkalmazottakra vonatkozó feladatokat is tartalmazza, de csak egy ellenőrzőlista tartalmazza a rendszeres, teljes munkaidős alkalmazottakra jellemző feladatokat.
+Egy vállalatnál szezonális alkalmazottak és rendszeres, teljes munkaidős alkalmazottak is vannak. Bár bizonyos feladatok (például az új alkalmazott érkezésének ellenőrzése) mindkét típusú alkalmazottra vonatkoznak, néhány további feladat csak a rendes teljes munkaidős alkalmazottakra vonatkozik. Ebben az esetben két ellenőrzőlistát hozhat létre. Mindkét ellenőrzőlista tartalmazza a szezonális és a rendes teljes munkaidős alkalmazottakra vonatkozó feladatokat, de csak egy ellenőrzőlista tartalmazza a rendes teljes munkaidős alkalmazottakra jellemző feladatokat.
 
 ## <a name="task-management-workspace"></a>Feladatkezelési munkaterület
 
@@ -69,7 +69,13 @@ Az HR asszisztensek és vezetők mindhárom lapon a következő tevékenységeke
 
 A feladatokat egyenként is létre lehet hozni, majd újra fel lehet használni őket több ellenőrzőlistán. Feladat létrehozásához válassza az Új **lehetőséget** **a** Berakodva beállítási lapon, a Feladatok **lapon.**
 
+Ha egy létrehozott feladatot több ellenőrzőlistához szeretne hozzárendelni, **válassza ki a feladatot, majd válassza az Alkalmazva az ellenőrzőlistákra** parancsot a menüben.
+
 Közvetlenül is hozzá lehet adni feladatokat az ellenőrzőlistához. Feladat **feladatnak** **az ellenőrzőlistához való hozzáadásához hozzon létre egy új ellenőrzőlistát az Ellenőrzőlista** lapon, vagy vegye fel a feladatot egy meglévő ellenőrzőlistához.
+
+A tárban található feladat szerkesztéséhez válassza **a** Feladattár menü Szerkesztés parancsát. Ha a feladat bármilyen ellenőrzőlistához hozzá van társítva, **ezek az ellenőrzőlisták megjelennek a Feladat szerkesztése lapon**. Ha azt szeretné, hogy az ellenőrzőlistákban található feladatok a szerkesztéssel frissüljön, jelölje ki azokat az ellenőrzőlistát az **Alkalmaz az ellenőrzőlistákra szakaszban**.
+
+Ha törölni szeretné a feladatokat a tárból, válassza a Törlés **lehetőséget**. Ha egy feladat bármilyen ellenőrzőlistához hozzá van társítva, ez a művelet nem törli a feladatot az ellenőrzőlistán. A feladatot külön műveletben el kell távolítani az ellenőrzőlistán.
 
 > [!NOTE]
 > Ha egy feladatot közvetlenül az ellenőrzőlistához ad hozzá, akkor azt nem használhatja újra más ellenőrzőlistákon.
@@ -86,7 +92,7 @@ A következő táblázat leírja azokat a mezőket, amelyek akkor érhetők el, 
 | Hozzárendelve a következőhöz:     | Annak a dolgozónak, beosztásnak vagy beosztáscsoportnak a kiválasztása, akihez a feladatot hozzárendeli. |
 | Kapcsolattartó  | Annak a személynek a megadása, akivel kapcsolatba kell lépni, ha kérdések vannak a feladattal kapcsolatban. |
 | Határidő eltolása | Adja meg, hogy hány nappal a feladat befejezésének, befejezésének vagy áttérésének dátuma előtt vagy után legyen esedékes a feladat. A további tudnivalókat [lásd a Feladat határidői és a Határidő ellenszámlája mezőben](#task-due-dates-and-the-due-date-offset-field). |
-| Utasítások    | Útmutatások beírása a feladat befejezéséhez. A további tudnivalókat lásd az Utasítások [szakaszban](#instructions). |
+| Útmutatás    | Útmutatások beírása a feladat befejezéséhez. A további tudnivalókat lásd az Utasítások [szakaszban](#instructions). |
 
 ### <a name="task-links"></a>Feladathivatkozások
 
@@ -127,13 +133,21 @@ A feladat határidői a foglalkoztatás kezdő dátumán, a munkaviszony megszű
 
 A határidők számítása az ellenőrzőlistához társított naptár alapján történik. További tájékoztatás az [Ellenőrzőlisták beállítása szakaszban](#setting-up-checklists) található.
 
-### <a name="instructions"></a>Utasítások
+### <a name="instructions"></a>Útmutatás
 
 Az összetett feladatok végrehajtása több lépésből is áll, vagy lehet, hogy a feladatot végző személynek további információkat kell adnia. Az Utasítások **mezőben** útmutatásokat vagy további információkat lehet megadni, amelyek segítenek a feladathoz hozzárendelt személy befejezésében.
 
 ## <a name="setting-up-checklists"></a>Ellenőrzőlisták beállítása
 
-Az ellenőrzőlista feladatok egy csoportja. Annyi ellenőrzőlistát hozhat létre, amennyit csak szeretne, és ugyanazt a feladatot több ellenőrzőlistához rendelheti hozzá. Ellenőrzőlista létrehozásakor meg kell adnia egy tulajdonost és egy naptárat.
+Az ellenőrzőlista feladatok egy csoportja. Annyi ellenőrzőlistát hozhat létre, amennyit csak szeretne, és ugyanazt a feladatot több ellenőrzőlistához rendelheti hozzá.
+
+Ha új feladatot hoz létre egy ellenőrzőlistán, válassza **a Feladatok** **menü** Új parancsát. Új feladat létrehozásakor választhatja azt, hogy hozzáadja a feladattárhoz, hogy több ellenőrzőlista között meg legyen osztva. A feladatot csak akkor használhatja a tárra, ha **a** Feladat alkalmazása a tárra beállítás Igen beállításra **van állítva**. Ha hozzáadja a feladatot a feladattárhoz, **akkor** azt is hozzáadhatja más ellenőrzőlistákhoz, ha az ellenőrzőlistákra alkalmazza az ellenőrzőlistát. Ha nem adja hozzá a feladatot a tárhoz, akkor az csak az ön által létrehozott ellenőrzőlistán fog létezik.
+
+Az ellenőrzőlista egy feladatának szerkesztéséhez válassza a Szerkesztés **lehetőséget**. Ha a feladat bármilyen ellenőrzőlistához hozzá van társítva, **ezek az ellenőrzőlisták megjelennek a Feladat szerkesztése lapon**. Ha azt szeretné, hogy az egyéb ellenőrzőlistákban található feladatok frissüljön a szerkesztéssel, jelölje ki azokat az ellenőrzőlistát az **Alkalmaz az ellenőrzőlistákra szakaszban**.
+
+Ha el szeretne távolítani feladatokat az ellenőrzőlistán, válassza az Eltávolítás **lehetőséget**. Ez a művelet csak a feladatokat távolítja el az ellenőrzőlistán. Nem törli őket a feladattárból. Ha törölni szeretne egy feladatot a tárból, kattintson a feladattár lapjára, és válassza a Törlés **lehetőséget**.
+
+Ellenőrzőlista létrehozásakor meg kell adnia egy tulajdonost és egy naptárat.
 
 **Ha egy feladat Hozzárendelés típus** mezőjének beállítása Beosztás, **·** **Vezető** vagy Csoport, de konkrét személy nem származhat a hozzárendelés típusból, akkor a **feladat** az ellenőrzőlista tulajdonosa lesz. Íme néhány példa olyan helyzetekre, amikor feladatok rendelhetők az ellenőrzőlista tulajdonosához:
 
@@ -166,7 +180,7 @@ A hozzárendelési csoport létrehozása után ki lehet válogatni a feladat lé
 
 A berakodási, a külsős vagy az áttérési folyamat több feladatot tartalmazhat. Ha egyszerűbbé szeretne tenni az összes szükséges feladat ellenőrzőlistához való hozzárendelését, létrehozhat feladatcsoportokat a kapcsolódó feladatok kategóriákba sorolása érdekében. Például az emberi erőforrásokkal, az itekkel és a bérszámfejtési részlegekkel kapcsolatos feladatokat kell elvégezniük ahhoz, hogy új alkalmazottat vegyenek fel. Ezért a következő feladatcsoportok hozhatók létre: **HR**, **It** és **Payroll**. Ezután a feladat létrehozásakor társítani lehet a feladatcsoportok valamelyikét.
 
-Ha feladatot szeretne hozzáadni egy ellenőrzőlistához, a feladatok listáját szűrheti azon feladatcsoport szerint, amelybe a kívánt feladat tartozik. Például ellenőrzőlista-sablon létrehozásakor szűrheti a listát, **hogy csak az it-feladatcsoporthoz rendelt it-feladatok** megjelenítése megjelenik. Így biztos lehet benne, hogy csak a fontos it-it feladatok vannak kiválasztva.
+Ha feladatot szeretne hozzáadni egy ellenőrzőlistához, a feladatok listáját szűrheti azon feladatcsoport szerint, amelybe a kívánt feladat tartozik. Például ellenőrzőlista-sablon létrehozásakor szűrheti a listát, **hogy csak az it-feladatcsoporthoz rendelt it-feladatok** jelennek meg. Így biztos lehet benne, hogy csak a fontos it-it feladatok vannak kiválasztva.
 
 ## <a name="using-checklists"></a>Ellenőrzőlisták használata
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65467fd9525ae8fb5a65a9316b7307f611fa6e42
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850670"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475612"
 ---
 # <a name="intercompany-planning"></a>Vállalatközi tervezés
 
@@ -45,8 +45,8 @@ Ha egy alaptervből futtatja az alaptervezést, amely tartalmazza a tervezett le
 
 A vállalatközi tervezés használatához a következő módon kell felkészíteni a rendszert:
 
-1. A releváns termékeket minden érintett vállalatnál ki kell adni. További tudnivalókért lásd: [Vállalatközi kereskedelem konfigurálása és használata itt: Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) Microsoft Learn a rendszerében.
-1. A lefelé irányuló igényt a felsőbb vállalattal vállalatközi kapcsolattal rendelkező szállítótól érkező beszerzéseknek és a vevő megfelelő alapértelmezett készletdimenzióinak (hely és raktár) kell fedezniük. További tudnivalókért lásd: [Vállalatközi kereskedelem konfigurálása és használata itt: Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) Microsoft Learn a rendszerében.
+1. A releváns termékeket minden érintett vállalatnál ki kell adni. A további tudnivalókat lásd [: Vállalatközi kereskedelem konfigurálása és használata a következőben:Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/)
+1. A lefelé irányuló igényt a felsőbb vállalattal vállalatközi kapcsolattal rendelkező szállítótól érkező beszerzéseknek és a vevő megfelelő alapértelmezett készletdimenzióinak (hely és raktár) kell fedezniük. A további tudnivalókat lásd [: Vállalatközi kereskedelem konfigurálása és használata a következőben:Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/)
 1. A felsőbb szintű vállalat alaptervének tartalmaznia kell a tervezett lefelé irányuló igényt, és meg kell adni az érintett vállalatot és alaptervet a lefelé irányuló tervekben.
 
 ## <a name="include-planned-downstream-demand"></a>Tervezett alsóbb rétegbeli igény figyelembevétele
@@ -85,6 +85,5 @@ Ehhez a példához egy tervezett beszerzési rendelés jön létre a USMF válla
 A következő ábra azt mutatja be, hogyan jelenhet meg ez a példa a tervezett termelési rendelés **Többszintű igénykövetés** oldalán.
 
 ![Vállalatközi példa, amely három vállalatot érint.](media/IntercompanyPlanning2.png)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

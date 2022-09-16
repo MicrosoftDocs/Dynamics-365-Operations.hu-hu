@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
-ms.translationtype: MT
+ms.openlocfilehash: 316650de19d3275f2c60c79c10d6ac8a8c79e1aa
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334745"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427874"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>A Dynamics 365 Supply Chain Management 10.0.29 előzetes verziója (2022. október)
 
@@ -38,8 +38,8 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 | Készlet és logisztika | [Előrehozott aktuális készletlisták](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | Hamarosan | Alapértelmezés szerint engedélyezve |
 | Készítés rendelésre ellátás automatizálása | [Készítés rendelésre ellátás automatizálása](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Készítés rendelésre ellátás automatizálása](../master-planning/make-to-order-supply-automation.md) | Funkciókezelés:<br>*Készítés rendelésre ellátás automatizálása* |
 | Tervezés | [DDMRP részletes információk megtekintése és alkalmazása](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md) | Funkciókezelés:<br>*(Előzetes verzió) DDMRP a Tervezési optimalizáláshoz* |
-| Gyártásvezérlés | [A késztermékek fizikai elérhetővé teése a naplóba történő feladás előtt](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [A késztermékek fizikai elérhetővé teése a naplóba történő feladás előtt](../production-control/deferred-posting.md) | Funkciókezelés:<br>*(Előzetes verzió) Késztermékek ténylegesen elérhetővé tétele a naplókba való feladás előtt* |
-| Raktárkezelés | [Vonatkozó adatok keresni a raktári mobilalkalmazáson belül](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/look-up-relevant-data-within-warehouse-mobile-app) | [Adatok lekérdezése a Raktárkezelés mobilalkalmazás-hibakezelő segítségével](../warehousing/warehouse-app-data-inquiry.md) | Funkciókezelés:<br>*Warehouse Management alkalmazás adatkérési folyamata* |
+| Gyártásvezérlés | [Késztermékek ténylegesen elérhetővé tétele a naplókba való feladás előtt](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [Késztermékek ténylegesen elérhetővé tétele a naplókba való feladás előtt](../production-control/deferred-posting.md) | Funkciókezelés:<br>*(Előzetes verzió) Késztermékek ténylegesen elérhetővé tétele a naplókba való feladás előtt* |
+| Raktárkezelés | [Vonatkozó adatok keresni a raktári mobilalkalmazáson belül](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/look-up-relevant-data-within-warehouse-mobile-app) | [Adatok lekérdezése a Warehouse Management mobilalkalmazás-kitérők segítségével](../warehousing/warehouse-app-data-inquiry.md) | Funkciókezelés:<br>*Warehouse Management alkalmazás adatkérési folyamata* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>A kiadásban található funkciófejlesztések
 
@@ -62,9 +62,9 @@ Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikke
 
 | Szolgáltatásterület | Új vagy frissített cikkek |
 |---|---|
-| Alaptervezés, CTP | [Értékesítési rendelés szállítási dátumának számítása az "CTP" módszer használatával](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) |
+| Alaptervezés, CTP | [Értékesítési rendelés szállítási dátumának számítása az ígérhető használatával](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) |
 | Alaptervezés, DDMRP | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md)<br>[A DDMRP szolgáltatás bekapcsolása a rendszerhez](../master-planning/planning-optimization/ddmrp-enable.md)<br>[Készletpozicionálás](../master-planning/planning-optimization/ddmrp-inventory-positioning.md)<br>[Bufferprofil és -szintek](../master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md)<br>[Igényvezérelt tervezés](../master-planning/planning-optimization/ddmrp-planning.md)<br>[Vizuális és együttműködési végrehajtása](../master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md) |
-| Raktárkezelés | [Szállítmány tárolóit tartalmazó csomag](../warehousing/packing-containers.md)<br>[Csomagolási munka kimenő tárolók csomagolásához és szállítmányok feldolgozásához](../warehousing/packing-work.md) |
+| Raktárkezelés | [Tárolók csomagolása szállításhoz](../warehousing/packing-containers.md)<br>[Csomagolási munka kimenő tárolók csomagolásához és szállítmányok feldolgozásához](../warehousing/packing-work.md) |
 
 ## <a name="feature-state-changes-in-this-release"></a>Funkcióállapot-változások ebben a verzióban
 
@@ -205,7 +205,7 @@ A táblázat felsorolja azokat a funkciókat is, amelyek korábban nyilvános el
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.29 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és üzemeltetési alkalmazások 10.0.29-es verziójának Platformfrissítései (június 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md). <!--KFM: Confirm link -->
+A Microsoft Dynamics 365 Supply Chain Management 10.0.29 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és műveletalkalmazások platformfrissítései a 10.0.29-es verzióhoz (2022. október)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

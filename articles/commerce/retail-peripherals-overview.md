@@ -2,7 +2,7 @@
 title: Perifériák
 description: Ez a cikk bemutatja a Commerce perifériákkal kapcsolatos fogalmakat.
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -12,12 +12,12 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3113626b18ad7f074c808d7631d13b09071bef2
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880081"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9459994"
 ---
 # <a name="peripherals"></a>Perifériák
 
@@ -25,7 +25,7 @@ ms.locfileid: "8880081"
 
 Ez a cikk bemutatja az üzlet perifériáihoz kapcsolódó fogalmakat. A perifériák pénztárhoz (POS) való csatlakoztatásának különböző módszereit írja le, valamint az összetevőket, amelyek a POS-kapcsolat kezeléséért felelősek
 
-## <a name="concepts"></a>Koncepció
+## <a name="concepts"></a>Koncepciók
 
 ### <a name="pos-registers"></a>POS-pénztárgépek
 
@@ -123,12 +123,12 @@ Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen
 
 ### <a name="windows"></a>Windows
 
-A nyugtanyomtatás a pénztárban az OPOS-ra van optimalizálva. Az OPOS általában sokkal gyorsabb, mint a Windows-nyomtatás. Ezért célszerű az OPOS használata, különösen a környezetekben, ahol 40 oszlopos nyugták nyomtatása történik, és a tranzakciós időnek rövidnek kell lennie. A legtöbb eszköz esetében OPOS-vezérlőket fog használni. Azonban egyes OPOS-nyugtanyomtatók a Windows-illesztőprogramokat is támogatják. A Windows-illesztőprogram használatakor elérheti a legújabb betűtípusokat és az egyes hálózati nyomtatót több pénztárgéphez. Azonban vannak hátrányai is a Windows-illesztőprogramok használatának. Az alábbiakban példa látható a hátrányokra:
+A nyugtanyomtatás a pénztárban az OPOS-ra van optimalizálva. Az OPOS általában sokkal gyorsabb, mint a Windows-nyomtatás. Ezért célszerű az OPOS használata, különösen a környezetekben, ahol 40 oszlopos nyugták nyomtatása történik, és a tranzakciós időnek rövidnek kell lennie. A legtöbb eszköz esetében OPOS-vezérlők használhatók. Azonban egyes OPOS-nyugtanyomtatók a Windows-illesztőprogramokat is támogatják. A Windows-illesztőprogram használatakor elérheti a legújabb betűtípusokat és az egyes hálózati nyomtatót több pénztárgéphez. Azonban vannak hátrányai is a Windows-illesztőprogramok használatának. Az alábbiakban példa látható a hátrányokra:
 
 -   A Windows-illesztőprogramok használatakor megtörténik a képek renderelés a nyomtatás előtt. Ezért a nyomtatás általában lassabb, mint az OPOS-vezérlőket használó nyomtatók esetében.
 -   A nyomtatón keresztül csatlakoztatott („láncba kötött”) eszközök nem feltétlenül működnek megfelelően a Windows-illesztőprogramok használatakor. Előfordulhat például, hogy a pénztárgépfiók nem nyílik ki, vagy a nyugtanyomtató nem úgy működik, mint ahogy várt.
 -   Az OPOS emellett változók szélesebb körét támogatja, amelyeket kifejezetten a nyugtanyomtatókhoz terveztek: ilyen például a papírvágás vagy az elismervénynyomtatás.
--   Windows-nyomtatókat nem támogat az IIS-hardvereszköz. 
+-   A Windows-nyomtatók nem támogatottak az IIS hardverállomáson keresztül. 
 
 Ha OPOS-vezérlők érhetők el a Windows-nyomtatóhoz, amelyet használ, a nyomtatónak még mindig gond nélkül működnie kell a Commerce programmal.
 
@@ -142,9 +142,12 @@ A Modern POS támogatja az UWP MSR-eket és beolvasókat. Amikor tehát a Modern
 
 A POS-perifériák további osztályai kerülnek a Windows alkalmazásba, például a pénztárfiókok és a nyugtanyomtatók osztályai. Az új eszközosztályok támogatása a Modern POS programban függőben van.
 
+> [!NOTE] 
+> Ha a Windows 10 [áramkezelési funkcióval kezelt ÉS AOS szelektív felfüggesztése van a rendszerben, bizonyos FUNKCIÓK elérhetetlenné vagy megbízhatatlanná válhatnak](/windows-hardware/drivers/usbcon/usb-selective-suspend). Ha egy PERIFÉRIÁS periféria elérhetetlenné válik, lehet, hogy le kell tiltani az adott eszközre vonatkozó szelektív felfüggesztési funkciót. A további tudnivalókat lásd [a Szelektív felfüggesztés engedélyezése.](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend) 
+
 ### <a name="keyboard-wedge"></a>Billentyűzet ék
 
-A billentyűzet ék eszközök adatokat küldenek a számítógépnek úgy, mintha az adatok a billentyűzeten lettek volna beírva. Ezért alapértelmezés szerint a pénztár aktív mezője megkapja a beolvasott vagy lehúzott adatokat. Bizonyos esetekben ez a viselkedés azt okozhatja, hogy hibás típusú adatok olvasódnak be a nem megfelelő mezőbe. Egy vonalkód például a hitelkártyaadatoknak szánt mezőbe olvasódhat be. Sok esetben a pénztár tartalmaz olyan logikát, amely meghatározza, hogy a beolvasott vagy lehúzott adat vonalkód vagy kártyalehúzás. Ezért az adatok megfelelően kezeli a rendszer. Ha azonban az eszközök billentyűzet ék eszköz helyett OPOS-ként vannak beállítva, pontosabban vezérelhető az ilyen eszközök adatainak felhasználása, mert több dolog „ismert” az eszközről, amelyről az adatok származnak. A vonalkód-leolvasók adatait például automatikusan vonalkódként ismeri fel a rendszer, és a kapcsolódó bejegyzés megkeresése az adatbázisban könnyebb és gyorsabb, mint ha általános karakterlánc-keresés futna le, úgy, mint a billentyűzet ék eszközök esetében.
+A billentyűzet ék eszközök adatokat küldenek a számítógépnek úgy, mintha az adatok a billentyűzeten lettek volna beírva. Ezért alapértelmezés szerint a pénztár aktív mezője megkapja a beolvasott vagy lehúzott adatokat. Bizonyos esetekben ez a viselkedés azt okozhatja, hogy hibás típusú adatok olvasódnak be a nem megfelelő mezőbe. Egy vonalkód például a hitelkártyaadatoknak szánt mezőbe olvasódhat be. A POS számos esetben azt határozza meg, hogy a beolvasott vagy leolvasott adatok vonalkód vagy kártya lehúzása-e. Ezért az adatok megfelelően kezeli a rendszer. Ha azonban az eszközök BILLENTYŰZET-billentyűparancsok helyett OPOS-eszközként vannak beállítva, akkor még inkább szabályozható, hogy az ilyen eszközök adatai hogyan használhatók fel, mivel több "ismert" információ arról az eszközről, amelyről az adatok származnak. A vonalkód-leolvasók adatait például automatikusan vonalkódként ismeri fel a rendszer, és a kapcsolódó bejegyzés megkeresése az adatbázisban könnyebb és gyorsabb, mint ha általános karakterlánc-keresés futna le, úgy, mint a billentyűzet ék eszközök esetében.
 
 > [!NOTE]
 > Ha billentyűzetolvasókat használ a POS-ban, akkor úgy kell őket programozni, hogy küldjenek vissza egy soremelést, vagy egy **Enter** eseményt az utolsó beolvasott karakter után. Ha ez a konfigurálás nem történik meg, akkor a billentyűzetolvasók nem fognak megfelelően működni. Az eszközgyártó által benyújtott dokumentációból tájékozódhat a soremelés esemény hozzáfűzéséről.  
@@ -176,7 +179,7 @@ Más néven "IIS" hardverállomásként is hivatkoznak, ami arról ad tájékozt
 
 A megosztott hardverállomás lehetővé teszi, hogy több értékesítési ügyfél közösen használja a perifériákat, vagy egy-egy értékesítési pont vállalt perifériás készletének kezelésére használható. 
 
-Amikor egy hardvereszköz használható a perifériák több POS-ügyfél közötti megosztásának támogatására, csak a pénzfiókok, a nyugta- és a kifizetési terminálok használhatók. Önálló vonalkódolvasók, MSR-ek, sorkijelzők, mérlegek vagy más eszközök közvetlenül nem csatlakoztathatók. Ellenkező esetben ütközés történik, amikor több pénztáreszköz próbálja egyszerre igényelni ugyanazokat a perifériákat. Így lehet kezelni az ütközéseket a támogatott eszközök esetében:
+Amikor egy hardvereszköz használható a perifériák több POS-ügyfél közötti megosztásának támogatására, csak a pénzfiókok, a nyugta- és a kifizetési terminálok használhatók. Önálló vonalkódolvasók, MSR-ek, sorkijelzők, mérlegek vagy más eszközök közvetlenül nem csatlakoztathatók. Ellenkező esetben ütközés történik, amikor több pénztáreszköz próbálja egyszerre igényelni ugyanazokat a perifériákat. A támogatott eszközök ütközésének kezelése a következő:
 
 -   **Pénzfiók** – A pénztárfiók nyitását az eszköznek küldött esemény váltja ki. Problémák léphetnek fel, ha egy pénztárgépfiókot akkor hívnak ki, amikor a fiók már ki van nyitva. A megosztott hardverállomás konfigurációjában használt **pénztárfiókot** a Hardverprofilban megosztottra kell állítani. Ez a beállítás megakadályozza, hogy a pénztár ellenőrizze azt, hogy a pénztárfiók már nyitva van-e, amikor a megnyitás parancsot küldi.
 -   **Nyugtanyomtató** – Ha a hardverállomásra egy időben két nyugtanyomtatási parancsot küldenek, a parancsok egyike elveszhet az eszköztől függően. Egyes eszközöknek belső memóriája vagy készletezési funkciója van, amely megakadályozhatja a probléma előfordulását. Ha egy nyomtatási parancs nem sikeres, a pénztáros hibaüzenetet kap, és újra megpróbálhatja kiadni a nyomtatási parancsot a pénztárról.
@@ -597,7 +600,7 @@ Alapértelmezés szerint az SSL és a TLS összes verziója le van tiltva, a TLS
         -   SSL 3.0Client:Enabled=0
         -   SSL 2.0Server:Enabled=0
         -   SSL 2.0Client:Enabled=0
--   Nincs szükség további hálózati portok megnyitásához, kivéve, ha ez ismert, meghatározott okokból szükséges.
+-   Nincs nyitva további hálózati port, hacsak nincs szükség rá ismert, megadott okból.
 -   A forrásokat átfogó erőforrás-megosztást le kell tiltani, és meg kell határozni az engedélyezett, elfogadott forrásokat.
 -   Csak megbízható tanúsítványszolgáltatók használhatók a hardverállomást futtató számítógépeken használt tanúsítványok beszerezéséhez.
 

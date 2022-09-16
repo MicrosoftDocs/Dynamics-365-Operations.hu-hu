@@ -2,7 +2,7 @@
 title: A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 description: Ez a cikk bemutatja, hogy hogyan lehet megvizsgálja a konfigurált elektronikus jelentéskészítő (ER) összetevőket, hogy megelőzhetőek a futásidejű problémák.
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1ca59d6c26dbcf065adb952409da30002d951f62
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277850"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476854"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 
@@ -243,6 +243,15 @@ Az alábbi táblázat tartalmazza az ER által kínált vizsgálatokat. Ezekről
 <td>
 <p>Az ORDERBY függvény listakifejezése nem kérdezhető le.</p>
 <p><b>Futásidejű hiba:</b> A rendezés nem támogatott. A konfiguráció ellenőrzésével további részleteket kaphat erről.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>Elavult alkalmazástermék</a></td>
+<td>Adatok sértetlensége</td>
+<td>Figyelmeztetés</td>
+<td>
+<p>Az elem elérési &lt; útja&gt; elavultként van megjelölve.<br>vagy<br>Az elem elérési &lt; útja elavultként van megjelölve üzenetszöveggel&gt;&lt;.&gt;</p>
+<p><b>Futásidejű hibaminta:</b> Az osztály elérési&lt; útja&gt; nem található.</p>
 </td>
 </tr>
 </tbody>
@@ -942,6 +951,36 @@ A hiba automatikus javítása nem lehetséges.
 #### <a name="option-2"></a>2. beállítás
 
 Módosítsa a **FilteredVendors adatforrás** kifejezését a következőre:`ORDERBY("Query", Vendor, Vendor.AccountNum)``ORDERBY("InMemory", Vendor, Vendor.AccountNum)` Nem ajánlott olyan tábla kifejezését módosítani, amely nagy mennyiségű adatot (tranzakciós táblát) tartalmaz, mivel minden rekordot beolvasásra fog beolvasásra a rendszer, és a szükséges rekordok rendelése a memóriában történik. Ezért ez a megközelítés gyenge teljesítményt okozhat.
+
+## <a name="obsolete-application-artifact"></a><a id="i19"></a> Elavult alkalmazástermék
+
+HA ER modellleképezési összetevőt vagy ER-formátum-összetevőt tervez, konfigurálhat egy ER-kifejezést, hogy egy alkalmazásterméket hívja meg az ER-ban, például adatbázistáblában, osztály metódusában stb. A Pénzügy 10.0.30-as és újabb verziójában az ER figyelmeztetést kaphat, ha a hivatkozott alkalmazás műterméke elavultként van megjelölve a forráskódban. Ez a figyelmeztetés általában azért hasznos, mert általában az elavult műtermékeket végül eltávolítják a forráskódból. A műtermékek állapotáról való tájékoztatás megakadályozhatja az elavult műtermék használatát a szerkeszthető ER összetevőben a forráskódból való eltávolítása előtt, így megelőzhető, hogy futásidőben egy ER-összetevőből származó, nem létező alkalmazás-műtermékeket hívjanak meg.
+
+Engedélyezze az **elektronikusjelentés-adatforrások** **elavult** elemeinek érvényesítését a Funkciókezelési munkaterületen, hogy elkezdődjon az alkalmazástermékek elavult attribútumának vizsgálata egy szerkeszthető ER-összetevő vizsgálata során. Az elavult attribútum értékelése jelenleg a következő alkalmazás-műtermékek esetében történik:
+
+- Adatbázistábla
+    - Tábla mezője
+    - Tábla metódusa
+- Alkalmazásosztály
+    - Osztály metódusa
+
+> [!NOTE]
+> Egy elavult műtermékre hivatkozó adatforrás szerkeszthető ER-összetevőjét csak akkor figyelmezteti a rendszer, ha az adatforrást az ER-összetevő legalább egy kötésében használják.
+
+> [!TIP]
+> [Ha a SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute) osztály figyelmeztetést küld a fordítónak a hibaüzenetek helyett, **·** **·** **a** vizsgálati figyelmeztetés a modellleképezés tervezője vagy a Formátumtervező lap Részletek gyorslapján, a forráskódban megadott figyelmeztetést mutatja tervezési időben.
+
+A következő ábra `DEL_Email``CompanyInfo` az érvényesség-ellenőrzési figyelmeztetést mutatja be, amely akkor fordul elő, amikor az alkalmazástábla elavult mezője egy adatmodell-mezőhöz van kötve a konfigurált adatforrás `company` használatával.
+
+![Tekintse át az ellenőrzési figyelmeztetéseket a Modellleképezés tervezőlapJán, a Részletek gyorslapon.](./media/er-components-inspections-19a.png)
+
+### <a name="automatic-resolution"></a>Automatikus megoldás
+
+A hiba automatikus javítása nem lehetséges.
+
+### <a name="manual-resolution"></a>Manuális megoldás
+
+Módosítsa a konfigurált modell megfeleltetését vagy formátumát egy olyan adatforrásra vonatkozó összes kötés eltávolításával, amely elavult alkalmazástermékre hivatkozik.
 
 ## <a name="additional-resources"></a>További erőforrások
 
