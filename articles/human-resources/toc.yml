@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Újdonságok és változások a Human Resources szolgáltatásban
               items:
+                - name: Human Resources 10.0.30 (egyesített infrastruktúra)
+                  href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Human Resources 10.0.29 (egyesített infrastruktúra)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (egyesített infrastruktúra)
@@ -478,6 +480,8 @@
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Korszerű alkalmazotti belépés
               href: stream-employee-entry.md
+            - name: Vezérlő fejlécének személyre szabása
+              href: hr-worker-header-control.md
             - name: Dolgozói adatok megadása
               href: hr-personnel-enter-worker-information.md
             - name: Foglalkoztatás nélküli dolgozók

@@ -12,6 +12,8 @@
               items:
                 - name: Újdonságok és változások a Supply Chain Management szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.30 (2022. november)
+                  href: get-started/whats-new-scm-10-0-30.md
                 - name: Supply Chain Management 10.0.29 (2022. október)
                   href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (2022. augusztus)
@@ -1715,13 +1717,35 @@
                   href: inventory/inventory-visibility-allocation.md
                 - name: Inventory Visibility aktuális módosítási ütemezése és az ígérethez rendelkezésre álló készlet
                   href: inventory/inventory-visibility-available-to-promise.md
-                - name: Készletláthatóság nyilvános API-jai
+                - name: Inventory Visibility nyilvános API-jai
                   href: inventory/inventory-visibility-api.md
-                - name: Készletláthatósággal kapcsolatos tanácsok
+                - name: Inventory Visibility szolgáltatással kapcsolatos tanácsok
                   href: inventory/inventory-visibility-tips.md
-        - name: IoT-intelligencia
+        - name: Sensor Data Intelligence
           items:
-            - name: IoT-intelligencia – kezdőlap
+            - name: Sensor Data Intelligence – kezdőlap
+              href: sensor-data-intelligence/sdi-home-page.md
+            - name: Kapcsolja be a Sensor Data Intelligence szolgáltatást a rendszerben
+              href: sensor-data-intelligence/sdi-enable-feature.md
+            - name: IoT-megoldás telepítése az Azure-ba
+              href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
+            - name: Sensor Data Intelligence paraméterei
+              href: sensor-data-intelligence/sdi-parameters.md
+            - name: Szimulált érzékelő beállítása teszteléshez
+              href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
+            - name: Az eszköz leállási forgatókönyve
+              href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
+            - name: Az eszköz karbantartási forgatókönyve
+              href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
+            - name: A gépállapot forgatókönyve
+              href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
+            - name: A termékminőségi forgatókönyv
+              href: sensor-data-intelligence/sdi-scenario-product-quality.md
+            - name: A termelés késéseinek forgatókönyve
+              href: sensor-data-intelligence/sdi-scenario-production-delays.md
+        - name: IoT intelligencia
+          items:
+            - name: IoT intelligencia – kezdőlap
               href: iot/iot-intelligence-home-page.md
             - name: Azure-erőforrások beállítása
               href: iot/iot-azure-setup.md
@@ -1940,7 +1964,7 @@
                 - name: Költségkontroll
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Költséggazdálkodás
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Aktuális készlet
                   href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Számlajóváhagyások
@@ -1948,11 +1972,11 @@
                 - name: Saját csapat
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Project-mobilalkalmazások áttekintése
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
                 - name: Projekt időbejegyzése
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
                 - name: Beszerzési rendelés jóváhagyása
                   href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Értékesítési rendelések
@@ -3463,7 +3487,7 @@
                       href: warehousing/small-parcel-shipping.md
                 - name: Szállítmánykonszolidációs irányelvek
                   items:
-                    - name: Szállítmánykonszolidációs irányelvek
+                    - name: Szállítmánykonszolidációs irányelvek – áttekintés
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Szállítmánykonszolidációs irányelvek konfigurálása
                       href: warehousing/configure-shipment-consolidation-policies.md
