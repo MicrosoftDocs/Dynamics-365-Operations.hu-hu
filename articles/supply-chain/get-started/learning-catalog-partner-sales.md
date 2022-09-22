@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 861cd1b2cf43552cdb040a888a933063e38d25ed
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: ebf58067754dbca0e93b5477b2fbee361355e029
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423627"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538648"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-supply-chain-management"></a>Microsoft partner Dynamics 365 Supply Chain Management szolgáltatással kapcsolatos értékesítési és marketing szerepköreinek tanulás katalógusa
 
@@ -29,15 +29,14 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 | Tartalom | Leírás | Formátum | Hossz |
 |---------|-------------|--------|--------|
-| [Dynamics 365 és Power Platform alapok](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez. | Ingyenes, saját tempójú online tanulási útvonal | 5.5 óra |
-| [A Pénzügy és műveletek alkalmazásokkal kapcsolatos első lépések](/learn/paths/get-started-finance-operations/) | Ismerje meg, hogy a pénzügyi és műveleti alkalmazások hogyan teszik lehetővé a vállalkozások számára globális pénzügyi rendszerük, a működési üzleti folyamatok és az ellátási lánc leegyszerűsítése által, hogy a személyeknek gyorsan és megalapozott döntéseket hozzanak. A pénzügy- és műveletalkalmazások használata során első lépésként meg kell ismerkednie annak funkcióival és funkcióival, függetlenül a kívánt szereptől. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
+| [Dynamics 365 és Power Platform alapok](/training/paths/dyn-power-plat-bus-app-fundamentals/) | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez. | Ingyenes, saját tempójú online tanulási útvonal | 5.5 óra |
+| [A Pénzügy és műveletek alkalmazásokkal kapcsolatos első lépések](/training/paths/get-started-finance-operations/) | Ismerje meg, hogy a pénzügyi és műveleti alkalmazások hogyan teszik lehetővé a vállalkozások számára globális pénzügyi rendszerük, a működési üzleti folyamatok és az ellátási lánc leegyszerűsítése által, hogy a személyeknek gyorsan és megalapozott döntéseket hozzanak. A pénzügy- és műveletalkalmazások használata során első lépésként meg kell ismerkednie annak funkcióival és funkcióival, függetlenül a kívánt szereptől. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
 | [Tanfolyam MB-900T01-A: Dynamics 365 alapjai](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Ez a tanfolyam a Dynamics 365 funkcionalitásával és üzleti értékével ismerteti meg a tanulót. A tanfolyam a Dynamics 365 alkalmazásokat, a Power Platform megoldást, a felhőkoncepciókat, a biztonsági modellt és a licencelési szempontokat fogja tartalmazni. | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 1 nap |
 
 ## <a name="exam"></a>Vizsga<a name="exam"></a>
 
 | Tartalom  | Leírás  | Formátum |
 |----------|--------------|--------|
-| [Dynamics 365 alapok](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bizonyítsa be, hogy érti a Microsoft Dynamics 365 rendszert; Power Platform; felhőalapú fogalmak; licencelési beállítások; és telepítési és kiadási beállítások. | Vizsga; a költség régiónként változik |
+| [Dynamics 365 alapok](/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bizonyítsa be, hogy érti a Microsoft Dynamics 365 rendszert; Power Platform; felhőalapú fogalmak; licencelési beállítások; és telepítési és kiadási beállítások. | Vizsga; a költség régiónként változik |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

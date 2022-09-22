@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16141
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
 ms.search.form: SystemParameters
-ms.openlocfilehash: 2c45a203303181c7ea23e20f8fa1bdce1c827aa2
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 75f3cc1b76b2a38d4004c4fa3f86a528a7eebc3f
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462224"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538523"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>A Súgó tapasztalatának konfigurálása a Pénzügy és az Üzemeltetés alkalmazáshoz
 
@@ -37,7 +37,7 @@ A Pénzügyi és műveleti alkalmazások elméleti áttekintést [Microsoft Dyna
 
 [![Súgóarchitektúra.](./media/help-architecture.png)](./media/help-architecture.png)
 
-A terméken belül található súgórendszer cikkeket tud le kérni a Microsoft dokumentumokból és más kapcsolódó webhelyekről. Ezenkívül a Microsoft Dynamics Lifecycle Services (LCS) Üzletifolyamat-modellező (BPM) alkalmazásában tárolt feladat-útmutatókat is beolvas.
+A termék súgórendszere cikkeket és Microsoft Learn más kapcsolódó webhelyeket tud le kérni. Ezenkívül a Microsoft Dynamics Lifecycle Services (LCS) Üzletifolyamat-modellező (BPM) alkalmazásában tárolt feladat-útmutatókat is beolvas.
 
 ## <a name="adding-task-guides"></a>Feladat-útmutatók hozzáadása
 

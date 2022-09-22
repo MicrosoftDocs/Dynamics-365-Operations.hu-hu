@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: f908caa902e4747d324480e3a5108b443d385ea7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: aa6c80914301cc0403974a6acc5e95ff61c9c1a7
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277331"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524689"
 ---
 # <a name="connected-applications"></a>Csatlakoztatott alkalmazások
 
@@ -35,7 +35,7 @@ Az RCS pénzügyi és ellátásilánc-kezelési paramétereinek rendelkezésre �
 ## <a name="create-a-connected-application"></a>Csatlakoztatott alkalmazás létrehozása
 
 1. Jelentkezzen be a RCS-fiókba.
-2. A **Globalizációs funkció** munkaterületen a **Környezet** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
+2. Válassza a **Környezet beállítása lehetőséget a Globalization funkció** munkaterületének **Kapcsolódó hivatkozások** **szakaszában**.
 3. A Környezet **beállítási lapján**, a munkaablakban válassza a Kapcsolódó alkalmazások **lehetőséget**.
 4. Válassza ki az **Új** lehetőséget egy csatlakoztatott alkalmazás létrehozásához.
 5. A **Név** mezőben adja meg a csatlakoztatni kívánt alkalmazás nevét.

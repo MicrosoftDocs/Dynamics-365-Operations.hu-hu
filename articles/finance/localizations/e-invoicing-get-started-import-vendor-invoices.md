@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: c98f33345b37a72c4099f01e37c82e27002ac687
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0195dc528f2fe6bf62efbf03f8706ea90f4a4fc4
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9283145"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524745"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
 
@@ -107,7 +107,8 @@ Végezze el a következő két szakasz lépéseit a különböző típusú szál
 2. Válassza ki a **Vevői számlakontextus-modellt**, majd válassza ki a **Konfiguráció létrehozása** > **Származtatás innen: Vevői számlamodell, Microsoft** lehetőséget származtatott konfiguráció létrehozásához.
 3. A **Vázlat** verzióban válassza a **Tervező** lehetőséget és az **Adatmodell** fában válassza a **Modell hozzárendelése adatforráshoz** lehetőséget.
 4. A **Meghatározások** fán jelölje ki az **Adatcsatorna** elemet, majd válassza a **Tervező** elemet.
-5. Bontsa ki az **Adatforrások** fában a **$Context\_Csatorna** tárolót. Az **Érték** mezőben válassza a **Szerkesztés** lehetőséget, és adja meg az adatcsatorna nevét. Ez annak a csatornának a neve, amelyet az RCS-ben az Elektronikus számlázás funkció adatcsatornájának konfigurációjában adtak meg. 
+5. Bontsa ki az **Adatforrások** fában a **$Context\_Csatorna** tárolót. 
+6. Az Érték mezőben **válassza** a **Receptúra** > **szerkesztése** lehetőséget, és írja be az adatcsatorna nevét. Ez annak a csatornának a neve, amelyet az RCS-ben az Elektronikus számlázás funkció adatcsatornájának konfigurációjában adtak meg. 
 7. Válassza a **Mentés** gombot, és zárja be az oldalt.
 8. Zárja be a lapot.
 9. Válassza ki a **Vevői számlakontextus-modellből** az imént létrehozott származtatott konfigurációt, és a **Verziók** gyorslapon válassza a **Módosítási állapot** > **Befejezve** lehetőséget.

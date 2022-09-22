@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1784b3c57bf1e6145085482d9068fad39ababc17
-ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
+ms.openlocfilehash: d2484b601a645694b988ac038a460a376ec912b0
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9475638"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538705"
 ---
 # <a name="administration-overview"></a>Adminisztráció áttekintése
 
@@ -100,7 +100,8 @@ Ez a témakör a súgótémakörök és egyéb, a hibaelhárításhoz szüksége
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="elearning-courses"></a>eLearning-tanfolyamok
-Online tanfolyamokhoz és tanfolyamokhoz a check out (az online tanfolyamokon) található [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+Online tanfolyamok és képzések esetén tekintse meg a [Dynamics 365 Human Resources oktatási útvonalakat](/training/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### <a name="videos"></a>Videók
 

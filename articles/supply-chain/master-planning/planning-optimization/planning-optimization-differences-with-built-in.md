@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd9493e85a90c00b2dd50abb6530661c0fbb77dc
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897574"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520837"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>A beépített alaptervezés és a tervezési optimalizálás közötti különbségek
 
@@ -26,7 +26,7 @@ A Tervezésoptimalizálás eredményei eltérhetnek a beépített főtervező mo
 | Funkció | Jelenlegi viselkedés a tervezés optimalizálásában |
 |---|---|
 | Fogási súlyú termékek | A fogási súlyú termékek szokásos termékeknek minősülnek.|
-| Bővíthető dimenziók | A bővíthető dimenziók üresek a tervezett megrendeléseken, még akkor is, ha a **Tárolási dimenziócsoportok** vagy a **Nyomon követési dimenziócsoportok** lapon be van jelölve a **Fedezeti terv dimenzió szerint** jelölőnégyzet. |
+| Bővíthető dimenziók | A tervezésoptimalizálás nem támogatja a extenzhető dimenziókat. A tervezési optimalizálás használata esetén a tervezett rendeléseken akkor is üresek a extenzható dimenziók, **·** **·** **ha** a Tárolási dimenziócsoportok vagy a Nyomon követési dimenziócsoportok lapon be van jelölve a Dimenzió szerinti fedezeti terv jelölőnégyzet. |
 | Szűrt gyártási folyamatok | Részletekért lásd: [Termeléstervezés - Szűrők](production-planning.md#filters). |
 | Előrejelzési terv | Az előrejelzés-tervezés nem támogatott. Javasoljuk a főterv használatát, ahol a főtervhez egy előrejelzési modell van hozzárendelve. |
 | Számsorozatok a tervezett megrendelésekhez | A tervezett megrendelések számsorozatai nem támogatottak. A tervezett rendelési számok a szolgáltatási oldalon generálódnak. A tervezett rendelés száma általában 10 számjegyből áll, de a sorozat valójában 20 karakterből áll, és a tervezési futtatás számában szereplő 10 számjegyből, a tervezett rendelések számlálása pedig a további 10 számjegyből áll. |
@@ -38,6 +38,7 @@ A Tervezésoptimalizálás eredményei eltérhetnek a beépített főtervező mo
 | Közlekedési naptárak | A szállítási **módok** lapon a **szállítási naptár** oszlopban szereplő értéket figyelmen kívül hagyjuk. |
 | Minimális/maximális fedezeti kód érték nélkül| A beépített tervezőmotor minimális/maximális fedezeti kód használata esetén, amelyben nincsenek beállítva minimális vagy maximális értékek, a tervezőmotor szükségletként kezeli a fedezeti kódot, és minden követelményhez létrehoz egy rendelést. A tervezési optimalizálás segítségével a rendszer naponta egy rendelést hoz létre, hogy az az adott napon teljes összeget fedezse.  |
 | Nettó követelmények és manuálisan létrehozott tervezett rendelések | A beépített tervezőmotorral a cikkekhez manuálisan létrehozott ellátási rendelések automatikusan megjelennek az adott cikk nettó követelményei között. Amikor például beszerzési rendelést hoz létre egy értékesítési rendelésből, **a beszerzési rendelés előzetes műveletek nélkül megjelenik a Nettó követelmények** lapon. Ennek oka az, hogy a beépített tervezőmotor naplózza a `inventLogTTS`**tábla** készlettranzakcióit, és a dinamikus tervek nettókövetelmény-lapján megjeleníti a változásokat. A Tervezés optimalizálása beállításnál azonban a manuálisan létrehozott rendelések csak akkor jelennek meg a cikkek nettó követelményei között, ha a tervezési optimalizálás nem fut (a cikket tartalmazó tervvel), **\>** **vagy** amíg a Nettó követelmények lapon a Frissítési alaptervezés lehetőséget választja, amely a cikk alaptervezését fogja futtatni. A **Nettókövetelmények**[lapról](net-requirements.md) a Nettó követelmények lapon található további tájékoztatás, valamint a tervezési optimalizálási információk. |
+| Erőforrás-hozzárendelés | Korlátlan kapacitással való munka során a beépített alaptervezési motor minden tervezett rendelést ugyanannak az erőforrásnak ad hozzá ugyanannál az erőforráscsoportnál. A tervezési optimalizálás ezt úgy javítja, hogy véletlenszerűen választ ki erőforrásokat, így a különböző termelési rendelések különböző erőforrásokat használhatnak. Ha ugyanazt az erőforrást szeretné használni az összes tervezett rendeléshez, akkor meg kell adnia az útvonalon azt az erőforrást. |
 
 ## <a name="additional-resources"></a>További erőforrások
 

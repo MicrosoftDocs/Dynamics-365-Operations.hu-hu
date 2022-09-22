@@ -2,7 +2,7 @@
 title: Rendelés frissítése
 description: A Microsoft Dynamics 365 Human Resources teljes mértékben „szoftver szolgáltatásként” (SaaS) elven működik, amely folyamatos, érintés nélküli szolgáltatásfrissítéseket és platformmódosításokat tartalmaz.
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178443"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520810"
 ---
 # <a name="update-process"></a>Rendelés frissítése
 
 _**Érvényes:** Emberi erőforrások a különálló infrastruktúrán_ 
 
 > [!NOTE]
-> 2022 júliusa óta nem lehet új emberi erőforrások környezeteket létesítni a különálló emberi erőforrások infrastruktúrájára, Microsoft Dynamics és nem lehet új Lifecycle Services -projekteket létrehozni rajta. A vevők az emberi erőforrások környezetét telepítheti a pénzügyi és a műveleti infrastruktúrára. A további tudnivalókat lásd [az Emberi erőforrások biztosítása a pénzügyi és a műveleti infrastruktúra területén](/hr-admin-setup-provision-fo.md).
+> 2022 júliusa óta nem lehet új emberi erőforrások környezeteket létesítni a különálló emberi erőforrások infrastruktúrájára, Microsoft Dynamics és nem lehet új Lifecycle Services -projekteket létrehozni rajta. A vevők az emberi erőforrások környezetét telepítheti a pénzügyi és a műveleti infrastruktúrára. A további tudnivalókat lásd [az Emberi erőforrások biztosítása a pénzügyi és a műveleti infrastruktúra területén](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
 > A pénzügyek és műveletek alkalmazás-infrastruktúrájának frissítési és gyorsjavítási folyamata különbözik az Emberi erőforrások önálló frissítési és gyorsjavítási folyamattól. A frissítési folyamattal kapcsolatos további tudnivalókat [lásd: Folyamat a pénzügyek és műveletek legújabb frissítéséhez való áthelyezéshez](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). A gyorsjavításokkal kapcsolatos további tudnivalókat [lásd A frissítések letöltése a Lifecycle Services (LCS) alkalmazásból](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
@@ -41,7 +41,7 @@ A frissítések rendszeres ütemben jelennek meg minden környezethez. A Human R
 
 A Human Resources szolgáltatás frissítései automatikusan alkalmazva vannak az összes környezetre. A Human Resources szolgáltatáshoz kétféle kiadást biztosítunk:
 
-- **Szolgáltatásfrissítések**: Hibajavításokat és új funkciókat tartalmazó frissítések kéthetente jelennek meg. A szolgáltatásfrissítések tartalmazzák a megfelelő platformfrissítéseket is, amikor ki vannak adva. A platformfrissítésekkel kapcsolatos további tudnivalókat [lásd a Platformfrissítések újdonságai és módosulásai](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). A frissítéseknek több régióra is ki van ásva a globális összesítésük. A frissítésekkel kapcsolatos további tudnivalókat [lásd a Újdonságok és a Módosítások a következőben:Dynamics 365 Human Resources](hr-admin-whats-new.md)
+- **Szolgáltatásfrissítések**: Hibajavításokat és új funkciókat tartalmazó frissítések kéthetente jelennek meg. A szolgáltatásfrissítések tartalmazzák a megfelelő platformfrissítéseket is, amikor ki vannak adva. A platformfrissítésekkel kapcsolatos további tudnivalókat [lásd a Platformfrissítések újdonságai és módosulásai.](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md) A frissítéseknek több régióra is ki van ásva a globális összesítésük. A frissítésekkel kapcsolatos további tudnivalókat [lásd a Újdonságok és a Módosítások a következőben:Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
 - A **Dataverse megoldás frissítései**: Ezek frissítések kb. hat hetente jelennek meg, szükség szerint. Új entitásokat tartalmaz, valamint a Dataverse meglévő entitásainak módosításait. Ezek a frissítések kéthetes frissítésekkel azonos régiókba adták ki őket, és az összes adatforráson keresztüli replikálás körülbelül hat hétig tart. A megoldások frissítései követhetik a kétheti szolgáltatásfrissítéseket, de nem feltétlenül.
 

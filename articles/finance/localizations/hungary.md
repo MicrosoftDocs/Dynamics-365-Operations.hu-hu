@@ -12,12 +12,12 @@ ms.search.region: Hungary
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52bf87eebc5a03df6311f5479efe28744c7e3bb3
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 135bffb16b99880ff429264505654254acd48cc4
+ms.sourcegitcommit: 4f28f262cfb8f047cb5c0070261aa0748835e74b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954463"
+ms.lasthandoff: 09/21/2022
+ms.locfileid: "9558423"
 ---
 # <a name="hungary-overview"></a>Magyarország – áttekintés
 
@@ -33,6 +33,7 @@ Ez a cikk a magyarországi dokumentációs erőforrásokra mutató hivatkozások
 - [Adó-visszaigénylési dokumentumok](emea-hun-tax-reimbursement-docs.md)
 - [Év végi zárás](emea-cze-hun-year-end.md)
 - [Online számlázási rendszer](emea-hun-online-invoicing.md)
+- [Áfabevallás (Magyarország)](emea-hun-vat-declaration-hungary.md)
 - [Áfajelentések Magyarországról](emea-hun-sales-tax-reports.md)
 - [Intrastat jelentés](emea-hun-intrastat.md)
 - [Halasztott áfa számításai](emea-hun-deferred-vat.md)

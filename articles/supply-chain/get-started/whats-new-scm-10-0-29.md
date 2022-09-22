@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 316650de19d3275f2c60c79c10d6ac8a8c79e1aa
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
-ms.translationtype: HT
+ms.openlocfilehash: 5a87fb4ac2d01ef3b188b63dfc98bcfac2daf033
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9427874"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520750"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>A Dynamics 365 Supply Chain Management 10.0.29 előzetes verziója (2022. október)
 
@@ -35,7 +35,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 | Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
 | Készlet és logisztika | [A WMS-cikkek felosztása és foglalása a készlet láthatósága érdekében](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Hamarosan | Alapértelmezés szerint engedélyezve |
-| Készlet és logisztika | [Előrehozott aktuális készletlisták](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | Hamarosan | Alapértelmezés szerint engedélyezve |
+| Készlet és logisztika | [Előrehozott aktuális készletlisták](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [A Készletláthatóság alkalmazás használata](../inventory/inventory-visibility-power-platform.md) | Szolgáltatáskonfiguráció által engedélyezve |
 | Készítés rendelésre ellátás automatizálása | [Készítés rendelésre ellátás automatizálása](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Készítés rendelésre ellátás automatizálása](../master-planning/make-to-order-supply-automation.md) | Funkciókezelés:<br>*Készítés rendelésre ellátás automatizálása* |
 | Tervezés | [DDMRP részletes információk megtekintése és alkalmazása](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md) | Funkciókezelés:<br>*(Előzetes verzió) DDMRP a Tervezési optimalizáláshoz* |
 | Gyártásvezérlés | [Késztermékek ténylegesen elérhetővé tétele a naplókba való feladás előtt](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [Késztermékek ténylegesen elérhetővé tétele a naplókba való feladás előtt](../production-control/deferred-posting.md) | Funkciókezelés:<br>*(Előzetes verzió) Késztermékek ténylegesen elérhetővé tétele a naplókba való feladás előtt* |
@@ -49,7 +49,7 @@ Ha bármelyik funkciót be szeretné kapcsolni, akkor ezt a [funkciókezelésben
 
 | Modul | Funkcióneve a funkciókezelésben | További információ |
 |---|---|---|
-| Költségkezelés | Társtermék függő árszámításának optimalizálása | Ez a funkció ütközést old meg, amely akkor fordulhat elő, ha a társtermék árát több szál alapján számítják ki. A rendszer így biztosan csak egyszer számítja ki a társtermék árát. A program ennek a számításnak az eredményét használja az összes többi számítás bemeneteként. Ha már létezik függő ár, a használt ár lesz az. |
+| Költségkezelés | Függőben lévő társtermék-árkalkuláció optimalizálása | Ez a funkció ütközést old meg, amely akkor fordulhat elő, ha a társtermék árát több szál alapján számítják ki. A rendszer így biztosan csak egyszer számítja ki a társtermék árát. A program ennek a számításnak az eredményét használja az összes többi számítás bemeneteként. Ha már létezik függő ár, a használt ár lesz az. |
 | Alaptervezés | Tranzakciók csoportosítása a Tervezés optimalizálása keretében | Ez a funkció csökkentheti azon tervezett rendelések számát, amelyek egyetlen értékesítésirendelés-sor ellátásához jönnek létre a tervezési optimalizálás használata esetén. Ha ez a funkció be van kapcsolva, a tervezési optimalizálás egyetlen szükségletbe csoportosítja egy rendelési sor minden készlettranzakcióját a teljes mennyiségre. (Ez a viselkedés megfelel a beépített tervezőmotor viselkedésének.) A készlet és az igények külön vannak csoportosítva. Ennek megfelelően a funkció segítséget nyújt a tranzakció volumenének csökkentéséhez a tranzakciók felosztása és az olyan dimenziók (például kötegszámok vagy sorozatszámok) használata esetén, amelyek nem fedezeti dimenziók. |
 | Beszerzés és forrás | Szállító várakoztatott állapotba helyezése a beszerzési rendelésekhez | Ezzel a funkcióval a szállítót fel lehet függesni a beszerzési rendelésekért. Hozzáad egy új beszerzésirendelés-típust *·*, amely a szállítót a beszerzési rendelések számára visszatartottként jelöli meg. Nem hozhat létre új beszerzési rendeléseket olyan szállítók számára, amelyek beszerzési rendelésekhez vannak függve, de folytathatja a nyitott számlákat és kifizetéseket ezeknél a szállítóknál. |
 | Értékesítés és marketing | Sor nettó összegének kiszámítása importra | Ezzel a *funkcióval* szabályozható, hogy a rendszer újraszámírja-e a sorösszegeket, amikor OData vagy kettős írású adatok használatával importálja az adatokat az értékesítési rendelés soraiból, *·* *az* értékesítésiajánlat-sorokból vagy a visszárurendelés-sorokból. Csak akkor van **hatása**, ha a kereskedelmi megállapodások értékelési irányelvei is érvényben vannak, amelyek korlátozzák az értékesítésirendelés-sorok, értékesítésiajánlat-sorok és/vagy visszárurendelés-sorok Nettó összeg mezőjének módosításait. Hozzáad egy "Sor nettó **összegének** **számítása" nevű beállítást a Kinnlevőségek > Beállítás > Kinnlevőségek paraméterei lapon**. Ha ez a beállítás *Igen*, a rendszer szükség esetén mindig újraszámja a sorösszegeket (ezáltal figyelmen kívül hagyja a sor nettó összegére vonatkozó kereskedelmi megállapodás értékelési irányelveit). *Ha* a beállítás Nem, a rendszer soha nem számítja ki automatikusan a sor nettó összegét, még akkor sem, ha a sor árának, mennyiségének és/vagy engedményének bejövő változtatása azt feltételezi, hogy a sor nettó összegét újra kell számítani. Ez a funkció alapértelmezés szerint engedélyezve van, és kezdetben **a Sor nettó összegének számítása értéket Igen beállításra állítja** *.* A *"Nincs* " beállítás megegyezik a rendszer viselkedésével a 10.0.23-as verzió előtt, és a rendszer főként az örökölt integrációs helyzetek támogatásához biztosítja.<br><br>A további tudnivalókat [lásd a sorok nettó összegének újraszámítása értékesítési rendelések, ajánlatok és visszaküldések importálása esetén](../sales-marketing/calc-line-net-amounts-import.md). |

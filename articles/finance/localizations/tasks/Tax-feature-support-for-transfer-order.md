@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b611abb2d68d93178d0c26ba40b22f1b8d26b191
-ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
+ms.openlocfilehash: c55d0891ed37d63f89ee09759965ac443db20dc6
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9203109"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542244"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Adófunkció támogatása átmozgatási rendelésekhez
 
@@ -63,7 +63,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         7. Válassza a **Mentés** lehetőséget.
         
         Hozza létre a **BE-RC+21** adókódot.
-        1. Válassza a **Hozzáadás** lehetőséget, írja be a **BE-RC-21** értéket az **Adókód** mezőbe.
+        1. Válassza a **Hozzáadás** lehetőséget, és írja be a **BE-RC+21 billentyűkombinációt** az Adókód **mezőbe**.
         2. Válassza a **Nettó összeg szerint** lehetőséget az **Adóösszetevő** mezőben.
         3. Válassza a **Mentés** lehetőséget.
         4. A **Díj** táblában válassza a **Hozzáadás** lehetőséget.

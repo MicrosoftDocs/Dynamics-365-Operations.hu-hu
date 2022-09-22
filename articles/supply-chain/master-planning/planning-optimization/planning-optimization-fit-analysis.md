@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
-ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
+ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9347289"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542352"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
@@ -62,7 +62,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | --- | --- | --- | --- |
 | Műveletek | Lefedettségi csoportok, amelyeknél engedélyezve van a Műveletek kiszámítása: *\#* | Ez a funkció már támogatott. | Támogatott |
 | Alapnaptárak | Az alapnaptárat használó naptárak: *\#* | Ez a funkció már támogatott. | Támogatott | 
-| Kötegrendelkezési kódok | Nem nettósítható köteg-alapintézkedések: *\#* | Ez a funkció függőben van. A tervezés optimalizálása során a program figyelmen kívül hagyja a kötegrendelkezési kódokat. | 2022-es kiadás - 2. hullám |
+| Kötegrendelkezési kódok | Nem nettósítható köteg-alapintézkedések: *\#* | Ez a funkció függőben van. A tervezés optimalizálása során a program figyelmen kívül hagyja a kötegrendelkezési kódokat. | 2022-es kiadás - 2. hullám <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
 | Ígérhető (CTP) | Alapértelmezett rendelési beállítások, amelyeknél a kiszállítási dátum ellenőrzése ígérhető: *\#* | A 10.0.28-as és újabb ellátásilánc-kezelésben a tervezési optimalizálási CTP *nevű folyamat a dinamikus terv futtatása után teszi elérhetővé a* visszaigazolt szállítási és kézhezvételi dátumokat. Az Ellátásilánc-kezelés régebbi verziói esetén a rendszer figyelmen kívül hagyja az örökölt "CTP" beállítást, ha engedélyezve van a tervezési optimalizálás. | Támogatott |
 | Statikus dinamikus tervbe másolása | A statikus dinamikus tervbe való másolása engedélyezett az alaptervezési paramétereknél. | A tervezés optimalizálása a beállítástól függetlenül nem másolja át a statikus tervet a dinamikus tervbe. Általában ez a koncepció kevésbé fontos a Tervezési optimalizáció által biztosított gyorsaság és teljes regeneráció miatt. Ha két vagy több terv van használatban, akkor minden tervhez alaptervezést kell indítani. | N/A |
 | Megerősítés | Lefedettségi csoportok, amelyekhez be van állítva automatikus megerősítési időkorlát: *\#* | A 10.0.7 és a későbbi verziókban a megerősítést az Alaptervezés befejezését követően külön megerősítő kötegelt feladatként támogatják (feltéve hogy az *Automatikus megerősítés a tervezési optimalizációhoz* funkció engedélyezve van a [funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pontban). Ne felejtse el, hogy az Automatikus megerősítés a tervezési optimalizációhoz a megrendelés dátumától (kezdő dátum) függ, nem a követelmény dátumától (záró dátum). Ez a viselkedés biztosítja, hogy a tervezett rendelések megerősítése időben történjen, anélkül, hogy az átfutási időt bele kellene foglalni a megerősítési időkorlátba. | Támogatott |
