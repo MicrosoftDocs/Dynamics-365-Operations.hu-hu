@@ -18,10 +18,8 @@
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Platformfrissítések a 10.0.29-es verzióhoz (2022. október)
                   href: get-started/whats-new-platform-updates-10-0-29.md
-                - name: Platformfrissítések a 10.0.28 verzióhoz (2022. augusztus)
+                - name: Platformfrissítések a 10.0.28-as verzióhoz (2022. augusztus)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Platformfrissítések a 10.0.27 verzióhoz (2022. július)
-                  href: get-started/whats-new-platform-updates-10-0-27.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók – kezdőlap
@@ -510,6 +508,8 @@
                   href: dev-tools/access-instances.md
                 - name: Különálló fejlesztői környezetetek konfigurálása
                   href: dev-tools/configure-developer-vm.md
+                - name: Különálló fejlesztői környezetetek biztosítása
+                  href: dev-tools/secure-developer-vm.md
                 - name: Rendszergazdai hozzáférést nem engedélyező virtuális gépek fejlesztése és összeállítása – GYIK
                   href: sysadmin/VMs-no-admin-access.md
                 - name: A letölthető VHD beállítása első használatra

@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (augusztus)
                   href: get-started/whats-new-changed-10-0-28.md
-                - name: Finance 10.0.27 (július)
-                  href: get-started/whats-new-changed-10-0-27.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók – kezdőlap
@@ -1450,8 +1448,10 @@
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
             - name: Kanadai harmonizált áfa kiszámítása
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
-        - name: Globalizáció
+        - name: Globalization Studio
           items:
+            - name: Globalization Studio áttekintése
+              href: localizations/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: Globalizációs erőforrások
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/finance
             - name: Globalizációs szolgáltatások
@@ -1734,6 +1734,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Szállítói számla áfatartalmának kiszámítása és kiigazítása
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Áfakülönbözetek feloldása
+                      href: general-ledger/resolve-sales-tax-differences-purchase-orders-invoices.md
                     - name: Igazítsa ki az áfát az általános naplókkal
                       href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Késleltetett adószámítás engedélyezése a naplóban
@@ -2514,6 +2516,8 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: Online számlázási rendszer
                   href: localizations/emea-hun-online-invoicing.md
+                - name: Áfabevallás (Magyarország)
+                  Href: localizations/emea-hun-vat-declaration-hungary.md
                 - name: Áfajelentések Magyarországról
                   href: localizations/emea-hun-sales-tax-reports.md
                 - name: Magyar Intrastat
