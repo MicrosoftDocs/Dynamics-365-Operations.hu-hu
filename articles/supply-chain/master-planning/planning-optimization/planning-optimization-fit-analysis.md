@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
+ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542352"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9591850"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
@@ -94,7 +94,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Termelés | Képletverziók hozammal: *\#* | Ez a funkció függőben van. Jelenleg a tervezésoptimalizálás engedélyezése esetén a képletverzióhoz társított hozam figyelmen kívül marad. | 2022-es kiadás - 2. hullám |
 | Termelés | Sorrendbe állítást tartalmazó tervek: *\#* | Ez a funkció függőben van. Jelenleg a sorrendbe állítás figyelmen kívül marad, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | 2022-es kiadás - 2. hullám |
 | Termelés | Nem megkezdett, kiadott termelési rendelések, amelyeket a mai napnál korábbi kezdéssel ütemeztek: *\#* | Ez a funkció függőben van. Jelenleg a termelési rendelés késése esetén az alaptervezés azt feltételezi, hogy a mai napon be lesz fejezve. Ez olyan engedélyezett termelési rendelések esetében releváns amelyeknél a szállítási dátum már elmúlt, de még nem fejeződött be. | Jövőbeli hullám |
-| Termelés | Véges kapacitással ütemezett erőforrások: *\#* | Ez a funkció függőben van. Jelenleg a véges kapacitással ütemezett erőforrások figyelmen kívül maradnak, amikor a tervezés optimalizálása engedélyezve van. Az ütemezés a termék alapértelmezett átfutási ideje alapján történik. | 2022-es kiadás - 2. hullám |
+| Termelés | Véges kapacitással ütemezett erőforrások: *\#* | Ez a funkció már támogatott.| Támogatott |
 | Termelés | A tervezésben használt útvonalak: *\#* | Ez nem támogatott. | Támogatott |
 | Termelés | Értékesítési sor foglalása alábontás használatával: *\#* | A alábontást használó értékesítési sor foglalása nem támogatott, ha a tervezés optimalizálása engedélyezve van. | Jövőbeli hullám |
 | Termelés | A termelési rendelések alábontásával történt ütemezés: *\#* | A termelési rendelések alábontását használó ütemezés nem támogatott, ha a tervezés optimalizálása engedélyezve van. A termelési rendelések ütemezése egyenként végezhető el. | Jövőbeli hullám |

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
+ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894200"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9588953"
 ---
 # <a name="accounting-distributions"></a>Könyvelési felosztások
 
@@ -51,7 +51,7 @@ Az általános könyvelési felosztás funkciók az alábbi lehetőségeket bizt
     -   Az aktuális dokumentum számviteli állapotát itt tekintheti meg: **Hivatkozás**. Az állapot a teljes dokumentumra vonatkozik, és jelzi, hogy a dokumentum folyamatban van vagy befejeződött-e.
 -   **Felosztások megtekintése** – A bizonylat összes sorához és a pénzösszegekhez tartozó könyvelési felosztás megtekintése. A könyvelési felosztásokat ebből a nézetből nem módosíthatja.
 
-A 10.0.13-as verzióban egy olyan funkció található, amely ellenőrzi a könyvelési felosztási táblát annak érdekében, hogy az új mezők biztosan helyesen legyenek beállítva. Ennek a funkciónak a neve: **Dokumentumok adatainak további ellenőrzésének engedélyezése a forrásbizonylat könyvelési keretrendszer használatával**. A funkció használatához engedélyeznie kell a **Funkciókezelési** munkaterület használatával. A funkció engedélyezéséhez keressen rá a funkció nevére a **Funkció kezelése** lap **Keresés** mezőjében, majd válassza az **Engedélyezés most** lehetőséget.
+A 10.0.13-as verzióban egy olyan funkció található, amely ellenőrzi a könyvelési felosztási táblát annak érdekében, hogy az új mezők biztosan helyesen legyenek beállítva. Ennek a funkciónak a neve: **Dokumentumok adatainak további ellenőrzésének engedélyezése a forrásbizonylat könyvelési keretrendszer használatával**. Ez a funkció alapértelmezés szerint a 10.0.29 verzióban lesz bekapcsolva. 
 
 További tájékoztatás: [Könyvelési felosztások és az analitikus napló bejegyzései szállítói számlákhoz](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
 

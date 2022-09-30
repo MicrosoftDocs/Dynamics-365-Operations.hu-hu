@@ -2,7 +2,7 @@
 title: Jogszabálykövetési frissítések
 description: Ez a cikk a Microsoft Dynamics 365 Pénzügy rendszer tervezett és kiadott hatósági frissítéseit tartalmazza.
 author: VStamberg
-ms.date: 04/18/2022
+ms.date: 09/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 129e4e1d44018da206d0e797dcfd389c9e6adeba
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: fdfc10ea5bf330c3a739f8dfe86c56f16ca2c69e
+ms.sourcegitcommit: 2290799408b7567a97601bc4158f814d5bfd844c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206195"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "9596235"
 ---
 # <a name="regulatory-updates"></a>Jogszabálykövetési frissítések
 
@@ -37,21 +37,16 @@ A havi frissítés részeként kiadott szabályozói frissítéseket csak a kiad
 
 A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan tekintse meg az alábbi táblázatot.   
 
-|Ország/régió|Kiadás dátuma|Kiadás verziója|Jogszabály-követési frissítés|
+|Ország|Kiadás dátuma|Kiadás verziója|Jogszabály-követési frissítés|
 |--------------------|---------------|-------|-------| 
-|      Brazília         |   március 2022.    | 10.0.27        |    ICMS-DIFAL-begyűjtés a nem adófizetőre irányuló műveletekben (kiegészítő törvénysz. 190/22)  |
-|      Brazília         |   március 2022.         | 10.0.27         |    METRIKUS-e NT2021.004 v1.00 - Elrendezés- és ellenőrzési szabályok frissítései  |
-|      Brazília         |   március 2022.         | 10.0.27         |    METRIKUS-e NT2021.004 v1.00 - Elrendezés- és ellenőrzési szabályok frissítései - Retail  |
-|      Brazília         |   április 2022.         | 10.0.27HF, 10.0.28         |    SPED ECF - 8. ELRENDEZÉS  |
-|      Kelet-Európa         |   július 2022.         | 10.0.27HF, 10.0.28HF, 10.0.29         |    Főkönyvi kivonat a fő számla szerint  |
-|      Litvánia|   február 2022. | 10.0.27 | I.SAF-változások a 2022-01-01 Dynamics 365 Pénzügyben  |
-|      Mexikó         |   március 2022.      | 10.0.27      |   CFDI-formátumok, 4.0-s verzió (számlák és kifizetések)  |
-|      Mexikó         |   február 2022.      | 10.0.27      |   2022. január 1-jén hatályba lép a CFDI 4.0-s verziója, a 3.3-as verzió és a 4.0-s verzió közötti együttfutási időszakkal, amely 2022. január 1-től június 30-ig tart.  |
-|      Mexikó         |   március 2022.      | 10.0.27      |   CFDI-formátumok, 4.0-s verzió (adóelőleg)  |
-|      Lengyelország          |   április 2022.     | 10.0.27HF, 10.0.28     |   JPK_FA 4. verzióból, 2022JPK_V7M 2022. januártól, új sémaverzió |
-|      Oroszország          |   június 2022.     | 10.0.27    |  Jelentés a nyomon követhető termékekkel kapcsolatos műveletekről (a beszerzett nyomon követhető áruk, például a monitorok, irodabútorok és más irodaibútorok saját használatra történő leírásának hatókörében)|
-|      Szingapúr      |   július 2022.| 10.0.27HF, 10.0.28HF, 10.0.29 | IRAS könyvvizsgálati fájl (IAF) TXT-formátumban|
-|      Spanyolország      |   március 2022.| 10.0.27 | A 303-as áfabevallási modell 2022. január 1-jén módosul a Dynamics 365 Pénzügyben.|
+|      Brazília         |   április 2022.         | 10.0.28         |    SPED ECF - 8. ELRENDEZÉS  |
+|      Brazília         |   június 2022.         | 10.0.30HF         |    EFD ICMS IPI - 3.0.9-es verzió  |
+|      Brazília         |   2022. augusztus         | 10.0.30         |    METRIKUS-e NT2021.004 v1.31 - Elrendezés- és ellenőrzési szabályok frissítései  |
+|      Kelet-Európa         |   július 2022.         | 10.0.28HF, 10.0.29         |    Főkönyvi kivonat a fő számla szerint  |
+|      Magyarország         |   július 2022.         | 10.0.30         |    Áfabevallás XML formátumban (2065A) és előnézeti kép az Excel programban. Beszerzési számlák XML-melléklete (2065M)  |
+|      Lengyelország          |   április 2022.     | 10.0.28     |   JPK_FA 4-es verzió 2022. április 1-től |
+|      Oroszország          |   június 2022.     | 10.0.29    |  Címadatok importálása az államcímjegyzékből (UD)|
+|      Szingapúr      |   július 2022.| 10.0.28HF, 10.0.29 | IRAS könyvvizsgálati fájl (IAF) TXT-formátumban|
 
 
 ## <a name="additional-resources"></a>További erőforrások

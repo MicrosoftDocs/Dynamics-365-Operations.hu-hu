@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
-ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
+ms.openlocfilehash: c2d26b7c5e110d05806c064e15a3ad2af34d0fbd
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473605"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592046"
 ---
 # <a name="proactive-quality-updates"></a>Proaktív minőségi frissítések
 
@@ -57,7 +57,7 @@ A folyamatok változásainak egy része a proaktív minőségi frissítés aktiv
 - **Séma** – az eszköz gondoskodik arról, hogy a minőségi frissítések csak olyan sémákat tartalmazzanak, amelyek a szolgáltatás online állapotban alkalmazhatók. Ezzel a módszersel megőrizheti a nulla leálláshoz közeli leállással elérhető frissítés alkalmazni való képességet.
 - **Növelt módosítási változás** - jelenleg már van egy extra folyamatlépés, amely a minőségi frissítésbe való felvétel módosításainak jóváhagyására vonatkozik. Az extra lépésben nagyobb lesz a kockázat, hogy csökkentse a regresszívség potenciális lehetőségeit. A minőségi frissítésekben nem lehet törést módosítani, és a nagyobb változás biztosítja, hogy teljes legyen ez a cél.
 - **Láthatóság** – e-mailben és Lifecycle Services (LCS) szolgáltatáson keresztül küldjük az értesítéseket a közelgő proaktív minőségi frissítésekről. Ezen kívül a támogatási csoportok és az események érdeklődői láthatóvá lesznek abban, hogy hol vannak proaktív módon telepítve a minőségi frissítések.
-- **Verzió tartaléka** – a járatozás a proaktív minőségi frissítés minden változásának csoportosításére használható. Ha egy proaktív telepítés után tartalékra van szükség, akkor az a repülőrendszeren keresztül is meg lehet tenni.
+- **Sikertelen biztonság** járattal – a járattal kódfrissítést használhat minden esetben, amikor egy minőségfrissítési hibajavításban alkalmazható, vagy a javításhoz kapcsolódó meglévő funkcióos járatot használja. Ha egy proaktív telepítés után tartalék vagy változtatást kell kikapcsolni, akkor a további hibák elkerülése érdekében a repülőrendszeren keresztül is el lehet végezve.
 - **Üzenetkészlet szinkronizálásának megnevezése** – a vevők kevesebb, mint 20 százaléka rendelkezik több mezővel, és egy olyan mező van telepítve, amelyben a verzió megfelel a termelésnek, és így segít a hibaelhárításban. Ha egy vevő a termelésnél újabb verziót használ tesztre, akkor az abox az újabb verzióra vonatkozó minőségi frissítéseket fogja kapni.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Milyen okkal történik az összesítés javítása a minőségi frissítésekhez?
@@ -69,7 +69,7 @@ A következő hat hónap során fokozatosan növelni kell az olyan környezetek 
 Mivel a vevők rendszeresen kisebb rakományokat kapnak, arra számítunk, hogy az aktuális helyzetben egyszerűbb lesz a folyamat. A frissítéstelepítés gyakoriságát korrigáljuk, mivel bemutatja a folyamat megszakítás nélküli futtatásának a lehetőségeként. Ez a folyamat már jól működik platformunk Dataverse és alkalmazásaink során, és a szolgáltatás minőségében várható fejlesztéseknek lesz része. Nem tudjuk ugyanezt az lépést előrelépni a pénzügyi és az üzemeltetési pályázatokban.
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Mikor indulnak el a minőségi frissítések az éles környezetekben?
-Jelenleg a minőségfrissítések csak a mezőket célként célják. A termelési környezetek frissítése 2022 novembere után kezdődik.
+Jelenleg a minőségfrissítések csak a mezőket célként célják. Ezt a helyet a termelési környezetek kezdő dátumával frissítjük, ha konkrétabb adatok és mérőszámok vannak a proaktív frissítésekről a mezőiben, hogy a termelésre való készenlétet meg lehet mérni.
 
 ## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Milyen ütemezést kell ütemezni a minőségi frissítésekre?
 További tájékoztatás az egyes régiók sötét óráiról: [Mi a proaktív minőségi frissítések ütemezése](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates)?

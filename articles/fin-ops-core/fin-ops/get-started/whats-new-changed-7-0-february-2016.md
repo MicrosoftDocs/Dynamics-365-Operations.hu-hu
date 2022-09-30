@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 91243
 ms.assetid: 515bc6e7-a85d-4995-95c6-6cab6c8aa0f9
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e69fddf1acd9a9388f62da63e0ca6a19c7a95f55
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 4cd59d5ea2ef8d280a927fd9e9fe3b9af7974d7c
+ms.sourcegitcommit: 0a5885dc792fc608ae59d0ef9b36fb61790b24de
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287080"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "9593987"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
@@ -319,7 +319,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 <tr>
 <td>A <strong>Súgóra</strong> kattintva hozzáférhet Folyamatsúgóhoz (feladat-útmutatók) és az elméleti témakörökhöz-</td>
 <td>Az AX 2012 Súgórendszer helyi webkiszolgálón tárolt HTML témaköröket mutat. Vevők és a partnerek létrehozhatják saját Súgójukat.</td>
-<td>A Súgórendszer a Dynamics AX jelenlegi verziójában a Microsoft Dynamics Lifecycle Services (LCS) BPM-ben tárolt feladat-útmutatókat jelenít meg. A Súgórendszer a Microsoft dokumentációs webhelyéről származó témaköröket is megjelenít. További információkat lásd: <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Súgórendszer</a> és <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Új feladat-útmutatók (2016. február)</a>.</td>
+<td>A Súgórendszer a Dynamics AX jelenlegi verziójában a Microsoft Dynamics Lifecycle Services (LCS) BPM-ben tárolt feladat-útmutatókat jelenít meg. A súgórendszer a súgó témakörit is megjeleníti Microsoft Learn. További információkat lásd: <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Súgórendszer</a> és <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Új feladat-útmutatók (2016. február)</a>.</td>
 <td>A feladat-útmutató irányított, interaktív tapasztalatot tartalmaz, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. Letöltheti és testreszabhatja a Microsoft által kínált feladat-útmutatókat. A cikk a termékdokumentációk létrehozására, kézbesítésére és frissítésére gyorsabb és rugalmasabb lehetőséget biztosít. Ezért segítségével garantálható, hogy a legfrissebb technikai információkhoz jut hozzá.</td>
 </tr>
 </tbody>

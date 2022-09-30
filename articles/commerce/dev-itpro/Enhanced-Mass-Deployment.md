@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 66a711aff90221e594f4b2a0df3735eac93d0c9b
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: 426473c14cdf9e171810aafd97dbb1afd5988b2f
+ms.sourcegitcommit: 24673493d14f2045a08fe7240689bee34e099cb5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387019"
+ms.lasthandoff: 09/24/2022
+ms.locfileid: "9589089"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Lepecsételt Commerce önkiszolgáló-összetevők központi telepítése
 
@@ -47,9 +47,9 @@ A következő táblázat bemutatja a parancssori végrehajtásban használható 
 | -EnvironmentId | A környezet azonosítója. |
 | -HardwareStationAppInsstrumentationKey | A Hardverállomás AppInsights eszközkulcsa. |
 | Telepítés | Egy paraméter, amely megadja, hogy telepíteni kell-e a telepítő által adott összetevőt. Ez a paraméter szükséges a telepítés végrehajtásához, és nincs vezető kötőjel karaktere. |
-| -InstallOffline | A Modern POS rendszer esetében ez a paraméter azt határozza meg, hogy az offline adatbázist is telepíteni és konfigurálni kell. Használja az **-SQLServerName paramétert** is. Ellenkező esetben a telepítő az előfeltételeknek megfelelő alapértelmezett példányt keres. |
+| -InstallOffline | A Modern POS rendszer esetében ez a paraméter azt határozza meg, hogy az offline adatbázist is telepíteni és konfigurálni kell. Használja az **-SQLServerName paramétert** is. Ellenkező esetben a telepítő az előfeltételeknek megfelelő alapértelmezett példányt keres. Hitelesítés használata Azure Active Directory esetén Azure AD az offline POS nem működik, mivel mindig szükség van az online kapcsolatra. |
 | -Port | Az a port, amelyet a Retail Server virtuális könyvtárának társítva kell lennie és használnia kell. Ha nincs beállítva port, a program a 443-as alapértelmezett portot használja. |
-| -Jegyzék | A pénztárgép azonosítója, amint a Központ **Pénztárgép** lapján látható. |
+| -Regisztráció | A pénztárgép azonosítója, amint a Központ **Pénztárgép** lapján látható. |
 | -RetailServerAadClientId | Az Azure AD az ügyfélazonosító, amit a Retail Servernek használnia kell a Headquarters alkalmazással való kommunikáció során. |
 | -RetailServerAadResourceId | Az eszköz aktiválása során használt Retail Server Azure AD alkalmazás-erőforrás azonosítója. Erre a paraméterre nincs szükség a létesítményekben való telepítés esetén. |
 | -RetailServerCertFullPath | A teljesen formázott URL-elérési út, amely az ujjlenyomatot a Retail Server Identity tanúsítványának Azure AD keresési mérőszámaként használja, és a Központtal való kommunikáció hitelesítésére kell használni. Például egy `store://My/LocalMachine?FindByThumbprint=<MyThumbprint>` megfelelően formázott URL-cím **\<MyThumbprint\>**, ahol az értéket a használni kívánt tanúsítvány ujjlenyomatával cseréli le. Ezt a paramétert ne használja a **-RetailServerCertTserverbprint paraméterrel** együtt. |
@@ -72,7 +72,7 @@ A következő táblázat bemutatja a parancssori végrehajtásban használható 
 | -TransactionServiceAzureAuthority | A Transaction Service hatósága Azure AD. |
 | -TransactionServiceAzureResource | A Transaction Service erőforrása Azure AD. |
 | -TrustSqlServerCertificate | Egy kapcsoló, amely megadja, hogy az SQL Server-kapcsolat létesítése során megbízhatónak kell-e lennie a kiszolgálói tanúsítványnak. A biztonsági kockázatok elkerülése érdekében a termelési telepítések soha nem adnak meg **itt igaz értéket**. Az alapértelmezett érték a **hamis**. |
-| -Részletesség | A telepítés során kért naplózási szint. Ez az érték általában nem használható. |
+| -Bőbeszédűség | A telepítés során kért naplózási szint. Ez az érték általában nem használható. |
 | -WindowsPhoneAppInsxosInstrumentationKey | A Hardverállomás AppInsights eszközkulcsa. |
 
 ## <a name="general-overview"></a>Általános áttekintés

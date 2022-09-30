@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 26fc6518f0b4eae815e047db1dbaadd7c56a2e67
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 6e346c6ff881d3a33743196b45247493fd19ed1d
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220713"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573251"
 ---
 # <a name="allow-edits-to-internal-data-on-general-ledger-vouchers"></a>Belső adatok szerkesztésének engedélyezése a főkönyvi bizonylatokon
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 
 Könyvelési bejegyzések főkönyvbe **való** feladott feladott tételeinek leírása gyakran használható belső megjegyzések vagy dokumentumok tárolására. Ha helytelenek az adatok, akkor ez félreértést okozhat, és az időszak végi zárást nehéz lesz. Ezzel a funkcióval a főkönyvvezető **vagy** a főkönyvvezető kijavíthatja a hibákat, ha szerkeszti a főkönyvbe feladott bizonylatok Leírás mezőjét.
@@ -84,7 +83,7 @@ A könyvvizsgálati ellenőrzést a rendszer kifejezetten az ezen a funkción ke
    
     Ha így nyitja meg a lekérdezést, akkor az adott bizonylatrekord minden szerkesztésére fókuszálhat.
   
-  - Ugrás a** Főkönyv** > **a** > **Bizonylat szerkesztései időszakos feladatok könyvvizsgálati ellenőrzése elemre** A párbeszédpanelen adja meg azokat a bizonylatokat, amelyek alapján meg szeretné tekinteni a szerkesztések könyvvizsgálati ellenőrzési feltételeinek megadását. Az összes bizonylat könyvvizsgálati ellenőrzésének megtekintéséhez hagyja üresen a feltételeket, és válassza az **OK gombra való lehetőséget**. 
+  - Ugrás a **Főkönyv** > **a** > **Bizonylat szerkesztései időszakos feladatok könyvvizsgálati ellenőrzése elemre** A párbeszédpanelen adja meg azokat a bizonylatokat, amelyek alapján meg szeretné tekinteni a szerkesztések könyvvizsgálati ellenőrzési feltételeinek megadását. Az összes bizonylat könyvvizsgálati ellenőrzésének megtekintéséhez hagyja üresen a feltételeket, és válassza az **OK gombra való lehetőséget**. 
     
     A lekérdezés ilyen módon való megnyitásával szűrheti az adott dátumon vagy adott felhasználó által készített módosításokat.
 

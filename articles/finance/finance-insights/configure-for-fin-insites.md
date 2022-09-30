@@ -2,7 +2,7 @@
 title: Pénzügyi konfiguráció – információk
 description: Ez a cikk bemutatja a konfigurációs lépéseket, amelyek lehetővé teszik a rendszer számára a pénzügyi információkban elérhető képességek használatát.
 author: ShivamPandey-msft
-ms.date: 01/27/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ac0f0cb078b6e202540fadbff337a01379febc8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 05bf5fe5a5ff86bbf52ed58ee6b1e84c15bf2c1e
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861416"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573194"
 ---
 # <a name="configuration-for-finance-insights"></a>Pénzügyi konfiguráció – információk
 
@@ -39,7 +39,7 @@ Kövesse az alábbi lépéseket a környezetek telepítéséhez.
 1. Az LCS-ben hozzon létre vagy frissítsen egy Dynamics 365 Pénzügyi környezetet. A környezethez a 10.0.21-es vagy újabb verziójú alkalmazás szükséges.
 
     > [!NOTE]
-    > A környezetnek magas rendelkezésre álló (HA) környezetnek kell lennie. (Az ilyen típusú környezetet 2. szintű környezetnek is nevezik.) További információ: [Környezettervezés](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+    > A környezetnek magas rendelkezésre álló (HA) környezetnek kell lennie. (Az ilyen típusú környezetet 2. szintű környezetnek is nevezik.) További információ: [Környezettervezés](/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
 2. Ha a pénzügyi információkat egy üzenetkészlet-környezetben konfigurálja, előfordulhat, hogy termelési adatokat kell másolnia a környezetbe, mielőtt az előrejelzések működni fognak. Az előrejelzési modell több évnyi adatból használatával készít előrejelzéseket. A Contoso bemutató adatai nem tartalmaznak elég előzményadatot az előrejelzési modell megfelelő képzéséhez. 
 
@@ -51,13 +51,16 @@ Győződjön meg a következő beállításokról:
 
 - A **Power** **Portal** felügyeleti központban rendszergazdai és rendszerszabó hozzáféréssel rendelkezik.
 - A Pénzügyi információk bővítményt telepítő felhasználóhoz a Dynamics 365 Pénzügyi vagy ezzel egyenértékű licencet kell alkalmazni.
+- A következő Azure AD alkalmazások vannak regisztrálva a következőben Azure AD:
 
-A következő Azure AD alkalmazások vannak regisztrálva a következőben Azure AD:
+    |  Alkalmazás                             | Alkalmazás azonosítója                               |
+    |------------------------------------------|--------------------------------------|
+    | Microsoft Dynamics ERP mikroszolgáltatások CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-|  Alkalmazás                             | Alkalmazás azonosítója                               |
-|------------------------------------------|--------------------------------------|
-| Microsoft Dynamics ERP mikroszolgáltatások CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    
+    Ha ellenőrizni kell, hogy a pályázat be van-e Azure AD jegyezve, jelölje be az Összes **pályázat listát**. A további tudnivalókat lásd a Vállalati [alkalmazások megtekintése.](/azure/active-directory/manage-apps/view-applications-portal)
+  
+    Ha az alkalmazás nincs regisztrálva a alkalmazásban Azure AD, forduljon a támogatási szolgálathoz.
+  
 ## <a name="configure-dataverse"></a>Dataverse konfigurálása
 
 A következő lépések segítségével konfigurálhatja a Dataverse-t a Finance Insights alkalmazáshoz.
@@ -93,7 +96,7 @@ A bővítmény telepítése eltarthat néhány percig.
 A bővítmény telepítése sikeresen megtörtént, **és** a Pénzügyi információk funkció engedélyezése a Dynamics 365 Pénzügy szolgáltatáskezelési munkaterületén akár egy óráig is eltelhet. Ha nem szeretne túl hosszú ideig várni, manuálisan **futtathatja az Információ létesítés állapotának ellenőrzése** folyamatot. 
 
 1. A Dynamics 365 Pénzügy szolgáltatásban kattintson a Rendszerfelügyelet **\> beállítása folyamatautomatizálási \> folyamat automatizálására**.
-2. Az Elemzési **létesítés állapotának ellenőrzése a Háttérfolyamatok** **lapon**, és válassza a Szerkesztés **lehetőséget.**
+2. Az Elemzési **létesítés állapotának ellenőrzése a Háttérfolyamatok** **lapon**, és válassza a Szerkesztés **lehetőséget**.
 3. A Következő **végrehajtási mező** beállítása 30 perccel az aktuális idő előtt.
 
    Ennek a módosításnak arra kell **kényszerítenie az "Adatátépítési állapot** ellenőrzése" folyamatot, hogy azonnal fusson.
