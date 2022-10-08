@@ -2,19 +2,19 @@
 title: Ellenőrzőegység integrációs mintája Svédország esetén
 description: Ez a cikk áttekintést nyújt Svédország pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: 3376e6a901b692371a44b5c74c1e6b4afd0cd573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 966ba3fab780991736f0c84d7eb68356c28a4022
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9275066"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631262"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Ellenőrzőegység integrációs mintája Svédország esetén
 
@@ -42,7 +42,7 @@ A Svédországra vonatkozó vezérlőegység-integrációs minta a következő l
 - Számos hibakezelési beállítás áll rendelkezésre. Íme néhány példa:
 
     - Próbálja meg újra a pénzügyi regisztrációt, ha újrapróbálkozás lehetséges. A pénzügyi regisztrációt újrapróbálhatja, ha például a vezérlőegység nincs csatlakoztatva, nem áll készen vagy nem válaszol.
-    - Pénzügyi regisztráció elhalasztása.
+    - Pénzügyi regisztráció halasztás.
     - Pénzügyi regisztráció kihagyása, vagy a tranzakció megjelölése regisztráltként, és infókódok beírása a hiba okának és a további információknak a rögzítéséhez.
     - Ellenőrizze az ellenőrző egység rendelkezésre állását, mielőtt új értékesítési tranzakciót nyit meg vagy egy értékesítési tranzakciót véglegesítettek.
 
@@ -95,7 +95,7 @@ A nyugtaformátumok használatával kapcsolatos további tudnivalókat lásd a N
 A Svédországra vonatkozó vezérlőegység-integrációs minta a pénzügyi [integrációs](fiscal-integration-for-retail-channel.md) funkciókon alapul, és a Retail SDK része. A minta a **Solutions-tárház (például a 9.33. kiadásban található minta) src\\ FiscalIntegration\\ CleanCash**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/)[mappájában található.](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash) A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, amely a Commerce runtime () futási idő kiterjesztése CRT, és egy pénzügyi csatlakoztató, amely a Commerce Hardware Station kiterjesztése. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
 
 > [!WARNING]
-> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK korábbi verzióját egy fejlesztő virtuális gépen (VM) kell használnia a Lifecycle Services (LCS) Microsoft Dynamics szolgáltatásban. A további tudnivalókat [lásd az ellenőrzési egység integrációs mintavételével kapcsolatos, Svédországra vonatkozó telepítési irányelvekben (legacy)](emea-swe-fi-sample-sdk.md).
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK korábbi verzióját egy fejlesztő virtuális gépen (VM) kell használnia a Lifecycle Services (LCS) Microsoft Dynamics szolgáltatásban. A további tudnivalókat [lásd az vezérlőegység-integrációs minta Svédországra vonatkozó telepítési irányelvei (legacy) szempontjából](emea-swe-fi-sample-sdk.md).
 >
 > Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
@@ -103,7 +103,7 @@ A pénzügyi integráció beállítási lépéseit [a Commerce-csatornák pénz�
 
 1. [Pénzügyi regisztrációs folyamat beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Ezenkívül jegyezze fel a [pénzügyi nyilvántartási folyamatnak az ehhez az ellenőrzőegység-integrációs mintához specifikus beállításait](#set-up-the-registration-process).
 1. [Hibakezelési beállítások megadása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)
+1. [Halasztott pénzügyi regisztrációk kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Csatornaösszetevők konfigurálása](#configure-channel-components)
 
 ### <a name="set-up-the-registration-process"></a>A regisztrációs folyamat beállítása
@@ -172,7 +172,7 @@ A pénzügyi integrációs minta részeként biztosított pénzügyi csatlakozta
 ### <a name="configure-channel-components"></a>Csatornaösszetevők konfigurálása
 
 > [!WARNING]
-> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd az ellenőrzési egység integrációs mintavételével kapcsolatos, Svédországra vonatkozó telepítési irányelvekben (legacy)](emea-swe-fi-sample-sdk.md).
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd az vezérlőegység-integrációs minta Svédországra vonatkozó telepítési irányelvei (legacy) szempontjából](emea-swe-fi-sample-sdk.md).
 >
 > Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
@@ -221,7 +221,7 @@ Hajtsa végre [a pénzügyi integrációs minta felépítési folyamatának beá
 A Svédországra vonatkozó vezérlőegység-integrációs minta a pénzügyi [integrációs](fiscal-integration-for-retail-channel.md) funkciókon alapul, és a Retail SDK része. A minta a **Solutions-tárház (például a 9.33. kiadásban található minta) src\\ FiscalIntegration\\ CleanCash**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/)[mappájában található.](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash) A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, CRT amely a Commerce Hardverállomás kiterjesztése, és egy pénzügyi csatlakoztató. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
 
 > [!WARNING]
-> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd az ellenőrzési egység integrációs mintavételével kapcsolatos, Svédországra vonatkozó telepítési irányelvekben (legacy)](emea-swe-fi-sample-sdk.md). Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd az vezérlőegység-integrációs minta Svédországra vonatkozó telepítési irányelvei (legacy) szempontjából](emea-swe-fi-sample-sdk.md). Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
 ### <a name="crt-extension-design"></a>CRT kiterjesztésterv
 

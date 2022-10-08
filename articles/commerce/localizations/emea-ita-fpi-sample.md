@@ -2,19 +2,19 @@
 title: Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan
 description: Ez a cikk áttekintést nyújt olaszországi pénzügyi integrációs mintavételről Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6ad97e87e4114a8f2250d0ba4880b7a466b3689e
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337236"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631396"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan
 
@@ -67,7 +67,7 @@ Az olaszországi pénzügyi nyomtató integrációs mintája a következő helyz
 - Hibakezelés, például a következő lehetőségek:
 
     - Próbálja meg újra a pénzügyi regisztrációt, ha egy újrapróbálkozás lehetséges, például ha a pénzügyi nyomtató nincs csatlakoztatva, nem áll készen, vagy nem válaszol, a nyomtató ki van nyomtatva, vagy papírelakadás van.
-    - Pénzügyi regisztráció elhalasztása.
+    - Pénzügyi regisztráció halasztás.
     - Pénzügyi regisztráció kihagyása, vagy a tranzakció megjelölése regisztráltként, és infókódok beírása a hiba okának és a további információknak a rögzítéséhez.
     - Ellenőrizze a pénzügyi nyomtató elérhetőségét, mielőtt új értékesítési tranzakciót nyit meg vagy egy értékesítési tranzakciót véglegesítettek.
 
@@ -111,7 +111,7 @@ A pénzügyi integráció beállítási lépéseit [a Commerce-csatornák pénz�
 1. [Pénzügyi szövegek beállítása engedményekhez](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
 1. [Hibakezelési beállítások megadása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Pénzügyi X-/Z-jelentések beállítása a POS-ból](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)
+1. [Halasztott pénzügyi regisztrációk kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [A POS-terminálon található vevőadatok kezelésére használható funkciók beállítása](emea-ita-customer-information.md#setup).
 1. [Csatornaösszetevők konfigurálása](#configure-channel-components)
 

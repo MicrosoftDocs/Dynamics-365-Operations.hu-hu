@@ -2,19 +2,19 @@
 title: A Commerce csatornák pénzügyi integrálásának beállítása
 description: Ez a cikk a Commerce csatornák pénzügyi integrációs funkcióinak beállításával kapcsolatos irányelveket tartalmaz.
 author: EvgenyPopovMBS
-ms.date: 04/28/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 9fd801395f2ba04c703734a1de7998d6a53b6462
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 28097341c7b39660b834eb81786c3f56045e1496
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276132"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631423"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>A Commerce csatornák pénzügyi integrálásának beállítása
 
@@ -30,9 +30,10 @@ A Commerce csatornák pénzügyi integrációs funkcióival kapcsolatos funkció
 1. A következő funkciók megkeresik és engedélyezhetik:
 
     - **Közvetlen pénzügyi integráció POS-pénztárgépekkel** – ez a funkció a pénztárnál futtatott pénzügyi csatlakoztatók létrehozására való képesség felvételének lehetőséggel bővíti a pénzügyi integrációs keretrendszert. Az ilyen típusú csatlakoztató egy PÉNZÜGYI eszközzel vagy szolgáltatással kommunikál, amely HTTP alkalmazásprogramozási felületet (API) biztosít, és nem igényel külön fizikai gépet az üzletben. Ez a funkció például lehetővé teszi a pénzügyi integrációt mobileszközök esetében, a megosztott hardverállomás használata nélkül.
-    - **Pénzügyi integráció technikai profil-felülbírálásai** – ez a funkció lehetővé teszi a pénzügyi integráció konfigurációjának kibontást, és lehetővé teszi a kapcsolati paraméterek ellenőrzését a POS-pénztárgép beállítási lapján. Ha ez a funkció engedélyezve van, akkor felülbírálhatja egy technikai profil paramétereit.
+    - **Pénzügyi integráció technikai profilfelülirata** – ez a funkció lehetővé teszi a pénzügyi integráció konfigurációjának kibontást, és lehetővé teszi egy technikai profil paramétereinek felülbírálatát. Például megadhatók a pénzügyi eszközök kapcsolati karakterláncai az egyes POS-pénztárgép szintjén. A funkció lehetőséget ad arra is, hogy ellenőrizze a kapcsolati paramétereket **a** POS-pénztárgép Beállítások lapján. 
     - **PÉNZTÁRi pénztárgép** pénzügyi nyilvántartási állapota – ha ez a funkció engedélyezve van, akkor letilthatja a pénzügyi regisztrációs folyamatot az egyes PÉNZTÁRi pénztárgépekkel. Ha a PÉNZTÁRi pénztárgépen le van tiltva a pénzügyi regisztráció, akkor az értékesítési tranzakciókat nem lehet végrehajtani a pénztárgépen.
-    - **Pénzügyi integráció - helyi tárolás** biztonsági mentése – ez a funkció kiterjeszti a pénzügyi integrációs keretrendszer hibakezelési lehetőségeit. Lehetővé teszi továbbá a pénzügyi regisztrációs adatok automatikus biztonsági mentését adatvesztés esetén, így az eszköz aktiválása közben a helyi tárolóban található adatok visszaállítása történik.
+    - **Pénzügyi** integrációs helyi tárolási biztonsági másolat – ez a funkció a pénzügyi nyilvántartási adatok automatikus biztonsági mentésének engedélyezésével kiterjeszti a pénzügyi integrációs keretrendszer hibakezelési lehetőségeit, így az eszközök aktiválása közben vissza lehet állítani a helyi tárolóban található adatokat.
+    - **Halasztott** bizonylatregisztráció – ez a funkció kiterjeszti a pénzügyi integrációs keretrendszer hibakezelési lehetőségeit, lehetővé téve a pénzügyi regisztrációk elhalasztását pénzügyi nyilvántartási hiba esetén, és használjon biztonsági másolatként használt pénzügyi regisztrációs beállítást, vagy később, a pénzügyi integrációs keretrendszertől különböző módon töltse ki a pénzügyi regisztrációt.
 
 ## <a name="set-up-commerce-parameters"></a>Commerce-paraméterek beállítása
 
@@ -286,16 +287,15 @@ Ahhoz, hogy pénzügyi X / Z-jelentés futtatását engedélyezze a pénztárbó
     1. Adja hozzá az új gombot, és és állítsa a **Pénzügyi Z nyomtatása** gombtulajdonságot
     1. Az **Elosztási ütemezés** lapon, futtassa a **1090** feladatot a módosítások átviteléhez a csatorna-adatbázisba.
 
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Elhalasztott pénzügyi regisztrációs manuális végrehajtásának engedélyezése.
+## <a name="enable-manual-execution-of-deferred-fiscal-registration"></a>Halasztott pénzügyi regisztrációk kézi végrehajtásának engedélyezése
 
-Az halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezéséhez, egy új gombot kell hozzáadnia a pénztár elrendezéséhez.
+Halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezéséhez új gombot kell hozzáadnia a POS-elrendezéshez.
 
 - A **Gombrácsok** oldalon hajtsa végre az [Pénztárműveletek hozzáadása pénztárelrendezésekhez a Gombrácstervezővel](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) dokumentum lépéseit, a tervező telepítéséhez és a pénztár elrendezésének frissítéséhez.
 
     1. A frissítendő elrendezés kiválasztása.
     1. Adja hozzá az új gombot, és és állítsa a **Pénzügyi regisztrációs folyamat befejezése** gombtulajdonságot.
     1. Az **Elosztási ütemezés** lapon, futtassa a **1090** feladatot a módosításai átviteléhez a csatorna-adatbázisba.
-
 
 ## <a name="view-connection-parameters-and-other-information-in-pos"></a>A POS kapcsolati paramétereinek és egyéb információinak megtekintése
 

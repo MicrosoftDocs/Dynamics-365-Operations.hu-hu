@@ -2,7 +2,7 @@
 title: 'WHat új és módosított: Dynamics 365 Commerce 10.0.29 (október 2022)'
 description: Ez a témakör olyan funkciókat ismertet, amelyek újak Microsoft Dynamics 365 Commerce vagy módosulnak a 10.0.29-es dokumentumban.
 author: josaw1
-ms.date: 08/17/2022
+ms.date: 09/29/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 6e457864f51159f46f45e9b8969863c9d34c5786
-ms.sourcegitcommit: 56677afde87a9176f879482a7af223e251801d5d
+ms.openlocfilehash: 0629228516d688abf4dcd4280d1ad676f8f35331
+ms.sourcegitcommit: ce4e56d798281258479432ad821287a1cc8e26bf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "9475903"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9601571"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10029-october-2022"></a>Új vagy módosult elemek a Dynamics 365 Commerce szolgáltatásban – 10.0.29. (2022. október)
 
@@ -39,6 +39,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 | E-kereskedelem | Termék-összehasonlítás támogatása e-kereskedelemben | A termékek kategóriákon keresztüli összehasonlításának engedélyezése a vásárlók számára, hogy a helyes beszerzési döntést hozják saját maguk számára. Ez a funkció a vállalkozások és a vállalkozások között (B2C) és a B2B webhelyeken is elérhető. | Webhelyszerkesztő | 
 | Ajándékutalványok | Kiskereskedelmi ajándékutalvány-táblák támogatása több vállalatot átívelő adatmegosztáshoz | A Dynamics Headquarters lehetővé teszi a vállalatközi adatmegosztást a Dynamics architektúra meghatározott tábláiban. Ebben a funkcióban a kiskereskedelmi Dynamics 365 Commerce ajándékutalvány-táblák vállalatközi adatmegosztását támogatja. Így az egyik vállalat ajándékutalványának adatai a környezetben egy másik vállalatba másolhatja az adatokat. Az eredeti vállalat ajándékutalvány-tábláján végrehajtott módosításokat a rendszer el fogja osztani az ismétlődő vállalati ajándékutalvány-táblával. | Fejlesztők |
 | Globalizáció | [Commerce honosítási funkciók engedélyezése az új Commerce SDK számára](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Az új funkció lehetőséget nyújt a Commerce Headquarters rendszerbeli honosítási funkciók engedélyezésére a szolgáltatáskezelési keretrendszer vagy a paraméterek segítségével. A pénzügyi integrációs mintákat most már az új Commerce SDK tartalmazza, és támogatják a független csomagolást. Ez a funkció lehetővé teszi a Store Commerce alkalmazásnak a globális Commerce vevők által való alkalmazását is.<p><p>Ez a kiadás tartalmazza a Commerce rendszer honosítási funkcióit [és pénzügyi integrációs mintáit Ausztriához, a](../localizations/emea-aut-fi-sample.md) Cseh Köztársasághoz, [Franciaországhoz](../localizations/emea-cze-fi-sample.md), [Németországhoz](../localizations/emea-fra-cash-registers.md), [...](../localizations/emea-deu-fi-sample.md)[Olaszországhoz](../localizations/emea-ita-fpi-sample.md), [Norvégiához](../localizations/emea-nor-cash-registers.md) és Lengyelországhoz.[...](../localizations/emea-pol-fpi-sample.md) | A rendszergazdák/döntéshozók engedélyezték |
+| Nem elérhető | [POS offline adatbázis-tömörítés](../dev-itpro/implementation-considerations-offline.md#important-offline-features) | Ez az új funkció csökkenti az offline adatbázisméreteket azáltal, hogy engedélyezi a csatorna-áruházon kívüli automatikus [indexszűrítést](../dev-itpro/store-hours.md). | Funkció kezelése<p>*POS offline adatbázis-tömörítés* |
 | Teljesítmény | RtS-függőség eltávolítása a "Vevő szerkesztése" helyzetekből | A magas rendelkezésre állás és a magas teljesítmény az alapértelmezett várakozás a pénztári (POS) és az e-commerce csatornák számára. A csatornáknak már nem kell a vevői Dynamics 365 Commerce adatok szerkesztésekor a Commerce Headquarters valós idejű kommunikációját igénybe vevői igényeket teljesíteniük. Az aszinkron és nem aszinkron vevőkre vonatkozó aszinkron vevői adatok aszinkron szerkesztésének lehetősége a Commerce Headquarters valós idejű hívásának csökkentésére is képes. | A rendszergazdák/döntéshozók engedélyezték |
 
 ## <a name="feature-state-changes-in-this-release"></a>Funkcióállapot-változások ebben a verzióban
@@ -85,7 +86,7 @@ A táblázat felsorolja azokat a funkciókat is, amelyek korábban nyilvános el
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Commerce 10.0.29 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és műveletalkalmazások platformfrissítései a 10.0.29-es verzióhoz (2022. október)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md). 
+A Microsoft Dynamics 365 Commerce 10.0.29 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügyi és műveletalkalmazások platformfrissítései a 10.0.29-es verzióhoz (október 2022.).](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md) 
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

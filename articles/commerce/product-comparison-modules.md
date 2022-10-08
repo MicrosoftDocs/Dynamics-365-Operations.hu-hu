@@ -2,19 +2,19 @@
 title: Termék-összehasonlítási modulok
 description: Ez a témakör leírja a termék-összehasonlítási Microsoft Dynamics 365 Commerce modulokat, és bemutatja, hogyan lehet azokat megvalósítani, hogy a vevők termék-összehasonlításokat tudjanak végrehajtani az e-commerce webhelyeken.
 author: ashishmsft
-ms.date: 08/09/2022
+ms.date: 10/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 6fd851ce6b32d0772c3fe23c4d7bd4dae2616fdc
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 9ff45f3fbcc86b21f336d580582adef586417de4
+ms.sourcegitcommit: 66b954827826706ea2ba00c2afd5d694ad92148d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474126"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "9618385"
 ---
 # <a name="product-comparison-modules"></a>Termék-összehasonlítási modulok
 
@@ -91,6 +91,19 @@ Ha a keresési és kategória eredményoldalakon termék-összehasonlítási gom
 1. A jobb oldali tulajdonságablakban állítsa be a Termék-összehasonlítás **gomb** modul tulajdonságait.
 1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet.
 1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+
+## <a name="add-a-product-comparison-preview-panel-module-to-pages-on-your-website"></a>Termék-összehasonlítási előnézeti panelmodul hozzáadása a webhely lapjaihoz
+
+A termék-összehasonlítás előnézeti panelmodulja lehetőséget nyújt a vevőknek arra, hogy áttekintsék azokat a termékeket, amelyekhez hozzáadják az összehasonlítást, illetve eltávolítják az összehasonlításból. Az előnézeti panel lehetőséget nyújt arra is, hogy közvetlenül az összehasonlítási oldalra lépjen, vagy törölje a termékek teljes listáját. 
+
+Javasoljuk, hogy minden olyan oldalon engedélyezze az előnézeti panelt, **amelyeken engedélyezve van a Termék-összehasonlítás gomb**. A modult **hozzá** lehet adni a Termék-összehasonlítás gombhoz mint slot, vagy használható különálló modulként, amely bármelyik oldalon konfigurálható, még akkor is, ha nincs olyan funkció, amely az összehasonlítható termékek hozzáadására vagy eltávolítására használható. 
+
+Manuálisan kell hozzáadnia a termék-összehasonlítás előnézeti panelmodulját egy laphoz. Egy laphoz csak egy előnézeti panelmodult adjon hozzá. Ha a modulból több példányt ad hozzá egy laphoz, akkor a rendszer az első modult fogja látni, a többit figyelmen kívül hagyja.
+
+![Termék-összehasonlítás előnézeti panelje](./media/product-comparison-preview-panel-2.png)
+
+Ha megadja a termék-összehasonlítási korlátozást, akkor az előnézeti panelen engedélyezheti a helyőrzőket, amelyek azt jelzik, hogy hány további terméket lehet hozzáadni az összehasonlításhoz. A helyőrzők helyére az összehasonlításban hozzáadott termékek kerülnek. Ha konfigurálni szeretné a termék-összehasonlítási korlátot, és engedélyezni szeretné a helyőrzőket a Webhelyszerkesztőben, **kattintson a > beállításokra**, **és tegye meg a változtatásokat a Termék-összehasonlítások szakaszban**. A rendszer a konfigurációt az összes lap minden előnézeti előképére alkalmazza. 
+
 
 ## <a name="specify-the-maximum-number-of-products-to-show-in-the-comparison-tray"></a>Adja meg az összehasonlítási tálcában található termékek maximális számát.
 

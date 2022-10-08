@@ -2,19 +2,19 @@
 title: Commerce-csatornák pénzügyi integrációja – áttekintés
 description: Ez a cikk áttekintést nyújt a pénzügyi integrációs lehetőségekről, amelyek elérhetők a témakörben Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 0a56df2a463153c6c3986ce84907e25ea7d965b8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286499"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631240"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Commerce-csatornák pénzügyi integrációja – áttekintés
 
@@ -95,16 +95,20 @@ Ez a konfiguráció akkor használatos, amikor egy fizikai pénzügyi eszköz va
 
 A pénzügyi integrációs keretrendszer a hibák kezelésére a pénzügyi regisztráció során a következő lehetőségeket nyújtja:
 
-- **Újrapróbálkozás** – Az operátorok használhatják ezt a lehetőséget, ha a hiba gyorsan feloldható, és a pénzügyi regisztrációt újrafuttathatja. Például ezt a lehetőséget használhatja, amikor a pénzügyi eszköz nincs csatlakoztatva, a pénzügyi nyomtatóból kifogyott a papír, vagy papírelakadás van a pénzügyi nyomtatóban.
-- **Érvénytelenítés** – Ezzel a lehetőséggel az operátorok elhalaszthatják az aktuális tranzakció vagy esemény pénzügyi regisztrációját, ha sikertelen. A regisztráció elhalasztása után az operátor folytathatja a munkát a pénztában, és bármely műveletet végrehajthat, amihez nincs szükség a pénzügyi regisztrációra. Ha olyan esemény történik a pénztárban, amelyhez a pénzügyi regisztráció szükséges (például egy új tranzakciót nyitnak), a hibakezelési párbeszédpanel automatikusan megjelenik és értesíti az operátort, hogy a korábbi tranzakciót nem megfelelően regisztrálták, és hibakezelési lehetőségeket nyújt.
-- **Kihagyás** – Az operátorok használhatják ezt a lehetőséget, amikor a pénzügyi regisztráció bizonyos feltételek fennállása esetén elhagyható, és az általános műveletek folytathatók a pénztárban. Ez a beállítás például használható, amikor egy értékesítési tranzakciót, amelynek a pénzügyi regisztrációja nem sikerült, a különleges papírnaplóban lehet regisztrálni.
-- **Megjelölés regisztráltként** – Az operátorok használhatják ezt a lehetőséget, amikor a tranzakció ténylegesen regisztrálva van a pénzügyi eszközben (például egy pénzügyi nyugtát kinyomtattak), de hiba történt a pénzügyi válasz csatorna-adatbázisba mentése közben.
-- **Halasztás** – az operátorok akkor használhatja ezt a lehetőséget, ha nem történt meg a tranzakció regisztrálása, mert a regisztrációs szolgáltatás nem volt elérhető. 
+- **Újrapróbálkozás** – a kezelő akkor használhatja ezt a lehetőséget, ha a hiba gyorsan kijavítható, és a pénzügyi regisztráció újrafuttatható. Például ezt a lehetőséget használhatja, amikor a pénzügyi eszköz nincs csatlakoztatva, a pénzügyi nyomtatóból kifogyott a papír, vagy papírelakadás van a pénzügyi nyomtatóban.
+- **Mégse** – ez a beállítás lehetővé teszi, hogy a kezelő sikertelen eset esetén halasztsa az aktuális tranzakció vagy esemény pénzügyi regisztrációját. A regisztráció halasztás után az operátor továbbra is dolgozhat a POS-terminálon, és bármilyen műveletet befejezhet, amihez nincs szükség a pénzügyi regisztrációra. Ha olyan esemény történik a pénztárban, amelyhez a pénzügyi regisztráció szükséges (például egy új tranzakciót nyitnak), a hibakezelési párbeszédpanel automatikusan megjelenik és értesíti az operátort, hogy a korábbi tranzakciót nem megfelelően regisztrálták, és hibakezelési lehetőségeket nyújt.
+- **Kihagyás** – a kezelő akkor használhatja ezt a lehetőséget, ha nem lehet végrehajtani az aktuális tranzakció vagy esemény pénzügyi regisztrációját, például ha a pénzügyi nyomtató nincs megadva, **és** a pénzügyi regisztrációt ki lehet hagyni bizonyos körülmények között. Ez a beállítás például használható, amikor egy értékesítési tranzakciót, amelynek a pénzügyi regisztrációja nem sikerült, a különleges papírnaplóban lehet regisztrálni. A pénzügyi regisztráció kihagyása után a normál műveleteket folytatni lehet a POS-terminálon. 
+- **Megjelölés regisztráltként** – a kezelő akkor használhatja ezt a lehetőséget, ha az aktuális tranzakció vagy esemény ténylegesen regisztrálva van a pénzügyi eszközön, például kinyomtatott egy pénzügyi nyugtát, de hiba történik a pénzügyi válasznak a csatorna-adatbázisba való mentésekor. Az aktuális tranzakció vagy esemény regisztráltként való megjelölése után a normál műveleteket folytatni lehet a POS-terminálon.
+- **Halasztás** – a kezelő akkor **használhatja** ezt a lehetőséget, ha nincs regisztrálva a tranzakció, mert a regisztrációs eszköz vagy szolgáltatás nem érhető el, és a következők valamelyike érvényes:
+    - Van egy biztonsági másolatként készítt pénzügyi regisztráció, és folytatható az aktuális tranzakció pénzügyi regisztrációs folyamata. Például egy helyi [pénzügyi](./latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) eszköz lehet az online pénzügyi regisztrációs szolgáltatás biztonsági másolata, ha a szolgáltatás nem áll rendelkezésre.
+    - A pénzügyi regisztráció később a pénzügyi integrációs keretrendszeren kívül más módon is tehet. Például az elhalasztott [tranzakciók később külön funkcióval regisztrálhatóak egy kötegben](./latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode).
+    
+    Az aktuális tranzakció vagy esemény elhalasztása után a normál műveleteket folytatni lehet a POS-terminálon.
 
-> [!NOTE]
-> A **Kihagyás**, **Megjelölés regisztráltként és** **Halasztás** lehetőséget használat előtt aktiválni kell a pénzügyi regisztrációs folyamatban. Ezenkívül megfelelő engedélyt kell biztosítani az operátoroknak.
+> [!WARNING]
+> A **Skip**, **a Megjelölés regisztráltként és** **a Halasztás** lehetőséget rendkívüli lehetőségnek kell tekinteni, és csak kivételes esetekben szabad alkalmazni. A hibakezelési beállításokat a jogi vagy adózási részletekben is tárgyalni kell, és mielőtt engedélyezték volna őket, jó tanácsokat kell alkalmazniuk. A beállításokat használat előtt aktiválni kell a pénzügyi nyilvántartási folyamatban. Annak érdekében, hogy a kezelők ne használják rendszeresen, meg kell adni a megfelelő engedélyeket az operátorok számára.
 
-**A Kihagyás**, **Megjelölés regisztráltként** **és** Halasztás beállításnál az infókódok a hiba bizonyos információinak rögzítését teszik lehetővé, például a hiba okát, vagy a pénzügyi regisztráció kihagyásának indoklását, vagy a tranzakció regisztráltként való megjelölését. Hibakezelési paraméterek beállításával kapcsolatos további tudnivalókat lásd: [Hibakezelési beállítások beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+Pénzügyi tranzakció akkor [jön létre, ha a](#storing-fiscal-response-in-fiscal-transaction) Kihagyás **,** Megjelölés **regisztráltként** **vagy Halasztás beállítás van megjelölve, de a pénzügyi tranzakció nem tartalmaz pénzügyi** választ. Ennek segítségével rögzítheti a pénzügyi regisztráció sikertelenségének eseményét. Ezekkel a beállításokkal infókódok is rögzíthetik a hibákkal kapcsolatos bizonyos információkat, például a hiba okát, vagy a pénzügyi regisztráció kihagyásának vagy a tranzakció regisztráltként való megjelölésének indoklását. Hibakezelési paraméterek beállításával kapcsolatos további tudnivalókat lásd: [Hibakezelési beállítások beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Opcionális pénzügyi regisztráció
 
@@ -112,11 +116,7 @@ Pénzügyi regisztráció kötelező lehet az egyes műveletekhez, míg másokn�
 
 ### <a name="manually-rerun-fiscal-registration"></a>Pénzügyi regisztráció manuális újrafutata
 
-Ha egy tranzakció vagy esemény pénzügyi regisztrációja el lett halasztva egy hiba után (például akkor, ha a kezelő **Mégse** lehetőséget választotta hibakezelési párbeszédpanelen a), manuálisan újrafuttathatja a pénzügyi regisztrációt a hozzá tartozó művelet meghívásával. További részletekért lásd: [Elhalasztott pénzügyi regisztrációs manuális végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### <a name="postpone-option"></a>Halasztás beállítás
-
-Az Elhalasztás **lehetőséggel** folytatható a pénzügyi nyilvántartási folyamat, ha az aktuális lépés sikertelen. Akkor használható, ha van biztonsági másolat a pénzügyi nyilvántartásról.
+Ha egy tranzakció vagy esemény pénzügyi regisztrációja hiba után halasztva lett (**például** ha a művelet a Hibakezelési párbeszédpanelEn a Mégse gombra volt jelölve), akkor a pénzügyi regisztrációt kézzel újrafuttathatja a megfelelő műveletre való hivatkozással. A további tudnivalókat lásd [a Halasztott pénzügyi regisztrációk kézi végrehajtásának engedélyezése.](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration)
 
 ### <a name="fiscal-registration-health-check"></a>Pénzügyi regisztráció állapotának ellenőrzése
 
@@ -138,7 +138,7 @@ Ha az állapotellenőrzés sikertelen, a POS megjeleníti az állapotellenőrzé
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Pénzügyi válasz tárolása pénzügyi tranzakcióban
 
-Ha egy tranzakció vagy esemény pénzügyi regisztrációja sikeres, a pénzügyi tranzakció létrejön a csatorna-adatbázisban, és az eredeti tranzakcióhoz vagy eseményhez kapcsolódik. Hasonlóképpen ha a **Kihagyás** vagy **Megjelölés regisztráltként** lehetőség ki van választva egy sikertelen pénzügyi regisztráció esetén, a pénzügyi tranzakció ezeket az adatokat tárolja. A pénzügyi tranzakció tárolja a pénzügyi eszköz vagy szolgáltatás pénzügyi válaszát. Ha a pénzügyi regisztrációs folyamat több lépésből áll, a sikeres vagy sikertelen regisztrációt eredményező folyamat minden egyes lépéséhez létrejön egy pénzügyi tranzakció.
+Ha egy tranzakció vagy esemény pénzügyi regisztrációja sikeres, a pénzügyi tranzakció létrejön a csatorna-adatbázisban, és az eredeti tranzakcióhoz vagy eseményhez kapcsolódik. Hasonlóképpen, ha **sikertelen pénzügyi regisztrációnál be van jelölve a Skip**, **a Megjelölés** **regisztráltként** vagy az Elhalasztás beállítás, akkor ezek az adatok egy pénzügyi tranzakcióban tárolódnak. A pénzügyi tranzakció tárolja a pénzügyi eszköz vagy szolgáltatás pénzügyi válaszát. Ha a pénzügyi regisztrációs folyamat több lépésből áll, a sikeres vagy sikertelen regisztrációt eredményező folyamat minden egyes lépéséhez létrejön egy pénzügyi tranzakció.
 
 A pénzügyi tranzakciókat a rendszer a Headquarters szolgáltatásba továbbítja a *P-feladat* segítségével, a tranzakciókkal együtt. A **Pénzügyi tranzakciók** gyorslapon az **Üzleti tranzakciók** oldalon belül megtekintheti azokat a pénzügyi tranzakciókat, amelyekhez tranzakciók kapcsolódnak.
 

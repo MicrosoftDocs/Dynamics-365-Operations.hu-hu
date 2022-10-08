@@ -2,19 +2,19 @@
 title: Pénzügyi nyilvántartási szolgáltatás integrációs mintája a Cseh Köztársaság számára
 description: Ez a cikk áttekintést nyújt a Cseh Köztársaság pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-01
-ms.openlocfilehash: 3838792c0a420fb88ea9daab0a67c2e644c80681
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: de26b038009d8bf3518c67389c96aade19a0b65b
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313748"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631285"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Pénzügyi nyilvántartási szolgáltatás integrációs mintája a Cseh Köztársaság számára
 
@@ -48,7 +48,7 @@ A Cseh Köztársaságra vonatkozó pénzügyi nyilvántartási szolgáltatási i
 - Hibakezelés, például a következő lehetőségek.
 
     - Próbálja meg újra a pénzügyi regisztrációt, ha egy újrapróbálkozási művelet lehetséges, például ha a pénzügyi regisztrációs szolgáltatás nem érhető el, nem áll készen vagy nem válaszol.
-    - Pénzügyi regisztráció elhalasztása.
+    - Pénzügyi regisztráció halasztás.
     - Pénzügyi regisztráció kihagyása, vagy a tranzakció megjelölése regisztráltként, és infókódok beírása a hiba okának és a további információknak a rögzítéséhez.
     - Ellenőrizze a pénzügyi regisztrációs szolgáltatás elérhetőségét, mielőtt új értékesítési tranzakciót nyit meg vagy egy értékesítési tranzakciót véglegesítettek.
 
@@ -188,7 +188,7 @@ A pénzügyi integráció beállítási lépéseit [a Commerce-csatornákhoz val
 
 1. [Pénzügyi regisztrációs folyamat beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Ezenkívül jegyezze fel a [pénzügyi nyilvántartási folyamatnak az ehhez a pénzügyi regisztrációs szolgáltatásintegrációs mintához specifikus beállításait](#set-up-the-registration-process).
 1. [Hibakezelési beállítások megadása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)
+1. [Halasztott pénzügyi regisztrációk kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Csatornaösszetevők konfigurálása](#configure-channel-components)
 
 ### <a name="set-up-the-registration-process"></a>A regisztrációs folyamat beállítása

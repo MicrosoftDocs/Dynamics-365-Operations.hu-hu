@@ -14,12 +14,12 @@ ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
 ms.custom: ''
 ms.search.industry: Retail
-ms.openlocfilehash: b93852bfb7c6f5a9f2f83f30a1f76da3f9559c7e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d01ad490301dd2f4103b8bd3f702db12b93a45a8
+ms.sourcegitcommit: bd7b1ffe90b25eb4c68d6aaebd063bf33e09d9cd
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286837"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "9627496"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Visszáruk és visszatérítések irányelvének létrehozása és frissítése a csatornához
 
@@ -36,12 +36,8 @@ Az irányelv hatálya jelenleg csak a csatornán megengedhető fizetőeszközök
 
 ## <a name="enable-return-policy"></a>Visszatérítési irányelv engedélyezése
 
-Ha engedélyezni szeretné a Commerce központi felületén a csatorna-visszaküldési irányelvet, kövesse az alábbi lépéseket.
+Ez a funkció alapértelmezés szerint be van kapcsolva. A funkció a **funkciókezelés** **munkaterületén** úgy érhető el, hogy megkeresi a csatorna-visszaküldési házirendeket a funkciónevek listájában.
 
-1. Ugorjon a **Funkciókezelés** munkaterülethez a Dynamics 365 Commerce-ben.
-1. Keresse meg a **Csatornavisszaküldési irányelvek engedélyezése** funkciót a szolgáltatások neveinek listáján.
-1. Válassza az **Engedélyezés most** lehetőséget.
-1. Az **Elosztás ütemezése** lapon futtassa a **1110-es** (globális konfiguráció) feladatot a funkció változtatásának terjesztéséhez.
 
 ## <a name="configure-return-policy"></a>Konfigurálja a visszaküldési irányelvet
 

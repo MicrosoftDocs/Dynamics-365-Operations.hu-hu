@@ -2,19 +2,19 @@
 title: Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan
 description: Ez a cikk áttekintést nyújt Lengyelország pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-01.
-ms.openlocfilehash: d4e99854f5e3ab9a6ae802f4f6bcde7918f72e6d
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 2f27e5fdcd2b26a0a1651f21436cb4caad501cf8
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473767"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631371"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan
 
@@ -64,7 +64,7 @@ A lengyelországi pénzügyi nyomtató integrációs mintája a következő hely
 - Hibakezelés, például a következő lehetőségek:
 
     - Próbálja meg újra a pénzügyi regisztrációt, ha egy újrapróbálkozás lehetséges, például ha a pénzügyi nyomtató nincs csatlakoztatva, nem áll készen vagy nem válaszol, a nyomtató ki van nyomtatva, vagy papírelakadás van.
-    - Pénzügyi regisztráció elhalasztása.
+    - Pénzügyi regisztráció halasztás.
     - Pénzügyi regisztráció kihagyása, vagy a tranzakció megjelölése regisztráltként, és infókódok beírása a hiba okának és a további információknak a rögzítéséhez.
     - Ellenőrizze a pénzügyi nyomtató elérhetőségét, mielőtt új értékesítési tranzakciót nyit meg vagy egy értékesítési tranzakciót véglegesítettek.
 
@@ -107,7 +107,7 @@ A pénzügyi integráció beállítási lépéseit [a Commerce-csatornák pénz�
 1. [Pénzügyi regisztrációs folyamat beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Ezenkívül jegyezze fel a [pénzügyi nyomtató integrációs mintáját jellemző pénzügyi regisztrációs folyamat beállításait](#set-up-the-registration-process).
 1. [Hibakezelési beállítások megadása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Pénzügyi X-/Z-jelentések beállítása a POS-ból](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)
+1. [Halasztott pénzügyi regisztrációk kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Csatornaösszetevők konfigurálása](#configure-channel-components)
 
 ### <a name="set-up-the-registration-process"></a>A regisztrációs folyamat beállítása
@@ -118,7 +118,7 @@ A regisztráció engedélyezéséhez kövesse az alábbi lépéseket a Commerce 
 
     1. Nyissa meg [Dynamics 365 Commerce a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
     1. Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően.
-    1. PénzügyiIntegration **posnet \> megnyitása \>**
+    1. **PénzügyiIntegration \> posnet megnyitása \>**
     1. Töltse le a pénzügyi bizonylat szolgáltatójának konfigurációs fájlját a **CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml webhelyen**.
     1. Töltse le a pénzügyi csatlakoztató konfigurációs fájlját a **HardwareStation \> Egyezettel \> a Configuration ConnectorPosnetThermalFVEJ.xml \> fájlban**.
 
