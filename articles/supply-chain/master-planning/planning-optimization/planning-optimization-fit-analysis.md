@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
-ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
+ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "9591850"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643735"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
@@ -104,7 +104,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Biztonsági határok | Biztonsági határokkal rendelkező alaptervek: *\#* | Ez a funkció már támogatott. További információkért lásd: [Biztonsági határok](safety-margins.md) |  Támogatott |
 | Biztonsági készlet teljesítése | A „Minimum teljesítése” beállítással rendelkező cikkfedezeti rekordok, amelyek eltérnek a „Mai dátum + beszerzési idő” értékétől: *\#* | A tervezés optimalizálása mindig a *mai dátum + beszerzési időt* használja. Ennek a módosításnak az a célja, hogy előkészüljön egy jövőbeli egyszerűsített tervezési beállításra, és hogy a művelet eredményét biztosítsa. Ha a beszerzési idő nem szerepel a biztonsági készletben, akkor az aktuális alacsony raktárkészlethez létrehozott tervezett rendeléseket mindig az átfutási idő miatt késlelteti a program. Ez a viselkedés jelentős zajt és nemkívánatos tervezett rendeléseket eredményezhet. A legjobb módszer a beállítás módosítása, hogy a *mai dátum + beszerzési idő* legyen használatban. Az alapadatok frissítése a figyelmeztetések elkerüléséhez. | N.a. |
 | Értékesítési ajánlatok | Olyan alaptervek, amelyeknél engedélyezve vannak az értékesítési ajánlatok: *\#* | Ez a funkció függőben van. A tervezés optimalizálás engedélyezése során a program figyelmen kívül hagyja az árajánlatokat. A program figyelmen kívül hagyja ezeket, a beállítástól függetlenül. | 2022-es kiadás - 2. vagy újabb hullám |
-| Eltarthatósági idő | Olyan alaptervek, amelyeknél engedélyezve van az eltarthatósági idő: *\#* | Ez a funkció függőben van. Jelenleg az eltarthatósági idő figyelmen kívül marad, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | Támogatott |
+| Eltarthatósági idő | Olyan alaptervek, amelyeknél engedélyezve van az eltarthatósági idő: *\#* | Ez a funkció már támogatott. | Támogatott |
 
 ## <a name="additional-resources"></a>További erőforrások
 

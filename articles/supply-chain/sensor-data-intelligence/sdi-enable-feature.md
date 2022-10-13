@@ -1,6 +1,6 @@
 ---
-title: A intelligens adatintelligencia bekapcsolása a rendszerben
-description: Ez a témakör bemutatja, hogy hogyan lehet bekapcsolni a rendszerben az Adatintelligencia adatokat.
+title: Kapcsolja be a Sensor Data Intelligence szolgáltatást a rendszerben
+description: Ez a cikk azt ismerteti, hogyan kapcsolhatja be a Sensor Data Intelligence szolgáltatást a rendszerben.
 author: johanhoffmann
 ms.date: 09/02/2022
 ms.topic: article
@@ -11,22 +11,30 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: aaf00b5ae459ae2d2a7be85360c9478049d873fd
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 536bf141d473a2886d1ca44dcf92a8febc2d12ce
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9429015"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643850"
 ---
-# <a name="turn-on-sensor-data-intelligence-for-your-system"></a>A intelligens adatintelligencia bekapcsolása a rendszerben
+# <a name="turn-on-sensor-data-intelligence-for-your-system"></a>Kapcsolja be a Sensor Data Intelligence szolgáltatást a rendszerben
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-Az Adatintelligencia adatkapcsolati adatok csak akkor használhatók, ha be van kapcsolva a rendszeren.
+## <a name="video-instructions"></a>Video-utasítások
 
-1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre. (További tájékoztatás: [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. A Mind **lapon** található **Szűrő** mezővel keresse *meg a Vezérlőadat-intelligencia nevű funkciót*.
-1. Ha a *rendszeren engedélyezve van az Intelligence* funkció, jelölje ki a listán, **majd** tiltsa le. A funkciónak ez a régebbi verziója nem használható együtt azzal az új előnézeti verzióval, amely a következő lépésben engedélyezhető.
-1. A Szűrő **mezőben** keresse meg *a (Előnézet)* nevű funkciót.
-1. Válassza ki a funkciót a listából, majd az **engedélyezéshez válassza az** Engedélyezés lehetőséget.
+Az alábbi videó bemutatja, hogyan kapcsolhatja be a Sensor Data Intelligence funkciót, és [hogyan helyezheti üzembe a szükséges Azure-erőforrásokat](sdi-deploy-iot-solution-on-azure.md). A cikk másik része szöveges formátumú utasításokat tartalmaz.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
+
+## <a name="procedure"></a>Eljárás
+
+A Szenzor adatintelligencia használata előtt be kell kapcsolnia azt a rendszerben.
+
+1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre. (További információkért lásd: [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
+1. Az Összes **lapon a** Szűrő **mezővel** keresse meg a Sensor Data Intelligence *nevű* funkciót.
+1. Ha a *Sensor Data Intelligence* funkció engedélyezve van a rendszeren, válassza ki a listából, majd válassza a Letiltás **lehetőséget** a letiltásához. A funkciónak ezt a régebbi verzióját nem használhatja együtt az új előzetes verzióval, amelyet a következő lépésben engedélyez.
+1. **A Szűrő** mezővel keresse meg az érzékelő adatintelligencia *nevű*(előzetes verzió) nevű funkciót.
+1. Válassza ki a funkciót a listában, majd az engedélyezéshez válassza az Engedélyezés most **lehetőséget**.

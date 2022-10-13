@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult szolgáltatások a Dynamics 365 Finance alkalmazásban
 description: Ez a témakör olyan funkciókat ismertet, amelyek el vannak távolítva, illetve amelyek a Dynamics 365 Pénzügy rendszerből való eltávolításra tervezve vannak.
 author: kfend
-ms.date: 06/29/2022
+ms.date: 10/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462301"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643794"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult szolgáltatások a Dynamics 365 Finance alkalmazásban
 
@@ -32,6 +32,18 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > [!NOTE]
 > A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük azokat az objektumokat, amelyek megváltoztak vagy el vannak távolítva a pénzügyi és műveleti alkalmazások egyes verzióiban.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10031-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.31 kiadásában
+
+### <a name="edifact-paymul-at-configuration-under-payment-model"></a>EDIFACT PAYMUL (AT) konfiguráció a fizetési modellben
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Elavulás/eltávolítás oka** | A 20022-es ISO szabványon alapuló új formátum lecserélve.001.001.09. | 
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Alkalmazás |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: Az ausztriái bankok 2022 novemberig a határokon átívelő kifizetésekre vonatkozó EDICFACT-PAYMUL értékcsökkenést fognak kivetni, és az XML-verzió le lesz cserélve.001.001.09N. A globális konfiguráció tárháza alatt egy új konfiguráció lett hozzáadva, amely lehetővé teszi a felhasználók számára a nemzetközi kifizetési kérelem befejezését. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.30 kiadásában
 

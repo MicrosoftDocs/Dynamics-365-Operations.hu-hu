@@ -1,8 +1,8 @@
 ---
 title: Mérleg pénzügyi jelentés
 description: Ez a cikk a mérlegek alapértelmezett jelentéseit mutatja be. Emellett az e jelentésekhez tartozó építőelemeket is leírja.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: twheeloc
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
-ms.author: jcart
+ms.author: jiwo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64e23574f470efe1cb737236ff0b0ef37dae5064
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4aad297f401143388d682da175a6b14727a8f2f0
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880730"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643823"
 ---
 # <a name="balance-sheet-financial-reports"></a>Mérleg pénzügyi jelentés
 
@@ -33,9 +33,9 @@ Ez a cikk a mérlegek alapértelmezett jelentéseit mutatja be. Emellett az e je
 Két alapértelmezett mérlegkimutatás áll rendelkezésre. Az egyik jelentésen a szakaszok halmozottak. A jelentésen a szakaszok egymás mellett vannak.
 
 | Alapértelmezett jelentés                       | Mire szolgál?                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------|
-| Mérleg – Alapértelmezett              | Megtekinthető a szervezet éves pénzügyi helyzete.                                                                 |
-| Mérleg egymás mellett – Alapértelmezett | Megtekinthető a szervezet éves pénzügyi helyzete. Az eszközöket és a kötelezettséget, valamint a részvényesek saját tőkéjét jeleníti meg egyidejűleg. |
+|--------------------------------------|--------------------------------------------------------------------------------------|
+| Mérleg – Alapértelmezett              | Megtekinthető a szervezet éves pénzügyi helyzete.                    |
+| Mérleg és kimutatás egymás mellett – alapértelmezett | A szervezet pénzügyi helyzetének egymás mellett való áttekintését biztosítja. |
 
 ## <a name="building-blocks"></a>Építőelemek
 A mérleg pénzügyi jelentések a következő építőelemekből állnak.
@@ -43,7 +43,7 @@ A mérleg pénzügyi jelentések a következő építőelemekből állnak.
 | Alapértelmezett jelentés                       | Sor definíciója                       | Oszlopdefiníció             |
 |--------------------------------------|--------------------------------------|-------------------------------|
 | Mérleg – Alapértelmezett              | Mérleg – Alapértelmezett              | Idei és a Eltérés – Alapértelmezett    |
-| Mérleg egymás mellett – Alapértelmezett | Mérleg egymás mellett – Alapértelmezett | Folyó év mai napig oszlop – Alapértelmezett |
+| Mérleg és kimutatás egymás mellett – alapértelmezett | Mérleg és kimutatás egymás mellett – alapértelmezett | Folyó év mai napig oszlop – Alapértelmezett |
 
 ### <a name="row-definition"></a>Sor definíciója
 

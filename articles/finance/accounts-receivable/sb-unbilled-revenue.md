@@ -2,7 +2,7 @@
 title: Számlázatlan bevétel
 description: Ez a cikk bemutatja, hogyan lehet beállítani a cikkeket és számlákat a nem számlázandó bevétel funkció használatára az előfizetési számlázásban.
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: adf6f06ee454f368fa194315a87cfdec9e5e13da
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879682"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644168"
 ---
 # <a name="unbilled-revenue"></a>Számlázatlan bevétel
 
@@ -129,9 +129,9 @@ Ha nemszámlázandó bevételt szeretne használni, **hagyja** üresen a Cikkcso
 
 ### <a name="examples"></a>Példák
 
-A 10.0.27-es verzióban új számla kerül alkalmazásra a nem számlázandó bevétel használata után. A Naplóbejegyzés létrehozása **első** folyamat feladott folyamata során a követel tétel egy új, nem számlázandó bevétel ellenszámlájára könyveli a jóváírást. Ezt a számlát használja a program a bevételi számla helyett, mivel a számlázási ütemezés számlázásakor ugyanazt az értéket kell sztornírozni. Ha árfolyam- vagy kerekítési különbözetek fordulnak elő, előfordulhat, **hogy** a Számla létrehozása folyamat során kiszámított összegek eltérőek. Ez a viselkedés gondoskodik arról, hogy a számlák nettó összege 0 (nulla).
+A 10.0.29-es verziótól egy új paramétert ad a rendszer az ismétlődő szerződés számlázási paramétereihez. Igen beállítás esetén a Nem számlázatlan **ellenszámlák** használata paraméter **két új számlát tesz lehetővé a Nem számlázatlan bevétel beállításban**. A nem számlázandó bevétel ellenszámlái és a nem számlázandó engedmény ellenszámlái válnak elérhetővé, és akkor használhatók, ha a számlázási ütemezéseket a könyvelési pénznemtől különböző pénznemben hozták létre. Az ellenszámlák használatával garantálható, hogy a be nem számlázatlan bevételi és engedményszámlák sztornírozása a kezdő bejegyzésekkel azonos árfolyamokkal legyen kiegyenlítve. A Naplóbejegyzés **létrehozása kezdeti** folyamata megegyezik a nem terhelt bevételre és a bevételre történő jóváírás terhelésének folyamatával. Engedmény használata esetén a napló kezdeti bejegyzése megegyezik az Engedmény tartozik tételsel és a nem terhelt engedmény követel tételsel. 
 
-Ez a példa bemutatja, hogyan lehet a nem beszámlázatlan bevételt használni egy szerződés teljes összegének mérlegszámlázatlan bevételként való felismerésére. A bejegyzés másik oldala a nem kiegyenlített bevétel ellentétele. A vevői számlázáskor a nem számlázott bevétel és a nem számlázott bevétel ellenszámlája sztornírozva lesz. A bevétel-kimutatás vagy a számlázáskor, vagy a beállított halasztás-felismerési ütemezés szerint történik.
+Ez a példa bemutatja, hogyan lehet a nem beszámlázatlan bevételt használni egy szerződés teljes összegének mérlegszámlázatlan bevételként való felismerésére. A bejegyzés másik oldala a bevétel vagy a halasztott bevétel. A vevői számlázáskor a nem számlázott bevétel sztornírozva lesz. A bevétel-kimutatás vagy a számlázáskor, vagy a beállított halasztás-felismerési ütemezés szerint történik.
 
 #### <a name="assumptions"></a>Feltételezések
 
@@ -151,47 +151,38 @@ Ez a példa bemutatja, hogyan lehet a nem beszámlázatlan bevételt használni 
 
     | Cikk | Kezdés dátuma | Befejezés dátuma | Összeg | Számlázási gyakoriság | Halasztás - cikk | Számlázatlan bevétel | Leírás |
     |---|---|---|---|---|---|---|---|
-    | Licenc | Január 1-jén, CIN | December 31., CI+2 | $100.00 | Évente | Nem | Igen | A vevőnek minden évben $100.00 számlát kell kiszámlázni. A $300.00 összeget a mérlegszámlán be nemszámlázatlan bevételként, illetve az eredmény bevételeként rögzíti a rendszer. Minden számla csökkenti a nem számlázott összeget. |
-    | Karbantartás | Január 1-jén, CIN | December 31., CI+2 | $30.00 | Évente | Igen | Igen | A vevőnek minden évben $30.00 számlát kell kiszámlázni. A $90.00 a mérlegben előre elszámolatlan bevételként és halasztott bevételként lesz rögzítve. Minden számla csökkenti a nem számlázott összeget. A halasztott bevételt havonta, 36 hónap alatt ismeri el a rendszer. |
+    | Licenc | 2022. január 01. | 2024. december 31. | $100.00 | Évente | Nem | Igen | A vevőnek minden évben $100.00 számlát kell kiszámlázni. A $300.00 összeget a mérlegszámlán be nemszámlázatlan bevételként, illetve az eredmény bevételeként rögzíti a rendszer. Minden számla csökkenti a nem számlázott összeget. |
+    | Karbantartás | 2022. január 01. | 2024. december 31. | $30.00 | Évente | Igen | Igen | A vevőnek minden évben $30.00 számlát kell kiszámlázni. A $90.00 a mérlegben előre elszámolatlan bevételként és halasztott bevételként lesz rögzítve. Minden számla csökkenti a nem számlázott összeget. A halasztott bevételt havonta, 36 hónap alatt ismeri el a rendszer. |
 
 6. A Minden számlázási **ütemezés** lapon a **Naplóbejegyzés** létrehozása folyamat használatával lehet a szerződés értékét a mérlegbe beszámlázatlan bevételként feladni.
 
 Két naplóbejegyzés jön létre, a számlázási ütemezés minden sorához egy.
 
-| Számlázatlan bevételszámla | Nem számlázott bevétel ellenszámlája | Terhelés összege | Jóváírási összeg |
-|---|---|---|---|
-| Számlázatlan bevételszámla | | $300.00 | |
-| | Nem számlázott bevétel ellenszámlája | | $300.00 |
+| Számla | Terhelés összege | Jóváírási összeg |
+|---|---|---|
+| Számlázatlan bevételszámla | $300.00 | |
+| Bevételi számla | | $300.00 |
 
-| Számlázatlan bevételszámla | Halasztott bevétel | Terhelés összege | Jóváírási összeg |
-|---|---|---|---|
-| Számlázatlan bevételszámla | | $90.00 | |
-| |Halasztott karbantartási bevétel | | $90.00 |
+| Számla | Terhelés összege | Jóváírási összeg |
+|---|---|---|
+| Számlázatlan bevételszámla | $90.00 | |
+| Halasztott bevétel | | $90.00 |
 
-Az első naplóbejegyzést egy nem számlázandó bevételi ellenszámlára, a másodikat a halasztott bevételi számlára könyveli a rendszer. Ha a számlázási sornak nem számlázatlan bevétele és halasztott bevétele is van, akkor a halasztott bevételi számlát használja a rendszer, nem pedig a nem számlázatlan bevétel ellentételét. A szerződés előírja, hogy a vevő számláját minden év elején ki kell létrehozni. A számla **létrehozásához használja** a Számla létrehozása folyamatot. A számla létrehozásakor a következő naplóbejegyzések létrejönnek.
+A szerződés előírja, hogy a vevő számláját minden év elején ki kell létrehozni. A számla **létrehozásához használja** a Számla létrehozása folyamatot. A számla létrehozásakor a következő számlabizonylat feladása történik meg.
 
-| Fő számla | Számlázatlan bevételszámla | Terhelés összege | Jóváírási összeg |
-|---|---|---|---|
-| Nemszámlázandó bevétel ellentétele | | $100.00 | |
-| | Számlázatlan bevételszámla | | $100.00 |
-| Kinnlevőségek | | $100.00 | |
-| | Bevételi számla | | $100.00 |
+| Számla| Terhelés összege | Jóváírási összeg |
+|---|---|---|
+| Számlázatlan bevételszámla | | $130.00 |
+| Kinnlevőségek | $130.00 | |
 
-| Fő számla | Számlázatlan bevételszámla | Terhelés összege | Jóváírási összeg |
-|---|---|---|---|
-| Halasztott karbantartási bevételszámla | | $30.00 | |
-| | Számlázatlan bevételszámla | | $30.00 |
-| Kinnlevőségek | | $30.00 | |
-| | Halasztott karbantartási bevételszámla | | $30.00 |
+Ugyanez a naplóbejegyzés a következő két év elején feladott számlák alapján jön létre. A nem számlázott bevételek számlája minden évben csökken a számla **létrehozása folyamat** során. A nem számlázatlan bevétel ellenszámlája használatos a nem számlázandó bevételi számla egyenlegének különböző árfolyamok használatakor. 
 
-Ugyanez a naplóbejegyzés a következő két év elején feladott számlák alapján jön létre. A halasztott bevételi számla nettó összege 0 (nulla), mivel nincsenek kerekítési és árfolyamkülönbségek. A halasztott bevételt pontosan úgy kell sztornírozni **, ahogyan azt a Naplóbejegyzés létrehozása folyamat során jóváték**. Mivel a bevétel még mindig halasztva van, és később lesz elismerve, a halasztott bevételi számlán ismét megtörténik a követel számla.
+Az utolsó lépésben az felismerési napló minden hónapban létrejön, hogy elismerje a karbantartási díjból származó halasztott bevételt. A naplóbejegyzést a Felismerés feldolgozása **lapon lehet** létrehozni. Másik lehetőségként a **halasztás** **ütemezési lapjain található Sorok felismerése beállításával is létre lehet hozva**.
 
-Az utolsó lépésben az felismerési napló minden hónapban létrejön, hogy elismerje a halasztott karbantartási díjbevételt. A naplóbejegyzést a Felismerés feldolgozása **lapon lehet** létrehozni. Másik lehetőségként a **halasztás** **ütemezési lapjain található Sorok felismerése beállításával is létre lehet hozva**.
-
-| Halasztott bevételi számla | Bevételi számla | Terhelés összege | Jóváírási összeg |
-|---|---|---|---|
-| Halasztott karbantartási bevétel | | $2.50 | |
-| | Karbantartási bevétel | | $2.50 |
+| Fő számla | Terhelés összege | Jóváírási összeg |
+|---|---|---|
+| Halasztott bevétel | $2.50 | |
+| Bevétel | | $2.50 |
 
 Ez a naplóbejegyzés minden alkalommal létrejön, amikor a halasztott cikkre (összesen 36-szor) futtatnak felismerési folyamatot.
 
@@ -269,18 +260,18 @@ Mivel a cikkek nemszámlázandó bevételt és bevételfelosztást is használna
 
 A következő táblázat bemutatja a cikkek és a számla első naplóbejegyzését.
 
-| Számlázatlan bevételszámla | Halasztott bevételi számla | Terhelés összege | Jóváírási összeg |
-|---|---|---|---|
-| **1000-es cikk naplóbejegyzése** | | | |
-| Tartozik nem számlázandó bevétel (401250) | | $1,465.26 | |
-| | Halasztott bevétel követel számlája (250600) | | $1,465.26 |
-| **0021-es cikk naplóbejegyzése** | | | |
-| Tartozik nem számlázandó bevétel (401250) | | $274.74 | |
-| | Halasztott bevétel követel számlája (250600) | | $274.74 |
-| **Számla** | | | |
-| | Nem számlázandó bevételek követel számlája | | $1,465.26 |
-| | Nem számlázandó bevételek követel számlája | | $274.74 |
-| Tartozik vevői számla (130100) | | $1,488.16 | |
+| Fő számla | Terhelés összege | Jóváírási összeg |
+|---|---|---|
+| **1000-es cikk naplóbejegyzése** | | | 
+| Nem számlázandó bevételi számla (401250) | $1,465.26 | |
+| Halasztott bevételi számla (250600) | | $1,465.26 |
+| **0021-es cikk naplóbejegyzése** | | | 
+| Nem számlázandó bevételi számla (401250) | $274.74 | |
+| Halasztott bevételi számla (250600) | | $274.74 |
+| **Számla** | | |
+| Számlázatlan bevételszámla | | $1,465.26 |
+| Számlázatlan bevételszámla | | $274.74 |
+| Könyvelői számla (130100) | $1,488.16 | |
 
 #### <a name="changes-to-the-billing-schedule-line-billing-detail-line-or-revenue-allocation"></a>A számlázási ütemezés sorának, a számlázási részletsornak vagy a bevételfelosztásnak a módosításai
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 05bf5fe5a5ff86bbf52ed58ee6b1e84c15bf2c1e
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 07edea234839a477802e5cd875620509c8f92d69
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573194"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644114"
 ---
 # <a name="configuration-for-finance-insights"></a>Pénzügyi konfiguráció – információk
 
@@ -106,8 +106,4 @@ A bővítmény telepítése sikeresen megtörtént, **és** a Pénzügyi inform�
 > [!NOTE]
 > Ha az **Ellenőrzés létesítés** állapotának ellenőrzése nem fut le, akkor **a Rendszerfelügyelet** > **– Lekérdezések** > **kötegelt feladatoknál ússa le a rendszert**. A Folyamatautomatizálás **lekérdezése rendszermezőben** módosítsa **a** Folyamat kezdeményezése várakozás értékre az értéket. 
 > 
-## <a name="feedback-and-support"></a>Visszajelzés és támogatás
-
-Ha visszajelzést szeretne küldeni, vagy segítségre van szüksége, [e-mailben küldje el a Pénzügyi információk (Előnézet) címre](mailto:fiap@microsoft.com).
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

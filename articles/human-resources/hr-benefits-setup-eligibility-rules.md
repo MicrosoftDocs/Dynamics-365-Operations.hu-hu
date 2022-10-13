@@ -2,7 +2,7 @@
 title: Jogosultsági szabályok és beállítások konfigurálása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a Microsoft Juttatások kezelése szolgáltatásának alkalmazhatósági szabályait és beállításait Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 09/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 916a9955327aef67ac768d4505bdb343862058a1
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337319"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644084"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Jogosultsági szabályok és beállítások konfigurálása 
 
@@ -175,6 +175,7 @@ A csomagok a kapcsolódó juttatási konstrukciók csoportjai. A juttatáscsomag
    | **Köteg** | A csomag egyedi azonosítója. |
    | **Leírás** | A csomag leírása. |
    | **Fő** | Azt jelzi, hogy a csomagban lévő egyik konstrukciót alapkonstrukcióként kell megjelölni. Az alapkonstrukciót ki kell választani a csomag részeként a nyitott belépés során, a juttatások adminisztrátora csak ezután erősítheti meg az alkalmazottak juttatásokra vonatkozó választásait. |
+   | **Szükséges**| Azt jelzi, hogy ki kell választani a tervet a kötegben található egyéb tervek stb. beállításához. Egynél több terv is megjelölható **Kötelezőként**. Ebben az esetben ki **kell** választani minden Kötelező jelölésű tervet, hogy a kötegben található tervek bármelyikét kiveszi.|
    | **Érvényesség kezdő dátuma és időpontja** | A csomag aktívvá válásának dátuma és ideje. |
    | **Érvényesség vége** | A csomag lejáratának dátuma. Az alapértelmezett érték a 2154. 12. 31., ami a „soha” megfelelője. |
 

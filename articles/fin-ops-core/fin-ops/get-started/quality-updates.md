@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 54fd52f27a4169c5b6fed6045a5540cfd47bdd51
-ms.sourcegitcommit: 3ef31670b579a34dcde4ec86541a202d2ac2f9c5
+ms.openlocfilehash: 25306a8ccebb5cd01debc90cf497d4a942840ef4
+ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "9637045"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671425"
 ---
 # <a name="proactive-quality-updates"></a>Proaktív minőségi frissítések
 
@@ -87,6 +87,9 @@ További tájékoztatás az egyes régiók sötét óráiról: [Mi a tervezett k
 | 5. állomás | DoD, Kormányzati közösség felhő, Kína | Nem ütemezett | Nem ütemezett |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktív minőségfrissítés kiadása: 10.0.29
+**Alkalmazásverzió: 10.0.1326.70**
+**Tudásbáziscikknek megfelelő 748926**
+
 | Station | Régiók | Közelgő e-box ütemezése
 |---|---|---|
 | 1. állomás | Kanada központi, Kanada-Kelet, Franciaország központi, India Központi, Norvégia-Kelet, Svájc - Nyugat | 2022. október 14. – október 17. |
@@ -96,7 +99,7 @@ További tájékoztatás az egyes régiók sötét óráiról: [Mi a tervezett k
 | 5. állomás | DoD, Kormányzati közösség felhő, Kína | Nem ütemezett |
 
 > [!IMPORTANT] 
-> Öt nappal előre a Microsoft frissíti az előző ütemezést, és e-mail értesítéseket küld az erre a minőségi frissítésre ütemezett környezetnek. Az előző ütemezés csak olyan környezetekben alkalmazható, amelyek értesítést kapnak a várható frissítésről. További tájékoztatás az egyes régiók sötét óráiról: [Mi a tervezett karbantartási ablak terület szerint](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows)?
+> Öt nappal előre a Microsoft frissíti az előző ütemezést, és e-mail értesítéseket küld az ilyen minőségi frissítések fogadására ütemezett környezetek számára. Az előző ütemezés csak olyan környezetekben alkalmazható, amelyek értesítést kapnak a várható frissítésről. További tájékoztatás az egyes régiók sötét óráiról: [Mi a tervezett karbantartási ablak terület szerint](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows)?
 >
 > Az ütemezés *négy* napos tartományt mutat minden olyan területcsoportnál vagy állomásnál, ahol a minőségi frissítés aktuálisan ki lesz stb. ütemezve. A minőségi frissítések csak az üzenetdoboz környezetekkel kezdődnek. Ezt követően a sikeresen telepített mezők százalékos aránya nő, ezért a termelési környezetek telepítése a vevőknek szóló előzetes értesítésekkel kezdődik.
 > 
@@ -141,7 +144,7 @@ Igen. A gyorsjavítások munkakörnyezetének folyamatos biztosítása érdekéb
 Igen. A minőségi frissítéseket proaktív módon telepítheti. A Microsoft kihagyja a frissítést, ha a környezet aktuális buildverziója megegyezik vagy magasabb, mint a kérdéses minőségfrissítés.
 
 ## <a name="if-an-environment-has-an-upcoming-scheduled-monthly-service-update-within-a-week-will-it-still-receive-quality-updates"></a>Ha egy környezetben várható havi szolgáltatási frissítés van egy héten belül, akkor is fognak minőségi frissítéseket kapni?
-- A minőségi frissítések nem alkalmazhatók, ha egy héten belül ütemezve van egy függőben lévő szolgáltatásfrissítés, amelytől a minőségi frissítés ütemezése bekövetkezik.
+- A minőségi frissítések nem vonatkoznak éles környezetre, ha egy héten belül ütemezve van egy függő szolgáltatásfrissítés, amelytől a minőségi frissítés ütemezése bekövetkezik.
 - Ha abox környezetben ugyanaz vagy magasabb a buildverzió, mint a függőben lévő minőségi frissítés, akkor a program kihagyja.
 - Ha egy termelési környezetnek ugyanaz vagy magasabb a buildverziója, mint a függő minőségi frissítésnek, akkor a rendszer kihagyja.
 - Ha a minőségi frissítés vagy a termelés manuális frissítése miatt a műhely ugyanaz vagy magasabb buildverzióval rendelkezik, a termelés akkor is a havi szolgáltatási frissítés ütemezett verzióját fogja kapni. Ha nem szeretné, hogy az ütemezett termelési környezet frissítve legyen a szolgáltatásfrissítési verzióra, szüneteltetheti a szolgáltatás frissítését az LCS-ről. 

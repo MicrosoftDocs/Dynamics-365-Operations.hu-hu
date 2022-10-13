@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 64d6e21c2d8c588a64f0f4cf8b7a0bafc853bcab
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903334"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644003"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Ismétlődő szerződéses számlázási paraméterek
 
@@ -46,7 +46,8 @@ Az Ismétlődő szerződés **számlázási paraméterei** lapon beállíthatja 
 8. **IA Számla tranzakciótípus mezőben** válassza ki az új számlázási ütemezések alapértelmezett számlatranzakció-típusát.
 9. A **Halasztás igazítása** számlázásihoz beállítás **Igen** beállítással a megfelelő halasztás ütemezésének megfelelően beállíthatja, hogy a számlázási ütemezéssel azonos dátumokat használ. Állítsa **Nem** beállításra, ha más dátumokat ad meg.
 10. A bevétel felosztása funkció használata esetén állítsa **Igen** beállításra a **Bevétel felosztása automatikus létrehozása beállítást**, amikor cikkeket adnak hozzá a számlázási ütemezéshez. A **bevétel felosztása** jelölőnégyzet automatikusan be lesz jelölve a számlázási ütemezés sorában, ha a cikk bevétel szerinti felosztási cikkként van beállítva. Állítsa **Nem** beállításra, ha manuálisan szeretné bejellni a **Bevétel** felosztása jelölőnégyzetet.
-11. Az értékesítési rendelés létrehozására vonatkozó mezők beállítása:
+11. A Vevő felosztása **beállítás** Igen **beállítással** engedélyezheti a számlázási ütemezés különböző vevőknek való számlázását. Igen beállítás **esetén** **a** vevői felosztás lehetőség elérhető a számlázási ütemezés fejlécében és sorában. 
+12. Az értékesítési rendelés létrehozására vonatkozó mezők beállítása:
 
     - A számlák időszak, vevő vagy cikk szerint konszolidálhatók. Az **Igen** és a **Nem** érték bármilyen kombinációja beállítható. A számlák cikkcsoport szerint is feloszthatóak.
     - A számlákhoz a következő feladási lehetőségek érhetők el:
@@ -92,6 +93,9 @@ Az Ismétlődő szerződés **számlázási paraméterei** lapon beállíthatja 
     - **Jóváírás kiállítása** – jóváírás létrehozása számlázási ütemezés vagy számlázási ütemezési sor megszüntetése esetén.
     - **Jóváírás-korrekció** – jóváírás-korrekció létrehozása számlázási ütemezéshez sor megszüntetése esetén. A jóváírás-korrekció a számlázási ütemezés jövőbeli számlázási időszakában jelenik meg. A jóváírás-korrekció mindaddig frissíti a következő számlázási időszak számlaösszegét, amíg a jóváírást be nem fejezte a számlázási ütemezésre.
     - **Nincs jóváírás** – ne hozzon létre jóváírást vagy jóváírást, ha egy számlázási ütemezés vagy számlázási ütemezési sor megszűnik. Ez a lehetőség csak akkor érhető el, ha **a** Nincs beállítás beállítás van használva a számlázási ütemezés megszüntetéséhez.
+18. Ha egy visszatérítéssel le lehet állítani az "Egyszer" lehetőséget, és a számlázási ütemezés egyszeres számlázási gyakorisággal lesz kiállítva, **akkor** a számlázási ütemezés számlázása után a **számlázási** ütemezés sorának állapota "Befejezve" lesz.**·** **·** Ez a számlázási ütemezés nem szüntethető meg, és nem lehet jóváírást kibocsátani. Ha **egy alkalommal a** **·** **·** **visszatérítéssel** le lehet állítani, igen a számlázási ütemezésnek az Egyszer számlázási gyakorisággal beállított állapota a számlázási ütemezés számlázása után aktív lesz. A számlázási ütemezési sor megszakítható, és a visszatérítés feldolgozható. 
+19. A **paraméterek között beállított** napi beállítás alapértelmezett beállítása a tömeges felmondási lap, valamint a számlázási ütemezés fejléce és sor felmondása párbeszédpanel lesz. A felmondási folyamat során módosítható. Igen beállítás esetén **minden** visszatérítési összeg számítása napi díj alapján történik. Nem beállítás esetén **a** rendszer a felmondási dátum és a számlázási gyakoriság alapján jóváírást hoz létre. Ha például a havi gyakoriságot és a számlázási összeget $100 meg, akkor a követel összeg a havi gyakorisággal $100. Ha a számlázási gyakoriság egyszeres, akkor a követel összeg $0.00. Ahhoz, hogy visszatérítést kap az egyszeres számlázási gyakorisággal, napi időkorrektációt kell beállítani Igen beállításra. 
+20. Halasztás **létrehozása** **követelhez** beállítás Igen beállítással új halasztás ütemezést hozhat létre meglévő halasztás ütemezésének jóváírása esetén. A meglévő halasztás ütemezésének **jóváírásának** létrehozásához hagyja a Nem lehetőséget.
 
 ## <a name="sequence-number-tab"></a>Sorszám lap
 

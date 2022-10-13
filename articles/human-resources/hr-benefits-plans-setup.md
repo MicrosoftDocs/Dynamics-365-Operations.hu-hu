@@ -2,7 +2,7 @@
 title: Juttatási konstrukció létrehozása
 description: Ez a cikk bemutatja, hogyan lehet beállítani juttatási terveket a következőben:Dynamics 365 Human Resources
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 09/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c8d4488f1782d80484a8b91f4ae7303fea0e464
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 001318be00efcda1e7ee07513e240059d3c5e135
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337322"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643937"
 ---
 # <a name="create-a-benefit-plan"></a>Juttatási konstrukció létrehozása
 
@@ -42,8 +42,9 @@ Ez a cikk bemutatja, hogyan lehet beállítani juttatási terveket a következő
    | **Program** | Azt a programot határozza meg, amelyet választhatóan hozzá lehet rendelni a konstrukcióhoz. |
    | **Csomag** | Azt a csomagot határozza meg, amelyet választhatóan hozzá lehet rendelni a konstrukcióhoz. |
    | **Fő** | Megadja, hogy a konstrukció az alapkonstrukció-e azon a csomagon belül, amelyhez hozzárendelték. |
+   | **Szükséges** | Azt jelzi, hogy ki kell választani a tervet a kötegben található egyéb tervek stb. beállításához. Egynél több terv is megjelölható **Kötelezőként**. Ebben az esetben ki **kell** választani minden Kötelező jelölésű tervet, hogy a kötegben található tervek bármelyikét kiveszi.|
    | **Érvényesség kezdő dátuma és időpontja** | Az a dátum és időpont, amikor a konstrukció érvényessége kezdődik. Az alapértelmezett érték az aktuális rendszerdátum. |
-   | **Érvényesség záró dátuma és időpontja** | Az a dátum és időpont, amikor a konstrukció érvényessége befejeződik. Az alapértelmezett érték a 2154. 12. 31., ami a „soha” megfelelője. |
+   | **Érvényesség záró dátuma és időpontja** | Az a dátum és időpont, amikor a konstrukció érvényessége befejeződik. Az alapértelmezett érték a 2154. 12. 31., ami a „soha” megfelelője.  |
 
 4. A **Konfiguráció** lapon adja meg a megfelelő értékeket a következő mezőkben a létrehozandó konstrukció típusától függően:
 
