@@ -394,6 +394,8 @@
                   items:
                     - name: Store Commerce alkalmazás
                       href: dev-itpro/store-commerce.md
+                    - name: Store Commerce alkalmazás mobil platformokhoz
+                      href: dev-itpro/store-commerce-mobile.md
                     - name: Modern POS áttelepítése a Store Commerce szolgáltatásba
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Eszközkezelés megvalósítási útmutatója
