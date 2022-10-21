@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 25306a8ccebb5cd01debc90cf497d4a942840ef4
-ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
+ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9671425"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689224"
 ---
 # <a name="proactive-quality-updates"></a>Proaktív minőségi frissítések
 
@@ -56,7 +56,9 @@ A folyamatok változásainak egy része a proaktív minőségi frissítés aktiv
 
 - **Séma** – az eszköz gondoskodik arról, hogy a minőségi frissítések csak olyan sémákat tartalmazzanak, amelyek a szolgáltatás online állapotban alkalmazhatók. Ezzel a módszersel megőrizheti a nulla leálláshoz közeli leállással elérhető frissítés alkalmazni való képességet.
 - **Növelt módosítási változás** - jelenleg már van egy extra folyamatlépés, amely a minőségi frissítésbe való felvétel módosításainak jóváhagyására vonatkozik. Az extra lépésben nagyobb lesz a kockázat, hogy csökkentse a regresszívség potenciális lehetőségeit. A minőségi frissítésekben nem lehet törést módosítani, és a nagyobb változás biztosítja, hogy teljes legyen ez a cél.
-- **Láthatóság** – e-mailben és Lifecycle Services (LCS) szolgáltatáson keresztül küldjük az értesítéseket a közelgő proaktív minőségi frissítésekről. Ezen kívül a támogatási csoportok és az események érdeklődői láthatóvá lesznek abban, hogy hol vannak proaktív módon telepítve a minőségi frissítések.
+- **Láthatóság** – a közelgő proaktív minőségi frissítésekkel kapcsolatban az adminisztrációs központon, a Lifecycle Services (LCS) és más elérhető csatornákon keresztül küldjük el az értesítéseket. Ezen kívül a támogatási csoportok és az események érdeklődői láthatóvá lesznek abban, hogy hol vannak proaktív módon telepítve a minőségi frissítések.
+ > [!NOTE]
+ > A Microsoft kommunikációs csapata ki vizsgálja az e-mail eszközök folyamatos vizsgálatot, amelyek megakadályozzák az e-mail értesítések kézbesítését. Figyelje tovább az Üzenetközpontot Microsoft 365 a be- és értesítéshez kapcsolódó üzenetek nyomon követéséhez.
 - **Sikertelen biztonság** járattal – a járattal kódfrissítést használhat minden esetben, amikor egy minőségfrissítési hibajavításban alkalmazható, vagy a javításhoz kapcsolódó meglévő funkcióos járatot használja. Ha egy proaktív telepítés után tartalék vagy változtatást kell kikapcsolni, akkor a további hibák elkerülése érdekében a repülőrendszeren keresztül is el lehet végezve.
 - **Üzenetkészlet szinkronizálásának megnevezése** – a vevők kevesebb, mint 20 százaléka rendelkezik több mezővel, és egy olyan mező van telepítve, amelyben a verzió megfelel a termelésnek, és így segít a hibaelhárításban. Ha egy vevő a termelésnél újabb verziót használ tesztre, akkor az abox az újabb verzióra vonatkozó minőségi frissítéseket fogja kapni.
 
@@ -80,10 +82,10 @@ További tájékoztatás az egyes régiók sötét óráiról: [Mi a tervezett k
 
 | Station | Régiók | Befejeződött ütemezés| Közelgő e-box ütemezése
 |---|---|---|---|
-| 1. állomás | Kanada központi, Kanada-Kelet, Franciaország központi, India Központi, Norvégia-Kelet, Svájc - Nyugat | 2022. szeptember 15-től 2022. szeptember 18-ig és szeptember 19-ig 2022. szeptember 22-ig. | 2022. október 7. – október 10. |
-| 2. állomás | Franciaország, Dél-, India, Nyugat-Norvégia, Svájc, Észak-Afrika, Észak-Afrika, Ausztrália-Kelet, Egyesült Királyság, Észak-Egyesült Arab Emírségek, Japán-kelet, Ausztrália Dél-Kelet, Dél-Kelet-Ázsia | 2022. szeptember 25–szeptember 28. | 2022. október 7. – október 10. |
-| 3. állomás | Kelet-Ázsia, Egyesült Államok, Nyugat-Japán, Brazília Dél-, Nyugat-Európa, Kelet-Egyesült Államok, Egyesült Arab Emírségek Központi | 2022. szeptember 26-tól 29-ig | 2022. október 7. – október 10. |
-| 4. állomás | Észak-Európa, Közép-Usa, Nyugat-Usa | 2022. szeptember 28., október 1. | 2022. október 7. – október 10. |
+| 1. állomás | Kanada központi, Kanada-Kelet, Franciaország központi, India Központi, Norvégia-Kelet, Svájc - Nyugat | 2022. szeptember 15-től 2022. szeptember 18-ig, 2022. szeptember 19-ig és október 7-ig, 2022. október 10-ig. | Október 25. – 2022. október 28. |
+| 2. állomás | Franciaország, Dél-, India, Nyugat-Norvégia, Svájc, Észak-Afrika, Észak-Afrika, Ausztrália-Kelet, Egyesült Királyság, Észak-Egyesült Arab Emírségek, Japán-kelet, Ausztrália Dél-Kelet, Dél-Kelet-Ázsia | 2022. szeptember 25-től 2022. szeptember 28-ig és október 7-ig, 2022. október 10-ig. | Október 25. – 2022. október 28. |
+| 3. állomás | Kelet-Ázsia, Egyesült Államok, Nyugat-Japán, Brazília Dél-, Nyugat-Európa, Kelet-Egyesült Államok, Egyesült Arab Emírségek Központi | 2022. szeptember 26-tól 2022. szeptember 29-ig és október 7-ig, 2022. október 10-ig. | Október 25. – 2022. október 28. |
+| 4. állomás | Észak-Európa, Közép-Usa, Nyugat-Usa | 2022. október 1., szeptember 28. és október 7. között, 2022. október 10-ig. | Október 25. – 2022. október 28. |
 | 5. állomás | DoD, Kormányzati közösség felhő, Kína | Nem ütemezett | Nem ütemezett |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktív minőségfrissítés kiadása: 10.0.29

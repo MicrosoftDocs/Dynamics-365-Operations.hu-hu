@@ -2,7 +2,7 @@
 title: Helyutasítások kezelése
 description: Ez a témakör a helyi irányelvekről szóló útmutatót ismerteti. A helyutasítások olyan a felhasználó által megadott szabályok, melyek segítik a kitárolási és betárolási helyek meghatározását a készletmozgatáshoz.
 author: Mirzaab
-ms.date: 11/13/2020
+ms.date: 09/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ef8ec0732cd3bd50bca8d334c43d0354e9e3316
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903695"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689666"
 ---
 # <a name="work-with-location-directives"></a>Helyutasítások kezelése
 
@@ -47,6 +47,20 @@ Mielőtt helyutasítási műveletet hozhatna létre, követnie kell az alábbi l
 1. Helyek, helytípusok, helyprofilok és helyformátumok létrehozása. A további tudnivalókért lásd: [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Helyek, zónák és zónacsoportok létrehozása. A további tudnivalókért lásd: [Raktár beállításai](../../commerce/channels-setup-warehouse.md) és [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](./tasks/configure-locations-wms-enabled-warehouse.md).
 
+## <a name="turn-the-location-directive-scopes-feature-on-or-off"></a><a name="scopes-feature"></a> A Helyi irányelv hatókörei szolgáltatás be- és kikapcsolása
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+A *Helyi utasítások hatókörei* szolgáltatás több csökkentést biztosít a helyi irányelvek tervezése során, és megkönnyíti a felesleges konfigurációk csökkentését. Hozzáad egy Hatókör **lehetőséget**, amely felülírja az **előző több ás változat beállítását**. **Míg a több kumentés** *·* *beállítás* csak Igen vagy Nem beállításra lehet beállítani, **a** Hatókörök beállítás nem csak ezt a két beállítást biztosítja (*·* *az* egy cikk és a több cikk értéke révén), hanem kettő továbbit is (*·* *egyetlen* cikken vagy rendelésen és a Minden értéken keresztül). Ezekről a beállításokról a Hely [irányelvek gyors lapon található további tájékoztatás](#location-directives-tab).
+
+Ha engedélyezve van, **·** **a** Hatókör beállítás 100 százalékban kompatibilis a meglévő konfigurációkval.
+
+A funkció használatához be kell kapcsolnia a rendszeren. A rendszergazdák a szolgáltatáskezelési [beállítások](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) segítségével ellenőrizhetik a funkció állapotát, és be- és kikapcsolhatja őket. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+
+- **Modul:** *Raktárkezelés*
+- **Funkciónév: Helyi** *irányelv hatókörei*
+
 ## <a name="work-order-types-for-location-directives"></a>A helyutasítások munkarendelés-típusai
 
 A helyutasításokhoz beállítható mezők közül sok minden munkarendelés-típusban közös. Más mezők azonban adott munkarendelés-típusokra jellemzőek.
@@ -68,7 +82,7 @@ Az alábbi táblázat az összes munkarendelés-típusra közös mezőket sorolj
 | Helyutasítások | Hely |
 | Helyutasítások | Raktár |
 | Helyutasítások | Utasításkód |
-| Helyutasítások | Több raktározási egység |
+| Helyutasítások | Hatókör *vagy több* ásó. |
 | Sorok | Sorszám |
 | Sorok | Forrásmennyiség |
 | Sorok | Záró mennyiség |
@@ -117,7 +131,9 @@ A **Helyutasítások** oldal Művelet ablaktáblája olyan gombokat tartalmaz, a
 
 - **Mozgatás felfelé** – A kijelölt helyutasítás feljebb mozgatása a sorrendben. Áthelyezheti például a 4-es sorszámról a 3-as sorszámra.
 - **Mozgatás lefelé** – A kijelölt helyutasítás lejjebb mozgatása a sorrendben. Áthelyezheti például a 4-es sorszámról a 5-as sorszámra.
+- **Másolás** – megnyit egy párbeszédpanelt, ahol pontos másolatot készíthet az aktuális helyről.
 - **Lekérdezés szerkesztése** – Nyisson meg egy párbeszédpanelt, ahol meghatározhatja azokat a feltételeket, amelyek alatt a kiválasztott helyutasítást fel kell dolgozni. Előfordulhat például, hogy csak egy adott raktárra szeretné alkalmazni.
+- **Elfogadási tesztek** – megnyithat egy oldalt, ahol automatikus teszteket állíthat be annak meghatározására, hogy hogyan fognak megfelelőek a helyszavai irányelvek különböző kezdő körülmények között. Ily módon az irányelvek létrehozása és karbantartása során gyorsan érvényesíteni lehet az irányelveket. További tudnivalókat az elfogadási tesztekkel [kapcsolatos helyi irányelvek tesztelése tartalmaz](location-directive-acceptance-tests.md).
 
 ## <a name="location-directives-header"></a>Helyutasítások fejléce
 
@@ -126,7 +142,7 @@ A helyutasítás fejléce a következő mezőket tartalmazza a helyutasítás so
 - **Sorszám** – Ez a mező azt a sorrendet jelzi, amelyben a rendszer megpróbálja alkalmazni az egyes helyirányelveket a kiválasztott munkarendelés-típusra. Először az alacsony számokat alkalmazza a program. A sorrendet a Művelet panel **Mozgatás felfelé** és **Mozgatás lefelé** gombjaival módosíthatja.
 - **Név** – Írja be a helyutasítás leíró nevét. Ennek a névnek segítenie kell az irányelv általános céljának azonosítását. Írja be például az *Értékesítési rendelés kitárolása a 24-es raktárban*.
 
-## <a name="location-directives-fasttab"></a>Helyutasítások gyorslapja
+## <a name="location-directives-fasttab"></a><a name="location-directives-tab"></a>Helyutasítások gyorslapja
 
 A **Helyutasítások** gyorslap mezői a listaablak **Munkarendelés típusa** mezőjében kiválasztott munkarendelés-típusra vonatkoznak.
 
@@ -145,7 +161,29 @@ A **Helyutasítások** gyorslap mezői a listaablak **Munkarendelés típusa** m
     > [!TIP]
     > Ha egy utasításkód meg van adva, amikor szükség van egy munka létrehozására, a rendszer nem fog helyutasításokat fog keresni a sorszám alapján. Ehelyett utasításkód szerint fog keresni. Ilyen módon pontosabban kezelheti a helyutasításokat, melyek a munkasablonok adott lépéseként használatosak, mint például az anyagok előkészítése az egyes lépésekhez.
 
-- **Több SKU** – Állítsa ezt a lehetőséget *Igen* értékre, a több termékváltozat (SKU) funkció használatához egy adott helyen. Például több termékváltozatot kell engedélyezni a raktárajtó helyhez. Ha több termékváltozatot engedélyez, a betárolási hely a várt módon meg lesz adva a munkában. A betárolási hely azonban csak egy többcikkes betárolást képes kezelni (ha a munka különböző termékváltozatokat tartalmaz, amelyeket ki és be kell tárolni). Nem lesz képes kezelni egy termékváltozatos betárolást. Ha ezt a beállítást *Nem* értékre állítja, a betárolási hely csak akkor lesz megadva, ha a betárolás csak termékváltozattal rendelkezik.
+- **Hatókör** – ezzel a beállítással megadhatja, hogy mely helyzetekre alkalmazza a rendszer a hely irányelvet. Ez a beállítás helyettesíti **a Több változat** *lehetőséget, és csak akkor érhető el, ha a rendszerben be van kapcsolva a Helyi* irányelv hatókörei szolgáltatás. (További tájékoztatás: [A Helyi irányelv hatókörei szolgáltatás be- és kikapcsolása](#scopes-feature).)
+
+    | Hatókör beállítása | Egyetlen rendelés egy cikkből | Több rendelés ugyanazokkal a cikkekkel | Egyetlen rendelés több cikkből | Több rendelés több cikkből |
+    |---|---|---|---|---|
+    | Egyetlen cikk | Igen | Igen | Nem | Nem |
+    | Több cikk | Nem | Nem | Igen | Igen |
+    | Egyetlen cikk vagy rendelés | Igen | Igen | Igen | Nem |
+    | Minden | Igen | Igen | Igen | Igen |
+
+    A következő táblázat leírja, hogy mikor érhetők el a hatókörök, és hogy engedélyezik-e a **Lekérdezés szerkesztése funkciót**.
+
+    | Hatókör | Támogatott munkatípus | Támogatott munkarendeléstípusok | Lehetővé teszi a Lekérdezés szerkesztése lehetőséget |
+    |---|---|---|---|
+    | Egyetlen cikk | Minden | Minden | Igen |
+    | Több cikk | Minden | Minden | Nem |
+    | Egyetlen cikk vagy rendelés | Hozza | Társtermék és társtermék berakodása, késztermékek berakodása, kanban besz., beszerzési rendelések, minőségi rendelések, feltöltés, visszárurendelések, értékesítési rendelések, áthozott kiadás és átátviteli bevételezés | Igen |
+    | Minden | Hozza | Minden | Nem |
+
+    > [!NOTE]
+    > - Ha egyszerre több cikkhez és egyes cikkekhez is be lehet tenni, gondoskodni kell arról, hogy mindkét helyzetet lefedő hely-irányelvek léteznek. Beállíthatja például, *hogy* egy vagy több cikk- vagy rendelési helyi irányelvet állítson be a finomhangolást igénylő helyzetekre (például a lekérdezésen keresztüli szerkesztéssel), *majd* egy vagy több helyi irányelv a hátralévő helyzetek lefedése érdekében.
+    > - Bár *a berakodható* *egy* cikk és több cikk-hatókör, ez a megközelítés általában redundáns konfigurációkhoz vezet. Fontolja meg az *Egy cikk vagy rendelés* és az *Összes* hatókör használatának a beállítását, mivel ez a megközelítés előállít egy beállításokat.
+
+- **Több változat** – ezzel a beállítással megadhatja, hogy a hely irányelv alkalmazása esetén mi a helyzet. Ha a rendszerben **be** *van kapcsolva a Helyi irányelv hatókörei* szolgáltatás, a beállítás helyére a Hatókör beállítás lép. (További tájékoztatás: [A Helyi irányelv hatókörei szolgáltatás be- és kikapcsolása](#scopes-feature).) A hely több *raktározási* egységének (SKUs) engedélyezéséhez állítsa Igen beállításra. Például több termékváltozatot kell engedélyezni a raktárajtó helyhez. Ha több termékváltozatot engedélyez, a betárolási hely a várt módon meg lesz adva a munkában. A betárolási hely azonban csak egy többcikkes betárolást képes kezelni (ha a munka különböző termékváltozatokat tartalmaz, amelyeket ki és be kell tárolni). Nem lesz képes kezelni egy termékváltozatos betárolást. Ha ezt a beállítást *Nem* értékre állítja, a betárolási hely csak akkor lesz megadva, ha a betárolás csak termékváltozattal rendelkezik.
 
     > [!IMPORTANT]
     > Ahhoz, hogy többcikkes és egy termékváltozatú betárolások is végrehajthatók legyenek, két azonos szerkezetű és beállítású sort kell megadnia, de a **Több termékváltozat** beállítást *Igen* értékre kell állítania az egyik sorban, és *Nem* értékre a másiknál. Ezért a betárolási műveletekhez két azonos helyutasítás szükséges, még akkor is, ha nem kell különbséget tennie az egy vagy több termékváltozat között egy munkaazonosítón. Gyakran előfordul, hogy ha nem állítja be mindkét helyutasítást, a váratlan üzleti folyamatok helyszínei az alkalmazott helyutasításból származnak. Hasonló beállítást kell használnia a **Munkatípus** *kitárolással* rendelkező utasítások esetében, ha több termékváltozatot tartalmazó rendeléseket kell feldolgoznia.
@@ -255,6 +293,5 @@ Miután helyutasításokat hozott létre, összekapcsolhat minden utasításkód
 
 - Videó: [Raktárkezelési konfiguráció teljes részletességgel](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Súgócikk: [A raktári munka vezérlése munkasablonok és helyi irányelvek segítségével](control-warehouse-location-directives.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

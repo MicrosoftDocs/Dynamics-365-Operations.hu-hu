@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: d894b83afe822e013c0c4375e5cfe5e7e8ac8d1d
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186588"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689488"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Igényvezérelt anyagigény-tervezés (DDMRP) – áttekintés
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 A vállalatok éveken át anyagigény-tervezést (MRP) használnak a termék gyártásához szükséges anyagok és összetevők számításához. Azonban az ellátási lánc megváltozott. Az alkatrészeknek hosszabb az átfutási időük, mert a túlról származó adatforrások. Emiatt sok vállalatnál jelentették, hogy készlettúllépést vagy készlettúllépést tapasztalt, mivel nem tudja, hogy mennyi készlet van készleten. A piaci ingadozások is nagyobbak (időnként nem pontos előrejelzés), és a vevők rövid átfutási idő alatt leigénylik a termékeket. Ebből következően az ellátási láncból hiányok vannak az egész világon belül. Ezenkívül az MRP-eszközök gyakran több ezresnyi műveletet adnak a tervezőnek. Ezért nehéz tudni, hogy mire kell fókuszálni. Gyakran az a megoldás, hogy a problémák nagy része az igényvezérelt anyagigény-tervezésre (DDMRP) vált.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b868db915385a8433845e810cf169f1bf1686e3d
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845374"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682872"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Szállítói kifizetések készítése fizetési javaslat segítségével
 
@@ -111,7 +111,7 @@ A Dimenzió vezérlőelem lehetővé teszi a fizetési javaslat alapján létreh
 -   A **Dimenzió vezérlőelem** mező aktiválva van a dimenziók további meghatározása nélkül. A fizetési javaslatot a rendszer a dimenziók figyelmen kívül hagyásával hozza létre. A létrehozott tranzakció nem örököl dimenziókat a kiegyenlített tételből.
 -   A **Dimenzió vezérlőelem** mező aktiválva van, és a további dimenziók engedélyezve vannak. Most definiálhatja, hogy másolja át a dimenziókat a program a naplóba. Például • Ha az üzleti egység szerinti fizetési javaslatot szeretne létrehozni a fizetési módra vonatkozóan, jelölje be **BusinessUnit** jelölőnégyzetet, • Ha költséghely szerinti fizetési javaslatot szeretne létrehozni a fizetési módra vonatkozóan, jelölje be a **CostCenter** jelölőnégyzetet
 
-> [[!NOTE]
+>[!NOTE]
 > Ha a harmadik lehetőségnél több dimenziót jelöl ki, a dimenziók kombinációjára vonatkozó fizetési javaslat jön létre.
 
 #### <a name="bank-account-selection"></a>Bankszámla kiválasztása

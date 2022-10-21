@@ -2,7 +2,7 @@
 title: Az adószámítás első lépései
 description: Ez a cikk bemutatja az adószámítás beállítását.
 author: EricWangChen
-ms.date: 03/25/2022
+ms.date: 10/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 42898823ffc366351c6f58f1fe9b924678ab4b49
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573305"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690383"
 ---
 # <a name="get-started-with-tax-calculation"></a>Az adószámítás első lépései
 
@@ -124,6 +124,10 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
 7. Válassza az **Adóadatok modell** lehetőséget, bontsa ki a fájlfát, majd válassza az **Adókonfiguráció** lehetőséget.
 8. Válassza ki a megfelelő adókonfigurációs [verziót](global-tax-calcuation-service-overview.md#versions) a Pénzügy verzió alapján, majd válassza az Importálás **lehetőséget**.
 9. A **Globalizációs funkciók** munkaterületen válassza a **Funkciók** lehetőséget, majd jelölje ki az **Adószámítás** lapot, és válassza a **Hozzáadás** lehetőséget.
+
+    > [!NOTE]
+    > A 10.0.26-os **és újabb verziókban a DEMF** bemutató jogi személy bemutató szolgáltatása importálható. A további tudnivalókat lásd a Bemutatóadatok [importálása funkcióval kapcsolatban](tax-calculation-import-export-feature.md).
+
 10. Válassza ki az alábbi szolgáltatástípusok valamelyikét:
 
     - **Új funkció** – Hozzon létre egy üres tartalmú funkcióbeállítást.
@@ -154,8 +158,8 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
     - **Szállítói adóregisztrációs szám alkalmazhatósága** - Ha egy szállítóhoz több adóregisztrációs szám tartozik, az Adószámítás automatikusan meghatározza a helyes adóregisztrációs számot. Az ezen a lapon található mátrixban határozza meg a meghatározáshoz használandó szabályokat. Ellenkező esetben a Finance és a Supply Chain Management továbbra is az adóköteles dokumentumok alapértelmezett adószámát használja a vásárlási tranzakciókhoz.
     - **Listakód alkalmazhatósága** - A **Listakód** mező értékének automatikus meghatározása rugalmasabb és konfigurálhatóbb szabályok segítségével. Az ezen a lapon található mátrixban határozza meg a meghatározáshoz használandó szabályokat. Ellenkező esetben a Finance és a Supply Chain Management továbbra is az adóköteles dokumentumok alapértelmezett kódját használja.
 
-14. Az **Adókódok** lapon válassza a **Hozzáadás** lehetőséget, és adja meg az adókódot és a leírást.
-15. Válassza az **Adózási összetevő** lehetőséget. Az adózási összetevő a kiválasztott adózási konfiguráció előző verziójában definiált módszerek csoportja. A következő adózási összetevők állnak rendelkezésre:
+15. Az **Adókódok** lapon válassza a **Hozzáadás** lehetőséget, és adja meg az adókódot és a leírást.
+16. Válassza az **Adózási összetevő** lehetőséget. Az adózási összetevő a kiválasztott adózási konfiguráció előző verziójában definiált módszerek csoportja. A következő adózási összetevők állnak rendelkezésre:
 
     - Nettó összeg alapján
     - Bruttó összeg alapján
@@ -163,8 +167,8 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
     - Árrés alapján
     - Adó az adón
 
-16. Válassza a **Mentés** lehetőséget. A kiválasztott adózási összetevő alapján további mezők válnak elérhetővé.
-17. Az áfakód jellegének azonosításához használja a következő beállításokat:
+17. Válassza a **Mentés** lehetőséget. A kiválasztott adózási összetevő alapján további mezők válnak elérhetővé.
+18. Az áfakód jellegének azonosításához használja a következő beállításokat:
 
     - Mentességet élvez
     - Használati adó
@@ -179,8 +183,8 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
 
     Adómértékek és az adóösszeg-korlátok karbantartása ehhez az adókódhoz.
 
-18. Ismételje meg a 14.–17. lépéseket az összes szükséges adókód hozzáadásához.
-19. Az **Adócsoport** lapon jelölje ki az **Adócsoport** oszlopot, adja hozzá a mátrixhoz bemeneti feltételként, majd adjon hozzá sorokat az adócsoport törzsadatok karbantartásához.
+19. Ismételje meg a 15.–18. lépéseket az összes szükséges adókód hozzáadásához.
+20. Az **Adócsoport** lapon jelölje ki az **Adócsoport** oszlopot, adja hozzá a mátrixhoz bemeneti feltételként, majd adjon hozzá sorokat az adócsoport törzsadatok karbantartásához.
 
     Íme, egy példa.
 
@@ -191,7 +195,7 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
     | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
-20. A **Tételadó-csoport** lapon jelölje ki a **Tételadó-csoport** oszlopot, adja hozzá a mátrixhoz bemeneti feltételként, majd adjon hozzá sorokat a tételadó-csoport törzsadatok karbantartásához.
+21. A **Tételadó-csoport** lapon jelölje ki a **Tételadó-csoport** oszlopot, adja hozzá a mátrixhoz bemeneti feltételként, majd adjon hozzá sorokat a tételadó-csoport törzsadatok karbantartásához.
 
     Íme, egy példa.
 
@@ -200,7 +204,7 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
     | Teli           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
     | Csökkentett        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
 
-21. Az **Adócsoport alkalmazhatósága** lapon jelölje ki a megfelelő adócsoport meghatározásához szükséges oszlopokat, majd válassza a **Hozzáadás** gombot. Adja meg vagy válassza ki az egyes oszlopok értékeit. Az **adócsoport** mező lesz ennek a mátrixnak a kimenete. Ha ez a lap nincs beállítva, akkor a tranzakciósoron lévő forgalmiadó-csoportot kell használni.
+22. Az **Adócsoport alkalmazhatósága** lapon jelölje ki a megfelelő adócsoport meghatározásához szükséges oszlopokat, majd válassza a **Hozzáadás** gombot. Adja meg vagy válassza ki az egyes oszlopok értékeit. Az **adócsoport** mező lesz ennek a mátrixnak a kimenete. Ha ez a lap nincs beállítva, akkor a tranzakciósoron lévő forgalmiadó-csoportot kell használni.
 
     Íme, egy példa.
 
@@ -214,7 +218,7 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
     > [!NOTE]
     > Ha az adóköteles bizonylatsorok alapértelmezett áfacsoportja helyes, akkor hagyja üresen ezt a mátrixot. A további tudnivalókat lásd [a cikk Futásidejű](#runtime) terv részében.
 
-22. A **Tétel adócsoport alkalmazhatósága** lapon jelölje ki a helyes adókód meghatározásához szükséges oszlopokat, majd válassza a **Hozzáadás** gombot. Adja meg vagy válassza ki az egyes oszlopok értékeit. Ennek a mátrixnak a kimenete a **tételadó-csoport** mező lesz. Ha ez a lap nincs beállítva, akkor a tranzakciósoron lévő tétel forgalmi adócsoportját kell használni.
+23. A **Tétel adócsoport alkalmazhatósága** lapon jelölje ki a helyes adókód meghatározásához szükséges oszlopokat, majd válassza a **Hozzáadás** gombot. Adja meg vagy válassza ki az egyes oszlopok értékeit. Ennek a mátrixnak a kimenete a **tételadó-csoport** mező lesz. Ha ez a lap nincs beállítva, akkor a tranzakciósoron lévő tétel forgalmi adócsoportját kell használni.
 
     Íme, egy példa.
 
@@ -228,10 +232,10 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
 
     Az adókódok Adószámításban történő meghatározásáról további információt az [Értékesítési adócsoport és tétel értékesítési adócsoport meghatározási logikája](global-sales-tax-group-determination.md) című témakörben talál.
 
-23. Állítsa be a vevői adóregisztrációs számok, a szállítói adóregisztrációs számok és a listakódok alkalmazhatóságát az üzleti igények alapján.
-24. Válassza a **Mentés** gombot, majd zárja be az oldalt.
-25. Válassza az **Állapot módosítása** \> **Teljes** lehetőséget. Ha az állapot **Kész** állapotúra változik, akkor a verzió már nem szerkeszthető.
-26. Válassza az **Állapot módosítása** \> **Közzététel** lehetőséget. Az adófunkció beállításnak ez a verziója a globális tárházba lesz felküldve, és a Finance-ban minden jogi személy számára látható lesz.
+24. Állítsa be a vevői adóregisztrációs számok, a szállítói adóregisztrációs számok és a listakódok alkalmazhatóságát az üzleti igények alapján.
+25. Válassza a **Mentés** gombot, majd zárja be az oldalt.
+26. Válassza az **Állapot módosítása** \> **Teljes** lehetőséget. Ha az állapot **Kész** állapotúra változik, akkor a verzió már nem szerkeszthető.
+27. Válassza az **Állapot módosítása** \> **Közzététel** lehetőséget. Az adófunkció beállításnak ez a verziója a globális tárházba lesz felküldve, és a Finance-ban minden jogi személy számára látható lesz.
 
 ## <a name="set-up-tax-calculation-in-dynamics-365"></a>Adószámítás beállítása a Dynamics 365-ben
 

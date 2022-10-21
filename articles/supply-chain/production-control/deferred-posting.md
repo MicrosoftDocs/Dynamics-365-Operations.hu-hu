@@ -1,5 +1,5 @@
 ---
-title: A késztermékek fizikai elérhetővé teése a naplóba történő feladás előtt
+title: Késztermékek ténylegesen elérhetővé tétele a naplókba való feladás előtt
 description: Amikor egy legyártott cikket készként jelent, a rendszer további fizikai feldolgozásra elérhetőként regisztrálja, és egy vagy több naplót felad. Ez a témakör azt ismerteti, hogyan lehet elhalasztva a naplófeladásokat, lehetővé téve, hogy egy üzenet-várólistán lévő kötegelt feladat feldolgozta őket.
 author: johanhoffmann
 ms.date: 08/02/2022
@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-08-02
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7a8327552d9e6c38721fdac9ee1795e61f90f329
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: ee767a5d7c3dca2681861802ae42d7a07217c54d
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266499"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689340"
 ---
-# <a name="make-finished-goods-physically-available-before-posting-to-journals"></a>A késztermékek fizikai elérhetővé teése a naplóba történő feladás előtt
+# <a name="make-finished-goods-physically-available-before-posting-to-journals"></a>Késztermékek ténylegesen elérhetővé tétele a naplókba való feladás előtt
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Amikor egy dolgozó készként jelenti a legyártott cikket, a rendszer azt további fizikai feldolgozásra (például szállításra vagy beszállításra) regisztrálja. A folyamat során egy vagy több naplót is felad a rendszer (például a készként jelentés naplóját, a kitárolási lista naplóját és az útvonalkártya-naplót). Ha az összes feladás feldolgozása előtt a cikkeket fizikailag elérhetővé szeretné tenni, be lehet állítani, hogy a rendszer halasztja a naplófeladásokat. A halasztott feladásokat ezután egy kötegelt feladat kezeli, amely a feladásokat a rendszererőforrások által megengedettként fogja feldolgozni.
 
@@ -85,7 +86,7 @@ Az üzenetfeldolgozó kötegelt feladata felelős a naplófeladások feldolgozá
 
 1. Ugrás a Rendszerfelügyelet **üzenetfeldolgozó \> üzenetfeldolgozóhoz \>**
 1. A Paraméterek **gyors** területen állítsa **az Üzenetsor** mezőt Termelés *beállításra*.
-1. A háttérben **futó gyorslapon** állítsa **a Kötegelt feldolgozás** beállítást Igen *beállításra*. Ezután állítson be ismétlődő ütemezést, és szükség szerint konfigurálja az egyéb beállításokat. A beállítások pont úgy működnek, mint a [Microsoft egyéb háttér-feladattípusokkal](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).Dynamics 365 Supply Chain Management
+1. A háttérben **futó gyorslapon** állítsa **a Kötegelt feldolgozás** beállítást Igen *beállításra*. Ezután állítson be ismétlődő ütemezést, és szükség szerint konfigurálja az egyéb beállításokat. A beállítások pont úgy működnek, mint a [Microsoft egyéb háttér-feladattípusokkal](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md)Dynamics 365 Supply Chain Management.
 
 ## <a name="track-the-progress-of-your-deferred-postings"></a>A halasztott feladások folyamatának követése
 

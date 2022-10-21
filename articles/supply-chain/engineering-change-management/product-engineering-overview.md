@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: a01dfd72428c75d1bb24f32c73c9c799a6c5017e
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334865"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682506"
 ---
 # <a name="engineering-change-management-overview"></a>Tervezési változáskezelés áttekintése
 
@@ -73,6 +73,9 @@ Ezután kapcsolja be a konfigurációs kulcsokat a következő lépések végreh
 1. Az adatbázist szinkronizálni kell, hogy a konfigurációs kulcsok megfelelően frissülve tükrözzék a módosításokat. Tegye a következő lépések valamelyikét attól függően, hogy milyen típusú környezeten dolgozik:
     - **1. rétegbeli (fejlesztői) környezetek esetén**: nyissa meg a projektet a Microsoft Visual Studio **programban, majd válassza a Dynamics 365 \> Szinkronizálás az adatbázis szinkronizálása \> lehetőséget**.
     - **2. rétegbeli (és magasabb)** környezetek esetén: Az adatbázis automatikusan szinkronizál, miután a környezetet betette a karbantartási üzemmódba, és ki van lépni a karbantartási üzemmódból, így ezt a lépést kihagyhatja.
+
+> [!NOTE]
+> A műszaki változáskezelés használata esetén az anyagjegyzék számsorozatát és a receptúra számsorozatát is Automatikus beállításra kell állítani *a* **Számsorozatok** lapon.
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>A rendszer további tervezési változáskezelési funkcióinak bekapcsolása
 

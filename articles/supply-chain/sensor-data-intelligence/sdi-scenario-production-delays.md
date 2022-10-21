@@ -1,5 +1,5 @@
 ---
-title: A termelés késleltetési esete
+title: A termelés késéseinek forgatókönyve
 description: Ez a témakör leírja a termelés késleltetési esetét, amely figyelmeztetést generál, ha a termelés termelési teljesítmény egy meghatározott küszöbérték alá esik.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 073762581d84646ba12b570e57327b7cab8efd3b
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 25ccbda1628544f14dc32d9bea3f2162ad47d79e
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428976"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690021"
 ---
-# <a name="the-production-delays-scenario"></a>A termelés késleltetési esete
+# <a name="the-production-delays-scenario"></a>A termelés késéseinek forgatókönyve
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 A *termelési késleltetési eset* figyelmeztetést generál, ha a termelés termelési teljesítményére egy meghatározott küszöbérték alá esik. Ebben az esetben minden előállított *cikkhez* Microsoft Azure egy rész-/out jel küldik a Hubba. Dynamics 365 Supply Chain Management A rendelési késleltetés számítása a termelési rendelés futtatására ütemezett idő, a termelni szükséges cikkek száma, *a* feladat futásának ideje és a kapott részmennyiség alapján történik. Késleltetett értesítés jön létre, *ha a feladatra vonatkozó rész-/kijelzők* száma a küszöbérték alá esik.
 

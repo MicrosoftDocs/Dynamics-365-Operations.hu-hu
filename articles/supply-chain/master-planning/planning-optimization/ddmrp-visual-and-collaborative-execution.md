@@ -1,5 +1,5 @@
 ---
-title: Vizuális és jóslék végrehajtása
+title: Vizuális és együttműködési végrehajtása
 description: Ez a témakör azt ismerteti, hogyan lehet figyelni az igényvezérelt anyagigény-tervezés (DDMRP) adatkeresési pontokat, pufferzónákat, tervezett rendeléseket és előzményeket.
 author: t-benebo
 ms.date: 06/30/2022
@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: e3afdd10860494b3cfe73a113a0e4e8fb07682a1
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186568"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689776"
 ---
-# <a name="visual-and-collaborative-execution"></a>Vizuális és jóslék végrehajtása
+# <a name="visual-and-collaborative-execution"></a>Vizuális és együttműködési végrehajtása
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Ez a témakör azt ismerteti, hogyan lehet figyelni az igényvezérelt anyagigény-tervezés (DDMRP) adatkeresési pontokat, pufferzónákat, tervezett rendeléseket és előzményeket.
 

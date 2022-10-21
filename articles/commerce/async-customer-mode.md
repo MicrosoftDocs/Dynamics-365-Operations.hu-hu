@@ -2,19 +2,19 @@
 title: Aszinkron vevőlétrehozási mód
 description: Ez a témakör az aszinkron vevő-létrehozási módot írja le a Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 95102936871e15f8e525abca736fa75927569b34
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: b2926339021991f87dd3eadef94da3b500c954cf
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473706"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690289"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Aszinkron vevőlétrehozási mód
 
@@ -46,6 +46,7 @@ Annak érdekében, hogy a szervezetek az aszinkron vevő-létrehozási módot ha
 | Paritás engedélyezése a szinkron és az aszinkron vevő létrehozása között. | 10.0.24 és később | <p>Funkciógomb: **Az async Customer továbbfejlesztett létrehozásának engedélyezése**</p><p>Funkció részletei: További adatok, például a cím, az alapértelmezett vevő beosztásai és a másodlagos kapcsolattartási adatok (telefonszám és e-mail cím) rögzítésének képessége a vevők aszinkron létrehozása közben.</p> |
 | Felhasználóbarát hibaüzenetek | 10.0.28 és később | Ezek a teljesítményjavító funkciók segítik a felhasználóbarát hibaüzeneteket, ha a felhasználó nem tudja azonnal szerkeszteni az adatokat a szinkronizálás feldolgozása közben. A fejlesztések engedélyezéséhez **a Commerce webhelyszerkesztő Webhely-beállítási bővítményeinél megadott Async Customer-beállításokkal** **\>** bizonyos felhasználói felületi elemeket nem lehet módosítani. |
 | A vevői adatok aszinkron szerkesztésének képessége | 10.0.29 és később | <p>Funkciógomb: **Vevők aszinkron módban való szerkesztésének engedélyezése**</p><p>Funkció részletei: A vevői adatok aszinkron szerkesztésének képessége</p><p>Az aszinkron [vevői adatok aszinkron szerkesztésével kapcsolatos gyakori kérdésekre adott válaszokért lásd az aszinkron vevő-létrehozási mód gyakran ismételt kérdéseit](async-customer-mode-faq.md).</p> |
+| A vevőkezelési műveletek szinkronizálásának naplózási képessége | 10.0.31 és később | Ez a továbbfejlesztés lehetővé teszi a felhasználók számára a Commerce Headquarters ügyfélkezelési műveleteinek szinkronizálását. Lehetőséget ad a felhasználóknak arra is, hogy szükség esetén módosításokat eszközlnek, és szinkronizálják az adatokat. |
 
 ### <a name="feature-switch-hierarchy"></a>Funkcióváltás hierarchiája
 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
-ms.openlocfilehash: 7e3a22f43bcc312fe60b77db2fc3bc94d15950c5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8912409ec0d2016ea4af12843319febda98663c5
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284851"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680384"
 ---
 # <a name="reverse-journal-posting"></a>Fordított naplófeladás
 
@@ -37,7 +37,7 @@ A jelen cikk leírásában ismertetett egyik funkció használata előtt be kell
 A naplósorok egyenként is sztornírozhatók. A sztornírozási naplófeladással a teljes pénzügyi naplót is sztornírozhatja. Napló sztornírozása: 
 
 - Szűrje a feladott naplókat, és nyissa meg a napló **Sorok** nézetét.
-- Kattintson a képernyő felső részén lévő **Sztornírozás** menüre.
+- Válassza a **Teljes napló sztorníroza** menüt az oldal tetején.
 - Megjelenik a bizonylatok és a bizonylatsorok teljes száma, valamint a sztornírozott sorok teljes összege.
 - Válassza az **Igen** lehetőséget, ha a meglévő tranzakciós dátumokat szeretné használni, vagy a **Nem** lehetőséget új beírásához. Bizonyos esetekben előfordulhat, hogy az eredeti tranzakció időszaka le van zárva, és új tranzakció dátumát kell megadni a sztornírozáshoz.
 - Ha a **Nem** beállítást választja, adjon meg egy tranzakciós dátumot a sztornírozáshoz. 

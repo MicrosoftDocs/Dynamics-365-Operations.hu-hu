@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d5ded4b08d562fff9ec5fd9a3de591f944e3ee0
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853496"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682898"
 ---
 # <a name="cost-control-workspace"></a>Költségellenőrzési munkaterület 
 
@@ -53,7 +53,7 @@ Az **Adatszűrés** gyorslapon meghatározhatja a jelentés adatbeli alapjait. A
 |-------------------------------------------------------------------|-------------|
 | Költségkönyvelési főkönyv                                            | A **Költségkönyvelési főkönyv**, amely a jelentés alapjául szolgál. Az érték a **Költség-ellenőrzőegység** mezőből származik. |
 | Költség-ellenőrzőegység                                                 | A kiválasztott érték határozza meg a költségszámítási könyvelést és a költségelemeket, amelyekre ez a jelentés alapul. |
-| Statisztikai dimenzióhierarchia, költségösszetevődimenzió-hierarchia | A **Költségellenőrzés** munkaterületen konfigurációs rekord nem pénzbeli vagy monetáris értékeit is is lehet jelenteni, de nem ugyanaz az elrendezés. Válasszon ki egy értéket a **elem dimenzióhierarchia költség** mezőben monetáris értékek jelentéséhez. Válasszon ki egy értéket a **Statisztikai dimenzióhierarchia költség** mezőben nem monetáris értékek jelentéséhez. A kiválasztott dimenzióhierarchia-rekord határozza meg a jelentési és összesítési szintek szerkezetét.<blockquote>[!NOTE]<br>A nem monetáris és pénzbeli értékek egymás melletti megtekintéséhez exportálhat adatokat Microsoft Excel programba és a Microsoft Power BI tartalomcsomagba.</blockquote> |
+| Statisztikai dimenzióhierarchia, költségösszetevődimenzió-hierarchia | A **Költségellenőrzés** munkaterületen konfigurációs rekord nem pénzbeli vagy monetáris értékeit is is lehet jelenteni, de nem ugyanaz az elrendezés. Válasszon ki egy értéket a **elem dimenzióhierarchia költség** mezőben monetáris értékek jelentéséhez. Válasszon ki egy értéket a **Statisztikai dimenzióhierarchia költség** mezőben nem monetáris értékek jelentéséhez. A kiválasztott dimenzióhierarchia-rekord határozza meg a jelentési és összesítési szintek szerkezetét.<blockquote>**MEGJEGYZÉS:**<br>A nem monetáris és pénzbeli értékek egymás melletti megtekintéséhez exportálhat adatokat Microsoft Excel programba és a Microsoft Power BI tartalomcsomagba.</blockquote> |
 | Költségobjektum-dimenzióhierarchia      | Válassza ki a költségobjektum-dimenziók hierarchiáját, amely megfelel a jelentésben megadott célnak. |
 | Költségvetés eredeti verziója                                           | Válassza ki a költségkeret-azonosítót, amely az eredeti költségkeretként jelenik meg a jelentés összefüggésében. |
 | Költségvetés felülvizsgált verziója                                            | Válassza ki a költségkeret-azonosítót, amely a jelentés összefüggésében módosított költségvetésként működik. |
@@ -64,7 +64,7 @@ A többletkalkuláció több számítási lépést hajt végre a forrásadatokon
 
 | Mező                  | Leírás |
 |------------------------|-------------|
-| Pénzügyi naptári időszak | Válassza ki a fiskális naptári időszakot, hogy hozzárendeljen egy általánosköltség-számítási azonosítót.<blockquote>[!NOTE]<br>A mezőben felsorolt pénzügyi időszakok a költségszámla főkönyvvel kapcsolatos pénzügyi naptártól származnak.</blockquote> |
+| Pénzügyi naptári időszak | Válassza ki a fiskális naptári időszakot, hogy hozzárendeljen egy általánosköltség-számítási azonosítót.<blockquote>**MEGJEGYZÉS:**<br>A mezőben felsorolt pénzügyi időszakok a költségszámla főkönyvvel kapcsolatos pénzügyi naptártól származnak.</blockquote> |
 | Aktuális verzió         | Jelölje ki a megfelelő általánosköltség-számítási azonosítót. |
 | Költségvetés-változat         | Jelölje ki a megfelelő általánosköltség-számítási azonosítót. |
 | Felülvizsgált költségvetés-verzió | Jelölje ki a megfelelő általánosköltség-számítási azonosítót. |
@@ -77,10 +77,10 @@ A kiválasztott oszlopban szereplő értékeket meg kell szorozni a kijelölt é
 
 | Mező                | Leírás |
 |----------------------|-------------|
-| Aktuális időszak       | Az aktuális pénzügyi időszak egyenlege jelenik meg.<blockquote>[!NOTE]<br>Alapértelmezés szerint az aktuális időszak a munkamenet dátuma határozza meg. Az a **Költségellenőrzés** munkaterületén kiválasztható egy adott pénzügyi időszakban. A kiválasztott érték majd jelent az aktuális időszakra.</blockquote> |
-| Előző időszak      | Az előző pénzügyi időszak egyenlege jelenik meg. A konvertálás az alábbi képlet alapján történik:<br>Aktuális pénzügyi időszak – 1<blockquote>[!NOTE]<br>Alapértelmezés szerint az előző időszakot a munkamenet dátuma határozza meg. A **Költségellenőrzés** munkaterületén kiválasztható egy adott pénzügyi időszak jelenlegi időszakként. Az **Előző időszak** ezután a megadottak szerint lesz újraszámítva.</blockquote> |
-| Folyó év mai napig         | A folyó év mai napig jelenik meg. A konvertálás az alábbi képlet alapján történik:<br>YearToDate (Folyó pénzügyi időszak)<blockquote>[!NOTE]<br>Alapértelmezés szerint az aktuális időszak a munkamenet dátuma határozza meg. Az a **Költségellenőrzés** munkaterületén kiválasztható egy adott pénzügyi időszakban. A kiválasztott érték az aktuális időszakra vonatkozik, és a **Folyó év mai napig** értéke ennek megfelelően frissül.</blockquote> |
-| Folyó év mai napig átlaga | A folyó év mai napig jelenik meg az átlag. A konvertálás az alábbi képlet alapján történik:<br>(YearToDate [Az aktuális pénzügyi időszak]) ÷ (Count [Az aktuális pénzügyi időszak])<p><strong>Példa</strong></p><ul><li>**Statisztikai dimenziótag:** Teljes munkaidős alkalmazottak</li><li>**Aktuális dátum:** 3-21-2017</li><li>**Időszak:** Pénzügyi időszak 1, Pénzügyi időszak 2, Pénzügyi időszak 3</li><li>**Nagyság:** 10, 10, 12</li></ul>Ebben az esetben **Folyó év mai dátum átlagos** (10 + 10 + 12) ÷ 3 = 10.67<p>A **Folyó év mai dátum átlagos** érték költség elem dimenzió tagok és a statisztikai dimenzió tagok alapján számítható.</p><blockquote>[!NOTE]<br>Alapértelmezés szerint az aktuális időszak a munkamenet dátuma határozza meg. Az a **Költségellenőrzés** munkaterületén kiválasztható egy adott pénzügyi időszakban. A kiválasztott érték az aktuális időszakra vonatkozik, és a **Folyó év mai napig** és **Folyó év mai napig átlag** értéke ennek megfelelően frissül.</blockquote> |
+| Aktuális időszak       | Az aktuális pénzügyi időszak egyenlege jelenik meg.<blockquote>**MEGJEGYZÉS:**<br>Alapértelmezés szerint az aktuális időszak a munkamenet dátuma határozza meg. Az a **Költségellenőrzés** munkaterületén kiválasztható egy adott pénzügyi időszakban. A kiválasztott érték majd jelent az aktuális időszakra.</blockquote> |
+| Előző időszak      | Az előző pénzügyi időszak egyenlege jelenik meg. A konvertálás az alábbi képlet alapján történik:<br>Aktuális pénzügyi időszak – 1<blockquote>**MEGJEGYZÉS:**<br>Alapértelmezés szerint az előző időszakot a munkamenet dátuma határozza meg. A **Költségellenőrzés** munkaterületén kiválasztható egy adott pénzügyi időszak jelenlegi időszakként. Az **Előző időszak** ezután a megadottak szerint lesz újraszámítva.</blockquote> |
+| Folyó év mai napig         | A folyó év mai napig jelenik meg. A konvertálás az alábbi képlet alapján történik:<br>YearToDate (Folyó pénzügyi időszak)<blockquote>**MEGJEGYZÉS:**<br>Alapértelmezés szerint az aktuális időszak a munkamenet dátuma határozza meg. Az a **Költségellenőrzés** munkaterületén kiválasztható egy adott pénzügyi időszakban. A kiválasztott érték az aktuális időszakra vonatkozik, és a **Folyó év mai napig** értéke ennek megfelelően frissül.</blockquote> |
+| Folyó év mai napig átlaga | A folyó év mai napig jelenik meg az átlag. A konvertálás az alábbi képlet alapján történik:<br>(YearToDate [Az aktuális pénzügyi időszak]) ÷ (Count [Az aktuális pénzügyi időszak])<p><strong>Példa</strong></p><ul><li>**Statisztikai dimenziótag:** Teljes munkaidős alkalmazottak</li><li>**Aktuális dátum:** 3-21-2017</li><li>**Időszak:** Pénzügyi időszak 1, Pénzügyi időszak 2, Pénzügyi időszak 3</li><li>**Nagyság:** 10, 10, 12</li></ul>Ebben az esetben **Folyó év mai dátum átlagos** (10 + 10 + 12) ÷ 3 = 10.67<p>A **Folyó év mai dátum átlagos** érték költség elem dimenzió tagok és a statisztikai dimenzió tagok alapján számítható.</p><blockquote>**MEGJEGYZÉS:**<br>Alapértelmezés szerint az aktuális időszak a munkamenet dátuma határozza meg. Az a **Költségellenőrzés** munkaterületén kiválasztható egy adott pénzügyi időszakban. A kiválasztott érték az aktuális időszakra vonatkozik, és a **Folyó év mai napig** és **Folyó év mai napig átlag** értéke ennek megfelelően frissül.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Megjelenítendő oszlopok költségekhez
 
@@ -88,11 +88,11 @@ A **Megjelenítendő oszlopok költségekhez** gyorslapon a Költségkönyvelő 
 
 | Mező                 | Leírás |
 |-----------------------|-------------|
-| Fix költség            | Ez oszloptípus költségét jeleníti meg a tárgyieszköz-alapján a kijelölt többletköltség-számítási azonosítója.<blockquote>[!NOTE]<br>Ennél az oszloptípusnál csak akkor, ha egy többletköltség-számítási azonosítója ki van jelölve a pénzügyi időszak egyenlegének jelennek meg.</blockquote> |
-| Változó költség         | Ez az oszloptípus a változó költségét jeleníti meg a tárgyieszköz-alapján a kijelölt többletköltség-számítási azonosítója.<blockquote>[!NOTE]<br>Ennél az oszloptípusnál csak akkor, ha egy többletköltség-számítási azonosítója ki van jelölve a pénzügyi időszak egyenlegének jelennek meg.</blockquote> |
-| Rögzített + változó költség | Ez az oszloptípus a rögzített és változó költségét jeleníti meg a tárgyieszköz-alapján a kijelölt többletköltség-számítási azonosítója.<blockquote>[!NOTE]<br>Ennél az oszloptípusnál csak akkor, ha egy többletköltség-számítási azonosítója ki van jelölve a pénzügyi időszak egyenlegének jelennek meg.</blockquote> |
-| Teljes költség            | Ennél az oszloptípusnál az összes költség (nem besorolt költség, rögzített költség, valamint változó költség).<blockquote>[!NOTE]<br>Az oszloptípusát mindig mutatja az egyenleget.</blockquote> |
-| Nem besorolt költség     | Ez az oszloptípus a nem minősített költségeket mutatja.<blockquote>[!NOTE]<br>Ez az oszlop arra szolgál, hogy ellenőrizze, hogy az összes költség helyesen lett-e besorolva az általános számítással, vagy hogy a költségviselkedési szabályokat be kell-e állítani.</blockquote> |
+| Fix költség            | Ez oszloptípus költségét jeleníti meg a tárgyieszköz-alapján a kijelölt többletköltség-számítási azonosítója.<blockquote>**MEGJEGYZÉS:**<br>Ennél az oszloptípusnál csak akkor, ha egy többletköltség-számítási azonosítója ki van jelölve a pénzügyi időszak egyenlegének jelennek meg.</blockquote> |
+| Változó költség         | Ez az oszloptípus a változó költségét jeleníti meg a tárgyieszköz-alapján a kijelölt többletköltség-számítási azonosítója.<blockquote>**MEGJEGYZÉS:**<br>Ennél az oszloptípusnál csak akkor, ha egy többletköltség-számítási azonosítója ki van jelölve a pénzügyi időszak egyenlegének jelennek meg.</blockquote> |
+| Rögzített + változó költség | Ez az oszloptípus a rögzített és változó költségét jeleníti meg a tárgyieszköz-alapján a kijelölt többletköltség-számítási azonosítója.<blockquote>**MEGJEGYZÉS:**<br>Ennél az oszloptípusnál csak akkor, ha egy többletköltség-számítási azonosítója ki van jelölve a pénzügyi időszak egyenlegének jelennek meg.</blockquote> |
+| Teljes költség            | Ennél az oszloptípusnál az összes költség (nem besorolt költség, rögzített költség, valamint változó költség).<blockquote>**MEGJEGYZÉS:**<br>Az oszloptípusát mindig mutatja az egyenleget.</blockquote> |
+| Nem besorolt költség     | Ez az oszloptípus a nem minősített költségeket mutatja.<blockquote>**MEGJEGYZÉS:**<br>Ez az oszlop arra szolgál, hogy ellenőrizze, hogy az összes költség helyesen lett-e besorolva az általános számítással, vagy hogy a költségviselkedési szabályokat be kell-e állítani.</blockquote> |
 
 ### <a name="columns-to-display-for-budgeted-costs"></a>Megjelenítendő oszlopok előirányzott költségekhez
 
@@ -103,12 +103,12 @@ A **Megjelenítendő oszlopok költségvetési költségekhez** gyorslapon a Kö
 
 | Mező                     | Leírás |
 |---------------------------|-------------|
-| Költségvetés                    | A költségvetési egyenlegek a kiválasztott oszlopok szerint jelennek meg.<blockquote>[!NOTE]<br>Az egyenlegek alapjául az **Adatok szűrése** gyorslapon kijelölt költségvetés-verziók szolgálnak.</blockquote> |
+| Költségvetés                    | A költségvetési egyenlegek a kiválasztott oszlopok szerint jelennek meg.<blockquote>**MEGJEGYZÉS:**<br>Az egyenlegek alapjául az **Adatok szűrése** gyorslapon kijelölt költségvetés-verziók szolgálnak.</blockquote> |
 | Költségvetés eltérése           | A költségvetés és a tényleges adatok közötti különbség kiszámítása és megjelenítése. A konvertálás az alábbi képlet alapján történik:<br>Költségvetési egyenleg – a tényleges egyenlege |
 | Költségvetés eltérése (%)      | A költségvetés és a tényleges adatok közötti különbség kiszámítása és megjelenítése százalékban. A konvertálás az alábbi képlet alapján történik:<br>(Költségvetési egyenleg – tényleges egyenleg) ÷ költségvetési egyenleg |
-| Eltérés időszakának küszöbértéke | Küszöbérték beállítása monetáris összeg eltérésében a jelenlegi időszakban. Ha a küszöbértéket túllépték, a vonal pirosan kiemelve jelenik meg a **Költségkontroll** munkaterületen.<blockquote>[!NOTE]<br>Ez a mező csak a kiadásokat megjelenítő költségelemekre vonatkozik.</blockquote> |
+| Eltérés időszakának küszöbértéke | Küszöbérték beállítása monetáris összeg eltérésében a jelenlegi időszakban. Ha a küszöbértéket túllépték, a vonal pirosan kiemelve jelenik meg a **Költségkontroll** munkaterületen.<blockquote>**MEGJEGYZÉS:**<br>Ez a mező csak a kiadásokat megjelenítő költségelemekre vonatkozik.</blockquote> |
 | Eltérés évének küszöbértéke   | Küszöbérték beállítása monetáris összeg eltérésében az évre. Ha a küszöbértéket túllépték, a vonal pirosan kiemelve jelenik meg a **Költségkontroll** munkaterületen. |
-| Eltérés küszöbértéke %      | Küszöbérték beállítása az eltéréshez. Ha a küszöbértéket túllépték, a vonal pirosan kiemelve jelenik meg a **Költségkontroll** munkaterületen.<blockquote>[!NOTE]<br>Az aktuális időszakra és évre azonos százalékos küszöbérték vonatkozik.</blockquote> |
+| Eltérés küszöbértéke %      | Küszöbérték beállítása az eltéréshez. Ha a küszöbértéket túllépték, a vonal pirosan kiemelve jelenik meg a **Költségkontroll** munkaterületen.<blockquote>**MEGJEGYZÉS:**<br>Az aktuális időszakra és évre azonos százalékos küszöbérték vonatkozik.</blockquote> |
 
 ## <a name="cost-control-workspace"></a>Költségellenőrzési munkaterület
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d4874642743ed8188e84052d94003051f2af7af
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: d0270ad1e66193832fb1139fca4439b36b5ffb84
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722688"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682857"
 ---
 # <a name="post-with-derived-books"></a>Feladás származtatott könyvekkel
 
@@ -34,7 +34,7 @@ Ha származtatott könyvet tartalmazó értékmodellhez ad fel tranzakciókat, a
 -   A tranzakciótípus egyéb felvehető értékei. Ha például az elsődleges könyv és a származtatott könyvek az értékesítést és a kivezetést illetően ugyanazokat az intervallumokat használják, akkor az összes tranzakciótípus rendelkezésre áll a származtatott értékcsökkenés könyv beállítása során.
 
 > [!WARNING]
-> A származtatott könyvbe feladott összeg megegyezik az elsődleges könyvbe feladott összeggel. Ha a könyvek értékcsökkenési módszere eltérő, akkor nem ajánlott a származtatott eljárással készíteni értékcsökkenési tranzakciókat. |
+> A származtatott könyvbe feladott összeg megegyezik az elsődleges könyvbe feladott összeggel. Ha a könyvek értékcsökkenési módszere eltérő, akkor nem ajánlott a származtatott eljárással készíteni értékcsökkenési tranzakciókat. 
 
 ## <a name="example"></a>Példa 
 A következő adatok leírják, hogyan állítson be beszerzési tranzakciókat a származtatott könyv funkcióval.

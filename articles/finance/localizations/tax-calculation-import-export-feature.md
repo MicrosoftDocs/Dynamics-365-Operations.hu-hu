@@ -2,7 +2,7 @@
 title: Adószámítások importálása és exportálása
 description: Ez a cikk az adószámítási szolgáltatás importálási és exportálási funkcióival kapcsolatban tartalmaz tájékoztatást.
 author: Kai-Cloud
-ms.date: 11/22/2021
+ms.date: 10/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 9daee683763d7cb0eb9573497eb4e20cba9b1863
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8666d4971e36279ebd2b1396de7cab37680980e6
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855173"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690233"
 ---
 # <a name="import-and-export-tax-calculations"></a>Adószámítások importálása és exportálása
 
@@ -98,3 +98,21 @@ A letöltött Excel-munkalap az **Adócsoport**-beállítási rács szerkezetét
 2. Az **RCS** **rendszer** Adószámítás funkciólapjának Adócsoport alkalmazhatósági lapján válassza a **Hozzáadás** lehetőséget, **ha** üres rekordot szeretne beszúrni az Adócsoport-alkalmazhatósági rács alsó részén.
 3. A **ctrl+V billentyűkombinációval** beillesztheti a másolt sorokat a rácsba.
 4. Válassza a **Mentés** lehetőséget.
+
+## <a name="import-feature-demo-data"></a>Bemutató funkció adatainak importálása
+
+A következő lépések szerint importálhatja a bemutatóadatokat.
+
+1. Bejelentkezés az [RCS](https://marketing.configure.global.dynamics.com/) alkalmazásba.
+2. A Globalizációs **funkciók munkaterületén** válassza a Funkciók **lehetőséget**, majd válassza az **Adószámítás csempe** lehetőséget.
+3. Válassza az **Importálás lehetőséget, majd válassza a Szinkronizálás lehetőséget** **a Globális tárház lap Importálás funkcióján** **.** 
+4. Válassza ki a táblázatban az adószámítási **funkció bemutatóadat-funkcióját**, majd válassza az Importálás **lehetőséget**.
+5. A **Nézet** lehetőség kiválasztásával áttekintheti az importált funkcióban meghatározott adókódokat, csoportokat és alkalmazhatósági szabályokat.
+6. A Pénzügyben váltson át **a DEMF** jogi személyre, majd **váltson** \> **·** \> **át az Adóbeállítási adó konfigurációs** \> **adójának számítási paramétereihez.**
+7. Az Általános **lapon** válassza az Adószámítási **szolgáltatás engedélyezése lehetőséget**.
+8. A Funkcióbeállítás **neve mezőben** válassza **ki az adószámítási funkció bemutató adatait**.
+9. Válasszon egy kiegyenlítési időszakot **és egy főkönyvi** feladási **csoportot az új bemutatóadókódhoz, majd válassza a** Megerősítés **lehetőséget**.
+10. Válassza a **Mentés** lehetőséget.
+
+> [!NOTE]
+> Az **adószámítás – funkció – bemutató adatdoka** **·** **funkció a DEMF** bemutató jogi személyhez készült és 40.54.234 funkcióverzión alapul. Győződjön meg róla, hogy a Pénzügy és RCS verzió a 10.0.26-os vagy újabb verzióra van frissítve.

@@ -2,19 +2,19 @@
 title: Commerce Commerce Commerce Commerce commercechannel for Customer Service modul
 description: Ez a témakör a Commerce CommerceChannel for Customer Service modult ismerteti a következőben:Microsoft Dynamics 365 Commerce
 author: gvrmohanreddy
-ms.date: 08/23/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-07-20
-ms.openlocfilehash: b8eaed3eb015e96b1db6fa2297c341ea9d3ff8ad
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 99e8b9d66a04390ab70fd1deff9f95fe28bdfae3
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473809"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690316"
 ---
 # <a name="commerce-chat-with-omnichannel-for-customer-service-module"></a>Commerce Commerce Commerce Commerce commercechannel for Customer Service modul
 
@@ -82,6 +82,9 @@ A következő lépések szerint hozzáadhatja a bővítménymodult a webhely fej
 1. A Modulok **kiválasztása párbeszédpanelen** válassza ki a korábban létrehozott beszélgetési részletet, majd válassza **az OK gombra**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
+> [!NOTE]
+> A konfigurációs paraméterek teljes [listáját lásd a Commerce modul proaktív beszélgetési paramétereinél](chat-proactive-chat-parameters.md).
+
 ## <a name="add-commerce-headquarters-as-an-application-tab-for-omnichannel-for-customer-service"></a>A Commerce Headquarters hozzáadása pályázati lapként az Ügyfélszolgálati szolgáltatáshoz
 
 A Commerce Headquarters for Customer Service alkalmazásban lehetőség van a Commerce Headquarters alkalmazás lapjának hozzáadására. Az élő ügynökök ezután az Ügyfélszolgálati Dynamics 365 Commerce ügynök felhasználói felületének használatával egyszerűen hozzáférhetnek az Ügyfélszolgálat modulhoz, amely a vevő környezetfüggő adatait, valamint értékesítési rendelési adatait tartalmazza. Ezenkívül az ügyfélszolgálati ügynökök új rendeléseket is be tudnak rendelni, visszaküldést kezdeményezhetik, és ellenőrizhetik a rendelési állapotuk adatait.
@@ -115,6 +118,9 @@ A következő lépésekkel új alkalmazáslapot engedélyezheti a vevők ügynö
 1. Nyissa meg az ügynökök számára létrehozott munkafolyamot, **majd** a Speciális beállítások csoportban válassza az Alapértelmezett **munkamenetek lehetőséget**.
 1. Az **Alkalmazáslapok lapon válassza** a **Meglévő pályázat** hozzáadása lapot, majd adja hozzá a korábban létrehozott új pályázatlapot. Ez a lépés gondoskodik arról, hogy egy olyan alkalmazáslap jelenjen meg, amely a Commerce Headquarters iFrame alkalmazást betölti egy modulban, amikor az ügynök bejövő beszélgetéshívást kap az e-commerce webhelyről.
 
+> [!NOTE]
+> A munkabb rétegben nem módosíthatja az alapértelmezett munkamenetsablont. Emiatt előfordulhat, hogy a frissítéshez létre szeretne hozni egy új sablont, vagy ismétlődő sablont szeretne létrehozni a meglévő sablonból. A további tudnivalókat lásd [a sablonok társítása a munkafolyamhoz](/dynamics365/app-profile-manager/associate-templates).
+
 ## <a name="add-context-variables-in-dynamics-365-omnichannel-for-customer-service"></a>Környezeti változók hozzáadása a Dynamics 365Channel for Customer Service szolgáltatáshoz
 
 A következő lépések szerint adhat hozzá környezetváltozókat a Dynamics 365Channel for Customer Service szolgáltatáshoz.
@@ -128,3 +134,11 @@ A következő lépések szerint adhat hozzá környezetváltozókat a Dynamics 3
 
 > [!NOTE]
 > Ha e-commerce csatornából szeretné beolvasni az e-mail címeket és a bejelentkezett felhasználók nevét, **·** **az** AccountNumber **környezetváltozó mellett felveheti az E-mail és a Név értékét is szövegtípus környezeti változóiként.** **·**
+
+## <a name="additional-resources"></a>További erőforrások
+
+[Commerce commerce csevegési funkciók – áttekintés](commerce-chat-overview.md)
+
+[Commerce Commerce-beszélgetés modullal Power Virtual Agents](chat-module-pva.md)
+
+[Commerce- és csevegési modul proaktív csevegési paraméterei](chat-proactive-chat-parameters.md)

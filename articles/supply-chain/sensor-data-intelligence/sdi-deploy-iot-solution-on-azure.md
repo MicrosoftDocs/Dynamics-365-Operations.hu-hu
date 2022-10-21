@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 5026f234f1b2f38e7041098421d0261fd468db96
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 5f0f49c0f7daaacb85b75dc11b9f015b6aa4e997
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643713"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689721"
 ---
 # <a name="deploy-an-iot-solution-on-azure"></a>IoT-megoldás telepítése az Azure-ba
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 A belső adatintelligencia a csatlakozott adattárak adatait használja Microsoft Azure. Ahhoz, hogy az Azure beolvassa Dynamics 365 Supply Chain Management az adatokat a telefonból, és megosztsa az adatait, az Azure-előfizetésre egy IM-megoldást (Internet of Things) kell telepítenie. A következő diagram diagramja áttekintést nyújt a megoldásról és annak összetevőiről.
 

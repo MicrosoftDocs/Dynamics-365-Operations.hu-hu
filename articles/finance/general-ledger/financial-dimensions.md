@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3ad92e006351adbf2494a1b32325d2d4a83b76a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849989"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680358"
 ---
 # <a name="financial-dimensions"></a>Pénzügyi dimenziók
 
@@ -84,7 +84,7 @@ Az adatok hivatkozási integritásának fenntartása érdekében a pénzügyi di
 Ha a feltételek bármelyike teljesül, a pénzügyi dimenzió nem törölhető.
 
 > [!NOTE]
-> A Pénzügyi jelentés 10.0.27-es verziójától kezdődően a pénzügyi dimenziók a létrehozás során nem lesznek automatikusan kiválasztva a pénzügyi jelentések beállításaihoz. 
+> A Pénzügyi verzió 10.0.27-es verziójától kezdve a pénzügyi dimenziók a létrehozáskor nem lesznek automatikusan kiválasztva a pénzügyi jelentési beállítások között.
 
 ## <a name="default-dimension-values"></a>Alapértelmezett dimenzióértékek
 

@@ -1,6 +1,6 @@
 ---
-title: HÉA-nyilatkozat (Németország)
-description: Ez a cikk azt ismerteti, hogyan állíthat be és hozhat létre hozzáadottértékadó-előlegbevallást (áfa) Németország számára hivatalos XML formátumban.
+title: Áfabevallás (Németország)
+description: Ez a témakör azt írja le, hogyan lehet a hivatalos XML-formátumban előlegbevallást (áfa- és áfabevallást) létrehozni Németország számára.
 author: AdamTrukawka
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,124 +9,124 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: 8ee288a1ec7ae950bdff9da7d373e29daef74d3c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 04c625b554d96f8ed28ceffef9647fe9cbf7fe2f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269404"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689460"
 ---
-# <a name="vat-declaration-germany"></a>HÉA-nyilatkozat (Németország)
+# <a name="vat-declaration-germany"></a>Áfabevallás (Németország)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk azt ismerteti, hogyan állíthat be és hozhat létre hozzáadottértékadó-előlegbevallást (áfa) Németország számára hivatalos XML formátumban. Ez a cikk azt is ismerteti, hogyan tekintheti meg az áfabevallás előnézetének előnézetét Microsoft Excel.
+Ez a témakör azt írja le, hogyan lehet a hivatalos XML-formátumban előlegbevallást (áfa- és áfabevallást) létrehozni Németország számára. Ez a cikk azt is bemutatja, hogy hogyan lehet az áfabevallást előnézetben látni a következőben:Microsoft Excel
 
-A jelentés automatikus létrehozásához hozzon létre elegendő áfakódot ahhoz, hogy az előzetes áfabevallás minden egyes mezőjéhez külön áfa-elszámolást vezessen. Ezenkívül az előzetes áfabevallás elektronikus jelentéskészítési (ER) formátumának alkalmazásspecifikus paramétereiben társítsa a forgalmiadó-kódokat az áfabevalláson szereplő mezők keresésének eredményével.
+A jelentés automatikus létrehozásához hozzon létre elég áfakódot ahhoz, hogy az előleg áfabevallásán minden egyes rovatban külön áfakönyvelés legyen. Ezenkívül az előzetes áfabevallás elektronikus jelentési (ER) formátumának alkalmazásspecifikus paramétereiben az áfakódokat hozzá kell társítani az áfabevallás mezőihez keresési eredményekhez.
 
-Németország esetében konfigurálnia **kell a Jelentés mezőkeresést**. Az alkalmazásspecifikus paraméterek beállításával kapcsolatos további információkért tekintse meg a cikk későbbi, Alkalmazásspecifikus paraméterek beállítása áfabevallási [mezőkhöz](#set-up-application-specific-parameters-for-vat-declaration-fields) című szakaszát.
+Németország esetében be kell állítania a **Jelentés mezőkeresést**. Az alkalmazásspecifikus paraméterek beállításával kapcsolatos további [tudnivalókat](#set-up-application-specific-parameters-for-vat-declaration-fields) lásd a Cikk áfabevallási mezők alkalmazásspecifikus paramétereinek beállítása című részében.
 
-Az alábbi táblázatban a "Keresési eredmény" oszlop az áfabevallási formátumban egy adott áfabevallási sorhoz előre konfigurált keresési eredményt mutatja. Ezen információk segítségével helyesen társíthatja az áfakódokat a keresési eredményhez, majd az áfabevallás sorához.
+A következő táblázatban a "Keresés eredménye" oszlop mutatja azt a keresési eredményt, amely az áfabevallási formátumban egy adott áfabevallási sorhoz előre konfigurálva van. Ezzel az információval lehet megfelelően társítani az áfakódokat a keresési eredményhez, majd az áfabevallás sorhoz.
 
-### <a name="vat-declaration-overview"></a><a name="vat-declaration-overview"></a> A héabevallás áttekintése
+### <a name="vat-declaration-overview"></a><a name="vat-declaration-overview"></a> Áfabevallás áttekintése
 
-A németországi héabevallás a következő információkat tartalmazza.
+Az előleg áfabevallása Németországban a következő adatokat tartalmazza.
 
 **SZAKASZ – SZÁLLÍTÁSOK ÉS EGYÉB SZOLGÁLTATÁSOK**
 
 **Adóköteles értékesítések**
 
-| Sor | Doboz – adóalap | Doboz – adóösszeg | Leírás                                                                                                                                      | Keresési eredmény                                                                             |
+| Sor | Doboz – adóalap | Doboz – adó összege | Leírás                                                                                                                                      | Keresési eredmény                                                                             |
 |-----|----------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| 20  | 81             | Kód nélkül     | Adóköteles értékesítés 19 százalékos adókulcs mellett.                                                                                                       | 20-TaxableSalesStandard</br>73-BadDebtsWriteOffStandard (81/50) – mínuszjellel             |
-| 21  | 86             | Kód nélkül     | Adóköteles értékesítés 7 százalékos adókulcs mellett.                                                                                                        | 21-Adóköteles ÉrtékesítésekReukció</br>73-BadDebtsWriteOffReduced (86/50) – mínusz előjellel               |
-| 22  | 35             | 36               | Adóköteles értékesítés más adókulcsokkal.                                                                                                                | 22-TaxableSalesEgyébár</br>73-BadDebtsWriteOffOtherRates (35/36/50) – mínuszjellel      |
-| 23  | 77             | *Nincs adóösszeg*  | Mezőgazdasági és erdészeti vállalkozásoktól a német áfatörvény (UStG) 24. §-ának megfelelően történő szállítások az adószámú ügyfelek részére. | 23-EUÉrtékesítésÁtlagarány24</br>73-BadDebtsWriteOffEUSalesAverageRate24 (77/50) – mínusz előjellel |
-| 24  | 76             | 80               | Értékesítés, amelyért adót kell fizetni az UStG 24. §-a szerint (fűrészmalom termékek, italok és alkoholos folyadékok).                                | 24-SalesAverageRate24</br>73-BadDebtsWriteOffSalesAverageRate24 (76/80/50)                    |
+| 20  | 81             | Kód nélkül     | 19 százalékos áfakulcsú adóköteles értékesítés.                                                                                                       | 20-TaxableSalesStandard</br>73-BadDebtsWriteOffStandard (81/50) – mínusz előjellel             |
+| 21  | 86             | Kód nélkül     | 7 százalékos áfakulcsú adóköteles értékesítés.                                                                                                        | 21-TaxableSalesReable</br>73-BadDebtsWriteOffRealma (86/50) – mínusz előjellel               |
+| 22  | 35             | 36               | Adóköteles értékesítés egyéb adómértékekkel.                                                                                                                | 22- TaxableSalesOtherRates</br>73-BadDebtsWriteOffOtherRates (35/36/50) – mínusz előjellel      |
+| 23  | 77             | *Nincs adóösszeg*  | A német áfatörvény 24. törvénye (UStG) 24. törvényének megfelelően az olyan vevőknek történő szállítás, amelyek áfaazonosító számmal rendelkezik. | 23-EUSalesAgeRate24</br>73-BadDebtsWriteOffEUSalesAverageRate24 (77/50) – mínusz előjellel |
+| 24  | 76             | 80               | Azok az értékesítések, amelyekre az áfát be kell fizetni, az UStG szerinti 24 cikk (adóügyi termékek, gyógyszerek és likvid termékek) alapján.                                | 24-SalesAverageRate24</br>73-BadDebtsWriteOffSalesAverageRate24 (76/80/50)                    |
 
 **Adómentes értékesítés az előzetesen felszámított adó levonásával**
 
-| Sor | Doboz – adóalap | Doboz – adóösszeg | Leírás                                                                       | Keresési eredmény                       |
+| Sor | Doboz – adóalap | Doboz – adó összege | Leírás                                                                       | Keresési eredmény                       |
 |-----|----------------|------------------|-----------------------------------------------------------------------------------|-------------------------------------|
-| 26  | 41             | *Nincs adóösszeg*  | Közösségen belüli szállítások olyan ügyfeleknek, akik rendelkeznek áfaazonosítóval.                       | 26-EU-Árak                          |
-| 27  | 44             | *Nincs adóösszeg*  | Új járművek Közösségen belüli szállítása olyan vevőknek, akik nem rendelkeznek áfaazonosítóval.    | 27-EUSalesÚjvehicles               |
-| 28  | 49             | *Nincs adóösszeg*  | Új járművek közösségen belüli szállítása vállalaton kívül.                     | 28-EUSalesÚjvehiclesOutsideCompany |
-| 29  | 43             | *Nincs adóösszeg*  | Egyéb adómentes értékesítések, amelyek előzetesen levonják az adó levonását, például exportszállítások. | 29-ExportEgyébAdósítás          |
+| 26  | 41             | *Nincs adóösszeg*  | Áfaazonosítóval azonosított vevőknek való közösségen belüli szállítások.                       | 26-EUSales                          |
+| 27  | 44             | *Nincs adóösszeg*  | Új járművek közösségen belüli szállításai a vásárlóknak, ha nincs áfaazonosítójuk.    | 27-EUSalesNewVehicles               |
+| 28  | 49             | *Nincs adóösszeg*  | Új járművek közösségen belüli szállításai a vállalaton kívül.                     | 28-EUSalesNewVehiclesOutsideCompany |
+| 29  | 43             | *Nincs adóösszeg*  | Egyéb adómentes értékesítések, amelyekre előzetesen levont adó, például exportszállítások. | 29-ExportOtherTaxFreeSales          |
 
 **Adómentes értékesítés az előzetesen felszámított adó levonása nélkül**
 
-| Sor | Doboz – adóalap | Doboz – adóösszeg | Leírás                                            | Keresési eredmény                           |
+| Sor | Doboz – adóalap | Doboz – adó összege | Leírás                                            | Keresési eredmény                           |
 |-----|----------------|------------------|--------------------------------------------------------|-----------------------------------------|
-| 30  | 48             | *Nincs adóösszeg*  | Adómentes értékesítések, amelyek nem rendelkeznek előzetesen felszámított adólevonással. | 30-TaxFreeSalesAputTaxDeduction nélkül |
+| 30  | 48             | *Nincs adóösszeg*  | Adómentes értékesítés, amely nem adólevonást jelent. | 30-TaxFreeSalesWithoutInputTaxDeduction |
 
 **Közösségi beszerzések**
 
-| Sor | Doboz – adóalap | Doboz – adóösszeg | Leírás                                                                                                                   | Keresési eredmény                                                    |
+| Sor | Doboz – adóalap | Doboz – adó összege | Leírás                                                                                                                   | Keresési eredmény                                                    |
 |-----|----------------|------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| 33  | 91             | *Nincs adóösszeg*  | Egyes tárgyak és befektetési arany közösségen belüli, adómentes felvásárlása.                                                    | 33-TaxFreeEU-vásárlás                                             |
-| 34  | 89             | Kód nélkül     | Adóköteles közösségen belüli felvásárlások 19 százalékos adókulcs mellett.                                                             | 34-EU-HozzájárulásStandard</br>34-UseTaxEUPurchaseStandard (89/61)        |
-| 35  | 93             | Kód nélkül     | Adóköteles közösségen belüli felvásárlások 7 százalékos adókulcs mellett.                                                              | 35-EU-HozzájárulásCsökkentésreaukve</br>35-UseTaxEUPurchaseReduced (93/61)          |
-| 36  | 95             | 98               | Adóköteles közösségen belüli felvásárlások más adókulcsok mellett.                                                                      | 36-EU-VásárlásEgyébrátok</br>36-UseTaxEUPurchaseOtherRates (95/98/61) |
-| 37  | 94             | 96               | Új járművek közösségen belüli adóköteles beszerzései olyan beszállítóktól, akik nem rendelkeznek adóazonosító számmal, az általános adókulcs mellett. | 37-EU-Eu-TámogatásVehicles</br>37-UseTaxEUPurchaseVehicles (94/96/61)     |
+| 33  | 91             | *Nincs adóösszeg*  | Egyes objektumok és befektetési arany adómentes közösségen belüli beszerzései.                                                    | 33-TaxFreeEUPurchase                                             |
+| 34  | 89             | Kód nélkül     | Közösségen belüli adóköteles beszerzések 19 százalékos adókulcson.                                                             | 34-EUPurchaseStandard</br>34-UseTaxEUPurchaseStandard (89/61)        |
+| 35  | 93             | Kód nélkül     | Közösségen belüli adóköteles beszerzések 7 százalékos adókulcson.                                                              | 35-EUPurchaseReűs</br>35-UseTaxEUPurchaseRexo (93/61)          |
+| 36  | 95             | 98               | Egyéb adómértékekkel, közösségi adóköteles beszerzések                                                                      | 36-EUPurchaseOtherRates</br>36-UseTaxEUPurchaseOtherRates (95/98/61) |
+| 37  | 94             | 96               | Az olyan szállítóktól származó adóköteles közösségen belüli beszerzések, amelyek nem tartalmaznak áfaazonosító számot, az általános adómkulcs szerint. | 37-EUPurchaseVehicles</br>37-UseTaxEUPurchaseVehicles (94/96/61)     |
 
-**SZAKASZ – KEDVEZMÉNYEZETT MINT ADÓFIZETŐ**
+**SZAKASZ – KEDVEZMÉNYEZETT ADÓSKÉNT**
 
-| Sor | Doboz – adóalap | Doboz – adóösszeg | Leírás                                                                        | Keresési eredmény                                                                                        |
+| Sor | Doboz – adóalap | Doboz – adó összege | Leírás                                                                        | Keresési eredmény                                                                                        |
 |-----|----------------|------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| 40  | 46             | 47               | A vállalkozó egyéb szolgáltatásai, a közösségi terület többi részén alapulva.        | 40-KedvezményezettadóDebtor</br>40-UseTaxBeneficiaryTaxDebtor (46/47/66)                                                                              |
-| 41  | 73             | 74               | A 13b. szakasz (2) bekezdésének nem. pontja alá tartozó értékesítések. 3 az UStG-ből.                               | 41-KedvezményezettTaxDebtorRealEstateTransfer</br>41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67) |
-| 42  | 84             | 85               | A 13b. § (2) bekezdésének hatálya alá tartozó egyéb szolgáltatások. Az UStG 1,2 és 4–12.-e. | 42-KedvezményezettadóDebtorEgyéb</br>42-UseTaxBeneficiaryTaxDebtorEgyéb (84/85/67)                           |
+| 40  | 46             | 47               | Egyéb szolgáltatás a közösség egyéb szolgáltatásainak stb. alapján.        | 40-KedvezményezettTaxDebtor</br>40-UseTaxBeneficiaryTaxDebtor (46/47/66)                                                                              |
+| 41  | 73             | 74               | A 13b. (2)-es szakaszba eső értékesítések UStG 3.                               | 41-KedvezményezettTaxDebtorRealEstateTransfer</br>41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67) |
+| 42  | 84             | 85               | A 13b. (2)-es szakaszba eső egyéb szolgáltatások 1, 2 és 4– 12 UStG. | 42-KedvezményezettTaxDebtor Más</br>42-UseTaxBeneficiaryTaxDebtorMás (84/85/67)                           |
 
-**SZAKASZ – AZ ÉRTÉKESÍTÉSRE VONATKOZÓ KIEGÉSZÍTŐ INFORMÁCIÓK**
+**SZAKASZ – KIEGÉSZÍTŐ INFORMÁCIÓK AZ ÉRTÉKESÍTÉSRŐL**
 
-| Sor | Doboz – adóalap  | Doboz – adóösszeg | Leírás                                                                                                | Keresési eredmény                                                                                    |
+| Sor | Doboz – adóalap  | Doboz – adó összege | Leírás                                                                                                | Keresési eredmény                                                                                    |
 |-----|-----------------|------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| 48  | 42              | *Nincs adóösszeg*  | Az első ügyfél szállítása közösségen belüli háromszögletű tranzakciók esetén.                   | 48-szállításFirstEgyértőEUTriangularis                                                           |
-| 49  | 60              | *Nincs adóösszeg*  | A teljesítő vállalkozó adóköteles értékesítése, amelyért a szolgáltatás igénybevevője tartozik az adóval. | 49-SalesServicesReverseCharge                                                                    |
-| 50  | 21              | *Nincs adóösszeg*  | Egyéb nem adóköteles szolgáltatások.                                                                                | 50-Egyéb szolgáltatásokNonTaxable                                                                       |
-| 51  | 45              | *Nincs adóösszeg*  | Egyéb nem adóköteles értékesítés, ha a teljesítés helye nem Németországban van.                                    | 51-EgyébSalesnonTaxable                                                                          |
-| 52  | *Nincs adóösszeg* | *Nincs adóösszeg*  | Áfa                                                                                                       | 20. sor + 21. sor + 22. sor + 2. sor 4 + 34. sor + 35. sor + 36. sor + 37. sor + 40. sor + 41. sor + 42. sor |
+| 48  | 42              | *Nincs adóösszeg*  | Az első vevő által szállítás háromszögügyletek esetén.                   | 48-DeliveriesFirstCustomerEUTriangular                                                           |
+| 49  | 60              | *Nincs adóösszeg*  | A teljesítő értékesítés adóköteles értékesítései, amelyekért a szolgáltatás címzettje tartozik az adóval. | 49-SalesServicesReverseCharge                                                                    |
+| 50  | 21              | *Nincs adóösszeg*  | Egyéb nem adóköteles szolgáltatások.                                                                                | 50-OtherServicesNonTaxable                                                                       |
+| 51  | 45              | *Nincs adóösszeg*  | Egyéb nem adóköteles értékesítés, ha a teljesítmény helye nem Németországban van.                                    | 51-OtherSalesnonTaxable                                                                          |
+| 52  | *Nincs adóösszeg* | *Nincs adóösszeg*  | Áfa                                                                                                       | 20. sor + 21. sor + 22. sor + 2. sor 4. sor + 34. sor + 35. sor + 36. sor + 37. sor + 40. sor + 41. sor + 42. sor |
 
-**SZAKASZ – LEVONHATÓ ELŐZETESEN FELSZÁMÍTOTT ADÓ**
+**SZAKASZ – LEVONHATÓ BEMENETI ADÓ**
 
-| Sor | Doboz – adóösszeg | Leírás                                                                                                | Keresési eredmény                                                                                                                                                                |
+| Sor | Doboz – adó összege | Leírás                                                                                                | Keresési eredmény                                                                                                                                                                |
 |-----|------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 55  | 66               | Más vállalatoktól, szolgáltatásoktól és közösségen belüli háromszögügyletektől származó előlegszámla-adóösszegek.     | 55-InputTax 40-UseTaxBeneficiaryTaxDebtor (46/47/66)</br>74-BadDebtsWriteOffInputTax (66/37) – mínuszjellel                                                                   |
-| 56  | 61               | A Közösségen belüli termékbeszerzésből származó előzetesen felszámított adóösszegek.                                           | 56-InputTaxEUPurchase 34-UseTaxEUPurchaseStandard (89/61)</br>35-UseTaxEUPurchaseReduced (93/61)</br>36-UseTaxEUPurchaseOtherRates (95/98/61)</br>37-UseTaxEUPurchaseVehicles (94/96/61) |
-| 57  | 62               | Felmerült import forgalmi adó.                                                                                 | 57-InputTaxImport                                                                                                                                                            |
-| 58  | 67               | Az UStG 13b. §-a szerinti szolgáltatásokból származó előzetesen felszámított adóösszegek.                                        | 58-InputTaxServices</br>41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67)</br>42-UseTaxBeneficiaryTaxDebtorEgyéb (84/85/67)                                                 |
-| 59  | 63               | Az általános átlagkulcsok szerint kiszámított előzetesen felszámított adóösszegek.                                  | 59-inputTaxAverageRates</br>74-BadDebtsWriteOffInputTaxAverageRates (63/37) – mínuszjellel                                                                                    |
-| 60  | 59               | Az új járművek vállalaton és kisvállalkozásokon kívüli, Közösségen belüli szállítására vonatkozó előzetesen felszámított adó levonása. | 60-InputTaxEUPurchaseNewVehicles</br>74-BadDebtsWriteOffInputTaxEUPurchaseNewVehicles (59/37) – mínusz előjellel                                                                  |
-| 61  | 64               | Az előzetesen felszámított adólevonás korrekciója.                                                                     | 61-InputTaxkorrekció                                                                                                                                                        |
+| 55  | 66               | Egyéb vállalatoktól, szolgáltatásokból és közösségen belüli háromszögtranzakciókból származó adóösszegek bevitele.     | 55-InputTax 40-UseTaxBeneficiaryTaxDebtor (46/47/66)</br>74-BadDebtsWriteOffInputTax (66/37) – mínusz előjellel                                                                   |
+| 56  | 61               | Bemeneti adóösszegek a közösségen belüli árubeszerzésből.                                           | 56-InputTaxEUPurchase 34-UseTaxPURchaseStandard (89/61)</br>35-UseTaxEUPurchaseRexo (93/61)</br>36-UseTaxEUPurchaseOtherRates (95/98/61)</br>37-UseTaxEUPurchaseVehicles (94/96/61) |
+| 57  | 62               | Felmerült import áfa.                                                                                 | 57-InputTaxImport                                                                                                                                                            |
+| 58  | 67               | Szolgáltatások adóbevallási összegei az UStG 13b jelentésében.                                        | 58-InputTaxServices</br>41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67)</br>42-UseTaxBeneficiaryTaxDebtorMás (84/85/67)                                                 |
+| 59  | 63               | Az általános átlagmértékek alapján számított bemeneti adóösszegek.                                  | 59-InputTaxAgeRates</br>74-BadDebtsWriteOffInputTaxTakageRates (63/37) – mínusz előjellel                                                                                    |
+| 60  | 59               | Adólevonás a vállalaton és kisvállalaton kívüli új járművek közösségen belüli szállítására. | 60-InputTaxXOPurchaseNewVehicles</br>74-BadDebtsWriteOffInputTaxPURchaseNewVehicles (59/37) – mínusz előjellel                                                                  |
+| 61  | 64               | Az előzetesen levont adó javítása                                                                     | 61-InputTaxCorrection                                                                                                                                                        |
 | 62  | \-               | A fennmaradó összeg.                                                                                      | 52. sor – 55. sor – 56. sor – 57. sor – 58. sor – 50. sor – 60. sor – 61. sor                                                                                                        |
 
 **SZAKASZ – EGYÉB ADÓÖSSZEGEK**
 
-| Sor | Doboz – adóösszeg | Leírás                                                                                                                                                                                                                                                         | Keresési eredmény                                 |
+| Sor | Doboz – adó összege | Leírás                                                                                                                                                                                                                                                         | Keresési eredmény                                 |
 |-----|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| 64  | 65               | Adó az adókulcs változása miatt az adózás és az adókulcs változása miatt az adóköteles előlegek utáni kiegészítő adó változása miatt.                                                                                                                                        | 64-AdditionalTaxDueChangeTaxRate              |
-| 65  | 69               | Helytelen vagy indokolatlan adóösszegek, amelyek a számlákon szerepelnek, valamint az UStG 6a. cikke (4) bekezdésének 2. mondata, 17. cikke (1) bekezdésének 7. mondata vagy 25b. szakaszának (2) bekezdése szerint fizetendő adóösszegek, vagy amelyek egy kiszervező cég vagy raktárengedélyes tartozásai. | 65–Adóelektronikai-korrekció                      |
-| 67  | 39               | Az állandó meghosszabbításra vonatkozó rögzített különleges előleg levonása. Ez a sor általában csak az adómegállapítási időszak utolsó előzetes értesítésével van kitöltve.                                                                                                  | Felhasználói beviteli paraméter a jelentés párbeszédpanelen |
-| 68  | 83               | A fennmaradó forgalmiadó-előleg és a fennmaradó többlet. Az összeg elé írjon egy mínusz naplót.                                                                                                                                                          | 62. sor + 64. sor – 65. sor – 66. sor             |
+| 64  | 65               | Adó, ha az adókulcs megváltozása miatt adózási formát és további adót kell fizetni az adóköteles előlegek után.                                                                                                                                        | 64-AdditionalTaxDueChangeTaxRate              |
+| 65  | 69               | A számlákon megjelenő adóösszegek és a 6a. (4)-es szakasz 2., 17. (1.) bekezdésének 7. vagy 25b. (2.) szakaszának megfelelő adóösszegek, illetve a kiszervezési vállalat vagy raktárvezetők tartozásai. | 65-TaxDecreaseCorrection                      |
+| 67  | 39               | A fix speciális előlegfizetés levonása állandó hosszabbításhoz Ezt a sort általában csak az adózási időszak utolsó előzetes értesítése tölti ki.                                                                                                  | Felhasználó beviteli paramétere a jelentés párbeszédpanelen |
+| 68  | 83               | A fennmaradó áfafizetés és a fennmaradó többlet. Mínusz napló be szerepeljen az összeg előtt.                                                                                                                                                          | 62. sor + 64. sor – 65. sor – 66. sor             |
 
-**SZAKASZ – A CSÖKKENTÉSEKRE VONATKOZÓ KIEGÉSZÍTŐ INFORMÁCIÓK**
+**SZAKASZ – A CSÖKKENTÉSEK KIEGÉSZÍTŐ ADATAI**
 
-| Sor | Doboz – adóalap | Doboz – adóösszeg | Leírás                                                            | Keresési eredmény                                                                                                                                                                                                    |
+| Sor | Doboz – adóalap | Doboz – adó összege | Leírás                                                            | Keresési eredmény                                                                                                                                                                                                    |
 |-----|----------------|------------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 73  | 50             | \-               | Az adóalap csökkentése a 20–24. sorban.                      | 73-BadDebtsWriteOffStandard (81/50)</br>73-BadDebtsWriteOffReduced (86/50)</br>73-BadDebtsWriteOffOtherRates (35/36/50)</br>73-BadDebtsWriteOffEUSalesAverageRate24 (77/50)</br>73-BadDebtsWriteOffSalesAverageRate24 (76/80/50) |
-| 74  | \-             | 37               | Az előzetesen felszámított adó levonható összegének csökkentése az 55., 59. és 60. sorban. | 74-BadDebtsWriteOffInputTax (66/37)</br>74-BadDebtsWriteOffInputTaxAverageRates (63/37)</br>74-BadDebtsWriteOffInputTaxEUPurchaseNewVehicles (59/37)                                                                     |
+| 73  | 50             | \-               | Az adóalap csökkentése a 20–24. sor alapján.                      | 73-BadDebtsWriteOffStandard (81/50)</br>73-BadDebtsWriteOffRealma (86/50)</br>73-BadDebtsWriteOffOtherRates (35/36/50)</br>73-BadDebtsWriteOffEUSalesAverageRate24 (77/50)</br>73-BadDebtsWriteOffSalesAverageRate24 (76/80/50) |
+| 74  | \-             | 37               | A levonható bemeneti adó összegének csökkentése az 55., 59. és 60. sorban. | 74-BadDebtsWriteOffInputTax (66/37)</br>74-BadDebtsWriteOffInputTaxTakageRates (63/37)</br>74-BadDebtsWriteOffInputTaxPURchaseNewVehicles (59/37)                                                                     |
 
-#### <a name="purchase-reverse-charge-vat"></a>Beszerzési fordított adó áfa
+#### <a name="purchase-reverse-charge-vat"></a>Beszerzés fordított áfával
 
-Ha úgy konfigurálja az áfakódokat, hogy a használati adó használatával feladják a bejövő fordított adók áfáját, társítsa az áfakódokat a Jelentés mezőkeresés **keresési eredményéhez**, amely a névben szerepel a "UseTax" kifejezés.
+Ha az áfakódokat úgy konfigurálja, hogy a bejövő fordított áfát az áfa használatával adja fel, **társítsa** az áfakódokat a név "UseTax" nevű jelentésmező-keresési eredményéhez.
 
-Másik lehetőségként két külön áfakódot is konfigurálhat: egyet az esedékes áfa, egyet pedig az áfa levonásához. Ezután társítsa az egyes kódokat a Jelentés mezőkeresés megfelelő keresési **eredményeihez**.
+Másik lehetőségként két külön áfakódot is be lehet állítani: egyet az esedékes áfára, egyet pedig az áfalevonásra. Ezután társítsa az egyes kódokat a Jelentés **mező keresésének megfelelő keresési eredményeihez**.
 
-Például a szokásos kulcsú adóköteles Közösségen belüli beszerzésekhez konfigurálja az áfakódot **a használati adóval UT_S_EU**, és társítja azt a **Jelentés mezőkeresés** 34-UseTaxEUPurchaseStandard **keresési eredményéhez**. Ebben az esetben a UT_S_EU áfakódot használó összegek a **089.** és 061. rovatban jelennek meg (34. és 56. sor).
+Például a szabványos kulcsú, közösségen belüli adóköteles beszerzések esetén a **UT_S_EU** **áfakódot hozzá kell állítani a forgalmi adóhoz, és azt társítani kell a Jelentés mezőkeresés 34-UseTaxPURchaseStandard** **keresési** eredményéhez. Ebben az esetben az áfakódot **UT_S_EU** 089-es és 061-es mezőkben (a 34. és 56. sor) is tükrözi.
 
-Másik lehetőségként két áfakódot is konfigurálhat:
+Másik lehetőségként két áfakódot is be lehet állítani:
 
-  - **VAT_S_EU**, amelynek adókulcs-értéke -19 százalék
+  - **VAT_S_EU**, amelynek -19 százalékos adókulcs-értéke
   - **InVAT_S_EU**, amelynek 19 százalékos adókulcs-értéke
 
 Ezt követően a jelentés mezőkeresési eredményeihez **a** következő módon társítja a kódokat:
@@ -198,7 +198,8 @@ A következő lépések szerint adhatja meg, hogy mely áfakódok generálják a
 
    Ez a formátum a kiegyenlítési időszak áfajelentésének **futtatásakor kerül nyomtatásra**. Akkor is kinyomtatja, ha **az** Áfakifizetések **lapon** a Nyomtatás lehetőséget választja.
 
-4. Az Adóhatóság **lapon** válassza ki az adóhatóságot, majd a **Jelentés elrendezése** mezőben válassza az Alapértelmezett **beállítást**.
+4. Ha jelentenie kell a javításokat, a **Speciális** jelentés szakaszban állítsa a Javításokkal **stb. beállítás** Igen **beállítását**.
+5. Az Adóhatóság **lapon** válassza ki az adóhatóságot, **és a Jelentés elrendezése** mezőben válassza az Alapértelmezett **beállítást**.
 
 Ha több áfaregisztrációval [rendelkező](emea-reporting-for-multiple-vat-registrations.md) jogi személynél konfigurálja az áfabevallást, kövesse a következő lépéseket:
 

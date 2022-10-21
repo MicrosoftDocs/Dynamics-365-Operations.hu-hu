@@ -1,5 +1,5 @@
 ---
-title: Az eszköz leállási esete
+title: Az eszköz leállási forgatókönyve
 description: Ez a témakör a tárgyi eszközök leállási helyzetét írja le, amelynek segítségével nyomon követheti az eszközök elérhetőségét.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 944818557deebed06c02c00fd69de6e8f08bda83
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: b82d757d1e69203012949bc397220fa42ada4ac2
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428984"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689429"
 ---
-# <a name="the-asset-downtime-scenario"></a>Az eszköz leállási esete
+# <a name="the-asset-downtime-scenario"></a>Az eszköz leállási forgatókönyve
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Az eszköz leállási helyzet karbantartási leállási rekordot generál, ha egy géptől a legutóbbi jel be vétele óta egy megadott időhatáron belül nem érkezik jel. Az ilyen helyzetekben a gépet úgy kell beilleszkedni, hogy a gép működési ideje alatt rendszeresen küldjön egy jelet az Azure Azure-központnak, de nem küld jelet, ha a gép nem működik.
 

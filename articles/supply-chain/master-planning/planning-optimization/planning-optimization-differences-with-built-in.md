@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dd9493e85a90c00b2dd50abb6530661c0fbb77dc
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: a23256f3e092b32e1f1d09b708a8d0ca5f403785
+ms.sourcegitcommit: 5d33a3398e7e1d3494bfc3cad342fffa7cfa5b76
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520837"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680008"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>A beépített alaptervezés és a tervezési optimalizálás közötti különbségek
 
@@ -34,11 +34,12 @@ A Tervezésoptimalizálás eredményei eltérhetnek a beépített főtervező mo
 | Visszárurendelések | A visszaküldött megrendeléseket nem vesszük figyelembe. |
 | Ütemezéssel kapcsolatos funkciók | Részletekért lásd: [Ütemezés végtelen kapacitással](infinite-capacity-planning.md#limitations). |
 | Biztonsági készlet teljesítése | A tervezési optimalizálás mindig a *Mai dátum + beszerzési* idő lehetőséget használja a **Cikkfedezet** lap **Minimális teljesítése** mezőjében. Ez segít elkerülni a nem kívánt tervezési rendeléseket, és más problémákat, ha a beszerzési idő nem szerepel a biztonsági készletben, akkor az aktuális alacsony raktárkészlethez létrehozott tervezett rendeléseket mindig az átfutási idő miatt késlelteti a program. |
-| Biztonsági készlet-igénykövetés és nettó követelmények | A *Biztonsági készlet* követelménytípusa nem szerepel, és nem jelenik meg a **Nettó követelmények** lapon. A biztonsági készlet nem képvisel igényt, és nincs hozzá szükségletdátum társítva. Ehelyett megszorítást ad meg arra, hogy mennyi készletnek kell jelen lennie mindig. Az alaptervezés során azonban még mindig figyelembe veszi a rendszer a **Minimum** mező értékét a tervezett rendelések számítása során. Javasoljuk, hogy a **Nettó követelmények** lapon vizsgálja meg az **Összesített mennyiség** oszlopot, és ellenőrizze, hogy figyelembe lett-e véve ez az érték. |
+| Biztonsági készlet-igénykövetés és nettó követelmények | A *Biztonsági készlet* követelménytípusa nem szerepel, és nem jelenik meg a **Nettó követelmények** lapon. A biztonsági készlet nem képvisel igényt, és nincs hozzá szükségletdátum társítva. Ehelyett megszorítást ad meg arra, hogy mennyi készletnek kell jelen lennie mindig. Az alaptervezés során azonban még mindig figyelembe veszi a rendszer a **Minimum** mező értékét a tervezett rendelések számítása során. Javasoljuk, hogy a **Nettó követelmények** lapon vizsgálja meg az **Összesített mennyiség** oszlopot, és ellenőrizze, hogy figyelembe lett-e véve ez az érték. Mivel az pegging eltérő, különböző műveleteket javasolhat a program. |
 | Közlekedési naptárak | A szállítási **módok** lapon a **szállítási naptár** oszlopban szereplő értéket figyelmen kívül hagyjuk. |
 | Minimális/maximális fedezeti kód érték nélkül| A beépített tervezőmotor minimális/maximális fedezeti kód használata esetén, amelyben nincsenek beállítva minimális vagy maximális értékek, a tervezőmotor szükségletként kezeli a fedezeti kódot, és minden követelményhez létrehoz egy rendelést. A tervezési optimalizálás segítségével a rendszer naponta egy rendelést hoz létre, hogy az az adott napon teljes összeget fedezse.  |
 | Nettó követelmények és manuálisan létrehozott tervezett rendelések | A beépített tervezőmotorral a cikkekhez manuálisan létrehozott ellátási rendelések automatikusan megjelennek az adott cikk nettó követelményei között. Amikor például beszerzési rendelést hoz létre egy értékesítési rendelésből, **a beszerzési rendelés előzetes műveletek nélkül megjelenik a Nettó követelmények** lapon. Ennek oka az, hogy a beépített tervezőmotor naplózza a `inventLogTTS`**tábla** készlettranzakcióit, és a dinamikus tervek nettókövetelmény-lapján megjeleníti a változásokat. A Tervezés optimalizálása beállításnál azonban a manuálisan létrehozott rendelések csak akkor jelennek meg a cikkek nettó követelményei között, ha a tervezési optimalizálás nem fut (a cikket tartalmazó tervvel), **\>** **vagy** amíg a Nettó követelmények lapon a Frissítési alaptervezés lehetőséget választja, amely a cikk alaptervezését fogja futtatni. A **Nettókövetelmények**[lapról](net-requirements.md) a Nettó követelmények lapon található további tájékoztatás, valamint a tervezési optimalizálási információk. |
 | Erőforrás-hozzárendelés | Korlátlan kapacitással való munka során a beépített alaptervezési motor minden tervezett rendelést ugyanannak az erőforrásnak ad hozzá ugyanannál az erőforráscsoportnál. A tervezési optimalizálás ezt úgy javítja, hogy véletlenszerűen választ ki erőforrásokat, így a különböző termelési rendelések különböző erőforrásokat használhatnak. Ha ugyanazt az erőforrást szeretné használni az összes tervezett rendeléshez, akkor meg kell adnia az útvonalon azt az erőforrást. |
+| Kiterjesztett adattípusok (kiterjesztett adattípusok) | A tervezési optimalizálás nem támogatja a hatályos eduk (EDT) pontosságának változását. Ha például két tizedesjegyre növeli a termékmennyiség pontosságát (alapértelmezett) négy tizedesjegyre, akkor a tervezési optimalizálás csak két tizedesjegyet fog használni. |
 
 ## <a name="additional-resources"></a>További erőforrások
 

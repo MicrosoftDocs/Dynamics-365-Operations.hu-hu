@@ -1,5 +1,5 @@
 ---
-title: A termékminőségi helyzet
+title: A termékminőségi forgatókönyv
 description: Ez a cikk a termékminőségi helyzetről nyújt tájékoztatást. Ez az eset egy mérőszám alapján határozza meg a termékköteség minőségét, és figyelmeztetést generál, ha egy mérték kívül esik egy meghatározott küszöbértéken.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 8c4808ea3a0389c2a8699f0e11ea154705a6916d
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: c0f1c57251234921779f67faf61d47cdde119e64
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428979"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690048"
 ---
-# <a name="the-product-quality-scenario"></a>A termékminőségi helyzet
+# <a name="the-product-quality-scenario"></a>A termékminőségi forgatókönyv
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 A termékminőségi *helyzetben* egy biztonsági eszköz van beállítva a termékkötey minőségének az üzletben való mérésére. Ha egy mérték kívül esik a termék meghatározott küszöbértékén, a felettes irányítópultján megjelenik egy értesítés. Például egy mérőeszköz a termelési sorból kiálló élelmiszertermék üzemének az 5000000000000000000000000000000 értékről származik. Ha a mérték kívül esik a termékre vonatkozó figyelmeztetés minimális vagy maximális értékán, akkor a rendszer figyelmeztetést küld.
 

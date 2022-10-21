@@ -13,12 +13,12 @@ ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: a193db82b2b079c1e10fbfb6bfde7aa43b18bc4a
-ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
+ms.openlocfilehash: cafc4c7089e0c042fc65c1e3fd21f8f1e930b785
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "9465166"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689884"
 ---
 # <a name="tax-calculation-overview"></a>Adószámítás áttekintése
 
@@ -74,6 +74,7 @@ Javasoljuk, hogy importálja és állítsa be az adószámítás konfigurációj
 
 | Pénzügyi vagy ellátásilánc-kezelés verziója | Adókonfigurációs verzió               |
 | --------------- | --------------------------------------- |
+| 10.0.31         | Adószámítási konfiguráció 40.56.240 |
 | 10.0.30         | Adószámítási konfiguráció 40.55.239 |
 | 10.0.29         | Adószámítási konfiguráció 40.55.236 |
 | 10.0.28         | Adószámítási konfiguráció 40.54.234 |
@@ -112,11 +113,11 @@ Az adószámítás támogatott honosítási szolgáltatásokkal futtatható. A k
 
 | Verzió | Ország/régió |
 |---------|----------------|
-| 10.0.26 | - Kína <br>- Cseh Köztársaság<br>- Spanyolország |
+| 10.0.26 | -Kína <br>-Cseh Köztársaság<br>-Spanyolország |
 | 10.0.24 | Mexikó |
-| 10.0.23 | - Thaiföld <br>- Japán <br>- Malajzia <br>- Szingapúr |
-| 10.0.22 | - Ausztrália<br>- Bahreini <br>- Kanada<br>- Egyiptomi <br>- Hongkong (KKT) <br>Kuvait <br>- Új-Zéland <br>- Omán <br>- Katar <br>- Szaúd-arab <br>- Dél-Afrika <br>- Egyesült Arab Emírségek |
-| 10.0.21 | - Ausztria <br>- Belgium <br>- Dánia <br>- Észt <br>- Finnország <br>- Franciaország <br>- Németország <br>- Magyarország <br>- Izland <br>- Írország <br>- Olaszország <br>- Lettország <br>- Litván <br>- Hollandia <br>- Norvégia <br>- Lengyelország <br>- Svédország <br>- Svájc <br>- Egyesült Királyság <br>- Amerikai Egyesült Államok |
+| 10.0.23 | -Thaiföld <br>-Japán <br>- Malajzia <br>- Szingapúr |
+| 10.0.22 | -Ausztrália<br>-Bahrein <br>-Kanada<br>-Egyiptom <br>- Hongkong (KKT) <br>-Kuvait <br>- Új-Zéland <br>-Omán <br>-Katar <br>- Szaúd-arab <br>-Dél-Afrika <br>- Egyesült Arab Emírségek |
+| 10.0.21 | -Ausztria <br>-Belgium <br>-Dánia <br>-Észtország <br>-Finnország <br>-Franciaország <br>-Németország <br>-Magyarország <br>-Izland <br>-Írország <br>-Olaszország <br>-Lettország <br>-Litvánia <br>-Hollandia <br>-Norvégia <br>-Lengyelország <br>-Svédország <br>-Svájc <br>-Egyesült Királyság <br>-Egyesült Államok |
 
 Bármely olyan ország/régió esetén, amelyet nem a Microsoft honosított, az adószámítás más globális szolgáltatásokkal is engedélyezhető és futtatható.
 

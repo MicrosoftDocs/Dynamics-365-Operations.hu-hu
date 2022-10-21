@@ -1,5 +1,5 @@
 ---
-title: A gép állapotának esete
+title: A gépállapot forgatókönyve
 description: Ez a cikk a gép állapotának esetét írja le, amelynek segítségével az akkumulátoradatok segítségével nyomon követheti a berendezések rendelkezésre állását.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 1f2b424dccf1963a7917059d412b5df7937496ee
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 30fdfb898384aea4c1f8cb2f36f9e104cd316f90
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428975"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689639"
 ---
-# <a name="the-machine-status-scenario"></a>A gép állapotának esete
+# <a name="the-machine-status-scenario"></a>A gépállapot forgatókönyve
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 A *gépek állapotára* vonatkozó helyzet lehetővé teszi az adatlapadatok használatát a berendezések rendelkezésre állásának figyelése érdekében. Ha beállít egy jelzőt, amely akkor küld jelzést, ha egy gép erőforrás termelési feladata kimenetet hoz létre, de egy megadott időintervallumon belül nem érkezik rádiójel, a felettes irányítópultján megjelenik egy értesítés.
 

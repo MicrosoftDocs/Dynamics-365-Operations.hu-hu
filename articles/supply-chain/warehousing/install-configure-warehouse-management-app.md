@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d6131d205e650c0de88b85434629ed9537c2a0b1
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 4ee87eee382263897d97512f6b01c786734a8f27
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335645"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682534"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás telepítése és csatlakoztatása
 
@@ -272,6 +272,7 @@ Ha nem rendelkezik fájllal vagy QR-kóddal, manuálisan konfigurálhatja az alk
 
         > [!IMPORTANT]
         > Ne fejezze be ezt az értéket perjellel (/).
+        > Győződjön meg róla, hogy a HTTPS (SSL) tanúsítvány érvényes.
 
     - **Active directory bérlő** - Adja meg a Azure AD tartománynevet, amelyet a Supply Chain Management kiszolgálóval használ. Ez az érték a `https://login.windows.net/<your-Azure-AD-domain-name>` formátummal rendelkezik. Íme egy példa: `https://login.windows.net/contosooperations.onmicrosoft.com`. A Azure AD tartománynév megkeresésével kapcsolatos további információkért lásd: [Fontos azonosítók keresése egy felhasználóhoz](/partner-center/find-ids-and-domain-names).
 

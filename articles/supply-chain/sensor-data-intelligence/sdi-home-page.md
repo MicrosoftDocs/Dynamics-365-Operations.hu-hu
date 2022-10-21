@@ -1,5 +1,5 @@
 ---
-title: Belső adatintelligencia honlapja
+title: Sensor Data Intelligence – kezdőlap
 description: Ez a cikk áttekintést nyújt a Biztonsági adatok intelligenciája funkcióról. A szervezetek ennek a funkciónak az segítségével hajtják meg az üzleti folyamatokat a Microsoftban Dynamics 365 Supply Chain Management, a termelésben található gépek és berendezések Internet of Things (Internet of Things) jelzései alapján.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 2e4cd8d4d4ffcd10d02fbf26615f12cdd6ccca9e
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: ba030364056db8b0524de22aacbc6528ef77813b
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428983"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689857"
 ---
-# <a name="sensor-data-intelligence-home-page"></a>Belső adatintelligencia honlapja
+# <a name="sensor-data-intelligence-home-page"></a>Sensor Data Intelligence – kezdőlap
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 A Microsoft Dynamics 365 Supply Chain Management adatinterejelzései lehetővé teszik a szervezetek számára az ellátásilánc-kezelés üzleti folyamatainak irányítását az Internet of Things (IOT) által a termelésirányításban használt gépek és berendezések által jelezve. Ez az Internet-intelligenciával *kapcsolatos* funkció frissített, átnevezett verziója, amely korábban elérhető volt az ellátásilánc-kezeléshez.
 
@@ -39,7 +40,7 @@ Az egyedi adatintelligencia többféle funkciót kínál, amelyek mindegyikét a
 | Forgatókönyv | Leírás |
 |---|---|
 | [Eszköz leállása](sdi-scenario-asset-downtime.md) | A gépi eszközök hatékonyságának pontos nyomon követése a gép leállásának nyomon követésére. |
-| [Eszköz karbantartása](sdi-scenario-asset-maintenance.md) | A karbantartási költség csökkentése és az eszköz élettartamának meghosszabbítása a gépi eszközök kritikus vezérlő pontjainak leolvasásán alapuló karbantartási tervek fejlesztésével. |
+| [Eszközkarbantartás](sdi-scenario-asset-maintenance.md) | A karbantartási költség csökkentése és az eszköz élettartamának meghosszabbítása a gépi eszközök kritikus vezérlő pontjainak leolvasásán alapuló karbantartási tervek fejlesztésével. |
 | [Gép állapota](sdi-scenario-equipment-downtime.md) | A működés hatékonyságát úgy garantálhatja, hogy a mérőműveleteket használja, hogy értesítse a tervezőket a gépek kieséséről, és adja meg a lehetséges késések kijavítására vonatkozó beállításokat. |
 | [Termékminőség](sdi-scenario-product-quality.md) | A termékkötelegek minőségének összehasonlítása az egyes termékkötelegek tényleges tulajdonságainak ( például minőségbiztosítási, hőmérsékleti vagy egyénileg megadott minőségi mérőszámok) összehasonlításával. A rendszer értesíti a felhasználókat, ha eltérés lép fel. |
 | [Termelés késései](sdi-scenario-production-delays.md) | A mérőolvasások segítségével összehasonlíthatja a tényleges ciklusidőt a tervezett ciklusidővel, és értesítheti a felügyelőket, ha a termelés nincs ütemezésben. A felettesek ezután a működés maximális hatékonyságának biztosításához a szükséges mértékben gondoskodhatnak. |
