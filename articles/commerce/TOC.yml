@@ -888,6 +888,8 @@
               href: async-customer-mode.md
             - name: Aszinkron vevők átalakítása szinkron vevőkké
               href: convert-async-to-sync.md
+            - name: Vevői műveletek szinkronizálásának auditálása
+              href: audit-async-customer-operations.md
             - name: Aszinkron vevőlétrehozási mód – GYIK
               href: async-customer-mode-faq.md
             - name: Ügyfélkör
@@ -1296,8 +1298,14 @@
                       href: cookie-consent-module.md
                 - name: Csevegési modulok
                   items:
-                    - name: Commerce-csevegési modul
+                    - name: Commerce csevegési funkciók – áttekintés
+                      href: commerce-chat-overview.md
+                    - name: Commerce csevegés a Customer Service Omnicsatorna modullal
                       href: commerce-chat-module.md
+                    - name: Commerce csevegés a Power Virtual Agents modullal
+                      href: chat-module-pva.md
+                    - name: Commerce csevegési modul proaktív csevegési paraméterei
+                      href: chat-proactive-chat-parameters.md
             - name: Keresés
               items:
                 - name: Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése

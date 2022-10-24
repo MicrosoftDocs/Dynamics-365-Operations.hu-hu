@@ -12,14 +12,12 @@
               items:
                 - name: Újdonságok és változások a Supply Chain Management szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.31 (2022. február)
+                  href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (2022. november)
                   href: get-started/whats-new-scm-10-0-30.md
                 - name: Supply Chain Management 10.0.29 (2022. október)
                   href: get-started/whats-new-scm-10-0-29.md
-                - name: Supply Chain Management 10.0.28 (2022. augusztus)
-                  href: get-started/whats-new-scm-10-0-28.md
-                - name: Supply Chain Management 10.0.27 (2022. július)
-                  href: get-started/whats-new-scm-10-0-27.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók – kezdőlap
@@ -1775,10 +1773,14 @@
                   href: master-planning/supply-schedule.md
                 - name: Szűrők alkalmazása egy tervre
                   href: master-planning/planning-optimization/plan-filters.md
-                - name: Alaptervezés igény-előrejelzéssel
+                - name: Alaptervezés igény-előrejelzésekkel
                   href: master-planning/planning-optimization/demand-forecast.md
+                - name: Alaptervezés ellátási előrejelzésekkel
+                  href: master-planning/planning-optimization/supply-forecast.md
                 - name: Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: Árajánlatok és ajánlatkérések a terv alapján
+                  href: master-planning/planning-optimization/quotation-planning.md
                 - name: A Tervezési optimalizálás által használt dátum- és időparaméterek
                   href: master-planning/planning-optimization/date-time-used.md
                 - name: Biztonsági határok
@@ -2323,6 +2325,8 @@
                   href: pim/tasks/create-product-master.md
                 - name: Az előre meghatározott termékváltozatok létrehozása
                   href: pim/tasks/create-predefined-product-variants.md
+                - name: Lefordított terméknevek és leírások megjelenítése a felhasználói felületen
+                  href: pim/show-translated-product-info.md
                 - name: Mértékegységek kezelése
                   href: pim/tasks/manage-unit-measure.md
                 - name: Mértékegység-átváltás termékváltozatonként
@@ -3633,6 +3637,8 @@
                       href: warehousing/control-warehouse-location-directives.md
                     - name: Munka helyutasításokkal
                       href: warehousing/create-location-directive.md
+                    - name: Helyutasítási javaslatok tesztelése elfogadási tesztekkel
+                      href: warehousing/location-directive-acceptance-tests.md
                     - name: Termékszűrők konfigurálása a raktári tranzakciókhoz
                       href: warehousing/filters-and-filter-codes.md
                     - name: Hely rakodási korlátai

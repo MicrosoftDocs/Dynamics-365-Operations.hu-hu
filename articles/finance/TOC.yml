@@ -12,6 +12,8 @@
               items:
                 - name: Újdonságok és változások a Finance szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.31 (január)
+                  href: get-started/whats-new-changed-10-0-31.md
                 - name: Finance 10.0.30 (november)
                   href: get-started/whats-new-changed-10-0-30.md
                 - name: Finance 10.0.29 (október)
@@ -232,6 +234,26 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: A kötelezettségek számlaegyeztetésére vonatkozó ellenőrzés beállítása
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Számlarögzítési megoldás
+              items:
+                - name: Számlarögzítés – áttekintés
+                  href: accounts-payable/invoice-capture-overview.md
+                - name: Számlarögzítés telepítése
+                  href: accounts-payable/install-invoice-capture.md
+                - name: Számlarögzítés konfigurálása
+                  href: accounts-payable/config-invoice-capture.md
+                - name: Számlarögzítés konfigurációs csoportjai
+                  href: accounts-payable/invoice-capture-config-group.md
+                - name: Számlarögzítés leképezési szabályai
+                  href: accounts-payable/invoice-capture-mapping-rules.md
+                - name: Számlarögzítés munkaterülete
+                  href: accounts-payable/invoice-capture-workspace.md
+                - name: Számlarögzítés speciális beállításai
+                  href: accounts-payable/invoice-capture-advanced-settings.md
+                - name: Számlarögzítés irányítópultja
+                  href: accounts-payable/invoice-capture-dashboard.md
+                - name: Számlarögzítés fogadott fájljai
+                  href: accounts-payable/invoice-capture-rec-files.md
             - name: Szállítói számla automatizálása
               items:
                 - name: Automatizált szállítói számlázási folyamatok – áttekintés
@@ -420,7 +442,7 @@
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
             - name: Előfizetéses számlázás
               items:
-                - name: Előfizetéses számlázás áttekintése
+                - name: Előfizetéses számlázás – áttekintés
                   href: accounts-receivable/subscription-billing-summary.md
                 - name: Ismétlődő szerződéses számlázás
                   items:
