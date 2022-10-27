@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336185"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708725"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -164,7 +164,7 @@ Az Általános gyorsgombra a következő **beállítások** érhetők el:
 - **Engedélyezi az** érintőképernyő zárolását – *A* beállítás Igen beállításával engedélyezheti a dolgozóknak, hogy zárolják a termelési emelet végrehajtási felületének képernyőjét, és így el tudják tásítani a felületet. Ha ez a beállítás *Igen*, a bejelentkezési laphoz hozzáadódik a **zárolási** képernyő a sanizáláshoz. Amikor egy dolgozó kiválasztja ezt a gombot, az érintőképernyő ideiglenesen zárolódik a véletlen bevitel elkerülésének céljára. Ezenfelül megjelenik egy időzítő. A dolgozó ezután biztonságosan megtisztíthatja a készüléket és a képernyőt. Amikor a visszaszámlálás befejeződött, az érintőképernyő automatikusan feloldódik.
 - **Képernyő zárolásának időtartama** – Ha a **Képernyő zárolásának engedélyezése** beállítást *Igen* értékre állították akkor ezzel a beállítással adja meg, hogy hány másodpercig kell zárolni az érintőképernyőt a fertőtlenítéshez. Az időtartamnak 5 és 120 másodperc között kell lennie.
 - **Előállít** egy táblát – *a* beállítás Igen beállítással minden alkalommal új tábla generálható, amikor egy dolgozó a termelési emelet végrehajtási felületét használja a készként jelentésre. Az azonosítótábla a **Raktárkezelési paraméterek** lapon beállított számsorozatból jön létre. Ha a beállítás értéke *Nem*, akkor a dolgozóknak a készként való jelentéskor meg kell határozniuk egy meglévő azonosítótáblát.
-- **Címke nyomtatása** – a beállítás Igen *beállítással* nyomtatható meg az tábla címkéje, amikor egy dolgozó a termelés emeletének végrehajtási felületét használja a készként jelentéshez. A címke konfigurációja a dokumentumirányításban van beállítva, a [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md) részben leírtak szerint.
+- **Címke nyomtatása** – a beállítás Igen *beállítással* nyomtatható meg az tábla címkéje, amikor egy dolgozó a termelés emeletének végrehajtási felületét használja a készként jelentéshez. A címke konfigurációja a dokumentumirányításban van beállítva, a [dokumentumirányítás címkeelrendezései alapján](../warehousing/document-routing-layout-for-license-plates.md).
 
 ### <a name="the-tab-selection-fasttab"></a>A Lap kiválasztása gyorslap
 

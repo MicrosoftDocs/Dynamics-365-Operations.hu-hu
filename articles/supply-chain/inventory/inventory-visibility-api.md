@@ -1,5 +1,5 @@
 ---
-title: Készletláthatóság nyilvános API-jai
+title: Inventory Visibility nyilvános API-jai
 description: Ez a témakör a készlet láthatósága által biztosított nyilvános API-król nyújt részletes információkat.
 author: yufeihuang
 ms.date: 12/09/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 82a43954db8b10554c449f3e8d32ba7e5d7c7f27
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423595"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719315"
 ---
-# <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
+# <a name="inventory-visibility-public-apis"></a>Inventory Visibility nyilvános API-jai
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,6 +47,7 @@ A következő táblázat a jelenleg elérhető API-kat sorolja fel:
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Feladás | [Több ütemezett, ütemezett, de időpontban végrehajtott módosítás létrehozása](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Feladás | [Lekérdezés a post módszer használatával](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Beolvasás | [Lekérdezés a get módszer használatával](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/exactquery | Feladás | [Pontos lekérdezés a post metódus használatával](#exact-query-with-post-method) |
 | /api/environment/{environmentId}/allocation/allocation/allocate | Feladás | [Egy felosztási esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/unallocate | Feladás | [Egy nem lefoglalt esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation/reallocate | Feladás | [Egy újrafokosó esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
@@ -109,7 +110,7 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
      | ügyfél azonosítója     | ${aadAppId}                                      |
      | titkos ügyfélkód | ${aadAppSecret}                                  |
      | engedélyezési típus    | ügyfél_azonosító adatai                               |
-     | Hatókör         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
+     | Hatókör         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.Alapértelmezett    |
 
    Válaszként egy Azure AD tokent (`aadToken`) kell kapnia. Az alábbi példához hasonlóan jelenik meg.
 
@@ -692,11 +693,85 @@ Ez egy minta bejedő URL-címe. Ez a get-kérés pontosan megegyezik a korábban
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
+### <a name="exact-query-by-using-the-post-method"></a><a name="exact-query-with-post-method"></a> Pontos lekérdezés a post metódus használatával
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+A kérés törzsrészében `dimensionDataSource` egy választható paraméter. Ha nincs beállítva, `dimensions` a `filters` in dimenziók alapdimenzióként *lesznek kezelve*. A `filters` paraméternek négy kötelező mezője van: `organizationId`, `productId`, `dimensions` és `values`.
+
+- `organizationId` Csak egy értéket tartalmazhat, de az továbbra is tömb.
+- `productId` A(0) <a0/<a0/<a2/<a Ha ez egy üres tömb, a rendszer az összes terméket visszaküldi.
+- A tömbben `dimensions` szükség van rá, `siteId``locationId` de bármilyen sorrendben megjelenhet más elemekkel.
+- `values` A ()<a0/<a0/a1><a2/<a2/5><a2/<a2/<a2/<a4 `dimensions`>
+
+`dimensions` A program `filters` automatikusan hozzáadja a `groupByValues`
+
+A `returnNegative` paraméter szabályozza, hogy az eredmények tartalmaznak-e negatív bejegyzéseket.
+
+A következő példa a törzs tartalmának mintáját mutatja.
+
+```json
+{
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "dimensions": ["siteId", "locationId", "colorId"],
+        "values" : [
+            ["iv_postman_site", "iv_postman_location", "red"],
+            ["iv_postman_site", "iv_postman_location", "blue"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
+```
+
+Az alábbi példa bemutatja, hogyan lehet lekérdezni több telephelyen és helyen található összes terméket.
+
+```json
+{
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": [],
+        "dimensions": ["siteId", "locationId"],
+        "values" : [
+            ["iv_postman_site_1", "iv_postman_location_1"],
+            ["iv_postman_site_2", "iv_postman_location_2"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
+```
+
 ## <a name="available-to-promise"></a>Ígérethez rendelkezésre áll
 
 A készlet láthatóságának beállításával a jövőbeli aktuális készletváltozások ütemezését és az "Aktuális készletben rendelkezésre álló mennyiség számítását" is beállíthatja. Az ígérethez rendelkezésre álló cikk mennyisége, amely a következő időszakban ígérhető a vevőnek. Az ígérethez rendelkezésre álló mennyiség számítása nagy mértékben növelheti a rendelés teljesítésére való képességét. A funkció engedélyezéséről, valamint a készlet-láthatóság és a készlet láthatóságának az API-ja [között a funkció engedélyezése után való kapcsolatról a Készlet láthatósága](inventory-visibility-available-to-promise.md#api-urls) az aktuális készlet változási ütemezésében található, és a funkció ígérethez rendelkezésre áll.
 
-## <a name="allocation"></a>Foglalás
+## <a name="allocation"></a>Felosztás
 
 A felosztáshoz kapcsolódó API-k a készlet [láthatósági felosztásában találhatók](inventory-visibility-allocation.md#using-allocation-api).
 

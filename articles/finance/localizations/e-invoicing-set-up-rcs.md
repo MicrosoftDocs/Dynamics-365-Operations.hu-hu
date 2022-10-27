@@ -1,8 +1,8 @@
 ---
-title: A szabályozási konfigurációs szolgáltatás (RCS) beállítása
-description: Ez a cikk a Szabályozási konfigurációs szolgáltatás (RCS) beállítását ismerteti.
+title: A szabályozó konfigurációs szolgáltatás (RCS) beállítása
+description: Ez a témakör bemutatja a szabályozó konfigurációs szolgáltatás (RCS) beállítását.
 author: gionoder
-ms.date: 02/09/2022
+ms.date: 10/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 63a4f77d6e80133947dff678cef3885167ec55be
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 32ced98925ee66e02f0b073b4acbd586666ac20c
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9285787"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710781"
 ---
-# <a name="set-up-regulatory-configuration-service-rcs"></a>A szabályozási konfigurációs szolgáltatás (RCS) beállítása
+# <a name="set-up-regulatory-configuration-service-rcs"></a>A szabályozó konfigurációs szolgáltatás (RCS) beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk a Szabályozási konfigurációs szolgáltatás (RCS) beállítását ismerteti.
+Ez a témakör bemutatja a szabályozó konfigurációs szolgáltatás (RCS) beállítását.
 
 ## <a name="turn-on-globalization-features"></a>A globalizációs funkciók bekapcsolása
 
@@ -34,12 +34,21 @@ Ez a cikk a Szabályozási konfigurációs szolgáltatás (RCS) beállítását 
 2. Válassza ki a **Funkció kezelése** csempét.
 3. A **Funkció kezelése** munkaterületen válassza ki a **Globalizációs funkciókat** a listán, majd válassza az **Engedélyezés most** lehetőséget.
 
-A Globalizációs funkciók **munkaterület csempéjének** most meg kell jelennie a fő RCS irányítópulton.
+A globalizációs funkciók munkaterületének **csempe** megjelenőnek kell lennie a fő RCS-vezérlőpulton.
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>RCS-integráció paramétereinek beállítása az Elektronikus számlázással
 
 1. A **Globalizációs funkciók** munkaterületen, a **Kapcsolódó beállítások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** hivatkozást.
-2. **Az Elektronikus számlázás** lap Szolgáltatásvégpont URI-ja **mezőjében** adja meg a földrajzi helyének Microsoft Azure megfelelő szolgáltatásvégpontot az alábbi táblázatban látható módon.
+2. A paraméterek első beállításakor a rendszer rákérdez, hogy csatlakozzon az életciklus-szolgáltatásokhoz. Kattintson **ide a Lifecycle Services** szolgáltatáshoz való csatlakozáshoz, és a kapcsolat létrejötte után válassza az **OK gombra**.
+
+    > [!IMPORTANT]
+    > Egyes országokban vagy régiókban, ahol az adatok lakhelyét érvényesítik, és az RCS-et más területen létesítik, ahol az LCS létesítve van, a következő kapcsolati hibaüzenet jelenik meg az RCS szolgáltatásban: "Nem található olyan HTTP erőforrás, amely megfelel az URI-nak". Válassza ki az **OK** lehetőséget. Újabb hibaüzenetet kaphat az RCS szolgáltatásban: "Nem sikerült generálni a Dynamics Lifecycle services felhasználói jogkivonatát a felhasználó () nevében. Forduljon a rendszergazdához."
+    >  
+    > Ez azért fordul elő, mert az LCS egy globális szolgáltatás, amely az Egyesült Államok régiójában van létesítve. Az aktuális régióból származó RCS-ek az adatokra vonatkozó tartózkodási kötvény miatt nem tudnak csatlakozni az LCS-hez. Ezen a módon két lehetséges megoldás lehetséges:
+    > - Törölje az RCS-t az aktuális régióból, és hozza létre újra az EGYESÜLT Államok régiójában.
+    > - A hibák figyelmen kívül hagyása és folytatás az Elektronikus számlázás beállítással. Ezek a hibák nincsenek hatással az elektronikus számlázás funkcióra.
+
+3. Az Elektronikus **számlázás** **lap Szolgáltatási végpont URI** Microsoft Azure mezőjében adja meg a földrajzi régió megfelelő szolgáltatási végpontját, amint azt a következő táblázat mutatja.
 
     | Adatközpont Azure földrajzi régió | Szolgáltatási végpont URI-címe |
     |----------------------------|----------------------|
@@ -55,47 +64,49 @@ A Globalizációs funkciók **munkaterület csempéjének** most meg kell jelenn
     | Kanada                     | <p>`https://gw.ca-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.ca-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Franciaország                     | <p>`https://gw.fr-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | India                      | <p>`https://gw.in-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Norvégia                     | <p>`https://gw.no-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Dél-Afrika               | <p>`https://gw.za-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-3. Ellenőrizze, hogy az **Alkalmazásazonosító** mező **0cdb527f-a8d1-4bf8-9436-b352c68682b2** értékre legyen állítva. Ez egy rögzített érték. Győződjön meg arról, hogy csak egy globálisan egyedi azonosító (GUID) van megadva, és hogy az érték nem tartalmaz más szimbólumokat, például szóközöket, vesszőket, pontokat vagy idézőjeleket.
-4. **Az LCS-környezetazonosító** mezőbe írja be az életciklus-szolgáltatási (LCS) környezet azonosítóját Microsoft Dynamics. Ez az érték az elektronikus számlázási szolgáltatással használni kívánt Pénzügyi vagy Ellátásilánc-kezelési környezetre való hivatkozás. Az azonosító lekéréséhez jelentkezzen be az LCS-be [...](https://lcs.dynamics.com/), nyissa meg a projektet, majd a **Környezet** kezelése lap **Környezet részletei** szakaszában keresse meg a **Környezetazonosító** mezőt.
+3. Ellenőrizze és adja meg az **Alkalmazásazonosító mezőben** a rögzített értéket **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Győződjön meg arról, hogy csak egy globálisan egyedi azonosítót (GUID) adott meg, és az érték nem tartalmaz más szimbólumokat, például szóközt, vesszőt, időszakot vagy idézőjelet.
+4. **Az LCS környezetazonosító** mezőbe írja Microsoft Dynamics be a Lifecycle Services (LCS) környezet azonosítóját. Ez az érték annak a pénzügyi vagy ellátásilánc-kezelési környezetnek a hivatkozása, amely az elektronikus számlázási szolgáltatással használható. Az azonosító bejezéséhez jelentkezzen [be az LCS-be](https://lcs.dynamics.com/), nyissa meg a projektet, **·** **·** **majd** a Környezet kezelése lap Környezet részletei szakaszÁnak Környezetazonosító mezőjében keresse meg.
 
     > [!IMPORTANT]
-    > Ha az Elektronikus számlázás bővítmény több Finance vagy Supply Chain Management környezetben van telepítve az LCS-ben, mindig a legutóbb telepített környezet környezetazonosítóját használja. Ha úgy dönt, hogy új környezetbe telepíti a bővítményt Miután beállította és használta az Elektronikus számlázás funkciót, frissítse az LCS-környezetazonosító **mezőt az** RCS-ben a legújabb értékre.
+    > Ha az elektronikus számlázás bővítmény több pénzügyi vagy ellátásilánc-kezelési környezetben is telepítve van az LCS szolgáltatásban, akkor mindig a legutóbb telepített környezet környezeti azonosítóját használja. Ha úgy dönt, hogy a bővítményt új környezetbe telepíti az Elektronikus számlázás funkció beállítása és használata után, **a legfrissebb értékre frissítse az RCS LCS-környezetazonosító** mezőjét.
 
 5. Válassza a **Mentés** gombot, majd zárja be az oldalt.
 
 ## <a name="configuration-providers"></a>Konfigurációszolgáltatók
 
-A konfigurációszolgáltatók segítségével megkülönböztetheti az elektronikus számlázási folyamatokban használt elektronikus jelentéskészítési (ER) konfigurációk tulajdonosait és a tulajdonosok globalizációs funkcióit. A Microsoft által biztosított és a globális adattárban közzétett összes globalizációs funkció esetében a konfigurációszolgáltató a Microsoft **() értékre** van állítva.`http://microsoft.com`
+A konfigurációszolgáltatókkal megkülönböztetheti az elektronikus számlázási folyamatokban és a tulajdonosok globalizációs funkcióiban használt elektronikus jelentési (ER) konfigurációkat. A Microsoft által biztosított és a globális tárházban közzétett minden globalizációs funkciónál a konfigurációszolgáltató a **Microsoft**`http://microsoft.com` ().
 
-Csak az aktív konfigurációszolgáltatóhoz tartozó ER-konfigurációkat és globalizációs funkciókat módosíthatja. Ezeket a konfigurációkat és szolgáltatásokat sablonként használhatja az aktív konfigurációszolgáltatóhoz tartozó konfigurációk és szolgáltatások létrehozásához, így módosíthatja őket.
+Csak az aktív konfigurációszolgáltatóhoz tartozó ER-konfigurációk és globalizációs funkciók módosíthatók. Ezeket a konfigurációkat és szolgáltatásokat sablonként használhatja az aktív konfigurációszolgáltatóhoz tartozó konfigurációk és funkciók létrehozásához, hogy aztán módosítani tudja azokat.
 
-Először hozza létre a konfigurációs szolgáltatókat. Ezután állítsa be az egyiket aktívnak. A Microsoft **konfigurációszolgáltatóját nem állíthatja be** aktívként.
+Először hozza létre a konfiguráció-szolgáltatókat. Ezután állítsa az egyiket aktívként. A Microsoft **konfigurációs szolgáltató nem** lehet aktív.
 
 ### <a name="create-a-configuration-provider"></a>Konfigurációszolgáltató létrehozása
 
 1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Kapcsolódó hivatkozások** szakaszban, válassza a **Konfigurációszolgáltatók** elemet.
 2. Válassza az **Új** lehetőséget.
-3. **A Név** mezőben adjon meg egy egyedi nevet a konfigurációszolgáltatónak.
-4. **Az Internetcím** mezőbe írja be a konfigurációszolgáltató egyedi URL-címét.
+3. A Név **mezőbe** írja be a konfigurációszolgáltató egyedi nevét.
+4. Az Internetcím **mezőben** adja meg a konfigurációs szolgáltató egyedi URL-címét.
 5. Válassza a **Mentés** gombot, majd zárja be az oldalt.
 
-### <a name="select-a-configuration-provider-as-active"></a>Válasszon ki egy konfigurációszolgáltatót aktívként
+### <a name="select-a-configuration-provider-as-active"></a>Konfigurációszolgáltató kiválasztása aktívként
 
-1. A konfigurációszolgáltatók listájában válassza ki azt a konfigurációszolgáltatót, amelyet aktívként szeretne beállítani.
+1. A konfigurációs szolgáltatók listájában válassza ki azt a konfigurációs szolgáltatót, amely aktívként szeretné beállítani.
 2. Válassza ki az **Aktív beállítása** elemet.
 
-## <a name="import-er-configurations-from-the-global-repository"></a>ER-konfigurációk importálása a globális adattárból
+## <a name="import-er-configurations-from-the-global-repository"></a>ER-konfigurációk importálása a globális tárházból
 
 1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Kapcsolódó hivatkozások** szakaszban, válassza a **Konfigurációszolgáltatók** elemet.
-2. A konfigurációszolgáltatók listájában válassza **a Microsoft**, majd az Adattárak lehetőséget.**·**
-3. Válassza a Globális **lehetőséget**, majd a Műveleti ablaktáblán válassza a Megnyitás **lehetőséget**.
-4. Importálja a következő ER-modelleket:
+2. A konfigurációs szolgáltatók listájában válassza ki **a Microsoftot**, majd válassza ki a **tárházakat**.
+3. Válassza a **Globális** lehetőséget, majd a munkaablakban válassza a Megnyitás **lehetőséget**.
+4. A következő ER modellek importálása:
 
     - **Vevői számlakontextus-modell**
     - **Számlamodell**
-    - **Pénzügyi dokumentumok** (brazíliai forgatókönyvekhez, ha szükséges)
+    - **Pénzügyi bizonylatok** (szükség esetén brazil helyzetekre)
     - **Válaszüzenet-modell**
 
-5. Ha **a számlamodell-leképezés** nem lett automatikusan importálva, importálja azt.
+5. Ha **a számlamodell megfeleltetését** nem importálta automatikusan, importálja.
 6. Zárja be a lapot.

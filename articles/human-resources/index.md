@@ -2,7 +2,7 @@
 title: Humán erőforrások honlap
 description: A Dynamics 365 Human Resources munkaerővel kapcsolatos háttérinformációkat nyújt, amelyekkel adatokon alapuló alkalmazotti élményeket hozhat létre több területen keresztül.
 author: twheeloc
-ms.date: 08/03/2021
+ms.date: 09/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,16 +16,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a0710065765c907dc2cc3ef5eeec0414721f7779
-ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
+ms.openlocfilehash: 111070e3ce05e0f60f02259f73be56536fc017e7
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "9539109"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702040"
 ---
 # <a name="human-resources-home-page"></a>Humán erőforrások honlap
-
-
 
 Ez a cikk a Microsoft Dynamics 365 Emberi erőforrások között található súgótémakörök és egyéb erőforrások listáját tartalmazza. 
 

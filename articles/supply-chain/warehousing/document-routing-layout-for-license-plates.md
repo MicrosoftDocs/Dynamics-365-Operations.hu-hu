@@ -1,5 +1,5 @@
 ---
-title: Dokumentumirányítási elrendezés azonosítótábla-címkékhez
+title: Dokumentumirányítás címkeelrendezései
 description: Ez a témakör azt ismerteti, hogyan lehet a címkékre nyomtatni az értékeket formázási módszerek használatával.
 author: perlynne
 ms.date: 04/01/2020
@@ -13,23 +13,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4e0c16b71c257cae832870ca58679884047ea16
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847875"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708645"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentumirányítás elrendezés azonosítótábla-címkékhez
+# <a name="document-routing-label-layout"></a>Dokumentumirányítás címkeelrendezése
 
 [!include [banner](../includes/banner.md)]
 
+Ez a témakör azt ismerteti, hogyan lehet létrehozni elrendezéseket az táblához, tárolóhoz és hullámcímkékhez. Ez a témakör az elrendezések létrehozásához használt programozási nyelv (ZPL) használatával kapcsolatos irányelveket is tartalmaz.
 
-A dokumentumirányítási elrendezés határozza meg az azonosítótábla-címkék elrendezését, valamint a rájuk nyomtatandó adatokat. A nyomtatási műveletek aktiválási pontjait a mobileszköz menüelemeiben és a munkasablonok modulban állíthatja be.
+A dokumentumirányítás címkeelrendezései határozzák meg a címkék elrendezését és a címkékre nyomtatandó adatokat. A nyomtatási műveletek aktiválási pontjait a mobileszköz menüelemeiben és a munkasablonok modulban állíthatja be.
 
-Egy tipikus esetben a raktári befogadó adminisztrátorok közvetlenül a fogadó területre érkezett raklapok tartalmának rögzítése után azonnal kinyomtatják az azonosítótábla-címkéket. A fizikai címkék a raklapokra lesznek rögzítve. Ezt követően a következő betárolási műveletek során és a kimenő kitárolási műveletek során is használhatók ellenőrzéshez.
+Az ebben a cikkben található információ minden dokumentumirányítási címkeelrendezésre érvényes, [így](tasks/license-plate-label-printing.md) az táblacímkék, [...](print-container-labels.md)[a tárolócímkék és a hullámcímkék elrendezésére is vonatkozik](configure-wave-label-printing.md).
 
-Rendkívül összetett címkéket nyomtathat, feltéve, hogy a nyomtatóeszköz értelmezni tudja a ráküldött szöveget. Például a Zebra Programming Language (ZPL) egy vonalkódot tartalmazó elrendezése a következő példához hasonlíthat.
+Rendkívül összetett címkéket nyomtathat, feltéve, hogy a nyomtatóeszköz értelmezni tudja a ráküldött szöveget. Például egy vonalkódot tartalmazó ZPL-elrendezés hasonló lehet a következő példához.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,11 +46,9 @@ Rendkívül összetett címkéket nyomtathat, feltéve, hogy a nyomtatóeszköz 
 ^PQ1,,,Y^XZ
 ```
 
-A címke nyomtatási folyamatának részeként a példa szövegét `$LicensePlateId$` egy adatértékkel helyettesíti a program.
+A címke nyomtatási folyamatának részeként a példa szövegét `$LicensePlateId$` egy adatértékkel helyettesíti a program. Számos széles körben elérhető címke-létrehozási eszköz segít a szöveg formázásában a címkék elrendezéséhez. Számos ilyen eszköz támogatja a `$FieldName$` formátumot. Mindemellett a Microsoft Dynamics 365 Supply Chain Management speciális formázási logikát használ a dokumentumirányítási elrendezés mező-hozzárendelésének részeként.
 
 A kinyomtatni kívánt értékek megtekintéséhez nyissa meg a **Raktárkezelési \> Lekérdezéseket és a jelentések \> Azonosítótábla-címkék** lehetőséget.
-
-Számos széles körben elérhető címke-létrehozási eszköz segít a szöveg formázásában a címkék elrendezéséhez. Számos ilyen eszköz támogatja a `$FieldName$` formátumot. Mindemellett a Microsoft Dynamics 365 Supply Chain Management speciális formázási logikát használ a dokumentumirányítási elrendezés mező-hozzárendelésének részeként.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>A funkció bekapcsolása a rendszerhez
 
@@ -137,7 +136,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## <a name="more-information-about-how-to-print-labels"></a>A címkenyomtatással kapcsolatos további információk
 
-A címkék beállításával és nyomtatásával kapcsolatos további tudnivalókat lásd az [Azonosítótábla-címke nyomtatásának engedélyezése](tasks/license-plate-label-printing.md) című témakört.
+A címkék beállítását és nyomtatását a következő cikkekben talál:
 
+- [Táblacímke nyomtatása](tasks/license-plate-label-printing.md)
+- [Tárolócímkék nyomtatása](print-container-labels.md)
+- [Hullámcímke nyomtatása](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

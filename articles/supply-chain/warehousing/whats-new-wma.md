@@ -10,18 +10,23 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 645590bbf00f49bb0f3511e7fa02c8f6add661fc
-ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
-ms.translationtype: HT
+ms.openlocfilehash: da7e8a47496092a00ecc05c17933cc0e0cdb0fd0
+ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "9682614"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9702195"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás újdonságai vagy változásai
 
 [!include [banner](../includes/banner.md)]
 
 Ez a cikk a Microsoft Raktárkezelés mobilalkalmazás minden egyes kiadott verziójához tartalmaz új funkciókat, javításokat, javításokat és ismert problémákat Dynamics 365 Supply Chain Management.
+
+## <a name="version-20350"></a>2.0.35.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+- Kijavított egy problémát, amely Android miatt az alkalmazás össze fogomni, **ha a Munkalista** lapot megnyitják, amikor nem volt látható kártya.
 
 ## <a name="version-20340"></a>2.0.34.0-s verzió
 

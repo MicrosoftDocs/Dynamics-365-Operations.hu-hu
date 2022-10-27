@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 11378991a24e1a5f5e213d64f0f414db2e5c2573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9d4a408f2169b220fefd9ab7e9f3b37217fb3cfe
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279900"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710835"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Globalizációs funkció befejezése, közzététele és üzembe helyezése
 
@@ -59,8 +59,8 @@ Az RCS **esetében** a Deploy paranccsal lehet közzétenni egy elektronikus sz�
 2. A lap **jobb** oldalán található Verziók lapon válassza ki azt az elektronikus számlázási funkcióverziót, amely a szolgáltatási környezetbe vagy a csatlakoztatott alkalmazásba telepítve van. A kiválasztott verziónak Kész vagy Közzétett állapotúnak **kell** **lennie**.
 3. Válassza **a Telepítés** lehetőséget, majd válassza az alábbi beállítások egyikét vagy mindkettőt a telepítés célának meghatározásához:
 
-    - **Csatlakoztatott alkalmazás** – az alkalmazásbeállítás Microsoft Dynamics által biztosított konfigurációt a 365 Pénzügy Dynamics 365 Supply Chain Management példányán írják, vagy már hozzá társították.
-    - **Szolgáltatási környezet** – az elektronikus számlázási funkció verziója a szolgáltatási környezetre van telepítve. Az elektronikus számlázás ezután készen áll a Pénzügy vagy az Ellátásilánc-kezelés által küldött elektronikus dokumentumok fogadására és feldolgozására.
+    - **Csatlakoztatott alkalmazás** – nem kötelező, de akkor kell használni, Microsoft Dynamics ha az alkalmazásbeállítás által megadott konfigurációt a 365 Pénzügy Dynamics 365 Supply Chain Management példányra vagy korábban hozzá társították. Ha kihagyja ezt a telepítéstípust, akkor kézzel kell konfigurálni a Pénzügy vagy az Ellátásilánc-kezelés alkalmazásbeállításában megadott paramétereket.
+    - **Szolgáltatási környezet** – ezzel az elektronikus számlázási funkcióverziót a szolgáltatási környezetben is telepítheti. Az elektronikus számlázás ezután készen áll a Pénzügy vagy az Ellátásilánc-kezelés által küldött elektronikus dokumentumok fogadására és feldolgozására.
 
 > [!NOTE]
 > Általában meg fogja változtatni az elektronikus jelentéskészítési (ER) szolgáltatásnak a szolgáltatási környezetbe telepítve szükséges paramétereit. A csatlakoztatott alkalmazás változtatása ritka lesz. Csak akkor telepítse az új verziókat a csatlakoztatott alkalmazásra, ha módosítja az alkalmazás megfelelő paramétereit.

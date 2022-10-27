@@ -1,5 +1,5 @@
 ---
-title: A Dynamics 365 Supply Chain Management 10.0.30 előzetes verziója (2022. november)
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.30 alkalmazásban (2022. november)
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.30 verziójában új vagy módosult funkciókat ismerteti.
 author: kamaybac
 ms.date: 09/08/2022
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 18fec49f2388159cae0809c63685102a04e90c57
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 2983c113487934fd0751efcef9129e1f28d8dce8
+ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689186"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714798"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10030-november-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.30 alkalmazásban (2022. november)
 
@@ -40,7 +40,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 
 Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tartalmazza: Ezek közül mindegyik fejlesztés egy már meglévő funkciót fejleszt tovább. Mivel fejlesztésekről van szó, nem szerepelnek a [kiadási tervben](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Alapértelmezés szerint mindegyik fejlesztés ki van kapcsolva (hacsak nincs másképpen jelezve), így biztos lehet abban, hogy nem ütköznek a meglévő testreszabásokkal vagy beállításokkal.
 
-Ha bármelyik funkciót be szeretné kapcsolni, akkor ezt a [funkciókezelésben kell megtenni](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Ha bármelyik funkciót be szeretné kapcsolni, akkor ezt a [funkciókezelésben kell megtenni.](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)
 
 | Modul | Funkcióneve a funkciókezelésben | További információ |
 |---|---|---|
@@ -55,7 +55,7 @@ A Microsoft Dynamics 365 Supply Chain Management 10.0.30 platformfrissítéseket
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
-A 10.0.29-es verzióba bekerülő frissítések hibajavításával kapcsolatos információk megtekintéséhez jelentkezzen be a Lifecycle Services (LCS) [alkalmazásba, és tekintse meg a tudásbáziscikket](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
+A 10.0.30 verzióba foglalt frissítések hibajavításával kapcsolatos információk megtekintéséhez jelentkezzen be a Lifecycle Services (LCS) [alkalmazásba, és tekintse meg a tudásbáziscikket](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
 
 ### <a name="dynamics-365-and-industry-clouds-2022-release-wave-1-plan"></a>Dynamics 365 és ipari felhők: 2022-es 1. kiadási hullám csomag
 

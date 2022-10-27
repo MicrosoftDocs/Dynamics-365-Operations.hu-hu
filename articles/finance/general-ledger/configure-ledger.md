@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14d6ba013a93756f86e959756dd3073851881095
+ms.sourcegitcommit: c6c2486be2359bd30106f7f52bda788239147d8c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864339"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "9713889"
 ---
 # <a name="configure-ledgers"></a>Főkönyvek konfigurálása
 
@@ -42,7 +42,7 @@ A Dynamics 365 Pénzügy minden jogi személye konfigurálható egy vagy több s
 
 Vegye figyelembe, hogy ha több számlastruktúrával rendelkezik, csak azokat a számlastruktúrákat választhatja ki, amelyek nem rendelkeznek átfedésben lévő fő számlák és pénzügyi dimenziók kombinációival. Az egyik számlastruktúra például úgy van konfigurálva, hogy 1000 és 1999 között adjon hozzá egy üzleti egységet a fő számlákhoz. Egy másik számlastruktúrában hozzáadta a Részleg pénzügyi dimenzióját az 1-gyel kezdődő fő számlákhoz. Ebben az esetben csak az egyik számlastruktúra adható hozzá ugyanabban a jogi személyben.
 
-A főkönyv számlastruktúráinak konfigurálásához a **Főkönyv** lapon lévő **Számlastruktúrák** gyorslapon válassza a **Hozzáadás** lehetőséget, majd válasszon egy számlastruktúrát a listában, és kattintson a **Kiválasztás** lehetőségre. Eltarthat néhány percig a fiókstruktúrák hozzáadása és mentése. Ne feledje, hogy a kiválasztott számlastruktúráknak aktívnak kell lenniük. Ellenkező esetben a számlastruktúrák részletei nem lesznek hatékonyak azokban a jogi személyekben, ahol kapcsolódnak.
+A főkönyv számlastruktúráinak konfigurálásához a **Főkönyv** lapon lévő **Számlastruktúrák** gyorslapon válassza a **Hozzáadás** lehetőséget, majd válasszon egy számlastruktúrát a listában, és kattintson a **Kiválasztás** lehetőségre. A számlastruktúrák hozzáadása és mentése csak néhány percig tart. Amikor a módosított számlastruktúrát mentik a főkönyvbe, megkezdődik az összes feladatlan tranzakció szinkronizálásának folyamata. Egy másik jogi személy főkönyvi számlájának módosítása előtt meg kell várnia annak a jogi személynek az aktuális főkönyvében történt változtatását, ahol a módosítás történik. Ne feledje, hogy a kiválasztott számlastruktúráknak aktívnak kell lenniük. Ellenkező esetben a számlastruktúrák részletei nem lesznek hatékonyak azokban a jogi személyekben, ahol kapcsolódnak.
 
 Számlastruktúra eltávolításához a **Főkönyv** lap **Számlastruktúrák** gyorslapon válassza az **Eltávolítás** lehetőséget. Vegye figyelembe, hogy ha eltávolít egy számlastruktúrát a főkönyvből, akkor nem távolítja el azokat a tranzakciókat, amelyeket az adott számlastruktúra konfigurációjával adtak fel.
 
@@ -70,7 +70,7 @@ A kiegyenlítő tételekről további információt a [Kiegyenlített naplók az
 
 A **Főkönyv** lap a tranzakciók főkönyvbe történő feladásakor használt pénznemek szabályozására és meghatározására is szolgál. Meg kell adnia az összes bizonylat főkönyvi **Könyvelési pénznem** oszlopában használt könyvelési pénznemet. Ezenkívül a **Jelentési pénznem** oszlopban tetszés szerint kiválaszthat egy második pénznemet is. Ha kiválaszt egy jelentési pénznemet, akkor minden tranzakció az adott pénznemben lesz rögzítve a főkönyv **Jelentési pénznem** oszlopában az összes bizonylaton.
 
-Ha a tranzakciók feladása más pénznemben történik, a rendszer automatikusan átváltja a tranzakció összegét a tranzakciók pénzneméből a bizonylaton lévő könyvelési pénznemre és jelentési pénznemre. A **Főkönyv** lap **Könyvelési pénznem árfolyamtípusa** mezőjében válassza ki a bizonylaton szereplő könyvelési pénznemre átváltandó árfolyamokhoz a tranzakció pénzneméről a könyvelési pénznemre konfigurált árfolyam típusát. Ha egy jelentési pénznemet választott, akkor a **Jelentési pénznem árfolyamtípusa** mezőt is be kell állítania, hogy milyen árfolyamot kell használni a tranzakció pénznemének a bizonylaton lévő jelentés pénznemére történő átváltáshoz.
+Ha a tranzakciók feladása másik pénznemben történik, a rendszer automatikusan átváltja a tranzakció összegét a tranzakció pénzneme alapján a könyvelési és jelentési pénznemre a bizonylaton. A **Főkönyv** lap **Könyvelési pénznem árfolyamtípusa** mezőjében válassza ki a bizonylaton szereplő könyvelési pénznemre átváltandó árfolyamokhoz a tranzakció pénzneméről a könyvelési pénznemre konfigurált árfolyam típusát. Ha egy jelentési pénznemet választott, akkor a **Jelentési pénznem árfolyamtípusa** mezőt is be kell állítania, hogy milyen árfolyamot kell használni a tranzakció pénznemének a bizonylaton lévő jelentés pénznemére történő átváltáshoz.
 
 Ha költségvetési funkciót használ, beállíthatja a **Költségvetés árfolyamtípusa** mezőt is, hogy jelezze a költségvetési tranzakciók egyik pénznemből a másikba történő átváltásához használandó árfolyamot.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4ee87eee382263897d97512f6b01c786734a8f27
-ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
+ms.openlocfilehash: 940a3c1d60347c365575f29b853b83a028acad53
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "9682534"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714762"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás telepítése és csatlakoztatása
 
@@ -63,6 +63,8 @@ Ahelyett, hogy egy alkalmazás-áruházból telepít, letöltheti az alkalmazás
 
 - **Android:** [Raktárkezelés (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
     Ha egy előzetes verziót tölt le, néhány további lépés szükséges a telepítéshez. A részleteket lásd: [Android-alkalmazások tesztelése](/appcenter/distribution/testers/testing-android).
+
+Az Alkalmazásközpontból letöltött build telepítésével kapcsolatos tudnivalókat [lásd: Build telepítése](/appcenter/distribution/installation).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webes szolgáltatás alkalmazás létrehozása az Azure Active Directory szolgáltatásban
 

@@ -6,18 +6,19 @@ ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c67fd12c31b475b323bc4c7feee4cc5267da7793
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336545"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714699"
 ---
 # <a name="usmca-certification-of-origin"></a>USMCA eredettanúsítvány
 
@@ -57,7 +58,7 @@ Az elemekről és azok értékeinek a megtalálásról a jelen cikk további sza
 Ha egy szállítmányhoz USMCA eredettanúsítványt szeretne nyomtatni, tegye a következőket:
 
 1. Válasszon az alábbi lehetőségek közül:
-    - Menjen a **Szállításkezelés > Szállítmányok > Minden szállítmány** lehetőségre, és válassza ki azt a szállítmányt, amelyhez ki szeretné nyomtatni a bizonylatot.
+    - Menjen a Szállításkezelés **tervezéséhez \> minden \> szállítmányhoz \>**, és válassza ki azt a szállítmányt, amelyről nyomtatni szeretné a dokumentumot.
     - Nyissa meg annak a szállítmánynak a **Szállítmány részletei** oldalát, amelyhez ki szeretné nyomtatni a bizonylatot (többféleképpen is beszerezheti, többek között a **Minden szállítmány** oldalról).
 1. A Művelet panelen nyissa meg a **Szállítmányok** fület, és a **Nyomtatás** csoportban válassza az **USMCA eredettanúsítvány** lehetőséget.
 1. Megnyílik az **Eredettanúsítvány** párbeszédpanel. A dokumentum létrehozásához adja meg a következő alszakaszokban leírt beállításokat, majd kattintson az **OK** gombra.

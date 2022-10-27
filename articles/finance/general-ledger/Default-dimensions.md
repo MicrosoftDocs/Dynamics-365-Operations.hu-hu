@@ -1,8 +1,8 @@
 ---
 title: A pénzügyi dimenziók és a feladás
-description: Amikor megtervezi beállítja a számlatükröt, át kell gondolnia, hogyan működnek majd együtt az egyes elemek egy dokumentum vagy egy napló feladásakor. Ezen összetevők közé tartoznak a számlastruktúrák, a speciális szabályok, valamint a kiegyenlítő és a rögzített dimenziók. Ez a cikk bemutatja, hogy mi az egyes összetevők, és hogyan működnek együtt az összetevők.
+description: Ez a témakör bemutatja a számlatükret összetevőit, valamint az összetevők együttes működikát.
 author: aprilolson
-ms.date: 08/04/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 89696f08755a7ff2b01ec7e0cf8550a3b5914bc0
+ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910113"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9715470"
 ---
 # <a name="financial-dimensions-and-posting"></a>A pénzügyi dimenziók és a feladás 
 

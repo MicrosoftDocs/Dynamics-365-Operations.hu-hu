@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 62f771f6eda949f13536e700ef13a118881886ef
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: c377a910cca8bbf1fd640b6c9a99810be1a8d40f
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123530"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708694"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.10 szolgáltatásban (2020. május)
 
@@ -39,7 +39,7 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 
 - [A Raktárkezelés modul bejövő terheléskezelésének továbbfejlesztései](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - További információ: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](../warehousing/inbound-load-handling.md).
 
-- [Címkenyomtatással kapcsolatos fejlesztések a raktárkezeléshez](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - További információ: [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md).
+- [Címkenyomtatással kapcsolatos fejlesztések a raktárkezeléshez](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - – A további tudnivalókat lásd [a Dokumentumirányítás címkeelrendezéseinél](../warehousing/document-routing-layout-for-license-plates.md).
 
 - [Az Alaptervezés olyan cikkeket tartalmaz, amelyek aktuális készlettel rendelkeznek, amikor előfeldolgozási szűrők engedélyezve vannak](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 

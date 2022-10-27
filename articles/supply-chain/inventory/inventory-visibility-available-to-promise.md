@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f831c5d5719bbbd72c7cff37b8b35826f48ce6e4
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856193"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719291"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>A készlet láthatósága – az aktuális készlet változásának ütemezése, amely ígérethez rendelkezésre áll
 
@@ -205,6 +205,7 @@ A következő ALKALMAZÁSprogramozási felület (API) URL-címekkel küldheti el
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Több módosítási esemény létrehozása |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Lekérdezés a metódus `POST` használatával. |
 | `/api/environment/{environmentId}/onhand` | `GET` | Lekérdezés a metódus `GET` használatával. |
+| `/api/environment/{environmentId}/onhand/exactquery` | `POST` | Pontos lekérdezés a metódus `POST` használatával. |
 
 A további tudnivalókat lásd [a Készlet láthatósága nyilvános API-kban](inventory-visibility-api.md).
 
@@ -394,6 +395,8 @@ A kérésben állítsa igazra, `QueryATP`*ha* az ütemezett készletváltozások
 > [!NOTE]
 > Attól függetlenül, `returnNegative`*·* *hogy* igaz vagy hamis a paraméter a kérés törzsében, az eredmény negatív értékeket fog tartalmazni az ütemezett készletváltozások és az ATP-eredmények lekérdezése során. Ezeket a negatív értékeket fogja tartalmazni a program, mivel ha csak az igényrendelések vannak ütemezve, vagy ha a szállítási mennyiségek kisebbek, mint az igény mennyisége, az ütemezett készletváltozási mennyiségek negatívak lesznek. Ha nem szerepelnek negatív értékek, akkor az eredmény megfelelő lenne. Ezzel a beállítással [és a más típusú lekérdezések esetén való használatával kapcsolatos további tudnivalókat lásd a Készlet láthatósága nyilvános API-kban](inventory-visibility-api.md#query-with-post-method).
 
+### <a name="query-by-using-the-post-method"></a>Lekérdezés a POST metódus használatával
+
 ```txt
 Path:
     /api/environment/{environmentId}/onhand/indexquery
@@ -419,14 +422,14 @@ Body:
     }
 ```
 
-A következő példa bemutatja, hogyan lehet létrehozni egy olyan kérés törzsét, amely a módszer használatával a készlet láthatósága számára benyújtható`POST`.
+A következő példa bemutatja, hogyan lehet létrehozni egy indexlekérdezés törzsét, amely a metódus segítségével elküldhető a készlet láthatósága `POST` számára.
 
 ```json
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
-        "siteId": ["1"],
+        "SiteId": ["1"],
         "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
@@ -435,7 +438,7 @@ A következő példa bemutatja, hogyan lehet létrehozni egy olyan kérés törz
 }
 ```
 
-### <a name="get-method-example"></a>GET metódus – példa
+### <a name="query-by-using-the-get-method"></a>Lekérdezés a GET metódus használatával
 
 ```txt
 Path:
@@ -453,7 +456,7 @@ Query(Url Parameters):
     [Filters]
 ```
 
-A következő példa bemutatja, hogyan lehet kérésként létrehozni egy kérés URL-címét`GET`.
+A következő példa bemutatja, hogyan lehet kérésként létrehozni egy indexlekérdezés URL-címét`GET`.
 
 ```txt
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
@@ -461,9 +464,53 @@ https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.c
 
 A kérelem eredménye `GET` pontosan megegyezik az előző `POST` példában történt kérés eredményének hasonlóval.
 
+### <a name="exact-query-by-using-the-post-method"></a>Pontos lekérdezés a POST metódus használatával
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+A következő példa bemutatja, hogyan lehet létrehozni egy olyan pontos lekérdezéskérési törzset, amely a módszerrel a készlet láthatósága számára benyújtható`POST`.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": ["Bike"],
+        "dimensions": ["SiteId", "LocationId"],
+        "values": [
+            ["1", "11"]
+        ]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true,
+    "QueryATP":true
+}
+```
+
 ### <a name="query-result-example"></a>Példa a lekérdezés eredményére
 
-Mindkét korábbi lekérdezési példa a következő választ hozhatja létre. Ebben a példában a rendszer a következő beállításokra van konfigurálva:
+Az előző lekérdezési példák bármelyike a következő választ hozhatja létre. Ebben a példában a rendszer a következő beállításokra van konfigurálva:
 
 - **Az ATP számított mértéke:** *iv.onhand = pos.inbound – pos.outbound*
 - **Ütemezési időszak:** *7*

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: a837b85d4893f2915b5fbb5ffaae8eb95f19bc0e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 938b00192acc0ff5534239f2f280792471181fad
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272256"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710808"
 ---
 # <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>A mikroszolgáltatások bővítményének telepítése a Lifecycle Services szolgáltatásba
 
@@ -35,7 +35,7 @@ A következő lépések szerint regisztrálhat egy környezetet.
 2. A projektben, a **Környezet** irányítópulton válassza ki a saját telepített környezetet. A kiválasztott környezetnek futnia kell.
 3. Az Integráció **Power Platform lap Környezeti bővítmények** **szakaszában válassza az Új bővítmény telepítése lehetőséget**.**·**
 4. Válassza az **Elektronikus számlázás** lehetőséget.
-5. Az **AAD-alkalmazásazonosító** mezőbe írja: **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ez egy rögzített érték. Győződjön meg róla, hogy csak egy globálisan egyedi azonosítót (GUID) ad meg. Ne szerepeljenek más szimbólumok, például szóközök, vesszők, időszakok és idézőjelek.
+5. **Az AAD alkalmazásazonosító mezőben** adja meg a rögzített értéket **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ez az érték mindig rögzítve van. Győződjön meg róla, hogy csak egy globálisan egyedi azonosítót (GUID) ad meg. Ne szerepeljenek más szimbólumok, például szóközök, vesszők, időszakok és idézőjelek.
 6. Az **AAD-bérlőazonosító** mezőbe írja be az Azure előfizetési fiókja bérlőazonosítóját. A Azure Active Directory megadott (Azure AD) bérlőnek ugyanannak a bérlőnek kell lennie, mint aki a szabályozó konfigurációs szolgáltatás (RCS) számára használatos.
 7. Ellenőrizze a feltételeket, majd jelölje be a jelölőnégyzetet.
 8. Válassza a **Telepítés** parancsot. Néhány perc múlva az állapotot változik **Telepítés folyamatban** állapotról **Telepítve** értékre. Lehet, hogy frissítenie kell a lapot, hogy látssa ezt a változtatást.

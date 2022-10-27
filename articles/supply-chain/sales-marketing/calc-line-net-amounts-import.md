@@ -1,6 +1,6 @@
 ---
-title: Sor nettó összegének újraszámítása értékesítési rendelések, árajánlatok és visszaküldések importálása esetén
-description: Ez a témakör azt írja le, hogy a rendszer hogyan számítja újra a sorok nettó összegét az értékesítési rendelések, ajánlatok és visszaküldések importálása során. Bemutatja azt is, hogyan lehet szabályozni a Microsoft különböző verzióinak viselkedését Dynamics 365 Supply Chain Management.
+title: Sor nettó összegének újraszámítása értékesítési rendelések és árajánlatok importálása esetén
+description: Ez a témakör azt írja le, hogy a rendszer hogyan számítja újra a sorok nettó összegét az értékesítési rendelések és árajánlatok importálása során. Bemutatja azt is, hogyan lehet szabályozni a Microsoft különböző verzióinak viselkedését Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 08/05/2022
 ms.topic: article
@@ -11,25 +11,25 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: edda0c016130e2a273adf8f3d3e00e2d3ae9d5c6
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335555"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719334"
 ---
-# <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Sor nettó összegének újraszámítása értékesítési rendelések, árajánlatok és visszaküldések importálása esetén
+# <a name="recalculate-line-net-amounts-when-importing-sales-orders-and-quotations"></a>Sor nettó összegének újraszámítása értékesítési rendelések és árajánlatok importálása esetén
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt írja le, hogy a rendszer hogyan számítja újra a sorok nettó összegét az értékesítési rendelések, ajánlatok és visszaküldések importálása során. Bemutatja azt is, hogyan lehet szabályozni a Microsoft különböző verzióinak viselkedését Dynamics 365 Supply Chain Management.
+Ez a témakör azt írja le, hogy a rendszer hogyan számítja újra a sorok nettó összegét az értékesítési rendelések és árajánlatok importálása során. Bemutatja azt is, hogyan lehet szabályozni a Microsoft különböző verzióinak viselkedését Dynamics 365 Supply Chain Management.
 
 ## <a name="how-updates-to-net-line-amounts-are-calculated-on-import"></a>A nettó sorösszegek frissítésének számítása importáláskor
 
-Az Ellátásilánc-kezelés 10.0.23-as verziója egy [új 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Ez a hibajavítás **módosította** azokat a feltételeket, amelyek teljesülése esetén a sorok Nettó összeg mezője frissíthető vagy újraszámálható a meglévő értékesítési rendelések, visszatérítések és árajánlatok frissítésekor. A 10.0.29-es *verzióban ezt a hibajavítást az Importálás nettó összegének számítása funkcióval lecserélheti*. Ennek a funkciónak hasonló a hatása, de globális beállítást ad, amellyel szükség esetén visszatérhet a régi viselkedéshez. Bár az új viselkedés miatt a rendszer minél visszahatóbb módon működik, váratlan eredményekhez vezethet olyan helyzetekben, amikor az alábbi feltételek teljesülnek:
+Az Ellátásilánc-kezelés 10.0.23-as verziója egy [új 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Ez a hibajavítás **módosította** azokat a feltételeket, amelyek teljesülése esetén egy sorban a Nettó összeg mező frissíthető vagy újraszámálható a meglévő értékesítési rendelések és ajánlatok frissítésének importálása során. A 10.0.29-es *verzióban ezt a hibajavítást az Importálás nettó összegének számítása funkcióval lecserélheti*. Ennek a funkciónak hasonló a hatása, de globális beállítást ad, amellyel szükség esetén visszatérhet a régi viselkedéshez. Bár az új viselkedés miatt a rendszer minél visszahatóbb módon működik, váratlan eredményekhez vezethet olyan helyzetekben, amikor az alábbi feltételek teljesülnek:
 
 - *A meglévő rekordokat frissülő adatokat a rendszer a V2. értékesítésirendelés-sorokból,* a *V2* *·*. értékesítésiajánlat-sorokból vagy a Visszárurendelési sorok entitásból importálja az OData protokoll használatával, ahol kettős írású, excelen keresztüli importálási/exportálási helyzeteket, valamint külső fél integrációit használja.
-- [A kereskedelmi megállapodás](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper)**értékelési** kötvényei olyan módosítási házirendet hoznak létre, amely korlátozza az értékesítésirendelés-sorok, értékesítésiajánlat-sorok és/vagy visszárurendelés-sorok Nettó összeg mezőjének frissítését.
+- [A kereskedelmi megállapodás](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper)**értékelési** kötvényei olyan módosítási házirendet hoznak létre, amely korlátozza az értékesítésirendelés-sorok, értékesítésiajánlat-sorok és/vagy visszárurendelés-sorok Nettó összeg mezőjének frissítését. Ne feledje, hogy visszárurendelés-soroknál a program mindig kiszámítja a Nettó összeg mezőt, **és** nem lehet manuálisan beállítani.
 - Az importált **adatok** tartalmazzák a sorok Nettó összeg mezőjének módosításait, vagy olyan módosításokat (például egységár, mennyiség vagy engedmény), **amelyek** a sorok nettó összeg mezőjének értékét újraszámítják egy vagy több meglévő sorrekordban.
 
 Ilyen konkrét helyzetekben a kereskedelmi megállapodás értékelési irányelvének az a **hatása**, hogy korlátozást hoz a sor Nettó összeg mezőjének frissítésére. Ezt a korlátozást módosítási irányelvnek *is nevezik*. A házirend miatt, amikor a felhasználói felület segítségével szerkeszti vagy újraszámálja a mezőt, a rendszer kéri, hogy erősítse meg, hogy szeretné-e módosítani a mezőt. A rekord importálása során azonban a rendszernek kell választania az Ön számára. A 10.0.23-as verzió előtt a rendszer mindig változatlanul hagyta a sor nettó összegét, hacsak a bejövő sor nettó összege nem 0 (nulla). Az újabb verziókban azonban a rendszer a szükséges módon mindig frissíti vagy újraszámálja a nettó összeget, hacsak kifejezetten rá nincs utasítva, hogy ne tegye meg. Bár az új viselkedés logikusabb, problémákat okozhat, ha már olyan folyamatokat vagy integrációkat futtat, amelyek a régebbi viselkedést feltételezik. Ez a témakör azt írja le, hogyan lehet visszatérés a régi viselkedéshez, ha kell.

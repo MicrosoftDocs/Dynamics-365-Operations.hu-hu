@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c3024ca2e3b7eb24ac9a171def4a72cde7493a7a
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860725"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708617"
 ---
 # <a name="configure-job-card-for-devices"></a>Feladatkártya konfigurálása az eszközökhöz
 
@@ -73,7 +73,7 @@ Az **Általános** gyorslap a kiválasztott eszközkonfigurációhoz rendelkezé
 - **Erőforráscsoport** – Válassza ki azt az erőforráscsoportot amelyet a dolgozóknak megjelenített feladatlista alapértelmezett szűrési feltételeként kell alkalmazni. Kezdetben az eszköz csak a kiválasztott erőforráscsoport alá csoportosított erőforrásokhoz ütemezett feladatokat jeleníti meg. Ha a **Személyes szűrők beállításának engedélyezése a dolgozók számára** lehetősége engedélyezve van, akkor a dolgozók szerkeszthetik ezt az értéket, máskülönben ez a szűrő mindig alkalmazva lesz, amikor ez az eszközkonfiguráció aktív.
 - **Erőforrás** – Válassza ki azt az erőforrást amelyet a dolgozóknak megjelenített feladatlista alapértelmezett szűrési feltételeként kell alkalmazni. Kezdetben az eszköz csak a kiválasztott erőforrásokhoz ütemezett feladatokat jeleníti meg. Ha a **Személyes szűrők beállításának engedélyezése a dolgozók számára** lehetősége engedélyezve van, akkor a dolgozók szerkeszthetik ezt az értéket, máskülönben ez a szűrő mindig alkalmazva lesz, amikor ez az eszközkonfiguráció aktív.
 - **Azonosítótábla előállítása** – Ezt a lehetőséget **Igen** értékre állítsa új azonosítótábla előállításához minden alkalommal, amikor a dolgozó a feladatkártya eszközt készre jelentéshez használja. Az azonosítótábla a **Raktárkezelési paraméterek** lapon beállított számsorozatból jön létre. Ha **Nem** értékre van állítva, akkor a dolgozóknak a készként való jelentéskor meg kell határozniuk egy meglévő azonosítótáblát.
-- **Címke nyomtatása** – Ez a lehetőséget állítsa **Igen** értékre egy azonosítótábla-címke nyomtatásához, amikor a dolgozó a feladatkártya eszközt használja készre jelentéshez. A címke konfigurációja a dokumentumirányításban van beállítva, a [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md) részben leírtak szerint.
+- **Címke nyomtatása** – Ez a lehetőséget állítsa **Igen** értékre egy azonosítótábla-címke nyomtatásához, amikor a dolgozó a feladatkártya eszközt használja készre jelentéshez. A címke konfigurációja a dokumentumirányításban van beállítva, a [dokumentumirányítás címkeelrendezései alapján](../warehousing/document-routing-layout-for-license-plates.md).
 
 <a name="assigned-users"></a>
 
