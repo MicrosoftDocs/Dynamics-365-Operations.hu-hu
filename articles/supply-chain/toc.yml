@@ -12,7 +12,7 @@
               items:
                 - name: Újdonságok és változások a Supply Chain Management szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
-                - name: Supply Chain Management 10.0.31 (2022. február)
+                - name: Supply Chain Management 10.0.31 (2023. február)
                   href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (2022. november)
                   href: get-started/whats-new-scm-10-0-30.md
@@ -3239,10 +3239,12 @@
               href: transportation/transportation-management-engines.md
             - name: Új szállításkezelő motor létrehozása
               href: transportation/create-new-transportation-management-engine.md
-            - name: Üzemanyag-mutató társítása egy szállítóhoz kiegészítő díjként
+            - name: Üzemanyag-mutató társítása egy szállítóhoz kiegészítő költségként
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
-            - name: USMCA származási bizonyítvány
+            - name: USMCA származási minősítés
               href: transportation/usmca-certification-of-origin.md
+            - name: Kereskedelmi számlák
+              href: transportation/commercial-invoice.md
             - name: Fuvarlevél létrehozása
               href: transportation/create-bill-of-lading.md
             - name: Szállítmányozási útvonaltervezés
@@ -3433,9 +3435,15 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Tárolók csomagolása szállításhoz
                       href: warehousing/packing-containers.md
+                    - name: Tároló címkéinek nyomtatása
+                      href: warehousing/print-container-labels.md
                     - name: Csomagolási munka kimenő tárolók csomagolásához és szállítmányok feldolgozásához
                       href: warehousing/packing-work.md
-                    - name: Rövid kitárolásra jelölt cikkek újbóli felosztásának beállítása
+                    - name: Tárolók csomagolása a Warehouse Management mobilalkalmazással
+                      href: warehousing/warehouse-app-packing-containers.md
+                    - name: Példa forgatókönyvek – Tárolók csomagolása a Warehouse Management mobilalkalmazással
+                      href: warehousing/warehouse-app-pack-containers-scenario.md
+                    - name: Rövid kitárolásra jelölt cikk újbóli felosztásának beállítása
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Rendszer által irányított munka sorrendbe állítása
                       href: warehousing/system-directed-work-sequencing.md
@@ -3691,7 +3699,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                     - name: Nyitott munkalista rendszercsoportosítása
                       href: warehousing/system-group-on-open-work-list.md
-                    - name: Dokumentumirányítási elrendezés azonosítótábla-címkékhez
+                    - name: Dokumentumirányító címke elrendezései
                       href: warehousing/document-routing-layout-for-license-plates.md
                     - name: GS1-vonalkódok és QR-kódok
                       href: warehousing/gs1-barcodes.md
@@ -3701,6 +3709,12 @@
                   items:
                     - name: A raktárkezelési folyamatok frissítése Microsoft Dynamics AX 2012 szolgáltatásról a pénzügyi és műveleti alkalmazásokon
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Raktárkezelési telemetria
+              items:
+                - name: A raktárkezelési telemetria engedélyezése az Application Insights alkalmazással
+                  href: warehousing/application-insights-warehousing.md
+                - name: Mobileszköz-használat és -teljesítmény nyomon követése
+                  href: warehousing/application-insights-wma.md
         - name: Supply Chain Management fejlesztése
           items:
             - name: Gantt-vezérlő – fejlesztési útmutató

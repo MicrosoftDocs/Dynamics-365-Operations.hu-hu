@@ -10,18 +10,14 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Újdonságok és változások a Human Resources szolgáltatásban
               items:
+                - name: Human Resources 10.0.31 (egyesített infrastruktúra)
+                  href: ./get-started/whats-new-changed-10-0-31.md
                 - name: Human Resources 10.0.30 (egyesített infrastruktúra)
                   href: ./get-started/whats-new-changed-10-0-30.md
                 - name: Human Resources 10.0.29 (egyesített infrastruktúra)
                   href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (egyesített infrastruktúra)
                   href: ./get-started/whats-new-changed-10.0.28.md
-                - name: Human Resources 10.0.27 (egyesített infrastruktúra)
-                  href: ./get-started/hr-whats-new-changed-10-0-27.md
-                - name: Human Resources 10.0.26 (egyesített infrastruktúra)
-                  href: ./get-started/hr-whats-new-changed-10-0-26.md
-                - name: Human Resources 10.0.25 (egyesített infrastruktúra)
-                  href: ./get-started/hr-whats-new-changed-10-0-25.md
                 - name: A Dynamics 365 Human Resources újdonságai (különálló)
                   items:
                     - name: A Dynamics 365 Human Resources újdonságai (különálló) – 2021-es archívum
@@ -718,6 +714,8 @@
               href: hr-develop-create-performance-review.md
         - name: Tanulás
           items:
+            - name: Tanfolyam áttekintése
+              href: hr-course-overview.md
             - name: Tanfolyamok beállítása
               href: hr-learning-courses.md
             - name: Kérdőívek áttekintése

@@ -12,6 +12,8 @@
               items:
                 - name: Újdonságok és változások a Commerce szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.31 (2023. február)
+                  href: get-started/whats-new-commerce-10-0-31.md
                 - name: Commerce 10.0.30 (2022. november)
                   href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (2022. október)
@@ -568,6 +570,8 @@
                       href: call-center-refund-payments.md
                     - name: 'Hitelkártya beállítása, engedélyezése és rögzítése'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+                    - name: Fizetési kód használatának korlátozása
+                      href: dev-itpro/limit-token-usage.md
                     - name: Készpénzcímletek konfigurálása a pénztárhoz
                       href: cash-denominations.md
                     - name: Hitelkártya-feldolgozás konfigurálása
@@ -1228,14 +1232,16 @@
                       href: ratings-reviews-modules.md
                     - name: Közösségi megosztási modul
                       href: social-share-module.md
-                - name: Beszerzési modulok
+                - name: Vásárlási modulok
                   items:
-                    - name: Kosármodul
+                    - name: Kosár modul
                       href: add-cart-module.md
                     - name: Kosárikon modul
                       href: cart-icon-module.md
-                    - name: Pénztármodul
+                    - name: Pénztár modul
                       href: add-checkout-module.md
+                    - name: Pénztár modul hibájának hivatkozási kódjai
+                      href: checkout-module-error-codes.md
                     - name: Fizetési modul
                       href: payment-module.md
                     - name: Szállítási cím modul

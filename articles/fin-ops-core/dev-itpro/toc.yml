@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Platformfrissítések a 10.0.29-es verzióhoz (2022. október)
                   href: get-started/whats-new-platform-updates-10-0-29.md
-                - name: Platformfrissítések a 10.0.28-as verzióhoz (2022. augusztus)
-                  href: get-started/whats-new-platform-updates-10-0-28.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók – kezdőlap
@@ -1605,7 +1603,11 @@
             - name: Licenckódok és konfigurációskulcs-jelentések
               href: sysadmin/license-codes-configuration-keys-report.md
             - name: Vállalatközi adatmegosztás
-              href: sysadmin/cross-company-data-sharing.md
+              href: sysadmin/srs-overview.md
+            - name: Adatmegosztáshoz támogatott táblák
+              href: sysadmin/drs-srs-tables.md
+            - name: Adatmegosztás fejlesztőknek
+              href: sysadmin/drs-srs-dev.md
             - name: Karbantartási mód
               href: sysadmin/maintenance-mode.md
             - name: Előre konfigurált rendszerfiókok
