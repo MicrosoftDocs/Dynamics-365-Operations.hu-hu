@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 609403b251338b7e792f3ab624fb37a1833c919b
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871978"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725521"
 ---
 # <a name="landed-cost-parameters-setup"></a>Partraszállítási költség paramétereinek beállítása
 
@@ -125,14 +125,11 @@ A lapon található beállítások meghatározzák a jogi személyek közötti k
 
 A **Partraszállítási költség paraméterei** oldal **Számsorozatok** lapja felsorolja a Partraszállítási költség által megkövetelt hivatkozási számsorozatok mindegyik típusát, de ez nincs megosztva több jogi személy között. A lista minden egyes hivatkozása esetében válasszon egy számsorozatkódot.
 
-> [!NOTE]
-> Többvállalatos konfigurációban minden vállalathoz (jogi személyhez) különböző számsorozatokat kell létrehozni.
 
 ## <a name="shared-number-sequences-tab"></a>Megosztott számsorozatok lap
 
 A **Partraszállítási költség paraméterei** oldal **Megosztott számsorozatok** lapja felsorolja a Partraszállítási költség esetében a jogi személyek között megosztott hivatkozási számsorozatok mindegyik típusát. Jelenleg csak egy számsorozat szerepel a listában. Ezt a számsorozatot használja a program a hajóút-azonosítóhoz.
 
-A **Minden hajóút** oldalon a felhasználók minden jogi személy minden hajóútját megtekinthetik. Hajóút szerkesztéséhez és feldolgozásához azonban a felhasználóknak a kiválasztott rekord jogi személyében kell lenniük.
 
 ## <a name="feature-visibility-tab"></a>Funkció láthatósága lap
 

@@ -256,8 +256,6 @@
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: A Commerce in-store technológiaverem modernizálása (tanulmány)
                   href: 'https://www.microsoft.com/download/details.aspx?id=103896'
-                - name: Commerce offline implementáció és hibaelhárítás
-                  href: dev-itpro/implementation-considerations-offline.md
                 - name: Online áruház katalógusának közzététele
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI-tartalom
@@ -396,12 +394,16 @@
                   items:
                     - name: Store Commerce alkalmazás
                       href: dev-itpro/store-commerce.md
+                    - name: Store Commerce alkalmazás képességei
+                      href: store-commerce-capabilities.md
                     - name: Store Commerce alkalmazás mobil platformokhoz
                       href: dev-itpro/store-commerce-mobile.md
                     - name: Modern POS áttelepítése a Store Commerce szolgáltatásba
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Eszközkezelés megvalósítási útmutatója
                       href: implementation-considerations-devices.md
+                    - name: Commerce offline implementációja és hibaelhárítása
+                      href: dev-itpro/implementation-considerations-offline.md
                     - name: A Store Commerce és a Cloud POS közötti választás
                       href: MPOS-or-CPOS.md
                     - name: Online és offline pénztárműveletek

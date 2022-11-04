@@ -690,27 +690,21 @@
               href: cash-bank-management/reconcile-bank-account.md
             - name: Speciális banki egyeztetés
               items:
-                - name: Továbbfejlesztett banki egyeztetés beállítási folyamata
+                - name: Speciális banki egyeztetés beállítási folyamata
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Továbbfejlesztett banki egyeztetés importálási folyamatának beállítása
-                  href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
-                - name: Továbbfejlesztett banki egyeztetés importálási folyamatának beállítása Elektronikus jelentéskészítéssel
+                - name: Speciális banki egyeztetés importálási folyamatának beállítása Elektronikus jelentéskészítéssel
                   href: accounts-payable/import-bai2-er.md
                 - name: Banki egyeztetés egyeztetési szabályainak beállítása
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
-                - name: Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
+                - name: Banki kivonatok egyeztetése speciális banki egyeztetés használatával
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: Speciális banki egyeztetés MT940 importálása – összetett adatentitás frissítésének lépései
-                  href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
-                - name: Továbbfejlesztett banki egyeztetés – áttekintés
+                - name: Speciális banki egyeztetés – áttekintés
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Banki kivonatfájl importálása – hibaelhárítás
-                  href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
-                - name: Banki napló összetett entitás frissítése
+                - name: Banki napló összetett entitásának frissítése
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Költségkönyvelés
           items:
-            - name: "Költségkönyvelés\_kezdőlap"
+            - name: Költségkönyvelés – kezdőlap
               href: cost-accounting/cost-accounting-home-page.md
             - name: Költségkönyvelési terminológia
               href: cost-accounting/terms-cost-accounting.md

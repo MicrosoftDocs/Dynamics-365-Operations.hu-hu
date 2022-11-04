@@ -330,16 +330,20 @@
                   items:
                     - name: Az önkiszolgáló központi telepítés áttekintése
                       href: deployment/infrastructure-stack.md
-                    - name: Új bemutatókörnyezet telepítése
+                    - name: Új környezet központi telepítése
                       href: deployment/deployenvironment-newinfrastructure.md
-                    - name: Telepítés GYIK
+                    - name: Központi telepítés – GYIK
                       href: deployment/deploymentFAQ.md
+                    - name: Környezet áttelepítése
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Az önkiszolgáló központi telepítéssel kapcsolatos ismert problémák
                       href: deployment/known-issues-new-deployment-experience.md
-                    - name: Karbantartási műveletek a telepítéshez
+                    - name: Karbantartási műveletek a központi telepítéshez
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
                     - name: Környezet frissítése
                       href: deployment/updateenvironment-newinfrastructure.md
+                    - name: Környezet áttelepítése
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Önkiszolgáló központi telepítéssel üzembe helyezett környezetekkel kapcsolatos hibaelhárítás
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Tervezett karbantartás önkiszolgáló környezetekben – GYIK
@@ -970,9 +974,11 @@
                   href: lifecycle-services/whats-new-lcs.md
             - name: Lifecycle Services használati útmutató
               href: lifecycle-services/lcs-user-guide.md
-            - name: Projekt felvétele
+            - name: Projekt előkészítése
               href: lifecycle-services/project-onboarding.md
-            - name: Előfizetésbecslő
+            - name: Projektáttelepítés-kezelő
+              href: lifecycle-services/project-migration-manager.md
+            - name: Előfizetés becslési objektuma
               href: lifecycle-services/subscription-estimator.md
             - name: A biztonsági beállítások megadása
               href: lifecycle-services/configure-lcs-security.md

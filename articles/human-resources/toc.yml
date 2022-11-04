@@ -4,6 +4,18 @@
       items:
         - name: A Dynamics 365 Human Resources kezdőlapja
           href: index.md
+        - name: Human Resources infrastruktúra-egyesítés
+          items:
+            - name: Human Resources infrastruktúra-egyesítés áttekintése
+              href: hr-infrastructure-merge.md
+            - name: Human Resources-infrastruktúra ügyféláttelepítése
+              href: hr-cust-migration.md
+            - name: Human Resources infrastruktúra-egyesítési GYIK
+              href: hr-infrastructure-merge-faq.md
+            - name: Human Resources ügyféláttelepítési GYIK
+              href: customer-migration.md
+            - name: Human Resources infrastruktúra-egyesítés ismert problémái
+              href: hr-migration-issues.md
         - name: Újdonságok és változások
           items:
             - name: Újdonságok és változások a pénzügyi és műveleti alkalmazásokban
@@ -242,10 +254,6 @@
                   href: hr-admin-go-live-prepare.md
                 - name: Éles indítás GYIK
                   href: hr-admin-go-live-faq.md
-                - name: Human Resources infrastruktúra-egyesítési GYIK
-                  href: hr-infrastructure-merge-faq.md
-                - name: Human Resources ügyféláttelepítési GYIK
-                  href: customer-migration.md
                 - name: Dokumentáció-erőforrások
                   items:
                     - name: Súgórendszer

@@ -2239,6 +2239,16 @@
                   href: procurement/tasks/create-purchasing-policies.md
                 - name: Beszerzésikategória-hierarchiák irányelveinek beállítása
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Ellátási kockázatelemzés
+              items:
+                - name: Ellátási kockázatelemzés áttekintése
+                  href: procurement/supply-risk-assessment-overview.md
+                - name: Ellátási kockázatelemzés beállítása
+                  href: procurement/supply-risk-assessment-configuration.md
+                - name: Műveletekre használható munkaterület a szállítói kockázatok fedezéséhez és kezeléséhez
+                  href: procurement/supply-risk-assessment-workspace.md
+                - name: Power BI-jelentések a kockázatelemzéshez és a teljesítmény-rangsoroláshoz
+                  href: procurement/supply-risk-assessment-reports.md
             - name: Termékbevételezések és számlázás
               items:
                 - name: Termékbevételezés összevetése a beszerzési rendelésekkel
