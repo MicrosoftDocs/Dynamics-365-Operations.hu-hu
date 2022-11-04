@@ -1,5 +1,5 @@
 ---
-title: Az Emberi erőforrások – Ügyféláttelepítési gyakori kérdések
+title: Human Resources ügyféláttelepítési GYIK
 description: Ez a cikk megválaszolja a Microsoft Dynamics 365 Human Resources pénzügyi és műveletek egyesített infrastruktúrába való áttelepítésével kapcsolatos gyakori kérdéseket.
 author: twheeloc
 ms.date: 07/06/2022
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a6f883da07bd1d3a6b0379f1582dc8556e166ff
-ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
+ms.openlocfilehash: 0e11d26ebe084762a8616c8aa0aa041a87306473
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151096"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734358"
 ---
 # <a name="human-resources-customer-migration"></a>Az Emberi erőforrások m<
 
@@ -40,7 +40,7 @@ Azok a vevők, akik más alkalmazásokat is használnak a pénzügyi és művele
 Az egyes vállalatváltások a vállalat aktuális konfigurációitól és a pénzügyi és műveleti infrastruktúrára való ugrásra való alkalmasságtól függenek. Javasoljuk, hogy az ügyfelek a Microsoft-partnerük segítségével határozzák meg a legjobb útvonalat.
 
 - **A** Dynamics 365 Pénzügy Dynamics 365 Human Resources modult az Emberi erőforrások modult használják szervezetei a szokásos Egyverziós frissítési folyamat részeként engedélyezhetik az új képességeket. A tervek szerint az új funkciók 2022 januártól általánosan elérhetővé válnak.
-- Azok a szervezetek, amelyek hozzáférhetnek Dynamics 365 Human Resources az infrastruktúra-egyesítés egyesítéséhez használható eszközhöz. A Microsoft az átállás során együtt fog működni a vevőkkel, hogy megakadályozza a szolgáltatás bármilyen megszakítását. A vevőknek 12–18 hónapjuk lesz az átállásra, az áttelepítési eszköz elérhetővé válnak ettől az időponttól kezdve.
+- Azok a szervezetek, amelyek hozzáférhetnek Dynamics 365 Human Resources az infrastruktúra-egyesítés egyesítéséhez használható eszközhöz. A Microsoft az átállás során együtt fog működni a vevőkkel, hogy megakadályozza a szolgáltatás bármilyen megszakítását. A vevőknek 12 hónapjuk lesz az átállásra attól az időponttól kezdve, amikor az áttelepítési eszköz elérhetővé válik.
 - Azok a szervezetek, amelyek mind Dynamics 365 Human Resources **az** Emberi erőforrások modult használják, áthelyezheti önálló emberierőforrás-infrastruktúrájukat a pénzügyi és a műveleti infrastruktúrába. Egy másik lehetőség az egyesítési eszköz használata a környezetek egyetlen környezetbe való beállításának érdekében. Nincs meg az a követelmény vagy időkeret, amely a két környezet egyesítéséhez szükséges.
 
 A naprakész információkért rendszeresen ellenőrizze a kiadási [terveket](/dynamics365/release-plans/).
@@ -166,4 +166,4 @@ A Microsoft még mindig azt határozza meg, hogy milyen eszközök és erőforr�
 
 ## <a name="licensing-impact"></a>Licencelési hatás
 
-A licenceléssel kapcsolatos további tudnivalókat lásd az infrastruktúra-egyesítési [Dynamics 365 Human Resources gyakori kérdéseknél](hr-infrastructure-merge-faq.md#licensing-impact).
+A licenceléssel kapcsolatos további tudnivalókat lásd az infrastruktúra-egyesítési [Dynamics 365 Human Resources témakörben](hr-infrastructure-merge.md#licensing).
