@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 4f381f1ec0ea08f18db3cac474e8990906364504
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 757e83887e318dd6aa54106fb78305f1d94e0f90
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286891"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734267"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Rendelés keresésének engedélyezése vendégpénztárak részére
 
@@ -73,6 +73,11 @@ Ahhoz, hogy a vendég felhasználók megtekinthetik a rendelési adataikat, az e
 A rendeléshez kapcsolódó e-mailekben meg lehet adni egy hivatkozást vagy gombot, amely a vevőket a rendelésük részletes adatait tartalmazó lapra viszi. Ennek a hivatkozásnak vagy gombnak a hozzáadásához hozzon létre egy HTML-hivatkozást, amely az e-commerce webhely rendelési részleteire mutat, és adja át a rendelés visszaigazolási azonosítóját és az ügyfél e-mail címét URL-paraméterként, amint azt az alábbi példa mutatja.
 
 `<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
+
+> [!NOTE]
+> A rendeléskeresési funkció engedélyezéséhez győződjön meg arról, **·** **hogy az Ajánlatok kulcs engedélyezve van a Licenckonfiguráció konfigurációs** > **kulcsai kulcs alatt**.
+>
+>![Engedélyezni kell az Árajánlatok licenckulcs-konfigurációját.](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

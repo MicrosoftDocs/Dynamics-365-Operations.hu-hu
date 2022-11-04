@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4499eeb9cdd4efd9c4b630106c6e052378191f2a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905863"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725481"
 ---
 # <a name="manage-voyages"></a>Hajóutak kezelése
 
@@ -29,7 +29,8 @@ Az hajóút általában egy hajót képvisel. A gyakorlatoktól és az eljárás
 Az **Összes hajóút** oldal a hajóút részleteit, a szállítási és költségszámítási információkat, valamint cikkek, beszerzési rendelések és átszállítási rendelések adatait tartalmazza. Az **Összes hajóút** oldal megnyitásához nyissa meg a **Partraszállítási költség \> Hajóutak \> Összes hajóút** menüpontot. Ez az oldal az össza aktuális hajóút listáját jeleníti meg. A Művelet panel gombjaival hajóutakat hozhat létre, törölhet és kezelhet. Válassza ki bármelyik hajóutat a listában a részleteinek megtekintéséhez.
 
 > [!NOTE]
-> A szállítókonténerek és a levelek hajóúthoz vannak kapcsolva. A beszerzési sorok egy szállítókonténerhez kapcsolódnak. Ha a szállítókonténerek és a levelek ki vannak kapcsolva, akkor közvetlenül is összekapcsolhatók hajóúttal. Ezenkívül az itt megadott költségek arányosítva vannak az összes kapcsolódó beszerzési sorral.
+> A szállítókonténerek és a levelek hajóúthoz vannak kapcsolva. A beszerzési sorok egy szállítókonténerhez kapcsolódnak. Ezenkívül az itt megadott költségek arányosítva vannak az összes kapcsolódó beszerzési sorral.
+> A Projekt beszerzési rendelése nem támogatott a Partra áras költségben.
 
 ## <a name="action-pane"></a>Műveleti panel
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b409017407ce1c027184bdc2292197840c61e04a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906153"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725443"
 ---
 # <a name="manage-shipping-containers"></a>Szállítókonténerek kezelése
 
@@ -40,9 +40,9 @@ A következő táblázat a Művelet panel **Kezelés** lapján elérhető gombok
 
 | Gomb | Leírások |
 |---|---|
-| Bevételezési lista feladása | Bevételezési lista feladása vagy a szállítókonténerben található összes beszerzésirendelés-sor termékbevételezési listájának megtekintése. Többvállalatos szállítmányok használata esetén minden vállalat számára új bevételezésilista-feladási párbeszédpanel nyílik meg. |
+| Bevételezési lista feladása | Bevételezési lista feladása vagy a szállítókonténerben található összes beszerzésirendelés-sor termékbevételezési listájának megtekintése.  |
 | Termékbevételezés feladása | Termékbevételezés feladása a szállítókonténerben található összes beszerzésirendelés-sorhoz. |
-| Számlafeladás | Számla feladása a szállítókonténerben található összes beszerzésirendelés-sorhoz. Többvállalatos szállítmányok használata esetén minden vállalat számára új számlafeladási párbeszédpanel nyílik meg. |
+| Számlafeladás | Számla feladása a szállítókonténerben található összes beszerzésirendelés-sorhoz.  |
 | Átmozgatási rendelések szállítása | Átszállítási rendelés szállítmányának feladása a szállítókonténerben található összes átszállításirendelés-sorhoz. A párbeszédpanelen a szállítókonténernek csak azok a sorai jelennek meg, amelyek átszállítási rendelés típusúak. |
 | Átmozgatási rendelés bevételezése | Átszállítási rendelés bevételezésének feladása a szállítókonténerben található összes átszállításirendelés-sorhoz. A bevételezési párbeszédpanel a szállítókonténerben vagy hajóúton lévő áruk bevételezésének legegyszerűbb módja, amely a három lehetséges lehetőség egyike. Érkeztetési naplókból és mobileszközös feldolgozásból is lehet bevételezni. |
 | Érkezési napló létrehozása | A szervezetek érkeztetési naplóját speciális raktári funkciók használatával lehet létrehozni. A lehetőségek a _Mennyiség inicializálása_ (ajánlott), illetve a _Létrehozás úton lévő árukból_ vagy a _Létrehozás beszerzési rendelésekből_. Az utolsó két lehetőség attól függ, hogy használatban van-e az úton lévő áruk feldolgozása. |
@@ -56,7 +56,7 @@ A következő táblázat a Művelet panel **Általános** lapján elérhető gom
 
 | Gomb | Leírások |
 |---|---|
-| Bevételezések listája | Bevételezési lista feladása a szállítókonténerben található összes beszerzésirendelés-sorhoz. Többvállalatos hajóút használata esetén minden vállalat számára új bevételezésilista-feladási párbeszédpanel nyílik meg. |
+| Bevételezések listája | Bevételezési lista feladása a szállítókonténerben található összes beszerzésirendelés-sorhoz.  |
 | Termékbevételezés | A termékbevételezési rekord megtekintése, ha használatban van. A termékbevételezési folyamatot csak akkor használja a rendszer, ha az áruk nem használják az úton lévő áruk funkciót. |
 | Cikk érkezése | A szállítókonténer cikkérkeztetési naplójának megtekintése, amennyiben ez a napló van használva. |
 | Szakaszok | A szakaszokat a hajóút különböző részeinek azonosítására használják. Az átfutási idők az egyes szakaszokkal társíthatók a szállítmánykövetés segítségével. A további tudnivalókat lásd: [Többszakaszos út beállítása](multi-leg-journey-setup.md). |

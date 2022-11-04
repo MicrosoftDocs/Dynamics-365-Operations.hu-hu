@@ -2,7 +2,7 @@
 title: Online és offline pénztár (POS) műveletek
 description: Ez a cikk a pénztári (POS) műveletekről nyújt részletes tájékoztatást a következőben:Dynamics 365 Commerce Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
-ms.translationtype: MT
+ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272849"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728276"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
@@ -101,7 +101,7 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 212  | Flottakártya adatai                                   | A művelet nem támogatott.                                                                                                                                                                                | Nem alkalmazható | Nem alkalmazható     | Nem alkalmazható | Nem alkalmazható    | Nem alkalmazható  |
 | 213  | Fizetés jóváírással                                   | Az áruház által kiállított jóváírás (kupon) elfogadása.                                                                                                                                                          | Igen            | Igen                | Nem             | Nem                | Nem              |
 | 214  | Fizetés ajándékutalvánnyal                                     | Az üzlet által kiállított ajándékutalvány elfogadása.                                                                                                                                                                      | Igen            | Igen                | Nem             | Nem                | Nem              |
-| 215  | Készpénzkifizetési ajándékutalvány                                | A művelet nem támogatott.                                                                                                                                                                                | Igen            | Igen                | Nem             | Nem                | Nem              |
+| 215  | Készpénzkifizetési ajándékutalvány                                | Hitelkártyás tranzakció a fennmaradó ajándékutalvány teljes összegével, ha a beállított készpénz-out korláton belül van.                                                                                                                                                                              | Igen            | Igen                | Nem             | Nem                | Nem              |
 | 216  | Pontos fizetés kártyával                                    | A művelet nem támogatott.                                                                                                                                                                                | Nem alkalmazható | Nem alkalmazható     | Nem alkalmazható | Nem alkalmazható    | Nem alkalmazható  |
 | 217  | Pontos fizetés csekkel                                   | A művelet nem támogatott.                                                                                                                                                                                | Nem alkalmazható | Nem alkalmazható     | Nem alkalmazható | Nem alkalmazható    | Nem alkalmazható  |
 | 218  | Pontos fizetés vevői számlával                        | A művelet nem támogatott.                                                                                                                                                                                | Nem alkalmazható | Nem alkalmazható     | Nem alkalmazható | Nem alkalmazható    | Nem alkalmazható  |

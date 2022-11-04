@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 8c60ed0c334bf09916dd633302c6d813ea6f16b6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a891de4a1da6641a02b8316d16ac2e9a8180fac1
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281454"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734251"
 ---
 # <a name="order-lookup-module"></a>Rendeléskeresési modul
 
@@ -44,6 +44,12 @@ Az alábbi ábra a rendeléskeresési modul által megjelenített képernyőt mu
 ## <a name="add-an-order-lookup-module-to-a-page"></a>Rendeléskeresés modul felvétele egy oldalra
 
 A rendeléskeresés modul az e-kereskedelmi webhely bármelyik oldalának törzséhez hozzáadható. Ha a rendeléskeresés modul segítségével engedélyezni szeretné a vendégpénztároknál a rendeléskeresést, mindenképpen adja hozzá egy olyan oldalhoz, amely nem igényli a felhasználó bejelentkezését. Ha meg kívánja keresni egy lap **Bejelentkezés szükséges?** beállítását a Commerce webhelykészítő fanézetében, válassza az **Alapértelmezett lap (Kötelező)** lehetőséget, és nézze meg a jobb oldali panel alsó részét.
+
+
+> [!NOTE]
+> A rendeléskeresési funkció engedélyezéséhez győződjön meg arról, **·** **hogy az Ajánlatok kulcs engedélyezve van a Licenckonfiguráció konfigurációs** > **kulcsai kulcs alatt**.
+>
+> ![Engedélyezni kell az Árajánlatok licenckulcs-konfigurációját.](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

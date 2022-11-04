@@ -1,22 +1,22 @@
 ---
-title: Pénztármodul hibahivatkozási kódjai
+title: Pénztár modul hibájának hivatkozási kódjai
 description: Ez a témakör a pénztármodul hibahivatkozási kódjait írja le, amelyek a felhasználó által látható hibaüzenetek között jelennek meg a modulban Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/20/2022
+ms.date: 10/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-09-20
-ms.openlocfilehash: cd8269a71e56f23dbe3782ec3ffc69ec3ea6b151
-ms.sourcegitcommit: 6bd8822f7aa781d596b70956bead834117cf302c
+ms.openlocfilehash: 952cb932522b4e0bb91be985e4f8974cb6cd8bc0
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9709372"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728245"
 ---
-# <a name="checkout-module-error-reference-codes"></a>Pénztármodul hibahivatkozási kódjai
+# <a name="checkout-module-error-reference-codes"></a>Pénztár modul hibájának hivatkozási kódjai
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
@@ -31,9 +31,13 @@ A történt hibáktól függően a cikk táblázata a következő adatokat tarta
 - Figyelembe kell venni a környezet és a fizetési csatlakoztató konfigurációit.
 - Olyan információk, amelyekre hivatkozni lehet a támogatási esetben, ha további segítségre van szükség.
 
-## <a name="checkout-module-error-reference-codes"></a>Pénztármodul hibahivatkozási kódjai
+## <a name="prerequisites"></a>Előfeltételek
 
-A következő táblázatban további részleteket olvashat a vevők által biztosított vagy az online áruházban tapasztalt hibakódhivatkozásokkal kapcsolatban.
+A pénztár **\>** **·** **modul alább felsorolt hibahivatkozási kódjai a webhely webhelyszerkesztőjében a Webhely beállításaihoz bővítményben, illetve a Bevásárlókocsi és pénztár szakasz Továbbfejlesztett online** csatornahiba-megjelenítési üzenetkezelés engedélyezése elemét választják. 
+
+## <a name="checkout-module-error-reference-codes"></a>Pénztár modul hibájának hivatkozási kódjai
+
+A következő táblázatban további részleteket olvashat a vevők által biztosított vagy az online áruházban tapasztalt hibakódhivatkozásokkal kapcsolatban. Görgetés jobbra a Hiba **leírása oszlop megtekintéséhez**.
 
 | Hibakód | Dynamics-relációval érintett hibakód | Hiba leírása |
 | ---------- | ------------------------------ | ----------------- |

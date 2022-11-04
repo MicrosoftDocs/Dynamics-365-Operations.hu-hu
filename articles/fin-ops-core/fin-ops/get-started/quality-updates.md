@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
+ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689224"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "9731610"
 ---
 # <a name="proactive-quality-updates"></a>Proaktív minőségi frissítések
 
@@ -40,13 +40,13 @@ Már több előleget telepítettek, amelyek a minőségi frissítések proaktív
 
 - **Leállási** idő közeli frissítése – a gyakori környezetek továbbküldése érdekében alapvető fontosságú, hogy a Dynamics 365 szolgáltatásiszint-szerződések (SLAS) megőrzése érdekében csökkentve legyen a környezet elérhetősége. Eredetileg a nulladik leállási idő frissítését vezették be, hogy a havi operációs rendszer javítása érdekében egy fürt-újraelosztás segítségével aktiválják a frissített képet a minimális megszakadás mellett. A frissítések alkalmazásának mechanizmusa továbbfejlesztett, így még kevésbé romboló, és lefedi az operációs rendszer javítása és a minőségi frissítés telepítését is.
 
-    Interaktív felhasználók esetén egy aktív munkamenet megszakadhat, és az újrapróbálkozás a most frissített környezetre kerül. A prioritáson [alapuló](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) kötegütemezés bevezetésével, amely most elérhető a telepítés után, a kötegelt ütemezés és a feldolgozás közvetlenül a frissítés után áll helyre, és folytatódik. A prioritáson alapuló kötegütemezés akkor lép helyére, ha a vevők még nem vehetnek részt termelési környezeteik minőségi frissítésének proaktív elosztásában.
+Interaktív felhasználók esetén egy aktív munkamenet megszakadhat, és az újrapróbálkozás a most frissített környezetre kerül. A prioritáson alapuló [kötegütemezés](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), a kötegütemezés és a feldolgozás helyreállítása és folytatása közvetlenül a frissítés után. A prioritáson alapuló kötegütemezés akkor lép helyére, ha a vevők még nem vehetnek részt termelési környezeteik minőségi frissítésének proaktív elosztásában.
 
 - **Sötét órák** – az egyes Azure-régiókhoz sötét órákat határoznak meg, és a sötét órákban a közeli nulla leállási idő frissítésekre is sor fog kapni.
 
 ## <a name="the-proactive-update-process"></a>A proaktív frissítési folyamat
 
-A proaktív minőségi frissítések telepítése egy biztonságos telepítési folyamatot (SDP) követ. Az SDP adottai változhatnak, de kezdetben a minőségi frissítéseket abox környezetekbe telepítik. A folyamat olyan környezetekkel kezdődik, amelyek a korai telepítés mellett indulnak. A sikeresen telepített mezők százalékos aránya nő, ezért éles környezetekben is elkezdődik a telepítés. A folyamat ismét olyan környezetekkel kezdődik, amelyek a korai telepítést választották. A figyelőrendszerek figyelemmel fogják követni a rendszer és az livesite eseményeket, és leállítja egy adott verzió ki- és begörgetését, ha a rendszer regresszívet észlel. Az ügyfelek így is a proaktív telepítés előtt le tudják húzni a minőségi frissítéseket.
+A proaktív minőségi frissítések telepítése egy biztonságos telepítési folyamatot (SDP) követ. Az SDP adottai változhatnak, de kezdetben a minőségi frissítéseket abox környezetekbe telepítik. A sikeresen telepített mezők százalékos aránya nő, ezért éles környezetekben is elkezdődik a telepítés. A figyelőrendszerek figyelemmel fogják követni a rendszer és az livesite eseményeket, és leállítja egy adott verzió ki- és begörgetését, ha a rendszer regresszívet észlel. Az ügyfelek így is a proaktív telepítés előtt le tudják húzni a minőségi frissítéseket.
 
 Az aktuális kiadáskezelési adatok azt mutatják, hogy a minőségi frissítésekben a regresszív állapotok kevesebb mint 3 százaléka van bevetve. Ha nagyobb a figyelem a regresszás megszüntetésén és a jobb SDP-n, akkor a regressációk potenciális hatása általában alacsonyabb lesz, mint az olyan minőségi nyereség, amely a vevőknek általában telepített gyors javításokkal érhető el.
 
@@ -92,13 +92,13 @@ További tájékoztatás az egyes régiók sötét óráiról: [Mi a tervezett k
 **Alkalmazásverzió: 10.0.1326.70**
 **Tudásbáziscikknek megfelelő 748926**
 
-| Station | Régiók | Közelgő e-box ütemezése
-|---|---|---|
-| 1. állomás | Kanada központi, Kanada-Kelet, Franciaország központi, India Központi, Norvégia-Kelet, Svájc - Nyugat | 2022. október 14. – október 17. |
-| 2. állomás | Franciaország, Dél-, India, Nyugat-Norvégia, Svájc, Észak-Afrika, Észak-Afrika, Ausztrália-Kelet, Egyesült Királyság, Észak-Egyesült Arab Emírségek, Japán-kelet, Ausztrália Dél-Kelet, Dél-Kelet-Ázsia | Október 15. – 2022. október 18. |
-| 3. állomás | Kelet-Ázsia, Egyesült Államok, Nyugat-Japán, Brazília Dél-, Nyugat-Európa, Kelet-Egyesült Államok, Egyesült Arab Emírségek Központi | 2022. október 16. – október 19. |
-| 4. állomás | Észak-Európa, Közép-Usa, Nyugat-Usa | Október 17. – 2022. október 20. |
-| 5. állomás | DoD, Kormányzati közösség felhő, Kína | Nem ütemezett |
+| Station | Régiók | Befejeződött ütemezés | Közelgő e-box ütemezése|
+|---|---|---|---|
+| 1. állomás | Kanada központi, Kanada-Kelet, Franciaország központi, India Központi, Norvégia-Kelet, Svájc - Nyugat | 2022. október 14. – október 17. | 2022. november 2. és november 5. között |
+| 2. állomás | Franciaország, Dél-, India, Nyugat-Norvégia, Svájc, Észak-Afrika, Észak-Afrika, Ausztrália-Kelet, Egyesült Királyság, Észak-Egyesült Arab Emírségek, Japán-kelet, Ausztrália Dél-Kelet, Dél-Kelet-Ázsia | Október 15. – 2022. október 18. | 2022. november 2. és november 5. között |
+| 3. állomás | Kelet-Ázsia, Egyesült Államok, Nyugat-Japán, Brazília Dél-, Nyugat-Európa, Kelet-Egyesült Államok, Egyesült Arab Emírségek Központi | 2022. október 16. – október 19. | 2022. november 2. és november 5. között |
+| 4. állomás | Észak-Európa, Közép-Usa, Nyugat-Usa | Október 17. – 2022. október 20. | 2022. november 2. és november 5. között |
+| 5. állomás | DoD, Kormányzati közösség felhő, Kína | Nem ütemezett | Nem ütemezett |
 
 > [!IMPORTANT] 
 > Öt nappal előre a Microsoft frissíti az előző ütemezést, és e-mail értesítéseket küld az ilyen minőségi frissítések fogadására ütemezett környezetek számára. Az előző ütemezés csak olyan környezetekben alkalmazható, amelyek értesítést kapnak a várható frissítésről. További tájékoztatás az egyes régiók sötét óráiról: [Mi a tervezett karbantartási ablak terület szerint](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows)?

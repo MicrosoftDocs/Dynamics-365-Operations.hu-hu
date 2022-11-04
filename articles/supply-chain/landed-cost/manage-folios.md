@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab5729cd441246a6c04ac060d5a69f949bfe47c5
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905892"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725477"
 ---
 # <a name="manage-folios"></a>A levelek kezelése
 
@@ -48,9 +48,9 @@ A következő táblázat a Művelet panel **Kezelés** lapján elérhető gombok
 
 | Gomb | Leírás |
 |---|---|
-| Bevételezési lista feladása | Bevételezési lista feladása a levélen található összes beszerzésirendelés-sorhoz. Többvállalatos szállítmányok használata esetén minden vállalat számára új bevételezésilista-feladási párbeszédpanel nyílik meg. |
-| Termékbevételezés feladása | Termékbevételezés feladása a levélben található összes beszerzésirendelés-sorhoz. Többvállalatos hajóút használata esetén minden vállalat számára új termékbevételezés-feladási párbeszédpanel nyílik meg. |
-| Számlafeladás | Számla feladása a levélben található összes beszerzésirendelés-sorhoz. Többvállalatos hajóutak használata esetén minden vállalat számára új számlafeladási párbeszédpanel nyílik meg. |
+| Bevételezési lista feladása | Bevételezési lista feladása a levélen található összes beszerzésirendelés-sorhoz.  |
+| Termékbevételezés feladása | Termékbevételezés feladása a levélben található összes beszerzésirendelés-sorhoz. |
+| Számlafeladás | Számla feladása a levélben található összes beszerzésirendelés-sorhoz.  |
 | Átmozgatási rendelések szállítása | Átmozgatási rendelés feladása a kapcsolódó szállítmány aktuális leveléhez tartozó összes átmozgatásirendelés-sorhoz. |
 | Átmozgatási rendelés bevételezése | Átmozgatási rendelés bevételezése a kapcsolódó szállítmány aktuális leveléhez tartozó összes átmozgatásirendelés-sorhoz. |
 | Úton lévő áruk bevételezése | Minden olyan rendelési sor bevételezése, amely úton van a levélben. |
@@ -65,7 +65,7 @@ A következő táblázat a Művelet panel **Általános** lapján elérhető gom
 
 | Gomb | Leírás |
 |---|---|
-| Bevételezések listája | Bevételezési lista feladása a levélen található összes beszerzésirendelés-sorhoz. Többvállalatos hajóút használata esetén minden vállalat számára új bevételezésilista-feladási párbeszédpanel nyílik meg. |
+| Bevételezések listája | Bevételezési lista feladása a levélen található összes beszerzésirendelés-sorhoz.  |
 | Termékbevételezés | A termékbevételezési rekord megtekintése, ha használatban van. |
 | Cikk érkezése | A cikkérkeztetési napló megtekintése, ha használatban van. |
 | Költségek lekérdezése | A költséglekérdezési oldal megnyitása egy hajóút összes költségének megtekintéséhez, beleértve a szállítókonténert, a levelet és a beszerzési rendelést. Az oldal pontos nézetét a Megtekintés művelet segítségével lehet módosítani. A költséglekérdezési lapon megtekintheti bármelyik területet, valamint a cikk- és költségtípuskódot. Ezeknek a cikkeknek a törlésével a költségeket csoportosítva módosíthatja az oldalt. Ez a képesség akkor lehet hasznos, ha méreteket és színeket használ. A lapon megjelenő dimenziók megváltoztathatók. A **Költségek** oldal csak azokat a költségtípuskódokat jeleníti meg, amelyekben a **Feladás** lap **Dr** bejegyzése *Cikk* értékre van állítva. |

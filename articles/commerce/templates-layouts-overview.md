@@ -2,7 +2,7 @@
 title: Sablonok és elrendezések áttekintése
 description: Ez a cikk a következő sablonokról és elrendezésről ad le:Microsoft Dynamics 365 Commerce
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: e0bf7e942339775b2e9ee15060d555be07c1cdc5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0664dd1ae06d09557cf8b8ec58baf6d27c1198bd
+ms.sourcegitcommit: 023ae5557e1351a8329a59a41a551e8901db99a8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277933"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9733384"
 ---
 # <a name="templates-and-layouts-overview"></a>Sablonok és elrendezések áttekintése
 
@@ -66,7 +66,13 @@ A példában szereplő sablon egyszerű struktúrát és beállításokat határ
 
 A webhelyek és a márkák adminisztrátorának számára fontos első lépés a megfelelő a megszorítások és rugalmasság közötti helyes egyensúly meghatározása az oldalszerzők számára. A sablonok használatakor ez az egyensúly teljesen konfigurálható. Ez a beállítás hatással van arra, hogy a lap elemeit központilag frissítik-e (a sablonban zárolva van), vagy az egyes származtatott szinteken a laphierarchia alsóbb szintjein.
 
-A sablonok használatának megkezdéséhez [Munka a sablonokkal](work-with-templates.md).
+### <a name="relationship-between-template-defaults-and-page-content"></a>A sablon alapértelmezései és a lap tartalma közötti kapcsolat
+
+A sablonok elsődleges funkciója a modul létrehozási tapasztalatának racionalizálása a lap létrehozásakor. Még ha a modul alapértelmezései be vannak állítva vagy akár zárolva is vannak egy sablonban, nincs további adatkapcsolat a lap modulkonfigurációiból a sablon alapértelmezései között, kivéve a lap szerkesztésének esetén. A sablonok a lapstruktúra szerződését szekkedik, és a lap létrehozása után a sablon alapértelmezései már nem kapcsolódnak az oldalon honosolható tartalomhoz. Más szóval a sablonban beállított modul alapértelmezései a gyermekoldalakra vonatkozó szerzője tapasztalatokat érték el. A lapok létrehozása és szerkesztése után nem ellenőrzik ezeknek a lapoknak a tartalmát.
+
+A korábban leírt viselkedés alól az egyetlen kivétel akkor fordul elő, amikor egy [sablonhoz](work-with-fragments.md) egy részletet adnak hozzá. A darabkák segítségével dinamikusan lehet hozzáadni vagy szerkeszteni egy sablon vagy egy elrendezés minden gyermekoldalán a honosható tartalmat, még akkor is, ha egy adott sablonból több lapot is létrehoztak. A sablonokban és elrendezésben ajánlott a részletet használni, valahányszor minden gyermekoldalon dinamikusan hozzá kell adni, el kell távolítani vagy szerkeszteni kell a tartalmat. Például a fejlécek, láblécek, általános metaadatok/parancsfájlok, illetve bármilyen más olyan tartalom tartalmának a tartalmának használhatók, amelyek központilag szerkeszthetőnek és azonosnak kell lennie minden gyermekoldalon. A részletes adatok segítségével sablonokat és elrendezéseket lehet használni a tartalomnak az összes gyermekoldalon való szabályozására.
+
+A sablonok használatának elkezdése a Sablonok [használata csoportban látható](work-with-templates.md).
 
 ## <a name="layouts"></a>Elrendezések
 
@@ -96,7 +102,7 @@ A webhely elrendezései lehetnek *előre beállítottak* vagy *egyéniek* is:
 
 Az előre beállított elrendezések és az egyéni elrendezések a szerkesztési eszköztár különböző részein szerkeszthetők. Mivel az egyéni elrendezések nem rendelkeznek függőségekkel más lapokon, közvetlenül a lap szerkesztőjében szerkeszthetők. Ebben az esetben transzparens leginkább az elrendezés megléte a felhasználó számára, és csak a lapszintű tulajdonságokban és az elrendezési beállításokon keresztül érhető el. Mivel azonban az előre beállított elrendezések módosításai hatással lehetnek a származtatott elemekre, az elrendezésszerkesztőben kell azokat szerkeszteni, ahol a közzétételi műveletek figyelembe veszik a lefelé irányuló, a származtatott oldalakra gyakorolt hatásokat.
 
-A következő ábrák az előre beállított és az egyéni elrendezések eseteit mutatják be.
+Az alábbi ábra az előre beállított és az egyéni elrendezések esetét mutatja be.
 
 ![Előre beállított és egyéni elrendezési szituációk.](../commerce/media/template-figure1.png)
 

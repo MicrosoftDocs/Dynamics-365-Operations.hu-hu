@@ -13,11 +13,11 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 38ef8c51d52de6b8f748330d0697e860d75233bf
-ms.sourcegitcommit: 43cf54d057eccd07a71bb48e2fcf858d043a9669
+ms.openlocfilehash: 2bb381939ebe32cb51caf730cdd441557d83a4c0
+ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2022
+ms.lasthandoff: 11/01/2022
 ms.locfileid: "9620898"
 ---
 # <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Hibakeresési mód engedélyezése az Adószámítási szolgáltatásban
@@ -27,7 +27,7 @@ ms.locfileid: "9620898"
 Ez a cikk bemutatja, hogy hogyan lehet engedélyezni a hibakeresési módot az Adószámítás szolgáltatásban a problémák kivizsgálásához.
 
 1. Adja **hozzá a &debug=vs%2 CconfirmExit>** et az Application Object Server (AOS) URL-címéhez, majd frissítse az oldalt.
-2. Amikor kiválasztja **az** áfa kiszámítását az áfa kiszámításához, a **rendszer egy TaxServiceAlaubleshootingLog.txt** **nevű szöveges fájlt rögzített a kiszolgálón a C:\AXWeb_SMBShare\ideiglenes fájlban\\{%session%}\\**. A **TaxService AubleshootingLog.txt** fájl tartalmazza **a TaxableDocument** fájlt és a számítási paramétert. Ezek az eredmények az adószolgáltatásból, valamint hibaelhárítási kivételadatokat tartalmaznak.
+2. Amikor kiválasztja az **áfa kiszámítását** az áfa kiszámításához, megnyílik **egy TaxServiceAlaubleshootingLog.txt** nevű szövegfájl. A **TaxService AubleshootingLog.txt** fájl tartalmazza **a TaxableDocument** fájlt és a számítási paramétert. Ezek az eredmények az adószolgáltatásból, valamint hibaelhárítási kivételadatokat tartalmaznak.
 
 ## <a name="sample"></a>Minta
 
