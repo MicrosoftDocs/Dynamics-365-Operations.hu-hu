@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 876ee36c75a31ca89a9351d0ee1484e66076b6aa
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069786"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748713"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -146,9 +146,6 @@ Ha olyan receptúraverzióból jött létre kötegrendelés, amelyben a **Társt
 Ebben az esetben a dolgozó meghatározhatja a társterméket és a jelentendó mennyiséget, ha kiválasztja a **Társtermékek variációi** elemet az előrehaladás jelentése párbeszédpanelen. A dolgozó ezután választhat a társtermékként definiált kiadott termék közül.
 
 ### <a name="reporting-catch-weight-items"></a>A cikkeket jelentéskészítése
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
 
 A dolgozók a termelés emeletének végrehajtási felületével jelentést tehetnek a cikkekhez létrehozott kötegrendelések előrehaladásáról. A kötegrendelések képletek alapján vannak létrehozva, amelyek definiálhatóak úgy, hogy receptúrás cikkként, társtermékként vagy társtermékként tartalmazzanak egy cikkeket. A receptúra úgy is definiálható, hogy receptúrás sorokat kap az összetevőkből, amelyek meg vannak határozva a catch weight számára. A tényleges stömegű cikkek két mértékegységet használnak a készlet nyomon követésére: a tényleges súly és a készletmennyiség. Például az élelmiszeriparban a dobozolt hús tényleges ssúlyos cikkként definiálható, ahol a tényleges súly mennyiségét használják a dobozok számának nyomon követésére, a készletmennyiséget pedig a dobozok súlyának nyomon követésére.
 

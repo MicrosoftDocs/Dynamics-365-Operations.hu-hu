@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: f1e2cfca47d507c8de7f9323bb8e4262a0e90949
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 8ba9a6d24923b66259bc8b6cc688ec667cb000de
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689159"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740302"
 ---
 # <a name="demand-driven-planning"></a>Igényvezérelt tervezés
 
@@ -55,4 +55,4 @@ Ha most futtatja az alaptervezést, az egy tervezett rendelést generál, ha a n
 Ez a példa egy tervezett beszerzési rendelést készít, amelynek mennyisége 130, amely egyenlő a maximális szint mínusz a nettó áramlás. A tervezett rendelés prioritása 53,07, a maximális mennyiség százalékos értéke alapján. Mivel ezek az értékek június 20-án találhatók, a rendszer létrehoz egy június 20-ai dátumra tervezett rendelést, valamint a cikkre vonatkozó le nem járt átfutási időt (ebben a példában öt munkanap). Ezért mivel öt munkanap egy hétre van a mai naptól, a tervezett rendelés június 27-e.
 
 > [!NOTE]
-> A tervezési optimalizálás csak a DDMRP használatával számítja ki a összegelt cikkeket. Az összes többi cikk számítása az alapanyagigény-tervezés (MRP) alapján történik.
+> Az alaptervezés csak a DDMRP használatával számítja ki a lecsatolt cikkeket. Az összes többi cikk számítása az alapanyagigény-tervezés (MRP) alapján történik.

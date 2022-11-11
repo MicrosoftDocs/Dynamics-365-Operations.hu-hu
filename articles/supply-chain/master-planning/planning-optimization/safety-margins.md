@@ -1,6 +1,6 @@
 ---
 title: Biztonsági határok
-description: Ez a témakör azt mutatja be, hogyan használhatók biztonsági különbözetek a Microsoft tervezőoptimalizálási bővítményében Dynamics 365 Supply Chain Management.
+description: Ez a témakör azt ismerteti, hogyan működnek a biztonsági időrések az alaptervezés során.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 87b38276a2723374969a67c5413dde15537d04ec
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335195"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740441"
 ---
 # <a name="safety-margins"></a>Biztonsági határok
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan használhatók biztonsági különbözetek a Microsoft tervezőoptimalizálási bővítményében Dynamics 365 Supply Chain Management.
+Ez a témakör azt ismerteti, hogyan működnek a biztonsági időrések az alaptervezés során.
 
 ## <a name="safety-margins-overview"></a>Biztonsági időtartalékok – áttekintés
 
@@ -165,12 +165,5 @@ A biztonsági időtartalékok mindhárom típusa számításba van véve, amikor
 Például egy cikkek átfutási ideje egy nap és a bevételezési időtartalék három nap. Ehhez a tételhez egy értékesítési rendelés ma szükséges. Ebben az esetben a késés kiszámítása: *átfutási idő* + *bevételezési időtartalék* = négy nap. Ha tehát a mai dátum augusztus 14, akkor a négy nap késés augusztus 18-ára helyezi a szállítást. A következő ábrán ez a példa látható.
 
 ![Késésszámítási példa.](media/safety-margins-delays.png)
-
-## <a name="additional-resources"></a>További erőforrások
-
-[Tervezési optimalizálás kezdő lépései](get-started.md)
-
-[Tervezési optimalizálás igazítási elemzése](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

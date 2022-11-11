@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 176f40ad8cd1aa1831bbe50c0ebd91ec0cc3bc89
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335405"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739898"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Ütemezés képességen alapuló erőforrás-kijelöléssel
 
@@ -43,7 +43,7 @@ Ha egy műveleti erőforráshoz szeretne funkciókat hozzárendelni, használja 
 - **Érvényes** – Adja meg az első dátumot, amikor az erőforrás vagy a képesség hozzárendelése érvényes. Az ütemezés során a rendszer nem használ olyan erőforrást vagy képességt, amely lejárt képesség-hozzárendeléssel rendelkezik, még akkor sem, ha az erőforrás egyébként kielégíti a követelményeket.
 - **Lejárat** – Adja meg az utolsó dátumot, amikor az erőforrás vagy a képesség hozzárendelése érvényes. Az ütemezés során a rendszer nem használ olyan erőforrást vagy képességt, amely lejárt képesség-hozzárendeléssel rendelkezik, még akkor sem, ha az erőforrás egyébként kielégíti a követelményeket.
 - **Szint** – Adja meg annak szintjét, hogy az erőforrásnak szintje szükséges legyen a képességhez. Ezt követően, ha az erőforrásra vagy képességre vonatkozó követelményhez **Minimálisan szükséges szint** értéket ad meg, az ütemezési motor figyelembe veszi az erőforrások kiválasztásakor figyelembe veszi a megfelelőség szintjét. A rendszer ezután csak olyan erőforrásokat választ ki amelyek rendelkeznek a szükséges képességgel, olyan szinten, ami megegyezik, vagy meghaladja a forrás szükségletben meghatározott szintet.
-- **Prioritás** – A tervezési optimalizálás még nem támogatja ezt a mezőt. Ha azonban a beépített tervezőmotort használja, akkor az erőforrás vagy a képesség hozzárendelésének **Prioritás** mezőjével határozhatja meg az erőforrás prioritását. Tehát, ha a *Prioritás* van kiválasztva az **Ütemezési paraméterek** oldal **Elsődleges erőforrás kiválasztás**, mezőben, akkor a rendszer először legmagasabb prioritású erőforrást választja ki (tehát a **Prioritás** mezőben a legalacsonyabb számértékű) kerül kiválasztásra az ütemezéshez.
+- **Prioritás** – A tervezési optimalizálás még nem támogatja ezt a mezőt. Ha azonban az elavult alaptervezési motort használja, **az** erőforrás vagy a képesség hozzárendelésének Prioritás mezőjével határozhatja meg az erőforrás prioritását. Tehát, ha a *Prioritás* van kiválasztva az **Ütemezési paraméterek** oldal **Elsődleges erőforrás kiválasztás**, mezőben, akkor a rendszer először legmagasabb prioritású erőforrást választja ki (tehát a **Prioritás** mezőben a legalacsonyabb számértékű) kerül kiválasztásra az ütemezéshez.
 
 ## <a name="example"></a>Példa
 

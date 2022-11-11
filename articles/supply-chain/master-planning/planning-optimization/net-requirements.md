@@ -1,6 +1,6 @@
 ---
-title: Nettó követelmények és a igénykövetési információk a Tervezési optimalizálással
-description: Ez a cikk a tervezési optimalizálás során kiszámított nettó követelményekről és az igényekre vonatkozó információkról nyújt tájékoztatást.
+title: Nettó követelmények és az igényekre vonatkozó adatok
+description: Ez a cikk a számított nettó követelményekről és az igényekre vonatkozó információkról nyújt tájékoztatást.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a31ff5490b08d92f0d966388b65de02bca25b050
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888528"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748438"
 ---
-# <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Nettó követelmények és a igénykövetési információk a Tervezési optimalizálással
+# <a name="net-requirements-and-pegging-information"></a>Nettó követelmények és az igényekre vonatkozó adatok
 
 [!include [banner](../../includes/banner.md)]
 
-Az alaptervezés futtatásakor a Tervezési optimalizálásban fontos, hogy jobban megértsük a kimenetelét, hogy a meglévő készlet hogyan fedezi az igényt, és hogy miért jött létre konkrét készlet. A **Nettó követelmények** lapon jobban megértheti az alaptervezés által előállított számított követelményeket.
+Az alaptervezés futtatásakor fontos, hogy jobban megértsük a kimenetelét, hogy a meglévő készlet hogyan fedezi az igényt, és hogy miért jött létre konkrét készlet. A **Nettó követelmények** lapon jobban megértheti az alaptervezés által előállított számított követelményeket.
 
-A **Nettó követelmények** lap megjeleníti a termékhez a Tervezési optimalizálás során kiszámított nettó követelményeket. Megjeleníti az alaptervezés futtatása során alkalmazott fedezeti beállításokat, a követelményösszegek tranzakciótípus szerinti lebontását és igénykövetési adatokat.
+A **Nettó követelmények** lap mutatja a termékhez számított alaptervezés nettó követelményeit. Megjeleníti az alaptervezés futtatása során alkalmazott fedezeti beállításokat, a követelményösszegek tranzakciótípus szerinti lebontását és igénykövetési adatokat.
 
 ## <a name="open-the-net-requirements-page"></a>A Nettó követelmények lap megnyitása
 
@@ -64,8 +64,8 @@ A lap alsó része a következő lapokat tartalmazza:
 Az alábbi parancsok érhetők el a Műveleti panelen:
 
 - **Frisstés \> Alaptervezés** – Az alaptervezés futtatása közvetlenül a **Nettó követelmények** lapról.
-- **Frisstés \> Előrejelzési tervezés** – Az előrejelzési tervezés futtatása közvetlenül a **Nettó követelmények** lapról. A Tervezési optimalizálás még nem támogatja ezt a műveletet.
-- **Frissítés \> Folytonosság ütemezése** – A folytonosság ütemezésének futtatása közvetlenül a **Nettó követelmények** oldalról. A Tervezési optimalizálás még nem támogatja ezt a műveletet.
+- **Frisstés \> Előrejelzési tervezés** – Az előrejelzési tervezés futtatása közvetlenül a **Nettó követelmények** lapról. A tervezési optimalizálás nem támogatja ezt a műveletet.
+- **Frissítés \> Folytonosság ütemezése** – A folytonosság ütemezésének futtatása közvetlenül a **Nettó követelmények** oldalról. A tervezési optimalizálás nem támogatja ezt a műveletet.
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
@@ -133,8 +133,6 @@ Ezután megnyitja az **1000**-es termék *Nettó követelmények lapját*, és �
     ![Az értékesítési rendelésre vonatkozó igénykövetési adatok](media/pegging-planned-purchase-order.png "Az értékesítési rendelésre vonatkozó igénykövetési adatok")
 
 > [!NOTE]
-> Mivel a Tervezési optimalizálás még nem támogat bizonyos funkciókat, a *Biztonsági készlet* és a *Lejárt köteg* követelménytípusok nem szerepelnek a **Nettó követelmények** lapon. További tájékoztatás: [Tervezésoptimalizálás illeszkedési elemzése](planning-optimization-fit-analysis.md).
->
-> A beépített alaptervezési motor használata esetén a kötegvezérelt termékek támogatottak. Kötegvezérelt termékek esetén a lejárt aktuális készlet megjelenik a **Nettó követelmények** lapon, de nincs hozzájuk igénykövetés. Az ilyen típusú lejárt készletet tartalmazó sorok *Lejárt köteg* követelménysorokként jelennek meg a **Nettó követelmények** lapon.
+> A *Biztonsági készlet* követelménye nem szerepel a **Nettó követelmények lapon**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

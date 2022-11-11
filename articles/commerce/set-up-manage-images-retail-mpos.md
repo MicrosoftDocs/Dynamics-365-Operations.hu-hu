@@ -16,12 +16,12 @@ ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
-ms.openlocfilehash: f282c163ef5a74283231492e499201c6d4619115
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d334701b2865a4f19365a2773641e324326b02e3
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287511"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751940"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Képek beállítása és kezelése az Modern POS (MPOS) esetében
 
@@ -160,7 +160,7 @@ A Termékek kivételével minden entitás esetében a kép-URL-t egy adott entit
     [![Katalógusképek galérialapja.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> Jelenleg a galéria nem mutat előnézetet a médiasablon kép-URL-ekhez. A Katalógus, Dolgozó, Vevő és Kategória entitásokhoz, ha a felhasználó expliciten ezen az oldalon keresztül ad meg egy URL-t, ajánlott jelölni, hogy melyik kép az alapértelmezett, mert a Commerce Scale Unit kliensek csak egy képet mutatnak Katalógusonként, Vevőnként, Dolgozónként és Kategóriánként. Ha a felhasználó nem ad meg egy alapértelmezett képet, a rendszer határozza meg azt, és elküldi a Commerce szolgáltatás hívójára (MPOS vagy Elektronikus kereskedelem).
+> A POS-terminálon csak a közpénzből és a névtelenül elérhető képek jelennek meg. A POS lehetővé teszi a külső környezetben tárolt képek megjelenítését, a fejléc nélküli GET kérések megjelenítését úgy, hogy a képek visszaadása inline üzenet-folyamként érvénybe. Névtelen hozzáférési házirend, SharePoint különösen olyan környezetben tárolt képek esetén, amelyekben a kérésfejléceknek állomás- és felhasználóügynök-fejléceket is tartalmaznia kell, a rendszer "Tiltott" választ ad vissza. Emiatt az állomásként használt SharePoint képkezelés jelenleg nem támogatott a mezőn túl. A **Katalógusképek katalógusgalériaoldalon** nem megjelenik a médiasablon kép URL-címének előnézete. Mivel a Commerce Scale Unit (AKI) ügyfelek katalógusonként, vevőnként, dolgozónként és kategóriaentitásonként csak egy képet mutatnak, ha kifejezetten url-címet ad meg ezen a lapon katalógus-, dolgozó-, vevő- és kategóriaentitásokhoz, javasoljuk, hogy jelezze, melyik az alapértelmezett kép. Ha nem ad meg alapértelmezett képet, a rendszer meghatározza az alapértelmezett képet, és elküldi azt a Commerce Service hívója (MPOS vagy e-commerce) számára.
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Felülírja a Katalógustermék képeinek kép-URL-címét az Előnézet oldalból.
 

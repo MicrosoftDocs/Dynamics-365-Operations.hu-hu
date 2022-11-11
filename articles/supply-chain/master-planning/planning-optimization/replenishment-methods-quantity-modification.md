@@ -1,6 +1,6 @@
 ---
 title: Feltöltési módok és a mennyiség módosítása
-description: Ez a cikk a tervezési optimalizálás feltöltési módszereiről nyújt tájékoztatást. Azt is ismerteti, hogy hogyan befolyásolja egy termék több rendelési mennyisége az eredményt.
+description: Ez a cikk a feltöltési módokkal kapcsolatban tartalmaz tájékoztatást. Azt is ismerteti, hogy hogyan befolyásolja egy termék több rendelési mennyisége az eredményt.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,26 +11,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d1e0fe6c1f49bc0f6887f1b29118c1fee7a6222f
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873695"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739756"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Feltöltési módok és a mennyiség módosítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a cikk a tervezési optimalizálás feltöltési módszereiről nyújt tájékoztatást. Azt is ismerteti, hogy hogyan befolyásolja egy termék több rendelési mennyisége az eredményt.
+Ez a cikk a feltöltési módokkal kapcsolatban tartalmaz tájékoztatást. Azt is ismerteti, hogy hogyan befolyásolja egy termék több rendelési mennyisége az eredményt.
 
 A feltöltési módszerek fedezeti vagy adagméretezési módszerekként is ismertek.
 
 ## <a name="coverage-codes"></a>Fedezeti kódok
 
-A Tervezési optimalizálás beállítható úgy, hogy különböző feltöltési módokat használjon. A feltöltési módok olyan technikák, amelyekkel a rendszer a termékek követelményeit számítja ki. A feltöltési módokat olyan fedezeti kódok határozzák meg, amelyek a fedezeti csoportban vagy a termékben állíthatók be.
+Az Alaptervezés beállítható úgy, hogy különböző feltöltési módokat használjon. A feltöltési módok olyan technikák, amelyekkel a rendszer a termékek követelményeit számítja ki. A feltöltési módokat olyan fedezeti kódok határozzák meg, amelyek a fedezeti csoportban vagy a termékben állíthatók be.
 
-A Tervezési optimalizálásban a következő fedezeti kódok használhatók:
+A következő fedezeti kódok használhatók:
 
 - **Időszak** – Ez a feltöltési módszer az adott időszakra vonatkozó összes igényt egy rendelésbe egyesíti a termékre vonatkozóan. A rendelés tervezése az időszak első napjához történik, és a rendelés mennyisége teljesíti a nettó szükségletet a meghatározott időszakban. Az időszak a termék első igényével kezdődik és a megadott időtartamra vonatkozik. A következő időszak a termék következő igényével kezdődik. Az *Időszak* fedezeti kód gyakran használatos előre nem jelezhető készletkérésre, szezonális termékekre vagy magas költségű termékekhez. A következő ábrán egy példa látható.
 
@@ -64,13 +64,13 @@ A kiadott termékekhez tartozó **Alapértelmezett rendelésbeállítások** old
 
 ## <a name="examples-of-replenishment-that-use-the-minmax-coverage-code"></a>Példák a Min./max. fedezeti kódot használó feltöltésre
 
-Ha egy terméknél nem ad meg értéket a **Többszörös** mezőben az **Alapértelmezett rendelésbeállítások** oldalon, és ha a *Min./max.* feltöltési módot használja, akkor a Tervezési optimalizálás egy konkrét szintig feltölti a készletet, amikor az előrejelzett készletszint egy adott küszöbérték alá csökken.
+Ha egy terméknél nem ad meg értéket a **Többszörös** mezőben az **Alapértelmezett rendelésbeállítások** oldalon, és ha a *Min./max.* Feltöltési módszer esetén az alaptervezés egy megadott szintig feltölti a készletet, ha az előre jelzett aktuális készletszint egy konkrét küszöbérték alatt van.
 
 Ha egy termékhez több mennyiséget ad meg, akkor a *Min./max.* feltöltési mód viselkedése módosul, és figyelembe veszi a **Többszörös** értéket.
 
-Más szóval, a Tervezési optimalizálás akkor is feltölti a megadott maximális szintig a készletet, ha az előrejelzett készletszint kisebb, mint a megadott minimális szint. A feltöltési mennyiségnek azonban a **Többszörös** érték többszörösének kell lennie.
+Más szóval az alaptervezés akkor is a megadott maximális szintig feltölti a készletet, ha az előre jelzett aktuális készletszint kisebb, mint a megadott minimális szint. A feltöltési mennyiségnek azonban a **Többszörös** érték többszörösének kell lennie.
 
-Ha a feltöltési mennyiség (a maximális szint és az előrejelzett tényleges szint különbsége) nem a megadott többszörös mennyiség többszöröse, akkor a Tervezési optimalizálás az első olyan lehetséges értéket használja, amely az előrejelzett készletszinttel együtt a maximális szint alá kerül. Ha az összeg kisebb a minimális szintnél, akkor a Tervezési optimalizálás az első olyan értéket használja, amely az előrejelzett tényleges szinttel a maximális szint felett lesz.
+Ha a feltöltési mennyiség (a maximális szint és az előre jelzett tényleges szint különbsége) nem a megadott többszörös mennyiség többszöröse, akkor az alaptervezés az első lehetséges értéket használja, amely az előre jelzett készletszinttel együtt a maximális szint alá fog érni. Ha az összeg kisebb, mint a minimális szint, az alaptervezés az első olyan értéket használja, amely az előre jelzett az árkal együtt a maximális szint felett lesz.
 
 Az alábbi alszakaszokban néhány olyan példa látható, amely bemutatja, hogy egy termék több rendelési mennyisége milyen hatással van a *Min./max.* feltöltési módra.
 

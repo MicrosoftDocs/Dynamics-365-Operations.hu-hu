@@ -2,7 +2,7 @@
 title: Omnicsatornás kifizetések áttekintése
 description: Ez a témakör áttekintést nyújt a csatorna kifizetésekről a következőben:Dynamics 365 Commerce
 author: BrianShook
-ms.date: 09/17/2020
+ms.date: 11/04/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a5cc0725b383ca6657bd19b9dd25b0c60b364467
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881709"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746125"
 ---
 # <a name="omni-channel-payments-overview"></a>Omnicsatornás kifizetések áttekintése
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör áttekintést nyújt a csatorna kifizetésekről a következőben:Dynamics 365 Commerce Tartalmaz egy átfogó listát a támogatott esetekről, a funkciókkal, a beállítással és a hibakereséssel kapcsolatos információkat, illetve néhány tipikus probléma leírását.
 
@@ -34,7 +35,7 @@ Ez a témakör áttekintést nyújt a csatorna kifizetésekről a következőben
 
 | Időszak | Leírás |
 |---|---|
-| Jogkivonat | Olyan adat-karakterlánc, amelyet a fizetési feldolgozó referenciaként ad meg. A jogkivonatok fizetési kártyaszámokat, fizetési jóváhagyásokat és korábbi fizetésrögzítéseket jelenthetnek. A jogkivonatok azért fontosak, mert segítenek az érzékeny adatok pénztár (POS) rendszerből való távoltartásában. Időnként *referenciák* néven említik őket. |
+| Jogkivonat | Olyan adat-karakterlánc, amelyet a fizetési feldolgozó referenciaként ad meg. A jogkivonatok fizetési kártyaszámokat, fizetési jóváhagyásokat és korábbi fizetésrögzítéseket jelenthetnek. A jogkivonatok azért fontosak, mert segítenek az érzékeny adatok pénztár (POS) rendszerből való távoltartásában. Gyakran hivatkoznak hivatkoznak rá hivatkozásokként *is*. |
 | Kártyajogkivonat | Olyan jogkivonat, amelyet a fizetés feldolgozója biztosít a pénztárrendszerben való tároláshoz. Kártyajogkivonatokat csak az azt megkapó kereskedő használhatja. A kártyajogkivonatokat időnként *kártyareferenciák* néven említik. |
 | Jóváhagyási (auth) jogkivonat | Egyedu azonosító, amelyet a fizetés feldolgozója biztosít a válasz részeként, amelyet a pénztárrendszerbe küld, miután a pénztárrendszer jóváhagyási kérést hoz létre. A jóváhagyási jogkivonatot később is használhatják, ha a feldolgozót műveletek elvégzésére kérik fel, például a jóváhagyás visszavonására vagy visszafordítására. Ez a leggyakrabban azonban a pénzeszközöknek a rendelés teljesítése vagy a tranzakciók véglegesítése esetén történő rögzítéséhez használatos. A jóváhagyási jogkivonatokat időnként *jóváhagyási referenciák* néven említik. |
 | Rögzítési jogkivonat | A fizetés feldolgozója által a pénztárrendszer számára biztosított referencia, amikor a fizetést véglegesítették vagy rögzítették. A rögzítési jogkivonat segítségével hivatkozni lehet a fizetés rögzítésére az ezt követő műveleteknél, például visszatérítési kéréseknél. | 
@@ -43,7 +44,7 @@ Ez a témakör áttekintést nyújt a csatorna kifizetésekről a következőben
 
 ## <a name="overview"></a>Áttekintés
 
-Álalánosságban a *Többcsatornás fizetések* kifejezés azt a képességet írja le, amikor a rendelés létrehozása az egyik csatornán történik, a teljesítése pedig egy másik csatornán. A többcsatornás fizetés támogatásának kulcsa a fizetési adatok együtt a megrendelés többi adatával együtt való megőrzése, majd pedig ezen fizetési adatok használata a rendelés visszhívása vagy másik csatornán való feldolgozása esetén. Egy klasszikus példa a „Vásárlás online, átvétel az üzletben” eset. Ebben az esetben a fizetési részleteket hozzáadják, amikor a megrendelés online létrejön. Ezután a pénztárnál ezeket lehívják, hogy az ügyfél fizetési kártyáját megterheljék az átvétel időpontjában. 
+Álalánosságban a *Többcsatornás fizetések* kifejezés azt a képességet írja le, amikor a rendelés létrehozása az egyik csatornán történik, a teljesítése pedig egy másik csatornán. A többcsatornás fizetés támogatásának kulcsa a fizetési adatok együtt a megrendelés többi adatával együtt való megőrzése, majd pedig ezen fizetési adatok használata a rendelés visszhívása vagy másik csatornán való feldolgozása esetén. Egy klasszikus példa a „Vásárlás online, átvétel az üzletben” eset. Ebben az esetben a fizetési részleteket hozzáadják, amikor a megrendelés online létrejön. Ezután a POS visszahívja őket, hogy a felvételkor felszámítsa a vevő kártyáját. 
 
 Az ebben a cikkben ismertetett valamennyi helyzet a Commerce rendszer szabványos fizetési szoftverfejlesztő csomagja (SDK) használatával valósítható meg. A [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) készen érkező megvalósítást biztosít az itt leírt összes esethez. 
 
@@ -104,7 +105,7 @@ Az alábbi szakaszok bemutatják az egyes forgatókönyvek lépései, valamint a
 Az indítás előtt győződjön meg arról, hogy megtalálhatók a következő előfeltételek:
 
 - Van egy referenciaüzlet, ahol konfigurált Adyen-összekötő található.
-- A **Többcsatornás fizetések** beállítás értéke a **Commerce megosztott paraméterei** oldalon **Igaz**. Az újabb verziókban ezt a beállítást áthelyezték a **Funkciókezelés** munkaterületre, ahol kiválaszthatja a **Többcsatornás fizetések** funkciót, majd kattintson az **Engedélyezés most** lehetőségre. 
+- A **Többcsatornás fizetések** beállítás értéke a **Commerce megosztott paraméterei** oldalon **Igaz**. A későbbi verziókban **ez** **a beállítás átkerül a Szolgáltatáskezelés munkaterületre, ahol kiválaszthatja a Szövegcsatorna fizetési** szolgáltatását, és rákattinthat az **Engedélyezés gombra.** 
 - Az Adyen fizetési összekötő a houstoni pénztárgéphez van konfigurálva.
 - A Retail Modern POS for Windows vagy Android beépített hardverállomással -vagy-
 - Modern POS for iOS vagy Cloud POS csatlakoztatott, megosztott hardverállomással. 
@@ -169,9 +170,9 @@ Kövesse az alábbi lépéseket a forgatókönyv futtatásához.
 6. A keresési sávon adja meg a **Seattle** értéket, majd válassza átvételhez a **Seattle** üzletet. 
 7. Az **OK** gombra kattintva elfogadja az aktuális dátumot a felvételi dátumként.
 9. Válassza a **Fizetési kártya** elemet a fizetés indításához.
-10. Terhelje a kártyás fizetést a letéthez esedékes összegre. 
+10. Terhelje a kártyás fizetést a letéthez esedékes összegre.
 11. Teljesítse a letét fizetését a fizetési terminálon. 
-12. A letét kifizetését követően válassza ki azt a lehetőséget, hogy a teljesítéshez ugyanaz a kártya legyen használatban, és várja meg, amíg a rendelés teljesül. 
+12. A letét kifizetését követően válassza ki azt a lehetőséget, hogy a teljesítéshez ugyanaz a kártya legyen használatban, és várja meg, amíg a rendelés teljesül. Ha a letét 100%-át fizetik ki (a fenti 10. lépéstől), a pénzt azonnal rögzíti a rendszer a kártyával szemben, és a számlázáskor nem lesz elérhető engedélyezési token, mivel a fedezetet már rögzítették és kifizették.
 13. Indítsa el a seattle-i üzlethez tartozó pénztárat.
 14. A pénztár üdvözlőoldalán válassza az **Átveendő rendelések** műveletet, hogy megtekintse az üzletben átveendő rendeléseket. 
 15. Jelöljön ki egy vagy több sort abból a rendelésből, amely a referenciaüzletben lett létrehozva, majd válassza a **Felvétel** lehetőséget.
@@ -198,7 +199,7 @@ Kövesse az alábbi lépéseket a forgatókönyv futtatásához.
 8. Válassza a **Fizetési kártya** elemet a fizetés indításához.
 9. Terhelje a kártyás fizetést a letéthez esedékes összegre. 
 10. Teljesítse a letét fizetését a fizetési terminálon. 
-11. A letét kifizetését követően válassza ki azt a lehetőséget, hogy a teljesítéshez ugyanaz a kártya legyen használatban, és várja meg, amíg a rendelés teljesül.
+11. A letét kifizetését követően válassza ki azt a lehetőséget, hogy a teljesítéshez ugyanaz a kártya legyen használatban, és várja meg, amíg a rendelés teljesül. Ha a letét 100%-át fizetik ki (a fenti 9. lépéstől), a pénzt azonnal rögzíti a rendszer a kártyával szemben, és a számlázáskor nem lesz elérhető engedélyezési token, mivel a fedezetet már rögzítették és kifizették.
 
 Amikor a rendelés kitárolása, csomagolása és számlázása megtörtént a háttérirodában, a pénztárnál megadott fizetési adatok segítségével rögzíti a rendszer a pénzeszközöket a vevőnek szállított árukért cserébe. 
 
@@ -225,7 +226,7 @@ Az a vevő, aki az üzletbe való rendelésfelvételhez jön, egy másik kártya
 
 ### <a name="invalid-authorizations"></a>Érvénytelen engedélyezések
 
-Ha a rendelés létrehozásához használt kártya már nem érvényes, amikor a termékeket kiválasztják a felvételhez, akkor a kifizetés rögzítési kérelme sikertelen lesz. A pénztár fizetési összekötő megpróbál új engedélyezést létrehozni, és ugyanazokkal a kártyaadatokkal rögzíteni. Ha az új engedélyezés vagy a rögzítés meghiúsul, akkor a pénztárost tájékoztatja a rendszer, hogy a kifizetést nem sikerült feldolgozni. Ezután a pénztárosnak új kifizetést kell kérnie a vevőtől. 
+Ha a rendelés létrehozásához használt kártya már nem érvényes, amikor a termékeket kiválasztják a felvételhez, akkor a kifizetés rögzítési kérelme sikertelen lesz. A pénztár fizetési összekötő megpróbál új engedélyezést létrehozni, és ugyanazokkal a kártyaadatokkal rögzíteni. Ha az új engedélyezés vagy rögzítés sikertelen, a pénztáros értesítést kap arról, hogy a kifizetést nem sikerült feldolgozni. Ezután a pénztárosnak új kifizetést kell kérnie a vevőtől. 
 
 ### <a name="multiple-available-payments"></a>Több elérhető fizetés
 

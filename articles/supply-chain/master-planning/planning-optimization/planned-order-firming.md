@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c2e4294cb54e9ba41467f505e361d5ee45f1f27d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335345"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740522"
 ---
 # <a name="firm-planned-orders"></a>Biztosra tervezett rendelések
 
@@ -33,7 +33,7 @@ Ez a témakör részletesen ismerteti az egyes metódusokat.
 
 ## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a> Az ebben a cikkben leírt funkciók engedélyezése
 
-A legtöbb tervezett rendelési funkció a Microsoft Dynamics 365 Supply Chain Management minden olyan standard telepítésében elérhető, amely Tervezési optimalizálást használ. A jelen leírásban ismertetett funkciók egy része azonban csak akkor használható, ha be van kapcsolva a Funkciókezelés.
+A legtöbb tervezett rendelési funkció a Microsoft minden alaptelepítésében elérhető Dynamics 365 Supply Chain Management. A jelen leírásban ismertetett funkciók egy része azonban csak akkor használható, ha be van kapcsolva a Funkciókezelés.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Tervezett rendelések párhuzamos meg- és kikapcsolása
 
@@ -91,7 +91,7 @@ A rendelések manuális biztosra tervezése érdekében keresse meg és válassz
 
 ## <a name="auto-firm-planned-orders"></a>Automatikusan biztosra tervezett rendelések
 
-Az automatikus megerősítéssel az Alaptervezési folyamat részeként megerősítheti a tervezett rendeléseket. Meghatározhat egy alapértelmezett megerősítési időkorlátot a fedezetcsoportokhoz, egyedi cikkekhez, valamint a cikkek és alaptervek kombinációihoz. Ezt követően az alaptervezés futtatásakor a tervezett rendelések automatikusan meg lesznek erősítve, ha a rendelés dátuma a megerősítés adott időkorlátján belül van. A tervezési optimalizálással és a beépített alaptervezési művelettel létrehozott tervezett rendelések másképp kezelik a rendelés dátumát (azaz a kezdő dátumot).
+Az automatikus megerősítéssel az Alaptervezési folyamat részeként megerősítheti a tervezett rendeléseket. Meghatározhat egy alapértelmezett megerősítési időkorlátot a fedezetcsoportokhoz, egyedi cikkekhez, valamint a cikkek és alaptervek kombinációihoz. Ezt követően az alaptervezés futtatásakor a tervezett rendelések automatikusan meg lesznek erősítve, ha a rendelés dátuma a megerősítés adott időkorlátján belül van. A tervezési optimalizálás és az elavult alaptervezési motor által létrehozott tervezett rendelések másképp kezelik a rendelés dátumát (azaz a kezdő dátumot).
 
 > [!NOTE]
 > A tervezett beszerzési rendelések automatikus megerősítése csak akkor lehetséges, ha a cikkek társítva vannak a szállítóhoz.
@@ -99,13 +99,13 @@ Az automatikus megerősítéssel az Alaptervezési folyamat részeként megerős
 > A megerősített származtatott rendelések (azaz alvállalkozói beszerzési rendelések) *Ellenőrzés alatt* állapottal jelennek meg, ha a változás követése be van kapcsolva.
 
 > [!IMPORTANT]
-> Mielőtt az ebben a szakaszban ismertetett funkció felhasználható lenne a tervezési optimalizálással, [*·*](#enable-features) a rendszernek be kell kapcsolva lennie a tervezési optimalizálási funkciónak az első részében ismertetett módon. Az automatikus tervezés mindig használható a beépített alaptervezési motorral.
+> Mielőtt az ebben a szakaszban ismertetett funkció felhasználható lenne a tervezési optimalizálással, [*·*](#enable-features) a rendszernek be kell kapcsolva lennie a tervezési optimalizálási funkciónak az első részében ismertetett módon. Az automatikus tervezés mindig használható az elavult alaptervezési motorral.
 
-### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatikus megerősítés a tervezési optimalizálással és a beépített tervezőmotor
+### <a name="auto-firming-with-planning-optimization-vs-the-deprecated-master-planning-engine"></a>Automatikus firming a tervezési optimalizálással és az elavult alaptervezési motorral
 
-Mind a tervezés optimalizálása, mind a beépített tervezési motor használható a tervezett rendelések automatikus megerősítésére. Vannak azonban fontos eltérések. Mivel például a tervezés optimalizálása a rendelési dátumot (azaz a kezdő dátumot) használja a megerősítendő tervezett rendelések meghatározásához, a beépített tervezési motor a követelmény dátumát (azaz a záró dátumot) használja. Az alábbi táblázat összegzi a különbségeket.
+A tervezési optimalizálás és az elavult alaptervezési motor egyaránt használható a tervezett rendelések automatikus automatizálására. Vannak azonban fontos eltérések. Például a tervezési optimalizálás a rendelésdátum (vagyis a kezdő dátum) alapján határozza meg, hogy mely tervezett rendeléseket kell meghatározni, míg az elavult alaptervezési motor a szükségletdátum (vagyis a záró dátum) alapján határozza meg. Az alábbi táblázat összegzi a különbségeket.
 
-| Funkció | Tervezési optimalizálás | Beépített tervezőmotor |
+| Szolgáltatás | Tervezési optimalizálás | Elavult alaptervezési motor |
 |---|---|---|
 | **Kiindulási dátum** | Az automatikus megerősítés a rendelés dátuma (kezdő dátum) alapján történik. | Az automatikus megerősítés a követelmény dátuma (záró dátum) alapján történik. |
 | **Átfutási idő** | Mivel a rendelés dátuma (kezdő dátum) indítja a megerősítést, nem kell figyelembe vennie az átfutási időt a megerősítési időkorlát részeként. | Ha biztosítani szeretné, hogy a rendelések időben meg legyenek erősítve, a megerősítés időtartamának hosszabbnak kell lennie, mint az átfutási idő. |

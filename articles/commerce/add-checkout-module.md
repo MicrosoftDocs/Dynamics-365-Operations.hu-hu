@@ -1,8 +1,8 @@
 ---
-title: Pénztármodul
+title: Pénztár modul
 description: Ez a témakör azt ismerteti, hogyan lehet egy pénztármodult hozzáadni egy laphoz, és beállítani a szükséges tulajdonságokat.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: b6f3aef08f723eff8b172db2ca5c355121e93bdc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 295b99c7012e35a40af34d454ff7082d4100c74a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280474"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746225"
 ---
-# <a name="checkout-module"></a>Pénztármodul
+# <a name="checkout-module"></a>Pénztár modul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör azt ismerteti, hogyan lehet egy pénztármodult hozzáadni egy laphoz, és beállítani a szükséges tulajdonságokat.
 
@@ -104,6 +105,8 @@ A fizetésmodul új oldalra való felvételéhez és a kötelező tulajdonságok
 1. Válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Hozzon létre egy olyan sablont, amely az új fizetési töredéket használja.
 1. Hozzon létre egy olyan fizetési oldalt, amely az új sablont használja.
+
+> [MEGJEGYZÉS] Ha az üzlet [előzetes](./dev-itpro/enhanced-sca.md) kifizetésének továbbfejlesztett kifizetésében leírt egyfizetési engedélyezést használ, **a** pénztári lap Pénztár információs szakaszában győződjön meg arról, hogy a pénztári szakasz tárolója az utolsóként van eltárolják. Így garantálható, hogy minden szükséges információt összegyűjtsen a pénztári lap a végleges kifizetés és a rendelés-kitöltési műveletek előtt. 
 
 ## <a name="additional-resources"></a>További erőforrások
 

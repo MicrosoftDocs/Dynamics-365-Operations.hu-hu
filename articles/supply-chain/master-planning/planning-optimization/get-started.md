@@ -1,6 +1,6 @@
 ---
-title: A Tervezési optimalizálás kezdő lépései
-description: Ez a cikk bemutatja, hogy hogyan lehet elkezdeni a tervezésoptimalizálási funkciót.
+title: Az alaptervezés első lépések
+description: Ez a cikk bemutatja, hogy hogyan lehet elkezdeni használni az alaptervezési funkciókat a következőben:Dynamics 365 Supply Chain Management
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,27 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295928"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740329"
 ---
-# <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
+# <a name="get-started-with-master-planning"></a>Az alaptervezés első lépések
 
 [!include [banner](../../includes/banner.md)]
 
-A [korábbi bejelentésnek megfelelően](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) a Tervezési optimalizálás várhatóan felváltja a meglévő beépített alaptervezési motort.
-
-Ha jelenleg a beépített alaptervezési motort használja, akkor most el kell indítania a Tervezési optimalizálását az áttelepítéshez. Fontos, hogy azonnal elindulj, mert a műveletekre hatással lehet az értékcsökkenés érvényesítésekor (bár a végrehajtás jelenleg nincs ütemezve). Javasoljuk, hogy amint a tervezési optimalizálási funkció támogatja a szükséges funkciókat, ezért az új szolgáltatás által biztosított számos teljesítményjan és más új lehetőségen már csak most végre kell végrehajtani az áttelepítést.
-
-A tervezési optimalizálás funkció jelenleg nem támogatja az összes olyan funkciót, amely a Supply Chain Managementbe épített tervezőmotorban jelenleg elérhető. Ezért fontos, hogy meggyőződjön, hogy a tervezésoptimalizálásban jelenleg elérhető szolgáltatáskészlet kielégíti-e a követelményeket. A tervezési optimalizálás funkció alapértelmezés szerint nincs bekapcsolva a Dynamics Lifecycle Services (LCS) modulban, így még a funkció bekapcsolása előtt lehetősége van az értékelésre.
-
-> [!NOTE]
-> Ha az alaptervezési folyamat nem foglalja magában a termelést (az alaptervezés által létrehozott tervezett termelési rendeléseket), akkor kivételt kell kérnie a tervezési optimalizálás miatt szükséges áttelepítés alól, és egy 10.0.15-ös verzión túli beépített alaptervezési motort kell igényelnie. A 10.0.16 verziótól kezdődően egy hiba jelenik meg a környezetekben, amikor a tervezett termelési rendelések létrehozása nélkül futtatja a beépített alaptervezést. A tervezési optimalizálás minden olyan új telepítésnél használható, amely nem hoz létre tervezett termelési rendeléseket az alaptervezés során. Azok, akik beépített alaptervezési motort a tervezett termelési rendelések létrehozása nélkül, a meglévő környezetekben futtatnak, egy levelet fognak kapni, amely a kivételezési folyamat részleteit ismerteti. Javasoljuk, hogy egy partnerrel folytasson együttműködést a tervezési optimalizáláshoz szükséges áttelepítés értékeléséhez és megtervezéséhez.
-
-A tervezés optimalizálása előtt kifejezetten ajánljuk, hogy értékelje a tervezésoptimalizálás illeszkedési elemzésének eredményeit. További tájékoztatás: [Tervezésoptimalizálás illeszkedési elemzése](planning-optimization-fit-analysis.md).
+Az ellátásilánc-kezelésben az alaptervezést a tervezésoptimalizálási bővítménynek nevezett külső szolgáltatás biztosítja Dynamics 365 Supply Chain Management. Ez a témakör bemutatja, hogy hogyan szerezheti be és állíthatja be a szolgáltatást.
 
 ## <a name="availability"></a>Elérhetőség
 
@@ -108,31 +99,15 @@ A kapcsolat állapota jelzi a kapcsolat aktuális állapotát a Supply Chain Man
 A **Tervezés optimalizálása használata** beállítás határozza meg, hogy melyik tervezési motor használható az alaptervezéshez:
 
 - **Igen** – a tervezésoptimalizálás az alaptervezéshez használatos.
-- **Nem** – Az alaptervezéshez a Supply Chain Management beépített tervezési motorja használatos.
+- **Nem** – az elavult alaptervezési motor az alaptervezéshez használható.
 
-Ez a beállítás minden jogi személyre (vállalatra) vonatkozik. Egyes jogi személyeknél és más jogi személyek beépített alaptervezésében nem lehet a Tervezési optimalizálást használni.
+Ez a beállítás minden jogi személyre (vállalatra) vonatkozik. Egyes jogi személyeknél nem használható a tervezési optimalizálás, illetve más jogi személyek elavult alaptervezési motorja.
 
 > [!NOTE]
-> Ha meglévő tervezett kötegelt feladatok, amelyeket a beépített Supply Chain Management tervezési morothoz hoztak létre, elindulnak, miközben a **Tervezésoptimalizálás használata** beállítás értéke **Igen**, a feladatok sikertelenek lesznek.
+> Ha az **elavult** **alaptervezési** motorhoz létrehozott meglévő tervezési kötegelt feladatok aktiválódnak, miközben a Tervezési optimalizálás használata beállítás Igen, ezek a feladatok nem fognak működni.
 
 ### <a name="integration-with-the-setup"></a>Integráció a beállítással
 
 Ha a Tervezésoptimalizálás be van kapcsolva, akkor az alaptervezést a rendszer a Tervezésoptimalizálás bővítménnyel végzi. Ebben az esetben az Alaptervezés eredményeit és funkcióit érinti a program.
 
-## <a name="additional-resources"></a>További erőforrások
-
-[Az előzetes verzió feltételei és kikötései](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
-
-[A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
-
-[Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
-
-[Szűrők alkalmazása egy tervre](plan-filters.md)
-
-[Tervezési feladat érvénytelenítése](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -10,13 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d83aab9b7d3d30d519e8b313a57f2802de3cfb72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bcaaf46a0ddd84cded721c5d02d4a45cd4745114
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846127"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740357"
 ---
+<!-- KFM: Split this up. non-dynamic for deprecated MP, and "dynamic" for new standard PO. -->
+
 # <a name="negative-days-and-dynamic-negative-days"></a>Negatív napok és dinamikus negatív napok
 
 [!include [banner](../includes/banner.md)]
@@ -202,7 +204,7 @@ Ha a negatív napokat **0-ra** (nulla) állítja, és csak a dinamikus negatív 
 
 Ez az eset megegyezik az 1. és a 2. forgatókönyv E esetével. Lényegében ugyanolyan előnyökkel és hátrányokkal bír.
 
-## <a name="conclusion"></a>Összefoglalás
+## <a name="conclusion"></a>Összegzés
 
 A cikk három helyzete szerint jó megoldás a negatív napok számát a fedezeti csoportban található cikkek átfutási idejenél nagyobb számra állítani. Célszerű csak dinamikus negatív napokat használni, és a negatív napokat annyi napra beállítani, amennyit negatív készlet esetén hajlandó várakozni, mielőtt új feltöltést rendel (vagyis amíg hajlandó tovább halasztani az igény teljesítését). Ezenkívül ugyanazon fedezeti csoport cikkeinek hasonló átfutási időkkel kell rendelkezniük.
 

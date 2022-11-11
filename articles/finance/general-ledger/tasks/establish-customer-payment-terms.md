@@ -2,7 +2,7 @@
 title: Vevői kifizetések feltételeinek kialakítása
 description: Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot állítja be.
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9b2ae5e63a2efb4bc913efa4d88c65a70133a2d9
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065708"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752776"
 ---
 # <a name="establish-customer-payment-terms"></a>Vevői kifizetések feltételeinek kialakítása
 
@@ -34,7 +34,11 @@ Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot
 6. Adjon meg egy dátumot **A hónap napja** mezőben. A dátumot szám formájában kell megadni, azaz például „10” és nem „10.” 
 7. Kattintson a **Mentés** gombra.
 8. Zárja be a lapot.
-9. Válassza a **Navigációs ablaktábla >Modulok > Kinnlévőségek > Kifizetések beállítása > Fizetési feltételek** elemet.
+9. Válassza a **Navigációs ablaktábla >Modulok > Kinnlévőségek > Kifizetések beállítása > Fizetési feltételek** elemet. 
+
+>[!NOTE] 
+>Ha a **fizetési feltétel** **Készpénz**,**·** **a** Fizetési feltételek lapon a Készpénzfizetés mezőnek Nem típusúnak kell **lennie.**
+
 10. Kattintson az **Új** elemre. **A fizetési feltételek** a határidők kiszámításának módját határozzák meg. A készpénzfizetési engedmény dátuma egy külön lapon kerül beállításra. 
 11. A **Fizetési feltételek mezőbe** írjon egy azonosítót.
 12. Adjon meg egy leírást a **Leírás** mezőben.

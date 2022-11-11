@@ -2,22 +2,22 @@
 title: Feladatkezelés szinkronizálása a Microsoft Teams és a Dynamics 365 Commerce-pénztár között
 description: Ez a témakör leírja, hogyan kell szinkronizálni a feladatkezelést a Microsoft Teams Dynamics 365 Commerce pénztár és a pénztár között.
 author: gvrmohanreddy
-ms.date: 02/17/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f7a26f1625ca9414a43f895ff37f697d573a36aa
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: f339ae031f11ad850dab47f84bc9823cf6776e74
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268274"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746097"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Feladatkezelés szinkronizálása a Microsoft Teams és a Dynamics 365 Commerce-pénztár között
 
@@ -30,6 +30,21 @@ A Teams integráció egyik fő célja a feladatkezelés szinkronizálása a pén
 Mivel a Tervező a Teamsben található feladatok adattára, kapcsolatnak kell lennie a Teams és a Dynamics 365 Commerce között. Ez a hivatkozás egy adott üzletcsoporthoz megadott tervazonosító alapján jött létre.
 
 A következő eljárások be mutatják, hogyan lehet beállítani a feladatkezelés szinkronizálását a pénztár- és a Teams-alkalmazások között.
+
+## <a name="link-pos-and-teams-for-task-management"></a>A pénztár és a Teams összekapcsolása feladatkezeléshez
+
+Ha a pénztárt és a Microsoft Teams alkalmazásokat feladatkezeléshez össze szeretné kapcsolni a Commerce központban, kövesse az alábbi lépéseket.
+
+> [!NOTE]
+> Mielőtt megpróbálja integrálni a feladatkezelést a Teams alkalmazással, győződjön meg róla, hogy engedélyezte [Dynamics 365 Commerce és integrálta az integrációt Microsoft Teams](enable-teams-integration.md). 
+
+1. Lépjen ide: **Kiskereskedelem és kereskedelem \> Feladatkezelés \> Feladatok integrációja a Microsoft Teams szolgáltatással**.
+1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
+1. Állíts a **Feladatkezelés-integráció engedélyezése** elemet **Igen** értékre.
+1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
+1. A Műveleti ablaktáblán kattintson a **Feladatkezelés beállítása** elemre. Értesítést kell kapnia, **amely azt jelzi, hogy létrehoznak egy Teams-létesítő** nevű kötegelt feladatot.
+1. Menjen a **Rendszerfelügyelet \> Lekérdezések \> Kötegelt feladatok** ponthoz, és keresse meg azt a legutóbbi feladatot, amely a **Teams-kiépítés** leírását tartalmazza. Várjon, amíg a feladat be nem fejeződik.
+1. A **1070-es CDX-feladat** futtatásával tegye közzé a tervazonosítót és az üzlet hivatkozásait a Retail Server kiszolgálón.
 
 ## <a name="publish-a-test-task-list-in-teams"></a>Tesztfeladatlista közzététele a Teamsben
 
@@ -50,20 +65,8 @@ A tesztfeladatok listájának a Teamsben való közzétételéhez hajtsa végre 
 
 További információkért lásd: [Feladatlisták közzététele a munka létrehozásához és követéséhez a szervezetben](https://support.microsoft.com/office/publish-task-lists-to-create-and-track-work-in-your-organization-095409b3-f5af-40aa-9f9e-339b54e705df).
 
-## <a name="link-pos-and-teams-for-task-management"></a>A pénztár és a Teams összekapcsolása feladatkezeléshez
-
-Ha a pénztárt és a Microsoft Teams alkalmazásokat feladatkezeléshez össze szeretné kapcsolni a Commerce központban, kövesse az alábbi lépéseket.
-
 > [!NOTE]
-> Mielőtt megpróbálja integrálni a Feladatkezelést Microsoft Teams, győződjön meg róla, hogy engedélyezte és integrálta [Dynamics 365 Commerce az Microsoft Teams et](enable-teams-integration.md). 
-
-1. Lépjen ide: **Kiskereskedelem és kereskedelem \> Feladatkezelés \> Feladatok integrációja a Microsoft Teams szolgáltatással**.
-1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
-1. Állíts a **Feladatkezelés-integráció engedélyezése** elemet **Igen** értékre.
-1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
-1. A Műveleti ablaktáblán kattintson a **Feladatkezelés beállítása** elemre. Értesítést kell kapnia, amely azt jelzi, hogy egy **Teams kiépítése** nevű kötegelt feladat létrehozása történik.
-1. Menjen a **Rendszerfelügyelet \> Lekérdezések \> Kötegelt feladatok** ponthoz, és keresse meg azt a legutóbbi feladatot, amely a **Teams-kiépítés** leírását tartalmazza. Várjon, amíg a feladat be nem fejeződik.
-1. A **1070-es CDX-feladat** futtatásával tegye közzé a tervazonosítót és az üzlet hivatkozásait a Retail Server kiszolgálón.
+> Miután sikeresen megtörtént a feladatlista közzététele a Teamsben, a feladatok megjelennek a POS-terminálon. A POS-vezetőknek és pénztárosoknek ezután be kell Azure AD jelentkeznie a POS-be. A további tudnivalókat lásd [Azure Active Directory a POS-bejelentkezéshez való hitelesítés engedélyezése cikknél](aad-pos-logon.md). 
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -1,6 +1,6 @@
 ---
 title: Értékesítési rendelés szállítási dátumának számítása az ígérhető használatával
-description: A ígérő (CTP) funkciók segítségével való valószerű dátumokat lehet adni a vevőknek arra az időpontra, amikor adott árukat ígérni lehet. Ez a témakör azt ismerteti, hogyan lehet beállítani és használni az egyes tervezőmotorok (Tervezési optimalizálás és a beépített motor) CTP készletét.
+description: A ígérő (CTP) funkciók segítségével való valószerű dátumokat lehet adni a vevőknek arra az időpontra, amikor adott árukat ígérni lehet. Ez a témakör azt ismerteti, hogyan lehet beállítani és használni az egyes tervezőmotorok CTP-készletét (Tervezési optimalizálás és az elavult alaptervezési motor).
 author: t-benebo
 ms.date: 07/20/2022
 ms.topic: article
@@ -11,28 +11,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-20
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 3b8e3dc9f0e7aaf019aa4d7284458206e7daadb2
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 4a3b8ba89d9fb224026cf32cad89d7f28321ee79
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714860"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741203"
 ---
 # <a name="calculate-sales-order-delivery-dates-using-ctp"></a>Értékesítési rendelés szállítási dátumának számítása az ígérhető használatával
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+<!-- KFN: Split into two topics, one for PO and one for classic. -->
 
 A ígérő (CTP) funkciók segítségével való valószerű dátumokat lehet adni a vevőknek arra az időpontra, amikor adott árukat ígérni lehet. Minden értékesítési sorhoz meg lehet adni egy dátumot, amely figyelembe veszi a meglévő aktuális készletet, termelési kapacitást és szállítási időket.
 
 A ígérhető ([CTP](../../sales-marketing/delivery-dates-available-promise-calculations.md)) szolgáltatás a kapacitási adatok figyelembevével bővíti az ígérethez rendelkezésre álló funkciókat. Míg az "ATP" figyelembe veszi, hogy csak az anyagok rendelkezésre állása áll rendelkezésre, és végtelen kapacitású erőforrásokat feltételez, a CTP figyelembe veszi mind az anyagok, mind a kapacitás elérhetőségét. Így pontosabb képet ad arról, hogy az igényt egy adott időkereten belül kielégítheti-e.
 
-Az ön által használt alaptervezési motortól (tervezési optimalizálás vagy beépített motor) függően a CTP (CTP) egy kissé másképp működik. Ez a témakör azt ismerteti, hogyan lehet beállítani az egyes motorokat. A tervezési optimalizáláshoz rendelkezésre álló mennyiség jelenleg csak a beépített motor által támogatott CTP esetek egy részkészletét támogatja.
+Az ön által használt alaptervezési motortól (tervezésoptimalizálás vagy elavult alaptervezési motor) függően a CTP(CTP) egy kissé másképp működik. Ez a témakör azt ismerteti, hogyan lehet beállítani az egyes motorokat. A tervezési optimalizáláshoz rendelkezésre álló mennyiség jelenleg csak az elavult alaptervezési motor által támogatott, az egykulcsos (CTP) eseteknek csak egy részkészletét támogatja.
 
 ## <a name="turn-on-ctp-for-planning-optimization"></a>Az "Egyen rendelkezésre álló mennyiség" bekapcsolása tervezési optimalizáláshoz
 
-A beépített alaptervezési motorhoz mindig rendelkezésre áll a CTP (CTP) mennyiség. Ha azonban tervezési optimalizáláshoz CTP (CTP) javaslatokat szeretne használni, akkor azt a rendszernek kell bekapcsolni. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+Az elavult alaptervezési motorhoz mindig rendelkezésre áll az CTP érték. Ha azonban tervezési optimalizáláshoz CTP (CTP) javaslatokat szeretne használni, akkor azt a rendszernek kell bekapcsolni. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Alaptervezés modul*
 - **Funkciónév:** *(előnézet) - CTP tervezési optimalizáláshoz*
@@ -47,9 +48,9 @@ Az anyagokat és erőforrásokat egyaránt figyelembeó" "CTP" számítás nagyo
 
 ## <a name="how-ctp-differs-depending-on-the-master-planning-engine-that-you-use"></a>A CTP-mennyiség eltérése a használt alaptervezési motortól függően
 
-Az alábbi táblázat összefoglalja a beépített alaptervezési motor CTP (tervezési optimalizálási) és CTP (CTP) szerinti különbségeit.
+Az alábbi táblázat összefoglalja az elavult alaptervezési motor CTP (tervezési optimalizálási) és CTP (CTP) szerinti különbségeit.
 
-| Elem | Tervezési optimalizálás | Beépített alaptervezési motor |
+| Elem | Tervezési optimalizálás | Elavult alaptervezési motor |
 |---|---|---|
 | **A szállítási dátum ellenőrzése** a rendelések, rendeléssorok és termékek esetében | *Ígérhető a tervezési optimalizáláshoz* | *Ctp* |
 | Számítás ideje | A számítást egy dinamikus terv ütemezett feladatként való futtatása indítja el. | A számítást azonnal elindítja a rendszer minden alkalommal, amikor beír vagy frissít egy értékesítésirendelés-sort. |
@@ -70,8 +71,8 @@ A program minden olyan új rendelési sorra alkalmazza az alapértelmezett szál
     - *Értékesítés átfutási ideje* – Az értékesítés átfutási ideje az értékesítés rendelés létrehozása és a szállítás közti idő. A szállítási dátum számítása az alapértelmezett számú napon alapul, és nem veszi figyelembe a készlet rendelkezésre állását, az ismert igényt vagy a tervezett készletet.
     - *Ígérethez* rendelkezésre áll – az ígérethez rendelkezésre álló cikk mennyisége, amely egy meghatározott időpontban ígérhető a vevőnek. Az Ígérethez rendelkezésre álló mennyiség kiszámítása tartalmazza a nem véglegesített készletet, az átfutási időket a tervezett bevételezéseket és kiadásokat.
     - *ATP + kiadási időrés* – a szállítási dátum megegyezik az "Tp" dátum és a cikk kiadási időrtéke alapján. A kiadási időtartalék a szállítandó cikkek előkészítéséhez szükséges idő.
-    - *CTP* – a beépített alaptervezési motor által biztosított CTP-számítás használata. Ha tervezés szerinti optimalizálást használ, *a "CTP* " szállításidátum-ellenőrzési módszer nem engedélyezett, és ha be van jelölve, hibát okoz a számítás futtatásakor.
-    - *CTP tervezési optimalizáláshoz* – a tervezési optimalizálás által biztosított CTP-számítás használható. Ennek a beállításnak nincs hatása, ha a beépített alaptervezési motort használja.
+    - *CTP* – az elavult alaptervezési motor által biztosított CTP-számítás használata. Ha tervezés szerinti optimalizálást használ, *a "CTP* " szállításidátum-ellenőrzési módszer nem engedélyezett, és ha be van jelölve, hibát okoz a számítás futtatásakor.
+    - *CTP tervezési optimalizáláshoz* – a tervezési optimalizálás által biztosított CTP-számítás használható. Ennek a beállításnak nincs hatása, ha az elavult alaptervezési motort használja.
 
 ### <a name="set-delivery-date-control-overrides-for-individual-products"></a>Az egyes termékek szállításidátum-ellenőrzési felülbírálásának beállítása
 
@@ -85,7 +86,7 @@ Felülbírálásokat olyan meghatározott termékekhez rendelhet hozzá, amelyek
 
 ## <a name="schedule-ctp-for-planning-optimization-calculations"></a><a name="batch-job"></a> CTP ütemezése tervezési optimalizálási számításokhoz
 
-Ha A tervezéshez CTP (CTP) optimalizálást használ, dinamikus tervet kell futtatnia, hogy a rendszer elindítsa az "CTP" számítások elvégzését, majd állítsa be a visszaigazolt szállítási és kézhezvételi dátumokat az összes kapcsolódó rendeléshez. A tervnek tartalmaznia kell minden olyan tételt, amelynél visszaigazolt szállítási és kézhezvételi dátumok szükségesek. (Ha a beépített tervezőmotorhoz CTP-t használ, akkor a rendszer azonnal helyben számolja ki az egyes mennyiségeket. Emiatt nem kell dinamikus tervet futtatnia ahhoz, hogy látsa a CTP-eredményeket.)
+Ha A tervezéshez CTP (CTP) optimalizálást használ, dinamikus tervet kell futtatnia, hogy a rendszer elindítsa az "CTP" számítások elvégzését, majd állítsa be a visszaigazolt szállítási és kézhezvételi dátumokat az összes kapcsolódó rendeléshez. A tervnek tartalmaznia kell minden olyan tételt, amelynél visszaigazolt szállítási és kézhezvételi dátumok szükségesek. (Ha az elavult alaptervezési motorhoz CTP-t használ, akkor a rendszer azonnal helyben végez CTP-számítást. Emiatt nem kell dinamikus tervet futtatnia ahhoz, hogy látsa a CTP-eredményeket.)
 
 Annak érdekében, hogy a dátumok minden felhasználó számára megfelelő időben rendelkezésre érhetők el, javasoljuk, hogy a megfelelő tervek ismétlődő futtatásához kötegelt feladatokat állítson be. Például egy olyan kötegelt feladat, amely dinamikus terv 30 percenkénti futtatására van beállítva, 30 percenként beállítja a visszaigazolt szállítási és fogadási dátumokat. Ezért a rendeléseket be- és importáló felhasználóknak legfeljebb 30 percet kell várnia a visszaigazolt szállítási és fogadási dátumok fogadására.
 
@@ -98,17 +99,17 @@ A következő lépések szerint állíthat be kötegelt feladatot dinamikus terv
 1. Az **ütemezés mentéshez kattintson az OK** gombra.
 1. A **kötegelt feladat létrehozásához és a párbeszédpanel bezárásához kattintson az OK** gombra.
 
-## <a name="use-ctp-for-built-in-master-planning"></a>CTP használata beépített alaptervezéshez
+## <a name="use-ctp-for-the-deprecated-master-planning-engine"></a>A CTP használata az elavult alaptervezési motorhoz
 
-### <a name="create-a-new-order-by-using-ctp-for-built-in-master-planning"></a>Új rendelés létrehozása beépített alaptervezésre vonatkozó CTP használatával
+### <a name="create-a-new-order-by-using-ctp-for-the-deprecated-master-planning-engine"></a>Új rendelés létrehozása a CTP használatával az elavult alaptervezési motorban
 
 A rendszer minden alkalommal, amikor új értékesítési rendelést vagy rendeléssort ad hozzá, hozzárendel egy alapértelmezett szállításidátum-ellenőrzési módszert. A rendelési fejléc mindig a globális alapértelmezett módszerrel kezdődik. Ha egy megrendelt cikkhez felülbírálás van hozzárendelve, az új rendelési sor ezt a felülbírálatot használja. Ellenkező esetben az új rendeléssor a globális alapértelmezett módszert fogja használni. Ezért úgy kell beállítani az alapértelmezett metódusokat, hogy azok megegyeznek a leggyakrabban használt szállításidátum-ellenőrzési módszerrel. A rendelés létrehozása után a rendelés fejlécének és/vagy sorának szintjén felülbírálhatja az alapértelmezett módszert. A további tudnivalókat lásd az [Alapértelmezett](#default-methods)[szállításidátum-ellenőrzési módszerek beállítása és a meglévő értékesítési rendelések módosítása az "Alapértelmezett szállítási dátum ellenőrzése" beállítással.](#change-orders)
 
-### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-built-in-master-planning"></a>Visszaigazolt szállítási dátumok megtekintése a beépített alaptervezésben a CTP (CTP) használata esetén
+### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-the-deprecated-master-planning-engine"></a>Visszaigazolt szállítási dátumok megtekintése az elavult alaptervezési motorban a CTP érték használata esetén
 
-Ha a beépített alaptervezési motort használja, akkor a rendszer az "CTP" számításokat alkalmazza az olyan rendelésekre és/**·** *vagy rendeléssorokra, amelyekben a Szállítási dátum vezérlő mezője a CTP (CTP) beállítású*.
+Ha elavult alaptervezési motort használ, akkor a program az olyan rendelésekre és/**·** *vagy rendeléssorokra alkalmazza a CTP-számításokat, amelyekben a Szállítási dátum ellenőrzése mező be van állítva a CTP (CTP) értékre.*
 
-A beépített alaptervezésben A **CTP** **készletet** használó értékesítési soroknál a rendszer minden értékesítési sor mentésekor automatikusan beállítja a Visszaigazolt szállítási dátum és a Visszaigazolt kézhezvételi dátum mezőket. Ha később módosít egy értékesítési sort (például a mennyiség vagy a telephely módosításával), akkor a program azonnal újraszámja a dátumokat.
+Az elavult alaptervezési motorban A **CTP** **értékeket** használó értékesítési soroknál a rendszer minden értékesítési sor mentésekor automatikusan beállítja a Visszaigazolt szállítási dátumot és a Visszaigazolt kézhezvételi dátum mezőt. Ha később módosít egy értékesítési sort (például a mennyiség vagy a telephely módosításával), akkor a program azonnal újraszámja a dátumokat.
 
 - Értékesítésirendelés-sor visszaigazolt szállítási dátumának megtekintéséhez nyissa meg az értékesítési rendelést, és válassza ki az értékesítési sort. Ezután a Szállítás lap **Sor részletei gyorslapján** **·** **ellenőrizze** a Visszaigazolt szállítási dátum és a Visszaigazolt kézhezvételi dátum értékeit.**·**
 - Egy teljes rendelés visszaigazolt szállítási dátumának megtekintéséhez nyissa meg az értékesítési rendelést, és válassza a Fejléc **nézetet**. Ezután a Szállítás gyorsététában **ellenőrizze** a **Visszaigazolt szállítási dátum és** a Visszaigazolt **kézhezvételi dátum értékeit**.
@@ -155,8 +156,8 @@ A rendelés rendelésfejlécben való felhasználása érdekében módosítsa a 
 1. Válassza ki **a Fejléc** lehetőséget a fejlécadatok megnyitásához az Értékesítési **rendelés adatai lapon**.
 1. A Szállítás **gyorsblokkon** **állítsa** a Szállítás dátuma vezérlőmezőt a használt tervezőmotortól függően a következő értékek egyikére:
 
-    - *CTP* – a beépített alaptervezési motor által biztosított CTP-számítás használata. Ha tervezés szerinti optimalizálást használ, *a "CTP* " szállításidátum-ellenőrzési módszer nem engedélyezett. Ezért ha ezt az értéket választja, hiba történik a számítás futtatásakor.
-    - *CTP tervezési optimalizáláshoz* – a tervezési optimalizálás által biztosított CTP-számítás használható. Ennek a beállításnak nincs hatása, ha a beépített alaptervezési motort használja.
+    - *CTP* – az elavult alaptervezési motor által biztosított CTP-számítás használata. Ha tervezés szerinti optimalizálást használ, *a "CTP* " szállításidátum-ellenőrzési módszer nem engedélyezett. Ezért ha ezt az értéket választja, hiba történik a számítás futtatásakor.
+    - *CTP tervezési optimalizáláshoz* – a tervezési optimalizálás által biztosított CTP-számítás használható. Ennek a beállításnak nincs hatása, ha az elavult alaptervezési motort használja.
 
 <!-- KFM: Additional dialogs are shown here. Review these with the PM and expand this procedure at next revision. -->
 1. A módosítások alkalmazásához kattintson az **OK** gombra.
@@ -165,15 +166,15 @@ A rendelés rendelésfejlécben való felhasználása érdekében módosítsa a 
 
 Ha másik szállításidátum-ellenőrzési módszerrel hozott létre rendeléssort, bármikor át lehet válthat "CTP" típusúra. A sor szintjén végrehajtott módosítások nem befolyásolják a többi sort. Előfordulhat azonban, hogy a rendelés szállítási dátumai az egyes frissített sorok számításának változásától függően előre vagy hátrafelé haladnak. <!-- KFM: Confirm this intro at next revision -->
 
-Ha módosítani kell egy rendelést úgy, hogy a sor szintjén a beépített alaptervezésben CTP-t használ, kövesse ezeket a lépéseket.
+Ha módosítani kell egy rendelést úgy, hogy a sor szintjén az elavult alaptervezési motorban CTP-t használ, kövesse ezeket a lépéseket.
 
 1. Ugrás a **Kinnlevőségek \> Rendelések \> Minden értékesítési rendelésre**.
 1. Nyissa meg a beállítani kívánt értékesítési rendelést, vagy hozzon létre egy újat.
 1. Az Értékesítési **rendelés részletei** lap Értékesítésirendelés-sor **gyorslapján** válassza ki a beállítani kívánt értékesítésirendelés-sort.
 1. A **Szállítás** **·** **lap** Sor részletei gyorslapján állítsa a Szállítási dátum vezérlőmezőt az alábbi értékek egyikére a használt tervezőmotortól függően:
 
-    - *CTP* – a beépített alaptervezési motor által biztosított CTP-számítás használata. Ha tervezés szerinti optimalizálást használ, *a "CTP* " szállításidátum-ellenőrzési módszer nem engedélyezett. Ezért ha ezt az értéket választja, hiba történik a számítás futtatásakor.
-    - *CTP tervezési optimalizáláshoz* – a tervezési optimalizálás által biztosított CTP-számítás használható. Ennek a beállításnak nincs hatása, ha a beépített alaptervezési motort használja.
+    - *CTP* – az elavult alaptervezési motor által biztosított CTP-számítás használata. Ha tervezés szerinti optimalizálást használ, *a "CTP* " szállításidátum-ellenőrzési módszer nem engedélyezett. Ezért ha ezt az értéket választja, hiba történik a számítás futtatásakor.
+    - *CTP tervezési optimalizáláshoz* – a tervezési optimalizálás által biztosított CTP-számítás használható. Ennek a beállításnak nincs hatása, ha az elavult alaptervezési motort használja.
 
     **Megjelenik az Elérhető szállítási** és kézhezvételi dátumok párbeszédpanel, amely megjeleníti a rendelkezésre álló szállítási és kézhezvételi dátumokat. Ez a párbeszédpanel ugyanúgy működik a rendeléssorok és a rendelésfejlécek során, mint az előző szakaszban leírtak.
 

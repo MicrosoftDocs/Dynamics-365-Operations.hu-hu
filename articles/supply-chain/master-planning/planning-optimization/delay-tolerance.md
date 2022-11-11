@@ -10,14 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 78ba4236705f1a200d9fe796eb80d0241b0fa537
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335375"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740468"
 ---
 # <a name="delay-tolerance-negative-days"></a>Késleltetési tűréshatár (negatív napok)
+<!-- KFM: Split topic into PO and classic -->
 
 [!include [banner](../../includes/banner.md)]
 
@@ -47,7 +48,7 @@ A rendszer a késleltetett tűréshatár számítását a *legkorábbi feltölt�
 Ez a képlet gondoskodik arról, hogy az alaptervezés ne hozzon létre új ellátási rendeléseket, ha a termék átfutási ideje alatt elegendő készlet létezik.
 
 > [!NOTE]
-> A Tervezési optimalizálásnál a késleltetett tűréshatár számítása mindig a beépített alaptervezés dinamikus negatív napszámítását használja. Az **Alaptervezés paraméterei** lapon a **Dinamikus negatív napok** használata beállítás nincs hatással erre a viselkedésre.
+> A tervezési optimalizálás késleltetési tűréshatárának számítása mindig az elavult alaptervezési motor dinamikus negatív napszámítását használja. Az **Alaptervezés paraméterei** lapon a **Dinamikus negatív napok** használata beállítás nincs hatással erre a viselkedésre.
 
 Ha a meglévő készlet a számított késleltetési tűréshatárnál kisebb vagy azzal egyenlő igény-késleltetést jelent, akkor a Tervezési optimalizálás a meglévő készletet az igénynek megfelelő mennyiséggel egyenlíti ki. Bizonyos esetekben jobb késleltetni az igényt, mint ha a végén túl sok idő lenne.
 

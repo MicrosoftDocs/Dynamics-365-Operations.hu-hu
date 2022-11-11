@@ -1,6 +1,6 @@
 ---
 title: Tervelőzmények és tervezési naplók megtekintése
-description: Ez a cikk bemutatja a tervezési optimalizálási funkció által kiváltott tervezési feladatok előzményeinek megtekintését.
+description: Ez a cikk bemutatja a tervezési feladatok előzményeinek megtekintését.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab469686a009364bf53cb963506fd2107075a283
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863940"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740931"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Tervelőzmények és tervezési naplók megtekintése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a cikk bemutatja a Microsoft tervezési optimalizálási funkciója által kiváltott tervezési feladatok előzményeinek megtekintését Dynamics 365 Supply Chain Management.
+Ez a cikk bemutatja, hogy hogyan lehet megtekinteni a Microsoft tervezési munkáinak előzményeit Dynamics 365 Supply Chain Management.
 
 A terv előzményeinek megtekintéséhez nyissa meg a tervet az **Alaptervezés** \> **Beállítás** \> **Tervek** \> **Alaptervek** pontban, majd válassza ki az **Előzmények** elemet. Az előzményben felsorolva láthatók a kiválasztott tervekhez tartozó feladatok. A lista tartalmazza a befejezett és az aktív feladatokat.
 
@@ -47,14 +47,6 @@ Az alaptervezés futtatásakor történt automatikus megerősítési hibák és 
     - Ha a régi űrlapot használja: A műveleti panelen válassza ki a **Kötegelt feladatok** lapon a **Napló** lehetőséget.
 
 1. Az **Üzenet részletei** ablaktábla megnyitásához válassza ki az **Üzenet részletei** lehetőséget ahol megtekintheti a feldolgozás során rögzített összes figyelmeztetést és hibát.
-
-## <a name="related-resources"></a>Kapcsolódó erőforrások
-
-- [Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
-- [A Tervezési optimalizálás kezdő lépései](get-started.md)
-- [A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
-- [Szűrők alkalmazása egy tervre](plan-filters.md)
-- [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
+title: Áttelepítés a tervezési optimalizálásra az alaptervezéshez
 description: Ez a cikk az új alaptervezési motorról, a tervezési optimalizálásról és a meglévő motorból való áttelepítésről nyújt tájékoztatást.
 author: t-benebo
 ms.date: 05/11/2020
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a94b424ad1a454feecede8a7b037171b2984504f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbbc58f0dcd833f63e84a73ac68ada60bd0c291d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846098"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739951"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
 
@@ -31,35 +31,35 @@ A beépített alaptervezési motor elavultnak van ütemezve (elavult). A Microso
 
 A Tervezési optimalizálás lehetővé teszi, hogy az alaptervezési számítások a Supply Chain Management szolgáltatáson és a kapcsolódó Azure SQL-adatbázison kívül történjenek. A Tervezési optimalizáláshoz tartozó előnyök között szerepel a továbbfejlesztett teljesítmény és az SQL-adatbázisra tett minimális hatás az alaptervezés futtatásakor. Mivel a gyors tervezési futtatások a nyitvatartási idő alatt is megtehetők, így a tervezők azonnal reagálni tudnak a igényre vagy a paraméterek változásaira.
 
-Tervezési optimalizálással kapcsolatos további tudnivalókért lásd: [Tervezési optimalizálás áttekintése](planning-optimization/planning-optimization-overview.md).
+A tervezésoptimalizálással kapcsolatos további tudnivalókat lásd [az Alaptervezés rendszer architektúráját](master-planning-architecture.md).
 
 ## <a name="obsolescence-of-the-existing-master-planning-engine"></a>A meglévő alaptervezési motor elavulása
 
-A Microsoft a beépített tervezési motort elavulttá teszi a Tervezési optimalizálás javára. Ez a módosítás hatással van az összes felhőalapú környezetre. Az intézményi telepítések nem érintettek. A 10.0.16 és újabb verziókban egy hibaüzenet jelenik meg, ha a beépített alaptervezést tervezett termelési rendelések létrehozása nélkül futtatja. A hibaüzenet ellenére azonban a program sikeresen végrehajtja az alaptervezést.
+A Microsoft az elavult alaptervezési motort elavulttá teszi a tervezési optimalizálás során. Ez a módosítás hatással van az összes felhőalapú környezetre. Az intézményi telepítések nem érintettek. A 10.0.16-os és későbbi verzióban egy hibaüzenet jelenik meg, ha a tervezett termelési rendelések létrehozása nélkül futtatja az elavult alaptervezési motort. A hibaüzenet ellenére azonban a program sikeresen végrehajtja az alaptervezést.
 
-Ha további tájékoztatást szeretne kapni a beépített tervezési rendszer elavulásáról, olvassa el a következő témakör bejelentéseit: [Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban](../get-started/removed-deprecated-features-scm-updates.md).
+Az elavult alaptervezési [motorról az Eltávolítva vagy elavult funkciók bejelentései tartalmaznak további tudnivalókat a következőben:Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md)
 
 ## <a name="migration-messages-and-exceptions"></a>Áttelepítés, üzenetek és kivételek
 
-Azok, akik beépített alaptervezési motort a tervezett termelési rendelések létrehozása nélkül, a meglévő környezetekben futtatnak, egy e-mail fognak kapni, amely a kivételezési folyamat részleteit ismerteti. Javasoljuk, hogy egy partnerrel folytasson együttműködést a tervezési optimalizáláshoz szükséges áttelepítés értékeléséhez és megtervezéséhez.
+A meglévő környezetek tulajdonosai, akik tervezett termelési rendelések létrehozása nélkül futtatják az elavult alaptervezési motort, e-mailt kapnak, amely a kivétel folyamatának részleteit tartalmazza. Javasoljuk, hogy egy partnerrel folytasson együttműködést a tervezési optimalizáláshoz szükséges áttelepítés értékeléséhez és megtervezéséhez.
 
-Mint már említettük, a 10.0.16 és újabb verziókban egy hibaüzenet jelenik meg, ha a beépített alaptervezést tervezett termelési rendelések létrehozása nélkül futtatja. Ez a hibaüzenet az áttelepítéssel és a kivételek kérelmezésével kapcsolatos útmutatást tartalmaz.
+Amint már említettük, hibaüzenetet kap a 10.0.16-os és később verzióban, ha a tervezett termelési rendelések létrehozása nélkül futtatja az elavult alaptervezési motort. Ez a hibaüzenet az áttelepítéssel és a kivételek kérelmezésével kapcsolatos útmutatást tartalmaz.
 
 ### <a name="new-deployments"></a>Új telepítések
 
-A tervezési optimalizálást a felhő minden új telepítésének alapértelmezett alaptervezési motorjaként kell figyelembe venni. Általánosan a tervezési optimalizálás minden olyan új telepítésnél használható, amely nem hoz létre tervezett termelési rendeléseket az alaptervezés során. Ha egy új telepítés olyan funkciótól függ, amelyet a Tervezési optimalizálás jelenleg nem támogat, akkor kivételt kérhet, így továbbra is használhatja a beépített alaptervezési motort.
+A tervezési optimalizálást a felhő minden új telepítésének alapértelmezett alaptervezési motorjaként kell figyelembe venni. Általánosan a tervezési optimalizálás minden olyan új telepítésnél használható, amely nem hoz létre tervezett termelési rendeléseket az alaptervezés során. Ha az új telepítés olyan funkcióktól függ, amelyek használatát a tervezési optimalizálás jelenleg nem támogatja, kivételt kérhet, így továbbra is használhatja az elavult alaptervezési motort.
 
 ### <a name="existing-deployments"></a>Meglévő telepítések
 
-Az alaptervezéstől függő meglévő felhőalapú telepítések tulajdonosainak tervbe kell tenniük a Tervezési optimalizálásra való áttelepítést. Ha a megvalósítása olyan funkciótól függ, amelyet a Tervezési optimalizálás jelenleg nem támogat, akkor kivételt kérhet, így továbbra is használhatja a beépített alaptervezési motort.
+Az alaptervezéstől függő meglévő felhőalapú telepítések tulajdonosainak tervbe kell tenniük a Tervezési optimalizálásra való áttelepítést. Ha a megvalósítás olyan funkcióktól függ, amelyek használatát a tervezési optimalizálás jelenleg nem támogatja, kivételt kérhet, így továbbra is használhatja az elavult alaptervezési motort.
 
 A jelenleg elavult alaptervezési folyamatokat használó környezetek esetében a Microsoft e-mailt küld a környezet adminisztrátorának. Ez az e-mail információt nyújt az áttelepítéshez vagy a kivételek kéréséhez szükséges műveletekről.
 
 ## <a name="the-exception-process"></a>A kivétel folyamata
 
-Akkor kérhet kivételt, ha továbbra is használni szeretné a beépített alaptervezési motort, mivel az üzleti folyamatok legalább egy olyan funkciótól erősen függenek, amely jelenleg nincs megvalósítva a Tervezési optimalizálásban. Az elérhető szolgáltatások listáját lásd: [Tervezési optimalizálása illeszkedési elemzése](planning-optimization/planning-optimization-fit-analysis.md).
+Kivételt akkor lehet kérni, ha továbbra is használnia kell az elavult alaptervezési motort, mivel az üzleti folyamatok legalább egy olyan funkciótól függnek, amely jelenleg nincs megvalósítva a tervezési optimalizálásban. Az elérhető szolgáltatások listáját lásd: [Tervezési optimalizálása illeszkedési elemzése](planning-optimization/planning-optimization-fit-analysis.md).
 
-Jelenleg a Tervezési optimalizálás áttelepítési kivételei csak akkor relevánsak, ha az alaptervezési folyamata nem tartalmaz termelést (azaz az alaptervezés által létrehozott tervezett termelési rendeléseket), és egy 10.0.15-ös verzión túli beépített alaptervezési motort kell igényelnie.
+Jelenleg csak akkor van jelentősége a tervezési optimalizálás áttelepítésére vonatkozó kivételeknek, ha az alaptervezés folyamata nem tartalmazza a termelést (azaz az alaptervezés által létrehozott tervezett termelési rendeléseket), és az elavult alaptervezési motorra a 10.0.15-ös verzión túl van szükség.
 
 A szükséges szolgáltatások elérhetővé válása után a Microsoft türelmi időszakot ad meg, amíg a kivétel lejár. A környezet adminisztrátorát tájékoztatni kell a szükséges szolgáltatások elérhetővé válásakor és a türelmi időszak indulásakor.
 
@@ -74,9 +74,9 @@ Az alábbi folyamatábra összefoglalja a jelen cikk adatait, így gyorsan ki tu
 
 ### <a name="sandbox-environments"></a><a name="faq-sandbox"></a>Tesztkörnyezetek
 
-Használható a beépített alaptervezés a tesztkörnyezethez? Kivétel szükséges?
+Használhatom az elavult alaptervezési motort a saját beérkezett üzenetek környezetében? Kivétel szükséges?
 
-**Válasz:** Kivételek általában nem vonatkoznak a tesztkörnyezetekre, mert a Tervezési optimalizálási kivételi hibája nem akadályozza meg, hogy a beépített alaptervezési motor sikeresen fusson. Ha azonban a hibaüzenet zavarja, akkor letilthatja egy IaaS (nem Service Fabric) tesztkörnyezetében, ha a következő lekérdezést futtatja az adatbázison:
+**Válasz:** A kivételek általában nem fontosak a dobozos környezetekben, mert a tervezési optimalizálási kivétel hibája nem akadályozza meg az elavult alaptervezési motor sikeres futtatását. Ha azonban a hibaüzenet zavarja, akkor letilthatja egy IaaS (nem Service Fabric) tesztkörnyezetében, ha a következő lekérdezést futtatja az adatbázison:
 
 ```sql
 -- Insert or update an enabled flight:
@@ -92,13 +92,13 @@ ELSE
 
 A környezetem helyszíni. Kivétel szükséges?
 
-**Válasz:** Nem. Nem szükség kivételre a helyszíni környezetekhez. A beépített alaptervezést továbbra is használhatja. A környezet adminisztrátora tájékoztatni fogja, ha szükséges valamilyen művelet.
+**Válasz:** Nem. Nem szükség kivételre a helyszíni környezetekhez. Folytathatja az elavult alaptervezési motor használatát. A környezet adminisztrátora tájékoztatni fogja, ha szükséges valamilyen művelet.
 
 ### <a name="production-scenarios"></a>Termelési esetek
 
 A tervezett termelési rendeléseket használjuk, de aggódom amiatt, hogy mi fog történni, amikor frissítünk a 10.0.16-os verzióra. Van valamilyen teendőm?
 
-**Válasz:** Nem kell aggódnia. A beépített alaptervezést továbbra is használhatja a 10.0.16-os verzióban. Azonban azt ajánljuk, hogy kezdje el mérlegelni, hogy az aktuális funkciókkal megkezdődhet-e a Tervezési optimalizálásra való áttelepítés. Azt ajánljuk továbbá, hogy az új funkciókról továbbra is tájékozódjon.
+**Válasz:** Nem kell aggódnia. A 10.0.16 verzióban továbbra is használhatja az elavult alaptervezési motort. Azonban azt ajánljuk, hogy kezdje el mérlegelni, hogy az aktuális funkciókkal megkezdődhet-e a Tervezési optimalizálásra való áttelepítés. Azt ajánljuk továbbá, hogy az új funkciókról továbbra is tájékozódjon.
 
 ### <a name="email-from-microsoft"></a>E-mail a Microsofttól
 
@@ -110,9 +110,9 @@ Környezeti adminisztrátorunk egy e-mailt kapott a Microsofttól. Az e-mail sze
 
 Az alaptervezés futtatásakor a következő hibaüzenet jelenik meg a 10.0.16-os vagy későbbi verzión. Az alaptervezés zárolva van?
 
-> Ez a hibaüzenet akkor jelenik meg, ha a beépített alaptervezési motort a Tervezési optimalizálás által támogatott esetekhez használta. Most át kell telepítenie rendszerét a Tervezés optimalizálásra, mivel az aktuális beépített alaptervezés elavult. Ne feledje, hogy ennek az alaptervezésnek a futtatása sikeresen befejeződött.
+> Ez a hibaüzenet azért jelenik meg, mert az elavult alaptervezési motort a tervezési optimalizálás által támogatott helyzetekhez használta a rendszer. Most kell áttérni a Tervezési optimalizálásra, mert a beépített alaptervezési motor már elavult. Ne feledje, hogy ennek az alaptervezésnek a futtatása sikeresen befejeződött.
 >
-> Abban az esetben, ha az áttelepítés erősen függ a függőben lévő szolgáltatásoktól, kérhető a beépített alaptervezési motor további használatának kivétele.
+> Ha az áttelepítésben erős függőségek vannak a függő funkcióktól, kivételt lehet kérni az elavult alaptervezési motor folyamatos használatára.
 >
 > Töltse ki a következő kérdőívet a kezdéshez, illetve a szükséges, kérelmezzen kivételt a Tervezési optimalizálásra való átállítás alól.
 

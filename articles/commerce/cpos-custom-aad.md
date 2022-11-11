@@ -1,29 +1,26 @@
 ---
-title: A CPOS konfigurálása egyéni alkalmazás Azure AD használatára
+title: A CPOS konfigurálása az egyéni Azure AD-alkalmazás használatához
 description: Ez a cikk bemutatja, hogyan kell konfigurálni a Felhő POS (CPOS) alkalmazást az egyéni Azure Active Directory (Azure AD) alkalmazások használatára.
 author: boycez
-ms.date: 08/02/2022
+ms.date: 11/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: baa0c3da25308345037b5dd1b4c5907d6213e7f7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 5e4ff797410e1e94869cc37684e7622ec0d97842
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9223819"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746260"
 ---
-# <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>A CPOS konfigurálása egyéni alkalmazás Azure AD használatára
+# <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>A CPOS konfigurálása az egyéni Azure AD-alkalmazás használatához
 
 [!include [banner](includes/banner.md)]
 
-Alapértelmezés szerint a Cloud POS (CPOS) Microsoft Dynamics 365 Commerce egy regisztrált, első fél által közzétett Microsoft-alkalmazásra (in () mutat Azure Active Directory Azure AD. Ennek megfelelően a CPOS-t anélkül is használhatja, hogy módosításokat volna szükséges volna tenni a Azure AD. Előfordulhat azonban, hogy egy ön által vezérelt egyéni alkalmazásra szeretné irányítani a Azure AD CPOS-példányt. Ez a cikk bemutatja, hogyan kell konfigurálni a CPOS-t az egyéni alkalmazások Azure AD használatára.
+Alapértelmezés szerint a Cloud POS (CPOS) Microsoft Dynamics 365 Commerce egy regisztrált, első fél által közzétett Microsoft-alkalmazásra in mutat Azure Active Directory (Azure AD). Ennek megfelelően a CPOS-t anélkül is használhatja, hogy módosításokat volna szükséges volna tenni a Azure AD. Előfordulhat azonban, hogy egy ön által vezérelt egyéni alkalmazásra szeretné irányítani a Azure AD CPOS-példányt. Ez a cikk bemutatja, hogyan kell konfigurálni a CPOS-t az egyéni alkalmazások Azure AD használatára.
 
 ## <a name="set-up-a-custom-retail-server-app-in-azure-ad"></a>Egyéni Retail Server alkalmazás beállítása a következőben: Azure AD
 
@@ -52,6 +49,9 @@ Az alábbi lépések szerint hozhat létre és konfigurálhatja az Azure AD egy�
 
 ## <a name="set-up-a-custom-cpos-app-in-azure-ad"></a>Egyéni CPOS-alkalmazás beállítása a következőben: Azure AD
 
+> [!IMPORTANT]
+> Ha a Commerce 10.0.21-es verziója előtt létrehozott egyéni CPOS-alkalmazást frissít, Azure AD hajtsa végre a Commerce-verzió [létrehozása előtt létrehozott meglévő egyéni CPOS-alkalmazás Azure AD](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021) 10.0.21.
+
 Az alábbi lépések szerint hozhat létre és konfigurálhatja az Azure AD egyéni CPOS-alkalmazást.
 
 1. Jelentkezzen be a rendszergazdai [Azure Active Directory központba](https://aad.portal.azure.com) bármely felhasználói Azure AD fiók használatával. A felhasználói fióknak nem kell rendszergazdai jogosultságokkal rendelkeznie.
@@ -68,12 +68,25 @@ Az alábbi lépések szerint hozhat létre és konfigurálhatja az Azure AD egy�
 1. Állítsa **igazra** **az oauth2AllowIdTokenImplicitFlow** **és az oauth2AllowImplicitFlow** paramétert **a** Jegyzékfájl szakaszban, **majd válassza a Mentés lehetőséget.**
 1. Két jogcím **hozzáadásához** hajtsa végre a Token konfigurációs szakaszában:
 
-    - Válassza a **Nem kötelező igény hozzáadása lehetőséget**. Állítsa azonosítóra **a Tokentípus** mezőt **·**, majd válassza ki a **tokenigényt**. Válassza a **Hozzáadás** lehetőséget.
-    - Válassza a **Nem kötelező igény hozzáadása lehetőséget**. Állítsa a **Jogkivonattípus mezőt** Access **beállításra**, majd válassza ki a **tokenigényt**. Válassza a **Hozzáadás** lehetőséget.
+    1. Válassza a **Nem kötelező igény hozzáadása lehetőséget**. Állítsa azonosítóra **a Tokentípus** mezőt **·**, majd válassza ki a **tokenigényt**. Válassza a **Hozzáadás** lehetőséget.
+    1. Válassza a **Nem kötelező igény hozzáadása lehetőséget**. Állítsa a **Jogkivonattípus mezőt** Access **beállításra**, majd válassza ki a **tokenigényt**. Válassza a **Hozzáadás** lehetőséget.
 
 1. **Az API-engedélyek szakaszban** válassza az Engedély **hozzáadása lehetőséget**.
 1. Keresse meg **a Saját szervezet által** használt API-k lapján azt a Retail Server alkalmazást, amely az egyéni Retail Server [alkalmazás beállítása szakaszban létre van hozva Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad). Ezután válassza az Engedélyek **hozzáadása lehetőséget**.
 1. Az Áttekintés **szakaszban** jegyezze **fel az Alkalmazás (ügyfél) azonosítója mező** értékét.
+
+### <a name="upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021"></a>A Commerce 10.0.21-es verziója előtt létrehozott egyéni CPOS-alkalmazás Azure AD frissítése
+
+A következő lépések szerint frissítheti a Commerce 10.0.21-es verziója előtt létrehozott egyéni CPOS-alkalmazást Azure AD. 
+
+1. Nyissa meg egyéni CPOS-alkalmazást Azure AD az Azure-portálon.
+1. Válassza a Hitelesítés **lapot**.
+1. Az eredeti átirányítási URI másolása és mentése a **webtípusból** későbbi felhasználásra, majd törlése.
+1. Válassza **a Platform hozzáadása**, majd az Egyoldalas **alkalmazás (SPA) lehetőséget**.
+1. Adja hozzá a fent átmásolt eredeti webes átirányítási URI-t a SPA platformra.
+1. Két jogcím **hozzáadásához** hajtsa végre a Token konfigurációs szakaszában:
+    1. Válassza a **Nem kötelező igény hozzáadása lehetőséget**. Állítsa azonosítóra **a Tokentípus** mezőt **·**, majd válassza ki a **tokenigényt**. Válassza a **Hozzáadás** lehetőséget.
+    1. Válassza a **Nem kötelező igény hozzáadása lehetőséget**. Állítsa a **Jogkivonattípus mezőt** Access **beállításra**, majd válassza ki a **tokenigényt**. Válassza a **Hozzáadás** lehetőséget.
 
 ## <a name="update-the-cpos-configuration-file"></a>A CPOS konfigurációs fájl frissítése
 
@@ -89,7 +102,7 @@ A CPOS mindkét paramétert használja, Azure AD amikor egy biztonsági token me
 Ezután frissítenie kell az identitás-szolgáltatók beállításait a Commerce Headquarters szolgáltatásban.
 
 1. A Commerce Headquartersben nyissa meg **a Commerce Megosztott kereskedelmi paraméterek lapot**.
-1. Az Identitás-szolgáltatók **·** **lap** Identitás-szolgáltatók szakaszában válassza ki azt a sort, amelybe be van állítva a Típus mező, **·** **Azure Active Directory** **és a Kibocsátó** mező a Azure AD bérlőre mutat. Ez a beállítás azt jelenti, hogy a bérlőnek megfelelő azonosítószolgáltatóhoz kapcsolódó adatokat tartalmazó gyermek rácsokkal fog Azure AD dolgozni.
+1. Az Identitás-szolgáltatók **·** **lap** Identitás-szolgáltatók szakaszában válassza ki azt a sort, amelybe be van állítva a Típus mező, **·** **Azure Active Directory** **és a Kibocsátó** mező a Azure AD bérlőre mutat. Ez a beállítás Azure AD azt jelenti, hogy olyan gyermekrácsokkal kell dolgoznia, amelyek a bérlőnek megfelelő azonosítószolgáltatóhoz kapcsolódó adatokat tartalmazzák.
 1. A Függő **felek szakaszban** válassza a Hozzáadás **lehetőséget** sor hozzáadásához.
 1. Állítsa be a következő mezőket:
 

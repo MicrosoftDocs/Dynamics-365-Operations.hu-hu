@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28c2c10a9293d00e26dfcc80ab08b89a122a6135
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9732771"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752690"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Dynamics 365 Human Resources infrastruktúra-egyesítés ismert problémái
 
@@ -44,10 +44,3 @@ Az áttelepítés előtt a következő környezettípusokra van szükség:
 
 A Teams alkalmazásban jelenleg meglévő Emberi erőforrások alkalmazás egy megoldásra való áttolása Microsoft Power Platform folyamatban van. További tájékoztatás: [Human Resources alkalmazás a Teamsben](hr-admin-teams-leave-app.md).
 
-## <a name="licensing"></a>Licenckezelés
-
-A licencelés a Dynamics 365 Human Resources következő helyeken nem változik: 
-
-- **Licencbevásárlási követelmények minimális száma**
-- **Licencek termelési környezethez és üzenetdoboz-környezethez – ha olyan önálló emberierőforrás-licencekkel rendelkezik, amelyek egyetlen termelési és egy üzenetkészlet-környezetet tartalmaznak, akkor ugyanannak a licencnek a száma lesz elérhető a** pénzügyi és a műveleti infrastruktúra területén.
-- **További üzenetkészlet-licencek** – ha további boxlicenceket vásárolt az önálló Emberi erőforrások alkalmazáshoz, akkor ugyanennyi licenc lesz elérhető a pénzügyi és műveleti infrastruktúra üzenetkészlet-környezetekben is. 

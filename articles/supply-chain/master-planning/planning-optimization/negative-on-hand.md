@@ -1,6 +1,6 @@
 ---
 title: Tervezés negatív tényleges készleten lévő mennyiségekkel
-description: Ez a cikk bemutatja, hogy hogyan kezeli a rendszer a negatív kézhez a tervezés optimalizálása során.
+description: Ez a cikk bemutatja, hogy hogyan kezeli a negatív az adott cikket.
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04006bb12142be69c84bc8085dd82fc99280e90b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4fc8b37fd800e3b4652513f150f9806bf1d5d67
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856135"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741122"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Tervezés negatív tényleges készleten lévő mennyiségekkel
 
@@ -29,7 +29,7 @@ ms.locfileid: "8856135"
 
 Ha a rendszer negatív összesített tényleges mennyiséget mutat, akkor a tervezési motor a mennyiséget 0 (nulla) értékkel kezeli a túlszállítás elkerülésére. Ez a funkció működése:
 
-1. A tervezés optimalizálása funkció összesíti az aktuális készleten lévő mennyiségeket a fedezeti dimenziók legalacsonyabb szintjén. (Ha például a *hely* nem fedezeti dimenzió, akkor a tervezés optimalizálása a *raktár* szintjén összesíti az aktuális készleten lévő mennyiségeket.)
+1. Az alaptervezés a fedezeti dimenziók legalacsonyabb szintjén összesíti az elérhető mennyiségeket. (Ha például *a hely* nem fedezeti dimenzió, *akkor az alaptervezés a raktár szintjén összesíti az készleten található mennyiségeket* .)
 1. Ha negatív a fedezeti dimenziók legalacsonyabb szintjén levő összesített aktuális mennyiség, a rendszer azt feltételezi, hogy az aktuális készlet mennyisége valóban 0 (nulla).
 
 > [!IMPORTANT]
@@ -88,14 +88,6 @@ A rendszer a következő módon van konfigurálva:
 - *10* db. mennyiségre van egy értékesítési rendelés Az *FG* termékből.
 - Az értékesítési rendelés mennyisége ténylegesen le van foglalva a meglévő aktuális készlettel szemben.
 
-Ezután módosítsa az *FG* termék mennyiségét úgy, hogy az aktuális készlet 5 leárazhatóvá válik. Mivel az aktuális termék készlete 5, az értékesítési rendelés mennyisége most olyan mennyiségre lesz lefoglalva, amely nem elérhető az aktuális készletben (hasonló lenne, ha az aktuális készlet 0, ebben az esetben az értékesítési rendelés negatív készlethez lenne lefoglalva). Ha most futtatja az alaptervezést, létrejön egy 5 *mennyiségű tervezett rendelés az FG* számára az értékesítési rendelés ellátásához, mert a tervezési optimalizálás mindig a meglévő készletet használja, vagy létrehoz egy új tervezett rendelést a fizikai foglalás ellátásához.
-
-## <a name="related-resources"></a>Kapcsolódó erőforrások
-
-- [Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
-- [A Tervezési optimalizálás kezdő lépései](get-started.md)
-- [A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
-- [Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
-- [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+Ezután módosítsa az *FG* termék mennyiségét úgy, hogy az aktuális készlet 5 leárazhatóvá válik. Mivel az aktuális termék készlete 5, az értékesítési rendelés mennyisége most olyan mennyiségre lesz lefoglalva, amely nem elérhető az aktuális készletben (hasonló lenne, ha az aktuális készlet 0, ebben az esetben az értékesítési rendelés negatív készlethez lenne lefoglalva). Ha most futtatja az alaptervezést, létrejön egy 5 *mennyiségű tervezett rendelés az FG* számára az értékesítési rendelés ellátásához, mert az alaptervezés mindig a meglévő készletet fogja használni, vagy új tervezett rendelést hoz létre a fizikai foglalás ellátásához.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 43da249637c44b3f56e8b5e210a0e44d9ac6cb9d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335255"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740549"
 ---
 # <a name="production-planning"></a>Termeléstervezés
 
 [!include [banner](../../includes/banner.md)]
-
-A tervezési optimalizálások több termelési helyzetet is támogatnak. Ha egy meglévő, beépített alaptervezési motorról tér át, fontos, hogy tisztában legyen a némiképp megváltozott viselkedéssel.
 
 Az alábbi videofelvétel rövid bevezetőt nyújt a cikk néhány alapfogalma bevezetőjében: [Dynamics 365 Supply Chain Management A tervezés optimalizálási fejlesztések](https://youtu.be/u1pcmZuZBTw).
 
@@ -46,10 +44,6 @@ A tervezett termelési rendelések tartalmazzák a termelés ütemezéséhez sz�
 
 - **Tervezett termelési rendelés** – Az átfutási idő a kiadott termékből származó statikus átfutási időn alapul.
 - **Visszaszorítású termelési rendelés** – Az átfutási idő az útvonal-információkat és a kapcsolódó erőforrásmegszorításokat használó ütemezésen alapul.
-
-A szolgáltatások várható elérhetőségével kapcsolatos további tudnivalókat lásd a [Tervezési optimalizálás igazítási elemzés](planning-optimization-fit-analysis.md)oldalon.
-
-Ha olyan termelési funkcióktól függ, amelyek még nem állnak rendelkezésre tervezési optimalizáláshoz, akkor továbbra is használhatja a beépített alaptervezési motort. Nincs szükség kivételre.
 
 ## <a name="delays"></a>Késések
 
@@ -76,15 +70,15 @@ Az **Alábontás** lap használatával elemezni lehet egy adott termelési rende
 
 ## <a name="filters"></a><a name="filters"></a>Szűrők
 
-Annak érdekében, hogy a tervezési optimalizálás a helyes eredmény kiszámításához szükséges információkat tartalmazza, minden olyan terméket bele kell foglalnia a tervezett rendelés teljes anyagjegyzék-struktúrájába, amely bármilyen kapcsolatban áll a termékekkel. A termelést is magukban foglaló tervezési eseteknél ezért azt javasoljuk, hogy kerülje el a szűrt alaptervezési futtatásokat.
+Annak érdekében, hogy az alaptervezés a helyes eredmény kiszámításához szükséges információkat tartalmazza, minden olyan terméket bele kell foglalnia a tervezett rendelés teljes anyagjegyzék-struktúrájába, amely kapcsolatban áll a termékekkel. A termelést is magukban foglaló tervezési eseteknél ezért azt javasoljuk, hogy kerülje el a szűrt alaptervezési futtatásokat.
 
-Bár a rendszer automatikusan észleli a függő gyermekeket, és bekerül az alaptervezésbe a beépített alaptervezési motor használata esetén, a tervezési optimalizálás jelenleg nem végzi el ezt a műveletet.
+Bár az elavult alaptervezési motor használata esetén a rendszer automatikusan észleli a függő gyermek cikkeket, és bekerül az alaptervezésbe, jelenleg nem végzi el ezt a műveletet a tervezési optimalizálás.
 
 Ha például az A termék anyagjegyzék-szerkezetében egy csavar a B termék előállítására is használatos, akkor a szűrőben szerepelnie kell az A és a B termék anyagjegyzék-szerkezetében található összes terméknek. Mivel bonyolult lehet annak biztosítása, hogy minden termék a szűrő része legyen, javasoljuk, hogy ne használjon szűrőt alaptervezési futtatásoknál termelési rendelések esetén. Ellenkező esetben az alaptervezés nem kívánt eredményeket adhat.
 
 ### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Okok az alaptervezés szűrt futtatásainak elkerülésére
 
-Amikor szűrt alaptervezést futtat egy termékhez, a Tervezési optimalizálás (ellentétben a beépített alaptervezési motorral) nem észleli az adott termék anyagjegyzék-szerkezetében az összes alterméket és nyersanyagot, ezért nem foglalja bele azokat az alaptervezés futtatásába. Bár a Tervezési optimalizálás azonosítja a termék anyagjegyzékszerkezetének első szintjét, nem tölt be termékbeállításokat (például az alapértelmezett rendeléstípust vagy cikkfedezetet) az adatbázisból.
+Amikor szűrt alaptervezést futtat egy termékhez, a tervezési optimalizálás (az elavult alaptervezési motorral szemben) nem észleli az adott termék anyagjegyzék-szerkezetében az összes altermelést és nyersanyagot, ezért nem foglalja bele azokat az alaptervezés futtatásába. Bár a Tervezési optimalizálás azonosítja a termék anyagjegyzékszerkezetének első szintjét, nem tölt be termékbeállításokat (például az alapértelmezett rendeléstípust vagy cikkfedezetet) az adatbázisból.
 
 A Tervezés optimalizálásában a futtatás adatai előzőleg betöltődnek, és alkalmazza a szűrőket. Ez azt jelenti, hogy ha egy meghatározott termék alterméke vagy nyersanyaga nem része a szűrőnek, akkor az ezzel kapcsolatos adatokat nem rögzíti a rendszer a futtatás során. Ezenkívül ha az altermék vagy a nyersanyag szerepel egy másik termékben is, akkor egy olyan szűrt futtatás, amely csak az eredeti terméket és összetevőit tartalmazza, eltávolítja a másik termékhez létrehozott meglévő tervezett igényt.
 

@@ -1,6 +1,6 @@
 ---
-title: Alaptervezés az igény-előrejelzésekkel
-description: Ez a cikk bemutatja, hogy hogyan lehet az igény-előrejelzéseket szerepeletni az alaptervezés és a tervezési optimalizálás során.
+title: Alaptervezés igény-előrejelzésekkel
+description: Ez a cikk bemutatja, hogy hogyan lehet az igény-előrejelzéseket szerepeletni az alaptervezés során.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79a25d6fc5c809947b5b92a32cc00c9a3cc73202
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878990"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739783"
 ---
-# <a name="master-planning-with-demand-forecasts"></a>Alaptervezés az igény-előrejelzésekkel
+# <a name="master-planning-with-demand-forecasts"></a>Alaptervezés igény-előrejelzésekkel
 
 [!include [banner](../../includes/banner.md)]
 
-Az igény-előrejelzést a Tervezési optimalizálással együtt használhatja az alaptervezésben várható igény felméréséhez. Manuálisan létrehozhatja az igény-előrejelzést, importálhatja vagy generálhatja a Microsoft Dynamics 365 Supply Chain Management igény-előrejelzési funkciójának használatával. Az igény-előrejelzéssel kapcsolatos további tudnivalókat lásd: [Igény-előrejelzés áttekintése](../introduction-demand-forecasting.md).
+Az igény-előrejelzés segítségével figyelembe lehet venni az alaptervezésben várható igényt. Manuálisan létrehozhatja az igény-előrejelzést, importálhatja vagy generálhatja a Microsoft Dynamics 365 Supply Chain Management igény-előrejelzési funkciójának használatával. Az igény-előrejelzéssel kapcsolatos további tudnivalókat lásd: [Igény-előrejelzés áttekintése](../introduction-demand-forecasting.md).
 
 > [!NOTE]
 > A Tervezés optimalizálás során külön előrejelzési tervezés nem támogatott. Ezért az **Alaptervezés paraméterei** oldal **Aktuális előrejelzési terv** beállításának nincs hatása a Tervezés optimalizálás használata során.
@@ -50,7 +50,7 @@ Ha egy alaptervet úgy kíván konfigurálni, hogy az tartalmazza az igény-elő
     - **Előrejelzési időszak** – Ha az **Előrejelzési terv** beállítás *Igen* értékre van állítva, adja meg, hogy hány napig (a mai dátumtól) kell alkalmazni az igény-előrejelzést.
 
     > [!IMPORTANT]
-    > A Tervezés optimalizálás az **Előrejelzési terv** beállítást még nem támogatja.
+    > A **tervezési optimalizálás** nem támogatja az előrejelzési terv beállítását.
 
 ## <a name="set-up-a-coverage-group-to-include-a-demand-forecast"></a>Az igény-előrejelzést tartalmazó fedezeti csoport beállítása
 

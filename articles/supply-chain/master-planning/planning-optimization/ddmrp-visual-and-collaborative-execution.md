@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: ce32a4449da8e85f958f212f2c2dfd2841ca6887
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689776"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740823"
 ---
 # <a name="visual-and-collaborative-execution"></a>Vizuális és együttműködési végrehajtása
 
@@ -34,7 +34,7 @@ A Microsoft vizuálisan Dynamics 365 Supply Chain Management nyomon követheti, 
 1. Válasszon egy kiadott cikket, amely be van állítva felfelé és felfelé. (További tájékoztatás: [Készlet pozicionása](ddmrp-inventory-positioning.md).)
 1. A Munkaablak Terv lapján **válassza** a Cikkfedezet **lehetőséget**.
 1. A Cikkfedezet **lapon** válasszon ki egy olyan cikkfedezeti rekordot, amely létrehoz egy lefedő pontot. (Ez a rekord egy fedezeti csoport nevét mutatja, amely a felfokozási pontok létrehozására van beállítva.)
-1. Válassza az **Kéznél fület** . Ez a lap egy diagramot tartalmaz, amely bemutatja az időben módosult készletmennyiségeket, valamint a tervezési optimalizálás futtatásakor egy adott időszakra rögzített, az adott készletszint értékét. A lap tartalmaz egy táblát is, amely megmutatja, hogy az alábbi kategóriák közül melyekbe esik az egyes rögzített, az árhoz rögzített kategóriák:
+1. Válassza az **Kéznél fület** . Ez a lap egy diagramot tartalmaz, amely bemutatja az időben módosult készletmennyiségeket, valamint az alaptervezés futtatásakor egy adott időszakra rögzített, az adott készletszint értékét. A lap tartalmaz egy táblát is, amely megmutatja, hogy az alábbi kategóriák közül melyekbe esik az egyes rögzített, az árhoz rögzített kategóriák:
 
     - **Kritikusan alacsony** – az időszakban a minimum felének kisebb.
     - **Alacsony** – a minimum és a minimum között van.

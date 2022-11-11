@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904528"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752803"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Főkönyvi devizaátértékelés
 
@@ -64,7 +64,9 @@ Az átértékelési folyamat egy vagy több jogi személy számára futtatható.
 
 Az átértékelés egy vagy több deviza számára futtatható. A keresés minden olyan pénznemet tartalmaz, amelyet a fő számlatípus (Mérleg vagy Nyereség és veszteség) dátumtartományán belül adtak fel az átértékelésre kijelölt jogi személyek számára. A könyvelési pénznem szerepel a listában, de a rendszer nem végzi el az átértékelése, ha a könyvelési pénznem van kiválasztva. 
 
-Állítsa az **Előnézet feladás előtt** pontot **Igen** lehetőségre, ha szeretné megtekinteni a Főkönyvi átértékelési eredményét. A Főkönyv előnézete eltér a Kinnlevőségek és a Kötelezettségek devizaátértékelési szimulációjától. Az AR és AP szimulációja egy jelentés, de Főkönyvnek van előnézete, amelyet fel lehet adni az átértékelési folyamat újbóli futtatása nélkül. Az előnézet eredményeit exportálhatja a Microsoft Excel programba, hogy megőrizze az összegek kiszámítási módjának előzményeit. Nem használhat kötegelt feldolgozást, ha meg akarja tekinteni az átértékelés eredményének előnézetét. Az előnézetben a felhasználónak lehetősége van a **Feladás** gombot használó valamennyi jogi személy eredményének feladására. Ha hiba merül fel valamelyik jogi személy eredményeivel kapcsolatban, a felhasználó feladhatja a jogi személyek alkészletét a **Jogi személyek kijelölése feladáshoz** gomb segítségével. 
+Állítsa az **Előnézet feladás előtt** pontot **Igen** lehetőségre, ha szeretné megtekinteni a Főkönyvi átértékelési eredményét. A Főkönyv előnézete eltér a Kinnlevőségek és a Kötelezettségek devizaátértékelési szimulációjától. Az AR és AP szimulációja egy jelentés, de Főkönyvnek van előnézete, amelyet fel lehet adni az átértékelési folyamat újbóli futtatása nélkül. Az előnézet eredményeit exportálhatja a Microsoft Excel programba, hogy megőrizze az összegek kiszámítási módjának előzményeit. Nem használhat kötegelt feldolgozást, ha meg akarja tekinteni az átértékelés eredményének előnézetét. Az előnézetben a felhasználónak lehetősége van a **Feladás** gombot használó valamennyi jogi személy eredményének feladására. Ha hiba merül fel valamelyik jogi személy eredményeivel kapcsolatban, a felhasználó feladhatja a jogi személyek alkészletét a **Jogi személyek kijelölése feladáshoz** gomb segítségével.
+
+Ha szeretné kizárni **az** átértékelési folyamatból a Jelentési pénznem-korrekciók naplója segítségével feladott korrekciókat, **·** **állítsa a Jelentési pénznem-korrekciók kizárása beállítást Igen beállításra**. Alapértelmezés szerint a jelentési pénznem korrekciói szerepelnek az átértékelésben. 
 
 A devizaátértékelési folyamat befejezése után az egyes futtatások előzményeinek nyomon követésére létrejön egy rekord.  Minden jogi személy és a feladási réteg számára külön rekord jön létre.
 

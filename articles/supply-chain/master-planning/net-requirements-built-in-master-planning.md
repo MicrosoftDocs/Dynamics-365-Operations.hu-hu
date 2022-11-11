@@ -1,6 +1,6 @@
 ---
-title: Nettó követelmények és a igénykövetési információk beépített alaptervezéssel
-description: Ez a cikk a beépített alaptervezés számított nettó követelményeiről és az igényekre vonatkozó információkról nyújt tájékoztatást.
+title: Nettó követelmények és igénykövető adatok az elavult alaptervezési motorral
+description: Ez a témakör a számított nettó követelményekről és az igénykövető adatokról nyújt tájékoztatást az elavult alaptervezési motorban.
 author: t-benebo
 ms.date: 04/20/2022
 ms.topic: article
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 08a25af0d7ea15b4bc426dfc54b9b960762e11f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd11cf039704afc520cfa24185aa2e7842af9a00
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846069"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740275"
 ---
-# <a name="net-requirements-and-pegging-information-with-built-in-master-planning"></a>Nettó követelmények és a igénykövetési információk beépített alaptervezéssel
+# <a name="net-requirements-and-pegging-information-with-the-deprecated-master-planning-engine"></a>Nettó követelmények és igénykövető adatok az elavult alaptervezési motorral
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,8 +26,8 @@ Az alaptervezés futtatásakor fontos, hogy jobban megértsük a kimenetelét, h
 
 A **Nettó követelmények** lap megjeleníti a termékhez az alaptervezés során kiszámított nettó követelményeket. Megjeleníti az alaptervezés futtatása során alkalmazott fedezeti beállításokat, a követelményösszegek tranzakciótípus szerinti lebontását és igénykövetési adatokat.
 
-A **Nettó követelmények** lap attól függően, hogy a tervezésoptimalizálást vagy a beépített alaptervezési motort használja, egy kissé másképp viselkedik. Az eltéréssel kapcsolatos további [tudnivalókat lásd a beépített alaptervezés és a tervezési optimalizálás közötti különbségeknél.](planning-optimization/planning-optimization-differences-with-built-in.md)
+A **Nettó követelmények** lap attól függően, hogy tervezési optimalizálást vagy elavult alaptervezési motort használ, attól függően, hogy használatban van-e. Az eltéréssel kapcsolatos további [tudnivalókat lásd a Tervezési optimalizálás és az elavult alaptervezési motor közötti különbségeket.](planning-optimization/planning-optimization-differences-with-built-in.md)
 
-Az oldal munkához való beállításával kapcsolatos további tudnivalókat lásd a [Nettó követelmények és az igénykövetés a Tervezés optimalizálásával](planning-optimization/net-requirements.md).
+Az oldal munkához való munkáról a [Nettó követelmények és az igényekre vonatkozó információk tartalmaznak további tájékoztatást](planning-optimization/net-requirements.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

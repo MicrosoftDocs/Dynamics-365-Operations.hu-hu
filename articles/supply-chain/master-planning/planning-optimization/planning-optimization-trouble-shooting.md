@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f078fda02a11eb2073738d59b45f81698b707653
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37c38ab9cec8ae3c9d4decf8043b43ea2251083e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889519"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739729"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Tervezési optimalizálás hibaelhárítása 
 
@@ -37,13 +37,13 @@ A Tervezési optimalizálás egy Lifecycle Services (LCS) rendszerrel kompatibil
 
 ## <a name="planning-of-batch-jobs-fails-when-planning-optimization-is-enabled"></a>A kötegelt feladatok tervezése meghiúsul, amikor a Tervezési optimalizálás engedélyezve van.
 
-A Tervezési optimalizálás engedélyezése esetén a beépített alaptervezési motor automatikusan le van tiltva. A meglévő alaptervezett kötegelt feladatok, amelyeket a beépített Supply Chain Management tervezési morothoz hoztak létre, meghiúsulnak, ha elindulnak, miközben a Tervezési optimalizálás engedélyezve van. Egy hibaüzenet jelenik meg, például *Ez a művelet olyan alaptervezést aktivált, amely nem támogatott, ha a Tervezési optimalizálás engedélyezve van*.
+Ha engedélyezi a tervezési optimalizálást, a rendszer automatikusan letiltja az elavult alaptervezési motort. Az elavult alaptervezési motorhoz létrehozott alaptervezési kötegelt feladatok sikertelenek lesznek, ha akkor aktiválódnak, amikor engedélyezve van a Tervezési optimalizálás funkció. Egy hibaüzenet jelenik meg, például *Ez a művelet olyan alaptervezést aktivált, amely nem támogatott, ha a Tervezési optimalizálás engedélyezve van*.
 
-**Javítás**: Szakítsa meg az összes olyan alaptervezési kötegelt feladatot, amelyek a beépített Supply Chain Management-tervezési motorhoz lett létrehozva.
+**Javítás**: Az elavult alaptervezési motorhoz létrehozott összes alaptervezési kötegelt feladat megszakítása.
 
 ## <a name="planning-optimization-results-are-different-from-earlier-results"></a>A Tervezési optimalizálás eredményei eltérnek a korábbi eredményektől
 
-A Tervezés optimalizálás néhány területen eltér a beépített alaptervezési konstrukciótól. Ez a függő szolgáltatások miatt is történhet.
+Egyes területek esetében a tervezési optimalizálás különbözik az elavult alaptervezési motortervtől. Ez a függő szolgáltatások miatt is történhet.
 
 **Javítás**: Futtassa a Tervezési optimalizálás illeszkedési elemzését, majd elemezze az eredményeket a vonatkozó dokumentációval összevetve, hogy megértsék a hatásait. További tájékoztatás: [Tervezésoptimalizálás illeszkedési elemzése](planning-optimization-fit-analysis.md).
 
@@ -63,9 +63,8 @@ Ez a termelési rendelések támogatásának részeként tervezett függő funkc
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Tervezési optimalizálás kezdő lépései](get-started.md)
-
-[Tervezési optimalizálás igazítási elemzése](planning-optimization-fit-analysis.md)
+- [Az alaptervezés első lépések](get-started.md)
+- [A Tervezési optimalizálás igazítási elemzése](planning-optimization-fit-analysis.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

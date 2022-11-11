@@ -1,6 +1,6 @@
 ---
 title: Fedezet időkorlátjai
-description: Ez a témakör azt ismerteti, hogyan lehet fedezeti időkorlátokat beállítani a tervezési optimalizálás használata esetén. A fedezet időkorlátja a tervezési időhatárt és a korlátot jelzi.
+description: Ez a témakör a fedezeti időkorlátok beállítását ismerteti. A fedezet időkorlátja a tervezési időhatárt és a korlátot jelzi.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 987dea4c1b693fc1bb687f97d51288d5e51e7d4c
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847933"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740113"
 ---
 # <a name="coverage-time-fences"></a>Fedezet időkorlátjai
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet fedezeti *időkorlátokat* beállítani a tervezési optimalizálás használata esetén. A tervezők meghatározhatják a tervezési időhatárt (a fedezet időkorlátját napokban), és kizárhatják az adott időhatáron túlra eső ellátásokat és igényeket. A fedezet időkorlátja így megakadályozza a „zajt”, amelyet az ellátási javaslatok okozhatnak, amelyekre nem kell hónapokig reagálnia. Ilyen például a következő év előrejelzése és a vevői rendelések, amelyeket a rendes átfutási időnél távolabbi időpontra adtak le.
+Ez a témakör a fedezeti időkorlátok *beállítását ismerteti*. A tervezők meghatározhatják a tervezési időhatárt (a fedezet időkorlátját napokban), és kizárhatják az adott időhatáron túlra eső ellátásokat és igényeket. A fedezet időkorlátja így megakadályozza a „zajt”, amelyet az ellátási javaslatok okozhatnak, amelyekre nem kell hónapokig reagálnia. Ilyen például a következő év előrejelzése és a vevői rendelések, amelyeket a rendes átfutási időnél távolabbi időpontra adtak le.
 
 A fedezeti időkorlát azon napok száma a mai dátum (vagy pontosabban a tervezési futtatás dátuma) után, amelyekből a készlet és az igény ki van zárva. A késések elkerülése érdekében gondoskodnia kell arról, hogy a fedezeti időkorlát hosszabb legyen a teljes átfutási időnél. Az alapértelmezett rendszerbeállítás a 100 nap.
 
@@ -82,9 +82,9 @@ A fedezeti időkorlátok beállításakor vegye figyelembe a következő pontoka
 - Nem jönnek létre követelménytranzakciók olyan készlethez és igényekhez, amelyek kívül esnek a fedezeti időkorláton.
 - Ha bármely jóváhagyott ellátás és igény kívül esik a fedezeti időkorláton, akkor nem lesz betöltve a motorba. Ennek megfelelően nem indít feltöltést, és nem számítja ki a késéseket. Ennek ellenére ezt a készletet és igényt nem szabad törölni a rendszerből.
 - A biztonsági készlet mennyiségének variációit (a minimumkulcsokból) figyelmen kívül hagyja a rendszer, ha kívül esnek a fedezeti időkorláton.
-- A vállalatközi igény figyelmen kívül lesz hagyva, ha a kért szállítási dátum számítása nem a fedezeti időkorláton belül van. Ne feledje, hogy a beépített alaptervezés esetén a vállalatközi igényt nem korlátozza a fedezeti időkorlát.
-- Az igény-előrejelzések figyelmen kívül lesznek hagyva, ha a költségvetési dátum nincs a fedezeti időkorláton belül. Ne feledje, hogy a beépített alaptervezés esetén az igény-előrejelzéseket nem korlátozza a fedezeti időkorlát.
-- A tervezés optimalizálása figyelembe veszi az időzónákat. Figyelembe veszi az ellátási és igényhelyek időzónát, valamint a tervezés futtatásának idejét. Az alaptervezés például október 15-én, 11 órakor lesz elindítva egy dán telephelyről (GMT +1 időzóna), és tíz napos fedezeti időkorlátot használ a program. Ebben az esetben az ellátás és igénylés egy seattle-i telephelyről (GMT-8 időzóna) október 25-én hajnali 2 óráig lesz belefoglalva (= az alaptervezés aktiválása után tíz 24 órás nap, mínusz a 9 órás időzóna-különbség). Ne feledje, hogy a beépített alaptervezési motor csak az időkorlát dátumát veszi figyelembe. Ennek megfelelően az eredmény eltérő lehet.
+- A vállalatközi igény figyelmen kívül lesz hagyva, ha a kért szállítási dátum számítása nem a fedezeti időkorláton belül van. Ne feledje, hogy az elavult alaptervezési motor esetén a vállalatközi igényt nem korlátozza a fedezeti időkorlát.
+- Az igény-előrejelzések figyelmen kívül lesznek hagyva, ha a költségvetési dátum nincs a fedezeti időkorláton belül. Ne feledje, hogy az elavult alaptervezési motornál az igény-előrejelzéseket nem korlátozza a fedezeti időkorlát.
+- A tervezés optimalizálása figyelembe veszi az időzónákat. Figyelembe veszi az ellátási és igényhelyek időzónát, valamint a tervezés futtatásának idejét. Az alaptervezés például október 15-én, 11 órakor lesz elindítva egy dán telephelyről (GMT +1 időzóna), és tíz napos fedezeti időkorlátot használ a program. Ebben az esetben az ellátás és igénylés egy seattle-i telephelyről (GMT-8 időzóna) október 25-én hajnali 2 óráig lesz belefoglalva (= az alaptervezés aktiválása után tíz 24 órás nap, mínusz a 9 órás időzóna-különbség). Ne feledje, hogy az elavult alaptervezési motor csak az időkorlát dátumát veszi figyelembe. Ennek megfelelően az eredmény eltérő lehet.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

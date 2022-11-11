@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-21
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc83d10851958ec67166cb7e40cfd84dceae6651
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 2bac9355bb1ac00f697ec459f494a64553e0eacc
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690159"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740141"
 ---
 # <a name="master-planning-with-supply-forecasts"></a>Alaptervezés ellátási előrejelzésekkel
 
@@ -94,7 +94,7 @@ Ez a szakasz néhány példát mutat be arról, hogyan befolyásolja az ellátá
 
 ### <a name="example-1-supply-forecast-for-an-item"></a>1. példa: cikk ellátási előrejelzése
 
-Van egy cikk, ahol az alapértelmezett rendeléstípus a Beszerzési *rendelés*, az *alapértelmezett szállító pedig az US-002*. A következő ellátási előrejelzési sorból áll.
+Van egy cikk, ahol az alapértelmezett rendeléstípus a Beszerzési *rendelés, az* alapértelmezett szállító pedig az US-002 *·*. A következő ellátási előrejelzési sorból áll.
 
 | Modell    | Dátum     | Szállítói számla | Szállítócsoport | Mennyiség | Egység | Webhely | Raktár |
 |----------|----------|----------------|--------------|----------|------|------|-----------|
@@ -104,7 +104,7 @@ Az alaptervezés futtatásakor egy *tervezett beszerzési rendelés jön létre 
 
 ### <a name="example-2-several-supply-forecast-lines-with-and-without-a-vendor"></a>2. példa: Több ellátás-előrejelzési sor szállítóval és szállító nélkül
 
-Van egy cikk, ahol az alapértelmezett rendeléstípus a Beszerzési *rendelés*, az *alapértelmezett szállító pedig az US-002*. A következő ellátási előrejelzési sorokat tartalmazza.
+Van egy cikk, ahol az alapértelmezett rendeléstípus a Beszerzési *rendelés, az* alapértelmezett szállító pedig az US-002 *·*. A következő ellátási előrejelzési sorokat tartalmazza.
 
 | Modell    | Dátum     | Szállítói számla | Szállítócsoport | Mennyiség | Egység | Webhely | Raktár |
 |----------|----------|----------------|--------------|----------|------|------|-----------|
@@ -168,13 +168,13 @@ Ha olyan alaptervet futtat, amely a Nincs csökkentési mód használatára van 
 
 Most a legutóbbi tervezési futtatás után létrehozott tervezett beszerzési rendelést szerkeszti, *és a mennyiséget 15 ea-re módosítja*. Ezt követően jóváhagyja a rendelést. Az alapterv következő futtatásakor tervezett beszerzési rendelést hoz létre az US-101 szállítóhoz, *az 1* *., a 11*. raktárhoz, *a mennyiség 10 ea*, *valamint a* dátum: 10/10/22 *.* Ez az idő a korábbi tervezési futtatásból származó, már jóváhagyott rendelés mennyiségének megfelelően csökken.
 
-## <a name="differences-between-planning-optimization-and-the-built-in-planning-engine"></a>A tervezési optimalizálás és a beépített tervezőmotor közötti különbségek
+## <a name="differences-between-planning-optimization-and-the-deprecated-master-planning-engine"></a>A tervezési optimalizálás és az elavult alaptervezési motor közötti különbségek
 
-Az ellátási előrejelzések a használt tervezőmotortól (beépített alaptervezés és tervezési optimalizálás) függően egy kissé másképp működnek. Ez a szakasz a különbségeket írja le.
+Az ellátási előrejelzések a használt tervezőmotortól (tervezési optimalizálás vagy elavult alaptervezési motor) függően egy kissé másképp működnek. Ez a szakasz a különbségeket írja le.
 
 ### <a name="vendor-groups"></a>Szállítói csoportok
 
-Előrejelzési sor hozzáadásakor megadhatja a szállítót és a szállítói csoportot. A beépített tervezőmotorban a létrehozott tervezett rendelések a szállítói és szállítói csoport értékeinek kombinációja szerint vannak csoportosítva. A tervezési optimalizálásban a tervezett rendelések szállító szerint vannak csoportosítva.
+Előrejelzési sor hozzáadásakor megadhatja a szállítót és a szállítói csoportot. Az elavult alaptervezési motorban a létrehozott tervezett rendelések a szállítói és szállítói csoport értékeinek kombinációja szerint vannak csoportosítva. A tervezési optimalizálásban a tervezett rendelések szállító szerint vannak csoportosítva.
 
 Az alábbi táblázat néhány példát mutat be a cikkek ellátási előrejelzési soraira.
 
@@ -186,7 +186,7 @@ Az alábbi táblázat néhány példát mutat be a cikkek ellátási előrejelz�
 
 A *Szállító – A* szállító az alapértelmezett szállító a *VendorGroupA szállítócsoportban*. Egyben a cikk alapértelmezett szállítója is.
 
-A beépített tervezőmotor a következő rendeléseket hozza létre:
+Az elavult alaptervezési motor a következő rendeléseket hozza létre:
 
 - A szállítóra, *a VendorGroupA* *szállítócsoportra* és a *11 mennyiségre vonatkozó tervezett beszerzési rendelés*
 - Az A szállító tervezett beszerzési *rendelése* *, mennyisége 7*
@@ -197,7 +197,7 @@ A tervezési optimalizálás csak egy rendelést hoz létre:
 
 ### <a name="reduction-of-general-forecasts-by-more-specific-forecasts"></a>Az általános előrejelzések csökkentése konkrétabb előrejelzések alapján
 
-A beépített alaptervezési motorban az eredmény nem várható, ha egyes előrejelzéseknek van szállítója, de másoknak nincs.
+Az elavult alaptervezési motorban az eredmény nem várható, ha egyes előrejelzéseknek van szállítója, de másoknak nincs.
 
 A tervezés optimalizálása során az általános előrejelzések mindig konkrétabb előrejelzésekkel csökkennek, ahogy azt a következő példa mutatja.
 
@@ -218,15 +218,15 @@ Az általános előrejelzés (15,00 darabra) a konkrétabb előrejelzésekkel cs
 
 ### <a name="respect-for-default-order-settings-when-planned-orders-are-generated"></a>Az alapértelmezett rendelési beállítások valóraása a tervezett rendelések létrehozása esetén
 
-Minden cikknek lehet alapértelmezett rendelési beállítása, például egy minimális beszerzési rendelési mennyiség. A beépített tervezőmotor figyelmen kívül hagyja ezeket a beállításokat, ezért az előrejelzéseket ugyanolyan mennyiségű tervezett rendelésekre fordítja át. A tervezés optimalizálása ezeket a beállításokat akkor használja, amikor a tervezett rendeléseket ellátási előrejelzésekből generálják. 
+Minden cikknek lehet alapértelmezett rendelési beállítása, például egy minimális beszerzési rendelési mennyiség. Az elavult alaptervezési motor figyelmen kívül hagyja ezeket a beállításokat, ezért az előrejelzéseket ugyanolyan mennyiségű tervezett rendelésekre fordítja át. A tervezés optimalizálása ezeket a beállításokat akkor használja, amikor a tervezett rendeléseket ellátási előrejelzésekből generálják. 
 
 ### <a name="aggregation-of-planned-orders-as-a-result-of-reduction-by-approved-orders"></a>Tervezett rendelések összesítése a jóváhagyott rendelések alapján történő csökkentés eredményeként
 
-A beépített alaptervezési motor feltételezi, hogy csak egy rendelés fogja csökkenteni a meglévő ellátási előrejelzést. Emiatt ha egy ellátási előrejelzési sornak több rendelés is megfelel, akkor csak az első rendelés csökkenti azt. A tervezés optimalizálása során az ellátási előrejelzési sornak megfelelő összes rendelés csökkenti a rendelést.
+Az elavult alaptervezési motor feltételezi, hogy csak egy rendelés fogja csökkenteni a meglévő ellátási előrejelzést. Emiatt ha egy ellátási előrejelzési sornak több rendelés is megfelel, akkor csak az első rendelés csökkenti azt. A tervezés optimalizálása során az ellátási előrejelzési sornak megfelelő összes rendelés csökkenti a rendelést.
 
 ### <a name="reduction-of-forecasts-by-matching-vendors-only"></a>Az előrejelzések csökkentése csak az egyező szállítók alapján
 
-Ha a beépített alaptervezési motor csökkenti az előrejelzést a már kiadott beszerzési rendelésekkel, akkor nem gondoskodik arról, hogy a beszerzési rendelés szállítója megegyezsen az előrejelzésben lévő szállítóval. A tervezési optimalizálás csak olyan beszerzési rendelésekkel csökkenti az előrejelzéseket, amelyeknél egyező érték található a szállító mezőben.
+Ha az elavult alaptervezési motor csökkenti az előrejelzést a már létező kiadott beszerzési rendelésekkel, akkor nem gondoskodik arról, hogy a beszerzési rendelés szállítója megegyezett-e az előrejelzésben lévő szállítóval. A tervezési optimalizálás csak olyan beszerzési rendelésekkel csökkenti az előrejelzéseket, amelyeknél egyező érték található a szállító mezőben.
 
 Az áthozott és a termelési rendelések esetében a rendszer minden esetben figyelmen kívül hagyja a szállító mezőt, mivel az ilyen rendeléstípusok esetében nem lényeges.
 
@@ -234,4 +234,4 @@ Az áthozott és a termelési rendelések esetében a rendszer minden esetben fi
 
 Ha egy cikk alapértelmezett rendeléstípusa *Az* Átvitel, az előrejelzéseket csak a meglévő tervezett átátviteli rendelésekkel lehet csökkenteni. A termelési és beszerzési rendelések esetén azonban csak a kiadott rendelések csökkentik az ellátási előrejelzést.
 
-A beépített tervezőmotor minden átátviteli rendelés állapotát csökkenti, míg a tervezési optimalizálás *csak* a Kiadott állapotban van átadva rendelésekkel csökkenti az előrejelzéseket.
+Az elavult alaptervezési motor csökkenti az át rendelési állapotokat, *míg* a Tervezési optimalizálás csak a Kiadott állapotban van átadva rendelésekkel csökkenti az előrejelzéseket.

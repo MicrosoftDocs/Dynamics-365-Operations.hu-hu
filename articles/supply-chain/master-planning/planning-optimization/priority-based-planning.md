@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 1a952fe5734f01325842a8a130b9322eadc67951
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335285"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740592"
 ---
 # <a name="priority-based-planning"></a>Prioritásokon alapuló tervezés
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör a Microsoft prioritáson alapuló tervezési funkcióját ismerteti Dynamics 365 Supply Chain Management. A funkció támogatja az igényvezérelt tervezést, amely az [igényvezérelt anyagigény-tervezés (DDMRP) egyik lépése](ddmrp-overview.md). A prioritáson alapuló tervezés lehetővé teszi a tervezési optimalizálás számára, hogy a szükségletdátások helyett tervezési prioritások által vezérelt tervezett rendeléseket generáljon.
+Ez a témakör a Microsoft prioritáson alapuló tervezési funkcióját ismerteti Dynamics 365 Supply Chain Management. A funkció támogatja az igényvezérelt tervezést, amely az [igényvezérelt anyagigény-tervezés (DDMRP) egyik lépése](ddmrp-overview.md). A prioritáson alapuló tervezés lehetővé teszi a rendszer számára a szükségletdáták helyett tervezési prioritások által vezérelt tervezett rendelések generálát.
 
 A prioritáson alapuló tervezés segítségével fontosság szerint rangsorolhatja a feltöltési rendeléseket, hogy a sürgős igényeket a kevésbé fontos igényekhez igazítja. Például egy készletfeltöltési rendelés prioritása egy normál újratölti feltöltési rendeléshez lesz rendelve. A rendszer automatikusan kisebb rendelésekre bonthatja a nagyobb rendeléseket, ahol a rendeléssorok prioritás szerint vannak csoportosítva. Ezután az összes sürgős rendelést feldolgozhatja előbb.
 
@@ -37,11 +37,11 @@ A funkció használata előtt be kell kapcsolva lennie a rendszeren. A rendszerg
 
 ## <a name="where-and-how-planning-priorities-are-assigned"></a>A tervezési prioritások hozzárendelésének helye és hogyan
 
-*A tervezés prioritási* adatai a prioritáson alapuló tervezés alapját alkotják. A tervezési prioritás meghatározza az igények vagy ellátási sorok fontosságát. A tervezési optimalizálás akkor használja, ha **a Fedezetkód** mező beállítása *Prioritás*.
+*A tervezés prioritási* adatai a prioritáson alapuló tervezés alapját alkotják. A tervezési prioritás meghatározza az igények vagy ellátási sorok fontosságát. Az alaptervezés akkor használja, amikor a Fedezetkód **mező beállítása Prioritás** *.*
 
 A tervezési prioritás általában 0 (nulla) és 100 közötti szám, amelyben a 0 a legnagyobb fontosság. Megjelenik és be van állítva a Tervezés prioritás **mezőben**. Ez a mező a következő lapokon található: Igény-előrejelzési sorok, Értékesítési **rendelés részletei**, Beszerzési **rendelés részletei**, Átátviteli **rendelés** részletei és **Tervezett rendelés részletei**. **·**
 
-Ha a megfelelő cikk vagy fedezetcsoport Fedezeti kód mezője prioritásra van állítva, akkor a tervezés szerinti optimalizálás az igényalapú megközelítést alkalmazva kezeli a készletet, mivel kiszámítja a tervezési prioritást, **és** minden egyes kiadott terméknél figyelembe veszi a Cikkfedezeti lap Minimális, *·* **·** **Újrarendelési** pont és Maximum mezőiben beállított értékeket.**·** **·**
+Ha a megfelelő cikk vagy fedezetcsoport Fedezeti kód mezője prioritásra van állítva, akkor az alaptervezés igényvezérelt megközelítést alkalmazva kezeli a készletet, mivel kiszámítja a tervezési prioritást, **és** minden egyes kiadott terméknél figyelembe veszi a Cikkfedezeti lap Minimális, *·* **·** **Újrarendelési** pont és Maximum mezőiben beállított értékeket.**·** **·**
 
 > [!NOTE]
 > A *Prioritás* értéke csak akkor érhető el **a Fedezeti** kód mezőben, ha engedélyezve van a Tervezési optimalizálás funkció.

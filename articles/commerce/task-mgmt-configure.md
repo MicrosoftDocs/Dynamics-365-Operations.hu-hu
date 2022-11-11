@@ -2,23 +2,23 @@
 title: Feladatkezelés konfigurálása
 description: Ez a témakör leírja, hogyan kell konfigurálni a feladatkezelési funkciókat a következőben:Microsoft Dynamics 365 Commerce
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: ff97abab330174b41af76d22c202e8338d6d37fd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: cc2d75f52b183559de344982c8e4208000af786e
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282761"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746062"
 ---
 # <a name="configure-task-management"></a>Feladatkezelés konfigurálása
 
@@ -80,7 +80,11 @@ A következő ábra a **Feladatkezelő** műveletet jeleníti meg a **Pénztári
 
 ![Feladatkezelő működése a POS-műveletek lapon.](media/HQ-POS-Tasks-Notifications.png)
 
-A POS-értesítések konfigurálásával kapcsolatos további tudnivalókat lásd: [Rendelési értesítések megjelenítése a pénztárnál (POS)](notifications-pos.md).
+A POS-értesítések [konfigurálásról a Rendelési értesítések megjelenítése a pénztárnál (POS) cikk](notifications-pos.md) nyújt tájékoztatást.
+
+> [!NOTE]
+> A módosítások mentésekor a következő figyelmeztető üzenet jelenik meg: **A gombrács-tervezőben nem lesz engedélyezve a műveleti paraméter, ha a műveletazonosító értéke 4000 vagy kevesebb. Ha egyéni műveletet hoz létre, és át szeretné adni a gombrács-tervező paraméterét, akkor használja a 4000-esnél nagyobb műveletazonosítót.** A párbeszédpanel **bezárásához** válassza a Bezárás lehetőséget.
+
 
 ## <a name="configure-the-tasks-tile-on-a-pos-application-home-page"></a>A Feladatok csempe konfigurálása a Pénztáralkalmazás kezdőlapján
 

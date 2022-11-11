@@ -1,6 +1,6 @@
 ---
 title: Beszerzési igénylések
-description: Ez a témakör azt ismerteti, hogyan támogatottak a beszerzési igénylések a tervezési optimalizálásban.
+description: Ez a témakör a beszerzési igényléseket írja le.
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b4dcae11e83748da3ec0368e1ddf47fedf5de23c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d9d55186307b18f4c3be78ae0828b08d3c987aad
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867898"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740684"
 ---
 # <a name="purchase-requisitions"></a>Beszerzési igénylések
 
@@ -59,7 +59,7 @@ Ha egy adott alaptervhez beállít egy jóváhagyott igénylési időkorlátot, 
 1. Ismételje meg a 2. és 3. lépést minden olyan további alaptervre, ahol be szeretné állítani a jóváhagyott igénylések időkorlátját.
 
 > [!IMPORTANT]
-> **Hamarosan:** A jóváhagyott igénylések időkorlátja még nem támogatott a tervezési optimalizálásban. Amíg nem válnak támogatottá, a rendszer figyelmen kívül hagyja a **Jóváhagyott igénylések időkorlátja (napok)** mezőbe beírt összes értéket.
+> A jóváhagyott igénylések időkorlátja nem támogatott a tervezési optimalizálásban. Amíg nem válnak támogatottá, a rendszer figyelmen kívül hagyja a **Jóváhagyott igénylések időkorlátja (napok)** mezőbe beírt összes értéket.
 
 ## <a name="independent-supply-regardless-of-coverage-code"></a>Önálló készlet a fedezeti kódtól függetlenül
 

@@ -2,23 +2,23 @@
 title: Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz
 description: Ez a témakör azt ismerteti, hogyan lehet feladatlistákat hozzárendelni az üzletekhez és az alkalmazottakhoz Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: 8aa1d61e235244ee9400419e51da638c059892e5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: faff772051738f624b86fd23fb6bf29173e909ea
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284657"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746194"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz
 
@@ -30,7 +30,7 @@ A Feladatkezelés a Dynamics 365 Commerce alkalmazásban lehetővé teszi egy fe
 
 ## <a name="start-the-task-list-assignment-process"></a>A Feladatlista-hozzárendelési folyamat elindítása
 
-A Feladatlista hozzárendelési folyamatának megkezdéséhez hajtsa végre az alábbi lépéseket.
+Mielőtt elindítja a feladatok hozzárendelésének folyamatát, győződjön meg róla, hogy létrehozott egy feladatlistát a [Feladatlisták](task-mgmt-create-lists.md) létrehozása és feladatok hozzáadása cikk lépéseit követve. A Feladatlista hozzárendelési folyamatának megkezdéséhez hajtsa végre az alábbi lépéseket.
 
 1. Válassza a **Retail és Commerce \> Feladatok kezelése \> Feladatkezelés adminisztrációja** lehetőséget.
 1. Válassza ki a hozzárendelni kívánt feladatlistát.

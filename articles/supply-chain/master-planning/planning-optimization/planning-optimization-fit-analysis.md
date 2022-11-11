@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 4459a5d72fafe2596b7fc0cedf060b8f23bb43d2
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689994"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750707"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
 [!include [banner](../../includes/banner.md)]
 
-Az áttelepítési folyamat részeként elemezze a tervezési optimalizálás illeszkedési elemzésének eredményét. Ne felejtse el, hogy a tervezési optimalizálás hatóköre nem egyezik meg a beépített alaptervezés aktuális funkcióival. Javasoljuk, hogy folytasson együttműködést a partnerével, és olvassa el a dokumentációt az áttelepítés előkészítése érdekében. 
+Az áttelepítési folyamat részeként elemezze a tervezési optimalizálás illeszkedési elemzésének eredményét. Ne feledje, hogy a tervezési optimalizálás hatóköre nem egyenlő az alaptervezési motor elavult funkcióival. Javasoljuk, hogy folytasson együttműködést a partnerével, és olvassa el a dokumentációt az áttelepítés előkészítése érdekében.
 
-A tervezési optimalizálás illeszkedési elemzése segít azonosítani azokat a pontokat, ahol az eredményben eltérés lehet a beépített alaptervezési motor és a tervezési optimalizálás esetén. Ez az elemzés a jelenlegi beállítások és adatok alapján történik. 
+A tervezési optimalizálási elemzés segítségével meg lehet határozni, hogy az eredmény hol különbözik az elavult alaptervezési motor és a tervezési optimalizálás között. Ez az elemzés a jelenlegi beállítások és adatok alapján történik. 
 
 Ha meg szeretné tekinteni a tervezési optimalizálás illeszkedési elemzésének eredményét, akkor lépjen az **Alaptervezés** \> **Beállítás** \> **Tervezési optimalizálás illeszkedési elemzése** menüpontra, majd válassza az **Elemzés futtatása** parancsot. Ha az elemzés bármilyen következetlenséget talál, akkor ugyanazon a lapon szerepelnek. (Az elemzés néhány percet is igénybe vehet.)
 
@@ -64,7 +64,6 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Alapnaptárak | Az alapnaptárat használó naptárak: *\#* | Ez a funkció már támogatott. | Támogatott | 
 | Kötegrendelkezési kódok | Nem nettósítható köteg-alapintézkedések: *\#* | Ez a funkció már támogatott. További információ: Köteg intézkedéskódok [használata a kötegek elérhetőként való megjelölésére vagy nem elérhetőként való megjelölése](../../inventory/batch-disposition-codes.md) | Támogatott |
 | Ígérhető (CTP) | Alapértelmezett rendelési beállítások, amelyeknél a kiszállítási dátum ellenőrzése ígérhető: *\#* | A 10.0.28-as és újabb ellátásilánc-kezelésben a tervezési optimalizálási CTP *nevű folyamat a dinamikus terv futtatása után teszi elérhetővé a* visszaigazolt szállítási és kézhezvételi dátumokat. Az Ellátásilánc-kezelés régebbi verziói esetén a rendszer figyelmen kívül hagyja az örökölt "CTP" beállítást, ha engedélyezve van a tervezési optimalizálás. | Támogatott |
-| Statikus dinamikus tervbe másolása | A statikus dinamikus tervbe való másolása engedélyezett az alaptervezési paramétereknél. | A tervezés optimalizálása a beállítástól függetlenül nem másolja át a statikus tervet a dinamikus tervbe. Általában ez a koncepció kevésbé fontos a Tervezési optimalizáció által biztosított gyorsaság és teljes regeneráció miatt. Ha két vagy több terv van használatban, akkor minden tervhez alaptervezést kell indítani. | N/A |
 | Megerősítés | Lefedettségi csoportok, amelyekhez be van állítva automatikus megerősítési időkorlát: *\#* | A 10.0.7 és a későbbi verziókban a megerősítést az Alaptervezés befejezését követően külön megerősítő kötegelt feladatként támogatják (feltéve hogy az *Automatikus megerősítés a tervezési optimalizációhoz* funkció engedélyezve van a [funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pontban). Ne felejtse el, hogy az Automatikus megerősítés a tervezési optimalizációhoz a megrendelés dátumától (kezdő dátum) függ, nem a követelmény dátumától (záró dátum). Ez a viselkedés biztosítja, hogy a tervezett rendelések megerősítése időben történjen, anélkül, hogy az átfutási időt bele kellene foglalni a megerősítési időkorlátba. | Támogatott |
 | Megerősítés | Cikk lefedettségi rekordjai, amelyekhez be van állítva az automatikus megerősítés: *\#* | A 10.0.7 és a későbbi verziókban az automatikus megerősítést az Alaptervezés befejezését követően külön megerősítő kötegelt feladatként támogatják (feltéve hogy az *Automatikus megerősítés a tervezési optimalizációhoz* funkció engedélyezve van a [funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pontban). Ne felejtse el, hogy az Automatikus megerősítés a tervezési optimalizációhoz a megrendelés dátumától (kezdő dátum) függ, nem a követelmény dátumától (záró dátum). Ez a viselkedés biztosítja, hogy a tervezett rendelések megerősítése időben történjen, anélkül, hogy az átfutási időt bele kellene foglalni a megerősítési időkorlátba. | Támogatott |
 | Megerősítés | Alaptervek, amelyekhez be van állítva az automatikus megerősítés: *\#* | A 10.0.7 és a későbbi verziókban az automatikus megerősítést az Alaptervezés befejezését követően külön megerősítő kötegelt feladatként támogatják (feltéve hogy az *Automatikus megerősítés a tervezési optimalizációhoz* funkció engedélyezve van a [funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pontban). Ne felejtse el, hogy az Automatikus megerősítés a tervezési optimalizációhoz a megrendelés dátumától (kezdő dátum) függ, nem a követelmény dátumától (záró dátum). Ez a viselkedés biztosítja, hogy a tervezett rendelések megerősítése időben történjen, anélkül, hogy az átfutási időt bele kellene foglalni a megerősítési időkorlátba. | Támogatott |
@@ -93,34 +92,27 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Termelés | Képletverziók társ- vagy melléktermékekkel: *\#* | Ez a funkció függőben van. Jelenleg a tervezésoptimalizálás engedélyezése esetén a képletverzióhoz társított társtermékek és a melléktermékek figyelmen kívül maradnak. | 2022-es kiadás - 2. hullám |
 | Termelés | Képletverziók hozammal: *\#* | Ez a funkció függőben van. Jelenleg a tervezésoptimalizálás engedélyezése esetén a képletverzióhoz társított hozam figyelmen kívül marad. | 2022-es kiadás - 2. hullám |
 | Termelés | Sorrendbe állítást tartalmazó tervek: *\#* | Ez a funkció függőben van. Jelenleg a sorrendbe állítás figyelmen kívül marad, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | 2022-es kiadás - 2. hullám |
-| Termelés | Nem megkezdett, kiadott termelési rendelések, amelyeket a mai napnál korábbi kezdéssel ütemeztek: *\#* | Ez a funkció függőben van. Jelenleg a termelési rendelés késése esetén az alaptervezés azt feltételezi, hogy a mai napon be lesz fejezve. Ez olyan engedélyezett termelési rendelések esetében releváns amelyeknél a szállítási dátum már elmúlt, de még nem fejeződött be. | Jövőbeli hullám |
+| Termelés | Nem megkezdett, kiadott termelési rendelések, amelyeket a mai napnál korábbi kezdéssel ütemeztek: *\#* | Ez a funkció függőben van. Jelenleg a termelési rendelés késése esetén az alaptervezés azt feltételezi, hogy a mai napon be lesz fejezve. Ez olyan engedélyezett termelési rendelések esetében releváns amelyeknél a szállítási dátum már elmúlt, de még nem fejeződött be. | 2022-es kiadás - 2. hullám |
 | Termelés | Véges kapacitással ütemezett erőforrások: *\#* | Ez a funkció már támogatott.| Támogatott |
 | Termelés | A tervezésben használt útvonalak: *\#* | Ez nem támogatott. | Támogatott |
-| Termelés | Értékesítési sor foglalása alábontás használatával: *\#* | A alábontást használó értékesítési sor foglalása nem támogatott, ha a tervezés optimalizálása engedélyezve van. | Jövőbeli hullám |
-| Termelés | A termelési rendelések alábontásával történt ütemezés: *\#* | A termelési rendelések alábontását használó ütemezés nem támogatott, ha a tervezés optimalizálása engedélyezve van. A termelési rendelések ütemezése egyenként végezhető el. | Jövőbeli hullám |
+| Termelés | Értékesítési sor foglalása alábontás használatával: *\#* | A alábontást használó értékesítési sor foglalása nem támogatott, ha a tervezés optimalizálása engedélyezve van. | 2022-es kiadás - 2. hullám |
+| Termelés | A termelési rendelések alábontásával történt ütemezés: *\#* | A termelési rendelések alábontását használó ütemezés nem támogatott, ha a tervezés optimalizálása engedélyezve van. A termelési rendelések ütemezése egyenként végezhető el. | 2022-es kiadás - 2. hullám |
 | Ajánlatkérések | Olyan alaptervek, amelyeknél engedélyezve van az ajánlatkérés: *\#* | Ez a funkció függőben van. Jelenleg az ajánlatkérés (ajánlatkérések) nem tekintendő igénynek, ha a tervezés optimalizálása engedélyezve van. A program figyelmen kívül hagyja ezeket, a beállítástól függetlenül. | 2022-es kiadás - 2. hullám |
 | Igénylések | Olyan alaptervek, amelyeknél engedélyezve vannak az igénylések: *\#* | Ez a funkció már támogatott. További információk: [Beszerzési igénylések](purchase-requisitions.md) | Támogatott |
 | Biztonsági határok | Biztonsági határokkal rendelkező lefedettségi csoportok: *\#* | Ez a funkció már támogatott. További információkért lásd: [Biztonsági határok](safety-margins.md) | Támogatott |
 | Biztonsági határok | Biztonsági határokkal rendelkező alaptervek: *\#* | Ez a funkció már támogatott. További információkért lásd: [Biztonsági határok](safety-margins.md) |  Támogatott |
-| Biztonsági készlet teljesítése | A „Minimum teljesítése” beállítással rendelkező cikkfedezeti rekordok, amelyek eltérnek a „Mai dátum + beszerzési idő” értékétől: *\#* | A tervezés optimalizálása mindig a *mai dátum + beszerzési időt* használja. Ennek a módosításnak az a célja, hogy előkészüljön egy jövőbeli egyszerűsített tervezési beállításra, és hogy a művelet eredményét biztosítsa. Ha a beszerzési idő nem szerepel a biztonsági készletben, akkor az aktuális alacsony raktárkészlethez létrehozott tervezett rendeléseket mindig az átfutási idő miatt késlelteti a program. Ez a viselkedés jelentős zajt és nemkívánatos tervezett rendeléseket eredményezhet. A legjobb módszer a beállítás módosítása, hogy a *mai dátum + beszerzési idő* legyen használatban. Az alapadatok frissítése a figyelmeztetések elkerüléséhez. | N.a. |
-| Értékesítési ajánlatok | Olyan alaptervek, amelyeknél engedélyezve vannak az értékesítési ajánlatok: *\#* | Ez a funkció függőben van. A tervezés optimalizálás engedélyezése során a program figyelmen kívül hagyja az árajánlatokat. A program figyelmen kívül hagyja ezeket, a beállítástól függetlenül. | 2022-es kiadás - 2. vagy újabb hullám |
-| Eltarthatósági idő | Olyan alaptervek, amelyeknél engedélyezve van az eltarthatósági idő: *\#* | Ez a funkció függőben van. | 2022-es kiadás - 2. hullám |
+| Értékesítési ajánlatok | Olyan alaptervek, amelyeknél engedélyezve vannak az értékesítési ajánlatok: *\#* | Ez a funkció függőben van. A tervezés optimalizálás engedélyezése során a program figyelmen kívül hagyja az árajánlatokat. A program figyelmen kívül hagyja ezeket, a beállítástól függetlenül. | 2022-es kiadás - 2. hullám |
+| Eltarthatósági idő | Olyan alaptervek, amelyeknél engedélyezve van az eltarthatósági idő: *\#* | Ez a funkció már támogatott. | Támogatott |
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
-
-[A Tervezési optimalizálás kezdő lépései](get-started.md)
-
-[Különbségek a klasszikus főtervezés és a tervezési optimalizálás között](planning-optimization-differences-with-built-in.md)
-
-[A Tervezési optimalizálás által nem használt paraméterek](not-used-parameters.md)
-
-[Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
-
-[Szűrők alkalmazása egy tervre](plan-filters.md)
-
-[Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+- [Az alaptervezés rendszerarchitektúra](../master-planning-architecture.md)
+- [Az alaptervezés első lépések](get-started.md)
+- [Különbségek a klasszikus főtervezés és a tervezési optimalizálás között](planning-optimization-differences-with-built-in.md)
+- [A Tervezési optimalizálás által nem használt paraméterek](not-used-parameters.md)
+- [Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
+- [Tervezés futtatása a cikkek egy részcsoportja számára](plan-filters.md)
+- [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

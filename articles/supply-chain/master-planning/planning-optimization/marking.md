@@ -1,6 +1,6 @@
 ---
-title: Készletjelölés tervezési optimalizálással
-description: Ez a cikk a tervezési optimalizálás használata esetén a készlet megjelölésére rendelkezésre álló beállításokkal kapcsolatban tartalmaz tájékoztatást.
+title: Készletjelölés
+description: Ez a cikk a visszaeső rendelésekben a készlet megjelölésére rendelkezésre álló beállításokkal kapcsolatban tartalmaz tájékoztatást.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c86db6a670d7d0f7bfe74b7466b9bce766e4a08d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219937"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740577"
 ---
-# <a name="inventory-marking-with-planning-optimization"></a>Készletjelölés tervezési optimalizálással
+# <a name="inventory-marking"></a>Készletjelölés
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a cikk a tervezési optimalizálás használata esetén a készlet megjelölésére rendelkezésre álló beállításokkal kapcsolatban tartalmaz tájékoztatást.
+Ez a cikk a visszaeső rendelésekben a készlet megjelölésére rendelkezésre álló beállításokkal kapcsolatban tartalmaz tájékoztatást.
 
 A *Jelölés* a kínálat és kereslet összekapcsolására szolgál. Ez hasonlít az *igénykövetés* műveletre, amely azt jelzi, hogy az alaptervezés hogyan tervezi a szükségletek lefedését. Tervezési szempontból a fő különbség az, hogy a jelölés állandóbb, mint az igénykövetés.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 46a50f4b00125656fc185ad569b94eeef00dc3c3
-ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
-ms.translationtype: MT
+ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337567"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752720"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Továbbfejlesztett banki egyeztetés importálásának beállítása az Elektronikus jelentés segítségével
 
@@ -34,7 +34,7 @@ A Speciális banki egyeztetési funkció lehetővé teszi az elektronikus banki 
 2. A Microsoft **konfigurációs szolgáltató csempe** tárházát **jelölje ki**.
 3. Válassza ki a **Globális**, majd a **Megnyitás** lehetőséget.
 4. Ha kapcsolatot kell létesíteni a tárházzal, jelölje ki a kék kapcsolatot a párbeszédpanelen.
-5. A konfigurációs listában keresse meg a **\> BAI2** banki kivonatmodellját.
+5. A konfigurációs listán keresse meg az **\> ABR BAI2 formátumot a Speciális banki egyeztetési kivonatmodellben**.
 6. Válassza a **BAI2 formátumot**.
 7. Válassza ki **a legújabb** verziót a Verziók gyorsgombra, majd válassza az Importálás **lehetőséget**.
 

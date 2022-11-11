@@ -2,7 +2,7 @@
 title: A termelési üzem végrehajtási felületének konfigurálása
 description: Ez a témakör azt ismerteti, hogyan lehet egy vagy több konfigurációt létrehozni a termelési emelet végrehajtási felületére. Amikor megnyitja a termelési üzem végrehajtási felületét, a program automatikusan betölti a kiválasztott konfigurációt és a feladatra vonatkozó szűrőket, amelyek a böngészővel és az eszközzel kapcsolatosak. A konfigurációban be kell állítania azokat a szabályokat, amelyek az adott használathoz szükségesek.
 author: johanhoffmann
-ms.date: 08/05/2022
+ms.date: 11/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
-ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
+ms.openlocfilehash: 641b293617df608bc07b97c077dbcd05664f8e2a
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9708725"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748686"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -85,17 +85,19 @@ Ez a funkció jobb felületet biztosít a termelési üzem végrehajtási felül
 
 A funkció használatához be kell kapcsolva lennie a rendszeren. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.29-es verziója szerint a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.29-esnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Funkciókezelés munkaterületén a Termelési üzem végrehajtási felületének Teljes sorozat, köteg és azonosítótáblák megjelenítése lehetőséget keresi.
 
-
 Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterület termelési üzemirányítási felületének Teljes sorozat-,*[köteg](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)- és azonosítótáblák megjelenítése parancsát keresi.
 
 ### <a name="register-material-consumption"></a>Anyagfelhasználás regisztrálása
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 Ez a funkció lehetővé teszi a dolgozók számára, hogy a termelési emelet végrehajtási felületével regisztrálják az anyagfelhasználást, a kötegszámokat és a sorozatszámokat. Egyes gyártóknak, különösen a folyamatiparban használt gyártóknak kifejezetten regisztrálniuk kell az egyes köteg- vagy termelési rendelésenként felhasznált anyagok mennyiségét. Például a dolgozók a mérleg segítségével leméneklik a munka közben felhasznált anyagok mennyiségét. A teljes anyagkövetés biztosítása érdekében ezeknek a szervezeteknek az egyes termékek előállításához felhasznált kötegszámokat is regisztrálniuk kell.
 
 A funkciónak két változata van. Az egyik lehetőség olyan cikkek *használatát támogatja,* amelyeknél nincs engedélyezve a raktárkezelési folyamatok (WMS). A másik támogatja a *WMS* használatát engedélyező cikkeket. A funkció használatához [a](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) Funkciókezelésben (ebben a sorrendben) bekapcsolhatja az alábbi funkciók egyikét vagy mindkettőt attól függően, hogy vannak-e olyan cikkek, amelyek engedélyezve vannak a WMS számára:
 
 - *Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS)*
-- *Az anyagfelhasználás regisztrálása a termelési emelet végrehajtási felületén (WMS-engedélyezve)*
+- *(Előnézet) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (WMS-kompatibilis)*
 
 > [!IMPORTANT]
 > A nem WMS szolgáltatást csak használni lehet. A WMS használata esetén azonban mindkét funkciót engedélyezni kell.
@@ -138,9 +140,28 @@ Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés
 
 - *További konfigurációk a termelési üzem végrehajtási felületén*
 
+### <a name="enable-the-my-jobs-tab"></a>A Saját feladatok lap engedélyezése
+
+A **Feladatok lap** segítségével a dolgozók egyszerűen megtekinthetik a kifejezetten hozzájuk rendelt még el nem adott és be nem adott feladatokat. Olyan vállalatoknál hasznos, ahol a feladatokat időnként vagy mindig meghatározott dolgozókhoz (emberi erőforrásokhoz) rendelik, nem pedig más típusú erőforrásokhoz (például gépekhez).
+
+Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *A saját feladatok lap a termelési üzem végrehajtási felületén*
+
+### <a name="enable-use-of-a-numpad-on-the-sign-in-page"></a>Számtömb használatának engedélyezése a bejelentkezési lapon
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Ez a funkció lehetővé teszi a rendszergazdák számára, hogy egy billentyűzetvezérlőt vegyenek fel a bejelentkezési lapra a termelési emelet végrehajtási felületének számára. A dolgozók ezután a számtömb használatával bejelentkezve megadhatja belépőkártya-azonosítójukat vagy személyes számukat.
+
+Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Számbillentyűzet használatának engedélyezése a bejelentkezési oldalon*
+
 ## <a name="work-with-production-floor-execution-configurations"></a>A termelési üzem végrehajtási konfiguációinak használata
 
-A termelés-végrehajtási konfigurációk létrehozásához és karbantartásához **kattintson a Gyártásvezérlés \>\> beállítása – Gyártás-végrehajtási \> konfigurálás a termelési emelet létrehozására**. A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
+A termelés-végrehajtási konfigurációk létrehozásához és karbantartásához **kattintson a Gyártásvezérlés \>\> beállítása – Gyártás-végrehajtási \> konfigurálás a termelési emelet létrehozására.** A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
 
 - Kiválaszthatja bal oldali oszlopban felsorolt termelésiüzem-konfigurációk bármelyikét, hogy megtekintse és szerkessze azt.
 - A munkaablak új konfigurációnak a **listához** való hozzáadásához válassza az Új lehetőséget. Adjon meg egy nevet a **Konfiguráció** mezőben, amely lehetővé teszi az új konfiguráció azonosítását. A beírott névnek egyedinek kell lennie minden konfigurációban, és később nem lesz lehetőség a szerkesztésére. A Leírás **mezőben** tetszés szerint megadhatja a konfiguráció leírását.
@@ -161,6 +182,7 @@ Az Általános gyorsgombra a következő **beállítások** érhetők el:
 - **Alkalmazott zárolása** – Ha a beállítás értéke *Nem*, akkor a program közvetlenül a regisztráció után (például új feladat) kilépteti a dolgozókat. A felület ezután visszatér a bejelentkezési oldalra. Ha ez a beállítás *Igen*, a dolgozók bejelentkezve maradnak a termelési emelet végrehajtási felületére. A dolgozó azonban manuálisan kijelentkezhet, így egy másik dolgozó bejelentkezhet, miközben a termelés-végrehajtási felület ugyanannak a rendszerfióknak a használatával fut. A fiókok típusairól a [Hozzárendelt felhasználók](config-job-card-device.md#assigned-users) című témakörben olvashat bővebben.
 - **A regisztráció tényleges időpontjának használata** – Ezt a beállítást *Igen* értékre állíthatja, ha azt szeretné, hogy az egyes új regisztrációk időpontja megegyezzen a dolgozó által benyújtott regisztráció pontos időpontjával. Ha a beállítás értéke *Nem*, akkor a bejelentkezési időt használja a rendszer. Ezt a beállítást általában *Igen* értékre kell állítani, ha *Igen* értékre állította az **Alkalmazott zárolása** és/vagy az **Egy dolgozó** beállítást, aminek következtében a dolgozók általában hosszabb ideig bejelentkezve maradnak.
 - **Egy dolgozó** – Igen beállítással *beállíthatja* ezt a beállítást, ha csak egy dolgozó használja a termelési emelet mindegyik végrehajtási felületét, ahol ez a konfiguráció aktív. Ha a beállítás értéke *Igen* akkor az **Alkalmazott zárolása** beállítás automatikusan *Igen* értékre lesz állítva. Ezenkívül ez a beállítás eltávolítja a dolgozónak a belépőkártya-azonosító (vagy hasonló) használatával történő bejelentkezésre vonatkozó követelményét (és képességét). Ehelyett a dolgozó egy olyan rendszerfiók használatával jelentkezik be a Microsoft Dynamics 365 Supply Chain Management rendszerbe, amely egy (a dolgozók táblája által regisztrált) dolgozóhoz van kapcsolva, és ugyanakkor bejelentkezik *a* *termelési* emelet végrehajtási felületére, mint az adott dolgozó.
+- **Számtömb engedélyezése –** *a bejelentkezési képernyőhöz való numpad* igen beállításával ad hozzá egy numerikus billentyűzetet, amellyel a dolgozók érintőképernyős billentyűzet használatával megadhatja belépőkártya-azonosítójukat vagy személyes számukat. A numpad elrejtésében *állítsa* Nem beállításra.
 - **Engedélyezi az** érintőképernyő zárolását – *A* beállítás Igen beállításával engedélyezheti a dolgozóknak, hogy zárolják a termelési emelet végrehajtási felületének képernyőjét, és így el tudják tásítani a felületet. Ha ez a beállítás *Igen*, a bejelentkezési laphoz hozzáadódik a **zárolási** képernyő a sanizáláshoz. Amikor egy dolgozó kiválasztja ezt a gombot, az érintőképernyő ideiglenesen zárolódik a véletlen bevitel elkerülésének céljára. Ezenfelül megjelenik egy időzítő. A dolgozó ezután biztonságosan megtisztíthatja a készüléket és a képernyőt. Amikor a visszaszámlálás befejeződött, az érintőképernyő automatikusan feloldódik.
 - **Képernyő zárolásának időtartama** – Ha a **Képernyő zárolásának engedélyezése** beállítást *Igen* értékre állították akkor ezzel a beállítással adja meg, hogy hány másodpercig kell zárolni az érintőképernyőt a fertőtlenítéshez. Az időtartamnak 5 és 120 másodperc között kell lennie.
 - **Előállít** egy táblát – *a* beállítás Igen beállítással minden alkalommal új tábla generálható, amikor egy dolgozó a termelési emelet végrehajtási felületét használja a készként jelentésre. Az azonosítótábla a **Raktárkezelési paraméterek** lapon beállított számsorozatból jön létre. Ha a beállítás értéke *Nem*, akkor a dolgozóknak a készként való jelentéskor meg kell határozniuk egy meglévő azonosítótáblát.

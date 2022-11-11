@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0474c50157295d9ecd2341b700c07f4fbf1ed51f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f5f1f2c8e3e43e36d837ebf989422b0dca7819d6
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900941"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741176"
 ---
 # <a name="cancel-a-planning-job"></a>Tervezési feladat visszavonása
 
@@ -29,8 +29,7 @@ ms.locfileid: "8900941"
 
 A Microsoft Dynamics 365 Supply Chain Management rendszerben érvényteleníthetők az olyan aktív tervezési feladatok, amelyek a Tervezés optimalizálása funkciót használják. Ha a párbeszédpanelen a **Mégse** lehetőséget választja, amikor a tervezésoptimalizálási feladat közvetlenül a felhasználói felületről indul el, (nem a háttérben), akkor ez nem törli a tervezési optimalizációs feladatot. Még ha figyelmeztetés jelenik meg, mint a "művelet visszavonva", akkor is a következő lépések végrehajtásával kell megszüntetni egy tervezési feladatot a tervezési optimalizációval.
 
-
-Aktív tervezési feladat érvénytelenítéséhez hajtsa végre az alábbi lépéseket. 
+Aktív tervezési feladat érvénytelenítéséhez hajtsa végre az alábbi lépéseket.
 
 > [!NOTE]
 > Csak egy aktív feladat érvényteleníthető.
@@ -45,18 +44,6 @@ A feladat állapota mindaddig **Megszakítás** lesz, amíg a Tervezés optimali
 
 > [!NOTE]
 > Az állapot változásainak megjelenítéséhez a **Frissítés** gombra kattintva frissíteni kell az oldalt.
-
-## <a name="additional-resources"></a>További erőforrások
-
-[Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
-
-[Tervezési optimalizálás indítása](get-started.md)
-
-[A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
-
-[Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
-
-[Szűrők alkalmazása egy tervre](plan-filters.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

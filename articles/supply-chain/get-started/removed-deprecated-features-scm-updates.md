@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 722b34e89a54715db39259549c11a78d69d2b4d3
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218802"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739870"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
 
@@ -89,7 +89,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 | **Felváltotta másik szolgáltatás?**   | Igen, a Tervezés optimalizálása átveszi a meglévő beépített Supply Chain Management alaptervezési motorjának szerepét. |
 | **Érintett területek**         | Supply Chain Management – Alaptervezés |
 | **Telepítési beállítás**              | Csak felhő. A Tervezés optimalizálása nem támogatott helyszíni telepítések esetében. |
-| **Állapot**                         | Elavult. 2022. április 1-ig a gyártási helyzetek már nem lesznek támogatottak a beépített ellátásilánc-kezelési alaptervezési motorban. A Microsoft ezzel a dátummal leállítja a beépített tervezőmotor gyártási helyzetekkel kapcsolatos összes aktív fejlesztési tervét, nem ad ki új funkciókat, és csak a kritikus hibajavításokat fogja kiadni. A dátum után minden vállalatnak, amely a gyártási esetekhez támogatást igényel, az alaptervezési számításaiban a tervezési optimalizálást kell használnia. A tervezési optimalizálás várhatóan 2022 októberére teljes mértékben támogatja a gyártási helyzeteket. A további tudnivalókat lásd a Tervezési optimalizálás [dokumentációjában](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Előfordulhat, hogy a vállalatok, ahol az Ellátásilánc-kezelés telepítések vannak, 2022 áprilisa után is a beépített alaptervezési motort használják a gyártási helyzetek kezelésére. Azonban nem lesz több funkciófejlesztés. |
+| **Állapot**                         | Elavult. 2022. április 1-ig a gyártási helyzetek már nem lesznek támogatottak a beépített ellátásilánc-kezelési alaptervezési motorban. A Microsoft ezzel a dátummal leállítja a beépített tervezőmotor gyártási helyzetekkel kapcsolatos összes aktív fejlesztési tervét, nem ad ki új funkciókat, és csak a kritikus hibajavításokat fogja kiadni. A dátum után minden vállalatnak, amely a gyártási esetekhez támogatást igényel, az alaptervezési számításaiban a tervezési optimalizálást kell használnia. A tervezési optimalizálás várhatóan 2022 októberére teljes mértékben támogatja a gyártási helyzeteket. További tájékoztatás az [Elavult alaptervezés áttekintésében található](../master-planning/deprecated-master-planning-overview.md).<br><br>Előfordulhat, hogy a vállalatok, ahol az Ellátásilánc-kezelés telepítések vannak, 2022 áprilisa után is a beépített alaptervezési motort használják a gyártási helyzetek kezelésére. Azonban nem lesz több funkciófejlesztés. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Eltávolított vagy elavult szolgáltatások a Supply Chain Management 10.0.11 kiadásában
 
@@ -101,7 +101,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 | **Felváltotta másik szolgáltatás?**   | Igen, a Tervezés optimalizálása átveszi a meglévő beépített Supply Chain Management alaptervezési motorjának szerepét. |
 | **Érintett területek**         | Supply Chain Management – Alaptervezés |
 | **Telepítési beállítás**              | Csak felhő. A Tervezés optimalizálása nem támogatott helyszíni telepítések esetében. |
-| **Állapot**                         | Elavult. 2021. április 1-e után az elosztási forgatókönyvek már nem lesznek támogatottak a beépített Dynamics 365 Supply Chain Management alaptervezési motorral. Terjesztési esetekhez a vevőknek a Tervezési optimalizációt kell használniuk az alaptervezés számításaihoz. További tájékoztatás: [Tervezésoptimalizálás dokumentációja](../master-planning/planning-optimization/planning-optimization-overview.md). A Dynamics 365 Supply Chain Management helyszíni telepítését használó ügyfelek továbbra is használhatják a Supply Chain Management alaptervezés motorját a terjesztési forgatókönyvekhez 2021. áprilisa után. Azonban nem lesz több funkciófejlesztés. |
+| **Állapot**                         | Elavult. 2021. április 1-e után az elosztási forgatókönyvek már nem lesznek támogatottak a beépített Dynamics 365 Supply Chain Management alaptervezési motorral. Terjesztési esetekhez a vevőknek a Tervezési optimalizációt kell használniuk az alaptervezés számításaihoz. További tájékoztatás az [Elavult alaptervezés áttekintésében található](../master-planning/deprecated-master-planning-overview.md). A Dynamics 365 Supply Chain Management helyszíni telepítését használó ügyfelek továbbra is használhatják a Supply Chain Management alaptervezés motorját a terjesztési forgatókönyvekhez 2021. áprilisa után. Azonban nem lesz több funkciófejlesztés. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Korábbi bejelentések az eltávolított vagy elavult funkciókról
 

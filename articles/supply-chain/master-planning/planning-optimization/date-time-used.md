@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ef78c73a1c7033735f9586229ff7ba21daaa5ef
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885899"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740904"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>A Tervezési optimalizálás által használt dátum- és időparaméterek
 
@@ -23,7 +23,7 @@ ms.locfileid: "8885899"
 
 Ez a cikk a tervezés optimalizálási műveletei során használt dátum- és időparaméterekkel kapcsolatban tartalmaz tájékoztatást.
 
-Míg a beépített alaptervezési motor minden számításban tranzakciódátumokat használ, a Tervezési optimalizálás a dátumokká konvertált dátum- és időértékeket használja. Ez a viselkedéssel kapcsolatos eltérés olyan helyzetekhez vezethet, amikor például az alaptervezés futtatásakor éjfélkor létrehozott előrejelzési tranzakciók nem szerepelnek, mivel a tervezési optimalizálás figyelembe veszi, hogy ezeket az aktuális dátum előtt hozták létre.
+Míg az elavult alaptervezési motor minden számításban tranzakciódátumokat használ, a tervezési optimalizálás a dátumokra konvertált dátum- és időértékeket használja. Ez a viselkedéssel kapcsolatos eltérés olyan helyzetekhez vezethet, amikor például az alaptervezés futtatásakor éjfélkor létrehozott előrejelzési tranzakciók nem szerepelnek, mivel a tervezési optimalizálás figyelembe veszi, hogy ezeket az aktuális dátum előtt hozták létre.
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>Paraméterek kiadási és igénytranzakciókhoz
 

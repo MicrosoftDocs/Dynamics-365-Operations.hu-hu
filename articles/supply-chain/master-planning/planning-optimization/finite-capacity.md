@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 5f02ec58c88cfd0d663a97de4e3e4dff1cdd5e90
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689693"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740086"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Véges kapacitástervezés és ütemezés
 
@@ -28,9 +28,8 @@ A véges kapacitás olyan megközelítés, amely segít megérteni, hogy mennyi 
 
 A véges kapacitástervezés és ütemezés pontosabb ütemezést hoz létre a termelési folyamatokhoz, mint a végtelen terhelési megközelítés. Ha nincs elég kapacitás az erőforrásokon, akkor a szállítási dátum ki lesz tolva, és a feladat ütemezése akkor történik meg, amikor a kapacitás elegendő.
 
-## <a name="planning-optimization-support-for-finite-capacity-planning"></a>Tervezési optimalizálás támogatása véges kapacitástervezéshez
-
-A véges kapacitástervezés és ütemezés ugyanúgy működik, függetlenül attól, hogy a tervezésoptimalizálást vagy a beépített tervezőmotort használja. A tervezési optimalizálás azonban nem használja **a Szűk keresztmetszet időkorlát paraméterét**. A tervezési optimalizálás használata esetén a szűk keresztmetszetű erőforrások ütemezése mindig ugyanazokkal az időkorlátokkal történik, mint a nem szűk keresztmetszetű erőforrások (ezt jelzi a véges kapacitás időkorlátja).
+> [!NOTE]
+> A véges kapacitástervezés és ütemezés ugyanúgy működik, függetlenül attól, hogy a tervezésoptimalizálást vagy az elavult alaptervezési motort használja. A tervezési optimalizálás azonban nem használja **a Szűk keresztmetszet időkorlát paraméterét**. A tervezési optimalizálás használata esetén a szűk keresztmetszetű erőforrások ütemezése mindig ugyanazokkal az időkorlátokkal történik, mint a nem szűk keresztmetszetű erőforrások (ezt jelzi a véges kapacitás időkorlátja).
 
 ## <a name="set-up-finite-capacity-functionality"></a>Véges kapacitási funkciók beállítása
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: cf5ca3996a882111b840e3acb5e2a4f3f26ec4b7
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689488"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740850"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Igényvezérelt anyagigény-tervezés (DDMRP) – áttekintés
 
@@ -44,6 +44,6 @@ A DDMRP-t jellemzően olyan gyártók használják, amelyek többszintű anyagje
 
 ## <a name="ddmrp-in-dynamics-365-supply-chain-management"></a>DDMRP be Dynamics 365 Supply Chain Management
 
-A DDMRP a Microsoft Dynamics 365 Supply Chain Management része, ezért nem igényel további licencdíjakat. Az Ellátásilánc-kezelés modul DDMRP-funkciói hozzá vannak adva a meglévő alaptervezési **modulhoz**. Ehhez azonban a Tervezési optimalizálási bővítményt kell használni. 
+A DDMRP a Microsoft Dynamics 365 Supply Chain Management része, ezért nem igényel további licencdíjakat. Az Ellátásilánc-kezelés modul DDMRP-funkciói hozzá vannak adva a meglévő alaptervezési **modulhoz**. Ehhez azonban a Tervezési optimalizálási bővítményt kell használni.
 
 A DDMRP integrálva van az Ellátásilánc-kezelés meglévő tervezési beállításaival, és a beállításokkal együtt használatos arra, hogy a vállalat megfelelő tervezési konfigurációját megossa. Ezt egy olyan új fedezeti kód vezérli, amely teljesen különbözik az időszaktól, a minimumtól, a követelménytől stb. Ez nem egy új modul, és nem cseréli le a meglévő tervezési funkciókat. Ugyanakkor további funkciókat is biztosít a használathoz.

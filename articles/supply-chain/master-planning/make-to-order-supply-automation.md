@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-27
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9044acb472548a797ed387b08ca6892459785793
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d376c2f4d8514a4e6122e2e94455d57a39d2babf
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220749"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740194"
 ---
 # <a name="make-to-order-supply-automation"></a>Készítés rendelésre ellátás automatizálása
 
@@ -32,12 +32,6 @@ A *rendelésre való ellátásautomatizálási* funkció több fejlesztést is t
 - A vállalatközi információk folyamatának javítása. A beszerzési rendelések frissülnek, hogy a szállítási mód, a szállítási feltételek és a külső cikkszám mezőit tartalmazzák. Ez a módosítás gondoskodik arról, hogy a részletes igényinformációk át tudjanakáramlást biztosítani a beszállító vállalathoz.
 
 Ez a témakör ismerteti, hogyan lehet beállítani és használni az egyes fejlesztéseket.
-
-> [!NOTE]
-> Az ebben a cikkben ismertetett minden fejlesztés a beépített alaptervezést használt rendszerekre vonatkozik. A Microsoft tervezőoptimalizálási bővítménye a következő két továbbfejlesztést támogatja Dynamics 365 Supply Chain Management:
->
-> - Alaptervek késleltetési tűréshatára
-> - Az alaptervezés során használt pegging-sorrend ellenőrzése
 
 ## <a name="turn-on-the-make-to-order-supply-automation-feature"></a>A rendelésre való ellátásautomatizálási funkció bekapcsolása
 
@@ -73,7 +67,7 @@ A *Jelölés* a kínálat és kereslet összekapcsolására szolgál. Ez hasonl�
 
 Ezek a lehetőségek **az** **·** **Alaptervezés** paraméterei lap Szokásos frissítés lapjának Frissítés jelölés mezőjében is elérhetők, **ahol a Meg lehet határozni a Meg lehet erősítő párbeszédpanel alapértelmezett** beállítását.
 
-A további tudnivalókat lásd a [Készletjelölés tervezésoptimalizálással.](planning-optimization/marking.md)
+A további tudnivalókat lásd a [Készletjelölésnél](planning-optimization/marking.md).
 
 ## <a name="set-delay-tolerance-negative-days-at-the-master-plan-level"></a>Késleltetési tűréshatár (negatív napok) beállítása az alapterv szintjén
 
@@ -87,7 +81,7 @@ Az alaptervek negatív napjainak beállítását a következő lépések szerint
 
 1. Válassz az **Alaptervezés \> Beállítás \> Tervek \> Alaptervezések** lehetőséget.
 1. Válasszon egy alaptervet a listaablakban, vagy hozzon létre egy újat.
-1. Az időkorlátok napokban gyorsét **úgy állítsa a Negatív napok** beállítást, **hogy Igen**.*·*
+1. Az időkorlátok napokban gyorsét **úgy állítsa a Negatív napok** beállítást, **hogy Igen** *.*
 1. A közeli mezőben adja meg a negatív napok számát.
 
 A negatív napok használatával kapcsolatos további tudnivalókat lásd [: Késleltetési tűréshatár (negatív napok)](planning-optimization/delay-tolerance.md).
