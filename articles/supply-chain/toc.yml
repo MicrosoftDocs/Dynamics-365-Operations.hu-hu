@@ -384,7 +384,7 @@
                       href: ../finance/localizations/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
         - name: Elosztott hibrid topológia
           items:
-            - name: A skálázási egység jelenleg szünetel az új ügyfelek esetében
+            - name: A Supply Chain Management szolgáltatáshoz tartozó skálázási egység képessége jelenleg szünetel
               href: cloud-edge/cloud-edge-landing-page.md
         - name: Eszközkezelés
           items:
@@ -1753,36 +1753,54 @@
           items:
             - name: Alaptervezés kezdőlapja
               href: master-planning/master-planning-home-page.md
-            - name: Áttelepítés a tervezési optimalizálásra az alaptervezéshez
-              href: master-planning/new-master-planning-engine.md
-            - name: Tervezési optimalizálás
+            - name: Első lépések az alaptervezéssel
+              href: master-planning/planning-optimization/get-started.md
+            - name: Az alaptervezés rendszerarchitektúrája
+              href: master-planning/master-planning-architecture.md
+            - name: Alaptervezés adminisztrációja
               items:
-                - name: Tervezési optimalizálás áttekintése
-                  href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: A Tervezési optimalizálás kezdő lépései
-                  href: master-planning/planning-optimization/get-started.md
-                - name: Tervezési optimalizálás kiadási folyamat és kiadási előzmények
+                - name: Tervezési optimalizálás kiadási folyamata és kiadási előzményei
                   href: master-planning/planning-optimization/release-process.md
-                - name: A Tervezési optimalizálás igazítási elemzése
-                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
-                - name: A beépített alaptervezés és a tervezési optimalizálás közötti különbségek
-                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
-                - name: A Tervezési optimalizálás által nem használt paraméterek
-                  href: master-planning/planning-optimization/not-used-parameters.md
-                - name: Készletütemezés
-                  href: master-planning/supply-schedule.md
-                - name: Szűrők alkalmazása egy tervre
-                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Tervezési optimalizálás hibaelhárítása
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Oldja meg a „Nem található elegendő kapacitás" ütemezései motorhibát
+                  href: master-planning/not-enough-capacity-error-resolution.md
+                - name: Tervezési feladat visszavonása
+                  href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Tervezési optimalizálás bővíthetősége
+                  href: master-planning/planning-optimization/extensibility.md
+                - name: Tervelőzmények és tervezési naplók megtekintése
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: A Tervezési optimalizálás által használt dátum- és időparaméterek
+                  href: master-planning/planning-optimization/date-time-used.md
+            - name: Alaptervezés konfigurálása
+              items:
+                - name: Késések
+                  href: master-planning/delays.md
+                - name: Nyomkövetés használata az alábontáshoz
+                  href: master-planning/trace-explosion.md
+                - name: Készítés rendelésre ellátás automatizálása
+                  href: master-planning/make-to-order-supply-automation.md
+                - name: Negatív napok és dinamikus negatív napok
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: Naptárak és alaptervezés
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: Egy telephelyhez tartozó ütemezés létrehozása
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: Egy telephelyre vonatkozó terv létrehozása
+                  href: master-planning/tasks/create-plan-site.md
                 - name: Alaptervezés igény-előrejelzésekkel
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Alaptervezés ellátási előrejelzésekkel
                   href: master-planning/planning-optimization/supply-forecast.md
+                - name: Készletütemezés
+                  href: master-planning/supply-schedule.md
+                - name: Tervezés futtatása a cikkek egy részcsoportjához
+                  href: master-planning/planning-optimization/plan-filters.md
                 - name: Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Árajánlatok és ajánlatkérések a terv alapján
+                - name: Terv az árajánlatok és ajánlatkérések alapján
                   href: master-planning/planning-optimization/quotation-planning.md
-                - name: A Tervezési optimalizálás által használt dátum- és időparaméterek
-                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Biztonsági határok
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Késés tűréshatára (negatív napok)
@@ -1799,130 +1817,82 @@
                   href: master-planning/planning-optimization/finite-capacity.md
                 - name: Ütemezés képességen alapuló erőforrás kiválasztásával
                   href: master-planning/planning-optimization/capability-based-scheduling.md
-                - name: Prioritásokon alapuló tervezés
-                  href: master-planning/planning-optimization/priority-based-planning.md
-                - name: Igényalapú anyagszükséglet-tervezés (DDMRP)
-                  items:
-                    - name: DDMRP – áttekintés
-                      href: master-planning/planning-optimization/ddmrp-overview.md
-                    - name: A DDMRP szolgáltatás bekapcsolása a rendszerhez
-                      href: master-planning/planning-optimization/ddmrp-enable.md
-                    - name: Készletpozicionálás
-                      href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
-                    - name: Bufferprofil és -szintek
-                      href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
-                    - name: Igényalapú tervezés
-                      href: master-planning/planning-optimization/ddmrp-planning.md
-                    - name: Vizuális és együttműködési végrehajtása
-                      href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
-                - name: Készletjelölés tervezési optimalizálással
+                - name: Készletjelölés
                   href: master-planning/planning-optimization/marking.md
                 - name: Vállalatközi tervezés
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Bizonyos termékéletciklus-állapotokkal rendelkező termékek kizárása
                   href: master-planning/planning-optimization/product-lifecycle-state.md
-                - name: Feltöltési módok és mennyiség módosítása
-                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Fedezeti időkorlátok
                   href: master-planning/planning-optimization/coverage-time-fence.md
-                - name: Nettó követelmények és igénykövetési információ a Tervezési optimalizálással
+                - name: Nettó követelmények és igénykövetési adatok
                   href: master-planning/planning-optimization/net-requirements.md
-                - name: Tervezett rendelések jóváhagyása
-                  href: master-planning/planning-optimization/approved-planned-order.md
-                - name: Biztosra tervezett rendelések
-                  href: master-planning/planning-optimization/planned-order-firming.md
-                - name: Tervezett rendelések egyszerűsítve
-                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Tervezés negatív tényleges készleten lévő mennyiségekkel
                   href: master-planning/planning-optimization/negative-on-hand.md
-                - name: Tervelőzmények és tervezési naplók megtekintése
-                  href: master-planning/planning-optimization/plan-history-logs.md
-                - name: Tervezési feladat visszavonása
-                  href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Műveletkérő üzenetek
-                  href: master-planning/action-messages.md
                 - name: Értékesítési rendelés szállítási dátumának számítása az ígérhető használatával
                   href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
-                - name: Tervezési optimalizálás hibaelhárítása
-                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-                - name: Tervezési optimalizálás bővíthetősége
-                  href: master-planning/planning-optimization/extensibility.md
-            - name: Alaptervek
+            - name: Alaptervek beállítása
               items:
                 - name: Alaptervek áttekintése
                   href: master-planning/master-plans.md
                 - name: Alaptervek beállítása
                   href: master-planning/master-planning-setup.md
-                - name: Alaptervezés-beállítás varázslója
+                - name: Alaptervezés telepítővarázslója
                   href: master-planning/master-planning-setup-wizard.md
+                - name: Korlátozott terv létrehozása
+                  href: master-planning/tasks/constrained-plan.md
+            - name: Feltöltési stratégiák beállítása
+              items:
                 - name: Fedezeti beállítások
                   href: master-planning/coverage-settings.md
                 - name: Cikkek fedezeti szabályainak meghatározása
                   href: master-planning/tasks/define-coverage-rules-items.md
-                - name: Korlátozott terv létrehozása
-                  href: master-planning/tasks/constrained-plan.md
-                - name: Társtermékek anyagfelhasználási tervének létrehozása
-                  href: master-planning/tasks/create-material-plan-co-products.md
-                - name: Tervezett rendelések karbantartása
-                  href: master-planning/maintain-planned-orders.md
+                - name: Termékek és alapanyagok beszerzése több szállítótól
+                  href: master-planning/source-from-multiple-vendors.md
+                - name: Prioritásokon alapuló tervezés
+                  href: master-planning/planning-optimization/priority-based-planning.md
+                - name: Feltöltési módok és mennyiség módosítása
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
+            - name: Alaptervek és több telephelyes funkciók
+              items:
+                - name: Az alaptervezés és a több telephelyes funkció áttekintése
+                  href: master-planning/master-plan-multisite-functionality.md
+                - name: 'Alaptervezés telephely-lefedettséghez, kötelező raktár'
+                  href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                - name: 'Alaptervezés helyfedezethez, a raktár nem kötelező'
+                  href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                - name: 'Telephely és raktárfedezet alaptervezése, kötelező raktár'
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                - name: 'Telephely és raktárfedezet alaptervezése, nem kötelező raktár'
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                - name: Anyagjegyzék-verzió meghatározása
+                  href: master-planning/master-plan-bom-version-determined.md
+                - name: Az Anyagjegyzék-verzió alábontása
+                  href: master-planning/master-plan-explosion-bom-version.md
+            - name: Biztonsági készlet
+              items:
                 - name: Biztonsági készlet teljesítése cikkek számára
                   href: master-planning/safety-stock-replenishment.md
                 - name: A biztonsági készlet napló használata a cikkek minimális fedezetének frissítésére
                   href: master-planning/safety-stock-journal.md
-                - name: Késések
-                  href: master-planning/delays.md
-                - name: Alaptervezési feladat visszavonása
-                  href: master-planning/cancel-master-planning-job.md
-                - name: Nyomkövetés használata az alábontáshoz
-                  href: master-planning/trace-explosion.md
-                - name: Alaptervezés futtatásának megfigyelése
-                  href: master-planning/tasks/monitor-master-planning-run.md
-                - name: Egy telephelyhez tartozó ütemezés létrehozása
-                  href: master-planning/tasks/create-schedule-site.md
-                - name: Egy telephelyre vonatkozó terv létrehozása
-                  href: master-planning/tasks/create-plan-site.md
-                - name: Naptárak és alaptervezés
-                  href: master-planning/supply-chain-calendars-master-planning.md
-                - name: Oldja meg a „Nem található elegendő kapacitás" ütemezései motorhibát
-                  href: master-planning/not-enough-capacity-error-resolution.md
-                - name: Az alaptervezés teljesítményének javítása
-                  href: master-planning/master-planning-performance.md
-                - name: Ütemezési motor teljesítményének javítása
-                  href: master-planning/scheduling-engine-performance.md
-                - name: Alaptervek és több telephelyes funkciók
-                  items:
-                    - name: Az alaptervezés és a több telephelyes funkció áttekintése
-                      href: master-planning/master-plan-multisite-functionality.md
-                    - name: 'Alaptervezés telephely-lefedettséghez, kötelező raktár'
-                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
-                    - name: 'Alaptervezés helyfedezethez, a raktár nem kötelező'
-                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
-                    - name: 'Telephely és raktárfedezet alaptervezése, kötelező raktár'
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
-                    - name: 'Telephely és raktárfedezet alaptervezése, nem kötelező raktár'
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
-                    - name: Anyagjegyzék-verzió meghatározása
-                      href: master-planning/master-plan-bom-version-determined.md
-                    - name: Az Anyagjegyzék-verzió alábontása
-                      href: master-planning/master-plan-explosion-bom-version.md
-                - name: Negatív napok és dinamikus negatív napok
-                  href: master-planning/more-about-dynamic-negative-days.md
-                - name: Vállalatközi terv létrehozása
-                  href: master-planning/tasks/create-intercompany-plan.md
-                - name: Kimenő tervezett vállalatközi igény megtekintése
-                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Nettó követelmények és igénykövetési információ a beépített fő tervezéssel
-                  href: master-planning/net-requirements-built-in-master-planning.md
-                - name: Készítés rendelésre ellátás automatizálása
-                  href: master-planning/make-to-order-supply-automation.md
+            - name: Tervezett rendelések kezelése
+              items:
+                - name: Tervezett rendelések karbantartása
+                  href: master-planning/maintain-planned-orders.md
+                - name: 'Tervezett rendelések megtekintése, kezelése és jóváhagyása'
+                  href: master-planning/planning-optimization/approved-planned-order.md
+                - name: Biztosra tervezett rendelések
+                  href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Tervezett rendelések egyszerűsítve
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
+                - name: Műveletkérő üzenetek
+                  href: master-planning/action-messages.md
             - name: Előrejelzés
               items:
-                - name: Igény- és ellátási előrejelzés
-                  items:
-                    - name: Készlet-előrejelzések
-                      href: master-planning/inventory-forecast.md
-                    - name: 'Útmutató: Igény-előrejelzés manuális módosítása'
-                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Készlet-előrejelzések
+                  href: master-planning/inventory-forecast.md
+                - name: 'Útmutató: Igény-előrejelzés manuális módosítása'
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
                 - name: Igény-előrejelzés
                   items:
                     - name: Igény-előrejelzés áttekintése
@@ -1943,10 +1913,50 @@
                       href: master-planning/monitor-forecast-accuracy.md
                     - name: 'Útmutató: Kiinduló előrejelzés létrehozása'
                       href: master-planning/tasks/create-baseline-forecast.md
-                - name: Alaptervezés előrejelzéssel
-                  items:
-                    - name: Előrejelzés-csökkentési kulcsok
-                      href: master-planning/reduction-keys.md
+                - name: Előrejelzés-csökkentési kulcsok
+                  href: master-planning/reduction-keys.md
+            - name: Igényalapú anyagszükséglet-tervezés (DDMRP)
+              items:
+                - name: DDMRP – áttekintés
+                  href: master-planning/planning-optimization/ddmrp-overview.md
+                - name: A DDMRP szolgáltatás bekapcsolása a rendszerhez
+                  href: master-planning/planning-optimization/ddmrp-enable.md
+                - name: Készletpozicionálás
+                  href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
+                - name: Bufferprofil és -szintek
+                  href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
+                - name: Igényalapú tervezés
+                  href: master-planning/planning-optimization/ddmrp-planning.md
+                - name: Vizuális és együttműködési végrehajtás
+                  href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+            - name: Elavult tervezési motor
+              items:
+                - name: Elavult tervezési motor áttekintése
+                  href: master-planning/deprecated-master-planning-overview.md
+                - name: Áttelepítés a Tervezési optimalizálásra az alaptervezéshez
+                  href: master-planning/new-master-planning-engine.md
+                - name: A Tervezési optimalizálás által nem használt paraméterek
+                  href: master-planning/planning-optimization/not-used-parameters.md
+                - name: A Tervezési optimalizálás és az elavult alaptervezési motor közötti különbségek
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
+                - name: A Tervezési optimalizáláshoz igazodó elemzése
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Az alaptervezés teljesítményének javítása
+                  href: master-planning/master-planning-performance.md
+                - name: Ütemezési motor teljesítményének javítása
+                  href: master-planning/scheduling-engine-performance.md
+                - name: Vállalatközi terv létrehozása
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: Kimenő tervezett vállalatközi igény megtekintése
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: Alaptervezés futtatásának megfigyelése
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: Nettó követelmények és igénykövetési információ az elavult tervezési motorral
+                  href: master-planning/net-requirements-built-in-master-planning.md
+                - name: Társtermékek anyagfelhasználási tervének létrehozása
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: Az elavult alaptervezési motor használatával létrehozott feladat érvénytelenítése
+                  href: master-planning/cancel-master-planning-job.md
         - name: Mobilalkalmazás
           items:
             - name: Mobilalkalmazás kezdőoldala

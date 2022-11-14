@@ -538,10 +538,14 @@
                       href: ../human-resources/hr-personnel-create-mass-hire-project.md
                 - name: Toborzási kérelmek (egyesített infrastruktúra)
                   items:
-                    - name: Jelöltek toborzása
+                    - name: Feladatra jelöltek toborzása
                       href: hr-personnel-recruit.md
         - name: Feladatkezelés
-          href: hr-task-mgmt.md
+          items:
+            - name: Áttekintés
+              href: hr-task-mgmt.md
+            - name: Feladatkezelés frissítése
+              href: hr-task-update.md
         - name: Szabadság és távollét
           items:
             - name: Áttekintés
@@ -822,7 +826,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
             - name: Dolgozói szállások kezelése
               href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-    - name: A Human resources fejlesztése
+    - name: A Human Resources fejlesztése
       items:
         - name: Áttekintés
           href: hr-developer-overview.md
@@ -832,6 +836,10 @@
           href: hr-developer-entities.md
         - name: Egyéni mezők
           href: hr-developer-custom-fields.md
+        - name: Fejlesztés és testreszabás
+          items:
+            - name: Nemek alapján történő felsorolás
+              href: enum-exten.md
         - name: Adatintegráció beállítása
           items:
             - name: Adatintegrációs technológia kiválasztása
