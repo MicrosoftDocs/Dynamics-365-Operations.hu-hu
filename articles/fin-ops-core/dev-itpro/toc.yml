@@ -488,7 +488,7 @@
                       href: help/migrate-dynamicsax2012.md
                 - name: Nyelvi és területi leírók a terméken és a súgóban
                   href: help/language-locale.md
-                - name: 'Bővítse, szabja testre és működjön együtt a súgóval'
+                - name: 'Bővítse a súgót, és működjön együtt vele'
                   href: help/contributor-guide.md
             - name: Pénzügyi és műveleti alkalmazások – regionális szolgáltatások
               items:
@@ -1624,6 +1624,10 @@
               href: sysadmin/DataMaintenancePortal.md
             - name: Hálózati nyomtatókhoz való hozzáférés kezelése jogi személyek között
               href: sysadmin/sys-admin-tools-network-printer.md
+            - name: Figyelés és telemetria az Application Insights használatával
+              items:
+                - name: Áttekintés
+                  href: sysadmin/monitoring-and-telemetry-appinsights.md
             - name: Biztonság
               items:
                 - name: Szerepköralapú biztonság

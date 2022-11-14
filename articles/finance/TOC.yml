@@ -450,9 +450,11 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Számlázási ütemezés másolása
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Vevő felosztása számlázási ütemezéssel
+                      href: accounts-receivable/sb-customer-split.md
                     - name: Számlázási ütemezés funkciói
                       href: accounts-receivable/sb-schedule-billing-features.md
-                    - name: Mérföldkőszámlázás
+                    - name: Mérföldkő-számlázás
                       href: accounts-receivable/sb-milestonebilling.md
                     - name: Bevétel felosztása
                       href: accounts-receivable/sb-rev-allocation.md
@@ -1172,6 +1174,8 @@
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Pénzügyi időszak lezárása munkaterület
                   href: general-ledger/financial-period-close-workspace.md
+                - name: Optimalizált év végi zárás
+                  href: general-ledger/optimize-year-end-close.md
                 - name: Év végi zárás
                   href: general-ledger/year-end-close.md
                 - name: A pénzügyi év lezárása
