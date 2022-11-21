@@ -2,7 +2,7 @@
 title: Inventory Visibility konfigurálása
 description: Ez a témakör azt ismerteti, hogyan kell konfigurálni a készlet láthatóságát.
 author: yufeihuang
-ms.date: 05/27/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61819d9c5af64b58697e07be85beebc084ae5935
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542286"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764866"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibility konfigurálása
 
 [!include [banner](../includes/banner.md)]
-
 
 Ez a témakör azt ismerteti, hogyan kell konfigurálni a készlet láthatóságát a Készlet láthatósága alkalmazásban Power Apps.
 
@@ -53,18 +52,23 @@ A Készlet láthatósága bővítmény számos új funkcióval bővíti a Power 
 |---|---|
 | *OnHandReservation* | Ezzel a funkcióval foglalásokat, foglalásokat és/vagy nem foglalt készletmennyiségeket lehet létrehozni a Készlet láthatósága funkcióval. További információért lásd a [Készletláthatósági foglalások](inventory-visibility-reservations.md) című részt. |
 | *OnHandMostSpecificBackgroundService* | Ez a funkció a termékekkel és az összes dimenzióval együtt egy készletösszegzést ad meg. A készletösszegzési adatokat a rendszer rendszeres időközönként szinkronizálja a Készletláthatóságból. Az alapértelmezett szinkronizálási gyakoriság 15 percenként van beállítva, és 5 percenként akárhányszor be lehet állítani. További információ a készlet összesítésében [található](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | Ez a funkció lehetővé teszi a Készlet láthatósága funkció előzetes lekérdezések előzetes betölthetőségét az előre kiválasztott dimenziókkal együtt az aktuális készlet listáinak összeállításához. Az alapértelmezett szinkronizálási gyakoriság 15 percenként van megjelölve. További információ a készlet összesítésében [található](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). |
+| *onHandIndexQueryPreloadBackgroundService* | Ez a funkció lehetővé teszi a Készlet láthatósága funkció előzetes lekérdezések előzetes betölthetőségét az előre kiválasztott dimenziókkal együtt az aktuális készlet listáinak összeállításához. Az alapértelmezett szinkronizálási gyakoriság 15 percenként van megjelölve. A további tudnivalókat lásd [egy egyszerű, az üzleti folyamatnak megfelelő lekérdezés előzetes betöltésében](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | Ez az opcionális funkció lehetővé teszi az ígérethez rendelkezésre álló változási ütemezést és az ígérethez rendelkezésre álló funkciókat. A további tudnivalókat lásd [a Készlet láthatósága aktuális készlet változásának ütemezésében, amely ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md). |
-| *Foglalás* | Ez az opcionális funkció lehetővé teszi, hogy a készlet láthatósága lehetővé teszi a készletellenőrzést (ringfencing) és a túlkiértékelést. A további tudnivalókat lásd [a Készlet láthatósága készletfelosztásban](inventory-visibility-allocation.md). |
+| *Felosztás* | Ez az opcionális funkció lehetővé teszi, hogy a készlet láthatósága lehetővé teszi a készletellenőrzést (ringinging) és a túlkiértékelést. A további tudnivalókat lásd [a Készlet láthatósága készletfelosztásban](inventory-visibility-allocation.md). |
 | *Raktári cikkek engedélyezése a Készletláthatóság funkcióban* | Ez az opcionális funkció lehetővé teszi a készlet láthatóságát a raktárkezelési folyamatokban (WMS) engedélyezett cikkek támogatása érdekében. További információ a WMS-cikkek [készlet láthatósági támogatásában található](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>A szolgáltatás végpontjának keresése
 
-Ha nem ismeri a megfelelő Készletláthatóság szolgáltatás végpontját, nyissa meg a **Konfiguráció** oldalt a Power Apps oldalon, majd válassza a jobb felső sarokban a **Szolgáltatás végpontjának megjelenítése** lehetőséget. Az oldal a megfelelő szolgáltatás végpontját fogja megjeleníteni.
+Ha nem ismeri a megfelelő készlet-láthatósági szolgáltatási végpontot, **·** Power Apps nyissa meg a Konfiguráció lapot, **majd** válassza a Szolgáltatás részleteinek megjelenítése lehetőséget a jobb felső sarokban. Az oldal a megfelelő szolgáltatás végpontját fogja megjeleníteni. A végpont a Microsoft Dynamics Lifecycle Services szolgáltatásban is elérhető, [a Végpont megkeresása az Ön Lifecycle Services környezetének megfelelően leírtak szerint](inventory-visibility-api.md#endpoint-lcs).
+
+> [!NOTE]
+> Helytelen végpont használata sikertelen készlet-láthatósági telepítést és hibákat okozhat, amikor az ellátásilánc-kezelés szinkronizálva van a készlet láthatóságával. Ha nem tudja biztosan, mi a végpont, forduljon a rendszergazdához. A végpont URL-címének formátuma a következő:
+>
+> `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
 ## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Adatforrás konfiguráció
 
-Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen lehet például az `fno` adatforrás neve (azaz "Dynamics 365 pénzügyi és műveletalkalmazások") `pos` és (ami azt jelenti, hogy "értékesítési pont"). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
+Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen lehet például az adatforrás neve `fno` (amely az ellátásilánc-kezelésnek felel meg) `pos` és (ez azt jelenti, hogy "értékesítési pont"). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
 
 > [!NOTE]
 > Az `fno` adatforrás le van foglalva az Ellátásilánc-kezeléshez. Ha a készlet láthatósági bővítménye integrálva van egy ellátásilánc-kezelési környezettel, javasoljuk, `fno` hogy ne törölje az adatforráshoz kapcsolódó konfigurációkat.
@@ -73,7 +77,7 @@ Adatforrás hozzáadásához kövesse az alábbi lépéseket.
 
 1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
 1. Nyissa meg a **Konfiguráció** oldalt.
-1. Az **Adatforrás** lapon válassza az **Új adatforrás** lehetőséget egy adatforrás hozzáadásához.
+1. Az Adatforrás **lapon** válassza **az** Új adatforrás lehetőséget adatforrás hozzáadásához (`ecommerce` például vagy egy másik értelmezhető adatforrás-azonosítót).
 
 > [!NOTE]
 > Adatforrás hozzáadásakor győződjön meg róla, hogy az adatforrás nevét, a fizikai mérőszámokat és a dimenzió-hozzárendeléseket érvényesítette, mielőtt frissítené a Készletláthatósági szolgáltatás konfigurációját. Ezeket a beállításokat nem tudja módosítani, miután kiválasztotta a **Konfiguráció frissítése** lehetőséget.
@@ -88,11 +92,11 @@ Az adatforrás konfigurációja a következő részeket tartalmazza:
 
 A dimenzió-konfiguráció célja a több rendszerre kiterjedő integráció szabványosítása az események és lekérdezések feladásához a dimenziók kombinációi alapján. A Készletláthatósága az adatforrás dimenzióiból leképezhető alapdimenziók listáját biztosítja. Harminchárom dimenzió áll rendelkezésre a leképezéshez.
 
-- Alapértelmezés szerint, ha a Supply Chain Managementet használja az egyik adatforrásként, 13 dimenzió kerül leképezésre a Supply Chain Management szabványos dimenzióihoz. Tizenkét másik dimenzió (`inventDimension1` - `inventDimension12`) a Supply Chain Managementt egyedi dimenzióihoz van rendelve. A fennmaradó nyolc dimenzió olyan kiterjesztett dimenziók, amelyeket külső adatforrásokhoz rendelhet.
+- Ha az ellátásilánc-kezelés az egyik adatforrás, akkor alapértelmezés szerint 13 dimenzió van hozzárendelve az Ellátásilánc-kezelés szabványos dimenzióihoz. A többi 12 dimenzió az`inventDimension1``inventDimension12` Ellátásilánc-kezelés egyéni dimenzióihoz is megfeleltetve van. A fennmaradó nyolc dimenzió (`ExtendedDimension1` át `ExtendedDimension8`) olyan kiterjesztett dimenzió, amely leképezhető külső adatforrásra.
 - Ha nem a Supply Chain Managementet használja az egyik adatforrásként, akkor szabadon leképezheti a dimenziókat. A következő táblázat a rendelkezésre álló dimenziók teljes listáját tartalmazza.
 
 > [!NOTE]
-> Ha a dimenzió nem szerepel az alapértelmezett dimenziólistában, és külső adatforrást használ, javasoljuk, hogy a `ExtendedDimension1` és a `ExtendedDimension8` segítségével végezze el a leképezést.
+> Ha használja az Ellátásilánc-kezelés beállítást, és módosítja az ellátásilánc-kezelés és a készlet láthatósága közötti alapértelmezett dimenzió-hozzárendeléseket, a megváltozott dimenzió nem fogja szinkronizálni az adatokat. Ezért ha a dimenzió nem szerepel az alapértelmezett dimenziólistán, és egy külső adatforrást használ, akkor javasoljuk, `ExtendedDimension1``ExtendedDimension8` hogy a leképezés során használja az adatokat.
 
 | Dimenzió típusa | Alapdimenzió |
 |---|---|
@@ -114,11 +118,11 @@ A dimenzió-konfiguráció célja a több rendszerre kiterjedő integráció sza
 | System | `Empty` |
 
 > [!NOTE]
-> Az előző táblázatban felsorolt mérettípusok csak tájékoztató jellegűek. Ezeket nem kell a Készletláthatóságban definiálnia.
+> Az előző táblázatban felsorolt dimenziótípusok csak a saját referenciájukra szolgálnak. Ezeket nem kell a Készletláthatóságban definiálnia.
 >
-> A készlet (egyéni) dimenziókat a Supply Chain Management számára lehet fenntartani. Ebben az esetben használhatja helyette a kiterjesztett méreteket.
+> Előfordulhat, hogy a készletdimenziók (egyéni) lefoglalhatók az ellátásilánc-kezeléshez. Ebben az esetben használja helyette a kiterjesztett dimenziókat.
 
-A külső rendszerek a RESTful API-kon keresztül érhetik el a Készletláthatóságot. Az integrációhoz az Készletláthatóság lehetővé teszi a _külső adatforrás_ és a _külső dimenziók_ és az _alapdimenziók_ közötti leképezés konfigurálását. Példa a dimenzió-hozzárendelési táblára.
+A külső rendszerek a RESTful API-kon keresztül érhetik el a Készletláthatóságot. Az integrációhoz az Készletláthatóság lehetővé teszi a *külső adatforrás* és a *külső dimenziók* és az *alapdimenziók* közötti leképezés konfigurálását. Példa a dimenzió-hozzárendelési táblára.
 
 | Külső dimenzió | Alapdimenzió |
 |---|---|
@@ -134,20 +138,21 @@ A dimenzióleképezések hozzáadásához kövesse az alábbi lépéseket.
 
 1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
 1. Nyissa meg a **Konfiguráció** oldalt.
-1. Az **Adatforrás** lap **Dimenzióleképezések** szakaszában válassza a **Hozzáadás** lehetőséget a dimenzióleképezések hozzáadásához.
+1. Az Adatforrás **lapon** válassza ki azt az adatforrást, ahol a dimenziók megfeleltetését el szeretné látni. Ezután a Dimenzióleképezések **szakaszban** válassza a Hozzáadás **dimenzióleképezések** hozzáadásához lehetőséget.
+
     ![Dimenzióleképezések hozzáadása](media/inventory-visibility-dimension-mapping.png "Dimenzió leképezések hozzáadása")
 
 1. A **Dimenzió neve** mezőben adja meg a forrásdimenziót.
 1. A **Bázisdimenzióhoz** mezőben válassza ki a Készletláthatóságában azt a dimenziót, amelyet le kíván képezni.
 1. Válassza a **Mentés** lehetőséget.
 
-Ha például az adatforrás tartalmaz egy termékszín dimenziót, akkor azt leképezheti a `ColorId` alapdimenzióra, hogy a `exterchannel` adatforrásban hozzáadhasson egy `ProductColor` egyéni dimenziót. Ezt követően a `ColorId` alapdimenzióra képezzük le.
+Létrehozott például egy `ecommerce` már elnevezett adatforrást, amely termékszín-dimenziót tartalmaz. Ebben az esetben a megfeleltetést úgy használhatja, hogy hozzáadja az adatforrás Dimenziónév`ProductColor`**·**`ecommerce` mezőjéhez, `ColorId`**majd kiválasztja a Cél alapdimenzió mezőt.**
 
 ### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fizikai mérőszámok
 
-Amikor egy adatforrás készletváltozást könyvel a Készletláthatóságba, a változást *fizikai mérőszámok* segítségével könyveli. A fizikai mérőszámok módosítják a mennyiséget és tükrözik a készletállapotot. Az Ön igényei alapján meghatározhatja saját fizikai mérőszámait. A lekérdezések a fizikai mérőszámokon alapulhatnak.
+Amikor egy adatforrás készletváltozást könyvel a Készletláthatóságba, a változást *fizikai mérőszámok* segítségével könyveli. A fizikai mérőszámok módosítják a mennyiséget és tükrözik a készletállapotot. A követelmények alapján saját fizikai intézkedéseket lehet meghatározni. A lekérdezések a fizikai mérőszámokon alapulhatnak.
 
-A Készletláthatósága a Supply Chain Managementhez (a `fno` adatforráshoz) kapcsolódó alapértelmezett fizikai mérőszámok listáját biztosítja. Ezek az alapértelmezett fizikai mérések a Supply Chain Management **Kézi lista** oldalán **(Készletgazdálkodás \> Készletlekérdezések és jelentések \> Készletlista**) található készletmozgás-állapotokból származnak. A következő táblázat példát mutat a fizikai mérőszámokra.
+A készlet láthatósága az Ellátásilánc-kezeléshez (az adatforráshoz) hozzárendelt alapértelmezett fizikai intézkedések `fno` listáját tartalmazza. Ezek az alapértelmezett fizikai mérések a Supply Chain Management **Kézi lista** oldalán **(Készletgazdálkodás \> Készletlekérdezések és jelentések \> Készletlista**) található készletmozgás-állapotokból származnak. A következő táblázat példát mutat a fizikai mérőszámokra.
 
 | Fizikai mérőszám neve | Leírás |
 |---|---|
@@ -168,11 +173,11 @@ A Készletláthatósága a Supply Chain Managementhez (a `fno` adatforráshoz) k
 | `ReservOrdered` | Rendelt, lefoglalt |
 | `ReservPhysical` | Ténylegesen fenntartott |
 
-Ha az adatforrás a Supply Chain Management, nem kell újra létrehoznia az alapértelmezett fizikai mérőszámokat. Külső adatforrásokhoz azonban az alábbi lépésekkel új fizikai mérőszámokat hozhat létre.
+Ha az adatforrás az Ellátásilánc-kezelés, nem kell újra létrehozni az alapértelmezett fizikai intézkedéseket. Külső adatforrásokhoz azonban az alábbi lépésekkel új fizikai mérőszámokat hozhat létre.
 
 1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
 1. Nyissa meg a **Konfiguráció** oldalt.
-1. Az **Adatforrás** lap **Fizikai mérések** szakaszában válassza a **Hozzáadás** lehetőséget, adja meg a forrásmérőszám nevét, majd mentse a módosításokat.
+1. Az Adatforrás **lapon** válassza ki azt az adatforrást, amelybe fizikai intézkedéseket szeretne felvenni (például az adatforrást `ecommerce`). Ezután a Fizikai mértékek **szakaszban** válassza a Hozzáadás lehetőséget, **majd** adja meg a mérték nevét (`Returned` például ha rögzíteni szeretné a visszaküldött mennyiségeket ebben az adatforrásban a készlet láthatósága részére). Mentse el a módosításokat.
 
 ### <a name="calculated-measures"></a>Számított mérőszámok
 
@@ -181,7 +186,7 @@ A Készletláthatóság funkcióval a fizikai készletmérések és az *egyéni 
 > [!IMPORTANT]
 > A számított mérték a fizikai mértékek egy összeállítása. Képlete csak ismétlődés nélküli fizikai intézkedéseket tartalmazhat, számított intézkedéseket nem.
 
-A konfiguráció lehetővé teszi, hogy meghatározzon egy sor módosítót, amelyeket összead vagy kivon, hogy megkapja a teljes aggregált kimeneti mennyiséget.
+A konfiguráció segítségével kiszámított mértékképleteket határozhat meg, amelyek a kiegészítés vagy kivonás módosítóit tartalmazzák a teljes összesített kimenő mennyiség bejezése érdekében.
 
 Egyéni számított mérőszám beállításához kövesse az alábbi lépéseket.
 
@@ -191,7 +196,7 @@ Egyéni számított mérőszám beállításához kövesse az alábbi lépéseke
 1. Állítsa be a következő mezőket az új számított mértékhez:
 
     - **Új számított mértéknév** – adja meg a számított mérték nevét.
-    - **Adatforrás** – válassza ki az új módosítóhoz társított adatforrást. A lekérdező rendszer egy adatforrás.
+    - **Adatforrás** – válassza ki azt az adatforrást, amelybe bele kell foglalni az új számított mértéket. A lekérdező rendszer egy adatforrás.
 
 1. Ha **módosítót** szeretne hozzáadni az új számított mértékhez, válassza a Hozzáadás lehetőséget.
 1. Állítsa be a következő mezőket az új módosítóhoz:
@@ -200,15 +205,21 @@ Egyéni számított mérőszám beállításához kövesse az alábbi lépéseke
     - **Adatforrás** – válassza ki azt az adatforrást, ahol megtalálható a módosító értéket szolgáltató mérték.
     - **Mérték** – válassza ki annak a mértékegységnek a nevét (a kiválasztott adatforrásból), amely a módosító értékét szolgáltatja.
 
-1. Ismételje meg az 5–6. lépést, amíg fel nem adott minden szükséges módosítót.
+1. Ismételje meg az 5–6. lépést, amíg nem adott hozzá minden szükséges módosítót, és nem fejeződött be a számított mérték képlete.
 1. Válassza a **Mentés** lehetőséget.
 
-Például a következő lehet a lekérdezés eredménye.
+Egy divattervező vállalat például három adatforráson keresztül működik:
+
+- `pos`– az üzlet csatornának felel meg.
+- `fno`– megfelel az ellátásilánc-kezelésnek.
+- `ecommerce`– a webes csatornának felel meg.
+
+Számított mértékek nélkül, ha a D0002 (Kabinet) termékre vonatkozó lekérdezést az 1. helyen, a 11. raktárban és a `ColorID``Red` dimenzióértékben, akkor a következő lekérdezési eredményt jeleníti meg, amely megjeleníti a készletmennyiségeket az egyes előre konfigurált fizikai mértékek alatt. Nem lesz azonban látható a teljes elérhető foglalási mennyiség az adatforrások között.
 
 ```json
 [
     {
-        "productId": "T-shirt",
+        "productId": "D0002",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
@@ -224,7 +235,7 @@ Például a következő lehet a lekérdezés eredménye.
                 "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
-            "externalchannel": {
+            "ecommerce": {
                 "received": 90.0,
                 "scheduled": 30.0,
                 "issued": 60.0,
@@ -239,22 +250,22 @@ Ezután konfigurál egy számított mérőszámot, amelynek neve `MyCustomAvaila
 
 | Felhasználó rendszer | Kiszámított mérőszám | Adatforrás | Fizikai mérőszám | Számítás típusa |
 |---|---|---|---|---|
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `received` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `scheduled` | `Addition` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `issued` | `Subtraction` |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `reserved` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `received` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `scheduled` | `Addition` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `issued` | `Subtraction` |
+| `CrossChannel` | `MyCustomAvailableforReservation` | `ecommerce` | `reserved` | `Subtraction` |
 
 Ha ezt a számítási képletet használja, az új lekérdezés eredménye tartalmazza a testreszabott mérést.
 
 ```json
 [
     {
-        "productId": "T-shirt",
+        "productId": "D0002",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
@@ -270,13 +281,13 @@ Ha ezt a számítási képletet használja, az új lekérdezés eredménye tarta
                 "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
-            "externalchannel": {
+            "ecommerce": {
                 "received": 90.0,
                 "scheduled": 30.0,
                 "issued": 60.0,
                 "reserved": 40.0
             },
-            "CustomChannel": {
+            "CrossChannel": {
                 "MyCustomAvailableforReservation": 220.0
             }
         }
@@ -304,7 +315,7 @@ A megoldás alapértelmezés szerint tartalmazza ezt a partíciókonfigurációt
 
 A legtöbbször a készletállomány-lekérdezés nem csak a legmagasabb „teljes” szinten lesz. Ehelyett érdemes lehet a készletdimenziók alapján összesített eredményeket is látni.
 
-A készlet láthatósága rugalmasságot biztosít, mert lehetővé teszi _indexek_ beállítását a lekérdezések teljesítményének javítása érdekében. Ezek az indexek egy dimenzión vagy dimenziók kombinációján alapulnak. Egy index egy *halmazszámból*, egy *dimenzióból* és egy *hierarchiából* áll, a következő táblázatban meghatározottak szerint.
+A készlet láthatósága rugalmasságot biztosít, mert lehetővé teszi *indexek* beállítását a lekérdezések teljesítményének javítása érdekében. Ezek az indexek egy dimenzión vagy dimenziók kombinációján alapulnak. Egy index egy *halmazszámból*, egy *dimenzióból* és egy *hierarchiából* áll, a következő táblázatban meghatározottak szerint.
 
 | Név | Leírás |
 |---|---|
@@ -334,15 +345,15 @@ Ez a szakasz egy példán keresztül mutatja be a hierarchia működését.
 
 A következő táblázat a példához rendelkezésre álló készletek listáját tartalmazza.
 
-| Tétel | ColorId | SizeId | StyleId | Mennyiség |
+| Cikk | ColorId | SizeId | StyleId | Mennyiség |
 |---|---|---|---|---|
-| Póló | Fekete | Kicsi | Széles | 1 |
-| Póló | Fekete | Kicsi | Szabályos | 2 |
-| Póló | Fekete | Nagy | Széles | 3 |
-| Póló | Fekete | Nagy | Szabályos | 4 |
-| Póló | Piros | Kicsi | Széles | 5 |
-| Póló | Piros | Kicsi | Szabályos | 6 |
-| Póló | Piros | Nagy | Szabályos | 7 |
+| D0002 | Fekete | Kicsi | Széles | 1 |
+| D0002 | Fekete | Kicsi | Szabályos | 2 |
+| D0002 | Fekete | Nagy | Széles | 3 |
+| D0002 | Fekete | Nagy | Szabályos | 4 |
+| D0002 | Piros | Kicsi | Széles | 5 |
+| D0002 | Piros | Kicsi | Szabályos | 6 |
+| D0002 | Piros | Nagy | Szabályos | 7 |
 
 A következő táblázat az indexhierarchia felépítését mutatja be.
 
@@ -356,29 +367,29 @@ Az index segítségével a következő módon kérdezheti le a készletet:
 
 - `()` - Csoportosítva minden szerint
 
-    - Póló, 28
+    - D0002, 28
 
 - `(ColorId)` - Csoportosítva `ColorId`
 
-    - Póló, Fekete, 10
-    - Póló, piros, 18
+    - D0002, Fekete, 10
+    - D0002, Piros, 18
 
 - `(ColorId, SizeId)` - A `ColorId` és a `SizeId` kombinációja alapján csoportosítva
 
-    - Póló, Fekete, kicsi, 3
-    - Póló, Fekete, Nagy, 7
-    - Póló, Piros, kicsi, 11
-    - Póló, Piros, Nagy, 7
+    - D0002, Fekete, Kis, 3
+    - D0002, Fekete, Nagy, 7
+    - D0002, Piros, Kicsi, 11
+    - D0002, piros, nagy, 7
 
 - `(ColorId, SizeId, StyleId)` - A `ColorId`, `SizeId`, és a `StyleId` kombinációja alapján csoportosítva
 
-    - Póló, Fekete, kicsi, széles, 1
-    - Póló, Fekete, kicsi, szabályos, 2
-    - Póló, Fekete, Nagy, széles, 3
-    - Póló, Fekete, Nagy, szabályos, 4
-    - Póló, Piros, kicsi, széles, 5
-    - Póló, Piros, kicsi, szabályos, 6
-    - Póló, piros, nagy, szabályos, 7
+    - D0002, Fekete, Kis, Széles, 1
+    - D0002, Fekete, Kis, Normál, 2
+    - D0002, Fekete, Nagy, Széles, 3
+    - D0002, Fekete, Nagy, Normál, 4
+    - D0002, piros, kicsi, széles, 5
+    - D0002, Piros, Kis, Normál, 6
+    - D0002, piros, nagy, normál, 7
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Foglalási konfiguráció (opcionális)
 
@@ -397,35 +408,35 @@ A megfeleltetés beállítása előtt meg kell határozni a fizikai mérőszámo
 
 A lágy foglalási leképezés definiálásához kövesse az alábbi lépéseket.
 
-1. Határozza meg azt a fizikai mértéket, amely a lágy foglalási mértékként szolgál (például `SoftReservOrdered`).
-1. A **Konfiguráció** lap **Számított intézkedés** lapján határozza meg a *Foglalásra rendelkezésre álló* (AFR) számított mérőszámot, amely tartalmazza a fizikai mérőszámhoz leképezni kívánt AFR-számítási képletet. Például beállíthatja a `AvailableToReserve` (foglalható) címet úgy, hogy az a korábban meghatározott `SoftReservOrdered` fizikai mérőszámhoz legyen hozzárendelve. Így megtudhatja, hogy a `SoftReservOrdered` készletállapotú mennyiségek közül melyek lesznek foglalhatók. A következő táblázat az AFR számítási képletét mutatja.
+1. Határozza meg azt a fizikai mértéket, amely a lágy foglalási mértékként szolgál (például `SoftReservPhysical`).
+1. A **Konfiguráció** lap **Számított intézkedés** lapján határozza meg a *Foglalásra rendelkezésre álló* (AFR) számított mérőszámot, amely tartalmazza a fizikai mérőszámhoz leképezni kívánt AFR-számítási képletet. Például beállíthatja a `AvailableToReserve` (foglalható) címet úgy, hogy az a korábban meghatározott `SoftReservPhysical` fizikai mérőszámhoz legyen hozzárendelve. Így megtudhatja, hogy a `SoftReservPhysical` készletállapotú mennyiségek közül melyek lesznek foglalhatók. A következő táblázat az AFR számítási képletét mutatja.
 
     | Számítás típusa | Adatforrás | Fizikai mérőszám |
     |---|---|---|
     | Hozzáadás | `fno` | `AvailPhysical` |
     | Hozzáadás | `pos` | `Inbound` |
     | Kivonás | `pos` | `Outbound` |
-    | Kivonás | `iv` | `SoftReservOrdered` |
+    | Kivonás | `iv` | `SoftReservPhysical` |
 
-    Javasoljuk, hogy úgy állítsa be a számított mérőszámot, hogy az tartalmazza a foglalási mérőszám alapjául szolgáló fizikai mérőszámot. Ilyen módon a kiszámított mérési mennyiséget befolyásolja a foglalási mérés mennyisége. Ebben a példában tehát az `iv` adatforrás számított `AvailableToReserve` mérőszámának összetevőként tartalmaznia kell a `SoftReservOrdered` fizikai mérőszámot az `iv` adatforrásból.
+    Javasoljuk, hogy úgy állítsa be a számított mérőszámot, hogy az tartalmazza a foglalási mérőszám alapjául szolgáló fizikai mérőszámot. Ilyen módon a kiszámított mérési mennyiséget befolyásolja a foglalási mérés mennyisége. Ebben a példában tehát az `iv` adatforrás számított `AvailableToReserve` mérőszámának összetevőként tartalmaznia kell a `SoftReservPhysical` fizikai mérőszámot az `iv` adatforrásból.
 
 1. Nyissa meg a **Konfiguráció** oldalt.
-1. A **Lágy foglalási leképezés** lapon állítsa be a fizikai mérőszám és a számított mérőszám közötti leképezést. Az előző példában a következő beállításokat használhatja a `AvailableToReserve` leképezéséhez a korábban meghatározott `SoftReservOrdered` fizikai mérőszámhoz.
+1. A **Lágy foglalási leképezés** lapon állítsa be a fizikai mérőszám és a számított mérőszám közötti leképezést. Az előző példában a következő beállításokat használhatja a `AvailableToReserve` leképezéséhez a korábban meghatározott `SoftReservPhysical` fizikai mérőszámhoz.
 
     | Fizikai mérőszám adatforrás | Fizikai mérőszám | Foglalási adatforráshoz rendelkezésre álló | Elérhető foglalásra számított mérőszám |
     |---|---|---|---|
-    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+    | `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
 
     > [!NOTE]
     > Ha a **Lágy foglalási leképezés** lapot nem tudja szerkeszteni, előfordulhat, hogy be kell kapcsolnia az *OnHandReservation* funkciót a **Funkciókezelés** lapon.
 
-Most, amikor a `SoftReservOrdered` rendszerben foglalást végez, a Készletláthatóság automatikusan megtalálja a `AvailableToReserve`-et és a hozzá tartozó számítási képletet a foglalás érvényesítéséhez.
+Most, amikor a `SoftReservPhysical` rendszerben foglalást végez, a Készletláthatóság automatikusan megtalálja a `AvailableToReserve`-et és a hozzá tartozó számítási képletet a foglalás érvényesítéséhez.
 
 Például a Készletláthatóságban a következő készletekkel rendelkezik.
 
 ```json
 {
-    "productId": "T-shirt",
+    "productId": "D0002",
     "dimensions": {
         "SiteId": "1",
         "LocationId": "11",
@@ -433,7 +444,7 @@ Például a Készletláthatóságban a következő készletekkel rendelkezik.
     },
     "quantities": {
         "iv": {
-            "SoftReservOrdered": 90
+            "SoftReservPhysical": 90
         },
         "fno": {
             "availphysical": 70.0,
@@ -448,14 +459,14 @@ Például a Készletláthatóságban a következő készletekkel rendelkezik.
 
 Ebben az esetben a következő számítás alkalmazandó:
 
-`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservOrdered`  
+`AvailableToReserve` = `fno.availphysical` + `pos.inbound`– `pos.outbound``iv.SoftReservPhysical`  
 = 70 + 50 – 20 – 90  
 = 10
 
-Ezért, ha a `iv.SoftReservOrdered` oldalon próbál foglalni, és a mennyiség kisebb vagy egyenlő, mint `AvailableToReserve` (10), akkor a foglalást megteheti.
+Ezért ha foglalásokat próbál meg felhozni `iv.SoftReservPhysical`, `AvailableToReserve` és a mennyiség kisebb vagy egyenlő, mint (10), az soft reservation kérés sikeres lesz.
 
 > [!NOTE]
-> A foglalási API hívása esetén a foglalások érvényességének ellenőrzése a logikai `ifCheckAvailForReserv` paraméter megadásával szabályozható a kérelemtörzsben. A `True` érték azt jelenti, hogy ellenőrzés szükséges, míg a `False` érték azt, hogy az ellenőrzés nem kötelező. Az alapértelmezett érték a `True`.
+> A foglalási API hívása esetén a foglalások érvényességének ellenőrzése a logikai `ifCheckAvailForReserv` paraméter megadásával szabályozható a kérelemtörzsben. `True` Az érték azt jelenti, hogy érvényesítés szükséges, `False` ugyanakkor az ellenőrzés nem szükséges (bár lehet, hogy negatív mennyiséggel végződik), a rendszer így is lehetővé teszi a `AvailableToReserve` foglalást. Az alapértelmezett érték a `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Lágy foglalási hierarchia
 
@@ -488,18 +499,21 @@ A készlet láthatóságának beállításával a jövőbeli aktuális készlet 
 
 ## <a name="complete-and-update-the-configuration"></a>A konfiguráció befejezése és frissítése
 
-Miután befejezte a konfigurációt, minden módosítást rögzítenie kell a Készletláthatóságban. A módosítások rögzítéséhez válassza a Power Apps oldalon a **Konfiguráció** oldal jobb felső sarkában a **Konfiguráció frissítése** lehetőséget.
+Miután befejezte a konfigurációt, minden módosítást rögzítenie kell a Készletláthatóságban. Hajtsa végre a következő lépéseket a változtatások véglegesítéshez.
 
-Amikor először választja a **Konfiguráció frissítése** lehetőséget, a rendszer bekéri a hitelesítő adatokat.
+1. A Power Apps Konfiguráció lap Jobb felső **sarkában** válassza **a** Konfiguráció frissítése lehetőséget. 
+1. A rendszer bejelentkezési hitelesítő adatokat kér. Adja meg a következő értékeket:
 
-- **Ügyfélazonosító** - Az Az Azure-alkalmazás azonosítója, amelyet a Készletláthatósághoz létrehozott.
-- **Bérlőazonosító** - Az Ön Azure bérlőjének azonosítója.
-- **Ügyféltitok** - Az Azure-alkalmazás titka, amelyet a Készletláthatósághoz létrehozott.
+    - **Ügyfélazonosító** - Az Az Azure-alkalmazás azonosítója, amelyet a Készletláthatósághoz létrehozott.
+    - **Bérlőazonosító** - Az Ön Azure bérlőjének azonosítója.
+    - **Ügyféltitok** - Az Azure-alkalmazás titka, amelyet a Készletláthatósághoz létrehozott.
 
-A bejelentkezés után a konfiguráció frissül a Készletláthatóság szolgáltatásban.
+    Ezekről a hitelesítő adatokról és azok megkeres erről a [telepítésről és a készlet láthatóságának beállításával kapcsolatban tartalmaz további tájékoztatást](inventory-visibility-setup.md).
 
-> [!NOTE]
-> A Készletláthatóság szolgáltatás konfigurációjának frissítése előtt mindenképpen ellenőrizze az adatforrás nevét, a fizikai mérőszámokat és a dimenziók hozzárendelését. Ezeket a beállításokat nem tudja módosítani, miután kiválasztotta a **Konfiguráció frissítése** lehetőséget.
+    > [!IMPORTANT]
+    > A konfiguráció frissítése előtt ellenőrizze az adatforrás nevét, fizikai méreteit és dimenzióleképezését. A frissítés után ezek a beállítások nem módosíthatók.
+
+1. Bejelentkezés után válassza újra a Konfiguráció **frissítése** lehetőséget. A rendszer alkalmazza a beállításokat, és mutatja, mi módosult.
 
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Alapértelmezett konfigurációs minta
 
@@ -694,13 +708,19 @@ A következő táblázatban felsorolt dimenzió-leképezések a `fno` adatforrá
 
 A következő fizikai mérőszámok vannak beállítva a `fno` adatforráshoz:
 
-- `Ordered`
 - `Arrived`
-- `AvailPhysical`
 - `PhysicalInvent`
 - `ReservPhysical`
+- `onorder`
+- `notspecified`
+- `availordered`
+- `availphysical`
+- `picked`
+- `postedqty`
+- `quotationreceipt`
+- `received`
+- `ordered`
 - `ReservOrdered`
-- `OnOrder`
 
 #### <a name="configuration-of-the-pos-data-source"></a>A "POS" adatforrás konfigurálása
 
@@ -766,7 +786,7 @@ A következő táblázat az alapértelmezett foglalási leképezést mutatja.
 
 | Fizikai mérőszám adatforrás | Fizikai mérőszám | Foglalási adatforráshoz rendelkezésre álló | Elérhető foglalásra számított mérőszám |
 |---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+| `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
 
 #### <a name="reservation-hierarchy"></a>Foglalási hierarchia
 
@@ -778,35 +798,5 @@ A következő táblázat az alapértelmezett foglalási hierarchiát mutatja.
 | `LocationId` | 2 |
 | `ColorId` | 3 |
 | `SizeId` | 4 |
-| `StyleId` | 5 |
-| `BatchId` | 6 |
-| `SerialId` | 7 |
-| `StatusId` | 8 |
-| `LicensePlateId` | 9 |
-| `WMSLocationId` | 10 |
-| `WMSPalletId` | 11 |
-| `ConfigId` | 12 |
-| `VersionId` | 13 |
-| `CustomDimension1` | 14 |
-| `CustomDimension2` | 15 |
-| `CustomDimension3` | 16 |
-| `CustomDimension4` | 17 |
-| `CustomDimension5` | 18 |
-| `CustomDimension6` | 19 |
-| `CustomDimension7` | 20 |
-| `CustomDimension8` | 21 |
-| `CustomDimension9` | 22 |
-| `CustomDimension10` | 23 |
-| `CustomDimension11` | 24 |
-| `CustomDimension12` | 25 |
-| `ExtendedDimension1` | 26 |
-| `ExtendedDimension2` | 27 |
-| `ExtendedDimension3` | 28 |
-| `ExtendedDimension4` | 29 |
-| `ExtendedDimension5` | 30 |
-| `ExtendedDimension6` | 31 |
-| `ExtendedDimension7` | 32 |
-| `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 502a026f2070e92a017733ce2c37bf357eaa10ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9022051ce1c99da7ff62e30583a20656c77d89f9
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908154"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778543"
 ---
 # <a name="process-collection-letters-example"></a>Fizetési felszólítások feldolgozása (példa)
 
@@ -32,11 +32,11 @@ Amikor befejezte, kövesse az alábbi lépéseket.
 
 1. Lépjen a **Követelések és beszedések \> Fizetési felszólítás \> Fizetésifelszólítás-sorozat beállítása** lehetőségre, és állítsa be a fizetésifelszólítás-sorozatot a vevői feladási profilhoz rendelt alábbi táblának megfelelően.
 
-|     Fizetési felszólítás kódja      |     Leírás                           |     Pénznem      |     Fő számla        |     Illeték pénznemben     |     Minimális késedelmes        |     Nap zárolás      |
-|---------------------------------  |---------------------------------------    |-----------------  |-----------------------    |-------------------------- |-----------------------    |---------------------  |
-|     1. fizetési felszólítás         |     Második értesítés díjjal        |     USD           |                           |     0,00                  |     0,00                  |     2                 |
-|     2. fizetési felszólítás         |     Második értesítés díjjal        |     USC           |     403150                |     20.00                 |     10,00                 |     3                 |
-|     Beszedés                    |     Utolsó értesítés díjjal         |     USD           |     403150                |     50.00                 |     100.00                |     15                |
+|   Fizetési felszólítás kódja      |     Leírás       |     Pénznem      |     Fő számla        |     Illeték pénznemben       |   Minimális késedelmes  |   Nap zárolás        |
+|-----------------------------  |--------------------   |-----------------  |-----------------------    |--------------------   |-----------------------    |------------------ |
+|  1. fizetési felszólítás          |     Első értesítés |     USD          |                   |     0,00              |     0,00                  |     2                 |
+|  2. fizetési felszólítás          |     Második értesítés díjjal      |     USD      |     403150         |     20.00         |     10,00     |     3                 |
+|  Beszedés                   |     Végleges értesítés díjjal       |     USD           |     403150    |     50.00         |     100.00                |     15            |
 
 A következő ábra a tábla azon adatait mutatja be, amelyek a **Fizetési felszólítás** oldalon jelennek meg. 
 

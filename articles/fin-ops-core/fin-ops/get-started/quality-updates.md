@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ff2232c9e1010ad1e2524df0c7ed4d771b489ed1
-ms.sourcegitcommit: 05069f7e5eb7a9335c0a62031d7663f88e4821df
-ms.translationtype: MT
+ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9752298"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775512"
 ---
 # <a name="proactive-quality-updates"></a>Proaktív minőségi frissítések
 
@@ -112,7 +112,7 @@ További tájékoztatás az egyes régiók sötét óráiról: [Mi a tervezett k
 | 1. állomás | Kanada központi, Kanada-Kelet, Franciaország központi, India Központi, Norvégia-Kelet, Svájc - Nyugat | Október 14. – 2022. október 17., november 2. – 2022. november 5. | 2022. november 13-16. között |
 | 2. állomás | Franciaország, Dél-, India, Nyugat-Norvégia, Svájc, Észak-Afrika, Észak-Afrika, Ausztrália-Kelet, Egyesült Királyság, Észak-Egyesült Arab Emírségek, Japán-kelet, Ausztrália Dél-Kelet, Dél-Kelet-Ázsia | Október 15. – 2022. október 18. és november 2. között 2022. november 5. | 2022. november 13-16. között |
 | 3. állomás | Kelet-Ázsia, Egyesült Államok, Nyugat-Japán, Brazília Dél-, Nyugat-Európa, Kelet-Egyesült Államok, Egyesült Arab Emírségek Központi | Október 16., 2022. október 19. és november 2. között 2022. november 5. | 2022. november 13-16. között |
-| 4. állomás | Észak-Európa, Közép-Usa, Nyugat-Usa | Október 17., 2022. október 20. és november 2. között 2022. november 5. | 2022. november 13-16. között |
+| 4. állomás | Észak-Európa, Közép-Usa, Nyugat-Usa | Október 17., 2022. október 20. és november 2. között 2022. november 5. | 2022. november 15-től 2022. november 18-ig |
 | 5. állomás | DoD, Kormányzati közösség felhő, Kína | Nem ütemezett | Nem ütemezett |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Proaktív minőségfrissítés kiadása: 10:0,30

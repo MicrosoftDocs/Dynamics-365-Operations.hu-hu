@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14564
 ms.assetid: d9984cef-ddcf-46bd-816d-c01b8cc5cf48
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a5ecf69c83805834c01c03d0af9b7b8c5310920
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 44f64b9b9cd4fa65d17ba30fb87a688411becd5a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725093"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780228"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik
 
@@ -35,20 +35,20 @@ A gyár lehetővé teszi a felhasználóknak a készpénzfizetési engedmények 
 
 | Bizonylat    | Tranzakció típusa | Dátum      | Számla  | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg  | Pénznem |
 |------------|------------------|-----------|----------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10050  | Számla          | 2015/6/28 | 10050    | 1000,00                             |                                       | 1000,00 | dollár      |
-| CCRN-10050 | Jóváírás      | 2015/6/28 | CR-10050 |                                      | 100,00                                | -100,00  | dollár      |
+| FTI-10050  | Számla          | 2020/28/6 | 10050    | 1,000.00                             |                                       | 1,000.00 | USD      |
+| CCRN-10050 | Jóváírás      | 2020/28/6 | CR-10050 |                                      | 100.00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Egy jóváírást a számla kiegyenlítése
 A **Vevői tranzakciók** oldalon April megnyitja a **Tranzakciók kiegyenlítése** lapot. Arnie a **Tranzakciók kiegyenlítése** lapon megjelöli a kiegyenlítéshez tartozó jóváírást és számlát is. A kiegyenlítési folyamat részeként Arnie megjeleníti a készpénzfizetési engedmény dátumát és összegét. Arnie jelöli meg két dokumentumot, és majd kattint **Feladása** tranzakcióinak kiegyenlítéséhez. Nincs -1.00 a jóváíráson engedményt, mert a gyár lehetővé teszi, hogy az engedmények a jóváírásokra a számlaadatokat.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat    | Fiók | Dátum      | Fiz. határidő  | Számla  | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
-| Kijelölve | Normál            | FTI-10050  | 4035    | 2015/6/28 | 2015/7/28 | 10050    | 1000,00                       | dollár      | 990,00           |
-| Kijelölve | Normál            | CCRN-10050 | 4035    | 2015/6/28 | 2015/7/28 | CR-10050 | -100,00                        | dollár      | -99.00           |
+| Kiválasztva | Normál            | FTI-10050  | 4035    | 2020/28/6 | 2020/28/7 | 10050    | 1,000.00                       | USD      | 990.00           |
+| Kiválasztva | Normál            | CCRN-10050 | 4035    | 2020/28/6 | 2020/28/7 | CR-10050 | -100,00                        | USD      | -99.00           |
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-- **Készpénzfizetési engedmény dátuma**: 2015. 12. 7. 
+- **Készpénzfizetési engedmény dátuma**: 2020. 12. 7. 
 - **Készpénzfizetési engedmény összege**: -1,00     
 - **Készpénzfizetési engedmény használata**: normális    
 - **Alkalmazott készpénzfizetési engedmény**: 0,00      

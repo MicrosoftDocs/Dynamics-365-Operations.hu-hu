@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878512"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764179"
 ---
 # <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
@@ -68,7 +68,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
         > [!NOTE]
         > Az Egyszerűsített feloldás azért áll rendelkezésre, hogy a kiskereskedőknek lehetőségük legyen a DOM funkció kipróbálására anélkül, hogy a speciális licencet telepíteniük kellene. A szervezeteknek nem javasolt az Egyszerűsített feloldás használata termelési környezetekben.
         >
-        > A Termelési feloldás javítja a teljesítményt (például az egy futás során kezelhető rendelések és rendelési sorok számát) és az eredmények konvergenciáját (bizonyos esetekben nem biztos, hogy a kötegelt rendeléssel lehet a legjobb eredményt elérni). Egyes szabályok, például a **Részleges rendelés** és a **Helyszínek maximális száma** szabály megkövetelik a Termelési feloldás használatát.
+        > A Termelési feloldás javítja a teljesítményt (például az egy futás során kezelhető rendelések és rendelési sorok számát) és az eredmények konvergenciáját (bizonyos esetekben nem biztos, hogy a kötegelt rendeléssel lehet a legjobb eredményt elérni). A **Részleges rendelések** szabályához a Termelési feloldás szükséges.
 
 6. Lépjen vissza a **Kiskereskedelem és kereskedelem \> Felosztott rendeléskezelés \> Beállítás \> DOM-paraméterek** lehetőségre.
 7. A **Számsorozatok** lapon rendelje hozzá a szükséges számsorozatokat a különböző DOM-entitásokhoz.

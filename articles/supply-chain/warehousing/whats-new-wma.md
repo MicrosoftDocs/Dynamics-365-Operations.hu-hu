@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: da7e8a47496092a00ecc05c17933cc0e0cdb0fd0
-ms.sourcegitcommit: 27ce4fc706100b626b81c3a1023238acd872e76c
+ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9702195"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764239"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás újdonságai vagy változásai
 
 [!include [banner](../includes/banner.md)]
 
 Ez a cikk a Microsoft Raktárkezelés mobilalkalmazás minden egyes kiadott verziójához tartalmaz új funkciókat, javításokat, javításokat és ismert problémákat Dynamics 365 Supply Chain Management.
+
+## <a name="version-20370"></a>2.0.37.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+- Hozzáadta a rendszer a felhasználói beállítást, amely lehetővé teszi a dolgozók számára, hogy a termék fényképeit megjelenítsék (kártyákban és lépésfejlécben, csak a lépésfejlécben vagy egyáltalán nem). 
+- A részleteket tartalmazó kártya képernyő-elrendezése a lépés és a bemeneti mennyiség nerének méretének csökkentésével lett javítva, így több hely marad más tartalom számára. 
+- A felhasználói felület továbbfejlesztett állapota a Következő eszközön való futtatáskor. 
+- Továbbfejlesztett teljes képernyős mód (csak hardveres billentyűzettel használható eszközökre vonatkozik). 
+- Jobb eredmények, amikor a részleteket tartalmazó kártyák és az egyéni lapok prioritás vagy részprioritás (DataPriority vagy DisplaySubPriority) szerint vannak rendezve. 
+- Több nyelv támogatása hozzáadva. 
+- Jobb stabilság. 
+- Több kép és ikon továbbfejlesztve. 
 
 ## <a name="version-20350"></a>2.0.35.0-s verzió
 

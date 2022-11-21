@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c83ac47bc5e7f7ed223c772591cf8a7c1e63a40
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b3cc07a1f0ba444250eddcf892681e2ca63e9c1a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715497"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780234"
 ---
 # <a name="correct-a-free-text-invoice"></a>Szabadszöveges számla helyesbítése
 
@@ -28,7 +28,11 @@ ms.locfileid: "9715497"
 
 Ez a cikk a már feladott szabadszöveges számlák kijavításának és azok javított számlaként való újbóli kiadásának módszereit mutatja be.
 
-Már elkönyvelt szabadszöveges számla javításához nyissa meg a könyvelt szabadszöveges számlát. A **Számla** lapon válassza a **Mégse** elemet, majd a **Helyes számla** lehetőséget. Válassza ki az okkódot, és adjon hozzá megjegyzéseket és válassza ki az új javított számla dátumát. Módosíthatja és feladhatja a javított számlát. 
+A már feladott szabadszöveges számlák kijavítása: 
+1. A feladott szabadszöveges számla megnyitása. 
+2. A **Számla** lapon válassza a **Mégse** elemet, majd a **Helyes számla** lehetőséget. 
+3. Válassza ki az okkódot, és adjon hozzá megjegyzéseket és válassza ki az új javított számla dátumát.
+4. Módosíthatja és feladhatja a javított számlát. 
 
 A javított számla feladásakor egy érvénytelenítő számla jön létrea hitel összeghez, amit kiegyenlíti az eredeti számla összeget. Ezért az eredeti és az érvénytelenítő számla kombinált egyenlege 0 (nulla). Az érvénytelenítő számlát az eredeti számlával szemben számolnak el. 
 

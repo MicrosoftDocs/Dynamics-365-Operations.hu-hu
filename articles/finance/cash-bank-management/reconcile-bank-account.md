@@ -2,24 +2,24 @@
 title: Bankszámla egyeztetése
 description: Ez a témakör azt ismerteti, hogyan lehet egyeztetni a bankszámlákat.
 author: angelad116
-ms.date: 07/01/2019
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d36ff753d368bbbe6944aa5ae5010541ee92156d
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151251"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779527"
 ---
 # <a name="reconcile-a-bank-account"></a>Bankszámla egyeztetése
 
@@ -29,27 +29,27 @@ Amikor banki kivonatot kap, akkor javasolt, hogy rendszeres időközönként egy
 
 Nem lehetséges a banki kivonat és a bankszámla egyeztetése, ha a kivonaton szereplő bármely csekk vagy letétijegy-kifizetés aktuális állapota **Visszavonásra vár**. Miután egy ellenőr felad vagy elutasít egy csekksztornírozást vagy egy letétijegy-kifizetés visszavonását, az állapot már nem **Visszavonásra vár**, így már egyeztetheti a bankszámlát.
 
-1.  Menjen a **Készpénz és bankkezelés** \> **Bankszámlák** \> **Bankszámlák** menüpontra. Válassza ki a bankszámlát, amelyet a banki kivonattal egyeztetni szeretné, és válassza az **Egyeztetés** > **Számlaegyeztetés** lehetőséget.
+1. Menjen a **Készpénz és bankkezelés** \> **Bankszámlák** \> **Bankszámlák** menüpontra. Válassza ki a bankszámlát, amelyet a banki kivonattal egyeztetni szeretné, és válassza az **Egyeztetés** > **Számlaegyeztetés** lehetőséget.
 
-2.  Adja meg az adatokat a **Bankszámlakivonat dátuma** és a **banki kivonat** mezőkben. A **Záróegyenleg** mezőben megadhatja a bankszámla egyenlegét, ahogy az megjelenik a banki kivonaton.
+2. Adja meg az adatokat a **Bankszámlakivonat dátuma** és a **banki kivonat** mezőkben. A **Záróegyenleg** mezőben megadhatja a bankszámla egyenlegét, ahogy az megjelenik a banki kivonaton.
 
-3.  A **Tranzakciók** lehetőség kiválasztásával megnyithatja a **Számlaegyeztetés** oldalon.
+3. A **Tranzakciók** lehetőség kiválasztásával megnyithatja a **Számlaegyeztetés** oldalon.
 
-4.  A banki kivonaton szereplő minden tranzakciónál jelölje be a Törölve jelölőnégyzetet, **ha** a Dynamics 365 Pénzügyben szereplő összeg megfelel a banki kivonaton szereplő összegnek. Ezenkívül a **Banki tranzakció típusa** mező értékét is megadhatja vagy módosíthatja. Ez a mezőérték a banki tranzakciók statisztikája és egyes jelentések szempontjából fontos.
+4. A banki kivonaton szereplő minden tranzakciónál jelölje be a Törölve jelölőnégyzetet, **ha** a Dynamics 365 Pénzügyben szereplő összeg megfelel a banki kivonaton szereplő összegnek. Ezenkívül a **Banki tranzakció típusa** mező értékét is megadhatja vagy módosíthatja. Ez a mezőérték a banki tranzakciók statisztikája és egyes jelentések szempontjából fontos.
     
 
-    > [!NOTE]
-    > <P>Ne jelölje be a <STRONG>Törölve</STRONG> jelölőnégyzetet azoknál a tranzakcióknál, amelyek nem szerepelnek a banki kimutatáson. Ezek a tranzakciók továbbra is megjelennek ezen a képernyőn, amíg egy későbbi banki kivonattal meg nem történik az egyeztetésük.</P>
-    > <P>A <STRONG>Törölve</STRONG> jelölőnégyzet nem érhető el, ha a tranzakció állapota <STRONG>Visszavonásra vár</STRONG>. A tranzakciók akkor rendelkezhetnek ilyen állapottal, ha a Finance modul beállításai megkövetelik, hogy a sztornírozásokat vagy visszavonásokat elküldjék ellenőrzésre a könyvelés előtt. Miután egy ellenőr könyveli vagy elutasítja a sztornírozást vagy a visszavonást, az állapot már nem <STRONG>Visszavonásra vár</STRONG>, így már egyeztetheti a bankszámlát a banki kivonattal.</P>
+>[!NOTE]
+>Ne jelölje be a **Törölve** jelölőnégyzetet azoknál a tranzakcióknál, amelyek nem szerepelnek a banki kimutatáson. Ezek a tranzakciók továbbra is megjelennek ezen a képernyőn, amíg egy későbbi banki kivonattal meg nem történik az egyeztetésük.
+>A **Törölve** jelölőnégyzet nem érhető el, ha a tranzakció állapota **Visszavonásra vár**. A tranzakciók akkor rendelkezhetnek ilyen állapottal, ha a Finance modul beállításai megkövetelik, hogy a sztornírozásokat vagy visszavonásokat elküldjék ellenőrzésre a könyvelés előtt. Miután egy ellenőr könyveli vagy elutasítja a sztornírozást vagy a visszavonást, az állapot már nem **Visszavonásra vár**, így már egyeztetheti a bankszámlát a banki kivonattal.
 
-    
-    Ha szeretné a banki kivonaton megjelenő csekkek egy adott intervallumához bejelölni a **Törölve** jelölőnégyzetet, akkor válassza a **Csekk intervallumának kijelölése** lehetőséget, majd adja meg az intervallumot.
+
+Ha szeretné a banki kivonaton megjelenő csekkek egy adott intervallumához bejelölni a **Törölve** jelölőnégyzetet, akkor válassza a **Csekk intervallumának kijelölése** lehetőséget, majd adja meg az intervallumot.
 
 5.  Ha a bankszámla-tranzakció összege nem felel meg a banki kivonaton szereplő tranzakció összegének, adja meg a helyesbítő összeget a **Helyesbítő összeg** mezőben.
     
 
-    > [!NOTE]
-    > <P>Ha a javítandó tranzakció pénzügyi időszaka már le van zárva, a <STRONG>Helyesbítő öszeg</STRONG> mező nem használható. Ehelyett hozzon létre egy sort, amelynek tranzakciós dátuma a helyesbítéshez használt nyitott pénzügyi időszakban van. Ebben az esetben az eredeti tranzakciónál használt pénzügyi dimenziókat és az fő ellenszámlát is fel kell venni.</P>
+> [!NOTE]
+> Ha a javítandó tranzakció pénzügyi időszaka már le van zárva, a **Helyesbítő öszeg** mező nem használható. Ehelyett hozzon létre egy sort, amelynek tranzakciós dátuma a helyesbítéshez használt nyitott pénzügyi időszakban van. Ebben az esetben az eredeti tranzakciónál használt pénzügyi dimenziókat és az fő ellenszámlát is fel kell venni.
 
 
 

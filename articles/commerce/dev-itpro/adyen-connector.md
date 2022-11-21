@@ -2,7 +2,7 @@
 title: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz - áttekintés
 description: Ez a cikk áttekintést nyújt a Microsoft Dynamics 365 Payment Connector for Adyen alkalmazásról.
 author: rassadi
-ms.date: 10/27/2022
+ms.date: 11/16/2022
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -12,13 +12,12 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 931fc69cda8daa2e06b6f1155fbf0369fd2bca55
-ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
+ms.openlocfilehash: 6c819e8cf9f5dcb7895ac2633decf0a925c08f2d
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728294"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9784992"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-overview"></a>Dynamics 365 Payment Connector az Adyen szolgáltatáshoz - áttekintés
 
@@ -96,6 +95,11 @@ Az alábbi lista leírja, hogy milyen minimális és maximális Adyen verziók t
 
 ### <a name="supported-payment-terminals"></a>Támogatott fizetési terminálok
 A Dynamics 365 Payment Connector for Adyen az eszköz-adyen [fizetési terminál API-t használja ki](https://www.adyen.com/blog/introducing-the-terminal-api). Az alkalmazásprogramozási felület (API) által támogatott összes fizetési terminált támogatja. A támogatott fizetési terminálok teljes listája az [Adyen POS terminálok oldalon található](https://www.adyen.com/pos-payments/terminals).
+
+Az alábbi videofelvétel az Adyen SEV1 fizetési terminál képességeiről Android ad le.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bKeM]
 
 ### <a name="supported-payment-instruments"></a>Támogatott fizetési eszközök
 

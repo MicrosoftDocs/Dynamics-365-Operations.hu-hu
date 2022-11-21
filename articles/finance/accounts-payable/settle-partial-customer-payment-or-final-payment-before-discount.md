@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
-ms.openlocfilehash: ee11647f6f700042e11133181de919e13f16c018
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: a8da366b1e770ea649603ae85d4acc5e377ed9fb
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715964"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780229"
 ---
 # <a name="settle-partial-and-final-payments-in-full-before-the-discount-date"></a>Részleges és teljes végső kifizetések kiegyenlítése az engedmény dátuma előtt
 
@@ -35,19 +35,19 @@ Június 25-én Arnie egy 1.000,00 értékű számlát rögzít és ad fel 4028-e
 
 | Bizonylat   | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg  | Pénznem |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10010 | Számla          | 2015-06-25 | 10010   | 1000,00                             |                                       | 1000,00 | dollár      |
+| FTI-10010 | Számla          | 2020/25/6 | 10010   | 1,000.00                             |                                       | 1,000.00 | USD      |
 
 A **Vevő** vagy a **Vevői tranzakciók** lapon Arnie megnyithatja a **Tranzakciók kiegyenlítése** lapot, hogy megtekintse a számlához elérhető készpénzfizetési engedmények dátumait és összegeit. A határidő július 25, és egy 10,00 értékű készpénzfizetési engedmény érhető el, ha a számla kifizetése július 9-ig megtörténik.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Kijelölve | Normál            | FTI-10010 | 4028    | 2015-06-25 | 2015-07-25 | 10010   | 1000,00                       | dollár      | 990,00           |
+| Kiválasztva | Normál            | FTI-10010 | 4028    | 2020/25/6 | 2020/25/7 | 10010   | 1,000.00                       | USD      | 990.00           |
 
 Az engedményadatok **Tranzakciók kiegyenlítése** lap alján jelennek meg a kijelölt számlához.
 
 |    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
-| Készpénzfizetési engedmény dátuma           | 2015-07-09 |
+| Készpénzfizetési engedmény dátuma           | 2020/09/7 |
 | Készpénzfizetési engedmény összege         | 10,00     |
 | Készpénzfizetési engedmény használata            | Normál    |
 | Alkalmazott készpénzfizetési engedmény          | 0,00      |
@@ -57,8 +57,8 @@ Arnie rákattint a **Készpénzfizetési engedmény** lapra, hogy megnézze az e
 
 | Készpénzfizetési engedmény dátuma | Készpénzfizetési engedmény összege | Összeg a tranzakció pénznemében. |
 |--------------------|----------------------|--------------------------------|
-| 2015-09-07           | 10,00                | 990,00                         |
-| 2015-07-25          | 0,00                 | 1000,00                       |
+| 2020/9/7           | 10,00                | 990.00                         |
+| 2020/25/7          | 0,00                 | 1,000.00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Részleges kifizetés a Vevői kifizetések rögzítése lapon
 A 4028-as vevő elküld egy 500,00 összegű kifizetés július 1-jén. A kifizetés rögzítéséhez Arnie nem kattint a **Sorok** elemre. Ehelyett Arnie a kifizetés rögzítését egy új kifizetési napló készítésével, majd a **Vevői kifizetések rögzítése** lap megnyitásával teszi meg. Arnie beviszi a kifizetési adatokat és megjelöli a rögzített számlát. Amikor Arnie az összeghez **500,00** értéket ad meg, akkor megadja még az **500,00** értéket a **Kifizetendő összeg** mezőben a rácsban. Mivel a Gyár engedélyezi a készpénzfizetési engedményt a részleges kifizetéseket, Arnie látja, hogy 5,05 értékű részleges készpénzfizetési engedmény lesz még levonva. A számítás ehhez az engedményhez 500,00 ÷ 0,99 × 0,01 = 5,05. (Ebben a számításban az 500,00 0,99-el van osztva, mert 1% az engedmény. Ezért a vevő a számla 99 százalékát fizeti ki. Az eredmény ezután megszorzásra kerül az engedmény százalékával, ami 1 százalék, vagy 0,01. Ha a vevő a teljes 10,00 értékű engedményt igénybe veszi, akkor a kiegyenlítendő összeg 990,00 lesz.) Az engedményadatok a **Vevői kifizetések rögzítése** lapon található rács alján jelennek meg.
@@ -72,13 +72,13 @@ Ahelyett, hogy megnyitná a **Vevői kifizetések rögzítése** lapot a kifizet
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Kijelölve | Normál            | FTI-10010 | 4028    | 2015-06-25 | 2015-07-25 | 10010   | 1000,00                       | dollár      | 500,00           |
+| Kiválasztva | Normál            | FTI-10010 | 4028    | 2020/25/6 | 2020/25/7 | 10010   | 1,000.00                       | USD      | 500.00           |
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
 |        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
-| Készpénzfizetési engedmény dátuma           | 2015-07-09 |
+| Készpénzfizetési engedmény dátuma           | 2020/09/7 |
 | Készpénzfizetési engedmény összege         | 10,00     |
 | Készpénzfizetési engedmény használata            | Normál    |
 | Alkalmazott készpénzfizetési engedmény          | 0,00      |
@@ -88,13 +88,13 @@ Ha a vevő pontosan a számla felét akarja kiegyenlíteni, akkor a vevő egy 49
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Kijelölve | Normál            | FTI-10010 | 4028    | 2015-06-25 | 2015-07-25 | 10010   | 1000,00                       | dollár      | 495,00           |
+| Kiválasztva | Normál            | FTI-10010 | 4028    | 2020/25/6 | 2020/25/7 | 10010   | 1,000.00                       | USD      | 495,00           |
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
 |     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
-| Készpénzfizetési engedmény dátuma           | 2015-07-09 |
+| Készpénzfizetési engedmény dátuma           | 2020/09/7 |
 | Készpénzfizetési engedmény összege         | 10,00     |
 | Készpénzfizetési engedmény használata            | Normál    |
 | Alkalmazott készpénzfizetési engedmény          | 0,00      |
@@ -104,9 +104,9 @@ Arnie bezárja a **Tranzakciók kiegyenlítése** lapot. 495,00 értékű kifize
 
 | Bizonylat     | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg | Pénznem |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10010  | Számla          | 2015-06-25 | 10010   | 1000,00                             |                                       | 500,00  | dollár      |
-| ARP-10010  |  Kifizetés         | 2015-01-07  |         |                                      | 495,00                                | 0,00    | dollár      |
-| DISC-10010 |  Készpénzfizetési engedmény   | 2015-01-07  |         |                                      | 5,00                                  | 0,00    | dollár      |
+| FTI-10010  | Számla          | 2020/25/6 | 10010   | 1,000.00                             |                                       | 500.00  | USD      |
+| ARP-10010  |  Kifizetés         | 2020/1/7  |         |                                      | 495,00                                | 0,00    | USD      |
+| DISC-10010 |  Készpénzfizetési engedmény   | 2020/1/7  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>A fennmaradó összeg kifizetése
 A 4028-as vevő kifizeti a fennmaradó 495,00 összeget július 8-án, ami a készpénzfizetési engedmény időszakába esik. Arnie létrehoz egy kifizetési naplót július 8-án és megjelöli a tranzakciót kiegyenlítettnek. Arnie látja, hogy az elszámolandó összeg 495,00. Az érték a **Becsült készpénzfizetési engedmény** mezőben **5,00**, mert az 5,00 engedményt korábban már érvényesítették.
@@ -120,13 +120,13 @@ A kijelölt tranzakcióval kapcsolatos információk megjelennek a **Nyitott tra
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
-| Kijelölve | Normál            | FTI-10010 | 4028    | 2015-06-25 | 2015-07-25 | 10010   | 1000,00                       | dollár      | 495,00           |
+| Kiválasztva | Normál            | FTI-10010 | 4028    | 2020/25/6 | 2020/25/7 | 10010   | 1,000.00                       | USD      | 495,00           |
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
 |  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
-| Készpénzfizetési engedmény dátuma           | 2015-07-09 |
+| Készpénzfizetési engedmény dátuma           | 2020/09/7 |
 | Készpénzfizetési engedmény összege         | 10,00     |
 | Készpénzfizetési engedmény használata            | Normál    |
 | Alkalmazott készpénzfizetési engedmény          | 5,00      |
@@ -136,11 +136,11 @@ Arnie feladja ezt a naplót és áttekinti a vevői tranzakciókat a **Vevői tr
 
 | Bizonylat    | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg | Pénznem |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
-| FTI-10010  | Számla          | 2015-06-25 | 10010   | 1000,00                             |                                       | 0,00    | dollár      |
-| ARP-10010  | Kifizetés          | 2015-01-07  |         |                                      | 495,00                                | 0,00    | dollár      |
-| DISC-10010 | Készpénzfizetési engedmény    | 2015-01-07  |         |                                      | 5,00                                  | 0,00    | dollár      |
-| ARP-10011  | Kifizetés          | 2015-08-07  |         |                                      | 495,00                                | 0,00    | dollár      |
-| DISC-10011 | Készpénzfizetési engedmény    | 2015-08-07  |         |                                      | 5,00                                  | 0,00    | dollár      |
+| FTI-10010  | Számla          | 2020/25/6 | 10010   | 1,000.00                             |                                       | 0,00    | USD      |
+| ARP-10010  | Kifizetés          | 2020/1/7  |         |                                      | 495,00                                | 0,00    | USD      |
+| DISC-10010 | Készpénzfizetési engedmény    | 2020/1/7  |         |                                      | 5.00                                  | 0,00    | USD      |
+| ARP-10011  | Kifizetés          | 2020/8/7  |         |                                      | 495,00                                | 0,00    | USD      |
+| DISC-10011 | Készpénzfizetési engedmény    | 2020/8/7  |         |                                      | 5.00                                  | 0,00    | USD      |
 
 
 

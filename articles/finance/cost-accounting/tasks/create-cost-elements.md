@@ -2,7 +2,7 @@
 title: Költségösszetevők létrehozása
 description: A Költségkönyvelésben számos módon a hozhatók létre költségelemek.
 author: kfend
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CAMDimension, CAMAXMainAccountDimensionMemberProviderConfiguration, CAMDimensionMember
-ms.openlocfilehash: 9ca826e54171a3dc3582dc5ceb716ac009d45674
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0254f486816e852bcda52f90fe4da65c413c7032
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280720"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779689"
 ---
 # <a name="create-cost-elements"></a>Költségösszetevők létrehozása 
 
@@ -28,31 +28,31 @@ A Költségkönyvelésben számos módon a hozhatók létre költségelemek. Ez 
 
 
 ## <a name="create-new-cost-elements"></a>Új költségösszetevők létrehozása
-1. Ugrás a Költségkönyvelés > Dimenziók > Költségösszetevő-dimenziók elemre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Név mezőbe.
-4. A Dimenziótagok adatcsatlakozója mezőben adjon meg, vagy válasszon ki egy értéket.
-5. A Leírás mezőben adjon meg egy értéket.
-6. Kattintson a Mentés gombra.
+1. Ugrás a Költség **> dimenziók > dimenzióihoz**.
+2. Kattintson az **Új** elemre.
+3. Írjon be egy értéket a **Név** mezőbe.
+4. A dimenziótagok **Adat csatlakoztató mezőjében** adjon meg vagy válasszon ki egy értéket.
+5. Írjon egy értéket a **Leírás** mezőbe.
+6. Kattintson a **Mentés** gombra.
 
 ## <a name="configure-the-data-connector"></a>Az adatcsatlakozó konfigurálása
-1. Kattintson a Dimenziótag-szolgáltató konfigurálása lehetőségre.
-2. A Számlatükör mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Válassza ki a Megosztott lehetőséget a megosztott számlatükör használatához.  
-3. Kattintson az Új lehetőségre.
+1. Kattintson a Dimenziótag-szolgáltató **konfigurálása elemre**.
+2. A Számlatükre **mezőben** adjon meg vagy válasszon ki egy értéket.
+    * Válassza **a Megosztott** lehetőséget a megosztott számlatükre használatára.  
+3. Kattintson az **Új** elemre.
 4. A listában jelölje meg a kiválasztott sort.
     * A számlákra szűrőket alkalmazhat, hogy megfeleljenek a feltételeinek.  
-5. A fő számlából mezőben adjon meg vagy válasszon ki egy értéket.
-6. A fő számlához mezőben adjon meg vagy válasszon ki egy értéket.
-7. Kattintson az OK gombra.
+5. A Fő számla **létrehozása mezőben** adjon meg vagy válasszon ki egy értéket.
+6. A Cél főszámla **mezőben** adjon meg vagy válasszon ki egy értéket.
+7. Kattintson az **OK** gombra.
 
 ## <a name="import-main-accounts"></a>Fő számlák importálása
-1. Kattintson a Dimenziótagok importálása elemre.
+1. Kattintson a Dimenziótagok **importálása elemre**.
     * A fő számlákat a rendszer a Költségkönyvelésbe importálja és költségösszetevőként használja.  
-2. Kattintson az OK gombra.
+2. Kattintson az **OK** gombra.
 
 ## <a name="view-the-imported-accounts-as-cost-elements"></a>Importált számlák megjelenítése költségösszetevőként
-1. Kattintson a Dimenziótagok megtekintése elemre.
+1. Kattintson a Dimenziótagok **megtekintése elemre**.
     * Az importált főkönyvi számlák megtekintése költségösszetevőként, amelyre a költségek könyvelhetők.  
 
 

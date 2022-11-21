@@ -2,7 +2,7 @@
 title: Devizaátértékelés konszolidált vállalatban
 description: Ez a cikk azt ismerteti, hogyan lehet átértékelni a pénznemet egy konszolidációs vállalatban.
 author: aprilolson
-ms.date: 10/02/2018
+ms.date: 10/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fbbc1d0a7ae5b7e288710c99a6af362b3db3d36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c05ef0d4d05d5113d3b858dafe49ee9c1c7211d9
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889004"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779662"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Devizaátértékelés konszolidált vállalatban
 
@@ -41,18 +41,18 @@ Ha egy könyvelési pénznemből egy másikba konszolidál adatokat és változi
 
 | Dátum       | Főkönyvi számla               | Pénznem | Összeg |
 |------------|------------------------------|----------|--------|
-| 2015/11/10 | 110110 – készpénz                | dollár      | 500    |
-| 2015/11/10 | 130100 – kinnlevőségek | dollár      | -500   |
+| 2020/11/10 | 110110 – készpénz                | USD      | 500    |
+| 2020/11/10 | 130100 – kinnlevőségek | USD      | -500   |
 
 ## <a name="exchange-rates"></a>Árfolyamok
 
-| Kezdő pénznem | Célpénznem | Kezdő dátum | Árfolyam |
+| Kezdő pénznem | Célpénznem | Kezdés dátuma | Árfolyam |
 |---------------|-------------|------------|---------------|
-| HUF           | dollár         | 2015/1/10  | 200           |
-| HUF           | dollár         | 2015/1/11  | 150           |
-| HUF           | dollár         | 2012/1/12  | 100           |
+| EUR           | USD         | 2020/1/10  | 200           |
+| EUR           | USD         | 2020/1/11  | 150           |
+| EUR           | USD         | 2017/1/12  | 100           |
 
-## <a name="perform-the-consolidation-for-october-2015"></a>2015 októberében a konszolidáció végrehajtása megtörténik
+## <a name="perform-the-consolidation-for-october-2020"></a>2020 októberében a konszolidáció végrehajtása megtörténik
 ### <a name="balances-in-the-consolidation-company"></a>Egyenlegek a konszolidált vállalatban
 
 | Főkönyvi számla | Pénznem | Összeg | Számítás    |
@@ -60,7 +60,7 @@ Ha egy könyvelési pénznemből egy másikba konszolidál adatokat és változi
 | 110110         | HUF      | 250    | 500 USD × 50%  |
 | 130100         | HUF      | -250   | -500 USD × 50% |
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-november-30-2015"></a>Devizaátértékelés végrehajtása 2015. október 1. és 2015. november 30. közötti számlákra
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-november-30-2020"></a>Devizaátértékelés végrehajtása 2020. október 1. és 2020. november 30. közötti számlákra
 ### <a name="balances-in-the-consolidation-company"></a>Egyenlegek a konszolidált vállalatban
 
 | Főkönyvi számla | Pénznem | Összeg  | Számítás                        |
@@ -72,7 +72,7 @@ Ha egy könyvelési pénznemből egy másikba konszolidál adatokat és változi
 
 A jelentési pénznem összegeihez további tranzakciók történnek.
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-december-31-2015"></a>Devizaátértékelés végrehajtása 2015. október 1. és 2015. december 31. közötti számlákra
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-december-31-2020"></a>Devizaátértékelés végrehajtása 2020. október 1. és 2020. december 31. közötti számlákra
 ### <a name="balances-in-the-consolidation-company"></a>Egyenlegek a konszolidált vállalatban
 
 | Főkönyvi számla | Pénznem | Összeg  | Számítás                                          |

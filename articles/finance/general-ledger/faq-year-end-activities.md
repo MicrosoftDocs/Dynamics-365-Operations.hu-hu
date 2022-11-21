@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2a75d1e3e68837a437b2369ba369b0063e015b12
-ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
+ms.openlocfilehash: a25f20c320b905a2cdd3091e76e3c5e73f1a845a
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9751957"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752748"
 ---
 # <a name="year-end-activities-faq"></a>Év végi tevékenységek – GYIK 
 
@@ -94,6 +94,23 @@ Ahhoz, hogy használhassa a funkciót, először aktiválnia kell a rendszerébe
  
 - Modul: Főkönyv
 - Funkció neve: Teljesítménnyel kapcsolatos fejlesztések a pénzügyi dimenziókészletek újraépítéséhez
+
+## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2022"></a>Kötelezettségek: Milyen módosításokat vezettek be 2022-ben az 1099-es év végi jelentés támogatásához?
+
+#### <a name="update-to-all-1099-forms"></a>Frissítés az összes 1099-es űrlapra
+A 2022-es adózási év 1099-es űrlapján a következő módosítások történtek:
+
+  - 2021-ben az évet az 1099-es űrlapokon rögzítették. 2022-től az évet a jelentésen töltik ki. 
+
+#### <a name="1099-misc"></a>1099-MISC
+A 2022-es adózási év 1099-MISC űrlapján a következő frissítések történtek:
+
+ - 13. mező: Most már jelzi a törvény az adójogszabályoknak a külföldi számlával rendelkező adóalanyok általi betartásáról (FATCA) benyújtási követelményét. 
+ - 14. mező: Most már a többlet végkielégítési kifizetések jelentéséhez használatos. 
+ - 15. mező: Most már a nem minősített halasztott kompenzációs (NQDC) tervek szerinti kifizetés jelentésére használatos. 
+ - 16. mező: Most már az állam által visszatartott adó jelentésére használatos.
+ - 17. mező: Most már a kifizető állami számának jelentéséhez használatos.
+ - 18. mező: Most már az állami bevétel jelentésére használatos. 
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2021"></a>Kötelezettségek: Milyen módosításokat vezettek be 2021-ben az 1099-es év végi jelentés támogatásához?
 

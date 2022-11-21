@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8811d4a43dba05e63b270893600a622527834901
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9ba11a561f320a7f4e787e4fe3f4e6f4fb88bbfb
+ms.sourcegitcommit: ca73177dedf40df16860eaf88b1c701c61992028
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982927"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9754110"
 ---
 # <a name="dimension-based-product-configuration-overview"></a>Dimenzión alapuló termékkonfiguráció áttekintése
 
@@ -74,7 +74,7 @@ Egy termékmodell építés természetes sorozata, egy dimenzión alapuló term�
 
 A dimenzión alapuló konfiguráció technológiát legjobban olyan termékeknél lehet alkalmazni, amelyek változtathatósága korlátozott, és az alap termékdimenziókkal, mérettel, színnel, vagy konfigurációval nem lehet azonosítani a termékváltozatot. Ilyen lehet például a kerékpár keret magassága, kerék mérete, fékbetét-típusok és különböző fokozatok.
 
-### <a name="next-step"></a>Következő lépés 
+### <a name="next-step"></a><a name="sequence"></a>Következő lépés
 
 A következő nyolc feladatútmutató abban a sorrendben van felsorolva, amelyben teljesítenie kell őket. 
 

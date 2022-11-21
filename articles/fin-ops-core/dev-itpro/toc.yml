@@ -1652,6 +1652,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Felhasználók hozzárendelése biztonsági szerepkörökhöz
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Active Directory biztonsági csoportok
+                  href: sysadmin/active-directory-security-group.md
                 - name: Testreszabott biztonsági konfiguráció importálása vagy exportálása Adatkezelés használatával
                   href: sysadmin/import-export-customized-security.md
                 - name: Biztonsági diagnosztika feladatrögzítésekhez

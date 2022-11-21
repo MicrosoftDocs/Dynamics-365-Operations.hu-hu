@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ceda837cae563dab68969cb9f05de113079d4495
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3ff76eac54da6621d999d9b629fac920ba8de294
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910258"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778384"
 ---
 # <a name="create-sales-order-invoices"></a>Értékesítési rendelési számlák létrehozása
 
@@ -32,12 +32,12 @@ Ez a témakör azt ismerteti, hogyan kell számlázni az értékesítési rendel
 2. Válasszon ki a listából egy értékesítési rendelést. 
 3. A **Művelet panelen** kattintson a **Számla > Generálás > Számla** lehetőségre. Ne feledje, hogy ehhez az értékesítési rendeléshez több csomagjegyzék van társítva. Csak a *többszörös* szó jelenik meg a csomagolólap száma helyett.  
 4. Bontsa ki a **Paraméterek** szakaszt.
-    - A számla feladásához a Feladásnál az Igent kell beállítani. De ki is kapcsolhatja a feladást, és csak kinyomtathatja a számlát. Azonban ugyanazt az eredményt a számla létrehozása helyett egy Pro forma számla létrehozásával is elérheti.  
+    - A számla feladható a feladáshoz **Igen** beállításra. De ki is kapcsolhatja a feladást, és csak kinyomtathatja a számlát. Azonban ugyanazt az eredményt a számla létrehozása helyett egy Pro forma számla létrehozásával is elérheti.  
     - Ezt a beállítást a kötegelt feladatokhoz szokás használni. A kötegelt feladat futtatása alkalmával a lekérdezés futtatása.
-5. A **Nyomtatás** mezőben válassza az „Utána” lehetőséget.
-6. Válassza az **Igen** beállítást a **Számla nyomtatásához**. A nyomtatáskezelés a számlát több példányban is ki tudja nyomtatni és e-mailben, PDF-fájlként is el tudja küldeni.  
-7. A **Költségek nyomtatása** mezőben válassza az „Összesítés” lehetőséget.
-8. A **Hitelkeret ellenőrzése** mezőben válassza ki az „Egyenleg” lehetőséget.
+5. A Nyomtatás **mezőben** válassza az After **lehetőséget**.
+6. Válassza az **Igen** beállítást a **Számla nyomtatásához**. A nyomtatáskezelés a számla több példányát is kinyomtathatja, és a számlát e-mailben elküldheti PDF-fájlként.  
+7. A Költségek nyomtatása **mezőben** válassza az Összegzés **lehetőséget**.
+8. Válassza az **Egyenleg lehetőséget a Hitelkeret** ellenőrzése **mezőben**.
 9. Kattintson a **Mégse** gombra.
 
 ## <a name="combine-orders-into-a-single-invoice"></a>Rendelések egyesítése egyetlen számlában.
@@ -46,8 +46,8 @@ Ez a témakör azt ismerteti, hogyan kell számlázni az értékesítési rendel
 3. Több nyitott értékesítési rendelés kiválasztása ugyanabból a vevőből.
 4. A **Művelet panelen** kattintson a **Számla > Generálás > Számla** lehetőségre.
 5. Bontsa ki a **Paraméterek** szakaszt.
-6. A **Mennyiség** mezőben válassza a 'Mind' lehetőséget. Vegye figyelembe, hogy az Áttekintés részben két számla van felsorolva. Most egyesítsük őket egy számlába.  
-7. Az **Összegzés frissítése a következőhöz:** mezőben a „Számlafogadó” kiválasztása.
+6. A **Mennyiség** mezőben válassza a **Mind** lehetőséget. Vegye figyelembe, hogy az Áttekintés részben két számla van felsorolva. Most egyesítsük őket egy számlába.  
+7. A Mező Összesítő **frissítés mezőjében** válassza ki a Számla **számlát**.
 8. Kattintson az **Elrendezés** elemre az értékesítési megrendelések egy számlában való egyesítésére. A két értékesítési megrendelés egy számlába került.   
 9. Kattintson a **Mégse** gombra.
 10. Kattintson az **Igen** gombra.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220332"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757221"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
@@ -107,7 +107,7 @@ A másik lehetőség az, hogy amikor új nézetet hoz létre (a **Mentrés másk
 
 A **Saját nézetek kezelése** párbeszédpanel a alapvető karbantartási funkciókat biztosít a személyes nézetekre vonatkozóan, valamint a nézetválasztóban a nézetek sorrendjére vonatkozóan. A lap megnyitásához kattintson a nézet nevére a nézetválasztó legördülő menü megnyitásához, válassza a **Továbbiak**, majd a **Saját nézetek kezelése** lehetőséget.
 
-**10.0.21-es vagy újabb verzió:** Ha a **Mentett nézetek javított jogi személy támogatása** funkció be van kapcsolva, a **Nézeteim kezelése** párbeszédpanel **Saját nézeteim** szakasza az oldal elérhető nézeteit szekciókban jeleníti meg. Az aktuális jogalanyra vonatkozó nézetek külön szakaszban jelennek meg. A **Globális nézetek** rész mindig megjelenik, így az oldalhoz az összes jogalanyban elérhető nézetek kezelhetők. 
+Ha be van **kapcsolva a Jobb jogi személy támogatása a mentett nézetekhez funkció,** **·** **a Nézetek kezelése párbeszédpanel Saját nézetek szakasza szakasz a szakaszokban elérhető nézeteket jeleníti meg.** Az aktuális jogalanyra vonatkozó nézetek külön szakaszban jelennek meg. A **Globális nézetek** rész mindig megjelenik, így az oldalhoz az összes jogalanyban elérhető nézetek kezelhetők. 
 
 Az adott lap elérhető nézeteinek listájához a következő műveletek állnak rendelkezésre.
 
@@ -138,9 +138,9 @@ A nézet közzétételéhez kövesse az alábbi lépéseket:
 
 1. Hozzon létre és mentsen el a közzétenni kívánt nézet egy személyes példányát. 
 2. A jelenleg betöltött nézetnél válassza ki a nézet nevét a nézetválasztó legördülő menü megnyitásához. 
-3. Válassza a **Továbbiak** gombot, és válassza a **Közzététel** lehetőséget. Megnyílik a Közzététel párbeszédpanel.
+3. Válassza a **Továbbiak** gombot, és válassza a **Közzététel** lehetőséget. Megnyílik **a** Közzététel párbeszédpanel.
 4. Adja meg a nézet nevét. A név, amelyet megad az, mely a nézetet megkapó felhasználók számára megjelenik a nézetválasztóban. A lap közzétett nézeteinek egyedinek kell lennie. Egy laphoz nem engedélyezettek az ismétlődő nevek a közzétett nézeteknél, még ha az alkalmazott szerepkörök listája vagy jogi személyek különböznek is.
-5. **A 10.0.17-es vagy újabb verzió frissítése:** Ha az **(Előzetes verzió) Szervezetnézetek fordításának támogatása** be van kapcsolva, a szervezet által megkövetelt több nyelven is hozzáadhat fordításokat a nézetnévhez, ha a **Név** mező melletti **Fordítások** gombra kattint. A nézet neve megjelenik a felhasználók számára az aktuális nyelven. Beállíthatja az alapértelmezett nyelvet is, hogy megadja azt a fordítást, amely azon felhasználók számára jelenik meg, akik olyan nyelveket futtatnak, amelyekhez nincs megadva fordítás.
+5. **Ha** a szervezetnézetek fordítási támogatása be van kapcsolva, a szervezet által megkövetelt több nyelven adhat hozzá fordításokat a nézetnévhez úgy, **·** **hogy** a Név mező melletti Fordítások gombra kattint. A nézet neve megjelenik a felhasználók számára az aktuális nyelven. Beállíthatja az alapértelmezett nyelvet is, hogy megadja azt a fordítást, amely azon felhasználók számára jelenik meg, akik olyan nyelveket futtatnak, amelyekhez nincs megadva fordítás.
 5. Nem kötelező: Adja meg a nézet leírását, hogy a nézetet megkapó felhasználók jobban megértsék a nézet célját. 
 6. Határozza meg, hogy a nézet a kiválasztott felhasználók számára alapértelmezett nézetként legyen-e közzétéve. Amikor egy nézetet alapértelmezettnek állítanak be, a felhasználók a céloldal legközelebbi megnyitásakor ezt a nézetet fogják látni. Minden célfelhasználó egyetlen globálisan alapértelmezett nézete fog változni. A felhasználók azonban továbbra is módosíthatják a saját alapértelmezett nézetüket a közzététel után.
 
@@ -150,9 +150,10 @@ A nézet közzétételéhez kövesse az alábbi lépéseket:
     > - Ha egy nézetet alapértelmezett nézetként tesz közzé néhány vagy minden jogi személy számára, a következő viselkedés történik:
     >
     >    - Ha csak az alap **Mentett nézetek** funkció van bekapcsolva, akkor az egyetlen, globális alapértelmezett nézet minden célzott felhasználó számára megváltozik. 
-    >    - **10.0.21-es vagy újabb verzió:** Ha a **Mentett nézetek javított jogalany-támogatása** funkció be van kapcsolva, és a nézetet a jogalanyok egy részhalmazához teszi közzé, akkor az alapértelmezett nézet minden célzott felhasználó számára megváltozik.
+    >    - **Ha a mentett nézeteknél be van kapcsolva a jobb jogi személytámogatás**, és a nézetet jogi személyek egy részcsoportja számára teszi közzé, akkor a jogi személyek alapértelmezett nézete minden megcélzott felhasználóra vonatkozóan módosul.
     >
     > - Ha egy felhasználónak több olyan nézete van, amelyek alapértelmezett nézetként vannak közzétéve, akkor a legutóbb közzétett nézet lesz a felhasználó alapértelmezett nézete. 
+    > - A közzététel nem működik az AAD-csoportok használatával hozzárendelt szerepkörök esetében. 
 
 8. Adja hozzá azokat a biztonsági szerepköröket, amelyek kapcsolódnak a nézetettel megcélzott felhasználókhoz. 
 9. Határozza meg, hogy a nézetet szeretné-e közzétenni a kiválasztott biztonsági szerepkör alárendelt szerepköreihez. Ha ezt a lehetőséget választja, akkor a megfelelő biztonsági szerepkörök sorában jelölje be az **Alárendelt szerepkörökkel együtt** jelölőnégyzetet. Ne feledje, hogy ez a jelölőnégyzet nem érhető el olyan szerepkörök esetében, amelyek nem rendelkeznek alárendelt szerepkörökkel.
@@ -162,7 +163,7 @@ A nézet közzétételéhez kövesse az alábbi lépéseket:
     > Vegye figyelembe a következő viselkedést, ha egy nézetet egy adott jogalany számára tesz közzé, de nem teszi közzé alapértelmezett nézetként:
     >
     > - Ha csak az alap **Mentett nézetek** funkció van bekapcsolva, akkor a felhasználó által az oldalra kiválasztott nézetválasztó kezdetben csak a megadott jogalanyok nézetét jeleníti meg. A nézet első betöltése után azonban az oldal nézetválasztója mindig megjeleníti azt, függetlenül a jogi személytől.
-    > - **10.0.21-es vagy újabb verzió:** Ha a **Mentett nézetek javított jogalany-támogatása** funkció be van kapcsolva, a nézetválasztó mindig csak a megadott jogalanyok nézetét fogja megjeleníteni.
+    > - Ha a **mentett nézetek** továbbfejlesztett jogi személy támogatása funkció be van kapcsolva, a nézetválasztó csak a megadott jogi személyek nézetét fogja mutatni.
 
 11. Válassza a **Közzététel** lehetőséget.
 
@@ -259,7 +260,7 @@ A nagyméretű nézetű választókat tartalmazó lapok esetében (testreszabás
 Ha egy nézetet közzétesz egy adott jogalany számára, de nem teszi közzé alapértelmezett nézetként, a következő viselkedés következik be:
 
 - Ha csak az alap **Mentett nézetek** funkció van bekapcsolva, akkor a felhasználó által az oldalra kiválasztott nézetválasztó kezdetben csak a megadott jogalanyok nézetét jeleníti meg. A nézet első betöltése után azonban az oldal nézetválasztója mindig megjeleníti azt, függetlenül a jogi személytől. Ez a viselkedés azért fordul elő, mert a felhasználók a betöltéskor megkapják a közzétett nézet saját személyes példányát, és a személyes nézetek globálisak.
-- **10.0.21-es vagy újabb verzió:** Ha a **Mentett nézetek javított jogalany-támogatása** funkció be van kapcsolva, a nézetválasztó mindig csak a megadott jogalanyok nézetét fogja megjeleníteni. Ez a viselkedés azért következik be, mert a funkció lehetővé teszi, hogy a nézetek (beleértve a személyes nézeteket is) meghatározott jogi személyekhez kapcsolódjanak.
+- Ha a **mentett nézetek** továbbfejlesztett jogi személy támogatása funkció be van kapcsolva, a nézetválasztó csak a megadott jogi személyek nézetét fogja mutatni. Ez a viselkedés azért következik be, mert a funkció lehetővé teszi, hogy a nézetek (beleértve a személyes nézeteket is) meghatározott jogi személyekhez kapcsolódjanak.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

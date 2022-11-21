@@ -586,10 +586,12 @@
                           href: dev-itpro/adyen-connector.md
                         - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz beállítása
                           href: dev-itpro/adyen-connector-setup.md
-                        - name: Dynamics 365 Payment Connector az Adyen - GYIK
+                        - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz – GYIK
                           href: dev-itpro/adyen-connector-faq.md
-                        - name: A Google Pay konfigurálása az Adyennel
+                        - name: A Google Pay konfigurálása az Adyen szolgáltatással
                           href: dev-itpro/google-pay-adyen.md
+                        - name: Apple Pay beállítása az Adyen szolgáltatáshoz
+                          href: dev-itpro/apple-pay-adyen.md
                         - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz – hibaelhárítás
                           href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: Online fizetési eszközök mentése az Adyen összekötővel
@@ -602,6 +604,8 @@
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Számlafizetési forgatókönyvek beállítása
                       href: payinvoice.md
+                    - name: Előlegek a Dynamics 365 Commerce szolgáltatásban
+                      href: dev-itpro/prepayments-commerce.md
                     - name: Ismétlődő kifizetések megakadályozása
                       href: duplicate-payment-protection.md
                     - name: Omnicsatornás kifizetések áttekintése

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 384ce8611a7dbf6adf7b8ae6ad9569e2a41c22d1
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405437"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757167"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
@@ -50,7 +50,7 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | Lap bezárása a műveleti ablakban vagy egy menüben        | Esc                              |
 | Jobb-kattintás szimulálása                          | Shift+F10                        |
 | Helyi menü megnyitása    | Ctrl+F10                         |
-| Az alapértelmezett gomb végrehajtása egy űrlapon/párbeszédablakban | Alt+Enter                        |
+| Az alapértelmezett gomb végrehajtása egy lapon/párbeszédpanelen | Alt+Enter                        |
 | Kattintás egy gombra vagy csempére                          | Enter vagy Szóköz                   |
 | Számláló csempe frissítési információinak megtekintése       | Alt+Felfelé nyíl                     |
 | Aktuálisan rendelkezésre álló billentyűparancsok megtekintése              | Alt+Shift+K                      |
@@ -85,13 +85,13 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Rácsszűrés megnyitása az aktuális oszlopra                                                                          | Ctrl+G                   |
 | Rácsszűrés bezárása az aktuális oszlopra                                                                         | Esc                      |
-| Szűrő ablak megnyitása (vagy váltson fókuszt a szűrő ablak és a fő űrlap között, ha a szűrő ablak már nyitva van) | Alt+M,F vagy Ctrl+F3       |
+| A Szűrő ablak megnyitása (vagy a fókusz váltása a Szűrő ablaktábla és a főoldal között, ha a Szűrő ablak már meg van nyitva) | Alt+M,F vagy Ctrl+F3       |
 | Szűrő ablak bezárása (a fókusszal a szűrő ablakban)                                                               | Esc                      |
 | Speciális szűrés/rendezés megnyitása                                                                                        | Ctrl+Shift+F3            |
 | A gyorsszűrő alkalmazása (ha a fókusz a Gyors szűrésben van)                                                              | Enter                    |
 | Rácsszűrő alkalmazása (ha a fókusz az oszlopfejléc szűrőmezőében van)                                             | Enter                    |
 
-## <a name="form-shortcuts"></a>Űrlap billentyűparancsok
+## <a name="page-shortcuts"></a>Lap parancsikonjai
 
 | Művelet                                    | Nyomja meg a(z)  billentyűt             |
 |-----------------------------------------------|-------------------|
@@ -100,7 +100,7 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | Rekord mentése                                   | Alt+S vagy Ctrl+S   |
 | Visszaállítás (helyreállítás)                              | Ctrl+Shift+F5     |
 | Adatfrissítés                                  | Shift+F5          |
-| Ugrás az első látható mezőbe az űrlapon   | Alt+Shift+F       |
+| Ugrás a lap látható első mezőjére   | Alt+Shift+F       |
 | Szerkesztési mód váltása                              | F2                |
 | Dokumentum csatolása                             | Ctrl+Shift+A      |
 | Exportálás Excelbe                               | Ctrl+Shift+E      |
@@ -108,13 +108,13 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | Ugrás a következő rekordra (egy rácson kívülre)      | Ctrl+Lefelé nyíl   |
 | Ugrás az első rekordra (egy rácson kívülre)     | Ctrl+Home         |
 | Ugrás az utolsó rekordra (egy rácson kívülre)      | Ctrl+End          |
-| Az űrlap bezárása (kattintson a vissza gombra)                   | Esc               |
-| Képernyő bezárása explicit mentéssel             | Shift+Esc         |
-| Képernyő bezárása az el nem mentett módosítások mentése nélkül | Alt+Shift+Q       |
+| A lap bezárása (a Vissza gombra kattintva)<br><br>**Megjegyzés:** Ha megjelenik egy előugró ablak (elemleírás, dátumválasztó, legördülő lista stb.), akkor az Esc első használata esetén a rendszer mellőzi az előugró ablakot.       | Esc               |
+| A lap bezárása explicit mentéssel             | Shift+Esc         |
+| A nem mentett módosítások elvetését zárás után zárja be. | Alt+Shift+Q       |
 
-## <a name="form-navigation-shortcuts"></a>Navigációs űrlap billentyűparancsok
+## <a name="page-navigation-shortcuts"></a>Lap navigációs parancsikonjai
 
-| Művelet                                          | Billentyű vagy billentyűkombináció                                        |
+| Művelet                                          | Nyomja meg a(z)  billentyűt                                        |
 |-----------------------------------------------------|----------------------------------------------|
 | Ugrás a következő/előző mezőre                     | Tab/Shift+Tab                              |
 | Ugrás az következő/előző lapra                       | Alt+Shift+Jobbra nyíl / Alt+Shift+Balra nyíl |
@@ -192,13 +192,13 @@ A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a je
 | A Súgó ablak megnyitása                                                            | Ctrl+?                     |
 | A Trace Parser megnyitása                                                         | Alt+Shift+T                |
 | Ugrás a navigációs ablakra                                                   | Alt + F1                     |
-| Űrlap megjelölése kedvencként/eltávolítása a kedvencek közül (űrlappal a navigációs ablakban)   | Shift+F                    |
+| Lap hozzáadása kedvenc lapként (a navigációs ablak egy lapjára való fókuszálás után)   | Shift+F                    |
 | Ugrás a szokásos műveleti ablakba                                              | Alt+M,A vagy Ctrl+F6         |
 | Ugrás a Szűrőablakra (ami a megnyitását is jelentheti)                        | Alt+M,F vagy Ctrl+F3         |
 | Fókusz áthelyezése az oldal tartalmára (a fókusszal a Szűrőpanelen)                | Alt+M,M vagy Ctrl+F3         |
-| Ugrás a navigációs listára az Adatok képernyőn (ami a megnyitását is jelentheti)    | Alt+M,S vagy Ctrl+F8         |
+| Ugrás a navigációs listára (a megnyitását is beleértve)    | Alt+M,S vagy Ctrl+F8         |
 | Fókusz áthelyezése az oldal tartalmára (a fókusszal a navigációs listában)            | Alt+M,M vagy Ctrl+F8         |
-| A navigációs lista bezárása a Részletek űrlapon (a fókusszal a navigációs listán) | Esc                        |
+| A navigációs lista bezárása (a navigációs lista fókuszával) | Esc                        |
 | Ugrás a fő oldal tartalmára (a fókusszal egy másik ablakban)                    | Alt+M,M                    |
 | Ugrás az adatterület panelre (ami a megnyitását is jelentheti)                       | Alt+M,B vagy Ctrl+F2         |
 | Ugrás a következő funkcióbuborékra                                              | Alt+M,C                    |

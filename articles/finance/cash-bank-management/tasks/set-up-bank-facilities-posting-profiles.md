@@ -2,23 +2,23 @@
 title: Bankhitelek beállítása és a garancialevélhez tartozó profilok feladása
 description: Ez a feladat banki hitelt hoz létre, és feladási profilt, amely a garancialevél feldolgozásához szükséges.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e3568332a7755af9c8c341223fc7ef7e66a1da02
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1bfdef0cd535f47bb1df9fb7494043d3dd519c5b
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726322"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779880"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a>Bankhitelek beállítása és a garancialevélhez tartozó profilok feladása
 
@@ -34,45 +34,45 @@ Ez a feladat az USMF bemutatócéget használja.
 
 
 ## <a name="general-ledger-parameter"></a>Főkönyvi paraméter
-1. Ugorjon a Készpénz- és bankkezelés > Beállítás > Készpénz- és bankkezelési paraméterek pontra.
-2. Bontsa ki a A banki bizonylat szakaszt.
-3. Válassza ki A garancialevél engedélyezése lehetőséget.
-4. A Tranzakciós napló mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+1. A Készpénz- **és bankkezelés > beállítása > készpénz- és bankkezelési paraméterekhez**.
+2. Bontsa ki **a Banki bizonylat szakaszt**.
+3. Válassza a Garancialevél **engedélyezése** lehetőséget.
+4. A Tranzakciónapló **mezőben** kattintson a legördülő gombra a keresés megnyitásához.
 5. A kívánt rekord megkeresése és kijelölése a listán
 6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-7. Kattintson a Számsorozatok lapra.
+7. Kattintson a Számsorozatok **fülre**.
     * Adja meg a számsorozat kódját a Garancialevél számához és a Garancialevél tranzakciós hivatkozásához  
-8. Kattintson a Mentés gombra.
+8. Kattintson a **Mentés** gombra.
 9. Zárja be a lapot.
 
 ## <a name="create-bank-facility"></a>Banki hitel létrehozása
-1. Ugorjon a Készpénz- és bankkezelés > Beállítás > Banki hitelek pontra.
-2. Kattintson az Új lehetőségre.
-3. A Hitelcsoport mezőben adja meg a banki hitelcsoport nevét a garancialevél-tranzakcióhoz.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Kattintson a Mentés gombra.
-6. Kattintson a Hitelek lapra.
-7. Kattintson az Új lehetőségre.
-8. A Hitel típusa mezőbe írja be a banki hitelmegállapodáshoz kapcsolódó banki hiteltípus nevét.
-9. Írjon egy értéket a „Leírás” mezőbe.
-10. A Hitelcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-11. A kívánt rekord megkeresése és kijelölése a listán
+1. Váltsa át **a Készpénz- és bankkezelés > és > Bank hitellehetőségeihez**.
+2. Kattintson az **Új** elemre.
+3. A Hitelcsoport **mezőben** adja meg a garancialevél-tranzakció banki hitelcsoportjának nevét.
+4. Írjon egy értéket a **Leírás** mezőbe.
+5. Kattintson a **Mentés** gombra.
+6. Kattintson a Hiteltípusok **fülre**.
+7. Kattintson az **Új** elemre.
+8. A Hitel **típusa mezőben** adja meg a banki hitelmegállapodáshoz kapcsolódó banki hiteltípus nevét.
+9. Írjon egy értéket a **Leírás** mezőbe.
+10. A Hitelcsoport **mezőben** kattintson a legördülő gombra a keresés megnyitásához.
+11. Keresse meg és jelölje ki a kívánt rekordot a listán.
 12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-13. Válasszon ki egy lehetőséget a Hitel természete mezőben
-14. Kattintson a Mentés gombra.
+13. Válasszon egy beállítást a Hitel jellege mezőben.
+14. Kattintson a **Mentés** gombra.
 15. Zárja be a lapot.
 
 ## <a name="bank-posting-profile"></a>Banki feladási profil
-1. Ugorjon a Készpénz- és bankkezelés > Beállítás > Banki dokumentumok közzétele profil pontra.
-2. Kattintson az Új lehetőségre.
-3. A Fiók/Csoport száma mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+1. Menjen a Készpénz- **és bankkezelés > beállítása > banki bizonylatok feladási profiljához**.
+2. Kattintson az **Új** elemre.
+3. A Számla **/csoport száma mezőben** kattintson a legördülő gombra a keresés megnyitásához.
 4. A kívánt rekord megkeresése és kijelölése a listán
 5. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-6. A Számla rendezése mezőben válassza ki a fő számlát a kiegyenlítéshez.
-7. A Díjfiók mezőben válassza ki a számlát a költségtranzakciókhoz.
-8. Az Értékpapír-hitelszámla mezőben válassza ki a számlát az értékpapír-tranzakcióhoz.
-9. A Felszámolási számla mezőben válasszon felszámolási számlát a garancialevél-tranzakcióhoz. 
-10. Kattintson a Mentés gombra.
+6. A Számla **kiegyenlítése mezőben** válassza ki a kiegyenlítés fő számláját.
+7. A Költségszámla **mezőben** válassza ki a költségtranzakciók számláját.
+8. A Különbözeti **számla mezőben** válassza ki a különbözeti tranzakció számláját.
+9. A Felszámolási **számla mezőben** válassza ki a garancialevél-tranzakció felszámolási számláját. 
+10. Kattintson a **Mentés** gombra.
 11. Zárja be a lapot.
 
 

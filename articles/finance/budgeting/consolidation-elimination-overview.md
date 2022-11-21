@@ -2,13 +2,13 @@
 title: Konszolidáció és megszüntetés áttekintése
 description: A cikk a konszolidációs és megszüntetési folyamat általános ismertetését tartalmazza. Magában foglalja a gyakori kérdésekre adott válaszokat is.
 author: panolte
-ms.date: 01/11/2018
+ms.date: 11/11/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom:
 - "13151"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 757c7634fc929ead018d1ddcca4cc223c1a95638
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871391"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779907"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Konszolidáció és megszüntetés áttekintése
 
@@ -46,49 +46,38 @@ Az eltávolításokat többféleképpen lehet jelenteni:
 Sok összevonási eset lehetséges és minden módszer máshogy tudja kezelni ezeket az eseteket.
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
-1. Szeretnék eltávolításokat az adatbázisba feladni. Mik a lehetőségeim?
+Szeretnék eltávolításokat az adatbázisba feladni. Mik a lehetőségeim?
+ - Több lehetőség is létezik. Használhatja az **Online konszolidálás** lehetőséget, majd az eltávolításokat bevonhatja javaslatként a folyamatba. A tranzakciók a konszolidációs vállalatba kerülnek feladásra. Azt is megteheti, hogy elkülönít egy vállalatot, amelyben manuálisan hozza létre az eltávolításokat, majd ezt a vállalatot a Pénzügyi jelentéshez használja az eltávolítási folyamatban.
 
-Több lehetőség is létezik. Használhatja az **Online konszolidálás** lehetőséget, majd az eltávolításokat bevonhatja javaslatként a folyamatba. A tranzakciók a konszolidációs vállalatba kerülnek feladásra. Azt is megteheti, hogy elkülönít egy vállalatot, amelyben manuálisan hozza létre az eltávolításokat, majd ezt a vállalatot a Pénzügyi jelentéshez használja az eltávolítási folyamatban.
+Az eltávolítási eredmények jelentéseire több pénznemben van szükség.
+ - A **Pénzügyi jelentéskészítés** lehetőségben korlátlan számú pénznemet használhat. Az adatok lefordításra kerülnek a jelentés létrehozásakor a fő számlában megadott árfolyamtípus és pénznem átváltási módszer alapján. Azonban az **Online konszolidálás** lehetőség csak egy jelentési pénznemmel rendelkezik, konszolidált vállalatok szükségesek az egyes jelentési pénznemekhez ha ezt a lehetőséget választja. A **Pénzügyi jelentéskészítés** lehetőség az ajánlott módszer.
 
-2.  Az eltávolítási eredmények jelentéseire több pénznemben van szükség.
+Az egyes vállalatokkal kapcsolatos részletek megjelenítése tranzakciós szinten.
+ - A **Pénzügyi jelentéskészítés** lehetőség a megfelelő választás, mert a tranzakciós szintű részletek annyi vállalathoz tekinthetők meg, amennyi a jelentési fa definíciójában van megadva.
 
-A **Pénzügyi jelentéskészítés** lehetőségben korlátlan számú pénznemet használhat. Az adatok lefordításra kerülnek a jelentés létrehozásakor a fő számlában megadott árfolyamtípus és pénznem átváltási módszer alapján. Azonban az **Online konszolidálás** lehetőség csak egy jelentési pénznemmel rendelkezik, konszolidált vállalatok szükségesek az egyes jelentési pénznemekhez ha ezt a lehetőséget választja. A **Pénzügyi jelentéskészítés** lehetőség az ajánlott módszer.
+Költségvetés tervezést vagy költségvetés-ellenőrzést használunk, amit konszolidálni kell.
+ - A **Pénzügyi jelentéskészítés** lehetőség a megoldás minden költségvetés-tervezési vagy költségvetés-ellenőrzési adat konszolidálására.
 
-3. Az egyes vállalatokkal kapcsolatos részletek megjelenítése tranzakciós szinten.
+A leányvállalatok az egész világban vannak szétszórva, és több számlatükörrel rendelkeznek. Mi a legjobb módszer az adatok konszolidálására?
+- Több lehetőség közül választhat, amikor több számlatükröt kell kezelnie. Használhatja az **Online konszolidálás** lehetőséget, majd válassza ki, hogy a fő számlán megadott konszolidációs számlát vagy a konszolidációs számlacsoportot használja. Emellett használhatja a **Pénzügyi jelentéskészítés** lehetőséget is, megadhat több linket pénzügyi dimenziókhoz a sordefinícióban és leképezheti a számlákat.
 
-A **Pénzügyi jelentéskészítés** lehetőség a megfelelő választás, mert a tranzakciós szintű részletek annyi vállalathoz tekinthetők meg, amennyi a jelentési fa definíciójában van megadva.
+Többszintű konszolidáció szükséges. Ez azt jelenti, hogy először az összes európai leányvállalat konszolidációja megy végbe brit fontban (GBP). Ezután létrejönnek az adatok és átváltásra kerül a konszolidált összeg dollárra (USD). Hogy lehet ezt megtenni?
+- Ha többszintű konszolidáció szükséges, miközben az egyes szintek különböző pénznemeket használnak, akkor az **Online konszolidálás** lehetőséget kell választani. Több konszolidációs vállalat is létrehozható amelyeknek különböző a könyvelési és jelentési pénzneme. A konszolidációt többször kell futtatni. A **Pénzügyi jelentéskészítés** lehetőség mindig átváltja az egyes forrásvállalatok könyvelési pénznemét a választott pénznemre.
 
-4. Költségvetés tervezést vagy költségvetés-ellenőrzést használunk, amit konszolidálni kell.
+A leányvállalatok más rendszerben vannak. Hogyan konszolidálhatók?
+- Használja a **Konszolidálás importálással** lehetőséget az egyenlegek konszolidációs vállalatba foglalásához.
 
-A **Pénzügyi jelentéskészítés** lehetőség a megoldás minden költségvetés-tervezési vagy költségvetés-ellenőrzési adat konszolidálására.
+Néhány leányvállalatot csak részben birtoklunk. Mi a legjobb módszer ezeknek a konszolidálására?
+- Ezekhez a leányvállalatokhoz több lehetőség van. A **Pénzügyi jelentéskészítés** lehetőséggel megadhatja a jelentési fa definícióját és a tulajdoni viszonyokat. Továbbá használhat számított oszlopot vagy sort, hogy megjelenítse a részlegesen birtokolt összeget. Még a kisebbségi kamatot is megjelenítheti a jelentés külön sorában. Használhatja az **Online konszolidálás** lehetőséget is. A **Jogi személyek** lap tartalmaz egy **Tulajdonos** oszlopot, ahol megadhatja az anyavállalat által birtokolt százalékot.
 
-5. A leányvállalatok az egész világban vannak szétszórva, és több számlatükörrel rendelkeznek. Mi a legjobb módszer az adatok konszolidálására?
+A szervezetnek meg kell jelenítenie a konszolidációkat üzleti egységenként vagy a szervezeti hierarchiákat kívánja használni.
+- A **Pénzügyi jelentéskészítés** lehetőség a megoldás. A szervezeti hierarchiák amelyek jogi személyekkel vagy pénzügyi dimenziókkal rendelkeznek jelenthetők a Pénzügyi jelentéskészítéssel. Létrehozhatja a saját, többszintű hierarchiáját a jelentési fa definíciójának segítségével, ami jogi személyek és dimenzióértékek kombinációjából áll.
 
-Több lehetőség közül választhat, amikor több számlatükröt kell kezelnie. Használhatja az **Online konszolidálás** lehetőséget, majd válassza ki, hogy a fő számlán megadott konszolidációs számlát vagy a konszolidációs számlacsoportot használja. Emellett használhatja a **Pénzügyi jelentéskészítés** lehetőséget is, megadhat több linket pénzügyi dimenziókhoz a sordefinícióban és leképezheti a számlákat.
+A rendszernek egynél több példánya létezik.
+- A **Vállalati egyenlegek exportálása** lehetőséggel exportálhat egy példányból, majd használja a **Konszolidálás importálással** lehetőséget a másik példányban, hogy konszolidálja az adatokat.
 
-6. Többszintű konszolidáció szükséges. Ez azt jelenti, hogy először az összes európai leányvállalat konszolidációja megy végbe brit fontban (GBP). Ezután létrejönnek az adatok és átváltásra kerül a konszolidált összeg dollárra (USD). Hogy lehet ezt megtenni?
-
-Ha többszintű konszolidáció szükséges, miközben az egyes szintek különböző pénznemeket használnak, akkor az **Online konszolidálás** lehetőséget kell választani. Több konszolidációs vállalat is létrehozható amelyeknek különböző a könyvelési és jelentési pénzneme. A konszolidációt többször kell futtatni. A **Pénzügyi jelentéskészítés** lehetőség mindig átváltja az egyes forrásvállalatok könyvelési pénznemét a választott pénznemre.
-
-7. A leányvállalatok más rendszerben vannak. Hogyan konszolidálhatók?
-
-Használja a **Konszolidálás importálással** lehetőséget az egyenlegek konszolidációs vállalatba foglalásához.
-
-8. Néhány leányvállalatot csak részben birtoklunk. Mi a legjobb módszer ezeknek a konszolidálására?
-
-Ezekhez a leányvállalatokhoz több lehetőség van. A **Pénzügyi jelentéskészítés** lehetőséggel megadhatja a jelentési fa definícióját és a tulajdoni viszonyokat. Továbbá használhat számított oszlopot vagy sort, hogy megjelenítse a részlegesen birtokolt összeget. Még a kisebbségi kamatot is megjelenítheti a jelentés külön sorában. Használhatja az **Online konszolidálás** lehetőséget is. A **Jogi személyek** lap tartalmaz egy **Tulajdonos** oszlopot, ahol megadhatja az anyavállalat által birtokolt százalékot.
-
-9. A szervezetnek meg kell jelenítenie a konszolidációkat üzleti egységenként vagy a szervezeti hierarchiákat kívánja használni.
-
-A **Pénzügyi jelentéskészítés** lehetőség a megoldás. A szervezeti hierarchiák amelyek jogi személyekkel vagy pénzügyi dimenziókkal rendelkeznek jelenthetők a Pénzügyi jelentéskészítéssel. Létrehozhatja a saját, többszintű hierarchiáját a jelentési fa definíciójának segítségével, ami jogi személyek és dimenzióértékek kombinációjából áll.
-
-10. A rendszernek egynél több példánya létezik.
-
-A **Vállalati egyenlegek exportálása** lehetőséggel exportálhat egy példányból, majd használja a **Konszolidálás importálással** lehetőséget a másik példányban, hogy konszolidálja az adatokat.
-
-11. Végezhetek-e Konszolidációt, ha a költségvetésem **TERVEZET** állapotú? 
-            
-Nem fogja tudni feldolgozni vagy végrehajtani a költségvetéseket a konszolidált vállalatban. A költségvetés-tervezetek konszolidálásához a Financial Reporting használatát javasoltuk.
+Végezhetek-e Konszolidációt, ha a költségvetésem **TERVEZET** állapotú? 
+- Nem fogja tudni feldolgozni vagy végrehajtani a költségvetéseket a konszolidált vállalatban. A költségvetés-tervezetek konszolidálásához a Financial Reporting használatát javasoltuk.
 
 További információ: [Devizaátértékelés konszolidációs vállalatban](../general-ledger/currency-revaluation-consolidation-company.md).
 

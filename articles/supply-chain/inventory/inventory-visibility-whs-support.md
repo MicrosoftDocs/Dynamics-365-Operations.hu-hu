@@ -2,7 +2,7 @@
 title: Inventory Visibility támogatása WMS-cikkekhez
 description: Ez a témakör a raktárkezelési folyamatokban (WMS- cikkeknél) engedélyezett cikkek láthatósági kezelését írja le.
 author: yufeihuang
-ms.date: 03/10/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-10
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 54ce637d2d7b590988f7590eae5248276bcc4b96
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: bed402ecf20c19e81b2687efd90dba600460971a
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066610"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762739"
 ---
 # <a name="inventory-visibility-support-for-wms-items"></a>Inventory Visibility támogatása WMS-cikkekhez
 
@@ -45,17 +45,17 @@ Ha a Speciális WMS szolgáltatást használja a készlet láthatóságához, mi
 
 ## <a name="when-to-use-the-feature"></a>Mikor kell használni a funkciót?
 
-Javasoljuk, hogy a Speciális WMS szolgáltatás használata a készlet láthatósága érdekében olyan helyzetekben, amikor az alábbi feltételek teljesülnek:
+Javasoljuk, hogy a WMS szolgáltatást használja a készlet láthatósága érdekében olyan helyzetekben, amikor az alábbi feltételek teljesülnek:
 
 - Az Ellátásilánc-kezelés adatait szinkronizálja a készlet láthatóságával.
 - A WMS használatban van az ellátásilánc-kezelésben.
-- A felhasználók a raktárszinttől eltérő szinten foglalják le a WMS-cikkeket (például mert raktári munkát használ).
+- A felhasználók foglalást kötnek a wmS-cikkekre a raktár szintje alatti szinteken (például az tábla szintjén, mert a raktári munka feldolgozását intézi).
 
 Egyéb helyzetekben a tényleges készlet lekérdezésének eredményei ugyanazok lesznek, függetlenül attól, hogy engedélyezve van-e a Készlet láthatósága speciális WMS szolgáltatás. Ezenkívül a teljesítmény is jobb lesz, ha ilyen helyzetekben nem engedélyezi a szolgáltatást, mivel kevesebb számítás és kisebb járulékos költség van.
 
-## <a name="enable-the-advanced-wms-feature-for-inventory-visibility"></a>A Speciális WMS szolgáltatás engedélyezése a készlet láthatósága érdekében
+## <a name="enable-the-wms-feature-for-inventory-visibility"></a>A WMS szolgáltatás engedélyezése a készlet láthatósága érdekében
 
-Ha engedélyezni szeretné a Speciális WMS szolgáltatást a készlet láthatósága érdekében, kövesse ezeket a lépéseket.
+Ha engedélyezni szeretné a WMS szolgáltatást a készlet láthatósága érdekében, kövesse ezeket a lépéseket.
 
 1. Jelentkezzen be rendszergazdaként az Ellátásilánc-kezelésbe.
 1. A Szolgáltatáskezelés [munkaterület](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) megnyitása és a következő funkciók engedélyezése ebben a sorrendben:
@@ -65,7 +65,7 @@ Ha engedélyezni szeretné a Speciális WMS szolgáltatást a készlet látható
 
 1. Menjen a **Készletgazdálkodás \> Beállítás \> Készletláthatóság integrációs paraméterek** menüpontba.
 1. **A WMS-cikkek engedélyezése** lapon állítsa **a WMS-cikkek** engedélyezése lehetőséget Igen *beállításra*.
-1. Bejelentkezés a Power Apps alkalmazásba.
+1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
 1. Nyissa meg **a Konfigurálás** lapot, **majd a Funkciókezelés** lapon kapcsolja be a *SpeciálisWHS szolgáltatást*.
 1. Az Ellátásilánc-kezelés területén menjen a Készletkezelés **– Időszakos \> feladatok \>– Készlet láthatósága integrációhoz**.
 1. A munkaablakban a Disable **gombra kattintva** ideiglenesen letilthatja a készlet láthatóságát.
@@ -82,21 +82,24 @@ A WMS-cikkek lekérdezéseiből származó eredmények alapvetően megegyezik a 
 - `ReservOrdered`
 - `ReservPhysical`
 
-Minden más fizikai intézkedések számítása úgy történik, ahogyan akkor történik, amikor a Készlet láthatósága speciális WMS szolgáltatás nincs engedélyezve.
+Minden más fizikai intézkedések számítása úgy történik, mint amikor a WMS készlet láthatósági funkciója le van tiltva.
 
 A WMS-cikkekhez [tartozó](https://www.microsoft.com/download/details.aspx?id=43284) cikkekkel kapcsolatos raktári számításokról a Raktárkezelés útmutatója tartalmaz részletes tájékoztatást.
 
-Az exportált adatentitások Dataverse még nem frissítheti a WMS-cikkek mennyiségét. Az adatentitások által látható mennyiségek mind a nem WMS-cikkek, mind az olyan mennyiségek esetében helyesek, amelyekre nem hatással van a WMS-logika (`AvailPhysical``AvailOrdered` azaz a intézkedések, kivéve az, `ReservPhysical` és `ReservOrdered``fno` az adatforrás).
+## <a name="on-hand-list-view-and-data-entity-for-wms-items"></a>A WMS-cikkekhez tartozó, az adott cikkhez tartozó, az adott cikkhez tartozó, az adott vállalatnál rendelkezésre lévő listanézet és adatentitás
 
-Tilos az ellátásilánc-kezelés adatforrásában tárolt WMS-cikkmennyiségek módosításait. A készlet láthatóságának egyéb szolgáltatásaival kapcsolatban a korlátozás érvényben van, hogy megelőzhetőek az ütközések.
+A **készlet láthatósági összefoglaló lapja** nézetet biztosít az *aktuális készletindex lekérdezésének előzetes betöltési eredményei entitáshoz*. A Készletösszegzés *entitástól* *eltérően az aktuális index lekérdezés előzetes betöltési eredményei* entitás tényleges készletlistát biztosít a kiválasztott dimenziókkal együtt a termékekhez. A készlet láthatósága 15 percenként szinkronizálja az előzetesen betöltött összesített adatokat.
 
-## <a name="soft-reservations-on-wms-items-in-inventory-visibility"></a>A WMS-cikkekre vonatkozó soft foglalások a készlet láthatóságában
+Ha a készlet láthatóságát a WMS-cikkekhez használja, és szeretné megtekinteni a *WMS-cikkek aktuális listáját, javasoljuk,*[hogy engedélyezze a készlet láthatóságának összegzése funkciót (](inventory-visibility-power-platform.md#preload-streamlined-onhand-query) lásd még egy egyszerű aktuális lekérdezés előzetes betöltését). A megfelelő adatentitás Dataverse tárolja a lekérdezés előzetes betöltési eredményét, amely 15 percenként frissül. Az adatentitás neve.`Onhand Index Query Preload Result`
 
-A WMS-cikkekre [általánosan](inventory-visibility-reservations.md) támogatott az előzetes lefoglalás. Az előzetes foglalási számításokban a WMS-hez kapcsolódó fizikai intézkedéseket is figyelembe lehet foglalni. 
+> [!IMPORTANT]
+> Az Dataverse entitás csak olvasható. Az adatokat megtekintheti és exportálhatja a készlet láthatósági entitásában, **de nem módosíthatja őket**.
 
-A WMS-cikkeknél *jelenleg* nem támogatott a foglaláshoz rendelkezésre álló számítás. Ezért ha az aktuális dimenziók fölött foglalás történik, ahol nem teljes a foglalás, *akkor helytelen a rendelkezésre álló foglalási* számítás. Az kötetlen foglalásokra nem fog hatással lenni, **ha azCheckAvailForReserv beállítás** le van tiltva az soft [reservation API-ban](inventory-visibility-api.md#create-one-reservation-event).
+Tilos az Ellátásilánc-kezelés adatforrásban (`fno`) tárolt WMS-cikkmennyiségek módosításait. Ez a viselkedés megfelel a készlet láthatósága egyéb szolgáltatásainak viselkedésének. Ez a korlátozás az ütközések elkerülése érdekében van érvényben.
 
-Ez a megszorítás az olyan funkciókra és testreszabott funkciókra is vonatkozik, amelyek az előzetes foglaláson (például felosztáson) alapulnak.
+## <a name="wms-item-compatibility-for-other-functions-in-inventory-visibility"></a>WMS-cikk-kompatibilitás a készlet láthatósága egyéb funkcióihoz
+
+[A WMS-cikkekre](inventory-visibility-reservations.md)[vonatkozó](inventory-visibility-allocation.md) előzetes foglalások és készletfoglalások támogatottak. Az előzetes foglalások és felosztási számításokban a WMS-hez kapcsolódó fizikai intézkedéseket is figyelembe lehet foglalni.
 
 ## <a name="calculate-available-to-promise-quantities"></a>Ígérethez rendelkezésre álló mennyiségek kiszámítása
 

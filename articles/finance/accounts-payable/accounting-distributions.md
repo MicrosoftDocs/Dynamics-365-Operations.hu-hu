@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
-ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
+ms.openlocfilehash: 4330c86ee9ae35ce0f2c7bb85db533a39eafac46
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "9588953"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779581"
 ---
 # <a name="accounting-distributions"></a>Könyvelési felosztások
 
@@ -51,7 +51,7 @@ Az általános könyvelési felosztás funkciók az alábbi lehetőségeket bizt
     -   Az aktuális dokumentum számviteli állapotát itt tekintheti meg: **Hivatkozás**. Az állapot a teljes dokumentumra vonatkozik, és jelzi, hogy a dokumentum folyamatban van vagy befejeződött-e.
 -   **Felosztások megtekintése** – A bizonylat összes sorához és a pénzösszegekhez tartozó könyvelési felosztás megtekintése. A könyvelési felosztásokat ebből a nézetből nem módosíthatja.
 
-A 10.0.13-as verzióban egy olyan funkció található, amely ellenőrzi a könyvelési felosztási táblát annak érdekében, hogy az új mezők biztosan helyesen legyenek beállítva. Ennek a funkciónak a neve: **Dokumentumok adatainak további ellenőrzésének engedélyezése a forrásbizonylat könyvelési keretrendszer használatával**. Ez a funkció alapértelmezés szerint a 10.0.29 verzióban lesz bekapcsolva. 
+A rendszer egy olyan funkciót adott hozzá, amely ellenőrzi a könyvelési felosztási táblát, hogy ellenőrizze az új mezők helyes beállítását. Ennek a funkciónak a neve: **Dokumentumok adatainak további ellenőrzésének engedélyezése a forrásbizonylat könyvelési keretrendszer használatával**. Ez a funkció a 10.0.29 verzióban alapértelmezés szerint be van kapcsolva. 
 
 További tájékoztatás: [Könyvelési felosztások és az analitikus napló bejegyzései szállítói számlákhoz](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
 

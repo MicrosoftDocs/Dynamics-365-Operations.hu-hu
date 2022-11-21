@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ad75439bf3dfa1ed33e35fa9cfee153012e9f60
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4c441d197957674d68c4c92b454a9dca91d76ea0
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716803"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775188"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Fő számlaadatok a Kintlevőségek rendszerben, szállítói számla használatával
 
@@ -68,7 +68,10 @@ Ez a feladat-útmutató segít Önnek szállítói számla létrehozásában egy
 17. Adjon meg egy számot az **Egységár** mezőben. Most, hogy az egységár megegyezik, az állapot Sikeres értékre frissül. Ha az irányelve megengedi az eltéréseket, vagy az egyeztetés csak egy figyelmeztetés, akkor ettől függetlenül fel tudja adni a számlát.  
 18. Zárja be a lapot.
 19. Kattintson a **Bejegyzés** lehetőségre.
-20. Zárja be az űrlapot. Ne felejtse, hogy a beszerzési rendelés már nem bevételezettként, hanem nem számlázottként van listázva.  
+20. Zárja be a lapot. 
+
+>[!Note] 
+>A beszerzési rendelés már nem szerepel beérkezettként, de nem számlázottként.  
 
 
 

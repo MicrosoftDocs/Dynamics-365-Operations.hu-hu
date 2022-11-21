@@ -2,25 +2,25 @@
 title: Több, eltérő engedményidőszakra vonatkozó számla kiegyenlítése egy vevői kifizetéssel
 description: Ez a cikk bemutatja, hogyan lehetséges több számlát is kifizetni akkor, ha az összes számla jogosult készpénzfizetési engedményre. Ebben cikkben bemutatott esetek rávilágítanak arra, hogy a készpénzfizetési engedmények, hogyan függnek a kifizetés idejétől.
 author: ShivamPandey-msft
-ms.date: 10/26/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6035973abea9dacd4b6d4d8bf2fd3c7d6b10fb0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6bf321a5b0511295f2500f10cdffa9ff6f043bff
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872644"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780242"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Több, eltérő engedményidőszakra vonatkozó számla kiegyenlítése egy vevői kifizetéssel
 
@@ -44,11 +44,11 @@ Anna a június 29 ezeket a számlákat teljesen kiegyenlítendő kifizetési nap
 -   A kifizetés, számla FTI-10041 990,00. A készpénzfizetési engedmény 1 százalék vagy 10,00 származik.
 -   A kifizetés, számla FTI-10042 980,00. A készpénzfizetési engedmény 2 százalék vagy 20,00 származik.
 
-| Jelölés                     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Pénznem | Kiegyenlítendő összeg |
-|--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Kijelölve                 | Normál            | FTI-10040 | 4032    | 2015/15/5 | 2015/15/6 | 10040   | 1000,00                             |                                       | dollár      | 1000,00         |
-| Kijelölve                 | Normál            | FTI-10041 | 4032    | 2015-06-25 | 2015/07/25 | 10041   | 1000,00                             |                                       | dollár      | 990,00           |
-| Kiválasztva és kiemelve | Normál            | FTI-10042 | 4032    | 2015-06-25 | 2015/07/25 | 10042   | 1000,00                             |                                       | dollár      | 980,00           |
+| Jelölés | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum   | Fiz. határidő  | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Pénznem | Kiegyenlítendő összeg |
+|------|----------|-----------|---------|-----------|-----------|---------|---------------------|---------------------|----------|------------------|
+| Kiválasztva     | Normál      | FTI-10040 | 4032    | 2020/15/5 | 2020/15/6 | 10040   | 1,000.00  |                    | USD      | 1,000.00         |
+| Kiválasztva     | Normál      | FTI-10041 | 4032    | 2020/25/6 | 2020/25/7 | 10041   | 1,000.00  |                    | USD      | 990.00           |
+| Kiválasztva és kiemelve | Normál      | FTI-10042 | 4032    | 2020/25/6 | 2020/25/7 | 10042   | 1,000.00    |              | USD      | 980.00           |
 
 A kifizetés feladása után a a vevői egyenleg értéke 0,00.
 
@@ -60,19 +60,19 @@ Anna a július 1 ezeket a számlákat teljesen kiegyenlítendő kifizetési napl
 -   A kifizetés, számla FTI-10042 990,00. A készpénzfizetési engedmény 1 százalék vagy 10,00 származik. Bár július 1-jén határideje, amely megfelel a 2 százalékos engedményt után, akkor még mindig határideje, amely megfelel az 1%-os engedményt.
 
 | Jelölés                     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Pénznem | Kiegyenlítendő összeg |
-|--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Kijelölve                 | Normál            | FTI-10040 | 4032    | 2015/15/5 | 2015/15/6 | 10040   | 1000,00                             |                                       | dollár      | 1000,00         |
-| Kijelölve                 | Normál            | FTI-10041 | 4032    | 2015-06-25 | 2015/07/25 | 10041   | 1000,00                             |                                       | dollár      | 990,00           |
-| Kiválasztva és kiemelve | Normál            | FTI-10042 | 4032    | 2015-06-25 | 2015/07/25 | 10042   | 1000,00                             |                                       | dollár      | 990,00           |
+|----------|---------|-----------|---------|-----------|-----------|---------|--------------------|------------------|----------|------------------|
+| Kiválasztva         | Normál            | FTI-10040 | 4032    | 2020/15/5 | 2020/15/6 | 10040   | 1,000.00         |                | USD      | 1,000.00         |
+| Kiválasztva                 | Normál            | FTI-10041 | 4032    | 2020/25/6 | 2020/25/7 | 10041   | 1,000.00  |               | USD      | 990.00           |
+| Kiválasztva és kiemelve | Normál            | FTI-10042 | 4032    | 2020/25/6 | 2020/25/7 | 10042   | 1,000.00  |             | USD      | 990.00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Részleges kiegyenlítés függőben június 29-én
 Vevői 4032 kifizethet a részleges összeget, például minden egyes számlához felét. Anna létrehoz egy kifizetést a vevő 4032 és megnyílik az **Tranzakciók kiegyenlítése** oldalon. A **Tranzakciók kiegyenlítése** lapon Anna megjelölése kiegyenlítésre három számla egyes sorai. Az egyes sorokban Arnie felviszi a kiegyenlítendő összeg alapján, ha a vevő által adott utasításokat. Arnie kiválaszt egy sort, ha a sor engedményösszege és a készpénzfizetési engedmény összege, amely látja. Fél a számlát a vevő fizeti, mert Anna fér hozzá, amelyek értéke a **készpénzfizetési engedmény összege** mező FTI-10042 értéke **20,00**, de az érték a **alkalmazott készpénzfizetési engedmény** mező **10,00**. A kifizetés összege 1485,00.
 
-| Jelölés                     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Pénznem | Kiegyenlítendő összeg |
-|--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Kijelölve                 | Normál            | FTI-10040 | 4032    | 2015/15/5 | 2015/15/6 | 10040   | 1000,00                             |                                       | dollár      | 500,00           |
-| Kijelölve                 | Normál            | FTI-10041 | 4032    | 2015-06-25 | 2015/07/25 | 10041   | 1000,00                             |                                       | dollár      | 495,00           |
-| Kiválasztva és kiemelve | Normál            | FTI-10042 | 4032    | 2015-06-25 | 2015/07/25 | 10042   | 1000,00                             |                                       | dollár      | 490.00           |
+| Jelölés   | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Pénznem | Kiegyenlítendő összeg |
+|-------------|-------------------|-----------|---------|-----------|-----------|---------|-----------|------------------|----------|------------------|
+| Kiválasztva   | Normál       | FTI-10040 | 4032    | 2020/15/5 | 2020/15/6 | 10040   | 1,000.00        |               | USD      | 500.00           |
+| Kiválasztva                 | Normál            | FTI-10041 | 4032    | 2020/25/6 | 2020/25/7 | 10041   | 1,000.00     |     | USD      | 495,00           |
+| Kiválasztva és kiemelve | Normál            | FTI-10042 | 4032    | 2020/25/6 | 2020/25/7 | 10042   | 1,000.00     |         | USD      | 490.00           |
 
 Arnie manuálisan is megadhatja a 1485,00 értékű kifizetés összegét, mielőtt megnyitná a **Tranzakciók kiegyenlítése** oldalt. Ha Arnie kézzel beírja a kifizetés összegét, és megjelöli a három tranzakciót, de nem módosítja az értéket a **Kiegyenlítendő összeg** mezőben minden tranzakciónál, akkor a következő üzenetet kapja a lap bezárásakor:
 
@@ -88,11 +88,11 @@ Arnie megtekintheti ezt az információt a **Vevői tranzakciók** oldalon.
 
 | Bizonylat    | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg  | Pénznem |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10040  | Számla          | 2015/15/5 | 10040   | 1000,00                             |                                       | 0,00     | dollár      |
-| FTI-10041  | Számla          | 2015-06-25 | 10041   | 1000,00                             |                                       | 1000,00 | dollár      |
-| FTI-10042  | Számla          | 2015-06-25 | 10042   | 1000,00                             |                                       | 505.10   | dollár      |
-| ARP-10040  | Kifizetés          | 2015/29/6 |         |                                      | 1,485.00                              | 0,00     | dollár      |
-| DISC-10040 | Készpénzfizetési engedmény    | 2015/29/6 |         |                                      | 9,90                                  | 0,00     | dollár      |
+| FTI-10040  | Számla          | 2020/15/5 | 10040   | 1,000.00                             |                                       | 0,00     | USD      |
+| FTI-10041  | Számla          | 2020/25/6 | 10041   | 1,000.00                             |                                       | 1,000.00 | USD      |
+| FTI-10042  | Számla          | 2020/25/6 | 10042   | 1,000.00                             |                                       | 505.10   | USD      |
+| ARP-10040  | Kifizetés          | 2020/29/6 |         |                                      | 1,485.00                              | 0,00     | USD      |
+| DISC-10040 | Készpénzfizetési engedmény    | 2020/29/6 |         |                                      | 9,90                                  | 0,00     | USD      |
 
 
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262298"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785099"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>A platform eltávolított vagy elavult funkciói
 
@@ -51,7 +51,7 @@ A One Dynamics One Platform [munkamunka](/dynamics365-release-plan/2022wave2/fin
 | Szolgáltatási kérelmek | Nem | Igen | Igen: [Önkiszolgáló telepítések](../deployment/infrastructure-stack.md) |
 | SharePoint-integráció | Igen | Igen | Nem |
 | Konfiguráció- és adatkezelő | Nem | Igen | Nem |
-| Folyamatadat-csomagok | Nem | Igen | Igen: Adatimport exportálási keretrendszer (DIXF) |
+| Folyamatadat-csomagok | Nem | Igen | Igen: [Adatimport exportálási keretrendszer (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
 | Beékítés frissítése | Nem | Igen | Igen: [Egyverziós](../lifecycle-services/oneversion-overview.md) szolgáltatásfrissítések állnak rendelkezésre. |
 | Infrastruktúrabecslő | Igen | Nem | Nem |
 | Licenc méretezése | Igen | Nem | Nem |
@@ -71,10 +71,10 @@ A One Dynamics One Platform [munkamunka](/dynamics365-release-plan/2022wave2/fin
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A rendszer eltávolítja a következő kódokat, hogy megfeleljenek a jelenlegi biztonsági protokolloknak.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Felváltotta másik szolgáltatás?**   | 2022 [. november 30-án kezdődően az ügyfelek csak a szabványos kódos csomagokat használhatja](/power-platform/admin/server-cipher-tls-requirements). Ez a módosítás hatással van a kiszolgálóinkkal kommunikáló ügyfelekre és kiszolgálókra, és hatással lehet például a külső fél integrációjára, amelyek nem a szabványos kódcsomagokhoz vannak hatással. |
+| **Felváltotta másik szolgáltatás?**   | 2023 [. január 31-től kezdve a vevők csak a szabványos kódos suite-eket használhatja](/power-platform/admin/server-cipher-tls-requirements). Ez a módosítás hatással van a kiszolgálóinkkal kommunikáló ügyfelekre és kiszolgálókra, és hatással lehet például a külső fél integrációjára, amelyek nem a szabványos kódcsomagokhoz vannak hatással. |
 | **Érintett területek**         | Finance and Operations alkalmazások |
 | **Telepítési beállítás**              | Felhőtelepítések |
-| **Állapot**                         | Elavult. Az ügyfeleknek 2022. november 30. előtt frissíteniük kell a kiszolgálókat. A TLS Cipher Suite rendelés konfigurálásával kapcsolatos további tudnivalókat lásd [a Szállítási réteg biztonságának (TLS) kezelése.](/windows-server/security/tls/manage-tls)  |
+| **Állapot**                         | Elavult. Az ügyfeleknek 2023. január 31-ig frissíteniük kell a kiszolgálókat. A TLS Cipher Suite rendelés konfigurálásával kapcsolatos további tudnivalókat lásd [a Szállítási réteg biztonságának (TLS) kezelése.](/windows-server/security/tls/manage-tls)  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Funkció értékcsökkenése 2022. júniusban

@@ -1,35 +1,37 @@
 ---
 title: Rendelésteljesítés az áruházban
-description: Ez a cikk az áruházi rendelés teljesítéséről nyújt áttekintést.
+description: Ez a cikk az üzletrendelések teljesítéséről ad áttekintést a következőben:Microsoft Dynamics 365 Commerce
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailStoreTable, RetailTillLayout
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f0b6ff8ec105da04b4b2416d8f6864c70c92fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bf338c6d0b6a237cad2974d36c23238029fe9b38
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854978"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785072"
 ---
 # <a name="store-order-fulfillment"></a>Rendelésteljesítés az áruházban
 
 [!include [banner](includes/banner.md)]
+
+Ez a cikk az üzletrendelések teljesítéséről ad áttekintést a következőben:Microsoft Dynamics 365 Commerce
 
 Számos kiskereskedő szeretné optimalizálni a rendelésteljesítést a rendelések teljesítésének engedélyezésével az üzletek számára. A rendelésteljesítés az üzlet szintjén segíthet megkönnyíteni a túlkészletezési helyzeteket az egyes üzletek esetében, vagy logisztikai szempontból lehet szükség rá, amennyiben egy üzletnek extra kapacitása van, vagy a vevőhöz közelebb van szállítási távolság szempontjából. A szükséglet megoldása érdekében egy egységes rendelésteljesítési művelet érhető el pénztárban.
 
 Az adott üzletben teljesítendő rendelésekél a rendelési fejlécben vagy a rendelés soraiban az üzlet raktára van hozzárendelve.
 
 A rendelés teljesítése művelet a pénztárban egységes munkaterületet biztosít a pénztárban, amely a rendelések feldolgozására használható. Itt szerepel minden, a rendelés elfogadása, a megjelölése szállítottként vagy az üzleten belüli felvétel kezdeményezése.
+
+Az alábbi videofelvétel a következő témakörben található az üzlet teljesítő lehetőségeiről ad áttekintést és bemutatót Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRXE]
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Hozzáférés az egyesített rendelésteljesítéshez a pénztárban
 

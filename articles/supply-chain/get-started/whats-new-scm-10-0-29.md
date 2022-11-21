@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d12932f35b3b451577d38948f60bc3a73c10e2a0
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 8f6ba18096cffe907c339ad525c99535bc5ee568
+ms.sourcegitcommit: 7745c4bd3ab3aace4b4cb814eaf0cfdbae4a0cbd
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714833"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9784691"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10029-october-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management szolgáltatásban – 10.0.29. (2022. október)
 
@@ -33,7 +33,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 
 | Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
-| Készlet és logisztika | [A WMS-cikkek felosztása és foglalása a készlet láthatósága érdekében](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Hamarosan | Alapértelmezés szerint engedélyezve |
+| Készlet és logisztika | [A WMS-cikkek felosztása és foglalása a készlet láthatósága érdekében](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | [Inventory Visibility támogatása WMS-cikkekhez](../inventory/inventory-visibility-whs-support.md) | Alapértelmezés szerint engedélyezve |
 | Készlet és logisztika | [Előrehozott aktuális készletlisták](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [A Készletláthatóság alkalmazás használata](../inventory/inventory-visibility-power-platform.md) | Szolgáltatáskonfiguráció által engedélyezve |
 | Készítés rendelésre ellátás automatizálása | [Készítés rendelésre ellátás automatizálása](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Készítés rendelésre ellátás automatizálása](../master-planning/make-to-order-supply-automation.md) | Funkciókezelés:<br>*Készítés rendelésre ellátás automatizálása* |
 | Tervezés | [DDMRP részletes információk megtekintése és alkalmazása](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md) | Funkciókezelés:<br>*(Előzetes verzió) DDMRP a Tervezési optimalizáláshoz* |
@@ -62,7 +62,7 @@ Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgócikke
 | Szolgáltatásterület | Új vagy frissített cikkek |
 |---|---|
 | Alaptervezés, CTP | [Értékesítési rendelés szállítási dátumának számítása az ígérhető használatával](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) |
-| Alaptervezés, DDMRP | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md)<br>[A DDMRP szolgáltatás bekapcsolása a rendszerhez](../master-planning/planning-optimization/ddmrp-enable.md)<br>[Készletpozicionálás](../master-planning/planning-optimization/ddmrp-inventory-positioning.md)<br>[Bufferprofil és -szintek](../master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md)<br>[Igényvezérelt tervezés](../master-planning/planning-optimization/ddmrp-planning.md)<br>[Vizuális és együttműködési végrehajtása](../master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md) |
+| Alaptervezés, DDMRP | [Igényvezérelt anyagigény-tervezés – áttekintés](../master-planning/planning-optimization/ddmrp-overview.md)<br>[A DDMRP szolgáltatás bekapcsolása a rendszerhez](../master-planning/planning-optimization/ddmrp-enable.md)<br>[Készletpozicionálás](../master-planning/planning-optimization/ddmrp-inventory-positioning.md)<br>[Bufferprofil és -szintek](../master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md)<br>[Igényvezérelt tervezés](../master-planning/planning-optimization/ddmrp-planning.md)<br>[Vizuális és együttműködési végrehajtás](../master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md) |
 | Raktárkezelés | [Tárolók csomagolása szállításhoz](../warehousing/packing-containers.md)<br>[Csomagolási munka kimenő tárolók csomagolásához és szállítmányok feldolgozásához](../warehousing/packing-work.md) |
 
 ## <a name="feature-state-changes-in-this-release"></a>Funkcióállapot-változások ebben a verzióban

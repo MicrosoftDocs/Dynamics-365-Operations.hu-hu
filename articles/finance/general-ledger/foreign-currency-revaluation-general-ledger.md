@@ -2,25 +2,25 @@
 title: Főkönyvi devizaátértékelés
 description: Ez a cikk áttekintést nyújt a főkönyv devizaátértékelési folyamatának a következőkről – beállításról, a folyamat futtatásáról, a folyamat kiszámításáról és szükség esetén az átértékelési tranzakciók sztornírozásához kapcsolódóan.
 author: kweekley
-ms.date: 06/20/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: 96ae50e339c63687a4c8114d3c965123fd5e37ab
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752803"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779988"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Főkönyvi devizaátértékelés
 
@@ -38,27 +38,27 @@ Az átértékelési folyamat futtatásakor az egyes fő számlákon levő, külf
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Devizaátértékelés futtatásának előkészítése
 Az átértékelési folyamat futtatása előtt a következő beállítás szükséges.
 
--   A **Fő számla** lapon:
--   Ha a fő számlát a Főkönyvben akarja átértékelni, válassza ki a **Devizaátértékelés** lehetőséget. Ha a fő számlát nem szabad átértékelni (például AR és AP esetén, ha a részkönyvekben történik meg az átértékelés), törölje a jelölést.
--   Ha a fő számla be van jelölve átértékelésre, adja meg az **Árfolyamtípust**. A fő számla átértékelése során ezt a rögzített árfolyamtípust használja a rendszer. A pénzügyi beszámolók készítésére külön mező – **Pénzügyi jelentéskészítés árfolyamtípusa** – érhető el. A két mező nincs szinkronizálva, amely különböző árfolyamtípusok használatát teszi lehetővé az átértékeléshez és a pénzügyi jelentésekhez.
+A **Fő számla** lapon:
+ - Ha a fő számlát a Főkönyvben akarja átértékelni, válassza ki a **Devizaátértékelés** lehetőséget. Ha a fő számlát nem szabad átértékelni (például AR és AP esetén, ha a részkönyvekben történik meg az átértékelés), törölje a jelölést.
+ - Ha a fő számla be van jelölve átértékelésre, adja meg az **Árfolyamtípust**. A fő számla átértékelése során ezt a rögzített árfolyamtípust használja a rendszer. A pénzügyi beszámolók készítésére külön mező – **Pénzügyi jelentéskészítés árfolyamtípusa** – érhető el. A két mező nincs szinkronizálva, amely különböző árfolyamtípusok használatát teszi lehetővé az átértékeléshez és a pénzügyi jelentésekhez.
 
--   A **Főkönyv** lapon:
--   Adja meg az **Árfolyamtípust**. Ha az árfolyamtípus nincs megadva a fő számlán, a devizaátértékelés során a rendszer ezt az árfolyamtípust fogja használni.
--   Határozza meg a realizált nyereség, a realizált veszteség, a nem realizált nyereség és nem realizált veszteség számlákat a devizaátértékeléshez. A realizált nyereség és a realizált veszteség számlákat az AR és AP tranzakciók kiegyenlítéséhez használják, míg a nem realizált nyereség és nem realizált veszteség számlákat a nyitott tranzakciók átértékeléséhez és a főkönyvi fő számlákhoz.
+A **Főkönyv** lapon:
+ - Adja meg az **Árfolyamtípust**. Ha az árfolyamtípus nincs megadva a fő számlán, a devizaátértékelés során a rendszer ezt az árfolyamtípust fogja használni.
+ - Határozza meg a realizált nyereség, a realizált veszteség, a nem realizált nyereség és nem realizált veszteség számlákat a devizaátértékeléshez. A realizált nyereség és a realizált veszteség számlákat az AR és AP tranzakciók kiegyenlítéséhez használják, míg a nem realizált nyereség és nem realizált veszteség számlákat a nyitott tranzakciók átértékeléséhez és a főkönyvi fő számlákhoz.
 
--   A **Devizaátértékelési számlák** lapon:
--   Válassza ki a különböző devizaátértékelési számlákat az egyes pénznemek és vállalatok esetében. Ha nem határoz meg számlát, a rendszer a **Főkönyv** lapon található számlákat használja.
+A **Devizaátértékelési számlák** lapon:
+ - Válassza ki a különböző devizaátértékelési számlákat az egyes pénznemek és vállalatok esetében. Ha nem határoz meg számlát, a rendszer a **Főkönyv** lapon található számlákat használja.
 
 ## <a name="process-foreign-currency-revaluation"></a>Devizaátértékelés feldolgozása
 A beállítás befejezése után a **Devizaátértékelés** lap segítségével átértékelheti a fő számlák egyenlegeit. A folyamatot futtathatja valós időben, vagy köteg segítségével ütemezheti is. 
 
 A **Devizaátértékelés** lap megjeleníti az egyes átértékelési folyamatok előzményeit, többek között a folyamat futtatásának időpontját, a megadott kritériumokat, az átértékeléshez létrehozott bizonylatot, valamint az esetleges korábbi átértékelés sztornírozási rekordját. Az átértékelési folyamat futtatásához kattintson a **Devizaátértékelés** gombra. 
 
-A **Kezdő dátum** és a **Záró dátum** értékek meghatározzák az átértékelni kívánt devizaegyenleg számítási dátumtartományát. Eredményszámlák átértékelésekor minden, az adott dátumtartományban előforduló tranzakció összegének átértékelése megtörténik. Mérlegszámlák átértékelésekor a rendszer figyelmen kívül hagyja a Kezdő dátumot. Ehelyett az átértékelendő egyenleg meghatározása a pénzügyi év kezdetétől számítva a Záró dátumig történik. 
+A **Kezdő dátum** és a **Záró dátum** értékek meghatározzák az átértékelni kívánt devizaegyenleg számítási dátumtartományát. Eredményszámlák átértékelésekor minden, az adott dátumtartományban előforduló tranzakció összegének átértékelése megtörténik. A mérlegszámlák átértékeikor **a program figyelmen kívül hagyja a könyvelési** dátumot. Ehelyett az újraértékeléshez **használni kell az egyenleget úgy, hogy a pénzügyi év kezdetétől a cél dátumig tart**. 
 
 Az **Árfolyam dátuma** segítségével határozza meg a dátumot, amelyre az árfolyam alapértelmezett. Például átértékelheti a január 1-je és a január 31-e dátumtartományban levő egyenlegeket a február 1-jén érvényes árfolyamot használva. 
 
-Válassza ki az átértékelni kívánt fő számlákat: Mind, Mérleg vagy Nyereség és veszteség. A rendszer csak az átértékelésre (a Fő számla lapon) megjelölt fő számlákat értékeli át. Ha tovább szeretné korlátozni a fő számlák tartományát, használja a **Belefoglalandó** rekordok lapot a fő számlák tartományának vagy egyes fő számlák meghatározásához. 
+Válassza ki az átértékelni kívánt fő számlákat: Mind, Mérleg vagy Nyereség és veszteség. Csak az átértékelésre megjelölt fő számlák (a **fő** számla oldalon) lesznek átértékelésre. Ha tovább szeretné korlátozni a fő számlák tartományát, **a** Rekordokkal adhatja meg a fő számlák tartományát vagy az egyes fő számlákat. 
 
 Az átértékelési folyamat egy vagy több jogi személy számára futtatható. A keresés csak az ön számára hozzáférhető jogi személyeket jeleníti meg. Válassza ki azokat a jogi személyeket, amelyek számára futtatni akarja az átértékelési folyamatot. 
 
@@ -68,7 +68,7 @@ Az átértékelés egy vagy több deviza számára futtatható. A keresés minde
 
 Ha szeretné kizárni **az** átértékelési folyamatból a Jelentési pénznem-korrekciók naplója segítségével feladott korrekciókat, **·** **állítsa a Jelentési pénznem-korrekciók kizárása beállítást Igen beállításra**. Alapértelmezés szerint a jelentési pénznem korrekciói szerepelnek az átértékelésben. 
 
-A devizaátértékelési folyamat befejezése után az egyes futtatások előzményeinek nyomon követésére létrejön egy rekord.  Minden jogi személy és a feladási réteg számára külön rekord jön létre.
+A devizaátértékelési folyamat befejezése után az egyes futtatások előzményeinek nyomon követésére létrejön egy rekord. Minden jogi személy és a feladási réteg számára külön rekord jön létre.
 
 ## <a name="calculate-unrealized-gainloss"></a>Nem realizált nyereség/veszteség kiszámítása
 A nem realizált nyereség/veszteség tranzakcióit másképpen hozza létre a rendszer a Főkönyvi devizaátértékelésben, illetve az AR és AP átértékelési folyamat során. Az AR és AP esetén a rendszer teljes mértékben sztornózza az előző átértékelést (feltéve, hogy a tranzakció még nincs kiegyenlítve), és új átértékelési tranzakció jön létre a nem realizált nyereség/veszteség számára az új árfolyam alapján. Ez azért van, mivel a rendszer minden egyes tranzakciót átértékel az AR és az AP lehetőségben. A Főkönyvben a korábbi átértékelés nem kerül sztornírozásra. Ehelyett különbözeti tranzakció jön létre a fő számla egyenlege tekintetében, ideértve az előző átértékelési összegeket, valamint az Árfolyam dátuma árfolyamán alapuló új összeget. 
@@ -82,8 +82,8 @@ A nem realizált nyereség/veszteség tranzakcióit másképpen hozza létre a r
 A fő számla január 31-én kerül átértékelésre.  A nem realizált nyereség/veszteség kiszámítása a következőképpen történik.
 
 | Aktuális egyenleg a tranzakció pénznemében | Aktuális egyenleg a könyvelési pénznemben | Átértékelési árfolyam | Új könyvelési pénznem összege | Nem realizált nyereség/veszteség    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 veszteség (833,33 – 1000) |
+|--------------------|---------------------------|----------------------------------|------------------------------------|-----------------------------|
+| 500 EUR            | 1000 USD                  | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 veszteség (833,33 – 1000) |
 
 A következő könyvelési bejegyzés jön létre.
 
@@ -95,8 +95,8 @@ A következő könyvelési bejegyzés jön létre.
 Február hónapra nem történik új tranzakciófeladás.  A fő számla átértékelése február 28-án történik.
 
 | Aktuális egyenleg a tranzakció pénznemében | Aktuális egyenleg a könyvelési pénznemben | Átértékelési árfolyam | Új könyvelési pénznem összege | Nem realizált nyereség/veszteség    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 833,33 USD (1000 - 166,67)                 | 250.0000                         | 1250 USD (500 x 2,5)               | 416,67 nyereség (1250 – 833,33) |
+|---------------------------------------|-----------------------------------|-------------------------------|--------------------|-----------------------------|
+| 500 EUR                 | 833,33 USD (1000 - 166,67)       | 250.0000              | 1250 USD (500 x 2,5)               | 416,67 nyereség (1250 – 833,33) |
 
 A következő könyvelési bejegyzés jön létre.
 

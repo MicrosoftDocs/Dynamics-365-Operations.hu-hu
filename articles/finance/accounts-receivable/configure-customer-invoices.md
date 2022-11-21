@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
-ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
+ms.openlocfilehash: a0d1221e07f6dc4a5a99aa205c4a7f6fb367f000
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9129512"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780230"
 ---
 # <a name="create-a-customer-invoice"></a>Vevői számla létrehozása
 
@@ -31,11 +31,10 @@ Az **értékesítési rendelés vevői számlája** olyan számla, amely érték
 Szabadszöveges **számla** nem kapcsolódik értékesítési rendeléshez. Olyan rendelési sorokat tartalmaz, amelyek személyesen megadott főkönyvi számlákat, szabadszöveges leírásokat és értékesítési mennyiséget foglalnak magukban. Ezen a számlafajtán nem tud cikkszámot megadni. A megfelelő áfaadatokat kell megadnia. Az értékesítéshez tartozó fő számla fel van tüntetve mindegyik számlasornál, amelyet szét lehet osztani több főkönyvi számla között az **Összegek felosztása** lehetőségre kattintva a **Szabadszöveges számla** lapon. Ezen kívül a vevői egyenleg is feladásra kerül az összegző számlához a szabadszöveges számla esetében használt feladási profilból.
 
 További tájékoztatás:
-
-[Szabadszöveges számlák létrehozása](../accounts-receivable/create-free-text-invoice-new.md)[
- szabadszöveges
-](../accounts-receivable/create-free-text-invoice-template-new.md)[számlasablon létrehozása Szabadszöveges számlasablon hozzárendelése vevőhöz ismétlődő](tasks/assign-free-text-invoice-template-customer.md)
-[szabadszöveges számlák létrehozása és feladása](tasks/post-recurring-free-text-invoices.md)
+ - [Szabadszöveges számlák létrehozása](../accounts-receivable/create-free-text-invoice-new.md)
+ - [Szabadszöveges számlasablon létrehozása](../accounts-receivable/create-free-text-invoice-template-new.md)
+ - [Szabadszöveges számlasablon hozzárendelése vevőhöz](tasks/assign-free-text-invoice-template-customer.md)
+ - [Ismétlődő szabadszöveges számlák generálása és feladása](tasks/post-recurring-free-text-invoices.md)
 
 
 A **pro forma számla** olyan számla, amely a tényleges számlaösszegek becsléseként készül el a számla feladása előtt. Pro forma számlát értékesítési **rendeléshez** vagy szabadszöveges számlához lehet nyomtatni vevői számlához. 
@@ -89,7 +88,13 @@ Az értékesítési rendelés **vevői** **számlái telephely vagy szállítás
  - Válassza a **Felosztás a számla szállítási adatai** alapján lehetőséget, ha a feladáskor az értékesítési rendelési sorok szállítási címenként egy számlát hoz létre. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Feladás a Bevétel számlára az olyan értékesítésirendelés-sorokhoz, amelyekhez nem volt ár és költség
-A **főkönyvben** **frissítheti** a Bevétel számlát az olyan értékesítésirendelés-soroknál, amelyekben nincs ár és költség. Az adatok **beállítását** **·** **vagy** megtekintéséhez a Nulla árú és nulla költségű értékesítésirendelés-számlasorok feladása paramétert adja meg a Kinnlevőségek paraméterei oldal Főkönyv és áfa lapján. (**Kinnlevőségek > Beállítása > Kinnlevőségek paraméterei)** Válassza az **Igen** lehetőséget az olyan **értékesítésirendelés**-számlasorok Bevétel számlájának frissítéséhez, amelyekben nincs ár, és nincs költség. Ha ez a beállítás be van jelölve, a bizonylat 0,00 bejegyzést tartalmaz a **vevői** **egyenleghez és a bevételfeladási típusokhoz.** Bevételi számla definiálása az **Értékesítési** rendelés számladefiníció lapján, **a** Készletfeladás paraméterlapon található. Ha ez a beállítás nincs bejelölve, akkor az ár- vagy költségadatokat nem adó sorok nem adnak fel a bevételi **számlára**. Ehelyett a bizonylat a vevői egyenleg feladási típusának 0,00-s **bejegyzését** fogja tartalmazni.
+A **főkönyvben** **frissítheti** a Bevétel számlát az olyan értékesítésirendelés-soroknál, amelyekben nincs ár és költség. 
+
+Az adatok beállítása és megtekintése:
+1. Ugrás a **Bevételi számlára** **·** **nulla árú és nulla költségű értékesítésirendelés-számlasorok paraméterhez a Kinnlevőségek paraméterei oldal Főkönyv és áfa lapján.** (**Kinnlevőségek > Beállítása > Kinnlevőségek paraméterei)** 
+2. Válassza az **Igen** lehetőséget az olyan **értékesítésirendelés**-számlasorok Bevétel számlájának frissítéséhez, amelyekben nincs ár, és nincs költség. 
+ - Ha ez a beállítás be van jelölve, a bizonylat 0,00 bejegyzést tartalmaz a **vevői** **egyenleghez és a bevételfeladási típusokhoz.** Bevételi számla definiálása az **Értékesítési** rendelés számladefiníció lapján, **a** Készletfeladás paraméterlapon található. 
+ - Ha ez a beállítás nincs bejelölve, akkor az ár- vagy költségadatokat nem adó sorok nem adnak fel a bevételi **számlára**. Ehelyett a bizonylat a vevői egyenleg feladási típusának 0,00-s **bejegyzését** fogja tartalmazni.
 
 ## <a name="line-creation-sequence-number-information"></a>Sor-létrehozás sorszámának adatai
 A vevői számlasorok feladása során lehetősége van sorszámok létrehozására. A sorok létrehozási sorozatszámai a feladási folyamat során rendelhetők hozzá. A nem egymást követő számozás engedélyezésével javítható a vevői számlafeladás teljesítménye. A sorok létrehozásának sorozatszámait olyan külső fél integrációi használják, amelyek egymást követő sorrendre várnak. Forduljon az it-részleghez az esetleges sor-létrehozási sorozatszámokkal integrált bővítményekről.

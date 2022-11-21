@@ -2,24 +2,19 @@
 title: Minősítések és értékelések áttekintése
 description: Ez a cikk a következőben olvasható értékeléseket és áttekintéseket tartalmazza:Microsoft Dynamics 365 Commerce
 author: gvrmohanreddy
-ms.date: 10/01/2019
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: ''
-ms.search.industry: ''
-ms.openlocfilehash: 612a3ca480049febac352ed9215ec9de83bbecf6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1f0d3ed5d95ad49cb09cf1f89d0f4c8c07620b92
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269000"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785140"
 ---
 # <a name="ratings-and-reviews-overview"></a>Minősítések és értékelések áttekintése
 
@@ -27,7 +22,7 @@ ms.locfileid: "9269000"
 
 Ez a cikk a következőben olvasható értékeléseket és áttekintéseket tartalmazza:Microsoft Dynamics 365 Commerce
 
-A minősítések és az értékelések fontosak az e-kereskedelmi vevők számára, akik szeretnék megismerni, hogy a vevők milyen véleménnyel vannak a termékekről. Emellett segítséget jelenthetnek a vásárlók számára a vásárlási döntések meghozatalában. A Dynamics 365 Commerce alkalmazásban, a minősítések és a vélemények lehetővé teszik a kereskedők számára, hogy rögzítsék a vevőktől származó minősítéseket és értékeléseket. A kiskereskedők ezután az átlagos minősítéseket és az értékeléseket megjeleníthetik e-Commerce-webhelyükön.
+A minősítések és az áttekintések kulcsfontosságúak az e-commerce ügyfelek számára, akik tudni szeretnék, hogy hogyan látják a más vevők a terméket. Emellett segítséget jelenthetnek a vásárlók számára a vásárlási döntések meghozatalában. A Dynamics 365 Commerce alkalmazásban, a minősítések és a vélemények lehetővé teszik a kereskedők számára, hogy rögzítsék a vevőktől származó minősítéseket és értékeléseket. A kiskereskedők ezután átlagminősítéseket és áttekintő adatokat mutathatják meg az e-commerce webhelyen.
 
 Az átlagos minősítési információ a pénztár (POS) és hívásközpont csatornákon jelenik meg. Ennek megfelelően az értékesítési társítások segítenek a felhasználóknak a döntéshozatalban. A minősítések és a vélemények visszajelzési mechanizmusként is szolgálhatnak, amellyel a kiskereskedők egy termék minőségét javíthatják, így növelve az értékesítéseket.
 
@@ -43,9 +38,14 @@ Az értékelések és vélemények megoldás olyan minialkalmazásokat tartalmaz
 
 Az értékelések és vélemények megoldás egy üzleti intelligencia (BI) sablont is tartalmaz, amely olyan mérőszámokat tartalmaz, amelyek betekintést nyújtanak az értékelésekkel és véleményekkel kapcsolatosan. Az értékelések és a vélemények adatait további elemzések céljából is exportálni lehet.
 
+Az alábbi videofelvételen áttekinthetők a minősítések és az ellenőrzéshez szükséges képességek a következőben:Dynamics 365 Commerce
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wS]
+
 ## <a name="additional-resources"></a>További erőforrások
 
-[A minősítések és ellenőrzések használatának kiválasztása](opt-in-ratings-reviews.md)
+[A minősítések és értékelések használatának bekapcsolása](opt-in-ratings-reviews.md)
 
 [Minősítések és értékelések kezelése](manage-reviews.md)
 

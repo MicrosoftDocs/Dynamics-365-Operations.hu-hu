@@ -302,10 +302,12 @@
                       href: hr-admin-troubleshooting-integration.md
             - name: A Human Resources beállítása
               items:
-                - name: A Human Resources paramétereinek konfigurálása
+                - name: Az emberi erőforrások paramétereinek konfigurálása
                   href: hr-setup-parameters.md
-                - name: A Human Resources megosztott paramétereinek karbantartása
+                - name: Az emberi erőforrások megosztott paramétereinek konfigurálása
                   href: hr-setup-shared-parameters.md
+                - name: Jogi személy hozzáférésének korlátozása a dolgozókhoz
+                  href: hr-advanced-security.md
                 - name: Emberi erőforrásokkal kapcsolatos munkafolyamatok beállítása
                   href: hr-workflow-manage-employee-information.md
                 - name: Dátum és Idő mezők ismertetése
@@ -848,9 +850,11 @@
               href: hr-admin-integration-common-data-service.md
             - name: A Dataverse virtuális tábláinak konfigurálása
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: A virtuális tábla integrációjának biztonsága
+              href: hr-security-config.md
             - name: A Finance szolgáltatással való integráció konfigurálása
               href: hr-admin-integration-finance.md
-            - name: Hivatkozások létrehozása az Human Resources alkalmazásból másik környezetbe
+            - name: Hivatkozások létrehozása a Human Resources alkalmazásból másik környezetbe
               href: configure-links.md
             - name: A Dayforce szolgáltatással való integráció konfigurálása
               href: hr-admin-integration-dayforce.md

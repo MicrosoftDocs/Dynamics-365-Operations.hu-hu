@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 21aaeda413e767fed1815423b0262127c6692bb6
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713671"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775299"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Leírási napló létrehozása vevőhöz
 
@@ -48,9 +48,9 @@ Az útmutató bemutatja, hogyan állíthatja be a leírások paramétereit, majd
 7. Nyissa meg a **Navigációs ablak > Modulok > Főkönyv > Naplóbejegyzések > Általános naplók** elemet.
 8. Válassza ki a leírást tartalmazó napló cikkszámát. Egy sor jön létre a vevői egyenleg visszaállításához. Egy vagy több sor jön létre a leírás leírási számlára való feladásához.  
 9. Zárja be a lapot.
-10. Zárja be a lapot.
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Írja le a tranzakciókat a beszedések képernyőről.
+
+## <a name="write-off-transactions-from-the-collections-page"></a>Tranzakciók írása a beszedési lapon
 1. Ugorjon a **Hitelezés és beszedés > Beszedés > Korosított egyenlegek** elemre.
 2. Válassza ki a vevő nevét, akinél a leírni kívánt tranzakciók vannak. Válassza ki például a Cave Wholesales (US-004) lehetőséget.
 3. Jelölje meg az első tranzakció sorát.
@@ -63,7 +63,7 @@ Az útmutató bemutatja, hogyan állíthatja be a leírások paramétereit, majd
 10. Ugorjon a **Főkönyv > Naplóbejegyzések > Általános naplók** pontra.
 11. Válassza ki a leírást tartalmazó napló cikkszámát. Egy sor jön létre a vevői egyenleg visszaállításához. Egy vagy több sor jön létre a leírás leírási számlára való feladásához.  
 12. Zárja be a lapot.
-13. Zárja be a lapot.
+
 
 ## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Számla leírása a nyitott vevői számlák lapról
 1. Ugorjon a következőre: **Navigációs panel > Kinnlévőségek > Számlák > Nyitott vevői számlák**.

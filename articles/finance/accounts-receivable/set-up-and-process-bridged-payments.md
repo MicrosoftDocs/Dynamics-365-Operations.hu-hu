@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb563008f156e1bfa6e4e9a705e9170342719ce7
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887977"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775168"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Áthidalt kifizetések beállítása és feldolgozása
 
 [!include [banner](../includes/banner.md)]
 
-Az áthidalt kifizetés olyan kifizetés, amely két lépésben van feladva a főkönyvbe. Ez a megközelítés **jellemzően akkor használatos, amikor a fizetési mód a Bank** beállításra van beállítva, és csak akkor kell tranzakciókat a bankszámlára könyvelni, ha már törölték a bankot. Főkönyvi számlákhoz azonban használható. Ebben az esetben a rendszer az áthidaló feladás feldolgozásakor az összeget egyik fő számláról a másikra mozgatja át.
+Az áthidalt kifizetés olyan kifizetés, amely két lépésben van feladva a főkönyvbe. Ez a megközelítés **jellemzően akkor használatos, amikor a fizetési mód a Bank** beállításra van beállítva, és csak akkor kell tranzakciókat a bankszámlára könyvelni, ha már törölték a bankot. Főkönyvi számlákhoz azonban használható. Ebben az esetben az összeg átkerül az egyik fő számláról a másikra az áthidaló feladás feldolgozásakor.
 
 Áthidalt kifizetéseket a Kötelezettségek és a Kinnlevőségek alapján is létre lehet hozni. Bár ez a cikk bemutatja, hogyan kell konfigurálni az áthidaló feladásokat a Kinnlevőségek esetében, a Kötelezettségek tranzakcióinak lépései hasonlóak.
 

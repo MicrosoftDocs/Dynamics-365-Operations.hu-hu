@@ -2,23 +2,23 @@
 title: A leányvállalatok adatainak exportálása fájlokba
 description: Ez a cikk bemutatja, Microsoft Dynamics hogy hogyan lehet előkészíteni az adatoknak a 365 Pénzügy alkalmazásból történő exportálását, majd az adatok konszolidált jogi személybe történő importálását.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 11/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7c5334e206d28a5ae1c8097db5356cd1057b7180
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30d69f9a2813621df410a29568644f264392fb49
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876153"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779961"
 ---
 # <a name="export-subsidiary-data-to-files"></a>A leányvállalatok adatainak exportálása fájlokba
 
@@ -32,14 +32,14 @@ Az **Exportálás** oldal (**Rendszerfelügyelet \> Munkaterületek \> Importál
 
     | Mező                             | Leírás |
     |-----------------------------------|-------|
-    | Fő számla                      | Adja meg a konszolidálni kívánt számlákat. Ha minden számlát fel akar venni, hagyja üresen ezt a mezőt. |
-    | Konszolidációs számla használata         | Ha meghatározta a konszolidációs számlákat, állítsa ezt a beállítást **Igen** értékre. |
-    | Konszolidációs számla kiválasztásának forrása | Válassza a **Fő számla** vagy a **Konszolidációs számlacsoport** lehetőséget. |
-    | Konszolidációsszámla-csoport       | Válasszon ki egy konszolidációs számlacsoportot a kiválasztott konszolidációs számlához. |
-    | Konszolidációs időszak              | Adja meg a konszolidáció dátumtartományát. |
-    | Tényleges összegek belefoglalása            | Tényleges összegek felvételéhez állítsa ezt a lehetőséget **Igen** értékre. |
-    | Költségvetési összegek belefoglalása            | Ha költségvetési összegeket akar felvenni a konszolidációkba, állítsa ezt a lehetőséget **Igen** értékre. |
-    | Költségvetési modellek                     | Adja meg a felvenni kívánt költségvetési modellt. |
+    | **Fő számla**                      | Adja meg a konszolidálni kívánt számlákat. Ha minden számlát fel akar venni, hagyja üresen ezt a mezőt. |
+    | **Konszolidációs számla használata**         | Ha meghatározta a konszolidációs számlákat, állítsa ezt a beállítást **Igen** értékre. |
+    | **Konszolidációs számla kiválasztásának forrása** | Válassza a **Fő számla** vagy a **Konszolidációs számlacsoport** lehetőséget. |
+    | **Konszolidációsszámla-csoport**       | Válasszon ki egy konszolidációs számlacsoportot a kiválasztott konszolidációs számlához. |
+    | **Konszolidációs időszak**              | Adja meg a konszolidáció dátumtartományát. |
+    | **Tényleges összegek belefoglalása**            | Tényleges összegek felvételéhez állítsa ezt a lehetőséget **Igen** értékre. |
+    | **Költségvetési összegek belefoglalása**            | Ha költségvetési összegeket akar felvenni a konszolidációkba, állítsa ezt a lehetőséget **Igen** értékre. |
+    | **Költségvetési modellek**                     | Adja meg a felvenni kívánt költségvetési modellt. |
 
 3. Adja meg a konszolidáció részleteit a **Pénzügyi dimenziók** lapon:
 

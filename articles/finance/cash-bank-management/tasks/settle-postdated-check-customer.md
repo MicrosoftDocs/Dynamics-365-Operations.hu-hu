@@ -2,23 +2,23 @@
 title: Vevő által kiállított, jövőben esedékes csekk kiegyenlítése
 description: A jövőben esedékes csekkeket akkor egyenlítheti ki, miután a bank elszámolta azokat.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 896d19eb9bc53cc4987d7a500f221cca06aa11db
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9e61ac6d6785dd0383d5e5dcaca4cc55bf6deb52
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725373"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780015"
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Vevő által kiállított, jövőben esedékes csekk kiegyenlítése
 
@@ -40,17 +40,17 @@ Ezen feladati útmutatóhoz szükséges szerepkör: Pénztáros.
 
 Ez az eljárás az USMF bemutatócéget használja.
 
-1. Ugrojon a Hitel és beszedés > Lekérdezések és jelentések > Kifizetések > Vevői jövőben esedékes csekkek pontra.
-2. Kattintson a Kiegyenlítés elemre.
-3. Kattintson az Elszámolási tételek kiegyenlítése elemre.
+1. Ugrás a Kifizetések **és kifizetések > lekérdezések és jelentések > > vevő jövőben esedékes csekkjéhez**.
+2. Kattintson az Egyenlítés **gombra**.
+3. Kattintson az elszámolási **tételek kiegyenlítése elemre**.
     * Rendezze a csekktranzakció vevői számláját.  
 4. Zárja be a lapot.
-5. Ugorjon a Főkönyv > Naplóbejegyzések > Általános naplók pontra.
-6. Válasszon ki egy lehetőséget a Megjelenítés mezőben.
-7. Jelölje be vagy törölje a jelölést a Megjelenítés csak a felhasználó által létrehozott jelölőnégyzetéből.
+5. Ugorjon a **Főkönyv > Naplóbejegyzések > Általános naplók** pontra.
+6. Válasszon egy **beállítást a Show** mezőben.
+7. Jelölje be a Csak a felhasználó **által létrehozottak megjelenítése jelölőnégyzetet, vagy törölje a** jelölést a jelölőnégyzetből.
 8. Keresse meg és jelölje ki a kívánt rekordot a listán.
-9. Kattintson a Sorok pontra.
-10. Kattintson a Bizonylat elemre.
+9. Kattintson a **Sorok** pontra.
+10. Kattintson a **Bizonylat** elemre.
 11. Zárja be a lapot.
 
 

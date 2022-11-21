@@ -2,7 +2,7 @@
 title: Inventory Visibility nyilvános API-jai
 description: Ez a témakör a készlet láthatósága által biztosított nyilvános API-król nyújt részletes információkat.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 82a43954db8b10554c449f3e8d32ba7e5d7c7f27
-ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
+ms.openlocfilehash: 8b0b8ca261237fbb2190f2a94cc11b816ae05af5
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9719315"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762834"
 ---
 # <a name="inventory-visibility-public-apis"></a>Inventory Visibility nyilvános API-jai
 
 [!include [banner](../includes/banner.md)]
-
 
 Ez a témakör a készlet láthatósága által biztosított nyilvános API-król nyújt részletes információkat.
 
@@ -36,38 +35,38 @@ A következő táblázat a jelenleg elérhető API-kat sorolja fel:
 
 | Elérési út | Metódus | Leírás |
 |---|---|---|
-| /api/environment/{environmentId}/onhand | Feladás | [Egy kézben lévő változtatási esemény létrehozása](#create-one-onhand-change-event) |
+| /api/environment/{environmentId}/onhand | Feladás | [Egy kézben lévő változtatási esemény létrehozása](#create-one-onhand-change-event)|
 | /api/környezet/{environmentId}/onhand/bulk | Feladás | [Több változási esemény létrehozása](#create-multiple-onhand-change-events) |
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Feladás | [Készleten lévő mennyiségek beállítása/felülbírálása](#set-onhand-quantities) |
-| /api/környezet/{environmentId}/onhand/reserve | Feladás | [Egy foglalási esemény létrehozása](#create-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/reserve/bulk | Feladás | [Több foglalási esemény létrehozása](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/unreserve | Feladás | [Egy foglalási esemény sztorníroza](#reverse-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/unreserve/bulk | Feladás | [Több foglalási esemény sztornírozése](#reverse-multiple-reservation-events) |
+| /api/környezet/{environmentId}/onhand/reserve | Feladás | [Egy egyszerű foglalási esemény létrehozása](#create-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/reserve/bulk | Feladás | [Több egyszerű foglalási esemény létrehozása](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Feladás | [Egy soft reservation esemény sztornírozva](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Feladás | [Több soft reservation esemény sztornírozése](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Feladás | [Egy ütemezett, de még beütemelt időpontbani módosítás létrehozása](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/changeschedule/bulk | Feladás | [Több ütemezett, ütemezett, de időpontban végrehajtott módosítás létrehozása](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/indexquery | Feladás | [Lekérdezés a post módszer használatával](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Feladás | [Több, dátummal rendelkező, dátummal rendelkező, dátummal rendelkező, időpontban végrehajtott módosítás létrehozása](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/indexquery | Feladás | [Lekérdezés a post metódus használatával](#query-with-post-method) (ajánlott) |
 | /api/environment/{environmentId}/onhand | Beolvasás | [Lekérdezés a get módszer használatával](#query-with-get-method) |
 | /api/environment/{environmentId}/onhand/exactquery | Feladás | [Pontos lekérdezés a post metódus használatával](#exact-query-with-post-method) |
-| /api/environment/{environmentId}/allocation/allocation/allocate | Feladás | [Egy felosztási esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation/unallocate | Feladás | [Egy nem lefoglalt esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation/reallocate | Feladás | [Egy újrafokosó esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation/consume | Feladás | [Egy felhasznált esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation/query | Feladás | [Lekérdezésfelosztás eredménye](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/allocation/allocate<wbr> | Feladás | [Egy felosztási esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/unallocate | Feladás | [Egy nem lefoglalt esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/reallocate | Feladás | [Egy újrafokosó esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume<wbr> | Feladás | [Egy felhasznált esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query<wbr> | Feladás | [Lekérdezésfelosztás eredménye](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
-> Az elérési útvonal {environmentId} része a Microsoft Dynamics Lifecycle Services (LCS) környezetazonosítója.
+> Az {environmentId} elérési út része a Lifecycle Services szolgáltatásban Microsoft Dynamics található környezeti azonosító.
 > 
 > A tömeges API legfeljebb 512 rekordot ad vissza minden kéréshez.
 
 A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>A Lifecycle Services környezetének megfelelő végpont megkeresése
+## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a><a name = "endpoint-lcs"></a>A Lifecycle Services környezetének megfelelő végpont megkeresése
 
 A Készletláthatóság mikroszolgáltatás a Microsoft Azure Service Fabric rendszerben kerül telepítésre, több földrajzi területen és több régióban. Jelenleg nincs olyan központi végpont, amely automatikusan átirányítaná a kérést a megfelelő földrajzi területre és régióra. Ezért az információkat a következő minta segítségével kell URL-címé állítani:
 
 `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
-A régió rövid neve a Microsoft Dynamics Lifecycle Services (LCS) környezetben található. Az alábbi táblázat a jelenleg elérhető régiókat sorolja fel.
+A régió rövid neve a Lifecycle Services környezetben található. Az alábbi táblázat a jelenleg elérhető régiókat sorolja fel.
 
 | Azure-régió        | Régió rövid neve |
 | ------------------- | ----------------- |
@@ -83,16 +82,26 @@ A régió rövid neve a Microsoft Dynamics Lifecycle Services (LCS) környezetbe
 | Nyugat-UK             | wuk               |
 | Kelet-Japán          | ejp               |
 | Nyugat-Japán          | wjp               |
-| Dél-Brazília        | sbr               |
-| USA déli középső régiója    | scus              |
+| Közép-India       | cin               |
+| Dél-India         | Bűn               |
+| Svájc - Észak   | Nch               |
+| Svájc – Nyugat    | Wch               |
+| Franciaország - Dél-        | Sfr               |
+| Kelet-Ázsia           | Eas               |
+| Dél-kelet-Ázsia     | Tengerek              |
+| Észak-Egyesült Arab Emírségek           | nae               |
+| Norvégia - Kelet         | Eno               |
+| Norvégia – Nyugati         | sz. sz.               |
+| Dél-afrikai Nyugat   | wza               |
+| Dél-afrikai Köztársaság  | nZA               |
 
-A sziget száma az a hely, ahol az LCS-környezetet a Service Fabricon telepítették. Ezt az információt jelenleg nem lehet a felhasználói oldalról kihozni.
+A sziget száma az a hely, ahol a Lifecycle Services környezetben szolgáltatás-anyag található. Ezt az információt jelenleg nem lehet a felhasználói oldalról kihozni.
 
 A Microsoft egy felhasználói felületet (UI) épített be a Power Apps rendszerbe, hogy a mikroszolgáltatás teljes végpontját megismerhesse. További információért lásd: [A szolgáltatás végpontjának keresése](inventory-visibility-configuration.md#get-service-endpoint).
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Hitelesítés
 
-A platform biztonsági tokenje a készlet láthatóság nyilvános API hívására szolgál. Ennek megfelelően az _alkalmazás használatával Azure Active Directory (Azure AD) jogkivonatot_ kell Azure AD létrehoznia. Ezt követően az Azure AD-tokent kell ahhoz használnia, hogy a _hozzáférési tokent_ be tudja szerezni a biztonsági szolgáltatásból.
+A platform biztonsági tokenje a készlet láthatóság nyilvános API hívására szolgál. Emiatt az Azure AD-alkalmazás használatával létre kell hozni egy *Azure Active Directory (Azure AD) tokent*. Ezt követően az Azure AD-tokent kell ahhoz használnia, hogy a *hozzáférési tokent* be tudja szerezni a biztonsági szolgáltatásból.
 
 A Microsoft biztosít egy gyári *Postman* jogkivonatlekérés-gyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -101,63 +110,63 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
 1. Jelentkezzen be az Azure portálra, és keresse meg a `clientId` és a `clientSecret` értékeket a Dynamics 365 Supply Chain Management alkalmazáshoz.
 1. A Azure AD token (`aadToken`) lekérése egy HTTP-kérelem elküldésével, amely a következő tulajdonságokkal rendelkezik:
 
-   - **URL:**`https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
-   - **Módszer:** `GET`
-   - **Törzstartalom (űrlapadatok):**
+    - **URL:**`https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
+    - **Módszer:** `GET`
+    - **Törzstartalom (űrlapadatok):**
 
-     | Kulcs           | Érték                                            |
-     | ------------- | -------------------------------------------------|
-     | ügyfél azonosítója     | ${aadAppId}                                      |
-     | titkos ügyfélkód | ${aadAppSecret}                                  |
-     | engedélyezési típus    | ügyfél_azonosító adatai                               |
-     | Hatókör         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.Alapértelmezett    |
+        | Kulcs           | Érték                                            |
+        | ------------- | -------------------------------------------------|
+        | ügyfél azonosítója     | ${aadAppId}                                      |
+        | titkos ügyfélkód | ${aadAppSecret}                                  |
+        | engedélyezési típus    | ügyfél_azonosító adatai                               |
+        | Hatókör         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.Alapértelmezett    |
 
-   Válaszként egy Azure AD tokent (`aadToken`) kell kapnia. Az alábbi példához hasonlóan jelenik meg.
+    Válaszként egy Azure AD tokent (`aadToken`) kell kapnia. Az alábbi példához hasonlóan jelenik meg.
 
-   ```json
-   {
-       "token_type": "Bearer",
-       "expires_in": "3599",
-       "ext_expires_in": "3599",
-       "access_token": "eyJ0eX...8WQ"
-   }
-   ```
+    ```json
+    {
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "access_token": "eyJ0eX...8WQ"
+    }
+    ```
 
 1. Fogalmazzon meg egy JavaScript Object Notation (JSON) kérést, amely hasonlít a következő példára.
 
-   ```json
-   {
-       "grant_type": "client_credentials",
-       "client_assertion_type": "aad_app",
-       "client_assertion": "{Your_AADToken}",
-       "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-       "context": "{$LCS_environment_id}",
-       "context_type": "finops-env"
-   }
-   ```
+    ```json
+    {
+        "grant_type": "client_credentials",
+        "client_assertion_type": "aad_app",
+        "client_assertion": "{Your_AADToken}",
+        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "{$LCS_environment_id}",
+        "context_type": "finops-env"
+    }
+    ```
 
-   Vegye figyelembe az alábbiakat:
+    Vegye figyelembe az alábbiakat:
 
-   - A `client_assertion` értéknek az előző lépésben kapott Azure AD tokennek (`aadToken`) kell lennie.
-   - A `context` érték az a LCS-környezetazonosító, ahová telepíteni szeretné a bővítményt.
-   - Az összes többi értéket állítsa be a példában látható módon.
+    - A `client_assertion` értéknek az előző lépésben kapott Azure AD tokennek (`aadToken`) kell lennie.
+    - Az `context` értéknek annak a Lifecycle Services környezetazonosítónak kell lennie, ahová telepíteni szeretné a bővítményt.
+    - Az összes többi értéket állítsa be a példában látható módon.
 
 1. Hozzáférési jogkivonat (`access_token`) lekérése HTTP-kérelem elküldésével, amely a következő tulajdonságokkal rendelkezik:
 
-   - **URL:** `https://securityservice.operations365.dynamics.com/token`
-   - **Módszer:** `POST`
-   - **HTTP fejléc:** tartalmazza az API verzióját. (A kulcs a `Api-Version`, az érték pedig a `1.0`.)
-   - **Törzstartalom:** Tartalmazza az előző lépésben létrehozott JSON-kérést.
+    - **URL:** `https://securityservice.operations365.dynamics.com/token`
+    - **Módszer:** `POST`
+    - **HTTP fejléc:** tartalmazza az API verzióját. (A kulcs a `Api-Version`, az érték pedig a `1.0`.)
+    - **Törzstartalom:** Tartalmazza az előző lépésben létrehozott JSON-kérést.
 
-   Válaszként egy hozzáférési tokent (`access_token`) kell kapnia. Ezt a tokent kell használnia a Készletláthatóság API hívásához. Példa:
+    Válaszként egy hozzáférési tokent (`access_token`) kell kapnia. Ezt a tokent kell használnia a Készletláthatóság API hívásához. Példa:
 
-   ```json
-   {
-       "access_token": "{Returned_Token}",
-       "token_type": "bearer",
-       "expires_in": 3600
-   }
-   ```
+    ```json
+    {
+        "access_token": "{Returned_Token}",
+        "token_type": "bearer",
+        "expires_in": 3600
+    }
+    ```
 
 > [!IMPORTANT]
 > Amikor a *Postman* kérésgyűjteményt használja a Készlet láthatósága nyilvános API-k hívására, minden egyes kéréshez hozzá kell adni egy tulajdonosi jogkivonatot. A tulajdonosi jogkivonat megkeresése érdekében válassza az **Engedélyezés** lapot a kérés URL-címe alatt, jelölje és válassza ki a **Tulajdonosi jogkivonat** típust, és másolja át az utolsó lépésben beírt hozzáférési jogkivonatot. A cikk későbbi részei `$access_token` az utolsó lépésben bekérett tokent fogják képviselni.
@@ -178,10 +187,12 @@ A következő táblázat összefoglalja a JSON-törzs egyes mezőinek jelentés�
 | `productId` | A termék azonosítója. |
 | `quantities` | Az a mennyiség, amellyel a készleten lévő mennyiséget módosítani kell. Például, ha 10 új könyv kerül a polcra, ez az érték `quantities:{ shelf:{ received: 10 }}` lesz. Ha három könyvet levesznek a polcról vagy eladnak, ez az érték `quantities:{ shelf:{ sold: 3 }}` lesz. |
 | `dimensionDataSource` | A kiküldetés-változtatási eseményben és a lekérdezésben használt dimenziók adatforrása. Az adatforrás megadása esetén a megadott adatforrás egyéni dimenzióit is használhatja. A Készletláthatóság a dimenziókonfiguráció segítségével leképezheti az egyéni dimenziókat az általános alapértelmezett dimenziókhoz. Ha nincs megadva `dimensionDataSource` érték, akkor csak az általános [alapméreteket](inventory-visibility-configuration.md#data-source-configuration-dimension) használhatja lekérdezéseiben. |
-| `dimensions` | Dinamikus kulcs-érték pár. Az értékek a Supply Chain Management néhány dimenziójához vannak rendelve. Azonban egyéni dimenziókat is hozzáadhat (például _Forrás_), hogy jelezze, hogy az esemény a Supply Chain Managementtből vagy egy külső rendszerből származik. |
+| `dimensions` | Dinamikus kulcs-érték pár. Az értékek a Supply Chain Management néhány dimenziójához vannak rendelve. Azonban egyéni dimenziókat is hozzáadhat (például *Forrás*), hogy jelezze, hogy az esemény a Supply Chain Managementtből vagy egy külső rendszerből származik. |
 
 > [!NOTE]
 > A `siteId` és a `locationId` paraméterek építik fel a [partíciókonfigurációt](inventory-visibility-configuration.md#partition-configuration). Ezért ezeket a dimenziókban kell megadni a készletmódosítási események létrehozásakor, a készleten lévő mennyiségek beállításakor vagy felülbírálásakor, illetve a foglalási események létrehozásakor.
+
+Az alábbi alszakaszok példákkal mutatják be ezeknek az API-knak a használatát.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Egy kézben lévő változtatási esemény létrehozása
 
@@ -214,19 +225,19 @@ Body:
     }
 ```
 
-A következő példa a törzs tartalmának mintáját mutatja. Ebben a mintában a *póló* termékhez egy módosítási eseményt küld. Ez az esemény az értékesítési pont (POS) rendszerből származik, és a vásárló egy piros pólót vitt vissza az üzletbe. Ez az esemény a *póló* termék mennyiségét 1-gyel növeli.
+A következő példa a törzs tartalmának mintáját mutatja. Ebben a példában a vállalatnak van egy pénztári rendszere, amely az üzleten belül tranzakciókat, és ebből következően készletváltozásokat feldolgoz. A vevő egy piros T-t adott vissza az üzletnek. A változtatást úgy tükrözheti, hogy egyetlen módosítási eseményt ad fel a *T-termékhez*. Ez az esemény a *póló* termék mennyiségét 1-gyel növeli.
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "SCM_IV",
+    "id": "Test201",
+    "organizationId": "usmf",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "1",
+        "locationId": "11",
         "posMachineId": "0001",
-        "colorId": "red"
+        "colorId&quot;: &quot;red"
     },
     "quantities": {
         "pos": {
@@ -240,12 +251,12 @@ A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "SCM_IV",
-    "productId": "iv_postman_product",
+    "id": "Test202",
+    "organizationId": "usmf",
+    "productId": "T-shirt",
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "1",
+        "locationId": "11",
         "colorId": "red"
     },
     "quantities": {
@@ -258,7 +269,14 @@ A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Több változási esemény létrehozása
 
-Ez az API egyszerre több rekordot is létrehozhat. Az egyetlen különbség az API és az [egyszeri esemény API](#create-one-onhand-change-event) között a `Path` és a `Body` értékek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512, ami azt jelenti, hogy az elérhető tömeges módosítási API egyszerre legfeljebb 512 módosítási eseményt támogathat.
+Ez az API képes módosítási események létrehozására, [akár csak az egyeseményes API](#create-one-onhand-change-event). Az az egyetlen különbség, hogy ez az API egyszerre több rekordot is létrehozhat. Ennek megfelelően az `Path` értékek `Body` eltérnek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512. Emiatt az elérhető tömeges módosítási API egyszerre legfeljebb 512 módosítási eseményt támogathat. 
+
+Egy Retail Store POS-gép például a következő két tranzakciót feldolgozta:
+
+- Egy visszárurendelés egy piros T-t-t
+- Egy értékesítési tranzakció három fekete inget
+
+Ebben az esetben mindkét készletfrissítést egy API-hívásba foglalhatja.
 
 ```txt
 Path:
@@ -295,26 +313,27 @@ A következő példa a törzs tartalmának mintáját mutatja.
 ```json
 [
     {
-        "id": "123456",
-        "organizationId": "SCM_IV",
-        "productId": "iv_postman_product_1",
+        "id": "Test203",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "posSiteId": "posSite1",
-            "posLocationId": "posLocation1",
+            "SiteId": "Site1",
+            "LocationId": "11",
             "posMachineId&quot;: &quot;0001"
+            "colorId&quot;: &quot;red"
         },
         "quantities": {
             "pos": { "inbound": 1 }
         }
     },
     {
-        "id": "654321",
-        "organizationId": "SCM_IV",
-        "productId": "iv_postman_product_2",
+        "id": "Test204",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
         "dimensions": {
-            "siteId": "iv_postman_site",
-            "locationId": "iv_postman_location",
+            "siteId": "1",
+            "locationId": "11",
             "colorId&quot;: &quot;black"
         },
         "quantities": {
@@ -326,7 +345,7 @@ A következő példa a törzs tartalmának mintáját mutatja.
 
 ## <a name="setoverride-on-hand-quantities"></a><a name="set-onhand-quantities"></a>Készleten lévő mennyiségek beállítása/felülbírálása
 
-A _Set on-hand_ API felülírja a megadott termék aktuális adatait.
+A *Set on-hand* API felülírja a megadott termék aktuális adatait. Ez a funkció jellemzően a leltárfrissítések raktározására használható. Például a napi készletszámlálás során az üzlet úgy találja, hogy a piros T-adag aktuális készlete 100. Emiatt a POS bejövő mennyiségét 100-ra kell frissíteni, függetlenül attól, hogy mi volt az előző mennyiség. Ezt az API-t használhatja a meglévő érték felülbírálatához.
 
 ```txt
 Path:
@@ -364,18 +383,19 @@ A következő példa a törzs tartalmának mintáját mutatja. Az API viselkedé
 ```json
 [
     {
-        "id": "123456",
-        "organizationId": "SCM_IV",
+        "id": "Test204",
+        "organizationId": "usmf",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "posSiteId": "iv_postman_site",
-            "posLocationId": "iv_postman_location",
+            "SiteId": "1",
+            "LocationId": "11",
             "posMachineId": "0001"
+            "colorId": "red"
         },
         "quantities": {
             "pos": {
-                "inbound": 1
+                "inbound": 100
             }
         }
     }
@@ -384,7 +404,7 @@ A következő példa a törzs tartalmának mintáját mutatja. Az API viselkedé
 
 ## <a name="create-reservation-events"></a>Foglalási események létrehozása
 
-A Foglalás API használatához *be* kell kapcsolni a foglalási funkciót, és be kell fejeződnie a foglalási konfiguráció. További információért lásd: [Foglalási konfiguráció (opcionális)](inventory-visibility-configuration.md#reservation-configuration).
+A Foglalás API használatához *be* kell kapcsolni a foglalási funkciót, és be kell fejeződnie a foglalási konfiguráció. A további tudnivalókat (például az adatfolyamatot és a minta esetet) lásd [a Foglalás konfigurációjában (nem kötelező)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Egy foglalási esemény létrehozása
 
@@ -392,7 +412,7 @@ Különböző adatforrás-beállítások alapján is lehet foglalást indítani.
 
 A foglalási API hívása esetén a foglalások érvényességének ellenőrzése a logikai `ifCheckAvailForReserv` paraméter megadásával szabályozható a kérelemtörzsben. A `True` érték azt jelenti, hogy ellenőrzés szükséges, míg a `False` érték azt, hogy az ellenőrzés nem kötelező. Az alapértelmezett érték a `True`.
 
-Foglalás sztornírozása vagy a foglalás nélküli készletmennyiségek foglalása esetén állítsa a mennyiséget negatív értékre, `ifCheckAvailForReserv``False` és állítsa be a paramétert az ellenőrzés kihagyása céljából. Ugyanekhez egy külön, nem lefoglalásra szolgáló API is van. A különbség csak a két API meghívása szerint van így. Egy bizonyos foglalási esemény sztornírozható `reservationId`*a nem foglalási API használatával*. A további tudnivalókat lásd [_a Foglalatlan egy foglalási esemény szakaszban_](#reverse-reservation-events).
+Foglalás sztornírozása vagy a foglalás nélküli készletmennyiségek foglalása esetén állítsa a mennyiséget negatív értékre, `ifCheckAvailForReserv``False` és állítsa be a paramétert az ellenőrzés kihagyása céljából. Ugyanekhez egy külön, nem lefoglalásra szolgáló API is van. A különbség csak a két API meghívása szerint van így. Egy bizonyos foglalási esemény sztornírozható `reservationId`*a nem foglalási API használatával*. A további tudnivalókat lásd [: Foglalási esemény szakasz nem foglal](#reverse-reservation-events) le.
 
 ```txt
 Path:
@@ -593,7 +613,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Készleten lévő lekérdezés
 
-Az aktuális *készlet lekérdezési API-ja* segítségével lekérheti a termékek aktuális készletének adatait. Az API jelenleg legfeljebb 5000 `productID` különálló cikk érték alapján való lekérdezését támogatja. Az `siteID` egyes `locationID` lekérdezések több és több értéket is meg lehet adni. A maximális korlátot a következő egyenlet határozza meg:
+Az aktuális *készlet lekérdezési API-ja* segítségével lekérheti a termékek aktuális készletének adatait. Ezt az API-t bármikor használhatja, amikor jól ismeri a készletet, például amikor az e-commerce webhely termékkészlet-szintjeit szeretné ellenőrizni, vagy ha a termékek rendelkezésre állását több régióban vagy közeli üzletekben és raktárakban is ellenőrizni szeretné. Az API jelenleg legfeljebb 5000 különálló cikk érték alapján való lekérdezését `productID` támogatja. Az `siteID` egyes `locationID` lekérdezések több és több értéket is meg lehet adni. A maximális korlátot a következő egyenlet határozza meg:
 
 *NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
@@ -637,16 +657,16 @@ A `returnNegative` paraméter szabályozza, hogy az eredmények tartalmaznak-e n
 > [!NOTE]
 > Ha engedélyezte a módosítás ütemezését és az ígérethez rendelkezésre álló funkciókat, `QueryATP` a lekérdezés tartalmazhatja a Logikai paramétert is, amely meghatározza, hogy a lekérdezés eredményei tartalmazzák-e az ígérethez rendelkezésre álló adatokat. A további tudnivalókat és [példákat lásd a Készlet láthatósága az aktuális készlet változásának ütemezésében, és ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md).
 
-A következő példa a törzs tartalmának mintáját mutatja.
+A következő példa a törzs tartalmának mintáját mutatja. Azt jelzi, hogy az aktuális készletből több helyről (raktárból) is lekérdezhet.
 
 ```json
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["SCM_IV"],
-        "productId": ["iv_postman_product"],
-        "siteId": ["iv_postman_site"],
-        "locationId": ["iv_postman_location"],
+        "organizationId": ["usmf"],
+        "productId": ["T-shirt"],
+        "siteId": ["1"],
+        "locationId": ["11","12","13"],
         "colorId": ["red"]
     },
     "groupByValues": ["colorId", "sizeId"],
@@ -659,10 +679,10 @@ A következő példa bemutatja, hogyan lehet lekérdezni egy adott telephely és
 ```json
 {
     "filters": {
-        "organizationId": ["SCM_IV"],
+        "organizationId": ["usmf"],
         "productId": [],
-        "siteId": ["iv_postman_site"],
-        "locationId": ["iv_postman_location"],
+        "siteId": ["1"],
+        "locationId": ["11"],
     },
     "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
@@ -692,6 +712,22 @@ Ez egy minta bejedő URL-címe. Ez a get-kérés pontosan megegyezik a korábban
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
+
+## <a name="on-hand-exact-query"></a><a name="exact-query-with-post-method"></a> Pontos lekérdezés az úton
+
+Az elérhető pontos lekérdezések hasonlítanak a rendszeres, az elérhető lekérdezésekre, de segítségével meg lehet adni a hely és a hely közötti megfeleltetési hierarchiát. Például a következő két hely van:
+
+- 1. hely, amely az A helyhez van hozzárendelve
+- 2. hely, amely a B helyhez van hozzárendelve
+
+A rendszeres aktuális lekérdezések esetén, ha megadja, `"siteId": ["1","2"]``"locationId": ["A","B"]` és a Készlet láthatósága automatikusan lekérdezi az eredményt a következő helyekre és helyekre:
+
+- 1. hely, A hely
+- 1. hely, B hely
+- 2. hely, A hely
+- 2. hely, B hely
+
+Amint látható, a rendszeres, az raktári lekérdezés nem ismeri fel, hogy az A hely csak az 1., a B hely pedig csak a 2. helyen létezik. Emiatt ezek a lekérdezések felesleges lekérdezéseket váltják ki. Ennek a hierarchikus leképezésnek az alkalmazásával pontos, pontos, az elérhető adatokra vonatkozó lekérdezést lehet használni, és meg lehet adni a helyleképezéseket a lekérdezés törzsében. Ebben az esetben csak az 1., az A. és a 2. hely, valamint a B hely eredményeit fogja lekérdezni és fogadni.
 
 ### <a name="exact-query-by-using-the-post-method"></a><a name="exact-query-with-post-method"></a> Pontos lekérdezés a post metódus használatával
 
@@ -724,7 +760,7 @@ A kérés törzsrészében `dimensionDataSource` egy választható paraméter. H
 - `organizationId` Csak egy értéket tartalmazhat, de az továbbra is tömb.
 - `productId` A(0) <a0/<a0/<a2/<a Ha ez egy üres tömb, a rendszer az összes terméket visszaküldi.
 - A tömbben `dimensions` szükség van rá, `siteId``locationId` de bármilyen sorrendben megjelenhet más elemekkel.
-- `values` A ()<a0/<a0/a1><a2/<a2/5><a2/<a2/<a2/<a4 `dimensions`>
+- `values` A ()<a0/<a0/a1><a2/<a2/5><a2/<a2/<a2/`dimensions`
 
 `dimensions` A program `filters` automatikusan hozzáadja a `groupByValues`
 
@@ -769,7 +805,7 @@ Az alábbi példa bemutatja, hogyan lehet lekérdezni több telephelyen és hely
 
 ## <a name="available-to-promise"></a>Ígérethez rendelkezésre áll
 
-A készlet láthatóságának beállításával a jövőbeli aktuális készletváltozások ütemezését és az "Aktuális készletben rendelkezésre álló mennyiség számítását" is beállíthatja. Az ígérethez rendelkezésre álló cikk mennyisége, amely a következő időszakban ígérhető a vevőnek. Az ígérethez rendelkezésre álló mennyiség számítása nagy mértékben növelheti a rendelés teljesítésére való képességét. A funkció engedélyezéséről, valamint a készlet-láthatóság és a készlet láthatóságának az API-ja [között a funkció engedélyezése után való kapcsolatról a Készlet láthatósága](inventory-visibility-available-to-promise.md#api-urls) az aktuális készlet változási ütemezésében található, és a funkció ígérethez rendelkezésre áll.
+A készlet láthatóságának beállításával a jövőbeli aktuális készletváltozások ütemezését és az "Aktuális készletben rendelkezésre álló mennyiség számítását" is beállíthatja. Az ígérethez rendelkezésre álló cikk mennyisége, amely a következő időszakban ígérhető a vevőnek. Az ígérethez rendelkezésre álló mennyiség számítása nagy mértékben növelheti a rendelés teljesítésére való képességét. A funkció engedélyezéséről, valamint a készlet-láthatóság és a készlet láthatóságának az API-ja [között a funkció engedélyezése után való kapcsolatról a Készlet láthatósága az aktuális készlet változási ütemezésében található, és a funkció ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md#api-urls).
 
 ## <a name="allocation"></a>Felosztás
 

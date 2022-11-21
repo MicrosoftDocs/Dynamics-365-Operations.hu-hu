@@ -2,25 +2,25 @@
 title: Pénzügyi időszak lezárása munkaterület
 description: Ez a cikk betekintést nyújt a Pénzügyi időszak zárásának munkaterületébe és az ehhez társított beállításokba.
 author: kweekley
-ms.date: 11/29/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531909bb8de892b012ffff347e58f23f997705ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657bdd04c8b6dd36341e0bf771a978f68f13362d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865712"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780042"
 ---
 # <a name="financial-period-close-workspace"></a>Pénzügyi időszak lezárása munkaterület
 
@@ -28,7 +28,7 @@ ms.locfileid: "8865712"
 
 Ez a cikk áttekintést nyújt a **pénzügyi időszakokat lezáró munkaterületről** és a kapcsolódó konfigurációról.
 
-Pénzügyi időszak lezárása munkaterület
+## <a name="financial-period-close-workspace"></a>Pénzügyi időszak lezárása munkaterület
 
 A **Pénzügyi időszak lezárása** munkaterület lehetővé teszi a vállalatok, területek, valamint emberek közti pénzügyi záró folyamatok nyomon követését. A **Pénzügyi időszak zárása** munkaterület nézetétől függően vagy az egy zárási ütemezéshez tartozó összes feladatot és állapotot látja, vagy csak azokat a feladatokat amelyek önre lettek kiosztva. 
 
@@ -101,7 +101,7 @@ Rendelje hozzá a megfelelő naptárat a zárási ütemtervhez, hogy megjelölje
 
 Létre kell hoznia a vállalatokat is, amelyekhez a záró ütemezés társítva lesz. Ha a sablonfeladatok több vállalathoz vannak hozzárendelve, akkor külön feladatok jönnek létre minden egyes vállalathoz, amely szerepel a zárási ütemtervben és hozzá van rendelve a sablonfeladathoz. 
 
-Miután befejezte a záró ütemtervet, válassza a **Lezárt** lehetőséget. A feladatelőzmények továbbra is elérhetők az **Összes pénzügyi időszak zárási feladatai** listaoldalon, de a zárási ütemterv eltávolításra kerül a munkaterületről. A zárási ütemtervhez **Lezárt** állapotban már nem lehet feladatokat adni, azokat szerkeszteni vagy eltávolítani belőle.
+A záró ütemezés befejezése után válassza a Lezárva **lehetőséget**. A feladatelőzmények továbbra is elérhetők az **Összes pénzügyi időszak zárási feladatai** listaoldalon, de a zárási ütemterv eltávolításra kerül a munkaterületről. A zárási ütemtervhez **Lezárt** állapotban már nem lehet feladatokat adni, azokat szerkeszteni vagy eltávolítani belőle.
 
 
 

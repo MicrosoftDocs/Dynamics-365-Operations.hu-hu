@@ -428,13 +428,13 @@
                   href: accounts-receivable/revenue-recognition-so-basics.md
                 - name: Bevételelszámolási csomagok
                   href: accounts-receivable/rev-rec-bundles.md
-                - name: bevételelszámolás újbóli felosztása
+                - name: Bevételelszámolás újbóli felosztása
                   href: accounts-receivable/rev-rec-reallocation.md
-                - name: Bevételelszámolás újbóli felosztása – 1. eset
+                - name: Bevételelszámolás újbóli felosztása – 1. forgatókönyv
                   href: accounts-receivable/rev-rec-reallocation-scenario-1.md
-                - name: Bevételelszámolás újbóli felosztása – 2. eset
+                - name: Bevételelszámolás újbóli felosztása – 2. forgatókönyv
                   href: accounts-receivable/rev-rec-reallocation-scenario-2.md
-                - name: Bevételelszámolás újbóli felosztása – 3. eset
+                - name: Bevételelszámolás újbóli felosztása – 3. forgatókönyv
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
                 - name: Bevételelszámolás újbóli felosztása – 4. eset
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
@@ -1188,6 +1188,8 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Figyelem a főkönyvi kiegyenlítés és az év végi zárás között
                   href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Főkönyvi kiegyenlítések automatizálása
+                  href: general-ledger/auto-settle.md
                 - name: Főkönyvi devizaátértékelés
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
                 - name: Főkönyvi számlaegyenlegek

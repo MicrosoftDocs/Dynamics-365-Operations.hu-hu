@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 63b08a8493702cf319aa078ef6aa787e2094be87
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
+ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9732765"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9760362"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources vevő áttelepítése
 
@@ -38,13 +38,12 @@ A vevők áttelepítése egy vevőadatbázis "növekedési és műszakváltásos
 
 ### <a name="dataverse-environment-backup-sandbox"></a>Dataverse környezeti biztonsági másolat (Box)
 
-1. Nem kötelező, de ajánlott: Frissítse a meglévő Emberi erőforrások szövegdobozkörnyezetet az Emberi erőforrások termelési környezet másolatának használatával.
-2. [Hozzon létre egy új Dataverse környezetet](/power-platform/admin/create-environment#create-an-environment-with-a-database) a rendszergazdai Power Platform központ segítségével.
+ - Nem kötelező, de ajánlott: Frissítse a meglévő Emberi erőforrások szövegdobozkörnyezetet az Emberi erőforrások termelési környezet másolatának használatával.
+ - Hozzon létre egy új Dataverse környezetet a rendszergazdai Power Platform központ segítségével.
+ - Az önálló Dataverse Emberi erőforrások alkalmazáshoz kapcsolt meglévő környezet másolása az előző lépésben létrehozott környezetbe.
 
-    > [!NOTE]
-    > Adatbázis hozzáadásakor győződjön meg arról, **hogy a Dynamics 365-alkalmazások** engedélyezése beállítás Igen beállításra **van állítva**.
-
-3. [Az önálló Dataverse Emberi](/power-platform/admin/copy-environment) erőforrások alkalmazáshoz kapcsolt meglévő környezet másolása az előző lépésben létrehozott környezetbe.
+> [!NOTE]
+> Adatbázis hozzáadásakor győződjön meg arról, **hogy a Dynamics 365-alkalmazások** engedélyezése beállítás Igen beállításra **van állítva**. Részletes információk: Környezet [előkészítése Power Platform](hr-cust-migration.md#prepare-a-power-platform-environment)
 
 ### <a name="dataverse-capacity"></a>Dataverse Kapacitás
 
@@ -89,9 +88,9 @@ Miután létrehozta az új Lifecycle Services-projektet, és befejeződött a pr
 #### <a name="prepare-a-power-platform-environment"></a>Power Platform Környezet előkészítése
 
 > [!NOTE]
-> Ez a lépés csak abox környezet áttelepítésére alkalmazható. A termelési környezet áttelepítésekor Power Platform a rendszer áthozatalja a termelési környezethez kapcsolt meglévő adminisztrációsközpont-környezetet.
+> Ez a lépés csak abox környezet áttelepítésére alkalmazható. A termelési környezet áttelepítésekor Power Platform a rendszer áthozatalja a termelési környezethez kapcsolt meglévő adminisztrációsközpont-környezetet. Adatbázis hozzáadásakor győződjön meg arról, **hogy a Dynamics 365-alkalmazások** engedélyezése gomb igenre van **állítva**. 
 
-- A Power Platform felügyeleti központjában [hozzon létre egy Power Platform-környezetet](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center), amely az üzenetdoboz áttelepítésére használható, vagy válasszon ki egy meglévő környezetet.
+- A Power Platform felügyeleti központjában hozzon létre egy olyan környezetet, [amely](/power-platform/admin/create-environment#create-an-environment-with-a-database) adatbázist használ az üzenetdoboz áttelepítéséhez, vagy válasszon egy meglévő környezetet.
 - [Környezet másolása a](/power-platform/admin/copy-environment) megfeleltetésre Power Platform használt környezet frissítéséhez.
 
 #### <a name="migrate-the-sandbox-environment"></a>Az üzenetdoboz környezet áttelepítése
