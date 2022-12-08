@@ -12,20 +12,24 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f89adfc3055da346cfe9b6951076094b133c842
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 06846141aff993dbcc9654d81a3e267343e925c0
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779716"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803856"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása
 
 [!include [banner](../../includes/banner.md)]
 
-A vevőtől érkezett, jövőben esedékes csekkek részletes adatait rögzítheti. A jövőben esedékes csekket feladhatja és pénzügyi tranzakciókat hozhat létre. A vevőtől kapott jövőben esedékes csekk regisztrálása és jövőben esedékes csekkek feladása előtt végre kell végezni a következő feladatokat: * A jövőben esedékes csekk beállítása a Készpénz- és bankkezelés oldalon * Fizetési mód beállítása jövőben esedékes csekkek esetén. Az eljáráshoz pénztáros szerepköre. Ez az eljárás az USMF bemutatócéget használja.
+A vevőtől érkezett, jövőben esedékes csekkek részletes adatait rögzítheti. A jövőben esedékes csekket feladhatja és pénzügyi tranzakciókat hozhat létre. A vevőtől érkezett, jövőben esedékes csekkek nyilvántartásba vétele és feladása előtt hajtsa végre a következő feladatokat:  
+ - Jövőben esedékes csekk beállítása a Készpénz- és **bankkezelés lapon**  
+ - Fizetési mód beállítása a jövőben esedékes csekkekhez   
+  
+ Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget használja.
 
-1. Ugrás a Kinnlevőségek **> és > naplóhoz**.
+1. Menjen a Kinnlevőségek **> és > naplóba**.
 2. Kattintson az **Új** elemre.
 3. Írjon be egy értéket a **Név** mezőbe.
 4. Kattintson a **Sorok** pontra.
@@ -33,10 +37,10 @@ A vevőtől érkezett, jövőben esedékes csekkek részletes adatait rögzíthe
 6. A **Számla** mezőben adja meg a kívánt értékeket.
 7. A **Hitelkeret** mezőben adjon meg egy számot.
     * Adja meg a jövőben esedékes csekken látható összeget.  
-8. Kattintson a Kifizetés **fülre**.
+8. Kattintson a Kifizetés **fülre** .
 9. Írjon be egy értéket a **Fizetési mód** mezőbe.
     * Válassza ki a jövőben esedékes csekk fizetési módját.  
-10. Kattintson a **Jövőben esedékes csekkek fülre**.
+10. Kattintson a **Jövőben esedékes csekkek fülre** .
 11. Adjon meg **egy dátumot** az Esedékesség dátuma mezőben.
     * Adja meg a dátumot, amikor a jövőben esedékes csekk kifizetése esedékes.  
 12. A Kibocsátó **bankfiók mezőjébe** írjon be egy értéket.

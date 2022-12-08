@@ -1,8 +1,8 @@
 ---
 title: Jelentéstervező felület
-description: Ez a cikk ismerteti, hogyan navigálhat a Jelentéstervezőben és a különböző beállításokat, segítségével az igényeihez igazíthatja a programot.
+description: Ez a cikk bemutatja a jelentéstervezőben való navigálást, és bemutatja, hogy hogyan lehet a különféle beállításokat az adott követelményeknek megfelelően használni.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,20 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.form: FinancialReports
-ms.openlocfilehash: 3bc3ddb9f04f7f6f2a63b2ecccfe04fbaf2eadfc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25d913e6f5d4c95dceda1291a2c33abe37348574
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274727"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802742"
 ---
 # <a name="report-designer-interface"></a>Jelentéstervező felület
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk ismerteti, hogyan navigálhat a Jelentéstervezőben és a különböző beállításokat, segítségével az igényeihez igazíthatja a programot.
+Ez a cikk bemutatja a jelentéstervezőben való navigálást, és bemutatja, hogy hogyan lehet a különféle beállításokat az adott követelményeknek megfelelően használni.
 
-## <a name="report-designer-menu-commands"></a>A Jelentéstervező menü parancsai
+## <a name="report-designer-menu-commands"></a>Jelentéstervező menüparancsai
 
 Az alábbi táblázatok bemutatják, hogy milyen parancsok és beállítások állnak a rendelkezésére, a pénzügyi jelentések tervezésekor. Egyes menüparancsok és beállítások csak bizonyos körülmények között érhetők el. A jelentések előre- és hátrasorolására vonatkozó parancsok például csak jelentési-fa definíció esetén érhetők el.
 
@@ -40,17 +40,17 @@ A **Fájl** menü az összes felhasználó által elérhető, és a következő 
 |-----------------------------------|-------------|
 | Új                               | Új jelentésdefiníció, sordefiníció, oszlopdefiníció, jelentési-fa definíció, jelentéscsoport-definíció, illetve mappa létrehozása. A szerepkörének függvényében elérhetőek további beállítások is. |
 | Nyitva                              | Nyisson meg egy korábbi sordefiníciót, oszlopdefiníciót, jelentési-fa definíciót vagy jelentésdefiníciót. |
-| Közeli                             | Zárja be az aktuális építőelemet. |
-| Az összes bezárása                         | Zárjon be minden építőelemet. |
+| Bezár                             | Zárja be az aktuális építőelemet. |
+| Összes bezárása                         | Zárjon be minden építőelemet. |
 | Mentés                              | Mentse az aktuális sordefiníciót, oszlopdefiníciót, jelentési-fa definíciót vagy jelentésdefiníciót. |
 | Mentés másként                           | Mentse el más néven az aktuális sordefiníciót, oszlopdefiníciót, jelentési-fa definíciót vagy jelentésdefiníciót. |
 | Tulajdonságok                        | Nyissa meg a **Tulajdonságok** párbeszédpanelt, ahol módosítani tudja a jelentés nevét és leírását. |
 | Létrehozás                          | Hozza létre az aktuális jelentést. Ez a parancs egy jelentésdefinícióban érhető el. |
 | Jelentés megtekintése                       | Nyissa meg a létrehozott jelentés legfrissebb verzióját. Ez a parancs egy jelentésdefinícióban érhető el, ha már legalább egy jelentést létrehozott. |
-| Legutolsó Jelentésdefiníciók         | A nemrég létrehozott vagy módosított jelentések listáját jeleníti meg. Ezután ki tud választani egy jelentést a listából. |
-| Legutolsó Sordefiníciók            | A nemrég létrehozott vagy módosított sordefiníciók listáját jeleníti meg. Ezután ki tud választani egy sordefiníciót a listából. |
-| Legutolsó Oszlopdefiníciók         | A nemrég létrehozott vagy módosított oszlopdefiníciók listáját jeleníti meg. Ezután ki tud választani egy oszlopdefiníciót a listából. |
-| Legutolsó Jelentési-fa definíciók | A nemrég létrehozott vagy módosított jelentési-fa definíciók listáját jeleníti meg. Ezután ki tud választani egy jelentési-fa definíciót a listából. |
+| Legutóbbi jelentésdefiníciók         | A nemrég létrehozott vagy módosított jelentések listáját jeleníti meg. Ezután ki tud választani egy jelentést a listából. |
+| Legutóbbi sordefiníciók            | A nemrég létrehozott vagy módosított sordefiníciók listáját jeleníti meg. Ezután ki tud választani egy sordefiníciót a listából. |
+| Legutóbbi oszlopdefiníciók         | A nemrég létrehozott vagy módosított oszlopdefiníciók listáját jeleníti meg. Ezután ki tud választani egy oszlopdefiníciót a listából. |
+| A legutóbbi jelentési fa definíciói | A nemrég létrehozott vagy módosított jelentési-fa definíciók listáját jeleníti meg. Ezután ki tud választani egy jelentési-fa definíciót a listából. |
 | Kilépés                              | Lépjen ki a Jelentéstervezőből. |
 
 ### <a name="edit-menu"></a>Szerkesztés menü
@@ -76,8 +76,8 @@ A **Szerkesztés** menü a **Tervező** vagy **Rendszergazda** szerepkörrel ren
 | Sor törlése                             | A kijelölt sor törlése a sordefinícióból, illetve a kiválasztott fejlécsor törlése az oszlopdefinícióból. Ez a parancs egy sordefinícióban vagy oszlopdefinícióban érhető el. |
 | Oszlop beszúrása                          | Üres oszlop beszúrása az oszlopdefinícióba. Ez a parancs egy oszlopdefinícióban érhető el. |
 | Oszlop törlése                          | A kijelölt oszlop törlése az oszlopdefinícióból Ez a parancs egy oszlopdefinícióban érhető el. |
-| Jelentési egységek beszúrása a dimenziókból | Nyissa meg a **Jelentési egységek beszúrása dimenziókból** párbeszédpanelt, ahol ki tudja választani, hogy a jelentési-fa definícióban milyen dimenzióértékek szerepeljenek. Ez a parancs valamelyik jelentési-fa definícióban érhető el. |
-| Dimenziókészlet-hierarchia importálása         | Nyissa meg a **Dimenziókészlet hierarchiája** párbeszédpanelt, ahol dimenziókészlet-hierarchiát tud importálni a pénzügyi adatokból. Ez a parancs egy jelentési-fa definícióban érhető el ..\\financial-dimensions\\dimension alapú rendszer esetén. |
+| Jelentési egységek beszúrása dimenziókból | Nyissa meg a **Jelentési egységek beszúrása dimenziókból** párbeszédpanelt, ahol ki tudja választani, hogy a jelentési-fa definícióban milyen dimenzióértékek szerepeljenek. Ez a parancs valamelyik jelentési-fa definícióban érhető el. |
+| Dimenziókészlet hierarchiájának importálása         | Nyissa meg a **Dimenziókészlet hierarchiája** párbeszédpanelt, ahol dimenziókészlet-hierarchiát tud importálni a pénzügyi adatokból. Ez a parancs egy jelentési-fa definícióban érhető el ..\\financial-dimensions\\dimension alapú rendszer esetén. |
 | Jelentési egység beszúrása                  | Üres sor beszúrása a jelentési fa-definícióba. Ez a parancs valamelyik jelentési-fa definícióban érhető el. |
 | Jelentési egység törlése                  | A kijelölt jelentési-egység sor törlése a jelentési-fa definícióból. Ez a parancs a jelentésfa-definíciókból érhető el. |
 
@@ -89,17 +89,17 @@ A **Nézet** menü az összes felhasználó által elérhető, és a következő
 |-----------------|------------------------------------------------------------------------|
 | Navigációs ablak | Megjeleníti vagy elrejti a navigációs ablaktáblát.                                      |
 | Eszköztárak        | A látható eszköztár kiválasztása.                                  |
-| Állapotsor      | Az állapotadatok megjelenítése vagy elrejtése a **Jelentéstervező** ablakban. |
+| Állapotsor      | Az állapotinformációk megjelenítése vagy elrejtése a Jelentéstervező **ablakban** . |
 | Kezdőlap    | A **Kezdőlap** megnyitása.                                             |
 
 ### <a name="format-menu"></a>Formázás menü
 
 A **Formázás** menü a **Tervező** vagy **Rendszergazda** szerepkörrel rendelkező felhasználók részére érhető el. Ez a menü következő parancsokból áll:
 
-| Parancs               | Leírás |
+| Command               | Leírás |
 |-----------------------|-------------|
-| Stílus és formázás | Nyissa meg a **Stílus és formázás** párbeszédpanelt, ahol létrehozhatja, illetve módosítani tudja a sordefiníciókban és oszlopdefiníciókban szereplő szöveg stílusát. Ez a parancs egy sordefinícióban vagy egy oszlopdefinícióban érhető el. |
-| Oszlopszélesség          | Nyissa meg az **Oszlopszélesség** párbeszédpanelt, ahol beállíthatja a kiválasztott oszlop szélességét. Ez a parancs egy sordefinícióban, egy oszlopdefinícióban vagy egy jelentési-fa definícióban érhető el. |
+| Stílusok és formázás | A Stílusok **és formázás** párbeszédpanel megnyitása, ahol létrehozhatja és módosíthatja a sordefiníciókban és oszlopdefiníciókban megjelenő szöveg stílusát. Ez a parancs egy sordefinícióban vagy egy oszlopdefinícióban érhető el. |
+| Oszlopszélesség          | Az Oszlop szélessége **párbeszédpanel** megnyitása, ahol beállíthatja a kiválasztott oszlop szélességét. Ez a parancs egy sordefinícióban, egy oszlopdefinícióban vagy egy jelentési-fa definícióban érhető el. |
 | Elrejtés                  | A kiválasztott oszlop elrejtése Ez a parancs egy sordefinícióban, egy oszlopdefinícióban vagy egy jelentési-fa definícióban érhető el. |
 | Megjelenítés                | A kijelölt oszlopok között elrejtett oszlopok megjelenítése. Ez a parancs egy sordefinícióban, oszlopdefinícióban vagy jelentési-fa definícióban érhető el. |
 
@@ -110,7 +110,7 @@ A **Vállalat** menü a **Tervező** vagy **Rendszergazda** szerepkörrel rendel
 | Parancs               | Leírás                                                                                                            |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Vállalatok             | Nyissa meg a **Vállalatok** párbeszédpanelt, ahol vállalatokat tud létrehozni, illetve módosíthatja azokat.                                          |
-| Építőelem-csoportok | Nyissa meg az **Építőelem-csoportok** párbeszédpanel, ahol építőelem-csoportok létrehozását, módosítását, importálását és exportálását végezheti el. |
+| Építőelem-csoportok | A Blokkcsoportok **létrehozása** párbeszédpanel megnyitása, ahol létrehozhat, módosíthat, importálhat és exportálhat blokkcsoportokat. |
 
 ### <a name="go-menu"></a>Ugrás menü
 
@@ -162,7 +162,7 @@ A **Súgó** menü az összes felhasználó által elérhető, és a következő
 | Súgó    | A pénzügyi jelentés súgócikkének megnyitása. |
 |         |                                                                          |
 
-## <a name="report-designer-toolbar-buttons"></a>A Jelentéstervező eszköztár gombjai
+## <a name="report-designer-toolbar-buttons"></a>Jelentéstervező eszköztárgombjai
 Az alábbi táblázatok a jelentések tervezéséhez rendelkezésre álló eszköztár gombjait mutatják be. Egyes eszköztár gombok csak bizonyos körülmények között érhetők el. A jelentések előre- és hátrasorolására vonatkozó gombok például csak jelentési-fa definíció esetén érhetők el.
 
 ### <a name="standard-toolbar"></a>Szokásos eszköztár
@@ -194,18 +194,18 @@ A szokásos eszköztár gyors hozzáférést biztosít a fájl és szerkesztési
 
 A formázás eszköztár egyszerű hozzáférést biztosít a stílus parancsokhoz. Ez az eszköztár az alábbi gombokat tartalmazza.
 
-| Gomb                                                                                                       | Leírás                                             |
-|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Betűstílus gomb.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | A kijelölt betűstílus alkalmazása az aktuális szövegre.      |
-| [![Betűtípus gomb.](./media/fonttype.png)](./media/fonttype.png)                                                 | A kijelölt betűtípus alkalmazása az aktuális szövegre.              |
-| [![Betűméret gomb.](./media/fontsize.png)](./media/fontsize.png)                                            | A kijelölt (pontban megadott) betűméret alkalmazása az aktuális szövegre. |
-| [![Félkövér gomb.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Az aktuális szöveg félkövérre állítása.                             |
-| [![Dőlt gomb.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Az aktuális szöveg dőltre állítása.                           |
-| [![Aláhúzás gomb.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Az aktuális szöveg aláhúzása.                             |
-| [![Behúzás csökkentése gomb.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Az aktuális szöveg behúzásának csökkentése.                |
-| [![Behúzás növelése gomb.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Az aktuális szöveg behúzásának növelése.                |
-| [![Háttérszín gomb.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Az aktuális cella háttérszínének módosítása.        |
-| [![Betűszín gomb.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Az aktuális szöveg színének módosítása.                   |
+| Gomb                                                                                                       | Leírás                                           |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| [![Betűstílus gomb.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | A kijelölt betűstílus alkalmazása az aktuális szövegre.   |
+| [![Betűtípus gomb.](./media/fonttype.png)](./media/fonttype.png)                                                 | A kijelölt betűtípus alkalmazása az aktuális szövegre.           |
+| [![Betűméret gomb.](./media/fontsize.png)](./media/fontsize.png)                                            | Az aktuális szöveg beállítása a kiválasztott betűméretre (pontokban). |
+| [![Félkövér gomb.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Az aktuális szöveg félkövérre állítása.                          |
+| [![Dőlt gomb.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Az aktuális szöveg dőltre állítása.                        |
+| [![Aláhúzás gomb.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Az aktuális szöveg aláhúzása.                          |
+| [![Behúzás csökkentése gomb.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Az aktuális szöveg behúzásának csökkentése.             |
+| [![Behúzás növelése gomb.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Az aktuális szöveg behúzásának növelése.             |
+| [![Háttérszín gomb.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Az aktuális cella háttérszínének módosítása.     |
+| [![Betűszín gomb.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Az aktuális szöveg színének módosítása.                |
 
 ### <a name="report-designer-toolbar"></a>Jelentéstervező eszköztár
 
@@ -213,9 +213,9 @@ A Jelentéstervező eszköztár gyors hozzáférést biztosít a Jelentéstervez
 
 | Gomb                                                                                              | Leírás |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Jelentésdefiníció gomb.](./media/reportc130389.png)](./media/reportc130389.png)                 | Az **Ablak** menüben felsorolt jelentésdefiníció megjelenítése. |
-| [![Sordefiníció gomb.](./media/rowc130389.png)](./media/rowc130389.png)                          | Az aktív jelentésdefinícióhoz rendelt sordefiníció megjelenítése. |
-| [![Oszlopdefiníció gomb.](./media/columnc130389.png)](./media/columnc130389.png)                 | Az aktív jelentésdefinícióhoz rendelt oszlopdefiníció megjelenítése. |
+| [![Jelentésdefiníció gomb.](./media/reportc130389.png)](./media/reportc130389.png)            | Az **Ablak** menüben felsorolt jelentésdefiníció megjelenítése. |
+| [![Sordefiníció gomb.](./media/rowc130389.png)](./media/rowc130389.png)             | Az aktív jelentésdefinícióhoz rendelt sordefiníció megjelenítése. |
+| [![Oszlopdefiníció gomb.](./media/columnc130389.png)](./media/columnc130389.png)  | Az aktív jelentésdefinícióhoz rendelt oszlopdefiníció megjelenítése. |
 | [![Jelentési fa definíció gomb.](./media/treec130389.png)](./media/treec130389.png)             | Az aktív jelentésdefinícióhoz rendelt jelentési-fa definíció megjelenítése. |
 | [![Jelentésmegjelenítő gomb.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | A Jelentésmegjelenítő megnyitása, és a létrehozott jelentés legfrissebb verziójának megjelenítése. Ez a gomb egy jelentésdefinícióban érhető el, ha már legalább egy jelentést létrehozott. |
 | [![Jelentés létrehozása gomb.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Jelentés készítése az aktív jelentésdefiníció alapján. Ez a gomb a jelentésdefiníciókból érhető el. |

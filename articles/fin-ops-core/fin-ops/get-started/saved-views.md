@@ -2,7 +2,7 @@
 title: Mentett nézetek
 description: Ez a témakör azt ismerteti, hogyan lehet használni a mentett nézeteket.
 author: jasongre
-ms.date: 07/26/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
-ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
+ms.openlocfilehash: 571a4f403da0d20256f788c791cab273827c91b5
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9757221"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799491"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
@@ -55,7 +55,7 @@ A nézetválasztó két méretben elérhető:
  
 Ha kiválasztja a nézet nevét, megnyílik a nézetválasztó, és megjelenik a laphoz elérhető nézetek listája.
 
-**10.0.21-es vagy újabb verzió:** Ha a **Mentett nézetek javított jogi személytámogatása** funkció be van kapcsolva, a nézetválasztó két szakaszban mutatja a rendelkezésre álló nézeteket. Az első rész az aktuális jogalanyra jellemző nézeteket, a második pedig az összes jogalany számára elérhető nézeteket mutatja. Az első szakasz csak akkor látható, ha az oldalra vonatkozóan vannak jogalany-specifikus nézetek.
+Ha a jobb **jogi személy támogatása a mentett** nézeteknél funkció be van kapcsolva, a nézetválasztó két szakaszban jeleníti meg a rendelkezésre álló nézeteket. Az első rész az aktuális jogalanyra jellemző nézeteket, a második pedig az összes jogalany számára elérhető nézeteket mutatja. Az első szakasz csak akkor látható, ha az oldalra vonatkozóan vannak jogalany-specifikus nézetek.
 
 - **Standard nézet** – A **Standard** nézet a lap beépített nézetét jeleníti meg, ahol nem alkalmaztak kifejezett testreszabásokat.
 - **Személyes nézetek** – A lakat nélküli nézetek az Ön személyes nézeteit jelenítik meg. Ezeket a nézeteket vagy Ön hozta létre, vagy a rendszergazda adta Önnek.
@@ -81,7 +81,7 @@ Ha menteni szeretné azokat a módosításokat, hajtsa végre az alábbi lépés
     1. Válassza a **Mentés másként** lehetőséget. 
     2. A **Nézet mentése másként** ablaktáblán adjon meg egy nevet és opcionálisan egy leírást a nézethez.
     3. Ha azt szeretné, hogy ez a nézet legyen az alapértelmezett nézet, jelölje be a **Kitűzés alapértelmezettként** lehetőséget. Az alapértelmezett nézetekkel kapcsolatos további információkért lásd az [alapértelmezett nézet módosítása](#changing-the-default-view) című részt. 
-    4. **10.0.21-es vagy újabb verzió:** Ha a **Mentett nézetek javított jogi személyek támogatása** funkció be van kapcsolva, kiválaszthatja, hogy ez a nézet az összes jogi személy vagy csak egy részhalmazuk számára legyen elérhető.
+    4. Ha be van **kapcsolva** a Jobb jogi személy támogatás a mentett nézetekhez funkcióval, akkor eldöntheti, hogy ez a nézet az összes jogi személy, vagy csak egy részcsoport számára legyen elérhető.
     5. Válassza a **Mentés** lehetőséget.
 
 ## <a name="changing-the-default-view"></a>Az alapértelmezett nézet módosítása
@@ -90,7 +90,7 @@ Az alapértelmezett nézet az a nézet, amelyet a rendszer megpróbál megnyitni
 
 > [!NOTE]
 > - Az alap **Mentéses nézetek** funkcióban egyetlen, globális alapértelmezett nézet van a jogalanyok között. Ha módosítja az alapértelmezett nézetet, akkor az adott nézet alapértelmezettként fog megnyílni, függetlenül attól, hogy éppen melyik jogi személyben van.
-> - **10.0.21-es vagy újabb verzió:** Ha a **Mentett nézetek javított jogi személyek támogatása** funkció be van kapcsolva, minden jogi személynek saját alapértelmezett nézete lehet oldalanként.
+> - Ha a mentett **nézetek** továbbfejlesztett jogi személy támogatása funkció be van kapcsolva, akkor minden jogi személynek saját alapértelmezett nézete lehet egy oldalon.
 
 Ha szeretné egy lap alapértelmezett nézetét módosítani, kövesse az alábbi lépéseket:
 
@@ -101,13 +101,13 @@ Ha szeretné egy lap alapértelmezett nézetét módosítani, kövesse az alább
 A másik lehetőség az, hogy amikor új nézetet hoz létre (a **Mentrés másként** művelettel), az új nézetet alapértelmezetté teheti, ha beállítja a **Rögzítés alapértelmezettként** beállítást a nézet mentése előtt.
 
 > [!WARNING]
-> Bizonyos esetekben az alapértelmezett nézethez tartozó lekérdezés nem fut le az oldal első megnyitásakor. Ha például egy lapot egy csempén keresztül nyit meg, akkor a rendszer a csempe lekérdezését az alapértelmezett nézethez társított lekérdezéstől függetlenül futtatja. Továbbá, ha olyan oldalt nyit meg, amely egy olyan **szabványos** nézetet tartalmaz, amely már rendelkezik meghatározott lekérdezéssel, az eredeti lekérdezés fog lefutni az alapértelmezett nézet lekérdezése helyett. Ebben az esetben egy tájékoztató üzenet jelenik meg, amikor a nézet betöltődik. Ha a lap betöltése után vált nézetet, a lekérdezésnek a várt módon kell futtatnia a nézetet. A 10.0.10-es vagy újabb verzió a kapott tájékoztató üzenet beágyazott művelettel fog rendelkezik, amely lehetővé teszi az alapértelmezett nézet lekérdezésének közvetlen betöltését.
+> Bizonyos esetekben az alapértelmezett nézethez tartozó lekérdezés nem fut le az oldal első megnyitásakor. Ha például egy lapot egy csempén keresztül nyit meg, akkor a rendszer a csempe lekérdezését az alapértelmezett nézethez társított lekérdezéstől függetlenül futtatja. Továbbá, ha olyan oldalt nyit meg, amely egy olyan **szabványos** nézetet tartalmaz, amely már rendelkezik meghatározott lekérdezéssel, az eredeti lekérdezés fog lefutni az alapértelmezett nézet lekérdezése helyett. Ebben az esetben tájékoztató üzenet jelenik meg, amikor a nézet be van töltve egy olyan beágyazott művelettel, amely lehetővé teszi az alapértelmezett nézet lekérdezésének közvetlen betöltését. Ha a lap betöltése után vált nézetet, a lekérdezésnek a várt módon kell futtatnia a nézetet. 
 
 ## <a name="managing-personal-views"></a>Személyes nézetek kezelése
 
 A **Saját nézetek kezelése** párbeszédpanel a alapvető karbantartási funkciókat biztosít a személyes nézetekre vonatkozóan, valamint a nézetválasztóban a nézetek sorrendjére vonatkozóan. A lap megnyitásához kattintson a nézet nevére a nézetválasztó legördülő menü megnyitásához, válassza a **Továbbiak**, majd a **Saját nézetek kezelése** lehetőséget.
 
-Ha be van **kapcsolva a Jobb jogi személy támogatása a mentett nézetekhez funkció,** **·** **a Nézetek kezelése párbeszédpanel Saját nézetek szakasza szakasz a szakaszokban elérhető nézeteket jeleníti meg.** Az aktuális jogalanyra vonatkozó nézetek külön szakaszban jelennek meg. A **Globális nézetek** rész mindig megjelenik, így az oldalhoz az összes jogalanyban elérhető nézetek kezelhetők. 
+Ha be van **kapcsolva a Jobb jogi személy támogatása a mentett nézetekhez funkció,**  **·**  **a Nézetek kezelése párbeszédpanel Saját nézetek szakasza szakasz a szakaszokban elérhető nézeteket jeleníti meg.**  Az aktuális jogalanyra vonatkozó nézetek külön szakaszban jelennek meg. A **Globális nézetek** rész mindig megjelenik, így az oldalhoz az összes jogalanyban elérhető nézetek kezelhetők. 
 
 Az adott lap elérhető nézeteinek listájához a következő műveletek állnak rendelkezésre.
 
@@ -140,7 +140,7 @@ A nézet közzétételéhez kövesse az alábbi lépéseket:
 2. A jelenleg betöltött nézetnél válassza ki a nézet nevét a nézetválasztó legördülő menü megnyitásához. 
 3. Válassza a **Továbbiak** gombot, és válassza a **Közzététel** lehetőséget. Megnyílik **a** Közzététel párbeszédpanel.
 4. Adja meg a nézet nevét. A név, amelyet megad az, mely a nézetet megkapó felhasználók számára megjelenik a nézetválasztóban. A lap közzétett nézeteinek egyedinek kell lennie. Egy laphoz nem engedélyezettek az ismétlődő nevek a közzétett nézeteknél, még ha az alkalmazott szerepkörök listája vagy jogi személyek különböznek is.
-5. **Ha** a szervezetnézetek fordítási támogatása be van kapcsolva, a szervezet által megkövetelt több nyelven adhat hozzá fordításokat a nézetnévhez úgy, **·** **hogy** a Név mező melletti Fordítások gombra kattint. A nézet neve megjelenik a felhasználók számára az aktuális nyelven. Beállíthatja az alapértelmezett nyelvet is, hogy megadja azt a fordítást, amely azon felhasználók számára jelenik meg, akik olyan nyelveket futtatnak, amelyekhez nincs megadva fordítás.
+5.  **Ha** a szervezetnézetek fordítási támogatása be van kapcsolva, a szervezet által megkövetelt több nyelven adhat hozzá fordításokat a nézetnévhez úgy, **·**  **hogy** a Név mező melletti Fordítások gombra kattint. A nézet neve megjelenik a felhasználók számára az aktuális nyelven. Beállíthatja az alapértelmezett nyelvet is, hogy megadja azt a fordítást, amely azon felhasználók számára jelenik meg, akik olyan nyelveket futtatnak, amelyekhez nincs megadva fordítás.
 5. Nem kötelező: Adja meg a nézet leírását, hogy a nézetet megkapó felhasználók jobban megértsék a nézet célját. 
 6. Határozza meg, hogy a nézet a kiválasztott felhasználók számára alapértelmezett nézetként legyen-e közzétéve. Amikor egy nézetet alapértelmezettnek állítanak be, a felhasználók a céloldal legközelebbi megnyitásakor ezt a nézetet fogják látni. Minden célfelhasználó egyetlen globálisan alapértelmezett nézete fog változni. A felhasználók azonban továbbra is módosíthatják a saját alapértelmezett nézetüket a közzététel után.
 
@@ -150,7 +150,7 @@ A nézet közzétételéhez kövesse az alábbi lépéseket:
     > - Ha egy nézetet alapértelmezett nézetként tesz közzé néhány vagy minden jogi személy számára, a következő viselkedés történik:
     >
     >    - Ha csak az alap **Mentett nézetek** funkció van bekapcsolva, akkor az egyetlen, globális alapértelmezett nézet minden célzott felhasználó számára megváltozik. 
-    >    - **Ha a mentett nézeteknél be van kapcsolva a jobb jogi személytámogatás**, és a nézetet jogi személyek egy részcsoportja számára teszi közzé, akkor a jogi személyek alapértelmezett nézete minden megcélzott felhasználóra vonatkozóan módosul.
+    >    - **Ha a **Mentett nézeteknél a jobb jogi személyek támogatása** be van kapcsolva, és a nézetet jogi személyek egy részcsoportja számára teszi közzé, akkor a jogi személyek alapértelmezett nézete minden megcélzott felhasználóra vonatkozóan módosul.
     >
     > - Ha egy felhasználónak több olyan nézete van, amelyek alapértelmezett nézetként vannak közzétéve, akkor a legutóbb közzétett nézet lesz a felhasználó alapértelmezett nézete. 
     > - A közzététel nem működik az AAD-csoportok használatával hozzárendelt szerepkörök esetében. 
@@ -204,7 +204,7 @@ Az adott lap összes közzétett nézetének listájához a következő művelet
 
 ## <a name="managing-views-globally"></a>Nézetek globális kezelése
 
-Bár egyes vezetői képességek minden oldalon láthatóak, mint azt a jelen cikk is jelzi, **·** **·** **a** rendszergazdák és a mentett nézetgazdák a Személyre szabás oldalon holisztikaibb módon kezelhetik a rendszernézeteket. Ez a lap különösen a következő szakaszokat és funkciókat tartalmazza: 
+Bár egyes vezetői képességek minden oldalon láthatóak, mint azt a jelen cikk is jelzi, **·**  **·**  **·**  a rendszergazdák és a mentett nézetgazdák a Személyre szabás oldalon holisztikaibb módon kezelhetik a rendszernézeteket. Ez a lap különösen a következő szakaszokat és funkciókat tartalmazza: 
 
 - **Közzétett nézetek** – Ez a szakasz felsorolja azokat a nézeteket, amelyeket közzétettek a szervezeténél. Innen újra közzéteheti a nézeteket, miután módosítja azokat a biztonsági szerepköröket vagy jogi személyeket, amelyek a nézet céljai. Ezeket a nézeteket exportálhatja, törölheti vagy megszüntetheti a közzétételüket. Használhatja a **Mentés személyesként** műveletet a nézet személyes példányának létrehozásához, hogy a nézet módosítható legyen, vagy jobban megérthesse a tartalmát. 
 - **Nem közzétett nézetek** – Ez a szakasz felsorolja a rendszerben jelenleg közzé nem tett szervezeti nézeteket. Ezek a nézetek többnyire az importálási képességen keresztül kerülnek be a rendszerbe. Ezeket a nézeteket közzéteheti, exportálhatja vagy törölheti. A 10.0.12 verzióban hozzáadott **Gyors közzététel** művelet lehetővé teszi, hogy az ebből a szakaszból származó több nézetet egy műveletben tegyék közzé, a meglévő biztonsági szerepkör és a jogi személy-konfigurációk segítségével. A mentés személyes műveletként **használható** a nézetek személyes másolatának létrehozására, így jobban megértheti a nézet tartalmát.

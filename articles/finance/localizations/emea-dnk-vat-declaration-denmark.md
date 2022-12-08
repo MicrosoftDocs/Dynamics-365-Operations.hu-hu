@@ -9,24 +9,24 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: a47b2b98d86daf50876c783f879362ec1addb579
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 99c8b7a35258116adfe7433e884564d64dbf140f
+ms.sourcegitcommit: 3aa3dedc3123cb079614762e2718841c2f7d7d35
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272140"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "9812132"
 ---
 # <a name="vat-declaration-denmark"></a>Áfabevallás (Dánia)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk bemutatja, hogyan lehet beállítani a dán áfabevallást, és előnézeti nézetet látni a dokumentumban Microsoft Excel.
+Ez a cikk bemutatja, hogyan lehet beállítani a dán áfabevallást, és előnézetben látni Microsoft Excel.
 
-A jelentés automatikus létrehozásához először hozzon létre elég áfakódot ahhoz, hogy az előleg áfabevallásán minden egyes mezőben külön áfakönyvelés legyen. Ezenkívül az előzetes áfabevallás elektronikus jelentéskészítési (ER) formátumának alkalmazásspecifikus paramétereiben társítsa a forgalmiadó-kódokat az áfabevalláson szereplő mezők keresésének eredményével.
+A jelentés automatikus létrehozásához először hozzon létre elég áfakódot ahhoz, hogy az előleg áfabevallásán minden egyes mezőben külön áfakönyvelés legyen. Ezenkívül az előzetes áfabevallás elektronikus jelentési (ER) formátumának alkalmazásspecifikus paramétereiben az áfakódokat hozzá kell társítani az áfabevallás mezőihez keresési eredményekhez.
 
 Dánia esetében be kell állítani a Jelentés **mezőkeresést**. Az alkalmazásspecifikus paraméterek beállításával kapcsolatos további [tudnivalókat](#set-up-application-specific-parameters) lásd a Cikk áfabevallási mezők alkalmazásspecifikus paramétereinek beállítása című részében.
 
-Az alábbi táblázatban a "Keresési eredmény" oszlop az áfabevallási formátumban egy adott áfabevallási sorhoz előre konfigurált keresési eredményt mutatja. Ezen információk segítségével helyesen társíthatja az áfakódokat a keresési eredményhez, majd az áfabevallás sorához.
+A következő táblázatban a "Keresés eredménye" oszlop mutatja azt a keresési eredményt, amely az áfabevallási formátumban egy adott áfabevallási sorhoz előre konfigurálva van. Ezzel az információval lehet megfelelően társítani az áfakódokat a keresési eredményhez, majd az áfabevallás sorhoz.
 
 ### <a name="vat-declaration-overview"></a>Áfabevallás áttekintése
 
@@ -36,17 +36,18 @@ A dán áfabevallás a következő adatokat tartalmazza.
 
 | Leírás                                                  | Adóalap/adó összege | Keresési eredmény/összesen                                                                                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kimeneti áfa                                                   | Adó összege          | **OutputVAT**</br> **DomesticVATUseTax** (jelentés a "Bejövő áfa" mezőben is)                                                                                                                                                                                                                                                                       |
-| Áruk áfása stb. Külföldi vásárlás                           | Adó összege          | **BeszerzésGoodsAbroad**</br>**PurchaseGoodsAbroadUseTax** (az "Input VAT" mezőben is jelentve)</br>**PurchaseGoodsEU** (Az adóalap jelentése az "A mező - árubeszerzés")</br>**PurchaseGoodsUSETax** (Az adó összegét az "Bemeneti áfa" mezőben is jelentik. Az adóalap jelentése az "A mező - árubeszerzés" mezőben található.                   |
-| A külföldön beszerzett szolgáltatások áfája, amelyek a fordított adózás alá tartoznak | Adó összege          | **PurchaseServicesAbroad**</br> **PurchaseServicesAbroadUseTax** (jelentés az "Input VAT" mezőben is)</br>**PurchaseServicesEU** (Az adóalap jelentése az "A mező - szolgáltatásbeszerzés")</br>**PurchaseServicesUSETax** (az adó összegét az "Bemeneti áfa" mezőben is jelentik. Az adóalap jelentése az "A mező - szolgáltatásbeszerzés" alatt található. |
+| Kimeneti áfa                                                   | Adó összege          | **OutputVAT**</br> **DomesticVATUseTax**  (jelentés a "Bejövő áfa" mezőben is)                                                                                                                                                                                                                                                                       |
+| Áruk áfása stb. Külföldi vásárlás                           | Adó összege          | **BeszerzésGoodsAbroad**</br>**PurchaseGoodsAbroadUseTax**  (az "Input VAT" mezőben is jelentve)</br>**PurchaseGoodsEU** (Az adóalap jelentése az "A mező - árubeszerzés")</br>**PurchaseGoodsUSETax** (Az adó összegét az "Bemeneti áfa" mezőben is jelentik. Az adóalap jelentése az "A mező - árubeszerzés" mezőben található.                   |
+| A külföldön beszerzett szolgáltatások áfája, amelyek a fordított adózás alá tartoznak | Adó összege          | **PurchaseServicesAbroad**</br> **PurchaseServicesAbroadUseTax**  (jelentés az "Input VAT" mezőben is)</br>**PurchaseServicesEU** (Az adóalap jelentése az "A mező - szolgáltatásbeszerzés")</br>**PurchaseServicesUSETax** (Az adó összegét az "Bemeneti áfa" mezőben is jelentik. Az adóalap jelentése az "A mező - szolgáltatásbeszerzés" alatt található. |
 | Kötelezettségek összesen                                                | Adó összege          | Az előző három mező összege                                                                                                                                                                                                                                                                                                            |
 
 **Levonások**
 
 | Leírás                                                                               | Adóalap/adó összege | Keresési eredmény/összesen                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |-------------------------------------------------------------------------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bemeneti áfa                                                                                 | Adó összege          | **InputVAT**</br> **DomesticVATUseTax** (jelentés az "Output VAT" mezőben is)</br>**PurchaseGoodsAbroadUseTax** (jelentés az "Áruk áfával stb.) Beszerzett külföldi" mező)</br>**PurchaseServicesAbroadUseTax** (a fordított fizetés hatálya alá tartozó külföldi szolgáltatások áfáról is jelentve)</br>**PurchaseGoodsUSETax** (jelentés az "Áruk áfával stb.) Beszerzett külföldi" mező)</br> **PurchaseServicesUSETax (jelentése a** fordított fizetés hatálya alá tartozó külföldi szolgáltatások áfával kapcsolatos jelentése) |
+| Bemeneti áfa                                                                                 | Adó összege          | **InputVAT**</br> **DomesticVATUseTax**  (jelentés az "Output VAT" mezőben is)</br>**PurchaseGoodsAbroadUseTax**  (jelentés az "Áruk áfával stb.) Beszerzett külföldi" mező)</br>**PurchaseServicesAbroadUseTax**  (a fordított fizetés hatálya alá tartozó külföldi szolgáltatások áfáról is jelentve)</br>**PurchaseGoodsUSETax**  (jelentés az "Áruk áfával stb.) Beszerzett külföldi" mező)</br> **PurchaseServicesUSETax (jelentése a**  fordított fizetés hatálya alá tartozó külföldi szolgáltatások áfával együtt) |
 | Kőolajjal és palackos gázzal összefüggő adó                                                                  | Adó összege          | **OilGasDuty**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Árammal/kötelezettség kötelezettsége                                                                    | Adó összege          | **PowerElectricityDuty**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Földgázzal és városi gázzal összefüggő adó                                                             | Adó összege          | **Natural TownGasDuty**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Széndioxid-kibocsátással összefüggő adó                                                                               | Adó összege          | **2019. év 201**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | CO2Duty                                                                                   | Adó összege          | **CO2Duty**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -65,15 +66,15 @@ A dán áfabevallás a következő adatokat tartalmazza.
 | B mező - szolgáltatásellátás. Az európai uniós szolgáltatásértékesítések áfa nélküli értékét, amelynek a vevő fordított áfa fizetésére kötelezett, jelenteni kell az "EU-értékesítés áfa nélkül"/DK VIES részére.                          | Adóalap            | **SalesServicesEU**                             |
 | C-rovat - egyéb kellékek Más áruk és szolgáltatások forgalmi adó nélkül, Dánia területén, más EU-tagállamnak, illetve harmadik országoknak vagy harmadik területeknek nyújtott értéke.                                     | Adóalap            | **EgyébSuppliesWithoutVAT**                     |
 
-#### <a name="purchase-reverse-charge-vat"></a>Beszerzési fordított adó áfa
+#### <a name="purchase-reverse-charge-vat"></a>Beszerzés fordított áfával
 
-Ha úgy konfigurálja az áfakódokat, hogy a használati adó használatával feladják a bejövő fordított adók áfáját, társítsa az áfakódokat a Jelentés mezőkeresés **keresési eredményéhez**, amely a névben szerepel a "UseTax" kifejezés.
+Ha az áfakódokat úgy konfigurálja, hogy a bejövő fordított áfát az áfa használatával adja fel, **társítsa** az áfakódokat a név "UseTax" nevű jelentésmező-keresési eredményéhez.
 
-Másik lehetőségként két külön áfakódot is konfigurálhat: egyet az esedékes áfa, egyet pedig az áfa levonásához. Ezután társítsa az egyes kódokat a Jelentés mezőkeresés megfelelő keresési **eredményeihez**.
+Másik lehetőségként két külön áfakódot is be lehet állítani: egyet az esedékes áfára, egyet pedig az áfalevonásra. Ezután társítsa az egyes kódokat a Jelentés **mező keresésének megfelelő keresési eredményeihez**.
 
-Például a **közösségen belüli adóköteles beszerzések esetén az** **UT_S_EU áfakódot hozzá kell állítani a forgalmi adóhoz, és azt társítani kell a Jelentés mező keresésének PurchaseGoodsUSETax** **keresési eredményéhez**. Ebben az esetben az **áfakódot UT_S_EU** adóösszegek megjelennek az "Áruk áfával stb. Vásárolt külföldi termékek" és "Bemeneti áfa" mezők. Az adóalapok az "A doboz - árubeszerzés" szövegben jelennek meg.
+Például a **közösségen belüli adóköteles beszerzések esetén a**  **UT_S_EU áfakódot be kell állítani a forgalmi adóval, és azt társítani kell a Jelentés mező keresésének PurchaseGoodsUSETax**  **keresési eredményéhez**. Ebben az esetben az **áfakódot UT_S_EU** adóösszegek megjelennek az "Áruk áfával stb. Vásárolt külföldi termékek" és "Bemeneti áfa" mezők. Az adóalapok az "A doboz - árubeszerzés" szövegben jelennek meg.
 
-Másik lehetőségként két áfakódot is konfigurálhat:
+Másik lehetőségként két áfakódot is be lehet állítani:
 
 - **VAT_S_EU**, amelynek -25 százalékos adókulcs-értéke van
 - **InVAT_S_EU**, amelynek 25 százalékos adókulcs-értéke van
@@ -81,7 +82,7 @@ Másik lehetőségként két áfakódot is konfigurálhat:
 Ezt követően a jelentés mezőkeresési eredményeihez **a** következő módon társítja a kódokat:
 
 - A **VAT_S_EU** társítása **a PurchaseGoodsEU** keresési eredményhez.
-- A **InVAT_S_EU** társítása **a InputVAT** keresési eredményéhez.
+- A **InVAT_S_EU** társítása **az InputVAT** keresési eredményéhez.
 
 Ebben az esetben az áfakódot **VAT_S_EU** az "Áruk áfára stb. is tükrözik. Beszerzett külföldi áru" rovat és "A doboz - árubeszerzés" Az áfakódot InVAT_S_EU **az** "Bemeneti áfa" mezőben jelennek meg.
 
@@ -104,7 +105,7 @@ A regisztrációs kategóriák és a regisztrációtípusok beállításának to
 
 ### <a name="import-er-configurations"></a>ER-konfigurációk importálása
 
-Az Elektronikus jelentés **munkaterület megnyitása** és az **áfabevallási Excel (DK) ER-formátum importálása**.
+Az Elektronikus jelentés **munkaterület megnyitása** és az **áfabevallási Excel (DK)ER formátum**  importálása.
 
 További információért lásd: [ER-konfigurációk letöltése a Konfigurációs szolgáltatás globális tárolójából](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -118,7 +119,7 @@ További információért lásd: [ER-konfigurációk letöltése a Konfiguráci�
 A következő lépések szerint adhatja meg, hogy mely áfakódok generálják az áfabevallás mezőit.
 
 1. Menjen a Munkaterületek **elektronikus** > **jelentési szolgáltatásba**, és válassza ki a Jelentéskészítési **konfigurációkat**.
-2. Válassza ki az áfabevallás **Excel-konfigurációját**, majd **a Konfigurációk \> alkalmazásspecifikus paramétereinek beállításait**.
+2. Válassza ki az áfabevallás **Excel-konfigurációját**, majd a Konfigurációk **alkalmazásspecifikus \> paramétereinek beállításait**.
 3. Az Alkalmazásspecifikus **paraméterek lapon**, **a** Keresések gyorslapon válassza a Jelentés **mező keresését**.
 4. A Feltételek **gyorscsoporton** állítsa be a következő mezőket az áfakódok és a jelentésmezők társítása érdekében.
 
@@ -126,7 +127,7 @@ A következő lépések szerint adhatja meg, hogy mely áfakódok generálják a
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Keresési eredmény          | A jelentésmező értékének kiválasztása. Az értékekről és az [áfabevallási sorokhoz való hozzárendelésükről a cikk korábbi, áfabevallási áttekintő](#vat-declaration-overview) szakaszában olvashat bővebben.                                                                                               |
     | Adókód               | A jelentésmezőhöz társítani kívánt áfakód kiválasztása. A kiválasztott áfakódot használják a feladott adótranzakciók a megfelelő bevallás mezőben lesznek összegyűjtve. Javasoljuk, hogy az áfakódokat úgy válassza el, hogy egy áfakód csak egy bevallásmezőben generáljon összegeket. |
-    | Tranzakcióosztályozó | Ha a bevallás meghatározásához elegendő áfakódot hozott létre, válassza **\* a Nem üres lehetőséget\***. Ha nem létrehozott elég áfakódot ahhoz, hogy egy áfakód csak egy bevallásmezőben generáljon összegeket, akkor be lehet állítani egy tranzakcióosztályozót. A következő tranzakcióosztályozók érhetők el:</br>-   **Beszerzés**</br>-   **PurchaseExempt** (adómentes beszerzés)</br>-   **PurchaseReverseCharge** (beszerzés fordított áfafizetésből visszakövethető adója)</br>-   **Értékesítés**</br>-   **SalesExempt** (adómentes értékesítés)</br>-   **SalesReverseCharge** (a beszerzés fordított vagy fordított áfafizetésből fizetendő adója)</br>-   **Az adó használata.** </br>Minden tranzakcióosztályozónál elérhető a jóváírás osztályozója is. Például az egyik osztályozó a **PurchaseCreditNote** (beszerzési jóváírás).</br>Mindenképpen hozzon létre két sort mindegyik áfakódhoz: egyet a tranzakcióosztályozó értékével, és egyet a jóváírási érték tranzakcióosztályozóval. |
+    | Tranzakcióosztályozó | Ha a bevallás meghatározásához elegendő áfakódot hozott létre, válassza **\* a Nem üres lehetőséget\***. Ha nem létrehozott elég áfakódot ahhoz, hogy egy áfakód csak egy bevallásmezőben generáljon összegeket, akkor be lehet állítani egy tranzakcióosztályozót. A következő tranzakcióosztályozók érhetők el:</br>-   **Beszerzés**</br>-   **PurchaseExempt** (adómentes beszerzés)</br>-   **PurchaseReverseCharge** (beszerzés fordított áfafizetésből való visszakövetelése)</br>-   **Értékesítés**</br>-   **SalesExempt** (adómentes értékesítés)</br>-   **SalesReverseCharge**  (fordított beszerzési vagy értékesítési fordított áfafizetésből fizetendő adó)</br>-   **Az adó használata.** </br>Minden tranzakcióosztályozónál elérhető a jóváírás osztályozója is. Például az egyik **osztályozó a PurchaseCreditNote** (beszerzési jóváírás).</br>Mindenképpen hozzon létre két sort mindegyik áfakódhoz: egyet a tranzakcióosztályozó értékével, és egyet a jóváírási érték tranzakcióosztályozóval. |
 
 
     > [!NOTE]
@@ -141,16 +142,16 @@ A következő lépések szerint adhatja meg, hogy mely áfakódok generálják a
 
 1. A Funkciókezelés **munkaterületen** keresse meg és válassza ki az áfabevallék-formátum **jelentéseit.** Funkció a listában, majd válassza az Engedélyezés **lehetőséget**.
 2. Ugrás a Főkönyv **beállítása** > **főkönyvi** > **paraméterekhez**.
-3. Az Áfanyilatkozat-formátum **·** **·** **·** **hozzárendelése mező Áfabeállítások gyorslapján válassza ki az áfabevallási Excel (DK)** ER formátumot.
+3. Az Áfanyilatkozat-formátum **·**  **·**  **·**  **hozzárendelése mező Áfabeállítások gyorslapján válassza ki az áfabevallás Excel-formátumát (DK)** ER formátumot.
 
-   Ez a formátum a kiegyenlítési időszak áfajelentésének **futtatásakor kerül nyomtatásra**. Akkor is kinyomtatja, ha **az** Áfakifizetések **lapon** a Nyomtatás lehetőséget választja.
+   Ez a formátum a kiegyenlítési időszak áfajelentésének **futtatásakor kerül nyomtatásra** . Akkor is kinyomtatja, ha **az** Áfakifizetések **lapon** a Nyomtatás lehetőséget választja.
 
 4. Az Adóhatóság **lapon** válassza ki az adóhatóságot, majd a **Jelentés elrendezése** mezőben válassza az Alapértelmezett **beállítást**.
 
 Ha az áfabevallást [több](emea-reporting-for-multiple-vat-registrations.md) áfaregisztrációval rendelkező jogi személynél konfigurálja, kövesse az alábbi lépéseket.
 
-1. Ugrás a Főkönyv **beállítása** \> **főkönyvi** \> **paraméterekhez.**
-2. Az Áfa **lap** **Országok/** **régiók gyorslapján, a DNK** **sorában válassza az Áfabevallási Excel (DK)** ER formátumot.
+1. Ugrás a Főkönyv **beállítása** \> **főkönyvi** \> **paraméterekhez**.
+2. Válassza az **Áfabevallás**  **Excel (DK)ER formátumot**  az Ország-/ **régiójelentések** gyorslapon, **a DNK-fájl**  sorában.
 
 ## <a name="set-up-electronic-messages"></a>Elektronikus üzenetek beállítása
 
@@ -158,11 +159,11 @@ Ha az áfabevallást [több](emea-reporting-for-multiple-vat-registrations.md) �
 
 Az adatcsomag olyan elektronikus üzenet-beállításokat tartalmaz, amelyek az áfabevallás Excel programban való előnézetének megtekintésére használhatók. Ezek a beállítások bővíthetők, de létrehozható egy saját beállítás is. Az elektronikus üzenetkezelés alkalmazásával és a saját beállítások beállításával kapcsolatos további tudnivalókat lásd: [Elektronikus üzenetkezelés](../general-ledger/electronic-messaging.md).
 
-1. A [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2)**megosztott** eszköztárában válassza ki eszköztípusként az Adatcsomagot, **majd töltse le a DK-áfabevallási csomagot.** A letöltött fájl neve DK áfabevallási **csomag.zip**.
-2. Válassza az Importálás lehetőséget **a Pénzügy eszköz Adatkezelés** **munkaterületén**.
+1. A [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) **·**  megosztott eszköztárában válassza ki eszköztípusként az Adatcsomagot, **majd töltse le a DK-áfabevallási csomagot.** A letöltött fájl neve DK áfabevallási **csomag.zip**.
+2. Válassza az Importálás lehetőséget **a Pénzügy eszköz Adatkezelés**  **munkaterületén**.
 3. Az Importálás **gyorscsoport** Csoportnév **mezőjébe** írja be a feladat nevét.
 4. A **Kiválasztott entitások** gyorslapon válassza a **Fájl hozzáadása** elemet.
-5. A Fájl **hozzáadása párbeszédpanelen győződjön meg róla,** **·** **·** **hogy a Forrásadatok formátuma mező csomag, válassza a Feltöltés és hozzáadás lehetőséget, majd válassza ki a korábban letöltött zip-fájlt.**
+5. A Fájl **hozzáadása párbeszédpanelen győződjön meg róla,**  **·**  **·** **hogy a Forrásadatok formátuma mező csomag, válassza a Feltöltés és hozzáadás lehetőséget, majd válassza ki a korábban letöltött zip-fájlt.**
 6. Válassza **Bezárás** lehetőséget.
 7. Az adatentitások feltöltése után a műveleti ablaktáblán válassza az **Importálás** elemet.
 8. Ugrás az **Adókeresések** > **és jelentések** > **·** > **elektronikus** üzenetekhez és az Importált elektronikus üzenetek feldolgozásának ellenőrzéséről (**DK-áfabevallás**).
@@ -224,12 +225,12 @@ A következő eljárás az LCS megosztott eszköztárából korábban importált
    > [!NOTE]
    > Az 5–7. lépés nem kötelező.
 
-5. Nem kötelező: Az Üzenetek gyors **oldalon** válassza az **Adatok** gyűjtése gombra, majd válassza az **OK gombra.** A program hozzáadja a korábban létrehozott áfafizetéseket az üzenethez. A további tudnivalókat lásd [a](#settle-and-post-sales-tax) cikk korábbi, Az áfafizetés és áfa feladás szakaszában. Ha kihagyja ezt a lépést, akkor is létrehozhat áfabevallást **a** **Bevallás** párbeszédpanel Adóbevallás verziómezője segítségével.
-6. Nem kötelező: Az Üzenet –**cikkek** gyors oldalon ellenőrizze a feldolgozásra átvitt áfafizetéseket. Alapértelmezés szerint a kijelölt időszak minden olyan áfafizetése szerepel, amely nem szerepelt ugyanannak a feldolgozásnak más üzenetében.
-7. Választható: Válassza az **eredeti dokumentumot** az áfakifizetések ellenőrzéshez, **vagy válassza a Törlés** lehetőséget, ha ki szeretné zárni az áfafizetéseket a feldolgozásból. Ha kihagyja ezt a lépést, akkor is létrehozhat áfabevallást **a** **Bevallás** párbeszédpanel Adóbevallás verziómezője segítségével.
-8. Az Üzenetek **gyorsjelentésen** válassza a Frissítés **állapot beállítását**. A Frissítés állapota párbeszédpanelen **válassza a** **Generálra kész lehetőséget, majd kattintson az** OK gombra **.** Győződjön meg róla, hogy az üzenet állapota Kész **állapotra változott.**
-9. Válassza a **Jelentés létrehozása lehetőséget**. Az áfabevallási összegek előzetes megtekintéséhez **válassza** **az** Előnézet jelentés lehetőséget a Futtatás párbeszédpanelen, majd **kattintson az OK gombra.**
-10. Az Elektronikus **jelentés**[paraméterei párbeszédpanelen állítsa be a mezőket az Ebben a cikk korábbi részében, az Áfabevallás előnézete excelben](#preview-vat-excel) funkcióban leírtak szerint, **majd válassza az OK gombra**.
+5. Nem kötelező: Az Üzenetek gyors **oldalon** válassza az **Adatok** gyűjtése gombra, majd válassza az **OK gombra.** A program hozzáadja a korábban létrehozott áfafizetéseket az üzenethez. A további tudnivalókat lásd [a](#settle-and-post-sales-tax) cikk korábbi, Az áfafizetés és áfa feladás szakaszában. Ha kihagyja ezt a lépést, akkor is létrehozhat áfabevallást **a**  **Bevallás** párbeszédpanel Adóbevallás verziómezője segítségével.
+6. Nem kötelező: Az Üzenet – **cikkek** gyors oldalon ellenőrizze a feldolgozásra átvitt áfafizetéseket. Alapértelmezés szerint a kijelölt időszak minden olyan áfafizetése szerepel, amely nem szerepelt ugyanannak a feldolgozásnak más üzenetében.
+7. Választható: Válassza az **eredeti dokumentumot** az áfakifizetések ellenőrzéshez, **vagy válassza a Törlés** lehetőséget, ha ki szeretné zárni az áfafizetéseket a feldolgozásból. Ha kihagyja ezt a lépést, akkor is létrehozhat áfabevallást **a**  **Bevallás** párbeszédpanel Adóbevallás verziómezője segítségével.
+8. Az Üzenetek **gyorsjelentésen** válassza a Frissítés **állapot beállítását**. A Frissítés állapota párbeszédpanelen **válassza a**  **Generálra kész lehetőséget, majd kattintson az** OK gombra **.** Győződjön meg róla, hogy az üzenet állapota Kész **állapotra változott.**
+9. Válassza a **Jelentés létrehozása lehetőséget**. Az áfabevallási összegek előzetes megtekintéséhez **válassza**  **az** Előnézet jelentés lehetőséget a Futtatás párbeszédpanelen, majd **kattintson az OK gombra.**
+10. Az Elektronikus **jelentés**  [paraméterei párbeszédpanelen állítsa be a mezőket az Ebben a cikk korábbi részében, az Áfabevallás előnézete excelben](#preview-vat-excel) funkcióban leírtak szerint, **majd válassza az OK** gombra.
 11. Válassza a **lap** jobb felső sarkában a Mellékletek gombot (papír clip-szimbólum), **majd** a Megnyitás gombra kattintva nyissa meg a fájlt. Tekintse át az összegeket az Excel-dokumentumban.
 
 ## <a name="run-a-vat-declaration-for-multiple-legal-entities"></a><a name="run-vat-declaration"></a> Áfabevallás futtatása több jogi személyhez
@@ -263,7 +264,7 @@ A következő lépések szerint beállíthatja az elektronikus üzeneteket több
 
 6. Minden új sornál válassza **a Lekérdezés** szerkesztése lehetőséget, és adjon meg egy kapcsolódó kiegyenlítési időszakot a **sor** Vállalat mezőjében megadott jogi személyhez.
 
-Ha a beállítás befejeződött, **·** **az** Elektronikus üzenetek lapon található Adatgyűjtés funkció a megadott jogi személyektől gyűjt áfafizetéseket.
+Ha a beállítás befejeződött, **·**  **az** Elektronikus üzenetek lapon található Adatgyűjtés funkció a megadott jogi személyektől gyűjt áfafizetéseket.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
-ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
+ms.openlocfilehash: adfa2c1164550e32b07da25de0d96aa82430b980
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "9680358"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799626"
 ---
 # <a name="financial-dimensions"></a>Pénzügyi dimenziók
 
@@ -120,7 +120,7 @@ Azt ilyen beállítású származtatott dimenziók nem helyettesítik automatiku
 
 ### <a name="preventing-changes-with-derived-dimensions"></a>Származtatott dimenziókkal módosítások megakadályozása
  
-A **Szegmens hozzáadása** használata esetén a **Származtatott dimenziók lapon** szegmens hozzáadására származtatott dimenzióként, egy lehetőség van a **Szegmens hozzáadása** lap alján, amely lehetővé teszi a dimenzió módosításának megakadályozását, amikor egy weblapon származtatva van. Az alapértelmezett beállítás a ki van kapcsolva, vagyis nem akadályozza meg a származtatott dimenzióértékek módosítását. Módosítsa a beállítást **Igen** értékre, ha azt szeretné, hogy megakadályozza a dimenzió módosítását, miután származtatott lett. Például a Részleg dimenzió értéke a Költséghely dimenzió értékének származtatottja, a Szervezeti egység értéke nem módosítható, ha a **Módosításának megakadályozása** értéke **Igen**. 
+A **Szegmens hozzáadása** használata esetén a **Származtatott dimenziók lapon** szegmens hozzáadására származtatott dimenzióként, egy lehetőség van a **Szegmens hozzáadása** lap alján, amely lehetővé teszi a dimenzió módosításának megakadályozását, amikor egy weblapon származtatva van. Az alapértelmezett beállítás ki van kapcsolva, így nem akadályozza meg a származtatott dimenzióértékek változását. Ha meg szeretné **akadályozni**, hogy a dimenzió a származtatás után módosult, módosítsa Igen beállításra. Például a Részleg dimenzió értéke a Költséghely dimenzió értékének származtatottja, a Szervezeti egység értéke nem módosítható, ha a **Módosításának megakadályozása** értéke **Igen**. 
  
 A beállítás nem akadályozza meg módosításokat, ha a dimenzióérték érvényes, de nem szerepel a származtatott dimenziók listájában. Például ha a 20-as osztály a 10-es költségközpont származtatottja, és beírja a 10-es költséghelyet, majd nem lesz szerkeszthető a 20-as részleg. Ugyanakkor ha megadja a 20-as költséghelyet, és nem szerepel a Költséghely származtatott dimenzióinak listáján, módosíthatja a Részleg értéket. 
  
@@ -137,7 +137,13 @@ Entitások használatával beállíthatja a származtatott dimenziók szegmensei
 
 Ha egy adott entitás révén importálja az adatokat, akkor amennyiben az adott entitás dimenziókat importál, akkor a származtatott dimenziószabályokat alkalmazza a rendszer az importálás során, kivéve, ha az entitás kifejezetten felülbírálja az adott dimenziókat.
 
-További információ a következő témakörökben olvasható:
+## <a name="financial-dimension-service"></a>Pénzügyi dimenzió szolgáltatás
+
+A Pénzügyi dimenzió szolgáltatás bővítménye elérhető a Microsoft Dynamics Lifecycle Services környezetben. Jobb teljesítményt nyújt, amikor az adatkezelési keretrendszert nagy számú sorból származó napló importálására használja. A szolgáltatás csak akkor használható, ha engedélyezni **szeretné azt a Pénzügyi dimenzió szolgáltatás paraméterei oldalon** . Jelenleg a szolgáltatás csak olyan importált naplókban működik, amelyekben 500 sor vagy több van. Emellett jelenleg csak olyan főkönyvi **naplókat** dolgoz fel, amelyekben a főkönyvi számlatípus be van állítva a naplósorok között. A naplósorok egyéb számlatípusai, **például** a Vevő, **·** **a Szállító és a Bank**, jelenleg nem támogatottak. A szolgáltatás nem hívható meg, ha származtatott dimenziók vannak beállítva a rendszerben.
+
+A Pénzügyi dimenzió szolgáltatás jobb teljesítményt nyújt, amikor naplókat importálnak egy olyan új szolgáltatás használatával, amely párhuzamosan fut az adatimportmal. A program csak a fő számla és a pénzügyi dimenzió adatait futtatja a naplóban, és létrehozza a naplósorok főkönyviszámla-karakterlánc mezőjében megadott dimenziókombinációkat. A feldolgozás ezt a karakterláncot olyan strukturált adattárolóvá alakítja, amely a pénzügyi dimenzió keretrendszere a termék többi részében érvényesítésre, összefoglaló jelentésre és lekérdezésre használ. A pénzügyi dimenzióadatok összegző jelentésekkel kapcsolatos további tudnivalókat lásd [: Pénzügyi dimenziókészletek](financial-dimension-sets.md).
+
+További információért tekintse át az alábbi témaköröket:
 
 - [Pénzügyi dimenziók meghatározása](tasks/define-financial-dimensions.md)
 - [Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása](tasks/maintain-financial-dimension-default-templates.md)

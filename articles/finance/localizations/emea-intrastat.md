@@ -1,8 +1,8 @@
 ---
 title: Intrastat – áttekintés
 description: Ez a cikk információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről.
-author: EvgenyPopovMBS
-ms.date: 01/13/2021
+author: mrolecki
+ms.date: 11/30/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom:
 - "28581"
 - intro-internal
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 762de8a098c61bc0d717c038d6ca0ff6d649bff3
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894780"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815711"
 ---
 # <a name="intrastat-overview"></a>Intrastat – áttekintés
 
@@ -58,7 +58,7 @@ Az alábbi táblázatlista mutatja az Intrastat-jelentés előfeltételeit.
 | Címbeállítás | Állítsa be a Nemzetközi Szabványügyi Szervezet (ISO) kódjait az országokhoz/régiókhoz. |
 | Jogi személy | Állítsa be az adószámokat az importhoz/exporthoz, az ágazatiszám-kiterjesztést importhoz/exporthoz, és a jogi személyhez hozzárendelt Intrastat kódot. |
 | Termékkategória hierarchiája (értékesítési hierarchia, beszerzési hierarchia) | Rendelje hozzá az Intrastat vámtarifakódokat a kategória-csomópontokhoz a **Vámtarifakódok** lapon, amely **Kategóriahierarchia** oldalon található. Ha vámtarifakódot rendel egy szülőkategória-csomóponthoz, a kód a gyermekkategória-csomópontokra is vonatkozni fog. A kiválasztott vámtarifakódok elérhetőek lesznek **Kijelölt** nézetben, amennyiben kiválaszt egy vámtarifakódot a kiadott termék részleteiben, és az értékesítési rendelés, a beszerzési rendelés, és átmozgatási rendelés sorban. |
-| Megjelent termék részletei | Állítsa be a kiadott termékekre vonatkozó alábbi külkereskedelmi adatokat:<ul><li>**Vámtarifakód** – Válassza ki a hozzárendelt termékkategóriából származó kiválasztott vámtarifakódok listájából vagy az Intrastat vámtarifakódok teljes listájából.</li><li>**Az statisztikai költségek százalékos értéke**</li><li>**Származási ország/régió** – Válassza ki az alapértelmezett országot/régiót, ahol az árukat beszerezték vagy előállították.</li><li>**Származási/rendeltetési állam/tartomány** – Válassza ki az alapértelmezett célállamot/céltartományt az érkezéshez és a származási államot/tartományt az elküldéshez.</li><li>**Nettó súly (kg)**</li><li>**Kihagyás – akkor** engedélyezze ezt a paramétert, ha nem szeretné áthelyezésre az ezzel a termékkel kapcsolatos tranzakciókat az Intrastat számára.</li></ul> |
+| Megjelent termék részletei | Állítsa be a kiadott termékekre vonatkozó alábbi külkereskedelmi adatokat:<ul><li>**Vámtarifakód** – Válassza ki a hozzárendelt termékkategóriából származó kiválasztott vámtarifakódok listájából vagy az Intrastat vámtarifakódok teljes listájából.</li><li>**Az statisztikai költségek százalékos értéke**</li><li>**Származási ország/régió** – Válassza ki az alapértelmezett országot/régiót, ahol az árukat beszerezték vagy előállították.</li><li>**Származási/rendeltetési állam/tartomány** – Válassza ki az alapértelmezett célállamot/céltartományt az érkezéshez és a származási államot/tartományt az elküldéshez.</li><li>**Nettó súly (kg)**</li><li>**Kihagyás – akkor**  engedélyezze ezt a paramétert, ha nem szeretné áthelyezésre az ezzel a termékkel kapcsolatos tranzakciókat az Intrastat számára.</li></ul> |
 | Vevők | Állítsa be a vevő EU országbeli/régióbeli szállítási címét. |
 | Szállítók | Állítsa be a szállító EU országbeli/régióbeli címét. |
 | Vegyes költségek | Állítsa be a vegyes költségek kódját, hogy a számlaösszeg, a statisztikai összeg vagy mindkettő tartalmazza azt. A **Költségkódok** oldalon, a **Külkereskedelem** lapon, engedélyezze az **Intrastat számlaérték** -et, hogy a költségek összegét is tartalmazza a számlaérték, és engedélyezze **Intrastat statisztikai érték** -et, hogy a költségek összegét is tartalmazza a statisztikai érték.</br>A további tudnivalókat tekintse át a [Tranzakciókódok](#transaction-codes-and-miscellaneous-charges) és a Vegyes költségek példa szerint. |
@@ -72,7 +72,7 @@ Az alábbi szakaszok leírják az Intrastat-jelentéshez szükséges beállítá
 
 |   Lista   |   További információk   |
 |-------------------------|-------------------------|
-| Árucikk-kódok | Állítson be **Vámtarifakód** típusú kategóriahierarchiát és adja meg az összes vámtarifakódot a kombinált nomenklatúra-lista alapján. Minden árucikknél a következő adatokat adja meg:<ul><li>Árucikk megnevezése és vámtarifaszám</li><li>Könnyen megjegyezhető név és/vagy a lefordított név</li><li>A további (kiegészítő) egységek jelentésének beállításai a **Külkereskedelem** lapon. A kiegészítő egységet az egységlistában választhatja ki. Megadhatja az is, hogy a kiválasztott kiegészítő egység mellett az áruk súlyát is jelenteni kell-e.</li></ul>További tájékoztatás a További egységek [között található](#additional-units).|
+| Árucikk-kódok | Állítson be **Vámtarifakód** típusú kategóriahierarchiát és adja meg az összes vámtarifakódot a kombinált nomenklatúra-lista alapján. Minden árucikknél a következő adatokat adja meg:<ul><li>Árucikk megnevezése és vámtarifaszám</li><li>Könnyen megjegyezhető név és/vagy a lefordított név</li><li>A további (kiegészítő) egységek jelentésének beállításai a **Külkereskedelem** lapon. A kiegészítő egységet az egységlistában választhatja ki. Megadhatja az is, hogy a kiválasztott kiegészítő egység mellett az áruk súlyát is jelenteni kell-e.</li></ul>További tájékoztatás a További egységek [között található](#additional-units) .|
 | Tranzakciókódok | Állítsa be a tranzakció jellegét a saját országa/régiója követelményei szerint. Minden egyes beállított tranzakciókódhoz be kell állítania az átmozgatási rendelés és eladási/beszerzési rendelés számlaösszegének és statisztikai összegének kiszámítására vonatkozó szabályokat.<ul><li>Átmozgatási rendeléseknél a számlaösszeg és statisztikai összeg kiszámítására a következő szabályokat állítsa be:<ul><li>**Üres** – Az összeg 0 (nulla) lesz.</li><li>**Pénzügyi önköltség** – Az összeg meg fog egyezni a pénzügyi költséggel.</li><li>**Teljes költség** – Az összeg meg fog egyezni a tranzakció teljes költségével.</li><li>**Manuális** – Az összeg meg fog egyezni az átmozgatási rendelés sorában manuálisan megadott az összeggel.</li></ul></li><li>Értékesítési rendeléseknél és beszerzési rendeléseknél a számlaösszeg és statisztikai összeg kiszámítására a következő szabályokat állítsa be:<ul><li>**Üres** – Az összeg 0 (nulla) lesz.</li><li>**Számlaösszeg** – Az összeg meg fog egyezni az árucikkért számlázott összeggel.</li><li>**Alapösszeg** – Az összeg meg fog egyezni a számlázandó összeggel, bármilyen engedmény alkalmazása előtt.</li></ul></ul>A további tudnivalókat tekintse át a [Tranzakciókódok](#transaction-codes-and-miscellaneous-charges) és a Vegyes költségek példa szerint. |
 | Szállítási módok | Állítsa be a szállítási módot a saját országa/régiója követelményei szerint. Minden szállítási módhoz állíthat be egy alapértelmezett szállítási módot a **Külkereskedelmi** lapon. |
 | Kikötők | Állítsa be a berakodás/kirakodás kikötőjét/repülőterét, ha az országa/régiója gyűjti ezeket az adatokat. |
@@ -159,7 +159,7 @@ Ez az eset a **DEMF jogi** személyt használja.
 #### <a name="preliminary-setup"></a>Előzetes beállítás
 
 1. Menjen a **Szervezetfelügyeleti** > **Szervezet** > **jogi személyekhez**, és válassza a **DEMF lehetőséget**.
-2. Ellenőrizze a **Címek** gyors területen, **hogy az Ország/terület** **mező beállítása DEU(Németország)**.
+2. Ellenőrizze a **Címek** gyors területen, **hogy az Ország/terület**  **mező beállítása DEU(Németország)**.
 3. Ugrás a Kötelezettségek **szállítói** > **minden** > **szállítójához**.
 4. A rácsban válassza a **DE-001 et**.
 5. Válassza a **Szerkesztés** gombra a Cím **gyorsában**.
@@ -171,7 +171,7 @@ Ez az eset a **DEMF jogi** személyt használja.
 1. Ugorjon a következőre: **Adó** > **Beállítás** > **Külkereskedelem** > **Tranzakciókódok**.
 2. Válassza ki a **11** értéket a rácsban. Ezután a munkaablakban válassza a Törlés **lehetőséget**.
 3. A Műveleti ablaktáblán kattintson az **Új** elemre.
-4. Írja be **a 11-et** **·** **·** **a Tranzakciókódok gyorsgombra.**
+4. Írja be **a 11-et**  **·** **·**  **a Tranzakciókódok gyorsgombra.**
 5. A Név **mezőben** adja meg **az outright beszerzést/értékesítést**.
 6. Az Értékesítés **és beszerzések** szakasz **Számlaösszeg mezőjében** válassza ki a Számla **összege lehetőséget**.
 7. A Statisztikai **összeg mezőben** válassza ki a Számla **összegét**.
@@ -182,7 +182,7 @@ Ez az eset a **DEMF jogi** személyt használja.
 1. Ugrás a Kötelezettségek **– Költségek** > **beállítása –** > **Költségek kódra**
 2. A rácsban válassza a Fuvar **lehetőséget**.
 3. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
-4. Állítsa Az **Intrastat számla értékét és az Intrastat** **statisztikai érték beállítását a** Külkereskedelmi **gyorsnyelven** "Igen" értékre **.**
+4. Állítsa Az **Intrastat számla értékét és az Intrastat**  **statisztikai érték beállítását a** Külkereskedelmi **gyorsnyelven** "Igen" értékre **.**
 
 #### <a name="set-up-foreign-trade-parameters"></a>Külkereskedelmi paraméterek beállítása
 
@@ -198,8 +198,8 @@ Ez az eset a **DEMF jogi** személyt használja.
 4. Válassza ki az **OK** lehetőséget.
 5. A **Fejléc** lap **Kül** **kereskedelmi** gyorslapon ellenőrizze, hogy a **Tranzakciókód** mezőben **11** van-e beállítva.
 6. A **Sorok** lapon, a **Beszerzési rendelés sorai** gyorslapon a **Tételszám** mezőben válassza a **D0003-et**. Ezután a **Mennyiség** mezőbe írjon be **10**-et.
-7. Ellenőrizze **a** **·** **Tranzakciókód mező automatikus beállítását a Külkereskedelem lap Sor részletei gyorslapJán,** **a Külkereskedelem** szakaszban.
-8. Válassza **a** **·** **Költségek** szakasz Pénzügyi menüjének Beszerzési rendelés sorai gyorsjelentési csoportban a Költségek **karbantartása lehetőséget.**
+7. Ellenőrizze **a**  **·**  **Tranzakciókód mező automatikus beállítását a Külkereskedelem lap Sor részletei gyorslapJán,**  **a Külkereskedelem** szakaszban.
+8. Válassza **a**  **·**  **Költségek** szakasz Pénzügyi menüjének Beszerzési rendelés sorai gyorsjelentési csoportban a Költségek **karbantartása lehetőséget.**
 9. A Költségkód **mezőben** válassza a FUVAR **lehetőséget**.
 10. A Költségek értékmezőben **adja** meg **a 30-as értéket**.
 11. A műveleti ablaktáblán válassza a **Mentés** lehetőséget. Ezután zárja be az oldalt.
@@ -207,7 +207,7 @@ Ez az eset a **DEMF jogi** személyt használja.
 13. A Műveleti ablaktábla **Számla** lapján a **Létrehozás** csoportban válassza a **Számla** lehetőséget.
 14. A Műveletpanelen válassza az **Alapértelmezettet**. A **Sorok alapértelmezett mennyisége** mezőben válassza a **Megrendelt mennyiséget**. Majd kattintson az **OK** lehetőségre.
 15. A **Szállítói számla fejléc** gyorslap, a **Számla azonosítása** szakaszában a **Szám** mezőbe írja be a **00100-es** számot.
-16. **Válassza a Számladátum** **szakasz Számladátum mezőjében** **a 2021. február 11. dátumot (2021**. november 24. ).
+16. Válassza a **Számladátum**  **szakasz Számladátum mezőjében**  **a 2021.02.11. dátumot (2021** . november 24. ).
 17. A Művelet ablaktáblán válassza a **Feladás** lehetőséget a számla könyveléséhez.
 
 ### <a name="transfer-the-vendor-invoice-to-the-intrastat-journal"></a>A szállítói számla átvitele az Intrastat naplóba
@@ -219,18 +219,18 @@ Ez az eset a **DEMF jogi** személyt használja.
 
    ![Az Intrastat lapon a beszerzési rendelést vegyes költségeket képviselő sor](media/intrastat_overview_1.png)
 
-5. Tekintse át a beszerzési rendelés **Általános** lapját. Ne **feledje** **·** **·**, hogy a Számla értéke mezőben a Számlaösszeg és a Számla költségei összegmezőinek összege, **·** **·** **a Statisztikai érték mezőben pedig a Statisztikai összeg és a Statisztikai költségek összege mezők összege** látható.
+5. Tekintse át a beszerzési rendelés **Általános** lapját. Ne **feledje**  **·**  **·**, hogy a Számla értéke mezőben a Számlaösszeg és a Számla költségei összegmezőinek összege, **·**  **·**  **a Statisztikai érték mezőben pedig a Statisztikai összeg és a Statisztikai költségek összege mezők összege** látható.
 
    ![Beszerzési rendelés adatai vegyes költségeket tartalmazó költségeket az Intrastat lap Általános lapján](media/intrastat_overview_2.png)
 
 ### <a name="transfer-order"></a>Átmozgatási rendelés
 
-Ebben a példában egy németországi vállalatnak két termékegységet kell áthelyeznie egy németországi raktárból egy olaszországi raktárba. A statisztikai érték mezőben 20 **százalékos költségeket is meg kell adni ehhez a termékhez a könyveléshez**. Ez a példa a **DEMF jogi** személyt használja.
+Ebben a példában egy németországi vállalatnak két termékegységet kell áthelyeznie egy németországi raktárból egy olaszországi raktárba. A statisztikai érték mezőben 20 **százalékos költségeket is meg kell adni ehhez a termékhez a könyveléshez** . Ez a példa a **DEMF jogi** személyt használja.
 
 #### <a name="preliminary-setup"></a>Előzetes beállítás
 
 1. Menjen a **Szervezetfelügyeleti** > **Szervezet** > **jogi személyekhez**, és válassza a **DEMF lehetőséget**.
-2. Ellenőrizze a **Címek** gyors területen, **hogy az Ország/terület** **mező beállítása DEU(Németország)**.
+2. Ellenőrizze a **Címek** gyors területen, **hogy az Ország/terület**  **mező beállítása DEU(Németország)**.
 3. Ugorjon a következőre: **Adó** > **Beállítások** > **Külkereskedelem** > **Külkereskedelmi paraméterek**.
 4. Az Árucikk-kódok **hierarchiája** gyorssablonban ellenőrizze, **hogy a Kategóriahierarchia** mező beállítása **Intrastat**.
 5. Ugrás a Kötelezettségek **szállítói** > **minden** > **szállítójához**.
@@ -244,19 +244,19 @@ Ebben a példában egy németországi vállalatnak két termékegységet kell á
 1. Ugorjon a következőre: **Adó** > **Beállítás** > **Külkereskedelem** > **Tranzakciókódok**.
 2. Válassza ki a **11** értéket a rácsban. Ezután a munkaablakban válassza a Törlés **lehetőséget**.
 3. A Műveleti ablaktáblán kattintson az **Új** elemre.
-4. Írja be **a 11-et** **·** **·** **a Tranzakciókódok gyorsgombra.**
+4. Írja be **a 11-et**  **·** **·**  **a Tranzakciókódok gyorsgombra.**
 5. A Név **mezőben** adja meg **az outright beszerzést/értékesítést**.
 6. Az Áthozott **rendelés** szakaszban, a Számla **összege mezőben** válassza a Teljes **költség lehetőséget**.
 7. A Statisztikai **összeg mezőben** válassza az Összköltség **lehetőséget**.
 8. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 9. Ugorjon a következőre: **Adó** > **Beállítások** > **Külkereskedelem** > **Külkereskedelmi paraméterek**.
-10. Válassza a **11-et az Intrastat** **lap** Általános gyorslap Áthozási **rendelés** **mezőjében.**
+10. Válassza a **11-et az Intrastat**  **lap** Általános gyorslap Áthozási **rendelés**  **mezőjében.**
 
 #### <a name="set-up-charges-for-an-item"></a>Cikkek költségeinek beállítása
 
 1. Ugorjon a következőre: **Termékinformáció-kezelés** > **Termékek** > **Felszabadított termékek**.
 2. Válassza ki a rácson a **D0001**-et.
-3. Adja meg **a** **20-ast a Külkereskedelmi gyorsjelentési csoport Intrastat szakasz** **Költségszázalék** **mezőjében**.
+3. Adja meg **a**  **20-ast a Külkereskedelmi gyorsjelentési csoport Intrastat szakasz**  **Költségszázalék**  **mezőjében**.
 
 #### <a name="change-the-site-address"></a>A webhely címének módosítása
 
@@ -271,35 +271,35 @@ Ebben a példában egy németországi vállalatnak két termékegységet kell á
 9. Válassza ki az **OK** lehetőséget.
 10. Ugorjon a **Raktárkezelés** > **Beállítás** > **Raktár** > **Raktárak** pontra.
 11. Válassza ki a **21** értéket a rácsban.
-12. Válassza **a** **DE**-001 et az Általános gyorstinta csoport **Hivatkozás** **szakaszában a Szállítói számla mezőben.**
+12. Válassza **a**  **DE**-001 et az Általános gyorstinta csoport **Hivatkozás**  **szakaszában a Szállítói számla mezőben.**
 
 #### <a name="create-a-transfer-order"></a>Átmozgatási rendelés létrehozása
 
 1. Ugrás a Készletkezelés **kimenő** > **rendeléseit –** > **Átvezetési rendelés**
 2. A Műveleti ablaktáblán kattintson az **Új** elemre.
-3. Válassza **a** **11**-et a Sorok lap Átátviteli rendelés fejlécének **gyorslap** Áttekintés szakaszában a **11**-es **kódot.** A Raktárba **mezőben** válassza a **21-et**.
+3. Válassza **a**  **11**-et a Sorok lap Átátviteli rendelés fejlécének **gyorslap** Áttekintés szakaszában a **11**-es **kódot.** A Raktárba **mezőben** válassza a **21-et**.
 4. Válassza a **Hozzáadás gombra** a Sorok lap Átátviteli **rendelés sorai** gyorslapon a Hozzáadás **lehetőséget**.
 5. A **Cikkszám** mezőben válassza ki a **D0001** cikkszámot. Ezt követően az Áthozott **mennyiség mezőbe** írja be a **2-es mennyiséget**.
-6. Ellenőrizze **a** **·** **Tranzakciókód mező automatikus beállítását a Külkereskedelem lap Sor részletei gyorslapJán,** **a Külkereskedelem** szakaszban.
-7. A Műveleti ablak Szállítás **lapján**, **·** **a Műveletek csoportban válassza az Átátviteli rendelés szállítása lehetőséget.**
+6. Ellenőrizze **a**  **·**  **Tranzakciókód mező automatikus beállítását a Külkereskedelem lap Sor részletei gyorslapJán,**  **a Külkereskedelem** szakaszban.
+7. A Műveleti ablak Szállítás **lapján**, **·**  **a Műveletek csoportban válassza az Átátviteli rendelés szállítása lehetőséget.**
 8. A Szállítás **párbeszédpanel** Áttekintés **lapján** **·**, a Frissítés mezőben válassza a Mind **lehetőséget**.
 9. A **rendelés szállításhoz kattintson az OK** gombra.
 10. A Műveleti ablakTábla **Fogadás** lapján, **a Műveletek** csoportban válassza a Fogadás **lehetőséget**.
-11. A Fogadás **párbeszédpanel Áttekintés** **lapján** **, a Frissítés mezőben válassza a Mind** lehetőséget **.**
+11. A Fogadás **párbeszédpanel Áttekintés**  **lapján**  **, a Frissítés mezőben válassza a Mind** lehetőséget **.**
 12. A **rendelés szállításhoz kattintson az OK** gombra.
 
 #### <a name="transfer-the-transfer-order-to-the-intrastat-journal"></a>Át kell utalni az átrendelést az Intrastat naplóba
 
 1. Ugorjon a következőre: **Adó** > **Nyilatkozatok** > **Külkereskedelem** > **Intrastat**.
 2. A Műveletpanelen válassza az **Átvitel** lehetőséget.
-3. **Az Intrastat (Átátvitel)** párbeszédpanelen **állítsa** **Az** Átrendelés lehetőséget Igen, az összes többi beállítást Pedig Állítsa Nem beállításra.**·**
+3.  **Az Intrastat (Átátvitel)**  párbeszédpanelen **állítsa**  **Az** Átrendelés lehetőséget Igen, az összes többi beállítást Pedig Állítsa Nem beállításra. **·**
 4. Válassza az **OK** lehetőséget a tranzakciók átviteléhez, és tekintse át az Intrastat naplót.
 
    ![Az intrastat oldalon található átátviteli rendelést képviselő sor](media/intrastat_overview_3.png)
 
 5.  Tekintse át az **áthozott** rendelés Általános lapját.
 
-    Ne figyelje meg, hogy a számlaérték és **a** **statisztikai értékszakaszok mezői** automatikusan be vannak állítva. A Számlaösszeg **és** **a Statisztikai** összeg mezők értékei a Tranzakciókódok lapon megadott **beállításokon alapulnak**. A Költségszázalék mezőben a 20 **érték a Kiadott termék oldalon beállított** érték.**·** **·** A Statisztikai költségek **összege** mező értéke a költségek mennyiségi kifejezése (mivel a 107,24-es érték 536,18 százalék 20 százalék). A Statisztikai érték **mező** értéke **a** **Statisztikai összeg és a Statisztikai költségek összegmezőiben található értékek** összege.
+    Ne figyelje meg, hogy a számlaérték és **a**  **statisztikai értékszakaszok mezői** automatikusan be vannak állítva. A Számlaösszeg **és**  **a Statisztikai** összeg mezők értékei a Tranzakciókódok lapon megadott **beállításokon alapulnak** . A Költségszázalék mezőben a 20 **érték a Kiadott termék oldalon beállított** érték. **·**  **·**  A Statisztikai költségek **összege** mező értéke a költségek mennyiségi kifejezése (mivel a 107,24-es érték 536,18 százalék 20 százalék). A Statisztikai érték **mező** értéke **a**  **Statisztikai összeg és a Statisztikai költségek összegmezőiben található értékek** összege.
 
   ![Átátviteli rendelés részletei az Intrastat lap Általános lapján](media/intrastat_overview_4.png)
 
@@ -310,7 +310,7 @@ Ebben a példában egy németországi vállalatnak 10 áruegységet kell vásár
 #### <a name="preliminary-setup"></a>Előzetes beállítás
 
 1. Menjen a **Szervezetfelügyeleti** > **Szervezet** > **jogi személyekhez**, és válassza a **DEMF lehetőséget**.
-2. Ellenőrizze a **Címek** gyors területen, **hogy az Ország/terület** **mező beállítása DEU(Németország)**.
+2. Ellenőrizze a **Címek** gyors területen, **hogy az Ország/terület**  **mező beállítása DEU(Németország)**.
 3. Ugorjon a következőre: **Adó** > **Beállítások** > **Külkereskedelem** > **Külkereskedelmi paraméterek**.
 4. Az **Intrastat** lapon az **Általános** gyorslapon a **Tranzakció** **kód** mezőben válassza a **11**-et.
 5. Az Árucikk-kódok **hierarchiája** gyorssablonban ellenőrizze, **hogy a Kategóriahierarchia** mező beállítása **Intrastat**.
@@ -331,7 +331,7 @@ Ebben a példában egy németországi vállalatnak 10 áruegységet kell vásár
 #### <a name="set-up-unit-conversions"></a>Egységátváltások beállítása
 
 1. Ugrás a Szervezetfelügyelet **–** > **Beállítási egységek** > **egységátváltásai** > **beállításához**.
-2. Az Osztályközi átalakítások lapon **válassza az Új lehetőséget** **.**
+2. Az Osztályközi átalakítások lapon **válassza az Új lehetőséget**  **.**
 3. Az Egységátváltás **párbeszédpanel** Termék **mezőjében** válassza az **F00007 lehetőséget**.
 4. A From **Unit mezőben** válassza ki az ea **lehetőséget**.
 5. A To egység **mezőben** válassza a **GRM-et**.
@@ -339,7 +339,7 @@ Ebben a példában egy németországi vállalatnak 10 áruegységet kell vásár
 7. Válassza ki az **OK** lehetőséget.
 8. Ugorjon a következőre: **Termékinformáció-kezelés** > **Termékek** > **Felszabadított termékek**.
 9. Válassza ki a rácson a **F00007**-et.
-10. Válassza a **GRM** gombra a Készlet **gyorsétét** **gombra** a Készlet szakaszban, az **Egység mezőben**.
+10. Válassza a **GRM** gombra a Készlet **gyorsétét**  **gombra** a Készlet szakaszban, az **Egység mezőben**.
 11. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
 #### <a name="set-up-product-information"></a>Termékinformációk beállítása
@@ -367,12 +367,12 @@ Ebben a példában egy németországi vállalatnak 10 áruegységet kell vásár
 4. Válassza ki az **OK** lehetőséget.
 5. A **Fejléc** lap **Kül** **kereskedelmi** gyorslapon ellenőrizze, hogy a **Tranzakciókód** mezőben **11** van-e beállítva.
 6. A **Sorok** lapon, a **Beszerzési rendelés sorai** gyorslapon a **Tételszám** mezőben válassza a **F00007-et**. Ezután a **Mennyiség** mezőbe írjon be **10**-et.
-7. A Sor **részletei gyorslap** Külkereskedelem **lapján**, a Külkereskedelmi **szakaszon ellenőrizze,** **·** **hogy be van-e állítva automatikusan a Tranzakciókód és a Vámtariat mező.**
+7. A Sor **részletei gyorslap** Külkereskedelem **lapján**, a Külkereskedelmi **szakaszon ellenőrizze,**  **·**  **hogy be van-e állítva automatikusan a Tranzakciókód és a Vámtariat mező.** 
 8. A Műveletpanelen, a **Vásárlás** lapon, a **Műveletek** csoportban válassza a **Megerősítés** lehetőséget.
 9. A Műveleti ablaktábla **Számla** lapján a **Létrehozás** csoportban válassza a **Számla** lehetőséget.
 10. A Műveletpanelen válassza az **Alapértelmezettet**. A **Sorok alapértelmezett mennyisége** mezőben válassza a **Megrendelt mennyiséget**. Majd kattintson az **OK** lehetőségre.
-11. Adja meg **a** **·** **·** **VE-0010 számot a Szállítói számla fejlécének gyorskódja területen a Számlaazonosító szakasz Szám mezőjében.**
-12. A **Számladátum** **szakasz Számladátum mezőjében** válassza **a 2021. február 10. dátumot (2021**. október 5.).
+11. Adja meg **a**  **·**  **·**  **VE-0010 számot a Szállítói számla fejlécének gyorskódja területen a Számlaazonosító szakasz Szám mezőjében.**
+12. Válassza a **Számladátum**  **szakasz Számladátum mezőjében**  **a 2021. február 10.-ét (2021** . október 5.).
 13. A Művelet ablaktáblán válassza a **Feladás** lehetőséget a számla könyveléséhez.
 
 #### <a name="transfer-the-vendor-invoice-to-the-intrastat-journal"></a>A szállítói számla átvitele az Intrastat naplóba
@@ -384,9 +384,31 @@ Ebben a példában egy németországi vállalatnak 10 áruegységet kell vásár
 
    ![A beszerzési rendelést képviselő sor az Intrastat oldalon](media/intrastat_overview_5.png)
 
-5. Tekintse át a beszerzési rendelés **Általános** lapját. Ne feledje **, hogy az** **·** **Egység szakasz további egységeinek és Kiegészítő egység mezőinek** mennyisége automatikusan be van állítva.
+5. Tekintse át a beszerzési rendelés **Általános** lapját. Ne feledje **, hogy az**  **·**  **Egység szakasz további egységeinek és Kiegészítő egység mezőinek** mennyisége automatikusan be van állítva.
 
    ![Beszerzési rendelés részletei az Intrastat lap Általános lapján](media/intrastat_overview_6.png)
+   
+## <a name="list-of-countryregion-specific-articles"></a>Ország-/régióspecifikus cikkek listája
+Az alábbi táblázat felsorolja a rendelkezésre álló ország-/régióspecifikus Intrastat cikkeket.
+
+| Ország          | Hivatkozás      |
+|------------------|-----------|
+| Ausztria          |[Osztrák Intrastat](emea-aut-intrastat.md)| 
+| Belgium          |[Belgium – Intrastat](emea-bel-intrastat.md)|
+| Cseh Köztársaság   |[Cseh Intrastat](emea-cze-intrastat.md)|
+| Dánia          |[Dán Intrastat](emea-dnk-intrastat.md)|
+| Észtország          |[Észt Intrastat](emea-est-intrastat.md)|
+| Finnország          |[Finn Intrastat](emea-fin-intrastat.md)|
+| Franciaország           |[Francia Intrastat](emea-fra-intrastat.md)|
+| Németország          |[Német Intrastat](emea-deu-intrastat.md)|
+| Magyarország          |[Magyar Intrastat](emea-hun-intrastat.md)|
+| Olaszország            |[Olasz Intrastat](emea-ita-intrastat.md)|
+| Lettország           |[Lett Intrastat](emea-lva-intrastat.md)|
+| Litvánia        |[Litván Intrastat](emea-ltu-intrastat.md)|
+| Hollandia      |[Hollandia – Intrastat](emea-nl-intrastat.md)|
+| Lengyelország           |[Lengyelország – Intrastat](emea-pol-intrastat.md)|
+| Spanyolország            |[Spanyolország – Intrastat](emea-esp-intrastat.md)|
+| Svédország           |[Svéd Intrastat](emea-swe-intrastat.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f79ef3ed5db7583eb44b99e49c010778ce8524d1
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: e68b28bfde35b51605aa0b653265da6261b69a90
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9732770"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819242"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge"></a>Dynamics 365 Human Resources infrastruktúra-egyesítés 
 
@@ -28,16 +28,16 @@ ms.locfileid: "9732770"
 
 ## <a name="dynamics-human-resources-365"></a>Dynamics Emberi erőforrások 365
 
-A Microsoft Dynamics 365 Human Resources olyan eszközöket biztosít, amelyek segítik a HR-csoportokat a szervezeti agitás növelésében, az alkalmazotti tapasztalatok átalakításában és a HR-programok optimalizálásában, hogy olyan munkahelyet hozzanak létre, ahol az alkalmazottak és a vállalkozás növekedhet. További tudnivalók:Dynamics 365 Human Resources [Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/)
+A Microsoft Dynamics 365 Human Resources olyan eszközöket biztosít, amelyek segítik a HR-csoportokat a szervezeti agitás növelésében, az alkalmazotti tapasztalatok átalakításában és a HR-programok optimalizálásában, hogy olyan munkahelyet hozzanak létre, ahol az alkalmazottak és a vállalkozás növekedhet. További információ: Dynamics 365 Human Resources [Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/)
 
 - **Az alkalmazotti tapasztalat átalakítása.** A fő teljesítmény megőrzése a vezetők és alkalmazottak révén a kapcsolódó önkiszolgáló tapasztalatokkal, amelyek az együttműködés és a növekedés jegyében állnak elő.
 - **HR-programok optimalizálása.** A működési költségek csökkentésének és a személyek által központú szabadság- és távollét,idő-, juttatás- és kompenzációkezelési programok létrehozása.
-- **Szervezeti agilitység növelése.** A HR számára a vállalat által megkövetelt kézügyesség Dataverse Microsoft Power Platform engedélyezése az adatok használatával és a személyek adatainak központosított kezelésével, valamint az adatok egyszerű kiterjesztésével Dynamics 365 Human Resources.
+- **Szervezeti agilitység növelése.** A HR számára a vállalat által megkövetelt kézügyesség Dataverse  Microsoft Power Platform engedélyezése az adatok felhasználásával és a személyek adatainak központosított kezelésével, valamint az adatok egyszerű kiterjesztésével Dynamics 365 Human Resources.
 - **Munkaerő-információkat lehet leásni.** Adatvezérelt döntéseket hoz az olyan, az adatok elemzésére és megjelenítésére való képességen keresztül, amelyek bármilyen eszközön elérhetők a felhasználói irányítópultokon.
 
-## <a name="human-resources-infrastructure-merge"></a>Az emberi erőforrások infrastruktúra-egyesítésének egyesítése
+## <a name="human-resources-infrastructure-merge"></a>Human Resources infrastruktúra-egyesítés
 
-Dynamics 365 Human Resources Olyan önálló alkalmazás, amely jelenleg más infrastruktúrát használ, mint a többi pénzügyi és műveletalkalmazás, például a Dynamics 365 Pénzügy vagy Dynamics 365 Supply Chain Management a. Az infrastruktúra-egyesítés ugyanazon Dynamics 365 Human Resources infrastruktúra-egyesítést fogja lehetővé venni, mint a többi pénzügyi és műveletalkalmazás.
+Dynamics 365 Human Resources A <a0/<a0/<a2/5><a2/–<a2/<a2/<a3/–<a3/–<a4 Dynamics 365 Supply Chain Management>- olyan önálló alkalmazás, amely jelenleg más infrastruktúrát használ, mint a többi pénzügyi és műveletalkalmazás, például a Dynamics Az infrastruktúra-egyesítés ugyanazon Dynamics 365 Human Resources infrastruktúra-egyesítést fogja lehetővé venni, mint a többi pénzügyi és műveletalkalmazás.
 
 Az emberi erőforrásokkal kapcsolatos infrastruktúra-egyesítésről [az Egyesítés – HR-ajánlatok egyesítésével kapcsolatban olvashat bővebben](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers/). A gyakran feltett kérdésekre adott válaszok az emberi [erőforrás-infrastruktúra egyesítési gyakori kérdéseknél tartalmaznak választ](./hr-infrastructure-merge-faq.md).
 
@@ -47,8 +47,8 @@ Az infrastruktúra-egyesítés részeként az Emberi erőforrások alkalmazás m
 
 A vevők áttelepítése és a vevők egyesítése a következő módon különbözik:
 
-- **Vevők áttelepítése** – az automatizált áttelepítési eszköz az ügyfél-adatbázisnak az emberi erőforrás-infrastruktúrából a pénzügyi és a műveleti infrastruktúrába történő "növekedési és műszaktelepítés" (lift and shift migration) végrehajtásához szükséges. Az eredmény egy új pénzügyi és műveleti környezet, amely a vevő emberi erőforrások adatbázisát használja. 
-- **Vevőegyesítés** – a Microsoftnak nincs szüksége erre a további lépésre. A vevő saját belátása szerint és a vevő saját időrendben történik. A lépés során a vevőadatok már meglévő környezetbe, például pénzügyi vagy projektműveleti környezetbe kerülnek. Ez elsősorban manuális, és a DMF(DMF) adatentitások használatával használhatja. 
+- **Vevők áttelepítése**  – az automatizált áttelepítési eszköz az ügyfél-adatbázisnak az emberi erőforrás-infrastruktúrából a pénzügyi és a műveleti infrastruktúrába történő "fel- és eltolása" áttelepítésének elvégzésére használható. Az eredmény egy új pénzügyi és műveleti környezet, amely a vevő emberi erőforrások adatbázisát használja. 
+- **Vevőegyesítés**  – a Microsoftnak nincs szüksége erre a további lépésre. A vevő saját belátása szerint és a vevő saját időrendben történik. A lépés során a vevőadatok már meglévő környezetbe, például pénzügyi vagy projektműveleti környezetbe kerülnek. Ez elsősorban manuális, és a DMF(DMF) adatentitások használatával használhatja. 
 
 ## <a name="planning-a-human-resources-environment-migration"></a>Az emberi erőforrások környezetének áttelepítése
 
@@ -85,11 +85,12 @@ Az automatikus folyamat során a következő műveleteket kell végrehajtani, é
 
     - Konfigurációk
     - Biztonsági szerepkörök (beleértve az egyéni szerepköröket is)
-    - Munkafolyamatok
+    - Munkafolyamatok (beleértve az értesítéseket)
     - Személyre szabás és mentett nézetek
     - Tranzakciók
     - Egyéni mezők
     - Mellékletek
+    - Figyelmeztetések
 
 - Adatkezelés – saját adatbázis (BYOD) létrehozása.
 - Funkciókezelés – engedélyezett/letiltott szolgáltatások.
@@ -100,7 +101,7 @@ Az automatikus folyamat során a következő műveleteket kell végrehajtani, é
 - A program minden jogi személy **esetén** automatikusan létrehoz egy új számladiagramot, és csatolja azt a Főkönyv laphoz. Az Emberi erőforrások környezetben beállított pénzügyi dimenziókat a program automatikusan hozzáadja egy új számlastruktúrához, és csatolja a főkönyvhöz. 
 
 > [!NOTE]
-> A Dynamics 365 Pénzügyi termék részeként főkönyvet kell megadni a pénzügyi és a műveleti infrastruktúra területén. Az önálló alkalmazásban már meglévő egyéni Dynamics 365 Human Resources dimenzióvezérlő nem érhető el. Az Emberi erőforrások modul egyesített infrastruktúrája a Pénzügyi logika függvénye, amely a pénzügyi dimenziókat az Emberi erőforrások **modulban mutatja**. A számlatükre és a pénzügyi [dimenziókról az alábbi táblázatban olvashat bővebben](../finance/general-ledger/plan-chart-of-accounts.md). 
+> A Dynamics 365 Pénzügyi termék részeként főkönyvet kell megadni a pénzügyi és a műveleti infrastruktúra területén. Az önálló alkalmazásban már meglévő egyéni Dynamics 365 Human Resources dimenzióvezérlő nem érhető el. Az Emberi erőforrások modul egyesített infrastruktúrája a Pénzügyi logika függvénye, amely a pénzügyi dimenziókat az Emberi erőforrások **modulban mutatja** . A számlatükre és a pénzügyi [dimenziókról az alábbi táblázatban olvashat bővebben](../finance/general-ledger/plan-chart-of-accounts.md). 
 
 ## <a name="considerations"></a>Megfontolások
 
@@ -112,5 +113,5 @@ Az automatikus folyamat során a következő műveleteket kell végrehajtani, é
 A licencelés nem változik a Dynamics 365 Human Resources következő területeken: 
 
 - **Minimális licencbevásárlási követelmény**
-- **Licencek termelési és üzenetdoboz-környezethez – ha olyan önálló emberierőforrás-licencekkel rendelkezik, amelyek egy termelési környezetet és egy üzenetdoboz-környezetet engedélyeznek, akkor ugyanannak a licencnek a száma érhető el a** pénzügyi és a műveleti infrastruktúra területén, további költség nélkül.
-- **További** üzenetkészlet-licencek – ha további boxlicenceket vásárolt a különálló Emberi erőforrások alkalmazáshoz, akkor ugyanennek a jelölőnégyzet-licencnek a száma érhető el a pénzügyi és műveleti infrastruktúra szabványos elfogadási tesztkörnyezetében, egyéb költség nélkül. 
+- **Licencek termelési és üzenetdoboz-környezethez – ha olyan önálló emberierőforrás-licencekkel rendelkezik, amelyek egy termelési környezetet és egy postafiókkörnyezetet engedélyeznek, akkor ugyanannak a licencnek a száma érhető el a**  pénzügyi és a műveleti infrastruktúrában, további költség nélkül.
+- **További** üzenetkészlet-licencek – ha további boxlicenceket vásárolt a különálló Emberi erőforrások alkalmazáshoz, akkor ugyanennek a jelölőnégyzet-licencnek a száma érhető el a pénzügyi és műveleti infrastruktúra szabványos elfogadási tesztkörnyezetében, további költség nélkül. 

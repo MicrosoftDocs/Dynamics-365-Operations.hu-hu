@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
-ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
+ms.openlocfilehash: 6283e07b87dc169d3cbaa71a371839ab9b2d6150
+ms.sourcegitcommit: ee13b854cbd52a3aa33e2449a296aed775862594
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "9785099"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "9799036"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>A platform eltávolított vagy elavult funkciói
 
@@ -38,7 +38,7 @@ A pénzügyi és műveletalkalmazások objektumaival kapcsolatos részletes info
 
 A One Dynamics One Platform [munkamunka](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) részeként a következő LCS-funkciók elavultak.
 
-| Funkció neve | AX 2012-hez használatos? | Pénzügy- és műveletalkalmazásokkal használatos? | Felváltotta másik szolgáltatás? |
+| Funkció neve |  AX 2012-hez használatos? | Pénzügy- és műveletalkalmazásokkal használatos? | Felváltotta másik szolgáltatás? |
 |--------------|--------------------|----------------------------------------|------------------------------|
 | Bejelentések | Igen | Igen | Igen: Az egyes projekt- és környezeti lapok értesítési címeket tartalmaznak. |
 | Konfigurációkezelő | Igen | Nem | Nem |
@@ -51,7 +51,7 @@ A One Dynamics One Platform [munkamunka](/dynamics365-release-plan/2022wave2/fin
 | Szolgáltatási kérelmek | Nem | Igen | Igen: [Önkiszolgáló telepítések](../deployment/infrastructure-stack.md) |
 | SharePoint-integráció | Igen | Igen | Nem |
 | Konfiguráció- és adatkezelő | Nem | Igen | Nem |
-| Folyamatadat-csomagok | Nem | Igen | Igen: [Adatimport exportálási keretrendszer (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
+| Folyamatadat-csomagok | Nem | Igen | Igen:Adatimport [exportálási keretrendszer (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
 | Beékítés frissítése | Nem | Igen | Igen: [Egyverziós](../lifecycle-services/oneversion-overview.md) szolgáltatásfrissítések állnak rendelkezésre. |
 | Infrastruktúrabecslő | Igen | Nem | Nem |
 | Licenc méretezése | Igen | Nem | Nem |
@@ -71,10 +71,10 @@ A One Dynamics One Platform [munkamunka](/dynamics365-release-plan/2022wave2/fin
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A rendszer eltávolítja a következő kódokat, hogy megfeleljenek a jelenlegi biztonsági protokolloknak.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Felváltotta másik szolgáltatás?**   | 2023 [. január 31-től kezdve a vevők csak a szabványos kódos suite-eket használhatja](/power-platform/admin/server-cipher-tls-requirements). Ez a módosítás hatással van a kiszolgálóinkkal kommunikáló ügyfelekre és kiszolgálókra, és hatással lehet például a külső fél integrációjára, amelyek nem a szabványos kódcsomagokhoz vannak hatással. |
+| **Felváltotta másik szolgáltatás?**   | 2023. januártól kezdve az ügyfelek csak a [szabványos kódokat használhatja](/power-platform/admin/server-cipher-tls-requirements). Ez a módosítás hatással van a kiszolgálóinkkal kommunikáló ügyfelekre és kiszolgálókra, és hatással lehet például a külső fél integrációjára, amelyek nem a szabványos kódcsomagokhoz vannak hatással. |
 | **Érintett területek**         | Finance and Operations alkalmazások |
 | **Telepítési beállítás**              | Felhőtelepítések |
-| **Állapot**                         | Elavult. Az ügyfeleknek 2023. január 31-ig frissíteniük kell a kiszolgálókat. A TLS Cipher Suite rendelés konfigurálásával kapcsolatos további tudnivalókat lásd [a Szállítási réteg biztonságának (TLS) kezelése.](/windows-server/security/tls/manage-tls)  |
+| **Állapot**                         | Elavult. Az ügyfeleknek 2023. január előtt frissíteniük kell a kiszolgálókat. A TLS Cipher Suite rendelés konfigurálásával kapcsolatos további tudnivalókat lásd [a Szállítási réteg biztonságának (TLS) kezelése.](/windows-server/security/tls/manage-tls)  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Funkció értékcsökkenése 2022. júniusban
@@ -83,8 +83,8 @@ A One Dynamics One Platform [munkamunka](/dynamics365-release-plan/2022wave2/fin
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A pénzügyek és műveletek (Dynamics 365) alkalmazás és platform leárazása egyetlen mobil platformra, Power Apps azaz egy mobil platformra való konszolidálás érdekében. |
-| **Felváltotta másik szolgáltatás?**   | Igen, a pénzügyet és a műveleteket túli mobil tapasztalatok alkalmazásadatai integrációval is felépíthetőek Power Platform. További részleteket [a](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) post post és [Building mobil tapasztalatokkal](../power-platform/build-mobile-experiences.md) talál. |
+| **Elavulás/eltávolítás oka** | A pénzügyek és műveletek (Dynamics 365) alkalmazás és platform leárazása egyetlen mobil platformra való konszolidálás érdekében. Power Apps |
+| **Felváltotta másik szolgáltatás?**   | Igen, a pénzügyet és a műveleteket túli mobil tapasztalatok alkalmazásadatai integrációval is felépíthetőek Power Platform . További részleteket [a](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) post post és [Building mobil tapasztalatokkal](../power-platform/build-mobile-experiences.md) talál. |
 | **Érintett területek**         | Finance and Operations alkalmazások |
 | **Telepítési beállítás**              | Minden |
 | **Állapot**                         | Elavult. A támogatás végének dátuma 2024. október. |
@@ -125,7 +125,7 @@ A One Dynamics One Platform [munkamunka](/dynamics365-release-plan/2022wave2/fin
 | **Felváltotta másik szolgáltatás?**   | Nem. A vevőknek és az isV-knek érdemes megfontolni, hogy XSLT-parancsfájlok használata esetén az X++ nyelv alapján újra legyen edzve a megoldásuk. |
 | **Érintett területek**         | Finance and Operations alkalmazások |
 | **Telepítési beállítás**              | Minden |
-| **Állapot**                         | Elavult <br><br>**Kivétel:** AZ XLST parancsfájlt jelenleg használó vevők. A verzió a 10.0.30-as vagy újabb verzióra való frissítésig továbbra is használható. Korábbi verziók esetén a kivétel 2023. január 31-én lejár. A kivétellel értesítő vevők értesítést kaptak az Microsoft 365 Adminisztrációs központban elérhető Üzenetközpontban. |
+| **Állapot**                         | Elavult <br><br>**Kivétel:**  AZ XLST parancsfájlt jelenleg használó vevők. A verzió a 10.0.30-as vagy újabb verzióra való frissítésig továbbra is használható. Korábbi verziók esetén a kivétel 2023. január 31-én lejár. A kivétellel értesítő vevők értesítést kaptak az Microsoft 365 Adminisztrációs központban elérhető Üzenetközpontban. |
 
 ## <a name="feature-removal-effective-october-2021"></a>2021. októbertől hatályos funkcióeltávolítás
 
@@ -284,7 +284,7 @@ A One Dynamics One Platform [munkamunka](/dynamics365-release-plan/2022wave2/fin
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A Microsoft 2020 Internet Explorer . december 11-e óta támogatja minden Dynamics 365 termék és a Dynamics Lifecycle Services (LCS) használatát, Internet Explorer 2021. augusztus óta pedig 11 nem lesz támogatott.<br><br>Ez hatással lesz az ügyfelekre, akik a Dynamics 365 termékeket és az LCS-t Internet Explorer használják, és 11 felületet használnak. 2021 Internet Explorer . augusztus után 11 nem lesz támogatott az ilyen Dynamics 365 termékek és LCS esetében. |
+| **Elavulás/eltávolítás oka** | A Microsoft 2020 Internet Explorer . december 11-e óta támogatja minden Dynamics 365 termék és a Dynamics Lifecycle Services (LCS) használatát, Internet Explorer 2021. augusztus óta pedig 11 nem lesz támogatott.<br><br>Ez hatással lesz az ügyfelekre, akik a Dynamics 365 termékeket és az LCS-t Internet Explorer használják, és 11 felületet használnak. 2021 augusztusa Internet Explorer  után 11 nem lesz támogatott az ilyen Dynamics 365 termékek és LCS esetében. |
 | **Felváltotta másik szolgáltatás?**   | Azt ajánljuk, hogy a vevők térjenek át a Microsoft Edgere.|
 | **Érintett területek**         | Minden Dynamics 365 termék és LCS |
 | **Telepítési beállítás**              | Minden|

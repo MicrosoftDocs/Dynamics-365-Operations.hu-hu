@@ -2,7 +2,7 @@
 title: Szállítói feladási profilok
 description: A szállítói feladási profilok a szállítói tranzakciók főkönyvbe történő feladását szabályozzák.
 author: abruer
-ms.date: 06/12/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.form: VendPosting
-ms.openlocfilehash: 922612e536164c7985f0be107f67ad8bbaef7898
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 09f27ef510f38c10fc265b682a492ba5872b6d3e
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272978"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799599"
 ---
 # <a name="vendor-posting-profiles"></a>Szállítói feladási profilok
 
@@ -94,7 +94,7 @@ Ha azt szeretné, hogy a szállítói tranzakciók feladási profiljai megegyezz
 </tr>
 <tr class="even">
 <td><strong>Beérkezés</strong></td>
-<td>Válassza ki a főkönyvi számlát, amelyre a nem jóváhagyott szállítói számlákkal kapcsolatos információkat feladja. Az adat a számlajegyzék-naplóban szerepel. Például, egy felhasználó alapvető adatokat ad meg szállítói számlákról, amikor megkapta a számlajegyzéket. A számlajegyzék feladásakor a tranzakciók az itt és az <strong>Ellenszámla</strong> mezőben megadott számlára kerülnek. A számlák jóváhagyását követően a kötelezettség átkerül a beérkezési számláról a szállítói összegző számlára.</td>
+<td>Válassza ki a főkönyvi számlát, amelyre a nem jóváhagyott szállítói számlákkal kapcsolatos információkat feladja. Az adatok a Számlajegyzék naplóba <strong>való beírása</strong>. Például, egy felhasználó alapvető adatokat ad meg szállítói számlákról, amikor megkapta a számlajegyzéket. A számlajegyzék feladásakor a tranzakciók az itt és az <strong>Ellenszámla</strong> mezőben megadott számlára kerülnek. A számlák jóváhagyását követően a kötelezettség átkerül a beérkezési számláról a szállítói összegző számlára.</td>
 </tr>
 <tr class="odd">
 <td><strong>Ellenszámla</strong></td>
@@ -110,10 +110,10 @@ Azokhoz a tranzakciókhoz, amelyeket a feladási profil kiválasztott, meghatár
 
 Adja meg a következő értékeket a feladási profil beállításához
 
-| Mező          | Leírás                                                                                                                                                                                                    |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Mező          | Leírás             |
+|----------------|--------------------------------------------------------------------------|
 | **Kiegyenlítés** | Válassza ki ezt a lehetőséget a feladási profillal rendelkező tranzakciók automatikus elszámolásának engedélyezéséhez. Ha ez a lehetőség nincs bejelölve, manuálisan kell rendeznie a tranzakciókat a **Nyitott tranzakciók kiegyenlítése** oldalon. |
-| **Mégse**     | Válassza ki ezt a lehetőséget, ha szeretné érvényteleníteni a feladási profillal rendelkező tranzakciókat.                                                                                                               |
+| **Mégse**     | Válassza ki ezt a lehetőséget, ha szeretné érvényteleníteni a feladási profillal rendelkező tranzakciókat.                              |
 | **Zárás**      | Válasszon ki egy másik feladási profilt, amelyre váltani szeretne a jelen feladási profilt használó tranzakciók bezárásakor. Egy tranzakció akkor minősül bezártnak, ha a teljes kiegyenlítése megtörtént.                                       |
 
 

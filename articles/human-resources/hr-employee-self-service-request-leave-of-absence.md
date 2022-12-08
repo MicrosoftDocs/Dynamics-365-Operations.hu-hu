@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51c6cb7c5706bb4bd7080c7f7d679e49771443d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e6c98246e94670dd5f882fcbbd1f269e57f66faf
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869836"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805287"
 ---
 # <a name="request-a-leave-of-absence"></a>Távollétkérelem
 
 >[!Important]
->Az ebben a cikkben említett funkciók jelenleg önálló vevők számára érhetők el Dynamics 365 Human Resources. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
+>Az ebben a cikkben említett funkciók jelenleg csak a különálló Dynamics 365 Human Resources rendszerében lévő vevőknek érhetők el. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
@@ -51,6 +51,22 @@ Távollétre vonatkozó kérelmet küldhet, és megtekintheti a szabadságkérel
 1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Részletek** (...) lehetőséget a **Szabadságegyenlegek** csempén.
 
 2. A távollétkérelmeinek megtekintéséhez válassza a **Távollét megtekintése** lehetőséget.
+
+## <a name="update-a-leave-of-absence-request"></a>Távolléti kérelem frissítése
+
+1. Az Alkalmazott – **önkiszolgáló rendszer** munkaterületÉn **·**, a Távollét csempe további **tudnivalókat (...) jelöljön be**.
+2. Válassza ki a frissíteni kívánt távolléti kérelmet, majd válassza **a Távollét frissítése lehetőséget**.
+3. A Záró **dátum mezőben** szükség szerint frissítse az értéket a távollét meghosszabbítása vagy lerövidítása érdekében.
+4. Ha a záró dátumot visszaigazolják, állítsa **a Záró dátum megerősítése** beállítást Igen **beállításra**.
+5. Miután a Záró **dátum megerősítése** beállítás Igen **beállításra** van állítva, fel lehet tölteni a munkára való visszatérésről szóló értesítést. Ezt követően jelölje be a jelölőnégyzetet, ha meg kell erősíteni, hogy fel lett töltve a munkára való visszatérésről szóló értesítés.
+6. A **távolléti** kérelem frissítéséhez válassza a Küldés lehetőséget.
+
+## <a name="cancel-a-leave-of-absence-request"></a>Távolléti kérelem visszavonása
+
+1. Az Alkalmazott – **önkiszolgáló rendszer** munkaterületÉn **·**, a Távollét csempe további **tudnivalókat (...) jelöljön be**.
+2. Válassza ki a visszavonni kívánt távolléti kérelmet, majd válassza **a Távollét frissítése lehetőséget**.
+3. Állítsa a Szabadság **visszavonása lehetőséget** Igen **gombra**.
+4. A **távolléti** kérelem megszakításhoz válassza a Küldés lehetőséget.
 
 ## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Szabadságkérések importálása más rendszerekből vagy régebbi rendszerekből
 

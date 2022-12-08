@@ -15,14 +15,14 @@ ms.search.region: global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e1d7fc58ad71365275d5e82a277554bee99c43a
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 8e613bc97a41b62e81ebfbcb8c08e33a60603648
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151344"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803910"
 ---
-# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
+# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Banki kivonatok egyeztetése speciális banki egyeztetés használatával
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,7 +37,10 @@ Feltölthet olyan banki kivonatot, ami egy vagy több számla információt tart
 -   Egy banki kivonat egy számlához importálásához, állítsa be az **Kivonat importálása több bankszámláról az összes jogi személynél** lehetőséget **Nem** értékre, és válassza ki a kivonathoz tartozó bankszámlát. Kattintson a **Keresés** gombra, hogy kijelölje a kapcsolódó banki kivonat fájlt, majd kattintson a **Feltöltés** gombra.
 -   Egy banki kivonat fájl több fiókhoz importálásához, állítsa be a **Kivonat importálása több bankszámláról az összes jogi személynél** lehetőséget **Igen** értékre. Kattintson a **Keresés** gombra, hogy kijelölje a kapcsolódó banki kivonat fájlt, majd kattintson a **Feltöltés** gombra.
 
-Ha az elektronikus fájlban található bármelyik kivonatot nem lehet társítani egy bankszámlához az azonosító mezők használatával, vagy több bankszámlához van társítva, akkor ez a kivonat nem lesz importálva. A fájlban található többi kimutatás importálása azonban megtörténik. A felhasználó ezután kap egy üzenetet, amely arról tájékoztatja, hogy a banki kivonatok importálása a meghatározott bankszámlák esetében sikertelen volt. Ne feledje, hogy a felhasználónak, aki a bankszámlakivonat-fájlt importálja, hozzáféréssel kell rendelkezni a jogi személyhez ahhoz, hogy importálni tudja a jogi személy bankszámlájához tartozó kivonatokat. 
+Ha az elektronikus fájlban található bármelyik kivonatot nem lehet társítani egy bankszámlához az azonosító mezők használatával, vagy több bankszámlához van társítva, akkor ez a kivonat nem lesz importálva. A fájlban található többi kimutatás importálása azonban megtörténik. A felhasználó ezután kap egy üzenetet, amely arról tájékoztatja, hogy a banki kivonatok importálása a meghatározott bankszámlák esetében sikertelen volt. 
+
+>[!Note] 
+>A banki kivonatfájlt importáló felhasználónak hozzá kell férnie egy jogi személyhez, hogy a jogi személy bankszámláihoz kivonatokat importálhat. 
 
 Egy zip-fájl segítségével egyetlen folyamatban több kivonatfájlt tölthet fel a Finance megoldásba. Több kivonat több bankszámlához importálásához, egyesítse az összes banki kivonat fájlt egy zip-fájlba. A **Banki kivonatok importálása** párbeszédpanelen, állítsa a **Kivonat importálása több bankszámláról az összes jogi személynél** lehetőséget **Igen** értékre. Kattintson a **Keresés** gombra, hogy kijelölje a zip fájl, ami a kapcsolódó banki kivonat fájlokat tartalmazza, majd kattintson a **Feltöltés** gombra. Az importálási folyamat felismeri a zip-fájlt, és feltölt minden kimutatást, amelyet tartalmaz, a bankszámla jogi személyétől függetlenül.
 

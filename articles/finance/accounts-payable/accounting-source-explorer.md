@@ -1,8 +1,8 @@
 ---
 title: Könyvelési források böngészője
-description: A cikk információt biztosít a Könyvelés forrás felfedezőről, aminek segítségével részletes elemzést végezhet a főkönyvi könyvelés bejegyzései mögötti forrásinformációról.
+description: Ez a cikk a Könyvelési forrás intéző lapról nyújt tájékoztatást, amely a főkönyvi könyvelési tételeken alapuló forrásinformációk részletes elemzésére használható.
 author: RyanCCarlson2
-ms.date: 06/20/2017
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,41 +15,38 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1200092306c1848a2e705b868c2185362b5a3c89
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 5bd5580dc0be37ec89e6c7934b47c7d5593d8716
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710469"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806433"
 ---
 # <a name="accounting-source-explorer"></a>Könyvelési források böngészője
 
 [!include [banner](../includes/banner.md)]
 
-A cikk információt biztosít a Könyvelés forrás felfedezőről, aminek segítségével részletes elemzést végezhet a főkönyvi könyvelés bejegyzései mögötti forrásinformációról.
+Ez a cikk a **Könyvelési forrás intéző** lapról nyújt tájékoztatást, amely a főkönyvi könyvelési tételeken alapuló forrásinformációk részletes elemzésére használható.
 
-A számlázási forrás megtekintő egy új oldal, amely megjeleníti a forrásinformációt. A Könyvelési források böngészője önálló eszközként vagy főkönyvi könyvelési tételek mögötti részletek elemzésére használható. Például a Könyvelési források böngészőjével lehívhatók a legrészletesebb forrásinformációk ellenőrzési egyenlegeket vagy bizonylati tranzakciókat illetően. Ezután az Exportálás MS Excelbe funkció használatával, majd a Microsoft Excel programot használhatja az adatok további feldolgozására (például a Pivot táblával vagy Pivot tábla kimutatással).
+A **Könyvelés forrás intéző lapja** a forrásadatokat jeleníti meg. Különálló eszközként vagy a főkönyvi könyvelési tételeken túli részletek elemzésére használható. A lap használatával például a legrészletesebb forrásadatokat lehet kapni a számlaegyenleg egyenlege vagy egy bizonylattranzakció esetében. Ezután az **Exportálás AZ MS Excel**  Microsoft Excel  programba funkció használatával tovább szeletelheti és kockába adhatja az adatokat (például kimutatásban vagy kimutatásos jelentésben).
 
-Könyvelési források böngészője mindig ugyan azt a teljes összeget mutatja főkönyvi számlánként amelyet a Főkönyv (például a főkönyvi kivonat). A főkönyvi kivonatban, megjelenítheti a szegmenseket külön oszlopokban. Csak válassza ki a megfelelő pénzügyi dimenzió készletet. 
+A **Könyvelés forrás intéző** lapja mindig ugyanazt a főkönyvi számlánkénti teljes összeget mutatja, mint a főkönyv (például főkönyvi számláknál). Mint a próbaegyenleg, a szegmenseket külön oszlopokban is meg lehet jelenni. Csak válassza ki a megfelelő pénzügyi dimenzió készletet. 
 
-Paraméterek segítségével meghatározhatja za elemzési időszakot. Ez a funkció hasonlít a Főkönyvi kivonat funkciójára.
+Paraméterek segítségével meghatározhatja za elemzési időszakot. Ez a funkció hasonlít a próbaegyenleg funkcióhoz is.
 
-A forrásdokumentum-keretet használó valamennyi dokumentumnál a Könyvelési források böngészője további információkat jeleníti meg könyvelési felosztások és adott esetben projektszintű könyvelési felosztások alapján. Ezek az információk többek között: a pénzben kifejezett összeg típusa, projekt, tevékenység, kategória és sortulajdonság. Következzék pár példa az elvégezhető elemzésekre:
+A forrásdokumentum-keretrendszert használja minden dokumentum esetén a **Könyvelés forrás intézője** lap további információkat is megjeleníti a könyvelési felosztások, illetve szükség esetén a projektkönyvelési felosztások alapján. Ezek közé tartozik **a pénzügyi összeg típusa**, **a Projekt**, **a Tevékenység**, **a Kategória** és a **Sor tulajdonság értéke** . Következzék pár példa az elvégezhető elemzésekre:
 
--   A beszerzési rendelés és szállítói számla közötti különbségek, mert minden eltérést egy pénzösszeg típus jelez, például költségeltérés
--   Számlázható és a nem számlázható órák és kiadások projekt, üzleti egység és a fő számla
+- A beszerzési rendelés és szállítói számla közötti különbségek, mert minden eltérést egy pénzösszeg típus jelez, például költségeltérés
+- Számlázható és a nem számlázható órák és kiadások projekt, üzleti egység és a fő számla
 
-Azokhoz a forrásbizonylatokhoz, amelyek a forrásbizonylat hivatkozás identitáskoncepciót használják, a Könyvelési források böngészője még több információt mutat, például vevő, szállító, dolgozó, termék, egységszöveg, és leírások. Következzék pár példa az elvégezhető elemzésekre:
+A forrásdokumentum-hivatkozási **azonosítók koncepcióját használja forrásdokumentumok esetén a Könyvelési forrás intéző** lapja még több részletet is megjeleníti, **például** a Vevő, **a** Szállító, **a** Dolgozó,a Termék,a **·** **Mennyiség**, **az Egység** **szövege és a Leírás** értékét. Következzék pár példa az elvégezhető elemzésekre:
 
--   A szállodai költségek üzleti egységre bontva és a szálloda márka a pénzügyi időszakra, költségjelentések alapján
--   Engedmény szállítókra, termékre, részletre bontva
+- A szállodai költségek üzleti egységre bontva és a szálloda márka a pénzügyi időszakra, költségjelentések alapján
+- Engedmény szállítókra, termékre, részletre bontva
 
-Ezek a dokumentumoknál navigálhat a tényleges forrásbizonylathoz a Könyvelési források böngészőjéből.
+Ezeken a dokumentumokon a **tényleges forrásdokumentumot a Könyvelési forrás intéző lapról is meg lehet** jelenni.
 
 > [!NOTE]
-> A 10.0.20-as verziótól a **Frissítés** gomb két további tartományt is biztosít, amelyek korlátozzák a lapon az adatok beírásához futtatott kezdeti lekérdezést. Ezek a további tartományok a 10.0.19-es verzióban is elérhetők szolgáltatásfrissítésként. A következő mezők lettek hozzáadva:
->
-> - Kezdő bizonylat, Befejező bizonylat
-> - Kezdő főszámla, Befejező főszámla
+> A 10.0.31-es verziónak megfelelő új Könyvelési forrás intéző **speciális szűrési funkciója elérhető a** Funkciókezelésben. Ez a funkció lecseréli **a Frissítés** gombot, hogy hatékonyabb, speciális lekérdezési lehetőségeket biztosítson, amelyek hasonlítanak a **Bizonylattranzakciók lapon elérhetőhez** . A speciális szűrő segítségével a **bizonylattranzakciók lekérdezési lapján hasonló mezőkre szűrheti a mezőket, például a főkönyvi számlát,**  **·** **az üzleti egységet,** **a** költségközpontot és a részleget. **·** 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

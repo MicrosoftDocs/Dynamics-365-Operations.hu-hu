@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-10-01
 ms.dyn365.ops.version: 10.0.31
-ms.openlocfilehash: 05ccd9794ffeba6a09d6fec0a57ffad2b59707ad
-ms.sourcegitcommit: 87e75aa6af2c3280316d7d73eafa14a52353a5e4
+ms.openlocfilehash: ed4325095163415d05a56128cb1f0334440fe0e5
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "9709871"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787526"
 ---
 # <a name="preview-of-dynamics-365-commerce-10031-february-2023"></a>A Dynamics 365 Commerce 10.0.31 (2023. február) előzetes verziója
 
@@ -36,8 +36,9 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Elő
 |---|---|---|---|
 | Hibakódok | A Commerce rendszer szabványos hibahivatkozásokat vezetett be, amelyek az online csatorna online csatorna-pénztári hibáiba bekerülnek.| [Pénztár modul hibakódja](../checkout-module-error-codes.md)  | Alapértelmezés szerint be |
 | Fizetések | [A Dynamics 365 Payment Connector for Adyen fizetési engedélyezése](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-apple-pay-dynamics-365-payment-connector-adyen)  | Az e-commerce vevők a támogatott eszközök és böngészők használata esetén a Bevásárlókocsiba és a Pénztárba fizethet oldalokat használhatnak. | Fejlesztői jelentkezés |
-| Fizetések  |  A Commerce hozzáadta a lehetőséget, hogy korlátozza az ismétlődő fizetési tokenekkel való felhasználói kapcsolatot a Commerce Headquarters felhasználói felületén. A fizetési képernyők (például **a Hívásközpont** értékesítési rendelése) már nem jelenítik meg a vevő korábban használt ismétlődő fizetési tokenját az új tranzakciókban való használatra. Új tranzakció kifizetésének feldolgozásakor a hívásközponti vagy a Commerce Headquarters felhasználói csak egy meghatározott "fájlkártya" jelennek meg a Commerce **Customer Payments** képernyőn, illetve egy értékesítési rendelésen keresztül történő fizetéssel egy vevővel kötött megállapodással. | [Fizetési token használatának korlátozása](../dev-itpro/limit-token-usage.md)  |  Funkció kezelése<p>*Fizetési jogkivonat használatának korlátozása a rendelési környezetre*  |
+| Fizetések  |  A Commerce hozzáadta a lehetőséget, hogy korlátozza az ismétlődő fizetési tokenekkel való felhasználói kapcsolatot a Commerce Headquarters felhasználói felületén. A fizetési képernyők (például **a Hívásközpont** értékesítési rendelése) már nem jelenítik meg a vevő korábban használt ismétlődő fizetési tokenját az új tranzakciókban való használatra. Új tranzakció kifizetésének feldolgozásakor a hívásközponti vagy a Commerce Headquarters felhasználói csak egy meghatározott "fájlkártya" jelennek meg a Commerce **Customer Payments** képernyőn, illetve egy értékesítési rendelésen keresztül történő fizetéssel egy vevővel kötött megállapodással. | [Fizetési kód használatának korlátozása](../dev-itpro/limit-token-usage.md)  |  Funkció kezelése<p>*Fizetési jogkivonat használatának korlátozása a rendelési környezetre*  |
 | Pénztár | [Beszerzési rendelések létrehozása a POS-ból](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/create-purchase-orders-pos)  |  Továbbfejlesztett bejövő készletművelet a pénztári alkalmazásban, amely lehetővé teszi a felhasználók számára beszerzési rendelési kérelmek létrehozására, szerkesztésére és megerősítésére. |  Funkció kezelése<p>*Lehetőség a beszerzési rendelési kérések létrehozására a pénztárban*   |
+| További nyelvek érhetők el | Négy további nyelv érhető el. | A preferált nyelvi listában négy új nyelv érhető el a felhasználók számára: Koreai, Portugál (Brazil), Vietnami és Kínai (Hagyományos). Ennek a beállításnak a kiválasztásához kattintson a Felhasználói beállítások **\>  \> beállításai - Nyelv és az ország/régió kívánt nyelvére.** | Honosított beállítások |  
 
 
 

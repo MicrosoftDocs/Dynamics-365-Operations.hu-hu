@@ -2,7 +2,7 @@
 title: Rendelés frissítése
 description: A Microsoft Dynamics 365 Human Resources teljes mértékben „szoftver szolgáltatásként” (SaaS) elven működik, amely folyamatos, érintés nélküli szolgáltatásfrissítéseket és platformmódosításokat tartalmaz.
 author: twheeloc
-ms.date: 09/01/2022
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 197b3c5717494ab3c80a57cda337a9021293bf73
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520810"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819296"
 ---
 # <a name="update-process"></a>Rendelés frissítése
 
-_**Érvényes:** Emberi erőforrások a különálló infrastruktúrán_ 
+_**Érvényes:**  Emberi erőforrások a különálló infrastruktúrán_ 
 
 > [!NOTE]
 > 2022 júliusa óta nem lehet új emberi erőforrások környezeteket létesítni a különálló emberi erőforrások infrastruktúrájára, Microsoft Dynamics és nem lehet új Lifecycle Services -projekteket létrehozni rajta. A vevők az emberi erőforrások környezetét telepítheti a pénzügyi és a műveleti infrastruktúrára. A további tudnivalókat lásd [az Emberi erőforrások biztosítása a pénzügyi és a műveleti infrastruktúra területén](hr-admin-setup-provision-fo.md).
@@ -41,7 +41,7 @@ A frissítések rendszeres ütemben jelennek meg minden környezethez. A Human R
 
 A Human Resources szolgáltatás frissítései automatikusan alkalmazva vannak az összes környezetre. A Human Resources szolgáltatáshoz kétféle kiadást biztosítunk:
 
-- **Szolgáltatásfrissítések**: Hibajavításokat és új funkciókat tartalmazó frissítések kéthetente jelennek meg. A szolgáltatásfrissítések tartalmazzák a megfelelő platformfrissítéseket is, amikor ki vannak adva. A platformfrissítésekkel kapcsolatos további tudnivalókat [lásd a Platformfrissítések újdonságai és módosulásai.](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md) A frissítéseknek több régióra is ki van ásva a globális összesítésük. A frissítésekkel kapcsolatos további tudnivalókat [lásd a Újdonságok és a Módosítások a következőben:Dynamics 365 Human Resources](hr-admin-whats-new.md)
+- **Szolgáltatásfrissítések**: A szolgáltatásfrissítések a megfelelő platformfrissítéseket tartalmazzák a kiadvakor. A kivétel alapú frissítések mellett rendszeres szolgáltatásfrissítések is sorra állnak a Dynamics 365 Pénzügyi platform általános elérhetőségének frissítéseit követően. A platformfrissítésekkel kapcsolatos további tudnivalókat [lásd a Platformfrissítések újdonságai és módosulásai.](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md) A frissítéseknek több régióra is ki van ásva a globális összesítésük. A frissítésekkel kapcsolatos további tudnivalókat [lásd a Újdonságok és a Módosítások újdonságok Dynamics 365 Human Resources](hr-admin-whats-new.md) oldalon.
 
 - A **Dataverse megoldás frissítései**: Ezek frissítések kb. hat hetente jelennek meg, szükség szerint. Új entitásokat tartalmaz, valamint a Dataverse meglévő entitásainak módosításait. Ezek a frissítések kéthetes frissítésekkel azonos régiókba adták ki őket, és az összes adatforráson keresztüli replikálás körülbelül hat hétig tart. A megoldások frissítései követhetik a kétheti szolgáltatásfrissítéseket, de nem feltétlenül.
 
@@ -56,16 +56,7 @@ Szükség esetén az Emberi erőforrások a következő típusú javításokat b
 
 A kiadások felülvizsgálata, tesztelése és ellenőrzése belső környezetben történik. A buildek jóváhagyása után következik a termelési környezetben történő felhasználásuk.
 
-## <a name="release-cadence-exceptions-in-2021"></a>Kiadási ütemezést érintő kivételek 2021-ban
-
-A munkaszüneti napok figyelembe vételéhez a 2021. novemberi és decemberi kiadások ütemezése a következő:
-
-- Novemberi kiadás: november 1. – november 14.
-- Decemberi kiadás: November 29. – December 12.
- 
-A kéthetes kiadási ütemezés a szokásos módon fog folytatódni 2022. január 10-én.
-
-## <a name="communications"></a>Tájékoztatás
+## <a name="communications"></a>Kommunikációk
 
 A következő helyeken tudhatja meg, hogy milyen munkák vannak folyamatban a Human Resources szolgáltatással kapcsolatban, és mit adtunk már ki:
 

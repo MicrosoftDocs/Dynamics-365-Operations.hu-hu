@@ -2,7 +2,7 @@
 title: Kiegyenlítés áttekintése (központosított kifizetések)
 description: Ez a témakör leírja a 365 Pénzügy központosított kifizetésének Microsoft Dynamics kiegyenlítését.
 author: angelad116
-ms.date: 08/02/2018
+ms.date: 11/22/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef71520df5cdae192355e512238d03c1f21b901f
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 42c359edbe49af151ac76c9873c0d429bbe1ca12
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151162"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804226"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Kiegyenlítés áttekintése (központosított kifizetések)
 
@@ -84,11 +84,11 @@ A vállalatközi kiegyenlítési folyamat során létrejövő készpénzfizetés
 
 A túlfizetések, az alulfizetések és a fillérkülönbözetek tűrését a túlfizetések esetében a kifizető jogi személy, az alulfizetések esetében a számlázó jogi személy alapján határozza meg a rendszer. A feladáshoz használt számlát vevők esetében a **Kinnlevőségek paraméterei** lap **Készpénzfizetési engedmény adminisztrációja** mezőjének beállítása, szállítók esetében a **Kötelezettségek paraméterei** lap **Készpénzfizetési engedmény adminisztrációja** mezőjének beállítása határozza meg.
 
--   Ha a készpénzfizetési engedmény adminisztrációjának beállítása Meghatározott, vagy ha a beállítás Meghatározatlan, és a túlfizetésből egy másik jogi személy számára történik a vonatkozó készpénzfizetési engedmény feladása, a program a Vevő készpénzfizetési engedménye, a Szállító készpénzfizetési engedménye vagy Fillérkülönbözet automatikus számlát használja. Ezeket a számlákat a **Számlák automatikus tranzakciókhoz** lapon adhatja meg.
--   Ha a készpénzfizetési engedmény adminisztrációjának beállítása Meghatározatlan, és a készpénzfizetési engedmény feladása ugyanannál a jogi személynél történik, mint a túlfizetés (ugyanaz a kifizető és a számlázó jogi személy), a rendszer korrigálja a készpénzfizetési engedmény számláját. Ha például egy 100,00 összegű számlán 3,00 készpénzfizetési engedmény vehető igénybe, és a számla egy 98,00 összegű kifizetéssel van kiegyenlítve, a rendszer a készpénzfizetési engedmény számláját 1,00 értékkel korrigálja. A nettó engedmény értéke 2,00.
--   Ha a készpénzfizetési engedmény adminisztrációjának beállítása Meghatározatlan, a készpénzfizetési engedmény feladása ugyanannál a jogi személynél történik, mint a túlfizetés, és a túl- vagy alulfizetés kiegyenlítése több, árengedményt tartalmazó számlával történik, a rendszer a legutolsó számla készpénzfizetési engedményét korrigálja.
+-    **Ha** a készpénzfizetési engedmény adminisztrációjának beállítása Speciális, vagy ha a beállítás Meghatározatlan, **és** a vonatkozó készpénzfizetési engedmény feladása a túlfizetéstől különböző jogi személyhez történik, akkor a program a könyvelési pénznemben megadott vevői készpénzfizetési engedmény, szállítói készpénzfizetési engedmény vagy fillér különbözet automatikus számláját használja. Ezeket a számlákat a **Számlák automatikus tranzakciókhoz** lapon adhatja meg.
+-   Ha a készpénzfizetési **engedmény** adminisztrációjára vonatkozó beállítás Meghatározatlan, és a készpénzfizetési engedmény feladása ugyanannál a jogi személynél történik, mint a túlfizetés (a kifizetés jogi személye és a számlán szereplő jogi személy), akkor a rendszer korrigálja a készpénzfizetési engedmény számláját. Ha például egy 100,00 összegű számlán 3,00 készpénzfizetési engedmény vehető igénybe, és a számla egy 98,00 összegű kifizetéssel van kiegyenlítve, a rendszer a készpénzfizetési engedmény számláját 1,00 értékkel korrigálja. A nettó engedmény értéke 2,00.
+-    **Ha** a készpénzfizetési engedmény adminisztrációs beállítása Nem meghatározva, a készpénzfizetési engedmény feladása ugyanannál a jogi személynél történik, mint a túlfizetés, és a túl- vagy alulfizetés kiegyenlítése több, készpénzfizetési engedményt is lehetővé t vevő számlával történik, akkor a rendszer az utolsó számla készpénzfizetési engedményét korrigálja.
 
-Ha a készpénzfizetési engedmény adminisztrációjának beállítása Meghatározatlan, kizárólag a következő helyzetekben érvényesülnek a nem specifikus kifizetéselszámolási szabályok:
+Ha a készpénzfizetési **engedmény** adminisztrációs kiválasztása Meghatározatlan, a nem specifikus kifizetéselszámolási szabályok csak a következő helyzetekben érvényesek:
 -   Túlfizetés van.
 -   A túlfizetés kiegyenlítése egy vagy több olyan számlával történik, amely készpénzfizetési engedményt tartalmaz.
 -   A készpénzfizetési engedmény feladása ugyanannál a jogi személynél történik, mint a túlfizetés.

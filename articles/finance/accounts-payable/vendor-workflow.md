@@ -2,7 +2,7 @@
 title: Szállítói munkafolyamat
 description: Módosítsa a szállító adatait és egy munkafolyamattal hagyja jóvá.
 author: sunfzam
-ms.date: 08/24/2018
+ms.date: 11/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1801e3d90bbf80c59bb62329acc593d2c66a179c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: cfc255265df48e4a47aee4f13016356fb4775aa7
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735667"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799464"
 ---
 # <a name="vendor-workflow"></a>Szállítói munkafolyamat
 
@@ -38,7 +38,7 @@ A munkafolyamat használatához előbb aktiválni kell azt.
     - **Módosítások elvetése** – Nem módosíthatók a szállítói rekordok. Az importálás sikertelen lesz azokhoz a mezőkhöz, amelyek engedélyezve vannak ehhez a munkafolyamathoz.
     - **Módosítási javaslatok létrehozása** – Minden mező meg fog változni a munkafolyamathoz engedélyezett mezők kivételével. Ezen a mezők új értékei hozzá lesznek adva a szállítóhoz javasolt módosításokként, és a munkafolyamat automatikusan elindul.
 
-4. A szállítói mezők listájában jelölje be az **Engedélyezése** jelölőnégyzetet minden mezőhöz, amelyet a módosítás előtt jóvá kell hagyni.
+4. A szállítói mezők listájában jelölje be az Enable **jelölőnégyzetet minden olyan mezőnél,** amelynél a változtatásokat jóvá kell hagyni ahhoz, hogy végre tudja hagyni a módosításokat.
 5. Ugorjon a **Kötelezettségek \> Beállítás \> Kötelezettségekkel kapcsolatos munkafolyamatok** pontra.
 6. **Új** kiválasztása.
 7. Válassza a **A javasolt szállítói módosítások munkafolyamata** lehetőséget. 
@@ -46,7 +46,7 @@ A munkafolyamat használatához előbb aktiválni kell azt.
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>A szállító adatainak módosítása és a módosításokat elküldése a munkafolyamatnak
 
-Ha módosít egy mezőt, amely engedélyezve van, a munkafolyamathoz, a **Javasolt módosítások** lap jelenik meg. Ez az oldal megmutatja a mező eredeti értékét és az újonnan megadott értéket. A mezőt, amely a módosított vissza lett állítva az eredeti értékre. Egy állapotüzenet is mutatja, hogy a módosítások még nem lettek beküldve. 
+Ha módosít egy mezőt, amely engedélyezve van, a munkafolyamathoz, a **Javasolt módosítások** lap jelenik meg. Ez az oldal megmutatja a mező eredeti értékét és az újonnan megadott értéket. A mezőt, amely a módosított vissza lett állítva az eredeti értékre. Egy állapotüzenet jelzi, hogy a módosítások még nincsenek elküldve. 
 
 Minden alkalommal, amikor módosít egy mezőt, amely engedélyezve van a munkafolyamathoz, az a mező hozzáadódik **Javasolt módosítások** oldalon található listához. A mezőhöz a javasolt érték elvetéséhez, használja az **Elvetés** gombot a listában található mező mellett. Az összes változtatás elvetéséhez használja az **Összes változtatás elvetése** gombot az oldal alján. Válassza az **OK** lehetőséget az oldal bezárásához.
 

@@ -2,7 +2,7 @@
 title: Vevői előlegek
 description: Ez a cikk bemutatja a vevői előlegek (más néven vevői betétek) beállítását és feldolgozását.
 author: twheeloc
-ms.date: 04/30/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88773067c472471fb75167712268d1076c1738a5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f085d45895530aaf0a16439f62dfc13b27da84b6
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861560"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799433"
 ---
 # <a name="customer-prepayments"></a>Vevői előlegek
 
@@ -32,7 +32,7 @@ Az ügyfél előlegek beállításának és feldolgozásának folyamata a követ
 
 1. Hozzon létre egy vevőfeladási profilt az előlegekhez.
 2. Állítsa be a **Feladási profil az előlegnapló-bizonylathoz** paramétert.
-3. Hozzon létre egy vevői fizetési naplót, és jelölje be az **Előlegnapló-bizonylat** jelölőnégyzetet minden sorban.
+3. Hozzon létre egy vevői kifizetési naplót, és jelölje **be az Előlegnapló-bizonylat** jelölőnégyzetet minden sorban.
 4. A vevői kifizetési napló feladása.
 5. A számla kiállítása után egyenlítse ki vele az előleget a **Nyitott tranzakciók rendezése** lapon.
 
@@ -82,7 +82,7 @@ Az **Vevői kifizetések** munkaterületén egyszerűen megtalálhatja és kiegy
 1. A **Kezdőlap** irányítópulton válassza ki a **Vevői kifizetések** csempét.
 2. A **Vevői tranzakciók** részben, a **Nem kiegyenlített kifizetések** lapon keresse meg és válassza ki a kiegyenlítendő kifizetést.
 3. Válassza a **Tranzakcióinak kiegyenlítése** lehetőséget.
-4. Jelölje be a kiegyenlített számlához a **Jelölés** jelölőnégyzetet.
+4. Jelölje be **a Számla** és a kiegyenlíteni kívánt kifizetés Megjelölése jelölőnégyzetet.
 5. Válassza a **Feladás** parancsot.
 
 A nyitott tranzakciók kiegyenlítéséről további információt a [Kiegyenlítés áttekintése](/dynamics365/finance/cash-bank-management/settlement-overview) részben talál.

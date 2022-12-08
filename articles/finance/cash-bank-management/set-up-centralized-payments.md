@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4843d9555b86c4ebe1edfe2da763f305357a7423
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 16548572cd70129efcc7dacf0236f3eb4b252d88
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715640"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804047"
 ---
 # <a name="set-up-centralized-payments"></a>Központosított kifizetések beállítása
 
@@ -34,7 +34,10 @@ A lépések követésével felkészülhet a kifizetéseknek más jogi személyek
 -   Vállalatközi könyvelés beállítása.
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>Szervezeti hierarchia felállítása központosított kifizetésekhez
-A központosított kifizetésekhez szervezeti hierarchiát kell felállítani. Ugyanaz a szervezeti hierarchia használatos a központosított szállítói kifizetések és a központosított vevői kifizetések feldolgozására. **Megjegyzés:** A központosított kifizetéseknél nincs jelentősége a hierarchia felépítésének. Bármelyik jogi személy a hierarchiában képes lesz kifizetéseket feldolgozni a hierarchiában lévő bármely másik jogi személy nevében. A **Szervezeti hierarchiák** oldalon hozhat létre új szervezeti hierarchiát. A **Cél** mezőben a **Központosított kifizetések** lehetőséget kell választania. 
+A központosított kifizetésekhez szervezeti hierarchiát kell felállítani. Ugyanaz a szervezeti hierarchia használatos a központosított szállítói kifizetések és a központosított vevői kifizetések feldolgozására. 
+
+>[!Note] 
+>A központosított kifizetéseknél nem számít a hierarchia szerkezete. Bármelyik jogi személy a hierarchiában képes lesz kifizetéseket feldolgozni a hierarchiában lévő bármely másik jogi személy nevében. A **Szervezeti hierarchiák** oldalon hozhat létre új szervezeti hierarchiát. A **Cél** mezőben a **Központosított kifizetések** lehetőséget kell választania. 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>A vállalatközi számla beállítása a központosított kifizetések kezelésére
 Amikor az aktuális jogi személy kifizetési tranzakcióit más jogi személyekben lévő számlákkal szemben egyenlítik ki, mindegyik jogi személy esetében létrejönnek a megfelelő, a jogi személytől és a jogi személy részére esedékes tranzakciók. Meg kell adnia azt a jogi személyt, ahová bármely alkalmazandó készpénzfizetési engedmény összeg és bármely realizált nyereség vagy veszteség összeg feladása történik. Mielőtt elkezdené, döntse el, melyik jogi személyt fogja használni a szállítói és vásárlói kifizetések feldolgozásához. Ha egy jogi személy a szállítói kifizetéseket dolgozza fel, de egy másik jogi személy a vevői kifizetéseket dolgozza fel, akkor mindegyik jogi személyhez váltani kell. A **Vállalatközi könyvelés** oldalon kiválaszthatja egy jogi személy vállalatközi kapcsolatának bejegyzését, amely nevében fel fogja dolgozni a kifizetéseket. 

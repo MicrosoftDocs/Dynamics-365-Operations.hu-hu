@@ -2,7 +2,7 @@
 title: Pénzügyi jelentések megtekintése
 description: Ez a cikk azt ismerteti, hogyan lehet megtekinteni és felhozni a Microsoft Dynamics pénzügyi jelentéseket a 365 Pénzügyben. Azokról a különféle beállítási lehetőségekről nyújt tájékoztatást, amelyek segítségével módosíthatja a pénzügyi jelentések megjelenését, illetve a bennük lévő adatokat.
 author: kweekley
-ms.date: 03/25/2019
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f932bbef2543e4894c65b9a04c1ef66f1b3ab8e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907892"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802391"
 ---
 # <a name="view-financial-reports"></a>Pénzügyi jelentések megtekintése
 
@@ -31,7 +31,7 @@ Ez a témakör azt ismerteti, hogyan lehet megtekinteni és megtekinteni a pénz
 ## <a name="financial-reporting-overview"></a>Pénzügyi jelentéskészítés – áttekintés
 
 ## <a name="open-a-financial-report"></a>Pénzügyi jelentés megnyitása
-A jelentés megnyitásához válassza ki a jelentés nevét. A jelentés első megnyitásakor, automatikusan létrejön a jelentés az előző hónapra. Például, ha 2015 augusztusában nyit meg egy jelentést először, a jelentés a 2015. július 31-i dátumhoz jön létre. Egy jelentés megnyitása után elkezdheti annak böngészését bizonyos adatok utáni leásással, illetve módosíthatja a jelentés beállításait.
+A jelentés megnyitásához válassza ki a jelentés nevét. A jelentés első megnyitásakor, automatikusan létrejön a jelentés az előző hónapra. Például, ha 2020 augusztusában nyit meg egy jelentést először, a jelentés a 2020. július 31-i dátumhoz jön létre. Egy jelentés megnyitása után elkezdheti annak böngészését bizonyos adatok utáni leásással, illetve módosíthatja a jelentés beállításait.
 
 ## <a name="drill-down-on-a-financial-report"></a>Leásás a pénzügyi jelentésben
 A pénzügyi jelentés többszintű részletességgel rendelkezhet. A pénzügyi szint az első szint, amit lát, miután megnyitja a pénzügyi jelentést. A számla szinthez válassza ki az adatot, amiben a leásást kívánja elvégezni. Például, az értékesítési számla részletes adatainak megtekintéséhez válassza ki az értékesítési adatot, amit fel szeretne fedezni. A számla szintről leáshat, hogy megnézze a tranzakciókat, amikből a számlaegyenleg áll. Kétféle módon lehet megtekinteni a tranzakciókat: jelentés tranzakciók és bizonylat tranzakciók.
@@ -46,12 +46,12 @@ Alkalmazhat attribútum és dimenzió szűrőket, vagy megváltoztathatja a köl
 
 -   Attribútum szűrő alkalmazásához egy jelentésen válassza ki az **Egy attribútum szűrő hozzáadása** lehetőséget. Válassza ki az attribútum típusát és az attribútum értékét, majd kattintson az **OK** gombra. Ha például bejelöli a **Számla kategória** attribútumot, adja az **Értékesítési** értéket az attribútumnak. Egy attribútum szűrő eltávolításához kattintson a **Törlés** gombra.
 -   Dimenziószűrő alkalmazásához egy jelentésen válassza ki az **Egy dimenziószűrő hozzáadása** lehetőséget. Válassza ki a dimenziót, majd írja be a dimenzióazonosítót, vagy válassza ki a dimenziót a listából. Egy dimenzió szűrő eltávolításához kattintson a **Törlés** gombra.
--   Az eset módosításához egy **Tény és tervezet költségvetésének összevetése** jelentésen, válasszon ki egy új esetet, és kattintson az **OK** gombra. Ha a kiválasztott forgatókönyv egy másik pénzügyi évre vonatkozik, nem ad vissza eredményt. Ha például egy jelentés a 2015-ös pénzügyi évben lett generálva, és az aktuális forgatókönyv a 2015-ös pénzügyi évre vonatkozik, és az új kiválasztott forgatókönyv a 2016-os pénzügyi évre vonatkozik, nem lesznek visszaadva eredmények. Ha egy új forgatókönyv szükséges egy másik pénzügyi évhez, generáljon egy j verziót a jelentéshez a forgatókönyvhöz kapcsolódó pénzügyi évhez.
+-   Az eset módosításához egy **Tény és tervezet költségvetésének összevetése** jelentésen, válasszon ki egy új esetet, és kattintson az **OK** gombra. Ha a kiválasztott forgatókönyv egy másik pénzügyi évre vonatkozik, nem ad vissza eredményt. Ha például 2015-ről készít jelentést a program, és az aktuális helyzet a 2020 FY 2020 eset, és a kiválasztott új helyzet a 2016 FY 2016 eset, akkor a program nem ad vissza eredményt. Ha egy új forgatókönyv szükséges egy másik pénzügyi évhez, generáljon egy j verziót a jelentéshez a forgatókönyvhöz kapcsolódó pénzügyi évhez.
 
 Amikor rákattint az **OK** gombra, a kiválasztott beállítások lesznek alkalmazva a jelentésre. Ha úgy dönt, hogy nem szeretné alkalmazni a kiválasztott beállításokat, kattintson a **Mégse** gombra.
 
 ## <a name="update-a-financial-report"></a>Pénzügyi jelentés frissítése
-Frissíthet egy pénzügyi jelentést, hogy a jelentés készítési időszakához és évéhez tartozó legfrissebb adatokat mutassa. Például ha frissít egy 2015 októberéhez készített pénzügyi jelentést, a jelentés megmutat minden olyan új tranzakciót, amelyet 2015 októberére adtak fel. Pénzügyi jelentés frissítéséhez kattintson a Műveleti ablaktáblán a **Frissítés** gombra. A frissített jelentés csak azon személy számára elérhető, aki frissítette azt. Ahhoz, hogy mások is ugyan azokat az adatokat lássák, a jelentést közzé kell tenni.
+Frissíthet egy pénzügyi jelentést, hogy a jelentés készítési időszakához és évéhez tartozó legfrissebb adatokat mutassa. Például ha frissít egy 2020 októberéhez készített pénzügyi jelentést, a jelentés megmutat minden olyan új tranzakciót, amelyet 2020 októberére adtak fel. Pénzügyi jelentés frissítéséhez kattintson a Műveleti ablaktáblán a **Frissítés** gombra. A frissített jelentés csak azon személy számára elérhető, aki frissítette azt. Ahhoz, hogy mások is ugyan azokat az adatokat lássák, a jelentést közzé kell tenni.
 
 ## <a name="publish-a-financial-report"></a>Pénzügyi jelentés közzététele
 Miután frissítette a pénzügyi jelentést, közzé teheti azt. Ezután a szervezet további tagjai is megtekinthetik azt. Jelentés közzétételéhez kattintson a műveleti ablakon a **Közzététel** gombra.

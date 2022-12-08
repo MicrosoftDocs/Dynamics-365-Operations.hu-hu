@@ -2,7 +2,7 @@
 title: Jelentésdefiníciók a pénzügyi jelentéstervezőben
 description: Ez a cikk a jelentésdefiníciókról tartalmaz információt.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 59131
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 ms.search.form: FinancialReports
-ms.openlocfilehash: e1095502e6dafbe217f51658ac65292c422a0002
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2ffef335c694af56486ccd7738818c4edda49b9e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291798"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802532"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>Jelentésdefiníciók a pénzügyi jelentéstervezőben
 
@@ -37,8 +37,8 @@ A jelentésdefiníció egy jelentés-összetevő (vagy építőelem), amely egy 
 Előfordulhat azonban – attól függően, hogyan tárolja a Microsoft Dynamics ERP rendszer az adatokat –, hogy a tranzakciók részletes adatai nem érhetők el a jelentésekben.
 
 ## <a name="create-a-report-definition"></a>Jelentésmeghatározás létrehozása
-1. A jelentéstervezőben a **Fájl** menüben kattintson az **Új** lehetőségre, majd válassza a **Jelentésdefiníció** lehetőséget.
-2. A szükséges információkat a **Jelentés**, **Kimenet és elosztás**, **Fejlécek és láblécek**, valamint a **Beállítások** lapokon határozhatja meg.
+1. A Jelentéstervező fájl menüjében **kattintson** az Új **gombra**, majd válassza a **Jelentésdefiníciót**.
+2. Adja meg a megfelelő adatokat a **Jelentés,** Kimenet **és** elosztás, **Fejlécek és láblécek**, Valamint **Beállítások lapon** .
 
 ## <a name="contents-of-a-report-definition"></a>Jelentésdefiníció tartalma
 A következő táblázat bemutatja a jelentésdefinícióban lévő lapokat és az információk használatának módját.
@@ -56,7 +56,7 @@ A következő táblázat bemutatja a jelentésdefinícióban lévő lapokat és 
 <td>Jelentése létrehozás, jelentés beállítása vagy meglévő jelentés módosítása.</td>
 </tr>
 <tr>
-<td>Kimenet és felosztás</td>
+<td>Kimenet és elosztás</td>
 <td>A kimenet típusának és a jelentés céljának módosítása.</td>
 </tr>
 <tr>

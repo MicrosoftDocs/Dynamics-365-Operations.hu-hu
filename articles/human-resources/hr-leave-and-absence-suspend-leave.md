@@ -1,8 +1,8 @@
 ---
-title: Szabadság felfüggesztése
-description: Felfüggesztheti az alkalmazottak szabadságát a Dynamics 365 Human Resources alkalmazásban.
+title: Távollét felfüggesztése
+description: Az alkalmazott távollétét felfüggesztheti Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,22 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 93b530aeef6fd14b56ac846e3bb0ad4080d67587
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9c8262fb34175f6f9326d6be82c922b2170fc5a7
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895902"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805260"
 ---
 # <a name="suspend-leave"></a>Szabadság felfüggesztése
 
 >[!Important]
->Az ebben a cikkben említett funkciók jelenleg önálló vevők számára érhetők el Dynamics 365 Human Resources. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
-
+>Az ebben a cikkben említett funkciók jelenleg csak a különálló Dynamics 365 Human Resources rendszerében lévő vevőknek érhetők el. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Felfüggesztheti egy alkalmazottak szabadságát, hogy leállítsa a szabadság-elhatárolások feldolgozását a kiválasztott szabadságtípusokhoz. 
+Az alkalmazott távollétét felfüggesztheti, hogy a program ne tudja feldolgozni a szabadságtípusokat.
 
 ## <a name="suspend-leave-and-absence-for-an-employee"></a>Egy alkalmazott szabadságának és távollétének felfüggesztése
 
@@ -44,6 +43,9 @@ Felfüggesztheti egy alkalmazottak szabadságát, hogy leállítsa a szabadság-
 5. Lehetőség van arra is, hogy **Megjegyzést** fűzzön a felfüggesztéshez. 
 
 Ha az elhatárolások feldolgozása az alkalmazott szabadságának felfüggesztése során történik, akkor a felfüggesztett szabadság típusokra nem készül elhatárolás.
+
+> [!NOTE]
+> A távolléti kérelmek felfüggesztik az idő-távolléti kérelmeket, de a távolléti kérelmeket nem.
 
 ## <a name="see-also"></a>Lásd még
 

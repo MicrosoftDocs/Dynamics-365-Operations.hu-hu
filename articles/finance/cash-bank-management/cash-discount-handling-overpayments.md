@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1afc8aec18c61b1ce488472adf540e47540eaa17
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: d7c4e98481bc3607d3dce68a6b6cb0478524442f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715524"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804155"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Készpénzfizetési engedmények túlfizetések esetére
 
@@ -53,7 +53,9 @@ A vevő a készpénzfizetési engedmény időszakában elküld egy 95,00 érték
 | Kifizetés       | -95,00 | 0,00    |
 | Készpénzfizetési engedmény | -10,50 | 0,00    |
 
-A következő könyvelési tételek a kifizetéshez és a kiegyenlítéshez jönnek létre. **Fizetés**
+A következő könyvelési tételek a kifizetéshez és a kiegyenlítéshez jönnek létre.
+
+**Fizetés**
 
 | Fiók             | Terhelés összege | Követelés összege |
 |---------------------|--------------|---------------|
@@ -85,7 +87,9 @@ A vevő a készpénzfizetési engedmény időszakában elküld egy 95,00 érték
 | Kifizetés       | -95,00 | -0,50   |
 | Készpénzfizetési engedmény | -10,50 | 0,00    |
 
-A 0,50 értékű túlfizetési összeg megmarad nyitott egyenlegként a fizetésen, és kiegyenlíthető lesz egy másik számlával szemben. A következő könyvelési tételek a kifizetéshez és a kiegyenlítéshez jönnek létre. **Fizetés**
+A 0,50 értékű túlfizetési összeg megmarad nyitott egyenlegként a fizetésen, és kiegyenlíthető lesz egy másik számlával szemben. A következő könyvelési tételek a kifizetéshez és a kiegyenlítéshez jönnek létre. 
+
+**Fizetés**
 
 | Fiók             | Terhelés összege | Követelés összege |
 |---------------------|--------------|---------------|
@@ -118,7 +122,9 @@ A vevő a készpénzfizetési engedmény vége előtt elküld egy 95,00 érték�
 | Kifizetés       | -95,00 | -0,00   |
 | Készpénzfizetési engedmény | -10,00 | 0,00    |
 
-A készpénzfizetési engedmény 10,50 értékről 10,00 értékre csökken. A kifizetés és a számla kiegyenlítettnek tekinthető. **Fizetés**
+A készpénzfizetési engedmény 10,50 értékről 10,00 értékre csökken. A kifizetés és a számla kiegyenlítettnek tekinthető. 
+
+**Fizetés**
 
 | Számla             | Tartozik összeg | Jóváírás összege |
 |---------------------|--------------|---------------|

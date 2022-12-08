@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30e21c11b067f6def127f3eab026d7255ab1ca29
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 786aecf69bae3d07ac80a55b4dc835dd8129bd59
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779934"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803964"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Garancialevél-tranzakció
 
@@ -43,7 +43,7 @@ Ez az eljárás az USMF bemutatócéget használja.
 1. Menjen a Kinnlevőségek **> az > rendeléshez**.
 2. Kattintson az **Új** elemre.
 3. A **Vevőszámla** mezőben adjon meg vagy válasszon ki egy értéket.
-4. Bontsa ki az Általános szakaszt.
+4. Bontsa ki az **Általános** szakaszt.
 5. A **Hely** mezőben adjon meg vagy válasszon ki egy értéket.
 6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 7. A **Raktár** mezőben adjon meg vagy válasszon ki egy értéket.
@@ -52,9 +52,12 @@ Ez az eljárás az USMF bemutatócéget használja.
 10. Kattintson az **OK** gombra.
 11. Az **Cikkszám** mezőben adjon meg vagy válasszon ki egy értéket.
 12. Adjon meg egy számot az **Egységár** mezőben.
-13. Bontsa ki a Soradatok szakaszt.
-14. Kattintson a Kiszállítás lapra.
-    * Megjegyzés: A Szállítási dátum ellenőrzése lehetőségnél a „Nincs” lehetőséget válassza  
+13. Bontsa ki a **Sorrészletek** szakaszt.
+14. Kattintson a Szállítás **fülre** .
+
+>[!Note] 
+>A Szállítási **dátum ellenőrzése Nincs beállítás** = **·**  
+
 15. Adjon meg **egy** dátumot a Kért szállítási dátum mezőben.
 16. A Visszaigazolt **szállítási dátum mezőbe** írjon be egy dátumot.
 
@@ -71,7 +74,7 @@ Ez az eljárás az USMF bemutatócéget használja.
 10. Zárja be a lapot.
 
 ## <a name="process-letter-of-guarantee_submit-to-bank"></a>Garancialevél feldolgozása Elküldés a banknak
-1. Menjen a Készpénz- **és bankkezelés > garancialevelek > garancialevelekért.**
+1. Menjen a Készpénz- **és bankkezelés > garancialevelek > garancialevelekbe**.
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
 3. Kattintson a **Küldés a bankba** gombra a drop párbeszédpanel megnyitásához.
 4. A **Bankszámlák** mezőben adjon meg vagy válasszon ki egy értéket.
@@ -80,12 +83,12 @@ Ez az eljárás az USMF bemutatócéget használja.
 
 ## <a name="process-letter-of-guarantee_receive-from-bank"></a>Garancialevél feldolgozása Fogadás a banktól
 1. Kattintson a **Fogadás a banktól** gombra a drop párbeszédpanel megnyitásához.
-2. **A Bank száma mezőbe** írjon be egy értéket.
-    * Ellenőrizze az értékeket a kiszámított Árrés **és** **Költség mezőben**.  
+2.  **A Bank száma mezőbe** írjon be egy értéket.
+    * Ellenőrizze az értékeket a kiszámított Árrés **és** **Költség mezőben** .  
 3. Kattintson az **OK** gombra.
-4. Bontsa ki a Műveletek szakaszt.
+4. Bontsa ki **a Műveletek szakaszt** .
     * Ellenőrizze a „Fogadás a banktól” bejegyzést.  
-5. Kattintson ide a Napló kötegszám **mezőjében található hivatkozáshoz**.
+5. Kattintson ide a Napló kötegszám **mezőjében található hivatkozáshoz** .
 6. Kattintson a **Sorok** pontra.
     * Ellenőrizze a naplóbejegyzések feladását.  
 7. Zárja be a lapot.
@@ -98,11 +101,11 @@ Ez az eljárás az USMF bemutatócéget használja.
 5. Kattintson a műveletpanelen a **garancialevélre**.
 6. Kattintson **a Kedvezményezettnek gombra a** legördülő párbeszédpanel megnyitásához.
 7. Kattintson az **OK** gombra.
-8. Menjen a Készpénz- **és bankkezelés > garancialevelek > garancialevelekért.**
+8. Menjen a Készpénz- **és bankkezelés > garancialevelek > garancialevelekbe**.
 9. Keresse meg és jelölje ki a kívánt rekordot a listán.
 10. Kattintson **a Kedvezményezettnek gombra a** legördülő párbeszédpanel megnyitásához.
 11. Kattintson az **OK** gombra.
-12. Bontsa ki a Műveletek szakaszt.
+12. Bontsa ki **a Műveletek szakaszt** .
     * Érvényesítse a „Kedvezményezettnek való átadás” bejegyzést.  
 
 ## <a name="process-letter-of-guarantee_increase-value"></a>Garancialevél feldolgozása Értéknövelés
@@ -114,14 +117,14 @@ Ez az eljárás az USMF bemutatócéget használja.
 6. Kattintson az Érték **növelése gombra** a legördülő párbeszédpanel megnyitásához.
 7. Adjon meg **egy számot** az Érték hozzáadása mezőben.
 8. Kattintson az **OK** gombra.
-9. Menjen a Készpénz- **és bankkezelés > garancialevelek > garancialevelekért.**
+9. Menjen a Készpénz- **és bankkezelés > garancialevelek > garancialevelekbe**.
 10. Keresse meg és jelölje ki a kívánt rekordot a listán.
 11. Kattintson az Érték **növelése gombra** a legördülő párbeszédpanel megnyitásához.
 12. Kattintson az **OK** gombra.
-13. Bontsa ki a Műveletek szakaszt.
+13. Bontsa ki **a Műveletek szakaszt** .
     * Ellenőrizze az „Érték növelése” bejegyzést.  
 14. Keresse meg és jelölje ki a kívánt rekordot a listán.
-15. Kattintson ide a Napló kötegszám **mezőjében található hivatkozáshoz**.
+15. Kattintson ide a Napló kötegszám **mezőjében található hivatkozáshoz** .
 16. Kattintson a **Sorok** pontra.
     * Érvényesítse a feladott naplóbejegyzéseket.  
 
@@ -133,14 +136,14 @@ Ez az eljárás az USMF bemutatócéget használja.
 5. Kattintson a műveletpanelen a **garancialevélre**.
 6. Kattintson **a Felszámolás** gombra a legördülő párbeszédpanel megnyitásához.
 7. Kattintson az **OK** gombra.
-8. Menjen a Készpénz- **és bankkezelés > garancialevelek > garancialevelekért.**
+8. Menjen a Készpénz- **és bankkezelés > garancialevelek > garancialevelekbe**.
 9. Keresse meg és jelölje ki a kívánt rekordot a listán.
 10. Kattintson **a Felszámolás** gombra a legördülő párbeszédpanel megnyitásához.
 11. Kattintson az **OK** gombra.
-12. Bontsa ki a Műveletek szakaszt.
+12. Bontsa ki **a Műveletek szakaszt** .
     * Érvényesítse a „Likvidálás” bejegyzéseket.  
 13. Keresse meg és jelölje ki a kívánt rekordot a listán.
-14. Kattintson ide a Napló kötegszám **mezőjében található hivatkozáshoz**.
+14. Kattintson ide a Napló kötegszám **mezőjében található hivatkozáshoz** .
 15. Kattintson a **Sorok** pontra.
     * Érvényesítse a feladott naplóbejegyzéseket.  
 16. Zárja be a lapot.

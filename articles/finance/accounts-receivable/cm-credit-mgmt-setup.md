@@ -2,7 +2,7 @@
 title: Hitelkezelési pereméterek beállítása
 description: Ez a témakör ismerteti azokat a beállításokat, amelyek segítségével a hitelkezelést a vállalat igényeinek megfelelően konfigurálhatja.
 author: JodiChristiansen
-ms.date: 12/10/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ac5e0ba8c9279fc5f04a80d4444b11850e72d3c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8955518e7b5c0200d3827c1c22b7d150a09be244
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876354"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799545"
 ---
 # <a name="credit-management-parameters-setup"></a>Hitelkezelési pereméterek beállítása
 
@@ -44,19 +44,19 @@ Négy gyorslap van a **Hitel** szakaszban, ahol megváltoztathatja a Hitelkezel�
 
 ### <a name="credit-management-checkpoint"></a>Hitelkezelési ellenőrzőpont
 
-Beállíthat ütemezést, amely használva lesz az értékesítési rendelések ellenőrzéséhez hitelproblémák szempontjából. A **Hitelkezelési ellenőrzőpont** gyorslap a hitelnyújtási szabályok feldolgozását tartalmazó dokumentum-feladási folyamatokat azonosítja. A hitelezési szabályokat akkor is ellenőrizheti, ha egy pro-forma feladást végez vagy az értékesítési rendelést teljesen feladja. Jelölje be a jelölőnégyzetet, ha meg szeretné határozni, hogy mely feladási folyamatok várakoztassanak egy rendelést, ha a hitelkezelés zárolási szabályai feldolgozását követően a rendszer hibát talál.
+Beállíthat ütemezést, amely használva lesz az értékesítési rendelések ellenőrzéséhez hitelproblémák szempontjából. A **Hitelkezelési ellenőrzőpont** gyorslap a hitelnyújtási szabályok feldolgozását tartalmazó dokumentum-feladási folyamatokat azonosítja. A hitelezési szabályokat akkor is ellenőrizheti, ha egy pro-forma feladást végez vagy az értékesítési rendelést teljesen feladja. A jelölőnégyzetek beírásával meghatározhatja azokat a feladási folyamatokat, amelyek miatt a rendeléseket fel kell függeszteni, ha probléma van a hitelkezelési zárolási szabályok feldolgozása után.
 
-Megadhatja azt is, hogy hány nap türelmi idő elteltével vizsgálják újra a hitelezési szabályokat. Annak ellenére, hogy meghatározhatja azt, hogy a hitelkezelési szabályok ellenőrizve legyenek a feladáskor a szabályokat a megadott türelmi idő alatta a rendszer nem ellenőrzi. Például egy értékesítési rendelést az 1. napon megerősít, és két nap türelmi időt ad meg a visszaigazolási lépéshez. Ebben az esetben a hitelszabályok nem lesznek ellenőrizve a következő feladási lépésnél (például a rendelés csomagjegyzékének létrehozásakor vagy számlázáskor) a 4. napig. 4. napon vagy azt követően a program újra ellenőrzi a szabályokat a feladás alkalmával, és a türelmi idő napjainak száma a következő feladási ellenőrzőponthoz megadott értékre módosul.
+Megadhatja azt is, hogy hány nap türelmi idő elteltével vizsgálják újra a hitelezési szabályokat. Annak ellenére, hogy meghatározhatja azt, hogy a hitelkezelési szabályok ellenőrizve legyenek a feladáskor a szabályokat a megadott türelmi idő alatta a rendszer nem ellenőrzi. Visszaigazolódhat például az értékesítési rendelés az első napon, és két türelmi napot ad meg a visszaigazolási lépéshez. Ebben az esetben a jóváírási szabályokat a következő feladási lépésnél (például a csomagjegyzék létrehozása vagy a rendelés számlázása) a négy napig nem ellenőrzi a rendszer. A negyedik napon vagy azt követően a rendszer a feladáskor ismét ellenőrzi a szabályokat, és a türelmi napok száma a következő feladási ellenőrzőpontnál megadott értékre módosul.
 
 Ha nem adja meg a türelmi idő napjainak számát, a rendszer minden olyan feladási lépésnél ellenőrizni fogja a hitelszabályokat, amely a hitelkezelési szabályok futtatására van beállítva. Ha feladás nélkül szabadítja fel az értékesítési rendelést, majd újrafuttatja ugyanezt a rendelésfeldolgozási lépést, akkor a program újra ellenőrzi a hitelszabályokat. Előfordulhat például, hogy egy rendelés a visszaigazolást követően várakoztatva lesz, és a felszabadíthatja azt feladással vagy anélkül. Ebben az esetben a rendelés újra várakoztatva lesz, ha ismételten megerősíti azt. Használja a türelmi napokat, ha a rendelésnek át kell kerülnie a következő feldolgozási lépéshez anélkül, hogy ismét várakoztatva lenne.
 
 > [!Note]
 > Ha egy feladási ellenőrzőponthoz türelmi nap van megadva, minden feladásra megjelölt ellenőrzőpontnak türelmi napjai vannak.
 
-- A **Feladás** jelölőnégyzet bejelölésével futtathatja a hitelkezelési szabályokat, amikor a sorban megjelenő feladási ellenőrzőpontot futtatja. Ha nem jelöli be a jelölőnégyzetet, akkor a program csak egyszer ellenőrzi a szabályokat a teljes feladási folyamat során.
-- Ha bejelöli a **Feladás** jelölőnégyzetet, adja meg, hogy hány türelmi napnak kell eltelnie a zárolási szabályok újbóli ellenőrzése előtt. Ha a **Feladás** jelölőnégyzet nincs bejelölve, akkor nem adhat meg türelmi napokat.
-- A **Pro forma** jelölőnégyzet bejelölésével futtathatja a hitelkezelési szabályokat, amikor a sorban megjelenő pro-forma feladási ellenőrzőpontot futtatja. A legtöbb esetben az értékesítési rendelés feladásakor megjelenő párbeszédpanelen a **Feladás** mező értéke **Nem**.
-- Ha bejelöli a **Feladás** jelölőnégyzetet, adja meg, hogy hány türelmi napnak kell eltelnie a zárolási szabályok újbóli ellenőrzése előtt. Ha a **Feladás** jelölőnégyzet nincs bejelölve, akkor nem adhat meg türelmi napokat.
+- Jelölje be **a Feladás** jelölőnégyzetet, ha a sorban látható feladási ellenőrzőpont futtatásakor futtatni kell a jóváírás-kezelési szabályokat. Ha nem jelöl be ezt a jelölőnégyzetet, a szabályok csak egyszer lesznek ellenőrizve a teljes feladási folyamat során.
+- Ha bejel megadja **a** Feladás jelölőnégyzetet, adja meg, hogy hány türelmi időnek kell eltelni a blokkolási szabályok újraellenőrzése előtt. Nem adhat hozzá türelmi napokat, ha **a Feladás** jelölőnégyzet nincs be ellenőrizve.
+- Jelölje be **a Pro forma jelölőnégyzetet**, ha a sorban látható pro forma feladási ellenőrzőpont futtatásakor futtatni kell a jóváírás-kezelési szabályokat. A legtöbb esetben az értékesítési rendelés feladásakor megjelenő párbeszédpanelen a **Feladás** mező értéke **Nem**.
+- Ha bejel megadja **a** Feladás jelölőnégyzetet, adja meg, hogy hány türelmi időnek kell eltelni a blokkolási szabályok újraellenőrzése előtt. Nem adhat hozzá türelmi napokat, ha **a Feladás** jelölőnégyzet nincs be ellenőrizve.
 
 ### <a name="credit-management-statistics"></a>Hitelkezelési statisztika
 
@@ -73,7 +73,7 @@ A **vevői hitelkezelési statisztika** adatterületen számos hitelezési stati
 
 - A Hitelkezelés esetében a vevői hitelkorlát a vevő pénznemében jelenik meg. Meg kell adnia az árfolyamtípust a hitelkerethez az ügyfél pénznemében. A **Hitelkorlát árfolyamtípusa** mezőben válassza ki azt az árfolyamtípust, amelyet az elsődleges hitelkeret és a vevő hitelkeretének átváltásához kíván használni.
 - A **Hitelkeret manuális szerkesztésének engedélyezése** beállítás **Nem** értékre állításával megakadályozhatja, hogy a felhasználók módosítsák a hitelkorlátot a **Vevő** oldalon. Ha ez a beállítás **Nem** értékre van állítva, akkor a vevő hitelkeretének módosítása csak hitelkorlát-korrekciós tranzakciók feladásával végezhető el.
-- A Készletfoglalások **mellőzése** beállítás Igen **beállítással** figyelmen kívül hagyja a készletfoglalásokat, ha a hitelkezelés zárolási szabályainak be van jelölve. Ebben az esetben a rendszer ellenőrzi a sorok teljes mennyiségét, és a készletfoglalási mennyiségtől függetlenül engedélyezi az ellenőrzőpont türelmi időszakait.
+- A Készletfoglalások **mellőzése** beállítás Igen **beállítással** figyelmen kívül hagyja a készletfoglalásokat, ha a hitelkezelés zárolási szabályainak be van jelölve. Ebben az esetben a program ellenőrzi a mennyiségeket, és ellenőrzi a türelmi időszakokat, függetlenül a készletfoglalási mennyiségtől.
 - Ha a Hitelkezelés engedélyezve van, **akkor** a hitelkeret-túli idő túllépése esetén az Üzenet beállítás csak a szabadszöveges számlák feldolgozására használható. Bár a vevők akkor is hozzáadnak üzeneteket az értékesítési rendelésekhez, ha túllépték a hitelkeretüket, az üzenetek jelenléte nem tiltja le a visszaigazolást, a kitárolási listák és csomagjegyzékek nyomtatását, illetve a számlák feladását.
 
     Alapértelmezés szerint engedélyezve van a hitelkezelés, de le lehet tiltani. Ha engedélyezve van, a jóváírás-kezelés blokkolási szabályai és ellenőrzőpontjai segítségével lehet azonosítani, hogy a vevők mikor lépték túl a hitelkeretét. Ha a mező le van tiltva, akkor a hitelkeret túllépése esetén az értékesítési rendelésekhez az Üzenet mező beállítása alapján hozzáadott üzenetek segítséget adnak annak azonosításához, **hogy** a vevők mikor lépték túl a hitelkeretét.

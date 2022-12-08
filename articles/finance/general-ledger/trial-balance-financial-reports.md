@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a202dac3880717e9498212ca34570101188f48ce
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: b26d2ec261720499fc309a5fb850de2cb796bd8b
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725205"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802607"
 ---
 # <a name="trial-balance-financial-reports"></a>Főkönyvi kivonat pénzügyi jelentés
 
@@ -32,8 +32,8 @@ Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be. Ismer
 
 A Pénzügyi jelentéskészítésben három főkönyvi kivonatra vonatkozó jelentés áll rendelkezésre.
 
-| Alapértelmezett jelentés                                 | Mire szolgál?                                                                                                                                                                                        |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Alapértelmezett jelentés                                 | Mire szolgál?                                                                            |
+|------------------------------------------------|--------------------------------------------------------------------------------------|
 | Részletes főkönyvi kivonat – Alapértelmezett               | Egyenleginformációkat ad minden olyan számlához, amely hitel- vagy bankkártya egyenleggel rendelkezik, valamint ezen egyenlegek nettó értéke, a tranzakció dátumával, a bizonylattal és a napló leírással együtt.                  |
 | Összegző főkönyvi kivonat – Alapértelmezett                | Egyenleg-adatokat ad az összes számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.                                        |
 | Éves összegző főkönyvi kivonat – Alapértelmezett | Az egyenleg-adatokat ad az összes olyan számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel. |
@@ -54,8 +54,8 @@ A főkönyvi kivonat pénzügyi jelentések a következő építőelemekből ál
 
 A sordefiníció, Főkönyvi kivonat – Alapértelmezett, egy sort tartalmaz, amely behúzza az összes fő számlát. Ezért bárki létrehozhat jelentést anélkül, hogy módosításokat végezne. A jelentés megtekintésekor, láshat egy sorhoz, az egyes számlák részleteinek megtekintéséhez. Módosíthatja a sordefiníciót, hogy további részleteket tartalmazzon. A főkönyvi kivonat módosítása – Alapértelmezett sordefiníció, ezért tartalmazza az összes számla sorait, kövesse az alábbi lépéseket.
 
-1.  Kattintson a **Szerkesztés** lehetőségre, majd kattintson a **Sorok beszúrása dimenziókból** elemre. A **Sorok beszúrása dimenziókból** parancs segítségével kiválaszthatja, milyen dimenziókat szeretne a sordefiníciójában. Ehhez a sordefinícióhoz a **Fő számlát** fogja használni.
-2.  Győződjön meg róla, hogy a **Fő számla** tartalmaz minden és-jelet (&), majd kattintson az **OK** gombra.
+1.  Kattintson a **Szerkesztés** gombra, majd a Sorok **beszúrása dimenziókból elemre**. A Sorok **beszúrása a** dimenziókból parancs segítségével kiválaszthatja a sordefinícióban kiválasztani a kívánt dimenziókat. Ehhez a sordefinícióhoz a fő számlát fogja **használni**.
+2.  Győződjön meg róla, hogy **a fő számla** tartalmazza az összes "és>" et, majd kattintson az **OK gombra**.
 
 A sordefiníció most tartalmazza az alapértelmezett jogi személy minden fő számláját.
 

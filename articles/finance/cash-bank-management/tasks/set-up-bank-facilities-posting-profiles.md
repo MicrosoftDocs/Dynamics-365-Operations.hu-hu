@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bfdef0cd535f47bb1df9fb7494043d3dd519c5b
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 0987ae1e9cfbb1e2d2a957a5fd1ad82257292c0a
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779880"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804101"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a>Bankhitelek beállítása és a garancialevélhez tartozó profilok feladása
 
@@ -34,31 +34,31 @@ Ez a feladat az USMF bemutatócéget használja.
 
 
 ## <a name="general-ledger-parameter"></a>Főkönyvi paraméter
-1. A Készpénz- **és bankkezelés > beállítása > készpénz- és bankkezelési paraméterekhez**.
-2. Bontsa ki **a Banki bizonylat szakaszt**.
+1. Menjen a Készpénz- **és bankkezelés > és > és bankkezelési paramétereihez**.
+2. Bontsa ki **a Banki bizonylat szakaszt** .
 3. Válassza a Garancialevél **engedélyezése** lehetőséget.
 4. A Tranzakciónapló **mezőben** kattintson a legördülő gombra a keresés megnyitásához.
 5. A kívánt rekord megkeresése és kijelölése a listán
 6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-7. Kattintson a Számsorozatok **fülre**.
+7. Kattintson a Számsorozatok **fülre** .
     * Adja meg a számsorozat kódját a Garancialevél számához és a Garancialevél tranzakciós hivatkozásához  
 8. Kattintson a **Mentés** gombra.
 9. Zárja be a lapot.
 
 ## <a name="create-bank-facility"></a>Banki hitel létrehozása
-1. Váltsa át **a Készpénz- és bankkezelés > és > Bank hitellehetőségeihez**.
+1. Váltsa át **a Készpénz- és bankkezelés > beállítása > Bank hitellehetőségeihez**.
 2. Kattintson az **Új** elemre.
 3. A Hitelcsoport **mezőben** adja meg a garancialevél-tranzakció banki hitelcsoportjának nevét.
 4. Írjon egy értéket a **Leírás** mezőbe.
 5. Kattintson a **Mentés** gombra.
-6. Kattintson a Hiteltípusok **fülre**.
+6. Kattintson a Hiteltípusok **fülre** .
 7. Kattintson az **Új** elemre.
 8. A Hitel **típusa mezőben** adja meg a banki hitelmegállapodáshoz kapcsolódó banki hiteltípus nevét.
 9. Írjon egy értéket a **Leírás** mezőbe.
 10. A Hitelcsoport **mezőben** kattintson a legördülő gombra a keresés megnyitásához.
-11. Keresse meg és jelölje ki a kívánt rekordot a listán.
+11. A kívánt rekord megkeresése és kijelölése a listán
 12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-13. Válasszon egy beállítást a Hitel jellege mezőben.
+13. Válasszon egy **beállítást a Hitel jellege** mezőben.
 14. Kattintson a **Mentés** gombra.
 15. Zárja be a lapot.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f07748c2dc41f6411add1d54589652baa7fc3fbb
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 95a79b3c391c15099aee0a8d34419e1cf48fafbc
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779438"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803991"
 ---
 # <a name="import-letter-of-credit"></a>Akkreditív importálása
 
@@ -42,13 +42,16 @@ Ez az eljárás az USMF bemutatócéget használja.
 10. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 11. Adja meg a dátumot a **Könyvelés dátuma** mezőben.
 12. Adjon meg egy dátumot a **Kiszállítási dátum** mezőben.
-    * Megjegyzés: A **Banki bizonylat típusa mezőnek** akkreditűnek **kell lennie**.  
+
+>[!Note] 
+>A **Banki bizonylat típusa mezőnek** akkreditűnek **kell lennie**.  
+
 13. Kattintson az **OK** gombra.
 14. Az **Cikkszám** mezőben adjon meg vagy válasszon ki egy értéket.
 15. Keresse meg és jelölje ki a kívánt rekordot a listán.
 16. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 17. Bontsa ki a **Sorrészletek** szakaszt.
-18. Kattintson a Szállítás **fülre**.
+18. Kattintson a Szállítás **fülre** .
 19. Adjon meg egy dátumot a **Kiszállítási dátum** mezőben.
 20. Adjon meg egy dátumot a **Visszaigazolt szállítási dátum** mezőben.
 21. Adjon meg egy számot az **Egységár** mezőben.
@@ -59,9 +62,9 @@ Ez az eljárás az USMF bemutatócéget használja.
     * Ellenőrizze, hogy **a Bankszámla** mezőben az alapértelmezett aktív bankszámla van-e, amely az alkalmazás dátumán alapul.  
 25. A Banki **bizonylat száma mezőbe** írjon be egy értéket.
 26. A Kézhezvétel **dátuma mezőbe** írja be a dátumot és az időpontot.
-27. Bontsa ki **a Banki bizonylat szakaszt**.
+27. Bontsa ki **a Banki bizonylat szakaszt** .
 28. A Lejárati **dátum mezőbe** írja be a dátumot és az időpontot.
-29. Bontsa ki **a Bank részletei szakaszt**.
+29. Bontsa ki **a Bank részletei szakaszt** .
 30. Az Advising **bank mezőben** adjon meg vagy válasszon ki egy értéket.
 31. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 32. Kattintson a **Mentés** gombra.
@@ -79,7 +82,7 @@ Ez az eljárás az USMF bemutatócéget használja.
 43. Kattintson a **Mentés** gombra.
 44. A Művelet panelen kattintson a **Beszerzés** elemre.
 45. Kattintson a **Megerősítés** gombra.
-    * Az Akkreditív módosítása Egységárban bekövetkező változás miatt.  
+    * Az akkreditó módosítása az egységár változásának következtében.  
 46. A munkaablakban kattintson a Kezelés **gombra**.
 47. Kattintson az akkreditó **vagy importbeszedve gombra**.
     * Az Akkreditív módosítása Beszerzési árban bekövetkező változás miatt.  
@@ -97,7 +100,7 @@ Ez az eljárás az USMF bemutatócéget használja.
 1. A Művelet panelen kattintson a **Fogadás** elemre.
 2. Kattintson a **Termékbevételezés** lehetőségre.
 3. A PurchParmTable_Num **mezőbe** írjon be egy értéket.
-    * Válassza ki a az Akkreditívre való hivatkozással létrehozott Szállítmányszámot.  
+    * Az akkreditóra **hivatkozva** létrehozott szállítmányszám kiválasztása.  
 4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 5. Adjon meg **egy** dátumot a Termékbevételezés dátuma mezőben.
 6. Kattintson az **OK** gombra.
@@ -108,7 +111,7 @@ Ez az eljárás az USMF bemutatócéget használja.
 1. Menjen a Készpénz- **és bankkezelés > akkredit > importakkreditó és importbeszedvés importálása gombra.**
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
 3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-    * Ellenőrizze az Importakkreditív állapotát.     
+    * Ellenőrizze az **Importakkreditó állapotát**.     
 4. Zárja be a lapot.
 5. Zárja be a lapot.
 
@@ -134,7 +137,7 @@ Ez az eljárás az USMF bemutatócéget használja.
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
 3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * Ellenőrizze az Importakkreditív2 állapotát.  
-    * Ellenőrzés: **Számlázott banki hitel részleteinek** = **szállítási** állapota  
+    * Ellenőrzés:  **Számlázott banki hitel részleteinek** = **szállítási**  állapota  
 4. Kattintson a Nézet **gombra**.
 5. Kattintson a Pályázat **nyomtatása gombra**.
 6. Kattintson az **OK** gombra.
@@ -152,13 +155,13 @@ Ez az eljárás az USMF bemutatócéget használja.
 6. Adja meg a dátumot a **Dátum** mezőben.
 7. A **Számla** mezőben adja meg a kívánt értékeket.
 8. Kattintson a Tranzakciók **egyenlítésére**.
-9. Bontsa ki az Összegek szakaszt.
+9. Bontsa ki **az Összegek szakaszt** .
 10. Válasszon egy **beállítást a Show** mezőben.
-    * Ellenőrizze, hogy **módosult-e a Banki bizonylat száma** **és a** Szállítmányszám mező.  
+    * Ellenőrizze, hogy **módosult-e a Banki bizonylat száma**  **és a** Szállítmányszám mező.  
 11. Jelölje be a **Megjelölés** jelölőnégyzetet.
 12. Kattintson az **OK** gombra.
 13. Kattintson a Fizetések fülre.
-    * Ellenőrizze, hogy **módosult-e a Banki bizonylat száma** **és a** Szállítmányszám mező.  
+    * Ellenőrizze, hogy **módosult-e a Banki bizonylat száma**  **és a** Szállítmányszám mező.  
 14. Kattintson a **Bejegyzés** lehetőségre.
 15. Zárja be a lapot.
 16. Zárja be a lapot.
@@ -167,12 +170,12 @@ Ez az eljárás az USMF bemutatócéget használja.
 1. Menjen a Készpénz- **és bankkezelés > akkredit > importakkreditó és importbeszedvés importálása gombra.**
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
 3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-    * Ellenőrizze az Importakkreditív állapotát.   
+    * Ellenőrizze az **Importakkreditó állapotát**.   
 4. Zárja be a lapot.
 
 ## <a name="verify-the-bank-facility-limit-and-utilization-report"></a>Banki hitelmegállapodás korlát és a terheléskihasználtsági jelentés ellenőrzése
-1. Menjen a Készpénz- **és bankkezeléshez > lekérdezések és jelentések > akkre vonatkozó akkre vonatkozó > és kihasználtsági jelentéshez**.
-2. Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.
+1. Menjen a Készpénz- **és bankkezelés > lekérdezések és jelentések > akkre vonatkozó garancialevelekről > bank hitelekről és kihasználtságról szóló jelentésében**.
+2. Bontsa ki a **Szerepeltetni kívánt rekordok** szakaszt.
 3. Kattintson a **Szűrő** parancsra.
     * Definiálja **a Feltétel** mezőt a szükséges bankszámlával.  
 4. A **Feltétel** mezőben adjon meg vagy válasszon ki egy értéket.

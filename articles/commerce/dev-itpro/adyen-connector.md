@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
-ms.openlocfilehash: 6c819e8cf9f5dcb7895ac2633decf0a925c08f2d
-ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
+ms.openlocfilehash: 58d88e023b73ce19331bd6f54644a62d8f6f35af
+ms.sourcegitcommit: 3aa3dedc3123cb079614762e2718841c2f7d7d35
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "9784992"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "9812086"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-overview"></a>Dynamics 365 Payment Connector az Adyen szolgáltatáshoz - áttekintés
 
@@ -29,7 +29,7 @@ Ez a cikk áttekintést nyújt Microsoft Dynamics a 365 Payment Connector for Ad
 
 | Időszak | Leírás |
 |---|---|
-| Fizetési csatlakoztató | Kiterjesztés, amely megkönnyíti a kommunikációt Microsoft Dynamics 365 Commerce a (és a hozzá kapcsolódó összetevők) és a fizetési szolgáltatás között. Az ebben a cikkben ismertetett csatlakoztató a szabványos fizetési szoftverfejlesztői csomag (SDK) használatával lett megvalósítva. |
+| Fizetési csatlakoztató | Kiterjesztés, amely megkönnyíti a kommunikációt Microsoft Dynamics 365 Commerce  a (és a hozzá kapcsolódó összetevők) és a fizetési szolgáltatás között. Az ebben a cikkben ismertetett csatlakoztató a szabványos fizetési szoftverfejlesztői csomag (SDK) használatával lett megvalósítva. |
 | Kártya jelen van | Olyan fizetési tranzakciókra vonatkozik, amelyekben fizikai kártya található és használható a Dynamics 365 point of Sale terminál csatlakoztatóján. |
 | Nincs jelen kártya | Olyan fizetési tranzakciókra vonatkozik, ahol nincs fizikai kártya, például e-Commerce vagy Hívásközpont eset. Ilyen helyzetekben a fizetéssel kapcsolatos adatokat manuálisan kell megadni egy e-Commerce webhelyen, egy hívásközponti folyamaton, illetve a terminálon vagy a terminálon. |
 
@@ -44,7 +44,7 @@ Az első fél verziójú Dynamics 365 Payment Connector for Adyen Microsoft Dyna
 
 #### <a name="supported-adyen-firmware-versions"></a>Támogatott Adyen verziók
 
-Az alábbi lista leírja, hogy milyen minimális és maximális Adyen verziók támogatottak a POS egyes verzióiban Microsoft Dynamics 365 Retail.
+Az alábbi lista leírja, hogy milyen minimális és maximális Adyen verziók támogatottak a POS egyes verzióiban Microsoft Dynamics 365 Retail .
 
 ---
 
@@ -89,12 +89,12 @@ Az alábbi lista leírja, hogy milyen minimális és maximális Adyen verziók t
 > [!NOTE]
 > Az Adyen a főverzió tesztelése után újabb alverzió-frissítéseket is kiadhat. Ha egy főverzió támogatott, akkor minden rendben van, ha az alverzió frissítései ugyanazon a főverzión belül vannak. Ezek a frissítések általában nagyon célzott javítások, és nem teljes körű újratesztelnek, ha korábban már tesztelték ugyanazt a főverziót. A frissítések nem haladják meg a dokumentációban felsorolt Adyen verzió maximális verzióját. 
 >
-> Az 53-as verziónál korábbi Adyen verzióról az 53-as verzióra való áttelepítéshez szükség van a POS KB **4577957** rendszernek a Commerce havi frissítéséhez (a 10.0.11-es verzióktól a 10.0.14-es verziókig). Ha e verziók valamelyike használatban van, és nem tartalmazza a gyorsjavítást, akkor a fizetési terminál utófrissítése csak AZ ÉS verzión keresztül engedélyezi a kifizetéseket. Ha a gyorsjavítást alkalmazza a POS-hoz, ezzel a probléma megoldásával megoldódik. Ha a POS verziója régebbi, mint a **10**.0.11-es verzió, akkor támogatási kérést kell kérni arról, hogy a szolgáltatáson kívülre került MPOS-fájloknál meg kell adni 4577957 a KB 4577957 javítást.
+> Az 53-as verziónál korábbi Adyen verzióról az 53-as verzióra való áttelepítéshez szükség van a POS KB **4577957** a Commerce havi frissítéséhez (a 10.0.11-es verzióktól a 10.0.14-es verziókig). Ha e verziók valamelyike használatban van, és nem tartalmazza a gyorsjavítást, akkor a fizetési terminál utófrissítése csak AZ ÉS verzión keresztül engedélyezi a kifizetéseket. Ha a gyorsjavítást alkalmazza a POS-hoz, ezzel a probléma megoldásával megoldódik. Ha a **POS verziója régebbi, mint a 10.0.11-es verzió, akkor egy támogatási kérést kell megadnia, amely arra kéri, hogy javítsa ki a**  kb4577957 javítást a szolgáltatáson kívülre került MPOS rendszer számára.
 > 
 > Az Adyen verzió 59p7-62p9 **verzióban** történő verzióinál az ajándékutalvány készpénzes fizetés művelete kétszer kéri a PIN-bevitelt olyan helyzetekben, amikor az ajándékutalványt manuálisan kell megadni. Ez a probléma nem kerül elő az ajándékutalvány lehúzáskor. Adyen vizsgálja. 
 
 ### <a name="supported-payment-terminals"></a>Támogatott fizetési terminálok
-A Dynamics 365 Payment Connector for Adyen az eszköz-adyen [fizetési terminál API-t használja ki](https://www.adyen.com/blog/introducing-the-terminal-api). Az alkalmazásprogramozási felület (API) által támogatott összes fizetési terminált támogatja. A támogatott fizetési terminálok teljes listája az [Adyen POS terminálok oldalon található](https://www.adyen.com/pos-payments/terminals).
+A Dynamics 365 Payment Connector for Adyen az eszköz-adyen [fizetési terminál API-t használja ki](https://www.adyen.com/blog/introducing-the-terminal-api). Az alkalmazásprogramozási felület (API) által támogatott összes fizetési terminált támogatja. A támogatott fizetési terminálok teljes listája az [Adyen POS terminálok oldalon található](https://www.adyen.com/pos-payments/terminals) .
 
 Az alábbi videofelvétel az Adyen SEV1 fizetési terminál képességeiről Android ad le.
 
@@ -140,7 +140,7 @@ Az alábbi videofelvétel az Adyen SEV1 fizetési terminál képességeiről And
 | Felfedezés | Kifizető | ✔ |  |  |
 | Diners   | Normál | ✔ | ✔ | ✔ |
 | Sási e-mail | Normál | ✔ | ✔ | ✔ |
-| Jcb | Normál | ✔ | ✔ | ✔ |
+| JCB | Normál | ✔ | ✔ | ✔ |
 | Szakszervezeti fizetés\* | Normál | ✔ |  |  |
 | Interac Debit\* | Normál | ✔ |  |  |
 
@@ -150,7 +150,7 @@ Az alábbi videofelvétel az Adyen SEV1 fizetési terminál képességeiről And
 | Rendszer | Kártya jelen van | Nincs jelen kártya |
 |---|:-:|---|
 | Givex (givex) | ✔ | ✔ |
-| Svs | ✔ | ✔ |
+| SVS | ✔ | ✔ |
 
 Ezeknek a külső ajándékutalvány-programoknak a Dynamics 365 Payment Connector for Adyen alkalmazáson keresztüli támogatásához további lépéseket kell végrehajtania. A további tudnivalókat lásd a Külső ajándékutalványok [támogatása oldalon](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
@@ -280,7 +280,7 @@ Az Adyen a következő országokban támogatja a nem jelenlítő tranzakciókat.
 | Tajvan |
 | Tanzánia |
 | Thaiföld |
-| Törökország |
+| Türkiye |
 | Egyesült Arab Emírségek (UAE) |
 | Egyesült Királyság |
 | Amerikai Egyesült Államok, többek között Puerto Rico  |
@@ -312,7 +312,7 @@ A Dynamics 365 Payment Connector for Adyen [regisztrációjáról és konfigurá
 
 [Dynamics 365 Payment Connector az Adyen szolgáltatáshoz beállítása](adyen-connector-setup.md)
 
-[Dynamics 365 Payment Connector az Adyen - GYIK](adyen-connector-faq.md)
+[Dynamics 365 Payment Connector az Adyen szolgáltatáshoz – GYIK](adyen-connector-faq.md)
 
 [Dynamics 365 Payment Connector az Adyen szolgáltatáshoz – hibaelhárítás](adyen-connector-troubleshoot.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5fbcee713625c597080d1d63ba0ffc70f088799
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0691c65e6a499f713952070811cefaa7a213af7b
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901284"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787553"
 ---
 # <a name="ledger-allocation-rules"></a>Főkönyvi felosztási szabályok
 
@@ -28,7 +28,7 @@ ms.locfileid: "8901284"
 
 Ez a cikk a főkönyvi felosztási szabályokkal kapcsolatos információkat tartalmaz. Leírja az ezen felosztási szabályok különböző összetevőit, és a hozzájuk használható felosztási módszereket.
 
-Főkönyvi felosztási szabályok segítségével automatikusan kiszámítsa és a felosztási naplók és főkönyvi egyenlegek vagy rögzített összegek felosztásának számlabejegyzések létrehozása. Felosztási módszert is lehet, változó vagy állandó. Az alábbi felosztási módok Főkönyvi felosztási szabályok használható:
+Főkönyvi felosztási szabályok segítségével automatikusan kiszámítsa és a felosztási naplók és főkönyvi egyenlegek vagy rögzített összegek felosztásának számlabejegyzések létrehozása. Felosztási módszert is lehet, változó vagy állandó. A felosztás a tranzakció pénznemértékán alapul. Az idegen pénznemben történő nyereség/veszteség könyvelési tételek feladása például a könyvelési és jelentési pénznemösszegek korrigálásához történik. Ezek a bejegyzések nem vonatkoznak a felosztási szabályokra, mivel a tranzakció pénznemének értéke 0,00. Az alábbi felosztási módok Főkönyvi felosztási szabályok használható:
 
 -   **Alap** – a változó módszert használják, ha a felosztás attól függ, a tényleges főkönyvi egyenleg, a szűrési feltételek alapján. Például a vállalat hirdetési kiadásait feloszthatja az egyes részlegeknek az összes értékesítéshez képest produkált értékesítésének arányában.
 -   **Rögzített százalék** és **Fix súly** – közvetlenül a szabályhoz meghatározott ezeknek a módszereknek a felosztási százalék vagy súlya. Ha például hirdetési költségek lehet felosztani osztály kap a hirdetési kiadások 70 százalékát, és B osztály kap 30 százalékát.

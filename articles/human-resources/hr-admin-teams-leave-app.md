@@ -1,6 +1,6 @@
 ---
 title: Human Resources alkalmazás a Teamsben
-description: Ez a cikk bemutatja a Microsoft alkalmazást a következőben Dynamics 365 Human Resources :Microsoft Teams
+description: Ez a cikk bemutatja a Microsoft Dynamics 365 Human Resources alkalmazást Microsoft Teams.
 author: twheeloc
 ms.date: 12/15/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a7ff576efbfeb0c5383a48756fdd7e79f1abdba2
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d29802bdf3411c93f20d710e1f26e541e5022d57
+ms.sourcegitcommit: 3aa3dedc3123cb079614762e2718841c2f7d7d35
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902256"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "9812186"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources alkalmazás a Teamsben
 
@@ -28,7 +28,7 @@ ms.locfileid: "8902256"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A Microsoft Dynamics 365 Human Resources alkalmazás segítségével az Microsoft Teams alkalmazottak gyorsan időt kérhetnek, és megtekinthetik az időkorlegük adatait a következőben:Microsoft Teams Az alkalmazottak egy robottal léphetnek kapcsolatba információ kéréséhez. A **Szabadság** lapon részletesebb információk olvashatók. Ezenkívül a közelgő szabadságaikról információkat küldhetnek az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
+A Microsoft Dynamics 365 Human Resources alkalmazás segítségével az Microsoft Teams alkalmazottak gyorsan időt kérhetnek, és megtekinthetik az időkorlegük adatait Microsoft Teams. Az alkalmazottak egy robottal léphetnek kapcsolatba információ kéréséhez. A **Szabadság** lapon részletesebb információk olvashatók. Ezenkívül a közelgő szabadságaikról információkat küldhetnek az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
 
 ![Human Resources Teams szabadságkezelő alkalmazás robotja.](./media/hr-teams-leave-app-bot.png)
 
@@ -48,14 +48,14 @@ Ha azt szeretné, hogy a felhasználók a Távollét és szabadság naptárát a
 >[!NOTE]
 > 2021. december 20-án kezdődően elindul a Microsoft bérlőben tárolt Emberi erőforrások alkalmazás szolgáltatás. A telepítésre elérhető, naprakész bővítményekre (verziókra és verziókra1.1.5) lesz hatással. A fő hatással lesz az elavult kiterjesztésre (1.1.4). A verzióban elérhető csevegési program leáll. Az **Idő-idő** lap mindkét kiterjesztésben továbbra is működni fog.
 
-Az 1.1.4-es verziónál a beszélgetési program leállítja a válaszadást bármilyen üzenetre. Például bejelentkezés, **·** **egyenlegek megtekintése** és **idő-idő megtekintése**. Az alkalmazást manuálisan kell frissíteni a legújabb verzióra. A további tudnivalókat lásd [Az alkalmazások frissítése itt:Microsoft Teams](/MicrosoftTeams/apps-update-experience)
+Az 1.1.4-es verziónál a beszélgetési program leállítja a válaszadást bármilyen üzenetre. Például jelentkezzen be, **tekintse** **meg az egyenlegeket** és tekintse meg **az időkorrekt.** Az alkalmazást manuálisan kell frissíteni a legújabb verzióra. További információ az Alkalmazások [frissítése itt található Microsoft Teams](/MicrosoftTeams/apps-update-experience).
 
 A következő lépések szerint frissít az 1.1.5-ös verzióra:
-1. Az Microsoft Teams Alkalmazások 2003 alkalmazásba **ugrás**
+1. Menjen Microsoft Teams az **Alkalmazások alkalmazásba**.
 2. Az Emberi erőforrások **alkalmazás** megkeresve.
 3. Válassza a **Frissítés lehetőséget**.
 
-Az Emberi erőforrások **alkalmazás** **verzióját úgy ellenőrizheti, hogy vagy a Személyes lapra, vagy a Személyes alkalmazás szakaszra** megy. 
+Az Emberi erőforrások **alkalmazás**  **verzióját úgy ellenőrizheti, hogy vagy a Személyes lapra, vagy a Személyes alkalmazás szakaszra** megy. 
 
 ![Emberi erőforrások **A** lap.](./media/HR-teams-about.png)
 
@@ -112,7 +112,7 @@ A Dynamics 365 Human Resources alkalmazásban a Teamsben az alábbi nyelvek tám
 | it-IT | Olasz (Olaszország) |
 | nl-NL | Holland (Hollandia) |
 | pt-BR | Portugál (Brazília) |
-| tr-TR | Török (Törökország) |
+| tr-TR | Török (Türkiye) |
 | zh-CN | Kínai (egyszerűsített) |
 
 ## <a name="notes"></a>Jegyzetek
@@ -123,7 +123,7 @@ A következő munkaelemek a későbbi verziókban jelennek meg:
 | --- | --- |
 | Az egyenleg nem helyes, amikor jövőbeli dátumra vonatkozó szabadságot küld be. | Az előrejelzés még nem érhető el. A megjelenített egyenleg az aktuális dátumra vonatkozik. |
 | Nem lehet visszavonni egy **Ellenőrzés alatt** állapotú kérelmet. | Ez a funkció jelenleg nem támogatott, és egy későbbi verzióban kerül hozzáadásra. |
-| Az egyenleg adatait a mai naptól számítja ki a program. | A rendszer jelenleg nem mutatja az egyenlegeket a könyvelési időszaknak megfelelően, még akkor sem, **ha be van állítva a Szabadság és távollét paraméterei oldalon**. |
+| Az egyenleg adatait a mai naptól számítja ki a program. | A rendszer jelenleg nem mutatja az egyenlegeket a könyvelési időszaknak megfelelően, még akkor sem, **ha be van állítva a Szabadság és távollét paraméterei oldalon** . |
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 
@@ -150,7 +150,7 @@ Ha egy felhasználó hibaüzenetet kap, miközben szabadságkéréseket próbál
 
 2. Győződjön meg róla, hogy a felhasználók ugyanolyan hitelesítő adatokkal vannak bejelentkezve a **Csevegések** fülön, mint a szabadságkérések jóváhagyásához. A „kijelentkezés” és a „bejelentkezés” üzenetekkel jelentkezzen be a megfelelő hitelesítő adatokkal.
 
-3. Ha a probléma továbbra is fennáll, ellenőrizze az **Üzleti** események rendszer kötegelt feladatának állapotát rendszergazdaként. Ha Várakozás **vagy** **Végrehajtás** szakaszban van, ellenőrizze újra pár perc múlva. Ha az állapot változatlan marad, akkor jelentkezzen be egy támogatási jegyre, hogy a mi csapatunk segíthet kijavítani a problémát.
+3. Ha a probléma továbbra is fennáll, ellenőrizze az **Üzleti** események rendszer kötegelt feladatának állapotát rendszergazdaként. Ha Várakozás **vagy**  **Végrehajtás** szakaszban van, ellenőrizze újra pár perc múlva. Ha az állapot változatlan marad, akkor jelentkezzen be egy támogatási jegyre, hogy a mi csapatunk segíthet kijavítani a problémát.
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 
@@ -168,7 +168,7 @@ Az Microsoft Teams-alkalmazások felügyeleti beállításainak kezeléséhez ny
 
 Az alkalmazás Dynamics 365 Human Resources használata esetén Microsoft Teams bizonyos vevőadatok azon a földrajzi területen kívülre is kiterjedhetnek, ahová a bérlő emberi erőforrások szolgáltatását telepítik.
 
-Dynamics 365 Human Resources az alkalmazott távolléti kérelmét és a munkafolyamat-feladat részleteit továbbítja az Microsoft Azure eseményrács és Microsoft Teams a. Ezeket az adatokat a Microsoft Azure Event Grid felületen az Egyesült Államokban legfeljebb 24 óráig tárolhatjuk, és a rendszer a szállítás és tárolás során titkosítja, és a Microsoft vagy az alfeldolgozók nem használják a tanításhoz vagy szolgáltatások fejlesztéséhez. Annak megértéséhez, hogy az adatok a Teamsben hol vannak tárolva akkor lásd: [Adatok helye Microsoft Teams-alkalmazásban](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
+Dynamics 365 Human Resources az alkalmazott távolléti kérelmét és a munkafolyamat-feladat részleteit továbbítja az Microsoft Azure eseményrácsba, és Microsoft Teams Ezeket az adatokat a Microsoft Azure Event Grid felületen az Egyesült Államokban legfeljebb 24 óráig tárolhatjuk, és a rendszer a szállítás és tárolás során titkosítja, és a Microsoft vagy az alfeldolgozók nem használják a tanításhoz vagy szolgáltatások fejlesztéséhez. Annak megértéséhez, hogy az adatok a Teamsben hol vannak tárolva akkor lásd: [Adatok helye Microsoft Teams-alkalmazásban](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 
 Miközben a csevegőrobottal beszélget a Human Resources alkalmazásban beszélgetett, a beszélgetés tartalma lehet, hogy el lesz tárolva az Azure Cosmos DB-szolgáltatásban és át lesz adva Microsoft Teams alkalmazásnak. Ezeket az adatokat a program legfeljebb 24 óráig tárolhatja az Azure Cosmos DB modulban, és feldolgozható azon a földrajzi régión kívül, amelyen a bérlő Human Resources szolgáltatását telepítették, a szállítás és a nyugalmi állapotban titkosítva van, és a Microsoft vagy annak alfeldolgozói nem használják a tréningek vagy szolgáltatások fejlesztése céljából. Annak megértéséhez, hogy az adatok a Teamsben hol vannak tárolva akkor lásd: [Adatok helye Microsoft Teams-alkalmazásban](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
  

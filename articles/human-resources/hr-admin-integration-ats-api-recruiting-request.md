@@ -1,6 +1,6 @@
 ---
 title: Toborzási kérelem
-description: Ez a témakör a toborzási kérelem entitását írja le Dynamics 365 Human Resources.
+description: Ez a témakör a Toborzási kérelem entitást írja le Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58e509a819e5cda650fddab8dd0c4d55d5148db1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d89d3e77d096f5908207ac53f4e9022f686ac5f3
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872268"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806375"
 ---
 # <a name="recruiting-request"></a>Toborzási kérelem
 
@@ -27,7 +27,7 @@ ms.locfileid: "8872268"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör a toborzási kérelem entitását írja le Dynamics 365 Human Resources.
+Ez a témakör a Toborzási kérelem entitást írja le Dynamics 365 Human Resources.
 
 Fizikai név: mshr_hcmrecruitingrequestentity
 
@@ -68,7 +68,7 @@ Egy állásra való toborzásra vonatkozó kérelmet mutat be.
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -87,7 +87,7 @@ Egy állásra való toborzásra vonatkozó kérelmet mutat be.
 | **Állapot**<br>mshr_status<br>*RecruitingRequestStatus* beállításkészlet | Olvasás/írás<br>Szükséges<br> | Megadja a toborzási kérelem állapotát. |
 | **Leírás**<br>mshr_description<br>*Sztring* | Olvasás/írás<br>Szükséges | Bemutatja a kérelmet. |
 | **Toborzási kérelemhely azonosítója**<br>mshr_recruitingrequestlocationid<br>*Sztring* | Olvasás/írás<br>Választható | A kérelemhez társított állás helyének a felhasználó számára olvasható egyedi azonosítója. |
-| **Toborzási hely azonosítójának értéke**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | Írásvédett<br>Választható<br>Idegen kulcs: mshr_hcmrecruitingrequestlocationentityid / mshr_hcmrecruitingrequestlocationentity entitás | A toborzási kérelemhez kiválasztott hely azonosítására szolgáló, a rendszer által generált GUID-érték. |
+| **Toborzási hely azonosítójának értéke**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | Írásvédett<br>Választható<br>Idegen kulcs: mshr_hcmrecruitingrequestlocationentityid / mshr_hcmrecruitingrequestlocationentity entitás | A toborzási kérelemhez kiválasztott hely azonosítására szolgáló, a rendszer által generált GUID-érték. |
 | **Megjegyzések**<br>mshr_comments<br>*Sztring* | Olvasás/írás<br>Választható | A vezetők és toborzók által a kérelemmel kapcsolatban használható megjegyzések. |
 | **Beosztásazonosító**<br>mshr_jobid<br>*Sztring* | Írás egyszer<br>Szükséges |   A kérelemhez társított összes pozícióval megosztott állásnak a felhasználó számára olvasható egyedi azonosítója. |
 | **Állásazonosító értéke**<br>_mshr_fk_job_id_value<br>*GUID* | Írásvédett<br>Szükséges<br>Idegen kulcs: mshr_hcmjobentityid / mshr_hcmjobentity entitás | A toborzási kérelemhez társított összes pozícióval megosztott állásnak a rendszer által generált egyedi azonosítója. |

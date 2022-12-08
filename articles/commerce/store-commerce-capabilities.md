@@ -1,6 +1,6 @@
 ---
-title: A Store Commerce alkalmazás lehetőségei
-description: Ez a témakör a Store Commerce alkalmazás for Microsoft Dynamics 365 Commerce.
+title: Store Commerce alkalmazás képességei
+description: Ez a cikk ismerteti azokat a funkciókat, amelyek elérhetők a Store Commerce alkalmazásban Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 10/25/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2022-09-30
-ms.openlocfilehash: d713cc0e9537ae20ffddee6e77779a16e74bd779
-ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
+ms.openlocfilehash: 58f2ab1f913d3629de7971c8eeb2d1821161e44f
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "9728027"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788512"
 ---
-# <a name="store-commerce-app-capabilities"></a>A Store Commerce alkalmazás lehetőségei
+# <a name="store-commerce-app-capabilities"></a>Store Commerce alkalmazás képességei
 
 [!include [banner](includes/banner.md)]
 
-A Store Commerce alkalmazás a pénztári tapasztalat a következőben:Microsoft Dynamics 365 Commerce Lehetővé teszi a vállalkozások számára, hogy tranzakciókat feldolgoztanak az üzletben, és kezelni tárolják az irodai műveleteket, például a készletet és a rendelési beszerzéseket. Az alkalmazás a vállalkozások számára is lehetővé teszi a hűségprogrammal és ügyfélkapcsolatokkal való ügyfélkapcsolatok kezelését. 
+A Store Commerce alkalmazás a pénztári tapasztalat modern felhasználói élménye Microsoft Dynamics 365 Commerce. Lehetővé teszi a vállalkozások számára, hogy tranzakciókat feldolgoztanak az üzletben, és kezelni tárolják az irodai műveleteket, például a készletet és a rendelési beszerzéseket. Az alkalmazás a vállalkozások számára is lehetővé teszi a hűségprogrammal és ügyfélkapcsolatokkal való ügyfélkapcsolatok kezelését. 
 
 A Commerce Scale Unit (STB) segítségével működő Store Commerce alkalmazás teljes csatorna-megoldást biztosít. Például egy vevő online vásárolhat egy terméket, és felveheti azt egy közeli üzletben, ezáltal folytathatja a vásárlást a csatornák között anélkül, hogy adatvesztést volna kapnia. 
 
@@ -33,7 +33,7 @@ Ez a cikk áttekintést nyújt a Store Commerce alkalmazás lehetőségeiről.
 | Csatorna | Dynamics 365 Commerce Olyan átfogó csatorna-megoldást kínál, amely egységesíti a háttérirodai, az áruházi, a hívásközponti és a digitális tapasztalatokat. | [Áttekintés](index.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-commerce-overview-november-2-2020) |
 | Nem központosított Commerce | A Commerce Scale Unit a fej nélküli kereskedelmi motornak ad állomást. A fej nélküli kereskedelmi motor a commerce üzleti logika központi pontjaként szolgál, és egy teljes csatorna-megoldást nyújt. | <p>[Architektúra – áttekintés](commerce-architecture.md)</p><p>[Fej nélküli architektúra](dev-itpro/retail-server-architecture.md)</p> | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-commerce-architecture-overview-december-4-2020) |
 | Commerce headquarters | A Commerce Headquarters olyan háttér-funkciókat kínál, amelyek lehetővé teszik a termékek, alkalmazottak, üzleti folyamatok, árképzés és más, a vállalat számára szükséges funkciók konfigurálást. | [Architektúra – áttekintés](commerce-architecture.md) | |
-| Pénztár (POS) | A Store Commerce alkalmazás a következő pénztári tapasztalatának része Dynamics 365 Commerce: Funkciógazdag és átfogó POS-funkciókat nyújt, amelyek az értékesítési munkatársaknak, pénztárosoknak és vezetőknek nyújtanak jobb ügyfélszolgálatot. Ezenkívül számos telepítési lehetőséget kínál a kiskereskedők számára, javítja a teljesítményt, és jobb életciklus-kezelési (ALM) lehetőségeket nyújt az alkalmazásoknak. | [Store Commerce alkalmazás](dev-itpro/store-commerce.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/modernize-the-dynamics-365-commerce-in-store-technology-using-the-new-store-commerce-app-march-30-2022)</p><p>[Videó](https://youtu.be/7B332XH_zfs)</p><p>[Áttelepítés az MPOS rendszerből a Store Commerce alkalmazásba](dev-itpro/pos-extension/migrate-mpos-store-commerce.md)</p> |
+| Pénztár (POS) | A Store Commerce alkalmazás a pénztári tapasztalat. Dynamics 365 Commerce Funkciógazdag és átfogó POS-funkciókat nyújt, amelyek az értékesítési munkatársaknak, pénztárosoknak és vezetőknek nyújtanak jobb ügyfélszolgálatot. Ezenkívül számos telepítési lehetőséget kínál a kiskereskedők számára, javítja a teljesítményt, és jobb életciklus-kezelési (ALM) lehetőségeket nyújt az alkalmazásoknak. | [Store Commerce alkalmazás](dev-itpro/store-commerce.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/modernize-the-dynamics-365-commerce-in-store-technology-using-the-new-store-commerce-app-march-30-2022)</p><p>[Videó](https://youtu.be/7B332XH_zfs)</p><p>[Áttelepítés az MPOS rendszerből a Store Commerce alkalmazásba](dev-itpro/pos-extension/migrate-mpos-store-commerce.md)</p> |
 | Felhőbeli telepítés | A Commerce Scale Units több példánya telepíthető rakományelosztás és földrajzi távolság miatt. | [Felhőbeli telepítés](../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md) | |
 | A létesítményben telepítettek | A helyi üzleti adatok telepítésével a Commerce ügyfelek több tulajdonost és vezetést kaphatnak a Dynamics 365 környezetekben. | [Helyszíni telepítés](../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) | |
 
@@ -41,8 +41,8 @@ Ez a cikk áttekintést nyújt a Store Commerce alkalmazás lehetőségeiről.
 
 | Képesség | Leírás | Dokumentáció | Kiegészítő tartalom |
 |---|---|---|---|
-| Több űrlaptényező | A Store Commerce alkalmazás több eszközképernyő tényezőjére is használható, például számítógépekre, táblagépekre és mobileszközökre. A látható felhasználói felület lehetővé teszi az elrendezés automatikus átméretezését és a képernyő méretének megfelelő beállítását. | [Vizuális konfigurációk](pos-screen-layouts.md) | |
-| Több platformon keresztül | A Store Commerce alkalmazás a weben, a Windows rendszerben, az iOS-en és a platformokon is támogatott Android. | [Platformok](dev-itpro/hybridapp.md) | |
+| Több űrlaptényező | A Store Commerce alkalmazás több eszközképernyő tényezőjére is használható, például számítógépekre, táblagépekre és mobileszközökre. A látható felhasználói felület lehetővé teszi az elrendezés automatikus átméretezését és a képernyő méretének megfelelő beállítását. | [Vizuális konfigurációk](pos-screen-layouts.md) |  |
+| Több platformon keresztül | A Store Commerce alkalmazás a weben, a Windows rendszerben, az iOS-en és a platformokon is támogatott Android . | [Platformok](dev-itpro/hybridapp.md) | |
 | Márka | A képernyőtervező segítségével testreszabhatja a képernyő-elrendezéseket, hogy megfeleljen az üzleti követelményeknek. Ezen kívül témákat, elrendezéseket, színeket és képeket lehet létrehozni az alkalmazotti szerepkörök alapján, majd megoszthatók a felhasználók között a márka konzisztenciája és a használat könnyebbsége érdekében. | [Vizuális konfigurációk](pos-screen-layouts.md) | [Videó](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
 | Topológia | A különböző üzleten belüli topológiák a hálózati elérhetőségtől függően támogatottak. | <p>[Topológia](dev-itpro/retail-modern-pos-architecture.md)</p><p>[Infographic](dev-itpro/retail-in-store-topology.md)</p> | |
 | Több eszköz kezelése | A Commerce Headquarters segítségével egyszerűen több eszköz kezelhető az üzletek között. | [Aktiválás](set-up-activation-accounts-validate-devices-hq.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/commerce-mass-deployment-with-sccm-system-center-configuration-manager-october-6-2022) |
@@ -77,7 +77,7 @@ Ez a cikk áttekintést nyújt a Store Commerce alkalmazás lehetőségeiről.
 | Termékkeresés | A termékek keresése név szerint, a keresés finomítása a termékattribútumok, például a márka, az ár és az anyag alapján. Ezt a funkciót az Azure Keresési szolgáltatás használja. | [Felhőalapú keresés](cloud-powered-search-overview.md) | |
 | Termékadatok lap | A részletes termékekkel kapcsolatos lapok képekkel, leírással, termékattribútumokkal és ajánlott termékekkel kapcsolatosak lehetnek. Az ajánlásokhoz az Ajánlások szolgáltatás szolgál. | | |
 | Termék összehasonlítása | Több termék összehasonlítása, és súgó a vevőknek a választásban és a termékek tranzakcióhoz való hozzáadásában. | | |
-| Folyosó folyosója | A készlet egyszerű keresni a többi üzletben, és rendelések létrehozása. | [Keresés a készletben](pos-inventory-lookup-operation.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Folyosó folyosója | A készlet egyszerű keresni a többi üzletben, és rendelések létrehozása. | [Keresés a készletben](pos-inventory-lookup-operation.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 | Ajánlatok | Az Ajánlások szolgáltatás segítségével értékesítsen és értékesítsen több terméket. Ez a szolgáltatás szabadalmazott technológia segítségével tesz javaslatot a beszerzési trendekre, valamint az újonnan érkezett, hasonló megjelenésre és bestsételre vonatkozó jellemzők alapján. Ezek az ajánlások a termék részletei lapokon, **a** Vevő adatai lapon és **a Tranzakciók lapon érhetők** el. | [Ajánlatok](product-recommendations.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-recommendations-march-2-2021) |
 
 ## <a name="customer-relationship"></a>Ügyfélkapcsolat
@@ -88,8 +88,8 @@ Ez a cikk áttekintést nyújt a Store Commerce alkalmazás lehetőségeiről.
 | Vevőattribútumok | A Vevőattribútumok keretrendszer lehetővé teszi további vevői kapcsolódó adatoknak az üzleti követelmények alapján való rögzített beállítását. | [Attribútumok](dev-itpro/customer-attributes.md) | |
 | Vevő részletes adatai lap | A részletes vevői adatokat tartalmazó lap minden csatornában részletesen beszerzi a vevők közötti kommunikáció részleteit. Az ilyen műveletek közé tartoznak a beszerzések, a kívánságlisták és a hűségpontok. | | |
 | Felhőalapú vevőkeresés | Vevők keresése név, telefonszám, e-mail cím, hűségkártya, cím stb. szerint. | [Felhőalapú keresés](pos-search-improvements.md#customer-search) | |
-| Hűség és jutalmak | Az ügyfelek hűségprogramokhoz csatlakozhatnak, és hűségpontokat szerezhetnek és válthatnak be a különböző csatornákon keresztül. | [Hűség](set-up-customer-loyalty-program.md) | |
-| Ügyfélkör | A kulcs vevők kezelése ügyfélkönyv használatával, és a vevőprofilban végzett tevékenységek és megjegyzések nyomon követése. Dynamics 365 Customer Insights integrációval az alkalmazottak a következő legjobb műveletre vonatkozó adatokat kapják meg az egyes vevők számára. | [Ügyfélkör](clienteling-overview.md#activities-and-notes) | |
+| Hűség és jutalmak | Az ügyfelek hűségprogramokhoz csatlakozhatnak, és hűségpontokat szerezhetnek és válthatnak be a különböző csatornákon keresztül. | [Hűség](set-up-customer-loyalty-program.md) | [Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5c2wW) |
+| Ügyfélkör | A kulcs vevők kezelése ügyfélkönyv használatával, és a vevőprofilban végzett tevékenységek és megjegyzések nyomon követése. Dynamics 365 Customer Insights integrációval az alkalmazottak a következő legjobb műveletre vonatkozó adatokat kapják meg az egyes vevők számára. | [Ügyfélkör](clienteling-overview.md#activities-and-notes) | [Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSP) |
 
 ## <a name="pricing-and-discounts"></a>Árképzés és engedmények
 
@@ -132,8 +132,8 @@ Ez a cikk áttekintést nyújt a Store Commerce alkalmazás lehetőségeiről.
 | Rendelésattribútumok | A Rendelésattribútum keretrendszer lehetővé teszi további rendelésekkel kapcsolatos információknak az üzleti követelmények alapján való rögzített beállítását. | [Attribútumok](dev-itpro/order-attributes.md) | |
 | Közvetlen kiszállítás | A cikkeket megjelölheti a szállító a vevő címére történő közvetlen kiszállításra. A közvetlen kiszállítás más néven közvetlen kiszállítás. | [Közvetlen kiszállítás](/dynamics365/supply-chain/sales-marketing/tasks/ship-orders-direct-deliveries) | |
 | Árajánlat | Az üzlet alkalmazottai árajánlatokat hozhatnak létre a vevők számára, és megadhatnak egy speciális árat, manuális engedményeket és ajánlat-érvényességi dátumot. | [Árajánlat](/dynamics365/supply-chain/sales-marketing/tasks/create-edit-sales-quotations) | |
-| Teljesítés | Az üzletek kitárolt, csomagolt és szállíthat rendeléseket. A szállításra kész csomagokhoz csomagjegyzéket lehet hozzáadni. | [Teljesítés](order-fulfillment-overview.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021) |
-| Felosztott rendeléskezelés | A Store Commerce alkalmazás intelligens rendelésteljesítési optimalizálást támogat, ahol az üzleti stratégiák az üzlet jellege, a vevő típusa, a rendelés eredete és a rendelés szállítási módja alapján konfigurálhatók. | [Dom](dom.md) | |
+| Teljesítés | Az üzletek kitárolt, csomagolt és szállíthat rendeléseket. A szállításra kész csomagokhoz csomagjegyzéket lehet hozzáadni. | [Teljesítés](order-fulfillment-overview.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-supporting-buy-online-pickup-in-store-curbside-with-dynamics-365-commerce-pos-february-3-2021)</p> <p>[Videó](https://www.microsoft.com/videoplayer/embed/RE5bRXE)</p>|
+| Felosztott rendeléskezelés | A Store Commerce alkalmazás intelligens rendelésteljesítési optimalizálást támogat, ahol az üzleti stratégiák az üzlet jellege, a vevő típusa, a rendelés eredete és a rendelés szállítási módja alapján konfigurálhatók. | [DOM](dom.md) | [Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5bRYl)|
 
 ## <a name="inventory-management"></a>Készletgazdálkodás
 
@@ -141,12 +141,12 @@ Ez a cikk áttekintést nyújt a Store Commerce alkalmazás lehetőségeiről.
 |---|---|---|---|
 | Központi elosztás | A rendelkezésre álló készlet elosztásának racionalizálása az elosztási központból több üzletbe vagy raktárba. | [Központi elosztás](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Áttárolás | A készlet felosztásának racionalizálása a bejövő beszerzési rendeléseken több üzletbe vagy raktárba. | [Áttárolás](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Bejövő készlet | Készlet fogadása a szállítótól beszerzési rendelésen keresztül vagy másik raktárból átrendelt rendelésen keresztül. Bejövő beszerzési rendelés vagy átátviteli rendelési kérelem létrehozása. | [Bejövő](pos-inbound-inventory-operation.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Kimenő készlet | Készlet másik raktárba történő szállításának átrakodása rendelésen keresztül, és kimenő átátviteli rendelési kérelem létrehozása. | [Kimenő](pos-outbound-inventory-operation.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Keresés a készletben | Az üzletekben és raktárakban található termékek aktuális készletének ellenőrzése, és az ígérethez rendelkezésre álló készlet jövőbeli dátumok ellenőrzése. | [Keresés a készletben](pos-inventory-lookup-operation.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Készlethelyesbítés | Módosítsa a készletet az üzlet raktárában, illetve a raktárból, hogy megfeleljen az adott üzleti követelményeknek értékesítés, bevételezés és újraszámlálás nélkül. | [Készlethelyesbítés](work-with-store-inventory.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Leltárok | A tényleges készlet leltározása és a rendszer könyvelési készletének beállítása, hogy megfeleljen neki. | [Leltár](work-with-store-inventory.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Készletmozgás | Készlet áthelyezése az üzlet helyei között. | [Mozgatás](work-with-store-inventory.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Bejövő készlet | Készlet fogadása a szállítótól beszerzési rendelésen keresztül vagy másik raktárból átrendelt rendelésen keresztül. Bejövő beszerzési rendelés vagy átátviteli rendelési kérelem létrehozása. | [Bejövő](pos-inbound-inventory-operation.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Kimenő készlet | Készlet másik raktárba történő szállításának átrakodása rendelésen keresztül, és kimenő átátviteli rendelési kérelem létrehozása. | [Kimenő](pos-outbound-inventory-operation.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p>  <p>[Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Keresés a készletben | Az üzletekben és raktárakban található termékek aktuális készletének ellenőrzése, és az ígérethez rendelkezésre álló készlet jövőbeli dátumok ellenőrzése. | [Keresés a készletben](pos-inventory-lookup-operation.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
+| Készlethelyesbítés | Módosítsa a készletet az üzlet raktárában, illetve a raktárból, hogy megfeleljen az adott üzleti követelményeknek értékesítés, bevételezés és újraszámlálás nélkül. | [Készlethelyesbítés](work-with-store-inventory.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p>|
+| Leltárok | A tényleges készlet leltározása és a rendszer könyvelési készletének beállítása, hogy megfeleljen neki. | [Leltár](work-with-store-inventory.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)<p> |
+| Készletmozgás | Készlet áthelyezése az üzlet helyei között. | [Mozgatás](work-with-store-inventory.md) | <p>[Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021)</p> <p>[Videó](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSx)</p> |
 
 ## <a name="financials"></a>Pénzügyek
 
@@ -192,9 +192,9 @@ Ez a cikk áttekintést nyújt a Store Commerce alkalmazás lehetőségeiről.
 | Képesség | Leírás | Dokumentáció | Kiegészítő tartalom |
 |---|---|---|---|
 | Commerce headquarters | A Commerce Headquarters megoldásai az üzleti folyamatok hozzáadásával és módosításával szabhatók testre. A Commerce Headquarters metaadatok és kódvezérelt bővítménymodellek használatát támogatja az egyéni funkciók hozzáadásához. A külső megoldásokba egyszerűen integrálható. | [Áttekintés](dev-itpro/extend-customer-cdx-package.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-unlock-the-power-of-dynamics-365-commerce-commerce-extensibility-overview-february-23-2021) |
-| Fej nélküli kereskedelem | A extensible Can-channel API keretrendszer az üzleti logika testreszabásához és hozzáadásához használható. Olyan API-k, amelyekhez kérelemkezelők, valamint előzetes és utáni eseményindító kiterjesztési mintázatok is vannak. | [Csu](dev-itpro/retail-server-customer-consumer-api.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
-| Commerce SDK | A Commerce SDK szoftverfejlesztői készlet tartalmazza a funkciók kiterjesztéséhez vagy testreszabásához szükséges kódot, kódmintákat, Dynamics 365 Commerce sablonokat és eszközöket. Az SDK a bővítmény-összetevőktől függően különböző tárárakban (tárárakban) történik. | [Sdk](dev-itpro/retail-sdk/sdk-github.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
-| Pénztár | A Store Commerce alkalmazás a Commerce SDK POS-bővítményének funkcióját használva önállóan is kiterjeszthető. A keretrendszer támogatja a felhasználói felület, a munkafolyamatok és az üzleti logika testreszabását. | [Pos](dev-itpro/pos-extension/pos-extension-overview.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
+| Fej nélküli kereskedelem | A extensible Can-channel API keretrendszer az üzleti logika testreszabásához és hozzáadásához használható. Olyan API-k, amelyekhez kérelemkezelők, valamint előzetes és utáni eseményindító kiterjesztési mintázatok is vannak. | [CSU](dev-itpro/retail-server-customer-consumer-api.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
+| Commerce SDK | A Commerce SDK szoftverfejlesztői készlet tartalmazza a funkciók kiterjesztéséhez vagy testreszabásához szükséges kódot, kódmintákat, Dynamics 365 Commerce sablonokat és eszközöket. Az SDK a bővítmény-összetevőktől függően különböző tárárakban (tárárakban) történik. | [SDK](dev-itpro/retail-sdk/sdk-github.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
+| Pénztár | A Store Commerce alkalmazás a Commerce SDK POS-bővítményének funkcióját használva önállóan is kiterjeszthető. A keretrendszer támogatja a felhasználói felület, a munkafolyamatok és az üzleti logika testreszabását. | [POS](dev-itpro/pos-extension/pos-extension-overview.md) | [Tech tech tech (tech, tech)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
 
 ## <a name="reporting"></a>Jelentéskészítés
 
@@ -206,7 +206,7 @@ Ez a cikk áttekintést nyújt a Store Commerce alkalmazás lehetőségeiről.
 
 | Képesség | Leírás | Dokumentáció | Kiegészítő tartalom |
 |---|---|---|---|
-| Üzemeltetési információk | Az üzletben minősített szolgáltatás állapotának megbízhatósága és a teljesítménymetrikák elérhetők a vevő előfizetésében Application Insights. Speciális riasztási és figyelési funkciók érhetők el. | | |
+| Üzemeltetési információk | Az üzletben minősített szolgáltatás állapotának megbízhatósága és a teljesítménymetrikák elérhetők a vevő előfizetésében Application Insights . Speciális riasztási és figyelési funkciók érhetők el. | | |
 | Állapot-ellenőrzés | A POS-hoz csatlakoztatott perifériák elérhetősége az állapotellenőrzési művelet futtatásával ellenőrizhető. Ezután javítani és ellenőrizni lehet az egyes perifériás problémákat. | [Állapot-ellenőrzés](pos-healthcheck.md) | [Videó](https://www.youtube.com/watch?v=RfPDNmnqYvY) |
 
 ## <a name="globalization"></a>Globalizáció

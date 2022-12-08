@@ -2,7 +2,7 @@
 title: Jelentés-összetevők rendezése a jelentéstervezőben
 description: Ez a cikk ismerteti a jelentéstervezőben meglévő jelentések, építőelemek és objektumok rendezését.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6abad01232d05e94321d0d568d2e801d92875ae
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: a94a88114072792243026e441e6c5a62ee80fc56
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135879"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802688"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Jelentés-összetevők rendezése a jelentéstervezőben
 
@@ -28,16 +28,16 @@ ms.locfileid: "9135879"
 
 Miután elkészítette az építőelemeket és létrehozta a jelentéseket, hasznos ezeknek a rendezése, hogy a felhasználók könnyebben megtalálják őket. Ez a cikk ismerteti a jelentéstervezőben meglévő jelentések, építőelemek és objektumok rendezését.
 
-Átnevezheti a mappákat, jelentéseket, építőelemeket és más objektumokat jelentéstervezőben a fájlok rendszerezése érdekében. Attól függően, hogy milyen típusú objektumot nevez át, előfordulhat, hogy frissítenie kell az objektummal kapcsolatos társításokat.
+A jelentéstervezőben mappákat, jelentéseket, tömböket és más objektumokat átnevezhet, hogy a fájlokat rendszerezze. Attól függően, hogy milyen típusú objektumot nevez át, előfordulhat, hogy frissítenie kell az objektummal kapcsolatos társításokat.
 
-## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Nevezze át a mappát vagy az építőelemet a Jelentés Tervezőben
-A Report Designer eszközben átnevezheti a mappákat, valamint a jelentés-, sor-, oszlop- és jelentésfa-definíciókat is.
+## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Mappa vagy épületblokk átnevezése a Jelentéstervezőben
+A Jelentéstervezőben átnevezhetők a mappák, a jelentésdefiníciók, a sordefiníciók, az oszlopdefiníciók és a jelentési fa definíciói.
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Mappa vagy építőelem átnevezése a Report Designer eszközben
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Mappa vagy épületblokk átnevezése a Jelentéstervezőben
 
-1. A Report Designer alkalmazás navigációs ablaktábláján keresse meg az átnevezni kívánt mappát vagy objektumot.
+1. A Jelentéstervezőben a navigációs ablakban keresse meg az átnevezni kívánt mappát vagy objektumot.
 2. Kattintson jobb gombbal a mappára vagy az objektumra, és kattintson a **Átnevezésre**. A navigációs ablakban lévő **Név** mező elérhetővé válik.
-3. Írja be az új nevet, majd nyomja le az Entert.
+3. Írja be az új nevet, majd nyomja le az **Entert**.
 4. Ha az építőelem egy sordefiníció, oszlopdefiníció vagy jelentési fa definíció, akkor frissítenie kell a többi építőelemet, amelyek társítva vannak hozzá. Kattintson jobb gombbal arra az építőelemre, amelyet a 3. lépésben átnevezett, válassza ki a **Társítások** lehetőséget, majd válasszon ki egy cikket a listában, hogy frissítse.
 5. Ismételje meg a 4. lépést addig, amíg be nem fejeződik az összes kapcsolódó elem frissítése.
 
@@ -46,36 +46,36 @@ Ezzel egy időben a jelentésdefiníciókat csoportosíthatja több jelentés k�
 
 ### <a name="create-a-report-group"></a>Jelentés csoport létrehozása
 
-1. A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
-2. A **Fájl** menüben kattintson az **Új** &gt; **Jelentéscsoport-definíció** lehetőségre, hogy megnyisson egy új jelentéscsoportot a megjelenítő ablakban. Másik lehetőségként kattintson a **Jelentéscsoport** gombra ![Jelentéscsoport](media/report-group.gif "Jelentéscsoport") elemre az eszköztáron.
-3. Kattintson a **Jelentéscsoport** lapra. Ha felül szeretné bírálni ennek a jelentés létrehozásának egyes jelentésdefinícióban lévő információkat, jelölje be a **Az egyes jelentésdefiníciókból a vállalat, adat és dátumbeállítások felülbírálása** jelölőnégyzetet. A vállalat nevét, a részletezési szintet, az ideiglenes beállítást és dátum információkat automatikusan feltölti a rendszer, de végezhet rajtuk frissítéseket.
-4. Több jelentés létrehozásához, amelyek megmutatják a jelentési pénznemeket válassza ki a **Minden jelentési pénznem szerepeltetése** jelölőnégyzetet. Ezután több nézethez férhet hozzá, ha a **Pénznem** gombra kattint a böngészőben, a jelentés megtekintésekkor.
+1. A Jelentéstervező navigációs ablakában kattintson a Jelentéscsoportok **elemre**.
+2. A Fájl **menü** Új jelentéscsoport-definíció **·** &gt; **parancsára** kattintva új jelentéscsoportot nyit meg a megjelenítő ablakban. Másik lehetőségként kattintson a Jelentéscsoport **csoport** gombra ![.](media/report-group.gif "Jelentéscsoport") elemre az eszköztáron.
+3. Kattintson a Jelentéscsoport **fülre** . Ha felül szeretné bírálni a jelentés generálásakor az egyes jelentésdefiníciókban található adatokat, **jelölje be a Vállalat felülbírálása, a részletesség és a dátum beállításait az egyes jelentésdefiníciók** jelölőnégyzetében. A vállalat nevét, a részletezési szintet, az ideiglenes beállítást és dátum információkat automatikusan feltölti a rendszer, de végezhet rajtuk frissítéseket.
+4. Ha több jelentést is létre kell hozni a jelentési pénznemekkel, jelölje be **az Összes jelentési pénznem megjelenítése jelölőnégyzetet** . Ezután több nézethez férhet hozzá, ha a **Pénznem** gombra kattint a böngészőben, a jelentés megtekintésekkor.
 5. A **Jelentések a csoportban** mezőben, kattintson a **Hozzáadás** gombra a jelentéscsoportba felvenni kívánt jelentések kiválasztásához. Több jelentés kijelöléséhez a **Hozzáadás** párbeszédablakban, tartsa lenyomva a Ctrl billentyűt, miközben kiválasztja az elemeket. Befejezése után jelölje ki a jelentéseket, és kattintson az **OK** gombra.
 6. Kattintson a **Fájl** &gt; **Mentés** elemre az új jelentéscsoport mentéséhez.
 
 ### <a name="modify-a-report-group"></a>Jelentéscsoport módosítása
 
-1. A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
+1. A Jelentéstervező navigációs ablakában kattintson a Jelentéscsoportok **elemre**.
 2. Kattintson duplán a módosítani kívánt jelentéscsoportra.
-3. A **Jelentéscsoport** lapon, végezze el a kívánt módosításokat.
+3. A Jelentéscsoport **lapon** tegye meg a kívánt módosításokat.
 4. A **Fájl** menüben kattintson a **Mentés** lehetőségre a módosított jelentéscsoport mentéséhez, vagy kattintson a **Mentés** gombra ![Mentés.](media/save.gif "Mentés") elemre az eszköztáron.
 
-> [MEGJEGYZÉS] Ha meghatározott időközönként létrehozott jelentéseket ütemezett, felülírhatja ezeket a beállításokat, és azonnal jelentéseket készíthet.
+> [NOTE] Ha úgy ütemezte a jelentéseket, hogy meghatározott időközönként generálja őket, akkor ezeket a beállításokat felülbírálhatja, és azonnal jelentést generálhat.
 
 ### <a name="generate-a-report-group-report"></a>Jelentéscsoportról szóló jelentés készítése
 
-1. A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
+1. A Jelentéstervező navigációs ablakában kattintson a Jelentéscsoportok **elemre**.
 2. Nyissa meg a jelentéscsoportot a jelentés készítéséhez.
-3. Kattintson a **Jelentés készítése** gombra ![Jelentés készítése.](media/generate-report.gif "Jelentés létrehozása") jelentések készítéséhez.
+3. Kattintson a Jelentés **létrehozása** gombra a ![Jelentés létrehozása gombra.](media/generate-report.gif "Jelentés létrehozása") jelentések készítéséhez.
 
 ### <a name="delete-a-report-group"></a>Jelentéscsoport törlése
 
-1. A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
+1. A Jelentéstervező navigációs ablakában kattintson a Jelentéscsoportok **elemre**.
 2. A törléshez kattintson jobb gombbal a jelentés csoportra, és válassza **Törlés** lehetőséget.
 3. Ha egy megerősítő üzenet jelenik meg, kattintson az **Igen** gombra.
 
-## <a name="report-group-tab-controls"></a>Jelentéscsoport-lap vezérlők
-Az alábbi táblázat ismerteti a **Jelentéscsoport** lap vezérlőit.
+## <a name="report-group-tab-controls"></a>Jelentéscsoport lap vezérlőelemei
+Az alábbi táblázat leírja a Jelentéscsoport lap **vezérlőelemét** .
 
 <table>
 <thead>
@@ -86,8 +86,8 @@ Az alábbi táblázat ismerteti a **Jelentéscsoport** lap vezérlőit.
 </thead>
 <tbody>
 <tr>
-<td>Az egyes jelentésdefiníciókból a vállalat-, adat- és dátumbeállítások felülbírálása</td>
-<td>Jelölje be ezt a jelölőnégyzetet, ha felül szeretné bírálni a jelentések egyéni jelentésdefinícióit a csak ezeknek a jelentéseknek az előállítására szolgáló jelentéscsoportban.</td>
+<td>Az egyéni jelentésdefiníciókban szereplő vállalati, részlet- és dátumbeállítások felülbírálása</td>
+<td>Jelölje be ezt a jelölőnégyzetet, ha felül szeretné bírálni a jelentéscsoport jelentésdefinícióit kizárólag az ilyen jelentések létrehozása esetén.</td>
 </tr>
 <tr>
 <td>Vállalat neve</td>
@@ -113,7 +113,7 @@ Az alábbi táblázat ismerteti a **Jelentéscsoport** lap vezérlőit.
 </tr>
 <tr>
 <td>Minden jelentési pénznemmel együtt</td>
-<td>Bármely további jelentési pénznem, amely be van állítva a Microsoft Dynamics ERP rendszeréhez itt kerül felsorolásra. Jelölje ki ezt a jelölőnégyzetet, hogy további jelentéseket hozzon létre a jelölt pénznemekkel. Ezen jelentések megtekinthetők a Web Viewer eszközben, ha a <strong>Pénznem</strong> gombra kattint és kiválaszt egy pénznemet.</td>
+<td>Itt megjelenik minden további jelentési pénznem, amely a Microsoft Dynamics 365 pénzügyi rendszerben be van állítva. Jelölje be ezt a jelölőnégyzetet, ha a megadott pénznemekben további jelentéseket is létre kell hoznia. Ezen jelentések megtekinthetők a Web Viewer eszközben, ha a <strong>Pénznem</strong> gombra kattint és kiválaszt egy pénznemet.</td>
 </tr>
 <tr>
 <td>A dátummal kapcsolatos adatok mentése nem történik meg a jelentésdefiníciójával</td>

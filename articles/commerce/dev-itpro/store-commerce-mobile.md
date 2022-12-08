@@ -1,33 +1,34 @@
 ---
-title: A Store Commerce alkalmazás mobil platformjaihoz
+title: Store Commerce alkalmazás mobil platformokhoz
 description: Ez a témakör azt ismerteti, hogyan lehet Microsoft Dynamics 365 Commerce első lépésekben használni a Store Commerce alkalmazást az Android iOS-hez és a for iOS-hez.
 author: stuharg
-ms.date: 10/07/2022
+ms.date: 11/30/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2018-10-29
-ms.openlocfilehash: 1f07a130629863ebd9d036378436cf360e90ac26
-ms.sourcegitcommit: 98231ff810f41f9fcdc6b536d87e453028aa6db8
+ms.openlocfilehash: dc952698a2a3301aff312e8310c58cbbb9cfe290
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "9641680"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815783"
 ---
-# <a name="store-commerce-app-for-mobile-platforms"></a>A Store Commerce alkalmazás mobil platformjaihoz
+# <a name="store-commerce-app-for-mobile-platforms"></a>Store Commerce alkalmazás mobil platformokhoz
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Ez a cikk azt ismerteti, hogyan lehet első lépésekben Microsoft Dynamics 365 Commerce használni a Store Commerce alkalmazásokat az Android iOS-hez és az iOS-hez.
 
-A Dynamics 365 Commerce for és Android az iOS mobilalkalmazások segítségével egyszerűen és egyértelművé tehetővé teszik a kiskereskedelmi környezetben használható teljes értékű mobil pénztári eszközök (POS- és pénztári eszközök) telepítését. A Store Commerce mobilalkalmazások minden [képességet és képességeit biztosítja a Windows Áruház Commerce](store-commerce.md) alkalmazáshoz telefonos és táblagépes képernyőtényezők formájában. A Store Commerce mobilalkalmazások közvetlenül a Márt és a Sbaba alkalmazástárból is telepíthetők, és nem igénylik, hogy a fejlesztők új alkalmazáscsomagot hozzanak létre a telepítéshez vagy frissítéshez. 
+A Dynamics 365 Commerce for és Android az iOS mobilalkalmazások segítségével egyszerűen és egyértelművé tehetővé teszik a kiskereskedelmi környezetben használható teljes értékű mobil pénztári eszközök (POS- és pénztári eszközök) telepítését. A Store Commerce mobilalkalmazások [minden képességet és képességeit kihoznak a Windows Commerce](store-commerce.md) alkalmazásból, és jól teljesítenek az iOS Android - és telefon- és táblagépek széles skáláján. A Store Commerce mobilalkalmazások közvetlenül a Márt és a Sbaba alkalmazástárból is telepíthetők, és nincs szükség arra, hogy a fejlesztők új alkalmazáscsomagot hozzanak létre a telepítéshez vagy frissítéshez. 
 
 A Store Commerce mobilalkalmazások teljes működési paritást megőriznek az aktuális Retail kiskereskedelmi alkalmazásokkal. A Store Commerce for iOS emellett egy külön hardverállomást is támogat, így az iOS-eszközök kommunikálhatnak a hálózati fizetési terminálokkal, a nyugtanyomtatókkal és a pénztárfiókokkal, anélkül, hogy megosztott hardverállomást telepíteének. 
 
 > [!IMPORTANT]
-> A Store Commerce alkalmazások a Windows rendszerhez, Android és az iOS a következő pos-alkalmazások létrehozása.Dynamics 365 Commerce A jelenlegi Modern POS -alkalmazás (MPOS) [és a Retail alkalmazások](hybridapp.md) mobileszközökre vonatkozó elavult alkalmazásai 2023 októberében lesznek elavultak. A Microsoft azt javasolja, hogy minden új POS-telepítésben használja a Store Commerce vagy a Cloud POS (CPOS) funkciókat. A meglévő vevőknek azt tervezik, hogy a Retail retail retail app alkalmazásból a Store Commerce alkalmazásba áttelepítéseik. Az MPOS és a Retail [Dynamics 365 Commerce alkalmazás értékcsökkenési ütemezésének további tudnivalókat lásd az üzleten található technológia vermének modernizálásával kapcsolatban](https://www.microsoft.com/download/details.aspx?id=103896). 
+> A Windows Áruház Commerce-alkalmazásai és Android  az iOS a következő generáló POS-alkalmazások Dynamics 365 Commerce. A Store Commerce-alkalmazások számos fejlesztést kínálnak az előző tevékenységeikhez képest, miközben megőrzik a teljes működési és funkció paritását. A Microsoft 2023 végén elavulta az MPOS-t Android és az iOS Retail POS-alkalmazásokat, és javasolja, hogy minden új POS-telepítéshez a Store Commerce vagy a Cloud POS (CPOS) alkalmazást használja. A meglévő vevőknek azt tervezik, hogy a Retail alkalmazásból a Store Commerce alkalmazásba áttelepítéseik. A további tudnivalókat lásd [a Modern POS áttelepítése a Store Commerce alkalmazásba](pos-extension/migrate-mpos-store-commerce.md). 
 
 ## <a name="app-architecture"></a>Alkalmazásarchitektúra
 
@@ -39,7 +40,7 @@ A shell-alkalmazások szolgáltatása az alkalmazás-áruház frissítéseit has
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A Store Commerce mobilalkalmazások megkövetelik Dynamics 365 Commerce, különösen a Commerce Headquarters és a FOGJA összetevőit. Az alábbi táblázat felsorolja azokat a minimális operációs rendszer-verziókat és STB-verziókat Android, amelyekre szükség van az és az iOS mobilalkalmazások számára. 
+A Store Commerce mobilalkalmazások megkövetelik Dynamics 365 Commerce, különösen a Commerce Headquarters és a FOGJA összetevőit. Az alábbi táblázat felsorolja azokat a minimális operációs rendszer-verziókat és STB-verziókat Android , amelyekre szükség van az és az iOS mobilalkalmazások számára. 
 
 | Előfeltételek | Android      | iOS  |
 | ------------ | ------------ | ---- |
@@ -51,7 +52,7 @@ A Store Commerce mobilalkalmazások megkövetelik Dynamics 365 Commerce, külön
 A Store Commerce mobilalkalmazásokat közvetlenül a Egész Store áruházból vagy App Store-ból lehet telepíteni. 
 
 - [A Store Commerce alkalmazás a Android](https://aka.ms/storecommerceandroid)
-- Store Commerce alkalmazás az iOS-hez (hamarosan elérhető)
+- [Store Commerce alkalmazás az iOS-hez](https://aka.ms/storecommerceios)
 
 Az Android app (.apk) és a App app (.ipa) Microsoft Dynamics csomagok a Lifecycle Services megosztott eszköztárából is letölthetők. 
 
@@ -64,10 +65,10 @@ A Pénztárgépeket csak akkor aktiválhatja a Store Commerce mobilalkalmazások
 Az alábbi lépések szerint hozhatja létre és állíthatja be az új eszközt.
 
 1. A Commerce Headquarters beállítási eszközeit a **Retail and Commerce \> Channel setup \> POS rendszerében lehet \> beállítani**. 
-1. Hozzon létre egy új eszközt, **és a telepített mobilalkalmazástól függően válassza a Modern POS - Android** **vagy a Modern POS - iOS** típust. 
+1. Hozzon létre egy új eszközt, **és a telepített mobilalkalmazástól függően válassza a Modern POS - Android**  **vagy a Modern POS - iOS** típust. 
 
     > [!NOTE] 
-    > A **Modern POS - Android** és **a Modern POS - iOS** alkalmazástípusok szintén használatosak az aktuális szoftveralkalmazások Android és iOS telepítése során. Az MPOS rendszer értékcsökkenése után **az ilyen alkalmazástípusok címkéi frissülnek a Store Commerce - Android** és **a Modern POS - iOS rendszer számára**. 
+    > A **Modern POS - Android**  és **Modern POS - iOS alkalmazástípusok az aktuális szoftveralkalmazások és iOS-alkalmazások**  Android telepítéséhez is használhatók. Az MPOS rendszer értékcsökkenése után **az ilyen alkalmazástípusok címkéi frissülnek a Store Commerce - Android**  és **a Modern POS - iOS rendszer számára**. 
 
 ### <a name="register-setup"></a>Jegyzék beállítása
 
@@ -94,7 +95,7 @@ Az eszköz aktiválására vonatkozó további tudnivalókat [lásd a Pénztár 
 
 ## <a name="feature-parity-with-store-commerce-for-windows"></a>A Store Commerce for Windows szolgáltatás paritása
 
-A következő táblázat összehasonlítja a Store Commerce alkalmazás Android Windows rendszerbeli és iOS-platformokkal való funkcióit.
+A következő táblázat összehasonlítja a Store Commerce alkalmazás lehetőségeit a Windows rendszer és az iOS-platform Android között.
 
 | Szolgáltatás                                                                               | Windows | Android | iOS |
 | ------------------------------------------------------------------------------------- | ------- | ------- | --- |

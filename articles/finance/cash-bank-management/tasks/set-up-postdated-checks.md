@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e7172dd56113de23d841fe59ed9785471e90ed1f
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: a5ef9aa6b67eb630713dd1f15b2ae49c358edae9
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779609"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804182"
 ---
 # <a name="set-up-postdated-checks"></a>Jövőben esedékes csekkek beállítása
 
@@ -32,10 +32,10 @@ Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget
 
 
 ## <a name="set-up-postdated-checks"></a>Jövőben esedékes csekkek beállítása
-1. A Készpénz- **és bankkezelés > beállítása > készpénz- és bankkezelési paraméterekhez**.
-2. Kattintson a **Jövőben esedékes csekkek fülre**.
+1. Menjen a Készpénz- **és bankkezelés > és > és bankkezelési paramétereihez**.
+2. Kattintson a **Jövőben esedékes csekkek fülre** .
 3. Jelölje be a Jövőben esedékes **csekkek engedélyezése jelölőnégyzetet, vagy törölje a** jelölést a jelölőnégyzetből.
-4. Jelölje be a Naplóbejegyzések **feladása jelölőnégyzetet, vagy törölje a** jelölést a jövőben esedékes csekkek jelölőnégyzetből.
+4. Jelölje be a Naplóbejegyzések **feladása jelölőnégyzetet, vagy törölje a jelölést a jövőben esedékes csekkek** jelölőnégyzetből.
 5. Adja meg **a kívánt értékeket az Elszámolószámla kiadott** csekkek mezőjében.
 6. A kapott **csekkek elszámoló számláján** adja meg a kívánt értékeket.
 7. A Főkönyvi **napló mezőben** adjon meg egy értéket.
@@ -58,7 +58,7 @@ Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget
 > 
 > A fizetési mód **beállításakor** (**kötelezettségek > fizetési** > beállításakor ne **töltse ki az áthidaló számlát**). Ebben az esetben az ellenszámla van kitöltve a bankszámlával, amely a **Fizetési módban** van beállítva.
 >  
-> Ha a funkció engedélyezve van, és a munkamenet dátuma kisebb az esedékesség dátumán, a fizetési napló feladása során a következő hibaüzenet jelenik meg, ha az esedékesség dátuma bank típusú, **vagy** a munkamenet dátumának meg kell egyednie vele. Ha a funkció nincs engedélyezve, akkor a jövőben esedékes csekkre vonatkozó fizetési naplót akkor lehet feladni, ha a munkamenet dátuma az esedékességi dátumnál korábbi.
+> Ha a funkció engedélyezve van, és a munkamenet dátuma kisebb az esedékesség dátumán, a fizetési napló feladása során a következő hibaüzenet jelenik meg,az **esedékességi dátumnak a munkamenet dátumán kisebbnek vagy egyenlőnek kell lennie, ha az ellenszámla Bank** típusú. Ha a funkció nincs engedélyezve, akkor a jövőben esedékes csekkre vonatkozó fizetési naplót akkor lehet feladni, ha a munkamenet dátuma az esedékességi dátumnál korábbi.
 > Ez a funkció elérhető a 10.0.21 vagy újabb verzióban.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -13,23 +13,23 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 30d3cc0bbd97cd006f12d06cda64ee63cb42252e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b0c454745bc02a101514d44a20bd47dad0c548d5
+ms.sourcegitcommit: 2804b05214c87f76457608b5db072582ff339852
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902516"
+ms.lasthandoff: 12/01/2022
+ms.locfileid: "9815683"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Figyelem a főkönyvi kiegyenlítés és az év végi zárás között
 
 [!include [banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 Pénzügyi modul 10.0.25-ös **·** **verziójában** a Funkciókezelés munkaterületén elérhető a figyelem a főkönyvi kiegyenlítés és az év végi zárás között. Ez a funkció két elsődleges fejlesztést ad hozzá, amelyek a főkönyvi kiegyenlítést és a főkönyv év végi zárást érintik.
+A Microsoft Dynamics 365 Pénzügyi modul 10.0.25-ös **·**  **verziójában** a Funkciókezelés munkaterületén elérhető a figyelem a főkönyvi kiegyenlítés és az év végi zárás között. Ez a funkció két elsődleges fejlesztést ad hozzá, amelyek a főkönyvi kiegyenlítést és a főkönyv év végi zárást érintik.
 
-A főkönyv év végi zárása során a kiegyenlített főkönyvi tranzakciók már nem fognak szerepelni a következő pénzügyi év nyitó egyenlegében. Ezzel a fejlesztéssel garantálható, hogy csak a még ki nem adott főkönyvi tranzakciókat tartalmazza a nyitó egyenleg. Fontos a főkönyvi devizaátértékelés futtatásakor. A devizaátértékelés csak a **Nem kiegyenlített állapotú főkönyvi tranzakciók esetében fut le**. **Ugyanakkor** a főkönyvi kiegyenlítés és az év végi zárási funkció közötti tudatosság feladása előtt a nyitó egyenleg összegzi mind a Kiegyenlített állapotú, mind **a** **Kiegyenlített** állapotú tranzakciókat, **és az összesített összeg állapotát Még nincs kiegyenlítve állapotra állítva.**
+A főkönyv év végi zárása során a kiegyenlített főkönyvi tranzakciók már nem fognak szerepelni a következő pénzügyi év nyitó egyenlegében. Ezzel a fejlesztéssel garantálható, hogy csak a még ki nem adott főkönyvi tranzakciókat tartalmazza a nyitó egyenleg. Fontos a főkönyvi devizaátértékelés futtatásakor. A devizaátértékelés csak a **Nem kiegyenlített állapotú főkönyvi tranzakciók esetében fut le**.  **Ugyanakkor** a főkönyvi kiegyenlítés és az év végi zárási funkció közötti tudatosság feladása előtt a nyitó egyenleg összegzi mind a Kiegyenlített állapotú, mind **a**  **Kiegyenlített** állapotú tranzakciókat, **és az összesített összeg állapotát Még nincs kiegyenlítve állapotra állítva.**
 
-A második továbbfejlesztés segítségével a főkönyv év végi zárása során feladhatja a részletes nyitóegyenleg-tranzakciókat. Ha az **Év végi** **zárási** részletek megtartása beállítás Igen, a nem kiegyenlített főkönyvi tranzakciókhoz külön nyitó egyenleg jön létre. Ez a beállítás a főkönyvi kiegyenlítési beállításokban meghatározott fő számlákhoz van meghatározva. Ha részletes tranzakciókat tart be a nyitóegyenleghez, akkor nagy mértékben jobban ki tudja egyenlítni a nem egyenlített főkönyvi tranzakciókat a következő pénzügyi évben.
+A második továbbfejlesztés segítségével a főkönyv év végi zárása során feladhatja a részletes nyitóegyenleg-tranzakciókat. Ha az **Év végi**  **zárási** részletek megtartása beállítás Igen, a nem kiegyenlített főkönyvi tranzakciókhoz külön nyitó egyenleg jön létre. Ez a beállítás a főkönyvi kiegyenlítési beállításokban meghatározott fő számlákhoz van meghatározva. Ha részletes tranzakciókat tart be a nyitóegyenleghez, akkor nagy mértékben jobban ki tudja egyenlítni a nem egyenlített főkönyvi tranzakciókat a következő pénzügyi évben.
 
 Az új fejlesztések támogatása érdekében módosításokat történt a főkönyvi kiegyenlítésben és az év végi lezárásban.
 
@@ -41,8 +41,8 @@ Az új fejlesztések támogatása érdekében módosításokat történt a fők�
 
 ### <a name="changes-to-year-end-close"></a>Év végi zárás módosításai
 
-- Az év végi zárás nem sztornírozható, ha a nyitóegyenleg-tranzakciók a következő pénzügyi évben ki vannak egyenlítve. Ez a módosítás akkor érvényes, ha az év végi zárást sztornírozták, vagy ha az év végi zárást újrafuttatják, **és a Főkönyvi paramétereknél az Év zárása esetén a Létező év végi** **bejegyzések** törlése beállítás Igen beállításra van állítva.
-- Ha a **főkönyvi** **kiegyenlítés** minden mérlegszámla esetében Igen az Év végi részletek nyilvántartása beállítás, az adott fő számlához részletesebb nyitóegyenleg-tranzakciók fognak létrejönni.
+- Az év végi zárás nem sztornírozható, ha a nyitóegyenleg-tranzakciók a következő pénzügyi évben ki vannak egyenlítve. Ez a módosítás akkor érvényes, ha az év végi zárást sztornírozták, vagy ha az év végi zárást újrafuttatják, **és a Főkönyvi paramétereknél az Év zárása esetén a Létező év végi**  **bejegyzések** törlése beállítás Igen beállításra van állítva.
+- Ha a **főkönyvi**  **kiegyenlítés** minden mérlegszámla esetében Igen az Év végi részletek nyilvántartása beállítás, az adott fő számlához részletesebb nyitóegyenleg-tranzakciók fognak létrejönni.
 
 ## <a name="before-you-enable-the-feature"></a>A funkció engedélyezése előtt
 
@@ -65,7 +65,7 @@ A funkciók és az adatmodell változásai miatt fontos, hogy a funkció engedé
 
 A funkció engedélyezése után, valamint a következő év végi zárás futtatása előtt minden szervezetnek meg kell határoznia, hogy megtartja-e a tranzakció részleteit az év végi zárás során. A választásnak nincs hatása az előző év végi zárási folyamatok nyitóegyenleg-feladásaira.
 
-A **Főkönyvi kiegyenlítés beállítása lapon** **be van állítva a Részletek megtartva az év végi záráskor beállítás minden fő számlához**.
+A **Főkönyvi kiegyenlítés beállítása lapon**  **be van állítva a Részletek megtartva az év végi záráskor beállítás minden fő számlához** .
 
 1.  Ugrás a Főkönyv **beállítása** > **főkönyvi** > **paraméterekhez**.
 2.  A Főkönyvi **kiegyenlítések** lapon válassza ki a főkönyvi **kiegyenlítési számlákat**.
@@ -75,10 +75,10 @@ A **Főkönyvi kiegyenlítés beállítása lapon** **be van állítva a Részle
 1.  Ugrás a Főkönyv **–** > **Időszakos feladatok főkönyvi** > **kiegyenlítések modulhoz**.
 2.  Válassza ki a **főkönyvi kiegyenlítési számlákat**.
 
-Két oszlop lett hozzáadva a Főkönyvi **kiegyenlítések laphoz**:
+Két oszlop lett hozzáadva a Főkönyvi **kiegyenlítések laphoz** :
     
-- **Fő számlatípus** – ez az oszlop csak tájékoztatásra szolgál. A fő számlához rendelt típust jeleníti meg.
-- **Részletes adatok megtartása az év végi zárás során** – alapértelmezés szerint a Nem beállítás van **megjelölve**. Csak akkor lehet Igen **értékűre** **állítani, ha a Fő számlatípus** **oszlop értéke Mérleg**,**·** **Eszköz vagy Kötelezettség.** Ha a beállítás **Nem**, a nyitó egyenlegek összegzésben lesznek feladva, ahogy az az év végi zárás tipikusan jellemző. Ha Igenre **van** állítva, a nyitóegyenlegek részletesen létrejönnek minden olyan főkönyvi tranzakcióhoz, amely nincs kiegyenlítve a fő számlával.
+- **Fő számlatípus**  – ez az oszlop csak tájékoztatásra szolgál. A fő számlához rendelt típust jeleníti meg.
+- **Részleteket megtart az év végi zárás során**  – alapértelmezés szerint a Nem beállítás van **megjelölve**. Csak akkor lehet Igen **értékűre**  **állítani, ha a Fő számlatípus**  **oszlop értéke Mérleg**, **Eszköz** vagy **Kötelezettség.** Ha a beállítás **Nem**, a nyitó egyenlegek összegzésben lesznek feladva, ahogy az az év végi zárás tipikusan jellemző. Ha Igenre **van** állítva, a nyitóegyenlegek részletesen létrejönnek minden olyan főkönyvi tranzakcióhoz, amely nincs kiegyenlítve a fő számlával.
 
 ## <a name="year-end-close"></a>Év végi zárás
 
@@ -154,7 +154,7 @@ Ha megtartja a tranzakciók részleteit, akkor ez nem befolyásolja az eredeti r
 
 Az eredeti tranzakciók egyes mezőinek meg kell változtatniuk a nyitóegyenleg részletes tranzakcióit. A nyitóegyenleg-tranzakciók dátuma mindig a következő pénzügyi év első napja. A napló számát meg kell változtatni, és a bizonylatszám módosul az év végi zárása párbeszédpanelen megadott értékre.
 
-Az eredeti tranzakciók adatai a Főkönyvi kiegyenlítés oldalon **találhatók**. Minden részletes nyitóegyenleg-tranzakció a **rács eredeti tranzakciódátum-oszlopát** jeleníti meg. Ez az oszlop segít megfeleltetni az új pénzügyi év tranzakcióit. Az eredeti bizonylat megtekintése **lehetőséget választva** a teljes eredeti bizonylathoz lehet visszaásni.
+Az eredeti tranzakciók adatai a Főkönyvi kiegyenlítés oldalon **találhatók** . Minden részletes nyitóegyenleg-tranzakció a **rács eredeti tranzakciódátum-oszlopát** jeleníti meg. Ez az oszlop segít megfeleltetni az új pénzügyi év tranzakcióit. Az eredeti bizonylat megtekintése **lehetőséget választva** a teljes eredeti bizonylathoz lehet visszaásni.
 
 ## <a name="settle-transactions"></a><a name="settle-transactions"></a>Tranzakciók kiegyenlítése
 Főkönyvi tranzakciók kiegyenlítéséhez kövesse az alábbi lépéseket.
@@ -165,7 +165,7 @@ Főkönyvi tranzakciók kiegyenlítéséhez kövesse az alábbi lépéseket.
     1. Válasszon ki egy dátumtartományt. Másik lehetőségként válasszon egy dátumtartománykódot, amely automatikusan kitölti a dátumtartományt.
 
        - A dátumtartomány nem lehet több pénzügyi évnél. Ha a dátumtartomány pénzügyi éveket is átfed, a Tranzakciók megjelenítése beállításnál nem **jelennek meg tranzakciók**.
-       - Ha a dátumtartomány nyitott pénzügyi évben van, akkor kiegyenlítheti a tranzakciókat, és sztornírozhatja a kiegyenlítést. Ha a dátumtartomány lezárt pénzügyi évben van, vagy ha az év végi lezárás befejeződött, akkor a tranzakciók megjelennek, de nem egyenlíthetetlenek vagy kiegyenlítetlenek. Csak lezárt pénzügyi évben lehet a tranzakciók jelölését lezárni. Ha a dátumtartomány lezárt pénzügyi évben van, **nem érhető el a Megjelölés bejelölve**, **a** Megjelölt tranzakciók egyenlítve és **a Megjelölt** tranzakciók sztornírozása gomb.
+       - Ha a dátumtartomány nyitott pénzügyi évben van, akkor kiegyenlítheti a tranzakciókat, és sztornírozhatja a kiegyenlítést. Ha a dátumtartomány lezárt pénzügyi évben van, vagy ha az év végi lezárás befejeződött, akkor a tranzakciók megjelennek, de nem egyenlíthetetlenek vagy kiegyenlítetlenek. Csak lezárt pénzügyi évben lehet a tranzakciók jelölését lezárni. Ha a dátumtartomány lezárt pénzügyi évben van, **nem érhető el a Megjelölés kijelölve**, **a** Megjelölt tranzakciók egyenlítve és **a Megjelölt** tranzakciók sztornírozása gomb.
 
     2. Válassza ki azt a fő számlát, amely tranzakcióit megmutatja. A mező kitöltése kötelező. A keresés csak azokat **a** fő számlákat mutatja, amelyek ki vannak jelölve a vállalat számlatükre főkönyvi kiegyenlítési lapján.
     3. Válassza ki a feladási réteget. Nem egyenlíthet ki különböző feladási rétegekben tranzakciókat.
@@ -173,8 +173,8 @@ Főkönyvi tranzakciók kiegyenlítéséhez kövesse az alábbi lépéseket.
 
 3.  Válassza a **Tranzakciók megjelenítése** lehetőséget a beállított szűrőknek megfelelő összes tranzakció megjelenítéséhez. Ha módosítja a szűrők vagy a dimenziókészletek bármelyikét, ki kell választania a **Tranzakciók megjelenítése** lehetőséget újra.
 4.  Válassza ki a kiegyenlítés sorait. A lap tetején **található** Kiválasztott összeg mező értéke a kijelölt sorok végösszegének megfelelően nő vagy csökken.
-5.  Ha befejezte a tranzakciók kijelölését, válassza a Megjelölés **lehetőséget**. Minden kijelölt tranzakciónál megjelenik egy pipa a Megjelölt **oszlopban**. Ezenkívül a rács **fölötti Megjelölt** összeg mező értéke a megjelölt sorok teljes összegének megfelelően nő vagy csökken.
-6.  Ha a Megjelölt **összeg** **mezőben 0** (nulla) érték van megjelölve, **válassza a Megjelölt tranzakciók egyenlítő értékét.**
+5.  Ha befejezte a tranzakciók kijelölését, válassza a Megjelölés **lehetőséget**. Minden kijelölt tranzakciónál megjelenik egy pipa a Megjelölt **oszlopban** . Ezenkívül a rács **fölötti Megjelölt** összeg mező értéke a megjelölt sorok teljes összegének megfelelően nő vagy csökken.
+6.  Ha a Megjelölt **összeg**  **mezőben 0** (nulla) érték van megjelölve, **válassza a Megjelölt tranzakciók egyenlítő értékét.**
 
     - A részleges elszámolás nem engedélyezett. Nem lehet például olyan jóváírási tranzakcióval szemben $100 a terhelési tranzakciót, $90 tartozik tranzakciót. A fennmaradó $10 jóváírási tranzakciót is meg kell jelölni, hogy belefoglalja a kiegyenlítésbe.
     - Adja meg a kiegyenlítés dátumát. A dátumnak a kiegyenlítésre megjelölt tranzakciók legkésőbbi dátumán vagy utána kell lennie.
@@ -189,7 +189,7 @@ Egyes folyamatok, például egy tranzakciószétsz., automatikusan egyenlítik k
 ## <a name="use-excel-for-ledger-settlement"></a>Főkönyvi kiegyenlítés az Excelben
 
 A főkönyvi kiegyenlítési **oldalon** megjelenő tranzakciók exportálhatók az Excel programba. Az Excel programban tovább szűrheti a tranzakciókat, hogy megállapítsa, mely tranzakciókat szeretné kiegyenlítésre megjelölni.
-Mindkét főkönyvi kiegyenlítési entitás csak arra a főkönyvi számlára exportálja a főkönyvi tranzakciókat, amely ki van választva a Főkönyvi **kiegyenlítés oldalon**. Bár a lezárt pénzügyi évek tranzakcióit az Excel segítségével még meg lehet jelölni vagy ki lehet jelölni, nem lehet őket kiegyenlíteni. Ezenkívül az adott pénzügyi évre nem lehet sztornírozni a kiegyenlített tranzakciókat.
+Mindkét főkönyvi kiegyenlítési entitás csak arra a főkönyvi számlára exportálja a főkönyvi tranzakciókat, amely ki van választva a Főkönyvi **kiegyenlítés oldalon** . Bár a lezárt pénzügyi évek tranzakcióit az Excel segítségével még meg lehet jelölni vagy ki lehet jelölni, nem lehet őket kiegyenlíteni. Ezenkívül az adott pénzügyi évre nem lehet sztornírozni a kiegyenlített tranzakciókat.
 
 ## <a name="make-transactions-easier-to-find"></a>Tranzakciók megkeresésének egyszerűbbé tétele
 
@@ -203,7 +203,7 @@ A Megjelölt szűrő **használatával** a tranzakciók annak alapján szűrhet�
 
 A tévedésből létrehozott kiegyenlítések sztornírozhatók.
 
-1.  Hajtsa végre a Tranzakciók rendezésének szakasz 1–3 [...](#settle-transactions). lépését, hogy a tranzakciót érdeklődésére mutassa.
+1.  Hajtsa végre a Tranzakciók rendezésének szakasz 1–3 [...](#settle-transactions) . lépését, hogy a tranzakciót érdeklődésére mutassa.
 2.  Az **Állapot** szűrőben válassza ki a **Kiegyenlített** lehetőséget.
 3.  Válassza ki a sorokat a megfordításhoz.
 4.  Jelölje ki a **Megjelölt tranzakciók sztornírozása lehetőséget**. Az azonos kiegyenlítési azonosítójú tranzakciók állapota Nincs kiegyenlítve **állapotúra módosul**.

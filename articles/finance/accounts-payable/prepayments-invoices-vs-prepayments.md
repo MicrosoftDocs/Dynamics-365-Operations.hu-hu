@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62f828b93075c134778da280243c0875edf99300
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 1d123a341a471dd37fcc33e0025ce5e98235a27f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715829"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804263"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Előlegszámlák és előlegek
 
@@ -65,12 +65,13 @@ Az előlegszámlát a **Készletkönyvelés** lap **Beszerzési rendelés** lapj
 
 Az ellentételező összegző kötelezettségek számlája a **Szállító könyvelési** profiljában van definiálva. Az alapértelmezett könyvelési profil meghatározásához kattintson a **Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei \> Főkönyv és áfa lap \> Profil feladása előrefizetett szállítói számlával**.
 
-Az **Előlegfizetés alkalmazás házirendje** azt jelzi, hogy a rendszer automatikusan alkalmazza-e a kiegyenlített előlegszámlákat a manuálisan létrehozott végső számlára. Az adatbevitellel létrehozott számlák nem hivatkoznak az **Előleg alkalmazás házirendjére**. A kiegyenlített előlegszámlákat manuálisan kell alkalmazni az adatbevitel használatával létrehozott számlákra. A házirend meghatározásához válassza a **Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei \> Főkönyv és áfa lap \> Előlegfizetés alkalmazási házirendje**. Ha az **Előlegfizetés alkalmazási házirend** mezője **Automatikus**, az előlegszámla automatikusan meg lesz jelölve kiegyenlítésre a végső számlával. Ha a mező **Értesítés** értékre van állítva, a végső számla létrehozásakor megjelenik egy vizuális jelzés, amely azt jelzi, hogy az előlegfizetési számla áll rendelkezésre alkalmazáshoz.
+Az **előlegfizetési alkalmazás** irányelve jelzi, hogy a kiegyenlített előlegszámlák automatikusan érvényesek lesznek-e a manuálisan létrehozott végső számlára. Az adatbevitellel létrehozott számlák nem hivatkoznak az **Előleg alkalmazás házirendjére**. A kiegyenlített előlegszámlákat manuálisan kell alkalmazni az adatbevitel használatával létrehozott számlákra. A házirend meghatározásához válassza a **Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei \> Főkönyv és áfa lap \> Előlegfizetés alkalmazási házirendje**. Ha az **Előlegfizetés alkalmazási házirend** mezője **Automatikus**, az előlegszámla automatikusan meg lesz jelölve kiegyenlítésre a végső számlával. Ha a mező **Értesítés** értékre van állítva, a végső számla létrehozásakor megjelenik egy vizuális jelzés, amely azt jelzi, hogy az előlegfizetési számla áll rendelkezésre alkalmazáshoz.
 
 ## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Előlegfizetési számla adatait tartalmazó beszerzési rendelés létrehozása
-Amikor a szállító azt mondja, hogy a beszerzési rendelésen szereplő árukhoz és szolgáltatásokhoz előlegre van szükség, meg kell határoznia a kapcsolódó beszerzési rendeléshez tartozó előlegértéket. Ugrás a **Kötelezettségek \> Általános \> Beszerzési rendelések \> Összes beszerzési rendelés** elemre, és keresse meg a szállító beszerzési rendelését. A műveleti ablaktáblán válassza a **Beszerzés** lapot, és válassza ki az **Előlegfizetés** lehetőséget. Adja meg az előlegre vonatkozó információt, beleértve a leírást, az előleg értékét, hogy az előleg fix összeg vagy százalékos és az előleg kategória azonosítóját. 
+Amikor a szállító azt mondja, hogy a beszerzési rendelésen szereplő árukhoz és szolgáltatásokhoz előlegre van szükség, meg kell határoznia a kapcsolódó beszerzési rendeléshez tartozó előlegértéket. Ugrás a **Kötelezettségek \> Általános \> Beszerzési rendelések \> Összes beszerzési rendelés** elemre, és keresse meg a szállító beszerzési rendelését. A műveletpanelen válassza a Beszerzés **lapot**, majd válassza **az Előleg lehetőséget**. Adja meg az előlegre vonatkozó információt, beleértve a leírást, az előleg értékét, hogy az előleg fix összeg vagy százalékos és az előleg kategória azonosítóját. 
 
-Ne feledje, hogy a beszerzési rendelésen több előlegfizetés-definíció nem engedélyezett. Ha több előleget kell engedélyeznie egy beszerzési rendelésen, az előlegszámla helyett a kifizetési naplóval adja fel a kifizetéseket.
+> [!Note] 
+> A beszerzési rendeléshez nem engedélyezett a több előlegdefiníció. Ha több előleget kell engedélyeznie egy beszerzési rendelésen, az előlegszámla helyett a kifizetési naplóval adja fel a kifizetéseket.
 
 Az előleg eltávolítható a beszerzési rendelésből, kivéve, ha már kiegyenlített egy kifizetést a könyvelt előlegszámlával vagy a normál számlával szemben. Ha el szeretne távolítani egy előleginformációt a beszerzési rendelésből, válassza a **Kötelezettségek \> Általános \> Beszerzési rendelések \> Minden beszerzési rendelés** lehetőséget, és keresse meg a szállító beszerzési rendelését. A műveleti ablaktáblán válassza a **Beszerzés** lapot, és válassza ki az **Előleg eltávolítása** lehetőséget.
 
@@ -79,7 +80,7 @@ A szállító előlegszámlájának rögzítéséhez ugorjon a **Szállítói sz
 
 Az előlegszámla feladásakor a szállítói egyenleg és az előlegszámla frissítve lesz. A beszerzési rendelésen szereplő előlegdefinícióhoz tartozó **Előleg alkalmazása** is frissítve lesz. Az alapértelmezett pénzügyidimenzió-bejegyzések a feladott előlegbizonylathoz a beszerzési rendelés fejlécinformációiból származnak.
 
-Ha be **van** **kapcsolva a Pénzügyi dimenziók zárolása a szállítói előlegszámla szolgáltatás számlasorainál a Funkciókezelés** lapon, akkor az előlegfejlécben vagy -sorokban szereplő dimenziók nem frissíthetők. 
+Ha be **van**  **kapcsolva a Pénzügyi dimenziók zárolása a szállítói előlegszámla szolgáltatás számlasorainál a Funkciókezelés** lapon, akkor az előlegfejlécben vagy -sorokban szereplő dimenziók nem frissíthetők. 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Előlegszámla kifizetéseinek feladása és kiegyenlítése
 Ezután az előlegszámla kifizetése a történik a **Fizetési napló** lapon. A fizetési naplók eléréséhez kattintson a **Kötelezettségek \> Naplók \> Kifizetések \> Kifizetési napló** elemre . A kifizetés kiegyenlítésének az előlegszámlára történő feladása után a beszerzési rendelés **Fennmaradó alkalmazott előleg** értéke frissül.

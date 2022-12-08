@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
-ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
+ms.openlocfilehash: ecfeb3e6c5760b526ade609ee38f83da083b34d2
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2022
-ms.locfileid: "9775512"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805314"
 ---
 # <a name="proactive-quality-updates"></a>Proaktív minőségi frissítések
 
@@ -24,7 +24,7 @@ ms.locfileid: "9775512"
 
 Az elmúlt pár évben a Microsoft [folyamatos haladást ért el az Egy verzióként hivatkozunk rá](../../dev-itpro/lifecycle-services/oneversion-overview.md). Az Egy verzió előzetes verziója egyszerű: minél közelebb van az összes vevő azonos szoftververzióhoz, annál magasabb a szállított minőség. A problémákat egyszer megkeresjük és kijavítjuk, és ezeket a megoldásokat gyorsabban rá lehet venni a több vevőre.
 
-Ezt a esetet az eredmények igazolják: a termékek között kisebb események száma. Ha az ügyfelek nem ugyanazon a verzión vannak, konzisztensen látjuk, hogy érintik őket azok a problémák, amelyekre egy megoldás már elérhető. Már nagy haladást ért el a Dynamics 365 Pénzügy, a Dynamics 365 Dynamics 365 Project Operations Dynamics 365 Commerce Ellátási lánc, és – a közelmúltbeli technikai fejlesztéseknek köszönhetően – most már lehetséges a következő lépés. A következő információk bemutatják, hogy mit kell tenni, mit megtettünk a fokozat beállításában, és hogy mikor és hogyan vezetjük be az új lehetőségeket, anélkül, hogy megszakadna a folyamat.
+Ezt a esetet az eredmények igazolják: a termékek között kisebb események száma. Ha az ügyfelek nem ugyanazon a verzión vannak, konzisztensen látjuk, hogy érintik őket azok a problémák, amelyekre egy megoldás már elérhető. Már nagy haladást elértünk a Dynamics 365 Pénzügy, a Dynamics 365 Dynamics 365 Project Operations Ellátási lánc gombra nézve, Dynamics 365 Commerce és a legújabb technikai fejlesztéseknek köszönhetően most lehet a következő lépést tenni. A következő információk bemutatják, hogy mit kell tenni, mit megtettünk a fokozat beállításában, és hogy mikor és hogyan vezetjük be az új lehetőségeket, anélkül, hogy megszakadna a folyamat.
 
 ## <a name="what-you-need-to-know"></a>Az 500000000000000
 
@@ -51,11 +51,11 @@ A hibák csökkentése természetesen csökkentheti vagy teljesen megszüntethet
 
 Már több előleget telepítettek, amelyek a minőségi frissítések proaktív szállítását teszik lehetővé:
 
-- **Leállási** idő közeli frissítése – a gyakori környezetek továbbküldése érdekében alapvető fontosságú, hogy a Dynamics 365 szolgáltatásiszint-szerződések (SLAS) megőrzése érdekében csökkentve legyen a környezet elérhetősége. Eredetileg a nulladik leállási idő frissítését vezették be, hogy a havi operációs rendszer javítása érdekében egy fürt-újraelosztás segítségével aktiválják a frissített képet a minimális megszakadás mellett. A frissítések alkalmazásának mechanizmusa továbbfejlesztett, így még kevésbé romboló, és lefedi az operációs rendszer javítása és a minőségi frissítés telepítését is.
+- **Leállási** idő közeli frissítése – a gyakori környezetek továbbküldése érdekében alapvető fontosságú, hogy a Dynamics 365 szolgáltatásiszint-szerződések megőrzése érdekében csökkentve legyen a környezet elérhetősége. Eredetileg a nulladik leállási idő frissítését vezették be, hogy a havi operációs rendszer javítása érdekében egy fürt-újraelosztás segítségével aktiválják a frissített képet a minimális megszakadás mellett. A frissítések alkalmazásának mechanizmusa továbbfejlesztett, így még kevésbé romboló, és lefedi az operációs rendszer javítása és a minőségi frissítés telepítését is.
 
     Interaktív felhasználók esetén egy aktív munkamenet megszakadhat, és az újrapróbálkozás a most frissített környezetre kerül. A prioritáson alapuló [kötegütemezés](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), a kötegütemezés és a feldolgozás helyreállítása és folytatása közvetlenül a frissítés után. A prioritáson alapuló kötegütemezés akkor lép helyére, ha a vevők még nem vehetnek részt termelési környezeteik minőségi frissítésének proaktív elosztásában.
 
-- **Sötét órák** – az egyes Azure-régiókhoz sötét órákat határoznak meg, és a sötét órákban a közeli nulla leállási idő frissítésekre is sor fog kapni.
+- **Sötét órák**  – az egyes Azure-régiókra vonatkozóan sötét órák vannak meghatározva, és a sötét órákban a közeli nulla leállási idő frissítésekre is sor fog kapni.
 
 ## <a name="the-proactive-update-process"></a>A proaktív frissítési folyamat
 
@@ -67,15 +67,15 @@ Az aktuális kiadáskezelési adatok azt mutatják, hogy a minőségi frissíté
 
 A folyamatok változásainak egy része a proaktív minőségi frissítés aktiválása előtt van megvalósítva:
 
-- **Séma** – az eszköz gondoskodik arról, hogy a minőségi frissítések csak olyan sémákat tartalmazzanak, amelyek a szolgáltatás online állapotban alkalmazhatók. Ezzel a módszersel megőrizheti a nulla leálláshoz közeli leállással elérhető frissítés alkalmazni való képességet.
-- **Növelt módosítási változás** - jelenleg már van egy extra folyamatlépés, amely a minőségi frissítésbe való felvétel módosításainak jóváhagyására vonatkozik. Az extra lépésben nagyobb lesz a kockázat, hogy csökkentse a regresszívség potenciális lehetőségeit. A minőségi frissítésekben nem lehet törést módosítani, és a nagyobb változás biztosítja, hogy teljes legyen ez a cél.
+- **Séma**  – az eszköz gondoskodik arról, hogy a minőségi frissítések csak olyan sémákat tartalmazzanak, amelyek a szolgáltatás online állapotban alkalmazhatók. Ezzel a módszersel megőrizheti a nulla leálláshoz közeli leállással elérhető frissítés alkalmazni való képességet.
+- **Növelt módosítási változás**  – jelenleg már van egy extra folyamatlépés, amely a minőségi frissítésbe való felvétel módosításainak jóváhagyására vonatkozik. Az extra lépésben nagyobb lesz a kockázat, hogy csökkentse a regresszívség potenciális lehetőségeit. A minőségi frissítésekben nem lehet törést módosítani, és a nagyobb változás biztosítja, hogy teljes legyen ez a cél.
 - **Láthatóság** – az értesítéseket az adminisztrációs központon, a Lifecycle Services szolgáltatáson és más elérhető csatornákon keresztül lehet elküldeni a várható proaktív minőségi frissítésekhez. Ezen kívül a támogatási csoportok és az események érdeklődői láthatóvá lesznek abban, hogy hol vannak proaktív módon telepítve a minőségi frissítések.
 
     > [!NOTE]
     > A Microsoft kommunikációs csapata ki vizsgálja az e-mail eszközök folyamatos vizsgálatot, amelyek megakadályozzák az e-mail értesítések kézbesítését. Figyelje tovább az Üzenetközpontot Microsoft 365 a be- és értesítéshez kapcsolódó üzenetek nyomon követéséhez.
 
-- **Sikertelen biztonság** járattal – a járattal kódfrissítést használhat minden esetben, amikor egy minőségfrissítési hibajavításban alkalmazható, vagy a javításhoz kapcsolódó meglévő funkcióos járatot használja. Ha egy proaktív telepítés után tartalék vagy változtatást kell kikapcsolni, akkor a további hibák elkerülése érdekében a repülőrendszeren keresztül is el lehet végezve.
-- **Üzenetkészlet szinkronizálásának megnevezése** – a vevők kevesebb, mint 20 százaléka rendelkezik több mezővel, és egy olyan mező van telepítve, amelyben a verzió megfelel a termelésnek, és így segít a hibaelhárításban. Ha egy vevő a termelésnél újabb verziót használ tesztre, akkor az abox az újabb verzióra vonatkozó minőségi frissítéseket fogja kapni.
+- **Biztonsági hiba**  repülővel – a járattal kódfrissítést lehet alkalmazni minden esetben, amikor egy minőségfrissítési hibajavításban alkalmazható, vagy a javításhoz kapcsolódó meglévő funkcióos járatot kell használni. Ha egy proaktív telepítés után tartalék vagy változtatást kell kikapcsolni, akkor a további hibák elkerülése érdekében a repülőrendszeren keresztül is el lehet végezve.
+- **Üzenetkészlet-szinkronizálás megnevezése**  – a vevők kevesebb, mint 20 százaléka rendelkezik több mezővel, és egy olyan mező van telepítve, amelyben a verzió megfelel a termelésnek, és így segít a hibaelhárításban. Ha egy vevő a termelésnél újabb verziót használ tesztre, akkor az abox az újabb verzióra vonatkozó minőségi frissítéseket fogja kapni.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Milyen okkal történik az összesítés javítása a minőségi frissítésekhez?
 
@@ -105,19 +105,19 @@ További tájékoztatás az egyes régiók sötét óráiról: [Mi a tervezett k
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktív minőségfrissítés kiadása: 10.0.29
 **Alkalmazásverzió: 10.0.1326.70**  
-**Megfelelő legújabb tudásbáziscikk: 748926**
+**Megfelelő legújabb tudásbáziscikk: 750332**
 
 | Station | Régiók | Befejeződött ütemezés | Közelgő e-box ütemezése|
 |---|---|---|---|
-| 1. állomás | Kanada központi, Kanada-Kelet, Franciaország központi, India Központi, Norvégia-Kelet, Svájc - Nyugat | Október 14. – 2022. október 17., november 2. – 2022. november 5. | 2022. november 13-16. között |
-| 2. állomás | Franciaország, Dél-, India, Nyugat-Norvégia, Svájc, Észak-Afrika, Észak-Afrika, Ausztrália-Kelet, Egyesült Királyság, Észak-Egyesült Arab Emírségek, Japán-kelet, Ausztrália Dél-Kelet, Dél-Kelet-Ázsia | Október 15. – 2022. október 18. és november 2. között 2022. november 5. | 2022. november 13-16. között |
-| 3. állomás | Kelet-Ázsia, Egyesült Államok, Nyugat-Japán, Brazília Dél-, Nyugat-Európa, Kelet-Egyesült Államok, Egyesült Arab Emírségek Központi | Október 16., 2022. október 19. és november 2. között 2022. november 5. | 2022. november 13-16. között |
-| 4. állomás | Észak-Európa, Közép-Usa, Nyugat-Usa | Október 17., 2022. október 20. és november 2. között 2022. november 5. | 2022. november 15-től 2022. november 18-ig |
+| 1. állomás | Kanada központi, Kanada-Kelet, Franciaország központi, India Központi, Norvégia-Kelet, Svájc - Nyugat | Október 14. – 2022. október 17., november 2. – 2022. november 5., november 13. – 2022. november 16. | December 5- december 8.|
+| 2. állomás | Franciaország, Dél-, India, Nyugat-Norvégia, Svájc, Észak-Afrika, Észak-Afrika, Ausztrália-Kelet, Egyesült Királyság, Észak-Egyesült Arab Emírségek, Japán-kelet, Ausztrália Dél-Kelet, Dél-Kelet-Ázsia | Október 15. – 2022. október 18. – november 2. – 2022. november 5., november 13. – 2022. november 16. | December 5- december 8.|
+| 3. állomás | Kelet-Ázsia, Egyesült Államok, Nyugat-Japán, Brazília Dél-, Nyugat-Európa, Kelet-Egyesült Államok, Egyesült Arab Emírségek Központi | Október 16., 2022. október 19. – november 2. – 2022. november 5., november 13. – 2022. november 16. | December 5- december 8.|
+| 4. állomás | Észak-Európa, Közép-Usa, Nyugat-Usa | Október 17. – 2022. október 20., november 2. – 2022. november 5., november 15. – 2022. november 18. | December 5- december 8.|
 | 5. állomás | DoD, Kormányzati közösség felhő, Kína | Nem ütemezett | Nem ütemezett |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Proaktív minőségfrissítés kiadása: 10:0,30
-**Alkalmazásverzió: EGYenl<a2**
- **/1><a2/4><a2/4><a2/<a**
+**Alkalmazásverzió: 10.0.1362.77**
+**Tudásbáziscikk megfelelő cikke: 767597**
 
 | Station | Régiók | Közelgő e-box ütemezése |
 |---|---|---|
@@ -147,14 +147,14 @@ A Microsoft annak érdekében, hogy a kiadási prognózis elég hatékony legyen
 Nem. A minőségfrissítések fő célja, hogy garantálják a biztonságot, az adatvédelemet, a megbízhatóságot, az elérhetőségt és a teljesítményt, és folyamatos fejlesztéseket eredményeznek a vevői számára. A frissítés késleltetése vagy szüneteltetása kockába fogja kockán a biztonságot, az elérhetőségt és a megbízhatóságot.
 
 ## <a name="how-do-i-know-what-set-of-changes-went-into-a-quality-update-payload"></a>Honnan tudjam, hogy milyen változáskészlet történt egy minőségfrissítési rakományban?
-A következő lépések ideiglenes megoldást kínálnak arra, hogy jobb megoldást kínálunk a minőségi frissítés terhelésére. 
+Kövesse az alábbi lépéseket a minőségi frissítés rakományába lépő változások listájának azonosításához. 
 
-Használja a KB# 745340 a 10.0.28 Quality Update szerelvény és a kapcsolódó alkalmazásverzió 10.0.1265.89.
+Használja a 10.0.28 Quality Update szerelvényt és a kapcsolódó alkalmazásverziót 10.0.1265.89.
 
 1. A Lifecycle Services szolgáltatásban nyissa meg **abox** környezettel kapcsolatos részleteit tartalmazó lapot. 
 2. Az Elérhető **frissítések szakaszban** válassza **a Legutóbbi** minőségi frissítés buildre vonatkozó Frissítés megtekintése lehetőséget. 
-3. A build exportálása CSV-fájlba vagy fájlba Microsoft Excel.
-4. Az exportált fájlban rendezheti az adatokat az idő alapján (a legrégebbik közül), majd keresse meg 745340 azonosítót a Frissítés azonosítója **oszlopban**. Így láthatja a kbs eltéréseit.
+3. A build exportálása CSV-fájlba vagy fájlba Microsoft Excel .
+4. Az exportált fájlban állítson be szűrőt, és válassza ki azt az buildverziót, **amely** kisebb vagy egyenlő annál, mint 10.0.1265.89. Így láthatja a különbözeti rakományt.
  
 > [!NOTE]
 > A környezet frissítése előtt el kell történnie a CSV- vagy Excel-fájlba történő exportálásnak. Ellenkező esetben olyan környezetet használhat, amely hasonló konfigurációval rendelkezik, és nincs telepítve a frissítés, és hajtsa végre a fenti lépéseket.
@@ -185,8 +185,8 @@ Ha ellentmondás van egy előre ütemezett műveletsel, például egy időpont-v
 ## <a name="can-an-environment-be-brought-back-to-its-previous-state-if-there-are-issues-after-a-quality-update-is-applied"></a>Vissza lehet hozni a környezetet az előző állapotba, ha problémák vannak a minőségi frissítés alkalmazása után?
 A minőségi frissítés alkalmazása után semmilyen körülmények között nem kerül sor visszaállításra. Csak a problémák enyhítése érdekében vannak előre javító lehetőségek.
 
-## <a name="what-about-fda-regulation-and-gpx"></a>Mi a helyzet az FDA szabályozásával és a FDA-szabályozásokkal?
-Az FDA-ellenőrzésen és szabályozáson áteső vevőknek szóló tervek még mindig nem teljesek. Várható további frissítések ebben a területben. Jelenleg minden ilyen vevő mentesül a minőségi frissítések alól. Annak érdekében, hogy egy vevő az FDA-előírások alá esik, keresse [Microsoft Azure fel a FDA-előírást](/azure/compliance/offerings/offering-gxp).
+## <a name="what-about-fda-regulation-and-gxp"></a>Mi a helyzet az FDA szabályozásával és a GxP szabályozásával?
+Az FDA-ellenőrzésen és szabályozáson áteső vevőknek szóló tervek még mindig nem teljesek. Várható további frissítések ebben a területben. Jelenleg minden ilyen vevő mentesül a minőségi frissítések alól. Annak érdekében, hogy egy vevő az FDA-előírások alá esik, keresse [Microsoft Azure fel a GxP offering webhelyet](/azure/compliance/offerings/offering-gxp).
 
 ## <a name="what-versions-of-service-updates-are-supported-for-these-quality-updates"></a>A szolgáltatásfrissítések melyik verziói támogatottak ezekhez a minőségi frissítésekhez?
 Azok a vevők, akik a szolgáltatásfrissítések minden támogatott verziójában részt vesznek, jogosultak a minőségi frissítésre. 
@@ -197,6 +197,6 @@ Mivel maga a gyorsjavítás jellege nem változik a minőségi frissítések rak
 ## <a name="is-there-any-impact-to-cloud-hosted-environments-che"></a>Van hatása a felhőben tárolt környezetre (CHE)? 
 A CHE-környezetek kívül vannak a minőségi frissítések hatókörén, mert kívül állnak a Microsoft hatáskörén.
 
-## <a name="are-there-any-integration-issues-with-microsoft-dataverse"></a>Vannak integrációs problémák?Microsoft Dataverse 
+## <a name="are-there-any-integration-issues-with-microsoft-dataverse"></a>Vannak integrációs problémák Microsoft Dataverse? 
 Nincsenek ismert integrációs problémák a minőségi frissítésekkel kapcsolatban Dataverse.
 
