@@ -1606,7 +1606,9 @@
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
                         - name: Első lépések a Lengyelországra vonatkozó elektronikus számlázás használata során
                           href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
-                        - name: Első lépések a Szaúd-Arábiára vonatkozó Elektronikus számlázás használata során
+                        - name: Első lépések a Szaúd-Arábiára vonatkozó Elektronikus számlázás használata során – Első fázis
+                          href: localizations/e-invoicing-sa-get-started-phase-one.md
+                        - name: Első lépések a Szaúd-Arábiára vonatkozó Elektronikus számlázás használata során – Második fázis
                           href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
                         - name: Elektronikus számlázás bevezetése Szaúd-Arábiában
                           href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance

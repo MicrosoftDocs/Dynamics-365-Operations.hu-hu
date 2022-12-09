@@ -1,26 +1,21 @@
 ---
 title: Felosztott rendeléskezelés (DOM)
-description: Ez a cikk a Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
+description: Ez a cikk a Microsoft Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
 author: josaw1
-ms.date: 02/08/2022
+ms.date: 11/16/2022
 ms.topic: index-page
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: cfb89544580141ed397d27886f51fd0f1ac138d2
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764179"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785180"
 ---
 # <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
@@ -32,13 +27,18 @@ A DOM olyan többcsatornás rendelésteljesítés-optimalizálási megoldás, am
 
 A DOM vegyes egészértékű programozást (MIP) és prediktív elemzési modelleket használ az optimalizálások kötegszintű és az egyes rendelések szintjén történő végrehajtásához. Ez a lehetőség lehetővé teszi a kiskereskedők számára, hogy meghatározott szabályokkal kiigazítsák az egymással ütköző rendelésteljesítési igényeket. Egy olyan modern ellátási hálózatban, ahol a termékteljesítés több csatornán keresztül is érkezhet, a szervezeteknek gyorsan kell tudniuk alkalmazkodni a rendelések változásához, a szállító elérhetőségével kapcsolatos problémákhoz és a kiugró igényekhez. A DOM segítségével maximalizálhatja a rendelések teljesítését, és megtalálhatja a megfelelő termékszállítási forrásokat az üzleti korlátozások és célkitűzések (például ha költségcsökkentés miatt a legközelebbi forrásból kell teljesíteni a rendelést) alapján. A DOM a termékteljesítési források és a szállítási célok közötti távolság, az optimalizálási célkitűzésekként meghatározott költségtényezők, valamint a korlátozásokként meghatározott szabályok (például készletezés a teljesítési csomópontokon) felhasználásával optimalizálja a rendelések teljesítését. A DOM több profil meghatározását is lehetővé teszi, amelyek az üzleti vagy felhasználói szegmens típusától függően különböző optimalizálási stratégiákat kínálnak a vállalkozások számára. 
 
-A következő ábra bemutatja egy értékesítési rendelés teljes életútját a DOM rendszerben.
+A következő ábra bemutatja egy értékesítési rendelés teljes életciklusát a DOM rendszerben.
 
-![Értékesítési rendelés életciklusa a DOM környezetében.](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")
+![Értékesítési rendelés életciklusa a DOM rendszerben.](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")
+
+Az alábbi videó bemutatja a Dynamics 365 Commerce szolgáltatás DOM-funkcióit.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRYl]
 
 ## <a name="set-up-dom"></a>DOM beállítása
 
-1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
+1. Menjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
 2. A **Konfigurációs kulcsok** lapon bontsa ki a **Kereskedelmi** csomópontot, majd válassza ki az **Felosztott rendeléskezelés** jelölőnégyzetet.
 3. Lépjen a **Kiskereskedelem és kereskedelem \> Felosztott rendeléskezelés \> Beállítás \> DOM-paraméterek** lehetőségre.
 4. Az **Általános** lapon állítsa be a következő értékeket:

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 151991b399a30087c484262706e414e4e294bf7f
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 86020d9088d8135c83716128a77090608536a78f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715425"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804018"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Üres állapotú csekkek létrehozása
 
@@ -35,7 +35,7 @@ A **Csekkek** oldalon hajthatók végre a csekkekhez tartozó karbantartási fel
 
 A **Csekkek** oldal megnyitásához lépjen a **Készpénz- és bankkezelés \> Bankszámlák \> Bankszámlák** részre, és a műveleti ablaktábla **Kifizetések kezelése** lapjának **Kapcsolódó információ** csoportjában válassza a **Csekkek** lehetőséget. Egy másik megoldás, hogy a **Készpénz- és bankkezelés \> Lekérdezések és jelentések \> Csekkek** részre lép.
 
-Ezután az **Üres** állapotú csekkek létrehozásához válassza az **Üres csekkek létrehozása** lehetőséget a műveleti ablaktáblán. Amikor a rendszer üres csekkeket hoz létre, ideiglenesen inaktiválja a társított bankszámlát. Így kisebb annak a kockázata, hogy az üres csekkek létrehozása közben kifizetések jönnek létre. A művelet befejezése után a társított bankszámla újra aktiválódik.
+Ezután az **Üres** állapotú csekkek létrehozásához válassza az **Üres csekkek létrehozása** lehetőséget a műveleti panelen. Amikor a rendszer üres csekkeket hoz létre, akkor ideiglenesen inaktiválja a társított bankszámlát. Így kisebb annak a kockázata, hogy az üres csekkek létrehozása közben kifizetések jönnek létre. A művelet befejezése után a társított bankszámla újra aktiválódik.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

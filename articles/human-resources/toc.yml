@@ -570,6 +570,8 @@
               href: hr-leave-and-absence-suspend-leave.md
             - name: Távollétkérelem
               href: hr-employee-self-service-request-leave-of-absence.md
+            - name: Nyitott-végű távollét létrehozása
+              href: hr-create-open-leave-absence.md
             - name: Alkalmazotti szabadság kezelése
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Szabadság és távollét elemzéseinek megtekintése

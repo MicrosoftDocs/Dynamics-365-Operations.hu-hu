@@ -1929,6 +1929,8 @@
                   href: master-planning/planning-optimization/ddmrp-planning.md
                 - name: Vizuális és együttműködési végrehajtás
                   href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+                - name: DDMRP – GYIK
+                  href: master-planning/planning-optimization/ddmrp-faqs.md
             - name: Elavult tervezési motor
               items:
                 - name: Elavult tervezési motor áttekintése

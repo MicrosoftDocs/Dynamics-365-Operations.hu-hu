@@ -1011,10 +1011,26 @@
                 - name: URL-átirányítások tömeges feltöltése
                   href: upload-bulk-redirects.md
                 - name: B2C-bérlő beállítása a Commerce alkalmazásban
-                  href: set-up-B2C-tenant.md
+                  items:
+                    - name: B2C-bérlő beállítása
+                      href: set-up-B2C-tenant.md
+                    - name: Létrehozás vagy meglévő Azure AD B2C-bérlőre hivatkozás
+                      href: create-link-aad-b2c-tenant.md
+                    - name: B2C alkalmazás létrehozása
+                      href: create-b2c-app.md
+                    - name: Felhasználóifolyamat-irányelvek létrehozása
+                      href: create-user-flow-policies.md
+                    - name: Közösségi identitásszolgáltatók hozzáadása
+                      href: add-social-identity-providers.md
+                    - name: A Commerce headquarters frissítése Azure AD B2C-adatokkal
+                      href: update-hq-aad-b2c-info.md
+                    - name: A B2C-bérlő konfigurálása a webhelyszerkesztőben
+                      href: config-b2c-tenant-site-builder.md
+                    - name: További B2C-adatok
+                      href: additional-b2c-info.md
                 - name: Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
                   href: custom-pages-user-logins.md
-                - name: Identitás rekordok vevőszámlákhoz való automatikus csatolásának engedélyezése
+                - name: Identitásrekordok vevőszámlákhoz való automatikus csatolásának engedélyezése
                   href: identity-record-linking.md
                 - name: Több B2C-bérlő konfigurálása Commerce-környezetben
                   href: configure-multi-B2C-tenants.md
@@ -1568,8 +1584,10 @@
                   href: localizations/rus-customer-information.md
             - name: Szaúd-Arábia
               items:
-                - name: QR-kódok létrehozása és nyomtatása nyugtákra Szaúd Arábiára vonatkozóan
+                - name: QR-kódok létrehozása és nyomtatása nyugtákra Szaúd-Arábiára vonatkozóan
                   href: localizations/emea-sau-qr-code.md
+                - name: Egyszerűsített elektronikus számlák létrehozása és elküldése Szaúd-Arábiára vonatkozóan
+                  href: localizations/emea-sau-simplified-e-invoices.md
             - name: Svédország
               items:
                 - name: Pénztárgép funkciói
@@ -2986,15 +3004,15 @@
               items:
                 - name: A fizetésnek hitelkártya típusúnak kell lennie – hiba
                   href: troubleshoot/payment-type-credit-card-error.md
-                - name: Az online rendelésekre kivetett adókat számítása helytelen
+                - name: Az online rendelésekre kivetett adók számítása helytelen
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Rendelésszinkronizálási hiba az alapértelmezett fizetési szolgáltatással kapcsolatban
+                - name: Aszinkron rendelésszinkronizálási problémák
                   href: troubleshoot/synchronization-error.md
             - name: Fizetések feldolgozása
               items:
-                - name: A visszárurendeléssel kapcsolatos visszatérítése elutasítva
+                - name: A visszárurendeléssel kapcsolatos visszatérítés elutasítva
                   href: troubleshoot/refund-declined.md
-                - name: A visszatéríthető költségek a visszaküldött mennyiség alapján helytelenül vannak kiszámítva.
+                - name: A visszatéríthető költségek a visszaküldött mennyiség alapján helytelenül vannak kiszámítva
                   href: troubleshoot/refund-miscalculated-partial-return.md
                 - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz
                   items:
