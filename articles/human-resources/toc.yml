@@ -32,6 +32,8 @@
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: A Dynamics 365 Human Resources újdonságai (különálló)
                   items:
+                    - name: A Dynamics 365 Human Resources újdonságai (különálló) – 2022. december
+                      href: hr-whats-new-2022-12-12.md
                     - name: A Dynamics 365 Human Resources újdonságai (különálló) – 2021-es archívum
                       href: hr-admin-whats-new.md
                     - name: 2021. november 29.
@@ -110,6 +112,8 @@
                   href: hr-admin-integration-common-data-service-virtual-entities.md
                 - name: Human Resources – virtuális táblák – GYIK
                   href: hr-admin-virtual-entity-faq.md
+                - name: Integráció konfigurálása a Dataverse szolgáltatással
+                  href: hr-dataverse-integration.md
                 - name: A Finance szolgáltatással való integráció konfigurálása
                   href: hr-admin-integration-finance.md
                 - name: A Dayforce szolgáltatással való integráció konfigurálása
@@ -530,7 +534,7 @@
                       href: ../human-resources/hr-personnel-set-up-positions.md
                     - name: Jelöltek felvétele toborzás útján
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                    - name: Meglévő alkalmazottak felvétele toborzás útján
+                    - name: Meglévő alkalmazott felvétele toborzás útján
                       href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
                     - name: Jelentkezők kiválasztására szolgáló eszközök azonosítása és telepítése
                       href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
