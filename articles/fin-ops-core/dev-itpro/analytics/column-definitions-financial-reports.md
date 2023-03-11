@@ -157,7 +157,7 @@ Az Oszlopfejléc **párbeszédpanelen** hozzáadhatja, módosíthatja vagy tör�
 3. Kattintson a Szerkesztés **menü** Sor beszúrása **parancsára**. A program a 2. lépésben kijelölt sor fölé szúrja be az új sort.
 
 > [!NOTE]
-> Megjegyzés: Ha a jelentés jelentésben a fejlécek négy vagy több sort tartalmaznak, a fejléc átfedésbe kerül, amikor a jelentést az Excell munkafüzetbe exportálják. A jelentés összes fejlécének megtekintéséhez növelje meg a felső margót a jelentésdefinícióban.
+> Megjegyzés: Ha a jelentés jelentésben a fejlécek négy vagy több sort tartalmaznak, a fejléc átfedésbe kerül, amikor a jelentést az Excel munkafüzetbe exportálják. A jelentés összes fejlécének megtekintéséhez növelje meg a felső margót a jelentésdefinícióban.
 
 ### <a name="delete-a-column-header-row"></a>Oszlopfejlécsor törlése
 
